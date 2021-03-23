@@ -5,26 +5,16 @@ ms.assetid: 3CD4BDAD-8AE3-4DE0-B3F8-9C9F9E83BBE9
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 08/27/2019
-ms.openlocfilehash: 749fed319f9ffe840f2b06512e337efa28081e24
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 01039550f07de57fb7b2f1e815bced02e549c741
+ms.sourcegitcommit: 60120d10c957815d79af566c72e5f4bcfaca4025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548854"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104837489"
 ---
 # <a name="resource-binding-in-hlsl"></a>Associazione di risorse in HLSL
 
 In questo argomento vengono descritte alcune funzionalità specifiche dell'utilizzo del [modello shader](/windows/desktop/direct3dhlsl/shader-model-5-1) HLSL (High Level Shader Language) 5,1 con Direct3D 12. Tutti i componenti hardware Direct3D 12 supportano il modello di shader 5,1, pertanto il supporto per questo modello non dipende dal livello di funzionalità hardware.
-
--   [Tipi di risorse e matrici](#resource-types-and-arrays)
--   [Matrici di descrittori e matrici di trama](#descriptor-arrays-and-texture-arrays)
--   [Alias delle risorse](#resource-aliasing)
--   [Divergenze e derivati](#divergence-and-derivatives)
--   [UAV in pixel shader](#uavs-in-pixel-shaders)
--   [Buffer costanti](#constant-buffers)
--   [Modifiche bytecode in SM 5.1](#bytecode-changes-in-sm51)
--   [Dichiarazioni HLSL di esempio](#example-hlsl-declarations)
--   [Argomenti correlati](#related-topics)
 
 ## <a name="resource-types-and-arrays"></a>Tipi di risorse e matrici
 
@@ -103,6 +93,7 @@ In alcuni componenti hardware l'uso di questo qualificatore genera codice aggiun
 Le matrici di trame sono disponibili da DirectX 10. Le matrici di trama richiedono un descrittore, tuttavia tutte le sezioni di matrici devono condividere lo stesso formato, larghezza, altezza e numero di MIP. Inoltre, la matrice deve occupare un intervallo contiguo nello spazio degli indirizzi virtuali. Il codice seguente illustra un esempio di accesso a una matrice di trame da uno shader.
 
 ``` syntax
+Texture2DArray<float4> myTex2DArray : register(t0); // t0
 float3 myCoord(1.0f,1.4f,2.2f); // 2.2f is array index (rounded to int)
 color = myTex2DArray.Sample(mySampler, myCoord);
 ```
@@ -112,17 +103,17 @@ In una matrice di trame, l'indice può variare liberamente, senza alcuna necessi
 La matrice di descrittori equivalente sarà:
 
 ``` syntax
-Texture2D<float4> myTex2DArray[] : register(t0); // t0+
+Texture2D<float4> myArrayOfTex2D[] : register(t0); // t0+
 float2 myCoord(1.0f, 1.4f);
-color = myTex2D[2].Sample(mySampler,myCoord); // 2 is index
+color = myArrayOfTex2D[2].Sample(mySampler,myCoord); // 2 is index
 ```
 
-Si noti che l'uso imbarazzante di un valore float per l'indice della matrice viene sostituito con `myTex2D[2]` . Inoltre, le matrici di descrittori offrono maggiore flessibilità con le dimensioni. Il tipo, `Texture2D` è questo esempio, non può variare, ma il formato, la larghezza, l'altezza e il conteggio MIP possono variare a seconda di ogni descrittore.
+Si noti che l'uso imbarazzante di un valore float per l'indice della matrice viene sostituito con `myArrayOfTex2D[2]` . Inoltre, le matrici di descrittori offrono maggiore flessibilità con le dimensioni. Il tipo, `Texture2D` è questo esempio, non può variare, ma il formato, la larghezza, l'altezza e il conteggio MIP possono variare a seconda di ogni descrittore.
 
 È legittimo avere una matrice di descrittori di matrici di trame:
 
 ``` syntax
-Texture2DArray<float4> myTex2DArrayOfArrays[2] : register(t0);
+Texture2DArray<float4> myArrayOfTex2DArrays[2] : register(t0);
 ```
 
 Non è lecito dichiarare una matrice di strutture, ogni struttura contenente descrittori, ad esempio il codice seguente non è supportata.
@@ -148,7 +139,7 @@ Per ottenere il layout di **abcabcabc...** Memory, utilizzare una tabella descri
 
 ## <a name="resource-aliasing"></a>Alias delle risorse
 
-Gli intervalli di risorse specificati negli shader HLSL sono intervalli logici. Sono associate a intervalli di heap concreti in fase di esecuzione tramite il meccanismo di firma radice. In genere, un intervallo logico viene mappato a un intervallo di heap che non si sovrappone ad altri intervalli di heap. Tuttavia, il meccanismo di firma radice rende possibile l'alias (sovrapposizione) degli intervalli di heap dei tipi compatibili. È ad esempio `tex2` possibile `tex3` eseguire il mapping degli intervalli di e dall'esempio precedente allo stesso intervallo di heap (o sovrapposto), che ha l'effetto di eseguire l'aliasing delle trame nel programma HLSL. Se si desidera questo tipo di alias, lo shader deve essere compilato con \_ \_ l'opzione alias delle risorse di D3D10 shader \_ \_ , impostata tramite l'opzione *alias/res \_ May \_* per lo [strumento compilatore di effetti](/windows/desktop/direct3dtools/fxc) (FXC). L'opzione fa sì che il compilatore produca codice corretto impedendo determinate ottimizzazioni di carico/archivio nel presupposto che le risorse possano essere alias.
+Gli intervalli di risorse specificati negli shader HLSL sono intervalli logici. Sono associate a intervalli di heap concreti in fase di esecuzione tramite il meccanismo di firma radice. In genere, un intervallo logico viene mappato a un intervallo di heap che non si sovrappone ad altri intervalli di heap. Tuttavia, il meccanismo di firma radice rende possibile l'alias (sovrapposizione) degli intervalli di heap dei tipi compatibili. È ad esempio `tex2` possibile `tex3` eseguire il mapping degli intervalli di e dall'esempio precedente allo stesso intervallo di heap (o sovrapposto), che ha l'effetto di eseguire l'aliasing delle trame nel programma HLSL. Se si desidera questo tipo di alias, lo shader deve essere compilato con \_ \_ l'opzione alias delle risorse di D3D10 shader \_ \_ , impostata tramite l'opzione *alias/res \_ May \_* per lo [strumento compilatore di effetti](/windows/win32/direct3dtools/fxc) (FXC). L'opzione fa sì che il compilatore produca codice corretto impedendo determinate ottimizzazioni di carico/archivio nel presupposto che le risorse possano essere alias.
 
 ## <a name="divergence-and-derivatives"></a>Divergenze e derivati
 
@@ -324,35 +315,12 @@ ConstantBuffer<Stuff> myStuff[][3][8]  : register(b2, space3)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-<dl> <dt>
-
-[Indicizzazione dinamica con HLSL 5,1](dynamic-indexing-using-hlsl-5-1.md)
-</dt> <dt>
-
-[Effect-strumento compilatore](/windows/desktop/direct3dtools/fxc)
-</dt> <dt>
-
-[Funzionalità del modello HLSL shader 5,1 per Direct3D 12](/windows/desktop/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
-</dt> <dt>
-
-[Visualizzazioni ordinate del rasterizzatore](rasterizer-order-views.md)
-</dt> <dt>
-
-[Associazione di risorse](resource-binding.md)
-</dt> <dt>
-
-[Firme radice](root-signatures.md)
-</dt> <dt>
-
-[Modello Shader 5,1](/windows/desktop/direct3dhlsl/shader-model-5-1)
-</dt> <dt>
-
-[Valore di riferimento dello stencil specificato dello shader](shader-specified-stencil-reference-value.md)
-</dt> <dt>
-
-[Specifica delle firme radice in HLSL](specifying-root-signatures-in-hlsl.md)
-</dt> </dl>
-
- 
-
- 
+* [Indicizzazione dinamica con HLSL 5,1](dynamic-indexing-using-hlsl-5-1.md)
+* [Effect-strumento compilatore](/windows/win32/direct3dtools/fxc)
+* [Funzionalità del modello HLSL shader 5,1 per Direct3D 12](/windows/win32/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
+* [Visualizzazioni ordinate del rasterizzatore](rasterizer-order-views.md)
+* [Associazione di risorse](resource-binding.md)
+* [Firme radice](root-signatures.md)
+* [Modello Shader 5,1](/windows/win32/direct3dhlsl/shader-model-5-1)
+* [Valore di riferimento dello stencil specificato dello shader](shader-specified-stencil-reference-value.md)
+* [Specifica delle firme radice in HLSL](specifying-root-signatures-in-hlsl.md)
