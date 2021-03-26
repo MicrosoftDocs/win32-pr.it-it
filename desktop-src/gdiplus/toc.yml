@@ -1,0 +1,2886 @@
+- name: GDI+
+  href: '-gdiplus-gdi-start.md'
+  items:
+    - name: 'Considerazioni sulla sicurezza: GDI+'
+      href: sec-gdiplus.md
+    - name: Informazioni su GDI+
+      href: '-gdiplus-about-gdi--about.md'
+      items:
+        - name: Introduzione a GDI+
+          href: '-gdiplus-introduction-to-gdi--about.md'
+          items:
+            - name: Panoramica di GDI+
+              href: '-gdiplus-overview-of-gdi--about.md'
+            - name: Le tre parti di GDI+
+              href: '-gdiplus-the-three-parts-of-gdi--about.md'
+            - name: Struttura dell'interfaccia basata su classi
+              href: '-gdiplus-the-structure-of-the-class-based-interface-about.md'
+        - name: Quali sono le novità di GDI+?
+          href: '-gdiplus-what-s-new-in-gdi--about.md'
+          items:
+            - name: Nuove funzioni e caratteristiche
+              href: '-gdiplus-new-features-about.md'
+            - name: Modifiche al modello di programmazione
+              href: '-gdiplus-changes-in-the-programming-model-about.md'
+        - name: 'Linee, curve e forme'
+          href: '-gdiplus-lines-curves-and-shapes-about.md'
+          items:
+            - name: Panoramica della grafica vettoriale
+              href: '-gdiplus-overview-of-vector-graphics-about.md'
+            - name: 'Penne, linee e rettangoli'
+              href: '-gdiplus-pens-lines-and-rectangles-about.md'
+            - name: Ellissi e archi
+              href: '-gdiplus-ellipses-and-arcs-about.md'
+            - name: Poligoni
+              href: '-gdiplus-polygons-about.md'
+            - name: Spline di tipo Cardinal
+              href: '-gdiplus-cardinal-splines-about.md'
+            - name: Spline Bezier
+              href: '-gdiplus-bezier-splines-about.md'
+            - name: Percorsi
+              href: '-gdiplus-paths-about.md'
+            - name: Pennelli e forme piene
+              href: '-gdiplus-brushes-and-filled-shapes-about.md'
+            - name: Curve aperte e chiuse
+              href: '-gdiplus-open-and-closed-curves-about.md'
+            - name: Regioni
+              href: '-gdiplus-regions-about.md'
+            - name: Ritaglio
+              href: '-gdiplus-clipping-about.md'
+            - name: Percorsi Flat
+              href: '-gdiplus-flattening-paths-about.md'
+            - name: Anti-aliasing con linee e curve
+              href: '-gdiplus-antialiasing-with-lines-and-curves-about.md'
+        - name: 'Immagini, bitmap e metafile'
+          href: '-gdiplus-images-bitmaps-and-metafiles-about.md'
+          items:
+            - name: Tipi di bitmap
+              href: '-gdiplus-types-of-bitmaps-about.md'
+            - name: Metafile
+              href: '-gdiplus-metafiles-about.md'
+            - name: 'Disegno, posizionamento e clonazione delle immagini'
+              href: '-gdiplus-drawing-positioning-and-cloning-images-about.md'
+            - name: Ritaglio e ridimensionamento di immagini
+              href: '-gdiplus-cropping-and-scaling-images-about.md'
+        - name: Sistemi di coordinate e trasformazioni
+          href: '-gdiplus-coordinate-systems-and-transformations-about.md'
+          items:
+            - name: Tipi di sistemi di coordinate
+              href: '-gdiplus-types-of-coordinate-systems-about.md'
+            - name: Rappresentazione tramite matrici delle trasformazioni
+              href: '-gdiplus-matrix-representation-of-transformations-about.md'
+            - name: Trasformazioni globali e locali
+              href: '-gdiplus-global-and-local-transformations-about.md'
+        - name: Contenitori di oggetti Graphics
+          href: '-gdiplus-graphics-containers-about.md'
+    - name: Utilizzo di GDI+
+      href: '-gdiplus-using-gdi--use.md'
+      items:
+        - name: Introduzione
+          href: '-gdiplus-getting-started-use.md'
+          items:
+            - name: Disegno di una linea
+              href: '-gdiplus-drawing-a-line-use.md'
+            - name: Disegno di una stringa
+              href: '-gdiplus-drawing-a-string-use.md'
+        - name: Utilizzo di un oggetto Pen per creare linee e forme
+          href: '-gdiplus-using-a-pen-to-draw-lines-and-shapes-use.md'
+          items:
+            - name: Uso di una penna per disegnare linee e rettangoli
+              href: '-gdiplus-using-a-pen-to-draw-lines-and-rectangles-use.md'
+            - name: Impostazione della larghezza e dell'allineamento della penna
+              href: '-gdiplus-setting-pen-width-and-alignment-use.md'
+            - name: Disegno di una linea con estremità di riga
+              href: '-gdiplus-drawing-a-line-with-line-caps-use.md'
+            - name: Unione di linee
+              href: '-gdiplus-joining-lines-use.md'
+            - name: Disegno di una linea tratteggiata personalizzata
+              href: '-gdiplus-drawing-a-custom-dashed-line-use.md'
+            - name: Disegno di una linea riempita con una trama
+              href: '-gdiplus-drawing-a-line-filled-with-a-texture-use.md'
+        - name: Utilizzo di un oggetto Brush per il riempimento di forme
+          href: '-gdiplus-using-a-brush-to-fill-shapes-use.md'
+          items:
+            - name: Riempimento di una forma con un colore a tinta unita
+              href: '-gdiplus-filling-a-shape-with-a-solid-color-use.md'
+            - name: Riempimento di una forma con un motivo di tratteggio
+              href: '-gdiplus-filling-a-shape-with-a-hatch-pattern-use.md'
+            - name: Riempimento di una forma con una trama dell'immagine
+              href: '-gdiplus-filling-a-shape-with-an-image-texture-use.md'
+            - name: Affiancamento di una forma con un'immagine
+              href: '-gdiplus-tiling-a-shape-with-an-image-use.md'
+            - name: Riempimento di una forma con una sfumatura di colore
+              href: '-gdiplus-filling-a-shape-with-a-color-gradient-use.md'
+        - name: 'Utilizzo di immagini, bitmap e metafile'
+          href: '-gdiplus-using-images-bitmaps-and-metafiles-use.md'
+          items:
+            - name: Caricamento e visualizzazione di bitmap
+              href: '-gdiplus-loading-and-displaying-bitmaps-use.md'
+            - name: Caricamento e visualizzazione di metafile
+              href: '-gdiplus-loading-and-displaying-metafiles-use.md'
+            - name: Registrazione di metafile
+              href: '-gdiplus-recording-metafiles-use.md'
+            - name: Ritaglio e ridimensionamento di immagini
+              href: '-gdiplus-cropping-and-scaling-images-use.md'
+            - name: 'Rotazione, Reflection e inclinazione di immagini'
+              href: '-gdiplus-rotating-reflecting-and-skewing-images-use.md'
+            - name: Uso della modalità di interpolazione per controllare la qualità dell'immagine durante il ridimensionamento
+              href: '-gdiplus-using-interpolation-mode-to-control-image-quality-during-scaling-use.md'
+            - name: Creazione di immagini di anteprima
+              href: '-gdiplus-creating-thumbnail-images-use.md'
+            - name: Utilizzo di una bitmap memorizzata nella cache per migliorare le prestazioni
+              href: '-gdiplus-using-a-cached-bitmap-to-improve-performance-use.md'
+            - name: Miglioramento delle prestazioni evitando il ridimensionamento automatico
+              href: '-gdiplus-improving-performance-by-avoiding-automatic-scaling-use.md'
+            - name: Lettura e scrittura di metadati
+              href: '-gdiplus-reading-and-writing-metadata-use.md'
+        - name: Uso di codificatori e decodificatori di immagini
+          href: '-gdiplus-using-image-encoders-and-decoders-use.md'
+          items:
+            - name: Elenco di codificatori installati
+              href: '-gdiplus-listing-installed-encoders-use.md'
+            - name: Elenco di decodificatori installati
+              href: '-gdiplus-listing-installed-decoders-use.md'
+            - name: Recupero dell'identificatore di classe per un codificatore
+              href: '-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md'
+            - name: Determinazione dei parametri supportati da un codificatore
+              href: '-gdiplus-determining-the-parameters-supported-by-an-encoder-use.md'
+              items:
+                - name: Utilizzo dell'enumerazione EncoderValue
+                  href: '-gdiplus-using-the-encodervalue-enumeration-use.md'
+                - name: Elenco di parametri e valori per tutti i codificatori
+                  href: '-gdiplus-listing-parameters-and-values-for-all-encoders-use.md'
+            - name: Conversione di un'immagine BMP in un'immagine PNG
+              href: '-gdiplus-converting-a-bmp-image-to-a-png-image-use.md'
+            - name: Impostazione del livello di compressione JPEG
+              href: '-gdiplus-setting-jpeg-compression-level-use.md'
+            - name: Trasformazione di un'immagine JPEG senza perdita di dati
+              href: '-gdiplus-transforming-a-jpeg-image-without-loss-of-information-use.md'
+            - name: Creazione e salvataggio di un'immagine a più frame
+              href: '-gdiplus-creating-and-saving-a-multiple-frame-image-use.md'
+            - name: Copiare singoli frame da un'immagine a più fotogrammi
+              href: '-gdiplus-copying-individual-frames-from-a-multiple-frame-image-use.md'
+        - name: Linee e riempimenti con fusione alfa
+          href: '-gdiplus-alpha-blending-lines-and-fills-use.md'
+          items:
+            - name: Disegno di linee opache e semitrasparenti
+              href: '-gdiplus-drawing-opaque-and-semitransparent-lines-use.md'
+            - name: Disegno con pennelli opachi e semitrasparenti
+              href: '-gdiplus-drawing-with-opaque-and-semitransparent-brushes-use.md'
+            - name: Uso della modalità di composizione per controllare la fusione alfa
+              href: '-gdiplus-using-compositing-mode-to-control-alpha-blending-use.md'
+            - name: Uso di una matrice di colori per impostare valori alfa nelle immagini
+              href: '-gdiplus-using-a-color-matrix-to-set-alpha-values-in-images-use.md'
+            - name: Impostazione dei valori alfa dei singoli pixel
+              href: '-gdiplus-setting-the-alpha-values-of-individual-pixels-use.md'
+        - name: Utilizzo di testo e tipi di carattere
+          href: '-gdiplus-using-text-and-fonts-use.md'
+          items:
+            - name: Creazione di gruppi di caratteri e tipi di carattere
+              href: '-gdiplus-constructing-font-families-and-fonts-use.md'
+            - name: Disegno di testo
+              href: '-gdiplus-drawing-text-use.md'
+            - name: Formattazione del testo
+              href: '-gdiplus-formatting-text-use.md'
+            - name: Enumerazione dei tipi di carattere installati
+              href: '-gdiplus-enumerating-installed-fonts-use.md'
+            - name: Creazione di raccolte private di tipi di carattere
+              href: '-gdiplus-creating-a-private-font-collection-use.md'
+            - name: Recupero della metrica dei tipi di carattere
+              href: '-gdiplus-obtaining-font-metrics-use.md'
+            - name: Anti-aliasing con testo
+              href: '-gdiplus-antialiasing-with-text-use.md'
+        - name: Costruzione e creazione di curve
+          href: '-gdiplus-constructing-and-drawing-curves-use.md'
+          items:
+            - name: Disegno di spline di cardinalità
+              href: '-gdiplus-drawing-cardinal-splines-use.md'
+            - name: Disegno di spline di Bezier
+              href: '-gdiplus-drawing-bezier-splines-use.md'
+        - name: Riempimento di forme con un pennello sfumatura
+          href: '-gdiplus-filling-shapes-with-a-gradient-brush-use.md'
+          items:
+            - name: Creazione di una sfumatura lineare
+              href: '-gdiplus-creating-a-linear-gradient-use.md'
+            - name: Creazione di una sfumatura del percorso
+              href: '-gdiplus-creating-a-path-gradient-use.md'
+            - name: Applicazione della correzione gamma a una sfumatura
+              href: '-gdiplus-applying-gamma-correction-to-a-gradient-use.md'
+        - name: Costruzione e creazione di percorsi
+          href: '-gdiplus-constructing-and-drawing-paths-use.md'
+          items:
+            - name: 'Creazione di figure da linee, curve e forme'
+              href: '-gdiplus-creating-figures-from-lines-curves-and-shapes-use.md'
+            - name: Riempimento di figure aperte
+              href: '-gdiplus-filling-open-figures-use.md'
+        - name: Utilizzo dei contenitori di grafica
+          href: '-gdiplus-using-graphics-containers-use.md'
+          items:
+            - name: Stato di un oggetto Graphics
+              href: '-gdiplus-the-state-of-a-graphics-object-use.md'
+            - name: Contenitori di oggetti Graphics annidati
+              href: '-gdiplus-nested-graphics-containers-use.md'
+        - name: Trasformazioni
+          href: '-gdiplus-transformations-use.md'
+          items:
+            - name: Utilizzo della trasformazione di tipo World
+              href: '-gdiplus-using-the-world-transformation-use.md'
+            - name: Importanza dell'ordine delle trasformazioni
+              href: '-gdiplus-why-transformation-order-is-significant-use.md'
+        - name: Utilizzo delle regioni
+          href: '-gdiplus-using-regions-use.md'
+          items:
+            - name: Hit testing con un'area
+              href: '-gdiplus-hit-testing-with-a-region-use.md'
+            - name: Ritaglio con un'area
+              href: '-gdiplus-clipping-with-a-region-use.md'
+        - name: Ricolorazione
+          href: '-gdiplus-recoloring-use.md'
+          items:
+            - name: Uso di una matrice di colori per trasformare un singolo colore
+              href: '-gdiplus-using-a-color-matrix-to-transform-a-single-color-use.md'
+            - name: Conversione di colori
+              href: '-gdiplus-translating-colors-use.md'
+            - name: Ridimensionamento di colori
+              href: '-gdiplus-scaling-colors-use.md'
+            - name: Rotazione di colori
+              href: '-gdiplus-rotating-colors-use.md'
+            - name: Colori di taglio
+              href: '-gdiplus-shearing-colors-use.md'
+            - name: Uso di una tabella di rimappatura dei colori
+              href: '-gdiplus-using-a-color-remap-table-use.md'
+        - name: Stampa
+          href: '-gdiplus-printing-use.md'
+          items:
+            - name: Invio di un output GDI+ a una stampante
+              href: '-gdiplus-sending-gdi-output-to-a-printer-use.md'
+            - name: Visualizzazione di una finestra di dialogo Stampa
+              href: '-gdiplus-displaying-a-print-dialog-box-use.md'
+            - name: Ottimizzazione della stampa fornendo un handle di stampante
+              href: '-gdiplus-optimizing-printing-by-providing-a-printer-handle-use.md'
+    - name: Riferimento a GDI+
+      href: '-gdiplus-class-gdi-reference.md'
+      items:
+        - name: Callback DebugEventProc
+          href: /windows/win32/api/gdiplusinit/nc-gdiplusinit-debugeventproc
+        - name: Callback EnumerateMetafileProc
+          href: /windows/win32/api/gdiplustypes/nc-gdiplustypes-enumeratemetafileproc
+        - name: Callback ImageAbort
+          href: /windows/win32/api/gdiplustypes/nc-gdiplustypes-imageabort
+        - name: Callback NotificationHookProc
+          href: /windows/win32/api/gdiplusinit/nc-gdiplusinit-notificationhookproc
+        - name: Callback NotificationUnhookProc
+          href: /windows/win32/api/gdiplusinit/nc-gdiplusinit-notificationunhookproc
+        - name: Classi
+          href: '-gdiplus-class-classes.md'
+          items:
+            - name: AdjustableArrowCap
+              href: /windows/win32/api/gdipluslinecaps/nl-gdipluslinecaps-adjustablearrowcap
+              items:
+                - name: AdjustableArrowCap
+                  href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-adjustablearrowcap(inreal_inreal_inbool)
+                - name: Metodi AdjustableArrowCap
+                  href: '-gdiplus-class-adjustablearrowcap-methods.md'
+                  items:
+                    - name: GetHeight
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-getheight
+                    - name: GetMiddleInset
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-getmiddleinset
+                    - name: GetWidth
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-getwidth
+                    - name: IsFilled
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-isfilled
+                    - name: SetFillState
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-setfillstate
+                    - name: SetHeight
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-setheight
+                    - name: SetMiddleInset
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-setmiddleinset
+                    - name: SetWidth
+                      href: /windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-setwidth
+            - name: Bitmap
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap
+              items:
+                - name: Costruttore di overload bitmap
+                  href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-bitmap(inconstbitmapinfo_invoid)
+                  items:
+                    - name: Bitmap (IDirectDrawSurface7 *)
+                      href: /previous-versions/ms536310(v=vs.85)
+                    - name: 'Bitmap (INT, INT, Graphics *)'
+                      href: /previous-versions/ms536311(v=vs.85)
+                    - name: 'Bitmap (BITMAPINFO *, void*)'
+                      href: /previous-versions/ms536312(v=vs.85)
+                    - name: 'Bitmap (INT, INT, PixelFormat)'
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-bitmap(inint_inint_inpixelformat)
+                    - name: 'Bitmap (HBITMAP, HPALETTE)'
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-bitmap(inhbitmap_inhpalette)
+                    - name: 'Bitmap (INT, INT, INT, PixelFormat, BYTE *)'
+                      href: /previous-versions//ms536315(v=vs.85)
+                    - name: 'Bitmap (WCHAR *, BOOL)'
+                      href: /previous-versions//ms536316(v=vs.85)
+                    - name: 'Bitmap (HINSTANCE, WCHAR *)'
+                      href: /previous-versions//ms536317(v=vs.85)
+                    - name: Bitmap (HICON)
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-bitmap(inhicon)
+                    - name: 'Bitmap (IStream *, BOOL)'
+                      href: /previous-versions//ms536319(v=vs.85)
+                - name: Metodi bitmap
+                  href: '-gdiplus-class-bitmap-methods.md'
+                  items:
+                    - name: Clone (metodo di overload)
+                      href: '-gdiplus-CLASS-Bitmap-Clone-Methods.md'
+                      items:
+                        - name: 'Clone (Rect&, PixelFormat)'
+                          href: /previous-versions//ms536302(v=vs.85)
+                        - name: 'Clone (RectF&, PixelFormat)'
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-clone(inconstrectf__inpixelformat)
+                        - name: 'Clone (REAL, REAL, REAL, REAL, PixelFormat)'
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-clone(inreal_inreal_inreal_inreal_inpixelformat)
+                        - name: 'Clone (INT, INT, INT, INT, PixelFormat)'
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-clone(inint_inint_inint_inint_inpixelformat)
+                    - name: Metodo di overload ApplyEffect
+                      href: '-gdiplus-CLASS-Bitmap-ApplyEffect-Methods.md'
+                      items:
+                        - name: 'ApplyEffect (bitmap **, int, Effect *, Rect*, Rect *, bitmap**)'
+                          href: /previous-versions//ms536320(v=vs.85)
+                        - name: 'ApplyEffect (effetto *, Rect*)'
+                          href: /previous-versions//ms536321(v=vs.85)
+                    - name: ConvertFormat
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-convertformat
+                    - name: FromBITMAPINFO
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-frombitmapinfo
+                    - name: FromDirectDrawSurface7
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-fromdirectdrawsurface7
+                    - name: FromFile
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-fromfile
+                    - name: FromHBITMAP
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-fromhbitmap
+                    - name: FromHICON
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-fromhicon
+                    - name: FromResource
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-fromresource
+                    - name: FromStream
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-fromstream
+                    - name: GetHBITMAP
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-gethbitmap
+                    - name: GetHICON
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-gethicon
+                    - name: Getistogramma
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-gethistogram
+                    - name: GetHistogramSize
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-gethistogramsize
+                    - name: GetPixel
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-getpixel
+                    - name: InitializePalette
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-initializepalette
+                    - name: LockBits
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-lockbits
+                    - name: SetPixel
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-setpixel
+                    - name: Risoluzione dei problemi
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-setresolution
+                    - name: UnlockBits
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-bitmap-unlockbits
+            - name: BitmapData
+              href: /previous-versions//ms534421(v=vs.85)
+            - name: Sfocatura
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-blur
+              items:
+                - name: Sfocatura
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-blur-blur
+                - name: Metodi Blur
+                  href: '-gdiplus-class-blur-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-blur-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-blur-setparameters
+            - name: BrightnessContrast
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-brightnesscontrast
+              items:
+                - name: BrightnessContrast
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-brightnesscontrast-brightnesscontrast
+                - name: Metodi BrightnessContrast
+                  href: '-gdiplus-class-brightnesscontrast-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-brightnesscontrast-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-brightnesscontrast-setparameters
+            - name: Brush
+              href: /windows/win32/api/gdiplusbrush/nl-gdiplusbrush-brush
+              items:
+                - name: Metodi Brush
+                  href: '-gdiplus-class-brush-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-brush-clone
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-brush-getlaststatus
+                    - name: GetType
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-brush-gettype
+            - name: CachedBitmap
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-cachedbitmap
+              items:
+                - name: CachedBitmap
+                  href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-cachedbitmap-cachedbitmap(constcachedbitmap_)
+                - name: GetLastStatus
+                  href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-cachedbitmap-getlaststatus
+            - name: CharacterRange
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-characterrange
+              items:
+                - name: Costruttore di overload CharacterRange
+                  href: '-gdiplus-CLASS-CharacterRange-Constructors.md'
+                  items:
+                    - name: CharacterRange ()
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-characterrange-characterrange~r2
+                    - name: 'CharacterRange (INT, INT)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-characterrange-characterrange(int_int)
+                - name: operator=
+                  href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-characterrange-operator-assign
+            - name: Colore
+              href: /windows/win32/api/gdipluscolor/nl-gdipluscolor-color
+              items:
+                - name: Costruttore di overload del colore
+                  href: '-gdiplus-CLASS-Color-Constructors.md'
+                  items:
+                    - name: 'Colore (BYTE, BYTE, byte, BYTE)'
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-color(inbyte_inbyte_inbyte_inbyte)
+                    - name: Colore ()
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-color(inargb)
+                    - name: 'Colore (BYTE, BYTE, BYTE)'
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-color(inbyte_inbyte_inbyte)
+                    - name: Colore (ARGB)
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-color(inargb)
+                - name: Metodi colori
+                  href: '-gdiplus-class-color-methods.md'
+                  items:
+                    - name: GetA
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-geta
+                    - name: GetAlpha
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getalpha
+                    - name: GetB
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getb
+                    - name: GetBlue
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getblue
+                    - name: GetG
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getg
+                    - name: GetGreen
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getgreen
+                    - name: GetR
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getr
+                    - name: GetRed
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getred
+                    - name: GetValue
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-getvalue
+                    - name: MakeARGB
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-makeargb
+                    - name: SetFromCOLORREF
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-setfromcolorref
+                    - name: SetValue
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-setvalue
+                    - name: ToCOLORREF
+                      href: /windows/win32/api/gdipluscolor/nf-gdipluscolor-color-tocolorref
+            - name: ColorBalance
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-colorbalance
+              items:
+                - name: ColorBalance
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorbalance-colorbalance
+                - name: Metodi ColorBalance
+                  href: '-gdiplus-class-colorbalance-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorbalance-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorbalance-setparameters
+            - name: ColorCurve
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-colorcurve
+              items:
+                - name: ColorCurve
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorcurve-colorcurve
+                - name: Metodi ColorCurve
+                  href: '-gdiplus-class-colorcurve-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorcurve-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorcurve-setparameters
+            - name: ColorLUT
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-colorlut
+              items:
+                - name: ColorLUT
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorlut-colorlut
+                - name: Metodi ColorLUT
+                  href: '-gdiplus-class-colorlut-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorlut-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colorlut-setparameters
+            - name: ColorMatrixEffect
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-colormatrixeffect
+              items:
+                - name: ColorMatrixEffect
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colormatrixeffect-colormatrixeffect
+                - name: Metodi ColorMatrixEffect
+                  href: '-gdiplus-class-colormatrixeffect-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colormatrixeffect-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-colormatrixeffect-setparameters
+            - name: CustomLineCap
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-customlinecap
+              items:
+                - name: CustomLineCap
+                  href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-customlinecap(constcustomlinecap_)
+                - name: Metodi CustomLineCap
+                  href: '-gdiplus-class-customlinecap-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-clone
+                    - name: GetBaseCap
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-getbasecap
+                    - name: GetBaseInset
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-getbaseinset
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-getlaststatus
+                    - name: GetStrokeCaps
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-getstrokecaps
+                    - name: GetStrokeJoin
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-getstrokejoin
+                    - name: GetWidthScale
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-getwidthscale
+                    - name: SetBaseCap
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-setbasecap
+                    - name: SetBaseInset
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-setbaseinset
+                    - name: SetStrokeCap
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-setstrokecap
+                    - name: SetStrokeCaps
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-setstrokecaps
+                    - name: SetStrokeJoin
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-setstrokejoin
+                    - name: SetWidthScale
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-setwidthscale
+            - name: Effetto
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-effect
+              items:
+                - name: Effetto
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-effect-effect
+                - name: Metodi di effetto
+                  href: '-gdiplus-class-effect-methods.md'
+                  items:
+                    - name: GetAuxData
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-effect-getauxdata
+                    - name: GetAuxDataSize
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-effect-getauxdatasize
+                    - name: GetParameterSize
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-effect-getparametersize
+                    - name: UseAuxData
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-effect-useauxdata
+            - name: EncoderParameter
+              href: /previous-versions//ms534434(v=vs.85)
+            - name: EncoderParameters
+              href: /previous-versions//ms534435(v=vs.85)
+            - name: Carattere
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-font
+              items:
+                - name: Costruttore di overload del tipo di carattere
+                  href: '-gdiplus-CLASS-Font-Constructors.md'
+                  items:
+                    - name: 'Font (FontFamily *, REAL, INT, Unit)'
+                      href: /previous-versions//ms536203(v=vs.85)
+                    - name: 'Tipo di carattere (HDC, HFONT)'
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-font(inhdc_inconsthfont)
+                    - name: 'Tipo di carattere (HDC, LOGFONTA *)'
+                      href: /previous-versions//ms536205(v=vs.85)
+                    - name: 'Tipo di carattere (HDC, Campo LOGFONTW *)'
+                      href: /previous-versions//ms536206(v=vs.85)
+                    - name: 'Font (WCHAR *, Real, int, Unit, FontCollection*)'
+                      href: /previous-versions//ms536207(v=vs.85)
+                    - name: Tipo di carattere (HDC)
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-font(inhdc)
+                - name: Tipi di carattere
+                  href: '-gdiplus-class-font-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-clone
+                    - name: GetFamily
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getfamily
+                    - name: Metodo di Overload GetHeight
+                      href: '-gdiplus-CLASS-Font-GetHeight-Methods.md'
+                      items:
+                        - name: GetHeight (Graphics *)
+                          href: /previous-versions//ms536201(v=vs.85)
+                        - name: GetHeight (reale)
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getheight(inreal)
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getlaststatus
+                    - name: GetLogFontA
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getlogfonta
+                    - name: GetLogFontW
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getlogfontw
+                    - name: GetSize
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getsize
+                    - name: GetStyle
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getstyle
+                    - name: Getunit
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getunit
+                    - name: IsAvailable
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-isavailable
+            - name: FontCollection
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontcollection
+              items:
+                - name: FontCollection
+                  href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontcollection-fontcollection(constfontcollection_)
+                - name: Metodi FontCollection
+                  href: '-gdiplus-class-fontcollection-methods.md'
+                  items:
+                    - name: GetFamilies
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies
+                    - name: GetFamilyCount
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontcollection-getlaststatus
+            - name: FontFamily
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily
+              items:
+                - name: Costruttore di Overload FontFamily
+                  href: '-gdiplus-CLASS-FontFamily-Constructors.md'
+                  items:
+                    - name: FontFamily ()
+                      href: /previous-versions//ms536182(v=vs.85)
+                    - name: 'FontFamily (WCHAR *, FontCollection*)'
+                      href: /previous-versions//ms536183(v=vs.85)
+                - name: Metodi FontFamily
+                  href: '-gdiplus-class-fontfamily-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-clone
+                    - name: GenericMonospace
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-genericmonospace
+                    - name: GenericSansSerif
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-genericsansserif
+                    - name: GenericSerif
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-genericserif
+                    - name: GetCellAscent
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-getcellascent
+                    - name: GetCellDescent
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-getcelldescent
+                    - name: GetEmHeight
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-getemheight
+                    - name: Getfamilianame
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-getfamilyname
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-getlaststatus
+                    - name: GetLineSpacing
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-getlinespacing
+                    - name: IsAvailable
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-isavailable
+                    - name: IsStyleAvailable
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-fontfamily-isstyleavailable
+            - name: GdiplusBase
+              href: /windows/win32/api/gdiplusbase/nl-gdiplusbase-gdiplusbase
+              items:
+                - name: Metodi GdiplusBase
+                  href: '-gdiplus-class-gdiplusbase-methods.md'
+                  items:
+                    - name: operator delete
+                      href: /windows/win32/api/gdiplusbase/nf-gdiplusbase-gdiplusbase-operatordelete
+                    - name: 'operatore delete ['
+                      href: /windows/win32/api/gdiplusbase/nf-gdiplusbase-gdiplusbase-operatordelete_array
+                    - name: operator new
+                      href: /windows/win32/api/gdiplusbase/nf-gdiplusbase-gdiplusbase-operatornew
+                    - name: 'operator new ['
+                      href: /windows/win32/api/gdiplusbase/nf-gdiplusbase-gdiplusbase-operatornew_array
+            - name: Grafica
+              href: /windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics
+              items:
+                - name: Costruttore di overload della grafica
+                  href: '-gdiplus-CLASS-Graphics-Constructors.md'
+                  items:
+                    - name: Grafica (immagine *)
+                      href: /previous-versions//ms536159(v=vs.85)
+                    - name: Grafica (HDC)
+                      href: /previous-versions//ms536160(v=vs.85)
+                    - name: 'Grafica (HDC, HANDLE)'
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhdc_inhandle)
+                    - name: 'Grafica (HWND, BOOL)'
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhwnd_inbool)
+                - name: Metodi grafici
+                  href: '-gdiplus-class-graphics-methods.md'
+                  items:
+                    - name: AddMetafileComment
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-addmetafilecomment
+                    - name: Metodo di overload BeginContainer
+                      href: '-gdiplus-CLASS-Graphics-BeginContainer-Methods.md'
+                      items:
+                        - name: BeginContainer ()
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrect__inconstrect__inunit)
+                        - name: 'BeginContainer (RectF&, RectF&, unità)'
+                          href: /previous-versions//ms536157(v=vs.85)
+                        - name: 'BeginContainer (Rect&, Rect&, unità)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrect__inconstrect__inunit)
+                    - name: Cancella
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-clear
+                    - name: Metodo di Overload DrawArc
+                      href: '-gdiplus-CLASS-Graphics-DrawArc-Methods.md'
+                      items:
+                        - name: 'DrawArc (Pen *, Rect&, REAL, REAL)'
+                          href: /previous-versions//ms536152(v=vs.85)
+                        - name: 'DrawArc (Pen *, RectF&, REAL, REAL)'
+                          href: /previous-versions//ms536153(v=vs.85)
+                        - name: 'DrawArc (Pen *, REAL, Real, Real, Real, Real, Real)'
+                          href: /previous-versions//ms536154(v=vs.85)
+                        - name: 'DrawArc (Pen *, INT, INT, INT, INT, REAL, REAL)'
+                          href: /previous-versions//ms536155(v=vs.85)
+                    - name: Metodo di overload DrawBezier
+                      href: '-gdiplus-CLASS-Graphics-DrawBezier-Methods.md'
+                      items:
+                        - name: 'DrawBezier (Pen *, POINT&, POINT&, POINT&, POINT&)'
+                          href: /previous-versions//ms536148(v=vs.85)
+                        - name: 'DrawBezier (Pen *, POINTF&, POINTF&, POINTF&, POINTF&)'
+                          href: /previous-versions//ms536149(v=vs.85)
+                        - name: 'DrawBezier (PEN *, REAL, Real, Real, Real, Real, Real, Real, Real)'
+                          href: /previous-versions//ms536150(v=vs.85)
+                        - name: 'DrawBezier (Pen *, INT, INT, INT, INT, INT, INT, INT, INT)'
+                          href: /previous-versions//ms536151(v=vs.85)
+                    - name: Metodo di Overload DrawBeziers
+                      href: '-gdiplus-CLASS-Graphics-DrawBeziers-Methods.md'
+                      items:
+                        - name: 'DrawBeziers (Pen *, Point*, int)'
+                          href: /previous-versions//ms536146(v=vs.85)
+                        - name: 'DrawBeziers (Pen *, PointF*, int)'
+                          href: /previous-versions//ms536147(v=vs.85)
+                    - name: DrawCachedBitmap
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawcachedbitmap
+                    - name: Metodo di Overload DrawClosedCurve
+                      href: '-gdiplus-CLASS-Graphics-DrawClosedCurve-Methods.md'
+                      items:
+                        - name: 'DrawClosedCurve (Pen *, Point*, int)'
+                          href: /previous-versions//ms536142(v=vs.85)
+                        - name: 'DrawClosedCurve (Pen *, PointF*, int)'
+                          href: /previous-versions//ms536143(v=vs.85)
+                        - name: 'DrawClosedCurve (Pen *, PointF*, int, Real)'
+                          href: /previous-versions//ms536144(v=vs.85)
+                        - name: 'DrawClosedCurve (Pen *, Point*, int, Real)'
+                          href: /previous-versions//ms536145(v=vs.85)
+                    - name: Metodo di Overload DrawCurve
+                      href: '-gdiplus-CLASS-Graphics-DrawCurve-Methods.md'
+                      items:
+                        - name: 'DrawCurve (Pen *, Point*, int)'
+                          href: /previous-versions//ms536069(v=vs.85)
+                        - name: 'DrawCurve (Pen *, PointF*, int)'
+                          href: /previous-versions//ms536070(v=vs.85)
+                        - name: 'DrawCurve (Pen *, PointF*, int, Real)'
+                          href: /previous-versions//ms536072(v=vs.85)
+                        - name: 'DrawCurve (Pen *, Point*, INT, INT, int, Real)'
+                          href: /previous-versions//ms536139(v=vs.85)
+                        - name: 'DrawCurve (Pen *, PointF*, INT, INT, int, Real)'
+                          href: /previous-versions//ms536140(v=vs.85)
+                        - name: 'DrawCurve (Pen *, Point*, int, Real)'
+                          href: /previous-versions//ms536141(v=vs.85)
+                    - name: DrawDriverString
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawdriverstring
+                    - name: Metodo di overload DrawEllipse
+                      href: '-gdiplus-CLASS-Graphics-DrawEllipse-Methods.md'
+                      items:
+                        - name: 'DrawEllipse (Pen *, Rect&)'
+                          href: /previous-versions//ms536062(v=vs.85)
+                        - name: 'DrawEllipse (Pen *, REAL, REAL, Real, REAL)'
+                          href: /previous-versions//ms536064(v=vs.85)
+                        - name: 'DrawEllipse (Pen *, RectF&)'
+                          href: /previous-versions//ms536065(v=vs.85)
+                        - name: 'DrawEllipse (Pen *, INT, INT, INT, INT)'
+                          href: /previous-versions//ms536067(v=vs.85)
+                    - name: Metodo di overload DrawImage
+                      href: '-gdiplus-CLASS-Graphics-DrawImage-Methods.md'
+                      items:
+                        - name: 'DrawImage (Image *, Point*, int)'
+                          href: /previous-versions//ms536028(v=vs.85)
+                        - name: 'DrawImage (Image *, INT, INT)'
+                          href: /previous-versions//ms536030(v=vs.85)
+                        - name: 'DrawImage (Image *, Point&)'
+                          href: /previous-versions//ms536032(v=vs.85)
+                        - name: 'DrawImage (immagine *, reale, reale)'
+                          href: /previous-versions//ms536034(v=vs.85)
+                        - name: 'DrawImage (Image *, PointF&)'
+                          href: /previous-versions//ms536035(v=vs.85)
+                        - name: 'DrawImage (Image *, PointF*, int)'
+                          href: /previous-versions//ms536037(v=vs.85)
+                        - name: 'DrawImage (Image *, REAL, REAL, Real, REAL, Real, REAL, Unit)'
+                          href: /previous-versions//ms536039(v=vs.85)
+                        - name: 'DrawImage (Image *, RectF&)'
+                          href: /previous-versions//ms536041(v=vs.85)
+                        - name: 'DrawImage (Image *, INT, INT, INT, INT)'
+                          href: /previous-versions//ms536042(v=vs.85)
+                        - name: 'DrawImage (Image *, PointF*, int, REAL, REAL, REAL, Real, Unit, ImageAttributes *, DrawImageAbort, void*)'
+                          href: /previous-versions//ms536044(v=vs.85)
+                        - name: 'DrawImage (Image *, Rect&, int, int, int, int, Unit, ImageAttributes*, DRAWIMAGEABORT, void *)'
+                          href: /previous-versions//ms536045(v=vs.85)
+                        - name: 'DrawImage (Image *, Point*, INT, INT, INT, INT, int, Unit, ImageAttributes *, DrawImageAbort, void*)'
+                          href: /previous-versions//ms536047(v=vs.85)
+                        - name: 'DrawImage (Image *, REAL, REAL, Real, REAL)'
+                          href: /previous-versions//ms536049(v=vs.85)
+                        - name: 'DrawImage (Image *, Rect&)'
+                          href: /previous-versions//ms536051(v=vs.85)
+                        - name: 'DrawImage (Image *, INT, INT, INT, INT, INT, INT, Unit)'
+                          href: /previous-versions//ms536053(v=vs.85)
+                        - name: 'DrawImage (Image *, RectF&, Real, Real, Real, Real, Unit, ImageAttributes*, DRAWIMAGEABORT, void *)'
+                          href: /previous-versions//ms536056(v=vs.85)
+                        - name: 'DrawImage (Image *, RectF&, RectF&, Unit, ImageAttributes*)'
+                          href: /previous-versions//ms536057(v=vs.85)
+                        - name: 'DrawImage (Image *, RectF*, Matrix *, Effect*, ImageAttributes *, Unit*)'
+                          href: /previous-versions//ms536058(v=vs.85)
+                    - name: Metodo di overload DrawLine
+                      href: '-gdiplus-CLASS-Graphics-DrawLine-Methods.md'
+                      items:
+                        - name: 'DrawLine (Pen *, Point&, Point&)'
+                          href: /previous-versions//ms536020(v=vs.85)
+                        - name: 'DrawLine (Pen *, PointF&, Point&)'
+                          href: /previous-versions//ms536022(v=vs.85)
+                        - name: 'DrawLine (Pen *, REAL, REAL, Real, REAL)'
+                          href: /previous-versions//ms536024(v=vs.85)
+                        - name: 'DrawLine (Pen *, INT, INT, INT, INT)'
+                          href: /previous-versions//ms536026(v=vs.85)
+                    - name: Metodo di overload DrawLines
+                      href: '-gdiplus-CLASS-Graphics-DrawLines-Methods.md'
+                      items:
+                        - name: 'DrawLines (Pen *, Point*, int)'
+                          href: /previous-versions//ms536017(v=vs.85)
+                        - name: 'DrawLines (Pen *, PointF*, int)'
+                          href: /previous-versions//ms536019(v=vs.85)
+                    - name: DrawPath
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawpath
+                    - name: Metodo di Overload DrawPie
+                      href: '-gdiplus-CLASS-Graphics-DrawPie-Methods.md'
+                      items:
+                        - name: 'DrawPie (Pen *, Rect&, REAL, REAL)'
+                          href: /previous-versions//ms536011(v=vs.85)
+                        - name: 'DrawPie (Pen *, INT, INT, INT, INT, REAL, REAL)'
+                          href: /previous-versions//ms536013(v=vs.85)
+                        - name: 'DrawPie (Pen *, REAL, Real, Real, Real, Real, Real)'
+                          href: /previous-versions//ms536014(v=vs.85)
+                        - name: 'DrawPie (Pen *, RectF&, REAL, REAL)'
+                          href: /previous-versions//ms536016(v=vs.85)
+                    - name: Metodo di Overload DrawPolygon
+                      href: '-gdiplus-CLASS-Graphics-DrawPolygon-Methods.md'
+                      items:
+                        - name: 'DrawPolygon (Pen *, Point*, int *)'
+                          href: /previous-versions//ms536008(v=vs.85)
+                        - name: 'DrawPolygon (Pen *, PointF*, int *)'
+                          href: /previous-versions//ms536009(v=vs.85)
+                    - name: Metodo di overload DrawRectangle
+                      href: '-gdiplus-CLASS-Graphics-DrawRectangle-Methods.md'
+                      items:
+                        - name: 'DrawRectangle (Pen *, Rect&)'
+                          href: /previous-versions//ms536001(v=vs.85)
+                        - name: 'DrawRectangle (Pen *, INT, INT, INT, INT)'
+                          href: /previous-versions//ms536003(v=vs.85)
+                        - name: 'DrawRectangle (Pen *, REAL, REAL, Real, REAL)'
+                          href: /previous-versions//ms536004(v=vs.85)
+                        - name: 'DrawRectangle (Pen *, RectF&)'
+                          href: /previous-versions//ms536006(v=vs.85)
+                    - name: Metodo di Overload DrawRectangles
+                      href: '-gdiplus-CLASS-Graphics-DrawRectangles-Methods.md'
+                      items:
+                        - name: 'DrawRectangles (Pen *, Rect*, int)'
+                          href: /previous-versions//ms535996(v=vs.85)
+                        - name: 'DrawRectangles (Pen *, RectF*, int)'
+                          href: /previous-versions//ms535998(v=vs.85)
+                    - name: Metodo di overload DrawString
+                      href: '-gdiplus-CLASS-Graphics-DrawString-Methods.md'
+                      items:
+                        - name: 'DrawString (WCHAR *, int, font*, RectF&, StringFormat *, Brush*)'
+                          href: /previous-versions//ms535991(v=vs.85)
+                        - name: 'DrawString (WCHAR *, int, font*, PointF&, Brush *)'
+                          href: /previous-versions//ms535993(v=vs.85)
+                        - name: 'DrawString (WCHAR *, int, font*, PointF&, StringFormat *, Brush*)'
+                          href: /previous-versions//ms535994(v=vs.85)
+                    - name: EndContainer
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer
+                    - name: Metodo di Overload EnumerateMetafile
+                      href: '-gdiplus-CLASS-Graphics-EnumerateMetafile-Methods.md'
+                      items:
+                        - name: 'EnumerateMetafile (Metafile *, metafile&, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535977(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, Point*, int, ENUMERATEMETAFILEPROC, void *, ImageAttributes*)'
+                          href: /previous-versions//ms535978(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, Point&, Rect&, Unit, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535979(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, Point*, int, ENUMERATEMETAFILEPROC, void *, ImageAttributes*)'
+                          href: /previous-versions//ms535980(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, Rect&, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535981(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, RectF&, RectF&, Unit, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535982(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, RectF&, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535983(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, Point&, Rect&, Unit, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535984(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, Point*, int, Rect&, Unit, ENUMERATEMETAFILEPROC, void *, ImageAttributes*)'
+                          href: /previous-versions//ms535985(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, rect&, rect&, Unit, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535986(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, Point*, int, RectF&, Unit, ENUMERATEMETAFILEPROC, void *, ImageAttributes*)'
+                          href: /previous-versions//ms535988(v=vs.85)
+                        - name: 'EnumerateMetafile (Metafile *, PointF&, EnumerateMetafileProc, void*, ImageAttributes *)'
+                          href: /previous-versions//ms535989(v=vs.85)
+                    - name: Metodo di overload ExcludeClip
+                      href: '-gdiplus-CLASS-Graphics-ExcludeClip-Methods.md'
+                      items:
+                        - name: ExcludeClip (Rect&)
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-excludeclip(inconstrect_)
+                        - name: ExcludeClip (RectF&)
+                          href: /previous-versions//ms535975(v=vs.85)
+                        - name: ExcludeClip (area *)
+                          href: /previous-versions//ms535976(v=vs.85)
+                    - name: Metodo di Overload FillClosedCurve
+                      href: '-gdiplus-CLASS-Graphics-FillClosedCurve-Methods.md'
+                      items:
+                        - name: 'FillClosedCurve (Brush *, Point*, int)'
+                          href: /previous-versions//ms535970(v=vs.85)
+                        - name: 'FillClosedCurve (Brush *, Point*, int, FillMode, Real)'
+                          href: /previous-versions//ms535971(v=vs.85)
+                        - name: 'FillClosedCurve (Brush *, PointF*, int)'
+                          href: /previous-versions//ms535972(v=vs.85)
+                        - name: 'FillClosedCurve (Brush *, PointF*, int, FillMode, Real)'
+                          href: /previous-versions//ms535973(v=vs.85)
+                    - name: Metodo di overload FillEllipse
+                      href: '-gdiplus-CLASS-Graphics-FillEllipse-Methods.md'
+                      items:
+                        - name: 'FillEllipse (Brush *, Rect&)'
+                          href: /previous-versions//ms535966(v=vs.85)
+                        - name: 'FillEllipse (Brush *, REAL, REAL, Real, REAL)'
+                          href: /previous-versions//ms535967(v=vs.85)
+                        - name: 'FillEllipse (Brush *, RectF&)'
+                          href: /previous-versions//ms535968(v=vs.85)
+                        - name: 'FillEllipse (Brush *, INT, INT, INT, INT)'
+                          href: /previous-versions//ms535969(v=vs.85)
+                    - name: FillPath
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-fillpath
+                    - name: Metodo di overload FillPie
+                      href: '-gdiplus-CLASS-Graphics-FillPie-Methods.md'
+                      items:
+                        - name: 'FillPie (Brush *, Rect&, REAL, REAL)'
+                          href: /previous-versions//ms535962(v=vs.85)
+                        - name: 'FillPie (Brush *, INT, INT, INT, INT, REAL, REAL)'
+                          href: /previous-versions//ms535963(v=vs.85)
+                        - name: 'FillPie (Brush *, REAL, REAL, Real, Real, Real, REAL)'
+                          href: /previous-versions//ms535964(v=vs.85)
+                        - name: 'FillPie (Brush *, RectF&, REAL, REAL)'
+                          href: /previous-versions//ms535965(v=vs.85)
+                    - name: Metodo di Overload FillPolygon
+                      href: '-gdiplus-CLASS-Graphics-FillPolygon-Methods.md'
+                      items:
+                        - name: 'FillPolygon (Brush *, Point*, int)'
+                          href: /previous-versions//ms535958(v=vs.85)
+                        - name: 'FillPolygon (Brush *, PointF*, int)'
+                          href: /previous-versions//ms535959(v=vs.85)
+                        - name: 'FillPolygon (Brush *, Point*, int, FillMode)'
+                          href: /previous-versions//ms535960(v=vs.85)
+                        - name: 'FillPolygon (Brush *, PointF*, int, FillMode)'
+                          href: /previous-versions//ms535961(v=vs.85)
+                    - name: Metodo di Overload FillRectangle
+                      href: '-gdiplus-CLASS-Graphics-FillRectangle-Methods.md'
+                      items:
+                        - name: 'FillRectangle (Brush *, Rect&)'
+                          href: /previous-versions//ms535954(v=vs.85)
+                        - name: 'FillRectangle (Brush *, RectF&)'
+                          href: /previous-versions//ms535955(v=vs.85)
+                        - name: 'FillRectangle (Brush *, REAL, REAL, Real, REAL)'
+                          href: /previous-versions//ms535956(v=vs.85)
+                        - name: 'FillRectangle (Brush *, INT, INT, INT, INT)'
+                          href: /previous-versions//ms535957(v=vs.85)
+                    - name: Metodo di overload FillRectangles
+                      href: '-gdiplus-CLASS-Graphics-FillRectangles-Methods.md'
+                      items:
+                        - name: 'FillRectangles (Brush *, Rect*, int)'
+                          href: /previous-versions//ms535952(v=vs.85)
+                        - name: 'FillRectangles (Brush *, RectF*, int)'
+                          href: /previous-versions//ms535953(v=vs.85)
+                    - name: FillRegion
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-fillregion
+                    - name: Svuotamento
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-flush
+                    - name: Metodo di overload FromHDC
+                      href: '-gdiplus-CLASS-Graphics-FromHDC-Methods.md'
+                      items:
+                        - name: FromHDC (HDC)
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-fromhdc(inhdc)
+                        - name: 'FromHDC (HDC, HANDLE)'
+                          href: /previous-versions//ms535951(v=vs.85)
+                    - name: FromHWND
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-fromhwnd
+                    - name: FromImage
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-fromimage
+                    - name: GetClip
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getclip
+                    - name: Metodo di overload GetClipBounds
+                      href: '-gdiplus-CLASS-Graphics-GetClipBounds-Methods.md'
+                      items:
+                        - name: GetClipBounds (Rect *)
+                          href: /previous-versions//ms535948(v=vs.85)
+                        - name: GetClipBounds (RectF *)
+                          href: /previous-versions//ms535949(v=vs.85)
+                    - name: GetCompositingMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getcompositingmode
+                    - name: GetCompositingQuality
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getcompositingquality
+                    - name: GetDpiX
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getdpix
+                    - name: GetDpiY
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getdpiy
+                    - name: GetHalftonePalette
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-gethalftonepalette
+                    - name: GetHDC
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-gethdc
+                    - name: GetInterpolationMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getinterpolationmode
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getlaststatus
+                    - name: GetNearestColor
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getnearestcolor
+                    - name: GetPageScale
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getpagescale
+                    - name: GetPageUnit
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getpageunit
+                    - name: GetPixelOffsetMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getpixeloffsetmode
+                    - name: GetRenderingOrigin
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getrenderingorigin
+                    - name: GetSmoothingMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-getsmoothingmode
+                    - name: GetTextContrast
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-gettextcontrast
+                    - name: GetTextRenderingHint
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-gettextrenderinghint
+                    - name: GetTransform
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-gettransform
+                    - name: Metodo di overload GetVisibleClipBounds
+                      href: '-gdiplus-CLASS-Graphics-GetVisibleClipBounds-Methods.md'
+                      items:
+                        - name: GetVisibleClipBounds (Rect *)
+                          href: /previous-versions//ms535946(v=vs.85)
+                        - name: GetVisibleClipBounds (RectF *)
+                          href: /previous-versions//ms535947(v=vs.85)
+                    - name: Metodo di overload IntersectClip
+                      href: '-gdiplus-CLASS-Graphics-IntersectClip-Methods.md'
+                      items:
+                        - name: IntersectClip (Rect&)
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-intersectclip(inconstrect_)
+                        - name: IntersectClip (area *)
+                          href: /previous-versions//ms535944(v=vs.85)
+                        - name: IntersectClip (RectF&)
+                          href: /previous-versions//ms535945(v=vs.85)
+                    - name: IsClipEmpty
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isclipempty
+                    - name: Metodo di overload IsVisible
+                      href: '-gdiplus-CLASS-Region-IsVisible-Methods.md'
+                      items:
+                        - name: IsVisible (Point&)
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisible(inconstpoint_)
+                        - name: IsVisible (Rect&)
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisible(inconstrect_)
+                        - name: 'IsVisible (reale, reale)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisible(inreal_inreal)
+                        - name: IsVisible (RectF&)
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisible(inconstrectf_)
+                        - name: 'IsVisible (INT, INT, int, INT)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisible(inint_inint_inint_inint)
+                        - name: 'IsVisible (INT, INT)'
+                          href: /previous-versions//ms535940(v=vs.85)
+                        - name: IsVisible (PointF&)
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisible(inconstpointf_)
+                        - name: 'IsVisible (reale, reale, reale, reale)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisible(inreal_inreal_inreal_inreal)
+                    - name: IsVisibleClipEmpty
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-isvisibleclipempty
+                    - name: MeasureCharacterRanges
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-measurecharacterranges
+                    - name: MeasureDriverString
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-measuredriverstring
+                    - name: Metodo di overload MeasureString
+                      href: '-gdiplus-CLASS-Graphics-MeasureString-Methods.md'
+                      items:
+                        - name: 'MeasureString (WCHAR *, int, font*, RectF&, RectF *)'
+                          href: /previous-versions//ms535829(v=vs.85)
+                        - name: 'MeasureString (WCHAR *, int, font*, PointF&, StringFormat *, RectF*)'
+                          href: /previous-versions//ms535830(v=vs.85)
+                        - name: 'MeasureString (WCHAR *, int, font*, RectF&, StringFormat *, RectF*, int *, int*)'
+                          href: /previous-versions//ms535831(v=vs.85)
+                        - name: 'MeasureString (WCHAR *, int, font*, SizeF&, StringFormat *, SizeF*, int *, int*)'
+                          href: /previous-versions//ms535832(v=vs.85)
+                        - name: 'MeasureString (WCHAR *, int, font*, PointF&, RectF *)'
+                          href: /previous-versions//ms535833(v=vs.85)
+                    - name: MultiplyTransform
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-multiplytransform
+                    - name: ReleaseHDC
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-releasehdc
+                    - name: ResetClip
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-resetclip
+                    - name: ResetTransform
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-resettransform
+                    - name: Restore
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-restore
+                    - name: RotateTransform
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-rotatetransform
+                    - name: Salva
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-save
+                    - name: ScaleTransform
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-scaletransform
+                    - name: SetAbort
+                      href: /windows/win32/api/gdiplusGraphics/nf-gdiplusgraphics-graphics-setabort
+                    - name: Metodo di overload di seclip
+                      href: '-gdiplus-CLASS-Graphics-SetClip-Methods.md'
+                      items:
+                        - name: 'Seclip (graphics *, CombineMode)'
+                          href: /previous-versions//ms535823(v=vs.85)
+                        - name: 'Seclip (GraphicsPath *, CombineMode)'
+                          href: /previous-versions//ms535824(v=vs.85)
+                        - name: 'Seclip (Region *, CombineMode)'
+                          href: /previous-versions//ms535825(v=vs.85)
+                        - name: 'Seclip (Rect&, CombineMode)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setclip(inconstrect__incombinemode)
+                        - name: 'Seclip (HRGN, CombineMode)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setclip(inhrgn_incombinemode)
+                        - name: 'Seclip (RectF&, CombineMode)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setclip(inconstrectf__incombinemode)
+                    - name: SetCompositingMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setcompositingmode
+                    - name: SetCompositingQuality
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setcompositingquality
+                    - name: SetInterpolationMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setinterpolationmode
+                    - name: SetPageScale
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setpagescale
+                    - name: SetPageUnit
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setpageunit
+                    - name: SetPixelOffsetMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setpixeloffsetmode
+                    - name: SetRenderingOrigin
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setrenderingorigin
+                    - name: SetSmoothingMode
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setsmoothingmode
+                    - name: SetTextContrast
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-settextcontrast
+                    - name: SetTextRenderingHint
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-settextrenderinghint
+                    - name: SetTransform
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-settransform
+                    - name: TransformPoints
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-transformpoints(incoordinatespace_incoordinatespace_inoutpoint_inint)
+                    - name: Metodo di Overload TranslateClip
+                      href: '-gdiplus-CLASS-Graphics-TranslateClip-Methods.md'
+                      items:
+                        - name: 'TranslateClip (INT, INT)'
+                          href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-translateclip(inint_inint)
+                        - name: 'TranslateClip (reale, reale)'
+                          href: /previous-versions//ms535822(v=vs.85)
+                    - name: TranslateTransform
+                      href: /windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-translatetransform
+            - name: GraphicsPath
+              href: /windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath
+              items:
+                - name: Costruttore di overload GraphicsPath
+                  href: '-gdiplus-CLASS-GraphicsPath-Constructors.md'
+                  items:
+                    - name: 'GraphicsPath (Point *, byte*, int, FillMode)'
+                      href: /previous-versions//ms535629(v=vs.85)
+                    - name: GraphicsPath (FillMode)
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-graphicspath(infillmode)
+                    - name: 'GraphicsPath (PointF *, byte*, int, FillMode)'
+                      href: /previous-versions//ms535631(v=vs.85)
+                - name: Metodi GraphicsPath
+                  href: '-gdiplus-class-graphicspath-methods.md'
+                  items:
+                    - name: Metodo di Overload AddArc
+                      href: '-gdiplus-CLASS-GraphicsPath-AddArc-Methods.md'
+                      items:
+                        - name: 'AddArc (Rect&, REAL, REAL)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addarc(inconstrect__inreal_inreal)
+                        - name: 'AddArc (RectF&, REAL, REAL)'
+                          href: /previous-versions//ms535626(v=vs.85)
+                        - name: 'AddArc (INT, INT, INT, INT, REAL, REAL)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addarc(inint_inint_inint_inint_inreal_inreal)
+                        - name: 'AddArc (reale, reale, reale, reale, reale, reale)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addarc(inreal_inreal_inreal_inreal_inreal_inreal)
+                    - name: Metodo di Overload AddBezier
+                      href: '-gdiplus-CLASS-GraphicsPath-AddBezier-Methods.md'
+                      items:
+                        - name: 'AddBezier (punto&, punto&, punto&, punto&)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addbezier(inconstpoint__inconstpoint__inconstpoint__inconstpoint_)
+                        - name: 'AddBezier (reale, reale, reale, reale, reale, reale, reale, reale)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addbezier(inreal_inreal_inreal_inreal_inreal_inreal_inreal_inreal)
+                        - name: 'AddBezier (PointF&, PointF&, PointF&, PointF&)'
+                          href: /previous-versions//ms535623(v=vs.85)
+                        - name: 'AddBezier (INT, INT, INT, INT, INT, INT, INT, INT)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addbezier(inint_inint_inint_inint_inint_inint_inint_inint)
+                    - name: Metodo di Overload AddBeziers
+                      href: '-gdiplus-CLASS-GraphicsPath-AddBeziers-Methods.md'
+                      items:
+                        - name: 'AddBeziers (Point *, INT)'
+                          href: /previous-versions//ms535619(v=vs.85)
+                        - name: 'AddBeziers (PointF *, INT)'
+                          href: /previous-versions//ms535620(v=vs.85)
+                    - name: Metodo di overload AddClosedCurve
+                      href: '-gdiplus-CLASS-GraphicsPath-AddClosedCurve-Methods.md'
+                      items:
+                        - name: 'AddClosedCurve (Point *, INT)'
+                          href: /previous-versions//ms535615(v=vs.85)
+                        - name: 'AddClosedCurve (Point *, INT, REAL)'
+                          href: /previous-versions//ms535616(v=vs.85)
+                        - name: 'AddClosedCurve (PointF *, INT, REAL)'
+                          href: /previous-versions//ms535617(v=vs.85)
+                        - name: 'AddClosedCurve (PointF *, INT)'
+                          href: /previous-versions//ms535618(v=vs.85)
+                    - name: Metodo di overload AddCurve
+                      href: '-gdiplus-CLASS-GraphicsPath-AddCurve-Methods.md'
+                      items:
+                        - name: 'AddCurve (Point *, INT)'
+                          href: /previous-versions//ms535609(v=vs.85)
+                        - name: 'AddCurve (PointF *, INT, REAL)'
+                          href: /previous-versions//ms535610(v=vs.85)
+                        - name: 'AddCurve (PointF *, INT)'
+                          href: /previous-versions//ms535611(v=vs.85)
+                        - name: 'AddCurve (Point *, INT, INT, INT, REAL)'
+                          href: /previous-versions//ms535612(v=vs.85)
+                        - name: 'AddCurve (Point *, INT, REAL)'
+                          href: /previous-versions//ms535613(v=vs.85)
+                        - name: 'AddCurve (PointF *, INT, int, INT, REAL)'
+                          href: /previous-versions//ms535614(v=vs.85)
+                    - name: Metodo di Overload AddEllipse
+                      href: '-gdiplus-CLASS-GraphicsPath-AddEllipse-Methods.md'
+                      items:
+                        - name: AddEllipse (Rect&)
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addellipse(inconstrect_)
+                        - name: AddEllipse (RectF&)
+                          href: /previous-versions//ms535606(v=vs.85)
+                        - name: 'AddEllipse (INT, INT, INT, INT)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addellipse(inint_inint_inint_inint)
+                        - name: 'AddEllipse (reale, reale, reale, reale)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addellipse(inreal_inreal_inreal_inreal)
+                    - name: Metodo di overload AddLine
+                      href: '-gdiplus-CLASS-GraphicsPath-AddLine-Methods.md'
+                      items:
+                        - name: 'AddLine (punto&, punto&)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addline(inconstpoint__inconstpoint_)
+                        - name: 'AddLine (PointF&, PointF&)'
+                          href: /previous-versions//ms535602(v=vs.85)
+                        - name: 'AddLine (reale, reale, reale, reale)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addline(inreal_inreal_inreal_inreal)
+                        - name: 'AddLine (INT, INT, INT, INT)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addline(inint_inint_inint_inint)
+                    - name: Metodo di Overload AddLines
+                      href: '-gdiplus-CLASS-GraphicsPath-AddLines-Methods.md'
+                      items:
+                        - name: 'AddLines (Point *, INT)'
+                          href: /previous-versions//ms535599(v=vs.85)
+                        - name: 'AddLines (PointF *, INT)'
+                          href: /previous-versions//ms535600(v=vs.85)
+                    - name: AddPath
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addpath
+                    - name: Metodo di overload AddPie
+                      href: '-gdiplus-CLASS-GraphicsPath-AddPie-Methods.md'
+                      items:
+                        - name: 'AddPie (Rect&, REAL, REAL)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addpie(inconstrect__inreal_inreal)
+                        - name: 'AddPie (INT, INT, INT, INT, REAL, REAL)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addpie(inint_inint_inint_inint_inreal_inreal)
+                        - name: 'AddPie (reale, reale, reale, reale, reale, reale)'
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addpie(inreal_inreal_inreal_inreal_inreal_inreal)
+                        - name: 'AddPie (RectF&, REAL, REAL)'
+                          href: /previous-versions//ms535598(v=vs.85)
+                    - name: Metodo di overload AddPolygon
+                      href: '-gdiplus-CLASS-GraphicsPath-AddPolygon-Methods.md'
+                      items:
+                        - name: 'AddPolygon (Point *, INT)'
+                          href: /previous-versions//ms535593(v=vs.85)
+                        - name: 'AddPolygon (PointF *, INT)'
+                          href: /previous-versions//ms535594(v=vs.85)
+                    - name: Metodo di Overload AddRectangle
+                      href: '-gdiplus-CLASS-GraphicsPath-AddRectangle-Methods.md'
+                      items:
+                        - name: AddRectangle (Rect&)
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addrectangle(inconstrect_)
+                        - name: AddRectangle (RectF&)
+                          href: /previous-versions//ms535592(v=vs.85)
+                    - name: Metodo di overload AddRectangles
+                      href: '-gdiplus-CLASS-GraphicsPath-AddRectangles-Methods.md'
+                      items:
+                        - name: 'AddRectangles (Rect *, INT)'
+                          href: /previous-versions//ms535589(v=vs.85)
+                        - name: 'AddRectangles (RectF *, INT)'
+                          href: /previous-versions//ms535590(v=vs.85)
+                    - name: Metodo di overload AddString
+                      href: '-gdiplus-CLASS-GraphicsPath-AddString-Methods.md'
+                      items:
+                        - name: 'AddString (WCHAR *, int, FontFamily*, int, Real, Rect&, StringFormat *)'
+                          href: /previous-versions//ms535585(v=vs.85)
+                        - name: 'AddString (WCHAR *, int, FontFamily*, int, Real, PointF&, StringFormat *)'
+                          href: /previous-versions//ms535586(v=vs.85)
+                        - name: 'AddString (WCHAR *, int, FontFamily*, int, Real, Point&, StringFormat *)'
+                          href: /previous-versions//ms535587(v=vs.85)
+                        - name: 'AddString (WCHAR *, int, FontFamily*, int, Real, RectF&, StringFormat *)'
+                          href: /previous-versions//ms535588(v=vs.85)
+                    - name: ClearMarkers
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-clearmarkers
+                    - name: Clone
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-clone
+                    - name: CloseAllFigures
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-closeallfigures
+                    - name: CloseFigure
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-closefigure
+                    - name: Flatten
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-flatten
+                    - name: Metodo di Overload GetBounds
+                      href: '-gdiplus-CLASS-Region-GetBounds-Methods.md'
+                      items:
+                        - name: 'GetBounds (Rect *, Matrix*, Pen *)'
+                          href: /previous-versions//ms535583(v=vs.85)
+                        - name: 'GetBounds (RectF *, Matrix*, Pen *)'
+                          href: /previous-versions//ms535584(v=vs.85)
+                    - name: GetFillMode
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getfillmode
+                    - name: GetLastPoint
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getlastpoint
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getlaststatus
+                    - name: GetPathData
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getpathdata
+                    - name: Metodo di overload GetPathPoints
+                      href: '-gdiplus-CLASS-GraphicsPath-GetPathPoints-Methods.md'
+                      items:
+                        - name: 'GetPathPoints (Point *, INT)'
+                          href: /previous-versions//ms535581(v=vs.85)
+                        - name: 'GetPathPoints (PointF *, INT)'
+                          href: /previous-versions//ms535582(v=vs.85)
+                    - name: GetPathTypes
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getpathtypes
+                    - name: GetPointCount
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getpointcount
+                    - name: Metodo di overload IsOutlineVisible
+                      href: '-gdiplus-CLASS-GraphicsPath-IsOutlineVisible-Methods.md'
+                      items:
+                        - name: 'IsOutlineVisible (Point&, Pen *, graphics*)'
+                          href: /previous-versions//ms535577(v=vs.85)
+                        - name: 'IsOutlineVisible (reale, reale, penna *, grafica*)'
+                          href: /previous-versions//ms535578(v=vs.85)
+                        - name: 'IsOutlineVisible (INT, INT, Pen *, graphics*)'
+                          href: /previous-versions//ms535579(v=vs.85)
+                        - name: 'IsOutlineVisible (PointF&, Pen *, graphics*)'
+                          href: /previous-versions//ms535580(v=vs.85)
+                    - name: Metodo di overload IsVisible
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-isvisible(inconstpoint__inconstgraphics)
+                      items:
+                        - name: 'IsVisible (REAL, REAL, Graphics *)'
+                          href: /previous-versions//ms535573(v=vs.85)
+                        - name: 'IsVisible (PointF&, Graphics *)'
+                          href: /previous-versions//ms535574(v=vs.85)
+                        - name: 'IsVisible (INT, INT, Graphics *)'
+                          href: /previous-versions//ms535575(v=vs.85)
+                        - name: 'IsVisible (Point&, Graphics *)'
+                          href: /previous-versions//ms535576(v=vs.85)
+                    - name: Riquadro
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-outline
+                    - name: Reset
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-reset
+                    - name: Reverse
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-reverse
+                    - name: SetFillMode
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-setfillmode
+                    - name: SetMarker
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-setmarker
+                    - name: StartFigure
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-startfigure
+                    - name: Trasformare
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-transform
+                    - name: Curvatura
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-warp
+                    - name: Ampliare
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-widen
+            - name: GraphicsPathIterator
+              href: /windows/win32/api/gdipluspath/nl-gdipluspath-graphicspathiterator
+              items:
+                - name: GraphicsPathIterator
+                  href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-graphicspathiterator(constgraphicspathiterator_)
+                - name: Metodi GraphicsPathIterator
+                  href: '-gdiplus-class-graphicspathiterator-methods.md'
+                  items:
+                    - name: CopyData
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-copydata
+                    - name: Enumerazione
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-enumerate
+                    - name: GetCount
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-getcount
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-getlaststatus
+                    - name: GetSubpathCount
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-getsubpathcount
+                    - name: HasCurve
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-hascurve
+                    - name: Metodo di Overload NextMarker
+                      href: '-gdiplus-CLASS-GraphicsPathIterator-NextMarker-Methods.md'
+                      items:
+                        - name: NextMarker (GraphicsPath *)
+                          href: /previous-versions//ms535464(v=vs.85)
+                        - name: 'NextMarker (INT *, int*)'
+                          href: /previous-versions//ms535465(v=vs.85)
+                    - name: NextPathType
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-nextpathtype
+                    - name: Metodo di overload NextSubpath
+                      href: '-gdiplus-CLASS-GraphicsPathIterator-NextSubpath-Methods.md'
+                      items:
+                        - name: 'NextSubpath (GraphicsPath *, bool*)'
+                          href: /previous-versions//ms535462(v=vs.85)
+                        - name: 'NextSubpath (INT *, int*, bool *)'
+                          href: /previous-versions//ms535463(v=vs.85)
+                    - name: Riavvolgimento rapido
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-rewind
+            - name: HatchBrush
+              href: /windows/win32/api/gdiplusbrush/nl-gdiplusbrush-hatchbrush
+              items:
+                - name: HatchBrush
+                  href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-hatchbrush-hatchbrush(consthatchbrush_)
+                - name: Metodi HatchBrush
+                  href: '-gdiplus-class-hatchbrush-methods.md'
+                  items:
+                    - name: GetBackgroundColor
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-hatchbrush-getbackgroundcolor
+                    - name: GetForegroundColor
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-hatchbrush-getforegroundcolor
+                    - name: GetHatchStyle
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-hatchbrush-gethatchstyle
+            - name: HueSaturationLightness
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-huesaturationlightness
+              items:
+                - name: HueSaturationLightness
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-huesaturationlightness-huesaturationlightness
+                - name: Metodi HueSaturationLightness
+                  href: '-gdiplus-class-huesaturationlightness-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-huesaturationlightness-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-huesaturationlightness-setparameters
+            - name: Immagine
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image
+              items:
+                - name: Costruttore di overload dell'immagine
+                  href: '-gdiplus-CLASS-Image-Constructors.md'
+                  items:
+                    - name: 'Image (IStream *, BOOL)'
+                      href: /previous-versions//ms535410(v=vs.85)
+                    - name: 'Image (WCHAR *, BOOL)'
+                      href: /previous-versions//ms535411(v=vs.85)
+                - name: Metodi immagine
+                  href: '-gdiplus-class-image-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-clone
+                    - name: FindFirstItem
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-findfirstitem
+                    - name: FindNextItem
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-findnextitem
+                    - name: FromFile
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-fromfile
+                    - name: FromStream
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-fromstream
+                    - name: GetAllPropertyItems
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getallpropertyitems
+                    - name: GetBounds
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getbounds
+                    - name: GetEncoderParameterList
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlist
+                    - name: GetEncoderParameterListSize
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlistsize
+                    - name: GetFlags
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getflags
+                    - name: GetFrameCount
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getframecount
+                    - name: GetFrameDimensionsCount
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getframedimensionscount
+                    - name: GetFrameDimensionsList
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getframedimensionslist
+                    - name: GetHeight
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getheight
+                    - name: GetHorizontalResolution
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-gethorizontalresolution
+                    - name: GetItemData
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getitemdata
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getlaststatus
+                    - name: GetPalette
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpalette
+                    - name: GetPaletteSize
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpalettesize
+                    - name: GetPhysicalDimension
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getphysicaldimension
+                    - name: GetPixelFormat
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpixelformat
+                    - name: GetPropertyCount
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpropertycount
+                    - name: GetPropertyIdList
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpropertyidlist
+                    - name: GetPropertyItem
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpropertyitem
+                    - name: GetPropertyItemSize
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpropertyitemsize
+                    - name: GetPropertySize
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getpropertysize
+                    - name: GetRawFormat
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getrawformat
+                    - name: GetThumbnailImage
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getthumbnailimage
+                    - name: GetType
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-gettype
+                    - name: GetVerticalResolution
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getverticalresolution
+                    - name: GetWidth
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-getwidth
+                    - name: RemovePropertyItem
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-removepropertyitem
+                    - name: RotateFlip
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-rotateflip
+                    - name: Salva metodo di overload
+                      href: '-gdiplus-CLASS-Image-Save-Methods.md'
+                      items:
+                        - name: 'Salva (IStream *, CLSID*, EncoderParameters *)'
+                          href: /previous-versions//ms535406(v=vs.85)
+                        - name: 'Salva (WCHAR *, CLSID*, EncoderParameters *)'
+                          href: /previous-versions//ms535407(v=vs.85)
+                    - name: Metodo di overload SaveAdd
+                      href: '-gdiplus-CLASS-Image-SaveAdd-Methods.md'
+                      items:
+                        - name: SaveAdd (EncoderParameters *)
+                          href: /previous-versions//ms535408(v=vs.85)
+                        - name: 'SaveAdd (Image *, EncoderParameters*)'
+                          href: /previous-versions//ms535409(v=vs.85)
+                    - name: SelectActiveFrame
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-selectactiveframe
+                    - name: SetAbort
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-setabort
+                    - name: SetPalette
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-setpalette
+                    - name: SetPropertyItem
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-setpropertyitem
+            - name: ImageAttributes
+              href: /windows/win32/api/gdiplusimageattributes/nl-gdiplusimageattributes-imageattributes
+              items:
+                - name: ImageAttributes
+                  href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-imageattributes(constimageattributes_)
+                - name: Metodi ImageAttributes
+                  href: '-gdiplus-class-imageattributes-methods.md'
+                  items:
+                    - name: ClearBrushRemapTable
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearbrushremaptable
+                    - name: ClearColorKey
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearcolorkey
+                    - name: ClearColorMatrices
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearcolormatrices
+                    - name: ClearColorMatrix
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearcolormatrix
+                    - name: ClearGamma
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-cleargamma
+                    - name: ClearNoOp
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearnoop
+                    - name: ClearOutputChannel
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearoutputchannel
+                    - name: ClearOutputChannelColorProfile
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearoutputchannelcolorprofile
+                    - name: ClearRemapTable
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearremaptable
+                    - name: ClearThreshold
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clearthreshold
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-clone
+                    - name: GetAdjustedPalette
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-getadjustedpalette
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-getlaststatus
+                    - name: Reset
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-reset
+                    - name: SetBrushRemapTable
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setbrushremaptable
+                    - name: SetColorKey
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setcolorkey
+                    - name: SetColorMatrices
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setcolormatrices
+                    - name: SetColorMatrix
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setcolormatrix
+                    - name: SetGamma
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setgamma
+                    - name: SetNoOp
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setnoop
+                    - name: SetOutputChannel
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setoutputchannel
+                    - name: SetOutputChannelColorProfile
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setoutputchannelcolorprofile
+                    - name: SetRemapTable
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setremaptable
+                    - name: SetThreshold
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setthreshold
+                    - name: SetToIdentity
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-settoidentity
+                    - name: SetWrapMode
+                      href: /windows/win32/api/gdiplusimageattributes/nf-gdiplusimageattributes-imageattributes-setwrapmode
+            - name: ImageCodecInfo
+              href: /previous-versions//ms534466(v=vs.85)
+            - name: ImageItemData
+              href: /previous-versions//ms534468(v=vs.85)
+            - name: InstalledFontCollection
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-installedfontcollection
+              items:
+                - name: InstalledFontCollection
+                  href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-installedfontcollection-installedfontcollection(constinstalledfontcollection_)
+                - name: Metodi InstalledFontCollection
+                  href: '-gdiplus-class-installedfontcollection-methods.md'
+            - name: Livelli
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-levels
+              items:
+                - name: Livelli
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-levels-levels
+                - name: Metodi levels
+                  href: '-gdiplus-class-levels-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-levels-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-levels-setparameters
+            - name: LinearGradientBrush
+              href: /windows/win32/api/gdiplusbrush/nl-gdiplusbrush-lineargradientbrush
+              items:
+                - name: Costruttore di overload LinearGradientBrush
+                  href: '-gdiplus-CLASS-LinearGradientBrush-Constructors.md'
+                  items:
+                    - name: 'LinearGradientBrush (PointF&, PointF&, color&, color&)'
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-lineargradientbrush(inconstpointf__inconstpointf__inconstcolor__inconstcolor_)
+                    - name: 'LinearGradientBrush (Rect&, color&, color&, REAL, BOOL)'
+                      href: /previous-versions//ms535354(v=vs.85)
+                    - name: 'LinearGradientBrush (RectF&, color&, color&, LinearGradientMode)'
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-lineargradientbrush(inconstrectf__inconstcolor__inconstcolor__inlineargradientmode)
+                    - name: 'LinearGradientBrush (Point&, Point&, color&, color&)'
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-lineargradientbrush(inconstpoint__inconstpoint__inconstcolor__inconstcolor_)
+                    - name: 'LinearGradientBrush (Rect&, color&, color&, REAL, BOOL)'
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-lineargradientbrush(inconstrect__inconstcolor__inconstcolor__inreal_inbool)
+                    - name: 'LinearGradientBrush (Rect&, color&, color&, LinearGradientMode)'
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-lineargradientbrush(inconstrect__inconstcolor__inconstcolor__inlineargradientmode)
+                - name: Metodi LinearGradientBrush
+                  href: '-gdiplus-class-lineargradientbrush-methods.md'
+                  items:
+                    - name: Getblend
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getblend
+                    - name: GetBlendCount
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getblendcount
+                    - name: GetGammaCorrection
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getgammacorrection
+                    - name: GetInterpolationColorCount
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getinterpolationcolorcount
+                    - name: GetInterpolationColors
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getinterpolationcolors
+                    - name: GetLinearColors
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getlinearcolors
+                    - name: Metodo di overload GetRectangle
+                      href: '-gdiplus-CLASS-PathGradientBrush-GetRectangle-Methods.md'
+                      items:
+                        - name: GetRectangle (Rect *)
+                          href: /previous-versions//ms535351(v=vs.85)
+                        - name: GetRectangle (RectF *)
+                          href: /previous-versions//ms535352(v=vs.85)
+                    - name: GetTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-gettransform
+                    - name: GetWrapMode
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-getwrapmode
+                    - name: MultiplyTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-multiplytransform
+                    - name: ResetTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-resettransform
+                    - name: RotateTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-rotatetransform
+                    - name: ScaleTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-scaletransform
+                    - name: Seblend
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-setblend
+                    - name: SetBlendBellShape
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-setblendbellshape
+                    - name: SetBlendTriangularShape
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-setblendtriangularshape
+                    - name: SetGammaCorrection
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-setgammacorrection
+                    - name: SetInterpolationColors
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-setinterpolationcolors
+                    - name: SetLinearColors
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-setlinearcolors
+                    - name: SetTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-settransform
+                    - name: SetWrapMode
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-setwrapmode
+                    - name: TranslateTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-lineargradientbrush-translatetransform
+            - name: Matrice
+              href: /windows/win32/api/gdiplusmatrix/nl-gdiplusmatrix-matrix
+              items:
+                - name: Costruttore di overload della matrice
+                  href: '-gdiplus-class-matrix-constructors.md'
+                  items:
+                    - name: 'Matrix (RectF&, PointF *)'
+                      href: /previous-versions//ms535322(v=vs.85)
+                    - name: 'Matrix (Rect&, Point *)'
+                      href: /previous-versions//ms535323(v=vs.85)
+                    - name: Matrix ()
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-matrix(constmatrix_)
+                    - name: 'Matrix (reale, reale, reale, reale, reale, reale)'
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-matrix(inreal_inreal_inreal_inreal_inreal_inreal)
+                - name: Metodi Matrix
+                  href: '-gdiplus-class-matrix-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-clone
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-equals
+                    - name: GetElements
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-getelements
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-getlaststatus
+                    - name: Inverti
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-invert
+                    - name: IsIdentity
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-isidentity
+                    - name: IsInvertible
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-isinvertible
+                    - name: Moltiplicazione
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-multiply
+                    - name: OffsetX
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-offsetx
+                    - name: OffsetY
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-offsety
+                    - name: Reset
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-reset
+                    - name: Ruota
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-rotate
+                    - name: RotateAt
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-rotateat
+                    - name: Scalabilità
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-scale
+                    - name: Seelements
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-setelements
+                    - name: Taglio
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-shear
+                    - name: Metodo di Overload TransformPoints
+                      href: '-gdiplus-CLASS-Matrix-TransformPoints-Methods.md'
+                      items:
+                        - name: 'TransformPoints (Point *, INT)'
+                          href: /previous-versions//ms535320(v=vs.85)
+                        - name: 'TransformPoints (PointF *, INT)'
+                          href: /previous-versions//ms535321(v=vs.85)
+                    - name: Metodo di overload TransformVectors
+                      href: '-gdiplus-CLASS-Matrix-TransformVectors-Methods.md'
+                      items:
+                        - name: 'TransformVectors (Point *, INT)'
+                          href: /previous-versions//ms535318(v=vs.85)
+                        - name: 'TransformVectors (PointF *, INT)'
+                          href: /previous-versions//ms535319(v=vs.85)
+                    - name: Traduci
+                      href: /windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-translate
+            - name: Metafile
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile
+              items:
+                - name: Costruttore di Overload Metafile
+                  href: '-gdiplus-CLASS-Metafile-Constructors.md'
+                  items:
+                    - name: 'Metafile (HDC, EmfType, WCHAR *)'
+                      href: /previous-versions//ms535284(v=vs.85)
+                    - name: Metafile (WCHAR *)
+                      href: /previous-versions//ms535285(v=vs.85)
+                    - name: 'Metafile (HDC, RectF&, MetaFileFrameUnit, EmfType, WCHAR *)'
+                      href: /previous-versions//ms535286(v=vs.85)
+                    - name: 'Metafile (HMETAFILE, WmfPlaceableFileHeader *, BOOL)'
+                      href: /previous-versions//ms535287(v=vs.85)
+                    - name: 'Metafile (WCHAR *, HDC, Rect&, MetaFileFrameUnit, EmfType, WCHAR*)'
+                      href: /previous-versions//ms535288(v=vs.85)
+                    - name: 'Metafile (IStream *, HDC, RectF&, MetafileFrameUnit, EmfType, WCHAR*)'
+                      href: /previous-versions//ms535289(v=vs.85)
+                    - name: 'Metafile (IStream *, HDC, EmfType, WCHAR*)'
+                      href: /previous-versions//ms535290(v=vs.85)
+                    - name: 'Metafile (IStream *, HDC, Rect&, MetafileFrameUnit, EmfType, WCHAR*)'
+                      href: /previous-versions//ms535291(v=vs.85)
+                    - name: 'Metafile (WCHAR *, HDC, RectF&, MetafileFrameUnit, EmfType, WCHAR*)'
+                      href: /previous-versions//ms535292(v=vs.85)
+                    - name: 'Metafile (WCHAR *, HDC, EmfType, WCHAR*)'
+                      href: /previous-versions//ms535293(v=vs.85)
+                    - name: Metafile (IStream *)
+                      href: /previous-versions//ms535294(v=vs.85)
+                    - name: 'Metafile (HENHMETAFILE, BOOL)'
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhenhmetafile_inbool)
+                    - name: 'Metafile (HDC, Rect&, MetafileFrameUnit, EmfType, WCHAR *)'
+                      href: /previous-versions//ms535296(v=vs.85)
+                - name: Metodi metafile
+                  href: '-gdiplus-class-metafile-methods.md'
+                  items:
+                    - name: Metodo di overload ConvertToEmfPlus
+                      href: '-gdiplus-CLASS-Metafile-ConvertToEmfPlus-Methods.md'
+                      items:
+                        - name: 'ConvertToEmfPlus (Graphics *, bool*, EMFTYPE, WCHAR *)'
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inconstwchar_inoutint_inemftype_inconstwchar)
+                        - name: 'ConvertToEmfPlus (Graphics *, IStream*, bool *, EmfType, WCHAR*)'
+                          href: /previous-versions//ms535282(v=vs.85)
+                        - name: 'ConvertToEmfPlus (Graphics *, WCHAR*, bool *, EmfType, WCHAR*)'
+                          href: /previous-versions//ms535283(v=vs.85)
+                    - name: EmfToWmfBits
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-emftowmfbits
+                    - name: GetDownLevelRasterizationLimit
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getdownlevelrasterizationlimit
+                    - name: GetHENHMETAFILE
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-gethenhmetafile
+                    - name: Metodo di overload GetMetafileHeader
+                      href: '-gdiplus-CLASS-Metafile-GetMetafileHeader-Methods.md'
+                      items:
+                        - name: 'GetMetafileHeader (WCHAR *, MetafileHeader*)'
+                          href: /previous-versions//ms535276(v=vs.85)
+                        - name: 'GetMetafileHeader (HENHMETAFILE *, MetafileHeader*)'
+                          href: /previous-versions//ms535277(v=vs.85)
+                        - name: 'GetMetafileHeader (HMETAFILE, WmfPlaceableFileHeader *, MetafileHeader*)'
+                          href: /previous-versions//ms535278(v=vs.85)
+                        - name: GetMetafileHeader (MetafileHeader *)
+                          href: /previous-versions//ms535279(v=vs.85)
+                        - name: 'GetMetafileHeader (IStream *, MetafileHeader*)'
+                          href: /previous-versions//ms535280(v=vs.85)
+                    - name: PlayRecord
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-playrecord
+                    - name: SetDownLevelRasterizationLimit
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-setdownlevelrasterizationlimit
+            - name: MetafileHeader
+              href: /windows/win32/api/gdiplusmetaheader/nl-gdiplusmetaheader-metafileheader
+              items:
+                - name: Metodi MetafileHeader
+                  href: '-gdiplus-class-metafileheader-methods.md'
+                  items:
+                    - name: GetBounds
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getbounds
+                    - name: GetDpiX
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getdpix
+                    - name: GetDpiY
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getdpiy
+                    - name: GetEmfHeader
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getemfheader
+                    - name: GetEmfPlusFlags
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getemfplusflags
+                    - name: GetMetafileSize
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getmetafilesize
+                    - name: GetType
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-gettype
+                    - name: GetVersion
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getversion
+                    - name: GetWmfHeader
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-getwmfheader
+                    - name: Visualizza
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-isdisplay
+                    - name: IsEmf
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-isemf
+                    - name: IsEmfOrEmfPlus
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-isemforemfplus
+                    - name: IsEmfPlus
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-isemfplus
+                    - name: IsEmfPlusDual
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-isemfplusdual
+                    - name: IsEmfPlusOnly
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-isemfplusonly
+                    - name: IsWmf
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-iswmf
+                    - name: IsWmfPlaceable
+                      href: /windows/win32/api/gdiplusmetaheader/nf-gdiplusmetaheader-metafileheader-iswmfplaceable
+            - name: PathData
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-pathdata
+              items:
+                - name: 'PathData::P Costruttore athData'
+                  href: 'https://docs.microsoft.com/windows/win32/api/gdiplustypes/nf-gdiplustypes-pathdata-pathdata(constpathdata_)'
+            - name: PathGradientBrush
+              href: /windows/win32/api/gdipluspath/nl-gdipluspath-pathgradientbrush
+              items:
+                - name: Costruttore di Overload PathGradientBrush
+                  href: '-gdiplus-CLASS-PathGradientBrush-Constructors.md'
+                  items:
+                    - name: 'PathGradientBrush (Point *, INT, WrapMode)'
+                      href: /previous-versions//ms535100(v=vs.85)
+                    - name: 'PathGradientBrush (PointF *, INT, WrapMode)'
+                      href: /previous-versions//ms535101(v=vs.85)
+                    - name: PathGradientBrush (GraphicsPath *)
+                      href: /previous-versions//ms535102(v=vs.85)
+                - name: Metodi PathGradientBrush
+                  href: '-gdiplus-class-pathgradientbrush-methods.md'
+                  items:
+                    - name: GetBlendCount
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getblendcount
+                    - name: Getblend
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getblend
+                    - name: GetCenterColor
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getcentercolor
+                    - name: Metodo di overload GetCenterPoint
+                      href: '-gdiplus-CLASS-PathGradientBrush-GetCenterPoint-Methods.md'
+                      items:
+                        - name: GetCenterPoint (punto *)
+                          href: /previous-versions//ms535098(v=vs.85)
+                        - name: GetCenterPoint (PointF *)
+                          href: /previous-versions//ms535099(v=vs.85)
+                    - name: GetFocusScales
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getfocusscales
+                    - name: GetGammaCorrection
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getgammacorrection
+                    - name: Getgraphicspath
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getgraphicspath
+                    - name: GetInterpolationColorCount
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getinterpolationcolorcount
+                    - name: GetInterpolationColors
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getinterpolationcolors
+                    - name: GetPointCount
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getpointcount
+                    - name: Metodo di overload GetRectangle
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getrectangle(outrect)
+                      items:
+                        - name: GetRectangle (RectF *)
+                          href: /previous-versions//ms535096(v=vs.85)
+                        - name: GetRectangle (Rect *)
+                          href: /previous-versions//ms535097(v=vs.85)
+                    - name: GetSurroundColorCount
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getsurroundcolorcount
+                    - name: GetSurroundColors
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getsurroundcolors
+                    - name: GetTransform
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-gettransform
+                    - name: GetWrapMode
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-getwrapmode
+                    - name: MultiplyTransform
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-multiplytransform
+                    - name: ResetTransform
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-resettransform
+                    - name: RotateTransform
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-rotatetransform
+                    - name: ScaleTransform
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-scaletransform
+                    - name: SetBlendBellShape
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setblendbellshape
+                    - name: SetBlendTriangularShape
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setblendtriangularshape
+                    - name: Seblend
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setblend
+                    - name: SetCenterColor
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setcentercolor
+                    - name: Metodo di overload SetCenterPoint
+                      href: '-gdiplus-CLASS-PathGradientBrush-SetCenterPoint-Methods.md'
+                      items:
+                        - name: SetCenterPoint (punto&)
+                          href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setcenterpoint(inconstpoint_)
+                        - name: SetCenterPoint (PointF&)
+                          href: /previous-versions//ms535095(v=vs.85)
+                    - name: SetFocusScales
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setfocusscales
+                    - name: SetGammaCorrection
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection
+                    - name: Segraphicspath
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setgraphicspath
+                    - name: SetInterpolationColors
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setinterpolationcolors
+                    - name: SetSurroundColors
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setsurroundcolors
+                    - name: SetTransform
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-settransform
+                    - name: SetWrapMode
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-setwrapmode
+                    - name: TranslateTransform
+                      href: /windows/win32/api/gdipluspath/nf-gdipluspath-pathgradientbrush-translatetransform
+            - name: Penna
+              href: /windows/win32/api/gdipluspen/nl-gdipluspen-pen
+              items:
+                - name: Costruttore di overload della penna
+                  href: '-gdiplus-CLASS-Pen-Constructors.md'
+                  items:
+                    - name: 'Pen (Brush *, REAL)'
+                      href: /previous-versions//ms535058(v=vs.85)
+                    - name: 'Pen (colore&, reale)'
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-pen(inconstcolor__inreal)
+                - name: Metodi penna
+                  href: '-gdiplus-class-pen-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-clone
+                    - name: GetAlignment
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getalignment
+                    - name: GetBrush
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getbrush
+                    - name: GetColor
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getcolor
+                    - name: GetCompoundArray
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getcompoundarray
+                    - name: GetCompoundArrayCount
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getcompoundarraycount
+                    - name: GetCustomEndCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getcustomendcap
+                    - name: GetCustomStartCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getcustomstartcap
+                    - name: GetDashCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getdashcap
+                    - name: GetDashOffset
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getdashoffset
+                    - name: GetDashPattern
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getdashpattern
+                    - name: GetDashPatternCount
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getdashpatterncount
+                    - name: GetDashStyle
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getdashstyle
+                    - name: GetEndCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getendcap
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getlaststatus
+                    - name: GetLineJoin
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getlinejoin
+                    - name: GetMiterLimit
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getmiterlimit
+                    - name: GetPenType
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getpentype
+                    - name: GetStartCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getstartcap
+                    - name: GetTransform
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-gettransform
+                    - name: GetWidth
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-getwidth
+                    - name: MultiplyTransform
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-multiplytransform
+                    - name: ResetTransform
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-resettransform
+                    - name: RotateTransform
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-rotatetransform
+                    - name: ScaleTransform
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-scaletransform
+                    - name: SetAlignment
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setalignment
+                    - name: Sebrush
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setbrush
+                    - name: SetColor
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setcolor
+                    - name: SetCompoundArray
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setcompoundarray
+                    - name: SetCustomEndCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setcustomendcap
+                    - name: SetCustomStartCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setcustomstartcap
+                    - name: SetDashCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setdashcap
+                    - name: SetDashOffset
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setdashoffset
+                    - name: SetDashPattern
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setdashpattern
+                    - name: SetDashStyle
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setdashstyle
+                    - name: SetEndCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setendcap
+                    - name: SetLineCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setlinecap
+                    - name: SetLineJoin
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setlinejoin
+                    - name: SetMiterLimit
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setmiterlimit
+                    - name: SetStartCap
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setstartcap
+                    - name: SetTransform
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-settransform
+                    - name: SetWidth
+                      href: /windows/win32/api/gdipluspen/nf-gdipluspen-pen-setwidth
+            - name: Point
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-point
+              items:
+                - name: Costruttore di overload del punto
+                  href: '-gdiplus-class-point-constructors.md'
+                  items:
+                    - name: Punto ()
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-point-point(inconstpoint_)
+                    - name: 'Point (INT, INT)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-point-point(inint_inint)
+                    - name: Punto (punto&)
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-point-point(inconstpoint_)
+                    - name: Punto (dimensioni&)
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-point-point(inconstsize_)
+                - name: Metodi punto
+                  href: '-gdiplus-class-point-methods.md'
+                  items:
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-point-equals
+                    - name: operatore + (punto&)
+                      href: /previous-versions//ms535008(v=vs.85)
+                    - name: operatore-(Point&)
+                      href: /previous-versions//ms535009(v=vs.85)
+            - name: PointF
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-pointf
+              items:
+                - name: Costruttore di overload PointF
+                  href: '-gdiplus-class-pointf-constructors.md'
+                  items:
+                    - name: 'PointF (reale, reale)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-pointf-pointf(inreal_inreal)
+                    - name: PointF (SizeF&)
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-pointf-pointf(inconstsizef_)
+                    - name: PointF ()
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-pointf-pointf(inconstpointf_)
+                    - name: PointF (PointF&)
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-pointf-pointf(inconstpointf_)
+                - name: Metodi PointF
+                  href: '-gdiplus-class-pointf-methods.md'
+                  items:
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-pointf-equals
+                    - name: operatore + (PointF&)
+                      href: /previous-versions//ms534997(v=vs.85)
+                    - name: operatore-(PointF&)
+                      href: /previous-versions//ms534998(v=vs.85)
+            - name: PrivateFontCollection
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection
+              items:
+                - name: PrivateFontCollection
+                  href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-privatefontcollection-privatefontcollection(constprivatefontcollection_)
+                - name: Metodi PrivateFontCollection
+                  href: '-gdiplus-class-privatefontcollection-methods.md'
+                  items:
+                    - name: AddFontFile
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addfontfile
+                    - name: AddMemoryFont
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addmemoryfont
+            - name: PropertyItem
+              href: /previous-versions//ms534493(v=vs.85)
+            - name: Rect
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-rect
+              items:
+                - name: Costruttore di Overload Rect
+                  href: '-gdiplus-class-rect-constructors.md'
+                  items:
+                    - name: Rect ()
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-rect(inconstpoint__inconstsize_)
+                    - name: 'Rect (punto&, dimensioni&)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-rect(inconstpoint__inconstsize_)
+                    - name: 'Rect (INT, INT, int, INT)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-rect(inint_inint_inint_inint)
+                - name: Metodi Rect
+                  href: '-gdiplus-class-rect-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-clone
+                    - name: Contiene il metodo di overload
+                      href: '-gdiplus-CLASS-RectF-Contains-Methods.md'
+                      items:
+                        - name: Contains (Point&)
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-contains(inconstpoint_)
+                        - name: Contains (Rect&)
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-contains(inrect_)
+                        - name: 'Contains (INT, INT)'
+                          href: /previous-versions//ms534986(v=vs.85)
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-equals
+                    - name: GetBottom
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-getbottom
+                    - name: GetBounds
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-getbounds
+                    - name: GetLeft
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-getleft
+                    - name: GetLocation
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-getlocation
+                    - name: GetRight
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-getright
+                    - name: GetSize
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-getsize
+                    - name: GetTop
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-gettop
+                    - name: Metodo di overload inflat
+                      href: '-gdiplus-CLASS-RectF-Inflate-Methods.md'
+                      items:
+                        - name: 'Inflate (INT, INT)'
+                          href: /previous-versions//ms534982(v=vs.85)
+                        - name: Inflate (punto&)
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-inflate(inconstpoint_)
+                    - name: Intersect (metodo di overload)
+                      href: '-gdiplus-CLASS-Region-Intersect-Methods.md'
+                      items:
+                        - name: 'Intersect (Rect&, Rect&, Rect&)'
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-intersect(outrect__inconstrect__inconstrect_)
+                        - name: Intersect (Rect&)
+                          href: /previous-versions//ms534981(v=vs.85)
+                    - name: IntersectsWith
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-intersectswith
+                    - name: IsEmptyArea
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-isemptyarea
+                    - name: Offset metodo di overload
+                      href: '-gdiplus-CLASS-RectF-Offset-Methods.md'
+                      items:
+                        - name: 'Offset (INT, INT)'
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-offset(inint_inint)
+                        - name: Offset (punto&)
+                          href: /previous-versions//ms534979(v=vs.85)
+                    - name: Union
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rect-union
+            - name: RectF
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-rectf
+              items:
+                - name: Costruttore di overload RectF
+                  href: '-gdiplus-class-rectf-constructors.md'
+                  items:
+                    - name: 'RectF (PointF&, SizeF&)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-rectf(inconstpointf__inconstsizef_)
+                    - name: RectF ()
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-rectf(inconstpointf__inconstsizef_)
+                    - name: 'RectF (reale, reale, reale, reale)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-rectf(inreal_inreal_inreal_inreal)
+                - name: Metodi RectF
+                  href: '-gdiplus-class-rectf-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-clone
+                    - name: Contiene il metodo di overload
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-contains(inconstpointf_)
+                      items:
+                        - name: Contains (RectF&)
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-contains(inconstrectf_)
+                        - name: Contains (PointF&)
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-contains(inconstpointf_)
+                        - name: 'Contains (reale, reale)'
+                          href: /previous-versions//ms534956(v=vs.85)
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-equals
+                    - name: GetBottom
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-getbottom
+                    - name: GetBounds
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-getbounds
+                    - name: GetLeft
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-getleft
+                    - name: GetLocation
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-getlocation
+                    - name: GetRight
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-getright
+                    - name: GetSize
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-getsize
+                    - name: GetTop
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-gettop
+                    - name: Metodo di overload inflat
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-inflate(inconstpointf_)
+                      items:
+                        - name: Inflate (PointF&)
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-inflate(inconstpointf_)
+                        - name: 'Inflate (reale, reale)'
+                          href: /previous-versions//ms534953(v=vs.85)
+                    - name: Intersect (metodo di overload)
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-intersect(outrectf__inconstrectf__inconstrectf_)
+                      items:
+                        - name: 'Intersect (Rect&, Rect&, Rect&)'
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-intersect(outrectf__inconstrectf__inconstrectf_)
+                        - name: Intersect (Rect&)
+                          href: /previous-versions//ms534950(v=vs.85)
+                    - name: IntersectsWith
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-intersectswith
+                    - name: IsEmptyArea
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-isemptyarea
+                    - name: Offset metodo di overload
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-offset(inreal_inreal)
+                      items:
+                        - name: 'Offset (INT, INT)'
+                          href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-offset(inreal_inreal)
+                        - name: Offset (punto&)
+                          href: /previous-versions//ms534948(v=vs.85)
+                    - name: Union
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-rectf-union
+            - name: RedEyeCorrection
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-redeyecorrection
+              items:
+                - name: RedEyeCorrection
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-redeyecorrection-redeyecorrection
+                - name: Metodi RedEyeCorrection
+                  href: '-gdiplus-class-redeyecorrection-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-redeyecorrection-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-redeyecorrection-setparameters
+            - name: Region
+              href: /windows/win32/api/gdiplusheaders/nl-gdiplusheaders-region
+              items:
+                - name: Costruttore di overload Region
+                  href: '-gdiplus-class-region-constructors.md'
+                  items:
+                    - name: Region (Rect&)
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-region(inconstrect_)
+                    - name: Region ()
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-region(constregion_)
+                    - name: 'Region (BYTE *, INT)'
+                      href: /previous-versions//ms534922(v=vs.85)
+                    - name: Region (GraphicsPath *)
+                      href: /previous-versions//ms534923(v=vs.85)
+                    - name: Region (HRGN)
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-region(inhrgn)
+                    - name: Region (RectF&)
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-region(inconstrectf_)
+                - name: Metodi Region
+                  href: '-gdiplus-class-region-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-clone
+                    - name: Complemento metodo di overload
+                      href: '-gdiplus-CLASS-Region-Complement-Methods.md'
+                      items:
+                        - name: Complemento (GraphicsPath *)
+                          href: /previous-versions//ms534829(v=vs.85)
+                        - name: Complemento (area *)
+                          href: /previous-versions//ms534917(v=vs.85)
+                        - name: Complemento (Rect&)
+                          href: /previous-versions//ms534918(v=vs.85)
+                        - name: Complemento (RectF&)
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-complement(inconstrectf_)
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-equals
+                    - name: Escludi metodo di overload
+                      href: '-gdiplus-CLASS-Region-Exclude-Methods.md'
+                      items:
+                        - name: Escludi (GraphicsPath *)
+                          href: /previous-versions//ms534820(v=vs.85)
+                        - name: Escludi (RectF&)
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstrectf_)
+                        - name: Escludi (Rect&)
+                          href: /previous-versions//ms534825(v=vs.85)
+                        - name: Escludi (area *)
+                          href: /previous-versions//ms534827(v=vs.85)
+                    - name: FromHRGN
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-fromhrgn
+                    - name: Metodo di Overload GetBounds
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-getbounds(outrectf_inconstgraphics)
+                      items:
+                        - name: 'GetBounds (Rect *, graphics*)'
+                          href: /previous-versions//ms534816(v=vs.85)
+                        - name: 'GetBounds (RectF *, graphics*)'
+                          href: /previous-versions//ms534818(v=vs.85)
+                    - name: GetData
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-getdata
+                    - name: GetDataSize
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-getdatasize
+                    - name: GetHRGN
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-gethrgn
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-getlaststatus
+                    - name: Metodo di overload GetRegionScans
+                      href: '-gdiplus-CLASS-Region-GetRegionScans-Methods.md'
+                      items:
+                        - name: 'GetRegionScans (Matrix *, Rect*, int *)'
+                          href: /previous-versions//ms534812(v=vs.85)
+                        - name: 'GetRegionScans (Matrix *, RectF*, int *)'
+                          href: /previous-versions//ms534814(v=vs.85)
+                    - name: GetRegionScansCount
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-getregionscanscount
+                    - name: Intersect (metodo di overload)
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-intersect(inconstgraphicspath)
+                      items:
+                        - name: Intersect (Rect&)
+                          href: /previous-versions//ms534804(v=vs.85)
+                        - name: Intersect (GraphicsPath *)
+                          href: /previous-versions//ms534806(v=vs.85)
+                        - name: Intersect (RectF&)
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-intersect(inconstrectf_)
+                        - name: Intersect (area *)
+                          href: /previous-versions//ms534810(v=vs.85)
+                    - name: IsEmpty
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-isempty
+                    - name: IsInfinite
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-isinfinite
+                    - name: Metodo di overload IsVisible
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-isvisible(inconstpointf__inconstgraphics)
+                      items:
+                        - name: 'IsVisible (PointF&, Graphics *)'
+                          href: /previous-versions//ms534795(v=vs.85)
+                        - name: 'IsVisible (RectF&, Graphics *)'
+                          href: /previous-versions//ms534796(v=vs.85)
+                        - name: 'IsVisible (Rect&, Graphics *)'
+                          href: /previous-versions//ms534797(v=vs.85)
+                        - name: 'IsVisible (INT, INT, Graphics *)'
+                          href: /previous-versions//ms534798(v=vs.85)
+                        - name: 'IsVisible (REAL, REAL, Graphics *)'
+                          href: /previous-versions//ms534799(v=vs.85)
+                        - name: 'IsVisible (INT, INT, INT, INT, Graphics *)'
+                          href: /previous-versions//ms534800(v=vs.85)
+                        - name: 'IsVisible (Point&, Graphics *)'
+                          href: /previous-versions//ms534801(v=vs.85)
+                        - name: 'IsVisible (REAL, REAL, Real, REAL, Graphics *)'
+                          href: /previous-versions//ms534802(v=vs.85)
+                    - name: MakeEmpty
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-makeempty
+                    - name: MakeInfinite
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-makeinfinite
+                    - name: Trasformare
+                      href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-transform
+                    - name: Translate (metodo di overload)
+                      href: '-gdiplus-CLASS-Region-Translate-Methods.md'
+                      items:
+                        - name: 'Translate (REAL, REAL)'
+                          href: /previous-versions//ms534793(v=vs.85)
+                        - name: 'Translate (INT, INT)'
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-translate(inint_inint)
+                    - name: Metodo di overload Union
+                      href: '-gdiplus-CLASS-Region-Union-Methods.md'
+                      items:
+                        - name: Union (Rect&)
+                          href: /previous-versions//ms534789(v=vs.85)
+                        - name: Unione (area *)
+                          href: /previous-versions//ms534790(v=vs.85)
+                        - name: Union (RectF&)
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-union(inconstrectf_)
+                        - name: Unione (GraphicsPath *)
+                          href: /previous-versions//ms534792(v=vs.85)
+                    - name: Metodo di overload XOR
+                      href: '-gdiplus-CLASS-Region-Xor-Methods.md'
+                      items:
+                        - name: XOR (GraphicsPath *)
+                          href: /previous-versions//ms534785(v=vs.85)
+                        - name: XOR (RectF&)
+                          href: /windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-xor(inconstrectf_)
+                        - name: XOR (Rect&)
+                          href: /previous-versions//ms534787(v=vs.85)
+                        - name: XOR (area *)
+                          href: /previous-versions//ms534788(v=vs.85)
+            - name: Nitidezza
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-sharpen
+              items:
+                - name: Nitidezza
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-sharpen-sharpen
+                - name: Affila metodi
+                  href: '-gdiplus-class-sharpen-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-sharpen-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-sharpen-setparameters
+            - name: Dimensione
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-size
+              items:
+                - name: Dimensioni del costruttore in overload
+                  href: '-gdiplus-class-size-constructors.md'
+                  items:
+                    - name: Dimensioni ()
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-size-size(inconstsize_)
+                    - name: 'Dimensioni (INT, INT)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-size-size(inint_inint)
+                    - name: Dimensioni (dimensioni&)
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-size-size(inconstsize_)
+                - name: Metodi di ridimensionamento
+                  href: '-gdiplus-class-size-methods.md'
+                  items:
+                    - name: Empty
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-size-empty
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-size-equals
+                    - name: operatore +
+                      href: /previous-versions//ms534751(v=vs.85)
+                    - name: operator-
+                      href: /previous-versions//ms534752(v=vs.85)
+            - name: SizeF
+              href: /windows/win32/api/gdiplustypes/nl-gdiplustypes-sizef
+              items:
+                - name: Costruttore di overload SizeF
+                  href: '-gdiplus-class-sizef-constructors.md'
+                  items:
+                    - name: SizeF ()
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-sizef-sizef(inconstsizef_)
+                    - name: 'SizeF (reale, reale)'
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-sizef-sizef(inreal_inreal)
+                    - name: SizeF (SizeF&)
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-sizef-sizef(inconstsizef_)
+                - name: Metodi SizeF
+                  href: '-gdiplus-class-sizef-methods.md'
+                  items:
+                    - name: Empty
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-sizef-empty
+                    - name: Uguale a
+                      href: /windows/win32/api/gdiplustypes/nf-gdiplustypes-sizef-equals
+                    - name: operatore +
+                      href: /previous-versions//ms534742(v=vs.85)
+                    - name: operator-
+                      href: /previous-versions//ms534743(v=vs.85)
+            - name: SolidBrush
+              href: /windows/win32/api/gdiplusbrush/nl-gdiplusbrush-solidbrush
+              items:
+                - name: SolidBrush
+                  href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-solidbrush-solidbrush(constsolidbrush_)
+                - name: Metodi SolidBrush
+                  href: '-gdiplus-class-solidbrush-methods.md'
+                  items:
+                    - name: GetColor
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-solidbrush-getcolor
+                    - name: SetColor
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-solidbrush-setcolor
+            - name: StringFormat
+              href: /windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat
+              items:
+                - name: Costruttore di Overload StringFormat
+                  href: '-gdiplus-CLASS-StringFormat-Constructors.md'
+                  items:
+                    - name: 'StringFormat (INT, LANGID)'
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-stringformat(inint_inlangid)
+                    - name: StringFormat (StringFormat *)
+                      href: /previous-versions//ms534733(v=vs.85)
+                - name: Metodi StringFormat
+                  href: '-gdiplus-class-stringformat-methods.md'
+                  items:
+                    - name: Clone
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-clone
+                    - name: GenericDefault
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-genericdefault
+                    - name: GenericTypographic
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-generictypographic
+                    - name: GetAlignment
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-getalignment
+                    - name: GetDigitSubstitutionLanguage
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-getdigitsubstitutionlanguage
+                    - name: GetDigitSubstitutionMethod
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-getdigitsubstitutionmethod
+                    - name: GetFormatFlags
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-getformatflags
+                    - name: GetHotkeyPrefix
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-gethotkeyprefix
+                    - name: GetLastStatus
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-getlaststatus
+                    - name: GetLineAlignment
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-getlinealignment
+                    - name: GetMeasurableCharacterRangeCount
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-getmeasurablecharacterrangecount
+                    - name: GetTabStopCount
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-gettabstopcount
+                    - name: GetTabStops
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-gettabstops
+                    - name: Gettrim
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-gettrimming
+                    - name: SetAlignment
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-setalignment
+                    - name: SetDigitSubstitution
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-setdigitsubstitution
+                    - name: SetFormatFlags
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-setformatflags
+                    - name: SetHotkeyPrefix
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-sethotkeyprefix
+                    - name: SetLineAlignment
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-setlinealignment
+                    - name: SetMeasurableCharacterRanges
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-setmeasurablecharacterranges
+                    - name: SetTabStops
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-settabstops
+                    - name: Setrim
+                      href: /windows/win32/api/gdiplusstringformat/nf-gdiplusstringformat-stringformat-settrimming
+            - name: TextureBrush
+              href: /windows/win32/api/gdiplusbrush/nl-gdiplusbrush-texturebrush
+              items:
+                - name: Costruttore di overload di TextureBrush
+                  href: '-gdiplus-CLASS-TextureBrush-Constructors.md'
+                  items:
+                    - name: 'TextureBrush (Image *, wrapMode, RectF&)'
+                      href: /previous-versions//ms534544(v=vs.85)
+                    - name: 'TextureBrush (Image *, Rect&, ImageAttributes*)'
+                      href: /previous-versions//ms534546(v=vs.85)
+                    - name: 'TextureBrush (Image *, WrapMode, INT, INT, INT, INT)'
+                      href: /previous-versions//ms534548(v=vs.85)
+                    - name: 'TextureBrush (Image *, WrapMode, REAL, REAL, Real, REAL)'
+                      href: /previous-versions//ms534550(v=vs.85)
+                    - name: 'TextureBrush (Image *, RectF&, ImageAttributes*)'
+                      href: /previous-versions//ms534552(v=vs.85)
+                    - name: 'TextureBrush (Image *, WrapMode)'
+                      href: /previous-versions//ms534554(v=vs.85)
+                    - name: 'TextureBrush (Image *, WrapMode, Rect&)'
+                      href: /previous-versions//ms534558(v=vs.85)
+                - name: Metodi TextureBrush
+                  href: '-gdiplus-class-texturebrush-methods.md'
+                  items:
+                    - name: GetImage
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-getimage
+                    - name: GetTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-gettransform
+                    - name: GetWrapMode
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-getwrapmode
+                    - name: MultiplyTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-multiplytransform
+                    - name: ResetTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-resettransform
+                    - name: RotateTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-rotatetransform
+                    - name: ScaleTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-scaletransform
+                    - name: SetTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-settransform
+                    - name: SetWrapMode
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-setwrapmode
+                    - name: TranslateTransform
+                      href: /windows/win32/api/gdiplusbrush/nf-gdiplusbrush-texturebrush-translatetransform
+            - name: Tinta
+              href: /windows/win32/api/gdipluseffects/nl-gdipluseffects-tint
+              items:
+                - name: Tinta
+                  href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-tint-tint
+                - name: Metodi tinta
+                  href: '-gdiplus-class-tint-methods.md'
+                  items:
+                    - name: GetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-tint-getparameters
+                    - name: SetParameters
+                      href: /windows/win32/api/gdipluseffects/nf-gdipluseffects-tint-setparameters
+        - name: Funzioni
+          href: '-gdiplus-func-functions.md'
+          items:
+            - name: GdiplusShutdown
+              href: /windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusshutdown
+            - name: GdiplusStartup
+              href: /windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup
+            - name: GetImageDecoders
+              href: /windows/win32/api/gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoders
+            - name: GetImageDecodersSize
+              href: /windows/win32/api/gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoderssize
+            - name: GetImageEncoders
+              href: /windows/win32/api/gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders
+            - name: GetImageEncodersSize
+              href: /windows/win32/api/gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoderssize
+            - name: GetPixelFormatSize
+              href: /windows/win32/api/gdiplusPixelFormats/nf-gdipluspixelformats-getpixelformatsize
+            - name: IsAlphaPixelFormat
+              href: /windows/win32/api/gdiplusPixelFormats/nf-gdipluspixelformats-isalphapixelformat
+            - name: IsCanonicalPixelFormat
+              href: /windows/win32/api/gdiplusPixelFormats/nf-gdipluspixelformats-iscanonicalpixelformat
+            - name: IsExtendedPixelFormat
+              href: /windows/win32/api/gdiplusPixelFormats/nf-gdipluspixelformats-isextendedpixelformat
+            - name: IsIndexedPixelFormat
+              href: /windows/win32/api/gdiplusPixelFormats/nf-gdipluspixelformats-isindexedpixelformat
+            - name: ObjectTypeIsValid
+              href: /windows/win32/api/gdiplusEnums/nf-gdiplusenums-objecttypeisvalid
+        - name: Costanti
+          href: '-gdiplus-constant-constants.md'
+          items:
+            - name: Costanti effetto immagine
+              href: '-gdiplus-constant-image-effect-constants.md'
+            - name: Costanti del codificatore di immagini
+              href: '-gdiplus-constant-image-encoder-constants.md'
+            - name: Costanti del formato del file di immagine
+              href: '-gdiplus-constant-image-file-format-constants.md'
+            - name: Costanti della dimensione del frame immagine
+              href: '-gdiplus-constant-image-frame-dimension-constants.md'
+            - name: Costanti formato pixel immagine
+              href: '-gdiplus-constant-image-pixel-format-constants.md'
+            - name: Costanti del tipo di tag della proprietà Image
+              href: '-gdiplus-constant-image-property-tag-type-constants.md'
+            - name: Costanti Tag proprietà immagine
+              href: '-gdiplus-constant-image-property-tag-constants.md'
+              items:
+                - name: Tag di proprietà in ordine numerico
+                  href: '-gdiplus-constant-property-tags-in-numerical-order.md'
+                - name: Tag di proprietà in ordine alfabetico
+                  href: '-gdiplus-constant-property-tags-in-alphabetical-order.md'
+                - name: Descrizioni degli elementi delle proprietà
+                  href: '-gdiplus-constant-property-item-descriptions.md'
+                - name: Specifiche di formato dei file di immagine
+                  href: '-gdiplus-constant-image-file-format-specifications.md'
+        - name: Enumerazioni
+          href: '-gdiplus-enum-enumerations.md'
+          items:
+            - name: Pennello
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-brushtype
+            - name: ColorAdjustType
+              href: /windows/win32/api/gdipluscolormatrix/ne-gdipluscolormatrix-coloradjusttype
+            - name: ColorChannelFlags
+              href: /windows/win32/api/gdipluscolor/ne-gdipluscolor-colorchannelflags
+            - name: ColorMatrixFlags
+              href: /windows/win32/api/gdipluscolormatrix/ne-gdipluscolormatrix-colormatrixflags
+            - name: CombineMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-combinemode
+            - name: CompositingMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-compositingmode
+            - name: CompositingQuality
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-compositingquality
+            - name: CoordinateSpace
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-coordinatespace
+            - name: CurveAdjustments
+              href: /windows/win32/api/gdiplusEffects/ne-gdipluseffects-curveadjustments
+            - name: CurveChannel
+              href: /windows/win32/api/gdiplusEffects/ne-gdipluseffects-curvechannel
+            - name: DashCap
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-dashcap
+            - name: DashStyle
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-dashstyle
+            - name: 'DebugEventLevel '
+              href: /windows/win32/api/gdiplusinit/ne-gdiplusinit-debugeventlevel
+            - name: DitherType
+              href: /windows/win32/api/gdipluspixelformats/ne-gdipluspixelformats-dithertype
+            - name: DriverStringOptions
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-driverstringoptions
+            - name: EmfPlusRecordType
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-emfplusrecordtype
+            - name: EmfToWmfBitsFlags
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-emftowmfbitsflags
+            - name: EmfType
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-emftype
+            - name: EncoderParameterValueType
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-encoderparametervaluetype
+            - name: EncoderValue
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-encodervalue
+            - name: FillMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-fillmode
+            - name: FlushIntention
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-flushintention
+            - name: FontStyle
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-fontstyle
+            - name: 'GdiplusStartupParams '
+              href: /windows/win32/api/gdiplusinit/ne-gdiplusinit-gdiplusstartupparams
+            - name: HatchStyle
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-hatchstyle
+            - name: HistogramFormat
+              href: /windows/win32/api/gdiplusColorMatrix/ne-gdipluscolormatrix-histogramformat
+            - name: HotkeyPrefix
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-hotkeyprefix
+            - name: ImageCodecFlags
+              href: /windows/win32/api/gdiplusimaging/ne-gdiplusimaging-imagecodecflags
+            - name: ImageFlags
+              href: /windows/win32/api/gdiplusimaging/ne-gdiplusimaging-imageflags
+            - name: ImageLockMode
+              href: /windows/win32/api/gdiplusimaging/ne-gdiplusimaging-imagelockmode
+            - name: ImageType
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-imagetype
+            - name: InterpolationMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-interpolationmode
+            - name: ItemDataPosition
+              href: /windows/win32/api/gdiplusImaging/ne-gdiplusimaging-itemdataposition
+            - name: LinearGradientMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-lineargradientmode
+            - name: Estremità
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-linecap
+            - name: LineJoin
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-linejoin
+            - name: MatrixOrder
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-matrixorder
+            - name: MetafileFrameUnit
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-metafileframeunit
+            - name: Filetype
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-metafiletype
+            - name: ObjectType
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-objecttype
+            - name: PaletteFlags
+              href: /windows/win32/api/gdipluspixelformats/ne-gdipluspixelformats-paletteflags
+            - name: PaletteType
+              href: /windows/win32/api/gdiplusPixelFormats/ne-gdipluspixelformats-palettetype
+            - name: PathPointType
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-pathpointtype
+            - name: PenAlignment
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-penalignment
+            - name: PenType
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-pentype
+            - name: PixelOffsetMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-pixeloffsetmode
+            - name: RotateFlipType
+              href: /windows/win32/api/gdiplusimaging/ne-gdiplusimaging-rotatefliptype
+            - name: SmoothingMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-smoothingmode
+            - name: Stato
+              href: /windows/win32/api/gdiplustypes/ne-gdiplustypes-status
+            - name: StringAlignment
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-stringalignment
+            - name: StringDigitSubstitute
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-stringdigitsubstitute
+            - name: StringFormatFlags
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-stringformatflags
+            - name: StringTrimming
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-stringtrimming
+            - name: TextRenderingHint
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-textrenderinghint
+            - name: Unità
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-unit
+            - name: WarpMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-warpmode
+            - name: WrapMode
+              href: /windows/win32/api/gdiplusenums/ne-gdiplusenums-wrapmode
+        - name: Strutture
+          href: '-gdiplus-struc-structures.md'
+          items:
+            - name: BlurParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-blurparams
+            - name: BrightnessContrastParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-brightnesscontrastparams
+            - name: ColorBalanceParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-colorbalanceparams
+            - name: ColorCurveParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-colorcurveparams
+            - name: ColorLUTParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-colorlutparams
+            - name: ColorMap
+              href: /windows/win32/api/gdipluscolormatrix/ns-gdipluscolormatrix-colormap
+            - name: ColorMatrix
+              href: /windows/win32/api/gdipluscolormatrix/ns-gdipluscolormatrix-colormatrix
+            - name: ColorPalette
+              href: /windows/win32/api/gdipluspixelformats/ns-gdipluspixelformats-colorpalette
+            - name: ENHMETAHEADER3
+              href: /windows/win32/api/gdiplusmetaheader/ns-gdiplusmetaheader-enhmetaheader3
+            - name: GdiplusAbort
+              href: /windows/win32/api/gdiplusTypes/ns-gdiplustypes-gdiplusabort
+            - name: 'GdiplusStartupInput '
+              href: /windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinput
+            - name: GdiplusStartupInputEx
+              href: /windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinputex
+            - name: GdiplusStartupOutput
+              href: /windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupoutput
+            - name: HueSaturationLightnessParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-huesaturationlightnessparams
+            - name: LevelsParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-levelsparams
+            - name: PWMFRect16
+              href: /windows/win32/api/gdiplusmetaheader/ns-gdiplusmetaheader-pwmfrect16
+            - name: RedEyeCorrectionParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-redeyecorrectionparams
+            - name: SharpenParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-sharpenparams
+            - name: TintParams
+              href: /windows/win32/api/gdipluseffects/ns-gdipluseffects-tintparams
+            - name: WmfPlaceableFileHeader
+              href: /windows/win32/api/gdiplusmetaheader/ns-gdiplusmetaheader-wmfplaceablefileheader
+        - name: API semplice GDI+
+          href: '-gdiplus-flatapi-flat.md'
+          items:
+            - name: Funzioni AdjustableArrowCap
+              href: '-gdiplus-adjustablearrowcap-flat.md'
+            - name: Funzioni bitmap
+              href: '-gdiplus-bitmap-flat.md'
+            - name: Funzioni pennello
+              href: '-gdiplus-brush-flat.md'
+            - name: Funzioni CachedBitmap
+              href: '-gdiplus-cachedbitmap-flat.md'
+            - name: Funzioni CustomLineCap
+              href: '-gdiplus-customlinecap-flat.md'
+            - name: Funzioni dei tipi di carattere
+              href: '-gdiplus-font-flat.md'
+            - name: FontFamilyFunctions
+              href: '-gdiplus-fontfamily-flat.md'
+            - name: Funzioni di oggetti Graphics
+              href: '-gdiplus-graphics-flat.md'
+            - name: Funzioni GraphicsPath
+              href: '-gdiplus-graphicspath-flat.md'
+            - name: Funzioni HatchBrush
+              href: '-gdiplus-hatchbrush-flat.md'
+            - name: Funzioni per le immagini
+              href: '-gdiplus-image-flat.md'
+            - name: Funzioni ImageAttributes
+              href: '-gdiplus-imageattributes-flat.md'
+            - name: Funzioni LinearGradientBrush
+              href: '-gdiplus-lineargradientbrush-flat.md'
+            - name: Funzioni Matrix
+              href: '-gdiplus-matrix-flat.md'
+            - name: Funzioni di memoria
+              href: '-gdiplus-memory-flat.md'
+            - name: Funzioni di notifica
+              href: '-gdiplus-notification-flat.md'
+            - name: Funzioni PathGradientBrush
+              href: '-gdiplus-pathgradientbrush-flat.md'
+            - name: Funzioni PathIterator
+              href: '-gdiplus-pathiterator-flat.md'
+            - name: Funzioni Pen
+              href: '-gdiplus-pen-flat.md'
+            - name: Funzioni Region
+              href: '-gdiplus-region-flat.md'
+            - name: Funzioni SolidBrush
+              href: '-gdiplus-solidbrush-flat.md'
+            - name: Funzioni in formato stringa
+              href: '-gdiplus-stringformat-flat.md'
+            - name: Funzioni di testo
+              href: '-gdiplus-text-flat.md'
+            - name: Funzioni pennello trama
+              href: '-gdiplus-texturebrush-flat.md'

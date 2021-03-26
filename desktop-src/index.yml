@@ -1,0 +1,95 @@
+### YamlMime:Landing
+title: Creazione di app desktop di Windows con l'API Win32
+summary: Informazioni su come creare applicazioni desktop per PC Windows con C++ e l'API Win32.
+metadata:
+  author: mcleanbyron
+  description: Informazioni su come creare applicazioni desktop per PC Windows con C++ e l'API Win32.
+  manager: jken
+  ms.author: mcleans
+  ms.date: 09/15/2019
+  ms.topic: landing-page
+  ms.openlocfilehash: 99090d109a717c1008a11e6a9c9e6cf7a31f2b7c
+  ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 08/19/2020
+  ms.locfileid: "104046582"
+landingContent:
+- title: Introduzione
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Configurare il computer
+      url: /windows/desktop/desktop-programming
+  - linkListType: tutorial
+    links:
+    - text: Creare la prima app con Win32 e C++
+      url: ./learnwin32/learn-to-program-for-windows.md
+  - linkListType: download
+    links:
+    - text: Strumenti di sviluppo
+      url: https://developer.microsoft.com/windows/downloads
+    - text: Esempi di codice di Windows
+      url: https://developer.microsoft.com/windows/samples
+- title: Sviluppo
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Funzionalità e tecnologie di Windows
+      url: desktop-app-technologies.md
+    - text: Modernizzare le app per Windows 10
+      url: /windows/apps/desktop/modernize
+  - linkListType: reference
+    links:
+    - text: Riferimento all'API Win32 per funzionalità
+      url: ./apiindex/windows-api-list.md
+    - text: Riferimento all'API Win32 per intestazione
+      url: /windows/win32/api/
+- title: Risorse e community
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Macchine virtuali Windows
+      url: https://developer.microsoft.com/windows/downloads/virtual-machines
+  - linkListType: overview
+    links:
+    - text: Programma per applicazioni desktop di Windows
+      url: /windows/desktop/appxpkg/windows-desktop-application-program
+    - text: Compatibilità con Windows 10
+      url: https://developer.microsoft.com/windows/desktop/app-compatibility
+    - text: Supporto per gli sviluppatori Windows
+      url: https://developer.microsoft.com/windows/support
+    - text: '@WindowsDocs su Twitter'
+      url: https://developer.microsoft.com/games
+    - text: OneDevMinute su YouTube
+      url: https://aka.ms/OneDevMinute
+- title: Documentazione correlata
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Scegliere la piattaforma desktop
+      url: /windows/apps/desktop/choose-your-platform
+    - text: C++/WinRT
+      url: /windows/uwp/cpp-and-winrt-apis/
+    - text: Creazione di pacchetti MSIX e distribuzione
+      url: /windows/msix/desktop/desktop-to-uwp-root
+    - text: Piattaforma UWP
+      url: /windows/uwp/
+    - text: .NET
+      url: //docs.microsoft.com/dotnet/
+    - text: Archivio di documentazione per Windows 8.x e versioni precedenti
+      url: /previous-versions/windows/
+- title: Tecnologie correlate
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Intelligenza artificiale Windows
+      url: /windows/ai/
+    - text: Windows IoT
+      url: /windows/iot-core/
+    - text: Windows Mixed Reality
+      url: /windows/mixed-reality/
+    - text: Contenitori di Windows
+      url: /virtualization/#pivot=main&panel=containers
+    - text: Giochi
+      url: https://developer.microsoft.com/games

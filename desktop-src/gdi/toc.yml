@@ -1,0 +1,1818 @@
+- name: GDI Windows
+  href: windows-gdi.md
+  items:
+    - name: 'Considerazioni sulla sicurezza: Microsoft Windows GDI'
+      href: security-considerations--gdi.md
+    - name: Bitmap
+      href: bitmaps.md
+      items:
+        - name: Informazioni sulle bitmap
+          href: about-bitmaps.md
+          items:
+            - name: Classificazioni bitmap
+              href: bitmap-classifications.md
+              items:
+                - name: Bitmap Device-Independent
+                  href: device-independent-bitmaps.md
+                - name: Bitmap Device-Dependent
+                  href: device-dependent-bitmaps.md
+            - name: Tipi di intestazione bitmap
+              href: bitmap-header-types.md
+            - name: Estensioni JPEG e PNG per specifiche funzioni e strutture bitmap
+              href: jpeg-and-png-extensions-for-specific-bitmap-functions-and-structures.md
+            - name: 'Bitmap, contesti di dispositivo e superfici di disegno'
+              href: bitmaps--device-contexts--and-drawing-surfaces.md
+            - name: Creazione di bitmap
+              href: bitmap-creation.md
+            - name: Rotazione bitmap
+              href: bitmap-rotation.md
+            - name: Ridimensionamento bitmap
+              href: bitmap-scaling.md
+            - name: Bitmap come pennelli
+              href: bitmaps-as-brushes.md
+            - name: Archiviazione bitmap
+              href: bitmap-storage.md
+            - name: Compressione bitmap
+              href: bitmap-compression.md
+            - name: Fusione alfa
+              href: alpha-blending.md
+            - name: Ombreggiatura uniforme
+              href: smooth-shading.md
+            - name: Funzioni bitmap ICM-Enabled
+              href: icm-enabled-bitmap-functions.md
+        - name: Uso di bitmap
+          href: using-bitmaps.md
+          items:
+            - name: Acquisizione di un'immagine
+              href: capturing-an-image.md
+            - name: Ridimensionamento di un'immagine
+              href: scaling-an-image.md
+            - name: Archiviazione di un'immagine
+              href: storing-an-image.md
+            - name: Sfumatura alfa di una bitmap
+              href: alpha-blending-a-bitmap.md
+            - name: Disegno di un rettangolo ombreggiato
+              href: drawing-a-shaded-rectangle.md
+            - name: Disegno di un triangolo ombreggiato
+              href: drawing-a-shaded-triangle.md
+            - name: Test di una stampante per il supporto JPEG o PNG
+              href: testing-a-printer-for-jpeg-or-png-support.md
+            - name: Ridimensionamento di un'immagine JPEG o PNG
+              href: sizing-a-jpeg-or-png-image.md
+        - name: Riferimento bitmap
+          href: bitmap-reference.md
+          items:
+            - name: Funzioni bitmap
+              href: bitmap-functions.md
+              items:
+                - name: AlphaBlend
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-alphablend
+                - name: BitBlt
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-bitblt
+                - name: CreateBitmap
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createbitmap
+                - name: CreateBitmapIndirect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createbitmapindirect
+                - name: CreateCompatibleBitmap
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createcompatiblebitmap
+                - name: CreateDIBitmap
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createdibitmap
+                - name: CreateDIBSection
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createdibsection
+                - name: CreateDiscardableBitmap
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-creatediscardablebitmap
+                - name: ExtFloodFill
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-extfloodfill
+                - name: FloodFill
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-floodfill
+                - name: GdiAlphaBlend
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-gdialphablend
+                - name: GdiGradientFill
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-gdigradientfill
+                - name: GdiTransparentBlt
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-gditransparentblt
+                - name: GetBitmapBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getbitmapbits
+                - name: GetBitmapDimensionEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getbitmapdimensionex
+                - name: GetDIBColorTable
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getdibcolortable
+                - name: GetDIBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getdibits
+                - name: GetPixel
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getpixel
+                - name: GetStretchBltMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getstretchbltmode
+                - name: GradientFill
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-gradientfill
+                - name: LoadBitmap
+                  href: /windows/desktop/api/Winuser/nf-winuser-loadbitmapa
+                - name: MaskBlt
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-maskblt
+                - name: PlgBlt
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-plgblt
+                - name: SetBitmapBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setbitmapbits
+                - name: SetBitmapDimensionEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setbitmapdimensionex
+                - name: SetDIBColorTable
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setdibcolortable
+                - name: SetDIBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setdibits
+                - name: SetDIBitsToDevice
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice
+                - name: SetPixel
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setpixel
+                - name: SetPixelV
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setpixelv
+                - name: SetStretchBltMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setstretchbltmode
+                - name: StretchBlt
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-stretchblt
+                - name: StretchDIBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-stretchdibits
+                - name: TransparentBlt
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-transparentblt
+            - name: Strutture bitmap
+              href: bitmap-structures.md
+              items:
+                - name: BITMAP
+                  href: /windows/win32/api/Wingdi/ns-wingdi-bitmap
+                - name: STRUTTURA BITMAPCOREHEADER
+                  href: /windows/win32/api/Wingdi/ns-wingdi-bitmapcoreheader
+                - name: BITMAPCOREINFO
+                  href: /windows/win32/api/Wingdi/ns-wingdi-bitmapcoreinfo
+                - name: BITMAPFILEHEADER
+                  href: /windows/win32/api/Wingdi/ns-wingdi-bitmapfileheader
+                - name: BITMAPINFO
+                  href: /windows/win32/api/Wingdi/ns-wingdi-bitmapinfo
+                - name: BITMAPINFOHEADER
+                  href: /previous-versions//dd183376(v=vs.85)
+                - name: BITMAPV4HEADER
+                  href: /windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header
+                - name: BITMAPV5HEADER
+                  href: /windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header
+                - name: BLENDFUNCTION
+                  href: /windows/win32/api/Wingdi/ns-wingdi-blendfunction
+                - name: COLORADJUSTMENT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-coloradjustment
+                - name: DIBSECTION
+                  href: /windows/win32/api/Wingdi/ns-wingdi-dibsection
+                - name: GRADIENT_RECT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-gradient_rect
+                - name: GRADIENT_TRIANGLE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-gradient_triangle
+                - name: RGBQUAD
+                  href: /windows/win32/api/Wingdi/ns-wingdi-rgbquad
+                - name: RGBTRIPLE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-rgbtriple
+                - name: SIZE
+                  href: /previous-versions//dd145106(v=vs.85)
+                - name: Trivertice
+                  href: /windows/win32/api/Wingdi/ns-wingdi-trivertex
+            - name: Macro bitmap
+              href: bitmap-macros.md
+              items:
+                - name: MAKEROP4
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-makerop4
+    - name: Pennelli
+      href: brushes.md
+      items:
+        - name: Informazioni sui pennelli
+          href: about-brushes.md
+          items:
+            - name: Origine pennello
+              href: brush-origin.md
+            - name: Tipi di pennelli logici
+              href: logical-brush-types.md
+              items:
+                - name: Pennello a tinta unita
+                  href: solid-brush.md
+                - name: Pennello azionario
+                  href: stock-brush.md
+                - name: Pennello tratteggio
+                  href: hatch-brush.md
+                - name: Pennello per pattern
+                  href: pattern-brush.md
+            - name: Modello di trasferimento del blocco
+              href: pattern-block-transfer.md
+            - name: Funzioni pennello ICM-Enabled
+              href: icm-enabled-brush-functions.md
+        - name: Uso di pennelli
+          href: using-brushes.md
+        - name: Riferimento al pennello
+          href: brush-reference.md
+          items:
+            - name: Funzioni pennello
+              href: brush-functions.md
+              items:
+                - name: CreateBrushIndirect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createbrushindirect
+                - name: CreateDIBPatternBrush
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createdibpatternbrush
+                - name: CreateDIBPatternBrushPt
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createdibpatternbrushpt
+                - name: CreateHatchBrush
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createhatchbrush
+                - name: CreatePatternBrush
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createpatternbrush
+                - name: CreateSolidBrush
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createsolidbrush
+                - name: GetBrushOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getbrushorgex
+                - name: GetSysColorBrush
+                  href: /windows/desktop/api/Winuser/nf-winuser-getsyscolorbrush
+                - name: PatBlt
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-patblt
+                - name: SetBrushOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setbrushorgex
+            - name: Strutture di pennelli
+              href: brush-structures.md
+              items:
+                - name: LOGBRUSH
+                  href: /windows/win32/api/Wingdi/ns-wingdi-logbrush
+                - name: LOGBRUSH32
+                  href: /windows/win32/api/Wingdi/ns-wingdi-logbrush32
+    - name: Ritaglio
+      href: clipping.md
+      items:
+        - name: Informazioni sul ritaglio
+          href: about-clipping.md
+          items:
+            - name: Aree di ridimensionamento
+              href: clipping-regions.md
+            - name: Percorsi di ritaglio
+              href: clip-paths.md
+        - name: Uso del ritaglio
+          href: using-clipping.md
+        - name: Riferimento di ritaglio
+          href: clipping-reference.md
+          items:
+            - name: Funzioni di ritaglio
+              href: clipping-functions.md
+              items:
+                - name: ExcludeClipRect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-excludecliprect
+                - name: ExtSelectClipRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-extselectcliprgn
+                - name: GetClipBox
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getclipbox
+                - name: GetClipRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcliprgn
+                - name: GetMetaRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getmetargn
+                - name: GetRandomRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getrandomrgn
+                - name: IntersectClipRect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-intersectcliprect
+                - name: OffsetClipRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-offsetcliprgn
+                - name: PtVisible
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-ptvisible
+                - name: RectVisible
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-rectvisible
+                - name: SelectClipPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-selectclippath
+                - name: SelectClipRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-selectcliprgn
+                - name: SetMetaRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setmetargn
+    - name: Colori
+      href: colors.md
+      items:
+        - name: Informazioni sui colori
+          href: about-colors.md
+          items:
+            - name: Nozioni di base sui colori
+              href: color-basics.md
+              items:
+                - name: Valori dei colori
+                  href: color-values.md
+                - name: Approssimazioni di colori e dithering
+                  href: color-approximations-and-dithering.md
+                - name: Colore nelle bitmap
+                  href: color-in-bitmaps.md
+                - name: Combinazione di colori
+                  href: color-mixing.md
+            - name: Tavolozze dei colori
+              href: color-palettes.md
+              items:
+                - name: Tavolozza predefinita
+                  href: default-palette.md
+                - name: Tavolozza logica
+                  href: logical-palette.md
+                - name: Animazione tavolozza
+                  href: palette-animation.md
+                - name: Tavolozza di sistema
+                  href: system-palette.md
+                - name: Tavolozza di sistema e colori statici
+                  href: system-palette-and-static-colors.md
+                - name: Messaggi tavolozza
+                  href: palette-messages.md
+                - name: Tavolozza mezzitoni e regolazione colore
+                  href: halftone-palette-and-color-adjustment.md
+        - name: Uso del colore
+          href: using-color.md
+          items:
+            - name: Enumerazione dei colori
+              href: enumerating-colors.md
+            - name: Creazione di penne colorate e pennelli
+              href: creating-colored-pens-and-brushes.md
+        - name: Riferimento ai colori
+          href: color-reference.md
+          items:
+            - name: Funzioni colore
+              href: color-functions.md
+              items:
+                - name: AnimatePalette
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-animatepalette
+                - name: CreateHalftonePalette
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createhalftonepalette
+                - name: CreatePalette
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createpalette
+                - name: GetColorAdjustment
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcoloradjustment
+                - name: GetNearestColor
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getnearestcolor
+                - name: GetNearestPaletteIndex
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getnearestpaletteindex
+                - name: GetPaletteEntries
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getpaletteentries
+                - name: GetSystemPaletteEntries
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getsystempaletteentries
+                - name: GetSystemPaletteUse
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getsystempaletteuse
+                - name: RealizePalette
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-realizepalette
+                - name: ResizePalette
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-resizepalette
+                - name: SelectPalette
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-selectpalette
+                - name: SetColorAdjustment
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setcoloradjustment
+                - name: SetPaletteEntries
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setpaletteentries
+                - name: SetSystemPaletteUse
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setsystempaletteuse
+                - name: UnrealizeObject
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-unrealizeobject
+                - name: UpdateColors
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-updatecolors
+            - name: Strutture colore
+              href: color-structures.md
+              items:
+                - name: COLORREF
+                  href: colorref.md
+                - name: LOGPALETTE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-logpalette
+                - name: PALETTEENTRY
+                  href: /previous-versions//dd162769(v=vs.85)
+            - name: Macro colori
+              href: color-macros.md
+              items:
+                - name: DIBINDEX
+                  href: /windows/desktop/api/Mmsystem/nf-mmsystem-dibindex
+                - name: GetBValue
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getbvalue
+                - name: GetGValue
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getgvalue
+                - name: GetRValue
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getrvalue
+                - name: PALETTEINDEX
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-paletteindex
+                - name: PALETTERGB
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-palettergb
+                - name: RGB
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-rgb
+            - name: Messaggi colori
+              href: color-messages.md
+              items:
+                - name: WM_PALETTECHANGED
+                  href: wm-palettechanged.md
+                - name: WM_PALETTEISCHANGING
+                  href: wm-paletteischanging.md
+                - name: WM_QUERYNEWPALETTE
+                  href: wm-querynewpalette.md
+                - name: WM_SYSCOLORCHANGE
+                  href: wm-syscolorchange.md
+    - name: Spazi di coordinate e trasformazioni
+      href: coordinate-spaces-and-transformations.md
+      items:
+        - name: Informazioni sulle trasformazioni e gli spazi delle coordinate
+          href: about-coordinate-spaces-and-transformations.md
+          items:
+            - name: Trasformazione di spazi delle coordinate
+              href: transformation-of-coordinate-spaces.md
+            - name: Spazio globale per Page-Space le trasformazioni
+              href: world-space-to-page-space-transformations.md
+              items:
+                - name: Traduzione
+                  href: translation.md
+                - name: Ridimensionamento
+                  href: scaling.md
+                - name: Rotazione
+                  href: rotation.md
+                - name: Taglio
+                  href: shear.md
+                - name: Reflection
+                  href: reflection.md
+                - name: Trasformazioni di spazi globali combinate
+                  href: combined-world-to-page-space-transformations.md
+            - name: Page-Space per Device-Space le trasformazioni
+              href: page-space-to-device-space-transformations.md
+              items:
+                - name: Modalità di mapping e traduzioni
+                  href: mapping-modes-and-translations.md
+                - name: Modalità di mapping predefinite
+                  href: predefined-mapping-modes.md
+                - name: Modalità di mapping Application-Defined
+                  href: application-defined-mapping-modes.md
+            - name: Device-Space Physical-Device trasformazione
+              href: device-space-to-physical-device-transformation.md
+            - name: Trasformazioni predefinite
+              href: default-transformations.md
+        - name: Uso di spazi di coordinate e trasformazioni
+          href: using-coordinate-spaces-and-transformations.md
+        - name: Spazio delle coordinate e riferimento alla trasformazione
+          href: coordinate-space-and-transformation-reference.md
+          items:
+            - name: Spazio delle coordinate e funzioni di trasformazione
+              href: coordinate-space-and-transformation-functions.md
+              items:
+                - name: ClientToScreen
+                  href: /windows/desktop/api/Winuser/nf-winuser-clienttoscreen
+                - name: CombineTransform
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-combinetransform
+                - name: LPtoDP
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-dptolp
+                - name: GetCurrentPositionEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcurrentpositionex
+                - name: GetDisplayAutoRotationPreferences
+                  href: /previous-versions//dn376360(v=vs.85)
+                - name: GetGraphicsMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getgraphicsmode
+                - name: GetMapMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getmapmode
+                - name: GetViewportExtEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getviewportextex
+                - name: GetViewportOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getviewportorgex
+                - name: GetWindowExtEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getwindowextex
+                - name: GetWindowOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getwindoworgex
+                - name: GetWorldTransform
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getworldtransform
+                - name: DPtoLP
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-lptodp
+                - name: MapWindowPoints
+                  href: /windows/desktop/api/Winuser/nf-winuser-mapwindowpoints
+                - name: ModifyWorldTransform
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-modifyworldtransform
+                - name: OffsetViewportOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-offsetviewportorgex
+                - name: OffsetWindowOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-offsetwindoworgex
+                - name: ScaleViewportExtEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-scaleviewportextex
+                - name: ScaleWindowExtEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-scalewindowextex
+                - name: ScreenToClient
+                  href: /windows/desktop/api/Winuser/nf-winuser-screentoclient
+                - name: SetDisplayAutoRotationPreferences
+                  href: /previous-versions//dn376361(v=vs.85)
+                - name: SetGraphicsMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setgraphicsmode
+                - name: SetMapMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setmapmode
+                - name: SetViewportExtEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setviewportextex
+                - name: SetViewportOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setviewportorgex
+                - name: SetWindowExtEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setwindowextex
+                - name: SetWindowOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setwindoworgex
+                - name: SetWorldTransform
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setworldtransform
+            - name: Spazio delle coordinate e strutture di trasformazione
+              href: coordinate-space-and-transformation-structures.md
+              items:
+                - name: XFORM
+                  href: /windows/win32/api/Wingdi/ns-wingdi-xform
+    - name: Contesti di dispositivo
+      href: device-contexts.md
+      items:
+        - name: Informazioni sui contesti di dispositivo
+          href: about-device-contexts.md
+          items:
+            - name: Oggetti grafici
+              href: graphic-objects.md
+            - name: Modalità grafica
+              href: graphic-modes.md
+            - name: Tipi di contesto di dispositivo
+              href: device-context-types.md
+              items:
+                - name: Visualizzare i contesti di dispositivo
+                  href: display-device-contexts.md
+                - name: Contesti di dispositivo stampante
+                  href: printer-device-contexts.md
+                - name: Contesti di dispositivo di memoria
+                  href: memory-device-contexts.md
+                - name: Contesti di dispositivi informativi
+                  href: information-device-contexts.md
+            - name: Operazioni di contesto del dispositivo
+              href: device-context-operations.md
+              items:
+                - name: Operazioni sugli oggetti grafici
+                  href: operations-on-graphic-objects.md
+                - name: Annullamento delle operazioni di disegno
+                  href: cancellation-of-drawing-operations.md
+                - name: Recupero dei dati del dispositivo
+                  href: retrieving-device-data.md
+                - name: 'Salvataggio, ripristino e reimpostazione di un contesto di dispositivo'
+                  href: saving--restoring--and-resetting-a-device-context.md
+            - name: Funzioni di contesto del dispositivo ICM-Enabled
+              href: icm-enabled-device-context-functions.md
+        - name: Uso delle funzioni di contesto del dispositivo
+          href: using-the-device-context-functions.md
+          items:
+            - name: Ottenere un contesto di dispositivo di visualizzazione privato
+              href: obtaining-a-private-display-device-context.md
+            - name: Recupero delle funzionalità di una stampante
+              href: retrieving-the-capabilities-of-a-printer.md
+            - name: 'Recupera attributi oggetto, seleziona nuovi oggetti'
+              href: retrieving-graphic-object-attributes-and-selecting-new-graphic-objects.md
+            - name: Impostazione e recupero del valore del colore del pennello del contesto del dispositivo
+              href: setting-and-retrieving-the-device-context-brush-color-value.md
+            - name: Impostazione del colore della penna o del pennello
+              href: setting-the-pen-or-brush-color.md
+            - name: Recupero di informazioni su un monitor di visualizzazione
+              href: getting-information-on-a-display-monitor.md
+        - name: Riferimento al contesto di dispositivo
+          href: device-context-reference.md
+          items:
+            - name: Funzioni di contesto del dispositivo
+              href: device-context-functions.md
+              items:
+                - name: CancelDC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-canceldc
+                - name: ChangeDisplaySettings
+                  href: /windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsa
+                - name: ChangeDisplaySettingsEx
+                  href: /windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsexa
+                - name: CreateCompatibleDC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc
+                - name: CreateDC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createdca
+                - name: CreateIC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createica
+                - name: DeleteDC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-deletedc
+                - name: DeleteObject
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-deleteobject
+                - name: DrawEscape
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-drawescape
+                - name: EnumDisplayDevices
+                  href: /windows/desktop/api/Winuser/nf-winuser-enumdisplaydevicesa
+                - name: EnumDisplaySettings
+                  href: /windows/desktop/api/Winuser/nf-winuser-enumdisplaysettingsa
+                - name: EnumDisplaySettingsEx
+                  href: /windows/desktop/api/Winuser/nf-winuser-enumdisplaysettingsexa
+                - name: EnumObjects
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-enumobjects
+                - name: GOBJENUMPROC
+                  href: /previous-versions//dd162686(v=vs.85)
+                - name: GetCurrentObject
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcurrentobject
+                - name: GetDC
+                  href: /windows/desktop/api/Winuser/nf-winuser-getdc
+                - name: GetDCBrushColor
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-getdcbrushcolor
+                - name: GetDCEx
+                  href: /windows/desktop/api/Winuser/nf-winuser-getdcex
+                - name: GetDCOrgEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getdcorgex
+                - name: GetDCPenColor
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-getdcpencolor
+                - name: GetDeviceCaps
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps
+                - name: GetLayout
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getlayout
+                - name: GetObject
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getobject
+                - name: GetObjectType
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getobjecttype
+                - name: GetStockObject
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getstockobject
+                - name: ReleaseDC
+                  href: /windows/desktop/api/Winuser/nf-winuser-releasedc
+                - name: ResetDC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-resetdca
+                - name: RestoreDC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-restoredc
+                - name: SaveDC
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-savedc
+                - name: SelectObject
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-selectobject
+                - name: SetDCBrushColor
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setdcbrushcolor
+                - name: SetDCPenColor
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setdcpencolor
+                - name: SetLayout
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setlayout
+                - name: WindowFromDC
+                  href: /windows/desktop/api/Winuser/nf-winuser-windowfromdc
+            - name: Strutture di contesto del dispositivo
+              href: device-context-structures.md
+              items:
+                - name: DISPLAY_DEVICE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-display_devicea
+                - name: VIDEOPARAMETERS
+                  href: /previous-versions//dd145196(v=vs.85)
+            - name: Messaggi di contesto dispositivo
+              href: device-context-messages.md
+              items:
+                - name: WM_DEVMODECHANGE
+                  href: wm-devmodechange.md
+    - name: Forme piene
+      href: filled-shapes.md
+      items:
+        - name: Informazioni sulle forme riempite
+          href: about-filled-shapes.md
+          items:
+            - name: Informazioni sugli ellissi
+              href: about-ellipses.md
+            - name: Informazioni sugli accordi
+              href: about-chords.md
+            - name: Informazioni su torte
+              href: about-pies.md
+            - name: Informazioni sui poligoni
+              href: about-polygons.md
+            - name: Disegno di rettangoli
+              href: drawing-rectangles.md
+        - name: Uso di forme piene
+          href: using-filled-shapes.md
+        - name: Riferimento a forme piene
+          href: filled-shape-reference.md
+          items:
+            - name: Funzioni di forma riempite
+              href: filled-shape-functions.md
+              items:
+                - name: Chord
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-chord
+                - name: Ellisse
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-ellipse
+                - name: FillRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-fillrect
+                - name: FrameRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-framerect
+                - name: InvertRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-invertrect
+                - name: Torta
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-pie
+                - name: Polygon
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polygon
+                - name: PolyPolygon
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polypolygon
+                - name: Rettangolo
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-rectangle
+                - name: RoundRect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-roundrect
+    - name: Tipi di carattere e testo
+      href: fonts-and-text.md
+      items:
+        - name: Informazioni sui tipi di carattere
+          href: about-fonts.md
+          items:
+            - name: Elementi del tipo di carattere
+              href: font-elements.md
+            - name: Gruppi di caratteri
+              href: font-families.md
+            - name: 'Tipi di carattere raster, vettoriali, TrueType e OpenType'
+              href: raster--vector--truetype--and-opentype-fonts.md
+            - name: Set di caratteri usati dai tipi di carattere
+              href: character-sets-used-by-fonts.md
+            - name: Installazione ed eliminazione dei tipi di carattere
+              href: font-installation-and-deletion.md
+            - name: Tipi di carattere da più file di risorse
+              href: fonts-from-multiple-resource-files.md
+            - name: Creazione e selezione di tipi di carattere
+              href: font-creation-and-selection.md
+            - name: Tipi di carattere incorporati
+              href: embedded-fonts.md
+        - name: Informazioni sull'output di testo
+          href: about-text-output.md
+          items:
+            - name: Formattazione del testo
+              href: formatting-text.md
+              items:
+                - name: Attributi di Text-Formatting
+                  href: text-formatting-attributes.md
+                - name: Larghezza caratteri
+                  href: character-widths.md
+                - name: Larghezze e altezze delle stringhe
+                  href: string-widths-and-heights.md
+            - name: Disegno di testo
+              href: drawing-text.md
+            - name: Script complessi
+              href: complex-scripts.md
+            - name: ClearType Antialiasing (Anti-aliasing ClearType)
+              href: cleartype-antialiasing.md
+        - name: Uso delle funzioni font e Text-Output
+          href: using-the-font-and-text-output-functions.md
+          items:
+            - name: Uso di un tipo di carattere azionario per creare testo
+              href: using-a-stock-font-to-draw-text.md
+            - name: Creazione di un tipo di carattere logico
+              href: creating-a-logical-font.md
+            - name: Enumerazione dei tipi di carattere installati
+              href: enumerating-the-installed-fonts.md
+            - name: Verifica delle funzionalità di testo di un dispositivo
+              href: checking-the-text-capabilities-of-a-device.md
+            - name: Impostazione dell'allineamento del testo
+              href: setting-the-text-alignment.md
+            - name: Disegno di testo da diversi tipi di carattere nella stessa riga
+              href: drawing-text-from-different-fonts-on-the-same-line.md
+            - name: Rotazione di righe di testo
+              href: rotating-lines-of-text.md
+            - name: Recupero di strutture di caratteri
+              href: retrieving-character-outlines.md
+              items:
+                - name: Record polilinea
+                  href: polyline-records.md
+                - name: Record spline
+                  href: spline-records.md
+            - name: Uso della metrica TrueType portatile
+              href: using-portable-truetype-metrics.md
+              items:
+                - name: Dispositivo e unità di progettazione
+                  href: device-vs--design-units.md
+                - name: Metriche per documenti portatili
+                  href: metrics-for-portable-documents.md
+            - name: Uso di numeri PANOse
+              href: using-panose-numbers.md
+            - name: Specifica della lunghezza della stringa di output di testo
+              href: specifying-length-of-text-output-string.md
+        - name: Riferimento al tipo di carattere e al testo
+          href: font-and-text-reference.md
+          items:
+            - name: Funzioni di tipo carattere e testo
+              href: font-and-text-functions.md
+              items:
+                - name: AddFontMemResourceEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-addfontmemresourceex
+                - name: AddFontResource
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-addfontresourcea
+                - name: AddFontResourceEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-addfontresourceexa
+                - name: CreateFont
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createfonta
+                - name: CreateFontIndirect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createfontindirecta
+                - name: CreateFontIndirectEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createfontindirectexa
+                - name: CreateScalableFontResource
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createscalablefontresourcea
+                - name: DrawText
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawtext
+                - name: DrawTextEx
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawtextexa
+                - name: EnableEUDC
+                  href: enableeudc.md
+                - name: FONTENUMPROC
+                  href: /previous-versions//dd162618(v=vs.85)
+                - name: EnumFontFamilies
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-enumfontfamiliesa
+                - name: EnumFontFamiliesEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-enumfontfamiliesexa
+                - name: FONTENUMPROC
+                  href: /previous-versions//dd162621(v=vs.85)
+                - name: EnumFonts
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-enumfontsa
+                - name: FONTENUMPROC
+                  href: /previous-versions//dd162623(v=vs.85)
+                - name: ExtTextOut
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-exttextouta
+                - name: GetAspectRatioFilterEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getaspectratiofilterex
+                - name: GetCharABCWidths
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharabcwidthsa
+                - name: GetCharABCWidthsFloat
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharabcwidthsfloata
+                - name: GetCharABCWidthsI
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharabcwidthsi
+                - name: GetCharacterPlacement
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharacterplacementa
+                - name: GetCharWidth
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharwidtha
+                - name: GetCharWidth32
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharwidth32a
+                - name: GetCharWidthFloat
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharwidthfloata
+                - name: GetCharWidthI
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getcharwidthi
+                - name: GetFontData
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getfontdata
+                - name: GetFontLanguageInfo
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getfontlanguageinfo
+                - name: GetFontUnicodeRanges
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getfontunicoderanges
+                - name: GetGlyphIndices
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getglyphindicesa
+                - name: GetGlyphOutline
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getglyphoutlinea
+                - name: GetKerningPairs
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-getkerningpairsa
+                - name: GetOutlineTextMetrics
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getoutlinetextmetricsa
+                - name: GetRasterizerCaps
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getrasterizercaps
+                - name: GetTabbedTextExtent
+                  href: /windows/desktop/api/Winuser/nf-winuser-gettabbedtextextenta
+                - name: GetTextAlign
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextalign
+                - name: GetTextCharacterExtra
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextcharacterextra
+                - name: GetTextColor
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextcolor
+                - name: GetTextExtentExPoint
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextextentexpointa
+                - name: GetTextExtentExPointI
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextextentexpointi
+                - name: GetTextExtentPoint
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-gettextextentpointa
+                - name: GetTextExtentPoint32
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextextentpoint32a
+                - name: GetTextExtentPointI
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextextentpointi
+                - name: GetTextFace
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextfacea
+                - name: GetTextMetrics
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gettextmetrics
+                - name: Sottotesto
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polytextouta
+                - name: RemoveFontMemResourceEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-removefontmemresourceex
+                - name: RemoveFontResource
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-removefontresourcea
+                - name: RemoveFontResourceEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-removefontresourceexa
+                - name: SetMapperFlags
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setmapperflags
+                - name: SetTextAlign
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-settextalign
+                - name: SetTextCharacterExtra
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-settextcharacterextra
+                - name: SetTextColor
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-settextcolor
+                - name: SetTextJustification
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-settextjustification
+                - name: TabbedTextOut
+                  href: /windows/desktop/api/Winuser/nf-winuser-tabbedtextouta
+                - name: TextOut
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-textouta
+            - name: Strutture di tipi di carattere e testo
+              href: font-and-text-structures.md
+              items:
+                - name: ABC
+                  href: /windows/win32/api/Wingdi/ns-wingdi-abc
+                - name: ABCFLOAT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-abcfloat
+                - name: Degli assi
+                  href: /windows/win32/api/Wingdi/ns-wingdi-axeslista
+                - name: AXISINFO
+                  href: /windows/win32/api/Wingdi/ns-wingdi-axisinfoa
+                - name: DESIGNVECTOR
+                  href: /windows/win32/api/Wingdi/ns-wingdi-designvector
+                - name: DRAWTEXTPARAMS
+                  href: /windows/win32/api/Winuser/ns-winuser-drawtextparams
+                - name: ENUMLOGFONT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-enumlogfonta
+                - name: ENUMLOGFONTEX
+                  href: /windows/win32/api/Wingdi/ns-wingdi-enumlogfontexa
+                - name: ENUMLOGFONTEXDV
+                  href: /windows/win32/api/Wingdi/ns-wingdi-enumlogfontexdva
+                - name: ENUMTEXTMETRIC
+                  href: /windows/win32/api/Wingdi/ns-wingdi-enumtextmetrica
+                - name: EXTLOGFONT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-extlogfonta
+                - name: FIXED
+                  href: /windows/win32/api/Wingdi/ns-wingdi-fixed
+                - name: GCP_RESULTS
+                  href: /windows/win32/api/Wingdi/ns-wingdi-gcp_resultsa
+                - name: GLYPHMETRICS
+                  href: /windows/win32/api/Wingdi/ns-wingdi-glyphmetrics
+                - name: GLYPHSET
+                  href: /windows/win32/api/Wingdi/ns-wingdi-glyphset
+                - name: KERNINGPAIR
+                  href: /windows/win32/api/Wingdi/ns-wingdi-kerningpair
+                - name: LOGFONT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-logfonta
+                - name: MAT2
+                  href: /windows/win32/api/Wingdi/ns-wingdi-mat2
+                - name: NEWTEXTMETRIC
+                  href: /windows/win32/api/Wingdi/ns-wingdi-newtextmetrica
+                - name: NEWTEXTMETRICEX
+                  href: /windows/win32/api/Wingdi/ns-wingdi-newtextmetricexa
+                - name: OUTLINETEXTMETRIC
+                  href: /windows/win32/api/Wingdi/ns-wingdi-outlinetextmetrica
+                - name: PANOSE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-panose
+                - name: POINTFX
+                  href: /windows/win32/api/Wingdi/ns-wingdi-pointfx
+                - name: Testo in formato testo
+                  href: /windows/win32/api/Wingdi/ns-wingdi-polytexta
+                - name: RASTERIZER_STATUS
+                  href: /windows/win32/api/Wingdi/ns-wingdi-rasterizer_status
+                - name: TEXTMETRIC
+                  href: /windows/win32/api/Wingdi/ns-wingdi-textmetrica
+                - name: TTPOLYCURVE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-ttpolycurve
+                - name: TTPOLYGONHEADER
+                  href: /windows/win32/api/Wingdi/ns-wingdi-ttpolygonheader
+                - name: WCRANGE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-wcrange
+            - name: Macro di tipi di carattere e testo
+              href: font-and-text-macros.md
+              items:
+                - name: DeleteFont
+                  href: /windows/desktop/api/Windowsx/nf-windowsx-deletefont
+                - name: SelectFont
+                  href: /windows/desktop/api/Windowsx/nf-windowsx-selectfont
+            - name: Tipi di carattere e messaggi di testo
+              href: font-and-text-messages.md
+              items:
+                - name: WM_FONTCHANGE
+                  href: wm-fontchange.md
+        - name: Riferimento all'incorporamento dei tipi di carattere
+          href: font-embedding-reference.md
+          items:
+            - name: Funzioni di incorporamento dei tipi di carattere
+              href: font-embedding-functions.md
+              items:
+                - name: CFP_ALLOCPROC
+                  href: /windows/desktop/api/FontSub/nc-fontsub-cfp_allocproc
+                - name: CFP_FREEPROC
+                  href: /windows/desktop/api/FontSub/nc-fontsub-cfp_freeproc
+                - name: CFP_REALLOCPROC
+                  href: /windows/desktop/api/FontSub/nc-fontsub-cfp_reallocproc
+                - name: CreateFontPackage
+                  href: /windows/desktop/api/FontSub/nf-fontsub-createfontpackage
+                - name: MergeFontPackage
+                  href: /windows/desktop/api/FontSub/nf-fontsub-mergefontpackage
+                - name: READEMBEDPROC
+                  href: /previous-versions//dd162894(v=vs.85)
+                - name: TTCharToUnicode
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttchartounicode
+                - name: TTDeleteEmbeddedFont
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttdeleteembeddedfont
+                - name: TTEmbedFont
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttembedfont
+                - name: TTEmbedFontEx
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttembedfontex
+                - name: TTEmbedFontFromFileA
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttembedfontfromfilea
+                - name: TTEnableEmbeddingForFacename
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttenableembeddingforfacename
+                - name: TTGetEmbeddedFontInfo
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttgetembeddedfontinfo
+                - name: TTGetEmbeddingType
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttgetembeddingtype
+                - name: TTGetNewFontName
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttgetnewfontname
+                - name: TTIsEmbeddingEnabled
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttisembeddingenabled
+                - name: TTIsEmbeddingEnabledForFacename
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttisembeddingenabledforfacename
+                - name: TTLoadEmbeddedFont
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttloadembeddedfont
+                - name: TTRunValidationTests
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttrunvalidationtests
+                - name: TTRunValidationTestsEx
+                  href: /windows/desktop/api/T2embapi/nf-t2embapi-ttrunvalidationtestsex
+                - name: WRITEEMBEDPROC
+                  href: /previous-versions//dd145225(v=vs.85)
+            - name: Strutture di incorporamento dei tipi di carattere
+              href: font-embedding-services-structures.md
+              items:
+                - name: TTEMBEDINFO
+                  href: /windows/desktop/api/T2embapi/ns-t2embapi-ttembedinfo
+                - name: TTLOADINFO
+                  href: /windows/desktop/api/T2embapi/ns-t2embapi-ttloadinfo
+                - name: TTVALIDATIONTESTSPARAMS
+                  href: /windows/desktop/api/T2embapi/ns-t2embapi-ttvalidationtestsparams
+                - name: TTVALIDATIONTESTSPARAMSEX
+                  href: /windows/desktop/api/T2embapi/ns-t2embapi-ttvalidationtestsparamsex
+            - name: Tipi di carattere di incorporamento dei messaggi di errore
+              href: font-embedding-function-error-messages.md
+            - name: Messaggi di errore del pacchetto di tipi di carattere
+              href: font-package-function-error-messages.md
+    - name: Linee e curve
+      href: lines-and-curves.md
+      items:
+        - name: Informazioni su linee e curve
+          href: about-lines-and-curves.md
+          items:
+            - name: Linee
+              href: lines.md
+            - name: Curve
+              href: curves.md
+            - name: Linee e curve combinate
+              href: combined-lines-and-curves.md
+            - name: Attributi di linea e curva
+              href: line-and-curve-attributes.md
+        - name: Uso di linee e curve
+          href: using-lines-and-curves.md
+          items:
+            - name: Disegno di marcatori
+              href: drawing-markers.md
+            - name: Disegno di un grafico a torta
+              href: drawing-a-pie-chart.md
+        - name: Riferimento a linee e curve
+          href: line-and-curve-reference.md
+          items:
+            - name: Funzioni linea e curva
+              href: line-and-curve-functions.md
+              items:
+                - name: AngleArc
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-anglearc
+                - name: Arc
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-arc
+                - name: ArcTo
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-arcto
+                - name: GetArcDirection
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getarcdirection
+                - name: LineDDA
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-linedda
+                - name: LineDDAProc
+                  href: /windows/desktop/api/Wingdi/nc-wingdi-lineddaproc
+                - name: LineTo
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-lineto
+                - name: MoveToEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-movetoex
+                - name: Polibezier
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polybezier
+                - name: PolyBezierTo
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polybezierto
+                - name: Polidisegni
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polydraw
+                - name: Polilinea
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polyline
+                - name: PolylineTo
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polylineto
+                - name: Polilinea
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-polypolyline
+                - name: SetArcDirection
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setarcdirection
+    - name: Metafile
+      href: metafiles.md
+      items:
+        - name: Informazioni sui metafile
+          href: about-metafiles.md
+          items:
+            - name: Metafile di Enhanced-Format
+              href: enhanced-format-metafiles.md
+              items:
+                - name: Record metafile avanzati
+                  href: enhanced-metafile-records.md
+                - name: Creazione di metafile migliorata
+                  href: enhanced-metafile-creation.md
+                - name: Operazioni di Metafile avanzate
+                  href: enhanced-metafile-operations.md
+            - name: Metafile di Windows-Format
+              href: windows-format-metafiles.md
+        - name: Uso di metafile
+          href: using-metafiles.md
+          items:
+            - name: Creazione di un metafile avanzato
+              href: creating-an-enhanced-metafile.md
+            - name: Visualizzazione di un'immagine e archiviazione in un metafile avanzato
+              href: displaying-a-picture-and-storing-it-in-an-enhanced-metafile.md
+            - name: Apertura di un metafile migliorato e visualizzazione del contenuto
+              href: opening-an-enhanced-metafile-and-displaying-its-contents.md
+            - name: Modifica di un metafile avanzato
+              href: editing-an-enhanced-metafile.md
+        - name: Riferimento a metafile
+          href: metafile-reference.md
+          items:
+            - name: Funzioni metafile
+              href: metafile-functions.md
+              items:
+                - name: CloseEnhMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-closeenhmetafile
+                - name: CloseMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-closemetafile
+                - name: CopyEnhMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-copyenhmetafilea
+                - name: CopyMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-copymetafilea
+                - name: CreateEnhMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea
+                - name: CreateMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createmetafilea
+                - name: DeleteEnhMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-deleteenhmetafile
+                - name: DeleteMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-deletemetafile
+                - name: ENHMFENUMPROC
+                  href: /previous-versions//dd162606(v=vs.85)
+                - name: EnumEnhMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-enumenhmetafile
+                - name: EnumMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-enummetafile
+                - name: MFENUMPROC
+                  href: /previous-versions//dd162630(v=vs.85)
+                - name: GdiComment
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gdicomment
+                - name: GetEnhMetaFile
+                  href: /windows/desktop/api/WinGdi/nf-wingdi-getenhmetafilea
+                - name: GetEnhMetaFileBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getenhmetafilebits
+                - name: GetEnhMetaFileDescription
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getenhmetafiledescriptiona
+                - name: GetEnhMetaFileHeader
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getenhmetafileheader
+                - name: GetEnhMetaFilePaletteEntries
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getenhmetafilepaletteentries
+                - name: GetMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getmetafilea
+                - name: GetMetaFileBitsEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getmetafilebitsex
+                - name: GetWinMetaFileBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getwinmetafilebits
+                - name: PlayEnhMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-playenhmetafile
+                - name: PlayEnhMetaFileRecord
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-playenhmetafilerecord
+                - name: PlayMetaFile
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-playmetafile
+                - name: PlayMetaFileRecord
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-playmetafilerecord
+                - name: SetEnhMetaFileBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setenhmetafilebits
+                - name: SetMetaFileBitsEx
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setmetafilebitsex
+                - name: SetWinMetaFileBits
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setwinmetafilebits
+            - name: Strutture di metafile
+              href: metafile-structures.md
+              items:
+                - name: EMR
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emr
+                - name: EMRALPHABLEND
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emralphablend
+                - name: EMRANGLEARC
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emranglearc
+                - name: 'EMRARC, EMRARCTO, EMRCHORD, EMRPIE'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrarc
+                - name: EMRBITBLT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrbitblt
+                - name: EMRCOLORCORRECTPALETTE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcolorcorrectpalette
+                - name: EMRCOLORMATCHTOTARGET
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcolormatchtotarget
+                - name: EMRCREATEBRUSHINDIRECT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcreatebrushindirect
+                - name: EMRCREATECOLORSPACE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcreatecolorspace
+                - name: EMRCREATECOLORSPACEW
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcreatecolorspacew
+                - name: EMRCREATEDIBPATTERNBRUSHPT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcreatedibpatternbrushpt
+                - name: EMRCREATEMONOBRUSH
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcreatemonobrush
+                - name: EMRCREATEPALETTE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcreatepalette
+                - name: EMRCREATEPEN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrcreatepen
+                - name: 'EMRELLIPSE, EMRRECTANGLE'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrellipse
+                - name: EMREOF
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emreof
+                - name: 'EMREXCLUDECLIPRECT, EMRINTERSECTCLIPRECT'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrexcludecliprect
+                - name: EMREXTCREATEFONTINDIRECTW
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrextcreatefontindirectw
+                - name: EMREXTCREATEPEN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrextcreatepen
+                - name: EMREXTFLOODFILL
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrextfloodfill
+                - name: EMREXTSELECTCLIPRGN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrextselectcliprgn
+                - name: 'EMREXTTEXTOUTA, EMREXTTEXTOUTW'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrexttextouta
+                - name: 'EMRFILLPATH, EMRSTROKEANDFILLPATH, EMRSTROKEPATH'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrfillpath
+                - name: EMRFILLRGN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrfillrgn
+                - name: EMRFORMAT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrformat
+                - name: EMRFRAMERGN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrframergn
+                - name: EMRGDICOMMENT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrgdicomment
+                - name: EMRGLSBOUNDEDRECORD
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrglsboundedrecord
+                - name: EMRGLSRECORD
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrglsrecord
+                - name: EMRGRADIENTFILL
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrgradientfill
+                - name: 'EMRINVERTRGN, EMRPAINTRGN'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrinvertrgn
+                - name: 'EMRLINETO, EMRMOVETOEX'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrlineto
+                - name: EMRMASKBLT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrmaskblt
+                - name: EMRMODIFYWORLDTRANSFORM
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrmodifyworldtransform
+                - name: EMROFFSETCLIPRGN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emroffsetcliprgn
+                - name: EMRPIXELFORMAT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpixelformat
+                - name: EMRPLGBLT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrplgblt
+                - name: EMRPOLYDRAW
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpolydraw
+                - name: EMRPOLYDRAW16
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpolydraw16
+                - name: 'EMRPOLYLINE, EMRPOLYBEZIER, EMRPOLYGON, EMRPOLYBEZIERTO, EMRPOLYLINETO'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpolyline
+                - name: 'EMRPOLYLINE16, EMRPOLYBEZIER16, EMRPOLYGON16, EMRPOLYBEZIERTO16, EMRPOLYLINETO16'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpolyline16
+                - name: 'EMRPOLYPOLYLINE, EMRPOLYPOLYGON'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpolypolyline
+                - name: 'EMRPOLYPOLYLINE16, EMRPOLYPOLYGON16'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpolypolyline16
+                - name: 'EMRPOLYTEXTOUTA, EMRPOLYTEXTOUTW'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrpolytextouta
+                - name: EMRRESIZEPALETTE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrresizepalette
+                - name: EMRRESTOREDC
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrrestoredc
+                - name: EMRROUNDRECT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrroundrect
+                - name: 'EMRSCALEVIEWPORTEXTEX, EMRSCALEWINDOWEXTEX'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrscaleviewportextex
+                - name: 'EMRSETCOLORSPACE, EMRSELECTCOLORSPACE, EMRDELETECOLORSPACE'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetcolorspace
+                - name: 'EMRSELECTOBJECT, EMRDELETEOBJECT'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrselectobject
+                - name: EMRSELECTPALETTE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrselectpalette
+                - name: EMRSETARCDIRECTION
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetarcdirection
+                - name: 'EMRSETBKCOLOR, EMRSETTEXTCOLOR'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetbkcolor
+                - name: EMRSETCOLORADJUSTMENT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetcoloradjustment
+                - name: EMRSETDIBITSTODEVICE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetdibitstodevice
+                - name: EMRSETICMPROFILE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrseticmprofile
+                - name: EMRSETMAPPERFLAGS
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetmapperflags
+                - name: EMRSETMITERLIMIT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetmiterlimit
+                - name: EMRSETPALETTEENTRIES
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetpaletteentries
+                - name: EMRSETPIXELV
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetpixelv
+                - name: 'EMRSETVIEWPORTEXTEX, EMRSETWINDOWEXTEX'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetviewportextex
+                - name: 'EMRSETVIEWPORTORGEX, EMRSETWINDOWORGEX, EMRSETBRUSHORGEX'
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetviewportorgex
+                - name: EMRSETWORLDTRANSFORM
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrsetworldtransform
+                - name: EMRSTRETCHBLT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrstretchblt
+                - name: EMRSTRETCHDIBITS
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrstretchdibits
+                - name: EMRTEXT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrtext
+                - name: EMRTRANSPARENTBLT
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrtransparentblt
+                - name: Record metafile avanzati senza parametri
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrabortpath
+                - name: Record di metafile avanzati con un solo parametro
+                  href: /windows/win32/api/Wingdi/ns-wingdi-emrselectclippath
+                - name: ENHMETAHEADER
+                  href: /windows/win32/api/Wingdi/ns-wingdi-enhmetaheader
+                - name: ENHMETARECORD
+                  href: /windows/win32/api/Wingdi/ns-wingdi-enhmetarecord
+                - name: HANDLETABLE
+                  href: /windows/win32/api/Wingdi/ns-wingdi-handletable
+                - name: METAHEADER
+                  href: /windows/win32/api/Wingdi/ns-wingdi-metaheader
+                - name: MetaRecord
+                  href: /windows/win32/api/Wingdi/ns-wingdi-metarecord
+                - name: POINTL
+                  href: /previous-versions//dd162807(v=vs.85)
+                - name: RECTL
+                  href: /previous-versions//dd162907(v=vs.85)
+    - name: Più monitor di visualizzazione
+      href: multiple-display-monitors.md
+      items:
+        - name: Informazioni su più monitor di visualizzazione
+          href: about-multiple-display-monitors.md
+          items:
+            - name: Schermata virtuale
+              href: the-virtual-screen.md
+            - name: HMONITOR e il contesto di dispositivo
+              href: hmonitor-and-the-device-context.md
+            - name: Enumerazione e controllo di visualizzazione
+              href: enumeration-and-display-control.md
+            - name: Più metriche del sistema di monitoraggio
+              href: multiple-monitor-system-metrics.md
+            - name: Uso di più monitor come visualizzazioni indipendenti
+              href: using-multiple-monitors-as-independent-displays.md
+            - name: Colori su più monitor di visualizzazione
+              href: colors-on-multiple-display-monitors.md
+              items:
+                - name: Disegno su più monitor di visualizzazione
+                  href: painting-on-multiple-display-monitors.md
+            - name: Posizionamento di oggetti su più monitor di visualizzazione
+              href: positioning-objects-on-multiple-display-monitors.md
+            - name: Più applicazioni di monitoraggio su sistemi diversi
+              href: multiple-monitor-applications-on-different-systems.md
+            - name: Considerazioni su più monitor per i programmi precedenti
+              href: multiple-monitor-considerations-for-older-programs.md
+        - name: Utilizzo di più monitor di visualizzazione
+          href: using-multiple-display-monitors.md
+          items:
+            - name: Disegno in un controller di dominio che si estende su più visualizzazioni
+              href: painting-on-a-dc-that-spans-multiple-displays.md
+            - name: Posizionamento di oggetti in una configurazione con più visualizzazioni
+              href: positioning-objects-on-a-multiple-display-setup.md
+        - name: Riferimento a più monitor di visualizzazione
+          href: multiple-display-monitors-reference.md
+          items:
+            - name: Funzioni per più monitor di visualizzazione
+              href: multiple-display-monitors-functions.md
+              items:
+                - name: EnumDisplayMonitors
+                  href: /windows/desktop/api/Winuser/nf-winuser-enumdisplaymonitors
+                - name: GetMonitorInfo
+                  href: /windows/desktop/api/Winuser/nf-winuser-getmonitorinfoa
+                - name: MonitorEnumProc
+                  href: /windows/desktop/api/Winuser/nc-winuser-monitorenumproc
+                - name: MonitorFromPoint
+                  href: /windows/desktop/api/Winuser/nf-winuser-monitorfrompoint
+                - name: MonitorFromRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-monitorfromrect
+                - name: MonitorFromWindow
+                  href: /windows/desktop/api/Winuser/nf-winuser-monitorfromwindow
+            - name: Più strutture monitor di visualizzazione
+              href: multiple-display-monitors-structures.md
+              items:
+                - name: MONITORINFO
+                  href: /windows/win32/api/Winuser/ns-winuser-monitorinfo
+                - name: MONITORINFOEX
+                  href: /windows/win32/api/Winuser/ns-winuser-monitorinfoexa
+    - name: Disegno e disegno
+      href: painting-and-drawing.md
+      items:
+        - name: Informazioni su disegno e disegno
+          href: about-painting-and-drawing.md
+          items:
+            - name: Quando creare un oggetto in una finestra
+              href: when-to-draw-in-a-window.md
+            - name: Messaggio di WM_PAINT
+              href: the-wm-paint-message.md
+              items:
+                - name: Area di aggiornamento
+                  href: the-update-region.md
+                - name: Invalidare e convalidare l'area di aggiornamento
+                  href: invalidating-and-validating-the-update-region.md
+                - name: Recupero dell'area di aggiornamento
+                  href: retrieving-the-update-region.md
+                - name: Esclusione dell'area di aggiornamento
+                  href: excluding-the-update-region.md
+                - name: Disegno sincrono e asincrono
+                  href: synchronous-and-asynchronous-drawing.md
+            - name: Disegno senza messaggio di WM_PAINT
+              href: drawing-without-the-wm-paint-message.md
+            - name: Sistema di coordinate finestra
+              href: window-coordinate-system.md
+            - name: Aree della finestra
+              href: window-regions.md
+            - name: Sfondo finestra
+              href: window-background.md
+            - name: Finestre ridotte a icona
+              href: minimized-windows.md
+            - name: Finestre ridimensionate
+              href: resized-windows.md
+            - name: Area non client
+              href: nonclient-area.md
+            - name: Area di aggiornamento della finestra figlio
+              href: child-window-update-region.md
+            - name: Dispositivi di visualizzazione
+              href: display-devices.md
+              items:
+                - name: Visualizza la cache del contesto del dispositivo
+                  href: display-device-context-cache.md
+                - name: Visualizzare le impostazioni predefinite del contesto di dispositivo
+                  href: display-device-context-defaults.md
+                - name: Contesti di dispositivo di visualizzazione comuni
+                  href: common-display-device-contexts.md
+                - name: Contesti di dispositivo di visualizzazione privati
+                  href: private-display-device-contexts.md
+                - name: Classe Visualizza contesti di dispositivo
+                  href: class-display-device-contexts.md
+                - name: Visualizzazione dei contesti di dispositivo della finestra
+                  href: window-display-device-contexts.md
+                - name: Contesti dispositivo di visualizzazione padre
+                  href: parent-display-device-contexts.md
+            - name: Blocco aggiornamento finestra
+              href: window-update-lock.md
+            - name: Rettangolo di delimitazione accumulato
+              href: accumulated-bounding-rectangle.md
+        - name: Uso del messaggio WM_PAINT
+          href: using-the-wm-paint-message.md
+          items:
+            - name: Disegno nell'area client
+              href: drawing-in-the-client-area.md
+            - name: Ridisegno dell'intera area client
+              href: redrawing-the-entire-client-area.md
+            - name: Ridisegno nell'area di aggiornamento
+              href: redrawing-in-the-update-region.md
+            - name: Invalidare l'area client
+              href: invalidating-the-client-area.md
+            - name: Disegno di una finestra ridotta a icona
+              href: drawing-a-minimized-window.md
+            - name: Disegno di uno sfondo personalizzato della finestra
+              href: drawing-a-custom-window-background.md
+        - name: Uso della funzione GetDC
+          href: using-the-getdc-function.md
+          items:
+            - name: Disegno con il mouse
+              href: drawing-with-the-mouse.md
+            - name: Disegno a intervalli temporizzati
+              href: drawing-at-timed-intervals.md
+        - name: Riferimento disegno e disegno
+          href: painting-and-drawing-reference.md
+          items:
+            - name: Funzioni di disegno e disegno
+              href: painting-and-drawing-functions.md
+              items:
+                - name: BeginPaint
+                  href: /windows/desktop/api/Winuser/nf-winuser-beginpaint
+                - name: DrawAnimatedRects
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawanimatedrects
+                - name: DrawCaption
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawcaption
+                - name: DrawEdge
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawedge
+                - name: DrawFocusRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawfocusrect
+                - name: DrawFrameControl
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawframecontrol
+                - name: DrawState
+                  href: /windows/desktop/api/Winuser/nf-winuser-drawstatea
+                - name: DrawStateProc
+                  href: /windows/desktop/api/Winuser/nc-winuser-drawstateproc
+                - name: EndPaint
+                  href: /windows/desktop/api/Winuser/nf-winuser-endpaint
+                - name: ExcludeUpdateRgn
+                  href: /windows/desktop/api/Winuser/nf-winuser-excludeupdatergn
+                - name: GdiFlush
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gdiflush
+                - name: GdiGetBatchLimit
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gdigetbatchlimit
+                - name: GdiSetBatchLimit
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-gdisetbatchlimit
+                - name: GetBkColor
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getbkcolor
+                - name: GetBkMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getbkmode
+                - name: GetBoundsRect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getboundsrect
+                - name: GetROP2
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getrop2
+                - name: GetUpdateRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-getupdaterect
+                - name: GetUpdateRgn
+                  href: /windows/desktop/api/Winuser/nf-winuser-getupdatergn
+                - name: GetWindowDC
+                  href: /windows/desktop/api/Winuser/nf-winuser-getwindowdc
+                - name: GetWindowRgn
+                  href: /windows/desktop/api/Winuser/nf-winuser-getwindowrgn
+                - name: GetWindowRgnBox
+                  href: /windows/desktop/api/Winuser/nf-winuser-getwindowrgnbox
+                - name: GrayString
+                  href: /windows/desktop/api/Winuser/nf-winuser-graystringa
+                - name: InvalidateRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-invalidaterect
+                - name: InvalidateRgn
+                  href: /windows/desktop/api/Winuser/nf-winuser-invalidatergn
+                - name: LockWindowUpdate
+                  href: /windows/desktop/api/Winuser/nf-winuser-lockwindowupdate
+                - name: GRAYSTRINGPROC
+                  href: /windows/desktop/api/Winuser/nc-winuser-graystringproc
+                - name: PaintDesktop
+                  href: /windows/desktop/api/Winuser/nf-winuser-paintdesktop
+                - name: RedrawWindow
+                  href: /windows/desktop/api/Winuser/nf-winuser-redrawwindow
+                - name: SetBkColor
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setbkcolor
+                - name: SetBkMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setbkmode
+                - name: SetBoundsRect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setboundsrect
+                - name: SetROP2
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setrop2
+                - name: SetWindowRgn
+                  href: /windows/desktop/api/Winuser/nf-winuser-setwindowrgn
+                - name: UpdateWindow
+                  href: /windows/desktop/api/Winuser/nf-winuser-updatewindow
+                - name: ValidateRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-validaterect
+                - name: ValidateRgn
+                  href: /windows/desktop/api/Winuser/nf-winuser-validatergn
+            - name: Disegno e creazione di strutture
+              href: painting-and-drawing-structures.md
+              items:
+                - name: PAINTSTRUCT
+                  href: /windows/win32/api/Winuser/ns-winuser-paintstruct
+            - name: Disegno e creazione di messaggi
+              href: painting-and-drawing-messages.md
+              items:
+                - name: WM_DISPLAYCHANGE
+                  href: wm-displaychange.md
+                - name: WM_NCPAINT
+                  href: wm-ncpaint.md
+                - name: WM_PAINT
+                  href: wm-paint.md
+                - name: WM_PRINT
+                  href: wm-print.md
+                - name: WM_PRINTCLIENT
+                  href: wm-printclient.md
+                - name: WM_SETREDRAW
+                  href: wm-setredraw.md
+                - name: WM_SYNCPAINT
+                  href: wm-syncpaint.md
+            - name: Codici operativi raster
+              href: raster-operation-codes.md
+              items:
+                - name: Operazioni raster binarie
+                  href: binary-raster-operations.md
+                - name: Operazioni raster ternarie
+                  href: ternary-raster-operations.md
+    - name: Percorsi
+      href: paths.md
+      items:
+        - name: Informazioni sui percorsi
+          href: about-paths.md
+          items:
+            - name: Creazione percorso
+              href: path-creation.md
+            - name: Percorsi delineati e riempiti
+              href: outlined-and-filled-paths.md
+            - name: Trasformazioni di percorsi
+              href: transformations-of-paths.md
+            - name: Tracciare percorsi ed effetti grafici
+              href: clip-paths-and-graphic-effects.md
+            - name: Conversione dei percorsi in aree
+              href: conversion-of-paths-to-regions.md
+            - name: Percorsi curvi
+              href: curved-paths.md
+        - name: Utilizzo di percorsi
+          href: using-paths.md
+        - name: Riferimento al percorso
+          href: path-reference.md
+          items:
+            - name: Funzioni Path
+              href: path-functions.md
+              items:
+                - name: AbortPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-abortpath
+                - name: BeginPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-beginpath
+                - name: CloseFigure
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-closefigure
+                - name: EndPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-endpath
+                - name: FillPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-fillpath
+                - name: FlattenPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-flattenpath
+                - name: GetMiterLimit
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getmiterlimit
+                - name: GetPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getpath
+                - name: PathToRegion
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-pathtoregion
+                - name: SetMiterLimit
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setmiterlimit
+                - name: StrokeAndFillPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-strokeandfillpath
+                - name: StrokePath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-strokepath
+                - name: WidenPath
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-widenpath
+    - name: Penne
+      href: pens.md
+      items:
+        - name: Informazioni sulle penne
+          href: about-pens.md
+          items:
+            - name: Penne cosmetiche
+              href: cosmetic-pens.md
+            - name: Penne geometriche
+              href: geometric-pens.md
+            - name: Attributi penna
+              href: pen-attributes.md
+              items:
+                - name: Larghezza penna
+                  href: pen-width.md
+                - name: Stile penna
+                  href: pen-style.md
+                - name: Colore della penna
+                  href: pen-color.md
+                - name: Modello di penna
+                  href: pen-pattern.md
+                - name: Tratteggio penna
+                  href: pen-hatch.md
+                - name: Perno estremità penna
+                  href: pen-end-cap.md
+                - name: Aggiunta a penna
+                  href: pen-join.md
+            - name: Funzioni di ICM-Enabled Pen
+              href: icm-enabled-pen-functions.md
+        - name: Uso di penne
+          href: using-pens.md
+        - name: Riferimento alla penna
+          href: pen-reference.md
+          items:
+            - name: Funzioni Pen
+              href: pen-functions.md
+              items:
+                - name: CreatePen
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createpen
+                - name: CreatePenIndirect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createpenindirect
+                - name: ExtCreatePen
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-extcreatepen
+            - name: Strutture Pen
+              href: pen-structures.md
+              items:
+                - name: EXTLOGPEN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-extlogpen
+                - name: LOGPEN
+                  href: /windows/win32/api/Wingdi/ns-wingdi-logpen
+    - name: Rettangoli
+      href: rectangles.md
+      items:
+        - name: Informazioni sui rettangoli
+          href: about-rectangles.md
+          items:
+            - name: Coordinate rettangolo
+              href: rectangle-coordinates.md
+            - name: Operazioni Rectangle
+              href: rectangle-operations.md
+        - name: Uso di rettangoli
+          href: using-rectangles.md
+        - name: Riferimento al rettangolo
+          href: rectangle-reference.md
+          items:
+            - name: Funzioni Rectangle
+              href: rectangle-functions.md
+              items:
+                - name: CopyRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-copyrect
+                - name: EqualRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-equalrect
+                - name: InflateRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-inflaterect
+                - name: IntersectRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-intersectrect
+                - name: IsRectEmpty
+                  href: /windows/desktop/api/Winuser/nf-winuser-isrectempty
+                - name: OffsetRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-offsetrect
+                - name: PtInRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-ptinrect
+                - name: SetRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-setrect
+                - name: SetRectEmpty
+                  href: /windows/desktop/api/Winuser/nf-winuser-setrectempty
+                - name: SubtractRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-subtractrect
+                - name: UnionRect
+                  href: /windows/desktop/api/Winuser/nf-winuser-unionrect
+            - name: Strutture Rectangle
+              href: rectangle-structures.md
+              items:
+                - name: PUNTO
+                  href: /previous-versions//dd162805(v=vs.85)
+                - name: PUNTI
+                  href: /previous-versions//dd162808(v=vs.85)
+                - name: RECT
+                  href: /previous-versions//dd162897(v=vs.85)
+            - name: Macro rettangolo
+              href: rectangle-macros.md
+              items:
+                - name: MAKEPOINTS
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-makepoints
+                - name: POINTSTOPOINT
+                  href: /windows/desktop/api/Winuser/nf-winuser-pointstopoint
+                - name: POINTTOPOINTS
+                  href: /windows/desktop/api/Winuser/nf-winuser-pointtopoints
+    - name: Regioni
+      href: regions.md
+      items:
+        - name: Informazioni sulle aree
+          href: about-regions.md
+          items:
+            - name: Creazione e selezione dell'area
+              href: region-creation-and-selection.md
+            - name: Operazioni sulle aree
+              href: region-operations.md
+              items:
+                - name: Combinazione di aree
+                  href: combining-regions.md
+                - name: Confronto tra aree
+                  href: comparing-regions.md
+                - name: Aree di riempimento
+                  href: filling-regions.md
+                - name: Aree di disegno
+                  href: painting-regions.md
+                - name: Invertire le aree
+                  href: inverting-regions.md
+                - name: Aree di framing
+                  href: framing-regions.md
+                - name: Recupero di un rettangolo di delimitazione
+                  href: retrieving-a-bounding-rectangle.md
+                - name: Aree mobili
+                  href: moving-regions.md
+                - name: Aree di hit testing
+                  href: hit-testing-regions.md
+        - name: Utilizzo delle regioni
+          href: using-regions.md
+          items:
+            - name: Uso delle aree per ritagliare l'output
+              href: using-regions-to-clip-output.md
+              items:
+                - name: Definizione dell'area di visualizzazione
+                  href: defining-the-clipping-region.md
+                - name: Ritaglio dell'output
+                  href: clipping-output.md
+            - name: Uso delle aree per eseguire l'hit testing
+              href: using-regions-to-perform-hit-testing.md
+        - name: Riferimento all'area
+          href: region-reference.md
+          items:
+            - name: Funzioni Region
+              href: region-functions.md
+              items:
+                - name: CombineRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-combinergn
+                - name: CreateEllipticRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createellipticrgn
+                - name: CreateEllipticRgnIndirect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createellipticrgnindirect
+                - name: CreatePolygonRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createpolygonrgn
+                - name: CreatePolyPolygonRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createpolypolygonrgn
+                - name: CreateRectRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createrectrgn
+                - name: CreateRectRgnIndirect
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createrectrgnindirect
+                - name: CreateRoundRectRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-createroundrectrgn
+                - name: EqualRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-equalrgn
+                - name: ExtCreateRegion
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-extcreateregion
+                - name: FillRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-fillrgn
+                - name: FrameRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-framergn
+                - name: GetPolyFillMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getpolyfillmode
+                - name: GetRegionData
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getregiondata
+                - name: GetRgnBox
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-getrgnbox
+                - name: InvertRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-invertrgn
+                - name: OffsetRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-offsetrgn
+                - name: PaintRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-paintrgn
+                - name: PtInRegion
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-ptinregion
+                - name: RectInRegion
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-rectinregion
+                - name: SetPolyFillMode
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setpolyfillmode
+                - name: SetRectRgn
+                  href: /windows/desktop/api/Wingdi/nf-wingdi-setrectrgn
+            - name: Strutture Region
+              href: region-structures.md
+              items:
+                - name: RGNDATA
+                  href: /windows/win32/api/Wingdi/ns-wingdi-rgndata
+                - name: RGNDATAHEADER
+                  href: /windows/win32/api/Wingdi/ns-wingdi-rgndataheader
