@@ -1,0 +1,84 @@
+---
+title: dcl_hs_fork_phase_instance_count (SM5-ASM)
+description: Dichiarare il numero di istanze della fase della divisione in una fase di fork dello shader Hull.
+ms.assetid: E38C48BB-3439-4F63-8DF8-21CF562CF5E6
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: e3459b43c22f60699445f3ef05e5323e268eeb71
+ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "104398309"
+---
+# <a name="dcl_hs_fork_phase_instance_count-sm5---asm"></a><span data-ttu-id="2cbe6-103">\_ \_ numero di istanze della fase di fork HS DCL \_ \_ \_ (SM5-ASM)</span><span class="sxs-lookup"><span data-stu-id="2cbe6-103">dcl\_hs\_fork\_phase\_instance\_count (sm5 - asm)</span></span>
+
+<span data-ttu-id="2cbe6-104">Dichiarare il numero di istanze della fase della divisione in una fase di fork dello shader Hull.</span><span class="sxs-lookup"><span data-stu-id="2cbe6-104">Declare the fork phase instance count in a hull shader fork phase.</span></span>
+
+
+
+| <span data-ttu-id="2cbe6-105">\_ \_ numero di istanze della fase della fase della forcella DCL \_ \_ \_ {1... max 32 bit uint}</span><span class="sxs-lookup"><span data-stu-id="2cbe6-105">dcl\_hs\_fork\_phase\_instance\_count {1...max 32-bit UINT}</span></span> |
+|-------------------------------------------------------------|
+
+
+
+ 
+
+
+
+| <span data-ttu-id="2cbe6-106">Elemento</span><span class="sxs-lookup"><span data-stu-id="2cbe6-106">Item</span></span>                                                   | <span data-ttu-id="2cbe6-107">Descrizione</span><span class="sxs-lookup"><span data-stu-id="2cbe6-107">Description</span></span>                           |
+|--------------------------------------------------------|---------------------------------------|
+| <span data-ttu-id="2cbe6-108"><span id="N"></span><span id="n"></span>*N*</span><span class="sxs-lookup"><span data-stu-id="2cbe6-108"><span id="N"></span><span id="n"></span>*N*</span></span><br/> | <span data-ttu-id="2cbe6-109">\[nel \] conteggio delle istanze.</span><span class="sxs-lookup"><span data-stu-id="2cbe6-109">\[in\] The instance count.</span></span><br/> |
+
+
+
+ 
+
+## <a name="remarks"></a><span data-ttu-id="2cbe6-110">Commenti</span><span class="sxs-lookup"><span data-stu-id="2cbe6-110">Remarks</span></span>
+
+<span data-ttu-id="2cbe6-111">Questa istruzione si applica alle fasi dello shader seguenti:</span><span class="sxs-lookup"><span data-stu-id="2cbe6-111">This instruction applies to the following shader stages:</span></span>
+
+
+
+| <span data-ttu-id="2cbe6-112">Vertice</span><span class="sxs-lookup"><span data-stu-id="2cbe6-112">Vertex</span></span> | <span data-ttu-id="2cbe6-113">Hull</span><span class="sxs-lookup"><span data-stu-id="2cbe6-113">Hull</span></span> | <span data-ttu-id="2cbe6-114">Dominio</span><span class="sxs-lookup"><span data-stu-id="2cbe6-114">Domain</span></span> | <span data-ttu-id="2cbe6-115">Geometria</span><span class="sxs-lookup"><span data-stu-id="2cbe6-115">Geometry</span></span> | <span data-ttu-id="2cbe6-116">Pixel</span><span class="sxs-lookup"><span data-stu-id="2cbe6-116">Pixel</span></span> | <span data-ttu-id="2cbe6-117">Calcolo</span><span class="sxs-lookup"><span data-stu-id="2cbe6-117">Compute</span></span> |
+|--------|------|--------|----------|-------|---------|
+|        | <span data-ttu-id="2cbe6-118">X</span><span class="sxs-lookup"><span data-stu-id="2cbe6-118">X</span></span>    |        |          |       |         |
+
+
+
+ 
+
+## <a name="minimum-shader-model"></a><span data-ttu-id="2cbe6-119">Modello Shader minimo</span><span class="sxs-lookup"><span data-stu-id="2cbe6-119">Minimum Shader Model</span></span>
+
+<span data-ttu-id="2cbe6-120">Questa istruzione è supportata nei modelli shader seguenti:</span><span class="sxs-lookup"><span data-stu-id="2cbe6-120">This instruction is supported in the following shader models:</span></span>
+
+
+
+| <span data-ttu-id="2cbe6-121">Modello di shader</span><span class="sxs-lookup"><span data-stu-id="2cbe6-121">Shader Model</span></span>                                              | <span data-ttu-id="2cbe6-122">Supportato</span><span class="sxs-lookup"><span data-stu-id="2cbe6-122">Supported</span></span> |
+|-----------------------------------------------------------|-----------|
+| [<span data-ttu-id="2cbe6-123">Modello Shader 5</span><span class="sxs-lookup"><span data-stu-id="2cbe6-123">Shader Model 5</span></span>](d3d11-graphics-reference-sm5.md)        | <span data-ttu-id="2cbe6-124">sì</span><span class="sxs-lookup"><span data-stu-id="2cbe6-124">yes</span></span>       |
+| [<span data-ttu-id="2cbe6-125">Modello Shader 4,1</span><span class="sxs-lookup"><span data-stu-id="2cbe6-125">Shader Model 4.1</span></span>](dx-graphics-hlsl-sm4.md)              | <span data-ttu-id="2cbe6-126">no</span><span class="sxs-lookup"><span data-stu-id="2cbe6-126">no</span></span>        |
+| [<span data-ttu-id="2cbe6-127">Modello Shader 4</span><span class="sxs-lookup"><span data-stu-id="2cbe6-127">Shader Model 4</span></span>](dx-graphics-hlsl-sm4.md)                | <span data-ttu-id="2cbe6-128">no</span><span class="sxs-lookup"><span data-stu-id="2cbe6-128">no</span></span>        |
+| [<span data-ttu-id="2cbe6-129">Shader Model 3 (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="2cbe6-129">Shader Model 3 (DirectX HLSL)</span></span>](dx-graphics-hlsl-sm3.md) | <span data-ttu-id="2cbe6-130">no</span><span class="sxs-lookup"><span data-stu-id="2cbe6-130">no</span></span>        |
+| [<span data-ttu-id="2cbe6-131">Shader Model 2 (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="2cbe6-131">Shader Model 2 (DirectX HLSL)</span></span>](dx-graphics-hlsl-sm2.md) | <span data-ttu-id="2cbe6-132">no</span><span class="sxs-lookup"><span data-stu-id="2cbe6-132">no</span></span>        |
+| [<span data-ttu-id="2cbe6-133">Shader Model 1 (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="2cbe6-133">Shader Model 1 (DirectX HLSL)</span></span>](dx-graphics-hlsl-sm1.md) | <span data-ttu-id="2cbe6-134">no</span><span class="sxs-lookup"><span data-stu-id="2cbe6-134">no</span></span>        |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="2cbe6-135">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="2cbe6-135">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="2cbe6-136">Assembly Shader Model 5 (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="2cbe6-136">Shader Model 5 Assembly (DirectX HLSL)</span></span>](shader-model-5-assembly--directx-hlsl-.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
