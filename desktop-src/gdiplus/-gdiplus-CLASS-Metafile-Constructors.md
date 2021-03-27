@@ -1,0 +1,42 @@
+---
+description: In questo argomento vengono elencati i costruttori della classe Metafile. Per un elenco completo delle classi, vedere classe Metafile.
+ms.assetid: a9648287-65d9-47d8-b32b-33f74b4fcd07
+title: Costruttori metafile. Metafile
+ms.date: 07/02/2019
+ms.topic: reference
+ms.openlocfilehash: 9ae5fa3343aebace286591760a47a55fbbef7c9d
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104345121"
+---
+# <a name="metafilemetafile-constructors"></a>Costruttori metafile. Metafile
+
+In questo argomento vengono elencati i costruttori della classe [**metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) . Per un elenco completo delle classi, vedere **classe Metafile**.
+
+### <a name="overload-list"></a>Elenco di overload
+
+
+
+| Costruttore                                                                                                                                                                      | Descrizione                                                                                                                                                                                                                                                          |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**Metafile (WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar))                                                                                                          | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar)) per la riproduzione.<br/>                                                                                                                                                   |
+| [**Metafile (IStream \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream))                                                                                                          | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream)) da un'interfaccia [IStream](/windows/win32/api/objidl/nn-objidl-istream) per la riproduzione.<br/>                                                            |
+| [**Metafile (HENHMETAFILE, BOOL)**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhenhmetafile_inbool))                                                                                          | Crea un oggetto GDI+ [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhenhmetafile_inbool)) per la riproduzione in base a un file EMF (Enhanced Metafile) GDI.<br/>                                                                                            |
+| [**Metafile (HDC, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhdc_inemftype_inconstwchar))                                                                         | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhdc_inemftype_inconstwchar)) per la registrazione.<br/>                                                                                                                             |
+| [**Metafile (WCHAR \* , HDC, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar_inhdc_inemftype_inconstwchar))                                                        | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar_inhdc_inemftype_inconstwchar)) per la registrazione.<br/>                                                                                                                    |
+| [**Metafile (IStream \* , HDC, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream_inhdc_inemftype_inconstwchar))                                                        | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream_inhdc_inemftype_inconstwchar)) per la registrazione in un'interfaccia [IStream](/windows/win32/api/objidl/nn-objidl-istream) .<br/>                               |
+| [**Metafile (HMETAFILE, WmfPlaceableFileHeader \* , bool)**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhmetafile_inconstwmfplaceablefileheader_inbool))                                             | Crea un oggetto GDI+[**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhmetafile_inconstwmfplaceablefileheader_inbool)) per la registrazione. Il formato sarà un Metafile posizionabile.<br/>                                                                          |
+| [**Metafile (HDC, Rect&, MetafileFrameUnit, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhdc_inconstrect__inmetafileframeunit_inemftype_inconstwchar))            | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhdc_inconstrect__inmetafileframeunit_inemftype_inconstwchar)) per la registrazione.<br/>                                                                                        |
+| [**Metafile (HDC, RectF&, MetaFileFrameUnit, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhdc_inconstrectf__inmetafileframeunit_inemftype_inconstwchar))           | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inhdc_inconstrectf__inmetafileframeunit_inemftype_inconstwchar)) per la registrazione.<br/>                                                                                        |
+| [**Metafile (WCHAR \* , HDC, Rect&, MetaFileFrameUnit, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar_inhdc_inconstrect__inmetafileframeunit_inemftype_inconstwchar))    | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar_inhdc_inconstrect__inmetafileframeunit_inemftype_inconstwchar)) per la registrazione.<br/>                                                                                        |
+| [**Metafile (WCHAR \* , HDC, RectF&, MetafileFrameUnit, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar_inhdc_inconstrectf__inmetafileframeunit_inemftype_inconstwchar))   | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inconstwchar_inhdc_inconstrectf__inmetafileframeunit_inemftype_inconstwchar)) per la registrazione.<br/>                                                                                        |
+| [**Metafile (IStream \* , HDC, Rect&, MetafileFrameUnit, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream_inhdc_inconstrect__inmetafileframeunit_inemftype_inconstwchar))  | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream_inhdc_inconstrect__inmetafileframeunit_inemftype_inconstwchar)) per la registrazione in un'interfaccia [IStream](/windows/win32/api/objidl/nn-objidl-istream) .<br/> |
+| [**Metafile (IStream \* , HDC, RectF&, MetafileFrameUnit, EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream_inhdc_inconstrectf__inmetafileframeunit_inemftype_inconstwchar)) | Crea un oggetto [**metafile:: Metafile**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-metafile(inistream_inhdc_inconstrectf__inmetafileframeunit_inemftype_inconstwchar)) per la registrazione in un'interfaccia [IStream](/windows/win32/api/objidl/nn-objidl-istream) .<br/> |
+
+
+
+ 
+
+ 
