@@ -1,0 +1,81 @@
+- name: Windows Machine Learning
+  href: machine-learning-portal.md
+  items:
+    - name: Informazioni di riferimento su Windows Machine Learning
+      href: machine-learning-reference.md
+      items:
+        - name: Enumerazioni di Machine Learning di Windows
+          href: machine-learning-enumerations.md
+          items:
+            - name: WINML_BINDING_TYPE
+              href: /windows/desktop/api/winml/ne-winml-winml_binding_type
+            - name: WINML_FEATURE_TYPE
+              href: /windows/desktop/api/winml/ne-winml-winml_feature_type
+            - name: WINML_RUNTIME_TYPE
+              href: /windows/desktop/api/winml/ne-winml-winml_runtime_type
+            - name: WINML_TENSOR_DATA_TYPE
+              href: /windows/desktop/api/winml/ne-winml-winml_tensor_data_type
+        - name: Interfacce Machine Learning di Windows
+          href: machine-learning-interfaces.md
+          items:
+            - name: IWinMLEvaluationContext
+              href: /windows/desktop/api/winml/nn-winml-iwinmlevaluationcontext
+              items:
+                - name: Metodo BindValue
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlevaluationcontext-bindvalue
+                - name: Metodo GetValueByName
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlevaluationcontext-getvaluebyname
+                - name: Clear (metodo)
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlevaluationcontext-clear
+            - name: IWinMLModel
+              href: /windows/desktop/api/winml/nn-winml-iwinmlmodel
+              items:
+                - name: Metodo GetDescription
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlmodel-getdescription
+                - name: Metodo EnumerateMetadata
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlmodel-enumeratemetadata
+                - name: Metodo EnumerateModelInputs
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlmodel-enumeratemodelinputs
+                - name: Metodo EnumerateModelOutputs
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlmodel-enumeratemodeloutputs
+            - name: IWinMLRuntime
+              href: /windows/desktop/api/winml/nn-winml-iwinmlruntime
+              items:
+                - name: Metodo LoadModel
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlruntime-loadmodel
+                - name: Metodo CreateEvaluationContext
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlruntime-createevaluationcontext
+                - name: Metodo EvaluateModel
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlruntime-evaluatemodel
+            - name: IWinMLRuntimeFactory
+              href: /windows/desktop/api/winml/nn-winml-iwinmlruntimefactory
+              items:
+                - name: Metodo CreateRuntime
+                  href: /windows/desktop/api/winml/nf-winml-iwinmlruntimefactory-createruntime
+        - name: Strutture di Machine Learning Windows
+          href: machine-learning-structures.md
+          items:
+            - name: WINML_BINDING_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_binding_desc
+            - name: WINML_IMAGE_BINDING_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_image_binding_desc
+            - name: WINML_IMAGE_VARIABLE_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_image_variable_desc
+            - name: WINML_MAP_BINDING_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_map_binding_desc
+            - name: WINML_MAP_VARIABLE_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_map_variable_desc
+            - name: WINML_MODEL_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_model_desc
+            - name: WINML_RESOURCE_BINDING_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_resource_binding_desc
+            - name: WINML_SEQUENCE_BINDING_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_sequence_binding_desc
+            - name: WINML_SEQUENCE_VARIABLE_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_sequence_variable_desc
+            - name: WINML_TENSOR_BINDING_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_tensor_binding_desc
+            - name: WINML_TENSOR_VARIABLE_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_tensor_variable_desc
+            - name: WINML_VARIABLE_DESC
+              href: /windows/desktop/api/winml/ns-winml-winml_variable_desc
