@@ -1,0 +1,111 @@
+---
+title: dcl_uav_typed (SM5-ASM)
+description: Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da uno shader. | dcl_uav_typed (SM5-ASM)
+ms.assetid: F9F5583F-E3D0-447F-9227-BBB1B4E71934
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: b789714c7ec825620b73e387fa8a4dd73e1a590d
+ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "104995744"
+---
+# <a name="dcl_uav_typed-sm5---asm"></a>DCL \_ UAV \_ tipizzato (SM5-ASM)
+
+Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da uno shader.
+
+
+
+| \_ \_ \[ \_ GLC \] dstUAV, dimensione, tipo di DCL UAV |
+|--------------------------------------------------|
+
+
+
+ 
+
+
+
+| Elemento                                                                                           | Descrizione                                                                                       |
+|------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/> | \[nel \] UAV.<br/>                                                                        |
+| <span id="dimension"></span><span id="DIMENSION"></span>*dimensione*<br/>                 | \[in \] specifica il numero di dimensioni fornite dalle istruzioni che accedono al UAV.<br/> |
+| <span id="type"></span><span id="TYPE"></span>*tipo*<br/>                                | \[nel \] tipo di UAV.<br/>                                                            |
+
+
+
+ 
+
+## <a name="remarks"></a>Commenti
+
+*dstUAV* è un \# registro u dichiarato come riferimento a un UnorderedAccessView che deve essere associato allo slot UAV nell' \# API.
+
+La dimensione deve essere buffer, Texture1D, Texture1DArray, Texture2D, Texture2DArray o Texture3D. Questo indica il numero di dimensioni delle istruzioni che accedono al UAV che forniscono: 1 (Texture1D, buffer), 2 (Texture1DArray, Texture2D) o 3 (Texture2DArray, Texture3D).
+
+Il tipo è {UNORM, RUSSAr, UINT, SINT, FLOAT}. Le operazioni eseguite con l'u dichiarata \# devono essere compatibili con il tipo dichiarato qui e l'UAV associato allo slot \# deve avere lo stesso tipo.
+
+Il \_ flag GLC si basa su "globalmente coerente". L'assenza di \_ GLC significa che il UAV viene dichiarato solo come "gruppo coerente" nel compute shader o "coerente localmente" in una singola chiamata di pixel shader.
+
+Questa istruzione si applica alle fasi dello shader seguenti:
+
+
+
+| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+|--------|------|--------|----------|-------|---------|
+|        |      |        |          | X     | X       |
+
+
+
+ 
+
+Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+
+
+
+| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+|--------|------|--------|----------|-------|---------|
+| X      | X    | X      | X        | X     | X       |
+
+
+
+ 
+
+> [!Note]  
+> Questa istruzione non è supportata in Compute Shader 4. x.
+
+ 
+
+## <a name="minimum-shader-model"></a>Modello Shader minimo
+
+Questa istruzione è supportata nei modelli shader seguenti:
+
+
+
+| Modello di shader                                              | Supportato |
+|-----------------------------------------------------------|-----------|
+| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+
+
+
+ 
+
+## <a name="related-topics"></a>Argomenti correlati
+
+<dl> <dt>
+
+[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
