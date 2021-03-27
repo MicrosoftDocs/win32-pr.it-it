@@ -1,0 +1,39 @@
+---
+description: Una curva regolare è un set di pixel evidenziati in una visualizzazione raster (o punti in una pagina stampata) che definiscono il perimetro (o parte del perimetro) di una sezione conica.
+ms.assetid: b7a1b544-8b50-45ba-918c-17472c46c8b8
+title: Curve
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e694edeb535dbc7dbd4191a5a2b0b44556b810e2
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103880317"
+---
+# <a name="curves"></a><span data-ttu-id="e4acf-103">Curve</span><span class="sxs-lookup"><span data-stu-id="e4acf-103">Curves</span></span>
+
+<span data-ttu-id="e4acf-104">Una curva regolare è un set di pixel evidenziati in una visualizzazione raster (o punti in una pagina stampata) che definiscono il perimetro (o parte del perimetro) di una sezione conica.</span><span class="sxs-lookup"><span data-stu-id="e4acf-104">A regular curve is a set of highlighted pixels on a raster display (or dots on a printed page) that define the perimeter (or part of the perimeter) of a conic section.</span></span> <span data-ttu-id="e4acf-105">Una curva irregolare è un set di pixel che definiscono una curva che non si adatta al perimetro di una sezione conica.</span><span class="sxs-lookup"><span data-stu-id="e4acf-105">An irregular curve is a set of pixels that define a curve that does not fit the perimeter of a conic section.</span></span> <span data-ttu-id="e4acf-106">Il punto finale è escluso dalla curva così come è escluso da una riga.</span><span class="sxs-lookup"><span data-stu-id="e4acf-106">The ending point is excluded from a curve just as it is excluded from a line.</span></span>
+
+<span data-ttu-id="e4acf-107">Quando un'applicazione chiama una delle funzioni di disegno della curva, GDI suddivide la curva in una serie di segmenti di linea discreti di dimensioni molto ridotte.</span><span class="sxs-lookup"><span data-stu-id="e4acf-107">When an application calls one of the curve-drawing functions, GDI breaks the curve into a number of extremely small, discrete line segments.</span></span> <span data-ttu-id="e4acf-108">Dopo aver determinato gli endpoint (punto iniziale e punto finale) per ognuno di questi segmenti di linea, GDI determina quali pixel (o punti) definiscono ogni riga applicando il relativo DDA.</span><span class="sxs-lookup"><span data-stu-id="e4acf-108">After determining the endpoints (starting point and ending point) for each of these line segments, GDI determines which pixels (or dots) define each line by applying its DDA.</span></span>
+
+<span data-ttu-id="e4acf-109">Un'applicazione può creare un'ellisse o una parte di un'ellisse chiamando la funzione [**Arc**](/windows/desktop/api/Wingdi/nf-wingdi-arc) .</span><span class="sxs-lookup"><span data-stu-id="e4acf-109">An application can draw an ellipse or part of an ellipse by calling the [**Arc**](/windows/desktop/api/Wingdi/nf-wingdi-arc) function.</span></span> <span data-ttu-id="e4acf-110">Questa funzione disegna la curva all'interno del perimetro di un rettangolo invisibile denominato rettangolo di delimitazione.</span><span class="sxs-lookup"><span data-stu-id="e4acf-110">This function draws the curve within the perimeter of an invisible rectangle called a bounding rectangle.</span></span> <span data-ttu-id="e4acf-111">La dimensione dell'ellisse è specificata da due radiali invisibili che si estendono dal centro del rettangolo ai lati del rettangolo.</span><span class="sxs-lookup"><span data-stu-id="e4acf-111">The size of the ellipse is specified by two invisible radials extending from the center of the rectangle to the sides of the rectangle.</span></span> <span data-ttu-id="e4acf-112">Nella figura seguente viene illustrato un arco (parte di un'ellisse) tracciato utilizzando la funzione **Arc** .</span><span class="sxs-lookup"><span data-stu-id="e4acf-112">The following illustration shows an arc (part of an ellipse) drawn by using the **Arc** function.</span></span>
+
+![diagramma che mostra un arco che rappresenta tre trimestri di un cerchio completo](images/cslcv-03.png)
+
+<span data-ttu-id="e4acf-114">Quando si chiama la funzione [**Arc**](/windows/desktop/api/Wingdi/nf-wingdi-arc) , un'applicazione specifica le coordinate del rettangolo di delimitazione e delle radiali.</span><span class="sxs-lookup"><span data-stu-id="e4acf-114">When calling the [**Arc**](/windows/desktop/api/Wingdi/nf-wingdi-arc) function, an application specifies the coordinates of the bounding rectangle and radials.</span></span> <span data-ttu-id="e4acf-115">L'illustrazione precedente Mostra il rettangolo e le radiali con linee tratteggiate mentre l'arco effettivo è stato disegnato usando una linea continua.</span><span class="sxs-lookup"><span data-stu-id="e4acf-115">The preceding illustration shows the rectangle and radials with dashed lines while the actual arc was drawn using a solid line.</span></span>
+
+<span data-ttu-id="e4acf-116">Quando si disegna l'arco di un altro oggetto, l'applicazione può chiamare le funzioni [**SetArcDirection**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection) e [**GetArcDirection**](/windows/desktop/api/Wingdi/nf-wingdi-getarcdirection) per controllare la direzione (in senso orario o antiorario) in cui viene disegnato l'oggetto.</span><span class="sxs-lookup"><span data-stu-id="e4acf-116">When drawing the arc of another object, the application can call the [**SetArcDirection**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection) and [**GetArcDirection**](/windows/desktop/api/Wingdi/nf-wingdi-getarcdirection) functions to control the direction (clockwise or counterclockwise) in which the object is drawn.</span></span> <span data-ttu-id="e4acf-117">La direzione predefinita per disegnare archi e altri oggetti è in senso antiorario.</span><span class="sxs-lookup"><span data-stu-id="e4acf-117">The default direction for drawing arcs and other objects is counterclockwise.</span></span>
+
+<span data-ttu-id="e4acf-118">Oltre a disegnare ellissi o parti di ellissi, le applicazioni possono disegnare curve irregolari denominate curve di Bézier.</span><span class="sxs-lookup"><span data-stu-id="e4acf-118">In addition to drawing ellipses or parts of ellipses, applications can draw irregular curves called Bézier curves.</span></span> <span data-ttu-id="e4acf-119">Una *curva di Bézier* è una curva irregolare la cui curvatura è definita da quattro punti di controllo (P1, P2, P3 e P4).</span><span class="sxs-lookup"><span data-stu-id="e4acf-119">A *Bézier curve* is an irregular curve whose curvature is defined by four control points (p1, p2, p3, and p4).</span></span> <span data-ttu-id="e4acf-120">I punti di controllo P1 e P4 definiscono i punti iniziale e finale della curva e i punti di controllo P2 e P3 definiscono la forma della curva contrassegnando i punti in cui la curva inverte l'orientamento, come illustrato nel diagramma seguente.</span><span class="sxs-lookup"><span data-stu-id="e4acf-120">The control points p1 and p4 define the starting and ending points of the curve, and the control points p2 and p3 define the shape of the curve by marking points where the curve reverses orientation, as shown in the following diagram.</span></span>
+
+![illustrazione che mostra due curve di Bézier, ognuna tra un punto iniziale e un punto finale e l'altra con due punti di controllo](images/cslcv-04.png)
+
+<span data-ttu-id="e4acf-122">Un'applicazione può creare curve irregolari chiamando la funzione [**polibezier**](/windows/desktop/api/Wingdi/nf-wingdi-polybezier) , fornendo i punti di controllo appropriati.</span><span class="sxs-lookup"><span data-stu-id="e4acf-122">An application can draw irregular curves by calling the [**PolyBezier**](/windows/desktop/api/Wingdi/nf-wingdi-polybezier) function, supplying the appropriate control points.</span></span>
+
+ 
+
+ 
+
+
+
