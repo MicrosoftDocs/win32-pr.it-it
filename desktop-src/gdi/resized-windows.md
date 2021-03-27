@@ -1,0 +1,22 @@
+---
+description: Il sistema modifica la dimensione di una finestra quando l'utente sceglie i comandi del menu finestra, ad esempio dimensioni e Ingrandisci, o quando l'applicazione chiama funzioni, ad esempio la funzione SetWindowPos.
+ms.assetid: 6f997cba-e4c9-4e27-8309-42b9892ec620
+title: Finestre ridimensionate
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 88f740191f8b85038f17a687ebc547305f882383
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103880270"
+---
+# <a name="resized-windows"></a><span data-ttu-id="cd6b2-103">Finestre ridimensionate</span><span class="sxs-lookup"><span data-stu-id="cd6b2-103">Resized Windows</span></span>
+
+<span data-ttu-id="cd6b2-104">Il sistema modifica la dimensione di una finestra quando l'utente sceglie i comandi del menu finestra, ad esempio dimensioni e Ingrandisci, o quando l'applicazione chiama funzioni, ad esempio la funzione [**SetWindowPos**](/windows/win32/api/winuser/nf-winuser-setwindowpos) .</span><span class="sxs-lookup"><span data-stu-id="cd6b2-104">The system changes the size of a window when the user chooses window menu commands, such as Size and Maximize, or when the application calls functions, such as the [**SetWindowPos**](/windows/win32/api/winuser/nf-winuser-setwindowpos) function.</span></span> <span data-ttu-id="cd6b2-105">Quando le dimensioni di una finestra cambiano, il sistema presuppone che il contenuto della parte esposta in precedenza della finestra non sia interessato e non debba essere ridisegnato.</span><span class="sxs-lookup"><span data-stu-id="cd6b2-105">When a window changes size, the system assumes that the contents of the previously exposed portion of the window are not affected and need not be redrawn.</span></span> <span data-ttu-id="cd6b2-106">Il sistema invalida solo la parte appena esposta della finestra, che consente di risparmiare tempo quando il messaggio di [**\_ disegno WM**](wm-paint.md) finale viene elaborato dall'applicazione.</span><span class="sxs-lookup"><span data-stu-id="cd6b2-106">The system invalidates only the newly exposed portion of the window, which saves time when the eventual [**WM\_PAINT**](wm-paint.md) message is processed by the application.</span></span> <span data-ttu-id="cd6b2-107">In questo caso, **la \_ vernice WM** non viene generata quando viene ridotta la dimensione della finestra.</span><span class="sxs-lookup"><span data-stu-id="cd6b2-107">In this case, **WM\_PAINT** is not generated when the size of the window is reduced.</span></span>
+
+<span data-ttu-id="cd6b2-108">Per alcune finestre, qualsiasi modifica apportata alle dimensioni della finestra invalida il contenuto.</span><span class="sxs-lookup"><span data-stu-id="cd6b2-108">For some windows, any change to the size of the window invalidates the contents.</span></span> <span data-ttu-id="cd6b2-109">Ad esempio, un'applicazione Clock che adatta la faccia del clock a adattarla perfettamente all'interno della finestra deve ricreare il clock ogni volta che la finestra cambia dimensione.</span><span class="sxs-lookup"><span data-stu-id="cd6b2-109">For example, a clock application that adapts the face of the clock to fit neatly within its window must redraw the clock whenever the window changes size.</span></span> <span data-ttu-id="cd6b2-110">Per forzare il sistema a invalidare l'intera area client della finestra quando viene apportata una modifica verticale, orizzontale o verticale e orizzontale, un'applicazione deve specificare lo \_ stile cs VREDRAW o cs \_ HREDRAW, o entrambi, durante la registrazione della classe Window.</span><span class="sxs-lookup"><span data-stu-id="cd6b2-110">To force the system to invalidate the entire client area of the window when a vertical, horizontal, or both vertical and horizontal change is made, an application must specify the CS\_VREDRAW or CS\_HREDRAW style, or both, when registering the window class.</span></span> <span data-ttu-id="cd6b2-111">Qualsiasi finestra appartenente a una classe di finestra con questi stili viene invalidata ogni volta che l'utente o l'applicazione modifica la dimensione della finestra.</span><span class="sxs-lookup"><span data-stu-id="cd6b2-111">Any window belonging to a window class having these styles is invalidated each time the user or the application changes the size of the window.</span></span>
+
+ 
+
+ 
