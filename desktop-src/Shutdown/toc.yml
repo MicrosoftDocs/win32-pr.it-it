@@ -1,0 +1,60 @@
+- name: Arresto del sistema
+  href: system-shutdown.md
+  items:
+    - name: Modifiche di arresto per Windows Vista
+      href: shutdown-changes-for-windows-vista.md
+    - name: Informazioni sull'arresto del sistema
+      href: about-system-shutdown.md
+      items:
+        - name: Disconnessione
+          href: logging-off.md
+        - name: Chiusura in corso
+          href: shutting-down.md
+        - name: Individuazione evento di arresto
+          href: shutdown-event-tracker.md
+    - name: Utilizzo dell'arresto del sistema
+      href: using-system-shutdown.md
+      items:
+        - name: Come arrestare il sistema
+          href: how-to-shut-down-the-system.md
+        - name: Come disconnettere l'utente corrente
+          href: how-to-log-off-the-current-user.md
+        - name: Come bloccare la workstation
+          href: how-to-lock-the-workstation.md
+        - name: Visualizzazione della finestra di dialogo Shutdown
+          href: displaying-the-shutdown-dialog-box.md
+    - name: Riferimento per l'arresto del sistema
+      href: system-shutdown-reference.md
+      items:
+        - name: Funzioni di arresto del sistema
+          href: system-shutdown-functions.md
+          items:
+            - name: AbortSystemShutdown
+              href: /windows/desktop/api/Winreg/nf-winreg-abortsystemshutdowna
+            - name: ExitWindows
+              href: /windows/desktop/api/Winuser/nf-winuser-exitwindows
+            - name: ExitWindowsEx
+              href: /windows/desktop/api/Winuser/nf-winuser-exitwindowsex
+            - name: InitiateShutdown
+              href: /windows/desktop/api/Winreg/nf-winreg-initiateshutdowna
+            - name: InitiateSystemShutdown
+              href: /windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna
+            - name: InitiateSystemShutdownEx
+              href: /windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdownexa
+            - name: LockWorkStation
+              href: /windows/desktop/api/Winuser/nf-winuser-lockworkstation
+            - name: ShutdownBlockReasonCreate
+              href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasoncreate
+            - name: ShutdownBlockReasonDestroy
+              href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasondestroy
+            - name: ShutdownBlockReasonQuery
+              href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasonquery
+        - name: Messaggi di chiusura del sistema
+          href: system-shutdown-messages.md
+          items:
+            - name: WM_ENDSESSION
+              href: wm-endsession.md
+            - name: WM_QUERYENDSESSION
+              href: wm-queryendsession.md
+        - name: Codici motivo dell'arresto del sistema
+          href: system-shutdown-reason-codes.md
