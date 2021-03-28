@@ -1,0 +1,211 @@
+- name: Gestione elenco reti
+  href: portal.md
+  items:
+    - name: Informazioni sull'API di Network List Manager
+      href: about-the-network-list-manager-api.md
+      items:
+        - name: Ruolo di Network List Manager
+          href: the-role-of-network-list-manager.md
+        - name: Architettura di Network List Manager
+          href: network-list-manager-architecture.md
+    - name: Informazioni di riferimento sulle API di Network List Manager
+      href: network-list-manager-api-reference.md
+      items:
+        - name: Interfacce NLM
+          href: nlm-interfaces.md
+          items:
+            - name: IEnumNetworkConnections
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-ienumnetworkconnections
+              items:
+                - name: Metodo get__NewEnum
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworkconnections-get__newenum
+                - name: Metodo Clone
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworkconnections-clone
+                - name: Metodo Next
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworkconnections-next
+                - name: Metodo Reset
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworkconnections-reset
+                - name: Metodo Skip
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworkconnections-skip
+            - name: IEnumNetworks
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-ienumnetworks
+              items:
+                - name: Metodo get__NewEnum
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworks-get__newenum
+                - name: Metodo Clone
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworks-clone
+                - name: Metodo Next
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworks-next
+                - name: Metodo Reset
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworks-reset
+                - name: Metodo Skip
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-ienumnetworks-skip
+            - name: Di INet
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetwork
+              items:
+                - name: Metodo get_IsConnected
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-get_isconnected
+                - name: Metodo get_IsConnectedToInternet
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-get_isconnectedtointernet
+                - name: GetCategory (metodo)
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-getcategory
+                - name: Metodo getconnectivity
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-getconnectivity
+                - name: Metodo GetDescription
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-getdescription
+                - name: Metodo GetDomainType
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-getdomaintype
+                - name: Metodo GetName
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-getname
+                - name: Metodo GetNetworkConnections
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-getnetworkconnections
+                - name: Metodo GetNetworkId
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-getnetworkid
+                - name: Metodo GetTimeCreatedAndConnected
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-gettimecreatedandconnected
+                - name: Metodo secategory
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-setcategory
+                - name: Metodo sedescription
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-setdescription
+                - name: Nome metodo
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetwork-setname
+            - name: INetworkConnection
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkconnection
+              items:
+                - name: Metodo get_IsConnected
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnection-get_isconnected
+                - name: Metodo get_IsConnectedToInternet
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnection-get_isconnectedtointernet
+                - name: Metodo GetAdapterId
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnection-getadapterid
+                - name: Metodo GetConnectionId
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnection-getconnectionid
+                - name: Metodo getconnectivity
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnection-getconnectivity
+                - name: Metodo GetDomainType
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnection-getdomaintype
+                - name: Metodo getnetwork
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnection-getnetwork
+            - name: INetworkConnectionCost
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkconnectioncost
+              items:
+                - name: Getcost (metodo)
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnectioncost-getcost
+                - name: Metodo GetDataPlanStatus
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnectioncost-getdataplanstatus
+            - name: INetworkConnectionCostEvents
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkconnectioncostevents
+              items:
+                - name: Metodo ConnectionCostChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnectioncostevents-connectioncostchanged
+                - name: Metodo ConnectionDataPlanStatusChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnectioncostevents-connectiondataplanstatuschanged
+            - name: INetworkConnectionEvents
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkconnectionevents
+              items:
+                - name: Metodo NetworkConnectionConnectivityChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnectionevents-networkconnectionconnectivitychanged
+                - name: Metodo NetworkConnectionPropertyChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkconnectionevents-networkconnectionpropertychanged
+            - name: INetworkCostManager
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkcostmanager
+              items:
+                - name: Getcost (metodo)
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkcostmanager-getcost
+                - name: Metodo GetDataPlanStatus
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkcostmanager-getdataplanstatus
+                - name: Metodo SetDestinationAddresses
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkcostmanager-setdestinationaddresses
+            - name: INetworkCostManagerEvents
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkcostmanagerevents
+              items:
+                - name: Metodo CostChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkcostmanagerevents-costchanged
+                - name: Metodo DataPlanStatusChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkcostmanagerevents-dataplanstatuschanged
+            - name: INetworkEvents
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkevents
+              items:
+                - name: Metodo NetworkAdded
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkevents-networkadded
+                - name: Metodo NetworkConnectivityChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkevents-networkconnectivitychanged
+                - name: Metodo NetworkDeleted
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkevents-networkdeleted
+                - name: Metodo NetworkPropertyChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworkevents-networkpropertychanged
+            - name: INetworkListManager
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworklistmanager
+              items:
+                - name: Metodo ClearSimulatedProfileInfo
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-clearsimulatedprofileinfo
+                - name: Metodo get_IsConnected
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-get_isconnected
+                - name: Metodo get_IsConnectedToInternet
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-get_isconnectedtointernet
+                - name: Metodo getconnectivity
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-getconnectivity
+                - name: Metodo getnetwork
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-getnetwork
+                - name: Metodo GetNetworkConnection
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-getnetworkconnection
+                - name: Metodo GetNetworkConnections
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-getnetworkconnections
+                - name: Getnetworks (metodo)
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-getnetworks
+                - name: Metodo SetSimulatedProfileInfo
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanager-setsimulatedprofileinfo
+            - name: INetworkListManagerEvents
+              href: /windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworklistmanagerevents
+              items:
+                - name: Metodo ConnectivityChanged
+                  href: /windows/desktop/api/Netlistmgr/nf-netlistmgr-inetworklistmanagerevents-connectivitychanged
+        - name: Strutture NLM
+          href: nlm-structures.md
+          items:
+            - name: NLM_SIMULATED_PROFILE_INFO
+              href: /windows/desktop/api/Netlistmgr/ns-netlistmgr-nlm_simulated_profile_info
+            - name: NLM_SOCKADDR
+              href: /windows/desktop/api/Netlistmgr/ns-netlistmgr-nlm_sockaddr
+            - name: NLM_USAGE_DATA
+              href: /windows/desktop/api/Netlistmgr/ns-netlistmgr-nlm_usage_data
+            - name: NLM_DATAPLAN_STATUS
+              href: /windows/desktop/api/Netlistmgr/ns-netlistmgr-nlm_dataplan_status
+        - name: Enumerazioni di NLM
+          href: nlm-enumerations.md
+          items:
+            - name: NLM_INTERNET_CONNECTIVITY
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_internet_connectivity
+            - name: NLM_NETWORK_CLASS
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_network_class
+            - name: NLM_CONNECTION_COST
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_connection_cost
+            - name: NLM_CONNECTION_PROPERTY_CHANGE
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_connection_property_change
+            - name: NLM_CONNECTIVITY
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_connectivity
+            - name: NLM_DOMAIN_TYPE
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_domain_type
+            - name: NLM_ENUM_NETWORK
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_enum_network
+            - name: NLM_NETWORK_CATEGORY
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_network_category
+            - name: NLM_NETWORK_PROPERTY_CHANGE
+              href: /windows/desktop/api/Netlistmgr/ne-netlistmgr-nlm_network_property_change
+    - name: Riferimento all'API di supporto per il routing della connessione su richiesta
+      href: on-demand-connection-routing-helper-api.md
+      items:
+        - name: NET_INTERFACE_CONTEXT
+          href: /windows/win32/api/OnDemandConnRouteHelper/ns-ondemandconnroutehelper-net_interface_context
+        - name: NET_INTERFACE_CONTEXT_TABLE
+          href: /windows/win32/api/OnDemandConnRouteHelper/ns-ondemandconnroutehelper-net_interface_context_table
+        - name: GetInterfaceContextTableForHostName
+          href: /windows/desktop/api/OnDemandConnRouteHelper/nf-ondemandconnroutehelper-getinterfacecontexttableforhostname
+        - name: FreeInterfaceContextTable
+          href: /windows/desktop/api/OnDemandConnRouteHelper/nf-ondemandconnroutehelper-freeinterfacecontexttable
+        - name: OnDemandRegisterNotification
+          href: /windows/desktop/api/OnDemandConnRouteHelper/nf-ondemandconnroutehelper-ondemandregisternotification
+        - name: OnDemandUnregisterNotification
+          href: /windows/desktop/api/OnDemandConnRouteHelper/nf-ondemandconnroutehelper-ondemandunregisternotification
+        - name: OnDemandGetRoutingHint
+          href: /windows/desktop/api/OnDemandConnRouteHelper/nf-ondemandconnroutehelper-ondemandgetroutinghint

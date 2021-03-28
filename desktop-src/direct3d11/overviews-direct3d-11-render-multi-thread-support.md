@@ -1,0 +1,52 @@
+---
+title: Come verificare il supporto dei driver
+description: In questo argomento viene illustrato come determinare se le funzionalità di multithreading, inclusi gli elenchi di comandi e la creazione di risorse, sono supportate per l'accelerazione hardware.
+ms.assetid: f577357c-c2e5-4e58-9870-2e995bdc6782
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: ae42bbb3eedb76d049479839d497a79db81b5697
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104992776"
+---
+# <a name="how-to-check-for-driver-support"></a><span data-ttu-id="5b515-103">Procedura: verificare il supporto dei driver</span><span class="sxs-lookup"><span data-stu-id="5b515-103">How To: Check for Driver Support</span></span>
+
+<span data-ttu-id="5b515-104">In questo argomento viene illustrato come determinare se le funzionalità di multithreading, inclusi gli [elenchi di comandi](overviews-direct3d-11-render-multi-thread-command-list.md)e la creazione di [risorse](overviews-direct3d-11-render-multi-thread-intro.md) , sono supportate per l'accelerazione hardware.</span><span class="sxs-lookup"><span data-stu-id="5b515-104">This topic shows how to determine whether multithreading features (including [resource creation](overviews-direct3d-11-render-multi-thread-intro.md) and [command lists](overviews-direct3d-11-render-multi-thread-command-list.md)) are supported for hardware acceleration.</span></span>
+
+<span data-ttu-id="5b515-105">È consigliabile per le applicazioni verificare il supporto hardware della grafica del multithreading.</span><span class="sxs-lookup"><span data-stu-id="5b515-105">We recommend for applications to check for graphics hardware support of multithreading.</span></span> <span data-ttu-id="5b515-106">Se il driver e l'hardware grafico non supportano la creazione di oggetti multithread, le prestazioni possono essere limitate nei modi seguenti:</span><span class="sxs-lookup"><span data-stu-id="5b515-106">If the driver and graphics hardware do not support multithreaded object creation, performance can be limited in the following ways:</span></span>
+
+-   <span data-ttu-id="5b515-107">La creazione di più oggetti (anche di tipi diversi) allo stesso tempo può essere limitata.</span><span class="sxs-lookup"><span data-stu-id="5b515-107">Creating multiple objects (even of different types) at the same time might be limited.</span></span>
+-   <span data-ttu-id="5b515-108">La creazione di un oggetto durante il rendering dei comandi grafici tramite un [contesto immediato](overviews-direct3d-11-render-multi-thread-render.md) potrebbe essere limitata.</span><span class="sxs-lookup"><span data-stu-id="5b515-108">Creating an object while rendering graphics commands by using an [immediate context](overviews-direct3d-11-render-multi-thread-render.md) might be limited.</span></span> <span data-ttu-id="5b515-109">Se, ad esempio, l'hardware non supporta il multithreading, un'applicazione deve evitare di creare in un thread in background un oggetto che richiede un tempo molto lungo per la creazione.</span><span class="sxs-lookup"><span data-stu-id="5b515-109">For example, if hardware does not support multithreading, an application should avoid creating on a background thread an object that requires a very long time to create.</span></span> <span data-ttu-id="5b515-110">Un'operazione di creazione che richiede molto tempo può bloccare il rendering del contesto immediato e aumentare il rischio di una balbuzie della frequenza dei fotogrammi visivi.</span><span class="sxs-lookup"><span data-stu-id="5b515-110">A create operation that takes very long can block immediate context rendering and increase the risk of a visual frame rate stutter.</span></span>
+
+<span data-ttu-id="5b515-111">Il runtime supporta il multithreading e gli elenchi di comandi indipendentemente dal supporto hardware e driver; Se non è disponibile alcun supporto per driver e hardware per gli elenchi multithread o di comando, la funzionalità verrà emulata dal runtime.</span><span class="sxs-lookup"><span data-stu-id="5b515-111">The runtime supports multithreading and command lists regardless of driver and hardware support; if there is no driver and hardware support for either multithreads or command lists, the runtime will emulate the functionality.</span></span> <span data-ttu-id="5b515-112">Per altre informazioni sul multithreading, vedere [Introduzione al multithreading in Direct3D 11](overviews-direct3d-11-render-multi-thread-intro.md).</span><span class="sxs-lookup"><span data-stu-id="5b515-112">For more information about multithreading, see [Introduction to Multithreading in Direct3D 11](overviews-direct3d-11-render-multi-thread-intro.md).</span></span>
+
+<span data-ttu-id="5b515-113">**Per verificare il supporto dei driver per il multithreading:**</span><span class="sxs-lookup"><span data-stu-id="5b515-113">**To check for driver support for multithreading:**</span></span>
+
+1.  <span data-ttu-id="5b515-114">Inizializzare un oggetto interfaccia [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) .</span><span class="sxs-lookup"><span data-stu-id="5b515-114">Initialize an [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) interface object.</span></span> <span data-ttu-id="5b515-115">Per impostazione predefinita, il multithreading è abilitato.</span><span class="sxs-lookup"><span data-stu-id="5b515-115">By default, multithreading is enabled.</span></span>
+2.  <span data-ttu-id="5b515-116">Chiamare [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport).</span><span class="sxs-lookup"><span data-stu-id="5b515-116">Call [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport).</span></span> <span data-ttu-id="5b515-117">Passare il valore di **\_ \_ threading della funzionalità d3d11** al parametro *feature* , passare la struttura di [**\_ \_ \_ Threading dei dati**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_threading) della funzionalità d3d11 al parametro *pFeatureSupportData* e passare le dimensioni della struttura di **\_ \_ \_ Threading dei dati della funzionalità d3d11** al parametro *FeatureSupportDataSize* .</span><span class="sxs-lookup"><span data-stu-id="5b515-117">Pass the **D3D11\_FEATURE\_THREADING** value to the *Feature* parameter, pass the [**D3D11\_FEATURE\_DATA\_THREADING**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_threading) structure to the *pFeatureSupportData* parameter, and pass the size of the **D3D11\_FEATURE\_DATA\_THREADING** structure to the *FeatureSupportDataSize* parameter.</span></span>
+3.  <span data-ttu-id="5b515-118">Se il metodo [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) ha esito positivo, la struttura di [**\_ \_ \_ Threading dei dati della funzionalità d3d11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_threading) passata nel passaggio precedente verrà inizializzata con informazioni sul supporto del multithreading.</span><span class="sxs-lookup"><span data-stu-id="5b515-118">If the [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) method succeeds, the [**D3D11\_FEATURE\_DATA\_THREADING**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_threading) structure that you passed in the previous step will be initialized with information about multithreading support.</span></span>
+    -   <span data-ttu-id="5b515-119">Se **DriverConcurrentCreates** è **true**, un driver può creare più di una risorsa contemporaneamente (simultaneamente) su thread diversi.</span><span class="sxs-lookup"><span data-stu-id="5b515-119">If **DriverConcurrentCreates** is **TRUE**, a driver can create more than one resource at the same time (concurrently) on different threads.</span></span>
+
+        <span data-ttu-id="5b515-120">Se **DriverCommandLists** è **true**, il driver supporta gli elenchi di comandi.</span><span class="sxs-lookup"><span data-stu-id="5b515-120">If **DriverCommandLists** is **TRUE**, the driver supports command lists.</span></span> <span data-ttu-id="5b515-121">Ovvero, i comandi di rendering eseguiti da un contesto immediato possono essere simultanei con la creazione di oggetti su thread distinti con basso rischio di una balbuzie della frequenza dei fotogrammi.</span><span class="sxs-lookup"><span data-stu-id="5b515-121">That is, rendering commands issued by an immediate context can be concurrent with object creation on separate threads with low risk of a frame rate stutter.</span></span>
+
+    -   <span data-ttu-id="5b515-122">Se **DriverConcurrentCreates** è **false**, un driver non supporta la creazione simultanea, il che significa che la quantità di concorrenza possibile è estremamente limitata.</span><span class="sxs-lookup"><span data-stu-id="5b515-122">If **DriverConcurrentCreates** is **FALSE**, a driver does not support concurrent creation, which means the amount of concurrency possible is extremely limited.</span></span> <span data-ttu-id="5b515-123">L'hardware grafico non è in grado di creare oggetti di tipi diversi in thread diversi simultanueously.</span><span class="sxs-lookup"><span data-stu-id="5b515-123">The graphics hardware cannot create objects of different types on different threads simultanueously.</span></span> <span data-ttu-id="5b515-124">Inoltre, l'hardware grafico non può usare un contesto immediato per emettere comandi di rendering mentre l'hardware grafico tenta di creare una risorsa in un altro thread.</span><span class="sxs-lookup"><span data-stu-id="5b515-124">Additionally, the graphics hardware cannot use an immediate context to issue render commands while the graphics hardware attempts to create a resource on another thread.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="5b515-125">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="5b515-125">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="5b515-126">Come usare Direct3D 11</span><span class="sxs-lookup"><span data-stu-id="5b515-126">How to Use Direct3D 11</span></span>](how-to-use-direct3d-11.md)
+</dt> <dt>
+
+[<span data-ttu-id="5b515-127">Multithreading</span><span class="sxs-lookup"><span data-stu-id="5b515-127">Multithreading</span></span>](overviews-direct3d-11-render-multi-thread.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
