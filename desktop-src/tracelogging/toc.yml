@@ -1,0 +1,142 @@
+- name: TraceLogging
+  href: trace-logging-portal.md
+  items:
+    - name: Informazioni su TraceLogging
+      href: trace-logging-about.md
+    - name: Uso di TraceLogging
+      href: tracelogging-using-tracelogging.md
+      items:
+        - name: Avvio rapido C/C++ TraceLogging
+          href: tracelogging-native-quick-start.md
+        - name: Avvio rapido gestiti TraceLogging
+          href: tracelogging-managed-quick-start.md
+        - name: Registrare e visualizzare gli eventi TraceLogging
+          href: tracelogging-record-and-display-tracelogging-events.md
+        - name: Esempi di Tracelogging C/C++
+          href: tracelogging-c-cpp-tracelogging-examples.md
+        - name: Esempi di .NET Tracelogging
+          href: tracelogging-net-examples.md
+        - name: Esempio di registrazione piattaforma UWP (Universal Windows Platform)
+          href: universal-windows-platform-logging-examples.md
+    - name: Riferimento a TraceLogging
+      href: trace-logging-reference.md
+      items:
+        - name: Classi TraceLogging
+          href: trace-logging-classes.md
+          items:
+            - name: TraceLoggingActivity
+              href: /windows/win32/api/traceloggingactivity/nl-traceloggingactivity-traceloggingactivity
+              items:
+                - name: Costruttore TraceLoggingActivity
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-traceloggingactivity(traceloggingactivity__)
+                - name: Costruttore TraceLoggingActivity
+                  href: /windows/desktop/api//rrascfg/nn-rrascfg-ieapproviderconfig
+                - name: Distruttore TraceLoggingActivity
+                  href: /previous-versions/windows/desktop/legacy/dn975135(v=vs.85)
+                - name: Costante Level
+                  href: level-constant.md
+                - name: Constant (parola chiave)
+                  href: keyword-constant.md
+                - name: Id (metodo)
+                  href: /previous-versions/windows/desktop/legacy/dn975132(v=vs.85)
+                - name: IsStarted (metodo)
+                  href: /previous-versions/windows/desktop/legacy/dn975133(v=vs.85)
+                - name: Metodo del provider
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-provider
+                - name: Metodo SetRelatedActivity
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-setrelatedactivity
+                - name: Metodo SetRelatedActivityId
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-setrelatedactivityid(constguid)
+            - name: TraceLoggingThreadActivity
+              href: /windows/win32/api/traceloggingactivity/nl-traceloggingactivity-traceloggingthreadactivity
+              items:
+                - name: Costruttore TraceLoggingThreadActivity
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingthreadactivity-traceloggingthreadactivity(traceloggingthreadactivity__)
+                - name: Costruttore TraceLoggingThreadActivity
+                  href: /previous-versions/windows/desktop/legacy/dn975141(v=vs.85)
+                - name: Distruttore TraceLoggingThreadActivity
+                  href: /previous-versions/windows/desktop/legacy/dn975140(v=vs.85)
+                - name: Constant (parola chiave)
+                  href: keyword-constant.md
+                - name: Costante Level
+                  href: level-constant.md
+                - name: Id (metodo)
+                  href: /previous-versions/windows/desktop/legacy/dn975137(v=vs.85)
+                - name: IsStarted (metodo)
+                  href: /previous-versions/windows/desktop/legacy/dn975138(v=vs.85)
+                - name: Metodo del provider
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingthreadactivity-provider
+            - name: TraceLoggingThreadActivityIdSetter
+              href: /windows/desktop/api/traceloggingactivity/nl-traceloggingactivity-traceloggingthreadactivityidsetter
+              items:
+                - name: Costruttore TraceLoggingThreadActivityIdSetter
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingthreadactivityidsetter-traceloggingthreadactivityidsetter(constguid)
+                - name: Costruttore TraceLoggingThreadActivityIdSetter
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingthreadactivityidsetter-traceloggingthreadactivityidsetter(constguid)
+                - name: Distruttore TraceLoggingThreadActivityIdSetter
+                  href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingthreadactivityidsetter-~traceloggingthreadactivityidsetter
+        - name: Funzioni TraceLogging
+          href: trace-logging-functions.md
+          items:
+            - name: TraceLoggingProviderEnabled
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingproviderenabled
+            - name: TraceLoggingProviderId
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingproviderid
+            - name: TraceLoggingRegister
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingregister
+            - name: TraceLoggingRegisterEx
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingregisterex
+            - name: TraceLoggingSetInformation
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingsetinformation
+            - name: TraceLoggingUnregister
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingunregister
+        - name: Macro TraceLogging
+          href: trace-logging-macros.md
+          items:
+            - name: Macro wrapper TraceLogging
+              href: tracelogging-wrapper-macros.md
+              items:
+                - name: TraceLoggingBinary
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingbinary
+                - name: TraceLoggingChannel
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingchannel
+                - name: TraceLoggingCustomAttribute
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingcustomattribute
+                - name: TraceLoggingDescription
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingdescription
+                - name: TraceLoggingEventTag
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingeventtag
+                - name: TraceLoggingKeyword
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingkeyword
+                - name: TraceLoggingLevel
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-tracelogginglevel
+                - name: TraceLoggingOpcode
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingopcode
+                - name: TraceLoggingOptionGroup
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingoptiongroup
+                - name: TraceLoggingSocketAddress
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingsocketaddress
+                - name: TraceLoggingStruct
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingstruct
+                - name: TraceLoggingValue
+                  href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingvalue
+            - name: TRACELOGGING_DECLARE_PROVIDER
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-tracelogging_declare_provider
+            - name: TRACELOGGING_DEFINE_PROVIDER
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-tracelogging_define_provider
+            - name: TRACELOGGING_DEFINE_PROVIDER_STORAGE
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-tracelogging_define_provider_storage
+            - name: TraceLoggingCustom
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingcustom
+            - name: TraceLoggingFunction
+              href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingfunction
+            - name: TraceLoggingWrite
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingwrite
+            - name: TraceLoggingWriteActivity
+              href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingwriteactivity
+            - name: TraceLoggingWriteStart
+              href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingwritestart
+            - name: TraceLoggingWriteStop
+              href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingwritestop
+            - name: TraceLoggingWriteTagged
+              href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingwritetagged
