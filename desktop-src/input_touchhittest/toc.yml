@@ -1,0 +1,31 @@
+- name: Hit testing tocco
+  href: touch-hit-testing-portal.md
+  items:
+    - name: Riferimento all'hit testing tocco
+      href: touchhittest-reference.md
+      items:
+        - name: Costanti
+          href: constants.md
+          items:
+            - name: Comportamenti di hit testing tocco
+              href: hit-testing-behaviors.md
+            - name: Punteggi hit testing tocco
+              href: hit-testing-scores.md
+        - name: Funzioni
+          href: functions.md
+          items:
+            - name: EvaluateProximityToPolygon
+              href: /windows/win32/api/winuser/nf-winuser-evaluateproximitytopolygon
+            - name: EvaluateProximityToRect
+              href: /windows/win32/api/winuser/nf-winuser-evaluateproximitytorect
+            - name: PackTouchHitTestingProximityEvaluation
+              href: /windows/win32/api/winuser/nf-winuser-packtouchhittestingproximityevaluation
+            - name: RegisterTouchHitTestingWindow
+              href: /windows/win32/api/winuser/nf-winuser-registertouchhittestingwindow
+        - name: Strutture
+          href: structures.md
+          items:
+            - name: TOUCH_HIT_TESTING_INPUT
+              href: /windows/win32/api/winuser/ns-winuser-touch_hit_testing_input
+            - name: TOUCH_HIT_TESTING_PROXIMITY_EVALUATION
+              href: /windows/win32/api/winuser/ns-winuser-touch_hit_testing_proximity_evaluation
