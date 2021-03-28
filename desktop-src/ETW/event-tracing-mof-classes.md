@@ -1,0 +1,150 @@
+---
+description: Le classi sono definite nello \\ \\ spazio dei nomi WMI radice.
+ms.assetid: b86c3863-b92c-4f6c-b953-3e0638bc915e
+title: Classi MOF di traccia eventi
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c0a94fb5608ddcdd8a13df2d221adf3d032f6be8
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103966505"
+---
+# <a name="event-tracing-mof-classes"></a>Classi MOF di traccia eventi
+
+Le classi sono definite nello \\ \\ spazio dei nomi WMI radice. Il qualificatore **EventVersion** per gli eventi del kernel associa la classe a un sistema operativo specifico. Ad esempio, la versione zero è associata a Windows 2000, versione 1 con Windows XP e Windows Server 2003 e versione 2 con Windows Vista.
+
+Le classi MOF seguenti definiscono le classi di evento ETW.
+
+-   [**EventTrace**](eventtrace.md)
+-   [**\_Intestazione EventTrace**](eventtrace-header.md)
+-   [**EventTraceEvent**](eventtraceevent.md)
+-   [**\_Evento perso**](lost-event.md)
+-   [**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+-   [**\_LOSTEVENT RT**](rt-lostevent.md)
+
+Le classi MOF seguenti definiscono le classi degli eventi del kernel.
+
+-   [**ALPC**](alpc.md)
+-   [**\_Messaggio di ricezione ALPC \_**](alpc-receive-message.md)
+-   [**\_Messaggio di invio ALPC \_**](alpc-send-message.md)
+-   [**ALPC \_ Unwait**](alpc-unwait.md)
+-   [**ALPC \_ Attendi \_ \_ nuovo \_ messaggio**](alpc-wait-for-new-message.md)
+-   [**ALPC \_ attendere \_ la \_ risposta**](alpc-wait-for-reply.md)
+-   [**CSwitch**](cswitch.md)
+-   [**DPC**](dpc.md)
+-   [**DiskIo**](diskio.md)
+-   [**\_TypeGroup1 DiskIo**](diskio-typegroup1.md)
+-   [**\_TypeGroup2 DiskIo**](diskio-typegroup2.md)
+-   [**\_TypeGroup3 DiskIo**](diskio-typegroup3.md)
+-   [**DriverCompleteRequest**](drivercompleterequest.md)
+-   [**DriverCompleteRequestReturn**](drivercompleterequestreturn.md)
+-   [**DriverCompletionRoutine**](drivercompletionroutine.md)
+-   [**DriverMajorFunctionCall**](drivermajorfunctioncall.md)
+-   [**DriverMajorFunctionReturn**](drivermajorfunctionreturn.md)
+-   [**FileIo**](fileio.md)
+-   [**Creazione FileIO \_**](fileio-create.md)
+-   [**DirEnum FileIO \_**](fileio-direnum.md)
+-   [**Informazioni FileIO \_**](fileio-info.md)
+-   [**Nome FileIO \_**](fileio-name.md)
+-   [**FileIO \_ aperto**](fileio-opend.md)
+-   [**ReadWrite FileIO \_**](fileio-readwrite.md)
+-   [**SimpleOp FileIO \_**](fileio-simpleop.md)
+-   [**FileIO \_ V0**](fileio-v0.md)
+-   [**FileIO \_ V0 \_ nome**](fileio-v0-name.md)
+-   [**FileIO \_ V1**](fileio-v1.md)
+-   [**Nome FileIO \_ V1 \_**](fileio-v1-name.md)
+-   [**HWConfig**](hwconfig.md)
+-   [**\_CPU HWConfig**](hwconfig-cpu.md)
+-   [**\_LogDisk HWConfig**](hwconfig-logdisk.md)
+-   [**Scheda di interfaccia di rete HWConfig \_**](hwconfig-nic.md)
+-   [**\_PhyDisk HWConfig**](hwconfig-phydisk.md)
+-   [**Immagine**](image.md)
+-   [**\_Caricamento immagine**](image-load.md)
+-   [**Immagine \_ V0**](image-v0.md)
+-   [**Image \_ V0 \_ Load**](image-v0-load.md)
+-   [**Immagine \_ V1**](image-v1.md)
+-   [**\_Caricamento immagine V1 \_**](image-v1-load.md)
+-   [**ISR**](isr.md)
+-   [**PageFault \_ v2**](pagefault-v2.md)
+-   [**\_HardFault pagefault**](pagefault-hardfault.md)
+-   [**\_ImageLoadBacked pagefault**](pagefault-imageloadbacked.md)
+-   [**\_TypeGroup1 pagefault**](pagefault-typegroup1.md)
+-   [**PerfInfo**](perfinfo.md)
+-   [**Processo**](process.md)
+-   [**Elabora \_ TypeGroup1**](process-typegroup1.md)
+-   [**Processo \_ V0**](process-v0.md)
+-   [**Processo \_ V0 \_ TypeGroup1**](process-v0-typegroup1.md)
+-   [**Processo \_ V1**](process-v1.md)
+-   [**Processo \_ V1 \_ TypeGroup1**](process-v1-typegroup1.md)
+-   [**Processo \_ v2**](process-v2.md)
+-   [**Processo \_ v2 \_ TypeGroup1**](process-v2-typegroup1.md)
+-   [**Processo \_ v2 \_ TypeGroup2**](process-v2-typegroup2.md)
+-   [**ReadyThread**](readythread.md)
+-   [**Registro**](registry.md)
+-   [**Registro di sistema \_ TypeGroup1**](registry-typegroup1.md)
+-   [**Registro di sistema \_ V0**](registry-v0.md)
+-   [**Registro di sistema \_ V0 \_ TypeGroup1**](registry-v0-typegroup1.md)
+-   [**Registro di sistema \_ V1**](registry-v1.md)
+-   [**Registro di sistema \_ V1 \_ TypeGroup1**](registry-v1-typegroup1.md)
+-   [**SampledProfile**](sampledprofile.md)
+-   [**SplitIo**](splitio.md)
+-   [**\_Informazioni SplitIo**](splitio-info.md)
+-   [**SysCallEnter**](syscallenter.md)
+-   [**SysCallExit**](syscallexit.md)
+-   [**SystemConfig**](systemconfig.md)
+-   [**\_CPU SystemConfig**](systemconfig-cpu.md)
+-   [**\_IDEChannel SystemConfig**](systemconfig-idechannel.md)
+-   [**\_IRQ SystemConfig**](systemconfig-irq.md)
+-   [**\_LogDisk SystemConfig**](systemconfig-logdisk.md)
+-   [**\_Rete SystemConfig**](systemconfig-network.md)
+-   [**Scheda di interfaccia di rete SystemConfig \_**](systemconfig-nic.md)
+-   [**\_PhyDisk SystemConfig**](systemconfig-phydisk.md)
+-   [**SystemConfig \_ PNP**](systemconfig-pnp.md)
+-   [**\_Power SystemConfig**](systemconfig-power.md)
+-   [**\_Servizi SystemConfig**](systemconfig-services.md)
+-   [**Video di SystemConfig \_**](systemconfig-video.md)
+-   [**\_CPU SystemConfig V0 \_**](systemconfig-v0-cpu.md)
+-   [**SystemConfig \_ V0 \_ LogDisk**](systemconfig-v0-logdisk.md)
+-   [**Scheda di interfaccia di rete SystemConfig \_ V0 \_**](systemconfig-v0-nic.md)
+-   [**SystemConfig \_ V0 \_ PhyDisk**](systemconfig-v0-phydisk.md)
+-   [**\_Potenza SystemConfig V0 \_**](systemconfig-v0-power.md)
+-   [**\_Servizi SystemConfig V0 \_**](systemconfig-v0-services.md)
+-   [**\_Video SystemConfig V0 \_**](systemconfig-v0-video.md)
+-   [**TcpIp**](tcpip.md)
+-   [**\_Errore Tcpip**](tcpip-fail.md)
+-   [**\_SendIPV4 Tcpip**](tcpip-sendipv4.md)
+-   [**\_SendIPV6 Tcpip**](tcpip-sendipv6.md)
+-   [**\_TypeGroup1 Tcpip**](tcpip-typegroup1.md)
+-   [**\_TypeGroup2 Tcpip**](tcpip-typegroup2.md)
+-   [**\_TypeGroup3 Tcpip**](tcpip-typegroup3.md)
+-   [**\_TypeGroup4 Tcpip**](tcpip-typegroup4.md)
+-   [**TcpIp \_ V0**](tcpip-v0.md)
+-   [**\_TypeGroup1 Tcpip V0 \_**](tcpip-v0-typegroup1.md)
+-   [**TcpIp \_ V1**](tcpip-v1.md)
+-   [**\_TypeGroup1 Tcpip V1 \_**](tcpip-v1-typegroup1.md)
+-   [**Thread**](thread.md)
+-   [**\_TypeGroup1 thread**](thread-typegroup1.md)
+-   [**Thread \_ V0**](thread-v0.md)
+-   [**Thread \_ V0 \_ TypeGroup1**](thread-v0-typegroup1.md)
+-   [**Thread \_ V1**](thread-v1.md)
+-   [**\_TypeGroup1 thread V1 \_**](thread-v1-typegroup1.md)
+-   [**\_TypeGroup2 thread V1 \_**](thread-v1-typegroup2.md)
+-   [**Thread \_ v2**](thread-v2.md)
+-   [**Thread \_ v2 \_ TypeGroup1**](thread-v2-typegroup1.md)
+-   [**UdpIp**](udpip.md)
+-   [**UdpIp \_ non riuscito**](udpip-fail.md)
+-   [**\_TypeGroup1 UdpIp**](udpip-typegroup1.md)
+-   [**\_TypeGroup2 UdpIp**](udpip-typegroup2.md)
+-   [**UdpIp \_ V0**](udpip-v0.md)
+-   [**UdpIp \_ V0 \_ TypeGroup1**](udpip-v0-typegroup1.md)
+-   [**UdpIp \_ V1**](udpip-v1.md)
+-   [**UdpIp \_ V1 \_ TypeGroup1**](udpip-v1-typegroup1.md)
+
+ 
+
+ 
+
+
+
