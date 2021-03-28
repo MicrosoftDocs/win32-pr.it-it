@@ -1,0 +1,297 @@
+---
+description: Usare i qualificatori definiti in questa sezione durante la creazione della classe MOF del provider, della classe MOF dell'evento, della classe MOF del tipo di evento e delle proprietà della classe MOF del tipo di evento.
+ms.assetid: 3bc82074-05a7-411f-884f-5da1fd08112b
+title: Qualificatori MOF di traccia eventi
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: f7b4250b73e84d46a19dab307d0c263ab1cc7782
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103885306"
+---
+# <a name="event-tracing-mof-qualifiers"></a>Qualificatori MOF di traccia eventi
+
+Usare i qualificatori definiti in questa sezione durante la creazione della [classe MOF del provider](#provider-mof-class-qualifiers), della [classe MOF dell'evento](#event-mof-class-qualifiers), della [classe MOF del tipo di evento](#event-type-mof-class-qualifiers)e delle [proprietà della classe MOF del tipo di evento](#property-qualifiers). Per un esempio in cui sono inclusi alcuni di questi qualificatori, vedere [pubblicazione dello schema di eventi](publishing-your-event-schema.md).
+
+## <a name="provider-mof-class-qualifiers"></a>Qualificatori della classe MOF del provider
+
+Nella tabella seguente sono elencati i qualificatori che è possibile specificare in una classe MOF del provider.
+
+
+
+| Qualifier | Tipo di dati  | Descrizione                                                                                                                                                                                                                                                  |
+|-----------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **GUID**  | **Stringa** | Obbligatorio. GUID di stringa che identifica in modo univoco un provider. Ad esempio GUID ("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Si tratta dello stesso GUID usato quando si chiama la funzione [**RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) per registrare il provider. |
+
+
+
+ 
+
+## <a name="event-mof-class-qualifiers"></a>Qualificatori di classe MOF evento
+
+Nella tabella seguente sono elencati i qualificatori che è possibile specificare in una classe di evento (la classe padre che raggruppa le classi del tipo di evento correlate).
+
+| Qualifier        | Tipo di dati   | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **GUID**         | **Stringa**  | Obbligatorio. GUID di stringa che identifica una classe di eventi. Ad esempio GUID ("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). I provider di eventi utilizzano il GUID per impostare l' [**intestazione della traccia dell'evento \_ \_ . Membro GUID**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) , in modo che i consumer possano determinare la classe degli eventi che ricevono.                                                                                                                                                                                                                                                                                  |
+| **EventVersion** | **Integer** | Questo qualificatore è facoltativo per la versione più recente di una classe di traccia eventi ed è necessario per tutte le versioni precedenti della classe. La versione più recente della classe non specifica il qualificatore **EventVersion** o il numero di versione più alto. I numeri di versione iniziano con 0, ad esempio EventVersion (0). In genere, quando si crea una nuova versione della classe, si rinomina anche la versione precedente in <classname> \_ VN, dove n è un numero incrementale a partire da 0. Per un esempio, vedere [**FileIO**](fileio.md) e [**FileIO \_ V0**](fileio-v0.md).<br/> |
+
+
+
+ 
+
+## <a name="event-type-mof-class-qualifiers"></a>Qualificatori di classe MOF di tipo evento
+
+Nella tabella seguente sono elencati i qualificatori che è possibile specificare in una classe di tipi di evento (la classe che definisce i dati della proprietà dell'evento).
+
+
+
+| Qualifier         | Valore       | Descrizione                                                                                                                                                                                                                                                                                                                                                                       |
+|-------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **EventType**     | **Integer** | Obbligatorio. Identifica la classe del tipo di evento. Ad esempio, EventType (1). Il provider di eventi utilizza lo stesso valore del tipo di evento per impostare l' [**\_ intestazione della traccia eventi \_ . Classe. Type**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header). Se viene utilizzata la stessa classe MOF per più tipi di evento (poiché utilizzano gli stessi dati dell'evento), specificare il valore del tipo di evento come matrice di numeri interi, ad esempio, EventType {12,15} . |
+| **Nome** | **Stringa**  | facoltativo. Descrive il tipo di evento. Ad esempio, nome ("Start"). Se viene usata la stessa classe MOF per più tipi di evento, perché usano gli stessi dati di evento, specificare il valore del nome del tipo di evento come una matrice di stringhe, ad esempio, nome {"Start", "end"}. Gli elementi della matrice nome corrispondono direttamente alla matrice EventType.                 |
+
+
+
+ 
+
+## <a name="property-qualifiers"></a>Qualificatori di proprietà
+
+Nella tabella seguente sono elencati i qualificatori che è possibile specificare in una proprietà.
+
+
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Qualifier</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BitMap</strong></td>
+<td>Specifica le posizioni di bit che vengono mappate ai valori di stringa. Se si specifica questo qualificatore, è necessario specificare anche il qualificatore <strong>BitValues</strong> .</td>
+</tr>
+<tr class="even">
+<td><strong>BitValues</strong></td>
+<td>Valori stringa. Se viene specificato anche il qualificatore <strong>bitmap</strong> , le stringhe corrispondono direttamente ai valori del qualificatore <strong>bitmap</strong> . In caso contrario, si supponga che il valore della proprietà sia un indice in base uno nelle stringhe del valore (un bit corrisponde alla prima stringa nell'elenco).</td>
+</tr>
+<tr class="odd">
+<td><strong>Estensione</strong></td>
+<td>Vengono fornite informazioni aggiuntive su come utilizzare (interpretare) i dati. Il valore dell'estensione non fa distinzione tra maiuscole e minuscole. Includere il valore tra virgolette, ad esempio Extension ( &quot; GUID &quot; ). I valori di estensione possibili sono: <dl> <dt><span id="Guid"></span><span id="guid"></span><span id="GUID"></span>GUID</dt> <dd> Indica che i dati della proprietà sono GUID. Il tipo di dati MOF deve essere <strong>Object</strong>. Il payload dovrebbe essere una struttura <strong>GUID</strong> .<br/> </dd> <dt><span id="IPAddr_and_IPAddrV4"></span><span id="ipaddr_and_ipaddrv4"></span><span id="IPADDR_AND_IPADDRV4"></span>IPAddr e IPAddrV4</dt> <dd> I dati sono un indirizzo IP v4. Il tipo di dati MOF deve essere <strong>Object</strong>. Il payload dovrebbe essere un valore long senza segno. Ogni byte del Long senza segno rappresenta una delle quattro parti dell'indirizzo IP (P1. P2. P3. P4). Il byte di ordine inferiore contiene il valore per P1, il byte successivo contiene il valore per P2 e così via.<br/> <strong>Prima di Windows Vista:</strong> L'estensione IPAddrV4 non è supportata.<br/> </dd> <dt><span id="IPAddrV6"></span><span id="ipaddrv6"></span><span id="IPADDRV6"></span>IPAddrV6</dt> <dd> I dati sono indirizzi IP V6. Il tipo di dati MOF deve essere <strong>Object</strong>. Il payload dovrebbe essere una struttura <strong>IN6_ADDR</strong> . <br/> <strong>Prima di Windows Vista:</strong> L'estensione IPAddrV6 non è supportata.<br/> </dd> <dt><span id="NoPrint"></span><span id="noprint"></span><span id="NOPRINT"></span>NoPrint</dt> <dd> Indica che i dati non devono essere stampati dal consumer.<br/> </dd> <dt><span id="Port"></span><span id="port"></span><span id="PORT"></span>Porta</dt> <dd> I dati identificano un numero di porta. Il tipo di dati MOF deve essere <strong>Object</strong>. Il payload dovrebbe essere un valore short senza segno.<br/> </dd> <dt><span id="RString"></span><span id="rstring"></span><span id="RSTRING"></span>RString</dt> <dd> I caratteri di nuova riga sono stati sostituiti con spazi. Il payload dovrebbe essere una stringa ANSI con terminazione null.<br/> </dd> <dt><span id="RWString"></span><span id="rwstring"></span><span id="RWSTRING"></span>RWString</dt> <dd> I caratteri di nuova riga sono stati sostituiti con spazi. Il payload dovrebbe essere una stringa di caratteri wide con terminazione null.<br/> </dd> <dt><span id="Sid"></span><span id="sid"></span><span id="SID"></span>SID</dt> <dd> I dati rappresentano un SID BLOB binario. Il tipo di dati MOF deve essere <strong>Object</strong>. <br/> Il SID è di lunghezza variabile. Il valore contenuto nei primi 4 byte (<strong>ULONG</strong>) indica se il BLOB contiene un SID. Se i primi 4 byte (<strong>ULONG</strong>) del BLOB sono diversi da zero, il BLOB contiene un SID. La prima parte del BLOB contiene la TOKEN_USER (la struttura è allineata a un limite di 8 byte) e la seconda parte contiene il SID. Per risolvere la porzione SID del BLOB:<br/>
+<ul>
+<li>Imposta un puntatore di byte all'inizio del BLOB</li>
+<li>Moltiplicare le dimensioni del puntatore per il registro eventi per 2 e aggiungere il prodotto al puntatore di byte (il membro <strong>POINTERSIZE</strong> di <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> contiene il valore delle dimensioni del puntatore)</li>
+</ul>
+<br/> È possibile utilizzare la macro seguente per determinare la lunghezza del SID. <br/>
+<pre class="syntax" data-space="preserve"><code>#define SeLengthSid( Sid ) \
+  (8 + (4 * ((SID *)Sid)->SubAuthorityCount))</code></pre>
+</dd> <dt><span id="SizeT"></span><span id="sizet"></span><span id="SIZET"></span>SizeT</dt> <dd> Indica che la proprietà contiene un valore del puntatore. Le dimensioni del valore del puntatore dipendono dal sistema operativo usato per registrare l'evento; il payload conterrà un valore a 4 byte per i sistemi a 32 bit o un valore a 8 byte per i sistemi a 64 bit. Il tipo di dati MOF deve essere <strong>Object</strong>.<br/> I consumer devono ignorare il tipo di dati e il qualificatore di <strong>formato</strong> se la proprietà include l'estensione <strong>SizeT</strong> . Per determinare le dimensioni dei dati da leggere per la proprietà, usare:
+<ul>
+<li>Membro <strong>POINTERSIZE</strong> di <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a></li>
+<li>Membro dei <strong>flag</strong> di <a href="/windows/desktop/api/evntcons/ns-evntcons-event_header"><strong>EVENT_HEADER</strong></a></li>
+</ul>
+<br/> <strong>Prima di Windows Vista:</strong> Il valore di <strong>POINTERSIZE</strong> potrebbe non essere accurato. Ad esempio, in un computer a 64 bit, un'applicazione a 32 bit registrerà puntatori a 4 byte. Tuttavia, la sessione imposterà <strong>POINTERSIZE</strong> su 8.<br/> </dd> <dt><span id="Variant"></span><span id="variant"></span><span id="VARIANT"></span>Variante</dt> <dd> I dati rappresentano un BLOB. I primi quattro byte (UInt32) indicano la dimensione del BLOB. Il tipo di dati MOF deve essere <strong>Object</strong>. <br/> </dd> <dt><span id="WmiTime"></span><span id="wmitime"></span><span id="WMITIME"></span>WmiTime</dt> <dd> Converte l'indicatore di tempo nell'ora di sistema. Il tipo di dati MOF deve essere <strong>Object</strong>. Il payload dovrebbe essere un intero senza segno a 64 bit.<br/> <strong>Prima di Windows Vista:</strong> Non disponibile.<br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><strong>Formato</strong></td>
+<td>Definisce il formato dei dati della proprietà. Ad esempio, l'inclusione di Format ( &quot; w &quot; ) su una proprietà di stringa indica che la stringa è una stringa di caratteri wide. I valori possibili sono:
+<table>
+<thead>
+<tr class="header">
+<th>Termine</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span id="c"></span><span id="C"></span>c<br/></td>
+<td>Visualizza il valore della proprietà come carattere ASCII. È possibile usare questo qualificatore con i tipi di dati <strong>Uint8</strong> .<br/></td>
+</tr>
+<tr class="even">
+<td><span id="s"></span><span id="S"></span>s<br/></td>
+<td>Considera la matrice di caratteri come una stringa con terminazione null. La stringa è una stringa di caratteri wide se il tipo di dati è <strong>Char16</strong>; in caso contrario, la stringa è una stringa di caratteri ASCII.<br/></td>
+</tr>
+<tr class="odd">
+<td><span id="w"></span><span id="W"></span>w<br/></td>
+<td>Il valore della proprietà è una stringa di caratteri wide. È possibile utilizzare questo qualificatore con i tipi di dati <strong>stringa</strong> . <br/></td>
+</tr>
+<tr class="even">
+<td><span id="x"></span><span id="X"></span>x<br/></td>
+<td>Visualizza il valore della proprietà come numero esadecimale. È possibile utilizzare questo qualificatore con tipi di dati Integer a 16, 32 e 64 bit.<br/></td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="odd">
+<td><strong>Puntatore</strong></td>
+<td><p>Indica che la proprietà contiene un valore del puntatore. Le dimensioni del valore del puntatore dipendono dal sistema operativo usato per registrare l'evento; il payload conterrà un valore a 4 byte per i sistemi a 32 bit o un valore a 8 byte per i sistemi a 64 bit. Il tipo di dati MOF deve essere <strong>Object</strong>.</p>
+<p>I consumer devono ignorare il tipo di dati e il qualificatore di <strong>formato</strong> se la proprietà include l'estensione <strong>SizeT</strong> . Per determinare le dimensioni dei dati da leggere per la proprietà, usare:</p>
+<ul>
+<li>Membro <strong>POINTERSIZE</strong> di <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a></li>
+<li>Membro dei <strong>flag</strong> di <a href="/windows/desktop/api/evntcons/ns-evntcons-event_header"><strong>EVENT_HEADER</strong></a></li>
+</ul>
+<p><strong>Prima di Windows Vista:</strong> Il valore di <strong>POINTERSIZE</strong> potrebbe non essere accurato. Ad esempio, in un computer a 64 bit, un'applicazione a 32 bit registrerà puntatori a 4 byte. Tuttavia, la sessione imposterà <strong>POINTERSIZE</strong> su 8.</p>
+<p>Si noti che alcuni eventi usano <strong>PointerType</strong> anziché <strong>pointer</strong>; Non usare <strong>PointerType</strong>.</p></td>
+</tr>
+<tr class="even">
+<td><strong>StringTermination</strong></td>
+<td>Indica il modo in cui la proprietà della stringa viene terminata. Ad esempio, StringTermination ( &quot; NullTerminated &quot; ) indica che la proprietà della stringa è con terminazione null. I valori possibili sono:
+<dl> <dt><span id="Counted"></span><span id="counted"></span><span id="COUNTED"></span><strong>Conteggiati</strong></dt> <dd>
+<p>La lunghezza della stringa è incorporata all'inizio della stringa come valore <strong>ushort</strong> .</p>
+</dd> <dt><span id="NotCounted"></span><span id="notcounted"></span><span id="NOTCOUNTED"></span><strong>NotCounted</strong></dt> <dd>
+<p>La stringa non è con terminazione null e la lunghezza della stringa non è incorporata all'inizio della stringa. In questo caso, la stringa deve essere l'ultimo elemento e occupare tutto lo spazio fino alla fine dei dati dell'evento.</p>
+</dd> <dt><span id="NullTerminated"></span><span id="nullterminated"></span><span id="NULLTERMINATED"></span><strong>NullTerminated</strong></dt> <dd>
+<p>La stringa è con terminazione null. Se non si specifica il qualificatore <strong>StringTermination</strong> , si presuppone che la stringa sia con terminazione null.</p>
+</dd> <dt><span id="ReverseCounted"></span><span id="reversecounted"></span><span id="REVERSECOUNTED"></span><strong>ReverseCounted</strong></dt> <dd>
+<p>La lunghezza della stringa è incorporata all'inizio della stringa come valore <strong>ushort</strong> nel formato big-endian.</p>
+</dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><strong>ValueDescriptions</strong></td>
+<td>Fornisce le descrizioni per ogni valore nel qualificatore <strong>values</strong> . Le funzioni <a href="/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviderfieldinformation"><strong>TdhEnumerateProviderFieldInformation</strong></a> e <a href="/windows/desktop/api/Tdh/nf-tdh-tdhqueryproviderfieldinformation"><strong>TdhQueryProviderFieldInformation</strong></a> restituiscono queste descrizioni quando si tenta di recuperare informazioni sulla parola chiave e sul livello. Le descrizioni sono facoltative. Se non si specificano le descrizioni, le funzioni restituiscono <strong>null</strong>. Per altri dettagli, vedere <a href="#specifying-level-and-enable-flags-values-for-a-provider">specifica del livello e abilitare i valori dei flag per un provider</a> .</td>
+</tr>
+<tr class="even">
+<td><strong>ValueMap</strong></td>
+<td>Specifica i valori di indice o di flag integer che vengono mappati ai valori di stringa. Se si specifica questo qualificatore, è necessario specificare anche il qualificatore <strong>values</strong> e, facoltativamente, il qualificatore <strong>ValueType</strong> . Si noti che ETW non supporta l'opzione WMI per la presenza di stringhe per i valori della mappa dei valori.
+<p>Nell'esempio seguente viene illustrato come utilizzare i qualificatori ValueMap, Values e ValueType.</p>
+<pre class="syntax" data-space="preserve"><code>ValueType(&quot;flag&quot;),
+ValueMap {&quot;0x01&quot;, &quot;0x02&quot;, &quot;0x04&quot;, &quot;0x08&quot;},
+Values {&quot;ValueMapFlag1&quot;, &quot;ValueMapFlag2&quot;, &quot;ValueMapFlag4&quot;, &quot;ValueMapFlag8&quot;}]</code></pre></td>
+</tr>
+<tr class="odd">
+<td><strong>Valori</strong></td>
+<td>Valori stringa. Se viene specificato anche il qualificatore <strong>ValueMap</strong> , le stringhe corrispondono direttamente ai valori del qualificatore <strong>ValueMap</strong> . In caso contrario, si supponga che il valore della proprietà sia un indice in base zero nelle stringhe del valore.</td>
+</tr>
+<tr class="even">
+<td><strong>ValueType</strong></td>
+<td>Indica se i valori <strong>ValueMap</strong> sono valori di indice Integer o di flag di bit. Se non si specifica questo qualificatore, verranno considerati i valori di indice Integer. Per specificare che i valori sono valori di indice Integer, utilizzare ValueType ( &quot; index &quot; ). Per specificare che i valori sono valori dei flag di bit, utilizzare ValueType ( &quot; flag &quot; ).</td>
+</tr>
+<tr class="odd">
+<td><strong>WmiDataId</strong></td>
+<td>Ogni proprietà deve contenere il qualificatore <strong>WmiDataId</strong> . <strong>WmiDataId</strong> definisce l'ordine in cui il consumer legge i dati dell'evento. Il valore di <strong>WmiDataId</strong> inizia con 1 e incrementa per ogni proprietà della classe. Ad esempio, WmiDataId (1).</td>
+</tr>
+<tr class="even">
+<td><strong>XMLFragment</strong></td>
+<td>Indica che i dati sono in formato XML e sono pronti per la visualizzazione senza ulteriori operazioni di formattazione.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+ 
+
+## <a name="specifying-level-and-enable-flags-values-for-a-provider"></a>Specifica dei valori dei flag Level e Enable per un provider
+
+Per documentare il livello e abilitare i flag che un controller utilizzerebbe per abilitare il provider, includere le proprietà "Level" e "Flags" nella classe MOF del provider. I nomi delle proprietà Level e Flags fanno distinzione tra maiuscole e minuscole. Le proprietà devono includere i **valori** e i qualificatori **ValueMap** , che specificano il livello possibile e abilitano i valori del flag. Il valore di **ValueMap** per i valori del flag enable deve essere bit (flag). Il qualificatore **ValueDescriptions** è facoltativo, ma è consigliabile usarlo per fornire descrizioni per ogni valore possibile. Le descrizioni vengono usate quando un utente chiama le funzioni [**TdhEnumerateProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviderfieldinformation) e [**TdhQueryProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhqueryproviderfieldinformation) per ottenere il livello possibile e abilitare i valori dei flag (parole chiave) per il provider.
+
+Di seguito viene illustrata una classe di provider che specifica i valori possibili e Abilita i flag.
+
+``` syntax
+[Dynamic,
+ Description("IIS_Trace") : amended,
+ guid("{3a2a4e84-4c21-4981-ae10-3fda0d9b0f83}"),
+ locale("MS\\0x409")]
+class IIS_Trace : EventTrace
+{
+    [Description ("Enable Flags") : amended,
+        ValueDescriptions{
+             "Allow_tracing_only_selected_requests ",
+             "IIS_authentication_events ",
+             "IIS_security_events ",
+             "IIS_filter_events ",
+             "IIS_static_file_events ",
+             "IIS_CGI_events ",
+             "IIS_compression_events ",
+             "IIS_cache_events ",
+             "IIS_request_notifications_events ",
+             "IIS_module_events ",
+             "IIS_FastCGI_events "},
+        DefineValues{
+             "UseUrlFilter",
+             "IISAuthentication",
+             "IISSecurity",
+             "IISFilter",
+             "IISStaticFile",
+             "IISCGI",
+             "IISCompression",
+             "IISCache",
+             "IISRequestNotification",
+             "IISModule",
+             "IISFastCGI"},
+        Values{
+             "UseUrlFilter",
+             "IISAuthentication",
+             "IISSecurity",
+             "IISFilter",
+             "IISStaticFile",
+             "IISCGI",
+             "IISCompression",
+             "IISCache",
+             "IISRequestNotification",
+             "IISModule",
+             "IISFastCGI"},
+        ValueMap{
+             "0x00000001",
+             "0x00000002",
+             "0x00000004",
+             "0x00000008",
+             "0x00000010",
+             "0x00000020",
+             "0x00000040",
+             "0x00000080",
+             "0x00000100",
+             "0x00000200",
+             "0x00001000"}: amended
+    ]
+    uint32 Flags;
+
+    [Description ("Levels") : amended,
+        ValueDescriptions{
+            "Abnormal exit or termination",
+            "Severe errors that need logging",
+            "Warnings such as allocation failure",
+            "Includes non-error cases",
+            "Detailed traces from intermediate steps" } : amended,
+         DefineValues{
+            "TRACE_LEVEL_FATAL",
+            "TRACE_LEVEL_ERROR",
+            "TRACE_LEVEL_WARNING"
+            "TRACE_LEVEL_INFORMATION",
+            "TRACE_LEVEL_VERBOSE" },
+        Values{
+            "Fatal",
+            "Error",
+            "Warning",
+            "Information",
+            "Verbose" },
+        ValueMap{
+            "0x1",
+            "0x2",
+            "0x3",
+            "0x4",
+            "0x5" },
+        ValueType("index")
+    ]
+    uint32 Level;
+};
+```
+
+ 
+
+ 
