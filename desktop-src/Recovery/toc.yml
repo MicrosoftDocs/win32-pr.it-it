@@ -1,0 +1,34 @@
+- name: Ripristino e riavvio di un'applicazione
+  href: application-recovery-and-restart-portal.md
+  items:
+    - name: Utilizzo del ripristino dell'applicazione e riavvio
+      href: using-application-recovery-and-restart.md
+      items:
+        - name: Registrazione per il ripristino dell'applicazione
+          href: registering-for-application-recovery.md
+        - name: Registrazione per il riavvio dell'applicazione
+          href: registering-for-application-restart.md
+    - name: Riferimento al ripristino e al riavvio dell'applicazione
+      href: application-recovery-and-restart-reference.md
+      items:
+        - name: Funzioni di ripristino e riavvio dell'applicazione
+          href: application-recovery-and-restart-functions.md
+          items:
+            - name: ApplicationRecoveryCallback
+              href: /previous-versions/windows/desktop/legacy/aa373202(v=vs.85)
+            - name: ApplicationRecoveryFinished
+              href: /windows/desktop/api/winbase/nf-winbase-applicationrecoveryfinished
+            - name: ApplicationRecoveryInProgress
+              href: /windows/desktop/api/winbase/nf-winbase-applicationrecoveryinprogress
+            - name: GetApplicationRecoveryCallback
+              href: /windows/desktop/api/winbase/nf-winbase-getapplicationrecoverycallback
+            - name: GetApplicationRestartSettings
+              href: /windows/desktop/api/winbase/nf-winbase-getapplicationrestartsettings
+            - name: RegisterApplicationRecoveryCallback
+              href: /windows/desktop/api/winbase/nf-winbase-registerapplicationrecoverycallback
+            - name: RegisterApplicationRestart
+              href: /windows/desktop/api/winbase/nf-winbase-registerapplicationrestart
+            - name: UnregisterApplicationRecoveryCallback
+              href: /windows/desktop/api/winbase/nf-winbase-unregisterapplicationrecoverycallback
+            - name: UnregisterApplicationRestart
+              href: /windows/desktop/api/winbase/nf-winbase-unregisterapplicationrestart
