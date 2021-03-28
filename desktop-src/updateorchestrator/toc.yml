@@ -1,0 +1,15 @@
+- name: Aggiornare l'agente di orchestrazione
+  href: index.md
+- name: Aggiorna riferimento agente di orchestrazione
+  items:
+    - name: Interfacce
+      items:
+        - name: IUniversalOrchestrator
+          href: universalorchestrator-iuniversalorchestrator.md
+          items:
+            - name: ':: Pianificazioni'
+              href: universalorchestrator-schedulework.md
+            - name: '::WorkCompleted'
+              href: universalorchestrator-workcompleted.md
+            - name: '::HasMoratoriumPassed'
+              href: universalorchestrator-hasmoratoriumpassed.md
