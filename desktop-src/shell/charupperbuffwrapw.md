@@ -1,0 +1,101 @@
+---
+description: Converte i caratteri minuscoli di un buffer in caratteri maiuscoli.
+ms.assetid: 63293fda-6f55-419a-b5b4-7a3ada31580c
+title: CharUpperBuffWrapW (funzione)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- CharUpperBuffWrapW
+api_type:
+- DllExport
+api_location:
+- Shlwapi.dll
+ms.openlocfilehash: dacc5e7609ca7f91bf7c66651d7ba9bdd11ab688
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104525398"
+---
+# <a name="charupperbuffwrapw-function"></a><span data-ttu-id="4d74c-103">CharUpperBuffWrapW (funzione)</span><span class="sxs-lookup"><span data-stu-id="4d74c-103">CharUpperBuffWrapW function</span></span>
+
+<span data-ttu-id="4d74c-104">\[**CharUpperBuffWrapW** è disponibile per l'utilizzo in Windows XP.</span><span class="sxs-lookup"><span data-stu-id="4d74c-104">\[**CharUpperBuffWrapW** is available for use in Windows XP.</span></span> <span data-ttu-id="4d74c-105">Potrebbe non essere disponibile nelle versioni successive.</span><span class="sxs-lookup"><span data-stu-id="4d74c-105">It may not be available in subsequent versions.</span></span> <span data-ttu-id="4d74c-106">È consigliabile usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) al suo posto.\]</span><span class="sxs-lookup"><span data-stu-id="4d74c-106">You should use [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) in its place.\]</span></span>
+
+<span data-ttu-id="4d74c-107">Converte i caratteri minuscoli di un buffer in caratteri maiuscoli.</span><span class="sxs-lookup"><span data-stu-id="4d74c-107">Converts lowercase characters in a buffer to uppercase characters.</span></span> <span data-ttu-id="4d74c-108">La funzione converte i caratteri sul posto.</span><span class="sxs-lookup"><span data-stu-id="4d74c-108">The function converts the characters in place.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="4d74c-109">**CharUpperBuffWrapW** è un wrapper per la funzione **CharUpperBuffW** .</span><span class="sxs-lookup"><span data-stu-id="4d74c-109">**CharUpperBuffWrapW** is a wrapper for the **CharUpperBuffW** function.</span></span> <span data-ttu-id="4d74c-110">Per ulteriori note sull'utilizzo, vedere la pagina [**CharUpperBuff**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) .</span><span class="sxs-lookup"><span data-stu-id="4d74c-110">See the [**CharUpperBuff**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) page for further usage notes.</span></span>
+
+ 
+
+## <a name="syntax"></a><span data-ttu-id="4d74c-111">Sintassi</span><span class="sxs-lookup"><span data-stu-id="4d74c-111">Syntax</span></span>
+
+
+```C++
+DWORD CharUpperBuffWrapW(
+  _In_ LPWSTR pch,
+  _In_ DWORD  cchLength
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="4d74c-112">Parametri</span><span class="sxs-lookup"><span data-stu-id="4d74c-112">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="4d74c-113">*PCH* \[ in\]</span><span class="sxs-lookup"><span data-stu-id="4d74c-113">*pch* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="4d74c-114">Tipo: **LPWSTR**</span><span class="sxs-lookup"><span data-stu-id="4d74c-114">Type: **LPWSTR**</span></span>
+
+<span data-ttu-id="4d74c-115">Puntatore a un buffer che contiene uno o più caratteri Unicode da elaborare.</span><span class="sxs-lookup"><span data-stu-id="4d74c-115">A pointer to a buffer that contains one or more Unicode characters to process.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="4d74c-116">*cchLength* \[ in\]</span><span class="sxs-lookup"><span data-stu-id="4d74c-116">*cchLength* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="4d74c-117">Tipo: **DWORD**</span><span class="sxs-lookup"><span data-stu-id="4d74c-117">Type: **DWORD**</span></span>
+
+<span data-ttu-id="4d74c-118">Specifica la dimensione, in caratteri, del buffer a cui punta *PCH*.</span><span class="sxs-lookup"><span data-stu-id="4d74c-118">Specifies the size, in characters, of the buffer pointed to by *pch*.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="4d74c-119">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="4d74c-119">Return value</span></span>
+
+<span data-ttu-id="4d74c-120">Tipo: **DWORD**</span><span class="sxs-lookup"><span data-stu-id="4d74c-120">Type: **DWORD**</span></span>
+
+<span data-ttu-id="4d74c-121">Numero di caratteri elaborati.</span><span class="sxs-lookup"><span data-stu-id="4d74c-121">The number of characters processed.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="4d74c-122">Commenti</span><span class="sxs-lookup"><span data-stu-id="4d74c-122">Remarks</span></span>
+
+<span data-ttu-id="4d74c-123">Il metodo preferito consiste nell'usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) insieme a Microsoft Layer for Unicode (MSLU).</span><span class="sxs-lookup"><span data-stu-id="4d74c-123">The preferred method is to use [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) in conjunction with the Microsoft Layer for Unicode (MSLU).</span></span>
+
+<span data-ttu-id="4d74c-124">**CharUpperBuffWrapW** deve essere chiamato direttamente da Shlwapi.dll, usando il numero ordinale 44.</span><span class="sxs-lookup"><span data-stu-id="4d74c-124">**CharUpperBuffWrapW** must be called directly from Shlwapi.dll, using ordinal 44.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="4d74c-125">Requisiti</span><span class="sxs-lookup"><span data-stu-id="4d74c-125">Requirements</span></span>
+
+
+
+| <span data-ttu-id="4d74c-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="4d74c-126">Requirement</span></span> | <span data-ttu-id="4d74c-127">Valore</span><span class="sxs-lookup"><span data-stu-id="4d74c-127">Value</span></span> |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="4d74c-128">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="4d74c-128">Minimum supported client</span></span><br/> | <span data-ttu-id="4d74c-129">Windows 2000 Professional, \[ solo app desktop Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="4d74c-129">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="4d74c-130">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="4d74c-130">Minimum supported server</span></span><br/> | <span data-ttu-id="4d74c-131">\[Solo app desktop Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="4d74c-131">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                                          |
+| <span data-ttu-id="4d74c-132">DLL</span><span class="sxs-lookup"><span data-stu-id="4d74c-132">DLL</span></span><br/>                      | <dl> <span data-ttu-id="4d74c-133"><dt>Shlwapi.dll (versione 5,0 o successiva)</dt></span><span class="sxs-lookup"><span data-stu-id="4d74c-133"><dt>Shlwapi.dll (version 5.0 or later)</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="4d74c-134">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="4d74c-134">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="4d74c-135">**CharUpperBuff**</span><span class="sxs-lookup"><span data-stu-id="4d74c-135">**CharUpperBuff**</span></span>](/windows/win32/api/winuser/nf-winuser-charupperbuffa)
+</dt> </dl>
+
+ 
+
+ 
