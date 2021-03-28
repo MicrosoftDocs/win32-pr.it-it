@@ -1,0 +1,62 @@
+---
+title: Registri-vs_5_0
+description: I registri di input e di output seguenti vengono implementati in vertex shader versione 5 \_ 0.
+ms.assetid: 475753C7-C055-4DB7-9DC3-6C734413A92B
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6eb1dc211f5f3dd8819577c796849dcb86012cc0
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104976135"
+---
+# <a name="registers---vs_5_0"></a><span data-ttu-id="cd32f-103">Registri-vs \_ 5 \_ 0</span><span class="sxs-lookup"><span data-stu-id="cd32f-103">Registers - vs\_5\_0</span></span>
+
+<span data-ttu-id="cd32f-104">I registri di input e di output seguenti vengono implementati in vertex shader versione 5 \_ 0.</span><span class="sxs-lookup"><span data-stu-id="cd32f-104">The following input and output registers are implemented in the vertex shader version 5\_0.</span></span>
+
+## <a name="input-registers"></a><span data-ttu-id="cd32f-105">Registri di input</span><span class="sxs-lookup"><span data-stu-id="cd32f-105">Input Registers</span></span>
+
+
+
+| <span data-ttu-id="cd32f-106">Tipo di registro</span><span class="sxs-lookup"><span data-stu-id="cd32f-106">Register Type</span></span>                                      | <span data-ttu-id="cd32f-107">Conteggio</span><span class="sxs-lookup"><span data-stu-id="cd32f-107">Count</span></span>              | <span data-ttu-id="cd32f-108">L/S</span><span class="sxs-lookup"><span data-stu-id="cd32f-108">R/W</span></span> | <span data-ttu-id="cd32f-109">Dimension</span><span class="sxs-lookup"><span data-stu-id="cd32f-109">Dimension</span></span> | <span data-ttu-id="cd32f-110">Indicizzabile da r\#</span><span class="sxs-lookup"><span data-stu-id="cd32f-110">Indexable by r\#</span></span> | <span data-ttu-id="cd32f-111">Valori predefiniti</span><span class="sxs-lookup"><span data-stu-id="cd32f-111">Defaults</span></span> | <span data-ttu-id="cd32f-112">Richiede DCL</span><span class="sxs-lookup"><span data-stu-id="cd32f-112">Requires DCL</span></span> |
+|----------------------------------------------------|--------------------|-----|-----------|------------------|----------|--------------|
+| <span data-ttu-id="cd32f-113">Temp a 32 bit (r \# )</span><span class="sxs-lookup"><span data-stu-id="cd32f-113">32-bit Temp (r\#)</span></span>                                  | <span data-ttu-id="cd32f-114">4096 (r \# + x \# \[ n \] )</span><span class="sxs-lookup"><span data-stu-id="cd32f-114">4096(r\#+x\#\[n\])</span></span> | <span data-ttu-id="cd32f-115">L/S</span><span class="sxs-lookup"><span data-stu-id="cd32f-115">R/W</span></span> | <span data-ttu-id="cd32f-116">4</span><span class="sxs-lookup"><span data-stu-id="cd32f-116">4</span></span>         | <span data-ttu-id="cd32f-117">No</span><span class="sxs-lookup"><span data-stu-id="cd32f-117">No</span></span>               | <span data-ttu-id="cd32f-118">nessuno</span><span class="sxs-lookup"><span data-stu-id="cd32f-118">None</span></span>     | <span data-ttu-id="cd32f-119">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-119">Yes</span></span>          |
+| <span data-ttu-id="cd32f-120">Matrice Temp indicizzabile a 32 bit (x \# \[ n \] )</span><span class="sxs-lookup"><span data-stu-id="cd32f-120">32-bit indexable Temp Array (x\#\[n\])</span></span>             | <span data-ttu-id="cd32f-121">4096 (r \# + x \# \[ n \] )</span><span class="sxs-lookup"><span data-stu-id="cd32f-121">4096(r\#+x\#\[n\])</span></span> | <span data-ttu-id="cd32f-122">L/S</span><span class="sxs-lookup"><span data-stu-id="cd32f-122">R/W</span></span> | <span data-ttu-id="cd32f-123">4</span><span class="sxs-lookup"><span data-stu-id="cd32f-123">4</span></span>         | <span data-ttu-id="cd32f-124">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-124">Yes</span></span>              | <span data-ttu-id="cd32f-125">nessuno</span><span class="sxs-lookup"><span data-stu-id="cd32f-125">None</span></span>     | <span data-ttu-id="cd32f-126">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-126">Yes</span></span>          |
+| <span data-ttu-id="cd32f-127">input a 32 bit (v \# )</span><span class="sxs-lookup"><span data-stu-id="cd32f-127">32-bit input (v\#)</span></span>                                 | <span data-ttu-id="cd32f-128">32</span><span class="sxs-lookup"><span data-stu-id="cd32f-128">32</span></span>                 | <span data-ttu-id="cd32f-129">R</span><span class="sxs-lookup"><span data-stu-id="cd32f-129">R</span></span>   | <span data-ttu-id="cd32f-130">4</span><span class="sxs-lookup"><span data-stu-id="cd32f-130">4</span></span>         | <span data-ttu-id="cd32f-131">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-131">Yes</span></span>              | <span data-ttu-id="cd32f-132">nessuno</span><span class="sxs-lookup"><span data-stu-id="cd32f-132">None</span></span>     | <span data-ttu-id="cd32f-133">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-133">Yes</span></span>          |
+| <span data-ttu-id="cd32f-134">Elemento in una risorsa di input (t \# )</span><span class="sxs-lookup"><span data-stu-id="cd32f-134">Element in an input resource (t\#)</span></span>                 | <span data-ttu-id="cd32f-135">128</span><span class="sxs-lookup"><span data-stu-id="cd32f-135">128</span></span>                | <span data-ttu-id="cd32f-136">R</span><span class="sxs-lookup"><span data-stu-id="cd32f-136">R</span></span>   | <span data-ttu-id="cd32f-137">1</span><span class="sxs-lookup"><span data-stu-id="cd32f-137">1</span></span>         | <span data-ttu-id="cd32f-138">No</span><span class="sxs-lookup"><span data-stu-id="cd32f-138">No</span></span>               | <span data-ttu-id="cd32f-139">nessuno</span><span class="sxs-lookup"><span data-stu-id="cd32f-139">None</span></span>     | <span data-ttu-id="cd32f-140">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-140">Yes</span></span>          |
+| <span data-ttu-id="cd32f-141">Campionatore/ \# i</span><span class="sxs-lookup"><span data-stu-id="cd32f-141">Sampler (s\#)</span></span>                                      | <span data-ttu-id="cd32f-142">16</span><span class="sxs-lookup"><span data-stu-id="cd32f-142">16</span></span>                 | <span data-ttu-id="cd32f-143">R</span><span class="sxs-lookup"><span data-stu-id="cd32f-143">R</span></span>   | <span data-ttu-id="cd32f-144">1</span><span class="sxs-lookup"><span data-stu-id="cd32f-144">1</span></span>         | <span data-ttu-id="cd32f-145">No</span><span class="sxs-lookup"><span data-stu-id="cd32f-145">No</span></span>               | <span data-ttu-id="cd32f-146">nessuno</span><span class="sxs-lookup"><span data-stu-id="cd32f-146">None</span></span>     | <span data-ttu-id="cd32f-147">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-147">Yes</span></span>          |
+| <span data-ttu-id="cd32f-148">Guida di riferimento a ConstantBuffer ( \# \[ Indice CB \] )</span><span class="sxs-lookup"><span data-stu-id="cd32f-148">ConstantBuffer reference (cb\#\[index\])</span></span>           | <span data-ttu-id="cd32f-149">15</span><span class="sxs-lookup"><span data-stu-id="cd32f-149">15</span></span>                 | <span data-ttu-id="cd32f-150">R</span><span class="sxs-lookup"><span data-stu-id="cd32f-150">R</span></span>   | <span data-ttu-id="cd32f-151">4</span><span class="sxs-lookup"><span data-stu-id="cd32f-151">4</span></span>         | <span data-ttu-id="cd32f-152">Sì (contenuto)</span><span class="sxs-lookup"><span data-stu-id="cd32f-152">Yes(contents)</span></span>    | <span data-ttu-id="cd32f-153">nessuno</span><span class="sxs-lookup"><span data-stu-id="cd32f-153">None</span></span>     | <span data-ttu-id="cd32f-154">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-154">Yes</span></span>          |
+| <span data-ttu-id="cd32f-155">Guida di riferimento a iImmediate ConstantBuffer ( \[ Indice ICB \] )</span><span class="sxs-lookup"><span data-stu-id="cd32f-155">iImmediate ConstantBuffer reference (icb\[index\])</span></span> | <span data-ttu-id="cd32f-156">1</span><span class="sxs-lookup"><span data-stu-id="cd32f-156">1</span></span>                  | <span data-ttu-id="cd32f-157">R</span><span class="sxs-lookup"><span data-stu-id="cd32f-157">R</span></span>   | <span data-ttu-id="cd32f-158">4</span><span class="sxs-lookup"><span data-stu-id="cd32f-158">4</span></span>         | <span data-ttu-id="cd32f-159">Sì (contenuto)</span><span class="sxs-lookup"><span data-stu-id="cd32f-159">Yes(contents)</span></span>    | <span data-ttu-id="cd32f-160">nessuno</span><span class="sxs-lookup"><span data-stu-id="cd32f-160">None</span></span>     | <span data-ttu-id="cd32f-161">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-161">Yes</span></span>          |
+
+
+
+ 
+
+## <a name="output-registers"></a><span data-ttu-id="cd32f-162">Registri di output</span><span class="sxs-lookup"><span data-stu-id="cd32f-162">Output Registers</span></span>
+
+
+
+| <span data-ttu-id="cd32f-163">Tipo di registro</span><span class="sxs-lookup"><span data-stu-id="cd32f-163">Register Type</span></span>                                                      | <span data-ttu-id="cd32f-164">Conteggio</span><span class="sxs-lookup"><span data-stu-id="cd32f-164">Count</span></span> | <span data-ttu-id="cd32f-165">L/S</span><span class="sxs-lookup"><span data-stu-id="cd32f-165">R/W</span></span> | <span data-ttu-id="cd32f-166">Dimension</span><span class="sxs-lookup"><span data-stu-id="cd32f-166">Dimension</span></span> | <span data-ttu-id="cd32f-167">Indicizzabile da r\#</span><span class="sxs-lookup"><span data-stu-id="cd32f-167">Indexable by r\#</span></span> | <span data-ttu-id="cd32f-168">Valori predefiniti</span><span class="sxs-lookup"><span data-stu-id="cd32f-168">Defaults</span></span> | <span data-ttu-id="cd32f-169">Richiede DCL</span><span class="sxs-lookup"><span data-stu-id="cd32f-169">Requires DCL</span></span> |
+|--------------------------------------------------------------------|-------|-----|-----------|------------------|----------|--------------|
+| <span data-ttu-id="cd32f-170">NULL (risultato di scarto, utile per operazioni con più risultati)</span><span class="sxs-lookup"><span data-stu-id="cd32f-170">NULL (discard result, useful for operations with multiple results)</span></span> | <span data-ttu-id="cd32f-171">N/D</span><span class="sxs-lookup"><span data-stu-id="cd32f-171">N/A</span></span>   | <span data-ttu-id="cd32f-172">W</span><span class="sxs-lookup"><span data-stu-id="cd32f-172">W</span></span>   | <span data-ttu-id="cd32f-173">N/D</span><span class="sxs-lookup"><span data-stu-id="cd32f-173">N/A</span></span>       | <span data-ttu-id="cd32f-174">N/D</span><span class="sxs-lookup"><span data-stu-id="cd32f-174">N/A</span></span>              | <span data-ttu-id="cd32f-175">N/D</span><span class="sxs-lookup"><span data-stu-id="cd32f-175">N/A</span></span>      | <span data-ttu-id="cd32f-176">No</span><span class="sxs-lookup"><span data-stu-id="cd32f-176">No</span></span>           |
+| <span data-ttu-id="cd32f-177">Elemento dati vertex di output a 32 bit (o \# )</span><span class="sxs-lookup"><span data-stu-id="cd32f-177">32-bit output Vertex Data Element (o\#)</span></span>                            | <span data-ttu-id="cd32f-178">32</span><span class="sxs-lookup"><span data-stu-id="cd32f-178">32</span></span>    | <span data-ttu-id="cd32f-179">W</span><span class="sxs-lookup"><span data-stu-id="cd32f-179">W</span></span>   | <span data-ttu-id="cd32f-180">4</span><span class="sxs-lookup"><span data-stu-id="cd32f-180">4</span></span>         | <span data-ttu-id="cd32f-181">N/D</span><span class="sxs-lookup"><span data-stu-id="cd32f-181">N/A</span></span>              | <span data-ttu-id="cd32f-182">N/D</span><span class="sxs-lookup"><span data-stu-id="cd32f-182">N/A</span></span>      | <span data-ttu-id="cd32f-183">Sì</span><span class="sxs-lookup"><span data-stu-id="cd32f-183">Yes</span></span>          |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="cd32f-184">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="cd32f-184">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="cd32f-185">Modello Shader 5</span><span class="sxs-lookup"><span data-stu-id="cd32f-185">Shader Model 5</span></span>](d3d11-graphics-reference-sm5.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
