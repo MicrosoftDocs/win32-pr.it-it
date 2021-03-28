@@ -1,0 +1,1135 @@
+- name: Servizio Copia Shadow del volume
+  href: volume-shadow-copy-service-portal.md
+  items:
+    - name: Panoramica di Servizio Copia Shadow del volume
+      href: volume-shadow-copy-service-overview.md
+      items:
+        - name: Novità di VSS
+          href: what-s-new-in-vss.md
+          items:
+            - name: Novità di VSS in Windows Server 2008 R2 e Windows 7
+              href: what-s-new-in-vss-in-windows-server-2008-r2-and-windows-7.md
+            - name: Novità di VSS in Windows Server 2008 e Windows Vista SP1
+              href: what-s-new-in-vss-in-windows-server-2008-and-windows-vista-sp1.md
+            - name: Novità di VSS in Windows Vista
+              href: what-s-new-in-vss-in-windows-vista.md
+              items:
+                - name: Compatibilità delle applicazioni per il backup e il ripristino
+                  href: application-compatibility-for-backup-and-restore.md
+                  items:
+                    - name: Porting di applicazioni di backup
+                      href: porting-backup-applications.md
+                    - name: Backup e ripristino dello stato del sistema
+                      href: locating-additional-system-files.md
+                    - name: Utilizzo delle funzionalità di sicurezza e file System
+                      href: working-with-file-system-and-security-features.md
+                    - name: Punti di giunzione
+                      href: junction-points.md
+            - name: Novità di VSS in Windows Server 2003 SP1
+              href: what-s-new-in-vss-in-windows-server-2003-sp1.md
+            - name: Novità di VSS in Windows Server 2003
+              href: what-s-new-in-vss-in-windows-server-2003.md
+              items:
+                - name: Riepilogo delle modifiche all'API VSS in Windows Server 2003
+                  href: summary-of-vss-api-changes-in-the-current-release.md
+                - name: Nuove funzionalità disponibili in Windows Server 2003
+                  href: new-functionality-available-in-the-current-release.md
+                - name: Funzionalità rimosse da Windows Server 2003
+                  href: functionality-removed-from-the-current-release.md
+                - name: Modifiche semantiche di Windows Server 2003
+                  href: semantic-changes-to-the-current-release.md
+                - name: Limitazioni in Windows Server 2003
+                  href: restrictions-in-the-current-release-of-vss.md
+        - name: Informazioni sul Servizio Copia Shadow del volume
+          href: about-the-volume-shadow-copy-service.md
+          items:
+            - name: Problemi comuni di backup del volume
+              href: common-volume-backup-issues.md
+            - name: Modello VSS
+              href: the-vss-model.md
+            - name: Concetti di base su VSS
+              href: basic-vss-concepts.md
+              items:
+                - name: Servizio Copia Shadow del volume
+                  href: the-volume-shadow-copy-service.md
+                - name: Copie shadow e set di copie shadow
+                  href: shadow-copies-and-shadow-copy-sets.md
+                - name: Provider
+                  href: providers.md
+                - name: Requesters
+                  href: requestors.md
+                - name: Writer
+                  href: writers.md
+            - name: VSS writer inclusi
+              href: in-box-vss-writers.md
+        - name: Uso della Servizio Copia Shadow del volume
+          href: using-the-volume-shadow-copy-service.md
+          items:
+            - name: Compatibilità delle applicazioni VSS
+              href: usage-conventions.md
+            - name: Configurazione di VSS
+              href: configuring-vss.md
+              items:
+                - name: Configurazioni del contesto per copie shadow
+                  href: shadow-copy-context-configurations.md
+                - name: Configurazioni del backup VSS
+                  href: vss-backup-configurations.md
+                  items:
+                    - name: Stato backup VSS
+                      href: vss-backup-state.md
+                    - name: Supporto dello schema di backup del writer
+                      href: writer-backup-schema-support.md
+                    - name: Supporto dello schema a livello di file
+                      href: file-level-schema-support.md
+                - name: Configurazioni del ripristino VSS
+                  href: vss-restore-configurations.md
+                  items:
+                    - name: Stato ripristino VSS
+                      href: vss-restore-state.md
+                    - name: Impostazione di metodi di ripristino VSS
+                      href: setting-vss-restore-methods.md
+                    - name: Impostazione delle destinazioni di ripristino VSS
+                      href: setting-vss-restore-targets.md
+                    - name: Impostazione delle opzioni di ripristino VSS
+                      href: setting-vss-restore-options.md
+            - name: Metadati VSS
+              href: vss-metadata.md
+              items:
+                - name: Utilizzo del documento di metadati del writer
+                  href: working-with-the-writer-metadata-document.md
+                  items:
+                    - name: Ciclo di vita del documento dei metadati del writer
+                      href: writer-metadata-document-life-cycle.md
+                    - name: Contenuto del documento dei metadati del writer
+                      href: writer-metadata-document-contents.md
+                - name: Utilizzo del documento componenti di backup
+                  href: working-with-the-backup-components-document.md
+                  items:
+                    - name: Ciclo di vita del documento dei componenti di backup
+                      href: backup-components-document-life-cycle.md
+                    - name: Contenuto del documento dei componenti di backup
+                      href: backup-components-document-contents.md
+                - name: Componenti dei metadati VSS
+                  href: vss-metadata-components.md
+                  items:
+                    - name: Tipi di componenti
+                      href: component-types.md
+                    - name: Definizione dei componenti per Writer
+                      href: definition-of-components-by-writers.md
+                    - name: Uso dei componenti da parte del richiedente
+                      href: use-of-components-by-the-requestor.md
+            - name: Uso della selezione e dei percorsi logici
+              href: working-with-selectability-and-logical-paths.md
+              items:
+                - name: Percorso logico dei componenti
+                  href: logical-pathing-of-components.md
+                - name: Utilizzo della selezione per il backup
+                  href: working-with-selectability-for-backup.md
+                - name: Utilizzo della selezione per il ripristino e i sottocomponenti
+                  href: working-with-selectability-for-restore-and-subcomponents.md
+                - name: Selezione e utilizzo delle proprietà dei componenti
+                  href: selectability-and-working-with-component-properties.md
+                - name: Dipendenze tra componenti gestiti da Writer diversi
+                  href: dependencies-between-components-managed-by-different-writers.md
+            - name: Cenni preliminari sull'elaborazione di un backup in VSS
+              href: overview-of-processing-a-backup-under-vss.md
+              items:
+                - name: Panoramica dell'inizializzazione del backup
+                  href: overview-of-backup-initialization.md
+                - name: Panoramica della fase di individuazione del backup
+                  href: overview-of-the-backup-discovery-phase.md
+                - name: Panoramica delle attività di pre-backup
+                  href: overview-of-pre-backup-tasks.md
+                - name: Panoramica del backup effettivo dei file
+                  href: overview-of-actual-backup-of-files.md
+                - name: Panoramica della terminazione del backup
+                  href: overview-of-backup-termination.md
+            - name: Panoramica dell'elaborazione di un ripristino in VSS
+              href: overview-of-processing-a-restore-under-vss.md
+              items:
+                - name: Panoramica dell'inizializzazione del ripristino
+                  href: overview-of-restore-initialization.md
+                - name: Panoramica della preparazione per il ripristino
+                  href: overview-of-preparing-for-restore.md
+                - name: Panoramica del ripristino dei file effettivi
+                  href: overview-of-actual-file-restoration.md
+                - name: Panoramica della pulizia e della chiusura del ripristino
+                  href: overview-of-restore-clean-up-and-termination.md
+            - name: Sviluppo di provider hardware VSS
+              href: developing-vss-hardware-providers.md
+              items:
+                - name: Registrazione e caricamento del provider di copie shadow
+                  href: shadow-copy-provider-registration-and-loading.md
+                - name: Creazione di copie shadow per i provider
+                  href: shadow-copy-creation-for-providers.md
+                - name: Interazioni e comportamenti del provider hardware
+                  href: hardware-provider-interactions-and-behaviors.md
+                  items:
+                    - name: Processo di creazione della copia shadow
+                      href: the-shadow-copy-creation-process.md
+                    - name: Comportamenti necessari per i provider di copie shadow
+                      href: required-behaviors-for-shadow-copy-providers.md
+                    - name: Transizioni di stato nei provider di copie shadow
+                      href: state-transitions-in-shadow-copy-providers.md
+                    - name: Gestione degli errori nei provider di copie shadow
+                      href: error-handling-in-shadow-copy-providers.md
+        - name: Dettagli di implementazione VSS
+          href: vss-implementation-details.md
+          items:
+            - name: Dettagli di implementazione per i backup VSS
+              href: implementation-details-for-vss-backups.md
+              items:
+                - name: Generazione di un set di backup
+                  href: generating-a-backup-set.md
+                - name: Backup incrementali e differenziali
+                  href: incremental-and-differential-backups.md
+                  items:
+                    - name: Ruolo writer nei backup incrementali e differenziali VSS
+                      href: writer-role-in-vss-incremental-and-differential-backups.md
+                    - name: Ruolo del richiedente nei backup incrementali e differenziali VSS
+                      href: requestor-role-in-vss-incremental-and-differential-backups.md
+                    - name: Ruolo di writer per il backup di archivi complessi
+                      href: writer-role-in-backing-up-complex-stores.md
+                    - name: Ruolo del richiedente nel backup di archivi complessi
+                      href: requestor-role-in-backing-up-complex-stores.md
+                - name: Backup senza partecipazione del writer
+                  href: backups-without-writer-participation.md
+                - name: Uso delle cartelle e dei reparse point montati
+                  href: working-with-reparse-and-mount-points.md
+            - name: Dettagli di implementazione per i ripristini VSS
+              href: implementation-details-for-vss-restores.md
+              items:
+                - name: Generazione di un set di ripristino
+                  href: generating-a-restore-set.md
+                - name: Ripristino di backup incrementali e differenziali
+                  href: restoring-incremental-and-differential-backups.md
+                - name: Ripristini senza partecipazione del writer
+                  href: restores-without-writer-participation.md
+            - name: Percorsi di backup e ripristino non predefiniti
+              href: non-default-backup-and-restore-locations.md
+              items:
+                - name: Utilizzo di percorsi alternativi durante il backup
+                  href: working-with-alternate-paths-during-backup.md
+                - name: Utilizzo di percorsi alternativi durante il ripristino
+                  href: working-with-alternate-locations-during-restore.md
+                - name: Utilizzo di nuove destinazioni durante il ripristino
+                  href: working-with-new-targets-during-restore.md
+                - name: Utilizzo di file parziali
+                  href: working-with-partial-files.md
+                - name: Utilizzo di destinazioni dirette
+                  href: working-with-directed-targets.md
+            - name: Dettagli di implementazione per la creazione di copie shadow
+              href: implementation-details-for-creating-shadow-copies.md
+              items:
+                - name: Creazione di copie shadow semplici per il backup
+                  href: simple-shadow-copy-creation-for-backup.md
+                - name: Dettagli creazione copia shadow
+                  href: shadow-copy-creation-details.md
+                - name: Esclusione di file dalle copie shadow
+                  href: excluding-files-from-shadow-copies.md
+                - name: Selezione di provider
+                  href: selecting-providers.md
+            - name: Dettagli di implementazione per l'utilizzo di copie shadow
+              href: implementation-details-for-using-shadow-copies.md
+              items:
+                - name: Accesso del richiedente ai dati copiati in Shadow
+                  href: requestor-access-to-shadow-copied-data.md
+                - name: Importazione di volumi di copie shadow trasportabili
+                  href: importing-transportable-shadow-copied-volumes.md
+                  items:
+                    - name: Ripristino rapido tramite volumi di copie shadow trasportabili
+                      href: fast-recovery-using-transportable-shadow-copied-volumes.md
+                - name: Esposizione ed emersione di volumi copiati Shadow
+                  href: exposing-and-surfacing-shadow-copied-volumes.md
+                - name: Suddivisione delle copie shadow
+                  href: breaking-shadow-copies.md
+        - name: Risoluzione dei problemi relativi alle applicazioni VSS
+          href: troubleshooting-vss-applications.md
+          items:
+            - name: Gestione degli eventi e degli errori in VSS
+              href: event-and-error-handling-under-vss.md
+              items:
+                - name: Determinazione dello stato del writer
+                  href: determining-writer-status.md
+                - name: Registrazione degli errori VSS
+                  href: vss-error-logging.md
+                - name: Errori e veto del writer
+                  href: writer-errors-and-vetoes.md
+                - name: Interruzione delle operazioni VSS
+                  href: aborting-vss-operations.md
+                - name: Gestione degli eventi BackupShutdown
+                  href: handling-backupshutdown-events.md
+            - name: Problemi di sicurezza VSS
+              href: vss-security-issues.md
+              items:
+                - name: Considerazioni sulla sicurezza per i writer
+                  href: security-considerations-for-writers.md
+                - name: Considerazioni sulla sicurezza per i richiedenti
+                  href: security-considerations-for-requestors.md
+            - name: Casi di utilizzo VSS speciali
+              href: special-vss-usage-cases.md
+              items:
+                - name: Arresto dei servizi per il ripristino da richiedenti
+                  href: stopping-services-for-restore-by-requestors.md
+                - name: Backup e ripristino dello stato del sistema in Windows Server 2003 R2 e Windows Server 2003 SP1
+                  href: backing-up-and-restoring-system-state-under-vss.md
+                - name: Uso del ripristino automatico del sistema VSS per il ripristino di emergenza
+                  href: using-vss-automated-system-recovery-for-disaster-recovery.md
+                  items:
+                    - name: Uso degli strumenti di traccia con le applicazioni ASR
+                      href: using-tracing-tools-with-vss-asr-applications.md
+                - name: Backup e ripristini personalizzati
+                  href: custom-backups-and-restores.md
+                  items:
+                    - name: Backup e ripristino del servizio Copia Shadow del volume del Active Directory
+                      href: vss-backup-and-restore-of-the-active-directory.md
+                    - name: Backup e ripristino di una cartella FRS-Replicated SYSVOL
+                      href: backing-up-and-restoring-an-frs-replicated-sysvol-folder.md
+                    - name: Backup e ripristini VSS del database cluster
+                      href: vss-backups-and-restores-of-the-cluster-database.md
+                    - name: Operazioni di backup e ripristino del registro di sistema in VSS
+                      href: registry-backup-and-restore-operations-under-vss.md
+                    - name: Backup e ripristino del database di registrazione della classe COM+ in VSS
+                      href: backing-up-and-restoring-the-com-class-registration-database-under-vss.md
+        - name: Strumenti e esempi VSS
+          href: vss-tools-and-samples.md
+          items:
+            - name: Uso degli strumenti di traccia con VSS
+              href: using-tracing-tools-with-vss.md
+            - name: Uso della diagnostica VSS
+              href: using-vss-diagnostics.md
+            - name: Strumento VssSampleProvider ed esempio
+              href: vsssampleprovider-tool-and-sample.md
+            - name: Strumento VShadow ed esempio
+              href: vshadow-tool-and-sample.md
+              items:
+                - name: Esempi di strumenti VShadow
+                  href: vshadow-tool-examples.md
+            - name: Strumento di test
+              href: betest-tool.md
+            - name: Strumento writer di test VSS
+              href: vss-test-writer-tool.md
+    - name: Riferimento copia shadow del volume
+      href: volume-shadow-copy-reference.md
+      items:
+        - name: Classi API copia shadow del volume
+          href: volume-shadow-copy-api-classes.md
+          items:
+            - name: CVssWriter
+              href: /windows/desktop/api/VsWriter/nl-vswriter-cvsswriter
+              items:
+                - name: Metodo CVssWriter
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-cvsswriter
+                - name: ~ CVssWriter (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-~cvsswriter
+                - name: Metodo AreComponentsSelected
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-arecomponentsselected
+                - name: Metodo GetBackupType
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getbackuptype
+                - name: Metodo GetContext
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getcontext
+                - name: Metodo GetCurrentLevel
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getcurrentlevel
+                - name: Metodo GetCurrentSnapshotSetId
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getcurrentsnapshotsetid
+                - name: Metodo GetCurrentVolumeArray
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getcurrentvolumearray
+                - name: Metodo GetCurrentVolumeCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getcurrentvolumecount
+                - name: Metodo GetRestoreType
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getrestoretype
+                - name: Metodo GetSnapshotDeviceName
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getsnapshotdevicename
+                - name: Metodo Initialize
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-initialize
+                - name: Metodo InstallAlternateWriter
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-installalternatewriter
+                - name: Metodo IsBootableSystemStateBackedUp
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-isbootablesystemstatebackedup
+                - name: Metodo IsPartialFileSupportEnabled
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-ispartialfilesupportenabled
+                - name: Metodo IsPathAffected
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-ispathaffected
+                - name: OnAbort (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onabort
+                - name: Metodo OnBackOffIOOnVolume
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackoffioonvolume
+                - name: Metodo OnContinueIOOnVolume
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-oncontinueioonvolume
+                - name: Metodo OnBackupComplete
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackupcomplete
+                - name: Metodo OnBackupShutdown
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackupshutdown
+                - name: Metodo onFreeze
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onfreeze
+                - name: Onidentifi (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify
+                - name: Metodo OnPostRestore
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpostrestore
+                - name: Metodo OnPostSnapshot
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpostsnapshot
+                - name: Metodo OnPrepareBackup
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpreparebackup
+                - name: Metodo OnPrepareSnapshot
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onpreparesnapshot
+                - name: Metodo OnPreRestore
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onprerestore
+                - name: Onscongelate (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onthaw
+                - name: Metodo OnVSSApplicationStartup
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onvssapplicationstartup
+                - name: Metodo OnVssShutdown
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onvssshutdown
+                - name: Metodo SetWriterFailure
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-setwriterfailure
+                - name: Subscribe (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-subscribe
+                - name: Annulla sottoscrizione (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-unsubscribe
+            - name: CVssWriterEx
+              href: /windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex
+              items:
+                - name: Metodo GetIdentifyInformation
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex-getidentifyinformation
+                - name: Metodo InitializeEx
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex-initializeex
+                - name: Metodo OnIdentifyEx
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex-onidentifyex
+                - name: Metodo SubscribeEx
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex-subscribeex
+            - name: CVssWriterEx2
+              href: /windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex2
+              items:
+                - name: Metodo GetSessionID
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex2-getsessionid
+                - name: Metodo IsWriterShuttingDown
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex2-iswritershuttingdown
+                - name: Metodo SetWriterFailureEx
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-cvsswriterex2-setwriterfailureex
+        - name: Tipi di dati dell'API copia shadow del volume
+          href: volume-shadow-copy-api-data-types.md
+        - name: Enumerazioni API copia shadow del volume
+          href: volume-shadow-copy-api-enumeration-types.md
+          items:
+            - name: VSS_ALTERNATE_WRITER_STATE
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_alternate_writer_state
+            - name: VSS_APPLICATION_LEVEL
+              href: /windows/win32/api/Vss/ne-vss-vss_application_level
+            - name: VSS_BACKUP_SCHEMA
+              href: /windows/win32/api/Vss/ne-vss-vss_backup_schema
+            - name: VSS_BACKUP_TYPE
+              href: /windows/win32/api/Vss/ne-vss-vss_backup_type
+            - name: VSS_COMPONENT_FLAGS
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_component_flags
+            - name: VSS_COMPONENT_TYPE
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_component_type
+            - name: VSS_FILE_RESTORE_STATUS
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_file_restore_status
+            - name: VSS_FILE_SPEC_BACKUP_TYPE
+              href: /windows/win32/api/Vss/ne-vss-vss_file_spec_backup_type
+            - name: _VSS_HARDWARE_OPTIONS
+              href: /windows/win32/api/Vss/ne-vss-vss_hardware_options
+            - name: VSS_MGMT_OBJECT_TYPE
+              href: /windows/win32/api/VsMgmt/ne-vsmgmt-vss_mgmt_object_type
+            - name: VSS_OBJECT_TYPE
+              href: /windows/win32/api/Vss/ne-vss-vss_object_type
+            - name: VSS_PROTECTION_FAULT
+              href: /windows/win32/api/VsMgmt/ne-vsmgmt-vss_protection_fault
+            - name: VSS_PROTECTION_LEVEL
+              href: /windows/win32/api/VsMgmt/ne-vsmgmt-vss_protection_level
+            - name: _VSS_PROVIDER_CAPABILITIES
+              href: /windows/win32/api/vss/ne-vss-vss_provider_capabilities
+            - name: VSS_PROVIDER_TYPE
+              href: /windows/win32/api/Vss/ne-vss-vss_provider_type
+            - name: VSS_RECOVERY_OPTIONS
+              href: /windows/win32/api/Vss/ne-vss-vss_recovery_options
+            - name: VSS_RESTORE_TARGET
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_restore_target
+            - name: VSS_RESTORE_TYPE
+              href: /windows/win32/api/Vss/ne-vss-vss_restore_type
+            - name: VSS_RESTOREMETHOD_ENUM
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_restoremethod_enum
+            - name: VSS_ROLLFORWARD_TYPE
+              href: /windows/win32/api/Vss/ne-vss-vss_rollforward_type
+            - name: VSS_SNAPSHOT_COMPATIBILITY
+              href: /windows/win32/api/Vss/ne-vss-vss_snapshot_compatibility
+            - name: _VSS_SNAPSHOT_CONTEXT
+              href: /windows/win32/api/Vss/ne-vss-vss_snapshot_context
+            - name: VSS_SNAPSHOT_PROPERTY_ID
+              href: /windows/win32/api/Vss/ne-vss-vss_snapshot_property_id
+            - name: VSS_SNAPSHOT_STATE
+              href: /windows/win32/api/Vss/ne-vss-vss_snapshot_state
+            - name: VSS_SOURCE_TYPE
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_source_type
+            - name: VSS_SUBSCRIBE_MASK
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_subscribe_mask
+            - name: VSS_USAGE_TYPE
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_usage_type
+            - name: _VSS_VOLUME_SNAPSHOT_ATTRIBUTES
+              href: /windows/win32/api/Vss/ne-vss-vss_volume_snapshot_attributes
+            - name: VSS_WRITER_STATE
+              href: /windows/win32/api/Vss/ne-vss-vss_writer_state
+            - name: VSS_WRITERRESTORE_ENUM
+              href: /windows/desktop/api/VsWriter/ne-vswriter-vss_writerrestore_enum
+        - name: Funzioni API copia shadow del volume
+          href: volume-shadow-copy-api-functions.md
+          items:
+            - name: CreateVssBackupComponents
+              href: /windows/desktop/api/VsBackup/nf-vsbackup-createvssbackupcomponents
+            - name: CreateVssExamineWriterMetadata
+              href: /windows/desktop/api/VsBackup/nf-vsbackup-createvssexaminewritermetadata
+            - name: CreateVssExpressWriter
+              href: /windows/desktop/api/VsWriter/nf-vswriter-createvssexpresswriter
+            - name: CreateWriter
+              href: /windows/desktop/api/vswriter/nf-vswriter-createwriter
+            - name: CreateWriterEx
+              href: /windows/desktop/api/vswriter/nf-vswriter-createwriterex
+            - name: IsVolumeSnapshotted
+              href: /windows/desktop/api/VsBackup/nf-vsbackup-isvolumesnapshotted
+            - name: ShouldBlockRevert
+              href: /windows/desktop/api/VsBackup/nf-vsbackup-shouldblockrevert
+            - name: VssFreeSnapshotProperties
+              href: /windows/desktop/api/VsBackup/nf-vsbackup-vssfreesnapshotproperties
+        - name: Interfacce API copia shadow del volume
+          href: volume-shadow-copy-api-interfaces.md
+          items:
+            - name: IVssAdmin
+              href: /windows/desktop/api/VsAdmin/nn-vsadmin-ivssadmin
+              items:
+                - name: Metodo AbortAllSnapshotsInProgress
+                  href: /windows/desktop/api/VsAdmin/nf-vsadmin-ivssadmin-abortallsnapshotsinprogress
+                - name: Metodo QueryProviders
+                  href: /windows/desktop/api/VsAdmin/nf-vsadmin-ivssadmin-queryproviders
+                - name: Metodo RegisterProvider
+                  href: /windows/desktop/api/VsAdmin/nf-vsadmin-ivssadmin-registerprovider
+                - name: Metodo UnregisterProvider
+                  href: /windows/desktop/api/VsAdmin/nf-vsadmin-ivssadmin-unregisterprovider
+            - name: IVssAsync
+              href: /windows/desktop/api/Vss/nn-vss-ivssasync
+              items:
+                - name: Metodo Cancel
+                  href: /windows/desktop/api/Vss/nf-vss-ivssasync-cancel
+                - name: Metodo QueryStatus
+                  href: /windows/desktop/api/Vss/nf-vss-ivssasync-querystatus
+                - name: Metodo Wait
+                  href: /windows/desktop/api/Vss/nf-vss-ivssasync-wait
+            - name: IVssBackupComponents
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents
+              items:
+                - name: Metodo AbortBackup
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-abortbackup
+                - name: Metodo AddAlternativeLocationMapping
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping
+                - name: Metodo AddComponent
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addcomponent
+                - name: Metodo AddNewTarget
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget
+                - name: Metodo AddRestoreSubcomponent
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addrestoresubcomponent
+                - name: Metodo AddToSnapshotSet
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addtosnapshotset
+                - name: Metodo BackupComplete
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-backupcomplete
+                - name: Metodo BreakSnapshotSet
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-breaksnapshotset
+                - name: Metodo DeleteSnapshots
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-deletesnapshots
+                - name: Metodo DisableWriterClasses
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-disablewriterclasses
+                - name: Metodo DisableWriterInstances
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-disablewriterinstances
+                - name: Metodo DoSnapshotSet
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset
+                - name: Metodo EnableWriterClasses
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-enablewriterclasses
+                - name: Metodo ExposeSnapshot
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-exposesnapshot
+                - name: Metodo FreeWriterMetadata
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-freewritermetadata
+                - name: Metodo FreeWriterStatus
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-freewriterstatus
+                - name: Metodo GatherWriterMetadata
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwritermetadata
+                - name: Metodo GatherWriterStatus
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus
+                - name: Metodo GetSnapshotProperties
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getsnapshotproperties
+                - name: Metodo GetWriterComponents
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwritercomponents
+                - name: Metodo GetWriterComponentsCount
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwritercomponentscount
+                - name: Metodo GetWriterMetadata
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwritermetadata
+                - name: Metodo GetWriterMetadataCount
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwritermetadatacount
+                - name: Metodo GetWriterStatus
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwriterstatus
+                - name: Metodo GetWriterStatusCount
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwriterstatuscount
+                - name: Metodo ImportSnapshots
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-importsnapshots
+                - name: Metodo InitializeForBackup
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-initializeforbackup
+                - name: Metodo InitializeForRestore
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-initializeforrestore
+                - name: Metodo IsVolumeSupported
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-isvolumesupported
+                - name: Metodo PostRestore
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-postrestore
+                - name: Metodo PrepareForBackup
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup
+                - name: Metodo PreRestore
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore
+                - name: Metodo di query
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-query
+                - name: Metodo QueryRevertStatus
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-queryrevertstatus
+                - name: Metodo RevertToSnapshot
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-reverttosnapshot
+                - name: Metodo SaveAsXML
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-saveasxml
+                - name: Metodo SetAdditionalRestores
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setadditionalrestores
+                - name: Metodo SetBackupOptions
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupoptions
+                - name: Metodo SetBackupState
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupstate
+                - name: Metodo SetBackupSucceeded
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupsucceeded
+                - name: Metodo SetContext
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setcontext
+                - name: Metodo SetFileRestoreStatus
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setfilerestorestatus
+                - name: Metodo SetPreviousBackupStamp
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setpreviousbackupstamp
+                - name: Metodo SetRangesFilePath
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrangesfilepath
+                - name: Metodo SetRestoreOptions
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestoreoptions
+                - name: Metodo SetRestoreState
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestorestate
+                - name: Metodo SetSelectedForRestore
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setselectedforrestore
+                - name: Metodo StartSnapshotSet
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-startsnapshotset
+            - name: IVssBackupComponentsEx
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponentsex
+              items:
+                - name: Metodo GetWriterMetadataEx
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex-getwritermetadataex
+                - name: Metodo SetSelectedForRestoreEx
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex-setselectedforrestoreex
+            - name: IVssBackupComponentsEx2
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponentsex2
+              items:
+                - name: Metodo BreakSnapshotSetEx
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-breaksnapshotsetex
+                - name: Metodo FastRecovery
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-fastrecovery
+                - name: Metodo PreFastRecovery
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-prefastrecovery
+                - name: Metodo SetAuthoritativeRestore
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setauthoritativerestore
+                - name: Metodo serestore
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setrestorename
+                - name: Metodo SetRollForward
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setrollforward
+                - name: Metodo UnexposeSnapshot
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-unexposesnapshot
+            - name: IVssBackupComponentsEx3
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponentsex3
+              items:
+                - name: Metodo AddSnapshotToRecoverySet
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-addsnapshottorecoveryset
+                - name: Metodo GetSessionID
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-getsessionid
+                - name: Metodo GetWriterStatusEx
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-getwriterstatusex
+                - name: Metodo recovert
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex3-recoverset
+            - name: IVssBackupComponentsEx4
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponentsex4
+              items:
+                - name: Metodo GetRootAndLogicalPrefixPaths
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex4-getrootandlogicalprefixpaths
+            - name: IVssComponent
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent
+              items:
+                - name: Metodo AddDifferencedFilesByLastModifyLSN
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddifferencedfilesbylastmodifylsn
+                - name: Metodo AddDifferencedFilesByLastModifyTime
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddifferencedfilesbylastmodifytime
+                - name: Metodo AddDirectedTarget
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddirectedtarget
+                - name: Metodo AddPartialFile
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-addpartialfile
+                - name: Metodo GetAdditionalRestores
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getadditionalrestores
+                - name: Metodo GetAlternateLocationMapping
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getalternatelocationmapping
+                - name: Metodo GetAlternateLocationMappingCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getalternatelocationmappingcount
+                - name: Metodo GetBackupMetadata
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupmetadata
+                - name: Metodo GetBackupOptions
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupoptions
+                - name: Metodo GetBackupStamp
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupstamp
+                - name: Metodo GetBackupSucceeded
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getbackupsucceeded
+                - name: GetComponentName (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getcomponentname
+                - name: Metodo GetComponentType
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getcomponenttype
+                - name: Metodo GetDifferencedFile
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfile
+                - name: Metodo GetDifferencedFilesCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfilescount
+                - name: Metodo GetDirectedTarget
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtarget
+                - name: Metodo GetDirectedTargetCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtargetcount
+                - name: Metodo GetFileRestoreStatus
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getfilerestorestatus
+                - name: Metodo GetLogicalPath
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getlogicalpath
+                - name: Metodo GetNewTarget
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getnewtarget
+                - name: Metodo GetNewTargetCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getnewtargetcount
+                - name: Metodo GetPartialFile
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile
+                - name: Metodo GetPartialFileCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfilecount
+                - name: Metodo GetPostRestoreFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpostrestorefailuremsg
+                - name: Metodo GetPreRestoreFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getprerestorefailuremsg
+                - name: Metodo GetPreviousBackupStamp
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp
+                - name: Metodo GetRestoreMetadata
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoremetadata
+                - name: Metodo GetRestoreOptions
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoreoptions
+                - name: Metodo GetRestoreSubcomponent
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoresubcomponent
+                - name: Metodo GetRestoreSubcomponentCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoresubcomponentcount
+                - name: Metodo GetRestoreTarget
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoretarget
+                - name: Metodo IsSelectedForRestore
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-isselectedforrestore
+                - name: Metodo SetBackupMetadata
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupmetadata
+                - name: Metodo SetBackupStamp
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp
+                - name: Metodo SetPostRestoreFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setpostrestorefailuremsg
+                - name: Metodo SetPreRestoreFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setprerestorefailuremsg
+                - name: Metodo SetRestoreMetadata
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoremetadata
+                - name: Metodo SetRestoreTarget
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setrestoretarget
+            - name: IVssComponentEx
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscomponentex
+              items:
+                - name: Metodo GetAuthoritativeRestore
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getauthoritativerestore
+                - name: Metodo GetPostSnapshotFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getpostsnapshotfailuremsg
+                - name: Metodo GetPrepareForBackupFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getprepareforbackupfailuremsg
+                - name: Metodo getrestore
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getrestorename
+                - name: Metodo GetRollForward
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-getrollforward
+                - name: Metodo SetPostSnapshotFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-setpostsnapshotfailuremsg
+                - name: Metodo SetPrepareForBackupFailureMsg
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscomponentex-setprepareforbackupfailuremsg
+            - name: IVssComponentEx2
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscomponentex2
+              items:
+                - name: Metodo getfailure
+                  href: /windows/desktop/api/vswriter/nf-vswriter-ivsscomponentex2-getfailure
+                - name: Metodo sefailure
+                  href: /windows/desktop/api/vswriter/nf-vswriter-ivsscomponentex2-setfailure
+            - name: IVssCreateExpressWriterMetadata
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscreateexpresswritermetadata
+              items:
+                - name: Metodo AddComponent
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreateexpresswritermetadata-addcomponent
+                - name: Metodo AddComponentDependency
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreateexpresswritermetadata-addcomponentdependency
+                - name: Metodo AddExcludeFiles
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreateexpresswritermetadata-addexcludefiles
+                - name: Metodo AddFilesToFileGroup
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreateexpresswritermetadata-addfilestofilegroup
+                - name: Metodo SaveAsXML
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreateexpresswritermetadata-saveasxml
+                - name: Metodo SetBackupSchema
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreateexpresswritermetadata-setbackupschema
+                - name: Metodo SetRestoreMethod
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreateexpresswritermetadata-setrestoremethod
+            - name: IVssCreateWriterMetadata
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscreatewritermetadata
+              items:
+                - name: Metodo AddAlternateLocationMapping
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addalternatelocationmapping
+                - name: Metodo AddComponent
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addcomponent
+                - name: Metodo AddComponentDependency
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addcomponentdependency
+                - name: Metodo AddDatabaseFiles
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles
+                - name: Metodo AddDatabaseLogFiles
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles
+                - name: Metodo AddExcludeFiles
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addexcludefiles
+                - name: Metodo AddFilesToFileGroup
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup
+                - name: Metodo AddIncludeFiles
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addincludefiles
+                - name: Metodo GetDocument
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-getdocument
+                - name: Metodo SaveAsXML
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-saveasxml
+                - name: Metodo SetBackupSchema
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-setbackupschema
+                - name: Metodo SetRestoreMethod
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-setrestoremethod
+            - name: IVssCreateWriterMetadataEx
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsscreatewritermetadataex
+              items:
+                - name: Metodo AddExcludeFilesFromSnapshot
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadataex-addexcludefilesfromsnapshot
+            - name: IVssDifferentialSoftwareSnapshotMgmt
+              href: /windows/desktop/api/VsMgmt/nn-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt
+              items:
+                - name: Metodo AddDiffArea
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt-adddiffarea
+                - name: Metodo ChangeDiffAreaMaximumSize
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt-changediffareamaximumsize
+                - name: Metodo QueryDiffAreasForSnapshot
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt-querydiffareasforsnapshot
+                - name: Metodo QueryDiffAreasForVolume
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt-querydiffareasforvolume
+                - name: Metodo QueryDiffAreasOnVolume
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt-querydiffareasonvolume
+                - name: Metodo QueryVolumesSupportedForDiffAreas
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt-queryvolumessupportedfordiffareas
+            - name: IVssDifferentialSoftwareSnapshotMgmt2
+              href: /windows/desktop/api/VsMgmt/nn-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt2
+              items:
+                - name: Metodo ChangeDiffAreaMaximumSizeEx
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt2-changediffareamaximumsizeex
+                - name: Metodo MigrateDiffAreas
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt2-migratediffareas
+                - name: Metodo QueryMigrationStatus
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt2-querymigrationstatus
+                - name: Metodo SetSnapshotPriority
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt2-setsnapshotpriority
+            - name: IVssDifferentialSoftwareSnapshotMgmt3
+              href: /windows/desktop/api/VsMgmt/nn-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt3
+              items:
+                - name: Metodo ClearVolumeProtectFault
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt3-clearvolumeprotectfault
+                - name: Metodo DeleteUnusedDiffAreas
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt3-deleteunuseddiffareas
+                - name: Metodo GetVolumeProtectLevel
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt3-getvolumeprotectlevel
+                - name: Metodo QuerySnapshotDeltaBitmap
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt3-querysnapshotdeltabitmap
+                - name: Metodo SetVolumeProtectLevel
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt3-setvolumeprotectlevel
+            - name: IVssEnumMgmtObject
+              href: /windows/desktop/api/VsMgmt/nn-vsmgmt-ivssenummgmtobject
+              items:
+                - name: Metodo Clone
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssenummgmtobject-clone
+                - name: Metodo Next
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssenummgmtobject-next
+                - name: Metodo Reset
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssenummgmtobject-reset
+                - name: Metodo Skip
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivssenummgmtobject-skip
+            - name: IVssEnumObject
+              href: /windows/desktop/api/Vss/nn-vss-ivssenumobject
+              items:
+                - name: Metodo Clone
+                  href: /windows/desktop/api/Vss/nf-vss-ivssenumobject-clone
+                - name: Metodo Next
+                  href: /windows/desktop/api/Vss/nf-vss-ivssenumobject-next
+                - name: Metodo Reset
+                  href: /windows/desktop/api/Vss/nf-vss-ivssenumobject-reset
+                - name: Metodo Skip
+                  href: /windows/desktop/api/Vss/nf-vss-ivssenumobject-skip
+            - name: IVssExamineWriterMetadata
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssexaminewritermetadata
+              items:
+                - name: Metodo GetAlternateLocationMapping
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getalternatelocationmapping
+                - name: Metodo GetBackupSchema
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema
+                - name: GetComponent (metodo)
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getcomponent
+                - name: Metodo GetDocument
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getdocument
+                - name: Metodo GetExcludeFile
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getexcludefile
+                - name: Metodo GetFileCounts
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getfilecounts
+                - name: Metodo GetIdentity
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity
+                - name: Metodo GetIncludeFile
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getincludefile
+                - name: Metodo GetRestoreMethod
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getrestoremethod
+                - name: LoadFromXML (metodo)
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-loadfromxml
+                - name: Metodo SaveAsXML
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-saveasxml
+            - name: IVssExamineWriterMetadataEx
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssexaminewritermetadataex
+              items:
+                - name: Metodo GetIdentityEx
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadataex-getidentityex
+            - name: IVssExamineWriterMetadataEx2
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivssexaminewritermetadataex2
+              items:
+                - name: Metodo GetExcludeFromSnapshotCount
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadataex2-getexcludefromsnapshotcount
+                - name: Metodo GetExcludeFromSnapshotFile
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadataex2-getexcludefromsnapshotfile
+                - name: Metodo GetVersion
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadataex2-getversion
+            - name: IVssExpressWriter
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivssexpresswriter
+              items:
+                - name: Metodo CreateMetadata
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-createmetadata
+                - name: Metodo LoadMetadata
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-loadmetadata
+                - name: Register (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-register
+                - name: Annulla registrazione metodo
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivssexpresswriter-unregister
+            - name: IVssFileShareSnapshotProvider
+              href: /windows/desktop/api/VsProv/nn-vsprov-ivssfilesharesnapshotprovider
+              items:
+                - name: Metodo BeginPrepareSnapshot
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-beginpreparesnapshot
+                - name: Metodo DeleteSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-deletesnapshots
+                - name: Metodo GetSnapshotProperties
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-getsnapshotproperties
+                - name: Metodo IsPathSnapshotted
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-ispathsnapshotted
+                - name: Metodo IsPathSupported
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-ispathsupported
+                - name: Metodo di query
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-query
+                - name: Metodo secontext
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-setcontext
+                - name: Metodo SetSnapshotProperty
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssfilesharesnapshotprovider-setsnapshotproperty
+            - name: IVssHardwareSnapshotProvider
+              href: /windows/desktop/api/VsProv/nn-vsprov-ivsshardwaresnapshotprovider
+              items:
+                - name: Metodo AreLunsSupported
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotprovider-arelunssupported
+                - name: Metodo BeginPrepareSnapshot
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotprovider-beginpreparesnapshot
+                - name: Metodo FillInLunInfo
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotprovider-fillinluninfo
+                - name: Metodo GetTargetLuns
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotprovider-gettargetluns
+                - name: Metodo LocateLuns
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotprovider-locateluns
+                - name: Metodo OnLunEmpty
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotprovider-onlunempty
+            - name: IVssHardwareSnapshotProviderEx
+              href: /windows/desktop/api/VsProv/nn-vsprov-ivsshardwaresnapshotproviderex
+              items:
+                - name: Metodo GetProviderCapabilities
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotproviderex-getprovidercapabilities
+                - name: Metodo OnLunStateChange
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotproviderex-onlunstatechange
+                - name: Metodo OnReuseLuns
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotproviderex-onreuseluns
+                - name: Metodo ResyncLuns
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsshardwaresnapshotproviderex-resyncluns
+            - name: IVssProviderCreateSnapshotSet
+              href: /windows/desktop/api/VsProv/nn-vsprov-ivssprovidercreatesnapshotset
+              items:
+                - name: Metodo AbortSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-abortsnapshots
+                - name: Metodo CommitSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-commitsnapshots
+                - name: Metodo EndPrepareSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-endpreparesnapshots
+                - name: Metodo PostCommitSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-postcommitsnapshots
+                - name: Metodo PostFinalCommitSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-postfinalcommitsnapshots
+                - name: Metodo PreCommitSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-precommitsnapshots
+                - name: Metodo PreFinalCommitSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-prefinalcommitsnapshots
+            - name: IVssProviderNotifications
+              href: /windows/desktop/api/VsProv/nn-vsprov-ivssprovidernotifications
+              items:
+                - name: OnLoad (metodo)
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidernotifications-onload
+                - name: OnUnload (metodo)
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivssprovidernotifications-onunload
+            - name: IVssSnapshotMgmt
+              href: /windows/desktop/api/VsMgmt/nn-vsmgmt-ivsssnapshotmgmt
+              items:
+                - name: Metodo GetProviderMgmtInterface
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivsssnapshotmgmt-getprovidermgmtinterface
+                - name: Metodo QuerySnapshotsByVolume
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivsssnapshotmgmt-querysnapshotsbyvolume
+                - name: Metodo QueryVolumesSupportedForSnapshots
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivsssnapshotmgmt-queryvolumessupportedforsnapshots
+            - name: IVssSnapshotMgmt2
+              href: /windows/desktop/api/VsMgmt/nn-vsmgmt-ivsssnapshotmgmt2
+              items:
+                - name: Metodo GetMinDiffAreaSize
+                  href: /windows/desktop/api/VsMgmt/nf-vsmgmt-ivsssnapshotmgmt2-getmindiffareasize
+            - name: IVssSoftwareSnapshotProvider
+              href: /windows/desktop/api/VsProv/nn-vsprov-ivsssoftwaresnapshotprovider
+              items:
+                - name: Metodo BeginPrepareSnapshot
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-beginpreparesnapshot
+                - name: Metodo DeleteSnapshots
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-deletesnapshots
+                - name: Metodo GetSnapshotProperties
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-getsnapshotproperties
+                - name: Metodo IsVolumeSnapshotted
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-isvolumesnapshotted
+                - name: Metodo IsVolumeSupported
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-isvolumesupported
+                - name: Metodo di query
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-query
+                - name: Metodo QueryRevertStatus
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-queryrevertstatus
+                - name: Metodo RevertToSnapshot
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-reverttosnapshot
+                - name: Metodo SetContext
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-setcontext
+                - name: Metodo SetSnapshotProperty
+                  href: /windows/desktop/api/VsProv/nf-vsprov-ivsssoftwaresnapshotprovider-setsnapshotproperty
+            - name: IVssWMComponent
+              href: /windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent
+              items:
+                - name: Metodo FreeComponentInfo
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-freecomponentinfo
+                - name: Metodo GetComponentInfo
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getcomponentinfo
+                - name: Metodo GetDatabaseFile
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdatabasefile
+                - name: Metodo GetDatabaseLogFile
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdatabaselogfile
+                - name: Getdependency (metodo)
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdependency
+                - name: Metodo GetFile
+                  href: /windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getfile
+            - name: IVssWMDependency
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsswmdependency
+              items:
+                - name: Metodo GetWriterId
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmdependency-getwriterid
+                - name: Metodo GetLogicalPath
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmdependency-getlogicalpath
+                - name: GetComponentName (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmdependency-getcomponentname
+            - name: IVssWMFiledesc
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsswmfiledesc
+              items:
+                - name: Metodo GetAlternateLocation
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getalternatelocation
+                - name: Metodo GetBackupTypeMask
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getbackuptypemask
+                - name: Metodo GetFilespec
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getfilespec
+                - name: GetPath (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getpath
+                - name: Metodo getricorsivation
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getrecursive
+            - name: IVssWriterComponents
+              href: /windows/desktop/api/VsWriter/nl-vswriter-ivsswritercomponents
+              items:
+                - name: GetComponent (metodo)
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswritercomponents-getcomponent
+                - name: Metodo GetComponentCount
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswritercomponents-getcomponentcount
+                - name: Metodo GetWriterInfo
+                  href: /windows/desktop/api/VsWriter/nf-vswriter-ivsswritercomponents-getwriterinfo
+            - name: IVssWriterComponentsExt
+              href: /windows/desktop/api/vsbackup/nl-vsbackup-ivsswritercomponentsext
+        - name: Strutture API copia shadow del volume
+          href: volume-shadow-copy-api-structures.md
+          items:
+            - name: VSS_COMPONENTINFO
+              href: /windows/win32/api/VsBackup/ns-vsbackup-vss_componentinfo
+            - name: VSS_DIFF_AREA_PROP
+              href: /windows/win32/api/VsMgmt/ns-vsmgmt-vss_diff_area_prop
+            - name: VSS_DIFF_VOLUME_PROP
+              href: /windows/win32/api/VsMgmt/ns-vsmgmt-vss_diff_volume_prop
+            - name: VSS_MGMT_OBJECT_PROP
+              href: /windows/win32/api/VsMgmt/ns-vsmgmt-vss_mgmt_object_prop
+            - name: VSS_MGMT_OBJECT_UNION
+              href: /windows/desktop/api/VsMgmt/ns-vsmgmt-__midl___midl_itf_vsmgmt_0000_0000_0001
+            - name: VSS_OBJECT_PROP
+              href: /windows/win32/api/Vss/ns-vss-vss_object_prop
+            - name: VSS_OBJECT_UNION
+              href: /windows/desktop/api/Vss/ns-vss-__midl___midl_itf_vss_0000_0000_0001
+            - name: VSS_PROVIDER_PROP
+              href: /windows/win32/api/Vss/ns-vss-vss_provider_prop
+            - name: VSS_SNAPSHOT_PROP
+              href: /windows/win32/api/Vss/ns-vss-vss_snapshot_prop
+            - name: VSS_VOLUME_PROP
+              href: /windows/win32/api/VsMgmt/ns-vsmgmt-vss_volume_prop
+            - name: VSS_VOLUME_PROTECTION_INFO
+              href: /windows/win32/api/VsMgmt/ns-vsmgmt-vss_volume_protection_info
+    - name: Glossario copia shadow del volume
+      href: volume-shadow-copy-glossary.md
+      items:
+        - name: A
+          href: vssgloss-a.md
+        - name: B
+          href: vssgloss-b.md
+        - name: C
+          href: vssgloss-c.md
+        - name: D
+          href: vssgloss-d.md
+        - name: E
+          href: vssgloss-e.md
+        - name: F
+          href: vssgloss-f.md
+        - name: G
+          href: vssgloss-g.md
+        - name: H
+          href: vssgloss-h.md
+        - name: I
+          href: vssgloss-i.md
+        - name: L
+          href: vssgloss-l.md
+        - name: 'N'
+          href: vssgloss-n.md
+        - name: O
+          href: vssgloss-o.md
+        - name: P
+          href: vssgloss-p.md
+        - name: R
+          href: vssgloss-r.md
+        - name: S
+          href: vssgloss-s.md
+        - name: T
+          href: vssgloss-t.md
+        - name: V
+          href: vssgloss-v.md
+        - name: W
+          href: vssgloss-w.md
