@@ -1,0 +1,709 @@
+- name: 'Creazione di pacchetti, distribuzione e query delle app di Windows'
+  href: appx-portal.md
+  items:
+    - name: Come creare un pacchetto dell'app
+      href: how-to-create-a-package.md
+    - name: Come creare un certificato di firma per pacchetti app
+      href: how-to-create-a-package-signing-certificate.md
+    - name: Come firmare il pacchetto di un'app tramite SignTool
+      href: how-to-sign-a-package-using-signtool.md
+    - name: Come risolvere gli errori di firma del pacchetto dell'app
+      href: how-to-troubleshoot-app-package-signature-errors.md
+    - name: Come firmare un pacchetto dell'applicazione a livello di codice
+      href: how-to-programmatically-sign-a-package.md
+    - name: Come sviluppare un'app OEM che usa un file personalizzato
+      href: how-to-develop-oem-app-with-custom-file.md
+    - name: 'Guida introduttiva: estrarre il contenuto del pacchetto dell''app'
+      href: how-to-extract-content-from-a-package.md
+    - name: 'Guida introduttiva: informazioni sul manifesto del pacchetto dell''app'
+      href: how-to-query-package-identity-information.md
+    - name: Risoluzione dei problemi
+      href: troubleshooting.md
+    - name: Riferimento
+      href: api-reference.md
+      items:
+        - name: API per la creazione di pacchetti
+          href: interfaces.md
+          items:
+            - name: IAppxBlockMapBlock
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapblock
+              items:
+                - name: Metodo GetCompressedSize
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapblock-getcompressedsize
+                - name: GetHash (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapblock-gethash
+            - name: IAppxBlockMapBlocksEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapblocksenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapblocksenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapblocksenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapblocksenumerator-movenext
+            - name: IAppxBlockMapFile
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapfile
+              items:
+                - name: Getblocks (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfile-getblocks
+                - name: Metodo GetLocalFileHeaderSize
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfile-getlocalfileheadersize
+                - name: GetName (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfile-getname
+                - name: Metodo GetUncompressedSize
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfile-getuncompressedsize
+                - name: Metodo ValidateFileHash
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfile-validatefilehash
+            - name: IAppxBlockMapFilesEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapfilesenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfilesenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfilesenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfilesenumerator-movenext
+            - name: IAppxBlockMapReader
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapreader
+              items:
+                - name: Metodo GetFile
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-getfile
+                - name: Metodo GetFiles
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-getfiles
+                - name: Metodo GetHashMethod
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-gethashmethod
+                - name: Metodo GetStream
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-getstream
+            - name: IAppxBundleFactory
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlefactory
+              items:
+                - name: Metodo CreateBundleManifestReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlefactory-createbundlemanifestreader
+                  items:
+                    - name: Metodo CreateBundleWriter
+                      href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlefactory-createbundlewriter
+                - name: Metodo CreateBundleReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlefactory-createbundlereader
+            - name: IAppxBundleManifestOptionalBundleInfo
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestoptionalbundleinfo
+              items:
+                - name: Metodo GetPackageId
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfo-getpackageid
+                - name: Metodo GetFilename
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfo-getfilename
+                - name: Metodo GetPackageInfoItems
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfo-getpackageinfoitems
+            - name: IAppxBundleManifestOptionalBundleInfoEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestoptionalbundleinfoenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfoenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfoenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfoenumerator-movenext
+            - name: IAppxBundleManifestPackageInfo
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestpackageinfo
+              items:
+                - name: Metodo GetFilename
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getfilename
+                - name: GetOffset (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getoffset
+                - name: Metodo GetPackageId
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getpackageid
+                - name: Metodo GetPackageType
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getpackagetype
+                - name: Metodo Resources
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getresources
+                - name: GetSize (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getsize
+            - name: IAppxBundleManifestPackageInfo2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestpackageinfo2
+              items:
+                - name: Metodo GetIsDefaultApplicablePackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo2-getisdefaultapplicablepackage
+                - name: Metodo GetIsNonQualifiedResourcePackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo2-getisnonqualifiedresourcepackage
+                - name: Metodo GetIsPackageReference
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo2-getispackagereference
+            - name: IAppxBundleManifestPackageInfoEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestpackageinfoenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfoenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfoenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfoenumerator-movenext
+            - name: IAppxBundleManifestReader
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestreader
+              items:
+                - name: Metodo GetPackageId
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestreader-getpackageid
+                - name: Metodo GetPackageInfoItems
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestreader-getpackageinfoitems
+                - name: Metodo GetStream
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestreader-getstream
+            - name: IAppxBundleManifestReader2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestreader2
+              items:
+                - name: Metodo GetOptionalBundles
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestreader2-getoptionalbundles
+            - name: IAppxBundleReader
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlereader
+              items:
+                - name: Metodo GetBlockMap
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlereader-getblockmap
+                - name: Metodo GetFootprintFile
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlereader-getfootprintfile
+                - name: Getmanifest (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlereader-getmanifest
+                - name: Metodo GetPayloadPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlereader-getpayloadpackage
+                - name: Metodo GetPayloadPackages
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlereader-getpayloadpackages
+            - name: IAppxBundleWriter
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlewriter
+              items:
+                - name: Metodo AddPayloadPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter-addpayloadpackage
+                - name: Metodo Close
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter-close
+            - name: IAppxBundleWriter2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlewriter2
+              items:
+                - name: Metodo AddExternalPackageReference
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter2-addexternalpackagereference
+            - name: IAppxBundleWriter3
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlewriter3
+              items:
+                - name: Metodo AddPackageReference
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter3-addpackagereference
+                - name: Metodo Close
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter3-close
+            - name: IAppxBundleWriter4
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlewriter4
+              items:
+                - name: Metodo AddExternalPackageReference
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter4-addexternalpackagereference
+                - name: Metodo AddPackageReference
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter4-addpackagereference
+                - name: Metodo AddPayloadPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlewriter4-addpayloadpackage
+            - name: IAppxContentGroup
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroup
+              items:
+                - name: GetName (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroup-getname
+                - name: Metodo GetFiles
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroup-getfiles
+            - name: IAppxContentGroupsEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroupsenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupsenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupsenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupsenumerator-movenext
+            - name: IAppxContentGroupFilesEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroupfilesenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupfilesenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupfilesenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupfilesenumerator-movenext
+            - name: IAppxContentGroupMapReader
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroupmapreader
+              items:
+                - name: Metodo GetRequiredGroup
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupmapreader-getrequiredgroup
+                - name: Metodo GetAutomaticGroups
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupmapreader-getautomaticgroups
+            - name: IAppxContentGroupMapWriter
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroupmapwriter
+              items:
+                - name: Metodo AddAutomaticGroup
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupmapwriter-addautomaticgroup
+                - name: Metodo AddAutomaticFile
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupmapwriter-addautomaticfile
+            - name: IAppxEncryptionFactory
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptionfactory
+              items:
+                - name: Metodo EncryptPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-encryptpackage
+                - name: Metodo DecryptPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-decryptpackage
+                - name: Metodo CreateEncryptedPackageWriter
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-createencryptedpackagewriter
+                - name: Metodo CreateEncryptedPackageReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-createencryptedpackagereader
+                - name: Metodo EncryptBundle
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-encryptbundle
+                - name: Metodo DecryptBundle
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-decryptbundle
+                - name: Metodo CreateEncryptedBundleWriter
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-createencryptedbundlewriter
+                - name: Metodo CreateEncryptedBundleReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-createencryptedbundlereader
+            - name: IAppxEncryptionFactory2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptionfactory2
+              items:
+                - name: Metodo CreateEncryptedPackageWriter
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory2-createencryptedpackagewriter
+            - name: IAppxEncryptionFactory3
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptionfactory3
+              items:
+                - name: Metodo EncryptPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory3-encryptpackage
+                - name: Metodo CreateEncryptedPackageWriter
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory3-createencryptedpackagewriter
+                - name: Metodo EncryptBundle
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory3-encryptbundle
+                - name: Metodo CreateEncryptedBundleWriter
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory3-createencryptedbundlewriter
+            - name: IAppxEncryptionFactory4
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptionfactory4
+              items:
+                - name: Metodo EncryptPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory4-encryptpackage
+            - name: IAppxEncryptedPackageWriter
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptedpackagewriter
+              items:
+                - name: Metodo AddPayloadFileEncrypted
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedpackagewriter-addpayloadfileencrypted
+                - name: Metodo Close
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedpackagewriter-close
+            - name: IAppxEncryptedPackageWriter2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptedpackagewriter2
+              items:
+                - name: Metodo AddPayloadFilesEncrypted
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedpackagewriter2-addpayloadfilesencrypted
+            - name: IAppxEncryptedBlockMapFile
+              href: /previous-versions/windows/desktop/legacy/mt761796(v=vs.85)
+              items:
+                - name: Metodo GetFileHash
+                  href: /previous-versions/windows/desktop/legacy/mt761797(v=vs.85)
+                - name: GetId (metodo)
+                  href: /previous-versions/windows/desktop/legacy/mt761798(v=vs.85)
+            - name: IAppxEncryptedFile
+              href: /previous-versions/windows/desktop/legacy/mt761802(v=vs.85)
+              items:
+                - name: Metodo GetEncryptedSize
+                  href: /previous-versions/windows/desktop/legacy/mt761803(v=vs.85)
+                - name: Metodo GetEncryptedStream
+                  href: /previous-versions/windows/desktop/legacy/mt761804(v=vs.85)
+                - name: Metodo GetKeyContext
+                  href: /previous-versions/windows/desktop/legacy/mt761805(v=vs.85)
+            - name: IAppxEncryptedBundleWriter
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptedbundlewriter
+              items:
+                - name: Metodo AddPayloadPackageEncrypted
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedbundlewriter-addpayloadpackageencrypted
+                - name: Metodo Close
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedbundlewriter-close
+            - name: IAppxEncryptedBundleWriter2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptedbundlewriter2
+              items:
+                - name: Metodo AddExternalPackageReference
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedbundlewriter2-addexternalpackagereference
+            - name: IAppxEncryptedBundleWriter3
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptedbundlewriter3
+              items:
+                - name: Metodo AddExternalPackageReference
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedbundlewriter3-addexternalpackagereference
+                - name: Metodo AddPayloadPackageEncrypted
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptedbundlewriter3-addpayloadpackageencrypted
+            - name: IAppxEncryptedPackageFile
+              href: /previous-versions/windows/desktop/legacy/mt761806(v=vs.85)
+              items:
+                - name: Metodo GetStreamWithoutValidation
+                  href: /previous-versions/windows/desktop/legacy/mt761808(v=vs.85)
+                - name: Metodo GetEncryptedPackageReader
+                  href: /previous-versions/windows/desktop/legacy/mt761807(v=vs.85)
+            - name: IAppxFactory
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfactory
+              items:
+                - name: Metodo CreateBlockMapReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createblockmapreader
+                - name: Metodo CreateManifestReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createmanifestreader
+                - name: Metodo CreatePackageReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagereader
+                - name: Metodo CreatePackageWriter
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagewriter
+                - name: Metodo CreateValidatedBlockMapReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createvalidatedblockmapreader
+            - name: IAppxFactory2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfactory2
+              items:
+                - name: Metodo CreateContentGroupMapReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory2-createcontentgroupmapreader
+                - name: Metodo CreateSourceContentGroupMapReader
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory2-createsourcecontentgroupmapreader
+                - name: Metodo CreateContentGroupMapWriter
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory2-createcontentgroupmapwriter
+            - name: IAppxFile
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile
+              items:
+                - name: Metodo GetCompressionOption
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcompressionoption
+                - name: Metodo GetContentType
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype
+                - name: GetName (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname
+                - name: GetSize (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize
+                - name: Metodo GetStream
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getstream
+            - name: IAppxFilesEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfilesenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfilesenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfilesenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfilesenumerator-movenext
+            - name: IAppxManifestApplication
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestapplication
+              items:
+                - name: Metodo GetAppUserModelId
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplication-getappusermodelid
+                - name: Metodo GetStringValue
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplication-getstringvalue
+            - name: IAppxManifestApplicationsEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestapplicationsenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-movenext
+            - name: IAppxManifestDeviceCapabilitiesEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestdevicecapabilitiesenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestdevicecapabilitiesenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestdevicecapabilitiesenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestdevicecapabilitiesenumerator-movenext
+            - name: IAppxManifestMainPackageDependency
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestmainpackagedependency
+              items:
+                - name: GetName (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependency-getname
+                - name: Getpublisher (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependency-getpublisher
+                - name: Metodo GetPackageFamilyName
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependency-getpackagefamilyname
+            - name: IAppxManifestMainPackageDependenciesEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestmainpackagedependenciesenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependenciesenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependenciesenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependenciesenumerator-movenext
+            - name: IAppxManifestOptionalPackageInfo
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestoptionalpackageinfo
+              items:
+                - name: Metodo GetIsOptionalPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestoptionalpackageinfo-getisoptionalpackage
+                - name: Metodo GetMainPackageName
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestoptionalpackageinfo-getmainpackagename
+            - name: IAppxManifestPackageDependenciesEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackagedependenciesenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependenciesenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependenciesenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependenciesenumerator-movenext
+            - name: IAppxManifestPackageDependency
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackagedependency
+              items:
+                - name: Metodo GetMinVersion
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependency-getminversion
+                - name: GetName (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependency-getname
+                - name: Getpublisher (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependency-getpublisher
+            - name: IAppxManifestPackageDependency2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackagedependency2
+              items:
+                - name: Metodo GetMaxMajorVersionTested
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependency2-getmaxmajorversiontested
+            - name: IAppxManifestPackageId
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackageid
+              items:
+                - name: Metodo ComparePublisher
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-comparepublisher
+                - name: Metodo getarchitecture
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getarchitecture
+                - name: GetName (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getname
+                - name: Metodo GetPackageFamilyName
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpackagefamilyname
+                - name: Metodo GetPackageFullName
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpackagefullname
+                - name: Getpublisher (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpublisher
+                - name: Metodo GetResourceId
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getresourceid
+                - name: GetVersion (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getversion
+            - name: IAppxManifestPackageId2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackageid2
+              items:
+                - name: Metodo GetArchitecture2
+                  href: /windows/desktop/api/appxpackaging/nf-appxpackaging-iappxmanifestpackageid2-getarchitecture2
+            - name: IAppxManifestProperties
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestproperties
+              items:
+                - name: Metodo GetBoolValue
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getboolvalue
+                - name: Metodo GetStringValue
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getstringvalue
+            - name: IAppxManifestReader
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader
+              items:
+                - name: Metodo GetApplications
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getapplications
+                - name: Metodo GetCapabilities
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getcapabilities
+                - name: Metodo GetDeviceCapabilities
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getdevicecapabilities
+                - name: Metodo GetPackageDependencies
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getpackagedependencies
+                - name: Metodo GetPackageId
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getpackageid
+                - name: Metodo prerequisite
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getprerequisite
+                - name: GetProperties (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getproperties
+                - name: Metodo Resources
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getresources
+                - name: Metodo GetStream
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getstream
+            - name: IAppxManifestReader2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader2
+              items:
+                - name: Metodo GetQualifiedResources
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader2-getqualifiedresources
+            - name: IAppxManifestReader5
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader5
+              items:
+                - name: Metodo GetMainPackageDependencies
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader5-getmainpackagedependencies
+            - name: IAppxManifestReader6
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader6
+              items:
+                - name: Metodo GetIsNonQualifiedResourcePackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader6-getisnonqualifiedresourcepackage
+            - name: IAppxManifestResourcesEnumerator
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestresourcesenumerator
+              items:
+                - name: Metodo GetCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestresourcesenumerator-getcurrent
+                - name: Metodo GetHasCurrent
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestresourcesenumerator-gethascurrent
+                - name: MoveNext (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestresourcesenumerator-movenext
+            - name: IAppxManifestTargetDeviceFamily
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifesttargetdevicefamily
+              items:
+                - name: GetName (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifesttargetdevicefamily-getname
+                - name: Metodo GetMinVersion
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifesttargetdevicefamily-getminversion
+                - name: Metodo GetMaxVersionTested
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifesttargetdevicefamily-getmaxversiontested
+            - name: IAppxPackageEditor
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackageeditor
+              items:
+                - name: Metodo CreateDeltaPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackageeditor-createdeltapackage
+                - name: Metodo CreateDeltaPackageUsingBaselineBlockMap
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackageeditor-createdeltapackageusingbaselineblockmap
+                - name: Metodo UpdateEncryptedPackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackageeditor-updateencryptedpackage
+                - name: Metodo UpdatePackage
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackageeditor-updatepackage
+                - name: Metodo UpdatePackageManifest
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackageeditor-updatepackagemanifest
+            - name: IAppxPackageReader
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader
+              items:
+                - name: Metodo GetBlockMap
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getblockmap
+                - name: Metodo GetFootprintFile
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getfootprintfile
+                - name: Getmanifest (metodo)
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getmanifest
+                - name: Metodo GetPayloadFile
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfile
+                - name: Metodo GetPayloadFiles
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfiles
+            - name: IAppxPackageWriter
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter
+              items:
+                - name: Metodo AddPayloadFile
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-addpayloadfile
+                - name: Metodo Close
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-close
+            - name: IAppxPackageWriter2
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter2
+              items:
+                - name: Metodo Close
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter2-close
+            - name: IAppxPackageWriter3
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter3
+              items:
+                - name: Metodo AddPayloadFiles
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter3-addpayloadfiles
+            - name: IAppxSourceContentGroupMapReader
+              href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxsourcecontentgroupmapreader
+              items:
+                - name: Metodo GetRequiredGroup
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxsourcecontentgroupmapreader-getrequiredgroup
+                - name: Metodo GetAutomaticGroups
+                  href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxsourcecontentgroupmapreader-getautomaticgroups
+            - name: APPX_BUNDLE_FOOTPRINT_FILE_TYPE
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_bundle_footprint_file_type
+            - name: APPX_ENCRYPTED_PACKAGE_SETTINGS
+              href: /windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_encrypted_package_settings
+            - name: APPX_ENCRYPTED_PACKAGE_SETTINGS2
+              href: /windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_encrypted_package_settings2
+            - name: APPX_ENCRYPTED_EXEMPTIONS
+              href: /windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_encrypted_exemptions
+            - name: APPX_KEY_INFO
+              href: /windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_key_info
+            - name: APPX_ENCRYPTED_PACKAGE_OPTIONS
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_encrypted_package_options
+            - name: APPX_BUNDLE_PAYLOAD_PACKAGE_TYPE
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_bundle_payload_package_type
+            - name: APPX_CAPABILITIES
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_capabilities
+            - name: APPX_COMPRESSION_OPTION
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_compression_option
+            - name: APPX_FOOTPRINT_FILE_TYPE
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_footprint_file_type
+            - name: APPX_PACKAGE_ARCHITECTURE
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_package_architecture
+            - name: APPX_PACKAGE_ARCHITECTURE2
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_package_architecture2
+            - name: APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_MANIFEST_OPTIONS
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_package_editor_update_package_manifest_options
+            - name: APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_OPTION
+              href: /windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_package_editor_update_package_option
+            - name: APPX_PACKAGE_SETTINGS
+              href: /windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_package_settings
+            - name: APPX_PACKAGE_WRITER_PAYLOAD_STREAM
+              href: /windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_package_writer_payload_stream
+        - name: API di distribuzione
+          href: package-deployment-api.md
+        - name: API di query
+          href: functions.md
+          items:
+            - name: ClosePackageInfo
+              href: /windows/desktop/api/AppModel/nf-appmodel-closepackageinfo
+            - name: FindPackagesByPackageFamily
+              href: /windows/desktop/api/AppModel/nf-appmodel-findpackagesbypackagefamily
+            - name: FormatApplicationUserModelId
+              href: /windows/desktop/api/AppModel/nf-appmodel-formatapplicationusermodelid
+            - name: GetApplicationUserModelId
+              href: /windows/desktop/api/Appmodel/nf-appmodel-getapplicationusermodelid
+            - name: GetApplicationUserModelIdFromToken
+              href: /windows/desktop/api/Appmodel/nf-appmodel-getapplicationusermodelidfromtoken
+            - name: GetCurrentApplicationUserModelId
+              href: /windows/desktop/api/Appmodel/nf-appmodel-getcurrentapplicationusermodelid
+            - name: GetCurrentPackageFamilyName
+              href: /windows/desktop/api/AppModel/nf-appmodel-getcurrentpackagefamilyname
+            - name: GetCurrentPackageFullName
+              href: /windows/desktop/api/AppModel/nf-appmodel-getcurrentpackagefullname
+            - name: GetCurrentPackageId
+              href: /windows/desktop/api/AppModel/nf-appmodel-getcurrentpackageid
+            - name: GetCurrentPackageInfo
+              href: /windows/desktop/api/AppModel/nf-appmodel-getcurrentpackageinfo
+            - name: GetCurrentPackageInfo2
+              href: /windows/desktop/api/AppModel/nf-appmodel-getcurrentpackageinfo2
+            - name: GetCurrentPackagePath
+              href: /windows/desktop/api/AppModel/nf-appmodel-getcurrentpackagepath
+            - name: GetCurrentPackagePath2
+              href: /windows/desktop/api/AppModel/nf-appmodel-getcurrentpackagepath2
+            - name: GetPackageApplicationIds
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackageapplicationids
+            - name: GetPackageFamilyName
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagefamilyname
+            - name: GetPackageFamilyNameFromToken
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagefamilynamefromtoken
+            - name: GetPackageFullName
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagefullname
+            - name: GetPackageFullNameFromToken
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagefullnamefromtoken
+            - name: GetPackageId
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackageid
+            - name: GetPackageInfo
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackageinfo
+            - name: GetPackageInfo2
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackageinfo2
+            - name: Metodo GetPackagePath
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagepath
+            - name: GetPackagePathByFullName
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagepathbyfullname
+            - name: GetPackagePathByFullName2
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagepathbyfullname2
+            - name: GetPackagesByPackageFamily
+              href: /windows/desktop/api/AppModel/nf-appmodel-getpackagesbypackagefamily
+            - name: GetStagedPackageOrigin
+              href: /windows/desktop/api/AppModel/nf-appmodel-getstagedpackageorigin
+            - name: GetStagedPackagePathByFullName
+              href: /windows/desktop/api/AppModel/nf-appmodel-getstagedpackagepathbyfullname
+            - name: GetStagedPackagePathByFullName2
+              href: /windows/desktop/api/AppModel/nf-appmodel-getstagedpackagepathbyfullname2
+            - name: OpenPackageInfoByFullName
+              href: /windows/desktop/api/AppModel/nf-appmodel-openpackageinfobyfullname
+            - name: PackageFamilyNameFromFullName
+              href: /windows/desktop/api/AppModel/nf-appmodel-packagefamilynamefromfullname
+            - name: PackageFamilyNameFromId
+              href: /windows/desktop/api/AppModel/nf-appmodel-packagefamilynamefromid
+            - name: PackageFullNameFromId
+              href: /windows/desktop/api/AppModel/nf-appmodel-packagefullnamefromid
+            - name: PackageIdFromFullName
+              href: /windows/desktop/api/AppModel/nf-appmodel-packageidfromfullname
+            - name: PackageNameAndPublisherIdFromFamilyName
+              href: /windows/desktop/api/AppModel/nf-appmodel-packagenameandpublisheridfromfamilyname
+            - name: ParseApplicationUserModelId
+              href: /windows/desktop/api/AppModel/nf-appmodel-parseapplicationusermodelid
+            - name: PackageOrigin
+              href: /windows/desktop/api/AppModel/ne-appmodel-packageorigin
+            - name: Costanti Identity
+              href: identity-constants.md
+            - name: Costanti pacchetto
+              href: package-constants.md
+            - name: PACKAGE_ID
+              href: /windows/desktop/api/AppModel/ns-appmodel-package_id
+            - name: PACKAGE_INFO
+              href: /windows/desktop/api/AppModel/ns-appmodel-package_info
+            - name: PACKAGE_VERSION
+              href: /windows/desktop/api/AppModel/ns-appmodel-package_version
+        - name: Glossario
+          href: appx-packaging-glossary.md
+        - name: API COM di gestione pacchetti Windows
+          href: windows-package-manager-com-api.md
+    - name: Strumenti e cmdlet di PowerShell
+      href: appx-packaging-tools.md
+      items:
+        - name: Strumento per la creazione di pacchetti di app (MakeAppx.exe)
+          href: make-appx-package--makeappx-exe-.md
+    - name: Esempi di SDK
+      href: appx-packaging-samples.md
+    - name: Programma per applicazioni desktop di Windows
+      href: windows-desktop-application-program.md
