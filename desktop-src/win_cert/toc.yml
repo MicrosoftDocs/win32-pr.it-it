@@ -1,0 +1,23 @@
+- name: Certificazione Windows
+  href: windows-certification-portal.md
+  items:
+    - name: Quali sono i vantaggi?
+      href: what-are-the-benefits-.md
+    - name: Requisiti di certificazione per le applicazioni desktop di Windows
+      href: certification-requirements-for-windows-desktop-apps.md
+      items:
+        - name: 'Archivio: requisiti di certificazione per le applicazioni desktop di Windows v 3.3'
+          href: certification-requirements-for-windows-desktop-apps-v3-3.md
+        - name: 'Archivio: requisiti di certificazione per le applicazioni desktop di Windows v 3.1'
+          href: archive--certification-requirements-for-windows-desktop-apps-v3-1.md
+        - name: 'Archivio: requisiti di certificazione per le applicazioni desktop di Windows v 3.0'
+          href: archive--certification-requirements-for-windows-desktop-apps-v3-0.md
+        - name: 'Archivio: requisiti di certificazione per le applicazioni desktop di Windows v 1.2'
+          href: archive--certification-requirements-for-windows-desktop-apps-v1-2.md
+        - name: 'Archivio: requisiti di certificazione per le applicazioni desktop di Windows v 1.1'
+          href: archive--certification-requirements-for-windows-desktop-apps-v1-1.md
+    - name: 'Uso del Kit di certificazione app Windows '
+      href: using-the-windows-app-certification-kit.md
+      items:
+        - name: Test del Kit di certificazione app Windows
+          href: windows-app-certification-kit-tests.md

@@ -1,0 +1,89 @@
+---
+title: Topologie primitive
+description: Direct3D 10 e versioni successive supporta diversi tipi primitivi (o topologie) rappresentati dal \_ \_ tipo enumerato della topologia primitiva D3D. Questi tipi definiscono il modo in cui i vertici vengono interpretati e sottoposti a rendering dalla pipeline.
+ms.assetid: 357ad085-fd91-4420-abc3-1c57e8cbb517
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 0e83f901d4d91d01a3cffedddb343fde7b50c20e
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104337583"
+---
+# <a name="primitive-topologies"></a><span data-ttu-id="6672d-104">Topologie primitive</span><span class="sxs-lookup"><span data-stu-id="6672d-104">Primitive Topologies</span></span>
+
+<span data-ttu-id="6672d-105">Direct3D 10 e versioni successive supporta diversi tipi primitivi (o topologie) rappresentati dal tipo enumerato della [**\_ \_ topologia primitiva D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_primitive_topology) .</span><span class="sxs-lookup"><span data-stu-id="6672d-105">Direct3D 10 and higher supports several primitive types (or topologies) that are represented by the [**D3D\_PRIMITIVE\_TOPOLOGY**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_primitive_topology) enumerated type.</span></span> <span data-ttu-id="6672d-106">Questi tipi definiscono il modo in cui i vertici vengono interpretati e sottoposti a rendering dalla pipeline.</span><span class="sxs-lookup"><span data-stu-id="6672d-106">These types define how vertices are interpreted and rendered by the pipeline.</span></span>
+
+-   [<span data-ttu-id="6672d-107">Tipi primitivi di base</span><span class="sxs-lookup"><span data-stu-id="6672d-107">Basic Primitive Types</span></span>](#basic-primitive-types)
+-   [<span data-ttu-id="6672d-108">Adiacenza primitive</span><span class="sxs-lookup"><span data-stu-id="6672d-108">Primitive Adjacency</span></span>](#primitive-adjacency)
+-   [<span data-ttu-id="6672d-109">Direzione di avvolgimento e posizioni vertice iniziali</span><span class="sxs-lookup"><span data-stu-id="6672d-109">Winding Direction and Leading Vertex Positions</span></span>](#winding-direction-and-leading-vertex-positions)
+-   [<span data-ttu-id="6672d-110">Generazione di più strisce</span><span class="sxs-lookup"><span data-stu-id="6672d-110">Generating Multiple Strips</span></span>](#generating-multiple-strips)
+-   [<span data-ttu-id="6672d-111">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="6672d-111">Related topics</span></span>](#related-topics)
+
+## <a name="basic-primitive-types"></a><span data-ttu-id="6672d-112">Tipi primitivi di base</span><span class="sxs-lookup"><span data-stu-id="6672d-112">Basic Primitive Types</span></span>
+
+<span data-ttu-id="6672d-113">Sono supportati i tipi primitivi di base seguenti:</span><span class="sxs-lookup"><span data-stu-id="6672d-113">The following basic primitive types are supported:</span></span>
+
+-   [<span data-ttu-id="6672d-114">Elenco punti</span><span class="sxs-lookup"><span data-stu-id="6672d-114">Point List</span></span>](/windows/desktop/direct3d9/point-lists)
+-   [<span data-ttu-id="6672d-115">Elenco linee</span><span class="sxs-lookup"><span data-stu-id="6672d-115">Line List</span></span>](/windows/desktop/direct3d9/line-lists)
+-   [<span data-ttu-id="6672d-116">Striscia di linea</span><span class="sxs-lookup"><span data-stu-id="6672d-116">Line Strip</span></span>](/windows/desktop/direct3d9/line-strips)
+-   [<span data-ttu-id="6672d-117">Elenco di triangolo</span><span class="sxs-lookup"><span data-stu-id="6672d-117">Triangle List</span></span>](/windows/desktop/direct3d9/triangle-lists)
+-   [<span data-ttu-id="6672d-118">Strip Triange</span><span class="sxs-lookup"><span data-stu-id="6672d-118">Triange Strip</span></span>](/windows/desktop/direct3d9/triangle-strips)
+
+<span data-ttu-id="6672d-119">Per una visualizzazione di ogni tipo primitivo, vedere il diagramma più avanti in questo argomento in [direzione di avvolgimento e posizioni dei vertici iniziali](#winding-direction-and-leading-vertex-positions).</span><span class="sxs-lookup"><span data-stu-id="6672d-119">For a visualization of each primitive type, see the diagram later in this topic in [Winding Direction and Leading Vertex Positions](#winding-direction-and-leading-vertex-positions).</span></span>
+
+<span data-ttu-id="6672d-120">La fase input-assembler legge i dati dai buffer dei vertici e degli indici, assembla i dati in queste primitive e quindi invia i dati alle fasi della pipeline rimanenti.</span><span class="sxs-lookup"><span data-stu-id="6672d-120">The input-assembler stage reads data from vertex and index buffers, assembles the data into these primitives, and then sends the data to the remaining pipeline stages.</span></span> <span data-ttu-id="6672d-121">È possibile usare il metodo [**sul ID3D11DeviceContext:: IASetPrimitiveTopology**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-iasetprimitivetopology) per specificare il tipo primitivo per la fase input-assembler.</span><span class="sxs-lookup"><span data-stu-id="6672d-121">(You can use the [**ID3D11DeviceContext::IASetPrimitiveTopology**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-iasetprimitivetopology) method to specify the primitive type for the input-assembler stage.)</span></span>
+
+## <a name="primitive-adjacency"></a><span data-ttu-id="6672d-122">Adiacenza primitive</span><span class="sxs-lookup"><span data-stu-id="6672d-122">Primitive Adjacency</span></span>
+
+<span data-ttu-id="6672d-123">Tutti i tipi primitivi Direct3D 10 e versioni successive, ad eccezione dell'elenco di punti, sono disponibili in due versioni: un tipo primitivo con adiacenza e un tipo primitivo senza adiacenza.</span><span class="sxs-lookup"><span data-stu-id="6672d-123">All Direct3D 10 and higher primitive types (except the point list) are available in two versions: one primitive type with adjacency and one primitive type without adjacency.</span></span> <span data-ttu-id="6672d-124">Le primitive con adiacenza contengono alcuni vertici circostanti, mentre le primitive senza adiacenza contengono solo i vertici della primitiva di destinazione.</span><span class="sxs-lookup"><span data-stu-id="6672d-124">Primitives with adjacency contain some of the surrounding vertices, while primitives without adjacency contain only the vertices of the target primitive.</span></span> <span data-ttu-id="6672d-125">Ad esempio, la primitiva dell'elenco di righe (rappresentata dal valore di **\_ \_ \_ linea della topologia primitiva D3D** ) dispone di una primitiva dell'elenco di righe corrispondente che include adiacenza (rappresentato dal valore ADJ per la **\_ \_ topologia \_ \_ primitiva D3D** ).</span><span class="sxs-lookup"><span data-stu-id="6672d-125">For example, the line list primitive (represented by the **D3D\_PRIMITIVE\_TOPOLOGY\_LINELIST** value) has a corresponding line list primitive that includes adjacency (represented by the **D3D\_PRIMITIVE\_TOPOLOGY\_LINELIST\_ADJ** value.)</span></span>
+
+<span data-ttu-id="6672d-126">Le primitive adiacenti hanno lo scopo di fornire altre informazioni sulla geometria e sono visibili solo tramite un geometry shader.</span><span class="sxs-lookup"><span data-stu-id="6672d-126">Adjacent primitives are intended to provide more information about your geometry and are only visible through a geometry shader.</span></span> <span data-ttu-id="6672d-127">Adiacenza è utile per i geometry shader che usano il rilevamento della siluetta, l'estrusione del volume shadow e così via.</span><span class="sxs-lookup"><span data-stu-id="6672d-127">Adjacency is useful for geometry shaders that use silhouette detection, shadow volume extrusion, and so on.</span></span>
+
+<span data-ttu-id="6672d-128">Si supponga, ad esempio, di voler creare un elenco di triangolo con adiacenza.</span><span class="sxs-lookup"><span data-stu-id="6672d-128">For example, suppose you want to draw a triangle list with adjacency.</span></span> <span data-ttu-id="6672d-129">Un elenco di triangolo che contiene 36 vertici (con adiacenza) produrrà 6 primitive completate.</span><span class="sxs-lookup"><span data-stu-id="6672d-129">A triangle list that contains 36 vertices (with adjacency) will yield 6 completed primitives.</span></span> <span data-ttu-id="6672d-130">Le primitive con adiacenza (eccetto le strisce di riga) contengono esattamente il doppio dei vertici della primitiva equivalente senza adiacenza, dove ogni vertice aggiuntivo è un vertice adiacente.</span><span class="sxs-lookup"><span data-stu-id="6672d-130">Primitives with adjacency (except line strips) contain exactly twice as many vertices as the equivalent primitive without adjacency, where each additional vertex is an adjacent vertex.</span></span>
+
+## <a name="winding-direction-and-leading-vertex-positions"></a><span data-ttu-id="6672d-131">Direzione di avvolgimento e posizioni vertice iniziali</span><span class="sxs-lookup"><span data-stu-id="6672d-131">Winding Direction and Leading Vertex Positions</span></span>
+
+<span data-ttu-id="6672d-132">Come illustrato nella figura seguente, un vertice iniziale è il primo vertice non adiacente in una primitiva.</span><span class="sxs-lookup"><span data-stu-id="6672d-132">As shown in the following illustration, a leading vertex is the first non-adjacent vertex in a primitive.</span></span> <span data-ttu-id="6672d-133">Un tipo primitivo può avere più vertici iniziali definiti, purché ognuno di essi venga usato per una primitiva diversa.</span><span class="sxs-lookup"><span data-stu-id="6672d-133">A primitive type can have multiple leading vertices defined, as long as each one is used for a different primitive.</span></span> <span data-ttu-id="6672d-134">Per una striscia di triangolo con adiacenza, i vertici iniziali sono 0, 2, 4, 6 e così via.</span><span class="sxs-lookup"><span data-stu-id="6672d-134">For a triangle strip with adjacency, the leading vertices are 0, 2, 4, 6, and so on.</span></span> <span data-ttu-id="6672d-135">Per una striscia di righe con adiacenza, i vertici iniziali sono 1, 2, 3 e così via.</span><span class="sxs-lookup"><span data-stu-id="6672d-135">For a line strip with adjacency, the leading vertices are 1, 2, 3, and so on.</span></span> <span data-ttu-id="6672d-136">Una primitiva adiacente, d'altra parte, non ha un vertice principale.</span><span class="sxs-lookup"><span data-stu-id="6672d-136">An adjacent primitive, on the other hand, has no leading vertex.</span></span>
+
+<span data-ttu-id="6672d-137">Nella figura seguente viene illustrato l'ordinamento dei vertici per tutti i tipi primitivi che l'assembler di input può produrre.</span><span class="sxs-lookup"><span data-stu-id="6672d-137">The following illustration shows the vertex ordering for all of the primitive types that the input assembler can produce.</span></span>
+
+![diagramma dell'ordinamento dei vertici per i tipi primitivi](images/d3d10-primitive-topologies.png)
+
+<span data-ttu-id="6672d-139">I simboli nell'illustrazione precedente sono descritti nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="6672d-139">The symbols in the preceding illustration are described in the following table.</span></span>
+
+
+
+| <span data-ttu-id="6672d-140">Simbolo</span><span class="sxs-lookup"><span data-stu-id="6672d-140">Symbol</span></span>                                                                                   | <span data-ttu-id="6672d-141">Nome</span><span class="sxs-lookup"><span data-stu-id="6672d-141">Name</span></span>              | <span data-ttu-id="6672d-142">Descrizione</span><span class="sxs-lookup"><span data-stu-id="6672d-142">Description</span></span>                                                                                                                                                                                        |
+|------------------------------------------------------------------------------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![simbolo per un vertice](images/d3d10-primitive-topologies-vertex.png)                     | <span data-ttu-id="6672d-144">Vertice</span><span class="sxs-lookup"><span data-stu-id="6672d-144">Vertex</span></span>            | <span data-ttu-id="6672d-145">Punto nello spazio 3D.</span><span class="sxs-lookup"><span data-stu-id="6672d-145">A point in 3D space.</span></span>                                                                                                                                                                               |
+| ![simbolo per la direzione di avvolgimento](images/d3d10-primitive-topologies-winding-direction.png) | <span data-ttu-id="6672d-147">Direzione di avvolgimento</span><span class="sxs-lookup"><span data-stu-id="6672d-147">Winding Direction</span></span> | <span data-ttu-id="6672d-148">Ordine del vertice durante l'assemblaggio di una primitiva.</span><span class="sxs-lookup"><span data-stu-id="6672d-148">The vertex order when assembling a primitive.</span></span> <span data-ttu-id="6672d-149">Può essere in senso orario o in senso antiorario; per specificare questo problema, chiamare [**ID3D11Device1:: CreateRasterizerState1**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11device1-createrasterizerstate1).</span><span class="sxs-lookup"><span data-stu-id="6672d-149">Can be clockwise or counterclockwise; specify this by calling [**ID3D11Device1::CreateRasterizerState1**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11device1-createrasterizerstate1).</span></span> |
+| ![simbolo per i vertici iniziali](images/d3d10-primitive-topologies-leading-vertex.png)       | <span data-ttu-id="6672d-151">Vertice principale</span><span class="sxs-lookup"><span data-stu-id="6672d-151">Leading Vertex</span></span>    | <span data-ttu-id="6672d-152">Primo vertice non adiacente in una primitiva che contiene dati per ogni costante.</span><span class="sxs-lookup"><span data-stu-id="6672d-152">The first non-adjacent vertex in a primitive that contains per-constant data.</span></span>                                                                                                                      |
+
+
+
+ 
+
+## <a name="generating-multiple-strips"></a><span data-ttu-id="6672d-153">Generazione di più strisce</span><span class="sxs-lookup"><span data-stu-id="6672d-153">Generating Multiple Strips</span></span>
+
+<span data-ttu-id="6672d-154">È possibile generare più strisce tramite il taglio della striscia.</span><span class="sxs-lookup"><span data-stu-id="6672d-154">You can generate multiple strips through strip cutting.</span></span> <span data-ttu-id="6672d-155">È possibile eseguire uno striping chiamando in modo esplicito la funzione HLSL [RestartStrip](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-so-restartstrip) o inserendo un valore di indice speciale nel buffer dell'indice.</span><span class="sxs-lookup"><span data-stu-id="6672d-155">You can perform a strip cut by explicitly calling the [RestartStrip](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-so-restartstrip) HLSL function, or by inserting a special index value into the index buffer.</span></span> <span data-ttu-id="6672d-156">Questo valore è-1, ovvero 0xFFFFFFFF per gli indici a 32 bit o 0xFFFF per gli indici a 16 bit.</span><span class="sxs-lookup"><span data-stu-id="6672d-156">This value is –1, which is 0xffffffff for 32-bit indices or 0xffff for 16-bit indices.</span></span> <span data-ttu-id="6672d-157">Un indice di-1 indica un'Cut ' o ' restart ' esplicito della striscia corrente.</span><span class="sxs-lookup"><span data-stu-id="6672d-157">An index of –1 indicates an explicit 'cut' or 'restart' of the current strip.</span></span> <span data-ttu-id="6672d-158">L'indice precedente completa la primitiva o la striscia precedente e l'indice successivo avvia una nuova primitiva o una nuova striscia.</span><span class="sxs-lookup"><span data-stu-id="6672d-158">The previous index completes the previous primitive or strip and the next index starts a new primitive or strip.</span></span> <span data-ttu-id="6672d-159">Per altre informazioni sulla generazione di più strisce, vedere [fase geometry-shader](/previous-versions//bb205146(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="6672d-159">For more info about generating multiple strips, see [Geometry-Shader Stage](/previous-versions//bb205146(v=vs.85)).</span></span>
+
+> [!Note]  
+> <span data-ttu-id="6672d-160">È necessario un hardware di [livello funzionalità](overviews-direct3d-11-devices-downlevel-intro.md) 10,0 o superiore perché non tutti i componenti hardware di 10level9 implementano questa funzionalità.</span><span class="sxs-lookup"><span data-stu-id="6672d-160">You need [feature level](overviews-direct3d-11-devices-downlevel-intro.md) 10.0 or higher hardware because not all 10level9 hardware implements this functionality.</span></span>
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="6672d-161">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="6672d-161">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="6672d-162">Introduzione con la fase di Input-Assembler</span><span class="sxs-lookup"><span data-stu-id="6672d-162">Getting Started with the Input-Assembler Stage</span></span>](d3d10-graphics-programming-guide-input-assembler-stage-getting-started.md)
+</dt> <dt>
+
+[<span data-ttu-id="6672d-163">Fasi della pipeline (Direct3D 10)</span><span class="sxs-lookup"><span data-stu-id="6672d-163">Pipeline Stages (Direct3D 10)</span></span>](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-pipeline-stages)
+</dt> </dl>
+
+ 
+
+ 
