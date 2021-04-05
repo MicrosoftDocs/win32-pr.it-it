@@ -1,0 +1,97 @@
+---
+title: Implementazione del supporto di In-Band NAP per i metodi EAP
+description: Può essere abilitato per i metodi EAP EAPHost che supportano la trasmissione di oggetti di tipo Length-Value (TLVs).
+ms.assetid: 298c89d9-7a6a-4280-9af9-77c7c00cab92
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: fa9eae9fc17e99b27f620fbab1ed42cbd4b73800
+ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "103734615"
+---
+# <a name="implementing-in-band-nap-support-for-eap-methods"></a><span data-ttu-id="0707b-103">Implementazione del supporto di In-Band NAP per i metodi EAP</span><span class="sxs-lookup"><span data-stu-id="0707b-103">Implementing In-Band NAP Support for EAP Methods</span></span>
+
+<span data-ttu-id="0707b-104">È possibile abilitare il supporto di [Protezione accesso alla rete](/windows/desktop/NAP/network-access-protection-start-page) (NAP) in banda per un metodo EAP per i metodi EAP EAPHost che supportano la trasmissione di oggetti con valori di tipo Length (TLVs).</span><span class="sxs-lookup"><span data-stu-id="0707b-104">In-band [Network Access Protection](/windows/desktop/NAP/network-access-protection-start-page) (NAP) support for an EAP method can be enabled for EAPHost EAP methods that support the transmission of type-length-value objects (TLVs).</span></span> <span data-ttu-id="0707b-105">Quando è abilitato il supporto di protezione accesso alla rete in banda, i pacchetti NAP vengono trasportati all'interno di pacchetti di metodi EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-105">When in-band NAP support is enabled, NAP packets are transported inside EAP method packets.</span></span>
+
+<span data-ttu-id="0707b-106">Al contrario, quando è abilitato il supporto di protezione accesso alla rete fuori banda, lo scambio del [rapporto di integrità di](https://go.microsoft.com/fwlink/p/?linkid=83917) protezione accesso alla rete (SOH) viene eseguito tramite mezzi diversi dai pacchetti di metodi EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-106">In contrast, when out-of-band NAP support is enabled, the NAP [Statement of Health](https://go.microsoft.com/fwlink/p/?linkid=83917) (SoH) exchange occurs through means other than internal to EAP method packets.</span></span>
+
+<span data-ttu-id="0707b-107">Tutti TLVs sono specifici del fornitore.</span><span class="sxs-lookup"><span data-stu-id="0707b-107">All TLVs are vendor specific.</span></span>
+
+## <a name="implementing-nap-support-on-eap-peer-methods"></a><span data-ttu-id="0707b-108">Implementazione del supporto NAP nei metodi peer EAP</span><span class="sxs-lookup"><span data-stu-id="0707b-108">Implementing NAP Support on EAP Peer Methods</span></span>
+
+<span data-ttu-id="0707b-109">L'implementazione del metodo peer EAP riceve un TLV che contiene il valore TLV della richiesta del [rapporto di integrità](https://go.microsoft.com/fwlink/p/?linkid=83917) da un server EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-109">The EAP peer method implementation receives a TLV containing the [Statement of Health](https://go.microsoft.com/fwlink/p/?linkid=83917) (SoH) request TLV from an EAP server.</span></span>
+
+<span data-ttu-id="0707b-110">L'implementazione del metodo peer EAP passa quindi la TLV che contiene la richiesta di rapporto di integrità TLV a EAPHost come indicato di seguito.</span><span class="sxs-lookup"><span data-stu-id="0707b-110">The EAP peer method implementation then passes the TLV containing the SoH request TLV to EAPHost as follows.</span></span>
+
+-   <span data-ttu-id="0707b-111">L'implementazione del metodo peer EAP restituisce il codice di azione [**EapPeerMethodResponseActionRespond**](/windows/win32/api/eapauthenticatoractiondefine/ne-eapauthenticatoractiondefine-eappeermethodresponseaction) a EAPHost al ritorno da [**EapPeerProcessRequestPacket**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerprocessrequestpacket).</span><span class="sxs-lookup"><span data-stu-id="0707b-111">The EAP peer method implementation returns the action code [**EapPeerMethodResponseActionRespond**](/windows/win32/api/eapauthenticatoractiondefine/ne-eapauthenticatoractiondefine-eappeermethodresponseaction) to EAPHost on return from [**EapPeerProcessRequestPacket**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerprocessrequestpacket).</span></span>
+-   <span data-ttu-id="0707b-112">EAPHost chiama [**EapPeerGetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetresponseattributes) dall'implementazione del metodo peer EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-112">EAPHost calls [**EapPeerGetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetresponseattributes) from the EAP peer method implementation.</span></span> <span data-ttu-id="0707b-113">Gli attributi vengono passati nel processo.</span><span class="sxs-lookup"><span data-stu-id="0707b-113">The attributes are passed in the process.</span></span>
+-   <span data-ttu-id="0707b-114">L'implementazione del metodo peer EAP restituisce il TLV contenente la richiesta di rapporto di integrità in [**EapPeerGetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetresponseattributes).</span><span class="sxs-lookup"><span data-stu-id="0707b-114">The EAP peer method implementation returns the TLV containing the SoH request TLV in [**EapPeerGetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetresponseattributes).</span></span> <span data-ttu-id="0707b-115">Gli attributi vengono ricevuti nel processo.</span><span class="sxs-lookup"><span data-stu-id="0707b-115">The attributes are received in the process.</span></span>
+
+<span data-ttu-id="0707b-116">L'implementazione del metodo peer EAP riceve un TLV contenente un rapporto di integrità TLV da EAPHost, come indicato di seguito.</span><span class="sxs-lookup"><span data-stu-id="0707b-116">The EAP peer method implementation receives a TLV containing an SoH TLV from EAPHost as follows.</span></span>
+
+-   <span data-ttu-id="0707b-117">EAPHost chiama [**EapPeerSetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetresponseattributes) dall'implementazione del metodo peer EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-117">EAPHost calls [**EapPeerSetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetresponseattributes) from the EAP peer method implementation.</span></span> <span data-ttu-id="0707b-118">**EapPeerSetResponseAttributes** contiene un TLV che ospita un rapporto di integrità TLV.</span><span class="sxs-lookup"><span data-stu-id="0707b-118">**EapPeerSetResponseAttributes** contains a TLV that houses an SoH TLV.</span></span>
+-   <span data-ttu-id="0707b-119">L'implementazione del metodo peer EAP invia il rapporto di integrità TLV al server EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-119">The EAP peer method implementation sends the SoH TLV to the EAP server.</span></span>
+-   <span data-ttu-id="0707b-120">L'implementazione del metodo peer EAP riceve un TLV contenente un TLV di risposta a rapporto di integrità dal server EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-120">The EAP peer method implementation receives a TLV containing an SoH response TLV from the EAP server.</span></span>
+
+<span data-ttu-id="0707b-121">L'implementazione del metodo peer EAP passa il TLV contenente la risposta di rapporto di integrità TLV a EAPHost, come indicato di seguito.</span><span class="sxs-lookup"><span data-stu-id="0707b-121">The EAP peer method implementation passes the TLV containing the SoH response TLV to EAPHost as follows.</span></span>
+
+-   <span data-ttu-id="0707b-122">L'implementazione del metodo peer EAP restituisce il codice di azione **EapPeerMethodResponseActionRespond** a EAPHost al ritorno da [**EapPeerProcessRequestPacket**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerprocessrequestpacket).</span><span class="sxs-lookup"><span data-stu-id="0707b-122">The EAP peer method implementation returns the action code **EapPeerMethodResponseActionRespond** to EAPHost on return from [**EapPeerProcessRequestPacket**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerprocessrequestpacket).</span></span>
+-   <span data-ttu-id="0707b-123">EAPHost chiama [**EapPeerGetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetresponseattributes) dalle implementazioni del metodo peer EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-123">EAPHost calls [**EapPeerGetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetresponseattributes) from the EAP peer method implementations.</span></span> <span data-ttu-id="0707b-124">La struttura degli [**\_ attributi EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_attributes) viene passata nel processo.</span><span class="sxs-lookup"><span data-stu-id="0707b-124">The [**EAP\_ATTRIBUTES**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_attributes) structure is passed in the process.</span></span>
+-   <span data-ttu-id="0707b-125">L'implementazione del metodo peer EAP restituisce il TLV contenente la risposta di rapporto di integrità TLV in [**EapPeerSetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetresponseattributes).</span><span class="sxs-lookup"><span data-stu-id="0707b-125">The EAP peer method implementation returns the TLV containing the SoH response TLV in [**EapPeerSetResponseAttributes**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetresponseattributes).</span></span>
+
+> [!Note]  
+> <span data-ttu-id="0707b-126">Il membro **eapType** della struttura [**dell' \_ attributo EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_attribute) sarà sempre impostato su **eatEAPTLV** e il membro **pValue** punterà al primo byte del TLV che contiene la risposta del rapporto di integrità TLV.</span><span class="sxs-lookup"><span data-stu-id="0707b-126">The **eapType** member of the [**EAP\_ATTRIBUTE**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_attribute) structure will always be set to **eatEAPTLV** and the **pValue** member will point to the first byte of the TLV that contains the SoH response TLV.</span></span>
+
+ 
+
+### <a name="implementing-nap-support-on-eap-server-methods"></a><span data-ttu-id="0707b-127">Implementazione del supporto NAP nei metodi del server EAP</span><span class="sxs-lookup"><span data-stu-id="0707b-127">Implementing NAP Support on EAP Server Methods</span></span>
+
+<span data-ttu-id="0707b-128">L'implementazione del metodo del server EAP costruisce un TLV contenente un TLV della richiesta di rapporto di integrità.</span><span class="sxs-lookup"><span data-stu-id="0707b-128">The EAP server method implementation constructs a TLV containing an SoH request TLV.</span></span> <span data-ttu-id="0707b-129">L'implementazione del metodo del server EAP Invia questo TLV contenente la richiesta di rapporto di integrità TLV al peer EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-129">The EAP server method implementation sends this TLV containing the SoH Request TLV to the EAP peer.</span></span> <span data-ttu-id="0707b-130">L'implementazione del metodo del server EAP riceve la TLV dal peer EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-130">The EAP server method implementation receives the TLV from the EAP peer.</span></span>
+
+<span data-ttu-id="0707b-131">L'implementazione del metodo del server EAP passa il TLV contenente un rapporto di integrità TLV a EAPHost come indicato di seguito.</span><span class="sxs-lookup"><span data-stu-id="0707b-131">The EAP server method implementation passes the TLV containing an SoH TLV to EAPHost as follows.</span></span>
+
+-   <span data-ttu-id="0707b-132">Tramite l'implementazione del metodo del server EAP viene restituita la **\_ risposta dell'autenticatore del metodo EAP del codice di azione che \_ \_ \_ risponde** a EAPHost al ritorno da [**EapMethodAuthenticatorReceivePacket**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorreceivepacket).</span><span class="sxs-lookup"><span data-stu-id="0707b-132">The EAP server method implementation returns the action code **EAP\_METHOD\_AUTHENTICATOR\_RESPONSE\_RESPOND** to EAPHost on return from [**EapMethodAuthenticatorReceivePacket**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorreceivepacket).</span></span>
+-   <span data-ttu-id="0707b-133">EAPHost chiama [**EapMethodAuthenticatorGetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorgetattributes) dall'implementazione del metodo del server EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-133">EAPHost calls [**EapMethodAuthenticatorGetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorgetattributes) from the EAP server method implementation.</span></span>
+-   <span data-ttu-id="0707b-134">L'implementazione del metodo del server EAP restituisce il TLV che contiene il rapporto di integrità TLV in [**EapMethodAuthenticatorGetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorgetattributes).</span><span class="sxs-lookup"><span data-stu-id="0707b-134">The EAP server method implementation returns the TLV containing the SoH TLV in [**EapMethodAuthenticatorGetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorgetattributes).</span></span>
+
+<span data-ttu-id="0707b-135">L'implementazione del metodo del server EAP riceve un TLV contenente una risposta di rapporto di integrità TLV da EAPHost, come indicato di seguito.</span><span class="sxs-lookup"><span data-stu-id="0707b-135">The EAP server method implementation receives a TLV containing an SoH response TLV from EAPHost as follows.</span></span>
+
+-   <span data-ttu-id="0707b-136">EAPHost chiama [**EapMethodAuthenticatorSetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorsetattributes) dall'implementazione del metodo del server EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-136">EAPHost calls [**EapMethodAuthenticatorSetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorsetattributes) from the EAP server method implementation.</span></span>
+-   <span data-ttu-id="0707b-137">Il TLV che contiene il rapporto di integrità della risposta TLV viene restituito in [ **EapMethodAuthenticatorSetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorsetattributes)</span><span class="sxs-lookup"><span data-stu-id="0707b-137">The TLV containing the SoH response TLV is returned in [**EapMethodAuthenticatorSetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorsetattributes)</span></span>
+-   <span data-ttu-id="0707b-138">L'implementazione del metodo del server EAP invia il TLV contenente la risposta di rapporto di integrità TLV.</span><span class="sxs-lookup"><span data-stu-id="0707b-138">The EAP server method implementation sends the TLV containing the SoH response TLV.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="0707b-139">Il membro **eapType** della struttura [**dell' \_ attributo EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_attribute) sarà sempre impostato su **eatEAPTLV** e il membro **pValue** punterà al primo byte del TLV che contiene la risposta del rapporto di integrità TLV.</span><span class="sxs-lookup"><span data-stu-id="0707b-139">The **eapType** member of the [**EAP\_ATTRIBUTE**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_attribute) structure will always be set to **eatEAPTLV** and the **pValue** member will point to the first byte of the TLV that contains the SoH response TLV.</span></span>
+
+ 
+
+### <a name="messages"></a><span data-ttu-id="0707b-140">Messaggi</span><span class="sxs-lookup"><span data-stu-id="0707b-140">Messages</span></span>
+
+<span data-ttu-id="0707b-141">Il protocollo EAP SoH TLV viene usato per incapsulare il protocollo di rapporto di integrità per la trasmissione tramite un metodo EAP.</span><span class="sxs-lookup"><span data-stu-id="0707b-141">The EAP SoH TLV is used to encapsulate the SoH protocol for transmission via an EAP method.</span></span> <span data-ttu-id="0707b-142">Tutti i TLVs EAP SoH hanno la stessa struttura, che differisce solo per l'ID del messaggio e la parte di dati del messaggio.</span><span class="sxs-lookup"><span data-stu-id="0707b-142">All EAP SoH TLVs have the same structure, differing only on the message ID and data portion of the message.</span></span>
+
+<span data-ttu-id="0707b-143">Per ulteriori informazioni, vedere [la pagina relativa ai messaggi del rapporto di integrità (NAP) di protezione accesso alla rete](https://go.microsoft.com/fwlink/p/?linkid=83918).</span><span class="sxs-lookup"><span data-stu-id="0707b-143">For more information, see [Network Access Protection (NAP) Statement of Health (SoH) Messages](https://go.microsoft.com/fwlink/p/?linkid=83918).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="0707b-144">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="0707b-144">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="0707b-145">Configurazione dell'interfaccia utente del metodo EAP</span><span class="sxs-lookup"><span data-stu-id="0707b-145">Configuring the EAP Method User Interface</span></span>](configuring-the-eap-method-user-interface.md)
+</dt> <dt>
+
+[<span data-ttu-id="0707b-146">Abilitazione di Criteri di gruppo</span><span class="sxs-lookup"><span data-stu-id="0707b-146">Enabling Group Policy</span></span>](enabling-group-policy.md)
+</dt> <dt>
+
+[<span data-ttu-id="0707b-147">Implementazione del supporto NAP per i metodi EAP</span><span class="sxs-lookup"><span data-stu-id="0707b-147">Implementing NAP Support for EAP Methods</span></span>](implementing-nap-for-eap-methods.md)
+</dt> <dt>
+
+[<span data-ttu-id="0707b-148">Trasferimento di dati tra i metodi supplicant e EAP</span><span class="sxs-lookup"><span data-stu-id="0707b-148">Transferring Data Between the Supplicant and EAP Methods</span></span>](transferring-data-between-the-supplicant-and-eap-methods.md)
+</dt> <dt>
+
+[<span data-ttu-id="0707b-149">Supplicant EAPHost</span><span class="sxs-lookup"><span data-stu-id="0707b-149">EAPHost Supplicants</span></span>](eaphost-supplicants.md)
+</dt> </dl>
+
+ 
+
+ 
