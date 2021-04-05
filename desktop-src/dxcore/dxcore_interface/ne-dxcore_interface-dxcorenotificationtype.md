@@ -1,0 +1,52 @@
+---
+title: DXCoreNotificationType
+description: Definisce le costanti che specificano i tipi di notifiche generati dagli oggetti [IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md) o [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md) .
+ms.localizationpriority: low
+ms.topic: reference
+ms.date: 06/20/2019
+ms.openlocfilehash: 3eacd77d2cf15c78a0dc959285874de943fd9130
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104117922"
+---
+# <a name="dxcorenotificationtype-enum"></a><span data-ttu-id="bef79-103">Enumerazione DXCoreNotificationType</span><span class="sxs-lookup"><span data-stu-id="bef79-103">DXCoreNotificationType enum</span></span>
+
+<span data-ttu-id="bef79-104">Definisce le costanti che specificano i tipi di notifiche generati dagli oggetti [IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md) o [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md) .</span><span class="sxs-lookup"><span data-stu-id="bef79-104">Defines constants that specify types of notifications raised by [IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md) or [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md) objects.</span></span>
+
+<span data-ttu-id="bef79-105">È possibile registrare e annullare la registrazione per queste notifiche chiamando rispettivamente [IDXCoreAdapterFactory:: RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md) e [IDXCoreAdapterFactory:: UnregisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-unregistereventnotification.md).</span><span class="sxs-lookup"><span data-stu-id="bef79-105">You can register and unregister for these notifications by calling [IDXCoreAdapterFactory::RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md) and [IDXCoreAdapterFactory::UnregisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-unregistereventnotification.md), respectively.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="bef79-106">Sintassi</span><span class="sxs-lookup"><span data-stu-id="bef79-106">Syntax</span></span>
+
+```cpp
+enum class DXCoreNotificationType : uint32_t
+{
+  AdapterListStale = 0,
+  AdapterNoLongerValid = 1,
+  AdapterBudgetChange = 2,
+  AdapterHardwareContentProtectionTeardown = 3
+};
+```
+
+## <a name="constants"></a><span data-ttu-id="bef79-107">Costanti</span><span class="sxs-lookup"><span data-stu-id="bef79-107">Constants</span></span>
+
+### <a name="adapterliststale"></a><span data-ttu-id="bef79-108">AdapterListStale</span><span class="sxs-lookup"><span data-stu-id="bef79-108">AdapterListStale</span></span>
+
+<span data-ttu-id="bef79-109">Questa notifica viene generata da un oggetto <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapterlist">IDXCoreAdapterList</a> quando l'elenco degli adapter diventa obsoleto.</span><span class="sxs-lookup"><span data-stu-id="bef79-109">This notification is raised by an <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapterlist">IDXCoreAdapterList</a> object when the adapter list becomes stale.</span></span> <span data-ttu-id="bef79-110">La transizione da aggiornamento a obsoleto è unidirezionale e una volta, quindi questa notifica viene generata al massimo una volta.</span><span class="sxs-lookup"><span data-stu-id="bef79-110">The fresh-to-stale transition is one-way, and one-time, so this notification is raised at most one time.</span></span>
+
+### <a name="adapternolongervalid"></a><span data-ttu-id="bef79-111">AdapterNoLongerValid</span><span class="sxs-lookup"><span data-stu-id="bef79-111">AdapterNoLongerValid</span></span>
+
+<span data-ttu-id="bef79-112">Questa notifica viene generata da un oggetto <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapter">IDXCoreAdapter</a> quando l'adapter non è più valido.</span><span class="sxs-lookup"><span data-stu-id="bef79-112">This notification is raised by an <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapter">IDXCoreAdapter</a> object when the adapter becomes no longer valid.</span></span> <span data-ttu-id="bef79-113">La transizione da valido a non valido è unidirezionale e una volta, quindi questa notifica viene generata al massimo una volta.</span><span class="sxs-lookup"><span data-stu-id="bef79-113">The valid-to-invalid transition is one-way, and one-time, so this notification is raised at most one time.</span></span>
+
+### <a name="adapterbudgetchange"></a><span data-ttu-id="bef79-114">AdapterBudgetChange</span><span class="sxs-lookup"><span data-stu-id="bef79-114">AdapterBudgetChange</span></span>
+
+<span data-ttu-id="bef79-115">Questa notifica viene generata da un oggetto <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapter">IDXCoreAdapter</a> quando si verifica una modifica del budget per l'adapter.</span><span class="sxs-lookup"><span data-stu-id="bef79-115">This notification is raised by an <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapter">IDXCoreAdapter</a> object when an adapter budget change occurs.</span></span> <span data-ttu-id="bef79-116">Questa notifica può essere eseguita molte volte.</span><span class="sxs-lookup"><span data-stu-id="bef79-116">This notification can occur many times.</span></span> <span data-ttu-id="bef79-117">L'uso di questa notifica è funzionalmente simile a <a href="/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiadapter3-registervideomemorybudgetchangenotificationevent">IDXGIAdapter3:: RegisterVideoMemoryBudgetChangeNotificationEvent</a>.</span><span class="sxs-lookup"><span data-stu-id="bef79-117">Using this notification is functionally similar to <a href="/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiadapter3-registervideomemorybudgetchangenotificationevent">IDXGIAdapter3::RegisterVideoMemoryBudgetChangeNotificationEvent</a>.</span></span> <span data-ttu-id="bef79-118">In risposta a questo evento, è necessario chiamare [IDXCoreAdapter:: QueryState](./nf-dxcore_interface-idxcoreadapter-querystate.md) (con [DXCoreAdapterState:: AdapterMemoryBudget](./ne-dxcore_interface-dxcoreadapterstate.md)) per valutare lo stato del budget di memoria corrente.</span><span class="sxs-lookup"><span data-stu-id="bef79-118">In response to this event, you should call [IDXCoreAdapter::QueryState](./nf-dxcore_interface-idxcoreadapter-querystate.md) (with [DXCoreAdapterState::AdapterMemoryBudget](./ne-dxcore_interface-dxcoreadapterstate.md)) to evaluate the current memory budget state.</span></span>
+
+### <a name="adapterhardwarecontentprotectionteardown"></a><span data-ttu-id="bef79-119">AdapterHardwareContentProtectionTeardown</span><span class="sxs-lookup"><span data-stu-id="bef79-119">AdapterHardwareContentProtectionTeardown</span></span>
+
+<span data-ttu-id="bef79-120">Questa notifica viene generata da un oggetto <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapter">IDXCoreAdapter</a> per notificare la protezione del contenuto hardware di una scheda teardown.</span><span class="sxs-lookup"><span data-stu-id="bef79-120">This notification is raised by an <a href="/windows/win32/dxcore/dxcore_interface/nn-dxcore_interface-idxcoreadapter">IDXCoreAdapter</a> object to notify of an adapter's hardware content protection teardown.</span></span> <span data-ttu-id="bef79-121">Questa notifica può essere eseguita molte volte.</span><span class="sxs-lookup"><span data-stu-id="bef79-121">This notification can occur many times.</span></span> <span data-ttu-id="bef79-122">Il funzionamento è simile a quello di <a href="/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiadapter3-registerhardwarecontentprotectionteardownstatusevent">IDXGIAdapter3:: RegisterHardwareContentProtectionTeardownStatusEvent</a>.</span><span class="sxs-lookup"><span data-stu-id="bef79-122">It is functionally similar to <a href="/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiadapter3-registerhardwarecontentprotectionteardownstatusevent">IDXGIAdapter3::RegisterHardwareContentProtectionTeardownStatusEvent</a>.</span></span> <span data-ttu-id="bef79-123">In risposta a questo evento, è necessario valutare nuovamente lo stato della sessione di crittografia corrente. ad esempio, chiamando [ID3D11VideoContext1:: CheckCryptoSessionStatus](/windows/win32/api/d3d11_1/nf-d3d11_1-id3d11videocontext1-checkcryptosessionstatus) per determinare l'effetto del teardown hardware per una specifica interfaccia [ID3D11CryptoSession](/windows/win32/api/d3d11/nn-d3d11-id3d11cryptosession) .</span><span class="sxs-lookup"><span data-stu-id="bef79-123">In response to this event, you should re-evaluate the current crypto session status; for example, by calling [ID3D11VideoContext1::CheckCryptoSessionStatus](/windows/win32/api/d3d11_1/nf-d3d11_1-id3d11videocontext1-checkcryptosessionstatus) to determine the impact of the hardware teardown for a specific [ID3D11CryptoSession](/windows/win32/api/d3d11/nn-d3d11-id3d11cryptosession) interface.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="bef79-124">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="bef79-124">See also</span></span>
+
+<span data-ttu-id="bef79-125">[IDXCoreAdapterFactory:: RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md), [IDXCoreAdapterFactory:: UnregisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-unregistereventnotification.md), [IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [riferimento a DXCore](../dxcore-reference.md), [uso di DXCore per enumerare gli adapter](../dxcore-enum-adapters.md)</span><span class="sxs-lookup"><span data-stu-id="bef79-125">[IDXCoreAdapterFactory::RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md), [IDXCoreAdapterFactory::UnregisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-unregistereventnotification.md), [IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [DXCore Reference](../dxcore-reference.md), [Using DXCore to enumerate adapters](../dxcore-enum-adapters.md)</span></span>
