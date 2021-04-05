@@ -1,0 +1,42 @@
+---
+description: .
+ms.assetid: 0182461a-df06-46ea-a9c2-7aedbde5033b
+title: API location
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f643565e80f72ffcefe6981c924b3739b1c4f5f0
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103881517"
+---
+# <a name="location-api"></a><span data-ttu-id="f5e7d-103">API location</span><span class="sxs-lookup"><span data-stu-id="f5e7d-103">Location API</span></span>
+
+<span data-ttu-id="f5e7d-104">\[L'API del percorso Win32 ed è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-104">\[The Win32 Location API and is available for use in the operating systems specified in the Requirements section.</span></span> <span data-ttu-id="f5e7d-105">È possibile che in versioni successive sia stata modificata o non sia più disponibile.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-105">It may be altered or unavailable in subsequent versions.</span></span> <span data-ttu-id="f5e7d-106">Usare invece l'API [**Windows. Devices. Geolocation**](/uwp/api/Windows.Devices.Geolocation) .</span><span class="sxs-lookup"><span data-stu-id="f5e7d-106">Instead, use the [**Windows.Devices.Geolocation**](/uwp/api/Windows.Devices.Geolocation) API.</span></span> <span data-ttu-id="f5e7d-107">Per accedere a location da un sito Web, usare l' [API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)).</span><span class="sxs-lookup"><span data-stu-id="f5e7d-107">To access location from a website, use the [W3C Geolocation API](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)).</span></span> <span data-ttu-id="f5e7d-108">\]</span><span class="sxs-lookup"><span data-stu-id="f5e7d-108">\]</span></span>
+
+## <a name="purpose"></a><span data-ttu-id="f5e7d-109">Scopo</span><span class="sxs-lookup"><span data-stu-id="f5e7d-109">Purpose</span></span>
+
+<span data-ttu-id="f5e7d-110">I computer oggi sono più mobili che mai.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-110">Computers today are more mobile than ever.</span></span> <span data-ttu-id="f5e7d-111">Da piccoli portatili a Tablet PC, molti computer possono andare ovunque si trovino.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-111">From small laptops to Tablet PCs, many computers can go wherever the user wants to go.</span></span> <span data-ttu-id="f5e7d-112">I programmi che sfruttano i vantaggi della mobilità del computer possono aggiungere un valore significativo alla vita degli utenti.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-112">Programs that take advantage of the computer's mobility can add significant value to people's lives.</span></span> <span data-ttu-id="f5e7d-113">Ad esempio, un programma in grado di trovare ristoranti vicini e fornire indicazioni di guida sembrerebbe una scelta naturale per un computer portatile.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-113">For example, a program that can find nearby restaurants and provide driving directions would seem to be a natural fit for a portable computer.</span></span> <span data-ttu-id="f5e7d-114">Tuttavia, mentre la tecnologia per determinare la posizione corrente dell'utente è comune e conveniente, la creazione di soluzioni su questa tecnologia può essere un'attività complessa.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-114">But while the technology to determine the user's current location is common and affordable, building solutions on this technology can be a daunting task.</span></span>
+
+<span data-ttu-id="f5e7d-115">Per creare un programma in grado di riconoscere la posizione, potrebbe essere necessario superare una serie di problemi, tra cui:</span><span class="sxs-lookup"><span data-stu-id="f5e7d-115">To create a location-aware program, you might need to overcome a variety of issues, including:</span></span>
+
+-   <span data-ttu-id="f5e7d-116">Dispositivi GPS (Global Positioning System) che usano porte COM virtuali, che forniscono l'accesso a un solo programma alla volta.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-116">Global positioning system (GPS) devices that use virtual COM ports, which provide access for only one program at a time.</span></span>
+-   <span data-ttu-id="f5e7d-117">Informazioni e programmazione per i protocolli, ad esempio la specifica National Marine Electronics Association (NMEA), nonché le estensioni del fornitore proprietarie.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-117">Understanding and programming for protocols, such as the National Marine Electronics Association (NMEA) specification, as well as proprietary vendor extensions.</span></span>
+-   <span data-ttu-id="f5e7d-118">Essere limitati alla programmazione per soluzioni hardware note e verticali.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-118">Being confined to programming for known, vertical hardware solutions.</span></span>
+-   <span data-ttu-id="f5e7d-119">Implementazione della logica per gestire le transizioni tra diversi provider di località, ad esempio ricevitori GPS, reti connesse, reti telefoniche cellulari, Internet e impostazioni utente.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-119">Implementing logic to handle transitions between various location providers, such as GPS receivers, connected networks, cellular telephone networks, the Internet, and user settings.</span></span>
+
+<span data-ttu-id="f5e7d-120">Questa documentazione descrive il percorso di Windows Application Programming Interface (API).</span><span class="sxs-lookup"><span data-stu-id="f5e7d-120">This documentation describes the Windows Location application programming interface (API).</span></span> <span data-ttu-id="f5e7d-121">L'API location consente di semplificare la programmazione in base alla posizione fornendo un metodo standard per recuperare i dati sulla posizione dell'utente e i formati di standardizzazione per i report dei dati sulla posizione.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-121">The Location API helps to simplify location-aware programming by providing a standard way to retrieve data about user location and standardizing formats for location data reports.</span></span> <span data-ttu-id="f5e7d-122">L'API location gestisce automaticamente le transizioni tra i provider di dati della posizione e sceglie sempre il provider più accurato per la situazione corrente.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-122">The Location API automatically handles transitions between location data providers and always chooses the most accurate provider for the current situation.</span></span>
+
+## <a name="developer-audience"></a><span data-ttu-id="f5e7d-123">Sviluppatori</span><span class="sxs-lookup"><span data-stu-id="f5e7d-123">Developer audience</span></span>
+
+<span data-ttu-id="f5e7d-124">L'API Location fornisce le funzionalità tramite un set di interfacce COM.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-124">The Location API provides its functionality through a set of COM interfaces.</span></span> <span data-ttu-id="f5e7d-125">Le funzionalità dell'API location possono essere usate dai programmatori che hanno familiarità con l'uso di COM tramite il linguaggio di programmazione C++ o con l'uso di oggetti COM in linguaggi di scripting, ad esempio Microsoft JScript.</span><span class="sxs-lookup"><span data-stu-id="f5e7d-125">Location API functionality can be used by programmers who are familiar with using COM through the C++ programming language, or with using COM objects in scripting languages, such as Microsoft JScript.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="f5e7d-126">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="f5e7d-126">In this section</span></span>
+
+-   [<span data-ttu-id="f5e7d-127">Riferimento per la programmazione dell'API location C++</span><span class="sxs-lookup"><span data-stu-id="f5e7d-127">Location API C++ Programming Reference</span></span>](windows-location-programming-reference.md)
+-   [<span data-ttu-id="f5e7d-128">Riferimento al modello a oggetti dell'API location</span><span class="sxs-lookup"><span data-stu-id="f5e7d-128">Location API Object Model Reference</span></span>](windows-location-script-programming-reference.md)
+
+ 
+
+ 
