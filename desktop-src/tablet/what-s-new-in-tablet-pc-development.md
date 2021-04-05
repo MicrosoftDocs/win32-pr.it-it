@@ -1,0 +1,52 @@
+---
+description: In questa sezione vengono descritte le novità relative allo sviluppo di tecnologie per Tablet PC.
+ms.assetid: e61bd444-7e48-4146-93a4-8b99e34226af
+title: Novità nello sviluppo di Tablet PC
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 848c211baae029661f3a53e69cd6cf8562367c9a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103752439"
+---
+# <a name="whats-new-in-tablet-pc-development"></a><span data-ttu-id="5bd8b-103">Novità nello sviluppo di Tablet PC</span><span class="sxs-lookup"><span data-stu-id="5bd8b-103">What's New in Tablet PC Development</span></span>
+
+<span data-ttu-id="5bd8b-104">In questa sezione vengono descritte le novità relative allo sviluppo di tecnologie per Tablet PC.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-104">This section describes what is new in Tablet PC Technology development.</span></span>
+
+## <a name="tablet-pc-development-kit-now-in-windows-sdk"></a><span data-ttu-id="5bd8b-105">Tablet PC Development Kit ora in Windows SDK</span><span class="sxs-lookup"><span data-stu-id="5bd8b-105">Tablet PC Development Kit now in Windows SDK</span></span>
+
+<span data-ttu-id="5bd8b-106">A partire dalla primavera del 2006 e in futuro, il Windows SDK è l'unico meccanismo di distribuzione per la più recente tecnologia Tablet PC.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-106">Beginning in the spring of 2006 and going forward, the Windows SDK is the sole distribution mechanism for the latest Tablet PC technology.</span></span> <span data-ttu-id="5bd8b-107">Non è più disponibile un SDK per Tablet PC autonomo.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-107">There is no longer a stand-alone Tablet PC SDK.</span></span> <span data-ttu-id="5bd8b-108">I file binari della piattaforma, le intestazioni, le librerie, la documentazione e il codice di esempio sono disponibili nella Windows SDK.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-108">The platform binaries, headers, libs, documentation, and sample code are available in the Windows SDK.</span></span> <span data-ttu-id="5bd8b-109">Questa distribuzione include i file binari della piattaforma 1,7 Tablet PC e i moduli unione ridistribuibili per tali file binari, nonché la documentazione per i file binari della versione 1,7 e i nuovi file binari di Windows Vista Tablet PC Technology Platform (versione 6).</span><span class="sxs-lookup"><span data-stu-id="5bd8b-109">This distribution includes the 1.7 Tablet PC platform binaries and the redistributable merge modules for those binaries, as well as documentation for both the version 1.7 binaries and the new Windows Vista Tablet PC Technology platform (version 6) binaries.</span></span>
+
+<span data-ttu-id="5bd8b-110">Per informazioni dettagliate su come configurare il computer per lo sviluppo di Tablet PC, vedere [l'ambiente di sviluppo](the-development-environment.md) .</span><span class="sxs-lookup"><span data-stu-id="5bd8b-110">Refer to [The Development Environment](the-development-environment.md) for details about getting your computer set up for Tablet PC development.</span></span>
+
+## <a name="windows-server-2008-r2-now-supports-handwriting-recognition-and-custom-dictionaries"></a><span data-ttu-id="5bd8b-111">Windows Server 2008 R2 supporta ora il riconoscimento della grafia e i dizionari personalizzati</span><span class="sxs-lookup"><span data-stu-id="5bd8b-111">Windows Server 2008 R2 now supports handwriting recognition and custom dictionaries</span></span>
+
+<span data-ttu-id="5bd8b-112">Windows Server 2008 R2 ora può eseguire il riconoscimento dell'input penna e le funzionalità del dizionario personalizzato sono state aggiunte per supportare nuovi scenari di riconoscimento.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-112">Windows Server 2008 R2 can now perform ink recognition and custom dictionary features have been added to support new recognition scenarios.</span></span>
+
+<span data-ttu-id="5bd8b-113">Per ulteriori informazioni, vedere [riconoscimento della grafia in Windows Server 2008 R2](handwriting-recognition-in-windows-server-2008-r2.md) e [creazione di dizionari personalizzati per il riconoscimento della grafia](creating-custom-dictionaries-for-handwriting-recognition-in-windows-7-and-windows-server-2008-r2.md) .</span><span class="sxs-lookup"><span data-stu-id="5bd8b-113">See [Handwriting Recognition in Windows Server 2008 R2](handwriting-recognition-in-windows-server-2008-r2.md) and [Creating Custom Dictionaries for Handwriting Recognition](creating-custom-dictionaries-for-handwriting-recognition-in-windows-7-and-windows-server-2008-r2.md) for more information.</span></span>
+
+## <a name="math-input"></a><span data-ttu-id="5bd8b-114">Input matematico</span><span class="sxs-lookup"><span data-stu-id="5bd8b-114">Math Input</span></span>
+
+<span data-ttu-id="5bd8b-115">L'API di input matematico è ora disponibile in una versione COM.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-115">The Math Input API is now available in a COM version.</span></span> <span data-ttu-id="5bd8b-116">Per altre informazioni, vedere [Programming the Math input Control](programming-the-math-input-control.md) and the [Math input Control Reference](math-input-control-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="5bd8b-116">See [Programming the Math Input Control](programming-the-math-input-control.md) and the [Math Input Control Reference](math-input-control-reference.md) for more information.</span></span>
+
+## <a name="ink-analysis"></a><span data-ttu-id="5bd8b-117">Analisi dell'input penna</span><span class="sxs-lookup"><span data-stu-id="5bd8b-117">Ink Analysis</span></span>
+
+<span data-ttu-id="5bd8b-118">Sono state create nuove funzionalità di analisi dell'input penna per la piattaforma di tecnologia Tablet PC.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-118">New ink analysis features have been created for the Tablet PC Technology platform.</span></span> <span data-ttu-id="5bd8b-119">Per informazioni concettuali, vedere [Cenni preliminari sull'analisi dell'input penna](ink-analysis-overview.md) .</span><span class="sxs-lookup"><span data-stu-id="5bd8b-119">See [Ink Analysis Overview](ink-analysis-overview.md) for conceptual details.</span></span>
+
+## <a name="stylus-input-api-com-version"></a><span data-ttu-id="5bd8b-120">Versione COM dell'API input dello stilo</span><span class="sxs-lookup"><span data-stu-id="5bd8b-120">Stylus Input API COM Version</span></span>
+
+<span data-ttu-id="5bd8b-121">L'API di input dello stilo è ora disponibile in una versione COM.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-121">The Stylus Input API is now available in a COM version.</span></span> <span data-ttu-id="5bd8b-122">Vedere informazioni di [riferimento su RealTimeStylus](realtimestylus-reference.md) per la versione com degli argomenti di riferimento sulle API.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-122">See [RealTimeStylus Reference](realtimestylus-reference.md) for the COM version of the API reference topics.</span></span> <span data-ttu-id="5bd8b-123">Vedere [accesso e manipolazione dell'input dello stilo](accessing-and-manipulating-stylus-input.md) per informazioni concettuali sull'API di input dello stilo.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-123">See [Accessing and Manipulating Stylus Input](accessing-and-manipulating-stylus-input.md) for Stylus Input API conceptual information.</span></span>
+
+## <a name="textinputpanel-class"></a><span data-ttu-id="5bd8b-124">Classe TextInputPanel</span><span class="sxs-lookup"><span data-stu-id="5bd8b-124">TextInputPanel Class</span></span>
+
+<span data-ttu-id="5bd8b-125">La classe [TextInputPanel](/previous-versions/ms573640(v=vs.100)) è disponibile come oggetto collegato, consentendo di aggiungere la funzionalità del pannello di input di Tablet PC ai controlli esistenti.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-125">The [TextInputPanel](/previous-versions/ms573640(v=vs.100)) class is available as an attachable object, enabling you to add Tablet PC Input Panel functionality to existing controls.</span></span> <span data-ttu-id="5bd8b-126">L'interfaccia utente è in gran parte obbligatoria dalla lingua di input corrente.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-126">The user interface is largely mandated by the current input language.</span></span> <span data-ttu-id="5bd8b-127">È possibile scegliere una grafia o una tastiera come metodo di input predefinito per l'oggetto TextInputPanel.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-127">You have the option of choosing either handwriting or keyboard as the default input method for the TextInputPanel object.</span></span> <span data-ttu-id="5bd8b-128">L'utente finale può passare da un metodo di input all'altra usando i pulsanti dell'interfaccia utente.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-128">The end user can switch between input methods by using buttons on the user interface.</span></span>
+
+## <a name="journal-reader-component"></a><span data-ttu-id="5bd8b-129">Componente Reader Journal</span><span class="sxs-lookup"><span data-stu-id="5bd8b-129">Journal Reader Component</span></span>
+
+<span data-ttu-id="5bd8b-130">Il componente Reader Journal è disponibile.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-130">The Journal Reader component is available.</span></span> <span data-ttu-id="5bd8b-131">Per informazioni generali, vedere [utilizzo del componente Reader Journal](using-the-journal-reader-component.md) .</span><span class="sxs-lookup"><span data-stu-id="5bd8b-131">See [Using the Journal Reader Component](using-the-journal-reader-component.md) for overview material.</span></span> <span data-ttu-id="5bd8b-132">Vedere la classe [JournalReader](/previous-versions/ms583815(v=vs.100)) per le API gestite.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-132">See the [JournalReader](/previous-versions/ms583815(v=vs.100)) class for the managed APIs.</span></span> <span data-ttu-id="5bd8b-133">Vedere informazioni di [riferimento sul componente Reader Journal](journal-reader-component-reference.md) per la versione com delle API.</span><span class="sxs-lookup"><span data-stu-id="5bd8b-133">See [Journal Reader Component Reference](journal-reader-component-reference.md) for the COM version of the APIs.</span></span>
+
+ 
+
+ 
