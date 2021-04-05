@@ -1,0 +1,218 @@
+- name: API Sensor
+  href: portal.md
+  items:
+    - name: Introduzione
+      href: getting-started.md
+      items:
+        - name: Panoramica della piattaforma sensore e posizione di Windows
+          href: introduction-to-the-sensor-and-location-platform-in-windows.md
+        - name: Privacy e sicurezza nella piattaforma sensore e posizione
+          href: privacy-and-security-in-the-sensor-and-location-platform.md
+        - name: Requisiti generali per lo sviluppo di applicazioni
+          href: general-requirements-for-application-development.md
+        - name: Informazioni sugli esempi e sugli strumenti
+          href: about-the-samples.md
+    - name: Informazioni sull'API del sensore
+      href: about-the-sensor-api.md
+      items:
+        - name: Oggetto di gestione dei sensori
+          href: the-sensor-manager.md
+        - name: Oggetto Sensor
+          href: the-sensor-object.md
+        - name: Oggetto raccolta di sensori
+          href: the-sensor-collection-object.md
+        - name: Oggetto report dati sensori
+          href: the-sensor-data-report-object.md
+        - name: Informazioni sugli eventi dell'API del sensore
+          href: about-sensor-events.md
+        - name: Informazioni sulle costanti del sensore
+          href: about-sensor-constants.md
+        - name: Gestione delle autorizzazioni utente
+          href: managing-user-permissions.md
+        - name: Informazioni sui sensori logici
+          href: about-logical-sensors.md
+    - name: Guida alla programmazione dell'API del sensore
+      href: sensor-api-programming-guide.md
+      items:
+        - name: Recupero di un oggetto Sensor
+          href: retrieving-a-sensor.md
+        - name: Richiesta di autorizzazioni utente
+          href: requesting-user-permissions.md
+        - name: Recupero e impostazione delle proprietà dei sensori
+          href: setting-and-retrieving-sensor-properties.md
+        - name: Verifica dei campi dati dei sensori supportati
+          href: checking-for-supported-sensor-data-fields.md
+        - name: Uso degli eventi dell'API del sensore
+          href: using-sensor-api-events.md
+        - name: Recupero dei valori dei dati del sensore
+          href: retrieving-sensor-data-fields.md
+        - name: Recupero di tipi di vettore
+          href: retrieving-vector-types.md
+        - name: Uso di sensori logici
+          href: using-logical-sensors.md
+        - name: Creazione di interfacce utente Light-Aware
+          href: creating-light-aware-user-interfaces.md
+          items:
+            - name: Nozioni fondamentali sulle interfacce utente Light-Aware
+              href: fundamentals-of-light-aware-user-interfaces.md
+            - name: Esempi di interfacce utente Light-Aware
+              href: examples-of-light-aware-user-interfaces.md
+            - name: Ottimizzazione dell'esperienza utente
+              href: optimizing-the-user-experience.md
+            - name: Informazioni e interpretazione dei valori Lux
+              href: understanding-and-interpreting-lux-values.md
+            - name: Uso dei dati del sensore chiaro
+              href: handling-data-from-multiple-light-sensors.md
+    - name: Informazioni di riferimento sulla programmazione dell'API del sensore
+      href: sensor-api-programming-reference.md
+      items:
+        - name: Interfacce COM
+          href: windows-sensors-com-interfaces.md
+          items:
+            - name: ILocationPermissions
+              href: /windows/desktop/api/sensorsapi/nn-sensorsapi-ilocationpermissions
+              items:
+                - name: Metodo GetGlobalLocationPermission
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-ilocationpermissions-getgloballocationpermission
+                - name: Metodo CheckLocationCapability
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-ilocationpermissions-checklocationcapability
+            - name: ILogicalSensorManager
+              href: /previous-versions/windows/desktop/legacy/dd318934(v=vs.85)
+              items:
+                - name: Metodo Connect
+                  href: /previous-versions/windows/desktop/legacy/dd374029(v=vs.85)
+                - name: Disconnetti (metodo)
+                  href: /previous-versions/windows/desktop/legacy/dd374030(v=vs.85)
+                - name: Uninstall (metodo)
+                  href: /previous-versions/windows/desktop/legacy/dd374031(v=vs.85)
+            - name: ISensor
+              href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensor
+              items:
+                - name: GetCategory (metodo)
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getcategory
+                - name: GetData (metodo)
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getdata
+                - name: Metodo GetEventInterest
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-geteventinterest
+                - name: Metodo GetFriendlyName
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getfriendlyname
+                - name: Metodo GetID
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getid
+                - name: Metodo GetProperties
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getproperties
+                - name: Metodo GetProperty
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getproperty
+                - name: Metodo GetState
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getstate
+                - name: Metodo GetSupportedDataFields
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getsupporteddatafields
+                - name: Metodo GetType
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-gettype
+                - name: Metodo SetEventInterest
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-seteventinterest
+                - name: Metodo SetEventSink
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-seteventsink
+                - name: Metodo seproperties
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-setproperties
+                - name: Metodo SupportsDataField
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-supportsdatafield
+                - name: Metodo SupportsEvent
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-supportsevent
+            - name: ISensorCollection
+              href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensorcollection
+              items:
+                - name: Aggiungi metodo
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-add
+                - name: Metodo Clear
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-clear
+                - name: Metodo GetAt
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-getat
+                - name: Metodo GetCount
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-getcount
+                - name: Remove (metodo)
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-remove
+                - name: Metodo RemoveByID
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-removebyid
+            - name: ISensorDataReport
+              href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensordatareport
+              items:
+                - name: Metodo GetSensorValue
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensordatareport-getsensorvalue
+                - name: Metodo GetSensorValues
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensordatareport-getsensorvalues
+                - name: GetTimestamp (metodo)
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensordatareport-gettimestamp
+            - name: ISensorEvents
+              href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents
+              items:
+                - name: Metodo OnEvent
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorevents-onevent
+                - name: Metodo OnDataUpdated
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated
+                - name: Metodo OnLeave
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorevents-onleave
+                - name: Metodo OnStateChanged
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorevents-onstatechanged
+            - name: ISensorManager
+              href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanager
+              items:
+                - name: Metodo GetSensorByID
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorbyid
+                - name: Metodo GetSensorsByCategory
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbycategory
+                - name: Metodo GetSensorsByType
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype
+                - name: Metodo RequestPermissions
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-requestpermissions
+                - name: Metodo SetEventSink
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-seteventsink
+            - name: ISensorManagerEvents
+              href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanagerevents
+              items:
+                - name: Metodo OnSensorEnter
+                  href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanagerevents-onsensorenter
+        - name: Tipi di enumerazione
+          href: enumeration-types.md
+          items:
+            - name: MagnetometerAccuracy
+              href: /windows/desktop/api/sensorsapi/ne-sensorsapi-magnetometeraccuracy
+            - name: SensorConnectionType
+              href: /windows/desktop/api/sensorsapi/ne-sensorsapi-sensorconnectiontype
+            - name: SensorState
+              href: /windows/desktop/api/sensorsapi/ne-sensorsapi-sensorstate
+        - name: Costanti
+          href: constants.md
+          items:
+            - name: 'Categorie di sensori, tipi e campi dati'
+              href: sensor-categories--types--and-datafields.md
+              items:
+                - name: SENSOR_CATEGORY_ALL
+                  href: sensor-category-all.md
+                - name: SENSOR_CATEGORY_BIOMETRIC
+                  href: sensor-category-biometric.md
+                - name: SENSOR_CATEGORY_ELECTRICAL
+                  href: sensor-category-electrical.md
+                - name: SENSOR_CATEGORY_ENVIRONMENTAL
+                  href: sensor-category-environmental.md
+                - name: SENSOR_CATEGORY_LIGHT
+                  href: sensor-category-light.md
+                - name: SENSOR_CATEGORY_LOCATION
+                  href: sensor-category-location.md
+                - name: SENSOR_CATEGORY_MECHANICAL
+                  href: sensor-category-mechanical.md
+                - name: SENSOR_CATEGORY_MOTION
+                  href: sensor-category-motion.md
+                - name: SENSOR_CATEGORY_ORIENTATION
+                  href: sensor-category-orientation.md
+                - name: SENSOR_CATEGORY_OTHER
+                  href: sensor-category-other.md
+                - name: SENSOR_CATEGORY_SCANNER
+                  href: sensor-category-scanner.md
+                - name: SENSOR_CATEGORY_UNSUPPORTED
+                  href: sensor-category-unsupported.md
+            - name: Proprietà del sensore
+              href: sensor-properties.md
+            - name: Costanti evento
+              href: event-constants.md
+    - name: Glossario dell'API del sensore
+      href: sensors-glossary.md
