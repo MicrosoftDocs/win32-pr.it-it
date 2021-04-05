@@ -1,0 +1,40 @@
+---
+description: Il file VBScript WiCompon.vbs viene fornito nei componenti Windows SDK per Windows Installer sviluppatori. Questo script di esempio può essere usato per elencare i componenti in un database Windows Installer.
+ms.assetid: 4e6cc6f4-821a-4a10-a897-5c6aace1f702
+title: Elenca componenti
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: b79fa34f62374632ec7fdf52a13c6da8ddbfd82a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103751703"
+---
+# <a name="list-components"></a><span data-ttu-id="bbffe-104">Elenca componenti</span><span class="sxs-lookup"><span data-stu-id="bbffe-104">List Components</span></span>
+
+<span data-ttu-id="bbffe-105">Il file VBScript WiCompon.vbs viene fornito nei [componenti Windows SDK per Windows Installer sviluppatori](platform-sdk-components-for-windows-installer-developers.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-105">The VBScript file WiCompon.vbs is provided in the [Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).</span></span> <span data-ttu-id="bbffe-106">Questo script di esempio può essere usato per elencare i componenti in un database Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="bbffe-106">This sample script can be used to list the components in a Windows Installer database.</span></span>
+
+<span data-ttu-id="bbffe-107">In questo esempio viene illustrato l'utilizzo di varie chiavi primarie nella [tabella dei componenti](component-table.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-107">This sample demonstrates using the various primary key in the [Component table](component-table.md).</span></span>
+
+<span data-ttu-id="bbffe-108">Nell'esempio viene inoltre illustrato quanto segue:</span><span class="sxs-lookup"><span data-stu-id="bbffe-108">The sample also demonstrates:</span></span>
+
+-   <span data-ttu-id="bbffe-109">[**Metodo OpenDatabase (oggetto Installer)**](installer-opendatabase.md), [**Metodo CreaRecord**](installer-createrecord.md)e [**Metodo LastErrorRecord**](installer-lasterrorrecord.md) dell' [**oggetto Installer**](installer-object.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-109">[**OpenDatabase method (Installer Object)**](installer-opendatabase.md), the [**CreateRecord method**](installer-createrecord.md), and the [**LastErrorRecord method**](installer-lasterrorrecord.md) of the [**Installer Object**](installer-object.md).</span></span>
+-   <span data-ttu-id="bbffe-110">Il [**Metodo OpenView**](database-openview.md), la [**Proprietà TablePersistent**](database-tablepersistent.md)e la [**Proprietà PrimaryKeys**](database-primarykeys.md) dell' [**oggetto di database**](database-object.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-110">[**OpenView method**](database-openview.md), the [**TablePersistent property**](database-tablepersistent.md), and the [**PrimaryKeys property**](database-primarykeys.md) of the [**Database Object**](database-object.md).</span></span>
+-   <span data-ttu-id="bbffe-111">[**Metodo Execute**](view-execute.md) e [**Metodo fetch**](view-fetch.md) dell' [**oggetto View**](view-object.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-111">[**Execute method**](view-execute.md) and the [**Fetch method**](view-fetch.md) of the [**View Object**](view-object.md).</span></span>
+-   <span data-ttu-id="bbffe-112">Proprietà di [**Proprietà StringData**](record-stringdata.md) dell' [**oggetto record**](record-object.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-112">[**StringData property**](record-stringdata.md) property of the [**Record Object**](record-object.md).</span></span>
+
+<span data-ttu-id="bbffe-113">Per usare questo esempio è necessaria la versione CScript.exe o WScript.exe di Windows script host.</span><span class="sxs-lookup"><span data-stu-id="bbffe-113">Using this sample requires the CScript.exe or WScript.exe version of Windows Script Host.</span></span> <span data-ttu-id="bbffe-114">Per utilizzare CScript.exe per eseguire questo esempio, digitare un comando al prompt dei comandi utilizzando la sintassi seguente.</span><span class="sxs-lookup"><span data-stu-id="bbffe-114">To use CScript.exe to run this sample, type a command at the command prompt using the following syntax.</span></span> <span data-ttu-id="bbffe-115">La guida viene visualizzata se il primo argomento è/?</span><span class="sxs-lookup"><span data-stu-id="bbffe-115">Help is displayed if the first argument is /?</span></span> <span data-ttu-id="bbffe-116">oppure se vengono specificati troppi argomenti.</span><span class="sxs-lookup"><span data-stu-id="bbffe-116">or if too few arguments are specified.</span></span> <span data-ttu-id="bbffe-117">Per reindirizzare l'output a un file, terminare la riga di comando con VBS > \[ *percorso del file* \] .</span><span class="sxs-lookup"><span data-stu-id="bbffe-117">To redirect the output to a file, end the command line with VBS > \[*path to file*\].</span></span> <span data-ttu-id="bbffe-118">Nell'esempio viene restituito il valore 0 per l'esito positivo, 1 se la guida viene richiamata e 2 se lo script ha esito negativo.</span><span class="sxs-lookup"><span data-stu-id="bbffe-118">The sample returns a value of 0 for success, 1 if help is invoked, and 2 if the script fails.</span></span>
+
+<span data-ttu-id="bbffe-119">**cscript WiCompon.vbs il \[ percorso del \] \[ nome del componente del database\]**</span><span class="sxs-lookup"><span data-stu-id="bbffe-119">**cscript WiCompon.vbs \[path to database\]\[component name\]**</span></span>
+
+<span data-ttu-id="bbffe-120">Consente di specificare il percorso del database di Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="bbffe-120">Specify path to the Windows Installer database.</span></span> <span data-ttu-id="bbffe-121">Specificare il nome del componente.</span><span class="sxs-lookup"><span data-stu-id="bbffe-121">Specify the name of the component.</span></span> <span data-ttu-id="bbffe-122">Il nome deve essere elencato nella colonna componente della tabella dei [componenti](component-table.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-122">The name must be listed in the Component column of the [Component table](component-table.md).</span></span> <span data-ttu-id="bbffe-123">Se il nome del componente viene omesso, vengono elencati tutti i componenti.</span><span class="sxs-lookup"><span data-stu-id="bbffe-123">If the name of the component is omitted all the components are listed.</span></span> <span data-ttu-id="bbffe-124">Se \* come nome del componente viene usato un asterisco () WiCompon.vbs elenca la composizione di tutti i componenti.</span><span class="sxs-lookup"><span data-stu-id="bbffe-124">If an asterisk (\*) is used as the component name, WiCompon.vbs lists the composition of all components.</span></span> <span data-ttu-id="bbffe-125">Si noti che i database di grandi dimensioni vengono visualizzati meglio utilizzando CScript anziché WScript.</span><span class="sxs-lookup"><span data-stu-id="bbffe-125">Note that large databases are better displayed using CScript rather than WScript.</span></span>
+
+<span data-ttu-id="bbffe-126">Per altri esempi di script, vedere [Windows Installer esempi di scripting](windows-installer-scripting-examples.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-126">For additional scripting examples, see [Windows Installer Scripting Examples](windows-installer-scripting-examples.md).</span></span> <span data-ttu-id="bbffe-127">Per utilità di esempio che non richiedono Windows script host, vedere [Windows Installer strumenti di sviluppo](windows-installer-development-tools.md).</span><span class="sxs-lookup"><span data-stu-id="bbffe-127">For sample utilities that do not require Windows Script Host, see [Windows Installer Development Tools](windows-installer-development-tools.md).</span></span>
+
+ 
+
+ 
+
+
+
