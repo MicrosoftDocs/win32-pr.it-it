@@ -1,0 +1,34 @@
+---
+title: Gestione della pipe asincrona sul lato client
+description: Prima di eseguire una chiamata remota asincrona, il client deve innanzitutto inizializzare l'handle asincrono.
+ms.assetid: 3d54b233-d8b0-45d1-b759-0d2d24c1e247
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 11ff503f80c77b2403d683c2b644d89836365956
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103856686"
+---
+# <a name="client-side-asynchronous-pipe-handling"></a><span data-ttu-id="f1e03-103">Gestione della pipe asincrona sul lato client</span><span class="sxs-lookup"><span data-stu-id="f1e03-103">Client-side Asynchronous Pipe Handling</span></span>
+
+<span data-ttu-id="f1e03-104">Prima di eseguire una chiamata remota asincrona, il client deve innanzitutto inizializzare l'handle asincrono.</span><span class="sxs-lookup"><span data-stu-id="f1e03-104">Before making an asynchronous remote call, the client must first initialize the asynchronous handle.</span></span> <span data-ttu-id="f1e03-105">Come per le procedure non pipe, il client chiama una funzione asincrona con l'handle asincrono come primo parametro e usa l'handle asincrono per inviare e ricevere dati della pipe, eseguire una query sullo stato della chiamata e ricevere la risposta.</span><span class="sxs-lookup"><span data-stu-id="f1e03-105">As with nonpipe procedures, the client calls an asynchronous function with the asynchronous handle as the first parameter and uses the asynchronous handle to send and receive pipe data, query the status of the call, and receive the reply.</span></span>
+
+<span data-ttu-id="f1e03-106">Il client esegue la chiamata di procedura remota asincrona con l'handle asincrono come primo parametro.</span><span class="sxs-lookup"><span data-stu-id="f1e03-106">The client makes the asynchronous remote procedure call with the asynchronous handle as the first parameter.</span></span> <span data-ttu-id="f1e03-107">Il client può utilizzare questo handle per eseguire una query sullo stato della chiamata e ricevere la risposta.</span><span class="sxs-lookup"><span data-stu-id="f1e03-107">The client can use this handle to query the status of the call and to receive the reply.</span></span> <span data-ttu-id="f1e03-108">Il modello di pipe asincrono è simmetrico.</span><span class="sxs-lookup"><span data-stu-id="f1e03-108">The asynchronous pipe model is symmetric.</span></span> <span data-ttu-id="f1e03-109">Le applicazioni client e server inviano e ricevono i dati di pipe in modo attivo (in contrapposizione a RPC sincrona, in cui i dati della pipe vengono inviati e ricevuti passivamente).</span><span class="sxs-lookup"><span data-stu-id="f1e03-109">Both client and server applications send and receive pipe data actively (as opposed to synchronous RPC, where the pipe data is sent and received passively).</span></span>
+
+<span data-ttu-id="f1e03-110">Il client invia dati di pipe asincroni chiamando la funzione **push** sulla pipe asincrona appropriata, con la variabile di stato della pipe come primo parametro.</span><span class="sxs-lookup"><span data-stu-id="f1e03-110">The client sends asynchronous pipe data by calling the **push** function on the appropriate asynchronous pipe, with the pipe's state variable as the first parameter.</span></span> <span data-ttu-id="f1e03-111">Quando la funzione **push** restituisce, il client può modificare o liberare il buffer di invio.</span><span class="sxs-lookup"><span data-stu-id="f1e03-111">When the **push** function returns, the client can modify or free the send buffer.</span></span>
+
+<span data-ttu-id="f1e03-112">Se il \_ flag di notifica asincrona RPC \_ \_ per \_ INVIO \_ è impostato nell'handle asincrono e se APC vengono usati come meccanismo di notifica, un APC viene accodato quando l'invio della pipe è effettivamente completo.</span><span class="sxs-lookup"><span data-stu-id="f1e03-112">If the RPC\_ASYNC\_NOTIFY\_ON\_SEND\_COMPLETE flag is set in the asynchronous handle, and if APCs are used as the notification mechanism, an APC is queued when the pipe send is actually complete.</span></span> <span data-ttu-id="f1e03-113">È possibile sfruttare questo meccanismo per implementare il controllo di flusso.</span><span class="sxs-lookup"><span data-stu-id="f1e03-113">You can take advantage of this mechanism to implement flow control.</span></span> <span data-ttu-id="f1e03-114">Si noti, tuttavia, che se il client esegue il push di un altro buffer prima del completamento del push precedente, il client può, a seconda della velocità dell'operazione di trasferimento, ricevere una sola notifica di invio completo, anziché una notifica per ogni buffer o ogni operazione **push** .</span><span class="sxs-lookup"><span data-stu-id="f1e03-114">Note, however, that if the client pushes another buffer before the previous push is complete, the client may, depending on the speed of the transfer operation, receive only one send-complete notification, rather than one notification for each buffer or each **push** operation.</span></span> <span data-ttu-id="f1e03-115">Quando il client ha inviato tutti i dati della pipe, effettua una chiamata **push** finale con il numero di elementi impostato su 0.</span><span class="sxs-lookup"><span data-stu-id="f1e03-115">When the client has sent all of the pipe data, it makes one final **push** call with the number of elements set to 0.</span></span>
+
+<span data-ttu-id="f1e03-116">Il programma client riceve i dati della pipe asincrona chiamando la funzione **pull** sulla pipe asincrona appropriata, con la variabile di stato della pipe come primo parametro.</span><span class="sxs-lookup"><span data-stu-id="f1e03-116">The client program receives asynchronous pipe data by calling the **pull** function on the appropriate asynchronous pipe, with the pipe's state variable as the first parameter.</span></span> <span data-ttu-id="f1e03-117">Se non sono disponibili dati della pipe, la funzione **pull** restituisce \_ la \_ \_ chiamata asincrona \_ in sospeso della RPC.</span><span class="sxs-lookup"><span data-stu-id="f1e03-117">If no pipe data is available, the **pull** function returns RPC\_S\_ASYNC\_CALL\_PENDING.</span></span>
+
+<span data-ttu-id="f1e03-118">Se il meccanismo di notifica è APC e il server ha restituito \_ la \_ chiamata asincrona RPC S \_ \_ in sospeso, il client deve attendere fino a quando non riceve **RpcReceiveComplete** APC dalla fase di esecuzione prima di chiamare di nuovo **pull** .</span><span class="sxs-lookup"><span data-stu-id="f1e03-118">If the notification mechanism is APC, and the server returned RPC\_S\_ASYNC\_CALL\_PENDING, the client must wait until it receives the **RpcReceiveComplete** APC from run-time before calling **pull** again.</span></span>
+
+ 
+
+ 
+
+
+
+

@@ -1,0 +1,71 @@
+---
+title: Proprietà HelpText IResultVerb (WdsSharedIDL. h)
+description: Questa proprietà restituisce un puntatore alla stringa della Guida localizzata per il verbo.
+ms.assetid: 14e91101-5ee2-459a-97d7-35c76d3ba990
+keywords:
+- Funzionalità della proprietà HelpText ambiente Windows legacy
+- Proprietà HelpText caratteristiche dell'ambiente Windows legacy, interfaccia IResultVerb
+- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultVerb, proprietà HelpText
+topic_type:
+- apiref
+api_name:
+- IResultVerb.HelpText
+- IResultVerb.get_HelpText
+api_location:
+- WdsSharedIDL.h
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 3a0615ea9cc62f3a5f207e7be2c2c4e80987239c
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "103741034"
+---
+# <a name="iresultverbhelptext-property"></a><span data-ttu-id="1fa9a-106">Proprietà IResultVerb:: HelpText</span><span class="sxs-lookup"><span data-stu-id="1fa9a-106">IResultVerb::HelpText property</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1fa9a-107">Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="1fa9a-107">Windows Desktop Search 2.x is an obsolete technology that was originally available as an add-in for Windows XP and Windows Server 2003.</span></span> <span data-ttu-id="1fa9a-108">Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) .</span><span class="sxs-lookup"><span data-stu-id="1fa9a-108">On later releases, use the [Windows Search API](../search/-search-reference-entry-page.md) instead.</span></span> 
+
+<span data-ttu-id="1fa9a-109">Questa proprietà restituisce un puntatore alla stringa della Guida localizzata per il verbo.</span><span class="sxs-lookup"><span data-stu-id="1fa9a-109">This property returns a pointer to the localized help string for the verb.</span></span>
+
+<span data-ttu-id="1fa9a-110">Questa proprietà è di sola lettura.</span><span class="sxs-lookup"><span data-stu-id="1fa9a-110">This property is read-only.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="1fa9a-111">Sintassi</span><span class="sxs-lookup"><span data-stu-id="1fa9a-111">Syntax</span></span>
+
+
+```C++
+HRESULT get_HelpText(
+  [out, retval] BSTR *text
+);
+```
+
+
+
+## <a name="property-value"></a><span data-ttu-id="1fa9a-112">Valore proprietà</span><span class="sxs-lookup"><span data-stu-id="1fa9a-112">Property value</span></span>
+
+<span data-ttu-id="1fa9a-113">Il valore di questa proprietà è un puntatore alla stringa della Guida localizzata per questo verbo.</span><span class="sxs-lookup"><span data-stu-id="1fa9a-113">The value of this property is a pointer to the localized help string for this verb.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="1fa9a-114">Requisiti</span><span class="sxs-lookup"><span data-stu-id="1fa9a-114">Requirements</span></span>
+
+
+
+| <span data-ttu-id="1fa9a-115">Requisito</span><span class="sxs-lookup"><span data-stu-id="1fa9a-115">Requirement</span></span> | <span data-ttu-id="1fa9a-116">Valore</span><span class="sxs-lookup"><span data-stu-id="1fa9a-116">Value</span></span> |
+|-------------------------------------|-------------------------------------------------------------------------------------------|
+| <span data-ttu-id="1fa9a-117">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="1fa9a-117">Minimum supported client</span></span><br/> | <span data-ttu-id="1fa9a-118">Solo app desktop Windows XP con SP2 \[\]</span><span class="sxs-lookup"><span data-stu-id="1fa9a-118">Windows XP with SP2 \[desktop apps only\]</span></span><br/>                                      |
+| <span data-ttu-id="1fa9a-119">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="1fa9a-119">Minimum supported server</span></span><br/> | <span data-ttu-id="1fa9a-120">Windows Server 2003 con \[ solo app desktop SP1\]</span><span class="sxs-lookup"><span data-stu-id="1fa9a-120">Windows Server 2003 with SP1 \[desktop apps only\]</span></span><br/>                             |
+| <span data-ttu-id="1fa9a-121">Componente ridistribuibile</span><span class="sxs-lookup"><span data-stu-id="1fa9a-121">Redistributable</span></span><br/>          | <span data-ttu-id="1fa9a-122">Windows Desktop Search (WDS) 2.6.5</span><span class="sxs-lookup"><span data-stu-id="1fa9a-122">Windows Desktop Search (WDS) 2.6.5</span></span><br/>                                             |
+| <span data-ttu-id="1fa9a-123">Intestazione</span><span class="sxs-lookup"><span data-stu-id="1fa9a-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="1fa9a-124"><dt>WdsSharedIDL. h</dt></span><span class="sxs-lookup"><span data-stu-id="1fa9a-124"><dt>WdsSharedIDL.h</dt></span></span> </dl> |
+
+
+
+ 
+
+ 
+
+
+
+
+

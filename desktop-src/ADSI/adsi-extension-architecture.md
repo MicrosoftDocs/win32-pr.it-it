@@ -1,0 +1,49 @@
+---
+title: Architettura dell'estensione ADSI
+description: Le estensioni ADSI sono basate sul modello di aggregazione COM con diversi miglioramenti. Le estensioni devono essere conformi a tutte le regole COM. Per ulteriori informazioni, vedere la specifica COM.
+ms.assetid: 59e39273-1f66-4bdd-89ed-31947a268d1f
+ms.tgt_platform: multiple
+keywords:
+- estensioni ADSI, architettura dell'estensione
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 377409f4b9ac36d72d6885e89860b9e6e680b103
+ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "103730287"
+---
+# <a name="adsi-extension-architecture"></a><span data-ttu-id="d83b3-106">Architettura dell'estensione ADSI</span><span class="sxs-lookup"><span data-stu-id="d83b3-106">ADSI Extension Architecture</span></span>
+
+<span data-ttu-id="d83b3-107">Le estensioni ADSI sono basate sul modello di aggregazione COM con diversi miglioramenti.</span><span class="sxs-lookup"><span data-stu-id="d83b3-107">ADSI extensions are based on the COM aggregation model with several enhancements.</span></span> <span data-ttu-id="d83b3-108">Le estensioni devono essere conformi a tutte le regole COM.</span><span class="sxs-lookup"><span data-stu-id="d83b3-108">Extensions must adhere to all COM rules.</span></span> <span data-ttu-id="d83b3-109">Per ulteriori informazioni, vedere la specifica COM.</span><span class="sxs-lookup"><span data-stu-id="d83b3-109">For more information, see the COM specification.</span></span>
+
+<span data-ttu-id="d83b3-110">Ecco una revisione del modello di aggregazione COM.</span><span class="sxs-lookup"><span data-stu-id="d83b3-110">Here is a review of the COM aggregation model.</span></span>
+
+![modello di aggregazione com](images/comagmod.png)
+
+<span data-ttu-id="d83b3-112">Un'aggregazione, nota anche come oggetto interno, è un oggetto creato da un aggregatore.</span><span class="sxs-lookup"><span data-stu-id="d83b3-112">An aggregate, also known as an inner object, is an object that an aggregator creates.</span></span> <span data-ttu-id="d83b3-113">L'oggetto di estensione è un'aggregazione.</span><span class="sxs-lookup"><span data-stu-id="d83b3-113">Your extension object is an aggregate.</span></span>
+
+<span data-ttu-id="d83b3-114">Un aggregatore, noto anche come oggetto esterno, è un oggetto che crea un'aggregazione.</span><span class="sxs-lookup"><span data-stu-id="d83b3-114">An aggregator, also known as an outer object, is an object that creates an aggregate.</span></span> <span data-ttu-id="d83b3-115">ADSI è un aggregatore.</span><span class="sxs-lookup"><span data-stu-id="d83b3-115">ADSI is an aggregator.</span></span>
+
+<span data-ttu-id="d83b3-116">L'oggetto interno delega la relativa [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) a **IUnknown** di aggregator.</span><span class="sxs-lookup"><span data-stu-id="d83b3-116">The inner object delegates its [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) to the aggregator's **IUnknown**.</span></span>
+
+<span data-ttu-id="d83b3-117">Le estensioni ADSI aggiungono i miglioramenti seguenti all'aggregazione COM per soddisfare i requisiti:</span><span class="sxs-lookup"><span data-stu-id="d83b3-117">ADSI extensions add the following enhancements to COM aggregation to satisfy its requirements:</span></span>
+
+-   <span data-ttu-id="d83b3-118">Consente a ogni writer di estensione di estendere gli oggetti ADSI.</span><span class="sxs-lookup"><span data-stu-id="d83b3-118">Enables each extension writer to extend ADSI objects.</span></span> <span data-ttu-id="d83b3-119">Un writer di estensione può registrare l'estensione con ADSI e non essere interessata dall'esistenza di altre estensioni.</span><span class="sxs-lookup"><span data-stu-id="d83b3-119">An extension writer can register its extension with ADSI and not be affected by the existence of other extensions.</span></span> <span data-ttu-id="d83b3-120">Nel modello di aggregazione COM, l'aggregatore deve avere il CLSID dell'aggregazione.</span><span class="sxs-lookup"><span data-stu-id="d83b3-120">In the COM aggregation model, the aggregator must have the aggregate's CLSID.</span></span> <span data-ttu-id="d83b3-121">ADSI distende questo requisito facendo in modo che funga da aggregatore per tutte le estensioni.</span><span class="sxs-lookup"><span data-stu-id="d83b3-121">ADSI relaxes this requirement by making itself act as the aggregator for all extensions.</span></span> <span data-ttu-id="d83b3-122">Pertanto, anziché formare un livello di componenti annidati, le estensioni sono allo stesso livello.</span><span class="sxs-lookup"><span data-stu-id="d83b3-122">Therefore, instead of forming a layer of nested components, extensions are at the same level.</span></span>
+-   <span data-ttu-id="d83b3-123">Consente un oggetto, uno IDispatch.</span><span class="sxs-lookup"><span data-stu-id="d83b3-123">Allows one object, one IDispatch.</span></span> <span data-ttu-id="d83b3-124">Il supporto di automazione è una delle funzionalità più importanti di ADSI.</span><span class="sxs-lookup"><span data-stu-id="d83b3-124">Automation support is one of the most important features of ADSI.</span></span> <span data-ttu-id="d83b3-125">Il supporto per l'automazione è stato effettuato perché ADSI supporta l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) .</span><span class="sxs-lookup"><span data-stu-id="d83b3-125">Automation support is achieved because ADSI supports the [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) interface.</span></span> <span data-ttu-id="d83b3-126">I writer di estensione sono invitati a supportare l'interfaccia **IDispatch** .</span><span class="sxs-lookup"><span data-stu-id="d83b3-126">Extension writers are encouraged to support the **IDispatch** interface.</span></span> <span data-ttu-id="d83b3-127">Tuttavia, deve essere presente una sola interfaccia **IDispatch** su un oggetto specificato.</span><span class="sxs-lookup"><span data-stu-id="d83b3-127">However, there should be only one **IDispatch** interface on a given object.</span></span> <span data-ttu-id="d83b3-128">ADSI integra e raccoglie le numerose interfacce **IDispatch** da estensioni diverse e le presenta come un **IDispatch** coerente al controller di automazione.</span><span class="sxs-lookup"><span data-stu-id="d83b3-128">ADSI integrates and collects the many **IDispatch** interfaces from different extensions and presents them as one consistent **IDispatch** to the Automation controller.</span></span> <span data-ttu-id="d83b3-129">Ogni estensione, quando aggregata, deve reindirizzare le chiamate **IDispatch** alla **IDISPATCH** fornita da ADSI.</span><span class="sxs-lookup"><span data-stu-id="d83b3-129">Each extension, when aggregated, must re-route its **IDispatch** calls to the **IDispatch** provided by ADSI.</span></span>
+
+<span data-ttu-id="d83b3-130">Tutte queste soluzioni sono possibili grazie ai servizi forniti da Gestione oggetti ADSI, che risiedono in ogni provider ADSI.</span><span class="sxs-lookup"><span data-stu-id="d83b3-130">All these solutions are possible because of services that the ADSI Object Manager provides, which reside on each ADSI provider.</span></span>
+
+<span data-ttu-id="d83b3-131">Nella figura seguente è illustrata l'architettura del modello di estensione ADSI.</span><span class="sxs-lookup"><span data-stu-id="d83b3-131">The following figure shows the ADSI Extension Model architecture.</span></span>
+
+![architettura del modello di estensione ADSI](images/adsiexmo.png)
+
+<span data-ttu-id="d83b3-133">ADSI supporta due livelli di estensione:</span><span class="sxs-lookup"><span data-stu-id="d83b3-133">ADSI supports two levels of extension:</span></span>
+
+-   <span data-ttu-id="d83b3-134">Supporto per l'associazione anticipata.</span><span class="sxs-lookup"><span data-stu-id="d83b3-134">Early Binding Support.</span></span> <span data-ttu-id="d83b3-135">Si tratta del primo livello di estensione.</span><span class="sxs-lookup"><span data-stu-id="d83b3-135">This is the first level of extension.</span></span> <span data-ttu-id="d83b3-136">Un'estensione deve supportare la registrazione e implementare nuove interfacce.</span><span class="sxs-lookup"><span data-stu-id="d83b3-136">An extension must support registration and implement new interfaces.</span></span> <span data-ttu-id="d83b3-137">I consumer di estensione devono usare gli strumenti o gli host di scripting che supportano l'associazione anticipata, ad esempio Visual C++ Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="d83b3-137">The extension consumers must use tools or scripting hosts that support early binding, for example, Visual C++ , Visual Basic.</span></span>
+-   <span data-ttu-id="d83b3-138">Supporto per l'associazione tardiva.</span><span class="sxs-lookup"><span data-stu-id="d83b3-138">Late Binding Support.</span></span> <span data-ttu-id="d83b3-139">Ciò si verifica quando un'estensione soddisfa tutti i requisiti di associazione anticipati e implementa un'interfaccia aggiuntiva, [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).</span><span class="sxs-lookup"><span data-stu-id="d83b3-139">This happens when an extension satisfies all early binding requirements, and implements an additional interface, [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).</span></span> <span data-ttu-id="d83b3-140">Gli implementatori di estensioni possono usare qualsiasi strumento che funge da controller di automazione, ad esempio Windows script host, pagine Active Server o HTML con VBScript.</span><span class="sxs-lookup"><span data-stu-id="d83b3-140">Extension implementers can use any tool that operates as an Automation controller, such as the Windows Script Host, Active Server Pages, or HTML with VBScript.</span></span>
+
+ 
+
+ 
