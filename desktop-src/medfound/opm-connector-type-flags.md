@@ -1,0 +1,77 @@
+---
+description: I valori nella tabella seguente specificano il tipo di connettore fisico per un output video.
+ms.assetid: 93e816fb-1b40-4865-9c0c-24d96c83fb7f
+title: Flag di tipo connettore OPM (Opmapi. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 8a3b14f1ba677822ec48cc85118fec156919794a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103753927"
+---
+# <a name="opm-connector-type-flags"></a>Flag di tipo connettore OPM
+
+I valori nella tabella seguente specificano il tipo di connettore fisico per un output video.
+
+
+
+| Costante/valore                                                                                                                                                                                                                                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span id="OPM_CONNECTOR_TYPE_OTHER"></span><span id="opm_connector_type_other"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ other**</dt> <dt>-1</dt> </dl>                                                                    | Indica un tipo di connettore fisico non presente nell'elenco.<br/>                                                                                                                                                                                                                                                                                                                                                                                                  |
+| <span id="OPM_CONNECTOR_TYPE_VGA"></span><span id="opm_connector_type_vga"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ VGA**</dt> <dt>0</dt> </dl>                                                                           | Connettore VGA (video graphics array).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| <span id="OPM_CONNECTOR_TYPE_SVIDEO"></span><span id="opm_connector_type_svideo"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ SVIDEO**</dt> <dt>1</dt> </dl>                                                                  | Connettore S-video.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| <span id="OPM_CONNECTOR_TYPE_COMPOSITE_VIDEO"></span><span id="opm_connector_type_composite_video"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ Composite \_ video**</dt> <dt>2</dt> </dl>                                      | Connettore video composito.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| <span id="OPM_CONNECTOR_TYPE_COMPONENT_VIDEO"></span><span id="opm_connector_type_component_video"></span><dl> <dt>**OPM \_ \_Componente tipo \_ connettore \_ video**</dt> <dt>3</dt> </dl>                                      | Connettore video componente.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| <span id="OPM_CONNECTOR_TYPE_DVI"></span><span id="opm_connector_type_dvi"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ DVI**</dt> <dt>4</dt> </dl>                                                                           | Connettore DVI (Digital Video Interface).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| <span id="OPM_CONNECTOR_TYPE_HDMI"></span><span id="opm_connector_type_hdmi"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ HDMI**</dt> <dt>5</dt> </dl>                                                                        | Connettore HDMI (High Definition Multimedia Interface).<br/>                                                                                                                                                                                                                                                                                                                                                                                                            |
+| <span id="OPM_CONNECTOR_TYPE_LVDS"></span><span id="opm_connector_type_lvds"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ LVDS**</dt> <dt>6</dt> </dl>                                                                        | Connettore di segnalazione differenziale a bassa tensione (LVDS) o MIPI Digital Serial Interface (DSI).<br/> Un connettore che usa l'interfaccia di LVDS o MIPI Digital Serial Interface (DSI) per connettersi internamente a un dispositivo di visualizzazione. La connessione tra la scheda grafica e il dispositivo di visualizzazione è permanente, non rimovibile e non è accessibile all'utente. Le applicazioni non devono abilitare High-Bandwidth Digital protezione del contenuto (HDCP) per questo connettore.<br/> |
+| <span id="OPM_CONNECTOR_TYPE_D_JPN"></span><span id="opm_connector_type_d_jpn"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ D \_ JPN**</dt> <dt>8</dt> </dl>                                                                    | Connettore giapponese D. (Connettore conforme allo standard EIAJ RC-5237).<br/>                                                                                                                                                                                                                                                                                                                                                                                      |
+| <span id="OPM_CONNECTOR_TYPE_SDI"></span><span id="opm_connector_type_sdi"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ SDI**</dt> <dt>9</dt> </dl>                                                                           | Connettore SDI (Serial Digital Image).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| <span id="OPM_CONNECTOR_TYPE_DISPLAYPORT_EXTERNAL"></span><span id="opm_connector_type_displayport_external"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ DisplayPort \_ External**</dt> <dt>10</dt> </dl>                      | Una porta di visualizzazione che si connette esternamente a un dispositivo di visualizzazione.<br/>                                                                                                                                                                                                                                                                                                                                                                                                      |
+| <span id="OPM_CONNECTOR_TYPE_DISPLAYPORT_EMBEDDED"></span><span id="opm_connector_type_displayport_embedded"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ DisplayPort \_ Embedded**</dt> <dt>11</dt> </dl>                      | Una porta di visualizzazione incorporata che si connette internamente a un dispositivo di visualizzazione. Nota anche come porta di visualizzazione *integrata* .<br/> Le applicazioni non devono abilitare High-Bandwidth Digital protezione del contenuto (HDCP) per le porte di visualizzazione incorporate.<br/>                                                                                                                                                                                                                         |
+| <span id="OPM_CONNECTOR_TYPE_UDI_EXTERNAL"></span><span id="opm_connector_type_udi_external"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ Udi \_ esterno**</dt> <dt>12</dt> </dl>                                              | Interfaccia di visualizzazione unificata (UDI) che si connette esternamente a un dispositivo di visualizzazione.<br/>                                                                                                                                                                                                                                                                                                                                                                                   |
+| <span id="OPM_CONNECTOR_TYPE_UDI_EMBEDDED"></span><span id="opm_connector_type_udi_embedded"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ Udi \_ Embedded**</dt> <dt>13</dt> </dl>                                              | Un UDI incorporato che si connette internamente a un dispositivo di visualizzazione. Noto anche come UDI *integrato* .<br/>                                                                                                                                                                                                                                                                                                                                                                  |
+| <span id="OPM_CONNECTOR_TYPE_RESERVED"></span><span id="opm_connector_type_reserved"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ riservato**</dt> <dt>14</dt> </dl>                                                           | Riservato per utilizzi futuri.<br/> Supportato in Windows 8.1 e versioni successive.<br/>                                                                                                                                                                                                                                                                                                                                                                                           |
+| <span id="OPM_CONNECTOR_TYPE_MIRACAST"></span><span id="opm_connector_type_miracast"></span><dl> <dt>**OPM \_ Tipo di connettore \_ \_ MIRACAST**</dt> <dt>15</dt> </dl>                                                           | Un connettore Miracast wireless.<br/> Supportato in Windows 8.1 e versioni successive.<br/>                                                                                                                                                                                                                                                                                                                                                                                     |
+| <span id="OPM_COPP_COMPATIBLE_CONNECTOR_TYPE_INTERNAL"></span><span id="opm_copp_compatible_connector_type_internal"></span><dl> <dt>**OPM \_ \_Tipo di connettore compatibile con copp 0x80000000 \_ \_ \_ interno**</dt> <dt></dt> </dl> | Connettore interno. La connessione tra la scheda grafica e il dispositivo di visualizzazione è permanente e non è accessibile all'utente. Questo flag viene usato solo in *modalità di emulazione Copp*. Può essere combinato con gli altri valori.<br/>                                                                                                                                                                                                                                    |
+
+
+
+## <a name="remarks"></a>Commenti
+
+Se un connettore viene descritto come *incorporato* o *integrato*, significa che il connettore è interno. Questi connettori hanno "EMBEDDed" nel nome della costante di enumerazione.
+
+Le applicazioni devono ignorare il flag **\_ interno del \_ \_ \_ tipo \_ di connettore Copp di OPM** e controllare invece i tipi di connettore con "embedded" nel nome della costante.
+
+Fatta eccezione per il **\_ tipo di \_ \_ connettore Copp \_ compatibile \_ con OPM**, i valori elencati qui non sono flag di bit e non possono essere combinati.
+
+Alcuni di questi valori sono equivalenti ai valori dell'enumerazione **Copp \_ ConnectorType** utilizzata in Certified Output Protocol (Copp).
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|-------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
+| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[Enumerazioni di OPM](opm-enumerations.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
