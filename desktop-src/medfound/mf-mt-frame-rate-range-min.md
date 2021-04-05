@@ -1,0 +1,75 @@
+---
+description: Frequenza minima dei fotogrammi supportata da un dispositivo di acquisizione video, in frame al secondo.
+ms.assetid: d3725796-f683-4ca1-a37f-22c40fff0b76
+title: Attributo MF_MT_FRAME_RATE_RANGE_MIN (Mfapi. h)
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 9692927242eea7ec65b86572db455e610e30c711
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103884190"
+---
+# <a name="mf_mt_frame_rate_range_min-attribute"></a><span data-ttu-id="1b464-103">\_ \_ \_ \_ Attributo min frequenza frame frequenza MF mt \_</span><span class="sxs-lookup"><span data-stu-id="1b464-103">MF\_MT\_FRAME\_RATE\_RANGE\_MIN attribute</span></span>
+
+<span data-ttu-id="1b464-104">Frequenza minima dei fotogrammi supportata da un dispositivo di acquisizione video, in frame al secondo.</span><span class="sxs-lookup"><span data-stu-id="1b464-104">The minimum frame rate that is supported by a video capture device, in frames per second.</span></span>
+
+## <a name="data-type"></a><span data-ttu-id="1b464-105">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="1b464-105">Data type</span></span>
+
+<span data-ttu-id="1b464-106">**UINT64**</span><span class="sxs-lookup"><span data-stu-id="1b464-106">**UINT64**</span></span>
+
+## <a name="getset"></a><span data-ttu-id="1b464-107">Ottenere/impostare</span><span class="sxs-lookup"><span data-stu-id="1b464-107">Get/set</span></span>
+
+<span data-ttu-id="1b464-108">Per ottenere questo attributo, chiamare [**MFGetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributeratio).</span><span class="sxs-lookup"><span data-stu-id="1b464-108">To get this attribute, call [**MFGetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributeratio).</span></span>
+
+<span data-ttu-id="1b464-109">Per impostare questo attributo, chiamare [**MFSetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributeratio).</span><span class="sxs-lookup"><span data-stu-id="1b464-109">To set this attribute, call [**MFSetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributeratio).</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="1b464-110">Commenti</span><span class="sxs-lookup"><span data-stu-id="1b464-110">Remarks</span></span>
+
+<span data-ttu-id="1b464-111">La frequenza dei fotogrammi è espressa come rapporto.</span><span class="sxs-lookup"><span data-stu-id="1b464-111">The frame rate is expressed as a ratio.</span></span> <span data-ttu-id="1b464-112">I 32 bit superiori del valore dell'attributo contengono il numeratore e i 32 bit inferiori contengono il denominatore.</span><span class="sxs-lookup"><span data-stu-id="1b464-112">The upper 32 bits of the attribute value contain the numerator, and the lower 32 bits contain the denominator.</span></span> <span data-ttu-id="1b464-113">Se, ad esempio, la frequenza dei fotogrammi è di 30 fotogrammi al secondo (fps), il rapporto è 30/1.</span><span class="sxs-lookup"><span data-stu-id="1b464-113">For example, if the frame rate is 30 frames per second (fps), the ratio is 30/1.</span></span>
+
+<span data-ttu-id="1b464-114">Se il dispositivo di acquisizione indica una frequenza minima dei fotogrammi, l'origine del supporto imposta questo attributo sul tipo di supporto.</span><span class="sxs-lookup"><span data-stu-id="1b464-114">If the capture device reports a minimum frame rate, the media source sets this attribute on the media type.</span></span> <span data-ttu-id="1b464-115">La frequenza massima dei fotogrammi viene specificata nell'attributo [ \_ intervallo di \_ \_ frequenza \_ \_ dei fotogrammi MF mt](mf-mt-frame-rate-range-max.md) .</span><span class="sxs-lookup"><span data-stu-id="1b464-115">The maximum frame rate is given in the [MF\_MT\_FRAME\_RATE\_RANGE\_MAX](mf-mt-frame-rate-range-max.md) attribute.</span></span> <span data-ttu-id="1b464-116">Non è garantito che il dispositivo supporti ogni incremento entro questo intervallo.</span><span class="sxs-lookup"><span data-stu-id="1b464-116">The device is not guaranteed to support every increment within this range.</span></span>
+
+<span data-ttu-id="1b464-117">Per impostare la frequenza dei fotogrammi del dispositivo, modificare prima di tutto il valore dell'attributo [**MF \_ mt \_ frame \_ rate**](mf-mt-frame-rate-attribute.md) nel tipo di supporto.</span><span class="sxs-lookup"><span data-stu-id="1b464-117">To set the device's frame rate, first modify the value of the [**MF\_MT\_FRAME\_RATE**](mf-mt-frame-rate-attribute.md) attribute on the media type.</span></span> <span data-ttu-id="1b464-118">Impostare quindi il tipo di supporto nell'origine supporto.</span><span class="sxs-lookup"><span data-stu-id="1b464-118">Then set the media type on the media source.</span></span>
+
+<span data-ttu-id="1b464-119">La costante GUID per questo attributo viene esportata da mfuuid. lib.</span><span class="sxs-lookup"><span data-stu-id="1b464-119">The GUID constant for this attribute is exported from mfuuid.lib.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="1b464-120">Requisiti</span><span class="sxs-lookup"><span data-stu-id="1b464-120">Requirements</span></span>
+
+
+
+| <span data-ttu-id="1b464-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="1b464-121">Requirement</span></span> | <span data-ttu-id="1b464-122">Valore</span><span class="sxs-lookup"><span data-stu-id="1b464-122">Value</span></span> |
+|-------------------------------------|------------------------------------------------------------------------------------|
+| <span data-ttu-id="1b464-123">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="1b464-123">Minimum supported client</span></span><br/> | <span data-ttu-id="1b464-124">App desktop di Windows 7 \[ \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="1b464-124">Windows 7 \[desktop apps \| UWP apps\]</span></span><br/>                                  |
+| <span data-ttu-id="1b464-125">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="1b464-125">Minimum supported server</span></span><br/> | <span data-ttu-id="1b464-126">App desktop di Windows Server 2008 R2 \[ \| UWP\]</span><span class="sxs-lookup"><span data-stu-id="1b464-126">Windows Server 2008 R2 \[desktop apps \| UWP apps\]</span></span><br/>                     |
+| <span data-ttu-id="1b464-127">Intestazione</span><span class="sxs-lookup"><span data-stu-id="1b464-127">Header</span></span><br/>                   | <dl> <span data-ttu-id="1b464-128"><dt>Mfapi. h</dt></span><span class="sxs-lookup"><span data-stu-id="1b464-128"><dt>Mfapi.h</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="1b464-129">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="1b464-129">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="1b464-130">Elenco alfabetico degli attributi di Media Foundation</span><span class="sxs-lookup"><span data-stu-id="1b464-130">Alphabetical List of Media Foundation Attributes</span></span>](alphabetical-list-of-media-foundation-attributes.md)
+</dt> <dt>
+
+[<span data-ttu-id="1b464-131">Come impostare la frequenza dei fotogrammi di acquisizione video</span><span class="sxs-lookup"><span data-stu-id="1b464-131">How to Set the Video Capture Frame Rate</span></span>](how-to-set-the-video-capture-frame-rate.md)
+</dt> <dt>
+
+[<span data-ttu-id="1b464-132">Attributi del tipo di supporto</span><span class="sxs-lookup"><span data-stu-id="1b464-132">Media Type Attributes</span></span>](media-type-attributes.md)
+</dt> <dt>
+
+[<span data-ttu-id="1b464-133">Acquisizione video</span><span class="sxs-lookup"><span data-stu-id="1b464-133">Video Capture</span></span>](video-capture.md)
+</dt> <dt>
+
+[<span data-ttu-id="1b464-134">\_intervallo di \_ frequenza frame MF mt \_ \_ \_ Max</span><span class="sxs-lookup"><span data-stu-id="1b464-134">MF\_MT\_FRAME\_RATE\_RANGE\_MAX</span></span>](mf-mt-frame-rate-range-max.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
