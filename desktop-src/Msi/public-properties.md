@@ -1,0 +1,36 @@
+---
+description: È possibile creare proprietà pubbliche nel database di installazione in modo analogo alle proprietà private.
+ms.assetid: 032aa55f-d97a-4455-bd32-571b0e05763b
+title: Proprietà pubbliche
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 822dfc55e0ab659e5580580edd04eb156540cb61
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103881498"
+---
+# <a name="public-properties"></a><span data-ttu-id="94562-103">Proprietà pubbliche</span><span class="sxs-lookup"><span data-stu-id="94562-103">Public Properties</span></span>
+
+<span data-ttu-id="94562-104">È possibile creare proprietà pubbliche nel database di installazione in modo analogo alle [proprietà private](private-properties.md).</span><span class="sxs-lookup"><span data-stu-id="94562-104">Public properties can be authored into the installation database in the same way as [private properties](private-properties.md).</span></span> <span data-ttu-id="94562-105">Inoltre, i valori delle proprietà pubbliche possono essere modificati da un utente o da un amministratore di sistema impostando la proprietà nella riga di comando, applicando una trasformazione o interagendo con un'interfaccia utente creata.</span><span class="sxs-lookup"><span data-stu-id="94562-105">In addition, the values of public properties can be changed by a user or system administrator by setting the property on the command line, by applying a transform, or by interacting with an authored user interface.</span></span> <span data-ttu-id="94562-106">I nomi di proprietà pubbliche non possono contenere lettere minuscole.</span><span class="sxs-lookup"><span data-stu-id="94562-106">Public property names cannot contain lowercase letters.</span></span> <span data-ttu-id="94562-107">Vedere [restrizioni sui nomi di proprietà](restrictions-on-property-names.md).</span><span class="sxs-lookup"><span data-stu-id="94562-107">See [Restrictions on Property Names](restrictions-on-property-names.md).</span></span>
+
+<span data-ttu-id="94562-108">Le proprietà pubbliche vengono generalmente impostate dagli utenti durante l'installazione.</span><span class="sxs-lookup"><span data-stu-id="94562-108">Public properties are commonly set by users during the installation.</span></span> <span data-ttu-id="94562-109">Ad esempio, la proprietà Public Property [**INSTALLLEVEL**](installlevel.md) può essere specificata nella riga di comando usata per avviare l'installazione o scelta mediante un'interfaccia utente creata.</span><span class="sxs-lookup"><span data-stu-id="94562-109">For example, the public property [**INSTALLLEVEL**](installlevel.md) property can be specified at the command line used to launch the installation or chosen by using an authored user interface.</span></span>
+
+<span data-ttu-id="94562-110">È possibile eseguire l'override dei valori delle proprietà pubbliche in una riga di comando, usando un'azione [standard](standard-actions.md) o [personalizzata](custom-actions.md) , applicando una trasformazione o facendo in modo che l'utente interagisca con un'interfaccia utente creata.</span><span class="sxs-lookup"><span data-stu-id="94562-110">Public property values can be overridden either at a command line, by using a [standard](standard-actions.md) or [custom](custom-actions.md) action, by applying a transform, or by having the user interact with an authored user interface.</span></span> <span data-ttu-id="94562-111">Per cancellare una proprietà pubblica nella tabella delle proprietà, lasciarla fuori dalla tabella.</span><span class="sxs-lookup"><span data-stu-id="94562-111">To clear a public property in the property table, leave it out of the table.</span></span> <span data-ttu-id="94562-112">Le proprietà che devono essere impostate dall'interfaccia utente durante l'installazione e quindi passate alla fase di esecuzione dell'installazione devono essere pubbliche.</span><span class="sxs-lookup"><span data-stu-id="94562-112">Properties that are to be set by the user interface during the installation and then passed to the execution phase of the installation must be public.</span></span>
+
+<span data-ttu-id="94562-113">Per un elenco delle proprietà pubbliche standard usate dal programma di installazione, vedere [riferimento alle proprietà](property-reference.md).</span><span class="sxs-lookup"><span data-stu-id="94562-113">For a list of the standard public properties used by the installer see [Property Reference](property-reference.md).</span></span> <span data-ttu-id="94562-114">Un autore può anche definire una proprietà pubblica personalizzata immettendo il nome della proprietà e un valore iniziale nella [tabella delle proprietà](property-table.md).</span><span class="sxs-lookup"><span data-stu-id="94562-114">An author can also define a custom public property by entering the property's name and an initial value into the [Property table](property-table.md).</span></span> <span data-ttu-id="94562-115">Tutti gli utenti possono eseguire l'override di tutte le proprietà pubbliche se si verifica una delle condizioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="94562-115">All public properties can be overridden by all users if any of the following conditions are true.</span></span>
+
+-   <span data-ttu-id="94562-116">L'utente è un amministratore di sistema.</span><span class="sxs-lookup"><span data-stu-id="94562-116">The user is a system administrator.</span></span>
+-   <span data-ttu-id="94562-117">Il criterio EnableUserControl per computer è impostato su 1.</span><span class="sxs-lookup"><span data-stu-id="94562-117">The per-machine EnableUserControl policy is set to 1.</span></span> <span data-ttu-id="94562-118">Vedere [criteri di sistema](system-policy.md).</span><span class="sxs-lookup"><span data-stu-id="94562-118">See [System Policy](system-policy.md).</span></span>
+-   <span data-ttu-id="94562-119">La proprietà [**EnableUserControl**](-enableusercontrol.md) è impostata su 1.</span><span class="sxs-lookup"><span data-stu-id="94562-119">The [**EnableUserControl**](-enableusercontrol.md) property is set to 1.</span></span>
+-   <span data-ttu-id="94562-120">Si tratta di un'installazione non gestita che non viene eseguita con privilegi elevati.</span><span class="sxs-lookup"><span data-stu-id="94562-120">This is an unmanaged installation that is not being done with elevated privileges.</span></span>
+
+<span data-ttu-id="94562-121">Se nessuna delle condizioni precedenti è true, per impostazione predefinita il programma di installazione limita le proprietà pubbliche di cui è possibile eseguire l'override da un utente che non è un amministratore di sistema.</span><span class="sxs-lookup"><span data-stu-id="94562-121">If none of the above conditions are true, the installer defaults to limiting which public properties can be overridden by a user that is not a system administrator.</span></span> <span data-ttu-id="94562-122">Vedere [**proprietà pubbliche limitate**](restricted-public-properties.md).</span><span class="sxs-lookup"><span data-stu-id="94562-122">See [**Restricted Public Properties**](restricted-public-properties.md).</span></span>
+
+ 
+
+ 
+
+
+
