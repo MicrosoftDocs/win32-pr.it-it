@@ -1,0 +1,24 @@
+---
+description: I servizi di telefonia supplementare sono la raccolta di tutti i servizi definiti dall'API, ad eccezione di quelli inclusi nel sottoinsieme telefonico di base.
+ms.assetid: a2a30a0d-fbfd-4317-8e3a-d1e1e8b86ae0
+title: Servizi di telefonia supplementari
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6d93a7d12840e2001c6a2742e6bbd870d291e836
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103881634"
+---
+# <a name="supplementary-telephony-services"></a><span data-ttu-id="341d6-103">Servizi di telefonia supplementari</span><span class="sxs-lookup"><span data-stu-id="341d6-103">Supplementary Telephony Services</span></span>
+
+<span data-ttu-id="341d6-104">I servizi di telefonia supplementare sono la raccolta di tutti i servizi definiti dall'API, ad eccezione di quelli inclusi nel sottoinsieme telefonico di base.</span><span class="sxs-lookup"><span data-stu-id="341d6-104">Supplementary Telephony services are the collection of all the services defined by the API other than those included in the Basic Telephony subset.</span></span> <span data-ttu-id="341d6-105">Sono incluse tutte le cosiddette funzionalità supplementari disponibili sui PBX moderni, ad esempio l'attesa, il trasferimento, la conferenza, il parco e così via.</span><span class="sxs-lookup"><span data-stu-id="341d6-105">It includes all so-called supplementary features found on modern PBXs, such as hold, transfer, conference, park, and so on.</span></span> <span data-ttu-id="341d6-106">Tutte le funzionalità supplementari sono considerate facoltative; ovvero, il provider di servizi decide quale di questi servizi ha o non fornisce.</span><span class="sxs-lookup"><span data-stu-id="341d6-106">All supplementary features are considered optional; that is, the service provider decides which of these services it does or does not provide.</span></span>
+
+<span data-ttu-id="341d6-107">Un'applicazione può eseguire una query su una linea o un dispositivo telefonico per il set di servizi supplementari che fornisce usando funzioni quali [**lineGetDevCaps**](/windows/win32/api/tapi/nf-tapi-linegetdevcaps) o [**lineGetAddressCaps**](/windows/win32/api/tapi/nf-tapi-linegetaddresscaps).</span><span class="sxs-lookup"><span data-stu-id="341d6-107">An application can query a line or phone device for the set of supplementary services it provides using functions such as [**lineGetDevCaps**](/windows/win32/api/tapi/nf-tapi-linegetdevcaps) or [**lineGetAddressCaps**](/windows/win32/api/tapi/nf-tapi-linegetaddresscaps).</span></span> <span data-ttu-id="341d6-108">Un singolo servizio supplementare può essere costituito da più chiamate di funzione e messaggi.</span><span class="sxs-lookup"><span data-stu-id="341d6-108">A single supplementary service may consist of multiple function calls and messages.</span></span> <span data-ttu-id="341d6-109">L'API di telefonia, e non lo sviluppatore del provider di servizi, definisce il comportamento di ognuna di queste funzionalità supplementari.</span><span class="sxs-lookup"><span data-stu-id="341d6-109">The Telephony API, and not the service provider developer, defines the behavior of each of these supplementary features.</span></span> <span data-ttu-id="341d6-110">Un provider di servizi deve fornire un servizio di telefonia supplementare solo se può implementare il significato esatto definito dall'API.</span><span class="sxs-lookup"><span data-stu-id="341d6-110">A service provider should provide a Supplementary Telephony service only if it can implement the exact meaning as defined by the API.</span></span> <span data-ttu-id="341d6-111">In caso contrario, la funzionalità deve essere fornita come servizio di telefonia estesa.</span><span class="sxs-lookup"><span data-stu-id="341d6-111">If not, the feature should be provided as an Extended Telephony service.</span></span>
+
+<span data-ttu-id="341d6-112">Come indicato nei servizi telefonici di base, i servizi del dispositivo telefonico sono considerati facoltativi.</span><span class="sxs-lookup"><span data-stu-id="341d6-112">As mentioned in Basic Telephony services, phone-device services are considered optional.</span></span> <span data-ttu-id="341d6-113">Pertanto, tutti i servizi per dispositivi telefonici fanno parte della telefonia supplementare.</span><span class="sxs-lookup"><span data-stu-id="341d6-113">Therefore, all phone-device services are part of Supplementary Telephony.</span></span> <span data-ttu-id="341d6-114">Per un elenco delle funzioni di telefonia supplementare, vedere informazioni di [riferimento sulle funzioni TAPI Quick](./tapi-quick-function-reference.md).</span><span class="sxs-lookup"><span data-stu-id="341d6-114">For a list of the functions of Supplementary Telephony, see [TAPI Quick Function Reference](./tapi-quick-function-reference.md).</span></span>
+
+ 
+
+ 
