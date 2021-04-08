@@ -1,0 +1,106 @@
+---
+description: Trasforma il vettore 2D normale in base alla matrice specificata.
+ms.assetid: fc238bb1-155f-4018-9c92-16352726920d
+title: Funzione D3DXVec2TransformNormal (D3DX10Math. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- D3DXVec2TransformNormal
+api_type:
+- LibDef
+api_location:
+- D3DX10.lib
+- D3DX10.dll
+ms.openlocfilehash: c4043a8f5a57f14be3e8506dc257690ef581835d
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103969370"
+---
+# <a name="d3dxvec2transformnormal-function-d3dx10mathh"></a>Funzione D3DXVec2TransformNormal (D3DX10Math. h)
+
+Trasforma il vettore 2D normale in base alla matrice specificata.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+D3DXVECTOR2* D3DXVec2TransformNormal(
+  _Inout_       D3DXVECTOR2 *pOut,
+  _In_    const D3DXVECTOR2 *pV,
+  _In_    const D3DXMATRIX  *pM
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*broncio* \[ in uscita\]
+</dt> <dd>
+
+Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
+
+Puntatore a [**D3DXVECTOR2**](d3d10-d3dxvector2.md) che rappresenta il risultato dell'operazione.
+
+</dd> <dt>
+
+*PV* \[ in\]
+</dt> <dd>
+
+Tipo: **const [**D3DXVECTOR2**](../direct3d9/d3dxvector2.md) \***
+
+Puntatore alla struttura D3DXVECTOR2 di origine.
+
+</dd> <dt>
+
+*PM* \[ in\]
+</dt> <dd>
+
+Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
+
+Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) di origine.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
+
+Puntatore a una struttura D3DXVECTOR2 che rappresenta il vettore trasformato.
+
+## <a name="remarks"></a>Commenti
+
+Questa funzione trasforma il vettore (pV->x, pV->y, 0, 0) dalla matrice a cui fa riferimento il pM.
+
+Se si vuole trasformare un normale, la matrice passata a questa funzione deve essere la trasposizione dell'inverso della matrice da usare per trasformare un punto.
+
+Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXVec2TransformNormal** può essere utilizzata come parametro per un'altra funzione.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|--------------------|-----------------------------------------------------------------------------------------|
+| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[Funzioni matematiche](d3d10-graphics-reference-d3dx10-functions-math.md)
+</dt> </dl>
+
+ 
+
+ 
