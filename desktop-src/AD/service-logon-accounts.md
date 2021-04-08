@@ -1,0 +1,40 @@
+---
+title: Account di accesso al servizio
+description: Un servizio, come qualsiasi processo, ha un'identità di sicurezza primaria che determina i diritti di accesso e i privilegi concessi per le risorse locali e di rete.
+ms.assetid: c2345967-8415-4cc0-96d3-12c48e74028e
+ms.tgt_platform: multiple
+keywords:
+- Active Directory, utilizzo, accesso al servizio
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9340fe7eebc95ec4c7ea3091c96a2539cb08dee4
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103855382"
+---
+# <a name="service-logon-accounts"></a><span data-ttu-id="529f7-104">Account di accesso al servizio</span><span class="sxs-lookup"><span data-stu-id="529f7-104">Service Logon Accounts</span></span>
+
+<span data-ttu-id="529f7-105">Un servizio, come qualsiasi processo, ha un'identità di sicurezza primaria che determina i diritti di accesso e i privilegi concessi per le risorse locali e di rete.</span><span class="sxs-lookup"><span data-stu-id="529f7-105">A service, like any process, has a primary security identity that determines the granted access rights and privileges for local and network resources.</span></span> <span data-ttu-id="529f7-106">Questa identità di sicurezza, o contesto di sicurezza, determina anche il potenziale del servizio per danneggiare le risorse locali e di rete.</span><span class="sxs-lookup"><span data-stu-id="529f7-106">This security identity, or security context, also determines the potential the service has for damaging local and network resources.</span></span>
+
+<span data-ttu-id="529f7-107">Il contesto di sicurezza per un servizio Microsoft Win32 è determinato dall'account di accesso utilizzato per avviare il servizio.</span><span class="sxs-lookup"><span data-stu-id="529f7-107">The security context for a Microsoft Win32 service is determined by the logon account that is used to start the service.</span></span> <span data-ttu-id="529f7-108">In questa sezione vengono illustrati i problemi di programmazione e le procedure consigliate relative all'account di accesso al servizio utilizzato dai servizi Win32, con particolare attenzione ai servizi abilitati per la directory.</span><span class="sxs-lookup"><span data-stu-id="529f7-108">This section discusses programming issues and best practices relating to the service logon account used by Win32 services, with a focus on directory-enabled services.</span></span> <span data-ttu-id="529f7-109">Questa sezione include gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="529f7-109">This section includes the following topics:</span></span>
+
+-   <span data-ttu-id="529f7-110">[Informazioni sugli account di accesso](about-service-logon-accounts.md)al servizio: Panoramica degli account di accesso al servizio e problemi di programmazione del contesto di sicurezza per un servizio Win32.</span><span class="sxs-lookup"><span data-stu-id="529f7-110">[About Service Logon Accounts](about-service-logon-accounts.md)—An overview of service logon accounts and security context programming issues for a Win32 service.</span></span>
+-   <span data-ttu-id="529f7-111">[Linee guida per la selezione di un account di accesso al servizio](guidelines-for-selecting-a-service-logon-account.md) per un servizio Win32.</span><span class="sxs-lookup"><span data-stu-id="529f7-111">[Guidelines for Selecting a Service Logon Account](guidelines-for-selecting-a-service-logon-account.md) for a Win32 service.</span></span>
+-   <span data-ttu-id="529f7-112">[Configurazione dell'account utente di un servizio](setting-up-a-serviceampaposs-user-account.md).</span><span class="sxs-lookup"><span data-stu-id="529f7-112">[Setting up a Service's User Account](setting-up-a-serviceampaposs-user-account.md).</span></span>
+-   <span data-ttu-id="529f7-113">[Installare un servizio in un computer host](installing-a-service-on-a-host-computer.md) e specificare l'account di accesso al servizio.</span><span class="sxs-lookup"><span data-stu-id="529f7-113">[Installing a Service on a Host Computer](installing-a-service-on-a-host-computer.md) and specifying the service logon account.</span></span>
+-   <span data-ttu-id="529f7-114">[Concessione dell'accesso come servizio direttamente nel computer host](granting-logon-as-service-right-on-the-host-computer.md), concedendo all'account utente del servizio il diritto di accesso come servizio nel computer host.</span><span class="sxs-lookup"><span data-stu-id="529f7-114">[Granting Logon as Service Right on the Host Computer](granting-logon-as-service-right-on-the-host-computer.md)—Granting the service's user account the logon as a service right on the host computer.</span></span>
+-   <span data-ttu-id="529f7-115">[Verifica dell'esecuzione in un controller di dominio](testing-whether-running-on-a-domain-controller.md): rilevamento in fase di installazione se l'istanza del servizio viene installata in un controller di dominio.</span><span class="sxs-lookup"><span data-stu-id="529f7-115">[Testing Whether Running on a Domain Controller](testing-whether-running-on-a-domain-controller.md)—Detecting at installation time whether the service instance is being installed on a domain controller.</span></span>
+-   <span data-ttu-id="529f7-116">[Concessione dei diritti di accesso all'account di accesso al servizio](granting-access-rights-to-the-service-logon-account.md): impostazione e gestione di Ace e appartenenze a gruppi per garantire che il sistema consentirà all'esecuzione del servizio di accedere alle risorse locali e di rete necessarie.</span><span class="sxs-lookup"><span data-stu-id="529f7-116">[Granting Access Rights to the Service Logon Account](granting-access-rights-to-the-service-logon-account.md)—Setting and maintaining ACEs and group memberships to ensure that the system will grant the running service access to the necessary local and network resources.</span></span>
+-   <span data-ttu-id="529f7-117">[Modifica della password nell'account utente di un servizio](changing-the-password-on-a-serviceampaposs-user-account.md): modifica della password dell'account utente di un servizio e aggiornamento della password registrata con Gestione controllo servizi in ogni server host in cui è installato il servizio.</span><span class="sxs-lookup"><span data-stu-id="529f7-117">[Changing the Password on a Service's User Account](changing-the-password-on-a-serviceampaposs-user-account.md)—Changing the password on a service's user account, and at the same time updating the password registered with the service control manager on each host server on which the service is installed.</span></span>
+-   <span data-ttu-id="529f7-118">[Autenticazione reciproca tramite Kerberos](mutual-authentication-using-kerberos.md): gestione della registrazione del nome dell'entità servizio (SPN) nell'oggetto directory associato all'account di accesso di ogni istanza del servizio.</span><span class="sxs-lookup"><span data-stu-id="529f7-118">[Mutual Authentication Using Kerberos](mutual-authentication-using-kerberos.md)—Maintaining service principal name (SPN) registration on the directory object associated with the logon account of each instance of your service.</span></span> <span data-ttu-id="529f7-119">I nomi SPN consentono ai client di autenticare un servizio usando l'autenticazione reciproca Kerberos.</span><span class="sxs-lookup"><span data-stu-id="529f7-119">SPNs enable clients to authenticate a service using Kerberos mutual authentication.</span></span>
+-   <span data-ttu-id="529f7-120">[Conversione dei formati dei nomi di account di dominio](converting-domain-account-name-formats.md), ad esempio la conversione di un nome distinto in formato *dominio ***\\*** nomeutente* e viceversa.</span><span class="sxs-lookup"><span data-stu-id="529f7-120">[Converting Domain Account Name Formats](converting-domain-account-name-formats.md)—For example, converting a distinguished name to *Domain ***\\*** UserName* format, and vice versa.</span></span>
+
+ 
+
+ 
+
+
+
+
