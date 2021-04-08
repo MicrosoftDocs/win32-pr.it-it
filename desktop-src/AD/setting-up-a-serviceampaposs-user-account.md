@@ -1,0 +1,29 @@
+---
+title: Configurazione dell'account utente di un servizio
+description: Il programma di installazione del servizio può suggerire un account di accesso predefinito per un'istanza del servizio e consentire all'amministratore di selezionare l'account predefinito o specificarne uno diverso.
+ms.assetid: 37285c23-8922-4da5-9f0b-922ea5e5794e
+ms.tgt_platform: multiple
+keywords:
+- Impostazione dell'account utente di un servizio AD
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 705fa16d8d2cce137755f4a5086716aaaef8046a
+ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "103724407"
+---
+# <a name="setting-up-a-services-user-account"></a><span data-ttu-id="e2884-104">Configurazione dell'account utente di un servizio</span><span class="sxs-lookup"><span data-stu-id="e2884-104">Setting up a Service's User Account</span></span>
+
+<span data-ttu-id="e2884-105">Il programma di installazione del servizio può suggerire un account di accesso predefinito per un'istanza del servizio e consentire all'amministratore di selezionare l'account predefinito o specificarne uno diverso.</span><span class="sxs-lookup"><span data-stu-id="e2884-105">Your service installer can suggest a default logon account for a service instance and allow the administrator to select the default account or specify a different one.</span></span> <span data-ttu-id="e2884-106">Se l'amministratore seleziona un account utente, anziché l'account LocalSystem, l'account deve esistere prima di chiamare la funzione [**CreateService**](/windows/desktop/api/winsvc/nf-winsvc-createservicea) per installare un'istanza del servizio in un server host.</span><span class="sxs-lookup"><span data-stu-id="e2884-106">If the administrator selects a user account, rather than the LocalSystem account, the account must exist before you call the [**CreateService**](/windows/desktop/api/winsvc/nf-winsvc-createservicea) function to install an instance of the service on a host server.</span></span> <span data-ttu-id="e2884-107">Per ulteriori informazioni e un esempio di codice che può essere utilizzato per creare un nuovo oggetto utente di dominio in Active Directory Domain Services, vedere [creazione di un utente](creating-a-user.md).</span><span class="sxs-lookup"><span data-stu-id="e2884-107">For more information and a code example that can be used to create a new domain user object in Active Directory Domain Services, see [Creating a User](creating-a-user.md).</span></span>
+
+<span data-ttu-id="e2884-108">Idealmente, ogni istanza di un servizio, sia che si tratti di un servizio basato su host o replicabile, deve disporre di un proprio account utente di dominio.</span><span class="sxs-lookup"><span data-stu-id="e2884-108">Ideally, each instance of a service, whether a host-based or replicable service, should have its own domain user account.</span></span> <span data-ttu-id="e2884-109">L'utilizzo di account separati per ogni istanza del servizio è più sicuro rispetto alla condivisione dello stesso account da parte di più istanze.</span><span class="sxs-lookup"><span data-stu-id="e2884-109">Using separate accounts for each service instance is more secure than having multiple instances share the same account.</span></span> <span data-ttu-id="e2884-110">Inoltre, l'utilizzo di account separati consente di controllare le attività di ogni istanza del servizio.</span><span class="sxs-lookup"><span data-stu-id="e2884-110">Also, using separate accounts makes it possible to audit the activities of each service instance.</span></span>
+
+<span data-ttu-id="e2884-111">Quando il programma di installazione suggerisce un account di accesso predefinito, è necessario specificare il nome di un nuovo account da creare per la nuova istanza del servizio.</span><span class="sxs-lookup"><span data-stu-id="e2884-111">When your installer suggests a default logon account, it should specify the name of a new account to be created for the new service instance.</span></span> <span data-ttu-id="e2884-112">Il nome dell'account può essere composto dagli stessi elementi utilizzati per comporre un nome dell'entità servizio, ad esempio la classe del servizio, il computer host e il nome del servizio.</span><span class="sxs-lookup"><span data-stu-id="e2884-112">The account name could be composed from the same elements used to compose a service principal name, such as the service class, host computer, and service name.</span></span> <span data-ttu-id="e2884-113">Per altre informazioni vedere [Service Principal Names](service-principal-names.md) (Nomi di entità servizio).</span><span class="sxs-lookup"><span data-stu-id="e2884-113">For more information, see [Service Principal Names](service-principal-names.md).</span></span> <span data-ttu-id="e2884-114">In genere, l'account viene creato nel contenitore degli utenti nel dominio del computer host.</span><span class="sxs-lookup"><span data-stu-id="e2884-114">Typically, you create the account in the Users container on the domain of the host computer.</span></span>
+
+<span data-ttu-id="e2884-115">È necessario generare una password per ogni account.</span><span class="sxs-lookup"><span data-stu-id="e2884-115">You must generate a password for each account.</span></span> <span data-ttu-id="e2884-116">Per ulteriori informazioni su come scrivere uno strumento che consente di automatizzare l'attività di aggiornamento delle password degli account del servizio, vedere [modifica della password per l'account utente di un servizio](changing-the-password-on-a-serviceampaposs-user-account.md).</span><span class="sxs-lookup"><span data-stu-id="e2884-116">For more information about how to write a tool that automates the task of updating service account passwords, see [Changing the Password on a Service's User Account](changing-the-password-on-a-serviceampaposs-user-account.md).</span></span>
+
+ 
+
+ 
