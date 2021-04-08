@@ -1,0 +1,83 @@
+---
+description: Recupera il GUID di questo oggetto dati file.
+ms.assetid: 79bf56b5-5900-4427-8092-3a1df86f8a57
+title: 'Metodo ID3DXFileData:: GetId (D3DX9Xof. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- ID3DXFileData.GetId
+api_type:
+- COM
+api_location:
+- D3dx9.lib
+- D3dx9.dll
+ms.openlocfilehash: e1dafb296541b1702e9163dcc6d460cf149b4007
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103762148"
+---
+# <a name="id3dxfiledatagetid-method"></a><span data-ttu-id="2373a-103">Metodo ID3DXFileData:: GetId</span><span class="sxs-lookup"><span data-stu-id="2373a-103">ID3DXFileData::GetId method</span></span>
+
+<span data-ttu-id="2373a-104">Recupera il GUID di questo oggetto dati file.</span><span class="sxs-lookup"><span data-stu-id="2373a-104">Retrieves the GUID of this file data object.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="2373a-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="2373a-105">Syntax</span></span>
+
+
+```C++
+HRESULT GetId(
+  [out] 
+            LPGUID pId
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="2373a-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="2373a-106">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="2373a-107">*PID* \[ out\]</span><span class="sxs-lookup"><span data-stu-id="2373a-107">*pId* \[out\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="2373a-108">Tipo: **LPGUID**</span><span class="sxs-lookup"><span data-stu-id="2373a-108">Type: **LPGUID**</span></span>
+
+<span data-ttu-id="2373a-109">Puntatore a un GUID per ricevere l'ID di questo oggetto dati file.</span><span class="sxs-lookup"><span data-stu-id="2373a-109">Pointer to a GUID to receive the ID of this file data object.</span></span> <span data-ttu-id="2373a-110">Se l'oggetto dati del file non dispone di un ID, il valore del parametro restituito sarà GUID \_ null.</span><span class="sxs-lookup"><span data-stu-id="2373a-110">If the file data object has no ID, the returned parameter value will be GUID\_NULL.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="2373a-111">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="2373a-111">Return value</span></span>
+
+<span data-ttu-id="2373a-112">Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span><span class="sxs-lookup"><span data-stu-id="2373a-112">Type: **[**HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**</span></span>
+
+<span data-ttu-id="2373a-113">Se il metodo ha esito positivo, il valore restituito è \_ OK.</span><span class="sxs-lookup"><span data-stu-id="2373a-113">If the method succeeds, the return value is S\_OK.</span></span> <span data-ttu-id="2373a-114">Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.</span><span class="sxs-lookup"><span data-stu-id="2373a-114">If the method fails, the following value will be returned: D3DXFERR\_BADVALUE.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="2373a-115">Requisiti</span><span class="sxs-lookup"><span data-stu-id="2373a-115">Requirements</span></span>
+
+
+
+| <span data-ttu-id="2373a-116">Requisito</span><span class="sxs-lookup"><span data-stu-id="2373a-116">Requirement</span></span> | <span data-ttu-id="2373a-117">Valore</span><span class="sxs-lookup"><span data-stu-id="2373a-117">Value</span></span> |
+|--------------------|---------------------------------------------------------------------------------------|
+| <span data-ttu-id="2373a-118">Intestazione</span><span class="sxs-lookup"><span data-stu-id="2373a-118">Header</span></span><br/>  | <dl> <span data-ttu-id="2373a-119"><dt>D3DX9Xof. h</dt></span><span class="sxs-lookup"><span data-stu-id="2373a-119"><dt>D3DX9Xof.h</dt></span></span> </dl> |
+| <span data-ttu-id="2373a-120">Libreria</span><span class="sxs-lookup"><span data-stu-id="2373a-120">Library</span></span><br/> | <dl> <span data-ttu-id="2373a-121"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="2373a-121"><dt>D3dx9.lib</dt></span></span> </dl>  |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="2373a-122">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="2373a-122">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="2373a-123">ID3DXFileData</span><span class="sxs-lookup"><span data-stu-id="2373a-123">ID3DXFileData</span></span>](id3dxfiledata.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
