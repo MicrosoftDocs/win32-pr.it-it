@@ -1,0 +1,40 @@
+---
+description: Enumerazioni API di collaborazione
+ms.assetid: f72e372a-0d23-47f4-8518-1296ec81ce55
+title: Enumerazioni API di collaborazione
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3504e36d96a920452aef1a8dfeb0724aea127c24
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103967545"
+---
+# <a name="collaboration-api-enumerations"></a><span data-ttu-id="259e3-103">Enumerazioni API di collaborazione</span><span class="sxs-lookup"><span data-stu-id="259e3-103">Collaboration API Enumerations</span></span>
+
+<span data-ttu-id="259e3-104">Le enumerazioni seguenti supportano le funzioni dell'infrastruttura di collaborazione peer.</span><span class="sxs-lookup"><span data-stu-id="259e3-104">The following enumerations support the Peer Collaboration Infrastructure functions.</span></span>
+
+
+
+| <span data-ttu-id="259e3-105">Enumerazione</span><span class="sxs-lookup"><span data-stu-id="259e3-105">Enumeration</span></span>                                                                         | <span data-ttu-id="259e3-106">Descrizione</span><span class="sxs-lookup"><span data-stu-id="259e3-106">Description</span></span>                                                                                                                                                                                                                                                                   |
+|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="259e3-107">**\_tipo di \_ registrazione dell'applicazione peer \_**</span><span class="sxs-lookup"><span data-stu-id="259e3-107">**PEER\_APPLICATION\_REGISTRATION\_TYPE**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_application_registration_type) | <span data-ttu-id="259e3-108">Definisce il set di flag di registrazione dell'applicazione peer.</span><span class="sxs-lookup"><span data-stu-id="259e3-108">Defines the set of peer application registration flags.</span></span>                                                                                                                                                                                                                       |
+| [<span data-ttu-id="259e3-109">**\_tipo di modifica peer \_**</span><span class="sxs-lookup"><span data-stu-id="259e3-109">**PEER\_CHANGE\_TYPE**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_change_type)                                      | <span data-ttu-id="259e3-110">Definisce il set di modifiche che possono essere eseguite su un oggetto peer, un endpoint o un'applicazione.</span><span class="sxs-lookup"><span data-stu-id="259e3-110">Defines the set of changes that can be performed on a peer object, endpoint, or application.</span></span>                                                                                                                                                                                  |
+| [<span data-ttu-id="259e3-111">**\_flag di accesso \_ peer**</span><span class="sxs-lookup"><span data-stu-id="259e3-111">**PEER\_SIGNIN\_FLAGS**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_signin_flags)                                    | <span data-ttu-id="259e3-112">Definisce il set di comportamenti di pubblicazione della presenza peer disponibili quando il peer accede a una rete di collaborazione peer.</span><span class="sxs-lookup"><span data-stu-id="259e3-112">Defines the set of peer presence publication behaviors available when the peer signs in to a peer collaboration network.</span></span>                                                                                                                                                      |
+| [<span data-ttu-id="259e3-113">**\_autorizzazione peer Watch \_**</span><span class="sxs-lookup"><span data-stu-id="259e3-113">**PEER\_WATCH\_PERMISSION**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_watch_permission)                            | <span data-ttu-id="259e3-114">Definisce il set di autorizzazioni che rappresentano la presenza di un contatto per un peer di osservazione.</span><span class="sxs-lookup"><span data-stu-id="259e3-114">Defines the set of permissions that represent a contact's presence to a watching peer.</span></span>                                                                                                                                                                                        |
+| [<span data-ttu-id="259e3-115">**\_tipo di \_ evento peer Collab \_**</span><span class="sxs-lookup"><span data-stu-id="259e3-115">**PEER\_COLLAB\_EVENT\_TYPE**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_collab_event_type)                         | <span data-ttu-id="259e3-116">Definisce il set di eventi che possono essere generati su un peer dall'infrastruttura di eventi della rete di collaborazione peer.</span><span class="sxs-lookup"><span data-stu-id="259e3-116">Defines the set of events that can be raised on a peer by the peer collaboration network event infrastructure.</span></span>                                                                                                                                                                |
+| [<span data-ttu-id="259e3-117">**\_stato presenza \_ peer**</span><span class="sxs-lookup"><span data-stu-id="259e3-117">**PEER\_PRESENCE\_STATUS**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_presence_status)                              | <span data-ttu-id="259e3-118">Definisce il set di possibili impostazioni dello stato di presenza disponibili per un peer che partecipa a una rete di collaborazione peer.</span><span class="sxs-lookup"><span data-stu-id="259e3-118">Defines the set of possible presence status settings available to a peer that participates in a peer collaboration network.</span></span> <span data-ttu-id="259e3-119">Queste impostazioni possono essere impostate da un endpoint di rete per la collaborazione tra peer per indicare il livello corrente di partecipazione del contatto peer ai propri Watcher.</span><span class="sxs-lookup"><span data-stu-id="259e3-119">These settings can be set by a peer collaboration network endpoint to indicate the peer contact's current level of participation to its watchers.</span></span> |
+| [<span data-ttu-id="259e3-120">**\_tipo di \_ risposta di invito peer \_**</span><span class="sxs-lookup"><span data-stu-id="259e3-120">**PEER\_INVITATION\_RESPONSE\_TYPE**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_invitation_response_type)           | <span data-ttu-id="259e3-121">Definisce il set di risposte ricevute a un invito a partecipare a un'attività di collaborazione peer.</span><span class="sxs-lookup"><span data-stu-id="259e3-121">Defines the set of responses received to an invitation to join a Peer Collaboration activity.</span></span>                                                                                                                                                                                 |
+| [<span data-ttu-id="259e3-122">**\_ambito pubblicazione \_ peer**</span><span class="sxs-lookup"><span data-stu-id="259e3-122">**PEER\_PUBLICATION\_SCOPE**</span></span>](/windows/desktop/api/P2P/ne-p2p-peer_publication_scope)                          | <span data-ttu-id="259e3-123">Definisce il set di ambiti per la pubblicazione di dati o oggetti peer.</span><span class="sxs-lookup"><span data-stu-id="259e3-123">Defines the set of scopes for the publication of peer objects or data.</span></span>                                                                                                                                                                                                        |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
