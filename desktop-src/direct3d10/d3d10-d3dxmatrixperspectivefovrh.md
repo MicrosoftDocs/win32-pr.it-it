@@ -1,0 +1,138 @@
+---
+description: Crea una matrice di proiezione prospettica destrorsa basata su un campo visivo.
+ms.assetid: a75e6666-e6c0-4a54-bc88-835fa012542f
+title: Funzione D3DXMatrixPerspectiveFovRH (D3DX10Math. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- D3DXMatrixPerspectiveFovRH
+api_type:
+- LibDef
+api_location:
+- D3DX10.lib
+- D3DX10.dll
+ms.openlocfilehash: baad02b5840af8e244cd562def4aeb8f9ac2988a
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103969432"
+---
+# <a name="d3dxmatrixperspectivefovrh-function-d3dx10mathh"></a>Funzione D3DXMatrixPerspectiveFovRH (D3DX10Math. h)
+
+Crea una matrice di proiezione prospettica destrorsa basata su un campo visivo.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+D3DXMATRIX* D3DXMatrixPerspectiveFovRH(
+  _Inout_ D3DXMATRIX *pOut,
+  _In_    FLOAT      fovy,
+  _In_    FLOAT      Aspect,
+  _In_    FLOAT      zn,
+  _In_    FLOAT      zf
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*broncio* \[ in uscita\]
+</dt> <dd>
+
+Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
+
+Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+
+</dd> <dt>
+
+*fovy* \[ in\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Campo di visualizzazione nella direzione y, in radianti.
+
+</dd> <dt>
+
+*Aspetto* \[ in\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Proporzioni, definite come larghezza dello spazio di visualizzazione divisa per l'altezza.
+
+</dd> <dt>
+
+*Zn* \[ in\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valore Z del piano di visualizzazione vicino.
+
+</dd> <dt>
+
+*ZF* \[ in\]
+</dt> <dd>
+
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
+
+Valore Z del piano di visualizzazione lontano.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
+
+Puntatore a una struttura D3DXMATRIX che rappresenta una matrice di proiezione prospettica a destra.
+
+## <a name="remarks"></a>Commenti
+
+Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixPerspectiveFovRH può essere utilizzata come parametro per un'altra funzione.
+
+Questa funzione calcola la matrice restituita come illustrato.
+
+
+```
+xScale     0          0              0
+0        yScale       0              0
+0          0      zf/(zn-zf)        -1
+0          0      zn*zf/(zn-zf)      0
+where:
+yScale = cot(fovY/2)
+    
+xScale = yScale / aspect ratio
+```
+
+
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|--------------------|-----------------------------------------------------------------------------------------|
+| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[Funzioni matematiche](d3d10-graphics-reference-d3dx10-functions-math.md)
+</dt> </dl>
+
+ 
+
+ 
