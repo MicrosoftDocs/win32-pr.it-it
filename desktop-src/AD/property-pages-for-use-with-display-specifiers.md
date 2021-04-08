@@ -1,0 +1,37 @@
+---
+title: Pagine delle proprietà da usare con gli identificatori di visualizzazione
+description: Active Directory Domain Services fornire un meccanismo per aggiungere pagine alla finestra delle proprietà visualizzata per un oggetto directory da Active Directory snap-in amministrativi o dalla shell di Windows.
+ms.assetid: c1dd84e2-50f9-4903-a4b5-4473515e4d0e
+ms.tgt_platform: multiple
+keywords:
+- Visualizza gli identificatori AD, le pagine delle proprietà da usare con
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c204f4d378e66cda5bc02684cb51cc707ba3d6f2
+ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "103872274"
+---
+# <a name="property-pages-for-use-with-display-specifiers"></a><span data-ttu-id="a4282-104">Pagine delle proprietà da usare con gli identificatori di visualizzazione</span><span class="sxs-lookup"><span data-stu-id="a4282-104">Property Pages for Use with Display Specifiers</span></span>
+
+<span data-ttu-id="a4282-105">Active Directory Domain Services fornire un meccanismo per aggiungere pagine alla finestra delle proprietà visualizzata per un oggetto directory da Active Directory snap-in amministrativi o dalla shell di Windows.</span><span class="sxs-lookup"><span data-stu-id="a4282-105">Active Directory Domain Services provide a mechanism for adding pages to the property sheet displayed for a directory object from the Active Directory administrative snap-ins or the Windows shell.</span></span> <span data-ttu-id="a4282-106">Per aggiungere una pagina alla finestra delle proprietà, implementare un'estensione della finestra delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="a4282-106">To add a page to the property sheet, implement a property sheet extension.</span></span>
+
+## <a name="developer-audience"></a><span data-ttu-id="a4282-107">Sviluppatori</span><span class="sxs-lookup"><span data-stu-id="a4282-107">Developer Audience</span></span>
+
+<span data-ttu-id="a4282-108">In questa documentazione si presuppone che il lettore abbia familiarità con l'operazione COM e lo sviluppo di componenti con C++.</span><span class="sxs-lookup"><span data-stu-id="a4282-108">This documentation assumes that the reader is familiar with COM operation and component development using C++.</span></span> <span data-ttu-id="a4282-109">Non è attualmente possibile creare un'estensione della finestra delle proprietà Active Directory utilizzando Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="a4282-109">It is not currently possible to create an Active Directory property sheet extension using Visual Basic.</span></span>
+
+## <a name="creating-an-active-directory-property-sheet-extension"></a><span data-ttu-id="a4282-110">Creazione di un'estensione della finestra delle proprietà Active Directory</span><span class="sxs-lookup"><span data-stu-id="a4282-110">Creating an Active Directory Property Sheet Extension</span></span>
+
+<span data-ttu-id="a4282-111">Un' *estensione della finestra delle proprietà* è un server com in-process che implementa determinate interfacce e viene registrato con Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="a4282-111">A *property sheet extension* is a COM in-proc server that implements certain interfaces and is registered with Active Directory Domain Services.</span></span> <span data-ttu-id="a4282-112">Per creare un'estensione della finestra delle proprietà, seguire questa procedura.</span><span class="sxs-lookup"><span data-stu-id="a4282-112">To create a property sheet extension, perform the following steps.</span></span>
+
+<span data-ttu-id="a4282-113">**Per creare un'estensione della finestra delle proprietà Active Directory**</span><span class="sxs-lookup"><span data-stu-id="a4282-113">**To create an Active Directory property sheet extension**</span></span>
+
+1.  <span data-ttu-id="a4282-114">Creare la DLL di estensione della finestra delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="a4282-114">Create the property sheet extension DLL.</span></span> <span data-ttu-id="a4282-115">Un'estensione della finestra delle proprietà è un server COM in-process che implementa come minimo le interfacce [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) e [**IShellPropSheetExt**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext) .</span><span class="sxs-lookup"><span data-stu-id="a4282-115">A property sheet extension is a COM in-proc server that, at a minimum, implements the [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) and [**IShellPropSheetExt**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext) interfaces.</span></span> <span data-ttu-id="a4282-116">Per ulteriori informazioni, vedere [implementazione dell'oggetto com della pagina delle proprietà](implementing-the-property-page-com-object.md).</span><span class="sxs-lookup"><span data-stu-id="a4282-116">For more information, see [Implementing the Property Page COM Object](implementing-the-property-page-com-object.md).</span></span>
+2.  <span data-ttu-id="a4282-117">Installare l'estensione della finestra delle proprietà nei computer in cui deve essere utilizzata l'estensione della finestra delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="a4282-117">Install the property sheet extension on the computers where the property sheet extension is to be used.</span></span> <span data-ttu-id="a4282-118">A tale scopo, creare un pacchetto di Microsoft Windows Installer per la DLL di estensione della finestra delle proprietà e distribuire il pacchetto in modo appropriato utilizzando i criteri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="a4282-118">To do this, create a Microsoft Windows Installer package for the property sheet extension DLL and deploy the package appropriately using the group policy.</span></span> <span data-ttu-id="a4282-119">Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione dei componenti dell'interfaccia utente](distributing-user-interface-components.md).</span><span class="sxs-lookup"><span data-stu-id="a4282-119">For more information, see [Distributing User Interface Components](distributing-user-interface-components.md).</span></span>
+3.  <span data-ttu-id="a4282-120">Registrare l'estensione della finestra delle proprietà nel registro di sistema di Windows e con Active Directory Domain Services.</span><span class="sxs-lookup"><span data-stu-id="a4282-120">Register the property sheet extension in the Windows registry and with Active Directory Domain Services.</span></span> <span data-ttu-id="a4282-121">Per ulteriori informazioni, vedere [la pagina relativa alla registrazione dell'oggetto com della pagina delle proprietà in un identificatore di visualizzazione](registering-the-property-page-com-object-in-a-display-specifier.md).</span><span class="sxs-lookup"><span data-stu-id="a4282-121">For more information, see [Registering the Property Page COM Object in a Display Specifier](registering-the-property-page-com-object-in-a-display-specifier.md).</span></span>
+
+ 
+
+ 
