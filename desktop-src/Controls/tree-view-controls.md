@@ -1,0 +1,242 @@
+---
+title: Informazioni sui controlli Tree-View
+description: Un controllo di visualizzazione albero è una finestra che visualizza un elenco gerarchico di elementi, ad esempio le intestazioni in un documento, le voci in un indice o i file e le directory su un disco.
+ms.assetid: 10cc7949-dd77-412d-bad1-db8d8a049582
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: df70a2d3c2f841b022930a07ee2f140ee5bfc8e3
+ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "103963515"
+---
+# <a name="about-tree-view-controls"></a>Informazioni sui controlli Tree-View
+
+Un controllo di visualizzazione albero è una finestra che visualizza un elenco gerarchico di elementi, ad esempio le intestazioni in un documento, le voci in un indice o i file e le directory su un disco. Ogni elemento è costituito da un'etichetta e da un'immagine bitmap facoltativa e a ogni elemento può essere associato un elenco di elementi secondari. Facendo clic su un elemento, l'utente può espandere o comprimere l'elenco associato di elementi secondari.
+
+Nella figura seguente viene illustrato un semplice controllo di visualizzazione albero con un nodo radice, un nodo espanso e un nodo compresso. Il controllo utilizza una bitmap per l'elemento selezionato e un'altra bitmap per altri elementi.
+
+![screenshot che mostra cinque nodi in una gerarchia. il testo di un nodo è selezionato, ma i nodi non sono collegati tra loro da linee](images/tv-simple.png)
+
+Dopo la creazione di un controllo di visualizzazione albero, è possibile aggiungere, rimuovere, disporre o modificare in altro modo gli elementi inviando messaggi al controllo. Ogni messaggio ha una o più macro corrispondenti che è possibile usare anziché inviare il messaggio in modo esplicito.
+
+In questa sezione vengono descritti gli argomenti seguenti.
+
+-   [Stili di visualizzazione albero](#tree-view-styles)
+-   [Elementi padre e figlio](#parent-and-child-items)
+-   [Etichette elementi](#item-labels)
+-   [Modifica dell'etichetta della visualizzazione albero](#tree-view-label-editing)
+-   [Posizione elemento visualizzazione albero](#tree-view-item-position)
+-   [Panoramica degli Stati degli elementi della visualizzazione albero](#tree-view-item-states-overview)
+-   [Selezione elemento](#item-selection)
+-   [Informazioni sugli elementi](#item-information)
+-   [Elenchi di immagini della visualizzazione albero](#tree-view-image-lists)
+-   [Operazioni di trascinamento della selezione](#drag-and-drop-operations)
+-   [Messaggi di notifica del controllo visualizzazione albero](#tree-view-control-notification-messages)
+-   [Elaborazione predefinita dei messaggi di controllo Tree-View](#default-tree-view-control-message-processing)
+-   [Argomenti correlati](#related-topics)
+
+## <a name="tree-view-styles"></a>Stili di Tree-View
+
+Gli stili di visualizzazione albero regolano gli aspetti dell'aspetto di un controllo di visualizzazione albero. È possibile impostare gli stili iniziali durante la creazione del controllo di visualizzazione albero. È possibile recuperare e modificare gli stili dopo aver creato il controllo di visualizzazione albero usando le funzioni [**GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) e [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) .
+
+Lo stile [**TVS \_ HASLINES**](tree-view-control-window-styles.md) migliora la rappresentazione grafica della gerarchia di un controllo di visualizzazione albero disegnando linee che collegano elementi figlio al rispettivo elemento padre, come illustrato nella figura seguente.
+
+![screenshot che mostra la disposizione precedente, ma con linee che uniscono i nodi; la prima riga discende dal nodo radice](images/tv-haslines.png)
+
+Di per sé, questo stile non disegna linee alla radice della gerarchia. A tale scopo, è necessario combinare gli stili [**TV \_ HASLINES**](tree-view-control-window-styles.md) e [**TVS \_ LINESATROOT**](tree-view-control-window-styles.md) . Il risultato è illustrato nella figura seguente.
+
+![screenshot che mostra la disposizione precedente, ma con una linea orizzontale aggiuntiva che conduce al nodo radice](images/tv-rootlines.png)
+
+L'utente può espandere o comprimere l'elenco di elementi figlio di un elemento padre facendo doppio clic sull'elemento padre. Un controllo di visualizzazione albero con lo stile [**\_ HASBUTTONS TV**](tree-view-control-window-styles.md) aggiunge un pulsante al lato sinistro di ogni elemento padre. L'utente può fare clic sul pulsante una volta anziché fare doppio clic sull'elemento padre per espandere o comprimere l'elemento figlio. **TV \_ HASBUTTONS** non aggiunge pulsanti agli elementi alla radice della gerarchia. A tale scopo, è necessario combinare [**TVS \_ HASLINES**](tree-view-control-window-styles.md), [**TV \_ LINESATROOT**](tree-view-control-window-styles.md)e **TV \_ HASBUTTONS**. Questa combinazione di stili è illustrata nella figura seguente.
+
+![screenshot che mostra la disposizione precedente, ma con pulsanti di espansione/compressione in ogni vertice di due righe](images/tv-hasbuttons.png)
+
+Lo stile della [**\_ casella**](tree-view-control-window-styles.md) di controllo TV crea le caselle di controllo accanto a ogni elemento. Se si desidera utilizzare lo stile della casella di controllo, è necessario impostare lo stile delle **\_ caselle** di controllo TV (con [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)) dopo aver creato il controllo di visualizzazione albero e prima di popolare l'albero. In caso contrario, le caselle di controllo potrebbero apparire deselezionate, a seconda dei problemi di temporizzazione. Nella figura seguente viene illustrato lo stile della casella di controllo.
+
+![screenshot che mostra la disposizione precedente, ma con una casella di controllo accanto a ogni nodo; sono selezionate due caselle di controllo](images/tv-haschecks.png)
+
+Lo stile [**TV \_ FULLROWSELECT**](tree-view-control-window-styles.md) fa sì che l'evidenziazione della selezione si estenda sulla larghezza intera del controllo, non solo sull'elemento stesso. Nella figura seguente viene illustrato questo stile.
+
+![screenshot che mostra la disposizione originale di cinque nodi senza righe, ma l'evidenziazione della selezione estende l'intera larghezza del controllo](images/tv-fullrow.png)
+
+Lo stile [**TV \_ EDITLABELS**](tree-view-control-window-styles.md) consente all'utente di modificare le etichette degli elementi della visualizzazione albero. Per ulteriori informazioni sulla modifica delle etichette, vedere la pagina relativa alla [modifica dell'etichetta della visualizzazione albero](#tree-view-label-editing).
+
+Per altre informazioni su questi e altri stili, vedere [stili della finestra di controllo di visualizzazione albero](tree-view-control-window-styles.md).
+
+## <a name="parent-and-child-items"></a>Elementi padre e figlio
+
+Qualsiasi elemento in un controllo di visualizzazione albero può avere un elenco di elementi secondari, denominati *elementi figlio*, associati. Un elemento che contiene uno o più elementi figlio è denominato *elemento padre*. Un elemento figlio viene visualizzato sotto il relativo elemento padre e viene rientrato per indicare che è subordinato al padre. Un elemento privo di padre viene visualizzato all'inizio della gerarchia e viene chiamato *elemento radice*.
+
+Per aggiungere un elemento a un controllo di visualizzazione albero, inviare il messaggio di [**\_ INSERTITEM INSERTITEM**](tvm-insertitem.md) al controllo. Il messaggio restituisce un handle per il tipo HTREEITEM, che identifica in modo univoco l'elemento. Quando si aggiunge un elemento, è necessario specificare l'handle per l'elemento padre del nuovo elemento. Se si specifica **null** o il \_ valore radice TVI anziché un handle di elemento padre nella struttura [**TVINSERTSTRUCT**](/windows/win32/api/commctrl/ns-commctrl-tvinsertstructa) , l'elemento viene aggiunto come elemento radice.
+
+In un determinato momento, lo stato dell'elenco di elementi figlio di un elemento padre può essere espanso o compresso. Quando lo stato è espanso, gli elementi figlio vengono visualizzati sotto l'elemento padre. Quando viene compresso, gli elementi figlio non vengono visualizzati. L'elenco passa automaticamente tra gli Stati espanso e compresso quando l'utente fa doppio clic sull'elemento padre o, se il padre ha lo stile [**\_ HASBUTTONS TV**](tree-view-control-window-styles.md) , quando l'utente fa clic sul pulsante associato all'elemento padre. Un'applicazione può espandere o comprimere gli elementi figlio utilizzando il messaggio di [**\_ espansione TVM**](tvm-expand.md) .
+
+Un controllo di visualizzazione albero invia alla finestra padre un messaggio di notifica di [TVN \_ ITEMEXPANDING](tvn-itemexpanding.md) quando l'elenco di elementi figlio di un elemento padre sta per essere espanso o compresso. La notifica fornisce a un'applicazione la possibilità di impedire la modifica o di impostare gli attributi dell'elemento padre che dipendono dallo stato dell'elenco di elementi figlio. Dopo aver modificato lo stato dell'elenco, il controllo di visualizzazione albero invia alla finestra padre un messaggio di notifica [ \_ ITEMEXPANDED di TVN](tvn-itemexpanded.md) .
+
+Quando un elenco di elementi figlio viene espanso, viene rientrato rispetto all'elemento padre. È possibile impostare la quantità di rientri usando il messaggio [**di \_ sedentazione TVM**](tvm-setindent.md) o recuperare l'importo corrente usando il messaggio [**TVM \_ GetIndent**](tvm-getindent.md) .
+
+Un controllo di visualizzazione albero utilizza la memoria allocata dall'heap del processo che crea il controllo di visualizzazione ad albero. Il numero massimo di elementi in una visualizzazione albero è basato sulla quantità di memoria disponibile nell'heap.
+
+## <a name="item-labels"></a>Etichette elementi
+
+In genere si specifica il testo dell'etichetta di un elemento quando si aggiunge l'elemento al controllo di visualizzazione ad albero. Il [**messaggio \_ INSERTITEM INSERTITEM**](tvm-insertitem.md) include una struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che definisce le proprietà dell'elemento, inclusa una stringa contenente il testo dell'etichetta.
+
+Un controllo di visualizzazione albero alloca memoria per archiviare ogni elemento. il testo delle etichette degli elementi occupa una parte significativa della memoria. Se l'applicazione gestisce una copia delle stringhe nel controllo di visualizzazione albero, è possibile ridurre i requisiti di memoria del controllo specificando il \_ valore LPSTR TEXTCALLBACK nel membro **PszText** di [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) anziché passare le stringhe effettive alla visualizzazione albero. L'uso di LPSTR \_ TEXTCALLBACK fa sì che il controllo di visualizzazione albero recuperi il testo dell'etichetta di un elemento dalla finestra padre ogni volta che l'elemento deve essere ridisegnato. Per recuperare il testo, il controllo di visualizzazione albero invia un messaggio di notifica [ \_ GETDISPINFO di TVN](tvn-getdispinfo.md) , che include l'indirizzo di una struttura [**struttura NMTVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) . La finestra padre deve compilare i membri appropriati della struttura inclusa.
+
+## <a name="tree-view-label-editing"></a>Modifica dell'etichetta Tree-View
+
+L'utente può modificare direttamente le etichette degli elementi in un controllo di visualizzazione albero con lo stile [**\_ EDITLABELS TV**](tree-view-control-window-styles.md) . L'utente inizia la modifica facendo clic sull'etichetta dell'elemento con lo stato attivo. Un'applicazione inizia la modifica usando il [**messaggio \_ EDITLABEL TVM**](tvm-editlabel.md) . Il controllo di visualizzazione albero invia una notifica alla finestra padre quando inizia la modifica e quando viene annullata o completata. Al termine della modifica, la finestra padre è responsabile dell'aggiornamento dell'etichetta dell'elemento, se appropriato.
+
+Quando viene avviata la modifica dell'etichetta, un controllo di visualizzazione albero invia alla finestra padre un messaggio di notifica [ \_ BEGINLABELEDIT di TVN](tvn-beginlabeledit.md) . Elaborando questa notifica, un'applicazione può consentire la modifica di alcune etichette e impedire la modifica di altre. Con la restituzione di zero è possibile modificare e restituire un valore diverso da zero.
+
+Quando la modifica delle etichette viene annullata o completata, un controllo di visualizzazione albero invia alla finestra padre un messaggio di notifica [ \_ ENDLABELEDIT di TVN](tvn-endlabeledit.md) . Il parametro *lParam* è l'indirizzo di una struttura [**struttura NMTVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) . Il parametro *Item* è una struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che identifica l'elemento e include il testo modificato. La finestra padre è responsabile dell'aggiornamento dell'etichetta dell'elemento se desidera che la nuova etichetta venga mantenuta. Il membro **pszText** di **TVITEM** è zero se la modifica viene annullata.
+
+Durante la modifica delle etichette, in genere in risposta al messaggio di notifica [ \_ BEGINLABELEDIT di TVN](tvn-beginlabeledit.md) , è possibile recuperare l'handle per il controllo di modifica usato per la modifica dell'etichetta usando il messaggio [**TVM \_ GETEDITCONTROL**](tvm-geteditcontrol.md) . È possibile inviare il controllo di modifica un messaggio [**\_ SETLIMITTEXT em**](em-setlimittext.md) per limitare la quantità di testo che un utente può immettere o sottoporre a una sottoclasse del controllo di modifica per intercettare e rimuovere i caratteri non validi. Si noti, tuttavia, che il controllo di modifica viene visualizzato solo *dopo* l'   invio di TVN \_ BEGINLABELEDIT.
+
+## <a name="tree-view-item-position"></a>Posizione dell'elemento Tree-View
+
+La posizione iniziale di un elemento viene impostata quando l'elemento viene aggiunto al controllo di visualizzazione ad albero tramite il [**messaggio \_ INSERTITEM INSERTITEM**](tvm-insertitem.md) . Il messaggio include una struttura [**TVINSERTSTRUCT**](/windows/win32/api/commctrl/ns-commctrl-tvinsertstructa) che specifica l'handle per l'elemento padre e l'handle per l'elemento dopo il quale deve essere inserito il nuovo elemento. Il secondo handle deve identificare un elemento figlio dell'elemento padre specificato o uno dei valori seguenti: TVI \_ First, TVI \_ Last o TVI \_ Sort.
+
+Quando \_ si specifica TVI First o TVI \_ Last, il controllo di visualizzazione albero inserisce il nuovo elemento all'inizio o alla fine dell'elenco di elementi figlio dell'elemento padre specificato. Quando \_ si specifica l'ordinamento TVI, il controllo di visualizzazione albero inserisce il nuovo elemento nell'elenco di elementi figlio in ordine alfabetico in base al testo delle etichette dell'elemento.
+
+È possibile inserire l'elenco di elementi figlio di un elemento padre in ordine alfabetico usando il messaggio [**TVM \_ SORTCHILDREN**](tvm-sortchildren.md) . Il messaggio include un parametro che specifica se tutti i livelli degli elementi figlio discendenti dall'elemento padre specificato vengono ordinati in ordine alfabetico.
+
+Il messaggio [**TVM \_ SORTCHILDRENCB**](tvm-sortchildrencb.md) consente di ordinare gli elementi figlio in base ai criteri definiti. Quando si usa questo messaggio, si specifica una funzione di callback definita dall'applicazione che può essere chiamata dal controllo di visualizzazione albero ogni volta che deve essere deciso l'ordine relativo di due elementi figlio. La funzione di callback riceve i valori definiti dall'applicazione a 2 32 bit per gli elementi confrontati e un terzo valore a 32 bit specificato durante l'invio di **\_ SORTCHILDRENCB TVM**.
+
+## <a name="tree-view-item-states-overview"></a>Panoramica degli Stati degli elementi di Tree-View
+
+Ogni elemento in un controllo di visualizzazione albero ha uno stato corrente. Le informazioni sullo stato per ogni elemento includono un set di flag di bit, nonché gli indici dell'elenco di immagini che indicano l'immagine di stato e l'immagine sovrapposta dell'elemento. I flag di bit indicano se l'elemento è selezionato, disabilitato, espanso e così via. Nella maggior parte dei casi, un controllo di visualizzazione albero imposta automaticamente lo stato di un elemento in modo da riflettere le azioni dell'utente, ad esempio la selezione di un elemento. Tuttavia, è anche possibile impostare lo stato di un elemento utilizzando il messaggio macchina virtuale TVM ed è possibile recuperare lo stato corrente di un elemento utilizzando il messaggio [**TVM \_ GetItem**](tvm-getitem.md) . [**\_**](tvm-setitem.md) Per un elenco completo degli Stati degli elementi, vedere [gli Stati degli elementi di controllo di visualizzazione albero](tree-view-control-item-states.md).
+
+Lo stato corrente di un elemento è specificato dal membro di **stato** della struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) . Un controllo di visualizzazione albero potrebbe modificare lo stato di un elemento per riflettere un'azione dell'utente, ad esempio la selezione dell'elemento o l'impostazione dello stato attivo sull'elemento. Inoltre, un'applicazione può modificare lo stato di un elemento per disabilitare o nascondere l'elemento o per specificare un'immagine sovrapposta o un'immagine di stato.
+
+Quando si specifica o si modifica lo stato di un elemento, il membro **stateMask** di [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) specifica i bit di stato da impostare e il membro di **stato** contiene i nuovi valori per tali bit.
+
+Per impostare l'immagine sovrapposta di un elemento, **stateMask** deve includere il valore [**\_ OVERLAYMASK di TVIS**](tree-view-control-item-states.md) e lo **stato** deve includere l'indice in base uno dell'immagine sovrapposta spostata a 8 bit a sinistra utilizzando la macro [**INDEXTOOVERLAYMASK**](/windows/desktop/api/Commctrl/nf-commctrl-indextooverlaymask) . L'indice può essere zero per specificare Nessuna immagine sovrapposta.
+
+Viene visualizzata un'immagine di stato accanto all'icona di un elemento per indicare uno stato definito dall'applicazione. Le immagini di stato sono contenute in un *elenco di immagini di stato* specificato tramite l'invio di un messaggio di [**\_ seimagine TVM**](tvm-setimagelist.md) . Per impostare l'immagine di stato di un elemento, includere il valore [**TVIS \_ STATEIMAGEMASK**](tree-view-control-item-states.md) nel membro **stateMask** della struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) . I bit da 12 a 15 del membro di **stato** della struttura specificano l'indice nell'elenco di immagini dello stato dell'immagine da disegnare.
+
+Per impostare l'indice dell'immagine di stato, utilizzare [**INDEXTOSTATEIMAGEMASK**](/windows/desktop/api/Commctrl/nf-commctrl-indextostateimagemask). Questa macro accetta un indice e imposta i bit da 12 a 15 in modo appropriato. Per indicare che l'elemento non dispone di un'immagine di stato, impostare l'indice su zero. Questa convenzione indica che l'immagine zero nell'elenco di immagini dello stato non può essere usata come immagine di stato. Per isolare i bit da 12 a 15 del membro di **stato** , usare la maschera [**TVIS \_ STATEIMAGEMASK**](tree-view-control-item-states.md) . Per altre informazioni sulle immagini sovrapposte e di stato, vedere [elenchi di immagini di visualizzazione ad albero](#tree-view-image-lists).
+
+## <a name="item-selection"></a>Selezione elemento
+
+Un controllo di visualizzazione albero notifica alla finestra padre quando la selezione viene modificata da un elemento a un altro inviando i messaggi di notifica di [TVN \_ SELCHANGING](tvn-selchanging.md) e [TVN \_ SELCHANGED](tvn-selchanged.md) . Entrambe le notifiche includono un valore che specifica se la modifica è il risultato di un clic del mouse o di una sequenza di tasti. Le notifiche includono inoltre informazioni sull'elemento che sta ottenendo la selezione e sull'elemento che sta perdendo la selezione. È possibile usare queste informazioni per impostare gli attributi degli elementi che dipendono dallo stato di selezione dell'elemento. Restituisce **true** in risposta a TVN \_ SELCHANGING impedisce la modifica della selezione e la restituzione di **false** consente la modifica.
+
+Un'applicazione può modificare la selezione inviando il [**messaggio \_ SELECTITEM TVM**](tvm-selectitem.md) .
+
+## <a name="item-information"></a>Informazioni sugli elementi
+
+I controlli di visualizzazione albero supportano una serie di messaggi che recuperano informazioni sugli elementi nel controllo.
+
+Il messaggio [**TVM \_ GetItem**](tvm-getitem.md) può recuperare l'handle e gli attributi di un elemento. Gli attributi di un elemento includono lo stato corrente, gli indici nell'elenco di immagini del controllo delle immagini bitmap selezionate e non selezionate dell'elemento, un flag che indica se l'elemento contiene elementi figlio, l'indirizzo della stringa di etichetta dell'elemento e il valore a 32 bit definito dall'applicazione dell'elemento.
+
+Il messaggio [**TVM \_ GETNEXTITEM**](tvm-getnextitem.md) recupera l'elemento della visualizzazione struttura ad albero che presenta la relazione specificata con l'elemento corrente. Il messaggio può recuperare l'elemento padre di un elemento, l'elemento visibile successivo o precedente, il primo elemento figlio e così via.
+
+Il messaggio [**TVM \_ GETITEMRECT**](tvm-getitemrect.md) Recupera il rettangolo di delimitazione per un elemento della visualizzazione struttura ad albero. I messaggi [**TVM \_ GetCount**](tvm-getcount.md) e [**TVM \_ GETVISIBLECOUNT**](tvm-getvisiblecount.md) recuperano un conteggio degli elementi in un controllo di visualizzazione albero e un conteggio degli elementi che possono essere completamente visibili nella finestra del controllo di visualizzazione ad albero, rispettivamente. È possibile verificare che un particolare elemento sia visibile tramite il messaggio [**\_ ENSUREVISIBLE di TVM**](tvm-ensurevisible.md) .
+
+## <a name="tree-view-image-lists"></a>Elenchi di immagini Tree-View
+
+A ogni elemento di un controllo di visualizzazione albero possono essere associate quattro immagini bitmap.
+
+-   Immagine, ad esempio una cartella aperta, visualizzata quando si seleziona l'elemento.
+-   Un'immagine, ad esempio una cartella chiusa, visualizzata quando l'elemento non è selezionato.
+-   Immagine sovrapposta disegnata in modo trasparente sull'immagine selezionata o non selezionata.
+-   Un'immagine di stato, ovvero un'immagine aggiuntiva a sinistra dell'immagine selezionata o non selezionata. È possibile utilizzare immagini di stato, ad esempio caselle di controllo selezionate e deselezionate, per indicare gli Stati degli elementi definiti dall'applicazione.
+
+Per impostazione predefinita, un controllo di visualizzazione albero non Visualizza le immagini dell'elemento. Per visualizzare le immagini degli elementi, è necessario creare elenchi di immagini e associarli al controllo. Per ulteriori informazioni sugli elenchi di immagini, vedere la pagina relativa agli [elenchi di immagini](image-lists.md).
+
+Un controllo di visualizzazione albero può includere due elenchi di immagini: un elenco di immagini normale e un elenco di immagini di stato. Un elenco di immagini normale archivia le immagini selezionate, non selezionate e sovrapposte. Un elenco di immagini di stato archivia le immagini di stato. Utilizzare la funzione [**ImageList \_ create**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_create) per creare un elenco di immagini e utilizzare altre funzioni dell'elenco immagini per aggiungere bitmap all'elenco di immagini. Quindi, per associare l'elenco di immagini al controllo di visualizzazione ad albero, usare il messaggio macchina virtuale [**TVM \_**](tvm-setimagelist.md) . Il messaggio [**TVM \_ getimagine**](tvm-getimagelist.md) recupera un handle per uno degli elenchi di immagini di un controllo di visualizzazione albero. Questo messaggio è utile se è necessario aggiungere altre immagini all'elenco.
+
+Oltre alle immagini selezionate e non selezionate, un elenco di immagini normale di un controllo di visualizzazione albero può contenere fino a quattro immagini sovrapposte. Le immagini sovrapposte sono identificate da un indice in base uno e sono progettate per essere disegnate in modo trasparente sulle immagini selezionate e non selezionate. Per assegnare un indice della maschera di sovrapposizione a un'immagine nell'elenco di immagini normale, chiamare la funzione [**\_ SetOverlayImage di ImageList**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_setoverlayimage) .
+
+Per impostazione predefinita, tutti gli elementi visualizzano la prima immagine nell'elenco di immagini normale per gli stati selezionati e non selezionati. Inoltre, per impostazione predefinita, gli elementi non visualizzano immagini sovrapposte o immagini di stato. È possibile modificare questi comportamenti predefiniti per un elemento inviando il messaggio [**TVM \_ INSERTITEM**](tvm-insertitem.md) o [**TVM \_ SetItem**](tvm-setitem.md) . Questi messaggi usano la struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) per specificare gli indici dell'elenco immagini per un elemento.
+
+Per specificare le immagini selezionate e non selezionate di un elemento, impostare i \_ bit dell'immagine TVIF SELECTEDIMAGE e TVIF \_ nel membro **mask** della struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) e specificare gli indici dall'elenco di immagini normali del controllo nei membri **iSelectImage** e **IImage** . In alternativa, è possibile specificare il \_ valore i IMAGECALLBACK in **ISelectImage** e **IImage** anziché specificare gli indici. In questo modo, il controllo esegue una query sulla finestra padre per un indice dell'elenco immagini ogni volta che l'elemento sta per essere ridisegnato. Il controllo Invia il messaggio di notifica [ \_ GETDISPINFO di TVN](tvn-getdispinfo.md) per recuperare l'indice.
+
+Per associare un'immagine sovrapposta a un elemento, usare la macro [**INDEXTOOVERLAYMASK**](/windows/desktop/api/Commctrl/nf-commctrl-indextooverlaymask) per specificare un indice della maschera di sovrapposizione nel membro di **stato** della struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) dell'elemento. È anche necessario impostare i bit [**TVIS \_ OVERLAYMASK**](tree-view-control-item-states.md) nel membro **stateMask** . Gli indici della maschera di sovrapposizione sono basati su uno. un indice pari a zero indica che non è stata specificata alcuna immagine sovrapposta.
+
+Le immagini di stato vengono archiviate in un elenco di immagini di stato separato e identificate in base al relativo indice. Per specificare l'elenco di immagini di stato, inviare un messaggio della macchina virtuale [**TVM \_**](tvm-setimagelist.md) . A differenza del controllo di visualizzazione elenco, che usa un indice in base uno per identificare le immagini di stato, le immagini dello stato del controllo di visualizzazione albero sono identificate da un indice in base zero. Tuttavia, un indice pari a zero indica che l'elemento non dispone di un'immagine di stato. Di conseguenza, non è possibile usare l'immagine zero come immagine di stato. Per ulteriori informazioni sugli Stati e le immagini di stato degli elementi, vedere [Cenni preliminari sugli stati degli elementi della visualizzazione albero](#tree-view-item-states-overview).
+
+## <a name="drag-and-drop-operations"></a>Operazioni di trascinamento della selezione
+
+Un controllo di visualizzazione albero invia una notifica alla finestra padre quando l'utente inizia a trascinare un elemento. La finestra padre riceve un messaggio di notifica [ \_ BEGINDRAG di TVN](tvn-begindrag.md) quando l'utente inizia a trascinare un elemento con il pulsante sinistro del mouse e un messaggio di notifica di [TVN \_ BEGINRDRAG](tvn-beginrdrag.md) quando l'utente inizia il trascinamento con il pulsante destro. È possibile impedire a un controllo di visualizzazione albero di inviare queste notifiche assegnando al controllo di visualizzazione albero lo stile [**\_ DISABLEDRAGDROP TV**](tree-view-control-window-styles.md) .
+
+Per ottenere un'immagine da visualizzare durante un'operazione di trascinamento, usare il messaggio [**TVM \_ CREATEDRAGIMAGE**](tvm-createdragimage.md) . Il controllo di visualizzazione albero crea una bitmap di trascinamento in base all'etichetta dell'elemento trascinato. Il controllo di visualizzazione albero crea quindi un elenco di immagini, la aggiunge alla bitmap e restituisce l'handle all'elenco di immagini.
+
+È necessario fornire il codice che trascina effettivamente l'elemento. Ciò comporta in genere l'uso delle funzionalità di trascinamento delle funzioni dell'elenco immagini e l'elaborazione dei messaggi [**WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) e [**WM \_ LBUTTONUP**](/windows/desktop/inputdev/wm-lbuttonup) (o [**WM \_ RBUTTONUP**](/windows/desktop/inputdev/wm-rbuttonup)) inviati alla finestra padre dopo l'inizio dell'operazione di trascinamento.
+
+Se gli elementi di un controllo di visualizzazione albero sono le destinazioni delle operazioni di trascinamento della selezione, è necessario stabilire quando il puntatore del mouse si trova su un elemento di destinazione. Per informazioni, vedere la pagina relativa all'uso del messaggio [**TVM \_ HITTEST**](tvm-hittest.md) . È possibile specificare l'indirizzo di una struttura [**TVHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-tvhittestinfo) che contiene le coordinate correnti del puntatore del mouse. Quando la funzione [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) restituisce, la struttura contiene un flag che indica la posizione del puntatore del mouse rispetto al controllo di visualizzazione albero. Se il puntatore è posizionato su un elemento nel controllo di visualizzazione albero, la struttura contiene anche l'handle per l'elemento.
+
+È possibile indicare che un elemento è la destinazione di un'operazione di trascinamento della selezione usando il messaggio di impostazione della [**\_ Proprietà TVM**](tvm-setitem.md) per impostare lo stato sul valore [**\_ DROPHILITED di TVIS**](tree-view-control-item-states.md) . Un elemento con questo stato viene disegnato nello stile usato per indicare una destinazione di trascinamento della selezione.
+
+## <a name="tree-view-control-notification-messages"></a>Messaggi di notifica del controllo Tree-View
+
+Un controllo di visualizzazione albero invia i messaggi di notifica seguenti alla finestra padre sotto forma di messaggi [**di \_ notifica WM**](wm-notify.md) .
+
+
+
+| Notifica                                    | Descrizione                                                                            |
+|-------------------------------------------------|----------------------------------------------------------------------------------------|
+| [\_BEGINDRAG TVN](tvn-begindrag.md)             | Segnala l'inizio di un'operazione di trascinamento della selezione.                                        |
+| [\_BEGINLABELEDIT TVN](tvn-beginlabeledit.md)   | Segnala l'inizio della modifica dell'etichetta sul posto.                                           |
+| [\_BEGINRDRAG TVN](tvn-beginrdrag.md)           | Segnala che il pulsante destro del mouse ha avviato un'operazione di trascinamento della selezione.             |
+| [\_DeleteItem TVN](tvn-deleteitem.md)           | Segnala l'eliminazione di un elemento specifico.                                               |
+| [\_ENDLABELEDIT TVN](tvn-endlabeledit.md)       | Segnala la fine della modifica dell'etichetta.                                                      |
+| [\_GETDISPINFO TVN](tvn-getdispinfo.md)         | Richiede le informazioni richieste dal controllo di visualizzazione albero per visualizzare un elemento.           |
+| [\_ITEMEXPANDED TVN](tvn-itemexpanded.md)       | Segnala che l'elenco di elementi figlio di un elemento padre è stato espanso o compresso.            |
+| [\_ITEMEXPANDING TVN](tvn-itemexpanding.md)     | Segnala che l'elenco di elementi figlio di un elemento padre sta per essere espanso o compresso. |
+| [KeyDown di TVN \_](tvn-keydown.md)                 | Segnala un evento di tastiera.                                                              |
+| [\_SELCHANGED TVN](tvn-selchanged.md)           | Segnala che la selezione è cambiata da un elemento a un altro.                       |
+| [\_SELCHANGING TVN](tvn-selchanging.md)         | Segnala che la selezione sta per essere modificata da un elemento a un altro.            |
+| [\_SETDISPINFO TVN](tvn-setdispinfo.md)         | Notifica a una finestra padre che deve aggiornare le informazioni che gestisce per un elemento. |
+
+
+
+ 
+
+## <a name="default-tree-view-control-message-processing"></a>Elaborazione predefinita dei messaggi di controllo Tree-View
+
+In questa sezione viene descritta l'elaborazione dei messaggi della finestra eseguita da un controllo di visualizzazione albero. I messaggi specifici dei controlli di visualizzazione albero sono descritti in altre sezioni di questo documento, quindi non sono inclusi qui.
+
+
+
+| Message                                            | Elaborazione eseguita                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**\_comando WM**](/windows/desktop/menurc/wm-command)               | Elabora i messaggi di notifica del controllo di modifica [en \_ Update](en-update.md) e [en \_ KILLFOCUS](en-killfocus.md) e trasmette tutte le altre notifiche di controllo di modifica alla finestra padre. Nessun valore restituito.                                                                                                                                                                                                                                                                                                |
+| [**creazione di WM \_**](/windows/desktop/winmsg/wm-create)                 | Alloca memoria e inizializza le strutture di dati interne. Restituisce zero se ha esito positivo oppure-1 in caso contrario.                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**eliminazione di WM \_**](/windows/desktop/winmsg/wm-destroy)               | Libera tutte le risorse di sistema associate al controllo. Restituisce zero.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [**\_Abilitazione WM**](/windows/desktop/winmsg/wm-enable)                 | Abilita o Disabilita il controllo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [**\_ERASEBKGND WM**](/windows/desktop/winmsg/wm-erasebkgnd)         | Cancella lo sfondo della finestra usando il colore di sfondo corrente per il controllo di visualizzazione albero. Restituisce **true**.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [**\_GETDLGCODE WM**](/windows/desktop/dlgbox/wm-getdlgcode)         | Restituisce una combinazione dei valori DLGC \_ WANTARROWS e DLGC \_ WANTCHARS.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [**\_tipo di carattere WM GetFont**](/windows/desktop/winmsg/wm-getfont)               | Restituisce l'handle per il tipo di carattere dell'etichetta corrente.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [**\_HSCROLL WM**](wm-hscroll.md)                  | Scorre il controllo di visualizzazione albero. Restituisce **true** se lo scorrimento si verifica oppure **false** in caso contrario.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [**KeyDown di WM \_**](/windows/desktop/inputdev/wm-keydown)             | Invia il messaggio di notifica di [TVN \_ KeyDown](tvn-keydown.md) alla finestra padre per tutte le chiavi. Invia il messaggio di notifica di [ritorno a Nm \_ (visualizzazione albero)](nm-return-tree-view-.md) quando l'utente preme il tasto INVIO. Sposta il punto di inserimento quando l'utente preme i tasti di direzione o la pagina su, PGGIÙ, HOME, fine o BACKSPACE. Scorre il controllo di visualizzazione ad albero quando l'utente preme il tasto CTRL in combinazione con tali chiavi. Restituisce **true** se una chiave viene elaborata; in caso contrario, **false** . |
+| [**\_KILLFOCUS WM**](/windows/desktop/inputdev/wm-killfocus)         | Ridisegna l'elemento con lo stato attivo, se presente, e invia un messaggio di notifica [ \_ KILLFOCUS (visualizzazione albero) Nm](nm-killfocus-tree-view.md) alla finestra padre.                                                                                                                                                                                                                                                                                                                                                                  |
+| [**\_LBUTTONDBLCLK WM**](/windows/desktop/inputdev/wm-lbuttondblclk) | Annulla la modifica delle etichette e, se è stato fatto doppio clic su un elemento, invia il messaggio di notifica [DBLCLK di Nm \_ (visualizzazione albero)](nm-dblclk-tree-view.md) alla finestra padre. Se la finestra padre restituisce 0, il controllo di visualizzazione albero consente di impostare lo stato espanso dell'elemento, inviando la finestra padre ai messaggi di notifica di [TVN \_ ITEMEXPANDING](tvn-itemexpanding.md) e [TVN \_ ITEMEXPANDED](tvn-itemexpanded.md) . Nessun valore restituito.                                                                             |
+| [**\_LBUTTONDOWN WM**](/windows/desktop/inputdev/wm-lbuttondown)     | Consente di impostare lo stato espanso se l'utente ha fatto clic sul pulsante associato a un elemento padre. Se l'utente ha fatto clic sull'etichetta di un elemento, il controllo di visualizzazione albero seleziona e imposta lo stato attivo sull'elemento. Se l'utente sposta il mouse prima di rilasciare il pulsante del mouse, il controllo di visualizzazione albero inizia un'operazione di trascinamento della selezione. Nessun valore restituito.                                                                                                                                                                          |
+| [**\_disegno WM**](/windows/desktop/gdi/wm-paint)                      | Disegna l'area non valida del controllo di visualizzazione ad albero. Restituisce zero. Se il parametro *wParam* è diverso da **null**, il controllo presuppone che il valore sia un handle per un contesto di dispositivo (HDC) e disegni che usano tale contesto di dispositivo.                                                                                                                                                                                                                                                                                      |
+| [**\_RBUTTONDOWN WM**](/windows/desktop/inputdev/wm-rbuttondown)     | Verifica se è stato fatto clic su un elemento ed è stata avviata un'operazione di trascinamento. Se l'operazione è iniziata, invia un messaggio di notifica [ \_ BEGINRDRAG di TVN](tvn-beginrdrag.md) alla finestra padre ed evidenzia l'obiettivo di rilascio. In caso contrario, viene inviato un messaggio di notifica [ \_ RCLICK (visualizzazione albero)](nm-rclick-tree-view.md) per la finestra padre. Nessun valore restituito.                                                                                                                                           |
+| [**\_stato attivo WM**](/windows/desktop/inputdev/wm-setfocus)           | Ridisegna l'elemento con lo stato attivo, se presente, e invia un messaggio di notifica con lo [ \_ stato attivo di Nm](nm-setfocus.md) alla finestra padre.                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**\_tipo di carattere WM**](/windows/desktop/winmsg/wm-setfont)               | Salva l'handle del tipo di carattere specificato e ridisegna il controllo di visualizzazione albero usando il nuovo tipo di carattere.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| [**\_SETREDRAW WM**](/windows/desktop/gdi/wm-setredraw)              | Imposta o cancella il flag di ritraccia. Il controllo di visualizzazione albero viene ridisegnato dopo l'impostazione del flag di ritraccia. Restituisce zero.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [**\_dimensioni WM**](/windows/desktop/winmsg/wm-size)                     | Ricalcola le variabili interne che dipendono dalle dimensioni dell'area client del controllo di visualizzazione albero. Restituisce **true**.                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [**\_STYLECHANGED WM**](/windows/desktop/winmsg/wm-stylechanged)     | Annulla la modifica dell'etichetta e ridisegnato il controllo di visualizzazione ad albero usando i nuovi stili. Restituisce zero.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [**\_SYSCOLORCHANGE WM**](/windows/desktop/gdi/wm-syscolorchange)    | Ridisegnato il controllo di visualizzazione ad albero usando il nuovo colore se è impostato il flag di ricreazione. Nessun valore restituito.                                                                                                                                                                                                                                                                                                                                                                                                              |
+| [**\_timer WM**](/windows/desktop/winmsg/wm-timer)                   | Inizia a modificare l'etichetta di un elemento. Se l'utente fa clic sull'etichetta dell'elemento con lo stato attivo, il controllo di visualizzazione albero imposta un timer anziché immettere immediatamente la modalità di modifica. Il timer consente alla visualizzazione albero di evitare di accedere alla modalità di modifica se l'utente fa doppio clic sull'etichetta. Restituisce zero.                                                                                                                                                                                                                       |
+| [**\_VSCROLL WM**](wm-vscroll.md)                  | Scorre il controllo di visualizzazione albero. Restituisce **true** se lo scorrimento si verifica oppure **false** in caso contrario.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+
+
+
+ 
+
+## <a name="related-topics"></a>Argomenti correlati
+
+<dl> <dt>
+
+[ESEMPIO: CustDTv illustra il progetto personalizzato in un oggetto TreeView (Q248496)](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
+</dt> </dl>
+
+ 
+
+ 
