@@ -1,0 +1,49 @@
+---
+description: Il controllo Billboard Visualizza i controlli di uso comune che vengono aggiunti e rimossi dalla finestra di dialogo ControlEvents.
+ms.assetid: c4c0ed5a-2518-499f-805f-dcbe0b0f9393
+title: Controllo Billboard
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 2e056a764ec4a71c3ce6785acf331b4bc1ff95ca
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103881093"
+---
+# <a name="billboard-control"></a><span data-ttu-id="f611a-103">Controllo Billboard</span><span class="sxs-lookup"><span data-stu-id="f611a-103">Billboard Control</span></span>
+
+<span data-ttu-id="f611a-104">Il controllo Billboard Visualizza i controlli di uso comune che vengono aggiunti e rimossi dalla finestra di dialogo ControlEvents.</span><span class="sxs-lookup"><span data-stu-id="f611a-104">The Billboard control displays commonly used controls that are added and removed from the dialog box by ControlEvents.</span></span> <span data-ttu-id="f611a-105">Solo i controlli che non sono associati a una proprietà, ad esempio [testo](text-control.md), [bitmap](bitmap-control.md)o [icona](icon-control.md)o controlli personalizzati, possono essere inseriti in un tabellone.</span><span class="sxs-lookup"><span data-stu-id="f611a-105">Only controls that are not associated with a property, such as [Text](text-control.md), [Bitmap](bitmap-control.md), or [Icon](icon-control.md), or custom controls can be placed on a billboard.</span></span> <span data-ttu-id="f611a-106">I controlli Billboard visualizzano generalmente i messaggi di stato.</span><span class="sxs-lookup"><span data-stu-id="f611a-106">Billboard controls most typically display progress messages.</span></span>
+
+## <a name="control-attributes"></a><span data-ttu-id="f611a-107">Attributi del controllo</span><span class="sxs-lookup"><span data-stu-id="f611a-107">Control Attributes</span></span>
+
+<span data-ttu-id="f611a-108">Con il controllo Billboard è possibile usare gli attributi seguenti.</span><span class="sxs-lookup"><span data-stu-id="f611a-108">You can use the following attributes with the Billboard control.</span></span> <span data-ttu-id="f611a-109">Per modificare il valore di un attributo utilizzando un evento, sottoscrivere il controllo in un ControlEvent nella [tabella EventMapping](eventmapping-table.md) ed elencare l'identificatore dell'attributo nella colonna attributo.</span><span class="sxs-lookup"><span data-stu-id="f611a-109">To change the value of an attribute using an event, subscribe the control to a ControlEvent in the [EventMapping table](eventmapping-table.md) and list the attribute's identifier in the Attribute column.</span></span> <span data-ttu-id="f611a-110">Immettere l'identificatore del ControlEvent nella colonna evento.</span><span class="sxs-lookup"><span data-stu-id="f611a-110">Enter the identifier of the ControlEvent in the Event column.</span></span>
+
+
+
+| <span data-ttu-id="f611a-111">Identificatore di attributo</span><span class="sxs-lookup"><span data-stu-id="f611a-111">Attribute identifier</span></span>                                 | <span data-ttu-id="f611a-112">Bit esadecimale</span><span class="sxs-lookup"><span data-stu-id="f611a-112">Hexadecimal bit</span></span>                  | <span data-ttu-id="f611a-113">Descrizione</span><span class="sxs-lookup"><span data-stu-id="f611a-113">Description</span></span>                                                                                                                                                                                                                                                                                                                  |
+|------------------------------------------------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="f611a-114">Billboardname</span><span class="sxs-lookup"><span data-stu-id="f611a-114">BillboardName</span></span>](billboardname-control-attribute.md) |                                  | <span data-ttu-id="f611a-115">Nome del tabellone corrente.</span><span class="sxs-lookup"><span data-stu-id="f611a-115">Name of the current billboard.</span></span> <span data-ttu-id="f611a-116">Immettere l'identificatore del tabellone nella colonna Billboard della [tabella BBControl](bbcontrol-table.md).</span><span class="sxs-lookup"><span data-stu-id="f611a-116">Enter the billboard's identifier in the Billboard column of the [BBControl table](bbcontrol-table.md).</span></span><br/>                                                                                                                                                                            |
+| [<span data-ttu-id="f611a-117">Position</span><span class="sxs-lookup"><span data-stu-id="f611a-117">Position</span></span>](position-control-attribute.md)           |                                  | <span data-ttu-id="f611a-118">Posizione del controllo nella finestra di dialogo.</span><span class="sxs-lookup"><span data-stu-id="f611a-118">Position of control in the dialog box.</span></span> <span data-ttu-id="f611a-119">Immettere la larghezza, l'altezza e le coordinate del controllo dell'angolo sinistro del controllo nelle colonne Width, Height, X e Y della [tabella BBControl](bbcontrol-table.md).</span><span class="sxs-lookup"><span data-stu-id="f611a-119">Enter the control's width, height, and coordinates of the control's left corner into the Width, Height, X, and Y columns of the [BBControl table](bbcontrol-table.md).</span></span> <span data-ttu-id="f611a-120">Usare le [unità del programma di installazione](installer-units.md) per lunghezza e distanza.</span><span class="sxs-lookup"><span data-stu-id="f611a-120">Use [installer units](installer-units.md) for length and distance.</span></span><br/>                                |
+| [<span data-ttu-id="f611a-121">Visible</span><span class="sxs-lookup"><span data-stu-id="f611a-121">Visible</span></span>](visible-control-attribute.md)             | <span data-ttu-id="f611a-122">0x00000001 0x00000000</span><span class="sxs-lookup"><span data-stu-id="f611a-122">0x00000000 0x00000001</span></span><br/> | <span data-ttu-id="f611a-123">Controllo nascosto.</span><span class="sxs-lookup"><span data-stu-id="f611a-123">Hidden control.</span></span> <span data-ttu-id="f611a-124">Controllo visibile.</span><span class="sxs-lookup"><span data-stu-id="f611a-124">Visible control.</span></span><br/> <span data-ttu-id="f611a-125">Includere questo bit nella parola bit della colonna attributi nella [tabella BBControl](bbcontrol-table.md) per rendere il controllo visibile o nascosto alla sua creazione.</span><span class="sxs-lookup"><span data-stu-id="f611a-125">Include this bit in the bit word of the Attributes column in the [BBControl table](bbcontrol-table.md) to make the control visible or hidden upon its creation.</span></span><br/> <span data-ttu-id="f611a-126">Nascondere o visualizzare un controllo tramite la [tabella ControlCondition](controlcondition-table.md).</span><span class="sxs-lookup"><span data-stu-id="f611a-126">Hide or show a control by using the [ControlCondition table](controlcondition-table.md).</span></span><br/> |
+| [<span data-ttu-id="f611a-127">Sunken</span><span class="sxs-lookup"><span data-stu-id="f611a-127">Sunken</span></span>](sunken-control-attribute.md)               | <span data-ttu-id="f611a-128">0x00000004 0x00000000</span><span class="sxs-lookup"><span data-stu-id="f611a-128">0x00000000 0x00000004</span></span><br/> | <span data-ttu-id="f611a-129">Visualizza lo stile di visualizzazione predefinito.</span><span class="sxs-lookup"><span data-stu-id="f611a-129">Displays the default visual style.</span></span> <span data-ttu-id="f611a-130">Visualizza il controllo con un aspetto incassato, 3D.</span><span class="sxs-lookup"><span data-stu-id="f611a-130">Displays the control with a sunken, 3-D, look.</span></span><br/> <span data-ttu-id="f611a-131">Includere questi bit nella parola bit nella colonna attributi della [tabella dei controlli](control-table.md).</span><span class="sxs-lookup"><span data-stu-id="f611a-131">Include these bits in the bit word in the Attributes column of the [Control table](control-table.md).</span></span><br/>                                                                                                               |
+
+
+
+ 
+
+## <a name="remarks"></a><span data-ttu-id="f611a-132">Commenti</span><span class="sxs-lookup"><span data-stu-id="f611a-132">Remarks</span></span>
+
+<span data-ttu-id="f611a-133">Questo controllo non ha una finestra propria.</span><span class="sxs-lookup"><span data-stu-id="f611a-133">This control has no window of its own.</span></span>
+
+<span data-ttu-id="f611a-134">I controlli Billboard visualizzati nell'interfaccia utente completa sono elencati nella [tabella Billboard](billboard-table.md).</span><span class="sxs-lookup"><span data-stu-id="f611a-134">Billboard controls that appear in the full user interface are listed in the [Billboard table](billboard-table.md).</span></span>
+
+<span data-ttu-id="f611a-135">I controlli che si trovano in un tabellone devono essere elencati nella [tabella BBControl](bbcontrol-table.md) anziché nella [tabella dei controlli](control-table.md).</span><span class="sxs-lookup"><span data-stu-id="f611a-135">Controls that are located on a billboard must be listed in the [BBControl table](bbcontrol-table.md) rather than the [Control table](control-table.md).</span></span>
+
+ 
+
+ 
+
+
+
+
