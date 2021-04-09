@@ -1,0 +1,37 @@
+---
+title: Controllo dei dispositivi
+description: I dispositivi basati su UPnP sono controllati dai servizi che espongono.
+ms.assetid: 4edca439-f767-41e6-97bb-ead751930714
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f3a72a4ffdf91bca358124dbb0a0d95ff9a61e30
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "103856649"
+---
+# <a name="controlling-devices"></a><span data-ttu-id="e9723-103">Controllo dei dispositivi</span><span class="sxs-lookup"><span data-stu-id="e9723-103">Controlling Devices</span></span>
+
+<span data-ttu-id="e9723-104">I dispositivi basati su UPnP sono controllati dai servizi che espongono.</span><span class="sxs-lookup"><span data-stu-id="e9723-104">UPnP-based devices are controlled by the services they expose.</span></span> <span data-ttu-id="e9723-105">Un servizio UPnP è la più piccola entità controllabile nell'architettura UPnP.</span><span class="sxs-lookup"><span data-stu-id="e9723-105">A UPnP service is the smallest controllable entity in the UPnP architecture.</span></span> <span data-ttu-id="e9723-106">I dispositivi espongono un servizio per ogni funzione primaria eseguita.</span><span class="sxs-lookup"><span data-stu-id="e9723-106">Devices expose one service for each primary function they perform.</span></span> <span data-ttu-id="e9723-107">I dispositivi complessi sono in genere costituiti da diversi servizi semplici e altri dispositivi.</span><span class="sxs-lookup"><span data-stu-id="e9723-107">Complex devices are typically composed of several simple services and other devices.</span></span>
+
+<span data-ttu-id="e9723-108">Un servizio è costituito da un set di variabili di stato e da un set di azioni che possono essere richiamate da un'applicazione che operano su tali variabili di stato.</span><span class="sxs-lookup"><span data-stu-id="e9723-108">A service consists of a set of state variables and a set of actions an application can invoke that operate on those state variables.</span></span> <span data-ttu-id="e9723-109">Nell'API del punto di controllo con la tecnologia UPnP i servizi sono rappresentati da oggetti **servizio** che espongono l'interfaccia [**IUPnPService**](/windows/desktop/api/Upnp/nn-upnp-iupnpservice) .</span><span class="sxs-lookup"><span data-stu-id="e9723-109">In the Control Point API with UPnP technology, services are represented by **Service** objects that expose the [**IUPnPService**](/windows/desktop/api/Upnp/nn-upnp-iupnpservice) interface.</span></span>
+
+<span data-ttu-id="e9723-110">Un tipo di servizio definisce le variabili di stato e le azioni supportate da un particolare servizio.</span><span class="sxs-lookup"><span data-stu-id="e9723-110">A service type defines the state variables and actions supported by a particular service.</span></span> <span data-ttu-id="e9723-111">Ad esempio, il tipo di servizio per un servizio clock definisce le azioni **getTime** e **setime** , insieme a una variabile di stato dell' **ora** .</span><span class="sxs-lookup"><span data-stu-id="e9723-111">For example, the service type for a clock service defines **GetTime** and **SetTime** actions, along with a **Time** state variable.</span></span>
+
+<span data-ttu-id="e9723-112">Un ID servizio distingue più tipi di servizi comuni all'interno di un singolo dispositivo.</span><span class="sxs-lookup"><span data-stu-id="e9723-112">A service ID differentiates multiple common service types within a single device.</span></span> <span data-ttu-id="e9723-113">Ad esempio, è possibile che siano presenti due servizi di clock in una sveglia, uno per l'orologio normale e l'altro per l'allarme.</span><span class="sxs-lookup"><span data-stu-id="e9723-113">For example, there can be two clock services in an alarm clock, one for the regular clock and the other for the alarm.</span></span> <span data-ttu-id="e9723-114">È necessario un modo per distinguere tra i due servizi, che hanno tipi di servizio identici.</span><span class="sxs-lookup"><span data-stu-id="e9723-114">There needs to be a way to differentiate between the two services, which have identical service types.</span></span> <span data-ttu-id="e9723-115">L'ID del servizio fornisce un modo univoco per identificare un'istanza di un tipo di servizio.</span><span class="sxs-lookup"><span data-stu-id="e9723-115">The service ID provides a unique way of identifying an instance of a service type.</span></span> <span data-ttu-id="e9723-116">Quindi, questo ID servizio viene usato per accedere al servizio corretto dalla raccolta [**IUPnPServices**](/windows/desktop/api/Upnp/nn-upnp-iupnpservices) , perché il tipo di servizio non è un identificatore univoco.</span><span class="sxs-lookup"><span data-stu-id="e9723-116">Then, this service ID is used to access the correct service from the [**IUPnPServices**](/windows/desktop/api/Upnp/nn-upnp-iupnpservices) collection, because service type is not a unique identifier.</span></span> <span data-ttu-id="e9723-117">L'interfaccia [**IUPnPService**](/windows/desktop/api/Upnp/nn-upnp-iupnpservice) consente inoltre alle applicazioni di registrare una funzione di callback con l'oggetto servizio.</span><span class="sxs-lookup"><span data-stu-id="e9723-117">The [**IUPnPService**](/windows/desktop/api/Upnp/nn-upnp-iupnpservice) interface also allows applications to register a callback function with the service object.</span></span> <span data-ttu-id="e9723-118">Quando cambia il valore della variabile di stato di un servizio, l'oggetto servizio richiama il callback registrato per notificare all'applicazione la modifica.</span><span class="sxs-lookup"><span data-stu-id="e9723-118">When the value of a service's state variable changes, the service object invokes the registered callback to notify the application of the change.</span></span> <span data-ttu-id="e9723-119">Il Framework UPnP richiama inoltre questo callback per notificare alle applicazioni quando un'istanza del servizio non è più disponibile.</span><span class="sxs-lookup"><span data-stu-id="e9723-119">The UPnP framework also invokes this callback to notify applications when a service instance has become unavailable.</span></span> <span data-ttu-id="e9723-120">Il servizio può non essere più disponibile per diversi motivi, incluso un errore di rete temporaneo.</span><span class="sxs-lookup"><span data-stu-id="e9723-120">The service can become unavailable for a variety of reasons, including transient network failure.</span></span>
+
+<span data-ttu-id="e9723-121">Per altre informazioni, vedere i seguenti argomenti:</span><span class="sxs-lookup"><span data-stu-id="e9723-121">For more information, see the following topics:</span></span>
+
+-   [<span data-ttu-id="e9723-122">Recupero di oggetti servizio</span><span class="sxs-lookup"><span data-stu-id="e9723-122">Obtaining Service Objects</span></span>](obtaining-service-objects.md)
+-   [<span data-ttu-id="e9723-123">Registrazione di un callback</span><span class="sxs-lookup"><span data-stu-id="e9723-123">Registering a Callback</span></span>](registering-a-callback.md)
+-   [<span data-ttu-id="e9723-124">Esecuzione di query sulle variabili di stato</span><span class="sxs-lookup"><span data-stu-id="e9723-124">Querying State Variables</span></span>](querying-state-variables.md)
+-   [<span data-ttu-id="e9723-125">Richiamo di azioni</span><span class="sxs-lookup"><span data-stu-id="e9723-125">Invoking Actions</span></span>](invoking-actions.md)
+
+ 
+
+ 
+
+
+
+

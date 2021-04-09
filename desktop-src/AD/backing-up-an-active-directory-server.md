@@ -1,0 +1,41 @@
+---
+title: Esecuzione del backup di un server di Active Directory
+description: Per un backup del server Active Directory è necessario eseguire il backup del database e dei log delle transazioni. Questo argomento fornisce una procedura dettagliata sul backup del servizio Active Directory directory da parte di un'applicazione di backup.
+ms.assetid: 250b2f40-6d43-4aa5-a588-b0cd4839828d
+ms.tgt_platform: multiple
+keywords:
+- backup Active Directory
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 5affde952ee543afe1bb9b794cce074a74382aa7
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104044015"
+---
+# <a name="backing-up-an-active-directory-server"></a><span data-ttu-id="49ce0-105">Esecuzione del backup di un server di Active Directory</span><span class="sxs-lookup"><span data-stu-id="49ce0-105">Backing Up an Active Directory Server</span></span>
+
+<span data-ttu-id="49ce0-106">Per un backup del server Active Directory è necessario eseguire il backup del database e dei log delle transazioni.</span><span class="sxs-lookup"><span data-stu-id="49ce0-106">An Active Directory server backup requires you to back up the database and the transaction logs.</span></span> <span data-ttu-id="49ce0-107">Questo argomento fornisce una procedura dettagliata sul backup del servizio Active Directory directory da parte di un'applicazione di backup.</span><span class="sxs-lookup"><span data-stu-id="49ce0-107">This topic provides a walkthrough of how a backup application backs up the Active Directory directory service.</span></span>
+
+<span data-ttu-id="49ce0-108">Il chiamante di queste funzioni di backup deve avere il privilegio **\_ \_ nome backup se** .</span><span class="sxs-lookup"><span data-stu-id="49ce0-108">The caller of these backup functions must have the **SE\_BACKUP\_NAME** privilege.</span></span> <span data-ttu-id="49ce0-109">È possibile utilizzare la funzione [**DsSetAuthIdentity**](dssetauthidentity.md) per impostare il contesto di sicurezza in cui vengono chiamate le funzioni di backup/ripristino della directory.</span><span class="sxs-lookup"><span data-stu-id="49ce0-109">You can use the [**DsSetAuthIdentity**](dssetauthidentity.md) function to set the security context under which the directory backup/restore functions are called.</span></span>
+
+<span data-ttu-id="49ce0-110">**Per eseguire il backup di un server di Active Directory, seguire questa procedura**</span><span class="sxs-lookup"><span data-stu-id="49ce0-110">**To backup an Active Directory server, perform the following steps**</span></span>
+
+1.  <span data-ttu-id="49ce0-111">Chiamare la funzione [**DsIsNTDSOnline**](dsisntdsonline.md) per determinare se Active Directory Domain Services sono in esecuzione.</span><span class="sxs-lookup"><span data-stu-id="49ce0-111">Call the [**DsIsNTDSOnline**](dsisntdsonline.md) function to determine if Active Directory Domain Services are running.</span></span>
+2.  <span data-ttu-id="49ce0-112">Se Active Directory Domain Services è in esecuzione, chiamare la funzione [**DsBackupPrepare**](dsbackupprepare.md) per inizializzare un handle del contesto di backup.</span><span class="sxs-lookup"><span data-stu-id="49ce0-112">If Active Directory Domain Services are running, call the [**DsBackupPrepare**](dsbackupprepare.md) function to initialize a backup context handle.</span></span> <span data-ttu-id="49ce0-113">Se Active Directory Domain Services non sono in esecuzione, non è possibile eseguirne il backup e l'applicazione di backup deve interrompere l'operazione di backup.</span><span class="sxs-lookup"><span data-stu-id="49ce0-113">If Active Directory Domain Services are not running, it cannot be backed up and the backup application must fail the backup operation.</span></span>
+3.  <span data-ttu-id="49ce0-114">Chiamare la funzione [**DsBackupGetDatabaseNames**](dsbackupgetdatabasenames.md) per ottenere un elenco di file di cui eseguire il backup.</span><span class="sxs-lookup"><span data-stu-id="49ce0-114">Call the [**DsBackupGetDatabaseNames**](dsbackupgetdatabasenames.md) function to get a list of files to back up.</span></span> <span data-ttu-id="49ce0-115">Per rilasciare la memoria restituita da questa funzione, chiamare la funzione [**DsBackupFree**](dsbackupfree.md) .</span><span class="sxs-lookup"><span data-stu-id="49ce0-115">To release the memory returned by this function, call the [**DsBackupFree**](dsbackupfree.md) function.</span></span>
+4.  <span data-ttu-id="49ce0-116">Per ogni nome nell'elenco di file restituito, chiamare la funzione [**DsBackupOpenFile**](dsbackupopenfile.md) seguita da chiamate ripetute alla funzione [**DsBackupRead**](dsbackupread.md) fino a quando non viene letto l'intero file.</span><span class="sxs-lookup"><span data-stu-id="49ce0-116">For each name in the returned list of files, call the [**DsBackupOpenFile**](dsbackupopenfile.md) function followed by repeated calls to the [**DsBackupRead**](dsbackupread.md) function until the entire file has been read.</span></span> <span data-ttu-id="49ce0-117">Al termine della lettura del file, chiamare la funzione [**DsBackupClose**](dsbackupclose.md) per chiuderla.</span><span class="sxs-lookup"><span data-stu-id="49ce0-117">When you have finished reading the file, call the [**DsBackupClose**](dsbackupclose.md) function to close it.</span></span>
+5.  <span data-ttu-id="49ce0-118">Dopo aver eseguito il backup di tutti i file di database, chiamare la funzione [**DsBackupGetBackupLogs**](dsbackupgetbackuplogs.md) per ottenere un elenco dei log delle transazioni.</span><span class="sxs-lookup"><span data-stu-id="49ce0-118">After all database files are backed up, call the [**DsBackupGetBackupLogs**](dsbackupgetbackuplogs.md) function to get a list of transaction logs.</span></span> <span data-ttu-id="49ce0-119">Questo elenco viene gestito esattamente come l'elenco dei file di database.</span><span class="sxs-lookup"><span data-stu-id="49ce0-119">This list is handled just like the list of database files.</span></span>
+6.  <span data-ttu-id="49ce0-120">Al termine del backup del log delle transazioni, chiamare la funzione [**DsBackupTruncateLogs**](dsbackuptruncatelogs.md) per eliminare tutti i log delle transazioni di cui è stato eseguito il commit.</span><span class="sxs-lookup"><span data-stu-id="49ce0-120">When you have finished backing up the transaction log, call the [**DsBackupTruncateLogs**](dsbackuptruncatelogs.md) function to delete all committed transaction logs that were backed up.</span></span>
+7.  <span data-ttu-id="49ce0-121">Salvare il contenuto del token di scadenza fornito dalla funzione [**DsBackupPrepare**](dsbackupprepare.md) .</span><span class="sxs-lookup"><span data-stu-id="49ce0-121">Save the contents of the expiry token provided by the [**DsBackupPrepare**](dsbackupprepare.md) function.</span></span> <span data-ttu-id="49ce0-122">Questa operazione può essere salvata in un file o in un'altra memoria persistente.</span><span class="sxs-lookup"><span data-stu-id="49ce0-122">This can be saved in a file or some other persistent memory.</span></span> <span data-ttu-id="49ce0-123">Questo token deve essere passato alla funzione [**DsRestorePrepare**](dsrestoreprepare.md) per avviare un'operazione di ripristino.</span><span class="sxs-lookup"><span data-stu-id="49ce0-123">This token must be passed to the [**DsRestorePrepare**](dsrestoreprepare.md) function to initiate a restore operation.</span></span>
+8.  <span data-ttu-id="49ce0-124">Liberare la memoria per il token di scadenza passando il puntatore del token alla funzione [**DsBackupFree**](dsbackupfree.md) .</span><span class="sxs-lookup"><span data-stu-id="49ce0-124">Free the memory for the expiry token by passing the token pointer to the [**DsBackupFree**](dsbackupfree.md) function.</span></span>
+9.  <span data-ttu-id="49ce0-125">Infine, chiamare la funzione [**DsBackupEnd**](dsbackupend.md) per rilasciare tutte le risorse associate all'handle del contesto di backup.</span><span class="sxs-lookup"><span data-stu-id="49ce0-125">Finally, call the [**DsBackupEnd**](dsbackupend.md) function to release all resources associated with the backup context handle.</span></span>
+
+ 
+
+ 
+
+
+
+
