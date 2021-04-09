@@ -1,0 +1,95 @@
+---
+description: Il metodo Disconnect disconnette l'oggetto NPP dalla rete.
+ms.assetid: 962e033d-a51c-47a2-83dc-cee1e7150ab8
+title: 'IESP: metodo:D di connessione (Netmon. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- IESP.Disconnect
+api_type:
+- COM
+api_location:
+- Ndisnpp.dll
+- Rmtnpp.dll
+ms.openlocfilehash: b0dac1843083d77121883b2609c32addffbae290
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104128327"
+---
+# <a name="iespdisconnect-method"></a>IESP::D metodo di connessione
+
+Il metodo **Disconnect** disconnette l'oggetto NPP dalla rete.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+HRESULT STDMETHODCALLTYPE Disconnect();
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+Questo metodo non presenta parametri.
+
+## <a name="return-value"></a>Valore restituito
+
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+
+Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
+
+
+
+| Codice restituito                                                                                          | Descrizione                                                                                                     |
+|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| <dl> <dt>**\_acquisizione NMERR**</dt> </dl>      | L'oggetto NPP sta acquisendo i dati. Non è possibile disconnettersi dalla rete mentre è in corso l'acquisizione dei dati.<br/> |
+| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl> | L'oggetto NPP non è connesso alla rete.<br/>                                                             |
+| <dl> <dt>**NMERR \_ non \_ ESP**</dt> </dl>       | L'oggetto NPP è connesso alla rete, ma non con il metodo [IESP:: Connect](iesp-connect.md) .<br/>       |
+
+
+
+ 
+
+## <a name="remarks"></a>Commenti
+
+Questo metodo non può essere chiamato quando l'oggetto NPP sta acquisendo i dati. È necessario chiamare il metodo **IESP:: Stop** prima di chiamare **IESP::D Disconnect**.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
+| Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[IESP](iesp.md)
+</dt> <dt>
+
+[IESP:: Connect](iesp-connect.md)
+</dt> <dt>
+
+[IESP:: Stop](iesp-stop.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
