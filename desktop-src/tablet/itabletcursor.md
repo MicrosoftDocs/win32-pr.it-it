@@ -1,0 +1,101 @@
+---
+description: Rappresenta un oggetto stilo.
+ms.assetid: c55945b7-59df-49b5-b25f-fa96056889fc
+title: Interfaccia ITabletCursor
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- ITabletCursor
+api_type:
+- COM
+api_location:
+- wisptis.exe
+- wisptis.exe.dll
+ms.openlocfilehash: eecbebc7090fb57d3794f3d056c24fba61fa5c61
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103885326"
+---
+# <a name="itabletcursor-interface"></a>Interfaccia ITabletCursor
+
+Rappresenta un oggetto stilo.
+
+## <a name="members"></a>Membri
+
+L'interfaccia **ITabletCursor** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletCursor** dispone anche di questi tipi di membri:
+
+-   [Metodi](#methods)
+
+### <a name="methods"></a>Metodi
+
+L'interfaccia **ITabletCursor** dispone di questi metodi.
+
+
+
+| Metodo                                                 | Descrizione                                                            |
+|:-------------------------------------------------------|:-----------------------------------------------------------------------|
+| [**GetButton**](itabletcursor-getbutton.md)           | Recupera l'oggetto pulsante specificato da uno stilo del tablet.<br/> |
+| [**GetButtonCount**](itabletcursor-getbuttoncount.md) | Recupera il numero di pulsanti sullo stilo del tablet.<br/>       |
+| [**GetId**](itabletcursor-getid.md)                   | Recupera l'identificatore dello stilo.<br/>                            |
+| [**GetName**](itabletcursor-getname.md)               | Recupera il nome dello stilo del tablet.<br/>                    |
+| [**Invertito**](itabletcursor-isinverted.md)         | Indica se lo stilo è capovolto.<br/>                     |
+
+
+
+ 
+
+## <a name="remarks"></a>Commenti
+
+Non usare questa interfaccia.
+
+Il codice seguente descrive il modo in cui viene definita l'interfaccia **ITabletCursor** .
+
+``` syntax
+[
+    object,
+    uuid(EF9953C6-B472-4B02-9D22-D0E247ADE0E8,
+    pointer_default(unique)
+]
+interface ITabletCursor : IUnknown
+{
+    HRESULT GetName(
+        [out] LPWSTR *ppwszName);
+
+    HRESULT IsInverted();
+
+    HRESULT GetId(
+        [out] CURSOR_ID *pCid);
+
+    HRESULT GetTablet(
+        [out] ITablet **ppTablet);
+
+    HRESULT GetButtonCount(
+        [out] ULONG *pcButtons);
+
+    HRESULT GetButton(
+        [in] ULONG iButton,
+        [out] ITabletCursorButton **ppButton);
+};
+
+     
+```
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|----------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
+| Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
+
+
+
+ 
+
