@@ -1,0 +1,179 @@
+---
+description: Creazione di nodi di output
+ms.assetid: 6e548f2a-77cd-460e-9ffd-c098f6ee75eb
+title: Creazione di nodi di output
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4388258c82c12f8473dc07df83ba3b9467eed7e6
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "103878458"
+---
+# <a name="creating-output-nodes"></a>Creazione di nodi di output
+
+Un nodo di output rappresenta un sink del flusso in un sink multimediale. Esistono due modi per inizializzare un nodo di output:
+
+-   Da un puntatore al sink del flusso.
+-   Da un puntatore a un oggetto di attivazione per il sink multimediale.
+
+Se si intende caricare la topologia all'interno del percorso multimediale protetto (PMP), è necessario usare un oggetto attivazione, in modo che il sink multimediale possa essere creato all'interno del processo protetto. Il primo approccio (usando un puntatore al sink di flusso) non funziona con il PMP.
+
+## <a name="creating-an-output-node-from-a-stream-sink"></a>Creazione di un nodo di output da un sink di flusso
+
+Per creare un nodo di output da un sink di flusso, procedere come segue:
+
+1.  Creare un'istanza del sink multimediale.
+2.  Usare l'interfaccia [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) del sink multimediale per ottenere un puntatore al sink di flusso desiderato. (L'interfaccia **IMFMediaSink** dispone di diversi metodi che restituiscono puntatori a un sink di flusso).
+3.  Chiamare [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) con il flag del **\_ nodo di \_ output \_ della topologia MF** per creare il nodo di output.
+4.  Chiamare [**IMFTopologyNode:: seobject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passare un puntatore all'interfaccia [**IMFStreamSink**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamsink) del sink di flusso.
+5.  Impostare [**MF \_ TOPONODE \_ noshutdown \_ sull'attributo \_ Remove su**](mf-toponode-noshutdown-on-remove-attribute.md) **false** (facoltativo ma consigliato).
+6.  Chiamare [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) per aggiungere il nodo alla topologia.
+
+Nell'esempio seguente viene creato e inizializzato un nodo di output da un sink di flusso.
+
+
+```C++
+HRESULT AddOutputNode(
+    IMFTopology *pTopology,     // Topology.
+    IMFStreamSink *pStreamSink, // Stream sink.
+    IMFTopologyNode **ppNode    // Receives the node pointer.
+    )
+{
+    IMFTopologyNode *pNode = NULL;
+    HRESULT hr = S_OK;
+    
+    // Create the node.
+    hr = MFCreateTopologyNode(MF_TOPOLOGY_OUTPUT_NODE, &pNode);
+
+    // Set the object pointer.
+    if (SUCCEEDED(hr))
+    {
+        hr = pNode->SetObject(pStreamSink);
+    }
+
+    // Add the node to the topology.
+    if (SUCCEEDED(hr))
+    {
+        hr = pTopology->AddNode(pNode);
+    }
+
+    if (SUCCEEDED(hr))
+    {
+        hr = pNode->SetUINT32(MF_TOPONODE_NOSHUTDOWN_ON_REMOVE, TRUE);
+    }
+
+    // Return the pointer to the caller.
+    if (SUCCEEDED(hr))
+    {
+        *ppNode = pNode;
+        (*ppNode)->AddRef();
+    }
+
+    if (pNode)
+    {
+        pNode->Release();
+    }
+    return hr;
+}
+```
+
+
+
+Quando l'applicazione arresta la sessione multimediale, la sessione multimediale arresta automaticamente il sink multimediale. Non è pertanto possibile riutilizzare il sink multimediale con un'altra istanza della sessione multimediale.
+
+## <a name="creating-an-output-node-from-an-activation-object"></a>Creazione di un nodo di output da un oggetto Activation
+
+Qualsiasi sink multimediale attendibile deve fornire un oggetto attivazione, in modo che il sink multimediale possa essere creato all'interno del processo protetto. Per altre informazioni, vedere [oggetti Activation](activation-objects.md). La funzione specifica che crea l'oggetto attivazione dipenderà dal sink multimediale.
+
+Per creare un nodo di output da un oggetto Activation, procedere come segue:
+
+1.  Creare l'oggetto attivazione e ottenere un puntatore all'interfaccia [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) dell'oggetto Activation.
+2.  Chiamare [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) con il flag del **\_ nodo di \_ output \_ della topologia MF** per creare il nodo di output.
+3.  Facoltativamente, impostare l'attributo [**MF \_ TOPONODE \_ STREAMID**](mf-toponode-streamid-attribute.md) nel nodo per specificare l'identificatore di flusso del sink di flusso. Se si omette questo attributo, il valore predefinito del nodo sarà Using Stream sink 0.
+4.  Impostare [**MF \_ TOPONODE \_ noshutdown \_ sull'attributo \_ Remove su**](mf-toponode-noshutdown-on-remove-attribute.md) **true** (facoltativo ma consigliato).
+5.  Chiamare [**IMFTopologyNode:: seobject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passare il puntatore [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) .
+6.  Chiamare [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) per aggiungere il nodo alla topologia.
+
+Nell'esempio seguente viene creato e inizializzato un nodo di output da un oggetto Activation.
+
+
+```C++
+// Add an output node to a topology.
+HRESULT AddOutputNode(
+    IMFTopology *pTopology,     // Topology.
+    IMFActivate *pActivate,     // Media sink activation object.
+    DWORD dwId,                 // Identifier of the stream sink.
+    IMFTopologyNode **ppNode)   // Receives the node pointer.
+{
+    IMFTopologyNode *pNode = NULL;
+
+    // Create the node.
+    HRESULT hr = MFCreateTopologyNode(MF_TOPOLOGY_OUTPUT_NODE, &pNode);
+    if (FAILED(hr))
+    {
+        goto done;
+    }
+
+    // Set the object pointer.
+    hr = pNode->SetObject(pActivate);
+    if (FAILED(hr))
+    {
+        goto done;
+    }
+
+    // Set the stream sink ID attribute.
+    hr = pNode->SetUINT32(MF_TOPONODE_STREAMID, dwId);
+    if (FAILED(hr))
+    {
+        goto done;
+    }
+
+    hr = pNode->SetUINT32(MF_TOPONODE_NOSHUTDOWN_ON_REMOVE, FALSE);
+    if (FAILED(hr))
+    {
+        goto done;
+    }
+
+    // Add the node to the topology.
+    hr = pTopology->AddNode(pNode);
+    if (FAILED(hr))
+    {
+        goto done;
+    }
+
+    // Return the pointer to the caller.
+    *ppNode = pNode;
+    (*ppNode)->AddRef();
+
+done:
+    SafeRelease(&pNode);
+    return hr;
+}
+```
+
+
+
+## <a name="related-topics"></a>Argomenti correlati
+
+<dl> <dt>
+
+[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+</dt> <dt>
+
+[Creazione di topologie](creating-topologies.md)
+</dt> <dt>
+
+[Sink di supporti](media-sinks.md)
+</dt> <dt>
+
+[Topologie](topologies.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
