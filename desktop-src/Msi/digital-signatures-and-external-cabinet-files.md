@@ -1,0 +1,29 @@
+---
+description: Windows Installer possibile utilizzare le firme digitali per rilevare le risorse danneggiate.
+ms.assetid: 49f1c1f9-d342-47e0-8888-2eadc5dbd000
+title: Firme digitali e file CAB esterni
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f10e921b324a43a919a417f47953c0a44e4777ba
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103882982"
+---
+# <a name="digital-signatures-and-external-cabinet-files"></a><span data-ttu-id="09cd6-103">Firme digitali e file CAB esterni</span><span class="sxs-lookup"><span data-stu-id="09cd6-103">Digital Signatures and External Cabinet Files</span></span>
+
+<span data-ttu-id="09cd6-104">Windows Installer possibile utilizzare le firme digitali per rilevare le risorse danneggiate.</span><span class="sxs-lookup"><span data-stu-id="09cd6-104">Windows Installer can use digital signatures to detect corrupted resources.</span></span> <span data-ttu-id="09cd6-105">Quando si installa una risorsa esterna, il certificato del firmatario appartenente alla risorsa può essere verificato rispetto a un certificato del firmatario di riferimento creato nel pacchetto.</span><span class="sxs-lookup"><span data-stu-id="09cd6-105">When installing an external resource, the signer certificate belonging to the resource may be verified against a reference signer certificate authored in the package.</span></span> <span data-ttu-id="09cd6-106">Il programma di installazione non è in grado di verificare le firme per i cabinet interni.</span><span class="sxs-lookup"><span data-stu-id="09cd6-106">The installer cannot verify signatures for internal cabinets.</span></span> <span data-ttu-id="09cd6-107">Può verificare solo le firme digitali usando la [tabella MsiDigitalSignature](msidigitalsignature-table.md) e la [tabella MsiDigitalCertificate](msidigitalcertificate-table.md).</span><span class="sxs-lookup"><span data-stu-id="09cd6-107">It can only verify digital signatures by using the [MsiDigitalSignature table](msidigitalsignature-table.md) and [MsiDigitalCertificate table](msidigitalcertificate-table.md).</span></span>
+
+<span data-ttu-id="09cd6-108">Quando si installa un file archiviato in un file CAB esterno, Windows Installer esegue le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="09cd6-108">Windows Installer does the following when installing a file stored in an external cabinet:</span></span>
+
+-   <span data-ttu-id="09cd6-109">Il programma di installazione verifica se la voce relativa ai supporti per il cabinet esterno è elencata nella [tabella MsiDigitalSignature](msidigitalsignature-table.md).</span><span class="sxs-lookup"><span data-stu-id="09cd6-109">The installer checks to see whether the media entry for that external cabinet is listed in the [MsiDigitalSignature table](msidigitalsignature-table.md).</span></span> <span data-ttu-id="09cd6-110">Un file archiviato in un file CAB esterno viene identificato con una voce nella colonna CAB della [tabella multimediale](media-table.md) che non è preceduta da un \# carattere ''.</span><span class="sxs-lookup"><span data-stu-id="09cd6-110">A file stored in an external cabinet is identified by having an entry in the Cabinet column of the [Media table](media-table.md) that is not prefixed by a '\#' character.</span></span>
+-   <span data-ttu-id="09cd6-111">Prima di aprire il file CAB esterno, il programma di installazione chiama WinVerifyTrust per estrarre il certificato e le informazioni hash correnti.</span><span class="sxs-lookup"><span data-stu-id="09cd6-111">Before opening the external cabinet, the installer calls WinVerifyTrust to extract the current certificate and hash information.</span></span> <span data-ttu-id="09cd6-112">In caso di mancata corrispondenza tra le informazioni sulla firma corrente nel file CAB e le informazioni sulla firma create nel pacchetto, l'installazione non riesce.</span><span class="sxs-lookup"><span data-stu-id="09cd6-112">If there is a mismatch between the current signature information on the cabinet and the signature information authored in the package, the installation fails.</span></span> <span data-ttu-id="09cd6-113">L'installazione non riesce perché il cabinet potrebbe essere stato compromesso e non può essere considerato attendibile.</span><span class="sxs-lookup"><span data-stu-id="09cd6-113">The installation fails because the cabinet may have been compromised and cannot be trusted.</span></span>
+
+<span data-ttu-id="09cd6-114">Per ulteriori informazioni sull'utilizzo di firme digitali, certificati digitali e [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust), vedere la sezione relativa alla [sicurezza](https://msdn.microsoft.com/library/cc527452.aspx) di Microsoft Windows Software Development Kit (SDK).</span><span class="sxs-lookup"><span data-stu-id="09cd6-114">For more information regarding the use of digital signatures, digital certificates, and [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust), see the [Security](https://msdn.microsoft.com/library/cc527452.aspx) section of the Microsoft Windows Software Development Kit (SDK).</span></span>
+
+<span data-ttu-id="09cd6-115">Per ulteriori informazioni, vedere [**MsiGetFileSignatureInformation**](/windows/desktop/api/Msi/nf-msi-msigetfilesignatureinformationa), [tabella MsiDigitalCertificate](msidigitalcertificate-table.md)e [tabella MsiDigitalSignature](msidigitalsignature-table.md).</span><span class="sxs-lookup"><span data-stu-id="09cd6-115">For more information, see [**MsiGetFileSignatureInformation**](/windows/desktop/api/Msi/nf-msi-msigetfilesignatureinformationa), [MsiDigitalCertificate table](msidigitalcertificate-table.md), and [MsiDigitalSignature table](msidigitalsignature-table.md).</span></span>
+
+ 
+
+ 
