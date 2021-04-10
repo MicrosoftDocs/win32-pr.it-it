@@ -1,0 +1,46 @@
+---
+title: Gestione di file e dati
+description: Gli utenti hanno accesso più semplice a file e dati in Windows 7.
+ms.assetid: 44756220-1cd0-4c7e-a49e-5786a6220f8f
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 5617d7746746186933bce022aa2202175fb994e0
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "103963237"
+---
+# <a name="managing-files-and-data"></a>Gestione di file e dati
+
+Gli utenti hanno accesso più semplice a file e dati in Windows 7. Le nuove API rendono i file e le visualizzazioni più informativi, consentendo alle applicazioni di fornire informazioni rilevanti e distintive in Esplora risorse. Inoltre, le applicazioni traggono vantaggio dal nuovo modello di *librerie* , una nozione utile, più astratta dello spazio di archiviazione degli utenti rispetto alle cartelle e possono anche partecipare a librerie comuni di tipi di file simili condivisi da applicazioni diverse.
+
+## <a name="libraries"></a>Librerie
+
+Windows 7 introduce il concetto di *librerie* come destinazioni in cui gli sviluppatori e gli utenti finali possono trovare e organizzare i dati come raccolte di elementi che possono estendersi su più posizioni nel computer locale e nei computer remoti.
+
+Le API della *libreria* forniscono agli sviluppatori un modo semplice per creare applicazioni in grado di creare, interagire e supportare le *librerie* come elementi di prima classe all'interno delle applicazioni. Le *librerie* possono essere selezionate anche tramite la finestra di dialogo di selezione cartelle. Le applicazioni possono enumerare gli ambiti di libreria rilevanti oppure possono utilizzare la libreria direttamente come cartella. (Vedere [librerie di Windows](/previous-versions/windows/desktop/legacy/dd758096(v=vs.85)) e [librerie di Windows 7: risorse per sviluppatori](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/dataaccess)).
+
+![libreria immagini di Windows 7](images/windows7-10.jpg)
+
+La *Libreria immagini* Mostra le immagini indipendentemente dalla posizione in cui sono archiviate
+
+## <a name="file-formats-and-data-stores"></a>Formati di file e archivi dati
+
+In Windows 7, Esplora risorse facilita la gestione dei file e la manipolazione per l'utente in diversi modi:
+
+-   L'anteprima per il tipo di file dell'applicazione è più accessibile con un pulsante nuovo che consente agli utenti di visualizzare e nascondere il riquadro di anteprima.
+-   Gli stack visivi immersivi aggregano immagini di anteprima per i tipi di file in una vista.
+-   Le visualizzazioni di Esplora risorse mostrano informazioni utili basate sulle proprietà scritte con il gestore della proprietà.
+-   I frammenti di documento e l'evidenziazione dei riscontri usano l'implementazione dell'interfaccia **IFilter** per semplificare la ricerca e la ricerca di file.
+-   I verbi e i comandi del menu di scelta rapida sono più facili che mai implementare.
+
+Implementando tutti i gestori di formato appropriati per gli elementi restituiti dal gestore di protocollo, i risultati della ricerca dall'archivio dati personalizzato possono essere ricchi di risultati della ricerca dei file. Le *librerie* vengono create automaticamente per i gestori del protocollo, in modo che gli utenti possano definire facilmente l'ambito delle proprie ricerche. La logica per la creazione di *librerie* può essere facilmente personalizzata tramite il registro di sistema. Vedere [sviluppo di filtri per la ricerca di Windows](../search/-search-3x-wds-extidx-filters.md).
+
+![raccolta documenti di Windows 7](images/windows7-11.jpg)
+
+In Windows 7, Esplora risorse rende più semplice la gestione e la manipolazione dei file
+
+ 
+
+ 
