@@ -1,0 +1,35 @@
+---
+description: Ogni servizio viene eseguito nel contesto di sicurezza di un account utente.
+ms.assetid: a0e48918-6957-4288-a188-d65198b38c16
+title: Account utente del servizio
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 54c72f332b8eddbc5b5929718b6688f75e226e59
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "103884822"
+---
+# <a name="service-user-accounts"></a><span data-ttu-id="bc33f-103">Account utente del servizio</span><span class="sxs-lookup"><span data-stu-id="bc33f-103">Service User Accounts</span></span>
+
+<span data-ttu-id="bc33f-104">Ogni servizio viene eseguito nel contesto di sicurezza di un account utente.</span><span class="sxs-lookup"><span data-stu-id="bc33f-104">Each service executes in the security context of a user account.</span></span> <span data-ttu-id="bc33f-105">Il nome utente e la password di un account vengono specificati dalla funzione [**CreateService**](/windows/desktop/api/Winsvc/nf-winsvc-createservicea) al momento dell'installazione del servizio.</span><span class="sxs-lookup"><span data-stu-id="bc33f-105">The user name and password of an account are specified by the [**CreateService**](/windows/desktop/api/Winsvc/nf-winsvc-createservicea) function at the time the service is installed.</span></span> <span data-ttu-id="bc33f-106">Il nome utente e la password possono essere modificati tramite la funzione [**ChangeServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) .</span><span class="sxs-lookup"><span data-stu-id="bc33f-106">The user name and password can be changed by using the [**ChangeServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) function.</span></span> <span data-ttu-id="bc33f-107">È possibile usare la funzione [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) per ottenere il nome utente, ma non la password, associato a un oggetto servizio.</span><span class="sxs-lookup"><span data-stu-id="bc33f-107">You can use the [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) function to get the user name (but not the password) associated with a service object.</span></span> <span data-ttu-id="bc33f-108">Gestione controllo servizi carica automaticamente il profilo utente.</span><span class="sxs-lookup"><span data-stu-id="bc33f-108">The service control manager (SCM) automatically loads the user profile.</span></span>
+
+<span data-ttu-id="bc33f-109">Quando si avvia un servizio, SCM esegue l'accesso all'account associato al servizio.</span><span class="sxs-lookup"><span data-stu-id="bc33f-109">When starting a service, the SCM logs on to the account associated with the service.</span></span> <span data-ttu-id="bc33f-110">Se l'accesso ha esito positivo, il sistema produce un token di accesso e lo collega al nuovo processo del servizio.</span><span class="sxs-lookup"><span data-stu-id="bc33f-110">If the log on is successful, the system produces an access token and attaches it to the new service process.</span></span> <span data-ttu-id="bc33f-111">Questo token identifica il processo del servizio in tutte le interazioni successive con gli oggetti a protezione diretta (oggetti a cui è associato un descrittore di sicurezza).</span><span class="sxs-lookup"><span data-stu-id="bc33f-111">This token identifies the service process in all subsequent interactions with securable objects (objects that have a security descriptor associated with them).</span></span> <span data-ttu-id="bc33f-112">Se, ad esempio, il servizio tenta di aprire un handle per una pipe, il sistema confronta il token di accesso del servizio con il descrittore di sicurezza della pipe prima di concedere l'accesso.</span><span class="sxs-lookup"><span data-stu-id="bc33f-112">For example, if the service tries to open a handle to a pipe, the system compares the service's access token to the pipe's security descriptor before granting access.</span></span>
+
+<span data-ttu-id="bc33f-113">SCM non mantiene le password degli account utente del servizio.</span><span class="sxs-lookup"><span data-stu-id="bc33f-113">The SCM does not maintain the passwords of service user accounts.</span></span> <span data-ttu-id="bc33f-114">Se una password è scaduta, l'accesso ha esito negativo e il servizio non viene avviato.</span><span class="sxs-lookup"><span data-stu-id="bc33f-114">If a password is expired, the logon fails and the service fails to start.</span></span> <span data-ttu-id="bc33f-115">L'amministratore di sistema che assegna gli account ai servizi può creare account con password senza scadenza.</span><span class="sxs-lookup"><span data-stu-id="bc33f-115">The system administrator who assigns accounts to services can create accounts with passwords that never expire.</span></span> <span data-ttu-id="bc33f-116">L'amministratore può anche gestire gli account con password che scadono usando un [programma di configurazione del servizio](service-configuration-programs.md) per modificare periodicamente le password.</span><span class="sxs-lookup"><span data-stu-id="bc33f-116">The administrator can also manage accounts with passwords that expire by using a [service configuration program](service-configuration-programs.md) to periodically change the passwords.</span></span>
+
+<span data-ttu-id="bc33f-117">Se un servizio deve riconoscere un altro servizio prima di condividerne le informazioni, il secondo servizio può usare lo stesso account del primo servizio oppure può essere eseguito in un account appartenente a un alias riconosciuto dal primo servizio.</span><span class="sxs-lookup"><span data-stu-id="bc33f-117">If a service needs to recognize another service before sharing its information, the second service can either use the same account as the first service, or it can run in an account belonging to an alias that is recognized by the first service.</span></span> <span data-ttu-id="bc33f-118">I servizi che devono essere eseguiti in modalità distribuita attraverso la rete devono essere eseguiti in account a livello di dominio.</span><span class="sxs-lookup"><span data-stu-id="bc33f-118">Services that need to run in a distributed manner across the network should run in domain-wide accounts.</span></span>
+
+<span data-ttu-id="bc33f-119">Anziché specificare un account utente per il servizio, è possibile specificare uno degli account speciali seguenti:</span><span class="sxs-lookup"><span data-stu-id="bc33f-119">You can specify one of the following special accounts instead of specifying a user account for the service:</span></span>
+
+-   [<span data-ttu-id="bc33f-120">LocalService</span><span class="sxs-lookup"><span data-stu-id="bc33f-120">LocalService</span></span>](localservice-account.md)
+-   [<span data-ttu-id="bc33f-121">NetworkService</span><span class="sxs-lookup"><span data-stu-id="bc33f-121">NetworkService</span></span>](networkservice-account.md)
+-   [<span data-ttu-id="bc33f-122">LocalSystem</span><span class="sxs-lookup"><span data-stu-id="bc33f-122">LocalSystem</span></span>](localsystem-account.md)
+
+ 
+
+ 
+
+
+
