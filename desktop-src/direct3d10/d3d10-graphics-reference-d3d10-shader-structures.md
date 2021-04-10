@@ -1,0 +1,57 @@
+---
+description: 'Questa sezione contiene informazioni sulle strutture shader seguenti:'
+ms.assetid: b36309e0-1c44-42d9-adcf-33acd753438c
+title: Strutture shader (grafica Direct3D 10)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4e0d84096e743b15e0d5f85635dab4caf72c7e93
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104225711"
+---
+# <a name="shader-structures-direct3d-10-graphics"></a><span data-ttu-id="e0f3c-103">Strutture shader (grafica Direct3D 10)</span><span class="sxs-lookup"><span data-stu-id="e0f3c-103">Shader Structures (Direct3D 10 Graphics)</span></span>
+
+<span data-ttu-id="e0f3c-104">Questa sezione contiene informazioni sulle strutture shader seguenti:</span><span class="sxs-lookup"><span data-stu-id="e0f3c-104">This section contains information about the following shader structures:</span></span>
+
+
+
+| <span data-ttu-id="e0f3c-105">Strutture</span><span class="sxs-lookup"><span data-stu-id="e0f3c-105">Structures</span></span>                                                                         | <span data-ttu-id="e0f3c-106">Descrizione</span><span class="sxs-lookup"><span data-stu-id="e0f3c-106">Description</span></span>                                                                           |
+|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| [<span data-ttu-id="e0f3c-107">**D3D10 \_ buffer shader \_ \_ DESC**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-107">**D3D10\_SHADER\_BUFFER\_DESC**</span></span>](/windows/win32/api/D3D10Shader/ns-d3d10shader-d3d10_shader_buffer_desc)                    | <span data-ttu-id="e0f3c-108">Descrive un buffer di costante shader o un buffer di trama shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-108">Describes a shader-constant buffer or a shader-texture buffer.</span></span>                        |
+| [<span data-ttu-id="e0f3c-109">**D3D10 \_ shader \_ DESC**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-109">**D3D10\_SHADER\_DESC**</span></span>](/windows/win32/api/D3D10Shader/ns-d3d10shader-d3d10_shader_desc)                                   | <span data-ttu-id="e0f3c-110">Descrive uno shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-110">Describes a shader.</span></span>                                                                   |
+| [<span data-ttu-id="e0f3c-111">**\_Informazioni sul file di debug dello shader D3D10 \_ \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-111">**D3D10\_SHADER\_DEBUG\_FILE\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_file_info)           | <span data-ttu-id="e0f3c-112">Descrive i file inclusi in uno shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-112">Describes files included by a shader.</span></span>                                                 |
+| [<span data-ttu-id="e0f3c-113">**Informazioni di debug dello \_ shader D3D10 \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-113">**D3D10\_SHADER\_DEBUG\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_info)                      | <span data-ttu-id="e0f3c-114">Descrive il formato dell'interfaccia ID3D10Blob restituita da D3D10GetShaderDebugInfo.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-114">Describes the format of the ID3D10Blob Interface returned by D3D10GetShaderDebugInfo.</span></span> |
+| [<span data-ttu-id="e0f3c-115">**\_Informazioni di input di debug dello shader D3D10 \_ \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-115">**D3D10\_SHADER\_DEBUG\_INPUT\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_input_info)         | <span data-ttu-id="e0f3c-116">Descrive un input dello shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-116">Describes a shader input.</span></span>                                                             |
+| [<span data-ttu-id="e0f3c-117">**\_ \_ Informazioni Inst di debug \_ shader \_ D3D10**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-117">**D3D10\_SHADER\_DEBUG\_INST\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_inst_info)           | <span data-ttu-id="e0f3c-118">Contiene i dati di istruzione.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-118">Contains instruction data.</span></span>                                                            |
+| [<span data-ttu-id="e0f3c-119">**Informazioni sul OUTPUTREG di debug di D3D10 \_ shader \_ \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-119">**D3D10\_SHADER\_DEBUG\_OUTPUTREG\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_outputreg_info) | <span data-ttu-id="e0f3c-120">Descrive un registro di output dello shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-120">Describes a shader output register.</span></span>                                                   |
+| [<span data-ttu-id="e0f3c-121">**OUTPUTVAR di debug D3D10 \_ shader \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-121">**D3D10\_SHADER\_DEBUG\_OUTPUTVAR**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_outputvar)            | <span data-ttu-id="e0f3c-122">Descrive una variabile di output dello shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-122">Describes a shader output variable.</span></span>                                                   |
+| [<span data-ttu-id="e0f3c-123">**\_Informazioni sull'ambito di debug dello shader D3D10 \_ \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-123">**D3D10\_SHADER\_DEBUG\_SCOPE\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_scope_info)         | <span data-ttu-id="e0f3c-124">Contiene i dati di ambito che esegue il mapping dei nomi delle variabili alle variabili di debug.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-124">Contains scope data that maps variable names to debug variables.</span></span>                      |
+| [<span data-ttu-id="e0f3c-125">**Informazioni sul SCOPEVAR di debug di D3D10 \_ shader \_ \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-125">**D3D10\_SHADER\_DEBUG\_SCOPEVAR\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_scopevar_info)   | <span data-ttu-id="e0f3c-126">Descrive una variabile di ambito.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-126">Describes a scope variable.</span></span>                                                           |
+| [<span data-ttu-id="e0f3c-127">**Informazioni sul token di debug di D3D10 \_ shader \_ \_ \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-127">**D3D10\_SHADER\_DEBUG\_TOKEN\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_token_info)         | <span data-ttu-id="e0f3c-128">Fornisce il percorso di origine per un elemento shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-128">Gives the source location for a shader element.</span></span>                                       |
+| [<span data-ttu-id="e0f3c-129">**D3D10 \_ shader \_ debug \_ VarType**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-129">**D3D10\_SHADER\_DEBUG\_VARTYPE**</span></span>](/windows/win32/api/d3d10_1shader/ne-d3d10_1shader-d3d10_shader_debug_vartype)                | <span data-ttu-id="e0f3c-130">Distingue le variabili dalle funzioni in un ambito.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-130">Distinguishes variables from functions in a scope.</span></span>                                    |
+| [<span data-ttu-id="e0f3c-131">**\_ \_ \_ Informazioni var debug D3D10 shader \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-131">**D3D10\_SHADER\_DEBUG\_VAR\_INFO**</span></span>](/windows/win32/api/d3d10_1shader/ns-d3d10_1shader-d3d10_shader_debug_var_info)             | <span data-ttu-id="e0f3c-132">Contiene informazioni su una variabile.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-132">Contains information on a variable.</span></span>                                                   |
+| [<span data-ttu-id="e0f3c-133">**D3D10 di \_ \_ Binding shader input \_ \_ DESC**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-133">**D3D10\_SHADER\_INPUT\_BIND\_DESC**</span></span>](/windows/win32/api/D3D10Shader/ns-d3d10shader-d3d10_shader_input_bind_desc)           | <span data-ttu-id="e0f3c-134">Viene descritto come una risorsa shader è associata a un input dello shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-134">Describes how a shader resource is bound to a shader input.</span></span>                           |
+| [<span data-ttu-id="e0f3c-135">**\_Macro shader D3D \_**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-135">**D3D\_SHADER\_MACRO**</span></span>](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)                                 | <span data-ttu-id="e0f3c-136">Definisce una macro dello shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-136">Defines a shader macro.</span></span>                                                               |
+| [<span data-ttu-id="e0f3c-137">**D3D10 \_ shader di \_ tipo \_ DESC**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-137">**D3D10\_SHADER\_TYPE\_DESC**</span></span>](/windows/win32/api/D3D10Shader/ns-d3d10shader-d3d10_shader_type_desc)                        | <span data-ttu-id="e0f3c-138">Descrive un tipo di variabile shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-138">Describes a shader-variable type.</span></span>                                                     |
+| [<span data-ttu-id="e0f3c-139">**D3D10 \_ variabile shader \_ \_ DESC**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-139">**D3D10\_SHADER\_VARIABLE\_DESC**</span></span>](/windows/win32/api/D3D10Shader/ns-d3d10shader-d3d10_shader_variable_desc)                | <span data-ttu-id="e0f3c-140">Descrive una variabile shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-140">Describes a shader variable.</span></span>                                                          |
+| [<span data-ttu-id="e0f3c-141">**\_Parametro della firma D3D10 \_ \_ DESC**</span><span class="sxs-lookup"><span data-stu-id="e0f3c-141">**D3D10\_SIGNATURE\_PARAMETER\_DESC**</span></span>](/windows/win32/api/D3D10Shader/ns-d3d10shader-d3d10_signature_parameter_desc)        | <span data-ttu-id="e0f3c-142">Descrive una firma dello shader.</span><span class="sxs-lookup"><span data-stu-id="e0f3c-142">Describes a shader signature.</span></span>                                                         |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="e0f3c-143">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="e0f3c-143">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="e0f3c-144">Riferimento shader</span><span class="sxs-lookup"><span data-stu-id="e0f3c-144">Shader Reference</span></span>](d3d10-graphics-reference-d3d10-shader.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
