@@ -1,0 +1,115 @@
+---
+title: Struttura MCI_OPEN_PARMS (Mciapi. h)
+description: La \_ \_ struttura parametri aperta di MCI contiene informazioni per il \_ comando di apertura di MCI.
+ms.assetid: d22cefeb-3d49-47cf-a946-f73c77ae43fd
+keywords:
+- Struttura MCI_OPEN_PARMS di Windows Multimedia
+topic_type:
+- apiref
+api_name:
+- MCI_OPEN_PARMS
+api_location:
+- mciapi.h
+api_type:
+- HeaderDef
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 658f97a9b2677347c9818265c1f05c2115c95fdd
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104119547"
+---
+# <a name="mci_open_parms-structure"></a>\_ \_ Struttura parametri aperta MCI
+
+La **struttura \_ \_ parametri aperta di MCI** contiene informazioni per il comando di [**\_ apertura di MCI**](mci-open.md) .
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+typedef struct {
+  DWORD_PTR   dwCallback;
+  MCIDEVICEID wDeviceID;
+  LPCTSTR     lpstrDeviceType;
+  LPCTSTR     lpstrElementName;
+  LPCTSTR     lpstrAlias;
+} MCI_OPEN_PARMS;
+```
+
+
+
+## <a name="members"></a>Members
+
+<dl> <dt>
+
+**dwCallback**
+</dt> <dd>
+
+La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+
+</dd> <dt>
+
+**wDeviceID**
+</dt> <dd>
+
+Identificatore restituito all'applicazione.
+
+</dd> <dt>
+
+**lpstrDeviceType**
+</dt> <dd>
+
+Nome o identificatore costante del tipo di dispositivo. Il nome del dispositivo viene in genere ottenuto dal registro di sistema o dal file di SYSTEM.INI. Se questo membro è una costante, può essere uno dei valori elencati nei tipi di [dispositivo MCI](mci-device-types.md).
+
+</dd> <dt>
+
+**lpstrElementName**
+</dt> <dd>
+
+Elemento Device (spesso un percorso).
+
+</dd> <dt>
+
+**lpstrAlias**
+</dt> <dd>
+
+Alias del dispositivo facoltativo.
+
+</dd> </dl>
+
+## <a name="remarks"></a>Commenti
+
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|-------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
+| Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**MCI**](mci.md)
+</dt> <dt>
+
+[**Strutture MCI**](mci-structures.md)
+</dt> <dt>
+
+[**\_aperto MCI**](mci-open.md)
+</dt> <dt>
+
+[**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
+</dt> </dl>
+
+ 
+
