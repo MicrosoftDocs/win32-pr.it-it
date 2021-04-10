@@ -1,0 +1,29 @@
+---
+description: Una transazione è una serie di modifiche apportate a un archivio dati, ad esempio un database o un file system, che devono essere eseguite correttamente o meno.
+ms.assetid: 1567d9d3-7839-42f0-9507-7bbf61d8eaf2
+title: Accodamento messaggi transazionale
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c4730b20f4014cdf7c76462d3f2cae272695d907
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104049157"
+---
+# <a name="transactional-message-queuing"></a><span data-ttu-id="add27-103">Accodamento messaggi transazionale</span><span class="sxs-lookup"><span data-stu-id="add27-103">Transactional Message Queuing</span></span>
+
+<span data-ttu-id="add27-104">Una *transazione* è una serie di modifiche apportate a un archivio dati, ad esempio un database o un file System, che devono essere eseguite correttamente o meno.</span><span class="sxs-lookup"><span data-stu-id="add27-104">A *transaction* is a series of modifications of a data store (such as a database or a file system) guaranteed either to be all successfully executed or not to be executed at all.</span></span> <span data-ttu-id="add27-105">Per implementare una transazione, un record viene mantenuto nello stato dell'archivio dati prima che la transazione venga avviata e, in caso di esito negativo di una delle modifiche, la transazione restituisce un errore e viene ripristinato o eseguito il rollback dello stato iniziale.</span><span class="sxs-lookup"><span data-stu-id="add27-105">To implement a transaction, a record is kept of the state of the data store before the transaction begins and, if one of the modifications fails, the transaction returns failure and the initial state is restored (or rolled back).</span></span> <span data-ttu-id="add27-106">Le transazioni vengono utilizzate per mantenere l'integrità dei dati e, di conseguenza, svolgere un ruolo importante nella programmazione di software aziendali.</span><span class="sxs-lookup"><span data-stu-id="add27-106">Transactions are used to maintain data integrity and consequently play an important role in business software programming.</span></span>
+
+<span data-ttu-id="add27-107">Spesso, le applicazioni possono essere sviluppate utilizzando una transazione aziendale o un flusso di lavoro suddiviso in più transazioni o attività più piccole.</span><span class="sxs-lookup"><span data-stu-id="add27-107">Often, applications can be developed using a business transaction or workflow that is split into several smaller transactions or activities.</span></span> <span data-ttu-id="add27-108">Queste attività sono separate nel tempo e quindi connesse mediante le code di messaggi affidabili.</span><span class="sxs-lookup"><span data-stu-id="add27-108">These activities are separated in time and then connected using reliable message queues.</span></span>
+
+1.  <span data-ttu-id="add27-109">La prima transazione include il database di immissione dell'ordine.</span><span class="sxs-lookup"><span data-stu-id="add27-109">The first transaction involves the order entry database.</span></span> <span data-ttu-id="add27-110">[Accodamento messaggi](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) sposta il messaggio da una coda a un'altra coda, esattamente una volta, usando le funzionalità di transazione.</span><span class="sxs-lookup"><span data-stu-id="add27-110">[Message Queuing](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) moves the message from one queue to another queue, exactly one time, using transaction capabilities.</span></span> <span data-ttu-id="add27-111">Se il database viene aggiornato, viene inserito un messaggio nella coda.</span><span class="sxs-lookup"><span data-stu-id="add27-111">If the database is updated, there is a message on the queue.</span></span> <span data-ttu-id="add27-112">Se il messaggio non raggiunge la coda, viene interrotto e viene eseguito il rollback del database.</span><span class="sxs-lookup"><span data-stu-id="add27-112">If the message doesn't reach the queue, it is aborted and the database is rolled back.</span></span>
+2.  <span data-ttu-id="add27-113">In un secondo momento, Accodamento messaggi rileva che il server è disponibile.</span><span class="sxs-lookup"><span data-stu-id="add27-113">Sometime later, Message Queuing discovers that the server is available.</span></span> <span data-ttu-id="add27-114">Nessun polling dell'applicazione per l'esistenza del server.</span><span class="sxs-lookup"><span data-stu-id="add27-114">There is no application polling for the existence of the server.</span></span> <span data-ttu-id="add27-115">Si tratta della seconda transazione.</span><span class="sxs-lookup"><span data-stu-id="add27-115">This is the second transaction.</span></span>
+3.  <span data-ttu-id="add27-116">La terza transazione prevede una query sul database di spedizione e l'aggiornamento del database di spedizione.</span><span class="sxs-lookup"><span data-stu-id="add27-116">The third transaction involves a shipping database query and the update of the shipping database.</span></span> <span data-ttu-id="add27-117">Se si verifica un errore nel server al centro di questa transazione, viene eseguito il rollback della modifica e il messaggio viene restituito alla coda di input.</span><span class="sxs-lookup"><span data-stu-id="add27-117">If the server fails in the middle of this transaction, the modification is rolled back and the message is returned to the input queue.</span></span> <span data-ttu-id="add27-118">In questo modo si garantisce che l'integrità dei dati e dei database venga mantenuta durante le transazioni.</span><span class="sxs-lookup"><span data-stu-id="add27-118">This ensures that the integrity of the data and databases is maintained during the transactions.</span></span>
+
+ 
+
+ 
+
+
+
