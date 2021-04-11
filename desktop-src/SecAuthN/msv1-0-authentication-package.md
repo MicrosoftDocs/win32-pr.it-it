@@ -1,0 +1,32 @@
+---
+description: Microsoft fornisce il \_ pacchetto di autenticazione MSV1 0 per gli accessi al computer locale che non richiedono l'autenticazione personalizzata.
+ms.assetid: 8b85588d-0a79-43af-b526-7a5fc8248f99
+title: Pacchetto di autenticazione MSV1_0
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 662ae65f60bec61c30b12271a34dc9d3c2883d94
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104232827"
+---
+# <a name="msv1_0-authentication-package"></a><span data-ttu-id="4cb84-103">\_Pacchetto di autenticazione MSV1 0</span><span class="sxs-lookup"><span data-stu-id="4cb84-103">MSV1\_0 Authentication Package</span></span>
+
+<span data-ttu-id="4cb84-104">Microsoft fornisce il \_ pacchetto di [*autenticazione*](../secgloss/a-gly.md) MSV1 0 per gli accessi al computer locale che non richiedono l'autenticazione personalizzata.</span><span class="sxs-lookup"><span data-stu-id="4cb84-104">Microsoft provides the MSV1\_0 [*authentication package*](../secgloss/a-gly.md) for local machine logons that do not require custom authentication.</span></span> <span data-ttu-id="4cb84-105">L' [*autorità di sicurezza locale*](../secgloss/l-gly.md) (LSA) chiama il \_ pacchetto di autenticazione MSV1 0 per elaborare i dati di accesso raccolti da [*Gina*](../secgloss/g-gly.md) per il processo di accesso [*Winlogon*](../secgloss/w-gly.md) .</span><span class="sxs-lookup"><span data-stu-id="4cb84-105">The [*Local Security Authority*](../secgloss/l-gly.md) (LSA) calls the MSV1\_0 authentication package to process logon data collected by the [*GINA*](../secgloss/g-gly.md) for the [*Winlogon*](../secgloss/w-gly.md) logon process.</span></span> <span data-ttu-id="4cb84-106">Il \_ pacchetto MSV1 0 controlla il database di gestione degli account di sicurezza (Sam) locale per determinare se i dati di accesso appartengono a un' [*entità di sicurezza*](../secgloss/s-gly.md) valida e quindi restituisce il risultato del tentativo di accesso all'LSA.</span><span class="sxs-lookup"><span data-stu-id="4cb84-106">The MSV1\_0 package checks the local security accounts manager (SAM) database to determine whether the logon data belongs to a valid [*security principal*](../secgloss/s-gly.md) and then returns the result of the logon attempt to the LSA.</span></span>
+
+<span data-ttu-id="4cb84-107">MSV1 \_ 0 supporta anche gli accessi al dominio.</span><span class="sxs-lookup"><span data-stu-id="4cb84-107">MSV1\_0 also supports domain logons.</span></span> <span data-ttu-id="4cb84-108">MSV1 \_ 0 elabora gli accessi al dominio usando l'autenticazione pass-through, come illustrato nella figura seguente.</span><span class="sxs-lookup"><span data-stu-id="4cb84-108">MSV1\_0 processes domain logons using pass-through authentication, as illustrated in the following diagram.</span></span>
+
+![\-pacchetto di autenticazione MSV1 0](images/lsaint4.png)
+
+<span data-ttu-id="4cb84-110">Nell'autenticazione pass-through, l'istanza locale di MSV1 \_ 0 usa il servizio Netlogon per chiamare l'istanza di MSV1 \_ 0 in esecuzione sul controller di dominio.</span><span class="sxs-lookup"><span data-stu-id="4cb84-110">In pass-through authentication, the local instance of MSV1\_0 uses the Netlogon service to call the instance of MSV1\_0 running on the domain controller.</span></span> <span data-ttu-id="4cb84-111">L'istanza del controller di dominio di MSV1 \_ 0 controlla quindi il database SAM del controller di dominio e restituisce il risultato dell'accesso all'istanza di MSV1 \_ 0 nel computer locale.</span><span class="sxs-lookup"><span data-stu-id="4cb84-111">The domain controller's instance of MSV1\_0 then checks the SAM database of the domain controller and returns the logon result to the instance of MSV1\_0 on the local machine.</span></span> <span data-ttu-id="4cb84-112">La versione locale di MSV1 \_ 0 invia il risultato dell'accesso all'istanza di LSA nel computer locale.</span><span class="sxs-lookup"><span data-stu-id="4cb84-112">The local version of MSV1\_0 forwards the logon result to the instance of the LSA on the local machine.</span></span>
+
+<span data-ttu-id="4cb84-113">Se il controller di dominio non è disponibile e l'LSA contiene [*credenziali*](../secgloss/c-gly.md) memorizzate nella cache per l'utente, l'istanza locale di MSV1 \_ 0 può autenticare l'utente utilizzando i dati di accesso memorizzati nella cache.</span><span class="sxs-lookup"><span data-stu-id="4cb84-113">If the domain controller is not available, and the LSA contains cached [*credentials*](../secgloss/c-gly.md) for the user, the local instance of MSV1\_0 can authenticate the user using the cached logon data.</span></span>
+
+<span data-ttu-id="4cb84-114">Il \_ pacchetto di autenticazione MSV1 0 supporta anche i [pacchetti](subauthentication-packages.md)di autenticazione.</span><span class="sxs-lookup"><span data-stu-id="4cb84-114">The MSV1\_0 authentication package also supports [subauthentication packages](subauthentication-packages.md).</span></span> <span data-ttu-id="4cb84-115">Un pacchetto di sottoautenticazione è una DLL che può sostituire parte dei criteri di autenticazione e di convalida usati dal \_ pacchetto di autenticazione MSV1 0.</span><span class="sxs-lookup"><span data-stu-id="4cb84-115">A subauthentication package is a DLL that can replace part of the authentication and validation criteria used by the MSV1\_0 authentication package.</span></span>
+
+<span data-ttu-id="4cb84-116">Il \_ pacchetto di autenticazione MSV1 0 definisce una coppia chiave/valore stringa di [*credenziali primarie*](../secgloss/p-gly.md) .</span><span class="sxs-lookup"><span data-stu-id="4cb84-116">The MSV1\_0 authentication package defines a [*primary credentials*](../secgloss/p-gly.md) key/string value pair.</span></span> <span data-ttu-id="4cb84-117">La stringa di credenziali primarie include le credenziali derivate dai dati forniti al momento dell'accesso.</span><span class="sxs-lookup"><span data-stu-id="4cb84-117">The primary credentials string holds the credentials derived from the data provided at logon time.</span></span> <span data-ttu-id="4cb84-118">Include il nome utente e i form con distinzione tra maiuscole e minuscole e con distinzione tra maiuscole e minuscole della password dell'utente.</span><span class="sxs-lookup"><span data-stu-id="4cb84-118">It includes the user name and both case-sensitive and case-insensitive forms of the user's password.</span></span>
+
+ 
+
+ 
