@@ -1,0 +1,75 @@
+---
+description: 'Altre informazioni su: Proprietà JET_SETINFO. itagSequence'
+title: Proprietà JET_SETINFO. itagSequence
+TOCTitle: 'itagSequence property '
+ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SETINFO.itagSequence
+ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setinfo.itagsequence(v=EXCHG.10)
+ms:contentKeyID: 55103879
+ms.date: 07/30/2014
+ms.topic: reference
+f1_keywords:
+- Microsoft.Isam.Esent.Interop.JET_SETINFO.itagSequence
+dev_langs:
+- CSharp
+- JScript
+- VB
+- other
+api_name:
+- Microsoft.Isam.Esent.Interop.JET_SETINFO.itagSequence
+- Microsoft.Isam.Esent.Interop.JET_SETINFO.set_itagSequence
+- Microsoft.Isam.Esent.Interop.JET_SETINFO.get_itagSequence
+topic_type:
+- apiref
+- kbSyntax
+api_type:
+- Managed
+api_location:
+- Microsoft.Isam.Esent.Interop.dll
+ROBOTS: INDEX,FOLLOW
+ms.openlocfilehash: 7c409903f90633f15daa8d289c72530db943f1c2
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104128642"
+---
+# <a name="jet_setinfoitagsequence-property"></a>Proprietà JET_SETINFO. itagSequence
+
+Ottiene o imposta il numero di sequenza del valore in una colonna multivalore da impostare. La matrice di valori è in base uno. Il primo valore è Sequence 1, non 0 (zero). Se la colonna record ha un solo valore, è necessario passare 1 come itagSequence se tale valore viene sostituito. Il valore 0 (zero) indica di aggiungere una nuova istanza di valore di colonna alla fine della sequenza dei valori di colonna.
+
+**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+
+## <a name="syntax"></a>Sintassi
+
+``` vb
+'Declaration
+Public Property itagSequence As Integer
+    Get
+    Set
+'Usage
+Dim instance As JET_SETINFO
+Dim value As Integer
+
+value = instance.itagSequence
+
+instance.itagSequence = value
+```
+
+``` csharp
+public int itagSequence { get; set; }
+```
+
+#### <a name="property-value"></a>Valore proprietà
+
+Tipo: [System. Int32](/dotnet/api/system.int32)  
+
+## <a name="see-also"></a>Vedi anche
+
+#### <a name="reference"></a>Riferimento
+
+[Classe JET_SETINFO](./jet-setinfo-class.md)
+
+[Membri JET_SETINFO](./jet-setinfo-members.md)
+
+[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
