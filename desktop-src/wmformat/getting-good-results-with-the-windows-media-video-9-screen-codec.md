@@ -1,0 +1,55 @@
+---
+title: Ottenere risultati soddisfacenti con il codec della schermata Windows Media Video 9
+description: Ottenere risultati soddisfacenti con il codec della schermata Windows Media Video 9
+ms.assetid: c5b080d3-2934-4af7-8f01-9ab0829db05d
+keywords:
+- Windows Media Format SDK, Windows Media Video 9 codec dello schermo
+- Formato Advanced Systems Format (ASF), Windows Media Video 9 screen codec
+- ASF (Advanced Systems Format), Windows Media Video 9 codec dello schermo
+- codec, schermata Windows Media Video 9
+- Windows Media Video 9 codec dello schermo, risultati
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7a297638c7c50a6380fd4c43ea1d4b9971d44db5
+ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "103956206"
+---
+# <a name="getting-good-results-with-the-windows-media-video-9-screen-codec"></a><span data-ttu-id="44ca6-108">Ottenere risultati soddisfacenti con il codec della schermata Windows Media Video 9</span><span class="sxs-lookup"><span data-stu-id="44ca6-108">Getting Good Results with the Windows Media Video 9 Screen Codec</span></span>
+
+<span data-ttu-id="44ca6-109">Il codec Windows Media Video 9 screen è progettato per produrre video altamente compressi per l'acquisizione schermo.</span><span class="sxs-lookup"><span data-stu-id="44ca6-109">The Windows Media Video 9 Screen codec is designed to produce highly compressed video for screen capture.</span></span> <span data-ttu-id="44ca6-110">Poiché la maggior parte delle esigenze di acquisizione schermo implica immagini piuttosto semplici e statiche, i livelli elevati di compressione ottenuti non implicano in genere un grande sacrificio nella qualità dell'immagine.</span><span class="sxs-lookup"><span data-stu-id="44ca6-110">Because most of the need for screen capture involves fairly simple and static images, the high levels of compression attained do not usually mean a great sacrifice in image quality.</span></span> <span data-ttu-id="44ca6-111">Tuttavia, ogni acquisizione della schermata è diversa e la qualità dell'immagine risultante può variare notevolmente in base alle circostanze.</span><span class="sxs-lookup"><span data-stu-id="44ca6-111">However, each screen capture is different, and the resulting image quality can vary considerably depending upon the circumstances.</span></span>
+
+<span data-ttu-id="44ca6-112">Il modo migliore per determinare le impostazioni del profilo per una sessione di codec della schermata consiste nel codificare un file di test usando un flusso di velocità in bit variabile basato sulla qualità.</span><span class="sxs-lookup"><span data-stu-id="44ca6-112">The best way to determine the profile settings for a screen codec session is to encode a test file using a quality-based variable bit rate stream.</span></span> <span data-ttu-id="44ca6-113">Impostare la qualità sul valore desiderato e codificare un'acquisizione schermo come se si stesse registrando il file finale.</span><span class="sxs-lookup"><span data-stu-id="44ca6-113">Set the quality to the value you desire, and encode a screen capture as if you were recording the final file.</span></span> <span data-ttu-id="44ca6-114">Quando il file viene scritto, viene riprodotto utilizzando l'oggetto Reader asincrono, effettuando chiamate regolari a [**IWMReaderAdvanced:: GetStatistics**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-getstatistics).</span><span class="sxs-lookup"><span data-stu-id="44ca6-114">When the file is written, play it using the asynchronous reader object, making regular calls to [**IWMReaderAdvanced::GetStatistics**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-getstatistics).</span></span> <span data-ttu-id="44ca6-115">Monitorando il valore del membro **dwBandwidth** della struttura delle [**\_ \_ statistiche di WM Reader**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_reader_statistics) per ogni chiamata, è possibile determinare la velocità in bit approssimativa necessaria per ottenere la qualità desiderata.</span><span class="sxs-lookup"><span data-stu-id="44ca6-115">By monitoring the value of the **dwBandwidth** member of the [**WM\_READER\_STATISTICS**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_reader_statistics) structure for each call, you can determine the approximate bit rate required to achieve the quality you want.</span></span> <span data-ttu-id="44ca6-116">È quindi possibile usare tale velocità in bit per la codifica della velocità in bit costante.</span><span class="sxs-lookup"><span data-stu-id="44ca6-116">You can then use that bit rate for constant bit rate encoding.</span></span>
+
+<span data-ttu-id="44ca6-117">Se si rileva che la qualità desiderata richiede una velocità in bit superiore a quella che è possibile usare per lo scenario di distribuzione, è possibile provare le tecniche seguenti per ottenere maggiore efficienza dal codec.</span><span class="sxs-lookup"><span data-stu-id="44ca6-117">If you discover that the quality you want requires a higher bit rate than you can use for your delivery scenario, you can try the following techniques to get more efficiency from the codec.</span></span>
+
+-   <span data-ttu-id="44ca6-118">Usare una risoluzione più piccola per l'acquisizione dello schermo.</span><span class="sxs-lookup"><span data-stu-id="44ca6-118">Use a smaller resolution for the screen capture.</span></span> <span data-ttu-id="44ca6-119">L'acquisizione di una risoluzione dello schermo maggiore di quella necessaria può anche creare confusione per il Visualizzatore presentando più informazioni del necessario.</span><span class="sxs-lookup"><span data-stu-id="44ca6-119">Capturing a larger screen resolution than you need can also create confusion for the viewer by presenting more information than is needed.</span></span>
+-   <span data-ttu-id="44ca6-120">Usare un minor numero di elementi grafici nell'acquisizione schermo.</span><span class="sxs-lookup"><span data-stu-id="44ca6-120">Use fewer graphics in the screen capture.</span></span> <span data-ttu-id="44ca6-121">Il codec Windows Media Video 9 screen è ottimizzato per codificare primitive e testo di Windows con qualità elevata.</span><span class="sxs-lookup"><span data-stu-id="44ca6-121">The Windows Media Video 9 Screen codec is optimized to encode Windows primitives and text with high quality.</span></span> <span data-ttu-id="44ca6-122">In genere si verificano problemi a causa di immagini bitmap, che spesso contengono migliaia di colori singoli.</span><span class="sxs-lookup"><span data-stu-id="44ca6-122">Usually problems occur because of bitmapped graphics, which often contain thousands of individual colors.</span></span> <span data-ttu-id="44ca6-123">Il minor numero di bitmap visualizzate sullo schermo quando si acquisisce, migliore sarà il risultato.</span><span class="sxs-lookup"><span data-stu-id="44ca6-123">The fewer bitmaps that are on the screen when you capture, the better your results will be.</span></span> <span data-ttu-id="44ca6-124">Se non è possibile eliminare grafica dall'acquisizione schermo, esistono diversi modi per ridurre al minimo l'effetto di una bitmap sulla qualità dell'immagine:</span><span class="sxs-lookup"><span data-stu-id="44ca6-124">If you cannot eliminate graphics from your screen capture, there are several ways to minimize the impact a bitmap has on image quality:</span></span>
+    -   <span data-ttu-id="44ca6-125">Ridurre le dimensioni dell'elemento grafico.</span><span class="sxs-lookup"><span data-stu-id="44ca6-125">Reduce the size of the graphic.</span></span>
+    -   <span data-ttu-id="44ca6-126">Ridurre il numero di singoli elementi grafici visualizzati contemporaneamente sullo schermo.</span><span class="sxs-lookup"><span data-stu-id="44ca6-126">Reduce the number of individual graphics that appear on the screen concurrently.</span></span>
+    -   <span data-ttu-id="44ca6-127">Ridurre la quantità di movimento del grafico.</span><span class="sxs-lookup"><span data-stu-id="44ca6-127">Reduce the amount of movement of the graphic.</span></span> <span data-ttu-id="44ca6-128">Se, ad esempio, l'immagine si trova in una finestra, conservarla nel modo più stazionale possibile.</span><span class="sxs-lookup"><span data-stu-id="44ca6-128">For example, if the graphic is in a window, keep the window as stationary as possible.</span></span>
+    -   <span data-ttu-id="44ca6-129">Evitare di spostare il puntatore del mouse sul grafico o di trascinare finestre o altri elementi sul grafico.</span><span class="sxs-lookup"><span data-stu-id="44ca6-129">Avoid moving the mouse pointer over the graphic, or dragging windows or other elements over the graphic.</span></span>
+-   <span data-ttu-id="44ca6-130">Usare una frequenza di [*fotogrammi*](wmformat-glossary.md)più lenta.</span><span class="sxs-lookup"><span data-stu-id="44ca6-130">Use a slower [*frame rate*](wmformat-glossary.md).</span></span> <span data-ttu-id="44ca6-131">Le acquisizioni di schermate possono spesso essere efficaci a frequenze di frame molto ridotte (a volte con un minimo di 4 o 5 fotogrammi al secondo).</span><span class="sxs-lookup"><span data-stu-id="44ca6-131">Screen captures can often be effective at very low frame rates (sometimes as low as 4 or 5 frames per second).</span></span>
+-   <span data-ttu-id="44ca6-132">Ridurre la velocità in bit dell'audio associato.</span><span class="sxs-lookup"><span data-stu-id="44ca6-132">Reduce the bit rate of the accompanying audio.</span></span>
+
+<span data-ttu-id="44ca6-133">Inoltre, il codec non supporta il ridimensionamento del rettangolo video.</span><span class="sxs-lookup"><span data-stu-id="44ca6-133">Also, the codec does not support resizing of the video rectangle.</span></span> <span data-ttu-id="44ca6-134">In altre parole, se si tenta di usare il codec per codificare una schermata 800 x 600 fino a un rettangolo video 640 x 480, il video risultante avrà artefatti significativi che potrebbero rendere illeggibili gran parte del testo sullo schermo.</span><span class="sxs-lookup"><span data-stu-id="44ca6-134">In other words, if you try to use the codec to encode a 800 x 600 screen down into to a 640 x 480 video rectangle, the resulting video will have significant artifacts that may make much of the text on the screen illegible.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="44ca6-135">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="44ca6-135">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="44ca6-136">**Configurazione di flussi di acquisizione schermo**</span><span class="sxs-lookup"><span data-stu-id="44ca6-136">**Configuring Screen Capture Streams**</span></span>](configuring-screen-capture-streams.md)
+</dt> <dt>
+
+[<span data-ttu-id="44ca6-137">**Configurazione di flussi**</span><span class="sxs-lookup"><span data-stu-id="44ca6-137">**Configuring Streams**</span></span>](configuring-streams.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
