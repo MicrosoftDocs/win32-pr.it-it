@@ -1,0 +1,22 @@
+---
+title: Esempi
+description: Nell'applicazione di esempio seguente viene illustrato come utilizzare l'API di ingrandimento per creare una lente di ingrandimento a schermo intero che consente di ingrandire l'intero schermo e una lente di ingrandimento a finestra che ingrandisce e visualizza una parte della schermata in una finestra.
+ms.assetid: 4dfe2e89-b6d3-41dd-96cd-2bf10ceb806e
+ms.topic: article
+ms.date: 02/07/2020
+ms.openlocfilehash: 39400cbb2125cb958ab1f487f4460c18ff816e5d
+ms.sourcegitcommit: 541c08d5d36109b754f39bf89e57404f007c5f63
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "103857973"
+---
+# <a name="samples"></a><span data-ttu-id="ad430-103">Esempi</span><span class="sxs-lookup"><span data-stu-id="ad430-103">Samples</span></span>
+
+<span data-ttu-id="ad430-104">Nell'applicazione di esempio seguente viene illustrato come utilizzare l'API di ingrandimento per creare una lente di ingrandimento a schermo intero che consente di ingrandire l'intero schermo e una lente di ingrandimento a finestra che ingrandisce e visualizza una parte della schermata in una finestra.</span><span class="sxs-lookup"><span data-stu-id="ad430-104">The following sample application demonstrates how to use the Magnification API to create a full screen magnifier that magnifies the entire screen, and a windowed magnifier that magnifies and displays a portion of the screen in a window.</span></span>
+
+- [<span data-ttu-id="ad430-105">Esempio di API di ingrandimento (GitHub)</span><span class="sxs-lookup"><span data-stu-id="ad430-105">Magnification API Sample (GitHub)</span></span>](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Magnification%20API%20sample)
+
+## <a name="related-topics"></a><span data-ttu-id="ad430-106">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="ad430-106">Related topics</span></span>
+
+[<span data-ttu-id="ad430-107">API Magnification</span><span class="sxs-lookup"><span data-stu-id="ad430-107">Magnification API</span></span>](entry-magapi-sdk.md)
