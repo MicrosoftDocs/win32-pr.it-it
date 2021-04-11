@@ -1,0 +1,68 @@
+---
+description: Descrive il formato di una chiave privata di DSS versione 3 esportata.
+ms.assetid: 650532fd-919b-495a-9fb9-981790447d3d
+title: BLOB della chiave privata DSS versione 3
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7a6434e411ba3268901176a5c9739ceecfa79689
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104227491"
+---
+# <a name="dss-version-3-private-key-blobs"></a>BLOB della chiave privata DSS versione 3
+
+Quando viene esportata una [*chiave privata*](../secgloss/p-gly.md) della versione 3 [*DSS*](../secgloss/d-gly.md) , il formato è il seguente:
+
+
+```C++
+BLOBHEADER        blobheader; 
+DSSPRIVKEY_VER3   dssprivkeyver3;
+BYTE p[dssprivkeyver3.bitlenP/8]; 
+                    // Where P is the prime modulus
+BYTE q[dssprivkeyver3.bitlenQ/8]; 
+                    // Where Q is a large factor of P-1
+BYTE g[dssprivkeyver3.bitlenP/8]; 
+                    // Where G is the generator parameter
+BYTE j[dssprivkeyver3.bitlenJ/8]; 
+                    // Where J is (P-1)/Q
+BYTE y[dssprivkeyver3.bitlenP/8]; 
+                    // Where Y is (G^X) mod P
+BYTE x[dssprivkeyver3.bitlenX/8]; 
+                    // Where X is the private exponent
+```
+
+
+
+Questo formato [*BLOB*](../secgloss/b-gly.md) viene esportato quando \_ \_ si usa il flag Ver3 di crittografia BLOB con [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey). Poiché la versione si trova nel BLOB, non è necessario specificare un flag quando si usa questo BLOB con [**CryptImportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey).
+
+La tabella seguente descrive ogni componente del [*BLOB della chiave*](../secgloss/k-gly.md).
+
+
+
+| Campo          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Blobheader     | Struttura [**BLOBHEADER**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) . Il membro **bsimbolo** deve avere il valore PublicKeyBlob.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Dssprivkeyver3 | Struttura **\_ Ver3 di DSSPRIVKEY** . Il membro **Magic** deve essere impostato su "DSS4" (0x34535344) per le chiavi private. Si noti che il valore esadecimale è semplicemente una codifica [*ASCII*](../secgloss/a-gly.md) "DSS4".<br/>                                                                                                                                                                                                                                                                     |
+| P              | Il valore P si trova immediatamente dopo la **struttura \_ Ver3 di DSSPRIVKEY** e deve essere sempre la lunghezza, in byte, del campo **DSSPRIVKEY \_ Ver3 BitlenP** (bit length of P) diviso per otto (formato [*Little Endian*](../secgloss/l-gly.md) ).                                                                                                                                                                                                                           |
+| Q              | Il valore Q si trova immediatamente dopo il valore P e deve essere sempre la lunghezza, in byte, del campo **DSSPRIVKEY \_ Ver3 bitlenQ** diviso per otto (formato [*Little Endian*](../secgloss/l-gly.md) ).                                                                                                                                                                                                                                                                     |
+| G              | Il valore G si trova immediatamente dopo il valore Q e deve essere sempre la lunghezza, in byte, del campo **DSSPRIVKEY \_ Ver3 bitlenP** (bit length of P) diviso per otto. Se la lunghezza dei dati è uno o più byte inferiori a P diviso 8, i dati devono essere riempiti con i byte necessari (di valore zero) per rendere i dati la lunghezza desiderata (formato [*Little Endian*](../secgloss/l-gly.md) ).                                                                 |
+| J              | Il valore J si trova immediatamente dopo il valore G e deve essere sempre la lunghezza, in byte, del campo **DSSPRIVKEY \_ Ver3 bitlenJ** diviso per otto (formato [*Little Endian*](../secgloss/l-gly.md) ). Se il valore di bitlenJ è 0, il valore è assente dal BLOB.                                                                                                                                                                                                   |
+| S              | Il valore Y, (G ^ X) mod P, si trova immediatamente dopo il valore J e deve essere sempre la lunghezza, in byte, del campo **DSSPRIVKEY \_ Ver3 bitlenP** (bit length of P) diviso 8. Se la lunghezza dei dati risultante dal calcolo di (G ^ X) mod P è uno o più byte inferiori a P diviso 8, i dati devono essere riempiti con i byte necessari (di valore zero) per rendere i dati la lunghezza desiderata (formato [*Little Endian*](../secgloss/l-gly.md) ). |
+| X              | Il valore X è un numero intero casuale di grandi dimensioni in modo che la parte pubblica della coppia di chiavi DH, Y, sia uguale a: Y = (G ^ X) mod P<br/>                                                                                                                                                                                                                                                                                                                                                                                               |
+
+
+
+ 
+
+Quando si chiama [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey), lo sviluppatore può scegliere se crittografare la chiave. La chiave viene crittografata se il parametro *hExpKey* contiene un handle valido per una chiave di sessione. Tutto tranne la parte [**BLOBHEADER**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) del BLOB è crittografata. Si noti che i parametri dell'algoritmo di crittografia e della chiave di crittografia non vengono archiviati insieme al [*BLOB della chiave privata*](../secgloss/p-gly.md). L'applicazione deve gestire e archiviare queste informazioni. Se viene passato zero per *hExpKey*, la chiave privata verrà esportata senza crittografia.
+
+> [!IMPORTANT]
+> È pericoloso esportare le chiavi private senza crittografia perché sono quindi vulnerabili all'intercettazione e all'uso da entità non autorizzate.
+
+ 
+
+ 
+
+ 
