@@ -1,0 +1,32 @@
+---
+description: Quando si usano strutture di dati di dimensioni variabili per trasmettere informazioni tra TAPI e l'applicazione, l'applicazione è responsabile dell'allocazione della memoria necessaria.
+ms.assetid: f1e2e864-fa10-4058-ba56-faa0ba7363a1
+title: Strutture di dati di dimensioni variabili
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 873fcbaa1e4e3bda772d92ad2de9b1f6258363cd
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104233255"
+---
+# <a name="variably-sized-data-structures"></a><span data-ttu-id="6dc45-103">Strutture di dati di dimensioni variabili</span><span class="sxs-lookup"><span data-stu-id="6dc45-103">Variably Sized Data Structures</span></span>
+
+<span data-ttu-id="6dc45-104">Quando si usano strutture di dati di dimensioni variabili per trasmettere informazioni tra TAPI e l'applicazione, l'applicazione è responsabile dell'allocazione della memoria necessaria.</span><span class="sxs-lookup"><span data-stu-id="6dc45-104">When variably sized data structures are used to transmit information between TAPI and the application, the application is responsible for allocating the necessary memory.</span></span> <span data-ttu-id="6dc45-105">La quantità di memoria allocata deve essere almeno sufficientemente grande per la parte fissa della struttura dei dati e viene impostata dall'applicazione nel membro **dwTotalSize** della struttura dei dati.</span><span class="sxs-lookup"><span data-stu-id="6dc45-105">The amount of memory allocated must be at least large enough for the fixed portion of the data structure, and is set by the application in the **dwTotalSize** member of the data structure.</span></span> <span data-ttu-id="6dc45-106">I membri **dwUsedSize** e **dwNeededSize** sono compilati da TAPI.</span><span class="sxs-lookup"><span data-stu-id="6dc45-106">The **dwUsedSize** and **dwNeededSize** members are filled in by TAPI.</span></span> <span data-ttu-id="6dc45-107">Se **dwTotalSize** è minore della dimensione della parte fissa, viene restituito LINEERR/PHONEERR \_ STRUCTURETOOSMALL.</span><span class="sxs-lookup"><span data-stu-id="6dc45-107">If **dwTotalSize** is less than the size of the fixed portion, then LINEERR/ PHONEERR\_STRUCTURETOOSMALL is returned.</span></span> <span data-ttu-id="6dc45-108">Se una funzione restituisce l'esito positivo, tutti i campi nella parte fissa sono stati compilati.</span><span class="sxs-lookup"><span data-stu-id="6dc45-108">If a function returns success, then all the fields in the fixed portion have been filled in.</span></span> <span data-ttu-id="6dc45-109">I membri **dwUsedSize** e **dwNeededSize** possono essere confrontati per determinare se tutte le parti variabili sono state compilate e la quantità di spazio necessaria per riempirle tutte.</span><span class="sxs-lookup"><span data-stu-id="6dc45-109">The **dwUsedSize** and **dwNeededSize** members can be compared to determine if all variable parts have been filled in, and how much space would be required to fill them all in.</span></span>
+
+<span data-ttu-id="6dc45-110">Se **dwNeededSize** è uguale a **dwUsedSize**, tutte le parti fisse e variabili sono state compilate.</span><span class="sxs-lookup"><span data-stu-id="6dc45-110">If **dwNeededSize** is equal to **dwUsedSize**, then all fixed and variable parts have been filled in.</span></span> <span data-ttu-id="6dc45-111">Se **dwNeededSize** è maggiore di **dwUsedSize**, è possibile che alcune parti della variabile siano state compilate, ma che i campi con dimensioni identiche siano stati compilati in modo non definito.</span><span class="sxs-lookup"><span data-stu-id="6dc45-111">If **dwNeededSize** is larger than **dwUsedSize**, some variable parts may have been filled in, but exactly which variably sized fields have been filled in is undefined.</span></span> <span data-ttu-id="6dc45-112">Non viene mai troncata alcuna parte variabile e le parti variabili che verrebbero troncate a causa di spazio insufficiente sono indicate con entrambe le parti "offset" e "size" corrispondenti impostate su zero.</span><span class="sxs-lookup"><span data-stu-id="6dc45-112">No variable part is ever truncated, and variable parts that would have been truncated due to insufficient space are indicated by having both of their corresponding "Offset" and "Size" parts set to zero.</span></span> <span data-ttu-id="6dc45-113">Se non sono entrambi zero (e non è stato restituito alcun errore), indicano l'offset e le dimensioni dei dati della parte variabile non troncati validi.</span><span class="sxs-lookup"><span data-stu-id="6dc45-113">If these are not both zero (and no error was returned), they indicate the offset and size of valid, nontruncated variable-part data.</span></span>
+
+<span data-ttu-id="6dc45-114">Un'applicazione può sempre garantire che tutte le parti variabili siano compilate allocando e indicando i byte **dwNeededSize** per la struttura e chiamando di nuovo la funzione "Get" fino a quando la funzione non restituisce Success e **dwNeededSize** è uguale a **dwUsedSize**.</span><span class="sxs-lookup"><span data-stu-id="6dc45-114">An application can always guarantee that all variable parts are filled in by allocating and indicating **dwNeededSize** bytes for the structure and calling the "Get" function again until the function returns success and **dwNeededSize** equals **dwUsedSize**.</span></span> <span data-ttu-id="6dc45-115">Questa operazione dovrebbe verificarsi nel secondo tentativo, ad eccezione delle race condition che comportano modifiche alle dimensioni delle parti variabili tra le chiamate, che dovrebbero essere un evento raro.</span><span class="sxs-lookup"><span data-stu-id="6dc45-115">This should happen on the second try except for race conditions that cause changes in the size of variable parts between calls, which should be a rare occurrence.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="6dc45-116">Tutte le stringhe di testo, indipendentemente dalla codifica, in strutture di dimensioni variabili devono essere con terminazione **null** in base alle normali convenzioni di gestione delle stringhe C.</span><span class="sxs-lookup"><span data-stu-id="6dc45-116">All text strings, regardless of encoding, in variably sized structures should be **NULL**-terminated according to normal C string-handling conventions.</span></span>
+
+ 
+
+ 
+
+ 
+
+
+
