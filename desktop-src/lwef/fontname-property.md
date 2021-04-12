@@ -1,0 +1,56 @@
+---
+title: Proprietà FontName (oggetto Commands)
+description: Fontname (proprietà)
+ms.assetid: 7de3653e-9b4d-4a31-82d5-243f10e2743b
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d4b04fa386958a75b55f9cfc50a9149de454d48f
+ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "104118838"
+---
+# <a name="fontname-property-commands-object"></a><span data-ttu-id="67c16-103">Proprietà FontName (oggetto Commands)</span><span class="sxs-lookup"><span data-stu-id="67c16-103">FontName Property (Commands Object)</span></span>
+
+<span data-ttu-id="67c16-104">\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]</span><span class="sxs-lookup"><span data-stu-id="67c16-104">\[Microsoft Agent is deprecated as of Windows 7, and may be unavailable in subsequent versions of Windows.\]</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="67c16-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="67c16-105"><span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Description**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="67c16-106">Restituisce o imposta il tipo di carattere utilizzato nel menu popup del carattere.</span><span class="sxs-lookup"><span data-stu-id="67c16-106">Returns or sets the font used in the character's pop-up menu.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="67c16-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**</span><span class="sxs-lookup"><span data-stu-id="67c16-107"><span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Syntax**</span></span>
+</dt> <dd>
+
+<span data-ttu-id="67c16-108">\*Agent. \***Characters ("**_CharacterID_\*_")._ \*  \[  =  *Tipo di carattere* Commands. fontname\]</span><span class="sxs-lookup"><span data-stu-id="67c16-108">*agent.\***Characters("**_CharacterID_*_").Commands.FontName_\* \[ = *Font*\]</span></span>
+
+
+
+| <span data-ttu-id="67c16-109">Parte</span><span class="sxs-lookup"><span data-stu-id="67c16-109">Part</span></span>   | <span data-ttu-id="67c16-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="67c16-110">Description</span></span>                                      |
+|--------|--------------------------------------------------|
+| <span data-ttu-id="67c16-111">*Carattere*</span><span class="sxs-lookup"><span data-stu-id="67c16-111">*Font*</span></span> | <span data-ttu-id="67c16-112">Valore stringa corrispondente al nome del tipo di carattere.</span><span class="sxs-lookup"><span data-stu-id="67c16-112">A string value corresponding to the font's name.</span></span> |
+
+
+
+ 
+
+</dd> </dl>
+
+## <a name="remarks"></a><span data-ttu-id="67c16-113">Commenti</span><span class="sxs-lookup"><span data-stu-id="67c16-113">Remarks</span></span>
+
+<span data-ttu-id="67c16-114">La proprietà **fontname** definisce il tipo di carattere utilizzato per visualizzare il testo nel menu popup del carattere.</span><span class="sxs-lookup"><span data-stu-id="67c16-114">The **FontName** property defines the font used to display text in the character's pop-up menu.</span></span> <span data-ttu-id="67c16-115">Il valore predefinito per l'impostazione del tipo di carattere è basato sull'impostazione del tipo di carattere del menu per l'impostazione **LanguageID** del carattere oppure--se non è impostato, ovvero l'impostazione dell'ID lingua predefinito dell'utente.</span><span class="sxs-lookup"><span data-stu-id="67c16-115">The default value for the font setting is based on the menu font setting for the character's **LanguageID** setting, or -- if that's not set -- the user default language ID setting.</span></span>
+
+<span data-ttu-id="67c16-116">Questa proprietà si applica solo all'utilizzo del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.</span><span class="sxs-lookup"><span data-stu-id="67c16-116">This property applies only to your client application's use of the character; the setting does not affect other clients of the character or other characters of your client application.</span></span>
+
+ 
+
+ 
+
+
+
+
