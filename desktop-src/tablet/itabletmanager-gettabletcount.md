@@ -1,0 +1,90 @@
+---
+description: Recupera il numero di tablet collegato al sistema.
+ms.assetid: b2027336-611b-4d17-8943-f16770effaf8
+title: 'Metodo ITabletManager:: GetTabletCount'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- ITabletManager.GetTabletCount
+api_type:
+- COM
+api_location:
+- wisptis.exe
+- wisptis.exe.dll
+ms.openlocfilehash: fbdd485c44bc67b3ecaec5aa279d4bc20e18d167
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104233870"
+---
+# <a name="itabletmanagergettabletcount-method"></a><span data-ttu-id="fae0b-103">Metodo ITabletManager:: GetTabletCount</span><span class="sxs-lookup"><span data-stu-id="fae0b-103">ITabletManager::GetTabletCount method</span></span>
+
+<span data-ttu-id="fae0b-104">Recupera il numero di tablet collegato al sistema.</span><span class="sxs-lookup"><span data-stu-id="fae0b-104">Retrieves the number of tablets attached to the system.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="fae0b-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="fae0b-105">Syntax</span></span>
+
+
+```C++
+HRESULT GetTabletCount(
+  [out] ULONG *pcTablets
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="fae0b-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="fae0b-106">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="fae0b-107">*pcTablets* \[ out\]</span><span class="sxs-lookup"><span data-stu-id="fae0b-107">*pcTablets* \[out\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="fae0b-108">Numero di Tablet collegati al sistema.</span><span class="sxs-lookup"><span data-stu-id="fae0b-108">The number of tablets attached to the system.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="fae0b-109">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="fae0b-109">Return value</span></span>
+
+<span data-ttu-id="fae0b-110">Questo metodo può restituire uno di questi valori.</span><span class="sxs-lookup"><span data-stu-id="fae0b-110">This method can return one of these values.</span></span>
+
+
+
+| <span data-ttu-id="fae0b-111">Codice restituito</span><span class="sxs-lookup"><span data-stu-id="fae0b-111">Return code</span></span>                                                                            | <span data-ttu-id="fae0b-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="fae0b-112">Description</span></span>                               |
+|----------------------------------------------------------------------------------------|-------------------------------------------|
+| <dl> <span data-ttu-id="fae0b-113"><dt>**\_OK**</dt></span><span class="sxs-lookup"><span data-stu-id="fae0b-113"><dt>**S\_OK**</dt></span></span> </dl>   | <span data-ttu-id="fae0b-114">Esito positivo.</span><span class="sxs-lookup"><span data-stu-id="fae0b-114">Success.</span></span><br/>                       |
+| <dl> <span data-ttu-id="fae0b-115"><dt>**E \_ non riescono**</dt></span><span class="sxs-lookup"><span data-stu-id="fae0b-115"><dt>**E\_FAIL**</dt></span></span> </dl> | <span data-ttu-id="fae0b-116">Si è verificato un errore non specificato.</span><span class="sxs-lookup"><span data-stu-id="fae0b-116">An unspecified error occurred.</span></span><br/> |
+
+
+
+ 
+
+## <a name="requirements"></a><span data-ttu-id="fae0b-117">Requisiti</span><span class="sxs-lookup"><span data-stu-id="fae0b-117">Requirements</span></span>
+
+
+
+| <span data-ttu-id="fae0b-118">Requisito</span><span class="sxs-lookup"><span data-stu-id="fae0b-118">Requirement</span></span> | <span data-ttu-id="fae0b-119">Valore</span><span class="sxs-lookup"><span data-stu-id="fae0b-119">Value</span></span> |
+|-------------------------------------|----------------------------------------------------------------------------------------|
+| <span data-ttu-id="fae0b-120">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="fae0b-120">Minimum supported client</span></span><br/> | <span data-ttu-id="fae0b-121">Solo app desktop Windows XP Tablet PC Edition \[\]</span><span class="sxs-lookup"><span data-stu-id="fae0b-121">Windows XP Tablet PC Edition \[desktop apps only\]</span></span><br/>                          |
+| <span data-ttu-id="fae0b-122">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="fae0b-122">Minimum supported server</span></span><br/> | <span data-ttu-id="fae0b-123">Nessuno supportato</span><span class="sxs-lookup"><span data-stu-id="fae0b-123">None supported</span></span><br/>                                                              |
+| <span data-ttu-id="fae0b-124">Libreria</span><span class="sxs-lookup"><span data-stu-id="fae0b-124">Library</span></span><br/>                  | <dl> <span data-ttu-id="fae0b-125"><dt>Wisptis.exe</dt></span><span class="sxs-lookup"><span data-stu-id="fae0b-125"><dt>Wisptis.exe</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="fae0b-126">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="fae0b-126">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="fae0b-127">**Interfaccia ITabletManager**</span><span class="sxs-lookup"><span data-stu-id="fae0b-127">**ITabletManager Interface**</span></span>](itabletmanager.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
