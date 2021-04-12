@@ -1,0 +1,68 @@
+---
+description: Qualsiasi analizzatore di pacchetti di rete in grado di visualizzare pacchetti non elaborati può essere usato per ispezionare i pacchetti WS-Discovery UDP. È consigliabile Microsoft Network Monitor 3 (Netmon). Per ulteriori informazioni su Netmon, vedere Download di Netmon e Sample DPWS filters.
+ms.assetid: f12f9847-b87f-4d5f-bee3-4d219f9ad898
+title: Controllo delle tracce di rete per UDP WS-Discovery
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f85f4acd79588ef48c7f8e1ace2a44c9a3458475
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104231816"
+---
+# <a name="inspecting-network-traces-for-udp-ws-discovery"></a><span data-ttu-id="8b983-105">Controllo delle tracce di rete per UDP WS-Discovery</span><span class="sxs-lookup"><span data-stu-id="8b983-105">Inspecting Network Traces for UDP WS-Discovery</span></span>
+
+<span data-ttu-id="8b983-106">Qualsiasi analizzatore di pacchetti di rete in grado di visualizzare pacchetti non elaborati può essere usato per ispezionare i pacchetti WS-Discovery UDP.</span><span class="sxs-lookup"><span data-stu-id="8b983-106">Any network packet analyzer that can display raw packets can be used to inspect UDP WS-Discovery packets.</span></span> <span data-ttu-id="8b983-107">È consigliabile Microsoft Network Monitor 3 (Netmon).</span><span class="sxs-lookup"><span data-stu-id="8b983-107">Microsoft Network Monitor 3 (Netmon) is recommended.</span></span> <span data-ttu-id="8b983-108">Per ulteriori informazioni su Netmon, vedere [download di Netmon e Sample DPWS filters](downloading-netmon-and-sample-dpws-filters.md).</span><span class="sxs-lookup"><span data-stu-id="8b983-108">For more information about Netmon, see [Downloading Netmon and Sample DPWS Filters](downloading-netmon-and-sample-dpws-filters.md).</span></span>
+
+<span data-ttu-id="8b983-109">**Per esaminare le tracce di rete per UDP WS-Discovery**</span><span class="sxs-lookup"><span data-stu-id="8b983-109">**To inspect network traces for UDP WS-Discovery**</span></span>
+
+1.  <span data-ttu-id="8b983-110">Configurare l'host e il client in modo che vengano eseguiti attraverso la rete (ovvero, assicurarsi che l'host e il client operino in computer diversi).</span><span class="sxs-lookup"><span data-stu-id="8b983-110">Configure the host and client to run across the network (that is, make sure that the host and client will operate on different machines).</span></span>
+2.  <span data-ttu-id="8b983-111">Installare Packet Analyzer (Netmon) nel client o nell'host.</span><span class="sxs-lookup"><span data-stu-id="8b983-111">Install the packet analyzer (Netmon) on either the client or the host.</span></span>
+3.  <span data-ttu-id="8b983-112">Configurare l'analizzatore di pacchetti per acquisire il traffico sulla scheda di rete che connette l'host e il client.</span><span class="sxs-lookup"><span data-stu-id="8b983-112">Configure the packet analyzer to capture traffic on the network adapter connecting the host and the client.</span></span>
+4.  <span data-ttu-id="8b983-113">Riprodurre l'errore avviando l'host e il client o premendo F5 in Network Explorer.</span><span class="sxs-lookup"><span data-stu-id="8b983-113">Reproduce the failure by starting the host and client or by pressing F5 in the Network Explorer.</span></span>
+5.  <span data-ttu-id="8b983-114">Filtrare i risultati per isolare il traffico WS-Discovery.</span><span class="sxs-lookup"><span data-stu-id="8b983-114">Filter the results to isolate WS-Discovery traffic.</span></span> <span data-ttu-id="8b983-115">Per visualizzare i filtri Netmon di esempio, vedere [download di Netmon e Sample DPWS filters](downloading-netmon-and-sample-dpws-filters.md).</span><span class="sxs-lookup"><span data-stu-id="8b983-115">To view sample Netmon filters, see [Downloading Netmon and Sample DPWS Filters](downloading-netmon-and-sample-dpws-filters.md).</span></span>
+    > [!Note]  
+    > <span data-ttu-id="8b983-116">Questo passaggio è facoltativo.</span><span class="sxs-lookup"><span data-stu-id="8b983-116">This step is optional.</span></span>
+
+     
+
+6.  <span data-ttu-id="8b983-117">Verificare che i messaggi inviati tra il client e l'host soddisfino i requisiti di traffico di base.</span><span class="sxs-lookup"><span data-stu-id="8b983-117">Verify that messages sent between client and host meet basic traffic requirements.</span></span>
+
+## <a name="verifying-that-messages-meet-traffic-requirements"></a><span data-ttu-id="8b983-118">Verifica per verificare se i messaggi soddisfano i requisiti di traffico</span><span class="sxs-lookup"><span data-stu-id="8b983-118">Verifying that messages meet traffic requirements</span></span>
+
+<span data-ttu-id="8b983-119">I client e gli host WSDAPI devono inviare messaggi conformi ai criteri seguenti.</span><span class="sxs-lookup"><span data-stu-id="8b983-119">WSDAPI clients and hosts must send messages that conform to the following criteria.</span></span> <span data-ttu-id="8b983-120">Per informazioni generali sui modelli di messaggio, vedere [modelli di messaggio di scambio di metadati e individuazione](discovery-and-metadata-exchange-message-patterns.md).</span><span class="sxs-lookup"><span data-stu-id="8b983-120">For general information about message patterns, see [Discovery and Metadata Exchange Message Patterns](discovery-and-metadata-exchange-message-patterns.md).</span></span>
+
+-   <span data-ttu-id="8b983-121">I messaggi [Probe](probe-message.md) devono essere inviati dal multicast UDP alla porta 3702.</span><span class="sxs-lookup"><span data-stu-id="8b983-121">[Probe](probe-message.md) messages must be sent by UDP multicast to port 3702.</span></span>
+-   <span data-ttu-id="8b983-122">L'elemento **types** di un messaggio [Probe](probe-message.md) deve essere presente e non deve essere vuoto.</span><span class="sxs-lookup"><span data-stu-id="8b983-122">The **Types** element of a [Probe](probe-message.md) message must be present and must not be empty.</span></span> <span data-ttu-id="8b983-123">Deve contenere i tipi a cui un host risponderà.</span><span class="sxs-lookup"><span data-stu-id="8b983-123">It must contain the types to which a host will respond.</span></span>
+-   <span data-ttu-id="8b983-124">È necessario inviare un messaggio [ProbeMatches](probematches-message.md) unicast alla porta UDP da cui è stato inviato il [Probe](probe-message.md) .</span><span class="sxs-lookup"><span data-stu-id="8b983-124">A [ProbeMatches](probematches-message.md) message must be sent unicast to the UDP port from which the [Probe](probe-message.md) was sent.</span></span>
+-   <span data-ttu-id="8b983-125">L'elemento **Repiù recente** di un messaggio [ProbeMatches](probematches-message.md) deve essere presente e non deve essere vuoto.</span><span class="sxs-lookup"><span data-stu-id="8b983-125">The **RelatesTo** element of a [ProbeMatches](probematches-message.md) message must be present and must not be empty.</span></span> <span data-ttu-id="8b983-126">Il valore deve corrispondere al valore dell'elemento **MessageID** del messaggio [Probe](probe-message.md) corrispondente.</span><span class="sxs-lookup"><span data-stu-id="8b983-126">Its value must match the value of the **MessageId** element from the corresponding [Probe](probe-message.md) message.</span></span>
+-   <span data-ttu-id="8b983-127">Se nel messaggio [ProbeMatches](probematches-message.md) è stato incluso un elemento **XAddrs** , è necessario convalidare gli indirizzi di trasporto specificati.</span><span class="sxs-lookup"><span data-stu-id="8b983-127">If an **XAddrs** element was included in the [ProbeMatches](probematches-message.md) message, the supplied transport addresses must be validated.</span></span> <span data-ttu-id="8b983-128">Per altre informazioni, vedere [XAddr validation rules](xaddr-validation-rules.md).</span><span class="sxs-lookup"><span data-stu-id="8b983-128">For more information, see [XAddr Validation Rules](xaddr-validation-rules.md).</span></span>
+-   <span data-ttu-id="8b983-129">Un messaggio [ProbeMatches](probematches-message.md) deve essere inviato entro 4 secondi dal messaggio [Probe](probe-message.md) corrispondente.</span><span class="sxs-lookup"><span data-stu-id="8b983-129">A [ProbeMatches](probematches-message.md) message must be sent within 4 seconds of the corresponding [Probe](probe-message.md) message.</span></span> <span data-ttu-id="8b983-130">Il Windows Firewall può rilasciare un messaggio ProbeMatches inviato più di 4 secondi dopo un messaggio Probe.</span><span class="sxs-lookup"><span data-stu-id="8b983-130">The Windows Firewall may drop a ProbeMatches message sent more than 4 seconds after a Probe message.</span></span>
+-   <span data-ttu-id="8b983-131">Se non è stato incluso alcun elemento **XAddrs** nel messaggio [ProbeMatches](probematches-message.md) e il client o l'host invierà un messaggio http (ad esempio, una richiesta [Get](get--metadata-exchange--http-request-and-message.md) Metadata Exchange o un messaggio di servizio), il client o l'host deve inviare un messaggio di [risoluzione](resolve-message.md) tramite multicast UDP alla porta 3702.</span><span class="sxs-lookup"><span data-stu-id="8b983-131">If no **XAddrs** element was included in the [ProbeMatches](probematches-message.md) message, and the client or host will send an HTTP message (such as a [Get](get--metadata-exchange--http-request-and-message.md) metadata exchange request or a service message), then the client or host must send a [Resolve](resolve-message.md) message by UDP multicast to port 3702.</span></span>
+-   <span data-ttu-id="8b983-132">Se viene inviato un messaggio di [risoluzione](resolve-message.md) , è necessario inviare un messaggio [ResolveMatches](resolvematches-message.md) unicast alla porta UDP dalla quale è stato inviato il messaggio di risoluzione.</span><span class="sxs-lookup"><span data-stu-id="8b983-132">If a [Resolve](resolve-message.md) message is sent, then a [ResolveMatches](resolvematches-message.md) message must be sent unicast to the UDP port from which the Resolve message was sent.</span></span>
+-   <span data-ttu-id="8b983-133">È necessario inviare un messaggio [ResolveMatches](resolvematches-message.md) entro 4 secondi dal messaggio di [risoluzione](resolve-message.md) corrispondente.</span><span class="sxs-lookup"><span data-stu-id="8b983-133">A [ResolveMatches](resolvematches-message.md) message must be sent within 4 seconds of the corresponding [Resolve](resolve-message.md) message.</span></span> <span data-ttu-id="8b983-134">Il Windows Firewall può eliminare un ResolveMatchesmessage inviato più di 4 secondi dopo un messaggio di risoluzione.</span><span class="sxs-lookup"><span data-stu-id="8b983-134">The Windows Firewall may drop a ResolveMatchesmessage sent more than 4 seconds after a Resolve message.</span></span>
+
+<span data-ttu-id="8b983-135">Se i messaggi inviati dal programma non sono conformi ai requisiti del messaggio, la causa del problema è stata identificata correttamente e non è necessario eseguire ulteriori passaggi per la risoluzione dei problemi.</span><span class="sxs-lookup"><span data-stu-id="8b983-135">If the messages sent by the program do not conform to these message requirements, the cause of the problem has been successfully identified and no further troubleshooting steps are necessary.</span></span> <span data-ttu-id="8b983-136">Riscrivere il programma in modo da generare messaggi conformi e testare nuovamente il programma.</span><span class="sxs-lookup"><span data-stu-id="8b983-136">Rewrite the program so that it generates conformant messages and retest the program.</span></span>
+
+<span data-ttu-id="8b983-137">Se non è ancora possibile identificare l'origine del problema, contattare il supporto tecnico Microsoft per assistenza.</span><span class="sxs-lookup"><span data-stu-id="8b983-137">If the source of the problem still cannot be identified, contact Microsoft support for assistance.</span></span> <span data-ttu-id="8b983-138">Prima di contattare il supporto tecnico, raccogliere i file di log appropriati per identificare la causa principale del problema.</span><span class="sxs-lookup"><span data-stu-id="8b983-138">Before contacting support, collect the appropriate log files to help identify the root cause of the problem.</span></span> <span data-ttu-id="8b983-139">Per ulteriori informazioni, vedere [Abilitazione della traccia WSDAPI](enabling-wsdapi-tracing.md).</span><span class="sxs-lookup"><span data-stu-id="8b983-139">For more information, see [Enabling WSDAPI Tracing](enabling-wsdapi-tracing.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="8b983-140">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="8b983-140">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="8b983-141">Procedure di diagnostica WSDAPI</span><span class="sxs-lookup"><span data-stu-id="8b983-141">WSDAPI Diagnostic Procedures</span></span>](wsdapi-diagnostic-procedures.md)
+</dt> <dt>
+
+[<span data-ttu-id="8b983-142">Introduzione con la risoluzione dei problemi di WSDAPI</span><span class="sxs-lookup"><span data-stu-id="8b983-142">Getting Started with WSDAPI Troubleshooting</span></span>](getting-started-with-wsdapi-troubleshooting.md)
+</dt> <dt>
+
+[<span data-ttu-id="8b983-143">Download dei filtri Netmon e DPWS di esempio</span><span class="sxs-lookup"><span data-stu-id="8b983-143">Downloading Netmon and Sample DPWS Filters</span></span>](downloading-netmon-and-sample-dpws-filters.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
