@@ -1,0 +1,70 @@
+---
+description: 'Altre informazioni su: Proprietà Int64ColumnValue. size'
+title: Proprietà Int64ColumnValue. size
+TOCTitle: 'Size property '
+ms:assetid: P:Microsoft.Isam.Esent.Interop.Int64ColumnValue.Size
+ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int64columnvalue.size(v=EXCHG.10)
+ms:contentKeyID: 55103373
+ms.date: 07/30/2014
+ms.topic: reference
+f1_keywords:
+- Microsoft.Isam.Esent.Interop.Int64ColumnValue.Size
+dev_langs:
+- CSharp
+- JScript
+- VB
+- other
+api_name:
+- Microsoft.Isam.Esent.Interop.Int64ColumnValue.Size
+- Microsoft.Isam.Esent.Interop.Int64ColumnValue.get_Size
+topic_type:
+- kbSyntax
+- apiref
+api_type:
+- Managed
+api_location:
+- Microsoft.Isam.Esent.Interop.dll
+ROBOTS: INDEX,FOLLOW
+ms.openlocfilehash: 0a1c889c93e4c10562bb5eae940460e8893d97b3
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104234244"
+---
+# <a name="int64columnvaluesize-property"></a>Proprietà Int64ColumnValue. size
+
+Ottiene la dimensione del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binario e stringa.
+
+**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+
+## <a name="syntax"></a>Sintassi
+
+``` vb
+'Declaration
+Protected Overrides ReadOnly Property Size As Integer
+    Get
+'Usage
+Dim value As Integer
+
+value = Me.Size
+```
+
+``` csharp
+protected override int Size { get; }
+```
+
+#### <a name="property-value"></a>Valore proprietà
+
+Tipo: [System. Int32](/dotnet/api/system.int32)  
+
+## <a name="see-also"></a>Vedi anche
+
+#### <a name="reference"></a>Riferimento
+
+[Classe Int64ColumnValue](./int64columnvalue-class.md)
+
+[Membri di Int64ColumnValue](./int64columnvalue-members.md)
+
+[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
