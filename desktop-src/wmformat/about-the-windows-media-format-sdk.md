@@ -1,0 +1,63 @@
+---
+title: Informazioni su Windows Media Format SDK
+description: Informazioni su Windows Media Format SDK
+ms.assetid: cdf5ec0e-650e-49b9-b543-9707825966ee
+keywords:
+- Windows Media Format SDK, informazioni
+- Windows Media Format SDK, Advanced Systems Format (ASF)
+- Formato Advanced Systems (ASF), informazioni
+- ASF (Advanced Systems Format), informazioni
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: dd784a864290cc2404655cb8602aefa3f5d6f8c2
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104395363"
+---
+# <a name="about-the-windows-media-format-sdk"></a><span data-ttu-id="b23c1-107">Informazioni su Windows Media Format SDK</span><span class="sxs-lookup"><span data-stu-id="b23c1-107">About the Windows Media Format SDK</span></span>
+
+<span data-ttu-id="b23c1-108">Il Software Development Kit (SDK) di Microsoft® Windows Media® Format consente agli sviluppatori di creare applicazioni che manipolano i supporti digitali archiviati in file conformi alla struttura dei file ASF (Advanced Systems Format).</span><span class="sxs-lookup"><span data-stu-id="b23c1-108">The Microsoft® Windows Media® Format Software Development Kit (SDK) enables developers to create applications that manipulate digital media stored in files conforming to the Advanced Systems Format (ASF) file structure.</span></span> <span data-ttu-id="b23c1-109">La struttura ASF è un formato di contenitore versatile per supporti di [*streaming*](wmformat-glossary.md) arbitrari.</span><span class="sxs-lookup"><span data-stu-id="b23c1-109">The ASF structure is a versatile container format for arbitrary [*streaming*](wmformat-glossary.md) media.</span></span> <span data-ttu-id="b23c1-110">Per ulteriori informazioni sulla struttura dei file ASF, vedere [Panoramica del formato ASF](overview-of-the-asf-format.md).</span><span class="sxs-lookup"><span data-stu-id="b23c1-110">For more information about the structure of ASF files, see [Overview of the ASF Format](overview-of-the-asf-format.md).</span></span>
+
+<span data-ttu-id="b23c1-111">Questo SDK fornisce anche il supporto per la codifica e la decodifica di contenuti audio e video con i codec Windows Media.</span><span class="sxs-lookup"><span data-stu-id="b23c1-111">This SDK also provides support for encoding and decoding audio and video content using the Windows Media codecs.</span></span> <span data-ttu-id="b23c1-112">Ogni codec (compressore/decompressore) è ottimizzato per ottenere la migliore qualità per un tipo specifico di contenuto.</span><span class="sxs-lookup"><span data-stu-id="b23c1-112">Each codec (compressor/decompressor) is optimized to get the best quality for a specific type of content.</span></span> <span data-ttu-id="b23c1-113">Per altre informazioni sui codec supportati, vedere funzionalità di [codec](codec-features.md).</span><span class="sxs-lookup"><span data-stu-id="b23c1-113">For more information about the supported codecs, see [Codec Features](codec-features.md).</span></span>
+
+<span data-ttu-id="b23c1-114">Oltre al supporto del formato di file generale e all'integrazione dei codec, Windows Media Format SDK fornisce oggetti per la modifica di informazioni descrittive sui supporti digitali.</span><span class="sxs-lookup"><span data-stu-id="b23c1-114">In addition to general file format support and codec integration, the Windows Media Format SDK provides objects for editing descriptive information about digital media.</span></span> <span data-ttu-id="b23c1-115">Il supporto per la lettura e i metadati dei file è incluso anche per i file MP3, consentendo di creare applicazioni più flessibili.</span><span class="sxs-lookup"><span data-stu-id="b23c1-115">File reading and metadata support is also included for MP3 files, enabling you to create more flexible applications.</span></span>
+
+<span data-ttu-id="b23c1-116">Questa panoramica include le sezioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="b23c1-116">This overview includes the following sections.</span></span>
+
+
+
+| <span data-ttu-id="b23c1-117">Sezione</span><span class="sxs-lookup"><span data-stu-id="b23c1-117">Section</span></span>                                                                                                                | <span data-ttu-id="b23c1-118">Descrizione</span><span class="sxs-lookup"><span data-stu-id="b23c1-118">Description</span></span>                                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="b23c1-119">Novità</span><span class="sxs-lookup"><span data-stu-id="b23c1-119">What's New</span></span>](whats-new.md)                                                                                            | <span data-ttu-id="b23c1-120">Vengono illustrate le differenze tra le versioni precedenti e correnti di Windows Media Format SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-120">Discusses the differences between the previous and current versions of the Windows Media Format SDK.</span></span>                                  |
+| [<span data-ttu-id="b23c1-121">Funzionalità aggiunte in Windows Media 9,5 SDK</span><span class="sxs-lookup"><span data-stu-id="b23c1-121">Features Added in the Windows Media 9.5 SDK</span></span>](features-added-in-the-windows-media-9-5-sdk.md)                         | <span data-ttu-id="b23c1-122">Descrive le funzionalità che sono state aggiunte all'SDK nella versione precedente.</span><span class="sxs-lookup"><span data-stu-id="b23c1-122">Describes the features that were added to the SDK in the previous version.</span></span>                                                            |
+| [<span data-ttu-id="b23c1-123">Funzionalità aggiunte in Windows Media Format 9 Series SDK</span><span class="sxs-lookup"><span data-stu-id="b23c1-123">Features Added in the Windows Media Format 9 Series SDK</span></span>](features-added-in-the-windows-media-format-9-series-sdk.md) | <span data-ttu-id="b23c1-124">Descrive le funzionalità che sono state aggiunte all'SDK nella versione 9 della serie.</span><span class="sxs-lookup"><span data-stu-id="b23c1-124">Describes the features that were added to the SDK in the 9 Series release.</span></span>                                                            |
+| [<span data-ttu-id="b23c1-125">Versioni di SDK</span><span class="sxs-lookup"><span data-stu-id="b23c1-125">SDK Versions</span></span>](sdk-versions.md)                                                                                       | <span data-ttu-id="b23c1-126">Vengono illustrate le diverse versioni di questo SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-126">Discusses the different versions of this SDK.</span></span>                                                                                         |
+| [<span data-ttu-id="b23c1-127">Windows Media Format 9,5 SDK x64 Edition</span><span class="sxs-lookup"><span data-stu-id="b23c1-127">Windows Media Format 9.5 SDK x64 Edition</span></span>](windows-media-format-9-5-sdk-x64-edition.md)                               | <span data-ttu-id="b23c1-128">Descrive le funzionalità supportate dalla versione basata su x64 dell'SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-128">Describes the features supported by the x64-based version of the SDK.</span></span>                                                                 |
+| [<span data-ttu-id="b23c1-129">Informativa sulla privacy</span><span class="sxs-lookup"><span data-stu-id="b23c1-129">Privacy Statement</span></span>](privacy-statement.md)                                                                             | <span data-ttu-id="b23c1-130">Viene illustrata la necessità di informative sulla privacy in applicazioni basate su Windows Media Format SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-130">Discusses the need for privacy statements in applications that are based on the Windows Media Format SDK.</span></span>                             |
+| [<span data-ttu-id="b23c1-131">Panoramica di Windows Media Format SDK</span><span class="sxs-lookup"><span data-stu-id="b23c1-131">Overview of the Windows Media Format SDK</span></span>](overview-of-the-windows-media-format-sdk.md)                               | <span data-ttu-id="b23c1-132">Introduce Windows Media Format SDK e illustra le applicazioni generali che è possibile usare per.</span><span class="sxs-lookup"><span data-stu-id="b23c1-132">Introduces the Windows Media Format SDK and discusses the general applications that you can use it for.</span></span>                               |
+| [<span data-ttu-id="b23c1-133">Panoramica del formato ASF</span><span class="sxs-lookup"><span data-stu-id="b23c1-133">Overview of the ASF Format</span></span>](overview-of-the-asf-format.md)                                                           | <span data-ttu-id="b23c1-134">Descrive la struttura e le funzionalità del formato ASF (Advanced Systems Format), usato da questo SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-134">Describes the structure and capabilities of the advanced systems format (ASF), which is used by this SDK.</span></span>                             |
+| [<span data-ttu-id="b23c1-135">Concetti</span><span class="sxs-lookup"><span data-stu-id="b23c1-135">Concepts</span></span>](concepts.md)                                                                                               | <span data-ttu-id="b23c1-136">Vengono illustrati i concetti relativi all'uso di questo SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-136">Discusses the concepts involved in working with this SDK.</span></span> <span data-ttu-id="b23c1-137">Sono incluse la terminologia, le funzionalità e i concetti di programmazione.</span><span class="sxs-lookup"><span data-stu-id="b23c1-137">This includes terminology, features, and programming concepts.</span></span>              |
+| [<span data-ttu-id="b23c1-138">Funzionalità</span><span class="sxs-lookup"><span data-stu-id="b23c1-138">Features</span></span>](features.md)                                                                                               | <span data-ttu-id="b23c1-139">Descrive le funzionalità supportate dagli oggetti di questo SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-139">Describes the features supported by the objects of this SDK.</span></span> <span data-ttu-id="b23c1-140">Ogni argomento della funzionalità contiene collegamenti agli argomenti relativi alle procedure e ai riferimenti appropriati.</span><span class="sxs-lookup"><span data-stu-id="b23c1-140">Each feature topic links to the appropriate how-to and reference topics.</span></span> |
+| [<span data-ttu-id="b23c1-141">Applicazioni di esempio</span><span class="sxs-lookup"><span data-stu-id="b23c1-141">Sample Applications</span></span>](sample-applications.md)                                                                         | <span data-ttu-id="b23c1-142">Descrive le applicazioni di esempio e il codice di esempio contenuto in Windows Media Format SDK.</span><span class="sxs-lookup"><span data-stu-id="b23c1-142">Describes the sample applications and sample code contained in the Windows Media Format SDK.</span></span>                                          |
+| [<span data-ttu-id="b23c1-143">Per ulteriori informazioni</span><span class="sxs-lookup"><span data-stu-id="b23c1-143">For More Information</span></span>](for-more-information.md)                                                                       | <span data-ttu-id="b23c1-144">Vengono descritte le informazioni disponibili online nel Windows Media Developer Center.</span><span class="sxs-lookup"><span data-stu-id="b23c1-144">Describes information available online at the Windows Media Developer Center.</span></span>                                                         |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="b23c1-145">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="b23c1-145">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="b23c1-146">**SDK di Windows Media Format 11**</span><span class="sxs-lookup"><span data-stu-id="b23c1-146">**Windows Media Format 11 SDK**</span></span>](windows-media-format-11-sdk.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
