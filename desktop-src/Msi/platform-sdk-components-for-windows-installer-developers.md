@@ -1,0 +1,32 @@
+---
+description: I componenti di Windows Installer Software Development Kit sono inclusi nel Software Development Kit (SDK) di Microsoft Windows.
+ms.assetid: d2947c01-8a2b-42b1-b94e-06a100f70f4f
+title: Componenti di Windows SDK per sviluppatori di Windows Installer
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a03e138f1bb46185bebaad9c15f982229517fba4
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104232068"
+---
+# <a name="windows-sdk-components-for-windows-installer-developers"></a>Componenti di Windows SDK per sviluppatori di Windows Installer
+
+I componenti di Windows Installer Software Development Kit sono inclusi nel Software Development Kit (SDK) di Microsoft Windows. Il Windows SDK include componenti ridistribuibili, documentazione, strumento di convalida del database del programma di installazione, Editor tabelle di database, schema del database, strumenti di sviluppo, strumenti di Visual Basic Scripting Edition (VBScript), prodotto di esempio ed esempi di codice.
+
+Per la pagina di download per la Windows SDK, vedere [Microsoft Windows Software Development Kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+
+## <a name="related-topics"></a>Argomenti correlati
+
+<dl> <dt>
+
+[Versioni rilasciate, strumenti e ridistribuibili](released-versions-tools-and-redistributables.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
