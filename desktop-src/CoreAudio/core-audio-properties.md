@@ -1,0 +1,76 @@
+---
+description: Questa guida di riferimento per la programmazione di Core Audio SDK include le proprietà seguenti.
+ms.assetid: db7d68c3-5642-4238-a212-88d3479ce73d
+title: Proprietà audio principali
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 41528e66977f1f3b9282cf78ba76e4bae32c5bd6
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104522890"
+---
+# <a name="core-audio-properties"></a><span data-ttu-id="6cb84-103">Proprietà audio principali</span><span class="sxs-lookup"><span data-stu-id="6cb84-103">Core Audio Properties</span></span>
+
+<span data-ttu-id="6cb84-104">Questa guida di riferimento per la programmazione di Core Audio SDK include le proprietà seguenti.</span><span class="sxs-lookup"><span data-stu-id="6cb84-104">This programming reference for the Core Audio SDK includes the following properties.</span></span>
+
+## <a name="audio-endpoint-properties"></a><span data-ttu-id="6cb84-105">Proprietà endpoint audio</span><span class="sxs-lookup"><span data-stu-id="6cb84-105">Audio Endpoint Properties</span></span>
+
+<span data-ttu-id="6cb84-106">Core Audio SDK include diverse proprietà dei [dispositivi dell'endpoint audio](audio-endpoint-devices.md).</span><span class="sxs-lookup"><span data-stu-id="6cb84-106">Core Audio SDK includes several properties of [audio endpoint devices](audio-endpoint-devices.md).</span></span> <span data-ttu-id="6cb84-107">Per altre informazioni, vedere [proprietà dell'endpoint audio](audio-endpoint-properties.md).</span><span class="sxs-lookup"><span data-stu-id="6cb84-107">For more information, see [Audio Endpoint Properties](audio-endpoint-properties.md).</span></span>
+
+<span data-ttu-id="6cb84-108">Le proprietà seguenti sono definite in mmdeviceapi. h in Windows Vista e versioni successive.</span><span class="sxs-lookup"><span data-stu-id="6cb84-108">The following properties are defined in Mmdeviceapi.h in Windows Vista and later.</span></span>
+
+
+
+| <span data-ttu-id="6cb84-109">Proprietà</span><span class="sxs-lookup"><span data-stu-id="6cb84-109">Property</span></span>                                                                                                            | <span data-ttu-id="6cb84-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="6cb84-110">Description</span></span>                                                                                                                                                   |
+|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="6cb84-111">**\_Associazione pkey AudioEndpoint \_**</span><span class="sxs-lookup"><span data-stu-id="6cb84-111">**PKEY\_AudioEndpoint\_Association**</span></span>](pkey-audioendpoint-association.md)                                          | <span data-ttu-id="6cb84-112">Associa una categoria di pin di streaming kernel (KS) a un dispositivo endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-112">Associates a kernel-streaming (KS) pin category with an audio endpoint device.</span></span>                                                                                |
+| [<span data-ttu-id="6cb84-113">**PKEY \_ AudioEndpoint \_ ControlPanelPageProvider**</span><span class="sxs-lookup"><span data-stu-id="6cb84-113">**PKEY\_AudioEndpoint\_ControlPanelPageProvider**</span></span>](pkey-audioendpoint-controlpanelpageprovider.md)                | <span data-ttu-id="6cb84-114">Specifica il CLSID del provider registrato dell'estensione delle proprietà del dispositivo per il dispositivo dell'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-114">Specifies the CLSID of the registered provider of the device-properties extension for the audio endpoint device.</span></span>                                              |
+| [<span data-ttu-id="6cb84-115">**PKEY \_ AudioEndpoint \_ Disabilita \_ SysFx**</span><span class="sxs-lookup"><span data-stu-id="6cb84-115">**PKEY\_AudioEndpoint\_Disable\_SysFx**</span></span>](pkey-audioendpoint-disable-sysfx.md)                                     | <span data-ttu-id="6cb84-116">Indica se gli effetti di sistema sono abilitati nel flusso in modalità condivisa che scorre verso o dal dispositivo dell'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-116">Indicates whether system effects are enabled in the shared-mode stream that flows to or from the audio endpoint device.</span></span>                                       |
+| [<span data-ttu-id="6cb84-117">**PKEY \_ AudioEndpoint \_ FormFactor**</span><span class="sxs-lookup"><span data-stu-id="6cb84-117">**PKEY\_AudioEndpoint\_FormFactor**</span></span>](pkey-audioendpoint-formfactor.md)                                            | <span data-ttu-id="6cb84-118">Indica gli attributi fisici del dispositivo dell'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-118">Indicates the physical attributes of the audio endpoint device.</span></span>                                                                                               |
+| [<span data-ttu-id="6cb84-119">**PKEY \_ AudioEndpoint \_ FullRangeSpeakers**</span><span class="sxs-lookup"><span data-stu-id="6cb84-119">**PKEY\_AudioEndpoint\_FullRangeSpeakers**</span></span>](pkey-audioendpoint-fullrangespeakers.md)                              | <span data-ttu-id="6cb84-120">Specifica la maschera di configurazione del canale per gli altoparlanti con intervallo completo connessi al dispositivo dell'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-120">Specifies the channel-configuration mask for the full-range speakers that are connected to the audio endpoint device.</span></span>                                         |
+| [<span data-ttu-id="6cb84-121">**\_GUID AUDIOENDPOINT \_ pkey**</span><span class="sxs-lookup"><span data-stu-id="6cb84-121">**PKEY\_AudioEndpoint\_GUID**</span></span>](pkey-audioendpoint-guid.md)                                                        | <span data-ttu-id="6cb84-122">Fornisce l'identificatore di dispositivo DirectSound che corrisponde al dispositivo dell'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-122">Supplies the DirectSound device identifier that corresponds to the audio endpoint device.</span></span>                                                                     |
+| [<span data-ttu-id="6cb84-123">**PKEY \_ AudioEndpoint \_ PhysicalSpeakers**</span><span class="sxs-lookup"><span data-stu-id="6cb84-123">**PKEY\_AudioEndpoint\_PhysicalSpeakers**</span></span>](pkey-audioendpoint-physicalspeakers.md)                                | <span data-ttu-id="6cb84-124">Definisce la configurazione dell'altoparlante fisico per il dispositivo dell'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-124">Defines the physical speaker configuration for the audio endpoint device.</span></span>                                                                                     |
+| [<span data-ttu-id="6cb84-125">**PKEY \_ Audioengine \_ DeviceFormat**</span><span class="sxs-lookup"><span data-stu-id="6cb84-125">**PKEY\_AudioEngine\_DeviceFormat**</span></span>](pkey-audioengine-deviceformat.md)                                            | <span data-ttu-id="6cb84-126">Specifica il formato del dispositivo, che è il formato usato dal motore audio per il flusso in modalità condivisa che passa da o verso il dispositivo dell'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-126">Specifies the device format, which is the format that the audio engine uses for the shared-mode stream that flows to or from the audio endpoint device.</span></span>       |
+| [<span data-ttu-id="6cb84-127">**PKEY \_ Audioengine \_ OEMFormat**</span><span class="sxs-lookup"><span data-stu-id="6cb84-127">**PKEY\_AudioEngine\_OEMFormat**</span></span>](pkey-audioengine-oemformat.md)<br/>                                       | <span data-ttu-id="6cb84-128">Specifica il formato predefinito del dispositivo usato per il rendering o l'acquisizione di un flusso.</span><span class="sxs-lookup"><span data-stu-id="6cb84-128">Specifies the default format of the device that is used for rendering or capturing a stream.</span></span> <span data-ttu-id="6cb84-129">I valori vengono popolati dall'OEM in un file con estensione inf.</span><span class="sxs-lookup"><span data-stu-id="6cb84-129">The values are populated by the OEM in an .inf file.</span></span> <br/> |
+| [<span data-ttu-id="6cb84-130">**PKEY \_ AudioEndpoint \_ supporta \_ la \_ modalità EventDriven**</span><span class="sxs-lookup"><span data-stu-id="6cb84-130">**PKEY\_AudioEndpoint\_Supports\_EventDriven\_Mode**</span></span>](pkey-audioendpoint-supports-eventdriven-mode.md)<br/> | <span data-ttu-id="6cb84-131">Indica se l'endpoint supporta la modalità guidata dagli eventi.</span><span class="sxs-lookup"><span data-stu-id="6cb84-131">Indicates whether the endpoint supports the event-driven mode.</span></span> <span data-ttu-id="6cb84-132">I valori vengono popolati dall'OEM in un file con estensione inf.</span><span class="sxs-lookup"><span data-stu-id="6cb84-132">The values are populated by the OEM in an .inf file.</span></span><br/>                                |
+| [<span data-ttu-id="6cb84-133">**PKEY \_ AudioEndpoint \_ JackSubType**</span><span class="sxs-lookup"><span data-stu-id="6cb84-133">**PKEY\_AudioEndpoint\_JackSubType**</span></span>](pkey-audioendpoint-jacksubtype.md)<br/>                               | <span data-ttu-id="6cb84-134">Contiene un GUID della categoria di output per un dispositivo endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-134">Contains an output category GUID for an audio endpoint device.</span></span> <br/>                                                                                    |
+
+
+
+ 
+
+## <a name="device-properties"></a><span data-ttu-id="6cb84-135">Proprietà dispositivo</span><span class="sxs-lookup"><span data-stu-id="6cb84-135">Device Properties</span></span>
+
+<span data-ttu-id="6cb84-136">Core Audio SDK include diverse proprietà dei dispositivi per l' [endpoint audio](audio-endpoint-devices.md).</span><span class="sxs-lookup"><span data-stu-id="6cb84-136">Core Audio SDK includes several device properties of [audio endpoint devices](audio-endpoint-devices.md).</span></span> <span data-ttu-id="6cb84-137">Per altre informazioni, vedere [proprietà del dispositivo](device-properties.md).</span><span class="sxs-lookup"><span data-stu-id="6cb84-137">For more information, see [Device Properties](device-properties.md).</span></span>
+
+<span data-ttu-id="6cb84-138">Le proprietà seguenti sono definite in Functiondiscoverykeys \_ devpkey. h in Windows Vista e versioni successive.</span><span class="sxs-lookup"><span data-stu-id="6cb84-138">The following properties are defined in Functiondiscoverykeys\_devpkey.h in Windows Vista and later.</span></span>
+
+
+
+| <span data-ttu-id="6cb84-139">Proprietà</span><span class="sxs-lookup"><span data-stu-id="6cb84-139">Property</span></span>                                                                         | <span data-ttu-id="6cb84-140">Descrizione</span><span class="sxs-lookup"><span data-stu-id="6cb84-140">Description</span></span>                                                                                                                                                                                       |
+|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="6cb84-141">**PKEY \_ deviceinterface \_ FriendlyName**</span><span class="sxs-lookup"><span data-stu-id="6cb84-141">**PKEY\_DeviceInterface\_FriendlyName**</span></span>](pkey-deviceinterface-friendlyname.md) | <span data-ttu-id="6cb84-142">Nome descrittivo della scheda audio a cui è collegato il dispositivo dell'endpoint (ad esempio, "scheda audio XYZ").</span><span class="sxs-lookup"><span data-stu-id="6cb84-142">The friendly name of the audio adapter to which the endpoint device is attached (for example, "XYZ Audio Adapter").</span></span>                                                                               |
+| [<span data-ttu-id="6cb84-143">**\_DeviceDesc del dispositivo pkey \_**</span><span class="sxs-lookup"><span data-stu-id="6cb84-143">**PKEY\_Device\_DeviceDesc**</span></span>](pkey-device-devicedesc.md)                       | <span data-ttu-id="6cb84-144">Descrizione del dispositivo dell'endpoint (ad esempio, "Speakers").</span><span class="sxs-lookup"><span data-stu-id="6cb84-144">The device description of the endpoint device (for example, "Speakers").</span></span>                                                                                                                          |
+| [<span data-ttu-id="6cb84-145">**PKEY \_ Device \_ FriendlyName**</span><span class="sxs-lookup"><span data-stu-id="6cb84-145">**PKEY\_Device\_FriendlyName**</span></span>](pkey-device-friendlyname.md)                   | <span data-ttu-id="6cb84-146">Nome descrittivo del dispositivo dell'endpoint (ad esempio, "altoparlanti (scheda audio XYZ)").</span><span class="sxs-lookup"><span data-stu-id="6cb84-146">The friendly name of the endpoint device (for example, "Speakers (XYZ Audio Adapter)").</span></span>                                                                                                           |
+| <span data-ttu-id="6cb84-147">**\_ContainerId del dispositivo pkey \_**</span><span class="sxs-lookup"><span data-stu-id="6cb84-147">**PKEY\_Device\_ContainerId**</span></span>                                                    | <span data-ttu-id="6cb84-148">Archivia l'identificatore del contenitore del dispositivo PnP che implementa l'endpoint audio.</span><span class="sxs-lookup"><span data-stu-id="6cb84-148">Stores the container identifier of the PnP device that implements the audio endpoint.</span></span> <span data-ttu-id="6cb84-149">Per ulteriori informazioni su questa proprietà, vedere "riferimento alle proprietà dei dispositivi" nella documentazione di Windows WDK.</span><span class="sxs-lookup"><span data-stu-id="6cb84-149">For more information about this property, see "Device Property Reference" in the Windows WDK documentation.</span></span> |
+
+
+
+ 
+
+## <a name="related-topics"></a><span data-ttu-id="6cb84-150">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="6cb84-150">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="6cb84-151">Guida di riferimento alla programmazione</span><span class="sxs-lookup"><span data-stu-id="6cb84-151">Programming Reference</span></span>](programming-reference.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
