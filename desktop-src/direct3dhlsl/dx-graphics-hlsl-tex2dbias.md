@@ -1,0 +1,92 @@
+---
+title: tex2Dbias
+description: Esegue il campionamento di una trama 2D dopo la distorsione del livello MIP per t.w.
+ms.assetid: adf2891a-732a-4953-875b-df315c19748b
+keywords:
+- HLSL tex2Dbias
+topic_type:
+- apiref
+api_name:
+- tex2Dbias
+api_type:
+- NA
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: cfaec24e1d188460d36a24d68b0fde8ddcb45c29
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104338846"
+---
+# <a name="tex2dbias"></a>tex2Dbias
+
+Esegue il campionamento di una trama 2D dopo la distorsione del livello MIP per t.w.
+
+
+
+| tex2Dbias RET (s, t) |
+|---------------------|
+
+
+
+ 
+
+## <a name="parameters"></a>Parametri
+
+
+
+| Elemento                                                   | Descrizione                               |
+|--------------------------------------------------------|-------------------------------------------|
+| <span id="s"></span><span id="S"></span>*s*<br/> | \[nello \] stato del campionatore.<br/>      |
+| <span id="t"></span><span id="T"></span>*t*<br/> | \[nella \] coordinata di trama.<br/> |
+
+
+
+ 
+
+## <a name="return-value"></a>Valore restituito
+
+Valore dei dati della trama.
+
+## <a name="type-description"></a>Descrizione del tipo
+
+
+
+| Nome | Ingresso/Uscita | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione |
+|------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
+| s    | in ingresso     | [**oggetto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler2D](dx-graphics-hlsl-sampler.md)                      | 1    |
+| u    | in ingresso     | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| RET  | in uscita    | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+
+
+
+ 
+
+## <a name="minimum-shader-model"></a>Modello Shader minimo
+
+Questa funzione è supportata nei modelli shader seguenti.
+
+
+
+| Modello di shader                                              | Supportato               |
+|-----------------------------------------------------------|-------------------------|
+| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | Sì (solo pixel shader) |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | Sì (solo pixel shader) |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | Sì (solo pixel shader) |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no                      |
+
+
+
+ 
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**Funzioni intrinseche (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+</dt> </dl>
+
+ 
+
