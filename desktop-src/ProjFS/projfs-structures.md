@@ -1,0 +1,31 @@
+---
+title: Strutture ProjFS
+description: Le strutture seguenti sono dichiarate in projectedfslib. h.
+ms.assetid: <GUID-GOES-HERE>
+ms.date: 01/17/2020
+ms.topic: article
+ms.openlocfilehash: 0bf72bd479e273c6c8cbdaa9ed588625298f4f95
+ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "104225190"
+---
+# <a name="projfs-structures"></a><span data-ttu-id="e7205-103">Strutture ProjFS</span><span class="sxs-lookup"><span data-stu-id="e7205-103">ProjFS structures</span></span>
+
+<span data-ttu-id="e7205-104">Le strutture seguenti sono dichiarate in projectedfslib. h.</span><span class="sxs-lookup"><span data-stu-id="e7205-104">The following structures are declared in projectedfslib.h.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="e7205-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="e7205-105">In this section</span></span>
+
+| <span data-ttu-id="e7205-106">Argomento</span><span class="sxs-lookup"><span data-stu-id="e7205-106">Topic</span></span> | <span data-ttu-id="e7205-107">Descrizione</span><span class="sxs-lookup"><span data-stu-id="e7205-107">Description</span></span> |
+|-|-|
+| [<span data-ttu-id="e7205-108">**PRJ_CALLBACK_DATA**</span><span class="sxs-lookup"><span data-stu-id="e7205-108">**PRJ_CALLBACK_DATA**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_callback_data) | <span data-ttu-id="e7205-109">Definisce le informazioni standard passate a un provider per ogni callback dell'operazione.</span><span class="sxs-lookup"><span data-stu-id="e7205-109">Defines the standard information passed to a provider for every operation callback.</span></span> |
+| [<span data-ttu-id="e7205-110">**PRJ_CALLBACKS**</span><span class="sxs-lookup"><span data-stu-id="e7205-110">**PRJ_CALLBACKS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_callbacks) | <span data-ttu-id="e7205-111">Set di puntatori a cui il provider archivia le proprie implementazioni delle routine di callback.</span><span class="sxs-lookup"><span data-stu-id="e7205-111">A set of pointers to where the provider stores its implementations of the callback routines.</span></span> |
+| [<span data-ttu-id="e7205-112">**PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS**</span><span class="sxs-lookup"><span data-stu-id="e7205-112">**PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_complete_command_extended_parameters) | <span data-ttu-id="e7205-113">Specifica i parametri necessari per il completamento di determinati callback.</span><span class="sxs-lookup"><span data-stu-id="e7205-113">Specifies parameters required for completing certain callbacks.</span></span> |
+| [<span data-ttu-id="e7205-114">**PRJ_FILE_BASIC_INFO**</span><span class="sxs-lookup"><span data-stu-id="e7205-114">**PRJ_FILE_BASIC_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_file_basic_info) | <span data-ttu-id="e7205-115">Informazioni di base su un elemento.</span><span class="sxs-lookup"><span data-stu-id="e7205-115">Basic information about an item.</span></span> |
+| [<span data-ttu-id="e7205-116">**PRJ_NOTIFICATION_MAPPING**</span><span class="sxs-lookup"><span data-stu-id="e7205-116">**PRJ_NOTIFICATION_MAPPING**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_notification_mapping) | <span data-ttu-id="e7205-117">Descrive un mapping di notifica, ovvero un'associazione tra una directory (denominata "radice di notifica") e un set di notifiche, espresso come maschera di bit.</span><span class="sxs-lookup"><span data-stu-id="e7205-117">Describes a notification mapping, which is a pairing between a directory (referred to as a "notification root") and a set of notifications, expressed as a bit mask.</span></span> |
+| [<span data-ttu-id="e7205-118">**PRJ_NOTIFICATION_PARAMETERS**</span><span class="sxs-lookup"><span data-stu-id="e7205-118">**PRJ_NOTIFICATION_PARAMETERS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_notification_parameters) | <span data-ttu-id="e7205-119">Parametri aggiuntivi per le notifiche.</span><span class="sxs-lookup"><span data-stu-id="e7205-119">Extra parameters for notifications.</span></span> |
+| [<span data-ttu-id="e7205-120">**PRJ_PLACEHOLDER_INFO**</span><span class="sxs-lookup"><span data-stu-id="e7205-120">**PRJ_PLACEHOLDER_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_placeholder_info) | <span data-ttu-id="e7205-121">Buffer di metadati per il file o la directory segnaposto.</span><span class="sxs-lookup"><span data-stu-id="e7205-121">A buffer of metadata for the placeholder file or directory.</span></span> |
+| [<span data-ttu-id="e7205-122">**PRJ_PLACEHOLDER_VERSION_INFO**</span><span class="sxs-lookup"><span data-stu-id="e7205-122">**PRJ_PLACEHOLDER_VERSION_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_placeholder_version_info) | <span data-ttu-id="e7205-123">Informazioni che identificano in modo univoco il contenuto di un file segnaposto.</span><span class="sxs-lookup"><span data-stu-id="e7205-123">Information that uniquely identifies the contents of a placeholder file.</span></span> |
+| [<span data-ttu-id="e7205-124">**PRJ_STARTVIRTUALIZING_OPTIONS**</span><span class="sxs-lookup"><span data-stu-id="e7205-124">**PRJ_STARTVIRTUALIZING_OPTIONS**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_startvirtualizing_options) | <span data-ttu-id="e7205-125">Opzioni da fornire quando si avvia un'istanza di virtualizzazione.</span><span class="sxs-lookup"><span data-stu-id="e7205-125">Options to provide when starting a virtualization instance.</span></span> |
+| [<span data-ttu-id="e7205-126">**PRJ_VIRTUALIZATION_INSTANCE_INFO**</span><span class="sxs-lookup"><span data-stu-id="e7205-126">**PRJ_VIRTUALIZATION_INSTANCE_INFO**</span></span>](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_virtualization_instance_info) | <span data-ttu-id="e7205-127">Informazioni su un'istanza di virtualizzazione.</span><span class="sxs-lookup"><span data-stu-id="e7205-127">Information about a virtualization instance.</span></span> |
