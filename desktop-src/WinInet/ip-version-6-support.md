@@ -1,0 +1,50 @@
+---
+title: Supporto IP versione 6
+description: A partire da IE7 e versioni successive, WinINet supporta i valori letterali IPv6 nel nome host e il componente Authority dell'URI.
+ms.assetid: cbbb9f93-15b0-4017-ac39-8a396203532e
+keywords:
+- Supporto IP versione 6
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: f5ed0857d9a0968bcd3e6c18e54623fb0c7d86cb
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104399530"
+---
+# <a name="ip-version-6-support"></a><span data-ttu-id="4579a-104">Supporto IP versione 6</span><span class="sxs-lookup"><span data-stu-id="4579a-104">IP Version 6 Support</span></span>
+
+<span data-ttu-id="4579a-105">A partire da IE7 e versioni successive, WinINet supporta i valori letterali IPv6 nel nome host e il componente Authority dell'URI.</span><span class="sxs-lookup"><span data-stu-id="4579a-105">Starting with IE7 and above, WinINet supports IPv6 literals in the hostname, and the authority component of the URI.</span></span> <span data-ttu-id="4579a-106">WinINet supporta inoltre l'utilizzo di valori letterali IPv6 in parti rilevanti del protocollo HTTP, ad esempio nell'intestazione Location.</span><span class="sxs-lookup"><span data-stu-id="4579a-106">WinINet also supports the use of IPv6 literals in relevant portions of the HTTP protocol, such as in the Location header.</span></span>
+
+## <a name="hostname-ipv6-literals-and-uri-components"></a><span data-ttu-id="4579a-107">Valori letterali IPv6 hostname e componenti URI</span><span class="sxs-lookup"><span data-stu-id="4579a-107">Hostname IPv6 Literals and URI Components</span></span>
+
+<span data-ttu-id="4579a-108">WinINet implementa i valori letterali IPv6 secondo le specifiche in RFC 3513.</span><span class="sxs-lookup"><span data-stu-id="4579a-108">WinINet implements IPv6 literals according to the specifications in RFC 3513.</span></span> <span data-ttu-id="4579a-109">Come specificato in questa RFC, i valori letterali IPv6 in un URI devono essere racchiusi tra parentesi quadre.</span><span class="sxs-lookup"><span data-stu-id="4579a-109">As specified in this RFC, IPv6 literals in a URI must be enclosed in brackets.</span></span> <span data-ttu-id="4579a-110">Ad esempio, https:// \[ :: 1 \] /è un URI IPv6 valido, il form senza parentesi quadre ( https://::1/) non è valido.</span><span class="sxs-lookup"><span data-stu-id="4579a-110">For example, https://\[::1\]/ is a valid IPv6 URI; the form without brackets (https://::1/) is not valid.</span></span> <span data-ttu-id="4579a-111">I valori letterali IPv6 hostname che non fanno parte dell'URI, tuttavia, non devono essere racchiusi tra parentesi quadre. ogni form è accettabile per WinINet.</span><span class="sxs-lookup"><span data-stu-id="4579a-111">Hostname IPv6 literals that are not part of the URI, however, do not need to be enclosed in the brackets; either form is acceptable to WinINet.</span></span> <span data-ttu-id="4579a-112">Ad esempio, ":: 1" e " \[ :: 1 \] " sono formati accettabili di valori letterali hostname IPv6.</span><span class="sxs-lookup"><span data-stu-id="4579a-112">For example, both "::1" and "\[::1\]" are acceptable forms of IPv6 hostname literals.</span></span> <span data-ttu-id="4579a-113">Altre API, ad esempio l'API WinSock, accetteranno anche entrambi i moduli.</span><span class="sxs-lookup"><span data-stu-id="4579a-113">Other APIs, such as the WinSock API, will also accept both forms.</span></span> <span data-ttu-id="4579a-114">Pertanto, le applicazioni devono essere preparate a gestire entrambe le forme di valori letterali del nome host IPv6.</span><span class="sxs-lookup"><span data-stu-id="4579a-114">Thus applications should be prepared to handle both forms of IPv6 hostname literals.</span></span>
+
+## <a name="scope-id"></a><span data-ttu-id="4579a-115">ID ambito</span><span class="sxs-lookup"><span data-stu-id="4579a-115">Scope ID</span></span>
+
+<span data-ttu-id="4579a-116">L'indirizzo letterale IPv6 nell'URI può includere un ID ambito.</span><span class="sxs-lookup"><span data-stu-id="4579a-116">The IPv6 literal address in the URI may include a scope ID.</span></span> <span data-ttu-id="4579a-117">Un ID ambito può essere un ID di interfaccia, ad esempio \[ FE80:: 1% 1 \] .</span><span class="sxs-lookup"><span data-stu-id="4579a-117">A scope ID can be an interface ID such as \[FE80::1%1\].</span></span> <span data-ttu-id="4579a-118">Lo standard URI, documentato in RFC 3986, non definisce la sintassi per l'ID ambito e l'URI viene considerato non uniforme quando è presente l'ID ambito.</span><span class="sxs-lookup"><span data-stu-id="4579a-118">The URI standard, documented in RFC 3986, does not define the syntax for the scope ID, and the URI is considered non-uniform when the scope ID is present.</span></span> <span data-ttu-id="4579a-119">Tuttavia, WinINet accetta un ID ambito nel componente Authority dell'URI e nel valore letterale IPv6 del nome host.</span><span class="sxs-lookup"><span data-stu-id="4579a-119">However, WinINet accepts a scope ID in the authority component of the URI, and in the hostname IPv6 literal.</span></span>
+
+<span data-ttu-id="4579a-120">Il carattere di percentuale (%) nell'indirizzo letterale IPv6 deve essere preceduto da un carattere di escape percentuale se presente nell'URI.</span><span class="sxs-lookup"><span data-stu-id="4579a-120">The percent character (%) in the IPv6 literal address must be percent escaped when present in the URI.</span></span> <span data-ttu-id="4579a-121">L'ID ambito FE80:: 2% 3, ad esempio, deve essere visualizzato nell'URI come "https:// \[ FE80:: 2% 253 \] /", dove %25 è il carattere di percentuale con codifica esadecimale (%).</span><span class="sxs-lookup"><span data-stu-id="4579a-121">For example, the scope ID FE80::2%3, must appear in the URI as "https://\[FE80::2%253\]/", where %25 is the hex encoded percent character (%).</span></span> <span data-ttu-id="4579a-122">Se l'applicazione recupera l'URI da un'API Unicode, ad esempio l'API Winsock [**WSAAddressToString**](/windows/desktop/api/winsock2/nf-winsock2-wsaaddresstostringa) , l'applicazione deve aggiungere la versione di escape del carattere di percentuale (%) nel nome host dell'URI.</span><span class="sxs-lookup"><span data-stu-id="4579a-122">If the application retrieves the URI from a Unicode API, such as the Winsock [**WSAAddressToString**](/windows/desktop/api/winsock2/nf-winsock2-wsaaddresstostringa) API, the application must add the escaped version of the percent character (%) in the hostname of the URI.</span></span> <span data-ttu-id="4579a-123">Per creare la versione di escape dell'URI, le applicazioni chiamano [**InternetCreateUrl**](/windows/desktop/api/Wininet/nf-wininet-internetcreateurla) con il parametro *dwFlags* impostato sull' **\_ \_ autorità di escape ICU** e il nome host IPv6 specificato nella struttura dei componenti URL specificata nel parametro *lpUrlComponents* .</span><span class="sxs-lookup"><span data-stu-id="4579a-123">To create the escaped version of the URI, applications call [**InternetCreateUrl**](/windows/desktop/api/Wininet/nf-wininet-internetcreateurla) with the *dwFlags* parameter set to **ICU\_ESCAPE\_AUTHORITY**, and the IPv6 hostname specified in the URL components structure specified in the *lpUrlComponents* parameter.</span></span>
+
+<span data-ttu-id="4579a-124">Per tutte le operazioni sui socket, WinINet usa l'ID ambito.</span><span class="sxs-lookup"><span data-stu-id="4579a-124">For all sockets operations, WinINet uses the scope ID.</span></span> <span data-ttu-id="4579a-125">Tuttavia, poiché l'ID ambito ha solo l'importanza dell'host locale, non viene inviato come parte delle intestazioni del protocollo HTTP nella richiesta.</span><span class="sxs-lookup"><span data-stu-id="4579a-125">However, because the scope ID has only local host significance, it is not sent as part of the HTTP protocol headers in the request.</span></span> <span data-ttu-id="4579a-126">Ad esempio, la chiamata a [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) viene chiamata con l'URL seguente nel parametro *lpszURL* .</span><span class="sxs-lookup"><span data-stu-id="4579a-126">For example, the call to [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) is called with the following URL in the *lpszUrl* parameter.</span></span>
+
+``` syntax
+https://[fec0::2%251]:80/path.htm
+```
+
+<span data-ttu-id="4579a-127">La parte relativa all'ID ambito dell'URL viene rimossa da WinINet quando viene inviata la richiesta HTTP per questo URL.</span><span class="sxs-lookup"><span data-stu-id="4579a-127">The scope ID portion of the URL is removed by WinINet when the HTTP request is sent for this URL.</span></span> <span data-ttu-id="4579a-128">La richiesta contiene le intestazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="4579a-128">The request contains the following headers:</span></span>
+
+``` syntax
+GET path.htm HTTP/1.1
+Host: [fec0::2]
+```
+
+> [!Note]  
+> <span data-ttu-id="4579a-129">WinINet non supporta le implementazioni del server.</span><span class="sxs-lookup"><span data-stu-id="4579a-129">WinINet does not support server implementations.</span></span> <span data-ttu-id="4579a-130">Inoltre, non deve essere utilizzato da un servizio.</span><span class="sxs-lookup"><span data-stu-id="4579a-130">In addition, it should not be used from a service.</span></span> <span data-ttu-id="4579a-131">Per le implementazioni o i servizi del server, usare i [Servizi http di Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).</span><span class="sxs-lookup"><span data-stu-id="4579a-131">For server implementations or services use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).</span></span>
+
+ 
+
+ 
+
+ 
