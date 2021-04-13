@@ -1,0 +1,164 @@
+---
+title: Group - elemento
+description: Rappresenta un controllo gruppo che funge da contenitore per un gruppo di elementi.
+ms.assetid: b0d3fcda-7165-40f4-9e57-c7ab88b31711
+keywords:
+- Barra multifunzione Windows elemento gruppo
+topic_type:
+- apiref
+api_name:
+- Group
+api_type:
+- Schema
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: 3a42e9efb30397862037426041420d96be8fd387
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104399350"
+---
+# <a name="group-element"></a>Group - elemento
+
+Rappresenta un controllo [gruppo](windowsribbon-controls-group.md) che funge da contenitore per un gruppo di elementi.
+
+## <a name="usage"></a>Utilizzo
+
+``` syntax
+<Group
+  SizeDefinition = "xs:string"
+  ApplicationModes = "xs:string"
+  CommandName = "xs:positiveInteger or xs:string">
+  child elements
+</Group>
+```
+
+## <a name="attributes"></a>Attributi
+
+
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attributo</th>
+<th>Type</th>
+<th>Obbligatoria</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ApplicationModes</strong><br/></td>
+<td>xs:string<br/></td>
+<td>No<br/></td>
+<td><dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e vengono ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+</tr>
+<tr class="even">
+<td><strong>CommandName</strong><br/></td>
+<td>XS: positiveInteger o xs: String<br/></td>
+<td>No<br/></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+</tr>
+<tr class="odd">
+<td><strong>SizeDefinition</strong><br/></td>
+<td>xs:string<br/></td>
+<td>No<br/></td>
+<td>Quando specificato, il valore di <em>SizeDefinition</em> è vincolato a uno dei modelli di <a href="windowsribbon-templates.md">layout</a> definiti dal framework della barra multifunzione. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Qualsiasi sequenza di zero o più caratteri.<br/> La lunghezza massima è unbounded.<br/> </dd> </dl></td>
+</tr>
+</tbody>
+</table>
+
+
+
+## <a name="child-elements"></a>Elementi figlio
+
+
+
+| Elemento                                                                             | Descrizione                                        |
+|-------------------------------------------------------------------------------------|----------------------------------------------------|
+| [**Button**](windowsribbon-element-button.md)<br/>                           | Può essere presente una o più volte<br/> <br/> |
+| [**Casella**](windowsribbon-element-checkbox.md)<br/>                       | Può essere presente una o più volte<br/> <br/> |
+| [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Può essere presente una o più volte<br/> <br/> |
+| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>               | Può essere presente una o più volte<br/> <br/> |
+| [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>           | Può essere presente una o più volte<br/> <br/> |
+| [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>         | Può essere presente una o più volte<br/> <br/> |
+| [**FontControl**](windowsribbon-element-fontcontrol.md)<br/>                 | Può verificarsi al massimo una volta<br/> <br/>      |
+| [**Inribbongallery**](windowsribbon-element-inribbongallery.md)<br/>         | Può essere presente una o più volte<br/> <br/> |
+| [**SizeDefinition**](windowsribbon-element-sizedefinition.md)<br/>           | Può verificarsi al massimo una volta<br/> <br/>      |
+| [**Spinner**](windowsribbon-element-spinner.md)<br/>                         | Può essere presente una o più volte<br/> <br/> |
+| [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                 | Può essere presente una o più volte<br/> <br/> |
+| [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/>   | Può essere presente una o più volte<br/> <br/> |
+| [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/>               | Può essere presente una o più volte<br/> <br/> |
+
+
+
+## <a name="parent-elements"></a>Elementi padre
+
+
+
+| Elemento                                             |
+|-----------------------------------------------------|
+| [**Scheda**](windowsribbon-element-tab.md)<br/> |
+
+
+
+## <a name="remarks"></a>Commenti
+
+facoltativo.
+
+Può essere presente una o più volte per ogni elemento di [**tabulazione**](windowsribbon-element-tab.md) .
+
+[**Tab**](windowsribbon-element-tab.md) supporta le [modalità di applicazione](ribbon-applicationmodes.md).
+
+Il markup della barra multifunzione è valido solo quando gli elementi figlio del **gruppo** corrispondono al modello specificato per *SizeDefinition*.
+
+## <a name="examples"></a>Esempio
+
+Nell'esempio di codice riportato di seguito viene illustrato l'utilizzo di un modello personalizzato in un **gruppo**.
+
+
+```
+<Group CommandName="cmdCustomGroup1" SizeDefinition="CustomTemplate">
+  <Button CommandName="cmdCommand1" />
+</Group>
+```
+
+
+
+## <a name="element-information"></a>Informazioni sull'elemento
+
+
+
+|                                     |           |
+|-------------------------------------|-----------|
+| Sistema minimo supportato<br/> | Windows 7 |
+| Può essere vuoto                        | No        |
+
+
+
+## <a name="see-also"></a>Vedere anche
+
+<dl> <dt>
+
+[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+</dt> <dt>
+
+[Controllo gruppo](windowsribbon-controls-group.md)
+</dt> <dt>
+
+[**Modalità selettore**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
+</dt> </dl>
+
+ 
+
