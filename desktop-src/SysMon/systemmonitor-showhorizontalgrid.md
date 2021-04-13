@@ -1,0 +1,77 @@
+---
+title: Proprietà SystemMonitor. ShowHorizontalGrid
+description: Recupera o imposta un valore che determina se le linee griglia orizzontali vengono visualizzate nel grafico.
+ms.assetid: 0208666b-1966-49a2-b30b-f03195b8fc81
+keywords:
+- Proprietà ShowHorizontalGrid SysMon
+- Proprietà ShowHorizontalGrid SysMon, classe SystemMonitor
+- Classe SystemMonitor SysMon, proprietà ShowHorizontalGrid
+topic_type:
+- apiref
+api_name:
+- SystemMonitor.ShowHorizontalGrid
+api_location:
+- Sysmon.ocx
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: ce9437aa087f34ba5830b129ad7c14fa86bd2b0e
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104400414"
+---
+# <a name="systemmonitorshowhorizontalgrid-property"></a>Proprietà SystemMonitor. ShowHorizontalGrid
+
+Recupera o imposta un valore che determina se le linee griglia orizzontali vengono visualizzate nel grafico.
+
+Questa proprietà è di sola lettura.
+
+## <a name="syntax"></a>Sintassi
+
+
+```VB
+Property ShowHorizontalGrid As Boolean
+```
+
+
+
+## <a name="property-value"></a>Valore proprietà
+
+True indica che le linee griglia orizzontali vengono visualizzate nel grafico; in caso contrario, false. Il valore predefinito di questa proprietà è false.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|---------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
+| Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**SystemMonitor**](systemmonitor.md)
+</dt> <dt>
+
+[**SystemMonitor. GridColor**](systemmonitor-gridcolor.md)
+</dt> <dt>
+
+[**SystemMonitor. ShowVerticalGrid**](systemmonitor-showverticalgrid.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
