@@ -1,0 +1,47 @@
+---
+description: Notifiche di fine flusso
+ms.assetid: cf2b13bc-5b54-4ac7-8a33-7434126fdf31
+title: Notifiche di fine flusso
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 53fcdfef1225aa5b93b56aeaa0d8ae9d0a8550c9
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104225466"
+---
+# <a name="end-of-stream-notifications"></a><span data-ttu-id="f050e-103">Notifiche di fine flusso</span><span class="sxs-lookup"><span data-stu-id="f050e-103">End-of-Stream Notifications</span></span>
+
+<span data-ttu-id="f050e-104">Quando viene eseguito un filtro di origine che invia dati, viene chiamato il metodo [**Ipin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) sul pin di input downstream.</span><span class="sxs-lookup"><span data-stu-id="f050e-104">When a source filter is done sending data, it calls the [**IPin::EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) method on the downstream input pin.</span></span> <span data-ttu-id="f050e-105">Il filtro downstream propaga la chiamata al filtro successivo e così via.</span><span class="sxs-lookup"><span data-stu-id="f050e-105">The downstream filter propagates the call to the next filter, and so on.</span></span> <span data-ttu-id="f050e-106">Quando la chiamata **EndOfStream** raggiunge il renderer, il renderer Invia un evento [**EC \_ complete**](ec-complete.md) al gestore del grafico dei filtri.</span><span class="sxs-lookup"><span data-stu-id="f050e-106">When the **EndOfStream** call reaches the renderer, the renderer sends an [**EC\_COMPLETE**](ec-complete.md) event to the Filter Graph Manager.</span></span> <span data-ttu-id="f050e-107">Se il renderer ha più pin di input, recapita l' \_ evento di completamento EC dopo che ogni pin di input ha ricevuto la notifica di fine del flusso.</span><span class="sxs-lookup"><span data-stu-id="f050e-107">If the renderer has multiple input pins, it delivers the EC\_COMPLETE event after every input pin has received the end-of-stream notification.</span></span>
+
+<span data-ttu-id="f050e-108">Un filtro deve serializzare le chiamate [**EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) con altre chiamate di streaming, ad esempio [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive).</span><span class="sxs-lookup"><span data-stu-id="f050e-108">A filter must serialize [**EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) calls with other streaming calls, such as [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive).</span></span> <span data-ttu-id="f050e-109">In altre parole, il filtro downstream deve ricevere sempre le chiamate nell'ordine corretto.</span><span class="sxs-lookup"><span data-stu-id="f050e-109">(In other words, the downstream filter must always receive the calls in the correct order.)</span></span>
+
+<span data-ttu-id="f050e-110">In alcuni casi, un filtro downstream potrebbe rilevare la fine del flusso prima che il filtro di origine lo faccia.</span><span class="sxs-lookup"><span data-stu-id="f050e-110">In some cases, a downstream filter might detect the end of the stream before the source filter does.</span></span> <span data-ttu-id="f050e-111">È ad esempio possibile che il filtro downstream stia analizzando il flusso. In tal caso, il filtro downstream può inviare la notifica di fine flusso, nel qual caso deve restituire S \_ false da [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) fino a quando il grafico non viene arrestato o scaricato.</span><span class="sxs-lookup"><span data-stu-id="f050e-111">(For example, the downstream filter might be parsing the stream.) In that case, the downstream filter can send the end-of-stream notification, in which case it should return S\_FALSE from [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) until the graph stops or flushes.</span></span> <span data-ttu-id="f050e-112">Il \_ valore restituito false informa il filtro di origine per arrestare l'invio di dati.</span><span class="sxs-lookup"><span data-stu-id="f050e-112">The S\_FALSE return value informs the source filter to stop sending data.</span></span>
+
+### <a name="default-handling-of-ec_complete"></a><span data-ttu-id="f050e-113">Gestione predefinita di EC \_ completata</span><span class="sxs-lookup"><span data-stu-id="f050e-113">Default Handling of EC\_COMPLETE</span></span>
+
+<span data-ttu-id="f050e-114">Per impostazione predefinita, il gestore del grafo del filtro non trasmette ogni \_ evento di completamento EC all'applicazione.</span><span class="sxs-lookup"><span data-stu-id="f050e-114">By default, the Filter Graph Manager does not forward every EC\_COMPLETE event to the application.</span></span> <span data-ttu-id="f050e-115">Al contrario, attende che tutti i flussi segnalino EC \_ completato e quindi Invia un singolo evento EC \_ complete.</span><span class="sxs-lookup"><span data-stu-id="f050e-115">Instead, it waits until all streams have signaled EC\_COMPLETE and then sends a single EC\_COMPLETE event.</span></span> <span data-ttu-id="f050e-116">Quindi, l'applicazione riceve l'evento dopo il completamento di ogni flusso.</span><span class="sxs-lookup"><span data-stu-id="f050e-116">Thus, the application receives the event after every stream has completed.</span></span>
+
+<span data-ttu-id="f050e-117">Per determinare il numero di flussi, il gestore del grafico dei filtri conta il numero di filtri che supportano la ricerca (tramite [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) o [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition)) e un pin di input sottoposto a *rendering* , definito come un pin di input senza output corrispondenti.</span><span class="sxs-lookup"><span data-stu-id="f050e-117">To determine the number of streams, the Filter Graph Manager counts the number of filters that support seeking (through [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) or [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition)) and have a *rendered* input pin, which is defined as an input pin with no corresponding outputs.</span></span> <span data-ttu-id="f050e-118">Il gestore del grafico dei filtri determina se il PIN viene sottoposto a rendering in uno dei due modi seguenti:</span><span class="sxs-lookup"><span data-stu-id="f050e-118">The Filter Graph Manager determines whether a pin is rendered in one of two ways:</span></span>
+
+-   <span data-ttu-id="f050e-119">Il metodo [**Ipin:: QueryInternalConnections**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryinternalconnections) del pin restituisce zero nel parametro *nPin* .</span><span class="sxs-lookup"><span data-stu-id="f050e-119">The pin's [**IPin::QueryInternalConnections**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryinternalconnections) method returns zero in the *nPin* parameter.</span></span>
+-   <span data-ttu-id="f050e-120">Il filtro espone l'interfaccia [**IAMFilterMiscFlags**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags) e restituisce il \_ filtro am \_ \_ flag varie \_ è il \_ flag RENDERER.</span><span class="sxs-lookup"><span data-stu-id="f050e-120">The filter exposes the [**IAMFilterMiscFlags**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags) interface and returns the AM\_FILTER\_MISC\_FLAGS\_IS\_RENDERER flag.</span></span>
+
+### <a name="end-of-stream-notifications-in-pull-mode"></a><span data-ttu-id="f050e-121">Notifiche di fine flusso in modalità pull</span><span class="sxs-lookup"><span data-stu-id="f050e-121">End-of-Stream Notifications in Pull Mode</span></span>
+
+<span data-ttu-id="f050e-122">In una connessione [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) il filtro di origine non invia una notifica di fine del flusso.</span><span class="sxs-lookup"><span data-stu-id="f050e-122">In an [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) connection, the source filter does not send an end-of-stream notification.</span></span> <span data-ttu-id="f050e-123">Instread, questa operazione viene eseguita dal filtro downstream, che in genere è un filtro del parser.</span><span class="sxs-lookup"><span data-stu-id="f050e-123">Instread, this is done by the downstream filter, which is typically a parser filter.</span></span> <span data-ttu-id="f050e-124">Il parser Invia la chiamata [**EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) downstream.</span><span class="sxs-lookup"><span data-stu-id="f050e-124">The parser sends the [**EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) call downstream.</span></span> <span data-ttu-id="f050e-125">Non invia un upstream al filtro di origine.</span><span class="sxs-lookup"><span data-stu-id="f050e-125">It does not send one upstream to the source filter.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="f050e-126">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="f050e-126">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="f050e-127">Distribuzione della fine del flusso</span><span class="sxs-lookup"><span data-stu-id="f050e-127">Delivering the End of Stream</span></span>](delivering-the-end-of-stream.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
