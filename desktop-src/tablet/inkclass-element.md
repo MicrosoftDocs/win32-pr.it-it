@@ -1,0 +1,55 @@
+---
+description: Rappresenta i tratti di input penna raccolti in uno spazio di input penna.
+ms.assetid: 7c064ff9-e0d9-4be4-be83-c10bbfd71134
+title: Elemento InkClass
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 4ffd2e720483bf7153b59e5876cf2f3d0e2aad6a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104525957"
+---
+# <a name="inkclass-element"></a><span data-ttu-id="70270-103">Elemento InkClass</span><span class="sxs-lookup"><span data-stu-id="70270-103">InkClass Element</span></span>
+
+<span data-ttu-id="70270-104">Rappresenta i tratti di input penna raccolti in uno spazio di input penna.</span><span class="sxs-lookup"><span data-stu-id="70270-104">Represents the collected strokes of ink within an ink space.</span></span>
+
+## <a name="definition"></a><span data-ttu-id="70270-105">Definizione</span><span class="sxs-lookup"><span data-stu-id="70270-105">Definition</span></span>
+
+``` syntax
+<xs:element name="InkClass" minOccurs="0" type="xs:string" />
+```
+
+## <a name="parent-elements"></a><span data-ttu-id="70270-106">Elementi padre</span><span class="sxs-lookup"><span data-stu-id="70270-106">Parent Elements</span></span>
+
+[<span data-ttu-id="70270-107">**Disegno**</span><span class="sxs-lookup"><span data-stu-id="70270-107">**Drawing**</span></span>](drawing-element.md)
+
+## <a name="child-elements"></a><span data-ttu-id="70270-108">Elementi figlio</span><span class="sxs-lookup"><span data-stu-id="70270-108">Child Elements</span></span>
+
+<span data-ttu-id="70270-109">Nessuna.</span><span class="sxs-lookup"><span data-stu-id="70270-109">None.</span></span>
+
+## <a name="attributes"></a><span data-ttu-id="70270-110">Attributi</span><span class="sxs-lookup"><span data-stu-id="70270-110">Attributes</span></span>
+
+<span data-ttu-id="70270-111">Nessuna.</span><span class="sxs-lookup"><span data-stu-id="70270-111">None.</span></span>
+
+## <a name="element-information"></a><span data-ttu-id="70270-112">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="70270-112">Element Information</span></span>
+
+
+
+|              |                                            |
+|--------------|--------------------------------------------|
+| <span data-ttu-id="70270-113">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="70270-113">Element type</span></span> | <span data-ttu-id="70270-114">**xs:string**</span><span class="sxs-lookup"><span data-stu-id="70270-114">**xs:string**</span></span>                              |
+| <span data-ttu-id="70270-115">Spazio dei nomi</span><span class="sxs-lookup"><span data-stu-id="70270-115">Namespace</span></span>    | <span data-ttu-id="70270-116">urn: schemas-microsoft-com: TabletPC: RichInk</span><span class="sxs-lookup"><span data-stu-id="70270-116">urn:schemas-microsoft-com:tabletpc:richink</span></span> |
+| <span data-ttu-id="70270-117">Nome schema</span><span class="sxs-lookup"><span data-stu-id="70270-117">Schema name</span></span>  | <span data-ttu-id="70270-118">Lettore Journal</span><span class="sxs-lookup"><span data-stu-id="70270-118">Journal Reader</span></span>                             |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
