@@ -1,0 +1,55 @@
+---
+title: Funzioni di messaggio (gestione della rete)
+description: Le funzioni del messaggio di gestione della rete inviano messaggi e gestiscono gli alias dei messaggi. Le funzioni del messaggio sono elencate di seguito.
+ms.assetid: 9face737-3472-4a53-97b6-e861a60ee96a
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3629a281637fe4ecd0c937ce0c7504beac8e11d2
+ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "104400148"
+---
+# <a name="message-functions-network-management"></a><span data-ttu-id="4d044-104">Funzioni di messaggio (gestione della rete)</span><span class="sxs-lookup"><span data-stu-id="4d044-104">Message Functions (Network Management)</span></span>
+
+<span data-ttu-id="4d044-105">\[Le funzioni di messaggio non sono supportate a partire da Windows Vista, perché i servizi Alerter e Messenger non sono supportati.\]</span><span class="sxs-lookup"><span data-stu-id="4d044-105">\[The message functions are not supported as of Windows Vista because the alerter and messenger services are not supported.\]</span></span>
+
+<span data-ttu-id="4d044-106">Le funzioni del messaggio di gestione della rete inviano messaggi e gestiscono gli alias dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="4d044-106">The network management message functions send messages and maintain message aliases.</span></span> <span data-ttu-id="4d044-107">Le funzioni del messaggio sono elencate di seguito.</span><span class="sxs-lookup"><span data-stu-id="4d044-107">The message functions are listed following.</span></span>
+
+<span data-ttu-id="4d044-108">**Windows Server 2003:** I servizi Alerter e Messenger sono disabilitati per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="4d044-108">**Windows Server 2003:** The alerter and messenger services are disabled by default.</span></span> <span data-ttu-id="4d044-109">È necessario riabilitare i servizi prima di chiamare le funzioni di [avviso](alert-functions.md) di gestione di rete o le funzioni del messaggio di gestione di rete.</span><span class="sxs-lookup"><span data-stu-id="4d044-109">You must re-enable the services before calling the network management [Alert functions](alert-functions.md) or the network management Message functions.</span></span>
+
+
+
+| <span data-ttu-id="4d044-110">Funzione</span><span class="sxs-lookup"><span data-stu-id="4d044-110">Function</span></span>                                               | <span data-ttu-id="4d044-111">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4d044-111">Description</span></span>                                                                     |
+|--------------------------------------------------------|---------------------------------------------------------------------------------|
+| [<span data-ttu-id="4d044-112">**NetMessageBufferSend**</span><span class="sxs-lookup"><span data-stu-id="4d044-112">**NetMessageBufferSend**</span></span>](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagebuffersend)   | <span data-ttu-id="4d044-113">Invia un messaggio a un alias di messaggio registrato.</span><span class="sxs-lookup"><span data-stu-id="4d044-113">Sends a message to a registered message alias.</span></span>                                  |
+| [<span data-ttu-id="4d044-114">**NetMessageNameAdd**</span><span class="sxs-lookup"><span data-stu-id="4d044-114">**NetMessageNameAdd**</span></span>](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenameadd)         | <span data-ttu-id="4d044-115">Registra un alias del messaggio nella tabella dei nomi dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="4d044-115">Registers a message alias in the message name table.</span></span>                            |
+| [<span data-ttu-id="4d044-116">**NetMessageNameDel**</span><span class="sxs-lookup"><span data-stu-id="4d044-116">**NetMessageNameDel**</span></span>](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenamedel)         | <span data-ttu-id="4d044-117">Elimina un alias del messaggio dalla tabella dei nomi dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="4d044-117">Deletes a message alias from the message name table.</span></span>                            |
+| [<span data-ttu-id="4d044-118">**NetMessageNameEnum**</span><span class="sxs-lookup"><span data-stu-id="4d044-118">**NetMessageNameEnum**</span></span>](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenameenum)       | <span data-ttu-id="4d044-119">Elenca tutti gli alias di messaggio archiviati nella tabella dei nomi dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="4d044-119">Lists all the message aliases stored in the message name table.</span></span>                 |
+| [<span data-ttu-id="4d044-120">**NetMessageNameGetInfo**</span><span class="sxs-lookup"><span data-stu-id="4d044-120">**NetMessageNameGetInfo**</span></span>](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenamegetinfo) | <span data-ttu-id="4d044-121">Restituisce informazioni su un particolare alias del messaggio nella tabella dei nomi dei messaggi.</span><span class="sxs-lookup"><span data-stu-id="4d044-121">Returns information about a particular message alias in the message name table.</span></span> |
+
+
+
+ 
+
+<span data-ttu-id="4d044-122">Un *messaggio* è un buffer di dati di testo inviati a un utente o a un'applicazione sulla rete.</span><span class="sxs-lookup"><span data-stu-id="4d044-122">A *message* is a buffer of text data sent to a user or application on the network.</span></span> <span data-ttu-id="4d044-123">Per ricevere un messaggio, è necessario che un utente o un'applicazione registri un alias di messaggio nella tabella dei nomi dei messaggi del computer.</span><span class="sxs-lookup"><span data-stu-id="4d044-123">To receive a message, a user or application must register a message alias in a computer's table of message names.</span></span> <span data-ttu-id="4d044-124">Per impostazione predefinita, vengono registrati gli alias seguenti: "User", "Machine", "Domain" o " \* " (il dominio corrente del computer).</span><span class="sxs-lookup"><span data-stu-id="4d044-124">The following aliases are registered by default: "user", "machine", "domain", or "\*" (the current domain of the computer).</span></span> <span data-ttu-id="4d044-125">L'alias "dominio" specifica il set di computer con lo stesso nome di dominio definito come dominio o come gruppo di lavoro e in ascolto delle trasmissioni nella stessa subnet.</span><span class="sxs-lookup"><span data-stu-id="4d044-125">The "domain" alias specifies the set of computers that have the same domain name defined as their domain or as their workgroup and listen to broadcasts on the same subnet.</span></span> <span data-ttu-id="4d044-126">Per NetBIOS su TCP/IP, è possibile specificare l'alias "dominio" tra le subnet se il nome di dominio viene risolto da un server dei nomi o se le trasmissioni del datagramma NetBIOS vengono inoltrate tra i router.</span><span class="sxs-lookup"><span data-stu-id="4d044-126">For NetBIOS over TCP/IP, specifying the "domain" alias can also succeed across subnets if the domain name is resolved by a name server, or if NetBIOS datagram broadcasts are forwarded across routers.</span></span> <span data-ttu-id="4d044-127">Pertanto, i messaggi inviati a un dominio non hanno garantito il recapito a tutti i membri del dominio.</span><span class="sxs-lookup"><span data-stu-id="4d044-127">Therefore, messages sent to a domain do not have guaranteed delivery to all members of the domain.</span></span> <span data-ttu-id="4d044-128">È inoltre possibile che alcuni membri del dominio ricevano il messaggio più volte se sono installati più trasporti che supportano NetBIOS.</span><span class="sxs-lookup"><span data-stu-id="4d044-128">It is also possible for some domain members to receive the message multiple times if they have multiple transports installed that support NetBIOS.</span></span>
+
+<span data-ttu-id="4d044-129">È anche possibile registrare un alias del messaggio chiamando la funzione [**NetMessageNameAdd**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenameadd) .</span><span class="sxs-lookup"><span data-stu-id="4d044-129">You can also register a message alias by calling the [**NetMessageNameAdd**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenameadd) function.</span></span> <span data-ttu-id="4d044-130">Una *tabella dei nomi di messaggio* contiene un elenco di alias di messaggi registrati (utenti e applicazioni) autorizzati a ricevere messaggi.</span><span class="sxs-lookup"><span data-stu-id="4d044-130">A *message name table* contains a list of registered message aliases (users and applications) permitted to receive messages.</span></span> <span data-ttu-id="4d044-131">Gli alias registrati nella tabella nome messaggio non fanno distinzione tra maiuscole e minuscole.</span><span class="sxs-lookup"><span data-stu-id="4d044-131">The aliases registered in the message name table are case insensitive.</span></span>
+
+<span data-ttu-id="4d044-132">Il servizio Messenger deve essere in esecuzione nel computer ricevente per visualizzare un messaggio popup quando il messaggio viene ricevuto.</span><span class="sxs-lookup"><span data-stu-id="4d044-132">The messenger service must be running on the receiving computer to display a pop-up message when the message is received.</span></span> <span data-ttu-id="4d044-133">Inoltre, è necessario che il servizio workstation sia in esecuzione nel computer locale.</span><span class="sxs-lookup"><span data-stu-id="4d044-133">In addition, the Workstation service must be running on the local computer.</span></span> <span data-ttu-id="4d044-134">NetBIOS è il meccanismo di trasporto utilizzato tra il mittente e il destinatario.</span><span class="sxs-lookup"><span data-stu-id="4d044-134">NetBIOS is the transport mechanism used between the sender and receiver.</span></span>
+
+<span data-ttu-id="4d044-135">Le funzioni di messaggio sono disponibili a due livelli di informazioni:</span><span class="sxs-lookup"><span data-stu-id="4d044-135">Message functions are available at two information levels:</span></span>
+
+-   [<span data-ttu-id="4d044-136">**\_Informazioni messaggio \_ 0**</span><span class="sxs-lookup"><span data-stu-id="4d044-136">**MSG\_INFO\_0**</span></span>](/windows/desktop/api/Lmmsg/ns-lmmsg-msg_info_0)
+-   [<span data-ttu-id="4d044-137">**\_Informazioni messaggio \_ 1**</span><span class="sxs-lookup"><span data-stu-id="4d044-137">**MSG\_INFO\_1**</span></span>](/windows/desktop/api/Lmmsg/ns-lmmsg-msg_info_1)
+
+<span data-ttu-id="4d044-138">Il livello di informazioni **msg \_ info \_ 1** esiste solo per la compatibilità.</span><span class="sxs-lookup"><span data-stu-id="4d044-138">The **MSG\_INFO\_1** information level exists only for compatibility.</span></span> <span data-ttu-id="4d044-139">Il servizio Messenger non trasmette i nomi né consente l'invio dei nomi.</span><span class="sxs-lookup"><span data-stu-id="4d044-139">The messenger service does not forward names or allow names to be forwarded to it.</span></span>
+
+ 
+
+ 
+
+
+
+
