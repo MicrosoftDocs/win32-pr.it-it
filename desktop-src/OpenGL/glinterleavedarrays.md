@@ -1,0 +1,175 @@
+---
+title: funzione glInterleavedArrays (GL. h)
+description: La funzione glInterleavedArrays specifica simultaneamente e Abilita diverse matrici Interleaved in una matrice di aggregazione più grande.
+ms.assetid: f1133949-d755-43e3-bf29-8e4c7fb17980
+keywords:
+- funzione glInterleavedArrays OpenGL
+topic_type:
+- apiref
+api_name:
+- glInterleavedArrays
+api_location:
+- opengl32.dll
+api_type:
+- DllExport
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 41403210e78d1a65dd700561243846d6e45bad67
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104400354"
+---
+# <a name="glinterleavedarrays-function"></a>glInterleavedArrays (funzione)
+
+La funzione **glInterleavedArrays** specifica simultaneamente e Abilita diverse matrici Interleaved in una matrice di aggregazione più grande.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+void WINAPI glInterleavedArrays(
+         GLenum  format,
+         GLsizei stride,
+   const GLvoid  *pointer
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*format* 
+</dt> <dd>
+
+Tipo di matrice da abilitare. Il parametro può assumere uno dei seguenti valori simbolici: GL \_ V2F, GL \_ V3F, GL \_ C4UB \_ V2F, GL \_ C4UB \_ V3F, GL \_ C3F V3F, GL N3F \_ \_ \_ V3F, GL \_ C4F \_ N3F V3F \_ , GL \_ T2F V3F, GL \_ \_ T4F \_ V4F, GL T2F C4UB V3F \_ \_ \_ , GL T2F C3F V3F \_ \_ \_ , GL T2F N3F V3F \_ \_ \_ , GL \_ T2F C4F N3F V3F \_ \_ \_ , o GL \_ T4F \_ C4F \_ \_ N3F V4F.
+
+</dd> <dt>
+
+*stride* 
+</dt> <dd>
+
+Offset in byte tra ogni elemento della matrice di aggregazione.
+
+</dd> <dt>
+
+*indicatore di misura* 
+</dt> <dd>
+
+Puntatore al primo elemento di una matrice di aggregazione.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Questa funzione non restituisce un valore.
+
+## <a name="error-codes"></a>Codici di errore
+
+I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+
+
+
+| Nome                                                                                                  | Significato                                                                                                                               |
+|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *Format* non è un valore accettato.<br/>                                                                                        |
+| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | *stride* è un valore negativo.<br/>                                                                                             |
+| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+
+
+
+## <a name="remarks"></a>Commenti
+
+Con la funzione **glInterleavedArrays** , è possibile specificare contemporaneamente e abilitare diverse matrici di colore, normali, di trama e di vertex con interfoliazione i cui elementi fanno parte di un elemento di matrice di aggregazione più grande. Per alcune architetture di memoria, questa operazione è più efficiente rispetto alla specifica delle matrici separatamente.
+
+Se il parametro *stride* è zero, gli elementi della matrice di aggregazione vengono archiviati consecutivamente; in caso contrario, i byte *stride* si verificano tra gli elementi della matrice
+
+Il parametro *Format* funge da chiave che descrive come estrarre singole matrici dalla matrice di aggregazione:
+
+-   Se *Format* contiene una T, le coordinate di trama vengono estratte dalla matrice Interleaved.
+-   Se è presente C, verranno estratti i valori dei colori.
+-   Se N è presente, vengono estratte le coordinate normali.
+-   Vengono sempre estratte le coordinate del vertice.
+-   I numeri 2, 3 e 4 indicano il numero di valori estratti.
+-   F indica che i valori vengono estratti come valori a virgola mobile.
+-   Se 4UB segue il linguaggio C, i colori possono essere estratti anche come 4 byte senza segno. Se un colore viene estratto come 4 byte senza segno, l'elemento della matrice Vertex che segue si trova in corrispondenza del primo indirizzo a virgola mobile possibile allineato.
+
+Se si chiama **glInterleavedArrays** durante la compilazione di un elenco di visualizzazione, questo non viene compilato nell'elenco ma viene eseguito immediatamente.
+
+Non è possibile includere chiamate a **glInterleavedArrays** in **glDisableClientState** tra le chiamate a [**glBegin**](glbegin.md) e la chiamata corrispondente a **glEnd**.
+
+> [!Note]  
+> La funzione **glInterleavedArrays** è disponibile solo in OpenGL versione 1,1 o successiva.
+
+ 
+
+La funzione **glInterleavedArrays** viene implementata sul lato client senza protocollo. Poiché i parametri della matrice Vertex sono stati lato client, non vengono salvati né ripristinati da [**glPushAttrib**](glpushattrib.md) e **glPopAttrib**. In alternativa, usare [**glPushClientAttrib**](glpushclientattrib.md) e **glPopClientAttrib** .
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
+| Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**glArrayElement**](glarrayelement.md)
+</dt> <dt>
+
+[**glColorPointer**](glcolorpointer.md)
+</dt> <dt>
+
+[**glDrawArrays**](gldrawarrays.md)
+</dt> <dt>
+
+[**glDrawElements**](gldrawelements.md)
+</dt> <dt>
+
+[**glEdgeFlagPointer**](gledgeflagpointer.md)
+</dt> <dt>
+
+[**glEnableClientState**](glenableclientstate.md)
+</dt> <dt>
+
+[**glGetPointerv**](glgetpointerv.md)
+</dt> <dt>
+
+[**glIndexPointer**](glindexpointer.md)
+</dt> <dt>
+
+[**glNormalPointer**](glnormalpointer.md)
+</dt> <dt>
+
+[**glPushAttrib**](glpushattrib.md)
+</dt> <dt>
+
+[**glPushClientAttrib**](glpushclientattrib.md)
+</dt> <dt>
+
+[**glTexCoordPointer**](gltexcoordpointer.md)
+</dt> <dt>
+
+[**glVertexPointer**](glvertexpointer.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
