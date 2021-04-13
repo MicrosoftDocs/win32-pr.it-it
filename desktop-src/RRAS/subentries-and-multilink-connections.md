@@ -1,0 +1,34 @@
+---
+title: Voci secondarie e connessioni a collegamento multiplo
+description: Windows NT Server 4,0 fornisce supporto per le sottovoci del libro telefonico che consentono le connessioni a più collegamenti. Una connessione a collegamento multiplo combina la larghezza di banda di più connessioni per fornire una singola connessione con una maggiore larghezza di banda.
+ms.assetid: 19cf6e1a-cdba-47e4-8d8f-d6030ed6f9e3
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c1970e2e2ad668b376b1097aa20cd18986fb605a
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104338734"
+---
+# <a name="subentries-and-multilink-connections"></a>Voci secondarie e connessioni a collegamento multiplo
+
+Windows NT Server 4,0 fornisce supporto per le sottovoci del libro telefonico che consentono le connessioni a più collegamenti. Una connessione a collegamento multiplo combina la larghezza di banda di più connessioni per fornire una singola connessione con una maggiore larghezza di banda.
+
+Una voce del libro telefonico RAS può includere zero o più voci secondarie. La funzione [**RasGetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rasgetentrypropertiesa) recupera una struttura [**RASENTRY**](/previous-versions/windows/desktop/legacy/aa377274(v=vs.85)) che include informazioni sulle voci secondarie di una voce della rubrica telefonica. Il membro **dwSubEntries** della struttura **RASENTRY** indica il numero di voci secondarie. Le voci del libro telefonico non hanno inizialmente elementi secondari. Per aggiungere voci secondarie a una voce della rubrica telefonica, utilizzare la funzione [**RasSetSubEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetsubentrypropertiesa) .
+
+Le proprietà di ogni sottovoce includono un numero di telefono e il nome e il tipo del dispositivo TAPI da usare quando si compone la voce secondaria. Inoltre, una voce secondaria può includere un elenco di numeri di telefono alternativi da comporre se RAS non è in grado di effettuare una connessione utilizzando il numero primario. Le funzioni [**RasSetSubEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetsubentrypropertiesa) e [**RasGetSubEntryProperties**](/windows/desktop/api/Ras/nf-ras-rasgetsubentrypropertiesa) usano la struttura [**RASSUBENTRY**](/previous-versions/windows/desktop/legacy/aa377839(v=vs.85)) per impostare e recuperare le proprietà di una sottovoce del libro telefonico specificata. Le sottovoci sono identificate da un indice in base uno.
+
+È possibile chiamare la funzione [**RasSetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetentrypropertiesa) per configurare una voce RAS a più collegamenti per la connessione di tutte le sottovoci al momento della prima connessione. In alternativa, è possibile configurare una voce per fornire la larghezza di banda variabile. In questo caso, RAS connette inizialmente una singola sottovoce, quindi connette o disconnette altre sottovoci in base alle esigenze. Per una connessione multilink a larghezza di banda variabile, è possibile usare la struttura [**RASDIALPARAMS**](/previous-versions/windows/desktop/legacy/aa377238(v=vs.85)) per specificare la sottovoce iniziale da connettere quando si chiama la funzione [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) . Quando si usa la funzione [**RasDialDlg**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasdialdlga) per connettere una voce a più collegamenti, è possibile usare la struttura [**RasDialDlg**](/previous-versions/windows/desktop/legacy/aa377023(v=vs.85)) per specificare la sottovoce iniziale da connettere.
+
+Per una connessione multilink a larghezza di banda variabile, utilizzare la struttura [**RASENTRY**](/previous-versions/windows/desktop/legacy/aa377274(v=vs.85)) con la funzione [**RasSetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetentrypropertiesa) per specificare i parametri per la connessione e la disconnessione delle singole voci secondarie. RAS connette una voce secondaria aggiuntiva quando la larghezza di banda utilizzata supera una percentuale specificata della larghezza di banda disponibile per un intervallo specificato.
+
+Se si chiama la funzione [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) per stabilire una connessione a più collegamenti, è possibile specificare una funzione di callback [**RasDialFunc2**](/windows/desktop/api/Ras/nc-ras-rasdialfunc2) per ricevere le notifiche relative alla connessione. **RasDialFunc2** è simile alla funzione di callback [**RasDialFunc1**](/windows/desktop/api/Ras/nc-ras-rasdialfunc1) , ad eccezione del fatto che fornisce informazioni aggiuntive per una connessione a più collegamenti, ad esempio l'indice della sottovoce che ha causato la notifica. RAS chiama la funzione **RasDialFunc2** quando si connette o disconnette una voce secondaria.
+
+È possibile usare un handle di connessione **HRASCONN** per bloccare o recuperare le informazioni su una connessione a più collegamenti. È possibile ottenere un handle di connessione per ogni connessione secondaria che compongono il collegamento multiplo, nonché per la connessione a più collegamenti combinata. Quando si chiama la funzione [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) per stabilire una connessione a più collegamenti, **RasDial** restituisce un handle per la connessione a più collegamenti combinata. Analogamente, [**RasEnumConnections**](/windows/desktop/api/Ras/nf-ras-rasenumconnectionsa) restituisce l'handle combinato Multilink quando si enumerano le connessioni. Per ottenere un handle per una delle connessioni della sottovoce in una connessione a più collegamenti, chiamare la funzione [**RasGetSubEntryHandle**](/windows/desktop/api/Ras/nf-ras-rasgetsubentryhandlea) .
+
+È possibile usare l'handle di connessione multicollegamento combinato e gli handle di connessione per le sottovoci nelle funzioni [**RasHangup**](/windows/desktop/api/Ras/nf-ras-rashangupa), [**RasGetConnectStatus**](/windows/desktop/api/Ras/nf-ras-rasgetconnectstatusa)e [**RasGetProjectionInfo**](/previous-versions/windows/embedded/ms897107(v=msdn.10)) . La chiamata di **RasHangup** con un handle combinato Multilink termina l'intera connessione. chiamandolo con un handle di voce secondaria si blocca solo tale connessione secondaria. Analogamente, **RasGetConnectStatus** restituisce informazioni per la connessione combinata o singola, a seconda dell'handle specificato. Le informazioni di proiezione restituite da **RasGetProjectionInfo** per una voce a più collegamenti sono le stesse per ogni handle di connessione di sottovoce così come per l'handle di connessione principale.
+
+ 
+
+ 
