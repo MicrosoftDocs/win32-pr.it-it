@@ -1,0 +1,32 @@
+---
+title: Informazioni sulla ritrasmissione
+description: Un'applicazione WinSNMP può eseguire richieste di operazioni SNMP in diversi modi.
+ms.assetid: 71150a66-74a3-4957-bc70-3dd25c3b9c71
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 83a26ba632cec096300927911c2277cbcf5911e4
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "104329116"
+---
+# <a name="about-retransmission"></a><span data-ttu-id="c1aaf-103">Informazioni sulla ritrasmissione</span><span class="sxs-lookup"><span data-stu-id="c1aaf-103">About Retransmission</span></span>
+
+<span data-ttu-id="c1aaf-104">Un'applicazione WinSNMP può eseguire richieste di operazioni SNMP in diversi modi.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-104">A WinSNMP application can make SNMP operation requests in various ways.</span></span> <span data-ttu-id="c1aaf-105">L'applicazione può inviare diverse richieste a un agente SNMP, senza attendere una risposta, oppure può emettere una singola richiesta e attendere la risposta.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-105">The application can issue several requests to an SNMP agent, without waiting for a response, or it can issue a single request and wait for the response.</span></span> <span data-ttu-id="c1aaf-106">Poiché SNMP può essere implementato su più protocolli di trasporto, i meccanismi di recapito e le caratteristiche di affidabilità possono variare.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-106">Since SNMP can be implemented on multiple transport protocols, delivery mechanisms and reliability characteristics can vary.</span></span>
+
+<span data-ttu-id="c1aaf-107">Quando si codifica l'applicazione WinSNMP, è necessario determinare il livello di affidabilità necessario per le operazioni di comunicazione, in base al modo in cui l'applicazione rilascia le richieste di operazione.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-107">When you code the WinSNMP application you must determine the level of reliability you need for communications operations, based on the way the application issues operation requests.</span></span> <span data-ttu-id="c1aaf-108">Quindi, è necessario selezionare una strategia di ritrasmissione e implementare un criterio di ritrasmissione.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-108">Then you must select a retransmission strategy and implement a retransmission policy.</span></span>
+
+<span data-ttu-id="c1aaf-109">Un criterio di ritrasmissione include un periodo di timeout e un numero di tentativi.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-109">A retransmission policy includes a time-out period and a retry count.</span></span> <span data-ttu-id="c1aaf-110">Un periodo di timeout è il tempo trascorso, in centesimi di secondo, tra il rilascio di un'applicazione di una richiesta [**SnmpSendMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg) e la relativa ricezione del messaggio corrispondente.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-110">A time-out period is the elapsed time, in hundredths of a second, between an application's issuance of an [**SnmpSendMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg) request and its receipt of the corresponding message.</span></span> <span data-ttu-id="c1aaf-111">L'applicazione riceve il messaggio come risultato di una chiamata alla funzione [**SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) .</span><span class="sxs-lookup"><span data-stu-id="c1aaf-111">The application receives the message as a result of a call to the [**SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) function.</span></span> <span data-ttu-id="c1aaf-112">Il valore di timeout corrisponde al periodo di tempo durante il quale l'implementazione di Microsoft WinSNMP attende che un'entità risponda a una richiesta di comunicazione.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-112">The time-out value is the period of time the Microsoft WinSNMP implementation waits for an entity to respond to a communication request.</span></span> <span data-ttu-id="c1aaf-113">Se non è presente alcuna risposta entro il periodo di timeout, l'implementazione ritrasmette la richiesta se il valore del numero di tentativi specifica i tentativi di ritrasmissione o se la chiamata a [**SnmpSendMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg)non riesce.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-113">If there is no response within the time-out period, the implementation either retransmits the request if the retry count value specifies retransmission attempts, or it fails the call to [**SnmpSendMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg).</span></span> <span data-ttu-id="c1aaf-114">Un numero di tentativi è il numero massimo di tentativi di ritrasmissione che l'implementazione esegue se una richiesta di trasmissione SNMP ha esito negativo.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-114">A retry count is the maximum number of retransmission attempts the implementation makes if an SNMP transmission request fails.</span></span>
+
+<span data-ttu-id="c1aaf-115">L'implementazione archivia i valori di timeout e i conteggi dei tentativi nel database per l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-115">The implementation stores time-out values and retry counts in its database for the application.</span></span> <span data-ttu-id="c1aaf-116">L'implementazione archivia singoli valori per ogni entità di destinazione.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-116">The implementation stores individual values for each destination entity.</span></span>
+
+<span data-ttu-id="c1aaf-117">Le applicazioni devono stabilire le proprie frequenze di polling e devono gestire le variabili del timer.</span><span class="sxs-lookup"><span data-stu-id="c1aaf-117">Applications must establish their own polling frequencies and they must manage timer variables.</span></span> <span data-ttu-id="c1aaf-118">Per ulteriori informazioni, vedere [gestione dei criteri di ritrasmissione](managing-the-retransmission-policy.md).</span><span class="sxs-lookup"><span data-stu-id="c1aaf-118">For more information, see [Managing the Retransmission Policy](managing-the-retransmission-policy.md).</span></span>
+
+ 
+
+ 
+
+
+
+
