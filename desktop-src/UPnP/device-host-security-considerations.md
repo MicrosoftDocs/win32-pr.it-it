@@ -1,0 +1,34 @@
+---
+title: Considerazioni sulla sicurezza dell'host del dispositivo
+description: L'uso dell'host del dispositivo crea problemi di sicurezza.
+ms.assetid: 7cb445ea-5df4-4030-babd-62527b4d6210
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 2b5a51b90bff33949a33cd9fa1046deb1916ab30
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104473403"
+---
+# <a name="device-host-security-considerations"></a><span data-ttu-id="39a62-103">Considerazioni sulla sicurezza dell'host del dispositivo</span><span class="sxs-lookup"><span data-stu-id="39a62-103">Device Host Security Considerations</span></span>
+
+<span data-ttu-id="39a62-104">L'uso dell'host del dispositivo crea problemi di sicurezza a causa dei seguenti elementi:</span><span class="sxs-lookup"><span data-stu-id="39a62-104">Using the device host creates security issues because of the following:</span></span>
+
+-   <span data-ttu-id="39a62-105">I dispositivi ospitati in un computer che esegue Windows XP inviano annunci su tutte le reti.</span><span class="sxs-lookup"><span data-stu-id="39a62-105">Devices hosted on a computer running Windows XP sends announcements on all networks.</span></span>
+-   <span data-ttu-id="39a62-106">I dispositivi ospitati in un computer che esegue Windows XP consentono di controllare i dispositivi di tutte le reti.</span><span class="sxs-lookup"><span data-stu-id="39a62-106">Devices hosted on a computer running Windows XP allow control of devices from all networks.</span></span>
+
+<span data-ttu-id="39a62-107">Questo aumenta il rischio per i consumer privati, perché i dispositivi come un lettore multimediale o un sistema di illuminazione o HVAC con Bridge ospitato in un computer che esegue Windows XP sono visibili e possono essere controllati da punti di controllo fuori dalla Home.</span><span class="sxs-lookup"><span data-stu-id="39a62-107">This increases the risk to home consumers, because devices such as a media player or a bridged lighting or HVAC system hosted on a computer running Windows XP are visible and can be controlled from control points outside the home.</span></span>
+
+<span data-ttu-id="39a62-108">Quando si crea un dispositivo ospitato, è necessario prendere in considerazione alcuni problemi di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="39a62-108">When you are creating a hosted device, you need to take into consideration some security issues.</span></span>
+
+-   <span data-ttu-id="39a62-109">Per ridurre l'ambito di individuazione e attacco di dispositivi basati su UPnP, il valore TTL di tutti i messaggi di SSDP è 1.</span><span class="sxs-lookup"><span data-stu-id="39a62-109">To reduce the scope of discovery and attack of UPnP-based devices, the TTL of all SSDP messages is 1.</span></span> <span data-ttu-id="39a62-110">Ciò significa che un dispositivo registrato viene individuato solo dai punti di controllo nella stessa rete.</span><span class="sxs-lookup"><span data-stu-id="39a62-110">This means that a registered device is only discovered by control points on the same network.</span></span> <span data-ttu-id="39a62-111">È possibile configurare una durata (TTL) superiore nel registro di sistema.</span><span class="sxs-lookup"><span data-stu-id="39a62-111">You can configure a higher TTL in the registry.</span></span>
+-   <span data-ttu-id="39a62-112">Per la registrazione di un dispositivo non in esecuzione è necessario pre-registrare il file device. dll con COM, che richiede privilegi di amministratore.</span><span class="sxs-lookup"><span data-stu-id="39a62-112">Registering a non-running device requires pre-registering the device .dll with COM, which requires administrator privilege.</span></span>
+-   <span data-ttu-id="39a62-113">Per la registrazione di un dispositivo in esecuzione sono necessari privilegi di amministratore, servizio locale o sistema locale.</span><span class="sxs-lookup"><span data-stu-id="39a62-113">Registering a running device requires Administrator, Local Service, or Local System privilege.</span></span>
+-   <span data-ttu-id="39a62-114">Quando l'host del dispositivo viene avviato, viene eseguito come [LocalService](/windows/desktop/Services/localservice-account).</span><span class="sxs-lookup"><span data-stu-id="39a62-114">When the device host is started, it is run as [LocalService](/windows/desktop/Services/localservice-account).</span></span> <span data-ttu-id="39a62-115">Ciò consente al dispositivo di generare controlli e leggere la chiave del registro di sistema del **\_ \_ computer locale HKEY** .</span><span class="sxs-lookup"><span data-stu-id="39a62-115">This gives the device the ability to generate audits and read the **HKEY\_LOCAL\_MACHINE** registry key.</span></span> <span data-ttu-id="39a62-116">Il dispositivo ha accesso all' **\_ \_ utente corrente di HKEY**.</span><span class="sxs-lookup"><span data-stu-id="39a62-116">The device does have access to **HKEY\_CURRENT\_USER**.</span></span> <span data-ttu-id="39a62-117">L'account LocalService può usare le risorse a cui è stato concesso l'accesso a LocalService, oltre a quelle che concedono l'accesso a AuthenticatedUser.</span><span class="sxs-lookup"><span data-stu-id="39a62-117">The LocalService account can use resources to which LocalService has been granted access, as well as those that grant access to AuthenticatedUser.</span></span> <span data-ttu-id="39a62-118">Il dispositivo ha limitato l'accesso file system.</span><span class="sxs-lookup"><span data-stu-id="39a62-118">The device has restricted file system access.</span></span>
+-   <span data-ttu-id="39a62-119">Gli ACL file system devono essere aggiornati per consentire l'accesso [LocalService](/windows/desktop/Services/localservice-account) alla directory delle risorse.</span><span class="sxs-lookup"><span data-stu-id="39a62-119">The file system ACLs must be updated to allow [LocalService](/windows/desktop/Services/localservice-account) access to the resource directory.</span></span>
+-   <span data-ttu-id="39a62-120">Se il dispositivo deve disporre di un accesso più sicuro, è possibile creare un processo personalizzato per il dispositivo e registrarlo usando [**IUPnPRegistrar:: RegisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerrunningdevice).</span><span class="sxs-lookup"><span data-stu-id="39a62-120">If your device must have more security access, you can create your own process for the device and register it by using [**IUPnPRegistrar::RegisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerrunningdevice).</span></span>
+
+ 
+
+ 
