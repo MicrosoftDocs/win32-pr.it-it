@@ -1,0 +1,92 @@
+---
+title: texCUBEproj
+description: Esegue il campionamento di una trama del cubo utilizzando una divisione proiezioni; la coordinata di trama è divisa per t. w prima che la ricerca avvenga.
+ms.assetid: 86bdd1c3-0a8d-4d09-b70d-1ebcee32c866
+keywords:
+- HLSL texCUBEproj
+topic_type:
+- apiref
+api_name:
+- texCUBEproj
+api_type:
+- NA
+ms.topic: reference
+ms.date: 05/31/2018
+api_location: ''
+ms.openlocfilehash: d23a9b85034c1591cfe695759b29612a3674d436
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104474086"
+---
+# <a name="texcubeproj"></a><span data-ttu-id="f0c24-104">texCUBEproj</span><span class="sxs-lookup"><span data-stu-id="f0c24-104">texCUBEproj</span></span>
+
+<span data-ttu-id="f0c24-105">Esegue il campionamento di una trama del cubo utilizzando una divisione proiezioni; la coordinata di trama è divisa per t. w prima che la ricerca avvenga.</span><span class="sxs-lookup"><span data-stu-id="f0c24-105">Samples a cube texture using a projective divide; the texture coordinate is divided by t.w before the lookup takes place.</span></span>
+
+
+
+| <span data-ttu-id="f0c24-106">texCUBEproj RET (s, t)</span><span class="sxs-lookup"><span data-stu-id="f0c24-106">ret texCUBEproj(s, t)</span></span> |
+|-----------------------|
+
+
+
+ 
+
+## <a name="parameters"></a><span data-ttu-id="f0c24-107">Parametri</span><span class="sxs-lookup"><span data-stu-id="f0c24-107">Parameters</span></span>
+
+
+
+| <span data-ttu-id="f0c24-108">Elemento</span><span class="sxs-lookup"><span data-stu-id="f0c24-108">Item</span></span>                                                   | <span data-ttu-id="f0c24-109">Descrizione</span><span class="sxs-lookup"><span data-stu-id="f0c24-109">Description</span></span>                               |
+|--------------------------------------------------------|-------------------------------------------|
+| <span data-ttu-id="f0c24-110"><span id="s"></span><span id="S"></span>*s*</span><span class="sxs-lookup"><span data-stu-id="f0c24-110"><span id="s"></span><span id="S"></span>*s*</span></span><br/> | <span data-ttu-id="f0c24-111">\[nello \] stato del campionatore.</span><span class="sxs-lookup"><span data-stu-id="f0c24-111">\[in\] The sampler state.</span></span><br/>      |
+| <span data-ttu-id="f0c24-112"><span id="t"></span><span id="T"></span>*t*</span><span class="sxs-lookup"><span data-stu-id="f0c24-112"><span id="t"></span><span id="T"></span>*t*</span></span><br/> | <span data-ttu-id="f0c24-113">\[nella \] coordinata di trama.</span><span class="sxs-lookup"><span data-stu-id="f0c24-113">\[in\] The texture coordinate.</span></span><br/> |
+
+
+
+ 
+
+## <a name="return-value"></a><span data-ttu-id="f0c24-114">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="f0c24-114">Return Value</span></span>
+
+<span data-ttu-id="f0c24-115">Valore dei dati della trama.</span><span class="sxs-lookup"><span data-stu-id="f0c24-115">The value of the texture data.</span></span>
+
+## <a name="type-description"></a><span data-ttu-id="f0c24-116">Descrizione del tipo</span><span class="sxs-lookup"><span data-stu-id="f0c24-116">Type Description</span></span>
+
+
+
+| <span data-ttu-id="f0c24-117">Nome</span><span class="sxs-lookup"><span data-stu-id="f0c24-117">Name</span></span> | <span data-ttu-id="f0c24-118">Ingresso/Uscita</span><span class="sxs-lookup"><span data-stu-id="f0c24-118">In/Out</span></span> | [<span data-ttu-id="f0c24-119">**Tipo di modello**</span><span class="sxs-lookup"><span data-stu-id="f0c24-119">**Template Type**</span></span>](dx-graphics-hlsl-intrinsic-functions.md)                       | [<span data-ttu-id="f0c24-120">**Tipo di componente**</span><span class="sxs-lookup"><span data-stu-id="f0c24-120">**Component Type**</span></span>](dx-graphics-hlsl-intrinsic-functions.md) | <span data-ttu-id="f0c24-121">Dimensione</span><span class="sxs-lookup"><span data-stu-id="f0c24-121">Size</span></span> |
+|------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
+| <span data-ttu-id="f0c24-122">s</span><span class="sxs-lookup"><span data-stu-id="f0c24-122">s</span></span>    | <span data-ttu-id="f0c24-123">in ingresso</span><span class="sxs-lookup"><span data-stu-id="f0c24-123">in</span></span>     | [<span data-ttu-id="f0c24-124">**oggetto**</span><span class="sxs-lookup"><span data-stu-id="f0c24-124">**object**</span></span>](dx-graphics-hlsl-intrinsic-functions.md) | [<span data-ttu-id="f0c24-125">samplerCUBE</span><span class="sxs-lookup"><span data-stu-id="f0c24-125">samplerCUBE</span></span>](dx-graphics-hlsl-sampler.md)                    | <span data-ttu-id="f0c24-126">1</span><span class="sxs-lookup"><span data-stu-id="f0c24-126">1</span></span>    |
+| <span data-ttu-id="f0c24-127">u</span><span class="sxs-lookup"><span data-stu-id="f0c24-127">t</span></span>    | <span data-ttu-id="f0c24-128">in ingresso</span><span class="sxs-lookup"><span data-stu-id="f0c24-128">in</span></span>     | [<span data-ttu-id="f0c24-129">**vettore**</span><span class="sxs-lookup"><span data-stu-id="f0c24-129">**vector**</span></span>](dx-graphics-hlsl-intrinsic-functions.md) | [<span data-ttu-id="f0c24-130">**float**</span><span class="sxs-lookup"><span data-stu-id="f0c24-130">**float**</span></span>](/windows/desktop/WinProg/windows-data-types)                        | <span data-ttu-id="f0c24-131">4</span><span class="sxs-lookup"><span data-stu-id="f0c24-131">4</span></span>    |
+| <span data-ttu-id="f0c24-132">RET</span><span class="sxs-lookup"><span data-stu-id="f0c24-132">ret</span></span>  | <span data-ttu-id="f0c24-133">in uscita</span><span class="sxs-lookup"><span data-stu-id="f0c24-133">out</span></span>    | [<span data-ttu-id="f0c24-134">**vettore**</span><span class="sxs-lookup"><span data-stu-id="f0c24-134">**vector**</span></span>](dx-graphics-hlsl-intrinsic-functions.md) | [<span data-ttu-id="f0c24-135">**float**</span><span class="sxs-lookup"><span data-stu-id="f0c24-135">**float**</span></span>](/windows/desktop/WinProg/windows-data-types)                        | <span data-ttu-id="f0c24-136">4</span><span class="sxs-lookup"><span data-stu-id="f0c24-136">4</span></span>    |
+
+
+
+ 
+
+## <a name="minimum-shader-model"></a><span data-ttu-id="f0c24-137">Modello Shader minimo</span><span class="sxs-lookup"><span data-stu-id="f0c24-137">Minimum Shader Model</span></span>
+
+<span data-ttu-id="f0c24-138">Questa funzione è supportata nei modelli shader seguenti.</span><span class="sxs-lookup"><span data-stu-id="f0c24-138">This function is supported in the following shader models.</span></span>
+
+
+
+| <span data-ttu-id="f0c24-139">Modello di shader</span><span class="sxs-lookup"><span data-stu-id="f0c24-139">Shader Model</span></span>                                              | <span data-ttu-id="f0c24-140">Supportato</span><span class="sxs-lookup"><span data-stu-id="f0c24-140">Supported</span></span>               |
+|-----------------------------------------------------------|-------------------------|
+| [<span data-ttu-id="f0c24-141">Modello Shader 4</span><span class="sxs-lookup"><span data-stu-id="f0c24-141">Shader Model 4</span></span>](dx-graphics-hlsl-sm4.md)                | <span data-ttu-id="f0c24-142">Sì (solo pixel shader)</span><span class="sxs-lookup"><span data-stu-id="f0c24-142">yes (pixel shader only)</span></span> |
+| [<span data-ttu-id="f0c24-143">Shader Model 3 (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="f0c24-143">Shader Model 3 (DirectX HLSL)</span></span>](dx-graphics-hlsl-sm3.md) | <span data-ttu-id="f0c24-144">Sì (solo pixel shader)</span><span class="sxs-lookup"><span data-stu-id="f0c24-144">yes (pixel shader only)</span></span> |
+| [<span data-ttu-id="f0c24-145">Shader Model 2 (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="f0c24-145">Shader Model 2 (DirectX HLSL)</span></span>](dx-graphics-hlsl-sm2.md) | <span data-ttu-id="f0c24-146">Sì (solo pixel shader)</span><span class="sxs-lookup"><span data-stu-id="f0c24-146">yes (pixel shader only)</span></span> |
+| [<span data-ttu-id="f0c24-147">Shader Model 1 (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="f0c24-147">Shader Model 1 (DirectX HLSL)</span></span>](dx-graphics-hlsl-sm1.md) | <span data-ttu-id="f0c24-148">no</span><span class="sxs-lookup"><span data-stu-id="f0c24-148">no</span></span>                      |
+
+
+
+ 
+
+## <a name="see-also"></a><span data-ttu-id="f0c24-149">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="f0c24-149">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="f0c24-150">**Funzioni intrinseche (DirectX HLSL)**</span><span class="sxs-lookup"><span data-stu-id="f0c24-150">**Intrinsic Functions (DirectX HLSL)**</span></span>](dx-graphics-hlsl-intrinsic-functions.md)
+</dt> </dl>
+
+ 
+
