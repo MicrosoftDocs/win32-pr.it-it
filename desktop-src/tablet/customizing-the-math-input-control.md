@@ -1,0 +1,112 @@
+---
+description: Viene illustrato come modificare l'aspetto del controllo di input matematico.
+ms.assetid: 922562be-4d5b-45b6-ad0b-49176f893c8e
+title: Personalizzazione del controllo di input matematico
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 6c3cab7c6efe003738c46a89d07866fcc9302ec5
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104555584"
+---
+# <a name="customizing-the-math-input-control"></a>Personalizzazione del controllo di input matematico
+
+È possibile modificare l'aspetto del controllo di input matematico in modo che sia più adatto per l'applicazione. In questo argomento vengono illustrati i vari modi in cui gli sviluppatori possono personalizzare il controllo di input matematico.
+
+Sono possibili le seguenti personalizzazioni:
+
+-   [Modifica dei pulsanti visualizzati](#changing-the-displayed-buttons)
+-   [Modifica della didascalia del controllo](#changing-the-control-caption)
+-   [Modifica delle dimensioni dell'area di anteprima del controllo](#changing-the-controls-preview-area-size)
+
+## <a name="changing-the-displayed-buttons"></a>Modifica dei pulsanti visualizzati
+
+È possibile modificare i pulsanti visualizzati nel controllo di input matematico in modo che il controllo abbia funzionalità estese o venga visualizzato più piccolo sullo schermo. Se si Abilita il set di pulsanti estesi, vengono visualizzati i pulsanti **Ripeti** e **Annulla** . Nel codice seguente viene illustrato come abilitare il set di pulsanti esteso.
+
+
+```
+  void CMath_Input_Control_testDlg::OnBnClickedToggleBtns()
+  {
+    static bool enabled = true;
+    HRESULT hr = S_OK;
+
+    hr = g_spMIC->Hide();    
+    if(!enabled){
+      if (SUCCEEDED(hr)){
+        hr = g_spMIC->EnableExtendedButtons(VARIANT_TRUE);
+        enabled = true;
+      }
+    }else{
+      if (SUCCEEDED(hr)){
+        hr = g_spMIC->EnableExtendedButtons(VARIANT_FALSE);
+        enabled = false;
+      }
+    }
+    if (SUCCEEDED(hr)){
+      hr = g_spMIC->Show();
+    }
+  }
+  
+```
+
+
+
+La figura seguente mostra il controllo con il set esteso di pulsanti.
+
+![controllo di input matematico con un set esteso di pulsanti](images/mic.png)
+
+La figura seguente mostra il controllo senza il set esteso di pulsanti.
+
+![controllo di input matematico senza un set esteso di pulsanti](images/mic-no-extended.png)
+
+## <a name="changing-the-control-caption"></a>Modifica della didascalia del controllo
+
+È possibile modificare la didascalia del controllo per il controllo di input matematico per impostare la didascalia nella finestra del controllo di input matematico. Il codice seguente illustra come impostare la didascalia.
+
+
+```
+  void CMath_Input_Control_testDlg::OnBnClickedSetCaption()
+  {     
+    g_spMIC->Hide();
+    CComBSTR cap1(L"Some Caption Text");    
+    g_spMIC->SetCaptionText((BSTR)cap1);
+    g_spMIC->Show();
+  }  
+  
+```
+
+
+
+La figura seguente mostra il controllo dopo l'impostazione della didascalia.
+
+![controllo di input matematico con un set di didascalie](images/mic-caption.png)
+
+## <a name="changing-the-controls-preview-area-size"></a>Modifica delle dimensioni dell'area di anteprima del controllo
+
+È possibile personalizzare il controllo di input matematico in modo che il controllo imposti in modo esplicito le dimensioni dell'area di anteprima. In questo modo viene creata un'area più grande in cui vengono visualizzate le formule matematiche. Nel codice seguente viene illustrato come impostare le dimensioni dell'area di anteprima.
+
+
+```
+  void CMath_Input_Control_testDlg::OnBnClickedSetPreviewAreaSize()
+  {
+    LONG height = 200;
+    HRESULT hr = S_OK;
+    hr = g_spMIC->SetPreviewHeight(height);
+  }  
+  
+```
+
+
+
+Le immagini seguenti mostrano un controllo con aree di anteprima di dimensioni diverse.
+
+![controllo di input matematico con le dimensioni dell'area di anteprima predefinite](images/mic.png)![controllo di input matematico con un'area di anteprima più ampia](images/mic-big-preview.png)
+
+ 
+
+ 
+
+
+
