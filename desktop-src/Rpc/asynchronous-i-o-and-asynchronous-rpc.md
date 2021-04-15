@@ -1,0 +1,24 @@
+---
+title: I/O asincrono e RPC asincrono
+description: L'I/O asincrono è un mezzo efficace per un singolo thread per la gestione simultanea di più richieste di I/O.
+ms.assetid: a9105518-4130-4119-b8d1-e73064b077e9
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e932e85283eb67ff6675a646e791bbce5fe15d65
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104399603"
+---
+# <a name="asynchronous-io-and-asynchronous-rpc"></a><span data-ttu-id="e8d4c-103">I/O asincrono e RPC asincrono</span><span class="sxs-lookup"><span data-stu-id="e8d4c-103">Asynchronous I/O and Asynchronous RPC</span></span>
+
+<span data-ttu-id="e8d4c-104">L'I/O asincrono è un mezzo efficace per un singolo thread per la gestione simultanea di più richieste di I/O.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-104">Asynchronous I/O is an efficient means for a single thread to manage multiple I/O requests simultaneously.</span></span> <span data-ttu-id="e8d4c-105">La RPC asincrona sul server ha uno scopo simile per le richieste RPC.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-105">Asynchronous RPC on the server accomplishes a similar purpose for RPC requests.</span></span> <span data-ttu-id="e8d4c-106">Nelle versioni di Windows precedenti a Windows Vista, l'invio di richieste di I/O asincrone dalle procedure del server mediante RPC asincrona è sconsigliato.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-106">In versions of Windows prior to Windows Vista, posting asynchronous I/O requests from server procedures using asynchronous RPC is discouraged.</span></span> <span data-ttu-id="e8d4c-107">Tuttavia, in Windows Vista e versioni successive di Windows, le richieste di I/O asincrone associate a una porta di completamento di I/O sono supportate da RPC asincrono.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-107">However, in Windows Vista and later versions of Windows, asynchronous I/O requests that are associated with an I/O completion port are supported by asynchronous RPC.</span></span>
+
+<span data-ttu-id="e8d4c-108">Prima di Windows Vista, una chiamata di procedura remota asincrona può essere completata prima del completamento della richiesta di I/O asincrona.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-108">Prior to Windows Vista, an asynchronous remote procedure call may complete before the asynchronous I/O request completes.</span></span> <span data-ttu-id="e8d4c-109">Quando la chiamata asincrona viene completata, il thread può terminare se il runtime RPC decide che è disponibile un numero sufficiente di thread per il servizio del carico di lavoro previsto.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-109">When the asynchronous call completes, its thread may terminate if the RPC runtime decides it has enough threads available to service the expected workload.</span></span> <span data-ttu-id="e8d4c-110">Il sistema associa tutte le richieste di I/O al thread che le avvia.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-110">The system binds all I/O requests to the thread that initiates them.</span></span> <span data-ttu-id="e8d4c-111">Se il thread termina, eventuali richieste di I/O in sospeso su tale thread vengono interrotte.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-111">If the thread terminates, any I/O requests pending on that thread are aborted.</span></span> <span data-ttu-id="e8d4c-112">Le richieste I/O in sospeso non possono essere spostate in un altro thread.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-112">Pending I/O requests cannot be moved to another thread.</span></span>
+
+<span data-ttu-id="e8d4c-113">Pertanto, le finestre di progettazione applicazioni destinate alle versioni di Windows precedenti a Windows Vista possono utilizzare l'I/O sincrono nelle procedure del server oppure possono inviare tutte le richieste che coinvolgono l'I/O asincrono alle procedure eseguite in un pool di thread gestito dall'applicazione.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-113">Therefore, application designers targeting versions of Windows prior to Windows Vista can either use synchronous I/O in server procedures, or they can forward all requests that involve asynchronous I/O to procedures executing on a thread pool that the application manages.</span></span> <span data-ttu-id="e8d4c-114">L'API Windows fornisce funzioni per la gestione dei pool di thread.</span><span class="sxs-lookup"><span data-stu-id="e8d4c-114">The Windows API provides functions for thread-pool management.</span></span> <span data-ttu-id="e8d4c-115">Vedere [funzioni di processo e thread](/windows/desktop/ProcThread/process-and-thread-functions).</span><span class="sxs-lookup"><span data-stu-id="e8d4c-115">See [Process and Thread Functions](/windows/desktop/ProcThread/process-and-thread-functions).</span></span>
+
+ 
+
+ 
