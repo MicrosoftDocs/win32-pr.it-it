@@ -1,0 +1,33 @@
+---
+description: La distorsione visibile nei Texel di un oggetto 3D la cui superficie è orientata a un angolo rispetto al piano dello schermo è detta anisotropia.
+ms.assetid: f6c8a9e2-aab0-4f06-956e-bb86557c72e7
+title: Filtro di trama anisotropico (Direct3D 9)
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c3443696e54410c6edc6a9998d4fcfd86b537a0e
+ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104483749"
+---
+# <a name="anisotropic-texture-filtering-direct3d-9"></a><span data-ttu-id="73c70-103">Filtro di trama anisotropico (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="73c70-103">Anisotropic Texture Filtering (Direct3D 9)</span></span>
+
+<span data-ttu-id="73c70-104">La distorsione visibile nei Texel di un oggetto 3D la cui superficie è orientata a un angolo rispetto al piano dello schermo è detta anisotropia.</span><span class="sxs-lookup"><span data-stu-id="73c70-104">The distortion visible in the texels of a 3D object whose surface is oriented at an angle with respect to the plane of the screen is called anisotropy.</span></span> <span data-ttu-id="73c70-105">Quando viene eseguito il mapping di un pixel di una primitiva anisotropico a Texel, la relativa forma viene distorta.</span><span class="sxs-lookup"><span data-stu-id="73c70-105">When a pixel from an anisotropic primitive is mapped to texels, its shape is distorted.</span></span> <span data-ttu-id="73c70-106">Direct3D misura l'anisotropia di un pixel come allungamento, ovvero la lunghezza divisa per larghezza, di un pixel dello schermo che è mappato in senso inverso nello spazio della trama.</span><span class="sxs-lookup"><span data-stu-id="73c70-106">Direct3D measures the anisotropy of a pixel as the elongation - that is, length divided by width - of a screen pixel that is inverse-mapped into texture space.</span></span>
+
+<span data-ttu-id="73c70-107">È possibile usare il filtro di trama anisotropico insieme al filtro di trama lineare o al filtro della trama mipmap per migliorare i risultati del rendering.</span><span class="sxs-lookup"><span data-stu-id="73c70-107">You can use anisotropic texture filtering in conjunction with linear texture filtering or mipmap texture filtering to improve rendering results.</span></span> <span data-ttu-id="73c70-108">L'applicazione Abilita il filtro di trama anisotropico chiamando il metodo [**IDirect3DDevice9:: SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) .</span><span class="sxs-lookup"><span data-stu-id="73c70-108">Your application enables anisotropic texture filtering by calling the [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) method.</span></span> <span data-ttu-id="73c70-109">Impostare il valore del primo parametro sul numero di indice Integer (0-7) della trama per cui si seleziona un metodo di filtro della trama.</span><span class="sxs-lookup"><span data-stu-id="73c70-109">Set the value of the first parameter to the integer index number (0-7) of the texture for which you are selecting a texture filtering method.</span></span> <span data-ttu-id="73c70-110">Passare D3DSAMP \_ MAGFILTER, D3DSAMP \_ MINFILTER o D3DSAMP \_ MIPFILTER per il secondo parametro per impostare il filtro di ingrandimento, minification o mapping MIP.</span><span class="sxs-lookup"><span data-stu-id="73c70-110">Pass D3DSAMP\_MAGFILTER, D3DSAMP\_MINFILTER, or D3DSAMP\_MIPFILTER for the second parameter to set the magnification, minification, or mipmapping filter.</span></span> <span data-ttu-id="73c70-111">Impostare il terzo parametro su D3DTEXF \_ anisotropico.</span><span class="sxs-lookup"><span data-stu-id="73c70-111">Set the third parameter to D3DTEXF\_ANISOTROPIC.</span></span>
+
+<span data-ttu-id="73c70-112">L'applicazione deve inoltre impostare il grado di anisotropia su un valore maggiore di uno.</span><span class="sxs-lookup"><span data-stu-id="73c70-112">Your application must also set the degree of anisotropy to a value greater than one.</span></span> <span data-ttu-id="73c70-113">A tale scopo, chiamare il metodo [**IDirect3DDevice9:: SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) .</span><span class="sxs-lookup"><span data-stu-id="73c70-113">Do this by calling the [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) method.</span></span> <span data-ttu-id="73c70-114">Impostare il valore del primo parametro sul numero di indice Integer (0-7) della trama per cui si sta impostando il livello di isotropia.</span><span class="sxs-lookup"><span data-stu-id="73c70-114">Set the value of the first parameter to the integer index number (0-7) of the texture for which you are setting the degree of isotropy.</span></span> <span data-ttu-id="73c70-115">Passare D3DSAMP \_ MAXANISOTROPY come valore del secondo parametro.</span><span class="sxs-lookup"><span data-stu-id="73c70-115">Pass D3DSAMP\_MAXANISOTROPY as the value of the second parameter.</span></span> <span data-ttu-id="73c70-116">Il parametro finale deve essere il livello di isotropia.</span><span class="sxs-lookup"><span data-stu-id="73c70-116">The final parameter should be the degree of isotropy.</span></span>
+
+<span data-ttu-id="73c70-117">È possibile disabilitare il filtro di applicazione del filtro di base impostando il grado di isotropia su uno. qualsiasi valore maggiore di uno lo Abilita.</span><span class="sxs-lookup"><span data-stu-id="73c70-117">You can disable isotropic filtering by setting the degree of isotropy to one; any value larger than one enables it.</span></span> <span data-ttu-id="73c70-118">Controllare il flag MaxAnisotropy nella struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per determinare il possibile intervallo di valori per il grado di anisotropia.</span><span class="sxs-lookup"><span data-stu-id="73c70-118">Check the MaxAnisotropy flag in the [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) structure to determine the possible range of values for the degree of anisotropy.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="73c70-119">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="73c70-119">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="73c70-120">Filtraggio trama</span><span class="sxs-lookup"><span data-stu-id="73c70-120">Texture Filtering</span></span>](texture-filtering.md)
+</dt> </dl>
+
+ 
+
+ 
