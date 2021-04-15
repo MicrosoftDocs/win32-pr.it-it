@@ -1,0 +1,120 @@
+---
+title: Messaggio MM_JOY1BUTTONDOWN (mmsystem. h)
+description: Il \_ messaggio mm JOY1BUTTONDOWN notifica alla finestra che ha acquisito il joystick JOYSTICKID1 che è stato premuto un pulsante.
+ms.assetid: 764f4bb4-134d-46b8-badb-3fb06af31e13
+keywords:
+- MM_JOY1BUTTONDOWN messaggi multimediali di Windows
+topic_type:
+- apiref
+api_name:
+- MM_JOY1BUTTONDOWN
+api_location:
+- Mmsystem.h
+api_type:
+- HeaderDef
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: cefb70e5dd47fc14b39dcdeb59043b6827e7b89b
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104475503"
+---
+# <a name="mm_joy1buttondown-message"></a><span data-ttu-id="62ac3-104">\_Messaggio JOY1BUTTONDOWN mm</span><span class="sxs-lookup"><span data-stu-id="62ac3-104">MM\_JOY1BUTTONDOWN message</span></span>
+
+<span data-ttu-id="62ac3-105">Il messaggio **mm \_ JOY1BUTTONDOWN** notifica alla finestra che ha acquisito il joystick JOYSTICKID1 che è stato premuto un pulsante.</span><span class="sxs-lookup"><span data-stu-id="62ac3-105">The **MM\_JOY1BUTTONDOWN** message notifies the window that has captured joystick JOYSTICKID1 that a button has been pressed.</span></span>
+
+
+```C++
+MM_JOY1BUTTONDOWN 
+fwButtons = wParam; 
+xPos = LOWORD(lParam); 
+yPos = HIWORD(lParam); 
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="62ac3-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="62ac3-106">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="62ac3-107"><span id="fwButtons"></span><span id="fwbuttons"></span><span id="FWBUTTONS"></span>*fwButtons*</span><span class="sxs-lookup"><span data-stu-id="62ac3-107"><span id="fwButtons"></span><span id="fwbuttons"></span><span id="FWBUTTONS"></span>*fwButtons*</span></span>
+</dt> <dd>
+
+<span data-ttu-id="62ac3-108">Identifica il pulsante che ha modificato lo stato e i pulsanti premuti.</span><span class="sxs-lookup"><span data-stu-id="62ac3-108">Identifies the button that has changed state and the buttons that are pressed.</span></span> <span data-ttu-id="62ac3-109">I possibili valori sono i seguenti:</span><span class="sxs-lookup"><span data-stu-id="62ac3-109">It can be one of the following:</span></span>
+
+
+
+| <span data-ttu-id="62ac3-110">Requisito</span><span class="sxs-lookup"><span data-stu-id="62ac3-110">Requirement</span></span> | <span data-ttu-id="62ac3-111">Valore</span><span class="sxs-lookup"><span data-stu-id="62ac3-111">Value</span></span> |
+|-----------------|-------------------------------------------|
+| <span data-ttu-id="62ac3-112">GIOIA \_ BUTTON1CHG</span><span class="sxs-lookup"><span data-stu-id="62ac3-112">JOY\_BUTTON1CHG</span></span> | <span data-ttu-id="62ac3-113">Il primo pulsante del joystick è stato modificato.</span><span class="sxs-lookup"><span data-stu-id="62ac3-113">First joystick button has changed state.</span></span>  |
+| <span data-ttu-id="62ac3-114">GIOIA \_ BUTTON2CHG</span><span class="sxs-lookup"><span data-stu-id="62ac3-114">JOY\_BUTTON2CHG</span></span> | <span data-ttu-id="62ac3-115">Il secondo pulsante del joystick è stato modificato.</span><span class="sxs-lookup"><span data-stu-id="62ac3-115">Second joystick button has changed state.</span></span> |
+| <span data-ttu-id="62ac3-116">GIOIA \_ BUTTON3CHG</span><span class="sxs-lookup"><span data-stu-id="62ac3-116">JOY\_BUTTON3CHG</span></span> | <span data-ttu-id="62ac3-117">Il terzo pulsante del joystick è stato modificato.</span><span class="sxs-lookup"><span data-stu-id="62ac3-117">Third joystick button has changed state.</span></span>  |
+| <span data-ttu-id="62ac3-118">GIOIA \_ BUTTON4CHG</span><span class="sxs-lookup"><span data-stu-id="62ac3-118">JOY\_BUTTON4CHG</span></span> | <span data-ttu-id="62ac3-119">Il quarto pulsante del joystick è stato modificato.</span><span class="sxs-lookup"><span data-stu-id="62ac3-119">Fourth joystick button has changed state.</span></span> |
+
+
+
+ 
+
+<span data-ttu-id="62ac3-120">e uno o più degli elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="62ac3-120">and one or more of the following:</span></span>
+
+
+
+| <span data-ttu-id="62ac3-121">Requisito</span><span class="sxs-lookup"><span data-stu-id="62ac3-121">Requirement</span></span> | <span data-ttu-id="62ac3-122">Valore</span><span class="sxs-lookup"><span data-stu-id="62ac3-122">Value</span></span> |
+|--------------|------------------------------------|
+| <span data-ttu-id="62ac3-123">GIOIA \_ Button1</span><span class="sxs-lookup"><span data-stu-id="62ac3-123">JOY\_BUTTON1</span></span> | <span data-ttu-id="62ac3-124">Viene premuto il primo pulsante del joystick.</span><span class="sxs-lookup"><span data-stu-id="62ac3-124">First joystick button is pressed.</span></span>  |
+| <span data-ttu-id="62ac3-125">GIOIA \_ Button2</span><span class="sxs-lookup"><span data-stu-id="62ac3-125">JOY\_BUTTON2</span></span> | <span data-ttu-id="62ac3-126">Viene premuto il secondo pulsante del joystick.</span><span class="sxs-lookup"><span data-stu-id="62ac3-126">Second joystick button is pressed.</span></span> |
+| <span data-ttu-id="62ac3-127">GIOIA \_ Button3</span><span class="sxs-lookup"><span data-stu-id="62ac3-127">JOY\_BUTTON3</span></span> | <span data-ttu-id="62ac3-128">Viene premuto il terzo pulsante del joystick.</span><span class="sxs-lookup"><span data-stu-id="62ac3-128">Third joystick button is pressed.</span></span>  |
+| <span data-ttu-id="62ac3-129">GIOIA \_ BUTTON4</span><span class="sxs-lookup"><span data-stu-id="62ac3-129">JOY\_BUTTON4</span></span> | <span data-ttu-id="62ac3-130">Viene premuto il quarto pulsante del joystick.</span><span class="sxs-lookup"><span data-stu-id="62ac3-130">Fourth joystick button is pressed.</span></span> |
+
+
+
+ 
+
+</dd> <dt>
+
+<span data-ttu-id="62ac3-131"><span id="xPos"></span><span id="xpos"></span><span id="XPOS"></span>*xPos*</span><span class="sxs-lookup"><span data-stu-id="62ac3-131"><span id="xPos"></span><span id="xpos"></span><span id="XPOS"></span>*xPos*</span></span>
+</dt> <dd>
+
+<span data-ttu-id="62ac3-132">Coordinata x del joystick rispetto all'angolo superiore sinistro dell'area client.</span><span class="sxs-lookup"><span data-stu-id="62ac3-132">The x-coordinate of the joystick relative to the upper left corner of the client area.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="62ac3-133"><span id="yPos"></span><span id="ypos"></span><span id="YPOS"></span>*yPos*</span><span class="sxs-lookup"><span data-stu-id="62ac3-133"><span id="yPos"></span><span id="ypos"></span><span id="YPOS"></span>*yPos*</span></span>
+</dt> <dd>
+
+<span data-ttu-id="62ac3-134">Coordinata y del joystick rispetto all'angolo superiore sinistro dell'area client.</span><span class="sxs-lookup"><span data-stu-id="62ac3-134">The y-coordinate of the joystick relative to the upper left corner of the client area.</span></span>
+
+</dd> </dl>
+
+## <a name="requirements"></a><span data-ttu-id="62ac3-135">Requisiti</span><span class="sxs-lookup"><span data-stu-id="62ac3-135">Requirements</span></span>
+
+
+
+| <span data-ttu-id="62ac3-136">Requisito</span><span class="sxs-lookup"><span data-stu-id="62ac3-136">Requirement</span></span> | <span data-ttu-id="62ac3-137">Valore</span><span class="sxs-lookup"><span data-stu-id="62ac3-137">Value</span></span> |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="62ac3-138">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="62ac3-138">Minimum supported client</span></span><br/> | <span data-ttu-id="62ac3-139">Windows 2000 Professional \[solo app desktop\]</span><span class="sxs-lookup"><span data-stu-id="62ac3-139">Windows 2000 Professional \[desktop apps only\]</span></span><br/>                                                |
+| <span data-ttu-id="62ac3-140">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="62ac3-140">Minimum supported server</span></span><br/> | <span data-ttu-id="62ac3-141">Windows 2000 Server \[solo app desktop\]</span><span class="sxs-lookup"><span data-stu-id="62ac3-141">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                      |
+| <span data-ttu-id="62ac3-142">Intestazione</span><span class="sxs-lookup"><span data-stu-id="62ac3-142">Header</span></span><br/>                   | <dl> <span data-ttu-id="62ac3-143"><dt>Mmsystem. h (include Windows. h)</dt></span><span class="sxs-lookup"><span data-stu-id="62ac3-143"><dt>Mmsystem.h (include Windows.h)</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="62ac3-144">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="62ac3-144">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="62ac3-145">Joystick</span><span class="sxs-lookup"><span data-stu-id="62ac3-145">Joysticks</span></span>](joysticks.md)
+</dt> <dt>
+
+[<span data-ttu-id="62ac3-146">Messaggi di joystick multimediali</span><span class="sxs-lookup"><span data-stu-id="62ac3-146">Multimedia Joystick Messages</span></span>](multimedia-joystick-messages.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
