@@ -1,0 +1,627 @@
+- name: Registro eventi di Windows
+  href: windows-event-log.md
+  items:
+    - name: Novità
+      href: what-s-new.md
+    - name: Utilizzo del registro eventi di Windows
+      href: using-windows-event-log.md
+      items:
+        - name: Scrittura di un manifesto di strumentazione
+          href: writing-an-instrumentation-manifest.md
+          items:
+            - name: Identificazione del provider
+              href: identifying-the-provider.md
+            - name: Definizione di canali
+              href: defining-channels.md
+            - name: Definizione di livelli di gravità
+              href: defining-severity-levels.md
+            - name: Definizione di attività e OpCode
+              href: defining-tasks-and-opcodes.md
+            - name: Definizione di parole chiave utilizzate per classificare i tipi di eventi
+              href: defining-keywords-used-to-classify-types-of-events.md
+            - name: Definizione di filtri
+              href: defining-filters.md
+            - name: Definizione dei mapping nome/valore
+              href: defining-name-value-mappings.md
+            - name: Definizione di modelli di dati degli eventi
+              href: defining-event-data-templates.md
+            - name: Definizione di eventi
+              href: defining-events.md
+            - name: Localizzazione delle stringhe di messaggio
+              href: localizing-message-strings.md
+        - name: Compilazione di un manifesto di strumentazione
+          href: compiling-an-instrumentation-manifest.md
+        - name: Sviluppo di un provider
+          href: developing-a-provider.md
+        - name: Utilizzo di eventi
+          href: consuming-events.md
+          items:
+            - name: Esecuzione di query per gli eventi
+              href: querying-for-events.md
+            - name: Sottoscrizione di eventi
+              href: subscribing-to-events.md
+            - name: Eventi di rendering
+              href: rendering-events.md
+              items:
+                - name: Formattazione dei messaggi di evento
+                  href: formatting-event-messages.md
+            - name: Eventi di segnalibro
+              href: bookmarking-events.md
+        - name: Recupero e impostazione delle proprietà di configurazione di un canale &apos;
+          href: getting-and-setting-a-channel-s-configuration-properties.md
+        - name: Recupero dei metadati di un provider &apos;
+          href: getting-a-provider-s-metadata-.md
+        - name: Accesso ai computer remoti
+          href: accessing-remote-computers.md
+        - name: Salvataggio di eventi in un file di log
+          href: saving-events-to-a-log-file.md
+    - name: Riferimento al registro eventi di Windows
+      href: windows-event-log-reference.md
+      items:
+        - name: Schema EventManifest
+          href: eventmanifestschema-schema.md
+          items:
+            - name: Elementi dello schema EventManifest
+              href: eventmanifestschema-elements.md
+              items:
+                - name: Elemento backup automatico (ChannelLoggingType)
+                  href: eventmanifestschema-autobackup-channelloggingtype-element.md
+                - name: Binary (TemplateItemType)-elemento
+                  href: eventmanifestschema-binary-templateitemtype-element.md
+                - name: Elemento bitMap (MapType)
+                  href: eventmanifestschema-bitmap-maptype-element.md
+                - name: Elemento bufferSize (ChannelPublishingType)
+                  href: eventmanifestschema-buffersize-channelpublishingtype-element.md
+                - name: Elemento Channel (ChannelListType)
+                  href: eventmanifestschema-channel-channellisttype-element.md
+                - name: Channels (MetadataType)-elemento
+                  href: eventmanifestschema-channels-metadatatype-element.md
+                - name: Channels (ProviderType)-elemento
+                  href: eventmanifestschema-channels-providertype-element.md
+                - name: Elemento clockType (ChannelPublishingType)
+                  href: eventmanifestschema-clocktype-channelpublishingtype-element.md
+                - name: Elemento controlGuid (ChannelPublishingType)
+                  href: eventmanifestschema-controlguid-channelpublishingtype-element.md
+                - name: Elemento data (StructDefinitionType)
+                  href: eventmanifestschema-data-structdefinitiontype-element.md
+                - name: Elemento data (TemplateItemType)
+                  href: eventmanifestschema-data-templateitemtype-element.md
+                - name: Description (InputType)-elemento
+                  href: eventmanifestschema-description-inputtype-element.md
+                - name: Elemento Event (DefinitionType)
+                  href: eventmanifestschema-event-definitiontype-element.md
+                - name: evento (OpCode) (elemento)
+                  href: eventmanifestschema-event-opcode-element.md
+                - name: Elemento Event (TaskEventDefinitionType)
+                  href: eventmanifestschema-event-taskeventdefinitiontype-element.md
+                - name: Elemento Events (InstrumentationType)
+                  href: eventmanifestschema-events-instrumentationtype-element.md
+                - name: Elemento Events (ProviderType)
+                  href: eventmanifestschema-events-providertype-element.md
+                - name: Elemento importChannel (ChannelListType)
+                  href: eventmanifestschema-importchannel-channellisttype-element.md
+                - name: Elemento instrumentationManifest
+                  href: eventmanifestschema-instrumentationmanifest-element.md
+                - name: Instrumentation (instrumentationManifest)-elemento
+                  href: eventmanifestschema-instrumentation-instrumentationmanifest-element.md
+                - name: Elemento Intype (InputTypeListType)
+                  href: eventmanifestschema-intype-inputtypelisttype-element.md
+                - name: intypes (TypeListType)-elemento
+                  href: eventmanifestschema-intypes-typelisttype-element.md
+                - name: Elemento Keyword (KeywordListType)
+                  href: eventmanifestschema-keyword-keywordlisttype-element.md
+                - name: Elemento Keywords (ChannelPublishingType)
+                  href: eventmanifestschema-keywords-channelpublishingtype-element.md
+                - name: Elemento Keywords (MetadataType)
+                  href: eventmanifestschema-keywords-metadatatype-element.md
+                - name: Elemento Keywords (ProviderType)
+                  href: eventmanifestschema-keywords-providertype-element.md
+                - name: Elemento latence (ChannelPublishingType)
+                  href: eventmanifestschema-latency-channelpublishingtype-element.md
+                - name: Elemento Level (ChannelPublishingType)
+                  href: eventmanifestschema-level-channelpublishingtype-element.md
+                - name: Elemento Level (LevelListType)
+                  href: eventmanifestschema-level-levellisttype-element.md
+                - name: levels (MetadataType)-elemento
+                  href: eventmanifestschema-levels-metadatatype-element.md
+                - name: levels (ProviderType)-elemento
+                  href: eventmanifestschema-levels-providertype-element.md
+                - name: Elemento Localization (instrumentationManifest)
+                  href: eventmanifestschema-localization-instrumentationmanifest-element.md
+                - name: Elemento Logging (ChannelType)
+                  href: eventmanifestschema-logging-channeltype-element.md
+                - name: Elemento map (BitMapType)
+                  href: eventmanifestschema-map-bitmaptype-element.md
+                - name: Elemento map (PatternMapType)
+                  href: eventmanifestschema-map-patternmaptype-element.md
+                - name: Elemento map (ValueMapType)
+                  href: eventmanifestschema-map-valuemaptype-element.md
+                - name: Elemento Maps (ProviderType)
+                  href: eventmanifestschema-maps-providertype-element.md
+                - name: Elemento maxBuffers (ChannelPublishingType)
+                  href: eventmanifestschema-maxbuffers-channelpublishingtype-element.md
+                - name: maxSize (ChannelLoggingType)-elemento
+                  href: eventmanifestschema-maxsize-channelloggingtype-element.md
+                - name: Message (messageTable)-elemento
+                  href: eventmanifestschema-message-messagetable-element.md
+                - name: Elemento messageTable (EventsType)
+                  href: eventmanifestschema-messagetable-instrumentationtype-element.md
+                - name: Elemento messageTable (MetadataType)
+                  href: eventmanifestschema-messagetable-metadatatype-element.md
+                - name: Elemento Metadata (instrumentationManifest)
+                  href: eventmanifestschema-metadata-instrumentationmanifest-element.md
+                - name: Elemento minBuffers (ChannelPublishingType)
+                  href: eventmanifestschema-minbuffers-channelpublishingtype-element.md
+                - name: Elemento namedQueries (MetadataType)
+                  href: eventmanifestschema-namedqueries-metadatatype-element.md
+                - name: Elemento namedQueries (ProviderType)
+                  href: eventmanifestschema-namedqueries-providertype-element.md
+                - name: Elemento Opcode (OpcodeListType)
+                  href: eventmanifestschema-opcode-opcodelisttype-element.md
+                - name: Elemento Opcode (TaskEventDefinitionType)
+                  href: eventmanifestschema-opcode-taskeventdefinitiontype-element.md
+                - name: OpCodes (MetadataType)-elemento
+                  href: eventmanifestschema-opcodes-metadatatype-element.md
+                - name: OpCodes (ProviderType)-elemento
+                  href: eventmanifestschema-opcodes-providertype-element.md
+                - name: OpCodes (TaskType)-elemento
+                  href: eventmanifestschema-opcodes-tasktype-element.md
+                - name: Elemento outtype (InputType)
+                  href: eventmanifestschema-outtype-inputtype-element.md
+                - name: Elemento patternMap (PatternMapListType)
+                  href: eventmanifestschema-patternmap-patternmaplisttype-element.md
+                - name: Elemento patternMaps (NamedQueryType)
+                  href: eventmanifestschema-patternmaps-namedquerytype-element.md
+                - name: Elemento provider (EventsType)
+                  href: eventmanifestschema-provider-eventstype-element.md
+                - name: Publishing (ChannelType)-elemento
+                  href: eventmanifestschema-publishing-channeltype-element.md
+                - name: Elemento resources (LocalizationType)
+                  href: eventmanifestschema-resources-localizationtype-element.md
+                - name: Elemento Retention (ChannelLoggingType)
+                  href: eventmanifestschema-retention-channelloggingtype-element.md
+                - name: Elemento sidType (ChannelPublishingType)
+                  href: eventmanifestschema-sidtype-channelpublishingtype-element.md
+                - name: Elemento String (StringTableType)
+                  href: eventmanifestschema-string-stringtabletype-element.md
+                - name: Elemento un'StringTable (LocalizationType)
+                  href: eventmanifestschema-stringtable-localizationtype-element.md
+                - name: Elemento un'StringTable (Resources)
+                  href: eventmanifestschema-stringtable-resources-element.md
+                - name: Elemento struct (TemplateItemType)
+                  href: eventmanifestschema-struct-templateitemtype-element.md
+                - name: Elemento Task (DefinitionType)
+                  href: eventmanifestschema-task-definitiontype-element.md
+                - name: Elemento Task (TaskListType)
+                  href: eventmanifestschema-task-tasklisttype-element.md
+                - name: Tasks (ProviderType)-elemento
+                  href: eventmanifestschema-tasks-providertype-element.md
+                - name: Elemento Template (TemplateListType)
+                  href: eventmanifestschema-template-templatelisttype-element.md
+                - name: Templates (ProviderType)-elemento
+                  href: eventmanifestschema-templates-providertype-element.md
+                - name: tipi (MetadataType) (elemento)
+                  href: eventmanifestschema-types-metadatatype-element.md
+                - name: Elemento UserData (TemplateItemType)
+                  href: eventmanifestschema-userdata-templateitemtype-element.md
+                - name: Elemento valueMap (MapType)
+                  href: eventmanifestschema-valuemap-maptype-element.md
+                - name: Elemento XMLType (XmlTypeListType)
+                  href: eventmanifestschema-xmltype-xmltypelisttype-element.md
+                - name: Elemento xmltypes (TypeListType)
+                  href: eventmanifestschema-xmltypes-typelisttype-element.md
+            - name: Tipi semplici dello schema EventManifest
+              href: eventmanifestschema-simple-types.md
+              items:
+                - name: Tipo semplice CountType
+                  href: eventmanifestschema-counttype-simpletype.md
+                - name: Tipo semplice CSymbolType
+                  href: eventmanifestschema-csymboltype-simpletype.md
+                - name: Tipo semplice FilePath
+                  href: eventmanifestschema-filepath-simpletype.md
+                - name: Tipo semplice GUIDType
+                  href: eventmanifestschema-guidtype-simpletype.md
+                - name: Tipo semplice HexInt8Type
+                  href: eventmanifestschema-hex8type-simpletype.md
+                - name: Tipo semplice HexInt16Type
+                  href: eventmanifestschema-hex16type-simpletype.md
+                - name: Tipo semplice HexInt32Type
+                  href: eventmanifestschema-hex32type-simpletype.md
+                - name: Tipo semplice HexInt64Type
+                  href: eventmanifestschema-hex64type-simpletype.md
+                - name: Tipo semplice UInt8Type
+                  href: eventmanifestschema-hexint8type-simpletype.md
+                - name: Tipo semplice UInt16Type
+                  href: eventmanifestschema-hexint16type-simpletype.md
+                - name: Tipo semplice UInt32Type
+                  href: eventmanifestschema-hexint32type-simpletype.md
+                - name: Tipo semplice UInt64Type
+                  href: eventmanifestschema-hexint64type-simpletype.md
+                - name: Tipo semplice LengthType
+                  href: eventmanifestschema-lengthtype-simpletype.md
+                - name: Tipo semplice QNameList
+                  href: eventmanifestschema-qnamelist-simpletype.md
+                - name: Tipo semplice strTableRef
+                  href: eventmanifestschema-strtableref-simpletype.md
+            - name: Tipi complessi dello schema EventManifest
+              href: eventmanifestschema-complex-types.md
+              items:
+                - name: Tipo complesso BitMapType
+                  href: eventmanifestschema-bitmaptype-complextype.md
+                - name: Tipo complesso BitMapValueType
+                  href: eventmanifestschema-bitmapvaluetype-complextype.md
+                - name: Tipo complesso ChannelListType
+                  href: eventmanifestschema-channellisttype-complextype.md
+                - name: Tipo complesso ChannelLoggingType
+                  href: eventmanifestschema-channelloggingtype-complextype.md
+                - name: Tipo complesso ChannelPublishingType
+                  href: eventmanifestschema-channelpublishingtype-complextype.md
+                - name: Tipo complesso ChannelType
+                  href: eventmanifestschema-channeltype-complextype.md
+                - name: Tipo complesso DataDefinitionType
+                  href: eventmanifestschema-datadefinitiontype-complextype.md
+                - name: Tipo complesso DefinitionType
+                  href: eventmanifestschema-definitiontype-complextype.md
+                - name: Tipo complesso EventDefinitionType
+                  href: eventmanifestschema-eventdefinitiontype-complextype.md
+                - name: Tipo complesso EventsType
+                  href: eventmanifestschema-eventstype-complextype.md
+                - name: Tipo complesso FilterListType
+                  href: eventmanifestschema-filterlisttype-complextype.md
+                - name: Tipo complesso FilterType
+                  href: eventmanifestschema-filtertype-complextype.md
+                - name: Tipo complesso ImportChannelType
+                  href: eventmanifestschema-importchanneltype-complextype.md
+                - name: Tipo complesso InputType
+                  href: eventmanifestschema-inputtype-complextype.md
+                - name: Tipo complesso InputTypeListType
+                  href: eventmanifestschema-inputtypelisttype-complextype.md
+                - name: Tipo complesso InstrumentationManifestType
+                  href: eventmanifestschema-instrumentationmanifesttype-complextype.md
+                - name: Tipo complesso InstrumentationType
+                  href: eventmanifestschema-instrumentationtype-complextype.md
+                - name: Tipo complesso KeywordListType
+                  href: eventmanifestschema-keywordlisttype-complextype.md
+                - name: Tipo complesso KeywordType
+                  href: eventmanifestschema-keywordtype-complextype.md
+                - name: Tipo complesso LevelListType
+                  href: eventmanifestschema-levellisttype-complextype.md
+                - name: Tipo complesso LevelType
+                  href: eventmanifestschema-leveltype-complextype.md
+                - name: Tipo complesso LocalizationType
+                  href: eventmanifestschema-localizationtype-complextype.md
+                - name: Tipo complesso MapType
+                  href: eventmanifestschema-maptype-complextype.md
+                - name: Tipo complesso MetadataType
+                  href: eventmanifestschema-metadatatype-complextype.md
+                - name: Tipo complesso NamedQueryType
+                  href: eventmanifestschema-namedquerytype-complextype.md
+                - name: Tipo complesso OpcodeListType
+                  href: eventmanifestschema-opcodelisttype-complextype.md
+                - name: Tipo complesso OpcodeType
+                  href: eventmanifestschema-opcodetype-complextype.md
+                - name: Tipo complesso OutputType
+                  href: eventmanifestschema-outputtype-complextype.md
+                - name: Tipo complesso PatternMapListType
+                  href: eventmanifestschema-patternmaplisttype-complextype.md
+                - name: Tipo complesso PatternMapType
+                  href: eventmanifestschema-patternmaptype-complextype.md
+                - name: Tipo complesso PatternMapValueType
+                  href: eventmanifestschema-patternmapvaluetype-complextype.md
+                - name: Tipo complesso ProviderType
+                  href: eventmanifestschema-providertype-complextype.md
+                - name: Tipo complesso StringTableType
+                  href: eventmanifestschema-stringtabletype-complextype.md
+                - name: Tipo complesso StructDefinitionType
+                  href: eventmanifestschema-structdefinitiontype-complextype.md
+                - name: Tipo complesso TaskEventDefinitionType
+                  href: eventmanifestschema-taskeventdefinitiontype-complextype.md
+                - name: Tipo complesso TaskListType
+                  href: eventmanifestschema-tasklisttype-complextype.md
+                - name: Tipo complesso TaskType
+                  href: eventmanifestschema-tasktype-complextype.md
+                - name: Tipo complesso TemplateItemType
+                  href: eventmanifestschema-templateitemtype-complextype.md
+                - name: Tipo complesso TemplateListType
+                  href: eventmanifestschema-templatelisttype-complextype.md
+                - name: Tipo complesso TypeListType
+                  href: eventmanifestschema-typelisttype-complextype.md
+                - name: Tipo complesso ValueMapType
+                  href: eventmanifestschema-valuemaptype-complextype.md
+                - name: Tipo complesso ValueMapValueType
+                  href: eventmanifestschema-valuemapvaluetype-complextype.md
+                - name: Tipo complesso XmlType
+                  href: eventmanifestschema-xmltype-complextype.md
+                - name: Tipo complesso XmlTypeListType
+                  href: eventmanifestschema-xmltypelisttype-complextype.md
+        - name: Schema di eventi
+          href: eventschema-schema.md
+          items:
+            - name: Elementi dello schema dell'evento
+              href: eventschema-elements.md
+              items:
+                - name: Elemento BinaryEventData (EventType)
+                  href: eventschema-binaryeventdata-eventtype-element.md
+                - name: Binary (EventDataType)-elemento
+                  href: eventschema-binary-eventdatatype-element.md
+                - name: Elemento Channel (RenderingInfoType)
+                  href: eventschema-channel-renderinginfotype-element.md
+                - name: Elemento Channel (SystemPropertiesType)
+                  href: eventschema-channel-systempropertiestype-element.md
+                - name: Elemento ComplexData (EventDataType)
+                  href: eventschema-complexdata-eventdatatype-element.md
+                - name: Component (DebugDataType)-elemento
+                  href: eventschema-component-debugdatatype-element.md
+                - name: Computer (SystemPropertiesType)-elemento
+                  href: eventschema-computer-systempropertiestype-element.md
+                - name: Elemento Correlation (SystemPropertiesType)
+                  href: eventschema-correlation-systempropertiestype-element.md
+                - name: Elemento dataitemname (ProcessingErrorDataType)
+                  href: eventschema-dataitemname-processingerrordatatype-element.md
+                - name: Elemento data (ComplexDataType)
+                  href: eventschema-data-complexdatatype-element.md
+                - name: Elemento data (EventDataType)
+                  href: eventschema-data-eventdatatype-element.md
+                - name: Elemento DebugData (EventType)
+                  href: eventschema-debugdata-eventtype-element.md
+                - name: ErrorCode (ProcessingErrorDataType)-elemento
+                  href: eventschema-errorcode-processingerrordatatype-element.md
+                - name: Elemento Event
+                  href: eventschema-event-element.md
+                - name: Elemento EventData (EventType)
+                  href: eventschema-eventdata-eventtype-element.md
+                - name: Elemento EventId (SystemPropertiesType)
+                  href: eventschema-eventid-systempropertiestype-element.md
+                - name: Elemento EventPayload (ProcessingErrorDataType)
+                  href: eventschema-eventpayload-processingerrordatatype-element.md
+                - name: Elemento EventRecordID (SystemPropertiesType)
+                  href: eventschema-eventrecordid-systempropertiestype-element.md
+                - name: Esecuzione (SystemPropertiesType) (elemento)
+                  href: eventschema-execution-systempropertiestype-element.md
+                - name: Elemento FileLine (DebugDataType)
+                  href: eventschema-fileline-debugdatatype-element.md
+                - name: Elemento FlagName (DebugDataType)
+                  href: eventschema-flagname-debugdatatype-element.md
+                - name: Funzione (DebugDataType)-elemento
+                  href: eventschema-function-debugdatatype-element.md
+                - name: Elemento Keyword (keywords)
+                  href: eventschema-keyword-keywords-element.md
+                - name: Elemento Keywords (RenderingInfoType)
+                  href: eventschema-keywords-renderingtype-element.md
+                - name: Elemento Keywords (SystemPropertiesType)
+                  href: eventschema-keywords-systempropertiestype-element.md
+                - name: Elemento Level (RenderingInfoType)
+                  href: eventschema-level-renderingtype-element.md
+                - name: Elemento Level (SystemPropertiesType)
+                  href: eventschema-level-systempropertiestype-element.md
+                - name: LevelName (DebugDataType) (elemento)
+                  href: eventschema-levelname-debugdatatype-element.md
+                - name: Message (DebugDataType)-elemento
+                  href: eventschema-message-debugdatatype-element.md
+                - name: Message (RenderingInfoType)-elemento
+                  href: eventschema-message-renderingtype-element.md
+                - name: Elemento Opcode (RenderingInfoType)
+                  href: eventschema-opcode-renderingtype-element.md
+                - name: Elemento Opcode (SystemPropertiesType)
+                  href: eventschema-opcode-systempropertiestype-element.md
+                - name: Elemento ProcessingErrorData (EventType)
+                  href: eventschema-processingerrordata-eventtype-element.md
+                - name: Elemento provider (SystemPropertiesType)
+                  href: eventschema-provider-systempropertiestype-element.md
+                - name: Elemento provider (RenderingInfoType)
+                  href: eventschema-publisher-renderinginfotype-element.md
+                - name: Elemento RenderingInfo (EventType)
+                  href: eventschema-renderinginfo-eventtype-element.md
+                - name: Security (SystemPropertiesType)-elemento
+                  href: eventschema-security-systempropertiestype-element.md
+                - name: Elemento SequenceNumber (DebugDataType)
+                  href: eventschema-sequencenumber-debugdatatype-element.md
+                - name: Elemento SubComponent (DebugDataType)
+                  href: eventschema-subcomponent-debugdatatype-element.md
+                - name: System (EventType) (elemento)
+                  href: eventschema-system-eventtype-element.md
+                - name: Elemento Task (RenderingInfoType)
+                  href: eventschema-task-renderingtype-element.md
+                - name: Elemento Task (SystemPropertiesType)
+                  href: eventschema-task-systempropertiestype-element.md
+                - name: Elemento TimeCreated (SystemPropertiesType)
+                  href: eventschema-timecreated-systempropertiestype-element.md
+                - name: Elemento UserData (EventType)
+                  href: eventschema-userdata-eventtype-element.md
+                - name: Version (SystemPropertiesType)-elemento
+                  href: schema-version-systempropertiestype-element.md
+            - name: Tipi semplici dello schema di eventi
+              href: eventschema-simple-types.md
+              items:
+                - name: Tipo semplice GUIDType
+                  href: eventschema-guidtype-simpletype.md
+                - name: Tipo semplice HexInt32Type
+                  href: eventschema-hexint32type-simpletype.md
+                - name: Tipo semplice HexInt64Type
+                  href: eventschema-hexint64type-simpletype.md
+            - name: Tipi complessi dello schema di eventi
+              href: eventschema-complex-types.md
+              items:
+                - name: Tipo complesso ComplexDataType
+                  href: eventschema-complexdatatype-complextype.md
+                - name: Tipo complesso DataType
+                  href: eventschema-datafieldtype-complextype.md
+                - name: Tipo complesso DebugDataType
+                  href: eventschema-debugdatatype-complextype.md
+                - name: Tipo complesso EventDataType
+                  href: eventschema-eventdatatype-complextype.md
+                - name: Tipo complesso EventType
+                  href: eventschema-eventtype-complextype.md
+                - name: Tipo complesso ProcessingErrorDataType
+                  href: eventschema-processingerrordatatype-complextype.md
+                - name: Tipo complesso RenderingInfoType
+                  href: eventschema-renderingtype-complextype.md
+                - name: Tipo complesso SystemPropertiesType
+                  href: eventschema-systempropertiestype-complextype.md
+                - name: Tipo complesso UserDataType
+                  href: eventschema-userdatatype-complextype.md
+        - name: Schema di query
+          href: queryschema-schema.md
+          items:
+            - name: Elementi dello schema di query
+              href: queryschema-elements.md
+              items:
+                - name: Elemento query
+                  href: queryschema-querylist-element.md
+                - name: Elemento query (QueryListType)
+                  href: queryschema-query-querylisttype-element.md
+                - name: Select (QueryType)-elemento
+                  href: queryschema-select-querytype-element.md
+                - name: Elemento di eliminazione (QueryType)
+                  href: queryschema-suppress-querytype-element.md
+            - name: Tipi complessi dello schema di query
+              href: queryschema-complex-types.md
+              items:
+                - name: Tipo complesso QueryListType
+                  href: queryschema-querylisttype-complextype.md
+                - name: Tipo complesso QueryType
+                  href: queryschema-querytype-complextype.md
+        - name: Costanti registro eventi di Windows
+          href: windows-event-log-constants.md
+        - name: Tipi di dati del registro eventi di Windows
+          href: windows-event-log-data-types.md
+        - name: Costanti di errore nel registro eventi di Windows
+          href: windows-event-log-error-constants.md
+        - name: Enumerazioni del registro eventi di Windows
+          href: windows-event-log-enumerations.md
+          items:
+            - name: EVT_CHANNEL_CLOCK_TYPE
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_channel_clock_type
+            - name: EVT_CHANNEL_CONFIG_PROPERTY_ID
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_channel_config_property_id
+            - name: EVT_CHANNEL_ISOLATION_TYPE
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_channel_isolation_type
+            - name: EVT_CHANNEL_REFERENCE_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_channel_reference_flags
+            - name: EVT_CHANNEL_SID_TYPE
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_channel_sid_type
+            - name: EVT_CHANNEL_TYPE
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_channel_type
+            - name: EVT_EVENT_METADATA_PROPERTY_ID
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_event_metadata_property_id
+            - name: EVT_EVENT_PROPERTY_ID
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_event_property_id
+            - name: EVT_EXPORTLOG_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_exportlog_flags
+            - name: EVT_FORMAT_MESSAGE_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_format_message_flags
+            - name: EVT_LOG_PROPERTY_ID
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_log_property_id
+            - name: EVT_LOGIN_CLASS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_login_class
+            - name: EVT_OPEN_LOG_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_open_log_flags
+            - name: EVT_PUBLISHER_METADATA_PROPERTY_ID
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_publisher_metadata_property_id
+            - name: EVT_QUERY_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_query_flags
+            - name: EVT_QUERY_PROPERTY_ID
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_query_property_id
+            - name: EVT_RENDER_CONTEXT_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_render_context_flags
+            - name: EVT_RENDER_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_render_flags
+            - name: EVT_RPC_LOGIN_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_rpc_login_flags
+            - name: EVT_SEEK_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_seek_flags
+            - name: EVT_SUBSCRIBE_FLAGS
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_subscribe_flags
+            - name: EVT_SUBSCRIBE_NOTIFY_ACTION
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_subscribe_notify_action
+            - name: EVT_SYSTEM_PROPERTY_ID
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_system_property_id
+            - name: EVT_VARIANT_TYPE
+              href: /windows/win32/api/WinEvt/ne-winevt-evt_variant_type
+        - name: Funzioni del registro eventi di Windows
+          href: windows-event-log-functions.md
+          items:
+            - name: EVT_SUBSCRIBE_CALLBACK
+              href: /windows/desktop/api/winevt/nc-winevt-evt_subscribe_callback
+            - name: EvtArchiveExportedLog
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtarchiveexportedlog
+            - name: EvtCancel
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtcancel
+            - name: EvtClearLog
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtclearlog
+            - name: EvtClose
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtclose
+            - name: EvtCreateBookmark
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark
+            - name: EvtCreateRenderContext
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtcreaterendercontext
+            - name: EvtExportLog
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtexportlog
+            - name: EvtFormatMessage
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtformatmessage
+            - name: EvtGetChannelConfigProperty
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgetchannelconfigproperty
+            - name: EvtGetEventInfo
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgeteventinfo
+            - name: EvtGetEventMetadataProperty
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgeteventmetadataproperty
+            - name: EvtGetExtendedStatus
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgetextendedstatus
+            - name: EvtGetLogInfo
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgetloginfo
+            - name: EvtGetObjectArrayProperty
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgetobjectarrayproperty
+            - name: EvtGetObjectArraySize
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgetobjectarraysize
+            - name: EvtGetPublisherMetadataProperty
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgetpublishermetadataproperty
+            - name: EvtGetQueryInfo
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtgetqueryinfo
+            - name: EvtNext
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtnext
+            - name: EvtNextChannelPath
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtnextchannelpath
+            - name: EvtNextEventMetadata
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtnexteventmetadata
+            - name: EvtNextPublisherId
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtnextpublisherid
+            - name: EvtOpenChannelConfig
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig
+            - name: EvtOpenChannelEnum
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtopenchannelenum
+            - name: EvtOpenEventMetadataEnum
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtopeneventmetadataenum
+            - name: EvtOpenLog
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtopenlog
+            - name: EvtOpenPublisherEnum
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtopenpublisherenum
+            - name: EvtOpenPublisherMetadata
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtopenpublishermetadata
+            - name: EvtOpenSession
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtopensession
+            - name: EvtQuery
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtquery
+            - name: EvtRender
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtrender
+            - name: EvtSaveChannelConfig
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtsavechannelconfig
+            - name: EvtSeek
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtseek
+            - name: EvtSetChannelConfigProperty
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtsetchannelconfigproperty
+            - name: EvtSubscribe
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtsubscribe
+            - name: EvtUpdateBookmark
+              href: /windows/desktop/api/WinEvt/nf-winevt-evtupdatebookmark
+        - name: Strutture del registro eventi di Windows
+          href: windows-event-log-structures.md
+          items:
+            - name: EVT_RPC_LOGIN
+              href: /windows/win32/api/WinEvt/ns-winevt-evt_rpc_login
+            - name: EVT_VARIANT
+              href: /windows/win32/api/WinEvt/ns-winevt-evt_variant
+        - name: Strumenti del registro eventi di Windows
+          href: windows-event-log-tools.md
+          items:
+            - name: Compilatore di messaggi (MC.exe)
+              href: message-compiler--mc-exe-.md
