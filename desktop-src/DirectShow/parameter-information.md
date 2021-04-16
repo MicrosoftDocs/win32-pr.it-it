@@ -1,0 +1,58 @@
+---
+description: Informazioni parametri
+ms.assetid: 2600b200-f57a-46cd-8740-89b7f7aba540
+title: Informazioni parametri
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 3a1a311bbaa7907af0b3578ed88c28e573649f43
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104522186"
+---
+# <a name="parameter-information"></a><span data-ttu-id="b4cf9-103">Informazioni parametri</span><span class="sxs-lookup"><span data-stu-id="b4cf9-103">Parameter Information</span></span>
+
+<span data-ttu-id="b4cf9-104">Il metodo [**IMediaParamInfo:: GetParamInfo**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getparaminfo) restituisce una struttura [**MP \_ PARAMINFO**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_paraminfo) che descrive un parametro.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-104">The [**IMediaParamInfo::GetParamInfo**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getparaminfo) method returns an [**MP\_PARAMINFO**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_paraminfo) structure that describes a parameter.</span></span> <span data-ttu-id="b4cf9-105">Questa struttura contiene le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="b4cf9-105">This structure contains the following information:</span></span>
+
+-   <span data-ttu-id="b4cf9-106">Il membro **mpType** indica il tipo di dati del valore del parametro.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-106">The **mpType** member indicates the data type of the parameter value.</span></span> <span data-ttu-id="b4cf9-107">Per maggiore efficienza, tutti i parametri sono implementati come valori a virgola mobile a 32 bit.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-107">For efficiency, all parameters are implemented as 32-bit floating-point values.</span></span> <span data-ttu-id="b4cf9-108">L'enumerazione del [**\_ tipo MP**](/previous-versions/windows/desktop/api/Medparam/ne-medparam-mp_type) definisce se interpretare il valore come Integer, valore a virgola mobile, booleano o enumerazione (serie Integer).</span><span class="sxs-lookup"><span data-stu-id="b4cf9-108">The [**MP\_TYPE**](/previous-versions/windows/desktop/api/Medparam/ne-medparam-mp_type) enumeration defines whether to interpret the value as an integer, floating-point value, Boolean, or enumeration (integer series).</span></span>
+-   <span data-ttu-id="b4cf9-109">Il membro **mopCaps** indica le curve supportate da questo parametro.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-109">The **mopCaps** member indicates which curves this parameter supports.</span></span> <span data-ttu-id="b4cf9-110">Se il tipo di dati è booleano o Enumeration, l'unica curva che il parametro può supportare è "Jump".</span><span class="sxs-lookup"><span data-stu-id="b4cf9-110">If the data type is Boolean or enumeration, the only curve that the parameter can support is "Jump."</span></span>
+-   <span data-ttu-id="b4cf9-111">I membri **mpdMinValue** e **mpdMaxValue** definiscono i valori minimo e massimo per questo parametro.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-111">The **mpdMinValue** and **mpdMaxValue** members define the minimum and maximum values for this parameter.</span></span> <span data-ttu-id="b4cf9-112">Qualsiasi curva per questo parametro deve rientrare in questo intervallo.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-112">Any curves for this parameter must fall within this range.</span></span>
+-   <span data-ttu-id="b4cf9-113">Il membro **mpdNeutralValue** è il valore predefinito del parametro.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-113">The **mpdNeutralValue** member is the default value of the parameter.</span></span>
+-   <span data-ttu-id="b4cf9-114">Il membro **szLabel** è il nome del parametro e il membro **szUnitText** è il nome dell'unità di misura per il parametro.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-114">The **szLabel** member is the name of the parameter, and the **szUnitText** member is the name for the unit of measure for the parameter.</span></span> <span data-ttu-id="b4cf9-115">Gli esempi possono includere "volume" e "decibel", "Frequency" e "kHz".</span><span class="sxs-lookup"><span data-stu-id="b4cf9-115">Examples might include "Volume" and "Decibels," or "Frequency" and "kHz."</span></span> <span data-ttu-id="b4cf9-116">Entrambe le stringhe sono in inglese e non sono mai localizzate.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-116">Both strings are English and are never localized.</span></span> <span data-ttu-id="b4cf9-117">Il DMO può fornire le versioni localizzate tramite il metodo [**IMediaParamInfo:: GetParamText**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getparamtext) .</span><span class="sxs-lookup"><span data-stu-id="b4cf9-117">The DMO can provide localized versions through the [**IMediaParamInfo::GetParamText**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getparamtext) method.</span></span>
+
+<span data-ttu-id="b4cf9-118">Le informazioni per ogni parametro rimangono fisse per tutto il ciclo di vita di DMO.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-118">The information for each parameter remains fixed throughout the lifetime of the DMO.</span></span> <span data-ttu-id="b4cf9-119">Il client può quindi eseguire una query per ottenere queste informazioni una volta e quindi memorizzarle nella cache.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-119">Therefore, the client can query for this information once and then cache it.</span></span>
+
+<span data-ttu-id="b4cf9-120">**Formati di ora**</span><span class="sxs-lookup"><span data-stu-id="b4cf9-120">**Time Formats**</span></span>
+
+<span data-ttu-id="b4cf9-121">Il client deve ora contrassegnare i dati di input, in modo che DMO possa calcolare i valori dei parametri corrispondenti.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-121">The client must time stamp the input data, so that the DMO can calculate the corresponding parameter values.</span></span> <span data-ttu-id="b4cf9-122">Per impostazione predefinita, i timestamp rappresentano unità di 100 nanosecondi, denominate anche *tempo di riferimento*.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-122">By default, time stamps represent units of 100 nanoseconds, also called *reference time*.</span></span> <span data-ttu-id="b4cf9-123">Questa unità di tempo non è tuttavia utile per ogni applicazione, pertanto un DMO ha un'opzione per supportare altri formati temporali.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-123">This time unit is not convenient for every application, however, so a DMO has an option to support other time formats.</span></span> <span data-ttu-id="b4cf9-124">I formati di ora sono identificati dal GUID.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-124">Time formats are identified by GUID.</span></span>
+
+
+
+| <span data-ttu-id="b4cf9-125">**GUID**</span><span class="sxs-lookup"><span data-stu-id="b4cf9-125">**GUID**</span></span>              | <span data-ttu-id="b4cf9-126">Descrizione</span><span class="sxs-lookup"><span data-stu-id="b4cf9-126">Description</span></span>                   |
+|-----------------------|-------------------------------|
+| <span data-ttu-id="b4cf9-127">\_riferimento ora \_ GUID</span><span class="sxs-lookup"><span data-stu-id="b4cf9-127">GUID\_TIME\_REFERENCE</span></span> | <span data-ttu-id="b4cf9-128">Ora riferimento</span><span class="sxs-lookup"><span data-stu-id="b4cf9-128">Reference time</span></span>                |
+| <span data-ttu-id="b4cf9-129">\_tempo GUID \_ musica</span><span class="sxs-lookup"><span data-stu-id="b4cf9-129">GUID\_TIME\_MUSIC</span></span>     | <span data-ttu-id="b4cf9-130">Note sulle parti per ogni trimestre (PPQN)</span><span class="sxs-lookup"><span data-stu-id="b4cf9-130">Parts per quarter note (PPQN)</span></span> |
+| <span data-ttu-id="b4cf9-131">\_esempi di tempo GUID \_</span><span class="sxs-lookup"><span data-stu-id="b4cf9-131">GUID\_TIME\_SAMPLES</span></span>   | <span data-ttu-id="b4cf9-132">Campioni al secondo</span><span class="sxs-lookup"><span data-stu-id="b4cf9-132">Samples per second</span></span>            |
+
+
+
+ 
+
+<span data-ttu-id="b4cf9-133">Le terze parti sono incoraggiate a definire i propri formati di tempo in base alle esigenze.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-133">Third parties are encouraged to define their own time formats as needed.</span></span> <span data-ttu-id="b4cf9-134">Tuttavia, tutti DMOs devono supportare l'ora di riferimento.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-134">However, all DMOs must support reference time.</span></span> <span data-ttu-id="b4cf9-135">Fornisce una baseline standard che tutti possono usare.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-135">This provides a standard baseline that everyone can use.</span></span> <span data-ttu-id="b4cf9-136">Per determinare il numero di formati di ora supportati da DMO, chiamare il metodo [**IMediaParamInfo:: GetNumTimeFormats**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getnumtimeformats) .</span><span class="sxs-lookup"><span data-stu-id="b4cf9-136">To determine how many time formats a DMO supports, call the [**IMediaParamInfo::GetNumTimeFormats**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getnumtimeformats) method.</span></span> <span data-ttu-id="b4cf9-137">Per enumerare i formati supportati, chiamare il metodo [**IMediaParamInfo:: GetSupportedTimeFormat**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getsupportedtimeformat) .</span><span class="sxs-lookup"><span data-stu-id="b4cf9-137">To enumerate the supported formats, call the [**IMediaParamInfo::GetSupportedTimeFormat**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparaminfo-getsupportedtimeformat) method.</span></span>
+
+<span data-ttu-id="b4cf9-138">Per impostare il formato dell'ora, chiamare [**IMediaParams:: SetTimeFormat**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparams-settimeformat).</span><span class="sxs-lookup"><span data-stu-id="b4cf9-138">To set the time format, call [**IMediaParams::SetTimeFormat**](/previous-versions/windows/desktop/api/Medparam/nf-medparam-imediaparams-settimeformat).</span></span> <span data-ttu-id="b4cf9-139">Questo metodo specifica il GUID del formato dell'ora e i *dati temporali*, ovvero il numero di unità per Tick del clock.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-139">This method specifies the time format GUID and the *time data*, which is the number of units per clock tick.</span></span> <span data-ttu-id="b4cf9-140">Se, ad esempio, il formato dell'ora è Samples al secondo e i dati temporali sono 32, un valore di timestamp pari a 10 corrisponde a 320 campioni.</span><span class="sxs-lookup"><span data-stu-id="b4cf9-140">For example, if the time format is samples per second, and the time data is 32, then a time stamp value of 10 corresponds to 320 samples.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="b4cf9-141">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="b4cf9-141">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="b4cf9-142">Parametri dei supporti</span><span class="sxs-lookup"><span data-stu-id="b4cf9-142">Media Parameters</span></span>](media-parameters.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
