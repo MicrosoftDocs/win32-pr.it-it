@@ -1,0 +1,62 @@
+---
+description: Informazioni sui filtri DirectShow
+ms.assetid: 57b7d32e-2073-46a2-91ec-a34072134489
+title: Informazioni sui filtri DirectShow
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 11ddfb5dda550bee88c42ef70347c95ba7a2b003
+ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "104555842"
+---
+# <a name="about-directshow-filters"></a><span data-ttu-id="f1bef-103">Informazioni sui filtri DirectShow</span><span class="sxs-lookup"><span data-stu-id="f1bef-103">About DirectShow Filters</span></span>
+
+<span data-ttu-id="f1bef-104">DirectShow usa un'architettura modulare, in cui ogni fase di elaborazione viene eseguita da un oggetto COM denominato filtro.</span><span class="sxs-lookup"><span data-stu-id="f1bef-104">DirectShow uses a modular architecture, where each stage of processing is done by a COM object called a filter.</span></span> <span data-ttu-id="f1bef-105">DirectShow fornisce un set di filtri standard per le applicazioni da usare e gli sviluppatori possono scrivere filtri personalizzati che estendono la funzionalità di DirectShow.</span><span class="sxs-lookup"><span data-stu-id="f1bef-105">DirectShow provides a set of standard filters for applications to use, and developers can write their own custom filters that extend the functionality of DirectShow.</span></span> <span data-ttu-id="f1bef-106">Per illustrare, di seguito sono riportati i passaggi necessari per riprodurre un file video AVI, insieme ai filtri che eseguono ogni passaggio:</span><span class="sxs-lookup"><span data-stu-id="f1bef-106">To illustrate, here are the steps needed to play an AVI video file, along with the filters that perform each step:</span></span>
+
+-   <span data-ttu-id="f1bef-107">Leggere i dati non elaborati dal file come flusso di byte (filtro origine file).</span><span class="sxs-lookup"><span data-stu-id="f1bef-107">Read the raw data from the file as a byte stream (File Source filter).</span></span>
+-   <span data-ttu-id="f1bef-108">Esaminare le intestazioni AVI e analizzare il flusso di byte in diversi fotogrammi video ed esempi audio (filtro Splitter AVI).</span><span class="sxs-lookup"><span data-stu-id="f1bef-108">Examine the AVI headers, and parse the byte stream into separate video frames and audio samples (AVI Splitter filter).</span></span>
+-   <span data-ttu-id="f1bef-109">Decodificare i fotogrammi video (vari filtri del decodificatore, a seconda del formato di compressione).</span><span class="sxs-lookup"><span data-stu-id="f1bef-109">Decode the video frames (various decoder filters, depending on the compression format).</span></span>
+-   <span data-ttu-id="f1bef-110">Creare i fotogrammi video (filtro renderer video).</span><span class="sxs-lookup"><span data-stu-id="f1bef-110">Draw the video frames (Video Renderer filter).</span></span>
+-   <span data-ttu-id="f1bef-111">Inviare gli esempi audio alla scheda audio (filtro di dispositivo DirectSound predefinito).</span><span class="sxs-lookup"><span data-stu-id="f1bef-111">Send the audio samples to the sound card (Default DirectSound Device filter).</span></span>
+
+<span data-ttu-id="f1bef-112">Questi filtri sono illustrati nel diagramma seguente.</span><span class="sxs-lookup"><span data-stu-id="f1bef-112">These filters are shown in the following diagram.</span></span>
+
+![filtro del grafico per la riproduzione di un file AVI con video compresso](images/avi-filter-graph.png)
+
+<span data-ttu-id="f1bef-114">Come illustrato nel diagramma, ogni filtro è connesso a uno o più filtri.</span><span class="sxs-lookup"><span data-stu-id="f1bef-114">As the diagram shows, each filter is connected to one or more other filters.</span></span> <span data-ttu-id="f1bef-115">I punti di connessione sono anche oggetti COM, detti *pin*.</span><span class="sxs-lookup"><span data-stu-id="f1bef-115">The connection points are also COM objects, called *pins*.</span></span> <span data-ttu-id="f1bef-116">I filtri usano pin per spostare i dati da un filtro a quello successivo.</span><span class="sxs-lookup"><span data-stu-id="f1bef-116">Filters use pins to move data from one filter the next.</span></span> <span data-ttu-id="f1bef-117">Le frecce nel diagramma mostrano la direzione in cui i dati vengono trasmessi.</span><span class="sxs-lookup"><span data-stu-id="f1bef-117">The arrows in the diagram show the direction in which the data travels.</span></span> <span data-ttu-id="f1bef-118">In DirectShow un set di filtri viene definito grafico a *filtro*.</span><span class="sxs-lookup"><span data-stu-id="f1bef-118">In DirectShow, a set of filters is called a *filter graph*.</span></span>
+
+<span data-ttu-id="f1bef-119">I filtri possono avere tre stati: in esecuzione, arrestati e sospesi.</span><span class="sxs-lookup"><span data-stu-id="f1bef-119">Filters have three possible states: running, stopped, and paused.</span></span> <span data-ttu-id="f1bef-120">Quando un filtro è in esecuzione, elabora i dati multimediali.</span><span class="sxs-lookup"><span data-stu-id="f1bef-120">When a filter is running, it processes media data.</span></span> <span data-ttu-id="f1bef-121">Quando viene arrestato, interrompe l'elaborazione dei dati.</span><span class="sxs-lookup"><span data-stu-id="f1bef-121">When it is stopped, it stops processing data.</span></span> <span data-ttu-id="f1bef-122">Lo stato Paused viene usato per indicare i dati prima dell'esecuzione; il flusso di dati della sezione [nel grafico di filtro](data-flow-in-the-filter-graph.md) descrive questo concetto in modo più dettagliato.</span><span class="sxs-lookup"><span data-stu-id="f1bef-122">The paused state is used to cue data before running; the section [Data Flow in the Filter Graph](data-flow-in-the-filter-graph.md) describes this concept in more detail.</span></span> <span data-ttu-id="f1bef-123">Con eccezioni molto rare, le modifiche di stato vengono coordinate nell'intero grafico di filtro; tutti i filtri presenti nel grafico comunicano gli stati in Unison.</span><span class="sxs-lookup"><span data-stu-id="f1bef-123">With very rare exceptions, state changes are coordinated throughout the entire filter graph; all the filters in the graph switch states in unison.</span></span> <span data-ttu-id="f1bef-124">Quindi, l'intero grafico di filtro viene detto anche in esecuzione, arrestato o sospeso.</span><span class="sxs-lookup"><span data-stu-id="f1bef-124">Thus, the entire filter graph is also said to be running, stopped, or paused.</span></span>
+
+<span data-ttu-id="f1bef-125">I filtri possono essere raggruppati in diverse categorie generali:</span><span class="sxs-lookup"><span data-stu-id="f1bef-125">Filters can be grouped into several broad categories:</span></span>
+
+-   <span data-ttu-id="f1bef-126">Un filtro di *origine* introduce i dati nel grafico.</span><span class="sxs-lookup"><span data-stu-id="f1bef-126">A *source* filter introduces data into the graph.</span></span> <span data-ttu-id="f1bef-127">I dati possono provenire da un file, da una rete, da una fotocamera o da qualsiasi altra posizione.</span><span class="sxs-lookup"><span data-stu-id="f1bef-127">The data might come from a file, a network, a camera, or anywhere else.</span></span> <span data-ttu-id="f1bef-128">Ogni filtro di origine gestisce un tipo di origine dati diverso.</span><span class="sxs-lookup"><span data-stu-id="f1bef-128">Each source filter handles a different type of data source.</span></span>
+-   <span data-ttu-id="f1bef-129">Un filtro di *trasformazione* accetta un flusso di input, elabora i dati e crea un flusso di output.</span><span class="sxs-lookup"><span data-stu-id="f1bef-129">A *transform* filter takes an input stream, processes the data, and creates an output stream.</span></span> <span data-ttu-id="f1bef-130">Codificatori e decodificatori sono esempi di filtri di trasformazione.</span><span class="sxs-lookup"><span data-stu-id="f1bef-130">Encoders and decoders are examples of transform filters.</span></span>
+-   <span data-ttu-id="f1bef-131">I filtri *renderer* si trovano alla fine della catena.</span><span class="sxs-lookup"><span data-stu-id="f1bef-131">*Renderer* filters sit at the end of the chain.</span></span> <span data-ttu-id="f1bef-132">Ricevono i dati e li presentano all'utente.</span><span class="sxs-lookup"><span data-stu-id="f1bef-132">They receive data and present it to the user.</span></span> <span data-ttu-id="f1bef-133">Un renderer video, ad esempio, disegna i fotogrammi video sullo schermo; un renderer audio invia dati audio alla scheda audio; un filtro di file writer scrive i dati in un file.</span><span class="sxs-lookup"><span data-stu-id="f1bef-133">For example, a video renderer draws video frames on the display; an audio renderer sends audio data to the sound card; and a file-writer filter writes data to a file.</span></span>
+-   <span data-ttu-id="f1bef-134">Un filtro *splitter* suddivide un flusso di input in due o più output, in genere analizzando il flusso di input lungo il percorso.</span><span class="sxs-lookup"><span data-stu-id="f1bef-134">A *splitter* filter splits an input stream into two or more outputs, typically parsing the input stream along the way.</span></span> <span data-ttu-id="f1bef-135">Ad esempio, il separatore AVI analizza un flusso di byte in flussi video e audio distinti.</span><span class="sxs-lookup"><span data-stu-id="f1bef-135">For example, the AVI Splitter parses a byte stream into separate video and audio streams.</span></span>
+-   <span data-ttu-id="f1bef-136">Un filtro *Mux* accetta più input e li combina in un singolo flusso.</span><span class="sxs-lookup"><span data-stu-id="f1bef-136">A *mux* filter takes multiple inputs and combines them into a single stream.</span></span> <span data-ttu-id="f1bef-137">Ad esempio, il mux di AVI esegue l'operazione inversa del separatore AVI.</span><span class="sxs-lookup"><span data-stu-id="f1bef-137">For example, the AVI Mux performs the inverse operation of the AVI Splitter.</span></span> <span data-ttu-id="f1bef-138">Accetta flussi audio e video e produce un flusso di byte in formato AVI.</span><span class="sxs-lookup"><span data-stu-id="f1bef-138">It takes audio and video streams and produces an AVI-formatted byte stream.</span></span>
+
+<span data-ttu-id="f1bef-139">Le differenze tra queste categorie non sono assolute.</span><span class="sxs-lookup"><span data-stu-id="f1bef-139">The distinctions between these categories are not absolute.</span></span> <span data-ttu-id="f1bef-140">Il filtro di lettura ASF, ad esempio, funge sia da filtro di origine che da filtro di barra di divisione.</span><span class="sxs-lookup"><span data-stu-id="f1bef-140">For example, the ASF Reader filter acts as both a source filter and a splitter filter.</span></span>
+
+<span data-ttu-id="f1bef-141">Tutti i filtri DirectShow espongono l'interfaccia [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) e tutti i pin espongono l'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) .</span><span class="sxs-lookup"><span data-stu-id="f1bef-141">All DirectShow filters expose the [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) interface, and all pins expose the [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) interface.</span></span> <span data-ttu-id="f1bef-142">DirectShow definisce anche molte altre interfacce che supportano funzionalità più specifiche.</span><span class="sxs-lookup"><span data-stu-id="f1bef-142">DirectShow also defines many other interfaces that support more specific functionality.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="f1bef-143">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="f1bef-143">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="f1bef-144">Informazioni su Filter Graph Manager</span><span class="sxs-lookup"><span data-stu-id="f1bef-144">About the Filter Graph Manager</span></span>](about-the-filter-graph-manager.md)
+</dt> <dt>
+
+[<span data-ttu-id="f1bef-145">Flusso di dati nel grafico del filtro</span><span class="sxs-lookup"><span data-stu-id="f1bef-145">Data Flow in the Filter Graph</span></span>](data-flow-in-the-filter-graph.md)
+</dt> <dt>
+
+[<span data-ttu-id="f1bef-146">Filtri DirectShow</span><span class="sxs-lookup"><span data-stu-id="f1bef-146">DirectShow Filters</span></span>](directshow-filters.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+

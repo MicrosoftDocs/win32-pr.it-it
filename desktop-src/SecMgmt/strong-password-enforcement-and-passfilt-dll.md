@@ -1,0 +1,49 @@
+---
+description: Elenca i requisiti applicati da strumenti di amministrazione del sistema con password complesse.
+ms.assetid: a84f83b2-181b-4f65-82bd-bc7f0689aad3
+title: Imposizione avanzata delle password e Passfilt.dll
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 63b7be524511d52048e06ae83ab110384c3bf5c4
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "104525705"
+---
+# <a name="strong-password-enforcement-and-passfiltdll"></a><span data-ttu-id="e468f-103">Imposizione avanzata delle password e Passfilt.dll</span><span class="sxs-lookup"><span data-stu-id="e468f-103">Strong Password Enforcement and Passfilt.dll</span></span>
+
+<span data-ttu-id="e468f-104">L'imposizione di password complesse può essere abilitata usando gli strumenti di amministrazione del sistema.</span><span class="sxs-lookup"><span data-stu-id="e468f-104">Strong password enforcement can be enabled by using the system administration tools.</span></span> <span data-ttu-id="e468f-105">Se il criterio di amministrazione del sistema è abilitato, le password devono soddisfare i requisiti minimi seguenti quando vengono create o modificate:</span><span class="sxs-lookup"><span data-stu-id="e468f-105">If the system administration policy is enabled, passwords must meet the following minimum requirements when they are created or changed:</span></span>
+
+-   <span data-ttu-id="e468f-106">Le password non possono contenere il valore samAccountName (nome account) dell'utente o l'intero displayName (valore nome completo).</span><span class="sxs-lookup"><span data-stu-id="e468f-106">Passwords may not contain the user's samAccountName (Account Name) value or entire displayName (Full Name value).</span></span> <span data-ttu-id="e468f-107">I controlli non fanno distinzione tra maiuscole e minuscole.</span><span class="sxs-lookup"><span data-stu-id="e468f-107">Both checks are not case sensitive.</span></span>
+-   <span data-ttu-id="e468f-108">L'oggetto samAccountName viene archiviato integralmente solo per determinare se fa parte della password.</span><span class="sxs-lookup"><span data-stu-id="e468f-108">The samAccountName is checked in its entirety only to determine whether it is part of the password.</span></span> <span data-ttu-id="e468f-109">Se samAccountName è inferiore a tre caratteri, questo controllo viene ignorato.</span><span class="sxs-lookup"><span data-stu-id="e468f-109">If the samAccountName is less than three characters long, this check is skipped.</span></span>
+-   <span data-ttu-id="e468f-110">Il displayName viene analizzato per i delimitatori: virgole, punti, trattini o trattini, caratteri di sottolineatura, spazi, segni di cancelletto e tabulazioni.</span><span class="sxs-lookup"><span data-stu-id="e468f-110">The displayName is parsed for delimiters: commas, periods, dashes or hyphens, underscores, spaces, pound signs, and tabs.</span></span> <span data-ttu-id="e468f-111">Se uno di questi delimitatori viene trovato, displayName viene suddiviso e tutte le sezioni analizzate (token) vengono confermate per non essere incluse nella password.</span><span class="sxs-lookup"><span data-stu-id="e468f-111">If any of these delimiters are found, the displayName is split and all parsed sections (tokens) are confirmed to not be included in the password.</span></span> <span data-ttu-id="e468f-112">I token che sono meno di tre caratteri vengono ignorati e le sottostringhe dei token non vengono controllate.</span><span class="sxs-lookup"><span data-stu-id="e468f-112">Tokens that are less than three characters are ignored, and substrings of the tokens are not checked.</span></span> <span data-ttu-id="e468f-113">Il nome "Erin M. Hagens", ad esempio, è suddiviso in tre token: "Erin", "M" e "Hagens".</span><span class="sxs-lookup"><span data-stu-id="e468f-113">For example, the name "Erin M. Hagens" is split into three tokens: "Erin", "M", and "Hagens".</span></span> <span data-ttu-id="e468f-114">Poiché il secondo token è lungo un solo carattere, viene ignorato.</span><span class="sxs-lookup"><span data-stu-id="e468f-114">Because the second token is only one character long, it is ignored.</span></span> <span data-ttu-id="e468f-115">Pertanto, l'utente non può disporre di una password che includa "Erin" o "Hagens" come una sottostringa in un punto qualsiasi della password.</span><span class="sxs-lookup"><span data-stu-id="e468f-115">Therefore, this user could not have a password that included either "erin" or "hagens" as a substring anywhere in the password.</span></span>
+-   <span data-ttu-id="e468f-116">Le password devono contenere caratteri di tre delle cinque categorie riportate di seguito.</span><span class="sxs-lookup"><span data-stu-id="e468f-116">Passwords must contain characters from three of the five following categories.</span></span>
+
+
+
+| <span data-ttu-id="e468f-117">Categorie di caratteri</span><span class="sxs-lookup"><span data-stu-id="e468f-117">Character categories</span></span>                                                                                                                                                      | <span data-ttu-id="e468f-118">Esempio</span><span class="sxs-lookup"><span data-stu-id="e468f-118">Examples</span></span>                               |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| <span data-ttu-id="e468f-119">Lettere maiuscole delle lingue europee (dalla A alla Z con segni diacritici, caratteri greci e cirillici)</span><span class="sxs-lookup"><span data-stu-id="e468f-119">Uppercase letters of European languages (A through Z, with diacritic marks, Greek and Cyrillic characters)</span></span><br/>                                                     | <span data-ttu-id="e468f-120">A, B, C, Z</span><span class="sxs-lookup"><span data-stu-id="e468f-120">A, B, C,   Z</span></span><br/>                |
+| <span data-ttu-id="e468f-121">Lettere minuscole delle lingue europee (da a a z, Sharp-s, con segni diacritici, caratteri greci e cirillici)</span><span class="sxs-lookup"><span data-stu-id="e468f-121">Lowercase letters of European languages (a through z, sharp-s, with diacritic marks, Greek and Cyrillic characters)</span></span><br/>                                            | <span data-ttu-id="e468f-122">a, b, c, z</span><span class="sxs-lookup"><span data-stu-id="e468f-122">a, b, c,   z</span></span><br/>                |
+| <span data-ttu-id="e468f-123">Numeri in base 10 (da 0 a 9)</span><span class="sxs-lookup"><span data-stu-id="e468f-123">Base 10 digits (0 through 9)</span></span><br/>                                                                                                                                   | <span data-ttu-id="e468f-124">0, 1, 2, 9</span><span class="sxs-lookup"><span data-stu-id="e468f-124">0, 1, 2,   9</span></span><br/>                |
+| <span data-ttu-id="e468f-125">Caratteri non alfanumerici (caratteri speciali)</span><span class="sxs-lookup"><span data-stu-id="e468f-125">Non-alphanumeric characters (special characters)</span></span><br/>                                                                                                               | <span data-ttu-id="e468f-126">$,!,%, ^, () {} \[ \] ;: <>?</span><span class="sxs-lookup"><span data-stu-id="e468f-126">$,!,%,^,(){}\[\];:<>?</span></span><br/> |
+| <span data-ttu-id="e468f-127">Qualsiasi carattere Unicode categorizzato come carattere alfabetico ma non è maiuscolo o minuscolo.</span><span class="sxs-lookup"><span data-stu-id="e468f-127">Any Unicode character that is categorized as an alphabetic character but is not uppercase or lowercase.</span></span> <span data-ttu-id="e468f-128">Sono inclusi i caratteri Unicode delle lingue asiatiche.</span><span class="sxs-lookup"><span data-stu-id="e468f-128">This includes Unicode characters from Asian languages.</span></span><br/> |                                        |
+
+
+
+ 
+
+<span data-ttu-id="e468f-129">**Per abilitare l'applicazione di password complesse**</span><span class="sxs-lookup"><span data-stu-id="e468f-129">**To enable strong password enforcement**</span></span>
+
+1.  <span data-ttu-id="e468f-130">Nella console di amministrazione individuare **criteri di sicurezza locali**.</span><span class="sxs-lookup"><span data-stu-id="e468f-130">From the administration console, locate **Local Security Policy**.</span></span>
+2.  <span data-ttu-id="e468f-131">Selezionare **criteri account**, quindi selezionare **criteri password**.</span><span class="sxs-lookup"><span data-stu-id="e468f-131">Select **Account Policy**, and then select **Password Policy**.</span></span>
+3.  <span data-ttu-id="e468f-132">Abilitare le **password devono soddisfare i requisiti di complessità** impostazione.</span><span class="sxs-lookup"><span data-stu-id="e468f-132">Enable the **Passwords must meet complexity requirements** setting.</span></span>
+
+> [!Note]  
+> <span data-ttu-id="e468f-133">Un determinato carattere può soddisfare solo una categoria.</span><span class="sxs-lookup"><span data-stu-id="e468f-133">A given character can satisfy only one category.</span></span> <span data-ttu-id="e468f-134">La funzione [GetStringTypeW](/windows/win32/api/stringapiset/nf-stringapiset-getstringtypew) viene utilizzata per verificare se ogni carattere della password è maiuscolo, minuscolo o alfanumerico.</span><span class="sxs-lookup"><span data-stu-id="e468f-134">The [GetStringTypeW](/windows/win32/api/stringapiset/nf-stringapiset-getstringtypew) function is used to test whether each character in the password is uppercase, lowercase, or alphanumeric.</span></span>
+
+ 
+
+ 
+
