@@ -1,0 +1,88 @@
+---
+title: Panoramica di Biometric Framework
+description: Il supporto nativo per i dispositivi biometrici è incorporato in Windows.
+ms.assetid: 616ba95a-27a3-4eac-b802-5217954ed04e
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 0f524437ba60f0ad5c1518225f91ff23c789a917
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "104473715"
+---
+# <a name="biometric-framework-overview"></a><span data-ttu-id="e7c9f-103">Panoramica di Biometric Framework</span><span class="sxs-lookup"><span data-stu-id="e7c9f-103">Biometric Framework overview</span></span>
+
+<span data-ttu-id="e7c9f-104">Ogni persona ha caratteristiche univoche che possono essere usate per l'identificazione.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-104">Every individual has unique characteristics that can be used for identification.</span></span> <span data-ttu-id="e7c9f-105">In genere queste caratteristiche sono fisiche e includono tratti, come le impronte digitali, ma possono anche includere tratti comportamentali, ad esempio andamento e tipizzazione.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-105">Typically these characteristics are physical and include traits such as fingerprints, but they can also include behavioral traits such as gait and typing rhythm.</span></span> <span data-ttu-id="e7c9f-106">Il termine biometria comprende entrambi i significati.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-106">The term biometrics encompasses both meanings.</span></span> <span data-ttu-id="e7c9f-107">Le informazioni biometriche stanno sempre sostituendo le password per identificare e verificare gli utenti.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-107">Biometric information is increasingly replacing passwords to identify and verify users.</span></span> <span data-ttu-id="e7c9f-108">È più sicuro e spesso più comodo per utenti e amministratori.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-108">It is more secure and often more convenient for both user and administrator.</span></span>
+
+<span data-ttu-id="e7c9f-109">I sensori vengono usati per acquisire le informazioni biometriche.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-109">Sensors are used to capture biometric information.</span></span> <span data-ttu-id="e7c9f-110">Le informazioni vengono acquisite dal sensore come esempio biometrico.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-110">The information is captured by the sensor as a biometric sample.</span></span> <span data-ttu-id="e7c9f-111">Un singolo campione contiene dati che rappresentano una singola caratteristica biometrica per un singolo utente.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-111">A single sample contains data that represents a single biometric characteristic for one individual.</span></span> <span data-ttu-id="e7c9f-112">Per creare un modello biometrico viene calcolata la media di più campioni e il modello viene archiviato in modo sicuro.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-112">Multiple samples are averaged to create a biometric template, and the template is securely stored.</span></span> <span data-ttu-id="e7c9f-113">Successivamente, un campione di un utente sconosciuto viene confrontato con i modelli archiviati per stabilire e verificare l'identità dell'utente.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-113">Later, a sample from an unknown user is compared to the stored templates to establish and verify user identity.</span></span> <span data-ttu-id="e7c9f-114">Il servizio biometrico di Windows, parte del Windows Biometric Framework (WBF), fornisce le funzionalità seguenti.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-114">The Windows Biometric service, part of the Windows Biometric Framework (WBF), provides the following functionality.</span></span> <span data-ttu-id="e7c9f-115">che è possibile sfruttare utilizzando l'API di WBF.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-115">You can use the Windows Biometric Framework API to leverage this functionality.</span></span>
+
+-   <span data-ttu-id="e7c9f-116">Acquisisce campioni biometrici e li utilizza per creare un modello.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-116">Captures biometric samples and uses them to create a template.</span></span>
+-   <span data-ttu-id="e7c9f-117">Salva e recupera in modo sicuro i modelli biometrici.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-117">Securely saves and retrieves biometric templates.</span></span>
+-   <span data-ttu-id="e7c9f-118">Esegue il mapping di ogni modello a un identificatore univoco, ad esempio un GUID o un SID.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-118">Maps each template to a unique identifier such as a GUID or SID.</span></span>
+
+<span data-ttu-id="e7c9f-119">È anche possibile usare questa API per estendere il Framework e creare adattatori di sensori biometrici, motori di corrispondenza e componenti di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-119">You can also use this API to extend the framework and create biometric sensor adapters, matching engines, and storage components.</span></span> <span data-ttu-id="e7c9f-120">Per ulteriori informazioni sulla creazione di adattatori di sensori, motori di corrispondenza e componenti di archiviazione, vedere [creazione di plug-](creating-adapter-plug-ins.md)in di adapter.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-120">For more information about creating sensor adapters, matching engines, and storage components, see [Creating Adapter Plug-ins](creating-adapter-plug-ins.md).</span></span>
+
+## <a name="core-platform-components"></a><span data-ttu-id="e7c9f-121">Componenti della piattaforma di base</span><span class="sxs-lookup"><span data-stu-id="e7c9f-121">Core platform components</span></span>
+
+### <a name="windows-biometric-driver-interface-wbdi"></a><span data-ttu-id="e7c9f-122">Interfaccia driver di Windows Biometric (WBDI)</span><span class="sxs-lookup"><span data-stu-id="e7c9f-122">Windows Biometric Driver Interface (WBDI)</span></span>
+
+<span data-ttu-id="e7c9f-123">WBDI è un'interfaccia di programmazione che può essere usata da un driver biometrico per esporre il dispositivo biometrico tramite il servizio Windows biometrico (WBS).</span><span class="sxs-lookup"><span data-stu-id="e7c9f-123">WBDI is a programming interface that a biometric driver can use to expose the biometric device through the Windows Biometric Service (WBS).</span></span> <span data-ttu-id="e7c9f-124">È possibile implementare un driver WBDI usando qualsiasi tecnologia di driver supportata, incluse le seguenti.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-124">You can implement a WBDI driver by using any supported driver technology, including the following.</span></span> <span data-ttu-id="e7c9f-125">Si consiglia, tuttavia, di usare UMDF quando possibile per migliorare la qualità del driver e la stabilità del sistema.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-125">We recommend, however, that you use UMDF when possible to improve driver quality and system stability.</span></span>
+
+-   <span data-ttu-id="e7c9f-126">Framework del driver della modalità utente (UMDF)</span><span class="sxs-lookup"><span data-stu-id="e7c9f-126">User Mode Driver Framework (UMDF)</span></span>
+-   <span data-ttu-id="e7c9f-127">Framework driver in modalità kernel (KMDF)</span><span class="sxs-lookup"><span data-stu-id="e7c9f-127">Kernel Mode Driver Framework (KMDF)</span></span>
+-   <span data-ttu-id="e7c9f-128">Windows Driver Model (WDM)</span><span class="sxs-lookup"><span data-stu-id="e7c9f-128">Windows Driver Model (WDM)</span></span>
+
+<span data-ttu-id="e7c9f-129">Un driver WBDI Biometric deve supportare anche il GUID dell'interfaccia del driver WBDI e tutti i controlli I/O obbligatori (IOCTL).</span><span class="sxs-lookup"><span data-stu-id="e7c9f-129">A WBDI biometric driver must also support the WBDI driver interface GUID and all mandatory I/O controls (IOCTLs).</span></span> <span data-ttu-id="e7c9f-130">Gli sviluppatori di driver devono esaminare la documentazione e il codice di esempio in Windows Driver Kit (WDK).</span><span class="sxs-lookup"><span data-stu-id="e7c9f-130">Driver developers should review the documentation and sample code in the Windows Driver Kit (WDK).</span></span>
+
+### <a name="windows-biometric-service-wbs"></a><span data-ttu-id="e7c9f-131">Servizio biometrico Windows (WBS)</span><span class="sxs-lookup"><span data-stu-id="e7c9f-131">Windows Biometric Service (WBS)</span></span>
+
+<span data-ttu-id="e7c9f-132">Il servizio biometrico di Windows gestisce i driver biometrici installati e supporta l'API Windows Biometric Framework per fornire l'accesso ai dispositivi alle applicazioni client.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-132">The Windows Biometric Service manages installed biometric drivers and supports the Windows Biometric Framework API to provide device access to client applications.</span></span> <span data-ttu-id="e7c9f-133">WBS esegue le funzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="e7c9f-133">WBS performs the following functions:</span></span>
+
+-   <span data-ttu-id="e7c9f-134">Protegge la riservatezza degli utenti separandoli tra le applicazioni client e i dati biometrici.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-134">It protects user confidentiality by separating client applications from biometric data.</span></span>
+-   <span data-ttu-id="e7c9f-135">Protegge i dati biometrici dalle applicazioni client senza privilegi richiedendo che le applicazioni ottengano l'accesso ai dati usando identificatori univoci.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-135">It protects biometric data from unprivileged client applications by requiring that applications gain access to data by using unique identifiers.</span></span>
+-   <span data-ttu-id="e7c9f-136">Usa un componente software denominato [unità biometrica](/previous-versions//dd401512(v=vs.85)) per esporre le funzionalità di un determinato dispositivo biometrico tramite un'interfaccia standardizzata.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-136">It uses a software component called a [Biometric Unit](/previous-versions//dd401512(v=vs.85)) to expose the capabilities of a particular biometric device through a standardized interface.</span></span>
+-   <span data-ttu-id="e7c9f-137">Gestisce le unità biometriche raggruppando i [pool nei pool di sensori](sensor-pools.md)di sistema, privati o non assegnati.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-137">It manages biometric units by grouping them into system, private, or unassigned [Sensor Pools](sensor-pools.md).</span></span>
+-   <span data-ttu-id="e7c9f-138">Supporta l'uso degli [adattatori](/previous-versions//dd401508(v=vs.85)) di unità biometrici per i dispositivi fisici che non dispongono di funzionalità di elaborazione o di archiviazione onboard.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-138">It supports the use of biometric unit [Adapters](/previous-versions//dd401508(v=vs.85)) for physical devices that lack onboard processing or storage capabilities.</span></span>
+
+### <a name="windows-biometric-framework-api"></a><span data-ttu-id="e7c9f-139">API Windows Biometric Framework</span><span class="sxs-lookup"><span data-stu-id="e7c9f-139">Windows Biometric Framework API</span></span>
+
+<span data-ttu-id="e7c9f-140">L'API Windows Biometric Framework consente di creare applicazioni client in grado di interagire con il servizio biometrico di Windows per eseguire le azioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="e7c9f-140">The Windows Biometric Framework API enables you to create client applications that can interact with the Windows Biometric Service to perform the following actions:</span></span>
+
+-   <span data-ttu-id="e7c9f-141">Identificare e verificare gli utenti.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-141">Identify and verify users.</span></span>
+-   <span data-ttu-id="e7c9f-142">Individuare i dispositivi biometrici ed eseguire query sulle relative funzionalità.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-142">Locate biometric devices and query their capabilities.</span></span>
+-   <span data-ttu-id="e7c9f-143">Gestione delle sessioni e monitoraggio degli eventi.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-143">Manage sessions and monitor events.</span></span>
+
+## <a name="user-experience-components"></a><span data-ttu-id="e7c9f-144">Componenti dell'esperienza utente</span><span class="sxs-lookup"><span data-stu-id="e7c9f-144">User Experience Components</span></span>
+
+### <a name="discovery-points"></a><span data-ttu-id="e7c9f-145">Punti di individuazione</span><span class="sxs-lookup"><span data-stu-id="e7c9f-145">Discovery Points</span></span>
+
+<span data-ttu-id="e7c9f-146">Gli utenti finali possono individuare i dispositivi biometrici in uno dei modi seguenti:</span><span class="sxs-lookup"><span data-stu-id="e7c9f-146">End users can locate biometric devices by any of the following means:</span></span>
+
+-   <span data-ttu-id="e7c9f-147">Digitando le parole biometria, impronta digitale, viso o altre frasi correlate nella casella di testo Inizia ricerca per avviare il pannello di controllo dei dispositivi biometrici.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-147">Typing the words biometrics, fingerprint, face, or other related phrases into the Start Search text box to start the biometric devices control panel.</span></span> <span data-ttu-id="e7c9f-148">L'elenco dei risultati per la biometria può contenere elementi come i seguenti in un'immagine di Windows 10.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-148">The results list for biometrics can contain items such as the following on a Windows 10 image.</span></span>
+    -   <span data-ttu-id="e7c9f-149">Configurare l'accesso con impronta digitale</span><span class="sxs-lookup"><span data-stu-id="e7c9f-149">Setup fingerprint sign-in</span></span>
+    -   <span data-ttu-id="e7c9f-150">Configurare l'accesso viso</span><span class="sxs-lookup"><span data-stu-id="e7c9f-150">Setup face sign-in</span></span>
+
+### <a name="supported-scenarios"></a><span data-ttu-id="e7c9f-151">Scenari Supportati</span><span class="sxs-lookup"><span data-stu-id="e7c9f-151">Supported Scenarios</span></span>
+
+<span data-ttu-id="e7c9f-152">Sono supportati gli scenari indicati di seguito:</span><span class="sxs-lookup"><span data-stu-id="e7c9f-152">The following scenarios are supported:</span></span>
+
+-   <span data-ttu-id="e7c9f-153">Gli utenti possono accedere a un computer locale, un gruppo di lavoro o a un dominio usando un lettore di impronte digitali o la fotocamera IR incentrata sulla faccia.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-153">Users can log on to a local computer, a workgroup, or to a domain by using a fingerprint reader, or IR camera focused on the face.</span></span>
+-   <span data-ttu-id="e7c9f-154">Un utente con privilegi amministrativi può elevare le applicazioni attraverso il controllo dell'account utente usando un'impronta digitale o una faccia.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-154">A user with administrative privileges can elevate applications through User Account Control (UAC) by using a fingerprint or face.</span></span>
+
+## <a name="management-components"></a><span data-ttu-id="e7c9f-155">Componenti di gestione</span><span class="sxs-lookup"><span data-stu-id="e7c9f-155">Management components</span></span>
+
+<span data-ttu-id="e7c9f-156">Un sistema biometrico può essere gestito con Criteri di gruppo o gestione di dispositivi mobili (MDM).</span><span class="sxs-lookup"><span data-stu-id="e7c9f-156">A biometric system can be managed using Group Policy or mobile device management (MDM).</span></span>
+
+### <a name="biometric-system-management"></a><span data-ttu-id="e7c9f-157">Gestione del sistema biometrico</span><span class="sxs-lookup"><span data-stu-id="e7c9f-157">Biometric System Management</span></span>
+
+<span data-ttu-id="e7c9f-158">È possibile gestire le funzionalità biometriche usando Criteri di gruppo o MDM.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-158">You can manage biometric capabilities using Group Policy or MDM.</span></span> <span data-ttu-id="e7c9f-159">Criteri di gruppo possibile utilizzare ulteriormente per eseguire le azioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="e7c9f-159">Group Policy can further be used to perform the following actions:</span></span>
+
+-   <span data-ttu-id="e7c9f-160">Specificare il periodo di timeout per il cambio rapido utente, se implementato dall'ISV.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-160">Specify the timeout period for fast user switching, if implemented by the ISV.</span></span>
+-   <span data-ttu-id="e7c9f-161">Impedisci l'installazione del dispositivo biometrico.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-161">Prevent biometric device installation.</span></span>
+-   <span data-ttu-id="e7c9f-162">Forzare la rimozione dei driver per i dispositivi biometrici.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-162">Force the removal of drivers for biometric devices.</span></span>
+-   <span data-ttu-id="e7c9f-163">Disabilitare il servizio biometrico.</span><span class="sxs-lookup"><span data-stu-id="e7c9f-163">Disable the biometric service.</span></span>
+
+ 
+
+ 
