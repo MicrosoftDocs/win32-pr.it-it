@@ -1,0 +1,29 @@
+---
+description: L'interfaccia IAlternativeName espone i metodi seguenti.
+ms.assetid: 2E1D9D26-9DF7-42FE-A5AD-D8F7084322D7
+title: Metodi IAlternativeName
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 29c2c3e6b41cdee860dc0c8bfaa8a3afa28ebd45
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "104234169"
+---
+# <a name="ialternativename-methods"></a><span data-ttu-id="b9221-103">Metodi IAlternativeName</span><span class="sxs-lookup"><span data-stu-id="b9221-103">IAlternativeName Methods</span></span>
+
+<span data-ttu-id="b9221-104">L'interfaccia [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) espone i metodi seguenti.</span><span class="sxs-lookup"><span data-stu-id="b9221-104">The [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) interface exposes the following methods.</span></span>
+
+## <a name="in-this-section"></a><span data-ttu-id="b9221-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="b9221-105">In this section</span></span>
+
+-   [<span data-ttu-id="b9221-106">**Metodo InitializeFromOtherName**</span><span class="sxs-lookup"><span data-stu-id="b9221-106">**InitializeFromOtherName Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromothername)
+-   [<span data-ttu-id="b9221-107">**Metodo InitializeFromRawData**</span><span class="sxs-lookup"><span data-stu-id="b9221-107">**InitializeFromRawData Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromrawdata)
+-   [<span data-ttu-id="b9221-108">**Metodo InitializeFromString**</span><span class="sxs-lookup"><span data-stu-id="b9221-108">**InitializeFromString Method**</span></span>](/windows/desktop/api/CertEnroll/nf-certenroll-ialternativename-initializefromstring)
+
+ 
+
+ 
+
+
+
