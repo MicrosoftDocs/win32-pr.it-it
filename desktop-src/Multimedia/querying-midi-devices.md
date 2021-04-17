@@ -1,0 +1,62 @@
+---
+title: Esecuzione di query sui dispositivi MIDI
+description: Esecuzione di query sui dispositivi MIDI
+ms.assetid: 0c9882a7-b5cb-41d1-a52e-003112225035
+keywords:
+- MIDI (Musical Instrument Digital Interface), esecuzione di query sui dispositivi
+- MIDI (Musical Instrument Digital Interface), esecuzione di query sui dispositivi
+- Servizi MIDI, esecuzione di query sui dispositivi
+- esecuzione di query sui dispositivi MIDI
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 066648d6e9ce89e03b26940cb27f3b62b6a03c07
+ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "104398891"
+---
+# <a name="querying-midi-devices"></a>Esecuzione di query sui dispositivi MIDI
+
+Prima di riprodurre o registrare i dati MIDI, è necessario determinare le funzionalità dell'hardware MIDI presente nel sistema. La funzionalità MIDI può variare da un computer multimediale a quello successivo. le applicazioni non devono creare presupposti sull'hardware presente in un sistema specifico.
+
+Windows fornisce le funzioni seguenti per determinare il numero di dispositivi MIDI disponibili per l'input o l'output in un determinato sistema.
+
+
+
+| Valore                                          | Significato                                                            |
+|------------------------------------------------|--------------------------------------------------------------------|
+| [**midiInGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-midiingetnumdevs)   | Recupera il numero di dispositivi di input MIDI presenti nel sistema.  |
+| [**midiOutGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetnumdevs) | Recupera il numero di dispositivi di output MIDI presenti nel sistema. |
+
+
+
+ 
+
+Analogamente ad altri dispositivi audio, i dispositivi MIDI sono identificati da un identificatore di dispositivo, determinato in modo implicito dal numero di dispositivi presenti in un determinato sistema. Gli identificatori di dispositivo sono compresi tra zero e il numero di dispositivi presenti, meno uno. Se ad esempio sono presenti due dispositivi di output MIDI in un sistema, gli identificatori di dispositivo validi sono 0 e 1.
+
+Dopo aver determinato il numero di dispositivi di input o output MIDI presenti in un sistema, è possibile richiedere informazioni sulle funzionalità di ogni dispositivo. Windows fornisce le funzioni seguenti per determinare le funzionalità dei dispositivi audio.
+
+
+
+| Valore                                          | Significato                                                                                                                                   |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| [**midiInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-midiingetdevcaps)   | Recupera le funzionalità di un determinato dispositivo di input MIDI e inserisce queste informazioni nella struttura [**MIDIINCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midiincaps) .    |
+| [**midiOutGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetdevcaps) | Recupera le funzionalità di un dispositivo di output MIDI specificato e inserisce queste informazioni nella struttura [**MIDIOUTCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) . |
+
+
+
+ 
+
+Ognuna di queste funzioni include un parametro che specifica l'indirizzo di una struttura che la funzione compila con informazioni sulle funzionalità di un dispositivo specificato.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+<dl> <dt>
+
+[Servizi MIDI](midi-services.md)
+</dt> </dl>
+
+ 
+
+ 
