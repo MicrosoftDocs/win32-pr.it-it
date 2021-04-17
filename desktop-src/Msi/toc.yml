@@ -1517,7 +1517,7 @@
                   href: windowsvolume.md
             - name: Valori delle proprietà del sistema operativo
               href: operating-system-property-values.md
-            - name: Disinstalla chiave del registro di sistema
+            - name: Proprietà della chiave del registro di sistema Uninstall
               href: uninstall-registry-key.md
         - name: Flusso di informazioni di riepilogo
           href: summary-information-stream.md
