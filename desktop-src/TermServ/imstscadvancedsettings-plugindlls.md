@@ -1,0 +1,145 @@
+---
+title: Proprietà PluginDlls di IMsTscAdvancedSettings
+description: Specifica i nomi delle dll client del canale virtuale da caricare.
+ms.assetid: 4b248fb8-200a-4ce0-8c8e-ce1692a80d88
+ms.tgt_platform: multiple
+keywords:
+- Servizi Desktop remoto proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsTscAdvancedSettings
+- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà PluginDlls
+- Servizi Desktop remoto proprietà PluginDlls, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà PluginDlls
+topic_type:
+- apiref
+api_name:
+- IMsTscAdvancedSettings.PluginDlls
+- IMsTscAdvancedSettings.put_PluginDlls
+- IMsRdpClientAdvancedSettings.PluginDlls
+- IMsRdpClientAdvancedSettings.put_PluginDlls
+- IMsRdpClientAdvancedSettings2.PluginDlls
+- IMsRdpClientAdvancedSettings2.put_PluginDlls
+- IMsRdpClientAdvancedSettings3.PluginDlls
+- IMsRdpClientAdvancedSettings3.put_PluginDlls
+- IMsRdpClientAdvancedSettings4.PluginDlls
+- IMsRdpClientAdvancedSettings4.put_PluginDlls
+- IMsRdpClientAdvancedSettings5.PluginDlls
+- IMsRdpClientAdvancedSettings5.put_PluginDlls
+- IMsRdpClientAdvancedSettings6.PluginDlls
+- IMsRdpClientAdvancedSettings6.put_PluginDlls
+- IMsRdpClientAdvancedSettings7.PluginDlls
+- IMsRdpClientAdvancedSettings7.put_PluginDlls
+- IMsRdpClientAdvancedSettings8.PluginDlls
+- IMsRdpClientAdvancedSettings8.put_PluginDlls
+api_location:
+- MsTscAx.dll
+api_type:
+- COM
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: a3ef2e518145ae34533477bcbefb92e15d9c8d94
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "104476744"
+---
+# <a name="imstscadvancedsettingsplugindlls-property"></a>IMsTscAdvancedSettings::P proprietà luginDlls
+
+Specifica i nomi delle dll client del canale virtuale da caricare. Le dll client del canale virtuale sono anche denominate DLL plug-in.
+
+Questa proprietà è di sola scrittura.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+HRESULT put_PluginDlls(
+  [in] BSTR PluginDlls
+);
+```
+
+
+
+## <a name="property-value"></a>Valore proprietà
+
+Elenco delimitato da virgole dei nomi delle dll client del canale virtuale da caricare. I nomi delle DLL devono contenere solo caratteri alfanumerici. Per ulteriori informazioni sul formato di questi nomi, vedere [registrazione del plug-in DVC](dvc-plug-in-registration.md).
+
+## <a name="error-codes"></a>Codici di errore
+
+Se l'operazione ha esito positivo, restituire **S \_ OK** .
+
+## <a name="remarks"></a>Commenti
+
+Per motivi di sicurezza, se il controllo è ospitato in una pagina Web, la proprietà **PluginDlls** accetta solo un elenco denominato di dll client di canale virtuale. Il controllo restituisce un errore se viene specificato un file system o un percorso UNC.
+
+Le dll client del canale virtuale a cui si accede da una pagina Web devono essere installate nella directory "% WinDir% \\ system32" perché il controllo ActiveX Desktop remoto accede solo ai file dll in tale percorso. Se il controllo non è ospitato in una pagina Web, questa restrizione di sicurezza non esiste e i percorsi completi possono essere usati per accedere e caricare le dll client dei canali virtuali presenti in qualsiasi punto del file system.
+
+Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|-------------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Windows Vista<br/>                                                                  |
+| Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
+| Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>    |
+| DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>    |
+| IID<br/>                      | IID \_ IMsTscAdvancedSettings è definito come 809945cc-4b3b-4A92-a6b0-dbf9b5f2ef2d<br/> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+</dt> <dt>
+
+[**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md)
+</dt> <dt>
+
+[**IMsRdpClientAdvancedSettings3**](imsrdpclientadvancedsettings3.md)
+</dt> <dt>
+
+[**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md)
+</dt> <dt>
+
+[**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md)
+</dt> <dt>
+
+[**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings6.md)
+</dt> <dt>
+
+[**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md)
+</dt> <dt>
+
+[**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
+</dt> <dt>
+
+[**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
+
