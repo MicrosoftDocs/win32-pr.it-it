@@ -1,0 +1,22 @@
+---
+description: Le routine WSPSend, WSPSendTo, WSPRecv e WSPRecvFrom accettano una matrice di buffer client come parametri di input e quindi possono essere usate per operazioni di I/O a dispersione/raccolta (o vettoriali).
+ms.assetid: ecd3d2f1-74b1-42f7-8402-3170112e3aca
+title: Supporto per la dispersione/raccolta di input/output in SPI
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 4c3f32e016c5c2e9f990c334716d4177d477c50f
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106310418"
+---
+# <a name="support-for-scattergather-inputoutput-in-the-spi"></a><span data-ttu-id="5a7b7-103">Supporto per la dispersione/raccolta di input/output in SPI</span><span class="sxs-lookup"><span data-stu-id="5a7b7-103">Support for Scatter/Gather Input/Output in the SPI</span></span>
+
+<span data-ttu-id="5a7b7-104">Le routine [**WSPSend**](/previous-versions/windows/hardware/network/ff566316(v=vs.85)), [**WSPSendTo**](/previous-versions/windows/desktop/legacy/ms742291(v=vs.85)), [**WSPRecv**](/previous-versions/windows/hardware/network/ff566309(v=vs.85))e [**WSPRecvFrom**](/previous-versions/windows/desktop/legacy/ms742287(v=vs.85)) accettano una matrice di buffer client come parametri di input e quindi possono essere usate per operazioni di I/o a dispersione/raccolta (o vettoriali).</span><span class="sxs-lookup"><span data-stu-id="5a7b7-104">The [**WSPSend**](/previous-versions/windows/hardware/network/ff566316(v=vs.85)), [**WSPSendTo**](/previous-versions/windows/desktop/legacy/ms742291(v=vs.85)), [**WSPRecv**](/previous-versions/windows/hardware/network/ff566309(v=vs.85)), and [**WSPRecvFrom**](/previous-versions/windows/desktop/legacy/ms742287(v=vs.85)) routines all take an array of client buffers as input parameters and thus may be used for scatter/gather (or vectored) I/O.</span></span> <span data-ttu-id="5a7b7-105">Questo può essere molto utile in istanze in cui le parti di ogni messaggio trasmesso sono costituite da uno o più componenti di intestazione a lunghezza fissa oltre al corpo del messaggio.</span><span class="sxs-lookup"><span data-stu-id="5a7b7-105">This can be very useful in instances where portions of each message being transmitted consist of one or more fixed length header components in addition to a message body.</span></span> <span data-ttu-id="5a7b7-106">Questi componenti di intestazione non devono essere concatenati in un singolo buffer contiguo prima dell'invio.</span><span class="sxs-lookup"><span data-stu-id="5a7b7-106">Such header components need not be concatenated into a single contiguous buffer prior to sending.</span></span> <span data-ttu-id="5a7b7-107">Analogamente alla ricezione, i componenti dell'intestazione possono essere suddivisi automaticamente in buffer distinti, lasciando pure il corpo del messaggio.</span><span class="sxs-lookup"><span data-stu-id="5a7b7-107">Likewise on receiving, the header components can be automatically split off into separate buffers, leaving the message body pure.</span></span>
+
+<span data-ttu-id="5a7b7-108">L'utilizzo di elenchi di buffer anziché di un singolo buffer non comporta la modifica dei limiti che si applicano alle operazioni di ricezione.</span><span class="sxs-lookup"><span data-stu-id="5a7b7-108">Utilizing lists of buffers instead of a single buffer does not change the boundaries that apply to receive operations.</span></span> <span data-ttu-id="5a7b7-109">Per i protocolli orientati ai messaggi, un'operazione di ricezione viene completata ogni volta che viene ricevuto un singolo messaggio, indipendentemente dal numero di buffer utilizzati.</span><span class="sxs-lookup"><span data-stu-id="5a7b7-109">For message-oriented protocols, a receive operation completes whenever a single message has been received, regardless of how many or few of the supplied buffers were used.</span></span> <span data-ttu-id="5a7b7-110">Analogamente, per i protocolli orientati al flusso, una ricezione viene completata quando arriva una quantità non specificata di byte sulla rete, non necessariamente quando tutti i buffer forniti sono pieni.</span><span class="sxs-lookup"><span data-stu-id="5a7b7-110">Likewise for stream-oriented protocols, a receive completes when an unspecified quantity of bytes arrives over the network, not necessarily when all of the supplied buffers are full.</span></span>
+
+ 
+
+ 
