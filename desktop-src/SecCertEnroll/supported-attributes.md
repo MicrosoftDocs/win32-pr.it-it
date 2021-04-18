@@ -1,0 +1,96 @@
+---
+description: L'API di registrazione certificati supporta gli attributi seguenti. È possibile creare un singolo attributo usando l'interfaccia corrispondente identificata in ognuna delle sezioni seguenti.
+ms.assetid: e14fd472-1974-4ad2-b35a-3ab58ba0d707
+title: Attributi supportati
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e3bfff5785a0b891e98e6d78d59b4688e2d5c11a
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106307701"
+---
+# <a name="supported-attributes"></a><span data-ttu-id="09578-104">Attributi supportati</span><span class="sxs-lookup"><span data-stu-id="09578-104">Supported Attributes</span></span>
+
+<span data-ttu-id="09578-105">L'API di registrazione certificati supporta gli attributi seguenti.</span><span class="sxs-lookup"><span data-stu-id="09578-105">The Certificate Enrollment API supports the following attributes.</span></span> <span data-ttu-id="09578-106">È possibile creare un singolo attributo usando l'interfaccia corrispondente identificata in ognuna delle sezioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="09578-106">You can create an individual attribute by using the corresponding interface identified in each of the following sections.</span></span>
+
+## <a name="clientid"></a><span data-ttu-id="09578-107">ClientId</span><span class="sxs-lookup"><span data-stu-id="09578-107">ClientId</span></span>
+
+<span data-ttu-id="09578-108">L'interfaccia [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) può essere utilizzata per definire un attributo che contiene informazioni sul computer client che ha inviato la richiesta di certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-108">The [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) interface can be used to define an attribute that contains information about the client computer that sent the certificate request.</span></span> <span data-ttu-id="09578-109">Le informazioni possono essere usate per la diagnostica.</span><span class="sxs-lookup"><span data-stu-id="09578-109">The information can be used for diagnostics.</span></span>
+
+<span data-ttu-id="09578-110">**Si applica a:** \#Richiesta PKCS 10 o CMC.</span><span class="sxs-lookup"><span data-stu-id="09578-110">**Applies To:** PKCS \#10 or CMC request.</span></span>
+
+<span data-ttu-id="09578-111">**OID:** \_Informazioni sul client di richiesta OID XCN \_ \_ \_ (1.3.6.1.4.1.311.21.20)</span><span class="sxs-lookup"><span data-stu-id="09578-111">**OID:** XCN\_OID\_REQUEST\_CLIENT\_INFO (1.3.6.1.4.1.311.21.20)</span></span>
+
+## <a name="extensions"></a><span data-ttu-id="09578-112">Estensioni</span><span class="sxs-lookup"><span data-stu-id="09578-112">Extensions</span></span>
+
+<span data-ttu-id="09578-113">L'interfaccia [**IX509AttributeExtensions**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions) può essere usata per definire un set di estensioni del certificato X. 509 versione 3.</span><span class="sxs-lookup"><span data-stu-id="09578-113">The [**IX509AttributeExtensions**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions) interface can be used to define a set of X.509 version 3 certificate extensions.</span></span> <span data-ttu-id="09578-114">Sono supportate le estensioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="09578-114">The following extensions are supported.</span></span> <span data-ttu-id="09578-115">Per ulteriori informazioni, vedere l'argomento interfacce di estensione.</span><span class="sxs-lookup"><span data-stu-id="09578-115">For more information, see the Extension Interfaces topic.</span></span>
+
+
+
+| <span data-ttu-id="09578-116">Estensione</span><span class="sxs-lookup"><span data-stu-id="09578-116">Extension</span></span>              | <span data-ttu-id="09578-117">Descrizione</span><span class="sxs-lookup"><span data-stu-id="09578-117">Description</span></span>                                                                                                                                                                                                                      |
+|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="09578-118">AlternativeNames</span><span class="sxs-lookup"><span data-stu-id="09578-118">AlternativeNames</span></span>       | <span data-ttu-id="09578-119">Contiene una o più forme nome alternativo dell'emittente associata al certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-119">Contains one or more alternative name forms of the issuer associated with the certificate.</span></span>                                                                                                                                       |
+| <span data-ttu-id="09578-120">AuthorityKeyIdentifier</span><span class="sxs-lookup"><span data-stu-id="09578-120">AuthorityKeyIdentifier</span></span> | <span data-ttu-id="09578-121">Contiene un identificatore di chiave univoco per distinguere tra più chiavi di firma del certificato dell' [*autorità di certificazione*](/windows/desktop/SecGloss/c-gly) (CA).</span><span class="sxs-lookup"><span data-stu-id="09578-121">Contains a unique key identifier to differentiate between multiple certificate signing keys of the [*certification authority*](/windows/desktop/SecGloss/c-gly) (CA).</span></span> |
+| <span data-ttu-id="09578-122">BasicConstraints</span><span class="sxs-lookup"><span data-stu-id="09578-122">BasicConstraints</span></span>       | <span data-ttu-id="09578-123">Indica se l'oggetto può fungere da autorità di certificazione.</span><span class="sxs-lookup"><span data-stu-id="09578-123">Indicates whether the subject can act as a CA.</span></span>                                                                                                                                                                                   |
+| <span data-ttu-id="09578-124">CertificatePolicies</span><span class="sxs-lookup"><span data-stu-id="09578-124">CertificatePolicies</span></span>    | <span data-ttu-id="09578-125">Identifica i criteri e le informazioni facoltative sui qualificatori associati al certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-125">Identifies the policies and optional qualifier information associated with the certificate.</span></span>                                                                                                                                      |
+| <span data-ttu-id="09578-126">MSApplicationPolicies</span><span class="sxs-lookup"><span data-stu-id="09578-126">MSApplicationPolicies</span></span>  | <span data-ttu-id="09578-127">Identifica uno o più utilizzi per il certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-127">Identifies one or more uses for the certificate.</span></span> <span data-ttu-id="09578-128">Questa estensione è simile all'estensione campo EnhancedKeyUsage, ma è definita da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="09578-128">This extension is similar to the EnhancedKeyUsage extension but is Microsoft-defined.</span></span>                                                                                           |
+| <span data-ttu-id="09578-129">Campo EnhancedKeyUsage</span><span class="sxs-lookup"><span data-stu-id="09578-129">EnhancedKeyUsage</span></span>       | <span data-ttu-id="09578-130">Identifica uno o più utilizzi della chiave pubblica contenuta nel certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-130">Identifies one or more uses of the public key contained in the certificate.</span></span> <span data-ttu-id="09578-131">L'estensione utilizzo chiavi avanzato può essere usata in aggiunta a o al posto dell'estensione utilizzo chiave.</span><span class="sxs-lookup"><span data-stu-id="09578-131">The enhanced key usage extension can be used in addition to or in place of the key usage extension.</span></span>                                                  |
+| <span data-ttu-id="09578-132">KeyUsage</span><span class="sxs-lookup"><span data-stu-id="09578-132">KeyUsage</span></span>               | <span data-ttu-id="09578-133">Identifica le restrizioni sulle operazioni che possono essere eseguite dalla chiave pubblica contenuta nel certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-133">Identifies restrictions on the operations that can be performed by the public key contained in the certificate.</span></span>                                                                                                                  |
+| <span data-ttu-id="09578-134">SmimeCapabilities</span><span class="sxs-lookup"><span data-stu-id="09578-134">SmimeCapabilities</span></span>      | <span data-ttu-id="09578-135">Segnala le funzionalità di decrittografia di un destinatario di posta elettronica al mittente del messaggio di posta elettronica per consentire al mittente di scegliere l'algoritmo simmetrico più sicuro supportato da entrambe le parti.</span><span class="sxs-lookup"><span data-stu-id="09578-135">Reports the decryption capabilities of an email recipient to the email sender to enable the sender to choose the most secure symmetric algorithm supported by both parties.</span></span>                                                      |
+| <span data-ttu-id="09578-136">SubjectKeyIdentifier</span><span class="sxs-lookup"><span data-stu-id="09578-136">SubjectKeyIdentifier</span></span>   | <span data-ttu-id="09578-137">Contiene un identificatore di chiave univoco che può essere usato per distinguere tra più chiavi di firma associate al proprietario del certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-137">Contains a unique key identifier that can be used to differentiate between multiple signing keys associated with the certificate owner.</span></span>                                                                                          |
+| <span data-ttu-id="09578-138">Modello</span><span class="sxs-lookup"><span data-stu-id="09578-138">Template</span></span>               | <span data-ttu-id="09578-139">Identifica il modello da utilizzare per l'emissione o il rinnovo di un certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-139">Identifies the template to use when issuing or renewing a certificate.</span></span> <span data-ttu-id="09578-140">L'estensione contiene l'identificatore di oggetto (OID) del modello.</span><span class="sxs-lookup"><span data-stu-id="09578-140">The extension contains the object identifier (OID) of the template.</span></span>                                                                                       |
+| <span data-ttu-id="09578-141">TemplateName</span><span class="sxs-lookup"><span data-stu-id="09578-141">TemplateName</span></span>           | <span data-ttu-id="09578-142">Identifica il modello da utilizzare per l'emissione o il rinnovo di un certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-142">Identifies the template to use when issuing or renewing a certificate.</span></span> <span data-ttu-id="09578-143">L'estensione contiene il nome del modello.</span><span class="sxs-lookup"><span data-stu-id="09578-143">The extension contains the name of the template.</span></span>                                                                                                          |
+
+
+
+ 
+
+<span data-ttu-id="09578-144">**Si applica a:** \#Richiesta PKCS 10.</span><span class="sxs-lookup"><span data-stu-id="09578-144">**Applies To:** PKCS \#10 request.</span></span>
+
+<span data-ttu-id="09578-145">**OID:** \_OID XCN \_ RSA \_ certExtensions (1.2.840.113549.1.9.14)</span><span class="sxs-lookup"><span data-stu-id="09578-145">**OID:** XCN\_OID\_RSA\_certExtensions (1.2.840.113549.1.9.14)</span></span>
+
+## <a name="archivekey"></a><span data-ttu-id="09578-146">ArchiveKey</span><span class="sxs-lookup"><span data-stu-id="09578-146">ArchiveKey</span></span>
+
+<span data-ttu-id="09578-147">L'interfaccia [**IX509AttributeArchiveKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekey) può essere usata per definire un attributo che contiene una chiave privata crittografata inviata a una CA per l'archiviazione.</span><span class="sxs-lookup"><span data-stu-id="09578-147">The [**IX509AttributeArchiveKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekey) interface can be used to define an attribute that contains an encrypted private key submitted to a CA for archiving.</span></span>
+
+<span data-ttu-id="09578-148">**Si applica a:** Richiesta CMC.</span><span class="sxs-lookup"><span data-stu-id="09578-148">**Applies To:** CMC request.</span></span>
+
+<span data-ttu-id="09578-149">**OID:** \_ \_ Chiave archiviata OID \_ XCN \_ attr (1.3.6.1.4.1.311.21.13)</span><span class="sxs-lookup"><span data-stu-id="09578-149">**OID:** XCN\_OID\_ARCHIVED\_KEY\_ATTR (1.3.6.1.4.1.311.21.13)</span></span>
+
+## <a name="archivekeyhash"></a><span data-ttu-id="09578-150">ArchiveKeyHash</span><span class="sxs-lookup"><span data-stu-id="09578-150">ArchiveKeyHash</span></span>
+
+<span data-ttu-id="09578-151">L'interfaccia [**IX509AttributeArchiveKeyHash**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekeyhash) può essere usata per definire un hash della chiave privata contenuta nell'attributo **ArchiveKey** .</span><span class="sxs-lookup"><span data-stu-id="09578-151">The [**IX509AttributeArchiveKeyHash**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekeyhash) interface can be used to define a hash of the private key contained in the **ArchiveKey** attribute.</span></span>
+
+<span data-ttu-id="09578-152">**Si applica a:** Richiesta CMC.</span><span class="sxs-lookup"><span data-stu-id="09578-152">**Applies To:** CMC request.</span></span>
+
+<span data-ttu-id="09578-153">**OID:** \_Hash della \_ chiave crittografata OID XCN \_ \_ (1.3.6.1.4.1.311.21.21)</span><span class="sxs-lookup"><span data-stu-id="09578-153">**OID:** XCN\_OID\_ENCRYPTED\_KEY\_HASH (1.3.6.1.4.1.311.21.21)</span></span>
+
+## <a name="cspprovider"></a><span data-ttu-id="09578-154">CspProvider</span><span class="sxs-lookup"><span data-stu-id="09578-154">CspProvider</span></span>
+
+<span data-ttu-id="09578-155">L'interfaccia [**IX509AttributeCspProvider**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributecspprovider) può essere utilizzata per definire un attributo che contiene informazioni sul [*provider del servizio di crittografia*](/windows/desktop/SecGloss/c-gly) (CSP) utilizzato dal richiedente per le operazioni di crittografia.</span><span class="sxs-lookup"><span data-stu-id="09578-155">The [**IX509AttributeCspProvider**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributecspprovider) interface can be used to define an attribute that contains information about the [*cryptographic service provider*](/windows/desktop/SecGloss/c-gly) (CSP) used by the requester for cryptographic operations.</span></span>
+
+<span data-ttu-id="09578-156">**Si applica a:** \#Richiesta PKCS 10.</span><span class="sxs-lookup"><span data-stu-id="09578-156">**Applies To:** PKCS \#10 request.</span></span> <span data-ttu-id="09578-157">Questo attributo viene creato automaticamente quando si crea un oggetto [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) .</span><span class="sxs-lookup"><span data-stu-id="09578-157">This attribute is automatically created when you create an [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) object.</span></span>
+
+<span data-ttu-id="09578-158">**OID:** \_ \_ Provider CSP di registrazione XCN \_ \_ (1.3.6.1.4.1.311.13.2.2)</span><span class="sxs-lookup"><span data-stu-id="09578-158">**OID:** XCN\_OID\_ENROLLMENT\_CSP\_PROVIDER (1.3.6.1.4.1.311.13.2.2)</span></span>
+
+## <a name="osversion"></a><span data-ttu-id="09578-159">OSVersion</span><span class="sxs-lookup"><span data-stu-id="09578-159">OSVersion</span></span>
+
+<span data-ttu-id="09578-160">L'interfaccia [**IX509AttributeOSVersion**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeosversion) può essere usata per creare un attributo che contiene le informazioni sulla versione del sistema operativo client.</span><span class="sxs-lookup"><span data-stu-id="09578-160">The [**IX509AttributeOSVersion**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeosversion) interface can be used to create an attribute that contains version information about the client operating system.</span></span> <span data-ttu-id="09578-161">Le informazioni possono essere utilizzate dalla CA per determinare il tipo di elaborazione da applicare durante la creazione del certificato.</span><span class="sxs-lookup"><span data-stu-id="09578-161">The information can be used by the CA to determine the type of processing to apply when creating the certificate.</span></span>
+
+<span data-ttu-id="09578-162">**Si applica a:** \#Richiesta PKCS 10 o CMC.</span><span class="sxs-lookup"><span data-stu-id="09578-162">**Applies To:** PKCS \#10 or CMC request.</span></span>
+
+<span data-ttu-id="09578-163">**OID:** \_Versione del \_ sistema operativo OID XCN \_ (1.3.6.1.4.1.311.13.2.3)</span><span class="sxs-lookup"><span data-stu-id="09578-163">**OID:** XCN\_OID\_OS\_VERSION (1.3.6.1.4.1.311.13.2.3)</span></span>
+
+## <a name="renewalcertificate"></a><span data-ttu-id="09578-164">RenewalCertificate</span><span class="sxs-lookup"><span data-stu-id="09578-164">RenewalCertificate</span></span>
+
+<span data-ttu-id="09578-165">L'interfaccia [**IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) può essere utilizzata per creare un attributo che contiene il certificato da rinnovare.</span><span class="sxs-lookup"><span data-stu-id="09578-165">The [**IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) interface can be used to create an attribute that contains the certificate being renewed.</span></span>
+
+<span data-ttu-id="09578-166">**Si applica a:** \#Richiesta PKCS 10.</span><span class="sxs-lookup"><span data-stu-id="09578-166">**Applies To:** PKCS \#10 request.</span></span> <span data-ttu-id="09578-167">Questo attributo viene creato automaticamente se si crea una \# richiesta PKCS 10 avviando il certificato da rinnovare.</span><span class="sxs-lookup"><span data-stu-id="09578-167">This attribute is automatically created if you create a PKCS \#10 request by initiating it with the certificate being renewed.</span></span>
+
+<span data-ttu-id="09578-168">**OID:** \_Certificato di \_ rinnovo OID XCN \_ (1.3.6.1.4.1.311.13.1)</span><span class="sxs-lookup"><span data-stu-id="09578-168">**OID:** XCN\_OID\_RENEWAL\_CERTIFICATE (1.3.6.1.4.1.311.13.1)</span></span>
+
+ 
+
+ 
