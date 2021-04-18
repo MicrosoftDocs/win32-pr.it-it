@@ -1,0 +1,57 @@
+---
+description: Servizi certificati, un servizio in esecuzione in un sistema operativo Windows Server, riceve le richieste di nuovi certificati digitali su trasporti quali RPC o HTTP.
+ms.assetid: 4c0098be-6b1b-4ce0-b3a0-942c1290b5b4
+title: Servizi certificati
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d1a3f25972f98a79a208719eb2bcb08de07d7894
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106315813"
+---
+# <a name="certificate-services"></a><span data-ttu-id="b29bf-103">Servizi certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-103">Certificate Services</span></span>
+
+<span data-ttu-id="b29bf-104">[*Servizi certificati*](../secgloss/c-gly.md), un servizio in esecuzione in un sistema operativo Windows Server, riceve le richieste di nuovi certificati digitali su trasporti quali RPC o http.</span><span class="sxs-lookup"><span data-stu-id="b29bf-104">[*Certificate Services*](../secgloss/c-gly.md), a service running on a Windows server operating system, receives requests for new digital certificates over transports such as RPC or HTTP.</span></span> <span data-ttu-id="b29bf-105">Verifica ogni richiesta rispetto a criteri personalizzati o specifici del sito, imposta le proprietà facoltative per un certificato da emettere e rilascia il certificato.</span><span class="sxs-lookup"><span data-stu-id="b29bf-105">It checks each request against custom or site-specific policies, sets optional properties for a certificate to be issued, and issues the certificate.</span></span> <span data-ttu-id="b29bf-106">Servizi certificati consente agli amministratori di aggiungere elementi a un [*elenco di revoche di certificati*](../secgloss/c-gly.md) (CRL) e di pubblicare i CRL firmati a intervalli regolari.</span><span class="sxs-lookup"><span data-stu-id="b29bf-106">Certificate Services allows administrators to add elements to a [*certificate revocation list*](../secgloss/c-gly.md) (CRL), and to publish signed CRLs on a regular basis.</span></span>
+
+<span data-ttu-id="b29bf-107">I servizi certificati includono interfacce programmabili per la creazione del supporto per trasporti, criteri e proprietà e formati di certificati aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="b29bf-107">Certificate services include programmable interfaces for creating support for additional transports, policies, and certificate properties and formats.</span></span>
+
+<span data-ttu-id="b29bf-108">In Windows Server 2003, è possibile installare Servizi certificati 2,0 dal **Pannello di controllo** facendo clic su **Installazione applicazioni** e quindi su **Aggiungi/Rimuovi componenti di Windows** per installare o disinstallare Servizi certificati.</span><span class="sxs-lookup"><span data-stu-id="b29bf-108">In Windows Server 2003, Certificate Services 2.0 can be installed from **Control Panel** by clicking **Add or Remove Programs** and then clicking **Add/Remove Windows Components** to install or uninstall Certificate Services.</span></span>
+
+<span data-ttu-id="b29bf-109">I concetti relativi ai Servizi certificati sono descritti in dettaglio nelle sezioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="b29bf-109">Certificate Services concepts are detailed in the following sections.</span></span> <span data-ttu-id="b29bf-110">Il contenuto è concepito per semplificare lo sviluppo di applicazioni che interagiranno con servizi certificati.</span><span class="sxs-lookup"><span data-stu-id="b29bf-110">The content is intended to help you develop applications that will interact with Certificate Services.</span></span>
+
+
+
+| <span data-ttu-id="b29bf-111">Content</span><span class="sxs-lookup"><span data-stu-id="b29bf-111">Content</span></span>                                                                                                                                                           | <span data-ttu-id="b29bf-112">Sezione</span><span class="sxs-lookup"><span data-stu-id="b29bf-112">Section</span></span>                                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| <span data-ttu-id="b29bf-113">Descrizione delle funzionalità di Servizi certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-113">Description of the features of Certificate Services</span></span>                                                                                                               | [<span data-ttu-id="b29bf-114">Funzionalità di Servizi certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-114">Certificate Services Features</span></span>](certificate-services-features.md)         |
+| <span data-ttu-id="b29bf-115">Panoramica dell'architettura di Servizi certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-115">Overview of Certificate Services architecture</span></span>                                                                                                                     | [<span data-ttu-id="b29bf-116">Architettura di Servizi certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-116">Certificate Services Architecture</span></span>](certificate-services-architecture.md) |
+| <span data-ttu-id="b29bf-117">Relazione tra un certificato, l'oggetto del certificato e la [ *chiave pubblica* del soggetto](../secgloss/p-gly.md)</span><span class="sxs-lookup"><span data-stu-id="b29bf-117">Relationship between a certificate, the certificate's subject, and the subject's [*public key*](../secgloss/p-gly.md)</span></span> | [<span data-ttu-id="b29bf-118">Certificati e chiavi pubbliche</span><span class="sxs-lookup"><span data-stu-id="b29bf-118">Certificates and Public Keys</span></span>](certificates-and-public-keys.md)           |
+| <span data-ttu-id="b29bf-119">Informazioni sulle proprietà della richiesta di certificato</span><span class="sxs-lookup"><span data-stu-id="b29bf-119">Information about the Certificate Request properties</span></span>                                                                                                              | [<span data-ttu-id="b29bf-120">Linee guida per le richieste di certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-120">Certificate Request Guidelines</span></span>](certificate-request-guidelines.md)       |
+| <span data-ttu-id="b29bf-121">Dettagli della modalità di elaborazione di un certificato da Servizi certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-121">Details of how a certificate is processed by Certificate Services</span></span>                                                                                                 | [<span data-ttu-id="b29bf-122">Informazioni sui certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-122">About Certificates</span></span>](about-certificates.md)                               |
+| <span data-ttu-id="b29bf-123">Descrizione del processo di rinnovo dell' [*autorità di certificazione*](../secgloss/c-gly.md)</span><span class="sxs-lookup"><span data-stu-id="b29bf-123">Description of the [*certification authority*](../secgloss/c-gly.md) renewal process</span></span>        | [<span data-ttu-id="b29bf-124">Rinnovo dell'autorità di certificazione</span><span class="sxs-lookup"><span data-stu-id="b29bf-124">Certification Authority Renewal</span></span>](certification-authority-renewal.md)     |
+
+
+
+ 
+
+<span data-ttu-id="b29bf-125">Sono inclusi anche i seguenti argomenti utili aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="b29bf-125">The following additional useful topics are also included.</span></span>
+
+
+
+| <span data-ttu-id="b29bf-126">Content</span><span class="sxs-lookup"><span data-stu-id="b29bf-126">Content</span></span>                                                                                                                                             | <span data-ttu-id="b29bf-127">Sezione</span><span class="sxs-lookup"><span data-stu-id="b29bf-127">Section</span></span>                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| <span data-ttu-id="b29bf-128">Documentazione relativa al controllo di registrazione certificati, che fornisce servizi per la creazione di richieste di certificati, incluse le richieste per gli utenti di smart card.</span><span class="sxs-lookup"><span data-stu-id="b29bf-128">Documentation on Certificate Enrollment Control, which provides services for creating certificate requests including requests for smart card users.</span></span> | [<span data-ttu-id="b29bf-129">Controllo di registrazione certificati</span><span class="sxs-lookup"><span data-stu-id="b29bf-129">Certificate Enrollment Control</span></span>](certificate-enrollment-control.md) |
+| <span data-ttu-id="b29bf-130">Documentazione sull'interfaccia di programmazione dell'applicazione di crittografia Microsoft, che fornisce servizi di sicurezza basati su crittografia.</span><span class="sxs-lookup"><span data-stu-id="b29bf-130">Documentation on the Microsoft Cryptographic Application Programming Interface, which provides cryptography-based security services.</span></span>                | [<span data-ttu-id="b29bf-131">Crittografia Essentials</span><span class="sxs-lookup"><span data-stu-id="b29bf-131">Cryptography Essentials</span></span>](cryptography-essentials.md)               |
+| <span data-ttu-id="b29bf-132">Documentazione su smart card, che fornisce servizi per lo sviluppo e l'utilizzo di sistemi di smart card.</span><span class="sxs-lookup"><span data-stu-id="b29bf-132">Documentation on Smart Card, which provides services for developing and using smart card systems.</span></span>                                                   | [<span data-ttu-id="b29bf-133">Smart card</span><span class="sxs-lookup"><span data-stu-id="b29bf-133">Smart Card</span></span>](../secauthn/smart-card-authentication.md)                     |
+| <span data-ttu-id="b29bf-134">Nome delle proprietà dei certificati e delle richieste di certificati.</span><span class="sxs-lookup"><span data-stu-id="b29bf-134">Name properties of certificates and certificate requests.</span></span>                                                                                           | [<span data-ttu-id="b29bf-135">Proprietà nome</span><span class="sxs-lookup"><span data-stu-id="b29bf-135">Name Properties</span></span>](name-properties.md)                               |
+| <span data-ttu-id="b29bf-136">Elenco e descrizioni delle proprietà del certificato [*X. 509*](../secgloss/x-gly.md) .</span><span class="sxs-lookup"><span data-stu-id="b29bf-136">List and descriptions of [*X.509*](../secgloss/x-gly.md) certificate properties.</span></span>                                  | [<span data-ttu-id="b29bf-137">Proprietà certificato</span><span class="sxs-lookup"><span data-stu-id="b29bf-137">Certificate Properties</span></span>](certificate-properties.md)                 |
+
+
+
+ 
+
+ 
+
+ 
