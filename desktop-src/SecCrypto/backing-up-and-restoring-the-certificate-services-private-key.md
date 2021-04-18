@@ -1,0 +1,26 @@
+---
+description: Non è possibile utilizzare le funzioni di backup e ripristino Certadm.dll per eseguire il backup delle chiavi private dei servizi certificati.
+ms.assetid: 27ee8caa-8f5e-46dc-b55d-afde5471507e
+title: Backup e ripristino della chiave privata dei servizi certificati
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 891794f36e87b2aa4b6a5d5c8dde55304da20601
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106307700"
+---
+# <a name="backing-up-and-restoring-the-certificate-services-private-key"></a><span data-ttu-id="5b06f-103">Backup e ripristino della chiave privata dei servizi certificati</span><span class="sxs-lookup"><span data-stu-id="5b06f-103">Backing Up and Restoring the Certificate Services Private Key</span></span>
+
+<span data-ttu-id="5b06f-104">Non è possibile utilizzare le funzioni di backup e ripristino Certadm.dll per eseguire il backup delle [*chiavi private*](../secgloss/p-gly.md)dei servizi certificati.</span><span class="sxs-lookup"><span data-stu-id="5b06f-104">You cannot use the Certadm.dll's backup and restore functions to back up the Certificate Services [*private keys*](../secgloss/p-gly.md).</span></span> <span data-ttu-id="5b06f-105">Non è possibile eseguire il backup delle chiavi private da queste funzioni perché queste funzioni sono progettate per eseguire il backup e il ripristino del database dei servizi certificati (e dei file correlati) e il database non contiene chiavi private (anche per i certificati autofirmati).</span><span class="sxs-lookup"><span data-stu-id="5b06f-105">Private keys cannot be backed up by these functions because these functions are intended to backup and restore the Certificate Services database (and related files), and this database does not contain any private keys (even for self-issued certificates).</span></span>
+
+<span data-ttu-id="5b06f-106">Per eseguire il backup di una chiave privata di Servizi certificati, utilizzare lo snap-in MMC Autorità di certificazione o il comando certutil (con-backup o-backupkey specificato).</span><span class="sxs-lookup"><span data-stu-id="5b06f-106">To back up a Certificate Services private key, use the Certification Authority MMC snap-in, or the certutil command (with -backup or -backupkey specified).</span></span> <span data-ttu-id="5b06f-107">Il backup della chiave privata con lo snap-in MMC dell'autorità di certificazione o certutil comporta la scrittura della chiave privata nel \# file PKCS 12.</span><span class="sxs-lookup"><span data-stu-id="5b06f-107">Backing up the private key with the Certification Authority MMC snap-in or certutil results in the private key being written to PKCS \#12 file.</span></span> <span data-ttu-id="5b06f-108">Anche se il \# file PKCS 12 è protetto da password, deve essere considerato estremamente sensibile e deve essere archiviato in modo sicuro. la password per il \# file PKCS 12 deve anche essere sorvegliata da persone non autorizzate.</span><span class="sxs-lookup"><span data-stu-id="5b06f-108">Even though this PKCS \#12 file is password-protected, it should be considered extremely sensitive and must be stored securely; the password to the PKCS \#12 file should also be guarded from unauthorized persons.</span></span>
+
+<span data-ttu-id="5b06f-109">Analogamente, le chiavi private non possono essere ripristinate dalle funzioni di backup e ripristino di Servizi certificati.</span><span class="sxs-lookup"><span data-stu-id="5b06f-109">Similarly, private keys cannot be restored by the Certificate Services backup and restore functions.</span></span> <span data-ttu-id="5b06f-110">Una chiave di backup di Servizi certificati contenuta in un \# file PKCS 12 può essere ripristinata dallo snap-in MMC dell'autorità di certificazione o dal comando certutil (specificando i verbi-Restore o-restorekey); si noti che l'utente che esegue l'operazione di ripristino dovrà essere a conoscenza della password per il \# file PKCS 12.</span><span class="sxs-lookup"><span data-stu-id="5b06f-110">A Certificate Services backup key contained in a PKCS \#12 file can be restored by the Certification Authority MMC snap-in, or by the certutil command (specifying the -restore or -restorekey verbs); note that the person performing the restore operation will need to know the password for the PKCS \#12 file.</span></span>
+
+<span data-ttu-id="5b06f-111">Esistono solo due casi in cui è necessario eseguire il backup di una chiave privata di Servizi certificati.</span><span class="sxs-lookup"><span data-stu-id="5b06f-111">There are only two cases in which a Certificate Services private key must be backed up.</span></span> <span data-ttu-id="5b06f-112">Il primo caso è dopo l'installazione di Servizi certificati.</span><span class="sxs-lookup"><span data-stu-id="5b06f-112">The first case is after the installation of Certificate Services.</span></span> <span data-ttu-id="5b06f-113">Il secondo caso è dopo qualsiasi operazione di rinnovo del certificato di Servizi certificati.</span><span class="sxs-lookup"><span data-stu-id="5b06f-113">The second case is after any renewal operation of the Certificate Services certificate.</span></span>
+
+ 
+
+ 
