@@ -1,0 +1,49 @@
+---
+title: Informazioni sul ripping del CD
+description: Informazioni sul ripping del CD
+ms.assetid: 1a179284-2909-4fc0-82be-996794ee4f31
+keywords:
+- Windows Media Player, copia di CD
+- Modello a oggetti di Windows Media Player, copia di CD
+- modello a oggetti, copia di CD
+- Controllo ActiveX di Windows Media Player, copia di CD
+- Controllo ActiveX, copia di CD
+- Controllo ActiveX Windows Media Player Mobile, copia di CD
+- Windows Media Player Mobile, copia di CD
+- Ripping di CD, informazioni
+- ripping di CDs, informazioni
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: e28769c6af666e510fb97ebc98e44fadc7c3e472
+ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "106299417"
+---
+# <a name="about-cd-ripping"></a><span data-ttu-id="5aa32-112">Informazioni sul ripping del CD</span><span class="sxs-lookup"><span data-stu-id="5aa32-112">About CD Ripping</span></span>
+
+<span data-ttu-id="5aa32-113">Windows Media Player 11 SDK introduce nuove funzionalità per la copia di tracce audio da CDs al computer dell'utente.</span><span class="sxs-lookup"><span data-stu-id="5aa32-113">The Windows Media Player 11 SDK introduces new functionality for copying audio tracks from CDs to the user's computer.</span></span> <span data-ttu-id="5aa32-114">Questo processo è denominato *estrazione*.</span><span class="sxs-lookup"><span data-stu-id="5aa32-114">This process is called *ripping*.</span></span>
+
+<span data-ttu-id="5aa32-115">Quando si esegue il RIP delle tracce audio utilizzando le interfacce di Windows Media Player SDK, le tracce musicali risultanti vengono create utilizzando le impostazioni definite dall'utente nella finestra di dialogo **Opzioni** di Windows Media Player.</span><span class="sxs-lookup"><span data-stu-id="5aa32-115">When you rip audio tracks by using the Windows Media Player SDK interfaces, the resulting music tracks are created by using the settings that the user defined in the Windows Media Player **Options** dialog box.</span></span>
+
+<span data-ttu-id="5aa32-116">Per enumerare le unità CD nel computer dell'utente, usare l'interfaccia **IWMPCdromCollection** .</span><span class="sxs-lookup"><span data-stu-id="5aa32-116">To enumerate the CD drives on the user's computer, use the **IWMPCdromCollection** interface.</span></span> <span data-ttu-id="5aa32-117">Per recuperare un puntatore a questa interfaccia, chiamare [IWMPCore:: Get \_ cdromcollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).</span><span class="sxs-lookup"><span data-stu-id="5aa32-117">You retrieve a pointer to this interface by calling [IWMPCore::get\_cdromCollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).</span></span> <span data-ttu-id="5aa32-118">Utilizzando i metodi **count** e **Item** , è possibile eseguire l'iterazione della raccolta per recuperare un puntatore di interfaccia **IWMPCdrom** per ogni unità CD nel computer dell'utente.</span><span class="sxs-lookup"><span data-stu-id="5aa32-118">By using the **count** and **item** methods, you can iterate the collection to retrieve an **IWMPCdrom** interface pointer for each CD drive on the user's computer.</span></span> <span data-ttu-id="5aa32-119">L'interfaccia **IWMPCdrom** rappresenta una singola unità CD.</span><span class="sxs-lookup"><span data-stu-id="5aa32-119">The **IWMPCdrom** interface represents an individual CD drive.</span></span> <span data-ttu-id="5aa32-120">Prima di iniziare a rippare un CD, è prima necessario chiamare **QueryInterface** tramite un puntatore **IWMPCdrom** per recuperare un puntatore all'interfaccia **IWMPCdromRip** .</span><span class="sxs-lookup"><span data-stu-id="5aa32-120">Before you begin ripping a CD, you must first call **QueryInterface** through an **IWMPCdrom** pointer to retrieve a pointer to the **IWMPCdromRip** interface.</span></span>
+
+<span data-ttu-id="5aa32-121">Per avviare l'operazione di estrazione, è sufficiente chiamare [IWMPCdromRip:: startRip](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-startrip).</span><span class="sxs-lookup"><span data-stu-id="5aa32-121">To start the ripping operation, simply call [IWMPCdromRip::startRip](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-startrip).</span></span> <span data-ttu-id="5aa32-122">È possibile monitorare lo stato di avanzamento dell'operazione di strappo chiamando periodicamente [IWMPCdromRip:: Get \_ ripProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress).</span><span class="sxs-lookup"><span data-stu-id="5aa32-122">You can monitor the progress of the ripping operation by periodically calling [IWMPCdromRip::get\_ripProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress).</span></span> <span data-ttu-id="5aa32-123">Questo metodo recupera un valore di avanzamento per l'intera operazione di estrazione.</span><span class="sxs-lookup"><span data-stu-id="5aa32-123">This method retrieves a progress value for the entire ripping operation.</span></span> <span data-ttu-id="5aa32-124">Il valore recuperato è un numero che rappresenta la percentuale di ripping completata.</span><span class="sxs-lookup"><span data-stu-id="5aa32-124">The value retrieved is a number that represents the percentage of ripping completed.</span></span> <span data-ttu-id="5aa32-125">È possibile monitorare lo stato dell'operazione di strappo chiamando periodicamente [IWMPCdromRip:: Get \_ ripState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate).</span><span class="sxs-lookup"><span data-stu-id="5aa32-125">You can monitor the state of the ripping operation by periodically calling [IWMPCdromRip::get\_ripState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate).</span></span> <span data-ttu-id="5aa32-126">Questo metodo recupera un valore di enumerazione [WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) che indica se l'operazione è in corso o è stata arrestata.</span><span class="sxs-lookup"><span data-stu-id="5aa32-126">This method retrieves a [WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) enumeration value that indicates whether the operation is in progress or stopped.</span></span> <span data-ttu-id="5aa32-127">È anche possibile monitorare lo stato dell'operazione di strappo gestendo l'evento [IWMPEvents3:: CdromRipStateChange](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) .</span><span class="sxs-lookup"><span data-stu-id="5aa32-127">You can also monitor the state of the ripping operation by handling the [IWMPEvents3::CdromRipStateChange](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) event.</span></span> <span data-ttu-id="5aa32-128">È necessario prestare attenzione a confrontare il puntatore **IWMPCdromRip** (fornito dall'evento) al puntatore che rappresenta l'operazione di estrazione per assicurarsi che l'evento sia stato generato dall'operazione.</span><span class="sxs-lookup"><span data-stu-id="5aa32-128">You should be careful to compare the **IWMPCdromRip** pointer (provided by the event) to the pointer that represents your ripping operation to ensure that the event was raised by your operation.</span></span> <span data-ttu-id="5aa32-129">È possibile arrestare l'operazione di strappo chiamando [IWMPCdromRip:: stopRip](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-stoprip).</span><span class="sxs-lookup"><span data-stu-id="5aa32-129">You can stop the ripping operation by calling [IWMPCdromRip::stopRip](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-stoprip).</span></span>
+
+<span data-ttu-id="5aa32-130">Per ricevere le notifiche di errore relative a un'operazione di ripping, è possibile gestire l'evento [IWMPEvents3:: CdromRipMediaError](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripmediaerror) .</span><span class="sxs-lookup"><span data-stu-id="5aa32-130">To receive error notifications about a ripping operation, you can handle the [IWMPEvents3::CdromRipMediaError](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripmediaerror) event.</span></span> <span data-ttu-id="5aa32-131">Analogamente a **CdromRipStateChange**, questo evento fornisce un puntatore all'interfaccia **IWMPCdromRip** che rappresenta l'operazione di strappo che ha generato l'evento.</span><span class="sxs-lookup"><span data-stu-id="5aa32-131">Like **CdromRipStateChange**, this event provides an **IWMPCdromRip** interface pointer that represents the ripping operation that raised the event.</span></span> <span data-ttu-id="5aa32-132">L'evento fornisce inoltre un puntatore **IDispatch** che rappresenta l'elemento multimediale che ha generato l'evento.</span><span class="sxs-lookup"><span data-stu-id="5aa32-132">The event also provides an **IDispatch** pointer that represents the media item that raised the event.</span></span> <span data-ttu-id="5aa32-133">È possibile chiamare **QueryInterface** tramite questo puntatore per recuperare un puntatore **IWMPMedia** .</span><span class="sxs-lookup"><span data-stu-id="5aa32-133">You can call **QueryInterface** through this pointer to retrieve an **IWMPMedia** pointer.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="5aa32-134">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="5aa32-134">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="5aa32-135">**Informazioni sul modello a oggetti del lettore**</span><span class="sxs-lookup"><span data-stu-id="5aa32-135">**About the Player Object Model**</span></span>](about-the-player-object-model.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
