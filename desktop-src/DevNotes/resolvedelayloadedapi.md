@@ -1,0 +1,121 @@
+---
+description: Individua la funzione di destinazione dell'importazione specificata e sostituisce il puntatore a funzione nel thunk di importazione con la destinazione dell'implementazione della funzione.
+ms.assetid: 4ab79b7c-81d1-40bf-a76b-217d93567e40
+title: ResolveDelayLoadedAPI (funzione)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- ResolveDelayLoadedAPI
+api_type:
+- DllExport
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-DelayLoad-l1-1-1.dll
+- kernelbase.dll
+- mincoredload.dll
+- minkernelbase.dll
+ms.openlocfilehash: 019729cacb45cce87de2cc4015c661c494125108
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "106329577"
+---
+# <a name="resolvedelayloadedapi-function"></a>ResolveDelayLoadedAPI (funzione)
+
+Individua la funzione di destinazione dell'importazione specificata e sostituisce il puntatore a funzione nel thunk di importazione con la destinazione dell'implementazione della funzione.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+PVOID WINAPI ResolveDelayLoadedAPI(
+  _In_       PVOID                             ParentModuleBase,
+  _In_       PCIMAGE_DELAYLOAD_DESCRIPTOR      DelayloadDescriptor,
+  _In_opt_   PDELAYLOAD_FAILURE_DLL_CALLBACK   FailureDllHook,
+  _In_opt_   PDELAYLOAD_FAILURE_SYSTEM_ROUTINE FailureSystemHook,
+  _Out_      PIMAGE_THUNK_DATA                 ThunkAddress,
+  _Reserved_ ULONG                             Flags
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*ParentModuleBase* \[ in\]
+</dt> <dd>
+
+Indirizzo della base del modulo che importa una funzione a caricamento ritardato.
+
+</dd> <dt>
+
+*DelayloadDescriptor* \[ in\]
+</dt> <dd>
+
+Descrittore per il modulo da caricare.
+
+</dd> <dt>
+
+*FailureDllHook* \[ in, facoltativo\]
+</dt> <dd>
+
+Indirizzo dell'hook di errore. Vedere [**DelayLoadFailureHook**](delayloadfailurehook.md).
+
+</dd> <dt>
+
+*FailureSystemHook* \[ in, facoltativo\]
+</dt> <dd>
+
+Indirizzo dell'hook di errore di sistema.
+
+</dd> <dt>
+
+*ThunkAddress* \[ out\]
+</dt> <dd>
+
+Dati del thunk per la funzione di destinazione. Utilizzato per trovare la voce della tabella dei nomi specifica della funzione.
+
+</dd> <dt>
+
+*Flag* 
+</dt> <dd>
+
+Riservati deve essere 0.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Indirizzo dell'importazione o dello stub dell'errore.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|--------------------|-----------------------------------------------------------------------------------------|
+| Libreria<br/> | <dl> <dt>Kernel32.lib</dt> </dl> |
+| DLL<br/>     | <dl> <dt>Kernel32.dll</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[Supporto del linker per le DLL di Delay-Loaded](https://msdn.microsoft.com/library/151kt790(v=VS.71).aspx)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
