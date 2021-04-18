@@ -1,0 +1,88 @@
+---
+description: Richiede l'allocazione di un oggetto frame.
+ms.assetid: 977e40d6-bf49-44b6-ac95-88e7f778ea50
+title: 'Metodo ID3DXAllocateHierarchy:: CreateFrame (D3dx9anim. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- ID3DXAllocateHierarchy.CreateFrame
+api_type:
+- COM
+api_location:
+- d3dx9.lib
+- d3dx9.dll
+ms.openlocfilehash: d6a3a13dd4d3b3dfaffb26632ff6ad5cc8666f86
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "106323179"
+---
+# <a name="id3dxallocatehierarchycreateframe-method"></a>Metodo ID3DXAllocateHierarchy:: CreateFrame
+
+Richiede l'allocazione di un oggetto frame.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+HRESULT CreateFrame(
+  [in]          LPCSTR      Name,
+  [out, retval] LPD3DXFRAME *ppNewFrame
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*Nome* \[ in\]
+</dt> <dd>
+
+Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
+
+Nome del fotogramma da creare.
+
+</dd> <dt>
+
+*ppNewFrame* \[ out, retval\]
+</dt> <dd>
+
+Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)\***
+
+Restituisce l'oggetto frame creato.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
+
+I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da D3DERR o D3DXERR, in quanto questa operazione causerà l'esito negativo anche di [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) e restituirà l'errore.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|--------------------|----------------------------------------------------------------------------------------|
+| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[ID3DXAllocateHierarchy](id3dxallocatehierarchy.md)
+</dt> </dl>
+
+ 
+
+ 
