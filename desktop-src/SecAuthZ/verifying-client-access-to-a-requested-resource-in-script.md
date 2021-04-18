@@ -1,0 +1,81 @@
+---
+description: 'Chiamare il metodo IAzClientContext:: AccessCheck per verificare se il client ha accesso a una o più operazioni.'
+ms.assetid: cf1070fe-3737-4ae6-a8ef-f0782418a1d5
+title: Verifica dell'accesso client alle risorse richieste nello script
+ms.topic: article
+ms.date: 05/31/2018
+topic_type:
+- kbArticle
+api_name: ''
+api_type: ''
+api_location: ''
+ms.openlocfilehash: 6d5c3940e38d8a9a8befa00b85ac9c3cd406c292
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106314169"
+---
+# <a name="verifying-client-access-to-requested-resources-in-script"></a>Verifica dell'accesso client alle risorse richieste nello script
+
+Chiamare il metodo [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) di un oggetto [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) per verificare se il client ha accesso a una o più operazioni. Per informazioni sulla creazione di un oggetto **IAzClientContext** , vedere [definizione di un contesto client nello script](establishing-a-client-context-in-script.md).
+
+Un client potrebbe appartenere a più di un ruolo e un'operazione potrebbe essere assegnata a più di un'attività, in modo che Gestione autorizzazioni verifichi tutti i ruoli e le attività. Se un ruolo a cui appartiene il client contiene un'attività che contiene un'operazione, viene concesso l'accesso a tale operazione.
+
+Per controllare l'accesso solo a un singolo ruolo a cui appartiene il client, impostare la proprietà [**RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) dell'oggetto [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) .
+
+Quando si inizializza l'archivio dei criteri di autorizzazione per il controllo dell'accesso, è necessario passare zero come valore del parametro *è* del metodo [**Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize) dell'oggetto [**AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) .
+
+È anche possibile applicare la logica di business in fase di esecuzione per qualificare l'accesso. Per informazioni sull'accesso idoneo con la logica di business, vedere la pagina relativa [all'accesso idoneo con la logica di business nello script](qualifying-access-with-business-logic-in-script.md).
+
+Nell'esempio seguente viene illustrato come controllare l'accesso di un client a un'operazione. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C e che l'archivio contenga un'applicazione denominata Expense e un'operazione denominata UseFormControl.
+
+
+```VB
+<%@ Language=VBScript %>
+<%
+'  Create the AzAuthorizationStore object.
+Dim AzManStore
+Set AzManStore = CreateObject("AzRoles.AzAuthorizationStore")
+
+'  Initialize the authorization store.
+AzManStore.Initialize 0, "msxml://C:\MyStore.xml"
+
+'  Open the application object in the store.
+Dim expenseApp
+Set expenseApp = AzManStore.OpenApplication("Expense")
+
+'  Create a client context.
+Dim clientName
+clientName = Request.ServerVariables("LOGON_USER")
+Dim clientContext
+Set clientContext = _
+    expenseApp.InitializeClientContextFromName(clientName)
+
+'  Open the operation to check.
+Dim formOperation
+Set formOperation = expenseApp.OpenOperation("UseFormControl")
+
+'  Get the ID of the operation.
+Dim operationID
+operationID = formOperation.OperationID
+
+'  Check access.
+Dim Operations(1)
+Operations(0) = operationID
+Dim Results
+
+Results = _
+    clientContext.AccessCheck("UseFormControl", Empty, Operations)
+
+%>
+```
+
+
+
+ 
+
+ 
+
+
+
