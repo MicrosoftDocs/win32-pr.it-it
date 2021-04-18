@@ -1,0 +1,170 @@
+---
+description: Aggiunge dati Stroke per più tratti a un nodo di riconoscimento personalizzato.
+ms.assetid: 77ded896-8573-42de-a41e-4866894dfe2b
+title: 'Metodo IInkAnalyzer:: AddStrokesToCustomRecognizer (IACom. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- IInkAnalyzer.AddStrokesToCustomRecognizer
+api_type:
+- COM
+api_location:
+- IACom.dll
+ms.openlocfilehash: 6df1b31957f3b4087b51fbad0e7b527c2ede799c
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106307398"
+---
+# <a name="iinkanalyzeraddstrokestocustomrecognizer-method"></a>Metodo IInkAnalyzer:: AddStrokesToCustomRecognizer
+
+Aggiunge dati Stroke per più tratti a un nodo di riconoscimento personalizzato.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+HRESULT AddStrokesToCustomRecognizer(
+  [in]  ULONG        ulStrokeIdsCount,
+  [in]  LONG         *plStrokeIds,
+  [in]  ULONG        ulStrokePacketDescriptionCount,
+  [in]  GUID         *pStrokePacketDescriptionGuids,
+  [in]  ULONG        *pulPacketDataCountPerStroke,
+  [in]  LONG         *plStrokePacketData,
+  [in]  IContextNode *pCustomRecognizer,
+  [out] IContextNode **ppContextNodeStrokeAddedTo
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*ulStrokeIdsCount* \[ in\]
+</dt> <dd>
+
+Numero di tratti da aggiungere.
+
+</dd> <dt>
+
+*plStrokeIds* \[ in\]
+</dt> <dd>
+
+Matrice contenente gli identificatori del tratto.
+
+</dd> <dt>
+
+*ulStrokePacketDescriptionCount* \[ in\]
+</dt> <dd>
+
+Numero di proprietà in ogni pacchetto.
+
+</dd> <dt>
+
+*pStrokePacketDescriptionGuids* \[ in\]
+</dt> <dd>
+
+Matrice contenente gli identificatori di proprietà del pacchetto.
+
+</dd> <dt>
+
+*pulPacketDataCountPerStroke* \[ in\]
+</dt> <dd>
+
+Matrice contenente il numero di pacchetti in ogni tratto.
+
+</dd> <dt>
+
+*plStrokePacketData* \[ in\]
+</dt> <dd>
+
+Matrice contenente i dati dei pacchetti per i tratti.
+
+</dd> <dt>
+
+*pCustomRecognizer* \[ in\]
+</dt> <dd>
+
+[**IContextNode**](icontextnode.md) di tipo **CustomRecognizer** a cui aggiungere i tratti.
+
+</dd> <dt>
+
+*ppContextNodeStrokeAddedTo* \[ out\]
+</dt> <dd>
+
+[**IContextNode**](icontextnode.md) a cui sono stati aggiunti i tratti dall'analizzatore di input penna.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+
+## <a name="remarks"></a>Commenti
+
+> [!Caution]  
+> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su *ppContextNodeStrokeAddedTo* quando non è più necessario utilizzare l'oggetto.
+
+ 
+
+Quando *ppContextNodeStrokeAddedTo* è **null**, indica che il chiamante non è interessato al valore restituito dal metodo.
+
+[**IInkAnalyzer**](iinkanalyzer.md) aggiunge i tratti a un [**IContextNode**](icontextnode.md) di tipo **CustomRecognizer** (vedere tipi di [nodo di contesto](context-node-types.md)). Questo nodo si trova nella raccolta dei sottonodi del nodo radice (vedere [**IInkAnalyzer:: GetRootNode Method**](iinkanalyzer-getrootnode.md) e [**IContextNode:: GetSubNodes**](icontextnode-getsubnodes.md) Methods).
+
+[**IInkAnalyzer**](iinkanalyzer.md) assegna l'identificatore delle impostazioni cultura del thread di input attivo ai tratti e aggiunge i tratti al primo nodo **UnclassifiedInk** nel nodo **CustomRecognizer** . Se non esiste alcun nodo **UnclassifiedInk** , viene creato. Se il [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) associato al nodo **CustomRecognizer** non supporta l'identificatore delle impostazioni cultura, il **IInkAnalyzer** continua ad analizzare e genera un avviso [**IAnalysisWarning**](ianalysiswarning.md) . Questo avviso ha un valore [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) di **AnalysisWarningCode \_ LanguageIdNotRespected**.
+
+*plStrokePacketData* contiene i dati dei pacchetti per tutti i tratti. *pStrokePacketDescriptionGuids* contiene gli identificatori univoci globali (Guid) che descrivono i tipi di dati dei pacchetti inclusi per ogni punto in ogni tratto. Per un elenco completo delle proprietà dei pacchetti disponibili, vedere [costanti PacketPropertyGuids](packetpropertyguids-constants.md).
+
+> [!Note]  
+> Solo i tratti con le stesse descrizioni di pacchetti possono essere aggiunti in una singola chiamata al **Metodo IInkAnalyzer:: AddStrokesToCustomRecognizer**.
+
+ 
+
+Questo metodo espande l'area dirty all'Unione del valore corrente dell'area e del rettangolo di delimitazione dei tratti aggiunti.
+
+[**IInkAnalyzer**](iinkanalyzer.md) restituisce un valore **HRESULT** di **E \_ INVALIDARG** nelle circostanze seguenti.
+
+-   [**IInkAnalyzer**](iinkanalyzer.md) contiene già un tratto con lo stesso identificatore di uno dei tratti da aggiungere.
+-   Il parametro *pCustomRecognizer* contiene un nodo di riconoscimento personalizzato associato a un oggetto [**IInkAnalyzer**](iinkanalyzer.md) diverso.
+-   Il parametro *pCustomRecognizer* contiene un [**IContextNode**](icontextnode.md) che non è di tipo **CustomRecognizer**.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
+| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**IInkAnalyzer**](iinkanalyzer.md)
+</dt> <dt>
+
+[Tipi di nodo di contesto](context-node-types.md)
+</dt> <dt>
+
+[**Metodo IInkAnalyzer:: AddStrokeToCustomRecognizer**](iinkanalyzer-addstroketocustomrecognizer.md)
+</dt> <dt>
+
+[**Metodo IInkAnalyzer:: CreateCustomRecognizer**](iinkanalyzer-createcustomrecognizer.md)
+</dt> <dt>
+
+[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+</dt> </dl>
+
+ 
+
