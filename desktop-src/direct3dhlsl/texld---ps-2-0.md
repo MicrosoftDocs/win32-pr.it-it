@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b71990e230290403bca2a5af11eeca11b093402f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 47f47a937123ce252189aac57e922b10c2a015fc
+ms.sourcegitcommit: 8737f32d64e5f01c1d38aab92736e4088d6c446e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104516887"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106334306"
 ---
 # <a name="texld---ps_2_0-and-up"></a>texld-PS \_ 2 \_ 0 e su
 
@@ -29,7 +29,7 @@ Campionare una trama in un particolare campionatore, usando le coordinate di tra
 
 
 
- 
+ 
 
 Dove:
 
@@ -54,7 +54,7 @@ Un'istruzione di trama dipendente di secondo ordine è definita come un'istruzio
 
 ### <a name="ps_3_0"></a>PS \_ 3 \_ 0
 
-src1 deve essere un [campionatore (Direct3D 9 ASM-PS)](dx9-graphics-reference-asm-ps-registers-sampler.md) \# , senza modificatori. Swizzle è consentito in src0 o src1. Swizzle viene applicato alla trama coordintates prima della ricerca della trama.
+src1 deve essere un [campionatore (Direct3D 9 ASM-PS)](dx9-graphics-reference-asm-ps-registers-sampler.md) \# , senza modificatori. Swizzle è consentito in src0 o src1. Swizzle viene applicato alle coordinate di trama prima della ricerca della trama.
 
 ## <a name="remarks"></a>Commenti
 
@@ -68,7 +68,7 @@ Questa istruzione è supportata nelle versioni seguenti:
 
 
 
- 
+ 
 
 Il numero di coordinate necessarie per l'esecuzione dell'esempio di trama da parte di src0 dipende dalla modalità con cui è stato dichiarato src1, più dal componente. w. I tipi di campionatore sono dichiarati con [DCL \_ samplerType (SM2, SM3-PS ASM)](dcl-samplertype---ps.md). Se src1 viene dichiarato come campionatore 2D, src0 deve contenere le coordinate. XY; Se src1 viene dichiarato come Sampler del cubo o campionatore del volume, src0 deve contenere le coordinate. xyz. Il campionamento di una trama con meno dimensioni rispetto a quelli presenti nella coordinata di trama è consentito perché i componenti delle coordinate di trama aggiuntivi vengono ignorati.
 
@@ -86,7 +86,7 @@ Se la trama di origine contiene meno di quattro componenti, i valori predefiniti
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -95,6 +95,6 @@ Se la trama di origine contiene meno di quattro componenti, i valori predefiniti
 [Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

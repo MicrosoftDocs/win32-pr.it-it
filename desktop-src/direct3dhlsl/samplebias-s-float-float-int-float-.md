@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleBias:: SampleBias (S, float, float, int, float)'
-description: Esegue il campionamento di un Texture2D, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) campione su.
+title: 'Funzione SampleBias:: SampleBias (S, float, float, int, float) per Texture2D'
+description: 'La funzione SampleBias:: SampleBias (S, float, float, int, float) esegue il campionamento di un Texture2D, dopo aver applicato il valore di distorsione al livello mipmap.'
 ms.assetid: 4E4A1188-DE45-4A43-B54D-4CA2E66707E3
 keywords:
 - Funzione SampleBias HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d91ce53da6dbf2c1e39f23967d1c1dc36085e764
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a34e6f2eb8211c0e4983d2d6a67f650d34c5dacf
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047662"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106334323"
 ---
-# <a name="samplebiassamplebiassfloatfloatintfloat-function"></a>Funzione SampleBias:: SampleBias (S, float, float, int, float)
+# <a name="samplebiassamplebiassfloatfloatintfloat-function-for-texture2d"></a>Funzione SampleBias:: SampleBias (S, float, float, int, float) per Texture2D
 
 Esegue il campionamento di un [**Texture2D**](sm5-object-texture2d.md), dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) campione su.
 
