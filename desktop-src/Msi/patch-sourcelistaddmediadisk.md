@@ -1,0 +1,100 @@
+---
+description: Il metodo SourceListAddMediaDisk aggiunge un disco al set di dischi registrati. Accetta i parametri DiskID, VolumeLabel e DiskPrompt. Questo metodo chiama su MsiSourceListAddMediaDisk.
+ms.assetid: 6feaf2d3-7e39-4e22-9e74-9a2f98369eac
+title: Patch. SourceListAddMediaDisk, metodo
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Patch.SourceListAddMediaDisk
+api_type:
+- COM
+api_location:
+- Msi.dll
+ms.openlocfilehash: a7c74ccdfb90a0cb365e6110defc9b60dac1f471
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "106329023"
+---
+# <a name="patchsourcelistaddmediadisk-method"></a><span data-ttu-id="0598d-105">Patch. SourceListAddMediaDisk, metodo</span><span class="sxs-lookup"><span data-stu-id="0598d-105">Patch.SourceListAddMediaDisk method</span></span>
+
+<span data-ttu-id="0598d-106">Il metodo **SourceListAddMediaDisk** aggiunge un disco al set di dischi registrati.</span><span class="sxs-lookup"><span data-stu-id="0598d-106">The **SourceListAddMediaDisk** method adds a disk to the set of registered disks.</span></span> <span data-ttu-id="0598d-107">Accetta i parametri *DiskID*, *VolumeLabel* e *DiskPrompt* .</span><span class="sxs-lookup"><span data-stu-id="0598d-107">Accepts *Diskid*, *VolumeLabel* and *DiskPrompt* as parameters.</span></span> <span data-ttu-id="0598d-108">Questo metodo chiama su [**MsiSourceListAddMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddmediadiska).</span><span class="sxs-lookup"><span data-stu-id="0598d-108">This method calls on [**MsiSourceListAddMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddmediadiska).</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="0598d-109">Sintassi</span><span class="sxs-lookup"><span data-stu-id="0598d-109">Syntax</span></span>
+
+
+```JScript
+Patch.SourceListAddMediaDisk(
+  Diskid,
+  VolumeLabel,
+  DiskPrompt
+)
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="0598d-110">Parametri</span><span class="sxs-lookup"><span data-stu-id="0598d-110">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="0598d-111">*DiskID*</span><span class="sxs-lookup"><span data-stu-id="0598d-111">*Diskid*</span></span> 
+</dt> <dd>
+
+<span data-ttu-id="0598d-112">Questo parametro fornisce l'ID del disco da aggiungere o aggiornare.</span><span class="sxs-lookup"><span data-stu-id="0598d-112">This parameter provides the ID of the disk being added or updated.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="0598d-113">*VolumeLabel*</span><span class="sxs-lookup"><span data-stu-id="0598d-113">*VolumeLabel*</span></span> 
+</dt> <dd>
+
+<span data-ttu-id="0598d-114">Questo parametro fornisce l'etichetta del disco da aggiungere o aggiornare.</span><span class="sxs-lookup"><span data-stu-id="0598d-114">This parameter provides the label of the disk being added or updated.</span></span> <span data-ttu-id="0598d-115">Un aggiornamento sovrascrive l'etichetta di volume esistente nel registro di sistema.</span><span class="sxs-lookup"><span data-stu-id="0598d-115">An update, overwrites the existing volume label in the registry.</span></span> <span data-ttu-id="0598d-116">Per modificare solo il prompt del disco, ottenere l'etichetta del volume registrato esistente e fornirla insieme al nuovo prompt del disco.</span><span class="sxs-lookup"><span data-stu-id="0598d-116">To change the disk prompt only, get the existing registered volume label and provide it along with the new disk prompt.</span></span> <span data-ttu-id="0598d-117">Una stringa NULL o vuota registra una stringa vuota (di lunghezza 0 byte) come etichetta del volume.</span><span class="sxs-lookup"><span data-stu-id="0598d-117">A NULL or empty string registers an empty string (0 bytes in length) as the volume label.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="0598d-118">*DiskPrompt*</span><span class="sxs-lookup"><span data-stu-id="0598d-118">*DiskPrompt*</span></span> 
+</dt> <dd>
+
+<span data-ttu-id="0598d-119">Questo parametro fornisce la richiesta di disco del disco da aggiungere o aggiornare.</span><span class="sxs-lookup"><span data-stu-id="0598d-119">This parameter provides the disk prompt of the disk being added or updated.</span></span> <span data-ttu-id="0598d-120">Un aggiornamento sovrascrive il prompt del disco esistente nel registro di sistema.</span><span class="sxs-lookup"><span data-stu-id="0598d-120">An update overwrites the existing disk prompt in the registry.</span></span> <span data-ttu-id="0598d-121">Per modificare solo l'etichetta del volume, ottenere la richiesta del disco esistente dal registro di sistema e fornirla con la nuova etichetta del volume.</span><span class="sxs-lookup"><span data-stu-id="0598d-121">To change the volume label only, get the existing disk prompt from the registry and provide it with the new volume label.</span></span> <span data-ttu-id="0598d-122">Una stringa NULL o vuota registra una stringa vuota (di lunghezza 0 byte) come richiesta del disco.</span><span class="sxs-lookup"><span data-stu-id="0598d-122">A NULL or empty string registers an empty string (0 bytes in length) as the disk prompt.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="0598d-123">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="0598d-123">Return value</span></span>
+
+<span data-ttu-id="0598d-124">Questo metodo non restituisce valori.</span><span class="sxs-lookup"><span data-stu-id="0598d-124">This method does not return a value.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="0598d-125">Requisiti</span><span class="sxs-lookup"><span data-stu-id="0598d-125">Requirements</span></span>
+
+
+
+| <span data-ttu-id="0598d-126">Requisito</span><span class="sxs-lookup"><span data-stu-id="0598d-126">Requirement</span></span> | <span data-ttu-id="0598d-127">Valore</span><span class="sxs-lookup"><span data-stu-id="0598d-127">Value</span></span> |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="0598d-128">Versione</span><span class="sxs-lookup"><span data-stu-id="0598d-128">Version</span></span><br/> | <span data-ttu-id="0598d-129">Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7.</span><span class="sxs-lookup"><span data-stu-id="0598d-129">Windows Installer 5.0 on Windows Server 2012, Windows 8, Windows Server 2008 R2 or Windows 7.</span></span> <span data-ttu-id="0598d-130">Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="0598d-130">Windows Installer 4.0 or Windows Installer 4.5 on Windows Server 2008 or Windows Vista.</span></span> <span data-ttu-id="0598d-131">Windows Installer 3,0 o versioni successive in Windows Server 2003, Windows XP e Windows 2000</span><span class="sxs-lookup"><span data-stu-id="0598d-131">Windows Installer 3.0 or later on Windows Server 2003, Windows XP, and Windows 2000</span></span><br/> |
+| <span data-ttu-id="0598d-132">DLL</span><span class="sxs-lookup"><span data-stu-id="0598d-132">DLL</span></span><br/>     | <dl> <span data-ttu-id="0598d-133"><dt>Msi.dll</dt></span><span class="sxs-lookup"><span data-stu-id="0598d-133"><dt>Msi.dll</dt></span></span> </dl>                                                                                                                                                                                                   |
+| <span data-ttu-id="0598d-134">IID</span><span class="sxs-lookup"><span data-stu-id="0598d-134">IID</span></span><br/>     | <span data-ttu-id="0598d-135">IID \_ iPatch è definito come 000C10A1-0000-0000-C000-000000000046</span><span class="sxs-lookup"><span data-stu-id="0598d-135">IID\_IPatch is defined as 000C10A1-0000-0000-C000-000000000046</span></span><br/>                                                                                                                                                                                                            |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="0598d-136">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="0598d-136">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="0598d-137">**Patch**</span><span class="sxs-lookup"><span data-stu-id="0598d-137">**Patch**</span></span>](patch-object.md)
+</dt> <dt>
+
+[<span data-ttu-id="0598d-138">**MsiSourceListAddMediaDisk**</span><span class="sxs-lookup"><span data-stu-id="0598d-138">**MsiSourceListAddMediaDisk**</span></span>](/windows/desktop/api/Msi/nf-msi-msisourcelistaddmediadiska)
+</dt> <dt>
+
+[<span data-ttu-id="0598d-139">Non supportato in Windows Installer 2,0 e versioni precedenti</span><span class="sxs-lookup"><span data-stu-id="0598d-139">Not Supported in Windows Installer 2.0 and earlier</span></span>](not-supported-in-windows-installer-version-2-0.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
