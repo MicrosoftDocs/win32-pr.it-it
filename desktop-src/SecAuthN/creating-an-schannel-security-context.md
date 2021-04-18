@@ -1,0 +1,51 @@
+---
+description: Viene illustrato come stabilire un contesto di sicurezza che protegge le comunicazioni tra un client e un server.
+ms.assetid: eb1eadb2-14b2-4265-994a-dcea4208e650
+title: Creazione di un contesto di sicurezza Schannel
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 23e364e6319fbaddb50bffaf59541af9e8f43bfb
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106311940"
+---
+# <a name="creating-an-schannel-security-context"></a><span data-ttu-id="d3a68-103">Creazione di un contesto di sicurezza Schannel</span><span class="sxs-lookup"><span data-stu-id="d3a68-103">Creating an Schannel Security Context</span></span>
+
+<span data-ttu-id="d3a68-104">Per stabilire un [*contesto di sicurezza*](/windows/desktop/SecGloss/s-gly) che protegga le comunicazioni tra un client e un server, entrambi devono partecipare al processo di scambio di Informazioni seguente:</span><span class="sxs-lookup"><span data-stu-id="d3a68-104">To establish a [*security context*](/windows/desktop/SecGloss/s-gly) that will protect communications between a client and server, both must participate in the following information exchange process:</span></span>
+
+## <a name="client"></a><span data-ttu-id="d3a68-105">Client</span><span class="sxs-lookup"><span data-stu-id="d3a68-105">Client</span></span>
+
+1.  <span data-ttu-id="d3a68-106">Il client chiama la funzione [**InitializeSecurityContext (generale)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta) .</span><span class="sxs-lookup"><span data-stu-id="d3a68-106">The client calls the [**InitializeSecurityContext (General)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta) function.</span></span>
+2.  <span data-ttu-id="d3a68-107">Schannel inizia la creazione di un contesto di sicurezza in base alle regole del protocollo di sicurezza selezionato.</span><span class="sxs-lookup"><span data-stu-id="d3a68-107">Schannel begins creating a security context according to the rules of the selected security protocol.</span></span> <span data-ttu-id="d3a68-108">Il codice restituito della funzione indica se il client deve chiamare di nuovo la funzione.</span><span class="sxs-lookup"><span data-stu-id="d3a68-108">The function's return code indicates whether the client must call the function again.</span></span> <span data-ttu-id="d3a68-109">[**InitializeSecurityContext (generale)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta) può restituire un token che rappresenta il contesto.</span><span class="sxs-lookup"><span data-stu-id="d3a68-109">[**InitializeSecurityContext (General)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta) may return a token that represents the context.</span></span>
+3.  <span data-ttu-id="d3a68-110">Se è stato restituito un token, il client lo invia al server.</span><span class="sxs-lookup"><span data-stu-id="d3a68-110">If a token was returned, the client sends it to the server.</span></span>
+4.  <span data-ttu-id="d3a68-111">Quando [**InitializeSecurityContext (General)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta) restituisce sec \_ E \_ OK, il client viene eseguito.</span><span class="sxs-lookup"><span data-stu-id="d3a68-111">When [**InitializeSecurityContext (General)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta) returns SEC\_E\_OK, the client is done.</span></span> <span data-ttu-id="d3a68-112">Se la funzione restituisce il \_ secondo \_ \_ , il client deve attendere che il server invii un token.</span><span class="sxs-lookup"><span data-stu-id="d3a68-112">If the function returns SEC\_I\_CONTINUE\_NEEDED, the client must wait for the server to send it a token.</span></span> <span data-ttu-id="d3a68-113">Quando il client dispone del token dal server, deve chiamare di nuovo la [*funzione*](/windows/desktop/SecGloss/c-gly) **InitializeSecurityContext (General)** .</span><span class="sxs-lookup"><span data-stu-id="d3a68-113">When the client has the token from the server, it must call the **InitializeSecurityContext (General)** [*function*](/windows/desktop/SecGloss/c-gly) again.</span></span> <span data-ttu-id="d3a68-114">(Tornare al passaggio 2).</span><span class="sxs-lookup"><span data-stu-id="d3a68-114">(Return to step 2.)</span></span>
+
+## <a name="server"></a><span data-ttu-id="d3a68-115">Server</span><span class="sxs-lookup"><span data-stu-id="d3a68-115">Server</span></span>
+
+1.  <span data-ttu-id="d3a68-116">Il server attende che un client invii un messaggio che contiene un token di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="d3a68-116">The server waits for a client to send a message that contains a security token.</span></span> <span data-ttu-id="d3a68-117">Il server passa il token ricevuto dal client alla funzione [**AcceptSecurityContext (generale)**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) .</span><span class="sxs-lookup"><span data-stu-id="d3a68-117">The server passes the token received from the client into the [**AcceptSecurityContext (General)**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) function.</span></span>
+2.  <span data-ttu-id="d3a68-118">Schannel si basa sul contesto di sicurezza parziale rappresentato dal token.</span><span class="sxs-lookup"><span data-stu-id="d3a68-118">Schannel builds on the partial security context represented by the token.</span></span> <span data-ttu-id="d3a68-119">Schannel restituisce un token al server e un codice restituito che indica se il server deve chiamare di nuovo la funzione.</span><span class="sxs-lookup"><span data-stu-id="d3a68-119">Schannel returns a token to the server, and a return code indicating whether the server must call the function again.</span></span>
+3.  <span data-ttu-id="d3a68-120">Se è stato restituito un token, il server lo invia al client.</span><span class="sxs-lookup"><span data-stu-id="d3a68-120">If a token was returned, the server sends it to the client.</span></span>
+4.  <span data-ttu-id="d3a68-121">Quando [**AcceptSecurityContext (General)**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) restituisce sec \_ E \_ OK, il server viene eseguito.</span><span class="sxs-lookup"><span data-stu-id="d3a68-121">When [**AcceptSecurityContext (General)**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) returns SEC\_E\_OK, the server is done.</span></span> <span data-ttu-id="d3a68-122">Se la funzione restituisce il \_ secondo \_ \_ , l'utente continua a essere necessario, il server deve attendere che il client invii un token.</span><span class="sxs-lookup"><span data-stu-id="d3a68-122">If the function returns SEC\_I\_CONTINUE\_NEEDED, then the server must wait for the client to send it a token.</span></span> <span data-ttu-id="d3a68-123">Quando il server ha il token dal client, deve chiamare di nuovo la funzione **AcceptSecurityContext (generale)** .</span><span class="sxs-lookup"><span data-stu-id="d3a68-123">When the server has the token from the client, it must call the **AcceptSecurityContext (General)** function again.</span></span> <span data-ttu-id="d3a68-124">(Tornare al passaggio 2).</span><span class="sxs-lookup"><span data-stu-id="d3a68-124">(Return to step 2.)</span></span>
+
+<span data-ttu-id="d3a68-125">Se una delle due funzioni restituisce un valore diverso da SEC \_ e \_ OK, sec \_ I \_ continuerà a essere \_ necessario o sec \_ e \_ messaggio incompleto \_ (vedere il paragrafo seguente) si è verificato un errore.</span><span class="sxs-lookup"><span data-stu-id="d3a68-125">If either function returns a value other than SEC\_E\_OK, SEC\_I\_CONTINUE\_NEEDED, or SEC\_E\_INCOMPLETE\_MESSAGE (see the following paragraph) an error has occurred.</span></span> <span data-ttu-id="d3a68-126">Il client e il server devono chiamare la funzione [**DeleteSecurityContext**](/windows/desktop/api/Sspi/nf-sspi-deletesecuritycontext) per eliminare il contesto di sicurezza parzialmente stabilito.</span><span class="sxs-lookup"><span data-stu-id="d3a68-126">The client and server should call the [**DeleteSecurityContext**](/windows/desktop/api/Sspi/nf-sspi-deletesecuritycontext) function to delete the partially established security context.</span></span>
+
+<span data-ttu-id="d3a68-127">Un caso speciale in cui è possibile modificare l'elaborazione del client e del server è quando al client o al server dell'altra parte vengono inviate troppe informazioni.</span><span class="sxs-lookup"><span data-stu-id="d3a68-127">A special case that can alter client and server processing is when too little or too much information is sent to the client or server from the other party.</span></span> <span data-ttu-id="d3a68-128">Nel caso di informazioni troppo piccole, entrambe le funzioni restituiscono \_ un \_ messaggio incompleto al secondo E \_ .</span><span class="sxs-lookup"><span data-stu-id="d3a68-128">In the case of too little information, both functions return SEC\_E\_INCOMPLETE\_MESSAGE.</span></span> <span data-ttu-id="d3a68-129">Per informazioni sul riconoscimento e la gestione di informazioni insufficienti o superflue, vedere [buffer aggiuntivi restituiti da Schannel](extra-buffers-returned-by-schannel.md).</span><span class="sxs-lookup"><span data-stu-id="d3a68-129">For information about recognizing and handling insufficient or excess information, see [Extra buffers Returned by Schannel](extra-buffers-returned-by-schannel.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="d3a68-130">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="d3a68-130">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="d3a68-131">Esecuzione dell'autenticazione con Schannel</span><span class="sxs-lookup"><span data-stu-id="d3a68-131">Performing Authentication Using Schannel</span></span>](performing-authentication-using-schannel.md)
+</dt> <dt>
+
+[<span data-ttu-id="d3a68-132">Mapping dei certificati</span><span class="sxs-lookup"><span data-stu-id="d3a68-132">Mapping Certificates</span></span>](mapping-certificates.md)
+</dt> <dt>
+
+[<span data-ttu-id="d3a68-133">Convalida manuale di credenziali Schannel</span><span class="sxs-lookup"><span data-stu-id="d3a68-133">Manually Validating Schannel Credentials</span></span>](manually-validating-schannel-credentials.md)
+</dt> </dl>
+
+ 
+
+ 

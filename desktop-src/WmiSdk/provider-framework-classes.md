@@ -1,0 +1,40 @@
+---
+description: Le classi C++ WMI che fanno parte del Framework del provider WMI sono ora considerate in stato finale.
+ms.assetid: 062a7724-0589-4e9d-af7a-39fd9c08e40b
+ms.tgt_platform: multiple
+title: Classi del Framework del provider
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 1562d00e6b3b1563ece933ba7dd9361dd8a5d94f
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106313181"
+---
+# <a name="provider-framework-classes"></a><span data-ttu-id="460b6-103">Classi del Framework del provider</span><span class="sxs-lookup"><span data-stu-id="460b6-103">Provider Framework Classes</span></span>
+
+<span data-ttu-id="460b6-104">\[Le classi WMI C++ che fanno parte del Framework del provider WMI sono ora considerate in stato finale e non sono disponibili ulteriori attività di sviluppo, miglioramenti o aggiornamenti per i problemi non correlati alla sicurezza che interessano queste librerie.</span><span class="sxs-lookup"><span data-stu-id="460b6-104">\[WMI C++ classes that are part of the WMI Provider Framework are are now considered in final state, and no further development, enhancements, or updates will be available for non-security related issues affecting these libraries.</span></span> <span data-ttu-id="460b6-105">Le [API mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) devono essere usate per tutte le nuove attività di sviluppo.\]</span><span class="sxs-lookup"><span data-stu-id="460b6-105">The [MI APIs](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) should be used for all new development.\]</span></span>
+
+<span data-ttu-id="460b6-106">Il Framework del provider implementa le classi seguenti.</span><span class="sxs-lookup"><span data-stu-id="460b6-106">The provider framework implements the following classes.</span></span>
+
+
+
+| <span data-ttu-id="460b6-107">Classe Framework</span><span class="sxs-lookup"><span data-stu-id="460b6-107">Framework class</span></span>                                | <span data-ttu-id="460b6-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="460b6-108">Description</span></span>                                                                                                                                                                                                         |
+|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [<span data-ttu-id="460b6-109">**CFrameworkQuery**</span><span class="sxs-lookup"><span data-stu-id="460b6-109">**CFrameworkQuery**</span></span>](/windows/desktop/api/FrQuery/nl-frquery-cframeworkquery)     | <span data-ttu-id="460b6-110">Contiene i metodi per l'elaborazione delle query.</span><span class="sxs-lookup"><span data-stu-id="460b6-110">Contains methods for query processing.</span></span>                                                                                                                                                                              |
+| [<span data-ttu-id="460b6-111">**CInstance**</span><span class="sxs-lookup"><span data-stu-id="460b6-111">**CInstance**</span></span>](/windows/desktop/api/Instance/nl-instance-cinstance)                 | <span data-ttu-id="460b6-112">Contiene i metodi per impostare e recuperare le proprietà ed è un incapsulamento dell'interfaccia [**IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) .</span><span class="sxs-lookup"><span data-stu-id="460b6-112">Contains methods to set and retrieve properties and is an encapsulation of the [**IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) interface.</span></span> <span data-ttu-id="460b6-113">L'implementatore non deve necessariamente accedere direttamente ai metodi **IWbemClassObject** .</span><span class="sxs-lookup"><span data-stu-id="460b6-113">Implementer should not have to access **IWbemClassObject** methods directly.</span></span> |
+| [<span data-ttu-id="460b6-114">**CThreadBase**</span><span class="sxs-lookup"><span data-stu-id="460b6-114">**CThreadBase**</span></span>](/windows/desktop/api/ThrdBase/nl-thrdbase-cthreadbase)             | <span data-ttu-id="460b6-115">Classe di base che fornisce i meccanismi di thread safety interni per il Framework del provider WMI.</span><span class="sxs-lookup"><span data-stu-id="460b6-115">A base class that supplies the internal thread safety mechanisms for the WMI Provider Framework.</span></span>                                                                                                                    |
+| [<span data-ttu-id="460b6-116">**CWbemGlueFactory**</span><span class="sxs-lookup"><span data-stu-id="460b6-116">**CWbemGlueFactory**</span></span>](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemgluefactory)   | <span data-ttu-id="460b6-117">Parte del Framework del provider WMI.</span><span class="sxs-lookup"><span data-stu-id="460b6-117">Part of the WMI Provider Framework.</span></span> <span data-ttu-id="460b6-118">Il Framework del provider implementa i metodi di questa interfaccia internamente per creare nuove istanze delle classi per il provider.</span><span class="sxs-lookup"><span data-stu-id="460b6-118">The Provider Framework implements methods of this interface internally to create new instances of classes for the provider.</span></span>                                                     |
+| [<span data-ttu-id="460b6-119">**CWbemProviderGlue**</span><span class="sxs-lookup"><span data-stu-id="460b6-119">**CWbemProviderGlue**</span></span>](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) | <span data-ttu-id="460b6-120">Implementa [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) e i metodi che controllano il caricamento e lo scaricamento del provider del Framework.</span><span class="sxs-lookup"><span data-stu-id="460b6-120">Implements [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) and methods that control the loading and unloading of the framework provider.</span></span>                                                                             |
+| [<span data-ttu-id="460b6-121">**Provider**</span><span class="sxs-lookup"><span data-stu-id="460b6-121">**Provider**</span></span>](/windows/desktop/api/Provider/nl-provider-provider)                   | <span data-ttu-id="460b6-122">Contiene funzioni helper e fornisce implementazioni predefinite dei metodi di [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices).</span><span class="sxs-lookup"><span data-stu-id="460b6-122">Contains helper functions and provides default implementations of the methods of [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices).</span></span>                                                                                            |
+
+
+
+ 
+
+<span data-ttu-id="460b6-123">Si noti che molti dei metodi del Framework usano i parametri [**CHString**](chstring.md) .</span><span class="sxs-lookup"><span data-stu-id="460b6-123">Note that many of the framework methods use [**CHString**](chstring.md) parameters.</span></span> <span data-ttu-id="460b6-124">**CHString** supporta molti degli stessi metodi e proprietà del Microsoft Foundation Classes (MFC), ma senza l'overhead di MFC.</span><span class="sxs-lookup"><span data-stu-id="460b6-124">**CHString** supports many of the same methods and properties as the Microsoft Foundation Classes (MFC), but without the overhead of MFC.</span></span> <span data-ttu-id="460b6-125">Per ulteriori informazioni su **CHString**, vedere la pagina relativa al **riferimento alla classe CHString**.</span><span class="sxs-lookup"><span data-stu-id="460b6-125">For more information about **CHString**, see **CHString Class Reference**.</span></span>
+
+ 
+
+ 
