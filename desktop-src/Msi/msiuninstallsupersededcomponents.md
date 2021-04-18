@@ -1,0 +1,45 @@
+---
+description: Impostare la proprietà MSIUNINSTALLSUPERSEDEDCOMPONENTS su 1 nella tabella delle proprietà o su una riga di comando.
+ms.assetid: ba9b1b2d-1667-48c8-8f1a-9958a1d170da
+title: Proprietà MSIUNINSTALLSUPERSEDEDCOMPONENTS
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: fcc930a258d8faebe71480f466f2b097fe1eda68
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "106331069"
+---
+# <a name="msiuninstallsupersededcomponents-property"></a><span data-ttu-id="03780-103">Proprietà MSIUNINSTALLSUPERSEDEDCOMPONENTS</span><span class="sxs-lookup"><span data-stu-id="03780-103">MSIUNINSTALLSUPERSEDEDCOMPONENTS property</span></span>
+
+<span data-ttu-id="03780-104">Impostare la proprietà **MSIUNINSTALLSUPERSEDEDCOMPONENTS** su 1 nella [tabella delle proprietà](property-table.md) o su una riga di comando.</span><span class="sxs-lookup"><span data-stu-id="03780-104">Set the **MSIUNINSTALLSUPERSEDEDCOMPONENTS** property to 1 in the [Property table](property-table.md) or on a command line.</span></span> <span data-ttu-id="03780-105">Quando questa proprietà è stata impostata su 1, il programma di installazione determina se i componenti in tutte le patch sostituite stanno diventando ridondanti.</span><span class="sxs-lookup"><span data-stu-id="03780-105">When this property has been set to 1, the installer determines whether the components in any superseded patches are becoming redundant.</span></span> <span data-ttu-id="03780-106">Il programma di installazione può annullare la registrazione e disinstallare i componenti ridondanti per evitare di lasciare i componenti orfani nel computer.</span><span class="sxs-lookup"><span data-stu-id="03780-106">The installer can unregister and uninstall redundant components to prevent leaving behind orphan components on the computer.</span></span>
+
+<span data-ttu-id="03780-107">L'impostazione di questa proprietà influiscono sui componenti in tutte le patch sostituite.</span><span class="sxs-lookup"><span data-stu-id="03780-107">Setting this property affects the components in all patches being superseded.</span></span> <span data-ttu-id="03780-108">Per abilitare questa funzionalità per i singoli componenti, usare l'attributo **msidbComponentAttributesUninstallOnSupersedence** nella [tabella Component](component-table.md).</span><span class="sxs-lookup"><span data-stu-id="03780-108">To enable this functionality for single components, use the **msidbComponentAttributesUninstallOnSupersedence** attribute in the [Component table](component-table.md).</span></span>
+
+<span data-ttu-id="03780-109">**[Windows Installer 4,0 e versioni precedenti](not-supported-in-windows-installer-4-0.md):** Non supportato.</span><span class="sxs-lookup"><span data-stu-id="03780-109">**[Windows Installer 4.0 and earlier](not-supported-in-windows-installer-4-0.md):** Not supported.</span></span> <span data-ttu-id="03780-110">Le versioni precedenti a Windows Installer 4,5 ignorano la proprietà **MSIUNINSTALLSUPERSEDEDCOMPONENTS** .</span><span class="sxs-lookup"><span data-stu-id="03780-110">Versions earlier than Windows Installer 4.5 ignore the **MSIUNINSTALLSUPERSEDEDCOMPONENTS** Property.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="03780-111">Requisiti</span><span class="sxs-lookup"><span data-stu-id="03780-111">Requirements</span></span>
+
+
+
+| <span data-ttu-id="03780-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="03780-112">Requirement</span></span> | <span data-ttu-id="03780-113">Valore</span><span class="sxs-lookup"><span data-stu-id="03780-113">Value</span></span> |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="03780-114">Versione</span><span class="sxs-lookup"><span data-stu-id="03780-114">Version</span></span><br/> | <span data-ttu-id="03780-115">Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7.</span><span class="sxs-lookup"><span data-stu-id="03780-115">Windows Installer 5.0 on Windows Server 2012, Windows 8, Windows Server 2008 R2 or Windows 7.</span></span> <span data-ttu-id="03780-116">Windows Installer 4,5 o Windows Installer 4,5 in Windows Vista, Windows XP, Windows Server 2003 e Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="03780-116">Windows Installer 4.5 or Windows Installer 4.5 on Windows Vista, Windows XP, Windows Server 2003, and Windows Server 2008.</span></span> <span data-ttu-id="03780-117">Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="03780-117">See the [Windows Installer Run-Time Requirements](windows-installer-portal.md) for information about the minimum Windows service pack that is required by a Windows Installer version.</span></span><br/> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="03780-118">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="03780-118">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="03780-119">Proprietà</span><span class="sxs-lookup"><span data-stu-id="03780-119">Properties</span></span>](properties.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
