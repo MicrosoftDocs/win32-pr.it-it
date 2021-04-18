@@ -1,0 +1,24 @@
+---
+description: Deve esistere una relazione di trust tra il destinatario di un messaggio firmato e il firmatario del messaggio.
+ms.assetid: 770e4674-8896-4062-a93a-a17bd30a9129
+title: Verifica dell'attendibilità del certificato
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7b711e0a86dcc5ae9cdedea278d6a3a698dfd633
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106315812"
+---
+# <a name="certificate-trust-verification"></a><span data-ttu-id="ff597-103">Verifica dell'attendibilità del certificato</span><span class="sxs-lookup"><span data-stu-id="ff597-103">Certificate Trust Verification</span></span>
+
+<span data-ttu-id="ff597-104">Deve esistere una relazione di trust tra il destinatario di un messaggio firmato e il firmatario del messaggio.</span><span class="sxs-lookup"><span data-stu-id="ff597-104">A trust must exist between the recipient of a signed message and the signer of the message.</span></span> <span data-ttu-id="ff597-105">Un metodo per stabilire questa relazione di trust è tramite un [*certificato*](../secgloss/c-gly.md), un documento elettronico che verifica che le entità o le persone siano quelle che attestano di essere.</span><span class="sxs-lookup"><span data-stu-id="ff597-105">One method of establishing this trust is through a [*certificate*](../secgloss/c-gly.md), an electronic document verifying that entities or persons are who they claim to be.</span></span> <span data-ttu-id="ff597-106">Un certificato viene rilasciato a un'entità da terze parti ritenuti attendibili da entrambe le altre parti.</span><span class="sxs-lookup"><span data-stu-id="ff597-106">A certificate is issued to an entity by a third party that is trusted by both of the other parties.</span></span> <span data-ttu-id="ff597-107">Quindi, ogni destinatario di un messaggio firmato decide se l'emittente del certificato del firmatario è attendibile.</span><span class="sxs-lookup"><span data-stu-id="ff597-107">So, each recipient of a signed message decides if the issuer of the signer's certificate is trustworthy.</span></span> <span data-ttu-id="ff597-108">[*CryptoAPI*](../secgloss/c-gly.md) ha implementato una metodologia che consente agli sviluppatori di applicazioni di creare applicazioni che verificano automaticamente i certificati in base a un elenco predefinito di certificati o [*radici*](../secgloss/r-gly.md)attendibili.</span><span class="sxs-lookup"><span data-stu-id="ff597-108">[*CryptoAPI*](../secgloss/c-gly.md) has implemented a methodology to allow application developers to create applications that automatically verify certificates against a predefined list of trusted certificates or [*roots*](../secgloss/r-gly.md).</span></span> <span data-ttu-id="ff597-109">Questo elenco di entità attendibili (denominato subjects) è denominato [*elenco certificati attendibili*](../secgloss/c-gly.md) (CTL).</span><span class="sxs-lookup"><span data-stu-id="ff597-109">This list of trusted entities (called subjects) is called a [*certificate trust list*](../secgloss/c-gly.md) (CTL).</span></span>
+
+<span data-ttu-id="ff597-110">L'esempio seguente di utilizzo di un elenco di scopi consentiti riguarda un amministratore Intranet (Intra-Company Network) che desidera controllare solo quali origini esterne sono attendibili.</span><span class="sxs-lookup"><span data-stu-id="ff597-110">The following example of using a CTL involves an intranet (intra-company network) administrator who wants to control just which outside sources are trusted.</span></span> <span data-ttu-id="ff597-111">In questo caso, l'amministratore può creare un elenco di certificati o radici attendibili, firmarlo e renderlo disponibile per tutti i client della rete sotto forma di CTL.</span><span class="sxs-lookup"><span data-stu-id="ff597-111">In this case, the administrator can create a list of trusted certificates or roots, sign it, and make the list available to all clients on the network in the form of a CTL.</span></span> <span data-ttu-id="ff597-112">Un'applicazione progettata per utilizzare questa funzionalità CryptoAPI accetta quindi solo i messaggi firmati o il software scaricato firmato da entità nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="ff597-112">An application designed to use this CryptoAPI functionality would then only accept signed messages or downloaded software that was signed by entities on the list.</span></span>
+
+<span data-ttu-id="ff597-113">Per un elenco di queste funzioni, vedere [funzioni di verifica del certificato](cryptography-functions.md).</span><span class="sxs-lookup"><span data-stu-id="ff597-113">For a list of these functions, see [Certificate Verification Functions](cryptography-functions.md).</span></span>
+
+ 
+
+ 
