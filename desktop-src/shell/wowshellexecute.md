@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 841c30be827ddabc40bd8af50423c844ce927e6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae50ad570211303cdfb7aa8e86908593ab48537d
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524426"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106334358"
 ---
 # <a name="wowshellexecute-function"></a>WOWShellExecute (funzione)
 
@@ -165,148 +165,16 @@ Puntatore a una stringa con terminazione **null** che specifica la directory pre
 
 Tipo: **int**
 
-Flag che specificano la modalità di visualizzazione di un'applicazione all'apertura. Se *lpFile* specifica un file di documento, il flag viene semplicemente passato all'applicazione associata. Spetta all'applicazione decidere come gestirla.
-
-<dt>
-
-<span id="SW_HIDE"></span><span id="sw_hide"></span>
-
-<span id="SW_HIDE"></span><span id="sw_hide"></span>**Nascondi il SW \_**
-
-
-</dt> <dd>
-
-Nasconde la finestra e attiva un'altra finestra.
+Flag che specificano la modalità di visualizzazione di un'applicazione all'apertura. Se *lpFile* specifica un file di documento, il flag viene semplicemente passato all'applicazione associata. Spetta all'applicazione decidere come gestirla. Può essere uno qualsiasi dei valori che possono essere specificati nel parametro *nCmdShow* per la funzione [ShowWindow](/windows/desktop/api/winuser/nf-winuser-showwindow) .
 
 </dd> <dt>
-
-<span id="SW_MAXIMIZE"></span><span id="sw_maximize"></span>
-
-<span id="SW_MAXIMIZE"></span><span id="sw_maximize"></span>**\_ingrandimento SW**
-
-
-</dt> <dd>
-
-Ingrandisce la finestra specificata.
-
-</dd> <dt>
-
-<span id="SW_MINIMIZE"></span><span id="sw_minimize"></span>
-
-<span id="SW_MINIMIZE"></span><span id="sw_minimize"></span>**SW \_ Riduci a icona**
-
-
-</dt> <dd>
-
-Riduce a icona la finestra specificata e attiva la finestra di primo livello successiva nell'ordine z.
-
-</dd> <dt>
-
-<span id="SW_RESTORE"></span><span id="sw_restore"></span>
-
-<span id="SW_RESTORE"></span><span id="sw_restore"></span>**\_ripristino SW**
-
-
-</dt> <dd>
-
-Attiva e visualizza la finestra. Se la finestra è ridotta a icona o ingrandita, Windows ne ripristina le dimensioni e la posizione originali. Un'applicazione deve specificare questo flag durante il ripristino di una finestra ridotta a icona.
-
-</dd> <dt>
-
-<span id="SW_SHOW"></span><span id="sw_show"></span>
-
-<span id="SW_SHOW"></span><span id="sw_show"></span>**\_visualizzazione SW**
-
-
-</dt> <dd>
-
-Attiva la finestra e la Visualizza nelle dimensioni e nella posizione correnti.
-
-</dd> <dt>
-
-<span id="SW_SHOWDEFAULT"></span><span id="sw_showdefault"></span>
-
-<span id="SW_SHOWDEFAULT"></span><span id="sw_showdefault"></span>**\_SHOWDEFAULT SW**
-
-
-</dt> <dd>
-
-Imposta lo stato di visualizzazione basato sul \_ flag SW specificato nella struttura [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) passata alla funzione [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) dal programma che ha avviato l'applicazione. Un'applicazione deve chiamare [**ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) con questo flag per impostare lo stato di visualizzazione iniziale della finestra principale.
-
-</dd> <dt>
-
-<span id="SW_SHOWMAXIMIZED"></span><span id="sw_showmaximized"></span>
-
-<span id="SW_SHOWMAXIMIZED"></span><span id="sw_showmaximized"></span>**\_SHOWMAXIMIZED SW**
-
-
-</dt> <dd>
-
-Attiva la finestra e la Visualizza come finestra ingrandita.
-
-</dd> <dt>
-
-<span id="SW_SHOWMINIMIZED"></span><span id="sw_showminimized"></span>
-
-<span id="SW_SHOWMINIMIZED"></span><span id="sw_showminimized"></span>**\_SHOWMINIMIZED SW**
-
-
-</dt> <dd>
-
-Attiva la finestra e la Visualizza come finestra ridotta a icona.
-
-</dd> <dt>
-
-<span id="SW_SHOWMINNOACTIVE"></span><span id="sw_showminnoactive"></span>
-
-<span id="SW_SHOWMINNOACTIVE"></span><span id="sw_showminnoactive"></span>**\_SHOWMINNOACTIVE SW**
-
-
-</dt> <dd>
-
-Visualizza la finestra come finestra ridotta a icona. La finestra attiva rimane attiva.
-
-</dd> <dt>
-
-<span id="SW_SHOWNA"></span><span id="sw_showna"></span>
-
-<span id="SW_SHOWNA"></span><span id="sw_showna"></span>**SW \_ visualizzato**
-
-
-</dt> <dd>
-
-Consente di visualizzare la finestra nello stato corrente. La finestra attiva rimane attiva.
-
-</dd> <dt>
-
-<span id="SW_SHOWNOACTIVATE"></span><span id="sw_shownoactivate"></span>
-
-<span id="SW_SHOWNOACTIVATE"></span><span id="sw_shownoactivate"></span>**\_SHOWNOACTIVATE SW**
-
-
-</dt> <dd>
-
-Visualizza una finestra nelle dimensioni e nella posizione più recenti. La finestra attiva rimane attiva.
-
-</dd> <dt>
-
-<span id="SW_SHOWNORMAL"></span><span id="sw_shownormal"></span>
-
-<span id="SW_SHOWNORMAL"></span><span id="sw_shownormal"></span>**\_SHOWNORMAL SW**
-
-
-</dt> <dd>
-
-Attiva e visualizza una finestra. Se la finestra è ridotta a icona o ingrandita, Windows ne ripristina le dimensioni e la posizione originali. Un'applicazione deve specificare questo flag quando la finestra viene visualizzata per la prima volta.
-
-</dd> </dl> </dd> <dt>
 
 *lpfnCBWinExec* 
 </dt> <dd>
 
-Tipo: **void \** _
+Tipo: **void \***
 
-Funzione di callback utilizzata per chiamare [_ *CreateProcess* *](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) nel kernel a 16 bit.
+Funzione di callback utilizzata per chiamare [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) nel kernel a 16 bit.
 
 </dd> </dl>
 
