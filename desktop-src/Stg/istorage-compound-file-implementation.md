@@ -1,0 +1,195 @@
+---
+title: Implementazione di IStorage-Compound file
+description: L'implementazione del file composto di IStorage consente di creare e gestire i flussi e le sottoarchiviazioni in un oggetto di archiviazione che risiede in un oggetto file composto.
+ms.assetid: 2a2253f6-d3d3-403e-a9ba-53a541c7a31e
+keywords:
+- IStorage Strctd STG, implementazione del file composto
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 8bf37b24a7c68bbe357d99f94e666bfcb613c472
+ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "106299988"
+---
+# <a name="istorage-compound-file-implementation"></a><span data-ttu-id="7747b-104">Implementazione di IStorage-Compound file</span><span class="sxs-lookup"><span data-stu-id="7747b-104">IStorage-Compound File Implementation</span></span>
+
+<span data-ttu-id="7747b-105">L'implementazione del file composto di [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) consente di creare e gestire i flussi e le sottoarchiviazioni in un oggetto di archiviazione che risiede in un oggetto file composto.</span><span class="sxs-lookup"><span data-stu-id="7747b-105">The compound file implementation of [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) allows you to create and manage substorages and streams within a storage object residing in a compound file object.</span></span> <span data-ttu-id="7747b-106">Per creare un oggetto file composto e ottenere un puntatore **IStorage** , chiamare la funzione API [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex).</span><span class="sxs-lookup"><span data-stu-id="7747b-106">To create a compound file object and get an **IStorage** pointer, call the API function [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex).</span></span> <span data-ttu-id="7747b-107">Per aprire un oggetto file composto esistente e ottenere il puntatore **IStorage** radice, chiamare [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex).</span><span class="sxs-lookup"><span data-stu-id="7747b-107">To open an existing compound file object and get its root **IStorage** pointer, call [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex).</span></span>
+
+<span data-ttu-id="7747b-108">Le applicazioni che usano l'archiviazione composta devono essere registrate nelle \_ classi HKEY \_ radice \\ SystemFileAssociations e devono fornire i propri gestori di proprietà.</span><span class="sxs-lookup"><span data-stu-id="7747b-108">Applications that use compound storage should be registered in HKEY\_CLASSES\_ROOT\\SystemFileAssociations and should provide their own property handlers.</span></span> <span data-ttu-id="7747b-109">Per ulteriori informazioni, vedere la sezione "registrazione di verbi e altre informazioni sull'associazione di file" della [registrazione dell'applicazione](/windows/desktop/shell/app-registration).</span><span class="sxs-lookup"><span data-stu-id="7747b-109">For more information, see the "Registering Verbs and Other File Association Information" section of [Application Registration](/windows/desktop/shell/app-registration).</span></span>
+
+## <a name="when-to-use"></a><span data-ttu-id="7747b-110">Utilizzo</span><span class="sxs-lookup"><span data-stu-id="7747b-110">When to Use</span></span>
+
+<span data-ttu-id="7747b-111">La maggior parte delle applicazioni usa questa implementazione per creare e gestire le archiviazioni e i flussi.</span><span class="sxs-lookup"><span data-stu-id="7747b-111">Most applications use this implementation to create and manage storages and streams.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="7747b-112">Metodi</span><span class="sxs-lookup"><span data-stu-id="7747b-112">Methods</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="7747b-113"><span id="IStorage__CreateStream"></span><span id="istorage__createstream"></span><span id="ISTORAGE__CREATESTREAM"></span>[**IStorage:: CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream)</span><span class="sxs-lookup"><span data-stu-id="7747b-113"><span id="IStorage__CreateStream"></span><span id="istorage__createstream"></span><span id="ISTORAGE__CREATESTREAM"></span>[**IStorage::CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-114">Crea e apre un oggetto flusso con il nome specificato contenuto in questo oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-114">Creates and opens a stream object with the specified name contained in this storage object.</span></span> <span data-ttu-id="7747b-115">Il nome non deve superare i 31 caratteri (escluso il carattere di terminazione della stringa).</span><span class="sxs-lookup"><span data-stu-id="7747b-115">The name must not exceed 31 characters in length (not including the string terminator).</span></span> <span data-ttu-id="7747b-116">I caratteri da 000 a 01f, che fungono da primo carattere del nome del flusso/archivio, sono riservati all'OLE.</span><span class="sxs-lookup"><span data-stu-id="7747b-116">The 000 through 01f characters, serving as the first character of the stream/storage name, are reserved for use by OLE.</span></span> <span data-ttu-id="7747b-117">Si tratta di una limitazione del file composto, non della restrizione di un archivio strutturato.</span><span class="sxs-lookup"><span data-stu-id="7747b-117">This is a compound file restriction, not a structured storage restriction.</span></span> <span data-ttu-id="7747b-118">L'implementazione del file composto fornito da COM del metodo [**IStorage:: CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream) non supporta i comportamenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="7747b-118">The COM-provided compound file implementation of the [**IStorage::CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream) method does not support the following behaviors:</span></span>
+
+-   <span data-ttu-id="7747b-119">Il \_ flag DELETEONRELEASE di STGM non è supportato.</span><span class="sxs-lookup"><span data-stu-id="7747b-119">The STGM\_DELETEONRELEASE flag is not supported.</span></span>
+-   <span data-ttu-id="7747b-120">La modalità transazionale (STGM \_ transazionale) non è supportata per gli oggetti flusso.</span><span class="sxs-lookup"><span data-stu-id="7747b-120">Transacted mode (STGM\_TRANSACTED) is not supported for stream objects.</span></span>
+-   <span data-ttu-id="7747b-121">L'apertura dello stesso flusso più di una volta dallo stesso spazio di archiviazione non è supportata.</span><span class="sxs-lookup"><span data-stu-id="7747b-121">Opening the same stream more than once from the same storage is not supported.</span></span> <span data-ttu-id="7747b-122">Il \_ flag della \_ modalità di condivisione esclusiva di condivisione STGM deve essere specificato nel parametro *grfMode* .</span><span class="sxs-lookup"><span data-stu-id="7747b-122">The STGM\_SHARE\_EXCLUSIVE sharing-mode flag must be specified in the *grfMode* parameter.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-123"><span id="IStorage__OpenStream"></span><span id="istorage__openstream"></span><span id="ISTORAGE__OPENSTREAM"></span>[**IStorage:: OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream)</span><span class="sxs-lookup"><span data-stu-id="7747b-123"><span id="IStorage__OpenStream"></span><span id="istorage__openstream"></span><span id="ISTORAGE__OPENSTREAM"></span>[**IStorage::OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-124">Apre un oggetto flusso esistente in questo oggetto di archiviazione utilizzando le modalità di accesso specificate nel parametro *grfMode* .</span><span class="sxs-lookup"><span data-stu-id="7747b-124">Opens an existing stream object within this storage object using the access modes specified in the *grfMode* parameter.</span></span> <span data-ttu-id="7747b-125">I caratteri da 000 a 01f, che fungono da primo carattere del nome del flusso/archivio, sono riservati all'OLE.</span><span class="sxs-lookup"><span data-stu-id="7747b-125">The 000 through 01f characters, serving as the first character of the stream/storage name, are reserved for use by OLE.</span></span> <span data-ttu-id="7747b-126">Si tratta di una limitazione del file composto, non della restrizione di un archivio strutturato.</span><span class="sxs-lookup"><span data-stu-id="7747b-126">This is a compound file restriction, not a structured storage restriction.</span></span> <span data-ttu-id="7747b-127">L'implementazione del file composto fornito da COM del metodo [**IStorage:: OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) non supporta il comportamento seguente:</span><span class="sxs-lookup"><span data-stu-id="7747b-127">The COM-provided compound file implementation of the [**IStorage::OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) method does not support the following behavior:</span></span>
+
+-   <span data-ttu-id="7747b-128">\_Flag DELETEONRELEASE di STGM.</span><span class="sxs-lookup"><span data-stu-id="7747b-128">The STGM\_DELETEONRELEASE flag.</span></span>
+-   <span data-ttu-id="7747b-129">Modalità transazionale (STGM transazionale \_ ) per gli oggetti flusso.</span><span class="sxs-lookup"><span data-stu-id="7747b-129">Transacted mode (STGM\_TRANSACTED) for stream objects.</span></span>
+-   <span data-ttu-id="7747b-130">Apertura dello stesso flusso più di una volta dallo stesso spazio di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-130">Opening the same stream more than once from the same storage.</span></span> <span data-ttu-id="7747b-131">\_ \_ È necessario specificare il flag STGM Share Exclusive.</span><span class="sxs-lookup"><span data-stu-id="7747b-131">The STGM\_SHARE\_EXCLUSIVE flag must be specified.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-132"><span id="IStorage__CreateStorage"></span><span id="istorage__createstorage"></span><span id="ISTORAGE__CREATESTORAGE"></span>[**IStorage:: CreateStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstorage)</span><span class="sxs-lookup"><span data-stu-id="7747b-132"><span id="IStorage__CreateStorage"></span><span id="istorage__createstorage"></span><span id="ISTORAGE__CREATESTORAGE"></span>[**IStorage::CreateStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstorage)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-133">Crea e apre un nuovo oggetto di archiviazione con il nome specificato nella modalità di accesso specificata.</span><span class="sxs-lookup"><span data-stu-id="7747b-133">Creates and opens a new storage object with the specified name in the specified access mode.</span></span> <span data-ttu-id="7747b-134">Il nome non deve superare i 31 caratteri (escluso il carattere di terminazione della stringa).</span><span class="sxs-lookup"><span data-stu-id="7747b-134">The name must not exceed 31 characters in length (not including the string terminator).</span></span> <span data-ttu-id="7747b-135">I caratteri da 000 a 01f, che fungono da primo carattere del nome del flusso/archivio, sono riservati all'OLE.</span><span class="sxs-lookup"><span data-stu-id="7747b-135">The 000 through 01f characters, serving as the first character of the stream/storage name, are reserved for use by OLE.</span></span> <span data-ttu-id="7747b-136">Si tratta di una limitazione del file composto, non della restrizione di un archivio strutturato.</span><span class="sxs-lookup"><span data-stu-id="7747b-136">This is a compound file restriction, not a structured storage restriction.</span></span> <span data-ttu-id="7747b-137">L'implementazione del file composto fornito da COM del metodo [**IStorage:: CreateStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstorage) non supporta il comportamento seguente:</span><span class="sxs-lookup"><span data-stu-id="7747b-137">The COM-provided compound file implementation of the [**IStorage::CreateStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstorage) method does not support the following behavior:</span></span>
+
+-   <span data-ttu-id="7747b-138">\_Flag di priorità STGM per le archiviazioni non radice.</span><span class="sxs-lookup"><span data-stu-id="7747b-138">The STGM\_PRIORITY flag for nonroot storages.</span></span>
+-   <span data-ttu-id="7747b-139">Apertura dello stesso oggetto di archiviazione più di una volta dallo stesso archivio padre.</span><span class="sxs-lookup"><span data-stu-id="7747b-139">Opening the same storage object more than once from the same parent storage.</span></span> <span data-ttu-id="7747b-140">\_ \_ È necessario specificare il flag STGM Share Exclusive.</span><span class="sxs-lookup"><span data-stu-id="7747b-140">The STGM\_SHARE\_EXCLUSIVE flag must be specified.</span></span>
+-   <span data-ttu-id="7747b-141">\_Flag DELETEONRELEASE di STGM.</span><span class="sxs-lookup"><span data-stu-id="7747b-141">The STGM\_DELETEONRELEASE flag.</span></span> <span data-ttu-id="7747b-142">Se questo flag è specificato, la funzione restituisce STG \_ E \_ INVALIDFLAG.</span><span class="sxs-lookup"><span data-stu-id="7747b-142">If this flag is specified, the function returns STG\_E\_INVALIDFLAG.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-143"><span id="IStorage__OpenStorage"></span><span id="istorage__openstorage"></span><span id="ISTORAGE__OPENSTORAGE"></span>[**IStorage:: OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage)</span><span class="sxs-lookup"><span data-stu-id="7747b-143"><span id="IStorage__OpenStorage"></span><span id="istorage__openstorage"></span><span id="ISTORAGE__OPENSTORAGE"></span>[**IStorage::OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-144">Apre un oggetto di archiviazione esistente con il nome specificato nella modalità di accesso specificata.</span><span class="sxs-lookup"><span data-stu-id="7747b-144">Opens an existing storage object with the specified name in the specified access mode.</span></span> <span data-ttu-id="7747b-145">I caratteri da 000 a 01f, che fungono da primo carattere del nome del flusso/archivio, sono riservati all'OLE.</span><span class="sxs-lookup"><span data-stu-id="7747b-145">The 000 through 01f characters, serving as the first character of the stream/storage name, are reserved for use by OLE.</span></span> <span data-ttu-id="7747b-146">Si tratta di una limitazione del file composto, non della restrizione di un archivio strutturato.</span><span class="sxs-lookup"><span data-stu-id="7747b-146">This is a compound file restriction, not a structured storage restriction.</span></span> <span data-ttu-id="7747b-147">L'implementazione del file composto fornito da COM del metodo [**IStorage:: OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage) non supporta il comportamento seguente:</span><span class="sxs-lookup"><span data-stu-id="7747b-147">The COM-provided compound file implementation of the [**IStorage::OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage) method does not support the following behavior:</span></span>
+
+-   <span data-ttu-id="7747b-148">\_Flag di priorità STGM per le archiviazioni non radice.</span><span class="sxs-lookup"><span data-stu-id="7747b-148">The STGM\_PRIORITY flag for nonroot storages.</span></span>
+-   <span data-ttu-id="7747b-149">Apertura dello stesso oggetto di archiviazione più di una volta dallo stesso archivio padre.</span><span class="sxs-lookup"><span data-stu-id="7747b-149">Opening the same storage object more than once from the same parent storage.</span></span> <span data-ttu-id="7747b-150">\_ \_ È necessario specificare il flag STGM Share Exclusive.</span><span class="sxs-lookup"><span data-stu-id="7747b-150">The STGM\_SHARE\_EXCLUSIVE flag must be specified.</span></span>
+-   <span data-ttu-id="7747b-151">\_Flag DELETEONRELEASE di STGM.</span><span class="sxs-lookup"><span data-stu-id="7747b-151">The STGM\_DELETEONRELEASE flag.</span></span> <span data-ttu-id="7747b-152">Se questo flag è specificato, la funzione restituisce STG \_ E \_ INVALIDFUNCTION.</span><span class="sxs-lookup"><span data-stu-id="7747b-152">If this flag is specified, the function returns STG\_E\_INVALIDFUNCTION.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-153"><span id="IStorage__CopyTo"></span><span id="istorage__copyto"></span><span id="ISTORAGE__COPYTO"></span>[**IStorage:: CopyTo**](/windows/desktop/api/Objidl/nf-objidl-istorage-copyto)</span><span class="sxs-lookup"><span data-stu-id="7747b-153"><span id="IStorage__CopyTo"></span><span id="istorage__copyto"></span><span id="ISTORAGE__COPYTO"></span>[**IStorage::CopyTo**](/windows/desktop/api/Objidl/nf-objidl-istorage-copyto)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-154">Copia solo le sottoarchiviazioni e i flussi di questo oggetto di archiviazione aperti in un altro oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-154">Copies only the substorages and streams of this open storage object into another storage object.</span></span> <span data-ttu-id="7747b-155">Il parametro *rgiidExclude* può essere impostato su IID \_ IStream per copiare solo le sottoarchiviazioni o per l'IID \_ IStorage per copiare solo i flussi.</span><span class="sxs-lookup"><span data-stu-id="7747b-155">The *rgiidExclude* parameter can be set to IID\_IStream to copy only substorages, or to IID\_IStorage to copy only streams.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-156"><span id="IStorage__MoveElementTo"></span><span id="istorage__moveelementto"></span><span id="ISTORAGE__MOVEELEMENTTO"></span>[**IStorage:: MoveElementTo**](/windows/desktop/api/Objidl/nf-objidl-istorage-moveelementto)</span><span class="sxs-lookup"><span data-stu-id="7747b-156"><span id="IStorage__MoveElementTo"></span><span id="istorage__moveelementto"></span><span id="ISTORAGE__MOVEELEMENTTO"></span>[**IStorage::MoveElementTo**](/windows/desktop/api/Objidl/nf-objidl-istorage-moveelementto)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-157">Copia o sposta un sottoarchivio o un flusso da questo oggetto di archiviazione a un altro oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-157">Copies or moves a substorage or stream from this storage object to another storage object.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-158"><span id="IStorage__Commit"></span><span id="istorage__commit"></span><span id="ISTORAGE__COMMIT"></span>[**IStorage:: commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit)</span><span class="sxs-lookup"><span data-stu-id="7747b-158"><span id="IStorage__Commit"></span><span id="istorage__commit"></span><span id="ISTORAGE__COMMIT"></span>[**IStorage::Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-159">Garantisce che tutte le modifiche apportate a un oggetto di archiviazione aperte in modalità transazionale si riflettano nell'archivio padre. per un archivio radice, riflette le modifiche nel dispositivo effettivo. ad esempio, un file su disco.</span><span class="sxs-lookup"><span data-stu-id="7747b-159">Ensures that any changes made to a storage object open in transacted mode are reflected in the parent storage; for a root storage, reflects the changes in the actual device; for example, a file on disk.</span></span> <span data-ttu-id="7747b-160">Per un oggetto di archiviazione radice aperto in modalità diretta, questo metodo non ha alcun effetto tranne che per svuotare tutti i buffer di memoria sul disco.</span><span class="sxs-lookup"><span data-stu-id="7747b-160">For a root storage object opened in direct mode, this method has no effect except to flush all memory buffers to the disk.</span></span> <span data-ttu-id="7747b-161">Per gli oggetti di archiviazione non radice in modalità diretta, questo metodo non ha alcun effetto.</span><span class="sxs-lookup"><span data-stu-id="7747b-161">For nonroot storage objects in direct mode, this method has no effect.</span></span>
+
+<span data-ttu-id="7747b-162">L'implementazione dei file compositi fornita da COM usa un processo di commit in due fasi, a meno che non \_ venga specificato STGC overwrite nel parametro *grfCommitFlags* .</span><span class="sxs-lookup"><span data-stu-id="7747b-162">The COM-provided compound files implementation uses a two-phase commit process unless STGC\_OVERWRITE is specified in the *grfCommitFlags* parameter.</span></span> <span data-ttu-id="7747b-163">Questo processo in due fasi garantisce l'affidabilità dei dati, nel caso in cui l'operazione di commit abbia esito negativo.</span><span class="sxs-lookup"><span data-stu-id="7747b-163">This two-phase process ensures the robustness of data, in case the commit operation fails.</span></span> <span data-ttu-id="7747b-164">In primo luogo, tutti i nuovi dati vengono scritti nello spazio inutilizzato nel file sottostante.</span><span class="sxs-lookup"><span data-stu-id="7747b-164">First, all new data is written to unused space in the underlying file.</span></span> <span data-ttu-id="7747b-165">Se necessario, al file viene allocato un nuovo spazio.</span><span class="sxs-lookup"><span data-stu-id="7747b-165">If necessary, new space is allocated to the file.</span></span> <span data-ttu-id="7747b-166">Al termine di questo passaggio, una tabella nel file viene aggiornata usando un'operazione di scrittura a settore singolo per indicare che i nuovi dati devono essere usati al posto del vecchio.</span><span class="sxs-lookup"><span data-stu-id="7747b-166">After this step has been completed, a table in the file is updated using a single-sector write operation to indicate that the new data is to be used in place of the old.</span></span> <span data-ttu-id="7747b-167">I dati obsoleti diventano spazio libero da usare alla successiva operazione di commit.</span><span class="sxs-lookup"><span data-stu-id="7747b-167">The old data becomes free space to be used at the next commit operation.</span></span> <span data-ttu-id="7747b-168">Pertanto, i dati precedenti sono disponibili e possono essere ripristinati se si verifica un errore durante il commit delle modifiche.</span><span class="sxs-lookup"><span data-stu-id="7747b-168">Thus, the old data is available and can be restored if an error occurs when committing changes.</span></span> <span data-ttu-id="7747b-169">Se \_ si specifica STGC overwrite, viene utilizzata una singola operazione di commit della fase.</span><span class="sxs-lookup"><span data-stu-id="7747b-169">If STGC\_OVERWRITE is specified, a single phase commit operation is used.</span></span> <span data-ttu-id="7747b-170">Per ulteriori informazioni sui flag della modalità transazionale, vedere enumerazione [**STGC**](/windows/win32/api/wtypes/ne-wtypes-stgc) .</span><span class="sxs-lookup"><span data-stu-id="7747b-170">For more information about transacted mode flags, see [**STGC**](/windows/win32/api/wtypes/ne-wtypes-stgc) enumeration.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-171"><span id="IStorage__Revert"></span><span id="istorage__revert"></span><span id="ISTORAGE__REVERT"></span>[**IStorage:: Revert**](/windows/desktop/api/Objidl/nf-objidl-istorage-revert)</span><span class="sxs-lookup"><span data-stu-id="7747b-171"><span id="IStorage__Revert"></span><span id="istorage__revert"></span><span id="ISTORAGE__REVERT"></span>[**IStorage::Revert**](/windows/desktop/api/Objidl/nf-objidl-istorage-revert)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-172">Elimina tutte le modifiche apportate all'oggetto di archiviazione dall'ultima operazione di commit.</span><span class="sxs-lookup"><span data-stu-id="7747b-172">Discards all changes that have been made to the storage object since the last commit operation.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-173"><span id="IStorage__EnumElements"></span><span id="istorage__enumelements"></span><span id="ISTORAGE__ENUMELEMENTS"></span>[**IStorage:: EnumElements**](/windows/desktop/api/Objidl/nf-objidl-istorage-enumelements)</span><span class="sxs-lookup"><span data-stu-id="7747b-173"><span id="IStorage__EnumElements"></span><span id="istorage__enumelements"></span><span id="ISTORAGE__ENUMELEMENTS"></span>[**IStorage::EnumElements**](/windows/desktop/api/Objidl/nf-objidl-istorage-enumelements)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-174">Crea e recupera un puntatore a un oggetto enumeratore che può essere usato per enumerare gli oggetti di archiviazione e di flusso contenuti in questo oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-174">Creates and retrieves a pointer to an enumerator object that can be used to enumerate the storage and stream objects contained within this storage object.</span></span> <span data-ttu-id="7747b-175">L'implementazione del file composto fornito da COM acquisisce uno snapshot di tali informazioni.</span><span class="sxs-lookup"><span data-stu-id="7747b-175">The COM-provided compound file implementation takes a snapshot of that information.</span></span> <span data-ttu-id="7747b-176">Pertanto, le modifiche apportate ai flussi e alle archiviazioni non vengono riflesse nell'enumeratore fino a quando non viene ottenuto un nuovo enumeratore.</span><span class="sxs-lookup"><span data-stu-id="7747b-176">Therefore, changes to the streams and storages are not reflected in the enumerator until a new enumerator is obtained.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-177"><span id="IStorage__DestroyElement"></span><span id="istorage__destroyelement"></span><span id="ISTORAGE__DESTROYELEMENT"></span>[**IStorage::D estroyElement**](/windows/desktop/api/Objidl/nf-objidl-istorage-destroyelement)</span><span class="sxs-lookup"><span data-stu-id="7747b-177"><span id="IStorage__DestroyElement"></span><span id="istorage__destroyelement"></span><span id="ISTORAGE__DESTROYELEMENT"></span>[**IStorage::DestroyElement**](/windows/desktop/api/Objidl/nf-objidl-istorage-destroyelement)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-178">Rimuove l'elemento specificato (substorage o Stream) da questo oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-178">Removes the specified element (substorage or stream) from this storage object.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-179"><span id="IStorage__RenameElement"></span><span id="istorage__renameelement"></span><span id="ISTORAGE__RENAMEELEMENT"></span>[**IStorage:: RenameElement**](/windows/desktop/api/Objidl/nf-objidl-istorage-renameelement)</span><span class="sxs-lookup"><span data-stu-id="7747b-179"><span id="IStorage__RenameElement"></span><span id="istorage__renameelement"></span><span id="ISTORAGE__RENAMEELEMENT"></span>[**IStorage::RenameElement**](/windows/desktop/api/Objidl/nf-objidl-istorage-renameelement)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-180">Rinomina il flusso o lo spazio di archiviazione specificato in questo oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-180">Renames the specified substorage or stream in this storage object.</span></span> <span data-ttu-id="7747b-181">I caratteri da 000 a 01f, che fungono da primo carattere del nome del flusso/archivio, sono riservati all'OLE.</span><span class="sxs-lookup"><span data-stu-id="7747b-181">The 000 through 01f characters, serving as the first character of the stream/storage name, are reserved for use by OLE.</span></span> <span data-ttu-id="7747b-182">Si tratta di una limitazione del file composto, non della restrizione di un archivio strutturato.</span><span class="sxs-lookup"><span data-stu-id="7747b-182">This is a compound file restriction, not a structured storage restriction.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-183"><span id="IStorage__SetElementTimes"></span><span id="istorage__setelementtimes"></span><span id="ISTORAGE__SETELEMENTTIMES"></span>[**IStorage:: SetElementTimes**](/windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes)</span><span class="sxs-lookup"><span data-stu-id="7747b-183"><span id="IStorage__SetElementTimes"></span><span id="istorage__setelementtimes"></span><span id="ISTORAGE__SETELEMENTTIMES"></span>[**IStorage::SetElementTimes**](/windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-184">Imposta la modifica, l'accesso e l'ora di creazione dell'elemento di archiviazione specificato.</span><span class="sxs-lookup"><span data-stu-id="7747b-184">Sets the modification, access, and creation times of the specified storage element.</span></span> <span data-ttu-id="7747b-185">L'implementazione del file composto fornito da COM mantiene gli orari di modifica e modifica per gli oggetti di archiviazione interni.</span><span class="sxs-lookup"><span data-stu-id="7747b-185">The COM-provided compound-file implementation maintains modification and change times for internal storage objects.</span></span> <span data-ttu-id="7747b-186">Gli oggetti di archiviazione radice supportano qualsiasi elemento supportato dalla file system sottostante (o da [**ILockBytes**](/windows/desktop/api/Objidl/nn-objidl-ilockbytes)).</span><span class="sxs-lookup"><span data-stu-id="7747b-186">Root storage objects support whatever is supported by the underlying file system (or by [**ILockBytes**](/windows/desktop/api/Objidl/nn-objidl-ilockbytes)).</span></span> <span data-ttu-id="7747b-187">L'implementazione del file composto non mantiene alcun timestamp per i flussi interni.</span><span class="sxs-lookup"><span data-stu-id="7747b-187">The compound file implementation does not maintain any time stamps for internal streams.</span></span> <span data-ttu-id="7747b-188">I timestamp non supportati vengono segnalati come zero, consentendo al chiamante di verificare il supporto.</span><span class="sxs-lookup"><span data-stu-id="7747b-188">Unsupported time stamps are reported as zero, which allows the caller to test for support.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-189"><span id="IStorage__SetClass"></span><span id="istorage__setclass"></span><span id="ISTORAGE__SETCLASS"></span>[**IStorage:: seclasse**](/windows/desktop/api/Objidl/nf-objidl-istorage-setclass)</span><span class="sxs-lookup"><span data-stu-id="7747b-189"><span id="IStorage__SetClass"></span><span id="istorage__setclass"></span><span id="ISTORAGE__SETCLASS"></span>[**IStorage::SetClass**](/windows/desktop/api/Objidl/nf-objidl-istorage-setclass)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-190">Assegna il CLSID specificato a questo oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-190">Assigns the specified CLSID to this storage object.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-191"><span id="IStorage__SetStateBits"></span><span id="istorage__setstatebits"></span><span id="ISTORAGE__SETSTATEBITS"></span>[**IStorage:: SetStateBits**](/windows/desktop/api/Objidl/nf-objidl-istorage-setstatebits)</span><span class="sxs-lookup"><span data-stu-id="7747b-191"><span id="IStorage__SetStateBits"></span><span id="istorage__setstatebits"></span><span id="ISTORAGE__SETSTATEBITS"></span>[**IStorage::SetStateBits**](/windows/desktop/api/Objidl/nf-objidl-istorage-setstatebits)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-192">Archivia fino a 32 bit di informazioni sullo stato in questo oggetto di archiviazione.</span><span class="sxs-lookup"><span data-stu-id="7747b-192">Stores up to 32 bits of state information in this storage object.</span></span> <span data-ttu-id="7747b-193">Lo stato impostato da questo metodo è solo per uso esterno.</span><span class="sxs-lookup"><span data-stu-id="7747b-193">The state set by this method is for external use only.</span></span> <span data-ttu-id="7747b-194">L'implementazione del file composto fornito da COM non esegue alcuna azione in base allo stato.</span><span class="sxs-lookup"><span data-stu-id="7747b-194">The COM-provided compound file implementation does not perform any action based on the state.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="7747b-195"><span id="IStorage__Stat"></span><span id="istorage__stat"></span><span id="ISTORAGE__STAT"></span>[**IStorage:: stat**](/windows/desktop/api/Objidl/nf-objidl-istorage-stat)</span><span class="sxs-lookup"><span data-stu-id="7747b-195"><span id="IStorage__Stat"></span><span id="istorage__stat"></span><span id="ISTORAGE__STAT"></span>[**IStorage::Stat**](/windows/desktop/api/Objidl/nf-objidl-istorage-stat)</span></span>
+</dt> <dd>
+
+<span data-ttu-id="7747b-196">Recupera la struttura [**STATSTG**](/windows/win32/api/objidl/ns-objidl-statstg) per questo oggetto di archiviazione aperto.</span><span class="sxs-lookup"><span data-stu-id="7747b-196">Retrieves the [**STATSTG**](/windows/win32/api/objidl/ns-objidl-statstg) structure for this open storage object.</span></span>
+
+</dd> </dl>
+
+## <a name="remarks"></a><span data-ttu-id="7747b-197">Commenti</span><span class="sxs-lookup"><span data-stu-id="7747b-197">Remarks</span></span>
+
+<span data-ttu-id="7747b-198">Se l'oggetto di archiviazione viene aperto in modalità semplice, l'utilizzo dei metodi precedenti è limitato.</span><span class="sxs-lookup"><span data-stu-id="7747b-198">If the storage object is opened in simple mode, use of the above methods is restricted.</span></span> <span data-ttu-id="7747b-199">Una risorsa di archiviazione è in modalità semplice se viene aperta con l' \_ elemento semplice STGM specificato nel parametro *grfMode* della funzione [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex) o [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) .</span><span class="sxs-lookup"><span data-stu-id="7747b-199">A storage is in simple mode if it is opened with the STGM\_SIMPLE element specified in the *grfMode* parameter of the [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex) or [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) function.</span></span> <span data-ttu-id="7747b-200">Per altre informazioni sulle archiviazioni in modalità semplice, vedere [**costanti STGM**](stgm-constants.md).</span><span class="sxs-lookup"><span data-stu-id="7747b-200">For more information about simple-mode storages, see [**STGM Constants**](stgm-constants.md).</span></span> <span data-ttu-id="7747b-201">Se l'oggetto di archiviazione in modalità semplice è stato ottenuto dalla funzione **StgCreateStorageEx** , è possibile chiamare il metodo [**CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream) , ma il metodo [**OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) non può.</span><span class="sxs-lookup"><span data-stu-id="7747b-201">If the simple-mode storage object was obtained from the **StgCreateStorageEx** function, then the [**CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream) method can be called but the [**OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) method cannot.</span></span> <span data-ttu-id="7747b-202">Se l'oggetto di archiviazione in modalità semplice è stato ottenuto dalla funzione **StgOpenStorageEx** , è possibile chiamare il metodo **OpenStream** , ma il metodo **CreateStream** non può.</span><span class="sxs-lookup"><span data-stu-id="7747b-202">If the simple mode storage object was obtained from the **StgOpenStorageEx** function, then the **OpenStream** method can be called but the **CreateStream** method cannot.</span></span>
+
+<span data-ttu-id="7747b-203">Quando si usa un oggetto di archiviazione in modalità semplice per creare un flusso, le dimensioni minime del flusso sono in genere pari a 4096 byte.</span><span class="sxs-lookup"><span data-stu-id="7747b-203">When a simple-mode storage object is used to create a stream, the minimum size of that stream typically is 4096 bytes.</span></span> <span data-ttu-id="7747b-204">Se nel flusso vengono scritti meno dati, le dimensioni vengono arrotondate per eccesso a 4096 byte.</span><span class="sxs-lookup"><span data-stu-id="7747b-204">If less data is written to the stream, the size is rounded up to 4096 bytes.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="7747b-205">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7747b-205">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="7747b-206">Limiti di implementazione dei file composti</span><span class="sxs-lookup"><span data-stu-id="7747b-206">Compound File Implementation Limits</span></span>](structured-storage-interfaces.md)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-207">**IFillLockBytes**</span><span class="sxs-lookup"><span data-stu-id="7747b-207">**IFillLockBytes**</span></span>](/windows/desktop/api/Objidl/nn-objidl-ifilllockbytes)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-208">**ILockBytes**</span><span class="sxs-lookup"><span data-stu-id="7747b-208">**ILockBytes**</span></span>](/windows/desktop/api/Objidl/nn-objidl-ilockbytes)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-209">**IRootStorage**</span><span class="sxs-lookup"><span data-stu-id="7747b-209">**IRootStorage**</span></span>](/windows/desktop/api/Objidl/nn-objidl-irootstorage)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-210">**IStorage**</span><span class="sxs-lookup"><span data-stu-id="7747b-210">**IStorage**</span></span>](/windows/desktop/api/Objidl/nn-objidl-istorage)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-211">**IStream**</span><span class="sxs-lookup"><span data-stu-id="7747b-211">**IStream**</span></span>](/windows/desktop/api/Objidl/nn-objidl-istream)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-212">**StgCreateDocfile**</span><span class="sxs-lookup"><span data-stu-id="7747b-212">**StgCreateDocfile**</span></span>](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-213">**StgCreateStorageEx**</span><span class="sxs-lookup"><span data-stu-id="7747b-213">**StgCreateStorageEx**</span></span>](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-214">**StgOpenStorage**</span><span class="sxs-lookup"><span data-stu-id="7747b-214">**StgOpenStorage**</span></span>](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorage)
+</dt> <dt>
+
+[<span data-ttu-id="7747b-215">**StgOpenStorageEx**</span><span class="sxs-lookup"><span data-stu-id="7747b-215">**StgOpenStorageEx**</span></span>](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex)
+</dt> </dl>
+
+ 
+
+ 
