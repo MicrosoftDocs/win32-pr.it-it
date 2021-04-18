@@ -1,0 +1,40 @@
+---
+description: Il programma di installazione Application Programming Interface (API) fornisce un set di funzioni che l'applicazione di installazione può chiamare per eseguire operazioni di installazione. Queste funzioni di configurazione funzionano con i file INF di Windows per fornire le funzionalità di configurazione seguenti.
+ms.assetid: 58201596-cb8c-480a-abef-896c1f9ef098
+title: Panoramica
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a32b99c6079fdb61fd6bfd0033ffccb9ebb7b922
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106313279"
+---
+# <a name="overview"></a><span data-ttu-id="d256c-104">Panoramica</span><span class="sxs-lookup"><span data-stu-id="d256c-104">Overview</span></span>
+
+<span data-ttu-id="d256c-105">Il programma di installazione Application Programming Interface (API) fornisce un set di funzioni che l'applicazione di installazione può chiamare per eseguire operazioni di installazione.</span><span class="sxs-lookup"><span data-stu-id="d256c-105">The Setup application programming interface (API) provides a set of functions that your setup application can call to perform installation operations.</span></span> <span data-ttu-id="d256c-106">Queste funzioni di configurazione funzionano con i file INF di Windows per fornire le funzionalità di configurazione seguenti.</span><span class="sxs-lookup"><span data-stu-id="d256c-106">These setup functions work with Windows INF files to provide the following setup functionality.</span></span>
+
+
+
+| <span data-ttu-id="d256c-107">Per informazioni su</span><span class="sxs-lookup"><span data-stu-id="d256c-107">For information about</span></span>                       | <span data-ttu-id="d256c-108">Vedere</span><span class="sxs-lookup"><span data-stu-id="d256c-108">See</span></span>                                                                                                                                                                         |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="d256c-109">Accodamento di file</span><span class="sxs-lookup"><span data-stu-id="d256c-109">Queuing files</span></span>                               | [<span data-ttu-id="d256c-110">Code di file</span><span class="sxs-lookup"><span data-stu-id="d256c-110">File Queues</span></span>](file-queues.md)                                                                                                                                              |
+| <span data-ttu-id="d256c-111">Installazione dei file</span><span class="sxs-lookup"><span data-stu-id="d256c-111">Installing files</span></span>                            | [<span data-ttu-id="d256c-112">Code di file</span><span class="sxs-lookup"><span data-stu-id="d256c-112">File Queues</span></span>](file-queues.md)<br/> [<span data-ttu-id="d256c-113">Configurare le applicazioni</span><span class="sxs-lookup"><span data-stu-id="d256c-113">Setup Applications</span></span>](setup-applications.md)<br/> [<span data-ttu-id="d256c-114">Creazione di applicazioni di installazione</span><span class="sxs-lookup"><span data-stu-id="d256c-114">Creating Setup Applications</span></span>](creating-setup-applications.md)<br/> |
+| <span data-ttu-id="d256c-115">Gestione degli errori e richiesta di supporto</span><span class="sxs-lookup"><span data-stu-id="d256c-115">Handling errors and prompting for media</span></span>     | [<span data-ttu-id="d256c-116">Richieste di dischi e gestione degli errori</span><span class="sxs-lookup"><span data-stu-id="d256c-116">Disk Prompting and Error Handling</span></span>](disk-prompting-and-error-handling.md)                                                                                                  |
+| <span data-ttu-id="d256c-117">Aggiornamento delle voci del registro di sistema</span><span class="sxs-lookup"><span data-stu-id="d256c-117">Updating registry entries</span></span>                   | [<span data-ttu-id="d256c-118">Configurare le applicazioni</span><span class="sxs-lookup"><span data-stu-id="d256c-118">Setup Applications</span></span>](setup-applications.md)                                                                                                                                |
+| <span data-ttu-id="d256c-119">Registrazione dei file installati</span><span class="sxs-lookup"><span data-stu-id="d256c-119">Logging installed files</span></span>                     | [<span data-ttu-id="d256c-120">Log file</span><span class="sxs-lookup"><span data-stu-id="d256c-120">File Log</span></span>](file-log.md)                                                                                                                                                    |
+| <span data-ttu-id="d256c-121">Archiviazione dei percorsi di origine usati più di recente</span><span class="sxs-lookup"><span data-stu-id="d256c-121">Storing the most recently used source paths</span></span> | [<span data-ttu-id="d256c-122">Elenco origine MRU</span><span class="sxs-lookup"><span data-stu-id="d256c-122">MRU Source List</span></span>](mru-source-list.md)                                                                                                                                      |
+
+
+
+ 
+
+<span data-ttu-id="d256c-123">Per la maggior parte delle funzioni di configurazione sono disponibili versioni Unicode e ANSI.</span><span class="sxs-lookup"><span data-stu-id="d256c-123">Unicode and ANSI versions are available for most setup functions.</span></span> <span data-ttu-id="d256c-124">I file di testo Unicode devono contenere l'indicatore dell'ordine dei byte 0xFEFF standard per consentire alle funzioni di installazione di identificare il file come testo Unicode.</span><span class="sxs-lookup"><span data-stu-id="d256c-124">Unicode text files should contain the standard 0xFEFF byte-order mark to enable setup functions to identify the file as Unicode text.</span></span>
+
+<span data-ttu-id="d256c-125">Sebbene l'API di installazione supporti la richiesta di nuove finestre di dialogo per la gestione degli errori e dei supporti, le funzioni di installazione non forniscono funzionalità della procedura guidata o un'interfaccia utente generica.</span><span class="sxs-lookup"><span data-stu-id="d256c-125">Although the Setup API supports prompting for new media and basic error-handling dialog boxes, the setup functions do not provide wizard functionality or a generic user interface.</span></span>
+
+<span data-ttu-id="d256c-126">Gli sviluppatori devono considerare se possono usare [Windows Installer](/windows/desktop/Msi/windows-installer-portal) per installare le applicazioni anziché l'API di installazione.</span><span class="sxs-lookup"><span data-stu-id="d256c-126">Developers should consider whether they can use [Windows Installer](/windows/desktop/Msi/windows-installer-portal) to install their applications rather than the Setup API.</span></span> <span data-ttu-id="d256c-127">Windows Installer riduce il costo totale di proprietà (TCO) per i clienti, consentendo loro di installare e configurare in modo efficiente i prodotti e le applicazioni.</span><span class="sxs-lookup"><span data-stu-id="d256c-127">Windows Installer reduces the total cost of ownership (TCO) for your customers by enabling them to efficiently install and configure your products and applications.</span></span> <span data-ttu-id="d256c-128">Il programma di installazione può inoltre fornire al prodotto nuove funzionalità per annunciare le funzionalità senza installarle, installare i prodotti su richiesta e aggiungere personalizzazioni utente.</span><span class="sxs-lookup"><span data-stu-id="d256c-128">The installer can also provide your product with new capabilities to advertise features without installing them, to install products on-demand, and to add user customizations.</span></span>
+
+ 
+
