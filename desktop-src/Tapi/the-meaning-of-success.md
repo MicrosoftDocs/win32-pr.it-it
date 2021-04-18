@@ -1,0 +1,40 @@
+---
+description: Quando un opertion restituisce l'ESITo positivo, la funzione è riuscita a un punto definito dall'API su una funzione in base alla funzione.
+ms.assetid: e4077d77-dee1-4f1a-a6ee-20ca2f92a1ec
+title: Il significato di SUCCESS
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: d183695e9dce9df88dea5fe9464f16163130cd0f
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106315261"
+---
+# <a name="the-meaning-of-success"></a>Il significato di SUCCESS
+
+## <a name="tapi-2x"></a>TAPI 2. x
+
+Quando un'operazione restituisce un'indicazione di ESITo positivo (in modo sincrono al momento della restituzione di una funzione per le operazioni sincrone o in modo asincrono tramite una [**\_ risposta di riga**](./line-reply.md) o un messaggio di [**\_ risposta telefonica**](./phone-reply.md) per le operazioni asincrone), si presuppone che il valore sia true:
+
+-   La funzione è stata completata fino a un punto definito dall'API in base alla funzione. Una volta raggiunto tale punto, l'operazione è stata completata o si troverà in uno stato in modo tale che i messaggi di stato indipendenti informano l'applicazione sullo stato di avanzamento successivo.
+
+    Ad esempio, l'implementazione di [**lineMakeCall**](/windows/win32/api/tapi/nf-tapi-linemakecall) di un provider di servizi deve restituire un esito positivo non successivo a quello in cui la chiamata entra nello stato di chiamata continua. Idealmente, il provider deve indicare l'ESITo positivo appena possibile, ad esempio quando la chiamata entra nello stato della chiamata al tono di composizione (se applicabile). Al termine della restituzione dell'ESITo positivo all'applicazione, i messaggi della riga \_ CALLSTATE informeranno l'applicazione sullo stato di avanzamento della chiamata. I provider di servizi che ritardano la restituzione dell'indicazione **lineMakeCall** Success, ad esempio fino al completamento della composizione, devono essere consapevoli del fatto che questo provider pone uno svantaggio perché l'usabilità a livello di applicazione può essere gravemente limitata. Ad esempio, non è possibile che un utente annulli la richiesta di installazione della chiamata in corso fino al completamento della composizione e che tutte le cifre siano state inviate al Commuter.
+
+-   Le funzioni che restituiscono informazioni, ad esempio [**lineGetCallInfo**](/windows/win32/api/tapi/nf-tapi-linegetcallinfo), RESTITUIscono esito positivo solo quando le informazioni richieste sono disponibili per l'applicazione. Le funzioni che restituiscono handle (a linee o chiamate) possono restituire ESITo positivo solo dopo la validità dell'handle. Non è necessario inviare messaggi sulla riga o chiamare prima dell'indicazione di ESITo positivo della funzione che ha causato la creazione. Il provider di servizi è responsabile dell'eliminazione di tali messaggi.
+-   Le funzioni che abilitano determinate condizioni permanenti (ad esempio [**lineMonitorDigits**](/windows/win32/api/tapi/nf-tapi-linemonitordigits)) RESTITUIscono esito positivo solo dopo l'abilitazione della condizione, non quando la condizione viene rimossa (ad esempio, non quando il monitoraggio di tutte le cifre è stato completato).
+-   Le funzioni di controllo delle chiamate, ad esempio [**lineHold**](/windows/win32/api/tapi/nf-tapi-linehold) o [**lineSetupTransfer**](/windows/win32/api/tapi/nf-tapi-linesetuptransfer), ma non [**lineMakeCall**](/windows/win32/api/tapi/nf-tapi-linemakecall), restituiscono esito positivo quando l'operazione viene completata. Alcune reti telefoniche non forniscono il riconoscimento (positivo o negativo) sul completamento di determinate richieste effettuate dai provider di servizi. In tali situazioni, il provider di servizi deve decidere se la richiesta ha avuto esito positivo o negativo. Pertanto, il successo può indicare che il provider di servizi ha avviato azioni per soddisfare la richiesta, ma non necessariamente altro. Il provider, ad esempio, potrebbe non ricevere alcun riconoscimento affermativa alla propria richiesta dal commutino, anche se ha già inviato un messaggio di operazione riuscita all'applicazione.
+
+## <a name="tapi-3x"></a>TAPI 3. x
+
+Quando un'operazione restituisce un'indicazione di ESITo positivo (in modo sincrono al momento della restituzione di una funzione per le operazioni sincrone o in modo asincrono con una chiamata alla procedura di callback di [**\_ completamento**](/windows/win32/api/tspi/nc-tspi-async_completion) asincrono per le operazioni asincrone), si presuppone che siano soddisfatte le condizioni seguenti:
+
+-   La funzione è stata completata fino a un punto definito dal provider di servizi. Il provider di servizi definisce il punto in base alla funzione. Dopo aver raggiunto tale punto, l'operazione è stata completata o è in uno stato in modo tale che i messaggi di stato indipendenti successivi indicheranno all'applicazione lo stato di avanzamento.
+-   Le funzioni che restituiscono informazioni, ad esempio [**TSPI \_ LinePark**](/windows/win32/api/tspi/nf-tspi-tspi_linepark) o [**TSPI \_ lineDevSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific), restituiscono esito positivo solo se le informazioni richieste sono disponibili per il chiamante. Le funzioni che restituiscono handle (a linee aperte, telefoni aperti o chiamate) restituiscono gli handle immediatamente sulla funzione Return. Sia il provider di servizi che il chiamante devono considerare gli handle come "non ancora validi" fino all'eventuale indicazione di ESITo positivo. Il provider di servizi è responsabile di impedire la presenza di messaggi di callback alla procedura [**LineEvent**](/windows/win32/api/tspi/nc-tspi-lineevent) o [**PHONEEVENT**](/windows/desktop/api/tspi/nc-tspi-phoneevent) sulla linea aperta, il telefono aperto o la chiamata fino al completamento dell'indicazione di esito positivo. Se il risultato finale è un errore, qualsiasi handle restituito immediatamente diventa non valido senza ulteriori azioni.
+-   Le funzioni che abilitano determinate condizioni permanenti, come [**TSPI \_ lineMonitorDigits**](/windows/win32/api/tspi/nf-tspi-tspi_linemonitordigits), restituiscono esito positivo solo dopo l'abilitazione della condizione, non quando la condizione viene rimossa, ad esempio, non quando il monitoraggio delle cifre è completo.
+-   Le funzioni di controllo delle chiamate, ad esempio [**TSPI \_ LineHold**](/windows/win32/api/tspi/nf-tspi-tspi_linehold) e [**TSPI \_ lineSetupTransfer**](/windows/win32/api/tspi/nf-tspi-tspi_linesetuptransfer), ma non [**TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_linemakecall)lineMakeCall, restituiscono esito positivo al termine dell'operazione. Negli ambienti di telefonia che non forniscono un riconoscimento positivo di queste funzioni, il provider di servizi è forzato a prendere una decisione ottimale in merito all'esito positivo o negativo della funzione.
+-   L'implementazione di [**TSPI \_ lineMakeCall**](/windows/win32/api/tspi/nf-tspi-tspi_linemakecall) di un provider di servizi deve restituire esito positivo non più tardi rispetto a quando la chiamata entra nello stato della chiamata *continua* . Idealmente, il provider indica la riuscita appena possibile, ad esempio quando la chiamata entra nello stato della chiamata *Dialtone* (se applicabile). Quando viene restituito l'ESITo positivo dell'applicazione, i messaggi della [**riga \_ CALLSTATE**](/previous-versions/windows/desktop/legacy/ms725219(v=vs.85)) indicano al chiamante lo stato di avanzamento della chiamata. I provider di servizi che ritardano la restituzione dell'indicazione di esito positivo **TSPI \_ lineMakeCall** , ad esempio, fino al completamento della composizione, limitano notevolmente la flessibilità a livello di applicazione. Il ritardo nella restituzione di ESITo positivo in **TSPI \_ lineMakeCall** impedisce a un utente di annullare la richiesta di installazione delle chiamate in corso fino al completamento della connessione e tutte le cifre vengono inviate al Commuter.
+
+ 
+
+ 
