@@ -1,0 +1,56 @@
+---
+title: Metodi ID2D1DeviceContext CreateBitmapFromDxgiSurface (D2d1 \_ 1. h)
+description: Crea una bitmap da una superficie DXGI che può essere impostata come superficie di destinazione o con informazioni aggiuntive sul contesto dei colori specificate.
+ms.assetid: E8C62877-DE26-4819-B9AA-980E473617AD
+keywords:
+- Metodo CreateBitmapFromDxgiSurface Direct2D
+topic_type:
+- apiref
+api_location:
+- d2d1_1.h
+api_type:
+- HeaderDef
+ms.date: 07/02/2019
+ms.topic: reference
+ms.openlocfilehash: a8ecbe415439ebbc859fddaef5ca33ce7552c293
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "106325089"
+---
+# <a name="id2d1devicecontextcreatebitmapfromdxgisurface-methods"></a><span data-ttu-id="f196c-104">Metodi ID2D1DeviceContext:: CreateBitmapFromDxgiSurface</span><span class="sxs-lookup"><span data-stu-id="f196c-104">ID2D1DeviceContext::CreateBitmapFromDxgiSurface methods</span></span>
+
+<span data-ttu-id="f196c-105">Crea una bitmap da una superficie DXGI che può essere impostata come superficie di destinazione o con informazioni aggiuntive sul contesto dei colori specificate.</span><span class="sxs-lookup"><span data-stu-id="f196c-105">Creates a bitmap from a DXGI surface that can be set as a target surface or have additional color context information specified.</span></span>
+
+### <a name="overload-list"></a><span data-ttu-id="f196c-106">Elenco di overload</span><span class="sxs-lookup"><span data-stu-id="f196c-106">Overload list</span></span>
+
+
+
+| <span data-ttu-id="f196c-107">Metodo</span><span class="sxs-lookup"><span data-stu-id="f196c-107">Method</span></span>                                                                                                                                                | <span data-ttu-id="f196c-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="f196c-108">Description</span></span>                                                                                                                                 |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="f196c-109">[**CreateBitmapFromDxgiSurface (IDXGISurface \* , d2d1 \_ bitmap \_ PROPERTIES1, ID2D1Bitmap1 \* \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1__id2d1bitmap1))</span><span class="sxs-lookup"><span data-stu-id="f196c-109">[**CreateBitmapFromDxgiSurface (IDXGISurface\*, D2D1\_BITMAP\_PROPERTIES1, ID2D1Bitmap1\*\*)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1__id2d1bitmap1))</span></span>  | <span data-ttu-id="f196c-110">Crea una bitmap da una superficie DXGI che può essere impostata come superficie di destinazione o con informazioni aggiuntive sul contesto dei colori specificate.</span><span class="sxs-lookup"><span data-stu-id="f196c-110">Creates a bitmap from a DXGI surface that can be set as a target surface or have additional color context information specified.</span></span><br/> |
+| <span data-ttu-id="f196c-111">[**CreateBitmapFromDxgiSurface (IDXGISurface \* , d2d1 \_ bitmap \_ PROPERTIES1 \* , ID2D1Bitmap1 \* \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1))</span><span class="sxs-lookup"><span data-stu-id="f196c-111">[**CreateBitmapFromDxgiSurface (IDXGISurface\*, D2D1\_BITMAP\_PROPERTIES1\*, ID2D1Bitmap1\*\*)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1))</span></span> | <span data-ttu-id="f196c-112">Crea una bitmap da una superficie DXGI che può essere impostata come superficie di destinazione o con informazioni aggiuntive sul contesto dei colori specificate.</span><span class="sxs-lookup"><span data-stu-id="f196c-112">Creates a bitmap from a DXGI surface that can be set as a target surface or have additional color context information specified.</span></span><br/> |
+
+
+
+## <a name="requirements"></a><span data-ttu-id="f196c-113">Requisiti</span><span class="sxs-lookup"><span data-stu-id="f196c-113">Requirements</span></span>
+
+
+
+| <span data-ttu-id="f196c-114">Requisito</span><span class="sxs-lookup"><span data-stu-id="f196c-114">Requirement</span></span> | <span data-ttu-id="f196c-115">Valore</span><span class="sxs-lookup"><span data-stu-id="f196c-115">Value</span></span> |
+|-------------------|--------------------------------------------------------------------------------------|
+| <span data-ttu-id="f196c-116">Intestazione</span><span class="sxs-lookup"><span data-stu-id="f196c-116">Header</span></span><br/> | <dl> <span data-ttu-id="f196c-117"><dt>D2d1 \_ 1. h</dt></span><span class="sxs-lookup"><span data-stu-id="f196c-117"><dt>D2d1\_1.h</dt></span></span> </dl> |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="f196c-118">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="f196c-118">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="f196c-119">**ID2D1DeviceContext**</span><span class="sxs-lookup"><span data-stu-id="f196c-119">**ID2D1DeviceContext**</span></span>](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext)
+</dt> </dl>
+
+<span data-ttu-id="f196c-120">�</span><span class="sxs-lookup"><span data-stu-id="f196c-120">�</span></span>
+
+<span data-ttu-id="f196c-121">�</span><span class="sxs-lookup"><span data-stu-id="f196c-121">�</span></span>
