@@ -1,0 +1,184 @@
+---
+description: Per migliorare la sicurezza del processo host del provider condiviso Strumentazione gestione Windows (WMI) (wmiprvse.exe), sono state apportate modifiche alle piattaforme Windows che proteggono il processo host del provider con un ID di sicurezza (SID) del servizio.
+ms.assetid: f93ac155-512c-4efa-8168-ca2d56fe6f01
+ms.tgt_platform: multiple
+title: Chiavi e valori del registro di sistema per il controllo della sicurezza del provider
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 5a2c7dd990c1a9ebbc1242af5ce4601ce6eb22a1
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106318538"
+---
+# <a name="registry-keys-and-values-for-controlling-provider-security"></a>Chiavi e valori del registro di sistema per il controllo della sicurezza del provider
+
+Per migliorare la sicurezza del processo host del provider condiviso Strumentazione gestione Windows (WMI) (wmiprvse.exe), sono state apportate modifiche alle piattaforme Windows che proteggono il processo host del provider con un [*ID di sicurezza (SID) del servizio*](gloss-s.md). Queste modifiche introducono le seguenti modalità di esecuzione per l'host condiviso WMI: protetto e compatibile.
+
+In questo argomento vengono descritte le sezioni seguenti:
+
+-   [Modalità sicure e compatibili](#secure-and-compatible-modes)
+-   [Chiavi e valori del registro di sistema](#registry-keys-and-values)
+-   [Configurazione di un provider per l'esecuzione in modalità protetta o compatibile](#configuring-a-provider-to-run-in-secure-or-compatible-mode)
+
+## <a name="secure-and-compatible-modes"></a>Modalità sicure e compatibili
+
+A partire da Windows 7, sono state aggiunte le due modalità di esecuzione seguenti per il processo host condiviso WMI:
+
+<dl> <dt>
+
+<span id="Secure_mode"></span><span id="secure_mode"></span><span id="SECURE_MODE"></span>Modalità protetta
+</dt> <dd>
+
+Le risorse del processo host del provider WMI sono protette con un [*SID del servizio*](gloss-s.md). Solo il *SID del servizio* dispone delle autorizzazioni per queste risorse.
+
+</dd> <dt>
+
+<span id="Compatible_mode"></span><span id="compatible_mode"></span><span id="COMPATIBLE_MODE"></span>Modalità compatibile
+</dt> <dd>
+
+Il processo host del provider condiviso WMI non è protetto con un [*SID del servizio*](gloss-s.md). Il processo host del provider consente l'accesso agli account NetworkService o LocalService, a seconda del modello di hosting. Per ulteriori informazioni sui modelli di hosting, vedere [hosting e sicurezza del provider](provider-hosting-and-security.md).
+
+</dd> </dl>
+
+**Windows Vista e Windows Server 2008:** Per accedere alle chiavi e ai valori del registro di sistema per il controllo di modalità sicure e compatibili per il processo host del provider, è necessario installare l'aggiornamento della sicurezza in [KB 959454](https://support.microsoft.com/kb/959454). Per ulteriori informazioni, vedere [Microsoft Security Bulletin MS09-012](https://www.microsoft.com/technet/security/bulletin/ms09-012.mspx).
+
+## <a name="registry-keys-and-values"></a>Chiavi e valori del registro di sistema
+
+Le impostazioni della modalità protetta e compatibile vengono specificate tramite le chiavi del registro di sistema. Le chiavi del registro di sistema per WMI si trovano nel registro di sistema **HKEY \_ Local \_ Machine** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ .
+
+Le seguenti chiavi del registro di sistema e il valore **DWORD** descritti nell'elenco seguente sono stati aggiunti per controllare il comportamento dei provider WMI.
+
+<dl> <dt>
+
+<span id="SecuredHostProviders"></span><span id="securedhostproviders"></span><span id="SECUREDHOSTPROVIDERS"></span>**SecuredHostProviders**
+</dt> <dd>
+
+Questa chiave controlla il comportamento dei singoli provider. Tutti i provider elencati in questa chiave vengono sempre eseguiti in modalità protetta. Tutti i provider della posta in arrivo forniti con Windows sono elencati sotto questa chiave e vengono eseguiti in modalità protetta per impostazione predefinita.
+
+Questa chiave ha la precedenza sui provider elencati nella chiave **CompatibleHostProviders** .
+
+</dd> <dt>
+
+<span id="CompatibleHostProviders"></span><span id="compatiblehostproviders"></span><span id="COMPATIBLEHOSTPROVIDERS"></span>**CompatibleHostProviders**
+</dt> <dd>
+
+Questa chiave controlla il comportamento dei singoli provider. Tutti i provider elencati in questa chiave vengono sempre eseguiti in modalità compatibile. Questa chiave è vuota per impostazione predefinita.
+
+Se un provider è elencato sia nella chiave **SecuredHostProviders** che nella chiave **CompatibleHostProviders** , il provider viene eseguito in modalità protetta.
+
+> [!Note]  
+> La chiave **CompatibleHostProviders** fornisce la compatibilità delle applicazioni di terze parti se la chiave **DefaultSecuredHost** è impostata su 1 e il provider non funziona in modalità protetta.
+
+ 
+
+</dd> <dt>
+
+<span id="DefaultSecuredHost"></span><span id="defaultsecuredhost"></span><span id="DEFAULTSECUREDHOST"></span>**DefaultSecuredHost**
+</dt> <dd>
+
+Valore **DWORD** del registro di sistema globale che determina se tutti i provider, che non sono elencati nelle chiavi **SecuredHostProviders** o **CompatibleHostProviders** , vengono eseguiti in modalità protetta o compatibile. Questo valore **DWORD** consente all'amministratore di decidere in quale modalità deve essere eseguito un provider di terze parti. Per impostazione predefinita, questo valore è impostato su zero e tutti i provider di terze parti vengono eseguiti in modalità compatibile. Per impostazione predefinita, gli amministratori possono rendere il computer più sicuro impostando il valore **DefaultSecuredHost** su 1.
+
+> [!Note]  
+> Il valore **DefaultSecuredHost** non influisce sulle altre chiavi del registro di sistema. I provider elencati nella chiave **SecuredHostProviders** rimangono in modalità protetta e quelli elencati nella chiave **CompatibleHostProviders** rimangono in modalità compatibile.
+
+ 
+
+Sono possibili le impostazioni seguenti:
+
+<dl> <dt>
+
+<span id="0"></span>0
+</dt> <dd>
+
+Specifica che i provider vengono eseguiti in modalità compatibile.
+
+</dd> <dt>
+
+<span id="1"></span>1
+</dt> <dd>
+
+Specifica che i provider vengono eseguiti in modalità protetta.
+
+</dd> </dl> </dd> </dl>
+
+Nell'elenco seguente sono elencate le possibili impostazioni del registro di sistema e le modalità di esecuzione associate per un provider.
+
+
+
+| Elencato in SecuredHostProviders | Elencato in CompatibleHostProviders | Impostazione DefaultSecuredHost | Modalità       |
+|-----------------------------------|--------------------------------------|----------------------------|------------|
+| No                                | No                                   | 0                          | Compatibile |
+| No                                | Sì                                  | 0                          | Compatibile |
+| Sì                               | No                                   | 0                          | Protezione     |
+| Sì                               | Sì                                  | 0                          | Protezione     |
+| No                                | No                                   | 1                          | Protezione     |
+| No                                | Sì                                  | 1                          | Compatibile |
+| Sì                               | No                                   | 1                          | Protezione     |
+| Sì                               | Sì                                  | 1                          | Protezione     |
+
+
+
+ 
+
+## <a name="configuring-a-provider-to-run-in-secure-or-compatible-mode"></a>Configurazione di un provider per l'esecuzione in modalità protetta o compatibile
+
+Le chiavi del registro di sistema possono essere modificate utilizzando la Console Gestione Criteri di gruppo (GPMC). Per ulteriori informazioni, vedere [console Gestione criteri di gruppo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal).
+
+Nelle procedure riportate di seguito viene illustrato come gestire le impostazioni della modalità protetta e compatibile utilizzando le preferenze di criteri di gruppo. Per ulteriori informazioni sulle preferenze di criteri di gruppo, vedere la [Panoramica sulle preferenze di criteri di gruppo](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn581922(v=ws.11)).
+
+**Per aggiungere un provider alla modalità protetta o compatibile utilizzando Criteri di gruppo**
+
+1.  Aprire Console Gestione Criteri di gruppo (GPMC).
+2.  Creare un oggetto Criteri di gruppo (GPO).
+3.  Modificare l'oggetto Criteri di gruppo.
+4.  Passare a Preferenze/impostazioni di Windows/Registro di sistema.
+5.  Fare clic con il pulsante destro del mouse e scegliere **nuovo... Registro di sistema**. Questa azione presenta un'interfaccia utente in cui è possibile immettere le informazioni del registro di sistema.
+6.  Selezionare il comando **Crea** .
+7.  Selezionare il percorso della chiave del registro di sistema seguente:
+
+    **Modalità protetta: HKEY \_ SOFTWARE del \_ computer locale** \\  \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **SecuredHostProviders**
+
+    **Modalità compatibile: HKEY \_ SOFTWARE del \_ computer locale** \\  \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **CompatibleHostProviders**
+
+8.  Nel campo **nome** immettere il nome del provider che si desidera aggiungere a questa chiave. Il nome del provider deve essere nel formato seguente: <namespace> : <\_ \_ RelPath>. Ad esempio, root \\ CIMV2: \_ \_ Win32Provider. Name = "fornisco".
+9.  Nel campo **dati** immettere 0.
+10. Fare clic su OK.
+
+**Per rimuovere un provider dalla modalità protetta o compatibile utilizzando Criteri di gruppo**
+
+1.  Aprire Console Gestione Criteri di gruppo (GPMC).
+2.  Creare un oggetto Criteri di gruppo.
+3.  Modificare l'oggetto Criteri di gruppo.
+4.  Passare a Preferenze/impostazioni di Windows/Registro di sistema.
+5.  Fare clic con il pulsante destro del mouse e scegliere **nuovo... Registro di sistema**. Questa azione presenta un'interfaccia utente in cui è possibile immettere le informazioni del registro di sistema.
+6.  Selezionare il comando **Rimuovi** .
+7.  Selezionare il percorso della chiave del registro di sistema seguente:
+
+    **Modalità protetta: HKEY \_ SOFTWARE del \_ computer locale** \\  \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **SecuredHostProviders**
+
+    **Modalità compatibile: HKEY \_ SOFTWARE del \_ computer locale** \\  \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **CompatibleHostProviders**
+
+8.  Nel campo **nome** immettere il nome del provider che si desidera rimuovere da questa chiave.
+9.  Nel campo **dati** immettere 0.
+10. Fare clic su OK.
+
+Nella procedura riportata di seguito vengono fornite informazioni dettagliate su come modificare il comportamento dei provider non elencati nelle chiavi **SecuredHostProviders** o **CompatibleHostProviders** .
+
+**Per modificare il valore predefinito della chiave DefaultSecuredHost usando Criteri di gruppo**
+
+1.  Aprire Console Gestione Criteri di gruppo (GPMC).
+2.  Creare un oggetto Criteri di gruppo.
+3.  Modificare l'oggetto Criteri di gruppo.
+4.  Passare a Preferenze/impostazioni di Windows/Registro di sistema.
+5.  Fare clic con il pulsante destro del mouse e scegliere **nuovo... Registro di sistema**. Questa azione presenta un'interfaccia utente in cui è possibile immettere le informazioni del registro di sistema.
+6.  Selezionare il comando **Aggiorna** .
+7.  Selezionare il percorso della chiave del registro di sistema seguente: **HKEY \_ Local \_ Machine** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM**.
+8.  Nel campo **nome** immettere **DefaultSecuredHost**.
+9.  Nel campo **dati** immettere 0 per modalità compatibile o 1 per modalità protetta.
+10. Fare clic su OK.
+
+ 
+
+ 
