@@ -1,0 +1,36 @@
+---
+description: Un set di seguito specifica i protocolli che seguono un protocollo. Network Monitor utilizza un set di seguito quando il parser non è in grado di identificare il protocollo successivo tra i dati in un'istanza del protocollo.
+ms.assetid: 9e73c724-a540-42f8-b273-4f02c39d81c4
+title: Specifica di un set di seguito
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9b9e36268be82d2fed7c3d0c56a078e41dff1733
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106307821"
+---
+# <a name="specifying-a-follow-set"></a><span data-ttu-id="4eb84-104">Specifica di un set di seguito</span><span class="sxs-lookup"><span data-stu-id="4eb84-104">Specifying a Follow Set</span></span>
+
+<span data-ttu-id="4eb84-105">Un set di seguito specifica i protocolli che seguono un protocollo.</span><span class="sxs-lookup"><span data-stu-id="4eb84-105">A follow set specifies the protocols that follow a protocol.</span></span> <span data-ttu-id="4eb84-106">Network Monitor utilizza un set di seguito quando il parser non è in grado di identificare il protocollo successivo tra i dati in un'istanza del protocollo.</span><span class="sxs-lookup"><span data-stu-id="4eb84-106">Network Monitor uses a follow set when the parser cannot identify the next protocol from the data in a protocol instance.</span></span>
+
+<span data-ttu-id="4eb84-107">Il parser NetBIOS, ad esempio, specifica un set di seguito poiché i dati nel protocollo NetBIOS non identificano il protocollo successivo.</span><span class="sxs-lookup"><span data-stu-id="4eb84-107">For example, the NetBIOS parser specifies a follow set because the data in the NetBIOS protocol does not identify which protocol is next.</span></span> <span data-ttu-id="4eb84-108">Di conseguenza, il parser NetBIOS deve creare un set di tutti i protocolli che può seguire.</span><span class="sxs-lookup"><span data-stu-id="4eb84-108">As a result the NetBIOS parser must create a follow set of all the protocols that may follow.</span></span>
+
+<span data-ttu-id="4eb84-109">Nell'esempio di codice seguente viene identificato il set NetBIOS follow nel file di [*Parser.ini*](p.md) .</span><span class="sxs-lookup"><span data-stu-id="4eb84-109">The following code example identifies the NetBIOS follow set in the [*Parser.ini*](p.md) file.</span></span> <span data-ttu-id="4eb84-110">Il set seguente contiene i protocolli Server Message Block (SMB) e Microsoft Remote Procedure Call (MSRPC).</span><span class="sxs-lookup"><span data-stu-id="4eb84-110">The follow set contains server message block (SMB), and Microsoft remote procedure call (MSRPC) protocols.</span></span> <span data-ttu-id="4eb84-111">Questi sono gli unici protocolli che possono seguire un'istanza del protocollo NetBIOS.</span><span class="sxs-lookup"><span data-stu-id="4eb84-111">These are the only protocols that can follow an instance of the NetBIOS protocol.</span></span>
+
+``` syntax
+[NETBIOS]
+   Comment    = "Network Basic Input/Output System protocol"
+   FollowSet  = SMB, MSRPC
+   HelpFile   =
+```
+
+<span data-ttu-id="4eb84-112">Un parser specifica un set di seguito durante l'implementazione della funzione [**ParserAutoInstallInfo**](parserautoinstallinfo.md) .</span><span class="sxs-lookup"><span data-stu-id="4eb84-112">A parser specifies a follow set during the implementation of the [**ParserAutoInstallInfo**](parserautoinstallinfo.md) function.</span></span> <span data-ttu-id="4eb84-113">Un parser può specificare quali protocolli precedono e quali protocolli seguono.</span><span class="sxs-lookup"><span data-stu-id="4eb84-113">A parser can specify which protocols precede, and which protocols follow.</span></span> <span data-ttu-id="4eb84-114">Quando un parser specifica i protocolli precedenti, Network Monitor aggiunge il protocollo del parser ai set seguenti dei protocolli specificati.</span><span class="sxs-lookup"><span data-stu-id="4eb84-114">When a parser specifies the protocols that precede, Network Monitor adds the parser protocol to the follow sets of the specified protocols.</span></span> <span data-ttu-id="4eb84-115">Quando un parser specifica i protocolli che seguono, Network Monitor crea una nuova sezione nel file Parser.ini che include il set di seguito del parser.</span><span class="sxs-lookup"><span data-stu-id="4eb84-115">When a parser specifies the protocols that follow, Network Monitor creates a new section in the Parser.ini file that includes the follow set of the parser.</span></span>
+
+ 
+
+ 
+
+
+
