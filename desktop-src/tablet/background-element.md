@@ -1,0 +1,97 @@
+---
+description: Contiene lo sfondo per un elemento JournalDocument o JournalPage.
+ms.assetid: 48527c4e-50fb-4800-ac87-1646234783ba
+title: Elemento background
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: e58a836c7cfd13130779c1cd6b017105bcaa6321
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106315573"
+---
+# <a name="background-element"></a>Elemento background
+
+Contiene lo sfondo per un elemento [**JournalDocument**](journaldocument-element.md) o [**JournalPage**](journalpage-element.md) .
+
+## <a name="definition"></a>Definizione
+
+``` syntax
+<xs:element name="Background" type="BackgroundType" minOccurs="0" />
+```
+
+## <a name="parent-elements"></a>Elementi padre
+
+[**Cancelleria**](stationery-element.md)
+
+## <a name="child-elements"></a>Elementi figlio
+
+[**Immagine**](image-element.md)
+
+## <a name="attributes"></a>Attributi
+
+
+
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attributo</th>
+<th>Type</th>
+<th>Obbligatoria</th>
+<th>Descrizione</th>
+<th>Valori possibili</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Style</strong></td>
+<td><strong>xs:string</strong></td>
+<td>Necessario</td>
+<td>Specifica lo stile dello sfondo.</td>
+<td><ul>
+<li>nessuno</li>
+<li>Tinta unita</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Colore</strong></td>
+<td>SimpleType <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
+<td>Facoltativo</td>
+<td>Specifica il colore dello sfondo.</td>
+<td>Vedere <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+ 
+
+## <a name="element-information"></a>Informazioni sull'elemento
+
+
+
+|              |                                                                   |
+|--------------|-------------------------------------------------------------------|
+| Tipo di elemento | ComplexType [**BackgroundType**](backgroundtype-complex-type.md) |
+| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                        |
+| Nome schema  | Lettore Journal                                                    |
+
+
+
+ 
+
+ 
+
+ 
+
+
+
