@@ -1,0 +1,89 @@
+---
+description: Imposta la proprietà LineHeight sull'oggetto InkDivider.
+ms.assetid: ce5e40c5-faa1-4d66-94f4-d5bd1a11ee4c
+title: SetLineHeight (funzione)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- SetLineHeight
+api_type:
+- LibDef
+api_location:
+- InkDiv.dll
+- InkDiv.dll.dll
+ms.openlocfilehash: be4045e01ac890471536d95768668b633d8f2249
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106314902"
+---
+# <a name="setlineheight-function"></a>SetLineHeight (funzione)
+
+Imposta la proprietà [**LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight) sull'oggetto [**InkDivider**](inkdivider-class.md) .
+
+Questa funzione helper non è progettata per essere utilizzata dal codice dell'applicazione.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+HRESULT WINAPI SetLineHeight(
+  _In_ INT_PTR hDivider,
+  _In_ LONG    lLineHeight
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*hDivider* \[ in\]
+</dt> <dd>
+
+Handle per l'oggetto [**InkDivider**](inkdivider-class.md) .
+
+</dd> <dt>
+
+*lLineHeight* \[ in\]
+</dt> <dd>
+
+Proprietà [**LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight) dell'oggetto [**InkDivider**](inkdivider-class.md) , in unità HIMETRIC.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Questa funzione può restituire uno di questi valori.
+
+
+
+| Codice restituito                                                                                  | Descrizione                                     |
+|----------------------------------------------------------------------------------------------|-------------------------------------------------|
+| <dl> <dt>**\_OK**</dt> </dl>         | Funzione completata.<br/>              |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *pDivider* non è valido.<br/> |
+
+
+
+ 
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|---------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                         |
+| Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
+| Libreria<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
+
+
+
+ 
+
+ 
