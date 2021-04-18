@@ -1,0 +1,99 @@
+---
+title: funzione glIndexi (GL. h)
+description: La funzione glIndexi imposta l'indice dei colori corrente.
+ms.assetid: c57d2316-4081-40d8-af50-ae0299597803
+keywords:
+- funzione glIndexi OpenGL
+topic_type:
+- apiref
+api_name:
+- glIndexi
+api_location:
+- opengl32.dll
+api_type:
+- DllExport
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 9e6b40d8d0d96aac17c852fb266b23dec23d26c2
+ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "106301262"
+---
+# <a name="glindexi-function"></a>glIndexi (funzione)
+
+La funzione **glIndexi** imposta l'indice dei colori corrente.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+void WINAPI glIndexi(
+   GLint c
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*c* 
+</dt> <dd>
+
+Nuovo valore per l'indice dei colori corrente.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Questa funzione non restituisce un valore.
+
+## <a name="remarks"></a>Commenti
+
+La funzione **glIndexi** aggiorna l'indice dei colori corrente (a valore singolo). Accetta un solo argomento: il nuovo valore per l'indice dei colori corrente.
+
+L'indice corrente viene archiviato come valore a virgola mobile. I valori integer vengono convertiti direttamente in valori a virgola mobile, senza mapping speciale.
+
+I valori di indice al di fuori dell'intervallo rappresentabile del buffer dell'indice colori non vengono bloccati. Tuttavia, prima che un indice sia reindirizzato (se abilitato) e scritto nel framebuffer, viene convertito nel formato a virgola fissa. Eventuali bit nella parte intera del valore a virgola fissa risultante che non corrispondono a BITS nel framebuffer vengono mascherati.
+
+L'indice corrente può essere aggiornato in qualsiasi momento. In particolare, è possibile chiamare **glIndexi** tra una chiamata a [**glBegin**](/windows/desktop/OpenGL/glbegin) e la chiamata corrispondente a [**glEnd**](glend.md).
+
+La funzione seguente recupera le informazioni correlate a **glIndexi**:
+
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Current \_ index
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
+| Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**glBegin**](glbegin.md)
+</dt> <dt>
+
+[**glColor**](glcolor-functions.md)
+</dt> <dt>
+
+[**Remo**](glend.md)
+</dt> <dt>
+
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)
+</dt> </dl>
+
+ 
+
