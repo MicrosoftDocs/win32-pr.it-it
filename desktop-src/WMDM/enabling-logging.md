@@ -1,0 +1,52 @@
+---
+title: Abilitazione della registrazione
+description: Abilitazione della registrazione
+ms.assetid: 50fc1d71-b650-4ba5-a6e1-631c0b9fe8ad
+keywords:
+- Windows Media Gestione dispositivi, registrazione
+- Gestione dispositivi, registrazione
+- applicazioni desktop, registrazione
+- provider di servizi, registrazione
+- Guida per programmatori, registrazione
+- registrazione
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a6e95be13e93a5a58bb728d5600c6fdea9801ec2
+ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "106298042"
+---
+# <a name="enabling-logging"></a>Abilitazione della registrazione
+
+Windows Media Gestione dispositivi fornisce un oggetto di registrazione che consente di salvare le informazioni in un file di testo in fase di esecuzione. Gli sviluppatori di applicazioni e provider di servizi possono utilizzare questo oggetto per archiviare i messaggi in un file di log durante l'esecuzione dell'applicazione o del provider di servizi. Questo oggetto è particolarmente utile quando si gestiscono file protetti da DRM, perché Windows Media Gestione dispositivi non consente di aggiungere un debugger a un processo che gestisce file protetti da DRM.
+
+Il logger è un oggetto COM con ID di classe CLSID \_ WMDMLogger che espone un'interfaccia, [**IWMDMLogger**](/windows/desktop/api/wmdmlog/nn-wmdmlog-iwmdmlogger). Per i componenti non è necessario un certificato per l'utilizzo dell'oggetto di registrazione.
+
+Per impostazione predefinita, Windows Media Gestione dispositivi gestisce un file di log, indipendentemente dal fatto che un'applicazione usi **IWMDMLogger**. Questo file di log è un semplice file di testo e ogni voce include una voce preceduta da un timestamp nel formato ad aaaammgghhmmss, che usa l'ora locale di 24 ore. Windows Media Gestione dispositivi registra tutte le chiamate API, insieme a tutte le voci aggiunte chiamando messaggi **IWMDMLogger** . Tutte le voci del file di log vengono accodate al file fino a quando non viene chiamato [**Reset**](/windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-reset) oppure il file supera le dimensioni massime. Il file viene chiuso automaticamente dopo ogni operazione di registrazione. Lo stesso file di log viene utilizzato per le voci dell'applicazione e di sistema.
+
+Nei passaggi seguenti viene illustrato come utilizzare l'oggetto di registrazione:
+
+1.  Includere wmdmlog. h nel progetto.
+2.  Creare un oggetto di registrazione chiamando **CoCreateInstance**(CLSID \_ WMDMLogger) e richiedendo l'interfaccia **IWMDMLogger** . Assegnare il puntatore di interfaccia a una variabile globale.
+3.  Verificare che la registrazione sia abilitata chiamando [**IWMDMLogger:: IsEnabled**](/windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-isenabled); in caso contrario, abilitarla chiamando [**IWMDMLogger:: Enable**](/windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-enable).
+4.  Specificare il nome e le dimensioni di un file di log personalizzato. Questa operazione viene eseguita chiamando [**IWMDMLogger:: Filelogfilename**](/windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-setlogfilename) e [**IWMDMLogger:: SetSizeParams**](/windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-setsizeparams).
+5.  In corrispondenza dei punti nel codice in cui si vuole inserire una voce nel log, chiamare [**IWMDMLogger:: LogDword**](/windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-logdword) per registrare stringhe contenenti variabili (questo metodo è simile a **wsprintf** nel modo in cui consente di formattare una stringa contenente un valore di variabile) o chiamare [**IWMDMLogger:: LogString**](/windows/desktop/api/wmdmlog/nf-wmdmlog-iwmdmlogger-logstring) per registrare stringhe costanti.
+
+Per un esempio di codice, vedere le pagine di riferimento per i metodi di [**IWMDMLogger**](/windows/desktop/api/wmdmlog/nn-wmdmlog-iwmdmlogger).
+
+## <a name="related-topics"></a>Argomenti correlati
+
+<dl> <dt>
+
+[**Attività comuni per le applicazioni e i provider di servizi**](tasks-common-to-applications-and-service-providers.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
