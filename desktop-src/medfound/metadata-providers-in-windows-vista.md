@@ -1,0 +1,116 @@
+---
+description: In Windows Vista Microsoft Media Foundation espone i metadati tramite l'interfaccia IMFMetadata.
+ms.assetid: a26e40c2-1717-4a13-8bf0-e41376a8d317
+title: Provider di metadati in Windows Vista
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: a1726e04058a7b15e387fca4f3faa94fce7c91c5
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106307990"
+---
+# <a name="metadata-providers-in-windows-vista"></a>Provider di metadati in Windows Vista
+
+In Windows Vista Microsoft Media Foundation espone i metadati tramite l'interfaccia [**IMFMetadata**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) .
+
+## <a name="reading-metadata"></a>Lettura dei metadati
+
+Per leggere i metadati da un'origine multimediale, seguire questa procedura:
+
+1.  Ottenere un puntatore all'interfaccia [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) dell'origine multimediale. Per ottenere un puntatore **IMFMediaSource** è possibile usare l'interfaccia [**IMFSourceResolver**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceresolver) .
+2.  Chiamare [**IMFMediaSource:: CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor) per ottenere il descrittore di presentazione dell'origine multimediale.
+3.  Chiamare [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) sull'origine multimediale per ottenere un puntatore all'interfaccia [**IMFMetadataProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadataprovider) . Nel parametro *guidService* di **MFGetService** specificare il valore **MF \_ Metadata \_ provider \_ Service**. Se l'origine non supporta l'interfaccia **IMFMetadataProvider** , **MFGetService** restituisce il **\_ servizio MF E non \_ supportato \_**.
+4.  Chiamare [**IMFMetadataProvider:: GetMFMetadata**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadataprovider-getmfmetadata) e passare un puntatore al descrittore di presentazione. Questo metodo restituisce un puntatore all'interfaccia [**IMFMetadata**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) .
+    -   Per ottenere prima i metadati a livello di flusso, chiamare [**IMFStreamDescriptor:: GetStreamIdentifier**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamdescriptor-getstreamidentifier) per ottenere l'identificatore del flusso. Passare quindi l'identificatore del flusso nel parametro *dwStreamIdentifier* di [**GetMFMetadata**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadataprovider-getmfmetadata).
+    -   Per ottenere i metadati a livello di presentazione, impostare *dwStreamIdentifier* su zero.
+5.  \[Chiamata facoltativa \] [**IMFMetadata:: GetAllLanguages**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getalllanguages) per ottenere un elenco delle lingue in cui sono disponibili i metadati. Le lingue vengono identificate usando i tag di linguaggio conformi a RFC 1766.
+6.  \[\]Per selezionare la lingua, chiamare [**IMFMetadata:: tolanguage**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-setlanguage) .
+7.  \[Chiamata facoltativa \] [**IMFMetadata:: GetAllPropertyNames**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getallpropertynames) per ottenere un elenco dei nomi di tutte le proprietà dei metadati per il flusso o la presentazione.
+8.  Chiamare [**IMFMetadata:: GetProperty**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getproperty) per ottenere un valore specifico della proprietà dei metadati, passando il nome della proprietà.
+
+Il codice seguente illustra i passaggi da 2 a 4:
+
+
+```C++
+HRESULT GetMetadata(
+    IMFMediaSource *pSource, IMFMetadata **ppMetadata, DWORD dwStream = 0)
+{
+    IMFPresentationDescriptor *pPD = NULL;
+    IMFMetadataProvider *pProvider = NULL;
+
+    HRESULT hr = pSource->CreatePresentationDescriptor(&pPD);
+    if (FAILED(hr))
+    {
+        goto done;
+    }
+
+    hr = MFGetService(
+        pSource, MF_METADATA_PROVIDER_SERVICE, IID_PPV_ARGS(&pProvider));
+
+    if (FAILED(hr))
+    {
+        goto done;
+    }
+
+    hr = pProvider->GetMFMetadata(pPD, dwStream, 0, ppMetadata);
+
+done:
+    SafeRelease(&pPD);
+    SafeRelease(&pProvider);
+    return hr;
+}
+```
+
+
+
+Il codice seguente illustra i passaggi da 7 a 8. Si supponga che `DisplayProperty` sia una funzione che visualizza un valore **PROPVARIANT** .
+
+
+```C++
+HRESULT DisplayMetadata(IMFMetadata *pMetadata)
+{
+    PROPVARIANT varNames;
+    HRESULT hr = pMetadata->GetAllPropertyNames(&varNames);
+    if (FAILED(hr))
+    {
+        return hr;
+    }
+
+    for (ULONG i = 0; i < varNames.calpwstr.cElems; i++)
+    {
+        wprintf(L"%s\n", varNames.calpwstr.pElems[i]);
+
+        PROPVARIANT varValue;
+        hr = pMetadata->GetProperty( varNames.calpwstr.pElems[i], &varValue );
+        if (SUCCEEDED(hr))
+        {
+            DisplayProperty(varValue);
+            PropVariantClear(&varValue);
+        }
+    }
+
+    PropVariantClear(&varNames);
+    return hr;
+}
+```
+
+
+
+## <a name="related-topics"></a>Argomenti correlati
+
+<dl> <dt>
+
+[Metadati del supporto](media-metadata.md)
+</dt> <dt>
+
+[Provider di metadati della shell](shell-metadata-providers.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
