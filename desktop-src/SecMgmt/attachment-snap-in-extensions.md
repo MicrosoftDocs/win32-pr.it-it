@@ -1,0 +1,37 @@
+---
+description: Un'estensione dello snap-in allegato è il componente di un allegato che Visualizza l'interfaccia utente specifica del servizio.
+ms.assetid: 1cafa02f-f240-476c-8ce2-ba088afaf889
+title: Estensioni degli snap-in allegati
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: c55267edcd30f32ad371a4aa276587b4eca06c57
+ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "106321001"
+---
+# <a name="attachment-snap-in-extensions"></a><span data-ttu-id="d390c-103">Estensioni degli snap-in allegati</span><span class="sxs-lookup"><span data-stu-id="d390c-103">Attachment Snap-in Extensions</span></span>
+
+<span data-ttu-id="d390c-104">Un'estensione dello snap-in allegato è il componente di un allegato che Visualizza l'interfaccia utente specifica del servizio.</span><span class="sxs-lookup"><span data-stu-id="d390c-104">An attachment snap-in extension is the component of an attachment that displays the service-specific user interface.</span></span> <span data-ttu-id="d390c-105">L'estensione dello snap-in è ospitata dagli snap-in Configurazione sicurezza. La comunicazione tra l'estensione degli allegati e il relativo host di snap-in viene gestita dai meccanismi standard di MMC descritti nella documentazione di [Microsoft Management Console](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) .</span><span class="sxs-lookup"><span data-stu-id="d390c-105">The snap-in extension is hosted by the Security Configuration snap-ins. The communication between the attachment extension and its snap-in host is handled by the standard MMC mechanisms described in the [Microsoft Management Console](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) documentation.</span></span>
+
+<span data-ttu-id="d390c-106">Oltre alle interfacce che l'estensione dello snap-in deve supportare per essere un'estensione dello snap-in MMC, un'estensione dello snap-in di allegati deve supportare anche l'interfaccia COM, [**ISceSvcAttachmentPersistInfo**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo).</span><span class="sxs-lookup"><span data-stu-id="d390c-106">In addition to the interfaces that the snap-in extension must support in order to be an MMC snap-in extension, an attachment snap-in extension must also support the COM interface, [**ISceSvcAttachmentPersistInfo**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo).</span></span> <span data-ttu-id="d390c-107">Questa interfaccia implementa metodi che indicano se sono presenti dati specifici del servizio che devono essere salvati nel database di sicurezza e, in tal caso, recuperare e salvare questi nuovi dati.</span><span class="sxs-lookup"><span data-stu-id="d390c-107">This interface implements methods that indicate whether there is service-specific data that should be saved to the security database, and if so, retrieve and save this new data.</span></span> <span data-ttu-id="d390c-108">Gli snap-in configurazione di sicurezza chiamano i metodi di questa interfaccia regolarmente per aggiornare il database di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="d390c-108">The Security Configuration snap-ins call methods of this interface regularly in order to update the security database.</span></span>
+
+<span data-ttu-id="d390c-109">Gli snap-in configurazione di sicurezza implementano un'interfaccia, [**ISceSvcAttachmentData**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentdata), che fornisce i metodi per recuperare i dati specifici del servizio dal database di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="d390c-109">The Security Configuration snap-ins implement an interface, [**ISceSvcAttachmentData**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentdata), that provides methods to retrieve service-specific data from the security database.</span></span> <span data-ttu-id="d390c-110">Le estensioni degli snap-in allegati possono chiamare metodi di questa interfaccia per recuperare i dati dal database di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="d390c-110">Attachment snap-in extensions can call methods of this interface to retrieve data from the security database.</span></span>
+
+<span data-ttu-id="d390c-111">Questa architettura è illustrata nella figura seguente.</span><span class="sxs-lookup"><span data-stu-id="d390c-111">This architecture is illustrated in the following diagram.</span></span>
+
+![estensioni degli snap-in allegati](images/model2.png)
+
+<span data-ttu-id="d390c-113">Quando si crea un'estensione dello snap-in allegato, è necessario installarla e registrarla con gli snap-in Configurazione sicurezza. A tale scopo, aggiungere chiavi al registro di sistema, come illustrato in [registrazione di un'estensione dello snap-in allegato](registering-an-attachment-snap-in-extension.md).</span><span class="sxs-lookup"><span data-stu-id="d390c-113">When you create an attachment snap-in extension, you must install it and register it with the Security Configuration snap-ins. You do this by adding keys to the registry, as explained in [Registering an Attachment Snap-in Extension](registering-an-attachment-snap-in-extension.md).</span></span> <span data-ttu-id="d390c-114">Quando viene avviato lo snap-in Configurazione sicurezza, viene controllato il registro di sistema e vengono caricate tutte le estensioni di snap-in registrate.</span><span class="sxs-lookup"><span data-stu-id="d390c-114">When a Security Configuration snap-in starts, it checks the registry and loads any registered snap-in extensions.</span></span> <span data-ttu-id="d390c-115">Le estensioni vengono visualizzate come nodi nell'area di sicurezza per ogni servizio nello snap-in Configurazione sicurezza.</span><span class="sxs-lookup"><span data-stu-id="d390c-115">The extensions appear as nodes under the security area for each service in the Security Configuration snap-in.</span></span>
+
+> [!Note]
+> <span data-ttu-id="d390c-116">Un'estensione dello snap-in allegato può estendere solo i nodi dei servizi.</span><span class="sxs-lookup"><span data-stu-id="d390c-116">An attachment snap-in extension can only extend Services nodes.</span></span> <span data-ttu-id="d390c-117">Il nodo servizi è lo snap-in MMC che contiene gli strumenti per amministrare i servizi installati nel sistema.</span><span class="sxs-lookup"><span data-stu-id="d390c-117">The Services node is the MMC snap-in that contains tools to administer services installed on the system.</span></span> <span data-ttu-id="d390c-118">L'estensione dello snap-in allegati viene dichiarata come subordinata a un tipo di nodo dei servizi specifici e quindi, per ogni occorrenza del tipo di nodo servizi, la console MMC aggiunge automaticamente le estensioni dello snap-in correlate.</span><span class="sxs-lookup"><span data-stu-id="d390c-118">The attachment snap-in extension declares itself as being a subordinate to a specific Services node type, and then for each occurrence of that Services node type, the MMC console automatically adds the related snap-in extensions.</span></span>
+> 
+> <span data-ttu-id="d390c-119">Ogni estensione dello snap-in di allegato è proprietaria di un nodo del riquadro ambito e del riquadro dei risultati correlati in MMC.</span><span class="sxs-lookup"><span data-stu-id="d390c-119">Each attachment snap-in extension owns one scope pane node and the related result pane in MMC.</span></span>
+
+ 
+
+ 
+
+ 
