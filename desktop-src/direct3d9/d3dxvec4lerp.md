@@ -1,0 +1,114 @@
+---
+description: Esegue un'interpolazione lineare tra due vettori 4D.
+ms.assetid: a068a626-17cd-4df9-8f41-9b417bfda1d1
+title: Funzione D3DXVec4Lerp (D3dx9math. h)
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- D3DXVec4Lerp
+api_type:
+- LibDef
+api_location:
+- d3dx9.lib
+- d3dx9.dll
+ms.openlocfilehash: 8df6f7b4be5a39335532dc86096f989727230942
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "106322858"
+---
+# <a name="d3dxvec4lerp-function"></a><span data-ttu-id="c7fad-103">D3DXVec4Lerp (funzione)</span><span class="sxs-lookup"><span data-stu-id="c7fad-103">D3DXVec4Lerp function</span></span>
+
+<span data-ttu-id="c7fad-104">Esegue un'interpolazione lineare tra due vettori 4D.</span><span class="sxs-lookup"><span data-stu-id="c7fad-104">Performs a linear interpolation between two 4D vectors.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="c7fad-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="c7fad-105">Syntax</span></span>
+
+
+```C++
+D3DXVECTOR4* D3DXVec4Lerp(
+  _Inout_       D3DXVECTOR4 *pOut,
+  _In_    const D3DXVECTOR4 *pV1,
+  _In_    const D3DXVECTOR4 *pV2,
+  _In_          FLOAT       s
+);
+```
+
+
+
+## <a name="parameters"></a><span data-ttu-id="c7fad-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="c7fad-106">Parameters</span></span>
+
+<dl> <dt>
+
+<span data-ttu-id="c7fad-107">*broncio* \[ in uscita\]</span><span class="sxs-lookup"><span data-stu-id="c7fad-107">*pOut* \[in, out\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="c7fad-108">Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***</span><span class="sxs-lookup"><span data-stu-id="c7fad-108">Type: **[**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="c7fad-109">Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.</span><span class="sxs-lookup"><span data-stu-id="c7fad-109">Pointer to the [**D3DXVECTOR4**](d3dxvector4.md) structure that is the result of the operation.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="c7fad-110">*pV1* \[ in\]</span><span class="sxs-lookup"><span data-stu-id="c7fad-110">*pV1* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="c7fad-111">Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***</span><span class="sxs-lookup"><span data-stu-id="c7fad-111">Type: **const [**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="c7fad-112">Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.</span><span class="sxs-lookup"><span data-stu-id="c7fad-112">Pointer to a source [**D3DXVECTOR4**](d3dxvector4.md) structure.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="c7fad-113">*pV2* \[ in\]</span><span class="sxs-lookup"><span data-stu-id="c7fad-113">*pV2* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="c7fad-114">Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***</span><span class="sxs-lookup"><span data-stu-id="c7fad-114">Type: **const [**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="c7fad-115">Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.</span><span class="sxs-lookup"><span data-stu-id="c7fad-115">Pointer to a source [**D3DXVECTOR4**](d3dxvector4.md) structure.</span></span>
+
+</dd> <dt>
+
+<span data-ttu-id="c7fad-116">*s* \[ in\]</span><span class="sxs-lookup"><span data-stu-id="c7fad-116">*s* \[in\]</span></span>
+</dt> <dd>
+
+<span data-ttu-id="c7fad-117">Tipo: **[ **float**](../winprog/windows-data-types.md)**</span><span class="sxs-lookup"><span data-stu-id="c7fad-117">Type: **[**FLOAT**](../winprog/windows-data-types.md)**</span></span>
+
+<span data-ttu-id="c7fad-118">Parametro che esegue l'interpolazione lineare tra i vettori.</span><span class="sxs-lookup"><span data-stu-id="c7fad-118">Parameter that linearly interpolates between the vectors.</span></span>
+
+</dd> </dl>
+
+## <a name="return-value"></a><span data-ttu-id="c7fad-119">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="c7fad-119">Return value</span></span>
+
+<span data-ttu-id="c7fad-120">Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***</span><span class="sxs-lookup"><span data-stu-id="c7fad-120">Type: **[**D3DXVECTOR4**](d3dxvector4.md)\***</span></span>
+
+<span data-ttu-id="c7fad-121">Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che è il risultato dell'interpolazione lineare.</span><span class="sxs-lookup"><span data-stu-id="c7fad-121">Pointer to a [**D3DXVECTOR4**](d3dxvector4.md) structure that is the result of the linear interpolation.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="c7fad-122">Commenti</span><span class="sxs-lookup"><span data-stu-id="c7fad-122">Remarks</span></span>
+
+<span data-ttu-id="c7fad-123">Questa funzione esegue l'interpolazione lineare in base alla formula seguente: V1 + s (v2-v1).</span><span class="sxs-lookup"><span data-stu-id="c7fad-123">This function performs the linear interpolation based on the following formula: V1 + s(V2-V1).</span></span>
+
+<span data-ttu-id="c7fad-124">Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* .</span><span class="sxs-lookup"><span data-stu-id="c7fad-124">The return value for this function is the same value returned in the *pOut* parameter.</span></span> <span data-ttu-id="c7fad-125">In questo modo, la funzione **D3DXVec4Lerp** può essere utilizzata come parametro per un'altra funzione.</span><span class="sxs-lookup"><span data-stu-id="c7fad-125">In this way, the **D3DXVec4Lerp** function can be used as a parameter for another function.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="c7fad-126">Requisiti</span><span class="sxs-lookup"><span data-stu-id="c7fad-126">Requirements</span></span>
+
+
+
+| <span data-ttu-id="c7fad-127">Requisito</span><span class="sxs-lookup"><span data-stu-id="c7fad-127">Requirement</span></span> | <span data-ttu-id="c7fad-128">Valore</span><span class="sxs-lookup"><span data-stu-id="c7fad-128">Value</span></span> |
+|--------------------|----------------------------------------------------------------------------------------|
+| <span data-ttu-id="c7fad-129">Intestazione</span><span class="sxs-lookup"><span data-stu-id="c7fad-129">Header</span></span><br/>  | <dl> <span data-ttu-id="c7fad-130"><dt>D3dx9math. h</dt></span><span class="sxs-lookup"><span data-stu-id="c7fad-130"><dt>D3dx9math.h</dt></span></span> </dl> |
+| <span data-ttu-id="c7fad-131">Libreria</span><span class="sxs-lookup"><span data-stu-id="c7fad-131">Library</span></span><br/> | <dl> <span data-ttu-id="c7fad-132"><dt>D3dx9. lib</dt></span><span class="sxs-lookup"><span data-stu-id="c7fad-132"><dt>D3dx9.lib</dt></span></span> </dl>   |
+
+
+
+## <a name="see-also"></a><span data-ttu-id="c7fad-133">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="c7fad-133">See also</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="c7fad-134">Funzioni matematiche</span><span class="sxs-lookup"><span data-stu-id="c7fad-134">Math Functions</span></span>](dx9-graphics-reference-d3dx-functions-math.md)
+</dt> </dl>
+
+ 
+
+ 
