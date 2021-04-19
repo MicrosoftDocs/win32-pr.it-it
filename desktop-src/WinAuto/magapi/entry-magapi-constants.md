@@ -1,15 +1,15 @@
 ---
-title: Costanti
+title: Costanti (ingrandimento)
 description: Questa sezione contiene informazioni di riferimento sulle costanti API di ingrandimento.
 ms.assetid: 4AF46B70-9120-47B6-B824-0410805DA89D
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: 78f2cfabd0e63b62d41dcb9aa02528c25aad2dce
-ms.sourcegitcommit: 541c08d5d36109b754f39bf89e57404f007c5f63
+ms.openlocfilehash: 4381a42c3c791f3c023f81f2bc596ec09eaa577f
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "104046239"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389107"
 ---
 # <a name="constants"></a>Costanti
 

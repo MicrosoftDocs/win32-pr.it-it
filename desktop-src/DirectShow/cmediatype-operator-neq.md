@@ -1,14 +1,14 @@
 ---
-description: Il metodo set imposta il tipo di supporto da un altro tipo di supporto.
-ms.assetid: b3cf65c2-48db-4ee0-9a74-c1652f017eed
-title: Metodo CMediaType. set (mtype. h)-mtype [Ref] parametro
+description: Questo operatore verifica la disuguaglianza tra gli oggetti CMediaType.
+ms.assetid: 9caf4cb9-f049-42e7-abe4-79f8bf0ea542
+title: 'Metodo CMediaType. CMediaType:: operator! = (mtype. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
 - APIRef
 - kbSyntax
 api_name:
-- CMediaType.Set
+- CMediaType.CMediaType::operator!=
 api_type:
 - COM
 api_location:
@@ -16,23 +16,23 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8fd9145ee33dbe4b589b34833836466efa62ada
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: fe3d5b60ed1990423d5ad9375ffdf192da313b8d
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389086"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "106326401"
 ---
-# <a name="cmediatypeset-method-mtypeh"></a>Metodo CMediaType. set (mtype. h)
+# <a name="cmediatypecmediatypeoperator-method"></a>Metodo CMediaType. CMediaType:: operator! =
 
-Il `Set` metodo imposta il tipo di supporto da un altro tipo di supporto.
+Questo operatore verifica la disuguaglianza tra gli oggetti [**CMediaType**](cmediatype.md) .
 
 ## <a name="syntax"></a>Sintassi
 
 
 ```C++
-HRESULT Set(
-  [ref] const AM_MEDIA_TYPE &mtype
+BOOL CMediaType::operator!=(
+  [ref] const CMediaType &rt
 );
 ```
 
@@ -42,20 +42,16 @@ HRESULT Set(
 
 <dl> <dt>
 
-*mtype* \[ Ref\]
+*RT* \[ Ref\]
 </dt> <dd>
 
-Riferimento a una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Riferimento all'oggetto **CMediaType** da confrontare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o e \_ OutOfMemory.
-
-## <a name="remarks"></a>Commenti
-
-Questo metodo copia l'intero tipo di supporto da *mtype*.
+Restituisce **true** se *RT* non è uguale all'oggetto. In caso contrario, restituisce **false**.
 
 ## <a name="requirements"></a>Requisiti
 
