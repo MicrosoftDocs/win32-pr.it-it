@@ -1,0 +1,31 @@
+---
+description: Viene illustrato come convalidare manualmente le credenziali di Schannel.
+ms.assetid: 0229486a-5812-4a7e-98ad-446292997ee3
+title: Convalida manuale di credenziali Schannel
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 20ec87b662cf9d3711c1ae729d2dd3b14ac5f79e
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106315868"
+---
+# <a name="manually-validating-schannel-credentials"></a><span data-ttu-id="08fde-103">Convalida manuale di credenziali Schannel</span><span class="sxs-lookup"><span data-stu-id="08fde-103">Manually Validating Schannel Credentials</span></span>
+
+<span data-ttu-id="08fde-104">Per impostazione predefinita, Schannel convalida il [*certificato del server*](../secgloss/s-gly.md) chiamando la funzione [**WinVerifyTrust**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust) . Tuttavia, se questa funzionalità è stata disabilitata usando il \_ \_ \_ \_ flag di convalida di ISC req Manual, è necessario convalidare il certificato fornito dal server che sta provando a stabilirne l'identità.</span><span class="sxs-lookup"><span data-stu-id="08fde-104">By default, Schannel validates the [*server certificate*](../secgloss/s-gly.md) by calling the [**WinVerifyTrust**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust) function; however, if you have disabled this feature using the ISC\_REQ\_MANUAL\_CRED\_VALIDATION flag, you must validate the certificate provided by the server that is attempting to establish its identity.</span></span>
+
+<span data-ttu-id="08fde-105">Per convalidare manualmente il certificato del server, è necessario prima ottenerlo.</span><span class="sxs-lookup"><span data-stu-id="08fde-105">To manually validate the server certificate, you must first get it.</span></span> <span data-ttu-id="08fde-106">Usare la funzione [**QueryContextAttributes (generale)**](/windows/win32/api/sspi/nf-sspi-querycontextattributesa) e specificare il \_ valore dell' \_ attributo di contesto del certificato remoto SECPKG attr \_ \_ .</span><span class="sxs-lookup"><span data-stu-id="08fde-106">Use the [**QueryContextAttributes (General)**](/windows/win32/api/sspi/nf-sspi-querycontextattributesa) function and specify the SECPKG\_ATTR\_REMOTE\_CERT\_CONTEXT attribute value.</span></span> <span data-ttu-id="08fde-107">Questo attributo restituisce una struttura del [**\_ contesto**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context) del certificato contenente il certificato fornito dal server.</span><span class="sxs-lookup"><span data-stu-id="08fde-107">This attribute returns a [**CERT\_CONTEXT**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context) structure containing the certificate supplied by the server.</span></span> <span data-ttu-id="08fde-108">Questo certificato viene chiamato certificato foglia perché è l'ultimo certificato nella catena di certificati ed è più lontano dal [*certificato radice*](../secgloss/r-gly.md).</span><span class="sxs-lookup"><span data-stu-id="08fde-108">This certificate is called the leaf certificate because it is the last certificate in the certificate chain and is farthest away from the [*root certificate*](../secgloss/r-gly.md).</span></span>
+
+<span data-ttu-id="08fde-109">Utilizzando il certificato foglia è necessario verificare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="08fde-109">Using the leaf certificate you must verify the following:</span></span>
+
+-   <span data-ttu-id="08fde-110">La catena di certificati è completa e la radice è un certificato di un' [*autorità di certificazione*](../secgloss/c-gly.md) (CA) attendibile.</span><span class="sxs-lookup"><span data-stu-id="08fde-110">The certificate chain is complete and the root is a certificate from a trusted [*certification authority*](../secgloss/c-gly.md) (CA).</span></span>
+-   <span data-ttu-id="08fde-111">L'ora corrente non è oltre le date di inizio e di fine per ogni certificato nella catena di certificati.</span><span class="sxs-lookup"><span data-stu-id="08fde-111">The current time is not beyond the begin and end dates for each of the certificates in the certificate chain.</span></span>
+-   <span data-ttu-id="08fde-112">Nessuno dei certificati nella catena di certificati è stato revocato.</span><span class="sxs-lookup"><span data-stu-id="08fde-112">None of the certificates in the certificate chain have been revoked.</span></span>
+-   <span data-ttu-id="08fde-113">La profondità del certificato foglia non è maggiore della profondità massima consentita specificata nell'estensione del certificato.</span><span class="sxs-lookup"><span data-stu-id="08fde-113">The depth of the leaf certificate is not deeper than the maximum allowable depth specified in the certificate extension.</span></span> <span data-ttu-id="08fde-114">Questo controllo è necessario solo se è stata specificata una profondità.</span><span class="sxs-lookup"><span data-stu-id="08fde-114">This check is only necessary if there is a depth specified.</span></span>
+-   <span data-ttu-id="08fde-115">L'utilizzo del certificato è corretto. ad esempio, un [*certificato client*](../secgloss/c-gly.md) non deve essere utilizzato per autenticare un server.</span><span class="sxs-lookup"><span data-stu-id="08fde-115">The usage of the certificate is correct, for example, a [*client certificate*](../secgloss/c-gly.md) should not be used to authenticate a server.</span></span>
+-   <span data-ttu-id="08fde-116">Per l'autenticazione server, l'identità del server contenuta nel certificato foglia del server corrisponde al server che il client sta tentando di contattare.</span><span class="sxs-lookup"><span data-stu-id="08fde-116">For server authentication, the server identity contained in the server's leaf certificate matches the server that the client is attempting to contact.</span></span> <span data-ttu-id="08fde-117">In genere, il client corrisponderà a un elemento nel campo del nome del soggetto del certificato all'indirizzo IP o al nome DNS del server.</span><span class="sxs-lookup"><span data-stu-id="08fde-117">Typically, the client will match some item in the certificate's Subject Name field to the server's IP address or DNS name.</span></span>
+
+ 
+
+ 
