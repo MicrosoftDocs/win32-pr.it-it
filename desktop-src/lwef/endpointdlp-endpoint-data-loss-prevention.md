@@ -3,12 +3,12 @@ description: Le API DLP (Endpoint Data Loss Prevention) consentono alle applicaz
 title: Prevenzione della perdita di dati degli endpoint
 ms.topic: article
 ms.date: 03/18/2021
-ms.openlocfilehash: 867e059e0accfc1208c96394c3065d69cf9f576c
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 3b8576f9eadd0037eca56c0ba183ea1d1825679a
+ms.sourcegitcommit: 8b543a86e551cb5b4270a3cc3590ad0758fb6156
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495591"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526092"
 ---
 # <a name="endpoint-data-loss-prevention"></a>Prevenzione della perdita di dati degli endpoint
 
@@ -16,7 +16,7 @@ Windows 10 implementa meccanismi che consentono di evitare la perdita di dati pe
 
 ## <a name="location-of-the-dlp-dll"></a>Percorso della DLL DLP
 
-Poiché la DLL DLP dell'endpoint non è in bundle con il Windows SDK, le applicazioni dovranno caricare manualmente la DLL in fase di esecuzione. Il percorso della DLL viene archiviato nel Registro di sistema. Nella tabella seguente sono elencate le chiavi e i valori del Registro di sistema in cui sono archiviate queste informazioni. Questi percorsi sono definiti come costanti nell'elenco di codice endpointdlp.h di esempio fornito di seguito per praticità per gli sviluppatori.
+Poiché la DLL DLP dell'endpoint non è in bundle con il Windows SDK, le applicazioni dovranno caricare manualmente la DLL in fase di esecuzione. Il percorso della DLL viene archiviato nel Registro di sistema. Nella tabella seguente sono elencati i valori e le chiavi del Registro di sistema in cui sono archiviate queste informazioni. Questi percorsi sono definiti come costanti nell'elenco di codice endpointdlp.h di esempio fornito di seguito per praticità per gli sviluppatori.
 
 | Costante | Valore | Descrizione   |
 |----------|-------|---------------|
@@ -26,14 +26,14 @@ Poiché la DLL DLP dell'endpoint non è in bundle con il Windows SDK, le applica
 | ENDPOINTDLP_DLL_INSTALL_LOCATION_REGVALUE | "InstallLocation" | Valore del Registro di sistema in ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY in cui è archiviato il EndpointDlp.dll di installazione |
 | ENDPOINTDLP_DLL_WOW64_X86_INSTALL_LOCATION_SUFFIX | "x86" | Nelle piattaforme x64 concatenare questa directory per ottenere la versione x86 di EndpointDlp.dll |
 
-## <a name="check-if-endpoint-dlp-is-enabled"></a>Controllare se la prevenzione della perdita dei dati dell'endpoint è abilitata
+## <a name="check-if-endpoint-dlp-is-enabled"></a>Controllare se la prevenzione della perdita dei dati degli endpoint è abilitata
 
 Per determinare se la prevenzione della perdita dei dati dell'endpoint è abilitata nel sistema, controllare il valore della chiave del Registro di sistema seguente. 
 
 | Costante | Valore | Descrizione   |
 |----------|-------|---------------|
 | ENDPOINTDLP_ENABLED_FLAG_REGKEY |  \\"Funzionalità" | Percorso della chiave del flag abilitata per la prevenzione della perdita dei dati dell'endpoint in (HKLM) ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |
-| ENDPOINTDLP_ENABLED_FLAG_REGVALUE | "SenseDlpEnabled" | Valore del Registro di sistema in ENDPOINTDLP_ENABLED_FLAG_REGKEY contenente la chiave del Registro di sistema del flag DLP abilitato
+| ENDPOINTDLP_ENABLED_FLAG_REGVALUE | "SenseDlpEnabled" | Valore del Registro di sistema in ENDPOINTDLP_ENABLED_FLAG_REGKEY contenente la chiave del Registro di sistema del flag dlp abilitato
 
 ## <a name="endpoint-dlp-apis"></a>API DLP degli endpoint
 
@@ -81,10 +81,10 @@ Le tabelle seguenti elencano le API fornite dalla DLL DLP dell'endpoint.
 |-----|-------------|
 | [DlpNotifyPreCopyToClipboard](endpointdlp-dlpnotifyprecopytoclipboard.md)                         | Fornisce al sistema informazioni su un documento prima dell'avvio di un'operazione di copia negli Appunti.  |
 | [DlpNotifyPostCopyToClipboard](endpointdlp-dlpnotifypostcopytoclipboard.md)                         | Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione di copia negli Appunti.  |
-| [DlpNotifyPrePasteFromClipboard](endpointdlp-dlpnotifyprepastefromclipboard.md)                         | Fornisce al sistema informazioni su un documento prima che venga avviata un'operazione Incolla dagli Appunti.  |
+| [DlpNotifyPrePasteFromClipboard](endpointdlp-dlpnotifyprepastefromclipboard.md)                         | Fornisce al sistema informazioni su un documento prima dell'avvio di un'operazione Incolla dagli Appunti.  |
 | [DlpNotifyPostPasteFromClipboard](endpointdlp-dlpnotifypostpastefromclipboard.md)                       | Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione Incolla dagli Appunti.                                  |
 | [DlpNotifyPostStashClipboard](endpointdlp-dlpnotifypoststashclipboard.md)                       | Fornisce al sistema informazioni sullo stato dopo il completamento di un'operazione di stash clipboard.                                  |
-| [DlpNotifyPreStashClipboard](endpointdlp-dlpnotifyprestashclipboard.md)                       | Notifica al sistema prima che venga avviata un'operazione di stash clipboard.                                  |
+| [DlpNotifyPreStashClipboard](endpointdlp-dlpnotifyprestashclipboard.md)                       | Notifica al sistema prima che venga avviata un'operazione stash clipboard.                                  |
 | [DlpMustPasteFromSystemClipboard](endpointdlp-dlpmustpastefromsystemclipboard.md)                       | Determina se l'app deve eseguire il pull dei dati dagli Appunti di sistema anziché dalla cache interna.                                  |
 
 ### <a name="print-operations"></a>Operazioni di stampa
@@ -333,6 +333,18 @@ void WINAPI DlpNotifyPostDragDrop(_In_ const PDLP_DOCUMENT_INFO DocumentInfo, _I
 void WINAPI DlpNotifyEnterDropTarget(_In_ const PDLP_DOCUMENT_INFO DocumentInfo);
 void WINAPI DlpNotifyLeaveDropTarget(_In_ const PDLP_DOCUMENT_INFO DocumentInfo, _In_ const PDLP_POSTOP_STATUS OpStatus); 
 
+
+/*
+Function description:
+    Determines whether the app must pull the data from the system clipboard rather than taking it from its internal cache.
+
+Parameters:
+    None
+
+Return:
+    TRUE if calling into the OS clipboard is mandatory, FALSE otherwise
+*/
+BOOL WINAPI DlpMustPasteFromSystemClipboard();
 
 ```
 
