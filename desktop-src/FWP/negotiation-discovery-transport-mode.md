@@ -4,12 +4,12 @@ description: Lo scenario dei criteri IPsec della modalità trasporto di individu
 ms.assetid: c08d9d03-7d77-43c2-8468-964b498b45f8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df9477d18f2fe478f5c885c071f47d0bf2baaad8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 216fec869eca28dc0661a37d44cce3a1fd05b80a
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872354"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314814"
 ---
 # <a name="negotiation-discovery-transport-mode"></a>Modalità trasporto individuazione negoziazione
 
@@ -37,6 +37,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
      
 
 2.  Per ognuno dei contesti aggiunti nel passaggio 1, aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)        | Valore                                            |
     |------------------------|--------------------------------------------------|
     | Condizioni di filtro   | Vuoto. Tutto il traffico corrisponderà al filtro.        |
@@ -56,6 +57,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
      
 
 2.  Per ognuno dei contesti aggiunti nel passaggio 1, aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)        | Valore                                            |
     |------------------------|--------------------------------------------------|
     | Condizioni di filtro   | Vuoto. Tutto il traffico corrisponderà al filtro.        |
@@ -66,6 +68,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **Al \_ trasporto in ingresso FWPM layer \_ \_ \_ V {4 \| 6} Configurare le regole di filtro in ingresso per pacchetto**  
 
 1.  Aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)                                                   | Valore                                                                                              |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type)                                      |
@@ -75,6 +78,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti.
+
     | Filter (proprietà)                                                   | Valore                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                |
@@ -87,6 +91,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **Al \_ trasporto in uscita FWPM layer \_ \_ \_ V {4 \| 6} Configurare le regole di filtro per pacchetto in uscita**  
 
 1.  Aggiungere un filtro con le proprietà seguenti.
+
     | Filter (proprietà)                                                   | Valore                                                                                     |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                               |
@@ -96,6 +101,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti.
+
     | Filter (proprietà)                                                   | Valore                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                |
@@ -108,6 +114,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **At FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ Accept \_ V {4 \| 6} Configurare le regole di filtro in ingresso per connessione**  
 
 1.  Aggiungere un filtro con le proprietà seguenti. Questo filtro consente solo i tentativi di connessione in ingresso se sono protetti da IPsec. 
+
     | Filter (proprietà)                                                   | Valore                                                        |
     |-------------------------------------------------------------------|--------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                  |
@@ -116,6 +123,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti.
+
     | Filter (proprietà)                                                   | Valore                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                |
