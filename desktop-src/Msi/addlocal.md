@@ -1,0 +1,67 @@
+---
+description: Il valore della proprietà ADDLOCAL è un elenco di funzioni delimitate da virgole e devono essere installate localmente.
+ms.assetid: d408986d-7889-4fd9-8202-1d2e59673a2f
+title: Proprietà ADDLOCAL
+ms.topic: reference
+ms.date: 05/31/2018
+ms.openlocfilehash: 9618389d6e409829dce1eb7bb3a38c1269a2e06d
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "106333580"
+---
+# <a name="addlocal-property"></a>Proprietà ADDLOCAL
+
+Il valore della proprietà **ADDLOCAL** è un elenco di funzioni delimitate da virgole e devono essere installate localmente. Le funzionalità devono essere presenti nella colonna funzionalità della tabella delle [funzionalità](feature-table.md). Per installare tutte le funzionalità localmente, usare ADDLOCAL = ALL nella riga di comando. Non immettere ADDLOCAL = ALL nella tabella delle [Proprietà](property-table.md), perché questo genera un pacchetto installato localmente che non può essere rimosso correttamente.
+
+## <a name="remarks"></a>Commenti
+
+I nomi delle funzionalità fanno distinzione tra maiuscole e minuscole Se il flag di bit SourceOnly è impostato nella colonna attributi della [tabella dei componenti](component-table.md) per un componente di una funzionalità nell'elenco, tale componente viene installato come eseguito dall'origine.
+
+Il programma di installazione valuta sempre le seguenti proprietà nell'ordine seguente:
+
+1.  **ADDLOCAL**
+2.  [**RIMUOVERE**](remove.md)
+3.  [**ADDSOURCE**](addsource.md)
+4.  [**ADDDEFAULT**](adddefault.md)
+5.  [**REINSTALL**](reinstall.md)
+6.  [**PUBBLICIZZARE**](advertise.md)
+7.  [**COMPADDLOCAL**](compaddlocal.md)
+8.  [**COMPADDSOURCE**](compaddsource.md)
+9.  [**COMPADDDEFAULT**](compadddefault.md)
+10. [**FILEADDLOCAL**](fileaddlocal.md)
+11. [**FILEADDSOURCE**](fileaddsource.md)
+12. [**FILEADDDEFAULT**](fileadddefault.md)
+
+Ad esempio:
+
+-   Se la riga di comando specifica: ADDLOCAL = ALL, ADDSOURCE = **funzionalità**, tutte le funzionalità vengono prima impostate su run-local, quindi la **funzionalità** è impostata su Run-from-source.
+-   Se la riga di comando è: ADDSOURCE = ALL, ADDLOCAL = la **funzionalità**, First **funzionalità** è impostata su run-local e quindi quando viene valutato addsource = all, tutte le funzionalità (inclusa la **funzionalità**) vengono reimpostate su Run-from-source.
+
+Il programma di installazione imposta la proprietà [**preselezionata**](preselected.md) sul valore "1" durante la ripresa di un'installazione sospesa o quando una delle proprietà precedenti viene specificata nella riga di comando.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[Proprietà](properties.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
