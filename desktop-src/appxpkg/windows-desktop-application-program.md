@@ -4,12 +4,12 @@ description: È possibile ottenere dati di telemetria dettagliati e report di an
 ms.assetid: F1ED72A5-E1CD-4924-A81B-ED6FAF5E2AA3
 ms.topic: article
 ms.date: 11/02/2018
-ms.openlocfilehash: 2dc255c9c8696bd57198f50fc2c570f59c4ae603
-ms.sourcegitcommit: 0bfbb2324081644171495734f0609335173745ef
+ms.openlocfilehash: 63fd252f7d98c6b7a401f6626f30dcdcd6751def
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "106333995"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314844"
 ---
 # <a name="windows-desktop-application-program"></a>Programma per applicazioni desktop di Windows
 
@@ -110,7 +110,7 @@ Il report sull' **integrità** consente di ottenere i dati relativi alle prestaz
 -   Confrontare le prestazioni delle applicazioni desktop nelle versioni di Windows o in una versione specifica, ad esempio la versione più recente di Windows 10
 -   Visualizza le informazioni sull'integrità per un file eseguibile specifico incluso nell'applicazione
 
-Selezionare **carica i simboli** nella parte superiore della tabella degli **errori** per caricare un file con estensione zip contenente i [file di simboli](http:/docs.microsoft.com/windows-hardware/drivers/debugger/symbols-and-symbol-files)dell'applicazione. Questi file di simboli verranno indicizzati e utilizzati per produrre tracce dello stack più accurate. I tipi di file di simboli nel file con estensione zip devono essere PDB, dll o exe. Al termine del caricamento del file con estensione zip, verrà **visualizzato un numero minore. Valori sconosciuti** per i nuovi errori nell'elenco degli errori dell'applicazione in circa 5 giorni.
+Selezionare **carica i simboli** nella parte superiore della tabella degli **errori** per caricare un file con estensione zip contenente i [file di simboli](/windows-hardware/drivers/debugger/symbols-and-symbol-files)dell'applicazione. Questi file di simboli verranno indicizzati e utilizzati per produrre tracce dello stack più accurate. I tipi di file di simboli nel file con estensione zip devono essere PDB, dll o exe. Al termine del caricamento del file con estensione zip, verrà **visualizzato un numero minore. Valori sconosciuti** per i nuovi errori nell'elenco degli errori dell'applicazione in circa 5 giorni.
 
 ### <a name="installs-report"></a>Installa il report
 
