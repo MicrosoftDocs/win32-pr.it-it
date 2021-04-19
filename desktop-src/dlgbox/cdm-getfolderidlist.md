@@ -1,9 +1,9 @@
 ---
-title: Messaggio CDM_GETFOLDERIDLIST (COMMDLG. h)
-description: Recupera l'indirizzo dell'elenco di identificatori di elemento corrispondente alla cartella in cui è attualmente aperta una finestra di dialogo aperta o Salva con nome di tipo Esplora risorse.
+title: CDM_GETFOLDERIDLIST messaggio (Commdlg.h)
+description: Recupera l'indirizzo dell'elenco di identificatori di elemento corrispondente alla cartella attualmente aperta in una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse.
 ms.assetid: 9d2d2c35-ff1d-43de-ab0b-c96e0f1e9e24
 keywords:
-- Finestre di dialogo CDM_GETFOLDERIDLIST messaggio
+- CDM_GETFOLDERIDLIST finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b4ac82a628d6fcace6863abb30e5703af02a948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24d16b53c90c3efc874b8aeabd1b97938a1b21ec
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743207"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590908"
 ---
-# <a name="cdm_getfolderidlist-message"></a>\_Messaggio GETFOLDERIDLIST CDM
+# <a name="cdm_getfolderidlist-message"></a>Messaggio CDM \_ GETFOLDERIDLIST
 
-\[A partire da Windows Vista, le finestre di dialogo **Apri** e **Salva come** comuni sono state sostituite dalla [finestra di dialogo elemento comune](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). È consigliabile usare l'API della finestra di dialogo elemento comune anziché queste finestre di dialogo dalla libreria di finestre di dialogo comuni.\]
+\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
-Recupera l'indirizzo dell'elenco di identificatori di elemento corrispondente alla cartella in cui è attualmente aperta una finestra di dialogo **aperta** o **Salva con nome** di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ Explorer** . in caso contrario, il messaggio ha esito negativo.
+Recupera l'indirizzo dell'elenco di identificatori di elemento  corrispondente  alla cartella attualmente aperta in una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
 
 ```C++
@@ -43,7 +43,7 @@ Recupera l'indirizzo dell'elenco di identificatori di elemento corrispondente al
 *wParam* 
 </dt> <dd>
 
-Dimensione, in byte, del buffer *lParam* .
+Dimensione, in byte, del buffer *lParam.*
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntatore al buffer che riceve l'elenco di identificatori di elemento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, il valore restituito è la dimensione, in byte, dell'elenco degli identificatori di elemento. Si tratta del numero di byte copiati nel buffer o della dimensione del buffer necessaria se il buffer è troppo piccolo.
+Se il messaggio ha esito positivo, il valore restituito è la dimensione, in byte, dell'elenco di identificatori di elemento. Si tratta del numero di byte copiati nel buffer o delle dimensioni del buffer richieste se il buffer è troppo piccolo.
 
 Se si verifica un errore, il valore restituito è minore di zero.
 
@@ -76,7 +76,7 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (include Windows.h)</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 **Riferimento**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
 [**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
@@ -99,7 +99,7 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
 
  
