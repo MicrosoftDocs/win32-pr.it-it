@@ -4,19 +4,19 @@ ms.assetid: 43cca5bc-6675-4f29-925e-19d3fb19ef0f
 title: "Microsoft Message Queuing (MSMQ): SHA 2 è l'algoritmo hash predefinito"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61f0d2476133ca7939bc90effa3842c0b90482ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb62f55f07565e76cefb5463a095d11ae789f379
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232917"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314964"
 ---
 # <a name="microsoft-message-queuing-msmq---sha-2-is-the-default-hash-algorithm"></a>Microsoft Message Queuing (MSMQ): SHA 2 è l'algoritmo hash predefinito
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
- **Client** -Windows XP Windows \| Vista Windows \| 7  
-**Server** -windows Server 2003 \| Windows Server 2008 \| Windows Server 2008 R2  
+ **Client** -Windows XP, Windows Vista, Windows 7  
+**Server** : windows Server 2003, windows Server 2008, windows Server 2008 R2  
 
 
 
