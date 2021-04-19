@@ -1,19 +1,19 @@
 ---
-description: 'Specifica il percorso di download per un <WSDL: Import> direttiva che non specifica in modo esplicito una posizione.'
+description: Specifica il percorso di download per una direttiva wsdl:import che non specifica in modo esplicito un percorso.
 ms.assetid: 81d0a30b-8f15-4518-b833-de57e0dae978
-title: elemento importHint
+title: Elemento importHint
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce8da0a7fa45ed00489d405aaba8f1f6d7ab8fdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a29fcd65f9af02b8077ba828081ac9ed767d64e3
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310301"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380655"
 ---
-# <a name="importhint-element"></a>elemento importHint
+# <a name="importhint-element"></a>Elemento importHint
 
-Specifica il percorso di download per un <WSDL: Import> direttiva che non specifica in modo esplicito una posizione.
+Specifica il percorso di download per una \<wsdl:import> direttiva che non specifica in modo esplicito un percorso.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -33,8 +33,8 @@ Non ci sono attributi.
 
 | Elemento                                   | Descrizione                                                                                                                       |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [**percorso**](location.md)<br/>   | Percorso del file da importare. Il percorso può essere un percorso relativo, un percorso assoluto o un URL HTTP.<br/> <br/> |
-| [**nameSpace**](namespace.md)<br/> | Spazio dei nomi da importare. Deve corrispondere allo spazio dei nomi specificato nell'elemento <WSDL: Import>.<br/> <br/>     |
+| [**Posizione**](location.md)<br/>   | Percorso del file da importare. Il percorso può essere un percorso relativo, un percorso assoluto o un URL HTTP.<br/> <br/> |
+| [**Namespace**](namespace.md)<br/> | Spazio dei nomi da importare. Deve corrispondere allo spazio dei nomi specificato \<wsdl:import> nell'elemento .<br/> <br/>     |
 
 
 
@@ -53,7 +53,7 @@ Non ci sono attributi.
 
 | Elemento                         | Descrizione                                                                       |
 |---------------------------------|-----------------------------------------------------------------------------------|
-| [**WSDL**](wsdl.md)<br/> | Specifica un file WSDL da elaborare per le informazioni sul contratto.<br/> <br/> |
+| [**Wsdl**](wsdl.md)<br/> | Specifica un file WSDL da elaborare per le informazioni sul contratto.<br/> <br/> |
 
 
 

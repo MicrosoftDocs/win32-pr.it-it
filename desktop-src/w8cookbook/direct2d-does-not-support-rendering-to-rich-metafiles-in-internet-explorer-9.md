@@ -4,19 +4,19 @@ description: Direct2D non supporta il rendering in metafile avanzati in Internet
 ms.assetid: D106FBD6-F05E-41A6-B8F8-569EB9810E2C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed5ab00b12a85f62a7ff65bbc6034227ac7a5129
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: 28f51ae6d098c08c0a18656aae2adf3d79d68652
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "106300573"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314824"
 ---
 # <a name="direct2d-does-not-support-rendering-to-rich-metafiles-in-internet-explorer-9"></a>Direct2D non supporta il rendering in metafile avanzati in Internet Explorer 9
 
 ## <a name="platforms"></a>Piattaforme
 
-**Client** – Windows Vista Windows \| 7 Windows \| 8  
-**Server** : windows Server 2008 \| Windows Server 2008 R2 \| Windows Server 2012  
+**Client** : Windows Vista, Windows 7, Windows 8  
+**Server** : windows Server 2008, windows Server 2008 R2, windows Server 2012  
 
 
 
@@ -48,6 +48,6 @@ Le app che usano IViewObject::D RAW possono usare la [funzionalità \_ IVIEWOBJE
 -   [Proprietà IHTMLElement:: innerText](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752299(v=vs.85))
 -   [Controlli delle funzionalità Internet (I.. L](/previous-versions/windows/internet-explorer/ie-developer/general-info/ee330732(v=vs.85))
 
- 
+ 
 
- 
+ 
