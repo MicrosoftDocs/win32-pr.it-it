@@ -1,0 +1,124 @@
+---
+description: Il metodo ProvideComponent dell'oggetto Installer restituisce il percorso completo del componente ed esegue tutte le installazioni necessarie.
+ms.assetid: 2bf09515-6f65-4712-89c1-01c43c1ce27c
+title: Installer. ProvideComponent, metodo
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- Installer.ProvideComponent
+api_type:
+- COM
+api_location:
+- Msi.dll
+ms.openlocfilehash: e383c532d496ed217bdb7743b8171d732d61b2d0
+ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "106329128"
+---
+# <a name="installerprovidecomponent-method"></a>Installer. ProvideComponent, metodo
+
+Il metodo **ProvideComponent** dell'oggetto [**Installer**](installer-object.md) restituisce il percorso completo del componente ed esegue tutte le installazioni necessarie. Se necessario, il metodo **ProvideComponent** dell'oggetto del [**programma di installazione**](installer-object.md) richiede l'origine e incrementa il conteggio di utilizzo per la funzionalità.
+
+## <a name="syntax"></a>Sintassi
+
+
+```JScript
+Installer.ProvideComponent(
+  Product,
+  Feature,
+  Component,
+  InstallMode
+)
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*Prodotto* 
+</dt> <dd>
+
+Specifica il codice del prodotto.
+
+</dd> <dt>
+
+*Funzionalità* 
+</dt> <dd>
+
+Specifica l'ID funzionalità della funzionalità contenente il componente.
+
+</dd> <dt>
+
+*Componente* 
+</dt> <dd>
+
+Specifica il codice del componente.
+
+</dd> <dt>
+
+*InstallMode* 
+</dt> <dd>
+
+Definisce la modalità di installazione. Questo parametro può essere uno dei valori mostrati nella tabella seguente.
+
+
+
+| Nome                                                                                                                                                                                                                                                                                                                                                               | Significato                                                                                                                                                                                                                             |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span id="msiInstallModeDefault"></span><span id="msiinstallmodedefault"></span><span id="MSIINSTALLMODEDEFAULT"></span><dl> <dt>**msiInstallModeDefault**</dt> <dt>0</dt> </dl>                                                                                | Fornisce il percorso del componente, eseguendo qualsiasi installazione, se necessario.<br/>                                                                                                                                                  |
+| <span id="msiInstallModeExisting"></span><span id="msiinstallmodeexisting"></span><span id="MSIINSTALLMODEEXISTING"></span><dl> <dt>**msiInstallModeExisting**</dt> <dt>-1</dt> </dl>                                                                           | Fornisce il percorso del componente solo se la funzionalità esiste; in caso contrario, restituisce una stringa vuota. Questa modalità verifica l'esistenza del file di chiave del componente.<br/>                                                                |
+| <span id="msiInstallModeNoDetection"></span><span id="msiinstallmodenodetection"></span><span id="MSIINSTALLMODENODETECTION"></span><dl> <dt>**msiInstallModeNoDetection**</dt> <dt>-2</dt> </dl>                                                               | Fornisce il percorso del componente solo se la funzionalità esiste. In caso contrario, restituisce una stringa vuota. Questa modalità controlla la registrazione del componente, ma non verifica l'esistenza del file di chiave del componente.<br/>                 |
+| <span id="msiInstallModeNoSourceResolution"></span><span id="msiinstallmodenosourceresolution"></span><span id="MSIINSTALLMODENOSOURCERESOLUTION"></span><dl> <dt>**msiInstallModeNoSourceResolution**</dt> <dt>-3</dt> </dl>                                   | Fornisce il percorso del componente solo se la funzionalità esiste con un parametro InstallState di *msiInstallStateLocal*. Questa operazione Controlla la registrazione del componente, ma non verifica l'esistenza del file di chiave del componente.<br/> |
+| <span id="combination_of_the_msiReinstallMode_flags"></span><span id="combination_of_the_msireinstallmode_flags"></span><span id="COMBINATION_OF_THE_MSIREINSTALLMODE_FLAGS"></span><dl> <dt>**combinazione dei flag msiReinstallMode**</dt><dt></dt> </dl> | Chiama [**ReinstallFeature**](installer-reinstallfeature.md) per reinstallare la funzionalità utilizzando questo parametro per il parametro *REINSTALLMODE* e quindi fornisce il componente.<br/>                                           |
+
+
+
+ 
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Questo metodo non restituisce valori.
+
+## <a name="remarks"></a>Commenti
+
+Il metodo **ProvideComponent** combina le funzionalità di [**UseFeature**](installer-usefeature.md), [**ConfigureFeature**](installer-configurefeature.md)e [**ComponentPath**](installer-componentpath.md). Il metodo **ProvideComponent** semplifica la sequenza chiamante, ma incrementa anche il conteggio di utilizzo e deve essere usato con cautela per evitare conteggi di utilizzo non accurati. Il metodo **ProvideComponent** offre anche una minore flessibilità rispetto a una serie di singole chiamate ai metodi e alle proprietà citate in precedenza.
+
+Se l'applicazione esegue il ripristino da una situazione imprevista, è probabile che l'applicazione abbia già chiamato [**UseFeature**](installer-usefeature.md) e abbia incrementato il numero di utilizzi. In questo caso, l'applicazione deve evitare di incrementare il conteggio di utilizzo chiamando il metodo [**ConfigureFeature**](installer-configurefeature.md) anziché il metodo **ProvideComponent** .
+
+Non è possibile usare l'opzione msiInstallModeExisting in combinazione con i flag msiReinstallMode.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
+| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[**MsiProvideComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidecomponenta)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+

@@ -4,12 +4,12 @@ description: La modalità trasporto per l'individuazione della negoziazione in m
 ms.assetid: 36ae74b3-30f5-49bd-8855-6f3c0fb04d70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9f4168eee38165125c2455bc80dae29c1c6794
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9869be61923bff1c392c5abe2bd98099a0c3c89f
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104473083"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314594"
 ---
 # <a name="negotiation-discovery-transport-mode-in-boundary-mode"></a>Modalità di trasporto individuazione negoziazione in modalità limite
 
@@ -35,6 +35,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
      
 
 2.  Per ognuno dei contesti aggiunti nel passaggio 1, aggiungere un filtro con le proprietà seguenti.
+
     | Filter (proprietà)        | Valore                                            |
     |------------------------|--------------------------------------------------|
     | Condizioni di filtro   | Vuoto. Tutto il traffico corrisponderà al filtro.        |
@@ -54,6 +55,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
      
 
 2.  Per ognuno dei contesti aggiunti nel passaggio 1, aggiungere un filtro con le proprietà seguenti.
+
     | Filter (proprietà)        | Valore                                            |
     |------------------------|--------------------------------------------------|
     | Condizioni di filtro   | Vuoto. Tutto il traffico corrisponderà al filtro.        |
@@ -64,6 +66,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **Al \_ trasporto in ingresso FWPM layer \_ \_ \_ V {4 \| 6} Configurare le regole di filtro in ingresso per pacchetto**  
 
 1.  Aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)                                                   | Valore                                                                                              |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type)                                      |
@@ -73,6 +76,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti.
+
     | Filter (proprietà)                                                   | Valore                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                |
@@ -85,6 +89,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **Al \_ trasporto in uscita FWPM layer \_ \_ \_ V {4 \| 6} Configurare le regole di filtro in uscita per pacchetto**  
 
 1.  Aggiungere un filtro con le proprietà seguenti.
+
     | Filter (proprietà)                                                   | Valore                                                                                     |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                               |
@@ -94,6 +99,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti.
+
     | Filter (proprietà)                                                   | Valore                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                |

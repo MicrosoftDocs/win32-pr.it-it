@@ -4,12 +4,12 @@ ms.assetid: d8765da9-e7cf-47e8-8bc3-4b29162da41b
 title: Dov'è DirectX SDK?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd863bf29858f2313641aca161c73754b789015c
-ms.sourcegitcommit: b4beb606419fea6a256b8332a9ea930607e60612
+ms.openlocfilehash: c070313c5c7f6105afaf7b629ff1ca2618a469fb
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "103969024"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314624"
 ---
 # <a name="where-is-the-directx-sdk"></a>Dov'è DirectX SDK?
 
@@ -101,7 +101,7 @@ L'API D3DCompiler e la DLL ridistribuibile sono disponibili nell'Windows SDK.
 
  
 
-Il Legacy DirectX SDK è disponibile per il download dall' [area download Microsoft](http://go.microsoft.com/fwlink/?LinkId=226640) , se necessario, ma non è consigliabile usare per i nuovi progetti.
+Il Legacy DirectX SDK è disponibile per il download dall' [area download Microsoft](https://go.microsoft.com/fwlink/?LinkId=226640) , se necessario, ma non è consigliabile usare per i nuovi progetti.
 
 > [!Note]  
 > Non è possibile installare DirectX SDK se è già installata una certa versione del pacchetto ridistribuibile Visual C++ 2010. Per ulteriori informazioni su e su una soluzione per risolvere questo problema, vedere [l'errore "S1023" durante l'installazione di DirectX SDK (giugno 2010)](https://support.microsoft.com/kb/2728613).
