@@ -4,12 +4,12 @@ description: Un compute shader è una fase programmabile dello shader che espand
 ms.assetid: 02c1f98e-fdd6-49b0-b8b2-efbd472ab599
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67c890e63b468a993e0d08f678d2276d6ce2adad
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 485e83ab965f14342d235a07810f210e18aadc53
+ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103734754"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107222869"
 ---
 # <a name="compute-shader-overview"></a>Panoramica di Compute Shader
 
@@ -30,7 +30,7 @@ Se si usa l'API Direct3D 11 e i driver aggiornati, il [livello di funzionalità]
 -   Allo shader è possibile associare una sola vista di accesso non ordinato (D3D11 \_ cs \_ 4 \_ X \_ UAV \_ Register \_ Count è 1).
 -   Solo i [RWStructuredBuffer](/windows/desktop/direct3dhlsl/sm5-object-rwstructuredbuffer)s e [RWByteAddressBuffer](/windows/desktop/direct3dhlsl/sm5-object-rwbyteaddressbuffer)sono disponibili come viste di accesso non ordinato.
 -   Un thread può accedere solo alla propria area nella memoria groupshared per la scrittura, anche se può leggere da qualsiasi posizione.
--   [SV \_](/previous-versions/windows/desktop/legacy/ff471569(v=vs.85)) È necessario usare groupIndex o [SV \_ DispatchThreadID](/windows/desktop/direct3dhlsl/sv-dispatchthreadid) per accedere alla memoria **groupshared** per la scrittura.
+-   [SV \_](/previous-versions/windows/desktop/legacy/ff471569(v=vs.85)) È necessario usare groupIndex o [SV \_ GroupThreadID](/windows/desktop/direct3dhlsl/sv-groupthreadid) per accedere alla memoria **groupshared** per la scrittura.
 -   La memoria **Groupshared** è limitata a 16KB per gruppo.
 -   Un singolo thread è limitato a un'area di 256 byte della memoria **groupshared** per la scrittura.
 -   Non sono disponibili istruzioni atomiche.
