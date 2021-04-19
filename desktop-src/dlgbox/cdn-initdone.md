@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CDN_INITDONE (COMMDLG. h)
-description: Inviato da una finestra di dialogo Apri o Salva con nome in stile esploratore quando il sistema ha completato la disposizione dei controlli nella finestra di dialogo. Il sistema sposta i controlli standard per creare spazio per i controlli della finestra di dialogo figlio.
+title: CDN_INITDONE codice di notifica (Commdlg.h)
+description: Inviato da una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse quando il sistema ha terminato di disporre i controlli nella finestra di dialogo. Il sistema sposta i controlli standard per fare spazio ai controlli della finestra di dialogo figlio.
 ms.assetid: 337fccac-5444-442d-92f0-862c5302fa21
 keywords:
-- Finestre di dialogo CDN_INITDONE codice di notifica
+- CDN_INITDONE finestre di dialogo del codice di notifica
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e6d51f1c34a0a399775e1786356aae4fc6526fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b07c25183eced86c3a430621091bed74c53f90d
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400619"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590798"
 ---
-# <a name="cdn_initdone-notification-code"></a>Codice di notifica INITDONE della rete CDN \_
+# <a name="cdn_initdone-notification-code"></a>Codice di notifica \_ INITDONE della rete CDN
 
-\[A partire da Windows Vista, le finestre di dialogo **Apri** e **Salva come** comuni sono state sostituite dalla [finestra di dialogo elemento comune](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). È consigliabile usare l'API della finestra di dialogo elemento comune anziché queste finestre di dialogo dalla libreria di finestre di dialogo comuni.\]
+\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Inviato da una finestra di dialogo **Apri** o **Salva con nome** in stile esploratore quando il sistema ha completato la disposizione dei controlli nella finestra di dialogo. Il sistema sposta i controlli standard per creare spazio per i controlli della finestra di dialogo figlio.
+Inviato da una finestra  di dialogo **Apri** o Salva con nome di tipo Esplora risorse quando il sistema ha terminato di disporre i controlli nella finestra di dialogo. Il sistema sposta i controlli standard per fare spazio ai controlli della finestra di dialogo figlio.
 
-La procedura [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) hook riceve questo messaggio sotto forma di messaggio di [**\_ notifica WM**](../controls/wm-notify.md) .
+La procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) riceve questo messaggio sotto forma di messaggio [**WM \_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,7 +51,7 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . La struttura **OFNOTIFY** contiene una struttura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro di **codice** indica il messaggio di notifica **\_ INITDONE** della rete CDN.
+Puntatore a una [**struttura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **struttura OFNOTIFY** contiene una [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro **di** codice indica il messaggio di notifica **\_ INITDONE** della rete CDN.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Questa notifica viene inviata dal sistema solo se la finestra di dialogo è stata creata con il valore di **OFN \_ Explorer** .
+Il sistema invia questa notifica solo se la finestra di dialogo è stata creata usando il **valore OFN \_ EXPLORER.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ Questa notifica viene inviata dal sistema solo se la finestra di dialogo è stat
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Questa notifica viene inviata dal sistema solo se la finestra di dialogo è stat
 **Riferimento**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
 [**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
@@ -100,7 +100,7 @@ Questa notifica viene inviata dal sistema solo se la finestra di dialogo è stat
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
 
  
