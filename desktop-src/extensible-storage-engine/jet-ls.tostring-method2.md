@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: JET_LS. Elenco di overload del metodo ToString'
-title: JET_LS. Metodo ToString
+title: JET_LS. Elenco di overload del metodo ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_LS.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ls.tostring(v=EXCHG.10)
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: f76a47faabef924259d6287d43e235ffe4d6993a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd43217bca6da65f62c9c49adf4c363c44ed5406
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104566463"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388610"
 ---
 # <a name="jet_lstostring-method-overload-list"></a>JET_LS. Elenco di overload del metodo ToString
 
