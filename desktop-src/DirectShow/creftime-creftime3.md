@@ -1,7 +1,7 @@
 ---
 description: Metodo del costruttore.
 ms.assetid: c1282676-6f2b-438a-850e-17bb6d7a2c68
-title: Costruttore CRefTime. CRefTime (Reftime. h)
+title: Costruttore CRefTime. CRefTime (Reftime. h)-parametro RT
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 57d99b2b5c7e628973d3434d6cffe8ad7bc702d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d97175a07565c12033c5e1ea8f20c157657d9501
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325507"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389191"
 ---
 # <a name="creftimecreftime-constructor-reftimeh"></a>Costruttore CRefTime. CRefTime (Reftime. h)
 

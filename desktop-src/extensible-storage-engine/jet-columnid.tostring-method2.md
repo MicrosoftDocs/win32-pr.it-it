@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: JET_COLUMNID. Elenco di overload del metodo ToString'
-title: JET_COLUMNID. Metodo ToString
+title: JET_COLUMNID. Elenco di overload del metodo ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_COLUMNID.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnid.tostring(v=EXCHG.10)
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: d928e6232d9f5039a68ca41b31cd4f01abe68bb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0d3a862e225e5eabfb5ffc46eef548e6205a366
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130171"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389163"
 ---
 # <a name="jet_columnidtostring-method-overload-list"></a>JET_COLUMNID. Elenco di overload del metodo ToString
 

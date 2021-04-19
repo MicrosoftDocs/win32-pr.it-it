@@ -1,7 +1,7 @@
 ---
 description: Questo operatore consente di eseguire l'overload dell'operatore di assegnazione per copiare un tipo di supporto.
 ms.assetid: 5b94191d-b5e4-42b2-b0c5-8c2da2483c54
-title: 'Metodo CMediaType. CMediaType:: operator = (mtype. h)'
+title: 'CMediaType. CMediaType:: operator = Method (mtype. h)-parametro mtype'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 748ad2efae39fc6a7b26c39d10351c44a5cee8a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfa577c8c8cfcdbcb0b62287a80cd998ab8775c6
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332325"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389037"
 ---
 # <a name="cmediatypecmediatypeoperator-method-mtypeh"></a>Metodo CMediaType. CMediaType:: operator = (mtype. h)
 
