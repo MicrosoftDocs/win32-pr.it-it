@@ -1,5 +1,5 @@
 ---
-title: Requisiti di certificazione desktop
+title: Requisiti di certificazione desktop (v3)
 description: Documento versione 3.3 data del 18 marzo, il documento 2014This contiene i requisiti tecnici e le qualifiche di idoneità che un'app desktop deve soddisfare per partecipare al programma di certificazione Windows 8.1 app desktop.
 ms.assetid: BD4765EA-C8A1-4A9F-9C50-479A3612DB85
 ms.topic: article
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 71a9470605abf266efed516e473a31a497c74b10
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1a6674b2f1d0d5acc30c12d4bd68a2d0a21724de
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338822"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388890"
 ---
 # <a name="certification-requirements-for-windows-desktop-apps-v33"></a>Requisiti di certificazione per le applicazioni desktop di Windows v 3.3
 

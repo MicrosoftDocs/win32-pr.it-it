@@ -4,7 +4,7 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_Name
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Nome
+title: Nome (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: d5db3565-db0a-4e6d-a0c5-7e9b3d006d5d
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ef7d9c208abb63679c65ee7db3b343a6e8aa3be7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40fc710649d5e1cb87f69d8358ba5706492b6c5f
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879161"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388764"
 ---
 # <a name="span-idwwan_profile_v4element_1_namespanmodemdmconfigprofilename-v4"></a><span id="WWAN_profile_v4.element_1_Name"></span>\/Nome ModemDMConfigProfile (v4)
 

@@ -4,7 +4,7 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_UserLogonCred
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: UserLogonCred
+title: UserLogonCred (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 6d563cf8-ea40-46b3-a74e-ec7640ca9824
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ff222738c591f6445e835e59662259dc744add98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aea2cdfda61e557ff790b59e7af2a05d914d3403
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484852"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388770"
 ---
 # <a name="span-idwwan_profile_v4element_1_userlogoncredspanmodemdmconfigprofileuserlogoncred-v4"></a><span id="WWAN_profile_v4.element_1_UserLogonCred"></span>ModemDMConfigProfile \/ ... \/ UserLogonCred (v4)
 

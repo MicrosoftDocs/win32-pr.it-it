@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 99c2271363ff9f4b421f20a3ac6376661d0c50cb
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: d235818130815c14cabf9a4f2ba51c0aa7d07f27
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334360"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389170"
 ---
 # <a name="input-feedback-configuration-constants"></a>Costanti di configurazione feedback input
 
