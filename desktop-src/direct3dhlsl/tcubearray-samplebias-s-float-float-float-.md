@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleBias:: SampleBias (S, float, float, float)'
-description: 'Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per limitare i valori del livello di dettaglio (LOD) campione a. | Funzione SampleBias:: SampleBias (S, float, float, float)'
+title: 'Funzione SampleBias:: SampleBias (S, float, float, float) per TextureCubeArray'
+description: 'La funzione SampleBias:: SampleBias (S, float, float, float) per TextureCubeArray campiona una trama, dopo aver applicato il valore di distorsione al livello mipmap.'
 ms.assetid: 6683F115-4F81-4C24-B735-67DB4B52455B
 keywords:
 - Funzione SampleBias HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d95a1b0341e61853a20d313a04d1cde64dde66d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0c57eec224ca92b2584ba7262488530ea7080939
+ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104132230"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106334361"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloat-function"></a>Funzione SampleBias:: SampleBias (S, float, float, float)
+# <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecubearray"></a>Funzione SampleBias:: SampleBias (S, float, float, float) per TextureCubeArray
 
 Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per limitare i valori del livello di dettaglio (LOD) campione a.
 
