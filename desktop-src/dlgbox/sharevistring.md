@@ -1,6 +1,6 @@
 ---
-title: Messaggio SHAREVISTRING (COMMDLG. h)
-description: Una finestra di dialogo Apri o Salva con nome Invia il messaggio SHAREVISTRING registrato alla routine hook, OFNHookProc, se si verifica una violazione di condivisione per il file selezionato quando l'utente fa clic sul pulsante OK.
+title: Messaggio SHAREVISTRING (Commdlg.h)
+description: Una finestra di dialogo Apri o Salva con nome invia il messaggio registrato SHAREVISTRING alla procedura hook OFNHookProc, se si verifica una violazione di condivisione per il file selezionato quando l'utente fa clic sul pulsante OK.
 ms.assetid: 53884497-4872-4aa8-b56e-2bb98df58fed
 keywords:
 - Finestre di dialogo del messaggio SHAREVISTRING
@@ -16,18 +16,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c23c17280ad1156e35f7e0f503816c07645cf4f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79535b66cff62ad0f9d3fd298fdd76bfc9123a3d
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477980"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590668"
 ---
 # <a name="sharevistring-message"></a>Messaggio SHAREVISTRING
 
-\[A partire da Windows Vista, le finestre di dialogo **Apri** e **Salva come** comuni sono state sostituite dalla [finestra di dialogo elemento comune](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). È consigliabile usare l'API della finestra di dialogo elemento comune anziché queste finestre di dialogo dalla libreria di finestre di dialogo comuni.\]
+\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Una finestra di dialogo **Apri** o **Salva con nome** invia il messaggio **SHAREVISTRING** registrato alla routine hook, [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc), se si verifica una violazione di condivisione per il file selezionato quando l'utente fa clic sul pulsante **OK** .
+Una **finestra** di dialogo Apri o Salva con nome invia il messaggio registrato **SHAREVISTRING** alla procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)se si verifica una violazione di condivisione per il file selezionato quando l'utente fa clic sul pulsante **OK.** 
 
 
 ```C++
@@ -50,21 +50,21 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**OpenFileName**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) . Il membro **lpstrFile** della struttura contiene il nome del file che ha causato la violazione di condivisione.
+Puntatore a una [**struttura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) Il **membro lpstrFile** di questa struttura contiene il nome file che ha causato la violazione di condivisione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La routine hook deve restituire uno dei valori seguenti per indicare la modalità di gestione della violazione di condivisione da parte della finestra di dialogo.
+La routine hook deve restituire uno dei valori seguenti per indicare in che modo la finestra di dialogo deve gestire la violazione di condivisione.
 
 
 
 | Codice/valore restituito                                                                                                                                           | Descrizione                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**OFN \_ SHAREFALLTHROUGH**</dt> <dt>2</dt> </dl> | Accetta il nome del file<br/>                                                                                            |
+| <dl> <dt>**OFN \_ SHAREFALLTHROUGH**</dt> <dt>2</dt> </dl> | Accettare il nome del file<br/>                                                                                            |
 | <dl> <dt>**OFN \_ SHARENOWARN**</dt> <dt>1</dt> </dl>      | Rifiutare il nome del file ma non avvisare l'utente. L'applicazione è responsabile della visualizzazione di un messaggio di avviso.<br/> |
-| <dl> <dt>**OFN \_ SHAREWARN**</dt> <dt>0</dt> </dl>        | Rifiutare il nome del file e visualizzare un messaggio di avviso, ovvero lo stesso risultato di una procedura di hook.<br/>       |
+| <dl> <dt>**OFN \_ SHAREWARN**</dt> <dt>0</dt> </dl>        | Rifiutare il nome del file e visualizzare un messaggio di avviso (lo stesso risultato di una procedura hook).<br/>       |
 
 
 
@@ -72,11 +72,11 @@ La routine hook deve restituire uno dei valori seguenti per indicare la modalit�
 
 ## <a name="remarks"></a>Commenti
 
-La routine hook deve specificare la costante **SHAREVISTRING** in una chiamata alla funzione [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) per ottenere l'identificatore del messaggio inviato dalla finestra di dialogo.
+La routine hook deve specificare la **costante SHAREVISTRING** in una chiamata alla funzione [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) per ottenere l'identificatore per il messaggio inviato dalla finestra di dialogo.
 
-La finestra di dialogo Invia il messaggio **SHAREVISTRING** registrato solo se non è stato specificato il flag **OFN \_ SHAREAWARE** nel membro **Flags** della struttura [**OpenFileName**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) quando è stata creata la finestra di dialogo.
+La finestra di dialogo invia il messaggio registrato **SHAREVISTRING** solo se non è stato specificato il flag **OFN \_ SHAREAWARE** nel membro **Flags** della struttura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) al momento della creazione della finestra di dialogo.
 
-Se la routine hook restituisce un valore non definito, la finestra di dialogo risponde come se **OFN \_ SHAREWARN** fosse stato restituito.
+Se la routine hook restituisce un valore non definito, la finestra di dialogo risponde come se fosse stato restituito **OFN \_ SHAREWARN.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,7 +86,7 @@ Se la routine hook restituisce un valore non definito, la finestra di dialogo ri
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **SHAREVISTRINGW** (Unicode) e **SHAREVISTRINGA** (ANSI)<br/>                                    |
 
 
@@ -98,7 +98,7 @@ Se la routine hook restituisce un valore non definito, la finestra di dialogo ri
 **Riferimento**
 </dt> <dt>
 
-[**SHAREVIOLATION rete CDN \_**](cdn-shareviolation.md)
+[**CONDIVISIONE DELLA \_ RETE CDNVIOLATION**](cdn-shareviolation.md)
 </dt> <dt>
 
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
@@ -110,7 +110,7 @@ Se la routine hook restituisce un valore non definito, la finestra di dialogo ri
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
 
  
