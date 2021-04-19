@@ -1,0 +1,39 @@
+---
+description: Di seguito sono riportati i metodi MSPI standard che devono essere implementati da tutti MSPs. La documentazione principale per questi metodi è disponibile nella sezione di riferimento MSPI (Media Service Provider Interface).
+ms.assetid: 22d4828e-f439-44ca-aa6c-f7f18c5fd64f
+title: Metodi MSPI di CMSPAddress implementati
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 7ed19bbacc13990d052c35bda68f97db80ff68ac
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "106317651"
+---
+# <a name="cmspaddress-mspi-methods-implemented"></a>Metodi MSPI di CMSPAddress implementati
+
+Di seguito sono riportati i metodi MSPI standard che devono essere implementati da tutti MSPs. La documentazione principale per questi metodi è disponibile nella sezione di [riferimento MSPI (Media Service Provider Interface)](media-service-provider-interface-mspi-reference.md) .
+
+
+
+| Metodi CMSPAddress                                                                          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                        |
+|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**Inizializzare**](/windows/desktop/api/msp/nf-msp-itmspaddress-initialize)                                                | (Interfaccia [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) Chiamato da TAPI3 quando questo MSP viene creato per la prima volta.                                                                                                                                                                                                                                                                                                   |
+| [**Arresto**](/windows/desktop/api/msp/nf-msp-itmspaddress-shutdown)                                                    | (Interfaccia [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) Chiamato da TAPI3 quando questo indirizzo non è più usato.                                                                                                                                                                                                                                                                                         |
+| [**ReceiveTSPData**](/windows/desktop/api/msp/nf-msp-itmspaddress-receivetspdata)                                        | (Interfaccia [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) Chiamato da TAPI3 quando il TSP invia i dati a questo oggetto dell'indirizzo MSP.                                                                                                                                                                                                                                                                               |
+| [**GetEvent**](/windows/desktop/api/msp/nf-msp-itmspaddress-getevent)                                                    | (Interfaccia [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) Chiamato da TAPI3 per ottenere informazioni dettagliate su un evento.                                                                                                                                                                                                                                                                                       |
+| [**ottenere \_ StaticTerminals**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-get_staticterminals)                        | (Interfaccia [**ITTerminalSupport**](/windows/win32/api/tapi3if/nn-tapi3if-itterminalsupport)) Wrapper di automazione OLE per la funzione di supporto [**GetStaticTerminals**](/windows/desktop/api/Mspaddr/nf-mspaddr-cmspaddress-getstaticterminals).                                                                                                                                                                                                                            |
+| [**EnumerateStaticTerminals**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-enumeratestaticterminals)               | (Interfaccia [**ITTerminalSupport**](/windows/win32/api/tapi3if/nn-tapi3if-itterminalsupport)) Wrapper di enumerazione per la funzione di supporto [**GetStaticTerminals**](/windows/desktop/api/Mspaddr/nf-mspaddr-cmspaddress-getstaticterminals).                                                                                                                                                                                                                               |
+| [**ottenere \_ DynamicTerminalClasses**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-get_dynamicterminalclasses)          | (Interfaccia [**ITTerminalSupport**](/windows/win32/api/tapi3if/nn-tapi3if-itterminalsupport)) Wrapper di automazione OLE per la funzione di supporto [**GetDynamicTerminalClasses**](/windows/desktop/api/Mspaddr/nf-mspaddr-cmspaddress-getdynamicterminalclasses).                                                                                                                                                                                                              |
+| [**EnumerateDynamicTerminalClasses**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-enumeratedynamicterminalclasses) | (Interfaccia [**ITTerminalSupport**](/windows/win32/api/tapi3if/nn-tapi3if-itterminalsupport)) Wrapper di enumerazione per la funzione di supporto [**GetDynamicTerminalClasses**](/windows/desktop/api/Mspaddr/nf-mspaddr-cmspaddress-getdynamicterminalclasses).                                                                                                                                                                                                                 |
+| [**CreateTerminal**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-createterminal)                                   | (Interfaccia [**ITTerminalSupport**](/windows/win32/api/tapi3if/nn-tapi3if-itterminalsupport)) Questo metodo viene chiamato dall'applicazione per creare un terminale dinamico. Pianifica un elemento di lavoro nel thread di lavoro di MSP, che, quando eseguito, chiede alla gestione terminal di creare un terminale dinamico. La classe derivata può eseguire l'override di questo metodo per avere la possibilità di creare un terminale dinamico.                                |
+| [**GetDefaultStaticTerminal**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-getdefaultstaticterminal)               | (Interfaccia [**ITTerminalSupport**](/windows/win32/api/tapi3if/nn-tapi3if-itterminalsupport)) Questo metodo viene chiamato dall'applicazione per ottenere il terminale statico predefinito per un tipo e una direzione specificati. Aggiorna l'elenco di terminali predefiniti (se necessario) e restituisce il puntatore a interfaccia. La classe derivata può eseguire l'override di questo metodo per avere la possibilità di decidere quale terminale è l'impostazione predefinita. Blocca gli elenchi di terminali. |
+
+
+
+ 
+
+ 
+
+ 
