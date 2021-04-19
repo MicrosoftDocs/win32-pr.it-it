@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2842236bfd0a2875576af7235aefa5dce2db8bd6
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 355fb59aa6a94e144daf05942b40d3f685daff51
+ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104993288"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107222879"
 ---
 # <a name="format-conversion-functions-hlsl-reference"></a>Funzioni di conversione del formato (riferimento HLSL)
 
@@ -22,6 +22,8 @@ La sezione contiene le funzioni di conversione del formato usate nel calcolo e n
 
 -   [Funzioni del convertitore](#converter-functions)
 -   [Argomenti correlati](#related-topics)
+
+> L'intestazione D3DX_DXGIFormatConvert. inl viene fornita nell'SDK legacy di DirectX e si basa su XNAMath per il supporto di C++. Viene anche incluso nel pacchetto NuGet [Microsoft. DXSDK. D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) . La versione più recente USA DirectXMath per il supporto C++ e tutte le funzioni sono definite nello spazio dei nomi **DirectX** C++.
 
 ## <a name="converter-functions"></a>Funzioni del convertitore
 
@@ -166,10 +168,6 @@ La sezione contiene le funzioni di conversione del formato usate nel calcolo e n
 [Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
-
-
-
-
+ 
