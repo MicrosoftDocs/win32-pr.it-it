@@ -1,15 +1,15 @@
 ---
 description: L'oggetto Certificate espone le proprietà seguenti.
 ms.assetid: 783C243F-829A-40D0-980C-F6DA2E1C8EC7
-title: Proprietà certificato
+title: Proprietà certificato (nodo)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d3b2bc72d2bbb4de00a2c0a94d0587455d0c772
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83d5e7b126741d3acd8470e2473347d1f71369b7
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310948"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388897"
 ---
 # <a name="certificate-properties-node"></a>Proprietà certificato (nodo)
 
