@@ -1,0 +1,33 @@
+---
+title: IUnknown ed ereditarietà dell'interfaccia
+description: IUnknown ed ereditarietà dell'interfaccia
+ms.assetid: c45f0947-6020-4aa1-9250-561603a46a68
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: 9ce4d9d164607745b78001bb92b7dc5331296abe
+ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "106300534"
+---
+# <a name="iunknown-and-interface-inheritance"></a><span data-ttu-id="abb18-103">IUnknown ed ereditarietà dell'interfaccia</span><span class="sxs-lookup"><span data-stu-id="abb18-103">IUnknown and Interface Inheritance</span></span>
+
+<span data-ttu-id="abb18-104">L'ereditarietà in COM non implica il riutilizzo del codice.</span><span class="sxs-lookup"><span data-stu-id="abb18-104">Inheritance in COM does not mean code reuse.</span></span> <span data-ttu-id="abb18-105">Poiché non vi sono implementazioni associate a interfacce, l'ereditarietà dell'interfaccia non implica l'ereditarietà del codice.</span><span class="sxs-lookup"><span data-stu-id="abb18-105">Because no implementations are associated with interfaces, interface inheritance does not mean code inheritance.</span></span> <span data-ttu-id="abb18-106">Significa solo che il contratto associato a un'interfaccia viene ereditato in una classe di base virtuale pura C++ e modificato, aggiungendo nuovi metodi o qualificando ulteriormente l'utilizzo consentito dei metodi.</span><span class="sxs-lookup"><span data-stu-id="abb18-106">It means only that the contract associated with an interface is inherited in a C++ pure-virtual base-class fashion and modified — either by adding new methods or by further qualifying the allowed usage of methods.</span></span> <span data-ttu-id="abb18-107">In COM non esiste alcuna ereditarietà selettiva.</span><span class="sxs-lookup"><span data-stu-id="abb18-107">There is no selective inheritance in COM.</span></span> <span data-ttu-id="abb18-108">Se un'interfaccia eredita da un'altra, include tutti i metodi definiti dall'altra interfaccia.</span><span class="sxs-lookup"><span data-stu-id="abb18-108">If one interface inherits from another, it includes all the methods that the other interface defines.</span></span>
+
+<span data-ttu-id="abb18-109">L'ereditarietà viene utilizzata sporadicamente nelle interfacce COM predefinite.</span><span class="sxs-lookup"><span data-stu-id="abb18-109">Inheritance is used sparingly in the predefined COM interfaces.</span></span> <span data-ttu-id="abb18-110">Tutte le interfacce predefinite (e tutte le interfacce personalizzate definite) ereditano le definizioni dall'interfaccia [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown)importante, che contiene tre metodi fondamentali: [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)e [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).</span><span class="sxs-lookup"><span data-stu-id="abb18-110">All predefined interfaces (and any custom interfaces you define) inherit their definitions from the important interface [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown), which contains three vital methods: [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref), and [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).</span></span> <span data-ttu-id="abb18-111">Tutti gli oggetti COM devono implementare l'interfaccia **IUnknown** perché fornisce i mezzi, usando **QueryInterface**, per spostarsi liberamente tra le diverse interfacce supportate da un oggetto e i mezzi per gestirne la durata usando **AddRef** e **Release**.</span><span class="sxs-lookup"><span data-stu-id="abb18-111">All COM objects must implement the **IUnknown** interface because it provides the means, using **QueryInterface**, to move freely between the different interfaces that an object supports as well as the means to manage its lifetime by using **AddRef** and **Release**.</span></span>
+
+<span data-ttu-id="abb18-112">Quando si crea un oggetto che supporta l' [aggregazione](aggregation.md), è necessario implementare un set di funzioni [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) per tutte le interfacce e un'interfaccia **IUnknown** autonoma.</span><span class="sxs-lookup"><span data-stu-id="abb18-112">In creating an object that supports [aggregation](aggregation.md), you would need to implement one set of [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) functions for all interfaces as well as a stand-alone **IUnknown** interface.</span></span> <span data-ttu-id="abb18-113">In ogni caso, qualsiasi implementatore di oggetti implementerà i metodi **IUnknown** .</span><span class="sxs-lookup"><span data-stu-id="abb18-113">In any case, any object implementor will implement **IUnknown** methods.</span></span> <span data-ttu-id="abb18-114">Per ulteriori informazioni, vedere la sezione [utilizzo e implementazione di IUnknown](using-and-implementing-iunknown.md) .</span><span class="sxs-lookup"><span data-stu-id="abb18-114">See the section [Using and Implementing IUnknown](using-and-implementing-iunknown.md) for more information.</span></span>
+
+<span data-ttu-id="abb18-115">Sebbene esistano alcune interfacce che ereditano le definizioni da una seconda interfaccia oltre a [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown), la maggior parte eredita semplicemente i metodi di interfaccia **IUnknown** .</span><span class="sxs-lookup"><span data-stu-id="abb18-115">While there are a few interfaces that inherit their definitions from a second interface in addition to [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown), the majority simply inherit the **IUnknown** interface methods.</span></span> <span data-ttu-id="abb18-116">In questo modo, la maggior parte delle interfacce risulta relativamente compatta e facile da incapsulare.</span><span class="sxs-lookup"><span data-stu-id="abb18-116">This makes most interfaces relatively compact and easy to encapsulate.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="abb18-117">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="abb18-117">Related topics</span></span>
+
+<dl> <dt>
+
+[<span data-ttu-id="abb18-118">Oggetti e interfacce COM</span><span class="sxs-lookup"><span data-stu-id="abb18-118">COM Objects and Interfaces</span></span>](com-objects-and-interfaces.md)
+</dt> </dl>
+
+ 
+
+ 
