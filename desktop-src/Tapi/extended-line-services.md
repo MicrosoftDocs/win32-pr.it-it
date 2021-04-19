@@ -1,0 +1,42 @@
+---
+description: I servizi di linea estesa (o i servizi linea specifici del dispositivo) includono tutte le estensioni definite dal provider di servizi per TSPI.
+ms.assetid: 23519d23-27bd-422e-b3c4-00e0d0d93f9e
+title: Servizi linea estesa
+ms.topic: article
+ms.date: 05/31/2018
+ms.openlocfilehash: dbc1ce08d25633d33fd518d8686271c198ca5034
+ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "106311896"
+---
+# <a name="extended-line-services"></a>Servizi linea estesa
+
+I servizi di linea estesa (o i servizi linea specifici del dispositivo) includono tutte le estensioni definite dal provider di servizi per TSPI. TSPI definisce un meccanismo che consente ai fornitori del provider di servizi di estendere la telefonia SPI usando estensioni specifiche del dispositivo. TSPI definisce solo il meccanismo di estensione e, in questo modo, fornisce l'accesso alle estensioni specifiche del dispositivo, ma TSPI non ne definisce il comportamento. Il comportamento è completamente definito dal provider di servizi.
+
+La telefonia SPI è costituita da definizioni di costanti e flag di bit, strutture di dati, funzioni e messaggi di callback. Sono definite procedure che consentono a un fornitore di estendere la maggior parte di queste come indicato di seguito.
+
+Per le costanti di dati scalari estendibili, un fornitore del provider di servizi può definire nuovi valori in un intervallo specificato. Poiché la maggior parte delle costanti di dati è **DWORD** s, in genere l'intervallo 0x00000000 tramite 0x7FFFFFFF è riservato per le estensioni future comuni, mentre 0X80000000 tramite 0xFFFFFFFF sono disponibili per le estensioni specifiche del fornitore. Il presupposto è che un fornitore definisca i valori che sono estensioni naturali dei tipi di databases definiti da TSPI.
+
+Per le costanti di dati dei flag di bit estendibili, un fornitore del provider di servizi può definire nuovi valori per i bit specificati. Poiché la maggior parte delle costanti dei flag di bit sono **DWORD** s, in genere un numero specifico di bit inferiori è riservato per le estensioni comuni, mentre i bit superiori rimanenti sono disponibili per le estensioni specifiche del fornitore. I flag di bit comuni sono assegnati da zero bit. le estensioni specifiche del fornitore devono essere assegnate dal bit 31 verso il basso. Ciò garantisce la massima flessibilità nell'assegnazione di posizioni di bit a estensioni comuni rispetto alle estensioni specifiche del fornitore. Si prevede che un fornitore definisca nuovi valori che sono estensioni naturali dei flag di bit definiti da TSPI.
+
+Le strutture di dati estendibili hanno un campo di dimensioni sempre più riservato per l'uso specifico del dispositivo. Con la stessa dimensione, il provider di servizi decide la quantità di informazioni e l'interpretazione. Si prevede che un fornitore che definisce un campo specifico del dispositivo renda le estensioni naturali della struttura di dati originale definita da TSPI.
+
+Due funzioni, [**TSPI \_ LineDevSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific) e [**TSPI \_ lineDevSpecificFeature**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecificfeature)e quattro messaggi correlati, [**linea \_ DEVSPECIFIC**](/previous-versions/windows/desktop/legacy/ms725225(v=vs.85)), [**linea \_ CALLDEVSPECIFIC**](line-calldevspecific.md), [**linea \_ DEVSPECIFICFEATURE**](/previous-versions/windows/desktop/legacy/ms725227(v=vs.85))e [**riga \_ CALLDEVSPECIFICFEATURE**](line-calldevspecificfeature.md), offrono un meccanismo di estensione specifico del fornitore. L'operazione **TSPI \_ lineDevSpecific** e \_ i messaggi linea associati DEVSPECIFIC e linea \_ CALLDEVSPECIFIC consentono all'applicazione client di Tapi32.dll di accedere alle funzionalità di riga, indirizzo o chiamata specifiche del dispositivo che non sono disponibili nei servizi di telefonia di base o supplementari. Il profilo del parametro della [**funzione \_ lineDevSpecific TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific) è generico in quanto la minima interpretazione dei parametri viene apportata da TSPI. I parametri di handle di dispositivo hanno significati definiti da TSPI e vengono convertiti in modo appropriato tra l'applicazione e il provider di servizi. I parametri generici vengono semplicemente passati senza modifiche. L'interpretazione dei parametri generici è definita dal provider di servizi e deve essere riconosciuta da tutte le applicazioni che le utilizzano. Un'applicazione che si basa su estensioni specifiche del dispositivo in genere non funziona con altri provider di servizi. Tuttavia, le applicazioni scritte interamente nei servizi di telefonia di base e supplementare dovrebbero funzionare con il provider di servizi esteso.
+
+L'implementazione TAPI dei messaggi e delle funzioni specifiche del dispositivo è "pass-through". TAPI non esamina né modifica i buffer e i parametri generici specifici del dispositivo, ma esegue il mapping dei valori di handle opachi a livello di applicazione (usati a livello TAPI) ai valori di handle opachi a livello di provider di servizi (usati a livello TSPI).
+
+Per quanto riguarda la traduzione dell'handle, la natura passthrough delle parti generiche di estensioni specifiche del dispositivo ha una conseguenza importante. Un provider di servizi non ha modo di correlare gli handle usati a livello di TSPI a quelli a livello di TAPI, fatta eccezione per il passaggio attraverso i parametri e i campi predefiniti dell'handle. Qualsiasi handle inserito nell'area di estensione generica non viene convertito da TAPI mentre viene passato tra l'applicazione e il provider di servizi. La finestra di progettazione di un'estensione del provider di servizi non deve in genere definire estensioni che passano handle in questo modo.
+
+L'approccio appropriato per la definizione di un'estensione specifica del dispositivo che deve fare riferimento a dispositivi specifici senza usare handle consiste nel fare riferimento ad essi usando l'identificazione del dispositivo assoluta. L'identificatore del dispositivo usato per l'apertura di una linea a livello di TAPI, ad esempio, è esclusivamente lo stesso valore usato a livello di TSPI per aprire la riga. Analogamente, una tupla (identificatore del dispositivo di linea e identificatore di indirizzo) che identifica in modo univoco un indirizzo a livello di TAPI usa gli stessi valori per identificare la stessa operazione a livello di TSPI.
+
+Per praticità, viene fornita anche una funzione di escape più specializzata. È simile a [**TSPI \_ lineDevSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecific), ma inserisce l'interpretazione su alcuni parametri. La funzione [**TSPI \_ lineDevSpecificFeature**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecificfeature) e i messaggi della [**riga associata \_ DEVSPECIFICFEATURE**](/previous-versions/windows/desktop/legacy/ms725227(v=vs.85)) e [**line \_ CALLDEVSPECIFICFEATURE**](line-calldevspecificfeature.md) consentono a TAPI di emulare il pulsante di stampa sul telefono delle funzionalità della riga. Poiché i telefoni delle funzionalità e i significati dei pulsanti sono specifici del fornitore, la chiamata di funzionalità con **TSPI \_ lineDevSpecificFeature** è anche specifica del fornitore.
+
+Per riepilogare, la [**funzione \_ LineDevSpecificFeature di TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_linedevspecificfeature) è una funzione di escape specifica del dispositivo per consentire l'invio di funzionalità switch al Commuter. Il messaggio di [**riga \_ CALLDEVSPECIFICFEATURE**](line-calldevspecificfeature.md) è un messaggio specifico del dispositivo inviato al callback dell'applicazione come indicazione delle funzionalità relative alle chiamate inviate al Commuter. [**Riga \_ di DEVSPECIFICFEATURE**](/previous-versions/windows/desktop/legacy/ms725227(v=vs.85)) è un messaggio specifico del dispositivo inviato al callback dell'applicazione come indicazione delle funzionalità correlate alla riga inviate al Commuter.
+
+Non esiste alcun registro centrale per gli identificatori del produttore. Un generatore identificatore univoco denominato Extidgen.exe viene invece reso disponibile come parte di TSPI. Il fornitore che progetta un set di estensioni specifiche del dispositivo usa questa utilità per ottenere un identificatore univoco per tali estensioni.
+
+ 
+
+ 
