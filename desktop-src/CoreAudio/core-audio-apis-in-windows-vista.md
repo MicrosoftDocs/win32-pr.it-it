@@ -1,0 +1,38 @@
+---
+description: API audio Core
+ms.assetid: 87ca9a31-1bc8-47ea-be00-40159d30e189
+title: API audio Core
+ms.topic: article
+ms.date: 05/31/2018
+ms.custom: project-verbatim
+ms.openlocfilehash: 83488233240121ba2edcfd677484df67a452e479
+ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "106323875"
+---
+# <a name="core-audio-apis"></a><span data-ttu-id="23cf4-103">API audio Core</span><span class="sxs-lookup"><span data-stu-id="23cf4-103">Core Audio APIs</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="23cf4-104">Per esempi di codice, vedere [esempi di SDK che usano le API audio di base](/windows/win32/coreaudio/sdk-samples-that-use-the-core-audio-apis).</span><span class="sxs-lookup"><span data-stu-id="23cf4-104">For code examples, see [SDK samples that use the core audio APIs](/windows/win32/coreaudio/sdk-samples-that-use-the-core-audio-apis).</span></span>
+
+<span data-ttu-id="23cf4-105">In questa documentazione vengono fornite informazioni sulle API (Application Programming Interface) di base per la famiglia di sistemi operativi Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="23cf4-105">This documentation provides information about core audio application programming interfaces (APIs) for the Microsoft Windows family of operating systems.</span></span> <span data-ttu-id="23cf4-106">Fornisce le linee guida per gli sviluppatori di software da seguire per lo sviluppo di applicazioni che utilizzano le API audio di base in Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="23cf4-106">It provides guidelines for software developers to follow in developing applications that use the core audio APIs in Windows Vista.</span></span> <span data-ttu-id="23cf4-107">Queste API erano nuove in Windows Vista e non sono disponibili nelle versioni precedenti di Windows.</span><span class="sxs-lookup"><span data-stu-id="23cf4-107">These APIs were new in Windows Vista and are not available in earlier versions of Windows.</span></span>
+
+<span data-ttu-id="23cf4-108">Le API audio principali forniscono i mezzi per le applicazioni audio per accedere ai dispositivi di endpoint audio, ad esempio cuffie e microfoni.</span><span class="sxs-lookup"><span data-stu-id="23cf4-108">The core audio APIs provide the means for audio applications to access audio endpoint devices such as headphones and microphones.</span></span> <span data-ttu-id="23cf4-109">Le API audio principali servono come base per le API audio di livello superiore, ad esempio Microsoft DirectSound e le funzioni **waveXxx** di Windows Multimedia.</span><span class="sxs-lookup"><span data-stu-id="23cf4-109">The core audio APIs serve as the foundation for higher-level audio APIs such as Microsoft DirectSound and the Windows multimedia **waveXxx** functions.</span></span> <span data-ttu-id="23cf4-110">La maggior parte delle applicazioni comunica con le API di livello superiore, ma alcune applicazioni con requisiti speciali potrebbero dover comunicare direttamente con le API di base dell'audio.</span><span class="sxs-lookup"><span data-stu-id="23cf4-110">Most applications communicate with the higher-level APIs, but some applications with special requirements might need to communicate directly with the core audio APIs.</span></span>
+
+<span data-ttu-id="23cf4-111">A partire da Windows 7, le API esistenti sono state migliorate e sono state aggiunte nuove API per supportare nuovi scenari.</span><span class="sxs-lookup"><span data-stu-id="23cf4-111">Starting with Windows 7, the existing APIs have been improved and new APIs have been added to support new scenarios.</span></span> <span data-ttu-id="23cf4-112">Le API di gestione di flussi e sessioni sono state migliorate in modo che l'applicazione sia ora in grado di enumerare e ottenere il controllo esteso della sessione audio.</span><span class="sxs-lookup"><span data-stu-id="23cf4-112">The stream and session management APIs have been improved so that the application can now enumerate and get extended control over the audio session.</span></span> <span data-ttu-id="23cf4-113">Usando le nuove API, l'applicazione può implementare un'esperienza di attenuazione dei flussi personalizzata.</span><span class="sxs-lookup"><span data-stu-id="23cf4-113">By using the new APIs, the application can implement a custom stream attenuation experience.</span></span> <span data-ttu-id="23cf4-114">Le nuove API correlate ai dispositivi forniscono l'accesso alle proprietà del driver dei dispositivi endpoint.</span><span class="sxs-lookup"><span data-stu-id="23cf4-114">New device-related APIs provide access to the driver properties of the endpoint devices.</span></span>
+
+<span data-ttu-id="23cf4-115">Questa documentazione include le sezioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="23cf4-115">This documentation includes the following sections.</span></span>
+
+| <span data-ttu-id="23cf4-116">Sezione</span><span class="sxs-lookup"><span data-stu-id="23cf4-116">Section</span></span>                                                                    | <span data-ttu-id="23cf4-117">Descrizione</span><span class="sxs-lookup"><span data-stu-id="23cf4-117">Description</span></span>                                                                       |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [<span data-ttu-id="23cf4-118">Informazioni sulle API audio di Windows Core</span><span class="sxs-lookup"><span data-stu-id="23cf4-118">About the Windows Core Audio APIs</span></span>](about-the-windows-core-audio-apis.md) | <span data-ttu-id="23cf4-119">Viene fornita una panoramica delle API audio di Windows Core e vengono descritti i concetti di base.</span><span class="sxs-lookup"><span data-stu-id="23cf4-119">Provides an overview of the Windows core audio APIs and describes basic concepts.</span></span> |
+| [<span data-ttu-id="23cf4-120">Guida per programmatori</span><span class="sxs-lookup"><span data-stu-id="23cf4-120">Programming Guide</span></span>](programming-guide.md)                                 | <span data-ttu-id="23cf4-121">Vengono descritte le principali funzionalità delle API audio principali e le relative modalità di utilizzo.</span><span class="sxs-lookup"><span data-stu-id="23cf4-121">Describes the key features of the core audio APIs and how to use them.</span></span>            |
+| [<span data-ttu-id="23cf4-122">Guida di riferimento alla programmazione</span><span class="sxs-lookup"><span data-stu-id="23cf4-122">Programming Reference</span></span>](programming-reference.md)                         | <span data-ttu-id="23cf4-123">Fornisce informazioni di riferimento su C++ per le API audio di base.</span><span class="sxs-lookup"><span data-stu-id="23cf4-123">Provides C++ reference information for the core audio APIs.</span></span>                       |
+
+## <a name="related-topics"></a><span data-ttu-id="23cf4-124">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="23cf4-124">Related topics</span></span>
+
+<span data-ttu-id="23cf4-125">[Tecnologie multimediali per Windows](/previous-versions/bg125389(v=msdn.10))</span><span class="sxs-lookup"><span data-stu-id="23cf4-125">[Media Technologies for Windows](/previous-versions/bg125389(v=msdn.10))</span></span>
+
+[<span data-ttu-id="23cf4-126">Esempi di SDK che usano le API audio principali</span><span class="sxs-lookup"><span data-stu-id="23cf4-126">SDK samples that use the core audio APIs</span></span>](/windows/win32/coreaudio/sdk-samples-that-use-the-core-audio-apis)
