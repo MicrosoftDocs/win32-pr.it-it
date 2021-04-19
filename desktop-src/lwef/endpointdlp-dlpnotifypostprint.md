@@ -1,0 +1,77 @@
+---
+description: Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione di stampa.
+title: Funzione DlpNotifyPostPrint (endpointdlp.h)
+ms.topic: reference
+ms.date: 03/18/2021
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- DlpNotifyPostPrint
+api_type:
+- DllExport
+api_location:
+- EndpointDlp.dll
+ms.openlocfilehash: b1206aa4e358e0763c10a0d9b5028acae25f5683
+ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107495660"
+---
+# <a name="dlpnotifypostprint-function"></a>Funzione DlpNotifyPostPrint
+
+Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione di stampa.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+void WINAPI DlpNotifyPostPrint(_In_ const PDLP_DOCUMENT_INFO DocumentInfo, _In_ const PDLP_PRINT_INFO PrintInfo, _In_ const PDLP_POSTOP_STATUS OpStatus);
+```
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*DocumentInfo* \[ Pollici\]
+</dt> <dd>
+
+Puntatore a una [struttura PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) contenente informazioni sul documento associato all'operazione di stampa.
+
+</dd> </dl>
+
+<dl> <dt>
+
+*PrintInfo* \[ Pollici\]
+</dt> <dd>
+
+Puntatore a una [struttura DLP_PRINT_INFO](endpointdlp-dlp_print_info.md) contenente informazioni sull'operazione di stampa.
+
+</dd> </dl>
+
+<dl> <dt>
+
+*Stato operativo* \[ Pollici\]
+</dt> <dd>
+
+Puntatore a una struttura [DLP_POSTOP_STATUS](enpointdlp-dlp_postop_status.md) contenente informazioni sullo stato relative all'operazione di stampa.
+
+</dd> </dl>
+
+
+## <a name="return-value"></a>Valore restituito
+
+Restituisce void.
+
+## <a name="remarks"></a>Osservazioni
+
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito          |    Valore                   |
+|-------------------------------------|-----------------------------------------------------------------------------------------|
+| Client minimo supportato<br/> | Windows 10, versione 1809 (10.0; Build 17763)           |
+| DLL<br/>                      | EndpointDlp.dll |
