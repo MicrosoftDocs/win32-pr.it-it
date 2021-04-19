@@ -4,7 +4,7 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_Compression
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Compressione
+title: Compressione (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 8dc3acd6-5997-47a5-bd30-899569b9aad9
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: a40c9d68dbe9e619afa3a1bc18bd2d14cfcb3cfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5796afb061bdc758bba020384501699fe3627e16
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306813"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388841"
 ---
 # <a name="span-idwwan_profile_v4element_1_compressionspanmodemdmconfigprofilecompression-v4"></a><span id="WWAN_profile_v4.element_1_Compression"></span>ModemDMConfigProfile \/ ... \/ Compressione (v4)
 

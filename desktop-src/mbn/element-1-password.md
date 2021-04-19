@@ -4,7 +4,7 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_Password
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Password
+title: Password (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 6345870c-631e-42cc-9487-14d37215d1d2
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7e4e2ce82f67251eb0ccff03364817a2fcd8c8b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2337f13cb9649f6c0baeefa905d03093fd317bf
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129038"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388778"
 ---
 # <a name="span-idwwan_profile_v4element_1_passwordspanmodemdmconfigprofilepassword-v4"></a><span id="WWAN_profile_v4.element_1_Password"></span>ModemDMConfigProfile \/ ... \/ Password (v4)
 

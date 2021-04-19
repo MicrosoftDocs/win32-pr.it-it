@@ -1,19 +1,19 @@
 ---
-description: Specifica l'URL fornito come hint di importazione per un elemento WSDL o XSD a cui si fa riferimento all'interno di un altro file WSDL.
+description: Specifica l'URL fornito come hint di importazione per un WSDL o XSD a cui si fa riferimento all'interno di un altro WSDL.
 ms.assetid: ba489fd7-2304-426e-83a0-d174bb394065
 title: location (elemento)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a82f4f95e9d66dce2d2f17aba5b86ce1ad4581d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 547160b30299b1143ae2255925f520712fcc63ce
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755327"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380675"
 ---
 # <a name="location-element"></a>location (elemento)
 
-Specifica l'URL fornito come hint di importazione per un elemento WSDL o XSD a cui si fa riferimento all'interno di un altro file WSDL.
+Specifica l'URL fornito come hint di importazione per un WSDL o XSD a cui si fa riferimento all'interno di un altro WSDL.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                     | Descrizione                                                                                                                             |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**importHint**](importhint.md)<br/> | Specifica il percorso di download per un <WSDL: Import> direttiva che non specifica in modo esplicito una posizione.<br/> <br/> |
+| [**importHint**](importhint.md)<br/> | Specifica il percorso di download per una \<wsdl:import> direttiva che non specifica in modo esplicito un percorso.<br/> <br/> |
 
 
 

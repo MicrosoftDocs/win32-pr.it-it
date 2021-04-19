@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b56f1bd17085db8e7efd59c3cc45428ac18d01f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31f35df0e5d7e6939797a06da215ac7566380257
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313113"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388547"
 ---
 # <a name="jet_ossnapidtostring-method"></a>JET_OSSNAPID. Metodo ToString
 

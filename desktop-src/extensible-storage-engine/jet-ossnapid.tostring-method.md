@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: JET_OSSNAPID. Elenco di overload del metodo ToString'
-title: JET_OSSNAPID. Metodo ToString
+title: JET_OSSNAPID. Elenco di overload del metodo ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_OSSNAPID.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid.tostring(v=EXCHG.10)
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: c14d8535315e332ad5af4a64ed1e85ed8ced35bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c920ff6213c1e4a706426ac0a1a1bf12f7e25fa
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104566561"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388596"
 ---
 # <a name="jet_ossnapidtostring-method-overload-list"></a>JET_OSSNAPID. Elenco di overload del metodo ToString
 

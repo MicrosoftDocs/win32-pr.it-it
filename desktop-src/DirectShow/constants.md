@@ -1,15 +1,15 @@
 ---
 description: Costanti DirectShow
 ms.assetid: 9c800d17-1bca-4fcb-940b-3477dc700ce3
-title: Costanti
+title: Costanti DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfadae57e60f90c8fea6e78062b0f14a8298abeb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 27800dd31115e303c6330557b5f835fc79885f83
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482148"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389044"
 ---
 # <a name="directshow-constants"></a>Costanti DirectShow
 
