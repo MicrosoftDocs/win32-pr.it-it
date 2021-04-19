@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CDN_SELCHANGE (COMMDLG. h)
-description: Inviato da una finestra di dialogo Apri o Salva con nome in stile esploratore quando la selezione viene modificata nella casella di riepilogo in cui viene visualizzato il contenuto della cartella o della directory attualmente aperta.
+title: CDN_SELCHANGE di notifica (Commdlg.h)
+description: Inviato da una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse quando la selezione viene modificata nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
 ms.assetid: e622babf-7024-45c5-a8db-f80896f69140
 keywords:
-- Finestre di dialogo CDN_SELCHANGE codice di notifica
+- CDN_SELCHANGE di dialogo del codice di notifica
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e2f0f5a7860c7d729340a84bd80bc4e5713c733
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5a5c7aed47d02fb7c7fcf2232b144e7a99e7c46
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476678"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590754"
 ---
-# <a name="cdn_selchange-notification-code"></a>Codice di notifica SelChange della rete CDN \_
+# <a name="cdn_selchange-notification-code"></a>Codice di notifica \_ SELCHANGE della rete CDN
 
-\[A partire da Windows Vista, le finestre di dialogo **Apri** e **Salva come** comuni sono state sostituite dalla [finestra di dialogo elemento comune](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). È consigliabile usare l'API della finestra di dialogo elemento comune anziché queste finestre di dialogo dalla libreria di finestre di dialogo comuni.\]
+\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
-Inviato da una finestra di dialogo **Apri** o **Salva con nome** in stile esploratore quando la selezione viene modificata nella casella di riepilogo in cui viene visualizzato il contenuto della cartella o della directory attualmente aperta.
+Inviato da una  finestra  di dialogo Apri o Salva con nome di tipo Esplora risorse quando la selezione cambia nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
 
-La procedura [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) hook riceve questo messaggio sotto forma di messaggio di [**\_ notifica WM**](../controls/wm-notify.md) .
+La procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) riceve questo messaggio sotto forma di messaggio [**WM \_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,7 +51,7 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . La struttura **OFNOTIFY** contiene una struttura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro di **codice** indica il messaggio di notifica **\_ selChange** della rete CDN.
+Puntatore a una [**struttura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **struttura OFNOTIFY** contiene una [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro **di** codice indica il messaggio di **notifica \_ SELCHANGE della rete CDN.**
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Questa notifica viene inviata dal sistema solo se la finestra di dialogo è stata creata con il valore di **OFN \_ Explorer** .
+Il sistema invia questa notifica solo se la finestra di dialogo è stata creata usando il **valore OFN \_ EXPLORER.**
 
-Per ottenere il nome del file o della cartella appena selezionata, la procedura hook può inviare il messaggio [**CDM \_ filePath**](cdm-getfilepath.md) o [**CDM \_ getspec**](cdm-getspec.md) alla finestra di dialogo.
+Per ottenere il nome del file o della cartella appena selezionata, la procedura hook può inviare il messaggio [**\_ CDM GETFILEPATH**](cdm-getfilepath.md) o [**CDM \_ GETSPEC**](cdm-getspec.md) alla finestra di dialogo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Per ottenere il nome del file o della cartella appena selezionata, la procedura 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -84,13 +84,13 @@ Per ottenere il nome del file o della cartella appena selezionata, la procedura 
 **Riferimento**
 </dt> <dt>
 
-[**CDM \_ filePath**](cdm-getfilepath.md)
+[**CDM \_ GETFILEPATH**](cdm-getfilepath.md)
 </dt> <dt>
 
-[**CDM \_ GETspec**](cdm-getspec.md)
+[**CDM \_ GETSPEC**](cdm-getspec.md)
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
 [**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
@@ -105,7 +105,7 @@ Per ottenere il nome del file o della cartella appena selezionata, la procedura 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
 
  
