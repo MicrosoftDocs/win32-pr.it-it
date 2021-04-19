@@ -1,0 +1,82 @@
+---
+description: Salva un oggetto dati e i relativi elementi figlio in un file DirectX. Deprecato.
+ms.assetid: 18bd5ef6-9e17-4c21-bc14-373de8df9ffb
+title: 'Metodo IDirectXFileSaveObject:: SaveData (DXFile. h)'
+ms.topic: reference
+ms.date: 05/31/2018
+topic_type:
+- APIRef
+- kbSyntax
+api_name:
+- IDirectXFileSaveObject.SaveData
+api_type:
+- COM
+api_location:
+- D3dxof.lib
+- D3dxof.dll
+ms.openlocfilehash: cb901bd984e1fcd923d0ea172fb5f387b3a9302a
+ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "106322530"
+---
+# <a name="idirectxfilesaveobjectsavedata-method"></a>Metodo IDirectXFileSaveObject:: SaveData
+
+Salva un oggetto dati e i relativi elementi figlio in un file DirectX. Deprecato.
+
+## <a name="syntax"></a>Sintassi
+
+
+```C++
+HRESULT SaveData(
+  [in] LPDIRECTXFILEDATA pDataObj
+);
+```
+
+
+
+## <a name="parameters"></a>Parametri
+
+<dl> <dt>
+
+*pDataObj* \[ in\]
+</dt> <dd>
+
+Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)**
+
+Puntatore a un'interfaccia [**IDirectXFileData**](idirectxfiledata.md) che rappresenta l'oggetto dati del file da salvare.
+
+</dd> </dl>
+
+## <a name="return-value"></a>Valore restituito
+
+Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
+
+Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: DXFILEERR \_ BADARRAYSIZE, DXFILEERR \_ BADVALUE.
+
+## <a name="requirements"></a>Requisiti
+
+
+
+| Requisito | Valore |
+|--------------------|---------------------------------------------------------------------------------------|
+| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+
+
+
+## <a name="see-also"></a>Vedi anche
+
+<dl> <dt>
+
+[IDirectXFileSaveObject](idirectxfilesaveobject.md)
+</dt> </dl>
+
+ 
+
+ 
+
+
+
+
