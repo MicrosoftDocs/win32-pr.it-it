@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CDN_INCLUDEITEM (COMMDLG. h)
-description: Inviato da una finestra di dialogo Apri o Salva con nome per determinare se nella finestra di dialogo deve essere visualizzato un elemento nell'elenco di elementi di una cartella della shell.
+title: CDN_INCLUDEITEM codice di notifica (Commdlg.h)
+description: Inviato da una finestra di dialogo Apri o Salva con nome per determinare se la finestra di dialogo deve visualizzare un elemento nell'elenco di elementi di una cartella della shell.
 ms.assetid: 0972a78d-e058-4bac-85bd-fbd4c3885552
 keywords:
-- Finestre di dialogo CDN_INCLUDEITEM codice di notifica
+- CDN_INCLUDEITEM finestre di dialogo del codice di notifica
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67cbe830c644657425eb087dd64884da17a9a0c2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a91c61e4a7c2786e67ed28e2c62e5963762659c
+ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742847"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590778"
 ---
-# <a name="cdn_includeitem-notification-code"></a>Codice di notifica INCLUDEITEM della rete CDN \_
+# <a name="cdn_includeitem-notification-code"></a>Codice di notifica \_ INCLUDEITEM della rete CDN
 
-\[A partire da Windows Vista, le finestre di dialogo **Apri** e **Salva come** comuni sono state sostituite dalla [finestra di dialogo elemento comune](/previous-versions/windows/desktop/legacy/bb776913(v=vs.85)). È consigliabile usare l'API della finestra di dialogo elemento comune anziché queste finestre di dialogo dalla libreria di finestre di dialogo comuni.\]
+\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Inviato da una finestra di dialogo **Apri** o **Salva con nome** per determinare se nella finestra di dialogo deve essere visualizzato un elemento nell'elenco di elementi di una cartella della shell. Quando l'utente apre una cartella, la finestra di dialogo Invia una notifica **\_ INCLUDEITEM** della rete CDN per ogni elemento nella cartella. La finestra di dialogo Invia questa notifica solo se è stato impostato il flag **OFN \_ ENABLEINCLUDENOTIFY** quando è stata creata la finestra di dialogo.
+Inviato da una **finestra di dialogo** Apri o Salva con nome per determinare se la finestra di dialogo deve visualizzare un elemento nell'elenco di elementi di una cartella della shell.  Quando l'utente apre una cartella, la finestra di dialogo invia una notifica **\_ INCLUDEITEM della rete CDN** per ogni elemento nella cartella. La finestra di dialogo invia questa notifica solo se il flag **OFN \_ ENABLEINCLUDENOTIFY** è stato impostato al momento della creazione della finestra di dialogo.
 
-La procedura [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) hook riceve questo messaggio sotto forma di messaggio di [**\_ notifica WM**](../controls/wm-notify.md) .
+La procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) riceve questo messaggio sotto forma di messaggio [**WM \_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,11 +51,11 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) .
+Puntatore a una [**struttura OFNOTIFYEX.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa)
 
-La struttura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) contiene una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) il cui membro di **codice** indica il messaggio di notifica **\_ INCLUDEITEM** della rete CDN.
+La [**struttura OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) contiene una [**struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) il cui membro **di** codice indica il messaggio di notifica **\_ INCLUDEITEM della rete CDN.**
 
-Il membro **PSF** della struttura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) è un puntatore a un'interfaccia per la cartella i cui elementi vengono enumerati. Il membro **PIDL** è un puntatore a un elenco di identificatori di elemento che identifica l'elemento relativo alla cartella.
+Il **membro psf** della struttura [**OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) è un puntatore a un'interfaccia per la cartella i cui elementi vengono enumerati. Il **membro pidl** è un puntatore a un elenco di identificatori di elemento che identifica l'elemento relativo alla cartella.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Per includere l'elemento, restituire un valore diverso da zero dalla routine hoo
 
 ## <a name="remarks"></a>Commenti
 
-La finestra di dialogo include sempre elementi con gli attributi **SFGAO \_ filesystem** e **SFGAO \_ FILESYSANCESTOR** , indipendentemente dal valore restituito dalla rete **CDN \_ INCLUDEITEM**.
+La finestra di dialogo include sempre gli elementi con gli attributi **SFGAO \_ FILESYSTEM** e **SFGAO \_ FILESYSANCESTOR,** indipendentemente dal valore restituito dalla rete **CDN \_ INCLUDEITEM**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ La finestra di dialogo include sempre elementi con gli attributi **SFGAO \_ file
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ La finestra di dialogo include sempre elementi con gli attributi **SFGAO \_ file
 **Riferimento**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
 [**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
@@ -103,7 +103,7 @@ La finestra di dialogo include sempre elementi con gli attributi **SFGAO \_ file
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
 
  
