@@ -4,19 +4,19 @@ ms.assetid: 24617b5f-14f1-4f1b-a288-7d20a8166da0
 title: Modifiche di ordinamento NLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0805eae753c1e312d26f8c84e13d19041458cf26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa4935a6874e28270e73904eb352cd6332e650b7
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530145"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314954"
 ---
 # <a name="nls-sorting-changes"></a>Modifiche di ordinamento NLS
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
- **Client** -Windows XP Windows \| Vista Windows \| 7  
-**Server** -windows Server 2003 \| Windows Server 2008 \| Windows Server 2008 R2  
+ **Client** -Windows XP, Windows Vista, Windows 7  
+**Server** : windows Server 2003, windows Server 2008, windows Server 2008 R2  
 
 
 

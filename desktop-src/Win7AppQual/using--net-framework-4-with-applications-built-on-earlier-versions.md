@@ -4,19 +4,19 @@ ms.assetid: 287E25AD-A560-40DA-A4E6-C46A3123914E
 title: Uso di .NET Framework 4 con applicazioni compilate in versioni precedenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ef252d128ae5d3c8f5b85ef486828fb82e152d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b30eb8f4be1c50904b8d5760f456f3fe20bdd3da
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319824"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314944"
 ---
 # <a name="using-net-framework-4-with-applications-built-on-earlier-versions"></a>Uso di .NET Framework 4 con applicazioni compilate in versioni precedenti
 
 ## <a name="platform"></a>Piattaforma
 
- **Client** -Windows XP Windows \| Vista Windows \| 7  
-**Server** -windows Server 2003 \| Windows Server 2008 \| Windows Server 2008 R2  
+ **Client** -Windows XP, Windows Vista, Windows 7  
+**Server** : windows Server 2003, windows Server 2008, windows Server 2008 R2  
 
 
 ## <a name="feature-impact"></a>Effetto sulle funzionalità
