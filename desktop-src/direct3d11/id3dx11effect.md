@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 395946ea4276bc57595abdeb18e7d1755ca0ff1d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 51c9b945f09ad0424ecd6b546aefe68bea276ffc
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996083"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314454"
 ---
 # <a name="id3dx11effect-interface"></a>Interfaccia ID3DX11Effect
 
@@ -89,29 +89,18 @@ Il sistema di effetti raggruppa le informazioni necessarie per il rendering in u
 >     pIUnknown->AddRef();</code></pre></td>
 > </tr>
 > </tbody>
-> </table>
+> </table>>
 >  
->
-> ## <a name="requirements"></a>Requisiti
->
-> 
->
+
+## <a name="requirements"></a>Requisiti
+
 | Requisito | Valore |
-> |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------| | Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    | | Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
->
-> 
->
-> ## <a name="see-also"></a>Vedi anche
->
-> <dl> <dt>
+|-------------|-------------------------------------------------------------------------------------------|
+| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+
+## <a name="see-also"></a>Vedere anche
 
 [Interfacce Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
-</dt> <dt>
 
 [Interfacce D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
-</dt> </dl>
->
->  
->
->  
->
