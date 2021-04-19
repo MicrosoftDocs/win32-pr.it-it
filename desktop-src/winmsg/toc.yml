@@ -4,16 +4,16 @@
     - name: Windows
       href: windows.md
       items:
-        - name: Panoramiche sulle finestre
+        - name: Cenni preliminari sulle finestre
           href: window-overviews.md
           items:
             - name: Informazioni su Windows
               href: about-windows.md
             - name: Funzionalità delle finestre
               href: window-features.md
-            - name: Utilizzo di Windows
+            - name: Uso di Windows
               href: using-windows.md
-        - name: Riferimento alla finestra
+        - name: Informazioni di riferimento sulla finestra
           href: window-reference.md
           items:
             - name: Costanti finestra
@@ -32,7 +32,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-adjustwindowrectex
                 - name: AllowSetForegroundWindow
                   href: /windows/desktop/api/winuser/nf-winuser-allowsetforegroundwindow
-                - name: AnimateWindow
+                - name: Finestra AnimateWindow
                   href: /windows/desktop/api/winuser/nf-winuser-animatewindow
                 - name: AnyPopup
                   href: /windows/desktop/api/winuser/nf-winuser-anypopup
@@ -54,17 +54,17 @@
                   href: /windows/desktop/api/winuser/nf-winuser-childwindowfrompoint
                 - name: ChildWindowFromPointEx
                   href: /windows/desktop/api/winuser/nf-winuser-childwindowfrompointex
-                - name: CloseWindow
+                - name: ChiudiFinestra
                   href: /windows/desktop/api/winuser/nf-winuser-closewindow
-                - name: CreateWindow
+                - name: Createwindow
                   href: /windows/desktop/api/winuser/nf-winuser-createwindowa
                 - name: CreateWindowEx
                   href: /windows/desktop/api/winuser/nf-winuser-createwindowexa
                 - name: DeferWindowPos
                   href: /windows/desktop/api/winuser/nf-winuser-deferwindowpos
-                - name: DeregisterShellHookWindow
+                - name: Annullare la registrazione diShellHookWindow
                   href: /windows/desktop/api/winuser/nf-winuser-deregistershellhookwindow
-                - name: DestroyWindow
+                - name: Destroywindow
                   href: /windows/desktop/api/winuser/nf-winuser-destroywindow
                 - name: EndDeferWindowPos
                   href: /windows/desktop/api/winuser/nf-winuser-enddeferwindowpos
@@ -142,7 +142,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-isguithread
                 - name: IsHungAppWindow
                   href: /windows/desktop/api/winuser/nf-winuser-ishungappwindow
-                - name: IsIconic
+                - name: Isiconic
                   href: /windows/desktop/api/winuser/nf-winuser-isiconic
                 - name: IsProcessDPIAware
                   href: /windows/desktop/api/winuser/nf-winuser-isprocessdpiaware
@@ -158,7 +158,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-locksetforegroundwindow
                 - name: LogicalToPhysicalPoint
                   href: /windows/desktop/api/winuser/nf-winuser-logicaltophysicalpoint
-                - name: MoveWindow
+                - name: Movewindow
                   href: /windows/desktop/api/winuser/nf-winuser-movewindow
                 - name: OpenIcon
                   href: /windows/desktop/api/winuser/nf-winuser-openicon
@@ -174,7 +174,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-setforegroundwindow
                 - name: SetLayeredWindowAttributes
                   href: /windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes
-                - name: SetParent
+                - name: Setparent
                   href: /windows/desktop/api/winuser/nf-winuser-setparent
                 - name: SetProcessDefaultLayout
                   href: /windows/desktop/api/winuser/nf-winuser-setprocessdefaultlayout
@@ -188,7 +188,7 @@
                   href: /previous-versions/windows/desktop/legacy/hh405402(v=vs.85)
                 - name: SetWindowPlacement
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowplacement
-                - name: SetWindowPos
+                - name: Setwindowpos
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowpos
                 - name: SetWindowText
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowtexta
@@ -198,11 +198,11 @@
                   href: /windows/desktop/api/winuser/nf-winuser-showwindow
                 - name: ShowWindowAsync
                   href: /windows/desktop/api/winuser/nf-winuser-showwindowasync
-                - name: Segnali visivi
+                - name: SoundSentry
                   href: /windows/desktop/api/winuser/nf-winuser-soundsentry
                 - name: SwitchToThisWindow
                   href: /windows/desktop/api/winuser/nf-winuser-switchtothiswindow
-                - name: TileWindows
+                - name: RiquadroWindows
                   href: /windows/desktop/api/winuser/nf-winuser-tilewindows
                 - name: UpdateLayeredWindow
                   href: /windows/desktop/api/winuser/nf-winuser-updatelayeredwindow
@@ -214,7 +214,9 @@
                   href: /windows/desktop/api/winuser/nf-winuser-windowfrompoint
                 - name: WinMain
                   href: /windows/desktop/api/winbase/nf-winbase-winmain
-            - name: Macro finestra
+                - name: Wndproc
+                  href: /windows/win32/api/winuser/nc-winuser-wndproc
+            - name: Macro di finestra
               href: window-macros.md
               items:
                 - name: GET_X_LPARAM
@@ -239,12 +241,12 @@
                   href: /previous-versions/windows/desktop/legacy/ms632663(v=vs.85)
                 - name: MAKEWPARAM
                   href: /windows/desktop/api/winuser/nf-winuser-makewparam
-            - name: Messaggi finestra
+            - name: Messaggi di finestra
               href: window-messages.md
               items:
                 - name: MN_GETHMENU
                   href: mn-gethmenu.md
-                - name: WM_ERASEBKGND
+                - name: Wm_erasebkgnd
                   href: wm-erasebkgnd.md
                 - name: WM_GETFONT
                   href: wm-getfont.md
@@ -258,7 +260,7 @@
                   href: wm-seticon.md
                 - name: WM_SETTEXT
                   href: wm-settext.md
-            - name: Notifiche finestra
+            - name: Notifiche della finestra
               href: window-notifications.md
               items:
                 - name: WM_ACTIVATEAPP
@@ -271,7 +273,7 @@
                   href: wm-close.md
                 - name: WM_COMPACTING
                   href: wm-compacting.md
-                - name: WM_CREATE
+                - name: Wm_create
                   href: wm-create.md
                 - name: WM_DESTROY
                   href: wm-destroy.md
@@ -311,7 +313,7 @@
                   href: wm-quit.md
                 - name: WM_SHOWWINDOW
                   href: wm-showwindow.md
-                - name: WM_SIZE
+                - name: Wm_size
                   href: wm-size.md
                 - name: WM_SIZING
                   href: wm-sizing.md
@@ -323,7 +325,7 @@
                   href: wm-themechanged.md
                 - name: WM_USERCHANGED
                   href: wm-userchanged.md
-                - name: WM_WINDOWPOSCHANGED
+                - name: Wm_windowposchanged
                   href: wm-windowposchanged.md
                 - name: WM_WINDOWPOSCHANGING
                   href: wm-windowposchanging.md
@@ -336,7 +338,7 @@
                   href: /windows/win32/api/winuser/ns-winuser-changefilterstruct
                 - name: CLIENTCREATESTRUCT
                   href: /windows/win32/api/winuser/ns-winuser-clientcreatestruct
-                - name: STRUTTURA CREATESTRUCT
+                - name: CREATESTRUCT
                   href: /windows/win32/api/winuser/ns-winuser-createstructa
                 - name: GUITHREADINFO
                   href: /windows/win32/api/winuser/ns-winuser-guithreadinfo
@@ -361,17 +363,17 @@
     - name: Classi di finestra
       href: window-classes.md
       items:
-        - name: Panoramica delle classi finestra
+        - name: Cenni preliminari sulla classe Window
           href: window-class-overviews.md
           items:
-            - name: Informazioni sulle classi finestra
+            - name: Informazioni sulle classi di finestre
               href: about-window-classes.md
-            - name: Uso delle classi finestra
+            - name: Uso delle classi di finestra
               href: using-window-classes.md
-        - name: Riferimento alla classe Window
+        - name: Informazioni di riferimento sulla classe Window
           href: window-class-reference.md
           items:
-            - name: Funzioni della classe di finestra
+            - name: Funzioni della classe Window
               href: window-class-functions.md
               items:
                 - name: GetClassInfo
@@ -390,7 +392,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-getwindowlonga
                 - name: GetWindowLongPtr
                   href: /windows/desktop/api/winuser/nf-winuser-getwindowlongptra
-                - name: RegisterClass
+                - name: Registerclass
                   href: /windows/desktop/api/winuser/nf-winuser-registerclassa
                 - name: RegisterClassEx
                   href: /windows/desktop/api/winuser/nf-winuser-registerclassexa
@@ -400,7 +402,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-setclasslongptra
                 - name: SetClassWord
                   href: /windows/desktop/api/winuser/nf-winuser-setclassword
-                - name: SetWindowLong
+                - name: Setwindowlong
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowlonga
                 - name: SetWindowLongPtr
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowlongptra
@@ -413,19 +415,19 @@
                   href: /windows/win32/api/winuser/ns-winuser-wndclassa
                 - name: WNDCLASSEX
                   href: /windows/win32/api/winuser/ns-winuser-wndclassexa
-            - name: Stili della classe finestra
+            - name: Stili della classe Window
               href: window-class-styles.md
-    - name: Routine della finestra
+    - name: Procedure della finestra
       href: window-procedures.md
       items:
-        - name: Panoramica delle routine della finestra
+        - name: Cenni preliminari sulle procedure della finestra
           href: window-procedure-overviews.md
           items:
-            - name: Informazioni sulle routine della finestra
+            - name: Informazioni sulle procedure della finestra
               href: about-window-procedures.md
-            - name: Utilizzo delle routine della finestra
+            - name: Uso delle procedure della finestra
               href: using-window-procedures.md
-        - name: Guida di riferimento alle procedure della finestra
+        - name: Informazioni di riferimento sulla routine della finestra
           href: window-procedure-reference.md
           items:
             - name: Funzioni di routine della finestra
@@ -440,14 +442,14 @@
     - name: Messaggi e code di messaggi
       href: messages-and-message-queues.md
       items:
-        - name: Panoramica delle code di messaggi e messaggi
+        - name: Cenni preliminari su messaggi e code di messaggi
           href: message-and-message-queue-overviews.md
           items:
             - name: Informazioni sui messaggi e sulle code di messaggi
               href: about-messages-and-message-queues.md
-            - name: Utilizzo di messaggi e code di messaggi
+            - name: Uso di messaggi e code di messaggi
               href: using-messages-and-message-queues.md
-        - name: Riferimento al messaggio
+        - name: Informazioni di riferimento sul messaggio
           href: message-and-message-queue-reference.md
           items:
             - name: Funzioni di messaggio
@@ -501,16 +503,16 @@
                   href: /windows/desktop/api/winuser/nf-winuser-setmessageextrainfo
                 - name: TranslateMessage
                   href: /windows/desktop/api/winuser/nf-winuser-translatemessage
-                - name: WaitMessage
+                - name: Messaggio di attesa
                   href: /windows/desktop/api/winuser/nf-winuser-waitmessage
-            - name: Strutture di messaggi
+            - name: Strutture dei messaggi
               href: message-and-message-queue-structures.md
               items:
                 - name: BSMINFO
                   href: /windows/desktop/api/winuser/ns-winuser-bsminfo
-                - name: MESSAGGIO
+                - name: Msg
                   href: /windows/win32/api/winuser/ns-winuser-msg
-            - name: Costanti messaggio
+            - name: Costanti del messaggio
               href: message-and-message-queue-notifications.md
               items:
                 - name: OCM__BASE
@@ -522,14 +524,14 @@
     - name: Timer
       href: timers.md
       items:
-        - name: Panoramica sui timer
+        - name: Cenni preliminari sui timer
           href: timer-overviews.md
           items:
             - name: Informazioni sui timer
               href: about-timers.md
-            - name: Utilizzo di timer
+            - name: Uso di timer
               href: using-timers.md
-        - name: Riferimento timer
+        - name: Informazioni di riferimento sul timer
           href: timer-reference.md
           items:
             - name: Funzioni timer
@@ -551,17 +553,17 @@
     - name: Proprietà finestra
       href: window-properties.md
       items:
-        - name: Panoramiche sulle proprietà della finestra
+        - name: Cenni preliminari sulle proprietà della finestra
           href: window-property-overviews.md
           items:
             - name: Informazioni sulle proprietà della finestra
               href: about-window-properties.md
             - name: Uso delle proprietà della finestra
               href: using-window-properties.md
-        - name: Riferimento alle proprietà della finestra
+        - name: Informazioni di riferimento sulla proprietà Window
           href: window-property-reference.md
           items:
-            - name: Funzioni di proprietà della finestra
+            - name: Funzioni delle proprietà della finestra
               href: window-property-functions.md
               items:
                 - name: EnumProps
@@ -587,7 +589,7 @@
             - name: Costanti di configurazione
               href: configuration-constants.md
               items:
-                - name: Visualizzazione contatto
+                - name: Visualizzazione dei contatti
                   href: contact-visualization.md
                 - name: Visualizzazione movimenti
                   href: gesture-visualization.md
@@ -595,12 +597,12 @@
                   href: pen-visualization.md
             - name: GetSystemMetrics
               href: /windows/desktop/api/winuser/nf-winuser-getsystemmetrics
-            - name: SystemParametersInfo
+            - name: Systemparametersinfo
               href: /windows/desktop/api/winuser/nf-winuser-systemparametersinfoa
               items:
                 - name: ANIMATIONINFO
                   href: /windows/win32/api/winuser/ns-winuser-animationinfo
-                - name: AUDIODESCRIZIONE
+                - name: AUDIODESCRIPTION
                   href: /windows/win32/api/winuser/ns-winuser-audiodescription
                 - name: MINIMIZEDMETRICS
                   href: /windows/win32/api/winuser/ns-winuser-minimizedmetrics
@@ -610,14 +612,14 @@
                   href: wm-settingchange.md
                 - name: WM_WININICHANGE
                   href: wm-wininichange.md
-    - name: Hook
+    - name: Ganci
       href: hooks.md
       items:
-        - name: Panoramica Hook
+        - name: Panoramica dell'hook
           href: about-hooks.md
         - name: Uso di hook
           href: using-hooks.md
-        - name: Riferimento Hook
+        - name: Informazioni di riferimento su Hook
           href: hook-reference.md
           items:
             - name: Funzioni hook
@@ -653,7 +655,7 @@
                   href: /previous-versions/windows/desktop/legacy/ms644987(v=vs.85)
                 - name: MouseProc
                   href: /previous-versions/windows/desktop/legacy/ms644988(v=vs.85)
-                - name: SetWindowsHookEx
+                - name: Setwindowshookex
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowshookexa
                 - name: ShellProc
                   href: /previous-versions/windows/desktop/legacy/ms644991(v=vs.85)
@@ -661,14 +663,14 @@
                   href: /previous-versions/windows/desktop/legacy/ms644992(v=vs.85)
                 - name: UnhookWindowsHookEx
                   href: /windows/desktop/api/winuser/nf-winuser-unhookwindowshookex
-            - name: Notifiche Hook
+            - name: Notifiche hook
               href: hook-notifications.md
               items:
                 - name: WM_CANCELJOURNAL
                   href: wm-canceljournal.md
                 - name: WM_QUEUESYNC
                   href: wm-queuesync.md
-            - name: Strutture Hook
+            - name: Strutture hook
               href: hook-structures.md
               items:
                 - name: CBT_CREATEWND
@@ -694,14 +696,14 @@
     - name: Interfaccia a documenti multipli (MDI)
       href: multiple-document-interface.md
       items:
-        - name: Visualizzazioni MDI
+        - name: Cenni preliminari su MDI
           href: multiple-document-interface-overviews.md
           items:
-            - name: Informazioni sull'interfaccia a più documenti
+            - name: Informazioni sull'interfaccia a documenti multipli
               href: about-the-multiple-document-interface.md
-            - name: Uso dell'interfaccia a più documenti
+            - name: Uso dell'interfaccia a documenti multipli
               href: using-the-multiple-document-interface.md
-        - name: Riferimento MDI
+        - name: Informazioni di riferimento su MDI
           href: multiple-document-interface-reference.md
           items:
             - name: Funzioni MDI
