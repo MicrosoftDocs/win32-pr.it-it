@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 57693d3952f011127e60fdfb70dd2352c2f15207
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad933c9601dc1a20932550aef363e067458ff79e
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526796"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389030"
 ---
 # <a name="updatesave-method"></a>Metodo Update. Save
 

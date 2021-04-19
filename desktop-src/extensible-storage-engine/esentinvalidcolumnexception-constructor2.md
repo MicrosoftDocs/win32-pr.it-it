@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: EsentInvalidColumnException Overload Constructor List'
-title: Costruttore EsentInvalidColumnException
+title: Elenco di overload del costruttore EsentInvalidColumnException
 TOCTitle: 'EsentInvalidColumnException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentInvalidColumnException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidcolumnexception.esentinvalidcolumnexception(v=EXCHG.10)
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: a4b97f77aa6ee7ad7faae91f7f1cd854ec439cbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0336c8dbb38ef27a73f43206b78fc8f4207cfa9
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550795"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389156"
 ---
 # <a name="esentinvalidcolumnexception-constructor-overload-list"></a>Elenco di overload del costruttore EsentInvalidColumnException
 
