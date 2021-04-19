@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a57ee4edae1cd1604f10a88f3fc8cf2ea0971fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1c9ba2c13053a8c550128f5d66623b5eed3a9dec
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326484"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314634"
 ---
 # <a name="schtasksexe"></a>Schtasks.exe
 
@@ -39,7 +39,7 @@ schtasks /Create
 [/XML xmlfile] [/V1]] [/SD startdate] [/ED enddate] [/IT] [/Z] [/F]
 ```
 
-## <a name="parameters"></a>Parametri
+### <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
@@ -299,7 +299,7 @@ schtasks /Delete
 [/TN taskname] [/F]
 ```
 
-## <a name="parameters"></a>Parametri
+### <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
@@ -355,7 +355,7 @@ schtasks /Run
 /TN taskname
 ```
 
-## <a name="parameters"></a>Parametri
+### <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
@@ -409,7 +409,7 @@ schtasks /End
 /TN taskname
 ```
 
-## <a name="parameters"></a>Parametri
+### <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
@@ -458,7 +458,7 @@ schtasks /Query
 [/FO format | /XML] [/NH] [/V] [/TN taskname] [/?]
 ```
 
-## <a name="parameters"></a>Parametri
+### <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
@@ -546,7 +546,7 @@ schtasks /Change
 [/SD startdate] [/ED enddate] [/ENABLE | /DISABLE] [/IT] [/Z] }
 ```
 
-## <a name="parameters"></a>Parametri
+### <a name="parameters"></a>Parametri
 
 <dl> <dt>
 

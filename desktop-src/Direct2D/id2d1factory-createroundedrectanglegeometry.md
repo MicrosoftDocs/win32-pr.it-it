@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateRoundedRectangleGeometry di ID2D1Factory (D2d1. h)
+title: Metodi ID2D1Factory CreateRoundedRectangleGeometry (D2d1.h)
 description: Crea un ID2D1RoundedRectangleGeometry.
 ms.assetid: b0f7ccb0-5733-4f96-a532-8f665fbc257e
 keywords:
-- Metodo CreateRoundedRectangleGeometry Direct2D
+- Metodi CreateRoundedRectangleGeometry Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 0ea6761796dd45a504564b71c79a25a91a2a3697
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dcb32b47b59c50bb9ba5f8d6747eed0dc54409ec
+ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325795"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107380817"
 ---
-# <a name="id2d1factorycreateroundedrectanglegeometry-methods"></a>Metodi ID2D1Factory:: CreateRoundedRectangleGeometry
+# <a name="id2d1factorycreateroundedrectanglegeometry-methods"></a>Metodi ID2D1Factory::CreateRoundedRectangleGeometry
 
-Crea un [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)).
+Crea un [**id2D1RoundedRectangleGeometry.**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85))
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Crea un [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/l
 
 | Metodo                                                                                                                                                                                                     | Descrizione                                                                                    |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**CreateRoundedRectangleGeometry (D2D1 \_ rettangolo arrotondato \_&, ID2D1RoundedRectangleGeometry \* \* )**](id2d1factory-createroundedrectanglegeometry-ref-d2d1-rounded-rect-ptr-ptr-https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx)  | Crea un [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)). <br/> |
-| [**CreateRoundedRectangleGeometry (D2D1 \_ rettangolo arrotondato \_ \* , ID2D1RoundedRectangleGeometry \* \* )**](id2d1factory-createroundedrectanglegeometry-ptr-d2d1-rounded-rect-ptr-ptr-https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx) | Crea un [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)). <br/> |
+| [**CreateRoundedRectangleGeometry(D2D1 \_ ROUNDED \_ RECT&,ID2D1RoundedRectangleGeometry \* \* )**](https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx)  | Crea un [**id2D1RoundedRectangleGeometry.**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)) <br/> |
+| [**CreateRoundedRectangleGeometry(D2D1 \_ ROUNDED \_ \* RECT,ID2D1RoundedRectangleGeometry \* \* )**](https://msdn.microsoft.com/library/Dd371292(v=VS.85).aspx) | Crea un [**id2D1RoundedRectangleGeometry.**](/previous-versions/windows/desktop/legacy/dd371292(v=vs.85)) <br/> |
 
 
 
@@ -40,13 +40,13 @@ Crea un [**ID2D1RoundedRectangleGeometry**](/previous-versions/windows/desktop/l
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 
