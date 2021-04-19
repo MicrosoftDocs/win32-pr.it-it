@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: JET_DBID. Elenco di overload del metodo ToString'
-title: JET_DBID. Metodo ToString
+title: JET_DBID. Elenco di overload del metodo ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_DBID.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbid.tostring(v=EXCHG.10)
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 638feb393eb664b4ce2afed6d8edacc9705bcffe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97fb6b251ca369adcdd55e6b5ead4d36624b6d6e
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484908"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389149"
 ---
 # <a name="jet_dbidtostring-method-overload-list"></a>JET_DBID. Elenco di overload del metodo ToString
 

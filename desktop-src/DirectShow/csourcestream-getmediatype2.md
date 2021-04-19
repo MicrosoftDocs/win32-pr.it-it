@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetMediaType recupera un tipo di supporto preferito.
 ms.assetid: 85605885-adb5-4f13-91af-48bf74684eca
-title: Metodo CSourceStream. GetMediaType (source. h)
+title: Metodo CSourceStream. GetMediaType (source. h)-parametro pMediaType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c62d79faab8d48d748f4a2c787dd1cbc8f6d2ed7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8306da8451d4af7da8ce4f4c7d4d3f6fd367e1ec
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330049"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389184"
 ---
 # <a name="csourcestreamgetmediatype-method-sourceh"></a>Metodo CSourceStream. GetMediaType (source. h)
 

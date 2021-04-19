@@ -4,7 +4,7 @@ MS-HAID: WWAN\_profile\_v4.element\_1\_AccessString
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: AccessString
+title: AccessString (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: d3dc9d56-23cf-4af6-b220-0ec09eceebaa
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: a17a43faef6ab417cf3dda45dfa1609de5949747
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 749d250c45252c026fb467883edfcad82c264731
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306815"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106388883"
 ---
 # <a name="span-idwwan_profile_v4element_1_accessstringspanmodemdmconfigprofileaccessstring-v4"></a><span id="WWAN_profile_v4.element_1_AccessString"></span>ModemDMConfigProfile \/ ... \/ AccessString (v4)
 
