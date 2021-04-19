@@ -20,21 +20,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 30dcdf175c560fdc4bbdc6ac6f7b653ca477939b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b53cc699e0b6a1bfeac4a54adee075fe5f9c5c7
+ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319644"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106389177"
 ---
-# <a name="jet_tableidtostring-method"></a><span data-ttu-id="33342-103">JET_TABLEID. Metodo ToString</span><span class="sxs-lookup"><span data-stu-id="33342-103">JET_TABLEID.ToString method</span></span>
+# <a name="jet_tableidtostring-method"></a><span data-ttu-id="4d407-103">JET_TABLEID. Metodo ToString</span><span class="sxs-lookup"><span data-stu-id="4d407-103">JET_TABLEID.ToString method</span></span>
 
-<span data-ttu-id="33342-104">Genera una rappresentazione di stringa della struttura.</span><span class="sxs-lookup"><span data-stu-id="33342-104">Generate a string representation of the structure.</span></span>
+<span data-ttu-id="4d407-104">Genera una rappresentazione di stringa della struttura.</span><span class="sxs-lookup"><span data-stu-id="4d407-104">Generate a string representation of the structure.</span></span>
 
-<span data-ttu-id="33342-105">**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="33342-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
-<span data-ttu-id="33342-106">**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="33342-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
+<span data-ttu-id="4d407-105">**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)</span><span class="sxs-lookup"><span data-stu-id="4d407-105">**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)</span></span>  
+<span data-ttu-id="4d407-106">**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)</span><span class="sxs-lookup"><span data-stu-id="4d407-106">**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="33342-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="33342-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4d407-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="4d407-107">Syntax</span></span>
 
 ``` vb
 'Declaration
@@ -50,19 +50,19 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a><span data-ttu-id="33342-108">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="33342-108">Return value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="4d407-108">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="4d407-108">Return value</span></span>
 
-<span data-ttu-id="33342-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="33342-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
-<span data-ttu-id="33342-110">Struttura sotto forma di stringa.</span><span class="sxs-lookup"><span data-stu-id="33342-110">The structure as a string.</span></span>  
+<span data-ttu-id="4d407-109">Tipo: [System. String](/dotnet/api/system.string)</span><span class="sxs-lookup"><span data-stu-id="4d407-109">Type: [System.String](/dotnet/api/system.string)</span></span>  
+<span data-ttu-id="4d407-110">Struttura sotto forma di stringa.</span><span class="sxs-lookup"><span data-stu-id="4d407-110">The structure as a string.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="33342-111">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="33342-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4d407-111">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="4d407-111">See also</span></span>
 
-#### <a name="reference"></a><span data-ttu-id="33342-112">Riferimento</span><span class="sxs-lookup"><span data-stu-id="33342-112">Reference</span></span>
+#### <a name="reference"></a><span data-ttu-id="4d407-112">Riferimento</span><span class="sxs-lookup"><span data-stu-id="4d407-112">Reference</span></span>
 
-[<span data-ttu-id="33342-113">Struttura JET_TABLEID</span><span class="sxs-lookup"><span data-stu-id="33342-113">JET_TABLEID structure</span></span>](./jet-tableid-structure.md)
+[<span data-ttu-id="4d407-113">Struttura JET_TABLEID</span><span class="sxs-lookup"><span data-stu-id="4d407-113">JET_TABLEID structure</span></span>](./jet-tableid-structure.md)
 
-[<span data-ttu-id="33342-114">Membri JET_TABLEID</span><span class="sxs-lookup"><span data-stu-id="33342-114">JET_TABLEID members</span></span>](./jet-tableid-members.md)
+[<span data-ttu-id="4d407-114">Membri JET_TABLEID</span><span class="sxs-lookup"><span data-stu-id="4d407-114">JET_TABLEID members</span></span>](./jet-tableid-members.md)
 
-[<span data-ttu-id="33342-115">Overload ToString</span><span class="sxs-lookup"><span data-stu-id="33342-115">ToString overload</span></span>](./jet-tableid.tostring-method.md)
+[<span data-ttu-id="4d407-115">Overload ToString</span><span class="sxs-lookup"><span data-stu-id="4d407-115">ToString overload</span></span>](./jet-tableid.tostring-method.md)
 
-[<span data-ttu-id="33342-116">Spazio dei nomi Microsoft. ISAM. esent. Interop</span><span class="sxs-lookup"><span data-stu-id="33342-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
+[<span data-ttu-id="4d407-116">Spazio dei nomi Microsoft. ISAM. esent. Interop</span><span class="sxs-lookup"><span data-stu-id="4d407-116">Microsoft.Isam.Esent.Interop namespace</span></span>](./microsoft.isam.esent.interop-namespace.md)
