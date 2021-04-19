@@ -4,12 +4,12 @@ description: Lo scenario dei criteri IPsec di autorizzazione dell'identità remo
 ms.assetid: 4d9f83d6-6f56-4416-8c35-d0260f9e888c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f44022c9696dec25e709d9ab1e374ada295893ed
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 57287a0dd9af4686b1a2dab162677912213559a7
+ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398874"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107314834"
 ---
 # <a name="remote-identity-authorization"></a>Autorizzazione identità remota
 
@@ -35,6 +35,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
      
 
 2.  Per ognuno dei contesti aggiunti nel passaggio 1, aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)        | Valore                                            |
     |------------------------|--------------------------------------------------|
     | Condizioni di filtro   | Vuoto. Tutto il traffico corrisponderà al filtro.        |
@@ -54,6 +55,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
      
 
 2.  Per ognuno dei contesti aggiunti nel passaggio 1, aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)        | Valore                                            |
     |------------------------|--------------------------------------------------|
     | Condizioni di filtro   | Vuoto. Tutto il traffico corrisponderà al filtro.        |
@@ -64,6 +66,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **Al \_ trasporto in ingresso FWPM layer \_ \_ \_ V {4 \| 6} Configurare le regole di filtro in ingresso per pacchetto**  
 
 1.  Aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)                                                   | Valore                                                                                              |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type)                                      |
@@ -73,6 +76,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)                                                   | Valore                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                |
@@ -85,6 +89,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **Al \_ trasporto in uscita FWPM layer \_ \_ \_ V {4 \| 6} Configurare le regole di filtro in uscita per pacchetto**  
 
 1.  Aggiungere un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)                                                   | Valore                                                                                     |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                               |
@@ -94,6 +99,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)                                                   | Valore                                                                  |
     |-------------------------------------------------------------------|------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                            |
@@ -106,6 +112,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 **A FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6} Configurare le regole di filtro in ingresso per connessione**  
 
 1.  Aggiungere un filtro con le proprietà seguenti. Questo filtro consente solo i tentativi di connessione in ingresso se sono protetti da IPsec. 
+
     | Filter (proprietà)                                                   | Valore                                                        |
     |-------------------------------------------------------------------|--------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                  |
@@ -114,6 +121,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 2.  Esentare il traffico ICMP da IPsec aggiungendo un filtro con le proprietà seguenti. 
+
     | Filter (proprietà)                                                   | Valore                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                                |
@@ -123,6 +131,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 3.  Aggiungere un filtro con le proprietà seguenti. Questo filtro consente le connessioni in ingresso alla porta TCP 5555 se le identità Remote corrispondenti sono consentite sia da SD1 che da SD2. 
+
     | Filter (proprietà)                                                   | Valore                                                              |
     |-------------------------------------------------------------------|--------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                        |
@@ -135,6 +144,7 @@ Per implementare questo esempio a livello di codice, utilizzare la seguente conf
 
         
 4.  Aggiungere un filtro con le proprietà seguenti. Questo filtro bloccherà qualsiasi altra connessione in ingresso alla porta TCP 5555 che non corrisponde al filtro precedente. 
+
     | Filter (proprietà)                                                   | Valore                                                              |
     |-------------------------------------------------------------------|--------------------------------------------------------------------|
     | **FWPM \_ Condizione di filtro \_ \_ del \_ \_ tipo di indirizzo locale IP della condizione** | NlatUnicast                                                        |
