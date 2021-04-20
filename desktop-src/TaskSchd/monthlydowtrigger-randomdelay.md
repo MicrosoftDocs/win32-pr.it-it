@@ -1,11 +1,11 @@
 ---
-title: Proprietà MonthlyDOWTrigger. RandomDelay
-description: Per gli script, ottiene o imposta un tempo di ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger. | Proprietà MonthlyDOWTrigger. RandomDelay
+title: MonthlyDOWTrigger.RandomDelay - proprietà
+description: Per lo scripting, ottiene o imposta un ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger. | MonthlyDOWTrigger.RandomDelay - proprietà
 ms.assetid: e5cb6c1d-8003-43f4-bf35-da490a6097f0
 keywords:
-- Utilità di pianificazione proprietà RandomDelay
-- Utilità di pianificazione proprietà RandomDelay, oggetto MonthlyDOWTrigger
-- Oggetto MonthlyDOWTrigger Utilità di pianificazione, proprietà RandomDelay
+- Proprietà RandomDelay Utilità di pianificazione
+- Proprietà RandomDelay Utilità di pianificazione, oggetto MonthlyDOWTrigger
+- Oggetto MonthlyDOWTrigger Utilità di pianificazione , proprietà RandomDelay
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6fbdcab3b3f20d32e67b5b4e3e27b890b6bc902
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e781941e927547a4ea25935fb21299777c34b3ea
+ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969214"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107734126"
 ---
-# <a name="monthlydowtriggerrandomdelay-property"></a>Proprietà MonthlyDOWTrigger. RandomDelay
+# <a name="monthlydowtriggerrandomdelay-property"></a>MonthlyDOWTrigger.RandomDelay - proprietà
 
-Per gli script, ottiene o imposta un tempo di ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger.
+Per lo scripting, ottiene o imposta un ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ MonthlyDOWTrigger.RandomDelay As String
 
 ## <a name="property-value"></a>Valore proprietà
 
-Tempo di ritardo che viene aggiunto in modo casuale all'ora di inizio del trigger. Il formato di questa stringa è P <days> DT <hours> H <minutes> M <seconds> S (ad esempio, P2DT5S è un ritardo di 2 giorni e 5 secondi).
+Tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger. Il formato di questa stringa è `P<days>DT<hours>H<minutes>M<seconds>S` (ad esempio, P2DT5S è un ritardo di 2 giorni e 5 secondi).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,9 +46,9 @@ Tempo di ritardo che viene aggiunto in modo casuale all'ora di inizio del trigge
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

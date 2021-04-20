@@ -1,9 +1,9 @@
 ---
 title: Elemento Interval (repetitionType)
-description: Specifica la quantità di tempo tra ogni riavvio dell'attività.
+description: Specifica l'intervallo di tempo tra ogni riavvio dell'attività.
 ms.assetid: 28c6475a-88e3-44ac-92c7-6f463e8460c9
 keywords:
-- Utilità di pianificazione dell'elemento Interval
+- Elemento Interval Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9720bc2257d4c0b45116089bfdd4113335fc6b8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bfb87884438f1a39a5bd6f08eb9bb855311eb5d3
+ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963985"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107734196"
 ---
 # <a name="interval-repetitiontype-element"></a>Elemento Interval (repetitionType)
 
-Specifica la quantità di tempo tra ogni riavvio dell'attività. Il formato di questa stringa è P <days> DT <hours> H <minutes> M <seconds> (ad esempio, "PT5M" è 5 minuti, "PT1H" è 1 ora e "PT20M" è di 20 minuti). Il tempo massimo consentito è 31 giorni e il tempo minimo consentito è pari a 1 minuto.
+Specifica l'intervallo di tempo tra ogni riavvio dell'attività. Il formato di questa stringa è `P<days>DT<hours>H<minutes>M<seconds>S` (ad esempio, "PT5M" è di 5 minuti, "PT1H" è 1 ora e "PT20M" è 20 minuti). Il tempo massimo consentito è 31 giorni e il tempo minimo consentito è 1 minuto.
 
 ``` syntax
 <xs:element name="Interval">
@@ -41,7 +41,7 @@ Specifica la quantità di tempo tra ogni riavvio dell'attività. Il formato di q
 </xs:element>
 ```
 
-L'elemento è definito dal tipo complesso [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) .
+L'elemento è definito dal tipo [**complesso repetitionType.**](taskschedulerschema-repetitiontype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -49,19 +49,19 @@ L'elemento è definito dal tipo complesso [**repetitionType**](taskschedulersche
 
 | Elemento                                                                      | Derivato da                                                             | Descrizione                                                                                                               |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [**Ripetizione**](taskschedulerschema-repetition-triggerbasetype-element.md) | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Specifica la frequenza con cui viene eseguita l'attività e il tempo per cui il modello di ripetizione viene ripetuto dopo l'avvio dell'attività.<br/> |
+| [**Ripetizione**](taskschedulerschema-repetition-triggerbasetype-element.md) | [**tipo ripetizione**](taskschedulerschema-repetitiontype-complextype.md) | Specifica la frequenza con cui viene eseguita l'attività e per quanto tempo il modello di ripetizione viene ripetuto dopo l'avvio dell'attività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, l'intervallo del modello di ripetizione viene specificato utilizzando la proprietà [**RepetitionPattern. Interval**](repetitionpattern-interval.md) .
+Per lo sviluppo di script, l'intervallo del modello di ripetizione viene specificato usando la [**proprietà RepetitionPattern.Interval.**](repetitionpattern-interval.md)
 
-Per lo sviluppo in C++, l'intervallo del modello di ripetizione viene specificato tramite la proprietà [**IRepetitionPattern:: Interval**](/windows/desktop/api/taskschd/nf-taskschd-irepetitionpattern-get_interval) .
+Per lo sviluppo in C++, l'intervallo del modello di ripetizione viene specificato usando la [**proprietà IRepetitionPattern::Interval.**](/windows/desktop/api/taskschd/nf-taskschd-irepetitionpattern-get_interval)
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio completo del codice XML per un'attività che usa un intervallo di ripetizione, vedere [esempio di trigger giornalieri (XML)](daily-trigger-example--xml-.md).
+Per un esempio completo del codice XML per un'attività che usa un intervallo di ripetizione, vedere [Esempio di trigger giornaliero (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Per un esempio completo del codice XML per un'attività che usa un intervallo di
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ Per un esempio completo del codice XML per un'attività che usa un intervallo di
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)
