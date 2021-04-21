@@ -1,7 +1,7 @@
 ---
 UID: NE:directml.DML_RANDOM_GENERATOR_TYPE
 title: DML_RANDOM_GENERATOR_TYPE
-description: Definisce le costanti che specificano i tipi di generatore di numeri casuali casuali.
+description: Definisce costanti che specificano tipi di generatore di numeri casuali.
 helpviewer_keywords:
 - DML_RANDOM_GENERATOR_TYPE
 - DML_RANDOM_GENERATOR_TYPE structure
@@ -45,21 +45,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RANDOM_GENERATOR_TYPE
-ms.openlocfilehash: bcb79fe7737e8b9ddb461c8da8a901960a4b23f8
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: c08b5cdc07280a2851636a555415ecce515fa79b
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320411"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803761"
 ---
-# <a name="dml_random_generator_type-enumeration-directmlh"></a><span data-ttu-id="75ae9-103">Enumerazione DML_RANDOM_GENERATOR_TYPE (directml. h)</span><span class="sxs-lookup"><span data-stu-id="75ae9-103">DML_RANDOM_GENERATOR_TYPE enumeration (directml.h)</span></span>
+# <a name="dml_random_generator_type-enumeration-directmlh"></a><span data-ttu-id="16868-103">DML_RANDOM_GENERATOR_TYPE enumerazione (directml.h)</span><span class="sxs-lookup"><span data-stu-id="16868-103">DML_RANDOM_GENERATOR_TYPE enumeration (directml.h)</span></span>
 
-<span data-ttu-id="75ae9-104">Definisce le costanti che specificano i tipi di generatore di numeri casuali casuali.</span><span class="sxs-lookup"><span data-stu-id="75ae9-104">Defines constants that specify types of random random-number generator.</span></span>
+<span data-ttu-id="16868-104">Definisce costanti che specificano tipi di generatore di numeri casuali.</span><span class="sxs-lookup"><span data-stu-id="16868-104">Defines constants that specify types of random random-number generator.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="75ae9-105">Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span><span class="sxs-lookup"><span data-stu-id="75ae9-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span></span> <span data-ttu-id="75ae9-106">Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).</span><span class="sxs-lookup"><span data-stu-id="75ae9-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
+> <span data-ttu-id="16868-105">Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive).</span><span class="sxs-lookup"><span data-stu-id="16868-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) version 1.4 and later.</span></span> <span data-ttu-id="16868-106">Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)</span><span class="sxs-lookup"><span data-stu-id="16868-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="75ae9-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="75ae9-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="16868-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="16868-107">Syntax</span></span>
 ```cpp
 enum DML_RANDOM_GENERATOR_TYPE
 {
@@ -67,14 +67,14 @@ enum DML_RANDOM_GENERATOR_TYPE
 };
 ```
 
-## <a name="constants"></a><span data-ttu-id="75ae9-108">Costanti</span><span class="sxs-lookup"><span data-stu-id="75ae9-108">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="16868-108">Costanti</span><span class="sxs-lookup"><span data-stu-id="16868-108">Constants</span></span>
 
-| <span data-ttu-id="75ae9-109">Nome</span><span class="sxs-lookup"><span data-stu-id="75ae9-109">Name</span></span> | <span data-ttu-id="75ae9-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="75ae9-110">Description</span></span> |
+| <span data-ttu-id="16868-109">Nome</span><span class="sxs-lookup"><span data-stu-id="16868-109">Name</span></span> | <span data-ttu-id="16868-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="16868-110">Description</span></span> |
 | ---- |:---- |
-| <span data-ttu-id="75ae9-111">DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10</span><span class="sxs-lookup"><span data-stu-id="75ae9-111">DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10</span></span> | <span data-ttu-id="75ae9-112">Specifica un generatore per numeri pseudo-casuali in base all' [algoritmo Philox 4x32-10](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf).</span><span class="sxs-lookup"><span data-stu-id="75ae9-112">Specifies a generator for pseudo-random numbers according to the [Philox 4x32-10 algorithm](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf).</span></span> |
+| <span data-ttu-id="16868-111">DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10</span><span class="sxs-lookup"><span data-stu-id="16868-111">DML_RANDOM_GENERATOR_TYPE_PHILOX_4X32_10</span></span> | <span data-ttu-id="16868-112">Specifica un generatore per i numeri pseudo-casuali in base [all'algoritmo 4x32-10 di Philox.](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf)</span><span class="sxs-lookup"><span data-stu-id="16868-112">Specifies a generator for pseudo-random numbers according to the [Philox 4x32-10 algorithm](http://www.thesalmons.org/john/random123/papers/random123sc11.pdf).</span></span> |
 
 
-## <a name="requirements"></a><span data-ttu-id="75ae9-113">Requisiti</span><span class="sxs-lookup"><span data-stu-id="75ae9-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="16868-113">Requisiti</span><span class="sxs-lookup"><span data-stu-id="16868-113">Requirements</span></span>
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| <span data-ttu-id="75ae9-114">**Intestazione**</span><span class="sxs-lookup"><span data-stu-id="75ae9-114">**Header**</span></span> | <span data-ttu-id="75ae9-115">directml. h</span><span class="sxs-lookup"><span data-stu-id="75ae9-115">directml.h</span></span> |
+| <span data-ttu-id="16868-114">**Intestazione**</span><span class="sxs-lookup"><span data-stu-id="16868-114">**Header**</span></span> | <span data-ttu-id="16868-115">directml.h</span><span class="sxs-lookup"><span data-stu-id="16868-115">directml.h</span></span> |

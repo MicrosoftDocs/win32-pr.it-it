@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_RESAMPLE_GRAD_OPERATOR_DESC
 title: DML_RESAMPLE_GRAD_OPERATOR_DESC
-description: Calcola le sfumature di propagazione per il ricampionamento (vedere [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).
+description: Calcola le sfumature di backpropagation per Resample (vedere [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).
 helpviewer_keywords:
 - DML_RESAMPLE_GRAD_OPERATOR_DESC
 - DML_RESAMPLE_GRAD_OPERATOR_DESC structure
@@ -45,20 +45,20 @@ api_location:
 - DirectML.h
 api_name:
 - DML_RESAMPLE_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 5808381f2e812ac20399b46672e51acd063bc6a5
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 0caba1a560b72a94ed04cacd824414964af82c35
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320401"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107804045"
 ---
-# <a name="dml_resample_grad_operator_desc-structure-directmlh"></a><span data-ttu-id="554f8-103">Struttura DML_RESAMPLE_GRAD_OPERATOR_DESC (directml. h)</span><span class="sxs-lookup"><span data-stu-id="554f8-103">DML_RESAMPLE_GRAD_OPERATOR_DESC structure (directml.h)</span></span>
+# <a name="dml_resample_grad_operator_desc-structure-directmlh"></a><span data-ttu-id="6cfcf-103">DML_RESAMPLE_GRAD_OPERATOR_DESC struttura (directml.h)</span><span class="sxs-lookup"><span data-stu-id="6cfcf-103">DML_RESAMPLE_GRAD_OPERATOR_DESC structure (directml.h)</span></span>
 
-<span data-ttu-id="554f8-104">Calcola le sfumature di propagazione per il ricampionamento (vedere [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).</span><span class="sxs-lookup"><span data-stu-id="554f8-104">Computes backpropagation gradients for Resample (see [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).</span></span>
+<span data-ttu-id="6cfcf-104">Calcola le sfumature di backpropagation per Resample (vedere [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).</span><span class="sxs-lookup"><span data-stu-id="6cfcf-104">Computes backpropagation gradients for Resample (see [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc)).</span></span>
 
-<span data-ttu-id="554f8-105">**DML_RESAMPLE1_OPERATOR_DESC** ridimensiona le dimensioni arbitrarie del tensore di input usando il campionamento più vicino o l'interpolazione bilineare.</span><span class="sxs-lookup"><span data-stu-id="554f8-105">**DML_RESAMPLE1_OPERATOR_DESC** rescales arbitrary dimensions of the input tensor using either nearest-neighbor sampling or bilinear interpolation.</span></span> <span data-ttu-id="554f8-106">Dato un *InputGradientTensor* con le stesse dimensioni dell' *output* di un **DML_RESAMPLE1_OPERATOR_DESC** equivalente, questo operatore produce un *OutputGradientTensor* con le stesse dimensioni dell' *input* della **DML_RESAMPLE1_OPERATOR_DESC**.</span><span class="sxs-lookup"><span data-stu-id="554f8-106">Given an *InputGradientTensor* with the same sizes as the *output* of an equivalent **DML_RESAMPLE1_OPERATOR_DESC**, this operator produces an *OutputGradientTensor* with the same sizes as the *input* of the **DML_RESAMPLE1_OPERATOR_DESC**.</span></span>
+<span data-ttu-id="6cfcf-105">**DML_RESAMPLE1_OPERATOR_DESC** ridimensiona dimensioni arbitrarie del tensore di input usando il campionamento del vicino più prossimo o l'interpolazione bilineare.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-105">**DML_RESAMPLE1_OPERATOR_DESC** rescales arbitrary dimensions of the input tensor using either nearest-neighbor sampling or bilinear interpolation.</span></span> <span data-ttu-id="6cfcf-106">Dato un *InputGradientTensor* con le stesse dimensioni *dell'output* di un **DML_RESAMPLE1_OPERATOR_DESC equivalente,** questo operatore produce un *OutputGradientTensor* con le stesse dimensioni dell'input del **DML_RESAMPLE1_OPERATOR_DESC**. </span><span class="sxs-lookup"><span data-stu-id="6cfcf-106">Given an *InputGradientTensor* with the same sizes as the *output* of an equivalent **DML_RESAMPLE1_OPERATOR_DESC**, this operator produces an *OutputGradientTensor* with the same sizes as the *input* of the **DML_RESAMPLE1_OPERATOR_DESC**.</span></span>
 
-<span data-ttu-id="554f8-107">Si consideri, ad esempio, un **DML_RESAMPLE1_OPERATOR_DESC** che esegue un ridimensionamento adiacente più vicino di 1.5 x nella larghezza e 0,5 x nell'altezza.</span><span class="sxs-lookup"><span data-stu-id="554f8-107">As an example, consider a **DML_RESAMPLE1_OPERATOR_DESC** that performs a nearest-neighbor scaling of 1.5x in the width, and 0.5x in the height.</span></span>
+<span data-ttu-id="6cfcf-107">Si consideri ad esempio un **DML_RESAMPLE1_OPERATOR_DESC** che esegue un ridimensionamento del vicino più vicino di 1,5x nella larghezza e 0,5x nell'altezza.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-107">As an example, consider a **DML_RESAMPLE1_OPERATOR_DESC** that performs a nearest-neighbor scaling of 1.5x in the width, and 0.5x in the height.</span></span>
 
 ```
 InputTensor           OutputTensor
@@ -66,9 +66,9 @@ InputTensor           OutputTensor
  [3, 4]]      -->      
 ```
 
-<span data-ttu-id="554f8-108">Si noti che l'elemento 0A del tensore di input (con valore 1) contribuisce a due elementi nell'output, il primo elemento (con valore 2) contribuisce a un elemento nell'output, mentre il secondo e il terzo elementi (con valori 3 e 4) contribuiscono a nessun elemento dell'output.</span><span class="sxs-lookup"><span data-stu-id="554f8-108">Notice how the 0th element of the input tensor (with value 1) contributes to two elements in the output, the 1st element (with value 2) contributes to one element in the output, and the 2nd and 3rd elements (with values 3 and 4) contribute to no elements of the output.</span></span>
+<span data-ttu-id="6cfcf-108">Si noti che il primo elemento del tensore di input (con valore 1) contribuisce a due elementi nell'output, il primo elemento (con valore 2) contribuisce a un elemento nell'output e il secondo e il terzo elemento (con i valori 3 e 4) non contribuiscono a nessun elemento dell'output.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-108">Notice how the 0th element of the input tensor (with value 1) contributes to two elements in the output, the 1st element (with value 2) contributes to one element in the output, and the 2nd and 3rd elements (with values 3 and 4) contribute to no elements of the output.</span></span>
 
-<span data-ttu-id="554f8-109">Il **DML_RESAMPLE_GRAD_OPERATOR_DESC** corrispondente eseguirà le operazioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="554f8-109">The corresponding **DML_RESAMPLE_GRAD_OPERATOR_DESC** would perform the following.</span></span>
+<span data-ttu-id="6cfcf-109">**L'DML_RESAMPLE_GRAD_OPERATOR_DESC** esegue le operazioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-109">The corresponding **DML_RESAMPLE_GRAD_OPERATOR_DESC** would perform the following.</span></span>
 
 ```
 InputGradientTensor           OutputGradientTensor
@@ -76,12 +76,12 @@ InputGradientTensor           OutputGradientTensor
                        -->          [0, 0]]
 ```
 
-<span data-ttu-id="554f8-110">Si noti che i valori in *OutputGradientTensor* rappresentano i contributi ponderati di tale elemento al *OutputTensor* durante l'operatore **DML_RESAMPLE1_OPERATOR_DESC** originale.</span><span class="sxs-lookup"><span data-stu-id="554f8-110">Notice that the values in the *OutputGradientTensor* represent the weighted contributions of that element to the *OutputTensor* during the original **DML_RESAMPLE1_OPERATOR_DESC** operator.</span></span>
+<span data-ttu-id="6cfcf-110">Si noti che i valori in *OutputGradientTensor* rappresentano i contributi ponderati di  tale elemento a *OutputTensor* durante l'operatore DML_RESAMPLE1_OPERATOR_DESC originale.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-110">Notice that the values in the *OutputGradientTensor* represent the weighted contributions of that element to the *OutputTensor* during the original **DML_RESAMPLE1_OPERATOR_DESC** operator.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="554f8-111">Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span><span class="sxs-lookup"><span data-stu-id="554f8-111">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span></span> <span data-ttu-id="554f8-112">Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).</span><span class="sxs-lookup"><span data-stu-id="554f8-112">Also see [DirectML version history](../dml-version-history.md).</span></span>
+> <span data-ttu-id="6cfcf-111">Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive).</span><span class="sxs-lookup"><span data-stu-id="6cfcf-111">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) version 1.4 and later.</span></span> <span data-ttu-id="6cfcf-112">Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)</span><span class="sxs-lookup"><span data-stu-id="6cfcf-112">Also see [DirectML version history](../dml-version-history.md).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="554f8-113">Sintassi</span><span class="sxs-lookup"><span data-stu-id="554f8-113">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6cfcf-113">Sintassi</span><span class="sxs-lookup"><span data-stu-id="6cfcf-113">Syntax</span></span>
 
 ```cpp
 struct DML_RESAMPLE_GRAD_OPERATOR_DESC
@@ -96,63 +96,63 @@ struct DML_RESAMPLE_GRAD_OPERATOR_DESC
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="554f8-114">Members</span><span class="sxs-lookup"><span data-stu-id="554f8-114">Members</span></span>
+## <a name="members"></a><span data-ttu-id="6cfcf-114">Members</span><span class="sxs-lookup"><span data-stu-id="6cfcf-114">Members</span></span>
 
 `InputGradientTensor`
 
-<span data-ttu-id="554f8-115">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="554f8-115">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
+<span data-ttu-id="6cfcf-115">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="6cfcf-115">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
 
-<span data-ttu-id="554f8-116">Tensore di sfumatura in ingresso.</span><span class="sxs-lookup"><span data-stu-id="554f8-116">The incoming gradient tensor.</span></span> <span data-ttu-id="554f8-117">Questa operazione viene in genere ottenuta dall'output di propagation di un livello precedente.</span><span class="sxs-lookup"><span data-stu-id="554f8-117">This is typically obtained from the output of backpropagation of a preceding layer.</span></span> <span data-ttu-id="554f8-118">In genere, questo tensore avrebbe le stesse dimensioni dell' *output* del [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) corrispondente nel passaggio successivo.</span><span class="sxs-lookup"><span data-stu-id="554f8-118">Typically this tensor would have the same sizes as the *output* of the corresponding [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) in the forward pass.</span></span>
+<span data-ttu-id="6cfcf-116">Tensore sfumatura in ingresso.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-116">The incoming gradient tensor.</span></span> <span data-ttu-id="6cfcf-117">Questa operazione viene in genere ottenuta dall'output della backpropagazione di un livello precedente.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-117">This is typically obtained from the output of backpropagation of a preceding layer.</span></span> <span data-ttu-id="6cfcf-118">In genere questo tensore ha le stesse dimensioni *dell'output* del [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) nel passaggio in avanti.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-118">Typically this tensor would have the same sizes as the *output* of the corresponding [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) in the forward pass.</span></span>
 
 `OutputGradientTensor`
 
-<span data-ttu-id="554f8-119">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="554f8-119">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
+<span data-ttu-id="6cfcf-119">Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***</span><span class="sxs-lookup"><span data-stu-id="6cfcf-119">Type: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc)\***</span></span>
 
-<span data-ttu-id="554f8-120">Un tensore di output contenente le sfumature ripropagate.</span><span class="sxs-lookup"><span data-stu-id="554f8-120">An output tensor containing the backpropagated gradients.</span></span> <span data-ttu-id="554f8-121">In genere, questo tensore avrebbe le stesse dimensioni dell' *input* del [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) corrispondente nel passaggio successivo.</span><span class="sxs-lookup"><span data-stu-id="554f8-121">Typically this tensor would have the same sizes as the *input* of the corresponding [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) in the forward pass.</span></span>
+<span data-ttu-id="6cfcf-120">Tensore di output contenente le sfumature backpropagate.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-120">An output tensor containing the backpropagated gradients.</span></span> <span data-ttu-id="6cfcf-121">In genere, questo tensore ha le stesse dimensioni *dell'input* del [parametro](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) DML_RESAMPLE1_OPERATOR_DESC nel passaggio in avanti.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-121">Typically this tensor would have the same sizes as the *input* of the corresponding [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc) in the forward pass.</span></span>
 
 `InterpolationMode`
 
-<span data-ttu-id="554f8-122">Tipo: [ **DML_INTERPOLATION_MODE**](/windows/win32/api/directml/ne-directml-dml_interpolation_mode)</span><span class="sxs-lookup"><span data-stu-id="554f8-122">Type: [**DML_INTERPOLATION_MODE**](/windows/win32/api/directml/ne-directml-dml_interpolation_mode)</span></span>
+<span data-ttu-id="6cfcf-122">Tipo: [ **DML_INTERPOLATION_MODE**](/windows/win32/api/directml/ne-directml-dml_interpolation_mode)</span><span class="sxs-lookup"><span data-stu-id="6cfcf-122">Type: [**DML_INTERPOLATION_MODE**](/windows/win32/api/directml/ne-directml-dml_interpolation_mode)</span></span>
 
-<span data-ttu-id="554f8-123">Vedere *InterpolationMode* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="554f8-123">See *InterpolationMode* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
+<span data-ttu-id="6cfcf-123">Vedere *InterpolationMode* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="6cfcf-123">See *InterpolationMode* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
 
 `DimensionCount`
 
-<span data-ttu-id="554f8-124">Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)</span><span class="sxs-lookup"><span data-stu-id="554f8-124">Type: [**UINT**](/windows/desktop/winprog/windows-data-types)</span></span>
+<span data-ttu-id="6cfcf-124">Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)</span><span class="sxs-lookup"><span data-stu-id="6cfcf-124">Type: [**UINT**](/windows/desktop/winprog/windows-data-types)</span></span>
 
-<span data-ttu-id="554f8-125">Il numero di elementi nelle matrici *Scales*, *InputPixelOffsets* e *OutputPixelOffsets* .</span><span class="sxs-lookup"><span data-stu-id="554f8-125">The number of elements in the *Scales*, *InputPixelOffsets*, and *OutputPixelOffsets* arrays.</span></span> <span data-ttu-id="554f8-126">Questo valore deve essere uguale a *DimensionCount* specificato in *InputGradientTensor* e *OutputGradientTensor*.</span><span class="sxs-lookup"><span data-stu-id="554f8-126">This value must equal the *DimensionCount* provided in the *InputGradientTensor* and *OutputGradientTensor*.</span></span>
+<span data-ttu-id="6cfcf-125">Numero di elementi nelle *matrici Scales,* *InputPixelOffsets* e *OutputPixelOffsets.*</span><span class="sxs-lookup"><span data-stu-id="6cfcf-125">The number of elements in the *Scales*, *InputPixelOffsets*, and *OutputPixelOffsets* arrays.</span></span> <span data-ttu-id="6cfcf-126">Questo valore deve essere uguale *a DimensionCount* specificato in *InputGradientTensor* e *OutputGradientTensor*.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-126">This value must equal the *DimensionCount* provided in the *InputGradientTensor* and *OutputGradientTensor*.</span></span>
 
 `Scales`
 
-<span data-ttu-id="554f8-127">Tipo: \_ \_ Dimensione campo \_ (DimensionCount) **const [float](/windows/desktop/WinProg/windows-data-types) \***</span><span class="sxs-lookup"><span data-stu-id="554f8-127">Type: \_Field\_size\_(DimensionCount) **const [FLOAT](/windows/desktop/WinProg/windows-data-types)\***</span></span>
+<span data-ttu-id="6cfcf-127">Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***</span><span class="sxs-lookup"><span data-stu-id="6cfcf-127">Type: \_Field\_size\_(DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types)\***</span></span>
 
-<span data-ttu-id="554f8-128">Vedere *scale* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="554f8-128">See *Scales* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
+<span data-ttu-id="6cfcf-128">Vedere *Scales* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="6cfcf-128">See *Scales* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
 
 `InputPixelOffsets`
 
-<span data-ttu-id="554f8-129">Tipo: \_ \_ Dimensione campo \_ (DimensionCount) **const [float](/windows/desktop/WinProg/windows-data-types) \***</span><span class="sxs-lookup"><span data-stu-id="554f8-129">Type: \_Field\_size\_(DimensionCount) **const [FLOAT](/windows/desktop/WinProg/windows-data-types)\***</span></span>
+<span data-ttu-id="6cfcf-129">Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***</span><span class="sxs-lookup"><span data-stu-id="6cfcf-129">Type: \_Field\_size\_(DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types)\***</span></span>
 
-<span data-ttu-id="554f8-130">Vedere *InputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="554f8-130">See *InputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
+<span data-ttu-id="6cfcf-130">Vedere *InputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="6cfcf-130">See *InputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
 
 `OutputPixelOffsets`
 
-<span data-ttu-id="554f8-131">Tipo: \_ \_ Dimensione campo \_ (DimensionCount) **const [float](/windows/desktop/WinProg/windows-data-types) \***</span><span class="sxs-lookup"><span data-stu-id="554f8-131">Type: \_Field\_size\_(DimensionCount) **const [FLOAT](/windows/desktop/WinProg/windows-data-types)\***</span></span>
+<span data-ttu-id="6cfcf-131">Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***</span><span class="sxs-lookup"><span data-stu-id="6cfcf-131">Type: \_Field\_size\_(DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types)\***</span></span>
 
-<span data-ttu-id="554f8-132">Vedere *OutputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="554f8-132">See *OutputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
+<span data-ttu-id="6cfcf-132">Vedere *OutputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span><span class="sxs-lookup"><span data-stu-id="6cfcf-132">See *OutputPixelOffsets* in [DML_RESAMPLE1_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_resample1_operator_desc).</span></span>
 
-## <a name="availability"></a><span data-ttu-id="554f8-133">Disponibilità</span><span class="sxs-lookup"><span data-stu-id="554f8-133">Availability</span></span>
-<span data-ttu-id="554f8-134">Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .</span><span class="sxs-lookup"><span data-stu-id="554f8-134">This operator was introduced in `DML_FEATURE_LEVEL_3_0`.</span></span>
+## <a name="availability"></a><span data-ttu-id="6cfcf-133">Disponibilità</span><span class="sxs-lookup"><span data-stu-id="6cfcf-133">Availability</span></span>
+<span data-ttu-id="6cfcf-134">Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .</span><span class="sxs-lookup"><span data-stu-id="6cfcf-134">This operator was introduced in `DML_FEATURE_LEVEL_3_0`.</span></span>
 
-## <a name="tensor-constraints"></a><span data-ttu-id="554f8-135">Vincoli tensore</span><span class="sxs-lookup"><span data-stu-id="554f8-135">Tensor constraints</span></span>
-<span data-ttu-id="554f8-136">*InputGradientTensor* e *OutputGradientTensor* devono avere lo stesso *tipo* di dati.</span><span class="sxs-lookup"><span data-stu-id="554f8-136">*InputGradientTensor* and *OutputGradientTensor* must have the same *DataType*.</span></span>
+## <a name="tensor-constraints"></a><span data-ttu-id="6cfcf-135">Vincoli tensore</span><span class="sxs-lookup"><span data-stu-id="6cfcf-135">Tensor constraints</span></span>
+<span data-ttu-id="6cfcf-136">*InputGradientTensor* e *OutputGradientTensor* devono avere lo stesso *Tipo di dati*.</span><span class="sxs-lookup"><span data-stu-id="6cfcf-136">*InputGradientTensor* and *OutputGradientTensor* must have the same *DataType*.</span></span>
 
-## <a name="tensor-support"></a><span data-ttu-id="554f8-137">Supporto tensore</span><span class="sxs-lookup"><span data-stu-id="554f8-137">Tensor support</span></span>
-| <span data-ttu-id="554f8-138">Tensore</span><span class="sxs-lookup"><span data-stu-id="554f8-138">Tensor</span></span> | <span data-ttu-id="554f8-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="554f8-139">Kind</span></span> | <span data-ttu-id="554f8-140">Conteggi dimensione supportati</span><span class="sxs-lookup"><span data-stu-id="554f8-140">Supported dimension counts</span></span> | <span data-ttu-id="554f8-141">Tipi di dati supportati</span><span class="sxs-lookup"><span data-stu-id="554f8-141">Supported data types</span></span> |
+## <a name="tensor-support"></a><span data-ttu-id="6cfcf-137">Supporto di Tensor</span><span class="sxs-lookup"><span data-stu-id="6cfcf-137">Tensor support</span></span>
+| <span data-ttu-id="6cfcf-138">Tensore</span><span class="sxs-lookup"><span data-stu-id="6cfcf-138">Tensor</span></span> | <span data-ttu-id="6cfcf-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="6cfcf-139">Kind</span></span> | <span data-ttu-id="6cfcf-140">Conteggi delle dimensioni supportati</span><span class="sxs-lookup"><span data-stu-id="6cfcf-140">Supported dimension counts</span></span> | <span data-ttu-id="6cfcf-141">Tipi di dati supportati</span><span class="sxs-lookup"><span data-stu-id="6cfcf-141">Supported data types</span></span> |
 | ------ | ---- | -------------------------- | -------------------- |
-| <span data-ttu-id="554f8-142">InputGradientTensor</span><span class="sxs-lookup"><span data-stu-id="554f8-142">InputGradientTensor</span></span> | <span data-ttu-id="554f8-143">Input</span><span class="sxs-lookup"><span data-stu-id="554f8-143">Input</span></span> | <span data-ttu-id="554f8-144">4</span><span class="sxs-lookup"><span data-stu-id="554f8-144">4</span></span> | <span data-ttu-id="554f8-145">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="554f8-145">FLOAT32, FLOAT16</span></span> |
-| <span data-ttu-id="554f8-146">OutputGradientTensor</span><span class="sxs-lookup"><span data-stu-id="554f8-146">OutputGradientTensor</span></span> | <span data-ttu-id="554f8-147">Output</span><span class="sxs-lookup"><span data-stu-id="554f8-147">Output</span></span> | <span data-ttu-id="554f8-148">4</span><span class="sxs-lookup"><span data-stu-id="554f8-148">4</span></span> | <span data-ttu-id="554f8-149">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="554f8-149">FLOAT32, FLOAT16</span></span> |
+| <span data-ttu-id="6cfcf-142">InputGradientTensor</span><span class="sxs-lookup"><span data-stu-id="6cfcf-142">InputGradientTensor</span></span> | <span data-ttu-id="6cfcf-143">Input</span><span class="sxs-lookup"><span data-stu-id="6cfcf-143">Input</span></span> | <span data-ttu-id="6cfcf-144">4</span><span class="sxs-lookup"><span data-stu-id="6cfcf-144">4</span></span> | <span data-ttu-id="6cfcf-145">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="6cfcf-145">FLOAT32, FLOAT16</span></span> |
+| <span data-ttu-id="6cfcf-146">OutputGradientTensor</span><span class="sxs-lookup"><span data-stu-id="6cfcf-146">OutputGradientTensor</span></span> | <span data-ttu-id="6cfcf-147">Output</span><span class="sxs-lookup"><span data-stu-id="6cfcf-147">Output</span></span> | <span data-ttu-id="6cfcf-148">4</span><span class="sxs-lookup"><span data-stu-id="6cfcf-148">4</span></span> | <span data-ttu-id="6cfcf-149">FLOAT32, FLOAT16</span><span class="sxs-lookup"><span data-stu-id="6cfcf-149">FLOAT32, FLOAT16</span></span> |
 
-## <a name="requirements"></a><span data-ttu-id="554f8-150">Requisiti</span><span class="sxs-lookup"><span data-stu-id="554f8-150">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="6cfcf-150">Requisiti</span><span class="sxs-lookup"><span data-stu-id="6cfcf-150">Requirements</span></span>
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| <span data-ttu-id="554f8-151">**Intestazione**</span><span class="sxs-lookup"><span data-stu-id="554f8-151">**Header**</span></span> | <span data-ttu-id="554f8-152">directml. h</span><span class="sxs-lookup"><span data-stu-id="554f8-152">directml.h</span></span> |
+| <span data-ttu-id="6cfcf-151">**Intestazione**</span><span class="sxs-lookup"><span data-stu-id="6cfcf-151">**Header**</span></span> | <span data-ttu-id="6cfcf-152">directml.h</span><span class="sxs-lookup"><span data-stu-id="6cfcf-152">directml.h</span></span> |

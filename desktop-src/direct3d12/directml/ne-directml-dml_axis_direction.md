@@ -1,7 +1,7 @@
 ---
 UID: NE:directml.DML_AXIS_DIRECTION
 title: DML_AXIS_DIRECTION
-description: Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, sommatoria, selezionando gli elementi top-k, selezionando l'elemento minimo).
+description: Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, somma, selezione degli elementi top-k, selezione dell'elemento minimo).
 ms.topic: reference
 tech.root: directml
 ms.date: 10/28/2020
@@ -39,21 +39,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_AXIS_DIRECTION
-ms.openlocfilehash: 18cd2189f88378245be0824e0a68e5f618008bc7
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: e54d2abed3843ea9b2a22cb3c385f9edd1541ba5
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320292"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803782"
 ---
-# <a name="dml_axis_direction-enumeration-directmlh"></a><span data-ttu-id="3cf6d-103">Enumerazione DML_AXIS_DIRECTION (directml. h)</span><span class="sxs-lookup"><span data-stu-id="3cf6d-103">DML_AXIS_DIRECTION enumeration (directml.h)</span></span>
+# <a name="dml_axis_direction-enumeration-directmlh"></a><span data-ttu-id="468e4-103">DML_AXIS_DIRECTION enumerazione (directml.h)</span><span class="sxs-lookup"><span data-stu-id="468e4-103">DML_AXIS_DIRECTION enumeration (directml.h)</span></span>
 
-<span data-ttu-id="3cf6d-104">Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, sommatoria, selezionando gli elementi top-k, selezionando l'elemento minimo).</span><span class="sxs-lookup"><span data-stu-id="3cf6d-104">Defines constants that specify the direction of an operation along the given axis for the operator (for example, summation, selecting the top-k elements, selecting the minimum element).</span></span>
+<span data-ttu-id="468e4-104">Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, somma, selezione degli elementi top-k, selezione dell'elemento minimo).</span><span class="sxs-lookup"><span data-stu-id="468e4-104">Defines constants that specify the direction of an operation along the given axis for the operator (for example, summation, selecting the top-k elements, selecting the minimum element).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="3cf6d-105">Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span><span class="sxs-lookup"><span data-stu-id="3cf6d-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/).</span></span> <span data-ttu-id="3cf6d-106">Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).</span><span class="sxs-lookup"><span data-stu-id="3cf6d-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
+> <span data-ttu-id="468e4-105">Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive).</span><span class="sxs-lookup"><span data-stu-id="468e4-105">This API is available as part of the DirectML standalone redistributable package (see [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) version 1.4 and later.</span></span> <span data-ttu-id="468e4-106">Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)</span><span class="sxs-lookup"><span data-stu-id="468e4-106">Also see [DirectML version history](../dml-version-history.md).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3cf6d-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="3cf6d-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="468e4-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="468e4-107">Syntax</span></span>
 ```cpp
 typedef enum DML_AXIS_DIRECTION {
   DML_AXIS_DIRECTION_INCREASING,
@@ -61,15 +61,15 @@ typedef enum DML_AXIS_DIRECTION {
 } ;
 ```
 
-## <a name="constants"></a><span data-ttu-id="3cf6d-108">Costanti</span><span class="sxs-lookup"><span data-stu-id="3cf6d-108">Constants</span></span>
+## <a name="constants"></a><span data-ttu-id="468e4-108">Costanti</span><span class="sxs-lookup"><span data-stu-id="468e4-108">Constants</span></span>
 
-| <span data-ttu-id="3cf6d-109">Nome</span><span class="sxs-lookup"><span data-stu-id="3cf6d-109">Name</span></span> | <span data-ttu-id="3cf6d-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="3cf6d-110">Description</span></span> |
+| <span data-ttu-id="468e4-109">Nome</span><span class="sxs-lookup"><span data-stu-id="468e4-109">Name</span></span> | <span data-ttu-id="468e4-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="468e4-110">Description</span></span> |
 | ---- |:---- |
-| <span data-ttu-id="3cf6d-111">DML_AXIS_DIRECTION_INCREASING</span><span class="sxs-lookup"><span data-stu-id="3cf6d-111">DML_AXIS_DIRECTION_INCREASING</span></span> | <span data-ttu-id="3cf6d-112">Specifica un ordine crescente (dall'indice inferiore all'indice alto).</span><span class="sxs-lookup"><span data-stu-id="3cf6d-112">Specifies increasing order (from the low index to the high index).</span></span> |
-| <span data-ttu-id="3cf6d-113">DML_AXIS_DIRECTION_DECREASING</span><span class="sxs-lookup"><span data-stu-id="3cf6d-113">DML_AXIS_DIRECTION_DECREASING</span></span> | <span data-ttu-id="3cf6d-114">Specifica l'ordine decrescente (dall'indice alto all'indice basso).</span><span class="sxs-lookup"><span data-stu-id="3cf6d-114">Specifies decreasing order (from the high index to the low index).</span></span> |
+| <span data-ttu-id="468e4-111">DML_AXIS_DIRECTION_INCREASING</span><span class="sxs-lookup"><span data-stu-id="468e4-111">DML_AXIS_DIRECTION_INCREASING</span></span> | <span data-ttu-id="468e4-112">Specifica l'ordine crescente (dall'indice basso all'indice alto).</span><span class="sxs-lookup"><span data-stu-id="468e4-112">Specifies increasing order (from the low index to the high index).</span></span> |
+| <span data-ttu-id="468e4-113">DML_AXIS_DIRECTION_DECREASING</span><span class="sxs-lookup"><span data-stu-id="468e4-113">DML_AXIS_DIRECTION_DECREASING</span></span> | <span data-ttu-id="468e4-114">Specifica l'ordine decrescente (dall'indice alto all'indice basso).</span><span class="sxs-lookup"><span data-stu-id="468e4-114">Specifies decreasing order (from the high index to the low index).</span></span> |
 
 
-## <a name="requirements"></a><span data-ttu-id="3cf6d-115">Requisiti</span><span class="sxs-lookup"><span data-stu-id="3cf6d-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="468e4-115">Requisiti</span><span class="sxs-lookup"><span data-stu-id="468e4-115">Requirements</span></span>
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| <span data-ttu-id="3cf6d-116">**Intestazione**</span><span class="sxs-lookup"><span data-stu-id="3cf6d-116">**Header**</span></span> | <span data-ttu-id="3cf6d-117">directml. h</span><span class="sxs-lookup"><span data-stu-id="3cf6d-117">directml.h</span></span> |
+| <span data-ttu-id="468e4-116">**Intestazione**</span><span class="sxs-lookup"><span data-stu-id="468e4-116">**Header**</span></span> | <span data-ttu-id="468e4-117">directml.h</span><span class="sxs-lookup"><span data-stu-id="468e4-117">directml.h</span></span> |
