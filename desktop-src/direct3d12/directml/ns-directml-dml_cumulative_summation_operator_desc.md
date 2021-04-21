@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_CUMULATIVE_SUMMATION_OPERATOR_DESC
 title: DML_CUMULATIVE_SUMMATION_OPERATOR_DESC
-description: Somma gli elementi di un tensore lungo un asse, scrivendo il conteggio di esecuzione della sommatoria nel tensore di output.
+description: Somma gli elementi di un tensore lungo un asse, scrivendo il totale di esecuzione della somma nel tensore di output.
 helpviewer_keywords:
 - DML_CUMULATIVE_SUMMATION_OPERATOR_DESC
 - DML_CUMULATIVE_SUMMATION_OPERATOR_DESC structure
@@ -45,19 +45,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_CUMULATIVE_SUMMATION_OPERATOR_DESC
-ms.openlocfilehash: 955e70a8cfbb57995d77d73567238d082b96999b
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 2862a2add207b0bb6c41f5c1aabbc390797cba23
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320380"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803348"
 ---
-# <a name="dml_cumulative_summation_operator_desc-structure-directmlh"></a>Struttura DML_CUMULATIVE_SUMMATION_OPERATOR_DESC (directml. h)
+# <a name="dml_cumulative_summation_operator_desc-structure-directmlh"></a>DML_CUMULATIVE_SUMMATION_OPERATOR_DESC struttura (directml.h)
 
-Somma gli elementi di un tensore lungo un asse, scrivendo il conteggio di esecuzione della sommatoria nel tensore di output.
+Somma gli elementi di un tensore lungo un asse, scrivendo il totale di esecuzione della somma nel tensore di output.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -70,60 +70,123 @@ struct DML_CUMULATIVE_SUMMATION_OPERATOR_DESC {
 };
 ```
 
-
-
 ## <a name="members"></a>Members
 
 `InputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Il tensore di input contenente gli elementi da sommare.
-
+Tensore di input contenente gli elementi da sommare.
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di output in cui scrivere le sommatoria cumulative risultanti. Questo tensore deve avere le stesse dimensioni e il tipo di dati di *InputTensor*.
-
+Tensore di output in cui scrivere le sommazioni cumulative risultanti. Questo tensore deve avere le stesse dimensioni e lo stesso tipo di dati di *InputTensor.*
 
 `Axis`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Indice della dimensione su cui sommare gli elementi. Questo valore deve essere minore del valore di *DimensionCount* di *InputTensor*.
-
+Indice della dimensione su cui sommare gli elementi. Questo valore deve essere minore di *DimensionCount* di *InputTensor.*
 
 `AxisDirection`
 
 Tipo: **[DML_AXIS_DIRECTION](./ne-directml-dml_axis_direction.md)**
 
-Uno dei valori dell'enumerazione [DML_AXIS_DIRECTION](./ne-directml-dml_axis_direction.md) . Se è impostato su **DML_AXIS_DIRECTION_INCREASING**, la sommatoria si verifica attraversando il tensore lungo l'asse specificato in base all'indice dell'elemento crescente. Se impostato su **DML_AXIS_DIRECTION_DECREASING**, il contrario è true e la sommatoria viene eseguita attraversando gli elementi in base all'indice decrescente.
-
+Uno dei valori [dell'enumerazione DML_AXIS_DIRECTION](./ne-directml-dml_axis_direction.md) . Se impostato su **DML_AXIS_DIRECTION_INCREASING**, la somma si verifica attraversando il tensore lungo l'asse specificato tramite l'indice degli elementi crescente. Se impostato su **DML_AXIS_DIRECTION_DECREASING**, il contrario è true e la somma si verifica attraversando gli elementi in base all'indice decrescente.
 
 `HasExclusiveSum`
 
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">BOOL</a></b>
 
+Se **TRUE,** il valore dell'elemento corrente viene escluso durante la scrittura del numero di esecuzione nel tensore di output. Se **FALSE,** il valore dell'elemento corrente viene incluso nel numero in esecuzione.
 
+## <a name="examples"></a>Esempio
+
+Gli esempi in questa sezione usano tutti un tensore di input con le proprietà seguenti.
+
+```
+InputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
+[[[[2, 1, 3, 5],
+   [3, 8, 7, 3],
+   [9, 6, 2, 4]]]]
+```
+
+### <a name="example-1-cumulative-summation-across-horizontal-slivers"></a>Esempio 1. Somma cumulativa tra sliver orizzontali
+
+```
+Axis: 3
+AxisDirection: DML_AXIS_DIRECTION_INCREASING
+HasExclusiveSum: FALSE
+
+OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
+[[[[2,  3,  6, 11],     // i.e. [2, 2+1, 2+1+3, 2+1+3+5]
+   [3, 11, 18, 21],     //      [...                   ]
+   [9, 15, 17, 21]]]]   //      [...                   ]
+```
+
+### <a name="example-2-exclusive-sums"></a>Esempio 2. Somme esclusive
+
+*L'impostazione di HasExclusiveSum* su **TRUE** ha l'effetto di escludere il valore dell'elemento corrente dal valore in esecuzione durante la scrittura nel tensore di output.
+
+```
+Axis: 3
+AxisDirection: DML_AXIS_DIRECTION_INCREASING
+HasExclusiveSum: TRUE
+
+OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
+[[[[0, 2,  3,  6],      // Notice the sum is written before adding the input,
+   [0, 3, 11, 18],      // and the final total is not written to any output.
+   [0, 9, 15, 17]]]]
+```
+
+### <a name="example-3-axis-direction"></a>Esempio 3. Direzione dell'asse
+
+*L'impostazione di AxisDirection* [su DML_AXIS_DIRECTION_DECREASING](/windows/win32/api/directml/ne-directml-dml_axis_direction) ha l'effetto di invertire l'ordine di attraversamento degli elementi durante il calcolo del numero in esecuzione.
+
+```
+Axis: 3
+AxisDirection: DML_AXIS_DIRECTION_DECREASING
+HasExclusiveSum: FALSE
+
+OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
+[[[[11,  9,  8,  5],    // i.e. [2+1+3+5, 1+3+5, 3+5, 5]
+   [21, 18, 10,  3],    //      [...                   ]
+   [21, 12,  6,  4]]]]  //      [...                   ]
+```
+
+### <a name="example-4-summing-along-a-different-axis"></a>Esempio 4. Somma lungo un asse diverso
+
+In questo esempio la somma viene eseguita verticalmente, lungo l'asse dell'altezza (seconda dimensione).
+
+```
+Axis: 2
+AxisDirection: DML_AXIS_DIRECTION_INCREASING
+HasExclusiveSum: FALSE
+
+OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
+[[[[ 2,  1,  3,  5],   // i.e. [2,    ...]
+   [ 5,  9, 10,  8],   //      [2+3,  ...]
+   [14, 15, 12, 12]]]] //      [2+3+9 ...]
+```
 
 ## <a name="remarks"></a>Commenti
-Questo operatore supporta l'esecuzione sul posto, vale a dire che *OutputTensor* è autorizzato a eseguire l'aliasing di *InputTensor* durante l'associazione.
+Questo operatore supporta l'esecuzione sul posto, ovvero *outputTensor* è autorizzato a creare un alias di *InputTensor* durante l'associazione.
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor* e *OutputTensor* devono avere lo stesso *tipo* di dati e le stesse *dimensioni*.
+*InputTensor* e *OutputTensor* devono avere gli stessi *Tipi di dati* e *Dimensioni*.
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Input | 4 | FLOAT32, FLOAT16, UINT32, UINT16 |
 | OutputTensor | Output | 4 | FLOAT32, FLOAT16, UINT32, UINT16 |
 
-
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

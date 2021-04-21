@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
 title: DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
-description: Calcola il conteggio di popolamento bit per bit (il numero di bit impostato su 1) per ogni elemento del tensore di input e scrive il risultato nel tensore di output.
+description: Calcola il conteggio della popolazione bit per bit (numero di bit impostato su 1) per ogni elemento del tensore di input e scrive il risultato nel tensore di output.
 helpviewer_keywords:
 - DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
 - DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC structure
@@ -45,21 +45,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
-ms.openlocfilehash: 4b292b1b6e12f4643e928022f59603fd75e080fb
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 3c8dddc3159ebcd857c7423b76856fbeba465d2e
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320340"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803228"
 ---
-# <a name="dml_element_wise_bit_count_operator_desc-structure-directmlh"></a>Struttura DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC (directml. h)
+# <a name="dml_element_wise_bit_count_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC struttura (directml.h)
 
-Calcola il conteggio di popolamento bit per bit (il numero di bit impostato su 1) per ogni elemento del tensore di input e scrive il risultato nel tensore di output.
+Calcola il conteggio della popolazione bit per bit (numero di bit impostato su 1) per ogni elemento del tensore di input e scrive il risultato nel tensore di output.
 
-Il tensore di input e di output deve avere lo stesso *DimensionCount* e le stesse *dimensioni*, sebbene possano variare in *DataType*.
+Il tensore di input e output deve avere gli stessi *valori DimensionCount* e *Sizes,* anche se possono differire in *DataType.*
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,7 +77,7 @@ struct DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di input da cui eseguire la lettura.
+Tensore di input da cui leggere.
 
 `OutputTensor`
 
@@ -101,15 +101,15 @@ OutputTensor: (Sizes:{2,2}, DataType:UINT32)
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor* e *OutputTensor* devono avere lo stesso *DimensionCount* e le stesse *dimensioni*.
+*InputTensor* e *OutputTensor* devono avere gli stessi *valori di DimensionCount* *e Sizes.*
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Input | da 1 a 8 | UINT32, UINT16, UINT8 |
-| OutputTensor | Output | da 1 a 8 | UINT32, UINT8 |
+| InputTensor | Input | Da 1 a 8 | UINT32, UINT16, UINT8 |
+| OutputTensor | Output | Da 1 a 8 | UINT32, UINT8 |
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ELEMENT_WISE_ROUND_OPERATOR_DESC
 title: DML_ELEMENT_WISE_ROUND_OPERATOR_DESC
-description: Arrotonda ogni elemento di *InputTensor* a un valore integer, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
+description: Arrotonda ogni elemento di *InputTensor* a un valore intero, inserendo il risultato nell'elemento corrispondente di *OutputTensor.*
 helpviewer_keywords:
 - DML_ELEMENT_WISE_ROUND_OPERATOR_DESC
 - DML_ELEMENT_WISE_ROUND_OPERATOR_DESC structure
@@ -44,21 +44,21 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_ROUND_OPERATOR_DESC
-ms.openlocfilehash: f0964ae133c61b3a596b644630d363f902635585
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: cb9414d0c3e628fa95784480c7402b242d12095b
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320271"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803051"
 ---
-# <a name="dml_element_wise_round_operator_desc-structure-directmlh"></a>Struttura DML_ELEMENT_WISE_ROUND_OPERATOR_DESC (directml. h)
+# <a name="dml_element_wise_round_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_ROUND_OPERATOR_DESC struttura (directml.h)
 
-Arrotonda ogni elemento di *InputTensor* a un valore integer, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
+Arrotonda ogni elemento di *InputTensor* a un valore intero, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
 
-Questo operatore supporta l'esecuzione sul posto, vale a dire che *OutputTensor* è autorizzato ad alias *InputTensor* durante l'associazione.
+Questo operatore supporta l'esecuzione sul posto, vale a dire che *OutputTensor* è autorizzato a creare un alias *di InputTensor durante* l'associazione.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -77,7 +77,7 @@ struct DML_ELEMENT_WISE_ROUND_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di input da cui eseguire la lettura.
+Tensore di input da cui leggere.
 
 
 `OutputTensor`
@@ -91,27 +91,27 @@ Tensore di output in cui scrivere i risultati.
 
 Tipo: **[DML_ROUNDING_MODE](/windows/win32/api/directml/ne-directml-dml_rounding_mode)**
 
-[DML_ROUNDING_MODE](/windows/win32/api/directml/ne-directml-dml_rounding_mode) che determina la direzione di arrotondamento verso.
+Oggetto [DML_ROUNDING_MODE](/windows/win32/api/directml/ne-directml-dml_rounding_mode) la direzione verso cui eseguire l'arrotondamento.
 
-* Se **DML_ROUNDING_MODE_HALVES_TO_NEAREST_EVEN**: i valori vengono arrotondati all'intero più vicino, con valori a metà (ad esempio, 0,5) arrotondati verso il numero intero pari più vicino.
-* Se **DML_ROUNDING_MODE_TOWARD_ZERO**: i valori vengono arrotondati verso lo zero. Questa operazione tronca effettivamente la parte frazionaria.
-* Se **DML_ROUNDING_MODE_TOWARD_INFINITY**: i valori vengono arrotondati all'intero più vicino, con valori a metà (ad esempio, 0,5) che vengono arrotondati per eccesso da zero (verso l'infinito positivo o negativo, a seconda del segno del valore).
+* Se **DML_ROUNDING_MODE_HALVES_TO_NEAREST_EVEN**: i valori vengono arrotondati all'intero più vicino, con i valori a metà (ad esempio, 0,5) arrotondati al numero intero pari più vicino.
+* Se **DML_ROUNDING_MODE_TOWARD_ZERO**: i valori vengono arrotondati a zero. In questo modo la parte frazionaria viene troncata in modo efficace.
+* Se **DML_ROUNDING_MODE_TOWARD_INFINITY**: i valori vengono arrotondati all'intero più vicino, con i valori a metà (ad esempio, 0,5) arrotondati da zero (verso l'infinito positivo o negativo, a seconda del segno del valore).
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor* e *OutputTensor* devono avere lo stesso *tipo* di dati, *DimensionCount* e *dimensioni*.
+*InputTensor* e *OutputTensor* devono avere gli stessi *valori di DataType,* *DimensionCount* e *Sizes.*
 
-## <a name="tensor-support"></a>Supporto tensore
-### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 e versioni successive
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 e successive
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Input | da 1 a 8 | FLOAT32, FLOAT16 |
-| OutputTensor | Output | da 1 a 8 | FLOAT32, FLOAT16 |
+| InputTensor | Input | Da 1 a 8 | FLOAT32, FLOAT16 |
+| OutputTensor | Output | Da 1 a 8 | FLOAT32, FLOAT16 |
 
-### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 e versioni successive
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 e successive
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Input | 4 | FLOAT32, FLOAT16 |
 | OutputTensor | Output | 4 | FLOAT32, FLOAT16 |
@@ -121,4 +121,4 @@ Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

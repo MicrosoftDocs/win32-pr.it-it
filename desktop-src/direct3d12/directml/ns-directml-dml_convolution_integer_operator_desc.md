@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_CONVOLUTION_INTEGER_OPERATOR_DESC
 title: DML_CONVOLUTION_INTEGER_OPERATOR_DESC
-description: Esegue una convoluzione di *FilterTensor* con *InputTensor*. Questo operatore esegue la convoluzione in avanti su dati Integer.
+description: Esegue una convoluzione di *FilterTensor* con *InputTensor.* Questo operatore esegue la convoluzione in avanti sui dati integer.
 helpviewer_keywords:
 - DML_CONVOLUTION_INTEGER_OPERATOR_DESC
 - DML_CONVOLUTION_INTEGER_OPERATOR_DESC structure
@@ -45,19 +45,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_CONVOLUTION_INTEGER_OPERATOR_DESC
-ms.openlocfilehash: c16690ea1e3049ffeba398bbbaca2003f965a832
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 07406155be9ae5f78fbf5f3b7fcd750aa4631dbc
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320381"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803383"
 ---
-# <a name="dml_convolution_integer_operator_desc-structure-directmlh"></a>Struttura DML_CONVOLUTION_INTEGER_OPERATOR_DESC (directml. h)
+# <a name="dml_convolution_integer_operator_desc-structure-directmlh"></a>DML_CONVOLUTION_INTEGER_OPERATOR_DESC struttura (directml.h)
 
-Esegue una convoluzione di *FilterTensor* con *InputTensor*. Questo operatore esegue la convoluzione in avanti su dati Integer. I tensori di punti zero facoltativi possono essere usati anche per sottrarre i valori del punto zero dal tensore di input e filtro.
+Esegue una convoluzione di *FilterTensor* con *InputTensor.* Questo operatore esegue la convoluzione in avanti sui dati integer. I tensori zero point facoltativi possono essere usati anche per sottrarre valori di zero punti dal tensore di input e filtro.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -82,28 +82,28 @@ struct DML_CONVOLUTION_INTEGER_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente i dati di input. Le dimensioni previste di *InputTensor* sono `{ BatchCount, InputChannelCount, InputHeight, InputWidth }` .
+Tensore contenente i dati di input. Le dimensioni previste di *InputTensor* sono `{ BatchCount, InputChannelCount, InputHeight, InputWidth }` .
 
 
 `InputZeroPointTensor`
 
-Tipo: \_ MAYBENULL \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
+Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore facoltativo contenente i dati del punto zero di input. Le dimensioni previste di *InputZeroPointTensor* sono `{ 1, 1, 1, 1 }` .
+Tensore facoltativo contenente i dati del punto zero di input. Le dimensioni previste di *InputZeroPointTensor* sono `{ 1, 1, 1, 1 }` .
 
 
 `FilterTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente i dati del filtro. Le dimensioni previste di *FilterTensor* sono `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
+Tensore contenente i dati del filtro. Le dimensioni previste di *FilterTensor* sono `{ FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth }` .
 
 
 `FilterZeroPointTensor`
 
-Tipo: \_ MAYBENULL \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
+Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore facoltativo contenente i dati del punto zero del filtro. Le dimensioni previste di *FilterZeroPointTensor* sono `{ 1, 1, 1, 1 }` se è necessaria la quantizzazione del tensore o `{ 1, OutputChannelCount, 1, 1 }` se è richiesta la quantizzazione per canale.
+Tensore facoltativo contenente i dati del punto zero del filtro. Le dimensioni previste di *FilterZeroPointTensor* sono se è necessaria la quantizzazione per tensore o se è necessaria `{ 1, 1, 1, 1 }` `{ 1, OutputChannelCount, 1, 1 }` la quantizzazione per canale.
 
 
 `OutputTensor`
@@ -115,64 +115,64 @@ Tensore in cui scrivere i risultati. Le dimensioni previste di *OutputTensor* so
 
 `DimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Numero di dimensioni spaziali per l'operazione di convoluzione. Le dimensioni spaziali sono le dimensioni inferiori del *FilterTensor* di convoluzione. Questo valore determina anche le dimensioni delle matrici *Strides*, *dilatations*, *StartPadding* e *EndPadding* . È supportato solo il valore 2.
+Numero di dimensioni spaziali per l'operazione di convoluzione. Le dimensioni spaziali sono le dimensioni inferiori dell'oggetto *FilterTensor* di convoluzione. Questo valore determina anche le dimensioni delle matrici *Strides,* *Dilations,* *StartPadding* ed *EndPadding.* È supportato solo il valore 2.
 
 
 `Strides`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
-Matrice contenente gli stride dell'operazione di convoluzione. Questi stride vengono applicati al filtro di convoluzione. Sono separate dagli stride di tensori inclusi nel [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
+Matrice contenente gli stride dell'operazione di convoluzione. Questi passi vengono applicati al filtro di convoluzione. Sono separati dai passi del tensore inclusi in [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc).
 
 
 `Dilations`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
-Matrice contenente le dilatazioni dell'operazione di convoluzione. Le dilatazioni sono gli stride applicati agli elementi del kernel del filtro. Questo ha l'effetto di simulare un kernel di filtro di dimensioni maggiori riempiendo gli elementi del kernel di filtro interni con zeri.
+Matrice contenente le dilazioni dell'operazione di convoluzione. Le dilatazioni sono passi applicati agli elementi del kernel di filtro. Ciò ha l'effetto di simulare un kernel di filtro più grande tramite il riempimento degli elementi del kernel del filtro interno con zeri.
 
 
 `StartPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
 Matrice contenente i valori di spaziatura interna da applicare all'inizio di ogni dimensione spaziale del filtro e del tensore di input dell'operazione di convoluzione.
 
 
 `EndPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [uint](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
 
-Matrice contenente i valori di spaziatura interna da applicare alla fine di ogni dimensione spaziale del filtro e del tensore di input dell'operazione di convoluzione.
+Matrice contenente i valori di riempimento da applicare alla fine di ogni dimensione spaziale del filtro e del tensore di input dell'operazione di convoluzione.
 
 
 `GroupCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Numero di gruppi in cui dividere l'operazione di convoluzione. *GroupCount* può essere usato per ottenere una convoluzione a livello di profondità impostando *GroupCount* uguale al numero di canali di input. Questa operazione divide la convoluzione in una convoluzione separata per ogni canale di input.
+Numero di gruppi in cui dividere l'operazione di convoluzione. *GroupCount* può essere usato per ottenere una convoluzione a livello di profondità impostando *GroupCount* su un valore uguale al numero di canali di input. In questo modo la convoluzione viene suddivisa in una convoluzione separata per canale di input.
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-* *FilterTensor* e *FilterZeroPointTensor* devono avere lo stesso *tipo* di dati.
-* *InputTensor* e *InputZeroPointTensor* devono avere lo stesso *tipo* di dati.
+* *FilterTensor* e *FilterZeroPointTensor* devono avere lo stesso *tipo di dati*.
+* *InputTensor* e *InputZeroPointTensor* devono avere lo stesso *tipo di dati*.
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Dimensioni | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Dimensioni | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | ---------- | -------------------------- | -------------------- |
-| InputTensor | Input | {BatchCount, InputChannelCount, InputHeight, InputWidth} | 4 | INT8, UINT8 |
-| InputZeroPointTensor | Input facoltativo | {1, 1, 1, 1} | 4 | INT8, UINT8 |
+| InputTensor | Input | { BatchCount, InputChannelCount, InputHeight, InputWidth } | 4 | INT8, UINT8 |
+| InputZeroPointTensor | Input facoltativo | { 1, 1, 1, 1 } | 4 | INT8, UINT8 |
 | FilterTensor | Input | { FilterBatchCount, FilterChannelCount, FilterHeight, FilterWidth } | 4 | INT8, UINT8 |
-| FilterZeroPointTensor | Input facoltativo | {1, FilterZeroPointChannelCount, 1, 1} | 4 | INT8, UINT8 |
-| OutputTensor | Output | {BatchCount, OutputChannelCount, OutputHeight, OutputWidth} | 4 | INT32 |
+| FilterZeroPointTensor | Input facoltativo | { 1, FilterZeroPointChannelCount, 1, 1 } | 4 | INT8, UINT8 |
+| OutputTensor | Output | { BatchCount, OutputChannelCount, OutputHeight, OutputWidth } | 4 | INT32 |
 
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

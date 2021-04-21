@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_MAX_POOLING_GRAD_OPERATOR_DESC
 title: DML_MAX_POOLING_GRAD_OPERATOR_DESC
-description: Calcola le sfumature di propagazione per il pool massimo (vedere [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
+description: Calcola le sfumature di backpropagation per il pooling massimo (vedere [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
 helpviewer_keywords:
 - DML_MAX_POOLING_GRAD_OPERATOR_DESC
 - DML_MAX_POOLING_GRAD_OPERATOR_DESC structure
@@ -45,18 +45,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_MAX_POOLING_GRAD_OPERATOR_DESC
-ms.openlocfilehash: b7314cb6b9456d9ac9f99e90100085e86f88ffd9
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 3b0b10fa8ee17c9d06e779c3c990f134bc4ae669
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320852"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803431"
 ---
-# <a name="dml_max_pooling_grad_operator_desc-structure-directmlh"></a>Struttura DML_MAX_POOLING_GRAD_OPERATOR_DESC (directml. h)
+# <a name="dml_max_pooling_grad_operator_desc-structure-directmlh"></a>DML_MAX_POOLING_GRAD_OPERATOR_DESC struttura (directml.h)
 
-Calcola le sfumature di propagazione per il pool massimo (vedere [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
+Calcola le sfumature di backpropagation per il pooling massimo (vedere [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md)).
 
-Si consideri un **DML_MAX_POOLING2_OPERATOR_DESC** 2x2 senza spaziatura o dilatazioni e un stride di 1, che esegue le operazioni seguenti.
+Si consideri un **DML_MAX_POOLING2_OPERATOR_DESC** 2x2 senza spaziatura interna o dilazioni e uno stride di 1, che esegue le operazioni seguenti.
 
 ```
 InputTensor             OutputTensor    IndicesTensor
@@ -65,7 +65,7 @@ InputTensor             OutputTensor    IndicesTensor
  [5, 6, 7]]
 ```
 
-L'elemento più grande di ogni finestra 2x2 nel tensore di input produce un elemento dell'output. Di seguito è riportato un esempio dell'output di **DML_MAX_POOLING_GRAD_OPERATOR_DESC**, in base a parametri simili.
+L'elemento più grande di ogni finestra 2x2 nel tensore di input produce un elemento dell'output. Di seguito è riportato un esempio dell'output **DML_MAX_POOLING_GRAD_OPERATOR_DESC**, dati parametri simili.
 
 ```
 InputTensor   InputGradientTensor            OutputGradientTensor
@@ -74,12 +74,12 @@ InputTensor   InputGradientTensor            OutputGradientTensor
  [5, 6, 7]]                                   [0, 4, 5]]
 ```
 
-In effetti, questo operatore usa *InputTensor* per determinare l'indice dell'elemento più grande da ogni finestra e distribuisce i valori di *InputGradientTensor* in *OutputGradientTensor* in base a questi indici. Quando gli indici si sovrappongono, i valori vengono sommati. Tutti gli elementi di output senza riferimenti vengono azzerati.
+In effetti, questo operatore usa *InputTensor* per determinare l'indice dell'elemento più grande da ogni finestra e distribuisce i valori di *InputGradientTensor* in *OutputGradientTensor* in base a questi indici. Se gli indici si sovrappongono, i valori vengono sommati. Qualsiasi elemento di output senza riferimenti viene azzerato.
 
-Nel caso di un tie (dove più di un elemento in una finestra ha lo stesso valore massimo), viene scelto l'elemento con l'indice dell'elemento logico più basso.
+Nel caso di un oggetto tie (in cui più di un elemento in una finestra ha lo stesso valore massimo), viene scelto l'elemento con l'indice logico di elemento più basso.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -104,71 +104,71 @@ struct DML_MAX_POOLING_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore della funzionalità di input. Si tratta in genere dello stesso tensore fornito come *InputTensor* per [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) nel passaggio successivo.
+Tensore della funzionalità di input. Si tratta in genere dello stesso tensore fornito da *InputTensor* per DML_MAX_POOLING2_OPERATOR_DESC [nel](./ns-directml-dml_max_pooling2_operator_desc.md) passaggio in avanti.
 
 `InputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output di propagation di un livello precedente. In genere, questo tensore avrebbe le stesse dimensioni dell' *output* del [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) corrispondente nel passaggio successivo.
+Tensore sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output della retropropagazione di un livello precedente. In genere questo tensore avrebbe le stesse dimensioni *dell'output* del [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) corrispondente nel passaggio in avanti.
 
 `OutputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di output contenente le sfumature ripropagate. In genere, questo tensore avrebbe le stesse dimensioni dell' *input* del [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md) corrispondente nel passaggio successivo.
+Tensore di output contenente le sfumature backpropagate. In genere, questo tensore ha le stesse dimensioni *dell'input* del [parametro](./ns-directml-dml_max_pooling2_operator_desc.md) DML_MAX_POOLING2_OPERATOR_DESC nel passaggio in avanti.
 
 `DimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Il numero di elementi nelle matrici *Strides*, *WindowSize*, *StartPadding*, *EndPadding* e *dilatations* . Questo valore deve essere uguale al numero di dimensioni spaziali (InputTensor DimensionCount-2). Poiché questo operatore supporta solo i tensori 4D, l'unico valore valido per questo parametro è 2.
+Numero di elementi nelle matrici *Strides,* *WindowSize,* *StartPadding,* *EndPadding* e *Dilations.* Questo valore deve essere uguale al numero di dimensioni spaziali (DimensionCount - 2 di InputTensor). Poiché questo operatore supporta solo tensori 4D, l'unico valore valido per questo parametro è 2.
 
 `Strides`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Vedere *stride* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
+Vedere *Strides* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `WindowSize`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
 Vedere *WindowSize* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `StartPadding`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
 Vedere *StartPadding* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `EndPadding`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
 Vedere *EndPadding* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 `Dilations`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Vedere le *dilatazioni* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
+Vedere *Dilazioni* in [DML_MAX_POOLING2_OPERATOR_DESC](./ns-directml-dml_max_pooling2_operator_desc.md).
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
 * *InputTensor* e *OutputGradientTensor* devono avere le stesse *dimensioni*.
-* *InputGradientTensor*, *InputTensor* e *OutputGradientTensor* devono avere lo stesso *tipo* di dati.
+* *InputGradientTensor,* *InputTensor* e *OutputGradientTensor* devono avere lo stesso *tipo di dati*.
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Dimensioni | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Dimensioni | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | ---------- | -------------------------- | -------------------- |
-| InputTensor | Input | {BatchCount, ChannelCount, InputHeight, InputWidth} | 4 | FLOAT32, FLOAT16 |
-| InputGradientTensor | Input | {BatchCount, ChannelCount, OutputHeight, OutputWidth} | 4 | FLOAT32, FLOAT16 |
-| OutputGradientTensor | Output | {BatchCount, ChannelCount, InputHeight, InputWidth} | 4 | FLOAT32, FLOAT16 |
+| InputTensor | Input | { BatchCount, ChannelCount, InputHeight, InputWidth } | 4 | FLOAT32, FLOAT16 |
+| InputGradientTensor | Input | { BatchCount, ChannelCount, OutputHeight, OutputWidth } | 4 | FLOAT32, FLOAT16 |
+| OutputGradientTensor | Output | { BatchCount, ChannelCount, InputHeight, InputWidth } | 4 | FLOAT32, FLOAT16 |
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

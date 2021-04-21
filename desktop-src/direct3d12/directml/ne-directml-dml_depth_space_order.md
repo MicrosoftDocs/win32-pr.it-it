@@ -1,7 +1,7 @@
 ---
 UID: NE:directml.DML_DEPTH_SPACE_ORDER
 title: DML_DEPTH_SPACE_ORDER
-description: Definisce le costanti che controllano la trasformazione applicata negli operatori DirectML [DML_OPERATOR_DEPTH_TO_SPACE1](/windows/win32/api/directml/ne-directml-dml_operator_type) e **DML_OPERATOR_SPACE_TO_DEPTH1**.
+description: Definisce le costanti che controllano la trasformazione applicata negli operatori DirectML DML_OPERATOR_DEPTH_TO_SPACE1 [e](/windows/win32/api/directml/ne-directml-dml_operator_type) **DML_OPERATOR_SPACE_TO_DEPTH1**.
 ms.topic: reference
 tech.root: directml
 ms.date: 10/29/2020
@@ -39,19 +39,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_DEPTH_SPACE_ORDER
-ms.openlocfilehash: 21ab43f81a5959fc6722f5f4dedc3f60319ba642
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 009686adfc054c7b6344f01edafedaf2921693d5
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320291"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803537"
 ---
-# <a name="dml_depth_space_order-enumeration-directmlh"></a>Enumerazione DML_DEPTH_SPACE_ORDER (directml. h)
+# <a name="dml_depth_space_order-enumeration-directmlh"></a>DML_DEPTH_SPACE_ORDER enumerazione (directml.h)
 
-Definisce le costanti che controllano la trasformazione applicata negli operatori DirectML [DML_OPERATOR_DEPTH_TO_SPACE1](/windows/win32/api/directml/ne-directml-dml_operator_type) e **DML_OPERATOR_SPACE_TO_DEPTH1**. Questi vengono usati all'interno delle strutture [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md) e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) .
+Definisce le costanti che controllano la trasformazione applicata negli operatori DirectML DML_OPERATOR_DEPTH_TO_SPACE1 [e](/windows/win32/api/directml/ne-directml-dml_operator_type) **DML_OPERATOR_SPACE_TO_DEPTH1**. Questi vengono usati all'interno [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md) e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) strutture.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -65,17 +65,17 @@ typedef enum DML_DEPTH_SPACE_ORDER {
 
 | Nome | Descrizione |
 | ---- |:---- |
-| DML_DEPTH_SPACE_ORDER_DEPTH_COLUMN_ROW | Fa in modo che i tensori utilizzati in [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md) e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) vengano interpretati con i layout seguenti, in cui le dimensioni tra parentesi sono bidimensionali.<br><br>- **Versione Depth**: [batch, (BlockHeight, BlockWidth, Channels), Height, Width]<br>- **Versione spazio**: [batch, Channels, (Height, BlockHeight), (width, BlockWidth)] |
-| DML_DEPTH_SPACE_ORDER_COLUMN_ROW_DEPTH | Fa in modo che i tensori utilizzati in [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md) e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) vengano interpretati con i layout seguenti, in cui le dimensioni tra parentesi sono bidimensionali.<br><br>- **Versione Depth**: [batch, (Channels, BlockHeight, BlockWidth), Height, Width]<br>- **Versione spazio**: [batch, Channels, (Height, BlockHeight), (width, BlockWidth)] |
+| DML_DEPTH_SPACE_ORDER_DEPTH_COLUMN_ROW | Fa sì che [](./ns-directml-dml_depth_to_space1_operator_desc.md) i tensori DML_DEPTH_TO_SPACE1_OPERATOR_DESC e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) siano interpretati con i layout seguenti, in cui le dimensioni tra parentesi vengono appiattite insieme.<br><br>- **Versione di profondità:**[Batch, (BlockHeight, BlockWidth, Channels), Height, Width]<br>- **Versione spazio:**[Batch, Channels, (Height, BlockHeight), (Width, BlockWidth)] |
+| DML_DEPTH_SPACE_ORDER_COLUMN_ROW_DEPTH | Fa sì che [](./ns-directml-dml_depth_to_space1_operator_desc.md) i tensori usati DML_DEPTH_TO_SPACE1_OPERATOR_DESC e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) siano interpretati con i layout seguenti, in cui le dimensioni tra parentesi vengono appiattite insieme.<br><br>- **Versione di profondità:**[Batch, (Channels, BlockHeight, BlockWidth), Height, Width]<br>- **Versione spazio:**[Batch, Channels, (Height, BlockHeight), (Width, BlockWidth)] |
 
 ## <a name="remarks"></a>Commenti
 
-Vedere [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md) e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) documentazione per esempi che illustrano l'effetto di questi valori.
+Vedere [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md) e [DML_SPACE_TO_DEPTH1_OPERATOR_DESC](./ns-directml-dml_space_to_depth1_operator_desc.md) per esempi che illustrano l'effetto di questi valori.
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |
 
 ## <a name="see-also"></a>Vedi anche
 

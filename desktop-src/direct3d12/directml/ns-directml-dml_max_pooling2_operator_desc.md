@@ -37,18 +37,18 @@ api_name:
 f1_keywords:
 - DML_MAX_POOLING2_OPERATOR_DESC
 - directml/DML_MAX_POOLING2_OPERATOR_DESC
-ms.openlocfilehash: 7d2dc9d28e8afcaa5cc6277e26f1f663f3f6688f
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 06e4d7eb01abab9c412238e353a73607df02b219
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320404"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803666"
 ---
-# <a name="dml_max_pooling2_operator_desc-structure-directmlh"></a>Struttura DML_MAX_POOLING2_OPERATOR_DESC (directml. h)
+# <a name="dml_max_pooling2_operator_desc-structure-directmlh"></a>DML_MAX_POOLING2_OPERATOR_DESC struttura (directml.h)
 Calcola il valore massimo tra gli elementi all'interno della finestra temporale scorrevole sul tensore di input e, facoltativamente, restituisce gli indici dei valori massimi selezionati.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -73,14 +73,14 @@ struct DML_MAX_POOLING2_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di input di *dimensioni* `{ BatchCount, ChannelCount, Height, Width }` se *InputTensor. DimensionCount* è 4 e `{ BatchCount, ChannelCount, Depth, Height, Weight } ` se *InputTensor. DimensionCount* è 5.
+Tensore di input *di Sizes* `{ BatchCount, ChannelCount, Height, Width }` se *InputTensor.DimensionCount* è 4 e `{ BatchCount, ChannelCount, Depth, Height, Weight } ` se *InputTensor.DimensionCount* è 5.
 
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di output in cui scrivere i risultati. Le dimensioni del tensore di output possono essere calcolate come indicato di seguito.
+Tensore di output in cui scrivere i risultati. Le dimensioni del tensore di output possono essere calcolate come indicato di seguito.
 
 ```cpp
 OutputTensor->Sizes[0] = InputTensor->Sizes[0];
@@ -95,82 +95,82 @@ for (UINT i = 0; i < DimensionCount; ++i) {
 
 `OutputIndicesTensor`
 
-Tipo: \_ MAYBENULL \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
+Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di output facoltativo di indici al tensore di input *InputTensor* dei valori massimi prodotti e archiviati in *OutputTensor*. Questi valori di indice sono in base zero e considerano il tensore di input come matrice unidimensionale contigua. Quando più elementi all'interno della finestra temporale scorrevole hanno lo stesso valore, i valori uguali successivi vengono ignorati e l'indice punta al primo valore rilevato. Sia *OutputTensor* che *OutputIndicesTensor* hanno le stesse dimensioni del tensore.
+Tensore di output facoltativo di indici per il tensore di input *InputTensor* dei valori massimi prodotti e archiviati in *OutputTensor.* Questi valori di indice sono in base zero e trattano il tensore di input come matrice unidimensionale contigua. Quando più elementi all'interno della finestra temporale scorrevole hanno lo stesso valore, i valori uguali successivi vengono ignorati e l'indice punta al primo valore rilevato. Sia *OutputTensor che* *OutputIndicesTensor* hanno le stesse dimensioni del tensore.
 
 
 `DimensionCount`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Il numero di dimensioni spaziali del tensore di input *InputTensor*, che corrisponde anche al numero di dimensioni della finestra temporale scorrevole *WindowSize*. Questo valore determina anche le dimensioni delle matrici *Strides*, *StartPadding* e *EndPadding* . Deve essere impostato su 2 quando *InputTensor* è 4D e 3 quando si tratta di un tensore 5D.
+Numero di dimensioni spaziali del tensore di input *InputTensor*, che corrisponde anche al numero di dimensioni della finestra temporale *scorrevole WindowSize.* Questo valore determina anche le dimensioni delle matrici *Strides,* *StartPadding* *ed EndPadding.* Deve essere impostato su 2 quando *InputTensor* è 4D e su 3 quando si tratta di un tensore 5D.
 
 
 `Strides`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Stride per le dimensioni della finestra temporale scorrevole delle dimensioni `{ Height, Width }` quando *DimensionCount* è impostato su 2 o quando è `{ Depth, Height, Width }` impostato su 3.
+Gli stride per le dimensioni della finestra scorrevole delle dimensioni `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` su 3.
 
 
 `WindowSize`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Dimensioni della finestra temporale scorrevole in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o quando è `{ Depth, Height, Width }` impostato su 3.
+Dimensioni della finestra scorrevole in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` su 3.
 
 
 `StartPadding`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Numero di elementi di riempimento da applicare all'inizio di ogni dimensione spaziale del tensore di input *InputTensor*. I valori si trovano in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` quando è impostato su 3.
+Numero di elementi di spaziatura interna da applicare all'inizio di ogni dimensione spaziale del tensore *input InputTensor*. I valori sono in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` quando è impostato su 3.
 
 
 `EndPadding`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Numero di elementi di riempimento da applicare alla fine di ogni dimensione spaziale del tensore di input *InputTensor*. I valori si trovano in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` quando è impostato su 3.
+Numero di elementi di spaziatura interna da applicare alla fine di ogni dimensione spaziale del tensore *input InputTensor*. I valori sono in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` quando è impostato su 3.
 
 
 `Dilations`
 
-Tipo: \_ \_ Dimensione campo \_ (DimensionCount) <b>const [uint](/windows/desktop/winprog/windows-data-types) * </b>
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) <b>const [UINT](/windows/desktop/winprog/windows-data-types) * </b>
 
-Valori per ogni dimensione spaziale del tensore di input *InputTensor* in base al quale viene selezionato un elemento nella finestra temporale scorrevole per ogni elemento di tale valore. I valori si trovano in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` quando è impostato su 3.
+Valori per ogni dimensione spaziale del tensore di input *InputTensor* in base al quale un elemento all'interno della finestra scorrevole viene selezionato per ogni elemento di tale valore. I valori sono in `{ Height, Width }` quando *DimensionCount* è impostato su 2 o `{ Depth, Height, Width }` quando è impostato su 3.
 
 
 ## <a name="remarks"></a>Commenti
-**DML_MAX_POOLING2_OPERATOR_DESC** sostituisce la versione precedente [DML_MAX_POOLING_OPERATOR1_DESC](/windows/win32/api/directml/ns-directml-dml_max_pooling1_operator_desc) con ulteriori *dilatazioni* di matrici costanti. Le due versioni sono equivalenti quando le *dilatazioni* sono impostate su `{ 1,1 }` per l'input 4D o `{ 1,1,1 }` per le funzionalità di input 5D.
+**DML_MAX_POOLING2_OPERATOR_DESC** sostituisce la versione precedente DML_MAX_POOLING_OPERATOR1_DESC [con](/windows/win32/api/directml/ns-directml-dml_max_pooling1_operator_desc) una matrice costante aggiuntiva *Dilations*. Le due versioni sono equivalenti quando *Dilations* è impostato su per `{ 1,1 }` l'input 4D o `{ 1,1,1 }` per le funzionalità di input 5D.
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-* *InputTensor*, *OutputIndicesTensor* e *OutputTensor* devono avere lo stesso *DimensionCount*.
-* *InputTensor* e *OutputTensor* devono avere lo stesso *tipo* di dati.
+* *InputTensor,* *OutputIndicesTensor* e *OutputTensor* devono avere lo stesso *dimensioncount.*
+* *InputTensor* e *OutputTensor* devono avere lo stesso *Tipo di dati*.
 
-## <a name="tensor-support"></a>Supporto tensore
-### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 e versioni successive
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 e successive
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Input | da 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
-| OutputTensor | Output | da 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
-| OutputIndicesTensor | Output facoltativo | da 4 a 5 | UINT32 |
+| InputTensor | Input | Da 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
+| OutputTensor | Output | Da 4 a 5 | FLOAT32, FLOAT16, INT8, UINT8 |
+| OutputIndicesTensor | Output facoltativo | Da 4 a 5 | UINT32 |
 
-### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 e versioni successive
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 e successive
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Input | da 4 a 5 | FLOAT32, FLOAT16 |
-| OutputTensor | Output | da 4 a 5 | FLOAT32, FLOAT16 |
-| OutputIndicesTensor | Output facoltativo | da 4 a 5 | UINT32 |
+| InputTensor | Input | Da 4 a 5 | FLOAT32, FLOAT16 |
+| OutputTensor | Output | Da 4 a 5 | FLOAT32, FLOAT16 |
+| OutputIndicesTensor | Output facoltativo | Da 4 a 5 | UINT32 |
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Windows 10, versione 2004 (10,0; Compilazione 19041) |
-| **Server minimo supportato** | Windows Server, versione 2004 (10,0; Compilazione 19041) |
-| **Intestazione** | directml. h |
+| **Client minimo supportato** | Windows 10 versione 2004 (10.0; Build 19041) |
+| **Server minimo supportato** | Windows Server versione 2004 (10.0; Build 19041) |
+| **Intestazione** | directml.h |

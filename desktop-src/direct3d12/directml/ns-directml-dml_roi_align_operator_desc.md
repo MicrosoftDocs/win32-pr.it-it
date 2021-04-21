@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ROI_ALIGN_OPERATOR_DESC
 title: DML_ROI_ALIGN_OPERATOR_DESC
-description: Esegue un'operazione di allineamento del ROI, come descritto nel [documento Mask R-CNN](https://arxiv.org/abs/1703.06870). In breve, l'operazione estrae le colture dal tensore dell'immagine di input e le ridimensiona a una dimensione di output comune specificata dalle ultime 2 dimensioni di *OutputTensor* usando il *InterpolationMode* specificato.
+description: Esegue un'operazione di allineamento ROI, come descritto nel [documento Mascherare R-CNN.](https://arxiv.org/abs/1703.06870) In breve, l'operazione estrae le piante dal tensore dell'immagine di input e le ridimensiona a una dimensione di output comune specificata dalle ultime 2 dimensioni di *OutputTensor* usando l'oggetto *InterpolationMode specificato.*
 helpviewer_keywords:
 - DML_ROI_ALIGN_OPERATOR_DESC
 - DML_ROI_ALIGN_OPERATOR_DESC structure
@@ -45,19 +45,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ROI_ALIGN_OPERATOR_DESC
-ms.openlocfilehash: 987aef7d7002892b8af3167fb8da2b74dc80a12e
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b9004a77d3b325dd3394d1a3a6b596e94997e9fd
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320330"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107804008"
 ---
-# <a name="dml_roi_align_operator_desc-structure-directmlh"></a>Struttura DML_ROI_ALIGN_OPERATOR_DESC (directml. h)
+# <a name="dml_roi_align_operator_desc-structure-directmlh"></a>DML_ROI_ALIGN_OPERATOR_DESC struttura (directml.h)
 
-Esegue un'operazione di allineamento del ROI, come descritto nel [documento Mask R-CNN](https://arxiv.org/abs/1703.06870). In breve, l'operazione estrae le colture dal tensore dell'immagine di input e le ridimensiona a una dimensione di output comune specificata dalle ultime 2 dimensioni di *OutputTensor* usando il *InterpolationMode* specificato.
+Esegue un'operazione di allineamento ROI, come descritto nel [documento Mascherare R-CNN.](https://arxiv.org/abs/1703.06870) In breve, l'operazione estrae le piante dal tensore dell'immagine di input e le ridimensiona a una dimensione di output comune specificata dalle ultime 2 dimensioni di *OutputTensor* usando l'oggetto *InterpolationMode specificato.*
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -84,86 +84,86 @@ struct DML_ROI_ALIGN_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente i dati di input con dimensioni `{ BatchCount, ChannelCount, InputHeight, InputWidth }` .
+Tensore contenente i dati di input con dimensioni `{ BatchCount, ChannelCount, InputHeight, InputWidth }` .
 
 `ROITensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente le aree di interesse (ROI) dati. Le dimensioni consentite di `ROITensor` sono `{ NumROIs, 4 }` , `{ 1, NumROIs, 4 }` o `{ 1, 1, NumROIs, 4 }` . Per ogni ROI, i valori saranno le coordinate degli angoli superiore sinistro e inferiore destro nell'ordine `[x1, y1, x2, y2]` .
+Tensore contenente i dati delle aree di interesse. Le dimensioni `ROITensor` consentite di `{ NumROIs, 4 }` sono `{ 1, NumROIs, 4 }` , o `{ 1, 1, NumROIs, 4 }` . Per ogni ROI, i valori saranno le coordinate degli angoli superiore sinistro e inferiore destro nell'ordine `[x1, y1, x2, y2]` .
 
 `BatchIndicesTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente gli indici di batch per estrarre il ROIs da. Le dimensioni consentite di `BatchIndicesTensor` sono `{ NumROIs }` , `{ 1, NumROIs }` , `{ 1, 1, NumROIs }` o `{ 1, 1, 1, NumROIs }` . Ogni valore è l'indice di un batch da *InputTensor*. Il comportamento non è definito se i valori non sono compresi nell'intervallo [0, BatchCount).
+Tensore contenente gli indici batch da cui estrarre i ROI. Le dimensioni `BatchIndicesTensor` consentite di `{ NumROIs }` sono , , o `{ 1, NumROIs }` `{ 1, 1, NumROIs }` `{ 1, 1, 1, NumROIs }` . Ogni valore è l'indice di un batch da *InputTensor*. Il comportamento non è definito se i valori non sono nell'intervallo [0, BatchCount).
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente i dati di output. Le dimensioni previste di *OutputTensor* sono `{ NumROIs, ChannelCount, OutputHeight, OutputWidth }` .
+Tensore contenente i dati di output. Le dimensioni previste di *OutputTensor* sono `{ NumROIs, ChannelCount, OutputHeight, OutputWidth }` .
 
 `ReductionFunction`
 
 Tipo: **[DML_REDUCE_FUNCTION](/windows/win32/api/directml/ne-directml-dml_reduce_function)**
 
-Funzione di riduzione da usare quando si riducono tutti gli esempi di input che contribuiscono a un elemento di output ([DML_REDUCE_FUNCTION_AVERAGE](/windows/win32/api/directml/ne-directml-dml_reduce_function) o **DML_REDUCE_FUNCTION_MAX**). Il numero di campioni di input da ridurre in è limitato da *MinimumSamplesPerOutput* e *MaximumSamplesPerOutput*.
+Funzione di riduzione da usare per la riduzione in tutti i campioni di input che contribuiscono a un elemento di output ([DML_REDUCE_FUNCTION_AVERAGE](/windows/win32/api/directml/ne-directml-dml_reduce_function) **o DML_REDUCE_FUNCTION_MAX**). Il numero di esempi di input da ridurre è limitato da *MinimumSamplesPerOutput* *e MaximumSamplesPerOutput*.
 
 `InterpolationMode`
 
 Tipo: **[DML_INTERPOLATION_MODE](/windows/win32/api/directml/ne-directml-dml_interpolation_mode)**
 
-Modalità di interpolazione da utilizzare quando si ridimensionano le aree.
+Modalità di interpolazione da usare per il ridimensionamento delle aree.
 
-- [DML_INTERPOLATION_MODE_NEAREST_NEIGHBOR](/windows/win32/api/directml/ne-directml-dml_interpolation_mode). Usa l'algoritmo *adiacente più vicino* , che sceglie l'elemento di input più vicino al centro pixel corrispondente per ogni elemento di output.
-- **DML_INTERPOLATION_MODE_LINEAR**. Usa l'algoritmo *bilineare* , che calcola l'elemento output eseguendo la media ponderata dei 2 elementi di input adiacenti più vicini per ogni dimensione. Poiché vengono ridimensionate solo 2 dimensioni, la media ponderata viene calcolata su un totale di 4 elementi di input per ogni elemento di output.
+- [DML_INTERPOLATION_MODE_NEAREST_NEIGHBOR](/windows/win32/api/directml/ne-directml-dml_interpolation_mode). Usa *l'algoritmo Nearest Neighbor,* che sceglie l'elemento di input più vicino al centro pixel corrispondente per ogni elemento di output.
+- **DML_INTERPOLATION_MODE_LINEAR**. Usa *l'algoritmo Bilinear,* che calcola l'elemento di output eseguendo la media ponderata dei 2 elementi di input adiacenti più vicini per ogni dimensione. Poiché vengono ridimensionate solo 2 dimensioni, la media ponderata viene calcolata su un totale di 4 elementi di input per ogni elemento di output.
 
 `SpatialScaleX`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">FLOAT</a></b>
 
-Componente X (o larghezza) del fattore di scala per moltiplicare le coordinate *ROITensor* per renderle proporzionali a *InputHeight* e *InputWidth*. Se, ad esempio, *ROITensor* contiene Coordinate normalizzate (valori compresi nell'intervallo [0.. 1]), *SpatialScaleX* di solito avrà lo stesso valore di *InputWidth*.
+Componente X (o larghezza) del fattore di scala per moltiplicare le coordinate *ROITensor* per per renderle proporzionali a *InputHeight* e *InputWidth*. Ad esempio, se *ROITensor* contiene coordinate normalizzate (valori nell'intervallo [0..1]), *SpatialScaleX* avrebbe in genere lo stesso valore di *InputWidth*.
 
 `SpatialScaleY`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">FLOAT</a></b>
 
-Componente Y (o altezza) del fattore di scala per moltiplicare le coordinate *ROITensor* per renderle proporzionali a *InputHeight* e *InputWidth*. Se, ad esempio, *ROITensor* contiene Coordinate normalizzate (valori compresi nell'intervallo [0.. 1]), *SpatialScaleY* genererà lo stesso valore di *InputHeight*.
+Componente Y (o altezza) del fattore di scala per moltiplicare le coordinate *ROITensor* per renderle proporzionali a *InputHeight* e *InputWidth*. Ad esempio, se *ROITensor* contiene coordinate normalizzate (valori nell'intervallo [0..1]), *SpatialScaleY* avrebbe in genere lo stesso valore di *InputHeight*.
 
 `OutOfBoundsInputValue`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">FLOAT</a></b>
 
-Valore da leggere da *InputTensor* quando l'oggetto Rois è esterno ai limiti di *InputTensor*. Questo problema può verificarsi quando i valori ottenuti dopo la scalabilità di *ROITensor* da *SpatialScaleX* e *SpatialScaleY* sono maggiori di *InputWidth* e *InputHeight*.
+Valore da leggere da *InputTensor* quando i ROI sono esterni ai limiti di *InputTensor*. Ciò può verificarsi quando i valori ottenuti dopo il *ridimensionamento roITensor* di *SpatialScaleX* e *SpatialScaleY* sono maggiori di *InputWidth* e *InputHeight.*
 
 `MinimumSamplesPerOutput`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">uint</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">UINT</a></b>
 
-Numero minimo di campioni di input da utilizzare per ogni elemento di output. L'operatore calcolerà il numero di campioni di input eseguendo `ScaledCropSize / OutputSize` , quindi lo clamperà su *MinimumSamplesPerOutput* e *MaximumSamplesPerOutput*.
+Numero minimo di campioni di input da usare per ogni elemento di output. L'operatore calcolerà il numero di campioni di input eseguendo , quindi lo limiterà a `ScaledCropSize / OutputSize` *MinimumSamplesPerOutput* *e MaximumSamplesPerOutput*.
 
 `MaximumSamplesPerOutput`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">uint</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">UINT</a></b>
 
-Numero massimo di campioni di input da utilizzare per ogni elemento di output. L'operatore calcolerà il numero di campioni di input eseguendo `ScaledCropSize / OutputSize` , quindi lo clamperà su *MinimumSamplesPerOutput* e *MaximumSamplesPerOutput*.
+Numero massimo di campioni di input da usare per ogni elemento di output. L'operatore calcolerà il numero di campioni di input eseguendo , quindi lo stringerà a `ScaledCropSize / OutputSize` *MinimumSamplesPerOutput* *e MaximumSamplesPerOutput*.
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor*, *OutputTensor* e *ROITensor* devono avere lo stesso *tipo* di dati.
+*InputTensor,* *OutputTensor* e *ROITensor* devono avere lo stesso *tipo di dati*.
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
 | InputTensor | Input | 4 | FLOAT32, FLOAT16 |
-| ROITensor | Input | da 2 a 4 | FLOAT32, FLOAT16 |
-| BatchIndicesTensor | Input | da 1 a 4 | UINT32 |
+| ROITensor | Input | Da 2 a 4 | FLOAT32, FLOAT16 |
+| BatchIndicesTensor | Input | Da 1 a 4 | UINT32 |
 | OutputTensor | Output | 4 | FLOAT32, FLOAT16 |
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

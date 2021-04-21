@@ -1,7 +1,7 @@
 ---
 UID: NE:directml.DML_AXIS_DIRECTION
 title: DML_AXIS_DIRECTION
-description: Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, sommatoria, selezionando gli elementi top-k, selezionando l'elemento minimo).
+description: Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, somma, selezione degli elementi top-k, selezione dell'elemento minimo).
 ms.topic: reference
 tech.root: directml
 ms.date: 10/28/2020
@@ -39,19 +39,19 @@ api_location:
 - DirectML.h
 api_name:
 - DML_AXIS_DIRECTION
-ms.openlocfilehash: 18cd2189f88378245be0824e0a68e5f618008bc7
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: e54d2abed3843ea9b2a22cb3c385f9edd1541ba5
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320292"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803782"
 ---
-# <a name="dml_axis_direction-enumeration-directmlh"></a>Enumerazione DML_AXIS_DIRECTION (directml. h)
+# <a name="dml_axis_direction-enumeration-directmlh"></a>DML_AXIS_DIRECTION enumerazione (directml.h)
 
-Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, sommatoria, selezionando gli elementi top-k, selezionando l'elemento minimo).
+Definisce le costanti che specificano la direzione di un'operazione lungo l'asse specificato per l'operatore (ad esempio, somma, selezione degli elementi top-k, selezione dell'elemento minimo).
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -65,11 +65,11 @@ typedef enum DML_AXIS_DIRECTION {
 
 | Nome | Descrizione |
 | ---- |:---- |
-| DML_AXIS_DIRECTION_INCREASING | Specifica un ordine crescente (dall'indice inferiore all'indice alto). |
+| DML_AXIS_DIRECTION_INCREASING | Specifica l'ordine crescente (dall'indice basso all'indice alto). |
 | DML_AXIS_DIRECTION_DECREASING | Specifica l'ordine decrescente (dall'indice alto all'indice basso). |
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

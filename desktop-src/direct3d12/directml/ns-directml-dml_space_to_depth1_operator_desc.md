@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_SPACE_TO_DEPTH1_OPERATOR_DESC
 title: DML_SPACE_TO_DEPTH1_OPERATOR_DESC
-description: Riorganizza i blocchi di dati spaziali in profondità. L'operatore restituisce una copia del tensore di input in cui i valori delle dimensioni Height e Width vengono spostati nella dimensione Depth.
+description: Riorganizza i blocchi di dati spaziali in profondità. L'operatore restituisce una copia del tensore di input in cui i valori delle dimensioni altezza e larghezza vengono spostati nella dimensione di profondità.
 helpviewer_keywords:
 - DML_SPACE_TO_DEPTH1_OPERATOR_DESC
 - DML_SPACE_TO_DEPTH1_OPERATOR_DESC structure
@@ -44,20 +44,20 @@ api_location:
 - DirectML.h
 api_name:
 - DML_SPACE_TO_DEPTH1_OPERATOR_DESC
-ms.openlocfilehash: 9c5033440e65dacdcb815edd08994b79a5fae41a
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 35e64d83fa6b8df42428869f72249e9846e50596
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320376"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107802865"
 ---
-# <a name="dml_space_to_depth1_operator_desc-structure-directmlh"></a>Struttura DML_SPACE_TO_DEPTH1_OPERATOR_DESC (directml. h)
-Riorganizza i blocchi di dati spaziali in profondità. L'operatore restituisce una copia del tensore di input in cui i valori delle dimensioni Height e Width vengono spostati nella dimensione Depth.
+# <a name="dml_space_to_depth1_operator_desc-structure-directmlh"></a>DML_SPACE_TO_DEPTH1_OPERATOR_DESC struttura (directml.h)
+Riorganizza i blocchi di dati spaziali in profondità. L'operatore restituisce una copia del tensore di input in cui i valori delle dimensioni altezza e larghezza vengono spostati nella dimensione di profondità.
 
-Si tratta della trasformazione inversa del [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md).
+Si tratta della trasformazione inversa di [DML_DEPTH_TO_SPACE1_OPERATOR_DESC](./ns-directml-dml_depth_to_space1_operator_desc.md).
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -89,7 +89,7 @@ Tensore in cui scrivere i risultati. Le dimensioni del tensore di output sono `{
 
 `BlockSize`
 
-Tipo: [ **uint**](/windows/desktop/winprog/windows-data-types)
+Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
 Larghezza e altezza dei blocchi spostati.
 
@@ -102,7 +102,7 @@ Vedere [DML_DEPTH_SPACE_ORDER](./ne-directml-dml_depth_space_order.md).
 
 ## <a name="examples"></a>Esempi
 
-### <a name="example-1-depth-column-row-order"></a>Esempio 1. Ordine della riga di colonna Depth
+### <a name="example-1-depth-column-row-order"></a>Esempio 1. Ordine delle righe della colonna di profondità
 
 ```
 BlockSize: 2
@@ -136,7 +136,7 @@ OutputTensor: (Sizes:{1, 8, 2, 3}, DataType:UINT32)
    [66, 67, 68]]]]
 ```
 
-### <a name="example-2-column-row-depth-order"></a>Esempio 2. Ordine di profondità colonna-riga
+### <a name="example-2-column-row-depth-order"></a>Esempio 2. Ordine di profondità delle righe di colonna
 
 ```
 BlockSize: 2
@@ -171,22 +171,22 @@ OutputTensor: (Sizes:{1, 8, 2, 3}, DataType:UINT32)
 
 
 ## <a name="remarks"></a>Commenti
-Quando il parametro *Order* è impostato su [DML_DEPTH_SPACE_ORDER_DEPTH_COLUMN_ROW](./ne-directml-dml_depth_space_order.md), questo operatore è equivalente a [DML_SPACE_TO_DEPTH_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_space_to_depth_operator_desc).
+Quando il *parametro Order* è impostato su [DML_DEPTH_SPACE_ORDER_DEPTH_COLUMN_ROW](./ne-directml-dml_depth_space_order.md), questo operatore equivale a [DML_SPACE_TO_DEPTH_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_space_to_depth_operator_desc).
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor* e *OutputTensor* devono avere lo stesso *tipo* di dati.
+*InputTensor* e *OutputTensor* devono avere lo stesso *tipo di dati*.
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Dimensioni | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Dimensioni | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | ---------- | -------------------------- | -------------------- |
-| InputTensor | Input | {BatchCount, InputChannelCount, InputHeight, InputWidth} | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputTensor | Output | {BatchCount, OutputChannelCount, OutputHeight, OutputWidth} | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| InputTensor | Input | { BatchCount, InputChannelCount, InputHeight, InputWidth } | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputTensor | Output | { BatchCount, OutputChannelCount, OutputHeight, OutputWidth } | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

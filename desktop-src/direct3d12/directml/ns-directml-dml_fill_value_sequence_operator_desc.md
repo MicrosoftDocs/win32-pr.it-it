@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC
 title: DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC
-description: Compila un tensore con una sequenza.
+description: Riempie un tensore con una sequenza.
 helpviewer_keywords:
 - DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC
 - DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC structure
@@ -44,16 +44,16 @@ api_location:
 - DirectML.h
 api_name:
 - DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC
-ms.openlocfilehash: ec356568c0860d330234cd990e8cf42ff4ccd120
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 17b503630db2108dc4d9d2f5c2f32f7e324189d1
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320261"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803033"
 ---
-# <a name="dml_fill_value_sequence_operator_desc-structure-directmlh"></a>Struttura DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC (directml. h)
+# <a name="dml_fill_value_sequence_operator_desc-structure-directmlh"></a>DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC struttura (directml.h)
 
-Compila un tensore con una sequenza. Questo operatore esegue lo pseudocodice seguente.
+Riempie un tensore con una sequenza. Questo operatore esegue lo pseudocodice seguente.
 
 ```
 for each coordinate in OutputTensor
@@ -63,7 +63,7 @@ endfor
 ```
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -90,7 +90,7 @@ Tensore in cui scrivere i risultati. Questo tensore può avere qualsiasi dimensi
 
 Tipo: **[DML_TENSOR_DATA_TYPE](/windows/win32/api/directml/ne-directml-dml_tensor_data_type)**
 
-Tipo di dati del campo *valore* , che deve corrispondere a *OutputTensor. DataType*.
+Tipo di dati del *campo Value,* che deve corrispondere a *OutputTensor.DataType*.
 
 
 `ValueStart`
@@ -108,7 +108,7 @@ Passaggio da aggiungere al valore per ogni elemento scritto, con *ValueDataType*
 
 ## <a name="examples"></a>Esempi
 
-### <a name="example-1-1d-ascending-step"></a>Esempio 1. 1D (passaggio crescente)
+### <a name="example-1-1d-ascending-step"></a>Esempio 1. Passaggio 1D crescente
 
 ```
 ValueStart = 3
@@ -119,7 +119,7 @@ OutputTensor: (Sizes:{1,1,1,3}, DataType:FLOAT32)
     [[[[3, 5, 7]]]]
 ```
 
-### <a name="example-2-2d-ascending-step"></a>Esempio 2. passaggio in ordine crescente 2D
+### <a name="example-2-2d-ascending-step"></a>Esempio 2. Passaggio 2D crescente
 
 ```
 ValueStart = 10
@@ -134,8 +134,8 @@ OutputTensor: (Sizes:{1,1,2,2}, DataType:UINT8)
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
 | OutputTensor | Output | 4 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
 
@@ -144,4 +144,4 @@ Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

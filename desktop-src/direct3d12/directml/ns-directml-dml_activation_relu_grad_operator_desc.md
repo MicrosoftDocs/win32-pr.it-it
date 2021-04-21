@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
 title: DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
-description: Calcola le sfumature di propagazione per un'unità lineare rettificata (ReLU).
+description: Calcola le sfumature di backpropagation per un'unità lineare rettificata (ReLU).
 helpviewer_keywords:
 - DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
 - DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC structure
@@ -45,16 +45,16 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 567a1de50c1c91de83a9fda2978f83af8daf1a6e
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: dea89f0e3366a07ee98f47703f07e2f5a9d4009d
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320303"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803677"
 ---
-# <a name="dml_activation_relu_grad_operator_desc-structure-directmlh"></a>Struttura DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC (directml. h)
+# <a name="dml_activation_relu_grad_operator_desc-structure-directmlh"></a>DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC struttura (directml.h)
 
-Calcola le sfumature di propagazione per un'unità lineare rettificata (ReLU). Questo operatore esegue il seguente calcolo a livello di elemento.
+Calcola le sfumature di backpropagation per un'unità lineare rettificata (ReLU). Questo operatore esegue il calcolo per elemento seguente.
 
 ```
 X = InputTensor
@@ -63,10 +63,10 @@ dY = InputGradientTensor
 OutputGradientTensor = (X > 0 ? dY : 0)
 ```
 
-L'operatore di avanzamento passa corrispondente è [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc).
+L'operatore forward-pass corrispondente è [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc).
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -84,32 +84,32 @@ struct DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di input (Feature). Si tratta in genere dello stesso input fornito durante il passaggio di avanzamento (vedere [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc)).
+Tensore di input (funzionalità). Si tratta in genere dello stesso input fornito durante il passaggio in avanti [(vedere DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc)).
 
 `InputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output di propagation di un livello precedente. Le *dimensioni* e il *tipo* di dati di questo tensore devono corrispondere esattamente a quelli di *InputTensor*.
+Tensore sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output della backpropagazione di un livello precedente. Le *dimensioni* *e il tipo di* dati di questo tensore devono corrispondere esattamente a quelli di *InputTensor*.
 
 `OutputTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di output contenente le sfumature ripropagate. Le *dimensioni* e il *tipo* di dati di questo tensore devono corrispondere esattamente a quelli di *InputTensor*.
+Tensore di output contenente le sfumature backpropagate. Le *dimensioni* *e il tipo di* dati di questo tensore devono corrispondere esattamente a quelli di *InputTensor*.
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputGradientTensor*, *InputTensor* e *OutputGradientTensor* devono avere lo stesso *tipo* di dati, *DimensionCount* e *dimensioni*.
+*InputGradientTensor,* *InputTensor* e *OutputGradientTensor* devono avere gli stessi *valori di DataType,* *DimensionCount* e *Sizes.*
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Input | da 1 a 8 | FLOAT32, FLOAT16 |
-| InputGradientTensor | Input | da 1 a 8 | FLOAT32, FLOAT16 |
-| OutputGradientTensor | Output | da 1 a 8 | FLOAT32, FLOAT16 |
+| InputTensor | Input | Da 1 a 8 | FLOAT32, FLOAT16 |
+| InputGradientTensor | Input | Da 1 a 8 | FLOAT32, FLOAT16 |
+| OutputGradientTensor | Output | Da 1 a 8 | FLOAT32, FLOAT16 |
 
 ## <a name="see-also"></a>Vedi anche
 [DML_ACTIVATION_RELU_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_activation_relu_operator_desc)
@@ -117,4 +117,4 @@ Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

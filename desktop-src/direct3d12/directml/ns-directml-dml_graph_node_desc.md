@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_GRAPH_NODE_DESC
 title: DML_GRAPH_NODE_DESC
-description: "Contenitore generico per un nodo all'interno di un grafico di operatori DirectML definiti da [DML_GRAPH_DESC](./ns-directml-dml_graph_desc.md) e passati a [IDMLDevice1:: CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)."
+description: Contenitore generico per un nodo all'interno di un grafico di operatori DirectML definiti da [DML_GRAPH_DESC](./ns-directml-dml_graph_desc.md) e passati a [IDMLDevice1::CompileGraph.](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
 helpviewer_keywords:
 - DML_GRAPH_NODE_DESC
 - DML_GRAPH_NODE_DESC structure
@@ -45,18 +45,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_GRAPH_NODE_DESC
-ms.openlocfilehash: 8c79719f51efb4a59f9459a28765d3442ed3f4ee
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 5f59978f6b62572000a95ee3be5a3b8a685c8231
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320406"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107802906"
 ---
-# <a name="dml_graph_node_desc-structure-directmlh"></a>Struttura DML_GRAPH_NODE_DESC (directml. h)
-Contenitore generico per un nodo all'interno di un grafico di operatori DirectML definiti da [DML_GRAPH_DESC](./ns-directml-dml_graph_desc.md) e passati a [IDMLDevice1:: CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph).
+# <a name="dml_graph_node_desc-structure-directmlh"></a>DML_GRAPH_NODE_DESC struttura (directml.h)
+Contenitore generico per un nodo all'interno di un grafico di operatori DirectML definiti da [DML_GRAPH_DESC](./ns-directml-dml_graph_desc.md) e passati a [IDMLDevice1::CompileGraph.](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -79,22 +79,22 @@ Tipo di nodo del grafo. Vedere [DML_GRAPH_NODE_TYPE](./ne-directml-dml_graph_nod
 
 `Desc`
 
-Tipo: \_ \_ Dimensione campo \_ ( \_ inesprimibile \_ ("dipendente dal tipo di nodo")) **const void \***
+Tipo: \_ Dimensione del campo ( \_ \_ \_ inespressibile \_ ("Dipendente dal tipo di nodo")) **const void \***
 
-Puntatore alla descrizione del nodo Graph. Il tipo dello struct puntato deve corrispondere al valore specificato nel *tipo*.
+Puntatore alla descrizione del nodo del grafo. Il tipo dello struct a cui si punta deve corrispondere al valore specificato in *Tipo*.
 
 ## <a name="availability"></a>Disponibilità
 
-Questa API è stata introdotta nella versione DirectML `1.1.0` .
+Questa API è stata introdotta nella versione di `1.1.0` DirectML.
 
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Metodo IDMLDevice1:: CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
-* [Struttura DML_GRAPH_DESC](./ns-directml-dml_graph_desc.md)
+* [Metodo IDMLDevice1::CompileGraph](/windows/desktop/direct3d12/directml/nf-directml-idmldevice1-compilegraph)
+* [DML_GRAPH_DESC struttura](./ns-directml-dml_graph_desc.md)

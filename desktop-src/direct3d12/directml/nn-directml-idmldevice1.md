@@ -1,7 +1,7 @@
 ---
 UID: NN:directml.IDMLDevice1
 title: IDMLDevice1
-description: Rappresenta un dispositivo DirectML, utilizzato per creare operatori, associazioni di tabelle, registratori di comandi e altri oggetti.
+description: Rappresenta un dispositivo DirectML, utilizzato per creare operatori, tabelle di associazione, registratori di comandi e altri oggetti.
 helpviewer_keywords:
 - IDMLDevice1
 - IDMLDevice1 interface
@@ -46,29 +46,29 @@ api_location:
 - DirectML.h
 api_name:
 - IDMLDevice1
-ms.openlocfilehash: a23d6ec4299a2aa3ca7e9f6873167412d094af8d
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 7a10cf2c9fe683775d163c7b5cb0e30fe07de08f
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320304"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803734"
 ---
-# <a name="idmldevice1-interface-directmlh"></a>Interfaccia IDMLDevice1 (directml. h)
+# <a name="idmldevice1-interface-directmlh"></a>Interfaccia IDMLDevice1 (directml.h)
 
-Rappresenta un dispositivo DirectML, utilizzato per creare operatori, associazioni di tabelle, registratori di comandi e altri oggetti. L'interfaccia **IDMLDevice1** eredita da [IDMLDevice](/windows/win32/api/directml/nn-directml-idmldevice).
+Rappresenta un dispositivo DirectML, utilizzato per creare operatori, tabelle di associazione, registratori di comandi e altri oggetti. **L'interfaccia IDMLDevice1** eredita da [IDMLDevice.](/windows/win32/api/directml/nn-directml-idmldevice)
 
-Un dispositivo DirectML è sempre associato esattamente a un dispositivo Direct3D 12 sottostante. Tutti gli oggetti creati dal dispositivo DirectML gestiscono un riferimento sicuro al dispositivo padre. A differenza del dispositivo Direct3D 12, il dispositivo DML non è un singleton. È quindi possibile creare più dispositivi DirectML tramite lo stesso dispositivo Direct3D 12. Tuttavia, questa operazione non è consigliata perché il dispositivo DirectML non ha uno stato modificabile, quindi è possibile creare più dispositivi DML tramite lo stesso dispositivo Direct3D 12.
+Un dispositivo DirectML è sempre associato esattamente a un dispositivo Direct3D 12 sottostante. Tutti gli oggetti creati dal dispositivo DirectML mantengono un riferimento sicuro al dispositivo padre. A differenza del dispositivo Direct3D 12, il dispositivo DML non è un singleton. È quindi possibile creare più dispositivi DirectML sullo stesso dispositivo Direct3D 12. Tuttavia, questa operazione non è consigliata perché il dispositivo DirectML non ha uno stato modificabile, quindi la creazione di più dispositivi DML sullo stesso dispositivo Direct3D 12 non ha alcun vantaggio.
 
 Questo oggetto è thread-safe.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="availability"></a>Disponibilità
-Questa API è stata introdotta nella versione DirectML `1.1.0` .
+Questa API è stata introdotta nella versione di `1.1.0` DirectML.
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-**Piattaforma di destinazione**: Windows
+**Piattaforma di destinazione:** Windows
 
 
 ## <a name="inheritance"></a>Ereditarietà
@@ -80,18 +80,18 @@ L'interfaccia IDMLDevice1 eredita dall'interfaccia IDMLDevice.
 
 ## <a name="methods"></a>Metodi
 
-<p>L'interfaccia <b>IDMLDevice1</b> dispone di questi metodi.</p>
+<p><b>L'interfaccia IDMLDevice1</b> include questi metodi.</p>
 
 | Metodo | Descrizione |
 | ---- |:---- |
-| [IDMLDevice1::CompileGraph](../directml/nf-directml-idmldevice1-compilegraph.md) | Compila un grafico di operatori DirectML in un oggetto che può essere inviato alla GPU. |
+| [IDMLDevice1::CompileGraph](../directml/nf-directml-idmldevice1-compilegraph.md) | Compila un grafico degli operatori DirectML in un oggetto che può essere inviato alla GPU. |
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Piattaforma di destinazione** | Windows |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |
 
 ## <a name="see-also"></a>Vedi anche
 

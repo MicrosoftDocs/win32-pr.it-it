@@ -44,19 +44,19 @@ api_location:
 - DirectML.dll
 api_name:
 - DMLCreateDevice1
-ms.openlocfilehash: f40c7e6aa82644b67303bc60f6a8b41fa08c6f8d
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: f722b12208bd808f01e177feb907f94c33541496
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320305"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803770"
 ---
-# <a name="dmlcreatedevice1-function-directmlh"></a>Funzione DMLCreateDevice1 (directml. h)
+# <a name="dmlcreatedevice1-function-directmlh"></a>Funzione DMLCreateDevice1 (directml.h)
 
 Crea un dispositivo DirectML per un determinato dispositivo Direct3D 12.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -76,7 +76,7 @@ HRESULT DMLCreateDevice1(
 
 Tipo: <b> <a href="/windows/win32/api/d3d12/nn-d3d12-id3d12device">ID3D12Device</a>*</b>
 
-Puntatore a un [ID3D12Device](/windows/win32/api/d3d12/nn-d3d12-id3d12device) che rappresenta il dispositivo Direct3D 12 per la creazione del dispositivo DirectML. DirectML supporta qualsiasi livello di funzionalità D3D e i dispositivi Direct3D 12 creati su qualsiasi adapter, inclusa la DISTORSIONe. Tuttavia, non tutte le funzionalità di DirectML potrebbero essere disponibili a seconda delle funzionalità del dispositivo Direct3D 12. Per altre informazioni, vedere [IDMLDevice:: CheckFeatureSupport](/windows/win32/api/directml/nf-directml-idmldevice-checkfeaturesupport) .
+Puntatore a un [dispositivo ID3D12Device](/windows/win32/api/d3d12/nn-d3d12-id3d12device) che rappresenta il dispositivo Direct3D 12 su cui creare il dispositivo DirectML. DirectML supporta qualsiasi livello di funzionalità D3D e dispositivi Direct3D 12 creati in qualsiasi scheda, incluso WARP. Tuttavia, non tutte le funzionalità di DirectML possono essere disponibili a seconda delle funzionalità del dispositivo Direct3D 12. Per [altre informazioni, vedere IDMLDevice::CheckFeatureSupport.](/windows/win32/api/directml/nf-directml-idmldevice-checkfeaturesupport)
 
 Se la chiamata a **DMLCreateDevice1** ha esito positivo, il dispositivo DirectML mantiene un riferimento sicuro al dispositivo Direct3D 12 fornito.
 
@@ -84,62 +84,62 @@ Se la chiamata a **DMLCreateDevice1** ha esito positivo, il dispositivo DirectML
 
 Tipo: <b>DML_CREATE_DEVICE_FLAGS</b>
 
-Valore [DML_CREATE_DEVICE_FLAGS](/windows/win32/api/directml/ne-directml-dml_create_device_flags) che specifica le opzioni di creazione aggiuntive del dispositivo.
+Valore [DML_CREATE_DEVICE_FLAGS](/windows/win32/api/directml/ne-directml-dml_create_device_flags) che specifica opzioni aggiuntive di creazione del dispositivo.
 
 `minimumFeatureLevel`
 
 Tipo: <b>DML_FEATURE_LEVEL</b>
 
-Valore [DML_FEATURE_LEVEL](/windows/win32/api/directml/ne-directml-dml_feature_level) che specifica il supporto del livello di funzionalità minimo richiesto.
+Valore [DML_FEATURE_LEVEL](/windows/win32/api/directml/ne-directml-dml_feature_level) che specifica il supporto minimo del livello di funzionalità richiesto.
 
-Questo parametro può essere utile per i chiamanti che richiedono una versione specifica di DirectML, ma che possono trovarsi a chiamare una versione precedente di DirectML. Questo può accadere, ad esempio, quando l'utente esegue l'applicazione in una versione precedente di Windows 10.
+Questo parametro può essere utile per i chiamanti che richiedono una versione specifica di DirectML, ma che possono trovarsi a chiamare una versione precedente di DirectML. Ciò può verificarsi, ad esempio, quando l'utente esegue l'applicazione in una versione precedente di Windows 10.
 
-Le applicazioni che dipendono in modo esplicito da funzionalità introdotte in un particolare livello di funzionalità possono specificarle come *minimumFeatureLevel*. In questo modo si garantisce che **DMLCreateDevice1** non riuscirà *a* meno che l'implementazione sottostante non sia almeno in grado di supportare il livello di funzionalità minimo richiesto.
+Le applicazioni che dipendono in modo esplicito dalle funzionalità introdotte in un determinato livello di funzionalità possono specificarlo come *minimumFeatureLevel.* Ciò garantisce che **DMLCreateDevice1** avrà esito positivo  solo se l'implementazione sottostante è in grado almeno di questo livello di funzionalità minimo richiesto.
 
-Si noti che poiché questo parametro specifica un livello di funzionalità *minimo* , il dispositivo DirectML sottostante potrebbe in realtà supportare un livello di funzionalità superiore rispetto al valore minimo richiesto. Una volta completata la creazione del dispositivo, è possibile eseguire una query su tutti i livelli di funzionalità supportati da questo dispositivo usando [IDMLDevice:: CheckFeatureSupport](/windows/win32/api/directml/nf-directml-idmldevice-checkfeaturesupport).
+Si noti che poiché  questo parametro specifica un livello di funzionalità minimo, il dispositivo DirectML sottostante può infatti supportare un livello di funzionalità superiore al livello minimo richiesto. Al termine della creazione del dispositivo, è possibile eseguire una query su tutti i livelli di funzionalità supportati da questo dispositivo usando [IDMLDevice::CheckFeatureSupport](/windows/win32/api/directml/nf-directml-idmldevice-checkfeaturesupport).
 
 `riid`
 
 Tipo: <b>REFIID</b>
 
-Riferimento all'identificatore univoco globale (GUID) dell'interfaccia che si desidera venga restituita nel <i>dispositivo</i>. Questo dovrebbe essere il GUID di [IDMLDevice](/windows/win32/api/directml/nn-directml-idmldevice).
+Riferimento all'identificatore univoco globale (GUID) dell'interfaccia che si desidera restituire nel <i>dispositivo</i>. Si prevede che sia il GUID di [IDMLDevice.](/windows/win32/api/directml/nn-directml-idmldevice)
 
 `ppv`
 
-Tipo: \_ com \_ Outptr \_ opt \_ <b>void * *</b>
+Tipo: \_ COM \_ Outptr opt \_ \_ <b>void**</b>
 
-Puntatore a un blocco di memoria che riceve un puntatore al dispositivo. Si tratta dell'indirizzo di un puntatore a un [IDMLDevice](/windows/win32/api/directml/nn-directml-idmldevice), che rappresenta il dispositivo DirectML creato.
+Puntatore a un blocco di memoria che riceve un puntatore al dispositivo. Si tratta dell'indirizzo di un puntatore a [un oggetto IDMLDevice](/windows/win32/api/directml/nn-directml-idmldevice)che rappresenta il dispositivo DirectML creato.
 
 
 ## <a name="return-value"></a>Valore restituito
 
 Tipo: [ **HRESULT**](/windows/desktop/winprog/windows-data-types)
 
-Se la funzione ha esito positivo, restituisce <b>S_OK</b>. In caso contrario, restituisce un codice di errore [HRESULT](/windows/desktop/winprog/windows-data-types) .
+Se la funzione ha esito positivo, restituisce <b>S_OK</b>. In caso contrario, restituisce un [codice di errore HRESULT.](/windows/desktop/winprog/windows-data-types)
 
-Se questa versione di DirectML non supporta il *minimumFeatureLevel* richiesto, questa funzione restituirà **DXGI_ERROR_UNSUPPORTED**.
+Se questa versione di DirectML non supporta *il valore minimumFeatureLevel* richiesto, questa funzione restituirà DXGI_ERROR_UNSUPPORTED **.**
 
-Per usare i livelli di debug DirectML, è necessario installare la funzionalità degli strumenti di grafica su richiesta (Dom). Se il flag di [DML_CREATE_DEVICE_FLAG_DEBUG](/windows/win32/api/directml/ne-directml-dml_create_device_flags) viene specificato nei *flag* e i livelli di debug non sono installati, **DMLCreateDevice1** restituisce **DXGI_ERROR_SDK_COMPONENT_MISSING**.
+Per usare i livelli di debug DirectML, è necessario installare la funzionalità degli strumenti di grafica su richiesta. Se il [flag DML_CREATE_DEVICE_FLAG_DEBUG](/windows/win32/api/directml/ne-directml-dml_create_device_flags) viene specificato nei *flag* e i livelli di debug non sono installati, **DMLCreateDevice1** restituisce **DXGI_ERROR_SDK_COMPONENT_MISSING**.
 
 ## <a name="remarks"></a>Commenti
 
-Una versione più recente di questa funzione, [DMLCreateDevice1](), è stata introdotta in DirectML versione 1.1.0. **DMLCreateDevice1** equivale a chiamare **DMLCreateDevice1** e a fornire un *minimumFeatureLevel* di [DML_FEATURE_LEVEL_1_0](/windows/win32/api/directml/ne-directml-dml_feature_level).
+È stata introdotta una versione più recente di questa funzione, [DMLCreateDevice1,]()in DirectML versione 1.1.0. **DMLCreateDevice1** equivale a chiamare **DMLCreateDevice1** e a fornire *un valore minimumFeatureLevel* [DML_FEATURE_LEVEL_1_0](/windows/win32/api/directml/ne-directml-dml_feature_level).
 
 ## <a name="availability"></a>Disponibilità
 
-Questa API è stata introdotta nella versione DirectML `1.1.0` .
+Questa API è stata introdotta in DirectML versione `1.1.0` .
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Piattaforma di destinazione** | Windows |
-| **Intestazione** | directml. h |
-| **Libreria** | DirectML. lib |
+| **Intestazione** | directml.h |
+| **Libreria** | DirectML.lib |
 | **DLL** | DirectML.dll |
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Enumerazione DML_FEATURE_LEVEL](/windows/win32/api/directml/ne-directml-dml_feature_level)
+* [DML_FEATURE_LEVEL enumerazione](/windows/win32/api/directml/ne-directml-dml_feature_level)
 * [Cronologia delle versioni di DirectML](../dml-version-history.md)
 * [Cronologia a livello di funzionalità DirectML](/windows/win32/direct3d12/dml-feature_level-history)    
 * [Uso del livello di debug DirectML](../dml-debug-layer.md)

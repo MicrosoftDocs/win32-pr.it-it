@@ -45,18 +45,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_SCALAR_UNION
-ms.openlocfilehash: 0abef8cd5a694fa82e0e54e334834773f1f75e20
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: d53ec7025d3da5a07a648849e366d436755ad3f1
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320329"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803948"
 ---
-# <a name="dml_scalar_union-union-directmlh"></a>Unione DML_SCALAR_UNION (directml. h)
+# <a name="dml_scalar_union-union-directmlh"></a>DML_SCALAR_UNION union (directml.h)
 Unione di tipi scalari.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -126,16 +126,16 @@ Intero senza segno a 64 bit.
 
 `Float32`
 
-Numero A virgola mobile con precisione singola.
+Numero a virgola mobile e precisione singola.
 
 
 `Float64`
 
-Numero a virgola mobile a precisione doppia.
+Numero a virgola mobile e precisione doppia.
 
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

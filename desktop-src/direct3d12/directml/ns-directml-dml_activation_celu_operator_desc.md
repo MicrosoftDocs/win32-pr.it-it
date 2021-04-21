@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ACTIVATION_CELU_OPERATOR_DESC
 title: DML_ACTIVATION_CELU_OPERATOR_DESC
-description: Esegue la funzione di attivazione di unità lineare esponenziale (CELU) continuamente differenziabile su ogni elemento in *InputTensor*, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
+description: Esegue la funzione di attivazione celu (Exponential Linear Unit) continuamente differenziabile su ogni elemento in *InputTensor,* inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
 helpviewer_keywords:
 - DML_ACTIVATION_CELU_OPERATOR_DESC
 - DML_ACTIVATION_CELU_OPERATOR_DESC structure
@@ -45,30 +45,30 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ACTIVATION_CELU_OPERATOR_DESC
-ms.openlocfilehash: d474bd44c8a830117bb62927f4bda954a753b612
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b6497e995601d7e9e01696f39920672674be07c4
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320280"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803729"
 ---
-# <a name="dml_activation_celu_operator_desc-structure-directmlh"></a>Struttura DML_ACTIVATION_CELU_OPERATOR_DESC (directml. h)
+# <a name="dml_activation_celu_operator_desc-structure-directmlh"></a>DML_ACTIVATION_CELU_OPERATOR_DESC struttura (directml.h)
 
-Esegue la funzione di attivazione di unità lineare esponenziale (CELU) continuamente differenziabile su ogni elemento in *InputTensor*, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
+Esegue la funzione di attivazione celu (Exponential Linear Unit) continuamente differenziabile su ogni elemento in *InputTensor,* inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
 
 ```
 f(x) = max(0, x) + min(0, Alpha * (exp(x / Alpha) - 1));
 ```
 
 Dove:
-* Exp (x) è la funzione di elevamento a potenza naturale
-* Max (a, b) restituisce il maggiore tra i due valori a, b
-* min (a, b) restituisce il minore dei due valori a, b
+* exp(x) è la funzione di esponente naturale
+* max(a,b) restituisce il valore più grande dei due valori a,b
+* min(a,b) restituisce il valore più piccolo dei due valori a,b
 
-Questo operatore supporta l'esecuzione sul posto, vale a dire che il tensore di output è autorizzato ad alias *InputTensor* durante l'associazione.
+Questo operatore supporta l'esecuzione sul posto, vale a dire che al tensore di output è consentito l'alias *InputTensor* durante l'associazione.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -86,7 +86,7 @@ struct DML_ACTIVATION_CELU_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di input da cui eseguire la lettura.
+Tensore di input da cui leggere.
 
 `OutputTensor`
 
@@ -96,23 +96,23 @@ Tensore di output in cui scrivere i risultati.
 
 `Alpha`
 
-Tipo: <b> <a href="/windows/desktop/WinProg/windows-data-types">float</a></b>
+Tipo: <b> <a href="/windows/win32/winprog/windows-data-types">FLOAT</a></b>
 
-Coefficiente alfa. Un valore predefinito tipico per questo valore è 1,0.
+Coefficiente alfa. Un valore predefinito tipico per questo valore è 1.0.
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor* e *OutputTensor* devono avere lo stesso *tipo* di dati, *DimensionCount* e *dimensioni*.
+*InputTensor* e *OutputTensor* devono avere gli stessi *datatype*, *DimensionCount* e *Sizes*.
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| InputTensor | Input | da 1 a 8 | FLOAT32, FLOAT16 |
-| OutputTensor | Output | da 1 a 8 | FLOAT32, FLOAT16 |
+| InputTensor | Input | Da 1 a 8 | FLOAT32, FLOAT16 |
+| OutputTensor | Output | Da 1 a 8 | FLOAT32, FLOAT16 |
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

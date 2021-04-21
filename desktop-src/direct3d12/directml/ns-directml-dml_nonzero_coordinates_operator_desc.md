@@ -45,23 +45,23 @@ api_location:
 - DirectML.h
 api_name:
 - DML_NONZERO_COORDINATES_OPERATOR_DESC
-ms.openlocfilehash: a662ac3b341c07e512e11dcc15cbc9b11ec5f405
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 39463ba57bc90b35d5ac5dc7fc43993169137221
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320364"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803392"
 ---
-# <a name="dml_nonzero_coordinates_operator_desc-structure-directmlh"></a>Struttura DML_NONZERO_COORDINATES_OPERATOR_DESC (directml. h)
+# <a name="dml_nonzero_coordinates_operator_desc-structure-directmlh"></a>DML_NONZERO_COORDINATES_OPERATOR_DESC struttura (directml.h)
 
 Calcola le coordinate N-dimensionali di tutti gli elementi diversi da zero del tensore di input.
 
-Questo operatore produce una matrice MxN di valori, dove ogni riga M contiene una coordinata N-dimensionale di un valore diverso da zero dall'input. Quando si usano gli input **FLOAT32** o **FLOAT16** , entrambi gli elementi negativi e positivi 0 (0,0 f e-0,0 f) vengono considerati come zero ai fini di questo operatore.
+Questo operatore produce una matrice MxN di valori, in cui ogni riga M contiene una coordinata N-dimensionale di un valore diverso da zero dall'input. Quando si usano input **FLOAT32** o **FLOAT16,** sia negativi che positivi (0,0f e -0,0f) vengono considerati come zero ai fini di questo operatore.
 
-L'operatore richiede che la dimensione di *OutputCoordinatesTensor* sia sufficientemente grande da contenere uno scenario peggiore in cui ogni elemento dell'input è diverso da zero. Questo operatore restituisce il conteggio di di elementi diversi da zero tramite *OutputCountTensor*, che i chiamanti possono controllare per determinare il numero di coordinate scritte in *OutputCoordinatesTensor*.
+L'operatore richiede che *OutputCoordinatesTensor* abbia dimensioni sufficienti per supportare uno scenario peggiore in cui ogni elemento dell'input è diverso da zero. Questo operatore restituisce il conteggio degli elementi diversi da zero tramite *OutputCountTensor*, che i chiamanti possono esaminare per determinare il numero di coordinate scritte in *OutputCoordinatesTensor*.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,32 +80,32 @@ struct DML_NONZERO_COORDINATES_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di input.
+Tensore di input.
 
 `OutputCountTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di output che include il conteggio di elementi diversi da zero nel tensore di input. Questo tensore deve essere un valore scalare &mdash; , ovvero le dimensioni di questo tensore devono essere tutte pari a 1. Il tipo di questo tensore deve essere **UInt32**.
+Tensore di output che contiene il numero di elementi diversi da zero nel tensore di input. Questo tensore deve essere scalare, ad esempio le dimensioni di questo &mdash; tensore devono essere tutte 1. Il tipo di questo tensore deve **essere UINT32.**
 
 `OutputCoordinatesTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore di output che include le coordinate N-dimensionali degli elementi di input che sono diverse da zero. 
+Tensore di output che contiene le coordinate N-dimensionali degli elementi di input diversi da zero. 
 
-Questo tensore deve avere *dimensioni* pari a `{1,1,M,N}` (se *DimensionCount* è 4) `{1,1,1,M,N}` o (se *DimensionCount* è 5), dove M è il numero totale di elementi in *InputTensor* e N è maggiore o uguale al *rango effettivo* di *InputTensor*, fino al *DimensionCount* dell'input.
+Questo tensore  deve avere dimensioni pari a `{1,1,M,N}` (se *DimensionCount* è 4) o `{1,1,1,M,N}` (se *DimensionCount*  è 5), dove M è il numero totale di elementi in *InputTensor* e N è maggiore o uguale alla classificazione effettiva di *InputTensor*, fino a *DimensionCount dell'input.*
 
-Il rango effettivo di un tensore è determinato dal *DimensionCount* di tale tensore, escluse le dimensioni iniziali delle dimensioni 1. Ad esempio, un tensore con dimensioni di `{1,2,3,4}` ha un rango 3 effettivo, così come un tensore con dimensioni pari a `{1,1,5,5,5}` . Un tensore con dimensioni `{1,1,1,1}` ha un rango effettivo 0.
+La classificazione effettiva di un tensore è determinata dal *valore DimensionCount* di tale tensore, escluse le dimensioni iniziali di dimensioni 1. Ad esempio, un tensore con dimensioni di ha una classificazione effettiva 3, così come un `{1,2,3,4}` tensore con dimensioni `{1,1,5,5,5}` di . Un tensore con dimensioni `{1,1,1,1}` ha una classificazione effettiva 0.
 
-Si consideri un *InputTensor* con *dimensioni* pari a `{1,1,12,5}` . Questo tensore di input contiene 60 elementi e ha un rango effettivo pari a 2. In questo esempio tutte le dimensioni valide di *OutputCoordinatesTensor* sono nel formato `{1,1,60,N}` , dove N >= 2 ma non maggiore di *DimensionCount* (4 in questo esempio).
+Si *consideri un InputTensor* *con dimensioni* di `{1,1,12,5}` . Questo tensore di input contiene 60 elementi e ha un rango effettivo di 2. In questo esempio tutte le dimensioni valide di *OutputCoordinatesTensor* sono nel formato , dove N >= 2 ma non maggiore di `{1,1,60,N}` *DimensionCount* (4 in questo esempio).
 
-Le coordinate scritte in questo tensore sono sicuramente ordinate in base all'indice dell'elemento crescente. Se, ad esempio, il tensore di input presenta 3 valori diversi da zero alle coordinate {1,0} , {1,2} , e {0,5} , i valori scritti in *OutputCoordinatesTensor* saranno `[[0,5], [1,0], [1,2]]` .
+Le coordinate scritte in questo tensore vengono ordinate in base all'indice crescente degli elementi. Ad esempio, se il tensore di input ha 3 valori diversi da zero nelle coordinate , e , i valori scritti in {1,0} {1,2} {0,5} *OutputCoordinatesTensor* saranno `[[0,5], [1,0], [1,2]]` .
 
-Sebbene questo tensore richieda che la dimensione M sia uguale al numero di elementi nel tensore di input, questo operatore scriverà solo un massimo di elementi OutputCount in questo tensore. OutputCount viene restituito tramite il *OutputCountTensor* scalare.
+Anche se questo tensore richiede che la dimensione M sia uguale al numero di elementi nel tensore di input, questo operatore scriverà solo un massimo di elementi OutputCount in questo tensore. OutputCount viene restituito tramite *l'oggetto scalare OutputCountTensor.*
 
 > [!NOTE]
-> Gli elementi rimanenti di questo tensore oltre il OutputCount non sono definiti dopo il completamento di questo operatore. Non è necessario basarsi sui valori di questi elementi.
+> Gli elementi rimanenti di questo tensore oltre OutputCount non sono definiti al termine dell'operatore. Non è consigliabile basarsi sui valori di questi elementi.
 
 ## <a name="example"></a>Esempio
 
@@ -132,16 +132,16 @@ OutputCoordinatesTensor: (Sizes:{1,1,8,3}, DataType:UINT32)
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor*, *OutputCoordinatesTensor* e `OutputCountTensor` devono avere lo stesso *DimensionCount*.
+*InputTensor*, *OutputCoordinatesTensor* e `OutputCountTensor` devono avere lo stesso *dimensionCount*.
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Dimensioni | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Dimensioni | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | ---------- | -------------------------- | -------------------- |
-| InputTensor | Input | {[D0], D1, D2, D3, D4} | da 4 a 5 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
-| OutputCountTensor | Output | {[1], 1, 1, 1, 1} | da 4 a 5 | UINT32 |
-| OutputCoordinatesTensor | Output | {[1], 1, 1, M, N} | da 4 a 5 | UINT32 |
+| InputTensor | Input | { [D0], D1, D2, D3, D4 } | Da 4 a 5 | FLOAT32, FLOAT16, INT32, INT16, INT8, UINT32, UINT16, UINT8 |
+| OutputCountTensor | Output | { [1], 1, 1, 1, 1 } | Da 4 a 5 | UINT32 |
+| OutputCoordinatesTensor | Output | { [1], 1, 1, M, N } | Da 4 a 5 | UINT32 |
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC
 title: DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC
-description: Esegue uno spostamento a destra logico di ogni elemento di *ATensor* in base a un numero di bit specificato dall'elemento corrispondente di *BTensor*, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
+description: Esegue uno spostamento logico a destra di ogni elemento di *ATensor* di un numero di bit specificato dall'elemento corrispondente di *BTensor*, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
 helpviewer_keywords:
 - DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC
 - DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC structure
@@ -44,25 +44,25 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC
-ms.openlocfilehash: 447b0f685b51bf8b146644de3b5f65390a492ffd
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 5803b40520e3735d24d00eb7260eb527ab857c33
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320375"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803195"
 ---
-# <a name="dml_element_wise_bit_shift_right_operator_desc-structure-directmlh"></a>Struttura DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC (directml. h)
+# <a name="dml_element_wise_bit_shift_right_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC struttura (directml.h)
 
-Esegue uno spostamento a destra logico di ogni elemento di *ATensor* in base a un numero di bit specificato dall'elemento corrispondente di *BTensor*, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
+Esegue uno spostamento logico a destra di ogni elemento di *ATensor* di un numero di bit specificato dall'elemento corrispondente di *BTensor*, inserendo il risultato nell'elemento corrispondente di *OutputTensor*.
 
 ```
 f(a, b) = (a >> b)
 ```
 
-Questo operatore supporta l'esecuzione sul posto, vale a dire che *OutputTensor* è autorizzato a eseguire l'aliasing di uno dei tensori di input durante l'associazione.
+Questo operatore supporta l'esecuzione sul posto, vale a dire che *OutputTensor* è autorizzato a creare un alias di uno dei tensori di input durante l'associazione.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -81,14 +81,14 @@ struct DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC {
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente gli input sul lato sinistro.
+Tensore contenente gli input sul lato sinistro.
 
 
 `BTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente gli input sul lato destro.
+Tensore contenente gli input sul lato destro.
 
 
 `OutputTensor`
@@ -101,18 +101,18 @@ Tensore di output in cui scrivere i risultati.
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*ATensor*, *BTensor* e *OutputTensor* devono avere lo stesso *tipo* di dati, *DimensionCount* e *dimensioni*.
+*ATensor,* *BTensor* e *OutputTensor* devono avere gli stessi *DataType,* *DimensionCount* e *Sizes*.
 
-## <a name="tensor-support"></a>Supporto tensore
-### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 e versioni successive
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+### <a name="dml_feature_level_3_0-and-above"></a>DML_FEATURE_LEVEL_3_0 e successive
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| ATensor | Input | da 1 a 8 | UINT32, UINT16, UINT8 |
-| BTensor | Input | da 1 a 8 | UINT32, UINT16, UINT8 |
-| OutputTensor | Output | da 1 a 8 | UINT32, UINT16, UINT8 |
+| ATensor | Input | Da 1 a 8 | UINT32, UINT16, UINT8 |
+| BTensor | Input | Da 1 a 8 | UINT32, UINT16, UINT8 |
+| OutputTensor | Output | Da 1 a 8 | UINT32, UINT16, UINT8 |
 
-### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 e versioni successive
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+### <a name="dml_feature_level_2_1-and-above"></a>DML_FEATURE_LEVEL_2_1 e successive
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
 | ATensor | Input | 4 | UINT32, UINT16, UINT8 |
 | BTensor | Input | 4 | UINT32, UINT16, UINT8 |
@@ -123,4 +123,4 @@ Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_2_1` .
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |

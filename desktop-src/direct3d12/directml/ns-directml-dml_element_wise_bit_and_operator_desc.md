@@ -45,23 +45,23 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_BIT_AND_OPERATOR_DESC
-ms.openlocfilehash: 9e8730eef1b2d98c2f3094fb2fa29ecfc571d877
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 468c1e1dc332bc3c1afac4e0cdb6b0546d0b2b69
+ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320407"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107803244"
 ---
-# <a name="dml_element_wise_bit_and_operator_desc-structure-directmlh"></a>Struttura DML_ELEMENT_WISE_BIT_AND_OPERATOR_DESC (directml. h)
+# <a name="dml_element_wise_bit_and_operator_desc-structure-directmlh"></a>DML_ELEMENT_WISE_BIT_AND_OPERATOR_DESC struttura (directml.h)
 
 Calcola l'operatore AND bit per bit tra ogni elemento corrispondente dei tensori di input e scrive il risultato nel tensore di output.
 
-Il tensore di input e di output deve avere lo stesso *DimensionCount*, le *dimensioni* e il *tipo* di dati.
+Il tensore di input e output deve avere gli stessi *valori di DimensionCount,* *Sizes* e *DataType.*
 
-Questo operatore supporta l'esecuzione sul posto, vale a dire che il tensore di output è autorizzato a eseguire l'alias di uno o più dei tensori di input durante l'associazione.
+Questo operatore supporta l'esecuzione sul posto, vale a dire che il tensore di output può creare un alias per uno o più tensori di input durante l'associazione.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft. ai. DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/). Vedere anche [cronologia delle versioni di DirectML](../dml-version-history.md).
+> Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,13 +80,13 @@ struct DML_ELEMENT_WISE_BIT_AND_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente gli input sul lato sinistro.
+Tensore contenente gli input sul lato sinistro.
 
 `BTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Un tensore contenente gli input sul lato destro.
+Tensore contenente gli input sul lato destro.
 
 `OutputTensor`
 
@@ -98,16 +98,16 @@ Tensore di output in cui scrivere i risultati.
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*ATensor*, *BTensor* e *OutputTensor* devono avere lo stesso *tipo* di dati, *DimensionCount* e *dimensioni*.
+*ATensor,* *BTensor* e *OutputTensor* devono avere gli stessi *valori di DataType,* *DimensionCount* e *Sizes.*
 
-## <a name="tensor-support"></a>Supporto tensore
-| Tensore | Tipo | Conteggi dimensione supportati | Tipi di dati supportati |
+## <a name="tensor-support"></a>Supporto di Tensor
+| Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |
 | ------ | ---- | -------------------------- | -------------------- |
-| ATensor | Input | da 1 a 8 | UINT32, UINT16, UINT8 |
-| BTensor | Input | da 1 a 8 | UINT32, UINT16, UINT8 |
-| OutputTensor | Output | da 1 a 8 | UINT32, UINT16, UINT8 |
+| ATensor | Input | Da 1 a 8 | UINT32, UINT16, UINT8 |
+| BTensor | Input | Da 1 a 8 | UINT32, UINT16, UINT8 |
+| OutputTensor | Output | Da 1 a 8 | UINT32, UINT16, UINT8 |
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | directml. h |
+| **Intestazione** | directml.h |
