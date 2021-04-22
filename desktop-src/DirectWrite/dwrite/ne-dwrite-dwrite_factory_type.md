@@ -1,6 +1,6 @@
 ---
 UID: NE:dwrite.DWRITE_FACTORY_TYPE
-title: DWRITE_FACTORY_TYPE (DWrite. h)
+title: DWRITE_FACTORY_TYPE (dwrite.h)
 description: Specifica il tipo di oggetto factory DirectWrite.
 tech.root: DirectWrite
 ms.date: 11/11/2020
@@ -39,26 +39,26 @@ api_location:
 - dwrite.h
 api_name:
 - DWRITE_FACTORY_TYPE
-ms.openlocfilehash: 603b2ae525ddc6472a3b8581627f2877e06d1aac
-ms.sourcegitcommit: dd4a3716477b1363be58ecc0d439029f81467104
+ms.openlocfilehash: 87b0d1c2edcb836afd06d732f242b62441b9bd01
+ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "104047784"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107881810"
 ---
-# <a name="dwrite_factory_type-enumeration-dwriteh"></a>Enumerazione DWRITE_FACTORY_TYPE (DWrite. h)
+# <a name="dwrite_factory_type-enumeration-dwriteh"></a>DWRITE_FACTORY_TYPE enumerazione (dwrite.h)
 
 Specifica il tipo di oggetto factory DirectWrite.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte dell'implementazione di DWriteCore di [DirectWrite](../direct-write-portal.md). DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedere [Panoramica di DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview).
+> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedi [Panoramica di DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
 typedef enum DWRITE_FACTORY_TYPE {
   DWRITE_FACTORY_TYPE_SHARED,
   DWRITE_FACTORY_TYPE_ISOLATED,
-  DWRITE_FACTORY_TYPE_RESTRICTED
+  DWRITE_FACTORY_TYPE_ISOLATED2
 } ;
 ```
 
@@ -66,22 +66,22 @@ typedef enum DWRITE_FACTORY_TYPE {
 
 | Nome | Descrizione |
 | ---- |:---- |
-| DWRITE_FACTORY_TYPE_SHARED | Indica che la factory DirectWrite è una factory condivisa e che consente il riutilizzo dei dati del tipo di carattere memorizzati nella cache tra più componenti in-process. Tali Factory sfruttano inoltre i componenti di caching dei tipi di carattere tra processi per ottenere prestazioni migliori. |
+| DWRITE_FACTORY_TYPE_SHARED | Indica che la factory DirectWrite è una factory condivisa e che consente il riutilizzo dei dati dei tipi di carattere memorizzati nella cache tra più componenti in-process. Tali factory sfruttano anche i componenti di memorizzazione nella cache dei tipi di carattere tra processi per ottenere prestazioni migliori. |
 | DWRITE_FACTORY_TYPE_ISOLATED | Indica che l'oggetto factory DirectWrite è isolato. Gli oggetti creati dalla factory isolata non interagiscono con lo stato DirectWrite interno da altri componenti. |
-| DWRITE_FACTORY_TYPE_RESTRICTED | Gli oggetti creati da una factory con restrizioni non usano né modificano lo stato interno o i dati memorizzati nella cache usati da altre Factory. Inoltre, la raccolta di tipi di carattere del sistema contiene solo tipi di carattere noti.|
+| DWRITE_FACTORY_TYPE_ISOLATED2 | Indica che l'oggetto factory DirectWrite è limitato. Gli oggetti creati da una factory con restrizioni non usano né modificano lo stato interno o i dati memorizzati nella cache usati da altre factory. Inoltre, la raccolta di tipi di carattere di sistema contiene solo tipi di carattere noti.|
 
 ## <a name="examples"></a>Esempio
 
-Vedere l'argomento [Panoramica di DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) .
+Vedere [l'argomento di panoramica DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
 ## <a name="remarks"></a>Commenti
 
-Un oggetto factory DirectWrite contiene informazioni sullo stato interno, ad esempio la registrazione del caricatore del tipo di carattere e i dati del tipo di carattere memorizzati nella cache. Nella maggior parte dei casi è consigliabile usare l'oggetto Factory condiviso, perché consente a più componenti che usano DirectWrite di condividere informazioni sullo stato DirectWrite interno, riducendo così l'utilizzo della memoria. Tuttavia, esistono casi in cui è consigliabile ridurre l'effetto di un componente sul resto del processo, ad esempio un plug-in da un'origine non attendibile, mediante sandboxing e isolamento dal resto dei componenti del processo. In questi casi, è necessario utilizzare una factory isolata per il componente creato mediante sandbox.
+Un oggetto factory DirectWrite contiene informazioni sullo stato interno, ad esempio la registrazione del caricatore dei tipi di carattere e i dati dei tipi di carattere memorizzati nella cache. Nella maggior parte dei casi è consigliabile usare l'oggetto factory condiviso, perché consente a più componenti che usano DirectWrite di condividere informazioni interne sullo stato DirectWrite, riducendo così l'utilizzo della memoria. In alcuni casi, tuttavia, è preferibile ridurre l'impatto di un componente sul resto del processo, ad esempio un plug-in da un'origine non attendibile, tramite sandboxing e isolamento dal resto dei componenti del processo. In questi casi, è consigliabile usare una factory isolata per il componente sandbox.
 
-Una factory con restrizioni è più bloccata rispetto A una factory isolata. Non interagisce in alcun modo con una cache dei tipi di carattere incrociata o persistente. Inoltre, la raccolta di tipi di carattere del sistema restituita da questa Factory include solo tipi di carattere noti. Se si passa **DWRITE_FACTORY_TYPE_RESTRICTED** a una versione di DWrite precedente a DWriteCore, [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) restituisce **E_INVALIDARG**.
+Una factory con restrizioni è più bloccata rispetto a una factory isolata. Non interagisce in alcun modo con una cache dei caratteri multi-processo o persistente. Inoltre, la raccolta di tipi di carattere di sistema restituita da questa factory include solo tipi di carattere noti. Se si passa **DWRITE_FACTORY_TYPE_ISOLATED2** a una versione di DWrite precedente a DWriteCore, [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) restituisce **E_INVALIDARG**.
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Windows 10, Project Reunion 0,1 versione provvisoria [app Win32] |
-| **Intestazione** | DWrite. h (include dwrite_core. h) |
+| **Client minimo supportato** | Windows 10, Project Reunion [app Win32] |
+| **Intestazione** | dwrite.h (include dwrite_core.h) |
