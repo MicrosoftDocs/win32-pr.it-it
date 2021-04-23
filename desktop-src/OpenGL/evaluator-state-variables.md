@@ -12,189 +12,189 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 615e7cde4a8f82c3f4a9a95791912c5dc3f77ff3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f2895f773721f7c900003cbaa0f070c277a0e260
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955960"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909259"
 ---
-# <a name="evaluator-state-variables"></a><span data-ttu-id="c9e5a-104">Variabili di stato dell'analizzatore</span><span class="sxs-lookup"><span data-stu-id="c9e5a-104">Evaluator State Variables</span></span>
+# <a name="evaluator-state-variables"></a><span data-ttu-id="d2c53-104">Variabili di stato dell'analizzatore</span><span class="sxs-lookup"><span data-stu-id="d2c53-104">Evaluator State Variables</span></span>
 
-<dl> <span data-ttu-id="c9e5a-105"><dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordine GL</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-105"><dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL\_ORDER</dt> </span></span><dd> 
+<dl> <span data-ttu-id="d2c53-105"><dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-105"><dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL\_ORDER</dt> </span></span><dd> 
 
-|                  |                                |
+| <span data-ttu-id="d2c53-106">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-106">Property</span></span> | <span data-ttu-id="d2c53-107">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-107">Value</span></span> |
 |------------------|--------------------------------|
-| <span data-ttu-id="c9e5a-106">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-106">Description:</span></span>     | <span data-ttu-id="c9e5a-107">ordine mappa 1-D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-107">1-D map order</span></span>                  |
-| <span data-ttu-id="c9e5a-108">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-108">Attribute group:</span></span> |                                |
-| <span data-ttu-id="c9e5a-109">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-109">Initial value:</span></span>   | <span data-ttu-id="c9e5a-110">1</span><span class="sxs-lookup"><span data-stu-id="c9e5a-110">1</span></span>                              |
-| <span data-ttu-id="c9e5a-111">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-111">Get command:</span></span>     | [<span data-ttu-id="c9e5a-112">**glGetMapiv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-112">**glGetMapiv**</span></span>](glgetmap.md) |
+| <span data-ttu-id="d2c53-108">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-108">Description:</span></span>     | <span data-ttu-id="d2c53-109">Ordine mappa 1D</span><span class="sxs-lookup"><span data-stu-id="d2c53-109">1-D map order</span></span>                  |
+| <span data-ttu-id="d2c53-110">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-110">Attribute group:</span></span> |                                |
+| <span data-ttu-id="d2c53-111">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-111">Initial value:</span></span>   | <span data-ttu-id="d2c53-112">1</span><span class="sxs-lookup"><span data-stu-id="d2c53-112">1</span></span>                              |
+| <span data-ttu-id="d2c53-113">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-113">Get command:</span></span>     | [<span data-ttu-id="d2c53-114">**glGetMapiv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-114">**glGetMapiv**</span></span>](glgetmap.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-113"></dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordine GL</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-113"></dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL\_ORDER</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-115"></dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-115"></dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL\_ORDER</dt> </span></span><dd> 
 
-|                  |                                |
+| <span data-ttu-id="d2c53-116">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-116">Property</span></span> | <span data-ttu-id="d2c53-117">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-117">Value</span></span> |
 |------------------|--------------------------------|
-| <span data-ttu-id="c9e5a-114">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-114">Description:</span></span>     | <span data-ttu-id="c9e5a-115">ordini Mappa 2D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-115">2-D map orders</span></span>                 |
-| <span data-ttu-id="c9e5a-116">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-116">Attribute group:</span></span> |                                |
-| <span data-ttu-id="c9e5a-117">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-117">Initial value:</span></span>   | <span data-ttu-id="c9e5a-118">1, 1</span><span class="sxs-lookup"><span data-stu-id="c9e5a-118">1,1</span></span>                            |
-| <span data-ttu-id="c9e5a-119">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-119">Get command:</span></span>     | [<span data-ttu-id="c9e5a-120">**glGetMapiv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-120">**glGetMapiv**</span></span>](glgetmap.md) |
+| <span data-ttu-id="d2c53-118">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-118">Description:</span></span>     | <span data-ttu-id="d2c53-119">Ordini mappa 2D</span><span class="sxs-lookup"><span data-stu-id="d2c53-119">2-D map orders</span></span>                 |
+| <span data-ttu-id="d2c53-120">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-120">Attribute group:</span></span> |                                |
+| <span data-ttu-id="d2c53-121">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-121">Initial value:</span></span>   | <span data-ttu-id="d2c53-122">1,1</span><span class="sxs-lookup"><span data-stu-id="d2c53-122">1,1</span></span>                            |
+| <span data-ttu-id="d2c53-123">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-123">Get command:</span></span>     | [<span data-ttu-id="d2c53-124">**glGetMapiv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-124">**glGetMapiv**</span></span>](glgetmap.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-121"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_Coeff GL</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-121"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL\_COEFF</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-125"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL \_ COEFF</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-125"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL\_COEFF</dt> </span></span><dd> 
 
-|                  |                                |
+| <span data-ttu-id="d2c53-126">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-126">Property</span></span> | <span data-ttu-id="d2c53-127">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-127">Value</span></span> |
 |------------------|--------------------------------|
-| <span data-ttu-id="c9e5a-122">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-122">Description:</span></span>     | <span data-ttu-id="c9e5a-123">punti di controllo 1-D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-123">1-D control points</span></span>             |
-| <span data-ttu-id="c9e5a-124">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-124">Attribute group:</span></span> |                                |
-| <span data-ttu-id="c9e5a-125">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-125">Initial value:</span></span>   |                                |
-| <span data-ttu-id="c9e5a-126">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-126">Get command:</span></span>     | [<span data-ttu-id="c9e5a-127">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-127">**glGetMapfv**</span></span>](glgetmap.md) |
+| <span data-ttu-id="d2c53-128">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-128">Description:</span></span>     | <span data-ttu-id="d2c53-129">Punti di controllo 1D</span><span class="sxs-lookup"><span data-stu-id="d2c53-129">1-D control points</span></span>             |
+| <span data-ttu-id="d2c53-130">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-130">Attribute group:</span></span> |                                |
+| <span data-ttu-id="d2c53-131">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-131">Initial value:</span></span>   |                                |
+| <span data-ttu-id="d2c53-132">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-132">Get command:</span></span>     | [<span data-ttu-id="d2c53-133">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-133">**glGetMapfv**</span></span>](glgetmap.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-128"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_Coeff GL</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-128"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL\_COEFF</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-134"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL \_ COEFF</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-134"></dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL\_COEFF</dt> </span></span><dd> 
 
-|                  |                                |
+| <span data-ttu-id="d2c53-135">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-135">Property</span></span> | <span data-ttu-id="d2c53-136">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-136">Value</span></span> |
 |------------------|--------------------------------|
-| <span data-ttu-id="c9e5a-129">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-129">Description:</span></span>     | <span data-ttu-id="c9e5a-130">punti di controllo 2D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-130">2-D control points</span></span>             |
-| <span data-ttu-id="c9e5a-131">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-131">Attribute group:</span></span> |                                |
-| <span data-ttu-id="c9e5a-132">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-132">Initial value:</span></span>   |                                |
-| <span data-ttu-id="c9e5a-133">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-133">Get command:</span></span>     | [<span data-ttu-id="c9e5a-134">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-134">**glGetMapfv**</span></span>](glgetmap.md) |
+| <span data-ttu-id="d2c53-137">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-137">Description:</span></span>     | <span data-ttu-id="d2c53-138">Punti di controllo 2D</span><span class="sxs-lookup"><span data-stu-id="d2c53-138">2-D control points</span></span>             |
+| <span data-ttu-id="d2c53-139">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-139">Attribute group:</span></span> |                                |
+| <span data-ttu-id="d2c53-140">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-140">Initial value:</span></span>   |                                |
+| <span data-ttu-id="d2c53-141">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-141">Get command:</span></span>     | [<span data-ttu-id="d2c53-142">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-142">**glGetMapfv**</span></span>](glgetmap.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-135"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_dominio GL</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-135"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>GL\_DOMAIN</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-143"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>DOMINIO \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-143"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>GL\_DOMAIN</dt> </span></span><dd> 
 
-|                  |                                |
+| <span data-ttu-id="d2c53-144">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-144">Property</span></span> | <span data-ttu-id="d2c53-145">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-145">Value</span></span> |
 |------------------|--------------------------------|
-| <span data-ttu-id="c9e5a-136">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-136">Description:</span></span>     | <span data-ttu-id="c9e5a-137">endpoint del dominio 1-D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-137">1-D domain endpoints</span></span>           |
-| <span data-ttu-id="c9e5a-138">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-138">Attribute group:</span></span> |                                |
-| <span data-ttu-id="c9e5a-139">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-139">Initial value:</span></span>   |                                |
-| <span data-ttu-id="c9e5a-140">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-140">Get command:</span></span>     | [<span data-ttu-id="c9e5a-141">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-141">**glGetMapfv**</span></span>](glgetmap.md) |
+| <span data-ttu-id="d2c53-146">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-146">Description:</span></span>     | <span data-ttu-id="d2c53-147">Endpoint di dominio 1D</span><span class="sxs-lookup"><span data-stu-id="d2c53-147">1-D domain endpoints</span></span>           |
+| <span data-ttu-id="d2c53-148">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-148">Attribute group:</span></span> |                                |
+| <span data-ttu-id="d2c53-149">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-149">Initial value:</span></span>   |                                |
+| <span data-ttu-id="d2c53-150">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-150">Get command:</span></span>     | [<span data-ttu-id="d2c53-151">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-151">**glGetMapfv**</span></span>](glgetmap.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-142"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_dominio GL</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-142"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>GL\_DOMAIN</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-152"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>DOMINIO \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-152"></dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>GL\_DOMAIN</dt> </span></span><dd> 
 
-|                  |                                |
+| <span data-ttu-id="d2c53-153">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-153">Property</span></span> | <span data-ttu-id="d2c53-154">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-154">Value</span></span> |
 |------------------|--------------------------------|
-| <span data-ttu-id="c9e5a-143">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-143">Description:</span></span>     | <span data-ttu-id="c9e5a-144">endpoint del dominio 2D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-144">2-D domain endpoints</span></span>           |
-| <span data-ttu-id="c9e5a-145">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-145">Attribute group:</span></span> |                                |
-| <span data-ttu-id="c9e5a-146">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-146">Initial value:</span></span>   |                                |
-| <span data-ttu-id="c9e5a-147">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-147">Get command:</span></span>     | [<span data-ttu-id="c9e5a-148">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-148">**glGetMapfv**</span></span>](glgetmap.md) |
+| <span data-ttu-id="d2c53-155">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-155">Description:</span></span>     | <span data-ttu-id="d2c53-156">Endpoint di dominio 2D</span><span class="sxs-lookup"><span data-stu-id="d2c53-156">2-D domain endpoints</span></span>           |
+| <span data-ttu-id="d2c53-157">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-157">Attribute group:</span></span> |                                |
+| <span data-ttu-id="d2c53-158">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-158">Initial value:</span></span>   |                                |
+| <span data-ttu-id="d2c53-159">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-159">Get command:</span></span>     | [<span data-ttu-id="d2c53-160">**glGetMapfv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-160">**glGetMapfv**</span></span>](glgetmap.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-149"></dd> <dt><span id="GL_MAP1_x"></span><span id="gl_map1_x"></span><span id="GL_MAP1_X"></span>GL \_ Mappa1 \_ x</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-149"></dd> <dt><span id="GL_MAP1_x"></span><span id="gl_map1_x"></span><span id="GL_MAP1_X"></span>GL\_MAP1\_x</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-161"></dd> <dt><span id="GL_MAP1_x"></span><span id="gl_map1_x"></span><span id="GL_MAP1_X"></span>GL \_ MAP1 \_ x</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-161"></dd> <dt><span id="GL_MAP1_x"></span><span id="gl_map1_x"></span><span id="GL_MAP1_X"></span>GL\_MAP1\_x</dt> </span></span><dd> 
 
-|                  |                                    |
+| <span data-ttu-id="d2c53-162">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-162">Property</span></span> | <span data-ttu-id="d2c53-163">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-163">Value</span></span> |
 |------------------|------------------------------------|
-| <span data-ttu-id="c9e5a-150">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-150">Description:</span></span>     | <span data-ttu-id="c9e5a-151">la mappa 1-D Abilita: *x* è il tipo di mappa</span><span class="sxs-lookup"><span data-stu-id="c9e5a-151">1-D map enables: *x* is map type</span></span>   |
-| <span data-ttu-id="c9e5a-152">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-152">Attribute group:</span></span> | <span data-ttu-id="c9e5a-153">EVAL/Enable</span><span class="sxs-lookup"><span data-stu-id="c9e5a-153">eval/enable</span></span>                        |
-| <span data-ttu-id="c9e5a-154">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-154">Initial value:</span></span>   | <span data-ttu-id="c9e5a-155">GL \_ false</span><span class="sxs-lookup"><span data-stu-id="c9e5a-155">GL\_FALSE</span></span>                          |
-| <span data-ttu-id="c9e5a-156">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-156">Get command:</span></span>     | [<span data-ttu-id="c9e5a-157">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-157">**glIsEnabled**</span></span>](glisenabled.md) |
+| <span data-ttu-id="d2c53-164">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-164">Description:</span></span>     | <span data-ttu-id="d2c53-165">La mappa 1D abilita: *x* è il tipo di mappa</span><span class="sxs-lookup"><span data-stu-id="d2c53-165">1-D map enables: *x* is map type</span></span>   |
+| <span data-ttu-id="d2c53-166">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-166">Attribute group:</span></span> | <span data-ttu-id="d2c53-167">eval/enable</span><span class="sxs-lookup"><span data-stu-id="d2c53-167">eval/enable</span></span>                        |
+| <span data-ttu-id="d2c53-168">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-168">Initial value:</span></span>   | <span data-ttu-id="d2c53-169">GL \_ FALSE</span><span class="sxs-lookup"><span data-stu-id="d2c53-169">GL\_FALSE</span></span>                          |
+| <span data-ttu-id="d2c53-170">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-170">Get command:</span></span>     | [<span data-ttu-id="d2c53-171">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="d2c53-171">**glIsEnabled**</span></span>](glisenabled.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-158"></dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL \_ map2 \_ x</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-158"></dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL\_MAP2\_x</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-172"></dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL \_ MAP2 \_ x</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-172"></dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL\_MAP2\_x</dt> </span></span><dd> 
 
-|                  |                                    |
+| <span data-ttu-id="d2c53-173">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-173">Property</span></span> | <span data-ttu-id="d2c53-174">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-174">Value</span></span> |
 |------------------|------------------------------------|
-| <span data-ttu-id="c9e5a-159">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-159">Description:</span></span>     | <span data-ttu-id="c9e5a-160">la mappa 2D Abilita: *x* è il tipo di mappa</span><span class="sxs-lookup"><span data-stu-id="c9e5a-160">2-D map enables: *x* is map type</span></span>   |
-| <span data-ttu-id="c9e5a-161">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-161">Attribute group:</span></span> | <span data-ttu-id="c9e5a-162">EVAL/Enable</span><span class="sxs-lookup"><span data-stu-id="c9e5a-162">eval/enable</span></span>                        |
-| <span data-ttu-id="c9e5a-163">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-163">Initial value:</span></span>   | <span data-ttu-id="c9e5a-164">GL \_ false</span><span class="sxs-lookup"><span data-stu-id="c9e5a-164">GL\_FALSE</span></span>                          |
-| <span data-ttu-id="c9e5a-165">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-165">Get command:</span></span>     | [<span data-ttu-id="c9e5a-166">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-166">**glIsEnabled**</span></span>](glisenabled.md) |
+| <span data-ttu-id="d2c53-175">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-175">Description:</span></span>     | <span data-ttu-id="d2c53-176">La mappa 2D abilita: *x* è il tipo di mappa</span><span class="sxs-lookup"><span data-stu-id="d2c53-176">2-D map enables: *x* is map type</span></span>   |
+| <span data-ttu-id="d2c53-177">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-177">Attribute group:</span></span> | <span data-ttu-id="d2c53-178">eval/enable</span><span class="sxs-lookup"><span data-stu-id="d2c53-178">eval/enable</span></span>                        |
+| <span data-ttu-id="d2c53-179">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-179">Initial value:</span></span>   | <span data-ttu-id="d2c53-180">GL \_ FALSE</span><span class="sxs-lookup"><span data-stu-id="d2c53-180">GL\_FALSE</span></span>                          |
+| <span data-ttu-id="d2c53-181">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-181">Get command:</span></span>     | [<span data-ttu-id="d2c53-182">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="d2c53-182">**glIsEnabled**</span></span>](glisenabled.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-167"></dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>\_Dominio della \_ griglia GL Mappa1 \_</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-167"></dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>GL\_MAP1\_GRID\_DOMAIN</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-183"></dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>DOMINIO \_ DELLA GRIGLIA GL MAP1 \_ \_</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-183"></dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>GL\_MAP1\_GRID\_DOMAIN</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="d2c53-184">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-184">Property</span></span> | <span data-ttu-id="d2c53-185">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-185">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="c9e5a-168">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-168">Description:</span></span>     | <span data-ttu-id="c9e5a-169">endpoint della griglia da 1 a D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-169">1-D grid endpoints</span></span>                                                             |
-| <span data-ttu-id="c9e5a-170">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-170">Attribute group:</span></span> | <span data-ttu-id="c9e5a-171">eval</span><span class="sxs-lookup"><span data-stu-id="c9e5a-171">eval</span></span>                                                                           |
-| <span data-ttu-id="c9e5a-172">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-172">Initial value:</span></span>   | <span data-ttu-id="c9e5a-173">0, 1</span><span class="sxs-lookup"><span data-stu-id="c9e5a-173">0,1</span></span>                                                                            |
-| <span data-ttu-id="c9e5a-174">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-174">Get command:</span></span>     | [<span data-ttu-id="c9e5a-175">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-175">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="d2c53-186">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-186">Description:</span></span>     | <span data-ttu-id="d2c53-187">Endpoint griglia 1D</span><span class="sxs-lookup"><span data-stu-id="d2c53-187">1-D grid endpoints</span></span>                                                             |
+| <span data-ttu-id="d2c53-188">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-188">Attribute group:</span></span> | <span data-ttu-id="d2c53-189">eval</span><span class="sxs-lookup"><span data-stu-id="d2c53-189">eval</span></span>                                                                           |
+| <span data-ttu-id="d2c53-190">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-190">Initial value:</span></span>   | <span data-ttu-id="d2c53-191">0,1</span><span class="sxs-lookup"><span data-stu-id="d2c53-191">0,1</span></span>                                                                            |
+| <span data-ttu-id="d2c53-192">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-192">Get command:</span></span>     | [<span data-ttu-id="d2c53-193">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-193">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-176"></dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>\_Dominio della \_ griglia GL map2 \_</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-176"></dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>GL\_MAP2\_GRID\_DOMAIN</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-194"></dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>DOMINIO \_ GRIGLIA GL MAP2 \_ \_</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-194"></dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>GL\_MAP2\_GRID\_DOMAIN</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="d2c53-195">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-195">Property</span></span> | <span data-ttu-id="d2c53-196">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-196">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="c9e5a-177">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-177">Description:</span></span>     | <span data-ttu-id="c9e5a-178">endpoint della griglia 2D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-178">2-D grid endpoints</span></span>                                                             |
-| <span data-ttu-id="c9e5a-179">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-179">Attribute group:</span></span> | <span data-ttu-id="c9e5a-180">eval</span><span class="sxs-lookup"><span data-stu-id="c9e5a-180">eval</span></span>                                                                           |
-| <span data-ttu-id="c9e5a-181">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-181">Initial value:</span></span>   | <span data-ttu-id="c9e5a-182">0, 1; 0, 1</span><span class="sxs-lookup"><span data-stu-id="c9e5a-182">0, 1; 0, 1</span></span>                                                                     |
-| <span data-ttu-id="c9e5a-183">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-183">Get command:</span></span>     | [<span data-ttu-id="c9e5a-184">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-184">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="d2c53-197">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-197">Description:</span></span>     | <span data-ttu-id="d2c53-198">Endpoint della griglia 2D</span><span class="sxs-lookup"><span data-stu-id="d2c53-198">2-D grid endpoints</span></span>                                                             |
+| <span data-ttu-id="d2c53-199">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-199">Attribute group:</span></span> | <span data-ttu-id="d2c53-200">eval</span><span class="sxs-lookup"><span data-stu-id="d2c53-200">eval</span></span>                                                                           |
+| <span data-ttu-id="d2c53-201">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-201">Initial value:</span></span>   | <span data-ttu-id="d2c53-202">0, 1; 0, 1</span><span class="sxs-lookup"><span data-stu-id="d2c53-202">0, 1; 0, 1</span></span>                                                                     |
+| <span data-ttu-id="d2c53-203">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-203">Get command:</span></span>     | [<span data-ttu-id="d2c53-204">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-204">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-185"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>\_ \_ Segmenti griglia GL \_ Mappa1</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-185"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>GL\_MAP1\_GRID\_SEGMENTS</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-205"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>SEGMENTI \_ DELLA GRIGLIA GL MAP1 \_ \_</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-205"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>GL\_MAP1\_GRID\_SEGMENTS</dt> </span></span><dd> 
 
-|                  |                                    |
+| <span data-ttu-id="d2c53-206">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-206">Property</span></span> | <span data-ttu-id="d2c53-207">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-207">Value</span></span> |
 |------------------|------------------------------------|
-| <span data-ttu-id="c9e5a-186">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-186">Description:</span></span>     | <span data-ttu-id="c9e5a-187">divisioni della griglia da 1 a D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-187">1-D grid divisions</span></span>                 |
-| <span data-ttu-id="c9e5a-188">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-188">Attribute group:</span></span> | <span data-ttu-id="c9e5a-189">eval</span><span class="sxs-lookup"><span data-stu-id="c9e5a-189">eval</span></span>                               |
-| <span data-ttu-id="c9e5a-190">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-190">Initial value:</span></span>   | <span data-ttu-id="c9e5a-191">1</span><span class="sxs-lookup"><span data-stu-id="c9e5a-191">1</span></span>                                  |
-| <span data-ttu-id="c9e5a-192">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-192">Get command:</span></span>     | [<span data-ttu-id="c9e5a-193">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-193">**glGetFloatv**</span></span>](glgetfloatv.md) |
+| <span data-ttu-id="d2c53-208">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-208">Description:</span></span>     | <span data-ttu-id="d2c53-209">Divisioni griglia 1D</span><span class="sxs-lookup"><span data-stu-id="d2c53-209">1-D grid divisions</span></span>                 |
+| <span data-ttu-id="d2c53-210">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-210">Attribute group:</span></span> | <span data-ttu-id="d2c53-211">eval</span><span class="sxs-lookup"><span data-stu-id="d2c53-211">eval</span></span>                               |
+| <span data-ttu-id="d2c53-212">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-212">Initial value:</span></span>   | <span data-ttu-id="d2c53-213">1</span><span class="sxs-lookup"><span data-stu-id="d2c53-213">1</span></span>                                  |
+| <span data-ttu-id="d2c53-214">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-214">Get command:</span></span>     | [<span data-ttu-id="d2c53-215">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-215">**glGetFloatv**</span></span>](glgetfloatv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-194"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>\_ \_ Segmenti griglia GL \_ Mappa1</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-194"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>GL\_MAP1\_GRID\_SEGMENTS</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-216"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>SEGMENTI \_ DELLA GRIGLIA GL MAP1 \_ \_</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-216"></dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>GL\_MAP1\_GRID\_SEGMENTS</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="d2c53-217">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-217">Property</span></span> | <span data-ttu-id="d2c53-218">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-218">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="c9e5a-195">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-195">Description:</span></span>     | <span data-ttu-id="c9e5a-196">segmenti griglia 2D</span><span class="sxs-lookup"><span data-stu-id="c9e5a-196">2-D grid segments</span></span>                                                              |
-| <span data-ttu-id="c9e5a-197">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-197">Attribute group:</span></span> | <span data-ttu-id="c9e5a-198">eval</span><span class="sxs-lookup"><span data-stu-id="c9e5a-198">eval</span></span>                                                                           |
-| <span data-ttu-id="c9e5a-199">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-199">Initial value:</span></span>   | <span data-ttu-id="c9e5a-200">1, 1</span><span class="sxs-lookup"><span data-stu-id="c9e5a-200">1, 1</span></span>                                                                           |
-| <span data-ttu-id="c9e5a-201">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-201">Get command:</span></span>     | [<span data-ttu-id="c9e5a-202">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-202">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="d2c53-219">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-219">Description:</span></span>     | <span data-ttu-id="d2c53-220">Segmenti di griglia 2D</span><span class="sxs-lookup"><span data-stu-id="d2c53-220">2-D grid segments</span></span>                                                              |
+| <span data-ttu-id="d2c53-221">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-221">Attribute group:</span></span> | <span data-ttu-id="d2c53-222">eval</span><span class="sxs-lookup"><span data-stu-id="d2c53-222">eval</span></span>                                                                           |
+| <span data-ttu-id="d2c53-223">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-223">Initial value:</span></span>   | <span data-ttu-id="d2c53-224">1, 1</span><span class="sxs-lookup"><span data-stu-id="d2c53-224">1, 1</span></span>                                                                           |
+| <span data-ttu-id="d2c53-225">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-225">Get command:</span></span>     | [<span data-ttu-id="d2c53-226">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="d2c53-226">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="c9e5a-203"></dd> <dt><span id="GL_AUTO_NORMAL"></span><span id="gl_auto_normal"></span>GL \_ auto \_ normale</dt> </span><span class="sxs-lookup"><span data-stu-id="c9e5a-203"></dd> <dt><span id="GL_AUTO_NORMAL"></span><span id="gl_auto_normal"></span>GL\_AUTO\_NORMAL</dt> </span></span><dd> 
+<span data-ttu-id="d2c53-227"></dd> <dt><span id="GL_AUTO_NORMAL"></span><span id="gl_auto_normal"></span>GL \_ AUTO \_ NORMAL</dt> </span><span class="sxs-lookup"><span data-stu-id="d2c53-227"></dd> <dt><span id="GL_AUTO_NORMAL"></span><span id="gl_auto_normal"></span>GL\_AUTO\_NORMAL</dt> </span></span><dd> 
 
-|                  |                                             |
+| <span data-ttu-id="d2c53-228">Proprietà</span><span class="sxs-lookup"><span data-stu-id="d2c53-228">Property</span></span> | <span data-ttu-id="d2c53-229">Valore</span><span class="sxs-lookup"><span data-stu-id="d2c53-229">Value</span></span> |
 |------------------|---------------------------------------------|
-| <span data-ttu-id="c9e5a-204">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-204">Description:</span></span>     | <span data-ttu-id="c9e5a-205">True se la generazione automatica normale è abilitata</span><span class="sxs-lookup"><span data-stu-id="c9e5a-205">True if automatic normal generation enabled</span></span> |
-| <span data-ttu-id="c9e5a-206">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-206">Attribute group:</span></span> | <span data-ttu-id="c9e5a-207">eval</span><span class="sxs-lookup"><span data-stu-id="c9e5a-207">eval</span></span>                                        |
-| <span data-ttu-id="c9e5a-208">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-208">Initial value:</span></span>   | <span data-ttu-id="c9e5a-209">GL \_ false</span><span class="sxs-lookup"><span data-stu-id="c9e5a-209">GL\_FALSE</span></span>                                   |
-| <span data-ttu-id="c9e5a-210">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="c9e5a-210">Get command:</span></span>     | [<span data-ttu-id="c9e5a-211">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="c9e5a-211">**glIsEnabled**</span></span>](glisenabled.md)          |
+| <span data-ttu-id="d2c53-230">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="d2c53-230">Description:</span></span>     | <span data-ttu-id="d2c53-231">True se la generazione normale automatica è abilitata</span><span class="sxs-lookup"><span data-stu-id="d2c53-231">True if automatic normal generation enabled</span></span> |
+| <span data-ttu-id="d2c53-232">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="d2c53-232">Attribute group:</span></span> | <span data-ttu-id="d2c53-233">eval</span><span class="sxs-lookup"><span data-stu-id="d2c53-233">eval</span></span>                                        |
+| <span data-ttu-id="d2c53-234">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="d2c53-234">Initial value:</span></span>   | <span data-ttu-id="d2c53-235">GL \_ FALSE</span><span class="sxs-lookup"><span data-stu-id="d2c53-235">GL\_FALSE</span></span>                                   |
+| <span data-ttu-id="d2c53-236">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="d2c53-236">Get command:</span></span>     | [<span data-ttu-id="d2c53-237">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="d2c53-237">**glIsEnabled**</span></span>](glisenabled.md)          |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

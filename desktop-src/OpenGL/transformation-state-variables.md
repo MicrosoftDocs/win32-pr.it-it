@@ -1,6 +1,6 @@
 ---
-title: Variabili di stato della trasformazione
-description: Variabili di stato della trasformazione
+title: Variabili dello stato della trasformazione
+description: Variabili dello stato della trasformazione
 ms.assetid: 3a6be5ac-ac7a-4c3e-8b65-0404849ae67c
 keywords:
 - Variabili di stato della trasformazione OpenGL
@@ -12,176 +12,176 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3434fe9f9aa528aa8d201b56ed363753c594690f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8c7b53e0abae08447df86d8968a33a361be08a1e
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334276"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908829"
 ---
-# <a name="transformation-state-variables"></a><span data-ttu-id="75138-104">Variabili di stato della trasformazione</span><span class="sxs-lookup"><span data-stu-id="75138-104">Transformation State Variables</span></span>
+# <a name="transformation-state-variables"></a><span data-ttu-id="87e53-104">Variabili dello stato della trasformazione</span><span class="sxs-lookup"><span data-stu-id="87e53-104">Transformation State Variables</span></span>
 
-<dl> <span data-ttu-id="75138-105"><dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>\_matrice GL MODELVIEW \_</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-105"><dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>GL\_MODELVIEW\_MATRIX</dt> </span></span><dd> 
+<dl> <span data-ttu-id="87e53-105"><dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>MATRICE \_ DI GL MODELVIEW \_</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-105"><dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>GL\_MODELVIEW\_MATRIX</dt> </span></span><dd> 
 
-|                  |                                    |
+| <span data-ttu-id="87e53-106">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-106">Property</span></span> | <span data-ttu-id="87e53-107">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-107">Value</span></span> |
 |------------------|------------------------------------|
-| <span data-ttu-id="75138-106">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-106">Description:</span></span>     | <span data-ttu-id="75138-107">Stack matrice Modelview</span><span class="sxs-lookup"><span data-stu-id="75138-107">Modelview matrix stack</span></span>             |
-| <span data-ttu-id="75138-108">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-108">Attribute group:</span></span> |                                    |
-| <span data-ttu-id="75138-109">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-109">Initial value:</span></span>   | <span data-ttu-id="75138-110">Identità</span><span class="sxs-lookup"><span data-stu-id="75138-110">Identity</span></span>                           |
-| <span data-ttu-id="75138-111">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-111">Get command:</span></span>     | [<span data-ttu-id="75138-112">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="75138-112">**glGetFloatv**</span></span>](glgetfloatv.md) |
+| <span data-ttu-id="87e53-108">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-108">Description:</span></span>     | <span data-ttu-id="87e53-109">Stack di matrici di Modelview</span><span class="sxs-lookup"><span data-stu-id="87e53-109">Modelview matrix stack</span></span>             |
+| <span data-ttu-id="87e53-110">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-110">Attribute group:</span></span> |                                    |
+| <span data-ttu-id="87e53-111">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-111">Initial value:</span></span>   | <span data-ttu-id="87e53-112">Identità</span><span class="sxs-lookup"><span data-stu-id="87e53-112">Identity</span></span>                           |
+| <span data-ttu-id="87e53-113">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-113">Get command:</span></span>     | [<span data-ttu-id="87e53-114">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="87e53-114">**glGetFloatv**</span></span>](glgetfloatv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-113"></dd> <dt><span id="GL_PROJECTION_MATRIX"></span><span id="gl_projection_matrix"></span>\_matrice di proiezione GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-113"></dd> <dt><span id="GL_PROJECTION_MATRIX"></span><span id="gl_projection_matrix"></span>GL\_PROJECTION\_MATRIX</dt> </span></span><dd> 
+<span data-ttu-id="87e53-115"></dd> <dt><span id="GL_PROJECTION_MATRIX"></span><span id="gl_projection_matrix"></span>MATRICE DI \_ \_ PROIEZIONE GL</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-115"></dd> <dt><span id="GL_PROJECTION_MATRIX"></span><span id="gl_projection_matrix"></span>GL\_PROJECTION\_MATRIX</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="87e53-116">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-116">Property</span></span> | <span data-ttu-id="87e53-117">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-117">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-114">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-114">Description:</span></span>     | <span data-ttu-id="75138-115">Stack matrice di proiezione</span><span class="sxs-lookup"><span data-stu-id="75138-115">Projection matrix stack</span></span>                                                        |
-| <span data-ttu-id="75138-116">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-116">Attribute group:</span></span> |                                                                                |
-| <span data-ttu-id="75138-117">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-117">Initial value:</span></span>   | <span data-ttu-id="75138-118">Identità</span><span class="sxs-lookup"><span data-stu-id="75138-118">Identity</span></span>                                                                       |
-| <span data-ttu-id="75138-119">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-119">Get command:</span></span>     | [<span data-ttu-id="75138-120">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="75138-120">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-118">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-118">Description:</span></span>     | <span data-ttu-id="87e53-119">Stack matrice di proiezione</span><span class="sxs-lookup"><span data-stu-id="87e53-119">Projection matrix stack</span></span>                                                        |
+| <span data-ttu-id="87e53-120">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-120">Attribute group:</span></span> |                                                                                |
+| <span data-ttu-id="87e53-121">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-121">Initial value:</span></span>   | <span data-ttu-id="87e53-122">Identità</span><span class="sxs-lookup"><span data-stu-id="87e53-122">Identity</span></span>                                                                       |
+| <span data-ttu-id="87e53-123">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-123">Get command:</span></span>     | [<span data-ttu-id="87e53-124">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="87e53-124">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-121"></dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>\_matrice di trama GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-121"></dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>GL\_TEXTURE\_MATRIX</dt> </span></span><dd> 
+<span data-ttu-id="87e53-125"></dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>MATRICE \_ TRAME GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-125"></dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>GL\_TEXTURE\_MATRIX</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="87e53-126">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-126">Property</span></span> | <span data-ttu-id="87e53-127">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-127">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-122">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-122">Description:</span></span>     | <span data-ttu-id="75138-123">Stack matrice trama</span><span class="sxs-lookup"><span data-stu-id="75138-123">Texture matrix stack</span></span>                                                           |
-| <span data-ttu-id="75138-124">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-124">Attribute group:</span></span> |                                                                                |
-| <span data-ttu-id="75138-125">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-125">Initial value:</span></span>   | <span data-ttu-id="75138-126">Identità</span><span class="sxs-lookup"><span data-stu-id="75138-126">Identity</span></span>                                                                       |
-| <span data-ttu-id="75138-127">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-127">Get command:</span></span>     | [<span data-ttu-id="75138-128">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="75138-128">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-128">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-128">Description:</span></span>     | <span data-ttu-id="87e53-129">Stack di matrici di trame</span><span class="sxs-lookup"><span data-stu-id="87e53-129">Texture matrix stack</span></span>                                                           |
+| <span data-ttu-id="87e53-130">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-130">Attribute group:</span></span> |                                                                                |
+| <span data-ttu-id="87e53-131">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-131">Initial value:</span></span>   | <span data-ttu-id="87e53-132">Identità</span><span class="sxs-lookup"><span data-stu-id="87e53-132">Identity</span></span>                                                                       |
+| <span data-ttu-id="87e53-133">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-133">Get command:</span></span>     | [<span data-ttu-id="87e53-134">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="87e53-134">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-129"></dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>\_riquadro di visualizzazione GL</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-129"></dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>GL\_VIEWPORT</dt> </span></span><dd> 
+<span data-ttu-id="87e53-135"></dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>GL \_ VIEWPORT</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-135"></dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>GL\_VIEWPORT</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="87e53-136">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-136">Property</span></span> | <span data-ttu-id="87e53-137">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-137">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-130">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-130">Description:</span></span>     | <span data-ttu-id="75138-131">Origine e extent del viewport</span><span class="sxs-lookup"><span data-stu-id="75138-131">Viewport origin and extent</span></span>                                                       |
-| <span data-ttu-id="75138-132">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-132">Attribute group:</span></span> | <span data-ttu-id="75138-133">riquadro di visualizzazione</span><span class="sxs-lookup"><span data-stu-id="75138-133">viewport</span></span>                                                                         |
-| <span data-ttu-id="75138-134">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-134">Initial value:</span></span>   |                                                                                  |
-| <span data-ttu-id="75138-135">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-135">Get command:</span></span>     | [<span data-ttu-id="75138-136">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="75138-136">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-138">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-138">Description:</span></span>     | <span data-ttu-id="87e53-139">Origine ed extent del viewport</span><span class="sxs-lookup"><span data-stu-id="87e53-139">Viewport origin and extent</span></span>                                                       |
+| <span data-ttu-id="87e53-140">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-140">Attribute group:</span></span> | <span data-ttu-id="87e53-141">riquadro di visualizzazione</span><span class="sxs-lookup"><span data-stu-id="87e53-141">viewport</span></span>                                                                         |
+| <span data-ttu-id="87e53-142">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-142">Initial value:</span></span>   |                                                                                  |
+| <span data-ttu-id="87e53-143">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-143">Get command:</span></span>     | [<span data-ttu-id="87e53-144">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="87e53-144">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-137"></dd> <dt><span id="GL_DEPTH_RANGE"></span><span id="gl_depth_range"></span>\_intervallo di profondità GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-137"></dd> <dt><span id="GL_DEPTH_RANGE"></span><span id="gl_depth_range"></span>GL\_DEPTH\_RANGE</dt> </span></span><dd> 
+<span data-ttu-id="87e53-145"></dd> <dt><span id="GL_DEPTH_RANGE"></span><span id="gl_depth_range"></span>INTERVALLO DI PROFONDITÀ GL \_ \_</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-145"></dd> <dt><span id="GL_DEPTH_RANGE"></span><span id="gl_depth_range"></span>GL\_DEPTH\_RANGE</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="87e53-146">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-146">Property</span></span> | <span data-ttu-id="87e53-147">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-147">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-138">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-138">Description:</span></span>     | <span data-ttu-id="75138-139">Intervallo di profondità vicino e lontano</span><span class="sxs-lookup"><span data-stu-id="75138-139">Depth range near and far</span></span>                                                       |
-| <span data-ttu-id="75138-140">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-140">Attribute group:</span></span> | <span data-ttu-id="75138-141">riquadro di visualizzazione</span><span class="sxs-lookup"><span data-stu-id="75138-141">viewport</span></span>                                                                       |
-| <span data-ttu-id="75138-142">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-142">Initial value:</span></span>   | <span data-ttu-id="75138-143">0, 1</span><span class="sxs-lookup"><span data-stu-id="75138-143">0, 1</span></span>                                                                           |
-| <span data-ttu-id="75138-144">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-144">Get command:</span></span>     | [<span data-ttu-id="75138-145">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="75138-145">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-148">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-148">Description:</span></span>     | <span data-ttu-id="87e53-149">Intervallo di profondità vicino e lontano</span><span class="sxs-lookup"><span data-stu-id="87e53-149">Depth range near and far</span></span>                                                       |
+| <span data-ttu-id="87e53-150">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-150">Attribute group:</span></span> | <span data-ttu-id="87e53-151">riquadro di visualizzazione</span><span class="sxs-lookup"><span data-stu-id="87e53-151">viewport</span></span>                                                                       |
+| <span data-ttu-id="87e53-152">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-152">Initial value:</span></span>   | <span data-ttu-id="87e53-153">0, 1</span><span class="sxs-lookup"><span data-stu-id="87e53-153">0, 1</span></span>                                                                           |
+| <span data-ttu-id="87e53-154">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-154">Get command:</span></span>     | [<span data-ttu-id="87e53-155">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="87e53-155">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-146"></dd> <dt><span id="GL_MODELVIEW_STACK_DEPTH"></span><span id="gl_modelview_stack_depth"></span>\_ \_ profondità dello stack MODELVIEW GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-146"></dd> <dt><span id="GL_MODELVIEW_STACK_DEPTH"></span><span id="gl_modelview_stack_depth"></span>GL\_MODELVIEW\_STACK\_DEPTH</dt> </span></span><dd> 
+<span data-ttu-id="87e53-156"></dd> <dt><span id="GL_MODELVIEW_STACK_DEPTH"></span><span id="gl_modelview_stack_depth"></span>GL \_ MODELVIEW \_ STACK \_ DEPTH</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-156"></dd> <dt><span id="GL_MODELVIEW_STACK_DEPTH"></span><span id="gl_modelview_stack_depth"></span>GL\_MODELVIEW\_STACK\_DEPTH</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="87e53-157">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-157">Property</span></span> | <span data-ttu-id="87e53-158">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-158">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-147">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-147">Description:</span></span>     | <span data-ttu-id="75138-148">Puntatore dello stack della matrice Modelview</span><span class="sxs-lookup"><span data-stu-id="75138-148">Modelview matrix stack pointer</span></span>                                                   |
-| <span data-ttu-id="75138-149">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-149">Attribute group:</span></span> |                                                                                  |
-| <span data-ttu-id="75138-150">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-150">Initial value:</span></span>   | <span data-ttu-id="75138-151">1</span><span class="sxs-lookup"><span data-stu-id="75138-151">1</span></span>                                                                                |
-| <span data-ttu-id="75138-152">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-152">Get command:</span></span>     | [<span data-ttu-id="75138-153">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="75138-153">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-159">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-159">Description:</span></span>     | <span data-ttu-id="87e53-160">Puntatore dello stack della matrice di Modelview</span><span class="sxs-lookup"><span data-stu-id="87e53-160">Modelview matrix stack pointer</span></span>                                                   |
+| <span data-ttu-id="87e53-161">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-161">Attribute group:</span></span> |                                                                                  |
+| <span data-ttu-id="87e53-162">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-162">Initial value:</span></span>   | <span data-ttu-id="87e53-163">1</span><span class="sxs-lookup"><span data-stu-id="87e53-163">1</span></span>                                                                                |
+| <span data-ttu-id="87e53-164">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-164">Get command:</span></span>     | [<span data-ttu-id="87e53-165">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="87e53-165">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-154"></dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>\_ \_ profondità dello stack di proiezione GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-154"></dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>GL\_PROJECTION\_STACK\_DEPTH</dt> </span></span><dd> 
+<span data-ttu-id="87e53-166"></dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>PROFONDITÀ \_ \_ DELLO STACK DI PROIEZIONE \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-166"></dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>GL\_PROJECTION\_STACK\_DEPTH</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="87e53-167">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-167">Property</span></span> | <span data-ttu-id="87e53-168">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-168">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-155">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-155">Description:</span></span>     | <span data-ttu-id="75138-156">Puntatore dello stack della matrice di proiezione</span><span class="sxs-lookup"><span data-stu-id="75138-156">Projection matrix stack pointer</span></span>                                                  |
-| <span data-ttu-id="75138-157">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-157">Attribute group:</span></span> |                                                                                  |
-| <span data-ttu-id="75138-158">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-158">Initial value:</span></span>   | <span data-ttu-id="75138-159">1</span><span class="sxs-lookup"><span data-stu-id="75138-159">1</span></span>                                                                                |
-| <span data-ttu-id="75138-160">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-160">Get command:</span></span>     | [<span data-ttu-id="75138-161">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="75138-161">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-169">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-169">Description:</span></span>     | <span data-ttu-id="87e53-170">Puntatore dello stack della matrice di proiezione</span><span class="sxs-lookup"><span data-stu-id="87e53-170">Projection matrix stack pointer</span></span>                                                  |
+| <span data-ttu-id="87e53-171">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-171">Attribute group:</span></span> |                                                                                  |
+| <span data-ttu-id="87e53-172">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-172">Initial value:</span></span>   | <span data-ttu-id="87e53-173">1</span><span class="sxs-lookup"><span data-stu-id="87e53-173">1</span></span>                                                                                |
+| <span data-ttu-id="87e53-174">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-174">Get command:</span></span>     | [<span data-ttu-id="87e53-175">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="87e53-175">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-162"></dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>\_ \_ profondità dello stack di trama GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-162"></dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>GL\_TEXTURE\_STACK\_DEPTH</dt> </span></span><dd> 
+<span data-ttu-id="87e53-176"></dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>PROFONDITÀ \_ STACK \_ TRAME GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-176"></dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>GL\_TEXTURE\_STACK\_DEPTH</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="87e53-177">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-177">Property</span></span> | <span data-ttu-id="87e53-178">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-178">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-163">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-163">Description:</span></span>     | <span data-ttu-id="75138-164">Puntatore dello stack della matrice di trama</span><span class="sxs-lookup"><span data-stu-id="75138-164">Texture matrix stack pointer</span></span>                                                     |
-| <span data-ttu-id="75138-165">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-165">Attribute group:</span></span> |                                                                                  |
-| <span data-ttu-id="75138-166">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-166">Initial value:</span></span>   | <span data-ttu-id="75138-167">1</span><span class="sxs-lookup"><span data-stu-id="75138-167">1</span></span>                                                                                |
-| <span data-ttu-id="75138-168">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-168">Get command:</span></span>     | [<span data-ttu-id="75138-169">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="75138-169">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-179">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-179">Description:</span></span>     | <span data-ttu-id="87e53-180">Puntatore dello stack della matrice di trame</span><span class="sxs-lookup"><span data-stu-id="87e53-180">Texture matrix stack pointer</span></span>                                                     |
+| <span data-ttu-id="87e53-181">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-181">Attribute group:</span></span> |                                                                                  |
+| <span data-ttu-id="87e53-182">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-182">Initial value:</span></span>   | <span data-ttu-id="87e53-183">1</span><span class="sxs-lookup"><span data-stu-id="87e53-183">1</span></span>                                                                                |
+| <span data-ttu-id="87e53-184">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-184">Get command:</span></span>     | [<span data-ttu-id="87e53-185">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="87e53-185">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-170"></dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>\_modalità matrice \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-170"></dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>GL\_MATRIX\_MODE</dt> </span></span><dd> 
+<span data-ttu-id="87e53-186"></dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>MODALITÀ \_ MATRICE GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-186"></dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>GL\_MATRIX\_MODE</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="87e53-187">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-187">Property</span></span> | <span data-ttu-id="87e53-188">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-188">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="75138-171">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-171">Description:</span></span>     | <span data-ttu-id="75138-172">Modalità matrice corrente</span><span class="sxs-lookup"><span data-stu-id="75138-172">Current matrix mode</span></span>                                                              |
-| <span data-ttu-id="75138-173">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-173">Attribute group:</span></span> | <span data-ttu-id="75138-174">trasformazione</span><span class="sxs-lookup"><span data-stu-id="75138-174">transform</span></span>                                                                        |
-| <span data-ttu-id="75138-175">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-175">Initial value:</span></span>   | <span data-ttu-id="75138-176">\_MODELVIEW GL</span><span class="sxs-lookup"><span data-stu-id="75138-176">GL\_MODELVIEW</span></span>                                                                    |
-| <span data-ttu-id="75138-177">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-177">Get command:</span></span>     | [<span data-ttu-id="75138-178">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="75138-178">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="87e53-189">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-189">Description:</span></span>     | <span data-ttu-id="87e53-190">Modalità matrice corrente</span><span class="sxs-lookup"><span data-stu-id="87e53-190">Current matrix mode</span></span>                                                              |
+| <span data-ttu-id="87e53-191">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-191">Attribute group:</span></span> | <span data-ttu-id="87e53-192">trasformazione</span><span class="sxs-lookup"><span data-stu-id="87e53-192">transform</span></span>                                                                        |
+| <span data-ttu-id="87e53-193">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-193">Initial value:</span></span>   | <span data-ttu-id="87e53-194">GL \_ MODELVIEW</span><span class="sxs-lookup"><span data-stu-id="87e53-194">GL\_MODELVIEW</span></span>                                                                    |
+| <span data-ttu-id="87e53-195">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-195">Get command:</span></span>     | [<span data-ttu-id="87e53-196">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="87e53-196">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-179"></dd> <dt><span id="GL_NORMALIZE"></span><span id="gl_normalize"></span>\_normalizzare GL</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-179"></dd> <dt><span id="GL_NORMALIZE"></span><span id="gl_normalize"></span>GL\_NORMALIZE</dt> </span></span><dd> 
+<span data-ttu-id="87e53-197"></dd> <dt><span id="GL_NORMALIZE"></span><span id="gl_normalize"></span>GL \_ NORMALIZE</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-197"></dd> <dt><span id="GL_NORMALIZE"></span><span id="gl_normalize"></span>GL\_NORMALIZE</dt> </span></span><dd> 
 
-|                  |                                     |
+| <span data-ttu-id="87e53-198">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-198">Property</span></span> | <span data-ttu-id="87e53-199">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-199">Value</span></span> |
 |------------------|-------------------------------------|
-| <span data-ttu-id="75138-180">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-180">Description:</span></span>     | <span data-ttu-id="75138-181">Normalizzazione normale corrente</span><span class="sxs-lookup"><span data-stu-id="75138-181">Current normal normalization on/off</span></span> |
-| <span data-ttu-id="75138-182">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-182">Attribute group:</span></span> | <span data-ttu-id="75138-183">trasforma/Abilita</span><span class="sxs-lookup"><span data-stu-id="75138-183">transform/enable</span></span>                    |
-| <span data-ttu-id="75138-184">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-184">Initial value:</span></span>   | <span data-ttu-id="75138-185">GL \_ false</span><span class="sxs-lookup"><span data-stu-id="75138-185">GL\_FALSE</span></span>                           |
-| <span data-ttu-id="75138-186">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-186">Get command:</span></span>     | [<span data-ttu-id="75138-187">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="75138-187">**glIsEnabled**</span></span>](glisenabled.md)  |
+| <span data-ttu-id="87e53-200">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-200">Description:</span></span>     | <span data-ttu-id="87e53-201">Normalizzazione normale corrente on/off</span><span class="sxs-lookup"><span data-stu-id="87e53-201">Current normal normalization on/off</span></span> |
+| <span data-ttu-id="87e53-202">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-202">Attribute group:</span></span> | <span data-ttu-id="87e53-203">transform/enable</span><span class="sxs-lookup"><span data-stu-id="87e53-203">transform/enable</span></span>                    |
+| <span data-ttu-id="87e53-204">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-204">Initial value:</span></span>   | <span data-ttu-id="87e53-205">GL \_ FALSE</span><span class="sxs-lookup"><span data-stu-id="87e53-205">GL\_FALSE</span></span>                           |
+| <span data-ttu-id="87e53-206">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-206">Get command:</span></span>     | [<span data-ttu-id="87e53-207">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="87e53-207">**glIsEnabled**</span></span>](glisenabled.md)  |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-188"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>\_Piano di ritaglio GL \_ *i*</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-188"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>GL\_CLIP\_PLANE *i*</dt> </span></span><dd> 
+<span data-ttu-id="87e53-208"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>GL \_ CLIP \_ PLANE *i*</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-208"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>GL\_CLIP\_PLANE *i*</dt> </span></span><dd> 
 
-|                  |                                          |
+| <span data-ttu-id="87e53-209">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-209">Property</span></span> | <span data-ttu-id="87e53-210">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-210">Value</span></span> |
 |------------------|------------------------------------------|
-| <span data-ttu-id="75138-189">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-189">Description:</span></span>     | <span data-ttu-id="75138-190">Coefficienti del piano di ritaglio utente</span><span class="sxs-lookup"><span data-stu-id="75138-190">User clipping plane coefficients</span></span>         |
-| <span data-ttu-id="75138-191">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-191">Attribute group:</span></span> | <span data-ttu-id="75138-192">trasformazione</span><span class="sxs-lookup"><span data-stu-id="75138-192">transform</span></span>                                |
-| <span data-ttu-id="75138-193">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-193">Initial value:</span></span>   | <span data-ttu-id="75138-194">0, 0, 0, 0</span><span class="sxs-lookup"><span data-stu-id="75138-194">0, 0, 0, 0</span></span>                               |
-| <span data-ttu-id="75138-195">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-195">Get command:</span></span>     | [<span data-ttu-id="75138-196">**glGetClipPlane**</span><span class="sxs-lookup"><span data-stu-id="75138-196">**glGetClipPlane**</span></span>](glgetclipplane.md) |
+| <span data-ttu-id="87e53-211">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-211">Description:</span></span>     | <span data-ttu-id="87e53-212">Coefficienti del piano di ritaglio utente</span><span class="sxs-lookup"><span data-stu-id="87e53-212">User clipping plane coefficients</span></span>         |
+| <span data-ttu-id="87e53-213">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-213">Attribute group:</span></span> | <span data-ttu-id="87e53-214">trasformazione</span><span class="sxs-lookup"><span data-stu-id="87e53-214">transform</span></span>                                |
+| <span data-ttu-id="87e53-215">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-215">Initial value:</span></span>   | <span data-ttu-id="87e53-216">0, 0, 0, 0</span><span class="sxs-lookup"><span data-stu-id="87e53-216">0, 0, 0, 0</span></span>                               |
+| <span data-ttu-id="87e53-217">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-217">Get command:</span></span>     | [<span data-ttu-id="87e53-218">**glGetClipPlane**</span><span class="sxs-lookup"><span data-stu-id="87e53-218">**glGetClipPlane**</span></span>](glgetclipplane.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="75138-197"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>\_Piano di ritaglio GL \_ *i*</dt> </span><span class="sxs-lookup"><span data-stu-id="75138-197"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>GL\_CLIP\_PLANE *i*</dt> </span></span><dd> 
+<span data-ttu-id="87e53-219"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>GL \_ CLIP \_ PLANE *i*</dt> </span><span class="sxs-lookup"><span data-stu-id="87e53-219"></dd> <dt><span id="GL_CLIP_PLANE_i"></span><span id="gl_clip_plane_i"></span><span id="GL_CLIP_PLANE_I"></span>GL\_CLIP\_PLANE *i*</dt> </span></span><dd> 
 
-|                  |                                    |
+| <span data-ttu-id="87e53-220">Proprietà</span><span class="sxs-lookup"><span data-stu-id="87e53-220">Property</span></span> | <span data-ttu-id="87e53-221">Valore</span><span class="sxs-lookup"><span data-stu-id="87e53-221">Value</span></span> |
 |------------------|------------------------------------|
-| <span data-ttu-id="75138-198">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="75138-198">Description:</span></span>     | <span data-ttu-id="75138-199">*i* TH il piano di ritaglio utente è abilitato</span><span class="sxs-lookup"><span data-stu-id="75138-199">*i* th user clipping plane enabled</span></span> |
-| <span data-ttu-id="75138-200">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="75138-200">Attribute group:</span></span> | <span data-ttu-id="75138-201">trasforma/Abilita</span><span class="sxs-lookup"><span data-stu-id="75138-201">transform/enable</span></span>                   |
-| <span data-ttu-id="75138-202">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="75138-202">Initial value:</span></span>   | <span data-ttu-id="75138-203">GL \_ false</span><span class="sxs-lookup"><span data-stu-id="75138-203">GL\_FALSE</span></span>                          |
-| <span data-ttu-id="75138-204">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="75138-204">Get command:</span></span>     | [<span data-ttu-id="75138-205">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="75138-205">**glIsEnabled**</span></span>](glisenabled.md) |
+| <span data-ttu-id="87e53-222">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="87e53-222">Description:</span></span>     | <span data-ttu-id="87e53-223">*i* th user clipping plane enabled</span><span class="sxs-lookup"><span data-stu-id="87e53-223">*i* th user clipping plane enabled</span></span> |
+| <span data-ttu-id="87e53-224">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="87e53-224">Attribute group:</span></span> | <span data-ttu-id="87e53-225">transform/enable</span><span class="sxs-lookup"><span data-stu-id="87e53-225">transform/enable</span></span>                   |
+| <span data-ttu-id="87e53-226">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="87e53-226">Initial value:</span></span>   | <span data-ttu-id="87e53-227">GL \_ FALSE</span><span class="sxs-lookup"><span data-stu-id="87e53-227">GL\_FALSE</span></span>                          |
+| <span data-ttu-id="87e53-228">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="87e53-228">Get command:</span></span>     | [<span data-ttu-id="87e53-229">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="87e53-229">**glIsEnabled**</span></span>](glisenabled.md) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
