@@ -1,9 +1,9 @@
 ---
 title: countbits (funzione)
-description: Conta il numero di bit (per componente) nell'intero di input.
+description: Conta il numero di bit (per componente) impostati nell'intero di input.
 ms.assetid: c4fafbc8-e21c-48cb-b433-8241a989ec85
 keywords:
-- funzione countbits HLSL
+- Funzione countbits HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 60d3cd63502c6217e6fb0b0ff17685b2d2b5bf25
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 357aceca6e2aea261a9e94212b58ff6308c99560
+ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045876"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107925624"
 ---
 # <a name="countbits-function"></a>countbits (funzione)
 
-Conta il numero di bit (per componente) nell'intero di input.
+Conta il numero di bit (per componente) impostati nell'intero di input.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 uint countbits(
-  in uint value
+  in uint value
 );
 ```
 
@@ -36,7 +36,7 @@ uint countbits(
 
 <dl> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -53,7 +53,7 @@ Numero di bit.
 
 ## <a name="remarks"></a>Commenti
 
-Sono disponibili anche le seguenti versioni di overload:
+Sono disponibili anche le versioni di overload seguenti:
 
 ``` syntax
 uint count_bits(uint value);
@@ -62,31 +62,31 @@ uint3 count_bits(uint3 value);
 uint4 count_bits(uint4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -95,12 +95,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,24 +1,24 @@
 ---
-description: Il formato della stringa del descrittore di sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza.
+description: Il formato di stringa del descrittore di sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza.
 ms.assetid: 0a226629-084c-40c5-bdd4-ad7355c807cf
-title: Formato stringa descrittore di sicurezza
+title: Formato della stringa del descrittore di sicurezza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f5182de796ee8d3c61f079d3704ab29ad552457
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42780c408908faf0a226584be7315ab6bf9e78e5
+ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879653"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107925684"
 ---
-# <a name="security-descriptor-string-format"></a>Formato stringa descrittore di sicurezza
+# <a name="security-descriptor-string-format"></a>Formato della stringa del descrittore di sicurezza
 
-Il **formato della stringa del descrittore di sicurezza** è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza. Le funzioni [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) e [**ConvertStringSecurityDescriptorToSecurityDescriptor ha**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) usano questo formato.
+Il **formato di stringa del descrittore di** sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza. Le [**funzioni ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) [**e ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) usano questo formato.
 
-Il formato è una stringa con terminazione **null** con token per indicare ognuno dei quattro componenti principali di un descrittore di sicurezza: Owner (O:), gruppo primario (G:), DACL (D:) e SACL (S:).
+Il formato è una stringa con terminazione **Null** con token per indicare ognuno dei quattro componenti principali di un descrittore di sicurezza: owner (O:), primary group (G:), DACL (D:) e SACL (S:).
 
 > [!Note]  
-> Le [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) e gli assi condizionali hanno formati diversi. Per le voci ACE, vedere [stringhe ACE](ace-strings.md). Per le voci ACE condizionali, vedere [Security Descriptor Definition Language per le ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md).
+> [*Le voci di controllo di*](/windows/desktop/SecGloss/a-gly) accesso (ACE) e le voci ACE condizionali hanno formati diversi. Per le voci ACE, vedere [Stringhe ACE.](ace-strings.md) Per le voci ACE condizionali, vedere [Linguaggio di definizione del descrittore di sicurezza per ACE condizionali.](security-descriptor-definition-language-for-conditional-aces-.md)
 
  
 
@@ -34,33 +34,33 @@ S:sacl_flags(string_ace1)(string_ace2)... (string_acen)
 
 <dl> <dt>
 
-<span id="owner_sid"></span><span id="OWNER_SID"></span>\_SID proprietario
+<span id="owner_sid"></span><span id="OWNER_SID"></span>owner \_ sid
 </dt> <dd>
 
-[Stringa SID](sid-strings.md) che identifica il proprietario dell'oggetto.
+Stringa [SID che](sid-strings.md) identifica il proprietario dell'oggetto.
 
 </dd> <dt>
 
-<span id="group_sid"></span><span id="GROUP_SID"></span>\_SID gruppo
+<span id="group_sid"></span><span id="GROUP_SID"></span>group \_ sid
 </dt> <dd>
 
 Stringa SID che identifica il gruppo primario dell'oggetto.
 
 </dd> <dt>
 
-<span id="dacl_flags"></span><span id="DACL_FLAGS"></span>\_flag DACL
+<span id="dacl_flags"></span><span id="DACL_FLAGS"></span>flag \_ dacl
 </dt> <dd>
 
-Flag di controllo del descrittore di sicurezza che si applicano a DACL. Per una descrizione di questi flag di controllo, vedere la funzione [**SetSecurityDescriptorControl**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol) . La \_ stringa dei flag DACL può essere una concatenazione di zero o più delle stringhe seguenti.
+Flag di controllo del descrittore di sicurezza che si applicano all'elenco DACL. Per una descrizione di questi flag di controllo, vedere la [**funzione SetSecurityDescriptorControl.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol) La stringa dei \_ flag dacl può essere una concatenazione di zero o più delle stringhe seguenti.
 
 
 
-| Control               | Costante in SDDL. h       | Significato                                       |
+| Control               | Costante in Sddl.h       | Significato                                       |
 |-----------------------|--------------------------|-----------------------------------------------|
-| P                   | SDDL \_ protetto          | \_Viene impostato il flag se il DACL \_ è protetto.          |
-| AR                  | richiesta \_ di \_ ereditarietà automatica SDDL \_ | Il \_ flag se DACL \_ auto \_ eredita automaticamente \_ è impostato. |
-| INTELLIGENZA artificiale                  | SDDL \_ automaticamente \_ ereditato    | \_ \_ Viene impostato il flag if DACL auto \_ ereditato.    |
-| "nessun \_ controllo di accesso \_ " | \_ACL null \_ SSDL          | L'ACL è null.                              |
+| "P"                   | SDDL \_ PROTECTED          | Il \_ flag SE DACL \_ PROTECTED è impostato.          |
+| "AR"                  | SDDL \_ AUTO \_ INHERIT \_ REQ | Il flag SE \_ DACL \_ AUTO INHERIT \_ \_ REQ è impostato. |
+| "AI"                  | SDDL \_ \_ EREDITATO AUTOMATICAMENTE    | Il \_ flag SE DACL \_ AUTO \_ INHERITED è impostato.    |
+| "NO \_ ACCESS \_ CONTROL" | SDDL \_ NULL \_ ACL          | L'elenco di controllo di accesso è Null.                              |
 
 
 
@@ -68,29 +68,29 @@ Flag di controllo del descrittore di sicurezza che si applicano a DACL. Per una 
 
 </dd> <dt>
 
-<span id="sacl_flags"></span><span id="SACL_FLAGS"></span>\_flag SACL
+<span id="sacl_flags"></span><span id="SACL_FLAGS"></span>flag \_ sacl
 </dt> <dd>
 
-Flag di controllo del descrittore di sicurezza che si applicano all'elenco SACL. La \_ stringa di flag SACL usa le stesse stringhe di bit del controllo della \_ stringa dei flag DACL.
+Flag di controllo del descrittore di sicurezza che si applicano all'elenco sacl. La stringa dei flag sacl \_ usa le stesse stringhe di bit di controllo della stringa dei flag dacl. \_
 
 </dd> <dt>
 
-<span id="string_ace"></span><span id="STRING_ACE"></span>\_ACE stringa
+<span id="string_ace"></span><span id="STRING_ACE"></span>string \_ ace
 </dt> <dd>
 
-Stringa che descrive una voce ACE nel DACL o nel SACL del descrittore di sicurezza. Per una descrizione del formato di stringa ACE, vedere [stringhe ACE](ace-strings.md). Ogni stringa ACE è racchiusa tra parentesi (()).
+Stringa che descrive una ACE nell'elenco DACL o SACL del descrittore di sicurezza. Per una descrizione del formato stringa ACE, vedere [Stringhe ACE](ace-strings.md). Ogni stringa ACE è racchiusa tra parentesi (()).
 
 </dd> </dl>
 
-I componenti non necessari possono essere omessi dalla stringa del descrittore di sicurezza. Se, ad esempio, il \_ flag di presenza DACL se \_ non è impostato nel descrittore di sicurezza di input, [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) non include un componente D: nella stringa di output. È anche possibile usare i flag di bit per [**\_ informazioni di sicurezza**](security-information.md) per indicare i componenti da includere in una stringa del descrittore di sicurezza.
+I componenti non necessari possono essere omessi dalla stringa del descrittore di sicurezza. Ad esempio, se il flag SE DACL PRESENT non è impostato nel descrittore di sicurezza di \_ \_ input, [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) non include un componente D: nella stringa di output. È anche possibile usare i flag di bit [**SECURITY \_ INFORMATION**](security-information.md) per indicare i componenti da includere in una stringa del descrittore di sicurezza.
 
-Il formato della stringa del descrittore di sicurezza non supporta ACL **null** .
+Il formato della stringa del descrittore di sicurezza non supporta **gli ACL NULL.**
 
 Per indicare un ACL vuoto, la stringa del descrittore di sicurezza include il token D: o S: senza informazioni aggiuntive sulla stringa.
 
-La stringa del descrittore di sicurezza archivia i bit del [**controllo DEscrittore di sicurezza**](security-descriptor-control.md) in modi diversi. I \_ bit del DACL se \_ presente o se i \_ SACL \_ presenti sono indicati dalla presenza del token D: o S: nella stringa. Altri bit che si applicano a DACL o SACL sono archiviati in \_ flag DACL e \_ flag SACL. Il proprietario SE è stato impostato come predefinito \_ \_ , se il \_ gruppo se \_ è impostato come predefinito, se \_ DACL \_ è impostato come predefinito e se \_ \_ il SACL è impostato come predefinito, i bit non vengono archiviati in una stringa descrittore Il \_ bit se self \_ relativa non è archiviato nella stringa, ma [**ConvertStringSecurityDescriptorToSecurityDescriptor ha**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) imposta sempre questo bit nel descrittore di sicurezza di output.
+La stringa del descrittore di sicurezza archivia i bit [**SECURITY DESCRIPTOR CONTROL**](security-descriptor-control.md) in modi diversi. I bit SE DACL PRESENT o SE SACL PRESENT sono indicati dalla presenza del token D: o \_ \_ \_ \_ S: nella stringa. Altri bit che si applicano a DACL o SACL vengono archiviati in flag dacl \_ e flag \_ sacl. I bit SE \_ OWNER \_ DEFAULTED, SE \_ GROUP \_ DEFAULTED, SE DACL DEFAULTED e SE SACL DEFAULTED non vengono archiviati in una \_ \_ stringa del \_ \_ descrittore di sicurezza. Il bit SE SELF RELATIVE non viene archiviato nella stringa, ma \_ \_ [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) imposta sempre questo bit nel descrittore di sicurezza di output.
 
-Negli esempi seguenti vengono illustrate le stringhe del descrittore di sicurezza e le informazioni nei descrittori di sicurezza associati.
+Negli esempi seguenti vengono mostrate le stringhe dei descrittori di sicurezza e le informazioni nei descrittori di sicurezza associati.
 
 Stringa 1:
 
@@ -257,7 +257,7 @@ DACL
 [Stringhe ACE](ace-strings.md)
 </dt> <dt>
 
-[Linguaggio di definizione del descrittore di sicurezza per le voci](security-descriptor-definition-language-for-conditional-aces-.md)
+[Linguaggio di definizione del descrittore di sicurezza per ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md)
 </dt> </dl>
 
  
