@@ -1,28 +1,28 @@
 ---
-description: Questa proprietà viene utilizzata per segnalare la versione della proprietà rate Change impostata che il decodificatore deve utilizzare.
+description: Questa proprietà viene usata per segnalare quale versione del set di proprietà Rate Change deve essere usata dal decodificatore.
 ms.assetid: 49d1bfda-749b-4614-9a75-1f76fa8b320d
-title: Proprietà AM_RATE_UseRateVersion (dvdmedia. h)
+title: AM_RATE_UseRateVersion proprietà (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab609d2d38dc28257d13994e6cd464094b714be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4dd33ef96c50ecc3da0711f08f0c7ffbf0a20825
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330322"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910219"
 ---
-# <a name="am_rate_userateversion-property"></a>\_Proprietà rate \_ UseRateVersion
+# <a name="am_rate_userateversion-property"></a>Proprietà \_ Am RATE \_ UseRateVersion
 
-Questa proprietà viene utilizzata per segnalare la versione della proprietà rate Change impostata che il decodificatore deve utilizzare. Il valore è un tipo di **parola** . Il byte di ordine superiore contiene il numero di versione secondario e il byte di ordine inferiore contiene il byte di ordine inferiore. Quindi, la versione 1,1 viene segnalata con il valore 0x0101.
+Questa proprietà viene usata per segnalare quale versione del set di proprietà Rate Change deve essere usata dal decodificatore. Il valore è di **tipo WORD.** Il byte più significativo contiene il numero di versione secondaria e il byte meno significativo contiene il byte meno significativo. La versione 1.1 viene quindi segnalata con il valore 0x0101.
 
-Se il decodificatore non supporta la versione specificata, deve avere esito negativo la chiamata a [**IKsPropertySet:: set**](ikspropertyset-set.md) E restituire e \_ nointerface. Se il filtro di origine non imposta la versione, il decodificatore deve avere come valore predefinito la versione 1,0.
+Se il decodificatore non supporta la versione specificata, dovrebbe non riuscire la chiamata a [**IKsPropertySet::Set**](ikspropertyset-set.md) e restituire E \_ NOINTERFACE. Se il filtro di origine non imposta la versione, per impostazione predefinita il decodificatore deve essere la versione 1.0.
 
 
 
-|                   |                               |
+| Label | Valore |
 |-------------------|-------------------------------|
-| GUID set di proprietà | \_TSRateChange KSPROPSETID \_ |
-| ID proprietà       | \_Frequenza \_ UseRateVersion      |
+| GUID set di proprietà | AM \_ KSPROPSETID \_ TSRateChange |
+| ID proprietà       | AM \_ RATE \_ UseRateVersion      |
 | Tipo di dati         | **WORD**                      |
 
 
@@ -35,7 +35,7 @@ Se il decodificatore non supporta la versione specificata, deve avere esito nega
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Se il decodificatore non supporta la versione specificata, deve avere esito nega
 
 <dl> <dt>
 
-[**Set di proprietà di modifica della frequenza**](rate-change-property-set.md)
+[**Rate Change Property Set**](rate-change-property-set.md)
 </dt> </dl>
 
  

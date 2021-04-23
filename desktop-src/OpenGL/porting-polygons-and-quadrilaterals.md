@@ -1,52 +1,52 @@
 ---
 title: Porting di poligoni e quadrilateri
-description: 'Quando si portano poligoni e quadrilateri, tenere presenti i seguenti aspetti:'
+description: Tenere presente quanto segue durante la portabilità di poligoni e quadrilateri
 ms.assetid: 2b752437-caf9-4336-a906-d06b2aa8bb04
 keywords:
-- Porting di IRIS GL, quadrilateri
-- porting da IRIS GL, quadrilateri
-- porting in OpenGL da IRIS GL, quadrilateri
-- Porting OpenGL da IRIS GL, quadrilateri
-- funzioni di disegno, quadrilateri
-- quadrilateri
-- Porting di IRIS GL, poligoni
+- Portabilità IRIS GL, quadrilaterali
+- porting da IRIS GL, quadrilaterali
+- porting to OpenGL from IRIS GL,quadrilaterals
+- Portabilità OpenGL da IRIS GL, quadrilaterali
+- funzioni di disegno, quadrilaterali
+- Quadrilateri
+- Portabilità IRIS GL, poligoni
 - porting da IRIS GL, poligoni
-- porting in OpenGL da IRIS GL, poligoni
-- Porting OpenGL da IRIS GL, poligoni
+- porting to OpenGL from IRIS GL,polygons
+- Portabilità OpenGL da IRIS GL, poligoni
 - funzioni di disegno, poligoni
 - poligoni, porting da IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c95d654b101c5eeb86cfcc4ea342e8196b8749e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7900b44051cab9590be11198c8b01af0b7c10244
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712502"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908459"
 ---
 # <a name="porting-polygons-and-quadrilaterals"></a>Porting di poligoni e quadrilateri
 
-Quando si portano poligoni e quadrilateri, tenere presenti i seguenti aspetti:
+Quando si esegue la portabilità di poligoni e quadrilateri, tenere presente quanto segue:
 
--   Non esiste un equivalente diretto per **concavo**(**true**). È invece possibile usare le routine a mosaico in GLU, descritte in [poligoni tessellating](tessellating-polygons.md).
+-   Non esiste alcun equivalente diretto per **concave**(**TRUE**). È invece possibile usare le routine a tessellazione in GLU, descritte in [Tessellating Polygons](tessellating-polygons.md).
 -   Le modalità poligono sono impostate in modo diverso.
--   Queste funzioni di disegno Polygon non hanno equivalenti diretti in OpenGL: la famiglia **Poly** di routine; famiglia di routine **POLF** . **PMV**, **PDR** e **PCLOS**; **rpmv** e **rpdr**; **splf**; e **spclos**.
+-   Queste funzioni di disegno poligono non hanno equivalenti diretti in OpenGL: la **famiglia** poli di routine; la famiglia di routine **polf;** **pmv**, **pdr** e **pclos**; **rpmv** e **rpdr**; **splf**; e **spclos**.
 
-Se il codice di IRIS GL usa queste funzioni, sarà necessario riscrivere il codice usando [**glBegin**](glbegin.md)(GL \_ Polygon).
+Se il codice IRIS GL usa queste funzioni, sarà necessario riscrivere il codice usando [**glBegin**](glbegin.md)( GL \_ POLYGON ).
 
-La tabella seguente elenca le funzioni di disegno del poligono IRIS GL e le relative funzioni OpenGL equivalenti.
+Nella tabella seguente sono elencate le funzioni di disegno poligono IRIS GL e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL         | OpenGL (funzione)                                                    | Significato                                                 |
+| Funzione GL IRIS         | Funzione OpenGL                                                    | Significato                                                 |
 |--------------------------|--------------------------------------------------------------------|---------------------------------------------------------|
-| **bgnpolygonendpolygon** | [**glBegin**](glbegin.md) ( \_ poligono GL)[**glEnd**](glend.md)   | I vertici definiscono il limite di un poligono convesso semplice.    |
-|                          | **glBegin**(GL \_ quad)**glEnd**<br/>                       | Interpreta le quadruple dei vertici come quadrilateri.    |
-| **bgnqstripendqstrip**   | [**glBegin**](glbegin.md) (GL \_ Quad \_ Strip)**glEnd**<br/> | Interpreta i vertici come strisce collegate di quadrilateri. |
+| **bgnpolygonendpolygon** | [**glBegin**](glbegin.md) ( GL \_ POLYGON )[**glEnd**](glend.md)   | I vertici definiscono il limite di un poligono convesso semplice.    |
+|                          | **glBegin**( GL \_ QUADS )**glEnd**<br/>                       | Interpreta i quadrilateri dei vertici come quadrilaterali.    |
+| **bgnqstripendqstrip**   | [**glBegin**](glbegin.md) ( GL \_ QUAD STRIP ) \_ **glEnd**<br/> | Interpreta i vertici come strisce collegate di quadrilaterali. |
 |                          | [glEdgeFlag](gledgeflag-functions.md)                             |                                                         |
-| **modalità multifunzione**             | [**glPolygonMode**](glpolygonmode.md)                             | Imposta la modalità di disegno poligono.                              |
+| **polymode**             | [**glPolygonMode**](glpolygonmode.md)                             | Imposta la modalità di disegno poligono.                              |
 | **rectrectf**<br/> | [glRect](glrect-functions.md)                                     | Disegna un rettangolo.                                      |
-| **sboxsboxf**<br/> |                                                                    | Disegna un rettangolo allineato allo schermo.                       |
+| **sboxsboxf**<br/> |                                                                    | Disegna un rettangolo allineato a schermo.                       |
 
 
 
@@ -54,71 +54,71 @@ La tabella seguente elenca le funzioni di disegno del poligono IRIS GL e le rela
 
 ??
 
-## <a name="porting-polygon-modes"></a>Modalità poligono di porting
+## <a name="porting-polygon-modes"></a>Portabilità delle modalità poligono
 
-La funzione OpenGL [**glPolygonMode**](glpolygonmode.md) consente di specificare il lato di un poligono (back o front) a cui si applica la modalità. La relativa sintassi è la seguente:
+La funzione OpenGL [**glPolygonMode**](glpolygonmode.md) consente di specificare a quale lato di un poligono (la parte posteriore o anteriore) si applica la modalità. La relativa sintassi è la seguente:
 
 ``` syntax
 void glPolygonMode( GLenum face, GLenum mode ); 
  
 ```
 
-dove Face è uno dei seguenti:
+dove face è uno dei seguenti:
 
 
 
-|                      |                                                            |
+|Valore GLenum                      |  Significato                                                          |
 |----------------------|------------------------------------------------------------|
-| \_primo piano GL            | modalità che si applica ai poligoni in primo piano                |
-| indietro per GL \_             | modalità applicabile ai poligoni sottoposti a back-end                 |
-| \_primo \_ e \_ indietro GL | modalità che si applica sia ai poligoni anteriori che al back-end |
+| GL \_ FRONT            | modalità che si applica ai poligoni rivolti anteriore                |
+| GL \_ BACK             | modalità che si applica ai poligoni rivolti all'indietro                 |
+| GL \_ FRONT \_ AND \_ BACK | modalità che si applica sia ai poligoni anteriore che a quello posteriore |
 
 
 
  
 
-La \_ modalità Front \_ e \_ back GL è equivalente alla funzione di **polimodalità** di Iris GL. La tabella seguente elenca le modalità poligono di IRIS GL e le modalità OpenGL equivalenti.
+La modalità \_ GL FRONT E BACK è equivalente alla funzione \_ \_ **polimode** IRIS GL. La tabella seguente elenca le modalità poligono IRIS GL e le modalità OpenGL equivalenti.
 
 
 
-| Modalità di IRIS GL | Modalità OpenGL | Significato                                       |
+| Modalità GL IRIS | Modalità OpenGL | Significato                                       |
 |--------------|-------------|-----------------------------------------------|
-| punto di PYM \_   | \_punto GL   | Disegna i vertici come punti.                     |
-| \_linea Pym    | \_linea GL    | Disegna i bordi del limite come segmenti di linea.        |
-| \_riempimento Pym    | \_riempimento GL    | Disegna il riempimento interno del poligono.                |
-| PYM \_ Hollow  |             | Riempie solo i pixel interni ai limiti. |
+| PYM \_ POINT   | PUNTO \_ GL   | Disegna i vertici come punti.                     |
+| PYM \_ LINE    | GL \_ LINE    | Disegna i bordi dei limiti come segmenti di linea.        |
+| RIEMPIMENTO \_ PYM    | GL \_ FILL    | Disegna il riempimento interno del poligono.                |
+| PYM \_ INSODEME  |             | Riempie solo i pixel interni ai limiti. |
 
 
 
  
 
-## <a name="porting-polygon-stipples"></a>Porting poligono Stipples
+## <a name="porting-polygon-stipples"></a>Porting Polygon Stipples
 
-Quando si esegue il porting di IRIS GL Polygon stipples, tenere presente quanto segue:
+Quando si esegue il porting degli stipple poligoni IRIS GL, tenere presenti i punti seguenti:
 
--   OpenGL non usa le tabelle per poligono stipples; viene mantenuto solo un modello stipple. È possibile usare gli elenchi di visualizzazione per archiviare modelli stipple diversi.
--   La dimensione bitmap stipple del poligono OpenGL è sempre un modello di bit 32x32.
--   La codifica stipple è interessata da [**glPixelStore**](glpixelstore-functions.md).
+-   OpenGL non usa tabelle per gli stipples poligonali. viene mantenuto un solo modello di punta. È possibile usare elenchi di visualizzazione per archiviare modelli di stili diversi.
+-   La dimensione della bitmap dello stipple poligono OpenGL è sempre un modello a 32x32 bit.
+-   La codifica Stipple è interessata [**da glPixelStore**](glpixelstore-functions.md).
 
-Per altre informazioni sul porting del poligono stipples, vedere [porting pixel Operations](porting-pixel-operations.md).
+Per altre informazioni sul porting degli stipples poligoni, vedere Porting Pixel Operations ( [Porting Pixel Operations](porting-pixel-operations.md)).
 
-La tabella seguente elenca le funzioni stipple di IRIS GL Polygon e le relative funzioni OpenGL equivalenti.
+Nella tabella seguente sono elencate le funzioni di punta del poligono IRIS GL e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL | OpenGL (funzione)                                    | Significato                                               |
+| Funzione GL IRIS | Funzione OpenGL                                    | Significato                                               |
 |------------------|----------------------------------------------------|-------------------------------------------------------|
-| **defpattern**   | [**glPolygonStipple**](glpolygonstipple.md)       | Imposta il pattern stipple.                             |
-| **criteri di ricerca**   |                                                    | OpenGL mantiene solo un modello stipple poligono.        |
-| **GetPattern**   | [**glGetPolygonStipple**](glgetpolygonstipple.md) | Restituisce la bitmap stipple (utilizzata per restituire un indice). |
+| **defpattern**   | [**glPolygonStipple**](glpolygonstipple.md)       | Imposta il modello di stipla.                             |
+| **setpattern**   |                                                    | OpenGL mantiene un solo motivo a punta poligono.        |
+| **Getpattern**   | [**glGetPolygonStipple**](glgetpolygonstipple.md) | Restituisce la bitmap stipple (usata per restituire un indice). |
 
 
 
  
 
-In OpenGL è possibile abilitare e disabilitare poligono punteggiatura passando GL \_ Polygon \_ stipple come parametro per [**glEnable**](glenable.md) e [**glDisable**](gldisable.md).
+In OpenGL si abilita e disabilita lo stippling dei poligoni passando GL POLYGON STIPPLE come parametro \_ \_ per [**glEnable**](glenable.md) e [**glDisable.**](gldisable.md)
 
-Nell'esempio di codice OpenGL seguente viene illustrato il poligono punteggiatura:
+L'esempio di codice OpenGL seguente illustra lo stippling dei poligoni:
 
 
 ```C++
@@ -182,27 +182,27 @@ void display(void)
 
 
 
-## <a name="porting-tessellated-polygons"></a>Porting di poligoni tassellati
+## <a name="porting-tessellated-polygons"></a>Portabilità di poligoni a tessellatura
 
-In IRIS GL usare **concavo**(**true**) e quindi **bgnpolygon** per creare poligoni concavi. OpenGL GLU include funzioni che è possibile usare per creare poligoni concavi.
+In IRIS GL si usa **concave**(**TRUE**) e quindi **bgnpolygon** per disegnare poligoni concavi. OpenGL GLU include funzioni che è possibile usare per disegnare poligoni concavi.
 
-**Per creare un poligono concavo con OpenGL**
+**Per disegnare un poligono concavo con OpenGL**
 
-1.  Creare un oggetto a mosaico.
-2.  Definire callback che saranno usati per elaborare i triangoli generati da mosaico.
-3.  Specificare il Poligono concavo da tassellati.
+1.  Creare un oggetto a tessellazione.
+2.  Definire i callback che verranno usati per elaborare i triangoli generati dal tessellatore.
+3.  Specificare il poligono concavo da a tessire.
 
-La tabella seguente elenca le funzioni OpenGL per il disegno di poligoni tassellati.
+Nella tabella seguente sono elencate le funzioni OpenGL per il disegno di poligoni a colonne.
 
 
 
-| Funzione OpenGL GLU                        | Significato                                                            |
+| Funzione GLU OpenGL                        | Significato                                                            |
 |--------------------------------------------|--------------------------------------------------------------------|
-| [**gluNewTess**](glunewtess.md)           | Crea un nuovo oggetto a mosaico.                                 |
-| [**gluDeleteTess**](gludeletetess.md)     | Elimina un oggetto a mosaico.                                     |
+| [**gluNewTess**](glunewtess.md)           | Crea un nuovo oggetto a tessellazione.                                 |
+| [**gluDeleteTess**](gludeletetess.md)     | Elimina un oggetto a tessellazione.                                     |
 | [*gluTessCallback*](glutess.md)           |                                                                    |
-| [**gluBeginPolygon**](glubeginpolygon.md) | Inizia la specifica del poligono.                                  |
-| [**gluTessVertex**](glutessvertex.md)     | Specifica un vertice del poligono in un contorno.                           |
+| [**gluBeginPolygon**](glubeginpolygon.md) | Avvia la specifica del poligono.                                  |
+| [**gluTessVertex**](glutessvertex.md)     | Specifica un vertice poligonale in un contorno.                           |
 | [**gluNextContour**](glunextcontour.md)   | Indica che la serie successiva di vertici descrive un nuovo contorno. |
 | [**gluEndPolygon**](gluendpolygon.md)     | Termina la specifica del poligono.                                    |
 

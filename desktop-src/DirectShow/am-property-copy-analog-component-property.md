@@ -1,27 +1,27 @@
 ---
-description: Esegue una query per verificare se l'output del video è una definizione standard, ovvero un video componente analogico.
+description: Esegue una query per determinare se l'output video è di definizione standard, video con componente analogico.
 ms.assetid: bd4fc5bc-c45d-4228-9759-6300fdfff6a0
-title: Proprietà AM_PROPERTY_COPY_ANALOG_COMPONENT (dvdmedia. h)
+title: AM_PROPERTY_COPY_ANALOG_COMPONENT proprietà (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f3998156bf372c39018aa73ba30a661117519c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6448bfbcc07be6ca37189c15c7c605887e6d22b3
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330338"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910309"
 ---
-# <a name="am_property_copy_analog_component-property"></a>\_Proprietà del \_ \_ componente analogico \_ Copia proprietà am
+# <a name="am_property_copy_analog_component-property"></a>AM \_ PROPERTY \_ COPY \_ ANALOG \_ COMPONENT Property
 
-Esegue una query per verificare se l'output del video è una definizione standard, ovvero un video componente analogico.
+Esegue una query per determinare se l'output video è di definizione standard, video con componente analogico.
 
 
 
-|                   |                                       |
+| Label | Valore |
 |-------------------|---------------------------------------|
-| GUID set di proprietà | \_CopyProt KSPROPSETID \_             |
-| ID proprietà       | \_ \_ \_ componente analogico copia proprietà \_ am |
-| Tipo di dati         | **ULONG**                             |
+| GUID set di proprietà | AM \_ KSPROPSETID \_ CopyProt             |
+| ID proprietà       | AM \_ PROPERTY \_ COPY \_ ANALOG \_ COMPONENT |
+| Tipo di dati         | **Ulong**                             |
 
 
 
@@ -31,7 +31,7 @@ Esegue una query per verificare se l'output del video è una definizione standar
 
 Questa proprietà è di sola lettura.
 
-Il valore della proprietà è **true** se l'output del video è un video di componente analogico con una risoluzione non superiore a 480p per NTSC o 540P per PAL. In caso contrario, il valore è **false**.
+Il valore della proprietà è **TRUE** se l'output video è un video con componente analogico con una risoluzione non superiore a 480p per NTSC o 540p per PAL. In caso contrario, il valore è **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Il valore della proprietà è **true** se l'output del video è un video di comp
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Il valore della proprietà è **true** se l'output del video è un video di comp
 
 <dl> <dt>
 
-[**Set di proprietà di protezione copia DVD**](dvd-copy-protection-property-set.md)
+[**Set di proprietà protezione copia DVD**](dvd-copy-protection-property-set.md)
 </dt> </dl>
 
  

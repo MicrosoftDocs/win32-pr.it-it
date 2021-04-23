@@ -1,26 +1,26 @@
 ---
-description: Il navigatore DVD usa questa proprietà per informare il decodificatore che lo strumento di navigazione sta impostando i timestamp corretti sugli esempi che recapita al decodificatore.
+description: Lo strumento di navigazione DVD usa questa proprietà per informare il decodificatore che lo Strumento di navigazione sta impostando i timestamp corretti nei campioni che recapita al decodificatore.
 ms.assetid: f04e8291-734f-483e-b756-5362beb68d9c
-title: Proprietà AM_RATE_CorrectTS (dvdmedia. h)
+title: AM_RATE_CorrectTS proprietà (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa410b079d3de63de364662c7d5465c82814d24a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15c65b613f892708dc210af2ca2a05efb74785fb
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330336"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910299"
 ---
-# <a name="am_rate_correctts-property"></a>\_Proprietà rate \_ corrects
+# <a name="am_rate_correctts-property"></a>Am \_ RATE \_ CorrectTS - proprietà
 
-Il navigatore DVD usa questa proprietà per informare il decodificatore che lo strumento di navigazione sta impostando i timestamp corretti sugli esempi che recapita al decodificatore.
+Lo strumento di navigazione DVD usa questa proprietà per informare il decodificatore che lo Strumento di navigazione sta impostando i timestamp corretti nei campioni che recapita al decodificatore.
 
 
 
-|                   |                               |
+| Label | Valore |
 |-------------------|-------------------------------|
-| GUID set di proprietà | \_TSRateChange KSPROPSETID \_ |
-| ID proprietà       | \_Correttivi della velocità am \_           |
+| GUID set di proprietà | AM \_ KSPROPSETID \_ TSRateChange |
+| ID proprietà       | AM \_ RATE \_ CorrectTS           |
 | Tipo di dati         | **LONG**                      |
 
 
@@ -29,9 +29,9 @@ Il navigatore DVD usa questa proprietà per informare il decodificatore che lo s
 
 ## <a name="remarks"></a>Commenti
 
-Le versioni precedenti di DVD Navigator non impostano i timestamp corretti quando la velocità di riproduzione è diversa da 1,0. Molti decodificatori aggirano questo problema ignorando gli indicatori temporali durante il rewind o l'avanzamento rapido e stimando i tempi di presentazione corretti.
+Le versioni precedenti dello strumento di spostamento DVD non impostano i timestamp corretti quando la velocità di riproduzione è diversa da 1.0. Molti decodificatori rilascino questo problema ignorando i timestamp durante il riavvolgimento o l'avanzamento rapido e stimando i tempi di presentazione corretti.
 
-Questi problemi sono stati corretti nella versione corrente del navigatore DVD. Per la compatibilità con le versioni precedenti dei decodificatori esistenti, il navigatore DVD indica che i timestamp sono corretti impostando la \_ Proprietà am rate \_ corrects nel decodificatore con il valore **true**. Quando questa proprietà è impostata, il decodificatore deve utilizzare i timestamp effettivi anziché stimare i tempi di presentazione.
+Questi problemi sono stati corretti nella versione corrente dello Strumento di navigazione DVD. Per garantire la compatibilità con le versioni precedenti dei decodificatori esistenti, lo strumento di spostamento DVD indica che i timestamp sono corretti impostando la proprietà AM RATE CorrectTS sul decodificatore con il \_ \_ valore **TRUE**. Quando questa proprietà è impostata, il decodificatore deve usare i timestamp effettivi anziché stimare l'ora di presentazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Questi problemi sono stati corretti nella versione corrente del navigatore DVD. 
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Questi problemi sono stati corretti nella versione corrente del navigatore DVD. 
 
 <dl> <dt>
 
-[**Set di proprietà di modifica della frequenza**](rate-change-property-set.md)
+[**Rate Change Property Set**](rate-change-property-set.md)
 </dt> </dl>
 
  

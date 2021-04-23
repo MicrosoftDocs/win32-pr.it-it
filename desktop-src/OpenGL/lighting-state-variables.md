@@ -12,122 +12,122 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa7144e284b5be5abd5a6dc4e08fe2228b621465
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 3c5a2d029727f4ff4a9eee353230e0843a39f082
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857398"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909849"
 ---
 # <a name="lighting-state-variables"></a>Variabili di stato di illuminazione
 
-<dl> <dt><span id="GL_LIGHTING"></span><span id="gl_lighting"></span>\_illuminazione GL</dt> <dd> 
+<dl> <dt><span id="GL_LIGHTING"></span><span id="gl_lighting"></span>ILLUMINAZIONE \_ GL</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
 | Descrizione:     | True se l'illuminazione è abilitata        |
 | Gruppo di attributi: | illuminazione/abilitazione                    |
-| Valore iniziale:   | GL \_ false                          |
+| Valore iniziale:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_COLOR_MATERIAL"></span><span id="gl_color_material"></span>\_materiale colore \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_MATERIAL"></span><span id="gl_color_material"></span>MATERIALE COLORE GL \_ \_</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | True se è abilitata la verifica dei colori  |
+| Descrizione:     | True se il rilevamento dei colori è abilitato  |
 | Gruppo di attributi: | illuminazione                           |
-| Valore iniziale:   | GL \_ false                          |
+| Valore iniziale:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_COLOR_MATERIAL_PARAMETER"></span><span id="gl_color_material_parameter"></span>\_parametro del \_ materiale \_ colore GL</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_MATERIAL_PARAMETER"></span><span id="gl_color_material_parameter"></span>PARAMETRO DEL MATERIALE COLORE GL \_ \_ \_</dt> <dd> 
 
-|                  |                                                                                  |
+| Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | Proprietà materiali che verificano il colore corrente                                       |
+| Descrizione:     | Proprietà dei materiali che tracciano il colore corrente                                       |
 | Gruppo di attributi: | illuminazione                                                                         |
-| Valore iniziale:   | \_ambiente GL \_ e \_ diffusa                                                        |
+| Valore iniziale:   | GL \_ AMBIENTE \_ E \_ DIFFUSIONE                                                        |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_COLOR_MATERIAL_FACE"></span><span id="gl_color_material_face"></span>\_ \_ aspetto materiale colore \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_MATERIAL_FACE"></span><span id="gl_color_material_face"></span>GL \_ COLOR \_ MATERIAL \_ FACE</dt> <dd> 
 
-|                  |                                                                                  |
+| Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
 | Descrizione:     | Visi interessati dal rilevamento dei colori                                                 |
 | Gruppo di attributi: | illuminazione                                                                         |
-| Valore iniziale:   | \_primo \_ e \_ indietro GL                                                             |
+| Valore iniziale:   | GL \_ FRONT \_ AND \_ BACK                                                             |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_AMBIENT"></span><span id="gl_ambient"></span>\_ambiente GL</dt> <dd> 
+</dd> <dt><span id="GL_AMBIENT"></span><span id="gl_ambient"></span>AMBIENTE \_ GL</dt> <dd> 
 
-|                  |                                          |
+| Proprietà | Valore |
 |------------------|------------------------------------------|
-| Descrizione:     | Colore materiale ambiente                   |
+| Descrizione:     | Colore materiale ambientale                   |
 | Gruppo di attributi: | illuminazione                                 |
-| Valore iniziale:   | (0.2, 0.2, 0.2, 1.0)                        |
+| Valore iniziale:   | (0.2,0.2,0.2,1.0)                        |
 | Comando Get:     | [**glGetMaterialfv**](glgetmaterial.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_DIFFUSE"></span><span id="gl_diffuse"></span>GL \_ diffuse</dt> <dd> 
+</dd> <dt><span id="GL_DIFFUSE"></span><span id="gl_diffuse"></span>GL \_ DIFFUSE</dt> <dd> 
 
-|                  |                                          |
+| Proprietà | Valore |
 |------------------|------------------------------------------|
 | Descrizione:     | Colore materiale diffuso                   |
 | Gruppo di attributi: | illuminazione                                 |
-| Valore iniziale:   | (0.8, 0.8, 0.8, 1.0)                        |
+| Valore iniziale:   | (0.8,0.8,0.8,1.0)                        |
 | Comando Get:     | [**glGetMaterialfv**](glgetmaterial.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SPECULAR"></span><span id="gl_specular"></span>\_speculare GL</dt> <dd> 
+</dd> <dt><span id="GL_SPECULAR"></span><span id="gl_specular"></span>GL \_ SPECULAR</dt> <dd> 
 
-|                  |                                          |
+| Proprietà | Valore |
 |------------------|------------------------------------------|
-| Descrizione:     | Colore materiale speculare                  |
+| Descrizione:     | Colore del materiale speculare                  |
 | Gruppo di attributi: | illuminazione                                 |
-| Valore iniziale:   | (0.0, 0.0, 0.0, 1.0)                        |
+| Valore iniziale:   | (0.0,0.0,0.0,1.0)                        |
 | Comando Get:     | [**glGetMaterialfv**](glgetmaterial.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_EMISSION"></span><span id="gl_emission"></span>\_emissione GL</dt> <dd> 
+</dd> <dt><span id="GL_EMISSION"></span><span id="gl_emission"></span>EMISSIONE \_ GL</dt> <dd> 
 
-|                  |                                          |
+| Proprietà | Valore |
 |------------------|------------------------------------------|
 | Descrizione:     | Colore materiale emissivo                  |
 | Gruppo di attributi: | illuminazione                                 |
-| Valore iniziale:   | (0.0, 0.0, 0.0, 1.0)                        |
+| Valore iniziale:   | (0.0,0.0,0.0,1.0)                        |
 | Comando Get:     | [**glGetMaterialfv**](glgetmaterial.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SHININESS"></span><span id="gl_shininess"></span>\_lucentezza GL</dt> <dd> 
+</dd> <dt><span id="GL_SHININESS"></span><span id="gl_shininess"></span>GL \_ SHININESS</dt> <dd> 
 
-|                  |                                          |
+| Proprietà | Valore |
 |------------------|------------------------------------------|
 | Descrizione:     | Esponente speculare del materiale            |
 | Gruppo di attributi: | illuminazione                                 |
@@ -136,63 +136,63 @@ ms.locfileid: "103857398"
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LIGHT_MODEL_AMBIENT"></span><span id="gl_light_model_ambient"></span>\_ \_ ambiente modello di luce GL \_</dt> <dd> 
+</dd> <dt><span id="GL_LIGHT_MODEL_AMBIENT"></span><span id="gl_light_model_ambient"></span>AMBIENTE \_ DEL \_ MODELLO \_ GL LIGHT</dt> <dd> 
 
-|                  |                                                                                |
+| Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | Colore della scena ambiente                                                            |
+| Descrizione:     | Colore della scena di ambiente                                                            |
 | Gruppo di attributi: | illuminazione                                                                       |
-| Valore iniziale:   | (0.2, 0.2, 0.2, 1.0)                                                              |
+| Valore iniziale:   | (0.2,0.2,0.2,1.0)                                                              |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LIGHT_MODEL_LOCAL_VIEWER"></span><span id="gl_light_model_local_viewer"></span>\_ \_ \_ Visualizzatore locale del modello GL Light \_</dt> <dd> 
+</dd> <dt><span id="GL_LIGHT_MODEL_LOCAL_VIEWER"></span><span id="gl_light_model_local_viewer"></span>GL \_ LIGHT \_ MODEL \_ LOCAL \_ VIEWER</dt> <dd> 
 
-|                  |                                                                                  |
+| Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | Visualizzatore locale                                                                  |
+| Descrizione:     | Il visualizzatore è locale                                                                  |
 | Gruppo di attributi: | illuminazione                                                                         |
-| Valore iniziale:   | GL \_ false                                                                        |
+| Valore iniziale:   | GL \_ FALSE                                                                        |
 | Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LIGHT_MODEL_TWO_SIDE"></span><span id="gl_light_model_two_side"></span>\_modello GL Light \_ Two- \_ \_ Side</dt> <dd> 
+</dd> <dt><span id="GL_LIGHT_MODEL_TWO_SIDE"></span><span id="gl_light_model_two_side"></span>GL \_ LIGHT \_ MODEL \_ TWO \_ SIDE</dt> <dd> 
 
-|                  |                                                                                  |
+| Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | USA illuminazione a due lati                                                           |
+| Descrizione:     | Usare l'illuminazione a due lati                                                           |
 | Gruppo di attributi: | illuminazione                                                                         |
-| Valore iniziale:   | GL \_ false                                                                        |
+| Valore iniziale:   | GL \_ FALSE                                                                        |
 | Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_AMBIENT"></span><span id="gl_ambient"></span>\_ambiente GL</dt> <dd> 
+</dd> <dt><span id="GL_AMBIENT"></span><span id="gl_ambient"></span>AMBIENTE \_ GL</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | Intensità di ambiente della luce *i*     |
+| Descrizione:     | Intensità ambientale della luce *i*     |
 | Gruppo di attributi: | illuminazione                           |
-| Valore iniziale:   | (0.0, 0.0, 0.0, 1.0)                  |
+| Valore iniziale:   | (0.0,0.0,0.0,1.0)                  |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_DIFFUSE"></span><span id="gl_diffuse"></span>GL \_ diffuse</dt> <dd> 
+</dd> <dt><span id="GL_DIFFUSE"></span><span id="gl_diffuse"></span>GL \_ DIFFUSE</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
 | Descrizione:     | Intensità diffusa della luce *i*     |
 | Gruppo di attributi: | illuminazione                           |
@@ -201,11 +201,11 @@ ms.locfileid: "103857398"
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SPECULAR"></span><span id="gl_specular"></span>\_speculare GL</dt> <dd> 
+</dd> <dt><span id="GL_SPECULAR"></span><span id="gl_specular"></span>SPECULARE GL \_</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
 | Descrizione:     | Intensità speculare della luce *i*    |
 | Gruppo di attributi: | illuminazione                           |
@@ -214,37 +214,37 @@ ms.locfileid: "103857398"
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_POSITION"></span><span id="gl_position"></span>\_posizione GL</dt> <dd> 
+</dd> <dt><span id="GL_POSITION"></span><span id="gl_position"></span>POSIZIONE \_ GL</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
 | Descrizione:     | Posizione della luce *i*              |
 | Gruppo di attributi: | illuminazione                           |
-| Valore iniziale:   | (0,0, 0.0, 1.0, 0,0)                  |
+| Valore iniziale:   | (0.0,0.0,1.0,0.0)                  |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_CONSTANT_ATTENUATION"></span><span id="gl_constant_attenuation"></span>\_ \_ attenuazione costante GL</dt> <dd> 
+</dd> <dt><span id="GL_CONSTANT_ATTENUATION"></span><span id="gl_constant_attenuation"></span>ATTENUAZIONE COSTANTE GL \_ \_</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
 | Descrizione:     | Fattore di attenuazione costante        |
 | Gruppo di attributi: | illuminazione                           |
-| Valore iniziale:   | 1.0                                |
+| Valore iniziale:   | 1,0                                |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LINEAR_ATTENUATION"></span><span id="gl_linear_attenuation"></span>\_ \_ attenuazione lineare GL</dt> <dd> 
+</dd> <dt><span id="GL_LINEAR_ATTENUATION"></span><span id="gl_linear_attenuation"></span>ATTENUAZIONE \_ \_ LINEARE GL</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
 | Descrizione:     | Fattore di attenuazione lineare          |
 | Gruppo di attributi: | illuminazione                           |
@@ -253,11 +253,11 @@ ms.locfileid: "103857398"
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_QUADRATIC_ATTENUATION"></span><span id="gl_quadratic_attenuation"></span>\_attenuazione quadratica GL \_</dt> <dd> 
+</dd> <dt><span id="GL_QUADRATIC_ATTENUATION"></span><span id="gl_quadratic_attenuation"></span>\_ATTENUAZIONE \_ QUADRATICA GL</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
 | Descrizione:     | Fattore di attenuazione quadratica       |
 | Gruppo di attributi: | illuminazione                           |
@@ -266,78 +266,78 @@ ms.locfileid: "103857398"
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SPOT_DIRECTION"></span><span id="gl_spot_direction"></span>\_direzione spot \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_SPOT_DIRECTION"></span><span id="gl_spot_direction"></span>DIREZIONE \_ DEL PUNTO \_ GL</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | Direzione Spotlight della luce *i*   |
+| Descrizione:     | Direzione riflettore della *luce i*   |
 | Gruppo di attributi: | illuminazione                           |
-| Valore iniziale:   | (0,0, 0,0,-1,0)                     |
+| Valore iniziale:   | (0.0,0.0,-1.0)                     |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SPOT_EXPONENT"></span><span id="gl_spot_exponent"></span>\_esponente spot GL \_</dt> <dd> 
+</dd> <dt><span id="GL_SPOT_EXPONENT"></span><span id="gl_spot_exponent"></span>ESPONENTE DI GL \_ SPOT \_</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | Esponente Spotlight della luce *i*    |
+| Descrizione:     | Esponente in evidenza della luce *i*    |
 | Gruppo di attributi: | illuminazione                           |
 | Valore iniziale:   | 0,0                                |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_SPOT_CUTOFF"></span><span id="gl_spot_cutoff"></span>\_taglio GL spot \_</dt> <dd> 
+</dd> <dt><span id="GL_SPOT_CUTOFF"></span><span id="gl_spot_cutoff"></span>GL \_ SPOT \_ CUTOFF</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | Angolo in primo piano della luce *i*       |
+| Descrizione:     | Angolo in evidenza della luce *i*       |
 | Gruppo di attributi: | illuminazione                           |
-| Valore iniziale:   | 180,0                              |
+| Valore iniziale:   | 180.0                              |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_LIGHT_i"></span><span id="gl_light_i"></span><span id="GL_LIGHT_I"></span>GL \_ Light *i*</dt> <dd> 
+</dd> <dt><span id="GL_LIGHT_i"></span><span id="gl_light_i"></span><span id="GL_LIGHT_I"></span>GL \_ LIGHT *i*</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | True se la *luce è* abilitata          |
+| Descrizione:     | True se la luce *è abilitata*          |
 | Gruppo di attributi: | illuminazione/abilitazione                    |
-| Valore iniziale:   | GL \_ false                          |
+| Valore iniziale:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_COLOR_INDEXES"></span><span id="gl_color_indexes"></span>indici di \_ colore GL \_</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_INDEXES"></span><span id="gl_color_indexes"></span>INDICI \_ DEI \_ COLORI GL</dt> <dd> 
 
-|                  |                                                                                |
+| Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | *C (a)*, *c (d)* e *c (s* ) per l'illuminazione degli indici dei colori                         |
+| Descrizione:     | *C (a)*, *C (d)* e *C (s)* per l'illuminazione dell'indice colori                         |
 | Gruppo di attributi: | illuminazione/abilitazione                                                                |
-| Valore iniziale:   | 0, 1, 1                                                                          |
+| Valore iniziale:   | 0,1,1                                                                          |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

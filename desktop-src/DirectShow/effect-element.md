@@ -1,37 +1,37 @@
 ---
-description: L'elemento Effect definisce un oggetto effetto audio o video. Un effetto viene applicato a un singolo flusso, ad esempio una composizione, una traccia o un'origine.
+description: L'elemento effect definisce un oggetto effetto audio o video. Un effetto viene applicato a un singolo flusso, ad esempio una composizione, una traccia o un'origine.
 ms.assetid: aedb4491-f1f0-44b3-ad88-3fac8c90144d
-title: Elemento Effect (Gdipluseffects. h)
+title: Elemento effect (Gdipluseffects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dd31e85407b99c3dffd4417a051be168f7c6d3a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d4c925e61578857415bb22248a9ad2b1df27cdac
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332050"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908659"
 ---
-# <a name="effect-element"></a>Elemento Effect
+# <a name="effect-element"></a>Elemento effect
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `effect` elemento definisce un oggetto effetto audio o video. Un effetto viene applicato a un singolo flusso, ad esempio una composizione, una traccia o un'origine.
+`effect`L'elemento definisce un oggetto effetto audio o video. Un effetto viene applicato a un singolo flusso, ad esempio una composizione, una traccia o un'origine.
 
 ## <a name="attributes"></a>Attributi
 
-[**CLSID**](clsid-attribute.md), [**Lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**Start**](start-attribute.md), [**Stop**](stop-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**clsid**](clsid-attribute.md), [**lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**start**](start-attribute.md), [**stop**](stop-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
 
 ## <a name="parentchild-information"></a>Informazioni padre/figlio
 
 
 
-|          |                                                                                                                                      |
+| Label | Valore |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| Padre   | [**composito**](composite-element.md), [**gruppo**](group-element.md), [**clip**](clip-element.md), [**traccia**](track-element.md) |
-| Children | [**param**](param-element.md)                                                                                                       |
+| Padre   | [**composite,**](composite-element.md) [**group,**](group-element.md) [**clip,**](clip-element.md) [**track**](track-element.md) |
+| Children | [**Param**](param-element.md)                                                                                                       |
 
 
 
@@ -39,7 +39,7 @@ L' `effect` elemento definisce un oggetto effetto audio o video. Un effetto vien
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **CLSID** specifica l'oggetto SubObject che crea l'effetto.
+**L'attributo clsid** specifica il sottooggetto che crea l'effetto.
 
 ## <a name="examples"></a>Esempio
 
@@ -56,7 +56,7 @@ L'attributo **CLSID** specifica l'oggetto SubObject che crea l'effetto.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Gdipluseffects. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Gdipluseffects.h</dt> </dl> |
 
 
 

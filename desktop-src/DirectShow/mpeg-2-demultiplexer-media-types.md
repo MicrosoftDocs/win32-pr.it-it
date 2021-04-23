@@ -1,42 +1,42 @@
 ---
-description: Tipi di supporti di Demultiplexer MPEG-2
+description: MpEG-2 Tipi di supporti demultiplexer
 ms.assetid: 240d1753-df8c-45fe-b5a7-9faa96fc5b18
-title: Tipi di supporti di Demultiplexer MPEG-2
+title: MpEG-2 Tipi di supporti demultiplexer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b21eecff138b987c791ecd97056fb4cf417dd98d
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 6b9b5276b975771ba62118976c8e63b4d5faa53d
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320694"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909999"
 ---
-# <a name="mpeg-2-demultiplexer-media-types"></a>Tipi di supporti di Demultiplexer MPEG-2
+# <a name="mpeg-2-demultiplexer-media-types"></a>MpEG-2 Tipi di supporti demultiplexer
 
-Il filtro [di MPEG-2 Demultiplexer](mpeg-2-demultiplexer.md) riconosce i seguenti tipi di supporti.
+Il [filtro MPEG-2 Demultiplexer](mpeg-2-demultiplexer.md) riconosce i tipi di supporti seguenti.
 
 ### <a name="input-types"></a>Tipi di input
 
-Il tipo principale è sempre **\_ flusso MEDIATYPE**. Il sottotipo può essere uno dei seguenti.
+Il tipo principale è sempre **MEDIATYPE \_ Stream.** Il sottotipo può essere uno dei seguenti.
 
 
 
 | GUID                                             | Descrizione                                                                                                                                                                                               |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **KSDATAFORMAT \_ sottotipo \_ BDA \_ \_ trasporto MPEG2** | Flusso di trasporto da un filtro di periferica BDA (Broadcast Driver Architecture). Il Demultiplexer MPEG-2 considera questo sottotipo in modo identico al **\_ \_ trasporto MEDIASUBTYPE MPEG2**.                                |
-| **\_Programma MEDIASUBTYPE MPEG2 \_**                 | Flusso di programma                                                                                                                                                                                            |
-| **\_Trasporto MPEG2 \_ MEDIASUBTYPE**               | Flusso di trasporto (TS), con pacchetti da 188 byte                                                                                                                                                              |
-| **\_ \_ Stride trasporto MPEG2 \_ MEDIASUBTYPE**       | Flusso di trasporto con pacchetti "con stride". Questo sottotipo indica che i pacchetti di Servizi terminal possono essere riempiti con byte aggiuntivi. Per ulteriori informazioni, vedere la pagina relativa allo [**\_ \_ stride del trasporto MPEG2**](mpeg2-transport-stride.md). |
+| **TRASPORTO \_ \_ MPEG2 DEL SOTTOTIPO KSDATAFORMAT \_ \_** | Flusso di trasporto da un filtro di dispositivo BDA (Broadcast Driver Architecture). Il demultiplex MPEG-2 tratta questo sottotipo in modo identico a **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT.**                                |
+| **PROGRAMMA \_ MPEG2 \_ MEDIASUBTYPE**                 | Flusso del programma                                                                                                                                                                                            |
+| **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**               | Flusso di trasporto (TS), con pacchetti da 188 byte                                                                                                                                                              |
+| **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE**       | Flusso di trasporto con pacchetti "strided". Questo sottotipo indica che i pacchetti TS possono essere riempiti con byte aggiuntivi. Per altre informazioni, vedere [**MPEG2 \_ TRANSPORT \_ STRIDE.**](mpeg2-transport-stride.md) |
 
 
 
  
 
-Per i pacchetti di trasporto con Stride (**MEDIASUBTYPE \_ MPEG2 \_ Transport \_ stride**), ogni esempio di supporto deve contenere un numero integrale di pacchetti di trasporto, come descritto nello [**\_ \_ stride del trasporto MPEG2**](mpeg2-transport-stride.md). Per tutti gli altri tipi di input, non sono previste restrizioni sui limiti di esempio; i singoli pacchetti possono estendersi sui limiti di esempio.
+Per i pacchetti di trasporto strided **(MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE),** ogni campione di supporti deve contenere un numero integrale di pacchetti di trasporto, come descritto in [**MPEG2 \_ TRANSPORT \_ STRIDE**](mpeg2-transport-stride.md). Per tutti gli altri tipi di input, non sono presenti restrizioni sui limiti di esempio. I singoli pacchetti possono estendersi oltre i limiti del campione.
 
 ### <a name="output-types"></a>Tipi di output
 
-Il Demultiplexer MPEG-2 non convalida i tipi di output. il filtro downstream è responsabile dell'analisi dei dati ricevuti dal Demultiplexer. Tuttavia, i tipi seguenti sono comunemente accettati dai filtri downstream come output del Demultiplexer.
+Il demultiplexer MPEG-2 non convalida i tipi di output. Il filtro downstream è responsabile dell'analisi dei dati ricevuti dal demultiplexer. Tuttavia, i tipi seguenti sono comunemente accettati dai filtri downstream come output dal demultiplexer.
 
 ### <a name="mpeg-2-sections"></a>Sezioni MPEG-2
 
@@ -56,10 +56,10 @@ Il Demultiplexer MPEG-2 non convalida i tipi di output. il filtro downstream è 
 <td>Subtype</td>
 <td>Uno dei casi seguenti:<br/>
 <ul>
-<li><strong>MEDIASUBTYPE_ATSC_SI</strong>: informazioni sul servizio ATSC.</li>
-<li><strong>MEDIASUBTYPE_DVB_SI</strong>: informazioni sul servizio DVB.</li>
-<li><strong>MEDIASUBTYPE_ISDB_SI</strong>: informazioni sul servizio Integrated Services Digital Broadcasting (ISDB).</li>
-<li><strong>MEDIASUBTYPE_MPEG2DATA</strong>: dati della sezione MPEG-2.</li>
+<li><strong>MEDIASUBTYPE_ATSC_SI:</strong>informazioni sul servizio ATSC.</li>
+<li><strong>MEDIASUBTYPE_DVB_SI:</strong>informazioni sul servizio DVB.</li>
+<li><strong>MEDIASUBTYPE_ISDB_SI:</strong>Informazioni sul servizio ISDB (Integrated Services Digital Broadcasting).</li>
+<li><strong>MEDIASUBTYPE_MPEG2DATA:</strong>dati della sezione MPEG-2.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -73,31 +73,31 @@ Il Demultiplexer MPEG-2 non convalida i tipi di output. il filtro downstream è 
 
  
 
-### <a name="mpeg-2-video"></a>Video MPEG-2
+### <a name="mpeg-2-video"></a>MPEG-2 Video
 
 
 
-|                  |                                          |
+| Label | Valore |
 |------------------|------------------------------------------|
-| Tipo principale       | **Video di MEDIATYPE \_**                     |
-| Subtype          | **VIDEO di MEDIASUBTYPE \_ MPEG2 \_**           |
-| Tipo di formato      | **FORMATO \_ mpeg2video**                   |
-| Struttura Format | [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) |
+| Tipo principale       | **MEDIATYPE \_ Video**                     |
+| Subtype          | **MEDIASUBTYPE \_ MPEG2 \_ VIDEO**           |
+| Tipo di formato      | **FORMAT \_ MPEG2Video**                   |
+| Struttura del formato | [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) |
 
 
 
  
 
-### <a name="mpeg-2-audio"></a>Audio MPEG-2
+### <a name="mpeg-2-audio"></a>MPEG-2 Audio
 
 
 
-|                  |                                      |
+| Label | Valore |
 |------------------|--------------------------------------|
-| Tipo principale       | **\_Audio MEDIATYPE**                 |
-| Subtype          | **\_Audio MPEG2 \_ MEDIASUBTYPE**       |
-| Tipo di formato      | **FORMATO \_ WAVEFORMATEX**             |
-| Struttura Format | [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) |
+| Tipo principale       | **MEDIATYPE \_ Audio**                 |
+| Subtype          | **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**       |
+| Tipo di formato      | **FORMAT \_ WaveFormatEx**             |
+| Struttura del formato | [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) |
 
 
 

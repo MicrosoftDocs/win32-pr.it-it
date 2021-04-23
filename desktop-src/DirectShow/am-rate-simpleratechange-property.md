@@ -1,26 +1,26 @@
 ---
-description: Questa proprietà viene utilizzata per inviare le modifiche di velocità al decodificatore. Il tipo di dati di questa proprietà è una \_ struttura am SimpleRateChange, che fornisce la nuova velocità di riproduzione e l'ora di presentazione quando la nuova velocità viene applicata.
+description: Questa proprietà viene usata per inviare modifiche alla velocità al decodificatore. Il tipo di dati per questa proprietà è una struttura AM SimpleRateChange, che fornisce la nuova velocità di riproduzione e l'ora di presentazione quando la \_ nuova frequenza ha effetto.
 ms.assetid: d6ade463-82c7-46be-8d9a-e372ddbd7a4b
-title: Proprietà AM_RATE_SimpleRateChange (dvdmedia. h)
+title: AM_RATE_SimpleRateChange proprietà (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ccaa1f3ea6b244b466b2881b82b3be4ac1b0bab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 928dc477f5f8c6492d407ddc8b56f49170dec4f4
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330324"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910229"
 ---
-# <a name="am_rate_simpleratechange-property"></a>\_Proprietà rate \_ SimpleRateChange
+# <a name="am_rate_simpleratechange-property"></a>Am \_ RATE \_ SimpleRateChange - proprietà
 
-Questa proprietà viene utilizzata per inviare le modifiche di velocità al decodificatore. Il tipo di dati di questa proprietà è una struttura **am \_ SimpleRateChange** , che fornisce la nuova velocità di riproduzione e l'ora di presentazione quando la nuova velocità viene applicata.
+Questa proprietà viene usata per inviare modifiche alla velocità al decodificatore. Il tipo di dati per questa proprietà è una struttura **AM \_ SimpleRateChange,** che fornisce la nuova velocità di riproduzione e l'ora di presentazione quando la nuova frequenza ha effetto.
 
 
 
-|                   |                                                     |
+| Label | Valore |
 |-------------------|-----------------------------------------------------|
-| GUID set di proprietà | \_TSRateChange KSPROPSETID \_                       |
-| ID proprietà       | \_Frequenza \_ SimpleRateChange                          |
+| GUID set di proprietà | AM \_ KSPROPSETID \_ TSRateChange                       |
+| ID proprietà       | AM \_ RATE \_ SimpleRateChange                          |
 | Tipo di dati         | [**AM \_ SimpleRateChange**](/previous-versions/windows/desktop/api/Dvdmedia/ns-dvdmedia-am_simpleratechange) |
 
 
@@ -33,7 +33,7 @@ Questa proprietà viene utilizzata per inviare le modifiche di velocità al deco
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Questa proprietà viene utilizzata per inviare le modifiche di velocità al deco
 
 <dl> <dt>
 
-[**Set di proprietà di modifica della frequenza**](rate-change-property-set.md)
+[**Impostare la proprietà Rate Change**](rate-change-property-set.md)
 </dt> </dl>
 
  

@@ -1,37 +1,37 @@
 ---
-description: La clip epecifies un'origine multimediale.
+description: Il clip epecifica un'origine multimediale.
 ms.assetid: 40323e64-ad5f-4646-bad7-2a4e7d0ddcf6
 title: Elemento clip
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fe975113f370b13e50ba695d6fb3388a43c3a74
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6d937f942ba7b564e65b0e37d9c11929805287da
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480996"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908669"
 ---
 # <a name="clip-element"></a>Elemento clip
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-`clip`Epecifies un'origine multimediale.
+`clip`L'oggetto epecifica un'origine multimediale.
 
 ## <a name="attributes"></a>Attributi
 
-[**CLSID**](clsid-attribute.md), [**framerate**](framerate-attribute.md), [**Lock**](lock-attribute.md), [**mlength**](mlength-attribute.md), [**mstart**](mstart-attribute.md), [**mstop**](mstop-attribute.md), [**mute**](mute-attribute.md), [**src**](src-attribute.md), [**Start**](start-attribute.md), [**Stop**](stop-attribute.md), [**Stream**](stream-attribute.md), [**stretchmode**](stretchmode-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**clsid**](clsid-attribute.md), [**framerate**](framerate-attribute.md), [**lock**](lock-attribute.md), [**mlength**](mlength-attribute.md), [**mstart**](mstart-attribute.md), [**mstop**](mstop-attribute.md), [**mute**](mute-attribute.md), [**src**](src-attribute.md), start , [**stop**](start-attribute.md), [**stream**](stream-attribute.md), [**stretchmode**](stretchmode-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md) [](stop-attribute.md)
 
 ## <a name="parentchild-information"></a>Informazioni padre/figlio
 
 
 
-|          |                                  |
+| Label | Valore |
 |----------|----------------------------------|
-| Padre   | [**tenere traccia**](track-element.md)   |
-| Children | [**effetto**](effect-element.md) |
+| Padre   | [**Traccia**](track-element.md)   |
+| Children | [**Effetto**](effect-element.md) |
 
 
 
@@ -39,11 +39,11 @@ ms.locfileid: "104480996"
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **CLSID** specifica il CLSID di un filtro di origine da utilizzare come origine. Non specificare gli attributi **src** e **CLSID** nello stesso `clip` elemento.
+**L'attributo clsid** specifica il CLSID di un filtro di origine da usare come origine. Non specificare gli attributi **src** e **clsid** all'interno dello stesso `clip` elemento.
 
-Specificare almeno un attributo di inizio-ora (**Start** o **mstart**) e un attributo dell'ora di arresto (**Stop** o **mstop**). Se uno degli attributi della fase di avvio non è specificato, il valore predefinito è 0 (l'inizio della sequenza temporale per l' **avvio** o l'inizio della clip per **mstart**). Se uno degli attributi dell'ora di arresto non è specificato, DES presuppone una frequenza di riproduzione normale e calcola di conseguenza l'ora di arresto non specificata. Se vengono specificate entrambe le ore di arresto, la riproduzione è più veloce o più lenta del normale, se necessario.
+Specificare almeno un attributo dell'ora di inizio (**start** o **mstart**) e un attributo stop-time (**stop** o **mstop**). Se uno degli attributi dell'ora di inizio non è specificato, il valore predefinito è 0 (l'inizio della sequenza temporale per **start** o l'inizio del clip per **mstart**). Se uno degli attributi del tempo di arresto non è specificato, DES presuppone una velocità di riproduzione normale e calcola di conseguenza il tempo di arresto non specificato. Se vengono specificati entrambi i tempi di arresto, la riproduzione è più veloce o più lenta del normale, se necessario.
 
-Nell'esempio seguente la durata della sequenza temporale è di sette secondi (**Stop** minus **Start**). Si presuppone una frequenza di riproduzione normale, quindi il tempo di arresto del supporto predefinito è di 10 secondi (durata più **mstart**).
+Nell'esempio seguente la durata della sequenza temporale è di sette secondi (**stop** meno **start**). Si presuppone la frequenza di riproduzione normale, quindi il tempo di arresto multimediale è 10 secondi (durata più **mstart**).
 
 
 ```
@@ -52,7 +52,7 @@ Nell'esempio seguente la durata della sequenza temporale è di sette secondi (**
 
 
 
-Nell'esempio seguente l'ora di inizio del supporto viene impostata su 0, forzando la durata dei supporti su 10 secondi. La durata della sequenza temporale è di cinque secondi, quindi la clip viene riprodotta al doppio della normale frequenza.
+Nell'esempio successivo l'ora di inizio del supporto è impostata su 0, forzando la durata del supporto a 10 secondi. La durata della sequenza temporale è di cinque secondi, quindi il clip viene riprodotto al doppio della frequenza normale.
 
 
 ```
@@ -61,7 +61,7 @@ Nell'esempio seguente l'ora di inizio del supporto viene impostata su 0, forzand
 
 
 
-Se l'attributo **src** specifica un'immagine ancora, des tenta di caricare una serie di immagini ancora per creare un'animazione. Se, ad esempio, l'attributo **src** è IMAGE001.BMP, DES Cerca IMAGE002.BMP, IMAGE003.BMP, IMAGE004.BMP e così via. Supponendo che esistano, vengono visualizzati in ordine numerico sequenziale, alla velocità specificata dall'attributo **framerate** .
+Se **l'attributo src** specifica un'immagine fisse, DES tenta di caricare una serie di immagini fisse per creare un'animazione. Ad esempio, se **l'attributo src** è IMAGE001.BMP, DES cerca IMAGE002.BMP, IMAGE003.BMP, IMAGE004.BMP e così via. Supponendo che esistano, vengono visualizzati in ordine numerico sequenziale, alla frequenza specificata **dall'attributo framerate.**
 
 ## <a name="examples"></a>Esempi
 

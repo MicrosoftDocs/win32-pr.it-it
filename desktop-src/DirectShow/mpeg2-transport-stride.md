@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura dello stride del trasporto MPEG2 \_ descrive il formato dei pacchetti di flusso di trasporto MPEG-2.
+description: La struttura MPEG2 \_ TRANSPORT STRIDE descrive il formato dei pacchetti \_ TS (Transport Stream) MPEG-2.
 ms.assetid: 269d5fba-2dea-4786-93d6-e52b56c8bb53
-title: Struttura MPEG2_TRANSPORT_STRIDE (Bdatypes. h)
+title: MPEG2_TRANSPORT_STRIDE struttura (Bdatypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,32 +13,32 @@ api_type:
 - HeaderDef
 api_location:
 - bdatypes.h
-ms.openlocfilehash: 4a0cdc21bdd8c320728da0c0af8c0af023de68eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5153f6f79c2807634149222a126a7256a65ffe8a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325167"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908489"
 ---
-# <a name="mpeg2_transport_stride-structure"></a>\_ \_ Struttura stride trasporto MPEG2
+# <a name="mpeg2_transport_stride-structure"></a>Struttura STRIDE DEL TRASPORTO MPEG2 \_ \_
 
-La `MPEG2_TRANSPORT_STRIDE` struttura descrive il formato dei pacchetti MPEG-2 Transport Stream (TS). Questa struttura consente flussi di trasporto in cui i pacchetti di trasporto da 188 byte non sono contigui. Ai fini di questa documentazione, questi pacchetti sono detti *pacchetti stride*.
+La `MPEG2_TRANSPORT_STRIDE` struttura descrive il formato dei pacchetti TS (Transport Stream) MPEG-2. Questa struttura consente flussi di trasporto in cui i pacchetti di trasporto a 188 byte non sono contigui. Ai fini di questa documentazione, tali pacchetti vengono definiti pacchetti *stride*.
 
-I pacchetti stride sono identificati dal seguente tipo di supporto:
+I pacchetti Stride sono identificati dal tipo di supporto seguente:
 
 
 
-|             |                                        |
+| Label | Valore |
 |-------------|----------------------------------------|
-| Tipo principale  | \_Flusso MEDIATYPE                      |
-| Subtype     | \_ \_ Stride trasporto MPEG2 \_ MEDIASUBTYPE |
-| Tipo di formato | FORMATO \_ None                           |
+| Tipo principale  | Flusso \_ MEDIATYPE                      |
+| Subtype     | MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE |
+| Tipo di formato | FORMAT \_ None                           |
 
 
 
  
 
-Il formato del blocco (**pbFormat**) è facoltativo. Se il blocco di formato è incluso, deve iniziare con una struttura dello **\_ \_ stride del trasporto MPEG2** . Questa struttura definisce il layout del pacchetto di trasporto all'interno del pacchetto stride. Se il blocco di formato è **null**, si presuppone che i pacchetti usino un set di valori predefiniti. per informazioni dettagliate, vedere la sezione Osservazioni.
+Il blocco di formato (**pbFormat**) è facoltativo. Se il blocco di formato è incluso, deve iniziare con una **struttura \_ MPEG2 TRANSPORT \_ STRIDE.** Questa struttura definisce il layout del pacchetto di trasporto all'interno del pacchetto stride. Se il blocco di formato **è NULL,** si presuppone che i pacchetti usino un set di valori predefiniti. Per informazioni dettagliate, vedere la sezione Osservazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,7 +67,7 @@ Specifica l'offset, in byte, dall'inizio del pacchetto al primo byte del pacchet
 **dwPacketLength**
 </dt> <dd>
 
-Specifica la lunghezza, in byte, del pacchetto di trasporto incorporato. Per i pacchetti di trasporto MPEG-2 standard, il valore deve essere pari a 188 byte.
+Specifica la lunghezza in byte del pacchetto di trasporto incorporato. Per i pacchetti di trasporto MPEG-2 standard, il valore deve essere 188 byte.
 
 </dd> <dt>
 
@@ -82,17 +82,17 @@ Specifica la lunghezza in byte dell'intero pacchetto stride. Il valore deve esse
 
 Il diagramma seguente illustra le relazioni tra i membri della struttura.
 
-![pacchetto MPEG-2 stride](images/mpeg2-stride-packet.png)
+![Pacchetto mpeg-2 stride](images/mpeg2-stride-packet.png)
 
-I buffer di input che contengono pacchetti stride in multiplex presentano alcune restrizioni:
+I buffer di input che contengono pacchetti stride multiplexed hanno alcune restrizioni:
 
--   I pacchetti stride devono essere compressi in modo contiguo all'interno del buffer.
+-   I pacchetti Stride devono essere imballati in modo contiguo all'interno del buffer.
 -   Nessun byte può precedere il primo pacchetto stride o seguire l'ultimo pacchetto stride.
--   Un numero integrale di pacchetti stride deve rientrare nel buffer; ovvero la lunghezza del buffer% dwStride è uguale a zero.
+-   Un numero integrale di pacchetti stride deve essere contenuto nel buffer. in altri, la lunghezza del buffer % dwStride è uguale a zero.
 
-Non esiste alcuna restrizione per il numero di pacchetti stride per buffer.
+Non esiste alcuna restrizione sul numero di pacchetti stride per buffer.
 
-Se il tipo di supporto non contiene un blocco di formato (**pbFormat** è **null**), vengono usati i valori predefiniti seguenti:
+Se il tipo di supporto non contiene un blocco di formato (**pbFormat** è **NULL),** vengono usati i valori predefiniti seguenti:
 
 -   **dwOffset**: 0
 -   **dwPacketLength**: 188
@@ -104,7 +104,7 @@ Se il tipo di supporto non contiene un blocco di formato (**pbFormat** è **null
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Bdatypes. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Bdatypes.h</dt> </dl> |
 
 
 

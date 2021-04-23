@@ -4,29 +4,29 @@ ms.assetid: c17b3b58-65ab-4e83-91f2-54a995f22ddf
 title: Catene di filtri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d46e374aca71b024773e4177d09e67c7ee6034ac
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d22ee33f7bc24495bc5099d0abeca7b8c70bc6d4
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876826"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909059"
 ---
 # <a name="filter-chains"></a>Catene di filtri
 
-Una *catena* di filtri è una sequenza di filtri che soddisfa le condizioni seguenti:
+Una *catena di* filtri è una sequenza di filtri che soddisfa le condizioni seguenti:
 
--   Ogni filtro della catena ha al massimo un pin di input connesso e un pin di output connesso.
--   È possibile attraversare tutti i filtri della catena senza attraversare i filtri all'esterno della catena.
+-   Ogni filtro nella catena ha al massimo un pin di input connesso e un pin di output connesso.
+-   È possibile attraversare ogni filtro nella catena senza attraversare i filtri all'esterno della catena.
 
-Nel diagramma seguente, ad esempio, i filtri A-B, C-D e F – G – H sono catene di filtri. Ogni sottocatena in F – G – H (F – G e G – H) è anche una catena di filtri. Una catena di filtri può essere costituita da un singolo filtro, quindi i filtri A, B, C, D, F, G e H sono anche catene di filtri distinti. Filter E include due connessioni di input, pertanto qualsiasi sequenza di filtri che includa Filter E non è una catena di filtri.
+Nel diagramma seguente, ad esempio, i filtri A-B, C-D e F-G-H sono catene di filtri. Ogni subchain in F-G-H (F-G e G-H) è anche una catena di filtri. Una catena di filtri può essere costituita da un singolo filtro, quindi anche i filtri A, B, C, D, F, G e H sono catene di filtri distinte. Il filtro E ha due connessioni di input, quindi qualsiasi sequenza di filtri che include il filtro E non è una catena di filtri.
 
 ![catena di filtri (esempio 1)](images/filter-chain1.png)
 
-L'interfaccia [**IFilterChain**](/windows/desktop/api/Strmif/nn-strmif-ifilterchain) fornisce i metodi seguenti per controllare le catene di filtri:
+[**L'interfaccia IFilterChain**](/windows/desktop/api/Strmif/nn-strmif-ifilterchain) fornisce i metodi seguenti per controllare le catene di filtri:
 
 
 
-|                                                               |                                 |
+| Label | Valore |
 |---------------------------------------------------------------|---------------------------------|
 | [**IFilterChain::StartChain**](/windows/desktop/api/Strmif/nf-strmif-ifilterchain-startchain)   | Avvia una catena.                 |
 | [**IFilterChain::StopChain**](/windows/desktop/api/Strmif/nf-strmif-ifilterchain-stopchain)     | Arresta una catena.                  |
@@ -37,32 +37,32 @@ L'interfaccia [**IFilterChain**](/windows/desktop/api/Strmif/nn-strmif-ifilterch
 
  
 
-Non esiste alcun metodo specifico per l'aggiunta di una catena. Per aggiungere una catena, inserire i nuovi filtri usando il metodo [**IFilterGraph:: AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) . Connettere quindi i filtri chiamando [**IGraphBuilder:: Connect**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-connect), [**IGraphBuilder:: Render**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-render)o metodi simili.
+Non esiste alcun metodo specifico per l'aggiunta di una catena. Per aggiungere una catena, inserire i nuovi filtri usando il [**metodo IFilterGraph::AddFilter.**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) Connettere quindi i filtri chiamando [**IGraphBuilder::Connect**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-connect), [**IGraphBuilder::Render**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-render)o metodi simili.
 
-Quando il grafico è in esecuzione, una catena di filtri può spostarsi tra l'esecuzione e l'arresto. Quando il grafico è sospeso, può passare da una pausa all'altra e viceversa. Queste sono le uniche transizioni di stato possibili con le catene di filtri.
+Quando il grafico è in esecuzione, una catena di filtri può passare dall'esecuzione all'arresto. Quando il grafico viene sospeso, può passare da sospeso a arrestato. Queste sono le uniche transizioni di stato possibili con le catene di filtri.
 
 ## <a name="filter-chain-guidelines"></a>Linee guida per la catena di filtri
 
-Quando si usano i metodi **IFilterChain** , è importante assicurarsi che i filtri nel grafico possano supportare le operazioni di concatenamento dei filtri. In caso contrario, è possibile che si verifichino deadlock o errori del grafo. I filtri connessi alla catena devono funzionare correttamente dopo che lo stato della catena è stato modificato.
+Quando si usano **i metodi IFilterChain,** è importante assicurarsi che i filtri nel grafico supportino le operazioni di concatenamento dei filtri. In caso contrario, potrebbero verificarsi deadlock o errori del grafo. I filtri connessi alla catena devono funzionare correttamente dopo la modifica dello stato della catena.
 
-Il modo migliore per usare **IFilterChain** è costituito da un set di filtri progettati in modo specifico per il concatenamento. Usare le linee guida seguenti per assicurarsi che i filtri siano sicuri per le operazioni a catena di filtri. Questi punti fanno riferimento al diagramma seguente.
+Il modo migliore per usare **IFilterChain** è con un set di filtri progettato specificamente per il concatenamento. Usare le linee guida seguenti per assicurarsi che i filtri siano sicuri per le operazioni della catena di filtri. Questi punti fanno riferimento al diagramma seguente.
 
-![catena di filtri (esempio 2)](images/filter-chain2.png)
+![Catena di filtri (esempio 2)](images/filter-chain2.png)
 
--   Prima che lo stato della catena di filtri venga modificato, è necessario completare tutte le chiamate di elaborazione dati al limite della catena di filtri. Questa regola si applica ai metodi [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive), [**Ipin:: NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)e [**Ipin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream). I filtri nella catena devono restituire dalle chiamate a questi metodi creati da filtri all'esterno della catena; i filtri e all'esterno della catena devono restituire dalle chiamate effettuate da filtri all'interno della catena.
+-   Prima che lo stato della catena di filtri cambi, tutte le chiamate di elaborazione dati al limite della catena di filtri devono essere completate. Questa regola si applica ai [**metodi IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive), [**IPin::NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)e [**IPin::EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream). I filtri nella catena devono restituire dalle chiamate a questi metodi effettuate dai filtri all'esterno della catena. e i filtri all'esterno della catena devono restituire dalle chiamate effettuate dai filtri all'interno della catena.
 
-Nel diagramma precedente, ad esempio, il filtro B deve completare qualsiasi chiamata di elaborazione dati dal filtro A e il filtro E deve terminare tutte le chiamate dal filtro D. Se i pin espongono le interfacce [**IPinFlowControl**](/windows/desktop/api/Strmif/nn-strmif-ipinflowcontrol) e [**IPinConnection**](/windows/desktop/api/Strmif/nn-strmif-ipinconnection) , è possibile eseguire il push dei dati tramite il grafo chiamando il metodo [**IPinFlowControl:: Block**](/windows/desktop/api/Strmif/nf-strmif-ipinflowcontrol-block) e [**IGraphConfig::P Ushthroughdata**](/windows/desktop/api/Strmif/nf-strmif-igraphconfig-pushthroughdata) , come descritto in [riconnessione dinamica](dynamic-reconnection.md). I filtri possono inoltre supportare metodi privati per eseguire il push dei dati.
+Ad esempio, nel diagramma precedente, il filtro B deve completare tutte le chiamate di elaborazione dati dal filtro A e filtrare E deve completare tutte le chiamate dal filtro D. Se i pin espongono le interfacce [**IPinFlowControl**](/windows/desktop/api/Strmif/nn-strmif-ipinflowcontrol) e [**IPinConnection,**](/windows/desktop/api/Strmif/nn-strmif-ipinconnection) è possibile eseguire il push dei dati tramite il grafico chiamando i metodi [**IPinFlowControl::Block**](/windows/desktop/api/Strmif/nf-strmif-ipinflowcontrol-block) e [**IGraphConfig::P ushThroughData,**](/windows/desktop/api/Strmif/nf-strmif-igraphconfig-pushthroughdata) come descritto in [Riconnessione dinamica](dynamic-reconnection.md). I filtri possono anche supportare metodi privati per il push dei dati.
 
--   I filtri upstream devono prevedere che lo stato della catena venga modificato. Nel diagramma precedente, ad esempio, si supponga che la catena venga arrestata, ma che il filtro A chiami **IMemInputPin:: Receive**. La chiamata ha esito negativo e la risposta del filtro A consiste nell'arrestare lo streaming. Quando l'applicazione riavvia la catena, non ha alcun effetto perché il filtro A non è più in streaming dei dati.
--   Anche i filtri downstream devono prevedere che lo stato della catena venga modificato. In caso contrario, il filtro downstream potrebbe bloccarsi durante l'attesa di campioni che non arrivano mai. I filtri multiplexer (MUX), ad esempio, richiedono spesso i dati di tutti i pin di input. L'arresto del flusso di dati da un pin di input potrebbe impedire l'elaborazione degli altri flussi. Questo può causare il deadlock del grafico.
--   Ogni connessione pin da un filtro all'esterno della catena a un filtro all'interno della catena deve avere un proprio allocatore, che non è condiviso da altre connessioni. Quando la catena cambia stato o viene rimossa dal grafico, è possibile che venga eseguito il commit dell'allocatore. Se altre connessioni utilizzano lo stesso allocatore, non possono più elaborare gli esempi.
--   Non rimuovere una catena, a meno che i filtri connessi alla catena non supportino la disconnessione dinamica. In genere, i filtri connessi supporteranno l'interfaccia **IPinConnection** o **IPinFlowControl** , ma potrebbero supportare invece le interfacce private.
+-   I filtri upstream devono prevedere la modifica dello stato della catena. Ad esempio, nel diagramma precedente si supponga che la catena sia arrestata ma che il filtro A **chiami IMemInputPin::Receive**. La chiamata non riesce e la risposta del filtro A è arrestare lo streaming. Quando l'applicazione riavvia la catena, non ha alcun effetto perché il filtro A non esegue più lo streaming dei dati.
+-   Anche i filtri downstream devono prevedere la modifica dello stato della catena. In caso contrario, il filtro downstream potrebbe bloccarsi durante l'attesa di campioni che non arrivano mai. Ad esempio, i filtri multiplexer (MUX) spesso richiedono dati da tutti i pin di input. L'interruzione del flusso di dati da un pin di input potrebbe impedire l'elaborazione degli altri flussi. Ciò può causare un deadlock del grafo.
+-   Ogni connessione pin da un filtro esterno alla catena a un filtro all'interno della catena deve avere un proprio allocatore, che non è condiviso da altre connessioni. Quando lo stato della catena cambia o viene rimosso dal grafico, l'allocatore potrebbe essere decommesso. Se altre connessioni usano lo stesso allocatore, non possono più elaborare esempi.
+-   Non rimuovere una catena a meno che i filtri connessi alla catena non supportino la disconnessione dinamica. In genere, i filtri connessi supportano **l'interfaccia IPinConnection** o **IPinFlowControl,** ma potrebbero invece supportare interfacce private.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Creazione di grafici dinamici](dynamic-graph-building.md)
+[Creazione dinamica di grafi](dynamic-graph-building.md)
 </dt> </dl>
 
  

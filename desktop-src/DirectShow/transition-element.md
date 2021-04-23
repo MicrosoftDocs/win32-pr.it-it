@@ -1,37 +1,37 @@
 ---
-description: L'elemento Transition definisce un oggetto di transizione. Una transizione è una trasformazione di due input che consente di eseguire una transizione da un flusso a un altro (ad esempio un composto o una traccia).
+description: L'elemento transition definisce un oggetto transition. Una transizione è una trasformazione a due input che comporta una transizione da un flusso (ad esempio una composita o una traccia) a un altro.
 ms.assetid: d344a29f-5b6d-44a3-b1d7-759442e229f5
-title: Transition (elemento)
+title: Elemento transition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b7663785c641252609366c8bfd6044582829e82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60bf6b915a393ab153f0e94862cb5ed72dd3424c
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313408"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910039"
 ---
-# <a name="transition-element"></a>Transition (elemento)
+# <a name="transition-element"></a>Elemento transition
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `transition` elemento definisce un oggetto di transizione. Una transizione è una trasformazione di due input che consente di eseguire una transizione da un flusso a un altro (ad esempio un composto o una traccia).
+`transition`L'elemento definisce un oggetto di transizione. Una transizione è una trasformazione a due input che comporta una transizione da un flusso (ad esempio una composita o una traccia) a un altro.
 
 ## <a name="attributes"></a>Attributi
 
-[**CLSID**](clsid-attribute.md), [**cutpoint**](cutpoint-attribute.md), [**cutsonly**](cutsonly-attribute.md), [**Lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**Start**](start-attribute.md), [**Stop**](stop-attribute.md), [**swapinputs**](swapinputs-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**clsid**](clsid-attribute.md), cutpoint , [**cutpoint**](cutpoint-attribute.md) [**,**](lock-attribute.md) [**cutonly**](cutsonly-attribute.md), lock , [**mute**](mute-attribute.md), start , [**stop**](stop-attribute.md), [**swapinputs**](swapinputs-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md) [](start-attribute.md)
 
 ## <a name="parentchild-information"></a>Informazioni padre/figlio
 
 
 
-|          |                                                                        |
+| Label | Valore |
 |----------|------------------------------------------------------------------------|
-| Padre   | [**composto**](composite-element.md), [ **traccia**](track-element.md) |
-| Children | [**param**](param-element.md)                                         |
+| Padre   | [**composito,**](composite-element.md) [ **traccia**](track-element.md) |
+| Children | [**Param**](param-element.md)                                         |
 
 
 
@@ -39,7 +39,7 @@ L' `transition` elemento definisce un oggetto di transizione. Una transizione è
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **CLSID** specifica il sottooggetto che crea la transizione.
+**L'attributo clsid** specifica il sottooggetto che crea la transizione.
 
 ## <a name="examples"></a>Esempi
 

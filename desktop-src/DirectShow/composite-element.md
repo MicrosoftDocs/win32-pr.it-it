@@ -1,36 +1,36 @@
 ---
-description: L'elemento composito definisce una composizione, un oggetto contenitore per le tracce e altre composizioni nidificate.
+description: L'elemento composito definisce una composizione, un oggetto contenitore per tracce e altre composizione annidate.
 ms.assetid: 7551da3a-1da6-426a-ba9d-f715df53718f
 title: Elemento composite
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a1c81bf445769c049287bdfa7d23f4ab82bb0f8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b5eff3e0c16040f837e4c8a792ebac3124d723d1
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303824"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908839"
 ---
 # <a name="composite-element"></a>Elemento composite
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `composite` elemento definisce una composizione, un oggetto contenitore per le tracce e altre composizioni nidificate.
+`composite`L'elemento definisce una composizione, un oggetto contenitore per tracce e altre composizione annidate.
 
 ## <a name="attributes"></a>Attributi
 
-[**Lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
 
 ## <a name="parentchild-information"></a>Informazioni padre/figlio
 
 
 
-|          |                                                                                                                         |
+| Label | Valore |
 |----------|-------------------------------------------------------------------------------------------------------------------------|
-| Padre   | `composite`, [ **gruppo**](group-element.md)                                                                             |
+| Padre   | `composite`, [ **group**](group-element.md)                                                                             |
 | Children | `composite`, [**effetto**](effect-element.md), [**traccia**](track-element.md), [**transizione**](transition-element.md) |
 
 
@@ -39,7 +39,7 @@ L' `composite` elemento definisce una composizione, un oggetto contenitore per l
 
 ## <a name="remarks"></a>Commenti
 
-All'interno di un `composite` elemento, la priorità dei livelli annidati viene determinata in modo implicito in base all'ordine in cui vengono visualizzati all'interno dell'elemento. Il primo livello ha priorità 0 e i livelli successivi hanno valori di priorità sempre maggiori.
+`composite`All'interno di un elemento, la priorità dei livelli annidati viene determinata in modo implicito dall'ordine in cui vengono visualizzati all'interno dell'elemento. Il primo livello ha la priorità 0 e i livelli successivi hanno valori di priorità crescenti.
 
 ## <a name="examples"></a>Esempi
 

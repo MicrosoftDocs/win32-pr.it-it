@@ -1,38 +1,38 @@
 ---
-description: Interfacce del dispositivo esterno per videocamere DV
+description: Interfacce di dispositivo esterne per i camcorder DV
 ms.assetid: 001321c5-70c7-4baa-ba5a-1e424ca0d647
-title: Interfacce del dispositivo esterno per videocamere DV
+title: Interfacce di dispositivo esterne per i camcorder DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e52b6d0fe00ff91ff87e9c810bbe7ecc319e9bfd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e5e7106ec6e9b744da0d1f71958aeb895ec8df1a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103877109"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909799"
 ---
-# <a name="external-device-interfaces-for-dv-camcorders"></a>Interfacce del dispositivo esterno per videocamere DV
+# <a name="external-device-interfaces-for-dv-camcorders"></a>Interfacce di dispositivo esterne per i camcorder DV
 
-Il filtro di [acquisizione video WDM](wdm-video-capture-filter.md) espone tre interfacce per il controllo di una videocamera.
+Il [filtro Acquisizione video WDM](wdm-video-capture-filter.md) espone tre interfacce per il controllo di un camcorder.
 
 
 
-|                                                |                                                 |
+| Label | Valore |
 |------------------------------------------------|-------------------------------------------------|
 | [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice)           | Interfaccia di base per il controllo del dispositivo esterno. |
-| [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)     | Controlla le funzioni VCR.                     |
-| [**IAMTimecodeReader**](/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader) | Legge il timecode dal dispositivo.                 |
+| [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)     | Controlla le funzioni vcr.                     |
+| [**IAMTimecodeReader**](/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader) | Legge il codice temporale dal dispositivo.                 |
 
 
 
  
 
 > [!Note]  
-> Per usare queste interfacce con il driver della videocamera MSDV, includere il file di intestazione XPrtDefs. h nel progetto.
+> Per usare queste interfacce con il driver del camcorder MSDV, includere il file di intestazione XPrtDefs.h nel progetto.
 
  
 
-Dopo aver selezionato un dispositivo di acquisizione e creato un'istanza del filtro di acquisizione, eseguire una query sul filtro per tali interfacce. Nell'esempio seguente viene dichiarata una struttura personalizzata che include i puntatori di interfaccia, oltre a valori booleani che specificano la disponibilità di ogni interfaccia:
+Dopo aver selezionato un dispositivo di acquisizione e aver creato un'istanza del filtro di acquisizione, eseguire una query sul filtro per queste interfacce. L'esempio seguente dichiara una struttura personalizzata che contiene i puntatori a interfaccia, insieme ai valori booleani che specificano la disponibilità di ogni interfaccia:
 
 
 ```C++
@@ -67,7 +67,7 @@ MyDevCap.bHasTimecode = (SUCCEEDED(hr));
 
 <dl> <dt>
 
-[Controllo di una videocamera DV](controlling-a-dv-camcorder.md)
+[Controllo di un camcorder DV](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

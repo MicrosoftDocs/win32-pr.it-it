@@ -1,25 +1,25 @@
 ---
-description: Imposta la proprietà pin
+description: Impostare la proprietà Pin
 ms.assetid: 0c01bd51-353d-4f48-b33c-796f740915e2
-title: Imposta la proprietà pin
+title: Impostare la proprietà Pin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bc2d3ed55d7fed70d37a92427d1288ed58aef65
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e53955ba1f075094c4fb2f6324ed143ca54f72c2
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401151"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909619"
 ---
-# <a name="pin-property-set"></a>Imposta la proprietà pin
+# <a name="pin-property-set"></a>Impostare la proprietà Pin
 
-Il set di proprietà pin restituisce la categoria pin per un pin in un filtro. La categoria viene impostata dal filtro durante la creazione del PIN. la categoria indica il tipo di dati che il PIN viene recapitato o riceve da questo pin.
+Il set di proprietà pin restituisce la categoria pin per un segnaposto in un filtro. La categoria viene impostata dal filtro quando crea il segnaposto. la categoria indica il tipo di dati recapitati o ricevuti dal pin.
 
 
 
-|                   |                      |
+| Label | Valore |
 |-------------------|----------------------|
-| GUID set di proprietà | **\_Pin AMPROPSETID** |
+| GUID set di proprietà | **AMPROPSETID \_ Pin** |
 
 
 
@@ -29,31 +29,31 @@ Il set di proprietà pin restituisce la categoria pin per un pin in un filtro. L
 
 | ID proprietà                   | Descrizione                      |
 |-------------------------------|----------------------------------|
-| **\_categoria pin \_ AMPROPERTY** | Specifica la categoria di un PIN. |
+| **CATEGORIA PIN AMPROPERTY \_ \_** | Specifica la categoria di un segnaposto. |
 
 
 
  
 
-DirectShow definisce le categorie di pin seguenti nel file di intestazione UUIDs. h.
+DirectShow definisce le categorie di pin seguenti nel file di intestazione Uuids.h.
 
 
 
-| GUID categoria                     | Descrizione                                                                                                                                                                                                                                                                                                             |
+| GUID della categoria                     | Descrizione                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **PIN \_ categoria \_ ANALOGVIDEOIN**  | Pin di input del filtro di acquisizione che accetta analogie e lo Digitalizza.                                                                                                                                                                                                                                                     |
-| **\_ \_ blocca acquisizione categoria**        | Pin di acquisizione.                                                                                                                                                                                                                                                                                                            |
-| **\_categoria pin \_ CC**             | Pin che fornisce dati di didascalia chiusi dalla riga 21.                                                                                                                                                                                                                                                                      |
-| **PIN \_ categoria \_ EDS**            | Pin che fornisce servizi dati estesi (riga 21, anche campi).                                                                                                                                                                                                                                                            |
-| **PIN \_ categoria \_ NABTS**          | Pin che fornisce dati standard Videotext nord-americani.                                                                                                                                                                                                                                                                   |
-| **\_anteprima categoria \_ pin**        | Pin di anteprima.                                                                                                                                                                                                                                                                                                            |
-| **BLOCCA \_ categoria \_ ancora**          | Pin che fornisce un'immagine ancora. Il pin di acquisizione del filtro deve essere connesso prima della connessione del Pin Still-Image.                                                                                                                                                                                                    |
-| **\_televideo categoria \_ pin**       | Pin che fornisce il televideo (una variante di didascalia chiusa).                                                                                                                                                                                                                                                                   |
-| **Aggiungi \_ \_ timecode categoria**       | Pin che fornisce i dati del timecode.                                                                                                                                                                                                                                                                                            |
-| **PIN \_ categoria \_ VBI**            | Pin che fornisce dati dell'intervallo di spazi vuoti verticali.                                                                                                                                                                                                                                                                          |
-| **PIN \_ categoria \_ VIDEOPORT**      | Pin di output del video da connettere al pin di input zero nel [mixer della sovrimpressione](overlay-mixer-filter.md).                                                                                                                                                                                                                    |
-| **PIN \_ categoria \_ VIDEOPORT \_ VBI** | Pin da connettere a [VBI Surface allocator](vbi-surface-allocator.md), il filtro VBI Surface allocator, necessario per allocare la memoria video corretta per elementi come le sovrimpressioni dei sottotitoli codificati negli scenari in cui viene usata una porta video. Gli scenari PCI, IEEE 1394 e USB non utilizzano questo filtro. |
-| **\_acquisizione PINNAME video \_ CC \_**   | Codice PIN per la didascalia di hardware chiuso                                                                                                                                                                                                                                                                                  |
+| **CATEGORIA \_ PIN \_ ANALOGVIDEOIN**  | Segnaposto di input del filtro di acquisizione che accetta l'analogia e lo digitalizza.                                                                                                                                                                                                                                                     |
+| **ACQUISIZIONE \_ DI CATEGORIE DI \_ PIN**        | Pin di acquisizione.                                                                                                                                                                                                                                                                                                            |
+| **CATEGORIA \_ \_ DI PIN CC**             | Aggiungere i dati di sottotitoli codificati dalla riga 21.                                                                                                                                                                                                                                                                      |
+| **CATEGORIA \_ \_ DI PIN EDS**            | Aggiungere l'extended data services (riga 21, campi pari).                                                                                                                                                                                                                                                            |
+| **PIN \_ CATEGORY \_ NABTS**          | Aggiungere i dati videotext standard dell'America del Nord.                                                                                                                                                                                                                                                                   |
+| **ANTEPRIMA \_ CATEGORIA \_ PIN**        | Pin di anteprima.                                                                                                                                                                                                                                                                                                            |
+| **CATEGORIA \_ PIN \_ ANCORA**          | Segnaposto che fornisce un'immagine fissa. Il pin di acquisizione del filtro deve essere connesso prima che il pin dell'immagine fissa sia connesso.                                                                                                                                                                                                    |
+| **TELETEXT \_ CATEGORIA \_ PIN**       | Pin che fornisce teletext (una variante di sottotitoli codificati).                                                                                                                                                                                                                                                                   |
+| **PIN \_ CATEGORY \_ TIMECODE**       | Pin che fornisce i dati del timecode.                                                                                                                                                                                                                                                                                            |
+| **CATEGORIA \_ DI PIN \_ VBI**            | Aggiungere i dati dell'intervallo di blanking verticale.                                                                                                                                                                                                                                                                          |
+| **PIN \_ CATEGORY \_ VIDEOPORT**      | Pin di output video da collegare al pin di input zero nel [mixer di sovrimpressione.](overlay-mixer-filter.md)                                                                                                                                                                                                                    |
+| **CATEGORIA \_ PIN \_ VIDEOPORT \_ VBI** | Pin da collegare all'allocatore di superficie [VBI,](vbi-surface-allocator.md)il filtro dell'allocatore di superficie VBI necessario per allocare la memoria video corretta per elementi come le sovrimpressione di sottotitoli codificati negli scenari in cui viene usata una porta video. Gli scenari PCI, IEEE 1394 e USB non usano questo filtro. |
+| **PINNAME \_ VIDEO \_ CC \_ CAPTURE**   | Pin di sezione hardware per sottotitoli codificati                                                                                                                                                                                                                                                                                  |
 
 
 
@@ -63,7 +63,7 @@ Questa proprietà è di sola lettura.
 
 ### <a name="example-code"></a>Codice di esempio
 
-Il codice seguente illustra come verificare se un pin supporta questo set di proprietà e, in tal caso, come ottenere la categoria di pin:
+Il codice seguente illustra come verificare se un pin supporta questo set di proprietà e, in tal caso, come ottenere la categoria del pin:
 
 
 ```C++
@@ -92,7 +92,7 @@ HRESULT GetPinCategory(IPin *pPin, GUID *pPinCategory)
 
 
 > [!Note]  
-> Questo esempio usa la funzione [SafeRelease](../medfound/saferelease.md) per rilasciare i puntatori a interfaccia.
+> Questo esempio usa la [funzione SafeRelease](../medfound/saferelease.md) per rilasciare i puntatori a interfaccia.
 
  
 
@@ -100,13 +100,13 @@ HRESULT GetPinCategory(IPin *pPin, GUID *pPinCategory)
 
 <dl> <dt>
 
-[Requisiti PIN per i filtri di acquisizione](pin-requirements-for-capture-filters.md)
+[Requisiti di aggiunta per i filtri di acquisizione](pin-requirements-for-capture-filters.md)
 </dt> <dt>
 
 [Set di proprietà](property-sets.md)
 </dt> <dt>
 
-[Utilizzo delle categorie pin](working-with-pin-categories.md)
+[Uso delle categorie di aggiunta](working-with-pin-categories.md)
 </dt> </dl>
 
  

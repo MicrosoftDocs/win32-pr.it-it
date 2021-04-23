@@ -1,37 +1,37 @@
 ---
-description: L'elemento Group definisce un gruppo, ovvero l'oggetto di primo livello in una sequenza temporale.
+description: L'elemento group definisce un gruppo, l'oggetto di primo livello in una sequenza temporale.
 ms.assetid: db2f1fdd-bcb1-4401-91f4-5e167e4da215
-title: Elemento Group (DirectShow)
+title: Elemento group (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0b8146586d93a53093a68bb1abc08e85c52f14
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 31502cef89c8383e935f409d76b9e31ca53a2da1
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965820"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909249"
 ---
-# <a name="group-element"></a>Elemento Group
+# <a name="group-element"></a>Elemento group
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L'elemento **Group** definisce un gruppo, ovvero l'oggetto di primo livello in una sequenza temporale.
+**L'elemento** group definisce un gruppo, l'oggetto di primo livello in una sequenza temporale.
 
 ## <a name="attributes"></a>Attributi
 
-[**bitdepth**](bitdepth-attribute.md), [**buffering**](buffering-attribute.md), [**framerate**](framerate-attribute.md), [**Height**](height-attribute.md), [**Lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**Name**](name-attribute.md), [**PreviewMode**](previewmode-attribute.md), [**SamplingRate**](samplingrate-attribute.md), [**Type**](type-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md), [**Width**](width-attribute.md)
+[**bitdepth**](bitdepth-attribute.md), [**buffering,**](buffering-attribute.md) [**framerate**](framerate-attribute.md), [**height**](height-attribute.md) [**,**](lock-attribute.md)lock , [**mute**](mute-attribute.md), [**name**](name-attribute.md), [**previewmode**](previewmode-attribute.md), [**samplingrate**](samplingrate-attribute.md), [**type**](type-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md), [**width**](width-attribute.md)
 
 ## <a name="parentchild-information"></a>Informazioni padre/figlio
 
 
 
-|          |                                                                                                          |
+| Label | Valore |
 |----------|----------------------------------------------------------------------------------------------------------|
-| Padre   | [**sequenza temporale**](timeline-element.md)                                                                     |
-| Children | [**composto**](composite-element.md), [**effetto**](effect-element.md), [**traccia**](track-element.md) |
+| Padre   | [**linea temporale**](timeline-element.md)                                                                     |
+| Children | [**composito,**](composite-element.md) [**effetto,**](effect-element.md) [**traccia**](track-element.md) |
 
 
 
@@ -39,7 +39,7 @@ L'elemento **Group** definisce un gruppo, ovvero l'oggetto di primo livello in u
 
 ## <a name="remarks"></a>Commenti
 
-All'interno di un `group` elemento, la priorità dei livelli annidati viene determinata in modo implicito in base all'ordine in cui vengono visualizzati all'interno dell'elemento. Il primo livello ha priorità 0 e i livelli successivi hanno valori di priorità sempre maggiori.
+`group`All'interno di un elemento, la priorità dei livelli annidati viene determinata in modo implicito dall'ordine in cui appaiono all'interno dell'elemento. Il primo livello ha la priorità 0 e i livelli successivi hanno valori di priorità crescenti.
 
 ## <a name="examples"></a>Esempi
 

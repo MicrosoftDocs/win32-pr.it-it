@@ -1,31 +1,31 @@
 ---
 description: Si applica a Windows Vista e versioni successive.
 ms.assetid: 3e342219-341e-49a2-9f8f-4188dd7bf719
-title: Proprietà AM_RATE_ResetOnTimeDisc (dvdmedia. h)
+title: AM_RATE_ResetOnTimeDisc proprietà (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5c26763d32513652a08d38b52bf6fb745d3d321
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d465329c2c8de1a66f04a830d183b8cba88c0728
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330328"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910249"
 ---
-# <a name="am_rate_resetontimedisc-property"></a>\_Proprietà rate \_ ResetOnTimeDisc
+# <a name="am_rate_resetontimedisc-property"></a>Am \_ RATE \_ ResetOnTimeDisc - proprietà
 
 Si applica a Windows Vista e versioni successive.
 
-Questa proprietà esegue una query se il decodificatore risincronizza i timestamp di output ai timestamp di input quando il decodificatore riceve un campione con il flag di discontinuità.
+Questa proprietà esegue una query per determinare se il decodificatore risincronizza i timestamp di output nei timestamp di input quando il decodificatore riceve un campione con il flag di discontinuità.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 
 
-|                   |                               |
+| Label | Valore |
 |-------------------|-------------------------------|
-| GUID set di proprietà | \_TSRateChange KSPROPSETID \_ |
-| ID proprietà       | \_Frequenza \_ ResetOnTimeDisc     |
-| Tipo di dati         | **DWORD**                     |
+| GUID set di proprietà | AM \_ KSPROPSETID \_ TSRateChange |
+| ID proprietà       | AM \_ RATE \_ ResetOnTimeDisc     |
+| Tipo di dati         | **Dword**                     |
 
 
 
@@ -33,11 +33,11 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà supporta le modifiche alla frequenza uniforme. Se il valore di questa proprietà è **true** e il decodificatore riceve un esempio di input con il \_ flag AM Sample \_ TIMEDISCONTINUITY, il fotogramma decodificato deve avere lo stesso timestamp del frame di input.
+Questa proprietà supporta le modifiche della velocità uniforme. Se il valore di questa proprietà è **TRUE** e il decodificatore riceve un campione di input con il flag AM \_ SAMPLE TIMEDISCONTINUITY, il frame decodificato deve avere lo stesso timestamp del frame di \_ input.
 
-Per recuperare il \_ flag TIMEDISCONTINUITY di esempio AM \_ , chiamare [**IMediaSample2:: GetProperties**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-getproperties) nell'esempio. Il flag viene impostato nel membro **dwSampleFlags** della struttura delle [**\_ \_ Proprietà SAMPLE2**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) .
+Per recuperare il flag AM \_ SAMPLE \_ TIMEDISCONTINUITY, chiamare [**IMediaSample2::GetProperties**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-getproperties) nell'esempio. Il flag è impostato nel **membro dwSampleFlags** della [**struttura AM \_ SAMPLE2 \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) PROPERTIES.
 
-Per ulteriori informazioni, vedere [miglioramenti della riproduzione DVD in Windows Vista](dvd-playback-enhancements-in-windows-vista.md).
+Per altre informazioni, vedere [DVD Playback Enhancements in Windows Vista](dvd-playback-enhancements-in-windows-vista.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Per ulteriori informazioni, vedere [miglioramenti della riproduzione DVD in Wind
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Per ulteriori informazioni, vedere [miglioramenti della riproduzione DVD in Wind
 
 <dl> <dt>
 
-[**Set di proprietà di modifica della frequenza**](rate-change-property-set.md)
+[**Rate Change Property Set**](rate-change-property-set.md)
 </dt> </dl>
 
  

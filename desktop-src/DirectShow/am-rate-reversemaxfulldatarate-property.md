@@ -1,32 +1,32 @@
 ---
 description: Si applica a Windows Vista e versioni successive.
 ms.assetid: 4f170736-516d-4420-a215-e0e414f036cd
-title: Proprietà AM_RATE_ReverseMaxFullDataRate (dvdmedia. h)
+title: AM_RATE_ReverseMaxFullDataRate proprietà (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 679e83038a74e64d7a39e8757a9ffaf61fc88c93
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31e376c6e95160c6a6c3c6637a765d868e282d33
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330325"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107910239"
 ---
-# <a name="am_rate_reversemaxfulldatarate-property"></a>\_Proprietà rate \_ ReverseMaxFullDataRate
+# <a name="am_rate_reversemaxfulldatarate-property"></a>Proprietà AM \_ RATE \_ ReverseMaxFullDataRate
 
 Si applica a Windows Vista e versioni successive.
 
-Restituisce la frequenza massima di riproduzione inversa del decodificatore. Il valore della proprietà è il valore assoluto della velocità inversa massima x 10000. Se ad esempio la velocità massima inversa è-2,0, il valore di questa proprietà è 20000.
+Restituisce la velocità massima di riproduzione inversa del decodificatore. Il valore della proprietà è il valore assoluto della velocità inversa massima x 10000. Ad esempio, se la velocità inversa massima è -2,0, il valore di questa proprietà è 20000.
 
-Il tipo di dati di questa proprietà **è \_ MaxFullDataRate**, che è un oggetto `typedef` per **Long**.
+Il tipo di dati per questa proprietà **è AM \_ MaxFullDataRate,** che è un `typedef` per **LONG.**
 
 Questa proprietà è di sola lettura.
 
 
 
-|                   |                                  |
+| Label | Valore |
 |-------------------|----------------------------------|
-| GUID set di proprietà | \_TSRateChange KSPROPSETID \_    |
-| ID proprietà       | \_Frequenza \_ ReverseMaxFullDataRate |
+| GUID set di proprietà | AM \_ KSPROPSETID \_ TSRateChange    |
+| ID proprietà       | AM \_ RATE \_ ReverseMaxFullDataRate |
 | Tipo di dati         | **AM \_ MaxFullDataRate**          |
 
 
@@ -35,7 +35,7 @@ Questa proprietà è di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-I decodificatori che supportano la riproduzione Smooth inversa devono esporre questa proprietà. Per ulteriori informazioni, vedere [miglioramenti della riproduzione DVD in Windows Vista](dvd-playback-enhancements-in-windows-vista.md).
+I decodificatori che supportano la riproduzione inversa uniforme devono esporre questa proprietà. Per altre informazioni, vedere [DVD Playback Enhancements in Windows Vista](dvd-playback-enhancements-in-windows-vista.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ I decodificatori che supportano la riproduzione Smooth inversa devono esporre qu
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdmedia. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ I decodificatori che supportano la riproduzione Smooth inversa devono esporre qu
 
 <dl> <dt>
 
-[**Set di proprietà di modifica della frequenza**](rate-change-property-set.md)
+[**Rate Change Property Set**](rate-change-property-set.md)
 </dt> </dl>
 
  

@@ -12,189 +12,189 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 615e7cde4a8f82c3f4a9a95791912c5dc3f77ff3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f2895f773721f7c900003cbaa0f070c277a0e260
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955960"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909259"
 ---
 # <a name="evaluator-state-variables"></a>Variabili di stato dell'analizzatore
 
-<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordine GL</dt> <dd> 
+<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ GL</dt> <dd> 
 
-|                  |                                |
+| Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | ordine mappa 1-D                  |
+| Descrizione:     | Ordine mappa 1D                  |
 | Gruppo di attributi: |                                |
 | Valore iniziale:   | 1                              |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordine GL</dt> <dd> 
+</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ GL</dt> <dd> 
 
-|                  |                                |
+| Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | ordini Mappa 2D                 |
+| Descrizione:     | Ordini mappa 2D                 |
 | Gruppo di attributi: |                                |
-| Valore iniziale:   | 1, 1                            |
+| Valore iniziale:   | 1,1                            |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_Coeff GL</dt> <dd> 
+</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL \_ COEFF</dt> <dd> 
 
-|                  |                                |
+| Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | punti di controllo 1-D             |
+| Descrizione:     | Punti di controllo 1D             |
 | Gruppo di attributi: |                                |
 | Valore iniziale:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_Coeff GL</dt> <dd> 
+</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL \_ COEFF</dt> <dd> 
 
-|                  |                                |
+| Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | punti di controllo 2D             |
+| Descrizione:     | Punti di controllo 2D             |
 | Gruppo di attributi: |                                |
 | Valore iniziale:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_dominio GL</dt> <dd> 
+</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>DOMINIO \_ GL</dt> <dd> 
 
-|                  |                                |
+| Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | endpoint del dominio 1-D           |
+| Descrizione:     | Endpoint di dominio 1D           |
 | Gruppo di attributi: |                                |
 | Valore iniziale:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_dominio GL</dt> <dd> 
+</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>DOMINIO \_ GL</dt> <dd> 
 
-|                  |                                |
+| Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | endpoint del dominio 2D           |
+| Descrizione:     | Endpoint di dominio 2D           |
 | Gruppo di attributi: |                                |
 | Valore iniziale:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAP1_x"></span><span id="gl_map1_x"></span><span id="GL_MAP1_X"></span>GL \_ Mappa1 \_ x</dt> <dd> 
+</dd> <dt><span id="GL_MAP1_x"></span><span id="gl_map1_x"></span><span id="GL_MAP1_X"></span>GL \_ MAP1 \_ x</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | la mappa 1-D Abilita: *x* è il tipo di mappa   |
-| Gruppo di attributi: | EVAL/Enable                        |
-| Valore iniziale:   | GL \_ false                          |
+| Descrizione:     | La mappa 1D abilita: *x* è il tipo di mappa   |
+| Gruppo di attributi: | eval/enable                        |
+| Valore iniziale:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL \_ map2 \_ x</dt> <dd> 
+</dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL \_ MAP2 \_ x</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | la mappa 2D Abilita: *x* è il tipo di mappa   |
-| Gruppo di attributi: | EVAL/Enable                        |
-| Valore iniziale:   | GL \_ false                          |
+| Descrizione:     | La mappa 2D abilita: *x* è il tipo di mappa   |
+| Gruppo di attributi: | eval/enable                        |
+| Valore iniziale:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>\_Dominio della \_ griglia GL Mappa1 \_</dt> <dd> 
+</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>DOMINIO \_ DELLA GRIGLIA GL MAP1 \_ \_</dt> <dd> 
 
-|                  |                                                                                |
+| Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | endpoint della griglia da 1 a D                                                             |
+| Descrizione:     | Endpoint griglia 1D                                                             |
 | Gruppo di attributi: | eval                                                                           |
-| Valore iniziale:   | 0, 1                                                                            |
+| Valore iniziale:   | 0,1                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>\_Dominio della \_ griglia GL map2 \_</dt> <dd> 
+</dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>DOMINIO \_ GRIGLIA GL MAP2 \_ \_</dt> <dd> 
 
-|                  |                                                                                |
+| Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | endpoint della griglia 2D                                                             |
+| Descrizione:     | Endpoint della griglia 2D                                                             |
 | Gruppo di attributi: | eval                                                                           |
 | Valore iniziale:   | 0, 1; 0, 1                                                                     |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>\_ \_ Segmenti griglia GL \_ Mappa1</dt> <dd> 
+</dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>SEGMENTI \_ DELLA GRIGLIA GL MAP1 \_ \_</dt> <dd> 
 
-|                  |                                    |
+| Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | divisioni della griglia da 1 a D                 |
+| Descrizione:     | Divisioni griglia 1D                 |
 | Gruppo di attributi: | eval                               |
 | Valore iniziale:   | 1                                  |
 | Comando Get:     | [**glGetFloatv**](glgetfloatv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>\_ \_ Segmenti griglia GL \_ Mappa1</dt> <dd> 
+</dd> <dt><span id="GL_MAP1_GRID_SEGMENTS"></span><span id="gl_map1_grid_segments"></span>SEGMENTI \_ DELLA GRIGLIA GL MAP1 \_ \_</dt> <dd> 
 
-|                  |                                                                                |
+| Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | segmenti griglia 2D                                                              |
+| Descrizione:     | Segmenti di griglia 2D                                                              |
 | Gruppo di attributi: | eval                                                                           |
 | Valore iniziale:   | 1, 1                                                                           |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-</dd> <dt><span id="GL_AUTO_NORMAL"></span><span id="gl_auto_normal"></span>GL \_ auto \_ normale</dt> <dd> 
+</dd> <dt><span id="GL_AUTO_NORMAL"></span><span id="gl_auto_normal"></span>GL \_ AUTO \_ NORMAL</dt> <dd> 
 
-|                  |                                             |
+| Proprietà | Valore |
 |------------------|---------------------------------------------|
-| Descrizione:     | True se la generazione automatica normale è abilitata |
+| Descrizione:     | True se la generazione normale automatica è abilitata |
 | Gruppo di attributi: | eval                                        |
-| Valore iniziale:   | GL \_ false                                   |
+| Valore iniziale:   | GL \_ FALSE                                   |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md)          |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

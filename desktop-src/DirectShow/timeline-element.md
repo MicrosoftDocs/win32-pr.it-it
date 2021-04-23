@@ -1,7 +1,7 @@
 ---
-description: L'elemento Timeline definisce la sequenza temporale. Questo elemento è il nodo radice del file XML.
+description: L'elemento della sequenza temporale definisce la sequenza temporale. Questo elemento è il nodo radice nel file XML.
 ms.assetid: db1da09f-d9b2-43fa-8dec-e3dc11cbfafa
-title: Elemento Timeline (Windows. UI. XAML. Media. Animation. h)
+title: Elemento timeline (Windows.ui.xaml.media.animation.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.media.animation.h
-ms.openlocfilehash: ebbbbdf80ce750f0354eafa3b692be8ed4c9df35
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 97e87dbbcfbcefb8968f6bbe43e9df94277e3d7a
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325473"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107908799"
 ---
-# <a name="timeline-element"></a>Elemento Timeline
+# <a name="timeline-element"></a>Elemento timeline
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `timeline` elemento definisce la sequenza temporale. Questo elemento è il nodo radice del file XML.
+`timeline`L'elemento definisce la sequenza temporale. Questo elemento è il nodo radice nel file XML.
 
 ## <a name="attributes"></a>Attributi
 
@@ -37,10 +37,10 @@ L' `timeline` elemento definisce la sequenza temporale. Questo elemento è il no
 
 
 
-|          |                                                       |
+| Label | Valore |
 |----------|-------------------------------------------------------|
-| Padre   | Nessuna. Questo elemento deve essere il nodo radice del file. |
-| Children | [**gruppo**](group-element.md)                        |
+| Padre   | Nessuna. Questo elemento deve essere il nodo radice nel file . |
+| Children | [**Gruppo**](group-element.md)                        |
 
 
 
@@ -61,7 +61,7 @@ L' `timeline` elemento definisce la sequenza temporale. Questo elemento è il no
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Windows. UI. XAML. Media. Animation. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Windows.ui.xaml.media.animation.h</dt> </dl> |
 
 
 

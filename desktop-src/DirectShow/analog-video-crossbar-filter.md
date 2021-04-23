@@ -1,40 +1,40 @@
 ---
-description: Filtro traversa video analogico
+description: Filtro barra incrociata video analogico
 ms.assetid: 668f6a8b-a4ed-4e4a-956c-a87f165225fa
-title: Filtro traversa video analogico
+title: Filtro barra incrociata video analogico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2eb086b85859a3e1e895cd322c68c56916ac19a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d17d8700131dbc658a5233d56f339c39eac7a3a0
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965641"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909599"
 ---
-# <a name="analog-video-crossbar-filter"></a>Filtro traversa video analogico
+# <a name="analog-video-crossbar-filter"></a>Filtro barra incrociata video analogico
 
-Il filtro traversa video analogico rappresenta una traversa video in un dispositivo di acquisizione video che supporta il Windows Driver Model (WDM).
+Il filtro crossbar video analogico rappresenta una barra incrociata video in un dispositivo di acquisizione video che supporta Windows Driver Model (WDM).
 
-Questo filtro è un filtro wrapper per le barre multibarra nei dispositivi di streaming WDM. Il nome descrittivo del filtro viene ricavato dal dispositivo. Ogni pin di output rappresenta un percorso hardware per il video di Baseband analogico. Uno dei pin di input deriva da un sintonizzatore TV (il [filtro del sintonizzatore TV](tv-tuner-filter.md)). Altri pin di input supportano flussi video o audio. Il filtro supporta eventuali sottotipi di supporti e formati supportati nelle connessioni downstream.
+Questo filtro è un filtro wrapper per le barre incrociate nei dispositivi di streaming WDM. Il nome descrittivo del filtro deriva dal dispositivo. Ogni pin di output rappresenta un percorso hardware per video di baseband analogico. Uno dei pin di input proviene da un siner TV [(TV Tuner Filter).](tv-tuner-filter.md) Altri pin di input supportano flussi audio o video. Il filtro supporta tutti i sottotipi multimediali e i formati supportati nelle connessioni downstream.
 
-Non è possibile creare direttamente questo filtro con CoCreateInstance. L'interfaccia [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) aggiunge automaticamente questo filtro al grafico in base alle esigenze.
+Non è possibile creare direttamente questo filtro con CoCreateInstance. [**L'interfaccia ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) aggiunge automaticamente questo filtro al grafo in base alle esigenze.
 
-Per ulteriori informazioni sui filtri wrapper e sui dispositivi di streaming WDM, vedere la pagina relativa al [modo in cui i dispositivi hardware partecipano al grafico dei filtri](how-hardware-devices-participate-in-the-filter-graph.md).
+Per altre informazioni sui filtri wrapper e sui dispositivi di streaming WDM, vedere [How Hardware Devices Participate in the Filter Graph](how-hardware-devices-participate-in-the-filter-graph.md).
 
 
 
-|                                          |                                                                                                |
+| Label | Valore |
 |------------------------------------------|------------------------------------------------------------------------------------------------|
 | Interfacce di filtro                        | [**IAMCrossbar**](/windows/desktop/api/Strmif/nn-strmif-iamcrossbar), ISpecifyPropertyPages, IPersistPropertyBag, IPersistStream |
 | Tipi di supporti pin di input                    | MEDIATYPE \_ AnalogAudio, MEDIATYPE \_ AnalogVideo                                                 |
 | Interfacce pin di input                     | [**IKsPropertySet**](ikspropertyset.md)                                                       |
 | Tipi di supporti pin di output                   | MEDIATYPE \_ AnalogAudio, MEDIATYPE \_ AnalogVideo                                                 |
-| Interfacce del PIN di output                    | [**IKsPropertySet**](ikspropertyset.md)                                                       |
-| CLSID filtro                             | Non applicabile                                                                                 |
-| CLSID della pagina delle proprietà                      | \_CROSSBARFILTERPROPERTYPAGE CLSID                                                              |
+| Interfacce pin di output                    | [**IKsPropertySet**](ikspropertyset.md)                                                       |
+| Filtro CLSID                             | Non applicabile                                                                                 |
+| CLSID della pagina delle proprietà                      | CLSID \_ CrossbarFilterPropertyPage                                                              |
 | File eseguibile                               | ksxbar.ax                                                                                      |
 | [Merito](merit.md)                       | Dipendente dal driver.                                                                              |
-| [Categoria filtro](filter-categories.md) | \_KSCATEGORY \_ traversa                                                                       |
+| [Categoria filtro](filter-categories.md) | AM \_ KSCATEGORY \_ CROSSBAR                                                                       |
 
 
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni sui filtri wrapper e sui dispositivi di streaming WDM
 [Filtri DirectShow](directshow-filters.md)
 </dt> <dt>
 
-[Uso di maniglie](working-with-crossbars.md)
+[Uso delle barre incrociate](working-with-crossbars.md)
 </dt> </dl>
 
  
