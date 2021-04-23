@@ -1,9 +1,9 @@
 ---
-title: Variabili di stato colorazione
-description: Variabili di stato colorazione
+title: Variabili di stato di colorazione
+description: Variabili di stato di colorazione
 ms.assetid: 783a798a-f45c-4262-99b8-badd15f52cd5
 keywords:
-- Variabili di stato colorazione OpenGL
+- Variabili di stato di colorazione OpenGL
 topic_type:
 - apiref
 api_name:
@@ -12,124 +12,124 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d02a151b676e6f8fdd4ad98270ca4924e596bb9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: fb41866aa194461fd4edf72fdba8f4dad5de8766
+ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299227"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107909289"
 ---
-# <a name="coloring-state-variables"></a><span data-ttu-id="2b420-104">Variabili di stato colorazione</span><span class="sxs-lookup"><span data-stu-id="2b420-104">Coloring State Variables</span></span>
+# <a name="coloring-state-variables"></a><span data-ttu-id="b4ef0-104">Variabili di stato di colorazione</span><span class="sxs-lookup"><span data-stu-id="b4ef0-104">Coloring State Variables</span></span>
 
-<dl> <span data-ttu-id="2b420-105"><dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>\_colore di nebbia GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-105"><dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>GL\_FOG\_COLOR</dt> </span></span><dd> 
+<dl> <span data-ttu-id="b4ef0-105"><dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>COLORE \_ GL \_ OSANNA</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-105"><dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>GL\_FOG\_COLOR</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="b4ef0-106">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-106">Property</span></span> | <span data-ttu-id="b4ef0-107">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-107">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="2b420-106">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-106">Description:</span></span>     | <span data-ttu-id="2b420-107">Colore nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-107">Fog color</span></span>                                                                      |
-| <span data-ttu-id="2b420-108">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-108">Attribute group:</span></span> | <span data-ttu-id="2b420-109">nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-109">fog</span></span>                                                                            |
-| <span data-ttu-id="2b420-110">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-110">Initial value:</span></span>   | <span data-ttu-id="2b420-111">0, 0, 0, 0</span><span class="sxs-lookup"><span data-stu-id="2b420-111">0,0,0,0</span></span>                                                                        |
-| <span data-ttu-id="2b420-112">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-112">Get command:</span></span>     | [<span data-ttu-id="2b420-113">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="2b420-113">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="b4ef0-108">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-108">Description:</span></span>     | <span data-ttu-id="b4ef0-109">Colore osanna</span><span class="sxs-lookup"><span data-stu-id="b4ef0-109">Fog color</span></span>                                                                      |
+| <span data-ttu-id="b4ef0-110">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-110">Attribute group:</span></span> | <span data-ttu-id="b4ef0-111">Nebbia</span><span class="sxs-lookup"><span data-stu-id="b4ef0-111">fog</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-112">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-112">Initial value:</span></span>   | <span data-ttu-id="b4ef0-113">0,0,0,0</span><span class="sxs-lookup"><span data-stu-id="b4ef0-113">0,0,0,0</span></span>                                                                        |
+| <span data-ttu-id="b4ef0-114">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-114">Get command:</span></span>     | [<span data-ttu-id="b4ef0-115">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-115">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="2b420-114"></dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>\_indice di nebbia GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-114"></dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>GL\_FOG\_INDEX</dt> </span></span><dd> 
+<span data-ttu-id="b4ef0-116"></dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>INDICE GL \_ FOG \_</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-116"></dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>GL\_FOG\_INDEX</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="b4ef0-117">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-117">Property</span></span> | <span data-ttu-id="b4ef0-118">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-118">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="2b420-115">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-115">Description:</span></span>     | <span data-ttu-id="2b420-116">Indice nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-116">Fog index</span></span>                                                                      |
-| <span data-ttu-id="2b420-117">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-117">Attribute group:</span></span> | <span data-ttu-id="2b420-118">nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-118">fog</span></span>                                                                            |
-| <span data-ttu-id="2b420-119">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-119">Initial value:</span></span>   | <span data-ttu-id="2b420-120">0</span><span class="sxs-lookup"><span data-stu-id="2b420-120">0</span></span>                                                                              |
-| <span data-ttu-id="2b420-121">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-121">Get command:</span></span>     | [<span data-ttu-id="2b420-122">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="2b420-122">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="b4ef0-119">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-119">Description:</span></span>     | <span data-ttu-id="b4ef0-120">Indice delle nebbie</span><span class="sxs-lookup"><span data-stu-id="b4ef0-120">Fog index</span></span>                                                                      |
+| <span data-ttu-id="b4ef0-121">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-121">Attribute group:</span></span> | <span data-ttu-id="b4ef0-122">Nebbia</span><span class="sxs-lookup"><span data-stu-id="b4ef0-122">fog</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-123">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-123">Initial value:</span></span>   | <span data-ttu-id="b4ef0-124">0</span><span class="sxs-lookup"><span data-stu-id="b4ef0-124">0</span></span>                                                                              |
+| <span data-ttu-id="b4ef0-125">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-125">Get command:</span></span>     | [<span data-ttu-id="b4ef0-126">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-126">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="2b420-123"></dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>\_densità di nebbia GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-123"></dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>GL\_FOG\_DENSITY</dt> </span></span><dd> 
+<span data-ttu-id="b4ef0-127"></dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>DENSITÀ \_ DELLA DENSITÀ DELLA \_ NEBBIA GL</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-127"></dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>GL\_FOG\_DENSITY</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="b4ef0-128">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-128">Property</span></span> | <span data-ttu-id="b4ef0-129">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-129">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="2b420-124">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-124">Description:</span></span>     | <span data-ttu-id="2b420-125">Densità di nebbia esponenziale</span><span class="sxs-lookup"><span data-stu-id="2b420-125">Exponential fog density</span></span>                                                        |
-| <span data-ttu-id="2b420-126">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-126">Attribute group:</span></span> | <span data-ttu-id="2b420-127">nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-127">fog</span></span>                                                                            |
-| <span data-ttu-id="2b420-128">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-128">Initial value:</span></span>   | <span data-ttu-id="2b420-129">1.0</span><span class="sxs-lookup"><span data-stu-id="2b420-129">1.0</span></span>                                                                            |
-| <span data-ttu-id="2b420-130">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-130">Get command:</span></span>     | [<span data-ttu-id="2b420-131">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="2b420-131">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="b4ef0-130">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-130">Description:</span></span>     | <span data-ttu-id="b4ef0-131">Densità esponenziale di densità</span><span class="sxs-lookup"><span data-stu-id="b4ef0-131">Exponential fog density</span></span>                                                        |
+| <span data-ttu-id="b4ef0-132">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-132">Attribute group:</span></span> | <span data-ttu-id="b4ef0-133">Nebbia</span><span class="sxs-lookup"><span data-stu-id="b4ef0-133">fog</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-134">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-134">Initial value:</span></span>   | <span data-ttu-id="b4ef0-135">1,0</span><span class="sxs-lookup"><span data-stu-id="b4ef0-135">1.0</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-136">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-136">Get command:</span></span>     | [<span data-ttu-id="b4ef0-137">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-137">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="2b420-132"></dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>\_inizio di nebbia GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-132"></dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>GL\_FOG\_START</dt> </span></span><dd> 
+<span data-ttu-id="b4ef0-138"></dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>GL \_ \_ ALL'INIZIO</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-138"></dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>GL\_FOG\_START</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="b4ef0-139">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-139">Property</span></span> | <span data-ttu-id="b4ef0-140">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-140">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="2b420-133">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-133">Description:</span></span>     | <span data-ttu-id="2b420-134">Inizio nebbia lineare</span><span class="sxs-lookup"><span data-stu-id="2b420-134">Linear fog start</span></span>                                                               |
-| <span data-ttu-id="2b420-135">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-135">Attribute group:</span></span> | <span data-ttu-id="2b420-136">nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-136">fog</span></span>                                                                            |
-| <span data-ttu-id="2b420-137">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-137">Initial value:</span></span>   | <span data-ttu-id="2b420-138">0,0</span><span class="sxs-lookup"><span data-stu-id="2b420-138">0.0</span></span>                                                                            |
-| <span data-ttu-id="2b420-139">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-139">Get command:</span></span>     | [<span data-ttu-id="2b420-140">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="2b420-140">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="b4ef0-141">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-141">Description:</span></span>     | <span data-ttu-id="b4ef0-142">Inizio lineare</span><span class="sxs-lookup"><span data-stu-id="b4ef0-142">Linear fog start</span></span>                                                               |
+| <span data-ttu-id="b4ef0-143">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-143">Attribute group:</span></span> | <span data-ttu-id="b4ef0-144">Nebbia</span><span class="sxs-lookup"><span data-stu-id="b4ef0-144">fog</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-145">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-145">Initial value:</span></span>   | <span data-ttu-id="b4ef0-146">0,0</span><span class="sxs-lookup"><span data-stu-id="b4ef0-146">0.0</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-147">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-147">Get command:</span></span>     | [<span data-ttu-id="b4ef0-148">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-148">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="2b420-141"></dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>\_fine nebbia \_ GL</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-141"></dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL\_FOG\_END</dt> </span></span><dd> 
+<span data-ttu-id="b4ef0-149"></dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ FOG \_ END</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-149"></dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL\_FOG\_END</dt> </span></span><dd> 
 
-|                  |                                                                                |
+| <span data-ttu-id="b4ef0-150">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-150">Property</span></span> | <span data-ttu-id="b4ef0-151">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-151">Value</span></span> |
 |------------------|--------------------------------------------------------------------------------|
-| <span data-ttu-id="2b420-142">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-142">Description:</span></span>     | <span data-ttu-id="2b420-143">Fine nebbia lineare</span><span class="sxs-lookup"><span data-stu-id="2b420-143">Linear fog end</span></span>                                                                 |
-| <span data-ttu-id="2b420-144">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-144">Attribute group:</span></span> | <span data-ttu-id="2b420-145">nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-145">fog</span></span>                                                                            |
-| <span data-ttu-id="2b420-146">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-146">Initial value:</span></span>   | <span data-ttu-id="2b420-147">1.0</span><span class="sxs-lookup"><span data-stu-id="2b420-147">1.0</span></span>                                                                            |
-| <span data-ttu-id="2b420-148">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-148">Get command:</span></span>     | [<span data-ttu-id="2b420-149">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="2b420-149">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="b4ef0-152">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-152">Description:</span></span>     | <span data-ttu-id="b4ef0-153">Fine lineare</span><span class="sxs-lookup"><span data-stu-id="b4ef0-153">Linear fog end</span></span>                                                                 |
+| <span data-ttu-id="b4ef0-154">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-154">Attribute group:</span></span> | <span data-ttu-id="b4ef0-155">Nebbia</span><span class="sxs-lookup"><span data-stu-id="b4ef0-155">fog</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-156">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-156">Initial value:</span></span>   | <span data-ttu-id="b4ef0-157">1,0</span><span class="sxs-lookup"><span data-stu-id="b4ef0-157">1.0</span></span>                                                                            |
+| <span data-ttu-id="b4ef0-158">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-158">Get command:</span></span>     | [<span data-ttu-id="b4ef0-159">**glGetFloatv**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-159">**glGetFloatv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="2b420-150"></dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>\_modalità di nebbia GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-150"></dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>GL\_FOG\_MODE</dt> </span></span><dd> 
+<span data-ttu-id="b4ef0-160"></dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>MODALITÀ \_ GL \_ OSA</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-160"></dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>GL\_FOG\_MODE</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="b4ef0-161">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-161">Property</span></span> | <span data-ttu-id="b4ef0-162">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-162">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="2b420-151">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-151">Description:</span></span>     | <span data-ttu-id="2b420-152">Modalità nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-152">Fog mode</span></span>                                                                         |
-| <span data-ttu-id="2b420-153">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-153">Attribute group:</span></span> | <span data-ttu-id="2b420-154">nebbia</span><span class="sxs-lookup"><span data-stu-id="2b420-154">fog</span></span>                                                                              |
-| <span data-ttu-id="2b420-155">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-155">Initial value:</span></span>   | <span data-ttu-id="2b420-156">\_Exp GL</span><span class="sxs-lookup"><span data-stu-id="2b420-156">GL\_EXP</span></span>                                                                          |
-| <span data-ttu-id="2b420-157">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-157">Get command:</span></span>     | [<span data-ttu-id="2b420-158">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="2b420-158">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="b4ef0-163">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-163">Description:</span></span>     | <span data-ttu-id="b4ef0-164">Modalità osa</span><span class="sxs-lookup"><span data-stu-id="b4ef0-164">Fog mode</span></span>                                                                         |
+| <span data-ttu-id="b4ef0-165">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-165">Attribute group:</span></span> | <span data-ttu-id="b4ef0-166">Nebbia</span><span class="sxs-lookup"><span data-stu-id="b4ef0-166">fog</span></span>                                                                              |
+| <span data-ttu-id="b4ef0-167">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-167">Initial value:</span></span>   | <span data-ttu-id="b4ef0-168">GL \_ EXP</span><span class="sxs-lookup"><span data-stu-id="b4ef0-168">GL\_EXP</span></span>                                                                          |
+| <span data-ttu-id="b4ef0-169">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-169">Get command:</span></span>     | [<span data-ttu-id="b4ef0-170">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-170">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="2b420-159"></dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>\_nebbia GL</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-159"></dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>GL\_FOG</dt> </span></span><dd> 
+<span data-ttu-id="b4ef0-171"></dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>GL \_ OSA</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-171"></dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>GL\_FOG</dt> </span></span><dd> 
 
-|                  |                                    |
+| <span data-ttu-id="b4ef0-172">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-172">Property</span></span> | <span data-ttu-id="b4ef0-173">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-173">Value</span></span> |
 |------------------|------------------------------------|
-| <span data-ttu-id="2b420-160">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-160">Description:</span></span>     | <span data-ttu-id="2b420-161">True se la nebbia è abilitata</span><span class="sxs-lookup"><span data-stu-id="2b420-161">True if fog enabled</span></span>                |
-| <span data-ttu-id="2b420-162">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-162">Attribute group:</span></span> | <span data-ttu-id="2b420-163">nebbia/Abilita</span><span class="sxs-lookup"><span data-stu-id="2b420-163">fog/enable</span></span>                         |
-| <span data-ttu-id="2b420-164">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-164">Initial value:</span></span>   | <span data-ttu-id="2b420-165">GL \_ false</span><span class="sxs-lookup"><span data-stu-id="2b420-165">GL\_FALSE</span></span>                          |
-| <span data-ttu-id="2b420-166">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-166">Get command:</span></span>     | [<span data-ttu-id="2b420-167">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="2b420-167">**glIsEnabled**</span></span>](glisenabled.md) |
+| <span data-ttu-id="b4ef0-174">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-174">Description:</span></span>     | <span data-ttu-id="b4ef0-175">True se la nebbia è abilitata</span><span class="sxs-lookup"><span data-stu-id="b4ef0-175">True if fog enabled</span></span>                |
+| <span data-ttu-id="b4ef0-176">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-176">Attribute group:</span></span> | <span data-ttu-id="b4ef0-177">osa/abilita</span><span class="sxs-lookup"><span data-stu-id="b4ef0-177">fog/enable</span></span>                         |
+| <span data-ttu-id="b4ef0-178">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-178">Initial value:</span></span>   | <span data-ttu-id="b4ef0-179">GL \_ FALSE</span><span class="sxs-lookup"><span data-stu-id="b4ef0-179">GL\_FALSE</span></span>                          |
+| <span data-ttu-id="b4ef0-180">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-180">Get command:</span></span>     | [<span data-ttu-id="b4ef0-181">**glIsEnabled**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-181">**glIsEnabled**</span></span>](glisenabled.md) |
 
 
 
- 
+ 
 
-<span data-ttu-id="2b420-168"></dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>\_modello di ombreggiatura GL \_</dt> </span><span class="sxs-lookup"><span data-stu-id="2b420-168"></dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>GL\_SHADE\_MODEL</dt> </span></span><dd> 
+<span data-ttu-id="b4ef0-182"></dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>MODELLO DI \_ \_ OMBREGGIATURA GL</dt> </span><span class="sxs-lookup"><span data-stu-id="b4ef0-182"></dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>GL\_SHADE\_MODEL</dt> </span></span><dd> 
 
-|                  |                                                                                  |
+| <span data-ttu-id="b4ef0-183">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4ef0-183">Property</span></span> | <span data-ttu-id="b4ef0-184">Valore</span><span class="sxs-lookup"><span data-stu-id="b4ef0-184">Value</span></span> |
 |------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="2b420-169">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="2b420-169">Description:</span></span>     | <span data-ttu-id="2b420-170">impostazione **glShadeModel**</span><span class="sxs-lookup"><span data-stu-id="2b420-170">**glShadeModel** setting</span></span>                                                         |
-| <span data-ttu-id="2b420-171">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="2b420-171">Attribute group:</span></span> | <span data-ttu-id="2b420-172">illuminazione</span><span class="sxs-lookup"><span data-stu-id="2b420-172">lighting</span></span>                                                                         |
-| <span data-ttu-id="2b420-173">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="2b420-173">Initial value:</span></span>   | <span data-ttu-id="2b420-174">GL \_ smussato</span><span class="sxs-lookup"><span data-stu-id="2b420-174">GL\_SMOOTH</span></span>                                                                       |
-| <span data-ttu-id="2b420-175">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="2b420-175">Get command:</span></span>     | [<span data-ttu-id="2b420-176">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="2b420-176">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
+| <span data-ttu-id="b4ef0-185">Descrizione:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-185">Description:</span></span>     | <span data-ttu-id="b4ef0-186">**Impostazione glShadeModel**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-186">**glShadeModel** setting</span></span>                                                         |
+| <span data-ttu-id="b4ef0-187">Gruppo di attributi:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-187">Attribute group:</span></span> | <span data-ttu-id="b4ef0-188">illuminazione</span><span class="sxs-lookup"><span data-stu-id="b4ef0-188">lighting</span></span>                                                                         |
+| <span data-ttu-id="b4ef0-189">Valore iniziale:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-189">Initial value:</span></span>   | <span data-ttu-id="b4ef0-190">GL \_ SMOOTH</span><span class="sxs-lookup"><span data-stu-id="b4ef0-190">GL\_SMOOTH</span></span>                                                                       |
+| <span data-ttu-id="b4ef0-191">Comando Get:</span><span class="sxs-lookup"><span data-stu-id="b4ef0-191">Get command:</span></span>     | [<span data-ttu-id="b4ef0-192">**glGetIntegerv**</span><span class="sxs-lookup"><span data-stu-id="b4ef0-192">**glGetIntegerv**</span></span>](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
