@@ -39,19 +39,19 @@ api_location:
 - dwrite.dll
 api_name:
 - IDWriteBitmapRenderTarget2.GetBitmapData
-ms.openlocfilehash: 3dbc87697750ee07939602dc694468aa68f5c66d
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: f84959338550722d9ce1d2d7097d652fcb140f1f
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881850"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955044"
 ---
 # <a name="idwritebitmaprendertarget2getbitmapdata-method-dwrite_3h"></a>Metodo IDWriteBitmapRenderTarget2::GetBitmapData (dwrite_3.h)
 
 Recupera i dati pixel da una destinazione di rendering bitmap.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedi [Panoramica di DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
+> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedere [Panoramica di DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,16 +73,16 @@ Puntatore ai dati pixel.
 
 Tipo: <b>HRESULT</b>
 
-Se questo metodo ha esito positivo, restituisce <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. In caso contrario, restituisce un <b xmlns:loc="http://microsoft.com/wdcml/l10n">codice di errore HRESULT.</b>
+Se questo metodo ha esito positivo, <b xmlns:loc="http://microsoft.com/wdcml/l10n">restituisce</b>S_OK . In caso contrario, restituisce un <b xmlns:loc="http://microsoft.com/wdcml/l10n">codice di errore HRESULT.</b>
 
 ## <a name="examples"></a>Esempio
 
-Vedere [l'argomento di panoramica DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
+Vedere [l'argomento di panoramica di DWriteCore](/windows/win32/directwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Windows 10, Project Dispositivi [app Win32] |
+| **Client minimo supportato** | Windows 10, Project Reunion [app Win32] |
 | **Intestazione** | dwrite_3.h (includere dwrite_core.h) |
 | **Libreria** | Dwrite.lib |
 | **DLL** | Dwrite.dll |

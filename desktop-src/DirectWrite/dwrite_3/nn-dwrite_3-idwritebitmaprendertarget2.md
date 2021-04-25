@@ -1,7 +1,7 @@
 ---
 UID: NN:dwrite_3.IDWriteBitmapRenderTarget2
 title: IDWriteBitmapRenderTarget2 (dwrite_3.h)
-description: Incapsula una bitmap indipendente dal dispositivo a 32 bit e un contesto di dispositivo, che può essere usato per il rendering dei glifi.
+description: Incapsula una bitmap indipendente dal dispositivo a 32 bit e un contesto di dispositivo, che possono essere usati per il rendering dei glifi.
 tech.root: DirectWrite
 ms.date: 11/11/2020
 ms.topic: reference
@@ -39,19 +39,19 @@ api_location:
 - dwrite.dll
 api_name:
 - IDWriteBitmapRenderTarget2
-ms.openlocfilehash: e12bceefd7ffb89a427edc04b4910b6346dfb066
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: 482aff4e2b9fbf03a89a15a7e38cc07d7542362b
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881820"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955034"
 ---
 # <a name="idwritebitmaprendertarget2-interface-dwrite_3h"></a>Interfaccia IDWriteBitmapRenderTarget2 (dwrite_3.h)
 
-Incapsula una bitmap indipendente dal dispositivo a 32 bit e un contesto di dispositivo, che può essere usato per il rendering dei glifi.
+Incapsula una bitmap indipendente dal dispositivo a 32 bit e un contesto di dispositivo, che possono essere usati per il rendering dei glifi.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedi [Panoramica di DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
+> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedere [Panoramica di DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
 
 ## <a name="inheritance"></a>Ereditarietà
 
@@ -68,5 +68,5 @@ Incapsula una bitmap indipendente dal dispositivo a 32 bit e un contesto di disp
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Windows 10, Project Dispositivi [app Win32] |
+| **Client minimo supportato** | Windows 10, Project Reunion [app Win32] |
 | **Intestazione** | dwrite_3.h (includere dwrite_core.h) |
