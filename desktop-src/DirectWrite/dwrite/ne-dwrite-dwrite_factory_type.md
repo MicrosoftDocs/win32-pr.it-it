@@ -39,19 +39,19 @@ api_location:
 - dwrite.h
 api_name:
 - DWRITE_FACTORY_TYPE
-ms.openlocfilehash: 87b0d1c2edcb836afd06d732f242b62441b9bd01
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: 85f74d72dc8799a7a3c78603ec0dd5f9c118fdb1
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881810"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955004"
 ---
 # <a name="dwrite_factory_type-enumeration-dwriteh"></a>DWRITE_FACTORY_TYPE enumerazione (dwrite.h)
 
 Specifica il tipo di oggetto factory DirectWrite.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedi [Panoramica di DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
+> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedere [Panoramica di DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -66,22 +66,22 @@ typedef enum DWRITE_FACTORY_TYPE {
 
 | Nome | Descrizione |
 | ---- |:---- |
-| DWRITE_FACTORY_TYPE_SHARED | Indica che la factory DirectWrite è una factory condivisa e che consente il riutilizzo dei dati dei tipi di carattere memorizzati nella cache tra più componenti in-process. Tali factory sfruttano anche i componenti di memorizzazione nella cache dei tipi di carattere tra processi per ottenere prestazioni migliori. |
+| DWRITE_FACTORY_TYPE_SHARED | Indica che la factory DirectWrite è una factory condivisa e che consente il riutilizzo dei dati dei tipi di carattere memorizzati nella cache tra più componenti in-process. Tali factory sfruttano anche i componenti di memorizzazione nella cache dei caratteri tra processi per ottenere prestazioni migliori. |
 | DWRITE_FACTORY_TYPE_ISOLATED | Indica che l'oggetto factory DirectWrite è isolato. Gli oggetti creati dalla factory isolata non interagiscono con lo stato DirectWrite interno da altri componenti. |
 | DWRITE_FACTORY_TYPE_ISOLATED2 | Indica che l'oggetto factory DirectWrite è limitato. Gli oggetti creati da una factory con restrizioni non usano né modificano lo stato interno o i dati memorizzati nella cache usati da altre factory. Inoltre, la raccolta di tipi di carattere di sistema contiene solo tipi di carattere noti.|
 
 ## <a name="examples"></a>Esempio
 
-Vedere [l'argomento di panoramica DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
+Vedere [l'argomento di panoramica di DWriteCore](/windows/win32/directwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
 ## <a name="remarks"></a>Commenti
 
-Un oggetto factory DirectWrite contiene informazioni sullo stato interno, ad esempio la registrazione del caricatore dei tipi di carattere e i dati dei tipi di carattere memorizzati nella cache. Nella maggior parte dei casi è consigliabile usare l'oggetto factory condiviso, perché consente a più componenti che usano DirectWrite di condividere informazioni interne sullo stato DirectWrite, riducendo così l'utilizzo della memoria. In alcuni casi, tuttavia, è preferibile ridurre l'impatto di un componente sul resto del processo, ad esempio un plug-in da un'origine non attendibile, tramite sandboxing e isolamento dal resto dei componenti del processo. In questi casi, è consigliabile usare una factory isolata per il componente sandbox.
+Un oggetto factory DirectWrite contiene informazioni sullo stato interno, ad esempio la registrazione del caricatore di caratteri e i dati dei tipi di carattere memorizzati nella cache. Nella maggior parte dei casi è consigliabile usare l'oggetto factory condiviso, perché consente a più componenti che usano DirectWrite di condividere informazioni interne sullo stato DirectWrite, riducendo così l'utilizzo della memoria. Esistono tuttavia casi in cui è consigliabile ridurre l'impatto di un componente sul resto del processo, ad esempio un plug-in da un'origine non attendibile, mediante sandboxing e isolarlo dal resto dei componenti del processo. In questi casi, è consigliabile usare una factory isolata per il componente sandbox.
 
-Una factory con restrizioni è più bloccata rispetto a una factory isolata. Non interagisce in alcun modo con una cache dei caratteri multi-processo o persistente. Inoltre, la raccolta di tipi di carattere di sistema restituita da questa factory include solo tipi di carattere noti. Se si passa **DWRITE_FACTORY_TYPE_ISOLATED2** a una versione di DWrite precedente a DWriteCore, [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) restituisce **E_INVALIDARG**.
+Una factory con restrizioni è più bloccata rispetto a una factory isolata. Non interagisce in alcun modo con una cache dei tipi di carattere tra processi o persistenti. Inoltre, la raccolta di tipi di carattere di sistema restituita da questa factory include solo tipi di carattere noti. Se si passa **DWRITE_FACTORY_TYPE_ISOLATED2** a una versione di DWrite precedente a DWriteCore, [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) restituisce **E_INVALIDARG**.
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Windows 10, Project Reunion [app Win32] |
-| **Intestazione** | dwrite.h (include dwrite_core.h) |
+| **Client minimo supportato** | Windows 10, Project Dispositivi [app Win32] |
+| **Intestazione** | dwrite.h (includere dwrite_core.h) |

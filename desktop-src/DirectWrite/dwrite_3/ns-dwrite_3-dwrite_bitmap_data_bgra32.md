@@ -39,19 +39,19 @@ api_location:
 - dwrite_3.h
 api_name:
 - DWRITE_BITMAP_DATA_BGRA32
-ms.openlocfilehash: 3d5b2168e5154f2e55b6f5acb83897f68d4a029c
-ms.sourcegitcommit: d7e9a20168111fb608f5fefb092b30f8e093d816
+ms.openlocfilehash: ad36eb8fe691330b471db0b7e8b5378f3e7614db
+ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107881830"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "107955054"
 ---
 # <a name="dwrite_bitmap_data_bgra32-structure-dwrite_3h"></a>DWRITE_BITMAP_DATA_BGRA32 struttura (dwrite_3.h)
 
 Rappresenta i dati bitmap in formato BGRA32.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedi [Panoramica di DWriteCore.](/windows/win32/DirectWrite/dwrite/dwritecore-overview)
+> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedere [Panoramica di DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -89,10 +89,10 @@ Puntatore alla posizione dei valori di bit per la bitmap.
 
 ## <a name="examples"></a>Esempio
 
-Vedere [l'argomento di panoramica DWriteCore](/windows/win32/DirectWrite/dwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
+Vedere [l'argomento di panoramica di DWriteCore](/windows/win32/directwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Windows 10, Project Dispositivi [app Win32] |
+| **Client minimo supportato** | Windows 10, Project Reunion [app Win32] |
 | **Intestazione** | dwrite_3.h (includere dwrite_core.h) |
