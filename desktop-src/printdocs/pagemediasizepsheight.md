@@ -1,42 +1,42 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 857caf51-ccf6-415c-aab3-1fed50fa7b34
 title: PageMediaSizePSHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cb576ce7d623f4d036db1332b0339e6cef518d3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 96c6ddd593d95ae740a5e03d37e3d79c73e1638b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320863"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993698"
 ---
-# <a name="pagemediasizepsheight"></a><span data-ttu-id="74c7c-104">PageMediaSizePSHeight</span><span class="sxs-lookup"><span data-stu-id="74c7c-104">PageMediaSizePSHeight</span></span>
+# <a name="pagemediasizepsheight"></a><span data-ttu-id="cb5a6-104">PageMediaSizePSHeight</span><span class="sxs-lookup"><span data-stu-id="cb5a6-104">PageMediaSizePSHeight</span></span>
 
-<span data-ttu-id="74c7c-105">Questo argomento non è aggiornato.</span><span class="sxs-lookup"><span data-stu-id="74c7c-105">This topic is not current.</span></span> <span data-ttu-id="74c7c-106">Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="74c7c-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
+<span data-ttu-id="cb5a6-105">Questo argomento non è corrente.</span><span class="sxs-lookup"><span data-stu-id="cb5a6-105">This topic is not current.</span></span> <span data-ttu-id="cb5a6-106">Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="cb5a6-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
 
-<span data-ttu-id="74c7c-107">Specifica l'altezza della pagina, in parallelo alla direzione di orientamento del feed (riferimento al [formato del file di descrizione della stampante di PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).</span><span class="sxs-lookup"><span data-stu-id="74c7c-107">Specifies the height of the page, parallel to the feed-orientation direction (Reference [PostScript Printer Description File Format Specification](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).</span></span>
+<span data-ttu-id="cb5a6-107">Specifica l'altezza della pagina, parallela alla direzione di orientamento del feed (Specifica del formato del file di descrizione della stampante [PostScript di riferimento).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)</span><span class="sxs-lookup"><span data-stu-id="cb5a6-107">Specifies the height of the page, parallel to the feed-orientation direction (Reference [PostScript Printer Description File Format Specification](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).</span></span>
 
--   [<span data-ttu-id="74c7c-108">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="74c7c-108">Element Information</span></span>](#element-information)
--   [<span data-ttu-id="74c7c-109">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="74c7c-109">Structure Content</span></span>](#structure-content)
+-   [<span data-ttu-id="cb5a6-108">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="cb5a6-108">Element Information</span></span>](#element-information)
+-   [<span data-ttu-id="cb5a6-109">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="cb5a6-109">Structure Content</span></span>](#structure-content)
 
-## <a name="element-information"></a><span data-ttu-id="74c7c-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="74c7c-110">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="cb5a6-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="cb5a6-110">Element Information</span></span>
 
 
 
-| <span data-ttu-id="74c7c-111">Nome</span><span class="sxs-lookup"><span data-stu-id="74c7c-111">Name</span></span>                       |                                                             |
+| <span data-ttu-id="cb5a6-111">Nome</span><span class="sxs-lookup"><span data-stu-id="cb5a6-111">Name</span></span> | <span data-ttu-id="cb5a6-112">Valore</span><span class="sxs-lookup"><span data-stu-id="cb5a6-112">Value</span></span> |
 |----------------------------|-------------------------------------------------------------|
-| <span data-ttu-id="74c7c-112">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="74c7c-112">Element Type</span></span> <br/>   | <span data-ttu-id="74c7c-113">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="74c7c-113">ParameterDef</span></span><br/>                                     |
-| <span data-ttu-id="74c7c-114">Prefisso ambito</span><span class="sxs-lookup"><span data-stu-id="74c7c-114">Scoping Prefix</span></span> <br/> | <span data-ttu-id="74c7c-115">Pagina</span><span class="sxs-lookup"><span data-stu-id="74c7c-115">Page</span></span><br/>                                             |
-| <span data-ttu-id="74c7c-116">Note</span><span class="sxs-lookup"><span data-stu-id="74c7c-116">Notes</span></span> <br/>          | <span data-ttu-id="74c7c-117">Collegato all'elemento PageMediaSize, opzione CustomPS</span><span class="sxs-lookup"><span data-stu-id="74c7c-117">Linked to PageMediaSize element, CustomPS option</span></span><br/> |
+| <span data-ttu-id="cb5a6-113">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="cb5a6-113">Element Type</span></span> <br/>   | <span data-ttu-id="cb5a6-114">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="cb5a6-114">ParameterDef</span></span><br/>                                     |
+| <span data-ttu-id="cb5a6-115">Prefisso di ambito</span><span class="sxs-lookup"><span data-stu-id="cb5a6-115">Scoping Prefix</span></span> <br/> | <span data-ttu-id="cb5a6-116">Pagina</span><span class="sxs-lookup"><span data-stu-id="cb5a6-116">Page</span></span><br/>                                             |
+| <span data-ttu-id="cb5a6-117">Note</span><span class="sxs-lookup"><span data-stu-id="cb5a6-117">Notes</span></span> <br/>          | <span data-ttu-id="cb5a6-118">Collegato all'elemento PageMediaSize, opzione CustomPS</span><span class="sxs-lookup"><span data-stu-id="cb5a6-118">Linked to PageMediaSize element, CustomPS option</span></span><br/> |
 
 
 
  
 
-## <a name="structure-content"></a><span data-ttu-id="74c7c-118">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="74c7c-118">Structure Content</span></span>
+## <a name="structure-content"></a><span data-ttu-id="cb5a6-119">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="cb5a6-119">Structure Content</span></span>
 
-<span data-ttu-id="74c7c-119">La struttura XML di questo elemento è la seguente:</span><span class="sxs-lookup"><span data-stu-id="74c7c-119">The XML structure of this element is:</span></span>
+<span data-ttu-id="cb5a6-120">La struttura XML di questo elemento è:</span><span class="sxs-lookup"><span data-stu-id="cb5a6-120">The XML structure of this element is:</span></span>
 
 ``` syntax
 <psf:ParameterDef name="psk:PageMediaSizePSHeight">
@@ -65,34 +65,34 @@ ms.locfileid: "106320863"
       
 ```
 
-## <a name="structure-properties"></a><span data-ttu-id="74c7c-120">Proprietà struttura</span><span class="sxs-lookup"><span data-stu-id="74c7c-120">Structure Properties</span></span>
+## <a name="structure-properties"></a><span data-ttu-id="cb5a6-121">Proprietà della struttura</span><span class="sxs-lookup"><span data-stu-id="cb5a6-121">Structure Properties</span></span>
 
-<span data-ttu-id="74c7c-121">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="74c7c-121">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
+<span data-ttu-id="cb5a6-122">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="cb5a6-122">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
 
 
 
-| <span data-ttu-id="74c7c-122">Proprietà</span><span class="sxs-lookup"><span data-stu-id="74c7c-122">Property</span></span>                | <span data-ttu-id="74c7c-123">xsi:type</span><span class="sxs-lookup"><span data-stu-id="74c7c-123">xsi:type</span></span>           | <span data-ttu-id="74c7c-124">Valore</span><span class="sxs-lookup"><span data-stu-id="74c7c-124">Value</span></span>                      |
+| <span data-ttu-id="cb5a6-123">Proprietà</span><span class="sxs-lookup"><span data-stu-id="cb5a6-123">Property</span></span>                | <span data-ttu-id="cb5a6-124">xsi:type</span><span class="sxs-lookup"><span data-stu-id="cb5a6-124">xsi:type</span></span>           | <span data-ttu-id="cb5a6-125">Valore</span><span class="sxs-lookup"><span data-stu-id="cb5a6-125">Value</span></span>                      |
 |-------------------------|--------------------|----------------------------|
-| <span data-ttu-id="74c7c-125">DataType</span><span class="sxs-lookup"><span data-stu-id="74c7c-125">DataType</span></span><br/>     | <span data-ttu-id="74c7c-126">string</span><span class="sxs-lookup"><span data-stu-id="74c7c-126">string</span></span><br/>  | <span data-ttu-id="74c7c-127">xs:integer</span><span class="sxs-lookup"><span data-stu-id="74c7c-127">xs:integer</span></span><br/>      |
-| <span data-ttu-id="74c7c-128">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="74c7c-128">DefaultValue</span></span><br/> | <span data-ttu-id="74c7c-129">numero intero</span><span class="sxs-lookup"><span data-stu-id="74c7c-129">integer</span></span><br/> | <span data-ttu-id="74c7c-130">Non definito</span><span class="sxs-lookup"><span data-stu-id="74c7c-130">undefined</span></span><br/>       |
-| <span data-ttu-id="74c7c-131">MaxValue</span><span class="sxs-lookup"><span data-stu-id="74c7c-131">MaxValue</span></span><br/>     | <span data-ttu-id="74c7c-132">numero intero</span><span class="sxs-lookup"><span data-stu-id="74c7c-132">integer</span></span><br/> | <span data-ttu-id="74c7c-133">Non definito</span><span class="sxs-lookup"><span data-stu-id="74c7c-133">undefined</span></span><br/>       |
-| <span data-ttu-id="74c7c-134">MinValue</span><span class="sxs-lookup"><span data-stu-id="74c7c-134">MinValue</span></span><br/>     | <span data-ttu-id="74c7c-135">numero intero</span><span class="sxs-lookup"><span data-stu-id="74c7c-135">integer</span></span><br/> | <span data-ttu-id="74c7c-136">Non definito</span><span class="sxs-lookup"><span data-stu-id="74c7c-136">undefined</span></span><br/>       |
-| <span data-ttu-id="74c7c-137">Obbligatorio</span><span class="sxs-lookup"><span data-stu-id="74c7c-137">Mandatory</span></span><br/>    | <span data-ttu-id="74c7c-138">string</span><span class="sxs-lookup"><span data-stu-id="74c7c-138">string</span></span><br/>  | <span data-ttu-id="74c7c-139">PSK: condizionale</span><span class="sxs-lookup"><span data-stu-id="74c7c-139">psk:Conditional</span></span><br/> |
-| <span data-ttu-id="74c7c-140">Più elementi</span><span class="sxs-lookup"><span data-stu-id="74c7c-140">Multiple</span></span><br/>     | <span data-ttu-id="74c7c-141">integer</span><span class="sxs-lookup"><span data-stu-id="74c7c-141">integer</span></span><br/> | <span data-ttu-id="74c7c-142">1</span><span class="sxs-lookup"><span data-stu-id="74c7c-142">1</span></span><br/>               |
-| <span data-ttu-id="74c7c-143">UnitType</span><span class="sxs-lookup"><span data-stu-id="74c7c-143">UnitType</span></span><br/>     | <span data-ttu-id="74c7c-144">string</span><span class="sxs-lookup"><span data-stu-id="74c7c-144">string</span></span><br/>  | <span data-ttu-id="74c7c-145">micron</span><span class="sxs-lookup"><span data-stu-id="74c7c-145">microns</span></span><br/>         |
+| <span data-ttu-id="cb5a6-126">DataType</span><span class="sxs-lookup"><span data-stu-id="cb5a6-126">DataType</span></span><br/>     | <span data-ttu-id="cb5a6-127">string</span><span class="sxs-lookup"><span data-stu-id="cb5a6-127">string</span></span><br/>  | <span data-ttu-id="cb5a6-128">xs:integer</span><span class="sxs-lookup"><span data-stu-id="cb5a6-128">xs:integer</span></span><br/>      |
+| <span data-ttu-id="cb5a6-129">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="cb5a6-129">DefaultValue</span></span><br/> | <span data-ttu-id="cb5a6-130">numero intero</span><span class="sxs-lookup"><span data-stu-id="cb5a6-130">integer</span></span><br/> | <span data-ttu-id="cb5a6-131">Non definito</span><span class="sxs-lookup"><span data-stu-id="cb5a6-131">undefined</span></span><br/>       |
+| <span data-ttu-id="cb5a6-132">MaxValue</span><span class="sxs-lookup"><span data-stu-id="cb5a6-132">MaxValue</span></span><br/>     | <span data-ttu-id="cb5a6-133">numero intero</span><span class="sxs-lookup"><span data-stu-id="cb5a6-133">integer</span></span><br/> | <span data-ttu-id="cb5a6-134">Non definito</span><span class="sxs-lookup"><span data-stu-id="cb5a6-134">undefined</span></span><br/>       |
+| <span data-ttu-id="cb5a6-135">Minvalue</span><span class="sxs-lookup"><span data-stu-id="cb5a6-135">MinValue</span></span><br/>     | <span data-ttu-id="cb5a6-136">numero intero</span><span class="sxs-lookup"><span data-stu-id="cb5a6-136">integer</span></span><br/> | <span data-ttu-id="cb5a6-137">Non definito</span><span class="sxs-lookup"><span data-stu-id="cb5a6-137">undefined</span></span><br/>       |
+| <span data-ttu-id="cb5a6-138">Obbligatorio</span><span class="sxs-lookup"><span data-stu-id="cb5a6-138">Mandatory</span></span><br/>    | <span data-ttu-id="cb5a6-139">string</span><span class="sxs-lookup"><span data-stu-id="cb5a6-139">string</span></span><br/>  | <span data-ttu-id="cb5a6-140">psk:Condizionale</span><span class="sxs-lookup"><span data-stu-id="cb5a6-140">psk:Conditional</span></span><br/> |
+| <span data-ttu-id="cb5a6-141">Più elementi</span><span class="sxs-lookup"><span data-stu-id="cb5a6-141">Multiple</span></span><br/>     | <span data-ttu-id="cb5a6-142">integer</span><span class="sxs-lookup"><span data-stu-id="cb5a6-142">integer</span></span><br/> | <span data-ttu-id="cb5a6-143">1</span><span class="sxs-lookup"><span data-stu-id="cb5a6-143">1</span></span><br/>               |
+| <span data-ttu-id="cb5a6-144">Tipo di unità</span><span class="sxs-lookup"><span data-stu-id="cb5a6-144">UnitType</span></span><br/>     | <span data-ttu-id="cb5a6-145">string</span><span class="sxs-lookup"><span data-stu-id="cb5a6-145">string</span></span><br/>  | <span data-ttu-id="cb5a6-146">Micron</span><span class="sxs-lookup"><span data-stu-id="cb5a6-146">microns</span></span><br/>         |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="74c7c-146">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="74c7c-146">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="cb5a6-147">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="cb5a6-147">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="74c7c-147">Specifica del formato del file di descrizione della stampante PostScript</span><span class="sxs-lookup"><span data-stu-id="74c7c-147">PostScript Printer Description File Format Specification</span></span>](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+[<span data-ttu-id="cb5a6-148">Specifica del formato del file di descrizione della stampante PostScript</span><span class="sxs-lookup"><span data-stu-id="cb5a6-148">PostScript Printer Description File Format Specification</span></span>](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 </dt> <dt>
 
-[<span data-ttu-id="74c7c-148">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="74c7c-148">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[<span data-ttu-id="cb5a6-149">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="cb5a6-149">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

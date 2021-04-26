@@ -1,42 +1,42 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: e82394d1-f765-4679-b1de-ea17825d6478
 title: PageScalingOffsetWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a9cd5532bf4d109b94c579ef2ad21d242aca9a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9b82c2b0c0f2c86a792706ec7e00819ccda1038c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106321016"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997958"
 ---
-# <a name="pagescalingoffsetwidth"></a><span data-ttu-id="b4146-104">PageScalingOffsetWidth</span><span class="sxs-lookup"><span data-stu-id="b4146-104">PageScalingOffsetWidth</span></span>
+# <a name="pagescalingoffsetwidth"></a><span data-ttu-id="a5595-104">PageScalingOffsetWidth</span><span class="sxs-lookup"><span data-stu-id="a5595-104">PageScalingOffsetWidth</span></span>
 
-<span data-ttu-id="b4146-105">Questo argomento non è aggiornato.</span><span class="sxs-lookup"><span data-stu-id="b4146-105">This topic is not current.</span></span> <span data-ttu-id="b4146-106">Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="b4146-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
+<span data-ttu-id="a5595-105">Questo argomento non è corrente.</span><span class="sxs-lookup"><span data-stu-id="a5595-105">This topic is not current.</span></span> <span data-ttu-id="a5595-106">Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="a5595-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
 
-<span data-ttu-id="b4146-107">Specifica l'offset di ridimensionamento nella direzione ImageableSizeWidth per la scalabilità personalizzata.</span><span class="sxs-lookup"><span data-stu-id="b4146-107">Specifies the scaling offset in the ImageableSizeWidth direction for custom scaling.</span></span>
+<span data-ttu-id="a5595-107">Specifica l'offset di ridimensionamento nella direzione ImageableSizeWidth per il ridimensionamento personalizzato.</span><span class="sxs-lookup"><span data-stu-id="a5595-107">Specifies the scaling offset in the ImageableSizeWidth direction for custom scaling.</span></span>
 
--   [<span data-ttu-id="b4146-108">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="b4146-108">Element Information</span></span>](#element-information)
--   [<span data-ttu-id="b4146-109">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="b4146-109">Structure Content</span></span>](#structure-content)
+-   [<span data-ttu-id="a5595-108">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="a5595-108">Element Information</span></span>](#element-information)
+-   [<span data-ttu-id="a5595-109">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="a5595-109">Structure Content</span></span>](#structure-content)
 
-## <a name="element-information"></a><span data-ttu-id="b4146-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="b4146-110">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a5595-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="a5595-110">Element Information</span></span>
 
 
 
-| <span data-ttu-id="b4146-111">Nome</span><span class="sxs-lookup"><span data-stu-id="b4146-111">Name</span></span>                       |                                                         |
+| <span data-ttu-id="a5595-111">Nome</span><span class="sxs-lookup"><span data-stu-id="a5595-111">Name</span></span> | <span data-ttu-id="a5595-112">Valore</span><span class="sxs-lookup"><span data-stu-id="a5595-112">Value</span></span> |
 |----------------------------|---------------------------------------------------------|
-| <span data-ttu-id="b4146-112">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="b4146-112">Element Type</span></span> <br/>   | <span data-ttu-id="b4146-113">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="b4146-113">ParameterDef</span></span><br/>                                 |
-| <span data-ttu-id="b4146-114">Prefisso ambito</span><span class="sxs-lookup"><span data-stu-id="b4146-114">Scoping Prefix</span></span> <br/> | <span data-ttu-id="b4146-115">Pagina</span><span class="sxs-lookup"><span data-stu-id="b4146-115">Page</span></span><br/>                                         |
-| <span data-ttu-id="b4146-116">Note</span><span class="sxs-lookup"><span data-stu-id="b4146-116">Notes</span></span> <br/>          | <span data-ttu-id="b4146-117">Collegato a elemento PageScaling, opzione personalizzata</span><span class="sxs-lookup"><span data-stu-id="b4146-117">Linked to PageScaling element, Custom option</span></span><br/> |
+| <span data-ttu-id="a5595-113">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="a5595-113">Element Type</span></span> <br/>   | <span data-ttu-id="a5595-114">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="a5595-114">ParameterDef</span></span><br/>                                 |
+| <span data-ttu-id="a5595-115">Prefisso di ambito</span><span class="sxs-lookup"><span data-stu-id="a5595-115">Scoping Prefix</span></span> <br/> | <span data-ttu-id="a5595-116">Pagina</span><span class="sxs-lookup"><span data-stu-id="a5595-116">Page</span></span><br/>                                         |
+| <span data-ttu-id="a5595-117">Note</span><span class="sxs-lookup"><span data-stu-id="a5595-117">Notes</span></span> <br/>          | <span data-ttu-id="a5595-118">Collegato all'elemento PageScaling, opzione Personalizzata</span><span class="sxs-lookup"><span data-stu-id="a5595-118">Linked to PageScaling element, Custom option</span></span><br/> |
 
 
 
  
 
-## <a name="structure-content"></a><span data-ttu-id="b4146-118">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="b4146-118">Structure Content</span></span>
+## <a name="structure-content"></a><span data-ttu-id="a5595-119">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="a5595-119">Structure Content</span></span>
 
-<span data-ttu-id="b4146-119">La struttura XML di questo elemento è la seguente:</span><span class="sxs-lookup"><span data-stu-id="b4146-119">The XML structure of this element is:</span></span>
+<span data-ttu-id="a5595-120">La struttura XML di questo elemento è:</span><span class="sxs-lookup"><span data-stu-id="a5595-120">The XML structure of this element is:</span></span>
 
 ``` syntax
 <psf:ParameterDef name="psk:PageScalingOffsetWidth">
@@ -65,31 +65,31 @@ ms.locfileid: "106321016"
       
 ```
 
-## <a name="structure-properties"></a><span data-ttu-id="b4146-120">Proprietà struttura</span><span class="sxs-lookup"><span data-stu-id="b4146-120">Structure Properties</span></span>
+## <a name="structure-properties"></a><span data-ttu-id="a5595-121">Proprietà della struttura</span><span class="sxs-lookup"><span data-stu-id="a5595-121">Structure Properties</span></span>
 
-<span data-ttu-id="b4146-121">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="b4146-121">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
+<span data-ttu-id="a5595-122">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="a5595-122">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
 
 
 
-| <span data-ttu-id="b4146-122">Proprietà</span><span class="sxs-lookup"><span data-stu-id="b4146-122">Property</span></span>                | <span data-ttu-id="b4146-123">xsi:type</span><span class="sxs-lookup"><span data-stu-id="b4146-123">xsi:type</span></span>           | <span data-ttu-id="b4146-124">Valore</span><span class="sxs-lookup"><span data-stu-id="b4146-124">Value</span></span>                      |
+| <span data-ttu-id="a5595-123">Proprietà</span><span class="sxs-lookup"><span data-stu-id="a5595-123">Property</span></span>                | <span data-ttu-id="a5595-124">xsi:type</span><span class="sxs-lookup"><span data-stu-id="a5595-124">xsi:type</span></span>           | <span data-ttu-id="a5595-125">Valore</span><span class="sxs-lookup"><span data-stu-id="a5595-125">Value</span></span>                      |
 |-------------------------|--------------------|----------------------------|
-| <span data-ttu-id="b4146-125">DataType</span><span class="sxs-lookup"><span data-stu-id="b4146-125">DataType</span></span><br/>     | <span data-ttu-id="b4146-126">string</span><span class="sxs-lookup"><span data-stu-id="b4146-126">string</span></span><br/>  | <span data-ttu-id="b4146-127">xs:integer</span><span class="sxs-lookup"><span data-stu-id="b4146-127">xs:integer</span></span><br/>      |
-| <span data-ttu-id="b4146-128">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="b4146-128">DefaultValue</span></span><br/> | <span data-ttu-id="b4146-129">numero intero</span><span class="sxs-lookup"><span data-stu-id="b4146-129">integer</span></span><br/> | <span data-ttu-id="b4146-130">Non definito</span><span class="sxs-lookup"><span data-stu-id="b4146-130">undefined</span></span><br/>       |
-| <span data-ttu-id="b4146-131">MaxValue</span><span class="sxs-lookup"><span data-stu-id="b4146-131">MaxValue</span></span><br/>     | <span data-ttu-id="b4146-132">numero intero</span><span class="sxs-lookup"><span data-stu-id="b4146-132">integer</span></span><br/> | <span data-ttu-id="b4146-133">Non definito</span><span class="sxs-lookup"><span data-stu-id="b4146-133">undefined</span></span><br/>       |
-| <span data-ttu-id="b4146-134">MinValue</span><span class="sxs-lookup"><span data-stu-id="b4146-134">MinValue</span></span><br/>     | <span data-ttu-id="b4146-135">numero intero</span><span class="sxs-lookup"><span data-stu-id="b4146-135">integer</span></span><br/> | <span data-ttu-id="b4146-136">Non definito</span><span class="sxs-lookup"><span data-stu-id="b4146-136">undefined</span></span><br/>       |
-| <span data-ttu-id="b4146-137">Obbligatorio</span><span class="sxs-lookup"><span data-stu-id="b4146-137">Mandatory</span></span><br/>    | <span data-ttu-id="b4146-138">string</span><span class="sxs-lookup"><span data-stu-id="b4146-138">string</span></span><br/>  | <span data-ttu-id="b4146-139">PSK: condizionale</span><span class="sxs-lookup"><span data-stu-id="b4146-139">psk:Conditional</span></span><br/> |
-| <span data-ttu-id="b4146-140">Più elementi</span><span class="sxs-lookup"><span data-stu-id="b4146-140">Multiple</span></span><br/>     | <span data-ttu-id="b4146-141">integer</span><span class="sxs-lookup"><span data-stu-id="b4146-141">integer</span></span><br/> | <span data-ttu-id="b4146-142">1</span><span class="sxs-lookup"><span data-stu-id="b4146-142">1</span></span><br/>               |
-| <span data-ttu-id="b4146-143">UnitType</span><span class="sxs-lookup"><span data-stu-id="b4146-143">UnitType</span></span><br/>     | <span data-ttu-id="b4146-144">string</span><span class="sxs-lookup"><span data-stu-id="b4146-144">string</span></span><br/>  | <span data-ttu-id="b4146-145">micron</span><span class="sxs-lookup"><span data-stu-id="b4146-145">microns</span></span><br/>         |
+| <span data-ttu-id="a5595-126">DataType</span><span class="sxs-lookup"><span data-stu-id="a5595-126">DataType</span></span><br/>     | <span data-ttu-id="a5595-127">string</span><span class="sxs-lookup"><span data-stu-id="a5595-127">string</span></span><br/>  | <span data-ttu-id="a5595-128">xs:integer</span><span class="sxs-lookup"><span data-stu-id="a5595-128">xs:integer</span></span><br/>      |
+| <span data-ttu-id="a5595-129">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="a5595-129">DefaultValue</span></span><br/> | <span data-ttu-id="a5595-130">numero intero</span><span class="sxs-lookup"><span data-stu-id="a5595-130">integer</span></span><br/> | <span data-ttu-id="a5595-131">Non definito</span><span class="sxs-lookup"><span data-stu-id="a5595-131">undefined</span></span><br/>       |
+| <span data-ttu-id="a5595-132">MaxValue</span><span class="sxs-lookup"><span data-stu-id="a5595-132">MaxValue</span></span><br/>     | <span data-ttu-id="a5595-133">numero intero</span><span class="sxs-lookup"><span data-stu-id="a5595-133">integer</span></span><br/> | <span data-ttu-id="a5595-134">Non definito</span><span class="sxs-lookup"><span data-stu-id="a5595-134">undefined</span></span><br/>       |
+| <span data-ttu-id="a5595-135">Minvalue</span><span class="sxs-lookup"><span data-stu-id="a5595-135">MinValue</span></span><br/>     | <span data-ttu-id="a5595-136">numero intero</span><span class="sxs-lookup"><span data-stu-id="a5595-136">integer</span></span><br/> | <span data-ttu-id="a5595-137">Non definito</span><span class="sxs-lookup"><span data-stu-id="a5595-137">undefined</span></span><br/>       |
+| <span data-ttu-id="a5595-138">Obbligatorio</span><span class="sxs-lookup"><span data-stu-id="a5595-138">Mandatory</span></span><br/>    | <span data-ttu-id="a5595-139">string</span><span class="sxs-lookup"><span data-stu-id="a5595-139">string</span></span><br/>  | <span data-ttu-id="a5595-140">psk:Conditional</span><span class="sxs-lookup"><span data-stu-id="a5595-140">psk:Conditional</span></span><br/> |
+| <span data-ttu-id="a5595-141">Più elementi</span><span class="sxs-lookup"><span data-stu-id="a5595-141">Multiple</span></span><br/>     | <span data-ttu-id="a5595-142">integer</span><span class="sxs-lookup"><span data-stu-id="a5595-142">integer</span></span><br/> | <span data-ttu-id="a5595-143">1</span><span class="sxs-lookup"><span data-stu-id="a5595-143">1</span></span><br/>               |
+| <span data-ttu-id="a5595-144">UnitType</span><span class="sxs-lookup"><span data-stu-id="a5595-144">UnitType</span></span><br/>     | <span data-ttu-id="a5595-145">string</span><span class="sxs-lookup"><span data-stu-id="a5595-145">string</span></span><br/>  | <span data-ttu-id="a5595-146">Micron</span><span class="sxs-lookup"><span data-stu-id="a5595-146">microns</span></span><br/>         |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="b4146-146">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="b4146-146">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="a5595-147">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="a5595-147">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b4146-147">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="b4146-147">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[<span data-ttu-id="a5595-148">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="a5595-148">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
