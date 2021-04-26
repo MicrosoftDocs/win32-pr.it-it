@@ -1,6 +1,6 @@
 ---
 title: SV_OutputControlPointID
-description: Definisce l'indice dell'ID del punto di controllo utilizzato da una chiamata al punto di ingresso principale dello scafo dello shader.
+description: Definisce l'indice dell'ID del punto di controllo gestito da una chiamata del punto di ingresso principale dello shader di tipo hull.
 ms.assetid: 0b4c070f-1c7b-4739-af32-16410d3c5abd
 keywords:
 - SV_OutputControlPointID HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e828d8c9e4060888c914b9e6951a5baa06e33023
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: aa6ac503eb99b24bee8e869676812c473ab42bf5
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718919"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996908"
 ---
-# <a name="sv_outputcontrolpointid"></a>\_OUTPUTCONTROLPOINTID SV
+# <a name="sv_outputcontrolpointid"></a>SV \_ OutputControlPointID
 
-Definisce l'indice dell'ID del punto di controllo utilizzato da una chiamata al punto di ingresso principale dello scafo dello shader.
+Definisce l'indice dell'ID del punto di controllo su cui opera una chiamata del punto di ingresso principale dello hull shader.
 
 ## <a name="type"></a>Tipo
 
@@ -35,7 +35,7 @@ Definisce l'indice dell'ID del punto di controllo utilizzato da una chiamata al 
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
@@ -45,14 +45,13 @@ Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-|        |      |        |          |       |         |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -61,12 +60,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Semantica](dx-graphics-hlsl-semantics.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

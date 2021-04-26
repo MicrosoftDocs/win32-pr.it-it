@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: e1cb7e46-3078-46bf-a8c8-e10f6b9dd222
 title: DocumentImpositionColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea74db8ac616bc9ca6b7f6cde22f62bea742e7fb
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 228d1efded114c9471a55c4f88ca6e51ed6337ca
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320892"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997868"
 ---
 # <a name="documentimpositioncolor"></a>DocumentImpositionColor
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Il contenuto dell'applicazione etichettato con il colore denominato specificato deve essere visualizzato in tutte le separazioni dei colori.
+Il contenuto dell'applicazione etichettato con il colore denominato specificato DEVE essere visualizzato in tutte le separazioni dei colori.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,10 +24,10 @@ Il contenuto dell'applicazione etichettato con il colore denominato specificato 
 
 
 
-| Nome                       |                         |
+| Nome | Valore |
 |----------------------------|-------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/> |
-| Prefisso ambito <br/> | Documento<br/>     |
+| Prefisso di ambito <br/> | Documento<br/>     |
 | Note <br/>          | nessuno<br/>         |
 
 
@@ -36,7 +36,7 @@ Il contenuto dell'applicazione etichettato con il colore denominato specificato 
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:DocumentImpositionColor">
@@ -61,7 +61,7 @@ La struttura XML di questo elemento è la seguente:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -72,8 +72,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | caratteri<br/>      |
 
 

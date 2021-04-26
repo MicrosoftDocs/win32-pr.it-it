@@ -1,17 +1,17 @@
 ---
 description: Specifica l'indirizzo URL per il modello di dispositivo.
 ms.assetid: 817a291c-34de-4780-b8b5-0f428864fa7d
-title: elemento modelURL
+title: Elemento modelURL
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b1026b784f766d4a10d4f368929202b652180ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 980ebd9b97a44372cda68b58add59258ff96a244
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528584"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994348"
 ---
-# <a name="modelurl-element"></a>elemento modelURL
+# <a name="modelurl-element"></a>Elemento modelURL
 
 Specifica l'indirizzo URL per il modello di dispositivo.
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                                   | Descrizione                                                                                          |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce il produttore e i metadati del modello per il dispositivo da implementare.<br/> <br/> |
+| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce i metadati del produttore e del modello per il dispositivo da implementazione.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

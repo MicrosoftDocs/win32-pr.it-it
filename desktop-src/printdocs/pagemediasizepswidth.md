@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: a1a684ce-5615-4ff7-a7aa-5c9f786f84ed
 title: PageMediaSizePSWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7fef8b9e3740c5f12045e449f2a6b8100d7fc1d
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2f4399b75f047c2705983c893075995800396120
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320926"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997548"
 ---
 # <a name="pagemediasizepswidth"></a>PageMediaSizePSWidth
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica la larghezza della pagina perpendicolare alla direzione di orientamento del feed (riferimento alla [specifica del formato di file della descrizione della stampante](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf).
+Specifica la larghezza della pagina perpendicolare alla direzione di orientamento del feed (Specifica del formato del file di descrizione della stampante [PostScript di riferimento).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,10 +24,10 @@ Specifica la larghezza della pagina perpendicolare alla direzione di orientament
 
 
 
-| Nome                       |                                                             |
+| Nome | Valore |
 |----------------------------|-------------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                     |
-| Prefisso ambito <br/> | Pagina<br/>                                             |
+| Prefisso di ambito <br/> | Pagina<br/>                                             |
 | Note <br/>          | Collegato all'elemento PageMediaSize, opzione CustomPS<br/> |
 
 
@@ -36,7 +36,7 @@ Specifica la larghezza della pagina perpendicolare alla direzione di orientament
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageMediaSizePSWidth">
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -76,10 +76,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| MinValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Minvalue<br/>     | numero intero<br/> | Non definito<br/>       |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | micron<br/>         |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
 
 
 

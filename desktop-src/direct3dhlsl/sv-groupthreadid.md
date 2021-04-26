@@ -1,6 +1,6 @@
 ---
 title: SV_GroupThreadID
-description: Indici per cui è in esecuzione un singolo thread in un gruppo di thread in cui è in esecuzione compute shader.
+description: Indici per i quali viene eseguito un compute shader in un singolo thread all'interno di un gruppo di thread.
 ms.assetid: be944592-c4ea-43c9-88bc-98a9a190a437
 keywords:
 - SV_GroupThreadID HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3d4d35766bdbdc2d69c98983a85f336ab784d24d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2d36e5639b017dfa94e0f3c9f84d6725f6b6a283
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338983"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996988"
 ---
-# <a name="sv_groupthreadid"></a>\_GROUPTHREADID SV
+# <a name="sv_groupthreadid"></a>SV \_ GroupThreadID
 
-Indici per cui è in esecuzione un singolo thread in un gruppo di thread in cui è in esecuzione compute shader. SV \_ GroupThreadID varia in base all'intervallo specificato per compute shader nell'attributo [numThreads](sm5-attributes-numthreads.md) . Se, ad esempio, numThreads (3, 2, 1) è stato specificato, i valori possibili per il \_ valore di input SV GroupThreadID includono questo intervallo di valori (0-2, 0-1, 0).
+Indici per i quali viene eseguito un compute shader in un singolo thread all'interno di un gruppo di thread. SV \_ GroupThreadID varia nell'intervallo specificato per il compute shader [nell'attributo numthreads.](sm5-attributes-numthreads.md) Ad esempio, se numthreads(3,2,1) è stato specificato, i valori possibili per il valore di input SV GroupThreadID hanno questo intervallo di valori \_ (0-2,0-1,0).
 
 ## <a name="type"></a>Tipo
 
@@ -35,28 +35,27 @@ Indici per cui è in esecuzione un singolo thread in un gruppo di thread in cui 
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore di sistema è facoltativo ed è sempre compreso tra i limiti dei valori passati nell'attributo [numThreads](sm5-attributes-numthreads.md) .
+Questo valore di sistema è facoltativo ed è sempre compreso nei limiti dei valori passati [nell'attributo numthreads.](sm5-attributes-numthreads.md)
 
-Nella figura seguente viene illustrata la relazione tra i parametri passati a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), dispatch (5, 3, 2), i valori specificati nell'attributo [numThreads](sm5-attributes-numthreads.md) , numThreads (10, 8, 3) e i valori che vengono passati al compute shader per i valori di sistema correlati ai thread ([SV \_ groupIndex](sv-groupindex.md),[SV \_ DispatchThreadID](sv-dispatchthreadid.md), SV \_ GroupThreadID,[SV \_ GroupID](sv-groupid.md)).
+La figura seguente illustra la relazione tra i parametri passati a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati al compute shader per i valori di sistema correlati al thread ([SV \_ GroupIndex](sv-groupindex.md),[SV \_ DispatchThreadID](sv-dispatchthreadid.md), SV \_ GroupThreadID,[SV \_ GroupID](sv-groupid.md)).
 
-![illustrazione della relazione tra dispatch, i gruppi di thread e i thread](images/threadgroupids.png)
+![illustrazione della relazione tra dispatch, gruppi di thread e thread](images/threadgroupids.png)
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-|        |      |        |          |       |         |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,9 +64,9 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Semantica](dx-graphics-hlsl-semantics.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

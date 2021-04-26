@@ -1,6 +1,6 @@
 ---
 title: SV_InnerCoverage
-description: SV \_ InputCoverage rappresenta le informazioni di rasterizzazione conservative sottostimate, ad esempio se un pixel è garantito per essere completamente coperto.
+description: SV InputCoverage rappresenta informazioni di rasterizzazione conservative sottostimate,ad esempio se un pixel è garantito per essere \_ completamente coperto.
 ms.assetid: 5BB3C3FB-E5ED-4395-B389-300DE67C984B
 keywords:
 - SV_InnerCoverage HLSL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2f1393a6a11a95c8c08746f57083fe193791a60
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
-ms.translationtype: HT
+ms.openlocfilehash: e1ac278f0524446b5171ef278e169fbe7c3a082f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993549"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996968"
 ---
-# <a name="sv_innercoverage"></a>\_INNERCOVERAGE SV
+# <a name="sv_innercoverage"></a>SV \_ InnerCoverage
 
-SV \_ InputCoverage rappresenta le informazioni di rasterizzazione conservative sottostimate, ad esempio se un pixel è garantito per essere completamente coperto.
+SV InputCoverage rappresenta informazioni di rasterizzazione conservative sottostimate,ad esempio se un pixel è garantito per essere \_ completamente coperto.
 
 ## <a name="type"></a>Tipo
 
@@ -34,29 +34,29 @@ SV \_ InputCoverage rappresenta le informazioni di rasterizzazione conservative 
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore generato dal sistema è richiesto per il supporto di livello 3 ed è disponibile solo in tale livello. Questo input si escludono a vicenda con SV \_ coverage. non è possibile usare entrambi.
+Questo valore generato dal sistema è necessario per il supporto di livello 3 ed è disponibile solo in tale livello. Questo input si escludono a vicenda con la copertura SV. Non \_ è possibile usare entrambi.
 
-Per accedere a SV \_ InnerCoverage, è necessario dichiararlo come componente singolo da uno dei registri di input pixel shader. La modalità di interpolazione nella dichiarazione deve essere costante (l'interpolazione non è applicabile).
+Per accedere a SV InnerCoverage, deve essere dichiarato come singolo componente di uno dei registri pixel shader \_ input. La modalità di interpolazione nella dichiarazione deve essere costante (l'interpolazione non è applicabile).
 
-La rasterizzazione conservativa è disponibile sia in D3D 11.3 che in D3D12. Fare riferimento a:
+La rasterizzazione conservativa è disponibile sia in D3D11.3 che in D3D12. Fare riferimento a:
 
--   [Rasterizzazione conservativa D3D 11.3](/windows/desktop/direct3d11/conservative-rasterization)
+-   [D3D11.3 Rasterizzazione conservativa](/windows/desktop/direct3d11/conservative-rasterization)
 -   [Rasterizzazione conservativa D3D12](/windows/desktop/direct3d12/conservative-rasterization)
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> <dt>
 
-[Valori di sistema del modello shader 5,1](shader-model-5-1-system-values.md)
+[Valori di sistema del modello shader 5.1](shader-model-5-1-system-values.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

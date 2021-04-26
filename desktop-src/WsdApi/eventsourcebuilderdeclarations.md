@@ -4,12 +4,12 @@ ms.assetid: ba303691-d331-4831-8416-47bb9eeb70da
 title: elemento eventSourceBuilderDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 996d4a41f51ddc346e608e935fc270edc531aec2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0baba3dd7013b2e684713e801caa87316266fc2e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318837"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995948"
 ---
 # <a name="eventsourcebuilderdeclarations-element"></a>elemento eventSourceBuilderDeclarations
 
@@ -33,7 +33,7 @@ Non ci sono attributi.
 
 | Elemento                                     | Descrizione                                                                           |
 |---------------------------------------------|---------------------------------------------------------------------------------------|
-| [**proxyClass**](proxyclass.md)<br/> | Nome della classe da generare dalla funzione del generatore di origine eventi.<br/> <br/> |
+| [**classe proxy**](proxyclass.md)<br/> | Nome della classe da generare dalla funzione generatore dell'origine evento.<br/> <br/> |
 
 
 
@@ -49,7 +49,7 @@ proxyClass
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -57,7 +57,7 @@ proxyClass
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

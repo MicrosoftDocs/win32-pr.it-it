@@ -1,6 +1,6 @@
 ---
 title: SV_StencilRef
-description: SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader corrente.
+description: SV \_ StencilRef rappresenta il valore di riferimento dello pixel shader dello stencil corrente.
 ms.assetid: 0E27BF04-9DA0-4D6D-BD50-07553F80590E
 keywords:
 - SV_StencilRef HLSL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 953cc90e8958bd6f9828bcb2e94e38829292cb13
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 565a554508277ab9ce49b377b5a7e121db45b20c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993456"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996498"
 ---
-# <a name="sv_stencilref"></a>\_STENCILREF SV
+# <a name="sv_stencilref"></a>SV \_ StencilRef
 
-SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader corrente.
+SV \_ StencilRef rappresenta il valore di riferimento dello pixel shader dello stencil corrente.
 
 ## <a name="type"></a>Tipo
 
@@ -34,25 +34,25 @@ SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
-La specifica del valore di riferimento dello shader nella pixel shader è disponibile sia in D3D 11.3 che in D3D12. Fare riferimento a:
+La specifica del valore di riferimento dello shader pixel shader è disponibile sia in D3D11.3 che in D3D12. Fare riferimento a:
 
--   [Valore di riferimento dello stencil specificato per D3D 11.3 shader](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
--   [D3D12 shader-valore di riferimento stencil specificato](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)
+-   [Valore di riferimento dello stencil specificato dello shader D3D11.3](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
+-   [Valore di riferimento dello stencil specificato dello shader D3D12](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> <dt>
 
-[Valori di sistema del modello shader 5,1](shader-model-5-1-system-values.md)
+[Valori di sistema del modello shader 5.1](shader-model-5-1-system-values.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

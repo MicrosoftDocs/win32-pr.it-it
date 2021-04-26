@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 96b48917-1fbc-467f-b2b4-1a9673f1ee99
 title: PageBlackGenerationProcessingBlackInkLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f565b6190f9bda11727efde6e799b6fb979cecc
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 3052d8cec8fd46c2f7607e6366aa6868cccbdbda
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320996"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996188"
 ---
 # <a name="pageblackgenerationprocessingblackinklimit"></a>PageBlackGenerationProcessingBlackInkLimit
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Il contenuto dell'applicazione etichettato con il colore denominato specificato deve essere visualizzato in tutte le separazioni dei colori.
+Il contenuto dell'applicazione etichettato con il colore denominato specificato DEVE essere visualizzato in tutte le separazioni dei colori.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Il contenuto dell'applicazione etichettato con il colore denominato specificato 
 
 
 
-| Nome                       |                                                            |
+| Nome | Valore |
 |----------------------------|------------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                    |
-| Prefisso ambito <br/> | Pagina<br/>                                            |
-| Note <br/>          | Collegato a elemento PageBlackGenerationProcessing<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                                            |
+| Note <br/>          | Collegato all'elemento PageBlackGenerationProcessing<br/> |
 
 
 
@@ -36,7 +36,7 @@ Il contenuto dell'applicazione etichettato con il colore denominato specificato 
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageBlackGenerationProcessingBlackInkLimit">
@@ -64,7 +64,7 @@ La struttura XML di questo elemento è la seguente:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -75,9 +75,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| Minvalue<br/>     | integer<br/> | 0<br/>               |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 
 

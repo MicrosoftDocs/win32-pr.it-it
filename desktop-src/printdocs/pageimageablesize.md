@@ -1,29 +1,29 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 6b81814f-2d9e-4862-8633-6ba016c11dac
-title: PageImageableSize dell'oggetto
+title: PageImageableSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26dca243defc08b43a79e897bfa91913a954bf37
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: f1eef9012a7fda3eed6afd16add1d483c35c1111
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104570616"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996108"
 ---
-# <a name="pageimageablesize"></a>PageImageableSize dell'oggetto
+# <a name="pageimageablesize"></a>PageImageableSize
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'area di disegno con immagine per il layout e il rendering. Questa operazione verrà segnalata in base a PageMediaSize e PageOrientation.
+Descrive l'area di disegno con immagine per il layout e il rendering. Verrà segnalato in base a PageMediaSize e PageOrientation.
 
-I diagrammi seguenti illustrano l'utilizzo delle variabili PageImageableSize dell'oggetto in base a PageOrientation.
+I diagrammi seguenti illustrano l'utilizzo delle variabili PageImageableSize in base a PageOrientation.
 
-![diagramma che mostra le misurazioni di pagina](images/local-1641910626-image.png)
+![diagramma che mostra le misurazioni della pagina](images/local-1641910626-image.png)
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
--   [Contenuto Extensible Markup Language (XML)](#extensible-markup-language-xml-content)
+-   [Extensible Markup Language (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
@@ -31,9 +31,9 @@ I diagrammi seguenti illustrano l'utilizzo delle variabili PageImageableSize del
 
 |                            |                     |
 |----------------------------|---------------------|
-| Nome                       |                     |
+| Nome | Valore |
 | Tipo di elemento<br/>    | Proprietà<br/> |
-| Prefisso ambito <br/> | Pagina<br/>     |
+| Prefisso di ambito <br/> | Pagina<br/>     |
 | Note <br/>          | nessuno<br/>     |
 
 
@@ -42,7 +42,7 @@ I diagrammi seguenti illustrano l'utilizzo delle variabili PageImageableSize del
 
 ## <a name="structural-content"></a>Contenuto strutturale
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:Property name="psk:PageImageableSize">
@@ -78,20 +78,20 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                    | Tipo di dati          | Unità               | Valori supportati                       | Riepilogo                                                                                                                    |
 |-----------------------------------------|--------------------|--------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| \_ImageableSizeWidthValue\_<br/>  | numero intero<br/> | micron<br/> | Maggiore di 0.<br/>             | Specifica la dimensione orizzontale della dimensione del supporto dell'applicazione rispetto a PageOrientation.<br/>               |
-| \_ImageableSizeHeightValue\_<br/> | numero intero<br/> | micron<br/> | Maggiore di 0.<br/>             | Specifica la dimensione verticale della dimensione del supporto dell'applicazione rispetto a PageOrientation.<br/>                 |
-| \_OriginWidthValue\_<br/>         | numero intero<br/> | micron<br/> | Maggiore o uguale a 0.<br/> | Specifica l'origine orizzontale dell'area stampabile rispetto alla dimensione del supporto dell'applicazione.<br/>                   |
-| \_OriginHeightValue\_<br/>        | numero intero<br/> | micron<br/> | Maggiore o uguale a 0.<br/> | Specifica l'origine verticale dell'area stampabile rispetto alla dimensione del supporto dell'applicazione.<br/>                     |
-| \_ExtentWidthValue\_<br/>         | numero intero<br/> | micron<br/> | Maggiore di 0.<br/>             | Specifica la distanza orizzontale tra l'origine e il limite delimitatore delle dimensioni del supporto dell'applicazione.<br/>      |
-| \_ExtentHeightValue\_<br/>        | numero intero<br/> | micron<br/> | Maggiore di 0.<br/>             | Specifica la distanza verticale tra l'origine e il limite delimitatore delle dimensioni del supporto dell'applicazione Canvas.<br/> |
+| \_ImageableSizeWidthValue\_<br/>  | numero intero<br/> | Micron<br/> | Maggiore di 0.<br/>             | Specifica la dimensione orizzontale del supporto dell'applicazione rispetto a PageOrientation.<br/>               |
+| \_ImageableSizeHeightValue\_<br/> | numero intero<br/> | Micron<br/> | Maggiore di 0.<br/>             | Specifica la dimensione verticale delle dimensioni dei supporti dell'applicazione rispetto a PageOrientation.<br/>                 |
+| \_OriginWidthValue\_<br/>         | numero intero<br/> | Micron<br/> | Maggiore o uguale a 0.<br/> | Specifica l'origine orizzontale dell'area immagine rispetto alle dimensioni del supporto dell'applicazione.<br/>                   |
+| \_OriginHeightValue\_<br/>        | numero intero<br/> | Micron<br/> | Maggiore o uguale a 0.<br/> | Specifica l'origine verticale dell'area immagine rispetto alle dimensioni del supporto dell'applicazione.<br/>                     |
+| \_ExtentWidthValue\_<br/>         | numero intero<br/> | Micron<br/> | Maggiore di 0.<br/>             | Specifica la distanza orizzontale tra l'origine e il limite di delimitazione delle dimensioni del supporto dell'applicazione.<br/>      |
+| \_ExtentHeightValue\_<br/>        | numero intero<br/> | Micron<br/> | Maggiore di 0.<br/>             | Specifica la distanza verticale tra l'origine e il limite di delimitazione delle dimensioni del supporto dell'applicazione canvas.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenuto Extensible Markup Language (XML)
+## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubbliche sono definite nello https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords spazio dei nomi. Il contenuto del Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Property name="psk:PageImageableSize">

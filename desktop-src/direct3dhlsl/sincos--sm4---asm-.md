@@ -1,23 +1,23 @@
 ---
-title: SinCos (SM4-ASM)
-description: Sin (componente-Wise) e cos (THETA) per Theta in radianti.
+title: sincos (sm4 - asm)
+description: Sin per componente (theta) e cos(theta) per theta in radianti.
 ms.assetid: 81FDEC8F-2C1C-4C60-A6DA-699C798F8316
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2dd8fc3b011758f071cdcd273e34eb8a7f6421f
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 8c03118ff9a1fc2d958eaa6eb1a550a6dbf672a2
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104992992"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997018"
 ---
-# <a name="sincos-sm4---asm"></a>SinCos (SM4-ASM)
+# <a name="sincos-sm4---asm"></a>sincos (sm4 - asm)
 
-Sin (componente-Wise) e cos (THETA) per Theta in radianti.
+Sin per componente (theta) e cos(theta) per theta in radianti.
 
 
 
-| SinCos \[ \_ Sat \] destSIN \[ . mask \] , destCOS \[ . mask \] , \[ - \] src0 \[ \_ ABS \] \[ . Swizzle\] |
+| sincos \[ \_ sat \] destSIN \[ .mask \] , destCOS \[ .mask , \] \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
 |------------------------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Sin (componente-Wise) e cos (THETA) per Theta in radianti.
 
 | Elemento                                                                                               | Descrizione                                                           |
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <span id="destSIN"></span><span id="destsin"></span><span id="DESTSIN"></span>*destSIN*<br/> | \[nell' \] indirizzo di sin (*src0*) calcolato per ogni componente.<br/> |
-| <span id="destCOS"></span><span id="destcos"></span><span id="DESTCOS"></span>*destCOS*<br/> | \[nell' \] indirizzo di cos (*src0*), calcolato per componente.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                    | \[nei \] componenti per i quali calcolare sin e cos.<br/>    |
+| <span id="destSIN"></span><span id="destsin"></span><span id="DESTSIN"></span>*destSIN*<br/> | \[in \] L'indirizzo di sin(*src0*), calcolato per componente.<br/> |
+| <span id="destCOS"></span><span id="destcos"></span><span id="DESTCOS"></span>*destCOS*<br/> | \[in \] Indirizzo di cos(*src0*), calcolato per componente.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                    | \[in \] Componenti per cui calcolare sin e cos.<br/>    |
 
 
 
@@ -38,23 +38,22 @@ Sin (componente-Wise) e cos (THETA) per Theta in radianti.
 
 ## <a name="remarks"></a>Commenti
 
-Se il risultato non è necessario, è possibile specificare *destSIN* e *destCOS* come null anziché specificare un registro.
+Se il risultato non è necessario, è possibile specificare *destSIN* e *destCOS* come NULL anziché specificare un registro.
 
 I valori theta possono essere qualsiasi valore a virgola mobile IEEE a 32 bit.
 
-L'errore assoluto massimo è 0,0008 nell'intervallo da-100 \* pi a + 100 \* pi.
+L'errore assoluto massimo è 0,0008 nell'intervallo da -100 \* Pi a +100 \* Pi.
 
-Nella tabella seguente vengono illustrati i risultati ottenuti quando si esegue l'istruzione con varie classi di numeri.
+La tabella seguente mostra i risultati ottenuti quando si esegue l'istruzione con varie classi di numeri.
 
-F indica un numero reale finito.
+F indica un numero finito reale.
 
 
 
-|             |          |              |             |        |        |             |              |          |         |
+| **src**     | **-inf** | **-F**       | **-denorm** | **-0** | **+0** | **+denorm** | **+F**       | **+inf** | **NaN** |
 |-------------|----------|--------------|-------------|--------|--------|-------------|--------------|----------|---------|
-| **src**     | **-INF** | **-F**       | **-denorm** | **-0** | **+0** | **+ denorm** | **+ F**       | **+ INF** | **NaN** |
-| **destSIN** | NaN      | \[da-1 a + 1\] | -0          | -0     | +0     | +0          | \[da-1 a + 1\] | NaN      | NaN     |
-| **destCOS** | NaN      | \[da-1 a + 1\] | +1          | +1     | +1     | +1          | \[da-1 a + 1\] | NaN      | NaN     |
+| **destSIN** | NaN      | \[Da -1 a +1\] | -0          | -0     | +0     | +0          | \[Da -1 a +1\] | NaN      | NaN     |
+| **destCOS** | NaN      | \[Da -1 a +1\] | +1          | +1     | +1     | +1          | \[Da -1 a +1\] | NaN      | NaN     |
 
 
 
@@ -72,7 +71,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -80,12 +79,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -95,7 +94,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

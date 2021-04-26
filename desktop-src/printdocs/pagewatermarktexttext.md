@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 3b01f05c-fe2e-4467-b2a7-5431a41200cd
 title: PageWatermarkTextText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef2310efaa91532493f7add14de8c2510e24e9b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: eb19f5965347e79732aa116e5be51f90e4ef6943
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320860"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996078"
 ---
 # <a name="pagewatermarktexttext"></a>PageWatermarkTextText
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il testo della filigrana.
 
@@ -24,11 +24,11 @@ Specifica il testo della filigrana.
 
 
 
-| Nome                       |                                            |
+| Nome | Valore |
 |----------------------------|--------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                    |
-| Prefisso ambito <br/> | Pagina<br/>                            |
-| Note <br/>          | Collegato a elemento PageWatermark<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                            |
+| Note <br/>          | Collegato all'elemento PageWatermark<br/> |
 
 
 
@@ -61,7 +61,7 @@ La struttura XML di questo elemento è la seguente:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -69,12 +69,12 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Proprietà                | xsi:type           | Valore                      |
 |-------------------------|--------------------|----------------------------|
-| DataType<br/>     | string<br/>  | xs:string<br/>       |
-| DefaultValue<br/> | Integer<br/> | Non definito<br/>       |
-| MaxLength<br/>    | Integer<br/> | Non definito<br/>       |
-| MinLength<br/>    | Integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
-| UnitType<br/>     | string<br/>  | caratteri<br/>      |
+| DataType<br/>     | Stringa<br/>  | xs:string<br/>       |
+| DefaultValue<br/> | Intero<br/> | Non definito<br/>       |
+| MaxLength<br/>    | Intero<br/> | Non definito<br/>       |
+| Minlength<br/>    | Integer<br/> | 1<br/>               |
+| Obbligatorio<br/>    | Stringa<br/>  | psk:Conditional<br/> |
+| UnitType<br/>     | Stringa<br/>  | caratteri<br/>      |
 
 
 

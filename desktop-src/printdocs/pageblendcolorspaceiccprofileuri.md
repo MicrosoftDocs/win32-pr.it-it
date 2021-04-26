@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 05924c7d-e074-4835-b42c-53c77dc1bbb5
 title: PageBlendColorSpaceICCProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1f3a6143bd934ebcb75c3e5455a30c7365f1a89
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2cbf1233e172a81053baee0abe1e21d79064045a
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104058493"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997698"
 ---
 # <a name="pageblendcolorspaceiccprofileuri"></a>PageBlendColorSpaceICCProfileURI
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica un riferimento URI relativo a un profilo ICC che definisce lo spazio dei colori da utilizzare per la fusione. <Uri>È un \_ nome di parte assoluto relativo alla radice del pacchetto.
+Specifica un riferimento URI relativo a un profilo ICC che definisce lo spazio colore da utilizzare per la fusione. è <Uri> un nome di parte assoluto relativo alla radice del \_ pacchetto.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Specifica un riferimento URI relativo a un profilo ICC che definisce lo spazio d
 
 
 
-| Nome                       |                                                                                                                                        |
+| Nome | Valore |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                                                                                                |
-| Prefisso ambito <br/> | Pagina<br/>                                                                                                                        |
-| Note <br/>          | Questo vale solo per i documenti XPS e non deve essere utilizzato in PrintTicket arbitrari. Collegato all'elemento PageBlendColorSpace.<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                                                                                                                        |
+| Note <br/>          | Questo vale solo per i documenti XPS e non deve essere usato in PrintTicket arbitrari. Collegato all'elemento PageBlendColorSpace.<br/> |
 
 
 
@@ -36,7 +36,7 @@ Specifica un riferimento URI relativo a un profilo ICC che definisce lo spazio d
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageBlendColorSpaceICCProfileURI">
@@ -61,7 +61,7 @@ La struttura XML di questo elemento è la seguente:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -72,9 +72,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
-| UnitType<br/>     | string<br/>  | caratteri<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

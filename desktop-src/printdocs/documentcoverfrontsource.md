@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: ec41d0c8-ea77-44ac-a02b-6a48237b324f
 title: DocumentCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f67ab3f3dc3515a494dad2ab72f1413de88cd00
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 15b558a044716c5c13ae012665193f958f8ce6aa
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104234573"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997898"
 ---
 # <a name="documentcoverfrontsource"></a>DocumentCoverFrontSource
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'origine per un foglio di copertina personalizzato.
+Specifica l'origine per un foglio di copertura anteriore personalizzato.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Specifica l'origine per un foglio di copertina personalizzato.
 
 
 
-| Nome                       |                                                 |
+| Nome | Valore |
 |----------------------------|-------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                         |
-| Prefisso ambito <br/> | Documento<br/>                             |
-| Note <br/>          | Collegato a elemento DocumentCoverFront<br/> |
+| Prefisso di ambito <br/> | Documento<br/>                             |
+| Note <br/>          | Collegato all'elemento DocumentCoverFront<br/> |
 
 
 
@@ -36,7 +36,7 @@ Specifica l'origine per un foglio di copertina personalizzato.
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:DocumentCoverFrontSource">
@@ -61,7 +61,7 @@ La struttura XML di questo elemento è la seguente:
 </psf:ParameterDef>      
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -72,9 +72,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
-| UnitType<br/>     | string<br/>  | caratteri<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

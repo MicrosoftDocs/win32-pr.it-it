@@ -1,19 +1,19 @@
 ---
-description: Genera implementazioni per le funzioni stub per le operazioni di tipo porta.
+description: Genera implementazioni per funzioni stub per operazioni di tipo porta.
 ms.assetid: 69899302-db54-493b-90de-596750be566f
-title: elemento stubDefinitions
+title: Elemento stubDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6676cfc6cf55aa9c9961bd614506500d847def0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42c60b071c901538122751f6e92cfd7049f7be88
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313145"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994688"
 ---
-# <a name="stubdefinitions-element"></a>elemento stubDefinitions
+# <a name="stubdefinitions-element"></a>Elemento stubDefinitions
 
-Genera implementazioni per le funzioni stub per le operazioni di tipo porta.
+Genera implementazioni per funzioni stub per operazioni di tipo porta.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -34,13 +34,13 @@ Non ci sono attributi.
 | Elemento                                                         | Descrizione                                                                                                             |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | [**deallocatore**](deallocator.md)<br/>                   | Specifica il tipo di deallocatore che deve essere utilizzato da una funzione stub.<br/> <br/>                                 |
-| [**eventArg**](eventarg.md)<br/>                         | Specifica se gli argomenti dell'evento correlati sono inclusi nelle funzioni generate.<br/> <br/>               |
-| [**eventi**](events.md)<br/>                             | Specifica se gli eventi correlati sono inclusi nelle funzioni generate.<br/> <br/>                        |
-| [**faultInfo**](faultinfo.md)<br/>                       | Specifica se i parametri utilizzati per passare informazioni sugli errori sono inclusi nelle funzioni generate.<br/> <br/> |
-| [**operazione**](operation.md)<br/>                       | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                                        |
-| [**operationDeallocator**](operationdeallocator.md)<br/> | Specifica il tipo di deallocatore che deve essere utilizzato dalla funzione stub di un'operazione.<br/> <br/>                    |
-| [**portType**](porttype.md)<br/>                         | Specifica il tipo di porta per il quale deve essere generato il codice.<br/> <br/>                                       |
-| [**serverClass**](serverclass.md)<br/>                   | Specifica il nome della classe server sul lato host.<br/> <br/>                                                |
+| [**eventArg**](eventarg.md)<br/>                         | Specifica se gli argomenti di evento correlati vengono inclusi nelle funzioni generate.<br/> <br/>               |
+| [**Eventi**](events.md)<br/>                             | Specifica se gli eventi correlati vengono inclusi nelle funzioni generate.<br/> <br/>                        |
+| [**faultInfo**](faultinfo.md)<br/>                       | Specifica se i parametri utilizzati per passare le informazioni sugli errori vengono inclusi nelle funzioni generate.<br/> <br/> |
+| [**Operazione**](operation.md)<br/>                       | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                                        |
+| [**operationDeallocator**](operationdeallocator.md)<br/> | Specifica il tipo di deallocatore che deve essere usato dalla funzione stub di un'operazione.<br/> <br/>                    |
+| [**Porttype**](porttype.md)<br/>                         | Specifica il tipo di porta per cui deve essere generato il codice.<br/> <br/>                                       |
+| [**classe server**](serverclass.md)<br/>                   | Specifica il nome della classe server sul lato host.<br/> <br/>                                                |
 
 
 
@@ -65,7 +65,7 @@ Non ci sono attributi.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -73,7 +73,7 @@ Non ci sono attributi.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

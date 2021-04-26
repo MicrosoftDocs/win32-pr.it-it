@@ -1,19 +1,19 @@
 ---
-description: Definisce il prefisso a cui deve essere eseguito il mapping dello spazio dei nomi per rendere più leggibile il codice XML.
+description: Definisce il prefisso a cui deve essere eseguito il mapping dello spazio dei nomi per rendere il codice XML più leggibile.
 ms.assetid: 955f4785-5657-4a89-9728-bce99a0a4234
-title: elemento preferredPrefix
+title: Elemento preferredPrefix
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b71f124756f29aaf29ba30d254f9b03ab4495f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98fa0310872a43811ceb626ae0684fa45a2f6666
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310279"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996478"
 ---
-# <a name="preferredprefix-element"></a>elemento preferredPrefix
+# <a name="preferredprefix-element"></a>Elemento preferredPrefix
 
-Definisce il prefisso a cui deve essere eseguito il mapping dello spazio dei nomi per rendere più leggibile il codice XML.
+Definisce il prefisso a cui deve essere eseguito il mapping dello spazio dei nomi per rendere il codice XML più leggibile.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -35,13 +35,13 @@ Non ci sono elementi figlio.
 
 | Elemento                                   | Descrizione                                                        |
 |-------------------------------------------|--------------------------------------------------------------------|
-| [**nameSpace**](namespace.md)<br/> | Spazio dei nomi da utilizzare per la generazione del codice.<br/> <br/> |
+| [**Namespace**](namespace.md)<br/> | Spazio dei nomi da utilizzare per la generazione del codice.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento sostituisce il prefisso URI predefinito utilizzato per il codice generato. Ad esempio, uno spazio dei nomi correlato al supporto potrebbe avere il prefisso preferito "AV" (per audio/oggetto visivo).
+Questo elemento esegue l'override del prefisso URI predefinito usato per il codice generato. Ad esempio, uno spazio dei nomi correlato ai supporti potrebbe avere il prefisso preferito "av" (per audio/oggetto visivo).
 
 Per impostazione predefinita, il codice generato crea un prefisso preferito dall'URI.
 
@@ -49,7 +49,7 @@ Per impostazione predefinita, il codice generato crea un prefisso preferito dall
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

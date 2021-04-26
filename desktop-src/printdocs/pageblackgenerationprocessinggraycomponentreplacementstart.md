@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 28ea95a2-e602-4f71-9488-48525e995814
 title: PageBlackGenerationProcessingGrayComponentReplacementStart
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dedf425cd31dd83bce877358c456d1cd16183fa
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2608535c65cbde04005334ed970c0d27cb1feffb
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320995"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996178"
 ---
 # <a name="pageblackgenerationprocessinggraycomponentreplacementstart"></a>PageBlackGenerationProcessingGrayComponentReplacementStart
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il punto nell'intervallo "evidenzia a ombreggiatura" in cui GCR deve iniziare (100% di ombreggiatura più scura).
+Descrive il punto nell'intervallo "evidenziazione da ombreggiatura" in cui deve iniziare GCR (ombreggiatura più scura al 100%.)
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Descrive il punto nell'intervallo "evidenzia a ombreggiatura" in cui GCR deve in
 
 
 
-| Nome                       |                                                            |
+| Nome | Valore |
 |----------------------------|------------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                    |
-| Prefisso ambito <br/> | Pagina<br/>                                            |
-| Note <br/>          | Collegato a elemento PageBlackGenerationProcessing<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                                            |
+| Note <br/>          | Collegato all'elemento PageBlackGenerationProcessing<br/> |
 
 
 
@@ -36,7 +36,7 @@ Descrive il punto nell'intervallo "evidenzia a ombreggiatura" in cui GCR deve in
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageBlackGenerationProcessingGrayComponentReplacementStart">
@@ -64,7 +64,7 @@ La struttura XML di questo elemento è la seguente:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -75,10 +75,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| Minvalue<br/>     | integer<br/> | 0<br/>               |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
-| UnitType<br/>     | string<br/>  | percent<br/>         |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | percent<br/>         |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 6ad0d163-df51-48b6-aad7-a4b018688872
 title: elemento portTypeDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60f55408df938ed95af14c69b2676473ac1bda71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff073eb7b0f9cbc4b0b6df87c8f9fc84d4f62882
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231667"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996548"
 ---
 # <a name="porttypedefinitions-element"></a>elemento portTypeDefinitions
 
@@ -33,11 +33,11 @@ Non ci sono attributi.
 
 | Elemento                                                   | Descrizione                                                                                                                                                                       |
 |-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**codeName**](codename.md)<br/>                   | Specifica il nome da utilizzare per il tipo di porta nel codice generato. Per impostazione predefinita, il nome del codice viene generato dal nome completo del tipo di porta.<br/> <br/>         |
-| [**eventStubFunction**](eventstubfunction.md)<br/> | Specifica se i riferimenti alle funzioni Stub devono essere inclusi nelle strutture dell'operazione nelle definizioni dei tipi di porta per le operazioni di notifica.<br/> <br/>        |
-| [**operazione**](operation.md)<br/>                 | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                                                                                                  |
-| [**portType**](porttype.md)<br/>                   | Specifica il tipo di porta per il quale deve essere generato il codice.<br/> <br/>                                                                                                 |
-| [**stubFunction**](stubfunction.md)<br/>           | Specifica se i riferimenti alle funzioni Stub devono essere inclusi nelle strutture dell'operazione nelle definizioni dei tipi di porta per le operazioni unidirezionali e bidirezionali.<br/> <br/> |
+| [**Codename**](codename.md)<br/>                   | Specifica il nome da utilizzare per il tipo di porta nel codice generato. Per impostazione predefinita, il nome in codice viene generato dal nome completo del tipo di porta.<br/> <br/>         |
+| [**eventStubFunction**](eventstubfunction.md)<br/> | Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture delle operazioni nelle definizioni dei tipi di porta per le operazioni di notifica.<br/> <br/>        |
+| [**Operazione**](operation.md)<br/>                 | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                                                                                                  |
+| [**Porttype**](porttype.md)<br/>                   | Specifica il tipo di porta per cui deve essere generato il codice.<br/> <br/>                                                                                                 |
+| [**StubFunction**](stubfunction.md)<br/>           | Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture delle operazioni nelle definizioni dei tipi di porta per le operazioni unidirezionale e bidirezionale.<br/> <br/> |
 
 
 
@@ -59,19 +59,19 @@ Non ci sono attributi.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento viene in genere usato nei file di origine C per fornire le costanti del tipo di porta dichiarate da [**portTypeDeclarations**](porttypedeclarations.md).
+Questo elemento viene in genere usato nei file di origine C per fornire le costanti del tipo di porta dichiarate da [**portTypeDeclarations.**](porttypedeclarations.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

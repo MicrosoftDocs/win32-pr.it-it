@@ -1,42 +1,41 @@
 ---
-description: Flag funzionalità stencil driver.
+description: Flag di funzionalità dello stencil del driver.
 ms.assetid: 187c758c-5e7f-48ee-97cb-b1f30b709723
 title: D3DSTENCILCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2e76c42acfcf8b6515e84679ea2fb540178608
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6716748d77fe4c3620413f43ae4a4ae48076c09f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401384"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107997378"
 ---
 # <a name="d3dstencilcaps"></a>D3DSTENCILCAPS
 
-Flag funzionalità stencil driver.
+Flag di funzionalità dello stencil del driver.
 
 
 
-|                          |             |                                                                                                       |
+| \#Definire                 | Valore       | Descrizione                                                                                           |
 |--------------------------|-------------|-------------------------------------------------------------------------------------------------------|
-| \#definire                 | Valore       | Descrizione                                                                                           |
-| D3DSTENCILCAPS \_ Keep     | 0x00000001L | Non aggiornare la voce nel buffer dello stencil. Si tratta del valore predefinito.                             |
-| D3DSTENCILCAPS \_ zero     | 0x00000002L | Impostare la voce stencil-buffer su 0.                                                                    |
-| D3DSTENCILCAPS \_ Sostituisci  | 0x00000004L | Sostituire la voce dello stencil buffer con il valore di riferimento.                                                |
-| \_INCRSAT D3DSTENCILCAPS  | 0x00000008L | Incrementa la voce dello stencil buffer, bloccando il valore massimo.                                    |
-| \_DECRSAT D3DSTENCILCAPS  | 0x00000010L | Decrementa la voce del buffer di stencil, che viene fissata a zero.                                                 |
-| D3DSTENCILCAPS \_ invertito   | 0x00000020L | Inverti i bit nella voce dello stencil buffer.                                                          |
-| \_Incr D3DSTENCILCAPS     | 0x00000040L | Incrementa la voce dello stencil buffer, eseguendo il wrapping su zero se il nuovo valore supera il valore massimo.      |
-| \_Decr D3DSTENCILCAPS     | 0x00000080L | Decrementa la voce dello stencil buffer, eseguendo il wrapping fino al valore massimo se il nuovo valore è minore di zero. |
-| \_TWOSIDED D3DSTENCILCAPS | 0x00000100L | Il dispositivo supporta lo stencil a due lati.                                                                |
+| D3DSTENCILCAPS \_ KEEP     | 0x00000001L | Non aggiornare la voce nel buffer degli stencil. Si tratta del valore predefinito.                             |
+| D3DSTENCILCAPS \_ ZERO     | 0x00000002L | Impostare la voce stencil-buffer su 0.                                                                    |
+| D3DSTENCILCAPS \_ REPLACE  | 0x00000004L | Sostituire la voce stencil-buffer con il valore di riferimento.                                                |
+| D3DSTENCILCAPS \_ INCRSAT  | 0x00000008L | Incrementare la voce dello stencil buffer, fissando il valore massimo.                                    |
+| D3DSTENCILCAPS \_ DECRSAT  | 0x00000010L | Decrementare la voce dello stencil buffer, fissando a zero.                                                 |
+| D3DSTENCILCAPS \_ INVERT   | 0x00000020L | Invertire i bit nella voce stencil-buffer.                                                          |
+| D3DSTENCILCAPS \_ INCR     | 0x00000040L | Incrementare la voce stencil-buffer, a capo su zero se il nuovo valore supera il valore massimo.      |
+| DECREMENTO D3DSTENCILCAPS \_     | 0x00000080L | Decrementare la voce stencil-buffer, a capo fino al valore massimo se il nuovo valore è minore di zero. |
+| D3DSTENCILCAPS \_ TWOSIDED | 0x00000100L | Il dispositivo supporta stencil a due lati.                                                                |
 
 
 
  
 
-Gli stencil: le voci del buffer sono valori integer compresi tra 0 e 2 Grigioni-1, dove n è la profondità di bit del buffer dello stencil.
+Le voci stencil-buffer sono valori interi compresi tra 0 e 2ⁿ - 1, dove n è la profondità in bit del buffer degli stencil.
 
-Queste costanti vengono usate dal membro StencilCaps di [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
+Queste costanti vengono usate dal membro StencilCaps di [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
 ## <a name="constant-information"></a>Informazioni sulle costanti
 
@@ -44,7 +43,7 @@ Queste costanti vengono usate dal membro StencilCaps di [**D3DCAPS9**](/windows/
 
 |                          |            |
 |--------------------------|------------|
-| Intestazione                   | d3d9caps. h |
+| Intestazione                   | d3d9caps.h |
 | Sistema operativo minimo | Windows 98 |
 
 

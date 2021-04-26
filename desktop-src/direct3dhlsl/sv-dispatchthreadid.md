@@ -1,6 +1,6 @@
 ---
 title: SV_DispatchThreadID
-description: Indici per i quali viene eseguito un compute shader in un gruppo di thread e thread combinato.
+description: Indici per i quali è in esecuzione un compute shader combinato di thread e thread.
 ms.assetid: bad697f6-26d9-47cd-93e5-127621a161e8
 keywords:
 - SV_DispatchThreadID HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d55fcf7e291c561ecb51dd32dfac135c563974c7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e9653d98ebbfef6dd25bb137af3358a14d177f3e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104560326"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996518"
 ---
-# <a name="sv_dispatchthreadid"></a>\_DISPATCHTHREADID SV
+# <a name="sv_dispatchthreadid"></a>SV \_ DispatchThreadID
 
-Indici per i quali viene eseguito un compute shader in un gruppo di thread e thread combinato. SV \_ DispatchThreadID è la somma di SV \_ GroupID \* numThreads e GroupThreadID. Varia in base all'intervallo specificato in [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) e [numThreads](sm5-attributes-numthreads.md). Ad esempio, se dispatch (2, 2, 2) viene chiamato in un compute shader con numThreads (3, 3, 3) SV \_ DispatchThreadID avrà un intervallo di 0.5 per ogni dimensione.
+Indici per i quali è in esecuzione un compute shader combinato di thread e thread. SV \_ DispatchThreadID è la somma di SV \_ GroupID \* numthreads e GroupThreadID. Varia nell'intervallo specificato in [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) e [numthreads](sm5-attributes-numthreads.md). Ad esempio, se Dispatch(2,2,2) viene chiamato su un compute shader con numthreads(3,3,3) SV DispatchThreadID avrà un intervallo \_ di 0,.5 per ogni dimensione.
 
 ## <a name="type"></a>Tipo
 
@@ -35,28 +35,27 @@ Indici per i quali viene eseguito un compute shader in un gruppo di thread e thr
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
 Questo valore di sistema è facoltativo.
 
-Nella figura seguente viene illustrata la relazione tra i parametri passati a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), dispatch (5, 3, 2), i valori specificati nell'attributo [numThreads](sm5-attributes-numthreads.md) , numThreads (10, 8, 3) e i valori che vengono passati al compute shader per i valori di sistema correlati ai thread ([SV \_ groupIndex](sv-groupindex.md), SV \_ DispatchThreadID,[SV \_ GroupThreadID](sv-groupthreadid.md),[SV \_ GroupID](sv-groupid.md)).
+La figura seguente illustra la relazione tra i parametri passati a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati al compute shader per i valori di sistema correlati al thread ([SV \_ GroupIndex](sv-groupindex.md), SV \_ DispatchThreadID,[SV \_ GroupThreadID](sv-groupthreadid.md),[SV \_ GroupID](sv-groupid.md)).
 
-![illustrazione della relazione tra dispatch, i gruppi di thread e i thread](images/threadgroupids.png)
+![illustrazione della relazione tra dispatch, gruppi di thread e thread](images/threadgroupids.png)
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-|        |      |        |          |       |         |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,9 +64,9 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Semantica](dx-graphics-hlsl-semantics.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
