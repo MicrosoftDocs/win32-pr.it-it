@@ -1,42 +1,42 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 209b3024-60cf-47e0-8738-cd7795e38c2a
 title: PageMediaSizeMediaSizeHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db500f5a64254a0e0d152cb019d7f11f25471ce3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 305f67179343fa4acb2fa784113d63d5d2333b0b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320930"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993708"
 ---
-# <a name="pagemediasizemediasizeheight"></a><span data-ttu-id="13759-104">PageMediaSizeMediaSizeHeight</span><span class="sxs-lookup"><span data-stu-id="13759-104">PageMediaSizeMediaSizeHeight</span></span>
+# <a name="pagemediasizemediasizeheight"></a><span data-ttu-id="df0a8-104">PageMediaSizeMediaSizeHeight</span><span class="sxs-lookup"><span data-stu-id="df0a8-104">PageMediaSizeMediaSizeHeight</span></span>
 
-<span data-ttu-id="13759-105">Questo argomento non è aggiornato.</span><span class="sxs-lookup"><span data-stu-id="13759-105">This topic is not current.</span></span> <span data-ttu-id="13759-106">Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="13759-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
+<span data-ttu-id="df0a8-105">Questo argomento non è corrente.</span><span class="sxs-lookup"><span data-stu-id="df0a8-105">This topic is not current.</span></span> <span data-ttu-id="df0a8-106">Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="df0a8-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
 
-<span data-ttu-id="13759-107">Specifica la direzione MediaSizeHeight della dimensione per l'opzione MediaSize personalizzata.</span><span class="sxs-lookup"><span data-stu-id="13759-107">Specifies the dimension MediaSizeHeight direction for the Custom MediaSize option.</span></span>
+<span data-ttu-id="df0a8-107">Specifica la direzione mediasizeheight della dimensione per l'opzione MediaSize personalizzata.</span><span class="sxs-lookup"><span data-stu-id="df0a8-107">Specifies the dimension MediaSizeHeight direction for the Custom MediaSize option.</span></span>
 
--   [<span data-ttu-id="13759-108">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="13759-108">Element Information</span></span>](#element-information)
--   [<span data-ttu-id="13759-109">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="13759-109">Structure Content</span></span>](#structure-content)
+-   [<span data-ttu-id="df0a8-108">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="df0a8-108">Element Information</span></span>](#element-information)
+-   [<span data-ttu-id="df0a8-109">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="df0a8-109">Structure Content</span></span>](#structure-content)
 
-## <a name="element-information"></a><span data-ttu-id="13759-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="13759-110">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="df0a8-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="df0a8-110">Element Information</span></span>
 
 
 
-| <span data-ttu-id="13759-111">Nome</span><span class="sxs-lookup"><span data-stu-id="13759-111">Name</span></span>                       |                                                           |
+| <span data-ttu-id="df0a8-111">Nome</span><span class="sxs-lookup"><span data-stu-id="df0a8-111">Name</span></span> | <span data-ttu-id="df0a8-112">Valore</span><span class="sxs-lookup"><span data-stu-id="df0a8-112">Value</span></span> |
 |----------------------------|-----------------------------------------------------------|
-| <span data-ttu-id="13759-112">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="13759-112">Element Type</span></span> <br/>   | <span data-ttu-id="13759-113">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="13759-113">ParameterDef</span></span><br/>                                   |
-| <span data-ttu-id="13759-114">Prefisso ambito</span><span class="sxs-lookup"><span data-stu-id="13759-114">Scoping Prefix</span></span> <br/> | <span data-ttu-id="13759-115">Pagina</span><span class="sxs-lookup"><span data-stu-id="13759-115">Page</span></span><br/>                                           |
-| <span data-ttu-id="13759-116">Note</span><span class="sxs-lookup"><span data-stu-id="13759-116">Notes</span></span> <br/>          | <span data-ttu-id="13759-117">Collegato a elemento PageMediaSize, opzione personalizzata</span><span class="sxs-lookup"><span data-stu-id="13759-117">Linked to PageMediaSize element, Custom option</span></span><br/> |
+| <span data-ttu-id="df0a8-113">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="df0a8-113">Element Type</span></span> <br/>   | <span data-ttu-id="df0a8-114">ParameterDef</span><span class="sxs-lookup"><span data-stu-id="df0a8-114">ParameterDef</span></span><br/>                                   |
+| <span data-ttu-id="df0a8-115">Prefisso di ambito</span><span class="sxs-lookup"><span data-stu-id="df0a8-115">Scoping Prefix</span></span> <br/> | <span data-ttu-id="df0a8-116">Pagina</span><span class="sxs-lookup"><span data-stu-id="df0a8-116">Page</span></span><br/>                                           |
+| <span data-ttu-id="df0a8-117">Note</span><span class="sxs-lookup"><span data-stu-id="df0a8-117">Notes</span></span> <br/>          | <span data-ttu-id="df0a8-118">Collegato all'elemento PageMediaSize, opzione Custom</span><span class="sxs-lookup"><span data-stu-id="df0a8-118">Linked to PageMediaSize element, Custom option</span></span><br/> |
 
 
 
  
 
-## <a name="structure-content"></a><span data-ttu-id="13759-118">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="13759-118">Structure Content</span></span>
+## <a name="structure-content"></a><span data-ttu-id="df0a8-119">Contenuto della struttura</span><span class="sxs-lookup"><span data-stu-id="df0a8-119">Structure Content</span></span>
 
-<span data-ttu-id="13759-119">La struttura XML di questo elemento è la seguente:</span><span class="sxs-lookup"><span data-stu-id="13759-119">The XML structure of this element is:</span></span>
+<span data-ttu-id="df0a8-120">La struttura XML di questo elemento è:</span><span class="sxs-lookup"><span data-stu-id="df0a8-120">The XML structure of this element is:</span></span>
 
 ``` syntax
 <psf:ParameterDef name="psk:PageMediaSizeMediaSizeHeight">
@@ -65,31 +65,31 @@ ms.locfileid: "106320930"
       
 ```
 
-## <a name="structure-properties"></a><span data-ttu-id="13759-120">Proprietà struttura</span><span class="sxs-lookup"><span data-stu-id="13759-120">Structure Properties</span></span>
+## <a name="structure-properties"></a><span data-ttu-id="df0a8-121">Proprietà della struttura</span><span class="sxs-lookup"><span data-stu-id="df0a8-121">Structure Properties</span></span>
 
-<span data-ttu-id="13759-121">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="13759-121">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
+<span data-ttu-id="df0a8-122">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="df0a8-122">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
 
 
 
-| <span data-ttu-id="13759-122">Proprietà</span><span class="sxs-lookup"><span data-stu-id="13759-122">Property</span></span>                | <span data-ttu-id="13759-123">xsi:type</span><span class="sxs-lookup"><span data-stu-id="13759-123">xsi:type</span></span>           | <span data-ttu-id="13759-124">Valore</span><span class="sxs-lookup"><span data-stu-id="13759-124">Value</span></span>                      |
+| <span data-ttu-id="df0a8-123">Proprietà</span><span class="sxs-lookup"><span data-stu-id="df0a8-123">Property</span></span>                | <span data-ttu-id="df0a8-124">xsi:type</span><span class="sxs-lookup"><span data-stu-id="df0a8-124">xsi:type</span></span>           | <span data-ttu-id="df0a8-125">Valore</span><span class="sxs-lookup"><span data-stu-id="df0a8-125">Value</span></span>                      |
 |-------------------------|--------------------|----------------------------|
-| <span data-ttu-id="13759-125">DataType</span><span class="sxs-lookup"><span data-stu-id="13759-125">DataType</span></span><br/>     | <span data-ttu-id="13759-126">string</span><span class="sxs-lookup"><span data-stu-id="13759-126">string</span></span><br/>  | <span data-ttu-id="13759-127">xs:integer</span><span class="sxs-lookup"><span data-stu-id="13759-127">xs:integer</span></span><br/>      |
-| <span data-ttu-id="13759-128">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="13759-128">DefaultValue</span></span><br/> | <span data-ttu-id="13759-129">numero intero</span><span class="sxs-lookup"><span data-stu-id="13759-129">integer</span></span><br/> | <span data-ttu-id="13759-130">Non definito</span><span class="sxs-lookup"><span data-stu-id="13759-130">undefined</span></span><br/>       |
-| <span data-ttu-id="13759-131">MaxValue</span><span class="sxs-lookup"><span data-stu-id="13759-131">MaxValue</span></span><br/>     | <span data-ttu-id="13759-132">numero intero</span><span class="sxs-lookup"><span data-stu-id="13759-132">integer</span></span><br/> | <span data-ttu-id="13759-133">Non definito</span><span class="sxs-lookup"><span data-stu-id="13759-133">undefined</span></span><br/>       |
-| <span data-ttu-id="13759-134">MinValue</span><span class="sxs-lookup"><span data-stu-id="13759-134">MinValue</span></span><br/>     | <span data-ttu-id="13759-135">numero intero</span><span class="sxs-lookup"><span data-stu-id="13759-135">integer</span></span><br/> | <span data-ttu-id="13759-136">Non definito</span><span class="sxs-lookup"><span data-stu-id="13759-136">undefined</span></span><br/>       |
-| <span data-ttu-id="13759-137">Obbligatorio</span><span class="sxs-lookup"><span data-stu-id="13759-137">Mandatory</span></span><br/>    | <span data-ttu-id="13759-138">string</span><span class="sxs-lookup"><span data-stu-id="13759-138">string</span></span><br/>  | <span data-ttu-id="13759-139">PSK: condizionale</span><span class="sxs-lookup"><span data-stu-id="13759-139">psk:Conditional</span></span><br/> |
-| <span data-ttu-id="13759-140">Più elementi</span><span class="sxs-lookup"><span data-stu-id="13759-140">Multiple</span></span><br/>     | <span data-ttu-id="13759-141">integer</span><span class="sxs-lookup"><span data-stu-id="13759-141">integer</span></span><br/> | <span data-ttu-id="13759-142">1</span><span class="sxs-lookup"><span data-stu-id="13759-142">1</span></span><br/>               |
-| <span data-ttu-id="13759-143">UnitType</span><span class="sxs-lookup"><span data-stu-id="13759-143">UnitType</span></span><br/>     | <span data-ttu-id="13759-144">string</span><span class="sxs-lookup"><span data-stu-id="13759-144">string</span></span><br/>  | <span data-ttu-id="13759-145">micron</span><span class="sxs-lookup"><span data-stu-id="13759-145">microns</span></span><br/>         |
+| <span data-ttu-id="df0a8-126">DataType</span><span class="sxs-lookup"><span data-stu-id="df0a8-126">DataType</span></span><br/>     | <span data-ttu-id="df0a8-127">string</span><span class="sxs-lookup"><span data-stu-id="df0a8-127">string</span></span><br/>  | <span data-ttu-id="df0a8-128">xs:integer</span><span class="sxs-lookup"><span data-stu-id="df0a8-128">xs:integer</span></span><br/>      |
+| <span data-ttu-id="df0a8-129">DefaultValue</span><span class="sxs-lookup"><span data-stu-id="df0a8-129">DefaultValue</span></span><br/> | <span data-ttu-id="df0a8-130">numero intero</span><span class="sxs-lookup"><span data-stu-id="df0a8-130">integer</span></span><br/> | <span data-ttu-id="df0a8-131">Non definito</span><span class="sxs-lookup"><span data-stu-id="df0a8-131">undefined</span></span><br/>       |
+| <span data-ttu-id="df0a8-132">MaxValue</span><span class="sxs-lookup"><span data-stu-id="df0a8-132">MaxValue</span></span><br/>     | <span data-ttu-id="df0a8-133">numero intero</span><span class="sxs-lookup"><span data-stu-id="df0a8-133">integer</span></span><br/> | <span data-ttu-id="df0a8-134">Non definito</span><span class="sxs-lookup"><span data-stu-id="df0a8-134">undefined</span></span><br/>       |
+| <span data-ttu-id="df0a8-135">Minvalue</span><span class="sxs-lookup"><span data-stu-id="df0a8-135">MinValue</span></span><br/>     | <span data-ttu-id="df0a8-136">numero intero</span><span class="sxs-lookup"><span data-stu-id="df0a8-136">integer</span></span><br/> | <span data-ttu-id="df0a8-137">Non definito</span><span class="sxs-lookup"><span data-stu-id="df0a8-137">undefined</span></span><br/>       |
+| <span data-ttu-id="df0a8-138">Obbligatorio</span><span class="sxs-lookup"><span data-stu-id="df0a8-138">Mandatory</span></span><br/>    | <span data-ttu-id="df0a8-139">string</span><span class="sxs-lookup"><span data-stu-id="df0a8-139">string</span></span><br/>  | <span data-ttu-id="df0a8-140">psk:Condizionale</span><span class="sxs-lookup"><span data-stu-id="df0a8-140">psk:Conditional</span></span><br/> |
+| <span data-ttu-id="df0a8-141">Più elementi</span><span class="sxs-lookup"><span data-stu-id="df0a8-141">Multiple</span></span><br/>     | <span data-ttu-id="df0a8-142">integer</span><span class="sxs-lookup"><span data-stu-id="df0a8-142">integer</span></span><br/> | <span data-ttu-id="df0a8-143">1</span><span class="sxs-lookup"><span data-stu-id="df0a8-143">1</span></span><br/>               |
+| <span data-ttu-id="df0a8-144">Tipo di unità</span><span class="sxs-lookup"><span data-stu-id="df0a8-144">UnitType</span></span><br/>     | <span data-ttu-id="df0a8-145">string</span><span class="sxs-lookup"><span data-stu-id="df0a8-145">string</span></span><br/>  | <span data-ttu-id="df0a8-146">Micron</span><span class="sxs-lookup"><span data-stu-id="df0a8-146">microns</span></span><br/>         |
 
 
 
  
 
-## <a name="related-topics"></a><span data-ttu-id="13759-146">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="13759-146">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="df0a8-147">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="df0a8-147">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="13759-147">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="13759-147">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[<span data-ttu-id="df0a8-148">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="df0a8-148">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
