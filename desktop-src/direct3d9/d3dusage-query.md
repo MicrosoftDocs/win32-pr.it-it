@@ -1,46 +1,45 @@
 ---
-description: Queste opzioni identificano i tipi di risorse della query.
+description: Queste opzioni identificano i tipi di risorse di query.
 ms.assetid: d2030002-bd44-443f-8235-978919ebbda6
 title: D3DUSAGE_QUERY
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e4f5dda7f84dfa36e4f3b7ece1b359a4841bbbf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0eac450ed722da26fe4885d41707483adf401f89
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126878"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994108"
 ---
-# <a name="d3dusage_query"></a>\_Query D3DUSAGE
+# <a name="d3dusage_query"></a>D3DUSAGE \_ QUERY
 
-Queste opzioni identificano i tipi di risorse della query.
+Queste opzioni identificano i tipi di risorse di query.
 
 
 
-|                                            |                                                                                                                                                                                                                                                                                                                                                     |
+| \#Definire                                   | Descrizione                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \#definire                                   | Descrizione                                                                                                                                                                                                                                                                                                                                         |
-| \_Filtro query \_ D3DUSAGE                    | Eseguire una query sul formato di risorsa per verificare se supporta i tipi di filtro di trama diversi dal punto di D3DTEXF, \_ che è sempre supportato.                                                                                                                                                                                                                         |
-| \_LEGACYBUMPMAP query \_ D3DUSAGE             | Eseguire una query sulla risorsa relativa a una mappa Bump legacy.                                                                                                                                                                                                                                                                                                         |
-| D3DUSAGE \_ query \_ POSTPIXELSHADER \_ blending | Eseguire una query sulla risorsa per verificare il supporto per il supporto di post pixel shader blending. Se [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) ha esito negativo con D3DUSAGE \_ query \_ POSTPIXELSHADER \_ blending, le operazioni successive alla fusione dei pixel non sono supportate. Sono inclusi test alfa, nebbia pixel, Blend di destinazione di rendering, abilitazione della scrittura di colori e dithering. |
-| \_SRGBREAD query \_ D3DUSAGE                  | Eseguire una query sulla risorsa per verificare se una trama supporta la correzione gamma durante un'operazione di lettura.                                                                                                                                                                                                                                                        |
-| \_SRGBWRITE query \_ D3DUSAGE                 | Eseguire una query sulla risorsa per verificare se una trama supporta la correzione gamma durante un'operazione di scrittura.                                                                                                                                                                                                                                                       |
-| \_VERTEXTEXTURE query \_ D3DUSAGE             | Eseguire una query sulla risorsa per verificare il supporto per il campionamento di trama vertex shader.                                                                                                                                                                                                                                                                            |
-| \_WRAPANDMIP query \_ D3DUSAGE                | Eseguire una query sulla risorsa per verificare il supporto per il wrapping della trama e il mapping MIP.                                                                                                                                                                                                                                                                          |
+| FILTRO QUERY D3DUSAGE \_ \_                    | Eseguire una query sul formato della risorsa per verificare se supporta tipi di filtro trame diversi da D3DTEXF \_ POINT (che è sempre supportato).                                                                                                                                                                                                                         |
+| D3DUSAGE \_ QUERY \_ LEGACYBUMPMAP             | Eseguire una query sulla risorsa su una mappa di rilievo legacy.                                                                                                                                                                                                                                                                                                         |
+| D3DUSAGE \_ QUERY \_ POSTPIXELSHADER \_ BLENDING | Eseguire una query sulla risorsa per verificare il supporto per il supporto pixel shader blending. Se [**CheckDeviceFormat ha**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) esito negativo con D3DUSAGE \_ QUERY \_ POSTPIXELSHADER \_ BLENDING, le operazioni di fusione post-pixel non sono supportate. Sono inclusi il test alfa, la nebbia dei pixel, la fusione della destinazione di rendering, l'abilitazione della scrittura dei colori e il dithering. |
+| D3DUSAGE \_ QUERY \_ SRGBREAD                  | Eseguire una query sulla risorsa per verificare se una trama supporta la correzione gamma durante un'operazione di lettura.                                                                                                                                                                                                                                                        |
+| D3DUSAGE \_ QUERY \_ SRGBWRITE                 | Eseguire una query sulla risorsa per verificare se una trama supporta la correzione gamma durante un'operazione di scrittura.                                                                                                                                                                                                                                                       |
+| D3DUSAGE \_ QUERY \_ VERTEXTEXTURE             | Eseguire una query sulla risorsa per verificare il supporto per il campionamento delle trame dei vertex shader.                                                                                                                                                                                                                                                                            |
+| D3DUSAGE \_ QUERY \_ WRAPANDMIP                | Eseguire una query sulla risorsa per verificare il supporto per il wrapping delle trame e il mapping mip.                                                                                                                                                                                                                                                                          |
 
 
 
  
 
-Usare [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) per eseguire query sul supporto hardware per questi usi e altri utilizzi elencati in [D3DUSAGE](d3dusage.md).
+Usare [**CheckDeviceFormat per**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) eseguire query sul supporto hardware per questi utilizzi e su altri utilizzi elencati in [D3DUSAGE](d3dusage.md).
 
-## <a name="constant-information"></a>Informazioni sulle costanti
+## <a name="constant-information"></a>Informazioni costanti
 
 
 
 |                          |             |
 |--------------------------|-------------|
-| Intestazione                   | d3d9types. h |
+| Intestazione                   | d3d9types.h |
 | Sistema operativo minimo | Windows 98  |
 
 

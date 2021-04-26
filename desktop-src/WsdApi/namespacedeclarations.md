@@ -1,17 +1,17 @@
 ---
 description: Genera dichiarazioni C per le tabelle dello spazio dei nomi.
 ms.assetid: 21b76829-01c4-4228-a714-6319e5eb1c61
-title: elemento namespaceDeclarations
+title: Elemento namespaceDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df827ade45d5fba3247397e2a4dc7ec905ff7405
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e98d9c0cf1556e21d92fe7ea1ba222e861f00ac
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312686"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994258"
 ---
-# <a name="namespacedeclarations-element"></a>elemento namespaceDeclarations
+# <a name="namespacedeclarations-element"></a>Elemento namespaceDeclarations
 
 Genera dichiarazioni C per le tabelle dello spazio dei nomi.
 
@@ -35,19 +35,19 @@ Non ci sono elementi figlio.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Alle tabelle di spazi dei nomi viene fatto riferimento da tabelle di tipo e altro codice generato, pertanto questo elemento viene utilizzato per generare file di inclusione.
+Le tabelle dello spazio dei nomi fanno riferimento a tabelle di tipo e altro codice generato, pertanto questo elemento viene usato per generare file di inclusione.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

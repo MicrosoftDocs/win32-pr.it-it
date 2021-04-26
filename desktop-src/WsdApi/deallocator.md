@@ -4,12 +4,12 @@ ms.assetid: 58228dfd-1d4b-41e5-b423-a54525021c22
 title: elemento deallocator
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3604f0efb366c3f88e2e0828c02344ee75606079
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 692ed2e57b3e649c0ee7af171f205c949496f9b4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226928"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994938"
 ---
 # <a name="deallocator-element"></a>elemento deallocator
 
@@ -35,13 +35,13 @@ Non ci sono elementi figlio.
 
 | Elemento                                               | Descrizione                                                                                   |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementazioni per le funzioni stub per le operazioni di tipo porta.<br/> <br/> |
+| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementazioni per funzioni stub per operazioni di tipo porta.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo di deallocatore deve essere racchiuso in una coppia di <deallocator></deallocator> tag. Le stringhe seguenti sono valori di deallocator validi:
+Il tipo di deallocatore deve essere racchiuso in una coppia di <deallocator></deallocator> tag. Le stringhe seguenti sono valori deallocatori validi:
 
 -   Nessuno
 -   WSDFreeLinkedMemory
@@ -55,7 +55,7 @@ Il tipo di deallocatore deve essere racchiuso in una coppia di <deallocator></de
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

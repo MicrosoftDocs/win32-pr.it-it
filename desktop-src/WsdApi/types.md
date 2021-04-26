@@ -1,18 +1,18 @@
 ---
-description: Elenco di nomi completi XSD.
-title: Elemento types
+description: Elenco di nomi qualificati XSD.
+title: Elemento Types
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5384c1b246278fd8011e5730c296ca9422a2208f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c29a94f7ad4816f7b737261bf52b064a5dd68f9
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308833"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994119"
 ---
-# <a name="types-element"></a>Elemento types
+# <a name="types-element"></a>Elemento Types
 
-Elenco di nomi completi XSD.
+Elenco di nomi qualificati XSD.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -34,8 +34,8 @@ Non ci sono elementi figlio.
 
 | Elemento                             | Descrizione                                                            |
 |-------------------------------------|------------------------------------------------------------------------|
-| [**host**](host.md)<br/>     | Identifica l'host del servizio.<br/> <br/>                    |
-| [**ospitato**](hosted.md)<br/> | Identifica un servizio definito da un host del servizio.<br/> <br/> |
+| [**Host**](host.md)<br/>     | Identifica l'host del servizio.<br/> <br/>                    |
+| [**Ospitato da**](hosted.md)<br/> | Identifica un servizio definito da un host del servizio.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

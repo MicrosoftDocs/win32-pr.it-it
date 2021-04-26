@@ -1,19 +1,19 @@
 ---
-description: Genera implementazioni per le funzioni QueryInterface, AddRef e release.
+description: Genera implementazioni per le funzioni QueryInterface, AddRef e Release.
 ms.assetid: 4b6abd0b-7570-4ae0-a727-cdb6cec58daf
 title: Elemento IUnknownDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ca92338e3dc97a12e04228510fc17eb2ef2483
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb3a4f76145e585411e64c10ea7af922db931846
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310295"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995148"
 ---
 # <a name="iunknowndefinitions-element"></a>Elemento IUnknownDefinitions
 
-Genera implementazioni per le funzioni QueryInterface, AddRef e release.
+Genera implementazioni per le funzioni QueryInterface, AddRef e Release.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -31,8 +31,8 @@ Genera implementazioni per le funzioni QueryInterface, AddRef e release.
 
 | Attributo                  | Type                         | Obbligatoria       | Descrizione                                                |
 |----------------------------|------------------------------|----------------|------------------------------------------------------------|
-| **proxyClass**<br/>  | stringa di caratteri \_<br/> | Sì<br/> | Nome della classe di implementazione.<br/> <br/> |
-| **refCountVar**<br/> | stringa di caratteri \_<br/> | Sì<br/> | Nome della variabile di conteggio dei riferimenti.<br/> <br/>  |
+| **classe proxy**<br/>  | stringa di \_ caratteri<br/> | Sì<br/> | Nome della classe di implementazione.<br/> <br/> |
+| **refCountVar**<br/> | stringa di \_ caratteri<br/> | Sì<br/> | Nome della variabile del conteggio dei riferimenti.<br/> <br/>  |
 
 
 
@@ -58,7 +58,7 @@ interface
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -66,7 +66,7 @@ interface
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

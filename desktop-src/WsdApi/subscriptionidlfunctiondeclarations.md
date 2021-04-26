@@ -1,19 +1,19 @@
 ---
-description: Genera dichiarazioni IDL per le funzioni proxy di sottoscrizione e annullamento della sottoscrizione per le operazioni di notifica del tipo di porta.
+description: Genera dichiarazioni IDL per le funzioni proxy subscribe/unsubscribe per le operazioni di notifica del tipo di porta.
 ms.assetid: 240ef2b3-ed72-45bb-b653-441c4e5540b5
-title: elemento subscriptionIdlFunctionDeclarations
+title: Elemento subscriptionIdlFunctionDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e1eba60e327778efb1589436a09e62d043d2960
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f4d738dd06ccbf034702cbb7d6494a28a229d07
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884246"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995368"
 ---
-# <a name="subscriptionidlfunctiondeclarations-element"></a>elemento subscriptionIdlFunctionDeclarations
+# <a name="subscriptionidlfunctiondeclarations-element"></a>Elemento subscriptionIdlFunctionDeclarations
 
-Genera dichiarazioni IDL per le funzioni proxy di sottoscrizione e annullamento della sottoscrizione per le operazioni di notifica del tipo di porta.
+Genera dichiarazioni IDL per le funzioni proxy subscribe/unsubscribe per le operazioni di notifica del tipo di porta.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -30,7 +30,7 @@ Genera dichiarazioni IDL per le funzioni proxy di sottoscrizione e annullamento 
 
 | Attributo                 | Type               | Obbligatoria      | Descrizione                                                                                                                   |
 |---------------------------|--------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **Extensible**<br/> | boolean<br/> | No<br/> | Possibilità di aggiungere punti di estensibilità alle funzioni e alle interfacce. Questo valore è sempre impostato su true.<br/> <br/> |
+| **Extensible**<br/> | boolean<br/> | No<br/> | Possibilità di aggiungere punti di estendibilità a funzioni e interfacce. Questo valore è sempre impostato su true.<br/> <br/> |
 
 
 
@@ -41,8 +41,8 @@ Genera dichiarazioni IDL per le funzioni proxy di sottoscrizione e annullamento 
 | Elemento                                                           | Descrizione                                                                                            |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [**notificationInterface**](notificationinterface.md)<br/> | Specifica il nome dell'interfaccia di notifica utilizzata con le sottoscrizioni di eventi.<br/> <br/> |
-| [**operazione**](operation.md)<br/>                         | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                       |
-| [**portType**](porttype.md)<br/>                           | Specifica il tipo di porta per il quale deve essere generato il codice.<br/> <br/>                      |
+| [**Operazione**](operation.md)<br/>                         | Specifica un'operazione per cui deve essere generato il codice.<br/> <br/>                       |
+| [**Porttype**](porttype.md)<br/>                           | Specifica il tipo di porta per cui deve essere generato il codice.<br/> <br/>                      |
 
 
 
@@ -62,7 +62,7 @@ Genera dichiarazioni IDL per le funzioni proxy di sottoscrizione e annullamento 
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -70,7 +70,7 @@ Genera dichiarazioni IDL per le funzioni proxy di sottoscrizione e annullamento 
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

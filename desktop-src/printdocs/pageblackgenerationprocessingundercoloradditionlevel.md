@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: da957aca-1655-4e8d-9e7b-4da0f253293b
 title: PageBlackGenerationProcessingUnderColorAdditionLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1fb6866dae4eb4a39de5c2b3b5d678a7388d703
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 8e1b43d8d9ee366fc742dc3d7b1617f6297fc96e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104234583"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995668"
 ---
 # <a name="pageblackgenerationprocessingundercoloradditionlevel"></a>PageBlackGenerationProcessingUnderColorAdditionLevel
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'input penna cromatico (in proporzioni di componenti grigio) da aggiungere alle aree in cui GCR/UCR ha generato "BlackInkLimit" (o UCAStart, se specificato) nelle aree neutre scure e quasi neutre.
+Descrive la quantità di input penna cromatico (in proporzioni di componenti grigi) da aggiungere alle aree in cui GCR/UCR ha generato "BlackInkLimit" (o UCAStart, se specificato) nelle aree neutre o quasi neutre.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Descrive l'input penna cromatico (in proporzioni di componenti grigio) da aggiun
 
 
 
-| Nome                       |                                                            |
+| Nome | Valore |
 |----------------------------|------------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                    |
-| Prefisso ambito <br/> | Pagina<br/>                                            |
-| Note <br/>          | Collegato a elemento PageBlackGenerationProcessing<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                                            |
+| Note <br/>          | Collegato all'elemento PageBlackGenerationProcessing<br/> |
 
 
 
@@ -36,7 +36,7 @@ Descrive l'input penna cromatico (in proporzioni di componenti grigio) da aggiun
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageBlackGenerationProcessingUnderColorAdditionLevel">
@@ -64,7 +64,7 @@ La struttura XML di questo elemento è la seguente:
 </psf:ParameterDef>
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -75,9 +75,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| Minvalue<br/>     | integer<br/> | 0<br/>               |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 
 

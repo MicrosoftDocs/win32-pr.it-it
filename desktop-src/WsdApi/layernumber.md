@@ -1,17 +1,17 @@
 ---
 description: Definisce il numero del livello di codice da generare.
 ms.assetid: ad67a6fb-4bb6-4550-a9e9-f5219f3868c6
-title: elemento layerNumber
+title: Elemento layerNumber
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c22a20db7817e449b05c943c9016b6002f35b54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33c33ee4468ab81f030bfd8b49dfe104bbe76248
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231815"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995488"
 ---
-# <a name="layernumber-element"></a>elemento layerNumber
+# <a name="layernumber-element"></a>Elemento layerNumber
 
 Definisce il numero del livello di codice da generare.
 
@@ -41,9 +41,9 @@ Non ci sono elementi figlio.
 
 ## <a name="remarks"></a>Commenti
 
-I numeri di livello vengono usati nelle tabelle di runtime per distinguere un livello di codice per un altro. WSDAPI usa il codice generato con un numero di livello pari a 0.
+I numeri di livello vengono usati nelle tabelle di runtime per distinguere un livello di codice per un altro. WSDAPI usa codice generato con un numero di livello 0.
 
-In genere, questo valore sarà 1, a indicare che il codice generato è sovrapposto a WSDAPI e a nessun altro livello. In alcuni casi, è possibile usare numeri più alti. Se, ad esempio, un'azienda produce codice per una classe di dispositivi (livello 1), è possibile che un particolare fornitore di hardware desideri aggiungere un livello aggiuntivo con numero 2.
+In genere, questo valore sarà 1, a indicare che il codice generato è a livelli su WSDAPI e nessun altro livello. In alcuni casi, è possibile usare numeri più elevati. Ad esempio, se una società produce codice per una classe di dispositivo (livello 1 numerato), un fornitore di hardware specifico potrebbe voler aggiungere un ulteriore livello numerato livello 2.
 
 I valori validi, tranne nel caso di WSDAPI, sono maggiori di 0 e minori di 16.
 
@@ -51,7 +51,7 @@ I valori validi, tranne nel caso di WSDAPI, sono maggiori di 0 e minori di 16.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

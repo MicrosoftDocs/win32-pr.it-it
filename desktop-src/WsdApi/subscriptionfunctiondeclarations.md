@@ -1,19 +1,19 @@
 ---
-description: Genera dichiarazioni di implementazione per le funzioni proxy di sottoscrizione e annullamento della sottoscrizione per le operazioni di notifica del tipo di porta.
+description: Genera dichiarazioni di implementazione per le funzioni proxy subscribe/unsubscribe per le operazioni di notifica del tipo di porta.
 ms.assetid: 0e5b2232-c9bf-4741-921d-bb3bce4ee293
-title: elemento subscriptionFunctionDeclarations
+title: subscriptionFunctionDeclarations - elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8957dcec6133d98830659fa76e2b7939079d3c50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb7389b30ef7da17f9466fa8aefd24fa04f4c99f
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234315"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995458"
 ---
-# <a name="subscriptionfunctiondeclarations-element"></a>elemento subscriptionFunctionDeclarations
+# <a name="subscriptionfunctiondeclarations-element"></a>subscriptionFunctionDeclarations - elemento
 
-Genera dichiarazioni di implementazione per le funzioni proxy di sottoscrizione e annullamento della sottoscrizione per le operazioni di notifica del tipo di porta.
+Genera dichiarazioni di implementazione per le funzioni proxy subscribe/unsubscribe per le operazioni di notifica del tipo di porta.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -30,7 +30,7 @@ Genera dichiarazioni di implementazione per le funzioni proxy di sottoscrizione 
 
 | Attributo                 | Type               | Obbligatoria      | Descrizione                                                                                                                   |
 |---------------------------|--------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **Extensible**<br/> | boolean<br/> | No<br/> | Possibilità di aggiungere punti di estensibilità alle funzioni e alle interfacce. Questo valore è sempre impostato su true.<br/> <br/> |
+| **Extensible**<br/> | boolean<br/> | No<br/> | Possibilità di aggiungere punti di estendibilità a funzioni e interfacce. Questo valore è sempre impostato su true.<br/> <br/> |
 
 
 
@@ -41,8 +41,8 @@ Genera dichiarazioni di implementazione per le funzioni proxy di sottoscrizione 
 | Elemento                                                           | Descrizione                                                                                            |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [**notificationInterface**](notificationinterface.md)<br/> | Specifica il nome dell'interfaccia di notifica utilizzata con le sottoscrizioni di eventi.<br/> <br/> |
-| [**operazione**](operation.md)<br/>                         | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                       |
-| [**portType**](porttype.md)<br/>                           | Specifica il tipo di porta per il quale deve essere generato il codice.<br/> <br/>                      |
+| [**Operazione**](operation.md)<br/>                         | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                       |
+| [**Porttype**](porttype.md)<br/>                           | Specifica il tipo di porta per cui deve essere generato il codice.<br/> <br/>                      |
 
 
 
@@ -62,7 +62,7 @@ Genera dichiarazioni di implementazione per le funzioni proxy di sottoscrizione 
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -70,7 +70,7 @@ Genera dichiarazioni di implementazione per le funzioni proxy di sottoscrizione 
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

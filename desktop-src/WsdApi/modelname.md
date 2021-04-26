@@ -1,17 +1,17 @@
 ---
 description: Specifica il nome del dispositivo.
 ms.assetid: 398737bb-6694-42f8-9e9f-5c7f203e54e0
-title: elemento ModelName
+title: Elemento modelName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20cf4714896097d1744604a5b4ae5ec580b793dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f483709e56d7b3b42c0f6c6fe055575a710eb94
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316550"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995118"
 ---
-# <a name="modelname-element"></a>elemento ModelName
+# <a name="modelname-element"></a>Elemento modelName
 
 Specifica il nome del dispositivo.
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                                   | Descrizione                                                                                          |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce il produttore e i metadati del modello per il dispositivo da implementare.<br/> <br/> |
+| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce i metadati del produttore e del modello per il dispositivo da implementazione.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

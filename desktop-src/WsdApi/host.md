@@ -1,19 +1,19 @@
 ---
-description: Definisce gli elementi ServiceID e types per l'host del servizio.
+description: Definisce gli elementi ServiceID e Types per l'host del servizio.
 ms.assetid: 95066c04-5bdc-4c97-98b8-1da9928d9395
 title: elemento host
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec073a89cf1911ab363d757d36cd264c85c8a5c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9f051f6665715ecaa519a060e18a3cbf4912210
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880637"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993798"
 ---
 # <a name="host-element"></a>elemento host
 
-Definisce gli elementi [**ServiceID**](serviceid.md) e [**types**](types.md) per l'host del servizio.
+Definisce gli elementi [**ServiceID**](serviceid.md) e [**Types per**](types.md) l'host del servizio.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -33,8 +33,8 @@ Non ci sono attributi.
 
 | Elemento                                   | Descrizione                                                                 |
 |-------------------------------------------|-----------------------------------------------------------------------------|
-| [**ServiceID**](serviceid.md)<br/> | Definisce l'identificatore del servizio per l'host del servizio.<br/> <br/> |
-| [**Tipi**](types.md)<br/>         | Definisce un elenco di nomi completi XSD.<br/> <br/>               |
+| [**SERVICEID**](serviceid.md)<br/> | Definisce l'identificatore del servizio per l'host del servizio.<br/> <br/> |
+| [**Tipi**](types.md)<br/>         | Definisce un elenco di nomi qualificati XSD.<br/> <br/>               |
 
 
 
@@ -53,7 +53,7 @@ Non ci sono attributi.
 
 | Elemento                                         | Descrizione                                                                   |
 |-------------------------------------------------|-------------------------------------------------------------------------------|
-| [**hostMetadata**](hostmetadata.md)<br/> | Metadati di hosting per il dispositivo da implementare.<br/> <br/> |
+| [**hostMetadata**](hostmetadata.md)<br/> | Metadati di hosting per il dispositivo da implementazione.<br/> <br/> |
 
 
 
@@ -61,7 +61,7 @@ Non ci sono attributi.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

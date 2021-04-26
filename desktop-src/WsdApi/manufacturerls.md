@@ -1,17 +1,17 @@
 ---
 description: Specifica una versione localizzata del nome del produttore.
 ms.assetid: e87de50f-60ec-4c18-b21c-81f7b6928752
-title: elemento manufacturerLS
+title: ManufacturerLS - elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea756e9c2a55c9bc062b6ddd8566ea5443c6ed80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d24950355c5439d9a99c4ef451f1330772f3459
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310294"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993678"
 ---
-# <a name="manufacturerls-element"></a>elemento manufacturerLS
+# <a name="manufacturerls-element"></a>ManufacturerLS - elemento
 
 Specifica una versione localizzata del nome del produttore.
 
@@ -44,7 +44,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                                   | Descrizione                                                                                          |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce il produttore e i metadati del modello per il dispositivo da implementare.<br/> <br/> |
+| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce i metadati del produttore e del modello per il dispositivo da implementazione.<br/> <br/> |
 
 
 
@@ -52,7 +52,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: f6fa0421-a125-4ead-a540-d2f7327a26b6
 title: PageScalingOffsetHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a475f7fa68cd961d9d7a7f42e40fc9ea80a72a4e
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 1a91178f1506196ab505a90de8bf3a3163fa8a3c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104401834"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993739"
 ---
 # <a name="pagescalingoffsetheight"></a>PageScalingOffsetHeight
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'offset di ridimensionamento nella direzione ImageableSizeHeight per la scalabilità personalizzata.
+Specifica l'offset di ridimensionamento nella direzione ImageableSizeHeight per il ridimensionamento personalizzato.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Specifica l'offset di ridimensionamento nella direzione ImageableSizeHeight per 
 
 
 
-| Nome                       |                                                         |
+| Nome | Valore |
 |----------------------------|---------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                 |
-| Prefisso ambito <br/> | Pagina<br/>                                         |
-| Note <br/>          | Collegato a elemento PageScaling, opzione personalizzata<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                                         |
+| Note <br/>          | Collegato all'elemento PageScaling, opzione Custom<br/> |
 
 
 
@@ -36,7 +36,7 @@ Specifica l'offset di ridimensionamento nella direzione ImageableSizeHeight per 
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageScalingOffsetHeight">
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -76,10 +76,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| MinValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Minvalue<br/>     | numero intero<br/> | Non definito<br/>       |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | micron<br/>         |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
 
 
 

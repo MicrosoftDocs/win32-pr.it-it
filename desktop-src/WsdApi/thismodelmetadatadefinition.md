@@ -1,19 +1,19 @@
 ---
 description: Genera una costante C per i metadati del produttore specificati nell'elemento thisModelMetadata.
 ms.assetid: f51da261-ca56-40e5-a6e0-47544d15d6e5
-title: elemento thisModelMetadataDefinition
+title: Elemento thisModelMetadataDefinition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dda691d8fdea6b0773672b20a13eb4267e7100b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7951d6ce0385c976714b57511b4c0e18458f133d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306868"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995308"
 ---
-# <a name="thismodelmetadatadefinition-element"></a>elemento thisModelMetadataDefinition
+# <a name="thismodelmetadatadefinition-element"></a>Elemento thisModelMetadataDefinition
 
-Genera una costante C per i metadati del produttore specificati nell'elemento [**thisModelMetadata**](thismodelmetadata.md) . Questa definizione viene utilizzata in un file di origine.
+Genera una costante C per i metadati del produttore specificati [**nell'elemento thisModelMetadata.**](thismodelmetadata.md) Questa definizione viene usata in un file di origine.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

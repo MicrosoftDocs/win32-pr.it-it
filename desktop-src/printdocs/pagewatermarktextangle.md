@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 157bb79c-68d2-4121-8a85-cd2f48095541
 title: PageWatermarkTextAngle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 916e409040f0c7163f1168d48581270f077aaa3a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 86c13d759232670c6957a91de12f9c35cf48aeb4
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104234580"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995548"
 ---
 # <a name="pagewatermarktextangle"></a>PageWatermarkTextAngle
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'angolo del testo della filigrana relativo alla direzione del PageImageableSizeWidth. L'angolo viene misurato in senso antiorario.
+Specifica l'angolo del testo della filigrana rispetto alla direzione PageImageableSizeWidth. L'angolo viene misurato in senso antiorario.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Specifica l'angolo del testo della filigrana relativo alla direzione del PageIma
 
 
 
-| Nome                       |                                            |
+| Nome | Valore |
 |----------------------------|--------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                    |
-| Prefisso ambito <br/> | Pagina<br/>                            |
-| Note <br/>          | Collegato a elemento PageWatermark<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                            |
+| Note <br/>          | Collegato all'elemento PageWatermark<br/> |
 
 
 
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -76,9 +76,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | 0<br/>               |
 | MaxValue<br/>     | numero intero<br/> | 359<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| Minvalue<br/>     | integer<br/> | 0<br/>               |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | gradi<br/>         |
 
 

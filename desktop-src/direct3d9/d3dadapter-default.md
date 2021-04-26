@@ -1,26 +1,25 @@
 ---
-description: Specifica la scheda di visualizzazione principale.
+description: Specifica la scheda video primaria.
 ms.assetid: 76f91917-394a-4588-9c83-c35bddb36b8e
 title: D3DADAPTER_DEFAULT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aed8f734fb6d8732129b590812ea77fb2692c280
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f1924f06b4a156d718d2d85255c5274dcc01598c
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748794"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995278"
 ---
-# <a name="d3dadapter_default"></a>\_Impostazione predefinita D3DADAPTER
+# <a name="d3dadapter_default"></a>D3DADAPTER \_ DEFAULT
 
-Specifica la scheda di visualizzazione principale.
+Specifica la scheda video primaria.
 
 
 
-|                     |       |                                              |
+| \#Definire            | Valore | Descrizione                                  |
 |---------------------|-------|----------------------------------------------|
-| \#definire            | Valore | Descrizione                                  |
-| \_Impostazione predefinita D3DADAPTER | 0     | Utilizzato per specificare la scheda di visualizzazione principale. |
+| D3DADAPTER \_ DEFAULT | 0     | Utilizzato per specificare la scheda video primaria. |
 
 
 
@@ -32,7 +31,7 @@ Specifica la scheda di visualizzazione principale.
 
 |                          |            |
 |--------------------------|------------|
-| Intestazione                   | d3d9. h     |
+| Intestazione                   | d3d9.h     |
 | Sistema operativo minimo | Windows 98 |
 
 

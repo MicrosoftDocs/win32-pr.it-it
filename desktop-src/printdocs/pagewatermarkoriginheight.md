@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: ef429727-d881-408b-95ce-2acce667654a
 title: PageWatermarkOriginHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1d3e12591f6c648e6e636e1bb72f4df694d0d13
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 90736f8cac9c919f9d640ffc01311024ef79bc3a
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103969015"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994490"
 ---
 # <a name="pagewatermarkoriginheight"></a>PageWatermarkOriginHeight
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'origine di una filigrana rispetto all'origine del PageImageableSize dell'oggetto.
+Specifica l'origine di una filigrana rispetto all'origine di PageImageableSize.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Specifica l'origine di una filigrana rispetto all'origine del PageImageableSize 
 
 
 
-| Nome                       |                                            |
+| Nome | Valore |
 |----------------------------|--------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                    |
-| Prefisso ambito <br/> | Pagina<br/>                            |
-| Note <br/>          | Collegato a elemento PageWatermark<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                            |
+| Note <br/>          | Collegato all'elemento PageWatermark<br/> |
 
 
 
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -75,11 +75,11 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 |-------------------------|--------------------|-------------------------------------------------------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>                                                   |
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>                                                    |
-| MaxValue<br/>     | numero intero<br/> | Valore minore o uguale a PageImageableSize dell'oggetto-ExtentHeight<br/> |
-| MinValue<br/>     | integer<br/> | 0<br/>                                                            |
+| MaxValue<br/>     | numero intero<br/> | Minore o uguale a PageImageableSize - Valore ExtentHeight<br/> |
+| Minvalue<br/>     | integer<br/> | 0<br/>                                                            |
 | Più elementi<br/>     | integer<br/> | 1<br/>                                                            |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/>                                              |
-| UnitType<br/>     | string<br/>  | micron<br/>                                                      |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/>                                              |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>                                                      |
 
 
 

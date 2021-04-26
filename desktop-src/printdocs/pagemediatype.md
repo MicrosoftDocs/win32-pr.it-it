@@ -1,34 +1,34 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 29d7ae65-9dd3-4a29-8e5e-79708638a3bb
 title: PageMediaType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8312554d8616ed31ea99cd0cc011b2b549d915f
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: d3d41ed2af931068e340e9a9d0828db109594de8
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "106321166"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994518"
 ---
 # <a name="pagemediatype"></a>PageMediaType
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le opzioni di MediaType e le caratteristiche di ogni opzione.
+Descrive le opzioni MediaType e le caratteristiche di ogni opzione.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
--   [Contenuto Extensible Markup Language (XML)](#extensible-markup-language-xml-content)
+-   [Extensible Markup Language (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-| Nome                       |                    |
+| Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Funzionalità<br/> |
-| Prefisso ambito <br/> | Pagina<br/>    |
+| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
 
@@ -37,7 +37,7 @@ Descrive le opzioni di MediaType e le caratteristiche di ogni opzione.
 
 ## <a name="structural-content"></a>Contenuto strutturale
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:Feature name="psk:PageMediaType">
@@ -82,23 +82,23 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati          | Unità                              | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|--------------------|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caratteri<br/>             | Nome completo valido definito dagli [spazi dei nomi in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
-| \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>                    | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, quando selezionata, Disabilita la funzionalità.<br/> |
-| \_BackCoatingValue\_<br/>    | string<br/>  | n/d<br/>                    | Glossy, HighGloss, matte, None, satin, semilucida.<br/>                                                                                                                          | Specifica il rivestimento del lato posteriore del supporto.<br/>              |
-| \_FrontCoatingValue\_<br/>   | string<br/>  | n/d<br/>                    | Glossy, HighGloss, matte, None, satin, semilucida.<br/>                                                                                                                          | Specifica il rivestimento del lato anteriore del supporto.<br/>             |
-| \_MaterialValue\_<br/>       | string<br/>  | n/d<br/>                    | Alluminio, schermo, DryFilm, carta, poliestere, trasparenza, WetFilm.<br/>                                                                                                       | Specifica il materiale da cui viene creato il supporto.<br/>                  |
-| \_PrePrintedValue\_<br/>     | string<br/>  | n/d<br/>                    | Nessuno, prestampato, carta intestata.<br/>                                                                                                                                              | Specifica le caratteristiche prestampate dei supporti.<br/>                       |
-| \_PrePunchedValue\_<br/>     | string<br/>  | n/d<br/>                    | Nessuno, prepunzonato.<br/>                                                                                                                                                          | Specifica le caratteristiche prepunzonate dei supporti.<br/>                       |
-| \_RecycledValue\_<br/>       | string<br/>  | n/d<br/>                    | None, standard.<br/>                                                                                                                                                            | Specifica le caratteristiche riciclate dei supporti.<br/>                         |
-| \_WeightValue\_<br/>         | numero intero<br/> | grammi per metro quadrato<br/> | Maggiore di 0.<br/>                                                                                                                                                            | Specifica le caratteristiche del peso del supporto.<br/>                           |
+| \_OptionName\_<br/>          | string<br/>  | caratteri<br/>             | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>                    | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
+| \_BackCoatingValue\_<br/>    | string<br/>  | n/d<br/>                    | Glossario, HighGloss, Matte, None, Satin, SemiGloss.<br/>                                                                                                                          | Specifica l'iratura del lato posteriore del supporto.<br/>              |
+| \_FrontCoatingValue\_<br/>   | string<br/>  | n/d<br/>                    | Glossy, HighGloss, Matte, None, Satin, SemiGloss.<br/>                                                                                                                          | Specifica l'utilizzo del lato anteriore del supporto.<br/>             |
+| \_MaterialValue\_<br/>       | string<br/>  | n/d<br/>                    | Aluminum, Display, DryFilm, Paper, Polyester, Transparency, WetFilm.<br/>                                                                                                       | Specifica il materiale di cui è costituito il supporto.<br/>                  |
+| \_PrePrintedValue\_<br/>     | string<br/>  | n/d<br/>                    | None, PrePrinted, Letterhead.<br/>                                                                                                                                              | Specifica le caratteristiche prestampate dei supporti.<br/>                       |
+| \_PrePunchedValue\_<br/>     | string<br/>  | n/d<br/>                    | Nessuno, PrePunched.<br/>                                                                                                                                                          | Specifica le caratteristiche prepunched dei supporti.<br/>                       |
+| \_RecycledValue\_<br/>       | string<br/>  | n/d<br/>                    | Nessuno, Standard.<br/>                                                                                                                                                            | Specifica le caratteristiche di riciclo dei supporti.<br/>                         |
+| \_WeightValue\_<br/>         | numero intero<br/> | grammi per metro quadrato<br/> | Maggiore di 0.<br/>                                                                                                                                                            | Specifica le caratteristiche del peso dei supporti.<br/>                           |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenuto Extensible Markup Language (XML)
+## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubbliche sono definite nello `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` spazio dei nomi. Il contenuto del Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageMediaType">

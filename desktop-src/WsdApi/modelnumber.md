@@ -4,12 +4,12 @@ ms.assetid: 1261e029-4cdf-4e35-a4b3-57dd151e2e7f
 title: elemento modelNumber
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 755b67adece54dd33a89cc5aacbde2b8a658f5e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e207084e1614d408034c7e4bbc36bdbadce77195
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316548"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995478"
 ---
 # <a name="modelnumber-element"></a>elemento modelNumber
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                                   | Descrizione                                                                                          |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce il produttore e i metadati del modello per il dispositivo da implementare.<br/> <br/> |
+| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Definisce i metadati del produttore e del modello per il dispositivo da implementazione.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 6319e8fc-787f-4bc8-8436-1b498b3882d2
 title: DocumentCopiesAllPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8941f8a6f1f7ef8ec554fa0eba937ddd6f686ad
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 723242ddd127113b573f167e6902b27fcca9665a
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104351796"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993988"
 ---
 # <a name="documentcopiesallpages"></a>DocumentCopiesAllPages
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il numero di copie di un documento.
 
@@ -24,10 +24,10 @@ Specifica il numero di copie di un documento.
 
 
 
-| Nome                       |                         |
+| Nome | Valore |
 |----------------------------|-------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/> |
-| Prefisso ambito <br/> | Documento<br/>     |
+| Prefisso di ambito <br/> | Documento<br/>     |
 | Note <br/>          | nessuno<br/>         |
 
 
@@ -36,7 +36,7 @@ Specifica il numero di copie di un documento.
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:DocumentCopiesAllPages">
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -76,10 +76,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>        |
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>         |
-| MinValue<br/>     | integer<br/> | 1<br/>                 |
-| Obbligatorio<br/>    | string<br/>  | PSK: non condizionale<br/> |
+| Minvalue<br/>     | integer<br/> | 1<br/>                 |
+| Obbligatorio<br/>    | string<br/>  | psk:unconditional<br/> |
 | Più elementi<br/>     | integer<br/> | 1<br/>                 |
-| UnitType<br/>     | string<br/>  | copie<br/>            |
+| Tipo di unità<br/>     | string<br/>  | Copie<br/>            |
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: Aggiungi (SM4-ASM)
+title: add (sm4 - asm)
 description: Aggiunta di 2 vettori a livello di componente.
 ms.assetid: 405A513C-B2DD-43B9-A86D-1D173B084C51
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5630b983c88da3ba512b5fece6202e0217b2ed39
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 5e34f0a95ad9ee9ae4bdeed317eef133e3773311
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104516507"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994978"
 ---
-# <a name="add-sm4---asm"></a>Aggiungi (SM4-ASM)
+# <a name="add-sm4---asm"></a>add (sm4 - asm)
 
 Aggiunta di 2 vettori a livello di componente.
 
 
 
-| aggiungere \[ \_ Sat \] dest \[ . mask \] , \[ - \] src0 \[ \_ ABS \] \[ . Swizzle \] , \[ - \] src1 \[ \_ ABS \] \[ . Swizzle\] |
+| add \[ \_ sat \] dest \[ \] .mask, \[ - \] src0 \[ \_ abs \] \[ .swizzle, \] \[ - \] src1 \[ \_ abs \] \[ .swizzle\] |
 |--------------------------------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Aggiunta di 2 vettori a livello di componente.
 
 | Elemento                                                            | Descrizione                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] vettore da aggiungere a *src1*.<br/>                |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nel \] vettore da aggiungere a *src0*.<br/>                |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Vettore da aggiungere a *src1.*<br/>                |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] Vettore da aggiungere a *src0*.<br/>                |
 
 
 
@@ -38,21 +38,20 @@ Aggiunta di 2 vettori a livello di componente.
 
 ## <a name="remarks"></a>Commenti
 
-Nella tabella seguente vengono illustrati i risultati ottenuti quando si esegue l'istruzione con varie classi di numeri, presupponendo che non si verifichino overflow o underflow. F indica un numero reale finito.
+La tabella seguente mostra i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri, presupponendo che non si verifichino overflow o underflow. F indica un numero reale finito.
 
 
 
-|                    |          |            |             |        |        |            |            |          |         |
+| **src0 src1->** | **-inf** | **-F**     | **-denorm** | **-0** | **+0** | **denorm** | **+F**     | **+inf** | **NaN** |
 |--------------------|----------|------------|-------------|--------|--------|------------|------------|----------|---------|
-| **src1 src0->** | **-INF** | **-F**     | **-denorm** | **-0** | **+0** | **denorm** | **+ F**     | **+ INF** | **NaN** |
-| **-INF**           | -inf     | -inf       | -inf        | -inf   | -inf   | -inf       | -inf       | NaN      | NaN     |
+| **-inf**           | -inf     | -inf       | -inf        | -inf   | -inf   | -inf       | -inf       | NaN      | NaN     |
 | **-F**             | -inf     | -F         | src0        | src0   | src0   | src0       | +-F o +-0 | +inf     | NaN     |
 | **-denorm**        | -inf     | src1       | -0          | -0     | +0     | +0         | src1       | +inf     | NaN     |
 | **-0**             | -inf     | src1       | -0          | -0     | +0     | +0         | src1       | +inf     | NaN     |
-| **+0**             | i-INF    | src1       | +0          | +0     | +0     | +0         | src1       | +inf     | NaN     |
-| **+ denorm**        | -inf     | src1       | +0          | +0     | +0     | +0         | src1       | +inf     | NaN     |
-| **+ F**             | -inf     | +-F o +-0 | src0        | src0   | src0   | src0       | + F         | +inf     | NaN     |
-| **+ INF**           | NaN      | +inf       | +inf        | +inf   | +inf   | +inf       | +inf       | +inf     | NaN     |
+| **+0**             | i-inf    | src1       | +0          | +0     | +0     | +0         | src1       | +inf     | NaN     |
+| **+denorm**        | -inf     | src1       | +0          | +0     | +0     | +0         | src1       | +inf     | NaN     |
+| **+F**             | -inf     | +-F o +-0 | src0        | src0   | src0   | src0       | +F         | +inf     | NaN     |
+| **+inf**           | NaN      | +inf       | +inf        | +inf   | +inf   | +inf       | +inf       | +inf     | NaN     |
 | **NaN**            | NaN      | NaN        | NaN         | NaN    | NaN    | NaN        | NaN        | NaN      | NaN     |
 
 
@@ -71,7 +70,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -79,12 +78,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -94,7 +93,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

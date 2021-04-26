@@ -1,30 +1,29 @@
 ---
-description: I flag seguenti vengono utilizzati per specificare i canali in una trama su cui operare.
+description: I flag seguenti vengono usati per specificare i canali in una trama su cui operare.
 ms.assetid: b592b42a-0af1-49df-b159-4b84e4e12c95
 title: D3DX_CHANNEL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19efe9490501fe8116059dc6ea865d8b8931d18a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e870f01fd21fdb63f62278a3a5cac3b4da077e1e
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523522"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995688"
 ---
-# <a name="d3dx_channel"></a>\_Canale D3DX
+# <a name="d3dx_channel"></a>CANALE \_ D3DX
 
-I flag seguenti vengono utilizzati per specificare i canali in una trama su cui operare.
+I flag seguenti vengono usati per specificare i canali in una trama su cui operare.
 
 
 
-|                          |                                                                               |
+| \#Definire                 | Descrizione                                                                   |
 |--------------------------|-------------------------------------------------------------------------------|
-| \#definire                 | Descrizione                                                                   |
-| \_Canale D3DX \_ rosso       | Indica che deve essere utilizzato il canale rosso.                                     |
-| \_Blu canale \_ D3DX      | Indica che deve essere utilizzato il canale blu.                                    |
-| \_Canale D3DX \_ verde     | Indica che deve essere utilizzato il canale verde.                                   |
-| \_Alfa canale \_ D3DX     | Indica che deve essere utilizzato il canale alfa.                                   |
-| \_ \_ Luminanza canale D3DX | Indica che devono essere usate le luminanze dei canali rosso, verde e blu. |
+| CANALE D3DX \_ \_ ROSSO       | Indica che deve essere usato il canale rosso.                                     |
+| CANALE D3DX \_ \_ BLU      | Indica che deve essere utilizzato il canale blu.                                    |
+| CANALE D3DX \_ \_ VERDE     | Indica che deve essere usato il canale verde.                                   |
+| D3DX \_ CHANNEL \_ ALPHA     | Indica che deve essere usato il canale alfa.                                   |
+| LUMINANCE \_ DEL CANALE D3DX \_ | Indica che devono essere usate le luminance dei canali rosso, verde e blu. |
 
 
 
@@ -36,7 +35,7 @@ I flag seguenti vengono utilizzati per specificare i canali in una trama su cui 
 
 |                          |            |
 |--------------------------|------------|
-| Intestazione                   | d3dx9tex. h |
+| Intestazione                   | d3dx9tex.h |
 | Sistema operativo minimo | Windows 98 |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Genera implementazioni per le funzioni proxy per le operazioni del tipo di porta.
+description: Genera implementazioni per le funzioni proxy per le operazioni sul tipo di porta.
 ms.assetid: 9505ee5f-fdb9-41b8-9537-0c5d29f90168
-title: elemento proxyFunctionImplementations
+title: Elemento proxyFunctionImplementations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a27e217cfa3d0a9efd204a1b18c7b2f0ca16f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e9f03834ca59ede41f2f3c3dff00d7dacdd54db
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883989"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995758"
 ---
-# <a name="proxyfunctionimplementations-element"></a>elemento proxyFunctionImplementations
+# <a name="proxyfunctionimplementations-element"></a>Elemento proxyFunctionImplementations
 
-Genera implementazioni per le funzioni proxy per le operazioni del tipo di porta.
+Genera implementazioni per le funzioni proxy per le operazioni sul tipo di porta.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -33,11 +33,11 @@ Non ci sono attributi.
 
 | Elemento                                     | Descrizione                                                                                                             |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**async**](async.md)<br/>           | Specifica se le operazioni asincrone sono incluse nelle funzioni proxy generate.<br/> <br/>         |
-| [**eventi**](events.md)<br/>         | Specifica se gli eventi correlati sono inclusi nelle funzioni generate.<br/> <br/>                        |
-| [**faultInfo**](faultinfo.md)<br/>   | Specifica se i parametri utilizzati per passare informazioni sugli errori sono inclusi nelle funzioni generate.<br/> <br/> |
-| [**operazione**](operation.md)<br/>   | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                                        |
-| [**portType**](porttype.md)<br/>     | Specifica il tipo di porta per il quale deve essere generato il codice.<br/> <br/>                                       |
+| [**async**](async.md)<br/>           | Specifica se le operazioni asincrone vengono incluse nelle funzioni proxy generate.<br/> <br/>         |
+| [**Eventi**](events.md)<br/>         | Specifica se gli eventi correlati vengono inclusi nelle funzioni generate.<br/> <br/>                        |
+| [**faultInfo**](faultinfo.md)<br/>   | Specifica se i parametri utilizzati per passare le informazioni sugli errori vengono inclusi nelle funzioni generate.<br/> <br/> |
+| [**Operazione**](operation.md)<br/>   | Specifica un'operazione per cui deve essere generato il codice.<br/> <br/>                                        |
+| [**Porttype**](porttype.md)<br/>     | Specifica il tipo di porta per cui deve essere generato il codice.<br/> <br/>                                       |
 | [**proxyClass**](proxyclass.md)<br/> | Specifica il nome della classe proxy sul lato client.<br/> <br/>                                               |
 
 
@@ -61,7 +61,7 @@ Non ci sono attributi.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -69,7 +69,7 @@ Non ci sono attributi.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

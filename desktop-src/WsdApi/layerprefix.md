@@ -1,19 +1,19 @@
 ---
-description: Definisce il prefisso da utilizzare nel codice generato per assicurare l'univocità dei simboli generati.
+description: Definisce il prefisso da usare nel codice generato per garantire l'univocità dei simboli generati.
 ms.assetid: 50cb443a-15ae-4f8f-b5f7-b8708810a6c3
-title: elemento layerPrefix
+title: Elemento layerPrefix
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b712edee4b33c7158280b9d310624371fd58688
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98970013c72600affd7d4d9e7a71781f477cd87d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131139"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994698"
 ---
-# <a name="layerprefix-element"></a>elemento layerPrefix
+# <a name="layerprefix-element"></a>Elemento layerPrefix
 
-Definisce il prefisso da utilizzare nel codice generato per assicurare l'univocità dei simboli generati.
+Definisce il prefisso da usare nel codice generato per garantire l'univocità dei simboli generati.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -41,7 +41,7 @@ Non ci sono elementi figlio.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni script del generatore di codice deve definire una stringa di prefisso univoca per i moduli creati. Ad esempio, gli script del frame immagine utilizzano il prefisso "PFDEMO".
+Ogni script del generatore di codice deve definire una stringa di prefisso univoca per i moduli creati. Ad esempio, gli script cornice immagine usano un prefisso "PFDEMO".
 
 WSDAPI usa il prefisso "WSD".
 
@@ -49,7 +49,7 @@ WSDAPI usa il prefisso "WSD".
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

@@ -1,19 +1,19 @@
 ---
-description: Genera una definizione di costante C per i metadati host specificati nell'elemento hostMetadata.
+description: Genera una definizione di costante C per i metadati di hosting specificati nell'elemento hostMetadata.
 ms.assetid: c15f77a2-060b-4bc3-8759-d921ea57e5b5
 title: elemento relationshipMetadataDefinition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f74e4cff6712fb087c4783239d263d38516ed64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3549be26d0443b7aeba776346b7cddb2d6bdeed3
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226919"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993658"
 ---
 # <a name="relationshipmetadatadefinition-element"></a>elemento relationshipMetadataDefinition
 
-Genera una definizione di costante C per i metadati host specificati nell'elemento [**hostMetadata**](hostmetadata.md) . Questa definizione viene utilizzata in un file di origine.
+Genera una definizione di costante C per i metadati di hosting specificati [**nell'elemento hostMetadata.**](hostmetadata.md) Questa definizione viene usata in un file di origine.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -35,19 +35,19 @@ Non ci sono elementi figlio.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**file**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento viene in genere usato nei file di origine C per fornire i metadati dell'host del servizio dichiarati da **relationshipMetadataDeclaration**.
+Questo elemento viene in genere usato nei file di origine C per fornire i metadati dell'host del servizio dichiarati da **relationshipMetadataDeclaration.**
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |
