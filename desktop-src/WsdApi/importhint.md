@@ -4,12 +4,12 @@ ms.assetid: 81d0a30b-8f15-4518-b833-de57e0dae978
 title: Elemento importHint
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a29fcd65f9af02b8077ba828081ac9ed767d64e3
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: c874879ee0a608c100f32a0520a85efe76080cc2
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380655"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998758"
 ---
 # <a name="importhint-element"></a>Elemento importHint
 
@@ -61,7 +61,7 @@ Non ci sono attributi.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

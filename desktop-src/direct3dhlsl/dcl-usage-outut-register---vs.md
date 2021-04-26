@@ -1,6 +1,6 @@
 ---
-title: output dcl_usage (SM1, SM2, SM3-vs ASM)
-description: I vari tipi di registri di output sono stati compressi in dodici registri di output (due per colore, otto per trama, uno per la posizione e uno per la nebbia e la dimensione del punto).
+title: dcl_usage output (sm1, sm2, sm3 - vs asm)
+description: I vari tipi di registri di output sono stati compressi in dodici registri di output (due per il colore, otto per la trama, uno per la posizione e uno per le dimensioni dei punti e dei punti).
 ms.assetid: 500ca6b3-0f8a-446e-b1b9-edc51f006ad4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,54 +9,54 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c653c5af43bd3392f97e30571ac56ded66cbfc04
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 314c9c9a9a9e62915e9224b3cf165bc54d09a516
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993525"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999168"
 ---
-# <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>\_output utilizzo DCL (SM1, SM2, SM3-vs ASM)
+# <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>Output dcl \_ usage (sm1, sm2, sm3 - vs asm)
 
-I vari tipi di registri di output sono stati compressi in dodici registri di output (due per colore, otto per trama, uno per la posizione e uno per la nebbia e la dimensione del punto). Questi possono essere usati per qualsiasi elemento che l'utente vuole interpolare per il pixel shader: coordinate di trama, colori, nebbia e così via.
+I vari tipi di registri di output sono stati compressi in dodici registri di output (due per il colore, otto per la trama, uno per la posizione e uno per le dimensioni dei punti e dei punti). Possono essere usati per qualsiasi elemento che l'utente vuole interpolare per il pixel shader: coordinate della trama, colori, tempo e così via.
 
-I registri di output richiedono dichiarazioni che includono la semantica. Ad esempio, i registri della posizione precedente e delle dimensioni dei punti vengono sostituiti dichiarando un registro di output con una posizione o una semantica delle dimensioni del punto.
+I registri di output richiedono dichiarazioni che includono semantica. Ad esempio, la posizione precedente e i registri delle dimensioni dei punti vengono sostituiti dichiarando un registro di output con una semantica di posizione o dimensione del punto.
 
-Dei dodici registri di output, le dieci (non necessariamente o0 a O9) hanno quattro componenti (xyzw), un altro deve essere dichiarato come position (e deve includere anche tutti e quattro i componenti) e, facoltativamente, un altro può essere una dimensione scalare.
+Dei dodici registri di output, ogni dieci (non necessariamente o0 a o9) ha quattro componenti (xyzw), un altro deve essere dichiarato come position (e deve includere anche tutti e quattro i componenti) e, facoltativamente, uno può essere una dimensione in punti scalari.
 
 ## <a name="syntax"></a>Sintassi
 
-La sintassi per la dichiarazione dei registri di output è simile a quella per il registro di input:
+La sintassi per la dichiarazione dei registri di output è simile alle dichiarazioni per il registro di input:
 
 
 
 |                                  |
 |----------------------------------|
-| \_maschera di semantica DCL o \[ . Write \_\] |
+| dcl \_ semantics o \[ .write \_ mask\] |
 
 
 
- 
+ 
 
 Dove:
 
--   \_la semantica di DCL può utilizzare lo stesso set di semantica della dichiarazione di input. I nomi semantici provengono da [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (e sono associati a un indice, ad esempio POSITION3). Quando non viene usato per l'elaborazione dei vertici, deve essere sempre presente un registro di output con la semantica positiont0. La semantica positiont0 e la semantica pointsize0 sono le uniche che hanno un significato superiore a quello che consente semplicemente il collegamento da vertex a pixel shader. Per gli shader con il controllo di flusso, si presuppone che l'output del case peggiore venga dichiarato. Non esistono valori predefiniti se uno shader non genera effettivamente il risultato che dichiara, a causa del controllo di flusso.
--   o è un registro di output. Vedere [ \_ registri di output](dx9-graphics-reference-asm-vs-registers-vs-3-0.md).
--   Write \_ mask indica lo stesso registro di output che può essere dichiarato più volte, in modo che sia possibile applicare una semantica diversa a singoli componenti, ogni volta con una maschera di scrittura univoca. Tuttavia, la stessa semantica non può essere utilizzata più volte in una dichiarazione. Ciò significa che i vettori devono essere costituiti da quattro componenti o meno e non possono superare i limiti di registro a quattro componenti (registri singoli). Quando si usa la semantica delle dimensioni del punto, deve avere una maschera di scrittura completa perché è considerata scalare. Quando si usa la semantica di posizione, deve avere una maschera di scrittura completa perché tutti e quattro i componenti devono essere scritti.
+-   La semantica dcl \_ può usare lo stesso set di semantica della dichiarazione di input. I nomi semantici [**provengono da D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (e sono associati a un indice, ad esempio position3). Deve essere sempre presente un registro di output con la semantica positiont0 quando non viene usato per l'elaborazione dei vertici. La semantica positiont0 e la semantica pointsize0 sono gli unici che hanno significato oltre a consentire semplicemente il collegamento da vertex shader a pixel shader. Per gli shader con controllo di flusso, si presuppone che l'output del caso peggiore sia dichiarato. Non sono presenti impostazioni predefinite se uno shader non restituisce effettivamente l'output che dovrebbe (a causa del controllo di flusso).
+-   o è un registro di output. Vedere [Registri \_ di output.](dx9-graphics-reference-asm-vs-registers-vs-3-0.md)
+-   write mask indica lo stesso registro di output che può essere dichiarato più volte (in modo che sia possibile applicare una semantica diversa ai singoli componenti), ogni volta con \_ una maschera di scrittura univoca. Tuttavia, la stessa semantica non può essere usata più volte in una dichiarazione. Ciò significa che i vettori devono essere quattro componenti o meno e non possono attraversare i limiti del registro a quattro componenti (singoli registri). Quando viene usata la semantica delle dimensioni in punti, deve avere una maschera di scrittura completa perché è considerata scalare. Quando viene usata la semantica di posizione, deve avere una maschera di scrittura completa perché tutti e quattro i componenti devono essere scritti.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|-------|
-| utilizzo di DCL \_             | x    | x     |
+| Utilizzo di \_ dcl             | x    | x     |
 
 
 
- 
+ 
 
-Tutte le istruzioni di [ \_ utilizzo di DCL](dcl-usage-input-register---vs.md) devono essere visualizzate prima della prima istruzione eseguibile.
+Tutte [le istruzioni dcl \_ usage](dcl-usage-input-register---vs.md) devono essere visualizzate prima della prima istruzione eseguibile.
 
 ## <a name="declaration-examples"></a>Esempi di dichiarazione
 
@@ -87,9 +87,9 @@ dcl_psize      o6      // Pointsize cannot have a mask
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

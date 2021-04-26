@@ -4,12 +4,12 @@ ms.assetid: 2d3e548f-8559-4a36-b814-6d598bead1d0
 title: D3DVTXPCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a2ffff3d1dcc1f68912847b9ce1677c2031189c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 55ee7e5d423169e561df28b5d69017c77a71e183
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401502"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998658"
 ---
 # <a name="d3dvtxpcaps"></a>D3DVTXPCAPS
 
@@ -17,17 +17,16 @@ Combinazione di uno o più flag che controllano il comportamento di creazione de
 
 
 
-|                                         |                                                                                                                                                                                                    |
+| \#Definire                                | Descrizione                                                                                                                                                                                        |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \#definire                                | Descrizione                                                                                                                                                                                        |
-| \_DIRECTIONALLIGHTS D3DVTXPCAPS          | Il dispositivo può eseguire luci direzionali.                                                                                                                                                                  |
-| \_LOCALVIEWER D3DVTXPCAPS                | Il dispositivo può eseguire il visualizzatore locale.                                                                                                                                                                        |
-| \_MATERIALSOURCE7 D3DVTXPCAPS            | Quando questo limite è impostato, il dispositivo supporta gli Stati del materiale colore: D3DRS \_ AMBIENTMATERIALSOURCE, D3DRS \_ DIFFUSEMATERIALSOURCE, D3DRS \_ EMISSIVEMATERIALSOURCE e D3DRS SPECULARMATERIALSOURCE \_ . |
-| D3DVTXPCAPS \_ No \_ TEXGEN \_ NONLOCALVIEWER | Il dispositivo non supporta la generazione di trama in modalità visualizzatore non locale.                                                                                                                               |
-| \_POSITIONALLIGHTS D3DVTXPCAPS           | Il dispositivo può eseguire luci posizionali (include punto e punto).                                                                                                                                         |
-| \_TEXGEN D3DVTXPCAPS                     | Il dispositivo può eseguire texgen.                                                                                                                                                                              |
+| D3DVTXPCAPS \_ DIRECTIONALLIGHTS          | Il dispositivo può fare luci direzionali.                                                                                                                                                                  |
+| D3DVTXPCAPS \_ LOCALVIEWER                | Il dispositivo può eseguire il visualizzatore locale.                                                                                                                                                                        |
+| D3DVTXPCAPS \_ MATERIALSOURCE7            | Quando questo limite è impostato, il dispositivo supporta gli stati del materiale a colori: D3DRS \_ AMBIENTMATERIALSOURCE, D3DRS \_ DIFFUSEMATERIALSOURCE, D3DRS \_ EMISSIVEMATERIALSOURCE e D3DRS \_ SPECULARMATERIALSOURCE. |
+| D3DVTXPCAPS \_ NO \_ TEXGEN \_ NONLOCALVIEWER | Il dispositivo non supporta la generazione di trame in modalità visualizzatore non locale.                                                                                                                               |
+| D3DVTXPCAPS \_ POSITIONALLIGHTS           | Il dispositivo può eseguire luci posizionali (include punto e punto).                                                                                                                                         |
+| D3DVTXPCAPS \_ TEXGEN                     | Il dispositivo può eseguire texgen.                                                                                                                                                                              |
 | D3DVTXPCAPS \_ TEXGEN \_ SPHEREMAP          | Il dispositivo supporta D3DTSS \_ TCI \_ SPHEREMAP.                                                                                                                                                            |
-| \_Interpolazione D3DVTXPCAPS                   | Il dispositivo può eseguire l'interpolazione dei vertici.                                                                                                                                                                     |
+| D3DVTXPCAPS \_ TWEENING                   | Il dispositivo può eseguire l'interpolazione dei vertici.                                                                                                                                                                     |
 
 
 
@@ -39,7 +38,7 @@ Combinazione di uno o più flag che controllano il comportamento di creazione de
 
 |                          |            |
 |--------------------------|------------|
-| Intestazione                   | d3d9caps. h |
+| Intestazione                   | d3d9caps.h |
 | Sistema operativo minimo | Windows 98 |
 
 

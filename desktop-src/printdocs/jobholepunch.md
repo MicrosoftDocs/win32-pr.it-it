@@ -1,35 +1,35 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 26e9e7d6-7c01-4687-aa64-7aea867b4e58
 title: JobHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bcd709c6115a9f4af3084c28ca047950d1b81fd
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 56316c94dc56a2646446a8cd63885cceaa1407fa
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104234596"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999298"
 ---
 # <a name="jobholepunch"></a>JobHolePunch
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di punzonatura dei fori dell'output. Tutti i documenti sono raggruppati. Le parole chiave JobHolePunch e DocumentHolePunch si escludono a vicenda. Non devono essere specificati contemporaneamente in un documento di funzionalità di stampa o PrintTicket.
+Descrive le caratteristiche di emissione dei fori dell'output. Tutti i documenti vengono riuniti insieme. Le parole chiave JobHolePunch e DocumentHolePunch si escludono a vicenda. Entrambi non devono essere specificati contemporaneamente in un documento PrintTicket o Funzionalità di stampa.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
--   [Contenuto Extensible Markup Language (XML)](#extensible-markup-language-xml-content)
+-   [Extensible Markup Language (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-| Nome                       |                                                                                                                                                 |
+| Nome | Valore |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                              |
-| Prefisso ambito <br/> | Processo<br/>                                                                                                                                  |
-| Note <br/>          | In alto, in basso, a sinistra e a destra sono relativi a PageImageableSize dell'oggetto, dove la parte superiore è indicata dall'origine dell'asse x e dall'asse y.<br/> |
+| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                              |
+| Prefisso di ambito <br/> | Processo<br/>                                                                                                                                  |
+| Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize, dove TopLeft è denotato dall'origine dell'asse x e dell'asse y.<br/> |
 
 
 
@@ -37,7 +37,7 @@ Descrive le caratteristiche di punzonatura dei fori dell'output. Tutti i documen
 
 ## <a name="structural-content"></a>Contenuto strutturale
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:Feature name="psk:JobHolePunch">
@@ -60,16 +60,16 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito dagli [spazi dei nomi in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
-| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, quando selezionata, Disabilita la funzionalità.<br/> |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenuto Extensible Markup Language (XML)
+## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubbliche sono definite nello https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords spazio dei nomi. Il contenuto del Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobHolePunch">

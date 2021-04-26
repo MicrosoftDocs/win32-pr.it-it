@@ -1,5 +1,5 @@
 ---
-title: Sintassi di dichiarazione di frammento (Direct3D 9 HLSL)
+title: Sintassi di dichiarazione del frammento (HLSL Direct3D 9)
 description: Ogni funzione HLSL (Microsoft High Level Shader Language) può essere convertita in un frammento di shader con l'aggiunta di una dichiarazione di frammento.
 ms.assetid: 34ceef8c-8fb9-4c73-86cc-014b7a2ee4d7
 ms.topic: article
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 98e609820e67cc3ede6c3e280f63513850fed364
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9c9090caec35bfc5e46d7024bf6de44d865d4ad6
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046936"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998308"
 ---
-# <a name="fragment-declaration-syntax-direct3d-9-hlsl"></a>Sintassi di dichiarazione di frammento (Direct3D 9 HLSL)
+# <a name="fragment-declaration-syntax-direct3d-9-hlsl"></a>Sintassi di dichiarazione del frammento (HLSL Direct3D 9)
 
 Ogni funzione HLSL (Microsoft High Level Shader Language) può essere convertita in un frammento di shader con l'aggiunta di una dichiarazione di frammento.
 
@@ -35,17 +35,17 @@ dove:
 
 |                   |                                                                                                                                                                                                                                                       |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fragmentKeyword   | Parola chiave required. Pixelfragment o vertexfragment.                                                                                                                                                                                             |
+| fragmentKeyword   | Parola chiave obbligatoria. Deframmentazione pixel o vertexfragment.                                                                                                                                                                                             |
 | FragmentName      | Stringa di testo ASCII che specifica il nome del frammento compilato.                                                                                                                                                                                       |
-| Compila \_ frammento | Parola chiave required.                                                                                                                                                                                                                                     |
-| shaderProfile     | Modello di shader in base al quale eseguire la compilazione. Qualsiasi profilo vertex shader valido (vedere [**D3DXGetVertexShaderProfile**](/windows/desktop/direct3d9/d3dxgetvertexshaderprofile)) o profilo pixel shader (vedere [**D3DXGetPixelShaderProfile**](/windows/desktop/direct3d9/d3dxgetpixelshaderprofile)). |
-| FunctionName ()    | Nome della funzione shader, seguito da parentesi.                                                                                                                                                                                                    |
+| frammento di \_ compilazione | Parola chiave obbligatoria.                                                                                                                                                                                                                                     |
+| shaderProfile     | Modello di shader con cui eseguire la compilazione. Qualsiasi profilo vertex shader valido (vedere [**D3DXGetVertexShaderProfile)**](/windows/desktop/direct3d9/d3dxgetvertexshaderprofile)o profilo pixel shader (vedere [**D3DXGetPixelShaderProfile).**](/windows/desktop/direct3d9/d3dxgetpixelshaderprofile) |
+| FunctionName()    | Nome della funzione shader, seguito da parentesi.                                                                                                                                                                                                    |
 
 
 
- 
+ 
 
-I parametri dei frammenti condivisi vengono contrassegnati con l'aggiunta di un prefisso ' r \_ ' alla relativa semantica.
+I parametri del frammento condiviso vengono contrassegnati aggiungendo un \_ prefisso 'r' alla relativa semantica.
 
 
 ```
@@ -65,20 +65,20 @@ vertexfragment AmbientDiffuseFragment = compile_fragment vs_1_1 AmbientDiffuse()
 
 
 
-In questo esempio, la \_ semantica r PosWorld e r \_ NormalWorld identificano che questi due parametri sono parametri condivisi tra gli altri frammenti.
+In questo esempio la semantica r PosWorld e r NormalWorld identificano che questi due parametri sono parametri condivisi \_ \_ tra gli altri frammenti.
 
 > [!Note]  
-> Fragment linker è una tecnologia Microsoft Direct3D 9 in D3DX 9. Fragment linker è uno strumento (Flink.exe), un'API D3DX 9 e un miglioramento di HLSL. Fragment linker è stato eliminato alla versione di agosto 2009 di DirectX SDK. Fragment linker non è mai stato applicato a Microsoft Direct3D 10, Microsoft Direct3D 10,1 o Microsoft Direct3D 11.
+> Fragment Linker era una tecnologia Microsoft Direct3D 9 in D3DX 9. Fragment Linker era uno strumento (Flink.exe), un'API D3DX 9 e un miglioramento HLSL. Fragment Linker è stato eliminato a partire dalla versione di agosto 2009 di DirectX SDK. Frammento linker mai applicato a Microsoft Direct3D 10, Microsoft Direct3D 10.1 o Microsoft Direct3D 11.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)
+[Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

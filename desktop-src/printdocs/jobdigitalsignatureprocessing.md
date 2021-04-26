@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 0592f7a4-cace-41b0-91e3-2811f72aeb3e
 title: JobDigitalSignatureProcessing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f2c60fd005f42bd3f9861e86156a7da9164a81e
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: aad9dbe0ba82d219a28602178efa2e102ccf167b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "106321106"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998288"
 ---
 # <a name="jobdigitalsignatureprocessing"></a>JobDigitalSignatureProcessing
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Viene descritta la configurazione dell'elaborazione della firma digitale per l'intero processo. Applicabile solo ai contenuti che contengono firme digitali.
+Descrive la configurazione dell'elaborazione della firma digitale per l'intero processo. Applicabile solo al contenuto che contiene firme digitali.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -24,10 +24,10 @@ Viene descritta la configurazione dell'elaborazione della firma digitale per l'i
 
 
 
-| Nome                       |                    |
+| Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Funzionalità<br/> |
-| Prefisso ambito <br/> | Processo<br/>     |
+| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Prefisso di ambito <br/> | Processo<br/>     |
 | Note <br/>          | nessuno<br/>    |
 
 
@@ -36,7 +36,7 @@ Viene descritta la configurazione dell'elaborazione della firma digitale per l'i
 
 ## <a name="structural-content"></a>Contenuto strutturale
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:Feature name="psk:JobDigitalSignatureProcessing">
@@ -58,16 +58,16 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                   | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri <br/> | Nome completo valido definito dagli [spazi dei nomi in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione<br/>                                            |
-| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>         | True, False<br/>                                                                                                                                                                | Definisce un'opzione che, quando selezionata, Disabilita la funzionalità.<br/> |
+| \_OptionName\_<br/>          | string<br/> | caratteri <br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione<br/>                                            |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>         | True, False<br/>                                                                                                                                                                | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenuto Extensible Markup Language (XML)
+## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubbliche sono definite nello https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords spazio dei nomi. Il contenuto del Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobDigitalSignatureProcessing">

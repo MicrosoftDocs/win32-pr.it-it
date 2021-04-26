@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 49a60a94-fb65-4439-bebf-3f77ea0861fe
 title: PageScalingScale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 246f77c5878b74e1b149c6d4020230030fb3c5b0
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 974242cf43bae50a8e81b17bcdd13d653032c6a9
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320993"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999198"
 ---
 # <a name="pagescalingscale"></a>PageScalingScale
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica il fattore di scala per la scala quadrata personalizzata.
+Specifica il fattore di scala per il ridimensionamento quadrato personalizzato.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,11 +24,11 @@ Specifica il fattore di scala per la scala quadrata personalizzata.
 
 
 
-| Nome                       |                                                         |
+| Nome | Valore |
 |----------------------------|---------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                 |
-| Prefisso ambito <br/> | Pagina<br/>                                         |
-| Note <br/>          | Collegato a elemento PageScaling, opzione personalizzata<br/> |
+| Prefisso di ambito <br/> | Pagina<br/>                                         |
+| Note <br/>          | Collegato all'elemento PageScaling, opzione Custom<br/> |
 
 
 
@@ -36,7 +36,7 @@ Specifica il fattore di scala per la scala quadrata personalizzata.
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageScalingScale">
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -76,10 +76,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| MinValue<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Minvalue<br/>     | integer<br/> | 1<br/>               |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | percent<br/>         |
+| Tipo di unità<br/>     | string<br/>  | percent<br/>         |
 
 
 

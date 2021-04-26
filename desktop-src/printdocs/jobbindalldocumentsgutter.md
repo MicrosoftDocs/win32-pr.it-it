@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 97a00cd6-508c-47e9-a1c1-75646ca0c721
 title: JobBindAllDocumentsGutter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 219a86f016edf820532c20fa473876265776a4ee
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 04615b85939d483f6bd2e720afa65a88d44c1caf
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104234586"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998378"
 ---
 # <a name="jobbindalldocumentsgutter"></a>JobBindAllDocumentsGutter
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica la larghezza della barra di associazione.
 
@@ -24,11 +24,11 @@ Specifica la larghezza della barra di associazione.
 
 
 
-| Nome                       |                                         |
+| Nome | Valore |
 |----------------------------|-----------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                 |
-| Prefisso ambito <br/> | Processo <br/>                         |
-| Note <br/>          | Collegato a elemento JobBinding<br/> |
+| Prefisso di ambito <br/> | Processo <br/>                         |
+| Note <br/>          | Collegato all'elemento JobBinding<br/> |
 
 
 
@@ -36,7 +36,7 @@ Specifica la larghezza della barra di associazione.
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:JobBindAllDocumentsGutter">
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -76,10 +76,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| MinValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Minvalue<br/>     | numero intero<br/> | Non definito<br/>       |
+| Obbligatorio<br/>    | Stringa<br/>  | psk:Condizionale<br/> |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | micron<br/>         |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
 
 
 

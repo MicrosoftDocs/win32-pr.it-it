@@ -1,34 +1,34 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 324ec426-b7c8-43af-96b9-74929358e262
 title: JobOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a43fcf4aaf389769625e2289a438d7d5c2be0b83
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 973433ac7f6e051d4656777696cc3a37cedd953b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "106321103"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107999218"
 ---
 # <a name="joboutputbin"></a>JobOutputBin
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il contenitore di output installato in un dispositivo o l'elenco completo di contenitori supportati per un dispositivo. Le parole chiave JobOutputBin, DocumentOutputBin e PageOutputBin si escludono a vicenda. è necessario specificare solo un oggetto PrintTicket o un documento sulle funzionalità di stampa.
+Descrive il bin di output installato in un dispositivo o l'elenco completo dei bin supportati per un dispositivo. Le parole chiave JobOutputBin, DocumentOutputBin e PageOutputBin si escludono a vicenda solo in un documento PrintTicket o Funzionalità di stampa.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
--   [Contenuto Extensible Markup Language (XML)](#extensible-markup-language-xml-content)
+-   [Extensible Markup Language (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-| Nome                       |                    |
+| Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Funzionalità<br/> |
-| Prefisso ambito <br/> | Processo<br/>     |
+| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Prefisso di ambito <br/> | Processo<br/>     |
 | Note <br/>          | nessuno<br/>    |
 
 
@@ -37,7 +37,7 @@ Descrive il contenitore di output installato in un dispositivo o l'elenco comple
 
 ## <a name="structural-content"></a>Contenuto strutturale
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:Feature name="psk:JobOutputBin">
@@ -67,18 +67,18 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                   | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                             |
 |----------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido definito dagli [spazi dei nomi in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
-| \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, quando selezionata, Disabilita la funzionalità.<br/>        |
-| \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | MailBox, sorter, Stacker, Finisher, None.<br/>                                                                                                                                  | Specifica il tipo generale del cestino.<br/>                                   |
-| \_MediaSheetCapacityValue\_<br/> | numero intero<br/> | fogli<br/>     | Limite massimo di Integer consentito dal dispositivo.<br/>                                                                                                                              | Specifica la capacità del supporto in numero di pagine (livello completo) del cestino.<br/> |
+| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
+| \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>        |
+| \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | MailBox, Sorter, Stacker, Finisher, None.<br/>                                                                                                                                  | Specifica il tipo generale del contenitore.<br/>                                   |
+| \_MediaSheetCapacityValue\_<br/> | numero intero<br/> | Fogli<br/>     | Vincolo integer massimo consentito dal dispositivo.<br/>                                                                                                                              | Specifica la capacità multimediale in numero di pagine (livello completo) del contenitore.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenuto Extensible Markup Language (XML)
+## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubbliche sono definite nello https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords spazio dei nomi. Il contenuto del Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobOutputBin">

@@ -1,21 +1,21 @@
 ---
-description: Usare questa annotazione per associare un parametro di effetto a un controllo dell'interfaccia utente nell'ambiente host. Ciò consentirà a un utente di controllare in modo interattivo un parametro di effetto tramite l'applicazione host.
+description: Usare questa annotazione per associare un parametro dell'effetto a un controllo dell'interfaccia utente nell'ambiente host. In questo modo un utente può controllare in modo interattivo un parametro dell'effetto tramite l'applicazione host.
 ms.assetid: 6d0b2450-7d90-4a24-b710-faed26969876
-title: Annotazione interfaccia utente
+title: Annotazione dell'interfaccia utente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e873c83a01c5c2214cb49a93e75167e58a3389
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eef6af352b7dea25df34ce8a5712ad30143d6426
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482677"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998588"
 ---
-# <a name="ui-annotation"></a>Annotazione interfaccia utente
+# <a name="ui-annotation"></a>Annotazione dell'interfaccia utente
 
-Usare questa annotazione per associare un parametro di effetto a un controllo dell'interfaccia utente nell'ambiente host. Ciò consentirà a un utente di controllare in modo interattivo un parametro di effetto tramite l'applicazione host.
+Usare questa annotazione per associare un parametro dell'effetto a un controllo dell'interfaccia utente nell'ambiente host. In questo modo un utente può controllare in modo interattivo un parametro dell'effetto tramite l'applicazione host.
 
-DXSAS definisce un set di controlli standard in termini di modello di dati e comportamento di base che gli autori degli effetti possono prevedere dalle applicazioni host. L'annotazione del controllo viene utilizzata come segue:
+DXSAS definisce un set di controlli standard in termini di modello di dati e comportamento di base che gli autori di effetti possono aspettarsi dalle applicazioni host. L'annotazione del controllo viene usata nel modo seguente:
 
 
 ```
@@ -37,24 +37,23 @@ ControlType
 
 
 
-|             |                                                                                                                                                                                 |                                                                                                    |                                                                                                              |
+| ControlType | Descrizione                                                                                                                                                                     | Tipo di dati interno                                                                                 | Annotazioni delle proprietà dei controlli                                                                                 |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| ControlType | Descrizione                                                                                                                                                                     | Tipo di dati interno                                                                                 | Annotazioni proprietà controllo                                                                                 |
-| nessuno        | Nessun controllo deve essere visualizzato. Si noti che un controllo è visibile se [SasUiVisible](#sasuivisible) è true e il tipo di controllo è un tipo diverso da None.                           | n/d                                                                                                | n/d                                                                                                          |
-| Qualsiasi         | Questo implica che non è richiesto alcun controllo speciale. Il controllo presentato è il risultato del comportamento definito dall'applicazione.                                                         | n/d                                                                                                | n/d                                                                                                          |
-| ColorPicker | Rappresenta un valore di colore come un campione di colore. Il valore viene compresso nei componenti XYZ del vettore associato. Il componente W del vettore associato è sempre impostato su uno. | float *n* dove *N* è compreso tra 1 e 4.                                                            | [SasUiEnum](#sasuienum)                                                                                      |
-| Direzione   | Vettore di direzione.                                                                                                                                                             | float *n* dove *N* è compreso tra 2 e 4.                                                            | nessuno                                                                                                         |
-| Selezione file  | Finestra di dialogo che consente all'utente di individuare e selezionare un file.                                                                                                                  | string                                                                                             | nessuno                                                                                                         |
-| ListPicker  | Elenco di valori stringa da cui l'utente può selezionare una voce. I valori vengono generati dall'annotazione [SasUiEnum](#sasuienum) .                                         | Matrice di stringhe insieme a un valore integer contenente l'indice del valore stringa selezionato. | [SasUiEnum](#sasuienum)                                                                                      |
-| Numeric     | Set di controlli di input numerici, ad esempio caselle di testo.                                                                                                                         | float *m* x *N* dove *m* e *n* sono compresi tra 1 e 4.                                               | [SasUiMin](#sasuimin), [SasUiMax](#sasuimax), [SasUiStride](#sasuistride)                                    |
-| Slider      | Set di dispositivi di scorrimento.                                                                                                                                                               | float *m* x *n* dove *m* e *n* sono compresi tra 1 e 4                                                | [SasUiMin](#sasuimin), [SasUiMax](#sasuimax), [SasUiSteps](#sasuisteps), [SasUiStepsPower](#sasuistepspower) |
-| string      | Casella di testo per la modifica del contenuto della stringa.                                                                                                                                         | string                                                                                             | nessuno                                                                                                         |
+| Nessuno        | Non deve essere visualizzato alcun controllo. Si noti che un controllo è visibile [se SasUiVisible](#sasuivisible) è True e il tipo di controllo è di qualsiasi tipo diverso da None.                           | n/d                                                                                                | n/d                                                                                                          |
+| Qualsiasi         | Ciò implica che non è richiesto alcun controllo speciale. Il controllo presentato è il risultato del comportamento definito dall'applicazione.                                                         | n/d                                                                                                | n/d                                                                                                          |
+| ColorPicker | Rappresenta un valore di colore come un campione di colore. Il valore viene inserito nei componenti XYZ del vettore associato. Il componente W del vettore associato è sempre impostato su uno. | float *N* dove *N* è compreso tra 1 e 4 inclusi.                                                            | [SasUiEnum](#sasuienum)                                                                                      |
+| Direzione   | Vettore di direzione.                                                                                                                                                             | float *N* dove *N* è compreso tra 2 e 4 inclusi.                                                            | Nessuno                                                                                                         |
+| FilePicker  | Finestra di dialogo che consente all'utente di esplorare e selezionare un file.                                                                                                                  | string                                                                                             | Nessuno                                                                                                         |
+| ListPicker  | Elenco di valori stringa da cui l'utente può selezionare una voce. I valori vengono generati [dall'annotazione SasUiEnum.](#sasuienum)                                         | Matrice di stringhe insieme a un valore intero contenente l'indice del valore stringa selezionato. | [SasUiEnum](#sasuienum)                                                                                      |
+| Numerico     | Set di controlli di input numerici, ad esempio caselle di testo.                                                                                                                         | float *M* x *N dove* *M* e *N* sono da 1 a 4 inclusi.                                               | [SasUiMin,](#sasuimin) [SasUiMax,](#sasuimax) [SasUiStride](#sasuistride)                                    |
+| Slider      | Set di dispositivi di scorrimento.                                                                                                                                                               | float *M* x *N dove* *M* e *N* sono da 1 a 4 inclusi                                                | [SasUiMin,](#sasuimin) [SasUiMax,](#sasuimax) [SasUiSteps,](#sasuisteps) [SasUiStepsPower](#sasuistepspower) |
+| Stringa      | Casella di testo per la modifica del contenuto della stringa.                                                                                                                                         | string                                                                                             | Nessuno                                                                                                         |
 
 
 
  
 
-Se il tipo di dati interno non è identico al tipo del parametro associato, il cast verrà eseguito quando i dati vengono trasferiti dal parametro dell'applicazione host al parametro Effect.
+Se il tipo di dati interno non è identico al tipo del parametro associato, il cast verrà eseguito quando i dati vengono trasferiti dal parametro dell'applicazione host al parametro effect.
 
 Il valore predefinito è la stringa "None".
 
@@ -62,7 +61,7 @@ Il valore predefinito è la stringa "None".
 
 ### <a name="sasuidescription"></a>SasUiDescription
 
-Usare questa annotazione per specificare una stringa per descrivere uno strumento. Questo può essere usato per gli elementi dell'interfaccia utente, ad esempio le descrizioni comandi.
+Usare questa annotazione per specificare una stringa per descrivere uno strumento. Può essere usato per gli elementi dell'interfaccia utente, ad esempio le descrizioni comandi.
 
 
 ```
@@ -112,7 +111,7 @@ Il valore predefinito è una stringa vuota.
 
 ### <a name="sasuivisible"></a>SasUiVisible
 
-Usare questa annotazione per specificare se il parametro associato deve essere visualizzato all'utente.
+Utilizzare questa annotazione per specificare se il parametro associato deve essere visualizzato all'utente.
 
 
 ```
@@ -121,7 +120,7 @@ bool SasUiVisible = false;
 
 
 
-Se è impostato su true, l'applicazione host deve visualizzare un controllo dell'interfaccia utente per la modifica del parametro dell'effetto annotato. Se false, non viene visualizzata alcuna interfaccia utente nell'applicazione host.
+Se impostato su True, l'applicazione host deve visualizzare un controllo dell'interfaccia utente per la modifica del parametro dell'effetto annotato. Se false, nell'applicazione host non viene visualizzata alcuna interfaccia utente.
 
 Ecco un esempio:
 
@@ -137,9 +136,9 @@ float3 UpNormal
 
 Il valore predefinito è True.
 
-## <a name="ui-control-properties"></a>Proprietà del controllo dell'interfaccia utente
+## <a name="ui-control-properties"></a>Proprietà dei controlli dell'interfaccia utente
 
-Le annotazioni delle proprietà del controllo sono modificatori aggiuntivi che consentono di determinare il funzionamento di un determinato controllo.
+Le annotazioni delle proprietà dei controlli sono modificatori aggiuntivi che consentono di determinare il funzionamento di un determinato controllo.
 
 ### <a name="sasuienum"></a>SasUiEnum
 
@@ -149,7 +148,7 @@ Il valore predefinito è una stringa vuota.
 
 ### <a name="sasuimax"></a>SasUiMax
 
-Questa annotazione specifica il valore massimo del parametro associato. Può essere associato solo a un parametro tipizzato numericamente. Il valore massimo del parametro verrà effettivamente calcolato come:
+Questa annotazione specifica il valore massimo del parametro associato. Può essere associato solo a un parametro di tipo numerico. Il valore massimo del parametro verrà effettivamente calcolato come:
 
 
 ```
@@ -158,7 +157,7 @@ MaxValue = min(FLT_MAX, PARAMETER_TYPE_MAX);
 
 
 
-Il \_ tipo \_ di parametro Max è il valore massimo per il tipo utilizzato dal parametro associato. Ciò significa che il valore del parametro, prendendo in considerazione l'annotazione [SasUiMax](#sasuimax) viene calcolato come:
+PARAMETER \_ TYPE MAX è il valore massimo per il tipo utilizzato dal parametro \_ associato. Ciò significa che il valore del parametro , prendendo in considerazione [l'annotazione SasUiMax](#sasuimax) viene calcolato come:
 
 
 ```
@@ -167,11 +166,11 @@ ParameterValue = min(NewParameterValue, MaxValue);
 
 
 
-Il valore predefinito è FLT \_ Max come definito in Math. h.
+Il valore predefinito è FLT \_ MAX, come definito in Math.h.
 
 ### <a name="sasuimin"></a>SasUiMin
 
-Questa annotazione specifica il valore minimo del parametro associato. Può essere associato solo a un parametro tipizzato numericamente. Il valore minimo del parametro verrà effettivamente calcolato come:
+Questa annotazione specifica il valore minimo del parametro associato. Può essere associato solo a qualsiasi parametro di tipo numerico. Il valore minimo del parametro verrà effettivamente calcolato come:
 
 
 ```
@@ -180,7 +179,7 @@ MinValue = max(-FLT_MAX, PARAMETER_TYPE_MIN);
 
 
 
-Il \_ tipo \_ di parametro min è il valore minimo per il tipo utilizzato dal parametro associato. Ciò significa che il valore del parametro, prendendo in considerazione l'annotazione [SasUiMin](#sasuimin) viene calcolato come:
+PARAMETER \_ TYPE MIN è il valore minimo per il tipo usato dal parametro \_ associato. Ciò significa che il valore del parametro , tenendo conto [dell'annotazione SasUiMin](#sasuimin) viene calcolato come:
 
 
 ```
@@ -189,17 +188,17 @@ ParameterValue = max(NewParameterValue, MinValue);
 
 
 
-Il valore predefinito è-FLT \_ Max come definito in Math. h.
+Il valore predefinito è -FLT \_ MAX come definito in Math.h.
 
 ### <a name="sasuisteps"></a>SasUiSteps
 
-Questa annotazione specifica il numero di passaggi che è possibile utilizzare quando si incrementa o decrementa il valore del parametro associato. L'annotazione è significativa solo per un parametro tipizzato numericamente. Zero indica che l'applicazione host sceglierà un numero ragionevole di passaggi.
+Questa annotazione specifica il numero di passaggi che è possibile usare quando si incrementa o decrementa il valore del parametro associato. L'annotazione è significativa solo per un parametro di tipo numerico. Zero specifica che l'applicazione host sceglierà un numero ragionevole di passaggi.
 
 Il valore predefinito è 0.
 
 ### <a name="sasuistepspower"></a>SasUiStepsPower
 
-Questa annotazione specifica l'esponente nella funzione Power, che ha l'intervallo \[ 0,0 f, 1.0 f \] . Quando si calcolano i valori dei parametri, le applicazioni host devono implementare il metodo seguente:
+Questa annotazione specifica l'esponente nella funzione power, che ha l'intervallo \[ 0,0f, 1,0f \] . Le applicazioni host devono implementare il metodo seguente durante il calcolo dei valori dei parametri:
 
 
 ```
@@ -208,11 +207,11 @@ ParameterValue = ((SasUiMax - SasUiMin) x pow(UI_VALUE, SasUiStepsPower) + SasUi
 
 
 
-Il valore predefinito è 1.0 f.
+Il valore predefinito è 1,0f.
 
 ### <a name="sasuistride"></a>SasUiStride
 
-Questa annotazione specifica l'incremento da usare per incrementare o decrementare questo valore. A differenza di [SasUiSteps](#sasuisteps), [SasUiStride](#sasuistride) è utile con un controllo casella di selezione, ad esempio, in cui i dati non sono associati e l'utente deve incrementare il valore del parametro in base allo stride anziché a un numero predefinito di passaggi. Le applicazioni host devono incrementare (o diminuire in base al comportamento del controllo) il valore di SasUiStride come indicato di seguito:
+Questa annotazione specifica l'incremento che deve essere usato quando si incrementa o decrementa questo valore. A differenza di [SasUiSteps,](#sasuisteps) [SasUiStride](#sasuistride) è utile con un controllo casella di selezione, ad esempio, in cui i dati non sono associati e l'utente preferisce incrementare il valore del parametro per stride anziché di un numero predefinito di passaggi. Le applicazioni host devono incrementare (o decrementare a seconda del comportamento del controllo) il valore di SasUiStride come indicato di seguito:
 
 
 ```
@@ -221,13 +220,13 @@ ParameterValue = ParameterValue +/- SasUiStride
 
 
 
-Il valore predefinito è 1.0 f.
+Il valore predefinito è 1,0f.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni di riferimento sulla semantica e le annotazioni standard DirectX](dx9-graphics-reference-effects-dxsas.md)
+[Riferimento semantico e annotazioni standard DirectX](dx9-graphics-reference-effects-dxsas.md)
 </dt> </dl>
 
  

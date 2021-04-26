@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 857caf51-ccf6-415c-aab3-1fed50fa7b34
 title: PageMediaSizePSHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cb576ce7d623f4d036db1332b0339e6cef518d3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 96c6ddd593d95ae740a5e03d37e3d79c73e1638b
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320863"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107993698"
 ---
 # <a name="pagemediasizepsheight"></a>PageMediaSizePSHeight
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'altezza della pagina, in parallelo alla direzione di orientamento del feed (riferimento al [formato del file di descrizione della stampante di PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).
+Specifica l'altezza della pagina, parallela alla direzione di orientamento del feed (Specifica del formato del file di descrizione della stampante [PostScript di riferimento).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -24,10 +24,10 @@ Specifica l'altezza della pagina, in parallelo alla direzione di orientamento de
 
 
 
-| Nome                       |                                                             |
+| Nome | Valore |
 |----------------------------|-------------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                     |
-| Prefisso ambito <br/> | Pagina<br/>                                             |
+| Prefisso di ambito <br/> | Pagina<br/>                                             |
 | Note <br/>          | Collegato all'elemento PageMediaSize, opzione CustomPS<br/> |
 
 
@@ -36,7 +36,7 @@ Specifica l'altezza della pagina, in parallelo alla direzione di orientamento de
 
 ## <a name="structure-content"></a>Contenuto della struttura
 
-La struttura XML di questo elemento è la seguente:
+La struttura XML di questo elemento è:
 
 ``` syntax
 <psf:ParameterDef name="psk:PageMediaSizePSHeight">
@@ -65,7 +65,7 @@ La struttura XML di questo elemento è la seguente:
       
 ```
 
-## <a name="structure-properties"></a>Proprietà struttura
+## <a name="structure-properties"></a>Proprietà della struttura
 
 Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.
 
@@ -76,10 +76,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| MinValue<br/>     | numero intero<br/> | Non definito<br/>       |
-| Obbligatorio<br/>    | string<br/>  | PSK: condizionale<br/> |
+| Minvalue<br/>     | numero intero<br/> | Non definito<br/>       |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
 | Più elementi<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | micron<br/>         |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
 
 
 

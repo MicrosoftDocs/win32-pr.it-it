@@ -4,12 +4,12 @@ ms.assetid: 3e314f73-2653-481a-ac7d-1ce7db0591e2
 title: Altre costanti Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 990dc0a2ef06850fb9fc0839fd7a0be361832d65
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eb289cb080519fab661d7a43f59bca3d8a9db3a0
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304385"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998608"
 ---
 # <a name="other-direct3d-constants"></a>Altre costanti Direct3D
 
@@ -19,36 +19,35 @@ ms.locfileid: "106304385"
 
 |                     |
 |---------------------|
-| \#definire            |
-| \_Versione SDK \_ D3D   |
-| \_Versione dell'SDK di D3D9b \_ |
+| \#Definire            |
+| VERSIONE DELL'SDK D3D \_ \_   |
+| VERSIONE DELL'SDK D3D9B \_ \_ |
 
 
 
  
 
-Queste \# definizioni sono dichiarate in d3d9. h.
+Queste \# definisce sono dichiarate in d3d9.h.
 
 ## <a name="other-constants"></a>Altre costanti
 
-Nella tabella seguente sono elencate le costanti utilizzate internamente:
+Nella tabella seguente sono elencate le costanti usate internamente:
 
 
 
-|                                       |                                                   |                                                                    |
+| \#Definire                              | Valore                                             | Descrizione                                                        |
 |---------------------------------------|---------------------------------------------------|--------------------------------------------------------------------|
-| \#definire                              | Valore                                             | Descrizione                                                        |
-| \_Numero massimo \_ di \_ RENDERTARGETS simultanei D3D | 4                                                 | Numero massimo di Rendertargets.                               |
+| D3D \_ MAX \_ SIMULTANEOUS \_ RENDERTARGETS | 4                                                 | Numero massimo di destinazione di rendering.                               |
 | D3DDMAPSAMPLER                        | 256                                               | Numero massimo di campioni della mappa di spostamento.                    |
-| \_MAXTEXCOORD D3DDP                    | 8                                                 | Numero massimo di coordinate di trama.                         |
-| MAXD3DDECLLENGTH                      | 64 (non include l'elemento Vertex del marcatore "end") | Numero massimo di elementi in una dichiarazione di vertice.                |
-| MAXD3DDECLUSAGEINDEX                  | 15                                                | Indice massimo (0-15) che può essere utilizzato in una dichiarazione di vertice. |
+| D3DDP \_ MAXTEXCOORD                    | 8                                                 | Numero massimo di coordinate di trama.                         |
+| MAXD3DDECLLENGTH                      | 64 (non include l'elemento vertice del marcatore "end") | Numero massimo di elementi in una dichiarazione di vertice.                |
+| MAXD3DDECLUSAGEINDEX                  | 15                                                | Indice massimo (0-15) che può essere usato in una dichiarazione di vertice. |
 
 
 
  
 
-Queste \# definizioni sono dichiarate in d3d9types. h.
+Queste \# definisce sono dichiarate in d3d9types.h.
 
 ## <a name="constant-information"></a>Informazioni sulle costanti
 

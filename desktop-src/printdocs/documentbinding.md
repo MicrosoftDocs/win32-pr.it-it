@@ -1,35 +1,35 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 36a7c360-2d26-46b9-b829-0fb35b36c79c
-title: Documento di
+title: Associazione documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 139cc40701624041a57e4fa69edc084f88c1972b
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: da4aeb31acb72932bbf272d52676b7795abe8311
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "106321140"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107996298"
 ---
-# <a name="documentbinding"></a>Documento di
+# <a name="documentbinding"></a>Associazione documento
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il metodo di associazione. Ogni documento è associato separatamente. La documentazione e JobBindAllDocuments si escludono a vicenda. Spetta al driver determinare la gestione dei vincoli tra le parole chiave.
+Descrive il metodo di associazione. Ogni documento è associato separatamente. DocumentBinding e JobBindAllDocuments si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
--   [Contenuto Extensible Markup Language (XML)](#extensible-markup-language-xml-content)
+-   [Extensible Markup Language (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-| Nome                       |                                                                                                                                                 |
+| Nome | Valore |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                              |
-| Prefisso ambito <br/> | Documento<br/>                                                                                                                             |
-| Note <br/>          | In alto, in basso, a sinistra e a destra sono relativi a PageImageableSize dell'oggetto, dove la parte superiore è indicata dall'origine dell'asse x e dall'asse y.<br/> |
+| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                              |
+| Prefisso di ambito <br/> | Documento<br/>                                                                                                                             |
+| Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize, dove TopLeft è denotato dall'origine dell'asse x e dell'asse y.<br/> |
 
 
 
@@ -63,17 +63,17 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                                                |
 |------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido definito dagli [spazi dei nomi in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                                     |
-| \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, quando selezionata, Disabilita la funzionalità.<br/>                                                                                           |
-| \_BindingGutterValue\_<br/>  | Integer<br/> | micron<br/>    | Maggiore o uguale a 0.<br/>                                                                                                                                                | Definisce la barra di associazione minima per l'associazione finale specificata. La gronda viene misurata in micron rispetto al bordo della dimensione media fisica.<br/> |
+| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                                     |
+| \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                           |
+| \_BindingGutterValue\_<br/>  | Intero<br/> | Micron<br/>    | Maggiore o uguale a 0.<br/>                                                                                                                                                | Definisce la distanza minima dell'associazione per l'associazione finale specificata. La grondaia viene misurata in micron rispetto al bordo della dimensione dei supporti fisici.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Contenuto Extensible Markup Language (XML)
+## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubbliche sono definite nello https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords spazio dei nomi. Il contenuto del Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentBinding">

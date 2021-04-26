@@ -4,12 +4,12 @@ ms.assetid: b0d9a126-0f69-4d07-ae18-07aa49ee2666
 title: elemento serverClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b232f83bf223d31e88e78bb15f4e71f4524a38a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be84aad9c5b84d6cfb992a0e3ff51e19bc9d8f14
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968481"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998698"
 ---
 # <a name="serverclass-element"></a>elemento serverClass
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                               | Descrizione                                                                                   |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementazioni per le funzioni stub per le operazioni del tipo di porta.<br/> <br/> |
+| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementazioni per le funzioni stub per le operazioni sul tipo di porta.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

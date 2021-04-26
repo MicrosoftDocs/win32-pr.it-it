@@ -4,14 +4,14 @@ ms.assetid: dd3894a8-1848-4ae0-ba6c-42ac4fe36ff3
 title: elemento typeUri
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ae3d688c1e083f1decc752b29a9e23bc2fab567
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c9ef0a2482354fcfd962a7e41a7c2b94b54f5cb
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231665"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107998688"
 ---
-# <a name="typeuri-element"></a>elemento typeUri
+# <a name="typeuri-element"></a>Elemento typeUri
 
 Specifica un tipo da includere da un file XSD.
 
@@ -29,8 +29,8 @@ Specifica un tipo da includere da un file XSD.
 
 | Attributo           | Type                         | Obbligatoria       | Descrizione                                                            |
 |---------------------|------------------------------|----------------|------------------------------------------------------------------------|
-| **type**<br/> | stringa di caratteri \_<br/> | Sì<br/> | Nome del tipo.<br/> <br/>                           |
-| **Uri**<br/>  | stringa di caratteri \_<br/> | Sì<br/> | Spazio dei nomi del tipo. Deve essere un URI valido.<br/> <br/> |
+| **type**<br/> | stringa di \_ caratteri<br/> | Sì<br/> | Nome del tipo.<br/> <br/>                           |
+| **Uri**<br/>  | stringa di \_ caratteri<br/> | Sì<br/> | Spazio dei nomi del tipo. Deve essere un URI valido.<br/> <br/> |
 
 
 
@@ -44,7 +44,7 @@ Non ci sono elementi figlio.
 
 | Elemento                       | Descrizione                                                                       |
 |-------------------------------|-----------------------------------------------------------------------------------|
-| [**XSD**](xsd.md)<br/> | Specifica un file XSD da elaborare per le informazioni sul contratto.<br/> <br/> |
+| [**Xsd**](xsd.md)<br/> | Specifica un file XSD da elaborare per le informazioni sul contratto.<br/> <br/> |
 
 
 
@@ -52,7 +52,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

@@ -4,12 +4,12 @@ ms.assetid: d8f630cd-0541-431b-86a8-792846a85ea0
 title: elemento wsdl
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbcb96e063a289e16d5e459b59cb8808a763618a
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: 5ef4bc7b76ce22184e4c2f1ceaa2131ef163a26d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380735"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107994708"
 ---
 # <a name="wsdl-element"></a>elemento wsdl
 
@@ -55,19 +55,19 @@ Non ci sono attributi.
 
 | Elemento                                     | Descrizione                                                                          |
 |---------------------------------------------|--------------------------------------------------------------------------------------|
-| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento radice di un file script XML del generatore di codice WSDAPI.<br/> <br/> |
+| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento radice di un file di script XML del generatore di codice WSDAPI.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Tutti [**gli elementi importHint**](importhint.md) [**o excludeImport**](excludeimport.md) visualizzati dopo [**l'elemento path**](path.md) in un file di configurazione XML verranno ignorati.
+Tutti [**gli elementi importHint**](importhint.md) [**o excludeImport**](excludeimport.md) visualizzati dopo l'elemento [**path**](path.md) in un file di configurazione XML verranno ignorati.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

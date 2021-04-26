@@ -1,19 +1,19 @@
 ---
-description: Specifica l'URL fornito come hint di importazione per un WSDL o XSD a cui si fa riferimento all'interno di un altro WSDL.
+description: Specifica l'URL fornito come hint di importazione per un wsdl o XSD a cui viene fatto riferimento all'interno di un altro WSDL.
 ms.assetid: ba489fd7-2304-426e-83a0-d174bb394065
 title: location (elemento)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 547160b30299b1143ae2255925f520712fcc63ce
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: e6ada310312c3f3ca15ebadffab6f6340827215d
+ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380675"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "107995138"
 ---
 # <a name="location-element"></a>location (elemento)
 
-Specifica l'URL fornito come hint di importazione per un WSDL o XSD a cui si fa riferimento all'interno di un altro WSDL.
+Specifica l'URL fornito come hint di importazione per un wsdl o XSD a cui viene fatto riferimento all'interno di un altro WSDL.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-|                                     |               |
+| Label | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |
