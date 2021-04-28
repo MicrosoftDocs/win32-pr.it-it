@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando il suggerimento del cursore Contatta la superficie del Tablet di digitalizzazione.
+description: 'Evento InkOverlay.CursorDown: si verifica quando la punta del cursore contatta la superficie del tablet di digitalizzazione.'
 ms.assetid: 753aa733-8d62-4983-b76d-d58844b79c35
-title: Evento InkOverlay. CursorDown (Msinkaut. h)
+title: Evento InkOverlay.CursorDown (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ea0bd76d8836ae31c6e17877ddc4870dafaaa93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56ed26c672aadc9fa19f6a6426fed7339752448d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313936"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117059"
 ---
-# <a name="inkoverlaycursordown-event"></a>Evento InkOverlay. CursorDown
+# <a name="inkoverlaycursordown-event"></a>Evento InkOverlay.CursorDown
 
-Si verifica quando il suggerimento del cursore Contatta la superficie del Tablet di digitalizzazione.
+Si verifica quando la punta del cursore contatta la superficie del tablet di digitalizzazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,17 +31,17 @@ void CursorDown(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**CursorDown**](inkcollector-cursordown.md) .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato [**l'evento CursorDown.**](inkcollector-cursordown.md)
 
 </dd> <dt>
 
-*Tratto* \[ in\]
+*Tratto* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) che è stato avviato quando l'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) ha causato l'attivazione dell'evento [**CursorDown**](inkcollector-cursordown.md) .
+Oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) avviato quando l'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) ha causato l'evento [**CursorDown.**](inkcollector-cursordown.md)
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito in \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents. le \_ interfacce IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents implementano l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ ICECursorDown.
+Questo metodo di evento è definito in \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents. Le interfacce \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents implementano [**l'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ ICECursorDown.
 
-Utilizzare attentamente questo evento perché potrebbe avere un effetto negativo sulle prestazioni dell'input penna se nei gestori eventi viene eseguita una quantità eccessiva di codice. Per migliorare le prestazioni in tempo reale dell'input penna, nascondere o mostrare il cursore del mouse nei gestori eventi [**MouseDown**](inkcollector-mousedown.md) e [**MouseUp**](inkcollector-mouseup.md) .
+Usare questo evento con attenzione perché potrebbe avere un effetto negativo sulle prestazioni dell'input penna se viene eseguita una quantità troppo grande di codice nei gestori eventi. Per migliorare le prestazioni dell'input penna in tempo reale, nascondere o visualizzare il cursore del mouse nei gestori [**eventi MouseDown**](inkcollector-mousedown.md) e [**MouseUp.**](inkcollector-mouseup.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Utilizzare attentamente questo evento perché potrebbe avere un effetto negativo
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -72,7 +72,7 @@ Utilizzare attentamente questo evento perché potrebbe avere un effetto negativo
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
 [**Evento CursorButtonDown**](inkcollector-cursorbuttondown.md)

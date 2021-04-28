@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando l'utente disegna un nuovo tratto su un tablet.
+description: "Evento InkOverlay.Stroke: si verifica quando l'utente disegna un nuovo tratto su qualsiasi tablet."
 ms.assetid: 315155ec-0de1-4052-ae7c-51bc3127fbbf
-title: Evento InkOverlay. Stroke (Msinkaut. h)
+title: Evento InkOverlay.Stroke (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6db3bdbe996830596a8e25cebf6f05b94638894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 408c44cf47ecfbf3ea0cfd0f8306be61efb0f8e9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759530"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116849"
 ---
-# <a name="inkoverlaystroke-event"></a>InkOverlay. Stroke (evento)
+# <a name="inkoverlaystroke-event"></a>Evento InkOverlay.Stroke
 
-Si verifica quando l'utente disegna un nuovo tratto su un tablet.
+Si verifica quando l'utente disegna un nuovo tratto su qualsiasi tablet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,24 +32,24 @@ void Stroke(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**Stroke**](inkcollector-stroke.md) .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato [**l'evento Stroke.**](inkcollector-stroke.md)
 
 </dd> <dt>
 
-*Tratto* \[ in\]
+*Tratto* \[ Pollici\]
 </dt> <dd>
 
 Oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) raccolto.
 
 </dd> <dt>
 
-*Annulla* \[ in uscita\]
+*Annulla* \[ in, out\]
 </dt> <dd>
 
-Specifica se l'evento deve essere annullato. Se **true**, la raccolta del tratto viene annullata.
+Specifica se l'evento deve essere annullato. Se **TRUE,** la raccolta del tratto viene annullata.
 
 </dd> </dl>
 
@@ -59,12 +59,12 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents dispatch (DISPINTERFACES) con ID DISPID \_ ICEStroke.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ ICEStroke DISPID.
 
-L'evento [**Stroke**](inkcollector-stroke.md) viene generato in modalità Select o Erase, non solo quando si inserisce l'input penna. A tale scopo, è necessario monitorare la modalità di modifica (che è responsabile dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma grazie a una maggiore consapevolezza degli eventi della piattaforma.
+[**L'evento Stroke**](inkcollector-stroke.md) viene generato in modalità di selezione o cancellazione, non solo quando si inserisce l'input penna. A questo scopo, è necessario monitorare la modalità di modifica (che si è responsabili dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovare sulla piattaforma attraverso una maggiore consapevolezza degli eventi della piattaforma.
 
 > [!Note]  
-> L'evento [**Stroke**](inkcollector-stroke.md) viene generato quando l'utente completa il disegno di un tratto, non quando un tratto viene aggiunto alla raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) . Quando l'utente inizia per la prima volta a disegnare un tratto, viene aggiunto immediatamente alla raccolta InkStrokes. Tuttavia, l'evento **Stroke** non viene attivato fino al completamento del tratto. Di conseguenza, i tratti possono esistere nella raccolta InkStrokes che il gestore dell'evento **Stroke** non ha rilevato.
+> [**L'evento Stroke**](inkcollector-stroke.md) viene generato quando l'utente termina di disegnare un tratto, non quando un tratto viene aggiunto alla [raccolta InkStrokes.](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) Quando l'utente inizia per la prima volta a disegnare un tratto, viene aggiunto immediatamente alla raccolta InkStrokes. Tuttavia, **l'evento Stroke** non viene generato fino al completamento del tratto. Di conseguenza, i tratti possono essere presenti nella raccolta InkStrokes che il gestore dell'evento **Stroke** non ha visto.
 
  
 
@@ -74,9 +74,9 @@ L'evento [**Stroke**](inkcollector-stroke.md) viene generato in modalità Select
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -85,13 +85,13 @@ L'evento [**Stroke**](inkcollector-stroke.md) viene generato in modalità Select
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
-[**\[Raccolta InkStrokes evento StrokesAdded\]**](inkstrokes-strokesadded.md)
+[**Raccolta StrokesAdded Event \[ InkStrokes\]**](inkstrokes-strokesadded.md)
 </dt> <dt>
 
-[**Classe InkOverlay dell'evento StrokesDeleted \[\]**](inkoverlay-strokesdeleted.md)
+[**Classe \[ InkOverlay dell'evento StrokesDeleted\]**](inkoverlay-strokesdeleted.md)
 </dt> <dt>
 
 [**Interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)

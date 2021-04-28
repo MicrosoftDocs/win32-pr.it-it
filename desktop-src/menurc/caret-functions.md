@@ -1,17 +1,17 @@
 ---
-title: Funzioni del cursore
-description: .
+title: Funzioni di caret
+description: Funzioni di caret
 ms.assetid: 26d5dfcb-f932-463b-b643-eec780cb4027
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67931f3f8c792b361776e5b8a5aab95c38f84eb0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f18f21e931283d19e2df52aea146d71caecc506c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221160"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112799"
 ---
-# <a name="caret-functions"></a>Funzioni del cursore
+# <a name="caret-functions"></a>Funzioni di caret
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -24,9 +24,9 @@ ms.locfileid: "104221160"
 -   [**SetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos)
 -   [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret)
 
- 
+ 
 
- 
+ 
 
 
 

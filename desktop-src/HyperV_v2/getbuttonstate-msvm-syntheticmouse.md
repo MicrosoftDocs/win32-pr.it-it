@@ -1,7 +1,7 @@
 ---
-description: Recupera lo stato corrente del pulsante del dispositivo specificato.
+description: 'Metodo GetButtonState della Msvm_SyntheticMouse classe : recupera lo stato corrente del pulsante del dispositivo specificato.'
 ms.assetid: 66363AF1-E360-478D-8E62-513DE66EF130
-title: Metodo GetButtonState della classe Msvm_SyntheticMouse
+title: Metodo GetButtonState della Msvm_SyntheticMouse classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3812d3e019a303656305471fc097fb1479fa1ada
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26839292cf2fb3099e740629b28c7de0fbe3f60f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307753"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119389"
 ---
-# <a name="getbuttonstate-method-of-the-msvm_syntheticmouse-class"></a>Metodo GetButtonState della classe MSVM \_ SyntheticMouse
+# <a name="getbuttonstate-method-of-the-msvm_syntheticmouse-class"></a>Metodo GetButtonState della classe SyntheticMouse Msvm \_
 
 Recupera lo stato corrente del pulsante del dispositivo specificato.
 
@@ -40,36 +40,36 @@ uint32 GetButtonState(
 
 <dl> <dt>
 
-*ButtonIndex* \[ in\]
+*buttonIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Indice in base 1 del pulsante su cui eseguire una query.
+Indice in base 1 del pulsante su cui eseguire la query.
 
 </dd> <dt>
 
-in *basso* \[ out\]
+*isDown* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Stato di inattività corrente del pulsante. Un valore **true** indica che il pulsante è inattivo.
+Stato corrente verso il basso del pulsante. Un **valore True** indica che il pulsante è in basso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valore restituito pari a zero indica esito positivo. Un valore diverso da zero indica un errore di query.
+Un valore restituito pari a zero indica l'esito positivo. Un valore diverso da zero indica un errore di query.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -81,25 +81,25 @@ Un valore restituito pari a zero indica esito positivo. Un valore diverso da zer
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -107,7 +107,7 @@ Un valore restituito pari a zero indica esito positivo. Un valore diverso da zer
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe \_ SyntheticMouse di MSVM**](msvm-syntheticmouse.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,10 +115,10 @@ L'accesso alla [**classe \_ SyntheticMouse di MSVM**](msvm-syntheticmouse.md) po
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -127,7 +127,7 @@ L'accesso alla [**classe \_ SyntheticMouse di MSVM**](msvm-syntheticmouse.md) po
 
 <dl> <dt>
 
-[**\_SyntheticMouse MSVM**](msvm-syntheticmouse.md)
+[**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md)
 </dt> </dl>
 
  

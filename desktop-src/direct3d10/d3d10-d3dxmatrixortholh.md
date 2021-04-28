@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di proiezione ortogonale a sinistra.
+description: 'Funzione D3DXMatrixOrthoLH (D3DX10Math.h): compila una matrice di proiezione ortografica mancino.'
 ms.assetid: 67bec4a3-2126-4f5a-9301-97faa6dc6e84
-title: Funzione D3DXMatrixOrthoLH (D3DX10Math. h)
+title: Funzione D3DXMatrixOrthoLH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0b49e6008b52f7060075688730c72f5f5d3f725a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 73cd5d9b809a0eb442db57e91c3788d2548a8c33
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235167"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113099"
 ---
-# <a name="d3dxmatrixortholh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoLH (D3DX10Math. h)
+# <a name="d3dxmatrixortholh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoLH (D3DX10Math.h)
 
-Compila una matrice di proiezione ortogonale a sinistra.
+Compila una matrice di proiezione ortografica mancino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixOrthoLH(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Larghezza del volume di visualizzazione.
+Larghezza del volume della vista.
 
 </dd> <dt>
 
 *h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Altezza del volume di visualizzazione.
-
-</dd> <dt>
-
-*Zn* \[ in\]
-</dt> <dd>
-
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
-
-Valore z minimo del volume di visualizzazione noto come z-near.
+Altezza del volume della vista.
 
 </dd> <dt>
 
-*ZF* \[ in\]
+*zn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore z massimo del volume di visualizzazione a cui si fa riferimento come z-lung.
+Valore z minimo del volume della vista, definito z-near.
+
+</dd> <dt>
+
+*zf* \[ Pollici\]
+</dt> <dd>
+
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+
+Valore z massimo del volume della vista, definito z-far.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Valore z massimo del volume di visualizzazione a cui si fa riferimento come z-lu
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Commenti
 
 Tutti i parametri della funzione D3DXMatrixOrthoLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixOrthoLH può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixOrthoLH può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -119,8 +119,8 @@ Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

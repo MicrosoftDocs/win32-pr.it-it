@@ -1,17 +1,17 @@
 ---
-description: .
+description: Funzioni messaggio (Windows e messaggi)
 ms.assetid: 753d1c5b-e824-4fc3-b731-ae9cb16c0e16
-title: Funzioni di messaggio (Windows e messaggi)
+title: Funzioni messaggio (Windows e messaggi)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29e635f61b92af4080f4283ba08b02fda387d482
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d44ebb7227cf6a97c9daed6eee3db69042a7956
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312508"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100399"
 ---
-# <a name="message-functions-windows-and-messages"></a>Funzioni di messaggio (Windows e messaggi)
+# <a name="message-functions-windows-and-messages"></a>Funzioni messaggio (Windows e messaggi)
 
 -   [**BroadcastSystemMessage**](/windows/win32/api/winuser/nf-winuser-broadcastsystemmessage)
 -   [**BroadcastSystemMessageEx**](/windows/win32/api/winuser/nf-winuser-broadcastsystemmessageexa)
@@ -29,7 +29,7 @@ ms.locfileid: "106312508"
 -   [**PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage)
 -   [**PostThreadMessage**](/windows/win32/api/winuser/nf-winuser-postthreadmessagea)
 -   [**RegisterWindowMessage**](/windows/win32/api/winuser/nf-winuser-registerwindowmessagea)
--   [**ReplyMessage**](/windows/win32/api/winuser/nf-winuser-replymessage)
+-   [**Messaggio di risposta**](/windows/win32/api/winuser/nf-winuser-replymessage)
 -   [*SendAsyncProc*](/windows/win32/api/winuser/nc-winuser-sendasyncproc)
 -   [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage)
 -   [**SendMessageCallback**](/windows/win32/api/winuser/nf-winuser-sendmessagecallbacka)

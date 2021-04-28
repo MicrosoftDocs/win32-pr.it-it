@@ -1,6 +1,6 @@
 ---
-description: Consente di visualizzare o nascondere il desktop.
-title: Metodo IShellDispatch4. ToggleDesktop (shldisp. h)
+description: 'Metodo IShellDispatch4.ToggleDesktop: visualizza o nasconde il desktop.'
+title: Metodo IShellDispatch4.ToggleDesktop (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 60199e18-b8da-48a6-b316-e7f07ff44b78
-ms.openlocfilehash: ccca7769363ad4dcf967611aad1b8ee5d7e28deb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: b635408ed8a44b8bb0d27e52c167470f80f61b18
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977983"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116819"
 ---
-# <a name="ishelldispatch4toggledesktop-method"></a>IShellDispatch4. ToggleDesktop, metodo
+# <a name="ishelldispatch4toggledesktop-method"></a>Metodo IShellDispatch4.ToggleDesktop
 
-Consente di visualizzare o nascondere il desktop.
+Visualizza o nasconde il desktop.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,13 +57,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo ha lo stesso effetto del pulsante **Mostra desktop** sulla barra delle applicazioni. Nasconde tutte le finestre aperte per visualizzare il desktop o nasconde il desktop visualizzando tutte le finestre aperte. Il metodo **ToggleDesktop** non visualizza un'interfaccia utente, richiama semplicemente l'azione di attivazione/disattivazione.
+Questo metodo ha lo stesso effetto del pulsante **Mostra desktop** sulla barra delle applicazioni. Nasconde tutte le finestre aperte per visualizzare il desktop oppure nasconde il desktop visualizzando tutte le finestre aperte. Il **metodo ToggleDesktop** non visualizza un'interfaccia utente, ma richiama solo l'azione Toggle.
 
 ## <a name="examples"></a>Esempio
 
 Gli esempi seguenti illustrano l'uso corretto di **ToggleDesktop** per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -117,11 +117,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |
 
 
 

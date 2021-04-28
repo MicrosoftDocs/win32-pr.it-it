@@ -1,7 +1,7 @@
 ---
-description: Determina il prodotto di due matrici.
+description: 'Funzione D3DXMatrixMultiply (D3DX10Math.h): determina il prodotto di due matrici.'
 ms.assetid: d15cd680-0e19-4353-9eee-73933663960e
-title: Funzione D3DXMatrixMultiply (D3DX10Math. h)
+title: Funzione D3DXMatrixMultiply (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 5f07130c25ce9ef1c588309460e4e12e67bb2485
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 89e103d441648643be0176ca34f72f6175c11213
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969484"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113129"
 ---
-# <a name="d3dxmatrixmultiply-function-d3dx10mathh"></a>Funzione D3DXMatrixMultiply (D3DX10Math. h)
+# <a name="d3dxmatrixmultiply-function-d3dx10mathh"></a>Funzione D3DXMatrixMultiply (D3DX10Math.h)
 
 Determina il prodotto di due matrici.
 
@@ -42,16 +42,16 @@ D3DXMATRIX* D3DXMatrixMultiply(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pM1* \[ in\]
+*pM1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -60,7 +60,7 @@ Puntatore a una struttura D3DXMATRIX di origine (lato sinistro).
 
 </dd> <dt>
 
-*pM2* \[ in\]
+*pM2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -77,9 +77,9 @@ Puntatore a una struttura D3DXMATRIX che è il prodotto di due matrici.
 
 ## <a name="remarks"></a>Commenti
 
-Il risultato rappresenta la trasformazione M1 seguita dalla trasformazione m2 (out = M1 \* m2).
+Il risultato rappresenta la trasformazione M1 seguita dalla trasformazione M2 (Out = M1 \* M2).
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixMultiply può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixMultiply può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Calcola un ambito di delimitazione per la mesh.
+description: 'Funzione D3DXComputeBoundingSphere (D3DX10math.h): calcola una sfera di delimitazione per la mesh.'
 ms.assetid: 54f486d2-45e9-4fc1-90a3-97488ed4d900
-title: Funzione D3DXComputeBoundingSphere (D3DX10math. h)
+title: Funzione D3DXComputeBoundingSphere (D3DX10math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0c8e59b4d39652d02ce19f4c1bf6b0617fee7772
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0041d775b21d1af37bc51d6ec2f432e616b2abd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235142"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113299"
 ---
-# <a name="d3dxcomputeboundingsphere-function-d3dx10mathh"></a>Funzione D3DXComputeBoundingSphere (D3DX10math. h)
+# <a name="d3dxcomputeboundingsphere-function-d3dx10mathh"></a>Funzione D3DXComputeBoundingSphere (D3DX10math.h)
 
-Calcola un ambito di delimitazione per la mesh.
+Calcola una sfera di delimitazione per la mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ HRESULT D3DXComputeBoundingSphere(
 
 <dl> <dt>
 
-*pFirstPosition* \[ in\]
+*pFirstPosition* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -53,7 +53,7 @@ Puntatore alla prima posizione.
 
 </dd> <dt>
 
-*NumVertices* \[ in\]
+*NumVertices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -62,7 +62,7 @@ Numero di vertici.
 
 </dd> <dt>
 
-*dwStride* \[ in\]
+*dwStride* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -71,19 +71,19 @@ Numero di byte tra i vettori di posizione.
 
 </dd> <dt>
 
-*pCenter* \[ in\]
+*pCenter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Struttura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , che definisce il centro delle coordinate della sfera di delimitazione restituita.
+[**Struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che definisce il centro delle coordinate della sfera di delimitazione restituita.
 
 </dd> <dt>
 
-*pRadius* \[ in\]
+*pRadius* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Raggio della sfera di delimitazione restituita.
 
@@ -101,8 +101,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

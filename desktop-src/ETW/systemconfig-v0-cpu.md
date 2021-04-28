@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.
+description: 'SystemConfig_V0_CPU: questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.'
 ms.assetid: 9ca77676-ff0e-4c47-ae4e-f8192376d3ca
-title: Classe SystemConfig_V0_CPU
+title: SystemConfig_V0_CPU classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,14 +19,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6963201f76afa40e9b1741dc2936fa2ab4433a74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de3b63def40cb6ead40f6f4c95625603cfc581ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968328"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105989"
 ---
-# <a name="systemconfig_v0_cpu-class"></a>\_Classe SystemConfig V0 \_ CPU
+# <a name="systemconfig_v0_cpu-class"></a>Classe CPU SystemConfig \_ V0 \_
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.
 
@@ -50,20 +50,20 @@ class SystemConfig_V0_CPU : SystemConfig_V0
 
 ## <a name="members"></a>Members
 
-La classe **SystemConfig \_ V0 \_ CPU** ha questi tipi di membri:
+La **classe CPU SystemConfig \_ V0 \_** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **SystemConfig \_ V0 \_ CPU** ha queste proprietà.
+La **classe CPU SystemConfig \_ V0 \_** ha queste proprietà.
 
 <dl> <dt>
 
 **AllocationGranularity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -79,7 +79,7 @@ Granularità con cui viene allocata la memoria virtuale.
 **NomeComputer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -92,10 +92,10 @@ Nome del computer.
 
 </dd> <dt>
 
-**NomeDominio**
+**Domainname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -104,14 +104,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (7), **Max** (132)
 </dt> </dl>
 
-Nome del dominio in cui il computer è membro.
+Nome del dominio di cui il computer è membro.
 
 </dd> <dt>
 
 **MemSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -124,10 +124,10 @@ Quantità totale di memoria fisica disponibile per il sistema operativo.
 
 </dd> <dt>
 
-**MHz**
+**Mhz**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -143,7 +143,7 @@ Velocità massima del processore, in megahertz.
 **NumberOfProcessors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -159,7 +159,7 @@ Numero di processori nel computer.
 **PageSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -179,7 +179,7 @@ Dimensioni di una pagina di scambio, in byte.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 
