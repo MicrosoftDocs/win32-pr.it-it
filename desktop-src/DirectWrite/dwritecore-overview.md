@@ -6,12 +6,12 @@ keywords:
 - DWriteCore
 ms.topic: article
 ms.date: 04/22/2021
-ms.openlocfilehash: e80da37bb65cddaffabd67ae9e5b40e2433e64da
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 4ab8970172032f47b6e97da6d097d7c1bf33e976
+ms.sourcegitcommit: 133954d5dbcd5b2b3b50c8efd16cd101278fc1db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107955014"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108172503"
 ---
 # <a name="dwritecore-overview"></a>Panoramica di DWriteCore
 
@@ -41,13 +41,13 @@ DWriteCore fa parte di [ProjectUffio 0.5.](https://github.com/microsoft/ProjectR
 
 In Visual Studio fare clic su **Estensioni**  >  **Gestisci estensioni,** cercare *Project Extensions* e scaricare l'estensione Project Project Extensions. Chiudere e riaprire Visual Studio e seguire le istruzioni per installare l'estensione.
 
-Per altre informazioni, vedi [ProjectCompilare 0.5](https://github.com/microsoft/ProjectReunion/releases/tag/0.5.0)e [Compilare app desktop di Windows con Project 0.5.](/windows/apps/project-reunion/#set-up-your-development-environment)
+Per altre informazioni, vedere [ProjectUffio 0.5](https://github.com/microsoft/ProjectReunion/releases/tag/0.5.0)e [Configurare l'ambiente di sviluppo (per Project Project Project)](/windows/apps/project-reunion/get-started-with-project-reunion#set-up-your-development-environment).
 
 ### <a name="create-a-new-project"></a>Creare un nuovo progetto
 
 In Visual Studio creare un nuovo progetto dal modello di progetto App vuota, in pacchetto **(WinUI 3 in Desktop).** È possibile trovare il modello di progetto scegliendo il linguaggio: *C++.* platform: *ProjectNtassi*; Tipo di progetto: *Desktop.*
 
-Per altre informazioni, vedi [Modelli di progetto per WinUI 3.](/windows/apps/winui/winui3/winui-project-templates-in-visual-studio#project-templates-for-winui-3)
+Per altre informazioni, vedi [Introduzione a WinUI 3 per le app desktop.](/windows/apps/winui/winui3/get-started-winui3-for-desktop)
 
 ### <a name="install-the-microsoftprojectreuniondwrite-nuget-package"></a>Installare il pacchetto NuGet Microsoft.ProjectReunion.DWrite
 
@@ -79,7 +79,7 @@ La versione di DWriteCore attualmente disponibile fa parte di [Project Reunion 0
 - Tipi di carattere a colori.
 - Ottimizzazioni varie (pulizia della cache dei caratteri, caricatore di caratteri in memoria e così via).
 
-Una funzionalità banner è tipi di carattere a colori. I tipi di carattere a colori consentono di eseguire il rendering dei tipi di carattere con funzionalità di colore più sofisticate oltre a semplici colori singoli. Ad esempio, i tipi di carattere a colori sono ciò che consente di eseguire il rendering di emoji e tipi di carattere icona della barra degli strumenti (quest'ultimo viene usato da Office, ad esempio). I tipi di carattere a colori sono stati introdotti per la prima volta Windows 8.1, ma la funzionalità è stata ampiamente ampliata in Windows 10 versione 1607 (Aggiornamento dell'anniversario).
+Una funzionalità banner è tipi di carattere a colori. I tipi di carattere a colori consentono di eseguire il rendering dei tipi di carattere con funzionalità di colore più sofisticate oltre a semplici colori singoli. Ad esempio, i tipi di carattere a colori sono ciò che consente di eseguire il rendering di emoji e tipi di carattere icona della barra degli strumenti (quest'ultimo viene usato da Office, ad esempio). I tipi di carattere a colori sono stati introdotti per la prima volta in Windows 8.1, ma la funzionalità è stata ampiamente ampliata in Windows 10 versione 1607 (Aggiornamento dell'anniversario).
 
 Le operazioni di pulizia della cache dei tipi di carattere e del caricatore dei tipi di carattere in memoria consentono un caricamento più rapido dei tipi di carattere e miglioramenti della memoria.
 
@@ -87,7 +87,7 @@ Con queste funzionalità, è possibile iniziare immediatamente a sfruttare alcun
 
 ## <a name="our-invitation-to-you-as-a-directwrite-developer"></a>L'invito a microsoft come sviluppatore DirectWrite
 
-DWriteCore, insieme ad altri componenti di Project Associate, verrà sviluppato con apertura al feedback degli sviluppatori. Si invita l'utente a iniziare a esplorare DWriteCore e a fornire informazioni dettagliate o richieste sullo sviluppo di funzionalità nel [repository GitHub Project GitHub.](https://github.com/microsoft/ProjectReunion/)
+DWriteCore, insieme ad altri componenti di Project Associate, verrà sviluppato con apertura al feedback degli sviluppatori. Si invita a iniziare a esplorare DWriteCore e a fornire informazioni dettagliate o richieste sullo sviluppo di funzionalità nel [repository GitHub Project GitHub.](https://github.com/microsoft/ProjectReunion/)
 
 ## <a name="programming-with-dwritecore"></a>Programmazione con DWriteCore
 
@@ -106,7 +106,7 @@ Il `dwrite_core.h` file di intestazione definisce innanzitutto il token *DWRITE_
 
 ### <a name="apis-that-are-new-or-different-for-dwritecore"></a>API nuove o diverse per DWriteCore
 
-La superficie dell'API DWriteCore è in gran parte la stessa di [directwrite.](/windows/win32/api/_directwrite/) Esistono tuttavia un numero ridotto di nuove API attualmente presenti solo in DWriteCore.
+La superficie dell'API DWriteCore è in gran parte la stessa di [directwrite.](/windows/win32/api/_directwrite/) Esiste tuttavia un numero ridotto di nuove API attualmente presenti solo in DWriteCore.
 
 #### <a name="create-a-factory-object"></a>Creare un oggetto factory
 
@@ -139,7 +139,7 @@ DirectWrite ha un'interfaccia di destinazione di rendering bitmap che supporta i
 
 DWriteCore introduce quindi [**l'interfaccia IDWriteBitmapRenderTarget2**](./dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2.md) e il relativo metodo [**IDWriteBitmapRenderTarget2::GetBitmapData**](./dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md). Tale metodo accetta un parametro di tipo (puntatore a) [**DWRITE_BITMAP_DATA_BGRA32**](./dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32.md), che è un nuovo struct.
 
-L'applicazione crea una destinazione di rendering bitmap chiamando [IDWriteGdiInterop::CreateBitmapRenderTarget.](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget) In Windows, una destinazione di rendering bitmap incapsula un controller di dominio di memoria GDI con una bitmap GDI indipendente dal dispositivo (DIB) selezionata. [IDWriteBitmapRenderTarget::D rawGlyphRun](/windows/win32/api/dwrite/nf-dwrite-idwritebitmaprendertarget-drawglyphrun) esegue il rendering dei glifi nel DIB. DirectWrite esegue il rendering dei glifi senza passare attraverso GDI. L'applicazione può quindi ottenere **l'HDC** dalla destinazione di rendering bitmap e usare [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) per copiare i pixel in una **finestra HDC.**
+L'applicazione crea una destinazione di rendering bitmap chiamando [IDWriteGdiInterop::CreateBitmapRenderTarget.](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget) In Windows, una destinazione di rendering bitmap incapsula un controller di dominio di memoria GDI con una bitmap GDI indipendente dal dispositivo (DIB) selezionata al suo interno. [IDWriteBitmapRenderTarget::D rawGlyphRun](/windows/win32/api/dwrite/nf-dwrite-idwritebitmaprendertarget-drawglyphrun) esegue il rendering dei glifi nel DIB. DirectWrite esegue il rendering dei glifi senza passare attraverso GDI. L'applicazione può quindi ottenere **l'HDC** dalla destinazione di rendering bitmap e usare [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) per copiare i pixel in una **finestra HDC.**
 
 Nelle piattaforme non Windows, l'applicazione può comunque creare una destinazione di rendering bitmap, ma incapsula semplicemente una matrice di memoria di sistema senza **HDC** e senza DIB. Senza un **HDC,** l'applicazione deve avere un altro modo per ottenere i pixel della bitmap in modo che possa copiarli o usarli in altro modo. Anche in Windows, a volte è utile ottenere i dati pixel effettivi e viene illustrato il modo corrente per eseguire questa operazione nell'esempio di codice seguente.
 
@@ -201,6 +201,6 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
 
 #### <a name="other-api-differences-between-dwritecore-and-directwrite"></a>Altre differenze delle API tra DWriteCore e DirectWrite
 
-Alcune API sono solo stub o si comportano in modo diverso nelle piattaforme non Windows. Ad esempio, [IDWriteGdiInterop::CreateFontFaceFromHdc](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createfontfacefromhdc) restituisce **E_NOTIMPL** su piattaforme non Windows, poiché non esiste un **HDC** senza [GDI.](../gdi/windows-gdi.md)
+Alcune API sono solo stub o si comportano in modo leggermente diverso nelle piattaforme non Windows. Ad esempio, [IDWriteGdiInterop::CreateFontFaceFromHdc](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createfontfacefromhdc) restituisce **E_NOTIMPL** su piattaforme non Windows, poiché non esiste un **HDC** senza [GDI.](../gdi/windows-gdi.md)
 
 Infine, esistono alcune altre API di Windows che vengono in genere usate insieme a DirectWrite (Direct2D è un esempio di grande impatto). Tuttavia, attualmente Direct2D e DWriteCore non interagisce. Ad esempio, se si crea un [**oggetto IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usando DWriteCore e lo si passa a [**D2D1RenderTarget::D rawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout)la chiamata avrà esito negativo.

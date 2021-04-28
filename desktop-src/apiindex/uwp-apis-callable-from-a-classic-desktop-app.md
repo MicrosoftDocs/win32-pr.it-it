@@ -1,28 +1,18 @@
 ---
-description: La regola generale è che un'app desktop può chiamare un'API Windows Runtime (WinRT). Tuttavia, alcune API, incluse le API dell'interfaccia utente XAML, richiedono che l'app chiamante disponga di un'identità del pacchetto.
+description: La regola generale è che un'app desktop può chiamare un'API Windows Runtime (WinRT). Tuttavia, alcune API, incluse le API dell'interfaccia utente XAML, richiedono che l'app chiamante abbia un'identità del pacchetto.
 ms.assetid: F3808C28-72DE-49B5-A389-EB085EFC02CC
 title: API WinRT chiamabili da un'app desktop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9083fbfb16391c626f49b79176fed7a81068c028
-ms.sourcegitcommit: 0c786b1682063d0cae0fc43180945183fa2c7981
+ms.openlocfilehash: 36f99cca14c066f372ad7fd417e04137a62ae628
+ms.sourcegitcommit: 133954d5dbcd5b2b3b50c8efd16cd101278fc1db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "104047587"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108172483"
 ---
-# <a name="calling-winrt-apis-from-a-desktop-app"></a>Chiamata di API WinRT da un'app desktop
+# <a name="winrt-apis-callable-from-a-desktop-app"></a>API WinRT chiamabili da un'app desktop
 
-La regola generale è che un'app desktop può chiamare un'API WinRT. Tuttavia, alcune API, incluse le API dell'interfaccia utente XAML, richiedono che l'app chiamante disponga di un'identità del pacchetto. Le app UWP hanno un modello di app ben definito e hanno un'identità del pacchetto. Gli altri tipi di app desktop non includono un modello di app ben definito, né un'identità del pacchetto. Se quindi un'API richiede un'identità del pacchetto, un'app WPF, Windows Form o Win32 non può chiamarla a meno che l'app non [sia stata assemblata in un pacchetto MSIX](/windows/msix/desktop/desktop-to-uwp-root).
+La [maggior Windows Runtime (WinRT) può](/uwp/api/) essere usata dalle app desktop (.NET e C++native). Tuttavia, alcune classi WinRT sono progettate per e sono supportate solo per l'uso nelle app UWP. Sono inclusi [CoreDispatcher,](/uwp/api/Windows.UI.Core.CoreDispatcher) [CoreWindow,](/uwp/api/Windows.UI.Core.CoreWindow) [ApplicationView](/uwp/api/windows.ui.viewmanagement.applicationview)e alcune classi correlate. Altre classi WinRT funzionano nelle app desktop, ad eccezione di membri specifici.
 
-## <a name="the-dualapipartition-attribute"></a>Attributo DualApiPartition
-
-Questo è il processo da seguire ogni volta che è presente un particolare WinRT che si vuole chiamare dall'app desktop. Questo processo risponderà alla domanda se l'API può essere chiamata da un'app desktop. Per prima cosa, vedere le informazioni di [riferimento sulle API Windows per Windows Runtime app](/uwp/), trovare l'argomento di riferimento per la classe o l'API membro a cui si è interessati e verificare se l'attributo [**DualApiPartition**](/uwp/api/Windows.Foundation.Metadata.DualApiPartitionAttribute) è elencato nella sezione degli attributi.
-
-## <a name="if-the-dualapipartition-attribute-is-listed"></a>Se l'attributo DualApiPartition è elencato
-
-Se l'attributo DualApiPartition è elencato, l'API non richiede che l'app chiamante disponga di un'identità del pacchetto e che l'API possa essere chiamata da qualsiasi app desktop. [**Windows. Devices. Geolocation. Geolocator**](/uwp/api/Windows.Devices.Geolocation.Geolocator) è un esempio. non è necessario identificare in modo univoco un'app per eseguire le attività di posizione.
-
-## <a name="if-the-dualapipartition-attribute-is-not-listed"></a>Se l'attributo DualApiPartition non è elencato
-
-Se l'attributo DualApiPartition non è elencato, l'API richiede che l'app chiamante disponga di un'identità del pacchetto. Pertanto, un'app WPF, Windows Form o Win32 non è autorizzata a chiamare l'API, a meno che l'app non sia stata convertita in un'app UWP. [**Windows. UI. XAML. Controls. Button**](/uwp/api/Windows.UI.Xaml.Controls.Button) è un esempio.
+Per altre informazioni, vedere [Windows Runtime API non supportate nelle app desktop.](/windows/apps/desktop/modernize/desktop-to-uwp-supported-api) Se disponibile, questo articolo suggerisce API alternative per ottenere le stesse funzionalità delle API non supportate.
