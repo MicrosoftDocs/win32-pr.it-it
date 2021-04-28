@@ -1,7 +1,7 @@
 ---
-description: Regola il valore di saturazione di un colore.
+description: 'Funzione D3DXColorAdjustSaturation (D3DX10Math.h): regola il valore di saturazione di un colore.'
 ms.assetid: a7ca64b4-2198-4116-8e9f-79d6c922fd09
-title: Funzione D3DXColorAdjustSaturation (D3DX10Math. h)
+title: Funzione D3DXColorAdjustSaturation (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e6cfa4dd2af6e4a4ac3772af80ba11b8189405f2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e9ae91f5c898dae8ff922616bc02846732c760a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969456"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103539"
 ---
-# <a name="d3dxcoloradjustsaturation-function-d3dx10mathh"></a>Funzione D3DXColorAdjustSaturation (D3DX10Math. h)
+# <a name="d3dxcoloradjustsaturation-function-d3dx10mathh"></a>Funzione D3DXColorAdjustSaturation (D3DX10Math.h)
 
 Regola il valore di saturazione di un colore.
 
@@ -42,16 +42,16 @@ D3DXCOLOR* D3DXColorAdjustSaturation(
 
 <dl> <dt>
 
-*broncio* \[ in\]
+*pOut* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](../direct3d9/d3dxcolor.md)\***
 
-Puntatore a un [**D3DXCOLOR**](d3d10-d3dxcolor.md) che rappresenta il risultato dell'operazione.
+Puntatore a [**un oggetto D3DXCOLOR**](d3d10-d3dxcolor.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*computer* \[ in\]
+*pC* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](../direct3d9/d3dxcolor.md) \***
@@ -63,9 +63,9 @@ Puntatore a una struttura D3DXCOLOR di origine.
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore di saturazione. Questo parametro esegue l'interpolazione lineare tra il colore convertito in scala di grigi e il colore originale, pC. Non sono previsti limiti per il valore di s. Se s è 0, il colore restituito è il colore di scala di grigi. Se s è 1, il colore restituito è il colore originale.
+Valore di saturazione. Questo parametro interpola in modo lineare tra il colore convertito in gradazioni di grigio e il colore originale, pC. Non sono previsti limiti al valore di . Se s è 0, il colore restituito è il colore in scala di grigi. Se s è 1, il colore restituito è il colore originale.
 
 </dd> </dl>
 
@@ -77,11 +77,11 @@ Questa funzione restituisce un puntatore a una struttura D3DXCOLOR che è il ris
 
 ## <a name="remarks"></a>Commenti
 
-Il canale alfa di input viene copiato, non modificato, nel canale alfa di output.
+Il canale alfa di input viene copiato, senza modifiche, nel canale alfa di output.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, questa funzione può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, questa funzione può essere usata come parametro per un'altra funzione.
 
-Questa funzione interpola i componenti di colore rosso, verde e blu di una struttura D3DXCOLOR tra un colore insaturo e un colore, come illustrato nell'esempio seguente.
+Questa funzione interpola i componenti di colore rosso, verde e blu di una struttura D3DXCOLOR tra un colore non saturo e un colore, come illustrato nell'esempio seguente.
 
 
 ```
@@ -96,7 +96,7 @@ pOut->r = grey + s * (pC->r - grey);
 
 Se s è maggiore di 0 e minore di 1, la saturazione viene ridotta. Se s è maggiore di 1, la saturazione viene aumentata.
 
-Il colore della scala di grigi viene calcolato come segue:
+Il colore in scala di grigi viene calcolato come:
 
 
 ```
@@ -111,8 +111,8 @@ r = g = b = 0.2125*r + 0.7154*g + 0.0721*b;
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

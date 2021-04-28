@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CMediaType.CMediaType (Mtype.h) - Metodo costruttore.
 ms.assetid: 35198320-d028-42d4-823f-4f8346d8f977
-title: Costruttore CMediaType. CMediaType (mtype. h)-parametri cmtype e PHR
+title: 'Costruttore CMediaType.CMediaType (Mtype.h): parametri cmtype e phr'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a40929bb6f53df7ce721e20eefba3019eb71cb0e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: dd91252920c74d45e4218be3c3d03249a116bfcf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389065"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095419"
 ---
-# <a name="cmediatypecmediatype-constructor-mtypeh"></a>Costruttore CMediaType. CMediaType (mtype. h)
+# <a name="cmediatypecmediatype-constructor-mtypeh"></a>Costruttore CMediaType.CMediaType (Mtype.h)
 
 Metodo del costruttore.
 
@@ -46,20 +46,20 @@ CMediaType(
 *cmtype* \[ Ref\]
 </dt> <dd>
 
-Riferimento a un `CMediaType` oggetto. Il costruttore copia il tipo di supporto nel nuovo oggetto, incluso il blocco di formato, se disponibile.
+Riferimento a un `CMediaType` oggetto . Il costruttore copia il tipo di supporto nel nuovo oggetto, incluso il blocco di formato, se presente.
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve un valore HRESULT. Questo parametro può essere un puntatore **null** . In caso contrario, il chiamante deve impostare il valore su S \_ OK prima di chiamare il costruttore. Se il costruttore ha esito negativo, imposta il valore su un codice di errore.
+Puntatore a una variabile che riceve un valore HRESULT. Questo parametro può essere un **puntatore NULL.** In caso contrario, il chiamante deve impostare il valore su S \_ OK prima di chiamare il costruttore. Se il costruttore ha esito negativo, imposta il valore su un codice di errore.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il costruttore chiama il metodo [**CMediaType:: InitMediaType**](cmediatype-initmediatype.md) per inizializzare il tipo di supporto.
+Il costruttore chiama il [**metodo CMediaType::InitMediaType**](cmediatype-initmediatype.md) per inizializzare il tipo di supporto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Il costruttore chiama il metodo [**CMediaType:: InitMediaType**](cmediatype-init
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (include Streams.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

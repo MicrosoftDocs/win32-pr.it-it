@@ -1,7 +1,7 @@
 ---
-description: Contiene il numero di elementi nella raccolta.
+description: 'Proprietà FolderItemVerbs.Count : contiene il numero di elementi nella raccolta.'
 ms.assetid: a676593b-ea78-433d-a622-221028245c3a
-title: Proprietà FolderItemVerbs. Count (shldisp. h)
+title: Proprietà FolderItemVerbs.Count (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b41e78261dfc9bc72e9262615bc395a9d559e33a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5545ea64da914188226fbdabf7cc6301baa695af
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104994720"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089549"
 ---
-# <a name="folderitemverbscount-property"></a>Proprietà FolderItemVerbs. Count
+# <a name="folderitemverbscount-property"></a>FolderItemVerbs.Count - proprietà
 
 Contiene il numero di elementi nella raccolta.
 
@@ -37,13 +37,13 @@ iCount = FolderItemVerbs.Count
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Intero** che riceve la proprietà **count** .
+Integer **che** riceve la **proprietà Count.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **count** per recuperare il numero di verbi disponibili per la cartella del pannello di controllo. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **utilizzato Count** per recuperare il conteggio dei verbi disponibili per la Pannello di controllo cartella . Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -75,7 +75,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

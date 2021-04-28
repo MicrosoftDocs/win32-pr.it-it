@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CMemAllocator.CMemAllocator - Metodo costruttore.
 ms.assetid: 2340b39a-cab6-4524-b8cd-b22d4bdd24d0
-title: Costruttore CMemAllocator. CMemAllocator (Amfilter. h)
+title: Costruttore CMemAllocator.CMemAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b650e23761c3fe5b3f5014666f90c679f088c4a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1151572c32efe69cceb89e7a5ea5a045955b5f43
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327444"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095399"
 ---
-# <a name="cmemallocatorcmemallocator-constructor"></a>Costruttore CMemAllocator. CMemAllocator
+# <a name="cmemallocatorcmemallocator-constructor"></a>Costruttore CMemAllocator.CMemAllocator
 
 Metodo del costruttore.
 
@@ -44,24 +44,24 @@ CMemAllocator(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nome dell'allocatore.
+Puntatore a una stringa contenente il nome dell'allocatore.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario dell'oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve un valore **HRESULT** che indica l'esito positivo o negativo del metodo.
+Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito positivo o negativo del metodo.
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Puntatore a una variabile che riceve un valore **HRESULT** che indica l'esito po
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

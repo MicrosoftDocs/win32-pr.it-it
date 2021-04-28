@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo ConvertTimeFormat converte da un formato di ora a un altro. Questo metodo implementa il metodo IMediaSeeking:: ConvertTimeFormat.'
+description: 'Metodo CSourceSeeking.ConvertTimeFormat: il metodo ConvertTimeFormat esegue la conversione da un formato di ora a un altro. Questo metodo implementa il metodo IMediaSeeking::ConvertTimeFormat.'
 ms.assetid: d0cb44fa-30c1-41b4-92a4-7169161e3140
-title: Metodo CSourceSeeking. ConvertTimeFormat (Ctlutil. h)
+title: Metodo CSourceSeeking.ConvertTimeFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3869ef5bc9656414ca5b465a04d04a4ca4be41e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6ba5c6808e091f48baac7d8928e327f45773e13a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325660"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085249"
 ---
-# <a name="csourceseekingconverttimeformat-method"></a>CSourceSeeking. ConvertTimeFormat, metodo
+# <a name="csourceseekingconverttimeformat-method"></a>Metodo CSourceSeeking.ConvertTimeFormat
 
-Il `ConvertTimeFormat` metodo converte da un formato di ora a un altro. Questo metodo implementa il metodo [**IMediaSeeking:: ConvertTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-converttimeformat) .
+Il `ConvertTimeFormat` metodo converte da un formato di ora a un altro. Questo metodo implementa il [**metodo IMediaSeeking::ConvertTimeFormat.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-converttimeformat)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Puntatore a una variabile che riceve l'ora convertita.
 *pTargetFormat* 
 </dt> <dd>
 
-Puntatore al GUID del formato di destinazione. Se è **null**, viene utilizzato il formato corrente. Vedere [**GUID del formato ora**](time-format-guids.md).
+Puntatore al GUID del formato di destinazione. Se **NULL,** viene usato il formato corrente. Vedere [**GUID di formato dell'ora.**](time-format-guids.md)
 
 </dd> <dt>
 
@@ -69,21 +69,21 @@ Valore dell'ora da convertire.
 *pSourceFormat* 
 </dt> <dd>
 
-Puntatore al GUID del formato dell'ora del formato da convertire. Se è **null**, viene utilizzato il formato corrente.
+Puntatore al GUID del formato dell'ora del formato da convertire. Se **NULL,** viene usato il formato corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                          |
 |----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione riuscita<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione riuscita<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Argomento non valido<br/>          |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Argomento puntatore **null**<br/> |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | **Argomento puntatore NULL**<br/> |
 
 
 
@@ -91,7 +91,7 @@ Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-L'unico formato di ora supportato dalla classe base è il \_ tempo medio di formato dell'ora \_ \_ (unità 100-nanosecondi). Questo metodo restituisce E \_ INVALIDARG, eccetto nel caso più semplice in cui *PTargetFormat* e *pSourceFormat* specificano il tempo di supporto del \_ formato ora \_ \_ .
+L'unico formato di ora supportato dalla classe di base è TIME \_ FORMAT \_ MEDIA TIME \_ (unità da 100 nanosecondi). Questo metodo restituisce E INVALIDARG, ad eccezione del caso semplice in cui \_ *pTargetFormat* e *pSourceFormat* specificano entrambi TIME \_ FORMAT MEDIA \_ \_ TIME.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,8 +99,8 @@ L'unico formato di ora supportato dalla classe base è il \_ tempo medio di form
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CMediaSample.CMediaSample : metodo del costruttore.'
 ms.assetid: 3ee67cfd-a968-4b7c-9c7b-1c28ddb9c343
-title: Costruttore CMediaSample. CMediaSample (Amfilter. h)
+title: Costruttore CMediaSample.CMediaSample (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e4513af3b01d39f311fd1b8ecc1cea8f086d89c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fd2601b9f53e8f79d9231dd34054932bec4e671
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326408"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095439"
 ---
-# <a name="cmediasamplecmediasample-constructor"></a>Costruttore CMediaSample. CMediaSample
+# <a name="cmediasamplecmediasample-constructor"></a>Costruttore CMediaSample.CMediaSample
 
 Metodo del costruttore.
 
@@ -46,7 +46,7 @@ CMediaSample(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
 Ignorato.
@@ -56,11 +56,11 @@ Ignorato.
 *pAllocator* 
 </dt> <dd>
 
-Puntatore all'oggetto [**CBaseAllocator**](cbaseallocator.md) che ha creato l'esempio.
+Puntatore [**all'oggetto CBaseAllocator**](cbaseallocator.md) che ha creato questo esempio.
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
 Ignorato.
@@ -70,7 +70,7 @@ Ignorato.
 *pBuffer* 
 </dt> <dd>
 
-Puntatore a un buffer di memoria allocato dal chiamante, della *lunghezza* della dimensione.
+Puntatore a un buffer di memoria allocato dal chiamante, di lunghezza *.*
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Lunghezza del buffer di memoria.
 
 ## <a name="remarks"></a>Commenti
 
-La classe base non modifica il valore **HRESULT** passato nel parametro *PHR* .
+La classe base non modifica il **valore HRESULT** passato nel *parametro phr.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ La classe base non modifica il valore **HRESULT** passato nel parametro *PHR* .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

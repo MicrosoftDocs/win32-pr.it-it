@@ -1,7 +1,7 @@
 ---
-description: Proietta un vettore 3D dallo spazio oggetto nello spazio dello schermo.
+description: "Funzione D3DXVec3Project (D3dx9math.h): proietta un vettore 3D dallo spazio dell'oggetto allo spazio dello schermo."
 ms.assetid: b012771d-052f-4bf9-b39c-387d8a63fa59
-title: Funzione D3DXVec3Project (D3dx9math. h)
+title: Funzione D3DXVec3Project (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1c8198987b970fd6d79db3c73f715df4f0ac6981
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a5a9abcb54c883d74bde831570b9df0b40fedfae
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354699"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115649"
 ---
-# <a name="d3dxvec3project-function-d3dx9mathh"></a>Funzione D3DXVec3Project (D3dx9math. h)
+# <a name="d3dxvec3project-function-d3dx9mathh"></a>Funzione D3DXVec3Project (D3dx9math.h)
 
-Proietta un vettore 3D dallo spazio oggetto nello spazio dello schermo.
+Proietta un vettore 3D dallo spazio dell'oggetto nello spazio dello schermo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,57 +45,57 @@ D3DXVECTOR3* D3DXVec3Project(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore alla struttura [**D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> <dt>
 
-*pViewport* \[ in\]
+*pViewport* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DVIEWPORT9**](d3dviewport9.md) \***
 
-Puntatore a una struttura [**D3DVIEWPORT9**](d3dviewport9.md) che rappresenta il viewport.
+Puntatore a [**una struttura D3DVIEWPORT9**](d3dviewport9.md) che rappresenta il viewport.
 
 </dd> <dt>
 
-*pProjection* \[ in\]
+*pProjection* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) , che rappresenta la matrice di proiezione.
+Puntatore a una [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di proiezione.
 
 </dd> <dt>
 
-*pview* \[ in\]
+*pView* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di visualizzazione.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di visualizzazione.
 
 </dd> <dt>
 
-*pWorld* \[ in\]
+*pWorld* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) , che rappresenta la matrice mondiale.
+Puntatore a [**una struttura D3DXMATRIX,**](d3dxmatrix.md) che rappresenta la matrice globale.
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) , che rappresenta la m
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) che rappresenta il vettore proiettato dallo spazio oggetto allo spazio dello schermo.
+Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta il vettore proiettato dallo spazio oggetto allo spazio dello schermo.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec3Project** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec3Project** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,8 +115,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

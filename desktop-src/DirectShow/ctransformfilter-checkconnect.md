@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckConnect determina se una connessione pin è adatta.
+description: 'Metodo CTransformFilter.CheckConnect: il metodo CheckConnect determina se una connessione pin è adatta.'
 ms.assetid: 4bec4b19-3f7c-43d8-9a45-2eb2cc15a0d4
-title: Metodo CTransformFilter. CheckConnect (Transfrm. h)
+title: Metodo CTransformFilter.CheckConnect (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0d41c50323bae7cb4eaca52a87d8c1b936237ccd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5927aac2fa58322c93a23489a22dc96a1e2a67f0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325732"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085099"
 ---
-# <a name="ctransformfiltercheckconnect-method"></a>CTransformFilter. CheckConnect, metodo
+# <a name="ctransformfiltercheckconnect-method"></a>Metodo CTransformFilter.CheckConnect
 
 Il `CheckConnect` metodo determina se una connessione pin è adatta.
 
@@ -46,24 +46,24 @@ virtual HRESULT CheckConnect(
 *dir* 
 </dt> <dd>
 
-Membro del tipo enumerato di [**\_ direzione del pin**](/windows/win32/api/strmif/ne-strmif-pin_direction) , che specifica quale pin del filtro sta effettuando la connessione.
+Membro del [**tipo enumerato PIN \_ DIRECTION,**](/windows/win32/api/strmif/ne-strmif-pin_direction) che specifica quale pin nel filtro sta effettuando la connessione.
 
 </dd> <dt>
 
 *pPin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) dell'altro pin in questo tentativo di connessione.
+Puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) dell'altro pin in questo tentativo di connessione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-I metodi [**CTransformInputPin:: CheckConnect**](ctransforminputpin-checkconnect.md) e [**CTransformOutputPin:: CheckConnect**](ctransformoutputpin-checkconnect.md) chiamano questo metodo durante il processo di connessione del PIN. Questo metodo non esegue alcuna operazione nella classe di base. La classe derivata può eseguire l'override. La classe derivata può ad esempio eseguire una query sull'altro pin per una particolare interfaccia.
+I [**metodi CTransformInputPin::CheckConnect**](ctransforminputpin-checkconnect.md) e [**CTransformOutputPin::CheckConnect**](ctransformoutputpin-checkconnect.md) chiamano questo metodo durante il processo di connessione del pin. Questo metodo non esegue alcuna operazione nella classe di base. La classe derivata può eseguirne l'override. Ad esempio, la classe derivata potrebbe eseguire una query sull'altro pin per una particolare interfaccia.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ I metodi [**CTransformInputPin:: CheckConnect**](ctransforminputpin-checkconnect
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

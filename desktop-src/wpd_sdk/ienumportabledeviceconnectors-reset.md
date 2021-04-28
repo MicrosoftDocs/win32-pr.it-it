@@ -1,7 +1,7 @@
 ---
-description: Riporta all'inizio la sequenza di enumerazione.
+description: "Metodo IEnumPortableDeviceConnectors::Reset: reimposta la sequenza di enumerazione all'inizio."
 ms.assetid: 1df1ff95-06ae-4e5e-8064-17f832c5f0b3
-title: 'Metodo IEnumPortableDeviceConnectors:: Reset (Devpkey. h)'
+title: Metodo IEnumPortableDeviceConnectors::Reset (Devpkey.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGuids.lib
 - PortableDeviceGuids.dll
-ms.openlocfilehash: 3a6846ea928afb6cd52f20098cd100b94b3a564e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10a356fbb8591568a9f99d9b92d681a46754a960
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319089"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083208"
 ---
-# <a name="ienumportabledeviceconnectorsreset-method"></a>Metodo IEnumPortableDeviceConnectors:: Reset
+# <a name="ienumportabledeviceconnectorsreset-method"></a>Metodo IEnumPortableDeviceConnectors::Reset
 
-Il metodo **Reset** Reimposta l'inizio della sequenza di enumerazione.
+Il **metodo Reset** reimposta la sequenza di enumerazione all'inizio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -58,11 +58,11 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                                                                             |
+| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/>                                                                                                                             |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                                                                              |
-| Intestazione<br/>                   | <dl> <dt>Devpkey. h; </dt> <dt>PortableDeviceConnectApi. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>PortableDeviceConnectApi. idl</dt> </dl>                                                                |
-| Libreria<br/>                  | <dl> <dt>PortableDeviceGuids. lib</dt> </dl>                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Devpkey.h; </dt> <dt>Portabledeviceconnectapi.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Portabledeviceconnectapi.idl</dt> </dl>                                                                |
+| Libreria<br/>                  | <dl> <dt>PortableDeviceGuids.lib</dt> </dl>                                                                     |
 
 
 

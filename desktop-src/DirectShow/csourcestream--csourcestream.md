@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: 'Distruttore CSourceStream.~CSourceStream : metodo del distruttore.'
 ms.assetid: 678085c2-5999-4e62-8749-99b783787cc6
-title: Distruttore CSourceStream. ~ CSourceStream (source. h)
+title: Distruttore CSourceStream.~CSourceStream (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fa27d50a9c1acbc9c8a27407cb97673d60158e4a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bbf53184dadc42145758ab387d15e8b0a1bfe09d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329041"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085209"
 ---
-# <a name="csourcestreamcsourcestream-destructor"></a>Distruttore CSourceStream. ~ CSourceStream
+# <a name="csourcestreamcsourcestream-destructor"></a>Distruttore CSourceStream.~CSourceStream
 
 Metodo del distruttore.
 
@@ -38,7 +38,7 @@ Metodo del distruttore.
 
 ## <a name="remarks"></a>Osservazioni
 
-Il distruttore rimuove automaticamente il pin dal filtro proprietario, chiamando [**CSource:: RemovePin**](csource-removepin.md).
+Il distruttore rimuove automaticamente il segnaposto dal filtro proprietario chiamando [**CSource::RemovePin**](csource-removepin.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il distruttore rimuove automaticamente il pin dal filtro proprietario, chiamando
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_SerialPort : richiede una reimpostazione.'
 ms.assetid: 4f22c81e-323a-45ad-b81f-9fb3980e91f9
-title: Reimposta il metodo della classe Msvm_SerialPort
+title: Metodo Reset della classe Msvm_SerialPort
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8fce2fce74f17167b817d1a6a0fa019a93a04211
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b281b6e5ca4d9eb8fd3a4a69bfebe433d35a4ef
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130002"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109649"
 ---
-# <a name="reset-method-of-the-msvm_serialport-class"></a>Metodo Reset della \_ classe SerialPort MSVM
+# <a name="reset-method-of-the-msvm_serialport-class"></a>Metodo Reset della classe Msvm \_ SerialPort
 
 Richiede una reimpostazione.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**MSVM \_ SerialPort**](msvm-serialport.md)
+[**Msvm \_ SerialPort**](msvm-serialport.md)
 </dt> </dl>
 
  

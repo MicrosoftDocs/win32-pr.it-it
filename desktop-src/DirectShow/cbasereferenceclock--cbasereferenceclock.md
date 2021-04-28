@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: Distruttore CBaseReferenceClock.~CBaseReferenceClock - Metodo del distruttore.
 ms.assetid: 6ba6a3ad-bc4b-471d-a89c-e4d1682893fe
-title: Distruttore CBaseReferenceClock. ~ CBaseReferenceClock (Refclock. h)
+title: Distruttore CBaseReferenceClock.~CBaseReferenceClock (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 946afb27a7a60d9c18c0194dd30372023ccf8a1c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 531a5efb42b82a791ab4a526fe1c1d2834997f74
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330308"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095981"
 ---
-# <a name="cbasereferenceclockcbasereferenceclock-destructor"></a>Distruttore CBaseReferenceClock. ~ CBaseReferenceClock
+# <a name="cbasereferenceclockcbasereferenceclock-destructor"></a>Distruttore CBaseReferenceClock.~CBaseReferenceClock
 
 Metodo del distruttore.
 
@@ -42,8 +42,8 @@ Metodo del distruttore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Refclock. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Refclock.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo pause sospende l'acquisizione corrente.
+description: "Metodo IESP::P ause: il metodo Pause sospende l'acquisizione corrente."
 ms.assetid: efbc8947-b9fe-4dbd-8097-375b5f99845e
-title: Metodo IESP::P ause (Netmon. h)
+title: Metodo IESP::P ause (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 0558c5dfe36f26e3aad9f31101364d2e8e5c4967
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 486c7aedc7092e0dd0f9f68cc1ea2ccad08d9438
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525117"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084239"
 ---
-# <a name="iesppause-method"></a>IESP::P metodo ause
+# <a name="iesppause-method"></a>Metodo IESP::P ause
 
-Il metodo **pause** sospende l'acquisizione corrente.
+Il **metodo Pause** sospende l'acquisizione corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ Obsoleta.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -57,10 +57,10 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                           | Descrizione                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_acquisizione NMERR \_ sospesa**</dt> </dl> | Acquisizione già sospesa.<br/>                                                                                     |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl>  | L'oggetto NPP non sta acquisendo dati. Chiamare [IESP:: Start](iesp-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl>  | L'oggetto NPP non è connesso alla rete. Chiamare [IESP:: Connect](iesp-connect.md) per connettere l'oggetto NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non \_ ESP**</dt> </dl>        | L'oggetto NPP è connesso alla rete, ma non con il metodo [IESP:: Connect](iesp-connect.md) .<br/>                     |
+| <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl> | L'acquisizione è già sospesa.<br/>                                                                                     |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | Il NPP non acquisisce dati. Chiamare [IESP::Start](iesp-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | Il NPP non è connesso alla rete. Chiamare [IESP::Connect](iesp-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ ESP**</dt> </dl>        | Il NPP è connesso alla rete, ma non con il [metodo IESP::Connect.](iesp-connect.md)<br/>                     |
 
 
 
@@ -68,11 +68,11 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Mentre l'acquisizione si trova in uno stato di sospensione, i nuovi dati non vengono aggiunti al [*file di acquisizione*](c.md) corrente fino a quando non viene chiamato il metodo [IESP:: Resume](iesp-resume.md) per riavviare l'acquisizione. Quando si utilizzano **pause** e **Resume** per arrestare e riavviare l'acquisizione, tutte le informazioni acquisite vengono inserite nello stesso file di acquisizione.
+Mentre l'acquisizione è in pausa, i nuovi dati non vengono aggiunti al [*file*](c.md) di acquisizione corrente finché non si chiama il metodo [IESP::Resume](iesp-resume.md) per riavviare l'acquisizione. Quando **sospendi** **e** riprendi vengono usati per arrestare e riavviare l'acquisizione, tutte le informazioni acquisite vengono inserite nello stesso file di acquisizione.
 
-Quando si usano i metodi **IESP::P ause** e **IESP:: Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere [*statistiche di conversazione*](c.md) ogni volta che viene eseguita l'acquisizione.
+Quando si usano i metodi **IESP::P ause** e **IESP::Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione ogni volta che l'acquisizione è in esecuzione. [](c.md)
 
-Per riavviare l'acquisizione, chiamare [IESP:: Resume](iesp-resume.md). Per arrestare l'acquisizione, chiamare [IESP:: Stop](iesp-stop.md).
+Per riavviare l'acquisizione, chiamare [IESP::Resume](iesp-resume.md). Per arrestare l'acquisizione, chiamare [IESP::Stop](iesp-stop.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Per riavviare l'acquisizione, chiamare [IESP:: Resume](iesp-resume.md). Per arre
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -94,16 +94,16 @@ Per riavviare l'acquisizione, chiamare [IESP:: Resume](iesp-resume.md). Per arre
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP:: Connect](iesp-connect.md)
+[IESP::Connect](iesp-connect.md)
 </dt> <dt>
 
-[IESP:: Resume](iesp-resume.md)
+[IESP::Resume](iesp-resume.md)
 </dt> <dt>
 
-[IESP:: Start](iesp-start.md)
+[IESP::Start](iesp-start.md)
 </dt> <dt>
 
-[IESP:: Stop](iesp-stop.md)
+[IESP::Stop](iesp-stop.md)
 </dt> </dl>
 
  

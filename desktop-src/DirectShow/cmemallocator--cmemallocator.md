@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: Distruttore CMemAllocator.~CMemAllocator - Metodo del distruttore.
 ms.assetid: e0a04d93-fb77-4dc1-9bc8-7d3965bc6803
-title: Distruttore CMemAllocator. ~ CMemAllocator (Amfilter. h)
+title: Distruttore CMemAllocator.~CMemAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d49046eccd8d7ef71c4eeb4c75acffbf90f7d826
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43b0505ee34df72ab82e4204b08440ac1a2558b5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327448"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095409"
 ---
-# <a name="cmemallocatorcmemallocator-destructor"></a>Distruttore CMemAllocator. ~ CMemAllocator
+# <a name="cmemallocatorcmemallocator-destructor"></a>Distruttore CMemAllocator.~CMemAllocator
 
 Metodo del distruttore.
 
@@ -38,7 +38,7 @@ Metodo del distruttore.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo metodo esegue l'override del distruttore della classe base per chiamare [**CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) e [**CMemAllocator:: ReallyFree**](cmemallocator-reallyfree.md).
+Questo metodo esegue l'override del distruttore della classe base per chiamare [**CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) e [**CMemAllocator::ReallyFree**](cmemallocator-reallyfree.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Questo metodo esegue l'override del distruttore della classe base per chiamare [
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

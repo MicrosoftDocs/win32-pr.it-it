@@ -1,7 +1,7 @@
 ---
-description: Calcola il logaritmo naturale.
+description: 'Funzione D3DXQuaternionLn (D3DX10Math.h): calcola il logaritmo naturale.'
 ms.assetid: 576cf676-bb42-45ec-8e45-4612a7cdb167
-title: Funzione D3DXQuaternionLn (D3DX10Math. h)
+title: Funzione D3DXQuaternionLn (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 07b081e0e2063d18ab8f2bb010e2b436c38df097
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9abaaa231e424e55e496b7901882e9da17c59786
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323203"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103209"
 ---
-# <a name="d3dxquaternionln-function-d3dx10mathh"></a>Funzione D3DXQuaternionLn (D3DX10Math. h)
+# <a name="d3dxquaternionln-function-d3dx10mathh"></a>Funzione D3DXQuaternionLn (D3DX10Math.h)
 
 Calcola il logaritmo naturale.
 
@@ -41,16 +41,16 @@ D3DXQUATERNION* D3DXQuaternionLn(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PQ* \[ in\]
+*pQ* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
@@ -67,7 +67,7 @@ Puntatore a una struttura D3DXQUATERNION che rappresenta il logaritmo naturale.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione D3DXQuaternionLn funziona solo per i quaternioni dell'unità.
+La funzione D3DXQuaternionLn funziona solo per i quaternioni di unità.
 
 
 ```
@@ -78,7 +78,7 @@ The natural logarithm of Q is, ln(Q) = (0, theta * v)
 
 
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXQuaternionLn può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXQuaternionLn può essere usata come parametro per un'altra funzione.
 
 Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
@@ -88,8 +88,8 @@ Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

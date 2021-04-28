@@ -1,7 +1,7 @@
 ---
-description: Restituisce la versione normalizzata di un vettore 4D.
+description: 'Funzione D3DXVec4Normalize (D3DX10Math.h): restituisce la versione normalizzata di un vettore 4D.'
 ms.assetid: ed3c48cf-4985-4ef3-b733-f8532e3ff6b5
-title: Funzione D3DXVec4Normalize (D3DX10Math. h)
+title: Funzione D3DXVec4Normalize (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: ebedbdddbe558bfad71520b64aa0cf2ff4c2f451
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1577ff3109c2cc3ca547f68f7841ecebb2f03569
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355294"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102909"
 ---
-# <a name="d3dxvec4normalize-function-d3dx10mathh"></a>Funzione D3DXVec4Normalize (D3DX10Math. h)
+# <a name="d3dxvec4normalize-function-d3dx10mathh"></a>Funzione D3DXVec4Normalize (D3DX10Math.h)
 
 Restituisce la versione normalizzata di un vettore 4D.
 
@@ -40,16 +40,16 @@ D3DXVECTOR4* D3DXVec4Normalize(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntatore a [**D3DXVECTOR4**](d3d10-d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXVECTOR4**](d3d10-d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -66,7 +66,7 @@ Puntatore a una struttura D3DXVECTOR4 che rappresenta la versione normalizzata d
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXVec4Normalize può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXVec4Normalize può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

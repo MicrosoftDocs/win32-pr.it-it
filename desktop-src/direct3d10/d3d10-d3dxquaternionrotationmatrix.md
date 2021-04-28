@@ -1,7 +1,7 @@
 ---
-description: Compila un quaternione da una matrice di rotazione.
+description: 'Funzione D3DXQuaternionRotationMatrix (D3DX10Math.h): compila un quaternione da una matrice di rotazione.'
 ms.assetid: 316bf3e0-32ff-4e5e-b771-99f7eea2e27c
-title: Funzione D3DXQuaternionRotationMatrix (D3DX10Math. h)
+title: Funzione D3DXQuaternionRotationMatrix (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1caccf47e03388ffb85f2e12a5d0203f3fe839bd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cb923c135d436b36fe032d344366fdee687d27a0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235156"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103149"
 ---
-# <a name="d3dxquaternionrotationmatrix-function-d3dx10mathh"></a>Funzione D3DXQuaternionRotationMatrix (D3DX10Math. h)
+# <a name="d3dxquaternionrotationmatrix-function-d3dx10mathh"></a>Funzione D3DXQuaternionRotationMatrix (D3DX10Math.h)
 
 Compila un quaternione da una matrice di rotazione.
 
@@ -41,21 +41,21 @@ D3DXQUATERNION* D3DXQuaternionRotationMatrix(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3d10-d3dxmatrix.md) origine.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Puntatore alla struttura D3DXQUATERNION compilata da una matrice di rotazione.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXQuaternionRotationMatrix può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXQuaternionRotationMatrix può essere usata come parametro per un'altra funzione.
 
 Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
@@ -77,8 +77,8 @@ Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

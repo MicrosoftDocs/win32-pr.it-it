@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di proiezione ortogonale a destra.
+description: 'Funzione D3DXMatrixOrthoRH (D3DX10Math.h): compila una matrice di proiezione ortografica con la mano destra.'
 ms.assetid: e6673ff4-06a2-4a16-b72e-5ca69ddf2438
-title: Funzione D3DXMatrixOrthoRH (D3DX10Math. h)
+title: Funzione D3DXMatrixOrthoRH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2a8883f2690fa5a5f0bfa1bb1570163b714974b3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f1ab6069890bdffdedbd3e36caed1a93984fc2c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323212"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109149"
 ---
-# <a name="d3dxmatrixorthorh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoRH (D3DX10Math. h)
+# <a name="d3dxmatrixorthorh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoRH (D3DX10Math.h)
 
-Compila una matrice di proiezione ortogonale a destra.
+Compila una matrice di proiezione ortografica con la mano destra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,46 +44,46 @@ D3DXMATRIX* D3DXMatrixOrthoRH(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Larghezza del volume di visualizzazione.
+Larghezza del volume della vista.
 
 </dd> <dt>
 
 *h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Altezza del volume di visualizzazione.
+Altezza del volume della vista.
 
 </dd> <dt>
 
-*Zn* \[ in\]
+*zn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore z minimo del volume di visualizzazione.
 
 </dd> <dt>
 
-*ZF* \[ in\]
+*zf* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore z massimo del volume di visualizzazione.
 
@@ -93,13 +93,13 @@ Valore z massimo del volume di visualizzazione.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Commenti
 
 Tutti i parametri della funzione D3DXMatrixOrthoRH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixOrthoRH può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixOrthoRH può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -119,8 +119,8 @@ Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

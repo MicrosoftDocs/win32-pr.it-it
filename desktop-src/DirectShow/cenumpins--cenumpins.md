@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: 'Distruttore CEnumPins.~CEnumPins : metodo del distruttore.'
 ms.assetid: 21845996-8c00-4f00-adcf-1bec67cfc235
-title: Distruttore CEnumPins. ~ CEnumPins (Amfilter. h)
+title: Distruttore CEnumPins.~CEnumPins (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 450c28c25305f47eb04f4f1fd17b8f123d37fb71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2e09f47d1fe6bf3f50b54661b363921d11c49e2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329841"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095659"
 ---
-# <a name="cenumpinscenumpins-destructor"></a>Distruttore CEnumPins. ~ CEnumPins
+# <a name="cenumpinscenumpins-destructor"></a>Distruttore CEnumPins.~CEnumPins
 
 Metodo del distruttore.
 
@@ -42,8 +42,8 @@ virtual ~CEnumPins();
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

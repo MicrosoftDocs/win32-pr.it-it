@@ -1,7 +1,7 @@
 ---
-description: Trasforma un vettore 4D in base a una matrice specificata.
+description: 'Funzione D3DXVec4Transform (D3DX10Math.h): trasforma un vettore 4D in base a una determinata matrice.'
 ms.assetid: ccbf33bc-1f94-4cf8-b048-220d54516e00
-title: Funzione D3DXVec4Transform (D3DX10Math. h)
+title: Funzione D3DXVec4Transform (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 56fc6b3041d799cda3e98d459b2523d4b171df10
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 737e1901a514a3940790ce83c7e9bc1f6f471371
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886275"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102919"
 ---
-# <a name="d3dxvec4transform-function-d3dx10mathh"></a>Funzione D3DXVec4Transform (D3DX10Math. h)
+# <a name="d3dxvec4transform-function-d3dx10mathh"></a>Funzione D3DXVec4Transform (D3DX10Math.h)
 
-Trasforma un vettore 4D in base a una matrice specificata.
+Trasforma un vettore 4D in base a una determinata matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ D3DXVECTOR4* D3DXVec4Transform(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
@@ -50,7 +50,7 @@ Puntatore a [**D3DXVECTOR4**](d3d10-d3dxvector4.md) che rappresenta il risultato
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -59,12 +59,12 @@ Puntatore alla struttura D3DXVECTOR4 di origine.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3d10-d3dxmatrix.md) origine.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Puntatore a una struttura D3DXVECTOR4 che rappresenta il vettore 4D trasformato.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXVec4Transform può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXVec4Transform può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
