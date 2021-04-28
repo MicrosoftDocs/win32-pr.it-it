@@ -1,23 +1,23 @@
 ---
-description: Specifica il bordo sinistro, in pixel, del rettangolo di origine.
+description: 'MFPKEY_COLORCONV_SRCLEFT proprietà : specifica il bordo sinistro del rettangolo di origine, in pixel.'
 ms.assetid: d5450ff9-085f-4345-87af-bf6c87931755
-title: Proprietà MFPKEY_COLORCONV_SRCLEFT (Wmcodecdsp. h)
+title: MFPKEY_COLORCONV_SRCLEFT proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddbc6bed8a3c41ebeff2f9c4f6dbb2bbb351e74f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c3168125390cef6472ebc6ae6bf71ea426976c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227024"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092969"
 ---
-# <a name="mfpkey_colorconv_srcleft-property"></a>MFPKEY \_ COLORCONV- \_ Proprietà SRCLEFT
+# <a name="mfpkey_colorconv_srcleft-property"></a>Proprietà MFPKEY \_ COLORCONV \_ SRCLEFT
 
-Specifica il bordo sinistro, in pixel, del rettangolo di origine.
+Specifica il bordo sinistro del rettangolo di origine, in pixel.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Convertitore di colori DSP](colorconverter.md)
+-   [DSP convertitore di colori](colorconverter.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                             |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

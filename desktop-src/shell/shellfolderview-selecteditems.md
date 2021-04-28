@@ -1,6 +1,6 @@
 ---
-description: Ottiene un oggetto FolderItems che rappresenta tutti gli elementi selezionati nella visualizzazione.
-title: Metodo ShellFolderView. SelectedItems (shldisp. h)
+description: 'Metodo ShellFolderView.SelectedItems: ottiene un oggetto FolderItems che rappresenta tutti gli elementi selezionati nella visualizzazione.'
+title: Metodo ShellFolderView.SelectedItems (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1ee3bf2e-f9c9-47d9-a0f2-efedd69770c5
-ms.openlocfilehash: c6ade3a6e25d5de6bfa1661207473dac72ace2bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54cf67f1b75ae9d6423b02d0cacdde032ad2e018
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995000"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083379"
 ---
-# <a name="shellfolderviewselecteditems-method"></a>ShellFolderView. SelectedItems (metodo)
+# <a name="shellfolderviewselecteditems-method"></a>Metodo ShellFolderView.SelectedItems
 
-Ottiene un oggetto [**FolderItems**](folderitems.md) che rappresenta tutti gli elementi selezionati nella visualizzazione.
+Ottiene un [**oggetto FolderItems**](folderitems.md) che rappresenta tutti gli elementi selezionati nella visualizzazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,15 +41,15 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **FolderItems**](folderitems.md)\*\***
 
-Riferimento all'oggetto [**FolderItems**](folderitems.md) .
+Riferimento all'oggetto [**FolderItems.**](folderitems.md)
 
 ## <a name="remarks"></a>Commenti
 
-È possibile chiamare **SelectedItems** solo sul sistema locale. Non funzionerà se eseguita in una pagina Web su HTTP o UNC.
+**SelectedItems** può essere chiamato solo nel sistema locale. Non funzionerà quando viene eseguito in una pagina Web tramite HTTP o UNC.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo in JScript incorporato in HTML.
+L'esempio seguente illustra l'uso corretto di questo metodo in JScript incorporato in HTML.
 
 
 ```JScript
@@ -103,11 +103,11 @@ Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo in J
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

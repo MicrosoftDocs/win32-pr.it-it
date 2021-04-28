@@ -1,17 +1,17 @@
 ---
-description: Un'operazione è stata interrotta a causa di un errore.
+description: "EC_ERRORABORT: un'operazione è stata interrotta a causa di un errore."
 ms.assetid: b41546ce-cfac-4cc3-a9ad-413ae2d5d6d5
-title: EC_ERRORABORT (dshow. h)
+title: EC_ERRORABORT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b811e5a7f7b500cbffb82502abe60aecc75241ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 228753e49c99ebf9f851295b7cf8db160bcc2bd7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328027"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119739"
 ---
-# <a name="ec_errorabort"></a>\_ERRORABORT EC
+# <a name="ec_errorabort"></a>EC \_ ERRORABORT
 
 Un'operazione è stata interrotta a causa di un errore.
 
@@ -35,7 +35,7 @@ Zero.
 
 ## <a name="default-action"></a>Azione predefinita
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando l'oggetto InkCollector rileva un pulsante del cursore.
+description: "Evento InkPicture.CursorButtonUp: si verifica quando InkCollector rileva un pulsante del cursore verso l'alto."
 ms.assetid: bb10b032-a88d-4b52-9062-c0b63dfe98e9
-title: Evento InkPicture. CursorButtonUp (Msinkaut. h)
+title: Evento InkPicture.CursorButtonUp (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6dbee586b3179f35593c95c2d62109a379c3216
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 639d0cbd89e2ca44d8855b6508c5284f59a7c654
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884370"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086659"
 ---
-# <a name="inkpicturecursorbuttonup-event"></a>Evento InkPicture. CursorButtonUp
+# <a name="inkpicturecursorbuttonup-event"></a>Evento InkPicture.CursorButtonUp
 
-Si verifica quando l'oggetto [**InkCollector**](inkcollector-class.md) rileva un pulsante del cursore.
+Si verifica quando [**InkCollector rileva**](inkcollector-class.md) un pulsante del cursore verso l'alto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,14 +31,14 @@ void CursorButtonUp(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorButtonUp** .
+Oggetto [**interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorButtonUp.**
 
 </dd> <dt>
 
-*Pulsante* \[ in\]
+*Pulsante* \[ Pollici\]
 </dt> <dd>
 
 Pulsante rilasciato.
@@ -51,11 +51,11 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Quando l'utente completa un tratto e solleva la penna dal digitalizzatore, viene applicato un pulsante su una penna. Quando il pulsante non è premuto, viene attivato un pulsante su un barino.
+Un pulsante sulla punta di una penna è in alto quando l'utente completa un tratto e solleva la penna dal digitalizzatore. Quando il pulsante non è premuto, è disponibile un pulsante su una freccia verso l'alto.
 
-Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due eventi **CursorButtonUp** , uno per il pulsante destro e uno per il pulsante sinistro.
+Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due eventi **CursorButtonUp:** uno per il pulsante destro verso l'alto e uno per il pulsante sinistro in alto.
 
-Questo metodo di evento viene definito in **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** dispinterfaces con ID DISPID \_ ICECursorButtonUp.
+Questo metodo di evento è definito nelle interfacce dispatch **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con ID \_ DISPID ICECursorButtonUp.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Questo metodo di evento viene definito in **\_ IInkCollectorEvents**, **\_ IInkO
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -74,7 +74,7 @@ Questo metodo di evento viene definito in **\_ IInkCollectorEvents**, **\_ IInkO
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> <dt>
 
 [**Evento CursorButtonDown**](inkpicture-cursorbuttondown.md)

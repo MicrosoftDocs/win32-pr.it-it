@@ -1,7 +1,7 @@
 ---
-description: Il metodo Stop arresta l'acquisizione corrente.
+description: "Metodo IRTC::Stop: il metodo Stop arresta l'acquisizione corrente."
 ms.assetid: 64a80ff1-5a48-4be8-835d-a3d304ebb324
-title: 'Metodo IRTC:: Stop (Netmon. h)'
+title: Metodo IRTC::Stop (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: f25bf9d56a6f41acefad9a552dd2f591158bc74e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10bf0886032c93288435ade05fec46077d53753c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310500"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113519"
 ---
-# <a name="irtcstop-method"></a>Metodo IRTC:: Stop
+# <a name="irtcstop-method"></a>Metodo IRTC::Stop
 
-Il metodo **Stop** arresta l'acquisizione corrente.
+Il **metodo Stop** arresta l'acquisizione corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -48,9 +48,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl> | L'oggetto NPP non è connesso alla rete. Chiamare [IRTC:: Connect](irtc-connect.md) per connettere l'oggetto NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl> | L'oggetto NPP non sta acquisendo dati. Chiamare [IRTC:: Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ non in \_ tempo reale**</dt> </dl>  | L'oggetto NPP è connesso alla rete, ma non con il metodo [IRTC:: Connect](irtc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete. Chiamare [IRTC::Connect](irtc-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl> | Il NPP non acquisisce dati. Chiamare [IRTC::Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>  | Il NPP è connesso alla rete, ma non con il [metodo IRTC::Connect.](irtc-connect.md)<br/>                     |
 
 
 
@@ -58,7 +58,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Quando si riavvia l'acquisizione dopo aver chiamato il metodo **IRTC:: Stop** , assicurarsi di chiamare [IRTC:: Configure](irtc-configure.md) ogni volta che si chiama [IRTC:: Start](irtc-start.md) per riavviare l'acquisizione.
+Quando si riavvia l'acquisizione dopo aver chiamato il metodo **IRTC::Stop,** assicurarsi di chiamare [IRTC::Configure](irtc-configure.md) ogni volta che si chiama [IRTC::Start](irtc-start.md) per riavviare l'acquisizione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Quando si riavvia l'acquisizione dopo aver chiamato il metodo **IRTC:: Stop** , 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -80,13 +80,13 @@ Quando si riavvia l'acquisizione dopo aver chiamato il metodo **IRTC:: Stop** , 
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: Connect](irtc-connect.md)
+[IRTC::Connect](irtc-connect.md)
 </dt> <dt>
 
-[IRTC:: Configure](irtc-configure.md)
+[IRTC::Configure](irtc-configure.md)
 </dt> <dt>
 
-[IRTC:: Start](irtc-start.md)
+[IRTC::Start](irtc-start.md)
 </dt> </dl>
 
  

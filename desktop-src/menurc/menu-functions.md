@@ -1,15 +1,15 @@
 ---
 title: Funzioni di menu
-description: .
+description: Funzioni di menu
 ms.assetid: c40719aa-3735-4f46-88f7-6cc20b088ad4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea264d2c0bf34176da47d4948e9201cb157690af
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12e55dec7532d30749d709f815b232ad3bcc6419
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856237"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087569"
 ---
 # <a name="menu-functions"></a>Funzioni di menu
 
@@ -36,12 +36,12 @@ ms.locfileid: "103856237"
 -   [**GetMenuItemRect**](/windows/desktop/api/Winuser/nf-winuser-getmenuitemrect)
 -   [**GetMenuState**](/windows/desktop/api/Winuser/nf-winuser-getmenustate)
 -   [**GetMenuString**](/windows/desktop/api/Winuser/nf-winuser-getmenustringa)
--   [**Getsottomenù**](/windows/desktop/api/Winuser/nf-winuser-getsubmenu)
+-   [**GetSubMenu**](/windows/desktop/api/Winuser/nf-winuser-getsubmenu)
 -   [**GetSystemMenu**](/windows/desktop/api/Winuser/nf-winuser-getsystemmenu)
 -   [**HiliteMenuItem**](/windows/desktop/api/Winuser/nf-winuser-hilitemenuitem)
 -   [**InsertMenu**](/windows/desktop/api/Winuser/nf-winuser-insertmenua)
 -   [**InsertMenuItem**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema)
--   [**Menu di scelta rapida**](/windows/desktop/api/Winuser/nf-winuser-ismenu)
+-   [**IsMenu**](/windows/desktop/api/Winuser/nf-winuser-ismenu)
 -   [**LoadMenu**](/windows/desktop/api/Winuser/nf-winuser-loadmenua)
 -   [**LoadMenuIndirect**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 -   [**MenuItemFromPoint**](/windows/desktop/api/Winuser/nf-winuser-menuitemfrompoint)
@@ -55,9 +55,9 @@ ms.locfileid: "103856237"
 -   [**TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu)
 -   [**TrackPopupMenuEx**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenuex)
 
- 
+ 
 
- 
+ 
 
 
 

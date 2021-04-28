@@ -1,21 +1,21 @@
 ---
-title: API Windows Media streaming
-description: .
+title: Windows Media Streaming API
+description: Windows Media Streaming API
 ms.assetid: 24b2824b-59ea-4479-80c3-f4515285edfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26dfb43e132c4d0685bbfe34725248e015493711
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 703720c596f3c53adbcc40ae078673934644dc8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298421"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087589"
 ---
-# <a name="windows-media-streaming-api"></a>API Windows Media streaming
+# <a name="windows-media-streaming-api"></a>Windows Media Streaming API
 
 ## <a name="purpose"></a>Scopo
 
-L'API di streaming multimediale modella i dispositivi Digital Media Renderer (ricevitore) e Digital Media Server (DMS) in base a quanto definito dalle linee guida DLNA per semplificare l'uso a livello di codice, consentendo agli sviluppatori di creare applicazioni con le funzionalità Digital Media Controller (DMC), Digital Media Player (DMP) e Push controller (+ PU +), come definito dalle linee guida per DLNA.
+L'API Di streaming multimediale modella i dispositivi DmR (Digital Media Renderer) e Digital Media Server (DMS) in base alle linee guida DLNA per un facile uso a livello di codice, consentendo agli sviluppatori di creare applicazioni con le funzionalità Digital Media Controller (DMC), Digital Media Player (DMP) e Push Controller (+PU+), come definito dalle linee guida DLNA.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,12 +23,12 @@ L'API di streaming multimediale modella i dispositivi Digital Media Renderer (ri
 
 | Argomento                                       | Descrizione                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------------------|
-| [Classi](classes.md)<br/>           | L'API di streaming multimediale fornisce le classi seguenti. <br/>                 |
-| [Delegati](delegates.md)<br/>       | L'API di streaming multimediale fornisce le funzioni del gestore eventi seguenti. <br/> |
-| [Enumerazioni](enumerations.md)<br/> | L'API di streaming multimediale fornisce le enumerazioni seguenti. <br/>            |
-| [Eventi](events.md)<br/>             | L'API di streaming multimediale genera gli eventi seguenti.<br/>                  |
-| [Interfacce](interfaces.md)<br/>     | L'API di streaming multimediale fornisce le interfacce seguenti.<br/>               |
-| [Strutture](structures.md)<br/>     | L'API di streaming multimediale fornisce le seguenti strutture.<br/>               |
+| [Classi](classes.md)<br/>           | L'API Streaming multimediale fornisce le classi seguenti. <br/>                 |
+| [Delegati](delegates.md)<br/>       | L'API Streaming multimediale fornisce le funzioni del gestore eventi seguenti. <br/> |
+| [Enumerazioni](enumerations.md)<br/> | L'API Streaming multimediale fornisce le enumerazioni seguenti. <br/>            |
+| [Eventi](events.md)<br/>             | L'API Streaming multimediale genera gli eventi seguenti.<br/>                  |
+| [Interfacce](interfaces.md)<br/>     | L'API Streaming multimediale fornisce le interfacce seguenti.<br/>               |
+| [Strutture](structures.md)<br/>     | L'API Streaming multimediale fornisce le strutture seguenti.<br/>               |
 
 
 
@@ -36,7 +36,7 @@ L'API di streaming multimediale modella i dispositivi Digital Media Renderer (ri
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-L'API di streaming multimediale è progettata per l'uso da parte degli sviluppatori C++ per la creazione di applicazioni multimediali digitali che interagiscono con i dispositivi DLNA.
+L'API Streaming multimediale è progettata per l'uso da parte degli sviluppatori C++ che creano applicazioni multimediali digitali che interagiscono con i dispositivi DLNA.
 
  
 

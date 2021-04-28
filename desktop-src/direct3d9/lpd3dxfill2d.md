@@ -1,15 +1,15 @@
 ---
-description: Tipo di funzione usato dalle funzioni di riempimento della trama.
+description: 'LPD3DXFILL2D: tipo di funzione usato dalle funzioni di riempimento della trama.'
 ms.assetid: faa2d610-cf85-42d0-833c-a46fb7fe3dbf
 title: LPD3DXFILL2D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c8c9d9ef610ee10faa069841a05f43c17b0885c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8046c324511f2b308243d62fec1b6508a1d483ed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104225352"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087969"
 ---
 # <a name="lpd3dxfill2d"></a>LPD3DXFILL2D
 
@@ -31,11 +31,11 @@ typedef VOID (WINAPI *LPD3DXFILL2D)(
 
 ## <a name="parameters"></a>Parametri
 
-Puntatore broncio a un vettore, usato dalla funzione per restituirne il risultato. Verrà eseguito il mapping di X, Y, Z e W rispettivamente a R, G, B e A.
+pOut: puntatore a un vettore, che la funzione usa per restituire il risultato. X, Y, Z e W verranno mappati rispettivamente a R, G, B e A.
 
-pTexCoord: puntatore a un vettore che contiene le coordinate del Texel attualmente in fase di valutazione. I componenti delle coordinate di trama per trama e trama del volume variano da 0 a 1. I componenti delle coordinate di trama per le trame del cubo variano da-1 a 1.
+pTexCoord: puntatore a un vettore contenente le coordinate del texel attualmente valutato. I componenti delle coordinate di trama per le trame di trama e volume sono da 0 a 1. I componenti delle coordinate di trama per le trame dei cubi sono da -1 a 1.
 
-pTexelSize: puntatore a un vettore che contiene le dimensioni del Texel corrente.
+pTexelSize: puntatore a un vettore contenente le dimensioni del texel corrente.
 
 pData: puntatore ai dati utente.
 
@@ -45,14 +45,14 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Assicurarsi di specificare la convenzione di chiamata per i [**tipi di dati di Windows**](../winprog/windows-data-types.md) quando si dichiara la funzione di callback. In caso contrario, è possibile che si verifichino overflow dello stack.
+Assicurarsi di specificare la convenzione [**di chiamata dei tipi di dati Windows**](../winprog/windows-data-types.md) quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
 
 
 
 |                          |            |
 |--------------------------|------------|
-| Intestazione                   | d3dx9tex. h |
-| Libreria di importazione           | d3dx9. lib  |
+| Intestazione                   | d3dx9tex.h |
+| Libreria di importazione           | d3dx9.lib  |
 | Sistema operativo minimo | Windows 98 |
 
 

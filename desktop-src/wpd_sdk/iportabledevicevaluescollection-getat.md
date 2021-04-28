@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetA recupera un elemento dalla raccolta in base a un indice in base zero.
+description: 'Metodo IPortableDeviceValuesCollection::GetAt: il metodo GetAt recupera un elemento dalla raccolta in base a un indice in base zero.'
 ms.assetid: b219b052-a74b-466a-a2ee-d2e9c466f393
-title: 'Metodo IPortableDeviceValuesCollection:: GetA (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValuesCollection::GetAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: ffbc65f39aab63189aa451005008f585c46bd8d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2ad10a7b9cc3c252a0cee4cb71df05cb108e0a18
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324511"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083259"
 ---
-# <a name="iportabledevicevaluescollectiongetat-method"></a>IPortableDeviceValuesCollection:: GetA (metodo)
+# <a name="iportabledevicevaluescollectiongetat-method"></a>Metodo IPortableDeviceValuesCollection::GetAt
 
-Il metodo **Geta** recupera un elemento dalla raccolta in base a un indice in base zero.
+Il **metodo GetAt** recupera un elemento dalla raccolta in base a un indice in base zero.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,32 +41,32 @@ HRESULT GetAt(
 
 <dl> <dt>
 
-*dwIndex* \[ in\]
+*dwIndex* \[ Pollici\]
 </dt> <dd>
 
-**DWORD** che specifica un indice in base zero nella raccolta.
+**Valore DWORD** che specifica un indice in base zero nella raccolta.
 
 </dd> <dt>
 
-*ppValues* \[ out\]
+*valori ppValues* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore a un'interfaccia [**IPortableDeviceValues**](iportabledevicevalues.md) dalla raccolta. Il chiamante è responsabile della richiamata della **versione** su questa interfaccia quando viene eseguita.
+Indirizzo di una variabile che riceve un puntatore a [**un'interfaccia IPortableDeviceValues**](iportabledevicevalues.md) dalla raccolta. Il chiamante è responsabile della chiamata **di Release** su questa interfaccia al termine dell'operazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                                                      |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è riuscito.<br/>                                                 |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | L'indice in base zero passato non era compreso nell'intervallo.<br/>             |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Un argomento obbligatorio del puntatore è **null**.<br/>                             |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl> | La raccolta contiene un puntatore **IPortableDeviceValues** **null** .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è riuscito.<br/>                                                 |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | L'indice in base zero passato non è compreso nell'intervallo.<br/>             |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | Un argomento del puntatore obbligatorio era **NULL.**<br/>                             |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | La raccolta contiene un **puntatore** **NULL IPortableDeviceValues.**<br/> |
 
 
 
@@ -82,8 +82,8 @@ Tutte le modifiche apportate ai valori nell'interfaccia recuperata verranno appo
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetTotalStatistics recupera le statistiche totali per l'acquisizione corrente.
+description: "Metodo IDelaydC::GetTotalStatistics: il metodo GetTotalStatistics recupera le statistiche totali per l'acquisizione corrente."
 ms.assetid: 904c7496-5603-41b9-8481-06fa31f6f112
-title: 'Metodo IDelaydC:: GetTotalStatistics (Netmon. h)'
+title: Metodo IDelaydC::GetTotalStatistics (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 0d194426933532fcf7a1965ed59b099489eefcb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3a0ce4f230236e276fede528a5e778ecafd51fb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401604"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113529"
 ---
-# <a name="idelaydcgettotalstatistics-method"></a>Metodo IDelaydC:: GetTotalStatistics
+# <a name="idelaydcgettotalstatistics-method"></a>Metodo IDelaydC::GetTotalStatistics
 
-Il metodo **GetTotalStatistics** recupera le [*statistiche totali*](t.md) per l' [*acquisizione*](c.md)corrente.
+Il **metodo GetTotalStatistics** recupera le [*statistiche totali per*](t.md) l'acquisizione [*corrente.*](c.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,23 +41,23 @@ HRESULT STDMETHODCALLTYPE GetTotalStatistics(
 
 <dl> <dt>
 
-*lpStats* \[ out\]
+*lpStats* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura di [statistiche](statistics.md)che fornisce le statistiche totali per l'acquisizione. È responsabilità del chiamante allocare e liberare la memoria usata dalla struttura delle **statistiche** .
+Puntatore a una [struttura STATISTICS](statistics.md)che fornisce le statistiche totali per l'acquisizione. È responsabilità del chiamante allocare e liberare la memoria usata dalla **struttura STATISTICS.**
 
 </dd> <dt>
 
-*fClearAfterReading* \[ in\]
+*fClearAfterReading* \[ Pollici\]
 </dt> <dd>
 
-Flag utilizzato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. Un'impostazione di **true** indica Network Monitor per cancellare l'archiviazione interna delle statistiche totali dopo che sono state recuperate le informazioni correnti.
+Flag usato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. L'impostazione **TRUE** indica Network Monitor cancellare lo spazio di archiviazione interno delle statistiche totali dopo il recupero delle informazioni correnti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -65,9 +65,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl> | L'oggetto NPP non è connesso alla rete. Chiamare [IDelaydC:: Connect](idelaydc-connect.md) per connettersi alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non \_ ritardato**</dt> </dl>   | L'oggetto NPP è connesso alla rete, ma non con il metodo [IDelaydC:: Connect](idelaydc-connect.md) .<br/>             |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl> | L'oggetto NPP non sta acquisendo dati. Chiamare [IDelaydC:: Start](idelaydc-start.md) per avviare l'acquisizione dei dati.<br/>                 |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete. Chiamare [IDelaydC::Connect](idelaydc-connect.md) per connettersi alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>   | Il NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connect.](idelaydc-connect.md)<br/>             |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl> | Il NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione dei dati.<br/>                 |
 
 
 
@@ -75,9 +75,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce i dati solo mentre è in corso un'acquisizione. Quando l'acquisizione viene sospesa, le chiamate a questo metodo non riusciranno.
+Questo metodo restituisce i dati solo mentre è in corso un'acquisizione. Quando l'acquisizione viene sospesa, le chiamate a questo metodo non avranno esito positivo.
 
-Network Monitor archivia anche le [*statistiche di conversazione*](c.md), che possono essere recuperate chiamando il metodo [IDelaydC:: GetConversationStatistics](idelaydc-getconversationstatistics.md) .
+Network Monitor anche le [*statistiche*](c.md)della conversazione, che possono essere recuperate chiamando il metodo [IDelaydC::GetConversationStatistics.](idelaydc-getconversationstatistics.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,7 +87,7 @@ Network Monitor archivia anche le [*statistiche di conversazione*](c.md), che po
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -99,13 +99,13 @@ Network Monitor archivia anche le [*statistiche di conversazione*](c.md), che po
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: Connect](idelaydc-connect.md)
+[IDelaydC::Connect](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::GetConversationStatistics](idelaydc-getconversationstatistics.md)
 </dt> <dt>
 
-[IDelaydC:: Start](idelaydc-start.md)
+[IDelaydC::Start](idelaydc-start.md)
 </dt> <dt>
 
 [Statistiche](statistics.md)

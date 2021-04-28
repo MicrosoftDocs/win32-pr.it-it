@@ -1,54 +1,54 @@
 ---
-description: .
+description: Notifiche della finestra
 ms.assetid: f99a572e-110d-4971-a660-e861dbe32cfe
-title: Notifiche finestra
+title: Notifiche della finestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d21587e298a67d92c9975a90ba44e75c65ded6c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faede9cee74618aa29a65da601c00296fed06425
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312482"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083359"
 ---
-# <a name="window-notifications"></a>Notifiche finestra
+# <a name="window-notifications"></a>Notifiche della finestra
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_ACTIVATEAPP WM**](wm-activateapp.md)
--   [**\_CANCELMODE WM**](wm-cancelmode.md)
--   [**\_CHILDACTIVATE WM**](wm-childactivate.md)
--   [**\_chiusura WM**](wm-close.md)
--   [**\_compattazione WM**](wm-compacting.md)
--   [**creazione di WM \_**](wm-create.md)
--   [**eliminazione di WM \_**](wm-destroy.md)
--   [**\_DPICHANGED WM**](../hidpi/wm-dpichanged.md)
--   [**\_Abilitazione WM**](wm-enable.md)
--   [**\_ENTERSIZEMOVE WM**](wm-entersizemove.md)
--   [**\_EXITSIZEMOVE WM**](wm-exitsizemove.md)
--   [**\_icona WM GETicon**](wm-geticon.md)
--   [**\_GETMINMAXINFO WM**](wm-getminmaxinfo.md)
--   [**\_INPUTLANGCHANGE WM**](wm-inputlangchange.md)
--   [**\_INPUTLANGCHANGEREQUEST WM**](wm-inputlangchangerequest.md)
--   [**\_spostamento WM**](wm-move.md)
--   [**\_trasferimento WM**](wm-moving.md)
--   [**\_NCACTIVATE WM**](wm-ncactivate.md)
--   [**\_NCCALCSIZE WM**](wm-nccalcsize.md)
--   [**\_NCCREATE WM**](wm-nccreate.md)
--   [**\_NCDESTROY WM**](wm-ncdestroy.md)
--   [**\_null WM**](wm-null.md)
--   [**\_QUERYDRAGICON WM**](wm-querydragicon.md)
--   [**\_QUERYOPEN WM**](wm-queryopen.md)
--   [**\_uscita WM**](wm-quit.md)
--   [**\_ShowWindow WM**](wm-showwindow.md)
--   [**\_dimensioni WM**](wm-size.md)
--   [**\_dimensionamento WM**](wm-sizing.md)
--   [**\_STYLECHANGED WM**](wm-stylechanged.md)
--   [**\_STYLECHANGING WM**](wm-stylechanging.md)
--   [**\_THEMECHANGED WM**](wm-themechanged.md)
--   [**\_USERCHANGED WM**](wm-userchanged.md)
--   [**\_WINDOWPOSCHANGED WM**](wm-windowposchanged.md)
--   [**\_WINDOWPOSCHANGING WM**](wm-windowposchanging.md)
+-   [**WM \_ ACTIVATEAPP**](wm-activateapp.md)
+-   [**WM \_ CANCELMODE**](wm-cancelmode.md)
+-   [**WM \_ CHILDACTIVATE**](wm-childactivate.md)
+-   [**WM \_ CLOSE**](wm-close.md)
+-   [**COMPATTAZIONE DI WM \_**](wm-compacting.md)
+-   [**CREAZIONE DI WM \_**](wm-create.md)
+-   [**WM \_ DESTROY**](wm-destroy.md)
+-   [**WM \_ DPICHANGED**](../hidpi/wm-dpichanged.md)
+-   [**ABILITAZIONE DI \_ WM**](wm-enable.md)
+-   [**WM \_ ENTERSIZEMOVE**](wm-entersizemove.md)
+-   [**WM \_ EXITSIZEMOVE**](wm-exitsizemove.md)
+-   [**WM \_ GETICON**](wm-geticon.md)
+-   [**WM \_ GETMINMAXINFO**](wm-getminmaxinfo.md)
+-   [**WM \_ INPUTLANGCHANGE**](wm-inputlangchange.md)
+-   [**WM \_ INPUTLANGCHANGEREQUEST**](wm-inputlangchangerequest.md)
+-   [**WM \_ MOVE**](wm-move.md)
+-   [**SPOSTAMENTO DI WM \_**](wm-moving.md)
+-   [**WM \_ NCACTIVATE**](wm-ncactivate.md)
+-   [**WM \_ NCCALCSIZE**](wm-nccalcsize.md)
+-   [**WM \_ NCCREATE**](wm-nccreate.md)
+-   [**WM \_ NCDESTROY**](wm-ncdestroy.md)
+-   [**WM \_ NULL**](wm-null.md)
+-   [**WM \_ QUERYDRAGICON**](wm-querydragicon.md)
+-   [**WM \_ QUERYOPEN**](wm-queryopen.md)
+-   [**WM \_ QUIT**](wm-quit.md)
+-   [**WM \_ SHOWWINDOW**](wm-showwindow.md)
+-   [**DIMENSIONI \_ WM**](wm-size.md)
+-   [**RIDIMENSIONAMENTO \_ WM**](wm-sizing.md)
+-   [**WM \_ STYLECHANGED**](wm-stylechanged.md)
+-   [**WM \_ STYLECHANGING**](wm-stylechanging.md)
+-   [**WM \_ THEMECHANGED**](wm-themechanged.md)
+-   [**WM \_ USERCHANGED**](wm-userchanged.md)
+-   [**WM \_ WINDOWPOSCHANGED**](wm-windowposchanged.md)
+-   [**FINESTRA \_ WMPOSCHANGING**](wm-windowposchanging.md)
 
  
 

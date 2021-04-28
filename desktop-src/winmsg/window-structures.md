@@ -1,25 +1,25 @@
 ---
-description: .
+description: Strutture delle finestre
 ms.assetid: 8254174d-d19f-4177-91b0-dc87aa1e40e0
-title: Strutture della finestra
+title: Strutture delle finestre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6df5fcd90bdccec27addb9f2399b80a866fe1580
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9845b70afaec92d116dd709ddee4f533b69900aa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317858"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100119"
 ---
-# <a name="window-structures"></a>Strutture della finestra
+# <a name="window-structures"></a>Strutture delle finestre
 
 -   [**ALTTABINFO**](/windows/win32/api/winuser/ns-winuser-alttabinfo)
 -   [**CHANGEFILTERSTRUCT**](/windows/win32/api/winuser/ns-winuser-changefilterstruct)
 -   [**CLIENTCREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-clientcreatestruct)
--   [**STRUTTURA CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa)
+-   [**CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa)
 -   [**GUITHREADINFO**](/windows/win32/api/winuser/ns-winuser-guithreadinfo)
 -   [**MINMAXINFO**](/windows/win32/api/winuser/ns-winuser-minmaxinfo)
--   [**\_parametri NCCALCSIZE**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params)
+-   [**NCCALCSIZE \_ PARAMS**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params)
 -   [**STYLESTRUCT**](/windows/win32/api/winuser/ns-winuser-stylestruct)
 -   [**TITLEBARINFO**](/windows/win32/api/winuser/ns-winuser-titlebarinfo)
 -   [**TITLEBARINFOEX**](/windows/win32/api/winuser/ns-winuser-titlebarinfoex)

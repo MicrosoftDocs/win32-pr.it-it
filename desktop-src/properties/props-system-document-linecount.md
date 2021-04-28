@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.Document. Conteggio righe
 ms.assetid: a520b9e5-1f58-499f-b93a-c072cf79623b
-title: System.Document. LineCount
+title: System.Document. Conteggio righe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0523b1557746de056d503e4dcca39492ee4f3dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac6de3856720ce5c04d3f43175f62ffc0e7383b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313496"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087169"
 ---
-# <a name="systemdocumentlinecount"></a>System.Document. LineCount
+# <a name="systemdocumentlinecount"></a>System.Document. Conteggio righe
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,13 +31,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -46,13 +46,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -61,13 +61,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

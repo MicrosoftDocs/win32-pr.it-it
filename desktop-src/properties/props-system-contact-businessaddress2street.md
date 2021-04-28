@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.Contact.BusinessAddress2Street
 ms.assetid: 8a4ebbe7-ba5b-487f-add4-20c5509ce0db
-title: System. Contact. BusinessAddress2Street
+title: System.Contact.BusinessAddress2Street
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99865c412cec27573b9c4cf838daecb023367627
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2948a27d8f8afe386e525269839316d958e9906c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312540"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087229"
 ---
-# <a name="systemcontactbusinessaddress2street"></a>System. Contact. BusinessAddress2Street
+# <a name="systemcontactbusinessaddress2street"></a>System.Contact.BusinessAddress2Street
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1
 
@@ -30,7 +30,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -45,13 +45,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -60,7 +60,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

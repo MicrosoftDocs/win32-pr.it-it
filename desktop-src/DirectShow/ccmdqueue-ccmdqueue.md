@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CCmdQueue.CCmdQueue : metodo costruttore.'
 ms.assetid: 9961a8fe-db72-4be6-8f72-68b74f82e4d4
-title: Costruttore CCmdQueue. CCmdQueue (Winutil. h)
+title: Costruttore CCmdQueue.CCmdQueue (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9469aa4ff9311efa096a66ee637512a2a812b54e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f4dd94e7ef2ac3970fe652f4b7a3ad7117f047e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324685"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119829"
 ---
-# <a name="ccmdqueueccmdqueue-constructor"></a>Costruttore CCmdQueue. CCmdQueue
+# <a name="ccmdqueueccmdqueue-constructor"></a>Costruttore CCmdQueue.CCmdQueue
 
 Metodo del costruttore.
 
@@ -46,8 +46,8 @@ Questo costruttore non ha parametri.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

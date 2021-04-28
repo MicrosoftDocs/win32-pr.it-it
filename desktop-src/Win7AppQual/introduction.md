@@ -1,40 +1,40 @@
 ---
-description: .
+description: Introduzione (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 ms.assetid: 6BB5AABC-6281-4575-8189-477C57DF4F4F
 title: Introduzione (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d491802735ddf1ef75a7a183cd49afea2cc657b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4125c2bd122d239c155f089f06bef2f455ee121b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313698"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088199"
 ---
 # <a name="introduction-windows-7-and-windows-server-2008-r2-application-quality-cookbook"></a>Introduzione (Windows 7 e Windows Server 2008 R2 Application Quality Cookbook)
 
-In tutto il mondo, molte aziende adottano Windows 7 a causa delle caratteristiche e delle capacità aziendali. I reparti IT cambiano anche il modo in cui si avvicinano alla piattaforma a lungo termine che deve supportare un desktop moderno. Il sistema operativo Windows 7 contribuisce a ridurre il costo totale di proprietà aiutando gli utenti a rimanere produttivi ovunque, a migliorare la sicurezza e il controllo e a semplificare la gestione dei desktop nell'intera organizzazione. Windows 7 include inoltre un browser moderno basato su standard, Windows Internet Explorer 8, che offre funzionalità migliorate per la sicurezza e l'esplorazione avanzata. Queste due piattaforme aumentano l'efficienza IT e migliorano la flessibilità e la sicurezza di un'organizzazione.
+In tutto il mondo, molte aziende adottano Windows 7 grazie alle funzionalità e alle capacità aziendali. I reparti IT stanno anche cambiando il modo in cui si avvicinano alle esigenze della piattaforma a lungo termine per supportare un desktop moderno. Il sistema operativo Windows 7 consente di ridurre il costo totale di proprietà consentendo agli utenti di rimanere produttivi ovunque, migliorare la sicurezza e il controllo e semplificare la gestione dei desktop in tutta l'organizzazione. Windows 7 include anche un browser moderno basato su standard, Windows Internet Explorer 8, che offre sicurezza e funzionalità di esplorazione migliorate. Queste due piattaforme aumentano l'efficienza IT e migliorano l'agilità e la sicurezza di un'organizzazione.
 
-Tuttavia, la migrazione a un nuovo sistema operativo crea problemi univoci, principalmente con la necessità di supportare le applicazioni Web legacy. Le aziende possono disporre di applicazioni compilate per le versioni precedenti di Windows Internet Explorer, ad esempio Windows Internet Explorer 7 o Microsoft Internet Explorer 6. Queste applicazioni Web potrebbero riscontrare problemi di compatibilità con Internet Explorer 8. Internet Explorer 6 non è inoltre eseguito in modo nativo in Windows 7 e Windows non supporta contemporaneamente l'esecuzione di due versioni di Internet Explorer. Per ulteriori informazioni, vedere l'articolo della Microsoft Knowledge Base "[esecuzione di più versioni di Internet Explorer in un singolo sistema operativo non supportata](https://support.microsoft.com/kb/2020599)".
+Tuttavia, la migrazione a un nuovo sistema operativo crea sfide specifiche, principalmente con la necessità di supportare le applicazioni Web legacy. Le aziende possono avere applicazioni create per le versioni precedenti di Windows Internet Explorer, ad esempio Windows Internet Explorer 7 o Microsoft Internet Explorer 6. Queste applicazioni Web possono riscontrare problemi di compatibilità con Internet Explorer 8. Inoltre, Internet Explorer 6 non viene eseguito in modo nativo in Windows 7 e Windows non supporta l'esecuzione di due versioni di Internet Explorer contemporaneamente. Per altre informazioni, vedere l'Microsoft Knowledge Base " Running[Multiple Versions of Internet Explorer on Single Operating System is Unsupported](https://support.microsoft.com/kb/2020599).
 
-Molte aziende usano ancora applicazioni Web basate su Internet Explorer 6 compilate e personalizzate negli ultimi decenni. Le aziende che pianificano di distribuire Windows 7 devono disporre di una strategia completa e di un piano di esecuzione per eseguire la migrazione di applicazioni Web legacy a Internet Explorer 8. In questo documento viene fornita una panoramica dettagliata dei problemi di compatibilità di Internet Explorer 8, viene illustrato come eseguire la migrazione di applicazioni Web e vengono introdotti gli strumenti e i processi correlati.
+Molte aziende usano ancora Internet Explorer web basate su 6 che sono state create e personalizzate nel corso dell'ultimo decennio. Le aziende che pianificano la distribuzione di Windows 7 devono disporre di una strategia completa e di un piano di esecuzione per eseguire la migrazione di applicazioni Web legacy a Internet Explorer 8. Questo documento offre una panoramica dettagliata di Internet Explorer 8 problemi di compatibilità, illustra come eseguire la migrazione di applicazioni Web e introduce strumenti e processi correlati.
 
-La versione di Internet Explorer 8 è stata incentrata su tre temi principali:
+La Internet Explorer 8 è incentrata su tre temi principali:
 
--   Fornire l'interoperabilità reale con altri browser e la compatibilità per i siti Web esistenti.
--   Semplifica e velocizza lo sviluppo Web usando gli strumenti di sviluppo predefiniti.
--   Grazie alle nuove funzionalità del browser che connettono gli utenti ai servizi Web innovativi, è possibile abilitare esperienze che raggiungono la pagina oltre la pagina.
+-   Fornire interoperabilità reale con altri browser e compatibilità per i siti Web esistenti.
+-   Semplificare e velocizzare lo sviluppo Web usando gli strumenti di sviluppo predefiniti.
+-   Abilitare esperienze che vanno oltre la pagina, tramite nuove funzionalità del browser che connettono gli utenti a servizi Web innovativi.
 
-Oltre ai significativi progressi del supporto per gli standard, Internet Explorer 8 contiene ulteriori investimenti della piattaforma per gli sviluppatori. Internet Explorer 8 migliora le prestazioni in molti sottosistemi di Internet Explorer, ad esempio il parser HTML, l'elaborazione delle regole CSS (CSS), la manipolazione degli alberi di markup, il parser JavaScript, il runtime Garbage Collector e la gestione della memoria. Gli investimenti aggiuntivi per gli sviluppatori includono:
+Oltre ai progressi significativi nel supporto degli standard, Internet Explorer 8 contiene investimenti aggiuntivi per la piattaforma per gli sviluppatori. Internet Explorer 8 migliora le prestazioni in molti sottosistemi Internet Explorer, ad esempio il parser HTML, l'elaborazione di regole CSS (Cascading Style Sheet), la manipolazione dell'albero di markup, il parser JavaScript, il runtime del Garbage Collector e la gestione della memoria. Altri investimenti per sviluppatori includono:
 
--   CSS 2,1: è possibile scrivere le pagine una volta e visualizzarle in modo più semplice in browser diversi, poiché Internet Explorer 8 supporta completamente la specifica CSS 2,1.
--   Miglioramenti di Document Object Model (DOM) e HTML 4,01: Internet Explorer 8 fornisce miglioramenti aggiuntivi in HTML 4,01 e la conformità completa CSS 2,1. Internet Explorer 8 corregge anche molte incoerenze tra browser. Ad esempio, l'implementazione dell'attributo get/set/Remove è ora interoperativa con altri browser e le prestazioni sono migliorate nei modelli di progettazione AJAX (Asynchronous JavaScript and XML).
--   Standard emergenti: Internet Explorer 8 incorpora standard futuri, ad esempio W3C HTML5 Draft DOM standard, l'API dei selettori del gruppo di lavoro delle applicazioni Web e la sintassi di ECMAScript 3,1 approvata.
--   Nuove funzionalità di navigazione per le applicazioni AJAX: è possibile aggiornare lo stack di navigazione e la barra degli indirizzi del browser dalle applicazioni AJAX in modo che le funzionalità del browser funzionino correttamente nell'applicazione.
--   Acid2: Internet Explorer 8 esegue il rendering del test del browser Acid2 correttamente.
--   Compatibilità: Internet Explorer 8 include un motore di layout più compatibile con gli standard che consente di creare un sito basato su standard per più browser. Per eseguire la migrazione dei siti più facilmente al nuovo motore di layout conforme agli standard, Internet Explorer 8 consente di utilizzare il motore di layout di Internet Explorer 7 inserendo un semplice elemento **meta** nel codice o aggiungendo una singola intestazione HTTP nei server.
--   Strumenti di sviluppo: Strumenti di sviluppo in Internet Explorer (a cui si accede premendo il tasto F12) consente di eseguire rapidamente il debug del codice HTML, CSS e JavaScript in un ambiente visivo. Questi strumenti sono inclusi direttamente in Internet Explorer 8 con funzionalità espanse, tra cui Ann option per scegliere l'applicazione da usare quando si visualizza l'origine di una pagina Web. È possibile identificare e risolvere rapidamente i problemi grazie alla profonda conoscenza fornita dallo strumento nel DOM.
--   Per ulteriori informazioni sulle funzionalità nuove e migliorate di Internet Explorer 8, vedere la pagina relativa alle [novità di Internet Explorer 8](https://msdn.microsoft.com/library/Gg598940(v=VS.85).aspx) in MSDN Library.
+-   CSS 2.1: è possibile scrivere le pagine una sola volta e renderle più facilmente visualizzabili tra browser diversi, perché Internet Explorer 8 supporta completamente la specifica CSS 2.1.
+-   Document Object Model (DOM) e HTML 4.01: Internet Explorer 8 offre miglioramenti aggiuntivi di HTML 4.01 e conformità completa a CSS 2.1. Internet Explorer 8 corregge anche molte incoerenze tra browser. Ad esempio, l'implementazione dell'attributo get/set/remove è ora interoperabile con altri browser e le prestazioni sono migliorate nei modelli di progettazione JavaScript e XML (AJAX) asincroni.
+-   Standard emergenti: Internet Explorer 8 incorpora standard futuri, ad esempio lo standard HTML5 Draft DOM Storage di W3C, l'API Selettori del gruppo di lavoro applicazioni Web e la sintassi approvata da ECMAScript 3.1.
+-   Nuove funzionalità di navigazione per le applicazioni AJAX: è possibile aggiornare lo stack di navigazione indietro e in avanti del browser e la barra degli indirizzi da un'applicazione AJAX in modo che tali funzionalità del browser funzionino correttamente nell'applicazione.
+-   Acid2: Internet Explorer 8 esegue correttamente il rendering del test del browser Acid2.
+-   Compatibilità: Internet Explorer 8 include un motore di layout più compatibile con gli standard che consente di creare un sito basato su standard per più browser. Per eseguire più facilmente la migrazione dei siti al nuovo motore di layout conforme agli standard, Internet Explorer 8 consente di usare il motore di layout di Internet Explorer 7 inserendo un semplice **meta-elemento** nel codice o aggiungendo una singola intestazione HTTP nei server.
+-   Strumenti di sviluppo: Strumenti di sviluppo in Internet Explorer ,a cui si accede premendo F12, è possibile eseguire rapidamente il debug di codice HTML, CSS e JavaScript in un ambiente visivo. Questi strumenti sono inclusi direttamente in Internet Explorer 8 con funzionalità espanse, inclusa un'opzione per scegliere l'applicazione da usare quando si visualizza l'origine di una pagina Web. È possibile identificare e risolvere rapidamente i problemi a causa delle informazioni dettagliate che lo strumento fornisce nel DOM.
+-   Per altre informazioni sulle funzionalità nuove e migliorate di Internet Explorer 8, vedere Novità [di Internet Explorer 8](https://msdn.microsoft.com/library/Gg598940(v=VS.85).aspx) in MSDN Library.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

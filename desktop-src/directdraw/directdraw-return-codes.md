@@ -1,6 +1,6 @@
 ---
-title: Codici restituiti di DirectDraw (ddraw. h)
-description: Gli errori sono rappresentati da valori negativi e non possono essere combinati.
+title: Codici restituiti directdraw (Ddraw.h)
+description: 'Codici restituiti DirectDraw: gli errori sono rappresentati da valori negativi e non possono essere combinati.'
 ms.assetid: F713193E-3614-4741-B293-D312C170270A
 topic_type:
 - apiref
@@ -129,16 +129,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d70ff2003edc382bac2823235f01f58ffea0d91
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6d789a233df777d98860e519f7e877a030aba55a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886305"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087809"
 ---
 # <a name="directdraw-return-codes"></a>Codici restituiti di DirectDraw
 
-Gli errori sono rappresentati da valori negativi e non possono essere combinati. In questa tabella sono elencati i valori che possono essere restituiti da tutti i metodi delle [interfacce DirectDraw](directdraw-interfaces.md) e delle [funzioni DirectDraw](directdraw-functions.md). Per un elenco dei codici di errore che possono essere restituiti da ogni metodo o funzione, vedere la descrizione del metodo o della funzione.
+Gli errori sono rappresentati da valori negativi e non possono essere combinati. Questa tabella elenca i valori che possono essere restituiti da tutti i metodi delle interfacce [DirectDraw e](directdraw-interfaces.md) [delle funzioni DirectDraw](directdraw-functions.md). Per un elenco dei codici di errore che ogni metodo o funzione può restituire, vedere la descrizione del metodo o della funzione.
 
 <dl> <dt>
 
@@ -152,7 +152,7 @@ La richiesta è stata completata correttamente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_ALREADYINITIALIZED"></span><span id="dderr_alreadyinitialized"></span>**\_ALREADYINITIALIZED DDERR**
+<span id="DDERR_ALREADYINITIALIZED"></span><span id="dderr_alreadyinitialized"></span>**DDERR \_ GIÀ INIZIALIZZATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -162,87 +162,87 @@ L'oggetto è già stato inizializzato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_BLTFASTCANTCLIP"></span><span id="dderr_bltfastcantclip"></span>**\_BLTFASTCANTCLIP DDERR**
+<span id="DDERR_BLTFASTCANTCLIP"></span><span id="dderr_bltfastcantclip"></span>**DDERR \_ BLTFASTCLIPCLIP**
 </dt> <dd> <dl> <dt>
 
 
 
-Un oggetto DirectDrawClipper è associato a una superficie di origine che è passata a una chiamata al metodo [**IDirectDrawSurface7:: BltFast**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast) .
+Un oggetto DirectDrawClipper è collegato a una superficie di origine passata in una chiamata al [**metodo IDirectDrawSurface7::BltFast.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CANNOTATTACHSURFACE"></span><span id="dderr_cannotattachsurface"></span>**\_CANNOTATTACHSURFACE DDERR**
+<span id="DDERR_CANNOTATTACHSURFACE"></span><span id="dderr_cannotattachsurface"></span>**DDERR \_ CANNOTATTACHSURFACE**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è possibile collegare una superficie a un'altra superficie richiesta.
+Una superficie non può essere collegata a un'altra superficie richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CANNOTDETACHSURFACE"></span><span id="dderr_cannotdetachsurface"></span>**\_CANNOTDETACHSURFACE DDERR**
+<span id="DDERR_CANNOTDETACHSURFACE"></span><span id="dderr_cannotdetachsurface"></span>**DDERR \_ CANNOTDETACHSURFACE**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è possibile scollegare una superficie da un'altra superficie richiesta.
+Una superficie non può essere scollegata da un'altra superficie richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CANTCREATEDC"></span><span id="dderr_cantcreatedc"></span>**\_CANTCREATEDC DDERR**
+<span id="DDERR_CANTCREATEDC"></span><span id="dderr_cantcreatedc"></span>**DDERR \_ CANTCREATEDC**
 </dt> <dd> <dl> <dt>
 
 
 
-Windows non è in grado di creare altri contesti di dispositivo o un controller di dominio ha richiesto una superficie indicizzata della tavolozza quando la superficie non aveva una tavolozza e la modalità di visualizzazione non è stata indicizzata (in questo caso, DirectDraw non è in grado di selezionare una tavolozza appropriata nel controller di dominio).
+Windows non è in grado di creare altri contesti di dispositivo o un controller di dominio ha richiesto una superficie indicizzata dalla tavolozza quando la superficie non dispone di tavolozza e la modalità di visualizzazione non è indicizzata (in questo caso DirectDraw non è in grado di selezionare una tavolozza appropriata nel controller di dominio).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CANTDUPLICATE"></span><span id="dderr_cantduplicate"></span>**\_CANTDUPLICATE DDERR**
+<span id="DDERR_CANTDUPLICATE"></span><span id="dderr_cantduplicate"></span>**DDERR \_ CANTDUPLICATE**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è possibile duplicare le superfici primarie e 3D, o le superfici create in modo implicito.
+Le superfici primarie e 3D, o le superfici create in modo implicito, non possono essere duplicate.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CANTLOCKSURFACE"></span><span id="dderr_cantlocksurface"></span>**\_CANTLOCKSURFACE DDERR**
+<span id="DDERR_CANTLOCKSURFACE"></span><span id="dderr_cantlocksurface"></span>**DDERR \_ CANTLOCKSURFACE**
 </dt> <dd> <dl> <dt>
 
 
 
-L'accesso a questa superficie è stato rifiutato perché è stato effettuato un tentativo di bloccare la superficie primaria senza il supporto per l'interfaccia di controllo di visualizzazione.
+L'accesso a questa superficie viene rifiutato perché è stato effettuato un tentativo di bloccare la superficie primaria senza supporto DCI (Display Control Interface).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CANTPAGELOCK"></span><span id="dderr_cantpagelock"></span>**\_CANTPAGELOCK DDERR**
+<span id="DDERR_CANTPAGELOCK"></span><span id="dderr_cantpagelock"></span>**DDERR \_ CANTPAGELOCK**
 </dt> <dd> <dl> <dt>
 
 
 
-Tentativo di blocco di una superficie di pagina non riuscito. Il blocco di pagina non funziona in una superficie di memoria di visualizzazione o in una superficie primaria emulata.
+Tentativo di blocco della pagina di una superficie non riuscito. Il blocco di pagina non funziona su una superficie di memoria di visualizzazione o su una superficie primaria emulata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CANTPAGEUNLOCK"></span><span id="dderr_cantpageunlock"></span>**\_CANTPAGEUNLOCK DDERR**
+<span id="DDERR_CANTPAGEUNLOCK"></span><span id="dderr_cantpageunlock"></span>**DDERR \_ CANTPAGEUNLOCK**
 </dt> <dd> <dl> <dt>
 
 
 
-Tentativo di sblocco di una superficie non riuscito. Lo sblocco della pagina non funziona in una superficie di memoria di visualizzazione o in una superficie primaria emulata.
+Tentativo di sblocco della pagina di una superficie non riuscito. Lo sblocco della pagina non funziona su una superficie di memoria di visualizzazione o su una superficie primaria emulata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CLIPPERISUSINGHWND"></span><span id="dderr_clipperisusinghwnd"></span>**\_CLIPPERISUSINGHWND DDERR**
+<span id="DDERR_CLIPPERISUSINGHWND"></span><span id="dderr_clipperisusinghwnd"></span>**DDERR \_ CLIPPERISUSINGHWND**
 </dt> <dd> <dl> <dt>
 
 
@@ -252,52 +252,52 @@ Tentativo di sblocco di una superficie non riuscito. Lo sblocco della pagina non
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_COLORKEYNOTSET"></span><span id="dderr_colorkeynotset"></span>**\_COLORKEYNOTSET DDERR**
+<span id="DDERR_COLORKEYNOTSET"></span><span id="dderr_colorkeynotset"></span>**DDERR \_ COLORKEYNOTSET**
 </dt> <dd> <dl> <dt>
 
 
 
-Nessuna chiave del colore di origine specificata per questa operazione.
+Per questa operazione non è stata specificata alcuna chiave di colore di origine.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CURRENTLYNOTAVAIL"></span><span id="dderr_currentlynotavail"></span>**\_CURRENTLYNOTAVAIL DDERR**
+<span id="DDERR_CURRENTLYNOTAVAIL"></span><span id="dderr_currentlynotavail"></span>**DDERR \_ ATTUALMENTE NON DISPONIBILE**
 </dt> <dd> <dl> <dt>
 
 
 
-Attualmente non è disponibile alcun supporto.
+Non è attualmente disponibile alcun supporto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_DDSCAPSCOMPLEXREQUIRED"></span><span id="dderr_ddscapscomplexrequired"></span>**\_DDSCAPSCOMPLEXREQUIRED DDERR**
+<span id="DDERR_DDSCAPSCOMPLEXREQUIRED"></span><span id="dderr_ddscapscomplexrequired"></span>**DDERR \_ DDSCAPSCOMPLEXREQUIRED**
 </dt> <dd> <dl> <dt>
 
 
 
-Novità per DirectX 7,0. Per la superficie è richiesto il \_ flag complesso ddsCaps.
+Novità di DirectX 7.0. La superficie richiede il flag COMPLEX DDSCAPS. \_
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_DCALREADYCREATED"></span><span id="dderr_dcalreadycreated"></span>**\_DCALREADYCREATED DDERR**
+<span id="DDERR_DCALREADYCREATED"></span><span id="dderr_dcalreadycreated"></span>**DDERR \_ DCALREADYCREATED**
 </dt> <dd> <dl> <dt>
 
 
 
-Per questa area è già stato restituito un contesto di dispositivo (DC). Per ogni superficie è possibile recuperare un solo controller di dominio.
+Un contesto di dispositivo (DC) è già stato restituito per questa superficie. È possibile recuperare un solo controller di dominio per ogni superficie.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_DDERR_DEVICEDOESNTOWNSURFACE"></span><span id="_dderr_devicedoesntownsurface"></span>**>DDERR \_ DEVICEDOESNTOWNSURFACE**
+<span id="_DDERR_DEVICEDOESNTOWNSURFACE"></span><span id="_dderr_devicedoesntownsurface"></span>**>DISPOSITIVO \_ DDERRDOESN TOWNSURFACE**
 </dt> <dd> <dl> <dt>
 
 
 
-Le superfici create da un dispositivo DirectDraw non possono essere utilizzate direttamente da un altro dispositivo DirectDraw.
+Le superfici create da un dispositivo DirectDraw non possono essere usate direttamente da un altro dispositivo DirectDraw.
 
 
 </dt> </dl> </dd> <dt>
@@ -307,32 +307,32 @@ Le superfici create da un dispositivo DirectDraw non possono essere utilizzate d
 
 
 
-Un oggetto DirectDraw che rappresenta questo driver è già stato creato per questo processo.
+Per questo processo è già stato creato un oggetto DirectDraw che rappresenta questo driver.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_EXCEPTION"></span><span id="dderr_exception"></span>**\_eccezione DDERR**
+<span id="DDERR_EXCEPTION"></span><span id="dderr_exception"></span>**ECCEZIONE \_ DDERR**
 </dt> <dd> <dl> <dt>
 
 
 
-È stata rilevata un'eccezione durante l'esecuzione dell'operazione richiesta.
+Si è verificata un'eccezione durante l'esecuzione dell'operazione richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_EXCLUSIVEMODEALREADYSET"></span><span id="dderr_exclusivemodealreadyset"></span>**\_EXCLUSIVEMODEALREADYSET DDERR**
+<span id="DDERR_EXCLUSIVEMODEALREADYSET"></span><span id="dderr_exclusivemodealreadyset"></span>**DDERR \_ EXCLUSIVEMODEALREADYSET**
 </dt> <dd> <dl> <dt>
 
 
 
-È stato effettuato un tentativo di impostare il livello cooperativo quando era già impostato come esclusivo.
+È stato effettuato un tentativo di impostare il livello cooperativo quando era già impostato su esclusivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_EXPIRED"></span><span id="dderr_expired"></span>**DDERR \_ scaduto**
+<span id="DDERR_EXPIRED"></span><span id="dderr_expired"></span>**DDERR \_ SCADUTO**
 </dt> <dd> <dl> <dt>
 
 
@@ -342,17 +342,17 @@ I dati sono scaduti e pertanto non sono più validi.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_GENERIC"></span><span id="dderr_generic"></span>**\_generico DDERR**
+<span id="DDERR_GENERIC"></span><span id="dderr_generic"></span>**DDERR \_ GENERIC**
 </dt> <dd> <dl> <dt>
 
 
 
-Si è verificata una condizione di errore non definita.
+È presente una condizione di errore non definita.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_HEIGHTALIGN"></span><span id="dderr_heightalign"></span>**\_HEIGHTALIGN DDERR**
+<span id="DDERR_HEIGHTALIGN"></span><span id="dderr_heightalign"></span>**DDERR \_ HEIGHTALIGN**
 </dt> <dd> <dl> <dt>
 
 
@@ -362,37 +362,37 @@ L'altezza del rettangolo specificato non è un multiplo dell'allineamento richie
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_HWNDALREADYSET"></span><span id="dderr_hwndalreadyset"></span>**\_HWNDALREADYSET DDERR**
+<span id="DDERR_HWNDALREADYSET"></span><span id="dderr_hwndalreadyset"></span>**DDERR \_ HWNDALREADYSET**
 </dt> <dd> <dl> <dt>
 
 
 
-L'handle di finestra a livello di cooperativa DirectDraw è già stato impostato. Non può essere reimpostato mentre per il processo sono state create superfici o tavolozze.
+L'handle della finestra a livello cooperativo DirectDraw è già stato impostato. Non può essere reimpostato mentre nel processo sono state create superfici o tavolozze.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_HWNDSUBCLASSED"></span><span id="dderr_hwndsubclassed"></span>**\_HWNDSUBCLASSED DDERR**
+<span id="DDERR_HWNDSUBCLASSED"></span><span id="dderr_hwndsubclassed"></span>**DDERR \_ HWNDSUBCLASSED**
 </dt> <dd> <dl> <dt>
 
 
 
-È stato impedito il ripristino dello stato di DirectDraw perché l'handle di finestra a livello di cooperativo DirectDraw è stato sottoclassato.
+Non è possibile ripristinare lo stato di DirectDraw perché l'handle della finestra a livello cooperativo DirectDraw è stato sottoclassato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_IMPLICITLYCREATED"></span><span id="dderr_implicitlycreated"></span>**\_IMPLICITLYCREATED DDERR**
+<span id="DDERR_IMPLICITLYCREATED"></span><span id="dderr_implicitlycreated"></span>**DDERR \_ CREATE IN MODO IMPLICITO**
 </dt> <dd> <dl> <dt>
 
 
 
-Impossibile ripristinare la superficie perché è una superficie creata in modo implicito.
+Non è possibile ripristinare la superficie perché è una superficie creata in modo implicito.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INCOMPATIBLEPRIMARY"></span><span id="dderr_incompatibleprimary"></span>**\_INCOMPATIBLEPRIMARY DDERR**
+<span id="DDERR_INCOMPATIBLEPRIMARY"></span><span id="dderr_incompatibleprimary"></span>**DDERR \_ INCOMPATIBLEPRIMARY**
 </dt> <dd> <dl> <dt>
 
 
@@ -402,37 +402,37 @@ La richiesta di creazione della superficie primaria non corrisponde alla superfi
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDCAPS"></span><span id="dderr_invalidcaps"></span>**\_INVALIDCAPS DDERR**
+<span id="DDERR_INVALIDCAPS"></span><span id="dderr_invalidcaps"></span>**DDERR \_ INVALIDCAPS**
 </dt> <dd> <dl> <dt>
 
 
 
-Uno o più bit della funzionalità passati alla funzione di callback non sono corretti.
+Uno o più bit di funzionalità passati alla funzione di callback non sono corretti.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDCLIPLIST"></span><span id="dderr_invalidcliplist"></span>**\_INVALIDCLIPLIST DDERR**
+<span id="DDERR_INVALIDCLIPLIST"></span><span id="dderr_invalidcliplist"></span>**DDERR \_ INVALIDCLIPLIST**
 </dt> <dd> <dl> <dt>
 
 
 
-DirectDraw non supporta l'elenco di clip fornito.
+DirectDraw non supporta l'elenco di clip specificato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDDIRECTDRAWGUID"></span><span id="dderr_invaliddirectdrawguid"></span>**\_INVALIDDIRECTDRAWGUID DDERR**
+<span id="DDERR_INVALIDDIRECTDRAWGUID"></span><span id="dderr_invaliddirectdrawguid"></span>**DDERR \_ INVALIDDIRECTDRAWGUID**
 </dt> <dd> <dl> <dt>
 
 
 
-L'identificatore univoco globale (GUID) passato alla funzione [**DirectDrawCreate**](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate) non è un identificatore di driver DirectDraw valido.
+L'identificatore univoco globale (GUID) passato alla [**funzione DirectDrawCreate**](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate) non è un identificatore di driver DirectDraw valido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDMODE"></span><span id="dderr_invalidmode"></span>**\_INVALIDMODE DDERR**
+<span id="DDERR_INVALIDMODE"></span><span id="dderr_invalidmode"></span>**DDERR \_ INVALIDMODE**
 </dt> <dd> <dl> <dt>
 
 
@@ -442,7 +442,7 @@ DirectDraw non supporta la modalità richiesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDOBJECT"></span><span id="dderr_invalidobject"></span>**\_INVALIDOBJECT DDERR**
+<span id="DDERR_INVALIDOBJECT"></span><span id="dderr_invalidobject"></span>**DDERR \_ INVALIDOBJECT**
 </dt> <dd> <dl> <dt>
 
 
@@ -452,7 +452,7 @@ DirectDraw ha ricevuto un puntatore che era un oggetto DirectDraw non valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDPARAMS"></span><span id="dderr_invalidparams"></span>**\_INVALIDPARAMS DDERR**
+<span id="DDERR_INVALIDPARAMS"></span><span id="dderr_invalidparams"></span>**DDERR \_ INVALIDPARAMS**
 </dt> <dd> <dl> <dt>
 
 
@@ -462,7 +462,7 @@ Uno o più parametri passati al metodo non sono corretti.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDPIXELFORMAT"></span><span id="dderr_invalidpixelformat"></span>**\_INVALIDPIXELFORMAT DDERR**
+<span id="DDERR_INVALIDPIXELFORMAT"></span><span id="dderr_invalidpixelformat"></span>**DDERR \_ INVALIDPIXELFORMAT**
 </dt> <dd> <dl> <dt>
 
 
@@ -472,7 +472,7 @@ Il formato pixel non è valido come specificato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDPOSITION"></span><span id="dderr_invalidposition"></span>**\_INVALIDPOSITION DDERR**
+<span id="DDERR_INVALIDPOSITION"></span><span id="dderr_invalidposition"></span>**DDERR \_ INVALIDPOSITION**
 </dt> <dd> <dl> <dt>
 
 
@@ -482,7 +482,7 @@ La posizione della sovrimpressione nella destinazione non è più valida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDRECT"></span><span id="dderr_invalidrect"></span>**\_INVALIDRECT DDERR**
+<span id="DDERR_INVALIDRECT"></span><span id="dderr_invalidrect"></span>**DDERR \_ INVALIDRECT**
 </dt> <dd> <dl> <dt>
 
 
@@ -492,7 +492,7 @@ Il rettangolo specificato non è valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDSTREAM"></span><span id="dderr_invalidstream"></span>**\_INVALIDSTREAM DDERR**
+<span id="DDERR_INVALIDSTREAM"></span><span id="dderr_invalidstream"></span>**DDERR \_ INVALIDSTREAM**
 </dt> <dd> <dl> <dt>
 
 
@@ -502,17 +502,17 @@ Il flusso specificato contiene dati non validi.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDSURFACETYPE"></span><span id="dderr_invalidsurfacetype"></span>**\_INVALIDSURFACETYPE DDERR**
+<span id="DDERR_INVALIDSURFACETYPE"></span><span id="dderr_invalidsurfacetype"></span>**DDERR \_ INVALIDSURFACETYPE**
 </dt> <dd> <dl> <dt>
 
 
 
-Il tipo della superficie è errato.
+La superficie era di tipo errato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_LOCKEDSURFACES"></span><span id="dderr_lockedsurfaces"></span>**\_LOCKEDSURFACES DDERR**
+<span id="DDERR_LOCKEDSURFACES"></span><span id="dderr_lockedsurfaces"></span>**DDERR \_ LOCKEDSURFACES**
 </dt> <dd> <dl> <dt>
 
 
@@ -522,57 +522,57 @@ Una o più superfici sono bloccate, causando l'errore dell'operazione richiesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_MOREDATA"></span><span id="dderr_moredata"></span>**\_MOREDATA DDERR**
+<span id="DDERR_MOREDATA"></span><span id="dderr_moredata"></span>**DDERR \_ MOREDATA**
 </dt> <dd> <dl> <dt>
 
 
 
-Sono disponibili più dati delle dimensioni del buffer specificate.
+Sono disponibili più dati di quelli che possono contenere le dimensioni del buffer specificate.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NEWMODE"></span><span id="dderr_newmode"></span>**\_NewMode DDERR**
+<span id="DDERR_NEWMODE"></span><span id="dderr_newmode"></span>**DDERR \_ NEWMODE**
 </dt> <dd> <dl> <dt>
 
 
 
-Novità per DirectX 7,0. Quando [**IDirectDraw7:: StartModeTest**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) viene chiamato con il \_ flag DDSMT ISTESTREQUIRED, potrebbe restituire questo valore per indicare che alcune o tutte le risoluzioni possono e devono essere testate. [**IDirectDraw7:: EvaluateMode**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode) restituisce questo valore per indicare che il test è stato impostato su una nuova modalità di visualizzazione.
+Novità di DirectX 7.0. Quando [**IDirectDraw7::StartModeTest**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) viene chiamato con il \_ flag DDSMT ISTESTREQUIRED, potrebbe restituire questo valore per indicare che alcune o tutte le risoluzioni possono e devono essere testate. [**IDirectDraw7::EvaluateMode**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode) restituisce questo valore per indicare che il test è stato impostato su una nuova modalità di visualizzazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NO3D"></span><span id="dderr_no3d"></span>**\_NO3D DDERR**
+<span id="DDERR_NO3D"></span><span id="dderr_no3d"></span>**DDERR \_ NO3D**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è presente alcun hardware o emulazione 3D.
+Non sono presenti hardware 3D o emulazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOALPHAHW"></span><span id="dderr_noalphahw"></span>**\_NOALPHAHW DDERR**
+<span id="DDERR_NOALPHAHW"></span><span id="dderr_noalphahw"></span>**DDERR \_ NOALPHAHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è presente alcun hardware di accelerazione Alpha, che causa l'errore dell'operazione richiesta.
+Nessun hardware di accelerazione alfa è presente o disponibile, causando l'errore dell'operazione richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOBLTHW"></span><span id="dderr_noblthw"></span>**\_NOBLTHW DDERR**
+<span id="DDERR_NOBLTHW"></span><span id="dderr_noblthw"></span>**DDERR \_ NOBLTHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Nessun blocco di bit che trasferisce hardware è presente.
+Non è presente alcun blocco di bit che trasferisce l'hardware.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOCLIPLIST"></span><span id="dderr_nocliplist"></span>**DDERR \_ NOclips**
+<span id="DDERR_NOCLIPLIST"></span><span id="dderr_nocliplist"></span>**DDERR \_ NOCLIPLIST**
 </dt> <dd> <dl> <dt>
 
 
@@ -582,27 +582,27 @@ Non è disponibile alcun elenco di clip.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOCLIPPERATTACHED"></span><span id="dderr_noclipperattached"></span>**\_NOCLIPPERATTACHED DDERR**
+<span id="DDERR_NOCLIPPERATTACHED"></span><span id="dderr_noclipperattached"></span>**DDERR \_ NOCLIPPERATTACHED**
 </dt> <dd> <dl> <dt>
 
 
 
-Nessun oggetto DirectDrawClipper associato all'oggetto Surface.
+Nessun oggetto DirectDrawClipper è associato all'oggetto surface.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOCOLORCONVHW"></span><span id="dderr_nocolorconvhw"></span>**\_NOCOLORCONVHW DDERR**
+<span id="DDERR_NOCOLORCONVHW"></span><span id="dderr_nocolorconvhw"></span>**DDERR \_ NOCOLORCONVHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non sono presenti componenti hardware per la conversione di colori.
+Nessun hardware per la conversione del colore è presente o disponibile.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOCOLORKEY"></span><span id="dderr_nocolorkey"></span>**\_NOCOLORKEY DDERR**
+<span id="DDERR_NOCOLORKEY"></span><span id="dderr_nocolorkey"></span>**DDERR \_ NOCOLORKEY**
 </dt> <dd> <dl> <dt>
 
 
@@ -612,7 +612,7 @@ La superficie non dispone attualmente di una chiave di colore.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOCOLORKEYHW"></span><span id="dderr_nocolorkeyhw"></span>**\_NOCOLORKEYHW DDERR**
+<span id="DDERR_NOCOLORKEYHW"></span><span id="dderr_nocolorkeyhw"></span>**DDERR \_ NOCOLORKEYHW**
 </dt> <dd> <dl> <dt>
 
 
@@ -622,17 +622,17 @@ Non è disponibile alcun supporto hardware per la chiave di colore di destinazio
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOCOOPERATIVELEVELSET"></span><span id="dderr_nocooperativelevelset"></span>**\_NOCOOPERATIVELEVELSET DDERR**
+<span id="DDERR_NOCOOPERATIVELEVELSET"></span><span id="dderr_nocooperativelevelset"></span>**DDERR \_ NOCOOPERATIVELEVELSET**
 </dt> <dd> <dl> <dt>
 
 
 
-È stata chiamata una funzione create senza il metodo [**IDirectDraw7:: SetCooperativeLevel**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel) .
+Una funzione create è stata chiamata senza [**il metodo IDirectDraw7::SetCooperativeLevel.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NODC"></span><span id="dderr_nodc"></span>**\_NODC DDERR**
+<span id="DDERR_NODC"></span><span id="dderr_nodc"></span>**DDERR \_ NODC**
 </dt> <dd> <dl> <dt>
 
 
@@ -642,47 +642,47 @@ Non è mai stato creato alcun contesto di dispositivo (DC) per questa superficie
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NODDROPSHW"></span><span id="dderr_noddropshw"></span>**\_NODDROPSHW DDERR**
+<span id="DDERR_NODDROPSHW"></span><span id="dderr_noddropshw"></span>**DDERR \_ NODDROPSHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è disponibile alcun hardware di operazione di raster (POR) DirectDraw.
+Non è disponibile alcun hardware ROP (DirectDraw raster-operation).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NODIRECTDRAWHW"></span><span id="dderr_nodirectdrawhw"></span>**\_NODIRECTDRAWHW DDERR**
+<span id="DDERR_NODIRECTDRAWHW"></span><span id="dderr_nodirectdrawhw"></span>**DDERR \_ NODIRECTDRAWHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è possibile creare oggetti DirectDraw solo per l'hardware. il driver non supporta alcun hardware.
+La creazione di oggetti DirectDraw solo hardware non è possibile. il driver non supporta hardware.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NODIRECTDRAWSUPPORT"></span><span id="dderr_nodirectdrawsupport"></span>**\_NODIRECTDRAWSUPPORT DDERR**
+<span id="DDERR_NODIRECTDRAWSUPPORT"></span><span id="dderr_nodirectdrawsupport"></span>**DDERR \_ NODIRECTDRAWSUPPORT**
 </dt> <dd> <dl> <dt>
 
 
 
-Il supporto di DirectDraw non è possibile con il driver di visualizzazione corrente.
+Il supporto directdraw non è possibile con il driver di visualizzazione corrente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NODRIVERSUPPORT"></span><span id="dderr_nodriversupport"></span>**\_NODRIVERSUPPORT DDERR**
+<span id="DDERR_NODRIVERSUPPORT"></span><span id="dderr_nodriversupport"></span>**DDERR \_ NODRIVERSUPPORT**
 </dt> <dd> <dl> <dt>
 
 
 
-Novità per DirectX 7,0. Il test non può continuare perché il driver della scheda di visualizzazione non enumera le frequenze di aggiornamento.
+Novità di DirectX 7.0. I test non possono continuare perché il driver della scheda video non enumera le frequenze di aggiornamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOEMULATION"></span><span id="dderr_noemulation"></span>**\_NOemulazione DDERR**
+<span id="DDERR_NOEMULATION"></span><span id="dderr_noemulation"></span>**DDERR \_ NOEMULATION**
 </dt> <dd> <dl> <dt>
 
 
@@ -692,17 +692,17 @@ L'emulazione software non è disponibile.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOEXCLUSIVEMODE"></span><span id="dderr_noexclusivemode"></span>**\_NOEXCLUSIVEMODE DDERR**
+<span id="DDERR_NOEXCLUSIVEMODE"></span><span id="dderr_noexclusivemode"></span>**DDERR \_ NOEXCLUSIVEMODE**
 </dt> <dd> <dl> <dt>
 
 
 
-Per l'operazione è necessario che l'applicazione disponga della modalità esclusiva, ma che l'applicazione non abbia la modalità esclusiva.
+L'operazione richiede che l'applicazione abbia la modalità esclusiva, ma l'applicazione non ha la modalità esclusiva.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOFLIPHW"></span><span id="dderr_nofliphw"></span>**\_NOFLIPHW DDERR**
+<span id="DDERR_NOFLIPHW"></span><span id="dderr_nofliphw"></span>**DDERR \_ NOFLIPHW**
 </dt> <dd> <dl> <dt>
 
 
@@ -712,7 +712,7 @@ Il capovolgimento delle superfici visibili non è supportato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOFOCUSWINDOW"></span><span id="dderr_nofocuswindow"></span>**\_NOFOCUSWINDOW DDERR**
+<span id="DDERR_NOFOCUSWINDOW"></span><span id="dderr_nofocuswindow"></span>**DDERR \_ NOFOCUSWINDOW**
 </dt> <dd> <dl> <dt>
 
 
@@ -722,7 +722,7 @@ Il capovolgimento delle superfici visibili non è supportato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOGDI"></span><span id="dderr_nogdi"></span>**\_NOGDI DDERR**
+<span id="DDERR_NOGDI"></span><span id="dderr_nogdi"></span>**DDERR \_ NOGDI**
 </dt> <dd> <dl> <dt>
 
 
@@ -732,137 +732,137 @@ Non è presente alcun GDI.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOHWND"></span><span id="dderr_nohwnd"></span>**DDERR \_ NOhwnd**
+<span id="DDERR_NOHWND"></span><span id="dderr_nohwnd"></span>**DDERR \_ NOHWND**
 </dt> <dd> <dl> <dt>
 
 
 
-Per la notifica Clipper è necessario un handle di finestra o in precedenza non è stato impostato alcun handle di finestra come handle della finestra a livello cooperativo.
+La notifica clipper richiede un handle di finestra o nessun handle di finestra è stato impostato in precedenza come handle di finestra a livello cooperativo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOMIPMAPHW"></span><span id="dderr_nomipmaphw"></span>**\_NOMIPMAPHW DDERR**
+<span id="DDERR_NOMIPMAPHW"></span><span id="dderr_nomipmaphw"></span>**DDERR \_ NOMIPMAPHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Nessun hardware di mapping di trama con supporto per mipmap è presente o disponibile.
+Nessun hardware di mapping trame compatibile con mipmap è presente o disponibile.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOMIRRORHW"></span><span id="dderr_nomirrorhw"></span>**\_NOMIRRORHW DDERR**
+<span id="DDERR_NOMIRRORHW"></span><span id="dderr_nomirrorhw"></span>**DDERR \_ NOMIRRORHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Nessun hardware di mirroring presente o disponibile.
+Nessun hardware di mirroring è presente o disponibile.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOMONITORINFORMATION"></span><span id="dderr_nomonitorinformation"></span>**\_NOMONITORINFORMATION DDERR**
+<span id="DDERR_NOMONITORINFORMATION"></span><span id="dderr_nomonitorinformation"></span>**DDERR \_ NOMONITORINFORMATION**
 </dt> <dd> <dl> <dt>
 
 
 
-Novità per DirectX 7,0. Il test non può continuare perché al monitoraggio non sono associati dati EDID.
+Novità di DirectX 7.0. Il test non può continuare perché al monitoraggio non sono associati dati EDID.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NONONLOCALVIDMEM"></span><span id="dderr_nononlocalvidmem"></span>**\_NONONLOCALVIDMEM DDERR**
+<span id="DDERR_NONONLOCALVIDMEM"></span><span id="dderr_nononlocalvidmem"></span>**DDERR \_ NONONLOCALVIDMEM**
 </dt> <dd> <dl> <dt>
 
 
 
-È stato effettuato un tentativo di allocazione della memoria video non locale da un dispositivo che non supporta la memoria video non locale.
+Si è tentato di allocare memoria video non locale da un dispositivo che non supporta la memoria video non locale.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOOPTIMIZEHW"></span><span id="dderr_nooptimizehw"></span>**\_NOOPTIMIZEHW DDERR**
+<span id="DDERR_NOOPTIMIZEHW"></span><span id="dderr_nooptimizehw"></span>**DDERR \_ NOOPTIMIZEHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Il dispositivo non supporta le superfici ottimizzate.
+Il dispositivo non supporta superfici ottimizzate.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOOVERLAYDEST"></span><span id="dderr_nooverlaydest"></span>**\_NOOVERLAYDEST DDERR**
+<span id="DDERR_NOOVERLAYDEST"></span><span id="dderr_nooverlaydest"></span>**DDERR \_ NOOVERLAYDEST**
 </dt> <dd> <dl> <dt>
 
 
 
-Il metodo [**IDirectDrawSurface7:: GetOverlayPosition**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getoverlayposition) viene chiamato su una sovrimpressione che il metodo [**IDirectDrawSurface7:: UpdateOverlay**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-updateoverlay) non è stato chiamato per stabilire come destinazione.
+Il [**metodo IDirectDrawSurface7::GetOverlayPosition**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getoverlayposition) viene chiamato su una sovrimpressione su cui non è stato chiamato il metodo [**IDirectDrawSurface7::UpdateOverlay**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-updateoverlay) per stabilire come destinazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOOVERLAYHW"></span><span id="dderr_nooverlayhw"></span>**\_NOOVERLAYHW DDERR**
+<span id="DDERR_NOOVERLAYHW"></span><span id="dderr_nooverlayhw"></span>**DDERR \_ NOOVERLAYHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non sono presenti hardware sovrapposti o disponibili.
+Non è presente o disponibile alcun hardware di sovrapposizione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOPALETTEATTACHED"></span><span id="dderr_nopaletteattached"></span>**\_NOPALETTEATTACHED DDERR**
+<span id="DDERR_NOPALETTEATTACHED"></span><span id="dderr_nopaletteattached"></span>**DDERR \_ NOPALETTEATTACHED**
 </dt> <dd> <dl> <dt>
 
 
 
-Nessun oggetto tavolozza associato a questa superficie.
+Nessun oggetto tavolozza è collegato a questa superficie.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOPALETTEHW"></span><span id="dderr_nopalettehw"></span>**\_NOPALETTEHW DDERR**
+<span id="DDERR_NOPALETTEHW"></span><span id="dderr_nopalettehw"></span>**DDERR \_ NOPALETTEHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è disponibile alcun supporto hardware per le tavolozze dei colori 16 o 256.
+Non è disponibile alcun supporto hardware per le tavolozze a 16 o 256 colori.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NORASTEROPHW"></span><span id="dderr_norasterophw"></span>**\_NORASTEROPHW DDERR**
+<span id="DDERR_NORASTEROPHW"></span><span id="dderr_norasterophw"></span>**DDERR \_ NORASTEROPHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non sono presenti hardware di operazioni raster appropriate o disponibili.
+Non è presente o disponibile alcun hardware raster-operation appropriato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOROTATIONHW"></span><span id="dderr_norotationhw"></span>**\_NOROTATIONHW DDERR**
+<span id="DDERR_NOROTATIONHW"></span><span id="dderr_norotationhw"></span>**DDERR \_ NOROTATIONHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è presente alcun hardware di rotazione o disponibile.
+Nessun hardware di rotazione è presente o disponibile.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOSTEREOHARDWARE"></span><span id="dderr_nostereohardware"></span>**\_NOSTEREOHARDWARE DDERR**
+<span id="DDERR_NOSTEREOHARDWARE"></span><span id="dderr_nostereohardware"></span>**DDERR \_ NOSTEREOHARDWARE**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è presente alcun hardware stereo presente o disponibile.
+Non è presente o disponibile alcun hardware stereo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOSTRETCHHW"></span><span id="dderr_nostretchhw"></span>**\_NOSTRETCHHW DDERR**
+<span id="DDERR_NOSTRETCHHW"></span><span id="dderr_nostretchhw"></span>**DDERR \_ NOSTRETCHHW**
 </dt> <dd> <dl> <dt>
 
 
@@ -872,67 +872,67 @@ Non è disponibile alcun supporto hardware per l'estensione.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOSURFACELEFT"></span><span id="dderr_nosurfaceleft"></span>**\_NOSURFACELEFT DDERR**
+<span id="DDERR_NOSURFACELEFT"></span><span id="dderr_nosurfaceleft"></span>**DDERR \_ NOSURFACELEFT**
 </dt> <dd> <dl> <dt>
 
 
 
-Non sono presenti componenti hardware che supportano le superfici stereo.
+Non è presente alcun hardware che supporti le superfici stereo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOT4BITCOLOR"></span><span id="dderr_not4bitcolor"></span>**\_NOT4BITCOLOR DDERR**
+<span id="DDERR_NOT4BITCOLOR"></span><span id="dderr_not4bitcolor"></span>**DDERR \_ NOT4BITCOLOR**
 </dt> <dd> <dl> <dt>
 
 
 
-L'oggetto DirectDrawSurface non utilizza una tavolozza dei colori a 4 bit e l'operazione richiesta richiede una tavolozza dei colori a 4 bit.
+L'oggetto DirectDrawSurface non usa una tavolozza dei colori a 4 bit e l'operazione richiesta richiede una tavolozza dei colori a 4 bit.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOT4BITCOLORINDEX"></span><span id="dderr_not4bitcolorindex"></span>**\_NOT4BITCOLORINDEX DDERR**
+<span id="DDERR_NOT4BITCOLORINDEX"></span><span id="dderr_not4bitcolorindex"></span>**DDERR \_ NOT4BITCOLORINDEX**
 </dt> <dd> <dl> <dt>
 
 
 
-L'oggetto DirectDrawSurface non utilizza una tavolozza degli indici a 4 bit e l'operazione richiesta richiede una tavolozza per gli indici dei colori a 4 bit.
+L'oggetto DirectDrawSurface non usa una tavolozza dell'indice colori a 4 bit e l'operazione richiesta richiede una tavolozza dell'indice colori a 4 bit.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOT8BITCOLOR"></span><span id="dderr_not8bitcolor"></span>**\_NOT8BITCOLOR DDERR**
+<span id="DDERR_NOT8BITCOLOR"></span><span id="dderr_not8bitcolor"></span>**DDERR \_ NOT8BITCOLOR**
 </dt> <dd> <dl> <dt>
 
 
 
-L'oggetto DirectDrawSurface non utilizza una tavolozza dei colori a 8 bit e l'operazione richiesta richiede una tavolozza dei colori a 8 bit.
+L'oggetto DirectDrawSurface non usa una tavolozza dei colori a 8 bit e l'operazione richiesta richiede una tavolozza dei colori a 8 bit.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTAOVERLAYSURFACE"></span><span id="dderr_notaoverlaysurface"></span>**\_NOTAOVERLAYSURFACE DDERR**
+<span id="DDERR_NOTAOVERLAYSURFACE"></span><span id="dderr_notaoverlaysurface"></span>**DDERR \_ NOTAOVERLAYSURFACE**
 </dt> <dd> <dl> <dt>
 
 
 
-Per una superficie non sovrapposta viene chiamato un componente overlay.
+Un componente di sovrapposizione viene chiamato per una superficie non sovrapposta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTEXTUREHW"></span><span id="dderr_notexturehw"></span>**\_NOTEXTUREHW DDERR**
+<span id="DDERR_NOTEXTUREHW"></span><span id="dderr_notexturehw"></span>**DDERR \_ NOTEXTUREHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è possibile eseguire l'operazione perché non è presente alcun hardware di mapping delle trame o disponibile.
+L'operazione non può essere eseguita perché non è presente o disponibile alcun hardware di mapping trame.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTFLIPPABLE"></span><span id="dderr_notflippable"></span>**\_NOTFLIPPABLE DDERR**
+<span id="DDERR_NOTFLIPPABLE"></span><span id="dderr_notflippable"></span>**DDERR \_ NOTFLIPPABLE**
 </dt> <dd> <dl> <dt>
 
 
@@ -942,7 +942,7 @@ Non è possibile eseguire l'operazione perché non è presente alcun hardware di
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTFOUND"></span><span id="dderr_notfound"></span>**\_NotFound DDERR**
+<span id="DDERR_NOTFOUND"></span><span id="dderr_notfound"></span>**DDERR \_ NOTFOUND**
 </dt> <dd> <dl> <dt>
 
 
@@ -952,7 +952,7 @@ Elemento richiesto non trovato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTINITIALIZED"></span><span id="dderr_notinitialized"></span>**\_NOTINITIALIZED DDERR**
+<span id="DDERR_NOTINITIALIZED"></span><span id="dderr_notinitialized"></span>**DDERR \_ NON INIZIALIZZATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -962,7 +962,7 @@ Elemento richiesto non trovato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTLOADED"></span><span id="dderr_notloaded"></span>**\_NOTLOADED DDERR**
+<span id="DDERR_NOTLOADED"></span><span id="dderr_notloaded"></span>**DDERR \_ NON CARICATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -972,67 +972,67 @@ La superficie è una superficie ottimizzata, ma non è ancora stata allocata mem
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTLOCKED"></span><span id="dderr_notlocked"></span>**\_NOTLOCKED DDERR**
+<span id="DDERR_NOTLOCKED"></span><span id="dderr_notlocked"></span>**DDERR \_ NOTLOCKED**
 </dt> <dd> <dl> <dt>
 
 
 
-È stato effettuato un tentativo di sbloccare una superficie non bloccata.
+Si è tentato di sbloccare una superficie non bloccata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTPAGELOCKED"></span><span id="dderr_notpagelocked"></span>**\_NOTPAGELOCKED DDERR**
+<span id="DDERR_NOTPAGELOCKED"></span><span id="dderr_notpagelocked"></span>**DDERR \_ NOTPAGELOCKED**
 </dt> <dd> <dl> <dt>
 
 
 
-È stato effettuato un tentativo di sblocco di una superficie senza blocchi di pagina in attesa.
+Si è tentato di sbloccare una superficie senza blocchi di pagina in sospeso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTPALETTIZED"></span><span id="dderr_notpalettized"></span>**\_NOTPALETTIZED DDERR**
+<span id="DDERR_NOTPALETTIZED"></span><span id="dderr_notpalettized"></span>**DDERR \_ NOTPALETTIZED**
 </dt> <dd> <dl> <dt>
 
 
 
-La superficie utilizzata non è una superficie basata su tavolozza.
+La superficie usata non è una superficie basata sulla tavolozza.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOVSYNCHW"></span><span id="dderr_novsynchw"></span>**\_NOVSYNCHW DDERR**
+<span id="DDERR_NOVSYNCHW"></span><span id="dderr_novsynchw"></span>**DDERR \_ NOVSYNCHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è disponibile alcun supporto hardware per le operazioni di sincronizzazione vuote verticali.
+Non è disponibile alcun supporto hardware per le operazioni sincronizzate verticali vuote.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOZBUFFERHW"></span><span id="dderr_nozbufferhw"></span>**\_NOZBUFFERHW DDERR**
+<span id="DDERR_NOZBUFFERHW"></span><span id="dderr_nozbufferhw"></span>**DDERR \_ NOZBUFFERHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è possibile eseguire l'operazione di creazione di un buffer z nella memoria di visualizzazione o di un trasferimento a blocchi di bit (BitBlt), usando un buffer z perché non è disponibile alcun supporto hardware per i buffer z.
+L'operazione per creare un z-buffer nella memoria di visualizzazione o per eseguire un trasferimento di blocchi di bit (bitblt), l'uso di un z-buffer non può essere eseguita perché non è disponibile alcun supporto hardware per z-buffer.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOZOVERLAYHW"></span><span id="dderr_nozoverlayhw"></span>**\_NOZOVERLAYHW DDERR**
+<span id="DDERR_NOZOVERLAYHW"></span><span id="dderr_nozoverlayhw"></span>**DDERR \_ NOZOVERLAYHW**
 </dt> <dd> <dl> <dt>
 
 
 
-Le superfici sovrapposte non possono essere a livello z, in base all'ordine z perché l'hardware non supporta l'ordinamento z delle sovrapposizioni.
+Le superfici di sovrimpressione non possono essere a livelli z, in base all'ordine z perché l'hardware non supporta l'ordinamento z delle sovrimpressione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OUTOFCAPS"></span><span id="dderr_outofcaps"></span>**\_OUTOFCAPS DDERR**
+<span id="DDERR_OUTOFCAPS"></span><span id="dderr_outofcaps"></span>**DDERR \_ OUTOFCAPS**
 </dt> <dd> <dl> <dt>
 
 
@@ -1042,7 +1042,7 @@ L'hardware necessario per l'operazione richiesta è già stato allocato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OUTOFMEMORY"></span><span id="dderr_outofmemory"></span>**\_OutOfMemory DDERR**
+<span id="DDERR_OUTOFMEMORY"></span><span id="dderr_outofmemory"></span>**DDERR \_ OUTOFMEMORY**
 </dt> <dd> <dl> <dt>
 
 
@@ -1052,7 +1052,7 @@ DirectDraw non dispone di memoria sufficiente per eseguire l'operazione.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OUTOFVIDEOMEMORY"></span><span id="dderr_outofvideomemory"></span>**\_OUTOFVIDEOMEMORY DDERR**
+<span id="DDERR_OUTOFVIDEOMEMORY"></span><span id="dderr_outofvideomemory"></span>**DDERR \_ OUTOFVIDEOMEMORY**
 </dt> <dd> <dl> <dt>
 
 
@@ -1062,17 +1062,17 @@ DirectDraw non dispone di memoria di visualizzazione sufficiente per eseguire l'
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OVERLAPPINGRECTS"></span><span id="dderr_overlappingrects"></span>**\_OVERLAPPINGRECTS DDERR**
+<span id="DDERR_OVERLAPPINGRECTS"></span><span id="dderr_overlappingrects"></span>**DDERR \_ OVERLAPPINGRECTS**
 </dt> <dd> <dl> <dt>
 
 
 
-I rettangoli di origine e di destinazione si trovano nella stessa superficie e si sovrappongono.
+I rettangoli di origine e di destinazione sono sulla stessa superficie e si sovrappongono.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OVERLAYCANTCLIP"></span><span id="dderr_overlaycantclip"></span>**\_OVERLAYCANTCLIP DDERR**
+<span id="DDERR_OVERLAYCANTCLIP"></span><span id="dderr_overlaycantclip"></span>**\_SOVRIMPRESSIONE DDERRANTECLIP**
 </dt> <dd> <dl> <dt>
 
 
@@ -1082,7 +1082,7 @@ L'hardware non supporta le sovrapposizioni ritagliate.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OVERLAYCOLORKEYONLYONEACTIVE"></span><span id="dderr_overlaycolorkeyonlyoneactive"></span>**\_OVERLAYCOLORKEYONLYONEACTIVE DDERR**
+<span id="DDERR_OVERLAYCOLORKEYONLYONEACTIVE"></span><span id="dderr_overlaycolorkeyonlyoneactive"></span>**\_SOVRIMPRESSIONE DDERRCOLORKEYONLYONEACTIVE**
 </dt> <dd> <dl> <dt>
 
 
@@ -1092,27 +1092,27 @@ L'hardware non supporta le sovrapposizioni ritagliate.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OVERLAYNOTVISIBLE"></span><span id="dderr_overlaynotvisible"></span>**\_OVERLAYNOTVISIBLE DDERR**
+<span id="DDERR_OVERLAYNOTVISIBLE"></span><span id="dderr_overlaynotvisible"></span>**OVERLAY \_ DDERRNOTVISIBLE**
 </dt> <dd> <dl> <dt>
 
 
 
-Il metodo [**IDirectDrawSurface7:: GetOverlayPosition**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getoverlayposition) è stato chiamato su una sovrapposizione nascosta.
+Il [**metodo IDirectDrawSurface7::GetOverlayPosition**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-getoverlayposition) è stato chiamato su una sovrimpressione nascosta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_PALETTEBUSY"></span><span id="dderr_palettebusy"></span>**\_PALETTEBUSY DDERR**
+<span id="DDERR_PALETTEBUSY"></span><span id="dderr_palettebusy"></span>**DDERR \_ PALETTEBUSY**
 </dt> <dd> <dl> <dt>
 
 
 
-L'accesso a questa tavolozza è stato rifiutato perché la tavolozza è bloccata da un altro thread.
+L'accesso a questo riquadro viene rifiutato perché il riquadro è bloccato da un altro thread.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_PRIMARYSURFACEALREADYEXISTS"></span><span id="dderr_primarysurfacealreadyexists"></span>**\_PRIMARYSURFACEALREADYEXISTS DDERR**
+<span id="DDERR_PRIMARYSURFACEALREADYEXISTS"></span><span id="dderr_primarysurfacealreadyexists"></span>**DDERR \_ PRIMARYSURFACEALREADYEXISTS**
 </dt> <dd> <dl> <dt>
 
 
@@ -1122,17 +1122,17 @@ Questo processo ha già creato una superficie primaria.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_REGIONTOOSMALL"></span><span id="dderr_regiontoosmall"></span>**\_REGIONTOOSMALL DDERR**
+<span id="DDERR_REGIONTOOSMALL"></span><span id="dderr_regiontoosmall"></span>**AREA \_ DDERRTOOSMALL**
 </dt> <dd> <dl> <dt>
 
 
 
-L'area passata al metodo [**IDirectDrawClipper:: getclipart**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-getcliplist) è troppo piccola.
+L'area passata al [**metodo IDirectDrawClipper::GetClipList**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawclipper-getcliplist) è troppo piccola.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_SURFACEALREADYATTACHED"></span><span id="dderr_surfacealreadyattached"></span>**\_SURFACEALREADYATTACHED DDERR**
+<span id="DDERR_SURFACEALREADYATTACHED"></span><span id="dderr_surfacealreadyattached"></span>**DDERR \_ SURFACEALREADYATTACHED**
 </dt> <dd> <dl> <dt>
 
 
@@ -1142,17 +1142,17 @@ L'area passata al metodo [**IDirectDrawClipper:: getclipart**](/windows/desktop/
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_SURFACEALREADYDEPENDENT"></span><span id="dderr_surfacealreadydependent"></span>**\_SURFACEALREADYDEPENDENT DDERR**
+<span id="DDERR_SURFACEALREADYDEPENDENT"></span><span id="dderr_surfacealreadydependent"></span>**DDERR \_ SURFACEALREADYDEPENDENT**
 </dt> <dd> <dl> <dt>
 
 
 
-È stato effettuato un tentativo di rendere una superficie una dipendenza da un'altra superficie su cui è già dipendente.
+È stato effettuato un tentativo di rendere una superficie una dipendenza di un'altra superficie da cui è già dipendente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_SURFACEBUSY"></span><span id="dderr_surfacebusy"></span>**\_SURFACEBUSY DDERR**
+<span id="DDERR_SURFACEBUSY"></span><span id="dderr_surfacebusy"></span>**DDERR \_ SURFACEBUSY**
 </dt> <dd> <dl> <dt>
 
 
@@ -1162,7 +1162,7 @@ L'accesso alla superficie viene rifiutato perché la superficie è bloccata da u
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_SURFACEISOBSCURED"></span><span id="dderr_surfaceisobscured"></span>**\_SURFACEISOBSCURED DDERR**
+<span id="DDERR_SURFACEISOBSCURED"></span><span id="dderr_surfaceisobscured"></span>**SUPERFICIE \_ DDERRISOBSCURED**
 </dt> <dd> <dl> <dt>
 
 
@@ -1172,17 +1172,17 @@ L'accesso alla superficie viene rifiutato perché la superficie è nascosta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_SURFACELOST"></span><span id="dderr_surfacelost"></span>**\_SURFACELOST DDERR**
+<span id="DDERR_SURFACELOST"></span><span id="dderr_surfacelost"></span>**DDERR \_ SURFACELOST**
 </dt> <dd> <dl> <dt>
 
 
 
-L'accesso alla superficie viene rifiutato perché la memoria della superficie è sparita. Chiamare il metodo [**IDirectDrawSurface7:: Restore**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-restore) su questa superficie per ripristinare la memoria associata.
+L'accesso alla superficie viene rifiutato perché la memoria della superficie non è più disponibile. Chiamare il [**metodo IDirectDrawSurface7::Restore**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-restore) su questa superficie per ripristinare la memoria associata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_SURFACENOTATTACHED"></span><span id="dderr_surfacenotattached"></span>**\_SURFACENOTATTACHED DDERR**
+<span id="DDERR_SURFACENOTATTACHED"></span><span id="dderr_surfacenotattached"></span>**DDERR \_ SURFACENOTATTACHED**
 </dt> <dd> <dl> <dt>
 
 
@@ -1192,17 +1192,17 @@ La superficie richiesta non è collegata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_TESTFINISHED"></span><span id="dderr_testfinished"></span>**\_TESTFINISHED DDERR**
+<span id="DDERR_TESTFINISHED"></span><span id="dderr_testfinished"></span>**DDERR \_ TESTFINISHED**
 </dt> <dd> <dl> <dt>
 
 
 
-Novità per DirectX 7,0. Quando viene restituito dal metodo [**IDirectDraw7:: StartModeTest**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) , questo valore indica che non è stato possibile avviare alcun test perché tutte le risoluzioni selezionate per il test hanno già le informazioni sulla frequenza di aggiornamento nel registro di sistema. Quando viene restituito da [**IDirectDraw7:: EvaluateMode**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode), il valore indica che DirectDraw ha completato un test della frequenza di aggiornamento.
+Novità di DirectX 7.0. Se restituito dal metodo [**IDirectDraw7::StartModeTest,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) questo valore indica che non è stato possibile avviare alcun test perché tutte le risoluzioni scelte per i test hanno già informazioni sulla frequenza di aggiornamento nel Registro di sistema. Quando viene restituito [**da IDirectDraw7::EvaluateMode,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode)il valore indica che DirectDraw ha completato un test della frequenza di aggiornamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_TOOBIGHEIGHT"></span><span id="dderr_toobigheight"></span>**\_TOOBIGHEIGHT DDERR**
+<span id="DDERR_TOOBIGHEIGHT"></span><span id="dderr_toobigheight"></span>**DDERR \_ TOOBIGHEIGHT**
 </dt> <dd> <dl> <dt>
 
 
@@ -1212,17 +1212,17 @@ L'altezza richiesta da DirectDraw è troppo grande.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_TOOBIGSIZE"></span><span id="dderr_toobigsize"></span>**\_TOOBIGSIZE DDERR**
+<span id="DDERR_TOOBIGSIZE"></span><span id="dderr_toobigsize"></span>**DDERR \_ TOOBIGSIZE**
 </dt> <dd> <dl> <dt>
 
 
 
-La dimensione richiesta da DirectDraw è troppo grande. Tuttavia, l'altezza e la larghezza individuali sono dimensioni valide.
+Le dimensioni richieste da DirectDraw sono troppo grandi. Tuttavia, l'altezza e la larghezza singole sono dimensioni valide.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_TOOBIGWIDTH"></span><span id="dderr_toobigwidth"></span>**\_TOOBIGWIDTH DDERR**
+<span id="DDERR_TOOBIGWIDTH"></span><span id="dderr_toobigwidth"></span>**DDERR \_ TOOBIGWIDTH**
 </dt> <dd> <dl> <dt>
 
 
@@ -1232,7 +1232,7 @@ La larghezza richiesta da DirectDraw è troppo grande.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_UNSUPPORTED"></span><span id="dderr_unsupported"></span>**DDERR non \_ supportato**
+<span id="DDERR_UNSUPPORTED"></span><span id="dderr_unsupported"></span>**DDERR \_ NON SUPPORTATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -1242,7 +1242,7 @@ L'operazione non è supportata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_UNSUPPORTEDFORMAT"></span><span id="dderr_unsupportedformat"></span>**\_UNSUPPORTEDFORMAT DDERR**
+<span id="DDERR_UNSUPPORTEDFORMAT"></span><span id="dderr_unsupportedformat"></span>**DDERR \_ UNSUPPORTEDFORMAT**
 </dt> <dd> <dl> <dt>
 
 
@@ -1252,17 +1252,17 @@ Il formato pixel richiesto non è supportato da DirectDraw.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_UNSUPPORTEDMASK"></span><span id="dderr_unsupportedmask"></span>**\_UNSUPPORTEDMASK DDERR**
+<span id="DDERR_UNSUPPORTEDMASK"></span><span id="dderr_unsupportedmask"></span>**DDERR \_ UNSUPPORTEDMASK**
 </dt> <dd> <dl> <dt>
 
 
 
-La maschera di maschera nel formato pixel richiesta non è supportata da DirectDraw.
+La maschera di bit nel formato pixel richiesto non è supportata da DirectDraw.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_UNSUPPORTEDMODE"></span><span id="dderr_unsupportedmode"></span>**\_UNSUPPORTEDMODE DDERR**
+<span id="DDERR_UNSUPPORTEDMODE"></span><span id="dderr_unsupportedmode"></span>**DDERR \_ UNSUPPORTEDMODE**
 </dt> <dd> <dl> <dt>
 
 
@@ -1272,7 +1272,7 @@ La visualizzazione è attualmente in modalità non supportata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_VERTICALBLANKINPROGRESS"></span><span id="dderr_verticalblankinprogress"></span>**\_VERTICALBLANKINPROGRESS DDERR**
+<span id="DDERR_VERTICALBLANKINPROGRESS"></span><span id="dderr_verticalblankinprogress"></span>**DDERR \_ VERTICALBLANKINPROGRESS**
 </dt> <dd> <dl> <dt>
 
 
@@ -1282,7 +1282,7 @@ La visualizzazione è attualmente in modalità non supportata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_VIDEONOTACTIVE"></span><span id="dderr_videonotactive"></span>**\_VIDEONOTACTIVE DDERR**
+<span id="DDERR_VIDEONOTACTIVE"></span><span id="dderr_videonotactive"></span>**VIDEO \_ DDERRNOTACTIVE**
 </dt> <dd> <dl> <dt>
 
 
@@ -1292,32 +1292,32 @@ La porta video non è attiva.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_WASSTILLDRAWING"></span><span id="dderr_wasstilldrawing"></span>**\_WASSTILLDRAWING DDERR**
+<span id="DDERR_WASSTILLDRAWING"></span><span id="dderr_wasstilldrawing"></span>**DDERR \_ WASSTILLDRAWING**
 </dt> <dd> <dl> <dt>
 
 
 
-L'operazione BitBlt precedente che sta trasferendo informazioni da o verso questa superficie non è completa.
+L'operazione bitblt precedente che trasferisce informazioni da o verso questa superficie è incompleta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_WRONGMODE"></span><span id="dderr_wrongmode"></span>**\_WRONGMODE DDERR**
+<span id="DDERR_WRONGMODE"></span><span id="dderr_wrongmode"></span>**DDERR \_ WRONGMODE**
 </dt> <dd> <dl> <dt>
 
 
 
-Impossibile ripristinare la superficie perché è stata creata in una modalità diversa.
+Questa superficie non può essere ripristinata perché è stata creata in una modalità diversa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_XALIGN"></span><span id="dderr_xalign"></span>**\_XALIGN DDERR**
+<span id="DDERR_XALIGN"></span><span id="dderr_xalign"></span>**DDERR \_ XALIGN**
 </dt> <dd> <dl> <dt>
 
 
 
-Il rettangolo specificato non è stato allineato orizzontalmente su un limite obbligatorio.
+Il rettangolo specificato non era allineato orizzontalmente su un limite obbligatorio.
 
 
 </dt> </dl> </dd> </dl>
@@ -1328,7 +1328,7 @@ Il rettangolo specificato non è stato allineato orizzontalmente su un limite ob
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Ddraw. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Ddraw.h</dt> </dl> |
 
 
 

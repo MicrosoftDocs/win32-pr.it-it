@@ -1,19 +1,19 @@
 ---
-description: Specifica la complessità dell'algoritmo del codificatore.
+description: "MFPKEY_COMPLEXITY proprietà : specifica la complessità dell'algoritmo del codificatore."
 ms.assetid: 1537e98b-d7ed-49e6-aa25-8f2f124c88eb
-title: Proprietà MFPKEY_COMPLEXITY (Wmcodecdsp. h)
+title: MFPKEY_COMPLEXITY proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05325f3ab0cc1173924df9f6c551bf10fd0d5481
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 042e3158b43efb5a4a82542f000d137fa0c195e6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227021"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092939"
 ---
-# <a name="mfpkey_complexity-property"></a>\_Proprietà complessità MFPKEY
+# <a name="mfpkey_complexity-property"></a>Proprietà MFPKEY \_ COMPLEXITY
 
-\[[**MFPKEY \_ La complessità**](mfpkey-complexityexproperty.md) è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. In alternativa, usare **MFPKEY \_ COMPLEXITYEX**.\]
+\[[**MFPKEY \_ COMPLEXITY**](mfpkey-complexityexproperty.md) è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece **MFPKEY \_ COMPLEXITYEX.**\]
 
 Specifica la complessità dell'algoritmo del codificatore.
 
@@ -31,10 +31,10 @@ Il valore predefinito dipende dalla versione del codificatore video, come illust
 
 
 
-| Versione codificatore                 | Valore predefinito |
+| Versione del codificatore                 | Valore predefinito |
 |---------------------------------|---------------|
-| Codificatore Windows Media Video 9   | 3             |
-| Codificatore Windows Media Video 7/8 | 1             |
+| codificatore Windows Media Video 9   | 3             |
+| Windows Media Video codificatore 7/8 | 1             |
 
 
 
@@ -42,7 +42,7 @@ Il valore predefinito dipende dalla versione del codificatore video, come illust
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore integer è compreso tra 0 e 3. I valori più bassi fanno sì che il codec usi algoritmi di codifica meno complessi. Sebbene gli algoritmi più semplici producano un output di qualità inferiore, il processo di codifica è più veloce e richiede una minore potenza di elaborazione.
+Questo valore intero è compreso tra 0 e 3. I valori inferiori determinano l'uso di algoritmi di codifica meno complessi da parte del codec. Anche se gli algoritmi più semplici producono output di qualità inferiore, il processo di codifica è più veloce e richiede meno potenza di elaborazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Questo valore integer è compreso tra 0 e 3. I valori più bassi fanno sì che i
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                             |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Questo valore integer è compreso tra 0 e 3. I valori più bassi fanno sì che i
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  
