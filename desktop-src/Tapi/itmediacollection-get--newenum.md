@@ -1,21 +1,21 @@
 ---
-description: Il \_ \_ metodo Get NewEnum restituisce un enumeratore per la raccolta.
+description: 'Metodo ITMediaCollection::get__NewEnum: il metodo get \_ \_ NewEnum restituisce un enumeratore per la raccolta.'
 ms.assetid: 22b1eb48-e1ef-4694-a1dc-b2de326989c8
-title: 'Metodo ITMediaCollection:: get__NewEnum (sdpblb. h)'
+title: Metodo ITMediaCollection::get__NewEnum (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfa5655d70026fe2c481aedad0e76923f4caa646
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6683ce0a00f0128cb959dd5a2c39e8b06382f65d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329733"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098359"
 ---
-# <a name="itmediacollectionget__newenum-method"></a>Metodo ITMediaCollection:: Get \_ \_ NewEnum
+# <a name="itmediacollectionget__newenum-method"></a>Metodo ITMediaCollection::get \_ \_ NewEnum
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[ I controlli e le interfacce rendezvous IP Telephony Conferencing non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **get \_ \_ NewEnum** restituisce un enumeratore per la raccolta.
+Il **metodo get \_ \_ NewEnum** restituisce un enumeratore per la raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,12 +32,12 @@ HRESULT get__NewEnum(
 
 <dl> <dt>
 
-*pval* \[ out\]
+*pVal* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un'interfaccia [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) su un oggetto enumeratore per la raccolta.
+Puntatore a [un'interfaccia IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) su un oggetto enumeratore per la raccolta.
 
-Chiamare il metodo [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) sull'interfaccia **IUnknown** restituita per ottenere un puntatore a un'interfaccia di enumerazione [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) nell'insieme. In **IEnumVARIANT** sono disponibili diversi metodi che è possibile utilizzare per scorrere la raccolta.
+Chiamare il [metodo QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) sull'interfaccia **IUnknown** restituita per ottenere un puntatore a [un'interfaccia di enumerazione IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) nella raccolta. **IEnumVARIANT** fornisce una serie di metodi che è possibile usare per scorrere la raccolta.
 
 Per ulteriori informazioni, vedere la sezione Osservazioni successiva.
 
@@ -51,10 +51,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Il parametro *pval* non è un puntatore valido.<br/>         |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | Il *parametro pVal* non è un puntatore valido.<br/>         |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                  |
 
 
@@ -63,7 +63,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è interscambiabile con [**get \_ EnumerationIf**](itmediacollection-get-enumerationif.md) , ad eccezione del fatto che restituisce **IUnknown** invece di [**IEnumMedia**](ienummedia.md).
+Questo metodo è intercambiabile con [**get \_ EnumerationIf,**](itmediacollection-get-enumerationif.md) ad eccezione del fatto che restituisce **IUnknown** anziché [**IEnumMedia**](ienummedia.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,9 +71,9 @@ Questo metodo è interscambiabile con [**get \_ EnumerationIf**](itmediacollecti
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

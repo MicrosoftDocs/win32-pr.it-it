@@ -1,7 +1,7 @@
 ---
-description: Recupera le informazioni su una determinata immagine in una risorsa.
+description: 'Funzione D3DX10GetImageInfoFromResource: recupera informazioni su una determinata immagine in una risorsa.'
 ms.assetid: d413d887-77e0-43cc-a30e-67c3c40772f0
-title: Funzione D3DX10GetImageInfoFromResource (D3DX10Tex. h)
+title: Funzione D3DX10GetImageInfoFromResource (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e77efb973e20a5db708d28b49f0cee27bee7d4e5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 650d05f379be634bfdd9dfb0908153260f795b00
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234971"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098369"
 ---
-# <a name="d3dx10getimageinfofromresource-function"></a>D3DX10GetImageInfoFromResource (funzione)
+# <a name="d3dx10getimageinfofromresource-function"></a>Funzione D3DX10GetImageInfoFromResource
 
-Recupera le informazioni su una determinata immagine in una risorsa.
+Recupera informazioni su una determinata immagine in una risorsa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ HRESULT D3DX10GetImageInfoFromResource(
 
 <dl> <dt>
 
-*hSrcModule* \[ in\]
+*hSrcModule* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **hmodule**](../winprog/windows-data-types.md)**
+Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Modulo in cui viene caricata la risorsa. Impostare questo parametro su **null** per specificare il modulo associato all'immagine utilizzata dal sistema operativo per creare il processo corrente.
+Modulo in cui viene caricata la risorsa. Impostare questo parametro su **NULL** per specificare il modulo associato all'immagine usata dal sistema operativo per creare il processo corrente.
 
 </dd> <dt>
 
-*pSrcResource* \[ in\]
+*pSrcResource* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome del file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Puntatore a una stringa che specifica il nome file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*pPump* \[ in\]
+*pPump* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Pump di thread facoltativo che può essere usato per caricare le informazioni in modo asincrono. Può essere **null**. Vedere [**ID3DX10ThreadPump**](id3dx10threadpump.md).
+Pump di thread facoltativo che può essere usato per caricare le informazioni in modo asincrono. Può essere **NULL.** Vedere [**ID3DX10ThreadPump**](id3dx10threadpump.md).
 
 </dd> <dt>
 
-*pSrcInfo* \[ in\]
+*pSrcInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **d3dx10 \_ Image \_ info**](d3dx10-image-info.md)\***
+Tipo: **[ **D3DX10 \_ IMAGE \_ INFO**](d3dx10-image-info.md)\***
 
-Puntatore a una \_ \_ struttura di informazioni sull'immagine d3dx10 per la compilazione con la descrizione dei dati nel file di origine.
+Puntatore a una struttura IMAGE INFO D3DX10 da riempire con la descrizione dei \_ dati nel file di \_ origine.
 
 </dd> <dt>
 
-*pHResult* \[ out\]
+*pHResult* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntatore al valore restituito. Può essere **null**. Se *pPump* non è **null**, *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
+Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DX10GetImageInfoFromResourceW. In caso contrario, la chiamata di funzione viene risolta in D3DX10GetImageInfoFromResourceA perché vengono utilizzate le stringhe ANSI.
+L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in D3DX10GetImageInfoFromResourceW. In caso contrario, la chiamata di funzione viene risolta in D3DX10GetImageInfoFromResourceA perché vengono usate stringhe ANSI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ L'impostazione del compilatore determina anche la versione della funzione. Se è
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 

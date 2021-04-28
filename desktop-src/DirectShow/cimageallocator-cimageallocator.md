@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CImageAllocator.CImageAllocator - Metodo costruttore.
 ms.assetid: 8c215b16-98e5-42fb-a95b-b6df1ade180e
-title: Costruttore CImageAllocator. CImageAllocator (Winutil. h)
+title: Costruttore CImageAllocator.CImageAllocator (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a5f6873e8cc073e0b716f94c980ecceba8f4512f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f17ae78b668f6cc35e454c5e4e83d38727077ef7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329773"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085759"
 ---
-# <a name="cimageallocatorcimageallocator-constructor"></a>Costruttore CImageAllocator. CImageAllocator
+# <a name="cimageallocatorcimageallocator-constructor"></a>Costruttore CImageAllocator.CImageAllocator
 
 Metodo del costruttore.
 
@@ -51,17 +51,17 @@ Puntatore al filtro proprietario.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Puntatore a una stringa contenente il nome di debug dell'allocatore. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Puntatore a una stringa contenente il nome di debug dell'allocatore. Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a un valore **HRESULT** . Impostare il valore su S \_ OK prima di creare l'oggetto. Se il costruttore ha esito negativo, il valore viene impostato su un codice di errore.
+Puntatore a un **valore HRESULT.** Impostare il valore su S \_ OK prima di creare l'oggetto. Se il costruttore ha esito negativo, il valore viene impostato su un codice di errore.
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Puntatore a un valore **HRESULT** . Impostare il valore su S \_ OK prima di crea
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

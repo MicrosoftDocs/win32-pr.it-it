@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi UDP/IP. La sintassi seguente è semplificata dal codice MOF.
+description: 'UdpIp_V0 classe: questa classe è la classe padre per gli eventi UDP/IP. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 2c7ac6b2-7dd7-4da7-ae0b-ac0ffffeb74b
-title: Classe UdpIp_V0
+title: UdpIp_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b37bd31ea5ec2678e933b9f42efd13282b85d23a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 845466d630a671416ac465d0b73d99976d4521e9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977807"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105419"
 ---
-# <a name="udpip_v0-class"></a>\_Classe UdpIp V0
+# <a name="udpip_v0-class"></a>Classe UdpIp \_ V0
 
 Questa classe è la classe padre per gli eventi UDP/IP.
 
@@ -36,7 +36,7 @@ class UdpIp_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe **UdpIp \_ V0** non definisce membri.
+La **classe UdpIp \_ V0** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,7 +44,7 @@ La classe **UdpIp \_ V0** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                   |
 
 
@@ -53,7 +53,7 @@ La classe **UdpIp \_ V0** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**UdpIp**](udpip.md)

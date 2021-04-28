@@ -1,7 +1,7 @@
 ---
-description: Esegue un'operazione specificata su un file specificato.
+description: "Metodo IShellDispatch2.ShellExecute: esegue un'operazione specificata su un file specificato."
 ms.assetid: a55e804c-ed7c-4b22-b86f-8e5653976654
-title: Metodo IShellDispatch2. ShellExecute (shldisp. h)
+title: Metodo IShellDispatch2.ShellExecute (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ed5a8a2732f8ca358a0582d1da23aa7ffa7a98df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 5c058275948d5d96805ae24a76389321d7c69b8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978023"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117019"
 ---
-# <a name="ishelldispatch2shellexecute-method"></a>IShellDispatch2. ShellExecute, metodo
+# <a name="ishelldispatch2shellexecute-method"></a>Metodo IShellDispatch2.ShellExecute
 
 Esegue un'operazione specificata su un file specificato.
 
@@ -57,19 +57,19 @@ IShellDispatch2.ShellExecute( _
 
 <dl> <dt>
 
-*sfile* \[ in\]
+*sFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il nome del file in cui **ShellExecute** eseguirà l'azione specificata da *vOperation*.
+Valore **String** contenente il nome del file in cui **ShellExecute** eseguirà l'azione specificata da *vOperation.*
 
 </dd> <dt>
 
 *vArguments* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
 Stringa che contiene i valori dei parametri per l'operazione.
 
@@ -78,9 +78,9 @@ Stringa che contiene i valori dei parametri per l'operazione.
 *vDirectory* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Percorso completo della directory che contiene il file specificato da *sfile*. Se questo parametro non viene specificato, viene utilizzata la directory di lavoro corrente.
+Percorso completo della directory che contiene il file specificato da *sFile*. Se questo parametro non viene specificato, viene utilizzata la directory di lavoro corrente.
 
 </dd> <dt>
 
@@ -89,27 +89,27 @@ Percorso completo della directory che contiene il file specificato da *sfile*. S
 
 Tipo: **Variant**
 
-L'operazione da eseguire. Questo valore è impostato su una delle stringhe dei verbi supportate dal file. Per informazioni sui verbi, vedere la sezione Osservazioni. Se questo parametro non viene specificato, viene eseguita l'operazione predefinita.
+L'operazione da eseguire. Questo valore è impostato su una delle stringhe verbo supportate dal file. Per una descrizione dei verbi, vedere la sezione Osservazioni. Se questo parametro non viene specificato, viene eseguita l'operazione predefinita.
 
 </dd> <dt>
 
 *vShow* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Indicazione relativa alla modalità di visualizzazione iniziale della finestra dell'applicazione. Questa raccomandazione può essere ignorata dall'applicazione. Questo parametro può avere uno dei valori seguenti. Se questo parametro non viene specificato, l'applicazione utilizzerà il relativo valore predefinito.
+Raccomandazione su come visualizzare inizialmente la finestra dell'applicazione. L'applicazione può ignorare questa raccomandazione. Questo parametro può avere uno dei valori seguenti. Se questo parametro non viene specificato, l'applicazione usa il valore predefinito.
 
 
 
 | Valore                                                                                                                               | Significato                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt></dt><dt>0</dt> </dl>  | Aprire l'applicazione con una finestra nascosta.<br/>                                                                                                    |
-| <dl> <dt></dt> <dt>1</dt> </dl>  | Aprire l'applicazione con una finestra normale. Se la finestra è ridotta a icona o ingrandita, il sistema ripristina le dimensioni e la posizione originali.<br/> |
+| <dl> <dt></dt> <dt>1</dt> </dl>  | Aprire l'applicazione con una finestra normale. Se la finestra è ridotta a icona o ingrandita, il sistema la ripristina alle dimensioni e alla posizione originali.<br/> |
 | <dl> <dt></dt> <dt>2</dt> </dl>  | Aprire l'applicazione con una finestra ridotta a icona.<br/>                                                                                                 |
 | <dl> <dt></dt> <dt>3</dt> </dl>  | Aprire l'applicazione con una finestra ingrandita.<br/>                                                                                                 |
 | <dl> <dt></dt><dt>4</dt> </dl>  | Aprire l'applicazione con la relativa finestra con le dimensioni e la posizione più recenti. La finestra attiva rimane attiva.<br/>                                  |
-| <dl> <dt></dt><dt>5</dt> </dl>  | Aprire l'applicazione con la relativa finestra in corrispondenza delle dimensioni e della posizione correnti.<br/>                                                                        |
+| <dl> <dt></dt><dt>5</dt> </dl>  | Aprire l'applicazione con la relativa finestra con le dimensioni e la posizione correnti.<br/>                                                                        |
 | <dl> <dt></dt><dt>7</dt> </dl>  | Aprire l'applicazione con una finestra ridotta a icona. La finestra attiva rimane attiva.<br/>                                                               |
 | <dl> <dt></dt><dt>10</dt> </dl> | Aprire l'applicazione con la relativa finestra nello stato predefinito specificato dall'applicazione.<br/>                                                       |
 
@@ -121,17 +121,17 @@ Indicazione relativa alla modalità di visualizzazione iniziale della finestra d
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. ShellExecute**](./shell-shellexecute.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.ShellExecute.**](./shell-shellexecute.md)
 
-Questo metodo equivale a avviare uno dei comandi associati al menu di scelta rapida di un file. Ogni comando è rappresentato da una stringa verbo. Il set di verbi supportati varia da file a file. Il verbo più comunemente supportato è "Open", che è in genere anche il verbo predefinito. Altri verbi possono essere supportati solo da determinati tipi di file. Per ulteriori informazioni sui verbi della shell, vedere [avvio di applicazioni](launch.md) o [estensione dei menu di scelta rapida](context.md).
+Questo metodo equivale all'avvio di uno dei comandi associati al menu di scelta rapida di un file. Ogni comando è rappresentato da una stringa verbo. Il set di verbi supportati varia da file a file. Il verbo più comunemente supportato è "open", che in genere è anche il verbo predefinito. Altri verbi potrebbero essere supportati solo da determinati tipi di file. Per altre informazioni sui verbi della shell, vedere [Avvio di applicazioni o](launch.md) Estensione dei menu di scelta [rapida.](context.md)
 
 Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **ShellExecute** per aprire il blocco note. L'utilizzo viene visualizzato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso di **ShellExecute per** aprire il Blocco note. L'utilizzo viene visualizzato per JScript e VBScript.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -147,7 +147,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -172,11 +172,11 @@ VBScript
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando viene riconosciuto un movimento del sistema.
+description: 'InkCollector.Sysevento temGesture: si verifica quando viene riconosciuto un movimento di sistema.'
 ms.assetid: 11071d6f-8aa3-4902-94fd-89ad0cf17729
-title: Evento InkCollector.SystemGesture (Msinkaut. h)
+title: InkCollector.SystemGesture (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 282f28e5ef1bc3a86f51b6d345be6e00d78c8213
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f753807d8aaaf03c2de2fd9810ef1e044bcbe05
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525945"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110052"
 ---
-# <a name="inkcollectorsystemgesture-event"></a>Evento temGesture InkCollector.Sys
+# <a name="inkcollectorsystemgesture-event"></a>InkCollector.Sysevento temGesture
 
-Si verifica quando viene riconosciuto un movimento del sistema.
+Si verifica quando viene riconosciuto un movimento di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,17 +36,17 @@ void SystemGesture(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **SystemGesture** .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato **l'evento SystemGesture.**
 
 </dd> <dt>
 
 *ID* \[ in\]
 </dt> <dd>
 
-Valore del movimento del sistema.
+Valore del movimento di sistema.
 
 </dd> <dt>
 
@@ -64,24 +64,24 @@ Coordinata y della posizione del movimento.
 
 </dd> <dt>
 
-*Modificatore* \[ in\]
+*Modificatore* \[ Pollici\]
 </dt> <dd>
 
 Riservato.
 
 </dd> <dt>
 
-*Carattere* \[ in\]
+*Carattere* \[ Pollici\]
 </dt> <dd>
 
 Riservato.
 
 </dd> <dt>
 
-*CursorMode* \[ in\]
+*CursorMode* \[ Pollici\]
 </dt> <dd>
 
-Valore che indica se l'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) è in modalità normale o in modalità gomma. 1 è per la modalità normale e 2 sono per la modalità gomma.
+Valore che indica se l'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) è in modalità normale o in modalità gomma. 1 è per la modalità normale e 2 per la modalità di cancellazione.
 
 </dd> </dl>
 
@@ -91,15 +91,15 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-I movimenti di sistema sono utili perché forniscono informazioni sull'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) usato per creare il movimento. Forniscono anche collegamenti alle combinazioni di eventi del mouse e sono metodi "più economici" per rilevare gli eventi del mouse.
+I movimenti di sistema sono utili perché forniscono informazioni sull'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) usato per creare il movimento. Forniscono inoltre collegamenti a combinazioni di eventi del mouse e sono modi "più economici" per rilevare gli eventi del mouse.
 
-Ad esempio, invece di cercare una [](inkcollector-mouseup.md)  /  coppia di eventi di evento [**MouseDown**](inkcollector-mousedown.md) di un evento MouseUp senza che si verifichino altri eventi del mouse, è possibile cercare i movimenti del sistema [**Tap**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) o **RightTap** .
+Ad esempio, anziché cercare una coppia di eventi [**MouseUp Event**](inkcollector-mouseup.md)MouseDown Event senza altri eventi del mouse che si verificano tra di loro, è possibile cercare i movimenti di sistema Tap o  /  [](inkcollector-mousedown.md) **RightTap.** [](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture)
 
-Come altro esempio, anziché ascoltare gli eventi dell'evento MouseMove di [**evento MouseDown**](inkcollector-mousedown.md)  /  [](inkcollector-mousemove.md) e ottenere numerosi messaggi di **evento MouseMove** , è possibile osservare i movimenti del sistema di [**trascinamento**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) o **RightDrag se** , purché non si sia interessati alle coordinate (x, y) di ogni posizione del mouse. In questo modo è possibile ricevere un solo messaggio anziché molti messaggi di **evento MouseMove** .
+Come altro esempio, invece di ascoltare gli eventi evento [](inkcollector-mousedown.md)  /  [**MouseMove**](inkcollector-mousemove.md) dell'evento MouseDown e ricevere numerosi messaggi di evento **MouseMove,** è possibile controllare i movimenti di sistema [**Drag**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) o **RightDrag** purché non si sia interessati alle coordinate (x, y) di ogni posizione del mouse. In questo modo è possibile ricevere un solo messaggio anziché numerosi **messaggi di evento MouseMove.**
 
-Per un elenco di movimenti di sistema specifici, vedere il tipo di enumerazione [**InkSystemGesture**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) . Per ulteriori informazioni sui movimenti di sistema, vedere [utilizzo di movimenti](using-gestures.md) e [input del comando sul Tablet PC](/previous-versions//dd314533(v=vs.85)).
+Per un elenco di movimenti di sistema specifici, vedere il tipo di enumerazione [**InkSystemGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) Per altre informazioni sui movimenti di sistema, vedere [Uso di movimenti e](using-gestures.md) input dei comandi nel Tablet [PC.](/previous-versions//dd314533(v=vs.85))
 
-Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents dispatch (DISPINTERFACES) con ID DISPID \_ ICESystemGesture.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICESystemGesture.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -107,9 +107,9 @@ Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -127,13 +127,13 @@ Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ 
 [**Interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 </dt> <dt>
 
-[Uso di movimenti](using-gestures.md)
+[Uso dei movimenti](using-gestures.md)
 </dt> <dt>
 
 [Input penna, input penna e riconoscimento](pen-input--ink--and-recognition.md)
 </dt> <dt>
 
-[Input del comando sul Tablet PC](/previous-versions//dd314533(v=vs.85))
+[Input dei comandi nel Tablet PC](/previous-versions//dd314533(v=vs.85))
 </dt> </dl>
 
  

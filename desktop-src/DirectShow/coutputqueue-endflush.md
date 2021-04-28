@@ -1,7 +1,7 @@
 ---
-description: Il metodo EndFlush termina un'operazione di svuotamento.
+description: "Metodo COutputQueue.EndFlush: il metodo EndFlush termina un'operazione di scaricamento."
 ms.assetid: 9171a62a-9072-49a3-8e83-f66d7e1483da
-title: Metodo COutputQueue. EndFlush (Outputq. h)
+title: Metodo COutputQueue.EndFlush (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e18afec866176147c5c75a57fca522c4ebc5fcf6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37701526de66c8cd679f6849703c4eb2a1feb3ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330210"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099009"
 ---
-# <a name="coutputqueueendflush-method"></a>COutputQueue. EndFlush, metodo
+# <a name="coutputqueueendflush-method"></a>Metodo COutputQueue.EndFlush
 
-Il `EndFlush` metodo termina un'operazione di svuotamento.
+Il `EndFlush` metodo termina un'operazione di scaricamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'oggetto utilizza un thread, questo metodo attende l'evento [**COutputQueue:: m \_ evFlushComplete**](coutputqueue-m-evflushcomplete.md) . Il thread segnala questo evento dopo aver liberato tutti gli esempi in sospeso. Se l'oggetto non utilizza un thread, questo metodo chiama il metodo [**COutputQueue:: FreeSamples**](coutputqueue-freesamples.md) . Il `EndFlush` metodo chiama quindi il metodo [**Ipin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) sul pin di input.
+Se l'oggetto usa un thread, questo metodo attende l'evento [**COutputQueue::m \_ evFlushComplete.**](coutputqueue-m-evflushcomplete.md) Il thread segnala questo evento dopo aver liberato eventuali campioni in sospeso. Se l'oggetto non usa un thread, questo metodo chiama il [**metodo COutputQueue::FreeSamples.**](coutputqueue-freesamples.md) Il metodo `EndFlush` chiama quindi il metodo [**IPin::EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) sul pin di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Se l'oggetto utilizza un thread, questo metodo attende l'evento [**COutputQueue:
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

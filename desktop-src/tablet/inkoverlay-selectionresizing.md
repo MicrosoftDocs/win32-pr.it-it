@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando la dimensione della selezione corrente sta per essere modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di selezione.
+description: "Evento InkOverlay.SelectionResizing: si verifica quando le dimensioni della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà Selection."
 ms.assetid: 7fe0249c-c43d-498b-9029-cf5969201d96
-title: Evento InkOverlay. SelectionResizing (Msinkaut. h)
+title: Evento InkOverlay.SelectionResizing (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7debb9461aae39c0549bce863a0513b86c53ffa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b5577f83c14ccc2e998fb4257344729e2219a2d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233179"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086679"
 ---
-# <a name="inkoverlayselectionresizing-event"></a>Evento InkOverlay. SelectionResizing
+# <a name="inkoverlayselectionresizing-event"></a>Evento InkOverlay.SelectionResizing
 
-Si verifica quando la dimensione della selezione corrente sta per essere modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .
+Si verifica quando le dimensioni della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,10 +30,10 @@ void SelectionResizing(
 
 <dl> <dt>
 
-*CurSelectionRect* \[ in\]
+*CurSelectionRect* \[ Pollici\]
 </dt> <dd>
 
-Rettangolo di delimitazione della selezione dopo l'evento **SelectionResizing** .
+Rettangolo di delimitazione della selezione dopo **l'evento SelectionResizing.**
 
 > [!Note]  
 > Questo rettangolo viene specificato nelle coordinate della finestra client, che consente scenari come la gestione delle proporzioni durante il ridimensionamento.
@@ -48,7 +48,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ IInkPictureEvents dispatch-only (dispinterfaces) con ID DISPID \_ IOESelectionResizing.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID IOESelectionResizing.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -67,7 +67,7 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
 [**Proprietà Selection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)

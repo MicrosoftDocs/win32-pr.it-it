@@ -1,7 +1,7 @@
 ---
-description: Ottiene un'icona di dispositivo personalizzata.
+description: "Metodo IWiaUIExtension::GetDeviceIcon: ottiene un'icona del dispositivo personalizzata."
 ms.assetid: 27763f39-80d8-4862-b045-e49c6e824c28
-title: 'Metodo IWiaUIExtension:: GetDeviceIcon (Wiadevd. h)'
+title: Metodo IWiaUIExtension::GetDeviceIcon (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 36b61a25de1acb9b84ce68dc897514e0d4612a1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bfa8e87736412822c1a70f75b129aeec30af20e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129407"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116659"
 ---
-# <a name="iwiauiextensiongetdeviceicon-method"></a>Metodo IWiaUIExtension:: GetDeviceIcon
+# <a name="iwiauiextensiongetdeviceicon-method"></a>Metodo IWiaUIExtension::GetDeviceIcon
 
-Ottiene un'icona di dispositivo personalizzata.
+Ottiene un'icona del dispositivo personalizzata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,30 +41,30 @@ HRESULT GetDeviceIcon(
 
 <dl> <dt>
 
-*bstrDeviceId* \[ in\]
+*bstrDeviceId* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Specifica l'ID dispositivo del dispositivo WIA per il quale deve essere ottenuta l'icona.
+Specifica l'ID dispositivo del dispositivo WIA per il quale è necessario ottenere l'icona.
 
 </dd> <dt>
 
-*phIcon* \[ out\]
+*phIcon* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **HICON \** _
+Tipo: **HICON \***
 
-Punta a una posizione di memoria che riceverà un handle per l'icona del dispositivo.
+Punta a una posizione di memoria che riceverà un handle per l'icona per il dispositivo.
 
 </dd> <dt>
 
-_nSize * \[ in\]
+*nSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **ULONG**
 
-Specifica la dimensione dell'icona desiderata, in pixel. Si presuppone che l'icona sia quadrata, mentre nSize specifica sia la larghezza che l'altezza dell'icona richiesta.
+Specifica le dimensioni dell'icona desiderate, in pixel. Si presuppone che l'icona sia quadrata e che nSize specifichi sia la larghezza che l'altezza dell'icona richiesta.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Specifica la dimensione dell'icona desiderata, in pixel. Si presuppone che l'ico
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,9 +80,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

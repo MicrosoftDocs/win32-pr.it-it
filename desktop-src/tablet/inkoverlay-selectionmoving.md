@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando la posizione della selezione corrente sta per essere modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di selezione.
+description: "Evento InkOverlay.SelectionMoving: si verifica quando la posizione della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà Selection."
 ms.assetid: 7cd7a5b1-4ae6-4038-afd0-6ef9d0700938
-title: Evento InkOverlay. SelectionMoving (Msinkaut. h)
+title: Evento InkOverlay.SelectionMoving (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9afc77198a6a7228e44b3f2bad8015c25a939812
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ee4784e6b4c475c30d9b2a3ab30fe166ea3d67d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316841"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086699"
 ---
-# <a name="inkoverlayselectionmoving-event"></a>Evento InkOverlay. SelectionMoving
+# <a name="inkoverlayselectionmoving-event"></a>Evento InkOverlay.SelectionMoving
 
-Si verifica quando la posizione della selezione corrente sta per essere modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .
+Si verifica quando la posizione della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,10 +30,10 @@ void SelectionMoving(
 
 <dl> <dt>
 
-*CurSelectionRect* \[ in\]
+*CurSelectionRect* \[ Pollici\]
 </dt> <dd>
 
-Rettangolo in cui la selezione viene spostata dopo l'evento **SelectionMoving** .
+Rettangolo in cui viene spostata la selezione dopo **l'evento SelectionMoving.**
 
 > [!Note]  
 > Questo rettangolo viene specificato nelle coordinate della finestra client, che consente scenari come la gestione delle proporzioni durante il ridimensionamento.
@@ -48,7 +48,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ IInkPictureEvents dispatch-only (dispinterfaces) con un ID disattivato DISPID \_ IOESelectionMoving.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID off DISPID \_ IOESelectionMoving.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -67,10 +67,10 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
-**InkOverlay (classe)**
+**Classe InkOverlay**
 </dt> <dt>
 
 [**Proprietà Selection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)

@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando la classe InkCollector rileva un pulsante di cursore inattivo.
+description: 'Evento InkCollector.CursorButtonDown: si verifica quando la classe InkCollector rileva un pulsante del cursore verso il basso.'
 ms.assetid: 65e7f68b-f911-4634-b850-178eb6eaf86e
-title: Evento InkCollector. CursorButtonDown (Msinkaut. h)
+title: Evento InkCollector.CursorButtonDown (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3994782d1266af5060bad28dd2221fe1ba18874
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd1a820445a1ba3ed07dad8a22a11ad86e8da96f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343301"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110329"
 ---
-# <a name="inkcollectorcursorbuttondown-event"></a>Evento InkCollector. CursorButtonDown
+# <a name="inkcollectorcursorbuttondown-event"></a>Evento InkCollector.CursorButtonDown
 
-Si verifica quando la [**classe InkCollector**](inkcollector-class.md) rileva un pulsante di cursore inattivo.
+Si verifica quando [**la classe InkCollector**](inkcollector-class.md) rileva un pulsante del cursore verso il basso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,14 +31,14 @@ void CursorButtonDown(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorButtonDown** .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato **l'evento CursorButtonDown.**
 
 </dd> <dt>
 
-*Pulsante* \[ in\]
+*Pulsante* \[ Pollici\]
 </dt> <dd>
 
 Pulsante premuto.
@@ -51,11 +51,11 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Un pulsante su una punta di penna è inattivo quando l'utente abbassa la penna al digitalizzatore e avvia la traccia di un tratto. Quando si preme il pulsante, un pulsante su un barino è inattivo.
+Un pulsante su una punta della penna è verso il basso quando l'utente abbassa la penna al digitalizzatore e inizia a tracciare un tratto. Un pulsante su un barile è in giù quando viene premuto il pulsante.
 
-Quando si preme il pulsante destro del mouse, si ricevono effettivamente due eventi **CursorButtonDown** , uno per il pulsante destro premuto e uno per il pulsante sinistro premuto.
+Quando si preme il pulsante destro del mouse, si ricevono effettivamente due **eventi CursorButtonDown:** uno per il pulsante destro premuto e uno per il pulsante sinistro premuto.
 
-Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents dispatch (DISPINTERFACES) con ID DISPID \_ ICECursorButtonDown.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID DISPID \_ ICECursorButtonDown.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

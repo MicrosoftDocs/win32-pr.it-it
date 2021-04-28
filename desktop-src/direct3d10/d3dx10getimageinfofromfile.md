@@ -1,7 +1,7 @@
 ---
-description: Recupera le informazioni su un file di immagine specificato.
+description: 'Funzione D3DX10GetImageInfoFromFile: recupera informazioni su un determinato file di immagine.'
 ms.assetid: 59bdce45-82d9-42da-b847-a29ca71919b5
-title: Funzione D3DX10GetImageInfoFromFile (D3DX10Tex. h)
+title: Funzione D3DX10GetImageInfoFromFile (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 836d2e18b5c1c48bbe64d0026e97f8ebc5a066ba
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3e11c4cb52176b0a144e164501f8c70d1e3678c1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322088"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098334"
 ---
-# <a name="d3dx10getimageinfofromfile-function"></a>D3DX10GetImageInfoFromFile (funzione)
+# <a name="d3dx10getimageinfofromfile-function"></a>Funzione D3DX10GetImageInfoFromFile
 
-Recupera le informazioni su un file di immagine specificato.
+Recupera informazioni su un file di immagine specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT D3DX10GetImageInfoFromFile(
 
 <dl> <dt>
 
-*pSrcFile* \[ in\]
+*pSrcFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Nome file dell'immagine di cui recuperare le informazioni. Se \_ sono definiti Unicode o Unicode, questo tipo di parametro è LPCWSTR; in caso contrario, il tipo è LPCSTR.
+Nome file dell'immagine su cui recuperare le informazioni. Se sono definiti unicode o UNICODE, questo tipo \_ di parametro è LPCWSTR; in caso contrario, il tipo è LPCSTR.
 
 </dd> <dt>
 
-*pPump* \[ in\]
+*pPump* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Pump di thread facoltativo che può essere usato per caricare le informazioni in modo asincrono. Può essere **null**. Vedere [**ID3DX10ThreadPump**](id3dx10threadpump.md).
+Pump di thread facoltativo che può essere usato per caricare le informazioni in modo asincrono. Può essere **NULL.** Vedere [**ID3DX10ThreadPump**](id3dx10threadpump.md).
 
 </dd> <dt>
 
-*pSrcInfo* \[ in\]
+*pSrcInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **d3dx10 \_ Image \_ info**](d3dx10-image-info.md)\***
+Tipo: **[ **D3DX10 \_ IMAGE \_ INFO**](d3dx10-image-info.md)\***
 
-Puntatore a una \_ \_ struttura di informazioni sull'immagine d3dx10 per la compilazione con la descrizione dei dati nel file di origine.
+Puntatore a una struttura D3DX10 IMAGE INFO da riempire con la descrizione dei \_ dati nel file di \_ origine.
 
 </dd> <dt>
 
-*pHResult* \[ out\]
+*pHResult* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntatore al valore restituito. Può essere **null**. Se *pPump* non è **null**, *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
+Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere un percorso di memoria valido fino al completamento dell'esecuzione asincrona.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione supporta le stringhe Unicode e ANSI.
+Questa funzione supporta entrambe le stringhe Unicode e ANSI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Questa funzione supporta le stringhe Unicode e ANSI.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 

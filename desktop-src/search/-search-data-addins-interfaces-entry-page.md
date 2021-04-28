@@ -1,20 +1,20 @@
 ---
-description: .
+description: Interfacce dei componenti aggiuntivi dati
 ms.assetid: 2e9748be-7d76-4424-8daf-c94a327d85ac
-title: Interfacce del componente aggiuntivo per i dati
+title: Interfacce dei componenti aggiuntivi dati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02159fba5603574f601cac359ac684f37efe97ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d90aa1ce8c3c0d498f4a01f1b00c0d8674ee9610
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878821"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104649"
 ---
-# <a name="data-add-in-interfaces"></a>Interfacce del componente aggiuntivo per i dati
+# <a name="data-add-in-interfaces"></a>Interfacce dei componenti aggiuntivi dati
 
 
-Questa sezione di riferimento di Windows Search è costituita dalle seguenti interfacce dei componenti aggiuntivi:
+Questa Windows Search di riferimento è costituita dalle interfacce dei componenti aggiuntivi dati seguenti:
 
 [**ISimpleCommandCreator**](/windows/desktop/api/indexsrv/nn-indexsrv-isimplecommandcreator)
 
@@ -22,15 +22,15 @@ Questa sezione di riferimento di Windows Search è costituita dalle seguenti int
 
 [**IColumnMapperCreator**](/windows/desktop/api/indexsrv/nn-indexsrv-icolumnmappercreator)
 
-[**IFilter**](/windows/win32/api/filter/nn-filter-ifilter)
+[**Ifilter**](/windows/win32/api/filter/nn-filter-ifilter)
 
-[**ILoadFilter**](/windows/desktop/api/filtereg/nn-filtereg-iloadfilter)
+[**Filtro ILoadFilter**](/windows/desktop/api/filtereg/nn-filtereg-iloadfilter)
 
 [**IPhraseSink**](/windows/win32/api/indexsrv/nn-indexsrv-iphrasesink)
 
 [**ISearchLanguageSupport**](/windows/desktop/api/Searchapi/nn-searchapi-isearchlanguagesupport)
 
-[**IStemmer**](/windows/desktop/api/Indexsrv/nn-indexsrv-istemmer)
+[**IStelum**](/windows/desktop/api/Indexsrv/nn-indexsrv-istemmer)
 
 [**IWordBreaker**](/windows/desktop/api/Indexsrv/nn-indexsrv-iwordbreaker)
 

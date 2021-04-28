@@ -1,26 +1,26 @@
 ---
-description: .
+description: Uso del sink Grabber di esempio
 ms.assetid: AC5970A2-6F12-448D-A444-40020C5C2607
-title: Uso del sink di grabber di esempio
+title: Uso del sink Grabber di esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e7f0d64dfeb1cf5fd977e312b34aec49cad254
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 043f64d8fdc3ac3084d2c59be8917acbbd32dde5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528561"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110501"
 ---
-# <a name="using-the-sample-grabber-sink"></a>Uso del sink di grabber di esempio
+# <a name="using-the-sample-grabber-sink"></a>Uso del sink Grabber di esempio
 
-Il sink di grabber di esempio è un sink multimediale che inoltra i dati ricevuti a un'interfaccia di callback dell'applicazione.
+Il sink Grabber di esempio è un sink multimediale che inoltra i dati ricevuti a un'interfaccia di callback dell'applicazione.
 
 > [!Note]  
-> Il [lettore di origine](source-reader.md) è un'alternativa al sink di grabber di esempio ed è dotato di un modello Progamming più semplice.
+> Il [lettore di](source-reader.md) origine è un'alternativa al sink Grabber di esempio e ha un modello di progamming più semplice.
 
  
 
-## <a name="1-implement-the-callback-interface"></a>1. implementare l'interfaccia di callback
+## <a name="1-implement-the-callback-interface"></a>1. Implementare l'interfaccia di callback
 
 
 ```C++
@@ -57,7 +57,7 @@ public:
 
 
 
-## <a name="2-create-the-sample-grabber-sink"></a>2. creare il sink di grabber di esempio
+## <a name="2-create-the-sample-grabber-sink"></a>2. Creare il sink Grabber di esempio
 
 
 ```C++
@@ -75,7 +75,7 @@ public:
 
 
 
-## <a name="3-create-a-topology"></a>3. creare una topologia
+## <a name="3-create-a-topology"></a>3. Creare una topologia
 
 
 ```C++
@@ -138,7 +138,7 @@ done:
 
 
 
-## <a name="4-run-the-media-session"></a>4. eseguire la sessione multimediale
+## <a name="4-run-the-media-session"></a>4. Eseguire la sessione multimediale
 
 
 ```C++
@@ -185,7 +185,7 @@ done:
 
 ## <a name="example-code"></a>Codice di esempio
 
-Ecco il codice di esempio completo per questo argomento.
+Di seguito è riportato il codice di esempio completo per questo argomento.
 
 
 ```C++

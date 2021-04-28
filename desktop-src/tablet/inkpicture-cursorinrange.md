@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando un cursore entra nell'intervallo di rilevamento fisico (prossimità) del contesto della tavoletta.
+description: "Evento InkPicture.CursorInRange: si verifica quando un cursore entra nell'intervallo di rilevamento fisico (prossimità) del contesto del tablet."
 ms.assetid: e921e175-a2cf-45e6-bb81-dc82e384d3b1
-title: Evento InkPicture. CursorInRange (Msinkaut. h)
+title: Evento InkPicture.CursorInRange (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab0dead1fa5bd89452af15a19f36a132c6843d67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d05d703022e8d97df0d8d74a73e20af3d91b8531
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316837"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086579"
 ---
-# <a name="inkpicturecursorinrange-event"></a>Evento InkPicture. CursorInRange
+# <a name="inkpicturecursorinrange-event"></a>Evento InkPicture.CursorInRange
 
-Si verifica quando un cursore entra nell'intervallo di rilevamento fisico (prossimità) del contesto della tavoletta.
+Si verifica quando un cursore entra nell'intervallo di rilevamento fisico (prossimità) del contesto del tablet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,26 +32,26 @@ void CursorInRange(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorInRange** .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato **l'evento CursorInRange.**
 
 </dd> <dt>
 
-*NewCursor* \[ in\]
+*NewCursor* \[ Pollici\]
 </dt> <dd>
 
-**Variante \_ TRUE** se è la prima volta che l'agente di raccolta input penna entra in contatto con l'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorInRange** . in caso contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** se questa è la prima volta che l'agente di raccolta input penna viene contattato con [**l'oggetto IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorInRange.** in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> <dt>
 
-*ButtonsState* \[ in\]
+*ButtonsState* \[ Pollici\]
 </dt> <dd>
 
-Stato dei pulsanti per il cursore che ha generato l'evento **CursorInRange** .
+Stato dei pulsanti per il cursore che ha generato **l'evento CursorInRange.**
 
-Per ulteriori informazioni sulla struttura VARIANT, vedere [utilizzo della libreria com](using-the-com-library.md).
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento viene definito in **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) con l'ID DISPID \_ ICECursorInRange.
+Questo metodo di evento è definito nell'interfaccia di solo invio **\_ IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ ICECursorInRange DISPID.
 
-L'evento **CursorInRange** viene generato anche in modalità selezione o cancellazione, non solo in modalità input penna. A tale scopo, è necessario monitorare la modalità di modifica (che è responsabile dell'impostazione) e tenere presente la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma grazie a una maggiore consapevolezza degli eventi della piattaforma.
+**L'evento CursorInRange** viene generato anche in modalità selezione o cancellazione, non solo in modalità input penna. A questo scopo, è necessario monitorare la modalità di modifica (che si è responsabili dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovare sulla piattaforma attraverso una maggiore consapevolezza degli eventi della piattaforma.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,9 +71,9 @@ L'evento **CursorInRange** viene generato anche in modalità selezione o cancell
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -82,7 +82,7 @@ L'evento **CursorInRange** viene generato anche in modalità selezione o cancell
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> <dt>
 
 [**Evento CursorOutOfRange**](inkpicture-cursoroutofrange.md)

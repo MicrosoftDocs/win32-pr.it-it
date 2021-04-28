@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando il cursore esce dall'intervallo di rilevamento fisico (prossimità) del contesto della tavoletta.
+description: "Evento InkOverlay.CursorOutOfRange: si verifica quando il cursore esce dall'intervallo di rilevamento fisico (prossimità) del contesto della tablet."
 ms.assetid: c696b2a9-dc47-4b73-a556-9bb222f5bf59
-title: Evento InkOverlay. CursorOutOfRange (Msinkaut. h)
+title: Evento InkOverlay.CursorOutOfRange (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1510013d24bf092a08ba7d57b54c0f94bf7c2dcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2a30bfde1e96edfa286e9afeac147dc141c4942
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317950"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116959"
 ---
-# <a name="inkoverlaycursoroutofrange-event"></a>Evento InkOverlay. CursorOutOfRange
+# <a name="inkoverlaycursoroutofrange-event"></a>Evento InkOverlay.CursorOutOfRange
 
-Si verifica quando il cursore esce dall'intervallo di rilevamento fisico (prossimità) del contesto della tavoletta.
+Si verifica quando il cursore esce dall'intervallo di rilevamento fisico (prossimità) del contesto della tablet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,10 +30,10 @@ void CursorOutOfRange(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) .
+Oggetto [**interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**CursorOutOfRange.**](inkcollector-cursoroutofrange.md)
 
 </dd> </dl>
 
@@ -43,9 +43,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents dispatch (DISPINTERFACES) con ID DISPID \_ ICECursorOutOfRange.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICECursorOutOfRange.
 
-L'evento [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) viene generato anche in modalità selezione o cancellazione, non solo in modalità input penna. A tale scopo, è necessario monitorare la modalità di modifica (che è responsabile dell'impostazione) e tenere presente la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma grazie a una maggiore consapevolezza degli eventi della piattaforma.
+[**L'evento CursorOutOfRange**](inkcollector-cursoroutofrange.md) viene generato anche in modalità di selezione o cancellazione, non solo in modalità input penna. A questo scopo, è necessario monitorare la modalità di modifica (che si è responsabili dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma attraverso una maggiore consapevolezza degli eventi della piattaforma.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ L'evento [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) viene generato
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -64,7 +64,7 @@ L'evento [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) viene generato
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
 [**Evento CursorInRange**](inkcollector-cursorinrange.md)

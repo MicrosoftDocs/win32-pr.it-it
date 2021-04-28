@@ -1,7 +1,7 @@
 ---
-description: Espelle il computer dalla relativa stazione di ancoraggio. Questa operazione equivale a fare clic sul menu Start e selezionare Eject PC (Rimuovi PC) se il computer supporta questo comando.
+description: 'Metodo IShellDispatch.EjectPC: espelle il computer dalla relativa stazione di ancoraggio. Questo è lo stesso che si fa clic sul menu Start e si seleziona Espulsa PC, se il computer supporta questo comando.'
 ms.assetid: 34448D82-187C-40aa-90B4-A4111B33048B
-title: Metodo IShellDispatch. EjectPC (shldisp. h)
+title: Metodo IShellDispatch.EjectPC (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d85dd8c007338dca3d68183bc9ba3fbd333195ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac42e1a4331a553a03bac3da50a187e06c90859c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226368"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086639"
 ---
-# <a name="ishelldispatchejectpc-method"></a>IShellDispatch. EjectPC, metodo
+# <a name="ishelldispatchejectpc-method"></a>Metodo IShellDispatch.EjectPC
 
-Espelle il computer dalla relativa stazione di ancoraggio. Questa operazione equivale a fare clic sul menu **Start** e selezionare **eject PC (Rimuovi PC**) se il computer supporta questo comando.
+Espulse il computer dall'alloggiamento di espansione. Questo è lo stesso che si fa clic sul menu **Start** e si seleziona **Espulsa PC**, se il computer supporta questo comando.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,13 +57,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. EjectPC**](shell-ejectpc.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.EjectPC.**](shell-ejectpc.md)
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **EjectPC** in JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **EjectPC** in JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,11 +119,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

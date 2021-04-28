@@ -1,7 +1,7 @@
 ---
-description: Suddivide una matrice di trasformazione 3D generale nei componenti scalari, rotazionali e di conversione.
+description: 'Funzione D3DXMatrixDecompose (D3dx9math.h): suddivide una matrice di trasformazione 3D generale nei relativi componenti scalari, rotazionali e traslazionali.'
 ms.assetid: 73d3c248-1254-444e-9fd8-4f144424ddb7
-title: Funzione D3DXMatrixDecompose (D3dx9math. h)
+title: Funzione D3DXMatrixDecompose (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 92f120f1c3637216d77a5298b5de219f5605d571
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aaaa1059c4ffeafa453694d9c348656c856decaa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323246"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098189"
 ---
-# <a name="d3dxmatrixdecompose-function-d3dx9mathh"></a>Funzione D3DXMatrixDecompose (D3dx9math. h)
+# <a name="d3dxmatrixdecompose-function-d3dx9mathh"></a>Funzione D3DXMatrixDecompose (D3dx9math.h)
 
-Suddivide una matrice di trasformazione 3D generale nei componenti scalari, rotazionali e di conversione.
+Suddivide una matrice di trasformazione 3D generale nei relativi componenti scalari, rotazionali e traslazionali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT D3DXMatrixDecompose(
 
 <dl> <dt>
 
-*pOutScale* \[ in uscita\]
+*pOutScale* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore al [**D3DXVECTOR3**](d3dxvector3.md) di output che contiene i fattori di scala applicati lungo gli assi x, y e z.
+Puntatore all'oggetto [**D3DXVECTOR3**](d3dxvector3.md) di output che contiene i fattori di scala applicati lungo gli assi x, y e z.
 
 </dd> <dt>
 
-*pOutRotation* \[ in uscita\]
+*pOutRotation* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) che descrive la rotazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che descrive la rotazione.
 
 </dd> <dt>
 
-*pOutTranslation* \[ in uscita\]
+*pOutTranslation* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore al vettore [**D3DXVECTOR3**](d3dxvector3.md) che descrive la traduzione.
+Puntatore al [**vettore D3DXVECTOR3**](d3dxvector3.md) che descrive la conversione.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una matrice di input [**D3DXMATRIX**](d3dxmatrix.md) da scomporre.
+Puntatore a una matrice [**D3DXMATRIX**](d3dxmatrix.md) di input da scomporre.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntatore a una matrice di input [**D3DXMATRIX**](d3dxmatrix.md) da scomporre.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il seguente: D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è S \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Se la funzione ha esito positivo, il valore restituito è \_ OK. Se la funzione 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

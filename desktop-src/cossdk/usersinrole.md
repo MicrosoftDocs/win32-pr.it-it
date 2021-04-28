@@ -1,5 +1,5 @@
 ---
-description: Contiene un oggetto per ogni utente nel ruolo a cui è correlata la raccolta.
+description: 'Raccolta UsersInRole: contiene un oggetto per ogni utente nel ruolo a cui è correlata la raccolta.'
 ms.assetid: e7d9e5e8-1927-42b2-bdd5-0c49a562c31f
 title: Raccolta UsersInRole
 ms.topic: reference
@@ -12,29 +12,29 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e5bf36937d08efd377b48ef251ffb7219c05504f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1b73c495a1af1dec9114e5a59274e457c1d09694
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225696"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105539"
 ---
 # <a name="usersinrole-collection"></a>Raccolta UsersInRole
 
 Contiene un oggetto per ogni utente nel ruolo a cui è correlata la raccolta.
 
-Questa raccolta supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **UsersInRole** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta UsersInRole** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Errorinfo**](errorinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -43,7 +43,7 @@ La raccolta **UsersInRole** eredita dall'interfaccia [**IUnknown**](/windows/des
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
 -   [Utente](#usersinrole-collection)
 
@@ -55,7 +55,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Nome utente. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                                             |
-| Type           | string                                                                                                                                                                                |
+| Type           | Stringa                                                                                                                                                                                |
 | Predefinito        | "Nuovo utente"                                                                                                                                                                            |
 | Sistema minimo | Windows 2000                                                                                                                                                                          |
 

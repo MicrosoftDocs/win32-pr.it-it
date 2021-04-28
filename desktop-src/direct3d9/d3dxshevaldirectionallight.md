@@ -1,7 +1,7 @@
 ---
-description: Valuta una luce direzionale e restituisce dati ad armonica sferica (SH) spettrale.
+description: 'Funzione D3DXSHEvalDirectionalLight (D3dx9math.h): valuta una luce direzionale e restituisce dati sferici (SH).'
 ms.assetid: 6e2e9b02-13bb-4cef-ae9d-343fbf64e5d7
-title: Funzione D3DXSHEvalDirectionalLight (D3dx9math. h)
+title: Funzione D3DXSHEvalDirectionalLight (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c78ee4059ed83b97e7ac1f392f857351df48ee7c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 488682eca230c8da6cc5048aded4a7a1e7f71bfd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104550503"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117909"
 ---
-# <a name="d3dxshevaldirectionallight-function-d3dx9mathh"></a>Funzione D3DXSHEvalDirectionalLight (D3dx9math. h)
+# <a name="d3dxshevaldirectionallight-function-d3dx9mathh"></a>Funzione D3DXSHEvalDirectionalLight (D3dx9math.h)
 
-Valuta una [luce direzionale](light-types.md) e restituisce dati ad armonica sferica (SH) spettrale.
+Valuta una [luce direzionale e](light-types.md) restituisce dati sferici sferici aricali (SH).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,73 +47,73 @@ HRESULT D3DXSHEvalDirectionalLight(
 
 <dl> <dt>
 
-*Ordine* \[ di in\]
+*Ordine* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso tra [D3DXSH \_ MINORDER](other-d3dx-constants.md) \_ e D3DXSH MAXORDER, inclusi. La valutazione genera coefficienti Order ². Il livello della valutazione è Order-1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
-*pDir* \[ in\]
+*pDir* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore al vettore di direzione dell'asse del (x, y, z) in cui valutare le funzioni di base SH. Vedere la sezione Osservazioni.
+Puntatore al vettore di direzione dell'asse dell'asse dell'emisfero (x, y, z) in cui valutare le funzioni di base sh. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*RIntensity* \[ in\]
+*RIntensity* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Intensità rossa della luce.
 
 </dd> <dt>
 
-*GIntensity* \[ in\]
+*GIntensity* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Intensità verde della luce.
 
 </dd> <dt>
 
-*BIntensity* \[ in\]
+*BIntensity* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Intensità blu della luce.
 
 </dd> <dt>
 
-*pROut* \[ out\]
+*pROut* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntatore al vettore SH di output per il componente rosso.
 
 </dd> <dt>
 
-*pGOut* \[ out\]
+*pGOut* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntatore facoltativo al vettore SH di output per il componente verde.
 
 </dd> <dt>
 
-*pBOut* \[ out\]
+*pBOut* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntatore facoltativo al vettore SH di output per il componente blu.
 
@@ -127,13 +127,13 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Il vettore di output viene calcolato in modo tale che se il rapporto di intensità R/G/B è uguale a 1, la luminosità di uscita risultante di un punto immediatamente sotto la luce di un oggetto diffuso con un'albedo pari a 1 è 1,0. Verrà calcolato tre campioni spettrali; viene restituito *pROut* , mentre *pGOut* e *pBOut* possono essere restituiti.
+Il vettore di output viene calcolato in modo che se il rapporto di intensità R/G/B è uguale a 1, la luminosità di uscita risultante di un punto direttamente sotto la luce su un oggetto diffuso con un albedo pari a 1 sarebbe 1,0. Verranno calcolati tre esempi spettrale. *Verrà restituito pROut,* mentre *pGOut* e *pBOut* possono essere restituiti.
 
-Nella sfera con raggio di unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con Theta, l'angolo sull'asse z nella [direzione destra](coordinate-systems.md)e Phi, l'angolo da z.
+Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente [](coordinate-systems.md)con theta, l'angolo sull'asse z nella direzione destra e phi, l'angolo da z.
 
-![illustrazione di una sfera con raggio unitario](images/spherical-coordinates.png)
+![Illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
 
-Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, z) e sferiche (theta, Phi) nella sfera dell'unità. L'angolo theta varia nell'intervallo compreso tra 0 e 2 pi, mentre Phi varia da 0 a pi.
+Le equazioni seguenti mostrano la relazione tra coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
 
 ![equazioni della relazione tra coordinate cartesiane e sferiche](images/spherical-coordinates-equations.png)
 
@@ -143,8 +143,8 @@ Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -155,7 +155,7 @@ Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, 
 [Funzioni matematiche](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Trasferimento Radiance pre-calcolato (Direct3D 9)](precomputed-radiance-transfer.md)
+[Trasferimento di radiance pre-ricalcolato (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

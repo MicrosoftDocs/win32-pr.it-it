@@ -1,7 +1,7 @@
 ---
-description: "Il metodo SetTimeFormat imposta il formato dell'ora. Questo metodo implementa il metodo IMediaSeeking:: SetTimeFormat."
+description: "Metodo CSourceSeeking.SetTimeFormat: il metodo SetTimeFormat imposta il formato dell'ora. Questo metodo implementa il metodo IMediaSeeking::SetTimeFormat."
 ms.assetid: dbc7c950-8cc2-4f8e-adfa-8f5cdc1b56c7
-title: Metodo CSourceSeeking. SetTimeFormat (Ctlutil. h)
+title: Metodo CSourceSeeking.SetTimeFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 61ab0cdf7c954e0fa5f370127f00529bb9ef7b16
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fdb3889ecfa5bdcd49b4054822a2b2d09df58fa6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333714"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085199"
 ---
-# <a name="csourceseekingsettimeformat-method"></a>CSourceSeeking. SetTimeFormat, metodo
+# <a name="csourceseekingsettimeformat-method"></a>Metodo CSourceSeeking.SetTimeFormat
 
-Il `SetTimeFormat` metodo imposta il formato dell'ora. Questo metodo implementa il metodo [**IMediaSeeking:: SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) .
+Il `SetTimeFormat` metodo imposta il formato dell'ora. Questo metodo implementa il [**metodo IMediaSeeking::SetTimeFormat.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT SetTimeFormat(
 *pFormat* 
 </dt> <dd>
 
-Puntatore a un GUID del formato ora. Vedere [**GUID del formato ora**](time-format-guids.md).
+Puntatore a un GUID di formato ora. Vedere [**GUID di formato dell'ora.**](time-format-guids.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                   |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Esito positivo.<br/>                           |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                           |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il formato specificato non è supportato.<br/> |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Argomento puntatore **null** .<br/>         |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | Argomento del puntatore **NULL.**<br/>         |
 
 
 
@@ -67,7 +67,7 @@ Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-L'unico formato di ora supportato dalla classe base è il \_ tempo medio di formato dell'ora \_ \_ (unità 100-nanosecondi).
+L'unico formato di ora supportato dalla classe di base è TIME \_ FORMAT \_ MEDIA TIME \_ (unità di 100 nanosecondi).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ L'unico formato di ora supportato dalla classe base è il \_ tempo medio di form
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

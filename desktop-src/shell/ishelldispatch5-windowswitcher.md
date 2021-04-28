@@ -1,6 +1,6 @@
 ---
-description: Consente di visualizzare le finestre aperte in uno stack 3D che è possibile scorrere.
-title: Metodo IShellDispatch5. aperto WindowSwitcher (shldisp. h)
+description: 'Metodo IShellDispatch5.WindowSwitcher: visualizza le finestre aperte in uno stack 3D che è possibile scorrere.'
+title: Metodo IShellDispatch5.WindowSwitcher (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 44a6411c-bcbc-4ef6-b5dc-7bdb4d482c6a
-ms.openlocfilehash: 54b02845e02f5d5499153bc0be828f83d83f0a1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 050def8ab1ed33a25b2943736f047a5e47536f9f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977970"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116799"
 ---
-# <a name="ishelldispatch5windowswitcher-method"></a>IShellDispatch5. aperto WindowSwitcher, metodo
+# <a name="ishelldispatch5windowswitcher-method"></a>Metodo IShellDispatch5.WindowSwitcher
 
-Consente di visualizzare le finestre aperte in uno stack 3D che è possibile scorrere.
+Visualizza le finestre aperte in uno stack 3D che è possibile scorrere.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,10 +61,10 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                         |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

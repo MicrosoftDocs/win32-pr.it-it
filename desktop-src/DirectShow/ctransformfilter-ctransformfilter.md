@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CTransformFilter.CTransformFilter : metodo costruttore.'
 ms.assetid: a64c3e29-91f2-455f-aac1-1e4ecce6958d
-title: Costruttore CTransformFilter. CTransformFilter (Transfrm. h)
+title: Costruttore CTransformFilter.CTransformFilter (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39569dff69c2ab1ebb635cb69a4c71602a7400d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fce67bbe22361bdbae0cd3e51768e0cf0743d97d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329148"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098719"
 ---
-# <a name="ctransformfilterctransformfilter-constructor"></a>Costruttore CTransformFilter. CTransformFilter
+# <a name="ctransformfilterctransformfilter-constructor"></a>Costruttore CTransformFilter.CTransformFilter
 
 Metodo del costruttore.
 
@@ -47,18 +47,18 @@ CTransformFilter(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug del filtro. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Stringa contenente il nome di debug del filtro. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
 *lpUnk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** aggregatore. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*CLSID* 
+*Clsid* 
 </dt> <dd>
 
 Identificatore di classe del filtro.
@@ -67,7 +67,7 @@ Identificatore di classe del filtro.
 
 ## <a name="remarks"></a>Commenti
 
-Il costruttore non crea i pin del filtro. Questo errore si verifica durante la prima chiamata al metodo [**GetPin**](ctransformfilter-getpin.md) . Il costruttore inizializza le variabili membro [**\_ Pinput**](ctransformfilter-m-pinput.md) e [**m \_ pOutput**](ctransformfilter-m-poutput.md) su **null**.
+Il costruttore non crea i segnaposto del filtro. Ciò si verifica durante la prima chiamata al [**metodo GetPin.**](ctransformfilter-getpin.md) Il costruttore inizializza le variabili [**\_ membro m pInput**](ctransformfilter-m-pinput.md) e [**m \_ pOutput**](ctransformfilter-m-poutput.md) su **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Il costruttore non crea i pin del filtro. Questo errore si verifica durante la p
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

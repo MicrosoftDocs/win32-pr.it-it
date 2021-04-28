@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckMediaType determina se il pin accetta un tipo di supporto specifico.
+description: 'Metodo CTransformOutputPin.CheckMediaType: il metodo CheckMediaType determina se il pin accetta un tipo di supporto specifico.'
 ms.assetid: 9e31480b-129c-4741-846a-854c70c65606
-title: Metodo CTransformOutputPin. CheckMediaType (Transfrm. h)
+title: Metodo CTransformOutputPin.CheckMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c3c2bc617a5ff56a8b82184700af85e2634960ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7dc0edc642687518979eab1d47c69af039bc3173
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333305"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084909"
 ---
-# <a name="ctransformoutputpincheckmediatype-method"></a>CTransformOutputPin. CheckMediaType, metodo
+# <a name="ctransformoutputpincheckmediatype-method"></a>Metodo CTransformOutputPin.CheckMediaType
 
 Il `CheckMediaType` metodo determina se il pin accetta un tipo di supporto specifico.
 
@@ -45,19 +45,19 @@ HRESULT CheckMediaType(
 *mtIn* 
 </dt> <dd>
 
-Puntatore a un oggetto [**CMediaType**](cmediatype.md) che contiene il tipo di supporto proposto.
+Puntatore a un [**oggetto CMediaType**](cmediatype.md) che contiene il tipo di supporto proposto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                         |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Esito positivo.<br/>                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il pin di input del filtro non è connesso.<br/> |
 
 
@@ -66,7 +66,7 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo implementa il metodo [**CBasePin:: CheckMediaType**](cbasepin-checkmediatype.md) virtuale puro. Il metodo ha esito negativo se il pin di input del filtro non è connesso. In caso contrario, chiama il metodo [**CTransformFilter:: CheckTransform**](ctransformfilter-checktransform.md) del filtro, che è anche virtuale puro. La classe derivata del filtro deve implementare **CheckTransform**, che determina se il tipo di supporto di output proposto è compatibile con il tipo di supporto di input.
+Questo metodo implementa il metodo [**CBasePin::CheckMediaType virtuale**](cbasepin-checkmediatype.md) puro. Il metodo ha esito negativo se il pin di input del filtro non è connesso. In caso contrario, chiama il metodo [**CTransformFilter::CheckTransform**](ctransformfilter-checktransform.md) del filtro, che è anche virtuale puro. La classe derivata del filtro deve implementare **CheckTransform**, che determina se il tipo di supporto di output proposto è compatibile con il tipo di supporto di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Questo metodo implementa il metodo [**CBasePin:: CheckMediaType**](cbasepin-chec
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

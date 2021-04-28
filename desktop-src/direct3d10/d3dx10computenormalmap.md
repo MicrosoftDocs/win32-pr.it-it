@@ -1,7 +1,7 @@
 ---
-description: Converte una mappa di altezza in una mappa normale. Ai componenti (x, y, z) di ogni normale viene eseguito il mapping ai canali (r, g, b) della trama di output.
+description: 'Funzione D3DX10ComputeNormalMap: converte una mappa di altezza in una mappa normale. I componenti (x,y,z) di ogni normale vengono mappati ai canali (r,g,b) della trama di output.'
 ms.assetid: 535033dd-f078-4d56-8e5d-cdda80ef5992
-title: Funzione D3DX10ComputeNormalMap (D3DX10Tex. h)
+title: Funzione D3DX10ComputeNormalMap (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1d7318e6d00d921ba0d573eb6fb696eed6c6a58d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 173a8e0c1b3130a399152187eb52288a0306051c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322951"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105319"
 ---
-# <a name="d3dx10computenormalmap-function"></a>D3DX10ComputeNormalMap (funzione)
+# <a name="d3dx10computenormalmap-function"></a>Funzione D3DX10ComputeNormalMap
 
-Converte una mappa di altezza in una mappa normale. Ai componenti (x, y, z) di ogni normale viene eseguito il mapping ai canali (r, g, b) della trama di output.
+Converte una mappa di altezza in una mappa normale. I componenti (x,y,z) di ogni normale vengono mappati ai canali (r,g,b) della trama di output.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ HRESULT D3DX10ComputeNormalMap(
 
 <dl> <dt>
 
-*pSrcTexture* \[ in\]
+*pSrcTexture* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Texture2D**](/windows/desktop/api/D3D10/nn-d3d10-id3d10texture2d)\***
@@ -53,34 +53,34 @@ Puntatore a un'interfaccia ID3D10Texture2D, che rappresenta la trama della mappa
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Uno o più \_ flag normalmap D3DX che controllano la generazione di mappe normali.
+Uno o più flag D3DX \_ NORMALMAP che controllano la generazione di mappe normali.
 
 </dd> <dt>
 
-*Canale* \[ di in\]
+*Canale* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Un \_ flag del canale D3DX che specifica l'origine delle informazioni sull'altezza.
+Un flag CHANNEL D3DX \_ che specifica l'origine delle informazioni sull'altezza.
 
 </dd> <dt>
 
-*Ampiezza* \[ in\]
+*Ampiezza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore costante moltiplicatore che aumenta (o diminuisce) i valori nella mappa normale. I valori più elevati in genere rendono più visibili i riscontri, mentre i valori più bassi rendono meno visibili i riscontri.
+Moltiplicatore di valori costante che aumenta (o diminuisce) i valori nella mappa normale. I valori più elevati in genere rendono le dossi più visibili, i valori più bassi in genere rendono le dossi meno visibili.
 
 </dd> <dt>
 
-*pDestTexture* \[ in\]
+*pDestTexture* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Texture2D**](/windows/desktop/api/D3D10/nn-d3d10-id3d10texture2d)\***
@@ -93,11 +93,11 @@ Puntatore a un'interfaccia ID3D10Texture2D, che rappresenta la trama di destinaz
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il valore seguente: D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo calcola la normalità usando la differenza centrale con una dimensione del kernel di 3x3. I canali RGB nella destinazione contengono i componenti parziali (x, y, z) del normale. Il denominatore differenze centrale è hardcoded in 2,0.
+Questo metodo calcola la normale usando la differenza centrale con una dimensione del kernel di 3x3. I canali RGB nella destinazione contengono componenti distorti (x,y,z) della normale. Il denominatore differenze centrale è hardcoded a 2.0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ Questo metodo calcola la normalità usando la differenza centrale con una dimens
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 

@@ -1,28 +1,16 @@
 ---
-description: 'Consente di visualizzare la finestra di dialogo Risultati ricerca: computer. Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specifico.'
-ms.assetid: 0304b955-afde-4de4-824a-9ec9c9530360
-title: Metodo Shell. FindComputer (shldisp. h)
-ms.topic: reference
-ms.date: 05/31/2018
-topic_type:
+description: metodo Shell.FindComputer - 'Visualizza la finestra di dialogo Risultati ricerca: Computer. La finestra di dialogo mostra il risultato della ricerca di un computer specificato."
+ms.assetid: 0304b955-afde-4de4-824a-9ec9c9530360 title: Shell.FindComputer method (Shldisp.h) ms.topic: reference ms.date: 05/31/2018 topic_type: 
 - APIRef
-- kbSyntax
-api_name:
-- Shell.FindComputer
-api_type:
-- COM
-api_location:
+- kbSyntax api_name: 
+- Shell.FindComputer api_type: 
+- Com api_location: 
 - Shell32.dll
-ms.openlocfilehash: 3824eeb98bfac11e007d1bf7dd9f89153a7b73ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980642"
 ---
-# <a name="shellfindcomputer-method"></a>Shell. FindComputer, metodo
 
-Consente di visualizzare la finestra di dialogo **Risultati ricerca: computer** . Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specifico.
+# <a name="shellfindcomputer-method"></a>Metodo Shell.FindComputer
+
+Visualizza la **finestra di dialogo Risultati ricerca:** Computer. Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,9 +45,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato **FindComputer** in uso. Il risultato di questo codice è identico a quello che si ottiene facendo clic sul pulsante **Start** , scegliendo **Cerca**, facendo clic sull'opzione **stampanti, computer o persone** , quindi facendo clic **su un computer in rete**. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente mostra **FindComputer** in uso. Il risultato di questo codice è lo stesso che si fa premendo il pulsante **Start,** facendo clic su **Cerca**, facendo clic sull'opzione **Stampanti,** computer o persone, quindi facendo clic su Un **computer nella rete**. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -75,7 +63,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -117,17 +105,17 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 
- 
+ 
 
- 
+ 
 
 
 

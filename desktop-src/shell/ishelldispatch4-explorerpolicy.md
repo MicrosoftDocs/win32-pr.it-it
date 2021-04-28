@@ -1,7 +1,7 @@
 ---
-description: Ottiene il valore per i criteri di Windows Internet Explorer specificati.
+description: 'Metodo IShellDispatch4.ExplorerPolicy: ottiene il valore per un criterio Internet Explorer Windows specificato.'
 ms.assetid: 490c3e18-b606-456a-9016-dc4f7bad2bc3
-title: Metodo IShellDispatch4. ExplorerPolicy (shldisp. h)
+title: Metodo IShellDispatch4.ExplorerPolicy (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 57247ad328c647cf9cdde32ac1a2951dd8e364ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a03d61905bdb1f2b16de11cc604625d8e71a7ea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879778"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116829"
 ---
-# <a name="ishelldispatch4explorerpolicy-method"></a>IShellDispatch4. ExplorerPolicy, metodo
+# <a name="ishelldispatch4explorerpolicy-method"></a>Metodo IShellDispatch4.ExplorerPolicy
 
-Ottiene il valore per i criteri di Windows Internet Explorer specificati.
+Ottiene il valore per un criterio di Internet Explorer Windows specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,12 +49,12 @@ IShellDispatch4.ExplorerPolicy( _
 
 <dl> <dt>
 
-*bstrPolicyName* \[ in\]
+*bstrPolicyName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che specifica il nome dei criteri.
+Valore **String** che specifica il nome dei criteri.
 
 </dd> </dl>
 
@@ -62,27 +62,27 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Valore associato al nome dei criteri specificato.
+Valore associato al nome del criterio specificato.
 
 ### <a name="vb"></a>VB
 
-Tipo: _*Variant \**_
+Tipo: **\* Variante**
 
-Valore associato al nome dei criteri specificato.
+Valore associato al nome del criterio specificato.
 
 ## <a name="remarks"></a>Commenti
 
-Gli amministratori di rete possono controllare e gestire l'ambiente di elaborazione dei propri utenti impostando i criteri.
+Gli amministratori di rete possono controllare e gestire l'ambiente di elaborazione degli utenti impostando criteri.
 
-Il nome del valore specificato deve essere incluso nella sottochiave _ *HKEY \_ Current \_ **\\** software utente **\\** Microsoft **\\** Windows **\\** CurrentVersion **\\** Policies **\\** Explorer**. Se il nome del valore non esiste, il metodo restituisce **null**.
+Il nome del valore specificato deve essere all'interno **della sottochiave HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Se il nome del valore non esiste, il metodo restituisce **null.**
 
 ## <a name="examples"></a>Esempio
 
 Gli esempi seguenti illustrano l'uso corretto di **ExplorerPolicy** per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -100,7 +100,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -142,11 +142,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |
 
 
 
