@@ -1,5 +1,5 @@
 ---
-description: arresta il servizio.
+description: 'Metodo StopService della classe Msvm_VirtualEthernetSwitchManagementService: arresta il servizio.'
 ms.assetid: 4f88b099-3a89-4d05-920e-265fc94599b1
 title: Metodo StopService della classe Msvm_VirtualEthernetSwitchManagementService
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6303327b66ce66c9cda6fe29e7d0a63184ea5929
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fbc91a4134fb0a024e66dfc1a46806aa531893f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314822"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111009"
 ---
-# <a name="stopservice-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a><span data-ttu-id="8a155-103">Metodo StopService della classe MSVM \_ VirtualEthernetSwitchManagementService</span><span class="sxs-lookup"><span data-stu-id="8a155-103">StopService method of the Msvm\_VirtualEthernetSwitchManagementService class</span></span>
+# <a name="stopservice-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a><span data-ttu-id="06207-103">Metodo StopService della classe Msvm \_ VirtualEthernetSwitchManagementService</span><span class="sxs-lookup"><span data-stu-id="06207-103">StopService method of the Msvm\_VirtualEthernetSwitchManagementService class</span></span>
 
-<span data-ttu-id="8a155-104">arresta il servizio.</span><span class="sxs-lookup"><span data-stu-id="8a155-104">Stops the service.</span></span>
+<span data-ttu-id="06207-104">arresta il servizio.</span><span class="sxs-lookup"><span data-stu-id="06207-104">Stops the service.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8a155-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="8a155-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="06207-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="06207-105">Syntax</span></span>
 
 
 ```mof
@@ -33,41 +33,41 @@ uint32 StopService();
 
 
 
-## <a name="parameters"></a><span data-ttu-id="8a155-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="8a155-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="06207-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="06207-106">Parameters</span></span>
 
-<span data-ttu-id="8a155-107">Questo metodo non presenta parametri.</span><span class="sxs-lookup"><span data-stu-id="8a155-107">This method has no parameters.</span></span>
+<span data-ttu-id="06207-107">Questo metodo non presenta parametri.</span><span class="sxs-lookup"><span data-stu-id="06207-107">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="8a155-108">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="8a155-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="06207-108">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="06207-108">Return value</span></span>
 
-<span data-ttu-id="8a155-109">Questo metodo restituisce uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="8a155-109">This method returns one of the following values:</span></span>
+<span data-ttu-id="06207-109">Questo metodo restituisce uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="06207-109">This method returns one of the following values:</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="8a155-110">**Completato senza errori** (0)</span><span class="sxs-lookup"><span data-stu-id="8a155-110">**Completed with No Error** (0)</span></span>
+<span data-ttu-id="06207-110">**Completata senza errori** (0)</span><span class="sxs-lookup"><span data-stu-id="06207-110">**Completed with No Error** (0)</span></span>
 </dt> <dt>
 
-<span data-ttu-id="8a155-111">**Non supportato** (1)</span><span class="sxs-lookup"><span data-stu-id="8a155-111">**Not supported** (1)</span></span>
+<span data-ttu-id="06207-111">**Non supportato** (1)</span><span class="sxs-lookup"><span data-stu-id="06207-111">**Not supported** (1)</span></span>
 </dt> </dl>
 
-## <a name="requirements"></a><span data-ttu-id="8a155-112">Requisiti</span><span class="sxs-lookup"><span data-stu-id="8a155-112">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="06207-112">Requisiti</span><span class="sxs-lookup"><span data-stu-id="06207-112">Requirements</span></span>
 
 
 
-| <span data-ttu-id="8a155-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="8a155-113">Requirement</span></span> | <span data-ttu-id="8a155-114">Valore</span><span class="sxs-lookup"><span data-stu-id="8a155-114">Value</span></span> |
+| <span data-ttu-id="06207-113">Requisito</span><span class="sxs-lookup"><span data-stu-id="06207-113">Requirement</span></span> | <span data-ttu-id="06207-114">Valore</span><span class="sxs-lookup"><span data-stu-id="06207-114">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="8a155-115">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="8a155-115">Minimum supported client</span></span><br/> | <span data-ttu-id="8a155-116">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="8a155-116">Windows 8.1</span></span><br/>                                                                                  |
-| <span data-ttu-id="8a155-117">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="8a155-117">Minimum supported server</span></span><br/> | <span data-ttu-id="8a155-118">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="8a155-118">Windows Server 2012 R2</span></span><br/>                                                                       |
-| <span data-ttu-id="8a155-119">Spazio dei nomi</span><span class="sxs-lookup"><span data-stu-id="8a155-119">Namespace</span></span><br/>                | <span data-ttu-id="8a155-120">\\Virtualizzazione radice \\ v2</span><span class="sxs-lookup"><span data-stu-id="8a155-120">Root\\virtualization\\v2</span></span><br/>                                                                     |
-| <span data-ttu-id="8a155-121">MOF</span><span class="sxs-lookup"><span data-stu-id="8a155-121">MOF</span></span><br/>                      | <dl> <span data-ttu-id="8a155-122"><dt>WindowsVirtualization. v2. mof</dt></span><span class="sxs-lookup"><span data-stu-id="8a155-122"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
-| <span data-ttu-id="8a155-123">DLL</span><span class="sxs-lookup"><span data-stu-id="8a155-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="8a155-124"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="8a155-124"><dt>Vmms.exe</dt></span></span> </dl>                     |
+| <span data-ttu-id="06207-115">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="06207-115">Minimum supported client</span></span><br/> | <span data-ttu-id="06207-116">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="06207-116">Windows 8.1</span></span><br/>                                                                                  |
+| <span data-ttu-id="06207-117">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="06207-117">Minimum supported server</span></span><br/> | <span data-ttu-id="06207-118">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="06207-118">Windows Server 2012 R2</span></span><br/>                                                                       |
+| <span data-ttu-id="06207-119">Spazio dei nomi</span><span class="sxs-lookup"><span data-stu-id="06207-119">Namespace</span></span><br/>                | <span data-ttu-id="06207-120">Virtualizzazione \\ radice \\ v2</span><span class="sxs-lookup"><span data-stu-id="06207-120">Root\\virtualization\\v2</span></span><br/>                                                                     |
+| <span data-ttu-id="06207-121">MOF</span><span class="sxs-lookup"><span data-stu-id="06207-121">MOF</span></span><br/>                      | <dl> <span data-ttu-id="06207-122"><dt>WindowsVirtualization.V2.mof</dt></span><span class="sxs-lookup"><span data-stu-id="06207-122"><dt>WindowsVirtualization.V2.mof</dt></span></span> </dl> |
+| <span data-ttu-id="06207-123">DLL</span><span class="sxs-lookup"><span data-stu-id="06207-123">DLL</span></span><br/>                      | <dl> <span data-ttu-id="06207-124"><dt>Vmms.exe</dt></span><span class="sxs-lookup"><span data-stu-id="06207-124"><dt>Vmms.exe</dt></span></span> </dl>                     |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="8a155-125">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="8a155-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="06207-125">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="06207-125">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="8a155-126">**\_VirtualEthernetSwitchManagementService MSVM**</span><span class="sxs-lookup"><span data-stu-id="8a155-126">**Msvm\_VirtualEthernetSwitchManagementService**</span></span>](msvm-virtualethernetswitchmanagementservice.md)
+[<span data-ttu-id="06207-126">**Msvm \_ VirtualEthernetSwitchManagementService**</span><span class="sxs-lookup"><span data-stu-id="06207-126">**Msvm\_VirtualEthernetSwitchManagementService**</span></span>](msvm-virtualethernetswitchmanagementservice.md)
 </dt> </dl>
 
  
