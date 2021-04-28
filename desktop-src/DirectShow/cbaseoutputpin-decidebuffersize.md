@@ -1,7 +1,7 @@
 ---
-description: Il metodo DecideBufferSize imposta i requisiti del buffer.
+description: 'Metodo CBaseOutputPin.DecideBufferSize: il metodo DecideBufferSize imposta i requisiti del buffer.'
 ms.assetid: 1f7a3424-18ba-4a10-b09f-947ee8585ffa
-title: Metodo CBaseOutputPin. DecideBufferSize (Amfilter. h)
+title: Metodo CBaseOutputPin.DecideBufferSize (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5dcb3328b56a7e203575a3abbaab64cda6a9b87f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a76f058e2f9c07a344453db87046704e26280a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332073"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099529"
 ---
-# <a name="cbaseoutputpindecidebuffersize-method"></a>CBaseOutputPin. DecideBufferSize, metodo
+# <a name="cbaseoutputpindecidebuffersize-method"></a>Metodo CBaseOutputPin.DecideBufferSize
 
 Il `DecideBufferSize` metodo imposta i requisiti del buffer.
 
@@ -53,17 +53,17 @@ Puntatore all'interfaccia [**IMemAllocator**](/windows/desktop/api/Strmif/nn-str
 *ppropInputRequest* 
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ proprietà dell'allocatore**](/windows/win32/api/strmif/ns-strmif-allocator_properties) che contiene i requisiti del buffer del PIN di input. Se il pin di input non presenta requisiti, il chiamante deve azzerare i membri di questa struttura prima di chiamare il metodo.
+Puntatore a una [**struttura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) che contiene i requisiti del buffer del pin di input. Se il pin di input non ha requisiti, il chiamante deve azzerare i membri di questa struttura prima di chiamare il metodo .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la ragione dell'errore.
+Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica la causa dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Eseguire l'override di questo metodo nella classe derivata. Chiamare il metodo [**IMemAllocator:: seproperties**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-setproperties) per specificare i requisiti del buffer. In genere, la classe derivata rispetta i requisiti del buffer del PIN di input, ma non è necessario.
+Eseguire l'override di questo metodo nella classe derivata. Chiamare il [**metodo IMemAllocator::SetProperties**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-setproperties) per specificare i requisiti del buffer. In genere, la classe derivata rispetta i requisiti del buffer del pin di input, ma non è necessario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Eseguire l'override di questo metodo nella classe derivata. Chiamare il metodo [
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

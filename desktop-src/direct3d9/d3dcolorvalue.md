@@ -1,7 +1,7 @@
 ---
-description: Descrive i valori dei colori.
+description: 'Struttura D3DCOLORVALUE (D3D9Types.h): descrive i valori dei colori.'
 ms.assetid: 6af8c2ec-bc79-4dc6-b56d-7a7676a50b39
-title: Struttura D3DCOLORVALUE (D3D9Types. h)
+title: Struttura D3DCOLORVALUE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 1fe2f187921749207bbbf51d7fcfd75357a70858
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c9b55fbf718382e9dca7e3999cce0cabe895a261
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354409"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116059"
 ---
-# <a name="d3dcolorvalue-structure-d3d9typesh"></a>Struttura D3DCOLORVALUE (D3D9Types. h)
+# <a name="d3dcolorvalue-structure-d3d9typesh"></a>Struttura D3DCOLORVALUE (D3D9Types.h)
 
 Descrive i valori dei colori.
 
@@ -49,18 +49,18 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valore a virgola mobile che specifica il componente rosso di un colore. Questo valore è in genere compreso nell'intervallo compreso tra 0,0 e 1,0. Il valore 0,0 indica l'assenza completa del componente rosso, mentre un valore pari a 1,0 indica che il colore rosso è completamente presente.
+Valore a virgola mobile che specifica il componente rosso di un colore. Questo valore è in genere compreso nell'intervallo compreso tra 0,0 e 1,0. Il valore 0,0 indica l'assenza completa del componente rosso, mentre il valore 1,0 indica che il rosso è completamente presente.
 
 </dd> <dt>
 
-**g**
+**G**
 </dt> <dd>
 
 Tipo: **float**
 
 </dd> <dd>
 
-Valore a virgola mobile che specifica il componente verde di un colore. Questo valore è in genere compreso nell'intervallo compreso tra 0,0 e 1,0. Il valore 0,0 indica l'assenza completa del componente verde, mentre un valore pari a 1,0 indica che il verde è completamente presente.
+Valore a virgola mobile che specifica il componente verde di un colore. Questo valore è in genere compreso nell'intervallo compreso tra 0,0 e 1,0. Il valore 0,0 indica l'assenza completa del componente verde, mentre il valore 1,0 indica che il verde è completamente presente.
 
 </dd> <dt>
 
@@ -75,20 +75,20 @@ Valore a virgola mobile che specifica il componente blu di un colore. Questo val
 
 </dd> <dt>
 
-**un**
+**Un**
 </dt> <dd>
 
 Tipo: **float**
 
 </dd> <dd>
 
-Valore a virgola mobile che specifica il componente alfa di un colore. Questo valore è in genere compreso nell'intervallo compreso tra 0,0 e 1,0. Il valore 0,0 indica completamente trasparente, mentre un valore pari a 1,0 indica una piena opacità.
+Valore a virgola mobile che specifica il componente alfa di un colore. Questo valore è in genere compreso nell'intervallo da 0,0 a 1,0. Un valore pari a 0,0 indica completamente trasparente, mentre un valore pari a 1,0 indica che è completamente opaco.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare i membri di questa struttura su valori non compresi nell'intervallo compreso tra 0 e 1 per implementare alcuni effetti insoliti. I valori maggiori di 1 producono luci forti che tendono a pulire una scena. I valori negativi producono luci scure che effettivamente rimuovono la luce da una scena.
+È possibile impostare i membri di questa struttura su valori esterni all'intervallo compreso tra 0 e 1 per implementare alcuni effetti insoliti. I valori maggiori di 1 producono luci forti che tendono a evase una scena. I valori negativi producono luci scuri che rimuovono effettivamente la luce da una scena.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Valore a virgola mobile che specifica il componente alfa di un colore. Questo va
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Imposta un numero a virgola mobile.
+description: 'Metodo ID3DXConstantTable::SetFloat: imposta un numero a virgola mobile.'
 ms.assetid: 920cbcf2-ccb9-4533-abbc-6bab8b159ebe
-title: 'Metodo ID3DXConstantTable:: sefloat (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::SetFloat (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5048f08acc470e5244de80f4e5618c7416bc1bbf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6589d56e0b9dcf8debe14a7c81f86a4972a73405
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322816"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115219"
 ---
-# <a name="id3dxconstanttablesetfloat-method"></a>Metodo ID3DXConstantTable:: sefloat
+# <a name="id3dxconstanttablesetfloat-method"></a>Metodo ID3DXConstantTable::SetFloat
 
 Imposta un numero a virgola mobile.
 
@@ -42,16 +42,16 @@ HRESULT SetFloat(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato alla tabella delle costanti.
+Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -63,7 +63,7 @@ Identificatore univoco della costante. Vedere [D3DXHANDLE](dx9-graphics-referenc
 *f* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Numero a virgola mobile.
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

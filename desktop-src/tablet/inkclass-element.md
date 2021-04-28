@@ -1,19 +1,19 @@
 ---
-description: Rappresenta i tratti di input penna raccolti in uno spazio di input penna.
+description: "Elemento InkClass: rappresenta i tratti raccolti dell'input penna all'interno di uno spazio input penna."
 ms.assetid: 7c064ff9-e0d9-4be4-be83-c10bbfd71134
 title: Elemento InkClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ffd2e720483bf7153b59e5876cf2f3d0e2aad6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78faa7a0d331ba6e904154891d7f53d8a143115d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525957"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110339"
 ---
 # <a name="inkclass-element"></a>Elemento InkClass
 
-Rappresenta i tratti di input penna raccolti in uno spazio di input penna.
+Rappresenta i tratti raccolti dell'input penna all'interno di uno spazio input penna.
 
 ## <a name="definition"></a>Definizione
 
@@ -27,11 +27,11 @@ Rappresenta i tratti di input penna raccolti in uno spazio di input penna.
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
@@ -40,8 +40,8 @@ Nessuna.
 |              |                                            |
 |--------------|--------------------------------------------|
 | Tipo di elemento | **xs:string**                              |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk |
-| Nome schema  | Lettore Journal                             |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink |
+| Nome schema  | Lettore di journal                             |
 
 
 

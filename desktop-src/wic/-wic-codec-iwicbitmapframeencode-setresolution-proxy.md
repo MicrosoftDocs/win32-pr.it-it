@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per il metodo di risoluzione.
+description: IWICBitmapFrameEncode_SetResolution_Proxy funzione proxy per il metodo SetResolution.
 ms.assetid: dc8df5bb-c38b-4be3-a4c6-60e7d5e1cd1b
-title: Funzione IWICBitmapFrameEncode_SetResolution_Proxy
+title: IWICBitmapFrameEncode_SetResolution_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 9801384e305f2449c6a31b80cb238fc92f7b63b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 632d6e797d499c4c5468505a4cee49e088ab025a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313434"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116609"
 ---
-# <a name="iwicbitmapframeencode_setresolution_proxy-function"></a>IWICBitmapFrameEncode- \_ \_ funzione proxy di risoluzione
+# <a name="iwicbitmapframeencode_setresolution_proxy-function"></a>Funzione proxy IWICBitmapFrameEncode \_ SetResolution \_
 
-Funzione proxy per il metodo di [**risoluzione**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setresolution) .
+Funzione proxy per il [**metodo SetResolution.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setresolution)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ HRESULT IWICBitmapFrameEncode_SetResolution_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Puntatore a questo oggetto [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Puntatore a [**questo oggetto IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)
 
 </dd> <dt>
 
-*DpiX* \[ in\]
+*dpiX* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Double**
+Tipo: **double**
 
 Valore di risoluzione orizzontale.
 
 </dd> <dt>
 
-*DpiY* \[ in\]
+*dpiY* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Double**
+Tipo: **double**
 
 Valore di risoluzione verticale.
 
@@ -73,7 +73,7 @@ Valore di risoluzione verticale.
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -83,9 +83,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

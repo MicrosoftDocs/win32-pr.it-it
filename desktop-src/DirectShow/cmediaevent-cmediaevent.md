@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CMediaEvent.CMediaEvent : metodo costruttore.'
 ms.assetid: 7f7a0a9f-e531-4e22-8601-b84ab088e9e7
-title: Costruttore CMediaEvent. CMediaEvent (Ctlutil. h)
+title: Costruttore CMediaEvent.CMediaEvent (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 77b87fa589728592874b0dea96f7b6efca501471
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36cd82b086241012542701001c4de1fe16ac2d8e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328030"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095559"
 ---
-# <a name="cmediaeventcmediaevent-constructor"></a>Costruttore CMediaEvent. CMediaEvent
+# <a name="cmediaeventcmediaevent-constructor"></a>Costruttore CMediaEvent.CMediaEvent
 
 Metodo del costruttore.
 
@@ -43,23 +43,23 @@ CMediaEvent(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
 Puntatore al nome dell'oggetto a scopo di debug.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto.
+Puntatore al proprietario dell'oggetto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Allocare il parametro *pname* nella memoria statica. Questo nome viene visualizzato nel terminale di debug al momento della creazione e dell'eliminazione dell'oggetto.
+Allocare *il parametro pName* nella memoria statica. Questo nome viene visualizzato nel terminale di debug al momento della creazione e dell'eliminazione dell'oggetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Allocare il parametro *pname* nella memoria statica. Questo nome viene visualizz
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

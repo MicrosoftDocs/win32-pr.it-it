@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice che si ridimensiona lungo l'asse x, l'asse y e l'asse z.
+description: "Funzione D3DXMatrixScaling (D3DX10Math.h): compila una matrice che viene ridimensionata lungo l'asse x, l'asse y e l'asse z."
 ms.assetid: 1804bf41-26de-4be1-ad62-7a871d7408e6
-title: Funzione D3DXMatrixScaling (D3DX10Math. h)
+title: Funzione D3DXMatrixScaling (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: adb1becb67a561778b31c90ea3d6c96e776c9a67
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bf11b2196953775fb41412ad484a77ab00ae578e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355599"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108929"
 ---
-# <a name="d3dxmatrixscaling-function-d3dx10mathh"></a>Funzione D3DXMatrixScaling (D3DX10Math. h)
+# <a name="d3dxmatrixscaling-function-d3dx10mathh"></a>Funzione D3DXMatrixScaling (D3DX10Math.h)
 
-Compila una matrice che si ridimensiona lungo l'asse x, l'asse y e l'asse z.
+Compila una matrice che viene ridimensionata lungo l'asse x, l'asse y e l'asse z.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ D3DXMATRIX* D3DXMatrixScaling(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*SX* \[ in\]
+*sx* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di scala applicato lungo l'asse x.
 
 </dd> <dt>
 
-*SY* \[ in\]
+*sy* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di scala applicato lungo l'asse y.
 
 </dd> <dt>
 
-*SZ* \[ in\]
+*sz* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di scala applicato lungo l'asse z.
 
@@ -83,11 +83,11 @@ Fattore di scala applicato lungo l'asse z.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla trasformazione di scala D3DXMATRIX.
+Puntatore alla trasformazione di ridimensionamento D3DXMATRIX.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixScaling può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixScaling può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

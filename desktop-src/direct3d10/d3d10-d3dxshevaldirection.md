@@ -1,7 +1,7 @@
 ---
-description: Valuta le funzioni di base dell'armonica sferica (SH) da un vettore di direzione di input.
+description: 'Funzione D3DXSHEvalDirection (D3DX10.h): valuta le funzioni di base armoniche sferiche (SH) da un vettore di direzione di input.'
 ms.assetid: c86973cc-c5b0-4358-b7eb-5c31f38b5b5a
-title: Funzione D3DXSHEvalDirection (D3DX10. h)
+title: Funzione D3DXSHEvalDirection (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 698873f3278b37970120b03c25918096762ead34
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c7fa1f94d65ca8096a0398d71ca2f562b643d47a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104560803"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108589"
 ---
-# <a name="d3dxshevaldirection-function-d3dx10h"></a>Funzione D3DXSHEvalDirection (D3DX10. h)
+# <a name="d3dxshevaldirection-function-d3dx10h"></a>Funzione D3DXSHEvalDirection (D3DX10.h)
 
-Valuta le funzioni di base dell'armonica sferica (SH) da un vettore di direzione di input.
+Valuta le funzioni di base armoniche sferiche (SH) da un vettore di direzione di input.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,51 +42,51 @@ FLOAT* D3DXSHEvalDirection(
 
 <dl> <dt>
 
-*broncio* \[ in\]
+*pOut* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore ai coefficienti di output armonici sferici (SH). La valutazione genera coefficienti Order ². Vedere la sezione Osservazioni.
+Puntatore ai coefficienti di output armonici sferici (SH). La valutazione genera coefficienti Order². Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*Ordine* \[ di in\]
+*Ordine* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso tra D3DXSH \_ MINORDER \_ e D3DXSH MAXORDER, inclusi. La valutazione genera coefficienti Order ². Il livello della valutazione è Order-1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo tra D3DXSH \_ MINORDER e D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Order². Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
-*pDir* \[ in\]
+*pDir* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-(x, y, z) vettore di direzione in cui valutare le funzioni di base SH. Deve essere normalizzato. Vedere la sezione Osservazioni.
+Vettore di direzione (x, y, z) in cui valutare le funzioni di base sh. Deve essere normalizzato. Vedere la sezione Osservazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntatore ai coefficienti di output SH. Vedere la sezione Osservazioni.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base YLM viene archiviato in corrispondenza della posizione di memoria l ² + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l I + m + l, dove:
 
 -   l è il grado della funzione di base.
--   m è l'indice della funzione di base per il valore l specificato e viene compreso tra-l e l, inclusi.
+-   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.
 
-Nella sfera con raggio di unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con Theta, l'angolo sull'asse z nella direzione destra e Phi, l'angolo da z.
+Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con theta, l'angolo sull'asse z nella direzione a destra e phi, l'angolo da z.
 
-![illustrazione di una sfera con raggio unitario](images/spherical-coordinates.png)
+![illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
 
-Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, z) e sferiche (theta, Phi) nella sfera dell'unità. L'angolo theta varia nell'intervallo compreso tra 0 e 2 pi, mentre Phi varia da 0 a pi.
+Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
 
 ![equazioni della relazione tra coordinate cartesiane e sferiche](images/spherical-coordinates-equations.png)
 
@@ -96,8 +96,8 @@ Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

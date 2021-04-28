@@ -1,7 +1,7 @@
 ---
-description: Determina il prodotto della matrice corrente e della matrice specificata.
+description: 'Metodo ID3DXMATRIXStack::MultMatrix (D3DX10.h): determina il prodotto della matrice corrente e della matrice specificata.'
 ms.assetid: 72388919-e474-4433-b219-41e2d312848e
-title: 'Metodo ID3DXMATRIXStack:: MultMatrix (D3DX10. h)'
+title: Metodo ID3DXMATRIXStack::MultMatrix (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 43f80ca26f615e02570f0855b1ba6c2435e11b5b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 969cdebcee34add15cbf6bbcfbb1048387b2d7e8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323663"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107969"
 ---
-# <a name="id3dxmatrixstackmultmatrix-method-d3dx10h"></a>Metodo ID3DXMATRIXStack:: MultMatrix (D3DX10. h)
+# <a name="id3dxmatrixstackmultmatrix-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::MultMatrix (D3DX10.h)
 
 Determina il prodotto della matrice corrente e della matrice specificata.
 
@@ -40,7 +40,7 @@ HRESULT MultMatrix(
 
 <dl> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo moltiplica la matrice specificata con la matrice corrente (la trasformazione è relativa all'origine mondiale corrente).
+Questo metodo moltiplica a destra la matrice specificata per la matrice corrente (la trasformazione riguarda l'origine globale corrente).
 
 
 ```
@@ -66,7 +66,7 @@ m_pstack[m_currentPos] = m_pstack[m_currentPos] * (*pMat);
 
 
 
-Questo metodo non aggiunge un elemento allo stack, ma sostituisce la matrice corrente con il prodotto della matrice corrente e della matrice specificata.
+Questo metodo non aggiunge un elemento nello stack, ma sostituisce la matrice corrente con il prodotto della matrice corrente e della matrice specificata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Questo metodo non aggiunge un elemento allo stack, ma sostituisce la matrice cor
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

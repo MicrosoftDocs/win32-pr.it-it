@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetPinCount Recupera il numero di pin.
+description: 'Metodo CBaseRenderer.GetPinCount: il metodo GetPinCount recupera il numero di pin.'
 ms.assetid: 518de15d-2ecf-425e-b4cd-14aaaf938417
-title: Metodo CBaseRenderer. GetPinCount (Renbase. h)
+title: Metodo CBaseRenderer.GetPinCount (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 71b3703389019e2217a595884ac983e90835cdac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 569a8dd4352edb0c4660fecd3e77fdfaec0ec4c4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325518"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095889"
 ---
-# <a name="cbaserenderergetpincount-method"></a>CBaseRenderer. GetPinCount, metodo
+# <a name="cbaserenderergetpincount-method"></a>Metodo CBaseRenderer.GetPinCount
 
 Il `GetPinCount` metodo recupera il numero di pin.
 
@@ -46,7 +46,7 @@ Restituisce 1.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo implementa il metodo [**CBaseFilter:: GetPinCount**](cbasefilter-getpincount.md) , che è virtuale puro nella classe **CBaseFilter** .
+Questo metodo implementa il [**metodo CBaseFilter::GetPinCount,**](cbasefilter-getpincount.md) che è virtuale puro nella **classe CBaseFilter.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo implementa il metodo [**CBaseFilter:: GetPinCount**](cbasefilter-g
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

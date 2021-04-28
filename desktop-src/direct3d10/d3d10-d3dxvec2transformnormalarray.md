@@ -1,7 +1,7 @@
 ---
-description: Trasforma una matrice (x, y, 0, 0) in base a una matrice specificata.
+description: 'Funzione D3DXVec2TransformNormalArray (D3DX10Math.h): trasforma una matrice (x, y, 0, 0) da una determinata matrice.'
 ms.assetid: a53f998a-f2a5-4e4b-bc1c-c1f46284d78b
-title: Funzione D3DXVec2TransformNormalArray (D3DX10Math. h)
+title: Funzione D3DXVec2TransformNormalArray (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4850961560ae810b9a21f58fbefa9b6b07227c77
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b4e18fc2bb8c62bb86947b9eab35daae9d0242ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323221"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108279"
 ---
-# <a name="d3dxvec2transformnormalarray-function-d3dx10mathh"></a>Funzione D3DXVec2TransformNormalArray (D3DX10Math. h)
+# <a name="d3dxvec2transformnormalarray-function-d3dx10mathh"></a>Funzione D3DXVec2TransformNormalArray (D3DX10Math.h)
 
 Trasforma una matrice (x, y, 0, 0) in base a una matrice specificata.
 
@@ -45,7 +45,7 @@ D3DXVECTOR2* D3DXVec2TransformNormalArray(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
@@ -54,16 +54,16 @@ Puntatore a [**D3DXVECTOR2**](d3d10-d3dxvector2.md) che rappresenta il risultato
 
 </dd> <dt>
 
-*Outstride* \[ in\]
+*OutStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra i vettori nel flusso di dati di output.
+Stride tra vettori nel flusso di dati di output.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](../direct3d9/d3dxvector2.md) \***
@@ -72,28 +72,28 @@ Puntatore alla matrice D3DXVECTOR2 di origine.
 
 </dd> <dt>
 
-*VStride* \[ in\]
+*VStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra i vettori nel flusso di dati di input.
+Stride tra vettori nel flusso di dati di input.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3d10-d3dxmatrix.md) origine.
 
 </dd> <dt>
 
 *n* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di elementi nella matrice.
 
@@ -107,11 +107,11 @@ Puntatore a una struttura D3DXVECTOR2 che rappresenta la matrice trasformata.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione trasforma il vettore (pV->x, pV->y, 0, 0) dalla matrice a cui fa riferimento il pM.
+Questa funzione trasforma il vettore (pV->x, pV->y, 0, 0) dalla matrice a cui punta pM.
 
-Se si vuole trasformare un normale, la matrice passata a questa funzione deve essere la trasposizione dell'inverso della matrice da usare per trasformare un punto.
+Se si vuole trasformare una normale, la matrice passata a questa funzione deve essere la trasposizione dell'inverso della matrice da usare per trasformare un punto.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXVec2TransformNormalArray** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXVec2TransformNormalArray** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -119,8 +119,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: .
+description: System.Document. Divisione
 ms.assetid: b1cc598d-d861-4526-b2ed-ab10db805ccb
 title: System.Document. Divisione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1eadb60fb1b69571e21cf0252ae55c3c817a6727
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87e5933fa8134f1aed312106388cf0fee1544c98
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312514"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108101099"
 ---
 # <a name="systemdocumentdivision"></a>System.Document. Divisione
 
@@ -30,7 +30,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -45,13 +45,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -60,7 +60,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

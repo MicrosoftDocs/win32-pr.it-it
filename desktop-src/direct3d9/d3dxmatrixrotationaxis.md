@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice che ruota intorno a un asse arbitrario.
+description: 'Funzione D3DXMatrixRotationAxis (D3dx9math.h): compila una matrice che ruota intorno a un asse arbitrario.'
 ms.assetid: 368c8f64-7709-4200-94d3-3dbc92a960c1
-title: Funzione D3DXMatrixRotationAxis (D3dx9math. h)
+title: Funzione D3DXMatrixRotationAxis (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fffc4a5bdd287c79352beb3ee0eeaf97b0573753
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 720ac4d3bdae2910cee7913b9c34316d72526688
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322127"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118189"
 ---
-# <a name="d3dxmatrixrotationaxis-function-d3dx9mathh"></a>Funzione D3DXMatrixRotationAxis (D3dx9math. h)
+# <a name="d3dxmatrixrotationaxis-function-d3dx9mathh"></a>Funzione D3DXMatrixRotationAxis (D3dx9math.h)
 
 Compila una matrice che ruota intorno a un asse arbitrario.
 
@@ -42,16 +42,16 @@ D3DXMATRIX* D3DXMatrixRotationAxis(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
@@ -60,12 +60,12 @@ Puntatore all'asse arbitrario. Vedere [**D3DXVECTOR3**](d3dxvector3.md).
 
 </dd> <dt>
 
-*Angolo* \[ in\]
+*Angolo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Angolo di rotazione in radianti. Gli angoli sono misurati in senso orario quando si osserva lungo l'asse di rotazione verso l'origine.
+Angolo di rotazione in radianti. Gli angoli vengono misurati in senso orario quando si guarda lungo l'asse di rotazione verso l'origine.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Angolo di rotazione in radianti. Gli angoli sono misurati in senso orario quando
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) ruotata intorno all'asse specificato.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) ruotata intorno all'asse specificato.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixRotationAxis** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixRotationAxis** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -103,7 +103,7 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 [**D3DXMatrixRotationX**](d3dxmatrixrotationx.md)
 </dt> <dt>
 
-[**D3DXMatrixRotationY**](d3dxmatrixrotationy.md)
+[**D3DXMatrixRotationy**](d3dxmatrixrotationy.md)
 </dt> <dt>
 
 [**D3DXMatrixRotationYawPitchRoll**](d3dxmatrixrotationyawpitchroll.md)

@@ -1,17 +1,17 @@
 ---
-description: .
+description: System.Media.AuthorUrl
 ms.assetid: b8891bae-31da-48f6-b4e6-18799a199c9a
-title: System. Media. AuthorUrl
+title: System.Media.AuthorUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b048946b0a4ab3672a9aa3b4b73ba809850e5de
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 1c7e94e13db057a9b71c5a1735f896d71c32cf5b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320624"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092329"
 ---
-# <a name="systemmediaauthorurl"></a>System. Media. AuthorUrl
+# <a name="systemmediaauthorurl"></a>System.Media.AuthorUrl
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,13 +30,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -45,13 +45,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -60,13 +60,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo ConvertTimeFormat converte da un formato di ora a un altro. Questo metodo implementa il metodo IMediaSeeking:: ConvertTimeFormat.'
+description: 'Metodo CPosPassThru.ConvertTimeFormat: il metodo ConvertTimeFormat esegue la conversione da un formato di ora a un altro. Questo metodo implementa il metodo IMediaSeeking::ConvertTimeFormat.'
 ms.assetid: e766d112-ee41-4c64-a735-b6317093518a
-title: Metodo CPosPassThru. ConvertTimeFormat (Ctlutil. h)
+title: Metodo CPosPassThru.ConvertTimeFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bcce3e24c46e3e59c6bad6b4fbd60b139806de73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc463cb6dc891e677266289971a1dac8b335a8c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329517"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098959"
 ---
-# <a name="cpospassthruconverttimeformat-method"></a>CPosPassThru. ConvertTimeFormat, metodo
+# <a name="cpospassthruconverttimeformat-method"></a>Metodo CPosPassThru.ConvertTimeFormat
 
-Il `ConvertTimeFormat` metodo converte da un formato di ora a un altro. Questo metodo implementa il metodo [**IMediaSeeking:: ConvertTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-converttimeformat) .
+Il `ConvertTimeFormat` metodo esegue la conversione da un formato di ora a un altro. Questo metodo implementa il [**metodo IMediaSeeking::ConvertTimeFormat.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-converttimeformat)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Puntatore a una variabile che riceve l'ora convertita.
 *pTargetFormat* 
 </dt> <dd>
 
-Puntatore al GUID del formato dell'ora del formato di destinazione. Se è **null**, viene utilizzato il formato corrente.
+Puntatore al GUID del formato dell'ora del formato di destinazione. Se **NULL,** viene usato il formato corrente.
 
 </dd> <dt>
 
@@ -69,13 +69,13 @@ Valore dell'ora da convertire.
 *pSourceFormat* 
 </dt> <dd>
 
-Puntatore al GUID del formato dell'ora del formato da convertire. Se è **null**, viene utilizzato il formato corrente.
+Puntatore al GUID del formato dell'ora del formato da convertire. Se **NULL,** viene usato il formato corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Restituisce il valore **HRESULT** dal pin connesso.
 [**Classe CPosPassThru**](cpospassthru.md)
 </dt> <dt>
 
-[**GUID del formato dell'ora**](time-format-guids.md)
+[**GUID di formato ora**](time-format-guids.md)
 </dt> </dl>
 
  

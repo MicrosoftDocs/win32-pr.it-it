@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero di scalari per canale di colore utilizzato in memoria per archiviare gli esempi.
+description: 'Metodo ID3DXPRTCompBuffer::GetNumCoeffs: recupera il numero di scalari per canale di colore usato in memoria per archiviare i campioni.'
 ms.assetid: 82af1ff0-a7d1-48a2-9d74-10e7a2c28568
-title: 'Metodo ID3DXPRTCompBuffer:: GetNumCoeffs (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTCompBuffer::GetNumCoeffs (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 676be3aba75ab8626b186275349fb6f9482401ab
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ec98f2d3db89418e0d9ec4c494d13b6e3d5dbba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132386"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093114"
 ---
-# <a name="id3dxprtcompbuffergetnumcoeffs-method"></a>Metodo ID3DXPRTCompBuffer:: GetNumCoeffs
+# <a name="id3dxprtcompbuffergetnumcoeffs-method"></a>Metodo ID3DXPRTCompBuffer::GetNumCoeffs
 
-Recupera il numero di scalari per canale di colore utilizzato in memoria per archiviare gli esempi.
+Recupera il numero di scalari per canale di colore utilizzato in memoria per archiviare i campioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Restituisce il numero di scalari per canale di colore utilizzato in memoria per archiviare gli esempi.
+Restituisce il numero di scalari per canale di colore utilizzato in memoria per archiviare i campioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il numero di scalari per canale di colore utilizzato in memoria per 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
