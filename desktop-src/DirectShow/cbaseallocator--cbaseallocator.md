@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: 'Distruttore CBaseAllocator.~CBaseAllocator : metodo del distruttore.'
 ms.assetid: b1e5653f-d72f-4cde-a8c9-d25763434374
-title: Distruttore CBaseAllocator. ~ CBaseAllocator (Amfilter. h)
+title: Distruttore CBaseAllocator.~CBaseAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 53587482c5d9cf8f5a772453f220c7633c17d383
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a4b754c8937b87a547f4583b3270f5782a6a415
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324043"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096419"
 ---
-# <a name="cbaseallocatorcbaseallocator-destructor"></a>Distruttore CBaseAllocator. ~ CBaseAllocator
+# <a name="cbaseallocatorcbaseallocator-destructor"></a>Distruttore CBaseAllocator.~CBaseAllocator
 
 Metodo del distruttore.
 
@@ -38,7 +38,7 @@ Metodo del distruttore.
 
 ## <a name="remarks"></a>Osservazioni
 
-Chiamare sempre il metodo [**CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) prima di eliminare l'oggetto. Il distruttore della classe base non può chiamare il metodo **decommit**, perché il metodo chiama il metodo virtuale pure [**CBaseAllocator:: Free**](cbaseallocator-free.md). Le classi derivate devono eseguire l'override di questo distruttore e chiamare **decommit**.
+Chiamare sempre il [**metodo CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) prima di eliminare l'oggetto. Il distruttore della classe base non può chiamare **Decommit** perché tale metodo chiama il metodo virtuale [**puro CBaseAllocator::Free.**](cbaseallocator-free.md) Le classi derivate devono eseguire l'override di questo distruttore e **chiamare Decommit**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Chiamare sempre il metodo [**CBaseAllocator::D ecommit**](cbaseallocator-decommi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

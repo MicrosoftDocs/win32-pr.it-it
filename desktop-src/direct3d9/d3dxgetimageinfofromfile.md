@@ -1,7 +1,7 @@
 ---
-description: Recupera le informazioni su un file di immagine specificato.
+description: 'Funzione D3DXGetImageInfoFromFile: recupera informazioni su un determinato file di immagine.'
 ms.assetid: 2e9d7073-4136-4fb7-8749-810aee000433
-title: Funzione D3DXGetImageInfoFromFile (D3dx9tex. h)
+title: Funzione D3DXGetImageInfoFromFile (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ff5d540871482b2628fd48deb382121591a9594f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bb03b6482d140a3b78e43d8b99c60499ae6c8b16
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322665"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114495"
 ---
-# <a name="d3dxgetimageinfofromfile-function"></a>D3DXGetImageInfoFromFile (funzione)
+# <a name="d3dxgetimageinfofromfile-function"></a>Funzione D3DXGetImageInfoFromFile
 
-Recupera le informazioni su un file di immagine specificato.
+Recupera informazioni su un determinato file di immagine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT D3DXGetImageInfoFromFile(
 
 <dl> <dt>
 
-*pSrcFile* \[ in\]
+*pSrcFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nome file dell'immagine di cui recuperare le informazioni. Se \_ sono definiti Unicode o Unicode, questo tipo di parametro è LPCWSTR; in caso contrario, il tipo è LPCSTR.
+Nome file dell'immagine su cui recuperare le informazioni. Se sono definiti \_ unicode o UNICODE, questo tipo di parametro è LPCWSTR. In caso contrario, il tipo è LPCSTR.
 
 </dd> <dt>
 
-*pSrcInfo* \[ in\]
+*pSrcInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ info**](d3dximage-info.md)\***
+Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntatore a una struttura di [**\_ informazioni D3DXIMAGE**](d3dximage-info.md) che deve essere riempita con la descrizione dei dati nel file di origine.
+Puntatore a [**una struttura D3DXIMAGE \_ INFO**](d3dximage-info.md) da riempire con la descrizione dei dati nel file di origine.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione supporta le stringhe Unicode e ANSI.
+Questa funzione supporta sia stringhe Unicode che ANSI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questa funzione supporta le stringhe Unicode e ANSI.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Restituisce un valore che indica se un particolare servizio è in esecuzione.
+description: 'Metodo IShellDispatch2.IsServiceRunning: restituisce un valore che indica se un determinato servizio è in esecuzione.'
 ms.assetid: 91f3fba1-7aa5-423a-bc37-49db230c79db
-title: Metodo IShellDispatch2. IsServiceRunning (shldisp. h)
+title: Metodo IShellDispatch2.IsServiceRunning (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f39cd7da3d9959830208ab971b636e146e549775
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8ad792f1669a8ebcfa411c58b34da214ccf69a7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978047"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117089"
 ---
-# <a name="ishelldispatch2isservicerunning-method"></a>IShellDispatch2. IsServiceRunning, metodo
+# <a name="ishelldispatch2isservicerunning-method"></a>Metodo IShellDispatch2.IsServiceRunning
 
-Restituisce un valore che indica se un particolare servizio è in esecuzione.
+Restituisce un valore che indica se un determinato servizio è in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,12 +49,12 @@ IShellDispatch2.IsServiceRunning( _
 
 <dl> <dt>
 
-*sServiceName* \[ in\]
+*sServiceName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il nome del servizio.
+Valore **String** contenente il nome del servizio.
 
 </dd> </dl>
 
@@ -62,27 +62,27 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Restituisce _ *true** se il servizio specificato da *sServiceName* è in esecuzione; in caso contrario, **false**.
+Restituisce **true** se il servizio specificato da *sServiceName è* in esecuzione; in caso contrario, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Restituisce _ *true** se il servizio specificato da *sServiceName* è in esecuzione; in caso contrario, **false**.
+Restituisce **true** se il servizio specificato da *sServiceName è* in esecuzione; in caso contrario, **false**.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. IsServiceRunning**](./shell-isservicerunning.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.IsServiceRunning.**](./shell-isservicerunning.md)
 
 Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **IsServiceRunning** per determinare se il servizio temi è in esecuzione per un'applicazione. L'utilizzo viene visualizzato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso di **IsServiceRunning** per determinare se il servizio Temi è in esecuzione per un'applicazione. L'utilizzo è illustrato per JScript e VBScript.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -99,7 +99,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -125,11 +125,11 @@ VBScript
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

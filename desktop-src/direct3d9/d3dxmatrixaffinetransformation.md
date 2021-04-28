@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di trasformazione affine 3D. Gli argomenti NULL vengono considerati come trasformazioni di identità.
+description: 'Funzione D3DXMatrixAffineTransformation (D3dx9math.h): compila una matrice di trasformazione affine 3D. Gli argomenti NULL vengono trattati come trasformazioni di identità.'
 ms.assetid: 54eac78f-57be-4a24-8dfb-0b519e97d6ca
-title: Funzione D3DXMatrixAffineTransformation (D3dx9math. h)
+title: Funzione D3DXMatrixAffineTransformation (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 025485f0015e6f2d85851c8f0919f5462b2bdc3e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7329ffbffe5ffd89ed64e5386246f39699618960
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355439"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094169"
 ---
-# <a name="d3dxmatrixaffinetransformation-function-d3dx9mathh"></a>Funzione D3DXMatrixAffineTransformation (D3dx9math. h)
+# <a name="d3dxmatrixaffinetransformation-function-d3dx9mathh"></a>Funzione D3DXMatrixAffineTransformation (D3dx9math.h)
 
-Compila una matrice di trasformazione affine 3D. Gli argomenti **null** vengono considerati come trasformazioni di identità.
+Compila una matrice di trasformazione affine 3D. **Gli** argomenti NULL vengono trattati come trasformazioni di identità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixAffineTransformation(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*Ridimensionamento* \[ in\]
+*Ridimensionamento* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di scala.
 
 </dd> <dt>
 
-*pRotationCenter* \[ in\]
+*pRotationCenter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) , un punto che identifica il centro della rotazione. Se questo argomento è **null**, una matrice Identity M <sub>RC</sub> viene applicata alla formula nelle osservazioni.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) un punto che identifica il centro di rotazione. Se questo argomento è **NULL,** una matrice identity M <sub>rc</sub> viene applicata alla formula nelle osservazioni.
 
 </dd> <dt>
 
-*protazione* \[ in\]
+*pRotation* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) che specifica la rotazione. Se questo argomento è **null**, una matrice di identità M <sub>r</sub> viene applicata alla formula nei commenti.
+Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che specifica la rotazione. Se questo argomento è **NULL,** una matrice di identità M <sub>r</sub> viene applicata alla formula nelle osservazioni.
 
 </dd> <dt>
 
-*pTranslation* \[ in\]
+*pTranslation* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) che rappresenta la traduzione. Se questo argomento è **null**, viene applicata una matrice di valori Identity mt alla formula nei commenti.
+Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta la traslazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Mt.
 
 </dd> </dl>
 
@@ -93,29 +93,29 @@ Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) che rappresenta la t
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta una matrice di trasformazione affine.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che è una matrice di trasformazione affine.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione calcola la matrice di trasformazione affine con la formula seguente, con concatenazione di matrici valutata in ordine da sinistra a destra:
+Questa funzione calcola la matrice di trasformazione affine con la formula seguente, con la concatenazione di matrici valutata in ordine da sinistra a destra:
 
-M<sub>out</sub> = MS \* (M<sub>RC</sub>) ⁻ ¹ \* m<sub>r</sub> \* m<sub>rc</sub> \* mt
+M<sub>out</sub> = Ms \* (M<sub>rc</sub>)⁻¹ \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
 
 dove:
 
-M <sub>out</sub> = matrice di output (*broncio*)
+M <sub>out</sub> = matrice di output (*pOut*)
 
-MS = scala della matrice (*scalabilità*)
+Ms = matrice di ridimensionamento (*ridimensionamento*)
 
-M <sub>RC</sub> = matrice Center of rotation (*pRotationCenter*)
+M <sub>rc</sub> = centro della matrice di rotazione (*pRotationCenter*)
 
-M <sub>r</sub> = matrice di rotazione (*protation*)
+M <sub>r</sub> = matrice di rotazione (*pRotation*)
 
-Mt = matrice di traslazione (*pTranslation*)
+Mt = matrice di conversione (*pTranslation*)
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXMatrixAffineTransformation** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXMatrixAffineTransformation** può essere usata come parametro per un'altra funzione.
 
-Per le trasformazioni affini 2D, usare [**D3DXMatrixAffineTransformation2D**](d3dxmatrixaffinetransformation2d.md).
+Per le trasformazioni affine 2D, usare [**D3DXMatrixAffineTransformation2D**](d3dxmatrixaffinetransformation2d.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -123,8 +123,8 @@ Per le trasformazioni affini 2D, usare [**D3DXMatrixAffineTransformation2D**](d3
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

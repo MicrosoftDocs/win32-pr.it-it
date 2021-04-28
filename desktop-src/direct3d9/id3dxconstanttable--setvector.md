@@ -1,7 +1,7 @@
 ---
-description: Imposta un vettore 4D.
+description: 'Metodo ID3DXConstantTable::SetVector: imposta un vettore 4D.'
 ms.assetid: d5849a8b-b372-4ad0-8773-8c9c4bac3799
-title: 'Metodo ID3DXConstantTable:: sevector (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::SetVector (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ace1e7b12b67173eb5b9d9a5fc5e56a8b360f2b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2d7c464cebb050b9fd54c27656505e6f2221fe4d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322798"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115019"
 ---
-# <a name="id3dxconstanttablesetvector-method"></a>Metodo ID3DXConstantTable:: sevector
+# <a name="id3dxconstanttablesetvector-method"></a>Metodo ID3DXConstantTable::SetVector
 
 Imposta un vettore 4D.
 
@@ -42,25 +42,25 @@ HRESULT SetVector(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato alla tabella delle costanti.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco della costante Vector. Vedere [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
+Identificatore univoco della costante vettore. Vedere [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
 
 </dd> <dt>
 
-*pVector* \[ in\]
+*pVector* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

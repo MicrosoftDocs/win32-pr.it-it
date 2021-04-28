@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per il metodo GetMetadataQueryWriter.
+description: IWICFastMetadataEncoder_GetMetadataQueryWriter_Proxy funzione proxy per il metodo GetMetadataQueryWriter.
 ms.assetid: 64d2c6d8-f1dd-4397-8487-4d23c69aea82
-title: Funzione IWICFastMetadataEncoder_GetMetadataQueryWriter_Proxy
+title: IWICFastMetadataEncoder_GetMetadataQueryWriter_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 08ebc29691432ebed7b2a1eb01eecfcd109dbd63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b06bc6fbcdc65c9d1163ccb4a862d6046b455c9a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317266"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097169"
 ---
-# <a name="iwicfastmetadataencoder_getmetadataquerywriter_proxy-function"></a>IWICFastMetadataEncoder \_ GetMetadataQueryWriter- \_ funzione proxy
+# <a name="iwicfastmetadataencoder_getmetadataquerywriter_proxy-function"></a>Funzione proxy IWICFastMetadataEncoder \_ GetMetadataQueryWriter \_
 
-Funzione proxy per il metodo [**GetMetadataQueryWriter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicfastmetadataencoder-getmetadataquerywriter) .
+Funzione proxy per il [**metodo GetMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicfastmetadataencoder-getmetadataquerywriter)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT IWICFastMetadataEncoder_GetMetadataQueryWriter_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) \** _
+Tipo: **[ **IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)\***
 
-Puntatore a questo oggetto [_ *IWICBitmapFrameDecode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) .
+Puntatore a [**questo oggetto IWICBitmapFrameDecode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)
 
 </dd> <dt>
 
-*ppIMetadataQueryWriter* \[ out\]
+*ppIMetadataQueryWriter* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter)\*\***
 
-Puntatore che riceve un puntatore al writer della query di metadati del codificatore.
+Puntatore che riceve un puntatore al writer di query dei metadati del codificatore.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntatore che riceve un puntatore al writer della query di metadati del codifica
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -73,9 +73,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

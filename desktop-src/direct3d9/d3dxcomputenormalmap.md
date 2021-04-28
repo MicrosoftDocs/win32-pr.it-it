@@ -1,7 +1,7 @@
 ---
-description: Converte una mappa di altezza in una mappa normale. Ai componenti (x, y, z) di ogni normale viene eseguito il mapping ai canali (r, g, b) della trama di output.
+description: 'Funzione D3DXComputeNormalMap: converte una mappa di altezza in una mappa normale. I componenti (x,y,z) di ogni normale vengono mappati ai canali (r,g,b) della trama di output.'
 ms.assetid: ed9053c0-b1df-4f74-bdee-627c0f60d942
-title: Funzione D3DXComputeNormalMap (D3dx9tex. h)
+title: Funzione D3DXComputeNormalMap (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6e22418f5a023dbe70fee8ea0fba8a449abbcc8d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 920ad763f478a2e6bcb9fbe98cc7e2a677ebe783
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323265"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105229"
 ---
-# <a name="d3dxcomputenormalmap-function"></a>D3DXComputeNormalMap (funzione)
+# <a name="d3dxcomputenormalmap-function"></a>Funzione D3DXComputeNormalMap
 
-Converte una mappa di altezza in una mappa normale. Ai componenti (x, y, z) di ogni normale viene eseguito il mapping ai canali (r, g, b) della trama di output.
+Converte una mappa di altezza in una mappa normale. I componenti (x,y,z) di ogni normale vengono mappati ai canali (r,g,b) della trama di output.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,57 +45,57 @@ HRESULT D3DXComputeNormalMap(
 
 <dl> <dt>
 
-*pTexture* \[ out\]
+*pTexture* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) , che rappresenta la trama di destinazione.
+Puntatore a [**un'interfaccia IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama di destinazione.
 
 </dd> <dt>
 
-*pSrcTexture* \[ in\]
+*pSrcTexture* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) , che rappresenta la trama della mappa dell'altezza di origine.
+Puntatore a [**un'interfaccia IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama della mappa dell'altezza di origine.
 
 </dd> <dt>
 
-*pSrcPalette* \[ in\]
+*pSrcPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a un tipo [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) che contiene la tavolozza di origine di 256 colori o **null**.
-
-</dd> <dt>
-
-*Flag* \[ in\]
-</dt> <dd>
-
-Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
-
-Uno o più [flag \_ normalmap D3DX](d3dx-normalmap.md) che controllano la generazione di mappe normali.
+Puntatore a [**un tipo PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) che contiene la tavolozza di origine di 256 colori o **NULL.**
 
 </dd> <dt>
 
-*Canale* \[ di in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Un flag del [ \_ canale D3DX](d3dx-channel.md) che specifica l'origine delle informazioni sull'altezza.
+Uno o più [flag D3DX \_ NORMALMAP](d3dx-normalmap.md) che controllano la generazione di mappe normali.
 
 </dd> <dt>
 
-*Ampiezza* \[ in\]
+*Canale* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Valore costante moltiplicatore che aumenta (o diminuisce) i valori nella mappa normale. I valori più elevati in genere rendono più visibili i riscontri, mentre i valori più bassi rendono meno visibili i riscontri.
+Un flag [CHANNEL \_ D3DX](d3dx-channel.md) che specifica l'origine delle informazioni sull'altezza.
+
+</dd> <dt>
+
+*Ampiezza* \[ Pollici\]
+</dt> <dd>
+
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+
+Moltiplicatore di valori costante che aumenta (o diminuisce) i valori nella mappa normale. I valori più elevati in genere rendono le dossi più visibili, i valori più bassi in genere rendono le dossi meno visibili.
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Valore costante moltiplicatore che aumenta (o diminuisce) i valori nella mappa n
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il valore seguente: D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo calcola la normalità usando la differenza centrale con una dimensione del kernel di 3x3. Il denominatore differenze centrale usato è 2,0. I canali RGB nella destinazione contengono i componenti parziali (x, y, z) del normale.
+Questo metodo calcola la normale usando la differenza centrale con una dimensione del kernel di 3x3. Il denominatore differenze centrale usato è 2.0. I canali RGB nella destinazione contengono componenti parziali (x,y,z) della normale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,8 +115,8 @@ Questo metodo calcola la normalità usando la differenza centrale con una dimens
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

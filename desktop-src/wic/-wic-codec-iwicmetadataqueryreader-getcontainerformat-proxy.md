@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per il metodo GetContainerFormat.
+description: IWICMetadataQueryReader_GetContainerFormat_Proxy funzione proxy per il metodo GetContainerFormat.
 ms.assetid: 3a909151-53c2-4f82-9ead-f689b73f5faf
-title: Funzione IWICMetadataQueryReader_GetContainerFormat_Proxy
+title: IWICMetadataQueryReader_GetContainerFormat_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 8d8138a1217611ff60be9001ce038f9ecfbe7e34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fa2e34aa0e4cff05f6cdacc9cd1f340ff41af28
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312978"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097139"
 ---
-# <a name="iwicmetadataqueryreader_getcontainerformat_proxy-function"></a>IWICMetadataQueryReader \_ GetContainerFormat- \_ funzione proxy
+# <a name="iwicmetadataqueryreader_getcontainerformat_proxy-function"></a>Funzione proxy IWICMetadataQueryReader \_ GetContainerFormat \_
 
-Funzione proxy per il metodo [**GetContainerFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicmetadataqueryreader-getcontainerformat) .
+Funzione proxy per il [**metodo GetContainerFormat.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicmetadataqueryreader-getcontainerformat)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,19 +41,19 @@ HRESULT IWICMetadataQueryReader_GetContainerFormat_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) \** _
+Tipo: **[ **IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader)\***
 
-Puntatore a questo oggetto [_ *IWICMetadataQueryReader* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) .
+Puntatore a [**questo oggetto IWICMetadataQueryReader.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader)
 
 </dd> <dt>
 
-*pguidContainerFormat* \[ out\]
+*pguidContainerFormat* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
 Puntatore che riceve il GUID del formato cointainer.
 
@@ -61,9 +61,9 @@ Puntatore che riceve il GUID del formato cointainer.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -73,9 +73,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

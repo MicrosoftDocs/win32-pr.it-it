@@ -1,7 +1,7 @@
 ---
-description: Restituisce il nome del profilo HLSL (High-Level Shader Language) più alto supportato da un determinato dispositivo.
+description: 'Funzione D3DXGetVertexShaderProfile: restituisce il nome del profilo HLSL (High Level Shader Language) più alto supportato da un determinato dispositivo.'
 ms.assetid: a50e2a17-8170-4364-a562-7886593341b3
-title: Funzione D3DXGetVertexShaderProfile (D3DX9Shader. h)
+title: Funzione D3DXGetVertexShaderProfile (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 34f7ccaeba60bdd1d7c512cee3fb4da29289408a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 70d6cdf79fdd91e819d54702682515aa3e4810b4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322653"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114459"
 ---
-# <a name="d3dxgetvertexshaderprofile-function"></a>D3DXGetVertexShaderProfile (funzione)
+# <a name="d3dxgetvertexshaderprofile-function"></a>Funzione D3DXGetVertexShaderProfile
 
 Restituisce il nome del profilo HLSL (High-Level Shader Language) più alto supportato da un determinato dispositivo.
 
@@ -40,7 +40,7 @@ LPCSTR D3DXGetVertexShaderProfile(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
@@ -55,11 +55,11 @@ Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
 Nome del profilo HLSL.
 
-Se il dispositivo non supporta vertex shader, la funzione restituisce **null**.
+Se il dispositivo non supporta i vertex shader, la funzione restituisce **NULL.**
 
 ## <a name="remarks"></a>Commenti
 
-Un profilo shader specifica la versione dell'assembly shader da usare e le funzionalità disponibili per il compilatore HLSL durante la compilazione di uno shader. La tabella seguente elenca i profili vertex shader supportati.
+Un profilo shader specifica la versione dell'assembly shader da usare e le funzionalità disponibili per il compilatore HLSL durante la compilazione di uno shader. Nella tabella seguente sono elencati i profili vertex shader supportati.
 
 
 
@@ -85,16 +85,16 @@ Un profilo shader specifica la versione dell'assembly shader da usare e le funzi
 </tr>
 <tr class="odd">
 <td>vs_2_a</td>
-<td>Uguale al profilo vs_2_0, con le seguenti funzionalità aggiuntive disponibili per il compilatore come destinazione:
+<td>Uguale al profilo vs_2_0, con le funzionalità aggiuntive seguenti disponibili per il compilatore come destinazione:
 <ul>
-<li>Il numero di registri temporanei (r #) è maggiore o uguale a 13.</li>
+<li>Il numero di registri temporanei (r#) è maggiore o uguale a 13.</li>
 <li>Istruzione di controllo dinamico del flusso.</li>
 <li>Predicazione.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>vs_3_0</td>
-<td>Compilare per vs_3_0 versione.</td>
+<td>Eseguire la compilazione vs_3_0 versione.</td>
 </tr>
 </tbody>
 </table>
@@ -103,7 +103,7 @@ Un profilo shader specifica la versione dell'assembly shader da usare e le funzi
 
  
 
-Per altre informazioni sulle differenze tra le versioni dello shader, vedere [differenze di vertex shader](../direct3dhlsl/dx9-graphics-reference-asm-vs-differences.md).
+Per altre informazioni sulle differenze tra le versioni dello shader, vedere [Differenze tra vertex shader.](../direct3dhlsl/dx9-graphics-reference-asm-vs-differences.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -111,8 +111,8 @@ Per altre informazioni sulle differenze tra le versioni dello shader, vedere [di
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

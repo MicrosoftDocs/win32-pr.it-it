@@ -1,5 +1,5 @@
 ---
-description: Richiede una modifica dello stato.
+description: 'Metodo RequestStateChange della classe Msvm_VirtualSystemReferencePointExportJob : richiede una modifica dello stato.'
 ms.assetid: 53c24e17-2b59-4439-a6d1-e971c189d223
 title: Metodo RequestStateChange della classe Msvm_VirtualSystemReferencePointExportJob
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5612371738915b5e38657eca0773a88e31e3b0d2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: bd12d7cd5b79e38260e671bf1408304390985dac
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320783"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109309"
 ---
-# <a name="requeststatechange-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Metodo RequestStateChange della classe MSVM \_ VirtualSystemReferencePointExportJob
+# <a name="requeststatechange-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Metodo RequestStateChange della classe Msvm \_ VirtualSystemReferencePointExportJob
 
 Richiede una modifica dello stato.
 
@@ -40,7 +40,7 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
 Modifica lo stato di un processo. I valori possibili sono i seguenti:
@@ -49,34 +49,34 @@ Modifica lo stato di un processo. I valori possibili sono i seguenti:
 
 <span id="Start"></span><span id="start"></span><span id="START"></span>
 
-<span id="Start"></span><span id="start"></span><span id="START"></span>**Avvio** (2)
+<span id="Start"></span><span id="start"></span><span id="START"></span>**Start** (2)
 
 
 </dt> <dd>
 
-Imposta lo stato su "Running".
+Modifica lo stato in "In esecuzione".
 
 </dd> <dt>
 
 <span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>
 
-<span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>**Sospendi** (3)
+<span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>**Suspend** (3)
 
 
 </dt> <dd>
 
-Arresta temporaneamente il processo. L'intenzione è di riavviare successivamente il processo con "Start". Potrebbe essere possibile immettere lo stato del servizio mentre è sospeso. (Si tratta di un processo specifico).
+Arresta temporaneamente il processo. L'intenzione è di riavviare successivamente il processo con 'Start'. Potrebbe essere possibile entrare nello stato "Servizio" durante la sospensione. Si tratta di un processo specifico.
 
 </dd> <dt>
 
 <span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>
 
-<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Termina** (4)
+<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Terminate** (4)
 
 
 </dt> <dd>
 
-Arresta il processo in modo pulito, Salva i dati, conserva lo stato e arresta tutti i processi sottostanti in modo ordinato.
+Arresta il processo in modo pulito, salva i dati, mantiene lo stato e arresta tutti i processi sottostanti in modo ordinato.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Arresta il processo in modo pulito, Salva i dati, conserva lo stato e arresta tu
 
 </dt> <dd>
 
-Termina immediatamente il processo senza alcuna necessità di salvare i dati o mantenere lo stato.
+Termina immediatamente il processo senza che sia necessario salvare i dati o mantenere lo stato.
 
 </dd> <dt>
 
@@ -104,28 +104,28 @@ Inserisce il processo in uno stato del servizio specifico del fornitore. Potrebb
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (7.. 32767)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF riservato** (7..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (32768.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Periodo di timeout che specifica la quantità massima di tempo per cui il client prevede che la transizione al nuovo stato venga eseguita. Per specificare il periodo di timeout, è necessario utilizzare il formato intervallo. Il valore 0 o **null** indica che il client non dispone di requisiti temporali per la transizione. Se questa proprietà non contiene 0 o **null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 (**utilizzo del parametro timeout non supportato**).
+Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare il periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 ( Utilizzo del parametro **di timeout** non supportato ).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -171,10 +171,10 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -183,7 +183,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_VirtualSystemReferencePointExportJob MSVM**](msvm-virtualsystemreferencepointexportjob.md)
+[**Msvm \_ VirtualSystemReferencePointExportJob**](msvm-virtualsystemreferencepointexportjob.md)
 </dt> </dl>
 
  

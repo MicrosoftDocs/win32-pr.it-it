@@ -1,19 +1,19 @@
 ---
-description: .
+description: image
 ms.assetid: 89893C4E-4F4E-4d85-9623-08607B4383E5
-title: Elemento Image (schema della descrizione della proprietà)
+title: Elemento image (schema di descrizione proprietà)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7bb519d5f8104d114734e1f12676f213312e32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c24ecb1b88b8b724ce299a81281f926972180743
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310122"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104989"
 ---
 # <a name="image"></a>image
 
-Deve essere presente un solo elemento [Image]() per ogni elemento padre.
+Deve essere presente un solo [elemento image]() per ogni elemento padre.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ Deve essere presente un solo elemento [Image]() per ogni elemento padre.
 
 | Elementi padre                                                                  | Elementi figlio |
 |----------------------------------------------------------------------------------|----------------|
-| [enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md) | nessuno           |
+| [enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md) | Nessuno           |
 
 
 

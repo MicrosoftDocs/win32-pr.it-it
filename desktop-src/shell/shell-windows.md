@@ -1,6 +1,6 @@
 ---
-description: Crea e restituisce un oggetto ShellWindows. Questo oggetto rappresenta una raccolta di tutte le finestre aperte che appartengono alla Shell.
-title: Metodo Shell. Windows (shldisp. h)
+description: 'Metodo Shell.Windows: crea e restituisce un oggetto ShellWindows. Questo oggetto rappresenta una raccolta di tutte le finestre aperte che appartengono alla shell.'
+title: Metodo Shell.Windows (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ffa6311c-8bbe-45c4-9b06-069779d2306d
-ms.openlocfilehash: a865109f926253215e5ad39227cfe3d480e9ccc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d46e27781dc569b473615926509f51ed9d089af3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968338"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104069"
 ---
-# <a name="shellwindows-method"></a>Shell. Windows (metodo)
+# <a name="shellwindows-method"></a>Metodo Shell.Windows
 
-Crea e restituisce un oggetto [**ShellWindows**](shellwindows.md) . Questo oggetto rappresenta una raccolta di tutte le finestre aperte che appartengono alla Shell.
+Crea e restituisce un [**oggetto ShellWindows.**](shellwindows.md) Questo oggetto rappresenta una raccolta di tutte le finestre aperte che appartengono alla shell.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,19 +51,19 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\*\***
 
-Riferimento all'oggetto [**ShellWindows**](shellwindows.md) .
+Riferimento all'oggetto [**ShellWindows.**](shellwindows.md)
 
 ### <a name="vb"></a>VB
 
 Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\*\***
 
-Riferimento all'oggetto [**ShellWindows**](shellwindows.md) .
+Riferimento all'oggetto [**ShellWindows.**](shellwindows.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzato **Windows** per recuperare l'oggetto [**ShellWindows**](shellwindows.md) e viene visualizzato un conteggio del numero di elementi in esso contenuti. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa Windows** per recuperare [**l'oggetto ShellWindows**](shellwindows.md) e visualizzare un conteggio del numero di elementi in esso contenuti. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -86,7 +86,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -138,11 +138,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 
