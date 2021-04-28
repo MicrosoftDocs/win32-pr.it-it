@@ -1,7 +1,7 @@
 ---
-description: Il metodo RemoveAt rimuove l'elemento archiviato nella posizione specificata dall'indice specificato.
+description: "Metodo IPortableDeviceValuesCollection::RemoveAt: il metodo RemoveAt rimuove l'elemento archiviato nella posizione specificata dall'indice specificato."
 ms.assetid: 380212b6-5e71-406b-8236-e06672505f17
-title: 'Metodo IPortableDeviceValuesCollection:: RemoveAt (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValuesCollection::RemoveAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 004e8d855e79075fe3ae83bbde695e42487963f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7db15480906bee8181bb0fc589c4f3e30ce4753c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324504"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083169"
 ---
-# <a name="iportabledevicevaluescollectionremoveat-method"></a>Metodo IPortableDeviceValuesCollection:: RemoveAt
+# <a name="iportabledevicevaluescollectionremoveat-method"></a>Metodo IPortableDeviceValuesCollection::RemoveAt
 
-Il metodo **RemoveAt** rimuove l'elemento archiviato nella posizione specificata dall'indice specificato.
+Il **metodo RemoveAt** rimuove l'elemento archiviato nella posizione specificata dall'indice specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ HRESULT RemoveAt(
 
 <dl> <dt>
 
-*dwIndex* \[ in\]
+*dwIndex* \[ Pollici\]
 </dt> <dd>
 
 Specifica l'indice dell'elemento da rimuovere.
@@ -49,13 +49,13 @@ Specifica l'indice dell'elemento da rimuovere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è riuscito.<br/>                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è riuscito.<br/>                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | L'indice specificato non è compreso nell'intervallo.<br/> |
 
 
@@ -72,8 +72,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

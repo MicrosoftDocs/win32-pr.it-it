@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CImagePalette.CImagePalette : metodo costruttore.'
 ms.assetid: 50fa573c-a244-4a1e-9fd9-2b33a3427c84
-title: Costruttore CImagePalette. CImagePalette (Winutil. h)
+title: Costruttore CImagePalette.CImagePalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 38b5766617e1d17fa3917048c2fb845b5194cc42
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5021b165a8fa47bedc7961657d7cdbfa07af301d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332273"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085679"
 ---
-# <a name="cimagepalettecimagepalette-constructor"></a>Costruttore CImagePalette. CImagePalette
+# <a name="cimagepalettecimagepalette-constructor"></a>Costruttore CImagePalette.CImagePalette
 
 Metodo del costruttore.
 
@@ -54,14 +54,14 @@ Puntatore al filtro proprietario.
 *pBaseWindow* 
 </dt> <dd>
 
-Puntatore a un oggetto **CBaseWindow** , che gestisce la finestra in cui viene realizzata la tavolozza. Questo parametro può essere **NULL**.
+Puntatore a un **oggetto CBaseWindow,** che gestisce la finestra in cui viene realizzata la tavolozza. Questo parametro può essere **NULL**.
 
 </dd> <dt>
 
 *pDrawImage* 
 </dt> <dd>
 
-Puntatore a un oggetto **CDrawImage** , che consente di disegnare l'immagine del video. Questo parametro può essere **NULL**.
+Puntatore a un **oggetto CDrawImage,** che disegna l'immagine video. Questo parametro può essere **NULL**.
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Puntatore a un oggetto **CDrawImage** , che consente di disegnare l'immagine del
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

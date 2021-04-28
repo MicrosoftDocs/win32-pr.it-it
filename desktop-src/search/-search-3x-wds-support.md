@@ -1,59 +1,59 @@
 ---
-description: .
+description: Processo di notifica in Windows Search
 ms.assetid: 378e346b-2067-484f-85e9-76673a35550b
 title: Processo di notifica in Windows Search
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c7dd37979eab7ef32a5a8917ba6a3589e976105
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b37747d1ec13c3a4a865e16721c64d4a0186dbc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128586"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089819"
 ---
 # <a name="notifications-process-in-windows-search"></a>Processo di notifica in Windows Search
 
-Questo argomento è organizzato nel modo seguente:
+Questo argomento è organizzato come segue:
 
 -   [Panoramica del processo di notifica](#overview-of-the-notifications-process)
--   [Ricerche per indicizzazione](#crawls)
+-   [Striscia](#crawls)
 -   [Notifiche gestite dall'indicizzatore](#indexer-managed-notifications)
 -   [Notifiche gestite dal provider](#provider-managed-notifications)
--   [Notifiche per i set di righe](#notifications-on-rowsets)
+-   [Notifiche sui set di righe](#notifications-on-rowsets)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="overview-of-the-notifications-process"></a>Panoramica del processo di notifica
 
-Esistono tre approcci che consentono di indicizzare i dati dell'archivio dati:
+Esistono tre approcci in base ai quali è possibile indicizzare i dati dell'archivio dati:
 
--   Ricerche per indicizzazione
+-   Striscia
 -   Notifiche gestite dall'indicizzatore
 -   Notifiche gestite dal provider
 
 I vantaggi di ogni approccio sono descritti nelle sezioni seguenti.
 
-## <a name="crawls"></a>Ricerche per indicizzazione
+## <a name="crawls"></a>Striscia
 
-Le origini abilitate per le notifiche eseguono una ricerca per indicizzazione incrementale all'avvio e quindi utilizzano notifiche o un comando esplicito per eseguire la ricerca per indicizzazione. Questa operazione viene eseguita automaticamente in Windows Vista e versioni successive. Nei sistemi operativi precedenti a Windows Vista, è necessario configurare un evento pianificato nell' [utilità di pianificazione](../taskschd/task-scheduler-start-page.md) che chiama il codice per avviare una ricerca per indicizzazione sulle pagine iniziali. Non è necessario implementare alcuna forma di notifiche. Come processo in background, l'indicizzatore attraversa l'ambito di ricerca per indicizzazione, cercando le modifiche e aggiornando il catalogo. Questa opzione è consigliata per quasi tutte le situazioni.
+Le origini abilitate per le notifiche e fanno una ricerca per indicizzazione incrementale all'avvio e quindi si basano sulle notifiche o su un comando esplicito per eseguire nuovamente la ricerca per indicizzazione. Questa operazione viene eseguita automaticamente in Windows Vista e versioni successive. Nei sistemi operativi precedenti a Windows Vista è necessario configurare un evento pianificato nel [Utilità di pianificazione che](../taskschd/task-scheduler-start-page.md) chiama il codice per avviare una ricerca per indicizzazione nelle pagine iniziale. Non è necessario implementare alcuna forma di notifica. Come processo in background, l'indicizzatore attraversa l'ambito della ricerca per indicizzazione, cercando le modifiche e aggiornando il catalogo. Questa opzione è consigliata per quasi tutte le situazioni.
 
-## <a name="indexer-managed-notifications"></a>Notifiche Indexer-Managed
+## <a name="indexer-managed-notifications"></a>Indexer-Managed notifiche
 
-Con le notifiche gestite dall'indicizzatore, viene implementata una strategia di notifica che informa l'indicizzatore quando i dati nell'archivio dati sono stati modificati e l'indicizzatore gestisce il rilevamento delle notifiche e l'indicizzazione dei dati. In questa situazione, il componente (che chiameremo un provider di notifiche) monitora l'archivio dati, raccoglie informazioni sulle modifiche apportate all'archivio e quindi invia periodicamente una notifica all'indicizzatore con un elenco di elementi che richiedono l'indicizzazione. L'indicizzatore è responsabile del ripristino e della risoluzione delle notifiche in caso di errore. Questa opzione, che è possibile considerare come la strategia "Send it and forget it", riduce la frequenza delle ricerche nell'indicizzatore.
+Con le notifiche gestite dall'indicizzatore, viene implementata una strategia di notifica che notifica all'indicizzatore quando i dati nell'archivio dati sono stati modificati e l'indicizzatore gestisce il rilevamento delle notifiche e l'indicizzazione dei dati. In questo caso, il componente (che verrà chiamato provider di notifiche) monitora l'archivio dati, raccoglie informazioni sulle modifiche apportate all'archivio e quindi invia periodicamente una notifica all'indicizzatore con un elenco di elementi che devono essere indicizzati. L'indicizzatore è responsabile del ripristino e della risoluzione delle notifiche in caso di errore. Questa opzione, che può essere vista come la strategia "invia e dimentica", riduce la frequenza delle ricerche per indicizzazione dell'indicizzatore.
 
-## <a name="provider-managed-notifications"></a>Notifiche Provider-Managed
+## <a name="provider-managed-notifications"></a>Provider-Managed notifiche
 
-Con le notifiche gestite dal provider, viene implementata una strategia di notifica simile al secondo approccio, ad eccezione del fatto che il provider di notifiche deve tenere traccia delle notifiche ed è responsabile del ripristino e della risoluzione delle notifiche in caso di errore. In questa situazione, il provider di notifiche monitora l'archivio dati, raccoglie e gestisce le informazioni sulle modifiche apportate all'archivio, informa periodicamente l'indicizzatore con un elenco di elementi che richiedono l'indicizzazione, riceve gli aggiornamenti di stato dall'indicizzatore e invia nuovamente le notifiche in caso di errore.
+Con le notifiche gestite dal provider, si implementa una strategia di notifica simile al secondo approccio, ad eccezione del fatto che il provider di notifiche deve tenere traccia delle notifiche ed è responsabile del ripristino e della risoluzione delle notifiche in caso di errore. In questo caso, il provider di notifiche monitora l'archivio dati, raccoglie e gestisce le informazioni sulle modifiche apportate all'archivio, invia periodicamente una notifica all'indicizzatore con un elenco di elementi che necessitano dell'indicizzazione, riceve gli aggiornamenti dello stato dall'indicizzatore e invia di nuovo le notifiche in caso di errore.
 
 > [!Note]  
-> Questa opzione **non è consigliata** , a meno che non si prevedano ricerche per indicizzazione incrementali dell'archivio dati per ostacolare significativamente le prestazioni ed è necessario un controllo granulare o informazioni dettagliate sullo stato di indicizzazione.
+> Questa opzione non è **consigliata** a meno che non si prevede che le ricerche per indicizzazione incrementali dell'archivio dati impediranno in modo significativo le prestazioni e non sia necessario un controllo granulare sullo stato dell'indicizzazione o informazioni dettagliate.
 
  
 
-## <a name="notifications-on-rowsets"></a>Notifiche per i set di righe
+## <a name="notifications-on-rowsets"></a>Notifiche sui set di righe
 
-In Windows 7 e versioni successive, l'indicizzazione di eventi consente ai provider di ricevere notifiche relative ai set di righe. I provider che utilizzano gli eventi di indicizzazione possono mantenere i set di righe in modo analogo al comportamento dei percorsi di file system effettivi. Le librerie e le ricerche sono gli esempi principali di percorsi non di file System in Windows 7. Gli eventi dell'indicizzatore sono viste libreria come notifiche per le visualizzazioni di file-cartelle. Per ricevere notifiche di eventi, è necessario implementare l'interfaccia [**IRowsetEvents**](/windows/desktop/api/Searchapi/nn-searchapi-irowsetevents) . Il livello dati è il client primario degli eventi dell'indicizzatore e decide cosa fare con gli eventi nell'interfaccia utente della visualizzazione elementi. Per ulteriori informazioni, vedere [indicizzazione di priorità e eventi del set di righe in Windows 7](indexing-prioritization-and-rowset-events.md).
+In Windows 7 e versioni successive l'indicizzazione degli eventi consente ai provider di ricevere notifiche sui set di righe. I provider che usano l'indicizzazione degli eventi possono mantenere i set di righe in modo analogo al comportamento delle posizioni file system effettive. Le librerie e le ricerche sono gli esempi principali di percorsi non di file system in Windows 7. Gli eventi dell'indicizzatore sono per le viste della libreria, in quanto le notifiche sono relative alle viste di cartelle file. [**L'interfaccia IRowsetEvents**](/windows/desktop/api/Searchapi/nn-searchapi-irowsetevents) deve essere implementata per ricevere notifiche di eventi. Il livello dati è il client principale dell'evento dell'indicizzatore e decide cosa fare con gli eventi nell'interfaccia utente della visualizzazione elementi. Per altre informazioni, vedere Indicizzazione delle priorità e degli eventi del set di [righe in Windows 7.](indexing-prioritization-and-rowset-events.md)
 
-Al contrario, in Windows Vista, le visualizzazioni basate su query non hanno eventi associati, ad eccezione della cache della Shell per le modifiche alle proprietà dei file. Quando si esegue una ricerca, i risultati restituiti sono statici. Di conseguenza, se un altro documento viene aggiunto al sistema che corrisponde al termine di ricerca, la visualizzazione non viene aggiornata in modo da includere la nuova aggiunta. Questo comportamento è standard per i risultati statici basati sul Web. Tuttavia, i risultati statici sono meno accettabili quando si tenta di fornire una visualizzazione basata su query su un percorso di archiviazione. Gli utenti si aspettano che il contenuto dell'indicizzatore sia aggiornato. Per ulteriori informazioni, vedere [notifica dell'indice delle modifiche](-search-3x-wds-notifyingofchanges.md). Per la documentazione di riferimento, vedere [interfacce di notifica](-search-notifications-interfaces-entry-page.md).
+Al contrario, in Windows Vista le viste basate su query non hanno eventi associati, ad eccezione della cache shell per le modifiche alle proprietà dei file. Quando si esegue una ricerca, i risultati restituiti sono statici. Di conseguenza, se al sistema viene aggiunto un altro documento che corrisponde al termine di ricerca, la visualizzazione non viene aggiornata per includere la nuova aggiunta. Questo comportamento è standard per i risultati statici basati sul Web. Tuttavia, i risultati statici sono meno accettabili quando si tenta di fornire una vista basata su query su un percorso di archiviazione. Gli utenti prevedono che il contenuto dell'indicizzatore sia corrente. Per altre informazioni, vedere [Notifica dell'indice delle modifiche](-search-3x-wds-notifyingofchanges.md). Per la documentazione di riferimento, vedere [Interfacce di notifica](-search-notifications-interfaces-entry-page.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -62,16 +62,16 @@ Al contrario, in Windows Vista, le visualizzazioni basate su query non hanno eve
 [Indicizzazione, query e notifiche in Windows Search](-search-3x-wds-included-in-index.md)
 </dt> <dt>
 
-[Contenuto dell'indice](-search-indexing-process-overview.md)
+[Elementi inclusi nell'indice](-search-indexing-process-overview.md)
 </dt> <dt>
 
 [Processo di indicizzazione in Windows Search](-search-indexing-process-overview.md)
 </dt> <dt>
 
-[Esecuzione di query sul processo in Windows Search](querying-process--windows-search-.md)
+[Processo di query in Windows Search](querying-process--windows-search-.md)
 </dt> <dt>
 
-[Requisiti per la formattazione degli URL](url-formatting-requirements.md)
+[Requisiti di formattazione url](url-formatting-requirements.md)
 </dt> </dl>
 
  

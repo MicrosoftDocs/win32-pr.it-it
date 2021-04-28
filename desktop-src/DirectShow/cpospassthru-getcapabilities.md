@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo getCapabilities recupera tutte le funzionalità di ricerca del flusso. Questo metodo implementa il metodo IMediaSeeking:: GetCapabilities.'
+description: 'Metodo CPosPassThru.GetCapabilities: il metodo GetCapabilities recupera tutte le funzionalità di ricerca del flusso. Questo metodo implementa il metodo IMediaSeeking::GetCapabilities.'
 ms.assetid: c60c4f47-48de-47d0-9b87-589b84df842c
-title: Metodo CPosPassThru. GetCapabilities (Ctlutil. h)
+title: Metodo CPosPassThru.GetCapabilities (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f896adbc1015cb34e6f9063cb5ebf73e5cdb441c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c21838d3df72d52255d0a2e35dd0b7d34ef55411
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327536"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085569"
 ---
-# <a name="cpospassthrugetcapabilities-method"></a>Metodo CPosPassThru. GetCapabilities
+# <a name="cpospassthrugetcapabilities-method"></a>Metodo CPosPassThru.GetCapabilities
 
-Il metodo **GetCapabilities** recupera tutte le funzionalità di ricerca del flusso. Questo metodo implementa il metodo [**IMediaSeeking:: GetCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities) .
+Il **metodo GetCapabilities** recupera tutte le funzionalità di ricerca del flusso. Questo metodo implementa il [**metodo IMediaSeeking::GetCapabilities.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT GetCapabilities(
 *pCapabilities* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve una combinazione bit per bit dei flag di ricerca delle [**\_ \_ \_ funzionalità di ricerca**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities) .
+Puntatore a una variabile che riceve una combinazione bit per bit di [**flag AM \_ \_ SEEKING SEEKING \_ CAPABILITIES.**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

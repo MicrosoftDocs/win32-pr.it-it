@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CTransInPlaceFilter.CTransInPlaceFilter - Metodo costruttore.
 ms.assetid: f0d30125-5d16-470c-a5fb-a7df96814dad
-title: Costruttore CTransInPlaceFilter. CTransInPlaceFilter (Transip. h)
+title: Costruttore CTransInPlaceFilter.CTransInPlaceFilter (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 091ea6e6a52d4cc9221ddb29db34b4823111a395
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6b14af4b0d1f33933db8ca2fd1835e9711edad9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332974"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084779"
 ---
-# <a name="ctransinplacefilterctransinplacefilter-constructor"></a>Costruttore CTransInPlaceFilter. CTransInPlaceFilter
+# <a name="ctransinplacefilterctransinplacefilter-constructor"></a>Costruttore CTransInPlaceFilter.CTransInPlaceFilter
 
 Metodo del costruttore.
 
@@ -49,25 +49,25 @@ CTransInPlaceFilter(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug del filtro. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Stringa contenente il nome di debug del filtro. Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
 *lpUnk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*CLSID* 
+*Clsid* 
 </dt> <dd>
 
 Identificatore di classe del filtro.
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
 Ignorato.
@@ -77,7 +77,7 @@ Ignorato.
 *bModifiesData* 
 </dt> <dd>
 
-Valore booleano che specifica se il filtro modifica i dati di input. Se **true**, il filtro modifica i dati. In caso contrario, il filtro passa i dati a valle invariati.
+Valore booleano che specifica se il filtro modifica i dati di input. Se **TRUE,** il filtro modifica i dati. In caso contrario, il filtro passa i dati a valle senza modifiche.
 
 </dd> </dl>
 
@@ -87,8 +87,8 @@ Valore booleano che specifica se il filtro modifica i dati di input. Se **true**
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

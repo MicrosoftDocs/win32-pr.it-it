@@ -1,7 +1,7 @@
 ---
-description: Abilita e Disabilita la raccolta di metriche.
+description: 'Metodo ControlMetricsByClass della CIM_MetricService: abilita e disabilita la raccolta di metriche.'
 ms.assetid: 1a53c7a7-c0fc-49d7-ad1b-d185d776ede5
-title: Metodo ControlMetricsByClass della classe CIM_MetricService
+title: Metodo ControlMetricsByClass della CIM_MetricService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 46e961b298c212a7635599818fb1f7079805372d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fda8407d49ed3eec7ff86abc94ced6b63d2d77c6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312923"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109709"
 ---
-# <a name="controlmetricsbyclass-method-of-the-cim_metricservice-class"></a>Metodo ControlMetricsByClass della classe CIM \_ MetricService
+# <a name="controlmetricsbyclass-method-of-the-cim_metricservice-class"></a>Metodo ControlMetricsByClass della classe \_ CIM MetricService
 
-Abilita e Disabilita la raccolta di metriche. **ControlMetricsByClass** viene usato per controllare la raccolta di ogni tipo di metrica per tutte le istanze di una classe o per la raccolta di una metrica specifica per tutte le istanze di una classe.
+Abilita e disabilita la raccolta di metriche. **ControlMetricsByClass** viene usato per controllare la raccolta di ogni tipo di metrica per tutte le istanze di una classe o la raccolta di una metrica specifica per tutte le istanze di una classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ uint32 ControlMetricsByClass(
 
 <dl> <dt>
 
-*Oggetto* \[ in\]
+*Oggetto* \[ Pollici\]
 </dt> <dd>
 
-Identifica la classe [**CIM \_ Managed**](cim-managedelement.md) per la quale verrà controllata la metrica.
+Identifica la [**classe CIM \_ ManagedElement**](cim-managedelement.md) per cui verranno controllate le metriche.
 
 </dd> <dt>
 
-*Definizione* \[ di in\]
+*Definizione* \[ Pollici\]
 </dt> <dd>
 
-Identifica un [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) per cui verranno controllate le metriche.
+Identifica una [**\_ baseMetricDefinition CIM**](cim-basemetricdefinition.md) per cui verranno controllate le metriche.
 
 </dd> <dt>
 
-*MetricCollectionEnabled* \[ in\]
+*MetricCollectionEnabled* \[ Pollici\]
 </dt> <dd>
 
 Indica l'operazione desiderata da eseguire sulle metriche.
@@ -85,37 +85,37 @@ Indica l'operazione desiderata da eseguire sulle metriche.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Metodo riservato** (..)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -126,8 +126,8 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_METRICSERVICE CIM**](cim-metricservice.md)
+[**CIM \_ MetricService**](cim-metricservice.md)
 </dt> </dl>
 
  

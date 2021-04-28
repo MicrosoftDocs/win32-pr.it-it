@@ -1,7 +1,7 @@
 ---
-description: Trasforma il vettore (x, y, z,1) in base a una matrice specificata.
+description: 'Funzione D3DXVec3Transform (D3dx9math.h): trasforma il vettore (x, y, z, 1) in base a una determinata matrice.'
 ms.assetid: 5b290c4c-22f1-4086-8e5e-f995757ef193
-title: Funzione D3DXVec3Transform (D3dx9math. h)
+title: Funzione D3DXVec3Transform (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b653eeb7ea3797a3c385efda73ac974e2f4fbd97
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5128be3fd9e0409b403006fdb1de3c9c48f6aee4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355969"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115639"
 ---
-# <a name="d3dxvec3transform-function-d3dx9mathh"></a>Funzione D3DXVec3Transform (D3dx9math. h)
+# <a name="d3dxvec3transform-function-d3dx9mathh"></a>Funzione D3DXVec3Transform (D3dx9math.h)
 
-Trasforma il vettore (x, y, z,1) in base a una matrice specificata.
+Trasforma il vettore (x, y, z, 1) in base a una determinata matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ D3DXVECTOR4* D3DXVec3Transform(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore alla struttura [**D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3dxmatrix.md) origine.
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il vettore trasformato.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il vettore trasformato.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione trasforma il vettore, *PV* (x, y, z, 1), dal *PM* della matrice.
+Questa funzione trasforma il *vettore, pV* (x, y, z, 1), dalla matrice *pM*.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec3Transform** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec3Transform** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

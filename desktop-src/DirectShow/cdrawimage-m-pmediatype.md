@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro pMediaType m è un puntatore al tipo di supporto corrente.
+description: 'Membro CDrawImage::m_pMediaType : la variabile membro m pMediaType è un puntatore \_ al tipo di supporto corrente.'
 ms.assetid: 51a33fc4-1496-43ed-9b68-842f4c2cf0a1
-title: 'Membro CDrawImage:: m_pMediaType (Winutil. h)'
+title: Membro CDrawImage::m_pMediaType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 47e1841b9b6cff95a122ba03c76b41030fd41eba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 127801850ed008d65015d277ad3e1dbdfdb5c1bf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328945"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095769"
 ---
-# <a name="cdrawimagem_pmediatype-member"></a>Membro pMediaType di CDrawImage:: m \_
+# <a name="cdrawimagem_pmediatype-member"></a>Membro PMediaType CDrawImage::m \_
 
-La variabile membro **\_ pMediaType m** è un puntatore al tipo di supporto corrente.
+La **variabile membro m \_ pMediaType** è un puntatore al tipo di supporto corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CMediaType *m_pMediaType;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

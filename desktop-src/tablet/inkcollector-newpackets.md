@@ -1,17 +1,17 @@
 ---
-description: Si verifica quando l'agente di raccolta input penna riceve un pacchetto.
+description: "Evento InkCollector.NewPackets: si verifica quando l'agente di raccolta input penna riceve un pacchetto."
 ms.assetid: 2682e7ba-dabd-497e-aea4-6d3f837f4f10
-title: Evento InkCollector. NewPackets (Msinkaut. h)
+title: Evento InkCollector.NewPackets (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b03e1a561a61c9b291bca8e59f990dc12b4e2e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bab9d13dd2f33689700ef4a9aee2ed5059403e8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342811"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110119"
 ---
-# <a name="inkcollectornewpackets-event"></a>Evento InkCollector. NewPackets
+# <a name="inkcollectornewpackets-event"></a>Evento InkCollector.NewPackets
 
 Si verifica quando l'agente di raccolta input penna riceve un pacchetto.
 
@@ -33,33 +33,33 @@ void NewPackets(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**NewInAirPackets**](inkcollector-newinairpackets.md) .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato [**l'evento NewInAirPackets.**](inkcollector-newinairpackets.md)
 
 </dd> <dt>
 
-*Tratto* \[ in\]
+*Tratto* \[ Pollici\]
 </dt> <dd>
 
-Specifica l'oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) .
+Specifica [**l'oggetto IInkStrokeDisp.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
 
 </dd> <dt>
 
-*PacketCount* \[ in\]
+*PacketCount* \[ Pollici\]
 </dt> <dd>
 
-Numero di pacchetti ricevuti per un oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) .
+Numero di pacchetti ricevuti per un [**oggetto IInkStrokeDisp.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
 
 </dd> <dt>
 
-*PacketData* \[ in uscita\]
+*PacketData* \[ in, out\]
 </dt> <dd>
 
-Quando termina, questo metodo contiene una matrice che contiene i dati selezionati per il pacchetto.
+Quando questo metodo viene restituito, contiene una matrice che contiene i dati selezionati per il pacchetto.
 
-Per ulteriori informazioni sulla struttura VARIANT, vedere [utilizzo della libreria com](using-the-com-library.md).
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM.](using-the-com-library.md)
 
 </dd> </dl>
 
@@ -69,16 +69,16 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-I pacchetti vengono ricevuti durante la raccolta di un tratto. Gli eventi di pacchetti si verificano rapidamente e un gestore dell'evento **NewPackets** deve avere una velocità elevata o prestazioni ridotte.
+I pacchetti vengono ricevuti durante la raccolta di un tratto. Gli eventi di pacchetto si verificano rapidamente e un gestore eventi **NewPackets** deve essere veloce o le prestazioni ne risentiranno.
 
-Il metodo dell'evento TThis è definito nelle \_ \_ interfacce di solo invio IInkCollectorEvents, IInkOverlayEvents e \_ IInkPictureEvents (DISPINTERFACES) con ID DISPID \_ ICENewPackets.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICENewPackets.
 
-Questo evento deve essere usato con cautela perché potrebbe avere un effetto negativo sulle prestazioni dell'input penna se nei gestori eventi viene eseguita una quantità eccessiva di codice.
+Questo evento deve essere usato con attenzione perché potrebbe avere un effetto negativo sulle prestazioni dell'input penna se viene eseguita una quantità troppo grande di codice nei gestori eventi.
 
-Per impostare le proprietà contenute in questa matrice, utilizzare la proprietà [**DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice restituita dal parametro *PacketData* contiene i dati per tali proprietà.
+Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice restituita *dal parametro PacketData* contiene i dati per tali proprietà.
 
 > [!Note]  
-> Sebbene sia possibile modificare i dati dei pacchetti, queste modifiche non vengono mantenute o utilizzate.
+> Anche se è possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o usate.
 
  
 
@@ -88,9 +88,9 @@ Per impostare le proprietà contenute in questa matrice, utilizzare la propriet�
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

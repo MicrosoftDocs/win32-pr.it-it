@@ -1,9 +1,9 @@
 ---
-title: Evento WebViewFolderContents. SelectionChanged (shldisp. h)
-description: Si verifica quando viene modificato lo stato di selezione di un elemento o di elementi nella visualizzazione.
+title: Evento WebViewFolderContents.SelectionChanged (Shldisp.h)
+description: 'Evento WebViewFolderContents.SelectionChanged: si verifica quando viene modificato lo stato di selezione di uno o più elementi nella visualizzazione.'
 ms.assetid: 46dfceec-aa81-4950-81e5-526a6e621271
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'evento SelectionChanged
+- Funzionalità legacy dell'ambiente Windows per l'evento SelectionChanged
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8421e9d06ff9fd24256da8a23cdd100b5749968
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea6176cb2a1703d48cd2ddec8069c65d7efc978f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518748"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102659"
 ---
-# <a name="webviewfoldercontentsselectionchanged-event"></a>Evento WebViewFolderContents. SelectionChanged
+# <a name="webviewfoldercontentsselectionchanged-event"></a>Evento WebViewFolderContents.SelectionChanged
 
-Si verifica quando viene modificato lo stato di selezione di un elemento o di elementi nella visualizzazione.
+Si verifica quando lo stato di selezione di uno o più elementi nella visualizzazione viene modificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -84,11 +84,11 @@ Nell'esempio seguente viene illustrato l'utilizzo corretto di questo evento per 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

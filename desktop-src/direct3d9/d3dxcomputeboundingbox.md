@@ -1,7 +1,7 @@
 ---
-description: Calcola un rettangolo di delimitazione orientato all'asse delle coordinate.
+description: "Funzione D3DXComputeBoundingBox (D3DX9Mesh.h): calcola un rettangolo di selezione orientato all'asse delle coordinate."
 ms.assetid: 74e1b84e-1264-49eb-9172-7842af7e25e0
-title: Funzione D3DXComputeBoundingBox (D3DX9Mesh. h)
+title: Funzione D3DXComputeBoundingBox (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: df0376428153cfc02e499c9e26226cce81154023
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 39fdf4123781b84d87ec1c9d790eb5ffae058892
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235059"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115829"
 ---
-# <a name="d3dxcomputeboundingbox-function-d3dx9meshh"></a>Funzione D3DXComputeBoundingBox (D3DX9Mesh. h)
+# <a name="d3dxcomputeboundingbox-function-d3dx9meshh"></a>Funzione D3DXComputeBoundingBox (D3DX9Mesh.h)
 
-Calcola un rettangolo di delimitazione orientato all'asse delle coordinate.
+Calcola un rettangolo di selezione orientato all'asse delle coordinate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ HRESULT D3DXComputeBoundingBox(
 
 <dl> <dt>
 
-*pFirstPosition* \[ in\]
+*pFirstPosition* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
@@ -53,7 +53,7 @@ Puntatore alla prima posizione.
 
 </dd> <dt>
 
-*NumVertices* \[ in\]
+*NumVertices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -62,30 +62,30 @@ Numero di vertici.
 
 </dd> <dt>
 
-*dwStride* \[ in\]
+*dwStride* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Conteggio o numero di byte tra i vertici.
+Numero o numero di byte tra i vertici.
 
 </dd> <dt>
 
-*pMin* \[ out\]
+*pMin* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) che descrive l'angolo inferiore sinistro del rettangolo di delimitazione. Vedere la sezione Osservazioni.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive l'angolo inferiore sinistro restituito del rettangolo di selezione. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*pMax* \[ out\]
+*pMax* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) che descrive l'angolo superiore destro restituito del rettangolo di delimitazione. Vedere la sezione Osservazioni.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive l'angolo superiore destro restituito del rettangolo di selezione. Vedere la sezione Osservazioni.
 
 </dd> </dl>
 
@@ -103,8 +103,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

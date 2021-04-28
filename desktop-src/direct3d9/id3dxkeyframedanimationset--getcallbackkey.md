@@ -1,7 +1,7 @@
 ---
-description: Ottiene informazioni su un callback specifico nel set di animazioni.
+description: 'Metodo ID3DXKeyframedAnimationSet::GetCallbackKey: ottiene informazioni su un callback specifico nel set di animazioni.'
 ms.assetid: a1d3ca96-2852-420a-aa5c-a434970e5523
-title: 'Metodo ID3DXKeyframedAnimationSet:: GetCallbackKey (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::GetCallbackKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 95a3f5a97b84862a66d18b60a3776e183df36444
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f3ebbf93bd482a2259ffdaaf272c65b5e86d5270
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323529"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090319"
 ---
-# <a name="id3dxkeyframedanimationsetgetcallbackkey-method"></a>Metodo ID3DXKeyframedAnimationSet:: GetCallbackKey
+# <a name="id3dxkeyframedanimationsetgetcallbackkey-method"></a>Metodo ID3DXKeyframedAnimationSet::GetCallbackKey
 
 Ottiene informazioni su un callback specifico nel set di animazioni.
 
@@ -41,19 +41,19 @@ HRESULT GetCallbackKey(
 
 <dl> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice di animazione.
+Indice dell'animazione.
 
 </dd> <dt>
 
-*pCallbackKeys* \[ out\]
+*pCallbackKeys* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **\_ callback LPD3DXKEY**](d3dxkey-callback.md)**
+Tipo: **[ **CALLBACK LPD3DXKEY \_**](d3dxkey-callback.md)**
 
 Puntatore alla [**funzione di callback**](d3dxkey-callback.md).
 
@@ -63,7 +63,7 @@ Puntatore alla [**funzione di callback**](d3dxkey-callback.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

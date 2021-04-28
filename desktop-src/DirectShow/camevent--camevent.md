@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: 'Distruttore CAMEvent.~CAMEvent : metodo del distruttore.'
 ms.assetid: 3be76b8f-1141-439e-8837-9edba02707b0
-title: Distruttore CAMEvent. ~ CAMEvent (Wxutil. h)
+title: Distruttore CAMEvent.~CAMEvent (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: df14e32df85d10210530cd4c59c3bbe542af6f03
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 70db4419e6e9ca1c077fb60e7adc671e16cceca6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324428"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096549"
 ---
-# <a name="cameventcamevent-destructor"></a>Distruttore CAMEvent. ~ CAMEvent
+# <a name="cameventcamevent-destructor"></a>Distruttore CAMEvent.~CAMEvent
 
 Metodo del distruttore.
 
@@ -42,8 +42,8 @@ Metodo del distruttore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

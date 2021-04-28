@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo sepositions imposta la posizione corrente e la posizione di arresto. Questo metodo implementa il metodo IMediaSeeking:: sepositions.'
+description: 'Metodo CSourceSeeking.SetPositions: il metodo SetPositions imposta la posizione corrente e la posizione di arresto. Questo metodo implementa il metodo IMediaSeeking::SetPositions.'
 ms.assetid: 4359fe1f-f922-4a4d-beaa-8e13c72f407c
-title: Metodo CSourceSeeking. sepositions (Ctlutil. h)
+title: Metodo CSourceSeeking.SetPositions (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 342ca7d85fe9358b914709b7887216b62e03521d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b09dd92b97166b8d973328ec95e466abbda116bd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328486"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085169"
 ---
-# <a name="csourceseekingsetpositions-method"></a>Metodo CSourceSeeking. sepositions
+# <a name="csourceseekingsetpositions-method"></a>Metodo CSourceSeeking.SetPositions
 
-Il `SetPositions` metodo imposta la posizione corrente e la posizione di arresto. Questo metodo implementa il metodo [**IMediaSeeking:: Sepositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions) .
+Il `SetPositions` metodo imposta la posizione corrente e la posizione di arresto. Questo metodo implementa il [**metodo IMediaSeeking::SetPositions.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ Combinazione bit per bit di flag. Vedere la sezione Osservazioni.
 *pStop* 
 </dt> <dd>
 
-Puntatore a una variabile che specifica l'ora di arresto, in unità del formato dell'ora corrente.
+Puntatore a una variabile che specifica l'ora di arresto, in unità del formato di ora corrente.
 
 </dd> <dt>
 
@@ -75,15 +75,15 @@ Combinazione bit per bit di flag. Vedere la sezione Osservazioni.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli elencati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                          |
 |----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione riuscita<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione riuscita<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Flag non validi<br/>             |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Argomento puntatore **null**<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>    | **Argomento puntatore NULL**<br/> |
 
 
 
@@ -93,14 +93,14 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli elencati
 
 Sono supportati i flag seguenti:
 
--   \_Ricerca di \_ nopositioning
--   \_Ricerca di \_ AbsolutePositioning
--   \_Ricerca di \_ RelativePositioning
--   \_Cerco \_ IncrementalPositioning (solo *pStop* )
+-   AM \_ SEEKING \_ NoPositioning
+-   AM \_ SEEKING \_ AbsolutePositioning
+-   AM \_ SEEKING \_ RelativePositioning
+-   AM \_ SEEKING \_ IncrementalPositioning *(solo pStop)*
 
-Per altre informazioni, vedere [**IMediaSeeking:: Sepositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions).
+Per altre informazioni, vedere [**IMediaSeeking::SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions).
 
-Questo metodo aggiorna i valori delle variabili [**membro CSourceSeeking:: m \_ RtStart**](csourceseeking-m-rtstart.md) e [**CSourceSeeking:: m \_ rtStop**](csourceseeking-m-rtstop.md) , quindi chiama i metodi virtuali puri [**CSourceSeeking:: iniziale**](csourceseeking-changestart.md) e [**CSourceSeeking:: ChangeStop**](csourceseeking-changestop.md).
+Questo metodo aggiorna i valori delle variabili membro [**CSourceSeeking::m \_ rtStart**](csourceseeking-m-rtstart.md) e [**CSourceSeeking::m \_ rtStop**](csourceseeking-m-rtstop.md) e quindi chiama i metodi virtuali puri [**CSourceSeeking::ChangeStart**](csourceseeking-changestart.md) e [**CSourceSeeking::ChangeSeeking::ChangeStop**](csourceseeking-changestop.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,8 +108,8 @@ Questo metodo aggiorna i valori delle variabili [**membro CSourceSeeking:: m \_ 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

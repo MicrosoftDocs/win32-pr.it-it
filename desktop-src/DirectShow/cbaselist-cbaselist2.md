@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CBaseList.CBaseList : metodo costruttore.'
 ms.assetid: 2982f53a-c222-4a9d-812a-42897ca4cb5c
-title: Costruttore CBaseList. CBaseList (Wxlist. h)
+title: Costruttore CBaseList.CBaseList (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3afc0a4acf54e186e122f676ac14e9e80aaeafdb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66aad24fe2d5176c684d4d78be27833e3be2f909
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328669"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096328"
 ---
-# <a name="cbaselistcbaselist-constructor"></a>Costruttore CBaseList. CBaseList
+# <a name="cbaselistcbaselist-constructor"></a>Costruttore CBaseList.CBaseList
 
 Metodo del costruttore.
 
@@ -42,7 +42,7 @@ CBaseList(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
 Puntatore al nome dell'elenco.
@@ -51,7 +51,7 @@ Puntatore al nome dell'elenco.
 
 ## <a name="remarks"></a>Commenti
 
-Per migliorare l'efficienza, la `CBaseList` classe mantiene una cache di nodi elenco. Questa versione del costruttore usa una dimensione della cache predefinita.
+Per migliorare l'efficienza, `CBaseList` la classe gestisce una cache di nodi elenco. Questa versione del costruttore usa una dimensione della cache predefinita.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Per migliorare l'efficienza, la `CBaseList` classe mantiene una cache di nodi el
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

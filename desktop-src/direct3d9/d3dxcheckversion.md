@@ -1,7 +1,7 @@
 ---
-description: Verificare che la versione di D3DX compilata con sia la versione in esecuzione.
+description: 'Funzione D3DXCheckVersion: verificare che la versione di D3DX compilata con sia la versione in esecuzione.'
 ms.assetid: a4e745dd-d573-4e8f-9516-f6a7475f5cc5
-title: Funzione D3DXCheckVersion (D3dx9core. h)
+title: Funzione D3DXCheckVersion (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7b392d706e54780924115471906096f6b63d1a80
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 077d64a67a46080a0f7ac9194c684f6fe8470453
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323019"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115979"
 ---
-# <a name="d3dxcheckversion-function"></a>D3DXCheckVersion (funzione)
+# <a name="d3dxcheckversion-function"></a>Funzione D3DXCheckVersion
 
 Verificare che la versione di D3DX compilata con sia la versione in esecuzione.
 
@@ -41,33 +41,33 @@ BOOL D3DXCheckVersion(
 
 <dl> <dt>
 
-*D3DSDKVersion* \[ in\]
+*D3DSDKVersion* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Usare la \_ versione di D3D SDK \_ . Vedere la sezione Osservazioni.
+Usare la versione D3D \_ \_ SDK. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*D3DXSDKVersion* \[ in\]
+*D3DXSDKVersion* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Usare la \_ versione dell'SDK di D3DX \_ . Vedere la sezione Osservazioni.
+Usare D3DX \_ SDK \_ VERSION. Vedere la sezione Osservazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Restituisce **true** se la versione di D3DX compilata in base a è la versione in esecuzione con; in caso contrario, viene restituito **false** .
+Restituisce **TRUE** se la versione di D3DX compilata è la versione in esecuzione. In caso contrario, **viene** restituito FALSE.
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa funzione durante l'inizializzazione dell'applicazione come la seguente:
+Usare questa funzione durante l'inizializzazione dell'applicazione in questo modo:
 
 
 ```
@@ -93,8 +93,8 @@ Usare [**Direct3DCreate9**](/windows/win32/api/d3d9/nf-d3d9-direct3dcreate9) per
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -102,7 +102,7 @@ Usare [**Direct3DCreate9**](/windows/win32/api/d3d9/nf-d3d9-direct3dcreate9) per
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](dx9-graphics-reference-d3dx-functions-general-purpose.md)
+[Per utilizzo generico funzioni](dx9-graphics-reference-d3dx-functions-general-purpose.md)
 </dt> </dl>
 
  

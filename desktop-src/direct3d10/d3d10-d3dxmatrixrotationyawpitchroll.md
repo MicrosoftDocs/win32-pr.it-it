@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice con l'imbardata, il pitch e il rullo specificati.
+description: 'Funzione D3DXMatrixRotationYawPitchRoll (D3DX10Math.h): compila una matrice con un yaw, un passo e un rollio specificati.'
 ms.assetid: a3ef2b57-275f-484a-88fc-aaa5e470717c
-title: Funzione D3DXMatrixRotationYawPitchRoll (D3DX10Math. h)
+title: Funzione D3DXMatrixRotationYawPitchRoll (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d65242f49ee94394337f43555c3e154141e3b642
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ae00865c45878159dbf86a6f829e9d1cf50337e3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969482"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108949"
 ---
-# <a name="d3dxmatrixrotationyawpitchroll-function-d3dx10mathh"></a>Funzione D3DXMatrixRotationYawPitchRoll (D3DX10Math. h)
+# <a name="d3dxmatrixrotationyawpitchroll-function-d3dx10mathh"></a>Funzione D3DXMatrixRotationYawPitchRoll (D3DX10Math.h)
 
-Compila una matrice con l'imbardata, il pitch e il rullo specificati.
+Compila una matrice con uno yaw, un passo e un rollio specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ D3DXMATRIX* D3DXMatrixRotationYawPitchRoll(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*Imbardata* \[ in\]
+*Yaw* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Imbardata intorno all'asse y, in radianti.
+Yaw intorno all'asse y, in radianti.
 
 </dd> <dt>
 
-*Passo* \[ in\]
+*Pitch* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Pitch intorno all'asse x, in radianti.
+Passo intorno all'asse x, in radianti.
 
 </dd> <dt>
 
-Esegui *rollforward* \[ in\]
+*Roll* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Ruotare intorno all'asse z, in radianti.
+Eseguire il roll-around dell'asse z, in radianti.
 
 </dd> </dl>
 
@@ -83,15 +83,15 @@ Ruotare intorno all'asse z, in radianti.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a una struttura D3DXMATRIX con l'imbardata, il pitch e il rullo specificati.
+Puntatore a una struttura D3DXMATRIX con lo yaw, il passo e il rollio specificati.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixRotationYawPitchRoll può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixRotationYawPitchRoll può essere usata come parametro per un'altra funzione.
 
-L'ordine delle trasformazioni è prima di tutto roll, quindi pitch, then imbardata. Rispetto all'asse delle coordinate locali dell'oggetto, equivale alla rotazione intorno all'asse z, seguita dalla rotazione intorno all'asse x, seguita dalla rotazione intorno all'asse y, come illustrato nella figura seguente.
+L'ordine delle trasformazioni è roll first, quindi pitch e yaw. Rispetto all'asse delle coordinate locale dell'oggetto, equivale alla rotazione intorno all'asse z, seguita dalla rotazione intorno all'asse x, seguita dalla rotazione intorno all'asse y, come illustrato nella figura seguente.
 
-![illustrazione di roll, pitch e imbardata come rotazioni intorno ai tre assi](images/pitchyawroll.png)
+![illustrazione di lancio, passo e yaw come rotazioni intorno ai tre assi](images/pitchyawroll.png)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,8 +99,8 @@ L'ordine delle trasformazioni è prima di tutto roll, quindi pitch, then imbarda
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

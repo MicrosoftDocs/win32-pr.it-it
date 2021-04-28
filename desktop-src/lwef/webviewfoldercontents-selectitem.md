@@ -1,11 +1,11 @@
 ---
-title: Metodo WebViewFolderContents. SelectItem (shldisp. h)
-description: Imposta lo stato di selezione di un elemento nella visualizzazione.
+title: Metodo WebViewFolderContents.SelectItem (Shldisp.h)
+description: 'Metodo WebViewFolderContents.SelectItem: imposta lo stato di selezione di un elemento nella visualizzazione.'
 ms.assetid: c0e163ee-1951-476c-807a-781e26766d99
 keywords:
-- Funzionalità dell'ambiente Windows legacy del metodo SelectItem
-- Funzionalità dell'ambiente Windows legacy del metodo SelectItem, oggetto WebViewFolderContents
-- Funzionalità dell'ambiente Windows legacy dell'oggetto WebViewFolderContents, metodo SelectItem
+- Metodo SelectItem Funzionalità legacy dell'ambiente Windows
+- Metodo SelectItem Funzionalità legacy dell'ambiente Windows, oggetto WebViewFolderContents
+- Oggetto WebViewFolderContents Funzionalità legacy dell'ambiente Windows, metodo SelectItem
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e491fb27db2d6e1e9b449be4aa2924684021539a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66e2d05c010199f05826df7ed4591e8c7c1723e2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301033"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102610"
 ---
-# <a name="webviewfoldercontentsselectitem-method"></a>WebViewFolderContents. SelectItem, metodo
+# <a name="webviewfoldercontentsselectitem-method"></a>Metodo WebViewFolderContents.SelectItem
 
 Imposta lo stato di selezione di un elemento nella visualizzazione.
 
@@ -43,21 +43,21 @@ WebViewFolderContents.SelectItem(
 
 <dl> <dt>
 
-*vite* \[ in\]
+*vItem* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant \** _
+Tipo: **\* Variant**
 
-Oggetto [_ *FolderItem* *](../shell/folderitem.md) per il quale verrà impostato lo stato di selezione.
+Oggetto [**FolderItem**](../shell/folderitem.md) per il quale verrà impostato lo stato di selezione.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **Integer**
 
-Set di flag che indicano il nuovo stato di selezione. Può corrispondere a uno o più dei valori seguenti.
+Set di flag che indicano il nuovo stato di selezione. Può trattarsi di uno o più dei valori seguenti.
 
 <dt>
 
@@ -90,7 +90,7 @@ Selezionare l'elemento.
 
 </dt> <dd>
 
-Inserire l'elemento in modalità di modifica.
+Mettere l'elemento in modalità di modifica.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Inserire l'elemento in modalità di modifica.
 
 </dt> <dd>
 
-Deseleziona tutto tranne l'elemento specificato.
+Deselezionare tutti gli elementi, ad esempio l'elemento specificato.
 
 </dd> <dt>
 
@@ -173,11 +173,11 @@ Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 
