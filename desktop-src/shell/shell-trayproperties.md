@@ -1,7 +1,7 @@
 ---
-description: Consente di visualizzare la barra delle applicazioni e la finestra di dialogo Proprietà menu Start. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere Proprietà.
+description: 'Metodo Shell.TrayProperties: visualizza la finestra di dialogo Proprietà barra delle applicazioni e menu Start. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere Proprietà.'
 ms.assetid: 0d82d847-9e6f-461e-b938-fe8fd49a636f
-title: Metodo Shell. TrayProperties (shldisp. h)
+title: Metodo Shell.TrayProperties (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: da3fbfdb2b6aa2517b275041856920c6b2cd1bb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e09f6833fbf07c99fdbce9c02b020bcbb5361408
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980602"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104099"
 ---
-# <a name="shelltrayproperties-method"></a><span data-ttu-id="27a2e-104">Shell. TrayProperties, metodo</span><span class="sxs-lookup"><span data-stu-id="27a2e-104">Shell.TrayProperties method</span></span>
+# <a name="shelltrayproperties-method"></a><span data-ttu-id="6db76-104">Metodo Shell.TrayProperties</span><span class="sxs-lookup"><span data-stu-id="6db76-104">Shell.TrayProperties method</span></span>
 
-<span data-ttu-id="27a2e-105">Consente di visualizzare la **barra delle applicazioni e la finestra di dialogo Proprietà menu Start** .</span><span class="sxs-lookup"><span data-stu-id="27a2e-105">Displays the **Taskbar and Start Menu Properties** dialog box.</span></span> <span data-ttu-id="27a2e-106">Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere **Proprietà**.</span><span class="sxs-lookup"><span data-stu-id="27a2e-106">This method has the same effect as right-clicking the taskbar and selecting **Properties**.</span></span>
+<span data-ttu-id="6db76-105">Visualizza la finestra **di dialogo Proprietà barra delle** applicazioni e menu Start .</span><span class="sxs-lookup"><span data-stu-id="6db76-105">Displays the **Taskbar and Start Menu Properties** dialog box.</span></span> <span data-ttu-id="6db76-106">Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere **Proprietà**.</span><span class="sxs-lookup"><span data-stu-id="6db76-106">This method has the same effect as right-clicking the taskbar and selecting **Properties**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="27a2e-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="27a2e-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6db76-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="6db76-107">Syntax</span></span>
 
 
 ```JScript
@@ -41,15 +41,15 @@ Shell.TrayProperties() As Integer
 
 
 
-## <a name="parameters"></a><span data-ttu-id="27a2e-108">Parametri</span><span class="sxs-lookup"><span data-stu-id="27a2e-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6db76-108">Parametri</span><span class="sxs-lookup"><span data-stu-id="6db76-108">Parameters</span></span>
 
-<span data-ttu-id="27a2e-109">Questo metodo non presenta parametri.</span><span class="sxs-lookup"><span data-stu-id="27a2e-109">This method has no parameters.</span></span>
+<span data-ttu-id="6db76-109">Questo metodo non presenta parametri.</span><span class="sxs-lookup"><span data-stu-id="6db76-109">This method has no parameters.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="27a2e-110">Esempio</span><span class="sxs-lookup"><span data-stu-id="27a2e-110">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6db76-110">Esempio</span><span class="sxs-lookup"><span data-stu-id="6db76-110">Examples</span></span>
 
-<span data-ttu-id="27a2e-111">Nell'esempio seguente viene illustrato **TrayProperties** in uso.</span><span class="sxs-lookup"><span data-stu-id="27a2e-111">The following example shows **TrayProperties** in use.</span></span> <span data-ttu-id="27a2e-112">L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="27a2e-112">Proper usage is shown for JScript, VBScript, and Visual Basic.</span></span>
+<span data-ttu-id="6db76-111">L'esempio seguente illustra **TrayProperties** in uso.</span><span class="sxs-lookup"><span data-stu-id="6db76-111">The following example shows **TrayProperties** in use.</span></span> <span data-ttu-id="6db76-112">Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="6db76-112">Proper usage is shown for JScript, VBScript, and Visual Basic.</span></span>
 
-<span data-ttu-id="27a2e-113">JScript</span><span class="sxs-lookup"><span data-stu-id="27a2e-113">JScript:</span></span>
+<span data-ttu-id="6db76-113">Jscript:</span><span class="sxs-lookup"><span data-stu-id="6db76-113">JScript:</span></span>
 
 
 ```JScript
@@ -65,7 +65,7 @@ Shell.TrayProperties() As Integer
 
 
 
-<span data-ttu-id="27a2e-114">VBScript</span><span class="sxs-lookup"><span data-stu-id="27a2e-114">VBScript:</span></span>
+<span data-ttu-id="6db76-114">Vbscript:</span><span class="sxs-lookup"><span data-stu-id="6db76-114">VBScript:</span></span>
 
 
 ```VB
@@ -83,7 +83,7 @@ Shell.TrayProperties() As Integer
 
 
 
-<span data-ttu-id="27a2e-115">Visual Basic:</span><span class="sxs-lookup"><span data-stu-id="27a2e-115">Visual Basic:</span></span>
+<span data-ttu-id="6db76-115">Visual Basic:</span><span class="sxs-lookup"><span data-stu-id="6db76-115">Visual Basic:</span></span>
 
 
 ```VB
@@ -99,17 +99,17 @@ End Sub
 
 
 
-## <a name="requirements"></a><span data-ttu-id="27a2e-116">Requisiti</span><span class="sxs-lookup"><span data-stu-id="27a2e-116">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="6db76-116">Requisiti</span><span class="sxs-lookup"><span data-stu-id="6db76-116">Requirements</span></span>
 
 
 
-| <span data-ttu-id="27a2e-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="27a2e-117">Requirement</span></span> | <span data-ttu-id="27a2e-118">Valore</span><span class="sxs-lookup"><span data-stu-id="27a2e-118">Value</span></span> |
+| <span data-ttu-id="6db76-117">Requisito</span><span class="sxs-lookup"><span data-stu-id="6db76-117">Requirement</span></span> | <span data-ttu-id="6db76-118">Valore</span><span class="sxs-lookup"><span data-stu-id="6db76-118">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="27a2e-119">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="27a2e-119">Minimum supported client</span></span><br/> | <span data-ttu-id="27a2e-120">Windows 2000 Professional, \[ solo app desktop Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="27a2e-120">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
-| <span data-ttu-id="27a2e-121">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="27a2e-121">Minimum supported server</span></span><br/> | <span data-ttu-id="27a2e-122">Windows 2000 Server \[solo app desktop\]</span><span class="sxs-lookup"><span data-stu-id="27a2e-122">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
-| <span data-ttu-id="27a2e-123">Intestazione</span><span class="sxs-lookup"><span data-stu-id="27a2e-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="27a2e-124"><dt>Shldisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="27a2e-124"><dt>Shldisp.h</dt></span></span> </dl>                           |
-| <span data-ttu-id="27a2e-125">IDL</span><span class="sxs-lookup"><span data-stu-id="27a2e-125">IDL</span></span><br/>                      | <dl> <span data-ttu-id="27a2e-126"><dt>Shldisp. idl</dt></span><span class="sxs-lookup"><span data-stu-id="27a2e-126"><dt>Shldisp.idl</dt></span></span> </dl>                         |
-| <span data-ttu-id="27a2e-127">DLL</span><span class="sxs-lookup"><span data-stu-id="27a2e-127">DLL</span></span><br/>                      | <dl> <span data-ttu-id="27a2e-128"><dt>Shell32.dll (versione 4,71 o successiva)</dt></span><span class="sxs-lookup"><span data-stu-id="27a2e-128"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
+| <span data-ttu-id="6db76-119">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="6db76-119">Minimum supported client</span></span><br/> | <span data-ttu-id="6db76-120">Solo app desktop windows 2000 Professional e Windows XP \[\]</span><span class="sxs-lookup"><span data-stu-id="6db76-120">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
+| <span data-ttu-id="6db76-121">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="6db76-121">Minimum supported server</span></span><br/> | <span data-ttu-id="6db76-122">Windows 2000 Server \[solo app desktop\]</span><span class="sxs-lookup"><span data-stu-id="6db76-122">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
+| <span data-ttu-id="6db76-123">Intestazione</span><span class="sxs-lookup"><span data-stu-id="6db76-123">Header</span></span><br/>                   | <dl> <span data-ttu-id="6db76-124"><dt>Shldisp.h</dt></span><span class="sxs-lookup"><span data-stu-id="6db76-124"><dt>Shldisp.h</dt></span></span> </dl>                           |
+| <span data-ttu-id="6db76-125">Idl</span><span class="sxs-lookup"><span data-stu-id="6db76-125">IDL</span></span><br/>                      | <dl> <span data-ttu-id="6db76-126"><dt>Shldisp.idl</dt></span><span class="sxs-lookup"><span data-stu-id="6db76-126"><dt>Shldisp.idl</dt></span></span> </dl>                         |
+| <span data-ttu-id="6db76-127">DLL</span><span class="sxs-lookup"><span data-stu-id="6db76-127">DLL</span></span><br/>                      | <dl> <span data-ttu-id="6db76-128"><dt>Shell32.dll (versione 4.71 o successiva)</dt></span><span class="sxs-lookup"><span data-stu-id="6db76-128"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
 
 
 

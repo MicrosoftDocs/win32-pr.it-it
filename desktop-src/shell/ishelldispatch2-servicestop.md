@@ -1,7 +1,7 @@
 ---
-description: Arresta un servizio denominato.
+description: 'Metodo IShellDispatch2.ServiceStop: arresta un servizio denominato.'
 ms.assetid: f4cd0e2c-4ecc-4e9f-a0b5-d2a8a739f0e2
-title: Metodo IShellDispatch2. ServiceStop (shldisp. h)
+title: Metodo IShellDispatch2.ServiceStop (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 6a4a76c1f53309c14875eeaf6f3f4c0839a511bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 651138eb687cfd83406bc6e1a7fcf520ff001171
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978018"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117029"
 ---
-# <a name="ishelldispatch2servicestop-method"></a><span data-ttu-id="cce15-103">IShellDispatch2. ServiceStop, metodo</span><span class="sxs-lookup"><span data-stu-id="cce15-103">IShellDispatch2.ServiceStop method</span></span>
+# <a name="ishelldispatch2servicestop-method"></a><span data-ttu-id="64554-103">Metodo IShellDispatch2.ServiceStop</span><span class="sxs-lookup"><span data-stu-id="64554-103">IShellDispatch2.ServiceStop method</span></span>
 
-<span data-ttu-id="cce15-104">Arresta un servizio denominato.</span><span class="sxs-lookup"><span data-stu-id="cce15-104">Stops a named service.</span></span>
+<span data-ttu-id="64554-104">Arresta un servizio denominato.</span><span class="sxs-lookup"><span data-stu-id="64554-104">Stops a named service.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="cce15-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="cce15-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="64554-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="64554-105">Syntax</span></span>
 
 
 ```JScript
@@ -47,55 +47,55 @@ IShellDispatch2.ServiceStop( _
 
 
 
-## <a name="parameters"></a><span data-ttu-id="cce15-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="cce15-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="64554-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="64554-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="cce15-107">*sServiceName* \[ in\]</span><span class="sxs-lookup"><span data-stu-id="cce15-107">*sServiceName* \[in\]</span></span>
+<span data-ttu-id="64554-107">*sServiceName* \[ Pollici\]</span><span class="sxs-lookup"><span data-stu-id="64554-107">*sServiceName* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="cce15-108">Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**</span><span class="sxs-lookup"><span data-stu-id="cce15-108">Type: **[**BSTR**](/previous-versions/windows/desktop/automat/bstr)**</span></span>
+<span data-ttu-id="64554-108">Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**</span><span class="sxs-lookup"><span data-stu-id="64554-108">Type: **[**BSTR**](/previous-versions/windows/desktop/automat/bstr)**</span></span>
 
-<span data-ttu-id="cce15-109">**Stringa** che contiene il nome del servizio.</span><span class="sxs-lookup"><span data-stu-id="cce15-109">A **String** that contains the name of the service.</span></span>
+<span data-ttu-id="64554-109">Valore **String** contenente il nome del servizio.</span><span class="sxs-lookup"><span data-stu-id="64554-109">A **String** that contains the name of the service.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="cce15-110">*vPersistent* \[ in\]</span><span class="sxs-lookup"><span data-stu-id="cce15-110">*vPersistent* \[in\]</span></span>
+<span data-ttu-id="64554-110">*vPersistent* \[ Pollici\]</span><span class="sxs-lookup"><span data-stu-id="64554-110">*vPersistent* \[in\]</span></span>
 </dt> <dd>
 
-<span data-ttu-id="cce15-111">Tipo: **Variant**</span><span class="sxs-lookup"><span data-stu-id="cce15-111">Type: **Variant**</span></span>
+<span data-ttu-id="64554-111">Tipo: **Variante**</span><span class="sxs-lookup"><span data-stu-id="64554-111">Type: **Variant**</span></span>
 
-<span data-ttu-id="cce15-112">Impostare su **true** per fare in modo che il servizio venga avviato da Gestione controllo servizi quando viene chiamato il metodo [**ServiceStart**](ishelldispatch2-servicestart.md) .</span><span class="sxs-lookup"><span data-stu-id="cce15-112">Set to **true** to have the service started by the service control manager when [**ServiceStart**](ishelldispatch2-servicestart.md) is called.</span></span> <span data-ttu-id="cce15-113">Per lasciare invariata la configurazione del servizio, impostare *vPersistent* su **false**.</span><span class="sxs-lookup"><span data-stu-id="cce15-113">To leave the service configuration unchanged, set *vPersistent* to **false**.</span></span>
+<span data-ttu-id="64554-112">Impostare su **true per** fare in modo che il servizio sia avviato da Gestione controllo servizi quando viene [**chiamato ServiceStart.**](ishelldispatch2-servicestart.md)</span><span class="sxs-lookup"><span data-stu-id="64554-112">Set to **true** to have the service started by the service control manager when [**ServiceStart**](ishelldispatch2-servicestart.md) is called.</span></span> <span data-ttu-id="64554-113">Per lasciare invariata la configurazione del servizio, *impostare vPersistent* su **false.**</span><span class="sxs-lookup"><span data-stu-id="64554-113">To leave the service configuration unchanged, set *vPersistent* to **false**.</span></span>
 
 </dd> </dl>
 
-## <a name="return-value"></a><span data-ttu-id="cce15-114">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="cce15-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="64554-114">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="64554-114">Return value</span></span>
 
-### <a name="jscript"></a><span data-ttu-id="cce15-115">JScript</span><span class="sxs-lookup"><span data-stu-id="cce15-115">JScript</span></span>
+### <a name="jscript"></a><span data-ttu-id="64554-115">JScript</span><span class="sxs-lookup"><span data-stu-id="64554-115">JScript</span></span>
 
-<span data-ttu-id="cce15-116">Tipo: \**Variant \** _</span><span class="sxs-lookup"><span data-stu-id="cce15-116">Type: \**Variant\** _</span></span>
+<span data-ttu-id="64554-116">Tipo: **\* Variant**</span><span class="sxs-lookup"><span data-stu-id="64554-116">Type: **Variant\***</span></span>
 
-<span data-ttu-id="cce15-117">Restituisce _ *true*\* se ha esito positivo; in caso contrario, **false**.</span><span class="sxs-lookup"><span data-stu-id="cce15-117">Returns _ *true*\* if successful; otherwise, **false**.</span></span>
+<span data-ttu-id="64554-117">Restituisce **true se** ha esito positivo; in caso contrario, **false.**</span><span class="sxs-lookup"><span data-stu-id="64554-117">Returns **true** if successful; otherwise, **false**.</span></span>
 
-### <a name="vb"></a><span data-ttu-id="cce15-118">VB</span><span class="sxs-lookup"><span data-stu-id="cce15-118">VB</span></span>
+### <a name="vb"></a><span data-ttu-id="64554-118">VB</span><span class="sxs-lookup"><span data-stu-id="64554-118">VB</span></span>
 
-<span data-ttu-id="cce15-119">Tipo: \**Variant \** _</span><span class="sxs-lookup"><span data-stu-id="cce15-119">Type: \**Variant\** _</span></span>
+<span data-ttu-id="64554-119">Tipo: **\* Variant**</span><span class="sxs-lookup"><span data-stu-id="64554-119">Type: **Variant\***</span></span>
 
-<span data-ttu-id="cce15-120">Restituisce _ *true*\* se ha esito positivo; in caso contrario, **false**.</span><span class="sxs-lookup"><span data-stu-id="cce15-120">Returns _ *true*\* if successful; otherwise, **false**.</span></span>
+<span data-ttu-id="64554-120">Restituisce **true se** ha esito positivo; in caso contrario, **false.**</span><span class="sxs-lookup"><span data-stu-id="64554-120">Returns **true** if successful; otherwise, **false**.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="cce15-121">Commenti</span><span class="sxs-lookup"><span data-stu-id="cce15-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="64554-121">Commenti</span><span class="sxs-lookup"><span data-stu-id="64554-121">Remarks</span></span>
 
-<span data-ttu-id="cce15-122">Questo metodo viene implementato e accessibile tramite il metodo [**Shell. ServiceStop**](./shell-servicestop.md) .</span><span class="sxs-lookup"><span data-stu-id="cce15-122">This method is implemented and accessed through the [**Shell.ServiceStop**](./shell-servicestop.md) method.</span></span>
+<span data-ttu-id="64554-122">Questo metodo viene implementato e accessibile tramite il [**metodo Shell.ServiceStop.**](./shell-servicestop.md)</span><span class="sxs-lookup"><span data-stu-id="64554-122">This method is implemented and accessed through the [**Shell.ServiceStop**](./shell-servicestop.md) method.</span></span>
 
-<span data-ttu-id="cce15-123">Il metodo restituisce **false** se il servizio è già stato arrestato.</span><span class="sxs-lookup"><span data-stu-id="cce15-123">The method returns **false** if the service has already been stopped.</span></span> <span data-ttu-id="cce15-124">Prima di chiamare questo metodo, è possibile chiamare [**Shell. IsServiceRunning**](./shell-isservicerunning.md) per verificare lo stato del servizio.</span><span class="sxs-lookup"><span data-stu-id="cce15-124">Before calling this method, you can call [**Shell.IsServiceRunning**](./shell-isservicerunning.md) to ascertain the status of the service.</span></span>
+<span data-ttu-id="64554-123">Il metodo restituisce **false** se il servizio è già stato arrestato.</span><span class="sxs-lookup"><span data-stu-id="64554-123">The method returns **false** if the service has already been stopped.</span></span> <span data-ttu-id="64554-124">Prima di chiamare questo metodo, è possibile chiamare [**Shell.IsServiceRunning**](./shell-isservicerunning.md) per verificare lo stato del servizio.</span><span class="sxs-lookup"><span data-stu-id="64554-124">Before calling this method, you can call [**Shell.IsServiceRunning**](./shell-isservicerunning.md) to ascertain the status of the service.</span></span>
 
-<span data-ttu-id="cce15-125">Questo metodo non è attualmente disponibile in Microsoft Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="cce15-125">This method is not currently available in Microsoft Visual Basic.</span></span>
+<span data-ttu-id="64554-125">Questo metodo non è attualmente disponibile in Microsoft Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="64554-125">This method is not currently available in Microsoft Visual Basic.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cce15-126">Esempio</span><span class="sxs-lookup"><span data-stu-id="cce15-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="64554-126">Esempio</span><span class="sxs-lookup"><span data-stu-id="64554-126">Examples</span></span>
 
-<span data-ttu-id="cce15-127">Gli esempi seguenti illustrano l'uso di **ServiceStop** per arrestare il servizio Messenger.</span><span class="sxs-lookup"><span data-stu-id="cce15-127">The following examples show the use of **ServiceStop** to stop the Messenger service.</span></span> <span data-ttu-id="cce15-128">L'utilizzo viene visualizzato per JScript e VBScript.</span><span class="sxs-lookup"><span data-stu-id="cce15-128">Usage is shown for JScript and VBScript.</span></span>
+<span data-ttu-id="64554-127">Gli esempi seguenti illustrano l'uso **di ServiceStop** per arrestare il servizio Messenger.</span><span class="sxs-lookup"><span data-stu-id="64554-127">The following examples show the use of **ServiceStop** to stop the Messenger service.</span></span> <span data-ttu-id="64554-128">L'utilizzo è illustrato per JScript e VBScript.</span><span class="sxs-lookup"><span data-stu-id="64554-128">Usage is shown for JScript and VBScript.</span></span>
 
-<span data-ttu-id="cce15-129">JScript</span><span class="sxs-lookup"><span data-stu-id="cce15-129">JScript:</span></span>
+<span data-ttu-id="64554-129">Jscript:</span><span class="sxs-lookup"><span data-stu-id="64554-129">JScript:</span></span>
 
 
 ```JScript
@@ -112,7 +112,7 @@ IShellDispatch2.ServiceStop( _
 
 
 
-<span data-ttu-id="cce15-130">VBScript</span><span class="sxs-lookup"><span data-stu-id="cce15-130">VBScript:</span></span>
+<span data-ttu-id="64554-130">Vbscript:</span><span class="sxs-lookup"><span data-stu-id="64554-130">VBScript:</span></span>
 
 
 ```VB
@@ -132,17 +132,17 @@ IShellDispatch2.ServiceStop( _
 
 
 
-## <a name="requirements"></a><span data-ttu-id="cce15-131">Requisiti</span><span class="sxs-lookup"><span data-stu-id="cce15-131">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="64554-131">Requisiti</span><span class="sxs-lookup"><span data-stu-id="64554-131">Requirements</span></span>
 
 
 
-| <span data-ttu-id="cce15-132">Requisito</span><span class="sxs-lookup"><span data-stu-id="cce15-132">Requirement</span></span> | <span data-ttu-id="cce15-133">Valore</span><span class="sxs-lookup"><span data-stu-id="cce15-133">Value</span></span> |
+| <span data-ttu-id="64554-132">Requisito</span><span class="sxs-lookup"><span data-stu-id="64554-132">Requirement</span></span> | <span data-ttu-id="64554-133">Valore</span><span class="sxs-lookup"><span data-stu-id="64554-133">Value</span></span> |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="cce15-134">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="cce15-134">Minimum supported client</span></span><br/> | <span data-ttu-id="cce15-135">Windows 2000 Professional, \[ solo app desktop Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="cce15-135">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                        |
-| <span data-ttu-id="cce15-136">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="cce15-136">Minimum supported server</span></span><br/> | <span data-ttu-id="cce15-137">\[Solo app desktop Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="cce15-137">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                                          |
-| <span data-ttu-id="cce15-138">Intestazione</span><span class="sxs-lookup"><span data-stu-id="cce15-138">Header</span></span><br/>                   | <dl> <span data-ttu-id="cce15-139"><dt>Shldisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="cce15-139"><dt>Shldisp.h</dt></span></span> </dl>                          |
-| <span data-ttu-id="cce15-140">IDL</span><span class="sxs-lookup"><span data-stu-id="cce15-140">IDL</span></span><br/>                      | <dl> <span data-ttu-id="cce15-141"><dt>Shldisp. idl</dt></span><span class="sxs-lookup"><span data-stu-id="cce15-141"><dt>Shldisp.idl</dt></span></span> </dl>                        |
-| <span data-ttu-id="cce15-142">DLL</span><span class="sxs-lookup"><span data-stu-id="cce15-142">DLL</span></span><br/>                      | <dl> <span data-ttu-id="cce15-143"><dt>Shell32.dll (versione 5,0 o successiva)</dt></span><span class="sxs-lookup"><span data-stu-id="cce15-143"><dt>Shell32.dll (version 5.0 or later)</dt></span></span> </dl> |
+| <span data-ttu-id="64554-134">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="64554-134">Minimum supported client</span></span><br/> | <span data-ttu-id="64554-135">Solo app desktop windows 2000 Professional e Windows XP \[\]</span><span class="sxs-lookup"><span data-stu-id="64554-135">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                        |
+| <span data-ttu-id="64554-136">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="64554-136">Minimum supported server</span></span><br/> | <span data-ttu-id="64554-137">Solo app desktop di Windows Server 2003 \[\]</span><span class="sxs-lookup"><span data-stu-id="64554-137">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                                          |
+| <span data-ttu-id="64554-138">Intestazione</span><span class="sxs-lookup"><span data-stu-id="64554-138">Header</span></span><br/>                   | <dl> <span data-ttu-id="64554-139"><dt>Shldisp.h</dt></span><span class="sxs-lookup"><span data-stu-id="64554-139"><dt>Shldisp.h</dt></span></span> </dl>                          |
+| <span data-ttu-id="64554-140">Idl</span><span class="sxs-lookup"><span data-stu-id="64554-140">IDL</span></span><br/>                      | <dl> <span data-ttu-id="64554-141"><dt>Shldisp.idl</dt></span><span class="sxs-lookup"><span data-stu-id="64554-141"><dt>Shldisp.idl</dt></span></span> </dl>                        |
+| <span data-ttu-id="64554-142">DLL</span><span class="sxs-lookup"><span data-stu-id="64554-142">DLL</span></span><br/>                      | <dl> <span data-ttu-id="64554-143"><dt>Shell32.dll (versione 5.0 o successiva)</dt></span><span class="sxs-lookup"><span data-stu-id="64554-143"><dt>Shell32.dll (version 5.0 or later)</dt></span></span> </dl> |
 
 
 
