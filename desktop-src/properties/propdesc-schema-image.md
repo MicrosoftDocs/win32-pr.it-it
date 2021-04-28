@@ -1,21 +1,21 @@
 ---
-description: .
+description: image
 ms.assetid: 89893C4E-4F4E-4d85-9623-08607B4383E5
-title: Elemento Image (schema della descrizione della proprietà)
+title: Elemento image (schema di descrizione proprietà)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7bb519d5f8104d114734e1f12676f213312e32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c24ecb1b88b8b724ce299a81281f926972180743
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310122"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104989"
 ---
-# <a name="image"></a><span data-ttu-id="46ee8-103">image</span><span class="sxs-lookup"><span data-stu-id="46ee8-103">image</span></span>
+# <a name="image"></a><span data-ttu-id="5f929-103">image</span><span class="sxs-lookup"><span data-stu-id="5f929-103">image</span></span>
 
-<span data-ttu-id="46ee8-104">Deve essere presente un solo elemento [Image]() per ogni elemento padre.</span><span class="sxs-lookup"><span data-stu-id="46ee8-104">There should be only one [image]() element for each parent element.</span></span>
+<span data-ttu-id="5f929-104">Deve essere presente un solo [elemento image]() per ogni elemento padre.</span><span class="sxs-lookup"><span data-stu-id="5f929-104">There should be only one [image]() element for each parent element.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="46ee8-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="46ee8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5f929-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="5f929-105">Syntax</span></span>
 
 
 ```
@@ -35,25 +35,25 @@ ms.locfileid: "106310122"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="46ee8-106">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="46ee8-106">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="5f929-106">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="5f929-106">Element Information</span></span>
 
 
 
-| <span data-ttu-id="46ee8-107">Elementi padre</span><span class="sxs-lookup"><span data-stu-id="46ee8-107">Parent Elements</span></span>                                                                  | <span data-ttu-id="46ee8-108">Elementi figlio</span><span class="sxs-lookup"><span data-stu-id="46ee8-108">Child Elements</span></span> |
+| <span data-ttu-id="5f929-107">Elementi padre</span><span class="sxs-lookup"><span data-stu-id="5f929-107">Parent Elements</span></span>                                                                  | <span data-ttu-id="5f929-108">Elementi figlio</span><span class="sxs-lookup"><span data-stu-id="5f929-108">Child Elements</span></span> |
 |----------------------------------------------------------------------------------|----------------|
-| <span data-ttu-id="46ee8-109">[enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md)</span><span class="sxs-lookup"><span data-stu-id="46ee8-109">[enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md)</span></span> | <span data-ttu-id="46ee8-110">nessuno</span><span class="sxs-lookup"><span data-stu-id="46ee8-110">None</span></span>           |
+| <span data-ttu-id="5f929-109">[enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md)</span><span class="sxs-lookup"><span data-stu-id="5f929-109">[enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md)</span></span> | <span data-ttu-id="5f929-110">Nessuno</span><span class="sxs-lookup"><span data-stu-id="5f929-110">None</span></span>           |
 
 
 
  
 
-## <a name="attributes"></a><span data-ttu-id="46ee8-111">Attributi</span><span class="sxs-lookup"><span data-stu-id="46ee8-111">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="5f929-111">Attributi</span><span class="sxs-lookup"><span data-stu-id="5f929-111">Attributes</span></span>
 
 
 
-| <span data-ttu-id="46ee8-112">Attributo</span><span class="sxs-lookup"><span data-stu-id="46ee8-112">Attribute</span></span> | <span data-ttu-id="46ee8-113">Descrizione</span><span class="sxs-lookup"><span data-stu-id="46ee8-113">Description</span></span>       |
+| <span data-ttu-id="5f929-112">Attributo</span><span class="sxs-lookup"><span data-stu-id="5f929-112">Attribute</span></span> | <span data-ttu-id="5f929-113">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5f929-113">Description</span></span>       |
 |-----------|-------------------|
-| <span data-ttu-id="46ee8-114">res</span><span class="sxs-lookup"><span data-stu-id="46ee8-114">res</span></span>       | <span data-ttu-id="46ee8-115">Pubblica.</span><span class="sxs-lookup"><span data-stu-id="46ee8-115">Public.</span></span> <span data-ttu-id="46ee8-116">Obbligatorio.</span><span class="sxs-lookup"><span data-stu-id="46ee8-116">Required.</span></span> |
+| <span data-ttu-id="5f929-114">res</span><span class="sxs-lookup"><span data-stu-id="5f929-114">res</span></span>       | <span data-ttu-id="5f929-115">Pubblica.</span><span class="sxs-lookup"><span data-stu-id="5f929-115">Public.</span></span> <span data-ttu-id="5f929-116">Obbligatorio.</span><span class="sxs-lookup"><span data-stu-id="5f929-116">Required.</span></span> |
 
 
 
