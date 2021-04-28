@@ -1,7 +1,7 @@
 ---
-description: Determina il prodotto incrociato in quattro dimensioni.
+description: 'Funzione D3DXVec4Cross (D3DX10Math.h): determina il prodotto incrociato in quattro dimensioni.'
 ms.assetid: 4f728fbd-cf5a-4d2e-ba4f-487616d83f6d
-title: Funzione D3DXVec4Cross (D3DX10Math. h)
+title: Funzione D3DXVec4Cross (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 8e3e2a612740a207ea4dc44243ce24ebbab7fc08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e52cc1adb1e48f65599b1bf7179f7953823f1e1c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323186"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102949"
 ---
-# <a name="d3dxvec4cross-function-d3dx10mathh"></a>Funzione D3DXVec4Cross (D3DX10Math. h)
+# <a name="d3dxvec4cross-function-d3dx10mathh"></a>Funzione D3DXVec4Cross (D3DX10Math.h)
 
 Determina il prodotto incrociato in quattro dimensioni.
 
@@ -42,7 +42,7 @@ D3DXVECTOR4* D3DXVec4Cross(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
@@ -51,7 +51,7 @@ Puntatore a [**D3DXVECTOR4**](d3d10-d3dxvector4.md) che rappresenta il risultato
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -60,7 +60,7 @@ Puntatore a una struttura D3DXVECTOR4 di origine.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -69,7 +69,7 @@ Puntatore a una struttura D3DXVECTOR4 di origine.
 
 </dd> <dt>
 
-*pV3* \[ in\]
+*pV3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -86,7 +86,7 @@ Puntatore a una struttura D3DXVECTOR4 che rappresenta il prodotto incrociato.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXVec4Cross può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXVec4Cross può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,7 +94,7 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

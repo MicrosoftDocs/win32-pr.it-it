@@ -1,5 +1,5 @@
 ---
-description: Definisce un nome di simbolo C/C++ valido.
+description: 'Tipo semplice CSymbolType (contatori delle prestazioni): definisce un nome di simbolo C/C++ valido.'
 ms.assetid: 75f74a16-0be4-466b-a88d-247c8c94f4ce
 title: Tipo semplice CSymbolType (contatori delle prestazioni)
 ms.topic: reference
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 418b5119046a89d93814ed8ac8bd427dc554bf26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0771bb1dffc006abf8e02e6c391278f7d0b03f11
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967506"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084229"
 ---
 # <a name="csymboltype-simple-type-performance-counters"></a>Tipo semplice CSymbolType (contatori delle prestazioni)
 
@@ -34,7 +34,7 @@ Definisce un nome di simbolo C/C++ valido.
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **CSymbolType** è **xs: String** limitato dal modello seguente:
+Il **tipo semplice CSymbolType** è **un tipo xs:string** limitato dal modello seguente:
 
 -   `()|([_a-zA-Z][_0-9a-zA-Z]*)`
 
@@ -46,8 +46,8 @@ Il tipo semplice **CSymbolType** è **xs: String** limitato dal modello seguente
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
 
 
 

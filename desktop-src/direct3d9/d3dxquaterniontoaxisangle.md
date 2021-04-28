@@ -1,7 +1,7 @@
 ---
-description: Calcola l'asse e l'angolo di rotazione di un quaternione.
+description: "Funzione D3DXQuaternionToAxisAngle (D3dx9math.h): calcola l'asse e l'angolo di rotazione di un quaternione."
 ms.assetid: 6efd0a68-7641-403e-8ae2-c715b705b36e
-title: Funzione D3DXQuaternionToAxisAngle (D3dx9math. h)
+title: Funzione D3DXQuaternionToAxisAngle (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ecf8e6d1b1383a6e698f742351ee19ae75fd5bdc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8613a9d14c5e33b0f9f4e719a02ac9a6d70d1119
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322484"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117979"
 ---
-# <a name="d3dxquaterniontoaxisangle-function-d3dx9mathh"></a>Funzione D3DXQuaternionToAxisAngle (D3dx9math. h)
+# <a name="d3dxquaterniontoaxisangle-function-d3dx9mathh"></a>Funzione D3DXQuaternionToAxisAngle (D3dx9math.h)
 
 Calcola l'asse e l'angolo di rotazione di un quaternione.
 
@@ -42,28 +42,28 @@ void D3DXQuaternionToAxisAngle(
 
 <dl> <dt>
 
-*PQ* \[ in\]
+*pQ* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore alla struttura [**D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> <dt>
 
-*pAxis* \[ in uscita\]
+*pAxis* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Questa funzione restituisce un puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) che identifica l'asse di rotazione del quaternione.
+Questa funzione restituisce un puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che identifica l'asse di rotazione del quaternione.
 
 </dd> <dt>
 
-*pAngle* \[ in uscita\]
+*pAngle* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Questa funzione restituisce un puntatore a un valore FLOAT che identifica l'angolo di rotazione del quaternione in radianti.
 
@@ -83,8 +83,8 @@ Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi in
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

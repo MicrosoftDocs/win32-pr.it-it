@@ -1,7 +1,7 @@
 ---
-description: Ottiene la dichiarazione del vertice.
+description: 'Metodo ID3DXPatchMesh::GetDeclaration: ottiene la dichiarazione del vertice.'
 ms.assetid: 53ff2fb5-68b6-4edd-b48f-e06df306ee3f
-title: 'Metodo ID3DXPatchMesh:: getDeclaration (D3DX9Mesh. h)'
+title: Metodo ID3DXPatchMesh::GetDeclaration (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7d2d39192368fdca8ccaba7c51e64f60ea030568
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0fde070b1b013e651c84ffea7098eb8225aed8f9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104356084"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093299"
 ---
-# <a name="id3dxpatchmeshgetdeclaration-method"></a>Metodo ID3DXPatchMesh:: getDeclaration
+# <a name="id3dxpatchmeshgetdeclaration-method"></a>Metodo ID3DXPatchMesh::GetDeclaration
 
 Ottiene la dichiarazione del vertice.
 
@@ -40,12 +40,12 @@ HRESULT GetDeclaration(
 
 <dl> <dt>
 
-*pDeclaration* \[ out\]
+*pDeclaration* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrive il formato del vertice dei vertici della mesh. La dimensione della matrice di dichiaratori è [**Max \_ FVF \_ decl \_ size**](./max-fvf-decl-size.md). La matrice di elementi Vertex termina con la macro [**D3DDECL \_ end**](d3ddecl-end.md) .
+Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrivono il formato dei vertici della mesh. La dimensione di questa matrice del dichiaratore è [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md). La matrice di elementi vertice termina con la macro [**D3DDECL \_ END.**](d3ddecl-end.md)
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrive i
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-La matrice di elementi include la macro [**D3DDECL \_ end**](d3ddecl-end.md) , che termina la dichiarazione.
+La matrice di elementi include la macro [**D3DDECL \_ END,**](d3ddecl-end.md) che termina la dichiarazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ La matrice di elementi include la macro [**D3DDECL \_ end**](d3ddecl-end.md) , c
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

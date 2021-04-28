@@ -1,7 +1,7 @@
 ---
-description: Gli errori sono rappresentati da valori negativi e non possono essere combinati.
+description: 'Enumerazione D3DXERR: gli errori sono rappresentati da valori negativi e non possono essere combinati.'
 ms.assetid: 2318278e-e1e1-4cd8-a5ce-5c99f3bc47ba
-title: Enumerazione D3DXERR (D3dx9. h)
+title: Enumerazione D3DXERR (D3dx9.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9.h
-ms.openlocfilehash: 0d4ef0fddf70effd63a0fcdc42b46889a879c13a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1c1dd03500a493b30d7c1d3bfdfdf800b65a6d82
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235021"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094306"
 ---
 # <a name="d3dxerr-enumeration"></a>Enumerazione D3DXERR
 
-Gli errori sono rappresentati da valori negativi e non possono essere combinati. Di seguito è riportato un elenco di valori che possono essere restituiti dai metodi inclusi nella libreria dell'utilità D3DX. Vedere le descrizioni dei singoli metodi per gli elenchi dei valori che ognuno può restituire. Questi elenchi non sono necessariamente completi.
+Gli errori sono rappresentati da valori negativi e non possono essere combinati. Di seguito è riportato un elenco di valori che possono essere restituiti dai metodi inclusi nella libreria di utilità D3DX. Vedere le descrizioni dei singoli metodi per gli elenchi dei valori che possono essere restituiti da ognuno di essi. Questi elenchi non sono necessariamente completi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,72 +48,72 @@ enum _D3DXERR {
 
 <dl> <dt>
 
-<span id="D3DXERR_CANNOTMODIFYINDEXBUFFER"></span><span id="d3dxerr_cannotmodifyindexbuffer"></span>**\_CANNOTMODIFYINDEXBUFFER D3DXERR**
+<span id="D3DXERR_CANNOTMODIFYINDEXBUFFER"></span><span id="d3dxerr_cannotmodifyindexbuffer"></span>**D3DXERR \_ CANNOTMODIFYINDEXBUFFER**
 </dt> <dd>
 
-Il buffer dell'indice non può essere modificato.
+Il index buffer non può essere modificato.
 
 </dd> <dt>
 
-<span id="D3DXERR_INVALIDMESH"></span><span id="d3dxerr_invalidmesh"></span>**\_INVALIDMESH D3DXERR**
+<span id="D3DXERR_INVALIDMESH"></span><span id="d3dxerr_invalidmesh"></span>**D3DXERR \_ INVALIDMESH**
 </dt> <dd>
 
-Mesh non valido.
+La mesh non è valida.
 
 </dd> <dt>
 
-<span id="D3DXERR_CANNOTATTRSORT"></span><span id="d3dxerr_cannotattrsort"></span>**\_CANNOTATTRSORT D3DXERR**
+<span id="D3DXERR_CANNOTATTRSORT"></span><span id="d3dxerr_cannotattrsort"></span>**D3DXERR \_ CANNOTATTRSORT**
 </dt> <dd>
 
 L'ordinamento degli attributi (D3DXMESHOPT \_ ATTRSORT) non è supportato come tecnica di ottimizzazione.
 
 </dd> <dt>
 
-<span id="D3DXERR_SKINNINGNOTSUPPORTED"></span><span id="d3dxerr_skinningnotsupported"></span>**\_SKINNINGNOTSUPPORTED D3DXERR**
+<span id="D3DXERR_SKINNINGNOTSUPPORTED"></span><span id="d3dxerr_skinningnotsupported"></span>**INTERFACCIA D3DXERRNOTSUPPORTED \_**
 </dt> <dd>
 
-La skining non è supportata.
+La skinning non è supportata.
 
 </dd> <dt>
 
-<span id="D3DXERR_TOOMANYINFLUENCES"></span><span id="d3dxerr_toomanyinfluences"></span>**\_TOOMANYINFLUENCES D3DXERR**
+<span id="D3DXERR_TOOMANYINFLUENCES"></span><span id="d3dxerr_toomanyinfluences"></span>**D3DXERR \_ TOOMANYINFLUENCES**
 </dt> <dd>
 
-Troppe influenze specificate.
+Troppi fattori di influenza specificati.
 
 </dd> <dt>
 
-<span id="D3DXERR_INVALIDDATA"></span><span id="d3dxerr_invaliddata"></span>**\_INVALIDDATA D3DXERR**
+<span id="D3DXERR_INVALIDDATA"></span><span id="d3dxerr_invaliddata"></span>**D3DXERR \_ INVALIDDATA**
 </dt> <dd>
 
 I dati non sono validi.
 
 </dd> <dt>
 
-<span id="D3DXERR_LOADEDMESHASNODATA"></span><span id="d3dxerr_loadedmeshasnodata"></span>**\_LOADEDMESHASNODATA D3DXERR**
+<span id="D3DXERR_LOADEDMESHASNODATA"></span><span id="d3dxerr_loadedmeshasnodata"></span>**D3DXERR \_ LOADEDMESHASNODATA**
 </dt> <dd>
 
 La mesh non contiene dati.
 
 </dd> <dt>
 
-<span id="D3DXERR_DUPLICATENAMEDFRAGMENT"></span><span id="d3dxerr_duplicatenamedfragment"></span>**\_DUPLICATENAMEDFRAGMENT D3DXERR**
+<span id="D3DXERR_DUPLICATENAMEDFRAGMENT"></span><span id="d3dxerr_duplicatenamedfragment"></span>**D3DXERR \_ DUPLICATENAMEDFRAGMENT**
 </dt> <dd>
 
-Un frammento con lo stesso nome esiste già.
+Esiste già un frammento con tale nome.
 
 </dd> <dt>
 
-<span id="D3DXERR_CANNOTREMOVELASTITEM"></span><span id="d3dxerr_cannotremovelastitem"></span>**\_CANNOTREMOVELASTITEM D3DXERR**
+<span id="D3DXERR_CANNOTREMOVELASTITEM"></span><span id="d3dxerr_cannotremovelastitem"></span>**D3DXERR \_ CANNOTREMOVELASTITEM**
 </dt> <dd>
 
-Non è possibile eliminare l'ultimo elemento.
+L'ultimo elemento non può essere eliminato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il codice \_ di struttura FACDD viene usato per generare codici di errore, come nelle macro seguenti.
+Il codice \_ di struttura FACDD viene usato per generare i codici di errore, come nelle macro seguenti.
 
 
 ```
@@ -134,7 +134,7 @@ enum _D3DXERR {
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9.h</dt> </dl> |
 
 
 

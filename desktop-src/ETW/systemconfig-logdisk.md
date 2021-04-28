@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di configurazione del disco logico.
+description: 'SystemConfig_LogDisk classe: questa classe è la classe del tipo di evento per gli eventi di configurazione del disco logico.'
 ms.assetid: a11a8245-8ace-4061-b6c7-938002d8b9fc
-title: Classe SystemConfig_LogDisk
+title: SystemConfig_LogDisk classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,14 +28,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d3bff1cf526dfb7bf1ddd36fcb887e8a4b837be4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 1d7ca8dc3f632e88c250715292a27e18ff36e3af
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977586"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106109"
 ---
-# <a name="systemconfig_logdisk-class"></a>\_Classe SystemConfig LogDisk
+# <a name="systemconfig_logdisk-class"></a>Classe SystemConfig \_ LogDisk
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione del disco logico.
 
@@ -68,20 +68,20 @@ class SystemConfig_LogDisk : SystemConfig
 
 ## <a name="members"></a>Members
 
-La **classe \_ LogDisk di SystemConfig** dispone di questi tipi di membri:
+La **classe SystemConfig \_ LogDisk** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ LogDisk di SystemConfig** dispone di queste proprietà.
+La **classe SystemConfig \_ LogDisk** ha queste proprietà.
 
 <dl> <dt>
 
 **BytesPerSector**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -90,14 +90,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (10)
 </dt> </dl>
 
-Numero di byte in ogni settore per l'unità disco fisica.
+Numero di byte in ogni settore per l'unità disco fisico.
 
 </dd> <dt>
 
-**Numerodisco**
+**DiskNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -113,13 +113,13 @@ Numero di indice del disco contenente questa partizione.
 **DriveLetterString**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (6), **Max** (4), **Format ("s")**
+Qualificatori: **WmiDataId** (6), **Max** (4), **Format("s")**
 </dt> </dl>
 
 Lettera di unità del disco nel formato " <letter> :".
@@ -129,7 +129,7 @@ Lettera di unità del disco nel formato " <letter> :".
 **DriveType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -154,19 +154,19 @@ Tipo di unità disco. I valori possibili sono:
 
 </dd> <dt>
 
-**FileSystem**
+**Filesystem**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Char16**
+Tipo di dati: **char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (14), **Max** (16), **Format ("s")**
+Qualificatori: **WmiDataId** (14), **Max** (16), **Format("s")**
 </dt> </dl>
 
-File System sul disco logico, ad esempio NTFS.
+File system sul disco logico, ad esempio NTFS.
 
 </dd> <dt>
 
@@ -189,7 +189,7 @@ Numero di cluster liberi nel volume specificato.
 **Pad1**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -205,7 +205,7 @@ Non usato.
 **Pad2**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -221,7 +221,7 @@ Non usato.
 **Pad3**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -237,7 +237,7 @@ Non usato.
 **PartitionNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -253,7 +253,7 @@ Numero di indice della partizione.
 **PartitionSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -262,14 +262,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (2)
 </dt> </dl>
 
-Dimensioni totali, in byte, della partizione.
+Dimensioni totali della partizione, in byte.
 
 </dd> <dt>
 
-**SectorsPerCluster**
+**SettoriPerCluster**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -282,10 +282,10 @@ Numero di settori nel volume.
 
 </dd> <dt>
 
-**Dimensioni**
+**Size**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -294,14 +294,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (4)
 </dt> </dl>
 
-Dimensioni, in byte, dell'unità disco.
+Dimensioni dell'unità disco, in byte.
 
 </dd> <dt>
 
 **StartOffset**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -326,14 +326,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (13)
 </dt> </dl>
 
-Numero di cluster usati e disponibili nel volume.
+Numero di cluster usati e gratuiti nel volume.
 
 </dd> <dt>
 
 **VolumeExt**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -352,8 +352,8 @@ Riservato.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
 
 
 

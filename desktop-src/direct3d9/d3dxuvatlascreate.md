@@ -1,7 +1,7 @@
 ---
-description: Creare un Atlante UV per una rete mesh.
+description: 'Funzione D3DXUVAtlasCreate: consente di creare un at atlas UV per una mesh.'
 ms.assetid: 70256990-b177-451e-b42a-84799fdc2a17
-title: Funzione D3DXUVAtlasCreate (D3DX9Mesh. h)
+title: Funzione D3DXUVAtlasCreate (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 814f213b0195b0922270d0548d8b5fd4c48fb3e3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5f382e7d59f3a5b5db8ba3cfd65ba6cc1a11e86d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322468"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117829"
 ---
-# <a name="d3dxuvatlascreate-function"></a>D3DXUVAtlasCreate (funzione)
+# <a name="d3dxuvatlascreate-function"></a>Funzione D3DXUVAtlasCreate
 
-Creare un Atlante UV per una rete mesh.
+Creare un at atlas UV per una mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,75 +58,75 @@ HRESULT D3DXUVAtlasCreate(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a una mesh di input (vedere [**ID3DXMesh**](id3dxmesh.md)) che contiene la geometria dell'oggetto per il calcolo dell'Atlante. Come minimo, la mesh deve contenere dati sulla posizione e coordinate di trama 2D.
+Puntatore a una mesh di input (vedere [**ID3DXMesh)**](id3dxmesh.md)che contiene la geometria dell'oggetto per il calcolo dell'at atlas. Come minimo, la mesh deve contenere dati di posizione e coordinate di trama 2D.
 
 </dd> <dt>
 
-*dwMaxChartNumber* \[ in\]
+*dwMaxChartNumber* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di grafici in cui partizionare la mesh. Vedere la sezione Osservazioni sulle modalità di partizionamento. Usare 0 per indicare a D3DX che l'Atlante deve essere parametrizzato in base all'estensione.
+Numero massimo di grafici in cui partizionare la mesh. Vedere le osservazioni sulle modalità di partizionamento. Usare 0 per indicare a D3DX che l'atlas deve essere parametrizzato in base all'estensione.
 
 </dd> <dt>
 
-*fMaxStretch* \[ in\]
+*fMaxStretch* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Quantità di estensione consentita. 0 indica che non è consentita l'estensione. 1 indica che è possibile utilizzare qualsiasi estensione.
+Quantità di estensione consentita. 0 indica che non è consentita alcuna estensione, 1 indica che è possibile usare qualsiasi quantità di estensione.
 
 </dd> <dt>
 
-*dwWidth* \[ in\]
+*dwWidth* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Spessore trama.
+Larghezza della trama.
 
 </dd> <dt>
 
-*dwHeight* \[ in\]
+*dwHeight* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Altezza trama.
+Altezza della trama.
 
 </dd> <dt>
 
-*fGutter* \[ in\]
+*fGutter* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Distanza minima, in Texel, tra due grafici nell'Atlante. La gronda viene sempre ridimensionata in base alla larghezza; Se quindi si usa una gronda di 2,5 su una trama 512x512, la distanza minima tra due grafici è 2,5/512,0 Texels.
+Distanza minima, in texel, tra due grafici sull'at atlas. Il margine viene sempre ridimensionato in base alla larghezza. Pertanto, se viene usata una distanza di 2,5 su una trama 512x512, la distanza minima tra due grafici è 2,5/512,0 texel.
 
 </dd> <dt>
 
-*dwTextureIndex* \[ in\]
+*dwTextureIndex* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Indice di coordinate di trama in base zero che identifica il set di coordinate di trama da usare.
+Indice delle coordinate della trama in base zero che identifica il set di coordinate di trama da usare.
 
 </dd> <dt>
 
-*pdwAdjacency* \[ in\]
+*pdwAdjacency* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di dati adiacenza. con 3 DWORD per faccia, che indicano i triangoli adiacenti tra loro (vedere [**ID3DXBaseMesh:: GenerateAdjacency**](id3dxbasemesh--generateadjacency.md)).
+Puntatore a una matrice di dati di adienza. con 3 DWORD per ogni viso, che indica quali triangoli sono adiacenti tra loro (vedere [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md)).
 
 </dd> <dt>
 
@@ -135,97 +135,97 @@ Puntatore a una matrice di dati adiacenza. con 3 DWORD per faccia, che indicano 
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Matrice con 3 DWORD per faccia. Ogni volto indica se un bordo è false o no. Un bordo non false è indicato da-1, mentre un bordo false è indicato da un altro valore. In questo modo viene abilitata la parametrizzazione di una mesh di quad in cui i bordi al centro di ogni quad non vengono tagliati.
+Matrice con 3 DWORD per ogni viso. Ogni viso indica se un bordo è falso o meno. Un bordo non falso è indicato da -1, un bordo falso è indicato da qualsiasi altro valore. Ciò consente la parametrizzazione di una mesh di quad in cui i bordi al centro di ogni quad non verranno tagliati.
 
 </dd> <dt>
 
-*pfIMTArray* \[ in\]
+*pfIMTArray* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore a una matrice di tensori metrici integrati che descrive come estendere un triangolo (vedere [IntegratedMetricTensor](using-uvatlas.md)).
+Puntatore a una matrice di tensori delle metriche integrati che descrive come estendere un triangolo (vedere [IntegratedMetricTensor).](using-uvatlas.md)
 
 </dd> <dt>
 
-*pCallback* \[ in\]
+*pCallback* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
 
-Puntatore a una funzione di callback (vedere [LPD3DXUVATLASCB](lpd3dxuvatlascb.md)) utile per il monitoraggio dello stato di avanzamento.
+Puntatore a una funzione di callback (vedere [LPD3DXUVATLASCB)](lpd3dxuvatlascb.md)utile per monitorare lo stato di avanzamento.
 
 </dd> <dt>
 
-*fCallbackFrequency* \[ in\]
+*fCallbackFrequency* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Specificare la frequenza con cui D3DX chiamerà il callback; un valore predefinito ragionevole è 0,0001 f.
+Specificare la frequenza con cui D3DX chiamerà il callback. un valore predefinito ragionevole è 0,0001f.
 
 </dd> <dt>
 
-*pUserContent* \[ in\]
+*pUserContent* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a un valore definito dall'utente che viene passato alla funzione di callback; usato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni sul contesto per la funzione di callback.
+Puntatore a un valore definito dall'utente passato alla funzione di callback. utilizzato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni di contesto per la funzione di callback.
 
 </dd> <dt>
 
-*dwOptions* \[ in\]
+*dwOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Consente di specificare la qualità dei grafici generati. Vedere [**D3DXUVATLAS**](./d3dxuvatlas.md).
+Specificare la qualità dei grafici generati. Vedere [**D3DXUVATLAS.**](./d3dxuvatlas.md)
 
 </dd> <dt>
 
-*ppMeshOut* \[ in\]
+*ppMeshOut* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Puntatore alla mesh creata con Atlas (vedere [**ID3DXMesh**](id3dxmesh.md)).
+Puntatore alla mesh creata con l'atlas (vedere [**ID3DXMesh).**](id3dxmesh.md)
 
 </dd> <dt>
 
-*ppFacePartitioning* \[ out\]
+*PpFacePartitioning* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore a una matrice dei dati finali di partizionamento delle facce. Ogni elemento contiene un valore DWORD per faccia (vedere [**ID3DXBuffer**](id3dxbuffer.md)).
+Puntatore a una matrice dei dati finali di partizionamento viso. Ogni elemento contiene un valore DWORD per ogni viso (vedere [**ID3DXBuffer**](id3dxbuffer.md)).
 
 </dd> <dt>
 
-*ppVertexRemapArray* \[ out\]
+*ppVertexRemapArray* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore a una matrice di vertici di cui è stato eseguito il mapping. Ogni elemento della matrice identifica il vertice originale da cui provengono ogni vertice finale (se il vertice è stato suddiviso durante la modifica del mapping). Ogni elemento di matrice contiene un valore DWORD per vertice.
+Puntatore a una matrice di vertici mappati. Ogni elemento della matrice identifica il vertice originale da cui deriva ogni vertice finale (se il vertice è stato suddiviso durante il mapping). Ogni elemento della matrice contiene un valore DWORD per vertice.
 
 </dd> <dt>
 
-*pfMaxStretchOut* \[ out\]
+*pfMaxStretchOut* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntatore al valore di estensione massimo generato dall'algoritmo Atlas. L'intervallo è compreso tra 0,0 e 1,0.
 
 </dd> <dt>
 
-*pdwNumChartsOut* \[ out\]
+*pdwNumChartsOut* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntatore al numero di grafici creato dall'algoritmo Atlas. Se dwMaxChartNumber è troppo basso, questo parametro restituirà il numero minimo di grafici necessari per creare un Atlante.
+Puntatore al numero di grafici creati dall'algoritmo Atlas. Se dwMaxChartNumber è troppo basso, questo parametro restituirà il numero minimo di grafici necessari per creare un at atlas.
 
 </dd> </dl>
 
@@ -233,14 +233,14 @@ Puntatore al numero di grafici creato dall'algoritmo Atlas. Se dwMaxChartNumber 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso contrario, il valore è D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D OK; in caso contrario, il valore \_ è D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-D3DXUVAtlasCreate può partizionare la geometria mesh in due modi:
+D3DXUVAtlasCreate può partizionare la geometria della mesh in due modi:
 
 -   In base al numero di grafici
--   In base all'estensione massima consentita. Se l'estensione massima consentita è 0, è probabile che ogni triangolo si trovi in un grafico.
+-   In base all'estensione massima consentita. Se l'estensione massima consentita è 0, è probabile che ogni triangolo si trova nel proprio grafico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -248,8 +248,8 @@ D3DXUVAtlasCreate può partizionare la geometria mesh in due modi:
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -260,7 +260,7 @@ D3DXUVAtlasCreate può partizionare la geometria mesh in due modi:
 [Funzioni UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
 </dt> <dt>
 
-[Strumento Command-Line UV Atlas (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
+[UV Atlas Command-Line Tool (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Visualizza una barra del browser.
+description: 'Metodo Shell.ShowBrowserBar: visualizza una barra del browser.'
 ms.assetid: 203636D2-54D3-4163-B9AC-39213D6F4203
-title: Metodo Shell. ShowBrowserBar (shldisp. h)
+title: Metodo Shell.ShowBrowserBar (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d112399e62825714b4c060aeddcb8618ff73d478
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d19cd5b98ce39470860cc481ab05e4bb41adc9a4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979759"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083725"
 ---
-# <a name="shellshowbrowserbar-method"></a>Shell. ShowBrowserBar, metodo
+# <a name="shellshowbrowserbar-method"></a>Metodo Shell.ShowBrowserBar
 
 Visualizza una barra del browser.
 
@@ -51,21 +51,21 @@ Shell.ShowBrowserBar( _
 
 <dl> <dt>
 
-*sCLSID* \[ in\]
+*sCLSID* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il formato stringa del CLSID della barra del browser da visualizzare. L'oggetto deve essere registrato come oggetto della barra di Explorer con una \_ categoria di componenti INFOBAND CATID. Per ulteriori informazioni, vedere [creazione di barre di esplorazione personalizzate, bande di strumenti e bande della scrivania](band-objects.md).
+Valore **String** contenente il formato stringa del CLSID della barra del browser da visualizzare. L'oggetto deve essere registrato come oggetto barra di Explorer con una categoria di \_ componenti CATID InfoBand. Per altre informazioni, vedere [Creating Custom Explorer Bars, Tool Bands, and Desk Bands](band-objects.md).
 
 </dd> <dt>
 
-*vShow* \[ in\]
+*vShow* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Impostare su **true** per visualizzare la barra del browser o **false** per nasconderla.
+Impostare su **true per** visualizzare la barra del browser o **su false** per nasconderla.
 
 </dd> </dl>
 
@@ -73,19 +73,19 @@ Impostare su **true** per visualizzare la barra del browser o **false** per nasc
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **\* Variant**
 
-Restituisce _ *true** se ha esito positivo; in caso contrario, **false**.
+Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **\* Variant**
 
-Restituisce _ *true** se ha esito positivo; in caso contrario, **false**.
+Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
 ## <a name="remarks"></a>Commenti
 
-È possibile visualizzare una delle barre di Explorer standard impostando il parametro *sCLSID* sul CLSID della barra di Explorer. Le barre di Explorer standard e le relative stringhe CLSID sono le seguenti:
+È possibile visualizzare una delle barre di Explorer standard impostando il *parametro sCLSID* sul CLSID di tale barra di Explorer. Le barre di Explorer standard e le relative stringhe CLSID sono le seguenti:
 
 
 
@@ -104,9 +104,9 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **Shell. ShowBrowserBar** per visualizzare la barra del browser **Preferiti** . L'utilizzo viene visualizzato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso di **Shell.ShowBrowserBar** per visualizzare la **barra del** browser Preferiti. L'utilizzo è illustrato per JScript e VBScript.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -123,7 +123,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -149,11 +149,11 @@ VBScript
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

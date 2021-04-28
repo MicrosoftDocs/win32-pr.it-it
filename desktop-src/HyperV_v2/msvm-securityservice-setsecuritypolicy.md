@@ -1,5 +1,5 @@
 ---
-description: Imposta la protezione con chiave per un sistema virtuale.
+description: 'Metodo SetSecurityPolicy della classe Msvm_SecurityService: imposta la protezione della chiave per un sistema virtuale.'
 ms.assetid: 22496fde-6298-4e9d-bd0c-135dcb4ea5a5
 title: Metodo SetSecurityPolicy della classe Msvm_SecurityService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 35954f27d1184b714091058a35f32a6347d4ef55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31b03ee8a941b0715b85f6a749c4ba59ade032f7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530379"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118729"
 ---
-# <a name="setsecuritypolicy-method-of-the-msvm_securityservice-class"></a>Metodo SetSecurityPolicy della classe MSVM \_ SecurityService
+# <a name="setsecuritypolicy-method-of-the-msvm_securityservice-class"></a>Metodo SetSecurityPolicy della classe Msvm \_ SecurityService
 
-Imposta la protezione con chiave per un sistema virtuale.
+Imposta la protezione della chiave per un sistema virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,40 +41,40 @@ uint32 SetSecurityPolicy(
 
 <dl> <dt>
 
-*SecuritySettingData* \[ in\]
+*SecuritySettingData* \[ Pollici\]
 </dt> <dd>
 
-La stringa contiene un'istanza incorporata della classe [**\_ SecuritySettingData MSVM**](msvm-securitysettingdata.md) che rappresenta le impostazioni di sicurezza di un sistema virtuale.
+La stringa contiene un'istanza incorporata [**della classe Msvm \_ SecuritySettingData**](msvm-securitysettingdata.md) che rappresenta le impostazioni di sicurezza di un sistema virtuale.
 
 </dd> <dt>
 
-*SecurityPolicy* \[ in\]
+*SecurityPolicy* \[ Pollici\]
 </dt> <dd>
 
-Matrice di byte non elaborati che contiene i criteri di sicurezza da impostare.
+Matrice di byte non elaborata che contiene i criteri di sicurezza da impostare.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Parametro facoltativo per il monitoraggio dello stato di avanzamento dell'operazione, che viene utilizzato se non è stato possibile eseguire in modo sincrono il metodo. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
+Parametro facoltativo per il monitoraggio dello stato dell'operazione, che viene utilizzato se non è stato possibile eseguire il metodo in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0. in caso contrario, restituisce un errore.
+On, success, restituisce un valore 0. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -83,25 +83,25 @@ In caso di esito positivo, restituisce 0. in caso contrario, restituisce un erro
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -113,10 +113,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -125,7 +125,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_SecurityService MSVM**](msvm-securityservice.md)
+[**Msvm \_ SecurityService**](msvm-securityservice.md)
 </dt> </dl>
 
  

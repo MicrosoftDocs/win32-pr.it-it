@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CMsgThread.CMsgThread : metodo costruttore.'
 ms.assetid: 3f758c45-21ec-4728-ba7d-41da7b2fa02f
-title: Costruttore CMsgThread. CMsgThread (Msgthrd. h)
+title: Costruttore CMsgThread.CMsgThread (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e77d3a84e349ab370b6319cd973f6ba86d632366
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08d76ebecd09d95b7ba0fca22b300c1e402f5302
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328835"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095369"
 ---
-# <a name="cmsgthreadcmsgthread-constructor"></a>Costruttore CMsgThread. CMsgThread
+# <a name="cmsgthreadcmsgthread-constructor"></a>Costruttore CMsgThread.CMsgThread
 
 Metodo del costruttore.
 
@@ -42,7 +42,7 @@ Questo costruttore non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-La costruzione di un oggetto thread di messaggio non crea automaticamente il thread. Per creare il thread, è necessario chiamare la funzione membro [**CMsgThread:: CreateThread**](cmsgthread-createthread.md) .
+La costruzione di un oggetto thread del messaggio non crea automaticamente il thread. È necessario chiamare la [**funzione membro CMsgThread::CreateThread**](cmsgthread-createthread.md) per creare il thread.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ La costruzione di un oggetto thread di messaggio non crea automaticamente il thr
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Msgthrd. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Msgthrd.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

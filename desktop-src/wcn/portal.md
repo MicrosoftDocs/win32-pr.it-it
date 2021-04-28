@@ -1,29 +1,29 @@
 ---
 title: Windows Connect Now
-description: .
+description: Windows Connect Now
 ms.assetid: c551b8ae-2b87-4661-8d86-22010d18e058
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6556282495d62a915aa90b94d55ac7edd62cefd9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 96f3f7d5e4bb1fbe7dea30847c1483688f093f1d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711851"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108091249"
 ---
 # <a name="windows-connect-now"></a>Windows Connect Now
 
 ## <a name="purpose"></a>Scopo
 
-Windows Connect Now (WCN) consente di usare dispositivi mobili e incorporati, punti di accesso 802,11 e computer per connettersi in modo sicuro e scambiare le impostazioni tra loro. WCN è progettato per gli utenti domestici o di piccole imprese, offrendo un ragionevole compromesso tra semplicità d'uso e sicurezza affidabile.
+Windows Connect Now (WCN) consente ai dispositivi mobili e incorporati, ai punti di accesso 802.11 e ai computer di connettersi e scambiare le impostazioni tra loro in modo sicuro. La rete WCN è progettata per l'utente domestico o per le piccole aziende, offrendo un compromesso ragionevole tra facilità d'uso e sicurezza affidabile.
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-L'API di Windows Connect Now è progettata per l'uso con C/C++.
+L Windows Connect Now API è progettata per l'uso con C/C++.
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 
-Windows Connect è ora supportato a partire da Windows 7.
+Windows Connect Now è supportato a partire da Windows 7.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -31,8 +31,8 @@ Windows Connect è ora supportato a partire da Windows 7.
 
 | Argomento                                                                         | Descrizione                                                                                                             |
 |-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Informazioni su Windows Connect Now](about-windows-connect-now.md)<br/>         | Breve panoramica dell'API di Windows Connect Now.<br/>                                                             |
-| [Informazioni di riferimento su Windows Connect Now](windows-connect-now-reference.md)<br/> | Descrizioni dettagliate degli elementi di programmazione inclusi nell'API di Windows Connect Now (WCNAPI).<br/> |
+| [Informazioni Windows Connect Now](about-windows-connect-now.md)<br/>         | Breve panoramica dell'API Windows Connect Now.<br/>                                                             |
+| [Windows Connect Now informazioni di riferimento](windows-connect-now-reference.md)<br/> | Descrizioni dettagliate degli elementi di programmazione inclusi nell'API Windows Connect Now (WCNAPI).<br/> |
 
 
 

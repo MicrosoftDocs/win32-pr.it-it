@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di configurazione del servizio.
+description: 'SystemConfig_Services: questa classe è la classe del tipo di evento per gli eventi di configurazione del servizio.'
 ms.assetid: 7cba9992-d154-44b8-87d8-b46a8438f607
-title: Classe SystemConfig_Services
+title: SystemConfig_Services classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,14 +18,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 97b4d2a56f2ed739403681875e0be4d9e21481ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 754b0e10c3882911c6e91fc2590c11739c3f7531
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977471"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106059"
 ---
-# <a name="systemconfig_services-class"></a>\_Classe dei servizi SystemConfig
+# <a name="systemconfig_services-class"></a>Classe SystemConfig \_ Services
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione del servizio.
 
@@ -48,42 +48,42 @@ class SystemConfig_Services : SystemConfig
 
 ## <a name="members"></a>Members
 
-La classe dei **\_ Servizi SystemConfig** dispone di questi tipi di membri:
+La **classe SystemConfig \_ Services** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ dei servizi SystemConfig** dispone di queste proprietà.
+La **classe SystemConfig \_ Services** dispone di queste proprietà.
 
 <dl> <dt>
 
 **DisplayName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (5), **StringTermination ("NullTerminated")**, **Format ("w")**
+Qualificatori: **WmiDataId** (5), **StringTermination("NullTerminated")**, **Format("w")**
 </dt> </dl>
 
-Nome visualizzato del servizio. Il nome viene mantenuto con la distinzione tra maiuscole e minuscole in Gestione controllo servizi. Tuttavia, i nomi visualizzati vengono sempre confrontati senza distinzione tra maiuscole e minuscole.
+Nome visualizzato del servizio. Il nome viene mantenuto senza distinzione tra maiuscole e minuscole in Gestione controllo servizi. Tuttavia, i nomi visualizzati vengono sempre confrontati senza distinzione tra maiuscole e minuscole.
 
 </dd> <dt>
 
-**ProcessId**
+**Processid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (1), **Format ("x")**
+Qualificatori: **WmiDataId** (1), **Format("x")**
 </dt> </dl>
 
 Identificatore del processo in cui viene eseguito il servizio.
@@ -93,61 +93,61 @@ Identificatore del processo in cui viene eseguito il servizio.
 **ProcessName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (6), **StringTermination ("NullTerminated")**, **Format ("w")**
+Qualificatori: **WmiDataId** (6), **StringTermination("NullTerminated")**, **Format("w")**
 </dt> </dl>
 
 Nome del processo in cui viene eseguito il servizio.
 
 </dd> <dt>
 
-**ServiceName**
+**Servicename**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (4), **StringTermination ("NullTerminated")**, **Format ("w")**
+Qualificatori: **WmiDataId** (4), **StringTermination("NullTerminated")**, **Format("w")**
 </dt> </dl>
 
-Identificatore univoco del servizio. L'identificatore fornisce un'indicazione delle funzionalità fornite dal servizio.
+Identificatore univoco del servizio. L'identificatore fornisce un'indicazione della funzionalità fornita dal servizio.
 
 </dd> <dt>
 
 **ServiceState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (2), **Format ("x")**
+Qualificatori: **WmiDataId** (2), **Format("x")**
 </dt> </dl>
 
-Stato corrente del servizio. Per i valori possibili, vedere il membro **dwCurrentState** del **processo di \_ stato \_ del servizio**.
+Stato corrente del servizio. Per i valori possibili, vedere **il membro dwCurrentState** di **SERVICE STATUS \_ \_ PROCESS**.
 
 </dd> <dt>
 
 **SubProcessTag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (3), **Format ("x")**
+Qualificatori: **WmiDataId** (3), **Format("x")**
 </dt> </dl>
 
 Identifica il servizio.
@@ -160,8 +160,8 @@ Identifica il servizio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
 
 
 

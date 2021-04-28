@@ -1,7 +1,7 @@
 ---
-description: Descrive un piano.
+description: 'Struttura D3DXPLANE (D3DX10Math.h): descrive un piano.'
 ms.assetid: c6da7343-a4f3-4cac-855b-14bd70c0d3c2
-title: Struttura D3DXPLANE (D3DX10Math. h)
+title: Struttura D3DXPLANE (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 9949aec16e90a53e01e536255c20f442052bb98b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 440246fb47a851f9f5339c72a484a2cb59e8f662
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355654"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103329"
 ---
-# <a name="d3dxplane-structure-d3dx10mathh"></a>Struttura D3DXPLANE (D3DX10Math. h)
+# <a name="d3dxplane-structure-d3dx10mathh"></a>Struttura D3DXPLANE (D3DX10Math.h)
 
 Descrive un piano.
 
@@ -42,21 +42,21 @@ typedef struct D3DXPLANE {
 
 <dl> <dt>
 
-**un**
+**Un**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Il coefficiente del piano di ritaglio nell'equazione del piano generale. Vedere la sezione Osservazioni.
+Coefficiente del piano di ritaglio nell'equazione del piano generale. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
 **b**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,7 +67,7 @@ Coefficiente b del piano di ritaglio nell'equazione del piano generale. Vedere l
 **c**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,7 +78,7 @@ Coefficiente c del piano di ritaglio nell'equazione del piano generale. Vedere l
 **d**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -88,7 +88,7 @@ Coefficiente d del piano di ritaglio nell'equazione del piano generale. Vedere l
 
 ## <a name="remarks"></a>Commenti
 
-I membri della struttura **D3DXPLANE** prendono il formato dell'equazione generale del piano. Si adattano all'equazione generale del piano in modo che ax + by + CZ + DW = 0.
+I membri della struttura **D3DXPLANE** hanno la forma dell'equazione del piano generale. Rientrano nell'equazione del piano generale in modo che ax + by + cz + dw = 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ I membri della struttura **D3DXPLANE** prendono il formato dell'equazione genera
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

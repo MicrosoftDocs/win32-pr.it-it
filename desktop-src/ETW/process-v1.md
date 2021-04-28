@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi di elaborazione. La sintassi seguente è semplificata dal codice MOF.
+description: 'Process_V1 classe: questa classe è la classe padre per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: e517cd2d-5870-4666-93e9-6870b2f4a447
-title: Classe Process_V1
+title: Process_V1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4d4146fd92dee5053f39a6279586823e8eae9777
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc0b72c476890cc81d083208a8ff3489e5609fda
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980399"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106319"
 ---
-# <a name="process_v1-class"></a>\_Classe Process V1
+# <a name="process_v1-class"></a>Classe \_ Process V1
 
-Questa classe è la classe padre per gli eventi di elaborazione.
+Questa classe è la classe padre per gli eventi del processo.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -36,7 +36,7 @@ class Process_V1 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe **Process \_ V1** non definisce membri.
+La **classe \_ Process V1** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,8 +44,8 @@ La classe **Process \_ V1** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 
@@ -53,7 +53,7 @@ La classe **Process \_ V1** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Processo**](process.md)
@@ -62,7 +62,7 @@ La classe **Process \_ V1** non definisce membri.
 [**Processo \_ V0**](process-v0.md)
 </dt> <dt>
 
-[**Processo \_ V1 \_ TypeGroup1**](process-v1-typegroup1.md)
+[**Elaborazione \_ V1 \_ TypeGroup1**](process-v1-typegroup1.md)
 </dt> </dl>
 
  

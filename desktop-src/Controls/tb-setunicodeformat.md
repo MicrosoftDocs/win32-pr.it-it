@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETUNICODEFORMAT (COMmctrl. h)
-description: Imposta il flag di formato carattere Unicode per il controllo. Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover ricreare il controllo.
+title: TB_SETUNICODEFORMAT messaggio (Commctrl.h)
+description: 'TB_SETUNICODEFORMAT messaggio: imposta il flag di formato carattere Unicode per il controllo. Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover creare nuovamente il controllo.'
 ms.assetid: d4eec78d-c25b-4b86-9449-64f091cd8501
 keywords:
-- Controlli di Windows Message TB_SETUNICODEFORMAT
+- TB_SETUNICODEFORMAT di windows del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cf53a6c252690de8f9e001d34c1001d24aac57f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d27689668eadd65ebabe1d34427699a9e7ebc5c5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874669"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106769"
 ---
-# <a name="tb_setunicodeformat-message"></a>TB \_ SETUNICODEFORMAT messaggio
+# <a name="tb_setunicodeformat-message"></a>TB \_ SETUNICODEFORMAT message
 
-Imposta il flag di formato carattere Unicode per il controllo. Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover ricreare il controllo.
+Imposta il flag di formato carattere Unicode per il controllo . Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover creare nuovamente il controllo.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta il flag di formato carattere Unicode per il controllo. Questo messaggio 
 *wParam* 
 </dt> <dd>
 
-Determina il set di caratteri utilizzato dal controllo. Se questo valore è diverso da zero, il controllo utilizzerà caratteri Unicode. Se questo valore è zero, il controllo utilizzerà caratteri ANSI.
+Determina il set di caratteri utilizzato dal controllo . Se questo valore è diverso da zero, il controllo userà caratteri Unicode. Se questo valore è zero, il controllo userà caratteri ANSI.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Restituisce il flag di formato Unicode precedente per il controllo.
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat.md) .
+Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CCM \_ SETUNICODEFORMAT.**](ccm-setunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

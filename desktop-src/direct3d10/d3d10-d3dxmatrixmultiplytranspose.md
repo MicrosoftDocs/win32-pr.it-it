@@ -1,7 +1,7 @@
 ---
-description: Calcola il prodotto trasposto di due matrici.
+description: 'Funzione D3DXMatrixMultiplyTranspose (D3DX10Math.h): calcola il prodotto trasposto di due matrici.'
 ms.assetid: 3db4138c-407c-47b5-b8b9-04af8771e98e
-title: Funzione D3DXMatrixMultiplyTranspose (D3DX10Math. h)
+title: Funzione D3DXMatrixMultiplyTranspose (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 187912a4117ab502ea7b0b1b3fc1ea105ecbc3e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fcf3d5578aa6e2ad13bd3f91dfd2206d6eaf0b13
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323409"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103418"
 ---
-# <a name="d3dxmatrixmultiplytranspose-function-d3dx10mathh"></a>Funzione D3DXMatrixMultiplyTranspose (D3DX10Math. h)
+# <a name="d3dxmatrixmultiplytranspose-function-d3dx10mathh"></a>Funzione D3DXMatrixMultiplyTranspose (D3DX10Math.h)
 
 Calcola il prodotto trasposto di due matrici.
 
@@ -42,16 +42,16 @@ D3DXMATRIX* D3DXMatrixMultiplyTranspose(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pM1* \[ in\]
+*pM1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -60,7 +60,7 @@ Puntatore a una struttura D3DXMATRIX di origine (lato sinistro).
 
 </dd> <dt>
 
-*pM2* \[ in\]
+*pM2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -77,11 +77,11 @@ Puntatore a una struttura D3DXMATRIX che è il prodotto di due matrici.
 
 ## <a name="remarks"></a>Commenti
 
-Il risultato è l'oggetto trasposto dal prodotto di due matrici di trasformazione, out = T (M1 \* m2).
+Il risultato è il prodotto trasposto di due matrici di trasformazione, Out = T(M1 \* M2).
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixMultiplyTranspose può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixMultiplyTranspose può essere usata come parametro per un'altra funzione.
 
-Questa funzione è utile per impostare matrici come costanti per i vertex e i pixel shader.
+Questa funzione è utile per impostare le matrici come costanti per vertici e pixel shader.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Questa funzione è utile per impostare matrici come costanti per i vertex e i pi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

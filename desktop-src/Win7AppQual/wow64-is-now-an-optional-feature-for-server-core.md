@@ -1,28 +1,28 @@
 ---
-description: .
+description: WoW64 è ora una funzionalità facoltativa per Server Core
 ms.assetid: 9a918cd3-60a0-4231-975a-bee12de5c812
-title: Stato WoW64 in Server Core
+title: Stato di WoW64 in Server Core
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a121c6bb9c4fb2cd052825bb4c2d5e3dbd0183c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fad947dac85707d3c9c89a2cffea38c4a4850a6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318563"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084049"
 ---
 # <a name="wow64-is-now-an-optional-feature-for-server-core"></a>WoW64 è ora una funzionalità facoltativa per Server Core
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
-**Server** -Windows Server 2008 R2  
+**Server** - Windows Server 2008 R2  
 
 
 
-## <a name="feature-impact"></a>Effetto sulle funzionalità
+## <a name="feature-impact"></a>Impatto sulle funzionalità
 
- **Gravità** -bassa  
-**Frequenza** -bassa  
+ **Gravità** - Bassa  
+**Frequenza** - Bassa  
 
 
 
@@ -30,31 +30,31 @@ ms.locfileid: "106318563"
 
 ## <a name="description"></a>Descrizione
 
-L'opzione di installazione dei componenti di base del server per Windows Server 2008 R2 consente di disinstallare WoW64. WoW64 è ora una funzionalità facoltativa che è possibile disinstallare se non è necessario eseguire codice a 32 bit.
+L'opzione di installazione Server Core per Windows Server 2008 R2 consente di disinstallare WoW64. WoW64 è ora una funzionalità facoltativa che è possibile disinstallare se non è necessario eseguire codice a 32 bit.
 
-Inoltre, per l'esecuzione in Windows Server 2008 R2, i ruoli Active Directory e Active Directory Lightweight Directory Services richiedono WoW64.
+Inoltre, i ruoli Active Directory e Active Directory Lightweight Directory Services richiedono WoW64 per l'esecuzione in Windows Server 2008 R2.
 
-## <a name="manifestation-of-impact"></a>Manifesto di effetto
+## <a name="manifestation-of-impact"></a>Manifestazione di impatto
 
-Se si disinstalla WoW64, gli amministratori che eseguono codice a 32 bit in Server Core riceveranno un messaggio di errore che segnala che non è possibile eseguire l'applicazione. Se gli amministratori tentano di eseguire Active Directory e Active Directory Lightweight Directory Services, riceveranno un messaggio di errore.
+Se si disinstalla WoW64, gli amministratori che eseguono codice a 32 bit in Server Core riceveranno un messaggio di errore che indica che l'applicazione non può essere eseguita. Se gli amministratori tentano di eseguire Active Directory Active Directory Lightweight Directory Services, riceveranno un messaggio di errore.
 
-## <a name="mitigation"></a>Strategia di riduzione del rischio
+## <a name="mitigation"></a>Mitigazione
 
 Installare WoW64.
 
 ## <a name="solution"></a>Soluzione
 
-La soluzione preferita consiste nel fornire una versione a 64 bit del codice per consentirne l'esecuzione in Server Core senza la necessità di WoW64.
+La soluzione preferita consiste nel fornire una versione a 64 bit del codice per consentire l'esecuzione in Server Core senza la necessità di WoW64.
 
-Fornire almeno la documentazione utente nota per eseguire codice a 32 bit, è necessario installare WoW64.
+Fornire almeno la documentazione dell'utente che indica che per eseguire codice a 32 bit è necessario installare WoW64.
 
-## <a name="compatibility-performance-reliability-and-usability-testing"></a>Compatibilità, prestazioni, affidabilità e test di usabilità
+## <a name="compatibility-performance-reliability-and-usability-testing"></a>Test di compatibilità, prestazioni, affidabilità e usabilità
 
-Verificare che tutto il codice utilizzato sia a 64 bit.
+Verificare che tutto il codice usato sia a 64 bit.
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [Dettagli di implementazione di WOW64](../winprog64/wow64-implementation-details.md)
+-   [Dettagli sull'implementazione di WOW64](../winprog64/wow64-implementation-details.md)
 -   [Debug di WOW64](../winprog64/debugging-wow64.md)
 -   [Server Core](/previous-versions/windows/desktop/legacy/ms723891(v=vs.85))
 

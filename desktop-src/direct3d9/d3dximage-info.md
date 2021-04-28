@@ -1,7 +1,7 @@
 ---
-description: Restituisce una descrizione del contenuto originale di un file di immagine.
+description: 'D3DXIMAGE_INFO struttura : restituisce una descrizione del contenuto originale di un file di immagine.'
 ms.assetid: d6cbd5b7-642e-43ce-a2ed-11a400c5bdc1
-title: Struttura D3DXIMAGE_INFO (D3dx9tex. h)
+title: D3DXIMAGE_INFO struttura (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9tex.h
-ms.openlocfilehash: 6ec152dc56dcea3a718cf5cd42fb351d4fddf852
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: be70cc88645e0aac6734907c6a97f2d4bb104c99
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762035"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090539"
 ---
-# <a name="d3dximage_info-structure"></a>Struttura delle informazioni di D3DXIMAGE \_
+# <a name="d3dximage_info-structure"></a>Struttura D3DXIMAGE \_ INFO
 
 Restituisce una descrizione del contenuto originale di un file di immagine.
 
@@ -48,7 +48,7 @@ typedef struct D3DXIMAGE_INFO {
 **Larghezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -59,7 +59,7 @@ Larghezza dell'immagine originale in pixel.
 **Altezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -70,7 +70,7 @@ Altezza dell'immagine originale in pixel.
 **Livello nidificazione**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -81,11 +81,11 @@ Profondità dell'immagine originale in pixel.
 **MipLevels**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di livelli MIP nell'immagine originale.
+Numero di livelli mip nell'immagine originale.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Valore del tipo enumerato [D3DFORMAT](d3dformat.md) che descrive più accuratamente i dati nell'immagine originale.
+Valore del tipo [enumerato D3DFORMAT](d3dformat.md) che descrive più da vicino i dati nell'immagine originale.
 
 </dd> <dt>
 
@@ -107,14 +107,14 @@ Tipo: **[ **D3DRESOURCETYPE**](./d3dresourcetype.md)**
 
 </dd> <dd>
 
-Rappresenta il tipo di trama archiviato nel file. Si tratta di una \_ trama D3DRTYPE, D3DRTYPE \_ VOLUMETEXTURE o D3DRTYPE \_ CubeTexture.
+Rappresenta il tipo della trama archiviata nel file. È D3DRTYPE \_ TEXTURE, D3DRTYPE \_ VOLUMETEXTURE o D3DRTYPE \_ CubeTexture.
 
 </dd> <dt>
 
 **ImageFileFormat**
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md)**
+Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
 </dd> <dd>
 
@@ -128,7 +128,7 @@ Rappresenta il formato del file di immagine.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9tex.h</dt> </dl> |
 
 
 

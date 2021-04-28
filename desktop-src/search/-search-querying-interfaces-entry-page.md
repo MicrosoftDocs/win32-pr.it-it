@@ -1,20 +1,20 @@
 ---
-description: .
+description: Esecuzione di query su interfacce
 ms.assetid: 904e5325-4bcb-42cf-8e7f-eb9641c94633
-title: Esecuzione di query sulle interfacce
+title: Esecuzione di query su interfacce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d785421403b63e231c3fcc6bafd15680c57ec41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfc41b9b17ac2da10e6ac36294845cf8c4bf8b0c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306150"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104609"
 ---
-# <a name="querying-interfaces"></a>Esecuzione di query sulle interfacce
+# <a name="querying-interfaces"></a>Esecuzione di query su interfacce
 
 
-Questa sezione di riferimento di Windows Search è costituita dalle seguenti interfacce di query:
+Questa Windows Search di riferimento è costituita dalle interfacce di query seguenti:
 
 [**ICondition**](/windows/desktop/api/Structuredquerycondition/nn-structuredquerycondition-icondition)
 

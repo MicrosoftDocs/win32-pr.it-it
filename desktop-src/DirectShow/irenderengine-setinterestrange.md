@@ -1,7 +1,7 @@
 ---
-description: Non supportata.
+description: 'Metodo IRenderEngine::SetInterestRange: non supportato.'
 ms.assetid: 1e4c3bd4-2540-428f-9ca6-dd4c65c53434
-title: 'Metodo IRenderEngine:: SetInterestRange'
+title: Metodo IRenderEngine::SetInterestRange
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 81ccd8c1266710e7e38fe9b79e86319e8fef7314
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ec9790e65efa30b83cf324da4153f20c541733b9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481125"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084459"
 ---
-# <a name="irenderenginesetinterestrange-method"></a>Metodo IRenderEngine:: SetInterestRange
+# <a name="irenderenginesetinterestrange-method"></a>Metodo IRenderEngine::SetInterestRange
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -60,17 +60,17 @@ Riservato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

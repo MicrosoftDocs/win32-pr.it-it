@@ -1,7 +1,7 @@
 ---
-description: Contiene il numero di elementi nella raccolta.
+description: 'Proprietà ShellWindows.Count: contiene il numero di elementi nella raccolta.'
 ms.assetid: 0113cc32-2197-4004-99a1-89fe10828e5f
-title: Proprietà ShellWindows. Count (Exdisp. h)
+title: Proprietà ShellWindows.Count (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a8d5b9e605650ba7d3cb6036e8abfac58c0b8597
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2b33dc11e6bf909043ac5391965e1ebd225d376
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980714"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103939"
 ---
-# <a name="shellwindowscount-property"></a>Proprietà ShellWindows. Count
+# <a name="shellwindowscount-property"></a>ShellWindows.Count - proprietà
 
 Contiene il numero di elementi nella raccolta.
 
@@ -37,13 +37,13 @@ iCount = ShellWindows.Count
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Intero** contenente un valore per la proprietà **count** .
+Integer **che** contiene un valore per la **proprietà Count.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il **conteggio** in uso. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **illustrato il conteggio** in uso. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -67,7 +67,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -122,10 +122,10 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

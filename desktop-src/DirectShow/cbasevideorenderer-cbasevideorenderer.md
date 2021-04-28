@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CBaseVideoRenderer.CBaseVideoRenderer - Metodo costruttore.
 ms.assetid: 9b69632b-7932-4a9b-bd68-69b06dd8a5ec
-title: Costruttore CBaseVideoRenderer. CBaseVideoRenderer (Renbase. h)
+title: Costruttore CBaseVideoRenderer.CBaseVideoRenderer (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 27ed49be63d9c2c05e12a2ac92ae33f64705460b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0ae558238b94402150e5cb15373d202065e485e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328509"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095839"
 ---
-# <a name="cbasevideorenderercbasevideorenderer-constructor"></a>Costruttore CBaseVideoRenderer. CBaseVideoRenderer
+# <a name="cbasevideorenderercbasevideorenderer-constructor"></a>Costruttore CBaseVideoRenderer.CBaseVideoRenderer
 
 Metodo del costruttore.
 
@@ -45,31 +45,31 @@ CBaseVideoRenderer(
 
 <dl> <dt>
 
-*RenderClass* 
+*Classe RenderClass* 
 </dt> <dd>
 
 Identificatore di classe per questo renderer.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
 Puntatore a una descrizione utilizzata a scopo di debug.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
 Puntatore all'oggetto proprietario aggregato.
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a un valore **HRESULT** .
+Puntatore a un **valore HRESULT.**
 
 </dd> </dl>
 
@@ -79,8 +79,8 @@ Puntatore a un valore **HRESULT** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Determina il prodotto della matrice corrente e della matrice di traslazione calcolata determinata dai fattori specificati (x, y e z).
+description: 'Metodo ID3DXMATRIXStack::Translate (D3dx9math.h): determina il prodotto della matrice corrente e della matrice di traslazione calcolata determinata dai fattori specifici (x, y e z).'
 ms.assetid: e0ac72a2-9970-433e-9026-aa79edc8261c
-title: 'Metodo ID3DXMATRIXStack:: translate (D3dx9math. h)'
+title: Metodo ID3DXMATRIXStack::Translate (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 228b4302a512e96d5c009edcb3f0b673ee61e047
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7fadad95e8e72691a0e030ed89eedc745de2be43
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323725"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093339"
 ---
-# <a name="id3dxmatrixstacktranslate-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack:: translate (D3dx9math. h)
+# <a name="id3dxmatrixstacktranslate-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack::Translate (D3dx9math.h)
 
-Determina il prodotto della matrice corrente e della matrice di traslazione calcolata determinata dai fattori specificati (x, y e z).
+Determina il prodotto della matrice corrente e la matrice di traslazione calcolata determinata dai fattori (x, y e z) specifici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,27 +45,27 @@ HRESULT Translate(
 *x* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Fattore di conversione nella direzione x.
+Fattore di traslazione nella direzione x.
 
 </dd> <dt>
 
 *y* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Fattore di conversione nella direzione y.
+Fattore di traslazione nella direzione y.
 
 </dd> <dt>
 
 *z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Fattore di conversione nella direzione z.
+Fattore di traslazione nella direzione z.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo moltiplica a destra la matrice corrente con la matrice di traduzione calcolata (la trasformazione è relativa all'origine mondiale corrente).
+Questo metodo moltiplica a destra la matrice corrente con la matrice di traslazione calcolata (la trasformazione riguarda l'origine globale corrente).
 
 
 ```
@@ -94,8 +94,8 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

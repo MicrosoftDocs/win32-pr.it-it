@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: 'Distruttore CBaseObject.~CBaseObject : metodo del distruttore.'
 ms.assetid: 3714d030-f0bd-4826-a3c5-fc206bb88561
-title: Distruttore CBaseObject. ~ CBaseObject (ComBase. h)
+title: Distruttore CBaseObject.~CBaseObject (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 908f335105fa88f3ed547eed0e92ea50a6f85f26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 552dbcc764f335e639cb50e2e01411dee200068f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325524"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096239"
 ---
-# <a name="cbaseobjectcbaseobject-destructor"></a>Distruttore CBaseObject. ~ CBaseObject
+# <a name="cbaseobjectcbaseobject-destructor"></a>Distruttore CBaseObject.~CBaseObject
 
 Metodo del distruttore.
 
@@ -38,7 +38,7 @@ Metodo del distruttore.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo metodo decrementa il conteggio degli oggetti attivi. Vedere [**CBaseObject:: ObjectsActive**](cbaseobject-objectsactive.md).
+Questo metodo decrementa il numero di oggetti attivi. Vedere [**CBaseObject::ObjectsActive.**](cbaseobject-objectsactive.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Questo metodo decrementa il conteggio degli oggetti attivi. Vedere [**CBaseObjec
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

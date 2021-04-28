@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo Notify notifica al pin che è richiesta una modifica di qualità. Questo metodo implementa il metodo IQualityControl:: Notify.'
+description: 'Metodo CBaseInputPin.Notify: il metodo Notify notifica al pin che è richiesta una modifica di qualità. Questo metodo implementa il metodo IQualityControl::Notify.'
 ms.assetid: 76124321-0d2d-4fee-a08a-4db23078e8df
-title: Metodo CBaseInputPin. Notify (Amfilter. h)
+title: Metodo CBaseInputPin.Notify (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a5ae7ca47c5adc11c87a739e8736ba327dc0b65f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 610888193762618d427a0329a27d3019bd625e69
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330939"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119999"
 ---
-# <a name="cbaseinputpinnotify-method"></a>Metodo CBaseInputPin. Notify
+# <a name="cbaseinputpinnotify-method"></a>Metodo CBaseInputPin.Notify
 
-Il `Notify` metodo notifica al pin che è richiesta una modifica di qualità. Questo metodo implementa il metodo [**IQualityControl:: Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) .
+Il `Notify` metodo notifica al pin che è richiesta una modifica di qualità. Questo metodo implementa il [**metodo IQualityControl::Notify.**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,24 +46,24 @@ HRESULT Notify(
 *pSelf* 
 </dt> <dd>
 
-Puntatore al filtro che sta inviando il messaggio di controllo di qualità.
+Puntatore al filtro che invia il messaggio di controllo qualità.
 
 </dd> <dt>
 
-*d* 
+*D* 
 </dt> <dd>
 
-Struttura di [**qualità**](/windows/win32/api/strmif/ns-strmif-quality) che contiene il messaggio di controllo della qualità.
+[**Struttura**](/windows/win32/api/strmif/ns-strmif-quality) di qualità che contiene il messaggio di controllo qualità.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-I filtri di solito passano messaggi di controllo della qualità a un pin di output upstream, non a un pin di input. Pertanto, questo metodo restituisce \_ OK senza eseguire alcuna operazione.
+I filtri passano in genere messaggi di controllo della qualità a un pin di output upstream, non a un pin di input. Pertanto, questo metodo restituisce S \_ OK senza eseguire alcuna operazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ I filtri di solito passano messaggi di controllo della qualità a un pin di outp
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ I filtri di solito passano messaggi di controllo della qualità a un pin di outp
 [**Classe CBaseInputPin**](cbaseinputpin.md)
 </dt> <dt>
 
-[Gestione controllo qualità](quality-control-management.md)
+[Gestione del controllo di qualità](quality-control-management.md)
 </dt> </dl>
 
  

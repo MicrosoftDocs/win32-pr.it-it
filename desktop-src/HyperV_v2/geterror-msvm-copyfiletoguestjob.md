@@ -1,7 +1,7 @@
 ---
-description: Recupera l'oggetto errore per il processo, se disponibile.
+description: "Msvm_CopyFileToGuestJob::GetError : recupera l'oggetto errore per il processo, se esistente."
 ms.assetid: 478E9170-A523-4CE1-BD97-57D713FAF71B
-title: 'Metodo Msvm_CopyFileToGuestJob:: GetError'
+title: Msvm_CopyFileToGuestJob::GetError
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a0a89feab4e78ba3703e117972598c4de5f70310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7cecaf7254788ae064ca42f2ae0c26e8ad83d7e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307745"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119369"
 ---
-# <a name="msvm_copyfiletoguestjobgeterror-method"></a>\_Metodo MSVM CopyFileToGuestJob:: GetError
+# <a name="msvm_copyfiletoguestjobgeterror-method"></a>Metodo \_ Msvm CopyFileToGuestJob::GetError
 
-Recupera l'oggetto errore per il processo, se disponibile. Quando il processo è in esecuzione o è terminato senza errori, questo metodo non restituisce un oggetto [**\_ errore CIM**](/previous-versions//cc150671(v=vs.85)) . Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, viene restituita un'istanza di **\_ errore CIM** .
+Recupera l'oggetto errore per il processo, se esistente. Quando il processo è in esecuzione o è terminato senza errori, questo metodo non restituisce un [**oggetto \_ Errore CIM.**](/previous-versions//cc150671(v=vs.85)) Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, viene restituita un'istanza **\_ Di errore CIM.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ uint32 GetError(
 
 <dl> <dt>
 
-*Errore* \[ out\]
+*Errore* \[ Cambio\]
 </dt> <dd>
 
-Se lo stato operativo del processo non è 2 (OK), questo metodo restituisce un'istanza incorporata della classe [**di \_ errore MSVM**](msvm-error.md) in formato CIM-XML. Se lo stato operativo del processo è 2 (OK), viene restituito **null** .
+Se lo stato operativo del processo non è 2 (OK), questo metodo restituisce un'istanza incorporata della [**classe Msvm \_ Error,**](msvm-error.md) in formato CIM-XML. Se lo stato operativo del processo è 2 (OK), **viene restituito** Null.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -64,25 +64,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -94,10 +94,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\\\\\Virtualizzazione radice \\ v2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8.1 solo \[ app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | \\\\Virtualizzazione \\ radice \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -106,7 +106,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_CopyFileToGuestJob MSVM**](msvm-copyfiletoguestjob.md)
+[**Msvm \_ CopyFileToGuestJob**](msvm-copyfiletoguestjob.md)
 </dt> </dl>
 
  

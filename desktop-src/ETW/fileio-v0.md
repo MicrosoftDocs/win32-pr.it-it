@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi di I/O di file. La sintassi seguente è semplificata dal codice MOF.
+description: 'FileIo_V0 classe: questa classe è la classe padre per gli eventi di I/O di file. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: c88242ec-de74-4b5b-8fdd-ec99e0d4a59e
-title: Classe FileIo_V0
+title: FileIo_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 46f4db6d7923ac3403e730c258510b572a8726aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffb2f616c5273f92571f4bf4a6bab1b3cdac733e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980359"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106579"
 ---
-# <a name="fileio_v0-class"></a>FileIO \_ V0 (classe)
+# <a name="fileio_v0-class"></a>Classe FileIo \_ V0
 
 Questa classe è la classe padre per gli eventi di I/O di file.
 
@@ -36,7 +36,7 @@ class FileIo_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe di **FileIO \_ V0** non definisce membri.
+La **classe FileIo \_ V0** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,16 +53,16 @@ La classe di **FileIO \_ V0** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**FileIo**](fileio.md)
+[**Fileio**](fileio.md)
 </dt> <dt>
 
-[**FileIO \_ V0 \_ nome**](fileio-v0-name.md)
+[**Nome fileIo \_ V0 \_**](fileio-v0-name.md)
 </dt> <dt>
 
-[**FileIO \_ V1**](fileio-v1.md)
+[**FileIo \_ V1**](fileio-v1.md)
 </dt> </dl>
 
  

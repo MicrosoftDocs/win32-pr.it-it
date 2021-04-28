@@ -1,7 +1,7 @@
 ---
-description: Esegue l'interpolazione tra quaternioni usando l'interpolazione quadrangolare sferica.
+description: "Funzione D3DXQuaternionSquad (D3dx9math.h): interpola tra quaternioni, usando l'interpolazione quadrangolare sferica."
 ms.assetid: afce9afb-64cc-4059-90f5-7ed1aca9b3cb
-title: Funzione D3DXQuaternionSquad (D3dx9math. h)
+title: Funzione D3DXQuaternionSquad (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3e4fa980d551ac43f66035c1dcaa46d1c1c590a7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c7bef8671b38ec2e8208a6de0ec7542cf28ffa44
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322486"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117989"
 ---
-# <a name="d3dxquaternionsquad-function-d3dx9mathh"></a>Funzione D3DXQuaternionSquad (D3dx9math. h)
+# <a name="d3dxquaternionsquad-function-d3dx9mathh"></a>Funzione D3DXQuaternionSquad (D3dx9math.h)
 
-Esegue l'interpolazione tra quaternioni usando l'interpolazione quadrangolare sferica.
+Interpolazione tra quaternioni, usando l'interpolazione quadrangolare sferica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,57 +45,57 @@ D3DXQUATERNION* D3DXQuaternionSquad(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
-*pQ1* \[ in\]
+*pQ1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> <dt>
 
-*PA* \[ in\]
+*pA* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> <dt>
 
-*PB* \[ in\]
+*pB* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> <dt>
 
-*computer* \[ in\]
+*pC* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> <dt>
 
 *t* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Parametro che indica la distanza di interpolazione tra i quaternioni.
+Parametro che indica la distanza da interpolare tra i quaternioni.
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Parametro che indica la distanza di interpolazione tra i quaternioni.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'interpolazione quadrangolare sferica.
+Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'interpolazione quadrangolare sferica.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione usa la sequenza di operazioni di interpolazione lineare sferica seguente:
+Questa funzione usa la sequenza seguente di operazioni di interpolazione lineare sferica:
 
 
 ```
@@ -116,9 +116,9 @@ Slerp(Slerp(pQ1, pC, t), Slerp(pA, pB, t), 2t(1 - t))
 
 
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXQuaternionSquad** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXQuaternionSquad** può essere usata come parametro per un'altra funzione.
 
-Per un esempio di interpolazione tra quaternioni, vedere l'esempio SkinnedMesh. È possibile ottenere questo esempio e ottenere informazioni su di esso da DirectX SDK. Per informazioni su DirectX SDK, vedere [dove è DirectX SDK?](../directx-sdk--august-2009-.md).
+Per un esempio di interpolazione tra quaternioni, vedere l'esempio SkinnedMesh. È possibile ottenere questo esempio e ottenere informazioni da DirectX SDK. Per informazioni su DirectX SDK, vedere [Dove si trova DirectX SDK?](../directx-sdk--august-2009-.md).
 
 Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
@@ -128,8 +128,8 @@ Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi in
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

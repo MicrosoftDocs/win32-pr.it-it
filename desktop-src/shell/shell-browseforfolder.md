@@ -1,6 +1,6 @@
 ---
-description: Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto cartella della cartella selezionata.
-title: Metodo Shell. BrowseForFolder (shldisp. h)
+description: "Metodo Shell.BrowseForFolder: crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto Folder della cartella selezionata."
+title: Metodo Shell.BrowseForFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4cc44e5a-3578-448b-9b19-1b71e1ae2cb9
-ms.openlocfilehash: 7e14dffbfb9ab3e18bd4d8e11ffaf4768ad53131
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: e5ec05ab09c7592e976085c230a2b359091fb819
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050260"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104369"
 ---
-# <a name="shellbrowseforfolder-method"></a>Shell. BrowseForFolder, metodo
+# <a name="shellbrowseforfolder-method"></a>Metodo Shell.BrowseForFolder
 
-Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto [**cartella**](folder.md) della cartella selezionata.
+Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto [**Cartella della cartella**](folder.md) selezionata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Shell.BrowseForFolder( _
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*Hwnd* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **Integer**
@@ -64,30 +64,30 @@ Handle per la finestra padre della finestra di dialogo. Il valore può essere ze
 
 </dd> <dt>
 
-*sTitle* \[ in\]
+*sTitle* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **stringa** che rappresenta il titolo visualizzato nella finestra di dialogo **Sfoglia** .
+Valore **String** che rappresenta il titolo visualizzato all'interno della **finestra di** dialogo Sfoglia.
 
 </dd> <dt>
 
-*iOptions* \[ in\]
+*iOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **Integer**
 
-Valore **intero** che contiene le opzioni per il metodo. Può essere zero o una combinazione dei valori elencati sotto il membro **ulFlags** della struttura [**BROWSEINFO**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) .
+Valore **Integer** che contiene le opzioni per il metodo. Può essere zero o una combinazione dei valori elencati nel membro **ulFlags** della [**struttura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
 
 </dd> <dt>
 
 *vRootFolder* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spostarsi più in alto nell'albero rispetto a questa cartella. Se questo valore non viene specificato, la cartella radice utilizzata nella finestra di dialogo è il desktop. Questo valore può essere una stringa che specifica il percorso della cartella o uno dei valori [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al suo posto.
+Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spostarsi più in alto nell'albero rispetto a questa cartella. Se questo valore non viene specificato, la cartella radice usata nella finestra di dialogo è il desktop. Questo valore può essere una stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
 </dd> </dl>
 
@@ -95,21 +95,21 @@ Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spost
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **cartella \* \***
+Tipo: **\* \* CARTELLA**
 
-Riferimento all'oggetto [**Folder**](folder.md) della cartella selezionata.
+Riferimento a un oggetto all'oggetto [**Folder della cartella**](folder.md) selezionata.
 
 ### <a name="vb"></a>VB
 
-Tipo: **cartella \* \***
+Tipo: **\* \* CARTELLA**
 
-Riferimento all'oggetto [**Folder**](folder.md) della cartella selezionata.
+Riferimento a un oggetto all'oggetto [**Folder della cartella**](folder.md) selezionata.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **BrowseForFolder** per visualizzare una finestra di esplorazione denominata "example" con radice nella cartella Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa BrowseForFolder** per visualizzare una finestra di esplorazione denominata "Example" radice nella cartella Windows. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -131,7 +131,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -183,11 +183,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

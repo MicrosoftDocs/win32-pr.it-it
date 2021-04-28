@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di configurazione dell'alimentazione. La sintassi seguente è semplificata dal codice MOF.
+description: "SystemConfig_V0_Power classe: questa classe è la classe del tipo di evento per gli eventi di configurazione dell'alimentazione. La sintassi seguente è semplificata dal codice MOF."
 ms.assetid: b3391435-dac0-4c48-b788-eb4d4a7aa635
-title: Classe SystemConfig_V0_Power
+title: SystemConfig_V0_Power classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,14 +20,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2e42af68ad12857d65d776b7a73794d2d13b2b48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab268e719374906e149dc9c1b733487f986e8308
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977466"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105939"
 ---
-# <a name="systemconfig_v0_power-class"></a>\_Classe di \_ alimentazione SystemConfig V0
+# <a name="systemconfig_v0_power-class"></a>Classe SystemConfig \_ V0 \_ Power
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione dell'alimentazione.
 
@@ -52,26 +52,26 @@ class SystemConfig_V0_Power : SystemConfig_V0
 
 ## <a name="members"></a>Members
 
-La classe di **\_ \_ alimentazione SystemConfig V0** presenta questi tipi di membri:
+La **classe SystemConfig \_ V0 \_ Power** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ Power V0 SystemConfig** ha queste proprietà.
+La **classe SystemConfig \_ V0 \_ Power** ha queste proprietà.
 
 <dl> <dt>
 
 Pad1
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6)
+Qualificatori: WmiDataId(6)
 </dt> </dl>
 
 Riservato.
@@ -81,13 +81,13 @@ Riservato.
 Pad2
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7)
+Qualificatori: WmiDataId(7)
 </dt> </dl>
 
 Riservato.
@@ -97,13 +97,13 @@ Riservato.
 Pad3
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (8)
+Qualificatori: WmiDataId(8)
 </dt> </dl>
 
 Riservato.
@@ -113,13 +113,13 @@ Riservato.
 s1
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 True indica che il sistema supporta lo stato di sospensione S1.
@@ -129,13 +129,13 @@ True indica che il sistema supporta lo stato di sospensione S1.
 s2
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 True indica che il sistema supporta lo stato di sospensione S2.
@@ -145,45 +145,45 @@ True indica che il sistema supporta lo stato di sospensione S2.
 s3
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
 True indica che il sistema supporta lo stato di sospensione S3.
 
 </dd> <dt>
 
-S4
+s4
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
 True indica che il sistema supporta lo stato di sospensione S4.
 
 </dd> <dt>
 
-S5
+s5
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5)
+Qualificatori: WmiDataId(5)
 </dt> </dl>
 
 True indica che il sistema supporta lo stato di sospensione S5.
@@ -197,7 +197,7 @@ True indica che il sistema supporta lo stato di sospensione S5.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 

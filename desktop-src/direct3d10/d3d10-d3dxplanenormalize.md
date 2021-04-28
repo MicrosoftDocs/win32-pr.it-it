@@ -1,7 +1,7 @@
 ---
-description: Normalizza i coefficienti del piano in modo che la normale del piano abbia la lunghezza dell'unità.
+description: 'Funzione D3DXPlaneNormalize (D3DX10Math.h): normalizza i coefficienti del piano in modo che la normale del piano abbia lunghezza unità.'
 ms.assetid: 52ae36a7-e37b-457a-9832-e62900a85bde
-title: Funzione D3DXPlaneNormalize (D3DX10Math. h)
+title: Funzione D3DXPlaneNormalize (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 44d5e9d810653b2cdae233dec803383c74563d08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8b3499297a008b0d8f5dc705080bbd1d5bbe3af4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323390"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103309"
 ---
-# <a name="d3dxplanenormalize-function-d3dx10mathh"></a>Funzione D3DXPlaneNormalize (D3DX10Math. h)
+# <a name="d3dxplanenormalize-function-d3dx10mathh"></a>Funzione D3DXPlaneNormalize (D3DX10Math.h)
 
-Normalizza i coefficienti del piano in modo che la normale del piano abbia la lunghezza dell'unità.
+Normalizza i coefficienti del piano in modo che la normale del piano abbia lunghezza unità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ D3DXPLANE* D3DXPlaneNormalize(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
-Puntatore a [**D3DXPLANE**](d3d10-d3dxplane.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXPLANE**](d3d10-d3dxplane.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PP* \[ in\]
+*pP* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](../direct3d9/d3dxplane.md) \***
@@ -67,9 +67,9 @@ Puntatore a una struttura D3DXPLANE che rappresenta la normale del piano.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione normalizza un piano in modo che \| a, b, c \| = = 1.
+Questa funzione normalizza un piano in modo che \| a,b,c \| == 1.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, questa funzione può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, questa funzione può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

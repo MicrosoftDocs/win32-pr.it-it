@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo EnumMediaTypes enumera i tipi di supporto preferiti del PIN. Questo metodo implementa il metodo IPin:: EnumMediaTypes.'
+description: 'Metodo CTransInPlaceInputPin.EnumMediaTypes: il metodo EnumMediaTypes enumera i tipi di supporti preferiti del pin. Questo metodo implementa il metodo IPin::EnumMediaTypes.'
 ms.assetid: 0c28b4b0-a45f-400f-a6d7-7668458f9642
-title: Metodo CTransInPlaceInputPin. EnumMediaTypes (Transip. h)
+title: Metodo CTransInPlaceInputPin.EnumMediaTypes (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ffa634fa695eb0007b49fc1c36c730c7fbde361b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f9e05d0e9db50cabc700da7b3803c1606efab78
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326201"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094759"
 ---
-# <a name="ctransinplaceinputpinenummediatypes-method"></a>CTransInPlaceInputPin. EnumMediaTypes, metodo
+# <a name="ctransinplaceinputpinenummediatypes-method"></a>Metodo CTransInPlaceInputPin.EnumMediaTypes
 
-Il `EnumMediaTypes` metodo enumera i tipi di supporto preferiti del PIN. Questo metodo implementa il metodo [**Ipin:: EnumMediaTypes**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) .
+Il `EnumMediaTypes` metodo enumera i tipi di supporti preferiti del pin. Questo metodo implementa il [**metodo IPin::EnumMediaTypes.**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,22 +45,22 @@ HRESULT EnumMediaTypes(
 *ppEnum* 
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) .
+Riceve un puntatore [**all'interfaccia IEnumMediaTypes.**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                           | Descrizione                                 |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>                         |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>         | Memoria insufficiente.<br/>             |
-| <dl> <dt>**\_puntatore E**</dt> </dl>             | Puntatore **null** .<br/>                |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il pin di output non è connesso.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                         |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Memoria insufficiente.<br/>             |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>             | **Puntatore NULL.**<br/>                |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il pin di output non è connesso.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce l'interfaccia **IEnumMediaTypes** dal pin di input downstream.
+Questo metodo restituisce **l'interfaccia IEnumMediaTypes** dal pin di input downstream.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ Questo metodo restituisce l'interfaccia **IEnumMediaTypes** dal pin di input dow
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

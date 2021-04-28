@@ -1,7 +1,7 @@
 ---
-description: Determina se l'utente corrente può avviare e arrestare il servizio denominato.
+description: "Metodo IShellDispatch2.CanStartStopService: determina se l'utente corrente può avviare e arrestare il servizio denominato."
 ms.assetid: cbb54ae9-02e6-4243-a782-e9f125c21c0d
-title: Metodo IShellDispatch2. CanStartStopService (shldisp. h)
+title: Metodo IShellDispatch2.CanStartStopService (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 92655c2c561284f00204826e1848a75f00f4a04d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 600cf7fafd556a9192c4b0de4089516bc6cca2a0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527330"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108117129"
 ---
-# <a name="ishelldispatch2canstartstopservice-method"></a>IShellDispatch2. CanStartStopService, metodo
+# <a name="ishelldispatch2canstartstopservice-method"></a>Metodo IShellDispatch2.CanStartStopService
 
 Determina se l'utente corrente può avviare e arrestare il servizio denominato.
 
@@ -49,12 +49,12 @@ IShellDispatch2.CanStartStopService( _
 
 <dl> <dt>
 
-*sServiceName* \[ in\]
+*sServiceName* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **String**
 
-**Stringa** che contiene il nome del servizio.
+Valore **String** contenente il nome del servizio.
 
 </dd> </dl>
 
@@ -62,27 +62,27 @@ Tipo: **stringa**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Restituisce _ *true** se l'utente è in grado di avviare e arrestare il servizio. in caso contrario, **false**.
+Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Restituisce _ *true** se l'utente è in grado di avviare e arrestare il servizio. in caso contrario, **false**.
+Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. CanStartStopService**](./shell-canstartstopservice.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.CanStartStopService.**](./shell-canstartstopservice.md)
 
 Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **CanStartStopService** per JScript e VBScript.
+Negli esempi seguenti viene illustrato l'utilizzo **di CanStartStopService** per JScript e VBScript.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -99,7 +99,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -125,11 +125,11 @@ VBScript
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

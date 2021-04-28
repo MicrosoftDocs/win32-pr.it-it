@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetIDsOfNames esegue il mapping di un set di nomi a un set di DISPID corrispondente.
+description: 'Metodo CMediaPosition.GetIDsOfNames: il metodo GetIDsOfNames esegue il mapping di un set di nomi a un set corrispondente di DISPID.'
 ms.assetid: 4d3780ff-905f-4166-86d4-32395090b5cb
-title: Metodo CMediaPosition. GetIDsOfNames (Ctlutil. h)
+title: Metodo CMediaPosition.GetIDsOfNames (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dc2c7eee4304bb32ac1af2759bc2f094aca1d592
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26a348e58fa84aa4134ce9f2ea756874b9ce2724
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332332"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095529"
 ---
-# <a name="cmediapositiongetidsofnames-method"></a>CMediaPosition. GetIDsOfNames, metodo
+# <a name="cmediapositiongetidsofnames-method"></a>Metodo CMediaPosition.GetIDsOfNames
 
-Il `GetIDsOfNames` metodo esegue il mapping di un set di nomi a un set di DISPID corrispondente.
+Il `GetIDsOfNames` metodo esegue il mapping di un set di nomi a un set corrispondente di DISPID.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,10 +46,10 @@ HRESULT GetIDsOfNames(
 
 <dl> <dt>
 
-*riid* 
+*Riid* 
 </dt> <dd>
 
-Riservato. Usare IID \_ null.
+Riservato. Usare IID \_ NULL.
 
 </dd> <dt>
 
@@ -60,38 +60,38 @@ Indirizzo di una matrice di stringhe di caratteri wide che contengono i nomi di 
 
 </dd> <dt>
 
-*CNAME* 
+*cNames* 
 </dt> <dd>
 
-Dimensione della matrice specificata dal parametro *rgszNames* .
+Dimensione della matrice specificata dal *parametro rgszNames.*
 
 </dd> <dt>
 
 *lcid* 
 </dt> <dd>
 
-Contesto delle impostazioni locali in cui interpretare i nomi. Può essere **null**.
+Contesto delle impostazioni locali in cui interpretare i nomi. Può essere **NULL.**
 
 </dd> <dt>
 
 *rgdispid* 
 </dt> <dd>
 
-Puntatore a una matrice che riceve i DISPID. Ogni elemento di riceve un identificatore che corrisponde a uno dei nomi passati nel parametro *rgszNames* .
+Puntatore a una matrice che riceve i DISPID. Ogni elemento di riceve un identificatore che corrisponde a uno dei nomi passati nel *parametro rgszNames.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                         | Descrizione                                         |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                | Esito positivo.<br/>                                 |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>       | Memoria insufficiente.<br/>                     |
-| <dl> <dt>**DISP \_ E \_ unknowname**</dt> </dl> | Uno o più nomi non sono noti.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Operazione completata.<br/>                                 |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>       | Memoria insufficiente.<br/>                     |
+| <dl> <dt>**DISP \_ E \_ UNKNOWNNAME**</dt> </dl> | Uno o più nomi non erano noti.<br/> |
 
 
 
@@ -103,8 +103,8 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

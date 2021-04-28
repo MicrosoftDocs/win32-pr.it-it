@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_INITMENUPOPUP (winuser. h)
-description: Inviato quando un menu a discesa o un sottomenu sta per diventare attivo. Questo consente a un'applicazione di modificare il menu prima che venga visualizzato, senza modificare l'intero menu.
+title: WM_INITMENUPOPUP messaggio (Winuser.h)
+description: "WM_INITMENUPOPUP messaggio: inviato quando un menu a discesa o un sottomenu sta per diventare attivo. In questo modo un'applicazione può modificare il menu prima che venga visualizzato, senza modificare l'intero menu."
 ms.assetid: 08ae1a78-5e68-488c-9b77-ee42044ca3ab
 keywords:
-- Menu del messaggio WM_INITMENUPOPUP e altre risorse
+- WM_INITMENUPOPUP menu e altre risorse del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e02bf0f9b8e196c27990cc1bc839daed4c92f8c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d850547d57596dd36b36b941d1782c2aee1f5b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048080"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092519"
 ---
-# <a name="wm_initmenupopup-message"></a>\_Messaggio INITMENUPOPUP WM
+# <a name="wm_initmenupopup-message"></a>Messaggio \_ WM INITMENUPOPUP
 
-Inviato quando un menu a discesa o un sottomenu sta per diventare attivo. Questo consente a un'applicazione di modificare il menu prima che venga visualizzato, senza modificare l'intero menu.
+Inviato quando un menu a discesa o un sottomenu sta per diventare attivo. In questo modo un'applicazione può modificare il menu prima che venga visualizzato, senza modificare l'intero menu.
 
 
 ```C++
@@ -46,15 +46,15 @@ Handle per il menu a discesa o il sottomenu.
 *lParam* 
 </dt> <dd>
 
-La parola di ordine inferiore specifica la posizione relativa in base zero della voce di menu che apre il menu a discesa o il sottomenu.
+La parola meno ordinata specifica la posizione relativa in base zero della voce di menu che apre il menu a discesa o il sottomenu.
 
-La parola più ordinata indica se il menu a discesa è il menu finestra. Se il menu è il menu finestra, questo parametro è **true**; in caso contrario, è **false**.
+La parola più importante indica se il menu a discesa è il menu della finestra. Se il menu è il menu della finestra, questo parametro è **TRUE**; in caso contrario, è **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Se un'applicazione elabora il messaggio, deve restituire zero.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Se un'applicazione elabora il messaggio, deve restituire zero.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_INITMENU WM**](wm-initmenu.md)
+[**WM \_ INITMENU**](wm-initmenu.md)
 </dt> <dt>
 
 **Informazioni concettuali**

@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETUNICODEFORMAT (COMmctrl. h)
-description: Recupera il flag del formato carattere Unicode per il controllo.
+title: TB_GETUNICODEFORMAT messaggio (Commctrl.h)
+description: 'TB_GETUNICODEFORMAT messaggio: recupera il flag di formato carattere Unicode per il controllo.'
 ms.assetid: aadce646-daf1-4f1e-9171-2aeac12d3484
 keywords:
-- Controlli di Windows Message TB_GETUNICODEFORMAT
+- TB_GETUNICODEFORMAT messaggio Controlli Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a44b1f65647953702deae5bee6cdd9acc8186e3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4beb5a5ff0b71dd76c85db2788d9dc91aa9f4957
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741810"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106789"
 ---
-# <a name="tb_getunicodeformat-message"></a>TB \_ GETUNICODEFORMAT messaggio
+# <a name="tb_getunicodeformat-message"></a>TB \_ GETUNICODEFORMAT MESSAGE
 
-Recupera il flag del formato carattere Unicode per il controllo.
+Recupera il flag di formato carattere Unicode per il controllo.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,11 +37,11 @@ Recupera il flag del formato carattere Unicode per il controllo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il flag di formato Unicode per il controllo. Se questo valore è diverso da zero, il controllo utilizza caratteri Unicode. Se questo valore è zero, il controllo utilizza caratteri ANSI.
+Restituisce il flag di formato Unicode per il controllo. Se questo valore è diverso da zero, il controllo usa caratteri Unicode. Se questo valore è zero, il controllo usa caratteri ANSI.
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) .
+Per una descrizione di questo messaggio, vedere le osservazioni per [**CCM \_ GETUNICODEFORMAT.**](ccm-getunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

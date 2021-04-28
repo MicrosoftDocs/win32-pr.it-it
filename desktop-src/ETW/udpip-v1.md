@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi UDP/IP. La sintassi seguente è semplificata dal codice MOF.
+description: 'UdpIp_V1 classe: questa classe è la classe padre per gli eventi UDP/IP. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 31672a5a-05b2-4382-b793-7a793d985951
-title: Classe UdpIp_V1
+title: UdpIp_V1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4c57caf9b6f5df963723ee1999e7068b2b2fe5ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5035cd764c1b3a7eb0943622897d97684ec8bd61
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977103"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105399"
 ---
-# <a name="udpip_v1-class"></a>\_Classe UdpIp V1
+# <a name="udpip_v1-class"></a>Classe UdpIp \_ V1
 
 Questa classe è la classe padre per gli eventi UDP/IP.
 
@@ -36,11 +36,11 @@ class UdpIp_V1 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe **UdpIp \_ V1** non definisce membri.
+La **classe UdpIp \_ V1** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-**Windows Server 2003:** Contiene il qualificatore della classe EventVersion (1).
+**Windows Server 2003:** Contiene il qualificatore di classe EventVersion(1).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ La classe **UdpIp \_ V1** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 
@@ -57,7 +57,7 @@ La classe **UdpIp \_ V1** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**UdpIp**](udpip.md)

@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETHOTITEM (COMmctrl. h)
-description: Imposta l'elemento attivo in una barra degli strumenti.
+title: TB_SETHOTITEM messaggio (Commctrl.h)
+description: "TB_SETHOTITEM messaggio: imposta l'elemento di accesso rapido in una barra degli strumenti."
 ms.assetid: 15005741-29d2-48c6-b5f0-15178a49b917
 keywords:
-- Controlli di Windows Message TB_SETHOTITEM
+- TB_SETHOTITEM messaggio Controlli Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c477a445cb6aae78dd5d31e8d23b8ec3be8c61ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a90e5b38675d33a361857c4303fa2a89f22cff29
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874209"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104179"
 ---
-# <a name="tb_sethotitem-message"></a>TB \_ SETHOTITEM messaggio
+# <a name="tb_sethotitem-message"></a>TB \_ SETHOTITEM message
 
-Imposta l'elemento attivo in una barra degli strumenti.
+Imposta l'elemento di accesso rapido in una barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta l'elemento attivo in una barra degli strumenti.
 *wParam* 
 </dt> <dd>
 
-Indice dell'elemento che verrà reso attivo. Se questo valore è-1, nessuno degli elementi sarà attivo.
+Indice dell'elemento che verrà reso a caldo. Se questo valore è -1, nessuno degli elementi sarà a caldo.
 
 </dd> <dt>
 
@@ -41,11 +41,11 @@ Indice dell'elemento che verrà reso attivo. Se questo valore è-1, nessuno degl
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice dell'elemento attivo precedente oppure-1 se non è presente alcun elemento attivo.
+Restituisce l'indice dell'elemento a caldo precedente oppure -1 se non è presente alcun elemento a caldo.
 
 ## <a name="remarks"></a>Commenti
 
-Il comportamento di questo messaggio non è definito per le barre degli strumenti che non hanno lo stile [**TBSTYLE \_ Flat**](toolbar-control-and-button-styles.md) .
+Il comportamento di questo messaggio non è definito per le barre degli strumenti che non hanno lo [**stile TBSTYLE \_ FLAT.**](toolbar-control-and-button-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il comportamento di questo messaggio non è definito per le barre degli strument
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

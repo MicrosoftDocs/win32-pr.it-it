@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di configurazione video.
+description: 'SystemConfig_V0_Video: questa classe è la classe del tipo di evento per gli eventi di configurazione video.'
 ms.assetid: 06aab3a3-a55e-4eb8-897a-2ad8349e5900
-title: Classe SystemConfig_V0_Video
+title: SystemConfig_V0_Video classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,14 +23,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b840e3c06e74f8acbd1e43550559385e78c9a638
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94fb9e50344cfbdde4be67815b80e4074ab1a878
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978874"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105919"
 ---
-# <a name="systemconfig_v0_video-class"></a>\_ \_ Classe video SystemConfig V0
+# <a name="systemconfig_v0_video-class"></a>Classe SystemConfig \_ V0 \_ Video
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione video.
 
@@ -58,20 +58,20 @@ class SystemConfig_V0_Video : SystemConfig_V0
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ video SystemConfig V0** presenta questi tipi di membri:
+La **classe SystemConfig \_ V0 \_ Video** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ video SystemConfig V0** presenta queste proprietà.
+La **classe SystemConfig \_ V0 \_ Video** ha queste proprietà.
 
 <dl> <dt>
 
 **AdapterString**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -80,14 +80,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (8), **Max** (256)
 </dt> </dl>
 
-Nome o Descrizione dell'adapter.
+Nome o descrizione dell'adattatore.
 
 </dd> <dt>
 
 **BiosString**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -96,14 +96,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (9), **Max** (256)
 </dt> </dl>
 
-Nome BIOS dell'adapter.
+Nome BIOS della scheda.
 
 </dd> <dt>
 
 **BitsPerPixel**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -119,7 +119,7 @@ Numero di bit utilizzati per visualizzare ogni pixel.
 **ChipType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -132,10 +132,10 @@ Nome del chip dell'adapter.
 
 </dd> <dt>
 
-**DACType**
+**Dactype**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -144,14 +144,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (7), **Max** (256)
 </dt> </dl>
 
-Nome del chip del convertitore da digitale a analogico (DAC) dell'adapter.
+Nome del chip del convertitore da digitale ad analogico (DAC) dell'adapter.
 
 </dd> <dt>
 
-**DeviceId**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -167,7 +167,7 @@ Indirizzo o altre informazioni di identificazione per assegnare un nome univoco 
 **MemorySize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -183,7 +183,7 @@ Quantità massima di memoria supportata, in byte.
 **StateFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -192,18 +192,18 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (11)
 </dt> </dl>
 
-Flag di stato del dispositivo. Può trattarsi di una combinazione ragionevole dei seguenti elementi.
+Flag di stato del dispositivo. Può essere qualsiasi combinazione ragionevole di quanto segue.
 
 
 
 | Valore                                                                                                                                                                                                                                                                                        | Significato                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DISPLAY_DEVICE_ATTACHED_TO_DESKTOP"></span><span id="display_device_attached_to_desktop"></span><dl> <dt>**Visualizza \_ DISPOSITIVO \_ collegato \_ al \_ Desktop**</dt> <dt>1 (0x1)</dt> </dl> | Il dispositivo fa parte del desktop.<br/>                                                                                                                                                                                |
-| <span id="DISPLAY_DEVICE_MIRRORING_DRIVER"></span><span id="display_device_mirroring_driver"></span><dl> <dt>**Visualizza \_ \_ \_ Driver di mirroring del dispositivo**</dt> <dt>8 (0x8)</dt> </dl>           | Rappresenta uno pseudo dispositivo utilizzato per eseguire il mirroring del disegno dell'applicazione per la connessione a un computer remoto o a altri scopi. Un pseudo monitor invisibile è associato a questo dispositivo. Ad esempio, NetMeeting lo utilizza.<br/> |
-| <span id="DISPLAY_DEVICE_MODESPRUNED"></span><span id="display_device_modespruned"></span><dl> <dt>**Visualizza \_ DEVICE \_ MODESPRUNED**</dt> <dt>134217728 (0x8000000)</dt> </dl>             | Il dispositivo dispone di più modalità di visualizzazione rispetto ai dispositivi di output supportati.<br/>                                                                                                                                                |
-| <span id="DISPLAY_DEVICE_PRIMARY_DEVICE"></span><span id="display_device_primary_device"></span><dl> <dt>**Visualizza \_ Dispositivo \_ primario \_**</dt> <dt>4 (0x4)</dt> </dl>                 | Il desktop principale è sul dispositivo. Per un sistema con una singola scheda di visualizzazione, questo è sempre impostato. Per un sistema con più schede di visualizzazione, questo set può essere presente solo in un dispositivo.<br/>                                   |
-| <span id="DISPLAY_DEVICE_REMOVABLE"></span><span id="display_device_removable"></span><dl> <dt>**Visualizza \_ DISPOSITIVO \_ rimovibile**</dt> <dt>32 (0x20)</dt> </dl>                               | Il dispositivo è rimovibile. non può essere lo schermo principale.<br/>                                                                                                                                                        |
-| <span id="DISPLAY_DEVICE_VGA_COMPATIBLE"></span><span id="display_device_vga_compatible"></span><dl> <dt>**Visualizza \_ DISPOSITIVO \_ \_ compatibile con VGA**</dt> <dt>16 (0x10)</dt> </dl>               | Il dispositivo è compatibile con VGA.<br/>                                                                                                                                                                                     |
+| <span id="DISPLAY_DEVICE_ATTACHED_TO_DESKTOP"></span><span id="display_device_attached_to_desktop"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ COLLEGATO \_ AL \_ DESKTOP**</dt> <dt>1 (0x1)</dt> </dl> | Il dispositivo fa parte del desktop.<br/>                                                                                                                                                                                |
+| <span id="DISPLAY_DEVICE_MIRRORING_DRIVER"></span><span id="display_device_mirroring_driver"></span><dl> <dt>**VISUALIZZAZIONE \_ \_DRIVER MIRRORING DEL \_ DISPOSITIVO**</dt> <dt>8 (0x8)</dt> </dl>           | Rappresenta una pseudo-periferica utilizzata per eseguire il mirroring del disegno dell'applicazione per la connessione a un computer remoto o ad altri scopi. A questo dispositivo è associato uno pseudo monitor invisibile. Ad esempio, Viene utilizzato da NetMeeting.<br/> |
+| <span id="DISPLAY_DEVICE_MODESPRUNED"></span><span id="display_device_modespruned"></span><dl> <dt>**VISUALIZZAZIONE \_ DEVICE \_ MODESPRUNED**</dt> <dt>134217728 (0x8000000)</dt> </dl>             | Il dispositivo ha più modalità di visualizzazione di quelle supportate dai dispositivi di output.<br/>                                                                                                                                                |
+| <span id="DISPLAY_DEVICE_PRIMARY_DEVICE"></span><span id="display_device_primary_device"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ PRIMARIO \_ DISPOSITIVO**</dt> <dt>4 (0x4)</dt> </dl>                 | Il desktop primario si trova nel dispositivo. Per un sistema con una singola scheda video, questa opzione è sempre impostata. Per un sistema con più schede video, questo set può essere impostato su un solo dispositivo.<br/>                                   |
+| <span id="DISPLAY_DEVICE_REMOVABLE"></span><span id="display_device_removable"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ RIMOVIBILE**</dt> <dt>32 (0x20)</dt> </dl>                               | Il dispositivo è rimovibile. non può essere la visualizzazione principale.<br/>                                                                                                                                                        |
+| <span id="DISPLAY_DEVICE_VGA_COMPATIBLE"></span><span id="display_device_vga_compatible"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ COMPATIBILE \_ VGA**</dt> <dt>16 (0x10)</dt> </dl>               | Il dispositivo è compatibile con VGA.<br/>                                                                                                                                                                                     |
 
 
 
@@ -214,7 +214,7 @@ Flag di stato del dispositivo. Può trattarsi di una combinazione ragionevole de
 **VRefresh**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -223,14 +223,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (5)
 </dt> </dl>
 
-Frequenza di aggiornamento corrente, in Hertz.
+Frequenza di aggiornamento corrente, in hertz.
 
 </dd> <dt>
 
 **XResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -246,7 +246,7 @@ Numero corrente di pixel orizzontali.
 **YResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -266,7 +266,7 @@ Numero corrente di pixel verticali.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 

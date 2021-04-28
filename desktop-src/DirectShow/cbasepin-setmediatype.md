@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetMediaType imposta il tipo di supporto per la connessione.
+description: 'Metodo CBasePin.SetMediaType: il metodo SetMediaType imposta il tipo di supporto per la connessione.'
 ms.assetid: db32b33b-df71-4f46-b53f-d7e647f5f559
-title: Metodo CBasePin. SetMediaType (Amfilter. h)
+title: Metodo CBasePin.SetMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 07ac736558cea12a16c695cf109c3d6283ce4a13
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b61b6179aa6364ebddd940b8853e22d628463e56
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330312"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095988"
 ---
-# <a name="cbasepinsetmediatype-method"></a>CBasePin. SetMediaType, metodo
+# <a name="cbasepinsetmediatype-method"></a>Metodo CBasePin.SetMediaType
 
 Il `SetMediaType` metodo imposta il tipo di supporto per la connessione.
 
@@ -42,22 +42,22 @@ virtual HRESULT SetMediaType(
 
 <dl> <dt>
 
-*PMT* 
+*Pmt* 
 </dt> <dd>
 
-Puntatore a un oggetto [**CMediaType**](cmediatype.md) che specifica il tipo di supporto.
+Puntatore a un [**oggetto CMediaType**](cmediatype.md) che specifica il tipo di supporto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo stabilisce il formato per una connessione pin. Prima di chiamare questo metodo, il pin chiama il metodo [**CBasePin:: CheckMediaType**](cbasepin-checkmediatype.md) per determinare se il tipo di supporto è accettabile. Pertanto, si presuppone che il parametro *PMT* sia un tipo di supporto accettabile.
+Questo metodo stabilisce il formato per una connessione pin. Prima di chiamare questo metodo, il pin chiama il [**metodo CBasePin::CheckMediaType**](cbasepin-checkmediatype.md) per determinare se il tipo di supporto è accettabile. Si presuppone pertanto *che il parametro pmt* sia un tipo di supporto accettabile.
 
-Nella classe di base, questo metodo imposta la variabile membro [**CBasePin:: m \_ mt**](cbasepin-m-mt.md) e restituisce \_ OK. Una classe derivata può eseguire l'override di questo metodo se è necessaria una notifica quando è impostato il tipo di supporto.
+Nella classe di base questo metodo imposta la variabile membro [**CBasePin::m \_ mt**](cbasepin-m-mt.md) e restituisce S \_ OK. Una classe derivata può eseguire l'override di questo metodo se richiede una notifica quando viene impostato il tipo di supporto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Nella classe di base, questo metodo imposta la variabile membro [**CBasePin:: m 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

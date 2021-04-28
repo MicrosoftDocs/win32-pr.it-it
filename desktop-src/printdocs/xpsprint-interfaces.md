@@ -1,23 +1,23 @@
 ---
-description: .
+description: Interfacce DELL'API di stampa XPS
 ms.assetid: f575109e-e9c4-4db5-945c-7c96b6b5d613
-title: Interfacce API di stampa XPS
+title: Interfacce DELL'API di stampa XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 828e999417354678d77ad1de8c29beb5956f7762
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47cd01c169c82a9e3210f281ec6c44fa206c40b5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755215"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105189"
 ---
-# <a name="xps-print-api-interfaces"></a>Interfacce API di stampa XPS
+# <a name="xps-print-api-interfaces"></a>Interfacce DELL'API di stampa XPS
 
-\[Le interfacce descritte in questa sezione sono deprecate. Le applicazioni client devono invece usare l' [API del pacchetto di stampa del documento](./tailored-app-printing-api.md) .\]
+\[Le interfacce descritte in questa sezione sono deprecate. Le applicazioni client devono invece usare [l'API print document package.](./tailored-app-printing-api.md)\]
 
-\[IXpsPrintJob non è supportato e può essere modificato o non disponibile in futuro. \]
+\[IXpsPrintJob non è supportato e potrebbe essere modificato o non disponibile in futuro. \]
 
-\[IXpsPrintJobStream non è supportato e può essere modificato o non disponibile in futuro. \]
+\[IXpsPrintJobStream non è supportato e potrebbe essere modificato o non disponibile in futuro. \]
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -25,7 +25,7 @@ ms.locfileid: "103755215"
 
 | Interfaccia                                                   | Descrizione                                                                               |
 |-------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [**IXpsPrintJob**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjob)<br/>             | Consente di accedere a un processo di stampa attualmente in corso.<br/>                  |
+| [**IXpsPrintJob**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjob)<br/>             | Fornisce l'accesso a un processo di stampa attualmente in corso.<br/>                  |
 | [**IXpsPrintJobStream**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjobstream)<br/> | Interfaccia di flusso di sola scrittura in cui un'applicazione scrive i dati del processo di stampa.<br/> |
 
 
