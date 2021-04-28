@@ -1,7 +1,7 @@
 ---
-description: Consente di visualizzare la finestra di dialogo arresta Windows. Equivale a fare clic sul menu Start e selezionare Arresta.
+description: 'Metodo IShellDispatch.ShutdownWindows: visualizza la finestra di dialogo Arresta Windows. Questo è lo stesso che si fa clic sul menu Start e si seleziona Arresta.'
 ms.assetid: 3C4F6579-6398-4af4-8911-FE22555B0ABC
-title: Metodo IShellDispatch. ShutdownWindows (shldisp. h)
+title: Metodo IShellDispatch.ShutdownWindows (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9c111e1b740857337953cdcdf81735a8c0568ba5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5146e17d17ba0f082ad2d80f91ae05c176cf44ed
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993840"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100469"
 ---
-# <a name="ishelldispatchshutdownwindows-method"></a><span data-ttu-id="cdc2a-104">IShellDispatch. ShutdownWindows, metodo</span><span class="sxs-lookup"><span data-stu-id="cdc2a-104">IShellDispatch.ShutdownWindows method</span></span>
+# <a name="ishelldispatchshutdownwindows-method"></a><span data-ttu-id="5ec19-104">Metodo IShellDispatch.ShutdownWindows</span><span class="sxs-lookup"><span data-stu-id="5ec19-104">IShellDispatch.ShutdownWindows method</span></span>
 
-<span data-ttu-id="cdc2a-105">Consente di visualizzare la finestra di dialogo **arresta Windows** .</span><span class="sxs-lookup"><span data-stu-id="cdc2a-105">Displays the **Shut Down Windows** dialog box.</span></span> <span data-ttu-id="cdc2a-106">Equivale a fare clic sul menu **Start** e selezionare **Arresta**.</span><span class="sxs-lookup"><span data-stu-id="cdc2a-106">This is the same as clicking the **Start** menu and selecting **Shut Down**.</span></span>
+<span data-ttu-id="5ec19-105">Visualizza la **finestra di dialogo Arresta** Windows.</span><span class="sxs-lookup"><span data-stu-id="5ec19-105">Displays the **Shut Down Windows** dialog box.</span></span> <span data-ttu-id="5ec19-106">Questa operazione è identica a quando si fa clic sul menu **Start** e si **sceglie Arresta**.</span><span class="sxs-lookup"><span data-stu-id="5ec19-106">This is the same as clicking the **Start** menu and selecting **Shut Down**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="cdc2a-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="cdc2a-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5ec19-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="5ec19-107">Syntax</span></span>
 
 
 ```JScript
@@ -41,29 +41,29 @@ IShellDispatch.ShutdownWindows()
 
 
 
-## <a name="parameters"></a><span data-ttu-id="cdc2a-108">Parametri</span><span class="sxs-lookup"><span data-stu-id="cdc2a-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5ec19-108">Parametri</span><span class="sxs-lookup"><span data-stu-id="5ec19-108">Parameters</span></span>
 
-<span data-ttu-id="cdc2a-109">Questo metodo non presenta parametri.</span><span class="sxs-lookup"><span data-stu-id="cdc2a-109">This method has no parameters.</span></span>
+<span data-ttu-id="5ec19-109">Questo metodo non presenta parametri.</span><span class="sxs-lookup"><span data-stu-id="5ec19-109">This method has no parameters.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="cdc2a-110">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="cdc2a-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5ec19-110">Valore restituito</span><span class="sxs-lookup"><span data-stu-id="5ec19-110">Return value</span></span>
 
-### <a name="jscript"></a><span data-ttu-id="cdc2a-111">JScript</span><span class="sxs-lookup"><span data-stu-id="cdc2a-111">JScript</span></span>
+### <a name="jscript"></a><span data-ttu-id="5ec19-111">JScript</span><span class="sxs-lookup"><span data-stu-id="5ec19-111">JScript</span></span>
 
-<span data-ttu-id="cdc2a-112">Questo metodo non restituisce valori.</span><span class="sxs-lookup"><span data-stu-id="cdc2a-112">This method does not return a value.</span></span>
+<span data-ttu-id="5ec19-112">Questo metodo non restituisce valori.</span><span class="sxs-lookup"><span data-stu-id="5ec19-112">This method does not return a value.</span></span>
 
-### <a name="vb"></a><span data-ttu-id="cdc2a-113">VB</span><span class="sxs-lookup"><span data-stu-id="cdc2a-113">VB</span></span>
+### <a name="vb"></a><span data-ttu-id="5ec19-113">VB</span><span class="sxs-lookup"><span data-stu-id="5ec19-113">VB</span></span>
 
-<span data-ttu-id="cdc2a-114">Questo metodo non restituisce valori.</span><span class="sxs-lookup"><span data-stu-id="cdc2a-114">This method does not return a value.</span></span>
+<span data-ttu-id="5ec19-114">Questo metodo non restituisce valori.</span><span class="sxs-lookup"><span data-stu-id="5ec19-114">This method does not return a value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="cdc2a-115">Commenti</span><span class="sxs-lookup"><span data-stu-id="cdc2a-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5ec19-115">Commenti</span><span class="sxs-lookup"><span data-stu-id="5ec19-115">Remarks</span></span>
 
-<span data-ttu-id="cdc2a-116">Questo metodo viene implementato e accessibile tramite il metodo [**Shell. ShutdownWindows**](shell-shutdownwindows.md) .</span><span class="sxs-lookup"><span data-stu-id="cdc2a-116">This method is implemented and accessed through the [**Shell.ShutdownWindows**](shell-shutdownwindows.md) method.</span></span>
+<span data-ttu-id="5ec19-116">Questo metodo viene implementato e accessibile tramite il [**metodo Shell.ShutdownWindows.**](shell-shutdownwindows.md)</span><span class="sxs-lookup"><span data-stu-id="5ec19-116">This method is implemented and accessed through the [**Shell.ShutdownWindows**](shell-shutdownwindows.md) method.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cdc2a-117">Esempio</span><span class="sxs-lookup"><span data-stu-id="cdc2a-117">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5ec19-117">Esempio</span><span class="sxs-lookup"><span data-stu-id="5ec19-117">Examples</span></span>
 
-<span data-ttu-id="cdc2a-118">Nell'esempio seguente viene illustrato l'utilizzo di **ShutdownWindows** in JScript, VBScript e Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="cdc2a-118">The following example shows the use of **ShutdownWindows** in JScript, VBScript, and Visual Basic.</span></span>
+<span data-ttu-id="5ec19-118">L'esempio seguente illustra l'uso **di ShutdownWindows** in JScript, VBScript e Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="5ec19-118">The following example shows the use of **ShutdownWindows** in JScript, VBScript, and Visual Basic.</span></span>
 
-<span data-ttu-id="cdc2a-119">JScript</span><span class="sxs-lookup"><span data-stu-id="cdc2a-119">JScript:</span></span>
+<span data-ttu-id="5ec19-119">Jscript:</span><span class="sxs-lookup"><span data-stu-id="5ec19-119">JScript:</span></span>
 
 
 ```JScript
@@ -79,7 +79,7 @@ IShellDispatch.ShutdownWindows()
 
 
 
-<span data-ttu-id="cdc2a-120">VBScript</span><span class="sxs-lookup"><span data-stu-id="cdc2a-120">VBScript:</span></span>
+<span data-ttu-id="5ec19-120">Vbscript:</span><span class="sxs-lookup"><span data-stu-id="5ec19-120">VBScript:</span></span>
 
 
 ```VB
@@ -97,7 +97,7 @@ IShellDispatch.ShutdownWindows()
 
 
 
-<span data-ttu-id="cdc2a-121">Visual Basic:</span><span class="sxs-lookup"><span data-stu-id="cdc2a-121">Visual Basic:</span></span>
+<span data-ttu-id="5ec19-121">Visual Basic:</span><span class="sxs-lookup"><span data-stu-id="5ec19-121">Visual Basic:</span></span>
 
 
 ```VB
@@ -113,17 +113,17 @@ End Sub
 
 
 
-## <a name="requirements"></a><span data-ttu-id="cdc2a-122">Requisiti</span><span class="sxs-lookup"><span data-stu-id="cdc2a-122">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5ec19-122">Requisiti</span><span class="sxs-lookup"><span data-stu-id="5ec19-122">Requirements</span></span>
 
 
 
-| <span data-ttu-id="cdc2a-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="cdc2a-123">Requirement</span></span> | <span data-ttu-id="cdc2a-124">Valore</span><span class="sxs-lookup"><span data-stu-id="cdc2a-124">Value</span></span> |
+| <span data-ttu-id="5ec19-123">Requisito</span><span class="sxs-lookup"><span data-stu-id="5ec19-123">Requirement</span></span> | <span data-ttu-id="5ec19-124">Valore</span><span class="sxs-lookup"><span data-stu-id="5ec19-124">Value</span></span> |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="cdc2a-125">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="cdc2a-125">Minimum supported client</span></span><br/> | <span data-ttu-id="cdc2a-126">Windows 2000 Professional, \[ solo app desktop Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="cdc2a-126">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
-| <span data-ttu-id="cdc2a-127">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="cdc2a-127">Minimum supported server</span></span><br/> | <span data-ttu-id="cdc2a-128">Windows 2000 Server \[solo app desktop\]</span><span class="sxs-lookup"><span data-stu-id="cdc2a-128">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
-| <span data-ttu-id="cdc2a-129">Intestazione</span><span class="sxs-lookup"><span data-stu-id="cdc2a-129">Header</span></span><br/>                   | <dl> <span data-ttu-id="cdc2a-130"><dt>Shldisp. h</dt></span><span class="sxs-lookup"><span data-stu-id="cdc2a-130"><dt>Shldisp.h</dt></span></span> </dl>                           |
-| <span data-ttu-id="cdc2a-131">IDL</span><span class="sxs-lookup"><span data-stu-id="cdc2a-131">IDL</span></span><br/>                      | <dl> <span data-ttu-id="cdc2a-132"><dt>Shldisp. idl</dt></span><span class="sxs-lookup"><span data-stu-id="cdc2a-132"><dt>Shldisp.idl</dt></span></span> </dl>                         |
-| <span data-ttu-id="cdc2a-133">DLL</span><span class="sxs-lookup"><span data-stu-id="cdc2a-133">DLL</span></span><br/>                      | <dl> <span data-ttu-id="cdc2a-134"><dt>Shell32.dll (versione 4,71 o successiva)</dt></span><span class="sxs-lookup"><span data-stu-id="cdc2a-134"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
+| <span data-ttu-id="5ec19-125">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="5ec19-125">Minimum supported client</span></span><br/> | <span data-ttu-id="5ec19-126">Solo app desktop windows 2000 Professional e Windows XP \[\]</span><span class="sxs-lookup"><span data-stu-id="5ec19-126">Windows 2000 Professional, Windows XP \[desktop apps only\]</span></span><br/>                                         |
+| <span data-ttu-id="5ec19-127">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="5ec19-127">Minimum supported server</span></span><br/> | <span data-ttu-id="5ec19-128">Windows 2000 Server \[solo app desktop\]</span><span class="sxs-lookup"><span data-stu-id="5ec19-128">Windows 2000 Server \[desktop apps only\]</span></span><br/>                                                           |
+| <span data-ttu-id="5ec19-129">Intestazione</span><span class="sxs-lookup"><span data-stu-id="5ec19-129">Header</span></span><br/>                   | <dl> <span data-ttu-id="5ec19-130"><dt>Shldisp.h</dt></span><span class="sxs-lookup"><span data-stu-id="5ec19-130"><dt>Shldisp.h</dt></span></span> </dl>                           |
+| <span data-ttu-id="5ec19-131">Idl</span><span class="sxs-lookup"><span data-stu-id="5ec19-131">IDL</span></span><br/>                      | <dl> <span data-ttu-id="5ec19-132"><dt>Shldisp.idl</dt></span><span class="sxs-lookup"><span data-stu-id="5ec19-132"><dt>Shldisp.idl</dt></span></span> </dl>                         |
+| <span data-ttu-id="5ec19-133">DLL</span><span class="sxs-lookup"><span data-stu-id="5ec19-133">DLL</span></span><br/>                      | <dl> <span data-ttu-id="5ec19-134"><dt>Shell32.dll (versione 4.71 o successiva)</dt></span><span class="sxs-lookup"><span data-stu-id="5ec19-134"><dt>Shell32.dll (version 4.71 or later)</dt></span></span> </dl> |
 
 
 
