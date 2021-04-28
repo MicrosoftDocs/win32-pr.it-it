@@ -1,7 +1,7 @@
 ---
-description: Restituisce la matrice di trasponente di una matrice.
+description: 'Funzione D3DXMatrixTranspose (D3DX10Math.h): restituisce il trasposto di matrice di una matrice.'
 ms.assetid: 934b17cc-39c4-425c-839b-69e080f0efd7
-title: Funzione D3DXMatrixTranspose (D3DX10Math. h)
+title: Funzione D3DXMatrixTranspose (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0ecc93a560e15b8f0abe4337b866efc292c9355e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e20fd8a29ba3f9adec7134a011f8f470c60f7011
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323395"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108859"
 ---
-# <a name="d3dxmatrixtranspose-function-d3dx10mathh"></a>Funzione D3DXMatrixTranspose (D3DX10Math. h)
+# <a name="d3dxmatrixtranspose-function-d3dx10mathh"></a>Funzione D3DXMatrixTranspose (D3DX10Math.h)
 
-Restituisce la matrice di trasponente di una matrice.
+Restituisce la trasposizione della matrice di una matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ D3DXMATRIX* D3DXMatrixTranspose(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -63,11 +63,11 @@ Puntatore alla struttura D3DXMATRIX di origine.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura D3DXMATRIX che rappresenta la matrice di trasporre la matrice.
+Puntatore alla struttura D3DXMATRIX che rappresenta la trasposizione della matrice.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixTranspose può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixTranspose può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

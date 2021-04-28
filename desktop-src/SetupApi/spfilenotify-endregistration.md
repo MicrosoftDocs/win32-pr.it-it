@@ -1,21 +1,21 @@
 ---
-description: Quando si usa la direttiva RegisterDlls INF per registrare autonomamente le dll, i chiamanti di SetupInstallFromInfSection possono ricevere notifiche su ogni file durante la registrazione o l'annullamento della registrazione.
+description: "SPFILENOTIFY_ENDREGISTRATION messaggio: quando si usa la direttiva REGISTERDlls INF per la registrazione automatica delle DLL, i chiamanti di SetupInstallFromInfSection possono ricevere notifiche su ogni file durante la registrazione o l'annullamento della registrazione."
 ms.assetid: 6304f406-c9f8-41cc-a7b7-5ef606f62efb
-title: Messaggio SPFILENOTIFY_ENDREGISTRATION (Setupapi. h)
+title: SPFILENOTIFY_ENDREGISTRATION messaggio (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8992d318d605110d74521efdb8a9c911aeeb9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dec341c26f9f88390ff1b807e6e932b3b381cd57
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318618"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094509"
 ---
-# <a name="spfilenotify_endregistration-message"></a>\_Messaggio SPFILENOTIFY ENDREGISTRATION
+# <a name="spfilenotify_endregistration-message"></a>Messaggio SPFILENOTIFY \_ ENDREGISTRATION
 
-Quando si usa la direttiva **RegisterDlls** inf per registrare autonomamente le dll, i chiamanti di [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) possono ricevere notifiche su ogni file durante la registrazione o l'annullamento della registrazione. Per inviare una **notifica \_ ENDREGISTRATION di SPFILENOTIFY** a una routine di callback una volta dopo la registrazione o l'annullamento della registrazione di un file, includere \_ il REGISTERCALLBACKAWARE più spinoso \_ regsvr nel parametro *Flags* di **SetupInstallFromInfSection**. Per inviare la notifica di annullamento della registrazione, includere \_ REGISTERCALLBACKAWARE più spin \_ UNREGSVR nel parametro *Flags* .
+Quando si usa la direttiva **REGISTERDlls** INF per registrare automaticamente le DLL, i chiamanti di [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) possono ricevere notifiche in ogni file durante la registrazione o l'annullamento della registrazione. Per inviare una notifica **SPFILENOTIFY \_ ENDREGISTRATION** a una routine di callback dopo la registrazione o l'annullamento della registrazione di un file, includere SPINST \_ REGISTERCALLBACKAWARE più SPINST REGSVR nel parametro Flags di \_  **SetupInstallFromInfSection**. Per inviare una notifica di annullamento della registrazione, includere SPINST \_ REGISTERCALLBACKAWARE e SPINST \_ UNREGSVR nel *parametro Flags.*
 
-La routine di callback specificata dal parametro *MsgHandler* di [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) deve corrispondere al [ \_ \_ callback dei file](/windows/win32/api/setupapi/nc-setupapi-psp_file_callback_a)di tipo PSP. Impostare il parametro di *contesto* sullo stesso *contesto* specificato in **SetupInstallFromInfSection**. Impostare il parametro *Notification* su **SPFILENOTIFY \_ ENDREGISTRATION**.
+La routine di callback specificata dal *parametro MsgHandler* [**di SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) deve essere di tipo [PSP FILE \_ \_ CALLBACK](/windows/win32/api/setupapi/nc-setupapi-psp_file_callback_a). Impostare il *parametro Context* sullo stesso *contesto* specificato in **SetupInstallFromInfSection**. Impostare il *parametro Notification* su **SPFILENOTIFY \_ ENDREGISTRATION**.
 
 
 ```C++
@@ -34,28 +34,28 @@ SPFILENOTIFY_ENDREGISTRATION
 *Param1* 
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ stato del \_ controllo \_ del registro SP**](/windows/desktop/api/Setupapi/ns-setupapi-sp_register_control_statusa) contenente le informazioni sul file di cui è in corso la registrazione o l'annullamento della registrazione. Il membro **cbSize** deve essere impostato sulla dimensione della struttura. **Filename** deve essere impostato sul percorso completo del file registrato. **Win32Error** deve essere impostato su un [codice di errore di sistema](/windows/desktop/Debug/system-error-codes) che indica un codice di errore esteso. **FailureCode** deve essere impostato su uno dei codici di errore validi che indicano il risultato della registrazione. Per i codici di errore validi, vedere [**SP \_ Register \_ Control \_ status**](/windows/desktop/api/Setupapi/ns-setupapi-sp_register_control_statusa).
+Puntatore a una [**struttura SP REGISTER CONTROL \_ \_ \_ STATUS**](/windows/desktop/api/Setupapi/ns-setupapi-sp_register_control_statusa) contenente informazioni sul file da registrare o annullare la registrazione. Il membro **cbsize** deve essere impostato sulla dimensione della struttura . **FileName** deve essere impostato sul percorso completo del file registrato. **Win32Error deve** essere impostato su un codice [di errore di sistema](/windows/desktop/Debug/system-error-codes) che indica un codice di errore esteso. **FailureCode** deve essere impostato su uno dei codici di errore validi che indicano il risultato della registrazione. Per i codici di errore validi, [**vedere SP REGISTER CONTROL \_ \_ \_ STATUS**](/windows/desktop/api/Setupapi/ns-setupapi-sp_register_control_statusa).
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Se il file viene registrato, *param2* deve essere impostato su un puntatore a un valore diverso da zero. Se è in corso l'annullamento della registrazione del file, *param2* deve essere impostato su un puntatore a zero.
+Se il file viene registrato, *Param2* deve essere impostato su un puntatore a un valore diverso da zero. Se è in corso l'annullamento della registrazione del file, *Param2* deve essere impostato su un puntatore a zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Dopo la ricezione della notifica, la funzione di callback può restituire uno dei valori seguenti.
+Dopo aver ricevuto la notifica, la funzione di callback può restituire uno dei valori seguenti.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_interruzione FILEOP**</dt> </dl> | Interrompere l'elaborazione della sezione INF.<br/>     |
-| <dl> <dt>**\_doit FILEOP**</dt> </dl>  | Continuare l'elaborazione della sezione INF.<br/> |
-| <dl> <dt>**\_Ignora file**</dt> </dl>    | Continua l'elaborazione della sezione INF<br/>  |
+| <dl> <dt>**INTERRUZIONE \_ FILEOP**</dt> </dl> | Arrestare l'elaborazione della sezione INF.<br/>     |
+| <dl> <dt>**FILEOP \_ DOIT**</dt> </dl>  | Continuare a elaborare la sezione INF.<br/> |
+| <dl> <dt>**FILE \_ SKIP**</dt> </dl>    | Continuare a elaborare la sezione INF<br/>  |
 
 
 
@@ -67,9 +67,9 @@ Dopo la ricezione della notifica, la funzione di callback può restituire uno de
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                           |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Dopo la ricezione della notifica, la funzione di callback può restituire uno de
 
 <dl> <dt>
 
-[Overview](overview.md)
+[Panoramica](overview.md)
 </dt> <dt>
 
 [Notifications](notifications.md)
@@ -86,7 +86,7 @@ Dopo la ricezione della notifica, la funzione di callback può restituire uno de
 [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona)
 </dt> <dt>
 
-[**\_STARTREGISTRATION SPFILENOTIFY**](spfilenotify-startregistration.md)
+[**SPFILENOTIFY \_ STARTREGISTRATION**](spfilenotify-startregistration.md)
 </dt> </dl>
 
  

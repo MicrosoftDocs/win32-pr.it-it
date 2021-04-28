@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice che ruota intorno all'asse y.
+description: "Funzione D3DXMatrixRotationY (D3DX10Math.h): compila una matrice che ruota intorno all'asse y."
 ms.assetid: b58def9b-29dc-4c7d-89a3-188ef9b9f94f
-title: Funzione D3DXMatrixRotationY (D3DX10Math. h)
+title: Funzione D3DXMatrixRotationY (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1ae6c0be4e9e53b62a0504997bfd4687fa3fcab5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 570179fadc9008c5f919acf657541e53ab399ac8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104531033"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108969"
 ---
-# <a name="d3dxmatrixrotationy-function-d3dx10mathh"></a>Funzione D3DXMatrixRotationY (D3DX10Math. h)
+# <a name="d3dxmatrixrotationy-function-d3dx10mathh"></a>Funzione D3DXMatrixRotationY (D3DX10Math.h)
 
 Compila una matrice che ruota intorno all'asse y.
 
@@ -41,21 +41,21 @@ D3DXMATRIX* D3DXMatrixRotationY(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*Angolo* \[ in\]
+*Angolo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Angolo di rotazione in radianti. Gli angoli sono misurati in senso orario quando si osserva lungo l'asse di rotazione verso l'origine.
+Angolo di rotazione in radianti. Gli angoli vengono misurati in senso orario quando si guarda lungo l'asse di rotazione verso l'origine.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Puntatore a una struttura D3DXMATRIX ruotata intorno all'asse y.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixRotationY può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixRotationY può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

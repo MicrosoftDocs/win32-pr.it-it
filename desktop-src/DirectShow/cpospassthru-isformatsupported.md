@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo IsFormatSupported determina se è supportato un formato di ora specificato. Questo metodo implementa il metodo IMediaSeeking:: IsFormatSupported.'
+description: 'Metodo CPosPassThru.IsFormatSupported: il metodo IsFormatSupported determina se è supportato un formato di ora specificato. Questo metodo implementa il metodo IMediaSeeking::IsFormatSupported.'
 ms.assetid: dd8751d6-8439-4155-bdaf-b152a7c6cad4
-title: Metodo CPosPassThru. IsFormatSupported (Ctlutil. h)
+title: Metodo CPosPassThru.IsFormatSupported (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85bdbef2315bd2c9e2bc92f639a7d328f1f17ce0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bd4b90bbe86e7ba05aa48fb7888c946babd8ed9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333202"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095249"
 ---
-# <a name="cpospassthruisformatsupported-method"></a>CPosPassThru. IsFormatSupported, metodo
+# <a name="cpospassthruisformatsupported-method"></a>Metodo CPosPassThru.IsFormatSupported
 
-Il `IsFormatSupported` metodo determina se è supportato un formato di ora specificato. Questo metodo implementa il metodo [**IMediaSeeking:: IsFormatSupported**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-isformatsupported) .
+Il `IsFormatSupported` metodo determina se è supportato un formato di ora specificato. Questo metodo implementa il [**metodo IMediaSeeking::IsFormatSupported.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-isformatsupported)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT IsFormatSupported(
 *pFormat* 
 </dt> <dd>
 
-Puntatore a un GUID del formato ora.
+Puntatore a un GUID di formato ora.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Restituisce il valore **HRESULT** dal pin connesso.
 [**Classe CPosPassThru**](cpospassthru.md)
 </dt> <dt>
 
-[**GUID del formato dell'ora**](time-format-guids.md)
+[**GUID di formato ora**](time-format-guids.md)
 </dt> </dl>
 
  

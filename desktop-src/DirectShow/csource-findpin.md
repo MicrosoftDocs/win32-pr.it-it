@@ -1,7 +1,7 @@
 ---
-description: "Il metodo FindPin Recupera il pin con l'identificatore specificato. Questo metodo implementa il metodo IBaseFilter:: FindPin."
+description: "Metodo CSource.FindPin: il metodo FindPin recupera il pin con l'identificatore specificato. Questo metodo implementa il metodo IBaseFilter::FindPin."
 ms.assetid: ad593dbf-ca56-4409-ac6e-1b88908c8cee
-title: Metodo CSource. FindPin (source. h)
+title: Metodo CSource.FindPin (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9fac8df1e53e4a129b42d1284a19392bc7b58aa2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: daa1e2404e7c6fbf1d879d71374298103bdc621f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324651"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098859"
 ---
-# <a name="csourcefindpin-method"></a>CSource. FindPin, metodo
+# <a name="csourcefindpin-method"></a>Metodo CSource.FindPin
 
-Il `FindPin` metodo recupera il pin con l'identificatore specificato. Questo metodo implementa il metodo [**IBaseFilter:: FindPin**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin) .
+Il `FindPin` metodo recupera il pin con l'identificatore specificato. Questo metodo implementa il [**metodo IBaseFilter::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ HRESULT FindPin(
 *Id* 
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che identifica il PIN.
+Puntatore a una stringa con terminazione Null che identifica il pin.
 
 </dd> <dt>
 
 *ppPin* 
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN. Se il metodo ha esito negativo, \* *ppPin* è impostato su **null**
+Riceve un puntatore all'interfaccia [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin. Se il metodo ha esito negativo, \* *ppPin* è impostato su **NULL**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                       | Descrizione                                           |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>              | Esito positivo.<br/>                                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl>         | Argomento puntatore **null** .<br/>                 |
-| <dl> <dt>**VFW \_ E \_ non \_ trovato**</dt> </dl> | Non è stato possibile trovare un pin con questo identificatore.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Operazione completata.<br/>                                   |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>         | Argomento del puntatore **NULL.**<br/>                 |
+| <dl> <dt>**VFW \_ E \_ NON \_ TROVATO**</dt> </dl> | Impossibile trovare un pin con questo identificatore.<br/> |
 
 
 
@@ -75,7 +75,7 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Il primo pin è sempre denominato "1"; il secondo pin è denominato "2"; e così via. Per ulteriori informazioni, vedere [**CSourceStream:: QueryId**](csourcestream-queryid.md).
+Il primo segnaposto è sempre denominato "1". il secondo pin è denominato "2"; e così via. Per altre informazioni, vedere [**CSourceStream::QueryId**](csourcestream-queryid.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Il primo pin è sempre denominato "1"; il secondo pin è denominato "2"; e così
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

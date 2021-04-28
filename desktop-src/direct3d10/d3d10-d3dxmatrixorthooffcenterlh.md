@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di proiezione ortogonale personalizzata, a sinistra.
+description: 'Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math.h): compila una matrice di proiezione ortografica personalizzata mancino.'
 ms.assetid: 84175c08-5a0b-4183-afe2-8aecafd73897
-title: Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math. h)
+title: Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4292f2996b4a19b71531094e5bf39bf7c213b972
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2eb10963372519827eb544371ebb0df04df2e178
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323214"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109139"
 ---
-# <a name="d3dxmatrixorthooffcenterlh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math. h)
+# <a name="d3dxmatrixorthooffcenterlh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math.h)
 
-Compila una matrice di proiezione ortogonale personalizzata, a sinistra.
+Compila una matrice di proiezione ortografica personalizzata mancino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,19 +46,19 @@ D3DXMATRIX* D3DXMatrixOrthoOffCenterLH(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *l* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore x minimo del volume di visualizzazione.
 
@@ -67,7 +67,7 @@ Valore x minimo del volume di visualizzazione.
 *r* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore x massimo del volume di visualizzazione.
 
@@ -76,34 +76,34 @@ Valore x massimo del volume di visualizzazione.
 *b* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore y minimo del volume di visualizzazione.
+Valore y minimo del volume della vista.
 
 </dd> <dt>
 
 *t* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore y massimo del volume di visualizzazione.
+Valore y massimo del volume della vista.
 
 </dd> <dt>
 
-*Zn* \[ in\]
+*zn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore z minimo del volume di visualizzazione.
 
 </dd> <dt>
 
-*ZF* \[ in\]
+*zf* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore z massimo del volume di visualizzazione.
 
@@ -113,23 +113,23 @@ Valore z massimo del volume di visualizzazione.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Commenti
 
 [**D3DXMatrixOrthoLH**](d3d10-d3dxmatrixortholh.md) è un caso speciale della funzione D3DXMatrixOrthoOffCenterLH. Per creare la stessa proiezione usando D3DXMatrixOrthoOffCenterLH, usare i valori seguenti:
 
-l =-w/2,
+l = -w/2,
 
 r = w/2,
 
-b =-h/2 e
+b = -h/2 e
 
 t = h/2.
 
-Tutti i parametri della funzione D3DXMatrixOrthoOffCenterLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
+Tutti i parametri della funzione D3DXMatrixOrthoOffCenterLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixOrthoOffCenterLH può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixOrthoOffCenterLH può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -149,8 +149,8 @@ Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

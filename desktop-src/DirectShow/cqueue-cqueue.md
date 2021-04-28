@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CQueue.CQueue (Wxutil.h) - Metodo costruttore.
 ms.assetid: 4dcbb088-638b-49a6-afaf-a973e13bd5fb
-title: Costruttore CQueue. CQueue (Wxutil. h)
+title: Costruttore CQueue.CQueue (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f013a1e009c533b8307b07fe6faf32ce70994948
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2fe1d44f4d8d6867ddb6fa4763d794aa0a32c55
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327122"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098949"
 ---
-# <a name="cqueuecqueue-constructor-wxutilh"></a>Costruttore CQueue. CQueue (Wxutil. h)
+# <a name="cqueuecqueue-constructor-wxutilh"></a>Costruttore CQueue.CQueue (Wxutil.h)
 
 Metodo del costruttore.
 
@@ -45,7 +45,7 @@ CQueue(
 *n* 
 </dt> <dd>
 
-Dimensione della coda da creare.
+Dimensioni della coda da creare.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Dimensione della coda da creare.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

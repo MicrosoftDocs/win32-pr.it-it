@@ -1,15 +1,15 @@
 ---
-description: .
+description: Compatibility Administrator
 ms.assetid: 72a77e83-ab18-438c-af11-fa6d55bf0180
 title: Compatibility Administrator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abde760ca7324aec18f0576a7f04e3a4c5db2d22
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 5d941c9db85c8302d8d7d8808f24b95d1f3b08be
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314984"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088529"
 ---
 # <a name="compatibility-administrator"></a>Compatibility Administrator
 
@@ -21,21 +21,21 @@ ms.locfileid: "107314984"
 
 ## <a name="description"></a>Descrizione
 
-Lo strumento Compatibility Administrator, fornito da Application Compatibility Toolkit (ACT) consente di risolvere molti dei potenziali problemi di compatibilità delle applicazioni, prima di distribuire una nuova versione di Windows nell'organizzazione:
+Lo strumento Di amministrazione compatibilità, fornito da Application Compatibility Toolkit (ACT) consente di risolvere molti dei potenziali problemi di compatibilità delle applicazioni, prima di distribuire una nuova versione di Windows nell'organizzazione, tramite:
 
--   Fornire correzioni singole per la compatibilità, modalità di compatibilità e messaggi AppHelp che è possibile usare per risolvere problemi di compatibilità specifici
--   Consente di creare correzioni personalizzate per la compatibilità, modalità di compatibilità, messaggi AppHelp e database di compatibilità
--   Fornire uno strumento di query che consente di cercare correzioni installate nei computer locali
+-   Fornire singole correzioni di compatibilità, modalità di compatibilità e messaggi AppHelp che è possibile usare per risolvere problemi di compatibilità specifici
+-   Possibilità di creare correzioni di compatibilità personalizzate, modalità di compatibilità, messaggi AppHelp e database di compatibilità
+-   Fornire uno strumento di query che consente di cercare le correzioni installate nei computer locali
 
 ## <a name="usage"></a>Utilizzo
 
-Il diagramma di flusso seguente illustra i passaggi necessari per l'uso di Compatibility Administrator per creare le correzioni di compatibilità, le modalità di compatibilità e i messaggi AppHelp.
+Il diagramma di flusso seguente illustra i passaggi necessari per usare Amministratore compatibilità per creare le correzioni per la compatibilità, le modalità di compatibilità e i messaggi di AppHelp.
 
 
 
 |                                            |          |                                                                                            |          |                                                     |          |                                                                             |
 |--------------------------------------------|----------|--------------------------------------------------------------------------------------------|----------|-----------------------------------------------------|----------|-----------------------------------------------------------------------------|
-| Creazione di un nuovo database di compatibilità (SDB) | **>** | Selezionare l'applicazione e quindi selezionare le correzioni rapide per la compatibilità da applicare all'applicazione | **>** | Testare l'applicazione con la nuova correzione per la compatibilità | **>** | Salvare il database di compatibilità e quindi distribuire la correzione nell'azienda |
+| Creare un nuovo database di compatibilità (con estensione sdb) | **>** | Selezionare l'applicazione e quindi selezionare le correzioni per la compatibilità da applicare all'applicazione | **>** | Testare l'applicazione con la nuova correzione per la compatibilità | **>** | Salvare il database di compatibilità e quindi distribuire la correzione all'azienda |
 
 
 
@@ -43,10 +43,10 @@ Il diagramma di flusso seguente illustra i passaggi necessari per l'uso di Compa
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [Download di Application Compatibility Toolkit](/windows-hardware/get-started/adk-install)
--   [Utilizzo di Compatibility Administrator](/previous-versions/windows/it-pro/windows-7/cc749034(v=ws.10))
+-   [Application Compatibility Toolkit Download](/windows-hardware/get-started/adk-install)
+-   [Uso di Amministrazione compatibilità](/previous-versions/windows/it-pro/windows-7/cc749034(v=ws.10))
 -   [Correzioni di compatibilità note, modalità di compatibilità e messaggi AppHelp](/previous-versions/windows/it-pro/windows-7/cc765984(v=ws.10))
--   [Test e attenuazione dei problemi tramite gli strumenti di sviluppo](/previous-versions/orphan-topics/ws.10/cc766461(v=ws.10))
+-   [Test e mitigazione dei problemi tramite gli strumenti di sviluppo](/previous-versions/orphan-topics/ws.10/cc766461(v=ws.10))
 
  
 

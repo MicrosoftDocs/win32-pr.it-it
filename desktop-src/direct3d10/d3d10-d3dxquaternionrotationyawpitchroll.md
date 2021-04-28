@@ -1,7 +1,7 @@
 ---
-description: Compila un quaternione con l'imbardata, il pitch e il rullo specificati.
+description: "Funzione D3DXQuaternionRotationYawPitchRoll (D3DX10Math.h): compila un quaternione con l'yaw, il passo e il roll specificato."
 ms.assetid: c929d9d4-b9cb-4de6-86c1-26fec3617846
-title: Funzione D3DXQuaternionRotationYawPitchRoll (D3DX10Math. h)
+title: Funzione D3DXQuaternionRotationYawPitchRoll (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7d894be61f5f22322f83c4e4a6c6a724de4b9da4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cefcf9a927cee0d8f7c83ff42ae6ca4fc699bb09
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323201"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108749"
 ---
-# <a name="d3dxquaternionrotationyawpitchroll-function-d3dx10mathh"></a>Funzione D3DXQuaternionRotationYawPitchRoll (D3DX10Math. h)
+# <a name="d3dxquaternionrotationyawpitchroll-function-d3dx10mathh"></a>Funzione D3DXQuaternionRotationYawPitchRoll (D3DX10Math.h)
 
-Compila un quaternione con l'imbardata, il pitch e il rullo specificati.
+Compila un quaternione con l'yaw, il passo e il rollio dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ D3DXQUATERNION* D3DXQuaternionRotationYawPitchRoll(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*Imbardata* \[ in\]
+*Yaw* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Imbardata intorno all'asse y, in radianti.
+Yaw intorno all'asse y, in radianti.
 
 </dd> <dt>
 
-*Passo* \[ in\]
+*Pitch* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Pitch intorno all'asse x, in radianti.
+Passo intorno all'asse x, in radianti.
 
 </dd> <dt>
 
-Esegui *rollforward* \[ in\]
+*Roll* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Ruotare intorno all'asse z, in radianti.
+Eseguire il roll-around dell'asse z, in radianti.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Ruotare intorno all'asse z, in radianti.
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a una struttura D3DXQUATERNION con l'imbardata, il pitch e il rullo specificati.
+Puntatore a una struttura D3DXQUATERNION con lo yaw, il passo e il rollio specificati.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXQuaternionRotationYawPitchRoll può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXQuaternionRotationYawPitchRoll può essere usata come parametro per un'altra funzione.
 
 Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
@@ -97,8 +97,8 @@ Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

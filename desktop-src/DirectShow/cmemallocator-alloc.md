@@ -1,7 +1,7 @@
 ---
-description: Il metodo Alloc alloca memoria per i buffer.
+description: 'Metodo CMemAllocator.Alloc: il metodo Alloc alloca memoria per i buffer.'
 ms.assetid: 81886163-2f7d-4d4f-be90-4491f76b8514
-title: Metodo CMemAllocator. Alloc (Amfilter. h)
+title: Metodo CMemAllocator.Alloc (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a142f6c0cea6cdb9b18507becabb909ce67b0fb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d7de755aa3b8007a122e43529d16f5e39ca0cb8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327445"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099039"
 ---
-# <a name="cmemallocatoralloc-method"></a>CMemAllocator. Alloc, metodo
+# <a name="cmemallocatoralloc-method"></a>Metodo CMemAllocator.Alloc
 
 Il `Alloc` metodo alloca memoria per i buffer.
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                       | Descrizione                                  |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>              | Esito positivo.<br/>                          |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>     | Memoria insufficiente.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Operazione completata.<br/>                          |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>     | Memoria insufficiente.<br/>              |
 | <dl> <dt>**VFW \_ E \_ SIZENOTSET**</dt> </dl> | I requisiti del buffer non sono stati impostati.<br/> |
 
 
@@ -58,7 +58,7 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato dal metodo [**CBaseAllocator:: commit**](cbaseallocator-commit.md) . Alloca un blocco di memoria contiguo sufficiente per i requisiti del buffer specificati nel metodo [**CMemAllocator:: seproperties**](cmemallocator-setproperties.md) .
+Questo metodo viene chiamato dal [**metodo CBaseAllocator::Commit.**](cbaseallocator-commit.md) Alloca un blocco contiguo di memoria sufficiente per i requisiti del buffer specificato nel [**metodo CMemAllocator::SetProperties.**](cmemallocator-setproperties.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,8 +66,8 @@ Questo metodo viene chiamato dal metodo [**CBaseAllocator:: commit**](cbasealloc
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

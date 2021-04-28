@@ -1,7 +1,7 @@
 ---
-description: Descrive un vettore a quattro componenti, inclusi gli overload degli operatori e i cast di tipo.
+description: "Struttura D3DXVECTOR4 (D3DX10Math.h): descrive un vettore a quattro componenti che include overload dell'operatore e cast di tipi."
 ms.assetid: c6348346-f317-48ed-a369-e39fdb4dc1d6
-title: Struttura D3DXVECTOR4 (D3DX10Math. h)
+title: Struttura D3DXVECTOR4 (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: ce65fe5cc6de9d842fb7c93b1089e53b9b27920c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2e3af4c11922d7433c56b9353482eba8d374d5a5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104402014"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102829"
 ---
-# <a name="d3dxvector4-structure-d3dx10mathh"></a>Struttura D3DXVECTOR4 (D3DX10Math. h)
+# <a name="d3dxvector4-structure-d3dx10mathh"></a>Struttura D3DXVECTOR4 (D3DX10Math.h)
 
-Descrive un vettore a quattro componenti, inclusi gli overload degli operatori e i cast di tipo.
+Descrive un vettore a quattro componenti che include overload dell'operatore e cast di tipi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ typedef struct D3DXVECTOR4 {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,7 +56,7 @@ Componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -64,10 +64,10 @@ Componente y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,11 +78,11 @@ Componente z.
 **w**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Il componente w.
+Componente w.
 
 </dd> </dl>
 
@@ -144,7 +144,7 @@ public:
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

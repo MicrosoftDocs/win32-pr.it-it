@@ -1,7 +1,7 @@
 ---
-description: Recupera la matrice corrente all'inizio dello stack.
+description: "Metodo ID3DXMATRIXStack::GetTop (D3DX10.h): recupera la matrice corrente all'inizio dello stack."
 ms.assetid: cf379742-3e7d-4309-a7af-b97348428682
-title: 'Metodo ID3DXMATRIXStack:: GetTop (D3DX10. h)'
+title: Metodo ID3DXMATRIXStack::GetTop (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c545287ff3a4e7f9bfdccf21b9351fef06367433
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d1d96cfe8124b47a9b6ce546379af1313a02ea26
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323666"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108039"
 ---
-# <a name="id3dxmatrixstackgettop-method-d3dx10h"></a>Metodo ID3DXMATRIXStack:: GetTop (D3DX10. h)
+# <a name="id3dxmatrixstackgettop-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::GetTop (D3DX10.h)
 
 Recupera la matrice corrente all'inizio dello stack.
 
@@ -46,9 +46,9 @@ Questo metodo restituisce un puntatore a una struttura D3DXMATRIX che rappresent
 
 ## <a name="remarks"></a>Commenti
 
-Il puntatore D3DXMATRIX restituito da questo metodo non è garantito come valido dopo le operazioni di stack successive.
+Non è garantito che il puntatore D3DXMATRIX restituito da questo metodo sia valido dopo le successive operazioni dello stack.
 
-Si noti che questo metodo non rimuove la matrice corrente dall'inizio dello stack. piuttosto restituisce solo la matrice corrente.
+Si noti che questo metodo non rimuove la matrice corrente dall'inizio dello stack. restituisce invece solo la matrice corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Si noti che questo metodo non rimuove la matrice corrente dall'inizio dello stac
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

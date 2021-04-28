@@ -1,7 +1,7 @@
 ---
-description: Aggiunge una matrice allo stack.
+description: 'Metodo ID3DXMATRIXStack::P ush (D3DX10.h): aggiunge una matrice nello stack.'
 ms.assetid: 8660047f-64bc-4b34-8270-3087412db942
-title: Metodo ID3DXMATRIXStack::P USH (D3DX10. h)
+title: Metodo ID3DXMATRIXStack::P ush (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 694bb8b02f340be14f38b7d2a44ec2038d175098
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9c248fdaed8235c383388a52172021921e2c78d8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323660"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107918"
 ---
-# <a name="id3dxmatrixstackpush-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::P USH (D3DX10. h)
+# <a name="id3dxmatrixstackpush-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::P ush (D3DX10.h)
 
-Aggiunge una matrice allo stack.
+Aggiunge una matrice nello stack.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo incrementa il numero di elementi nello stack di 1, duplicando la matrice corrente. Lo stack aumenterà in modo dinamico man mano che vengono aggiunti altri elementi.
+Questo metodo incrementa il conteggio degli elementi nello stack di 1, duplicando la matrice corrente. Lo stack crescerà dinamicamente quando vengono aggiunti più elementi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo incrementa il numero di elementi nello stack di 1, duplicando la m
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

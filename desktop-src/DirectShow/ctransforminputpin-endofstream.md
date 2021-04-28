@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo EndOfStream notifica al pin che non sono previsti dati aggiuntivi. Questo metodo implementa il metodo IPin:: EndOfStream.'
+description: 'Metodo CTransformInputPin.EndOfStream: il metodo EndOfStream notifica al pin che non sono previsti dati aggiuntivi. Questo metodo implementa il metodo IPin::EndOfStream.'
 ms.assetid: db9896eb-3db2-4d58-a787-4d80ce8f0d0e
-title: Metodo CTransformInputPin. EndOfStream (Transfrm. h)
+title: Metodo CTransformInputPin.EndOfStream (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bc39770f081499be720c433301823cbc60f37d17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2035d0261447826098162f480ddc959544b101b7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328800"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084979"
 ---
-# <a name="ctransforminputpinendofstream-method"></a>CTransformInputPin. EndOfStream, metodo
+# <a name="ctransforminputpinendofstream-method"></a>Metodo CTransformInputPin.EndOfStream
 
-Il `EndOfStream` metodo notifica al pin che non sono previsti dati aggiuntivi. Questo metodo implementa il metodo [**Ipin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) .
+Il `EndOfStream` metodo notifica al pin che non sono previsti dati aggiuntivi. Questo metodo implementa il [**metodo IPin::EndOfStream.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,17 +42,17 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                           | Descrizione                                 |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>                         |
-| <dl> <dt>**S \_ false**</dt> </dl>               | È in corso lo scaricamento del PIN.<br/>       |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il pin di output non è connesso.<br/> |
-| <dl> <dt>**errore di runtime di VFW \_ E \_ \_**</dt> </dl> | Si è verificato un errore in fase di esecuzione.<br/>       |
-| <dl> <dt>**\_ \_ stato non corretto di VFW E \_**</dt> </dl>   | Il PIN è stato arrestato.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                         |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>               | Il pin è attualmente in fase di scaricamento.<br/>       |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il pin di output non è connesso.<br/> |
+| <dl> <dt>**ERRORE DI RUNTIME DI VFW \_ E \_ \_**</dt> </dl> | Si è verificato un errore di run-time.<br/>       |
+| <dl> <dt>**VFW \_ E \_ STATO \_ ERRATO**</dt> </dl>   | Il pin è stato arrestato.<br/>              |
 
 
 
@@ -60,7 +60,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**CTransformFilter:: EndOfStream**](ctransformfilter-endofstream.md) del filtro per fornire la notifica di fine flusso downstream.
+Questo metodo chiama il metodo [**CTransformFilter::EndOfStream**](ctransformfilter-endofstream.md) del filtro per recapitare la notifica di fine flusso a valle.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,8 +68,8 @@ Questo metodo chiama il metodo [**CTransformFilter:: EndOfStream**](ctransformfi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Imposta un vettore 4D.
+description: 'Metodo ID3DXTextureShader::SetVector: imposta un vettore 4D.'
 ms.assetid: befed2a8-7695-4f06-a6ee-aff466d1940a
-title: 'Metodo ID3DXTextureShader:: sevector (D3DX9Shader. h)'
+title: Metodo ID3DXTextureShader::SetVector (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b7bc7e3b7f4920c21c52111410c626090e452fa7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e917e4ff13cf7c03de264542dc1995364f1dc526
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322548"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090159"
 ---
-# <a name="id3dxtextureshadersetvector-method"></a>Metodo ID3DXTextureShader:: sevector
+# <a name="id3dxtextureshadersetvector-method"></a>Metodo ID3DXTextureShader::SetVector
 
 Imposta un vettore 4D.
 
@@ -41,16 +41,16 @@ HRESULT SetVector(
 
 <dl> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco della costante Vector. Vedere [D3DXHANDLE](d3dxfx.md).
+Identificatore univoco della costante vettore. Vedere [D3DXHANDLE](d3dxfx.md).
 
 </dd> <dt>
 
-*pVector* \[ in\]
+*pVector* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

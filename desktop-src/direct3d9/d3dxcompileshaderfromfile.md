@@ -1,7 +1,7 @@
 ---
-description: Compilare un file shader.
+description: 'Funzione D3DXCompileShaderFromFile: consente di compilare un file shader.'
 ms.assetid: 2ad6042f-3601-4f4a-9624-6319a3372355
-title: Funzione D3DXCompileShaderFromFile (D3DX9Shader. h)
+title: Funzione D3DXCompileShaderFromFile (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 865241142fa13ec9d34826bfe334c30b38ca78d5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a4392a3c36b31deb4071c215ad9b41e7f40c21ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322877"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115849"
 ---
-# <a name="d3dxcompileshaderfromfile-function"></a>D3DXCompileShaderFromFile (funzione)
+# <a name="d3dxcompileshaderfromfile-function"></a>Funzione D3DXCompileShaderFromFile
 
 Compilare un file shader.
 
 > [!Note]  
-> Invece di usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando il Fxc.exe compilatore da riga di comando o l'API [**D3DCompile**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile) .
+> Invece di usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando il Fxc.exe della riga di comando o l'API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
 
  
 
@@ -53,34 +53,34 @@ HRESULT D3DXCompileShaderFromFile(
 
 <dl> <dt>
 
-*pSrcFile* \[ in\]
+*pSrcFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome del file.
+Puntatore a una stringa che specifica il nome file.
 
 </dd> <dt>
 
-*pDefines* \[ in\]
+*pDefines* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matrice facoltativa con terminazione **null** di strutture [**D3DXMACRO**](d3dxmacro.md) . Questo valore può essere **null**.
+Matrice facoltativa con terminazione **NULL** di [**strutture D3DXMACRO.**](d3dxmacro.md) Questo valore può essere **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ in\]
+*pInclude* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntatore a interfaccia facoltativo, [**ID3DXInclude**](id3dxinclude.md), da usare per la gestione delle \# direttive include. Se questo valore è **null**, le \# inclusioni verranno rispettate durante la compilazione da un file o genereranno un errore quando vengono compilate da una risorsa o da una memoria.
+Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione delle \# direttive include. Se questo valore è **NULL,** le include verranno rispettate durante la compilazione da un file o causeranno un errore durante la compilazione \# da una risorsa o da una memoria.
 
 </dd> <dt>
 
-*pFunctionName* \[ in\]
+*pFunctionName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -89,48 +89,48 @@ Puntatore alla funzione del punto di ingresso dello shader in cui inizia l'esecu
 
 </dd> <dt>
 
-*pProfile* \[ in\]
+*pProfile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a un profilo dello shader che determina il set di istruzioni dello shader. Per un elenco dei profili disponibili, vedere [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) o [**D3DXGetPixelShaderProfile**](d3dxgetpixelshaderprofile.md) .
+Puntatore a un profilo shader che determina il set di istruzioni shader. Per un elenco dei profili disponibili, vedere [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) o [**D3DXGetPixelShaderProfile.**](d3dxgetpixelshaderprofile.md)
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opzioni di compilazione identificate da diversi flag. Il compilatore Direct3D 10 HLSL è ora il valore predefinito. Per informazioni dettagliate, vedere [flag D3DXSHADER](d3dxshader-flags.md) .
+Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Flag D3DXSHADER.](d3dxshader-flags.md)
 
 </dd> <dt>
 
-*ppShader* \[ out\]
+*ppShader* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice dello shader compilato, nonché tutte le informazioni di debug e di tabella dei simboli incorporate.
+Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice shader compilato, nonché le informazioni sulle tabelle di debug e simboli incorporate.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ out\]
+*ppErrorMsgs* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente un elenco di errori e avvisi che sono stati rilevati durante la compilazione. Si tratta degli stessi messaggi visualizzati dal debugger durante l'esecuzione in modalità di debug. Questo valore può essere **null**.
+Restituisce un buffer contenente un elenco di errori e avvisi rilevati durante la compilazione. Si tratta degli stessi messaggi visualizzati dal debugger durante l'esecuzione in modalità di debug. Questo valore può essere **NULL.**
 
 </dd> <dt>
 
-*ppConstantTable* \[ out\]
+*ppConstantTable* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Restituisce un'interfaccia [**ID3DXConstantTable**](id3dxconstanttable.md) che può essere utilizzata per accedere alle costanti dello shader. Questo valore può essere **null**. Se l'applicazione viene compilata con un indirizzo di grandi dimensioni (ovvero si usa l'opzione del linker/LARGEADDRESSAWARE per gestire gli indirizzi maggiori di 2 GB), non è possibile usare questo parametro e deve essere impostato su **null**. È invece necessario utilizzare la funzione [**D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella delle costanti shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
+Restituisce [**un'interfaccia ID3DXConstantTable,**](id3dxconstanttable.md) che può essere usata per accedere alle costanti shader. Questo valore può essere **NULL.** Se si compila l'applicazione con informazioni su indirizzi di grandi dimensioni, ovvero si usa l'opzione del linker /LARGEADDRESSAWARE per gestire indirizzi di dimensioni superiori a 2 GB, non è possibile usare questo parametro e impostarlo su **NULL.** È invece necessario usare la [**funzione D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella costante shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
 
 </dd> </dl>
 
@@ -138,9 +138,9 @@ Restituisce un'interfaccia [**ID3DXConstantTable**](id3dxconstanttable.md) che p
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, e \_ NOTIMPL, e \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ NOTIMPL, E \_ OUTOFMEMORY.
 
-\_Se si usano gli shader 1,1 (vs \_ 1 \_ 1 e PS \_ 1 \_ 1), viene restituito E NOTIMPL.
+Se si usano shader \_ 1.1(vs \_ 1 \_ 1 1 e ps \_ 1 \_ 1 1), viene restituito E NOTIMPL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -148,8 +148,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: 'Distruttore CBasePin.~CBasePin : metodo del distruttore.'
 ms.assetid: b903bec6-e944-48bb-aa0c-7072a843a9cd
-title: Distruttore CBasePin. ~ CBasePin (Amfilter. h)
+title: Distruttore CBasePin.~CBasePin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 41af0c5ef387d73819966c23d47f8fc4583bda49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6a6bd7219ba57c5c885e8123b181f899dc96e5d3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330540"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099499"
 ---
-# <a name="cbasepincbasepin-destructor"></a>Distruttore CBasePin. ~ CBasePin
+# <a name="cbasepincbasepin-destructor"></a>Distruttore CBasePin.~CBasePin
 
 Metodo del distruttore.
 
@@ -42,8 +42,8 @@ Metodo del distruttore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

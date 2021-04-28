@@ -1,7 +1,7 @@
 ---
-description: Recupera le informazioni su una determinata immagine in una risorsa.
+description: 'Funzione D3DXGetImageInfoFromResource: recupera informazioni su una determinata immagine in una risorsa.'
 ms.assetid: 1f811b1e-f0bd-4f64-a4c9-caf899470940
-title: Funzione D3DXGetImageInfoFromResource (D3dx9tex. h)
+title: Funzione D3DXGetImageInfoFromResource (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6875719123fe0b4dca4405570703b2587492975b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ea324ef94ab765bad25f7d07eef07972ab94cff6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762041"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114449"
 ---
-# <a name="d3dxgetimageinfofromresource-function"></a>D3DXGetImageInfoFromResource (funzione)
+# <a name="d3dxgetimageinfofromresource-function"></a>Funzione D3DXGetImageInfoFromResource
 
-Recupera le informazioni su una determinata immagine in una risorsa.
+Recupera informazioni su una determinata immagine in una risorsa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT D3DXGetImageInfoFromResource(
 
 <dl> <dt>
 
-*hSrcModule* \[ in\]
+*hSrcModule* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **hmodule**](../winprog/windows-data-types.md)**
+Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Modulo in cui viene caricata la risorsa. Impostare questo parametro su **null** per specificare il modulo associato all'immagine utilizzata dal sistema operativo per creare il processo corrente.
+Modulo in cui viene caricata la risorsa. Impostare questo parametro su **NULL** per specificare il modulo associato all'immagine usata dal sistema operativo per creare il processo corrente.
 
 </dd> <dt>
 
-*pSrcFile* \[ in\]
+*pSrcFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome del file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati String viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Puntatore a una stringa che specifica il nome file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati stringa viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*pSrcInfo* \[ in\]
+*pSrcInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ info**](d3dximage-info.md)\***
+Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntatore a una struttura di [**\_ informazioni D3DXIMAGE**](d3dximage-info.md) che deve essere riempita con la descrizione dei dati nel file di origine.
+Puntatore a [**una struttura D3DXIMAGE \_ INFO**](d3dximage-info.md) da riempire con la descrizione dei dati nel file di origine.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXGetImageInfoFromResourceW. In caso contrario, la chiamata di funzione viene risolta in D3DXGetImageInfoFromResourceA perché vengono utilizzate le stringhe ANSI.
+L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in D3DXGetImageInfoFromResourceW. In caso contrario, la chiamata di funzione viene risolta in D3DXGetImageInfoFromResourceA perché vengono usate stringhe ANSI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ L'impostazione del compilatore determina anche la versione della funzione. Se è
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

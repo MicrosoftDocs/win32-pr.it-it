@@ -1,7 +1,7 @@
 ---
-description: Esegue un'interpolazione spline eremita, usando i vettori 4D specificati.
+description: "Funzione D3DXVec4Hermite (D3DX10Math.h): esegue un'interpolazione spline hermite usando i vettori 4D specificati."
 ms.assetid: 8fddcd47-8c8a-4e14-86db-07dd44ec5767
-title: Funzione D3DXVec4Hermite (D3DX10Math. h)
+title: Funzione D3DXVec4Hermite (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 49a8f1ea09f055085e9d4befc248203276b85eb5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 15bd9bd6c59980c8c54088358fbe1bdd0490bdaa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323389"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102939"
 ---
-# <a name="d3dxvec4hermite-function-d3dx10mathh"></a>Funzione D3DXVec4Hermite (D3DX10Math. h)
+# <a name="d3dxvec4hermite-function-d3dx10mathh"></a>Funzione D3DXVec4Hermite (D3DX10Math.h)
 
-Esegue un'interpolazione spline eremita, usando i vettori 4D specificati.
+Esegue un'interpolazione spline hermite, usando i vettori 4D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ D3DXVECTOR4* D3DXVec4Hermite(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
@@ -53,7 +53,7 @@ Puntatore a [**D3DXVECTOR4**](d3d10-d3dxvector4.md) che rappresenta il risultato
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -62,7 +62,7 @@ Puntatore a una struttura D3DXVECTOR4 di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*pt1* \[ in\]
+*pT1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -71,7 +71,7 @@ Puntatore a una struttura D3DXVECTOR4 di origine, un vettore tangente.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -80,7 +80,7 @@ Puntatore a una struttura D3DXVECTOR4 di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*PT2* \[ in\]
+*pT2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
@@ -92,7 +92,7 @@ Puntatore a una struttura D3DXVECTOR4 di origine, un vettore tangente.
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di ponderazione. Vedere la sezione Osservazioni.
 
@@ -102,23 +102,23 @@ Fattore di ponderazione. Vedere la sezione Osservazioni.
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntatore a una struttura D3DXVECTOR4 che è il risultato dell'interpolazione della spline eremita.
+Puntatore a una struttura D3DXVECTOR4 che rappresenta il risultato dell'interpolazione spline hermite.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **D3DXVec4Hermite** esegue l'interpolazione da (PositionA, tangentea) a (PositionB, tangentB) usando l'interpolazione spline eremita.
+La **funzione D3DXVec4Hermite** interpola da (positionA, tangentA) a (positionB, tangentB) usando l'interpolazione spline hermite.
 
-L'interpolazione spline è una generalizzazione della spline di Ease-Out. La rampa è una funzione di Q (s) con le proprietà seguenti.
+L'interpolazione spline è una generalizzazione della spline semplice e semplice. La rampa è una funzione di Q(s) con le proprietà seguenti.
 
-Q (s) = come ³ + BS ² + CS + D (e quindi Q '/s = 3As ² + 2B + C)
+Q(s) = As i + Bs più Cs + D (e pertanto Q'(s) = 3As PIÙ + 2Bs + C)
 
-a) Q (0) = V1, quindi Q ' (0) = T1
+a) Q(0) = v1, quindi Q'(0) = t1
 
-b) Q (1) = V2, quindi Q ' (1) = T2
+b) Q(1) = v2, quindi Q'(1) = t2
 
-V1 è il contenuto di pV1, V2 nel contenuto di pV2, T1 è il contenuto di pT1 e T2 è il contenuto di pT2.
+v1 è il contenuto di pV1, v2 nel contenuto di pV2, t1 è il contenuto di pT1 e t2 è il contenuto di pT2.
 
-Queste proprietà vengono utilizzate per la risoluzione di un oggetto, B, C, D.
+Queste proprietà vengono usate per risolvere A, B, C, D.
 
 
 ```
@@ -130,7 +130,7 @@ A + B = v2 - v1 - t1 (substituting for C and D)
 
 
 
-Collegare le soluzioni per a, B, C e D per generare Q (s).
+Collegare le soluzioni per A, B, C e D per generare domande e risposte.
 
 
 ```
@@ -144,15 +144,15 @@ D = v1
 
 Il risultato è il seguente:
 
-Q (s) = (2V1-2v2 + T2 + T1) s ³ + (3V2-3V1-2T1-T2) s ² + T1s + V1
+Q(s) = (2v1 - 2v2 + t2 + t1)s ° + (3v2 - 3v1 - 2t1 - t2)s più + t1s + v1
 
-Che può essere ridisposto come segue:
+Che può essere ridisposto come:
 
-Q (s) = (2S ³-3S ² + 1) V1 + (-2S ³ + 3S ²) V2 + (s ³-2S ² + s) T1 + (s ³-s ²) T2
+Q(s) = (2s i - 3s più 1)v1 + (-2s più 3s 2)v2 + (sZIONI - 2s più s)t1 + (s ° - s più)t2
 
-Le spline di eremita sono utili per controllare l'animazione perché la curva viene eseguita attraverso tutti i punti di controllo. Inoltre, poiché la posizione e la tangente vengono specificate in modo esplicito alle estremità di ogni segmento, è facile creare una curva C2 continua, purché si assicuri che la posizione iniziale e la tangente corrispondano ai valori finali dell'ultimo segmento.
+Le spline ermete sono utili per controllare l'animazione perché la curva attraversa tutti i punti di controllo. Inoltre, poiché la posizione e la tangente vengono specificate in modo esplicito alle estremità di ogni segmento, è facile creare una curva continua C2, purché la posizione iniziale e la tangente corrispondano ai valori finali dell'ultimo segmento.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXVec4Hermite** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXVec4Hermite** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -160,7 +160,7 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
