@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice che appiattisce la geometria in un piano.
+description: 'Funzione D3DXMatrixShadow (D3dx9math.h): compila una matrice che appiatti la geometria in un piano.'
 ms.assetid: 8f283ff9-c879-476c-8057-f4fe77a7a9e7
-title: Funzione D3DXMatrixShadow (D3dx9math. h)
+title: Funzione D3DXMatrixShadow (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e6bf1639adb7364536cce5c0dead9ef58ae10bea
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 111a1448f62cae3f782917de76d92e88aa5a3356
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322637"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118059"
 ---
-# <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Funzione D3DXMatrixShadow (D3dx9math. h)
+# <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Funzione D3DXMatrixShadow (D3dx9math.h)
 
-Compila una matrice che appiattisce la geometria in un piano.
+Compila una matrice che appiattise la geometria in un piano.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ D3DXMATRIX* D3DXMatrixShadow(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*situazione* \[ in\]
+*pLight* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che descrive la posizione della luce.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che descrive la posizione della luce.
 
 </dd> <dt>
 
-*pPlane* \[ in\]
+*pPlane* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Puntatore alla struttura [**D3DXPLANE**](d3dxplane.md) di origine.
+Puntatore alla struttura [**D3DXPLANE di**](d3dxplane.md) origine.
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Puntatore alla struttura [**D3DXPLANE**](d3dxplane.md) di origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) che appiattisce la geometria in un piano.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che appiattirà la geometria in un piano.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **D3DXMatrixShadow** rende flat la geometria in un piano, come se si proiettasse un'ombreggiatura da una luce.
+La **funzione D3DXMatrixShadow** appiattise la geometria in un piano, come se proiettassi un'ombreggiatura da una luce.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixShadow** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixShadow** può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -97,7 +97,7 @@ P.d * L.x      P.d * L.y      P.d * L.z      P.d * L.w + d
 
 
 
-Se il componente w della luce è 0, il raggio dall'origine alla luce rappresenta una luce direzionale. Se è 1, la luce è una luce puntiforme.
+Se il componente w della luce è 0, il raggio dall'origine alla luce rappresenta una luce direzionale. Se è 1, la luce è una luce punto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ Se il componente w della luce è 0, il raggio dall'origine alla luce rappresenta
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

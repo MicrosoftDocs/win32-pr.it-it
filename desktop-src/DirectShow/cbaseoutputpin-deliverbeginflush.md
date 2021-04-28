@@ -1,7 +1,7 @@
 ---
-description: Il metodo DeliverBeginFlush richiede al pin di input connesso di iniziare un'operazione di svuotamento.
+description: "Metodo CBaseOutputPin.DeliverBeginFlush: il metodo DeliverBeginFlush richiede al pin di input connesso di avviare un'operazione di scaricamento."
 ms.assetid: 0d7c7bd7-2a7a-42a4-a0de-60205b62e49c
-title: Metodo CBaseOutputPin. DeliverBeginFlush (Amfilter. h)
+title: Metodo CBaseOutputPin.DeliverBeginFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dad764ceaa6cc57c8c5b7ee288859926b6c63f02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 22dbd2bccf33d9f203d1505106184500b8cae3ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332258"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099519"
 ---
-# <a name="cbaseoutputpindeliverbeginflush-method"></a>CBaseOutputPin. DeliverBeginFlush, metodo
+# <a name="cbaseoutputpindeliverbeginflush-method"></a>Metodo CBaseOutputPin.DeliverBeginFlush
 
-Il `DeliverBeginFlush` metodo richiede al pin di input connesso di iniziare un'operazione di svuotamento.
+Il `DeliverBeginFlush` metodo richiede al pin di input connesso di iniziare un'operazione di scaricamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli elencati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                           | Descrizione                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>              |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il PIN non è connesso.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>              |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il pin non è connesso.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli elencati
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**Ipin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) sul pin di input.
+Questo metodo chiama il [**metodo IPin::BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) sul pin di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Questo metodo chiama il metodo [**Ipin:: BeginFlush**](/windows/desktop/api/Strm
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

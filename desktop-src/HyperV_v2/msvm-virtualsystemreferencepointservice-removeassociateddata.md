@@ -1,5 +1,5 @@
 ---
-description: Rimuove il log dei dati associato al punto di riferimento.
+description: 'Metodo RemoveAssociatedData della Msvm_VirtualSystemReferencePointService: rimuove il log dei dati associato al punto di riferimento.'
 ms.assetid: b6206bda-c195-4c6f-9b80-508c20b53ce5
 title: Metodo RemoveAssociatedData della classe Msvm_VirtualSystemReferencePointService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c0d67502d349f0b0dac7cbf9a1998dcd6db0fb4a
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b5291e4e018edc89909ccde36ce0e420698af8e6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320782"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118619"
 ---
-# <a name="removeassociateddata-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Metodo RemoveAssociatedData della classe MSVM \_ VirtualSystemReferencePointService
+# <a name="removeassociateddata-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Metodo RemoveAssociatedData della classe Msvm \_ VirtualSystemReferencePointService
 
-Rimuove il log dei dati associato al punto di riferimento.
+Rimuove il log di dati associato al punto di riferimento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,33 +40,33 @@ uint32 RemoveAssociatedData(
 
 <dl> <dt>
 
-*AffectedReferencePoint* \[ in\]
+*AffectedReferencePoint* \[ Pollici\]
 </dt> <dd>
 
-Riferimento all'istanza di [**\_ VirtualSystemReferencePoint MSVM**](msvm-virtualsystemreferencepoint.md) che rappresenta il punto di riferimento da rimuovere.
+Riferimento [**all'istanza di Msvm \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) che rappresenta il punto di riferimento da rimuovere.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Parametro facoltativo per il monitoraggio dello stato di avanzamento dell'operazione, che viene utilizzato se non è stato possibile eseguire in modo sincrono il metodo. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
+Parametro facoltativo per il monitoraggio dello stato dell'operazione, che viene utilizzato se non è stato possibile eseguire il metodo in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0 (completa senza errori) o 4096 (processo avviato); in caso contrario, viene restituito un errore.
+In caso di esito positivo, restituisce 0 (completo senza errori) o 4096 (processo avviato). In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -75,25 +75,25 @@ In caso di esito positivo, restituisce 0 (completa senza errori) o 4096 (process
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -105,10 +105,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_VirtualSystemReferencePointService MSVM**](msvm-virtualsystemreferencepointservice.md)
+[**Msvm \_ VirtualSystemReferencePointService**](msvm-virtualsystemreferencepointservice.md)
 </dt> </dl>
 
  

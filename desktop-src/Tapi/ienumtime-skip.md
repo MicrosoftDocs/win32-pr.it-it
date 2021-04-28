@@ -1,21 +1,21 @@
 ---
-description: Il metodo Skip ignora il successivo numero specificato di elementi nella sequenza di enumerazione.
+description: 'Metodo IEnumTime::Skip: il metodo Skip ignora il successivo numero specificato di elementi nella sequenza di enumerazione.'
 ms.assetid: e4d9c95d-1b68-4af6-beb2-2014074e5089
-title: 'Metodo IEnumTime:: Skip (sdpblb. h)'
+title: Metodo IEnumTime::Skip (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebd157afc51f52a8453c38f8a14702476c46eb9d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 190a98c14cb8f551276a173e2d73872d876f2ceb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330746"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090719"
 ---
-# <a name="ienumtimeskip-method"></a>Metodo IEnumTime:: Skip
+# <a name="ienumtimeskip-method"></a>Metodo IEnumTime::Skip
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[ I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **Skip** ignora il successivo numero specificato di elementi nella sequenza di enumerazione.
+Il **metodo Skip** ignora il successivo numero specificato di elementi nella sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,7 +32,7 @@ HRESULT Skip(
 
 <dl> <dt>
 
-*celt* \[ in\]
+*celt* \[ Pollici\]
 </dt> <dd>
 
 Numero di elementi da ignorare.
@@ -47,8 +47,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                             | Descrizione                                           |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>    | Il numero di elementi ignorati è *celt*.<br/>     |
-| <dl> <dt>**S \_ false**</dt> </dl> | Il numero di elementi ignorati non è *celt*.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Il numero di elementi ignorati è *celt*.<br/>     |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Il numero di elementi ignorati non è *stato cel*.<br/> |
 
 
 
@@ -60,9 +60,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

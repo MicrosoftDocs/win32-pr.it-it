@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore.
+description: Distruttore CBaseMediaFilter.~CBaseMediaFilter - Metodo del distruttore.
 ms.assetid: f6e272c3-bb6c-4730-aa2b-a94bc5971db6
-title: Distruttore CBaseMediaFilter. ~ CBaseMediaFilter (Amfilter. h)
+title: Distruttore CBaseMediaFilter.~CBaseMediaFilter (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 292e668d047d8e41766a3a5a8e6c5ef73a37c0dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93e5b967d0e2f41671f5924f7e92d06bae36ec1c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325385"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099629"
 ---
-# <a name="cbasemediafiltercbasemediafilter-destructor"></a>Distruttore CBaseMediaFilter. ~ CBaseMediaFilter
+# <a name="cbasemediafiltercbasemediafilter-destructor"></a>Distruttore CBaseMediaFilter.~CBaseMediaFilter
 
 Metodo del distruttore.
 
@@ -46,8 +46,8 @@ Arrestare sempre l'oggetto prima di eliminarlo.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

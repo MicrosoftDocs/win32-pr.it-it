@@ -1,5 +1,5 @@
 ---
-description: Tenta di collocare il servizio a cui si fa riferimento nello stato di avvio.
+description: 'Metodo StartService della classe Win32_Service (provider WMI CIMWin32): tenta di inserire il servizio di riferimento nello stato di avvio.'
 ms.assetid: b7a815a2-7bf6-436f-b3b4-de55eeb2de0e
 ms.tgt_platform: multiple
 title: Metodo StartService della classe Win32_Service (provider WMI CIMWin32)
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: eb530766781de4e23cc86778c1597a5c5c2a1014
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a630b9d926ff5377312f1c67630a20816ab38b6c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966134"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086159"
 ---
 # <a name="startservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo StartService della classe Win32_Service (provider WMI CIMWin32)
 
-Il metodo **StartService** tenta di collocare il servizio a cui si fa riferimento nello stato di avvio.
+Il **metodo StartService** tenta di inserire il servizio a cui si fa riferimento nello stato di avvio.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**Proprietà state** ) è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** ) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Errore sconosciuto durante l'avvio del servizio.
 **9**
 </dt> <dd>
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -161,14 +161,14 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 **16**
 </dt> <dd>
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
 **17**
 </dt> <dd>
 
-Il servizio non dispone di un thread di esecuzione.
+Il servizio non ha thread di esecuzione.
 
 </dd> <dt>
 
@@ -196,14 +196,14 @@ Il nome del servizio contiene caratteri non validi.
 **21**
 </dt> <dd>
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
 **22**
 </dt> <dd>
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -223,22 +223,22 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Sebbene sia possibile che non esistano differenze pratiche tra un servizio interrotto e un servizio sospeso, i due stati vengono visualizzati in modo diverso rispetto a SCM. Un servizio interrotto è un servizio che non è in esecuzione e che deve seguire l'intera procedura di avvio del servizio. Un servizio sospeso, tuttavia, è ancora in esecuzione, ma il suo funzionamento è stato sospeso. Per questo motivo, non è necessario che un servizio sospeso attraversi l'intera procedura di avvio del servizio, ma è necessaria una procedura diversa per riprendere il funzionamento.
+Anche se potrebbe sembrare che non vi sia alcuna differenza pratica tra un servizio arrestato e un servizio in pausa, i due stati appaiono in modo diverso rispetto a Gestione controllo servizi. Un servizio arrestato è un servizio che non è in esecuzione e deve eseguire l'intera procedura di avvio del servizio. Un servizio sospeso, tuttavia, è ancora in esecuzione, ma ha avuto il suo funzionamento sospeso. Per questo problema, un servizio sospeso non deve eseguire l'intera procedura di avvio del servizio, ma richiede una procedura diversa per riprendere il funzionamento.
 
-È necessario utilizzare il metodo appropriato per avviare un servizio che è stato interrotto o per riprendere un servizio che è stato sospeso. I metodi del [**\_ servizio Win32**](win32-service.md) **StartService** e [**ResumeService**](resumeservice-method-in-class-win32-service.md) devono essere utilizzati nelle situazioni seguenti:
+È necessario utilizzare il metodo appropriato per avviare un servizio arrestato o per riprendere un servizio sospeso. I [**metodi \_ startService**](win32-service.md) e [**ResumeService**](resumeservice-method-in-class-win32-service.md) del servizio Win32 devono essere usati nelle situazioni seguenti: 
 
--   Se un servizio è attualmente arrestato, è necessario usare il metodo **StartService** per riavviarlo; [**ResumeService**](resumeservice-method-in-class-win32-service.md) non è in grado di avviare un servizio attualmente arrestato.
--   Se un servizio viene sospeso, è necessario utilizzare [**ResumeService**](resumeservice-method-in-class-win32-service.md). Se si usa il metodo **StartService** in un servizio in pausa, viene visualizzato il messaggio "il servizio è già in esecuzione". Tuttavia, il servizio rimane sospeso fino a quando non viene inviato il codice di controllo del servizio di ripresa.
+-   Se un servizio è attualmente arrestato, è necessario usare il **metodo StartService** per riavviarlo. [**ResumeService**](resumeservice-method-in-class-win32-service.md) non può avviare un servizio attualmente arrestato.
+-   Se un servizio è in pausa, è necessario usare [**ResumeService**](resumeservice-method-in-class-win32-service.md). Se si usa il **metodo StartService** in un servizio sospeso, viene visualizzato il messaggio "Il servizio è già in esecuzione". Tuttavia, il servizio rimane in pausa fino a quando non viene inviato il codice di controllo del servizio di ripresa.
 
-Se si avvia un servizio interrotto che dipende da un altro servizio, vengono avviati entrambi i servizi. Quando un servizio viene avviato con questo metodo, tutti i servizi dipendenti non vengono avviati automaticamente. Per individuare i dipendenti e avviarli separatamente, è necessario utilizzare la classe di associazione [**Win32 \_ DependentService**](win32-dependentservice.md) e gli [associatori di](/windows/desktop/WmiSdk/associators-of-statement) query.
+Se si avvia un servizio arrestato che dipende da un altro servizio, vengono avviati entrambi i servizi. Quando un servizio viene avviato con questo metodo, i servizi dipendenti non vengono avviati automaticamente. È necessario usare la classe di associazione [**Win32 \_ DependentService**](win32-dependentservice.md) e la query [Associators Of](/windows/desktop/WmiSdk/associators-of-statement) per individuare i dipendenti e avviarli separatamente.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di [abilitazione remota](https://Gallery.TechNet.Microsoft.Com/Remotely-Enable-RDP-855c3842) di PowerShell per RDP Abilita in remoto il servizio desktop remoto.
+L'esempio di PowerShell [Remotely Enable RDP](https://Gallery.TechNet.Microsoft.Com/Remotely-Enable-RDP-855c3842) abilita il Desktop remoto remoto.
 
-L'esempio di [arresto, avvio, abilitazione o disabilitazione](https://Gallery.TechNet.Microsoft.Com/212e68f0-5279-4499-8e9e-6aa1807719c0) di PowerShell per il servizio avvia, arresta, Abilita o Disabilita un servizio.
+L'esempio di PowerShell [Arresta, Avvia, Abilita](https://Gallery.TechNet.Microsoft.Com/212e68f0-5279-4499-8e9e-6aa1807719c0) o Disabilita servizio avvia, arresta, abilita o disabilita un servizio.
 
-Nell'esempio di codice VBSScript seguente viene illustrato come avviare un servizio specifico dalle istanze [**del \_ servizio Win32**](win32-service.md).
+L'esempio di codice VBSScript seguente illustra come avviare un servizio specifico da istanze del [**servizio Win32. \_**](win32-service.md)
 
 
 ```VB
@@ -253,7 +253,7 @@ next
 
 
 
-Nell'esempio di codice Perl seguente viene illustrato come avviare un servizio specifico dalle istanze [**del \_ servizio Win32**](win32-service.md).
+Nell'esempio di codice Perl seguente viene illustrato come avviare un servizio specifico da istanze del [**servizio Win32. \_**](win32-service.md)
 
 
 ```
@@ -289,7 +289,7 @@ else
 
 
 
-Il seguente codice VBScript di esempio, NetDDE, dipende dal servizio NetDDEDSDM. Lo script individua la classe da cui dipende NetDDE e la avvia, che non avvia automaticamente NetDDE.
+L'esempio di codice VBScript seguente, NetDDE, dipende dal servizio NetDDEDSDM. Lo script individua la classe da cui dipende NetDDE e lo avvia, che non avvia automaticamente NetDDE.
 
 
 ```VB
@@ -332,7 +332,7 @@ WScript.Echo "Dependent NetDDE service is " & objNetDDEService.State
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -344,7 +344,7 @@ WScript.Echo "Dependent NetDDE service is " & objNetDDEService.State
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Servizio Win32**](win32-service.md)
+[**Servizio \_ Win32**](win32-service.md)
 </dt> <dt>
 
 [Attività WMI: Servizi](/windows/desktop/WmiSdk/wmi-tasks--services)

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetMediaType recupera un tipo di supporto preferito, in base al valore di indice.
+description: 'Metodo CBasePin.GetMediaType: il metodo GetMediaType recupera un tipo di supporto preferito, in base al valore di indice.'
 ms.assetid: 96f102b0-e2d1-49a1-84af-aa4622cae2a9
-title: Metodo CBasePin. GetMediaType (Amfilter. h)
+title: Metodo CBasePin.GetMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9c54c5cd769a8efa0c720c7050cca45b00b8209e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 186f2eddbedf4eb0565a4ca66ff4ed7e5b080090
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333605"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099369"
 ---
-# <a name="cbasepingetmediatype-method"></a>CBasePin. GetMediaType, metodo
+# <a name="cbasepingetmediatype-method"></a>Metodo CBasePin.GetMediaType
 
 Il `GetMediaType` metodo recupera un tipo di supporto preferito, in base al valore di indice.
 
@@ -53,22 +53,22 @@ Valore di indice in base zero.
 *pMediaType* 
 </dt> <dd>
 
-Puntatore a un oggetto [**CMediaType**](cmediatype.md) che riceve il tipo di supporto.
+Puntatore a un [**oggetto CMediaType**](cmediatype.md) che riceve il tipo di supporto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli nella tabella seguente.
 
 
 
 | Codice restituito                                                                                            | Descrizione                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                   | Esito positivo.<br/>              |
-| <dl> <dt>**\_non ci \_ sono \_ altri \_ elementi di VFW**</dt> </dl> | Indice non compreso nell'intervallo.<br/>   |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione completata.<br/>              |
+| <dl> <dt>**VFW \_ S \_ NO \_ MORE \_ ITEMS**</dt> </dl> | Indice non compreso nell'intervallo.<br/>   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Indice minore di zero.<br/> |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl>           | Errore imprevisto.<br/>     |
+| <dl> <dt>**E \_ IMPREVISTO**</dt> </dl>           | Errore imprevisto.<br/>     |
 
 
 
@@ -76,9 +76,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Dall'elenco dei tipi di supporto preferiti del PIN, questo metodo restituisce il tipo con un valore di indice *iPosition*. La classe [**CEnumMediaTypes**](cenummediatypes.md) chiama questo metodo per enumerare i tipi di supporto preferiti.
+Dall'elenco dei tipi di supporti preferiti, questo metodo restituisce il tipo con un valore di indice *iPosition*. La [**classe CEnumMediaTypes**](cenummediatypes.md) chiama questo metodo per enumerare i tipi di supporti preferiti.
 
-La classe base restituisce E \_ imprevisto. Eseguire l'override di questo metodo nella classe derivata.
+La classe base restituisce E \_ UNEXPECTED. Eseguire l'override di questo metodo nella classe derivata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,8 +86,8 @@ La classe base restituisce E \_ imprevisto. Eseguire l'override di questo metodo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

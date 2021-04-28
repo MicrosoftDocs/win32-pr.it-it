@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CUnknown.CUnknown : metodo costruttore.'
 ms.assetid: dafe0d5c-b4c8-4efb-8c47-a8c5db6e8aed
-title: Costruttore CUnknown. CUnknown (ComBase. h)
+title: Costruttore CUnknown.CUnknown (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b500e7f12a2242b6c05367bc061f50680d2d608b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 32859871f8ef69ce357fe204f0741356314fbb06
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326165"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084609"
 ---
-# <a name="cunknowncunknown-constructor"></a>Costruttore CUnknown. CUnknown
+# <a name="cunknowncunknown-constructor"></a>Costruttore CUnknown.CUnknown
 
 Metodo del costruttore.
 
@@ -43,17 +43,17 @@ CUnknown(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Stringa contenente il nome dell'oggetto. usato nel costruttore [**CBaseObject**](cbaseobject.md) per il debug.
+Stringa contenente il nome dell'oggetto. utilizzato nel costruttore [**CBaseObject per**](cbaseobject.md) il debug.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia IUnknown dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario dell'oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia IUnknown dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ L'oggetto viene inizializzato con un conteggio dei riferimenti pari a zero.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

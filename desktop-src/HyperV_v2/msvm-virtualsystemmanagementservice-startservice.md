@@ -1,5 +1,5 @@
 ---
-description: avvia il servizio.
+description: 'Metodo StartService della classe Msvm_VirtualSystemManagementService : avvia il servizio.'
 ms.assetid: 1a1819de-823e-4e97-9c04-fcaeea2c67d9
 title: Metodo StartService della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 887999e19276c29a9501ddd5d86fba45bdbaeb92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ebb07240fdd95d98269056eca4eefe691f52077
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525195"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118639"
 ---
-# <a name="startservice-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo StartService della classe MSVM \_ VirtualSystemManagementService
+# <a name="startservice-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo StartService della classe Msvm \_ VirtualSystemManagementService
 
 avvia il servizio.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

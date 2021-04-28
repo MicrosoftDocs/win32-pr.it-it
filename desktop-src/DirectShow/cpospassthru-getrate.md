@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo getrate recupera la velocità di riproduzione. Questo metodo implementa il metodo IMediaSeeking:: getrate.'
+description: 'Metodo CPosPassThru.GetRate: il metodo GetRate recupera la velocità di riproduzione. Questo metodo implementa il metodo IMediaSeeking::GetRate.'
 ms.assetid: 19de3ea3-280e-4320-9cce-2c29801bd84b
-title: Metodo CPosPassThru. getrate (Ctlutil. h)
+title: Metodo CPosPassThru.GetRate (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 13e96bb231eb3e5c41f8cdf18c649f20955ba5cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 997323ca2089a0b381b85c3730cb364d0883b1bf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325512"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085559"
 ---
-# <a name="cpospassthrugetrate-method"></a>CPosPassThru. getrate, metodo
+# <a name="cpospassthrugetrate-method"></a>Metodo CPosPassThru.GetRate
 
-Il `GetRate` metodo recupera la velocità di riproduzione. Questo metodo implementa il metodo [**IMediaSeeking:: getrate**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getrate) .
+Il `GetRate` metodo recupera la velocità di riproduzione. Questo metodo implementa il [**metodo IMediaSeeking::GetRate.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getrate)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Puntatore a una variabile che riceve la velocità di riproduzione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

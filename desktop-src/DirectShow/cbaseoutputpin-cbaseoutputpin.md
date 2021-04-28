@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CBaseOutputPin.CBaseOutputPin : metodo del costruttore.'
 ms.assetid: 1105c951-a51d-49ab-a69d-f3d482d61233
-title: Costruttore CBaseOutputPin. CBaseOutputPin (Amfilter. h)
+title: Costruttore CBaseOutputPin.CBaseOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0461c5056ee48caa19f21d1fcb8fcf1636157d9f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9901591be32d431ebe53a2098456446a0126d26b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332075"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099569"
 ---
-# <a name="cbaseoutputpincbaseoutputpin-constructor"></a>Costruttore CBaseOutputPin. CBaseOutputPin
+# <a name="cbaseoutputpincbaseoutputpin-constructor"></a>Costruttore CBaseOutputPin.CBaseOutputPin
 
 Metodo del costruttore.
 
@@ -49,41 +49,41 @@ CBaseOutputPin(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug dell'oggetto. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Stringa contenente il nome di debug dell'oggetto. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
 *pFilter* 
 </dt> <dd>
 
-Puntatore al filtro che ha creato questo pin.
+Puntatore al filtro che ha creato questo segnaposto.
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Puntatore a un blocco [**CCritSec**](ccritsec.md) , usato per serializzare le modifiche di stato. Può trattarsi della stessa sezione critica del blocco filter, [**CBaseFilter:: m \_ pLock**](cbasefilter-m-plock.md).
+Puntatore a un [**blocco CCritSec,**](ccritsec.md) utilizzato per serializzare le modifiche dello stato. Può trattarsi della stessa sezione critica del blocco del filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve un valore **HRESULT** che indica l'esito positivo o negativo del metodo.
+Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito positivo o negativo del metodo.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Stringa di caratteri wide contenente il nome del PIN (usato anche come identificatore del pin).
+Stringa di caratteri wide contenente il nome del segnaposto (usato anche come identificatore pin).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri vengono passati direttamente al costruttore [**CBasePin**](cbasepin.md) .
+Tutti i parametri vengono passati direttamente al [**costruttore CBasePin.**](cbasepin.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Tutti i parametri vengono passati direttamente al costruttore [**CBasePin**](cba
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Questa struttura contiene informazioni sul firmware del dispositivo.
+description: 'STORAGE_HW_FIRMWARE_INFO: questa struttura contiene informazioni sul firmware del dispositivo.'
 ms.assetid: 7BDACD50-0FD1-4F00-BAE5-884D8C1485BC
-title: Struttura STORAGE_HW_FIRMWARE_INFO (winioctl. h)
+title: STORAGE_HW_FIRMWARE_INFO struttura (Winioctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - winioctl.h.h
-ms.openlocfilehash: 5d611df1708059b0ee636a64f55026caf8801fff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7aa3d33f744b00fc742a2862add83149cb265b4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316769"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090959"
 ---
-# <a name="storage_hw_firmware_info-structure"></a>\_Struttura delle \_ informazioni del firmware HW di archiviazione \_
+# <a name="storage_hw_firmware_info-structure"></a>Struttura DELLE \_ INFORMAZIONI \_ DEL FIRMWARE HW DI \_ ARCHIVIAZIONE
 
 Questa struttura contiene informazioni sul firmware del dispositivo.
 
@@ -53,25 +53,25 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO {
 **Versione**
 </dt> <dd>
 
-Versione della struttura. Deve essere impostato su sizeof (informazioni sul \_ firmware HW di archiviazione \_ \_ )
+Versione di questa struttura . Deve essere impostato su sizeof(STORAGE \_ HW \_ FIRMWARE \_ INFO)
 
 </dd> <dt>
 
-**Dimensioni**
+**Size**
 </dt> <dd>
 
-Dimensione della struttura come buffer, incluso lo slot.
+Dimensione di questa struttura come buffer che include lo slot.
 
 </dd> <dt>
 
 **SupportUpgrade**
 </dt> <dd>
 
-Indica che il firmware supporta un aggiornamento.
+Indica che questo firmware supporta un aggiornamento.
 
 </dd> <dt>
 
-**Reserved0**
+**Riservato0**
 </dt> <dd>
 
 Riservato per utilizzi futuri.
@@ -81,10 +81,10 @@ Riservato per utilizzi futuri.
 **SlotCount**
 </dt> <dd>
 
-Il numero di slot del firmware nel dispositivo. Si tratta della dimensione della matrice di slot.
+Numero di slot del firmware nel dispositivo. Si tratta della dimensione della matrice Slot.
 
 > [!Note]  
-> Alcuni dispositivi possono archiviare più di un'immagine del firmware, se hanno più di 1 slot del firmware.
+> Alcuni dispositivi possono archiviare più di un'immagine del firmware, se hanno più di uno slot del firmware.
 
  
 
@@ -93,7 +93,7 @@ Il numero di slot del firmware nel dispositivo. Si tratta della dimensione della
 **ActiveSlot**
 </dt> <dd>
 
-Slot del firmware che contiene l'immagine del firmware attualmente attivo o in esecuzione.
+Slot del firmware contenente l'immagine del firmware attualmente attiva/in esecuzione.
 
 </dd> <dt>
 
@@ -104,10 +104,10 @@ Slot del firmware in attesa di attivazione.
 
 </dd> <dt>
 
-**FirmwareShared**
+**Firmware Condiviso**
 </dt> <dd>
 
-Indica che il firmware si applica sia al dispositivo che al controller/adattatore, ad esempio NVMe SSD.
+Indica che il firmware si applica sia al dispositivo che al controller/adattatore, ad esempio alle unità SSD NVMe.
 
 </dd> <dt>
 
@@ -121,21 +121,21 @@ Riservato per utilizzi futuri.
 **ImagePayloadAlignment**
 </dt> <dd>
 
-Allineamento del payload dell'immagine, in numero di byte. Il valore massimo è la dimensione della pagina \_ . La dimensione di trasferimento è un mutliple di queste dimensioni. Alcuni protocolli richiedono almeno dimensioni del settore. Quando questo valore è impostato su 0, significa che questo valore non è valido.
+Allineamento del payload dell'immagine, in numero di byte. Il valore massimo è PAGE \_ SIZE. Le dimensioni di trasferimento sono un'mutlipla di queste dimensioni. Alcuni protocolli richiedono almeno le dimensioni del settore. Quando questo valore è impostato su 0, questo valore non è valido.
 
 </dd> <dt>
 
 **ImagePayloadMaxSize**
 </dt> <dd>
 
-Dimensioni massime del payload dell'immagine, utilizzate per un singolo comando.
+Dimensione massima del payload dell'immagine, usata per un singolo comando.
 
 </dd> <dt>
 
 **Slot**
 </dt> <dd>
 
-Contiene le informazioni sugli slot per ogni slot del dispositivo, di tipo [**informazioni slot del \_ \_ firmware \_ \_ HW di archiviazione**](storage-hw-firmware-slot-info.md).
+Contiene le informazioni sullo slot per ogni slot nel dispositivo, di tipo [**STORAGE \_ HW \_ FIRMWARE SLOT \_ \_ INFO**](storage-hw-firmware-slot-info.md).
 
 </dd> </dl>
 
@@ -145,9 +145,9 @@ Contiene le informazioni sugli slot per ogni slot del dispositivo, di tipo [**in
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Winioctl. h. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                                 |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2016 \[\]<br/>                                                        |
+| Intestazione<br/>                   | <dl> <dt>Winioctl.h.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -155,25 +155,25 @@ Contiene le informazioni sugli slot per ogni slot del dispositivo, di tipo [**in
 
 <dl> <dt>
 
-[**\_attivazione del \_ firmware di archiviazione IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
+[**ATTIVAZIONE DEL FIRMWARE DI ARCHIVIAZIONE IOCTL \_ \_ \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
 </dt> <dt>
 
-[**\_attivazione del \_ firmware \_ HW di archiviazione**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
+[**ATTIVAZIONE \_ FIRMWARE HW \_ DI \_ ARCHIVIAZIONE**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
 </dt> <dt>
 
-[**\_download del \_ firmware di archiviazione IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
+[**DOWNLOAD DEL FIRMWARE DI ARCHIVIAZIONE IOCTL \_ \_ \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
 </dt> <dt>
 
-[**\_download del \_ firmware \_ HW di archiviazione**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
+[**DOWNLOAD \_ DEL FIRMWARE HW DI \_ \_ ARCHIVIAZIONE**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
 </dt> <dt>
 
-[**\_informazioni sul \_ firmware di archiviazione \_ IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
+[**INFORMAZIONI SUL \_ FIRMWARE DI \_ ARCHIVIAZIONE \_ IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
 </dt> <dt>
 
-[**\_query sulle \_ informazioni del firmware HW \_ di archiviazione \_**](storage-hw-firmware-info-query.md)
+[**\_QUERY DI INFORMAZIONI SUL FIRMWARE HW DI \_ \_ \_ ARCHIVIAZIONE**](storage-hw-firmware-info-query.md)
 </dt> <dt>
 
-[**\_informazioni sugli \_ slot del firmware HW \_ di archiviazione \_**](storage-hw-firmware-slot-info.md)
+[**INFORMAZIONI \_ DELLO SLOT DEL FIRMWARE HW DI \_ \_ \_ ARCHIVIAZIONE**](storage-hw-firmware-slot-info.md)
 </dt> </dl>
 
  
