@@ -1,6 +1,6 @@
 ---
-description: Consente di visualizzare le finestre aperte in uno stack 3D che è possibile scorrere.
-title: 'Metodo Shell:: aperto WindowSwitcher (shldisp. h)'
+description: 'Metodo Shell::WindowSwitcher: visualizza le finestre aperte in uno stack 3D che è possibile scorrere.'
+title: Metodo Shell::WindowSwitcher (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 89825430-C28E-4d38-A8F7-69A1408DDD73
-ms.openlocfilehash: 970e0b15ddeba2cd7e804ca998bdf201a442bc73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c21c7a287ef6b90e15d690314c3491cad711bce4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980599"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104049"
 ---
-# <a name="shellwindowswitcher-method"></a>Metodo Shell:: aperto WindowSwitcher
+# <a name="shellwindowswitcher-method"></a>Metodo Shell::WindowSwitcher
 
-Consente di visualizzare le finestre aperte in uno stack 3D che è possibile scorrere.
+Visualizza le finestre aperte in uno stack 3D che è possibile scorrere.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,10 +61,10 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                         |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

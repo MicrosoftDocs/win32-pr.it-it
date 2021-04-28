@@ -1,5 +1,5 @@
 ---
-description: Rimuove il log dei dati associato al punto di riferimento.
+description: 'Metodo RemoveAssociatedData della Msvm_CollectionReferencePointService: rimuove il log dei dati associato al punto di riferimento.'
 ms.assetid: 42242b76-9123-41a7-b8b1-82d2e827ea53
 title: Metodo RemoveAssociatedData della classe Msvm_CollectionReferencePointService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: aec1ac249616c08c6abf1f156ad5a3416c8afaff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66a5cf068545f31f9919a9da60a1b09b32f78e4d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317195"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119229"
 ---
-# <a name="removeassociateddata-method-of-the-msvm_collectionreferencepointservice-class"></a>Metodo RemoveAssociatedData della classe MSVM \_ CollectionReferencePointService
+# <a name="removeassociateddata-method-of-the-msvm_collectionreferencepointservice-class"></a>Metodo RemoveAssociatedData della classe Msvm \_ CollectionReferencePointService
 
-Rimuove il log dei dati associato al punto di riferimento.
+Rimuove il log di dati associato al punto di riferimento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ uint32 RemoveAssociatedData(
 
 <dl> <dt>
 
-*AffectedReferencePointCollection* \[ in\]
+*AffectedReferencePointCollection* \[ Pollici\]
 </dt> <dd>
 
 Riferimento alla raccolta di punti di riferimento del sistema virtuale interessata.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); in caso contrario, viene restituito un errore.
+In caso di esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -66,13 +66,13 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -81,16 +81,16 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 **Tipo non valido** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -99,10 +99,10 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 
 <dl> <dt>
 
-[**\_CollectionReferencePointService MSVM**](msvm-collectionreferencepointservice.md)
+[**Msvm \_ CollectionReferencePointService**](msvm-collectionreferencepointservice.md)
 </dt> </dl>
 
  

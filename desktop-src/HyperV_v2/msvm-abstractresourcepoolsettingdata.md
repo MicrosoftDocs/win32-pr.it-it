@@ -1,7 +1,7 @@
 ---
-description: Rappresenta le impostazioni di un' \_ istanza di ResourcePool MSVM che non sono correlate all'allocazione.
+description: "Msvm_AbstractResourcePoolSettingData classe: rappresenta le impostazioni di un'istanza \\_ di Msvm ResourcePool che non sono correlate all'allocazione."
 ms.assetid: c5954a92-8942-4b45-aae2-6936328dab1a
-title: Classe Msvm_AbstractResourcePoolSettingData
+title: Msvm_AbstractResourcePoolSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9109bd428797c8c4f1073577e015bf4b9eddcc07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dca3da14ac74a8d6fab1ba96db98f9e2eccd74ea
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967824"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112119"
 ---
-# <a name="msvm_abstractresourcepoolsettingdata-class"></a>\_Classe MSVM AbstractResourcePoolSettingData
+# <a name="msvm_abstractresourcepoolsettingdata-class"></a>Classe Msvm \_ AbstractResourcePoolSettingData
 
-Rappresenta le impostazioni di un'istanza di [**\_ ResourcePool MSVM**](msvm-resourcepool.md) che non sono correlate all'allocazione.
+Rappresenta le impostazioni di [**un'istanza di Msvm \_ ResourcePool**](msvm-resourcepool.md) che non sono correlate all'allocazione.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,59 +61,59 @@ class Msvm_AbstractResourcePoolSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ AbstractResourcePoolSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ AbstractResourcePoolSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ AbstractResourcePoolSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ AbstractResourcePoolSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -122,20 +122,20 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **LoadBalancingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica la strategia di allocazione che verrà usata dal pool di risorse per bilanciare l'utilizzo delle risorse tra le risorse aggregate.
+Specifica la strategia di allocazione che deve essere usata dal pool di risorse per bilanciare l'utilizzo delle risorse tra le risorse aggregate.
 
 <dt>
 
@@ -179,7 +179,7 @@ Specifica la strategia di allocazione che verrà usata dal pool di risorse per b
 **MappingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -188,7 +188,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md).**MappingBehavior**")
 </dt> </dl>
 
-Specifica se il pool di risorse può tentare di usare altre risorse host per soddisfare la richiesta di allocazione se le risorse desiderate non possono essere allocate.
+Specifica se il pool di risorse può tentare di usare altre risorse host per soddisfare la richiesta di allocazione se non è possibile allocare le risorse desiderate.
 
 <dt>
 
@@ -215,28 +215,28 @@ Specifica se il pool di risorse può tentare di usare altre risorse host per sod
 
 <span id="Soft_Affinity"></span><span id="soft_affinity"></span><span id="SOFT_AFFINITY"></span>
 
-**Affinità Soft** (4)
+**Affinità soft** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Hard_Affinity"></span><span id="hard_affinity"></span><span id="HARD_AFFINITY"></span>
 
-**Affinità hardware** (5)
+**Affinità rigida** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32767.. 65535)
+**Vendor Reserved** (32767..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -246,23 +246,23 @@ Specifica se il pool di risorse può tentare di usare altre risorse host per sod
 **MappingOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**MSVM \_ ResourcePoolSettingData**](msvm-resourcepoolsettingdata.md).**MappingBehavior**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Msvm \_ ResourcePoolSettingData**](msvm-resourcepoolsettingdata.md).**MappingBehavior**")
 </dt> </dl>
 
-Specifica l'ordine in cui verranno selezionate le risorse host disponibili tramite questo pool quando si tenta di soddisfare una richiesta di allocazione e la risorsa host richiesta non è disponibile o non è specificata alcuna risorsa host.
+Specifica l'ordine in cui verranno selezionate le risorse host disponibili tramite questo pool quando si tenta di soddisfare una richiesta di allocazione e la risorsa host richiesta non è disponibile o non viene specificata alcuna risorsa host.
 
 </dd> <dt>
 
 **Note**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -275,7 +275,7 @@ Note fornite dall'utente finale correlate a questo pool di risorse.
 **OtherResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -284,14 +284,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourcePool**](cim-resourcepool.md).**OtherResourceType**")
 </dt> </dl>
 
-Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben definito e **ResourceType** è impostato su 0 (other).
+Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben definito e **ResourceType** è impostato su 0 (Altro).
 
 </dd> <dt>
 
 **PoolID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -300,14 +300,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourcePool**](cim-resourcepool.md).**PoolID**")
 </dt> </dl>
 
-Identificatore per il pool. Questa proprietà viene utilizzata per fornire la correlazione tra il salvataggio e il ripristino dei dati di configurazione nell'archivio permanente sottostante.
+Identificatore per il pool. Questa proprietà viene usata per fornire la correlazione tra il salvataggio e il ripristino dei dati di configurazione nell'archiviazione permanente sottostante.
 
 </dd> <dt>
 
 **ResourceSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -316,14 +316,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourcePool**](cim-resourcepool.md).**ResourceSubType**")
 </dt> </dl>
 
-Stringa che descrive un sottotipo specifico dell'implementazione per il pool. Ad esempio, può essere usato per distinguere modelli diversi dello stesso tipo di risorsa.
+Stringa che descrive un sottotipo specifico di implementazione per questo pool. Ad esempio, può essere usato per distinguere modelli diversi dello stesso tipo di risorsa.
 
 </dd> <dt>
 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -332,7 +332,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourcePool**](cim-resourcepool.md).**ResourceType**")
 </dt> </dl>
 
-Tipo di risorsa che questo pool di risorse può allocare.
+Tipo di risorsa che il pool di risorse può allocare.
 
 <dt>
 
@@ -373,21 +373,21 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 <span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>
 
-**HBA SCSI parallelo** (6)
+**HBA SCSI parallela** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_HBA"></span><span id="fc_hba"></span>
 
-**HBA FC** (7)
+**FC HBA** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>
 
-**HBA iSCSI** (8)
+**ISCSI HBA** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -408,21 +408,21 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 <span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>
 
-**Altra scheda di rete** (11)
+**Altra scheda di** rete (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>
 
-**Slot I/O** (12)
+**Slot di I/O** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>
 
-**Dispositivo I/O** (13)
+**Dispositivo di I/O** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -464,14 +464,14 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extent di archiviazione** (19)
+**Extent di** archiviazione (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Other_storage_device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>
 
-**Altro dispositivo di archiviazione** (20)
+**Altro dispositivo di** archiviazione (20)
 
 
 </dt> <dd></dd> <dt>
@@ -499,14 +499,14 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 <span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>
 
-**Controller grafica** (24)
+**Controller grafico** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_1394_Controller"></span><span id="ieee_1394_controller"></span><span id="IEEE_1394_CONTROLLER"></span>
 
-**Controller IEEE 1394** (25)
+**IEEE 1394 controller** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -527,7 +527,7 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 <span id="Power"></span><span id="power"></span><span id="POWER"></span>
 
-**Potenza** (28)
+**Alimentazione** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -541,7 +541,7 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 <span id="Ethernet_Switch_Port"></span><span id="ethernet_switch_port"></span><span id="ETHERNET_SWITCH_PORT"></span>
 
-**Porta switch Ethernet** (30)
+**Porta commutatore Ethernet** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -576,7 +576,7 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (0x8000.. 0xFFFF
+**Fornitore riservato** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -589,10 +589,10 @@ Tipo di risorsa che questo pool di risorse può allocare.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi del registro di sistema. La sintassi seguente è semplificata dal codice MOF.
+description: 'Registry_TypeGroup1 classe: questa classe è la classe del tipo di evento per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 8d0e9d97-3837-46da-a217-13e943580352
-title: Classe Registry_TypeGroup1
+title: Registry_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bfbf0157141473be4cc2460659912dc662ef7c75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d86412a950246bee4f9a692ab80e91b99d945c20
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977815"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106249"
 ---
-# <a name="registry_typegroup1-class"></a>Classe TypeGroup1 del registro di sistema \_
+# <a name="registry_typegroup1-class"></a>Classe \_ TypeGroup1 del Registro di sistema
 
-Questa classe è la classe del tipo di evento per gli eventi del registro di sistema.
+Questa classe è la classe del tipo di evento per gli eventi del Registro di sistema.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -46,29 +46,29 @@ class Registry_TypeGroup1 : Registry
 
 ## <a name="members"></a>Members
 
-La **classe \_ TypeGroup1 del registro di sistema** ha questi tipi di membri:
+La **classe \_ TypeGroup1** del Registro di sistema ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ TypeGroup1 del registro di sistema** ha queste proprietà.
+La **classe \_ TypeGroup1 del** Registro di sistema ha queste proprietà.
 
 <dl> <dt>
 
 Indice
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Indice della sottochiave per l'operazione del registro di sistema (ad esempio EnumerateKey).
+Indice della sottochiave per l'operazione del Registro di sistema, ad esempio EnumerateKey.
 
 </dd> <dt>
 
@@ -81,39 +81,39 @@ Tipo di dati: **sint64**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
-Ora iniziale dell'operazione del registro di sistema.
+Ora iniziale dell'operazione del Registro di sistema.
 
 </dd> <dt>
 
 KeyHandle
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), puntatore
+Qualificatori: WmiDataId(4), Puntatore
 </dt> </dl>
 
-Handle per la chiave del registro di sistema.
+Handle per la chiave del Registro di sistema.
 
 </dd> <dt>
 
 KeyName
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 nome della chiave del Registro di sistema.
@@ -123,16 +123,16 @@ nome della chiave del Registro di sistema.
 Stato
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), puntatore
+Qualificatori: WmiDataId(2), Pointer
 </dt> </dl>
 
-Valore NTSTATUS dell'operazione del registro di sistema.
+Valore NTSTATUS dell'operazione del Registro di sistema.
 
 </dd> </dl>
 
@@ -142,8 +142,8 @@ Valore NTSTATUS dell'operazione del registro di sistema.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
 
 
 

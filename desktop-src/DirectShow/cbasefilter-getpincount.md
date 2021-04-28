@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetPinCount Recupera il numero di pin.
+description: 'Metodo CBaseFilter.GetPinCount: il metodo GetPinCount recupera il numero di pin.'
 ms.assetid: 6cbeb123-d899-4f13-8b40-5666adec610f
-title: Metodo CBaseFilter. GetPinCount (Amfilter. h)
+title: Metodo CBaseFilter.GetPinCount (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8da1cbc22a49b149bdccc36c3b854b44101b9bbc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0081b4cec45ed4cac5b4f0883032631983824cec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331553"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099789"
 ---
-# <a name="cbasefiltergetpincount-method"></a>CBaseFilter. GetPinCount, metodo
+# <a name="cbasefiltergetpincount-method"></a>Metodo CBaseFilter.GetPinCount
 
 Il `GetPinCount` metodo recupera il numero di pin.
 
@@ -46,7 +46,7 @@ Restituisce il numero di pin.
 
 ## <a name="remarks"></a>Commenti
 
-La classe derivata deve implementare questo metodo virtuale puro. Restituisce il numero di PIN attualmente disponibili in questo filtro. I filtri possono creare o eliminare in modo dinamico i pin.
+La classe derivata deve implementare questo metodo virtuale puro. Restituisce il numero di pin attualmente disponibili per questo filtro. I filtri possono creare o eliminare in modo dinamico i pin.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La classe derivata deve implementare questo metodo virtuale puro. Restituisce il
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

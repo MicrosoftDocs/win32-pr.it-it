@@ -1,7 +1,7 @@
 ---
-description: Reimposta la tastiera virtuale.
+description: 'Metodo Reset della classe Msvm_Keyboard: reimposta la tastiera virtuale.'
 ms.assetid: 6D4A9F02-53BD-47C2-9C09-F22C3630312F
-title: Reimposta il metodo della classe Msvm_Keyboard
+title: Metodo Reset della classe Msvm_Keyboard
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4fe46657177789e49b49ec2c36f0e7a9dc95394f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14c3166ce57fab4693dec87d3d81a55f1f688aa9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318345"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111709"
 ---
-# <a name="reset-method-of-the-msvm_keyboard-class"></a>Metodo Reset della classe della \_ tastiera MSVM
+# <a name="reset-method-of-the-msvm_keyboard-class"></a>Metodo Reset della classe Msvm \_ Keyboard
 
 Reimposta la tastiera virtuale.
 
@@ -39,11 +39,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Un valore restituito pari a zero indica esito positivo. Un valore restituito di uno indica un errore perché il metodo non è supportato.
+Un valore restituito pari a zero indica l'esito positivo. Un valore restituito pari a uno indica un errore perché il metodo non è supportato.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -55,10 +55,10 @@ Un valore restituito pari a zero indica esito positivo. Un valore restituito di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8.1 solo \[ app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Un valore restituito pari a zero indica esito positivo. Un valore restituito di 
 
 <dl> <dt>
 
-[**\_Tastiera MSVM**](msvm-keyboard.md)
+[**Tastiera \_ Msvm**](msvm-keyboard.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero di canali di colore utilizzati in memoria per archiviare gli esempi.
+description: 'Metodo ID3DXPRTCompBuffer::GetNumChannels: recupera il numero di canali di colore usati in memoria per archiviare i campioni.'
 ms.assetid: 8b033cda-feec-4e74-a4c4-ea44b5fb12c7
-title: 'Metodo ID3DXPRTCompBuffer:: GetNumChannels (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTCompBuffer::GetNumChannels (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 85712ecc6d9cb4875b93627dfcb15558c33681f9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9212528bec454a8d349c6249f851c3b021dceb00
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323690"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093169"
 ---
-# <a name="id3dxprtcompbuffergetnumchannels-method"></a>Metodo ID3DXPRTCompBuffer:: GetNumChannels
+# <a name="id3dxprtcompbuffergetnumchannels-method"></a>Metodo ID3DXPRTCompBuffer::GetNumChannels
 
-Recupera il numero di canali di colore utilizzati in memoria per archiviare gli esempi.
+Recupera il numero di canali di colore utilizzati in memoria per archiviare i campioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Restituisce il numero di canali di colore utilizzati in memoria per archiviare gli esempi. Il valore in genere sarà 1 per rappresentare i valori di luminanza oppure 3 per rappresentare i valori RGB.
+Restituisce il numero di canali di colore utilizzati in memoria per archiviare i campioni. Il valore sarà in genere 1 per rappresentare i valori di luminance o 3 per rappresentare i valori RGB.
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -52,8 +52,8 @@ Restituisce il numero di canali di colore utilizzati in memoria per archiviare g
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

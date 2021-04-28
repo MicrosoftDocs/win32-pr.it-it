@@ -1,5 +1,5 @@
 ---
-description: Modifica i dati dell'impostazione per il servizio.
+description: 'Metodo ModifyServiceSettings della classe Msvm_TerminalService: modifica i dati di impostazione per il servizio.'
 ms.assetid: 76669180-fa95-4d6e-b89a-53e45da664c4
 title: Metodo ModifyServiceSettings della classe Msvm_TerminalService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c2d6550d8b15264bf9cef126239228494996d080
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 930b29c5c07c755b493a0aabad88ae776c0803e0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883705"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119329"
 ---
-# <a name="modifyservicesettings-method-of-the-msvm_terminalservice-class"></a>Metodo ModifyServiceSettings della classe MSVM \_ TerminalService
+# <a name="modifyservicesettings-method-of-the-msvm_terminalservice-class"></a>Metodo ModifyServiceSettings della classe Msvm \_ TerminalService
 
-Modifica i dati dell'impostazione per il servizio.
+Modifica i dati delle impostazioni per il servizio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ uint32 ModifyServiceSettings(
 
 <dl> <dt>
 
-*ServiceSettingData* \[ in\]
+*ServiceSettingData* \[ Pollici\]
 </dt> <dd>
 
-Rappresentazione di stringa della classe [**\_ TerminalServiceSettingData di MSVM**](msvm-terminalservicesettingdata.md) che contiene i dati di impostazione modificati per il servizio.
+Rappresentazione di stringa della [**classe Msvm \_ TerminalServiceSettingData**](msvm-terminalservicesettingdata.md) che contiene i dati delle impostazioni modificate per il servizio.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -63,10 +63,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -75,25 +75,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -105,10 +105,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_TerminalService MSVM**](msvm-terminalservice.md)
+[**Msvm \_ TerminalService**](msvm-terminalservice.md)
 </dt> </dl>
 
  

@@ -1,28 +1,16 @@
 ---
-description: 'Consente di visualizzare la finestra di dialogo Risultati ricerca: computer. Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specifico.'
-ms.assetid: 9B687A8A-BB29-49a0-8AE3-11A75FAF3257
-title: Metodo IShellDispatch. FindComputer (shldisp. h)
-ms.topic: reference
-ms.date: 05/31/2018
-topic_type:
+description: metodo IShellDispatch.FindComputer - 'Visualizza la finestra di dialogo Risultati ricerca: Computer. Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specificato."
+ms.assetid: 9B687A8A-BB29-49a0-8AE3-11A75FAF3257 title: IShellDispatch.FindComputer method (Shldisp.h) ms.topic: reference ms.date: 05/31/2018 topic_type: 
 - APIRef
-- kbSyntax
-api_name:
-- IShellDispatch.FindComputer
-api_type:
-- COM
-api_location:
+- kbSyntax api_name: 
+- IShellDispatch.FindComputer api_type: 
+- Com api_location: 
 - Shell32.dll
-ms.openlocfilehash: 3ad928b6860a85126a714a08f3bc3df9d4aff67c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978111"
 ---
-# <a name="ishelldispatchfindcomputer-method"></a>IShellDispatch. FindComputer, metodo
 
-Consente di visualizzare la finestra di dialogo **Risultati ricerca: computer** . Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specifico.
+# <a name="ishelldispatchfindcomputer-method"></a>Metodo IShellDispatch.FindComputer
+
+Visualizza la **finestra di dialogo Risultati ricerca:** Computer . Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,13 +45,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. FindComputer**](shell-findcomputer.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.FindComputer.**](shell-findcomputer.md)
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **FindComputer** in JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso **di FindComputer** in JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -79,7 +67,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -121,17 +109,17 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 
- 
+ 
 
- 
+ 
 
 
 

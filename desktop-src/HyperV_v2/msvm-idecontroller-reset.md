@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_IDEController : richiede una reimpostazione.'
 ms.assetid: 1d72bd1a-d0b2-482c-8ba7-8ccee056a5c9
-title: Reimposta il metodo della classe Msvm_IDEController
+title: Metodo Reset della classe Msvm_IDEController
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 009d6e2631a047c443fa81716f8db182e4ffeb43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5598241262f5a275df4068fbbbf12c6e65ce640b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485172"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118969"
 ---
-# <a name="reset-method-of-the-msvm_idecontroller-class"></a>Metodo Reset della \_ classe IDECONTROLLER di MSVM
+# <a name="reset-method-of-the-msvm_idecontroller-class"></a>Metodo Reset della classe IDEController msvm \_
 
 Richiede una reimpostazione.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_IDECONTROLLER MSVM**](msvm-idecontroller.md)
+[**Msvm \_ IDEController**](msvm-idecontroller.md)
 </dt> </dl>
 
  
