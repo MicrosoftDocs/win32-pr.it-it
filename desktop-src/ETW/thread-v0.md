@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi del thread. La sintassi seguente è semplificata dal codice MOF.
+description: 'Thread_V0 classe: questa classe è la classe padre per gli eventi del thread. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 7ae2556b-49d4-4c70-9f29-49a3ca96f5bf
-title: Classe Thread_V0
+title: Thread_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c708640ea6851f67183841b124279ca0739a168c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 652f5b8ad796fedd45e5ac627fc855796def3646
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977463"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105699"
 ---
-# <a name="thread_v0-class"></a>\_Classe thread V0
+# <a name="thread_v0-class"></a>Classe \_ Thread V0
 
 Questa classe è la classe padre per gli eventi del thread.
 
@@ -36,7 +36,7 @@ class Thread_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe del **thread \_ V0** non definisce membri.
+La **classe Thread \_ V0** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ La classe del **thread \_ V0** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Thread**](thread.md)

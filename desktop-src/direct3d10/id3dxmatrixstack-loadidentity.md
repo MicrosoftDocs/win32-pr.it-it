@@ -1,7 +1,7 @@
 ---
-description: Carica l'identità nella matrice corrente.
+description: "Metodo ID3DXMATRIXStack::LoadIdentity (D3DX10.h): carica l'identità nella matrice corrente."
 ms.assetid: 324b49c2-3aca-4bbb-90f3-62f3ffb2fa45
-title: 'Metodo ID3DXMATRIXStack:: LoadIdentity (D3DX10. h)'
+title: Metodo ID3DXMATRIXStack::LoadIdentity (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 85a58529be3bfcb4d52ba096bb6134fe08994d77
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f056a911b19c0ea18f5f728a6ce8c4403dd14587
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323664"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107989"
 ---
-# <a name="id3dxmatrixstackloadidentity-method-d3dx10h"></a>Metodo ID3DXMATRIXStack:: LoadIdentity (D3DX10. h)
+# <a name="id3dxmatrixstackloadidentity-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::LoadIdentity (D3DX10.h)
 
 Carica l'identità nella matrice corrente.
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-La matrice di identità è una matrice in cui tutti i coefficienti sono 0,0 ad eccezione dei coefficienti \[ 1, 1 \] \[ 2, 2 \] \[ 3, 3 \] \[ 4, 4 \] , impostati su 1,0. La matrice di identità è speciale in quanto quando viene applicata ai vertici, non vengono modificate. La matrice di identità viene utilizzata come punto di partenza per le matrici che modificheranno i valori dei vertici per creare rotazioni, traduzioni e altre trasformazioni che possono essere rappresentate da una matrice 4x4.
+La matrice identity è una matrice in cui tutti i coefficienti sono 0,0 ad eccezione dei \[ coefficienti 1,1 \] \[ 2,2 \] \[ 3,3 4,4, che sono impostati su \] \[ \] 1,0. La matrice di identità è speciale in quanto, quando viene applicata ai vertici, rimane invariata. La matrice identity viene usata come punto di partenza per le matrici che modificheranno i valori dei vertici per creare rotazioni, traslazioni e qualsiasi altra trasformazione che può essere rappresentata da una matrice 4x4.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La matrice di identità è una matrice in cui tutti i coefficienti sono 0,0 ad e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

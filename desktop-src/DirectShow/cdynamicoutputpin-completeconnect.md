@@ -1,7 +1,7 @@
 ---
-description: Il metodo CompleteConnect completa una connessione a un pin di input.
+description: 'Metodo CDynamicOutputPin.CompleteConnect: il metodo CompleteConnect completa una connessione a un pin di input.'
 ms.assetid: c23195e7-8d66-4217-bd59-8889459ce4f1
-title: Metodo CDynamicOutputPin. CompleteConnect (Amfilter. h)
+title: Metodo CDynamicOutputPin.CompleteConnect (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 31afa592701b881d39ab4948514aacfe50b345b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5fa15c84b9d9e0b686e17110c656b74161687705
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333449"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095739"
 ---
-# <a name="cdynamicoutputpincompleteconnect-method"></a>CDynamicOutputPin. CompleteConnect, metodo
+# <a name="cdynamicoutputpincompleteconnect-method"></a>Metodo CDynamicOutputPin.CompleteConnect
 
 Il `CompleteConnect` metodo completa una connessione a un pin di input.
 
@@ -45,17 +45,17 @@ virtual HRESULT CompleteConnect(
 *pReceivePin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN di input.
+Puntatore all'interfaccia [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin di input.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la ragione dell'errore.
+Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica la causa dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseOutputPin:: CompleteConnect**](cbaseoutputpin-completeconnect.md) . Per supportare la riconnessione dinamica, questo metodo consente di eseguire il commit dell'allocatore se il filtro è attivo. Nella classe di base le connessioni possono verificarsi solo quando il filtro viene arrestato, quindi viene sempre eseguito il commit dell'allocatore nel metodo [**CBaseOutputPin:: Active**](cbaseoutputpin-active.md) .
+Questo metodo esegue l'override [**del metodo CBaseOutputPin::CompleteConnect.**](cbaseoutputpin-completeconnect.md) Per supportare le riconnessioni dinamiche, questo metodo esegue il commit dell'allocatore se il filtro è attivo. Nella classe di base le connessioni possono verificarsi solo quando il filtro viene arrestato, quindi viene sempre eseguito il commit dell'allocatore nel metodo [**CBaseOutputPin::Active.**](cbaseoutputpin-active.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo esegue l'override del metodo [**CBaseOutputPin:: CompleteConnect**
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

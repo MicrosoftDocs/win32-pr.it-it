@@ -1,25 +1,25 @@
 ---
-title: Messaggio EM_SETHILITE
-description: Non implementato.
+title: EM_SETHILITE messaggio
+description: 'EM_SETHILITE messaggio: non implementato.'
 ms.assetid: 2fc09984-a88c-479d-a220-a461e550013e
 keywords:
-- Controlli di Windows Message EM_SETHILITE
+- EM_SETHILITE messaggio Controlli Windows
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72da5e09d3abcc9d0c3db30f675a7ab3bb12c00b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 76747dbadd15dafaee5f86d9f775071edc5da7f7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045506"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109759"
 ---
-# <a name="em_sethilite-message"></a>\_Messaggio SETHILITE em
+# <a name="em_sethilite-message"></a>Messaggio \_ EM SETHILITE
 
-Questo messaggio non è implementato.
+Questo messaggio non viene implementato.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo EndFlush termina un'operazione di svuotamento.
+description: "Metodo CTransformFilter.EndFlush: il metodo EndFlush termina un'operazione di scaricamento."
 ms.assetid: ebb6beec-84e2-49a7-9771-bbd191faada7
-title: Metodo CTransformFilter. EndFlush (Transfrm. h)
+title: Metodo CTransformFilter.EndFlush (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 348675f1369ec9b0deb5415ad14a864a8befef73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a4f38a6897443763f676951f193fab5606ad2a8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328340"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085060"
 ---
-# <a name="ctransformfilterendflush-method"></a>CTransformFilter. EndFlush, metodo
+# <a name="ctransformfilterendflush-method"></a>Metodo CTransformFilter.EndFlush
 
-Il `EndFlush` metodo termina un'operazione di svuotamento.
+Il `EndFlush` metodo termina un'operazione di scaricamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o un altro valore **HRESULT** .
+Restituisce S \_ OK o un altro valore **HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Al termine di un'operazione di scaricamento, il metodo [**CTransformInputPin:: EndFlush**](ctransforminputpin-endflush.md) del PIN di input chiama questo metodo. Questo metodo passa la `EndFlush` chiamata downstream.
+Al termine di un'operazione di scaricamento, il metodo [**CTransformInputPin::EndFlush**](ctransforminputpin-endflush.md) del pin di input chiama questo metodo. Questo metodo passa la `EndFlush` chiamata a valle.
 
-Se la classe derivata utilizza un thread di lavoro per recapitare gli esempi, è necessario rimuovere tutti i dati in coda prima di inviare la `EndFlush` chiamata downstream. Per ulteriori informazioni, vedere [flusso di dati per gli sviluppatori di filtri](data-flow-for-filter-developers.md).
+Se la classe derivata usa un thread di lavoro per recapitare i campioni, deve rimuovere tutti i dati in coda prima di inviare `EndFlush` la chiamata a valle. Per altre informazioni, vedere Flusso di dati [per sviluppatori di filtri.](data-flow-for-filter-developers.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Se la classe derivata utilizza un thread di lavoro per recapitare gli esempi, è
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

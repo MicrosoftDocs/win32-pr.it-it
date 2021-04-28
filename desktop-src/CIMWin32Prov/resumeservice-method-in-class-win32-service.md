@@ -1,5 +1,5 @@
 ---
-description: Tenta di collocare il servizio a cui si fa riferimento nello stato resumed.
+description: 'Metodo ResumeService della classe Win32_Service (provider WMI CIMWin32): tenta di posizionare il servizio di riferimento nello stato ripreso.'
 ms.assetid: 3b4228bf-9ff5-44ab-bfe2-f7dd8fb62007
 ms.tgt_platform: multiple
 title: Metodo ResumeService della classe Win32_Service (provider WMI CIMWin32)
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ed4141b02d6e08bd4b106d2c1f72ce3fe0620fc7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 73c21f282577207b63bcfa2d624c59ddfa3c9bcb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878314"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090979"
 ---
 # <a name="resumeservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo ResumeService della classe Win32_Service (provider WMI CIMWin32)
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ResumeService** tenta di collocare il servizio a cui si fa riferimento nello stato resumed.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ResumeService** tenta di posizionare il servizio di riferimento nello stato ripreso.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**Proprietà state** ) è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** ) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Errore sconosciuto durante l'avvio del servizio.
 **9**
 </dt> <dd>
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -161,14 +161,14 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 **16**
 </dt> <dd>
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
 **17**
 </dt> <dd>
 
-Il servizio non dispone di un thread di esecuzione.
+Il servizio non ha thread di esecuzione.
 
 </dd> <dt>
 
@@ -196,14 +196,14 @@ Il nome del servizio contiene caratteri non validi.
 **21**
 </dt> <dd>
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
 **22**
 </dt> <dd>
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -223,18 +223,18 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Sebbene sia possibile che non esistano differenze pratiche tra un servizio interrotto e un servizio sospeso, i due stati vengono visualizzati in modo diverso rispetto a SCM. Un servizio interrotto è un servizio che non è in esecuzione e che deve seguire l'intera procedura di avvio del servizio. Un servizio sospeso, tuttavia, è ancora in esecuzione, ma il suo funzionamento è stato sospeso. Per questo motivo, non è necessario che un servizio sospeso attraversi l'intera procedura di avvio del servizio, ma è necessaria una procedura diversa per riprendere il funzionamento.
+Anche se potrebbe sembrare che non vi sia alcuna differenza pratica tra un servizio arrestato e un servizio in pausa, i due stati appaiono in modo diverso rispetto a Gestione controllo servizi. Un servizio arrestato è un servizio che non è in esecuzione e deve eseguire l'intera procedura di avvio del servizio. Un servizio sospeso, tuttavia, è ancora in esecuzione, ma è stato sospeso. Per questo problema, un servizio sospeso non deve eseguire l'intera procedura di avvio del servizio, ma richiede una procedura diversa per riprendere il funzionamento.
 
-È necessario utilizzare il metodo appropriato per avviare un servizio che è stato interrotto o per riprendere un servizio che è stato sospeso. I metodi del [**\_ servizio Win32**](win32-service.md) [**StartService**](startservice-method-in-class-win32-service.md) e **ResumeService** devono essere utilizzati nelle situazioni seguenti:
+È necessario utilizzare il metodo appropriato per avviare un servizio arrestato o per riprendere un servizio sospeso. I [**metodi \_ startService**](win32-service.md) e **ResumeService** del servizio Win32 devono essere usati nelle situazioni seguenti: [](startservice-method-in-class-win32-service.md)
 
--   Se un servizio è attualmente arrestato, è necessario usare il metodo [**StartService**](startservice-method-in-class-win32-service.md) per riavviarlo; **ResumeService** non è in grado di avviare un servizio attualmente arrestato.
--   Se un servizio viene sospeso, è necessario utilizzare **ResumeService**. Se si usa il metodo [**StartService**](startservice-method-in-class-win32-service.md) in un servizio in pausa, viene visualizzato il messaggio "il servizio è già in esecuzione". Tuttavia, il servizio rimane sospeso fino a quando non viene inviato il codice di controllo del servizio di ripresa.
+-   Se un servizio è attualmente arrestato, è necessario usare il [**metodo StartService**](startservice-method-in-class-win32-service.md) per riavviarlo. **ResumeService** non può avviare un servizio attualmente arrestato.
+-   Se un servizio è in pausa, è necessario usare **ResumeService**. Se si usa il [**metodo StartService**](startservice-method-in-class-win32-service.md) in un servizio sospeso, viene visualizzato il messaggio "Il servizio è già in esecuzione". Tuttavia, il servizio rimane in pausa fino a quando non viene inviato il codice di controllo del servizio di ripresa.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [Resume avvio automatico dei servizi che sono in pausa](https://Gallery.TechNet.Microsoft.Com/413f2896-e7f3-4b3e-96cb-5abdc9bb6c36) VBScript riavvia tutti i servizi di avvio automatico sospesi.
+[L'esempio Resume AutoStart Services that are Paused](https://Gallery.TechNet.Microsoft.Com/413f2896-e7f3-4b3e-96cb-5abdc9bb6c36) VBScript riavvia tutti i servizi di avvio automatico sospesi.
 
-Nell'esempio di codice VBScript seguente viene descritto come riprendere un servizio sospeso dalle istanze del [**\_ servizio Win32**](win32-service.md).
+Nell'esempio di codice VBScript seguente viene descritto come riprendere un servizio sospeso dalle istanze del [**servizio Win32. \_**](win32-service.md)
 
 > [!Note]  
 > Il servizio deve supportare la sospensione ed essere già in esecuzione.
@@ -265,7 +265,7 @@ next
 
 
 
-Nell'esempio di codice Perl seguente viene descritto come riprendere un servizio sospeso dalle istanze del [**\_ servizio Win32**](win32-service.md).
+L'esempio di codice Perl seguente descrive come riprendere un servizio sospeso dalle istanze del [**servizio Win32. \_**](win32-service.md)
 
 > [!Note]  
 > Il servizio deve supportare la sospensione ed essere già in esecuzione.
@@ -329,7 +329,7 @@ else
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -341,7 +341,7 @@ else
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Servizio Win32**](win32-service.md)
+[**Servizio \_ Win32**](win32-service.md)
 </dt> <dt>
 
 [Attività WMI: Servizi](/windows/desktop/WmiSdk/wmi-tasks--services)

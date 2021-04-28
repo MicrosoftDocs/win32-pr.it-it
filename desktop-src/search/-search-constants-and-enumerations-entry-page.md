@@ -1,26 +1,26 @@
 ---
-description: .
+description: Windows Search costanti ed enumerazioni
 ms.assetid: 27b25e6b-49e6-4c70-947e-d67bd1335924
-title: Costanti ed enumerazioni di ricerca di Windows
+title: Windows Search costanti ed enumerazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6c0f9b0958be75ab03913abb12670a5cb16d29c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b18cee15be8bc9cec3bae22b55da6e6bf6c4624
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484460"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104679"
 ---
-# <a name="windows-search-constants-and-enumerations"></a>Costanti ed enumerazioni di ricerca di Windows
+# <a name="windows-search-constants-and-enumerations"></a>Windows Search costanti ed enumerazioni
 
 
-In questa sezione vengono documentate le seguenti costanti ed enumerazioni:
+Questa sezione documenta le costanti e le enumerazioni seguenti:
 
-[**Cerca nei messaggi di errore del gestore del protocollo**](-search-prth-error-constants.md)
+[**Messaggi di errore del gestore del protocollo di ricerca**](-search-prth-error-constants.md)
 
-[**tipo di autenticazione \_**](/windows/desktop/api/Searchapi/ne-searchapi-auth_type)
+[**TIPO DI \_ AUTENTICAZIONE**](/windows/desktop/api/Searchapi/ne-searchapi-auth_type)
 
-[**requisito del CASE \_**](/windows/desktop/api/Structuredquery/ne-structuredquery-case_requirement)
+[**REQUISITO \_ DEL CASO**](/windows/desktop/api/Structuredquery/ne-structuredquery-case_requirement)
 
 [**CatalogPausedReason**](/windows/desktop/api/Searchapi/ne-searchapi-catalogpausedreason)
 
@@ -28,61 +28,61 @@ In questa sezione vengono documentate le seguenti costanti ed enumerazioni:
 
 [**CHUNKSTATE**](/windows/win32/api/filter/ne-filter-chunkstate)
 
-[**BLOCCO \_ BREAKTYPE**](/windows/win32/api/filter/ne-filter-chunk_breaktype)
+[**CHUNK \_ BREAKTYPE**](/windows/win32/api/filter/ne-filter-chunk_breaktype)
 
-[**motivo dell'isolamento \_**](/windows/win32/api/searchapi/ne-searchapi-clusion_reason)
+[**MOTIVO DI \_ CLUSIONE**](/windows/win32/api/searchapi/ne-searchapi-clusion_reason)
 
-[**\_Opzioni di creazione della condizione \_**](/windows/desktop/api/Structuredquery/ne-structuredquery-condition_creation_options)
+[**OPZIONI \_ DI CREAZIONE DELLA \_ CONDIZIONE**](/windows/desktop/api/Structuredquery/ne-structuredquery-condition_creation_options)
 
-[**operazione di condizione \_**](/windows/win32/api/structuredquerycondition/ne-structuredquerycondition-condition_operation)
+[**OPERAZIONE \_ CONDIZIONE**](/windows/win32/api/structuredquerycondition/ne-structuredquerycondition-condition_operation)
 
-[**tipo di condizione \_**](/windows/win32/api/structuredquerycondition/ne-structuredquerycondition-condition_type)
+[**TIPO \_ DI CONDIZIONE**](/windows/win32/api/structuredquerycondition/ne-structuredquerycondition-condition_type)
 
-[**flag di seguito \_**](/windows/desktop/api/Searchapi/ne-searchapi-follow_flags)
+[**FLAG \_ FOLLOW**](/windows/desktop/api/Searchapi/ne-searchapi-follow_flags)
 
-[**\_flag IFILTER**](/windows/win32/api/filter/ne-filter-ifilter_flags)
+[**FLAG \_ IFILTER**](/windows/win32/api/filter/ne-filter-ifilter_flags)
 
-[**\_inizializzazione IFILTER**](/previous-versions/windows/desktop/legacy/bb266511(v=vs.85))
+[**IFILTER \_ INIT**](/previous-versions/windows/desktop/legacy/bb266511(v=vs.85))
 
-[**\_tipo limite \_ intervallo**](/windows/win32/api/structuredquery/ne-structuredquery-interval_limit_kind)
+[**TIPO \_ DI LIMITE \_ INTERVALLO**](/windows/win32/api/structuredquery/ne-structuredquery-interval_limit_kind)
 
 [**LINKTYPE**](-search-linktype.md)
 
-[**\_certezza entità \_ denominata**](/windows/win32/api/structuredquery/ne-structuredquery-named_entity_certainty)
+[**CERTEZZA \_ DELL'ENTITÀ \_ DENOMINATA**](/windows/win32/api/structuredquery/ne-structuredquery-named_entity_certainty)
 
-[**ASSEGNARE priorità ai \_ flag**](/windows/win32/api/searchapi/ne-searchapi-tagprioritize_flags)
+[**ASSEGNARE PRIORITÀ AI \_ FLAG**](/windows/win32/api/searchapi/ne-searchapi-tagprioritize_flags)
 
-[**livello di priorità \_**](/windows/win32/api/searchapi/ne-searchapi-priority_level)
+[**LIVELLO DI \_ PRIORITÀ**](/windows/win32/api/searchapi/ne-searchapi-priority_level)
 
-[**\_accesso proxy**](/windows/desktop/api/Searchapi/ne-searchapi-proxy_access)
+[**ACCESSO \_ PROXY**](/windows/desktop/api/Searchapi/ne-searchapi-proxy_access)
 
-[**QUERY \_ parser \_ Manager- \_ opzione**](/windows/win32/api/structuredquery/ne-structuredquery-query_parser_manager_option)
+[**OPZIONE \_ GESTIONE PARSER \_ \_ QUERY**](/windows/win32/api/structuredquery/ne-structuredquery-query_parser_manager_option)
 
-[**\_ITEMSTATE ROWSETEVENT**](/windows/win32/api/searchapi/ne-searchapi-rowsetevent_itemstate)
+[**ROWSETEVENT \_ ITEMSTATE**](/windows/win32/api/searchapi/ne-searchapi-rowsetevent_itemstate)
 
-[**\_tipo ROWSETEVENT**](/windows/win32/api/searchapi/ne-searchapi-rowsetevent_type)
+[**TIPO \_ ROWSETEVENT**](/windows/win32/api/searchapi/ne-searchapi-rowsetevent_type)
 
-[**\_fase di indicizzazione di ricerca \_**](/windows/desktop/api/Searchapi/ne-searchapi-search_indexing_phase)
+[**FASE \_ DI INDICIZZAZIONE DELLA \_ RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_indexing_phase)
 
-[**\_tipo \_ di \_ modifica di ricerca**](/windows/desktop/api/Searchapi/ne-searchapi-search_kind_of_change)
+[**TIPO \_ DI RICERCA DI \_ \_ MODIFICA**](/windows/desktop/api/Searchapi/ne-searchapi-search_kind_of_change)
 
-[**\_priorità di notifica di ricerca \_**](/windows/desktop/api/Searchapi/ne-searchapi-search_notification_priority)
+[**SEARCH \_ NOTIFICATION \_ PRIORITY**](/windows/desktop/api/Searchapi/ne-searchapi-search_notification_priority)
 
-[**\_sintassi di query di ricerca \_**](/windows/desktop/api/Searchapi/ne-searchapi-search_query_syntax)
+[**SINTASSI \_ DELLE QUERY \_ DI RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_query_syntax)
 
-[**\_espansione del termine di ricerca \_**](/windows/desktop/api/Searchapi/ne-searchapi-search_term_expansion)
+[**ESPANSIONE DEI \_ TERMINI \_ DI RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_term_expansion)
 
-[**multioption per query STRUTTURAte \_ \_**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_multioption)
+[**STRUCTURED \_ QUERY \_ MULTIOPTION**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_multioption)
 
-[**errore di analisi STRUTTURAta della \_ query \_ \_**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_parse_error)
+[**ERRORE DI \_ ANALISI \_ QUERY \_ STRUTTURATA**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_parse_error)
 
-[**\_opzione Structured Query \_ Resolve \_**](/windows/desktop/api/Structuredquery/ne-structuredquery-structured_query_resolve_option)
+[**OPZIONE STRUCTURED \_ QUERY \_ RESOLVE \_**](/windows/desktop/api/Structuredquery/ne-structuredquery-structured_query_resolve_option)
 
-[**\_ \_ opzione singola query strutturata \_**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_single_option)
+[**OPZIONE \_ SINGOLA \_ QUERY \_ STRUTTURATA**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_single_option)
 
-[**\_sintassi di query strutturata \_**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_syntax)
+[**SINTASSI \_ DI QUERY \_ STRUTTURATE**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_syntax)
 
-[**tipo di WORDREP \_ break \_**](/previous-versions/windows/desktop/legacy/ff819130(v=vs.85))
+[**TIPO DI \_ INTERRUZIONE \_ WORDREP**](/previous-versions/windows/desktop/legacy/ff819130(v=vs.85))
 
  
 

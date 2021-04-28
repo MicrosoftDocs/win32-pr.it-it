@@ -1,7 +1,7 @@
 ---
-description: Apre la cartella specificata.
+description: 'Metodo Shell.Open: apre la cartella specificata.'
 ms.assetid: 96ed9360-fb8f-4f7e-aefb-4a63ec95df07
-title: Metodo Shell. Open (shldisp. h)
+title: Metodo Shell.Open (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 3572f48a7b129500c38c3c0227ba479ecb775067
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36f8914be3fce6b461e5267562e6f3ef40aa5fef
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882789"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104229"
 ---
-# <a name="shellopen-method"></a>Shell. Open (metodo)
+# <a name="shellopen-method"></a>Metodo Shell.Open
 
 Apre la cartella specificata.
 
@@ -49,22 +49,22 @@ Shell.Open( _
 
 <dl> <dt>
 
-*vdir* \[ in\]
+*vDir* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Stringa che specifica il percorso della cartella o uno dei valori [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al suo posto.
+Stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
-Se *vdir* è impostato su uno dei [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) e la cartella speciale non esiste, la funzione creerà la cartella.
+Se *vDir* è impostato su uno di [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) e la cartella speciale non esiste, questa funzione creerà la cartella.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato **Open** in use. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente illustra **Open** in uso. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -81,7 +81,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -121,11 +121,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

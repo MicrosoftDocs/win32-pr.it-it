@@ -1,7 +1,7 @@
 ---
-description: Il metodo BreakConnect rilascia il pin da una connessione.
+description: 'Metodo CBasePin.BreakConnect: il metodo BreakConnect rilascia il pin da una connessione.'
 ms.assetid: a1f299e1-30bf-4d55-84cf-73acccf38151
-title: Metodo CBasePin. BreakConnect (Amfilter. h)
+title: Metodo CBasePin.BreakConnect (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8964ea76e48e4753f42923663ab45962cd672e6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9a099b1001c2b8c30398ca350e05d15562a8bc2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332770"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099439"
 ---
-# <a name="cbasepinbreakconnect-method"></a>CBasePin. BreakConnect, metodo
+# <a name="cbasepinbreakconnect-method"></a>Metodo CBasePin.BreakConnect
 
 Il `BreakConnect` metodo rilascia il pin da una connessione.
 
@@ -42,15 +42,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato durante la disconnessione del PIN tramite il metodo [**CBasePin::D la connessione**](cbasepin-disconnect.md) . Viene anche chiamato durante un tentativo di connessione se il metodo [**CBasePin:: CheckConnect**](cbasepin-checkconnect.md) ha esito negativo.
+Questo metodo viene chiamato durante la disconnessione del pin dal [**metodo CBasePin::D isconnect.**](cbasepin-disconnect.md) Viene chiamato anche durante un tentativo di connessione se il [**metodo CBasePin::CheckConnect ha**](cbasepin-checkconnect.md) esito negativo.
 
-Questo metodo deve liberare tutte le risorse ottenute dal metodo **CheckConnect** . Se, ad esempio, **CheckConnect** alloca memoria, `BreakConnect` deve liberare la memoria. Se **CheckConnect** esegue una query sul pin di connessione per un'interfaccia, `BreakConnect` deve liberare l'interfaccia.
+Questo metodo deve liberare tutte le risorse ottenute dal **metodo CheckConnect.** Ad esempio, se **CheckConnect alloca** memoria, `BreakConnect` deve liberare la memoria. Se **CheckConnect esegue** una query sul pin di connessione per un'interfaccia, `BreakConnect` deve liberare l'interfaccia.
 
-Si noti che `BreakConnect` può essere chiamato senza una chiamata corrispondente a **CompleteConnect**. Pertanto, non è possibile presupporre che **CompleteConnect** sia stato chiamato in precedenza.
+Si noti `BreakConnect` che può essere chiamato senza una chiamata corrispondente a **CompleteConnect.** Pertanto, non è possibile **presupporre che CompleteConnect** sia stato chiamato in precedenza.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,8 +58,8 @@ Si noti che `BreakConnect` può essere chiamato senza una chiamata corrispondent
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

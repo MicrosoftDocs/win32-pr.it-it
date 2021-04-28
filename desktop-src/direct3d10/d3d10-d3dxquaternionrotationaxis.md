@@ -1,7 +1,7 @@
 ---
-description: Ruota un quaternione su un asse arbitrario.
+description: 'Funzione D3DXQuaternionRotationAxis (D3DX10Math.h): ruota un quaternione su un asse arbitrario.'
 ms.assetid: 9673ef89-458f-4a25-960e-8f03179e78ba
-title: Funzione D3DXQuaternionRotationAxis (D3DX10Math. h)
+title: Funzione D3DXQuaternionRotationAxis (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 739f128ca1a56eed15ebc2528036875eaf2bb9b8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 509df80023427a20125e1b5603e85424851a640e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323337"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108769"
 ---
-# <a name="d3dxquaternionrotationaxis-function-d3dx10mathh"></a>Funzione D3DXQuaternionRotationAxis (D3DX10Math. h)
+# <a name="d3dxquaternionrotationaxis-function-d3dx10mathh"></a>Funzione D3DXQuaternionRotationAxis (D3DX10Math.h)
 
 Ruota un quaternione su un asse arbitrario.
 
@@ -42,30 +42,30 @@ D3DXQUATERNION* D3DXQuaternionRotationAxis(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che identifica l'asse attorno al quale ruotare il quaternione.
+Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che identifica l'asse su cui ruotare il quaternione.
 
 </dd> <dt>
 
-*Angolo* \[ in\]
+*Angolo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Angolo di rotazione, in radianti. Gli angoli sono misurati in senso orario quando si osserva lungo l'asse di rotazione verso l'origine.
+Angolo di rotazione, espresso in radianti. Gli angoli vengono misurati in senso orario quando si guarda lungo l'asse di rotazione verso l'origine.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Puntatore a una struttura D3DXQUATERNION ruotata intorno all'asse specificato.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXQuaternionRotationAxis può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXQuaternionRotationAxis può essere usata come parametro per un'altra funzione.
 
 Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
@@ -87,8 +87,8 @@ Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

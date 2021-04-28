@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero di vertici (o Texel) campionati.
+description: 'Metodo ID3DXPRTBuffer::GetNumSamples: recupera il numero di vertici (o texel) campionati.'
 ms.assetid: fdcb9f09-29fb-409d-b2c0-78ebf311f48b
-title: 'Metodo ID3DXPRTBuffer:: GetNumSamples (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTBuffer::GetNumSamples (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 370adbafa09f14fe6b8088b1472681d2795be3b6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b6889b710b92d52a48884098e68c58286c400330
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969516"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107299"
 ---
-# <a name="id3dxprtbuffergetnumsamples-method"></a>Metodo ID3DXPRTBuffer:: GetNumSamples
+# <a name="id3dxprtbuffergetnumsamples-method"></a>Metodo ID3DXPRTBuffer::GetNumSamples
 
-Recupera il numero di vertici (o Texel) campionati.
+Recupera il numero di vertici (o texel) campionati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Restituisce il numero di vertici (o Texel) campionati.
+Restituisce il numero di vertici (o texel) campionati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il numero di vertici (o Texel) campionati.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

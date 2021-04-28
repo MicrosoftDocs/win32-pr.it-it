@@ -1,7 +1,7 @@
 ---
-description: Genera un elenco di bordi della mesh, oltre a un elenco di visi che condividono ogni bordo.
+description: 'Metodo ID3DX10Mesh::GenerateAdjacencyAndPointReps: generare un elenco di bordi della mesh, nonché un elenco di visi che condividono ogni bordo.'
 ms.assetid: 3932e2b1-031d-4962-ad90-6e9da8cf2e0e
-title: 'Metodo ID3DX10Mesh:: GenerateAdjacencyAndPointReps (D3DX10. h)'
+title: Metodo ID3DX10Mesh::GenerateAdjacencyAndPointReps (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c46cf83931c95116132798ca971f9d4e61da2af8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e496f96f36805d411c71e9aba1e2560b0dcbe3c6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104530991"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083979"
 ---
-# <a name="id3dx10meshgenerateadjacencyandpointreps-method"></a>Metodo ID3DX10Mesh:: GenerateAdjacencyAndPointReps
+# <a name="id3dx10meshgenerateadjacencyandpointreps-method"></a>Metodo ID3DX10Mesh::GenerateAdjacencyAndPointReps
 
-Genera un elenco di bordi della mesh, oltre a un elenco di visi che condividono ogni bordo.
+Generare un elenco di bordi della mesh, nonché un elenco di visi che condividono ogni bordo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GenerateAdjacencyAndPointReps(
 
 <dl> <dt>
 
-*Epsilon* \[ in\]
+*Epsilon* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Specifica che i vertici che differiscono dalla posizione minore di Epsilon devono essere considerati coincidenti.
+Specifica che i vertici che differiscono per posizione per minore di epsilon devono essere considerati coincidenti.
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Specifica che i vertici che differiscono dalla posizione minore di Epsilon devon
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Quando un'applicazione genera informazioni adiacenza per una mesh, i dati della mesh possono essere ottimizzati per migliorare le prestazioni di disegno.
+Dopo che un'applicazione genera informazioni di adicenza per una mesh, i dati della mesh possono essere ottimizzati per migliorare le prestazioni di disegno.
 
-L'ordine delle voci nel buffer adiacenza è determinato dall'ordine degli indici dei vertici nel buffer dell'indice. Il triangolo adiacente 0 corrisponde sempre al bordo tra gli indici degli angoli 0 e 1. Il triangolo adiacente 1 corrisponde sempre al bordo tra gli indici degli angoli 1 e 2, mentre il triangolo adiacente 2 corrisponde al bordo tra gli indici degli angoli 2 e 0.
+L'ordine delle voci nel buffer di adicenza è determinato dall'ordine degli indici dei vertici nel index buffer. Il triangolo adiacente 0 corrisponde sempre al bordo tra gli indici degli angoli 0 e 1. Il triangolo adiacente 1 corrisponde sempre al bordo tra gli indici degli angoli 1 e 2, mentre il triangolo adiacente 2 corrisponde sempre al bordo tra gli indici degli angoli 2 e 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ L'ordine delle voci nel buffer adiacenza è determinato dall'ordine degli indici
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

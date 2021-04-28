@@ -1,8 +1,8 @@
 ---
-description: Il metodo della classe WMI TakeOwnerShip ottiene la proprietà del file logico specificato nel percorso dell'oggetto.
+description: "Metodo TakeOwnerShip della classe Win32_Directory: il metodo della classe WMI TakeOwnerShip ottiene la proprietà del file logico specificato nel percorso dell'oggetto."
 ms.assetid: 1112823b-0bb6-4dc0-a5c4-8d3839a47a3a
 ms.tgt_platform: multiple
-title: Metodo TakeOwnerShip della classe Win32_Directory
+title: Metodo TakeOwnerShip della Win32_Directory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c06441b7728ed8b9178e889cbd60c047f0f3a497
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 178f1bf523d939883a7fc18b5bdbd7142cc4f824
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523010"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086029"
 ---
-# <a name="takeownership-method-of-the-win32_directory-class"></a>Metodo TakeOwnerShip della classe di \_ directory Win32
+# <a name="takeownership-method-of-the-win32_directory-class"></a>Metodo TakeOwnerShip della classe Directory Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnership** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnership** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenute nella directory.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnerShip** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, [vedere Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ Restituisce uno dei valori seguenti.
 **0**
 </dt> <dd>
 
-La richiesta è stata completata.
+La richiesta ha avuto esito positivo.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Un parametro specificato non è valido.
 
 ## <a name="examples"></a>Esempio
 
-Il codice di script seguente Visual Basic chiama il metodo [**TakeOwnership**](takeownership-method-in-class-cim-directory.md) per assumere la proprietà della cartella C: \\ Temp.
+Il codice Visual Basic script seguente chiama il [**metodo TakeOwnerShip**](takeownership-method-in-class-cim-directory.md) per assumere la proprietà della cartella \\ C: temp.
 
 
 ```VB
@@ -171,7 +171,7 @@ wscript.echo objOutParams.ReturnValue
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -183,7 +183,7 @@ wscript.echo objOutParams.ReturnValue
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directory Win32**](win32-directory.md)
+[**Win32 \_ Directory**](win32-directory.md)
 </dt> </dl>
 
  

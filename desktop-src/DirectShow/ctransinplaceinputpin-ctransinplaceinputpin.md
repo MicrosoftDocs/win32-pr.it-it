@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CTransInPlaceInputPin.CTransInPlaceInputPin - Metodo costruttore.
 ms.assetid: db0a3f78-ddb9-43b5-aab5-da2faaebb527
-title: Costruttore CTransInPlaceInputPin. CTransInPlaceInputPin (Transip. h)
+title: Costruttore CTransInPlaceInputPin.CTransInPlaceInputPin (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a801b2c4286f903ef450cac2fd76252f451f9add
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f97c89142e43691c91b2a4c0d04721d9112ed49
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326202"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084759"
 ---
-# <a name="ctransinplaceinputpinctransinplaceinputpin-constructor"></a>Costruttore CTransInPlaceInputPin. CTransInPlaceInputPin
+# <a name="ctransinplaceinputpinctransinplaceinputpin-constructor"></a>Costruttore CTransInPlaceInputPin.CTransInPlaceInputPin
 
 Metodo del costruttore.
 
@@ -48,34 +48,34 @@ CTransInPlaceInputPin(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug dell'oggetto. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Stringa contenente il nome di debug dell'oggetto. Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
 *pFilter* 
 </dt> <dd>
 
-Puntatore al filtro che ha creato questo pin, che deve essere un oggetto [**CTransInPlaceFilter**](ctransinplacefilter.md) .
+Puntatore al filtro che ha creato questo pin, che deve essere un [**oggetto CTransInPlaceFilter.**](ctransinplacefilter.md)
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve un valore **HRESULT** che indica l'esito positivo o negativo del metodo. Inizializzare il valore su S \_ OK prima di creare l'oggetto. Il valore viene modificato solo se si verifica un errore.
+Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito positivo o negativo del metodo. Inizializzare il valore su S \_ OK prima di creare l'oggetto . Il valore viene modificato solo se si verifica un errore.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Stringa di caratteri wide contenente il nome del PIN.
+Stringa di caratteri wide contenente il nome del pin.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il parametro *pname* specifica il nome del PIN, restituito dal metodo [**Ipin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) . Questa stringa non viene tuttavia utilizzata per l'identificatore del PIN. L'identificatore del PIN per questa classe è sempre in. Per ulteriori informazioni, vedere [**CTransformInputPin:: QueryId**](ctransforminputpin-queryid.md).
+Il *parametro pName* specifica il nome del pin, restituito dal metodo [**IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Tuttavia, questa stringa non viene usata per l'identificatore pin. L'identificatore pin per questa classe è sempre In. Per altre informazioni, vedere [**CTransformInputPin::QueryId**](ctransforminputpin-queryid.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Il parametro *pname* specifica il nome del PIN, restituito dal metodo [**Ipin:: 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo EndFlush termina un'operazione di svuotamento.
+description: "Metodo CBaseRenderer.EndFlush: il metodo EndFlush termina un'operazione di scaricamento."
 ms.assetid: 4c30abbf-7351-4eee-af9a-9330f6d1aa08
-title: Metodo CBaseRenderer. EndFlush (Renbase. h)
+title: Metodo CBaseRenderer.EndFlush (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3bd565bfa21edb9945b901d8e315f3e1d1cd054f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87e29f405430ca87943773d19793ffc1941ec42c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329385"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095909"
 ---
-# <a name="cbaserendererendflush-method"></a>CBaseRenderer. EndFlush, metodo
+# <a name="cbaserendererendflush-method"></a>Metodo CBaseRenderer.EndFlush
 
-Il `EndFlush` metodo termina un'operazione di svuotamento.
+Il `EndFlush` metodo termina un'operazione di scaricamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Il pin di input del filtro chiama questo metodo quando riceve una chiamata al metodo [**Ipin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) .
+Il pin di input del filtro chiama questo metodo quando riceve una chiamata al [**metodo IPin::EndFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il pin di input del filtro chiama questo metodo quando riceve una chiamata al me
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

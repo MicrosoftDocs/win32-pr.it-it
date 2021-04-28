@@ -1,7 +1,7 @@
 ---
-description: Il metodo Disconnect interrompe la connessione al pin corrente. Questo metodo implementa il metodo IPin::D la connessione.
+description: 'Metodo CBasePin.Disconnect: il metodo Disconnect interrompe la connessione pin corrente. Questo metodo implementa il metodo IPin::D isconnect.'
 ms.assetid: 04e07978-fca5-419f-8807-fd7a6846eff9
-title: Metodo CBasePin. Disconnect (Amfilter. h)
+title: Metodo CBasePin.Disconnect (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98cbf894767eeb89042134344df218f2c18bc1be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bda01d02db2a93a90c63f206b723a55df2373418
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329544"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096009"
 ---
-# <a name="cbasepindisconnect-method"></a>Metodo CBasePin. Disconnect
+# <a name="cbasepindisconnect-method"></a>Metodo CBasePin.Disconnect
 
-Il `Disconnect` metodo interrompe la connessione al pin corrente. Questo metodo implementa il metodo [**Ipin::D la connessione**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect) .
+Il `Disconnect` metodo interrompe la connessione pin corrente. Questo metodo implementa il [**metodo IPin::D isconnect.**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +42,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                         | Descrizione                                                                        |
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>             | Il PIN non era connesso.<br/>                                              |
-| <dl> <dt>**\_OK**</dt> </dl>                | Esito positivo.<br/>                                                                |
-| <dl> <dt>**VFW \_ E \_ non \_ arrestato**</dt> </dl> | Il filtro è attivo e il PIN non supporta la riconnessione dinamica.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>             | Il pin non è connesso.<br/>                                              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Operazione completata.<br/>                                                                |
+| <dl> <dt>**VFW \_ E \_ NON \_ ARRESTATO**</dt> </dl> | Il filtro è attivo e il pin non supporta la riconnessione dinamica.<br/> |
 
 
 
@@ -58,7 +58,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-La classe base delega la maggior parte del lavoro al metodo [**CBasePin::D isconnectinternal**](cbasepin-disconnectinternal.md) .
+La classe base delega la maggior parte del lavoro al [**metodo CBasePin::D isconnectInternal.**](cbasepin-disconnectinternal.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,8 +66,8 @@ La classe base delega la maggior parte del lavoro al metodo [**CBasePin::D iscon
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

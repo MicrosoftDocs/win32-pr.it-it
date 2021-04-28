@@ -1,7 +1,7 @@
 ---
-description: L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non si tratta di un'API DirectShow supportata.
+description: "Metodo IMpeg2PsiParser::GetPatVersionNumber: l'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API DirectShow supportata."
 ms.assetid: 2f5ad9bf-3d70-491a-ab45-15cd922a02d4
-title: 'Metodo IMpeg2PsiParser:: GetPatVersionNumber'
+title: Metodo IMpeg2PsiParser::GetPatVersionNumber
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6117060cf0c8d3c56d03e5838376485244fde8d9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 978da4c7076bcf8ffe91bc2b9a4b2077d9d3d48a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401123"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089149"
 ---
-# <a name="impeg2psiparsergetpatversionnumber-method"></a>Metodo IMpeg2PsiParser:: GetPatVersionNumber
+# <a name="impeg2psiparsergetpatversionnumber-method"></a>Metodo IMpeg2PsiParser::GetPatVersionNumber
 
-L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non si tratta di un'API DirectShow supportata.
+L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API DirectShow supportata.
 
-Il `GetPatVersionNumber` metodo recupera il \_ campo del numero di versione da Pat. Un flusso di trasporto contiene al massimo un PAT. Il numero di versione viene incrementato ogni volta che vengono modificate le informazioni nella tabella.
+Il `GetPatVersionNumber` metodo recupera il campo del numero di versione da \_ PAT. Un flusso di trasporto contiene al massimo un pat. Il numero di versione viene incrementato ogni volta che le informazioni nella tabella vengono cambiate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,22 +40,22 @@ HRESULT GetPatVersionNumber(
 
 <dl> <dt>
 
-*pPatVersion* \[ out\]
+*pPatVersion* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve il campo del numero di versione \_ .
+Puntatore a una variabile che riceve il campo del \_ numero di versione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT** . I valori possibili includono, ma non sono limitati, i valori mostrati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati, i valori illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Esito positivo.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Operazione completata.<br/> |
 
 
 

@@ -1,22 +1,22 @@
 ---
-description: .
+description: Rimozione della reflection del Registro di sistema di Windows
 ms.assetid: 4b42d44d-cde8-4d96-96c5-24b7ab7e4cec
-title: Rimozione della reflection del registro di sistema di Windows
+title: Rimozione della reflection del Registro di sistema di Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c610cb0b6ce446e3105fd61cb940028f478892ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eeab0109cbbac988c89d6add91fa899cea9169ad
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317613"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116259"
 ---
-# <a name="removal-of-windows-registry-reflection"></a>Rimozione della reflection del registro di sistema di Windows
+# <a name="removal-of-windows-registry-reflection"></a>Rimozione della reflection del Registro di sistema di Windows
 
 ## <a name="platform"></a>Piattaforma
 
-**Client** -Windows 7  
-**Server** -Windows Server 2008 R2  
+**Client** - Windows 7  
+**Server** - Windows Server 2008 R2  
 
 
 
@@ -26,10 +26,10 @@ ms.locfileid: "106317613"
 
 
 
-## <a name="feature-impact"></a>Effetto sulle funzionalità
+## <a name="feature-impact"></a>Impatto sulle funzionalità
 
- **Gravità** -bassa  
-**Frequenza** -bassa  
+ **Gravità** - Bassa  
+**Frequenza** - Bassa  
 
 
 
@@ -37,62 +37,62 @@ ms.locfileid: "106317613"
 
 ## <a name="description"></a>Descrizione
 
-Il processo di reflection del registro di sistema copia le chiavi e i valori del registro di sistema tra due visualizzazioni del registro di sistema per mantene Nelle installazioni precedenti di Windows a 64 bit, il processo ha riflesso un subset delle chiavi del registro di sistema reindirizzate tra le visualizzazioni a 32 bit e 64 bit. Tuttavia, l'implementazione di questo ha causato alcune incoerenze nello stato del registro di sistema. Per informazioni dettagliate sulla reflection del registro di sistema, vedere l'articolo di MSDN corrispondente nella sezione *collegamenti ad altre risorse* .
+Il processo di reflection del Registro di sistema copia le chiavi e i valori del Registro di sistema tra due viste del Registro di sistema per mantenerle sincronizzate. Nelle installazioni precedenti a 64 bit di Windows, il processo rifletteva un subset delle chiavi del Registro di sistema reindirizzate tra le visualizzazioni a 32 bit e a 64 bit. Tuttavia, l'implementazione di questo ha causato alcune incoerenze nello stato del Registro di sistema. Per informazioni dettagliate sulla reflection del Registro di sistema, vedere l'articolo MSDN corrispondente *nella sezione Collegamenti* ad altre risorse riportata di seguito.
 
-A partire da Windows 7, la reflection del registro di sistema è stata rimossa completamente e sono state unite le chiavi che erano state riflesse:
+A partire da Windows 7, è stata rimossa completamente la reflection del Registro di sistema ed è stato unito il merge delle chiavi che si riflettevano:
 
--   \_ \_ Classi software del computer locale \\ HKEY \\
--   HKEY \_ \_ computer locale \\ software \\ Microsoft \\ COM3
--   HKEY \_ \_ computer locale \\ software \\ Microsoft \\ EventSystem
--   \_Software per \_ computer locale HKEY \\ \\ Microsoft \\ OLE
--   HKEY \_ \_ computer locale \\ software \\ Microsoft \\ RPC
--   \_ \\ \* \\ Classi software per utenti \\ HKEY
--   \_Classi di utenti HKEY \\ \* \_
+-   Classi software \_ HKEY LOCAL \_ MACHINE \\ \\
+-   HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ COM3
+-   HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ EventSystem
+-   HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Ole
+-   HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Rpc
+-   Classi software HKEY \_ USERS \\ \* \\ \\
+-   Classi HKEY \_ USERS \\ \* \_
 
-In realtà, questo fornisce lo stesso comportamento di reflection, dal momento che le modifiche apportate a queste chiavi sono immediatamente disponibili per le applicazioni a 32 bit e a 64 bit.
+In effetti, ciò offre lo stesso comportamento di reflection, poiché le modifiche a queste chiavi sono immediatamente disponibili per le applicazioni a 32 bit e a 64 bit.
 
-Le chiavi riflesse in modo condizionale rimangono separate:
+Le chiavi riflesse in modo condizionale rimangono suddivise:
 
--   HKEY \_ \_ classi software del computer locale \\ \\ \\ CLSID
--   \_Interfaccia delle \_ \\ classi software \\ del computer locale HKEY \\
--   \_ \\ \* \\ Classi software utenti \\ HKEY \\ CLSID
--   \_ \\ \* \\ \\ Interfaccia classi software \\ utenti HKEY
--   \_Classi di utenti HKEY \\ \* \_ \\ CLSID
--   \_ \\ \* \_ Interfaccia classi utenti \\ HKEY
+-   HKEY \_ LOCAL \_ MACHINE \\ Software \\ Classes \\ CLSID
+-   Interfaccia delle classi software HKEY \_ LOCAL \_ MACHINE \\ \\ \\
+-   HKEY \_ USERS - Classi software \\ \* \\ \\ \\ CLSID
+-   Interfaccia delle \_ classi \\ \* \\ software \\ \\ HKEY USERS
+-   HKEY \_ USERS \\ \* \_ Classes \\ CLSID
+-   Interfaccia delle classi HKEY \_ USERS \\ \* \_ \\
 
-Vengono utilizzati per tenere i dati che non devono essere condivisi tra applicazioni a 32 bit e a 64 bit.
+Vengono usati per mantenere i dati che non devono essere condivisi tra le applicazioni a 32 bit e a 64 bit.
 
 ## <a name="manifestation"></a>Manifestazione
 
-Il CLSID e le chiavi di interfaccia dall'elenco precedente non vengono più riflesse mentre vengono ancora reindirizzati. Sebbene questo sia il comportamento desiderato nella maggior parte dei casi, è possibile che le applicazioni possano assumere una dipendenza dal comportamento riflesso in vista.
+Le chiavi CLSID e Interface dell'elenco precedente non vengono più riflesse mentre sono ancora reindirizzate. Anche se si tratta del comportamento desiderato nella maggior parte dei casi, è possibile che le applicazioni prendano una dipendenza dal comportamento riflessa in Vista.
 
-Le funzioni che consentono alle applicazioni di controllare la reflection (RegDisableReflectionKey e RegEnableReflectionKey) non sono Ops in Windows 7.
+Le funzioni che consentono alle applicazioni di controllare la reflection (RegDisableReflectionKey e RegEnableReflectionKey) non sono operazioni in Windows 7.
 
-## <a name="mitigation-of-impact"></a>Attenuazione dell'effetto
+## <a name="mitigation-of-impact"></a>Mitigazione dell'impatto
 
-COM è il principale consumatore della reflection del registro di sistema. COM e altri consumer sono stati aggiornati per adattarsi a questa modifica. Questa modifica non influisce sulle applicazioni che utilizzano API COM standard.
+COM è il principale consumer della reflection del Registro di sistema. COM e altri consumer sono stati aggiornati per supportare questa modifica. Questa modifica non influisce sulle applicazioni che usano API COM standard.
 
 ## <a name="solution"></a>Soluzione
 
-Applicare una delle opzioni seguenti se si basa la reflection del registro di sistema per sincronizzare le visualizzazioni a 32 bit e a 64 bit:
+Applicare una delle opzioni seguenti se si fa affidamento sulla reflection del Registro di sistema per sincronizzare le visualizzazioni a 32 bit e a 64 bit:
 
--   Crea chiavi in entrambe le visualizzazioni in modo esplicito durante l'installazione
--   Spostare le chiavi dall'ambito delle chiavi riflesse
--   Controllare entrambe le visualizzazioni del registro di sistema quando si esegue una query per una chiave riflessa
+-   Creare chiavi in entrambe le visualizzazioni in modo esplicito durante l'installazione
+-   Spostare le chiavi all'esterno dell'ambito delle chiavi riflesse
+-   Controllare entrambe le viste del Registro di sistema durante l'esecuzione di query per una chiave riflessa
 
-    **Nota:** \_ \_ \_ \_ Impossibile combinare i flag 64KEY di WOW64 32KEY e Key WOW64
+    **Nota:** I \_ flag KEY WOW64 \_ 32KEY e KEY \_ WOW64 \_ 64KEY non possono essere combinati
 
-Applicare una delle opzioni seguenti se si basano sulle funzioni RegDisableReflectionKey per disabilitare la reflection del registro di sistema:
+Applicare una delle opzioni seguenti se si fa affidamento sulle funzioni RegDisableReflectionKey per disabilitare la reflection del Registro di sistema:
 
--   Crea chiavi in entrambe le visualizzazioni in modo esplicito durante l'installazione
--   Spostare le chiavi dall'ambito delle chiavi riflesse
--   Usare sottochiavi specifiche della piattaforma (ad esempio x86, amd64 e ia64) per separare i dati specifici di bit
+-   Creare le chiavi in entrambe le viste in modo esplicito durante l'installazione
+-   Spostare le chiavi all'esterno dell'ambito delle chiavi riflesse
+-   Usare sottochiavi specifiche della piattaforma (ad esempio x86, amd64 e ia64) per separare i dati specifici del bitness
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [Articolo di reflection del registro di sistema](../winprog64/registry-reflection.md)
--   [Elenco delle chiavi reindirizzate nell'articolo redirector del registro di sistema](../winprog64/registry-redirector.md)
--   [Procedure consigliate per WOW64](/windows-hardware/drivers/display/microsoft-windows-vista-display-driver-64-bit-issues)
+-   [Articolo sulla reflection del Registro di sistema](../winprog64/registry-reflection.md)
+-   [Elenco di chiavi reindirizzate all'interno dell'articolo Redirector del Registro di sistema](../winprog64/registry-redirector.md)
+-   [Procedure consigliate per Wow64](/windows-hardware/drivers/display/microsoft-windows-vista-display-driver-64-bit-issues)
 
 > [!Note]  
 > Queste risorse potrebbero non essere disponibili in alcune lingue e paesi/aree geografiche.

@@ -1,12 +1,12 @@
 ---
 title: Metodo PauseService della classe Win32_Service (Servizi Desktop remoto)
-description: Esegue un tentativo di sospensione del servizio.
+description: 'Metodo PauseService della classe Win32_Service (Servizi Desktop remoto): tenta di posizionare il servizio nello stato sospeso.'
 ms.assetid: 101987F6-FBAB-4E79-B1FA-346B1EF58DE1
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo PauseService
-- Metodo PauseService Servizi Desktop remoto, classe Win32_Service
-- Classe Win32_Service Servizi Desktop remoto, metodo PauseService
+- Metodo PauseService Servizi Desktop remoto
+- Metodo PauseService Servizi Desktop remoto , Win32_Service classe
+- Win32_Service classe Servizi Desktop remoto , metodo PauseService
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69951a77530b3aff89148b08e19f3a7c4da8f5b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d7c9847f363d9bc6d1743da6189d2c4290c00dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301290"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090599"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo PauseService della classe Win32_Service (Servizi Desktop remoto)
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** tenta di collocare il servizio nello stato sospeso.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** tenta di posizionare il servizio nello stato sospeso.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -87,7 +87,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**Proprietà state** ) è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** ) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Errore sconosciuto durante l'avvio del servizio.
 **9**
 </dt> <dd>
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -164,28 +164,28 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 **16**
 </dt> <dd>
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
 **17**
 </dt> <dd>
 
-Il servizio non dispone di un thread di esecuzione.
+Il servizio non ha thread di esecuzione.
 
 </dd> <dt>
 
 **18**
 </dt> <dd>
 
-Il servizio ha dipendenze circolari all'avvio.
+Il servizio presenta dipendenze circolari all'avvio.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Un servizio è in esecuzione con lo stesso nome.
+Un servizio viene eseguito con lo stesso nome.
 
 </dd> <dt>
 
@@ -199,14 +199,14 @@ Il nome del servizio contiene caratteri non validi.
 **21**
 </dt> <dd>
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
 **22**
 </dt> <dd>
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -226,17 +226,17 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Dopo aver determinato i servizi che possono essere arrestati o sospesi, è possibile usare i metodi [**StopService**](win32-terminalservice-stopservice.md) e **PauseService** per arrestare e sospendere i servizi. La decisione di arrestare un servizio anziché sospenderla, o viceversa, dipende da diversi fattori, inclusi i seguenti:
+Dopo aver determinato quali servizi possono essere arrestati o sospesi, è possibile usare i [**metodi StopService**](win32-terminalservice-stopservice.md) e **PauseService** per arrestare e sospendere i servizi. La decisione di arrestare un servizio anziché sospenderlo o viceversa dipende da diversi fattori, tra cui:
 
--   Il servizio è in grado di essere sospeso? In caso contrario, l'unica opzione è arresta il servizio.
--   È necessario continuare a gestire le richieste client per chiunque si sia già connessi al servizio? In tal caso, sospendere un servizio in genere consente di gestire i client esistenti negando l'accesso ai nuovi client. Al contrario, quando si arresta un servizio, tutti i client vengono immediatamente disconnessi.
--   È necessario riconfigurare un servizio e fare in modo che le modifiche abbiano effetto immediato? Sebbene sia possibile modificare le proprietà del servizio mentre un servizio viene sospeso, la maggior parte di esse non diventano effettive fino a quando il servizio non viene effettivamente arrestato e riavviato.
+-   Il servizio è in grado di essere sospeso? In caso contrario, l'unica opzione è arrestare il servizio.
+-   È necessario continuare a gestire le richieste client per chiunque sia già connesso al servizio? In tal caso, la sospensione di un servizio consente in genere di gestire i client esistenti negando l'accesso ai nuovi client. Al contrario, quando si arresta un servizio, tutti i client vengono disconnessi immediatamente.
+-   È necessario riconfigurare un servizio e impostare immediatamente l'applicazione delle modifiche? Sebbene le proprietà del servizio possano essere modificate durante la sospensione di un servizio, la maggior parte di esse non ha effetto fino a quando il servizio non viene effettivamente arrestato e riavviato.
 
 Il codice di scripting necessario per arrestare un servizio è quasi identico al codice necessario per sospendere il servizio.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di [sospensione dei servizi in esecuzione in un account VBScript specifico](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) mette in pausa tutti i servizi in esecuzione con l'ipotetico account del servizio NETSVC.
+[L'esempio VBScript Pause Services Running Under a Specific Account](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) Sospende tutti i servizi in esecuzione con l'ipotetico account del servizio Netsvc.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -247,7 +247,7 @@ L'esempio di [sospensione dei servizi in esecuzione in un account VBScript speci
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -256,13 +256,13 @@ L'esempio di [sospensione dei servizi in esecuzione in un account VBScript speci
 
 <dl> <dt>
 
-[**\_Servizio Win32**](/windows/desktop/CIMWin32Prov/win32-service)
+[**Servizio \_ Win32**](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
 [Classi del sistema operativo](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[**\_TerminalService Win32**](win32-terminalservice.md)
+[**Win32 \_ TerminalService**](win32-terminalservice.md)
 </dt> <dt>
 
 [Attività WMI: Servizi](/windows/desktop/WmiSdk/wmi-tasks--services)

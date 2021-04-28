@@ -1,7 +1,7 @@
 ---
-description: Apre una cartella specificata in una finestra di Esplora risorse.
+description: 'Metodo Shell.Explore: apre una cartella specificata in una Esplora risorse finestra.'
 ms.assetid: a788a3c4-f316-4fae-9294-3872eee8f46a
-title: Metodo Shell. explore (shldisp. h)
+title: Metodo Shell.Explore (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 00b597aea0121e5f87f51886e8019a1130a20584
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ec1756ad6743c5bbac36f56087e6f3820cbb624
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968263"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104329"
 ---
-# <a name="shellexplore-method"></a>Shell. explore (metodo)
+# <a name="shellexplore-method"></a>Metodo Shell.Explore
 
-Apre una cartella specificata in una finestra di Esplora risorse.
+Apre una cartella specificata in una finestra Esplora risorse dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,12 +49,12 @@ Shell.Explore( _
 
 <dl> <dt>
 
-*vdir* \[ in\]
+*vDir* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Cartella da visualizzare. Può trattarsi di una stringa che specifica il percorso della cartella o uno dei valori [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al suo posto.
+Cartella da visualizzare. Può essere una stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata l' **esplorazione** in uso. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente illustra **Esplora** in uso. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -88,7 +88,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -130,11 +130,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetTypeInfoCount Recupera il numero di interfacce di informazioni sul tipo fornite dall'oggetto.
+description: "Metodo CMediaPosition.GetTypeInfoCount: il metodo GetTypeInfoCount recupera il numero di interfacce di informazioni sul tipo fornite dall'oggetto."
 ms.assetid: c98368f2-ae0c-4301-be30-7332b19f53ee
-title: Metodo CMediaPosition. GetTypeInfoCount (Ctlutil. h)
+title: Metodo CMediaPosition.GetTypeInfoCount (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7cac543c49b7f2f6b9dc3357bbb1c691477d9b62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8cfc54f414a6722f7f69a0330fad2d1a0cfab425
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329379"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095479"
 ---
-# <a name="cmediapositiongettypeinfocount-method"></a>CMediaPosition. GetTypeInfoCount, metodo
+# <a name="cmediapositiongettypeinfocount-method"></a>Metodo CMediaPosition.GetTypeInfoCount
 
 Il `GetTypeInfoCount` metodo recupera il numero di interfacce di informazioni sul tipo fornite dall'oggetto.
 
@@ -45,7 +45,7 @@ HRESULT GetTypeInfoCount(
 *pctinfo* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve il numero di interfacce di informazioni sul tipo fornite dall'oggetto. Quando il metodo restituisce, il valore è 1.
+Puntatore a una variabile che riceve il numero di interfacce di informazioni sul tipo fornite dall'oggetto . Quando il metodo viene restituito, il valore è 1.
 
 </dd> </dl>
 
@@ -57,8 +57,8 @@ Restituisce uno dei valori seguenti.
 
 | Codice restituito                                                                               | Descrizione                           |
 |-------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>      | Esito positivo.<br/>                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl> | Argomento puntatore **null** .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione completata.<br/>                   |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl> | Argomento del puntatore **NULL.**<br/> |
 
 
 
@@ -70,8 +70,8 @@ Restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

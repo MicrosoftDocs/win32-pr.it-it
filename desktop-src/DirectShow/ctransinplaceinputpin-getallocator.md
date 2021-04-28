@@ -1,7 +1,7 @@
 ---
-description: "Il metodo getallocator recupera l'allocatore di memoria proposto da questo pin. Questo metodo implementa il metodo IMemInputPin:: getallocator."
+description: "Metodo CTransInPlaceInputPin.GetAllocator: il metodo GetAllocator recupera l'allocatore di memoria proposto da questo pin. Questo metodo implementa il metodo IMemInputPin::GetAllocator."
 ms.assetid: e9db4aa0-4f53-4ca4-babb-5e0215c7c284
-title: Metodo CTransInPlaceInputPin. getallocator (Transip. h)
+title: Metodo CTransInPlaceInputPin.GetAllocator (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7798640297539a8fa8f6349c799e61e7e22a453d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2472630d69119f33653d831386af615718274d99
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326198"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084659"
 ---
-# <a name="ctransinplaceinputpingetallocator-method"></a>Metodo CTransInPlaceInputPin. getallocator
+# <a name="ctransinplaceinputpingetallocator-method"></a>Metodo CTransInPlaceInputPin.GetAllocator
 
-Il `GetAllocator` metodo recupera l'allocatore di memoria proposto da questo pin. Questo metodo implementa il metodo [**IMemInputPin:: Getallocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) .
+Il `GetAllocator` metodo recupera l'allocatore di memoria proposto da questo pin. Questo metodo implementa il [**metodo IMemInputPin::GetAllocator.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,14 +51,14 @@ Riceve un puntatore all'interfaccia [**IMemAllocator**](/windows/desktop/api/Str
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                          | Descrizione                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                 | Esito positivo.<br/>                   |
-| <dl> <dt>**\_ \_ \_ allocatore E nessun allocatore**</dt> </dl> | Nessun allocatore disponibile.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                 | Operazione completata.<br/>                   |
+| <dl> <dt>**VFW \_ E \_ NO \_ ALLOCATOR**</dt> </dl> | Nessun allocatore disponibile.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 Se il pin di output del filtro è connesso, questo metodo richiede un allocatore dal pin di input del filtro downstream.
 
-Se il pin di output del filtro non è connesso, questo metodo crea un allocatore temporaneo. Successivamente, quando il pin di output sarà connesso, il filtro riconnetterà il pin di input e rinegozierà l'allocatore.
+Se il pin di output del filtro non è connesso, questo metodo crea un allocatore temporaneo. Successivamente, quando il pin di output è connesso, il filtro riconnetterà il pin di input e rinegozia l'allocatore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ Se il pin di output del filtro non è connesso, questo metodo crea un allocatore
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

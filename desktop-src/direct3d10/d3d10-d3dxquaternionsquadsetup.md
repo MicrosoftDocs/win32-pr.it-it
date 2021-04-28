@@ -1,7 +1,7 @@
 ---
-description: Imposta i punti di controllo per l'interpolazione quadrangolare sferica.
+description: "Funzione D3DXQuaternionSquadSetup (D3DX10Math.h): configura i punti di controllo per l'interpolazione quadrangolare sferica."
 ms.assetid: c66227bd-8cc1-4173-9dc2-5aab9d57301e
-title: Funzione D3DXQuaternionSquadSetup (D3DX10Math. h)
+title: Funzione D3DXQuaternionSquadSetup (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4a0683bce3642b0300e68be348d8aed39b3c333d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8d8a778473c0b07ef984facce9c42f947755a74a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323335"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108719"
 ---
-# <a name="d3dxquaternionsquadsetup-function-d3dx10mathh"></a>Funzione D3DXQuaternionSquadSetup (D3DX10Math. h)
+# <a name="d3dxquaternionsquadsetup-function-d3dx10mathh"></a>Funzione D3DXQuaternionSquadSetup (D3DX10Math.h)
 
-Imposta i punti di controllo per l'interpolazione quadrangolare sferica.
+Imposta i punti di controllo per l'interpolazione quadrangola sferica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,25 +46,25 @@ void D3DXQuaternionSquadSetup(
 
 <dl> <dt>
 
-*pAOut* \[ in\]
+*pAOut* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a AOut.
+Puntatore ad AOut.
 
 </dd> <dt>
 
-*pBOut* \[ in\]
+*pBOut* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore all'attacco.
+Puntatore a BOut.
 
 </dd> <dt>
 
-*pCOut* \[ in\]
+*pCOut* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
@@ -73,7 +73,7 @@ Puntatore a COut.
 
 </dd> <dt>
 
-*pQ0* \[ in\]
+*pQ0* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
@@ -82,7 +82,7 @@ Puntatore al punto di controllo di input, Q0.
 
 </dd> <dt>
 
-*pQ1* \[ in\]
+*pQ1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
@@ -91,7 +91,7 @@ Puntatore al punto di controllo di input, Q1.
 
 </dd> <dt>
 
-*pQ2* \[ in\]
+*pQ2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
@@ -100,7 +100,7 @@ Puntatore al punto di controllo di input, Q2.
 
 </dd> <dt>
 
-*pQ3* \[ in\]
+*pQ3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
@@ -115,7 +115,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa funzione accetta quattro punti di controllo, che vengono forniti agli input pQ0, pQ1, pQ2 e pQ3. La funzione modifica quindi questi valori per trovare una curva che scorre lungo il percorso più breve. I valori di Q0, Q2 e Q3 vengono calcolati come illustrato di seguito.
+Questa funzione accetta quattro punti di controllo, forniti agli input pQ0, pQ1, pQ2 e pQ3. La funzione modifica quindi questi valori per trovare una curva che scorre lungo il percorso più breve. I valori di q0, q2 e q3 vengono calcolati come illustrato di seguito.
 
 
 ```
@@ -128,14 +128,14 @@ q3 = |Q2 + Q3| < |Q2 - Q3| ? -Q3 : Q3
 
 Dopo aver calcolato i nuovi valori Q, i valori per AOut, BOut e COut vengono calcolati come segue:
 
-AOut = Q1 \* e<sup> \[ -0,25 \ \* (\ LN \[ Exp (Q1) \* Q2 \] \ + \ LN \[ Exp (Q1) \* Q0 \] \) \ \] </sup>
+AOut = q1 \* e<sup> \[ -0,25\ \* (\ Ln \[ Exp(q1) \* q2 \] \ +\ Ln \[ Exp(q1) \* q0 \ \] )\ \] </sup>
 
-BOut = Q2 \* e<sup> \[ -0,25 \ \* (\ LN \[ Exp (Q2) \* Q3 \] \ + \ LN \[ Exp (Q2) \* Q1 \] \) \ \] </sup>
+BOut = q2 \* e<sup> \[ -0,25\ \* (\ Ln \[ Exp(q2) \* q3 \] \ +\ Ln \[ Exp(q2) \* q1 \ \] )\ \] </sup>
 
-COut = Q2
+COut = q2
 
 > [!Note]  
-> Ln è il metodo API [**D3DXQuaternionLn**](d3d10-d3dxquaternionln.md) e exp è il metodo API [**D3DXQuaternionExp**](d3d10-d3dxquaternionexp.md).
+> Ln è il metodo API [**D3DXQuaternionLn**](d3d10-d3dxquaternionln.md) e Exp è il metodo API [**D3DXQuaternionExp**](d3d10-d3dxquaternionexp.md).
 
  
 
@@ -143,7 +143,7 @@ Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsi
 
 ### <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come utilizzare un set di chiavi Quaternion (q0, Q1, Q2, Q3) per calcolare i punti quadrangolari interni (A, B, C). In questo modo si garantisce che le tangenti siano continue tra i segmenti adiacenti.
+L'esempio seguente illustra come usare un set di chiavi quaternione (Q0, Q1, Q2, Q3) per calcolare i punti quadrangolare interni (A, B, C). Ciò garantisce che le tangenti siano continue tra segmenti adiacenti.
 
 
 ```
@@ -153,7 +153,7 @@ Q0    Q1    Q2    Q3
 
 
 
-Nell'esempio di codice riportato di seguito viene illustrato come è possibile interpolare tra Q1 e Q2.
+L'esempio di codice seguente illustra come è possibile eseguire l'interpolazione tra Q1 e Q2.
 
 
 ```
@@ -173,10 +173,10 @@ D3DXQuaternionSquad(&Qt, &Q1, &A, &B, &C, time);
 
 > [!Note]
 >
-> -   C è +/-Q2 a seconda del risultato della funzione.
-> -   QT è il risultato della funzione.
+> -   C è +/- Q2 a seconda del risultato della funzione.
+> -   Qt è il risultato della funzione .
 >
-> Il risultato è una rotazione di 45 gradi intorno all'asse z per time = 0,5.
+> Il risultato è una rotazione di 45 gradi intorno all'asse z per il tempo = 0,5.
 
  
 
@@ -186,8 +186,8 @@ D3DXQuaternionSquad(&Qt, &Q1, &A, &B, &C, time);
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

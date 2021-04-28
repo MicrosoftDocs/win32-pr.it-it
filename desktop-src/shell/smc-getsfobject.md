@@ -1,6 +1,6 @@
 ---
-description: Richiede un puntatore a un oggetto specificato.
-title: Messaggio SMC_GETSFOBJECT (ShObjIdl. h)
+description: 'SMC_GETSFOBJECT messaggio: richiede un puntatore a un oggetto specificato.'
+title: SMC_GETSFOBJECT messaggio (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: a8478f10-77ce-4e71-a5dc-89d8a90cf513
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c7fb57ea8e3f02ce4e773e187310530c14d65515
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 612b43c193cd1919db4a5cf9dba3a8fdba1c81c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232330"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086609"
 ---
-# <a name="smc_getsfobject-message"></a>\_Messaggio GETSFOBJECT di SMC
+# <a name="smc_getsfobject-message"></a>Messaggio GETSFOBJECT di SMC \_
 
 Richiede un puntatore a un oggetto specificato.
 
@@ -38,14 +38,14 @@ SMC_GETSFOBJECT
 
 <dl> <dt>
 
-*IID* 
+*Iid* 
 </dt> <dd>
 
 IID associato all'oggetto richiesto.
 
 </dd> <dt>
 
-*PV* 
+*Pv* 
 </dt> <dd>
 
 Puntatore void che riceve un puntatore all'interfaccia richiesta.
@@ -54,15 +54,15 @@ Puntatore void che riceve un puntatore all'interfaccia richiesta.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituire S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questa notifica viene ricevuta dal metodo [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) . È simile a [**SMC \_ GetObject**](smc-getobject.md) ma usato per gli elementi della cartella della shell. Creare l'oggetto richiesto e assegnare un puntatore all'interfaccia richiesta a *PV*.
+Questa notifica viene ricevuta dal [**metodo IShellMenuCallback::CallbackSM.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) È simile a [**SMC \_ GETOBJECT,**](smc-getobject.md) ma usato per gli elementi della cartella shell. Creare l'oggetto richiesto e assegnare un puntatore all'interfaccia richiesta a *pv*.
 
-È possibile che vengano richieste le interfacce seguenti.
+Possono essere richieste le interfacce seguenti.
 
--   [**IStream**](/windows/win32/api/objidl/nn-objidl-istream)
+-   [**Istream**](/windows/win32/api/objidl/nn-objidl-istream)
 -   [**IShellMenu**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellmenu)
 -   [**IShellMenuCallback**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellmenucallback)
 
@@ -74,8 +74,8 @@ Questa notifica viene ricevuta dal metodo [**IShellMenuCallback:: CallbackSM**](
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>ShObjIdl. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

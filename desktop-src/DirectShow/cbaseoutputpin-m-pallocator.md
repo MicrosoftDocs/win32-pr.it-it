@@ -1,7 +1,7 @@
 ---
-description: Puntatore all'allocatore di memoria.
+description: "Membro CBaseOutputPin::m_pAllocator : puntatore all'allocatore di memoria."
 ms.assetid: b5e37ce0-7c02-4395-bfdf-0ee8c11da09a
-title: 'Membro CBaseOutputPin:: m_pAllocator (Amfilter. h)'
+title: Membro CBaseOutputPin::m_pAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9f46c786cb0cec5c5082b5cda003a8f4b345f518
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d5b512f2b40d27e13fa78904481fcc749d0bde4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332231"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096100"
 ---
-# <a name="cbaseoutputpinm_pallocator-member"></a>Membro pAllocator di CBaseOutputPin:: m \_
+# <a name="cbaseoutputpinm_pallocator-member"></a>Membro PAllocator CBaseOutputPin::m \_
 
 Puntatore all'allocatore di memoria.
 
@@ -42,8 +42,8 @@ IMemAllocator *m_pAllocator;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
