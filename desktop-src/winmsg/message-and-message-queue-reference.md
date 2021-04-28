@@ -1,23 +1,23 @@
 ---
-description: .
+description: Informazioni di riferimento sul messaggio
 ms.assetid: e6e5326c-d143-44ad-a8fa-7d2cb3ef0058
-title: Riferimento al messaggio
+title: Informazioni di riferimento sul messaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20396b1dc7c99cb62b34cc9ab3b4d140a557dab8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8625a49405125bd274575fc49ea5aa764978bb16
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104345611"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083479"
 ---
-# <a name="message-reference"></a><span data-ttu-id="d41aa-103">Riferimento al messaggio</span><span class="sxs-lookup"><span data-stu-id="d41aa-103">Message Reference</span></span>
+# <a name="message-reference"></a><span data-ttu-id="8ca71-103">Informazioni di riferimento sul messaggio</span><span class="sxs-lookup"><span data-stu-id="8ca71-103">Message Reference</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="d41aa-104">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="d41aa-104">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8ca71-104">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="8ca71-104">In This Section</span></span>
 
--   [<span data-ttu-id="d41aa-105">Funzioni di messaggio</span><span class="sxs-lookup"><span data-stu-id="d41aa-105">Message Functions</span></span>](message-and-message-queue-functions.md)
--   [<span data-ttu-id="d41aa-106">Strutture di messaggi</span><span class="sxs-lookup"><span data-stu-id="d41aa-106">Message Structures</span></span>](message-and-message-queue-structures.md)
--   [<span data-ttu-id="d41aa-107">Costanti messaggio</span><span class="sxs-lookup"><span data-stu-id="d41aa-107">Message Constants</span></span>](message-and-message-queue-notifications.md)
+-   [<span data-ttu-id="8ca71-105">Funzioni di messaggio</span><span class="sxs-lookup"><span data-stu-id="8ca71-105">Message Functions</span></span>](message-and-message-queue-functions.md)
+-   [<span data-ttu-id="8ca71-106">Strutture dei messaggi</span><span class="sxs-lookup"><span data-stu-id="8ca71-106">Message Structures</span></span>](message-and-message-queue-structures.md)
+-   [<span data-ttu-id="8ca71-107">Costanti del messaggio</span><span class="sxs-lookup"><span data-stu-id="8ca71-107">Message Constants</span></span>](message-and-message-queue-notifications.md)
 
  
 

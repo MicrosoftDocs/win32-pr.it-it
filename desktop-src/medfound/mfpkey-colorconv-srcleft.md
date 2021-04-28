@@ -1,49 +1,49 @@
 ---
-description: Specifica il bordo sinistro, in pixel, del rettangolo di origine.
+description: 'MFPKEY_COLORCONV_SRCLEFT proprietà : specifica il bordo sinistro del rettangolo di origine, in pixel.'
 ms.assetid: d5450ff9-085f-4345-87af-bf6c87931755
-title: Proprietà MFPKEY_COLORCONV_SRCLEFT (Wmcodecdsp. h)
+title: MFPKEY_COLORCONV_SRCLEFT proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddbc6bed8a3c41ebeff2f9c4f6dbb2bbb351e74f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c3168125390cef6472ebc6ae6bf71ea426976c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227024"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092969"
 ---
-# <a name="mfpkey_colorconv_srcleft-property"></a><span data-ttu-id="4dc69-103">MFPKEY \_ COLORCONV- \_ Proprietà SRCLEFT</span><span class="sxs-lookup"><span data-stu-id="4dc69-103">MFPKEY\_COLORCONV\_SRCLEFT Property</span></span>
+# <a name="mfpkey_colorconv_srcleft-property"></a><span data-ttu-id="71c79-103">Proprietà MFPKEY \_ COLORCONV \_ SRCLEFT</span><span class="sxs-lookup"><span data-stu-id="71c79-103">MFPKEY\_COLORCONV\_SRCLEFT Property</span></span>
 
-<span data-ttu-id="4dc69-104">Specifica il bordo sinistro, in pixel, del rettangolo di origine.</span><span class="sxs-lookup"><span data-stu-id="4dc69-104">Specifies the left edge of the source rectangle, in pixels.</span></span>
+<span data-ttu-id="71c79-104">Specifica il bordo sinistro del rettangolo di origine, in pixel.</span><span class="sxs-lookup"><span data-stu-id="71c79-104">Specifies the left edge of the source rectangle, in pixels.</span></span>
 
-## <a name="constant-for-ipropertybag"></a><span data-ttu-id="4dc69-105">Costante per IPropertyBag</span><span class="sxs-lookup"><span data-stu-id="4dc69-105">Constant for IPropertyBag</span></span>
+## <a name="constant-for-ipropertybag"></a><span data-ttu-id="71c79-105">Costante per IPropertyBag</span><span class="sxs-lookup"><span data-stu-id="71c79-105">Constant for IPropertyBag</span></span>
 
-<span data-ttu-id="4dc69-106">Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span><span class="sxs-lookup"><span data-stu-id="4dc69-106">Available only by using [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span></span>
+<span data-ttu-id="71c79-106">Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)</span><span class="sxs-lookup"><span data-stu-id="71c79-106">Available only by using [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).</span></span>
 
-## <a name="data-type"></a><span data-ttu-id="4dc69-107">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="4dc69-107">Data Type</span></span>
+## <a name="data-type"></a><span data-ttu-id="71c79-107">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="71c79-107">Data Type</span></span>
 
-<span data-ttu-id="4dc69-108">VT \_ I4</span><span class="sxs-lookup"><span data-stu-id="4dc69-108">VT\_I4</span></span>
+<span data-ttu-id="71c79-108">VT \_ I4</span><span class="sxs-lookup"><span data-stu-id="71c79-108">VT\_I4</span></span>
 
-## <a name="applies-to"></a><span data-ttu-id="4dc69-109">Si applica a</span><span class="sxs-lookup"><span data-stu-id="4dc69-109">Applies To</span></span>
+## <a name="applies-to"></a><span data-ttu-id="71c79-109">Si applica a</span><span class="sxs-lookup"><span data-stu-id="71c79-109">Applies To</span></span>
 
--   [<span data-ttu-id="4dc69-110">Convertitore di colori DSP</span><span class="sxs-lookup"><span data-stu-id="4dc69-110">Color Converter DSP</span></span>](colorconverter.md)
+-   [<span data-ttu-id="71c79-110">DSP convertitore di colori</span><span class="sxs-lookup"><span data-stu-id="71c79-110">Color Converter DSP</span></span>](colorconverter.md)
 
-## <a name="requirements"></a><span data-ttu-id="4dc69-111">Requisiti</span><span class="sxs-lookup"><span data-stu-id="4dc69-111">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="71c79-111">Requisiti</span><span class="sxs-lookup"><span data-stu-id="71c79-111">Requirements</span></span>
 
 
 
-| <span data-ttu-id="4dc69-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="4dc69-112">Requirement</span></span> | <span data-ttu-id="4dc69-113">Valore</span><span class="sxs-lookup"><span data-stu-id="4dc69-113">Value</span></span> |
+| <span data-ttu-id="71c79-112">Requisito</span><span class="sxs-lookup"><span data-stu-id="71c79-112">Requirement</span></span> | <span data-ttu-id="71c79-113">Valore</span><span class="sxs-lookup"><span data-stu-id="71c79-113">Value</span></span> |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="4dc69-114">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="4dc69-114">Minimum supported client</span></span><br/> | <span data-ttu-id="4dc69-115">\[Solo app desktop Windows XP\]</span><span class="sxs-lookup"><span data-stu-id="4dc69-115">Windows XP \[desktop apps only\]</span></span><br/>                                             |
-| <span data-ttu-id="4dc69-116">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="4dc69-116">Minimum supported server</span></span><br/> | <span data-ttu-id="4dc69-117">\[Solo app desktop Windows Server 2003\]</span><span class="sxs-lookup"><span data-stu-id="4dc69-117">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                    |
-| <span data-ttu-id="4dc69-118">Intestazione</span><span class="sxs-lookup"><span data-stu-id="4dc69-118">Header</span></span><br/>                   | <dl> <span data-ttu-id="4dc69-119"><dt>Wmcodecdsp. h</dt></span><span class="sxs-lookup"><span data-stu-id="4dc69-119"><dt>Wmcodecdsp.h</dt></span></span> </dl> |
+| <span data-ttu-id="71c79-114">Client minimo supportato</span><span class="sxs-lookup"><span data-stu-id="71c79-114">Minimum supported client</span></span><br/> | <span data-ttu-id="71c79-115">Solo app desktop di Windows XP \[\]</span><span class="sxs-lookup"><span data-stu-id="71c79-115">Windows XP \[desktop apps only\]</span></span><br/>                                             |
+| <span data-ttu-id="71c79-116">Server minimo supportato</span><span class="sxs-lookup"><span data-stu-id="71c79-116">Minimum supported server</span></span><br/> | <span data-ttu-id="71c79-117">Solo app desktop di Windows Server 2003 \[\]</span><span class="sxs-lookup"><span data-stu-id="71c79-117">Windows Server 2003 \[desktop apps only\]</span></span><br/>                                    |
+| <span data-ttu-id="71c79-118">Intestazione</span><span class="sxs-lookup"><span data-stu-id="71c79-118">Header</span></span><br/>                   | <dl> <span data-ttu-id="71c79-119"><dt>Wmcodecdsp.h</dt></span><span class="sxs-lookup"><span data-stu-id="71c79-119"><dt>Wmcodecdsp.h</dt></span></span> </dl> |
 
 
 
-## <a name="see-also"></a><span data-ttu-id="4dc69-120">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="4dc69-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="71c79-120">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="71c79-120">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4dc69-121">Proprietà Media Foundation</span><span class="sxs-lookup"><span data-stu-id="4dc69-121">Media Foundation Properties</span></span>](media-foundation-properties.md)
+[<span data-ttu-id="71c79-121">Media Foundation proprietà</span><span class="sxs-lookup"><span data-stu-id="71c79-121">Media Foundation Properties</span></span>](media-foundation-properties.md)
 </dt> </dl>
 
  
