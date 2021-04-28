@@ -1,7 +1,7 @@
 ---
-description: Ottiene una costante cercandone il nome.
+description: 'Metodo ID3DXConstantTable::GetConstantByName: ottiene una costante cercandone il nome.'
 ms.assetid: 785a2d4f-6391-4419-a0b8-d8244a03ceae
-title: 'Metodo ID3DXConstantTable:: GetConstantByName (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::GetConstantByName (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3df4fc2cf44e035daf208d5dd14602e89b528ed1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 88461a45bf484a72c085f1776eb923a8534b8be3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322825"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115249"
 ---
-# <a name="id3dxconstanttablegetconstantbyname-method"></a>Metodo ID3DXConstantTable:: GetConstantByName
+# <a name="id3dxconstanttablegetconstantbyname-method"></a>Metodo ID3DXConstantTable::GetConstantByName
 
 Ottiene una costante cercandone il nome.
 
@@ -41,16 +41,16 @@ D3DXHANDLE GetConstantByName(
 
 <dl> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco della struttura di dati padre. Se la costante è un parametro di primo livello (non esiste una struttura di dati padre), usare **null**.
+Identificatore univoco della struttura dei dati padre. Se la costante è un parametro di primo livello (non esiste una struttura di dati padre), usare **NULL.**
 
 </dd> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -71,8 +71,8 @@ Restituisce un identificatore univoco alla costante.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

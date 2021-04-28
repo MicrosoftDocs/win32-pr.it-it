@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETUNICODEFORMAT (COMmctrl. h)
-description: Recupera il flag del formato carattere Unicode per il controllo.
+title: RB_GETUNICODEFORMAT messaggio (Commctrl.h)
+description: 'RB_GETUNICODEFORMAT messaggio: recupera il flag di formato carattere Unicode per il controllo.'
 ms.assetid: 48a4472b-dda4-41a2-b5bc-6f74b1cdc70b
 keywords:
-- Controlli di Windows Message RB_GETUNICODEFORMAT
+- RB_GETUNICODEFORMAT di windows del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a6ef31c409ddc0570b03a3bcd8bb0dd81e9c722
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45e1a4546c9c33e87943d305c85939ab280fa122
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475353"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085979"
 ---
-# <a name="rb_getunicodeformat-message"></a>\_Messaggio GETUNICODEFORMAT RB
+# <a name="rb_getunicodeformat-message"></a>Messaggio RB \_ GETUNICODEFORMAT
 
-Recupera il flag del formato carattere Unicode per il controllo.
+Recupera il flag di formato carattere Unicode per il controllo .
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Restituisce il flag di formato Unicode per il controllo. Se questo valore è div
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) .
+Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CCM \_ GETUNICODEFORMAT.**](ccm-getunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Imposta un valore BOOL.
+description: 'Metodo ID3DXBaseEffect::SetBool: imposta un valore BOOL.'
 ms.assetid: bb7c4860-50a0-416a-b9e0-5a2bec113e3c
-title: 'Metodo ID3DXBaseEffect:: SetValue (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetBool (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: be137ac210297b9fce12dafaffb6fead61d39512
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5045c26f521da289899c8f8bc0d97b7eaf01826f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322082"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097519"
 ---
-# <a name="id3dxbaseeffectsetbool-method"></a>Metodo ID3DXBaseEffect:: SetValue
+# <a name="id3dxbaseeffectsetbool-method"></a>Metodo ID3DXBaseEffect::SetBool
 
 Imposta un valore BOOL.
 
@@ -41,19 +41,19 @@ HRESULT SetBool(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
 *b* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 .
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

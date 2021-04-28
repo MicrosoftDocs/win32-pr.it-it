@@ -1,7 +1,7 @@
 ---
-description: Recupera l'impostazione di restrizione di un gruppo dal registro di sistema.
+description: "Metodo Shell.IsRestricted: recupera l'impostazione di restrizione di un gruppo dal Registro di sistema."
 ms.assetid: C4B3B5C0-7445-483a-885F-5283BD4D4B39
-title: Metodo Shell. Unrestricted (shldisp. h)
+title: Metodo Shell.IsRestricted (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 2224a3ea4ea26cf39f2e15486de4f96afe5448d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e428c914cf95d282fd721071009efc70fcb3a4d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232107"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104259"
 ---
-# <a name="shellisrestricted-method"></a>Shell. Unrestricted (metodo)
+# <a name="shellisrestricted-method"></a>Metodo Shell.IsRestricted
 
-Recupera l'impostazione di restrizione di un gruppo dal registro di sistema.
+Recupera l'impostazione di restrizione di un gruppo dal Registro di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,21 +51,21 @@ Shell.IsRestricted( _
 
 <dl> <dt>
 
-*sGroup* \[ in\]
+*sGroup* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il nome del gruppo. Questo valore è il nome di una sottochiave del registro di sistema in cui verificare la restrizione.
+Valore **String** contenente il nome del gruppo. Questo valore è il nome di una sottochiave del Registro di sistema in cui verificare la restrizione.
 
 </dd> <dt>
 
-*sRestriction* \[ in\]
+*sRestriction* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene la restrizione di cui è necessario recuperare il valore.
+Valore **String** contenente la restrizione di cui recuperare il valore.
 
 </dd> </dl>
 
@@ -73,19 +73,19 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **integer \** _
+Tipo: **\* Integer**
 
 Valore della restrizione. Se la restrizione specificata non viene trovata, il valore restituito è 0.
 
 ### <a name="vb"></a>VB
 
-Tipo: _*integer \**_
+Tipo: **\* Integer**
 
 Valore della restrizione. Se la restrizione specificata non viene trovata, il valore restituito è 0.
 
 ## <a name="remarks"></a>Commenti
 
-_ *Unrestricted** cerca prima di tutto un nome di sottochiave che corrisponde a *sGroup* nella chiave seguente.
+**IsRestricted** cerca prima di tutto un nome di sottochiave che corrisponda *a sGroup* nella chiave seguente.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -96,15 +96,15 @@ HKEY_LOCAL_MACHINE
                Policies
 ```
 
-Le restrizioni vengono dichiarate come valori delle sottochiavi dei singoli criteri. Se la restrizione denominata in *sRestriction* si trova nella sottochiave denominata in *sGroup*, con **restrizioni** viene restituito il valore corrente della restrizione. Se la restrizione non viene trovata **nel \_ \_ computer locale HKEY**, viene controllata la stessa sottochiave in **HKEY \_ Current \_ User**.
+Le restrizioni vengono dichiarate come valori delle singole sottochiavi dei criteri. Se la restrizione denominata in *sRestriction* viene trovata nella sottochiave denominata in *sGroup*, **IsRestricted** restituisce il valore corrente della restrizione. Se la restrizione non viene trovata in **HKEY \_ LOCAL \_ MACHINE**, la stessa sottochiave viene controllata in **HKEY \_ CURRENT \_ USER**.
 
 Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di con **restrizioni** per recuperare il valore dei dati della restrizione **undockwithoutlogon** dalla sottochiave di **sistema** . L'utilizzo viene visualizzato per JScript e VBScript.
+Negli esempi seguenti viene illustrato l'uso di **IsRestricted** per recuperare il valore dei dati della restrizione **undockwithoutlogon** dalla **sottochiave System.** L'utilizzo è illustrato per JScript e VBScript.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -122,7 +122,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -149,11 +149,11 @@ VBScript
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

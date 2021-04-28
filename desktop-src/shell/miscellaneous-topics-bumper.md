@@ -1,5 +1,5 @@
 ---
-description: .
+description: Argomenti della shell legacy
 title: Argomenti della shell legacy
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,28 +9,28 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 738c32fec8d5613307c242ead4f54fc56f241c5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: bb143dd393c20b504b50a68366c34aea1767cb17
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344156"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104389"
 ---
 # <a name="legacy-shell-topics"></a>Argomenti della shell legacy
 
 Queste funzionalità appartengono a versioni precedenti della shell di Windows. Alcune di queste funzionalità potrebbero non essere più presenti o supportate.
 
--   [Creazione di riconciliatori di cartelle](../lwef/briefcase-reconcilers.md)
--   [Gestione della Guida in linea](handling-online-help.md)
+-   [Creazione di riconciliatori di valigetta](../lwef/briefcase-reconcilers.md)
+-   [Gestione della Guida online](handling-online-help.md)
 -   [Gestione delle stampanti](print.md)
--   [Creazione di collegamenti a Internet](../lwef/internet-shortcuts.md)
+-   [Creazione di collegamenti Internet](../lwef/internet-shortcuts.md)
 -   [Account utente con cambio rapido utente e Desktop remoto](fastuserswitching.md)
 -   [Implementazione di una visualizzazione cartelle](../lwef/nse-folderview.md)
--   [Creazione di un gestore pulitura disco](../lwef/disk-cleanup.md)
+-   [Creazione di un gestore pulizia disco](../lwef/disk-cleanup.md)
 -   [Gestione degli screen saver](../lwef/screen-saver-library.md)
 -   [Debug della shell](debugging-with-the-shell.md)
--   [Creazioni guidate foto](../lwef/photo-wizards-bumper.md)
--   [Pubblicazione guidata](../lwef/publishing-wizards.md)
+-   [Procedure guidate per le foto](../lwef/photo-wizards-bumper.md)
+-   [Procedure guidate di pubblicazione](../lwef/publishing-wizards.md)
 -   [Centro sincronizzazione](synchronization-center-bumper.md)
 -   [Windows Defender](../lwef/windows-defender-bumper.md)
 

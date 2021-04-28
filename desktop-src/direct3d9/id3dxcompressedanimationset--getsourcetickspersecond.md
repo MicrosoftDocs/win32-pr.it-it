@@ -1,7 +1,7 @@
 ---
-description: Ottiene il numero di cicli del fotogramma chiave di animazione che si verificano al secondo.
+description: 'Metodo ID3DXCompressedAnimationSet::GetSourceTicksPerSecond: ottiene il numero di tick dei fotogrammi chiave di animazione che si verificano al secondo.'
 ms.assetid: 72adba95-e52f-46d8-ab9e-8e06ccbf8d08
-title: 'Metodo ID3DXCompressedAnimationSet:: GetSourceTicksPerSecond (D3dx9anim. h)'
+title: Metodo ID3DXCompressedAnimationSet::GetSourceTicksPerSecond (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4712ca3df21c53bad3f6cc9409ac8b5eacf730cb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 106e73acfcf9673e4c3dc7eef9b203d85bde19d9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322833"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115259"
 ---
-# <a name="id3dxcompressedanimationsetgetsourcetickspersecond-method"></a>Metodo ID3DXCompressedAnimationSet:: GetSourceTicksPerSecond
+# <a name="id3dxcompressedanimationsetgetsourcetickspersecond-method"></a>Metodo ID3DXCompressedAnimationSet::GetSourceTicksPerSecond
 
-Ottiene il numero di cicli del fotogramma chiave di animazione che si verificano al secondo.
+Ottiene il numero di tick dei fotogrammi chiave di animazione che si verificano al secondo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Numero di cicli del fotogramma chiave di animazione che si verificano al secondo.
+Numero di tick dei fotogrammi chiave di animazione che si verificano al secondo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Numero di cicli del fotogramma chiave di animazione che si verificano al secondo
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

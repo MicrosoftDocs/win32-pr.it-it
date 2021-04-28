@@ -1,7 +1,7 @@
 ---
-description: Costruisce un piano da tre punti.
+description: 'Funzione D3DXPlaneFromPoints (D3dx9math.h): costruisce un piano da tre punti.'
 ms.assetid: 13d5ce6b-0046-441b-b826-f34f4fe16979
-title: Funzione D3DXPlaneFromPoints (D3dx9math. h)
+title: Funzione D3DXPlaneFromPoints (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c537915c56cdbbfb33228b0c5a5ea3f2acc2baff
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0d945dff9c124f4c66cea4f9d61c490c6eaf7a66
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322100"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094159"
 ---
-# <a name="d3dxplanefrompoints-function-d3dx9mathh"></a>Funzione D3DXPlaneFromPoints (D3dx9math. h)
+# <a name="d3dxplanefrompoints-function-d3dx9mathh"></a>Funzione D3DXPlaneFromPoints (D3dx9math.h)
 
 Costruisce un piano da tre punti.
 
@@ -43,39 +43,39 @@ D3DXPLANE* D3DXPlaneFromPoints(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
-Puntatore alla struttura [**D3DXPLANE**](d3dxplane.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXPLANE**](d3dxplane.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) , che definisce uno dei punti usati per costruire il piano.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che definisce uno dei punti usati per costruire il piano.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) , che definisce uno dei punti usati per costruire il piano.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che definisce uno dei punti usati per costruire il piano.
 
 </dd> <dt>
 
-*pV3* \[ in\]
+*pV3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) , che definisce uno dei punti usati per costruire il piano.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che definisce uno dei punti usati per costruire il piano.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) , che definisce uno 
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
-Puntatore alla struttura [**D3DXPLANE**](d3dxplane.md) costruita dai punti specificati.
+Puntatore alla [**struttura D3DXPLANE**](d3dxplane.md) costruita dai punti dati.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXPlaneFromPoints** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXPlaneFromPoints** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Ruota (rispetto allo spazio delle coordinate globali) intorno a un asse arbitrario.
+description: Metodo ID3DXMATRIXStack::RotateAxis (D3DX10.h) - Ruota (rispetto allo spazio delle coordinate del mondo) intorno a un asse arbitrario.
 ms.assetid: 7c842bf6-2d13-422e-8136-0506a76ce9fe
-title: 'Metodo ID3DXMATRIXStack:: RotateAxis (D3DX10. h)'
+title: Metodo ID3DXMATRIXStack::RotateAxis (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: badd26d61fa6580b0193039e29a8fceedabe2d3c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0a2e52eed1c1957de9a0fcfed4ba3d3d05f89cb9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355999"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107911"
 ---
-# <a name="id3dxmatrixstackrotateaxis-method-d3dx10h"></a>Metodo ID3DXMATRIXStack:: RotateAxis (D3DX10. h)
+# <a name="id3dxmatrixstackrotateaxis-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::RotateAxis (D3DX10.h)
 
-Ruota (rispetto allo spazio delle coordinate globali) intorno a un asse arbitrario.
+Ruota (rispetto allo spazio delle coordinate del mondo) intorno a un asse arbitrario.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT RotateAxis(
 
 <dl> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore all'asse arbitrario della rotazione. Vedere [**D3DXVECTOR3**](d3d10-d3dxvector3.md).
+Puntatore all'asse arbitrario di rotazione. Vedere [**D3DXVECTOR3**](d3d10-d3dxvector3.md).
 
 </dd> <dt>
 
-*Angolo* \[ in\]
+*Angolo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Angolo di rotazione dell'asse arbitrario, in radianti. Gli angoli vengono misurati in senso antiorario quando si osserva lungo l'asse arbitrario verso l'origine.
+Angolo di rotazione intorno all'asse arbitrario, espresso in radianti. Gli angoli vengono misurati in senso antiorario quando si cerca lungo l'asse arbitrario verso l'origine.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo aggiunge la rotazione allo stack della matrice con la matrice di rotazione calcolata simile alla seguente:
+Questo metodo aggiunge la rotazione allo stack matrice con la matrice di rotazione calcolata simile alla seguente:
 
 
 ```
@@ -78,7 +78,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-Poiché la rotazione viene moltiplicata a destra nello stack della matrice, la rotazione è relativa allo spazio delle coordinate globali.
+Poiché la rotazione viene moltiplicata a destra nello stack della matrice, la rotazione è relativa allo spazio delle coordinate del mondo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,8 +86,8 @@ Poiché la rotazione viene moltiplicata a destra nello stack della matrice, la r
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

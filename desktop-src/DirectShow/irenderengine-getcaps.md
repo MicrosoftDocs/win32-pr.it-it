@@ -1,7 +1,7 @@
 ---
-description: Non implementato.
+description: 'Metodo IRenderEngine::GetCaps : non implementato.'
 ms.assetid: ad48a817-a69a-419c-9186-25f45b02d8f5
-title: 'Metodo IRenderEngine:: getcaps'
+title: Metodo IRenderEngine::GetCaps
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8d8f6ed18fb9c5d4c5964b050a2a76bebec8ba82
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 16dee2c5c81eda1d957490aafcfc1d9984d2d232
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876206"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089069"
 ---
-# <a name="irenderenginegetcaps-method"></a>Metodo IRenderEngine:: getcaps
+# <a name="irenderenginegetcaps-method"></a>Metodo IRenderEngine::GetCaps
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -51,7 +51,7 @@ Riservato.
 
 </dd> <dt>
 
-*preturn* 
+*pReturn* 
 </dt> <dd>
 
 Riservato.
@@ -60,17 +60,17 @@ Riservato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

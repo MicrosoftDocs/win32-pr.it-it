@@ -1,7 +1,7 @@
 ---
-description: Fornisce un'interfaccia utente personalizzata che sostituisce l'interfaccia utente di sistema predefinita.
+description: "Metodo IWiaUIExtension2::D eviceDialog: fornisce un'interfaccia utente personalizzata che sostituisce l'interfaccia utente di sistema predefinita."
 ms.assetid: 0d70392d-294a-42bf-adc5-1006f83d7e21
-title: Metodo IWiaUIExtension2::D eviceDialog (Wiadevd. h)
+title: Metodo IWiaUIExtension2::D eviceDialog (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 142ec77572708063e24b38d342fb49f69c7651c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94e717184c936ae85ba1cf345a13b44f9bbdce4d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226143"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116649"
 ---
-# <a name="iwiauiextension2devicedialog-method"></a>IWiaUIExtension2::D Metodo eviceDialog
+# <a name="iwiauiextension2devicedialog-method"></a>Metodo IWiaUIExtension2::D eviceDialog
 
 Fornisce un'interfaccia utente personalizzata che sostituisce l'interfaccia utente di sistema predefinita.
 
@@ -39,12 +39,12 @@ HRESULT DeviceDialog(
 
 <dl> <dt>
 
-*pDeviceDialogData* \[ in\]
+*pDeviceDialogData* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **PDEVICEDIALOGDATA2 \** _
+Tipo: **PDEVICEDIALOGDATA2 \***
 
-Punta a una struttura [_ *DEVICEDIALOGDATA2* *](-wia-devicedialogdata2.md) che contiene tutti i dati necessari per implementare la finestra di dialogo del dispositivo.
+Punta a una [**struttura DEVICEDIALOGDATA2**](-wia-devicedialogdata2.md) che contiene tutti i dati necessari per implementare la finestra di dialogo del dispositivo.
 
 </dd> </dl>
 
@@ -52,13 +52,13 @@ Punta a una struttura [_ *DEVICEDIALOGDATA2* *](-wia-devicedialogdata2.md) che c
 
 Tipo: **HRESULT**
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se l'utente annulla la finestra di dialogo, il metodo restituisce \_ false. Se il metodo ha esito negativo, viene restituito un codice di errore appropriato. Nella tabella seguente vengono illustrati alcuni dei possibili codici di stato restituiti.
+Se il metodo ha esito positivo, restituisce S \_ OK. Se l'utente annulla la finestra di dialogo, il metodo restituisce S \_ FALSE. Se il metodo ha esito negativo, restituisce un codice di errore appropriato. La tabella seguente illustra alcuni dei possibili codici di stato restituiti.
 
 
 
 | Codice di errore    | Descrizione                              |
 |---------------|------------------------------------------|
-| E \_ INVALIDARG | Il parametro pDeviceDialogData è **null**. |
+| E \_ INVALIDARG | Il parametro pDeviceDialogData è **NULL.** |
 | E \_ NOTIMPL    | Il metodo non è implementato.           |
 
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se l'utente annulla la fine
 
 ## <a name="remarks"></a>Commenti
 
-Se si implementa l'interfaccia [**IWiaUIExtension2**](-wia-iwiauiextension2.md) e non si desidera sostituire l'interfaccia utente di sistema, questo metodo deve comunque essere implementato, ma non deve eseguire alcuna operazione oltre a restituire e \_ NOTIMPL.
+Se si implementa [**l'interfaccia IWiaUIExtension2**](-wia-iwiauiextension2.md) e non si vuole sostituire l'interfaccia utente di sistema, questo metodo deve comunque essere implementato, ma non deve fare altro che restituire E \_ NOTIMPL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,9 +75,9 @@ Se si implementa l'interfaccia [**IWiaUIExtension2**](-wia-iwiauiextension2.md) 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

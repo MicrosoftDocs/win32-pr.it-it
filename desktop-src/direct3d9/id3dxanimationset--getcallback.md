@@ -1,7 +1,7 @@
 ---
-description: Ottiene informazioni su un callback specifico nel set di animazioni.
+description: 'Metodo ID3DXAnimationSet::GetCallback: ottiene informazioni su un callback specifico nel set di animazioni.'
 ms.assetid: e8388bfc-5438-4216-a98f-dd0dbca12c87
-title: 'Metodo ID3DXAnimationSet:: getCallback (D3dx9anim. h)'
+title: Metodo ID3DXAnimationSet::GetCallback (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f4cde6c9d51fd29c0412f33b34ca7bea8260dfea
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 563c1007cc471ab10a9609e776da69b7c5ed493b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235203"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097539"
 ---
-# <a name="id3dxanimationsetgetcallback-method"></a>Metodo ID3DXAnimationSet:: getCallback
+# <a name="id3dxanimationsetgetcallback-method"></a>Metodo ID3DXAnimationSet::GetCallback
 
 Ottiene informazioni su un callback specifico nel set di animazioni.
 
@@ -43,34 +43,34 @@ HRESULT GetCallback(
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 Posizione da cui trovare i callback.
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Flag di ricerca di callback. Questo parametro può essere impostato su una combinazione di uno o più flag dei [**\_ \_ flag di ricerca D3DXCALLBACK**](./d3dxcallback-search-flags.md).
+Flag di ricerca di callback. Questo parametro può essere impostato su una combinazione di uno o più flag [**di D3DXCALLBACK \_ SEARCH \_ FLAGS**](./d3dxcallback-search-flags.md).
 
 </dd> <dt>
 
-*pCallbackPosition* \[ out\]
+*pCallbackPosition* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)\***
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)\***
 
 Puntatore alla posizione del callback.
 
 </dd> <dt>
 
-*ppCallbackData* \[ out\]
+*ppCallbackData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
@@ -83,7 +83,7 @@ Indirizzo del puntatore ai dati di callback.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md).
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR.**](./d3dxerr.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

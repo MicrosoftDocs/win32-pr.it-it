@@ -1,7 +1,7 @@
 ---
-description: Visualizza una barra del browser.
+description: 'Metodo IShellDispatch2.ShowBrowserBar: visualizza una barra del browser.'
 ms.assetid: 5776370c-3bbf-449b-a8fe-2dbc7d89dd25
-title: Metodo IShellDispatch2. ShowBrowserBar (shldisp. h)
+title: Metodo IShellDispatch2.ShowBrowserBar (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e1df729401dd12b8221ba98a3b81ea65569113e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 7143b55ae59c8fca845d256ddc1f79e69672364b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978015"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116939"
 ---
-# <a name="ishelldispatch2showbrowserbar-method"></a>IShellDispatch2. ShowBrowserBar, metodo
+# <a name="ishelldispatch2showbrowserbar-method"></a>Metodo IShellDispatch2.ShowBrowserBar
 
 Visualizza una barra del browser.
 
@@ -51,21 +51,21 @@ IShellDispatch2.ShowBrowserBar( _
 
 <dl> <dt>
 
-*sCLSID* \[ in\]
+*sCLSID* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il formato stringa del CLSID della barra del browser da visualizzare. L'oggetto deve essere registrato come oggetto della barra di Explorer con una \_ categoria di componenti INFOBAND CATID. Per ulteriori informazioni, vedere [creazione di barre di esplorazione personalizzate, bande di strumenti e bande della scrivania](band-objects.md).
+Valore **String** contenente il formato stringa del CLSID della barra del browser da visualizzare. L'oggetto deve essere registrato come oggetto barra di Explorer con una categoria di \_ componenti CATID InfoBand. Per altre informazioni, vedere [Creating Custom Explorer Bars, Tool Bands, and Desk Bands](band-objects.md).
 
 </dd> <dt>
 
-*vShow* \[ in\]
+*vShow* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Impostare su **true** per visualizzare la barra del browser o **false** per nasconderla.
+Impostare su **true per** visualizzare la barra del browser o **su false** per nasconderla.
 
 </dd> </dl>
 
@@ -73,21 +73,21 @@ Impostare su **true** per visualizzare la barra del browser o **false** per nasc
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Restituisce _ *true** se ha esito positivo; in caso contrario, **false**.
+Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Restituisce _ *true** se ha esito positivo; in caso contrario, **false**.
+Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. ShowBrowserBar**](./shell-showbrowserbar.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.ShowBrowserBar.**](./shell-showbrowserbar.md)
 
-È possibile visualizzare una delle barre di Explorer standard impostando il parametro *sCLSID* sul CLSID della barra di Explorer. Le barre di Explorer standard e le relative stringhe CLSID sono le seguenti:
+È possibile visualizzare una delle barre di Explorer standard impostando il *parametro sCLSID* sul CLSID di tale barra di Explorer. Le barre di Explorer standard e le relative stringhe CLSID sono le seguenti:
 
 
 
@@ -106,9 +106,9 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **ShowBrowserBar** per visualizzare la barra del browser **Preferiti** . L'utilizzo viene visualizzato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso **di ShowBrowserBar** per visualizzare la **barra del** browser Preferiti. L'utilizzo è illustrato per JScript e VBScript.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -125,7 +125,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -151,11 +151,11 @@ VBScript
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

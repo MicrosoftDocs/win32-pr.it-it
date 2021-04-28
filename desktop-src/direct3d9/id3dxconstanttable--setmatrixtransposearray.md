@@ -1,7 +1,7 @@
 ---
-description: Imposta una matrice di matrici trasposte.
+description: 'Metodo ID3DXConstantTable::SetMatrixTransposeArray: imposta una matrice di matrici trasposte.'
 ms.assetid: a67afc21-f43d-4dc5-b145-f3d66dd86dbb
-title: 'Metodo ID3DXConstantTable:: SetMatrixTransposeArray (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::SetMatrixTransposeArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 69755ed973a8c412373287f128642b78ea2ad346
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0118c888adc52671a943b7b159bae80deca26a1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104530943"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115049"
 ---
-# <a name="id3dxconstanttablesetmatrixtransposearray-method"></a>Metodo ID3DXConstantTable:: SetMatrixTransposeArray
+# <a name="id3dxconstanttablesetmatrixtransposearray-method"></a>Metodo ID3DXConstantTable::SetMatrixTransposeArray
 
 Imposta una matrice di matrici trasposte.
 
@@ -43,25 +43,25 @@ HRESULT SetMatrixTransposeArray(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato alla tabella delle costanti.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco della matrice di costanti della matrice. Vedere [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
+Identificatore univoco della matrice di costanti di matrice. Vedere [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
 
 </dd> <dt>
 
-*pmatrix* \[ in\]
+*pMatrix* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
@@ -70,10 +70,10 @@ Matrice di matrici trasposte. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di matrici nella matrice.
 
@@ -91,8 +91,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

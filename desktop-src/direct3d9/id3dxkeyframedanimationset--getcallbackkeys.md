@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice con i dati della chiave di callback utilizzati per l'animazione del fotogramma chiave.
+description: "Metodo ID3DXKeyframedAnimationSet::GetCallbackKeys: riempie una matrice con i dati della chiave di callback usati per l'animazione con fotogrammi chiave."
 ms.assetid: 2a2aa04a-a889-415b-8aa2-cc5f2bed1f9a
-title: 'Metodo ID3DXKeyframedAnimationSet:: GetCallbackKeys (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::GetCallbackKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d3f8dbc771fcdde6d1c07a1bf810b322b0a70a30
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5f3bdb7049de3b5d6aad10b5ff5100d01d05e3ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234961"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093719"
 ---
-# <a name="id3dxkeyframedanimationsetgetcallbackkeys-method"></a>Metodo ID3DXKeyframedAnimationSet:: GetCallbackKeys
+# <a name="id3dxkeyframedanimationsetgetcallbackkeys-method"></a>Metodo ID3DXKeyframedAnimationSet::GetCallbackKeys
 
-Compila una matrice con i dati della chiave di callback utilizzati per l'animazione del fotogramma chiave.
+Riempie una matrice con i dati chiave di callback usati per l'animazione del fotogramma chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetCallbackKeys(
 
 <dl> <dt>
 
-*pCallbackKeys* \[ out\]
+*pCallbackKeys* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **\_ callback LPD3DXKEY**](d3dxkey-callback.md)**
+Tipo: **[ **CALLBACK LPD3DXKEY \_**](d3dxkey-callback.md)**
 
-Puntatore a una matrice allocata dall'utente di strutture di [**\_ callback D3DXKEY**](d3dxkey-callback.md) che il metodo deve compilare con i dati di callback.
+Puntatore a una matrice allocata dall'utente di [**strutture \_ CALLBACK D3DXKEY**](d3dxkey-callback.md) che il metodo deve riempire con i dati di callback.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a una matrice allocata dall'utente di strutture di [**\_ callback D3DX
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

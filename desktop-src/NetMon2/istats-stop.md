@@ -1,7 +1,7 @@
 ---
-description: Il metodo Stop arresta l'acquisizione corrente.
+description: "Metodo IStats::Stop: il metodo Stop arresta l'acquisizione corrente."
 ms.assetid: 3aeeb29e-e174-46a2-82bb-44c466b8db98
-title: 'Metodo IStats:: Stop (Netmon. h)'
+title: Metodo IStats::Stop (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 7b7b58527e7bde0c3bbdec4fc162b705dd178c10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef51aff870a3193963b3802332112c51f1024826
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308168"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114609"
 ---
-# <a name="istatsstop-method"></a>IStats:: Stop (metodo)
+# <a name="istatsstop-method"></a>Metodo IStats::Stop
 
-Il metodo **Stop** arresta l'acquisizione corrente.
+Il **metodo Stop** arresta l'acquisizione corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -48,9 +48,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                            | Descrizione                                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl>   | L'oggetto NPP non è connesso alla rete. Chiamare il metodo [IStats:: Connect](istats-connect.md) per connettere l'oggetto NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl>   | L'oggetto NPP non sta acquisendo dati. Chiamare il metodo [IStats:: Start](istats-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ non \_ \_ solo statistiche**</dt> </dl> | L'oggetto NPP è connesso alla rete, ma non con il metodo [IStats:: Connect](istats-connect.md) .<br/>                                |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>   | NPP non è connesso alla rete. Chiamare il [metodo IStats::Connect](istats-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>   | NPP non acquisisce dati. Chiamare il [metodo IStats::Start](istats-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON \_ STATS \_ ONLY**</dt> </dl> | NPP è connesso alla rete, ma non con il [metodo IStats::Connect.](istats-connect.md)<br/>                                |
 
 
 
@@ -58,7 +58,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Quando si riavvia l'acquisizione dopo **IStats:: Stop** è stato chiamato, assicurarsi di chiamare il metodo [IStats:: Configure](istats-configure.md) ogni volta che si chiama [IStats:: Start](istats-start.md) per riavviare l'acquisizione.
+Quando si riavvia l'acquisizione dopo la chiamata di **IStats::Stop,** assicurarsi di chiamare il metodo [IStats::Configure](istats-configure.md) ogni volta che si chiama [IStats::Start](istats-start.md) per riavviare l'acquisizione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Quando si riavvia l'acquisizione dopo **IStats:: Stop** è stato chiamato, assic
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -77,16 +77,16 @@ Quando si riavvia l'acquisizione dopo **IStats:: Stop** è stato chiamato, assic
 
 <dl> <dt>
 
-[IStats](istats.md)
+[IStat](istats.md)
 </dt> <dt>
 
-[IStats:: Connect](istats-connect.md)
+[IStats::Connect](istats-connect.md)
 </dt> <dt>
 
-[IStats:: Configure](istats-configure.md)
+[IStats::Configure](istats-configure.md)
 </dt> <dt>
 
-[IStats:: Start](istats-start.md)
+[IStats::Start](istats-start.md)
 </dt> </dl>
 
  

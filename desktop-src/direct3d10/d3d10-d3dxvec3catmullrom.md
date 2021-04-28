@@ -1,7 +1,7 @@
 ---
-description: Esegue un'interpolazione di Catmull-Rom, usando i vettori 3D specificati.
+description: "Funzione D3DXVec3CatmullRom (D3DX10Math.h): esegue un'interpolazione Catmull-Rom, usando i vettori 3D specificati."
 ms.assetid: 324bd4b5-b0df-4dd3-b370-3c365c9f2db1
-title: Funzione D3DXVec3CatmullRom (D3DX10Math. h)
+title: Funzione D3DXVec3CatmullRom (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 70c6f605358bfc561e3e630fa4e4e1b87c455768
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a09d61e9c43624f441975eca1a131a82f8092587
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323220"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108108219"
 ---
-# <a name="d3dxvec3catmullrom-function-d3dx10mathh"></a>Funzione D3DXVec3CatmullRom (D3DX10Math. h)
+# <a name="d3dxvec3catmullrom-function-d3dx10mathh"></a>Funzione D3DXVec3CatmullRom (D3DX10Math.h)
 
-Esegue un'interpolazione di Catmull-Rom, usando i vettori 3D specificati.
+Esegue un Catmull-Rom interpolazione, usando i vettori 3D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ D3DXVECTOR3* D3DXVec3CatmullRom(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
@@ -53,7 +53,7 @@ Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che rappresenta il risultato
 
 </dd> <dt>
 
-*pV0* \[ in\]
+*pV0* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -62,7 +62,7 @@ Puntatore a una struttura D3DXVECTOR3 di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -71,7 +71,7 @@ Puntatore a una struttura D3DXVECTOR3 di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -80,7 +80,7 @@ Puntatore a una struttura D3DXVECTOR3 di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*pV3* \[ in\]
+*pV3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -92,7 +92,7 @@ Puntatore a una struttura D3DXVECTOR3 di origine, un vettore di posizione.
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di ponderazione. Vedere la sezione Osservazioni.
 
@@ -102,11 +102,11 @@ Fattore di ponderazione. Vedere la sezione Osservazioni.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura D3DXVECTOR3 che è il risultato dell'interpolazione del Catmull-Rom.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta il risultato dellCatmull-Rom interpolazione.
 
 ## <a name="remarks"></a>Commenti
 
-Dato quattro punti (P1, P2, P3, P4), trovare una funzione Q (s) in modo che:
+Dati quattro punti (p1, p2, p3, p4), trovare una funzione Q(s) in modo che:
 
 
 ```
@@ -118,7 +118,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-È possibile derivare la spline Catmull-Rom dalla spline eremita impostando:
+La Catmull-Rom spline può essere derivata dalla spline hermite impostando:
 
 
 ```
@@ -132,15 +132,15 @@ t2 = (p4 - p2) / 2
 
 dove:
 
-V1 è il contenuto di pV0.
+v1 è il contenuto di pV0.
 
-V2 è il contenuto di pV1.
+v2 è il contenuto di pV1.
 
-P3 è il contenuto di pV2.
+p3 è il contenuto di pV2.
 
-P4 è il contenuto di pV3.
+p4 è il contenuto di pV3.
 
-Uso dell'equazione spline eremita:
+Uso dell'equazione spline hermite:
 
 
 ```
@@ -149,7 +149,7 @@ Q(s) = (2s3 - 3s2 + 1)v1 + (-2s3 + 3s2)v2 + (s3 - 2s2 + s)t1 + (s3 - s2)t2
 
 
 
-e sostituendo V1, V2, T1, T2 restituisce:
+e sostituendo v1, v2, t1, t2 produce:
 
 
 ```
@@ -158,7 +158,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Questo può essere ridisposto come segue:
+Questa operazione può essere ridisposta nel modo seguente:
 
 
 ```
@@ -173,7 +173,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

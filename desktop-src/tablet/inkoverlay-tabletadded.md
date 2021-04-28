@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando un IInkTablet viene aggiunto al sistema.
+description: 'Evento InkOverlay.TabletAdded: si verifica quando un oggetto IInkTablet viene aggiunto al sistema.'
 ms.assetid: 2076a520-bd37-43b5-b57f-030828b096cb
-title: Evento InkOverlay. TabletAdded (Msinkaut. h)
+title: Evento InkOverlay.TabletAdded (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79c2faadcbf87e0772afb8f417c97a4be546e08b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c22630430622c98026c81adb1c6a131a53277a4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317944"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116789"
 ---
-# <a name="inkoverlaytabletadded-event"></a>Evento InkOverlay. TabletAdded
+# <a name="inkoverlaytabletadded-event"></a>Evento InkOverlay.TabletAdded
 
-Si verifica quando un [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) viene aggiunto al sistema.
+Si verifica quando [**un oggetto IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) viene aggiunto al sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ void TabletAdded(
 
 <dl> <dt>
 
-*Tablet* \[ in\]
+*Tablet* \[ Pollici\]
 </dt> <dd>
 
 Oggetto [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) aggiunto al sistema.
@@ -43,7 +43,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents dispatch (DISPINTERFACES) con ID DISPID \_ ICETabletAdded.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID DISPID \_ ICETabletAdded.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -62,7 +62,7 @@ Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ 
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
 [**Interfaccia IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet)
