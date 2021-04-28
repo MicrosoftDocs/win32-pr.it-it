@@ -1,7 +1,7 @@
 ---
-description: Ottiene un oggetto cartella che rappresenta la visualizzazione.
+description: 'Proprietà ShellFolderView.Folder: ottiene un oggetto Folder che rappresenta la visualizzazione.'
 ms.assetid: 8f3e7827-f2a0-4ce9-b3e9-e6316ec58863
-title: Proprietà ShellFolderView. Folder (shldisp. h)
+title: Proprietà ShellFolderView.Folder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 40590064048ba5410dc9341791aec443f16d68e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 370fddc1428c8f77edb77cdac2dc04123fc5211f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233199"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083419"
 ---
-# <a name="shellfolderviewfolder-property"></a>Proprietà ShellFolderView. Folder
+# <a name="shellfolderviewfolder-property"></a>ShellFolderView.Folder - proprietà
 
-Ottiene un oggetto [**cartella**](folder.md) che rappresenta la visualizzazione.
+Ottiene un [**oggetto Folder**](folder.md) che rappresenta la visualizzazione.
 
 Questa proprietà è di sola lettura.
 
@@ -37,11 +37,11 @@ Folder = ShellFolderView.Folder
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto che riceve l'oggetto [**cartella**](folder.md) .
+Oggetto che riceve [**l'oggetto Folder.**](folder.md)
 
 ## <a name="remarks"></a>Commenti
 
-La **cartella** può essere chiamata solo sul sistema locale. Non funzionerà se eseguita in una pagina Web su HTTP o UNC.
+**La** cartella può essere chiamata solo nel sistema locale. Non funzionerà quando viene eseguito in una pagina Web tramite HTTP o UNC.
 
 ## <a name="examples"></a>Esempio
 
@@ -99,11 +99,11 @@ Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

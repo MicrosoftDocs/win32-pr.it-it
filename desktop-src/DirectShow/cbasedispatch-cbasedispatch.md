@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CBaseDispatch.CBaseDispatch : metodo costruttore.'
 ms.assetid: c88638ca-929e-4135-b15c-110229f4a4de
-title: Costruttore CBaseDispatch. CBaseDispatch (Ctlutil. h)
+title: Costruttore CBaseDispatch.CBaseDispatch (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 92fdec191beff1385577ce5e7e8323dbeef7769c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e41ffe3b766cf553691f7bf7de354fa7d6bfb479
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324969"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108120129"
 ---
-# <a name="cbasedispatchcbasedispatch-constructor"></a>Costruttore CBaseDispatch. CBaseDispatch
+# <a name="cbasedispatchcbasedispatch-constructor"></a>Costruttore CBaseDispatch.CBaseDispatch
 
 Metodo del costruttore.
 
@@ -46,8 +46,8 @@ Questo costruttore non ha parametri.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

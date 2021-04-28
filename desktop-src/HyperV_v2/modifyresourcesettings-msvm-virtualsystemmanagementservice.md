@@ -1,5 +1,5 @@
 ---
-description: Modifica le impostazioni delle risorse virtuali.
+description: 'Metodo ModifyResourceSettings della classe Msvm_VirtualSystemManagementService: modifica le impostazioni delle risorse virtuali.'
 ms.assetid: 3fb2a65f-9f40-4eb9-99e8-8fe1451427d9
 title: Metodo ModifyResourceSettings della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 872e81926f717671b741a89c9bf954e452803b36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09ca0bb9fea02b6acc5599d9f907b1e60fdbd9ec
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883706"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119339"
 ---
-# <a name="modifyresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifyResourceSettings della classe MSVM \_ VirtualSystemManagementService
+# <a name="modifyresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifyResourceSettings della classe Msvm \_ VirtualSystemManagementService
 
-Modifica le impostazioni delle risorse virtuali. Quando applicato alle parti di una configurazione di macchina virtuale corrente, come effetto collaterale, le risorse della macchina virtuale attiva possono essere modificate.
+Modifica le impostazioni delle risorse virtuali. Se applicato a parti di una configurazione di macchina virtuale corrente, come effetto collaterale, le risorse della macchina virtuale attiva possono essere modificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ uint32 ModifyResourceSettings(
 
 <dl> <dt>
 
-*ResourceSettings* \[ in\]
+*ResourceSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di stringhe che contengono un'istanza incorporata di una classe derivata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata), che contiene gli aspetti modificati delle risorse virtuali esistenti. La proprietà **InstanceID** di ogni istanza identifica l'impostazione della risorsa virtuale da modificare.
+Matrice di stringhe che contengono un'istanza incorporata di una classe derivata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata), che contengono gli aspetti modificati delle risorse virtuali esistenti. La **proprietà InstanceID** di ogni istanza identifica l'impostazione della risorsa virtuale da modificare.
 
 </dd> <dt>
 
-*ResultingResourceSettings* \[ out\]
+*ResultingResourceSettings* \[ Cambio\]
 </dt> <dd>
 
-Matrice di riferimenti a istanze di oggetti derivati [**da \_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) che rappresentano gli aspetti virtuali delle risorse virtuali modificate.
+Matrice di riferimenti a istanze di oggetti derivati da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) che rappresentano gli aspetti virtuali delle risorse virtuali modificate.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -74,13 +74,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -89,16 +89,16 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametri incompatibili** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -107,10 +107,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -122,7 +122,7 @@ Questo metodo restituisce uno dei valori seguenti.
 [**ModifyVirtualSystemResources (V1)**](/previous-versions/windows/desktop/virtual/modifyvirtualsystemresources-msvm-virtualsystemmanagementservice)
 </dt> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
-title: Funzioni strsafe
-description: .
+title: Funzioni Strsafe
+description: Funzioni Strsafe
 ms.assetid: 3590dd8d-3a88-4dde-a5fe-f10e12354919
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34b31824788b68a7ec789c6d274b2a368eda1cfc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 292e6f83175848338a6804c9787efb4660da9f88
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299740"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108092649"
 ---
-# <a name="strsafe-functions"></a>Funzioni strsafe
+# <a name="strsafe-functions"></a>Funzioni Strsafe
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -56,6 +56,6 @@ ms.locfileid: "106299740"
 -   [**UnalignedStringCbLength**](/previous-versions/windows/desktop/legacy/hh305643(v=vs.85))
 -   [**UnalignedStringCchLength**](/previous-versions/windows/desktop/legacy/hh305644(v=vs.85))
 
- 
+ 
 
- 
+ 

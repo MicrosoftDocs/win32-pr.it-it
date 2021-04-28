@@ -1,7 +1,7 @@
 ---
-description: Carica la matrice specificata nella matrice corrente.
+description: 'Metodo ID3DXMATRIXStack::LoadMatrix (D3DX10.h): carica la matrice specificata nella matrice corrente.'
 ms.assetid: b898f344-db90-48e0-b457-0eb8d7b31dca
-title: 'Metodo ID3DXMATRIXStack:: LoadMatrix (D3DX10. h)'
+title: Metodo ID3DXMATRIXStack::LoadMatrix (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ce6b99abf4c9a82a8b9d1c7643a1098d19e18c15
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 20c80f578abd5e35c89f3ecccedd2ab7fd59e812
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104356014"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107959"
 ---
-# <a name="id3dxmatrixstackloadmatrix-method-d3dx10h"></a>Metodo ID3DXMATRIXStack:: LoadMatrix (D3DX10. h)
+# <a name="id3dxmatrixstackloadmatrix-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::LoadMatrix (D3DX10.h)
 
 Carica la matrice specificata nella matrice corrente.
 
@@ -40,7 +40,7 @@ HRESULT LoadMatrix(
 
 <dl> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che questo metodo non aggiunge un elemento allo stack; sostituisce invece la matrice corrente con la matrice fornita.
+Si noti che questo metodo non aggiunge un elemento nello stack. sostituisce invece la matrice corrente con la matrice fornita.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Si noti che questo metodo non aggiunge un elemento allo stack; sostituisce invec
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Richiede una modifica dello stato.
+description: 'Metodo RequestStateChange della classe Msvm_Ps2Mouse: richiede una modifica dello stato.'
 ms.assetid: a61c17a8-f89d-47aa-8c4f-46ccf478103e
 title: Metodo RequestStateChange della classe Msvm_Ps2Mouse
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: aadf80fef8ec92ca10a811813b74619f0dd80f08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 878b0977a244d4b098dfa449f3c778c33e909111
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310008"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118819"
 ---
-# <a name="requeststatechange-method-of-the-msvm_ps2mouse-class"></a>Metodo RequestStateChange della classe MSVM \_ Ps2mouse
+# <a name="requeststatechange-method-of-the-msvm_ps2mouse-class"></a>Metodo RequestStateChange della classe Msvm \_ Ps2Mouse
 
 Richiede una modifica dello stato.
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà RequestedState dell'istanza se il codice restituito del metodo RequestStateChange è 0 (' completed with no error ') o 4096 (0x1000) (' job Started '). Per una spiegazione dettagliata dei valori di RequestedState, vedere la descrizione delle proprietà EnabledState e RequestedState.
+Stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà RequestedState dell'istanza se il codice restituito del metodo RequestStateChange è 0 ('Completato senza errori') o 4096 (0x1000) ('Processo avviato'). Fare riferimento alla descrizione delle proprietà EnabledState e RequestedState per le spiegazioni dettagliate dei valori RequestedState.
 
 <dt>
 
@@ -85,14 +85,14 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Rinvia** (8)
+**Rinvio** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Mettere in stato** (9)
+**Inattiva** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -106,38 +106,38 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reimpostazione** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Può contenere un riferimento al ConcreteJob creato per tenere traccia della transizione di stato iniziata dalla chiamata al metodo.
+Può contenere un riferimento all'oggetto ConcreteJob creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Periodo di timeout che specifica la quantità massima di tempo per cui il client prevede che la transizione al nuovo stato venga eseguita. Per specificare TimeoutPeriod, è necessario utilizzare il formato intervallo. Il valore 0 o un parametro null indica che il client non dispone di requisiti temporali per la transizione.
+Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare TimeoutPeriod. Il valore 0 o un parametro Null indica che il client non ha requisiti di tempo per la transizione.
 
-Se questa proprietà non contiene 0 o null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito ' use of timeout parameter not supported '.
+Se questa proprietà non contiene 0 o null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito "Utilizzo del parametro di timeout non supportato".
 
 </dd> </dl>
 
@@ -147,7 +147,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -161,8 +161,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -171,7 +171,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_Ps2Mouse MSVM**](msvm-ps2mouse.md)
+[**Msvm \_ Ps2Mouse**](msvm-ps2mouse.md)
 </dt> </dl>
 
  

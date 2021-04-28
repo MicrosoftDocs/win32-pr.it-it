@@ -1,23 +1,23 @@
 ---
-description: Specifica se un decodificatore può utilizzare i timestamp di decodifica (DTS) quando si configurano i timestamp.
+description: "MF_MT_TIMESTAMP_CAN_BE_DTS attributo : specifica se un decodificatore può usare timestamp di decodifica (DTS) durante l'impostazione dei timestamp."
 ms.assetid: 38E6AA56-EE38-48D5-92F1-F29ABB2C7A72
-title: Attributo MF_MT_TIMESTAMP_CAN_BE_DTS (Mfapi. h)
+title: MF_MT_TIMESTAMP_CAN_BE_DTS attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a94cffdcea37c3fe7814a24db219f3d0cd971723
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e666c8d7cce5ed7f209ee9b10efa0ffe50cf211d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313042"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093069"
 ---
-# <a name="mf_mt_timestamp_can_be_dts-attribute"></a>Il \_ timestamp MF mt \_ \_ può \_ essere un \_ attributo DTS
+# <a name="mf_mt_timestamp_can_be_dts-attribute"></a>MF \_ MT TIMESTAMP CAN BE \_ \_ \_ \_ DTS attribute
 
-Specifica se un decodificatore può utilizzare i timestamp di decodifica (DTS) quando si configurano i timestamp.
+Specifica se un decodificatore può utilizzare timestamp di decodifica (DTS) durante l'impostazione dei timestamp.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Bool** archiviato come **UInt32**
+**BOOL** archiviato come **UINT32**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -25,9 +25,9 @@ Specifica se un decodificatore può utilizzare i timestamp di decodifica (DTS) q
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 app \[ desktop \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | App desktop di Windows Server 2012 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica se un decodificatore può utilizzare i timestamp di decodifica (DTS) q
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

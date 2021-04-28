@@ -1,7 +1,7 @@
 ---
-description: Il metodo CurrentMediaType Recupera il tipo di supporto per la connessione al pin corrente.
+description: 'Metodo CTransformOutputPin.CurrentMediaType: il metodo CurrentMediaType recupera il tipo di supporto per la connessione pin corrente.'
 ms.assetid: 1c42664d-160a-4f76-9d7a-40414c5c1704
-title: Metodo CTransformOutputPin. CurrentMediaType (Transfrm. h)
+title: Metodo CTransformOutputPin.CurrentMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ee9ee15c3cda2baf8ab8d6e9cb0ec3c797e91a1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0cb40310afb1c22d00a5394c0a0667fc8d22eb03
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330847"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094909"
 ---
-# <a name="ctransformoutputpincurrentmediatype-method"></a>CTransformOutputPin. CurrentMediaType, metodo
+# <a name="ctransformoutputpincurrentmediatype-method"></a>Metodo CTransformOutputPin.CurrentMediaType
 
-Il `CurrentMediaType` metodo recupera il tipo di supporto per la connessione al pin corrente.
+Il `CurrentMediaType` metodo recupera il tipo di supporto per la connessione pin corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un riferimento alla variabile membro [**CBasePin:: m \_ mt**](cbasepin-m-mt.md) .
+Restituisce un riferimento alla [**variabile membro CBasePin::m \_ mt.**](cbasepin-m-mt.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce un riferimento alla variabile membro [**CBasePin:: m \_ mt**](cbasep
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

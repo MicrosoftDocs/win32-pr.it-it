@@ -1,5 +1,5 @@
 ---
-description: Recupera informazioni aggiuntive su un errore.
+description: 'Metodo GetErrorEx della classe Msvm_CollectionReferencePointExportJob: recupera informazioni aggiuntive su un errore.'
 ms.assetid: 64a90f18-3ae7-4021-857f-64adf8c40430
 title: Metodo GetErrorEx della classe Msvm_CollectionReferencePointExportJob
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c056f7c8a05d8d06d136219fb55699ed5e146bc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b84c41776c081c302078773d9402145b0fe41e6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319518"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112089"
 ---
-# <a name="geterrorex-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Metodo GetErrorEx della classe MSVM \_ CollectionReferencePointExportJob
+# <a name="geterrorex-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Metodo GetErrorEx della classe Msvm \_ CollectionReferencePointExportJob
 
-Recupera informazioni aggiuntive su un errore. Quando il processo è in esecuzione o è terminato senza errori, **GetErrorEx** non restituisce alcuna istanza di [**\_ errore MSVM**](msvm-error.md) . Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, **GetErrorEx** restituisce una o più istanze di **\_ errore MSVM** .
+Recupera informazioni aggiuntive su un errore. Quando il processo è in esecuzione o è terminato senza errori, **GetErrorEx** non restituisce alcuna [**istanza di Msvm \_ Error.**](msvm-error.md) Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, **GetErrorEx** restituisce una o più **istanze di Msvm \_ Error.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,23 +39,23 @@ uint32 GetErrorEx(
 
 <dl> <dt>
 
-*Errori* \[ di out\]
+*Errori* \[ Cambio\]
 </dt> <dd>
 
-Se lo stato operativo del processo non è "OK", questo parametro restituisce una matrice di istanze [**di \_ errore MSVM**](msvm-error.md) . In caso contrario, se il processo è "OK", questo parametro contiene **null**.
+Se lo stato operativo del processo non è "OK", questo parametro restituisce una matrice di [**istanze di Msvm \_ Error.**](msvm-error.md) In caso contrario, se il processo è "OK", questo parametro contiene **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0; in caso contrario, restituisce uno dei valori di errore seguenti:
+In caso di esito positivo, restituisce 0. In caso contrario, restituisce uno dei valori di errore seguenti:
 
 <dl> <dt>
 
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -64,25 +64,25 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce uno dei
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -94,10 +94,10 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce uno dei
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -106,7 +106,7 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce uno dei
 
 <dl> <dt>
 
-[**\_CollectionReferencePointExportJob MSVM**](msvm-collectionreferencepointexportjob.md)
+[**Msvm \_ CollectionReferencePointExportJob**](msvm-collectionreferencepointexportjob.md)
 </dt> </dl>
 
  

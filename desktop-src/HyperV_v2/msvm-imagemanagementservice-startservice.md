@@ -1,5 +1,5 @@
 ---
-description: avvia il servizio.
+description: 'Metodo StartService della classe Msvm_ImageManagementService : avvia il servizio.'
 ms.assetid: d1e11947-4f48-404f-a359-627a3b7716fd
 title: Metodo StartService della classe Msvm_ImageManagementService
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: fd13a4eb39477d9d22fc687b095a8f6fbbc68c5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fb895687960348bf030efe5f668f7a914157ff5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307886"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111749"
 ---
-# <a name="startservice-method-of-the-msvm_imagemanagementservice-class"></a>Metodo StartService della classe MSVM \_ servizio
+# <a name="startservice-method-of-the-msvm_imagemanagementservice-class"></a>Metodo StartService della classe Msvm \_ ImageManagementService
 
 avvia il servizio.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_Servizio MSVM**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

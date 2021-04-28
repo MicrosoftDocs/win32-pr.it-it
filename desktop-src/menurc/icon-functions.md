@@ -1,22 +1,22 @@
 ---
 title: Funzioni icona
-description: .
+description: Funzioni icona
 ms.assetid: 3d27c185-52de-4b04-9b96-38bf284b1866
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 586c55d8b1ee983d710d81b36db02fcb528dfc18
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5b8bf838712ee4a2ecea8c80405f4fcba090eef2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045098"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112699"
 ---
 # <a name="icon-functions"></a>Funzioni icona
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**CopyIcon**](/windows/desktop/api/Winuser/nf-winuser-copyicon)
--   [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon)
+-   [**Istruzione CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon)
 -   [**CreateIconFromResource**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresource)
 -   [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex)
 -   [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect)
@@ -34,9 +34,9 @@ ms.locfileid: "104045098"
 -   [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)
 -   [**PrivateExtractIcons**](/windows/desktop/api/Winuser/nf-winuser-privateextracticonsa)
 
- 
+ 
 
- 
+ 
 
 
 

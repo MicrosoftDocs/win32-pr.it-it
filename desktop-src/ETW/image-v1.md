@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi di caricamento di immagini. La sintassi seguente è semplificata dal codice MOF.
+description: 'Image_V1 classe: questa classe è la classe padre per gli eventi di caricamento delle immagini. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 78c68080-90fc-4ebf-aa8a-4e03ce629d54
-title: Classe Image_V1
+title: Image_V1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 77481c671e89b47143aed110d4cf7e8f2712a0a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aafb2b7307e72e97ba1508aa80638af7565f2867
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131219"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106469"
 ---
-# <a name="image_v1-class"></a>\_Classe Image V1
+# <a name="image_v1-class"></a>Classe \_ Image V1
 
-Questa classe è la classe padre per gli eventi di caricamento di immagini.
+Questa classe è la classe padre per gli eventi di caricamento delle immagini.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -36,7 +36,7 @@ class Image_V1 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe **Image \_ V1** non definisce membri.
+La **classe Image \_ V1** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,8 +44,8 @@ La classe **Image \_ V1** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 
@@ -53,7 +53,7 @@ La classe **Image \_ V1** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Immagine**](image.md)
@@ -62,7 +62,7 @@ La classe **Image \_ V1** non definisce membri.
 [**Immagine \_ V0**](image-v0.md)
 </dt> <dt>
 
-[**\_Caricamento immagine V1 \_**](image-v1-load.md)
+[**Caricamento \_ dell'immagine V1 \_**](image-v1-load.md)
 </dt> </dl>
 
  

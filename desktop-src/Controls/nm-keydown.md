@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_KEYDOWN (COMmctrl. h)
-description: Inviato da un controllo quando il controllo ha lo stato attivo della tastiera e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_KEYDOWN codice di notifica (Commctrl.h)
+description: "NM_KEYDOWN codice di notifica: inviato da un controllo quando il controllo ha lo stato attivo della tastiera e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di messaggio WM \\_ NOTIFY."
 ms.assetid: e3b38096-797d-4948-9595-a252cf33dcdd
 keywords:
-- Controlli di Windows per il codice di notifica NM_KEYDOWN
+- NM_KEYDOWN codice di notifica controlli Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 222a47733a60590e7d56ca0adba038164c430fab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce595378995e41fd8a0f481d7470c8cf791f6379
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873298"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112349"
 ---
-# <a name="nm_keydown-notification-code"></a>\_Codice di notifica KeyDown di Nm
+# <a name="nm_keydown-notification-code"></a>Codice \_ di notifica NM KEYDOWN
 
-Inviato da un controllo quando il controllo ha lo stato attivo della tastiera e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo quando il controllo ha lo stato attivo della tastiera e l'utente preme un tasto. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_KEYDOWN
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMKEY**](/windows/win32/api/commctrl/ns-commctrl-nmkey) che contiene informazioni aggiuntive sulla chiave che ha causato il codice di notifica.
+Puntatore a una [**struttura NMKEY**](/windows/win32/api/commctrl/ns-commctrl-nmkey) che contiene informazioni aggiuntive sulla chiave che ha causato il codice di notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero per impedire l'elaborazione della chiave da parte del controllo. in caso contrario, zero.
+Restituisce un valore diverso da zero per impedire al controllo di elaborare la chiave oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce un valore diverso da zero per impedire l'elaborazione della chiave d
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

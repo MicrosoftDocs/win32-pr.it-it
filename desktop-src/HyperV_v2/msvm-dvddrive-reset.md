@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_DVDDrive: richiede una reimpostazione.'
 ms.assetid: 5d178eee-36fa-4315-915a-778f559f08f0
-title: Reimposta il metodo della classe Msvm_DVDDrive
+title: Metodo Reset della classe Msvm_DVDDrive
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ec90f48164c60cc37147a0521170291e3ac91491
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81123a7a7bb4a7b76129af57b1ea7216b543c5ee
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314330"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119139"
 ---
-# <a name="reset-method-of-the-msvm_dvddrive-class"></a>Metodo Reset della \_ classe DVDDrive di MSVM
+# <a name="reset-method-of-the-msvm_dvddrive-class"></a>Metodo Reset della classe MSvm \_ DVDDrive
 
 Richiede una reimpostazione.
 
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_DVDDrive MSVM**](msvm-dvddrive.md)
+[**Msvm \_ DVDDrive**](msvm-dvddrive.md)
 </dt> </dl>
 
  

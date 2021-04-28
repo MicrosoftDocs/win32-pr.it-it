@@ -1,7 +1,7 @@
 ---
-description: Specifica gli attributi di peso mesh.
+description: 'D3DX10_ATTRIBUTE_WEIGHTS struttura : specifica gli attributi di spessore della mesh.'
 ms.assetid: 554bb8f2-9e92-4e9e-b500-c3cc47d57830
-title: Struttura D3DX10_ATTRIBUTE_WEIGHTS (D3DX10. h)
+title: D3DX10_ATTRIBUTE_WEIGHTS (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 4f137c1ecc29c184c4dec3995fb0202741ce9f09
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ab163149493ad73f892a251a691ad82544d7f382
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355109"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094354"
 ---
-# <a name="d3dx10_attribute_weights-structure"></a>\_ \_ Struttura weights dell'attributo d3dx10
+# <a name="d3dx10_attribute_weights-structure"></a>Struttura WEIGHTS DEGLI ATTRIBUTI D3DX10 \_ \_
 
-Specifica gli attributi di peso mesh.
+Specifica gli attributi di spessore della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ typedef struct D3DX10_ATTRIBUTE_WEIGHTS {
 **Position**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -60,18 +60,18 @@ Posizione.
 **Limite**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Spessore di Blend.
+Spessore blend.
 
 </dd> <dt>
 
 **Normal**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -82,18 +82,18 @@ Normale.
 **Diffusa**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valore di illuminazione diffuso.
+Valore di illuminazione diffusa.
 
 </dd> <dt>
 
 **Speculare**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -104,7 +104,7 @@ Valore di illuminazione speculare.
 **Texcoord**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -115,7 +115,7 @@ Otto coordinate di trama.
 **Tangente**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -126,7 +126,7 @@ Tangente.
 **Binormale**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -136,9 +136,9 @@ Binormale.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura descrive il modo in cui un'operazione di semplificazione considererà i dati dei vertici quando si calcolano i costi relativi tra i bordi. Se, ad esempio, il campo normale è 0,0, l'operazione di semplificazione ignorerà il componente normale vertice durante il calcolo dell'errore per la compressione. Tuttavia, se il campo normale è 1,0, l'operazione di semplificazione utilizzerà il componente normale vertice. Se il campo normale è 2,0, raddoppiare la quantità di errori; Se il campo normale è 4,0, moltiplicare il numero di errori e così via.
+Questa struttura descrive in che modo un'operazione di semplificazione considererà i dati dei vertici durante il calcolo dei costi relativi tra i bordi di compressione. Ad esempio, se il campo Normale è 0,0, l'operazione di semplificazione ignorerà il componente normale del vertice durante il calcolo dell'errore per la compressione. Tuttavia, se il campo Normal è 1.0, l'operazione di semplificazione userà il componente normale dei vertici. Se il campo Normale è 2.0, raddoppiare la quantità di errori. se il campo Normale è 4.0, quindi quadruplicare il numero di errori e così via.
 
-Il \_ \_ tipo di ponderazione dell'attributo LPD3DX è definito come un puntatore alla \_ struttura dell'attributo D3DX \_ weights.
+Il tipo WEIGHTS ATTRIBUTE LPD3DX è definito come puntatore alla struttura \_ \_ ATTRIBUTE WEIGHTS D3DX. \_ \_
 
 
 ```
@@ -153,7 +153,7 @@ Il \_ \_ tipo di ponderazione dell'attributo LPD3DX è definito come un puntator
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 
