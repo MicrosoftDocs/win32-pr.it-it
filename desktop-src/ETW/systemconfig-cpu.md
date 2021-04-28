@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.
+description: 'SystemConfig_CPU: questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.'
 ms.assetid: 5a24be04-9e5e-4ba9-baaf-b58b79ad947b
-title: Classe SystemConfig_CPU
+title: SystemConfig_CPU classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,14 +20,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d08d0eeac9aa2287576bbb6dfe0e8ce41f116e8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07efa01bf58aeadfdfe12cd5db4d010a7f6dbca0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980071"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106119"
 ---
-# <a name="systemconfig_cpu-class"></a>\_Classe CPU SystemConfig
+# <a name="systemconfig_cpu-class"></a>Classe CPU SystemConfig \_
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.
 
@@ -65,7 +65,7 @@ La **classe \_ CPU SystemConfig** ha queste proprietà.
 **AllocationGranularity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,55 +81,55 @@ Granularità con cui viene allocata la memoria virtuale.
 **NomeComputer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (6), **Max** (256), **Format ("s")**
+Qualificatori: **WmiDataId** (6), **Max** (256), **Format("s")**
 </dt> </dl>
 
 Nome del computer.
 
 </dd> <dt>
 
-**NomeDominio**
+**Domainname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Char16**
+Tipo di dati: **matrice char16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (7), **Max** (132), **Format ("s")**
+Qualificatori: **WmiDataId** (7), **Max** (132), **Format("s")**
 </dt> </dl>
 
-Nome del dominio in cui il computer è membro.
+Nome del dominio di cui il computer è membro.
 
 </dd> <dt>
 
 **HyperThreadingFlag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (8), puntatore
+Qualificatori: **WmiDataId** (8), Puntatore
 </dt> </dl>
 
-Indica se l'opzione Hyper-Threading è attiva o disattiva per un processore. Ogni bit riflette lo stato di Hyper-Threading di una CPU nel computer.
+Indica se l'opzione hyper-threading è attivata o disattivata per un processore. Ogni bit riflette lo stato di hyperthreading di una CPU nel computer.
 
 </dd> <dt>
 
 **MemSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -142,10 +142,10 @@ Quantità totale di memoria fisica disponibile per il sistema operativo.
 
 </dd> <dt>
 
-**MHz**
+**Mhz**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -161,7 +161,7 @@ Velocità massima del processore, in megahertz.
 **NumberOfProcessors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -177,7 +177,7 @@ Numero di processori nel computer.
 **PageSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -196,8 +196,8 @@ Dimensioni di una pagina di scambio, in byte.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
 
 
 

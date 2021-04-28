@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CPersistStream.CPersistStream : metodo costruttore.'
 ms.assetid: 48143a61-5ba7-4bf9-bffa-244f2769144d
-title: Costruttore CPersistStream. CPersistStream (pStream. h)
+title: Costruttore CPersistStream.CPersistStream (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7cdb736a191f64099b8c0310a5b3ac3dad3cbe0d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e3be9233d76929ebfcb79121c60ef6c1af35b56
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328936"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085609"
 ---
-# <a name="cpersiststreamcpersiststream-constructor"></a>Costruttore CPersistStream. CPersistStream
+# <a name="cpersiststreamcpersiststream-constructor"></a>Costruttore CPersistStream.CPersistStream
 
 Metodo del costruttore.
 
@@ -43,14 +43,14 @@ CPersistStream(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore all'interfaccia **IUnknown** dell'oggetto delegato.
+Puntatore **all'interfaccia IUnknown** dell'oggetto delegante.
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
 Puntatore al valore restituito COM generale. Questo valore viene modificato solo se questa funzione ha esito negativo.
@@ -63,8 +63,8 @@ Puntatore al valore restituito COM generale. Questo valore viene modificato solo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PStream. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pstream.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

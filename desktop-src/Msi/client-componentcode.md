@@ -1,7 +1,7 @@
 ---
-description: Codice del componente in questione.
+description: 'Proprietà Client.ComponentCode: codice del componente in questione.'
 ms.assetid: 0abed0cd-b35c-45d7-8e71-461f2386109e
-title: Proprietà client. ComponentCode
+title: Client.ComponentCode - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: df779689892a12fd7f252042bc70a3aecff7651a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4fba4c9b832256620dec60852a53b3e2ed17101
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328449"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090799"
 ---
-# <a name="clientcomponentcode-property"></a>Proprietà client. ComponentCode
+# <a name="clientcomponentcode-property"></a>Client.ComponentCode - proprietà
 
-Codice del componente in questione. Questa proprietà chiama la funzione [**MsiEnumClientsEx**](/windows/desktop/api/Msi/nf-msi-msienumclientsexa) .
+Codice del componente in questione. Questa proprietà chiama la [**funzione MsiEnumClientsEx.**](/windows/desktop/api/Msi/nf-msi-msienumclientsexa)
 
-**[Windows Installer 4,5 o versioni precedenti](not-supported-in-windows-installer-4-5.md):** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5,0.
+**[Windows Installer 4.5 o versioni precedenti:](not-supported-in-windows-installer-4-5.md)** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5.0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Codice del componente in questione. Questa proprietà chiama la funzione [**MsiE
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 o versione successiva.<br/>                                         |
+| Versione<br/> | Windows Installer 5.0 o versione successiva.<br/>                                         |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
 | IID<br/>     | IID \_ IClient è definito come 000C1098-0000-0000-C000-000000000046<br/>         |
 

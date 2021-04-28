@@ -1,7 +1,7 @@
 ---
-description: Fornisce un'interfaccia utente personalizzata che sostituisce l'interfaccia utente di sistema predefinita.
+description: "Metodo IWiaUIExtension::D eviceDialog: fornisce un'interfaccia utente personalizzata che sostituisce l'interfaccia utente di sistema predefinita."
 ms.assetid: 5dbcacde-5bbe-459d-804f-5ce7eb1cd8d8
-title: Metodo IWiaUIExtension::D eviceDialog (Wiadevd. h)
+title: Metodo IWiaUIExtension::D eviceDialog (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 7d42d0c7f8cca510a9c8f78de7bf589f8e1d2d72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d467769308707032b8e92b4ac7877488991356dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526448"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116709"
 ---
-# <a name="iwiauiextensiondevicedialog-method"></a>IWiaUIExtension::D Metodo eviceDialog
+# <a name="iwiauiextensiondevicedialog-method"></a>Metodo IWiaUIExtension::D eviceDialog
 
 Fornisce un'interfaccia utente personalizzata che sostituisce l'interfaccia utente di sistema predefinita.
 
@@ -39,12 +39,12 @@ HRESULT DeviceDialog(
 
 <dl> <dt>
 
-*pDeviceDialogData* \[ in\]
+*pDeviceDialogData* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **PDEVICEDIALOGDATA \** _
+Tipo: **PDEVICEDIALOGDATA \***
 
-Punta a una struttura [_ *DEVICEDIALOGDATA* *](-wia-devicedialogdata.md) che contiene tutti i dati necessari per implementare la finestra di dialogo del dispositivo.
+Punta a una [**struttura DEVICEDIALOGDATA**](-wia-devicedialogdata.md) che contiene tutti i dati necessari per implementare la finestra di dialogo del dispositivo.
 
 </dd> </dl>
 
@@ -52,11 +52,11 @@ Punta a una struttura [_ *DEVICEDIALOGDATA* *](-wia-devicedialogdata.md) che con
 
 Tipo: **HRESULT**
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se l'utente annulla la finestra di dialogo, il metodo restituisce \_ false. Se il metodo non è implementato, restituisce E \_ NOTIMPL. Se il metodo ha esito negativo, viene restituito un codice di errore COM standard.
+Se il metodo ha esito positivo, restituisce S \_ OK. Se l'utente annulla la finestra di dialogo, il metodo restituisce S \_ FALSE. Se il metodo non è implementato, restituisce E \_ NOTIMPL. Se il metodo ha esito negativo, restituisce un codice di errore COM standard.
 
 ## <a name="remarks"></a>Commenti
 
-Se si implementa l'interfaccia [**IWiaUIExtension**](-wia-iwiauiextension.md) e non si desidera sostituire l'interfaccia utente di sistema, questo metodo deve comunque essere implementato, ma non deve eseguire alcuna operazione oltre a restituire e \_ NOTIMPL.
+Se si implementa [**l'interfaccia IWiaUIExtension**](-wia-iwiauiextension.md) e non si vuole sostituire l'interfaccia utente di sistema, questo metodo deve comunque essere implementato, ma non deve fare altro che restituire E \_ NOTIMPL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Se si implementa l'interfaccia [**IWiaUIExtension**](-wia-iwiauiextension.md) e 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

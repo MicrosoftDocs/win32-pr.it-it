@@ -1,7 +1,7 @@
 ---
-description: Specifica i valori di tolleranza per ogni componente vertex quando si confrontano i vertici per determinare se sono abbastanza simili per essere saldati insieme.
+description: 'D3DX10_WELD_EPSILONS struttura : specifica i valori di tolleranza per ogni componente vertice durante il confronto dei vertici per determinare se sono sufficientemente simili da essere uniti.'
 ms.assetid: b28a17bd-5d5b-41b3-86d9-327f5497fc94
-title: Struttura D3DX10_WELD_EPSILONS (D3DX10. h)
+title: D3DX10_WELD_EPSILONS struttura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: c72f63e3ecef1fdb193fcaec9220f9768204d099
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 720a10dbe4b22b69910d88d3c03cea9ded768f1b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322984"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105429"
 ---
-# <a name="d3dx10_weld_epsilons-structure"></a>\_Struttura di \_ Epsilon d3dx10 Weld
+# <a name="d3dx10_weld_epsilons-structure"></a>Struttura \_ EPSILONS D3DX10 WELD \_
 
-Specifica i valori di tolleranza per ogni componente vertex quando si confrontano i vertici per determinare se sono abbastanza simili per essere saldati insieme.
+Specifica i valori di tolleranza per ogni componente vertice durante il confronto dei vertici per determinare se sono sufficientemente simili da essere uniti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ typedef struct D3DX10_WELD_EPSILONS {
 **Position**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -62,18 +62,18 @@ Posizione
 **BlendWeights**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Spessore di Blend
+Spessore di blend
 
 </dd> <dt>
 
 **Normal**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -84,18 +84,18 @@ Normale
 **PSize**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valore dimensioni punto
+Valore delle dimensioni in punti
 
 </dd> <dt>
 
 **Speculare**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -106,7 +106,7 @@ Valore di illuminazione speculare
 **Diffusa**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -117,7 +117,7 @@ Valore di illuminazione diffusa
 **Texcoord**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -128,7 +128,7 @@ Otto coordinate di trama
 **Tangente**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -139,7 +139,7 @@ Tangente
 **Binormale**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -150,17 +150,17 @@ Binormale
 **TessFactor**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Fattore a mosaico
+Fattore a tessellazione
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo LPD3DXWeldEpsilons è definito come un puntatore alla struttura D3DXWeldEpsilons.
+Il tipo LPD3DXWeldEpsilons è definito come puntatore alla struttura D3DXWeldEpsilons.
 
 
 ```
@@ -175,7 +175,7 @@ typedef D3DX_WELD_EPSILONS *LPD3DX_WELD_EPSILONS;
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 

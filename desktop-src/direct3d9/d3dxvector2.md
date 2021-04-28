@@ -1,7 +1,7 @@
 ---
-description: Descrive un vettore a due componenti, inclusi gli overload degli operatori e i cast di tipo.
+description: "Struttura D3DXVECTOR2 (D3dx9math.h): descrive un vettore a due componenti che include overload dell'operatore e cast di tipi."
 ms.assetid: e61ec1c8-00b5-491f-8fb1-be97218f6c68
-title: Struttura D3DXVECTOR2 (D3dx9math. h)
+title: Struttura D3DXVECTOR2 (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: f7f54dc67c038d7c22929b67c59e6b0331a5e545
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 79f66c0e9130a320042c9b914bad47e5f02f0d8a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323752"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097609"
 ---
-# <a name="d3dxvector2-structure-d3dx9mathh"></a>Struttura D3DXVECTOR2 (D3dx9math. h)
+# <a name="d3dxvector2-structure-d3dx9mathh"></a>Struttura D3DXVECTOR2 (D3dx9math.h)
 
-Descrive un vettore a due componenti, inclusi gli overload degli operatori e i cast di tipo.
+Descrive un vettore a due componenti che include overload dell'operatore e cast di tipi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ typedef struct D3DXVECTOR2 {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -54,7 +54,7 @@ Componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -143,7 +143,7 @@ public:
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

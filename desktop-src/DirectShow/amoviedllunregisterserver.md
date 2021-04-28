@@ -1,7 +1,7 @@
 ---
-description: Obsoleta. In alternativa, usare AMovieDllRegisterServer2.
+description: 'Funzione AMovieDllUnregisterServer : obsoleta. In alternativa, usare AMovieDllRegisterServer2.'
 ms.assetid: 80f52109-6239-4e3d-a395-eb69f5278cd2
-title: Funzione AMovieDllUnregisterServer (Dllsetup. h)
+title: Funzione AMovieDllUnregisterServer (Dllsetup.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4cab526a69f14cdd4c4f48767ca34722f61002eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df7fb34246249298efc143b7ccc8e6332540867c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331708"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099929"
 ---
-# <a name="amoviedllunregisterserver-function"></a>AMovieDllUnregisterServer (funzione)
+# <a name="amoviedllunregisterserver-function"></a>Funzione AMovieDllUnregisterServer
 
-Obsoleta. In alternativa, usare [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) .
+Obsoleta. In [**alternativa, usare AMovieDllRegisterServer2.**](amoviedllregisterserver2.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Dllsetup. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Dllsetup.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 <dl> <dt>
 
-[**Funzioni di installazione DLL**](dll-setup-functions.md)
+[**Funzioni di installazione dll**](dll-setup-functions.md)
 </dt> </dl>
 
  

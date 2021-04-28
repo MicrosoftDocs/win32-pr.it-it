@@ -1,7 +1,7 @@
 ---
-description: Recupera i dati in un buffer di indice.
+description: 'Metodo ID3DXBaseMesh::GetIndexBuffer: recupera i dati in un index buffer.'
 ms.assetid: 8e14a047-a8a6-4763-88c7-3b439044eeb4
-title: 'Metodo ID3DXBaseMesh:: GetIndexBuffer (D3DX9Mesh. h)'
+title: Metodo ID3DXBaseMesh::GetIndexBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5b7cf57cd8f31e54cf48ae7f0cab69a40783debe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 40e57193a2bf9a47ed0c57e6d13644441fbc42ce
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355159"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115429"
 ---
-# <a name="id3dxbasemeshgetindexbuffer-method"></a>Metodo ID3DXBaseMesh:: GetIndexBuffer
+# <a name="id3dxbasemeshgetindexbuffer-method"></a>Metodo ID3DXBaseMesh::GetIndexBuffer
 
-Recupera i dati in un buffer di indice.
+Recupera i dati in un index buffer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ HRESULT GetIndexBuffer(
 
 Tipo: **[ **LPDIRECT3DINDEXBUFFER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9)\***
 
-Indirizzo di un puntatore a un'interfaccia [**IDirect3DIndexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) , che rappresenta l'oggetto buffer di indice associato alla mesh.
+Indirizzo di un puntatore a [**un'interfaccia IDirect3DIndexBuffer9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) che rappresenta l index buffer o object associato alla mesh.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

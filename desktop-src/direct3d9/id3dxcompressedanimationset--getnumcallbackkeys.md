@@ -1,7 +1,7 @@
 ---
-description: Ottiene il numero di chiavi di callback nel set di animazioni.
+description: 'Metodo ID3DXCompressedAnimationSet::GetNumCallbackKeys: ottiene il numero di chiavi di callback nel set di animazioni.'
 ms.assetid: 0c952a86-d252-4f65-95e1-2d1e1f6b7143
-title: 'Metodo ID3DXCompressedAnimationSet:: GetNumCallbackKeys (D3dx9anim. h)'
+title: Metodo ID3DXCompressedAnimationSet::GetNumCallbackKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b1119d39dbfa159464ace16a256dd80dd7751672
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: da9add6b52ae79632f6fa4bb67e9a2d524d1dace
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969378"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115309"
 ---
-# <a name="id3dxcompressedanimationsetgetnumcallbackkeys-method"></a>Metodo ID3DXCompressedAnimationSet:: GetNumCallbackKeys
+# <a name="id3dxcompressedanimationsetgetnumcallbackkeys-method"></a>Metodo ID3DXCompressedAnimationSet::GetNumCallbackKeys
 
 Ottiene il numero di chiavi di callback nel set di animazioni.
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di chiavi di callback nel set di animazioni.
 
@@ -50,8 +50,8 @@ Numero di chiavi di callback nel set di animazioni.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

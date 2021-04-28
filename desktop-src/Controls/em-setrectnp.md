@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_SETRECTNP (winuser. h)
-description: Imposta il rettangolo di formattazione di un controllo di modifica su più righe.
+title: EM_SETRECTNP messaggio (Winuser.h)
+description: 'EM_SETRECTNP: imposta il rettangolo di formattazione di un controllo di modifica su più righe.'
 ms.assetid: 1ab497ca-023f-4c26-b92d-b441a0d7b90c
 keywords:
-- Controlli di Windows Message EM_SETRECTNP
+- EM_SETRECTNP di windows del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e017bd4737c843c2452382918d71ef63345917cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9a8c85d4f7abd58ed3adb33ede66254c190a7bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964753"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085989"
 ---
-# <a name="em_setrectnp-message"></a>\_Messaggio SETRECTNP em
+# <a name="em_setrectnp-message"></a>Messaggio \_ EM SETRECTNP
 
-Imposta il [rettangolo di formattazione](about-edit-controls.md) di un controllo di modifica su più righe. Il **messaggio \_ SETRECTNP em** è identico al [**messaggio \_ serect em**](em-setrect.md) , ad eccezione del fatto che  **em \_ SETRECTNP** non ridisegnato la finestra di controllo di modifica.
+Imposta il rettangolo [di formattazione](about-edit-controls.md) di un controllo di modifica su più righe. Il **messaggio EM \_ SETRECTNP** è identico al messaggio [**EM \_ SETRECT,**](em-setrect.md)  ad eccezione del fatto che **EM \_ SETRECTNP** non ridisegna la finestra del controllo di modifica.
 
-Il rettangolo di formattazione è il rettangolo di limitazione in cui il controllo disegna il testo. Il rettangolo di limitazione è indipendente dalle dimensioni della finestra di controllo di modifica.
+Il rettangolo di formattazione è il rettangolo di limitazione in cui il controllo disegna il testo. Il rettangolo di limitazione è indipendente dalle dimensioni della finestra del controllo di modifica.
 
-Questo messaggio viene elaborato solo dai controlli di modifica su più righe. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+Questo messaggio viene elaborato solo da controlli di modifica su più righe. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -36,26 +36,26 @@ Questo messaggio viene elaborato solo dai controlli di modifica su più righe. Q
 *wParam* 
 </dt> <dd>
 
-**Rich Edit 3,0 e versioni successive:** Indica se il nuovo rettangolo contiene coordinate assolute o relative. Un valore pari a zero indica le coordinate assolute. Il valore 1 indica gli offset relativi al rettangolo di formattazione corrente. Gli offset possono essere positivi o negativi.
+**Rich Edit 3.0 e versioni successive:** Indica se il nuovo rettangolo contiene coordinate assolute o relative. Il valore zero indica coordinate assolute. Il valore 1 indica gli offset rispetto al rettangolo di formattazione corrente. Gli offset possono essere positivi o negativi.
 
-**Controlli di modifica:** Questo parametro non viene utilizzato e deve essere zero.
+**Controlli di modifica:** Questo parametro non viene usato e deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che specifica le nuove dimensioni del rettangolo. Se questo parametro è **null**, il rettangolo di formattazione viene impostato sui valori predefiniti.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) che specifica le nuove dimensioni del rettangolo. Se questo parametro è **NULL,** il rettangolo di formattazione viene impostato su valori predefiniti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 3,0 e versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 3.0 e versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Questo messaggio non restituisce alcun valore.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                                           |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,13 +76,13 @@ Questo messaggio non restituisce alcun valore.
 **Riferimento**
 </dt> <dt>
 
-[**serect EM \_**](em-setrect.md)
+[**EM \_ SETRECT**](em-setrect.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**RECT**](/previous-versions//dd162897(v=vs.85))
+[**Rect**](/previous-versions//dd162897(v=vs.85))
 </dt> </dl>
 
  

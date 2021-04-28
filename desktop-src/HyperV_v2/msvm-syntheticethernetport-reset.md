@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_SyntheticEthernetPort : richiede una reimpostazione.'
 ms.assetid: ebe8e9f6-4110-4c69-8924-49e346be93a4
-title: Reimposta il metodo della classe Msvm_SyntheticEthernetPort
+title: Metodo Reset della classe Msvm_SyntheticEthernetPort
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 06641b955f794f75fef83e98de238cf834fa6fbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75ea464e5c62e47939e79f081f6a25f8adb3de51
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131071"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109559"
 ---
-# <a name="reset-method-of-the-msvm_syntheticethernetport-class"></a>Metodo Reset della \_ classe SyntheticEthernetPort di MSVM
+# <a name="reset-method-of-the-msvm_syntheticethernetport-class"></a>Metodo Reset della classe \_ Msvm SyntheticEthernetPort
 
 Richiede una reimpostazione.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_SyntheticEthernetPort MSVM**](msvm-syntheticethernetport.md)
+[**Msvm \_ SyntheticEthernetPort**](msvm-syntheticethernetport.md)
 </dt> </dl>
 
  

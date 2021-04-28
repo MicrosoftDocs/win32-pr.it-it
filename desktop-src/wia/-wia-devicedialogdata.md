@@ -1,7 +1,7 @@
 ---
-description: Definisce i dati necessari per chiamare una finestra di dialogo del dispositivo.
+description: 'Struttura DEVICEDIALOGDATA: definisce i dati necessari per chiamare un dialogo del dispositivo.'
 ms.assetid: 424defa6-1452-4a8b-bacc-738209c236c3
-title: Struttura DEVICEDIALOGDATA (Wiadefd. h)
+title: Struttura DEVICEDIALOGDATA (Wiadefd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: 621cab4f56b39ac900048018463935b55f0eddec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad7b08f5396a7a6e9b1f74df3dd409303b2d548d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104529155"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104269"
 ---
 # <a name="devicedialogdata-structure"></a>Struttura DEVICEDIALOGDATA
 
@@ -52,7 +52,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Specifica la dimensione in byte della struttura.
+Specifica le dimensioni della struttura in byte.
 
 </dd> <dt>
 
@@ -70,11 +70,11 @@ Specifica l'handle per la finestra padre della finestra di dialogo.
 **pIWiaItemRoot**
 </dt> <dd>
 
-Tipo: **[**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) \** _
+Tipo: **[ **IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem)\***
 
 </dd> <dd>
 
-Punta a un'interfaccia [_ *IWiaItem* *](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) che rappresenta l'elemento radice valido nell'albero degli elementi dell'applicazione.
+Punta a [**un'interfaccia IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) che rappresenta l'elemento radice valido nell'albero degli elementi dell'applicazione.
 
 </dd> <dt>
 
@@ -92,8 +92,8 @@ Specifica un set di flag che controllano l'operazione della finestra di dialogo.
 | Contrassegno                                 | Significato                                                                                                                                                                                     |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamento predefinito.                                                                                                                                                                           |
-| \_ \_ immagine singola della finestra di dialogo del dispositivo WIA \_ \_   | Limitare la selezione delle immagini a una singola immagine nella finestra di dialogo acquisizione immagine del dispositivo.                                                                                                      |
-| \_finestra di dialogo del dispositivo WIA usare l' \_ \_ \_ \_ interfaccia utente comune | Utilizzare l'interfaccia utente di sistema, se disponibile, anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene utilizzata l'interfaccia utente del fornitore. Se nessuna delle due interfacce è disponibile, la funzione restituisce E \_ NOTIMPL. |
+| IMMAGINE SINGOLA \_ DELLA FINESTRA DI DIALOGO DEL \_ \_ DISPOSITIVO \_ WIA   | Limitare la selezione dell'immagine a una singola immagine nella finestra di dialogo di acquisizione dell'immagine del dispositivo.                                                                                                      |
+| FINESTRA DI DIALOGO DEL DISPOSITIVO WIA \_ \_ USA \_ \_ L'INTERFACCIA \_ UTENTE COMUNE | Usare l'interfaccia utente di sistema, se disponibile, anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene usata l'interfaccia utente del fornitore. Se nessuna delle due interfaccia utente è disponibile, la funzione restituisce E \_ NOTIMPL. |
 
 
 
@@ -104,22 +104,22 @@ Specifica un set di flag che controllano l'operazione della finestra di dialogo.
 **lIntent**
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 </dd> <dd>
 
-Specifica il tipo di dati che l'immagine deve rappresentare. Per un elenco di valori per finalità immagine, vedere [**costanti per finalità di immagine**](-wia-imageintentconstants.md).
+Specifica il tipo di dati che l'immagine deve rappresentare. Per un elenco dei valori di finalità dell'immagine, vedere [**Costanti finalità immagine.**](-wia-imageintentconstants.md)
 
 </dd> <dt>
 
 **lItemCount**
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 </dd> <dd>
 
-Riceve il numero di elementi nella matrice indicata dal parametro **ppWiaItem** .
+Riceve il numero di elementi nella matrice indicata dal **parametro ppWiaItem.**
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Tipo: **[ **IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem)\*\***
 
 </dd> <dd>
 
-Riceve l'indirizzo di una matrice di puntatori alle interfacce [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) .
+Riceve l'indirizzo di una matrice di puntatori [**alle interfacce IWiaItem.**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem)
 
 </dd> </dl>
 
@@ -140,9 +140,9 @@ Riceve l'indirizzo di una matrice di puntatori alle interfacce [**IWiaItem**](/w
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Wiadefd. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
 
 
 

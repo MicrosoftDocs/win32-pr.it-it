@@ -1,7 +1,7 @@
 ---
-description: Imposta una matrice trasposta.
+description: 'Metodo ID3DXBaseEffect::SetMatrixTranspose: imposta una matrice trasposta.'
 ms.assetid: d340b058-6ba5-43ec-b398-111064965730
-title: 'Metodo ID3DXBaseEffect:: SetMatrixTranspose (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetMatrixTranspose (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f62847f7b15899389cbd5f207ce810b0ed0dd119
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 384d4a7ed5e1b769218b9290ed6cc0f7f060bd66
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322079"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107399"
 ---
-# <a name="id3dxbaseeffectsetmatrixtranspose-method"></a>Metodo ID3DXBaseEffect:: SetMatrixTranspose
+# <a name="id3dxbaseeffectsetmatrixtranspose-method"></a>Metodo ID3DXBaseEffect::SetMatrixTranspose
 
 Imposta una matrice trasposta.
 
@@ -41,16 +41,16 @@ HRESULT SetMatrixTranspose(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pmatrix* \[ in\]
+*pMatrix* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
@@ -67,9 +67,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice trasposta contiene dati di colonne principali; ovvero ogni vettore è contenuto in una colonna.
+Una matrice trasposta contiene dati principali della colonna. in altri, ogni vettore è contenuto in una colonna.
 
-Se la matrice di destinazione è minore della matrice di origine, i componenti aggiuntivi della matrice di origine verranno ignorati.
+Se la matrice di destinazione è più piccola della matrice di origine, i componenti aggiuntivi della matrice di origine verranno ignorati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Se la matrice di destinazione è minore della matrice di origine, i componenti a
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

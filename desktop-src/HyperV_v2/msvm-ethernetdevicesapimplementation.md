@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un punto di accesso al servizio e il dispositivo logico che lo implementa.
+description: "Msvm_EthernetDeviceSAPImplementation classe : rappresenta un'associazione tra un punto di accesso del servizio e il dispositivo logico che lo implementa."
 ms.assetid: C0DDB199-AD97-4DD7-8056-BD6BD0CECFA8
-title: Classe Msvm_EthernetDeviceSAPImplementation
+title: Msvm_EthernetDeviceSAPImplementation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 96290eb0d572f4848fbf3805a44ce0ae173892c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fddce9505ca2f8692044239d294904eb17c95ffa
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104345786"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111949"
 ---
-# <a name="msvm_ethernetdevicesapimplementation-class"></a>\_Classe MSVM EthernetDeviceSAPImplementation
+# <a name="msvm_ethernetdevicesapimplementation-class"></a>Classe Msvm \_ EthernetDeviceSAPImplementation
 
-Rappresenta un'associazione tra un punto di accesso al servizio e il dispositivo logico che lo implementa. La cardinalità di questa associazione è molti-a-molti. Un punto di accesso al servizio (SAP) può essere fornito da più di un dispositivo logico, operando insieme. Qualsiasi dispositivo può fornire più di un SAP. Quando molti dispositivi logici sono associati a un singolo SAP, si presuppone che questi elementi funzionino insieme per fornire il punto di accesso. Se sono presenti implementazioni diverse di un SAP, ognuna di queste implementazioni genererà le singole creazioni di istanze dell'oggetto SAP. Queste singole creazioni di istanze avrebbero quindi le associazioni alle implementazioni univoche.
+Rappresenta un'associazione tra un punto di accesso del servizio e il dispositivo logico che lo implementa. La cardinalità di questa associazione è molti-a-molti. Un punto di accesso al servizio (SAP) può essere fornito da più di un dispositivo logico, operando in combinazione. Qualsiasi dispositivo può fornire più di un SAP. Quando molti dispositivi logici sono associati a un singolo SAP, si presuppone che questi elementi funzionino in combinazione per fornire il punto di accesso. Se esistono implementazioni diverse di sap, ognuna di queste implementazioni comporterebbe la creazione di singole istanze dell'oggetto SAP. Queste singole istanze hanno quindi associazioni alle implementazioni univoche.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ class Msvm_EthernetDeviceSAPImplementation : CIM_DeviceSAPImplementation
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetDeviceSAPImplementation di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetDeviceSAPImplementation** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetDeviceSAPImplementation di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetDeviceSAPImplementation** ha queste proprietà.
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Tipo di dati: **[ **CIM \_ EthernetPort**](/previous-versions/windows/desktop/is
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
 Riferimento a una classe derivata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport) che rappresenta il dispositivo logico.
@@ -70,16 +70,16 @@ Riferimento a una classe derivata da [**CIM \_ EthernetPort**](/previous-version
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ LANEndpoint**](msvm-lanendpoint.md)**
+Tipo di dati: **[ **Msvm \_ LANEndpoint**](msvm-lanendpoint.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ LANEndpoint**](msvm-lanendpoint.md) che rappresenta il SAP che sta utilizzando l'attività **precedente**.
+Riferimento a un'istanza della [**classe Msvm \_ LANEndpoint**](msvm-lanendpoint.md) che rappresenta il sap che usa **antecedente**.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Riferimento a un'istanza della classe [**MSVM \_ LANEndpoint**](msvm-lanendpoint
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di proiezione prospettica a sinistra
+description: 'Funzione D3DXMatrixPerspectiveLH (D3DX10Math.h): crea una matrice di proiezione prospettica mancino'
 ms.assetid: 5fd8da67-ff12-42fa-b915-b50fa2680b32
-title: Funzione D3DXMatrixPerspectiveLH (D3DX10Math. h)
+title: Funzione D3DXMatrixPerspectiveLH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 400967b5e4a25244c50dbd6093fa2079700ba4eb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a0f6c976f64fe64d3ca583351ae5c7c32aa958fd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323407"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108109099"
 ---
-# <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Funzione D3DXMatrixPerspectiveLH (D3DX10Math. h)
+# <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Funzione D3DXMatrixPerspectiveLH (D3DX10Math.h)
 
-Compila una matrice di proiezione prospettica a sinistra
+Compila una matrice di proiezione prospettica mancino
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,19 +44,19 @@ D3DXMATRIX* D3DXMatrixPerspectiveLH(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
 *w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Larghezza del volume di visualizzazione nel piano di visualizzazione vicino.
 
@@ -65,25 +65,25 @@ Larghezza del volume di visualizzazione nel piano di visualizzazione vicino.
 *h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Altezza del volume di visualizzazione nel piano di visualizzazione vicino.
 
 </dd> <dt>
 
-*Zn* \[ in\]
+*zn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore Z del piano di visualizzazione vicino.
 
 </dd> <dt>
 
-*ZF* \[ in\]
+*zf* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore Z del piano di visualizzazione lontano.
 
@@ -93,13 +93,13 @@ Valore Z del piano di visualizzazione lontano.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a una struttura D3DXMATRIX che rappresenta una matrice di proiezione prospettica a sinistra.
+Puntatore a una struttura D3DXMATRIX che è una matrice di proiezione prospettica mancino.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della funzione D3DXMatrixPerspectiveLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
+Tutti i parametri della funzione D3DXMatrixPerspectiveLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixPerspectiveLH può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixPerspectiveLH può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -119,8 +119,8 @@ Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

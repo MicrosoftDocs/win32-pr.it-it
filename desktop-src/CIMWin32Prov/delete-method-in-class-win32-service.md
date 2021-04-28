@@ -1,5 +1,5 @@
 ---
-description: Il&Delete \# 8194; Il metodo della classe WMI Elimina un servizio esistente.
+description: Metodo Delete della classe Win32_Service (provider WMI CIMWin32) - Eliminazione&\# 8194; Il metodo della classe WMI elimina un servizio esistente.
 ms.assetid: aa4e7630-3b19-47dd-acd1-4d1735acb819
 ms.tgt_platform: multiple
 title: Metodo Delete della classe Win32_Service (provider WMI CIMWin32)
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d06301c3620e144d72c2d4c4f3d8bc90e642374a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4031184e23e99fc54237ed0b0b4196fe6c075c5b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225672"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108089579"
 ---
 # <a name="delete-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo Delete della classe Win32_Service (provider WMI CIMWin32)
 
-Il metodo **Delete** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) Elimina un servizio esistente.
+Il **metodo** [Elimina classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina un servizio esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non dispone dell'accesso necessario.
+L'utente non aveva l'accesso necessario.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**Proprietà state** ) è uguale a 0, 1 o 2.
+Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State)** è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Errore sconosciuto durante l'avvio del servizio.
 **9**
 </dt> <dd>
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -161,28 +161,28 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 **16**
 </dt> <dd>
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
 **17**
 </dt> <dd>
 
-Il servizio non dispone di un thread di esecuzione.
+Il servizio non ha thread di esecuzione.
 
 </dd> <dt>
 
 **18**
 </dt> <dd>
 
-Il servizio ha dipendenze circolari all'avvio.
+Il servizio presenta dipendenze circolari all'avvio.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Un servizio è in esecuzione con lo stesso nome.
+Un servizio viene eseguito con lo stesso nome.
 
 </dd> <dt>
 
@@ -196,14 +196,14 @@ Il nome del servizio contiene caratteri non validi.
 **21**
 </dt> <dd>
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
 **22**
 </dt> <dd>
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -223,27 +223,27 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Con l'evoluzione dell'organizzazione, è possibile decidere di rimuovere determinati servizi da determinati computer. I servizi interni e di terze parti possono essere rimossi tramite WMI, mentre i servizi del sistema operativo possono essere rimossi usando Sysocmgr.exe.
+Quando l'organizzazione cambia, è possibile decidere di rimuovere determinati servizi da determinati computer. I servizi all'interno e di terze parti possono essere rimossi tramite WMI, mentre i servizi del sistema operativo possono essere rimossi usando Sysocmgr.exe.
 
-Quando si prepara la rimozione dei servizi, tenere presenti le seguenti informazioni:
+Quando si prepara la rimozione dei servizi, tenere presenti le informazioni seguenti:
 
--   Prima di rimuoverli, è necessario arrestare i servizi. Se il servizio è in esecuzione quando si esegue il comando di eliminazione, il servizio viene contrassegnato per l'eliminazione, ma continua a essere eseguito fino a quando non viene interrotto e tutti gli handle aperti non vengono chiusi.
+-   I servizi devono essere arrestati prima di rimuoverli. Se il servizio è in esecuzione quando si esegue il comando delete, il servizio viene contrassegnato per l'eliminazione, ma continua a essere eseguito fino all'arresto e alla chiusura di tutti gli handle aperti.
 
-    Se il servizio non viene mai arrestato, il servizio non verrà mai eliminato.
+    Se il servizio non viene mai arrestato, tale servizio non verrà mai eliminato.
 
--   La rimozione di un servizio non comporta la rimozione del file eseguibile del servizio.
+-   La rimozione di un servizio non rimuove il file eseguibile del servizio.
 
-    La rimozione di un servizio tramite WMI comporta l'eliminazione delle voci del registro di sistema correlate in HKEY \_ Local \_ Machine \\ System \\ CurrentControlSet \\ Services. Di conseguenza, il servizio non viene più installato e non è disponibile tramite lo snap-in servizi. Tuttavia, WMI non elimina il file eseguibile, vale a dire che è possibile reinstallare facilmente il servizio. Per eliminare il file eseguibile, è necessario recuperare il nome del percorso e quindi eliminare il file.
+    La rimozione di un servizio tramite WMI elimina le voci del Registro di sistema correlate in HKEY \_ LOCAL \_ MACHINE SYSTEM \\ \\ \\ CurrentControlSet Services. Di conseguenza, il servizio non è più installato e non è disponibile tramite lo snap-in Servizi. TUTTAVIA, WMI non elimina il file eseguibile, pertanto è possibile reinstallare facilmente il servizio. Per eliminare il file eseguibile, è necessario recuperare il nome del percorso e quindi eliminare il file.
 
--   La rimozione di un servizio di base di Windows 2000 (ad esempio, DHCP) tramite WMI Elimina le voci del registro di sistema per il servizio, ma non rimuove il collegamento dal menu strumenti di amministrazione o rimuove il servizio dalla procedura guidata componenti di Windows. Questo può confondere chiunque tenti di determinare come è stato configurato il computer.
+-   La rimozione di un servizio windows 2000 di base (ad esempio DHCP) tramite WMI elimina le voci del Registro di sistema per tale servizio, ma non rimuove il collegamento dal menu Strumenti di amministrazione o rimuove il servizio dall'Aggiunta guidata componenti di Windows. Ciò può confondere chiunque stia tentando di determinare come è stato configurato il computer.
 
-    Se ad esempio si rimuove il servizio DHCP utilizzando uno script WMI, il servizio DHCP non sarà più elencato nello snap-in servizi. Tuttavia, un collegamento non funzionale alla console DHCP rimane nel menu strumenti di amministrazione e, se si avvia la creazione guidata componenti di Windows, significa che il servizio DHCP è installato.
+    Ad esempio, se si rimuove il servizio DHCP tramite uno script WMI, il servizio DHCP non è più elencato nello snap-in Servizi. Tuttavia, un collegamento non funzionante alla console DHCP rimane nel menu Strumenti di amministrazione e, se si avvia la Creazione guidata componenti di Windows, indica che il servizio DHCP è installato.
 
-    Per questo motivo, è consigliabile usare sempre Sysocmgr.exe per rimuovere a livello di codice i servizi di Windows 2000.
+    Per questo problema, è consigliabile usare sempre Sysocmgr.exe per rimuovere i servizi di Windows 2000 a livello di codice.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript riportato di seguito viene descritto come eliminare un servizio.
+Nell'esempio di codice VBScript seguente viene descritto come eliminare un servizio.
 
 
 ```VB
@@ -260,7 +260,7 @@ Next
 
 
 
-Nell'esempio di codice Perl seguente viene illustrato come eliminare un servizio.
+L'esempio di codice Perl seguente descrive come eliminare un servizio.
 
 
 ```
@@ -302,7 +302,7 @@ else
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -314,7 +314,7 @@ else
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Servizio Win32**](win32-service.md)
+[**Servizio \_ Win32**](win32-service.md)
 </dt> <dt>
 
 [Attività WMI: Servizi](/windows/desktop/WmiSdk/wmi-tasks--services)

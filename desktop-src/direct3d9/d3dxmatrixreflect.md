@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice che riflette il sistema di coordinate su un piano.
+description: 'Funzione D3DXMatrixReflect (D3dx9math.h): compila una matrice che riflette il sistema di coordinate su un piano.'
 ms.assetid: f6dc3834-42f2-4ad0-8098-8c5e25e10d58
-title: Funzione D3DXMatrixReflect (D3dx9math. h)
+title: Funzione D3DXMatrixReflect (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2e54c5f93164e5fccee0d74199a1843a1476e69a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e4118a5f0a1cd997d5fab5fecebae449d4c30b09
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969300"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118219"
 ---
-# <a name="d3dxmatrixreflect-function-d3dx9mathh"></a>Funzione D3DXMatrixReflect (D3dx9math. h)
+# <a name="d3dxmatrixreflect-function-d3dx9mathh"></a>Funzione D3DXMatrixReflect (D3dx9math.h)
 
-Compila una matrice che riflette il sistema di coordinate su un piano.
+Compila una matrice che riflette il sistema di coordinate di un piano.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ D3DXMATRIX* D3DXMatrixReflect(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
-*pPlane* \[ in\]
+*pPlane* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Puntatore alla struttura [**D3DXPLANE**](d3dxplane.md) di origine.
+Puntatore alla struttura [**D3DXPLANE di**](d3dxplane.md) origine.
 
 </dd> </dl>
 
@@ -63,13 +63,13 @@ Puntatore alla struttura [**D3DXPLANE**](d3dxplane.md) di origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) che riflette il sistema di coordinate del piano di origine.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che riflette il sistema di coordinate sul piano di origine.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione normalizza l'equazione del piano prima di creare la matrice riflesso.
+Questa funzione normalizza l'equazione del piano prima di creare la matrice riflessa.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixReflect** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixReflect** può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -91,8 +91,8 @@ P = normalize(Plane);
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

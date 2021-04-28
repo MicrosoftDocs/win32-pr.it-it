@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetControlState recupera lo stato dell'acquisizione, che indica se l'acquisizione viene eseguita o sospesa.
+description: "Metodo IRTC::GetControlState: il metodo GetControlState recupera lo stato dell'acquisizione, che indica se l'acquisizione è in esecuzione o sospesa."
 ms.assetid: ae0cf869-bf5b-4c23-a924-014554053c92
-title: 'Metodo IRTC:: GetControlState (Netmon. h)'
+title: Metodo IRTC::GetControlState (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d437d9463ed3225cd3a474e78220acf1f07af4bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2e41ad3e4119fffbada26fe3ebebdfe3bf82043
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880717"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110709"
 ---
-# <a name="irtcgetcontrolstate-method"></a>Metodo IRTC:: GetControlState
+# <a name="irtcgetcontrolstate-method"></a>Metodo IRTC::GetControlState
 
-Il metodo **GetControlState** recupera lo stato dell' [*acquisizione*](c.md), che indica se l'acquisizione viene eseguita o sospesa.
+Il **metodo GetControlState** recupera lo stato dell'acquisizione , che indica se l'acquisizione è in esecuzione o sospesa. [](c.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,23 +41,23 @@ HRESULT STDMETHODCALLTYPE GetControlState(
 
 <dl> <dt>
 
-*IsRunnning* \[ out\]
+*IsRunnning* \[ Cambio\]
 </dt> <dd>
 
-Indicatore dell'esecuzione dell'acquisizione corrente, incluso se l'acquisizione viene sospesa.
+Indicatore che l'acquisizione corrente è in esecuzione, anche se l'acquisizione è sospesa.
 
 </dd> <dt>
 
-Con *sospensione* \[ out\]
+*IsPaused* \[ Cambio\]
 </dt> <dd>
 
-Indicatore dell'acquisizione corrente sospesa.
+Indicatore che l'acquisizione corrente è sospesa.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -65,8 +65,8 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl> | L'oggetto NPP non è connesso alla rete. Chiamare [IRTC:: Connect](irtc-connect.md) per connettere l'oggetto NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non in \_ tempo reale**</dt> </dl>  | L'oggetto NPP è connesso alla rete, ma non con il metodo [IRTC:: Connect](irtc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IRTC::Connect](irtc-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>  | NPP è connesso alla rete, ma non con il [metodo IRTC::Connect.](irtc-connect.md)<br/>                     |
 
 
 
@@ -74,7 +74,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere chiamato ogni volta che l'oggetto NPP è connesso alla rete. È possibile utilizzare questo metodo per determinare se un'acquisizione è in esecuzione, se l'acquisizione viene sospesa o se l'acquisizione è stata arrestata, ma l'oggetto NPP è ancora connesso.
+Questo metodo può essere chiamato ogni volta che il NPP è connesso alla rete. È possibile usare questo metodo per determinare se un'acquisizione è in esecuzione, se l'acquisizione è sospesa o se l'acquisizione è stata arrestata ma NPP è ancora connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Questo metodo può essere chiamato ogni volta che l'oggetto NPP è connesso alla
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -96,16 +96,16 @@ Questo metodo può essere chiamato ogni volta che l'oggetto NPP è connesso alla
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: Connect](irtc-connect.md)
+[IRTC::Connect](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::P ause](irtc-pause.md)
 </dt> <dt>
 
-[IRTC:: Start](irtc-start.md)
+[IRTC::Start](irtc-start.md)
 </dt> <dt>
 
-[IRTC:: Stop](irtc-stop.md)
+[IRTC::Stop](irtc-stop.md)
 </dt> </dl>
 
  

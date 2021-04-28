@@ -1,7 +1,7 @@
 ---
-description: Imposta una matrice di valori booleani.
+description: 'Metodo ID3DXConstantTable::SetBoolArray : imposta una matrice di valori booleani.'
 ms.assetid: 323ad654-81e3-4986-a667-8333dd44a2d1
-title: 'Metodo ID3DXConstantTable:: SetBoolArray (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::SetBoolArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d573a2c44b54809ec259a0ceb5abab02ef37df34
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c967ffd1a6601144787621628ed1b019e775eddd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322818"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115209"
 ---
-# <a name="id3dxconstanttablesetboolarray-method"></a>Metodo ID3DXConstantTable:: SetBoolArray
+# <a name="id3dxconstanttablesetboolarray-method"></a>Metodo ID3DXConstantTable::SetBoolArray
 
 Imposta una matrice di valori booleani.
 
@@ -43,16 +43,16 @@ HRESULT SetBoolArray(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato alla tabella delle costanti.
+Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -61,19 +61,19 @@ Identificatore univoco della matrice di costanti. Vedere [D3DXHANDLE](dx9-graphi
 
 </dd> <dt>
 
-*PB* \[ in\]
+*pB* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**bool**](../winprog/windows-data-types.md) \***
+Tipo: **const [**BOOL**](../winprog/windows-data-types.md) \***
 
 Matrice di valori booleani.
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di valori booleani nella matrice.
 
@@ -91,8 +91,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

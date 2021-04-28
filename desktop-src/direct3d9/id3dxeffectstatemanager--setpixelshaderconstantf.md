@@ -1,7 +1,7 @@
 ---
-description: Funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti a virgola mobile del vertex shader.
+description: 'Metodo ID3DXEffectStateManager::SetPixelShaderConstantF: funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti a virgola mobile vertex shader.'
 ms.assetid: db87ca8c-2539-4d80-854c-25b114a7e7e0
-title: 'Metodo ID3DXEffectStateManager:: SetPixelShaderConstantF (D3DX9Effect. h)'
+title: Metodo ID3DXEffectStateManager::SetPixelShaderConstantF (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 19e8654fbc851460fea932a8c858240c5e4631de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f73963e98d4951eaf2905cc5da6eab3a6409f220
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323000"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090459"
 ---
-# <a name="id3dxeffectstatemanagersetpixelshaderconstantf-method"></a>Metodo ID3DXEffectStateManager:: SetPixelShaderConstantF
+# <a name="id3dxeffectstatemanagersetpixelshaderconstantf-method"></a>Metodo ID3DXEffectStateManager::SetPixelShaderConstantF
 
-Funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti a virgola mobile del vertex shader.
+Funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti a virgola mobile vertex shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ HRESULT SetPixelShaderConstantF(
 
 <dl> <dt>
 
-*StartRegister* \[ out\]
+*StartRegister* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Indice in base zero del primo registro costante.
 
 </dd> <dt>
 
-*pConstantData* \[ out\]
+*pConstantData* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
 Matrice di costanti a virgola mobile.
 
 </dd> <dt>
 
-*RegisterCount* \[ out\]
+*RegisterCount* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di registri in pConstantData.
 
@@ -73,10 +73,10 @@ Numero di registri in pConstantData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback non riesce quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico, ad esempio [**IDirect3DDevice9:: SetPixelShaderConstantF**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf), avrà esito negativo.
+-   L'effetto avrà esito negativo durante [**ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata allo stato dell'effetto dinamico ( ad esempio [**IDirect3DDevice9::SetPixelShaderConstantF**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf)) avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

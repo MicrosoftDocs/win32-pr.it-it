@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CVideoTransformFilter.CVideoTransformFilter - Metodo costruttore.
 ms.assetid: 4dad635f-4637-4f40-9f02-a91b59d05278
-title: Costruttore CVideoTransformFilter. CVideoTransformFilter (Vtrans. h)
+title: Costruttore CVideoTransformFilter.CVideoTransformFilter (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63e642182a0f968db5bda06e0af410d02455eb19
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 59609e09b252e56aded1669264bb98cdbe823e89
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331442"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084589"
 ---
-# <a name="cvideotransformfiltercvideotransformfilter-constructor"></a>Costruttore CVideoTransformFilter. CVideoTransformFilter
+# <a name="cvideotransformfiltercvideotransformfilter-constructor"></a>Costruttore CVideoTransformFilter.CVideoTransformFilter
 
 Metodo del costruttore.
 
@@ -44,21 +44,21 @@ CVideoTransformFilter(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Stringa contenente il nome di debug del filtro. Per ulteriori informazioni, vedere [**CBaseObject:: CBaseObject**](cbaseobject-cbaseobject.md).
+Stringa contenente il nome di debug del filtro. Per altre informazioni, vedere [**CBaseObject::CBaseObject**](cbaseobject-cbaseobject.md).
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*CLSID* 
+*Clsid* 
 </dt> <dd>
 
 Identificatore di classe del filtro.
@@ -71,8 +71,8 @@ Identificatore di classe del filtro.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Vtrans. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Vtrans.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

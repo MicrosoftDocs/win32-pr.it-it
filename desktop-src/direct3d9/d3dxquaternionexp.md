@@ -1,7 +1,7 @@
 ---
-description: Calcola l'esponenziale.
+description: "Funzione D3DXQuaternionExp (D3dx9math.h): calcola l'esponenziale."
 ms.assetid: 648aeaf1-ead3-4b21-819f-cd2a70881a13
-title: Funzione D3DXQuaternionExp (D3dx9math. h)
+title: Funzione D3DXQuaternionExp (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b9cb5765e01c4fbbc6ab3785363425262ee491ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 30e48e21e2dc6af487f1fb076af3b3f2df57f9f3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322496"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094099"
 ---
-# <a name="d3dxquaternionexp-function-d3dx9mathh"></a>Funzione D3DXQuaternionExp (D3dx9math. h)
+# <a name="d3dxquaternionexp-function-d3dx9mathh"></a>Funzione D3DXQuaternionExp (D3dx9math.h)
 
 Calcola l'esponenziale.
 
@@ -41,21 +41,21 @@ D3DXQUATERNION* D3DXQuaternionExp(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PQ* \[ in\]
+*pQ* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore alla struttura [**D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) che rappresenta l'esponenziale.
+Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta l'esponenziale.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo converte un quaternione puro in un quaternione di unità. **D3DXQuaternionExp** prevede un quaternione puro, in cui w viene ignorato nel calcolo (w = = 0).
+Questo metodo converte un quaternione puro in un quaternione unità. **D3DXQuaternionExp** prevede un quaternione puro, dove w viene ignorato nel calcolo (w == 0).
 
 
 ```
@@ -80,11 +80,11 @@ exp(Q) = (cos(theta), sin(theta) * v)
 
 
 
-dove v è la parte di vettore di un quaternione.
+dove v è la parte vettore di un quaternione.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXQuaternionExp** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXQuaternionExp** può essere usata come parametro per un'altra funzione.
 
-Il metodo [**D3DXQuaternionSquadSetup**](d3dxquaternionsquadsetup.md) può essere usato anche per impostare i punti di controllo di un quaternione.
+Il [**metodo D3DXQuaternionSquadSetup**](d3dxquaternionsquadsetup.md) può essere usato anche per configurare i punti di controllo di un quaternione.
 
 Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
@@ -94,8 +94,8 @@ Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi in
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

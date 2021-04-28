@@ -1,6 +1,6 @@
 ---
-description: Consente di visualizzare la finestra di dialogo sicurezza di Windows.
-title: Metodo Shell. WindowsSecurity (shldisp. h)
+description: 'Metodo Shell.WindowsSecurity: visualizza la Sicurezza di Windows di dialogo.'
+title: Metodo Shell.WindowsSecurity (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 94916E29-5960-4010-B2C6-0FAA1E4BF72D
-ms.openlocfilehash: bbefa4c772adde64b8142b7e3563315fe4833b1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e04cc6d3a1a25f459da9f533fc562b1fc9d0b06
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529412"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108083599"
 ---
-# <a name="shellwindowssecurity-method"></a>Shell. WindowsSecurity, metodo
+# <a name="shellwindowssecurity-method"></a>Metodo Shell.WindowsSecurity
 
-Consente di visualizzare la finestra di dialogo **sicurezza di Windows** .
+Consente di visualizzare **Sicurezza di Windows** finestra di dialogo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,18 +57,18 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo Visualizza la finestra di dialogo visualizzata dopo aver premuto CTRL + ALT + CANC o usando l'opzione sicurezza nel menu **Start** .
+Questo metodo visualizza la finestra di dialogo visualizzata dopo aver premuto CTRL+ALT+CANC o usando l'opzione di sicurezza nel menu **Start.**
 
 > [!Note]  
-> Questo metodo può essere utilizzato solo in caso di connessione da una sessione terminal a Microsoft Terminal Server.
+> Questo metodo può essere usato solo quando è connesso da una sessione del terminale a Microsoft Terminal Server.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **WindowsSecurity** per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **WindowsSecurity** per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -84,7 +84,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -122,11 +122,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |
 
 
 
