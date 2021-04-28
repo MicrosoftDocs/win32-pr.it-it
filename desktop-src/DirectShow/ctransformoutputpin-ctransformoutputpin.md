@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CTransformOutputPin.CTransformOutputPin : metodo costruttore.'
 ms.assetid: 6213ce92-d98a-4fb6-b66c-e7cdea6dff0d
-title: Costruttore CTransformOutputPin. CTransformOutputPin (Transfrm. h)
+title: Costruttore CTransformOutputPin.CTransformOutputPin (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 730149ae67abb2924174954bb8b620a02cfae2b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1f7cb9dd811c878eba258a6087e00a85d4c24a0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330848"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084869"
 ---
-# <a name="ctransformoutputpinctransformoutputpin-constructor"></a><span data-ttu-id="863c9-103">Costruttore CTransformOutputPin. CTransformOutputPin</span><span class="sxs-lookup"><span data-stu-id="863c9-103">CTransformOutputPin.CTransformOutputPin constructor</span></span>
+# <a name="ctransformoutputpinctransformoutputpin-constructor"></a><span data-ttu-id="3630c-103">Costruttore CTransformOutputPin.CTransformOutputPin</span><span class="sxs-lookup"><span data-stu-id="3630c-103">CTransformOutputPin.CTransformOutputPin constructor</span></span>
 
-<span data-ttu-id="863c9-104">Metodo del costruttore.</span><span class="sxs-lookup"><span data-stu-id="863c9-104">Constructor method.</span></span>
+<span data-ttu-id="3630c-104">Metodo del costruttore.</span><span class="sxs-lookup"><span data-stu-id="3630c-104">Constructor method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="863c9-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="863c9-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3630c-105">Sintassi</span><span class="sxs-lookup"><span data-stu-id="3630c-105">Syntax</span></span>
 
 
 ```C++
@@ -41,50 +41,50 @@ CTransformOutputPin(
 
 
 
-## <a name="parameters"></a><span data-ttu-id="863c9-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="863c9-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3630c-106">Parametri</span><span class="sxs-lookup"><span data-stu-id="3630c-106">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="863c9-107">*pObjectName*</span><span class="sxs-lookup"><span data-stu-id="863c9-107">*pObjectName*</span></span> 
+<span data-ttu-id="3630c-107">*pObjectName*</span><span class="sxs-lookup"><span data-stu-id="3630c-107">*pObjectName*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="863c9-108">Stringa contenente il nome di debug dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="863c9-108">String containing the debug name of the object.</span></span> <span data-ttu-id="863c9-109">Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).</span><span class="sxs-lookup"><span data-stu-id="863c9-109">For more information, see [**CBaseObject**](cbaseobject.md).</span></span>
+<span data-ttu-id="3630c-108">Stringa contenente il nome di debug dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="3630c-108">String containing the debug name of the object.</span></span> <span data-ttu-id="3630c-109">Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)</span><span class="sxs-lookup"><span data-stu-id="3630c-109">For more information, see [**CBaseObject**](cbaseobject.md).</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="863c9-110">*pTransformFilter*</span><span class="sxs-lookup"><span data-stu-id="863c9-110">*pTransformFilter*</span></span> 
+<span data-ttu-id="3630c-110">*pTransformFilter*</span><span class="sxs-lookup"><span data-stu-id="3630c-110">*pTransformFilter*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="863c9-111">Puntatore al filtro che ha creato questo pin, che deve essere un oggetto [**CTransformFilter**](ctransformfilter.md) .</span><span class="sxs-lookup"><span data-stu-id="863c9-111">Pointer to the filter that created this pin, which must be a [**CTransformFilter**](ctransformfilter.md) object.</span></span>
+<span data-ttu-id="3630c-111">Puntatore al filtro che ha creato questo segnaposto, che deve essere un [**oggetto CTransformFilter.**](ctransformfilter.md)</span><span class="sxs-lookup"><span data-stu-id="3630c-111">Pointer to the filter that created this pin, which must be a [**CTransformFilter**](ctransformfilter.md) object.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="863c9-112">*PHR*</span><span class="sxs-lookup"><span data-stu-id="863c9-112">*phr*</span></span> 
+<span data-ttu-id="3630c-112">*Phr*</span><span class="sxs-lookup"><span data-stu-id="3630c-112">*phr*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="863c9-113">Puntatore a una variabile che riceve un valore **HRESULT** che indica l'esito positivo o negativo del metodo.</span><span class="sxs-lookup"><span data-stu-id="863c9-113">Pointer to a variable that receives an **HRESULT** value indicating the success or failure of the method.</span></span> <span data-ttu-id="863c9-114">Inizializzare il valore su S \_ OK prima di creare l'oggetto.</span><span class="sxs-lookup"><span data-stu-id="863c9-114">Initialize the value to S\_OK before creating the object.</span></span> <span data-ttu-id="863c9-115">Il valore viene modificato solo se si verifica un errore.</span><span class="sxs-lookup"><span data-stu-id="863c9-115">The value is changed only if an error occurs.</span></span>
+<span data-ttu-id="3630c-113">Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito positivo o negativo del metodo.</span><span class="sxs-lookup"><span data-stu-id="3630c-113">Pointer to a variable that receives an **HRESULT** value indicating the success or failure of the method.</span></span> <span data-ttu-id="3630c-114">Inizializzare il valore su S \_ OK prima di creare l'oggetto .</span><span class="sxs-lookup"><span data-stu-id="3630c-114">Initialize the value to S\_OK before creating the object.</span></span> <span data-ttu-id="3630c-115">Il valore viene modificato solo se si verifica un errore.</span><span class="sxs-lookup"><span data-stu-id="3630c-115">The value is changed only if an error occurs.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="863c9-116">*pName*</span><span class="sxs-lookup"><span data-stu-id="863c9-116">*pName*</span></span> 
+<span data-ttu-id="3630c-116">*Pname*</span><span class="sxs-lookup"><span data-stu-id="3630c-116">*pName*</span></span> 
 </dt> <dd>
 
-<span data-ttu-id="863c9-117">Stringa di caratteri wide contenente il nome del PIN.</span><span class="sxs-lookup"><span data-stu-id="863c9-117">Wide-character string containing the pin name.</span></span>
+<span data-ttu-id="3630c-117">Stringa di caratteri wide contenente il nome del segnaposto.</span><span class="sxs-lookup"><span data-stu-id="3630c-117">Wide-character string containing the pin name.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="863c9-118">Commenti</span><span class="sxs-lookup"><span data-stu-id="863c9-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3630c-118">Commenti</span><span class="sxs-lookup"><span data-stu-id="3630c-118">Remarks</span></span>
 
-<span data-ttu-id="863c9-119">Il parametro *pname* specifica il nome del PIN, restituito dal metodo [**Ipin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) .</span><span class="sxs-lookup"><span data-stu-id="863c9-119">The *pName* parameter specifies the pin name, which is returned by the [**IPin::QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) method.</span></span> <span data-ttu-id="863c9-120">Tuttavia, la stringa non viene utilizzata per l'identificatore del PIN.</span><span class="sxs-lookup"><span data-stu-id="863c9-120">However, the string is not used for the pin identifier.</span></span> <span data-ttu-id="863c9-121">L'identificatore del PIN per questa classe è sempre "out".</span><span class="sxs-lookup"><span data-stu-id="863c9-121">The pin identifier for this class is always "Out".</span></span> <span data-ttu-id="863c9-122">Per ulteriori informazioni, vedere [**QueryId**](ctransformoutputpin-queryid.md).</span><span class="sxs-lookup"><span data-stu-id="863c9-122">For more information, see [**QueryId**](ctransformoutputpin-queryid.md).</span></span>
+<span data-ttu-id="3630c-119">Il *parametro pName* specifica il nome del pin, restituito dal [**metodo IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo)</span><span class="sxs-lookup"><span data-stu-id="3630c-119">The *pName* parameter specifies the pin name, which is returned by the [**IPin::QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) method.</span></span> <span data-ttu-id="3630c-120">Tuttavia, la stringa non viene usata per l'identificatore pin.</span><span class="sxs-lookup"><span data-stu-id="3630c-120">However, the string is not used for the pin identifier.</span></span> <span data-ttu-id="3630c-121">L'identificatore pin per questa classe è sempre "Out".</span><span class="sxs-lookup"><span data-stu-id="3630c-121">The pin identifier for this class is always "Out".</span></span> <span data-ttu-id="3630c-122">Per altre informazioni, vedere [**QueryId.**](ctransformoutputpin-queryid.md)</span><span class="sxs-lookup"><span data-stu-id="3630c-122">For more information, see [**QueryId**](ctransformoutputpin-queryid.md).</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="863c9-123">Requisiti</span><span class="sxs-lookup"><span data-stu-id="863c9-123">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="3630c-123">Requisiti</span><span class="sxs-lookup"><span data-stu-id="3630c-123">Requirements</span></span>
 
 
 
-| <span data-ttu-id="863c9-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="863c9-124">Requirement</span></span> | <span data-ttu-id="863c9-125">Valore</span><span class="sxs-lookup"><span data-stu-id="863c9-125">Value</span></span> |
+| <span data-ttu-id="3630c-124">Requisito</span><span class="sxs-lookup"><span data-stu-id="3630c-124">Requirement</span></span> | <span data-ttu-id="3630c-125">Valore</span><span class="sxs-lookup"><span data-stu-id="3630c-125">Value</span></span> |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="863c9-126">Intestazione</span><span class="sxs-lookup"><span data-stu-id="863c9-126">Header</span></span><br/>  | <dl> <span data-ttu-id="863c9-127"><dt>Transfrm. h (include Streams. h)</dt></span><span class="sxs-lookup"><span data-stu-id="863c9-127"><dt>Transfrm.h (include Streams.h)</dt></span></span> </dl>                                                                                  |
-| <span data-ttu-id="863c9-128">Libreria</span><span class="sxs-lookup"><span data-stu-id="863c9-128">Library</span></span><br/> | <dl> <span data-ttu-id="863c9-129"><dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt></span><span class="sxs-lookup"><span data-stu-id="863c9-129"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
+| <span data-ttu-id="3630c-126">Intestazione</span><span class="sxs-lookup"><span data-stu-id="3630c-126">Header</span></span><br/>  | <dl> <span data-ttu-id="3630c-127"><dt>Transfrm.h (include Streams.h)</dt></span><span class="sxs-lookup"><span data-stu-id="3630c-127"><dt>Transfrm.h (include Streams.h)</dt></span></span> </dl>                                                                                  |
+| <span data-ttu-id="3630c-128">Libreria</span><span class="sxs-lookup"><span data-stu-id="3630c-128">Library</span></span><br/> | <dl> <span data-ttu-id="3630c-129"><dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt></span><span class="sxs-lookup"><span data-stu-id="3630c-129"><dt>Strmbase.lib (retail builds); </dt> <dt>Strmbasd.lib (debug builds)</dt></span></span> </dl> |
 
 
 
