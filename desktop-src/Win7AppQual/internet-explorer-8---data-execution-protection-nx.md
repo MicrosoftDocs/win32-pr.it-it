@@ -1,22 +1,22 @@
 ---
-description: .
+description: Internet Explorer 8 - Protezione esecuzione dati/NX
 ms.assetid: 56a4889c-5dcf-416f-b46e-5c48277d5636
-title: Internet Explorer 8-Protezione esecuzione dati/NX
+title: Internet Explorer 8 - Protezione esecuzione dati/NX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc73fcd70a244288aceaead426bf09f07656740d
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: eb0208cc20e78c30f42b09af78460990be20b002
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314774"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088249"
 ---
-# <a name="internet-explorer-8---data-execution-protectionnx"></a>Internet Explorer 8-Protezione esecuzione dati/NX
+# <a name="internet-explorer-8---data-execution-protectionnx"></a>Internet Explorer 8 - Protezione esecuzione dati/NX
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
- **Client** -Windows XP, Windows Vista, Windows 7  
-**Server** : windows Server 2003, windows Server 2008, windows Server 2008 R2  
+ **Client** - Windows XP, Windows Vista, Windows 7  
+**Server** - Windows Server 2003, Windows Server 2008, Windows Server 2008 R2  
 
 
 
@@ -28,55 +28,55 @@ ms.locfileid: "107314774"
 
 
 > [!Note]  
-> Internet Explorer 8 Abilita la protezione DEP/NX quando viene eseguita in un sistema operativo con la Service Pack più recente. Per Windows XP SP3, Windows Server 2003 SP3, Windows Vista SP1 e Windows Server 2008 tutti i programmi DEP/NX sono abilitati per impostazione predefinita in Internet Explorer 8.
+> Internet Explorer 8 abiliterà la protezione DEP/NX quando viene eseguita in un sistema operativo con il Service Pack più recente. Windows XP SP3, Windows Server 2003 SP3, Windows Vista SP1 e Windows Server 2008 dispongono di DEP/NX abilitati per impostazione predefinita in Internet Explorer 8.
 
  
 
-## <a name="feature-impact"></a>Effetto sulle funzionalità
+## <a name="feature-impact"></a>Impatto sulle funzionalità
 
-**Gravità** -medio  
-**Frequenza** -bassa  
+**Gravità** - Media  
+**Frequenza** - Bassa  
 
 > [!Note]  
-> In genere, qualsiasi applicazione eseguita in Internet Explorer e non è compatibile con DEP/NX si arresterà in modo anomalo all'avvio e non funzionerà. Internet Explorer potrebbe arrestarsi in modo anomalo all'avvio se sono installati componenti aggiuntivi che non sono compatibili con DEP/NX.
+> In genere, tutte le applicazioni che vengono Internet Explorer e non sono compatibili con DEP/NX si arresteranno in modo anomalo all'avvio e non funzioneranno. Internet Explorer arresto anomalo all'avvio se sono installati componenti aggiuntivi non compatibili con DEP/NX.
 
  
 
 ## <a name="description"></a>Descrizione
 
-DEP/NX è una funzionalità di sicurezza che consente di ridurre le vulnerabilità correlate alla memoria. A partire da Internet Explorer 8, tutti i processi di Internet Explorer abilitano la funzionalità DEP/NX per impostazione predefinita.
+DEP/NX è una funzionalità di sicurezza che consente di attenuare le vulnerabilità correlate alla memoria. A Internet Explorer 8, tutti Internet Explorer processi abilitano la funzionalità DEP/NX per impostazione predefinita.
 
-## <a name="manifestation-of-impact"></a>Manifesto di effetto
+## <a name="manifestation-of-impact"></a>Manifestazione di impatto
 
-Il kernel di Windows monitora l'esecuzione di un programma. Se il kernel rileva un tentativo di eseguire codice da una pagina di memoria non contrassegnata come eseguibile, il kernel interrompe l'esecuzione del programma, causando un "arresto anomalo". Si tratta di una misura di sicurezza che consente di garantire che le vulnerabilità correlate alla memoria (ad esempio, gli overflow del buffer) nell'applicazione non possano essere sfruttate per poter eseguire codice arbitrario.
+Il kernel di Windows monitora l'esecuzione di un programma. Se il kernel rileva un tentativo di eseguire codice da una pagina di memoria non contrassegnata come eseguibile, il kernel arresta l'esecuzione del programma, causando un "arresto anomalo". Si tratta di una misura di sicurezza per garantire che non sia possibile sfruttare le vulnerabilità correlate alla memoria ,ad esempio gli overflow del buffer, nell'applicazione per eseguire codice arbitrario.
 
-## <a name="end-user-mitigation"></a>Attenuazione End-User
+## <a name="end-user-mitigation"></a>End-User mitigazione
 
--   Installare una versione più recente del componente aggiuntivo o del Framework compatibile con DEP/NX.
--   Eseguire Internet Explorer con privilegi elevati come amministratore e quindi disabilitare DEP/NX usando la casella **di controllo Abilita protezione della memoria per attenuare gli attacchi online** nella scheda **Opzioni Internet**  /  **Avanzate** .
+-   Installare una versione successiva del componente aggiuntivo o del framework compatibile con DEP/NX.
+-   Eseguire Internet Explorer con privilegi elevati come amministratore e quindi disabilitare DEP/NX usando la casella di controllo Abilita protezione della memoria per attenuare gli attacchi **online** nella scheda **Opzioni Internet**  /   avanzate .
 
 ## <a name="developer-solution"></a>Soluzione per sviluppatori
 
-Compilare applicazioni usando le versioni più recenti dei Framework compatibili con DEP.
+Compilare applicazioni usando le versioni più recenti dei framework compatibili con DEP.
 
-## <a name="leveraging-feature-capabilities"></a>Sfruttando le funzionalità
+## <a name="leveraging-feature-capabilities"></a>Sfruttare le funzionalità delle funzionalità
 
--   Usare l'opzione del linker/NXCOMPAT per indicare la compatibilità DEP/NX
--   Scegli il codice in altre difese disponibili, ad esempio/GS (stack Defense), gestione eccezioni sicure (/SafeSEH) e ASLR (/DynamicBase)
+-   Usare l'opzione del linker /NXCOMPAT per indicare la compatibilità DEP/NX
+-   Optare per il codice in altre difese disponibili, ad esempio la difesa dello stack (/GS), la gestione sicura delle eccezioni (/SafeSEH) e ASLR (/DynamicBase)
 
-## <a name="compatibility-performance-reliability-and-usability-testing"></a>Compatibilità, prestazioni, affidabilità e test di usabilità
+## <a name="compatibility-performance-reliability-and-usability-testing"></a>Test di compatibilità, prestazioni, affidabilità e usabilità
 
--   Testare il codice con DEP/NX abilitato utilizzando la versione più recente di Internet Explorer rilasciata in Windows Vista SP1 o versioni successive.
--   Eseguire un test con Internet Explorer 7 in Windows Vista dopo aver abilitato l'opzione DEP/NX. Per abilitare DEP/NX per Internet Explorer 7, eseguire Internet Explorer come amministratore, quindi impostare la casella di controllo appropriata nella scheda strumenti > Internet opzioni > avanzate.
--   Eseguire lo strumento di test di compatibilità di Internet Explorer (IECTT), fornito con Application Compatibility Toolkit (ACT) per individuare eventuali problemi causati dalle modifiche DEP/NX.
+-   Testare il codice con DEP/NX abilitato usando la versione Internet Explorer versione più recente in Windows Vista SP1 o versione successiva.
+-   Testare con Internet Explorer 7 in Windows Vista dopo aver abilitato l'opzione DEP/NX. Per abilitare DEP/NX per Internet Explorer 7, eseguire Internet Explorer come amministratore, quindi impostare la casella di controllo appropriata nella scheda Strumenti > Opzioni Internet > Avanzate.
+-   Eseguire lo Internet Explorer Compatibility Test Tool (IECTT), fornito con Application Compatibility Toolkit (ACT) per individuare eventuali problemi potenziali dovuti alle modifiche DEP/NX.
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [Sicurezza di Internet Explorer 8 parte I: protezione della memoria DEP/NX](/archive/blogs/ie/)
+-   [Internet Explorer 8 Security Part I: DEP/NX Memory Protection](/archive/blogs/ie/)
 -   [Protezione esecuzione programmi](../memory/data-execution-prevention.md)
 -   [Nuove API NX aggiunte a Windows Vista SP1, Windows XP SP3 e Windows Server 2008 R2](/archive/blogs/michael_howard/)
--   [Download di Application Compatibility Toolkit](/windows-hardware/get-started/adk-install)
--   [Problemi noti relativi alle funzionalità di sicurezza di Internet Explorer](/previous-versions/windows/it-pro/windows-7/cc722079(v=ws.10))
+-   [Application Compatibility Toolkit Download](/windows-hardware/get-started/adk-install)
+-   [Problemi noti Internet Explorer funzionalità di sicurezza](/previous-versions/windows/it-pro/windows-7/cc722079(v=ws.10))
 
  
 

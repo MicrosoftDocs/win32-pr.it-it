@@ -1,17 +1,17 @@
 ---
-description: Si verifica quando viene visualizzato un pacchetto in aria.
+description: 'Evento InkOverlay.NewInAirPackets: si verifica quando viene visualizzato un pacchetto in air.'
 ms.assetid: 10dc1909-bfbc-4ea0-b77a-e33149205107
-title: Evento InkOverlay. NewInAirPackets (Msinkaut. h)
+title: Evento InkOverlay.NewInAirPackets (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ac030a2e32ecf662d811a3c91ccdc2dd3c5fd03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f39e568941b1af0727ad9c8464913325409b4604
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233182"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086709"
 ---
-# <a name="inkoverlaynewinairpackets-event"></a>Evento InkOverlay. NewInAirPackets
+# <a name="inkoverlaynewinairpackets-event"></a>Evento InkOverlay.NewInAirPackets
 
 Si verifica quando viene visualizzato un pacchetto in aria.
 
@@ -32,26 +32,26 @@ void NewInAirPackets(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**NewInAirPackets**](inkcollector-newinairpackets.md) .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato [**l'evento NewInAirPackets.**](inkcollector-newinairpackets.md)
 
 </dd> <dt>
 
-*PacketCount* \[ in\]
+*PacketCount* \[ Pollici\]
 </dt> <dd>
 
 Numero di pacchetti in aria ricevuti.
 
 </dd> <dt>
 
-*PacketData* \[ in uscita\]
+*PacketData* \[ in, out\]
 </dt> <dd>
 
 Matrice che contiene i dati selezionati per il pacchetto.
 
-Per ulteriori informazioni sulla struttura VARIANT, vedere [utilizzo della libreria com](using-the-com-library.md).
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -61,16 +61,16 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Viene creato un pacchetto in aria quando un utente sposta una penna accanto al tablet e il cursore si trova all'interno della finestra dell'oggetto agente di raccolta input penna oppure l'utente sposta il mouse all'interno della finestra associata dell'oggetto agente di raccolta input penna. Gli eventi [**NewInAirPackets**](inkcollector-newinairpackets.md) vengono generati rapidamente e il gestore eventi deve essere troppo veloce o le prestazioni subiscono problemi.
+Un pacchetto in air viene creato quando un utente sposta una penna vicino al tablet e il cursore si trova all'interno della finestra dell'oggetto dell'agente di raccolta input penna oppure l'utente sposta un mouse all'interno della finestra associata dell'oggetto dell'agente di raccolta input penna. [**Gli eventi NewInAirPackets**](inkcollector-newinairpackets.md) vengono generati rapidamente e il gestore eventi deve essere veloce o le prestazioni ne risentiranno.
 
-Questo metodo di evento è definito nelle \_ interfacce IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents dispatch (DISPINTERFACES) con ID DISPID \_ ICENewInAirPackets.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICENewInAirPackets.
 
-L'evento [**NewInAirPackets**](inkcollector-newinairpackets.md) viene generato anche in modalità selezione o cancellazione, non solo quando si inserisce input penna. A tale scopo, è necessario monitorare la modalità di modifica (che è responsabile dell'impostazione) e tenere presente la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma grazie a una maggiore consapevolezza degli eventi della piattaforma.
+[**L'evento NewInAirPackets**](inkcollector-newinairpackets.md) viene generato anche in modalità di selezione o cancellazione, non solo quando si inserisce l'input penna. A questo scopo, è necessario monitorare la modalità di modifica (che si è responsabili dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovare sulla piattaforma attraverso una maggiore consapevolezza degli eventi della piattaforma.
 
-Per impostare le proprietà contenute in questa matrice, utilizzare la proprietà [**DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice restituita dal parametro *PacketData* contiene i dati per tali proprietà.
+Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice *restituita dal parametro PacketData* contiene i dati per tali proprietà.
 
 > [!Note]  
-> Sebbene sia possibile modificare i dati dei pacchetti, queste modifiche non vengono mantenute o utilizzate.
+> Sebbene sia possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o utilizzate.
 
  
 
@@ -80,9 +80,9 @@ Per impostare le proprietà contenute in questa matrice, utilizzare la propriet�
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -91,7 +91,7 @@ Per impostare le proprietà contenute in questa matrice, utilizzare la propriet�
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
 [**Proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription)

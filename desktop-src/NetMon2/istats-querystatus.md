@@ -1,7 +1,7 @@
 ---
-description: Il metodo QueryStatus recupera lo stato dell'oggetto NPP.
+description: 'Metodo IStats::QueryStatus: il metodo QueryStatus recupera lo stato di NPP.'
 ms.assetid: 86b1c1ee-3a35-4603-9e93-fe09f886c32f
-title: 'Metodo IStats:: QueryStatus (Netmon. h)'
+title: Metodo IStats::QueryStatus (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 02e013d87734b61ad26b6563c402db1b8d4cb4f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7587c2fff56d305c0298948bdf8690fd801f3f3b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760838"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113479"
 ---
-# <a name="istatsquerystatus-method"></a>IStats:: QueryStatus (metodo)
+# <a name="istatsquerystatus-method"></a>Metodo IStats::QueryStatus
 
-Il metodo **QueryStatus** recupera lo stato dell'oggetto NPP.
+Il **metodo QueryStatus** recupera lo stato di NPP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,16 +40,16 @@ HRESULT STDMETHODCALLTYPE QueryStatus(
 
 <dl> <dt>
 
-*pNetworkStatus* \[ out\]
+*pNetworkStatus* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [NETWORKSTATUS](networkstatus.md) restituita che indica lo stato corrente (acquisizione, pausa, arresto e così via) dell'oggetto NPP. È responsabilità dell'applicazione allocare e liberare la memoria per la struttura **NETWORKSTATUS** .
+Puntatore a una struttura [NETWORKSTATUS](networkstatus.md) restituita che indica lo stato corrente (acquisizione, sospensione, arresto e così via) del servizio NPP. È responsabilità dell'applicazione allocare e liberare la memoria per la **struttura NETWORKSTATUS.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è il codice di errore seguente:
 
@@ -57,7 +57,7 @@ Se il metodo ha esito negativo, il valore restituito è il codice di errore segu
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                              |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_parametro NMERR non valido \_**</dt> </dl> | Il parametro *pNetworkStatus* non punta a una struttura [NETWORKSTATUS](networkstatus.md) valida. Allocare memoria per questa struttura e chiamare di nuovo il metodo **IStats:: QueryStatus** .<br/> |
+| <dl> <dt>**PARAMETRO NON \_ VALIDO DI NMERR \_**</dt> </dl> | Il *parametro pNetworkStatus* non punta a una struttura [NETWORKSTATUS](networkstatus.md) valida. Allocare memoria per questa struttura e chiamare nuovamente il **metodo IStats::QueryStatus.**<br/> |
 
 
 
@@ -65,7 +65,7 @@ Se il metodo ha esito negativo, il valore restituito è il codice di errore segu
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere chiamato in qualsiasi momento dopo la chiamata del metodo [CreateNPPInterface](createnppinterface.md) . Può essere chiamato per verificare se l'oggetto NPP è connesso alla rete, per individuare lo stato dell'acquisizione corrente e per verificare se sono presenti trigger in sospeso. Prima di chiamare questo metodo, tuttavia, è necessario allocare la memoria necessaria per la struttura [NETWORKSTATUS](networkstatus.md) e liberare tale memoria quando la struttura non è più necessaria.
+Questo metodo può essere chiamato in qualsiasi momento dopo la [chiamata del metodo CreateNPPInterface.](createnppinterface.md) Può essere chiamato per verificare se il NPP è connesso alla rete, per individuare lo stato dell'acquisizione corrente e per verificare se sono in sospeso trigger. Prima di chiamare questo metodo, tuttavia, è necessario allocare la memoria necessaria per la struttura [NETWORKSTATUS](networkstatus.md) e liberare tale memoria quando la struttura non è più necessaria.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Questo metodo può essere chiamato in qualsiasi momento dopo la chiamata del met
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -84,7 +84,7 @@ Questo metodo può essere chiamato in qualsiasi momento dopo la chiamata del met
 
 <dl> <dt>
 
-[IStats](istats.md)
+[IStat](istats.md)
 </dt> <dt>
 
 [CreateNPPInterface](createnppinterface.md)

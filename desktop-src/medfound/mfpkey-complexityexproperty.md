@@ -1,17 +1,17 @@
 ---
-description: Specifica la complessità dell'algoritmo del codificatore.
+description: "MFPKEY_COMPLEXITYEX proprietà : specifica la complessità dell'algoritmo del codificatore."
 ms.assetid: abfc84d5-954f-4524-b3cb-5c5b9cfc7fa0
-title: Proprietà MFPKEY_COMPLEXITYEX (Wmcodecdsp. h)
+title: MFPKEY_COMPLEXITYEX proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34b935f41ce14a77a135d0bbc8ad6dec2933b570
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20579bcf7a06dc11f47cbef6a53629f3a36b48dc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227022"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108087609"
 ---
-# <a name="mfpkey_complexityex-property"></a>\_Proprietà COMPLEXITYEX di MFPKEY
+# <a name="mfpkey_complexityex-property"></a>Proprietà MFPKEY \_ COMPLEXITYEX
 
 Specifica la complessità dell'algoritmo del codificatore.
 
@@ -29,10 +29,10 @@ Il valore predefinito dipende dalla versione del codificatore video, come illust
 
 
 
-| Versione codificatore                 | Valore predefinito |
+| Versione del codificatore                 | Valore predefinito |
 |---------------------------------|---------------|
-| Codificatore Windows Media Video 9   | 3             |
-| Codificatore Windows Media Video 7/8 | 1             |
+| codificatore Windows Media Video 9   | 3             |
+| Windows Media Video codificatore 7/8 | 1             |
 
 
 
@@ -44,10 +44,10 @@ I valori possibili dipendono dalla versione del codificatore video, come illustr
 
 
 
-| Versione codificatore                 | Valori possibili  |
+| Versione del codificatore                 | Valori possibili  |
 |---------------------------------|------------------|
-| Codificatore Windows Media Video 9   | 0, 1, 2, 3, 4, 5 |
-| Codificatore Windows Media Video 7/8 | 0, 1             |
+| codificatore Windows Media Video 9   | 0, 1, 2, 3, 4, 5 |
+| Windows Media Video codificatore 7/8 | 0, 1             |
 
 
 
@@ -55,7 +55,7 @@ I valori possibili dipendono dalla versione del codificatore video, come illustr
 
 ## <a name="remarks"></a>Commenti
 
-I valori più bassi fanno sì che il codec usi algoritmi di codifica meno complessi. Sebbene gli algoritmi più semplici producano un output di qualità inferiore, il processo di codifica è più veloce e richiede una minore potenza di elaborazione. Questo può essere importante quando si codifica il contenuto da un'origine live, perché il codificatore deve elaborare gli input in modo sufficientemente rapido da restare al passo con l'origine.
+I valori inferiori determinano l'uso di algoritmi di codifica meno complessi da parte del codec. Anche se gli algoritmi più semplici producono output di qualità inferiore, il processo di codifica è più veloce e richiede meno potenza di elaborazione. Questo può essere importante quando si codifica il contenuto da un'origine live perché il codificatore deve elaborare gli input in modo sufficientemente veloce da rimanere al passo con l'origine.
 
 Qualsiasi valore assegnato a questa proprietà verrà ignorato se la proprietà [MFPKEY \_ COMPRESSIONOPTIMIZATIONTYPE](mfpkey-compressionoptimizationtypeproperty.md) è impostata su 1. In tal caso, MFPKEY \_ COMPLEXITYEX viene impostato automaticamente su 3.
 
@@ -65,9 +65,9 @@ Qualsiasi valore assegnato a questa proprietà verrà ignorato se la proprietà 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Qualsiasi valore assegnato a questa proprietà verrà ignorato se la proprietà 
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

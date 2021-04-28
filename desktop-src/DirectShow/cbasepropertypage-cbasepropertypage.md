@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CBasePropertyPage.CBasePropertyPage : metodo costruttore.'
 ms.assetid: 5d9863e7-fdd9-4df2-a603-34a240a2286c
-title: Costruttore CBasePropertyPage. CBasePropertyPage (Cprop. h)
+title: Costruttore CBasePropertyPage.CBasePropertyPage (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 915bc42cfb7f152cc061dab76caede6c998edf8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95821062b6b1199ea98a5329934d76e2197901d4
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324793"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119949"
 ---
-# <a name="cbasepropertypagecbasepropertypage-constructor"></a>Costruttore CBasePropertyPage. CBasePropertyPage
+# <a name="cbasepropertypagecbasepropertypage-constructor"></a>Costruttore CBasePropertyPage.CBasePropertyPage
 
 Metodo del costruttore.
 
@@ -45,28 +45,28 @@ CBasePropertyPage(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Stringa che contiene il nome dell'oggetto, a scopo di debug. Per ulteriori informazioni, vedere [**CBaseObject:: CBaseObject**](cbaseobject-cbaseobject.md).
+Stringa che contiene il nome dell'oggetto a scopo di debug. Per altre informazioni, vedere [**CBaseObject::CBaseObject**](cbaseobject-cbaseobject.md).
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore all'interfaccia **IUnknown** di aggregazione.
+Puntatore all'interfaccia **IUnknown aggregata.**
 
 </dd> <dt>
 
-*DialogId* 
+*Id dialogo* 
 </dt> <dd>
 
 ID risorsa per la finestra di dialogo.
 
 </dd> <dt>
 
-*IDQualifica* 
+*TitleId* 
 </dt> <dd>
 
 ID risorsa per la stringa che contiene il titolo della finestra di dialogo.
@@ -89,8 +89,8 @@ CMyProp::CMyProp(IUnknown *pUnk) :
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (include Streams.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

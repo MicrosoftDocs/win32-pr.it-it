@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi di caricamento di immagini. La sintassi seguente è semplificata dal codice MOF.
+description: 'Image_V0 classe: questa classe è la classe padre per gli eventi di caricamento delle immagini. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: d35b14c7-ab76-4fed-a1cc-6215a13e8451
-title: Classe Image_V0
+title: Image_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f92e04d2557d0805e4616d8ad71aacbacc9b3300
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e13cb3969fe09639bab7f9e39c46030d6ccd3576
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225914"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106514"
 ---
-# <a name="image_v0-class"></a>Image \_ V0 (classe)
+# <a name="image_v0-class"></a>Classe Image \_ V0
 
-Questa classe è la classe padre per gli eventi di caricamento di immagini.
+Questa classe è la classe padre per gli eventi di caricamento delle immagini.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -36,7 +36,7 @@ class Image_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La **classe \_ V0 dell'immagine** non definisce membri.
+La **classe Image \_ V0** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,13 +53,13 @@ La **classe \_ V0 dell'immagine** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Immagine**](image.md)
 </dt> <dt>
 
-[**Image \_ V0 \_ Load**](image-v0-load.md)
+[**Caricamento \_ immagine V0 \_**](image-v0-load.md)
 </dt> <dt>
 
 [**Immagine \_ V1**](image-v1.md)

@@ -1,7 +1,7 @@
 ---
-description: Ridimensiona la matrice corrente sull'origine dell'oggetto.
+description: "Metodo ID3DXMATRIXStack::ScaleLocal (D3DX10.h): ridimensiona la matrice corrente sull'origine dell'oggetto."
 ms.assetid: 748fce3a-a33c-4975-bbf0-dd3167a036f1
-title: 'Metodo ID3DXMATRIXStack:: ScaleLocal (D3DX10. h)'
+title: Metodo ID3DXMATRIXStack::ScaleLocal (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 868aae418ebedbc54cb8f15ba4fa4e11d47c7f50
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3961db0794703e3974dbd92d8eae8293173c2354
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886324"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107779"
 ---
-# <a name="id3dxmatrixstackscalelocal-method-d3dx10h"></a>Metodo ID3DXMATRIXStack:: ScaleLocal (D3DX10. h)
+# <a name="id3dxmatrixstackscalelocal-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::ScaleLocal (D3DX10.h)
 
-Ridimensiona la matrice corrente sull'origine dell'oggetto.
+Ridimensionare la matrice corrente sull'origine dell'oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,25 +45,25 @@ HRESULT ScaleLocal(
 *x* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente di scala nella direzione x.
+Componente di ridimensionamento nella direzione x.
 
 </dd> <dt>
 
 *y* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente di scala nella direzione y.
+Componente di ridimensionamento nella direzione y.
 
 </dd> <dt>
 
 *z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Componente di ridimensionamento nella direzione z.
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo consente di moltiplicare a sinistra la matrice corrente con la matrice di scala calcolata. La trasformazione riguarda l'origine locale dell'oggetto.
+Questo metodo moltiplica a sinistra la matrice corrente con la matrice di scala calcolata. La trasformazione riguarda l'origine locale dell'oggetto.
 
 
 ```
@@ -94,8 +94,8 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

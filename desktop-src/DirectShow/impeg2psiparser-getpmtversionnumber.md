@@ -1,7 +1,7 @@
 ---
-description: L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non si tratta di un'API DirectShow supportata.
+description: "Metodo IMpeg2PsiParser::GetPmtVersionNumber: l'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API DirectShow supportata."
 ms.assetid: 50113d6b-4e10-4dc9-aaef-f67c6918a2de
-title: 'Metodo IMpeg2PsiParser:: GetPmtVersionNumber'
+title: Metodo IMpeg2PsiParser::GetPmtVersionNumber
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3af4b20067af52216181848f4cc63ac5a7784ba9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6f4fd8d0eba88ba1df54a1cc058bc0a2951b9a19
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303816"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084559"
 ---
-# <a name="impeg2psiparsergetpmtversionnumber-method"></a>Metodo IMpeg2PsiParser:: GetPmtVersionNumber
+# <a name="impeg2psiparsergetpmtversionnumber-method"></a>Metodo IMpeg2PsiParser::GetPmtVersionNumber
 
-L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non si tratta di un'API DirectShow supportata.
+L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API DirectShow supportata.
 
-Il `GetPmtVersionNumber` metodo recupera il \_ campo del numero di versione da un PMT specificato. Il numero di versione viene incrementato ogni volta che viene modificata la definizione del programma.
+Il `GetPmtVersionNumber` metodo recupera il campo del numero di versione da un \_ pmt specificato. Il numero di versione viene incrementato ogni volta che cambia la definizione del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT GetPmtVersionNumber(
 
 <dl> <dt>
 
-*wProgramNumber* \[ in\]
+*wProgramNumber* \[ Pollici\]
 </dt> <dd>
 
-Specifica il \_ campo numero di programma del programma, come specificato in Pat.
+Specifica il campo \_ del numero di programma del programma, come specificato nel campo PAT.
 
 </dd> <dt>
 
-*pPmtVersion* \[ out\]
+*pPmtVersion* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve il campo del numero di versione \_ .
+Puntatore a una variabile che riceve il campo del \_ numero di versione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT** . I valori possibili includono, ma non sono limitati, i valori mostrati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non solo, i valori illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Esito positivo.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Operazione completata.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il metodo restituisce un valore **HRESULT** . I valori possibili includono, ma n
 
 ## <a name="remarks"></a>Commenti
 
-Usare il metodo **GetRecordProgramNumber** per ottenere il numero di programma.
+Usare il **metodo GetRecordProgramNumber** per ottenere il numero di programma.
 
 ## <a name="see-also"></a>Vedi anche
 

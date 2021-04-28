@@ -1,7 +1,7 @@
 ---
-description: Rimuove la matrice corrente dall'inizio dello stack.
+description: "Metodo ID3DXMATRIXStack::P op (D3DX10.h): rimuove la matrice corrente dall'inizio dello stack."
 ms.assetid: f4e4ff5d-a7a1-4f87-9b7e-53b9d044ba51
-title: 'ID3DXMATRIXStack: Metodo op:P (D3DX10. h)'
+title: Metodo ID3DXMATRIXStack::P op (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a9a7b88cc749ef61c8b04395497fcc00ea9b36ca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 19c87cbd5fd81100682225aa16256573c7f95be0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323661"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107929"
 ---
-# <a name="id3dxmatrixstackpop-method-d3dx10h"></a>ID3DXMATRIXStack: Metodo op:P (D3DX10. h)
+# <a name="id3dxmatrixstackpop-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::P op (D3DX10.h)
 
 Rimuove la matrice corrente dall'inizio dello stack.
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che questo metodo decrementa il numero di elementi nello stack di 1, rimuovendo in effetti la matrice corrente dalla parte superiore dello stack e innalzando di livello una matrice all'inizio dello stack. Se il numero corrente di elementi nello stack è 0, questo metodo restituisce senza eseguire alcuna azione. Se il numero corrente di elementi nello stack è 1, questo metodo svuota lo stack.
+Si noti che questo metodo decrementa il numero di elementi nello stack di 1, rimuovendo in modo efficace la matrice corrente dall'inizio dello stack e innalzando di livello una matrice all'inizio dello stack. Se il numero corrente di elementi nello stack è 0, questo metodo restituisce senza eseguire alcuna azione. Se il conteggio corrente degli elementi nello stack è 1, questo metodo svuota lo stack.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Si noti che questo metodo decrementa il numero di elementi nello stack di 1, rim
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

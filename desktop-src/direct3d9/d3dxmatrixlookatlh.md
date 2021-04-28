@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di aspetto a sinistra.
+description: 'Funzione D3DXMatrixLookAtLH (D3dx9math.h): compila una matrice di tipo left-handed e look-at.'
 ms.assetid: bf34d3d8-725d-4fc1-b4c8-6c98f9dac329
-title: Funzione D3DXMatrixLookAtLH (D3dx9math. h)
+title: Funzione D3DXMatrixLookAtLH (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 97fa7acdf467761bd3b3cfbc023662e9b3368b98
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 94a423e700c4a42e2ae7f7e522d83a5a4bd9bf3a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323244"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107589"
 ---
-# <a name="d3dxmatrixlookatlh-function-d3dx9mathh"></a>Funzione D3DXMatrixLookAtLH (D3dx9math. h)
+# <a name="d3dxmatrixlookatlh-function-d3dx9mathh"></a>Funzione D3DXMatrixLookAtLH (D3dx9math.h)
 
-Compila una matrice di aspetto a sinistra.
+Compila una matrice di tipo left-handed e look-at.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ D3DXMATRIX* D3DXMatrixLookAtLH(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pEye* \[ in\]
+*pEye* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) che definisce il punto d'occhio. Questo valore viene utilizzato nella conversione.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il punto dell'occhio. Questo valore viene usato nella conversione.
 
 </dd> <dt>
 
-*pAt* \[ in\]
+*pAt* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) che definisce la destinazione di ricerca della fotocamera.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce la destinazione di ricerca della fotocamera.
 
 </dd> <dt>
 
-*cucciolo* \[ in\]
+*pUp* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) che definisce il mondo corrente, in genere \[ 0, 1, 0 \] .
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il mondo corrente verso l'alto, in genere \[ 0, 1, \] 0.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) che definisce il mond
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) che è una matrice di aspetto a sinistra.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che è una matrice di tipo left-handed.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixLookAtLH** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixLookAtLH** può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -111,8 +111,8 @@ yaxis = cross(zaxis, xaxis)
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

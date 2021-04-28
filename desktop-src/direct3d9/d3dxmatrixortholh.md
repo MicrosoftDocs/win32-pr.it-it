@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di proiezione ortogonale a sinistra.
+description: 'Funzione D3DXMatrixOrthoLH (D3dx9math.h): crea una matrice di proiezione ortografica mancino.'
 ms.assetid: e42151bd-2302-491b-a211-7d5a4b8e437f
-title: Funzione D3DXMatrixOrthoLH (D3dx9math. h)
+title: Funzione D3DXMatrixOrthoLH (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4aaf4a1a770ba0200a6afe389d37e248b9f4c7de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5492a6caba87025d83562c0327ac0e1f5a76f269
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355424"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107499"
 ---
-# <a name="d3dxmatrixortholh-function-d3dx9mathh"></a>Funzione D3DXMatrixOrthoLH (D3dx9math. h)
+# <a name="d3dxmatrixortholh-function-d3dx9mathh"></a>Funzione D3DXMatrixOrthoLH (D3dx9math.h)
 
-Compila una matrice di proiezione ortogonale a sinistra.
+Compila una matrice di proiezione ortografica mancino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,19 +44,19 @@ D3DXMATRIX* D3DXMatrixOrthoLH(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](../direct3d10/d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Larghezza del volume di visualizzazione.
 
@@ -65,27 +65,27 @@ Larghezza del volume di visualizzazione.
 *h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Altezza del volume di visualizzazione.
 
 </dd> <dt>
 
-*Zn* \[ in\]
+*zn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore z minimo del volume di visualizzazione noto come z-near.
+Valore z minimo del volume di visualizzazione, definito z-near.
 
 </dd> <dt>
 
-*ZF* \[ in\]
+*zf* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore z massimo del volume di visualizzazione a cui si fa riferimento come z-lung.
+Valore z massimo del volume di visualizzazione, definito z-far.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Valore z massimo del volume di visualizzazione a cui si fa riferimento come z-lu
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](../direct3d10/d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della funzione **D3DXMatrixOrthoLH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
+Tutti i parametri della **funzione D3DXMatrixOrthoLH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixOrthoLH** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixOrthoLH** può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -119,8 +119,8 @@ Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

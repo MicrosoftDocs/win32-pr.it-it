@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetIDsOfNames esegue il mapping di un set di nomi a un set di DISPID corrispondente.
+description: 'Metodo CBaseDispatch.GetIDsOfNames: il metodo GetIDsOfNames esegue il mapping di un set di nomi a un set corrispondente di DISPID.'
 ms.assetid: 0c0a2726-e89a-4eaf-aab0-e7e9e82e3c34
-title: Metodo CBaseDispatch. GetIDsOfNames (Ctlutil. h)
+title: Metodo CBaseDispatch.GetIDsOfNames (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cf11e4aa298f924b69c299c2f411dde88e28e5b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f3b718c95d588ffdc7fa63902e6b26ffbf11fd6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324965"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099919"
 ---
-# <a name="cbasedispatchgetidsofnames-method"></a>CBaseDispatch. GetIDsOfNames, metodo
+# <a name="cbasedispatchgetidsofnames-method"></a>Metodo CBaseDispatch.GetIDsOfNames
 
-Il `GetIDsOfNames` metodo esegue il mapping di un set di nomi a un set di DISPID corrispondente.
+Il `GetIDsOfNames` metodo esegue il mapping di un set di nomi a un set corrispondente di DISPID.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT GetIDsOfNames(
 
 <dl> <dt>
 
-*riid* 
+*Riid* 
 </dt> <dd>
 
 Riferimento a un identificatore di interfaccia (IID) che specifica l'interfaccia.
@@ -60,38 +60,38 @@ Indirizzo di una matrice di stringhe di caratteri wide che contengono i nomi di 
 
 </dd> <dt>
 
-*CNAME* 
+*cNames* 
 </dt> <dd>
 
-Dimensione della matrice specificata dal parametro *rgszNames* .
+Dimensione della matrice specificata dal *parametro rgszNames.*
 
 </dd> <dt>
 
 *lcid* 
 </dt> <dd>
 
-Contesto delle impostazioni locali in cui interpretare i nomi. Può essere **null**.
+Contesto delle impostazioni locali in cui interpretare i nomi. Può essere **NULL.**
 
 </dd> <dt>
 
 *rgdispid* 
 </dt> <dd>
 
-Puntatore a una matrice che riceve i DISPID. Ogni elemento di riceve un identificatore che corrisponde a uno dei nomi passati nel parametro *rgszNames* .
+Puntatore a una matrice che riceve i DISPID. Ogni elemento di riceve un identificatore che corrisponde a uno dei nomi passati nel *parametro rgszNames.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                         | Descrizione                                         |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                | Esito positivo.<br/>                                 |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>       | Memoria insufficiente.<br/>                     |
-| <dl> <dt>**DISP \_ E \_ unknowname**</dt> </dl> | Uno o più nomi non sono noti.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Operazione completata.<br/>                                 |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>       | Memoria insufficiente.<br/>                     |
+| <dl> <dt>**DISP \_ E \_ UNKNOWNNAME**</dt> </dl> | Uno o più nomi non erano noti.<br/> |
 
 
 
@@ -99,9 +99,9 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo si comporta come il metodo **IDispatch:: GetIDsOfNames** , ma il parametro *riid* specifica l'interfaccia su cui recuperare i DISPID. Nella versione di **IDispatch** , il parametro *riid* è riservato.
+Questo metodo si comporta come **il metodo IDispatch::GetIDsOfNames,** ma il *parametro riid* specifica l'interfaccia in cui recuperare i DISPID. Nella versione **IDispatch** il *parametro riid* è riservato.
 
-Se il metodo restituisce DISP \_ E \_ unknowname, i DISPID restituiti contengono DISPID \_ sconosciuto per ogni voce che corrisponde a un nome sconosciuto.
+Se il metodo restituisce DISP E UNKNOWNNAME, i DISPID restituiti contengono DISPID UNKNOWN per ogni voce \_ che corrisponde a un nome \_ \_ sconosciuto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,8 +109,8 @@ Se il metodo restituisce DISP \_ E \_ unknowname, i DISPID restituiti contengono
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

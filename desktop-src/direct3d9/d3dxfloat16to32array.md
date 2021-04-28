@@ -1,7 +1,7 @@
 ---
-description: Converte una matrice di float a 16 bit in float a 32 bit.
+description: 'Funzione D3DXFloat16To32Array (D3dx9math.h): converte una matrice di valori float a 16 bit in float a 32 bit.'
 ms.assetid: cabb2888-76e4-403b-99ab-f7d62478bf43
-title: Funzione D3DXFloat16To32Array (D3dx9math. h)
+title: Funzione D3DXFloat16To32Array (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6760ce36341883c26030df91d3d46b5b21fdb012
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 171b148b112cf2064d0d9a3f89451ab0fc8c2d75
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322690"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107599"
 ---
-# <a name="d3dxfloat16to32array-function-d3dx9mathh"></a>Funzione D3DXFloat16To32Array (D3dx9math. h)
+# <a name="d3dxfloat16to32array-function-d3dx9mathh"></a>Funzione D3DXFloat16To32Array (D3dx9math.h)
 
-Converte una matrice di float a 16 bit in float a 32 bit.
+Converte una matrice di valori float a 16 bit in float a 32 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ FLOAT* D3DXFloat16To32Array(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore alla matrice di float a 32 bit.
+Puntatore alla matrice di valori float a 32 bit.
 
 </dd> <dt>
 
-*Aggiungi* \[ in\]
+*pIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXFLOAT16**](d3dxfloat16.md) \***
@@ -63,7 +63,7 @@ Puntatore a una matrice di float a 16 bit.
 *n* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di elementi nella matrice.
 
@@ -71,9 +71,9 @@ Numero di elementi nella matrice.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore a una matrice di float a 32 bit.
+Puntatore a una matrice di valori float a 32 bit.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Puntatore a una matrice di float a 32 bit.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
