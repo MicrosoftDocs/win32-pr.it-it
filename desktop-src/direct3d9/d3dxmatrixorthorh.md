@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di proiezione ortogonale a destra.
+description: 'Funzione D3DXMatrixOrthoRH (D3dx9math.h): crea una matrice di proiezione ortografica con la mano destra.'
 ms.assetid: 6b9b50d5-0307-4fc7-a28d-8f42d2a21bf0
-title: Funzione D3DXMatrixOrthoRH (D3dx9math. h)
+title: Funzione D3DXMatrixOrthoRH (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 00df0ee06768e4d57a68291dd1716e4a4574507e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d34a8379851d80ae8734c7f32cc0dc5977af2088
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322130"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107439"
 ---
-# <a name="d3dxmatrixorthorh-function-d3dx9mathh"></a>Funzione D3DXMatrixOrthoRH (D3dx9math. h)
+# <a name="d3dxmatrixorthorh-function-d3dx9mathh"></a>Funzione D3DXMatrixOrthoRH (D3dx9math.h)
 
-Compila una matrice di proiezione ortogonale a destra.
+Compila una matrice di proiezione ortogonale con la mano destra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,19 +44,19 @@ D3DXMATRIX* D3DXMatrixOrthoRH(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](../direct3d10/d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *w* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Larghezza del volume di visualizzazione.
 
@@ -65,25 +65,25 @@ Larghezza del volume di visualizzazione.
 *h* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Altezza del volume di visualizzazione.
 
 </dd> <dt>
 
-*Zn* \[ in\]
+*zn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore z minimo del volume di visualizzazione.
 
 </dd> <dt>
 
-*ZF* \[ in\]
+*zf* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore z massimo del volume di visualizzazione.
 
@@ -93,13 +93,13 @@ Valore z massimo del volume di visualizzazione.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore al [**D3DXMATRIX**](../direct3d10/d3d10-d3dxmatrix.md)risultante.
+Puntatore all'oggetto [**D3DXMATRIX risultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della funzione **D3DXMatrixOrthoRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
+Tutti i parametri della **funzione D3DXMatrixOrthoRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixOrthoRH** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixOrthoRH** può essere usata come parametro per un'altra funzione.
 
 Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
@@ -119,8 +119,8 @@ Questa funzione usa la formula seguente per calcolare la matrice restituita.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: TakeOwnerShip&\# 8194; Il metodo della classe WMI ottiene la proprietà del file logico specificato nel percorso dell'oggetto.
+description: Metodo TakeOwnerShip della classe Win32_ShortcutFile - TakeOwnerShip&\# 8194; Il metodo della classe WMI ottiene la proprietà del file logico specificato nel percorso dell'oggetto.
 ms.assetid: 1a8ff156-50b2-4550-abcc-7a6ae0e4630f
 ms.tgt_platform: multiple
-title: Metodo TakeOwnerShip della classe Win32_ShortcutFile
+title: Metodo TakeOwnerShip della Win32_ShortcutFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5da7a237ae1943e65bc1cc757d5c4a16c6df8900
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 36364a55276842518480c3d3d37c57c3ae0a06ba
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965957"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085999"
 ---
-# <a name="takeownership-method-of-the-win32_shortcutfile-class"></a>Metodo TakeOwnerShip della \_ classe ShortcutFile Win32
+# <a name="takeownership-method-of-the-win32_shortcutfile-class"></a>Metodo TakeOwnerShip della classe ShortcutFile Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnership** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnership** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenute nella directory.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnerShip** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori interi seguenti.
+Restituisce uno dei seguenti valori interi.
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-La richiesta è stata completata.
+La richiesta ha avuto esito positivo.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ShortcutFile Win32**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

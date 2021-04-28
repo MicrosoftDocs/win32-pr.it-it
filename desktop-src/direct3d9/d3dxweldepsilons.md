@@ -1,7 +1,7 @@
 ---
-description: Specifica i valori di tolleranza per ogni componente vertex quando si confrontano i vertici per determinare se sono abbastanza simili per essere saldati insieme.
+description: 'Struttura D3DXWELDEPSILONS: specifica i valori di tolleranza per ogni componente vertice durante il confronto dei vertici per determinare se sono abbastanza simili da essere uniti.'
 ms.assetid: 534903da-ff65-4629-9be9-66c9daed6ef5
-title: Struttura D3DXWELDEPSILONS (D3dx9mesh. h)
+title: Struttura D3DXWELDEPSILONS (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 6b6673e16b153f53baf17967b7f33c4bcb40d518
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bb11e6f5481b1adf7cc1bac58edf40d4ac770e92
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322853"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115499"
 ---
 # <a name="d3dxweldepsilons-structure"></a>Struttura D3DXWELDEPSILONS
 
-Specifica i valori di tolleranza per ogni componente vertex quando si confrontano i vertici per determinare se sono abbastanza simili per essere saldati insieme.
+Specifica i valori di tolleranza per ogni componente vertice durante il confronto dei vertici per determinare se sono sufficientemente simili da essere uniti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ typedef struct _D3DXWELDEPSILONS {
 **Position**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -62,18 +62,18 @@ Posizione
 **BlendWeights**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Spessore di Blend
+Spessore di blend
 
 </dd> <dt>
 
 **Normal**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -84,18 +84,18 @@ Normale
 **PSize**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valore dimensioni punto
+Valore delle dimensioni in punti
 
 </dd> <dt>
 
 **Speculare**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -106,7 +106,7 @@ Valore di illuminazione speculare
 **Diffusa**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -117,7 +117,7 @@ Valore di illuminazione diffusa
 **Texcoord**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -128,7 +128,7 @@ Otto coordinate di trama
 **Tangente**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -139,7 +139,7 @@ Tangente
 **Binormale**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -150,17 +150,17 @@ Binormale
 **TessFactor**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Fattore a mosaico
+Fattore a tessellazione
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo LPD3DXWELDEPSILONS è definito come un puntatore alla struttura **D3DXWELDEPSILONS** .
+Il tipo LPD3DXWELDEPSILONS viene definito come puntatore alla **struttura D3DXWELDEPSILONS.**
 
 
 ```
@@ -175,7 +175,7 @@ typedef D3DXWELDEPSILONS *LPD3DXWELDEPSILONS;
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

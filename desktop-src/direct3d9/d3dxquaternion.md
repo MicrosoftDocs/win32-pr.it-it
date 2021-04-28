@@ -1,7 +1,7 @@
 ---
-description: Descrive un quaternione.
+description: 'Struttura D3DXQUATERNION (D3dx9math.h): descrive un quaternione.'
 ms.assetid: 3d88ed17-5b0a-46d5-8fe6-d66e1fa26c13
-title: Struttura D3DXQUATERNION (D3dx9math. h)
+title: Struttura D3DXQUATERNION (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 59d3f147e8eb233b9197394bad738d19d9ceba5d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f67acc6389ce809c1aa5f4987d9502735fe61e49
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322499"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115679"
 ---
-# <a name="d3dxquaternion-structure-d3dx9mathh"></a>Struttura D3DXQUATERNION (D3dx9math. h)
+# <a name="d3dxquaternion-structure-d3dx9mathh"></a>Struttura D3DXQUATERNION (D3dx9math.h)
 
 Descrive un quaternione.
 
@@ -45,7 +45,7 @@ typedef struct D3DXQUATERNION {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,7 +56,7 @@ Componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -64,10 +64,10 @@ Componente y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,17 +78,17 @@ Componente z.
 **w**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Il componente w.
+Componente w.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I quaternioni aggiungono un quarto elemento ai \[ valori x, y, z \] che definiscono un vettore, ottenendo vettori 4D arbitrari. Tuttavia, di seguito viene illustrato il modo in cui ogni elemento di un quaternione dell'unità è correlato a una rotazione dell'angolo dell'asse (dove q rappresenta un quaternione di unità (x, y, z, w), l'asse viene normalizzato e theta è la rotazione di CCW desiderata sull'asse):
+I quaternioni aggiungono un quarto elemento ai valori x, y, z che definiscono un vettore, con conseguente vettori \[ \] 4D arbitrari. Tuttavia, l'esempio seguente illustra come ogni elemento di un quaternione di unità è correlato a una rotazione asse-angolo (dove q rappresenta un quaternione unità (x, y, z, w), l'asse viene normalizzato e theta è la rotazione CCW desiderata intorno all'asse:
 
 
 ```
@@ -100,7 +100,7 @@ q.w = cos(theta/2)
 
 
 
-I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le [**estensioni D3DXQUATERNION**](d3dxquaternion-extensions.md), che implementano costruttori di overload e operatori di assegnazione, unario e binari (inclusi uguaglianza).
+I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le estensioni [**D3DXQUATERNION**](d3dxquaternion-extensions.md), che implementano costruttori di overload e operatori di assegnazione, unario e binario (inclusa l'uguaglianza).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,7 +108,7 @@ I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei t
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

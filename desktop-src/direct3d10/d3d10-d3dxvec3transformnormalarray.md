@@ -1,7 +1,7 @@
 ---
-description: Trasforma una matrice (x, y, z, 0) in base a una matrice specificata.
+description: 'Funzione D3DXVec3TransformNormalArray (D3DX10Math.h): trasforma una matrice (x, y, z, 0) da una determinata matrice.'
 ms.assetid: 7f0a41ce-bd3a-4e35-9a5d-8178a4e7bd44
-title: Funzione D3DXVec3TransformNormalArray (D3DX10Math. h)
+title: Funzione D3DXVec3TransformNormalArray (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: facb5591becd27d3fff283e8d531118ca433d5d2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d391717056d1cd8a6957a6647612ed8b1ca65e41
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322390"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103049"
 ---
-# <a name="d3dxvec3transformnormalarray-function-d3dx10mathh"></a>Funzione D3DXVec3TransformNormalArray (D3DX10Math. h)
+# <a name="d3dxvec3transformnormalarray-function-d3dx10mathh"></a>Funzione D3DXVec3TransformNormalArray (D3DX10Math.h)
 
 Trasforma una matrice (x, y, z, 0) in base a una matrice specificata.
 
@@ -44,25 +44,25 @@ D3DXVECTOR3* D3DXVec3TransformNormalArray(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore alla matrice [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**matrice D3DXVECTOR3**](d3d10-d3dxvector3.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*Outstride* \[ in\]
+*OutStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra i vettori nel flusso di dati di output.
+Stride tra vettori nel flusso di dati di output.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -71,28 +71,28 @@ Puntatore alla matrice D3DXVECTOR3 di origine.
 
 </dd> <dt>
 
-*VStride* \[ in\]
+*VStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra i vettori nel flusso di dati di input.
+Stride tra vettori nel flusso di dati di input.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3d10-d3dxmatrix.md) origine.
 
 </dd> <dt>
 
 *n* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di elementi nella matrice.
 
@@ -106,11 +106,11 @@ Puntatore a una matrice D3DXVECTOR3 che rappresenta la matrice trasformata.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione trasforma il vettore (pV->x, pV->y, pV->z, 0) dalla matrice a cui punta il pM.
+Questa funzione trasforma il vettore (pV->x, pV->y, pV->z, 0) dalla matrice a cui punta pM.
 
-Se si vuole trasformare un normale, la matrice passata a questa funzione deve essere la trasposizione dell'inverso della matrice da usare per trasformare un punto.
+Se si vuole trasformare una normale, la matrice passata a questa funzione deve essere la trasposizione dell'inverso della matrice da usare per trasformare un punto.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXVec3TransformNormalArray** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXVec3TransformNormalArray** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -118,7 +118,7 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Verificare che la versione di D3DX compilata con sia la versione in esecuzione.
+description: 'Funzione D3DX10CheckVersion: verificare che la versione di D3DX compilata con sia la versione in esecuzione.'
 ms.assetid: 57085b07-f77b-425e-a889-22c3071d7143
-title: Funzione D3DX10CheckVersion (D3DX10Core. h)
+title: Funzione D3DX10CheckVersion (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3b41996f16cb97d91dc59f8d368f13b905992388
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4fc8befa88fb706965a30224843745b033ea205b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323381"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105349"
 ---
-# <a name="d3dx10checkversion-function"></a>D3DX10CheckVersion (funzione)
+# <a name="d3dx10checkversion-function"></a>Funzione D3DX10CheckVersion
 
 Verificare che la versione di D3DX compilata con sia la versione in esecuzione.
 
@@ -41,21 +41,21 @@ HRESULT D3DX10CheckVersion(
 
 <dl> <dt>
 
-*D3DSdkVersion* \[ in\]
+*D3DSdkVersion* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Usare la \_ versione dell'SDK di D3D10 \_ . Vedere la sezione Osservazioni.
+Usare D3D10 \_ SDK \_ VERSION. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*D3DX10SdkVersion* \[ in\]
+*D3DX10SdkVersion* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Usare la \_ versione dell'SDK di d3dx10 \_ . Vedere la sezione Osservazioni.
+Usare D3DX10 \_ SDK \_ VERSION. Vedere la sezione Osservazioni.
 
 </dd> </dl>
 
@@ -85,8 +85,8 @@ if( FAILED( D3DX10CheckVersion(D3D10_SDK_VERSION, D3DX10_SDK_VERSION) ) )
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
@@ -94,7 +94,7 @@ if( FAILED( D3DX10CheckVersion(D3D10_SDK_VERSION, D3DX10_SDK_VERSION) ) )
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

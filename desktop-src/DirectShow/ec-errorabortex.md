@@ -1,17 +1,17 @@
 ---
-description: Un'operazione è stata interrotta a causa di un errore.
+description: "EC_ERRORABORTEX: un'operazione è stata interrotta a causa di un errore."
 ms.assetid: de7b5222-3a29-40cc-af1a-2672bd68b7c9
-title: EC_ERRORABORTEX (dshow. h)
+title: EC_ERRORABORTEX (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8465825b93207059e5f2ea5f054deb7c3fd5619f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9b3bf1e1f24f9d5b07312f542c1ce4ea671f601d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331635"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094609"
 ---
-# <a name="ec_errorabortex"></a>\_ERRORABORTEX EC
+# <a name="ec_errorabortex"></a>EC \_ ERRORABORTEX
 
 Un'operazione è stata interrotta a causa di un errore.
 
@@ -39,7 +39,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Il filtro [origine Windows Media](windows-media-source-filter.md) legacy Invia questo evento. I nuovi filtri non devono inviare questo evento.
+Il filtro [Legacy Windows Media Source](windows-media-source-filter.md) invia questo evento. I nuovi filtri non devono inviare questo evento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Il filtro [origine Windows Media](windows-media-source-filter.md) legacy Invia q
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

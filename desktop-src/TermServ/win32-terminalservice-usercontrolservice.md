@@ -1,12 +1,12 @@
 ---
 title: Metodo UserControlService della classe Win32_Service (Servizi Desktop remoto)
-description: Tenta di inviare un codice di controllo definito dall'utente al servizio a cui si fa riferimento.
+description: "Metodo UserControlService della classe Win32_Service (Servizi Desktop remoto): tenta di inviare un codice di controllo definito dall'utente al servizio a cui si fa riferimento."
 ms.assetid: 7B9020C1-2183-4FC4-ABCF-CE34111FF5D3
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo UserControlService
-- Metodo UserControlService Servizi Desktop remoto, classe Win32_Service
-- Classe Win32_Service Servizi Desktop remoto, metodo UserControlService
+- Metodo UserControlService Servizi Desktop remoto
+- Il metodo UserControlService Servizi Desktop remoto , Win32_Service classe
+- Win32_Service classe Servizi Desktop remoto , metodo UserControlService
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15b1ea4f5e82814aad7549085070b0583993024b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e71a33056f596afaf577968a5c725b3f64f79b6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478845"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108090609"
 ---
 # <a name="usercontrolservice-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo UserControlService della classe Win32_Service (Servizi Desktop remoto)
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UserControlService** tenta di inviare un codice di controllo definito dall'utente al servizio a cui si fa riferimento.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UserControlService** tenta di inviare un codice di controllo definito dall'utente al servizio a cui si fa riferimento.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ uint32 UserControlService(
 
 <dl> <dt>
 
-*ControlCode* \[ in\]
+*Codice di controllo* \[ Pollici\]
 </dt> <dd>
 
-Specifica i valori definiti (da 128 a 255) che forniscono i comandi di controllo specifici per un utente.
+Specifica i valori definiti (da 128 a 255) che forniscono comandi di controllo specifici per un utente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -75,7 +75,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non dispone dell'accesso necessario.
+L'utente non aveva l'accesso necessario.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**Proprietà state** ) è uguale a 0, 1 o 2.
+Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State)** è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Errore sconosciuto durante l'avvio del servizio.
 **9**
 </dt> <dd>
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -173,14 +173,14 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 **16**
 </dt> <dd>
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
 **17**
 </dt> <dd>
 
-Il servizio non dispone di un thread di esecuzione.
+Il servizio non ha thread di esecuzione.
 
 </dd> <dt>
 
@@ -208,14 +208,14 @@ Il nome del servizio contiene caratteri non validi.
 **21**
 </dt> <dd>
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
 **22**
 </dt> <dd>
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -241,8 +241,8 @@ Il servizio è attualmente sospeso nel sistema.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -251,13 +251,13 @@ Il servizio è attualmente sospeso nel sistema.
 
 <dl> <dt>
 
-[**\_Servizio Win32**](/windows/desktop/CIMWin32Prov/win32-service)
+[**Servizio \_ Win32**](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
 [Classi del sistema operativo](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[**\_TerminalService Win32**](win32-terminalservice.md)
+[**Win32 \_ TerminalService**](win32-terminalservice.md)
 </dt> </dl>
 
  

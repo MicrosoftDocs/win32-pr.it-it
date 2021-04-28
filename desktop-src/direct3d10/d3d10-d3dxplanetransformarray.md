@@ -1,7 +1,7 @@
 ---
-description: Trasforma una matrice di piani in base a una matrice. È necessario normalizzare i vettori che descrivono ogni piano.
+description: 'Funzione D3DXPlaneTransformArray (D3DX10Math.h): trasforma una matrice di piani in base a una matrice. I vettori che descrivono ogni piano devono essere normalizzati.'
 ms.assetid: 9529b06a-0575-4115-8d35-fc35a7bfb0bd
-title: Funzione D3DXPlaneTransformArray (D3DX10Math. h)
+title: Funzione D3DXPlaneTransformArray (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 128b9c8c73db81faa877295e993504a7a510cd4a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d8b02b64fd13e7466980340056fceccc1da784cf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058646"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103259"
 ---
-# <a name="d3dxplanetransformarray-function-d3dx10mathh"></a>Funzione D3DXPlaneTransformArray (D3DX10Math. h)
+# <a name="d3dxplanetransformarray-function-d3dx10mathh"></a>Funzione D3DXPlaneTransformArray (D3DX10Math.h)
 
-Trasforma una matrice di piani in base a una matrice. È necessario normalizzare i vettori che descrivono ogni piano.
+Trasforma una matrice di piani in base a una matrice. I vettori che descrivono ogni piano devono essere normalizzati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,55 +45,55 @@ D3DXPLANE* D3DXPlaneTransformArray(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
-Puntatore alla struttura [**D3DXPLANE**](d3d10-d3dxplane.md) che contiene il piano trasformato risultante. Vedere l'esempio.
+Puntatore alla [**struttura D3DXPLANE**](d3d10-d3dxplane.md) che contiene il piano trasformato risultante. Vedere Esempio.
 
 </dd> <dt>
 
-*Outstride* \[ in\]
+*OutStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride di ogni piano trasformato.
+Passo di ogni piano trasformato.
 
 </dd> <dt>
 
-*PP* \[ in\]
+*pP* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](../direct3d9/d3dxplane.md) \***
 
-Puntatore alla struttura di input D3DXPLANE, che contiene la matrice di piani da trasformare. Il vettore (a, b, c) che descrive il piano deve essere normalizzato prima che questa funzione venga chiamata. Vedere l'esempio.
+Puntatore alla struttura D3DXPLANE di input, che contiene la matrice di piani da trasformare. Il vettore (a, b, c) che descrive il piano deve essere normalizzato prima che venga chiamata questa funzione. Vedere Esempio.
 
 </dd> <dt>
 
-*PStride* \[ in\]
+*PStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Stride di ogni piano non trasformato.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) di origine, che contiene la trasposta inversa dei valori della trasformazione.
+Puntatore alla struttura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) di origine, che contiene il traspose inverso dei valori della trasformazione.
 
 </dd> <dt>
 
 *n* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di piani da trasformare.
 
@@ -103,7 +103,7 @@ Numero di piani da trasformare.
 
 Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
-Puntatore a una struttura D3DXPLANE che rappresenta il piano trasformato. Si tratta dello stesso valore restituito nel parametro broncio, in modo che questa funzione possa essere utilizzata come parametro per un'altra funzione.
+Puntatore a una struttura D3DXPLANE, che rappresenta il piano trasformato. Si tratta dello stesso valore restituito nel parametro pOut in modo che questa funzione possa essere usata come parametro per un'altra funzione.
 
 ## <a name="remarks"></a>Commenti
 
@@ -131,9 +131,9 @@ D3DXPlaneTransformArray( &planeNew, sizeof (D3DXPLANE), &plane,
 
 
 
-Un piano è descritto da AX + + + CZ + DW = 0. Il primo piano viene creato con (a, b, c, d) = (0, 1, 1, 0), che è un piano descritto da y + z = 0. Dopo la scalabilità, il nuovo piano contiene (a, b, c, d) = (0, 0.353 f, 0.235 f,0), che mostra il nuovo piano da descrivere con 0.353 y + 0.235 z = 0.
+Un piano è descritto da ax + by + cz + dw = 0. Il primo piano viene creato con (a,b,c,d) = (0,1,1,0), ovvero un piano descritto da y + z = 0. Dopo il ridimensionamento, il nuovo piano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), che mostra il nuovo piano descritto da 0,353y + 0,235z = 0.
 
-Il parametro pM contiene la trasformazione inversa della matrice di trasformazione. La trasposta inversa è richiesta da questo metodo, in modo che sia possibile trasformare correttamente anche il vettore normale del piano trasformato.
+Il parametro pM contiene il traspose inverso della matrice di trasformazione. La trasposizione inversa è richiesta da questo metodo in modo che anche il vettore normale del piano trasformato possa essere trasformato correttamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -141,8 +141,8 @@ Il parametro pM contiene la trasformazione inversa della matrice di trasformazio
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Calcola il prodotto trasposto di due matrici.
+description: 'Funzione D3DXMatrixMultiplyTranspose (D3dx9math.h): calcola il prodotto trasposto di due matrici.'
 ms.assetid: 43927500-9413-41a4-a6ee-974d85dd1054
-title: Funzione D3DXMatrixMultiplyTranspose (D3dx9math. h)
+title: Funzione D3DXMatrixMultiplyTranspose (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b599453ae108a5a8bab8ee896858760c85799948
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 87aaa45e7a7a16884d17ab340f0bf1efeccd93bb
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322128"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107539"
 ---
-# <a name="d3dxmatrixmultiplytranspose-function-d3dx9mathh"></a>Funzione D3DXMatrixMultiplyTranspose (D3dx9math. h)
+# <a name="d3dxmatrixmultiplytranspose-function-d3dx9mathh"></a>Funzione D3DXMatrixMultiplyTranspose (D3dx9math.h)
 
 Calcola il prodotto trasposto di due matrici.
 
@@ -42,30 +42,30 @@ D3DXMATRIX* D3DXMatrixMultiplyTranspose(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pM1* \[ in\]
+*pM1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
+Puntatore a una [**struttura D3DXMATRIX di**](d3dxmatrix.md) origine.
 
 </dd> <dt>
 
-*pM2* \[ in\]
+*pM2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
+Puntatore a una [**struttura D3DXMATRIX di**](d3dxmatrix.md) origine.
 
 </dd> </dl>
 
@@ -73,15 +73,15 @@ Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) che è il prodotto di due matrici.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che è il prodotto di due matrici.
 
 ## <a name="remarks"></a>Commenti
 
-Il risultato è l'oggetto trasposto dal prodotto di due matrici di trasformazione, out = T (M1 \* m2).
+Il risultato è il prodotto trasposto di due matrici di trasformazione, Out = T(M1 \* M2).
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixMultiplyTranspose** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixMultiplyTranspose** può essere usata come parametro per un'altra funzione.
 
-Questa funzione è utile per impostare matrici come costanti per i vertex e i pixel shader.
+Questa funzione è utile per impostare le matrici come costanti per vertici e pixel shader.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Questa funzione è utile per impostare matrici come costanti per i vertex e i pi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

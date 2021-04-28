@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi TCP/IP. La sintassi seguente è semplificata dal codice MOF.
+description: 'TcpIp_V1_TypeGroup1 classe: questa classe è la classe del tipo di evento per gli eventi TCP/IP. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 1cde7e37-52da-4108-90ce-7647a5653f65
-title: Classe TcpIp_V1_TypeGroup1
+title: TcpIp_V1_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,14 +18,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fcd5f19eafa5308ef369a211559c6c464427b168
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 831dfdc228e2c8e128f328784046e833b0b45a39
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978234"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105759"
 ---
-# <a name="tcpip_v1_typegroup1-class"></a>\_ \_ Classe TypeGroup1 di Tcpip V1
+# <a name="tcpip_v1_typegroup1-class"></a>Classe \_ \_ TypeGroup1 TcpIp V1
 
 Questa classe è la classe del tipo di evento per gli eventi TCP/IP.
 
@@ -48,26 +48,26 @@ class TcpIp_V1_TypeGroup1 : TcpIp_V1
 
 ## <a name="members"></a>Members
 
-La classe **TCPIP \_ V1 \_ TypeGroup1** presenta questi tipi di membri:
+La **classe \_ \_ TypeGroup1 TcpIp V1** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **TCPIP \_ V1 \_ TypeGroup1** ha queste proprietà.
+La **classe \_ \_ TypeGroup1 TcpIp V1** ha queste proprietà.
 
 <dl> <dt>
 
 daddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), Extension ("IPAddr")
+Qualificatori: WmiDataId(3), Extension("IPAddr")
 </dt> </dl>
 
 Indirizzo IP di destinazione.
@@ -77,13 +77,13 @@ Indirizzo IP di destinazione.
 dport
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), Extension ("Port")
+Qualificatori: WmiDataId(5), Extension("Port")
 </dt> </dl>
 
 Numero di porta di destinazione.
@@ -93,13 +93,13 @@ Numero di porta di destinazione.
 PID
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 Identificatore del processo associato alla richiesta.
@@ -109,13 +109,13 @@ Identificatore del processo associato alla richiesta.
 saddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), Extension ("IPAddr")
+Qualificatori: WmiDataId(4), Extension("IPAddr")
 </dt> </dl>
 
 Indirizzo IP di origine.
@@ -125,29 +125,29 @@ Indirizzo IP di origine.
 size
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Dimensioni del pacchetto.
 
 </dd> <dt>
 
-Sport
+sport
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), Extension ("Port")
+Qualificatori: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Numero di porta di origine.
@@ -160,8 +160,8 @@ Numero di porta di origine.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 
