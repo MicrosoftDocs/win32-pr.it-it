@@ -1,7 +1,7 @@
 ---
-description: Apre una cartella specificata in una finestra di Esplora risorse.
+description: 'Metodo IShellDispatch.Explore: apre una cartella specificata in una Esplora risorse finestra.'
 ms.assetid: DB434D02-56B2-4e8f-9E43-BBF47C7BE377
-title: Metodo IShellDispatch. explore (shldisp. h)
+title: Metodo IShellDispatch.Explore (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 1ae29b4962dcac1be0b7ea23808e36ce005cb62c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e693985cf7d8d83bd5a00595c42cd4427b0ebd5b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978114"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100559"
 ---
-# <a name="ishelldispatchexplore-method"></a>Metodo IShellDispatch. explore
+# <a name="ishelldispatchexplore-method"></a>Metodo IShellDispatch.Explore
 
-Apre una cartella specificata in una finestra di Esplora risorse.
+Apre una cartella specificata in una finestra Esplora risorse dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,12 +49,12 @@ IShellDispatch.Explore( _
 
 <dl> <dt>
 
-*vdir* \[ in\]
+*vDir* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Cartella da visualizzare. Può trattarsi di una stringa che specifica il percorso della cartella o uno dei valori [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al suo posto.
+Cartella da visualizzare. Può essere una stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
 </dd> </dl>
 
@@ -70,13 +70,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. explore**](shell-explore.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.Explore.**](shell-explore.md)
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **Esplora** in JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso **di Esplora** in JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -92,7 +92,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -134,11 +134,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

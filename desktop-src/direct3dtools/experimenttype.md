@@ -1,5 +1,5 @@
 ---
-description: .
+description: <span id="vspixengine.experimenttype"></span>Enumerazione EXPERIMENTTYPE
 MS-HAID: vspixengine.EXPERIMENTTYPE
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ce04d2c59441a62b603aea0d5d077908a9359b1a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 58c0ce661bb428c699127fd9b07ad67ab0b5ee7f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304316"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097409"
 ---
 # <a name="span-idvspixengineexperimenttypespanexperimenttype-enumeration"></a><span id="vspixengine.experimenttype"></span>Enumerazione EXPERIMENTTYPE
 
@@ -39,11 +39,11 @@ ms.locfileid: "106304316"
 
 <span id="RINGBUFFER"></span><span id="ringbuffer"></span>**RINGBUFFER**  
 
-<span id="PROFILING"></span><span id="profiling"></span>**PROFILATURA**  
+<span id="PROFILING"></span><span id="profiling"></span>**Profilatura**  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

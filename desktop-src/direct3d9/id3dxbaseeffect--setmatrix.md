@@ -1,7 +1,7 @@
 ---
-description: Imposta una matrice non trasposta.
+description: 'Metodo ID3DXBaseEffect::SetMatrix: imposta una matrice non trasposta.'
 ms.assetid: 90329460-756e-4b3e-9ff3-be9dc556eb9f
-title: 'Metodo ID3DXBaseEffect:: sematrix (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetMatrix (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 39a5aed1d6321cf0599d212222fd967ee512e20e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7af7dc0daa3dcd29e7b15c4fe435b9626ea41746
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104530847"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097499"
 ---
-# <a name="id3dxbaseeffectsetmatrix-method"></a>Metodo ID3DXBaseEffect:: sematrix
+# <a name="id3dxbaseeffectsetmatrix-method"></a>Metodo ID3DXBaseEffect::SetMatrix
 
 Imposta una matrice non trasposta.
 
@@ -41,21 +41,21 @@ HRESULT SetMatrix(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pmatrix* \[ in\]
+*pMatrix* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una matrice nontransposed. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
+Puntatore a una matrice non trasposta. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> </dl>
 
@@ -67,9 +67,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice non trasposta contiene dati di riga principali. In altre parole, ogni vettore è contenuto in una riga.
+Una matrice non trasposta contiene dati principali di riga. In altre parole, ogni vettore è contenuto in una riga.
 
-Se la matrice di destinazione è minore della matrice di origine, i componenti aggiuntivi della matrice di origine verranno ignorati.
+Se la matrice di destinazione è più piccola della matrice di origine, i componenti aggiuntivi della matrice di origine verranno ignorati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Se la matrice di destinazione è minore della matrice di origine, i componenti a
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

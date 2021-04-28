@@ -1,7 +1,7 @@
 ---
-description: Ottiene la tabella delle costanti shader incorporata all'interno di uno shader.
+description: 'Funzione D3DXGetShaderConstantTable: ottiene la tabella costante shader incorporata in uno shader.'
 ms.assetid: eb965074-819f-44d2-889b-6c6eada4f062
-title: Funzione D3DXGetShaderConstantTable (D3DX9Shader. h)
+title: Funzione D3DXGetShaderConstantTable (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 876802023601c14b4cceed0ef0e2db431d7339e0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b397901578a1e6ce6fecc01ed25c99d4681d1c40
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322661"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114419"
 ---
-# <a name="d3dxgetshaderconstanttable-function"></a>D3DXGetShaderConstantTable (funzione)
+# <a name="d3dxgetshaderconstanttable-function"></a>Funzione D3DXGetShaderConstantTable
 
-Ottiene la tabella delle costanti shader incorporata all'interno di uno shader.
+Ottiene la tabella costante shader incorporata all'interno di uno shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT D3DXGetShaderConstantTable(
 
 <dl> <dt>
 
-*pFunction* \[ in\]
+*pFunction* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
@@ -50,12 +50,12 @@ Puntatore al flusso DWORD della funzione.
 
 </dd> <dt>
 
- *ppConstantTable* \[ out\]
+ *ppConstantTable* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Restituisce l'interfaccia della tabella costante (vedere [**ID3DXConstantTable**](id3dxconstanttable.md)) che gestisce la tabella delle costanti.
+Restituisce l'interfaccia di tabella costante (vedere [**ID3DXConstantTable)**](id3dxconstanttable.md)che gestisce la tabella costante.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Restituisce l'interfaccia della tabella costante (vedere [**ID3DXConstantTable**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Una tabella di costanti viene generata da [**D3DXCompileShader**](d3dxcompileshader.md) e incorporata nel corpo dello shader. Se è necessario uno spazio degli indirizzi virtuali aggiuntivo, vedere [**D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md).
+Una tabella costante viene generata da [**D3DXCompileShader**](d3dxcompileshader.md) e incorporata nel corpo dello shader. Se è necessario spazio indirizzi virtuali aggiuntivo, vedere [**D3DXGetShaderConstantTableEx.**](d3dxgetshaderconstanttableex.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Una tabella di costanti viene generata da [**D3DXCompileShader**](d3dxcompilesha
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

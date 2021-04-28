@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetTotalStatistics recupera le statistiche totali per l'acquisizione corrente.
+description: "Metodo IStats::GetTotalStatistics: il metodo GetTotalStatistics recupera le statistiche totali per l'acquisizione corrente."
 ms.assetid: 494634f6-a9b3-4a50-8920-2387be9ba30f
-title: 'Metodo IStats:: GetTotalStatistics (Netmon. h)'
+title: Metodo IStats::GetTotalStatistics (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 51cdbfdcc796aa7d8091e8da5837809efaa63379
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6566a58212e8f20d0d999302f41ab97cb9f005e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315458"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098409"
 ---
-# <a name="istatsgettotalstatistics-method"></a>IStats:: GetTotalStatistics (metodo)
+# <a name="istatsgettotalstatistics-method"></a>Metodo IStats::GetTotalStatistics
 
-Il metodo **GetTotalStatistics** recupera le [*statistiche totali*](t.md) per l' [*acquisizione*](c.md)corrente.
+Il **metodo GetTotalStatistics** recupera le [*statistiche totali*](t.md) per l'acquisizione [*corrente.*](c.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,23 +41,23 @@ HRESULT STDMETHODCALLTYPE GetTotalStatistics(
 
 <dl> <dt>
 
-*lpStats* \[ out\]
+*lpStats* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura di [statistiche](statistics.md)che fornisce le statistiche totali per l'acquisizione. È responsabilità del chiamante allocare e liberare la memoria usata dalla struttura delle **statistiche** .
+Puntatore a una [struttura STATISTICS](statistics.md)che fornisce le statistiche totali per l'acquisizione. È responsabilità del chiamante allocare e liberare la memoria usata dalla **struttura STATISTICS.**
 
 </dd> <dt>
 
-*fClearAfterReading* \[ in\]
+*fClearAfterReading* \[ Pollici\]
 </dt> <dd>
 
-Flag utilizzato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. Un'impostazione di TRUE indica Network Monitor per cancellare l'archiviazione interna delle statistiche totali dopo che sono state recuperate le informazioni correnti.
+Flag usato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. L'impostazione TRUE indica Network Monitor l'archiviazione interna delle statistiche totali dopo il recupero delle informazioni correnti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -65,9 +65,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                            | Descrizione                                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl>   | L'oggetto NPP non è connesso alla rete. Chiamare il metodo [IStats:: Connect](istats-connect.md) per connettere l'oggetto NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non \_ \_ solo statistiche**</dt> </dl> | L'oggetto NPP è connesso alla rete, ma non con il metodo [IStats:: Connect](istats-connect.md) .<br/>                                |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl>   | L'oggetto NPP non sta acquisendo dati. Chiamare il metodo [IStats:: Start](istats-start.md) per avviare l'acquisizione dei dati.<br/>                         |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>   | NPP non è connesso alla rete. Chiamare il [metodo IStats::Connect](istats-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ STATS \_ ONLY**</dt> </dl> | NPP è connesso alla rete, ma non con il [metodo IStats::Connect.](istats-connect.md)<br/>                                |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>   | NPP non acquisisce dati. Chiamare il [metodo IStats::Start](istats-start.md) per avviare l'acquisizione dei dati.<br/>                         |
 
 
 
@@ -75,9 +75,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce i dati solo mentre è in corso un'acquisizione, incluso mentre l'acquisizione viene sospesa.
+Questo metodo restituisce i dati solo mentre è in corso un'acquisizione, incluso mentre l'acquisizione è sospesa.
 
-Network Monitor archivia anche le [*statistiche di conversazione*](c.md), che possono essere recuperate chiamando il metodo [IStats:: GetConversationStatistics](istats-getconversationstatistics.md) .
+Network Monitor anche le [*statistiche*](c.md)della conversazione, che possono essere recuperate chiamando il [metodo IStats::GetConversationStatistics.](istats-getconversationstatistics.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,7 +87,7 @@ Network Monitor archivia anche le [*statistiche di conversazione*](c.md), che po
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -96,16 +96,16 @@ Network Monitor archivia anche le [*statistiche di conversazione*](c.md), che po
 
 <dl> <dt>
 
-[IStats](istats.md)
+[IStat](istats.md)
 </dt> <dt>
 
-[IStats:: Connect](istats-connect.md)
+[IStats::Connect](istats-connect.md)
 </dt> <dt>
 
-[IStats:: GetConversationStatistics](istats-getconversationstatistics.md)
+[IStats::GetConversationStatistics](istats-getconversationstatistics.md)
 </dt> <dt>
 
-[IStats:: Start,](istats-start.md)
+[IStats::Start,](istats-start.md)
 </dt> <dt>
 
 [Statistiche](statistics.md)

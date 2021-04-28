@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo GetDuration recupera la durata del flusso. Questo metodo implementa il metodo IMediaSeeking:: GetDuration.'
+description: 'Metodo CPosPassThru.GetDuration: il metodo GetDuration recupera la durata del flusso. Questo metodo implementa il metodo IMediaSeeking::GetDuration.'
 ms.assetid: 0552e7bb-4d7e-40a8-a8ad-89ae6fff8ccb
-title: Metodo CPosPassThru. GetDuration (Ctlutil. h)
+title: Metodo CPosPassThru.GetDuration (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b9b533537c36ac7ec4c76289307368539482aa47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0b0af7bfaca405ed52a4e3c5a63c18b4bc087ba3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324182"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085579"
 ---
-# <a name="cpospassthrugetduration-method"></a>CPosPassThru. GetDuration, metodo
+# <a name="cpospassthrugetduration-method"></a>Metodo CPosPassThru.GetDuration
 
-Il `GetDuration` metodo recupera la durata del flusso. Questo metodo implementa il metodo [**IMediaSeeking:: GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) .
+Il `GetDuration` metodo recupera la durata del flusso. Questo metodo implementa il [**metodo IMediaSeeking::GetDuration.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT GetDuration(
 *pDuration* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve la durata, in unità del formato dell'ora corrente.
+Puntatore a una variabile che riceve la durata, in unità del formato di ora corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

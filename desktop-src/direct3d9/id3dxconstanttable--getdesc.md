@@ -1,7 +1,7 @@
 ---
-description: Ottiene una descrizione della tabella delle costanti.
+description: 'Metodo ID3DXConstantTable::GetDesc: ottiene una descrizione della tabella costante.'
 ms.assetid: 3a7396c6-3a3e-44c2-96b7-60339015b376
-title: 'Metodo ID3DXConstantTable:: getdesc (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::GetDesc (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 71eeb951ec73fbeb9942f52e30ab9ad59e374ee7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 81b64f1a01af8909aa820e772214a1f11c6099b8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886287"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115239"
 ---
-# <a name="id3dxconstanttablegetdesc-method"></a>Metodo ID3DXConstantTable:: getdesc
+# <a name="id3dxconstanttablegetdesc-method"></a>Metodo ID3DXConstantTable::GetDesc
 
 Ottiene una descrizione della tabella delle costanti.
 
@@ -40,12 +40,12 @@ HRESULT GetDesc(
 
 <dl> <dt>
 
-*pDesc* \[ in\]
+*pDesc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXCONSTANTTABLE \_ desc**](d3dxconstanttable-desc.md)\***
+Tipo: **[ **D3DXCONSTANTTABLE \_ DESC**](d3dxconstanttable-desc.md)\***
 
-Descrizione della tabella delle costanti. Vedere [**D3DXCONSTANTTABLE \_ desc**](d3dxconstanttable-desc.md).
+Descrizione della tabella delle costanti. Vedere [**D3DXCONSTANTTABLE \_ DESC**](d3dxconstanttable-desc.md).
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CAMEvent.CAMEvent : metodo del costruttore.'
 ms.assetid: 35c9ac07-8756-42b1-beeb-5f0e79466742
-title: Costruttore CAMEvent. CAMEvent (Wxutil. h)
+title: Costruttore CAMEvent.CAMEvent (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a01d9d1f592675f58d19e81b800c966dddaca1c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cdd37ba72d9467c16d46b2aec3ec40c206466eaf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324429"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096532"
 ---
-# <a name="cameventcamevent-constructor"></a>Costruttore CAMEvent. CAMEvent
+# <a name="cameventcamevent-constructor"></a>Costruttore CAMEvent.CAMEvent
 
 Metodo del costruttore.
 
@@ -46,24 +46,24 @@ CAMEvent(
 *fManualReset* 
 </dt> <dd>
 
-Valore booleano che specifica se l'oggetto è un evento di reimpostazione manuale o un evento di reimpostazione automatica. Se **true**, l'oggetto è un evento di reimpostazione manuale. In caso contrario, si tratta di un evento di reimpostazione automatica.
+Valore booleano che specifica se l'oggetto è un evento di reimpostazione manuale o un evento di reimpostazione automatica. Se **TRUE,** l'oggetto è un evento di reimpostazione manuale. In caso contrario, si tratta di un evento di reimpostazione automatica.
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a un valore **HRESULT** . Se il costruttore ha esito negativo, questo parametro riceve un codice di errore. In tal caso, lo stato dell'oggetto non è valido.
+Puntatore a un **valore HRESULT.** Se il costruttore ha esito negativo, questo parametro riceve un codice di errore. In questo caso, l'oggetto non è in uno stato valido.
 
-Per la compatibilità con le versioni precedenti di strmbase. lib, il valore predefinito di questo parametro è **null**. Tuttavia, è preferibile passare un valore non **null** , in modo che il chiamante possa controllare lo stato dell'oggetto.
+Per compatibilità con le versioni precedenti di strmbase.lib, il valore predefinito di questo parametro è **NULL.** È tuttavia preferibile passare un valore non **NULL,** in modo che il chiamante possa controllare lo stato dell'oggetto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'evento inizia con uno stato non segnalato.
+L'evento inizia in uno stato non firmato.
 
-Con un evento di reimpostazione automatica, il metodo [**CAMEvent:: wait**](camevent-wait.md) Reimposta l'evento su non segnalato quando il metodo restituisce un risultato. Con un evento di reimpostazione manuale, l'evento rimane segnalato fino a quando non viene chiamato il metodo [**CAMEvent:: Reset**](camevent-reset.md) .
+Con un evento di reimpostazione automatica, il [**metodo CAMEvent::Wait**](camevent-wait.md) reimposta l'evento su nonsignaled quando il metodo viene restituito. Con un evento di reimpostazione manuale, l'evento rimane segnalato fino a quando non si chiama il [**metodo CAMEvent::Reset.**](camevent-reset.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Con un evento di reimpostazione automatica, il metodo [**CAMEvent:: wait**](came
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

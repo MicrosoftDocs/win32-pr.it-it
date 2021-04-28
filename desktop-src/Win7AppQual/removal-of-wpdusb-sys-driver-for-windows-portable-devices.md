@@ -1,22 +1,22 @@
 ---
-description: .
+description: Rimozione di WPDUSB.SYS driver per dispositivi portatili Windows
 ms.assetid: 3ad0c892-8b19-465d-af2f-9207f98e27b7
-title: Rimozione del driver WPDUSB.SYS per dispositivi portatili Windows
+title: Rimozione di WPDUSB.SYS driver per dispositivi portatili Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1d602c8277a5c256332b3eaec6a383997d5c63d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5931b63c5abb4534b2c8dd6619b4a3ead8b339be
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317611"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116249"
 ---
-# <a name="removal-of-wpdusbsys-driver-for-windows-portable-devices"></a>Rimozione del driver WPDUSB.SYS per dispositivi portatili Windows
+# <a name="removal-of-wpdusbsys-driver-for-windows-portable-devices"></a>Rimozione di WPDUSB.SYS driver per dispositivi portatili Windows
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
-**Client** -Windows 7  
-**Server** -Windows Server 2008 R2  
+**Client** - Windows 7  
+**Server** - Windows Server 2008 R2  
 
 
 
@@ -26,10 +26,10 @@ ms.locfileid: "106317611"
 
 
 
-## <a name="feature-impact"></a>Effetto sulle funzionalità
+## <a name="feature-impact"></a>Impatto sulle funzionalità
 
- **Gravità** -bassa  
-**Frequenza** -bassa  
+ **Gravità** - Bassa  
+**Frequenza** - Bassa  
 
 
 
@@ -37,25 +37,25 @@ ms.locfileid: "106317611"
 
 ## <a name="description"></a>Descrizione
 
-Microsoft ha sostituito il componente modalità kernel dello stack di driver USB di Windows Vista (WPDUSB.SYS) per i dispositivi portatili Windows (WPD) con il driver di WINUSB.SYS generico. La comunicazione con il driver di WPDUSB.SYS originale è stata tramite codici IOCTL (private I/O Control); anche il supporto di questi elementi è stato rimosso.
+Microsoft ha sostituito il componente in modalità kernel dello stack di driver USB di Windows Vista (WPDUSB.SYS) per dispositivi portatili Windows (WPD) con il driver WINUSB.SYS generico. La comunicazione con il driver WPDUSB.SYS originale è stata tramite codici I/O control (IOCTL) privati; Anche il supporto di questi elementi è stato rimosso.
 
-Tutti i consumer di questi codici IOCTL sarebbero stati responsabili dell'interpretazione e dell'implementazione corrette del protocollo MTP (Media Transfer Protocol). Windows Vista non supportava l'utilizzo di questi codici IOCTL da parte di applicazioni di terze parti.
+Tutti i consumer di questi codici IOCTL sarebbero stati responsabili dell'interpretazione e dell'implementazione appropriate del protocollo MTP (Media Transfer Protocol). Windows Vista non supporta l'uso di questi codici IOCTL da parte di applicazioni di terze parti.
 
-## <a name="manifestation-of-impact"></a>Manifesto di effetto
+## <a name="manifestation-of-impact"></a>Impatto significativo
 
-Qualsiasi applicazione che dipende dalla disponibilità di questi codici IOCTL privati non avrà più accesso ai dispositivi MTP connessi tramite USB.
+Qualsiasi applicazione che dipendeva dalla disponibilità di questi codici IOCTL privati non avrebbe più accesso ai dispositivi MTP connessi tramite USB.
 
-## <a name="mitigation"></a>Strategia di riduzione del rischio
+## <a name="mitigation"></a>Mitigazione
 
-Gli utenti di un'applicazione che dipende dai codici IOCTL privati devono usare un'applicazione diversa o una versione aggiornata dell'applicazione per accedere al dispositivo MTP connesso tramite USB.
+Gli utenti di un'applicazione che dipende dai codici IOCTL privati devono usare un'applicazione diversa (o una versione aggiornata dell'applicazione) per accedere al dispositivo MTP connesso tramite USB.
 
 ## <a name="solution"></a>Soluzione
 
-Per individuare e interagire con qualsiasi dispositivo WPD, le applicazioni devono usare l'API dispositivi portatili Windows (WPD). Sebbene una percentuale significativa di dispositivi WPD implementi MTP per la comunicazione con il PC, WPD non è limitato solo ai dispositivi MTP. Inoltre, quando l'accesso diretto al dispositivo tramite le IOCTL private avrebbe limitato l'applicazione alla comunicazione con solo i dispositivi connessi tramite USB, l'uso dell'API WPD espande l'elenco di opzioni di connettività ad altri protocolli di comunicazione, ad esempio Wi-Fi. Nei rari casi in cui l'applicazione deve essere compatibile con MTP, l'API WPD fornisce un meccanismo pass-through per i comandi MTP non elaborati.
+Le applicazioni devono usare l'API WPD (Windows Portable Devices) per trovare e interagire con qualsiasi dispositivo WPD. Anche se una percentuale significativa di dispositivi WPD implementa MTP per la comunicazione con il PC, la WPD non è limitata ai soli dispositivi MTP. Inoltre, se l'accesso diretto al dispositivo tramite gli IOCL privati avrebbe limitato l'applicazione alla comunicazione solo con dispositivi connessi tramite USB, l'uso dell'API WPD espande l'elenco delle opzioni di connettività ad altri protocolli di comunicazione (ad esempio, Wi-Fi). Nei rari casi in cui l'applicazione deve essere in grado di riconoscere MTP, l'API WPD fornisce un meccanismo pass-through per i comandi MTP non elaborati.
 
-## <a name="leveraging-feature-capabilities"></a>Sfruttando le funzionalità
+## <a name="leveraging-feature-capabilities"></a>Uso delle funzionalità
 
-L'API WPD è supportata in Windows XP (tramite Windows Format SDK), Windows Vista e Windows 7. L'implementazione di Windows 7 di WPD aggiunge il supporto per MTP su Bluetooth.
+L'API WPD è supportata in Windows XP (tramite Windows Format SDK), Windows Vista e Windows 7. L'implementazione di Windows 7 di WPD aggiunge il supporto per MTP tramite Bluetooth.
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 

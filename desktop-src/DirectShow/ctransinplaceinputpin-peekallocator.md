@@ -1,7 +1,7 @@
 ---
-description: Il metodo PeekAllocator restituisce un puntatore all'allocatore del PIN. Il metodo non incrementa il conteggio dei riferimenti nell'interfaccia.
+description: "Metodo CTransInPlaceInputPin.PeekAllocator: il metodo PeekAllocator restituisce un puntatore all'allocatore del pin. Il metodo non incrementa il conteggio dei riferimenti nell'interfaccia ."
 ms.assetid: 67f1b872-4ae2-4fbe-9240-801ef8ae1e5b
-title: Metodo CTransInPlaceInputPin. PeekAllocator (Transip. h)
+title: Metodo CTransInPlaceInputPin.PeekAllocator (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22358dd776a0536cfbae819ec7cace02dd1775a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7a5f7cb0fbe754890b1d7930bb54c6fca47afa5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326188"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108084669"
 ---
-# <a name="ctransinplaceinputpinpeekallocator-method"></a>CTransInPlaceInputPin. PeekAllocator, metodo
+# <a name="ctransinplaceinputpinpeekallocator-method"></a>Metodo CTransInPlaceInputPin.PeekAllocator
 
-Il `PeekAllocator` metodo restituisce un puntatore all'allocatore del PIN. Il metodo non incrementa il conteggio dei riferimenti nell'interfaccia.
+Il `PeekAllocator` metodo restituisce un puntatore all'allocatore del pin. Il metodo non incrementa il conteggio dei riferimenti nell'interfaccia .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la variabile membro [**CBaseInputPin:: m \_ pAllocator**](cbaseinputpin-m-pallocator.md) .
+Restituisce la [**variabile membro CBaseInputPin::m \_ pAllocator.**](cbaseinputpin-m-pallocator.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce la variabile membro [**CBaseInputPin:: m \_ pAllocator**](cbaseinput
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

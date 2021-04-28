@@ -1,7 +1,7 @@
 ---
-description: Imposta una matrice di matrici nontransposed.
+description: 'Metodo ID3DXConstantTable::SetMatrixArray : imposta una matrice di matrici non trasposte.'
 ms.assetid: f36b8e8a-c22f-41e6-acb1-6298291b002f
-title: 'Metodo ID3DXConstantTable:: SetMatrixArray (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::SetMatrixArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 48dd85975ac58dd26d4194584ce5fbebe26da2a3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 02e115cf4526ab065d2613636427059826f450f5
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322809"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115099"
 ---
-# <a name="id3dxconstanttablesetmatrixarray-method"></a>Metodo ID3DXConstantTable:: SetMatrixArray
+# <a name="id3dxconstanttablesetmatrixarray-method"></a>Metodo ID3DXConstantTable::SetMatrixArray
 
-Imposta una matrice di matrici nontransposed.
+Imposta una matrice di matrici non trasposte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ HRESULT SetMatrixArray(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato alla tabella delle costanti.
+Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -61,19 +61,19 @@ Identificatore univoco della matrice di matrici costanti. Vedere [D3DXHANDLE](dx
 
 </dd> <dt>
 
-*pmatrix* \[ in\]
+*pMatrix* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matrice di matrici nontransposed. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
+Matrice di matrici non trasposte. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di matrici nella matrice.
 
@@ -91,8 +91,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

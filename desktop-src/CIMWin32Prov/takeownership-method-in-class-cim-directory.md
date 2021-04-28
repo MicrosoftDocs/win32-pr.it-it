@@ -1,8 +1,8 @@
 ---
-description: Il metodo TakeOwnerShip ottiene la proprietà del file logico specificato nel percorso dell'oggetto.
+description: "Metodo TakeOwnerShip della CIM_Directory: il metodo TakeOwnerShip ottiene la proprietà del file logico specificato nel percorso dell'oggetto."
 ms.assetid: 053647d0-3ba0-4cd4-a84a-a1a96ef7151c
 ms.tgt_platform: multiple
-title: Metodo TakeOwnerShip della classe CIM_Directory
+title: Metodo TakeOwnerShip della CIM_Directory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dc68e974c98405f03c4bbfb45f02fdf78bf65127
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 12c328f30e56db348b018b73b02aa4320bf99505
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225788"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108086059"
 ---
-# <a name="takeownership-method-of-the-cim_directory-class"></a>Metodo TakeOwnerShip della classe di \_ directory CIM
+# <a name="takeownership-method-of-the-cim_directory-class"></a>Metodo TakeOwnerShip della classe Directory CIM \_
 
-Il metodo **TakeOwnership** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory. Questo metodo viene ereditato da [**\_ LogicalFile CIM**](cim-logicalfile.md).
+Il **metodo TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory. Questo metodo viene ereditato da [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,14 +47,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-Esito positivo.
+Operazione completata.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Oggetto già esistente.
 **11**
 </dt> <dd>
 
-File System non NTFS.
+File system non NTFS.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ La piattaforma non è Windows.
 **13**
 </dt> <dd>
 
-L'unità non è la stessa.
+Unità non uguale.
 
 </dd> <dt>
 
@@ -146,11 +146,11 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="examples"></a>Esempio
 
-Il codice di script seguente Visual Basic chiama il metodo **TakeOwnership** per assumere la proprietà della cartella C: \\ Temp.
+Il codice Visual Basic script seguente chiama il **metodo TakeOwnerShip** per assumere la proprietà della cartella \\ C: temp.
 
 
 ```VB
@@ -182,7 +182,7 @@ wscript.echo objOutParams.ReturnValue
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -191,10 +191,10 @@ wscript.echo objOutParams.ReturnValue
 
 <dl> <dt>
 
-[\_Directory CIM](takeownership-method-in-class-cim-directory.md)
+[CIM \_ Directory](takeownership-method-in-class-cim-directory.md)
 </dt> <dt>
 
-[**\_Directory CIM**](cim-directory.md)
+[**CIM \_ Directory**](cim-directory.md)
 </dt> </dl>
 
  

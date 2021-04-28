@@ -1,7 +1,7 @@
 ---
-description: Imposta una matrice di puntatori a matrici trasposte.
+description: 'Metodo ID3DXBaseEffect::SetMatrixTransposePointerArray : imposta una matrice di puntatori alle matrici trasposte.'
 ms.assetid: 11a21077-eeee-4d52-ac16-41444e3eca4f
-title: 'Metodo ID3DXBaseEffect:: SetMatrixTransposePointerArray (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetMatrixTransposePointerArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 1152deccdcadebe9f421fac6d7d5ce53c8d3e5f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3f35afad1120a26a60f670d12410584b2f9db7f1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323279"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107389"
 ---
-# <a name="id3dxbaseeffectsetmatrixtransposepointerarray-method"></a>Metodo ID3DXBaseEffect:: SetMatrixTransposePointerArray
+# <a name="id3dxbaseeffectsetmatrixtransposepointerarray-method"></a>Metodo ID3DXBaseEffect::SetMatrixTransposePointerArray
 
 Imposta una matrice di puntatori a matrici trasposte.
 
@@ -42,28 +42,28 @@ HRESULT SetMatrixTransposePointerArray(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*ppMatrix* \[ in\]
+*ppMatrix* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \* \***
 
-Matrice di puntatori alle matrici trasposte. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
+Matrice di puntatori a matrici trasposte. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di matrici nella matrice.
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice trasposta contiene dati di colonne principali; ovvero ogni vettore è contenuto in una colonna.
+Una matrice trasposta contiene dati principali della colonna. ciò significa che ogni vettore è contenuto in una colonna.
 
 Se le matrici di destinazione sono più piccole delle matrici di origine, i componenti aggiuntivi delle matrici di origine verranno ignorati.
 
@@ -87,8 +87,8 @@ Se le matrici di destinazione sono più piccole delle matrici di origine, i comp
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

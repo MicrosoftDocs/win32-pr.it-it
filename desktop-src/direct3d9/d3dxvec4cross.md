@@ -1,7 +1,7 @@
 ---
-description: Determina il prodotto incrociato in quattro dimensioni.
+description: 'Funzione D3DXVec4Cross (D3dx9math.h): determina il prodotto incrociato in quattro dimensioni.'
 ms.assetid: 10b965c9-7ed7-450c-86a0-114f068c888f
-title: Funzione D3DXVec4Cross (D3dx9math. h)
+title: Funzione D3DXVec4Cross (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 91e6e5662bff503ba96d96f135f98e60cf15c8fe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e3630a486f6c8fcd456373445bd931d878fdc38e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235056"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097689"
 ---
-# <a name="d3dxvec4cross-function-d3dx9mathh"></a>Funzione D3DXVec4Cross (D3dx9math. h)
+# <a name="d3dxvec4cross-function-d3dx9mathh"></a>Funzione D3DXVec4Cross (D3dx9math.h)
 
 Determina il prodotto incrociato in quattro dimensioni.
 
@@ -43,39 +43,39 @@ D3DXVECTOR4* D3DXVec4Cross(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> <dt>
 
-*pV3* \[ in\]
+*pV3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il prodotto incrociato.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il prodotto incrociato.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec4Cross** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec4Cross** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

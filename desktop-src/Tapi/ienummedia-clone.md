@@ -1,21 +1,21 @@
 ---
-description: Il metodo Clone crea un altro enumeratore che contiene lo stesso stato di enumerazione di quello corrente.
+description: 'Metodo IEnumMedia::Clone: il metodo Clone crea un altro enumeratore che contiene lo stesso stato di enumerazione di quello corrente.'
 ms.assetid: b48399f5-daaa-40e4-bd80-a918539d25c6
-title: 'Metodo IEnumMedia:: Clone (sdpblb. h)'
+title: Metodo IEnumMedia::Clone (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c29671819db202643506cbdf90a1550abb305718
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f81542e1b0e3fc5bfb44e59827608396d7d906c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333149"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108114549"
 ---
-# <a name="ienummediaclone-method"></a>Metodo IEnumMedia:: Clone
+# <a name="ienummediaclone-method"></a>Metodo IEnumMedia::Clone
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[ Le interfacce e i controlli di conferenza di telefonia IP di Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **Clone** crea un altro enumeratore che contiene lo stesso stato di enumerazione di quello corrente.
+Il **metodo Clone** crea un altro enumeratore che contiene lo stesso stato di enumerazione di quello corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*ppEnum* \[ out\]
+*ppEnum* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al nuovo oggetto [**IEnumMedia**](ienummedia.md) .
+Puntatore al nuovo [**oggetto IEnumMedia.**](ienummedia.md)
 
 </dd> </dl>
 
@@ -47,10 +47,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                         | Significato                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Il parametro *ppEnum* non è un puntatore valido.<br/>       |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl>  | Operazione non riuscita per motivi sconosciuti.<br/>                          |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Il *parametro ppEnum* non è un puntatore valido.<br/>       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>  | Operazione non riuscita per motivi sconosciuti.<br/>                          |
 
 
 
@@ -58,7 +58,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-TAPI chiama il metodo **AddRef** sull'interfaccia [**IEnumMedia**](ienummedia.md) restituita da **IEnumMedia:: Clone**. L'applicazione deve chiamare **Release** sull'interfaccia **IEnumMedia** per liberare risorse associate.
+TAPI chiama il **metodo AddRef** sull'interfaccia [**IEnumMedia**](ienummedia.md) restituita da **IEnumMedia::Clone.** L'applicazione deve **chiamare Release** **sull'interfaccia IEnumMedia** per liberare le risorse associate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,9 +66,9 @@ TAPI chiama il metodo **AddRef** sull'interfaccia [**IEnumMedia**](ienummedia.md
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

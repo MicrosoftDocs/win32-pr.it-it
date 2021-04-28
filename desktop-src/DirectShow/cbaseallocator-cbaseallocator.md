@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CBaseAllocator.CBaseAllocator : metodo costruttore.'
 ms.assetid: e697e377-6407-4316-9f04-fe3bdb814175
-title: Costruttore CBaseAllocator. CBaseAllocator (Amfilter. h)
+title: Costruttore CBaseAllocator.CBaseAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98a1ba1163058f92fba666177d0ff82331dd528c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfda2b03d1ddb3f4a8ad5f4446dbee997da4e790
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324041"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096360"
 ---
-# <a name="cbaseallocatorcbaseallocator-constructor"></a>Costruttore CBaseAllocator. CBaseAllocator
+# <a name="cbaseallocatorcbaseallocator-constructor"></a>Costruttore CBaseAllocator.CBaseAllocator
 
 Metodo del costruttore.
 
@@ -46,38 +46,38 @@ CBaseAllocator(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Puntatore a una stringa contenente il nome di debug dell'allocatore. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Puntatore a una stringa contenente il nome di debug dell'allocatore. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** aggregatore. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a un valore **HRESULT** . Impostare il valore su S \_ OK prima di creare l'oggetto. Se il costruttore ha esito negativo, il valore viene impostato su un codice di errore.
+Puntatore a un **valore HRESULT.** Impostare il valore su S \_ OK prima di creare l'oggetto. Se il costruttore ha esito negativo, il valore viene impostato su un codice di errore.
 
 </dd> <dt>
 
-*con lo sfogo* 
+*bEvent* 
 </dt> <dd>
 
-Valore booleano che indica se creare un semaforo. Se **true**, l'allocatore crea un semaforo ([**CBaseAllocator:: m \_ hSem**](cbaseallocator-m-hsem.md)), che viene segnalato ogni volta che un campione diventa disponibile. Impostare il valore su **false** se si implementa una classe derivata che non richiede un semaforo.
+Valore booleano che indica se creare un semaforo. Se **TRUE,** l'allocatore crea un semaforo ([**CBaseAllocator::m \_ hSem**](cbaseallocator-m-hsem.md)), che viene segnalato ogni volta che un campione diventa disponibile. Impostare il valore **su FALSE** se si implementa una classe derivata che non richiede un semaforo.
 
 </dd> <dt>
 
 *fEnableReleaseCallback* 
 </dt> <dd>
 
-Valore booleano che indica se il meccanismo di richiamata della versione è abilitato. Impostare il valore su **true** se si desidera fornire un'interfaccia di callback, che viene chiamata quando vengono rilasciati i buffer. Specificare il callback chiamando il metodo [**CBaseAllocator:: senotify**](cbaseallocator-setnotify.md) .
+Valore booleano che indica se il meccanismo di callback di rilascio è abilitato. Impostare il valore su **TRUE** se si vuole fornire un'interfaccia di callback, che viene chiamata quando vengono rilasciati i buffer. Specificare il callback chiamando il [**metodo CBaseAllocator::SetNotify.**](cbaseallocator-setnotify.md)
 
 </dd> </dl>
 
@@ -87,8 +87,8 @@ Valore booleano che indica se il meccanismo di richiamata della versione è abil
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

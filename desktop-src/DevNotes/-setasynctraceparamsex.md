@@ -1,7 +1,7 @@
 ---
-description: Completa la configurazione di un buffer di traccia con campi facoltativi per le tracce di tipo sprintf.
+description: 'Funzione SetAsyncTraceParamsEx: completa la configurazione di un buffer di traccia con campi facoltativi per le tracce in stile sprintf.'
 ms.assetid: 6c23e61c-0285-47ba-b614-b73bd001d552
-title: SetAsyncTraceParamsEx (funzione)
+title: Funzione SetAsyncTraceParamsEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Exstrace.dll
-ms.openlocfilehash: e5f99af2e6226e39ecc06a1c4c2bb7f2ad3c3b8e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a9dc0eee2f4ea3f65fa45914c3340a99ac2d45b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326837"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085769"
 ---
-# <a name="setasynctraceparamsex-function"></a>SetAsyncTraceParamsEx (funzione)
+# <a name="setasynctraceparamsex-function"></a>Funzione SetAsyncTraceParamsEx
 
-Completa la configurazione di un buffer di traccia con campi facoltativi per le tracce di tipo **sprintf**.
+Completa la configurazione di un buffer di traccia con campi facoltativi per le tracce in stile **sprintf.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,40 +74,40 @@ Nome della funzione dell'eccezione.
 *dwTraceMask* 
 </dt> <dd>
 
-Costante di un flag di traccia che rappresenta uno dei tipi di traccia disponibili. Questo parametro può essere uno dei valori seguenti.
+Costante del flag di traccia che rappresenta uno dei tipi di traccia disponibili. Questo parametro può essere uno dei valori seguenti.
 
 <dl> <dt>
 
-<span id="FATAL_TRACE_MASK"></span><span id="fatal_trace_mask"></span>**Errore irreversibile \_ \_Maschera di traccia** (0x00000001)
+<span id="FATAL_TRACE_MASK"></span><span id="fatal_trace_mask"></span>**ERRORE IRREVERSIBILE \_ TRACE \_ MASK** (0x00000001)
 </dt> <dt>
 
-<span id="ERROR_TRACE_MASK"></span><span id="error_trace_mask"></span>**Errore \_ \_Maschera di traccia** (0x00000002)
+<span id="ERROR_TRACE_MASK"></span><span id="error_trace_mask"></span>**ERRORE \_ TRACE \_ MASK** (0x00000002)
 </dt> <dt>
 
-<span id="DEBUG_TRACE_MASK"></span><span id="debug_trace_mask"></span>**Esegui debug \_ \_Maschera di traccia** (0x00000004)
+<span id="DEBUG_TRACE_MASK"></span><span id="debug_trace_mask"></span>**DEBUG \_ TRACE \_ MASK** (0x00000004)
 </dt> <dt>
 
-<span id="STATE_TRACE_MASK"></span><span id="state_trace_mask"></span>**Stato \_ di \_Maschera di traccia** (0x00000008)
+<span id="STATE_TRACE_MASK"></span><span id="state_trace_mask"></span>**STATE \_ TRACE \_ MASK** (0x00000008)
 </dt> <dt>
 
-<span id="FUNCT_TRACE_MASK"></span><span id="funct_trace_mask"></span>Funzione **\_ \_Maschera di traccia** (0x00000010)
+<span id="FUNCT_TRACE_MASK"></span><span id="funct_trace_mask"></span>**FUNCT \_ TRACE \_ MASK** (0x00000010)
 </dt> <dt>
 
-<span id="MESSAGE_TRACE_MASK"></span><span id="message_trace_mask"></span>**Messaggio \_ di \_Maschera di traccia** (0x00000020)
+<span id="MESSAGE_TRACE_MASK"></span><span id="message_trace_mask"></span>**MESSAGGIO \_ TRACE \_ MASK** (0x00000020)
 </dt> <dt>
 
-<span id="ALL_TRACE_MASK"></span><span id="all_trace_mask"></span>**Tutto \_ \_Maschera di traccia** (0xFFFFFFFF)
+<span id="ALL_TRACE_MASK"></span><span id="all_trace_mask"></span>**ALL \_ MASCHERA \_ DI TRACCIA** (0xFFFFFFFF)
 </dt> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce 1 se la funzione ha esito positivo; in caso contrario, restituisce 0.
+Questa funzione restituisce 1 se la funzione ha esito positivo. In caso contrario, restituisce 0.
 
 ## <a name="remarks"></a>Commenti
 
 Exstrace.dll è un componente facoltativo che viene installato con il Simple Mail Transfer Protocol (SMTP) e il protocollo NNTP (Network News Transfer Protocol).
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,7 +1,7 @@
 ---
-description: Carica la prima gerarchia di frame da un file con estensione x.
+description: 'Funzione D3DXLoadMeshHierarchyFromXInMemory: carica la prima gerarchia di frame da un file con estensione x.'
 ms.assetid: 428e5cfb-d6a5-4a7f-b082-2d8898e65490
-title: Funzione D3DXLoadMeshHierarchyFromXInMemory (D3dx9anim. h)
+title: Funzione D3DXLoadMeshHierarchyFromXInMemory (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 91cf119fc8907701f87ebb5bda1bb0bf45294aba
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 551810c839e619985d9a380197553f5fe4fc9be8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323515"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098209"
 ---
-# <a name="d3dxloadmeshhierarchyfromxinmemory-function"></a>D3DXLoadMeshHierarchyFromXInMemory (funzione)
+# <a name="d3dxloadmeshhierarchyfromxinmemory-function"></a>Funzione D3DXLoadMeshHierarchyFromXInMemory
 
 Carica la prima gerarchia di frame da un file con estensione x.
 
@@ -47,7 +47,7 @@ HRESULT D3DXLoadMeshHierarchyFromXInMemory(
 
 <dl> <dt>
 
-*pMemory* \[ in\]
+*pMemory* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -56,66 +56,66 @@ Puntatore a un buffer che contiene la gerarchia mesh.
 
 </dd> <dt>
 
-*SizeOfMemory* \[ in\]
+*SizeOfMemory* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Dimensioni del buffer pMemory in byte.
+Dimensioni del buffer pMemory, in byte.
 
 </dd> <dt>
 
-*MeshOptions* \[ in\]
+*MeshOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più flag dell'enumerazione [**D3DXMESH**](./d3dxmesh.md) che specificano le opzioni di creazione per la mesh.
+Combinazione di uno o più flag [**dell'enumerazione D3DXMESH**](./d3dxmesh.md) che specificano le opzioni di creazione per la mesh.
 
 </dd> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , l'oggetto dispositivo associato alla mesh.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) l'oggetto dispositivo associato alla mesh.
 
 </dd> <dt>
 
-*pAlloc* \[ in\]
+*pAlloc* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXALLOCATEHIERARCHY**](id3dxallocatehierarchy.md)**
 
-Puntatore a un'interfaccia [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) .
+Puntatore a [**un'interfaccia ID3DXAllocateHierarchy.**](id3dxallocatehierarchy.md)
 
 </dd> <dt>
 
-*pUserDataLoader* \[ in\]
+*pUserDataLoader* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXLOADUSERDATA**](id3dxloaduserdata.md)**
 
-Interfaccia fornita dall'applicazione che consente il caricamento dei dati utente. Vedere [**ID3DXLoadUserData**](id3dxloaduserdata.md).
+Interfaccia fornita dall'applicazione che consente il caricamento dei dati utente. Vedere [**ID3DXLoadUserData.**](id3dxloaduserdata.md)
 
 </dd> <dt>
 
-*ppFrameHeirarchy* \[ out\]
+*ppFrameHeirarchy* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)\***
 
-Restituisce un puntatore alla gerarchia dei frame caricati. Vedere [**D3DXFRAME**](d3dxframe.md).
+Restituisce un puntatore alla gerarchia di frame caricata. Vedere [**D3DXFRAME.**](d3dxframe.md)
 
 </dd> <dt>
 
-*ppAnimController* \[ out\]
+*ppAnimController* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
 
-Restituisce un puntatore al controller di animazione corrispondente all'animazione nel file con estensione x. Questa operazione viene creata con tracce ed eventi predefiniti. Vedere [**ID3DXAnimationController**](id3dxanimationcontroller.md).
+Restituisce un puntatore al controller di animazione corrispondente all'animazione nel file con estensione x. Viene creato con tracce ed eventi predefiniti. Vedere [**ID3DXAnimationController.**](id3dxanimationcontroller.md)
 
 </dd> </dl>
 
@@ -123,11 +123,11 @@ Restituisce un puntatore al controller di animazione corrispondente all'animazio
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Tutte le mesh nel file verranno compresse in una mesh di output. Se il file contiene una gerarchia di frame, tutte le trasformazioni verranno applicate alla rete.
+Tutte le mesh nel file verranno compresse in un'unica mesh di output. Se il file contiene una gerarchia di frame, tutte le trasformazioni verranno applicate alla mesh.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -135,8 +135,8 @@ Tutte le mesh nel file verranno compresse in una mesh di output. Se il file cont
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

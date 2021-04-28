@@ -1,7 +1,7 @@
 ---
-description: "Il metodo GetAvailable recupera l'intervallo di tempo in cui la ricerca è efficiente. Questo metodo implementa il metodo IMediaSeeking:: GetAvailable."
+description: "Metodo CSourceSeeking.GetAvailable: il metodo GetAvailable recupera l'intervallo di volte in cui la ricerca è efficiente. Questo metodo implementa il metodo IMediaSeeking::GetAvailable."
 ms.assetid: 2a7b6cdb-47c3-4aeb-89ff-ea968c6a809b
-title: Metodo CSourceSeeking. GetAvailable (Ctlutil. h)
+title: Metodo CSourceSeeking.GetAvailable (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bc661d81c49798b6fe06dc569b680e5f9839e5a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f24bc667eec4f5b21c90415e4721aa8cf0a0ad4c
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329045"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085239"
 ---
-# <a name="csourceseekinggetavailable-method"></a>Metodo CSourceSeeking. GetAvailable
+# <a name="csourceseekinggetavailable-method"></a>Metodo CSourceSeeking.GetAvailable
 
-Il `GetAvailable` metodo recupera l'intervallo di tempo in cui la ricerca è efficiente. Questo metodo implementa il metodo [**IMediaSeeking:: GetAvailable**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getavailable) .
+Il `GetAvailable` metodo recupera l'intervallo di volte in cui la ricerca è efficiente. Questo metodo implementa il [**metodo IMediaSeeking::GetAvailable.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getavailable)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,20 +46,20 @@ HRESULT GetAvailable(
 *pEarliest* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve la prima ora per una ricerca efficiente. La variabile è impostata su zero.
+Puntatore a una variabile che riceve l'ora meno recente per una ricerca efficiente. La variabile è impostata su zero.
 
 </dd> <dt>
 
-*Piatto* 
+*pLatest* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve l'ora più recente per una ricerca efficiente. La variabile è impostata sul valore della variabile membro [**CSourceSeeking:: m \_ rtDuration**](csourceseeking-m-rtduration.md) .
+Puntatore a una variabile che riceve l'ora più recente per una ricerca efficiente. La variabile è impostata sul valore della variabile membro [**CSourceSeeking::m \_ rtDuration.**](csourceseeking-m-rtduration.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Restituisce \_ OK.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

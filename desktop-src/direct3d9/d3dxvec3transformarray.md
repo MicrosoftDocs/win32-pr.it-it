@@ -1,7 +1,7 @@
 ---
-description: Trasforma una matrice (x, y, z,1) in base a una matrice specificata.
+description: 'Funzione D3DXVec3TransformArray (D3dx9math.h): trasforma una matrice (x, y, z, 1) in base a una determinata matrice.'
 ms.assetid: fd7ab674-5e42-4265-afad-ae5a00dabcdb
-title: Funzione D3DXVec3TransformArray (D3dx9math. h)
+title: Funzione D3DXVec3TransformArray (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0b515c98be82aa47801b333c4b25680e0e464b2e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 440869f42769d5c20e26083acf3fad1203e20a22
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354374"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097769"
 ---
-# <a name="d3dxvec3transformarray-function-d3dx9mathh"></a>Funzione D3DXVec3TransformArray (D3dx9math. h)
+# <a name="d3dxvec3transformarray-function-d3dx9mathh"></a>Funzione D3DXVec3TransformArray (D3dx9math.h)
 
-Trasforma una matrice (x, y, z,1) in base a una matrice specificata.
+Trasforma una matrice (x, y, z, 1) in base a una determinata matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,55 +45,55 @@ D3DXVECTOR4* D3DXVec3TransformArray(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore alla matrice [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**matrice D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*Outstride* \[ in\]
+*OutStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra i vettori nel flusso di dati di output.
+Stride tra vettori nel flusso di dati di output.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla matrice [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore alla matrice [**D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> <dt>
 
-*VStride* \[ in\]
+*VStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Stride tra i vettori nel flusso di dati di input.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3dxmatrix.md) origine.
 
 </dd> <dt>
 
 *n* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di elementi nella matrice.
 
@@ -103,13 +103,13 @@ Numero di elementi nella matrice.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a una matrice trasformata [**D3DXVECTOR4**](d3dxvector4.md) .
+Puntatore a [**una matrice trasformata D3DXVECTOR4.**](d3dxvector4.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione trasforma la matrice *PV* (x, y, z, 1) dalle *PM* della matrice.
+Questa funzione trasforma la matrice *pV* (x, y, z, 1) dalla matrice *pM*.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec3TransformArray** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec3TransformArray** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -117,8 +117,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

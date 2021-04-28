@@ -1,7 +1,7 @@
 ---
-description: Restituisce la versione normalizzata di un vettore 4D.
+description: 'Funzione D3DXVec4Normalize (D3dx9math.h): restituisce la versione normalizzata di un vettore 4D.'
 ms.assetid: e12d5dc7-b26f-41dd-b89d-1df9ba23077a
-title: Funzione D3DXVec4Normalize (D3dx9math. h)
+title: Funzione D3DXVec4Normalize (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 38d97f337711375d1d414eb78fb317672bc7c5cb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 78984c393d7caf259b4c310a31e01ed8fcbd4d47
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058701"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097659"
 ---
-# <a name="d3dxvec4normalize-function-d3dx9mathh"></a>Funzione D3DXVec4Normalize (D3dx9math. h)
+# <a name="d3dxvec4normalize-function-d3dx9mathh"></a>Funzione D3DXVec4Normalize (D3dx9math.h)
 
 Restituisce la versione normalizzata di un vettore 4D.
 
@@ -41,21 +41,21 @@ D3DXVECTOR4* D3DXVec4Normalize(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore alla struttura [**D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta la versione normalizzata del vettore.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta la versione normalizzata del vettore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec4Normalize** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec4Normalize** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

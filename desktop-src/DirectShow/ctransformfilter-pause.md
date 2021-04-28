@@ -1,7 +1,7 @@
 ---
-description: Il metodo pause sospende il filtro. Questo metodo implementa il metodo IMediaFilter::P ause.
+description: 'Metodo CTransformFilter.Pause: il metodo Pause sospende il filtro. Questo metodo implementa il metodo IMediaFilter::P ause.'
 ms.assetid: 3e3afd14-1c92-4f2b-a367-e10caaeb3b63
-title: Metodo CTransformFilter. pause (Transfrm. h)
+title: Metodo CTransformFilter.Pause (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5408b9a39f92fd68eacb83474a18da0acda6b961
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 903522b63754ff7972e4cdcf5221946442497896
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331131"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108095099"
 ---
-# <a name="ctransformfilterpause-method"></a>CTransformFilter. pause (metodo)
+# <a name="ctransformfilterpause-method"></a>Metodo CTransformFilter.Pause
 
-Il `Pause` metodo sospende il filtro. Questo metodo implementa il metodo [**IMediaFilter::P ause**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-pause) .
+Il `Pause` metodo sospende il filtro. Questo metodo implementa il [**metodo IMediaFilter::P ause.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-pause)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o un altro valore **HRESULT** .
+Restituisce S \_ OK o un altro valore **HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**StartStreaming**](ctransformfilter-startstreaming.md) . Il metodo **StartStreaming** non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override.
+Questo metodo chiama il [**metodo StartStreaming.**](ctransformfilter-startstreaming.md) Il **metodo StartStreaming** non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo chiama il metodo [**StartStreaming**](ctransformfilter-startstream
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

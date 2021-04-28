@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CAMSchedule.CAMSchedule : metodo del costruttore.'
 ms.assetid: ff210374-f394-4267-a67a-1a60a2f9538d
-title: Costruttore CAMSchedule. CAMSchedule (Dsschedule. h)
+title: Costruttore CAMSchedule.CAMSchedule (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 86e9b434aabaff3b6de12b361e1315c71d03b949
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce52a296c375f4d6e96f5fa44817a0098da9ae9f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329566"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108096429"
 ---
-# <a name="camschedulecamschedule-constructor"></a>Costruttore CAMSchedule. CAMSchedule
+# <a name="camschedulecamschedule-constructor"></a>Costruttore CAMSchedule.CAMSchedule
 
 Metodo del costruttore.
 
@@ -55,8 +55,8 @@ Handle per un evento di reimpostazione automatica.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Dsschedule. h (include Streams. h)</dt> </dl>                                                                                |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Dsschedule.h (include Streams.h)</dt> </dl>                                                                                |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

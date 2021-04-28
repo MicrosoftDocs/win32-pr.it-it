@@ -1,7 +1,7 @@
 ---
-description: Descrive un vettore a tre componenti, inclusi gli overload degli operatori e i cast di tipo.
+description: "Struttura D3DXVECTOR3 (D3dx9math.h): descrive un vettore a tre componenti che include overload dell'operatore e cast di tipi."
 ms.assetid: 4d73de4b-82fe-452a-8a1e-17208f172a03
-title: Struttura D3DXVECTOR3 (D3dx9math. h)
+title: Struttura D3DXVECTOR3 (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 2c49902677999c78737e7dec094c839cd8941f08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 29d6743f0c0c365911ebbbba66cb4d44f10792e7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058700"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108097579"
 ---
-# <a name="d3dxvector3-structure-d3dx9mathh"></a>Struttura D3DXVECTOR3 (D3dx9math. h)
+# <a name="d3dxvector3-structure-d3dx9mathh"></a>Struttura D3DXVECTOR3 (D3dx9math.h)
 
-Descrive un vettore a tre componenti, inclusi gli overload degli operatori e i cast di tipo.
+Descrive un vettore a tre componenti che include overload dell'operatore e cast di tipi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct D3DXVECTOR3 {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -55,7 +55,7 @@ Componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -63,10 +63,10 @@ Componente y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -157,7 +157,7 @@ public:
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

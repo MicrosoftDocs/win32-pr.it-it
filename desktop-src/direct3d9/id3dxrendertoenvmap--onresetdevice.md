@@ -1,7 +1,7 @@
 ---
-description: Usare questo metodo per acquisire nuovamente le risorse e salvare lo stato iniziale.
+description: 'Metodo ID3DXRenderToEnvMap::OnResetDevice: usare questo metodo per acquisire nuovamente le risorse e salvare lo stato iniziale.'
 ms.assetid: 3e231ad6-858e-4b6a-bbea-0839794bbac7
-title: 'Metodo ID3DXRenderToEnvMap:: OnResetDevice (D3dx9core. h)'
+title: Metodo ID3DXRenderToEnvMap::OnResetDevice (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5d429c08d8bad23652a080998b6a4735132522ad
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 78b9e6e1081abed40d1eaf09f6540ed11ed119a8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354519"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093129"
 ---
-# <a name="id3dxrendertoenvmaponresetdevice-method"></a>Metodo ID3DXRenderToEnvMap:: OnResetDevice
+# <a name="id3dxrendertoenvmaponresetdevice-method"></a>Metodo ID3DXRenderToEnvMap::OnResetDevice
 
 Usare questo metodo per acquisire nuovamente le risorse e salvare lo stato iniziale.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-**ID3DXRenderToEnvMap:: OnResetDevice** deve essere chiamato ogni volta che il dispositivo viene reimpostato (usando [**IDirect3DDevice9:: Reset**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset)), prima di qualsiasi altro metodo chiamato. Si tratta di una posizione ideale per acquisire nuovamente le risorse di memoria video e i blocchi di stato di acquisizione.
+**ID3DXRenderToEnvMap::OnResetDevice** deve essere chiamato ogni volta che il dispositivo viene reimpostato (usando [**IDirect3DDevice9::Reset)**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset)prima di chiamare qualsiasi altro metodo. Si tratta di un buon punto in cui è possibile acquisire nuovamente le risorse di memoria video e acquisire blocchi di stato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

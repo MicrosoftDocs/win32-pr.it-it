@@ -1,7 +1,7 @@
 ---
-description: Usa una funzione HLSL (High-Level Shader Language) compilata per riempire ogni Texel di ogni livello di mipmap di una trama.
+description: 'Funzione D3DXFillCubeTextureTX: usa una funzione HLSL (High Level Shader Language) compilata per riempire ogni texel di ogni livello mipmap di una trama.'
 ms.assetid: a0c36967-57e6-4771-8e9f-f32949c12001
-title: Funzione D3DXFillCubeTextureTX (D3dx9tex. h)
+title: Funzione D3DXFillCubeTextureTX (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 37a831ef95d50f9b0389be0f1c9937e46748f6d3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95c6d054900f3f4c4710e22c54759161800137c2
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762047"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107669"
 ---
-# <a name="d3dxfillcubetexturetx-function"></a>D3DXFillCubeTextureTX (funzione)
+# <a name="d3dxfillcubetexturetx-function"></a>Funzione D3DXFillCubeTextureTX
 
-Usa una funzione HLSL (High-Level Shader Language) compilata per riempire ogni Texel di ogni livello di mipmap di una trama.
+Usa una funzione HLSL (High-Level Shader Language) compilata per riempire ogni texel di ogni livello mipmap di una trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT D3DXFillCubeTextureTX(
 
 <dl> <dt>
 
-*pTexture* \[ in\]
+*pTexture* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DCUBETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9)**
 
-Puntatore a un oggetto [**IDirect3DCubeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) , che rappresenta la trama da riempire.
+Puntatore a [**un oggetto IDirect3DCubeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) che rappresenta la trama da riempire.
 
 </dd> <dt>
 
-*pTextureShader* \[ in\]
+*pTextureShader* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXTEXTURESHADER**](id3dxtextureshader.md)**
 
-Puntatore a un oggetto shader di trama [**ID3DXTextureShader**](id3dxtextureshader.md) .
+Puntatore a un oggetto shader con trama [**ID3DXTextureShader.**](id3dxtextureshader.md)
 
 </dd> </dl>
 
@@ -69,9 +69,9 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 La destinazione della trama deve essere una funzione HLSL che accetta contiene la semantica seguente:
 
--   Un parametro di input deve usare una semantica di posizione.
+-   Un parametro di input deve usare una semantica POSITION.
 -   Un parametro di input deve usare una semantica PSIZE.
--   La funzione deve restituire un parametro che usa la semantica del colore.
+-   La funzione deve restituire un parametro che usa la semantica COLOR.
 
 I parametri di input possono essere in qualsiasi ordine. Per un esempio, vedere [ **D3DXFillTextureTX**](d3dxfilltexturetx.md)
 
@@ -81,8 +81,8 @@ I parametri di input possono essere in qualsiasi ordine. Per un esempio, vedere 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

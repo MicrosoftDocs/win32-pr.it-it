@@ -1,7 +1,7 @@
 ---
-description: Restituisce la matrice di trasponente di una matrice.
+description: 'Funzione D3DXMatrixTranspose (D3dx9math.h): restituisce la trasposizione di matrice di una matrice.'
 ms.assetid: 0ba9682f-3dd6-48b2-82b1-6e34e8ce5452
-title: Funzione D3DXMatrixTranspose (D3dx9math. h)
+title: Funzione D3DXMatrixTranspose (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 700fc023cd15227c2cf26cd5bdcab51dc0ae3297
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9cb050061b10de963258bcd7527d3c86260d5abc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322121"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098109"
 ---
-# <a name="d3dxmatrixtranspose-function-d3dx9mathh"></a>Funzione D3DXMatrixTranspose (D3dx9math. h)
+# <a name="d3dxmatrixtranspose-function-d3dx9mathh"></a>Funzione D3DXMatrixTranspose (D3dx9math.h)
 
-Restituisce la matrice di trasponente di una matrice.
+Restituisce la trasposizione della matrice di una matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ D3DXMATRIX* D3DXMatrixTranspose(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3dxmatrix.md) origine.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di trasporre la matrice.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la trasposizione della matrice.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixTranspose** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixTranspose** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

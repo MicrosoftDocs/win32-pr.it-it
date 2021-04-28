@@ -1,7 +1,7 @@
 ---
-description: Descrive un vettore a virgola mobile a 16 bit.
+description: 'Struttura D3DXFLOAT16 (D3dx9math.h): descrive un vettore a virgola mobile a 16 bit.'
 ms.assetid: f823a327-f07a-44e9-b58a-7865e11e80eb
-title: Struttura D3DXFLOAT16 (D3dx9math. h)
+title: Struttura D3DXFLOAT16 (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 4b469c770b811ed11ec21b21d2b449df1fd75b1c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dc878575de4338a2a399f329362d79ff2e7654f0
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322692"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094269"
 ---
-# <a name="d3dxfloat16-structure-d3dx9mathh"></a>Struttura D3DXFLOAT16 (D3dx9math. h)
+# <a name="d3dxfloat16-structure-d3dx9mathh"></a>Struttura D3DXFLOAT16 (D3dx9math.h)
 
 Descrive un vettore a virgola mobile a 16 bit.
 
@@ -42,7 +42,7 @@ typedef struct D3DXFLOAT16 {
 **Valore**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -52,7 +52,7 @@ Dati a 16 bit.
 
 ## <a name="remarks"></a>Commenti
 
-I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le [**estensioni D3DXFLOAT16**](d3dxfloat16-extensions.md), che implementano costruttori di overload e operatori di assegnazione, unario e binari (inclusi uguaglianza).
+I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le estensioni [**D3DXFLOAT16**](d3dxfloat16-extensions.md), che implementano costruttori di overload e operatori di assegnazione, unari e binari (inclusa l'uguaglianza).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei t
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

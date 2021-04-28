@@ -1,7 +1,7 @@
 ---
-description: Esegue un'interpolazione di Catmull-Rom, usando i vettori 4D specificati.
+description: "Funzione D3DXVec4CatmullRom (D3dx9math.h): esegue un'interpolazione Catmull-Rom, usando i vettori 4D specificati."
 ms.assetid: 24c26e70-b02c-4621-8b7e-db16f99dddb5
-title: Funzione D3DXVec4CatmullRom (D3dx9math. h)
+title: Funzione D3DXVec4CatmullRom (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5411274c0b7dab1dacce38a00ab1621a2fff33bc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 06ba24374ee2ad4e6fd008d90c55d2990dc166f6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058704"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108115529"
 ---
-# <a name="d3dxvec4catmullrom-function-d3dx9mathh"></a>Funzione D3DXVec4CatmullRom (D3dx9math. h)
+# <a name="d3dxvec4catmullrom-function-d3dx9mathh"></a>Funzione D3DXVec4CatmullRom (D3dx9math.h)
 
-Esegue un'interpolazione di Catmull-Rom, usando i vettori 4D specificati.
+Esegue unCatmull-Rom interpolazione, usando i vettori 4D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,55 +45,55 @@ D3DXVECTOR4* D3DXVec4CatmullRom(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pV0* \[ in\]
+*pV0* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
+Puntatore a una [**struttura D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
+Puntatore a una [**struttura D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
+Puntatore a una [**struttura D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
 
 </dd> <dt>
 
-*pV3* \[ in\]
+*pV3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
+Puntatore a una [**struttura D3DXVECTOR4**](d3dxvector4.md) di origine, un vettore di posizione.
 
 </dd> <dt>
 
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di ponderazione. Vedere la sezione Osservazioni.
 
@@ -103,11 +103,11 @@ Fattore di ponderazione. Vedere la sezione Osservazioni.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che è il risultato dell'interpolazione del Catmull-Rom.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dellCatmull-Rom interpolazione.
 
 ## <a name="remarks"></a>Commenti
 
-Dato quattro punti (P1, P2, P3, P4), trovare una funzione Q (s) in modo che:
+Dati quattro punti (p1, p2, p3, p4), trovare una funzione Q(s) in modo che:
 
 
 ```
@@ -119,7 +119,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-È possibile derivare la spline Catmull-Rom dalla spline eremita impostando:
+La Catmull-Rom spline può essere derivata dalla spline hermite impostando:
 
 
 ```
@@ -133,15 +133,15 @@ t2 = (p4 - p2) / 2
 
 dove:
 
-V1 è il contenuto di pV0.
+v1 è il contenuto di pV0.
 
-V2 nel contenuto di pV1.
+v2 nel contenuto di pV1.
 
-P3 è il contenuto di pV2.
+p3 è il contenuto di pV2.
 
-P4 è il contenuto di pV3.
+p4 è il contenuto di pV3.
 
-Uso dell'equazione spline eremita:
+Uso dell'equazione spline hermite:
 
 
 ```
@@ -150,7 +150,7 @@ Q(s) = (2s3 - 3s2 + 1)v1 + (-2s3 + 3s2)v2 + (s3 - 2s2 + s)t1 + (s3 - s2)t2
 
 
 
-e sostituendo V1, V2, T1, T2 restituisce:
+e sostituendo v1, v2, t1, t2 produce:
 
 
 ```
@@ -159,7 +159,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Questo può essere ridisposto come segue:
+Questa operazione può essere ridisposta nel modo seguente:
 
 
 ```
@@ -174,8 +174,8 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

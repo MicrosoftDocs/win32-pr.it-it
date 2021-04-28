@@ -1,7 +1,7 @@
 ---
-description: Determina il prodotto della matrice corrente e della matrice specificata.
+description: 'Metodo ID3DXMATRIXStack::MultMatrix (D3dx9math.h): determina il prodotto della matrice corrente e della matrice specificata.'
 ms.assetid: a673ce82-6fed-4a3f-8c37-d0db11195f06
-title: 'Metodo ID3DXMATRIXStack:: MultMatrix (D3dx9math. h)'
+title: Metodo ID3DXMATRIXStack::MultMatrix (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fc9b3fb49387e354645c8a3c09c7572b4da80109
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7361223e8fbcbae0f81641718b216c5903ff6319
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322335"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093529"
 ---
-# <a name="id3dxmatrixstackmultmatrix-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack:: MultMatrix (D3dx9math. h)
+# <a name="id3dxmatrixstackmultmatrix-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack::MultMatrix (D3dx9math.h)
 
 Determina il prodotto della matrice corrente e della matrice specificata.
 
@@ -40,12 +40,12 @@ HRESULT MultMatrix(
 
 <dl> <dt>
 
-*pMat* \[ in\]
+*pMat* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) da moltiplicare con la matrice corrente.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) da moltiplicare con la matrice corrente.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo moltiplica la matrice specificata con la matrice corrente (la trasformazione è relativa all'origine mondiale corrente).
+Questo metodo moltiplica a destra la matrice specificata nella matrice corrente (la trasformazione riguarda l'origine globale corrente).
 
 
 ```
@@ -66,7 +66,7 @@ m_pstack[m_currentPos] = m_pstack[m_currentPos] * (*pMat);
 
 
 
-Questo metodo non aggiunge un elemento allo stack, ma sostituisce la matrice corrente con il prodotto della matrice corrente e della matrice specificata.
+Questo metodo non aggiunge un elemento nello stack, ma sostituisce la matrice corrente con il prodotto della matrice corrente e la matrice specificata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Questo metodo non aggiunge un elemento allo stack, ma sostituisce la matrice cor
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

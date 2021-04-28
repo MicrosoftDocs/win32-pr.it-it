@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetA recupera un elemento dalla raccolta in base a un indice in base zero.
+description: 'Metodo IPortableDevicePropVariantCollection::GetAt: il metodo GetAt recupera un elemento dalla raccolta in base a un indice in base zero.'
 ms.assetid: c7119ba6-e6fc-4cb6-a8ab-3bf7b6bfe850
-title: 'Metodo IPortableDevicePropVariantCollection:: GetA (PortableDeviceTypes. h)'
+title: Metodo IPortableDevicePropVariantCollection::GetAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 0833c69b537fa230320ef69707a6f4302a8ca1ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b901e8fcfa065813e4c0942632f80901800ef0a9
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325946"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106799"
 ---
-# <a name="iportabledevicepropvariantcollectiongetat-method"></a>IPortableDevicePropVariantCollection:: GetA (metodo)
+# <a name="iportabledevicepropvariantcollectiongetat-method"></a>Metodo IPortableDevicePropVariantCollection::GetAt
 
-Il metodo **Geta** recupera un elemento dalla raccolta in base a un indice in base zero.
+Il **metodo GetAt** recupera un elemento dalla raccolta in base a un indice in base zero.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,30 +41,30 @@ HRESULT GetAt(
 
 <dl> <dt>
 
-*dwIndex* \[ in\]
+*dwIndex* \[ Pollici\]
 </dt> <dd>
 
 **DWORD** che contiene l'indice in base zero dell'elemento da recuperare.
 
 </dd> <dt>
 
-*pValue* \[ out\]
+*pValue* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura **PROPVARIANT** . Il chiamante è responsabile della liberazione della memoria chiamando **PropVariantClear**.
+Puntatore a **una struttura PROPVARIANT.** Il chiamante è responsabile della liberazione di questa memoria chiamando **PropVariantClear**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                               |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è riuscito.<br/>                          |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Un argomento obbligatorio del puntatore è **null**.<br/>      |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è riuscito.<br/>                          |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>    | Un argomento del puntatore obbligatorio era **NULL.**<br/>      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | L'indice passato non è compreso nell'intervallo.<br/> |
 
 
@@ -73,7 +73,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [recupero delle categorie funzionali supportate da un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md).
+Per un esempio di come usare questo metodo, vedere [Recupero delle categorie funzionali supportate da un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Per un esempio di come usare questo metodo, vedere [recupero delle categorie fun
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -96,10 +96,10 @@ Per un esempio di come usare questo metodo, vedere [recupero delle categorie fun
 [Recupero di un identificatore di oggetto da un identificatore univoco permanente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)
 </dt> <dt>
 
-[Recupero degli eventi del servizio supportati](retrieving-supported-events.md)
+[Recupero di eventi del servizio supportati](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recupero dei formati di servizio supportati](retrieving-supported-formats.md)
+[Recupero di formati di servizio supportati](retrieving-supported-formats.md)
 </dt> <dt>
 
 [Recupero di metodi di servizio supportati](retrieving-supported-methods.md)
@@ -111,7 +111,7 @@ Per un esempio di come usare questo metodo, vedere [recupero delle categorie fun
 [Recupero delle categorie funzionali supportate da un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md)
 </dt> <dt>
 
-[Recupero degli identificatori di oggetti funzionali per un dispositivo](retrieving-the-functional-object-identifiers-for-a-device.md)
+[Recupero degli identificatori di oggetto funzionale per un dispositivo](retrieving-the-functional-object-identifiers-for-a-device.md)
 </dt> <dt>
 
 [Recupero delle funzionalità di rendering supportate da un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)
