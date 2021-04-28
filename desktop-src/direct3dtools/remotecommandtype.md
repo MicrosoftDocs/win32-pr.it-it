@@ -1,5 +1,5 @@
 ---
-description: Enumerazione utilizzata per la comunicazione tra il motore di acquisizione e un host, ad esempio Visual Studio Diagnostica della grafica.
+description: '<span id="vspixengine.remotecommandtype"></span>Enumerazione RemoteCommandType: enumerazione utilizzata per comunicare tra il motore di acquisizione e un host (ad esempio Visual Studio Diagnostica della grafica).'
 MS-HAID: vspixengine.RemoteCommandType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 63b94ace0818e2057a87c0f3962bb3967843bcfc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ed57b9b044613351e99096a8c8cb741b8ad7a269
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104049036"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110507"
 ---
 # <a name="span-idvspixengineremotecommandtypespanremotecommandtype-enumeration"></a><span id="vspixengine.remotecommandtype"></span>Enumerazione RemoteCommandType
 
-Enumerazione utilizzata per la comunicazione tra il motore di acquisizione e un host, ad esempio Visual Studio Diagnostica della grafica.
+Enumerazione utilizzata per comunicare tra il motore di acquisizione e un host, ad esempio Visual Studio Diagnostica della grafica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ Enumerazione utilizzata per la comunicazione tra il motore di acquisizione e un 
 Avvia la comunicazione.
 
 <span id="RunExperiment"></span><span id="runexperiment"></span><span id="RUNEXPERIMENT"></span>**RunExperiment**  
-Avvia una sessione di acquisizione Diagnostica della grafica (un esperimento).
+Avvia una Diagnostica della grafica di acquisizione (un esperimento).
 
 <span id="RunAction"></span><span id="runaction"></span><span id="RUNACTION"></span>**RunAction**  
-Avvia un'acquisizione (identica alla schermata di stampa). Inviato da un host durante l'acquisizione di un frame.
+Avvia un'acquisizione (come quando si tocca la schermata di stampa). Inviato da un host durante l'acquisizione di un frame.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

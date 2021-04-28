@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un punto di accesso al servizio e il dispositivo logico che lo implementa.
+description: "Msvm_FcDeviceSAPImplementation classe : rappresenta un'associazione tra un punto di accesso del servizio e il dispositivo logico che lo implementa."
 ms.assetid: 5510c179-09e6-4762-b9b3-68ed49eafd66
-title: Classe Msvm_FcDeviceSAPImplementation
+title: Msvm_FcDeviceSAPImplementation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: bc40f25e3b288155e713415aa512d629b538d1cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0df7a198b3ee52d131800073f8be30d51d93181
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307920"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119029"
 ---
-# <a name="msvm_fcdevicesapimplementation-class"></a>\_Classe MSVM FcDeviceSAPImplementation
+# <a name="msvm_fcdevicesapimplementation-class"></a>Classe Msvm \_ FcDeviceSAPImplementation
 
-Rappresenta un'associazione tra un punto di accesso al servizio e il dispositivo logico che lo implementa. La cardinalità di questa associazione è molti-a-molti. Un punto di accesso al servizio (SAP) può essere fornito da più di un dispositivo logico, operando insieme. Qualsiasi dispositivo può fornire più di un SAP. Quando molti dispositivi logici sono associati a un singolo SAP, si presuppone che questi elementi funzionino insieme per fornire il punto di accesso. Se sono presenti implementazioni diverse di un SAP, ognuna di queste implementazioni genererà le singole creazioni di istanze dell'oggetto SAP. Queste singole creazioni di istanze avrebbero quindi le associazioni alle implementazioni univoche.
+Rappresenta un'associazione tra un punto di accesso del servizio e il dispositivo logico che lo implementa. La cardinalità di questa associazione è molti-a-molti. Un punto di accesso al servizio (SAP) può essere fornito da più di un dispositivo logico, operando in combinazione. Qualsiasi dispositivo può fornire più di un SAP. Quando molti dispositivi logici sono associati a un singolo SAP, si presuppone che questi elementi funzionino in combinazione per fornire il punto di accesso. Se esistono implementazioni diverse di sap, ognuna di queste implementazioni comporterebbe la creazione di singole istanze dell'oggetto SAP. Queste singole istanze hanno quindi associazioni alle implementazioni univoche.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ class Msvm_FcDeviceSAPImplementation : CIM_DeviceSAPImplementation
 
 ## <a name="members"></a>Members
 
-La **classe \_ FcDeviceSAPImplementation di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ FcDeviceSAPImplementation** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ FcDeviceSAPImplementation di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ FcDeviceSAPImplementation** ha queste proprietà.
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Tipo di dati: **CIM \_ FCPort**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
 Riferimento a una classe derivata da **CIM \_ FCPort** che rappresenta il dispositivo logico.
@@ -70,16 +70,16 @@ Riferimento a una classe derivata da **CIM \_ FCPort** che rappresenta il dispos
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSVM \_ FcEndpoint**
+Tipo di dati: **Msvm \_ FcEndpoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ FcEndpoint**](msvm-fcendpoint.md) che rappresenta il SAP che sta utilizzando l'attività **precedente**.
+Riferimento a un'istanza della [**classe Msvm \_ FcEndpoint**](msvm-fcendpoint.md) che rappresenta il sap che usa **l'attività precedente.**
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Riferimento a un'istanza della classe [**MSVM \_ FcEndpoint**](msvm-fcendpoint.m
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

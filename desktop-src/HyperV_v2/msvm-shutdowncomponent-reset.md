@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_ShutdownComponent : richiede una reimpostazione.'
 ms.assetid: cdd14090-4ea1-4547-b8a5-fd40f7e494f5
-title: Reimposta il metodo della classe Msvm_ShutdownComponent
+title: Metodo Reset della classe Msvm_ShutdownComponent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 75502c8602adf3a357e04a9aef51dc6d0ea47be5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77c651ce429764edba069be21b246a8623cd0e76
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232266"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111369"
 ---
-# <a name="reset-method-of-the-msvm_shutdowncomponent-class"></a>Metodo Reset della \_ classe ShutdownComponent di MSVM
+# <a name="reset-method-of-the-msvm_shutdowncomponent-class"></a>Metodo Reset della classe Msvm \_ ShutdownComponent
 
 Richiede una reimpostazione.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_ShutdownComponent MSVM**](msvm-shutdowncomponent.md)
+[**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md)
 </dt> </dl>
 
  

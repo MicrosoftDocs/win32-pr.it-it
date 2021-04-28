@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando l'utente disegna un nuovo tratto su un tablet.
+description: "Evento InkPicture.Stroke: si verifica quando l'utente disegna un nuovo tratto su qualsiasi tablet."
 ms.assetid: 2829b65a-6120-402e-91e3-5587d1f456f9
-title: Evento InkPicture. Stroke (Msinkaut. h)
+title: Evento InkPicture.Stroke (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b85d2410141c2d6d5f7ae92408b7d6da49a447f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b181c8dc46348c76bd9c2d015d4a97c1f6911ff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317935"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113699"
 ---
-# <a name="inkpicturestroke-event"></a>Evento InkPicture. Stroke
+# <a name="inkpicturestroke-event"></a>InkPicture.Stroke - evento
 
-Si verifica quando l'utente disegna un nuovo tratto su un tablet.
+Si verifica quando l'utente disegna un nuovo tratto su qualsiasi tablet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,24 +32,24 @@ void Stroke(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **Stroke** .
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato **l'evento Stroke.**
 
 </dd> <dt>
 
-*Tratto* \[ in\]
+*Tratto* \[ Pollici\]
 </dt> <dd>
 
 Oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) raccolto.
 
 </dd> <dt>
 
-*Annulla* \[ in uscita\]
+*Annulla* \[ in, out\]
 </dt> <dd>
 
-**Variante \_ TRUE** per annullare la raccolta del tratto; in caso contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** per annullare la raccolta del tratto. in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
@@ -59,12 +59,12 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle interfacce **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** dispatch (dispinterfaces) con ID DISPID \_ ICEStroke.
+Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID DISPID \_ ICEStroke.
 
-L'evento **Stroke** si verifica in modalità Select o Erase, non solo quando si inserisce l'input penna. A tale scopo, è necessario monitorare la modalità di modifica (che è responsabile dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma grazie a una maggiore consapevolezza degli eventi della piattaforma.
+**L'evento Stroke** si verifica in modalità di selezione o cancellazione, non solo quando si inserisce l'input penna. A questo scopo, è necessario monitorare la modalità di modifica (che si è responsabili dell'impostazione) e conoscere la modalità prima di interpretare l'evento. Il vantaggio di questo requisito è una maggiore libertà di innovazione sulla piattaforma attraverso una maggiore consapevolezza degli eventi della piattaforma.
 
 > [!Note]  
-> L'evento **Stroke** si verifica quando l'utente completa il disegno di un tratto, non quando un tratto viene aggiunto alla raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) . Quando l'utente inizia per la prima volta a disegnare un tratto, viene aggiunto immediatamente alla raccolta InkStrokes. Tuttavia, l'evento **Stroke** non viene eseguito fino al completamento del tratto. Di conseguenza, i tratti possono esistere nella raccolta InkStrokes che il gestore dell'evento **Stroke** non ha rilevato.
+> **L'evento Stroke** si verifica quando l'utente termina di disegnare un tratto, non quando viene aggiunto un tratto alla [raccolta InkStrokes.](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) Quando l'utente inizia a disegnare un tratto per la prima volta, viene aggiunto immediatamente alla raccolta InkStrokes. Tuttavia, **l'evento Stroke** non si verifica fino al completamento del tratto. Di conseguenza, i tratti possono esistere nella raccolta InkStrokes che il gestore dell'evento **Stroke** non ha visto.
 
  
 
@@ -74,9 +74,9 @@ L'evento **Stroke** si verifica in modalità Select o Erase, non solo quando si 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -85,13 +85,13 @@ L'evento **Stroke** si verifica in modalità Select o Erase, non solo quando si 
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[**\[Controllo InkPicture evento StrokesAdded\]**](inkpicture-strokesadded.md)
+[**Controllo InkPicture dell'evento \[ StrokesAdded\]**](inkpicture-strokesadded.md)
 </dt> <dt>
 
-[**\[Controllo InkPicture evento StrokesDeleted\]**](inkpicture-strokesdeleted.md)
+[**Controllo InkPicture dell'evento \[ StrokesDeleted\]**](inkpicture-strokesdeleted.md)
 </dt> <dt>
 
 [**Interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)

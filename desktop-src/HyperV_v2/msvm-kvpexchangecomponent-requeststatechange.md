@@ -1,5 +1,5 @@
 ---
-description: Richiede una modifica dello stato.
+description: 'Metodo RequestStateChange della classe Msvm_KvpExchangeComponent : richiede una modifica dello stato.'
 ms.assetid: 12f46f41-4c35-4aa8-a71f-6f2fa72a7314
 title: Metodo RequestStateChange della classe Msvm_KvpExchangeComponent
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7a0e41fc726914e35d1e58f7cfd46060ed12adb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ada860043e2339b7c24ad250b00fd0b87a289c0b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307874"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118909"
 ---
-# <a name="requeststatechange-method-of-the-msvm_kvpexchangecomponent-class"></a>Metodo RequestStateChange della classe MSVM \_ KvpExchangeComponent
+# <a name="requeststatechange-method-of-the-msvm_kvpexchangecomponent-class"></a>Metodo RequestStateChange della classe Msvm \_ KvpExchangeComponent
 
 Richiede una modifica dello stato.
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState** dell'istanza se il codice restituito del metodo **RequestStateChange** è 0 o 4096. Per ulteriori informazioni, vedere la descrizione delle proprietà **EnabledState** e **RequestedState** per l'elemento. Deve essere uno dei valori seguenti.
+Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState** dell'istanza se il codice restituito del **metodo RequestStateChange** è 0 o 4096. Per altre informazioni, vedi la descrizione delle **proprietà EnabledState** e **RequestedState** per l'elemento . Deve essere uno dei valori seguenti.
 
 <dt>
 
@@ -64,7 +64,7 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresto** (4)
+**Arresta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -92,7 +92,7 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Mettere in stato** (9)
+**Inattiva** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -106,38 +106,38 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reset** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Può contenere un riferimento al [**\_ ConcreteJob CIM**](cim-concretejob.md) creato per tenere traccia della transizione di stato iniziata dalla chiamata al metodo.
+Può contenere un riferimento al [**processo \_ concreto CIM**](cim-concretejob.md) creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Periodo di timeout che specifica la quantità massima di tempo per cui il client prevede che la transizione al nuovo stato venga eseguita. Per specificare **TimeoutPeriod**, è necessario utilizzare il formato intervallo. Il valore 0 o un parametro null indica che il client non dispone di requisiti temporali per la transizione.
+Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare **TimeoutPeriod**. Il valore 0 o un parametro Null indica che il client non ha requisiti di tempo per la transizione.
 
-Se questa proprietà non contiene 0 o null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito ' use of timeout parameter not supported '.
+Se questa proprietà non contiene 0 o Null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito "Utilizzo del parametro di timeout non supportato".
 
 </dd> </dl>
 
@@ -161,8 +161,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -171,7 +171,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_KvpExchangeComponent MSVM**](msvm-kvpexchangecomponent.md)
+[**Msvm \_ KvpExchangeComponent**](msvm-kvpexchangecomponent.md)
 </dt> </dl>
 
  

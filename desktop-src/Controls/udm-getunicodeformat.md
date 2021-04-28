@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_GETUNICODEFORMAT (COMmctrl. h)
-description: Recupera il flag del formato carattere Unicode per il controllo.
+title: UDM_GETUNICODEFORMAT messaggio (Commctrl.h)
+description: 'UDM_GETUNICODEFORMAT: recupera il flag di formato carattere Unicode per il controllo.'
 ms.assetid: 8c09d37b-95a2-49cd-b578-919f9c39fa8b
 keywords:
-- Controlli di Windows Message UDM_GETUNICODEFORMAT
+- UDM_GETUNICODEFORMAT di windows del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b2f9eef604af6cf5dfcefbf1e3e03dec561ac21
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 273164df7f7021f39ec26a22eb637e8b9969fc24
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964964"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113590"
 ---
-# <a name="udm_getunicodeformat-message"></a>\_Messaggio UDM GETUNICODEFORMAT
+# <a name="udm_getunicodeformat-message"></a>Messaggio UDM \_ GETUNICODEFORMAT
 
-Recupera il flag del formato carattere Unicode per il controllo.
+Recupera il flag di formato carattere Unicode per il controllo .
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Restituisce il flag di formato Unicode per il controllo. Se questo valore è div
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) .
+Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CCM \_ GETUNICODEFORMAT.**](ccm-getunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT UDM**](udm-setunicodeformat.md)
+[**UDM \_ SETUNICODEFORMAT**](udm-setunicodeformat.md)
 </dt> </dl>
 
  

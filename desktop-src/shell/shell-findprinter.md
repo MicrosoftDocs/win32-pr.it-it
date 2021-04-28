@@ -1,7 +1,7 @@
 ---
-description: Consente di visualizzare la finestra di dialogo Trova stampante.
+description: 'Metodo Shell.FindPrinter : visualizza la finestra di dialogo Trova stampante.'
 ms.assetid: 61C700CF-623B-4c99-A211-AC26A1E4AE85
-title: Metodo Shell. FindPrinter (shldisp. h)
+title: Metodo Shell.FindPrinter (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 1286bb7247359ea91d29a53f8f0eaa13b55be5e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17d04b60de2b52ca3d2f17fbdccf7de93ac095b3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980634"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104309"
 ---
-# <a name="shellfindprinter-method"></a>Shell. FindPrinter, metodo
+# <a name="shellfindprinter-method"></a>Metodo Shell.FindPrinter
 
-Consente di visualizzare la finestra di dialogo **Trova stampante** .
+Consente di visualizzare **la finestra di dialogo** Trova stampante .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ Shell.FindPrinter( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il nome della stampante.
+Valore **String** contenente il nome della stampante.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene la posizione della stampante.
+Valore **String** contenente il percorso della stampante.
 
 </dd> <dt>
 
@@ -76,21 +76,21 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il modello di stampante.
+Valore **String** contenente il modello della stampante.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Se si assegnano stringhe a uno o più parametri facoltativi, questi vengono visualizzati come valori predefiniti nel controllo di modifica associato quando viene visualizzata la finestra di dialogo **Trova stampante** . L'utente può accettare o eseguire l'override di questi valori. Se non viene assegnato alcun valore a un parametro, la casella di modifica associata è vuota e l'utente deve immettere un valore.
+Se si assegnano stringhe a uno o più parametri facoltativi, queste vengono  visualizzate come valori predefiniti nel controllo di modifica associato quando viene visualizzata la finestra di dialogo Trova stampante . L'utente può accettare o eseguire l'override di questi valori. Se a un parametro non viene assegnato alcun valore, la casella di modifica associata è vuota e l'utente deve immettere un valore.
 
 Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **FindPrinter** per visualizzare la finestra di dialogo **Trova stampante** per una particolare applicazione. L'utilizzo viene visualizzato per JScript, VBScript e Visual Basic.
+Negli esempi seguenti viene illustrato l'utilizzo di **FindPrinter** per visualizzare la **finestra di** dialogo Trova stampante per una determinata applicazione. L'utilizzo viene visualizzato per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -106,7 +106,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -131,11 +131,11 @@ VBScript
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

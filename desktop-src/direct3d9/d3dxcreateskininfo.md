@@ -1,7 +1,7 @@
 ---
-description: Crea un oggetto mesh dell'interfaccia vuota utilizzando un dichiaratore.
+description: 'Funzione D3DXCreateSkinInfo: crea un oggetto mesh di interfaccia vuoto usando un dichiaratore.'
 ms.assetid: c98da2e5-a9eb-4070-8846-b346b5c57fb3
-title: Funzione D3DXCreateSkinInfo (D3DX9Mesh. h)
+title: Funzione D3DXCreateSkinInfo (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 83ee214eb997414e113256060dbe59d3cd47d1a3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: da582d791b27d30c78583972e6f598af8af3eb9e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886283"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108102739"
 ---
-# <a name="d3dxcreateskininfo-function"></a>D3DXCreateSkinInfo (funzione)
+# <a name="d3dxcreateskininfo-function"></a>Funzione D3DXCreateSkinInfo
 
-Crea un oggetto mesh dell'interfaccia vuota utilizzando un dichiaratore.
+Crea un oggetto mesh dell'interfaccia vuota usando un dichiaratore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT D3DXCreateSkinInfo(
 
 <dl> <dt>
 
-*NumVertices* \[ in\]
+*NumVertices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -52,30 +52,30 @@ Numero di vertici per la mesh dell'interfaccia.
 
 </dd> <dt>
 
-*pDeclaration* \[ in\]
+*pDeclaration* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , che descrive il formato del vertice per la mesh restituita.
+Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrive il formato del vertice per la mesh restituita.
 
 </dd> <dt>
 
-*NumBones* \[ in\]
+*NumBones* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero di ossa per la mesh dell'interfaccia.
+Numero di elementi per la mesh dell'interfaccia.
 
 </dd> <dt>
 
-*ppSkinInfo* \[ out\]
+*ppSkinInfo* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXSKININFO**](id3dxskininfo.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXSkinInfo**](id3dxskininfo.md) , che rappresenta l'oggetto mesh interfaccia creato.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXSkinInfo,**](id3dxskininfo.md) che rappresenta l'oggetto mesh dell'interfaccia creata.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXSkinInfo**](id3dxskininfo.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere: E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere: E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Usare [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) per popolare l'oggetto mesh interfaccia vuota restituito da questo metodo.
+Usare [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) per popolare l'oggetto mesh dell'interfaccia vuota restituito da questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Usare [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) per popolare l'
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

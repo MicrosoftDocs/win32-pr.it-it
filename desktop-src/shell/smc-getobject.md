@@ -1,6 +1,6 @@
 ---
-description: Richiede un puntatore a un oggetto specificato.
-title: Messaggio SMC_GETOBJECT (ShObjIdl. h)
+description: 'SMC_GETOBJECT messaggio: richiede un puntatore a un oggetto specificato.'
+title: SMC_GETOBJECT messaggio (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 36e8f304-a92a-485f-8413-b9c416087ec9
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5d0c0592356bff13e60c122b3c88cad05733e4f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58741290d741cc18fd788282d0f302ef87bb15dd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104994845"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108100439"
 ---
-# <a name="smc_getobject-message"></a>Messaggio di SMC \_ GETobject
+# <a name="smc_getobject-message"></a>Messaggio GETOBJECT di SMC \_
 
 Richiede un puntatore a un oggetto specificato.
 
@@ -38,14 +38,14 @@ SMC_GETOBJECT
 
 <dl> <dt>
 
-*IID* 
+*Iid* 
 </dt> <dd>
 
 IID associato all'oggetto richiesto.
 
 </dd> <dt>
 
-*PV* 
+*Pv* 
 </dt> <dd>
 
 Puntatore void che riceve un puntatore all'interfaccia richiesta.
@@ -54,18 +54,18 @@ Puntatore void che riceve un puntatore all'interfaccia richiesta.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituire S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questa notifica viene ricevuta dal metodo [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) . Creare l'oggetto richiesto e assegnare un puntatore all'interfaccia richiesta a *PV*.
+Questa notifica viene ricevuta dal [**metodo IShellMenuCallback::CallbackSM.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) Creare l'oggetto richiesto e assegnare un puntatore all'interfaccia richiesta *a pv*.
 
-È possibile che vengano richieste le interfacce seguenti.
+Possono essere richieste le interfacce seguenti.
 
 -   [**IShellMenu**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellmenu)
 -   [**IContextMenu**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu)
 -   [**IShellMenuCallback**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellmenucallback)
--   [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget)
+-   [**Idroptarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questa notifica viene ricevuta dal metodo [**IShellMenuCallback:: CallbackSM**](
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>ShObjIdl. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

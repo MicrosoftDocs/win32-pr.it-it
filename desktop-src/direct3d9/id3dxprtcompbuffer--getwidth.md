@@ -1,7 +1,7 @@
 ---
-description: Recupera la larghezza della trama in pixel.
+description: 'Metodo ID3DXPRTCompBuffer::GetWidth: recupera la larghezza della trama, in pixel.'
 ms.assetid: 32a69449-327b-4f12-b3ff-fe9caeab783b
-title: 'Metodo ID3DXPRTCompBuffer:: getWidth (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTCompBuffer::GetWidth (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c8d7e1d2ad1a503dc0e3424a9d8a9692b38b9e45
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7fc679a73ea864ef4aaca8b6dcd45cf459710a79
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235179"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108107229"
 ---
-# <a name="id3dxprtcompbuffergetwidth-method"></a>Metodo ID3DXPRTCompBuffer:: GetWidth
+# <a name="id3dxprtcompbuffergetwidth-method"></a>Metodo ID3DXPRTCompBuffer::GetWidth
 
-Recupera la larghezza della trama in pixel.
+Recupera la larghezza della trama, in pixel.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Restituisce la larghezza, in pixel, della trama.
+Restituisce la larghezza della trama, in pixel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce la larghezza, in pixel, della trama.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -62,7 +62,7 @@ Restituisce la larghezza, in pixel, della trama.
 [ID3DXPRTCompBuffer](id3dxprtcompbuffer.md)
 </dt> <dt>
 
-[**ID3DXPRTCompBuffer:: GetHeight**](id3dxprtcompbuffer--getheight.md)
+[**ID3DXPRTCompBuffer::GetHeight**](id3dxprtcompbuffer--getheight.md)
 </dt> </dl>
 
  

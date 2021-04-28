@@ -1,5 +1,5 @@
 ---
-description: arresta il servizio.
+description: 'Metodo StopService della classe Msvm_ReplicationService: arresta il servizio.'
 ms.assetid: ff92e1ba-3093-4e78-8729-9f98a22a9f74
 title: Metodo StopService della classe Msvm_ReplicationService
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4181ec216782a06655b83fc34b0c4865b72284c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75f70c782ff887076a8ddc6a16a6d9cbdadba16e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312889"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111489"
 ---
-# <a name="stopservice-method-of-the-msvm_replicationservice-class"></a>Metodo StopService della classe MSVM \_ ReplicationService
+# <a name="stopservice-method-of-the-msvm_replicationservice-class"></a>Metodo StopService della classe Msvm \_ ReplicationService
 
 arresta il servizio.
 
@@ -57,8 +57,8 @@ Il metodo restituisce uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Il metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_ReplicationService MSVM**](msvm-replicationservice.md)
+[**Msvm \_ ReplicationService**](msvm-replicationservice.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_NCHITTEST (COMmctrl. h)
-description: Inviato da un controllo Rebar quando il controllo riceve un \_ messaggio WM NCHITTEST. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_NCHITTEST codice di notifica (Commctrl.h)
+description: 'NM_NCHITTEST di notifica: inviato da un controllo rebar quando il controllo riceve un messaggio \_ WM NCHITTEST. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.'
 ms.assetid: 0e088b14-b912-4f60-9d25-cd0a0ba264c3
 keywords:
-- Controlli di Windows per il codice di notifica NM_NCHITTEST
+- NM_NCHITTEST codice di notifica controlli Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8af39fd792ecb9aeb463957f49f5722737e6ee5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 68ede0ac017fbe5146cd68e51e2a38c7f66c7898
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301704"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112319"
 ---
-# <a name="nm_nchittest-notification-code"></a>\_Codice di notifica NCHITTEST Nm
+# <a name="nm_nchittest-notification-code"></a>Codice \_ di notifica NM NCHITTEST
 
-Inviato da un controllo Rebar quando il controllo riceve un messaggio [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) . Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo rebar quando il controllo riceve un [**messaggio \_ WM NCHITTEST.**](/windows/desktop/inputdev/wm-nchittest) Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_NCHITTEST
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) che contiene informazioni sul codice di notifica. Il membro *PT* contiene le coordinate del mouse del messaggio di hit test.
+Puntatore a una [**struttura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) che contiene informazioni sul codice di notifica. Il *membro pt* contiene le coordinate del mouse del messaggio di hit test.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se non diversamente specificato, restituire zero per consentire al controllo di eseguire l'elaborazione predefinita del messaggio di hit test oppure restituire uno dei valori HT \* documentati in [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) per eseguire l'override dell'elaborazione dell'hit test predefinito.
+Se non diversamente specificato, restituire zero per consentire al controllo di eseguire l'elaborazione predefinita del messaggio di hit test o restituire uno dei valori HT \* documentati in [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) per eseguire l'override dell'elaborazione dell'hit test predefinita.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Se non diversamente specificato, restituire zero per consentire al controllo di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

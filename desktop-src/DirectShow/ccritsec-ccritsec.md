@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CCritSec.CCritSec : metodo costruttore.'
 ms.assetid: e8e9138a-6c39-41de-a7f8-d9e9c4fe5ab6
-title: Costruttore CCritSec. CCritSec (Wxutil. h)
+title: Costruttore CCritSec.CCritSec (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6baeadace7c1f8d8d3ad5dee1ff5c9dace1c6907
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de2b852ffc9a12622a4560ae834a3347b1e07552
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333733"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119799"
 ---
-# <a name="ccritsecccritsec-constructor"></a>Costruttore CCritSec. CCritSec
+# <a name="ccritsecccritsec-constructor"></a>Costruttore CCritSec.CCritSec
 
 Metodo del costruttore.
 
@@ -42,7 +42,7 @@ Questo costruttore non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama la funzione [**InitializeCriticalSection**](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection) per inizializzare la sezione critica.
+Questo metodo chiama la [**funzione InitializeCriticalSection**](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection) per inizializzare la sezione critica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Questo metodo chiama la funzione [**InitializeCriticalSection**](/windows/deskto
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per il metodo GetMetadataQueryWriter.
+description: IWICBitmapFrameEncode_GetMetadataQueryWriter_Proxy funzione proxy per il metodo GetMetadataQueryWriter.
 ms.assetid: b2c61dee-b72b-408c-8cb9-de2587587f1f
-title: Funzione IWICBitmapFrameEncode_GetMetadataQueryWriter_Proxy
+title: IWICBitmapFrameEncode_GetMetadataQueryWriter_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: b6668ffc4261310bfa76424afcae92e14c4ed921
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89eb7342277d335c78ee2bc6807f2fc4d170bb9b
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751223"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113609"
 ---
-# <a name="iwicbitmapframeencode_getmetadataquerywriter_proxy-function"></a>IWICBitmapFrameEncode \_ GetMetadataQueryWriter- \_ funzione proxy
+# <a name="iwicbitmapframeencode_getmetadataquerywriter_proxy-function"></a>Funzione proxy IWICBitmapFrameEncode \_ GetMetadataQueryWriter \_
 
-Funzione proxy per il metodo [**GetMetadataQueryWriter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-getmetadataquerywriter) .
+Funzione proxy per il [**metodo GetMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-getmetadataquerywriter)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT IWICBitmapFrameEncode_GetMetadataQueryWriter_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Puntatore a questo oggetto [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Puntatore a [**questo oggetto IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)
 
 </dd> <dt>
 
-*ppIMetadataQueryWriter* \[ out\]
+*ppIMetadataQueryWriter* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter)\*\***
 
-Puntatore che riceve un writer di query dei metadati per il frame.
+Puntatore che riceve un writer di query di metadati per il frame.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntatore che riceve un writer di query dei metadati per il frame.
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -73,9 +73,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

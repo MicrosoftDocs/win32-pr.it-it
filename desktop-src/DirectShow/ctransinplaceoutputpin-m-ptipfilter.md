@@ -1,7 +1,7 @@
 ---
-description: Puntatore al filtro che ha creato questo pin.
+description: 'CTransInPlaceOutputPin::m_pTIPFilter membro: puntatore al filtro che ha creato questo pin.'
 ms.assetid: e7939bce-d832-45e6-94fd-2f5e07792eef
-title: 'Membro CTransInPlaceOutputPin:: m_pTIPFilter (Transip. h)'
+title: Membro CTransInPlaceOutputPin::m_pTIPFilter (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 67a6c953ab42546be442ded5b06e7b87c87c22ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e07ecb43ce879634f7c149adebeb4b01416e65e3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326175"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094689"
 ---
-# <a name="ctransinplaceoutputpinm_ptipfilter-member"></a>Membro pTIPFilter di CTransInPlaceOutputPin:: m \_
+# <a name="ctransinplaceoutputpinm_ptipfilter-member"></a>Membro PTIPFilter CTransInPlaceOutputPin::m \_
 
-Puntatore al filtro che ha creato questo pin.
+Puntatore al filtro che ha creato questo segnaposto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CTransInPlaceFilter * const m_pTIPFilter;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

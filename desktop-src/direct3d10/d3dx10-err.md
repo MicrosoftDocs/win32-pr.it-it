@@ -1,7 +1,7 @@
 ---
-description: Gli errori sono rappresentati da valori negativi e non possono essere combinati.
+description: 'D3DX10_ERR enumerazione: gli errori sono rappresentati da valori negativi e non possono essere combinati.'
 ms.assetid: 4149ce6d-e87a-4003-b123-5555c6b3b086
-title: Enumerazione D3DX10_ERR (D3DX10. h)
+title: D3DX10_ERR enumerazione (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 098c15999f20a65614d642029b1d1f6e0b600db6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 520abae0409dd4214106363d7ffde0cfb5c81ff1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234972"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108094355"
 ---
-# <a name="d3dx10_err-enumeration"></a>\_Enumerazione d3dx10 Err
+# <a name="d3dx10_err-enumeration"></a>Enumerazione ERR D3DX10 \_
 
-Gli errori sono rappresentati da valori negativi e non possono essere combinati. Di seguito è riportato un elenco di valori che possono essere restituiti dai metodi inclusi nella libreria dell'utilità D3DX. Vedere le descrizioni dei singoli metodi per gli elenchi dei valori che ognuno può restituire. Questi elenchi non sono necessariamente completi.
+Gli errori sono rappresentati da valori negativi e non possono essere combinati. Di seguito è riportato un elenco di valori che possono essere restituiti dai metodi inclusi nella libreria di utilità D3DX. Vedere le descrizioni dei singoli metodi per gli elenchi dei valori che possono essere restituiti da ognuno di essi. Questi elenchi non sono necessariamente completi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,72 +47,72 @@ typedef enum D3DX10_ERR {
 
 <dl> <dt>
 
-<span id="D3DX10_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx10_err_cannot_modify_index_buffer"></span>**D3DX10 \_ Err \_ non può \_ modificare il \_ buffer di indice \_**
+<span id="D3DX10_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx10_err_cannot_modify_index_buffer"></span>**D3DX10 \_ ERR \_ NON PUÒ MODIFICARE IL BUFFER \_ \_ \_ DELL'INDICE**
 </dt> <dd>
 
-Il buffer dell'indice non può essere modificato.
+Il index buffer non può essere modificato.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_INVALID_MESH"></span><span id="d3dx10_err_invalid_mesh"></span>**\_Mesh d3dx10 ERR \_ non valida \_**
+<span id="D3DX10_ERR_INVALID_MESH"></span><span id="d3dx10_err_invalid_mesh"></span>**MESH NON VALIDA D3DX10 \_ ERR \_ \_**
 </dt> <dd>
 
-Mesh non valido.
+La mesh non è valida.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_CANNOT_ATTR_SORT"></span><span id="d3dx10_err_cannot_attr_sort"></span>**D3DX10 \_ Err \_ non può eseguire l' \_ \_ ordinamento attr**
+<span id="D3DX10_ERR_CANNOT_ATTR_SORT"></span><span id="d3dx10_err_cannot_attr_sort"></span>**D3DX10 \_ ERR \_ NON PUÒ \_ ATTR \_ SORT**
 </dt> <dd>
 
 L'ordinamento degli attributi (D3DXMESHOPT \_ ATTRSORT) non è supportato come tecnica di ottimizzazione.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx10_err_skinning_not_supported"></span>**D3DX10 \_ errore di \_ Skinning \_ non \_ supportato**
+<span id="D3DX10_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx10_err_skinning_not_supported"></span>**INTERFACCIA ERR D3DX10 \_ \_ NON \_ \_ SUPPORTATA**
 </dt> <dd>
 
-La skining non è supportata.
+La skinning non è supportata.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_TOO_MANY_INFLUENCES"></span><span id="d3dx10_err_too_many_influences"></span>**D3DX10 \_ Err \_ troppe \_ \_ influenze**
+<span id="D3DX10_ERR_TOO_MANY_INFLUENCES"></span><span id="d3dx10_err_too_many_influences"></span>**D3DX10 \_ ERR \_ TROPPE \_ \_ INFLUENZE**
 </dt> <dd>
 
-Troppe influenze specificate.
+Troppi fattori di influenza specificati.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_INVALID_DATA"></span><span id="d3dx10_err_invalid_data"></span>**D3DX10 \_ Err \_ dati non validi \_**
+<span id="D3DX10_ERR_INVALID_DATA"></span><span id="d3dx10_err_invalid_data"></span>**DATI NON VALIDI D3DX10 \_ ERR \_ \_**
 </dt> <dd>
 
 I dati non sono validi.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_LOADED_MESH_HAS_NO_DATA"></span><span id="d3dx10_err_loaded_mesh_has_no_data"></span>**La \_ \_ mesh d3dx10 \_ con caricamento ERR \_ \_ non contiene \_ dati**
+<span id="D3DX10_ERR_LOADED_MESH_HAS_NO_DATA"></span><span id="d3dx10_err_loaded_mesh_has_no_data"></span>**LA MESH CARICATA D3DX10 \_ ERR \_ NON CONTIENE \_ \_ \_ \_ DATI**
 </dt> <dd>
 
 La mesh non contiene dati.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_DUPLICATE_NAMED_FRAGMENT"></span><span id="d3dx10_err_duplicate_named_fragment"></span>**\_ \_ Frammento denominato d3dx10 Err duplicato \_ \_**
+<span id="D3DX10_ERR_DUPLICATE_NAMED_FRAGMENT"></span><span id="d3dx10_err_duplicate_named_fragment"></span>**D3DX10 \_ ERR \_ DUPLICATE \_ NAMED \_ FRAGMENT**
 </dt> <dd>
 
-Un frammento con lo stesso nome esiste già.
+Esiste già un frammento con tale nome.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_CANNOT_REMOVE_LAST_ITEM"></span><span id="d3dx10_err_cannot_remove_last_item"></span>**D3DX10 \_ Err \_ non può \_ rimuovere \_ l'ultimo \_ elemento**
+<span id="D3DX10_ERR_CANNOT_REMOVE_LAST_ITEM"></span><span id="d3dx10_err_cannot_remove_last_item"></span>**D3DX10 \_ ERR \_ NON PUÒ RIMUOVERE \_ \_ L'ULTIMO \_ ELEMENTO**
 </dt> <dd>
 
-Non è possibile eliminare l'ultimo elemento.
+L'ultimo elemento non può essere eliminato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il codice \_ di struttura FACDD viene usato per generare codici di errore, come nelle macro seguenti.
+Il codice \_ di struttura FACDD viene usato per generare i codici di errore, come nelle macro seguenti.
 
 
 ```
@@ -133,7 +133,7 @@ enum _D3DXERR {
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 

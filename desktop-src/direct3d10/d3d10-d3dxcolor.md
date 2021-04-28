@@ -1,7 +1,7 @@
 ---
-description: Descrive i valori dei colori.
+description: 'Struttura D3DXCOLOR (D3DX10Math.h): descrive i valori dei colori.'
 ms.assetid: bb5e36c8-4f24-41b5-84e7-3034e497721d
-title: Struttura D3DXCOLOR (D3DX10Math. h)
+title: Struttura D3DXCOLOR (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 436a20fa8ed6f57062f268be2b71f7e350cb2854
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e919f86cebba1526908020881b73c01e02b7df3
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323271"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108103559"
 ---
-# <a name="d3dxcolor-structure-d3dx10mathh"></a>Struttura D3DXCOLOR (D3DX10Math. h)
+# <a name="d3dxcolor-structure-d3dx10mathh"></a>Struttura D3DXCOLOR (D3DX10Math.h)
 
 Descrive i valori dei colori.
 
@@ -45,7 +45,7 @@ typedef struct D3DXCOLOR {
 **r**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -53,10 +53,10 @@ Componente rosso del colore.
 
 </dd> <dt>
 
-**g**
+**G**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,7 +67,7 @@ Componente verde del colore.
 **b**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -75,10 +75,10 @@ Componente blu del colore.
 
 </dd> <dt>
 
-**un**
+**Un**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -92,7 +92,7 @@ Componente alfa del colore.
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

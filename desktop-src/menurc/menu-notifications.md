@@ -1,31 +1,31 @@
 ---
 title: Notifiche di menu
-description: .
+description: Notifiche di menu
 ms.assetid: 8ff5671e-a666-483c-9ac1-f8be6eb58ffa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d61f5303253fd3201fd9a4510ecf90fa76c10524
-ms.sourcegitcommit: e98f40bef170ae9ce30d91ba96b90600b0446a24
+ms.openlocfilehash: f593e3007dff82241dc9e917a6cfa140cc443679
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "104336727"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108112529"
 ---
 # <a name="menu-notifications"></a>Notifiche di menu
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_comando WM**](wm-command.md)
--   [**ContextMenu di WM \_**](wm-contextmenu.md)
--   [**\_ENTERMENULOOP WM**](wm-entermenuloop.md)
--   [**\_EXITMENULOOP WM**](wm-exitmenuloop.md)
--   [**\_GETTITLEBARINFOEX WM**](wm-gettitlebarinfoex.md)
--   [**MENUCOMMAND di WM \_**](wm-menucommand.md)
--   [**\_MENUDRAG WM**](wm-menudrag.md)
--   [**\_MENUGETOBJECT WM**](wm-menugetobject.md)
--   [**\_MENURBUTTONUP WM**](wm-menurbuttonup.md)
--   [**\_NEXTMENU WM**](wm-nextmenu.md)
--   [**\_UNINITMENUPOPUP WM**](wm-uninitmenupopup.md)
+-   [**COMANDO \_ WM**](wm-command.md)
+-   [**WM \_ CONTEXTMENU**](wm-contextmenu.md)
+-   [**WM \_ ENTERMENULOOP**](wm-entermenuloop.md)
+-   [**WM \_ EXITMENULOOP**](wm-exitmenuloop.md)
+-   [**WM \_ GETTITLEBARINFOEX**](wm-gettitlebarinfoex.md)
+-   [**WM \_ MENUCOMMAND**](wm-menucommand.md)
+-   [**WM \_ MENUDRAG**](wm-menudrag.md)
+-   [**WM \_ MENUGETOBJECT**](wm-menugetobject.md)
+-   [**WM \_ MENURBUTTONUP**](wm-menurbuttonup.md)
+-   [**WM \_ NEXTMENU**](wm-nextmenu.md)
+-   [**WM \_ UNINITMENUPOPUP**](wm-uninitmenupopup.md)
 
 
 ## <a name="example"></a>Esempio
@@ -58,9 +58,9 @@ BOOL AboutDlg (
     return bRet;
 }
 ```
-Esempio tratto da [esempi di Windows classico](https://github.com/microsoft/Windows-classic-samples) in GitHub.
+Esempio tratto da [esempi classici di Windows](https://github.com/microsoft/Windows-classic-samples) su GitHub.
 
- 
+ 
 
 
 

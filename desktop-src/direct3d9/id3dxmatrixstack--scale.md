@@ -1,7 +1,7 @@
 ---
-description: Ridimensiona la matrice corrente sull'origine della coordinata globale.
+description: "Metodo ID3DXMATRIXStack::Scale (D3dx9math.h): ridimensiona la matrice corrente sull'origine delle coordinate del mondo."
 ms.assetid: 6c4ef625-736e-41a0-8a79-4d71e8685754
-title: 'Metodo ID3DXMATRIXStack:: scale (D3dx9math. h)'
+title: Metodo ID3DXMATRIXStack::Scale (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5ed926a55c0dba6f74e819cd89a7fa75f6d087c4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6d877fccf5bfebfdc1f9cf3943c4334e5b8c7fff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132298"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093369"
 ---
-# <a name="id3dxmatrixstackscale-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack:: scale (D3dx9math. h)
+# <a name="id3dxmatrixstackscale-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack::Scale (D3dx9math.h)
 
-Ridimensiona la matrice corrente sull'origine della coordinata globale.
+Ridimensionare la matrice corrente sull'origine delle coordinate del mondo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,25 +45,25 @@ HRESULT Scale(
 *x* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente di scala nella direzione x.
+Componente di ridimensionamento nella direzione x.
 
 </dd> <dt>
 
 *y* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente di scala nella direzione y.
+Componente di ridimensionamento nella direzione y.
 
 </dd> <dt>
 
 *z* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Componente di ridimensionamento nella direzione z.
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo moltiplica a destra la matrice corrente con la matrice di scala calcolata. La trasformazione riguarda l'origine mondiale corrente.
+Questo metodo moltiplica a destra la matrice corrente con la matrice di scala calcolata. La trasformazione riguarda l'origine globale corrente.
 
 
 ```
@@ -94,8 +94,8 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

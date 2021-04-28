@@ -1,7 +1,7 @@
 ---
-description: Recupera un'impostazione della shell globale.
+description: "Metodo IShellDispatch4.GetSetting: recupera un'impostazione globale della shell."
 ms.assetid: b9b1542c-8e25-4966-b3df-13bfbd9b28aa
-title: Metodo IShellDispatch4. GetSetting (shldisp. h)
+title: Metodo IShellDispatch4.GetSetting (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 755ee1d2bbd5026b1cc3ca165649e0fcb4ab20ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a4345812925849831a6f0064c608f0c4be052c7
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977986"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116839"
 ---
-# <a name="ishelldispatch4getsetting-method"></a>IShellDispatch4. GetSetting, metodo
+# <a name="ishelldispatch4getsetting-method"></a>Metodo IShellDispatch4.GetSetting
 
-Recupera un'impostazione della shell globale.
+Recupera un'impostazione globale della shell.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,12 +49,12 @@ IShellDispatch4.GetSetting( _
 
 <dl> <dt>
 
-*lSetting* \[ in\]
+*lSetting* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **long**
 
-Valore che specifica l'impostazione della shell corrente da recuperare. In ogni chiamata è possibile recuperare una sola impostazione. I valori seguenti sono riconosciuti da questo metodo.
+Valore che specifica l'impostazione corrente della shell da recuperare. In ogni chiamata è possibile recuperare una sola impostazione. I valori seguenti vengono riconosciuti da questo metodo.
 
 <dt>
 
@@ -65,7 +65,7 @@ Valore che specifica l'impostazione della shell corrente da recuperare. In ogni 
 
 </dt> <dd>
 
-**Windows Vista e versioni successive**. Stato dell'opzione **utilizza caselle di controllo per selezionare gli elementi** . Questa opzione viene abilitata automaticamente quando nel sistema è configurato un dispositivo di input penna.
+**Windows Vista e versioni successive.** Stato dell'opzione **Usa caselle di controllo per selezionare gli** elementi . Questa opzione viene abilitata automaticamente quando nel sistema è configurato un dispositivo di input penna.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Non usato.
 
 </dt> <dd>
 
-Stato dell'opzione **Consenti tutti i nomi maiuscoli** . A partire da Windows Vista, questa opzione di cartella non è più disponibile.
+Stato **dell'opzione Consenti tutti i nomi maiuscoli** . A data di Windows Vista, questa opzione di cartella non è più disponibile.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Stato dell'opzione **Consenti tutti i nomi maiuscoli** . A partire da Windows Vi
 
 </dt> <dd>
 
-Stato del **doppio clic per aprire l'opzione di un elemento (con un solo clic per la selezione)** .
+Stato dell'opzione **Doppio clic per aprire un elemento (clic singolo per selezionare).**
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Non usato.
 
 </dt> <dd>
 
-Lo stato dell'icona visualizzato nella visualizzazione elenco di Esplora risorse. Se questa opzione è attiva, nessuna icona viene visualizzata nella visualizzazione elenco.
+Lo stato dell'icona viene visualizzato nella Esplora risorse elenco. Se questa opzione è attiva, nella visualizzazione elenco non viene visualizzata alcuna icona.
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Lo stato dell'icona visualizzato nella visualizzazione elenco di Esplora risorse
 
 </dt> <dd>
 
-**Windows Vista e versioni successive**. Lo stato del nome visualizzato viene visualizzato nella visualizzazione elenco di Esplora risorse. Se questa opzione è attiva, le icone vengono visualizzate nella visualizzazione elenco, ma i nomi visualizzati non lo sono.
+**Windows Vista e versioni successive.** Stato del nome visualizzato visualizzato nella visualizzazione Esplora risorse elenco. Se questa opzione è attiva, le icone vengono visualizzate nella visualizzazione elenco, ma non i nomi visualizzati.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Lo stato dell'icona visualizzato nella visualizzazione elenco di Esplora risorse
 
 </dt> <dd>
 
-Stato del pulsante dell' **unità di rete Mostra mappa nell'opzione della barra degli strumenti** . A partire da Windows Vista, questa opzione non è più disponibile.
+Stato dell'opzione **Mostra unità di rete mappa nella barra degli** strumenti. A causa di Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Stato del pulsante dell' **unità di rete Mostra mappa nell'opzione della barra 
 
 </dt> <dd>
 
-Stato della finestra di dialogo di conferma dell' **eliminazione della visualizzazione** del cestino.
+Lo stato dell'opzione Cestino finestra di dialogo Visualizza conferma **eliminazione.**
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Stato della finestra di dialogo di conferma dell' **eliminazione della visualizz
 
 </dt> <dd>
 
-Lo stato dell'opzione **Cerca automaticamente le cartelle di rete e le stampanti** . A partire da Windows Vista, questa opzione non è più disponibile.
+Stato **dell'opzione Cerca automaticamente cartelle e stampanti di** rete. A causa di Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -186,7 +186,7 @@ Lo stato dell'opzione **Cerca automaticamente le cartelle di rete e le stampanti
 
 </dt> <dd>
 
-Lo stato delle **finestre della cartella di avvio in un'opzione di processo separata** .
+Stato delle finestre **della cartella Launch in un processo** separato.
 
 </dd> <dt>
 
@@ -208,7 +208,7 @@ Non usato.
 
 </dt> <dd>
 
-Stato dell'opzione **file e cartelle nascosti** .
+Stato **dell'opzione File e cartelle nascosti.**
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Stato dell'opzione **file e cartelle nascosti** .
 
 </dt> <dd>
 
-Stato dell'opzione **Mostra attributi di file in visualizzazione dettagli** . A partire da Windows Vista, questa opzione non è più disponibile.
+Stato **dell'opzione Mostra attributi file nella visualizzazione** dettagli . A data di Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -230,7 +230,7 @@ Stato dell'opzione **Mostra attributi di file in visualizzazione dettagli** . A 
 
 </dt> <dd>
 
-Lo stato dell'opzione **Mostra file NTFS crittografati o compressi in colore** .
+Stato **dell'opzione Mostra a colori i file NTFS crittografati o compressi.**
 
 </dd> <dt>
 
@@ -241,7 +241,7 @@ Lo stato dell'opzione **Mostra file NTFS crittografati o compressi in colore** .
 
 </dt> <dd>
 
-Stato dell'opzione **Nascondi estensioni per i tipi di file noti** .
+Stato dell'opzione **Nascondi estensioni per tipi di file** noti.
 
 </dd> <dt>
 
@@ -252,7 +252,7 @@ Stato dell'opzione **Nascondi estensioni per i tipi di file noti** .
 
 </dt> <dd>
 
-Lo stato dell'opzione **Mostra descrizione popup per cartella e elementi desktop** .
+Stato dell'opzione **Mostra descrizione popup per elementi della cartella e del desktop.**
 
 </dd> <dt>
 
@@ -274,7 +274,7 @@ Non usato.
 
 </dt> <dd>
 
-Stato dell'opzione **Nascondi file del sistema operativo protetti** .
+Stato **dell'opzione Nascondi file del sistema operativo** protetti.
 
 </dd> <dt>
 
@@ -285,7 +285,7 @@ Stato dell'opzione **Nascondi file del sistema operativo protetti** .
 
 </dt> <dd>
 
-Stato dell'opzione **file e cartelle nascosti** . In Windows Vista e versioni successive, equivale a SSF \_ SHOWALLOBJECTS. Nelle versioni di Windows precedenti a Windows Vista, questo valore si riferisce allo stato dell'opzione non **visualizzare cartelle e file nascosti** .
+Stato **dell'opzione File e cartelle nascosti.** In Windows Vista e versioni successive è equivalente a SSF \_ SHOWALLOBJECTS. Nelle versioni di Windows precedenti a Windows Vista, questo valore fa riferimento allo stato **dell'opzione Non visualizzare** file e cartelle nascosti.
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Stato dell'opzione **file e cartelle nascosti** . In Windows Vista e versioni su
 
 </dt> <dd>
 
-**Windows Vista e versioni successive**. Stato dell'icona del **file visualizzato nell'opzione anteprime** . Se questa opzione è attiva, quando un file fornisce una rappresentazione di anteprima viene applicata una sovrapposizione del tipo di file.
+**Windows Vista e versioni successive.** Stato **dell'opzione Visualizza icona file nelle anteprime.** Se questa opzione è attiva, viene applicata una sovrimpressione del tipo di file quando un file fornisce una rappresentazione di anteprima.
 
 </dd> <dt>
 
@@ -318,18 +318,18 @@ Non usato.
 
 </dt> <dd>
 
-Lo stato dell'opzione di visualizzazione di Windows XP, che consente di selezionare tra lo stile di Windows XP e lo stile classico. A partire da Windows Vista, questa opzione non è più disponibile.
+Stato dell'opzione di visualizzazione di Windows XP, che consente di selezionare tra lo stile di Windows XP e lo stile classico. A causa di Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
 <span id="SSF_WEBVIEW"></span><span id="ssf_webview"></span>
 
-<span id="SSF_WEBVIEW"></span><span id="ssf_webview"></span>**SSF \_ WebView** (0x00020000)
+<span id="SSF_WEBVIEW"></span><span id="ssf_webview"></span>**SSF \_ WEBVIEW** (0x00020000)
 
 
 </dt> <dd>
 
-Stato della **visualizzazione come opzione di visualizzazione Web**. A partire da Windows Vista, questa opzione non è più disponibile.
+Stato **dell'opzione Visualizza come visualizzazione Web**. A causa di Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -340,7 +340,7 @@ Stato della **visualizzazione come opzione di visualizzazione Web**. A partire d
 
 </dt> <dd>
 
-Stato dell'opzione di **stile classico** . A partire da Windows Vista, questa opzione non è più disponibile.
+Stato **dell'opzione Stile** classico. A causa di Windows Vista, questa opzione non è più disponibile.
 
 </dd> </dl> </dd> </dl>
 
@@ -348,21 +348,21 @@ Stato dell'opzione di **stile classico** . A partire da Windows Vista, questa op
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **Variant \_ bool \** _
+Tipo: **VARIANT \_ BOOL \***
 
-Impostare su _ *true** se l'impostazione esiste; in caso contrario, **false**.
+Impostare su **true se** l'impostazione esiste; in caso contrario, **false**.
 
 ### <a name="vb"></a>VB
 
-Tipo: **Variant \_ bool \** _
+Tipo: **VARIANT \_ BOOL \***
 
-Impostare su _ *true** se l'impostazione esiste; in caso contrario, **false**.
+Impostare su **true se** l'impostazione esiste; in caso contrario, **false**.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **GetSetting** per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso **di GetSetting** per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -381,7 +381,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -433,11 +433,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |
 
 
 

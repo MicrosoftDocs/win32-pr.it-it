@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CBaseRenderer.CBaseRenderer - Metodo costruttore.
 ms.assetid: df5efbb3-6bce-4e30-b1b1-d69bf64fa87d
-title: Costruttore CBaseRenderer. CBaseRenderer (Renbase. h)
+title: Costruttore CBaseRenderer.CBaseRenderer (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b41f8d7f9681a64f58413aea2fd8717320278f4d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 68ebc6255456f0fcbb4bf732a91dce981d0f78ce
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329402"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119909"
 ---
-# <a name="cbaserenderercbaserenderer-constructor"></a>Costruttore CBaseRenderer. CBaseRenderer
+# <a name="cbaserenderercbaserenderer-constructor"></a>Costruttore CBaseRenderer.CBaseRenderer
 
 Metodo del costruttore.
 
@@ -46,31 +46,31 @@ CBaseRenderer(
 
 <dl> <dt>
 
-*RenderClass* 
+*Classe RenderClass* 
 </dt> <dd>
 
 Identificatore di classe del renderer.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nome del filtro, a scopo di debug.
+Puntatore a una stringa contenente il nome del filtro, a scopo di debug.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Riceve un valore **HRESULT** .
+Riceve un **valore HRESULT.**
 
 </dd> <dt>
 
@@ -87,8 +87,8 @@ Risoluzione del timer.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

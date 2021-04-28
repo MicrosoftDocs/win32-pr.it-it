@@ -1,5 +1,5 @@
 ---
-description: arresta il servizio.
+description: 'Metodo StopService della classe Msvm_TerminalService: arresta il servizio.'
 ms.assetid: c96ca784-c935-41a4-b1aa-8360cf270c9e
 title: Metodo StopService della classe Msvm_TerminalService
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f26efeefb7cd9ace2e17db565c4ff71190fa2814
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 720895f72a69504eb2efafe24fc5a3e18005356f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308738"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111169"
 ---
-# <a name="stopservice-method-of-the-msvm_terminalservice-class"></a>Metodo StopService della classe MSVM \_ TerminalService
+# <a name="stopservice-method-of-the-msvm_terminalservice-class"></a>Metodo StopService della classe TerminalService msvm \_
 
 arresta il servizio.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_TerminalService MSVM**](msvm-terminalservice.md)
+[**Msvm \_ TerminalService**](msvm-terminalservice.md)
 </dt> </dl>
 
  

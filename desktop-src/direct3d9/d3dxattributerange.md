@@ -1,7 +1,7 @@
 ---
-description: Archivia una voce della tabella degli attributi.
+description: 'Struttura D3DXATTRIBUTERANGE: archivia una voce della tabella degli attributi.'
 ms.assetid: b9f13b12-35ba-4e4c-93ac-3dd44d611b47
-title: Struttura D3DXATTRIBUTERANGE (D3dx9mesh. h)
+title: Struttura D3DXATTRIBUTERANGE (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: a842bbf41847f4b4e65c975e11f3e160cea1422d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7dfdf15f653fda77b1ca8c9a14cd32decee9658e
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322890"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108116009"
 ---
 # <a name="d3dxattributerange-structure"></a>Struttura D3DXATTRIBUTERANGE
 
@@ -61,7 +61,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Faccia iniziale.
+Viso iniziale.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Conteggio delle facce.
+Numero di viso.
 
 </dd> <dt>
 
@@ -94,15 +94,15 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Conteggio vertici.
+Numero di vertici.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Una tabella degli attributi viene utilizzata per identificare le aree della mesh che devono essere disegnate con trame, Stati di rendering, materiali e così via. Inoltre, l'applicazione può usare la tabella attribute per nascondere parti di una mesh senza disegnare un identificatore di attributo specificato (AttribId) durante il disegno del frame.
+Una tabella di attributi viene usata per identificare le aree della mesh che devono essere disegnate con trame, stati di rendering, materiali e così via diversi. Inoltre, l'applicazione può usare la tabella degli attributi per nascondere parti di una mesh non disegnando un determinato identificatore di attributo (AttribId) durante il disegno del frame.
 
-Il tipo LPD3DXATTRIBUTERANGE è definito come un puntatore alla struttura **D3DXATTRIBUTERANGE** .
+Il tipo LPD3DXATTRIBUTERANGE è definito come puntatore alla **struttura D3DXATTRIBUTERANGE.**
 
 
 ```
@@ -117,7 +117,7 @@ typedef D3DXATTRIBUTERANGE* LPD3DXATTRIBUTERANGE;
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

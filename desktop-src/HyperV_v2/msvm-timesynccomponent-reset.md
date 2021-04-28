@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_TimeSyncComponent: richiede una reimpostazione.'
 ms.assetid: fb0ce09b-0d14-4de8-b2e5-4d86169b261b
-title: Reimposta il metodo della classe Msvm_TimeSyncComponent
+title: Metodo Reset della classe Msvm_TimeSyncComponent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f412891def38da4e1d0063fe6ec56d62c2a30d77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d93f548030c2248b30eab7a3585a3c270311aa42
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308735"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111159"
 ---
-# <a name="reset-method-of-the-msvm_timesynccomponent-class"></a>Metodo Reset della \_ classe TimeSyncComponent di MSVM
+# <a name="reset-method-of-the-msvm_timesynccomponent-class"></a>Metodo Reset della classe Msvm \_ TimeSyncComponent
 
 Richiede una reimpostazione.
 
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_TimeSyncComponent MSVM**](msvm-timesynccomponent.md)
+[**Msvm \_ TimeSyncComponent**](msvm-timesynccomponent.md)
 </dt> </dl>
 
  

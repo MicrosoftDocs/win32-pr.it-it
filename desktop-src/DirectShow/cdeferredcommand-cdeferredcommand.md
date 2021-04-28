@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CDeferredCommand.CDeferredCommand - Metodo costruttore.
 ms.assetid: 0b372fa2-78a9-4e38-813c-f18123716c6d
-title: Costruttore CDeferredCommand. CDeferredCommand (Ctlutil. h)
+title: Costruttore CDeferredCommand.CDeferredCommand (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4e92a2ffc5129ee38fc5061b28ea7ffef49da0f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a10d8bba48902ed2d6fd66da8483cea1ba9aacc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333483"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119789"
 ---
-# <a name="cdeferredcommandcdeferredcommand-constructor"></a>Costruttore CDeferredCommand. CDeferredCommand
+# <a name="cdeferredcommandcdeferredcommand-constructor"></a>Costruttore CDeferredCommand.CDeferredCommand
 
 Metodo del costruttore.
 
@@ -54,21 +54,21 @@ CDeferredCommand(
 
 <dl> <dt>
 
-*pQ* 
+*Pq* 
 </dt> <dd>
 
-Puntatore a un oggetto che espone l'interfaccia [**IQueueCommand**](/windows/desktop/api/Control/nn-control-iqueuecommand) .
+Puntatore a un oggetto che espone [**l'interfaccia IQueueCommand.**](/windows/desktop/api/Control/nn-control-iqueuecommand)
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore all'interfaccia **IUnknown** esterna per l'aggregazione.
+Puntatore all'interfaccia **IUnknown esterna** per l'aggregazione.
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
 Puntatore a un valore **HRESULT** restituito.
@@ -78,7 +78,7 @@ Puntatore a un valore **HRESULT** restituito.
 *pUnkExecutor* 
 </dt> <dd>
 
-Puntatore all'oggetto che effettuerà questo comando.
+Puntatore all'oggetto che eseererà questo comando.
 
 </dd> <dt>
 
@@ -89,10 +89,10 @@ Ora in cui verrà eseguito il comando.
 
 </dd> <dt>
 
-*IID* 
+*Iid* 
 </dt> <dd>
 
-Puntatore all'identificatore univoco globale (**GUID**) dell'interfaccia che contiene il metodo.
+Puntatore all'identificatore univoco globale **(GUID)** dell'interfaccia che contiene il metodo.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Metodo sull'interfaccia da chiamare.
 
 </dd> <dt>
 
-*wFlags* 
+*Wflags* 
 </dt> <dd>
 
 Contesto della chiamata.
@@ -120,28 +120,28 @@ Numero di argomenti passati.
 *pDispParams* 
 </dt> <dd>
 
-Puntatore a un elenco di tipi Variant di argomento.
+Puntatore a un elenco di tipi varianti di argomento.
 
 </dd> <dt>
 
 *pvarResult* 
 </dt> <dd>
 
-Puntatore a un elenco di tipi Variant restituito, se presente.
+Puntatore a un elenco di tipi variant restituito, se presente.
 
 </dd> <dt>
 
 *puArgErr* 
 </dt> <dd>
 
-Puntatore all'ultimo argomento nell'elenco di parametri *pDispParams* con un errore.
+Puntatore all'ultimo argomento *nell'elenco di parametri pDispParams* con un errore.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-Valore che indica se l'ora del comando rinviata è in tempo di flusso (**true**) o ora di presentazione (**false**).
+Valore che indica se l'ora del comando posticipato è nel tempo di flusso (**TRUE**) o nell'ora di presentazione **(FALSE).**
 
 </dd> </dl>
 
@@ -151,8 +151,8 @@ Valore che indica se l'ora del comando rinviata è in tempo di flusso (**true**)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

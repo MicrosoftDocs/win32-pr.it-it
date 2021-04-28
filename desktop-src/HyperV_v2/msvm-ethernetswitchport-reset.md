@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_EthernetSwitchPort: richiede una reimpostazione.'
 ms.assetid: f09641e4-6bf6-4738-afab-0a50f15d3a68
-title: Reimposta il metodo della classe Msvm_EthernetSwitchPort
+title: Metodo Reset della classe Msvm_EthernetSwitchPort
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 38c5290dd01713feb605b5a20b47ae5686a6f6b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 041fbf106a604f062c6d416f311a59d63e1e706f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320024"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111919"
 ---
-# <a name="reset-method-of-the-msvm_ethernetswitchport-class"></a>Metodo Reset della \_ classe EthernetSwitchPort di MSVM
+# <a name="reset-method-of-the-msvm_ethernetswitchport-class"></a>Metodo Reset della classe Msvm \_ EthernetSwitchPort
 
 Richiede una reimpostazione.
 
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_EthernetSwitchPort MSVM**](msvm-ethernetswitchport.md)
+[**Msvm \_ EthernetSwitchPort**](msvm-ethernetswitchport.md)
 </dt> </dl>
 
  

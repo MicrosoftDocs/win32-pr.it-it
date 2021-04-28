@@ -1,7 +1,7 @@
 ---
-description: Associa il \_ VirtualSystemCollection MSVM agli oggetti contenuti MSVM \_ ComputerSystem.
+description: 'Msvm_CollectedVirtualSystems classe: associa Msvm \_ VirtualSystemCollection agli oggetti Msvm \_ ComputerSystem contenuti.'
 ms.assetid: ad783188-b60a-4271-aa2d-8050c36e70eb
-title: Classe Msvm_CollectedVirtualSystems
+title: Msvm_CollectedVirtualSystems classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0803eda14ffbaf21ee2bf4491bd835123b7191e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6775f41a6e2ae7e45bac642fcd32b8deaec3fda
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317205"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119279"
 ---
-# <a name="msvm_collectedvirtualsystems-class"></a>\_Classe MSVM CollectedVirtualSystems
+# <a name="msvm_collectedvirtualsystems-class"></a>Classe Msvm \_ CollectedVirtualSystems
 
-Associa il [**\_ VirtualSystemCollection MSVM**](msvm-virtualsystemcollection.md) agli oggetti contenuti [**MSVM \_ ComputerSystem**](msvm-computersystem.md) .
+Associa [**Msvm \_ VirtualSystemCollection agli**](msvm-virtualsystemcollection.md) oggetti [**Msvm \_ ComputerSystem**](msvm-computersystem.md) contenuti.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -41,45 +41,45 @@ class Msvm_CollectedVirtualSystems : CIM_CollectedMSEs
 
 ## <a name="members"></a>Members
 
-La **classe \_ CollectedVirtualSystems di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ CollectedVirtualSystems** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CollectedVirtualSystems di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ CollectedVirtualSystems** ha queste proprietà.
 
 <dl> <dt>
 
 **Raccolta**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSVM \_ VirtualSystemCollection**
+Tipo di dati: **Msvm \_ VirtualSystemCollection**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
+Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
 </dt> </dl>
 
-Oggetto di raggruppamento o ' contenitore ' di [**MSVM \_ VirtualSystemCollection**](msvm-virtualsystemcollection.md) che rappresenta la raccolta.
+Oggetto di raggruppamento o "bag" [**di Msvm \_ VirtualSystemCollection**](msvm-virtualsystemcollection.md) che rappresenta la raccolta.
 
 </dd> <dt>
 
 **Membro**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSVM \_ ComputerSystem**
+Tipo di dati: **Msvm \_ ComputerSystem**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Member")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Member")
 </dt> </dl>
 
-Oggetto [**MSVM \_ ComputerSystem**](msvm-computersystem.md) contenente i membri della raccolta.
+Oggetto [**Msvm \_ ComputerSystem**](msvm-computersystem.md) contenente i membri della raccolta.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Oggetto [**MSVM \_ ComputerSystem**](msvm-computersystem.md) contenente i membri
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Oggetto [**MSVM \_ ComputerSystem**](msvm-computersystem.md) contenente i membri
 
 <dl> <dt>
 
-[**\_COLLECTEDMSES CIM**](cim-collectedmses.md)
+[**CIM \_ CollectedMSEs**](cim-collectedmses.md)
 </dt> </dl>
 
  
