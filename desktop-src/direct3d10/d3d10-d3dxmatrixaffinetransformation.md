@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di trasformazione affine 3D. Gli argomenti NULL vengono considerati come trasformazioni di identità.
+description: 'Funzione D3DXMatrixAffineTransformation (D3DX10Math.h): compila una matrice di trasformazione affine 3D. Gli argomenti NULL vengono considerati trasformazioni di identità.'
 ms.assetid: 36044272-a8ce-47db-8f52-30dc680f8174
-title: Funzione D3DXMatrixAffineTransformation (D3DX10Math. h)
+title: Funzione D3DXMatrixAffineTransformation (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 27fee5a620d75c3930b1bc2f8a85415db1320a47
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 01c6b3c3ffe2de9b7c7003b78f1b07a0f35cc3a1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323415"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108113179"
 ---
-# <a name="d3dxmatrixaffinetransformation-function-d3dx10mathh"></a>Funzione D3DXMatrixAffineTransformation (D3DX10Math. h)
+# <a name="d3dxmatrixaffinetransformation-function-d3dx10mathh"></a>Funzione D3DXMatrixAffineTransformation (D3DX10Math.h)
 
-Compila una matrice di trasformazione affine 3D. Gli argomenti **null** vengono considerati come trasformazioni di identità.
+Compila una matrice di trasformazione affine 3D. **Gli** argomenti NULL vengono considerati trasformazioni di identità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixAffineTransformation(
 
 <dl> <dt>
 
-*broncio* \[ in\]
+*pOut* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a [**D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*Ridimensionamento* \[ in\]
+*Ridimensionamento* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fattore di scala.
 
 </dd> <dt>
 
-*pRotationCenter* \[ in\]
+*pRotationCenter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a un [**D3DXVECTOR3**](d3d10-d3dxvector3.md), un punto che identifica il centro della rotazione. Se questo argomento è **null**, una matrice Identity M <sub>RC</sub> viene applicata alla formula nelle osservazioni.
+Puntatore a [**un oggetto D3DXVECTOR3,**](d3d10-d3dxvector3.md)un punto che identifica il centro di rotazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice identity M <sub>rc.</sub>
 
 </dd> <dt>
 
-*protazione* \[ in\]
+*pRotation* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntatore a un [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) che specifica la rotazione. Se questo argomento è **null**, una matrice di identità M <sub>r</sub> viene applicata alla formula nei commenti.
+Puntatore a [**un oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che specifica la rotazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice identity M <sub>r.</sub>
 
 </dd> <dt>
 
-*pTranslation* \[ in\]
+*pTranslation* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3 che rappresenta la traduzione. Se questo argomento è **null**, viene applicata una matrice di valori Identity mt alla formula nei commenti.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta la traslazione. Se questo argomento è **NULL,** viene applicata una matrice Identity Mt alla formula in Osservazioni.
 
 </dd> </dl>
 
@@ -93,29 +93,29 @@ Puntatore a una struttura D3DXVECTOR3 che rappresenta la traduzione. Se questo a
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a una struttura D3DXMATRIX che rappresenta una matrice di trasformazione affine.
+Puntatore a una struttura D3DXMATRIX che è una matrice di trasformazione affine.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione calcola la matrice di trasformazione affine con la formula seguente, con concatenazione di matrici valutata in ordine da sinistra a destra:
+Questa funzione calcola la matrice di trasformazione affine con la formula seguente, con la concatenazione di matrici valutata in ordine da sinistra a destra:
 
-M<sub>out</sub> = MS \* (m<sub>RC</sub>)-1 \* M<sub>r</sub> \* m<sub>rc</sub> \* mt
+M<sub>out</sub> = Ms \* (M<sub>rc</sub>)-1 \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
 
 dove:
 
-M<sub>out</sub> = matrice di output (broncio)
+M<sub>out</sub> = matrice di output (pOut)
 
-MS = scala della matrice (scalabilità)
+Ms = matrice di ridimensionamento (ridimensionamento)
 
-M<sub>RC</sub> = matrice Center of rotation (pRotationCenter)
+M<sub>rc</sub> = centro della matrice di rotazione (pRotationCenter)
 
-M<sub>r</sub> = matrice di rotazione (protation)
+M<sub>r</sub> = matrice di rotazione (pRotation)
 
 Mt = matrice di traslazione (pTranslation)
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione D3DXMatrixAffineTransformation può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixAffineTransformation può essere usata come parametro per un'altra funzione.
 
-Per le trasformazioni affini 2D, usare D3DXMatrixAffineTransformation2D.
+Per le trasformazioni affine 2D, usare D3DXMatrixAffineTransformation2D.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -123,8 +123,8 @@ Per le trasformazioni affini 2D, usare D3DXMatrixAffineTransformation2D.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

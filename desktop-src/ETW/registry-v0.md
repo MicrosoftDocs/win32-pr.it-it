@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi del registro di sistema. La sintassi seguente è semplificata dal codice MOF.
+description: 'Registry_V0: questa classe è la classe padre per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 879ac606-f451-4d5d-bf78-3e7fd3093189
-title: Classe Registry_V0
+title: Registry_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7a58427dbb01519b9850461b21fb7dd75a1daf20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee3aa8d5e4f7b7cb557af5eeb4a02c9a10dafbbf
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879517"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108106179"
 ---
-# <a name="registry_v0-class"></a>Classe V0 del registro di sistema \_
+# <a name="registry_v0-class"></a>Classe Registry \_ V0
 
-Questa classe è la classe padre per gli eventi del registro di sistema.
+Questa classe è la classe padre per gli eventi del Registro di sistema.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -36,7 +36,7 @@ class Registry_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La **classe \_ V0 del registro di sistema** non definisce membri.
+La **classe Registry \_ V0** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,8 +44,8 @@ La **classe \_ V0 del registro di sistema** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 
@@ -53,16 +53,16 @@ La **classe \_ V0 del registro di sistema** non definisce membri.
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Registro**](registry.md)
 </dt> <dt>
 
-[**Registro di sistema \_ V0 \_ TypeGroup1**](registry-v0-typegroup1.md)
+[**\_TypeGroup1 del Registro di sistema V0 \_**](registry-v0-typegroup1.md)
 </dt> <dt>
 
-[**Registro di sistema \_ V1**](registry-v1.md)
+[**Registro \_ di sistema V1**](registry-v1.md)
 </dt> </dl>
 
  

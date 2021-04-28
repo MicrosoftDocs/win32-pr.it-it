@@ -1,5 +1,5 @@
 ---
-description: arresta il servizio.
+description: 'Metodo StopService della classe Msvm_CollectionManagementService : arresta il servizio.'
 ms.assetid: 26d0aa9f-f5ca-481f-9bed-6788b0dc2803
 title: Metodo StopService della classe Msvm_CollectionManagementService
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 72a960e1f18589c6166fe58c0325a94d46969946
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f46b7416a3f17788cbfc0af5aacba014d680dbf6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884609"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119249"
 ---
-# <a name="stopservice-method-of-the-msvm_collectionmanagementservice-class"></a>Metodo StopService della classe MSVM \_ CollectionManagementService
+# <a name="stopservice-method-of-the-msvm_collectionmanagementservice-class"></a>Metodo StopService della classe Msvm \_ CollectionManagementService
 
 arresta il servizio.
 
@@ -39,11 +39,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 se ha esito positivo; in caso contrario, restituisce un errore.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -55,10 +55,10 @@ Restituisce 0 se ha esito positivo; in caso contrario, restituisce un errore.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Restituisce 0 se ha esito positivo; in caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-[**\_CollectionManagementService MSVM**](msvm-collectionmanagementservice.md)
+[**Msvm \_ CollectionManagementService**](msvm-collectionmanagementservice.md)
 </dt> </dl>
 
  

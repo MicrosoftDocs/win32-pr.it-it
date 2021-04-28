@@ -1,7 +1,7 @@
 ---
-description: Ruota (relativo allo spazio delle coordinate locali dell'oggetto) intorno a un asse arbitrario.
+description: "Metodo ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h): ruota (rispetto allo spazio delle coordinate locale dell'oggetto) intorno a un asse arbitrario."
 ms.assetid: c69f5ea7-5d14-4187-9405-1ceff8230185
-title: 'Metodo ID3DXMATRIXStack:: RotateYawPitchRollLocal (D3dx9math. h)'
+title: Metodo ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cffacf4129a711dece35fd581f6cfc9bc12c2f99
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1d104676b6d346afd527552dbfba4bac23ed09cd
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354329"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108093449"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack:: RotateYawPitchRollLocal (D3dx9math. h)
+# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h)
 
-Ruota (relativo allo spazio delle coordinate locali dell'oggetto) intorno a un asse arbitrario.
+Ruota (rispetto allo spazio delle coordinate locale dell'oggetto) intorno a un asse arbitrario.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT RotateYawPitchRollLocal(
 
 <dl> <dt>
 
-*Imbardata* \[ in\]
+*Yaw* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Imbardata intorno all'asse y in radianti.
+Yaw intorno all'asse y in radianti.
 
 </dd> <dt>
 
-*Passo* \[ in\]
+*Tono* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Il passo intorno all'asse x, in radianti.
+Passo intorno all'asse x in radianti.
 
 </dd> <dt>
 
-Esegui *rollforward* \[ in\]
+*Roll* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Il roll intorno all'asse z, in radianti.
+Rullo intorno all'asse z in radianti.
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 
 
-Poiché la rotazione viene moltiplicata a sinistra nello stack della matrice, la rotazione è relativa allo spazio delle coordinate locali dell'oggetto.
+Poiché la rotazione viene moltiplicata a sinistra nello stack della matrice, la rotazione è relativa allo spazio delle coordinate locale dell'oggetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,8 +96,8 @@ Poiché la rotazione viene moltiplicata a sinistra nello stack della matrice, la
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

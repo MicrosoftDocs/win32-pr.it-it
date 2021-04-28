@@ -1,5 +1,5 @@
 ---
-description: Blocca o rilascia i supporti.
+description: 'Metodo LockMedia della classe Msvm_DVDDrive: blocca o rilascia il supporto.'
 ms.assetid: 924bc20a-901b-4618-be49-eaacf80c9465
 title: Metodo LockMedia della classe Msvm_DVDDrive
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 650a868d8e25e2ccc47271e49634827fe7d3d967
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: e00780fbeeeec60563b31008c8e5979a09f9d173
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104132194"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108119149"
 ---
-# <a name="lockmedia-method-of-the-msvm_dvddrive-class"></a>Metodo LockMedia della classe MSVM \_ DVDDrive
+# <a name="lockmedia-method-of-the-msvm_dvddrive-class"></a>Metodo LockMedia della classe MSvm \_ DVDDrive
 
 Blocca o rilascia i supporti.
 
@@ -39,10 +39,10 @@ uint32 LockMedia(
 
 <dl> <dt>
 
-*Blocca* \[ in\]
+*Blocco* \[ Pollici\]
 </dt> <dd>
 
-**true** per bloccare i supporti; **false** per rilasciare il supporto.
+**true** per bloccare il supporto; **false** per rilasciare il supporto.
 
 </dd> </dl>
 
@@ -66,8 +66,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -76,7 +76,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_DVDDrive MSVM**](msvm-dvddrive.md)
+[**Msvm \_ DVDDrive**](msvm-dvddrive.md)
 </dt> </dl>
 
  

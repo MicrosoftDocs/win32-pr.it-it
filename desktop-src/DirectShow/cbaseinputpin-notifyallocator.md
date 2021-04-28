@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo NotifyAllocator specifica un allocatore per la connessione. Questo metodo implementa il metodo IMemInputPin:: NotifyAllocator.'
+description: 'Metodo CBaseInputPin.NotifyAllocator: il metodo NotifyAllocator specifica un allocatore per la connessione. Questo metodo implementa il metodo IMemInputPin::NotifyAllocator.'
 ms.assetid: 16167bd5-2d33-4329-87ec-6a6c578e0060
-title: Metodo CBaseInputPin. NotifyAllocator (Amfilter. h)
+title: Metodo CBaseInputPin.NotifyAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ce5bc3cfe165b1adb6b5b970ca43d31c8ace98f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c63e448d0cf2d287a441a4983f6a2e06bd9b8151
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330701"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099716"
 ---
-# <a name="cbaseinputpinnotifyallocator-method"></a>CBaseInputPin. NotifyAllocator, metodo
+# <a name="cbaseinputpinnotifyallocator-method"></a>Metodo CBaseInputPin.NotifyAllocator
 
-Il `NotifyAllocator` metodo specifica un allocatore per la connessione. Questo metodo implementa il metodo [**IMemInputPin:: NotifyAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator) .
+Il `NotifyAllocator` metodo specifica un allocatore per la connessione. Questo metodo implementa il [**metodo IMemInputPin::NotifyAllocator.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,17 +53,17 @@ Puntatore all'interfaccia [**IMemAllocator**](/windows/desktop/api/Strmif/nn-str
 *bReadOnly* 
 </dt> <dd>
 
-Flag che specifica se gli esempi di questo allocatore sono di sola lettura. Se **true**, gli esempi sono di sola lettura.
+Flag che specifica se gli esempi di questo allocatore sono di sola lettura. Se **TRUE,** gli esempi sono di sola lettura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la connessione del PIN, il pin di output sceglie un allocatore e chiama questo metodo per inviare una notifica al pin di input. Il pin di output può usare l'allocatore proposto dal pin di input nel metodo [**IMemInputPin:: Getallocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) oppure può fornire il proprio allocatore.
+Durante la connessione del pin, il pin di output sceglie un allocatore e chiama questo metodo per inviare una notifica al pin di input. Il pin di output può usare l'allocatore proposto dal pin di input nel metodo [**IMemInputPin::GetAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) oppure può fornire il proprio allocatore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Durante la connessione del PIN, il pin di output sceglie un allocatore e chiama 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

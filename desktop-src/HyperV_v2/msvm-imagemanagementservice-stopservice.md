@@ -1,5 +1,5 @@
 ---
-description: arresta il servizio.
+description: 'Metodo StopService della classe Msvm_ImageManagementService: arresta il servizio.'
 ms.assetid: 96f49c9c-7f1c-497e-9630-5fd9b355b75d
 title: Metodo StopService della classe Msvm_ImageManagementService
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d61f95af2cc0efe371a91454c74adc96949e00e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9dde7af6f6d62395f27cbd3ec44daf45d7375f8
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307885"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118930"
 ---
-# <a name="stopservice-method-of-the-msvm_imagemanagementservice-class"></a>Metodo StopService della classe MSVM \_ servizio
+# <a name="stopservice-method-of-the-msvm_imagemanagementservice-class"></a>Metodo StopService della classe Msvm \_ ImageManagementService
 
 arresta il servizio.
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_Servizio MSVM**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

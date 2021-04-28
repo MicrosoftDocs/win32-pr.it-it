@@ -1,7 +1,7 @@
 ---
-description: Il metodo Disconnect disconnette l'oggetto NPP dalla rete.
+description: 'Metodo IDelaydC::D isconnect: il metodo Disconnect disconnette il NPP dalla rete.'
 ms.assetid: 476bbce4-2e3c-448f-b85e-6adac424fb0d
-title: 'IDelaydC: metodo:D di connessione (Netmon. h)'
+title: Metodo IDelaydC::D isconnect (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d192aa80f543706eea4bc197bc3dc8d57dd64aee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 967bd9674cb28363804b8c8af12c541bcb8675ff
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128335"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110809"
 ---
-# <a name="idelaydcdisconnect-method"></a>IDelaydC::D metodo di connessione
+# <a name="idelaydcdisconnect-method"></a>Metodo IDelaydC::D isconnect
 
-Il metodo **Disconnect** disconnette l'oggetto NPP dalla rete.
+Il **metodo Disconnect** disconnette il NPP dalla rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -48,9 +48,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                       |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_acquisizione NMERR**</dt> </dl>      | L'oggetto NPP sta acquisendo i dati. Non è possibile disconnettere l'oggetto NPP dalla rete durante un'acquisizione.<br/>            |
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl> | L'oggetto NPP non è connesso alla rete.<br/>                                                               |
-| <dl> <dt>**NMERR \_ non \_ ritardato**</dt> </dl>   | L'oggetto NPP è connesso alla rete, ma non con il metodo [IDelaydC:: Connect](idelaydc-connect.md) .<br/> |
+| <dl> <dt>**ACQUISIZIONE DI \_ NMERR**</dt> </dl>      | Il NPP acquisisce i dati. Non è possibile disconnettere il NPP dalla rete durante un'acquisizione.<br/>            |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete.<br/>                                                               |
+| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>   | Il NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connect.](idelaydc-connect.md)<br/> |
 
 
 
@@ -58,7 +58,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non può essere chiamato quando l'oggetto NPP sta acquisendo i dati. Prima di chiamare **Disconnect**, è necessario chiamare il metodo **IDelaydC:: Stop** .
+Questo metodo non può essere chiamato quando il NPP acquisisce dati. È necessario chiamare il **metodo IDelaydC::Stop** prima di chiamare **Disconnect.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Questo metodo non può essere chiamato quando l'oggetto NPP sta acquisendo i dat
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -80,10 +80,10 @@ Questo metodo non può essere chiamato quando l'oggetto NPP sta acquisendo i dat
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: Connect](idelaydc-connect.md)
+[IDelaydC::Connect](idelaydc-connect.md)
 </dt> <dt>
 
-[IDelaydC:: Stop](idelaydc-stop.md)
+[IDelaydC::Stop](idelaydc-stop.md)
 </dt> </dl>
 
  

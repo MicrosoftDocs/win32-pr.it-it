@@ -1,7 +1,7 @@
 ---
-description: Il metodo pause sospende l'acquisizione corrente.
+description: "Metodo IRTC::P ause: il metodo Pause sospende l'acquisizione corrente."
 ms.assetid: 8c7b310e-de04-4bd8-9c96-3c5948e610be
-title: Metodo IRTC::P ause (Netmon. h)
+title: Metodo IRTC::P ause (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d2593c380d0fea52d030586da2f473a3f3fa9446
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d42af1912365a4237889e4e46d0fb3343377c772
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226965"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110679"
 ---
-# <a name="irtcpause-method"></a>IRTC::P metodo ause
+# <a name="irtcpause-method"></a>Metodo IRTC::P ause
 
-Il metodo **pause** sospende l'acquisizione corrente.
+Il **metodo Pause** sospende l'acquisizione corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -48,10 +48,10 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                           | Descrizione                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_acquisizione NMERR \_ sospesa**</dt> </dl> | Acquisizione già sospesa.<br/>                                                                                     |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl>  | L'oggetto NPP non sta acquisendo dati. Chiamare [IRTC:: Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl>  | L'oggetto NPP non è connesso alla rete. Chiamare [IRTC:: Connect](irtc-connect.md) per connettere l'oggetto NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non in \_ tempo reale**</dt> </dl>   | L'oggetto NPP è connesso alla rete, ma non con il metodo [IRTC:: Connect](irtc-connect.md) .<br/>                     |
+| <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl> | L'acquisizione è già sospesa.<br/>                                                                                     |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | Il NPP non acquisisce dati. Chiamare [IRTC::Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | Il NPP non è connesso alla rete. Chiamare [IRTC::Connect](irtc-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>   | Il protocollo NPP è connesso alla rete, ma non con [il metodo IRTC::Connect.](irtc-connect.md)<br/>                     |
 
 
 
@@ -59,11 +59,11 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Mentre l'acquisizione si trova in uno stato di sospensione, i nuovi frame non vengono acquisiti fino a quando non viene chiamato il metodo [IRTC:: Resume](irtc-resume.md) per riavviare l'acquisizione.
+Mentre l'acquisizione è sospesa, i nuovi fotogrammi non vengono acquisiti fino a quando non viene chiamato il metodo [IRTC::Resume](irtc-resume.md) per riavviare l'acquisizione.
 
-Quando si usano i metodi **IRTC::P ause** e **IRTC:: Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere [*statistiche di conversazione*](c.md) ogni volta che viene eseguita l'acquisizione.
+Quando si usano i metodi **IRTC::P ause** e **IRTC::Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione ogni volta che l'acquisizione è in esecuzione. [](c.md)
 
-Per riavviare la chiamata di acquisizione [IRTC:: Resume](irtc-resume.md). Per arrestare l'acquisizione, chiamare [IRTC:: Stop](irtc-stop.md).
+Per riavviare l'acquisizione, [chiamare IRTC::Resume](irtc-resume.md). Per arrestare l'acquisizione, [chiamare IRTC::Stop](irtc-stop.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Per riavviare la chiamata di acquisizione [IRTC:: Resume](irtc-resume.md). Per a
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -85,16 +85,16 @@ Per riavviare la chiamata di acquisizione [IRTC:: Resume](irtc-resume.md). Per a
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: Connect](irtc-connect.md)
+[IRTC::Connect](irtc-connect.md)
 </dt> <dt>
 
-[IRTC:: Resume](irtc-resume.md)
+[IRTC::Resume](irtc-resume.md)
 </dt> <dt>
 
-[IRTC:: Start](irtc-start.md)
+[IRTC::Start](irtc-start.md)
 </dt> <dt>
 
-[IRTC:: Stop](irtc-stop.md)
+[IRTC::Stop](irtc-stop.md)
 </dt> </dl>
 
  

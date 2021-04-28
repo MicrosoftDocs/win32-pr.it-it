@@ -1,19 +1,19 @@
 ---
 title: Uso delle stringhe
-description: .
+description: Uso delle stringhe
 ms.assetid: 876ff8bb-67c3-4dcc-aa94-7fbd915c67dc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70c74530a1acd0eb94f0d88662924203a8c58116
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4661c6b07a267d90e0fca05d04354c018be04527
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117659"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108110969"
 ---
 # <a name="working-with-strings"></a>Uso delle stringhe
 
-Windows supporta in modo nativo le stringhe Unicode per gli elementi dell'interfaccia utente, i nomi di file e così via. Unicode è la codifica dei caratteri preferita, perché supporta tutti i set di caratteri e le lingue. Windows rappresenta i caratteri Unicode usando la codifica UTF-16, in cui ogni carattere viene codificato come valore a 16 bit. I caratteri UTF-16 sono detti caratteri *Wide* per distinguerli da caratteri ANSI a 8 bit. Il compilatore Visual C++ supporta il tipo di dati predefinito **WCHAR \_ t** per i caratteri wide. Il file di intestazione WinNT. h definisce anche il **typedef** seguente.
+Windows supporta in modo nativo stringhe Unicode per elementi dell'interfaccia utente, nomi di file e così via. Unicode è la codifica dei caratteri preferita, perché supporta tutti i set di caratteri e le lingue. Windows rappresenta i caratteri Unicode usando la codifica UTF-16, in cui ogni carattere viene codificato come valore a 16 bit. I caratteri UTF-16 sono detti *caratteri wide,* per distinguerli dai caratteri ANSI a 8 bit. Il Visual C++ supporta il tipo di dati **predefinito wchar \_ t** per i caratteri wide. Il file di intestazione WinNT.h definisce anche il **typedef seguente.**
 
 
 ```C++
@@ -22,7 +22,7 @@ typedef wchar_t WCHAR;
 
 
 
-Vengono visualizzate entrambe le versioni nel codice di esempio MSDN. Per dichiarare un valore letterale a caratteri wide o un valore letterale stringa di caratteri wide, inserire **L** prima del valore letterale.
+Entrambe le versioni saranno disponibili nel codice di esempio MSDN. Per dichiarare un valore letterale carattere wide o un valore letterale stringa di caratteri wide, inserire **L** prima del valore letterale.
 
 
 ```C++
@@ -32,30 +32,30 @@ wchar_t *str = L"hello";
 
 
 
-Di seguito sono riportati alcuni altri typedef correlati a stringhe che verranno visualizzati:
+Di seguito sono riportati altri typedef correlati alle stringhe che verranno visualizzati:
 
 
 
 | Typedef                   | Definizione       |
 |---------------------------|------------------|
 | **CHAR**                  | `char`           |
-| **Pstr** o **LPSTR**     | `char*`          |
+| **PSTR** o **LPSTR**     | `char*`          |
 | **PCSTR** o **LPCSTR**   | `const char*`    |
 | **PWSTR** o **LPWSTR**   | `wchar_t*`       |
 | **PCWSTR** o **LPCWSTR** | `const wchar_t*` |
 
 
 
- 
+ 
 
 ## <a name="unicode-and-ansi-functions"></a>Funzioni Unicode e ANSI
 
-Quando Microsoft ha introdotto il supporto Unicode per Windows, ha semplificato la transizione fornendo due set di API paralleli, uno per le stringhe ANSI e l'altro per le stringhe Unicode. Sono ad esempio disponibili due funzioni per impostare il testo della barra del titolo di una finestra:
+Quando Microsoft ha introdotto il supporto Unicode per Windows, ha semplificato la transizione fornendo due set paralleli di API, uno per le stringhe ANSI e l'altro per le stringhe Unicode. Ad esempio, sono disponibili due funzioni per impostare il testo della barra del titolo di una finestra:
 
--   **SetWindowTextA** accetta una stringa ANSI.
+-   **SetWindowTextA accetta** una stringa ANSI.
 -   **SetWindowTextW** accetta una stringa Unicode.
 
-Internamente, la versione ANSI converte la stringa in Unicode. Le intestazioni di Windows definiscono anche una macro che viene risolta nella versione Unicode quando viene definito il simbolo del preprocessore `UNICODE` o in caso contrario la versione ANSI.
+Internamente, la versione ANSI converte la stringa in Unicode. Le intestazioni di Windows definiscono anche una macro che viene risolta nella versione Unicode quando viene definito il simbolo del preprocessore o la `UNICODE` versione ANSI in caso contrario.
 
 
 ```C++
@@ -68,24 +68,24 @@ Internamente, la versione ANSI converte la stringa in Unicode. Le intestazioni d
 
 
 
-In MSDN, la funzione è documentata con il nome [**SetWindowText**](/windows/desktop/api/winuser/nf-winuser-setwindowtexta), anche se è effettivamente il nome della macro, non il nome effettivo della funzione.
+In MSDN la funzione è documentata con il nome [**SetWindowText,**](/windows/desktop/api/winuser/nf-winuser-setwindowtexta)anche se è effettivamente il nome della macro, non il nome effettivo della funzione.
 
-Le nuove applicazioni devono sempre chiamare le versioni Unicode. Molti linguaggi internazionali richiedono Unicode. Se si usano stringhe ANSI, sarà impossibile localizzare l'applicazione. Anche le versioni ANSI sono meno efficienti perché il sistema operativo deve convertire le stringhe ANSI in Unicode in fase di esecuzione. A seconda delle preferenze, è possibile chiamare le funzioni Unicode in modo esplicito, ad esempio **SetWindowTextW**, oppure utilizzare le macro. Il codice di esempio su MSDN chiama in genere le macro, ma le due forme sono esattamente equivalenti. Le API più recenti in Windows hanno solo una versione Unicode, senza alcuna versione ANSI corrispondente.
+Le nuove applicazioni devono sempre chiamare le versioni Unicode. Molte lingue del mondo richiedono Unicode. Se si usano stringhe ANSI, non sarà possibile localizzare l'applicazione. Anche le versioni ANSI sono meno efficienti, perché il sistema operativo deve convertire le stringhe ANSI in Unicode in fase di esecuzione. A seconda delle preferenze, è possibile chiamare le funzioni Unicode in modo esplicito, ad esempio **SetWindowTextW,** o usare le macro. Il codice di esempio in MSDN chiama in genere le macro, ma i due moduli sono esattamente equivalenti. La maggior parte delle API più nuove in Windows ha solo una versione Unicode, senza una versione ANSI corrispondente.
 
-## <a name="tchars"></a>TCHARs
+## <a name="tchars"></a>TCHAR
 
-Quando le applicazioni sono necessarie per supportare sia Windows NT che Windows 95, Windows 98 e Windows me, è utile compilare lo stesso codice per le stringhe ANSI o Unicode, a seconda della piattaforma di destinazione. A questo scopo, il Windows SDK fornisce macro che mappano le stringhe a Unicode o ANSI, a seconda della piattaforma.
+Quando le applicazioni dovevano supportare sia Windows NT che Windows 95, Windows 98 e Windows Me, era utile compilare lo stesso codice per stringhe ANSI o Unicode, a seconda della piattaforma di destinazione. A questo scopo, il Windows SDK macro che eseere il mapping delle stringhe a Unicode o ANSI, a seconda della piattaforma.
 
 
 
 | Macro     | Unicode   | ANSI   |
 |-----------|-----------|--------|
 | TCHAR     | `wchar_t` | `char` |
-| TESTO ("x") | `L"x"`    | `"x"`  |
+| TEXT("x") | `L"x"`    | `"x"`  |
 
 
 
- 
+ 
 
 Ad esempio, il seguente codice:
 
@@ -96,7 +96,7 @@ SetWindowText(TEXT("My Application"));
 
 
 
-viene risolto in uno dei seguenti elementi:
+viene risolto in uno degli elementi seguenti:
 
 
 ```C++
@@ -107,9 +107,9 @@ SetWindowTextA("My Application");  // ANSI function.
 
 
 
-Attualmente le macro **Text** e **TCHAR** sono meno utili, perché tutte le applicazioni devono utilizzare Unicode. Tuttavia, è possibile visualizzarli nel codice precedente e in alcuni degli esempi di codice MSDN.
+Le **macro TEXT** e **TCHAR** sono attualmente meno utili, perché tutte le applicazioni devono usare Unicode. Tuttavia, potrebbero essere visualizzati nel codice precedente e in alcuni esempi di codice MSDN.
 
-Le intestazioni per le librerie di runtime di Microsoft C definiscono un set di macro simile. Ad esempio, **\_ tcslen** si risolve in **strlen** se `_UNICODE` non è definito; in caso contrario, viene risolto in **wcslen**, che è la versione a caratteri wide di **strlen**.
+Le intestazioni per le librerie di runtime di Microsoft C definiscono un set simile di macro. Ad esempio, **\_ tcslen** viene risolto in **strlen** se non è definito; in caso contrario, viene risolto in wcslen , che è la versione a caratteri wide `_UNICODE` di **strlen**. 
 
 
 ```C++
@@ -122,12 +122,12 @@ Le intestazioni per le librerie di runtime di Microsoft C definiscono un set di 
 
 
 
-Prestare attenzione: alcune intestazioni usano il simbolo del preprocessore `UNICODE` , altre usano `_UNICODE` con un prefisso di sottolineatura. Definire sempre entrambi i simboli. Per impostazione predefinita, Visual C++ li imposta entrambi quando si crea un nuovo progetto.
+Prestare attenzione: alcune intestazioni usano il simbolo del preprocessore `UNICODE` , altre usano con un prefisso di `_UNICODE` sottolineatura. Definire sempre entrambi i simboli. Visual C++ vengono impostate entrambe per impostazione predefinita quando si crea un nuovo progetto.
 
 ## <a name="next"></a>Prossima
 
 [Che cos'è una finestra?](what-is-a-window-.md)
 
- 
+ 
 
- 
+ 
