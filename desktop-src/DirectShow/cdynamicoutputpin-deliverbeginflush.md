@@ -1,7 +1,7 @@
 ---
-description: Il metodo DeliverBeginFlush richiede al pin di input connesso di iniziare un'operazione di svuotamento.
+description: "Metodo CDynamicOutputPin.DeliverBeginFlush: il metodo DeliverBeginFlush richiede al pin di input connesso di iniziare un'operazione di scaricamento."
 ms.assetid: eafc3835-7696-480b-abc8-154938e19b15
-title: Metodo CDynamicOutputPin. DeliverBeginFlush (Amfilter. h)
+title: Metodo CDynamicOutputPin.DeliverBeginFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 242394a327b63fcc901b08f572096bf2f42238b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4158a3d6191325e8b647e4551133952d623f795
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328255"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099319"
 ---
-# <a name="cdynamicoutputpindeliverbeginflush-method"></a>CDynamicOutputPin. DeliverBeginFlush, metodo
+# <a name="cdynamicoutputpindeliverbeginflush-method"></a>Metodo CDynamicOutputPin.DeliverBeginFlush
 
-Il `DeliverBeginFlush` metodo richiede al pin di input connesso di iniziare un'operazione di svuotamento.
+Il `DeliverBeginFlush` metodo richiede al pin di input connesso di iniziare un'operazione di scaricamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la ragione dell'errore.
+Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica la causa dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseOutputPin::D eliverbeginflush**](cbaseoutputpin-deliverbeginflush.md) . Imposta l'evento [**CDynamicOutputPin:: m \_ hStopEvent**](cdynamicoutputpin-m-hstopevent.md) .
+Questo metodo esegue l'override [**del metodo CBaseOutputPin::D eliverBeginFlush.**](cbaseoutputpin-deliverbeginflush.md) Imposta [**l'evento \_ HStopEvent CDynamicOutputPin::m.**](cdynamicoutputpin-m-hstopevent.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo esegue l'override del metodo [**CBaseOutputPin::D eliverbeginflush
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

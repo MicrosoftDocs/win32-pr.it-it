@@ -1,7 +1,7 @@
 ---
-description: Reimposta la tastiera virtuale.
+description: 'Metodo Reset della classe Msvm_SyntheticKeyboard: reimposta la tastiera virtuale.'
 ms.assetid: 2a943dd8-3b94-4b20-8786-7f9d8b0aeaa6
-title: Reimposta il metodo della classe Msvm_SyntheticKeyboard
+title: Metodo Reset della classe Msvm_SyntheticKeyboard
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 05c5b8dbfba04eca6e0b118ae20f2ad172d324e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fbaa420f2d99fa2670717f98b0bcf6d42157d43
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225912"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111269"
 ---
-# <a name="reset-method-of-the-msvm_synthetickeyboard-class"></a>Metodo Reset della \_ classe SyntheticKeyboard di MSVM
+# <a name="reset-method-of-the-msvm_synthetickeyboard-class"></a>Metodo Reset della classe Msvm \_ SyntheticKeyboard
 
 Reimposta la tastiera virtuale.
 
@@ -39,7 +39,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0; in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -55,10 +55,10 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 
 <dl> <dt>
 
-[**\_SyntheticKeyboard MSVM**](msvm-synthetickeyboard.md)
+[**Msvm \_ SyntheticKeyboard**](msvm-synthetickeyboard.md)
 </dt> </dl>
 
  

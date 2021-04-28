@@ -1,5 +1,5 @@
 ---
-description: Esegue un'operazione specificata su un file specificato.
+description: "Metodo Shell.ShellExecute: esegue un'operazione specificata su un file specificato."
 ms.assetid: 62E59A1C-51BD-4864-AF09-35FFD49FAB9D
 title: Metodo Shell.ShellExecute (Shldisp.h)
 ms.topic: reference
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 83ab9741199bff675245f15dc2ad1ffb20592a35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fd31f0859fff5a1c94d5586f287e4a8980ddc02
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104979887"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108104129"
 ---
-# <a name="shellshellexecute-method"></a>Shell. ShellExecute, metodo
+# <a name="shellshellexecute-method"></a>Metodo Shell.ShellExecute
 
 Esegue un'operazione specificata su un file specificato.
 
 ## <a name="syntax"></a>Sintassi
 
-JScript
+Jscript:
 
 ```js
 iRetVal = Shell.ShellExecute(
@@ -38,7 +38,7 @@ iRetVal = Shell.ShellExecute(
 );
 ```
 
-VBScript
+Vbscript:
 
 ```vb
 iRetVal = Shell.ShellExecute( _
@@ -66,39 +66,39 @@ Shell.ShellExecute( _
 
 <dl> <dt>
 
-*sfile* \[ in\]
+*sFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-**Stringa** che contiene il nome del file in cui **ShellExecute** eseguirà l'azione specificata da *vOperation*.
+Stringa **contenente** il nome del file in cui **ShellExecute** eseguirà l'azione specificata da *vOperation*.
 
 </dd> <dt>
 
 *vArguments* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Stringa che contiene i valori dei parametri per l'operazione.
+Stringa contenente i valori dei parametri per l'operazione.
 
 </dd> <dt>
 
 *vDirectory* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Percorso completo della directory che contiene il file specificato da *sfile*. Se questo parametro non viene specificato, viene utilizzata la directory di lavoro corrente.
+Percorso completo della directory che contiene il file specificato da *sFile*. Se questo parametro non viene specificato, viene utilizzata la directory di lavoro corrente.
 
 </dd> <dt>
 
 *vOperation* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-L'operazione da eseguire. Questo valore è impostato su una delle stringhe dei verbi supportate dal file. Per informazioni sui verbi, vedere la sezione Osservazioni. Se questo parametro non viene specificato, viene eseguita l'operazione predefinita.
+L'operazione da eseguire. Questo valore è impostato su una delle stringhe di verbi supportate dal file. Per una descrizione dei verbi, vedere la sezione Osservazioni. Se questo parametro non viene specificato, viene eseguita l'operazione predefinita.
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ L'operazione da eseguire. Questo valore è impostato su una delle stringhe dei v
 
 Tipo: **Variant**
 
-Indicazione relativa alla modalità di visualizzazione iniziale della finestra dell'applicazione. Questa raccomandazione può essere ignorata dall'applicazione. Questo parametro può avere uno dei valori seguenti. Se questo parametro non viene specificato, l'applicazione utilizzerà il relativo valore predefinito.
+Raccomandazione su come visualizzare inizialmente la finestra dell'applicazione. L'applicazione può ignorare questa raccomandazione. Questo parametro può avere uno dei valori seguenti. Se questo parametro non viene specificato, l'applicazione usa il valore predefinito.
 
 
 
@@ -118,7 +118,7 @@ Indicazione relativa alla modalità di visualizzazione iniziale della finestra d
 | <dl> <dt></dt> <dt>2</dt> </dl>  | Aprire l'applicazione con una finestra ridotta a icona.<br/>                                                                                                 |
 | <dl> <dt></dt> <dt>3</dt> </dl>  | Aprire l'applicazione con una finestra ingrandita.<br/>                                                                                                 |
 | <dl> <dt></dt><dt>4</dt> </dl>  | Aprire l'applicazione con la relativa finestra con le dimensioni e la posizione più recenti. La finestra attiva rimane attiva.<br/>                                  |
-| <dl> <dt></dt><dt>5</dt> </dl>  | Aprire l'applicazione con la relativa finestra in corrispondenza delle dimensioni e della posizione correnti.<br/>                                                                        |
+| <dl> <dt></dt><dt>5</dt> </dl>  | Aprire l'applicazione con la relativa finestra con le dimensioni e la posizione correnti.<br/>                                                                        |
 | <dl> <dt></dt><dt>7</dt> </dl>  | Aprire l'applicazione con una finestra ridotta a icona. La finestra attiva rimane attiva.<br/>                                                               |
 | <dl> <dt></dt><dt>10</dt> </dl> | Aprire l'applicazione con la relativa finestra nello stato predefinito specificato dall'applicazione.<br/>                                                       |
 
@@ -130,15 +130,15 @@ Indicazione relativa alla modalità di visualizzazione iniziale della finestra d
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo equivale a avviare uno dei comandi associati al menu di scelta rapida di un file. Ogni comando è rappresentato da una stringa verbo. Il set di verbi supportati varia da file a file. Il verbo più comunemente supportato è "Open", che è in genere anche il verbo predefinito. Altri verbi possono essere supportati solo da determinati tipi di file. Per ulteriori informazioni sui verbi della shell, vedere [avvio di applicazioni](launch.md) o [estensione dei menu di scelta rapida](context.md).
+Questo metodo equivale all'avvio di uno dei comandi associati al menu di scelta rapida di un file. Ogni comando è rappresentato da una stringa verbo. Il set di verbi supportati varia da file a file. Il verbo più comunemente supportato è "open", che in genere è anche il verbo predefinito. Altri verbi potrebbero essere supportati solo da determinati tipi di file. Per altre informazioni sui verbi shell, vedere [Avvio di applicazioni](launch.md) o Estensione di menu di scelta [rapida.](context.md)
 
 Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo di **ShellExecute** per aprire il blocco note. L'utilizzo viene visualizzato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso **di ShellExecute per** aprire il Blocco note. L'utilizzo è illustrato per JScript e VBScript.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -149,7 +149,7 @@ function ShellExecuteJS()
 }
 ```
 
-VBScript
+Vbscript:
 
 ```vb
 Function ShellExecuteVB()
@@ -167,11 +167,11 @@ End Function
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

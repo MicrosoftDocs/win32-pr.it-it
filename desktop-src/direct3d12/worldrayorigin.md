@@ -1,5 +1,5 @@
 ---
-description: Direzione dello spazio globale per il raggio corrente.
+description: 'WorldRayOrigin: direzione dello spazio del mondo per il raggio corrente.'
 ms.assetid: ''
 title: WorldRayOrigin
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - WorldRayOrigin
 api_type:
 - NA
-ms.openlocfilehash: 3d6b83622cd8fe39e137400ebb656d61425c7a8b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 456d93bf36ceeaac0627d90ed9355453265969b6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304557"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105299"
 ---
 # <a name="worldrayorigin"></a>WorldRayOrigin
 
-Origine dello spazio globale del raggio corrente.
+Origine dello spazio del mondo del raggio corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,12 +32,12 @@ float3 WorldRayOrigin();
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
+Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
 * [**Qualsiasi hit shader**](any-hit-shader.md)
 * [**Hit shader più vicino**](closest-hit-shader.md)
-* [**Intersezione shader**](intersection-shader.md)
-* [**Lo shader manca**](miss-shader.md)
+* [**Intersection Shader**](intersection-shader.md)
+* [**Miss Shader**](miss-shader.md)
 
 
 
@@ -48,7 +48,7 @@ Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
 
 <dl> <dt>
 
-[Guida di riferimento a Direct3D 12 raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
+[Informazioni di riferimento su HLSL per Direct3D 12 Raytracing](direct3d-12-raytracing-hlsl-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CDynamicOutputPin.CDynamicOutputPin : metodo del costruttore.'
 ms.assetid: 996adc69-8727-431e-a7f5-8fbcc0e305ae
-title: Costruttore CDynamicOutputPin. CDynamicOutputPin (Amfilter. h)
+title: Costruttore CDynamicOutputPin.CDynamicOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f45a2fee25796f39c7d8b358b1ac83e4a5b1daa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fe6dad14399b5b124b0146ea8b7ca101c8fa817
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333454"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099309"
 ---
-# <a name="cdynamicoutputpincdynamicoutputpin-constructor"></a>Costruttore CDynamicOutputPin. CDynamicOutputPin
+# <a name="cdynamicoutputpincdynamicoutputpin-constructor"></a>Costruttore CDynamicOutputPin.CDynamicOutputPin
 
 Metodo del costruttore.
 
@@ -49,35 +49,35 @@ CDynamicOutputPin(
 *pObjectName* 
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nome dell'oggetto. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Puntatore a una stringa contenente il nome dell'oggetto. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
 *pFilter* 
 </dt> <dd>
 
-Puntatore al filtro che ha creato questo pin.
+Puntatore al filtro che ha creato questo segnaposto.
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Puntatore a un blocco [**CCritSec**](ccritsec.md) , usato per serializzare le modifiche di stato. Usare la stessa sezione critica del blocco del filtro, [ **CBaseFilter:: m \_ pLock**](cbasefilter-m-plock.md)
+Puntatore a un [**blocco CCritSec,**](ccritsec.md) utilizzato per serializzare le modifiche dello stato. Usare la stessa sezione critica del blocco del filtro, [ **CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md)
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve un valore **HRESULT** che indica l'esito positivo o negativo del metodo. Inizializzare il valore su S \_ OK prima di creare l'oggetto. Il valore viene modificato solo se si verifica un errore.
+Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito positivo o negativo del metodo. Inizializzare il valore su S \_ OK prima di creare l'oggetto . Il valore viene modificato solo se si verifica un errore.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Puntatore a una stringa di caratteri wide contenente l'identificatore del PIN. Per ulteriori informazioni, vedere [**Ipin:: QueryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid).
+Puntatore a una stringa di caratteri wide contenente l'identificatore pin. Per altre informazioni, vedere [**IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid)
 
 </dd> </dl>
 
@@ -87,8 +87,8 @@ Puntatore a una stringa di caratteri wide contenente l'identificatore del PIN. P
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

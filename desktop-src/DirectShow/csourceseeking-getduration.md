@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo GetDuration recupera la durata del flusso. Questo metodo implementa il metodo IMediaSeeking:: GetDuration.'
+description: 'Metodo CSourceSeeking.GetDuration: il metodo GetDuration recupera la durata del flusso. Questo metodo implementa il metodo IMediaSeeking::GetDuration.'
 ms.assetid: 074eb2d0-a7a3-4bc1-82e8-2f42c6d43dac
-title: Metodo CSourceSeeking. GetDuration (Ctlutil. h)
+title: Metodo CSourceSeeking.GetDuration (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8368f655394089c1155d848bc53d2ba2375e3320
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d5b961ad62d65c1f728af71e82de1373ea20b1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329512"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098769"
 ---
-# <a name="csourceseekinggetduration-method"></a>CSourceSeeking. GetDuration, metodo
+# <a name="csourceseekinggetduration-method"></a>Metodo CSourceSeeking.GetDuration
 
-Il `GetDuration` metodo recupera la durata del flusso. Questo metodo implementa il metodo [**IMediaSeeking:: GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) .
+Il `GetDuration` metodo recupera la durata del flusso. Questo metodo implementa il [**metodo IMediaSeeking::GetDuration.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ HRESULT GetDuration(
 *pDuration* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve la durata, in unità del formato dell'ora corrente.
+Puntatore a una variabile che riceve la durata, in unità del formato di ora corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                               | Descrizione                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>      | Operazione riuscita<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl> | Valore del puntatore **null**<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione riuscita<br/>                |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | **Valore del** puntatore NULL<br/> |
 
 
 
@@ -66,7 +66,7 @@ Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-La durata è specificata dalla variabile membro [**CSourceSeeking:: m \_ rtDuration**](csourceseeking-m-rtduration.md) .
+La durata viene specificata dalla [**variabile membro CSourceSeeking::m \_ rtDuration.**](csourceseeking-m-rtduration.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ La durata è specificata dalla variabile membro [**CSourceSeeking:: m \_ rtDurat
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Richiede una reimpostazione.
+description: 'Metodo Reset della classe Msvm_Processor: richiede una reimpostazione.'
 ms.assetid: c69b5c65-8f00-48ed-8602-7e0c5a76653d
-title: Reimposta il metodo della classe Msvm_Processor
+title: Metodo Reset della classe Msvm_Processor
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: aaa0c74ac71e4c3d1be4b9580353c15f5ed94dca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eecd8f240f2d5c7dc1c2c1b98c0503f54a5c8050
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312903"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108111569"
 ---
-# <a name="reset-method-of-the-msvm_processor-class"></a>Metodo Reset della classe del \_ processore MSVM
+# <a name="reset-method-of-the-msvm_processor-class"></a>Metodo Reset della classe Processore Msvm \_
 
 Richiede una reimpostazione.
 
@@ -57,8 +57,8 @@ Questo metodo restituisce uno dei valori seguenti:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_Processore MSVM**](msvm-processor.md)
+[**Processore Msvm \_**](msvm-processor.md)
 </dt> </dl>
 
  

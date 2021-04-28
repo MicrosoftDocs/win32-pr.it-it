@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice di rotazione da un quaternione.
+description: 'Funzione D3DXMatrixRotationQuaternion (D3dx9math.h): compila una matrice di rotazione da un quaternione.'
 ms.assetid: e590058c-772b-4eef-aab0-a12bb04c299a
-title: Funzione D3DXMatrixRotationQuaternion (D3dx9math. h)
+title: Funzione D3DXMatrixRotationQuaternion (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 275a369da106e9f114ce47286f0f6ea9ce381ecb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4b30de0c45c8d78b2e07d6ff57a4e94b9753298a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323238"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118199"
 ---
-# <a name="d3dxmatrixrotationquaternion-function-d3dx9mathh"></a>Funzione D3DXMatrixRotationQuaternion (D3dx9math. h)
+# <a name="d3dxmatrixrotationquaternion-function-d3dx9mathh"></a>Funzione D3DXMatrixRotationQuaternion (D3dx9math.h)
 
 Compila una matrice di rotazione da un quaternione.
 
@@ -41,21 +41,21 @@ D3DXMATRIX* D3DXMatrixRotationQuaternion(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*PQ* \[ in\]
+*pQ* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore alla struttura [**D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> </dl>
 
@@ -63,13 +63,13 @@ Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) compilata dal quaternione di origine.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) compilata dal quaternione di origine.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixRotationQuaternion** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixRotationQuaternion** può essere usata come parametro per un'altra funzione.
 
-Per informazioni su come calcolare i valori Quaternion da un vettore di direzione (x, y, z) e un angolo di rotazione, vedere [**D3DXQUATERNION**](d3dxquaternion.md).
+Per informazioni su come calcolare i valori del quaternione da un vettore di direzione ( x, y, z ) e un angolo di rotazione, vedere [**D3DXQUATERNION**](d3dxquaternion.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Per informazioni su come calcolare i valori Quaternion da un vettore di direzion
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

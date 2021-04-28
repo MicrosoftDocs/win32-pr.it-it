@@ -1,7 +1,7 @@
 ---
-description: Il metodo attivo notifica al pin che il filtro è ora attivo.
+description: 'Metodo CDynamicOutputPin.Active: il metodo Active notifica al segnaposto che il filtro è ora attivo.'
 ms.assetid: c2b8eb54-1bae-4f52-8324-dc70e3cac577
-title: Metodo CDynamicOutputPin. Active (Amfilter. h)
+title: Metodo CDynamicOutputPin.Active (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8f1765d0aa524c0dafd03a3fe4133af71e32fa70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d9544c0fd125146b10f008565fcfbe330d18de1
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333462"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099329"
 ---
-# <a name="cdynamicoutputpinactive-method"></a>Metodo CDynamicOutputPin. Active
+# <a name="cdynamicoutputpinactive-method"></a>Metodo CDynamicOutputPin.Active
 
-Il `Active` metodo notifica al pin che il filtro è ora attivo.
+Il `Active` metodo notifica al segnaposto che il filtro è ora attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                            | Descrizione                                                                                                     |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                                                                                             |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Esito negativo. [**CDynamicOutputPin:: SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) non è stato chiamato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                                                                                             |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Esito negativo. [**CDynamicOutputPin::SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) non è stato chiamato.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseOutputPin:: Active**](cbaseoutputpin-active.md) . Reimposta l'evento [**CDynamicOutputPin:: m \_ hStopEvent**](cdynamicoutputpin-m-hstopevent.md) . Se il filtro proprietario non ha chiamato **SetConfigInfo**, questo metodo restituisce E ha \_ esito negativo.
+Questo metodo esegue l'override [**del metodo CBaseOutputPin::Active.**](cbaseoutputpin-active.md) Reimposta l'evento [**\_ HStopEvent CDynamicOutputPin::m.**](cdynamicoutputpin-m-hstopevent.md) Se il filtro proprietario non ha chiamato **SetConfigInfo,** questo metodo restituisce E \_ FAIL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Questo metodo esegue l'override del metodo [**CBaseOutputPin:: Active**](cbaseou
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

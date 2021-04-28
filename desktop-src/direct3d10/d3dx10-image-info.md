@@ -1,7 +1,7 @@
 ---
-description: Restituisce una descrizione del contenuto originale di un file di immagine.
+description: 'D3DX10_IMAGE_INFO struttura : restituisce una descrizione del contenuto originale di un file di immagine.'
 ms.assetid: 40d89166-cc11-490d-867c-ae5db23a0784
-title: Struttura D3DX10_IMAGE_INFO (D3DX10. h)
+title: D3DX10_IMAGE_INFO struttura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: bf240296610c083e0d042d187ae29054461193a8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 228ddf777217e9e61369b0a7fc3b3eb1ca012b1d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354439"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105479"
 ---
-# <a name="d3dx10_image_info-structure"></a>Struttura delle informazioni sull' \_ immagine d3dx10 \_
+# <a name="d3dx10_image_info-structure"></a>Struttura D3DX10 \_ IMAGE \_ INFO
 
 Restituisce una descrizione del contenuto originale di un file di immagine.
 
@@ -50,7 +50,7 @@ typedef struct D3DX10_IMAGE_INFO {
 **Larghezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -61,7 +61,7 @@ Larghezza dell'immagine originale in pixel.
 **Altezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -72,7 +72,7 @@ Altezza dell'immagine originale in pixel.
 **Livello nidificazione**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -83,66 +83,66 @@ Profondità dell'immagine originale in pixel.
 **ArraySize**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Dimensioni della matrice di trama. *ArraySize* sarà 1 per una singola immagine.
+Dimensioni della matrice di trame. *ArraySize* sarà 1 per una singola immagine.
 
 </dd> <dt>
 
 **MipLevels**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di livelli di mipmap nell'immagine originale.
+Numero di livelli mipmap nell'immagine originale.
 
 </dd> <dt>
 
 **MiscFlags**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Proprietà delle risorse varie ( [**vedere \_ \_ \_ flag varie della risorsa D3D10**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_misc_flag)).
+Proprietà delle risorse varie (vedere [**D3D10 \_ RESOURCE \_ MISC \_ FLAG**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_misc_flag)).
 
 </dd> <dt>
 
 **Formato**
 </dt> <dd>
 
-Tipo: **[ **DXGI \_ Format**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
 </dd> <dd>
 
-Valore del tipo enumerato del [**\_ formato DXGI**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) che descrive più accuratamente i dati nell'immagine originale.
+Valore del tipo [**enumerato DXGI \_ FORMAT**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) che descrive più da vicino i dati nell'immagine originale.
 
 </dd> <dt>
 
 **ResourceDimension**
 </dt> <dd>
 
-Tipo: **[ **\_ \_ dimensione della risorsa D3D10**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_dimension)**
+Tipo: **[ **DIMENSIONE RISORSA \_ \_ D3D10**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_dimension)**
 
 </dd> <dd>
 
-Rappresenta il tipo di trama archiviato nel file. Vedere [**\_ \_ dimensione della risorsa D3D10**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_dimension).
+Rappresenta il tipo della trama archiviata nel file. Vedere [**D3D10 \_ RESOURCE \_ DIMENSION**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_dimension).
 
 </dd> <dt>
 
 **ImageFileFormat**
 </dt> <dd>
 
-Tipo: **[ **d3dx10 \_ Image \_ file \_ Format**](d3dx10-image-file-format.md)**
+Tipo: **[ **D3DX10 \_ IMAGE \_ FILE \_ FORMAT**](d3dx10-image-file-format.md)**
 
 </dd> <dd>
 
-Rappresenta il formato del file di immagine. Vedere [**d3dx10 \_ Image \_ file \_ Format**](d3dx10-image-file-format.md).
+Rappresenta il formato del file di immagine. Vedere [**D3DX10 \_ IMAGE FILE \_ \_ FORMAT**](d3dx10-image-file-format.md).
 
 </dd> </dl>
 
@@ -152,7 +152,7 @@ Rappresenta il formato del file di immagine. Vedere [**d3dx10 \_ Image \_ file \
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 

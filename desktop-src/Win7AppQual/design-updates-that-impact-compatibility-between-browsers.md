@@ -1,19 +1,19 @@
 ---
-description: .
+description: Progettare aggiornamenti che influiscono sulla compatibilità tra browser
 ms.assetid: F2C13FEC-5537-4B0D-BFDB-E17A42A289CB
-title: Aggiornamenti della progettazione che incidono sulla compatibilità tra browser
+title: Progettare aggiornamenti che influiscono sulla compatibilità tra browser
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da217d761a603e2edf8f799ab638561b357151c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a306a64cb03bce8b466f6367339302522109619a
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318882"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108088479"
 ---
-# <a name="design-updates-that-impact-compatibility-between-browsers"></a>Aggiornamenti della progettazione che incidono sulla compatibilità tra browser
+# <a name="design-updates-that-impact-compatibility-between-browsers"></a>Progettare aggiornamenti che influiscono sulla compatibilità tra browser
 
-In questa sezione e nella tabella seguente sono illustrate le quattro principali aree di compatibilità (non in ordine di incidenza o classificazione di priorità).
+Questa sezione e la tabella seguente illustrano le quattro principali aree di compatibilità (non in ordine di incidenza o di classificazione della priorità).
 
 
 
@@ -32,7 +32,7 @@ In questa sezione e nella tabella seguente sono illustrate le quattro principali
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="versioning.md">Controllo delle versioni</a></td>
+<td><a href="versioning.md">Versioning</a></td>
 <td><ul>
 <li>Vettori di versione</li>
 <li>Stringa agente utente</li>
@@ -73,7 +73,7 @@ In questa sezione e nella tabella seguente sono illustrate le quattro principali
 <td><a href="architecture.md">Architettura</a></td>
 
 <td><ul>
-<li>Internet Explorer a regime di controllo libero</li>
+<li>Coppie di Internet Explorer</li>
 </ul></td>
 </tr>
 </tbody>

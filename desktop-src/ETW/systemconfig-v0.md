@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe padre per gli eventi di configurazione hardware. La sintassi seguente è semplificata dal codice MOF.
+description: 'SystemConfig_V0: questa classe è la classe padre per gli eventi di configurazione hardware. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 9da1a7ec-89b5-462b-a336-544e4b7adf96
-title: Classe SystemConfig_V0
+title: SystemConfig_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 92d77d1ad3effdd2bf22a7df8112187b27666238
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24f0c579f4fb9c947ea02ff677cd433da3103cfc
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880894"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108105909"
 ---
-# <a name="systemconfig_v0-class"></a>\_Classe SystemConfig V0
+# <a name="systemconfig_v0-class"></a>Classe SystemConfig \_ V0
 
 Questa classe è la classe padre per gli eventi di configurazione hardware.
 
@@ -36,11 +36,11 @@ class SystemConfig_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe **SystemConfig \_ V0** non definisce membri.
+La **classe SystemConfig \_ V0** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-Per gli eventi di configurazione hardware in Windows XP, vedere la classe [**HWConfig**](hwconfig.md) .
+Per gli eventi di configurazione hardware in Windows XP, vedere la [**classe HWConfig.**](hwconfig.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per gli eventi di configurazione hardware in Windows XP, vedere la classe [**HWC
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 
@@ -57,13 +57,13 @@ Per gli eventi di configurazione hardware in Windows XP, vedere la classe [**HWC
 
 <dl> <dt>
 
-[**\_SYSTEMTRACE MSNT**](msnt-systemtrace.md)
+[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**SystemConfig**](systemconfig.md)
 </dt> <dt>
 
-[**\_CPU SystemConfig V0 \_**](systemconfig-v0-cpu.md)
+[**SystemConfig \_ V0 \_ CPU**](systemconfig-v0-cpu.md)
 </dt> <dt>
 
 [**SystemConfig \_ V0 \_ LogDisk**](systemconfig-v0-logdisk.md)
@@ -75,13 +75,13 @@ Per gli eventi di configurazione hardware in Windows XP, vedere la classe [**HWC
 [**SystemConfig \_ V0 \_ PhyDisk**](systemconfig-v0-phydisk.md)
 </dt> <dt>
 
-[**\_Potenza SystemConfig V0 \_**](systemconfig-v0-power.md)
+[**SystemConfig \_ V0 \_ Power**](systemconfig-v0-power.md)
 </dt> <dt>
 
-[**\_Servizi SystemConfig V0 \_**](systemconfig-v0-services.md)
+[**Servizi SystemConfig \_ V0 \_**](systemconfig-v0-services.md)
 </dt> <dt>
 
-[**\_Video SystemConfig V0 \_**](systemconfig-v0-video.md)
+[**Video di SystemConfig \_ V0 \_**](systemconfig-v0-video.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Il metodo successivo ottiene il numero specificato successivo di elementi nella sequenza di enumerazione.
+description: 'Metodo IEnumTime::Next: il metodo Next ottiene il successivo numero specificato di elementi nella sequenza di enumerazione.'
 ms.assetid: e8ca77b8-0322-43b4-9996-26f584cf878a
-title: 'Metodo IEnumTime:: Next (sdpblb. h)'
+title: Metodo IEnumTime::Next (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fce3d88bc88e808c35ec64f827fd5925ddfe57f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1487136b0e3e41ba11a23ba92500d2aa0758df79
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333866"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108118389"
 ---
-# <a name="ienumtimenext-method"></a>IEnumTime:: Next (metodo)
+# <a name="ienumtimenext-method"></a>Metodo IEnumTime::Next
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[ Le interfacce e i controlli di conferenza di telefonia IP di Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **successivo** ottiene il numero specificato successivo di elementi nella sequenza di enumerazione.
+Il **metodo Next** ottiene il successivo numero specificato di elementi nella sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,24 +34,24 @@ HRESULT Next(
 
 <dl> <dt>
 
-*celt* \[ in\]
+*celt* \[ Pollici\]
 </dt> <dd>
 
 Numero di elementi richiesti.
 
 </dd> <dt>
 
-*pval* \[ out\]
+*pVal* \[ Cambio\]
 </dt> <dd>
 
-Puntatore all'interfaccia [**ITTime**](ittime.md) .
+Puntatore [**all'interfaccia ITTime.**](ittime.md)
 
 </dd> <dt>
 
-*pceltFetched* \[ out\]
+*pceltFetched* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al numero di elementi effettivamente forniti. Può essere **null** se *celt* è 1.
+Puntatore al numero di elementi effettivamente forniti. Può essere **NULL se** *celt* è 1.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                     | Significato                                                       |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>      | Il metodo ha restituito il numero *celt* di elementi.<br/>         |
-| <dl> <dt>**S \_ false**</dt> </dl>   | Il numero di elementi rimanenti è minore di *celt*.<br/> |
-| <dl> <dt>**\_puntatore E**</dt> </dl> | Il parametro *pval* non è un puntatore valido.<br/>       |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Il metodo ha restituito il numero di elementi *celt.*<br/>         |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | Il numero di elementi rimanenti è minore di *celt*.<br/> |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | Il *parametro pVal* non è un puntatore valido.<br/>       |
 
 
 
@@ -73,7 +73,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-TAPI chiama il metodo **AddRef** sull'interfaccia [**ITTime**](ittime.md) restituita da **IEnumTime:: Next**. L'applicazione deve chiamare **Release** sull'interfaccia **ITTime** per liberare risorse associate.
+TAPI chiama il **metodo AddRef** [**sull'interfaccia ITTime**](ittime.md) restituita da **IEnumTime::Next**. L'applicazione deve **chiamare Release** **sull'interfaccia ITTime** per liberare le risorse associate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,9 +81,9 @@ TAPI chiama il metodo **AddRef** sull'interfaccia [**ITTime**](ittime.md) restit
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

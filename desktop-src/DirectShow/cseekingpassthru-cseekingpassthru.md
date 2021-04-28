@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: Costruttore CSeekingPassThru.CSeekingPassThru - Metodo costruttore.
 ms.assetid: e31253fc-b365-4414-9dee-906d4c41d16e
-title: Costruttore CSeekingPassThru. CSeekingPassThru (Seekpt. h)
+title: Costruttore CSeekingPassThru.CSeekingPassThru (Seekpt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a93ed9706762b9a1672bfae85550ee4c2aceeead
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cab9d6329f5175c96a3bfc5962ca5a555fe62b5d
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324666"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108085379"
 ---
-# <a name="cseekingpassthrucseekingpassthru-constructor"></a>Costruttore CSeekingPassThru. CSeekingPassThru
+# <a name="cseekingpassthrucseekingpassthru-constructor"></a>Costruttore CSeekingPassThru.CSeekingPassThru
 
 Metodo del costruttore.
 
@@ -44,24 +44,24 @@ CSeekingPassThru(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Stringa contenente il nome dell'oggetto. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md) .
+Stringa contenente il nome dell'oggetto. Per [**altre informazioni, vedere CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** aggregatore. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a un valore **HRESULT** . Ignorato.
+Puntatore a un **valore HRESULT.** Ignorato.
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Puntatore a un valore **HRESULT** . Ignorato.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Seekpt. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Seekpt.h (include Streams.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

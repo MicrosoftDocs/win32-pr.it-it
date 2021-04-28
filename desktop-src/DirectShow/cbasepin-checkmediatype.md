@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckMediaType determina se il pin accetta un tipo di supporto specifico.
+description: 'Metodo CBasePin.CheckMediaType: il metodo CheckMediaType determina se il pin accetta un tipo di supporto specifico.'
 ms.assetid: 6a138679-02b7-4ccc-8881-a0d496f84f93
-title: Metodo CBasePin. CheckMediaType (Amfilter. h)
+title: Metodo CBasePin.CheckMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e203851a44a5468567e75ee8c0cc955f8ad0278a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afe39f3a7aac155f3cc87fa6d58f402043861d1f
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332592"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108099398"
 ---
-# <a name="cbasepincheckmediatype-method"></a>CBasePin. CheckMediaType, metodo
+# <a name="cbasepincheckmediatype-method"></a>Metodo CBasePin.CheckMediaType
 
 Il `CheckMediaType` metodo determina se il pin accetta un tipo di supporto specifico.
 
@@ -42,16 +42,16 @@ virtual HRESULT CheckMediaType(
 
 <dl> <dt>
 
-*PMT* 
+*Pmt* 
 </dt> <dd>
 
-Puntatore a un oggetto [**CMediaType**](cmediatype.md) che contiene il tipo di supporto proposto.
+Puntatore a un [**oggetto CMediaType**](cmediatype.md) che contiene il tipo di supporto proposto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se il tipo di supporto proposto è accettabile. In caso contrario, restituisce \_ false o un codice di errore.
+Restituisce S \_ OK se il tipo di supporto proposto è accettabile. In caso contrario, restituisce S \_ FALSE o un codice di errore.
 
 ## <a name="remarks"></a>Commenti
 
@@ -63,8 +63,8 @@ La classe derivata deve eseguire l'override di questo metodo virtuale puro.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

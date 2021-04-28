@@ -1,7 +1,7 @@
 ---
-description: Metodo del costruttore.
+description: 'Costruttore CSourceSeeking.CSourceSeeking : metodo del costruttore.'
 ms.assetid: a51d90c9-4046-42dc-b7cf-51b904c5f57a
-title: Costruttore CSourceSeeking. CSourceSeeking (Ctlutil. h)
+title: Costruttore CSourceSeeking.CSourceSeeking (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 309e926ddf001cf9933b19334992f5210fc7f17b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7fcca70408e76466a88c620e3907271d49930973
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331154"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098819"
 ---
-# <a name="csourceseekingcsourceseeking-constructor"></a>Costruttore CSourceSeeking. CSourceSeeking
+# <a name="csourceseekingcsourceseeking-constructor"></a>Costruttore CSourceSeeking.CSourceSeeking
 
 Metodo del costruttore.
 
@@ -45,31 +45,31 @@ CSourceSeeking(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nome dell'oggetto. Per ulteriori informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Puntatore a una stringa contenente il nome dell'oggetto. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** aggregatore. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a un valore **HRESULT** . Ignorato.
+Puntatore a un **valore HRESULT.** Ignorato.
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Puntatore a un oggetto [**CCritSec**](ccritsec.md) . Nella classe derivata dichiarare una variabile membro **CCritSec** e utilizzarne l'indirizzo per questo parametro. La `CSourceSeeking` classe usa questa sezione critica per sincronizzare l'accesso alle ore di inizio e di fine, alla durata e alla velocità di riproduzione. Quando si accede a tali variabili nella classe derivata, mantenere il blocco.
+Puntatore a [**un oggetto CCritSec.**](ccritsec.md) Nella classe derivata dichiarare una **variabile membro CCritSec** e usare l'indirizzo per questo parametro. La classe usa questa sezione critica per sincronizzare l'accesso a ora di inizio e `CSourceSeeking` arresto, durata e velocità di riproduzione. Ogni volta che si accede a tali variabili nella classe derivata, mantenere questo blocco.
 
 </dd> </dl>
 
@@ -79,8 +79,8 @@ Puntatore a un oggetto [**CCritSec**](ccritsec.md) . Nella classe derivata dichi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

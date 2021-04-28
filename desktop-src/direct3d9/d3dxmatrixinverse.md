@@ -1,7 +1,7 @@
 ---
-description: Calcola l'inverso di una matrice.
+description: "Funzione D3DXMatrixInverse (D3dx9math.h): calcola l'inverso di una matrice."
 ms.assetid: b8cad5c5-caa5-4426-b045-1770f8806b6b
-title: Funzione D3DXMatrixInverse (D3dx9math. h)
+title: Funzione D3DXMatrixInverse (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: eac1072c0174a03482e60167180f900588a13a72
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0109481beaea282a785564c081e498fe4c7571b6
+ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322504"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108098149"
 ---
-# <a name="d3dxmatrixinverse-function-d3dx9mathh"></a>Funzione D3DXMatrixInverse (D3dx9math. h)
+# <a name="d3dxmatrixinverse-function-d3dx9mathh"></a>Funzione D3DXMatrixInverse (D3dx9math.h)
 
 Calcola l'inverso di una matrice.
 
@@ -42,30 +42,30 @@ D3DXMATRIX* D3DXMatrixInverse(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pDeterminant* \[ in uscita\]
+*pDeterminant* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore a un valore FLOAT contenente il determinante della matrice. Se il determinante non è necessario, impostare questo parametro su **null**.
+Puntatore a un valore FLOAT contenente il determinante della matrice. Se il determinante non è necessario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
-*PM* \[ in\]
+*pM* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
+Puntatore alla struttura [**D3DXMATRIX di**](d3dxmatrix.md) origine.
 
 </dd> </dl>
 
@@ -73,9 +73,9 @@ Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a una struttura [**D3DXMATRIX**](d3dxmatrix.md) che rappresenta l'inverso della matrice. Se la matrice Inversion ha esito negativo, viene restituito **null** .
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta l'inverso della matrice. Se l'inversione della matrice ha esito negativo, **viene restituito** NULL.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXMatrixInverse** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixInverse** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
