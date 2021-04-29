@@ -1,39 +1,39 @@
 - name: Framework della barra multifunzione di Windows
   href: '-uiplat-windowsribbon-entry.md'
   items:
-    - name: Panoramiche sul Framework della barra multifunzione
+    - name: Cenni preliminari sul framework della barra multifunzione
       href: windowsribbon-overviews-entry.md
       items:
         - name: Introduzione al framework della barra multifunzione di Windows
           href: windowsribbon-introduction.md
         - name: Dichiarazione di comandi e controlli con markup della barra multifunzione
           href: windowsribbon-schema.md
-    - name: Guide per gli sviluppatori del Framework Ribbon
+    - name: Guide per gli sviluppatori di Ribbon Framework
       href: windowsribbon-guides-entry.md
       items:
-        - name: Creazione di un'applicazione Ribbon
+        - name: Creazione di un'applicazione barra multifunzione
           href: windowsribbon-stepbystep.md
         - name: Migrazione al framework della barra multifunzione di Windows
           href: ribbon-migration.md
-        - name: Informazioni sui comandi e sui controlli
+        - name: Informazioni su comandi e controlli
           href: windowsribbon-commandscontrols.md
-        - name: Ascolto degli eventi della barra multifunzione
+        - name: Ascolto di eventi della barra multifunzione
           href: listening-for-ribbon-events.md
-        - name: Specifica delle risorse dell'immagine della barra multifunzione
+        - name: Specifica delle risorse immagine della barra multifunzione
           href: windowsribbon-imageformats.md
-        - name: Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità
+        - name: Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento
           href: windowsribbon-templates.md
         - name: Uso delle raccolte
           href: ribbon-controls-galleries.md
         - name: Visualizzazione di schede contestuali
           href: ribbon-contextualtabs.md
-        - name: Riconfigurazione della barra multifunzione con le modalità applicazione
+        - name: Riconfigurazione della barra multifunzione con modalità applicazione
           href: ribbon-applicationmodes.md
         - name: Personalizzazione dei colori della barra multifunzione
           href: ribbon-color.md
         - name: Visualizzazione della barra multifunzione
           href: ribbon-visibility.md
-        - name: Mantenimento dello stato della barra multifunzione
+        - name: Persistenza dello stato della barra multifunzione
           href: ribbon-statepersistence.md
         - name: Compilazione del markup della barra multifunzione
           href: windowsribbon-intentcl.md
@@ -42,7 +42,7 @@
     - name: Libreria di controlli Ribbon Framework
       href: windowsribbon-controls-entry.md
       items:
-        - name: Menu applicazione
+        - name: Menu dell'applicazione
           href: windowsribbon-controls-applicationmenu.md
         - name: Pulsante
           href: windowsribbon-controls-button.md
@@ -50,21 +50,21 @@
           href: windowsribbon-controls-checkbox.md
         - name: ComboBox
           href: windowsribbon-controls-combobox.md
-        - name: Popup contesto
+        - name: Popup del contesto
           href: windowsribbon-controls-contextpopup.md
-        - name: Pulsante Drop-Down
+        - name: Drop-Down pulsante
           href: windowsribbon-controls-dropdownbutton.md
-        - name: Selezione colori Drop-Down
+        - name: Drop-Down Selezione colori
           href: windowsribbon-controls-dropdowncolorpicker.md
-        - name: Raccolta di Drop-Down
+        - name: Drop-Down Gallery
           href: windowsribbon-controls-dropdowngallery.md
-        - name: Controllo carattere
+        - name: Controllo Font
           href: windowsribbon-controls-fontcontrol.md
         - name: Group
           href: windowsribbon-controls-group.md
-        - name: Pulsante della Guida
+        - name: Pulsante ?
           href: windowsribbon-controls-helpbutton.md
-        - name: Raccolta di In-Ribbon
+        - name: In-Ribbon Gallery
           href: windowsribbon-controls-inribbongallery.md
         - name: Gruppo di menu
           href: windowsribbon-controls-menugroup.md
@@ -76,15 +76,15 @@
           href: windowsribbon-controls-spinner.md
         - name: Pulsante di menu combinato
           href: windowsribbon-controls-splitbutton.md
-        - name: Raccolta di pulsanti di suddivisione
+        - name: Raccolta di pulsanti di menu suddivisi
           href: windowsribbon-controls-splitbuttongallery.md
         - name: Scheda
           href: windowsribbon-controls-tab.md
-        - name: Gruppo di schede
+        - name: Gruppo schede
           href: windowsribbon-controls-tabgroup.md
         - name: Interruttore
           href: windowsribbon-controls-togglebutton.md
-    - name: Informazioni di riferimento sul Framework Ribbon
+    - name: Informazioni di riferimento sul framework della barra multifunzione
       href: windowsribbon-reference-entry.md
       items:
         - name: Elementi di markup
@@ -100,11 +100,11 @@
                       href: windowsribbon-element-command-comment.md
                     - name: Id
                       href: windowsribbon-element-command-id.md
-                    - name: Suggerimento tasto
+                    - name: Keytip
                       href: windowsribbon-element-command-keytip.md
                     - name: LabelDescription
                       href: windowsribbon-element-command-labeldescription.md
-                    - name: LabelTitle
+                    - name: EtichettaTitle
                       href: windowsribbon-element-command-labeltitle.md
                     - name: LargeHighContrastImages
                       href: windowsribbon-element-command-largehighcontrastimages.md
@@ -127,7 +127,7 @@
                   items:
                     - name: Source (Sorgente)
                       href: windowsribbon-element-image-source.md
-                - name: string
+                - name: Stringa
                   href: windowsribbon-element-string.md
                   items:
                     - name: Content
@@ -144,7 +144,7 @@
                   items:
                     - name: ContextMaps
                       href: windowsribbon-element-contextpopup-contextmaps.md
-                    - name: ContextMenu
+                    - name: ContextMenus
                       href: windowsribbon-element-contextpopup-contextmenus.md
                     - name: MiniToolbars
                       href: windowsribbon-element-contextpopup-minitoolbars.md
@@ -169,7 +169,7 @@
                 - name: ApplicationMenu
                   href: windowsribbon-element-applicationmenu.md
                   items:
-                    - name: RecentItems
+                    - name: Elementi recenti
                       href: windowsribbon-element-applicationmenu-recentitems.md
                 - name: Pulsante
                   href: windowsribbon-element-button.md
@@ -188,33 +188,33 @@
                 - name: DropDownGallery
                   href: windowsribbon-element-dropdowngallery.md
                   items:
-                    - name: MenuGroups
+                    - name: MenuGroup
                       href: windowsribbon-element-dropdowngallery-menugroups.md
                     - name: MenuLayout
                       href: windowsribbon-element-dropdowngallery-menulayout.md
-                - name: FontControl
+                - name: Controllo FontControl
                   href: windowsribbon-element-fontcontrol.md
                 - name: Group
                   href: windowsribbon-element-group.md
                 - name: HelpButton
                   href: windowsribbon-element-helpbutton.md
-                - name: Inribbongallery
+                - name: InRibbonGallery
                   href: windowsribbon-element-inribbongallery.md
                   items:
-                    - name: MenuGroups
+                    - name: Gruppi di menu
                       href: windowsribbon-element-inribbongallery-menugroups.md
                     - name: MenuLayout
                       href: windowsribbon-element-inribbongallery-menulayout.md
-                - name: MenuGroup
+                - name: Menugroup
                   href: windowsribbon-element-menugroup.md
                 - name: MiniToolbar
                   href: windowsribbon-element-minitoolbar.md
                 - name: QuickAccessToolbar
                   href: windowsribbon-element-quickaccesstoolbar.md
                   items:
-                    - name: ApplicationDefaults
+                    - name: Impostazioni predefinite applicazione
                       href: windowsribbon-element-quickaccesstoolbar-applicationdefaults.md
-                - name: RecentItems
+                - name: Elementi recenti
                   href: windowsribbon-element-recentitems.md
                 - name: Spinner
                   href: windowsribbon-element-spinner.md
@@ -223,12 +223,12 @@
                   items:
                     - name: ButtonItem
                       href: windowsribbon-element-splitbutton-buttonitem.md
-                    - name: MenuGroups
+                    - name: Gruppi di menu
                       href: windowsribbon-element-splitbutton-menugroups.md
                 - name: SplitButtonGallery
                   href: windowsribbon-element-splitbuttongallery.md
                   items:
-                    - name: MenuGroups
+                    - name: Gruppi di menu
                       href: windowsribbon-element-splitbuttongallery-menugroups.md
                     - name: MenuLayout
                       href: windowsribbon-element-splitbuttongallery-menulayout.md
@@ -251,7 +251,7 @@
                       href: windowsribbon-element-application-commands.md
                     - name: Viste
                       href: windowsribbon-element-application-views.md
-                - name: ColumnBreak
+                - name: Interruzione di colonna
                   href: windowsribbon-element-columnbreak.md
                 - name: ControlGroup
                   href: windowsribbon-element-controlgroup.md
@@ -261,8 +261,6 @@
                   href: windowsribbon-element-controlnamemap.md
                 - name: ControlSizeDefinition
                   href: windowsribbon-element-controlsizedefinition.md
-                - name: DynamicUI
-                  href: windowsribbon-element-dynamicui.md
                 - name: FlowMenuLayout
                   href: windowsribbon-element-flowmenulayout.md
                 - name: GroupSizeDefinition
@@ -355,14 +353,14 @@
             - name: IUICollectionChangedEvent
               href: /windows/desktop/api/Uiribbon/nn-uiribbon-iuicollectionchangedevent
               items:
-                - name: OnChanged
+                - name: Onchanged
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuicollectionchangedevent-onchanged
             - name: IUICommandHandler
               href: /windows/desktop/api/Uiribbon/nn-uiribbon-iuicommandhandler
               items:
                 - name: Execute
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuicommandhandler-execute
-                - name: UpdateProperty
+                - name: Proprietà Update
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuicommandhandler-updateproperty
             - name: IUIContextualUI
               href: /windows/desktop/api/Uiribbon/nn-uiribbon-iuicontextualui
@@ -388,7 +386,7 @@
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-flushpendinginvalidations
                 - name: GetUICommandProperty
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-getuicommandproperty
-                - name: GetView
+                - name: Getview
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-getview
                 - name: Inizializzare
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-initialize
@@ -396,7 +394,7 @@
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-invalidateuicommand
                 - name: LoadUI
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-loadui
-                - name: Modalità selettore
+                - name: SetModes
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-setmodes
                 - name: SetUICommandProperty
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiframework-setuicommandproperty
@@ -413,7 +411,7 @@
             - name: IUIRibbon
               href: /windows/desktop/api/Uiribbon/nn-uiribbon-iuiribbon
               items:
-                - name: GetHeight
+                - name: Getheight
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiribbon-getheight
                 - name: LoadSettingsFromStream
                   href: /windows/desktop/api/Uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream
@@ -451,7 +449,7 @@
                   href: windowsribbon-reference-properties-uipkey-itemssource.md
                 - name: UI_PKEY_SelectedItem
                   href: windowsribbon-reference-properties-uipkey-selecteditem.md
-            - name: Proprietà selezione colori
+            - name: Selezione colori proprietà
               href: windowsribbon-reference-properties-colorpicker.md
               items:
                 - name: UI_PKEY_AutomaticColorLabel
@@ -511,7 +509,7 @@
                   href: windowsribbon-reference-properties-uipkey-fontproperties-underline.md
                 - name: UI_PKEY_FontProperties_VerticalPositioning
                   href: windowsribbon-reference-properties-uipkey-fontproperties-verticalpositioning.md
-            - name: Proprietà del Framework
+            - name: Proprietà del framework
               href: windowsribbon-reference-properties-framework.md
               items:
                 - name: UI_PKEY_GlobalBackgroundColor
@@ -550,7 +548,7 @@
                   href: windowsribbon-reference-properties-uipkey-quickaccesstoolbardock.md
                 - name: UI_PKEY_Viewable
                   href: windowsribbon-reference-properties-uipkey-viewable.md
-            - name: Proprietà stato
+            - name: Proprietà di stato
               href: windowsribbon-reference-properties-state.md
               items:
                 - name: UI_PKEY_BooleanValue
@@ -586,20 +584,20 @@
               href: /windows/win32/api/Uiribbon/ns-uiribbon-ui_eventparams
             - name: UI_EVENTPARAMS_COMMAND
               href: /windows/win32/api/Uiribbon/ns-uiribbon-ui_eventparams_command
-    - name: Esempi di Framework della barra multifunzione
+    - name: Esempi di framework della barra multifunzione
       href: windowsribbon-samples-entry.md
       items:
-        - name: Esempio SimpleRibbon
+        - name: Esempio di SimpleRibbon
           href: windowsribbon-sample1.md
-        - name: Esempio ContextPopup
+        - name: Esempio di ContextPopup
           href: windowsribbon-contextpopupsample.md
-        - name: Esempio DropDownColorPicker
+        - name: Esempio di DropDownColorPicker
           href: windowsribbon-dropdowncolorpickersample.md
         - name: Esempio di raccolta
           href: windowsribbon-gallerysample.md
-        - name: Esempio HTMLEditRibbon
+        - name: Esempio di HTMLEditRibbon
           href: windowsribbon-htmleditribbonsample.md
-        - name: Esempio FontControl
+        - name: Esempio di FontControl
           href: windowsribbon-fontcontrolsample.md
-    - name: Glossario del Framework della barra multifunzione
+    - name: Glossario di Ribbon Framework
       href: windowsribbon-glossary.md
