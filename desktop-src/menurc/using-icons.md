@@ -6,30 +6,30 @@ keywords:
 - risorse, icone
 - icone, creazione
 - icone, visualizzazione
-- icone, condivisione delle risorse
+- icone, condivisione di risorse
 - creazione di icone
 - visualizzazione di icone
-- risorse icona Condivisione
+- risorse icona di condivisione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e93f831e3411985ecfb9f841ade750acd4a61b
-ms.sourcegitcommit: 8755905962e156f29203705d09d6df8b7d0e2fca
+ms.openlocfilehash: 03202c250502794d5f845bcc8c2ae263d919ea62
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "106333989"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327116"
 ---
-# <a name="using-icons"></a><span data-ttu-id="17b80-110">Uso delle icone</span><span class="sxs-lookup"><span data-stu-id="17b80-110">Using Icons</span></span>
+# <a name="using-icons"></a><span data-ttu-id="5b0a4-110">Uso delle icone</span><span class="sxs-lookup"><span data-stu-id="5b0a4-110">Using Icons</span></span>
 
-<span data-ttu-id="17b80-111">Negli argomenti seguenti viene descritto come eseguire determinate attività correlate alle icone:</span><span class="sxs-lookup"><span data-stu-id="17b80-111">The following topics describe how to perform certain tasks related to icons:</span></span>
+<span data-ttu-id="5b0a4-111">Gli argomenti seguenti descrivono come eseguire determinate attività correlate alle icone:</span><span class="sxs-lookup"><span data-stu-id="5b0a4-111">The following topics describe how to perform certain tasks related to icons:</span></span>
 
--   [<span data-ttu-id="17b80-112">Creazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="17b80-112">Creating an Icon</span></span>](#creating-an-icon)
--   [<span data-ttu-id="17b80-113">Visualizzazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="17b80-113">Displaying an Icon</span></span>](#displaying-an-icon)
--   [<span data-ttu-id="17b80-114">Risorse icona Condivisione</span><span class="sxs-lookup"><span data-stu-id="17b80-114">Sharing Icon Resources</span></span>](#sharing-icon-resources)
+-   [<span data-ttu-id="5b0a4-112">Creazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="5b0a4-112">Creating an Icon</span></span>](#creating-an-icon)
+-   [<span data-ttu-id="5b0a4-113">Visualizzazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="5b0a4-113">Displaying an Icon</span></span>](#displaying-an-icon)
+-   [<span data-ttu-id="5b0a4-114">Risorse icona di condivisione</span><span class="sxs-lookup"><span data-stu-id="5b0a4-114">Sharing Icon Resources</span></span>](#sharing-icon-resources)
 
-## <a name="creating-an-icon"></a><span data-ttu-id="17b80-115">Creazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="17b80-115">Creating an Icon</span></span>
+## <a name="creating-an-icon"></a><span data-ttu-id="5b0a4-115">Creazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="5b0a4-115">Creating an Icon</span></span>
 
-<span data-ttu-id="17b80-116">Per usare un'icona, l'applicazione deve ottenere un handle per l'icona.</span><span class="sxs-lookup"><span data-stu-id="17b80-116">To use an icon, your application must get a handle to the icon.</span></span> <span data-ttu-id="17b80-117">Nell'esempio seguente viene illustrato come creare due handle di icona diversi, uno per l'icona della domanda standard e uno per un'icona personalizzata inclusa come risorsa nel file di definizione delle risorse dell'applicazione.</span><span class="sxs-lookup"><span data-stu-id="17b80-117">The following example shows how to create two different icon handles: one for the standard question icon and one for a custom icon included as a resource in the application's resource-definition file.</span></span>
+<span data-ttu-id="5b0a4-116">Per usare un'icona, l'applicazione deve ottenere un handle per l'icona.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-116">To use an icon, your application must get a handle to the icon.</span></span> <span data-ttu-id="5b0a4-117">L'esempio seguente illustra come creare due handle di icona diversi: uno per l'icona della domanda standard e uno per un'icona personalizzata inclusa come risorsa nel file di definizione delle risorse dell'applicazione.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-117">The following example shows how to create two different icon handles: one for the standard question icon and one for a custom icon included as a resource in the application's resource-definition file.</span></span>
 
 
 ```
@@ -50,7 +50,7 @@ hIcon2 = LoadIcon(hinst, MAKEINTRESOURCE(460));
 
 
 
-<span data-ttu-id="17b80-118">Un'applicazione deve implementare icone personalizzate come risorse e usare la funzione [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) , anziché creare le icone in fase di esecuzione.</span><span class="sxs-lookup"><span data-stu-id="17b80-118">An application should implement custom icons as resources and should use the [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) or [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) function, rather than create the icons at run-time.</span></span> <span data-ttu-id="17b80-119">Questo approccio evita la dipendenza dei dispositivi, semplifica la localizzazione e consente alle applicazioni di condividere le bitmap dell'icona.</span><span class="sxs-lookup"><span data-stu-id="17b80-119">This approach avoids device dependence, simplifies localization, and enables applications to share icon bitmaps.</span></span> <span data-ttu-id="17b80-120">Tuttavia, nell'esempio seguente viene usato [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) per creare un'icona personalizzata in fase di esecuzione, in base alle maschere di bit bitmap; è incluso per illustrare il modo in cui il sistema interpreta le maschere di bit Bitmap icona.</span><span class="sxs-lookup"><span data-stu-id="17b80-120">However, the following example uses [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) to create a custom icon at run-time, based on bitmap bitmasks; it is included to illustrate how the system interprets icon bitmap bitmasks.</span></span>
+<span data-ttu-id="5b0a4-118">Un'applicazione deve implementare icone personalizzate come risorse e deve usare la funzione [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) anziché creare le icone in fase di esecuzione.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-118">An application should implement custom icons as resources and should use the [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) or [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) function, rather than create the icons at run-time.</span></span> <span data-ttu-id="5b0a4-119">Questo approccio evita le dipendenze dei dispositivi, semplifica la localizzazione e consente alle applicazioni di condividere le bitmap delle icone.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-119">This approach avoids device dependence, simplifies localization, and enables applications to share icon bitmaps.</span></span> <span data-ttu-id="5b0a4-120">Tuttavia, l'esempio seguente usa [**CreateIcon per**](/windows/desktop/api/Winuser/nf-winuser-createicon) creare un'icona personalizzata in fase di esecuzione, in base alle maschera di bit bitmap; è incluso per illustrare il modo in cui il sistema interpreta le maschera di bit bitmap delle icone.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-120">However, the following example uses [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) to create a custom icon at run-time, based on bitmap bitmasks; it is included to illustrate how the system interprets icon bitmap bitmasks.</span></span>
 
 
 ```
@@ -152,26 +152,26 @@ hIcon3 = CreateIcon(hinst,    // application instance
 
 
 
-<span data-ttu-id="17b80-121">Per creare l'icona, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) applica la seguente tabella di verità alle maschere di maschera and e XOR.</span><span class="sxs-lookup"><span data-stu-id="17b80-121">To create the icon, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) applies the following truth table to the AND and XOR bitmasks.</span></span>
+<span data-ttu-id="5b0a4-121">Per creare l'icona, [**CreateIcon applica**](/windows/desktop/api/Winuser/nf-winuser-createicon) la tabella di verità seguente alle maschera di bit AND e XOR.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-121">To create the icon, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) applies the following truth table to the AND and XOR bitmasks.</span></span>
 
 
 
-| <span data-ttu-id="17b80-122">E maschera di maschera</span><span class="sxs-lookup"><span data-stu-id="17b80-122">AND bitmask</span></span> | <span data-ttu-id="17b80-123">Maschera di maschera XOR</span><span class="sxs-lookup"><span data-stu-id="17b80-123">XOR bitmask</span></span> | <span data-ttu-id="17b80-124">Visualizza</span><span class="sxs-lookup"><span data-stu-id="17b80-124">Display</span></span>        |
+| <span data-ttu-id="5b0a4-122">Maschera di bit AND</span><span class="sxs-lookup"><span data-stu-id="5b0a4-122">AND bitmask</span></span> | <span data-ttu-id="5b0a4-123">Maschera di bit XOR</span><span class="sxs-lookup"><span data-stu-id="5b0a4-123">XOR bitmask</span></span> | <span data-ttu-id="5b0a4-124">Visualizza</span><span class="sxs-lookup"><span data-stu-id="5b0a4-124">Display</span></span>        |
 |-------------|-------------|----------------|
-| <span data-ttu-id="17b80-125">0</span><span class="sxs-lookup"><span data-stu-id="17b80-125">0</span></span>           | <span data-ttu-id="17b80-126">0</span><span class="sxs-lookup"><span data-stu-id="17b80-126">0</span></span>           | <span data-ttu-id="17b80-127">Black</span><span class="sxs-lookup"><span data-stu-id="17b80-127">Black</span></span>          |
-| <span data-ttu-id="17b80-128">0</span><span class="sxs-lookup"><span data-stu-id="17b80-128">0</span></span>           | <span data-ttu-id="17b80-129">1</span><span class="sxs-lookup"><span data-stu-id="17b80-129">1</span></span>           | <span data-ttu-id="17b80-130">White</span><span class="sxs-lookup"><span data-stu-id="17b80-130">White</span></span>          |
-| <span data-ttu-id="17b80-131">1</span><span class="sxs-lookup"><span data-stu-id="17b80-131">1</span></span>           | <span data-ttu-id="17b80-132">0</span><span class="sxs-lookup"><span data-stu-id="17b80-132">0</span></span>           | <span data-ttu-id="17b80-133">Screen</span><span class="sxs-lookup"><span data-stu-id="17b80-133">Screen</span></span>         |
-| <span data-ttu-id="17b80-134">1</span><span class="sxs-lookup"><span data-stu-id="17b80-134">1</span></span>           | <span data-ttu-id="17b80-135">1</span><span class="sxs-lookup"><span data-stu-id="17b80-135">1</span></span>           | <span data-ttu-id="17b80-136">Inverti schermata</span><span class="sxs-lookup"><span data-stu-id="17b80-136">Reverse screen</span></span> |
+| <span data-ttu-id="5b0a4-125">0</span><span class="sxs-lookup"><span data-stu-id="5b0a4-125">0</span></span>           | <span data-ttu-id="5b0a4-126">0</span><span class="sxs-lookup"><span data-stu-id="5b0a4-126">0</span></span>           | <span data-ttu-id="5b0a4-127">Black</span><span class="sxs-lookup"><span data-stu-id="5b0a4-127">Black</span></span>          |
+| <span data-ttu-id="5b0a4-128">0</span><span class="sxs-lookup"><span data-stu-id="5b0a4-128">0</span></span>           | <span data-ttu-id="5b0a4-129">1</span><span class="sxs-lookup"><span data-stu-id="5b0a4-129">1</span></span>           | <span data-ttu-id="5b0a4-130">White</span><span class="sxs-lookup"><span data-stu-id="5b0a4-130">White</span></span>          |
+| <span data-ttu-id="5b0a4-131">1</span><span class="sxs-lookup"><span data-stu-id="5b0a4-131">1</span></span>           | <span data-ttu-id="5b0a4-132">0</span><span class="sxs-lookup"><span data-stu-id="5b0a4-132">0</span></span>           | <span data-ttu-id="5b0a4-133">Screen</span><span class="sxs-lookup"><span data-stu-id="5b0a4-133">Screen</span></span>         |
+| <span data-ttu-id="5b0a4-134">1</span><span class="sxs-lookup"><span data-stu-id="5b0a4-134">1</span></span>           | <span data-ttu-id="5b0a4-135">1</span><span class="sxs-lookup"><span data-stu-id="5b0a4-135">1</span></span>           | <span data-ttu-id="5b0a4-136">Schermata inversa</span><span class="sxs-lookup"><span data-stu-id="5b0a4-136">Reverse screen</span></span> |
 
 
 
  
 
-<span data-ttu-id="17b80-137">Prima di chiudere, l'applicazione deve usare [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) per eliminare qualsiasi icona creata usando [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect).</span><span class="sxs-lookup"><span data-stu-id="17b80-137">Before closing, your application must use [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) to destroy any icon it created by using [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect).</span></span> <span data-ttu-id="17b80-138">Non è necessario eliminare le icone create da altre funzioni.</span><span class="sxs-lookup"><span data-stu-id="17b80-138">It is not necessary to destroy icons created by other functions.</span></span>
+<span data-ttu-id="5b0a4-137">Prima della chiusura, l'applicazione deve [**usare DestroyIcon per**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) eliminare qualsiasi icona creata tramite [**CreateIconIndirect.**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect)</span><span class="sxs-lookup"><span data-stu-id="5b0a4-137">Before closing, your application must use [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) to destroy any icon it created by using [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect).</span></span> <span data-ttu-id="5b0a4-138">Non è necessario eliminare le icone create da altre funzioni.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-138">It is not necessary to destroy icons created by other functions.</span></span>
 
-## <a name="displaying-an-icon"></a><span data-ttu-id="17b80-139">Visualizzazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="17b80-139">Displaying an Icon</span></span>
+## <a name="displaying-an-icon"></a><span data-ttu-id="5b0a4-139">Visualizzazione di un'icona</span><span class="sxs-lookup"><span data-stu-id="5b0a4-139">Displaying an Icon</span></span>
 
-<span data-ttu-id="17b80-140">L'applicazione può caricare e creare icone da visualizzare nell'area client dell'applicazione o nelle finestre figlio.</span><span class="sxs-lookup"><span data-stu-id="17b80-140">Your application can load and create icons to display in the application's client area or child windows.</span></span> <span data-ttu-id="17b80-141">Nell'esempio seguente viene illustrato come creare un'icona nell'area client della finestra il cui contesto di dispositivo (DC) viene identificato dal parametro *HDC* .</span><span class="sxs-lookup"><span data-stu-id="17b80-141">The following example demonstrates how to draw an icon in the client area of the window whose device context (DC) is identified by the *hdc* parameter.</span></span>
+<span data-ttu-id="5b0a4-140">L'applicazione può caricare e creare icone da visualizzare nell'area client o nelle finestre figlio dell'applicazione.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-140">Your application can load and create icons to display in the application's client area or child windows.</span></span> <span data-ttu-id="5b0a4-141">L'esempio seguente illustra come disegnare un'icona nell'area client della finestra il cui contesto di dispositivo (DC) è identificato dal *parametro hdc.*</span><span class="sxs-lookup"><span data-stu-id="5b0a4-141">The following example demonstrates how to draw an icon in the client area of the window whose device context (DC) is identified by the *hdc* parameter.</span></span>
 
 
 ```
@@ -183,7 +183,7 @@ DrawIcon(hdc, 10, 20, hIcon1);
 
 
 
-<span data-ttu-id="17b80-142">Il sistema visualizza automaticamente le icone della classe per una finestra.</span><span class="sxs-lookup"><span data-stu-id="17b80-142">The system automatically displays the class icon(s) for a window.</span></span> <span data-ttu-id="17b80-143">L'applicazione può assegnare icone della classe durante la registrazione di una classe di finestra.</span><span class="sxs-lookup"><span data-stu-id="17b80-143">Your application can assign class icons while registering a window class.</span></span> <span data-ttu-id="17b80-144">L'applicazione può sostituire un'icona di classe usando la funzione [**SetClassLong**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) .</span><span class="sxs-lookup"><span data-stu-id="17b80-144">Your application can replace a class icon by using the [**SetClassLong**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) function.</span></span> <span data-ttu-id="17b80-145">Questa funzione modifica le impostazioni predefinite della finestra per tutte le finestre di una determinata classe.</span><span class="sxs-lookup"><span data-stu-id="17b80-145">This function changes the default window settings for all windows of a given class.</span></span> <span data-ttu-id="17b80-146">Nell'esempio seguente viene sostituita un'icona di classe con l'icona il cui identificatore di risorsa è 480.</span><span class="sxs-lookup"><span data-stu-id="17b80-146">The following example replaces a class icon with the icon whose resource identifier is 480.</span></span>
+<span data-ttu-id="5b0a4-142">Il sistema visualizza automaticamente le icone della classe per una finestra.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-142">The system automatically displays the class icon(s) for a window.</span></span> <span data-ttu-id="5b0a4-143">L'applicazione può assegnare icone di classe durante la registrazione di una classe finestra.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-143">Your application can assign class icons while registering a window class.</span></span> <span data-ttu-id="5b0a4-144">L'applicazione può sostituire un'icona di classe usando la [**funzione SetClassLong.**](/windows/desktop/api/winuser/nf-winuser-setclasslonga)</span><span class="sxs-lookup"><span data-stu-id="5b0a4-144">Your application can replace a class icon by using the [**SetClassLong**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) function.</span></span> <span data-ttu-id="5b0a4-145">Questa funzione modifica le impostazioni predefinite della finestra per tutte le finestre di una determinata classe.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-145">This function changes the default window settings for all windows of a given class.</span></span> <span data-ttu-id="5b0a4-146">L'esempio seguente sostituisce un'icona della classe con l'icona il cui identificatore di risorsa è 480.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-146">The following example replaces a class icon with the icon whose resource identifier is 480.</span></span>
 
 
 ```
@@ -192,21 +192,21 @@ HWND hwnd;                  // main window handle
  
 // Change the icon for hwnd's window class. 
  
-SetClassLong(hwnd,          // window handle 
-    GCL_HICON,              // changes icon 
-    (LONG) LoadIcon(hinst, MAKEINTRESOURCE(480))
+SetClassLongPtr(hwnd,          // window handle 
+    GCLP_HICON,              // changes icon 
+    (LONG_PTR) LoadIcon(hinst, MAKEINTRESOURCE(480))
    ); 
 ```
 
 
 
-<span data-ttu-id="17b80-147">Per ulteriori informazioni sulle classi della finestra, vedere [classi di finestra](/windows/desktop/winmsg/window-classes).</span><span class="sxs-lookup"><span data-stu-id="17b80-147">For more information about window classes, see [Window Classes](/windows/desktop/winmsg/window-classes).</span></span>
+<span data-ttu-id="5b0a4-147">Per altre informazioni sulle classi finestra, vedere [Classi finestra](/windows/desktop/winmsg/window-classes).</span><span class="sxs-lookup"><span data-stu-id="5b0a4-147">For more information about window classes, see [Window Classes](/windows/desktop/winmsg/window-classes).</span></span>
 
-## <a name="sharing-icon-resources"></a><span data-ttu-id="17b80-148">Risorse icona Condivisione</span><span class="sxs-lookup"><span data-stu-id="17b80-148">Sharing Icon Resources</span></span>
+## <a name="sharing-icon-resources"></a><span data-ttu-id="5b0a4-148">Risorse delle icone di condivisione</span><span class="sxs-lookup"><span data-stu-id="5b0a4-148">Sharing Icon Resources</span></span>
 
-<span data-ttu-id="17b80-149">Il codice seguente usa le funzioni [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)e [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)e alcune delle funzioni delle risorse per creare un handle di icona basato sui dati delle icone di un altro file eseguibile.</span><span class="sxs-lookup"><span data-stu-id="17b80-149">The following code uses the functions [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon), and [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex), and several of the resource functions, to create an icon handle based on icon data from another executable file.</span></span> <span data-ttu-id="17b80-150">Quindi Visualizza l'icona in una finestra.</span><span class="sxs-lookup"><span data-stu-id="17b80-150">Then, it displays the icon in a window.</span></span>
+<span data-ttu-id="5b0a4-149">Il codice seguente usa le funzioni [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)e [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)e diverse funzioni di risorsa per creare un handle di icona basato sui dati dell'icona da un altro file eseguibile.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-149">The following code uses the functions [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon), and [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex), and several of the resource functions, to create an icon handle based on icon data from another executable file.</span></span> <span data-ttu-id="5b0a4-150">Visualizza quindi l'icona in una finestra.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-150">Then, it displays the icon in a window.</span></span>
 
-<span data-ttu-id="17b80-151">**Avviso di sicurezza:** L'uso errato di [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la dll non corretta.</span><span class="sxs-lookup"><span data-stu-id="17b80-151">**Security Warning:** Using [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) incorrectly can compromise the security of your application by loading the wrong DLL.</span></span> <span data-ttu-id="17b80-152">Per informazioni su come caricare correttamente le dll con versioni diverse di Windows, vedere la documentazione di **LoadLibrary** .</span><span class="sxs-lookup"><span data-stu-id="17b80-152">Refer to the **LoadLibrary** documentation for information on how to correctly load DLLs with different versions of Windows.</span></span>
+<span data-ttu-id="5b0a4-151">**Avviso di sicurezza:** [**L'uso non corretto di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata.</span><span class="sxs-lookup"><span data-stu-id="5b0a4-151">**Security Warning:** Using [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) incorrectly can compromise the security of your application by loading the wrong DLL.</span></span> <span data-ttu-id="5b0a4-152">Per informazioni su come caricare correttamente le DLL con versioni diverse di Windows, vedere la documentazione di **LoadLibrary.**</span><span class="sxs-lookup"><span data-stu-id="5b0a4-152">Refer to the **LoadLibrary** documentation for information on how to correctly load DLLs with different versions of Windows.</span></span>
 
 
 ```
