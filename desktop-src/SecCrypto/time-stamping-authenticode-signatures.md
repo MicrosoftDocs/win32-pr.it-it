@@ -1,104 +1,104 @@
 ---
-description: L'indicatore di tempo Authenticode è basato su controfirme standard PKCS \# 9. Gli strumenti di firma di Microsoft consentono agli sviluppatori di apporre timestamp contemporaneamente all'aggiunta di firme Authenticode.
+description: Il timestamp Authenticode è basato su controfirma standard PKCS \# 7. Gli strumenti di firma di Microsoft consentono agli sviluppatori di apporre timestamp contemporaneamente all'applicazione delle firme Authenticode.
 ms.assetid: d0bd3e2f-1eee-4f71-9467-974994f720d5
 title: Timestamp delle firme Authenticode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3631d402da56d4078cecce65075c92dff0ec7e1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0232853441d2c11d331c175ac7e8dfd120b341ff
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231702"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327186"
 ---
 # <a name="time-stamping-authenticode-signatures"></a>Timestamp delle firme Authenticode
 
-Le firme Microsoft Authenticode forniscono garanzie di autore e integrità per i dati binari. L'indicatore di tempo Authenticode è basato su controfirme standard PKCS \# 9. Gli strumenti di firma di Microsoft consentono agli sviluppatori di apporre timestamp contemporaneamente all'aggiunta di firme Authenticode. Il timestamp consente di verificare le firme Authenticode anche dopo che i certificati utilizzati per la firma sono scaduti.
+Le firme Microsoft Authenticode forniscono garanzie di autorizzazione e integrità per i dati binari. Il timestamp Authenticode si basa sulle controfirma standard PKCS \# 7. Gli strumenti di firma di Microsoft consentono agli sviluppatori di apporre timestamp contemporaneamente all'applicazione delle firme Authenticode. Il timestamp consente la verifica delle firme Authenticode anche dopo la scadenza dei certificati usati per la firma.
 
-## <a name="a-brief-introduction-to-authenticode"></a>Una breve introduzione a Authenticode
+## <a name="a-brief-introduction-to-authenticode"></a>Breve introduzione a Authenticode
 
-[*Authenticode*](../secgloss/a-gly.md) applica la tecnologia di firma digitale per garantire la creazione e l'integrità dei dati binari, ad esempio il software installabile. Un Web browser client o altri componenti di sistema possono utilizzare le firme Authenticode per verificare l'integrità dei dati durante il download o l'installazione del software. Le firme Authenticode possono essere utilizzate con molti formati software, tra cui CAB, exe, ocx e dll.
+[*Authenticode applica*](../secgloss/a-gly.md) la tecnologia di firma digitale per garantire l'autore e l'integrità dei dati binari, ad esempio software installabile. Un Web browser client o altri componenti di sistema possono usare le firme Authenticode per verificare l'integrità dei dati quando il software viene scaricato o installato. Le firme Authenticode possono essere usate con molti formati software, tra cui cab, exe, ocx e dll.
 
-Microsoft gestisce un elenco di [*autorità di certificazione*](/security/trusted-root/participants-list) pubbliche (CAS). Le autorità emittenti dei certificati Authenticode attualmente includono [SSL.com](https://www.ssl.com/), [DigiCert](https://www.digicert.com/), [Sectigo (comodo)](https://www.sectigo.com/)e [GlobalSign](https://www.globalsign.com/).
+Microsoft gestisce un elenco di autorità [*di*](/security/trusted-root/participants-list) certificazione (CA) pubbliche. Le autorità di certificazione dei certificati Authenticode attualmente [includono SSL.com](https://www.ssl.com/), [Digicert](https://www.digicert.com/), [Sectigo(Comodo)](https://www.sectigo.com/)e [GlobalSign](https://www.globalsign.com/).
 
-## <a name="about-cryptographic-time-stamping"></a>Informazioni sul timestamp crittografico
+## <a name="about-cryptographic-time-stamping"></a>Informazioni sull'timestamp crittografico
 
-In passato, è stata proposta una serie di metodi di timestamp crittografici. Vedere, ad esempio, Haber e Stornetta "How to Time-Stamp a Digital Document" nel *Journal of crittografia* (1991) e Benaloh and de mare "unidirezionale accumulatori: un'alternativa decentralizzata alle firme digitali" nelle note della *lezione Springer-Verlag in computer Science* Vol. 765 (l'Eurocrypt '93). Un abstract esteso di questo articolo è disponibile in [Microsoft Research](https://research.microsoft.com/research/pubs/view.aspx?id=233&type=Publication&0sr=a). Queste risorse potrebbero non essere disponibili in alcune lingue e paesi o aree geografiche. Dato che Time è un valore fisico, anziché una quantità matematica, questi metodi in genere riguardano come collegare gli oggetti in modo che sia possibile determinare l'ordine di creazione o come raggruppare in modo efficiente gli oggetti che possono essere descritti come creati simultaneamente.
+In passato sono stati proposti diversi metodi di timestamp crittografici. Vedere, ad esempio, Haber e Stornetta "Come Time-Stamp un documento digitale" nel *Journal of Cryptology* (1991) e Benaloh e de Mare "One-Way Accumulators: A Decentralized Alternative to Digital Signatures" in *Springer-Verlag Lecture Notes in Computer Science* vol. 765 (EUROCRYPT '93). Un astratto esteso di questo articolo è disponibile in [Microsoft Research.](https://research.microsoft.com/research/pubs/view.aspx?id=233&type=Publication&0sr=a) Queste risorse potrebbero non essere disponibili in alcune lingue, paesi o aree geografiche. Poiché il tempo è una quantità fisica, anziché matematica, questi metodi in genere riguardano come collegare gli oggetti in modo che sia possibile determinarne l'ordine di creazione o come raggruppare in modo efficiente gli oggetti che possono essere tutti descritti come creati contemporaneamente.
 
-I sistemi che prevedono di autenticare il tempo come quantità richiedono sempre una forma di attendibilità. In un'impostazione fortemente contraddittoria, è possibile usare protocolli complessi per garantire un certo grado di sincronizzazione. Tuttavia, questi protocolli richiedono un'interazione approfondita tra le parti interessate. In pratica, se è necessaria solo la certificazione del tempo da una fonte attendibile, l'origine può semplicemente fungere da notatore fornendo un'istruzione firmata (certificazione) che l'oggetto è stato presentato per la firma all'ora indicata.
+I sistemi che richiedono l'autenticazione del tempo come quantità richiedono sempre una qualche forma di attendibilità. In un'impostazione fortemente antagonismo, è possibile usare protocolli complessi per garantire un certo grado di sincronizzazione. Tuttavia, questi protocolli richiedono un'interazione estesa tra le parti interessate. In pratica, se è richiesta solo la certificazione del tempo da un'origine attendibile, l'origine può fungere semplicemente da notario fornendo un'istruzione firmata (certificazione) che indica che l'oggetto è stato presentato per la firma all'ora indicata.
 
-Il metodo controfirma del timestamp implementato di seguito consente la verifica delle firme anche dopo che il certificato di firma è scaduto o è stato revocato. Il timestamp consente al Verifier di verificare in modo affidabile il tempo in cui la firma è stata approvata e quindi considerare attendibile la firma se fosse valida in quel momento. L'indicatore di data e ora deve avere un'origine ora affidabile e protetta.
+Il metodo di controfirma di timestamp implementato di seguito consente di verificare le firme anche dopo che il certificato di firma è scaduto o è stato revocato. Il timestamp consente al verificatore di conoscere in modo affidabile l'ora in cui la firma è stata affissa e quindi considera attendibile la firma se era valida in quel momento. L'indicatore di data e ora deve avere un'origine ora affidabile e protetta.
 
-## <a name="pkcs-7-signed-documents-and-countersignatures"></a>\#Documenti firmati PKCS 7 e controfirme
+## <a name="pkcs-7-signed-documents-and-countersignatures"></a>Documenti e controfirma pkcs \# 7 firmati
 
-PKCS \# 7 è un formato standard per i dati crittografici, inclusi i dati firmati, i certificati e gli [*elenchi di revoche di certificati*](../secgloss/c-gly.md) (CRL). Il \# tipo di interesse PKCS 7 specifico nel contesto del timestamp è costituito dai dati firmati, corrispondenti al \# tipo di contenuto [**SignedData**](signeddata.md) definito PKCS 7.
+PKCS 7 è un formato standard per i dati crittografici, inclusi i dati firmati, i certificati e gli elenchi \# di [*revoche*](../secgloss/c-gly.md) di certificati (CRL). Il particolare tipo di interesse PKCS 7 nel contesto del timestamp è dato da dati firmati, corrispondenti al tipo di contenuto \# SignedData definito da PKCS \# 7. [](signeddata.md)
 
-Il \# pacchetto PKCS 7 è costituito da [**SignedData**](signeddata.md) che identificano il contenuto effettivo e determinate informazioni sui blocchi di firma it e SignerInfo. Un SignerInfo può contenere un controfirma, che in modo ricorsivo è un altro SignerInfo. In linea di principio, potrebbe essere presente una sequenza di tali controfirme. Controfirma è un attributo non autenticato rispetto alla firma in SignerInfo; ovvero, può essere affisso successivamente alla firma originale. Nel formato struttura:
+Il pacchetto PKCS 7 è costituito da SignedData che identifica il contenuto effettivo e alcune informazioni su di esso e \# i blocchi di firma SignerInfo. [](signeddata.md) Un SignerInfo può contenere una controfirma, che in modo ricorsivo è un altro SignerInfo. In linea di principio, può essere presente una sequenza di tali controfirma. La controfirma è un attributo non autenticato rispetto alla firma in SignerInfo. ciò significa che può essere apposta successivamente alla firma originale. Sotto forma di struttura:
 
 [**SignedData**](signeddata.md) (PKCS \# 7)
 
--   Versione (di PKCS \# 7, in genere versione 1)
--   DigestAlgorithms (raccolta di tutti gli algoritmi usati dai blocchi di firma SignerInfo per l'elaborazione ottimizzata)
--   ContentInfo (contentType Equals [**SignedData**](signeddata.md), più contenuto o riferimento al contenuto)
--   Certificati FACOLTATIVi (raccolta di tutti i certificati usati)
--   CRL FACOLTATIVi (raccolta di tutti i CRL)
--   SignerInfo firme Blocks (la firma effettiva, composta da uno o più blocchi di firma SignerInfo)
+-   Versione (pkcs \# 7, in genere versione 1)
+-   DigestAlgorithms (raccolta di tutti gli algoritmi usati dai blocchi di firma SignerInfo, per l'elaborazione ottimizzata)
+-   ContentInfo (contentType è uguale a [**SignedData,**](signeddata.md)oltre al contenuto o al riferimento al contenuto)
+-   CERTIFICATI FACOLTATIVI (raccolta di tutti i certificati usati)
+-   CRL FACOLTATIVI (raccolta di tutti i CRL)
+-   Blocchi di firma SignerInfo (la firma effettiva, composta da uno o più blocchi di firma SignerInfo)
 
-SignerInfo (blocco della firma)
+SignerInfo (blocco di firma)
 
--   Versione (di PKCS \# 7, in genere versione 1)
--   Certificato (emittente e numero di serie per identificare in modo univoco il certificato del firmatario in [**SignedData**](signeddata.md))
--   DigestAlgorithm più DigestEncryptionAlgorithm più il digest (hash), più EncryptedDigest (firma effettiva)
--   AuthenticatedAttributes facoltativo (ad esempio, firmato da questo firmatario)
--   UnauthenticatedAttributes facoltativo (ad esempio, non firmato da questo firmatario)
+-   Versione (pkcs \# 7, in genere versione 1)
+-   Certificato (autorità emittente e numero di serie per identificare in modo univoco il certificato del firmatario in [**SignedData)**](signeddata.md)
+-   DigestAlgorithm più DigestEncryptionAlgorithm più digest (hash), più EncryptedDigest (firma effettiva)
+-   OPTIONAL AuthenticatedAttributes (ad esempio, firmato da questo firmatario)
+-   OPTIONAL UnauthenticatedAttributes (ad esempio, non firmato da questo firmatario)
 
-Un esempio di attributo autenticato è l'ora di firma (OID 1.2.840.113549.1.9.5) perché fa parte del servizio timestamp Sign. Un esempio di attributo non autenticato è controfirma (OID 1.2.840.113549.1.9.6) perché può essere affisso dopo la firma. In questo caso, SignerInfo contiene SignerInfo (controfirma).
+Un esempio di attributo autenticato è l'ora di firma (OID 1.2.840.113549.1.9.5) perché fa parte di ciò che il servizio timestamp firma. Un esempio di attributo non autenticato è la controfirma (OID 1.2.840.113549.1.9.6) perché può essere apposta dopo la firma. In questo caso, SignerInfo contiene un SignerInfo (controfirma).
 
 > [!Note]  
-> L'oggetto firmato in controfirma è la firma originale, ovvero il EncryptedDigest del SignerInfo originale.
+> L'oggetto firmato nella controfirma è la firma originale, ovvero EncryptedDigest dell'oggetto SignerInfo originale.
 
  
 
-## <a name="signtool-and-the-authenticode-process"></a>SignTool e il processo Authenticode
+## <a name="signtool-and-the-authenticode-process"></a>SignTool e processo Authenticode
 
-[SignTool](signtool.md) è disponibile per la firma Authenticode e i dati binari timestamp. Lo strumento viene installato nella \\ cartella bin del percorso di installazione di Microsoft Windows Software Development Kit (SDK).
+[SignTool è](signtool.md) disponibile per la firma Authenticode e l'applicazione di timestamp ai dati binari. Lo strumento viene installato nella cartella Bin del percorso di \\ installazione di Microsoft Windows Software Development Kit (Windows SDK) (SDK).
 
-La firma e il timestamp dei dati binari sono relativamente semplici con [SignTool](signtool.md). Il server di pubblicazione deve ottenere un certificato di firma codice da un'autorità di certificazione per la firma di codice commerciale. Per praticità, Microsoft pubblica e aggiorna un elenco di autorità di certificazione pubbliche, incluse quelle che emettono certificati Authenticode. Quando si è pronti per la pubblicazione, i file oggetto vengono firmati e l'ora viene timbrata usando i parametri della riga di comando appropriati con lo strumento SignTool. Il risultato di qualsiasi operazione SignTool è sempre un \# formato PKCS 7 [**SignedData**](signeddata.md).
+La firma e l'applicazione di timestamp ai dati binari sono relativamente semplici tramite [SignTool.](signtool.md) L'editore deve ottenere un certificato di firma del codice da una CA per la firma di codice commerciale. Per praticità, Microsoft pubblica e aggiorna un elenco di CA pubbliche, incluse quelle che emettere certificati Authenticode. Quando si è pronti per la pubblicazione, i file oggetto vengono firmati e con timestamp usando i parametri della riga di comando appropriati con lo strumento SignTool. Il risultato di qualsiasi operazione SignTool è sempre un formato PKCS \# 7 [**SignedData.**](signeddata.md)
 
-SignTool accetta come input i dati binari non elaborati che devono essere firmati e con timestamp oppure i dati binari firmati in precedenza per essere contrassegnati come timestamp. I dati precedentemente firmati possono essere contrassegnati con il timestamp del comando **SignTool** .
+SignTool accetta come input i dati binari non elaborati da firmare e con timestamp oppure i dati binari firmati in precedenza da inserire nel timestamp. I dati firmati in precedenza possono essere contrassegnati con un timestamp usando il **comando signtool timestamp.**
 
 
 
 | Argomento             | Descrizione                                                                                                                                                                                                    |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **/T** *HTTPAddress* | Indica che il file deve essere contrassegnato come timestamp. È necessario fornire un URL che specifichi l'indirizzo di un server di timestamp. **/t** può essere usato con i comandi di **firma SignTool** e **timestamp di SignTool** . |
+| **/t** *HTTPAddress* | Indica che il file deve essere contrassegnato con un timestamp. È necessario specificare un URL che specifica l'indirizzo di un server di timestamp. **/t può** essere usato con i **comandi signtool sign e** **signtool timestamp.** |
 
 
 
  
 
-Per ulteriori informazioni sugli strumenti che possono essere utili in questo contesto, vedere [strumenti di crittografia](cryptography-tools.md) e [SignTool](signtool.md).
+Per altre informazioni sugli strumenti che possono essere utili in questo contesto, vedere [Strumenti di crittografia](cryptography-tools.md) e [SignTool.](signtool.md)
 
 ## <a name="implementation-details-and-wire-format"></a>Dettagli di implementazione e formato wire
 
-[SignTool](signtool.md) si basa sull'implementazione di Windows Authenticode per creare e firmare timestamp. [*Authenticode*](../secgloss/a-gly.md) opera su file binari, ad esempio CAB, exe, dll o ocx. Authenticode crea prima di tutto la firma, producendo un \# [**SignedData**](signeddata.md)PKCS 7. Si tratta di un **SignedData** che deve essere controfirmato, come descritto in PKCS \# 9.
+[SignTool](signtool.md) si basa sull'implementazione di Windows Authenticode per creare firme e timestamp. [*Authenticode*](../secgloss/a-gly.md) opera su file binari, ad esempio cab, exe, dll o ocx. Authenticode crea prima la firma, producendo un \# [**signedData**](signeddata.md)PKCS 7. È questo **SignedData che** deve essere controfirmato, come descritto in PKCS \# 9.
 
-Il processo controfirma si verifica in quattro passaggi:
+Il processo di controfirma si svolge in quattro passaggi:
 
-1.  Copiare la firma, ovvero encryptedDigest, dal SignerInfo di PKCS \# 7 [**SignedData**](signeddata.md).
-2.  Costruire una richiesta di timestamp il cui contenuto è la firma originale. Inviarlo a Time Stamp server [*Abstract Syntax Notation One*](../secgloss/a-gly.md) (ASN. 1) codificato come TimeStampRequest.
-3.  Ricevere un timestamp, formattato come secondo PKCS \# 7 [**SignedData**](signeddata.md), restituito dal server di timestamp.
-4.  Copiare il SignerInfo dal timestamp direttamente nel \# [**SignedData**](signeddata.md)PKCS 7 originale, come \# controfirma PKCS 9 (ovvero un attributo non autenticato nell'SignerInfo dell'originale).
+1.  Copiare la firma ( ovvero encryptedDigest) da SignerInfo di PKCS \# 7 [**SignedData**](signeddata.md).
+2.  Costruire una richiesta timestamp il cui contenuto è la firma originale. Inviarlo al server di timestamp [*Abstract Syntax Notation One*](../secgloss/a-gly.md) (ASN.1) codificato come TimeStampRequest.
+3.  Ricevere un timestamp, formattato come secondo PKCS \# 7 [**SignedData,**](signeddata.md)restituito dal server di timestamp.
+4.  Copiare SignerInfo dal timestamp direttamente nell'oggetto SignedData PKCS 7 originale \# come controfirma PKCS 9, ovvero un attributo non autenticato nel [](signeddata.md) \# SignerInfo dell'originale.
 
 ## <a name="time-stamp-request"></a>Richiesta timestamp
 
-La richiesta di timestamp viene inviata in un messaggio HTTP 1,1 POST. Nell'intestazione HTTP la direttiva CacheControl è impostata su No-cache e la direttiva Content-Type è impostata su Application/ottetto-Stream. Il corpo del messaggio HTTP è una codifica Base64 della codifica [*Distinguished Encoding Rules*](../secgloss/d-gly.md) (der) della richiesta timestamp.
+La richiesta timestamp viene inviata all'interno di un messaggio POST HTTP 1.1. Nell'intestazione HTTP la direttiva CacheControl è impostata su no-cache e la direttiva Content-Type è impostata su application/octet-stream. Il corpo del messaggio HTTP è una codifica base64 [*della codifica Distinguished Encoding Rules*](../secgloss/d-gly.md) (DER) della richiesta di timestamp.
 
-Sebbene non sia attualmente in uso, la direttiva content-length deve essere utilizzata anche per costruire il messaggio HTTP in quanto consente al server timestamp di individuare la posizione in cui la richiesta si trova all'interno di HTTP POST.
+Sebbene non sia attualmente usata, la direttiva Content-Length deve essere usata anche per costruire il messaggio HTTP perché consente al server di timestamp di individuare la posizione della richiesta all'interno di HTTP POST.
 
-Potrebbero essere presenti anche altre intestazioni HTTP che devono essere ignorate se non sono riconosciute dal richiedente o dal server timestamp.
+Possono essere presenti anche altre intestazioni HTTP e devono essere ignorate se non sono comprese dal richiedente o dal server di timestamp.
 
-La richiesta timestamp è un messaggio con codifica ASN. 1. Il formato della richiesta è il seguente.
+La richiesta di timestamp è un messaggio con codifica ASN.1. Il formato della richiesta è il seguente.
 
 ``` syntax
 TimeStampRequest ::= SEQUENCE {
@@ -108,21 +108,21 @@ TimeStampRequest ::= SEQUENCE {
 }
 ```
 
-CountersignatureType è l' [*identificatore di oggetto*](../secgloss/o-gly.md) (OID) che identifica questo come timestamp controfirma e deve essere l'OID esatto 1.3.6.1.4.1.311.3.2.1.
+CountersignatureType è [](../secgloss/o-gly.md) l'identificatore di oggetto (OID) che identifica l'oggetto come controfirma di timestamp e deve essere l'OID esatto 1.3.6.1.4.1.311.3.2.1.
 
-Nessun attributo attualmente incluso nella richiesta timestamp.
+Nessun attributo è attualmente incluso nella richiesta di timestamp.
 
-Il contenuto è un oggetto ContentInfo come definito da PKCS \# 7. Il contenuto è costituito dai dati da firmare. Per il timestamp della firma, ContentType deve essere costituito da dati e il contenuto deve essere encryptedDigest (Signature) da SignerInfo del \# contenuto PKCS 7 per avere il timestamp.
+Il contenuto è un contentInfo come definito da PKCS \# 7. Il contenuto è i dati da firmare. Per il timestamp della firma, ContentType deve essere Data e il contenuto deve essere encryptedDigest (firma) dal SignerInfo del contenuto PKCS 7 da impostare come \# timestamp.
 
 ## <a name="time-stamp-response"></a>Risposta timestamp
 
-La risposta timestamp viene inviata anche all'interno di un messaggio HTTP 1,1. Nell'intestazione HTTP la direttiva Content-Type viene anche impostata su Application/ottetto-Stream. Il corpo del messaggio HTTP è una codifica Base64 della codifica DER della risposta timestamp.
+La risposta del timestamp viene inviata anche all'interno di un messaggio HTTP 1.1. Nell'intestazione HTTP la direttiva Content-Type è impostata anche su application/octet-stream. Il corpo del messaggio HTTP è una codifica base64 della codifica DER della risposta del timestamp.
 
-La risposta timestamp è un \# messaggio firmato PKCS 7 firmato dal timestamp. Il ContentInfo del messaggio PKCS \# 7 è identico a ContentInfo ricevuto nel timestamp. Il \# contenuto PKCS 7 contiene l'attributo dell'ora di firma autenticato (definito in PKCS \# 99, OID 1.2.840.113549.9.5).
+La risposta del timestamp è un messaggio firmato PKCS \# 7 firmato dall'indicatore di data e ora. L'oggetto ContentInfo del messaggio PKCS \# 7 è identico all'oggetto ContentInfo ricevuto nel timestamp. Il contenuto PKCS 7 contiene l'attributo autenticato dell'ora di firma \# (definito in PKCS \# 99, OID 1.2.840.113549.9.5).
 
-Quando Authenticode riceve il timestamp dal server, Authenticode incorpora il timestamp nel \# [**SignedData**](signeddata.md) PKCS 7 originale come controfirma. A tale scopo, l'oggetto ContentInfo del SignedData PKCS \# 7  restituito viene eliminato e il SignerInfo del timestamp restituito viene copiato come controfirma in SIGNERINFO dell'originale PKCS \# 7 **SignedData**. La catena di certificati del timestamp viene inoltre copiata nei certificati della SignedData PKCS 7 originale \# come  attributo non autenticato del firmatario originale.
+Dopo che Authenticode ha ricevuto il timestamp dal server, lo incorpora nell'oggetto SignedData PKCS 7 originale come \# controfirma. [](signeddata.md) A tale scopo, l'oggetto ContentInfo dell'oggetto SignedData PKCS 7 restituito viene eliminato e l'oggetto SignerInfo del timestamp restituito viene copiato come controfirma nel SignerInfo dell'oggetto \# SignedData PKCS  \# 7 **originale.** La catena di certificati dell'indicatore di data e ora viene copiata anche in Certificati nell'oggetto SignedData PKCS 7 originale come attributo non autenticato del \# firmatario originale. 
 
-Per ulteriori informazioni su PKCS e altri argomenti relativi alla sicurezza, vedere la [raccolta contenuto del sito Web RSA](https://www.rsa.com/content_library.aspx).
+Per altre informazioni su PKCS e altri argomenti relativi alla sicurezza, vedere la [raccolta contenuto del sito Web RSA](https://www.rsa.com/content_library.aspx).
 
  
 

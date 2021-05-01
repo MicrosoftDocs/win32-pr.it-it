@@ -6,30 +6,30 @@ keywords:
 - risorse, icone
 - icone, creazione
 - icone, visualizzazione
-- icone, condivisione delle risorse
+- icone, condivisione di risorse
 - creazione di icone
 - visualizzazione di icone
-- risorse icona Condivisione
+- risorse icona di condivisione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e93f831e3411985ecfb9f841ade750acd4a61b
-ms.sourcegitcommit: 8755905962e156f29203705d09d6df8b7d0e2fca
+ms.openlocfilehash: 03202c250502794d5f845bcc8c2ae263d919ea62
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "106333989"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327116"
 ---
 # <a name="using-icons"></a>Uso delle icone
 
-Negli argomenti seguenti viene descritto come eseguire determinate attività correlate alle icone:
+Gli argomenti seguenti descrivono come eseguire determinate attività correlate alle icone:
 
 -   [Creazione di un'icona](#creating-an-icon)
 -   [Visualizzazione di un'icona](#displaying-an-icon)
--   [Risorse icona Condivisione](#sharing-icon-resources)
+-   [Risorse icona di condivisione](#sharing-icon-resources)
 
 ## <a name="creating-an-icon"></a>Creazione di un'icona
 
-Per usare un'icona, l'applicazione deve ottenere un handle per l'icona. Nell'esempio seguente viene illustrato come creare due handle di icona diversi, uno per l'icona della domanda standard e uno per un'icona personalizzata inclusa come risorsa nel file di definizione delle risorse dell'applicazione.
+Per usare un'icona, l'applicazione deve ottenere un handle per l'icona. L'esempio seguente illustra come creare due handle di icona diversi: uno per l'icona della domanda standard e uno per un'icona personalizzata inclusa come risorsa nel file di definizione delle risorse dell'applicazione.
 
 
 ```
@@ -50,7 +50,7 @@ hIcon2 = LoadIcon(hinst, MAKEINTRESOURCE(460));
 
 
 
-Un'applicazione deve implementare icone personalizzate come risorse e usare la funzione [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) , anziché creare le icone in fase di esecuzione. Questo approccio evita la dipendenza dei dispositivi, semplifica la localizzazione e consente alle applicazioni di condividere le bitmap dell'icona. Tuttavia, nell'esempio seguente viene usato [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) per creare un'icona personalizzata in fase di esecuzione, in base alle maschere di bit bitmap; è incluso per illustrare il modo in cui il sistema interpreta le maschere di bit Bitmap icona.
+Un'applicazione deve implementare icone personalizzate come risorse e deve usare la funzione [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) anziché creare le icone in fase di esecuzione. Questo approccio evita le dipendenze dei dispositivi, semplifica la localizzazione e consente alle applicazioni di condividere le bitmap delle icone. Tuttavia, l'esempio seguente usa [**CreateIcon per**](/windows/desktop/api/Winuser/nf-winuser-createicon) creare un'icona personalizzata in fase di esecuzione, in base alle maschera di bit bitmap; è incluso per illustrare il modo in cui il sistema interpreta le maschera di bit bitmap delle icone.
 
 
 ```
@@ -152,26 +152,26 @@ hIcon3 = CreateIcon(hinst,    // application instance
 
 
 
-Per creare l'icona, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) applica la seguente tabella di verità alle maschere di maschera and e XOR.
+Per creare l'icona, [**CreateIcon applica**](/windows/desktop/api/Winuser/nf-winuser-createicon) la tabella di verità seguente alle maschera di bit AND e XOR.
 
 
 
-| E maschera di maschera | Maschera di maschera XOR | Visualizza        |
+| Maschera di bit AND | Maschera di bit XOR | Visualizza        |
 |-------------|-------------|----------------|
 | 0           | 0           | Black          |
 | 0           | 1           | White          |
 | 1           | 0           | Screen         |
-| 1           | 1           | Inverti schermata |
+| 1           | 1           | Schermata inversa |
 
 
 
  
 
-Prima di chiudere, l'applicazione deve usare [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) per eliminare qualsiasi icona creata usando [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect). Non è necessario eliminare le icone create da altre funzioni.
+Prima della chiusura, l'applicazione deve [**usare DestroyIcon per**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) eliminare qualsiasi icona creata tramite [**CreateIconIndirect.**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect) Non è necessario eliminare le icone create da altre funzioni.
 
 ## <a name="displaying-an-icon"></a>Visualizzazione di un'icona
 
-L'applicazione può caricare e creare icone da visualizzare nell'area client dell'applicazione o nelle finestre figlio. Nell'esempio seguente viene illustrato come creare un'icona nell'area client della finestra il cui contesto di dispositivo (DC) viene identificato dal parametro *HDC* .
+L'applicazione può caricare e creare icone da visualizzare nell'area client o nelle finestre figlio dell'applicazione. L'esempio seguente illustra come disegnare un'icona nell'area client della finestra il cui contesto di dispositivo (DC) è identificato dal *parametro hdc.*
 
 
 ```
@@ -183,7 +183,7 @@ DrawIcon(hdc, 10, 20, hIcon1);
 
 
 
-Il sistema visualizza automaticamente le icone della classe per una finestra. L'applicazione può assegnare icone della classe durante la registrazione di una classe di finestra. L'applicazione può sostituire un'icona di classe usando la funzione [**SetClassLong**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) . Questa funzione modifica le impostazioni predefinite della finestra per tutte le finestre di una determinata classe. Nell'esempio seguente viene sostituita un'icona di classe con l'icona il cui identificatore di risorsa è 480.
+Il sistema visualizza automaticamente le icone della classe per una finestra. L'applicazione può assegnare icone di classe durante la registrazione di una classe finestra. L'applicazione può sostituire un'icona di classe usando la [**funzione SetClassLong.**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) Questa funzione modifica le impostazioni predefinite della finestra per tutte le finestre di una determinata classe. L'esempio seguente sostituisce un'icona della classe con l'icona il cui identificatore di risorsa è 480.
 
 
 ```
@@ -192,21 +192,21 @@ HWND hwnd;                  // main window handle
  
 // Change the icon for hwnd's window class. 
  
-SetClassLong(hwnd,          // window handle 
-    GCL_HICON,              // changes icon 
-    (LONG) LoadIcon(hinst, MAKEINTRESOURCE(480))
+SetClassLongPtr(hwnd,          // window handle 
+    GCLP_HICON,              // changes icon 
+    (LONG_PTR) LoadIcon(hinst, MAKEINTRESOURCE(480))
    ); 
 ```
 
 
 
-Per ulteriori informazioni sulle classi della finestra, vedere [classi di finestra](/windows/desktop/winmsg/window-classes).
+Per altre informazioni sulle classi finestra, vedere [Classi finestra](/windows/desktop/winmsg/window-classes).
 
-## <a name="sharing-icon-resources"></a>Risorse icona Condivisione
+## <a name="sharing-icon-resources"></a>Risorse delle icone di condivisione
 
-Il codice seguente usa le funzioni [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)e [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)e alcune delle funzioni delle risorse per creare un handle di icona basato sui dati delle icone di un altro file eseguibile. Quindi Visualizza l'icona in una finestra.
+Il codice seguente usa le funzioni [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)e [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)e diverse funzioni di risorsa per creare un handle di icona basato sui dati dell'icona da un altro file eseguibile. Visualizza quindi l'icona in una finestra.
 
-**Avviso di sicurezza:** L'uso errato di [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la dll non corretta. Per informazioni su come caricare correttamente le dll con versioni diverse di Windows, vedere la documentazione di **LoadLibrary** .
+**Avviso di sicurezza:** [**L'uso non corretto di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Per informazioni su come caricare correttamente le DLL con versioni diverse di Windows, vedere la documentazione di **LoadLibrary.**
 
 
 ```

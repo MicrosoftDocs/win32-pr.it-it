@@ -1,24 +1,24 @@
 ---
 Description: I privilegi determinano il tipo di operazioni di sistema che un account utente può eseguire. Un amministratore assegna privilegi agli account utente e di gruppo. I privilegi di ogni utente includono quelli concessi all'utente e ai gruppi a cui appartiene l'utente.
 ms.assetid: 973796a6-bc2e-4e64-92db-5e17b9c25460
-title: Costanti Privilege (Winnt. h)
+title: Costanti di privilegio (Winnt.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 801eccb2f42ccf27b45bc5628a32cee3de994bfe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cd33cf947f6425d717b4d41524fe7cf0fed14cef
+ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331784"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108327156"
 ---
-# <a name="privilege-constants-authorization"></a>Costanti Privilege (autorizzazione)
+# <a name="privilege-constants-authorization"></a>Costanti di privilegio (autorizzazione)
 
 I privilegi determinano il tipo di operazioni di sistema che un account utente può eseguire. Un amministratore assegna privilegi agli account utente e di gruppo. I privilegi di ogni utente includono quelli concessi all'utente e ai gruppi a cui appartiene l'utente.
 
-Le funzioni che ottengono e regolano i privilegi in un [*token di accesso*](/windows/desktop/SecGloss/a-gly) usano il tipo [*identificatore univoco locale*](/windows/desktop/SecGloss/l-gly) (LUID) per identificare i privilegi. Utilizzare la funzione [**LookupPrivilegeValue**](/windows/desktop/api/Winbase/nf-winbase-lookupprivilegevaluea) per determinare il [**LUID**](/windows/desktop/api/Winnt/ns-winnt-luid) nel sistema locale che corrisponde a una costante Privilege. Usare la funzione [**LookupPrivilegeName**](/windows/desktop/api/Winbase/nf-winbase-lookupprivilegenamea) per convertire un **LUID** nella costante di stringa corrispondente.
+Le funzioni che ottengono e modificano i privilegi in un token di [*accesso*](/windows/desktop/SecGloss/a-gly) usano il tipo LUID [*(Local Unique Identifier)*](/windows/desktop/SecGloss/l-gly) per identificare i privilegi. Usare la [**funzione LookupPrivilegeValue**](/windows/desktop/api/Winbase/nf-winbase-lookupprivilegevaluea) per determinare [**il LUID**](/windows/desktop/api/Winnt/ns-winnt-luid) nel sistema locale che corrisponde a una costante di privilegi. Usare la [**funzione LookupPrivilegeName**](/windows/desktop/api/Winbase/nf-winbase-lookupprivilegenamea) per convertire un **LUID** nella costante stringa corrispondente.
 
-Il sistema operativo rappresenta un privilegio utilizzando la stringa che segue "diritto utente" nella colonna Descrizione della tabella seguente. Il sistema operativo Visualizza le stringhe corrette per l'utente nella colonna **criteri** del nodo **assegnazione diritti utente** dello snap-in impostazioni di protezione locali di Microsoft Management Console (MMC).
+Il sistema operativo rappresenta un privilegio usando la stringa che segue "Diritto utente" nella colonna Descrizione della tabella seguente. Il sistema operativo visualizza le  stringhe dei  diritti utente nella colonna Criteri del nodo Assegnazione diritti utente dello snap-in Impostazioni di sicurezza locali Microsoft Management Console (MMC).
 
 ## <a name="example"></a>Esempio
 
@@ -35,7 +35,7 @@ BOOL EnablePrivilege()
     return bRes;
 }
 ```
-Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/ManagementInfrastructure/cpp/Process/Provider/WindowsProcess.c) in GitHub.
+Esempio di [esempi classici di Windows](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/ManagementInfrastructure/cpp/Process/Provider/WindowsProcess.c) in GitHub.
 
 ## <a name="constants"></a>Costanti
 
@@ -53,107 +53,107 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_ASSIGNPRIMARYTOKEN_NAME"></span><span id="se_assignprimarytoken_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_ASSIGNPRIMARYTOKEN_NAME ( &quot; SeAssignPrimaryTokenPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per assegnare il <a href="/windows/desktop/SecGloss/p-gly"><em>token primario</em></a> di un processo. <br/> Diritto utente: sostituire un token a livello di processo.<br/></td>
+<td style="text-align: left;"><span id="SE_ASSIGNPRIMARYTOKEN_NAME"></span><span id="se_assignprimarytoken_name"></span><dl> <dt><strong>SE_ASSIGNPRIMARYTOKEN_NAME</strong></dt> <dt>TEXT( &quot; SeAssignPrimaryTokenPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per <a href="/windows/desktop/SecGloss/p-gly"><em>assegnare il token primario</em></a> di un processo. <br/> Diritto utente: sostituire un token a livello di processo.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_AUDIT_NAME"></span><span id="se_audit_name"></span><dl> <dt><strong></strong></dt> <dt>Testo se_audit_name ( &quot; SeAuditPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per generare le voci del log di controllo. Assegnare questo privilegio ai server protetti. <br/> Diritto utente: genera controlli di sicurezza.<br/></td>
+<td style="text-align: left;"><span id="SE_AUDIT_NAME"></span><span id="se_audit_name"></span><dl> <dt><strong>SE_AUDIT_NAME</strong></dt> <dt>TEXT( &quot; SeAuditPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per generare le voci del log di controllo. Concedere questo privilegio ai server protetti. <br/> Diritto utente: generare controlli di sicurezza.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_BACKUP_NAME"></span><span id="se_backup_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_BACKUP_NAME ( &quot; SeBackupPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per eseguire operazioni di backup. Questo privilegio fa in modo che il sistema conceda tutto il controllo di accesso in lettura a qualsiasi file, indipendentemente dall' <a href="/windows/desktop/SecGloss/a-gly"><em>elenco di controllo di accesso</em></a> (ACL) specificato per il file. Qualsiasi richiesta di accesso diversa da Read viene comunque valutata con l'ACL. Questo privilegio è richiesto dalle funzioni <a href="/windows/desktop/api/winreg/nf-winreg-regsavekeya"><strong>RegSaveKey</strong></a> e <a href="/windows/desktop/api/winreg/nf-winreg-regsavekeyexa"><strong>RegSaveKeyEx</strong></a>. Se questo privilegio viene mantenuto, vengono concessi i diritti di accesso seguenti:<br/>
+<td style="text-align: left;"><span id="SE_BACKUP_NAME"></span><span id="se_backup_name"></span><dl> <dt><strong>SE_BACKUP_NAME</strong></dt> <dt>TEXT( &quot; SeBackupPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per eseguire operazioni di backup. Questo privilegio fa sì che il sistema concedi <a href="/windows/desktop/SecGloss/a-gly"><em></em></a> tutto il controllo di accesso in lettura a qualsiasi file, indipendentemente dall'elenco di controllo di accesso (ACL) specificato per il file. Qualsiasi richiesta di accesso diversa da read viene comunque valutata con l'ACL. Questo privilegio è richiesto dalle <a href="/windows/desktop/api/winreg/nf-winreg-regsavekeya"><strong>funzioni RegSaveKey</strong></a> <a href="/windows/desktop/api/winreg/nf-winreg-regsavekeyexa"><strong>e RegSaveKeyEx.</strong></a> Se si dispone di questo privilegio, vengono concessi i diritti di accesso seguenti:<br/>
 <ul>
 <li>READ_CONTROL</li>
 <li>ACCESS_SYSTEM_SECURITY</li>
 <li>FILE_GENERIC_READ</li>
 <li>FILE_TRAVERSE</li>
 </ul>
-Diritto utente: backup di file e directory.<br/>Se il file si trova in un'unità rimovibile ed è abilitata la funzionalità di controllo dell'archiviazione rimovibile, è necessario che il SE_SECURITY_NAME disponga di ACCESS_SYSTEM_SECURITY.</td>
+Diritto utente: eseguire il backup di file e directory.<br/>Se il file si trova in un'unità rimovibile ed è abilitata l'opzione "Controlla archivi rimovibili", il SE_SECURITY_NAME deve avere ACCESS_SYSTEM_SECURITY.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_CHANGE_NOTIFY_NAME"></span><span id="se_change_notify_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_CHANGE_NOTIFY_NAME ( &quot; SeChangeNotifyPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessaria per ricevere notifiche delle modifiche apportate ai file o alle directory. Questo privilegio fa anche in modo che il sistema ignori tutti i controlli di accesso attraversati. È abilitata per impostazione predefinita per tutti gli utenti. <br/> Right utente: ignorare il controllo incrociato.<br/></td>
+<td style="text-align: left;"><span id="SE_CHANGE_NOTIFY_NAME"></span><span id="se_change_notify_name"></span><dl> <dt><strong>SE_CHANGE_NOTIFY_NAME</strong></dt> <dt>TEXT( &quot; SeChangeNotifyPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per ricevere notifiche relative alle modifiche apportate a file o directory. Questo privilegio fa inoltre in modo che il sistema ignorare tutti i controlli di accesso di attraversamento. È abilitata per impostazione predefinita per tutti gli utenti. <br/> Diritto utente: ignorare il controllo di attraversamento.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_CREATE_GLOBAL_NAME"></span><span id="se_create_global_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_CREATE_GLOBAL_NAME ( &quot; SeCreateGlobalPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per creare oggetti mapping di file denominati nello spazio dei nomi globale durante le sessioni di Servizi terminal. Questo privilegio è abilitato per impostazione predefinita per gli amministratori, i servizi e l'account di sistema locale.<br/> Diritto utente: creare oggetti globali.<br/></td>
+<td style="text-align: left;"><span id="SE_CREATE_GLOBAL_NAME"></span><span id="se_create_global_name"></span><dl> <dt><strong>SE_CREATE_GLOBAL_NAME</strong></dt> <dt>TEXT( &quot; SeCreateGlobalPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per creare oggetti mapping di file denominati nello spazio dei nomi globale durante le sessioni di Servizi terminal. Questo privilegio è abilitato per impostazione predefinita per gli amministratori, i servizi e l'account di sistema locale.<br/> Diritto utente: creare oggetti globali.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_CREATE_PAGEFILE_NAME"></span><span id="se_create_pagefile_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_CREATE_PAGEFILE_NAME ( &quot; SeCreatePagefilePrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per creare un file di paging. <br/> Diritto utente: creare un pagefile.<br/></td>
+<td style="text-align: left;"><span id="SE_CREATE_PAGEFILE_NAME"></span><span id="se_create_pagefile_name"></span><dl> <dt><strong>SE_CREATE_PAGEFILE_NAME</strong></dt> <dt>TEXT( &quot; SeCreatePagefilePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per creare un file di paging. <br/> Diritto utente: creare un file di paging.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_CREATE_PERMANENT_NAME"></span><span id="se_create_permanent_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_CREATE_PERMANENT_NAME ( &quot; SeCreatePermanentPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;"><span id="SE_CREATE_PERMANENT_NAME"></span><span id="se_create_permanent_name"></span><dl> <dt><strong>SE_CREATE_PERMANENT_NAME</strong></dt> <dt>TEXT( &quot; SeCreatePermanentPrivilege &quot; )</dt> </dl></td>
 <td style="text-align: left;">Obbligatorio per creare un oggetto permanente. <br/> Diritto utente: creare oggetti condivisi permanenti.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_CREATE_SYMBOLIC_LINK_NAME"></span><span id="se_create_symbolic_link_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_CREATE_SYMBOLIC_LINK_NAME ( &quot; SeCreateSymbolicLinkPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;"><span id="SE_CREATE_SYMBOLIC_LINK_NAME"></span><span id="se_create_symbolic_link_name"></span><dl> <dt><strong>SE_CREATE_SYMBOLIC_LINK_NAME</strong></dt> <dt>TEXT( &quot; SeCreateSymbolicLinkPrivilege &quot; )</dt> </dl></td>
 <td style="text-align: left;">Obbligatorio per creare un collegamento simbolico.<br/> Diritto utente: creare collegamenti simbolici.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_CREATE_TOKEN_NAME"></span><span id="se_create_token_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_CREATE_TOKEN_NAME ( &quot; SeCreateTokenPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessario per creare un token primario. <br/> Diritto utente: creare un oggetto token.<br/> Non è possibile aggiungere questo privilegio a un account utente con il &quot; criterio creare un oggetto token &quot; . Non è inoltre possibile aggiungere questo privilegio a un processo di proprietà usando le API di Windows. <strong>Windows Server 2003 e Windows XP con SP1 e versioni precedenti:</strong> Le API di Windows possono aggiungere questo privilegio a un processo di proprietà.<br/> <br/></td>
+<td style="text-align: left;"><span id="SE_CREATE_TOKEN_NAME"></span><span id="se_create_token_name"></span><dl> <dt><strong>SE_CREATE_TOKEN_NAME</strong></dt> <dt>TEXT( &quot; SeCreateTokenPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per creare un token primario. <br/> Diritto utente: creare un oggetto token.<br/> Non è possibile aggiungere questo privilegio a un account utente con &quot; i criteri Creare un oggetto &quot; token. Inoltre, non è possibile aggiungere questo privilegio a un processo di proprietà usando le API di Windows. <strong>Windows Server 2003 e Windows XP con SP1 e versioni precedenti:</strong> Le API di Windows possono aggiungere questo privilegio a un processo di proprietà.<br/> <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_DEBUG_NAME"></span><span id="se_debug_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_DEBUG_NAME ( &quot; SeDebugPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessario per eseguire il debug e la modifica della memoria di un processo di proprietà di un altro account. <br/> Diritto utente: debug di programmi.<br/></td>
+<td style="text-align: left;"><span id="SE_DEBUG_NAME"></span><span id="se_debug_name"></span><dl> <dt><strong>SE_DEBUG_NAME</strong></dt> <dt>TEXT( &quot; SeDebugPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per eseguire il debug e modificare la memoria di un processo di proprietà di un altro account. <br/> Diritto utente: Eseguire il debug dei programmi.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME"></span><span id="se_delegate_session_user_impersonate_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME ( &quot; SeDelegateSessionUserImpersonatePrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per ottenere un token di rappresentazione per un altro utente nella stessa sessione. <br/> Diritto utente: rappresentare altri utenti.<br/></td>
+<td style="text-align: left;"><span id="SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME"></span><span id="se_delegate_session_user_impersonate_name"></span><dl> <dt><strong>SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME</strong></dt> <dt>TEXT( &quot; SeDelegateSessionUserImpersonatePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per ottenere un token di rappresentazione per un altro utente nella stessa sessione. <br/> Diritto utente: rappresenta altri utenti.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_ENABLE_DELEGATION_NAME"></span><span id="se_enable_delegation_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_ENABLE_DELEGATION_NAME ( &quot; SeEnableDelegationPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per contrassegnare gli account utente e computer come trusted per la delega.<br/> Diritto utente: consentire l'attendibilità degli account computer e utente per la delega.<br/></td>
+<td style="text-align: left;"><span id="SE_ENABLE_DELEGATION_NAME"></span><span id="se_enable_delegation_name"></span><dl> <dt><strong>SE_ENABLE_DELEGATION_NAME</strong></dt> <dt>TEXT( &quot; SeEnableDelegationPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per contrassegnare gli account utente e computer come trusted per la delega.<br/> Diritto utente: abilitare gli account computer e utente come attendibili per la delega.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_IMPERSONATE_NAME"></span><span id="se_impersonate_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_IMPERSONATE_NAME ( &quot; SeImpersonatePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;"><span id="SE_IMPERSONATE_NAME"></span><span id="se_impersonate_name"></span><dl> <dt><strong>SE_IMPERSONATE_NAME</strong></dt> <dt>TEXT( &quot; SeImpersonatePrivilege &quot; )</dt> </dl></td>
 <td style="text-align: left;">Obbligatorio per la rappresentazione.<br/> Diritto utente: rappresenta un client dopo l'autenticazione.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_INC_BASE_PRIORITY_NAME"></span><span id="se_inc_base_priority_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_INC_BASE_PRIORITY_NAME ( &quot; SeIncreaseBasePriorityPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per aumentare la priorità di base di un processo. <br/> Diritto utente: aumento della priorità di pianificazione.<br/></td>
+<td style="text-align: left;"><span id="SE_INC_BASE_PRIORITY_NAME"></span><span id="se_inc_base_priority_name"></span><dl> <dt><strong>SE_INC_BASE_PRIORITY_NAME</strong></dt> <dt>TEXT( &quot; SeIncreaseBasePriorityPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per aumentare la priorità di base di un processo. <br/> Diritto utente: aumentare la priorità di pianificazione.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_INCREASE_QUOTA_NAME"></span><span id="se_increase_quota_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_INCREASE_QUOTA_NAME ( &quot; SeIncreaseQuotaPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per aumentare la quota assegnata a un processo. <br/> Diritto utente: modificare le quote di memoria per un processo.<br/></td>
+<td style="text-align: left;"><span id="SE_INCREASE_QUOTA_NAME"></span><span id="se_increase_quota_name"></span><dl> <dt><strong>SE_INCREASE_QUOTA_NAME</strong></dt> <dt>TEXT( &quot; SeIncreaseQuotaPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per aumentare la quota assegnata a un processo. <br/> Diritto utente: regolare le quote di memoria per un processo.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_INC_WORKING_SET_NAME"></span><span id="se_inc_working_set_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_INC_WORKING_SET_NAME ( &quot; SeIncreaseWorkingSetPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per allocare ulteriore memoria per le applicazioni eseguite nel contesto degli utenti.<br/> Diritto utente: aumentare un processo working set.<br/></td>
+<td style="text-align: left;"><span id="SE_INC_WORKING_SET_NAME"></span><span id="se_inc_working_set_name"></span><dl> <dt><strong>SE_INC_WORKING_SET_NAME</strong></dt> <dt>TEXT( &quot; SeIncreaseWorkingSetPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per allocare più memoria per le applicazioni eseguite nel contesto degli utenti.<br/> Diritto utente: aumentare il numero di processi working set.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_LOAD_DRIVER_NAME"></span><span id="se_load_driver_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_LOAD_DRIVER_NAME ( &quot; SeLoadDriverPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessario per caricare o scaricare un driver di dispositivo. <br/> Diritto utente: caricare e scaricare i driver di dispositivo.<br/></td>
+<td style="text-align: left;"><span id="SE_LOAD_DRIVER_NAME"></span><span id="se_load_driver_name"></span><dl> <dt><strong>SE_LOAD_DRIVER_NAME</strong></dt> <dt>TEXT( &quot; SeLoadDriverPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per caricare o scaricare un driver di dispositivo. <br/> Diritto utente: caricare e scaricare i driver di dispositivo.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_LOCK_MEMORY_NAME"></span><span id="se_lock_memory_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_LOCK_MEMORY_NAME ( &quot; SeLockMemoryPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per bloccare le pagine fisiche in memoria. <br/> Diritto utente: blocco di pagine in memoria.<br/></td>
+<td style="text-align: left;"><span id="SE_LOCK_MEMORY_NAME"></span><span id="se_lock_memory_name"></span><dl> <dt><strong>SE_LOCK_MEMORY_NAME</strong></dt> <dt>TEXT( &quot; SeLockMemoryPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per bloccare le pagine fisiche in memoria. <br/> Diritto utente: bloccare le pagine in memoria.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_MACHINE_ACCOUNT_NAME"></span><span id="se_machine_account_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_MACHINE_ACCOUNT_NAME ( &quot; SeMachineAccountPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessario per creare un account computer. <br/> Diritto utente: aggiungere le workstation al dominio.<br/></td>
+<td style="text-align: left;"><span id="SE_MACHINE_ACCOUNT_NAME"></span><span id="se_machine_account_name"></span><dl> <dt><strong>SE_MACHINE_ACCOUNT_NAME</strong></dt> <dt>TEXT( &quot; SeMachineAccountPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per creare un account computer. <br/> Diritto utente: aggiungere workstation al dominio.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_MANAGE_VOLUME_NAME"></span><span id="se_manage_volume_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_MANAGE_VOLUME_NAME ( &quot; SeManageVolumePrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessario per abilitare i privilegi di gestione del volume. <br/> Diritto utente: gestire i file in un volume.<br/></td>
+<td style="text-align: left;"><span id="SE_MANAGE_VOLUME_NAME"></span><span id="se_manage_volume_name"></span><dl> <dt><strong>SE_MANAGE_VOLUME_NAME</strong></dt> <dt>TEXT( &quot; SeManageVolumePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per abilitare i privilegi di gestione dei volumi. <br/> Diritto utente: gestire i file in un volume.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_PROF_SINGLE_PROCESS_NAME"></span><span id="se_prof_single_process_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_PROF_SINGLE_PROCESS_NAME ( &quot; SeProfileSingleProcessPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per raccogliere le informazioni di profilatura per un singolo processo. <br/> Diritto utente: profilo singolo processo.<br/></td>
+<td style="text-align: left;"><span id="SE_PROF_SINGLE_PROCESS_NAME"></span><span id="se_prof_single_process_name"></span><dl> <dt><strong>SE_PROF_SINGLE_PROCESS_NAME</strong></dt> <dt>TEXT( &quot; SeProfileSingleProcessPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per raccogliere informazioni di profilatura per un singolo processo. <br/> Diritto utente: profilare un singolo processo.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_RELABEL_NAME"></span><span id="se_relabel_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_RELABEL_NAME ( &quot; SeRelabelPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;"><span id="SE_RELABEL_NAME"></span><span id="se_relabel_name"></span><dl> <dt><strong>SE_RELABEL_NAME</strong></dt> <dt>TEXT( &quot; SeRelabelPrivilege &quot; )</dt> </dl></td>
 <td style="text-align: left;">Obbligatorio per modificare il livello di integrità obbligatorio di un oggetto.<br/> Diritto utente: modificare l'etichetta di un oggetto.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_REMOTE_SHUTDOWN_NAME"></span><span id="se_remote_shutdown_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_REMOTE_SHUTDOWN_NAME ( &quot; SeRemoteShutdownPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Necessario per arrestare un sistema utilizzando una richiesta di rete. <br/> Diritto utente: forza l'arresto da un sistema remoto.<br/></td>
+<td style="text-align: left;"><span id="SE_REMOTE_SHUTDOWN_NAME"></span><span id="se_remote_shutdown_name"></span><dl> <dt><strong>SE_REMOTE_SHUTDOWN_NAME</strong></dt> <dt>TEXT( &quot; SeRemoteShutdownPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per arrestare un sistema usando una richiesta di rete. <br/> Diritto utente: forzare l'arresto da un sistema remoto.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_RESTORE_NAME"></span><span id="se_restore_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_RESTORE_NAME ( &quot; SeRestorePrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per eseguire operazioni di ripristino. Questo privilegio fa in modo che il sistema conceda tutti i controlli di accesso in scrittura a qualsiasi file, indipendentemente dall'ACL specificato per il file. Qualsiasi richiesta di accesso diversa da Write viene comunque valutata con l'ACL. Questo privilegio consente inoltre di impostare qualsiasi SID utente o gruppo valido come proprietario di un file. Questo privilegio è richiesto dalla funzione <a href="/windows/desktop/api/winreg/nf-winreg-regsavekeya"><strong>RegLoadKey</strong></a> . Se questo privilegio viene mantenuto, vengono concessi i diritti di accesso seguenti:<br/>
+<td style="text-align: left;"><span id="SE_RESTORE_NAME"></span><span id="se_restore_name"></span><dl> <dt><strong>SE_RESTORE_NAME</strong></dt> <dt>TEXT( &quot; SeRestorePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per eseguire operazioni di ripristino. Questo privilegio fa sì che il sistema concedi tutto il controllo di accesso in scrittura a qualsiasi file, indipendentemente dall'ACL specificato per il file. Qualsiasi richiesta di accesso diversa dalla scrittura viene comunque valutata con l'ACL. Inoltre, questo privilegio consente di impostare qualsiasi SID utente o gruppo valido come proprietario di un file. Questo privilegio è richiesto dalla <a href="/windows/desktop/api/winreg/nf-winreg-regloadkeya"><strong>funzione RegLoadKey.</strong></a> Se si dispone di questo privilegio, vengono concessi i diritti di accesso seguenti:<br/>
 <ul>
 <li>WRITE_DAC</li>
 <li>WRITE_OWNER</li>
@@ -163,55 +163,55 @@ Diritto utente: backup di file e directory.<br/>Se il file si trova in un'unità
 <li>FILE_ADD_SUBDIRECTORY</li>
 <li>DELETE</li>
 </ul>
-Diritto utente: ripristino di file e directory.<br/>Se il file si trova in un'unità rimovibile ed è abilitata la funzionalità di controllo dell'archiviazione rimovibile, è necessario che il SE_SECURITY_NAME disponga di ACCESS_SYSTEM_SECURITY.<br/></td>
+Diritto utente: ripristinare file e directory.<br/>Se il file si trova in un'unità rimovibile ed è abilitata l'opzione "Controlla archivi rimovibili", il SE_SECURITY_NAME deve avere ACCESS_SYSTEM_SECURITY.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_SECURITY_NAME"></span><span id="se_security_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_SECURITY_NAME ( &quot; SeSecurityPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per eseguire numerose funzioni correlate alla sicurezza, ad esempio il controllo e la visualizzazione dei messaggi di controllo. Questo privilegio identifica il proprio titolare come operatore di sicurezza. <br/> Diritto utente: gestire il registro di controllo e di sicurezza.<br/></td>
+<td style="text-align: left;"><span id="SE_SECURITY_NAME"></span><span id="se_security_name"></span><dl> <dt><strong>SE_SECURITY_NAME</strong></dt> <dt>TEXT( &quot; SeSecurityPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per eseguire una serie di funzioni correlate alla sicurezza, ad esempio il controllo e la visualizzazione dei messaggi di controllo. Questo privilegio identifica il titolare come operatore di sicurezza. <br/> Diritto utente: gestire il log di controllo e di sicurezza.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_SHUTDOWN_NAME"></span><span id="se_shutdown_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_SHUTDOWN_NAME ( &quot; SeShutdownPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;"><span id="SE_SHUTDOWN_NAME"></span><span id="se_shutdown_name"></span><dl> <dt><strong>SE_SHUTDOWN_NAME</strong></dt> <dt>TEXT( &quot; SeShutdownPrivilege &quot; )</dt> </dl></td>
 <td style="text-align: left;">Necessario per arrestare un sistema locale. <br/> Diritto utente: arrestare il sistema.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_SYNC_AGENT_NAME"></span><span id="se_sync_agent_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_SYNC_AGENT_NAME ( &quot; SeSyncAgentPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per il controller di dominio per l'utilizzo dei servizi di sincronizzazione directory <a href="/windows/desktop/SecGloss/l-gly"><em>Lightweight Directory Access Protocol</em></a> . Questo privilegio consente al titolare di leggere tutti gli oggetti e le proprietà nella directory, indipendentemente dalla protezione degli oggetti e delle proprietà. Per impostazione predefinita, viene assegnato agli account Administrator e LocalSystem nei controller di dominio. <br/> Diritto utente: sincronizzare i dati del servizio directory.<br/></td>
+<td style="text-align: left;"><span id="SE_SYNC_AGENT_NAME"></span><span id="se_sync_agent_name"></span><dl> <dt><strong>SE_SYNC_AGENT_NAME</strong></dt> <dt>TEXT( &quot; SeSyncAgentPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per l'utilizzo dei servizi di sincronizzazione <a href="/windows/desktop/SecGloss/l-gly"><em>Lightweight Directory Access Protocol</em></a> directory da parte di un controller di dominio. Questo privilegio consente al titolare di leggere tutti gli oggetti e le proprietà nella directory, indipendentemente dalla protezione per gli oggetti e le proprietà. Per impostazione predefinita, viene assegnato agli account Administrator e LocalSystem nei controller di dominio. <br/> Diritto utente: sincronizzare i dati del servizio directory.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_SYSTEM_ENVIRONMENT_NAME"></span><span id="se_system_environment_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_SYSTEM_ENVIRONMENT_NAME ( &quot; SeSystemEnvironmentPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per modificare la RAM non volatile dei sistemi che usano questo tipo di memoria per archiviare le informazioni di configurazione. <br/> Diritto utente: modificare i valori dell'ambiente del firmware.<br/></td>
+<td style="text-align: left;"><span id="SE_SYSTEM_ENVIRONMENT_NAME"></span><span id="se_system_environment_name"></span><dl> <dt><strong>SE_SYSTEM_ENVIRONMENT_NAME</strong></dt> <dt>TEXT( &quot; SeSystemEnvironmentPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per modificare la RAM non volatile dei sistemi che usano questo tipo di memoria per archiviare le informazioni di configurazione. <br/> Diritto utente: modificare i valori dell'ambiente del firmware.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_SYSTEM_PROFILE_NAME"></span><span id="se_system_profile_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_SYSTEM_PROFILE_NAME ( &quot; SeSystemProfilePrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per raccogliere le informazioni di profilatura per l'intero sistema. <br/> Diritto utente: profilare le prestazioni del sistema.<br/></td>
+<td style="text-align: left;"><span id="SE_SYSTEM_PROFILE_NAME"></span><span id="se_system_profile_name"></span><dl> <dt><strong>SE_SYSTEM_PROFILE_NAME</strong></dt> <dt>TEXT( &quot; SeSystemProfilePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per raccogliere informazioni di profilatura per l'intero sistema. <br/> Diritto utente: profilare le prestazioni del sistema.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_SYSTEMTIME_NAME"></span><span id="se_systemtime_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_SYSTEMTIME_NAME ( &quot; SeSystemTimePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;"><span id="SE_SYSTEMTIME_NAME"></span><span id="se_systemtime_name"></span><dl> <dt><strong>SE_SYSTEMTIME_NAME</strong></dt> <dt>TEXT( &quot; SeSystemtimePrivilege &quot; )</dt> </dl></td>
 <td style="text-align: left;">Obbligatorio per modificare l'ora di sistema. <br/> Diritto utente: modificare l'ora di sistema.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_TAKE_OWNERSHIP_NAME"></span><span id="se_take_ownership_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_TAKE_OWNERSHIP_NAME ( &quot; SeTakeOwnershipPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per assumere la proprietà di un oggetto senza che venga concesso l'accesso discrezionale. Questo privilegio consente l'impostazione del valore proprietario solo per i valori che il titolare può assegnare legittimamente come proprietario di un oggetto. <br/> Diritto utente: assumere la proprietà di file o di altri oggetti.<br/></td>
+<td style="text-align: left;"><span id="SE_TAKE_OWNERSHIP_NAME"></span><span id="se_take_ownership_name"></span><dl> <dt><strong>SE_TAKE_OWNERSHIP_NAME</strong></dt> <dt>TEXT( &quot; SeTakeOwnershipPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per assumere la proprietà di un oggetto senza concedere l'accesso discrezionale. Questo privilegio consente di impostare il valore del proprietario solo su tali valori che il titolare può assegnare legittimamente come proprietario di un oggetto. <br/> Diritto utente: assumere la proprietà di file o altri oggetti.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_TCB_NAME"></span><span id="se_tcb_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_TCB_NAME ( &quot; SeTcbPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Questo privilegio identifica il proprio titolare come parte della base del computer attendibile. A alcuni sottosistemi protetti attendibili viene concesso questo privilegio. <br/> Diritto utente: agire come parte del sistema operativo.<br/></td>
+<td style="text-align: left;"><span id="SE_TCB_NAME"></span><span id="se_tcb_name"></span><dl> <dt><strong>SE_TCB_NAME</strong></dt> <dt>TEXT( &quot; SeTcbPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Questo privilegio identifica il titolare come parte della base di computer attendibili. Ad alcuni sottosistemi protetti attendibili viene concesso questo privilegio. <br/> Diritto utente: funge da parte del sistema operativo.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_TIME_ZONE_NAME"></span><span id="se_time_zone_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_TIME_ZONE_NAME ( &quot; SeTimeZonePrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per modificare il fuso orario associato al clock interno del computer.<br/> Diritto utente: modificare il fuso orario.<br/></td>
+<td style="text-align: left;"><span id="SE_TIME_ZONE_NAME"></span><span id="se_time_zone_name"></span><dl> <dt><strong>SE_TIME_ZONE_NAME</strong></dt> <dt>TEXT( &quot; SeTimeZonePrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per regolare il fuso orario associato all'orologio interno del computer.<br/> Diritto utente: modificare il fuso orario.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_TRUSTED_CREDMAN_ACCESS_NAME"></span><span id="se_trusted_credman_access_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_TRUSTED_CREDMAN_ACCESS_NAME ( &quot; SeTrustedCredManAccessPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per accedere a gestione credenziali come chiamante attendibile.<br/> Diritto utente: accedere a gestione credenziali come chiamante attendibile.<br/></td>
+<td style="text-align: left;"><span id="SE_TRUSTED_CREDMAN_ACCESS_NAME"></span><span id="se_trusted_credman_access_name"></span><dl> <dt><strong>SE_TRUSTED_CREDMAN_ACCESS_NAME</strong></dt> <dt>TEXT( &quot; SeTrustedCredManAccessPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per accedere Gestione credenziali come chiamante attendibile.<br/> Diritto utente: accesso Gestione credenziali come chiamante attendibile.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="SE_UNDOCK_NAME"></span><span id="se_undock_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_UNDOCK_NAME ( &quot; SeUndockPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per disancorare un portatile.<br/> Diritto utente: rimuovere il computer dalla stazione di ancoraggio.<br/></td>
+<td style="text-align: left;"><span id="SE_UNDOCK_NAME"></span><span id="se_undock_name"></span><dl> <dt><strong>SE_UNDOCK_NAME</strong></dt> <dt>TEXT( &quot; SeUndockPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Necessario per disanciare un portatile.<br/> Diritto utente: rimuovere il computer dall'alloggiamento di espansione.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="SE_UNSOLICITED_INPUT_NAME"></span><span id="se_unsolicited_input_name"></span><dl> <dt><strong></strong></dt> <dt>Testo SE_UNSOLICITED_INPUT_NAME ( &quot; SeUnsolicitedInputPrivilege &quot; )</dt> </dl></td>
-<td style="text-align: left;">Obbligatorio per leggere l'input non richiesto da un dispositivo <a href="/windows/desktop/SecGloss/t-gly"><em>Terminal</em></a> .<br/> Diritto utente: non applicabile.<br/></td>
+<td style="text-align: left;"><span id="SE_UNSOLICITED_INPUT_NAME"></span><span id="se_unsolicited_input_name"></span><dl> <dt><strong>SE_UNSOLICITED_INPUT_NAME</strong></dt> <dt>TEXT( &quot; SeUnsolicitedInputPrivilege &quot; )</dt> </dl></td>
+<td style="text-align: left;">Obbligatorio per leggere l'input non richiesto da un <a href="/windows/desktop/SecGloss/t-gly"><em>dispositivo terminale.</em></a><br/> Diritto utente: non applicabile.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -220,7 +220,7 @@ Diritto utente: ripristino di file e directory.<br/>Se il file si trova in un'un
 
 ## <a name="remarks"></a>Commenti
 
-Le costanti di privilegio sono definite come stringhe in Winnt. h. Ad esempio, la \_ costante del nome del controllo se \_ è definita come "SeAuditPrivilege".
+Le costanti di privilegio sono definite come stringhe in Winnt.h. Ad esempio, la costante SE \_ AUDIT NAME è definita come \_ "SeAuditPrivilege".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -228,9 +228,9 @@ Le costanti di privilegio sono definite come stringhe in Winnt. h. Ad esempio, l
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Winnt. h</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Winnt.h</dt> </dl> |
 
 
 
