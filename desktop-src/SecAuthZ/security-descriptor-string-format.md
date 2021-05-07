@@ -1,24 +1,24 @@
 ---
 description: Il formato di stringa del descrittore di sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza.
 ms.assetid: 0a226629-084c-40c5-bdd4-ad7355c807cf
-title: Formato della stringa del descrittore di sicurezza
+title: Formato stringa descrittore di sicurezza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42780c408908faf0a226584be7315ab6bf9e78e5
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: 2d7fd6e9e2387deee63b5046086ed167a29fa54b
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925684"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644203"
 ---
-# <a name="security-descriptor-string-format"></a><span data-ttu-id="84cec-103">Formato della stringa del descrittore di sicurezza</span><span class="sxs-lookup"><span data-stu-id="84cec-103">Security Descriptor String Format</span></span>
+# <a name="security-descriptor-string-format"></a><span data-ttu-id="f8e75-103">Formato stringa descrittore di sicurezza</span><span class="sxs-lookup"><span data-stu-id="f8e75-103">Security Descriptor String Format</span></span>
 
-<span data-ttu-id="84cec-104">Il **formato di stringa del descrittore di** sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="84cec-104">The **Security Descriptor String Format** is a text format for storing or transporting information in a security descriptor.</span></span> <span data-ttu-id="84cec-105">Le [**funzioni ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) [**e ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) usano questo formato.</span><span class="sxs-lookup"><span data-stu-id="84cec-105">The [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) and [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) functions use this format.</span></span>
+<span data-ttu-id="f8e75-104">Il **formato di stringa del descrittore di** sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="f8e75-104">The **Security Descriptor String Format** is a text format for storing or transporting information in a security descriptor.</span></span> <span data-ttu-id="f8e75-105">Le [**funzioni ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) e [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) usano questo formato.</span><span class="sxs-lookup"><span data-stu-id="f8e75-105">The [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) and [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) functions use this format.</span></span>
 
-<span data-ttu-id="84cec-106">Il formato è una stringa con terminazione **Null** con token per indicare ognuno dei quattro componenti principali di un descrittore di sicurezza: owner (O:), primary group (G:), DACL (D:) e SACL (S:).</span><span class="sxs-lookup"><span data-stu-id="84cec-106">The format is a **null**-terminated string with tokens to indicate each of the four main components of a security descriptor: owner (O:), primary group (G:), DACL (D:), and SACL (S:).</span></span>
+<span data-ttu-id="f8e75-106">Il formato è una stringa con terminazione **Null** con token per indicare ognuno dei quattro componenti principali di un descrittore di sicurezza: owner (O:), primary group (G:), DACL (D:) e SACL (S:).</span><span class="sxs-lookup"><span data-stu-id="f8e75-106">The format is a **null**-terminated string with tokens to indicate each of the four main components of a security descriptor: owner (O:), primary group (G:), DACL (D:), and SACL (S:).</span></span>
 
 > [!Note]  
-> <span data-ttu-id="84cec-107">[*Le voci di controllo di*](/windows/desktop/SecGloss/a-gly) accesso (ACE) e le voci ACE condizionali hanno formati diversi.</span><span class="sxs-lookup"><span data-stu-id="84cec-107">[*Access control entries*](/windows/desktop/SecGloss/a-gly) (ACEs) and conditional ACEs have differing formats.</span></span> <span data-ttu-id="84cec-108">Per le voci ACE, vedere [Stringhe ACE.](ace-strings.md)</span><span class="sxs-lookup"><span data-stu-id="84cec-108">For ACEs, see [ACE Strings](ace-strings.md).</span></span> <span data-ttu-id="84cec-109">Per le voci ACE condizionali, vedere [Linguaggio di definizione del descrittore di sicurezza per ACE condizionali.](security-descriptor-definition-language-for-conditional-aces-.md)</span><span class="sxs-lookup"><span data-stu-id="84cec-109">For conditional ACEs, see [Security Descriptor Definition Language for Conditional ACEs](security-descriptor-definition-language-for-conditional-aces-.md).</span></span>
+> <span data-ttu-id="f8e75-107">[*Le voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) e le voci ACE condizionali hanno formati diversi.</span><span class="sxs-lookup"><span data-stu-id="f8e75-107">[*Access control entries*](/windows/desktop/SecGloss/a-gly) (ACEs) and conditional ACEs have differing formats.</span></span> <span data-ttu-id="f8e75-108">Per le ACE, vedere [Stringhe ACE](ace-strings.md).</span><span class="sxs-lookup"><span data-stu-id="f8e75-108">For ACEs, see [ACE Strings](ace-strings.md).</span></span> <span data-ttu-id="f8e75-109">Per le ACE condizionali, vedere [Linguaggio di definizione del descrittore di sicurezza per le ACE condizionali.](security-descriptor-definition-language-for-conditional-aces-.md)</span><span class="sxs-lookup"><span data-stu-id="f8e75-109">For conditional ACEs, see [Security Descriptor Definition Language for Conditional ACEs](security-descriptor-definition-language-for-conditional-aces-.md).</span></span>
 
  
 
@@ -34,33 +34,33 @@ S:sacl_flags(string_ace1)(string_ace2)... (string_acen)
 
 <dl> <dt>
 
-<span data-ttu-id="84cec-110"><span id="owner_sid"></span><span id="OWNER_SID"></span>owner \_ sid</span><span class="sxs-lookup"><span data-stu-id="84cec-110"><span id="owner_sid"></span><span id="OWNER_SID"></span>owner\_sid</span></span>
+<span data-ttu-id="f8e75-110"><span id="owner_sid"></span><span id="OWNER_SID"></span>owner \_ sid</span><span class="sxs-lookup"><span data-stu-id="f8e75-110"><span id="owner_sid"></span><span id="OWNER_SID"></span>owner\_sid</span></span>
 </dt> <dd>
 
-<span data-ttu-id="84cec-111">Stringa [SID che](sid-strings.md) identifica il proprietario dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="84cec-111">A [SID string](sid-strings.md) that identifies the object's owner.</span></span>
+<span data-ttu-id="f8e75-111">Stringa [SID che](sid-strings.md) identifica il proprietario dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="f8e75-111">A [SID string](sid-strings.md) that identifies the object's owner.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="84cec-112"><span id="group_sid"></span><span id="GROUP_SID"></span>group \_ sid</span><span class="sxs-lookup"><span data-stu-id="84cec-112"><span id="group_sid"></span><span id="GROUP_SID"></span>group\_sid</span></span>
+<span data-ttu-id="f8e75-112"><span id="group_sid"></span><span id="GROUP_SID"></span>group \_ sid</span><span class="sxs-lookup"><span data-stu-id="f8e75-112"><span id="group_sid"></span><span id="GROUP_SID"></span>group\_sid</span></span>
 </dt> <dd>
 
-<span data-ttu-id="84cec-113">Stringa SID che identifica il gruppo primario dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="84cec-113">A SID string that identifies the object's primary group.</span></span>
+<span data-ttu-id="f8e75-113">Stringa SID che identifica il gruppo primario dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="f8e75-113">A SID string that identifies the object's primary group.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="84cec-114"><span id="dacl_flags"></span><span id="DACL_FLAGS"></span>flag \_ dacl</span><span class="sxs-lookup"><span data-stu-id="84cec-114"><span id="dacl_flags"></span><span id="DACL_FLAGS"></span>dacl\_flags</span></span>
+<span data-ttu-id="f8e75-114"><span id="dacl_flags"></span><span id="DACL_FLAGS"></span>flag \_ dacl</span><span class="sxs-lookup"><span data-stu-id="f8e75-114"><span id="dacl_flags"></span><span id="DACL_FLAGS"></span>dacl\_flags</span></span>
 </dt> <dd>
 
-<span data-ttu-id="84cec-115">Flag di controllo del descrittore di sicurezza che si applicano all'elenco DACL.</span><span class="sxs-lookup"><span data-stu-id="84cec-115">Security descriptor control flags that apply to the DACL.</span></span> <span data-ttu-id="84cec-116">Per una descrizione di questi flag di controllo, vedere la [**funzione SetSecurityDescriptorControl.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol)</span><span class="sxs-lookup"><span data-stu-id="84cec-116">For a description of these control flags, see the [**SetSecurityDescriptorControl**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol) function.</span></span> <span data-ttu-id="84cec-117">La stringa dei \_ flag dacl può essere una concatenazione di zero o più delle stringhe seguenti.</span><span class="sxs-lookup"><span data-stu-id="84cec-117">The dacl\_flags string can be a concatenation of zero or more of the following strings.</span></span>
+<span data-ttu-id="f8e75-115">Flag di controllo del descrittore di sicurezza che si applicano all'elenco DACL.</span><span class="sxs-lookup"><span data-stu-id="f8e75-115">Security descriptor control flags that apply to the DACL.</span></span> <span data-ttu-id="f8e75-116">Per una descrizione di questi flag di controllo, vedere la [**funzione SetSecurityDescriptorControl.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol)</span><span class="sxs-lookup"><span data-stu-id="f8e75-116">For a description of these control flags, see the [**SetSecurityDescriptorControl**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol) function.</span></span> <span data-ttu-id="f8e75-117">La stringa flag dacl può essere una concatenazione di \_ zero o più stringhe seguenti.</span><span class="sxs-lookup"><span data-stu-id="f8e75-117">The dacl\_flags string can be a concatenation of zero or more of the following strings.</span></span>
 
 
 
-| <span data-ttu-id="84cec-118">Control</span><span class="sxs-lookup"><span data-stu-id="84cec-118">Control</span></span>               | <span data-ttu-id="84cec-119">Costante in Sddl.h</span><span class="sxs-lookup"><span data-stu-id="84cec-119">Constant in Sddl.h</span></span>       | <span data-ttu-id="84cec-120">Significato</span><span class="sxs-lookup"><span data-stu-id="84cec-120">Meaning</span></span>                                       |
+| <span data-ttu-id="f8e75-118">Control</span><span class="sxs-lookup"><span data-stu-id="f8e75-118">Control</span></span>               | <span data-ttu-id="f8e75-119">Costante in Sddl.h</span><span class="sxs-lookup"><span data-stu-id="f8e75-119">Constant in Sddl.h</span></span>       | <span data-ttu-id="f8e75-120">Significato</span><span class="sxs-lookup"><span data-stu-id="f8e75-120">Meaning</span></span>                                       |
 |-----------------------|--------------------------|-----------------------------------------------|
-| <span data-ttu-id="84cec-121">"P"</span><span class="sxs-lookup"><span data-stu-id="84cec-121">"P"</span></span>                   | <span data-ttu-id="84cec-122">SDDL \_ PROTECTED</span><span class="sxs-lookup"><span data-stu-id="84cec-122">SDDL\_PROTECTED</span></span>          | <span data-ttu-id="84cec-123">Il \_ flag SE DACL \_ PROTECTED è impostato.</span><span class="sxs-lookup"><span data-stu-id="84cec-123">The SE\_DACL\_PROTECTED flag is set.</span></span>          |
-| <span data-ttu-id="84cec-124">"AR"</span><span class="sxs-lookup"><span data-stu-id="84cec-124">"AR"</span></span>                  | <span data-ttu-id="84cec-125">SDDL \_ AUTO \_ INHERIT \_ REQ</span><span class="sxs-lookup"><span data-stu-id="84cec-125">SDDL\_AUTO\_INHERIT\_REQ</span></span> | <span data-ttu-id="84cec-126">Il flag SE \_ DACL \_ AUTO INHERIT \_ \_ REQ è impostato.</span><span class="sxs-lookup"><span data-stu-id="84cec-126">The SE\_DACL\_AUTO\_INHERIT\_REQ flag is set.</span></span> |
-| <span data-ttu-id="84cec-127">"AI"</span><span class="sxs-lookup"><span data-stu-id="84cec-127">"AI"</span></span>                  | <span data-ttu-id="84cec-128">SDDL \_ \_ EREDITATO AUTOMATICAMENTE</span><span class="sxs-lookup"><span data-stu-id="84cec-128">SDDL\_AUTO\_INHERITED</span></span>    | <span data-ttu-id="84cec-129">Il \_ flag SE DACL \_ AUTO \_ INHERITED è impostato.</span><span class="sxs-lookup"><span data-stu-id="84cec-129">The SE\_DACL\_AUTO\_INHERITED flag is set.</span></span>    |
-| <span data-ttu-id="84cec-130">"NO \_ ACCESS \_ CONTROL"</span><span class="sxs-lookup"><span data-stu-id="84cec-130">"NO\_ACCESS\_CONTROL"</span></span> | <span data-ttu-id="84cec-131">SDDL \_ NULL \_ ACL</span><span class="sxs-lookup"><span data-stu-id="84cec-131">SDDL\_NULL\_ACL</span></span>          | <span data-ttu-id="84cec-132">L'elenco di controllo di accesso è Null.</span><span class="sxs-lookup"><span data-stu-id="84cec-132">The ACL is null.</span></span>                              |
+| <span data-ttu-id="f8e75-121">"P"</span><span class="sxs-lookup"><span data-stu-id="f8e75-121">"P"</span></span>                   | <span data-ttu-id="f8e75-122">SDDL \_ PROTECTED</span><span class="sxs-lookup"><span data-stu-id="f8e75-122">SDDL\_PROTECTED</span></span>          | <span data-ttu-id="f8e75-123">Il \_ flag SE DACL \_ PROTECTED è impostato.</span><span class="sxs-lookup"><span data-stu-id="f8e75-123">The SE\_DACL\_PROTECTED flag is set.</span></span>          |
+| <span data-ttu-id="f8e75-124">"AR"</span><span class="sxs-lookup"><span data-stu-id="f8e75-124">"AR"</span></span>                  | <span data-ttu-id="f8e75-125">SDDL \_ AUTO \_ INHERIT \_ REQ</span><span class="sxs-lookup"><span data-stu-id="f8e75-125">SDDL\_AUTO\_INHERIT\_REQ</span></span> | <span data-ttu-id="f8e75-126">Il \_ flag SE DACL \_ AUTO INHERIT \_ \_ REQ è impostato.</span><span class="sxs-lookup"><span data-stu-id="f8e75-126">The SE\_DACL\_AUTO\_INHERIT\_REQ flag is set.</span></span> |
+| <span data-ttu-id="f8e75-127">"AI"</span><span class="sxs-lookup"><span data-stu-id="f8e75-127">"AI"</span></span>                  | <span data-ttu-id="f8e75-128">SDDL \_ \_ EREDITATO AUTOMATICAMENTE</span><span class="sxs-lookup"><span data-stu-id="f8e75-128">SDDL\_AUTO\_INHERITED</span></span>    | <span data-ttu-id="f8e75-129">Il \_ flag SE DACL \_ AUTO \_ INHERITED è impostato.</span><span class="sxs-lookup"><span data-stu-id="f8e75-129">The SE\_DACL\_AUTO\_INHERITED flag is set.</span></span>    |
+| <span data-ttu-id="f8e75-130">"NO \_ ACCESS \_ CONTROL"</span><span class="sxs-lookup"><span data-stu-id="f8e75-130">"NO\_ACCESS\_CONTROL"</span></span> | <span data-ttu-id="f8e75-131">SDDL \_ NULL \_ ACL</span><span class="sxs-lookup"><span data-stu-id="f8e75-131">SDDL\_NULL\_ACL</span></span>          | <span data-ttu-id="f8e75-132">L'ACL è Null.</span><span class="sxs-lookup"><span data-stu-id="f8e75-132">The ACL is null.</span></span> <span data-ttu-id="f8e75-133">**Windows Server 2008, Windows Vista e Windows Server 2003:** Non disponibile.</span><span class="sxs-lookup"><span data-stu-id="f8e75-133">**Windows Server 2008, Windows Vista and Windows Server 2003:** Not available.</span></span> |
 
 
 
@@ -68,31 +68,31 @@ S:sacl_flags(string_ace1)(string_ace2)... (string_acen)
 
 </dd> <dt>
 
-<span data-ttu-id="84cec-133"><span id="sacl_flags"></span><span id="SACL_FLAGS"></span>flag \_ sacl</span><span class="sxs-lookup"><span data-stu-id="84cec-133"><span id="sacl_flags"></span><span id="SACL_FLAGS"></span>sacl\_flags</span></span>
+<span data-ttu-id="f8e75-134"><span id="sacl_flags"></span><span id="SACL_FLAGS"></span>flag \_ sacl</span><span class="sxs-lookup"><span data-stu-id="f8e75-134"><span id="sacl_flags"></span><span id="SACL_FLAGS"></span>sacl\_flags</span></span>
 </dt> <dd>
 
-<span data-ttu-id="84cec-134">Flag di controllo del descrittore di sicurezza che si applicano all'elenco sacl.</span><span class="sxs-lookup"><span data-stu-id="84cec-134">Security descriptor control flags that apply to the SACL.</span></span> <span data-ttu-id="84cec-135">La stringa dei flag sacl \_ usa le stesse stringhe di bit di controllo della stringa dei flag dacl. \_</span><span class="sxs-lookup"><span data-stu-id="84cec-135">The sacl\_flags string uses the same control bit strings as the dacl\_flags string.</span></span>
+<span data-ttu-id="f8e75-135">Flag di controllo del descrittore di sicurezza che si applicano all'elenco SACL.</span><span class="sxs-lookup"><span data-stu-id="f8e75-135">Security descriptor control flags that apply to the SACL.</span></span> <span data-ttu-id="f8e75-136">La stringa dei flag sacl \_ usa le stesse stringhe di bit di controllo della stringa dei flag dacl. \_</span><span class="sxs-lookup"><span data-stu-id="f8e75-136">The sacl\_flags string uses the same control bit strings as the dacl\_flags string.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="84cec-136"><span id="string_ace"></span><span id="STRING_ACE"></span>string \_ ace</span><span class="sxs-lookup"><span data-stu-id="84cec-136"><span id="string_ace"></span><span id="STRING_ACE"></span>string\_ace</span></span>
+<span data-ttu-id="f8e75-137"><span id="string_ace"></span><span id="STRING_ACE"></span>string \_ ace</span><span class="sxs-lookup"><span data-stu-id="f8e75-137"><span id="string_ace"></span><span id="STRING_ACE"></span>string\_ace</span></span>
 </dt> <dd>
 
-<span data-ttu-id="84cec-137">Stringa che descrive una ACE nell'elenco DACL o SACL del descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="84cec-137">A string that describes an ACE in the security descriptor's DACL or SACL.</span></span> <span data-ttu-id="84cec-138">Per una descrizione del formato stringa ACE, vedere [Stringhe ACE](ace-strings.md).</span><span class="sxs-lookup"><span data-stu-id="84cec-138">For a description of the ACE string format, see [ACE strings](ace-strings.md).</span></span> <span data-ttu-id="84cec-139">Ogni stringa ACE è racchiusa tra parentesi (()).</span><span class="sxs-lookup"><span data-stu-id="84cec-139">Each ACE string is enclosed in parentheses (()).</span></span>
+<span data-ttu-id="f8e75-138">Stringa che descrive una ACE nell'elenco DACL o SACL del descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="f8e75-138">A string that describes an ACE in the security descriptor's DACL or SACL.</span></span> <span data-ttu-id="f8e75-139">Per una descrizione del formato di stringa ACE, vedere [Stringhe ACE.](ace-strings.md)</span><span class="sxs-lookup"><span data-stu-id="f8e75-139">For a description of the ACE string format, see [ACE strings](ace-strings.md).</span></span> <span data-ttu-id="f8e75-140">Ogni stringa ACE è racchiusa tra parentesi (()).</span><span class="sxs-lookup"><span data-stu-id="f8e75-140">Each ACE string is enclosed in parentheses (()).</span></span>
 
 </dd> </dl>
 
-<span data-ttu-id="84cec-140">I componenti non necessari possono essere omessi dalla stringa del descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="84cec-140">Unneeded components can be omitted from the security descriptor string.</span></span> <span data-ttu-id="84cec-141">Ad esempio, se il flag SE DACL PRESENT non è impostato nel descrittore di sicurezza di \_ \_ input, [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) non include un componente D: nella stringa di output.</span><span class="sxs-lookup"><span data-stu-id="84cec-141">For example, if the SE\_DACL\_PRESENT flag is not set in the input security descriptor, [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) does not include a D: component in the output string.</span></span> <span data-ttu-id="84cec-142">È anche possibile usare i flag di bit [**SECURITY \_ INFORMATION**](security-information.md) per indicare i componenti da includere in una stringa del descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="84cec-142">You can also use the [**SECURITY\_INFORMATION**](security-information.md) bit flags to indicate the components to include in a security descriptor string.</span></span>
+<span data-ttu-id="f8e75-141">I componenti non necessari possono essere omessi dalla stringa del descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="f8e75-141">Unneeded components can be omitted from the security descriptor string.</span></span> <span data-ttu-id="f8e75-142">Ad esempio, se il flag SE DACL PRESENT non è impostato nel descrittore di sicurezza di \_ \_ input, [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) non include un componente D: nella stringa di output.</span><span class="sxs-lookup"><span data-stu-id="f8e75-142">For example, if the SE\_DACL\_PRESENT flag is not set in the input security descriptor, [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) does not include a D: component in the output string.</span></span> <span data-ttu-id="f8e75-143">È anche possibile usare i flag di bit [**SECURITY \_ INFORMATION**](security-information.md) per indicare i componenti da includere in una stringa del descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="f8e75-143">You can also use the [**SECURITY\_INFORMATION**](security-information.md) bit flags to indicate the components to include in a security descriptor string.</span></span>
 
-<span data-ttu-id="84cec-143">Il formato della stringa del descrittore di sicurezza non supporta **gli ACL NULL.**</span><span class="sxs-lookup"><span data-stu-id="84cec-143">The security descriptor string format does not support **NULL** ACLs.</span></span>
+<span data-ttu-id="f8e75-144">Il formato della stringa del descrittore di sicurezza non supporta **gli ACL NULL.**</span><span class="sxs-lookup"><span data-stu-id="f8e75-144">The security descriptor string format does not support **NULL** ACLs.</span></span>
 
-<span data-ttu-id="84cec-144">Per indicare un ACL vuoto, la stringa del descrittore di sicurezza include il token D: o S: senza informazioni aggiuntive sulla stringa.</span><span class="sxs-lookup"><span data-stu-id="84cec-144">To denote an empty ACL, the security descriptor string includes the D: or S: token with no additional string information.</span></span>
+<span data-ttu-id="f8e75-145">Per indicare un elenco di controllo di accesso vuoto, la stringa del descrittore di sicurezza include il token D: o S: senza informazioni aggiuntive sulla stringa.</span><span class="sxs-lookup"><span data-stu-id="f8e75-145">To denote an empty ACL, the security descriptor string includes the D: or S: token with no additional string information.</span></span>
 
-<span data-ttu-id="84cec-145">La stringa del descrittore di sicurezza archivia i bit [**SECURITY DESCRIPTOR CONTROL**](security-descriptor-control.md) in modi diversi.</span><span class="sxs-lookup"><span data-stu-id="84cec-145">The security descriptor string stores the [**SECURITY DESCRIPTOR CONTROL**](security-descriptor-control.md) bits in different ways.</span></span> <span data-ttu-id="84cec-146">I bit SE DACL PRESENT o SE SACL PRESENT sono indicati dalla presenza del token D: o \_ \_ \_ \_ S: nella stringa.</span><span class="sxs-lookup"><span data-stu-id="84cec-146">The SE\_DACL\_PRESENT or SE\_SACL\_PRESENT bits are indicated by the presence of the D: or S: token in the string.</span></span> <span data-ttu-id="84cec-147">Altri bit che si applicano a DACL o SACL vengono archiviati in flag dacl \_ e flag \_ sacl.</span><span class="sxs-lookup"><span data-stu-id="84cec-147">Other bits that apply to the DACL or SACL are stored in dacl\_flags and sacl\_flags.</span></span> <span data-ttu-id="84cec-148">I bit SE \_ OWNER \_ DEFAULTED, SE \_ GROUP \_ DEFAULTED, SE DACL DEFAULTED e SE SACL DEFAULTED non vengono archiviati in una \_ \_ stringa del \_ \_ descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="84cec-148">The SE\_OWNER\_DEFAULTED, SE\_GROUP\_DEFAULTED, SE\_DACL\_DEFAULTED, and SE\_SACL\_DEFAULTED bits are not stored in a security descriptor string.</span></span> <span data-ttu-id="84cec-149">Il bit SE SELF RELATIVE non viene archiviato nella stringa, ma \_ \_ [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) imposta sempre questo bit nel descrittore di sicurezza di output.</span><span class="sxs-lookup"><span data-stu-id="84cec-149">The SE\_SELF\_RELATIVE bit is not stored in the string, but [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) always sets this bit in the output security descriptor.</span></span>
+<span data-ttu-id="f8e75-146">La stringa del descrittore di sicurezza archivia i bit [**SECURITY DESCRIPTOR CONTROL**](security-descriptor-control.md) in modi diversi.</span><span class="sxs-lookup"><span data-stu-id="f8e75-146">The security descriptor string stores the [**SECURITY DESCRIPTOR CONTROL**](security-descriptor-control.md) bits in different ways.</span></span> <span data-ttu-id="f8e75-147">I bit SE DACL PRESENT o SE SACL PRESENT sono indicati dalla presenza del token D: o \_ \_ \_ \_ S: nella stringa.</span><span class="sxs-lookup"><span data-stu-id="f8e75-147">The SE\_DACL\_PRESENT or SE\_SACL\_PRESENT bits are indicated by the presence of the D: or S: token in the string.</span></span> <span data-ttu-id="f8e75-148">Altri bit che si applicano all'elenco DACL o a SACL vengono archiviati in flag dacl \_ e flag \_ sacl.</span><span class="sxs-lookup"><span data-stu-id="f8e75-148">Other bits that apply to the DACL or SACL are stored in dacl\_flags and sacl\_flags.</span></span> <span data-ttu-id="f8e75-149">I bit SE \_ OWNER \_ DEFAULTED, SE \_ GROUP \_ DEFAULTED, SE \_ DACL DEFAULTED e SE \_ SACL DEFAULTED non vengono \_ \_ archiviati in una stringa del descrittore di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="f8e75-149">The SE\_OWNER\_DEFAULTED, SE\_GROUP\_DEFAULTED, SE\_DACL\_DEFAULTED, and SE\_SACL\_DEFAULTED bits are not stored in a security descriptor string.</span></span> <span data-ttu-id="f8e75-150">Il bit SE SELF RELATIVE non viene archiviato nella stringa, ma \_ \_ [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) imposta sempre questo bit nel descrittore di sicurezza di output.</span><span class="sxs-lookup"><span data-stu-id="f8e75-150">The SE\_SELF\_RELATIVE bit is not stored in the string, but [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) always sets this bit in the output security descriptor.</span></span>
 
-<span data-ttu-id="84cec-150">Negli esempi seguenti vengono mostrate le stringhe dei descrittori di sicurezza e le informazioni nei descrittori di sicurezza associati.</span><span class="sxs-lookup"><span data-stu-id="84cec-150">The following examples show security descriptor strings and the information in the associated security descriptors.</span></span>
+<span data-ttu-id="f8e75-151">Gli esempi seguenti illustrano le stringhe dei descrittori di sicurezza e le informazioni nei descrittori di sicurezza associati.</span><span class="sxs-lookup"><span data-stu-id="f8e75-151">The following examples show security descriptor strings and the information in the associated security descriptors.</span></span>
 
-<span data-ttu-id="84cec-151">Stringa 1:</span><span class="sxs-lookup"><span data-stu-id="84cec-151">String 1:</span></span>
+<span data-ttu-id="f8e75-152">Stringa 1:</span><span class="sxs-lookup"><span data-stu-id="f8e75-152">String 1:</span></span>
 
 
 ```C++
@@ -101,7 +101,7 @@ S:sacl_flags(string_ace1)(string_ace2)... (string_acen)
 
 
 
-<span data-ttu-id="84cec-152">Descrittore di sicurezza 1:</span><span class="sxs-lookup"><span data-stu-id="84cec-152">Security Descriptor 1:</span></span>
+<span data-ttu-id="f8e75-153">Descrittore di sicurezza 1:</span><span class="sxs-lookup"><span data-stu-id="f8e75-153">Security Descriptor 1:</span></span>
 
 
 ```C++
@@ -131,7 +131,7 @@ SACL
 
 
 
-<span data-ttu-id="84cec-153">Stringa 2:</span><span class="sxs-lookup"><span data-stu-id="84cec-153">String 2:</span></span>
+<span data-ttu-id="f8e75-154">Stringa 2:</span><span class="sxs-lookup"><span data-stu-id="f8e75-154">String 2:</span></span>
 
 
 ```C++
@@ -146,7 +146,7 @@ SACL
 
 
 
-<span data-ttu-id="84cec-154">Descrittore di sicurezza 2:</span><span class="sxs-lookup"><span data-stu-id="84cec-154">Security Descriptor 2:</span></span>
+<span data-ttu-id="f8e75-155">Descrittore di sicurezza 2:</span><span class="sxs-lookup"><span data-stu-id="f8e75-155">Security Descriptor 2:</span></span>
 
 
 ```C++
@@ -250,14 +250,14 @@ DACL
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="84cec-155">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="84cec-155">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f8e75-156">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="f8e75-156">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="84cec-156">Stringhe ACE</span><span class="sxs-lookup"><span data-stu-id="84cec-156">ACE Strings</span></span>](ace-strings.md)
+[<span data-ttu-id="f8e75-157">Stringhe ACE</span><span class="sxs-lookup"><span data-stu-id="f8e75-157">ACE Strings</span></span>](ace-strings.md)
 </dt> <dt>
 
-[<span data-ttu-id="84cec-157">Linguaggio di definizione del descrittore di sicurezza per ACE condizionali</span><span class="sxs-lookup"><span data-stu-id="84cec-157">Security Descriptor Definition Language for Conditional ACEs</span></span>](security-descriptor-definition-language-for-conditional-aces-.md)
+[<span data-ttu-id="f8e75-158">Linguaggio di definizione del descrittore di sicurezza per le ACE condizionali</span><span class="sxs-lookup"><span data-stu-id="f8e75-158">Security Descriptor Definition Language for Conditional ACEs</span></span>](security-descriptor-definition-language-for-conditional-aces-.md)
 </dt> </dl>
 
  
