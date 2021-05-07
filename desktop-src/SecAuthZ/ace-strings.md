@@ -1,24 +1,24 @@
 ---
-description: Vengono illustrate le stringhe utilizzate in una voce di controllo di accesso.
+description: Illustra le stringhe usate in una voce di controllo di accesso.
 ms.assetid: 82c99170-784b-4724-a25b-2f2e8a2e0225
 title: Stringhe ACE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a35bde18a1ca3ac416faa42e3b693e26305beb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ed8f9aad8696bd3d3c251170f2ff79ea493ce57
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103756186"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644183"
 ---
 # <a name="ace-strings"></a>Stringhe ACE
 
-Il [linguaggio SDDL (Security Descriptor Definition Language](security-descriptor-definition-language.md) ) utilizza stringhe ACE nei componenti DACL e SACL di una stringa del [*descrittore di sicurezza*](/windows/desktop/SecGloss/s-gly) .
+Il linguaggio SDDL (Security [Descriptor Definition Language)](security-descriptor-definition-language.md) usa stringhe ACE nei componenti DACL e SACL di una stringa [*del descrittore di*](/windows/desktop/SecGloss/s-gly) sicurezza.
 
-Come illustrato negli esempi di [formato della stringa del descrittore di sicurezza](security-descriptor-string-format.md) , ogni voce ACE in una stringa del descrittore di sicurezza è racchiusa tra parentesi. I campi della voce ACE sono nell'ordine seguente e sono separati da punti e virgola (;).
+Come illustrato negli esempi [di formato di stringa](security-descriptor-string-format.md) del descrittore di sicurezza, ogni ACE in una stringa del descrittore di sicurezza è racchiusa tra parentesi. I campi della ACE sono nell'ordine seguente e sono separati da punti e virgola (;).
 
 > [!Note]  
-> È disponibile un formato diverso per le [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) condizionale (ACE) rispetto ad altri tipi ACE. Per le voci ACE condizionali, vedere [Security Descriptor Definition Language per le ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md).
+> Esiste un formato diverso per le voci di [*controllo di*](/windows/desktop/SecGloss/a-gly) accesso condizionale (ACE) rispetto ad altri tipi di ACE. Per le ACE condizionali, vedere [Linguaggio di definizione del descrittore di sicurezza per le ACE condizionali.](security-descriptor-definition-language-for-conditional-aces-.md)
 
  
 
@@ -30,146 +30,144 @@ ace_type;ace_flags;rights;object_guid;inherit_object_guid;account_sid;(resource_
 
 <dl> <dt>
 
-<span id="ace_type"></span><span id="ACE_TYPE"></span>**\_tipo ACE**
+<span id="ace_type"></span><span id="ACE_TYPE"></span>**Tipo \_ ace**
 </dt> <dd>
 
-Stringa che indica il valore del membro **AceType** della struttura dell' [**\_ intestazione ACE**](/windows/desktop/api/Winnt/ns-winnt-ace_header) . La stringa di tipo ACE può essere una delle stringhe seguenti definite in SDDL. h.
+Stringa che indica il valore del membro **AceType** della [**struttura ACE \_ HEADER.**](/windows/desktop/api/Winnt/ns-winnt-ace_header) La stringa di tipo ACE può essere una delle stringhe seguenti definite in Sddl.h.
 
 
 
-| Stringa di tipo ACE | Costante in SDDL. h                      | Valore AceType                                                                                                                                                      |
+| Stringa di tipo ACE | Costante in Sddl.h                      | Valore AceType                                                                                                                                                      |
 |-----------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "A"             | \_accesso SDDL \_ consentito                   | \_ \_ tipo ACE consentito per l'accesso \_                                                                                                                                         |
-| "D"             | \_accesso SDDL \_ negato                    | \_ \_ tipo ACE accesso \_ negato                                                                                                                                          |
-| OA            | \_ \_ accesso agli oggetti SDDL \_ consentito           | \_ \_ \_ tipo ACE oggetto consentito \_ Access                                                                                                                                 |
-| OD            | \_ \_ accesso agli oggetti SDDL \_ negato            | ACCESSO \_ negato \_ \_ tipo ACE \_ oggetto                                                                                                                                  |
-| Au            | \_controllo SDDL                             | \_ \_ tipo ACE controllo \_ sistema                                                                                                                                           |
-| "AL"            | \_allarme SDDL                             | \_ \_ tipo ACE allarme \_ sistema                                                                                                                                           |
-| UNITÀ organizzativa            | \_controllo oggetto \_ SDDL                     | \_ \_ \_ tipo ACE oggetto controllo \_ di sistema                                                                                                                                   |
-| OL            | \_allarme oggetto \_ SDDL                     | \_ \_ \_ tipo ACE oggetto allarme \_ sistema                                                                                                                                   |
-| ML            | \_etichetta SDDL obbligatoria \_                  | \_ \_ \_ tipo ACE etichetta obbligatoria \_ del sistema                                                                                                                                |
-| XA            | \_accesso callback \_ SDDL \_ consentito         | ACCESSO \_ consentito \_ \_ tipo ACE \_ **di callback windows vista e Windows Server 2003:** non disponibile.<br/>                                                           |
-| XD            | \_accesso callback \_ SDDL \_ negato          | ACCESSO \_ negato \_ \_ tipo ACE \_ **di callback windows vista e Windows Server 2003:** non disponibile.<br/>                                                            |
-| RA            | \_attributo risorsa \_ SDDL               | \_ \_ Tipo ACE attributo risorsa di sistema \_ \_ **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** non disponibile.<br/> |
-| SP            | \_ \_ ID criterio con ambito \_ SDDL                | \_ \_ ID dei criteri con ambito di sistema \_ \_ \_ -tipo ACE **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** non disponibile.<br/>  |
-| Xu            | \_controllo callback \_ SDDL                   | \_ \_ Tipo ACE di callback controllo di sistema \_ \_ **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** non disponibile.<br/>     |
-| ZA            | \_ \_ accesso agli oggetti di callback SDDL \_ \_ consentito | ACCESSO \_ consentito \_ di \_ tipo ACE di CALLBACK \_ **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** non disponibile.<br/>   |
-
-
-
+| "A"             | ACCESSO SDDL \_ \_ CONSENTITO                   | TIPO \_ DI \_ ACE CONSENTITO PER \_ L'ACCESSO                                                                                                                                         |
+| "D"             | ACCESSO SDDL \_ \_ NEGATO                    | TIPO \_ \_ ACE ACCESSO \_ NEGATO                                                                                                                                          |
+| "OA"            | ACCESSO AGLI OGGETTI SDDL \_ \_ \_ CONSENTITO           | ACCESS \_ ALLOWED \_ OBJECT \_ ACE \_ TYPE                                                                                                                                 |
+| "OD"            | ACCESSO AGLI OGGETTI SDDL \_ \_ \_ NEGATO            | ACCESS \_ DENIED \_ OBJECT \_ ACE \_ TYPE                                                                                                                                  |
+| "AU"            | SDDL \_ AUDIT                             | SYSTEM \_ AUDIT \_ ACE \_ TYPE                                                                                                                                           |
+| "AL"            | SDDL \_ ALARM                             | SYSTEM \_ ALARM \_ ACE \_ TYPE                                                                                                                                           |
+| "OU"            | CONTROLLO DEGLI OGGETTI \_ \_ SDDL                     | SYSTEM \_ AUDIT \_ OBJECT \_ ACE \_ TYPE                                                                                                                                   |
+| "OL"            | ALLARME OGGETTO \_ \_ SDDL                     | SYSTEM \_ ALARM \_ OBJECT \_ ACE \_ TYPE                                                                                                                                   |
+| "ML"            | ETICHETTA OBBLIGATORIA \_ \_ SDDL                  | SYSTEM \_ MANDATORY \_ LABEL \_ ACE TYPE Windows Server \_ **2003:** Non disponibile.                                                                                        |
+| "XA"            | ACCESSO DI CALLBACK SDDL \_ \_ \_ CONSENTITO         | ACCESS \_ ALLOWED \_ CALLBACK \_ ACE TYPE Windows Server \_ **2008, Windows Vista e Windows Server 2003:** Non disponibile.                                                |
+| "XD"            | ACCESSO DI CALLBACK SDDL \_ \_ \_ NEGATO          | ACCESS \_ DENIED \_ CALLBACK \_ ACE TYPE Windows Server \_ **2008, Windows Vista e Windows Server 2003:** Non disponibile.                                                 |
+| "RA"            | ATTRIBUTO DELLA RISORSA \_ \_ SDDL               | SYSTEM \_ RESOURCE \_ ATTRIBUTE \_ ACE TYPE Windows Server \_ **2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** Non disponibile.<br/> |
+| "SP"            | ID CRITERI CON AMBITO SDDL \_ \_ \_                | SYSTEM \_ SCOPED \_ POLICY ID \_ \_ ACE TYPE Windows Server \_ **2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** Non disponibile.<br/>  |
+| "XU"            | CONTROLLO CALLBACK \_ SDDL \_                   | SYSTEM \_ AUDIT \_ CALLBACK \_ ACE TYPE Windows Server \_ **2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** Non disponibile.<br/>     |
+| "ZA"            | ACCESSO AGLI OGGETTI DI CALLBACK SDDL \_ \_ \_ \_ CONSENTITO | ACCESS \_ ALLOWED \_ CALLBACK \_ ACE TYPE Windows Server \_ **2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** Non disponibile.<br/>   |
+| "TL"            | ETICHETTA DI \_ ATTENDIBILITÀ PROCESSO \_ SDDL \_             | SYSTEM \_ PROCESS TRUST LABEL \_ \_ \_ ACE TYPE Windows Server \_ **2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** Non disponibile. |
+| "FL"            | FILTRO DI ACCESSO \_ \_ SDDL                    | SYSTEM \_ ACCESS \_ FILTER \_ ACE TYPE Windows Server \_ **2016, Windows 10 versione 1607, Windows 10 versione 1511, Windows 10 versione 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** non disponibile. |
  
 
 > [!Note]  
-> Se **il \_ tipo ACE** è \_ \_ \_ un tipo ACE oggetto consentito \_ e nessun GUID **oggetto \_** né GUID **\_ \_ oggetto ereditano** un [**GUID**](/windows/win32/api/guiddef/ns-guiddef-guid) specificato, [**ConvertStringSecurityDescriptorToSecurityDescriptor ha**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) converte **il \_ tipo ACE** per accedere al \_ \_ tipo ACE consentito \_ .
+> Se il tipo **ace \_** è ACCESS ALLOWED OBJECT ACE TYPE e non è specificato alcun GUID oggetto né GUID oggetto \_ \_ \_ \_ ereditato, [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) converte [](/windows/win32/api/guiddef/ns-guiddef-guid) **\_** **\_ \_** **\_** il tipo di oggetto in ACCESS ALLOWED \_ \_ ACE \_ TYPE.
 
  
 
 </dd> <dt>
 
-<span id="ace_flags"></span><span id="ACE_FLAGS"></span>**\_flag ACE**
+<span id="ace_flags"></span><span id="ACE_FLAGS"></span>**flag \_ ace**
 </dt> <dd>
 
-Stringa che indica il valore del membro **AceFlags** della struttura dell' [**\_ intestazione ACE**](/windows/desktop/api/Winnt/ns-winnt-ace_header) . La stringa di flag ACE può essere una concatenazione delle stringhe seguenti definite in SDDL. h.
+Stringa che indica il valore del membro **AceFlags** della [**struttura ACE \_ HEADER.**](/windows/desktop/api/Winnt/ns-winnt-ace_header) La stringa dei flag ACE può essere una concatenazione delle stringhe seguenti definite in Sddl.h.
 
 
 
-| Stringa flag ACE | Costante in SDDL. h       | Valore AceFlag                 |
+| Stringa dei flag ACE | Costante in Sddl.h       | Valore AceFlag                 |
 |------------------|--------------------------|-------------------------------|
-| Ci             | \_eredita il contenitore SDDL \_ | il contenitore \_ eredita \_ ACE       |
-| OI             | \_oggetto SDDL \_ ereditato    | OGGETTO che \_ eredita \_ ACE          |
-| NP             | SDDL \_ senza \_ propagazione      | Nessuna \_ propagazione \_ eredita \_ ACE   |
-| Io             | \_solo SDDL eredita \_      | EREDITA \_ solo \_ ACE            |
-| "ID"             | SDDL \_ ereditato          | Ace EREDITAta \_                |
-| SA             | \_controllo SDDL \_ riuscito     | \_ \_ flag ACE di accesso riuscito \_ |
-| FA             | \_errore di controllo SDDL \_     | \_ \_ flag ACE di accesso non riuscito \_     |
-
-
-
+| "CI"             | EREDITARIETÀ DEL \_ CONTENITORE \_ SDDL | CONTAINER \_ INHERIT \_ ACE       |
+| "OI"             | EREDITARE \_ L'OGGETTO \_ SDDL    | OBJECT \_ INHERIT \_ ACE          |
+| "NP"             | SDDL \_ NO \_ PROPAGATE      | NO \_ PROPAGATE \_ INHERIT \_ ACE   |
+| "IO"             | SOLO \_ EREDITARIETÀ \_ SDDL      | INHERIT \_ ONLY \_ ACE (EREDITA SOLO ACE)            |
+| "ID"             | SDDL \_ EREDITATO          | ACE \_ EREDITATO                |
+| "SA"             | CONTROLLO SDDL \_ \_ RIUSCITO     | \_FLAG \_ ACE DI \_ ACCESSO RIUSCITO |
+| "FA"             | ERRORE DI CONTROLLO \_ \_ SDDL     | \_FLAG \_ ACE DI ACCESSO NON \_ RIUSCITO     |
+| "TP"             | FILTRO PROTETTO CON \_ \_ ATTENDIBILITÀ \_ SDDL | TRUST \_ PROTECTED \_ FILTER \_ ACE FLAG Windows Server \_ **2016, Windows 10 versione 1607, Windows 10 versione 1511, Windows 10 versione 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** non disponibile. |
+| "CR"             | SDDL \_ CRITICAL           | CRITICAL \_ ACE \_ FLAG Windows Server **versione 1803, Windows 10 versione 1803, Windows Server versione 1709, Windows 10 versione 1709, Windows 10 versione 1703, Windows Server 2016, Windows 10 versione 1607, Windows 10 versione 1511, Windows 10 versione 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** non disponibile. |
  
 
 </dd> <dt>
 
-<span id="rights"></span><span id="RIGHTS"></span>**diritti**
+<span id="rights"></span><span id="RIGHTS"></span>**Diritti**
 </dt> <dd>
 
-Stringa che indica i [diritti di accesso](access-rights-and-access-masks.md) controllati dalla voce ACE. Questa stringa può essere una rappresentazione di stringa esadecimale dei diritti di accesso, ad esempio "0x7800003F", oppure può essere una concatenazione delle stringhe seguenti.
+Stringa che indica i diritti [di accesso controllati](access-rights-and-access-masks.md) dalla ACE. Questa stringa può essere una rappresentazione di stringa esadecimale dei diritti di accesso, ad esempio "0x7800003F", oppure può essere una concatenazione delle stringhe seguenti.
 
 
 
 ### <a name="generic-access-rights"></a>Diritti di accesso generici
 
-| Stringa dei diritti di accesso | Costante in SDDL. h | Valore di accesso a destra |
+| Stringa dei diritti di accesso | Costante in Sddl.h | Valore del diritto di accesso |
 |----------------------|--------------------|--------------------|
-| GA                 | \_ \_ tutti i Generic SDDL | tutti GENERIci \_       |
-| GR                 | \_lettura generica SDDL \_ | lettura GENERIca \_     |
-| GW                 | \_scrittura generica SDDL \_ | scrittura GENERIca \_ |
-| GX                 | \_esecuzione generica SDDL \_ | esecuzione GENERIca \_ |
+| "GA"                 | SDDL \_ GENERIC \_ ALL | GENERIC \_ ALL       |
+| "GR"                 | LETTURA GENERICA \_ \_ SDDL | GENERIC \_ READ     |
+| "GW"                 | SCRITTURA GENERICA \_ \_ SDDL | GENERIC \_ WRITE |
+| "GX"                 | ESECUZIONE \_ GENERICA \_ SDDL | GENERIC \_ EXECUTE |
 
 
 ### <a name="standard-access-rights"></a>Diritti di accesso standard
 
-| Stringa dei diritti di accesso | Costante in SDDL. h | Valore di accesso a destra |
+| Stringa dei diritti di accesso | Costante in Sddl.h | Valore del diritto di accesso |
 |----------------------|--------------------|--------------------|
-| RC                 | \_controllo di lettura SDDL \_ | controllo di lettura \_      |
-| SD                 | \_eliminazione standard \_ SDDL | DELETE          |
-| WD                 | \_DAC scrittura \_ SDDL | Scrivi \_ DAC            |
-| Wo                 | \_proprietario scrittura \_ SDDL | Scrivi \_ proprietario        |
+| "RC"                 | CONTROLLO LETTURA \_ \_ SDDL | CONTROLLO \_ LETTURA      |
+| "SD"                 | ELIMINAZIONE STANDARD \_ \_ SDDL | DELETE          |
+| "WD"                 | Applicazione livello dati SDDL \_ WRITE \_ | APPLICAZIONE \_ LIVELLO DATI WRITE            |
+| "WO"                 | PROPRIETARIO DELLA \_ SCRITTURA SDDL \_ | WRITE \_ OWNER        |
 
 ### <a name="directory-service-object-access-rights"></a>Diritti di accesso agli oggetti del servizio directory
 
-| Stringa dei diritti di accesso | Costante in SDDL. h | Valore di accesso a destra |
+| Stringa dei diritti di accesso | Costante in Sddl.h | Valore diritto di accesso |
 |----------------------|--------------------|--------------------|
-| RP                 | \_proprietà di lettura SDDL \_ | ADS \_ Rights \_ DS \_ Read \_ prop |
-| WP                 | \_Proprietà scrittura \_ SDDL | ADS \_ Rights \_ Write DS- \_ \_ prop |
-| CC                 | SDDL \_ Crea \_ figlio | ADS \_ Rights \_ DS \_ creazione \_ figlio |
-| DC                 | \_eliminazione \_ elemento figlio SDDL | ADS \_ Rights \_ DS \_ Delete \_ figlio |
-| LC                 | \_elenco \_ elementi figlio SDDL | elenco degli annunci \_ giusti \_ ACTRL \_ DS \_ |
-| SW                 | \_scrittura automatica \_ SDDL    | \_autonomi \_ DS \_ giusti |
-| LO                  | \_oggetto elenco \_ SDDL | \_ \_ \_ oggetto elenco DS destro \_ ADS |
-| DT                 | \_Elimina \_ albero SDDL | \_albero di \_ \_ eliminazione DS destro Ads \_ |
-| CR                  | \_ \_ accesso al controllo SDDL | \_ \_ \_ accesso al controllo DS Rights Ads \_ |
+| "RP"                 | PROPRIETÀ READ DI \_ \_ SDDL | ACTIVE DIRECTORY \_ RIGHT \_ DS \_ READ \_ PROP |
+| "WP"                 | PROPRIETÀ \_ WRITE \_ SDDL | ACTIVE DIRECTORY \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| "CC"                 | SDDL \_ CREATE \_ CHILD | ADS \_ RIGHT \_ DS \_ CREATE \_ CHILD |
+| "DC"                 | SDDL \_ DELETE \_ CHILD | ADS \_ RIGHT \_ DS \_ DELETE \_ CHILD |
+| "LC"                 | SDDL \_ LIST \_ CHILDREN | ADS \_ RIGHT \_ ACTRL \_ DS \_ LIST |
+| "SW"                 | SDDL \_ \_ SELF-WRITE    | ADS \_ RIGHT \_ DS \_ SELF |
+| "LO"                  | OGGETTO SDDL \_ \_ LIST | OGGETTO ELENCO DI \_ ACTIVE DIRECTORY \_ \_ RIGHT DS \_ |
+| "DT"                 | ALBERO SDDL \_ DELETE \_ | ALBERO DI ELIMINAZIONE DI \_ ACTIVE DIRECTORY RIGHT \_ DS \_ \_ |
+| "CR"                  | CONTROLLO SDDL \_ - \_ ACCESSO | ACCESSO AL CONTROLLO \_ DEI SERVIZI DI DOMINIO ACTIVE \_ \_ \_ DIRECTORY |
 
 ### <a name="file-access-rights"></a>Diritti di accesso ai file
 
-| Stringa dei diritti di accesso | Costante in SDDL. h | Valore di accesso a destra |
+| Stringa dei diritti di accesso | Costante in Sddl.h | Valore diritto di accesso |
 |----------------------|--------------------|--------------------|
-| FA                 | \_ \_ tutti i file SDDL    | \_accesso a tutti i file \_   |
-| FR                 | \_lettura file \_ SDDL   | \_lettura file generica \_ |
-| FW                 | \_scrittura file \_ SDDL  | \_scrittura generica file \_ |
-| FX                 | \_esecuzione file \_ SDDL | \_esecuzione generica file \_ |
+| "FA"                 | SDDL \_ FILE \_ ALL    | ACCESSO \_ A TUTTI I \_ FILE   |
+| "FR"                 | LETTURA FILE \_ SDDL \_   | LETTURA \_ GENERICA \_ FILE |
+| "FW"                 | SCRITTURA FILE \_ SDDL \_  | SCRITTURA \_ GENERICA \_ DI FILE |
+| "FX"                 | ESECUZIONE DI FILE SDDL \_ \_ | ESECUZIONE \_ GENERICA \_ DI FILE |
 
 
-### <a name="registry-key-access-rights"></a>Diritti di accesso alla chiave del registro di sistema
+### <a name="registry-key-access-rights"></a>Diritti di accesso alle chiavi del Registro di sistema
 
-| Stringa dei diritti di accesso | Costante in SDDL. h | Valore di accesso a destra |
+| Stringa dei diritti di accesso | Costante in Sddl.h | Valore diritto di accesso |
 |----------------------|--------------------|--------------------|
-| Ka                 | \_chiave SDDL \_ All     | CHIAVE \_ tutti gli \_ accessi   |
-| KR                 | \_lettura chiave \_ SDDL    | \_lettura chiave          |
-| KW                 | \_scrittura chiave \_ SDDL   | \_scrittura chiave         |
-| Kx                 | \_esecuzione della chiave SDDL \_ | esecuzione della chiave \_       |
+| "KA"                 | SDDL \_ KEY \_ ALL     | ACCESSO KEY \_ ALL \_   |
+| "KR"                 | SDDL \_ KEY \_ READ    | KEY \_ READ          |
+| "KW"                 | SDDL \_ KEY \_ WRITE   | KEY \_ WRITE         |
+| "KX"                 | SDDL \_ KEY \_ EXECUTE | KEY \_ EXECUTE       |
 
-### <a name="mandatory-label-rights"></a>Diritti etichetta obbligatoria
+### <a name="mandatory-label-rights"></a>Diritti di etichetta obbligatori
 
-| Stringa dei diritti di accesso | Costante in SDDL. h | Valore di accesso a destra |
+| Stringa dei diritti di accesso | Costante in Sddl.h | Valore del diritto di accesso |
 |----------------------|--------------------|--------------------|
-| Nr                 | SDDL \_ Nessuna \_ lettura \_ | \_etichetta obbligatoria \_ sistema \_ senza \_ lettura \_ |
-| NW                 | SDDL \_ senza \_ scrittura \_ | \_etichetta obbligatoria \_ sistema \_ senza \_ scrittura \_ |
-| NX                 | SDDL \_ Nessuna \_ esecuzione \_ | \_etichetta obbligatoria del sistema \_ \_ Nessuna \_ esecuzione \_ |
+| "NR"                 | SDDL \_ NO \_ READ \_ UP | SYSTEM \_ MANDATORY LABEL NO READ UP Windows Server \_ \_ \_ \_ **2008, Windows Vista and Windows Server 2003:** Non disponibile. |
+| "NW"                 | SDDL \_ NO \_ WRITE \_ UP | SYSTEM \_ MANDATORY LABEL NO WRITE UP Windows Server \_ \_ \_ \_ **2008, Windows Vista e Windows Server 2003:** Non disponibile. |
+| "NX"                 | SDDL \_ NO \_ EXECUTE \_ UP | SYSTEM \_ MANDATORY LABEL NO EXECUTE UP Windows Server \_ \_ \_ \_ **2008, Windows Vista e Windows Server 2003:** Non disponibile. |
 </dd> <dt>
 
-<span id="object_guid"></span><span id="OBJECT_GUID"></span>**\_GUID oggetto**
+<span id="object_guid"></span><span id="OBJECT_GUID"></span>**\_guid oggetto**
 </dt> <dd>
 
-Rappresentazione in forma di stringa di un GUID che indica il valore del membro **ObjectType** di una struttura Ace specifica dell'oggetto, ad esempio [**Access \_ allowed \_ Object \_ ACE**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_object_ace). La stringa GUID usa il formato restituito dalla funzione [**UuidToString**](/windows/desktop/api/rpcdce/nf-rpcdce-uuidtostring) .
+Rappresentazione di stringa di un GUID che indica il valore del membro **ObjectType** di una struttura ACE specifica dell'oggetto, ad esempio [**ACCESS ALLOWED OBJECT \_ \_ \_ ACE.**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_object_ace) La stringa GUID usa il formato restituito dalla [**funzione UuidToString.**](/windows/desktop/api/rpcdce/nf-rpcdce-uuidtostring)
 
-Nella tabella seguente sono elencati alcuni GUID oggetto usati comunemente.
+Nella tabella seguente sono elencati alcuni GUID di oggetti di uso comune.
 
 
 
 | Diritti e GUID                         | Autorizzazione      |
 |-----------------------------------------|-----------------|
-| CR; ab721a53-1e2f-11D0-9819-00aa0040529b | Cambia password |
-| CR; 00299570-246d-11D0-A768-00aa006e0529 | Reimposta password  |
+| CR;ab721a53-1e2f-11d0-9819-00aa0040529b | Cambia password |
+| CR;00299570-246d-11d0-a768-00aa006e0529 | Reimposta password  |
 
 
 
@@ -177,39 +175,39 @@ Nella tabella seguente sono elencati alcuni GUID oggetto usati comunemente.
 
 </dd> <dt>
 
-<span id="inherit_object_guid"></span><span id="INHERIT_OBJECT_GUID"></span>**eredita \_ \_ GUID oggetto**
+<span id="inherit_object_guid"></span><span id="INHERIT_OBJECT_GUID"></span>**ereditare \_ il \_ GUID dell'oggetto**
 </dt> <dd>
 
-Rappresentazione in forma di stringa di un GUID che indica il valore del membro **InheritedObjectType** di una struttura Ace specifica dell'oggetto. La stringa GUID usa il formato [**UuidToString**](/windows/desktop/api/rpcdce/nf-rpcdce-uuidtostring) .
+Rappresentazione di stringa di un GUID che indica il valore del membro **InheritedObjectType** di una struttura ACE specifica dell'oggetto. La stringa GUID usa il [**formato UuidToString.**](/windows/desktop/api/rpcdce/nf-rpcdce-uuidtostring)
 
 </dd> <dt>
 
-<span id="account_sid"></span><span id="ACCOUNT_SID"></span>**SID dell'account \_**
+<span id="account_sid"></span><span id="ACCOUNT_SID"></span>**account \_ sid**
 </dt> <dd>
 
-[Stringa SID](sid-strings.md) che identifica il [trustee](trustees.md) della voce ACE.
+[Stringa SID](sid-strings.md) che identifica il [trustee](trustees.md) della ACE.
 
 </dd> <dt>
 
-<span id="resource_attribute"></span><span id="RESOURCE_ATTRIBUTE"></span>**\_attributo Resource**
+<span id="resource_attribute"></span><span id="RESOURCE_ATTRIBUTE"></span>**attributo \_ resource**
 </dt> <dd>
 
-\[FACOLTATIVO \] l'attributo della risorsa \_ è solo per le voci ACE della risorsa ed è facoltativo. Stringa che indica il tipo di dati. Il tipo di dati ACE dell'attributo di risorsa può essere uno dei tipi di dati seguenti definiti in SDDL. h.
+\[\]FACOLTATIVO \_ L'attributo della risorsa è solo per le voci di controllo di accesso delle risorse ed è facoltativo. Stringa che indica il tipo di dati. Il tipo di dati ace dell'attributo resource può essere uno dei tipi di dati seguenti definiti in Sddl.h.
 
-Il \# segno "" è sinonimo di "0" negli attributi delle risorse. Ad esempio, D:AI (XA; OICI; FA;;; WD; (OctetStringType = = \# 1 \# 2 \# 3 \# \# )) equivale a e interpretato come D:ai (XA; OICI; fa;;; WD; (OctetStringType = = \# 01020300)).
+Il segno \# " " è sinonimo di "0" negli attributi della risorsa. Ad esempio, D:AI(XA;OICI;FA;;; WD;(OctetStringType== 1 2 3 )) è equivalente e interpretato \# \# come \# \# \# D:AI(XA;OICI;FA;;; WD;(OctetStringType== \# 01020300)).
 
-**Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows server 2003:** Gli attributi della risorsa non sono disponibili.
+**Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** Gli attributi della risorsa non sono disponibili.
 
 
 
-| Stringa tipo di dati Ace attributo risorsa | Costante in SDDL. h | Tipo di dati        |
+| Stringa del tipo di dati ace dell'attributo della risorsa | Costante in Sddl.h | Tipo di dati        |
 |-----------------------------------------|--------------------|------------------|
-| TI                                    | SDDL \_ int          | Intero con segno   |
-| TU                                    | SDDL \_ uint         | Intero senza segno |
-| TS                                    | \_WSTRING SDDL      | Stringa estesa      |
-| TD                                    | \_SID SDDL          | SID              |
-| TX                                    | \_BLOB SDDL         | Stringa ottetto     |
-| TB                                    | \_valore booleano SDDL      | Boolean          |
+| "TI"                                    | SDDL \_ INT          | Intero con segno   |
+| "TU"                                    | SDDL \_ UINT         | Intero senza segno |
+| "TS"                                    | SDDL \_ WSTRING      | Stringa wide      |
+| "TD"                                    | SDDL \_ SID          | SID              |
+| "TX"                                    | SDDL \_ BLOB         | Stringa ottetto     |
+| "TB"                                    | VALORE BOOLEANO \_ SDDL      | Boolean          |
 
 
 
@@ -217,7 +215,7 @@ Il \# segno "" è sinonimo di "0" negli attributi delle risorse. Ad esempio, D:A
 
 </dd> </dl>
 
-Nell'esempio seguente viene illustrata una stringa ACE per una voce ACE consentita per l'accesso. Non si tratta di una voce ACE specifica dell'oggetto, quindi non contiene alcuna informazione **nel \_ GUID oggetto** e eredita i campi **\_ \_ GUID oggetto** . Anche il campo dei **\_ flag ACE** è vuoto, a indicare che non è stato impostato nessuno dei flag ACE.
+Nell'esempio seguente viene illustrata una stringa ACE per una ACE consentita per l'accesso. Non si tratta di una ACE specifica dell'oggetto, quindi non contiene informazioni nel **\_ GUID** dell'oggetto ed **eredita i campi guid \_ \_ dell'oggetto.** Anche **il campo flag \_ ace** è vuoto, che indica che nessuno dei flag ACE è impostato.
 
 
 ```C++
@@ -226,7 +224,7 @@ Nell'esempio seguente viene illustrata una stringa ACE per una voce ACE consenti
 
 
 
-La stringa ACE illustrata sopra descrive le informazioni ACE seguenti.
+La stringa ACE illustrata in precedenza descrive le informazioni ACE seguenti.
 
 
 ```C++
@@ -243,7 +241,7 @@ Ace Sid      : (S-1-1-0)
 
 
 
-Nell'esempio seguente viene illustrato un file classificato con attestazioni di risorse per Windows e Structured Query Language (SQL) con segretezza impostata su un livello aziendale elevato.
+L'esempio seguente mostra un file classificato con attestazioni di risorsa per Windows e Structured Query Language (SQL) con Secrecy impostato su High Business Impact.
 
 
 ```C++
@@ -253,7 +251,7 @@ Nell'esempio seguente viene illustrato un file classificato con attestazioni di 
 
 
 
-La stringa ACE illustrata sopra descrive le informazioni ACE seguenti.
+La stringa ACE illustrata in precedenza descrive le informazioni ACE seguenti.
 
 
 ```C++
@@ -266,12 +264,12 @@ Resource Attributes: Project has the strings Windows and SQL, Secrecy has the un
 
 
 
-Per altre informazioni, vedere [formato stringa del descrittore di sicurezza](security-descriptor-string-format.md) e [stringhe SID](sid-strings.md). Per le voci ACE condizionali, vedere [Security Descriptor Definition Language per le ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md).
+Per altre informazioni, vedere [Formato della stringa del descrittore di sicurezza](security-descriptor-string-format.md) e Stringhe [SID.](sid-strings.md) Per le ACE condizionali, vedere [Linguaggio di definizione del descrittore di sicurezza per le ACE condizionali.](security-descriptor-definition-language-for-conditional-aces-.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[\[MS-DTYP \] : Security Descriptor Description Language](/openspecs/windows_protocols/ms-dtyp/4f4251cc-23b6-44b6-93ba-69688422cb06)
+[\[MS-DTYP: \] linguaggio di descrizione del descrittore di sicurezza](/openspecs/windows_protocols/ms-dtyp/4f4251cc-23b6-44b6-93ba-69688422cb06)
 </dt> </dl>
 

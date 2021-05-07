@@ -1,24 +1,24 @@
 ---
 description: Il formato di stringa del descrittore di sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza.
 ms.assetid: 0a226629-084c-40c5-bdd4-ad7355c807cf
-title: Formato della stringa del descrittore di sicurezza
+title: Formato stringa descrittore di sicurezza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42780c408908faf0a226584be7315ab6bf9e78e5
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: 2d7fd6e9e2387deee63b5046086ed167a29fa54b
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925684"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644203"
 ---
-# <a name="security-descriptor-string-format"></a>Formato della stringa del descrittore di sicurezza
+# <a name="security-descriptor-string-format"></a>Formato stringa descrittore di sicurezza
 
-Il **formato di stringa del descrittore di** sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza. Le [**funzioni ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) [**e ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) usano questo formato.
+Il **formato di stringa del descrittore di** sicurezza è un formato di testo per l'archiviazione o il trasporto di informazioni in un descrittore di sicurezza. Le [**funzioni ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) e [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) usano questo formato.
 
 Il formato è una stringa con terminazione **Null** con token per indicare ognuno dei quattro componenti principali di un descrittore di sicurezza: owner (O:), primary group (G:), DACL (D:) e SACL (S:).
 
 > [!Note]  
-> [*Le voci di controllo di*](/windows/desktop/SecGloss/a-gly) accesso (ACE) e le voci ACE condizionali hanno formati diversi. Per le voci ACE, vedere [Stringhe ACE.](ace-strings.md) Per le voci ACE condizionali, vedere [Linguaggio di definizione del descrittore di sicurezza per ACE condizionali.](security-descriptor-definition-language-for-conditional-aces-.md)
+> [*Le voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) e le voci ACE condizionali hanno formati diversi. Per le ACE, vedere [Stringhe ACE](ace-strings.md). Per le ACE condizionali, vedere [Linguaggio di definizione del descrittore di sicurezza per le ACE condizionali.](security-descriptor-definition-language-for-conditional-aces-.md)
 
  
 
@@ -51,16 +51,16 @@ Stringa SID che identifica il gruppo primario dell'oggetto.
 <span id="dacl_flags"></span><span id="DACL_FLAGS"></span>flag \_ dacl
 </dt> <dd>
 
-Flag di controllo del descrittore di sicurezza che si applicano all'elenco DACL. Per una descrizione di questi flag di controllo, vedere la [**funzione SetSecurityDescriptorControl.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol) La stringa dei \_ flag dacl può essere una concatenazione di zero o più delle stringhe seguenti.
+Flag di controllo del descrittore di sicurezza che si applicano all'elenco DACL. Per una descrizione di questi flag di controllo, vedere la [**funzione SetSecurityDescriptorControl.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol) La stringa flag dacl può essere una concatenazione di \_ zero o più stringhe seguenti.
 
 
 
 | Control               | Costante in Sddl.h       | Significato                                       |
 |-----------------------|--------------------------|-----------------------------------------------|
 | "P"                   | SDDL \_ PROTECTED          | Il \_ flag SE DACL \_ PROTECTED è impostato.          |
-| "AR"                  | SDDL \_ AUTO \_ INHERIT \_ REQ | Il flag SE \_ DACL \_ AUTO INHERIT \_ \_ REQ è impostato. |
+| "AR"                  | SDDL \_ AUTO \_ INHERIT \_ REQ | Il \_ flag SE DACL \_ AUTO INHERIT \_ \_ REQ è impostato. |
 | "AI"                  | SDDL \_ \_ EREDITATO AUTOMATICAMENTE    | Il \_ flag SE DACL \_ AUTO \_ INHERITED è impostato.    |
-| "NO \_ ACCESS \_ CONTROL" | SDDL \_ NULL \_ ACL          | L'elenco di controllo di accesso è Null.                              |
+| "NO \_ ACCESS \_ CONTROL" | SDDL \_ NULL \_ ACL          | L'ACL è Null. **Windows Server 2008, Windows Vista e Windows Server 2003:** Non disponibile. |
 
 
 
@@ -71,14 +71,14 @@ Flag di controllo del descrittore di sicurezza che si applicano all'elenco DACL.
 <span id="sacl_flags"></span><span id="SACL_FLAGS"></span>flag \_ sacl
 </dt> <dd>
 
-Flag di controllo del descrittore di sicurezza che si applicano all'elenco sacl. La stringa dei flag sacl \_ usa le stesse stringhe di bit di controllo della stringa dei flag dacl. \_
+Flag di controllo del descrittore di sicurezza che si applicano all'elenco SACL. La stringa dei flag sacl \_ usa le stesse stringhe di bit di controllo della stringa dei flag dacl. \_
 
 </dd> <dt>
 
 <span id="string_ace"></span><span id="STRING_ACE"></span>string \_ ace
 </dt> <dd>
 
-Stringa che descrive una ACE nell'elenco DACL o SACL del descrittore di sicurezza. Per una descrizione del formato stringa ACE, vedere [Stringhe ACE](ace-strings.md). Ogni stringa ACE è racchiusa tra parentesi (()).
+Stringa che descrive una ACE nell'elenco DACL o SACL del descrittore di sicurezza. Per una descrizione del formato di stringa ACE, vedere [Stringhe ACE.](ace-strings.md) Ogni stringa ACE è racchiusa tra parentesi (()).
 
 </dd> </dl>
 
@@ -86,11 +86,11 @@ I componenti non necessari possono essere omessi dalla stringa del descrittore d
 
 Il formato della stringa del descrittore di sicurezza non supporta **gli ACL NULL.**
 
-Per indicare un ACL vuoto, la stringa del descrittore di sicurezza include il token D: o S: senza informazioni aggiuntive sulla stringa.
+Per indicare un elenco di controllo di accesso vuoto, la stringa del descrittore di sicurezza include il token D: o S: senza informazioni aggiuntive sulla stringa.
 
-La stringa del descrittore di sicurezza archivia i bit [**SECURITY DESCRIPTOR CONTROL**](security-descriptor-control.md) in modi diversi. I bit SE DACL PRESENT o SE SACL PRESENT sono indicati dalla presenza del token D: o \_ \_ \_ \_ S: nella stringa. Altri bit che si applicano a DACL o SACL vengono archiviati in flag dacl \_ e flag \_ sacl. I bit SE \_ OWNER \_ DEFAULTED, SE \_ GROUP \_ DEFAULTED, SE DACL DEFAULTED e SE SACL DEFAULTED non vengono archiviati in una \_ \_ stringa del \_ \_ descrittore di sicurezza. Il bit SE SELF RELATIVE non viene archiviato nella stringa, ma \_ \_ [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) imposta sempre questo bit nel descrittore di sicurezza di output.
+La stringa del descrittore di sicurezza archivia i bit [**SECURITY DESCRIPTOR CONTROL**](security-descriptor-control.md) in modi diversi. I bit SE DACL PRESENT o SE SACL PRESENT sono indicati dalla presenza del token D: o \_ \_ \_ \_ S: nella stringa. Altri bit che si applicano all'elenco DACL o a SACL vengono archiviati in flag dacl \_ e flag \_ sacl. I bit SE \_ OWNER \_ DEFAULTED, SE \_ GROUP \_ DEFAULTED, SE \_ DACL DEFAULTED e SE \_ SACL DEFAULTED non vengono \_ \_ archiviati in una stringa del descrittore di sicurezza. Il bit SE SELF RELATIVE non viene archiviato nella stringa, ma \_ \_ [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/Sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) imposta sempre questo bit nel descrittore di sicurezza di output.
 
-Negli esempi seguenti vengono mostrate le stringhe dei descrittori di sicurezza e le informazioni nei descrittori di sicurezza associati.
+Gli esempi seguenti illustrano le stringhe dei descrittori di sicurezza e le informazioni nei descrittori di sicurezza associati.
 
 Stringa 1:
 
@@ -257,7 +257,7 @@ DACL
 [Stringhe ACE](ace-strings.md)
 </dt> <dt>
 
-[Linguaggio di definizione del descrittore di sicurezza per ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md)
+[Linguaggio di definizione del descrittore di sicurezza per le ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md)
 </dt> </dl>
 
  

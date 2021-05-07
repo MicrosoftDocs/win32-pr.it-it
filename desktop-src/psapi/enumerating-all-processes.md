@@ -4,19 +4,19 @@ description: Il codice di esempio seguente usa la funzione EnumProcesses per enu
 ms.assetid: 0ed81548-4936-40e9-bfc8-baa71492310e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e64e127014910974b881a7ae21e807be9ac19452
-ms.sourcegitcommit: d581811a577e00821667dad731710909979dc72d
+ms.openlocfilehash: bf03fd9ad06bfb15924f3f5ec92d8f8858fbff60
+ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "104530415"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644113"
 ---
 # <a name="enumerating-all-processes"></a>Enumerazione di tutti i processi
 
-Il codice di esempio seguente usa la funzione [**EnumProcesses**](/windows/win32/api/Psapi/nf-psapi-enumprocesses) per recuperare l'identificatore del processo per ogni oggetto processo nel sistema. Viene quindi chiamato [EnumProcessModules](/windows/win32/api/psapi/nf-psapi-enumprocessmodules) per ottenere ogni nome di processo e stamparlo.
+Il codice di esempio seguente usa la [**funzione EnumProcesses**](/windows/win32/api/Psapi/nf-psapi-enumprocesses) per recuperare l'identificatore di processo per ogni oggetto processo nel sistema. [EnumProcessModules](/windows/win32/api/psapi/nf-psapi-enumprocessmodules) viene quindi chiamato per ottenere il nome di ogni processo e stamparlo.
 
 >[!NOTE]
-> Per processi a 64 bit, usare la funzione [EnumProcessModulesEx](/windows/win32/api/psapi/nf-psapi-enumprocessmodulesex) .
+> Per i processi a 64 bit, usare la [funzione EnumProcessModulesEx.](/windows/win32/api/psapi/nf-psapi-enumprocessmodulesex)
 
 ```C++
 #include <windows.h>
@@ -94,7 +94,7 @@ int main( void )
 
 
 
-La funzione Main ottiene un elenco di processi tramite la funzione [**EnumProcesses**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) . Per ogni processo, Main chiama la funzione **PrintProcessNameAndID** , passando l'identificatore del processo. **PrintProcessNameAndID** chiama a sua volta la funzione [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) per ottenere l'handle del processo. Se **OpenProcess** ha esito negativo, l'output Mostra il nome del processo come <unknown> . Ad esempio, **OpenProcess** non riesce per i processi inattivi e CSRSS perché le relative restrizioni di accesso impediscono l'apertura del codice a livello di utente. **PrintProcessNameAndID** chiama quindi la funzione [**EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) per ottenere gli handle del modulo. Infine, **PrintProcessNameAndID** chiama la funzione [**GetModuleBaseName**](/windows/desktop/api/Psapi/nf-psapi-getmodulebasenamea) per ottenere il nome del file eseguibile e visualizza il nome insieme all'identificatore del processo.
+La funzione main ottiene un elenco di processi usando la [**funzione EnumProcesses.**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) Per ogni processo, main chiama la **funzione PrintProcessNameAndID,** passando l'identificatore del processo. **PrintProcessNameAndID** chiama a sua volta la [**funzione OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) per ottenere l'handle del processo. Se **OpenProcess ha** esito negativo, l'output visualizza il nome del processo come <unknown> . Ad esempio, **OpenProcess non** riesce per i processi Idle e CSRSS perché le restrizioni di accesso impediscono l'apertura del codice a livello di utente. **PrintProcessNameAndID chiama** quindi la [**funzione EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) per ottenere gli handle del modulo. Infine, **PrintProcessNameAndID** chiama la [**funzione GetModuleBaseName**](/windows/desktop/api/Psapi/nf-psapi-getmodulebasenamea) per ottenere il nome del file eseguibile e visualizza il nome insieme all'identificatore del processo.
 
  
 

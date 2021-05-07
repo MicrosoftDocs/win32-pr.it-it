@@ -1,99 +1,90 @@
 ---
-description: I gestori dei menu di scelta rapida, noti anche come gestori di menu di scelta rapida o gestori di verbi, sono un tipo di gestore di tipi di file. Analogamente a tutti questi gestori, si tratta di oggetti COM (Component Object Model in-process) implementati come dll.
+description: I gestori dei menu di scelta rapida, noti anche come gestori di menu di scelta rapida o gestori di verbi, sono un tipo di gestore del tipo di file. Come tutti questi gestori, si tratta di oggetti COM (In-Process Component Object Model) implementati come DLL.
 ms.assetid: cff79cdc-8a01-4575-9af7-2a485c6a8e46
-title: Creazione di gestori di menu di scelta rapida
+title: Creazione di gestori del menu di scelta rapida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e8b7091483726c322a8ae18bace883af126d404
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: 4bd2611c492d517e9312ec2a4e1c95d7f1aa0fea
+ms.sourcegitcommit: 05b3d7f137ef9bbddf4049215cb11d55b935997e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "103885882"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108800972"
 ---
-# <a name="creating-shortcut-menu-handlers"></a>Creazione di gestori di menu di scelta rapida
+# <a name="creating-shortcut-menu-handlers"></a>Creazione di gestori del menu di scelta rapida
 
-I gestori dei menu di scelta rapida, noti anche come gestori di menu di scelta rapida o gestori di verbi, sono un tipo di gestore di tipi di file. Analogamente a tutti questi gestori, si tratta di oggetti COM (Component Object Model in-process) implementati come dll.
+I gestori dei menu di scelta rapida, noti anche come gestori di menu di scelta rapida o gestori di verbi, sono un tipo di gestore del tipo di file. Questi gestori possono essere impelmentedati in modo da determinarne il caricamento nel proprio processo, nello explorer o in altri processi di terze parti. Quando si creano gestori in-process, è necessario fare attenzione perché possono causare danni al processo che li carica.
 
 > [!Note]  
-> Quando si registrano i gestori che operano nel contesto di applicazioni a 32 bit, è necessario tenere presenti alcune considerazioni speciali per Windows a 64 bit: quando i verbi della shell vengono richiamati nel contesto di un'applicazione a 32 bit, il sottosistema WOW64 reindirizza file system accesso ad alcuni percorsi. Se il gestore. exe viene archiviato in uno di questi percorsi, non è accessibile in questo contesto. Pertanto, come soluzione alternativa, archiviare il file con estensione exe in un percorso che non viene reindirizzato oppure archiviare una versione stub del file exe che avvia la versione reale.
+> Esistono considerazioni speciali per le versioni di Windows basate su 64 bit quando si registrano gestori che funzionano nel contesto di applicazioni a 32 bit: quando viene richiamato nel contesto di un'applicazione con un numero di bit diverso, il sottosistema WOW64 reindirizza l'accesso file system ad alcuni percorsi. Se il gestore exe è archiviato in uno di questi percorsi, non è accessibile in questo contesto. Di conseguenza, per risolvere il problema, archiviare il file exe in un percorso che non viene reindirizzato o archiviare una versione stub del file con estensione exe che avvia la versione reale.
 
- 
-
-Questo argomento è organizzato nel modo seguente:
+Questo argomento è organizzato come segue:
 
 -   [Verbi canonici](#canonical-verbs)
 -   [Verbi estesi](#extended-verbs)
--   [Personalizzazione di un menu di scelta rapida con verbi statici](#customizing-a-shortcut-menu-using-static-verbs)
-    -   [Attivazione del gestore mediante l'interfaccia IDropTarget](#activating-your-handler-using-the-idroptarget-interface)
+-   [Personalizzazione di un menu di scelta rapida tramite verbi statici](#customizing-a-shortcut-menu-using-static-verbs)
+    -   [Attivazione del gestore tramite l'interfaccia IDropTarget](#activating-your-handler-using-the-idroptarget-interface)
     -   [Specifica della posizione e dell'ordine dei verbi statici](#specifying-the-position-and-order-of-static-verbs)
     -   [Posizionamento dei verbi nella parte superiore o inferiore del menu](#positioning-verbs-at-the-top-or-bottom-of-the-menu)
     -   [Creazione di menu a cascata statici](#creating-static-cascading-menus)
-    -   [Ottenere il comportamento dinamico per i verbi statici usando la sintassi di query avanzata](#getting-dynamic-behavior-for-static-verbs-by-using-advanced-query-syntax)
-    -   [Deprecato: associazione di verbi a Dynamic Data Exchange comandi](#deprecated-associating-verbs-with-dynamic-data-exchange-commands)
--   [Completamento delle attività di implementazione del verbo](#completing-verb-implementation-tasks)
-    -   [Personalizzazione del menu di scelta rapida per oggetti shell predefiniti](#customizing-the-shortcut-menu-for-predefined-shell-objects)
+    -   [Recupero del comportamento dinamico per i verbi statici tramite la sintassi di query avanzata](#getting-dynamic-behavior-for-static-verbs-by-using-advanced-query-syntax)
+    -   [Deprecato: Associazione di verbi a Dynamic Data Exchange comandi](#deprecated-associating-verbs-with-dynamic-data-exchange-commands)
+-   [Completamento delle attività di implementazione dei verbi](#completing-verb-implementation-tasks)
+    -   [Personalizzazione del menu di scelta rapida per gli oggetti shell predefiniti](#customizing-the-shortcut-menu-for-predefined-shell-objects)
     -   [Estensione di un nuovo sottomenu](#extending-a-new-submenu)
     -   [Eliminazione di verbi e controllo della visibilità](#suppressing-verbs-and-controlling-visibility)
-    -   [Uso del modello di selezione dei verbi](#employing-the-verb-selection-model)
+    -   [Utilizzo del modello di selezione dei verbi](#employing-the-verb-selection-model)
     -   [Uso degli attributi degli elementi](#using-item-attributes)
     -   [Implementazione di verbi personalizzati per le cartelle tramite Desktop.ini](#implementing-custom-verbs-for-folders-through-desktopini)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="canonical-verbs"></a>Verbi canonici
 
-Le applicazioni sono in genere responsabili di fornire stringhe di visualizzazione localizzate per i verbi definiti. Tuttavia, per fornire un livello di indipendenza dal linguaggio, il sistema definisce un set standard di verbi comunemente usati, detti verbi canonici. Un verbo canonico non viene mai visualizzato all'utente e può essere usato con qualsiasi lingua dell'interfaccia utente. Il sistema usa il nome canonico per generare automaticamente una stringa di visualizzazione localizzata correttamente. Ad esempio, la stringa di visualizzazione del verbo aperto è impostata per essere **aperta** in un sistema in lingua inglese e per l'equivalente tedesco in un sistema tedesco.
-
+Le applicazioni sono in genere responsabili di fornire stringhe di visualizzazione localizzate per i verbi definiti. Tuttavia, per fornire un certo grado di indipendenza del linguaggio, il sistema definisce un set standard di verbi di uso comune denominati verbi canonici. Un verbo canonico non viene mai visualizzato all'utente e può essere usato con qualsiasi lingua dell'interfaccia utente. Il sistema usa il nome canonico per generare automaticamente una stringa di visualizzazione localizzata correttamente. Ad esempio, la stringa di visualizzazione del verbo aperto è impostata su **Open** in un sistema inglese e sull'equivalente tedesco in un sistema tedesco.
 
 
 | Verbo canonico | Descrizione                                                          |
 |----------------|----------------------------------------------------------------------|
 | Apri           | Apre il file o la cartella.                                            |
-| OpenNew        | Apre il file o la cartella in una nuova finestra.                            |
+| Opennew        | Apre il file o la cartella in una nuova finestra.                            |
 | Stampa          | Stampa il file.                                                     |
-| Printto        | Consente all'utente di stampare un file trascinandolo in un oggetto Printer. |
+| Printto        | Consente all'utente di stampare un file trascinandolo in un oggetto stampante. |
 | Esplora        | Apre Esplora risorse con la cartella selezionata.                     |
 | Proprietà     | Apre la finestra delle proprietà dell'oggetto.                                   |
 
-
-
- 
-
 > [!Note]  
-> Anche il verbo **printto** è canonico, ma non viene mai visualizzato. La relativa inclusione consente all'utente di stampare un file trascinandolo in un oggetto Printer.
+> Anche **il verbo Printto** è canonico, ma non viene mai visualizzato. La sua inclusione consente all'utente di stampare un file trascinandolo in un oggetto stampante.
 
- 
-
-I gestori dei menu di scelta rapida possono fornire i propri verbi canonici tramite [**IContextMenu:: GetCommandString**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenu-getcommandstring) con **GC \_ VERBW** o **GC \_ Verba**. Il sistema utilizzerà i verbi canonici come secondo parametro (*lpOperation*) passato a [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea)e sarà [**CMINVOKECOMMANDINFO**](/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-cminvokecommandinfo). membro **lpVerb** passato al metodo [**IContextMenu:: InvokeCommand**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenu-invokecommand) .
+I gestori del menu di scelta rapida possono fornire i propri verbi canonici tramite [**IContextMenu::GetCommandString**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenu-getcommandstring) con **GCS \_ VERBW** o **GCS \_ VERBA.** Il sistema userà i verbi canonici come secondo parametro (*lpOperation*) passato a [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea)e è [**CMINVOKECOMMANDINFO**](/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-cminvokecommandinfo). **Membro lpVerb** passato al [**metodo IContextMenu::InvokeCommand.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenu-invokecommand)
 
 ## <a name="extended-verbs"></a>Verbi estesi
 
-Quando l'utente fa clic con il pulsante destro del mouse su un oggetto, nel menu di scelta rapida vengono visualizzati i verbi predefiniti. Potrebbe essere necessario aggiungere e supportare i comandi in alcuni menu di scelta rapida che non vengono visualizzati in ogni menu di scelta rapida. Ad esempio, è possibile avere comandi che non sono comunemente usati o destinati a utenti esperti. Per questo motivo, è anche possibile definire uno o più verbi estesi. Questi verbi sono simili ai verbi normali, ma si distinguono dai verbi normali in base alla modalità di registrazione. Per avere accesso ai verbi estesi, è necessario fare clic con il pulsante destro del mouse su un oggetto mentre si preme il tasto MAIUSC. Quando l'utente esegue questa operazione, vengono visualizzati i verbi estesi oltre ai verbi predefiniti.
+Quando l'utente fa clic con il pulsante destro del mouse su un oggetto, nel menu di scelta rapida vengono visualizzati i verbi predefiniti. È possibile aggiungere e supportare comandi in alcuni menu di scelta rapida che non vengono visualizzati in ogni menu di scelta rapida. Ad esempio, è possibile avere comandi non comunemente usati o destinati a utenti esperti. Per questo motivo, è anche possibile definire uno o più verbi estesi. Questi verbi sono simili ai verbi normali, ma si distinguono dai verbi normali per il modo in cui vengono registrati. Per accedere ai verbi estesi, l'utente deve fare clic con il pulsante destro del mouse su un oggetto premendo MAIUSC. Quando l'utente esegue questa operazione, oltre ai verbi predefiniti vengono visualizzati anche i verbi estesi.
 
-È possibile utilizzare il registro di sistema per definire uno o più verbi estesi. I comandi associati verranno visualizzati solo quando l'utente fa clic con il pulsante destro del mouse su un oggetto e preme anche il tasto MAIUSC. Per definire un verbo come esteso, aggiungere un valore "Extended" **reg \_ SZ** alla sottochiave del verbo. Al valore non devono essere associati dati.
+È possibile usare il Registro di sistema per definire uno o più verbi estesi. I comandi associati verranno visualizzati solo quando l'utente fa clic con il pulsante destro del mouse su un oggetto premendo anche MAIUSC. Per definire un verbo come esteso, aggiungere un valore **\_ REG SZ** "extended" alla sottochiave del verbo. Al valore non deve essere associato alcun dato.
 
-## <a name="customizing-a-shortcut-menu-using-static-verbs"></a>Personalizzazione di un menu di scelta rapida con verbi statici
+## <a name="customizing-a-shortcut-menu-using-static-verbs"></a>Personalizzazione di un menu di scelta rapida tramite verbi statici
 
-Dopo aver [scelto un verbo statico o dinamico per il menu di scelta rapida](shortcut-choose-method.md) , è possibile estendere il menu di scelta rapida per un tipo di file registrando un verbo statico per il tipo di file. A tale scopo, aggiungere una sottochiave della **Shell** sotto la sottochiave per il ProgID dell'applicazione associata al tipo di file. Facoltativamente, è possibile definire un verbo predefinito per il tipo di file rendendolo il valore predefinito della sottochiave della **Shell** .
+Dopo [aver scelto un verbo](shortcut-choose-method.md) statico o dinamico per il menu di scelta rapida, è possibile estendere il menu di scelta rapida per un tipo di file registrando un verbo statico per il tipo di file. A tale scopo, aggiungere una **sottochiave Shell** sotto la sottochiave progID dell'applicazione associata al tipo di file. Facoltativamente, è possibile definire un verbo predefinito per il tipo di file impostandolo come valore predefinito della **sottochiave Shell.**
 
-Il verbo predefinito viene visualizzato per primo nel menu di scelta rapida. Il suo scopo è fornire alla shell un verbo che può usare quando viene chiamata la funzione [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) , ma non viene specificato alcun verbo. La shell non seleziona necessariamente il verbo predefinito quando **ShellExecuteEx** viene usato in questo modo.
+Il verbo predefinito viene visualizzato per primo nel menu di scelta rapida. Il suo scopo è fornire alla shell un verbo che può usare quando viene chiamata la [**funzione ShellExecuteEx,**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) ma non viene specificato alcun verbo. Shell non seleziona necessariamente il verbo predefinito quando **ShellExecuteEx** viene usato in questo modo.
 
-La shell usa il primo verbo disponibile nell'ordine seguente:
+Shell usa il primo verbo disponibile nell'ordine seguente:
 
 1.  Verbo predefinito
-2.  Primo verbo nel registro di sistema, se è specificato l'ordine dei verbi
-3.  Verbo di **apertura**
-4.  Il verbo **Apri con**
+2.  Primo verbo nel Registro di sistema, se viene specificato l'ordine dei verbi
+3.  Verbo **Open**
+4.  Verbo **Open With**
 
-Se nessuno dei verbi elencati è disponibile, l'operazione ha esito negativo.
+Se nessuno dei verbi elencati è disponibile, l'operazione non riesce.
 
-Creare una sottochiave per ogni verbo che si vuole aggiungere nella sottochiave della shell. Ognuna di queste sottochiavi deve avere un valore **reg \_ SZ** impostato sulla stringa di visualizzazione del verbo (stringa localizzata). Per ogni sottochiave verbo, creare una sottochiave del comando con il valore predefinito impostato sulla riga di comando per attivare gli elementi. Per i verbi canonici, ad esempio **Open** e **Print**, è possibile omettere la stringa di visualizzazione perché il sistema visualizza automaticamente una stringa localizzata correttamente. Per i verbi non canonici, se si omette la stringa di visualizzazione, viene visualizzata la stringa del verbo.
+Creare una sottochiave per ogni verbo da aggiungere nella sottochiave Shell. Ognuna di queste sottochiavi deve avere un **valore REG \_ SZ** impostato sulla stringa di visualizzazione del verbo (stringa localizzata). Per ogni sottochiave verbo, creare una sottochiave di comando con il valore predefinito impostato sulla riga di comando per l'attivazione degli elementi. Per i verbi canonici, ad esempio **Open** e **Print**, è possibile omettere la stringa di visualizzazione perché il sistema visualizza automaticamente una stringa localizzata correttamente. Per i verbi non canonici, se si omette la stringa di visualizzazione, viene visualizzata la stringa del verbo.
 
-Nell'esempio di registro di sistema seguente si noti che:
+Nell'esempio del Registro di sistema seguente si noti che:
 
--   Poiché **doit** non è un verbo canonico, viene assegnato un nome visualizzato, che può essere selezionato premendo il tasto D.
--   Il verbo **printto** non viene visualizzato nel menu di scelta rapida. Tuttavia, l'inclusione nel registro di sistema consente all'utente di stampare i file trascinandoli su un'icona della stampante.
--   Viene visualizzata una sottochiave per ogni verbo. **%1** rappresenta il nome del file e **%2** il nome della stampante.
+-   Poiché **Doit** non è un verbo canonico, viene assegnato un nome visualizzato, che può essere selezionato premendo il tasto D.
+-   Il **verbo Printto** non viene visualizzato nel menu di scelta rapida. Tuttavia, la sua inclusione nel Registro di sistema consente all'utente di stampare i file rilasciandoli su un'icona della stampante.
+-   Viene visualizzata una sottochiave per ogni verbo. **%1 rappresenta** il nome del file e **%2 il** nome della stampante.
 
 ```
 HKEY_CLASSES_ROOT
@@ -118,23 +109,23 @@ HKEY_CLASSES_ROOT
                   (Default) = c:\MyDir\MyProgram.exe /p "%1" "%2"
 ```
 
-Nel diagramma seguente viene illustrata l'estensione del menu di scelta rapida in base alle voci del registro di sistema riportate sopra. Questo menu di scelta rapida presenta i verbi **Apri**, **Esegui** e **stampa** nel menu, con **Esegui** come verbo predefinito.
+Il diagramma seguente illustra l'estensione del menu di scelta rapida in base alle voci del Registro di sistema precedenti. Questo menu di scelta **rapida** include i **verbi** Apri , Do **It** e Stampa , con **Do It** come verbo predefinito.
 
-![screenshot del menu di scelta rapida per i verbi predefiniti](images/context-menu/context-doitdefaultverb.png)
+![Screenshot del menu di scelta rapida del verbo do it default](images/context-menu/context-doitdefaultverb.png)
 
-### <a name="activating-your-handler-using-the-idroptarget-interface"></a>Attivazione del gestore mediante l'interfaccia IDropTarget
+### <a name="activating-your-handler-using-the-idroptarget-interface"></a>Attivazione del gestore tramite l'interfaccia IDropTarget
 
-Dynamic Data Exchange (DDE) è deprecato. in alternativa, usare [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) . **IDropTarget** è più affidabile e offre un supporto migliore per l'attivazione perché usa l'attivazione com del gestore. Nel caso di selezione di più elementi, **IDropTarget** non è soggetto alle limitazioni delle dimensioni del buffer presenti sia in DDE che in [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa). Inoltre, gli elementi vengono passati all'applicazione come oggetto dati che può essere convertito in una matrice di elementi tramite la funzione [**SHCreateShellItemArrayFromDataObject**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromdataobject) . Questa operazione è più semplice e non perde le informazioni sullo spazio dei nomi come si verifica quando l'elemento viene convertito in un percorso per i protocolli della riga di comando o DDE.
+Dynamic Data Exchange (DDE) è deprecato. in [**alternativa, usare IDropTarget.**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) **IDropTarget è** più affidabile e ha un supporto di attivazione migliore perché usa l'attivazione COM del gestore. Nel caso di selezione di più elementi, **IDropTarget** non è soggetto alle restrizioni relative alle dimensioni del buffer presenti sia in DDE che in [**CreateProcess.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) Inoltre, gli elementi vengono passati all'applicazione come oggetto dati che può essere convertito in una matrice di elementi usando la [**funzione SHCreateShellItemArrayFromDataObject.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromdataobject) Questa operazione è più semplice e non perde le informazioni sullo spazio dei nomi come si verifica quando l'elemento viene convertito in un percorso per i protocolli della riga di comando o DDE.
 
-Per ulteriori informazioni sulle query [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) e Shell per gli attributi di associazione file, vedere [tipi percepiti e registrazione di applicazioni](fa-perceivedtypes.md).
+Per altre informazioni sulle query [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) e Shell per gli attributi di associazione di file, vedere [Tipi percepiti e Registrazione dell'applicazione.](fa-perceivedtypes.md)
 
 ### <a name="specifying-the-position-and-order-of-static-verbs"></a>Specifica della posizione e dell'ordine dei verbi statici
 
-In genere i verbi vengono ordinati in un menu di scelta rapida in base alla modalità di enumerazione. l'enumerazione è basata innanzitutto sull'ordine della matrice di associazioni, quindi sull'ordine degli elementi nella matrice di associazioni, come definito dall'ordinamento del registro di sistema.
+In genere i verbi vengono ordinati in un menu di scelta rapida in base alla modalità di enumerazione; L'enumerazione è basata prima sull'ordine della matrice di associazioni e quindi sull'ordine degli elementi nella matrice di associazione, come definito dall'ordinamento del Registro di sistema.
 
-È possibile ordinare i verbi specificando il valore predefinito della sottochiave della Shell per la voce di associazione. Questo valore predefinito può includere un singolo elemento, che verrà visualizzato nella posizione superiore del menu di scelta rapida o un elenco di elementi separati da spazi o virgole. Nel secondo caso, il primo elemento dell'elenco è l'elemento predefinito e gli altri verbi vengono visualizzati immediatamente sotto nell'ordine specificato.
+I verbi possono essere ordinati specificando il valore predefinito della sottochiave Shell per la voce di associazione. Questo valore predefinito può includere un singolo elemento, che verrà visualizzato nella posizione superiore del menu di scelta rapida, o un elenco di elementi separati da spazi o virgole. Nel secondo caso, il primo elemento dell'elenco è l'elemento predefinito e gli altri verbi vengono visualizzati immediatamente sotto di esso nell'ordine specificato.
 
-Ad esempio, la voce del registro di sistema seguente produce i verbi del menu di scelta rapida nell'ordine seguente:
+Ad esempio, la voce del Registro di sistema seguente produce verbi di menu di scelta rapida nell'ordine seguente:
 
 1.  Visualizza
 2.  Gadget
@@ -149,7 +140,7 @@ HKEY_CLASSES_ROOT
          Personalization
 ```
 
-Analogamente, la voce del registro di sistema seguente produce i verbi del menu di scelta rapida nell'ordine seguente:
+Analogamente, la voce del Registro di sistema seguente produce verbi di menu di scelta rapida nell'ordine seguente:
 
 1.  Personalization
 2.  Gadget
@@ -162,9 +153,9 @@ HKEY_CLASSES_ROOT
       Display
 ```
 
-### <a name="positioning-verbs-at-the-top-or-bottom-of-the-menu"></a>Posizionamento dei verbi nella parte superiore o inferiore del menu
+### <a name="positioning-verbs-at-the-top-or-bottom-of-the-menu"></a>Verbi di posizionamento nella parte superiore o inferiore del menu
 
-L'attributo del registro di sistema seguente può essere usato per inserire un verbo nella parte superiore o inferiore del menu. Se sono presenti più verbi che specificano questo attributo, l'ultimo a tale scopo ottiene la priorità:
+L'attributo del Registro di sistema seguente può essere usato per posizionare un verbo nella parte superiore o inferiore del menu. Se sono presenti più verbi che specificano questo attributo, l'ultimo a tale scopo ottiene la priorità:
 
 ``` syntax
 Position=Top | Bottom 
@@ -172,25 +163,25 @@ Position=Top | Bottom
 
 ### <a name="creating-static-cascading-menus"></a>Creazione di menu a cascata statici
 
-In Windows 7 e versioni successive, l'implementazione del menu a cascata è supportata tramite le impostazioni del registro di sistema. Prima di Windows 7, la creazione dei menu a cascata era possibile solo tramite l'implementazione dell'interfaccia [**IContextMenu**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) . In Windows 7 e versioni successive, è consigliabile ricorrere alle soluzioni COM basate su codice solo quando i metodi statici sono insufficienti.
+In Windows 7 e versioni successive l'implementazione dei menu a catena è supportata tramite le impostazioni del Registro di sistema. Prima di Windows 7, la creazione di menu a catena era possibile solo tramite l'implementazione [**dell'interfaccia IContextMenu.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) In Windows 7 e versioni successive è consigliabile ricorrere a soluzioni basate su codice COM solo quando i metodi statici non sono sufficienti.
 
-Lo screenshot seguente fornisce un esempio di menu a cascata.
+La schermata seguente fornisce un esempio di menu a cascata.
 
-![screenshot che mostra un esempio di menu a cascata](images/file-assoc/filecascademenu2ndex.png)
+![Screenshot che mostra un esempio di menu a cascata](images/file-assoc/filecascademenu2ndex.png)
 
-In Windows 7 e versioni successive sono disponibili tre modi per creare i menu a cascata:
+In Windows 7 e versioni successive sono disponibili tre modi per creare menu a catena:
 
--   [Creazione di menu a cascata con la voce del registro di sistema subcommands](#creating-cascading-menus-with-the-subcommands-registry-entry)
--   [Creazione di menu a cascata con la voce del registro di sistema ExtendedSubCommandsKey](#creating-cascading-menus-with-the-extendedsubcommandskey-registry-entry)
+-   [Creazione di menu a catena con la voce del Registro di sistema SubCommands](#creating-cascading-menus-with-the-subcommands-registry-entry)
+-   [Creazione di menu a catena con la voce del Registro di sistema ExtendedSubCommandsKey](#creating-cascading-menus-with-the-extendedsubcommandskey-registry-entry)
 -   [Creazione di menu a cascata con l'interfaccia IExplorerCommand](#creating-cascading-menus-with-the-iexplorercommand-interface)
 
-### <a name="creating-cascading-menus-with-the-subcommands-registry-entry"></a>Creazione di menu a cascata con la voce del registro di sistema subcommands
+### <a name="creating-cascading-menus-with-the-subcommands-registry-entry"></a>Creazione di menu a catena con la voce del Registro di sistema SubCommands
 
-In Windows 7 e versioni successive, è possibile usare la voce sottocomandi per creare menu a cascata usando la procedura seguente.
+In Windows 7 e versioni successive è possibile usare la voce Sottocomandi per creare menu a catena usando la procedura seguente.
 
-**Per creare un menu a cascata utilizzando la voce sottocomandi**
+**Per creare un menu a cascata usando la voce SubCommands**
 
-1.  Creare una sottochiave in **HKEY \_ classi \_ radice** \\ *ProgID* \\ **Shell** per rappresentare il menu a cascata. In questo esempio viene assegnata questa sottochiave al nome *CascadeTest*. Verificare che il valore predefinito della sottochiave *CascadeTest* sia vuoto e visualizzato come **(valore non impostato)**.
+1.  Creare una sottochiave nella shell **HKEY \_ CLASSES \_ ROOT** \\ *ProgID* \\  per rappresentare il menu a cascata. In questo esempio a questa sottochiave viene dato il nome *CascadeTest*. Verificare che il valore predefinito della *sottochiave CascadeTest* sia vuoto e visualizzato come **(valore non impostato).**
 
     ```
     HKEY_CLASSES_ROOT
@@ -200,7 +191,7 @@ In Windows 7 e versioni successive, è possibile usare la voce sottocomandi per 
                 (Default)
     ```
 
-2.  Nella sottochiave *CascadeTest* aggiungere una voce MUIVerb di tipo **reg \_ SZ** e assegnarle il testo che verrà visualizzato come nome nel menu di scelta rapida. In questo esempio viene assegnato il "menu test Cascade".
+2.  Alla *sottochiave CascadeTest* aggiungere una voce MUIVerb di tipo **REG \_ SZ** e assegnarle il testo che verrà visualizzato come nome nel menu di scelta rapida. In questo esempio viene assegnato "Test Cascade Menu".
 
     ```
     HKEY_CLASSES_ROOT
@@ -211,7 +202,7 @@ In Windows 7 e versioni successive, è possibile usare la voce sottocomandi per 
                 MUIVerb = Test Cascade Menu
     ```
 
-3.  Nella sottochiave *CascadeTest* aggiungere una voce di sottocomandi di tipo **reg \_ SZ** a cui viene assegnato un elenco, demlimited da punti e virgola, dei verbi che devono essere visualizzati nel menu in ordine di aspetto. Ad esempio, di seguito viene assegnato un numero di verbi forniti dal sistema:
+3.  Alla *sottochiave CascadeTest* aggiungere una voce SubCommands di tipo **REG \_ SZ** a cui è assegnato l'elenco, delimitato da punto e virgola, dei verbi che devono essere visualizzati nel menu, nell'ordine di aspetto. Ad esempio, qui viene assegnato un numero di verbi forniti dal sistema:
 
     ```
     HKEY_CLASSES_ROOT
@@ -222,7 +213,7 @@ In Windows 7 e versioni successive, è possibile usare la voce sottocomandi per 
                 Windows.delete;Windows.properties;Windows.rename;Windows.cut;Windows.copy;Windows.paste
     ```
 
-4.  Nel caso di verbi personalizzati, implementarli usando uno dei metodi di implementazione del verbo statico ed elencarli sotto la sottochiave **CommandStore** , come illustrato in questo esempio per un verbo fittizio *verbname*:
+4.  Nel caso di verbi personalizzati, implementarli usando uno dei metodi di implementazione dei verbi statici ed elencarli nella sottochiave **CommandStore,** come illustrato in questo esempio per un verbo fittizio *VerbName:*
 
     ```
     HKEY_LOCAL_MACHINE
@@ -239,23 +230,23 @@ In Windows 7 e versioni successive, è possibile usare la voce sottocomandi per 
     ```
 
 > [!Note]  
-> Questo metodo ha il vantaggio di poter registrare i verbi personalizzati una volta e riutilizzarli elencando il nome del verbo nella voce dei sottocomandi. Tuttavia, richiede che l'applicazione disponga delle autorizzazioni necessarie per modificare il registro di sistema nel **\_ \_ computer locale HKEY**.
+> Questo metodo presenta il vantaggio che i verbi personalizzati possono essere registrati una sola volta e riutilizzati elencando il nome del verbo sotto la voce SubCommands. Tuttavia, è necessario che l'applicazione abbia l'autorizzazione per modificare il Registro di sistema in **HKEY \_ LOCAL \_ MACHINE.**
 
  
 
-### <a name="creating-cascading-menus-with-the-extendedsubcommandskey-registry-entry"></a>Creazione di menu a cascata con la voce del registro di sistema ExtendedSubCommandsKey
+### <a name="creating-cascading-menus-with-the-extendedsubcommandskey-registry-entry"></a>Creazione di menu a cascata con la voce del Registro di sistema ExtendedSubCommandsKey
 
-In Windows 7 e versioni successive, è possibile usare la voce ExtendedSubCommandKey per creare menu a cascata estesi: menu a cascata nei menu a cascata.
+In Windows 7 e versioni successive è possibile usare la voce ExtendedSubCommandKey per creare menu a cascata estesi: menu a cascata all'interno dei menu a cascata.
 
 Lo screenshot seguente è un esempio di menu a cascata esteso.
 
-![screenshot che mostra il menu a cascata esteso per i dispositivi](images/file-assoc/extendedsubcommandskey.png)
+![Screenshot che mostra il menu a cascata esteso per i dispositivi](images/file-assoc/extendedsubcommandskey.png)
 
-Poiché **la \_ \_ radice delle classi HKEY** è una combinazione di **HKEY \_ Current \_ User** e **HKEY \_ Local \_ computer**, è possibile registrare i verbi personalizzati nella sottochiave classi software **\_ \_ utente corrente HKEY** \\  \\  . Il vantaggio principale di questa operazione è che non è necessaria l'autorizzazione con privilegi elevati. Inoltre, altre associazioni di file possono riutilizzare l'intero set di verbi specificando la stessa sottochiave ExtendedSubCommandsKey. Se non è necessario riutilizzare questo set di verbi, è possibile elencare i verbi sotto l'elemento padre, ma assicurarsi che il valore predefinito dell'elemento padre sia vuoto.
+Poiché **HKEY \_ CLASSES \_ ROOT** è una combinazione di **HKEY CURRENT \_ \_ USER** e **HKEY LOCAL \_ \_ MACHINE,** è possibile registrare qualsiasi verbo personalizzato nella sottochiave **HKEY CURRENT \_ \_ USER** \\ **Software** \\ **Classes.** Il vantaggio principale di questa operazione è che non è necessaria l'autorizzazione con privilegi elevati. Inoltre, altre associazioni di file possono riutilizzare l'intero set di verbi specificando la stessa sottochiave ExtendedSubCommandsKey. Se non è necessario riutilizzare questo set di verbi, è possibile elencare i verbi nell'elemento padre, ma assicurarsi che il valore Predefinito dell'elemento padre sia vuoto.
 
-**Per creare un menu a cascata utilizzando una voce ExtendedSubCommandsKey**
+**Per creare un menu a cascata usando una voce ExtendedSubCommandsKey**
 
-1.  Creare una sottochiave in **HKEY \_ classi \_ radice** \\ *ProgID* \\ **Shell** per rappresentare il menu a cascata. In questo esempio viene assegnata questa sottochiave al nome *CascadeTest2*. Verificare che il valore predefinito della sottochiave *CascadeTest* sia vuoto e visualizzato come **(valore non impostato)**.
+1.  Creare una sottochiave in **HKEY \_ CLASSES \_ ROOT** \\ *ProgID* \\ **shell** per rappresentare il menu a cascata. In questo esempio si assegna a questa sottochiave il nome *CascadeTest2*. Assicurarsi che il valore predefinito della *sottochiave CascadeTest* sia vuoto e visualizzato come **(valore non impostato).**
 
     ```
     HKEY_CLASSES_ROOT
@@ -265,7 +256,7 @@ Poiché **la \_ \_ radice delle classi HKEY** è una combinazione di **HKEY \_ C
                 (Default)
     ```
 
-2.  Nella sottochiave *CascadeTest* aggiungere una voce MUIVerb di tipo **reg \_ SZ** e assegnarle il testo che verrà visualizzato come nome nel menu di scelta rapida. In questo esempio viene assegnato il "menu test Cascade".
+2.  Alla *sottochiave CascadeTest* aggiungere una voce MUIVerb di tipo **REG \_ SZ** e assegnarle il testo che verrà visualizzato come nome nel menu di scelta rapida. In questo esempio viene assegnato "Test Cascade Menu".
 
     ```
     HKEY_CLASSES_ROOT
@@ -276,7 +267,7 @@ Poiché **la \_ \_ radice delle classi HKEY** è una combinazione di **HKEY \_ C
                 MUIVerb = Test Cascade Menu 2
     ```
 
-3.  Nella sottochiave *CascadeTest* creata aggiungere una sottochiave **ExtendedSubCommandsKey** e quindi aggiungere il documento sottocomandi (di tipo **reg \_ SZ** ), ad esempio:
+3.  Nella *sottochiave CascadeTest* creata aggiungere una sottochiave **ExtendedSubCommandsKey** e quindi aggiungere i sottocomandi del documento (di tipo **REG \_ SZ);** ad esempio:
 
     ```
     HKEY_CLASSES_ROOT
@@ -290,9 +281,9 @@ Poiché **la \_ \_ radice delle classi HKEY** è una combinazione di **HKEY \_ C
                    Select all
     ```
 
-    Verificare che il valore predefinito della sottochiave del *menu 2 di test Cascade* sia vuoto e visualizzato come **(valore non impostato)**.
+    Assicurarsi che il valore predefinito della *sottochiave Test Cascade Menu 2* sia vuoto e visualizzato come **(valore non impostato).**
 
-4.  Popolare i sottoverbi utilizzando una delle seguenti implementazioni di verbi statici. Si noti che la sottochiave CommandFlags rappresenta i valori EXPCMDFLAGS. Se si desidera aggiungere un separatore prima o dopo la voce di menu a cascata, utilizzare ECF \_ SEPARATORBEFORE (0x20) o ECF \_ SEPARATORAFTER (0x40). Per una descrizione di questi flag di Windows 7 e versioni successive, vedere [**IExplorerCommand:: GetFlags**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorercommand-getflags). ECF \_ SEPARATORBEFORE funziona solo per le voci di menu di primo livello. MUIVerb è di tipo **reg \_ SZ** e CommandFlags è di tipo **reg \_ DWORD**.
+4.  Popolare i sottoverbi usando una delle implementazioni di verbi statici seguenti. Si noti che la sottochiave CommandFlags rappresenta i valori EXPCMDFLAGS. Se si vuole aggiungere un separatore prima o dopo la voce di menu a catena, usare ECF \_ SEPARATORBEFORE (0x20) o ECF \_ SEPARATORAFTER (0x40). Per una descrizione di questi flag di Windows 7 e versioni successive, vedere [**IExplorerCommand::GetFlags**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorercommand-getflags). ECF \_ SEPARATORBEFORE funziona solo per le voci di menu di primo livello. MUIVerb è di tipo **REG \_ SZ** e CommandFlags è di tipo **REG \_ DWORD**.
 
     ```
     HKEY_CLASSES_ROOT
@@ -313,44 +304,44 @@ Poiché **la \_ \_ radice delle classi HKEY** è una combinazione di **HKEY \_ C
                             (Default) = "C:\Program Files\Windows NT\Accessories\wordpad.exe" %1
     ```
 
-Lo screenshot seguente illustra i precedenti esempi di voci della chiave del registro di sistema.
+Lo screenshot seguente è un'illustrazione degli esempi precedenti di voci del Registro di sistema.
 
-![screenshot che mostra un esempio di menu a cascata che mostra le scelte del blocco note e di WordPad](images/file-assoc/testcascademenu2.png)
+![Screenshot che mostra un esempio di menu a cascata che mostra le opzioni del Blocco note e del wordpad](images/file-assoc/testcascademenu2.png)
 
 ### <a name="creating-cascading-menus-with-the-iexplorercommand-interface"></a>Creazione di menu a cascata con l'interfaccia IExplorerCommand
 
-Un'altra opzione per l'aggiunta di verbi a un menu a cascata consiste nell'usare [**IExplorerCommand:: EnumSubCommands**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorercommand-enumsubcommands). Questo metodo consente alle origini dati che forniscono i comandi del modulo di comando tramite [**IExplorerCommandProvider**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorercommandprovider) di utilizzare tali comandi come verbi in un menu di scelta rapida. In Windows 7 e versioni successive, è possibile fornire la stessa implementazione del verbo usando [**IExplorerCommand**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorercommand) , come è possibile con [**IContextMenu**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu).
+Un'altra opzione per aggiungere verbi a un menu a cascata è [**tramite IExplorerCommand::EnumSubCommands**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iexplorercommand-enumsubcommands). Questo metodo consente alle origini dati che forniscono i comandi del modulo comandi tramite [**IExplorerCommandProvider**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorercommandprovider) di usare tali comandi come verbi in un menu di scelta rapida. In Windows 7 e versioni successive è possibile fornire la stessa implementazione del verbo [**usando IExplorerCommand**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorercommand) come con [**IContextMenu.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu)
 
-Le due schermate seguenti illustrano l'uso dei menu a cascata nella cartella **Devices** .
+Le due schermate seguenti illustrano l'uso dei menu a cascata nella **cartella** Dispositivi.
 
-![Screenshot che mostra un esempio di menu a cascata nella cartella Devices (dispositivi).](images/file-assoc/filecascademenu.png)
+![Screenshot che mostra un esempio di menu a cascata nella cartella devices.](images/file-assoc/filecascademenu.png)
 
-Lo screenshot seguente illustra un'altra implementazione di un menu a cascata nella cartella **Devices** .
+Lo screenshot seguente illustra un'altra implementazione di un menu a cascata nella **cartella** Dispositivi.
 
-![screenshot che mostra un esempio di menu a cascata nella cartella Devices](images/file-assoc/cascadedevices2.png)
+![Screenshot che mostra un esempio di menu a cascata nella cartella devices](images/file-assoc/cascadedevices2.png)
 
 > [!Note]  
-> Poiché [**IExplorerCommand**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorercommand) supporta solo l'attivazione in-process, è consigliabile usare le origini dati della shell che devono condividere l'implementazione tra i comandi e i menu di scelta rapida.
+> Poiché [**IExplorerCommand**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorercommand) supporta solo l'attivazione in-process, è consigliabile usarlo dalle origini dati della shell che devono condividere l'implementazione tra comandi e menu di scelta rapida.
 
  
 
-### <a name="getting-dynamic-behavior-for-static-verbs-by-using-advanced-query-syntax"></a>Ottenere il comportamento dinamico per i verbi statici usando la sintassi di query avanzata
+### <a name="getting-dynamic-behavior-for-static-verbs-by-using-advanced-query-syntax"></a>Recupero del comportamento dinamico per i verbi statici tramite la sintassi di query avanzata
 
-La sintassi di query avanzata (AQS) può esprimere una condizione che verrà valutata utilizzando le proprietà dell'elemento per cui viene creata un'istanza del verbo. Questo sistema funziona solo con proprietà veloci. Si tratta di proprietà che l'origine dati della shell segnala come Fast senza restituire [* * * * SHCOLSTATE \_ Slow * *](/windows/win32/api/shtypes/ne-shtypes-shcolstate) * * da [**IShellFolder2:: GetDefaultColumnState**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder2-getdefaultcolumnstate).
+Advanced Query Syntax (AQS) può esprimere una condizione che verrà valutata usando le proprietà dell'elemento per cui viene creata un'istanza del verbo. Questo sistema funziona solo con proprietà veloci. Si tratta di proprietà segnalate dall'origine dati Shell con la velocità più rapida, perché non restituiscono [****SHCOLSTATE \_ SLOW***](/windows/win32/api/shtypes/ne-shtypes-shcolstate) da [**IShellFolder2::GetDefaultColumnState**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder2-getdefaultcolumnstate).
 
-Windows 7 e versioni successive supportano valori canonici che evitano problemi nelle compilazioni localizzate. La sintassi canonica seguente è obbligatoria per le compilazioni localizzate per sfruttare i vantaggi di questa funzionalità avanzata di Windows 7.
+Windows 7 e versioni successive supportano valori canonici che evitano problemi nelle build localizzate. La sintassi canonica seguente è necessaria nelle build localizzate per sfruttare i vantaggi di questo miglioramento di Windows 7.
 
 ``` syntax
 System.StructuredQueryType.Boolean#True
 ```
 
-Nell'esempio seguente voce del registro di sistema:
+Nella voce del Registro di sistema di esempio seguente:
 
--   Il valore **appliesTo** controlla se il verbo è visualizzato o nascosto.
--   Il valore DefaultAppliesTo controlla il verbo predefinito.
--   Il valore HasLUAShield controlla se viene visualizzato uno scudo controllo dell'account utente (UAC).
+-   Il **valore AppliesTo** controlla se il verbo viene visualizzato o nascosto.
+-   Il valore DefaultAppliesTo controlla quale verbo è il valore predefinito.
+-   Il valore HasLUAShield controlla se viene visualizzata una schermatura di Controllo dell'account utente.
 
-In questo esempio il valore **DefaultAppliesTo** rende questo verbo l'impostazione predefinita per qualsiasi file con la parola "exampleText1" nel nome file. Il valore **appliesTo** Abilita il verbo per tutti i file con "exampleText1" nel nome. Il valore **HasLUAShield** Visualizza lo scudo per i file con "exampleText2" nel nome.
+In questo esempio il **valore DefaultAppliesTo** rende questo verbo l'impostazione predefinita per qualsiasi file con la parola "exampleText1" nel nome file. Il **valore AppliesTo** abilita il verbo per qualsiasi file con "exampleText1" nel nome. Il **valore HasLUAShield** visualizza lo schermo per i file con "exampleText2" nel nome.
 
 ```
 HKEY_CLASSES_ROOT
@@ -362,7 +353,7 @@ HKEY_CLASSES_ROOT
             AppliesTo = System.ItemName:"exampleText1"
 ```
 
-Aggiungere la sottochiave del **comando** e un valore:
+Aggiungere la **sottochiave Command** e un valore:
 
 ```
 HKEY_CLASSES_ROOT
@@ -373,53 +364,53 @@ HKEY_CLASSES_ROOT
                (Default) = %SystemRoot%\system32\notepad.exe %1
 ```
 
-Nel registro di sistema di Windows 7, vedere **HKEY \_ classi \_ radice** \\ **unità** come esempio di verbi BitLocker che usano l'approccio seguente:
+Nel Registro di sistema di Windows 7, vedere HKEY CLASSES ROOT drive (Unità **HKEY \_ CLASSES \_ ROOT)** come esempio di \\  verbi bitlocker che adottano l'approccio seguente:
 
--   AppliesTo = System. volume. BitlockerProtection: = 2
--   System. volume. BitlockerRequiresAdmin: = System. StructuredQueryType. Boolean \# true
+-   AppliesTo = System.Volume.BitlockerProtection:=2
+-   System.Volume.BitlockerRequiresAdmin:=System.StructuredQueryType.Boolean \# True
 
-Per ulteriori informazioni su AQS, vedere [sintassi di query avanzata](../search/-search-3x-advancedquerysyntax.md).
+Per altre informazioni su AQS, vedere [Sintassi di query avanzate](../search/-search-3x-advancedquerysyntax.md).
 
-### <a name="deprecated-associating-verbs-with-dynamic-data-exchange-commands"></a>Deprecato: associazione di verbi a Dynamic Data Exchange comandi
+### <a name="deprecated-associating-verbs-with-dynamic-data-exchange-commands"></a>Deprecato: Associazione di verbi a Dynamic Data Exchange comandi
 
-Il DDE è deprecato; in alternativa, usare [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) . Il DDE è deprecato perché si basa su un messaggio della finestra di trasmissione per individuare il server DDE. Un blocco del server DDE blocca il messaggio della finestra di trasmissione e quindi blocca le conversazioni DDE per le altre applicazioni. Una singola applicazione bloccata può causare blocchi successivi nell'esperienza dell'utente.
+DDE è deprecato. usare [**invece IDropTarget.**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) DDE è deprecato perché si basa su un messaggio di finestra di trasmissione per individuare il server DDE. Un server DDE blocca il messaggio della finestra di trasmissione e quindi blocca le conversazioni DDE per altre applicazioni. È comune che una singola applicazione bloccata causa blocchi successivi in tutta l'esperienza dell'utente.
 
-Il metodo [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) è più affidabile e offre un supporto migliore per l'attivazione perché utilizza l'attivazione com del gestore. Nel caso di selezione di più elementi, **IDropTarget** non è soggetto alle limitazioni delle dimensioni del buffer presenti sia in DDE che in [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa). Inoltre, gli elementi vengono passati all'applicazione come oggetto dati che può essere convertito in una matrice di elementi tramite la funzione [**SHCreateShellItemArrayFromDataObject**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromdataobject) . Questa operazione è più semplice e non perde le informazioni sullo spazio dei nomi come si verifica quando l'elemento viene convertito in un percorso per i protocolli della riga di comando o DDE.
+Il [**metodo IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) è più affidabile e ha un supporto di attivazione migliore perché usa l'attivazione COM del gestore. Nel caso di selezione di più elementi, **IDropTarget** non è soggetto alle restrizioni relative alle dimensioni del buffer presenti sia in DDE che in [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa). Inoltre, gli elementi vengono passati all'applicazione come oggetto dati che può essere convertito in una matrice di elementi usando la [**funzione SHCreateShellItemArrayFromDataObject.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromdataobject) Questa operazione è più semplice e non perde le informazioni sullo spazio dei nomi come avviene quando l'elemento viene convertito in un percorso per i protocolli della riga di comando o DDE.
 
-Per ulteriori informazioni sulle query [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) e Shell per gli attributi di associazione file, vedere [tipi percepiti e registrazione di applicazioni](fa-perceivedtypes.md).
+Per altre informazioni sulle [**query IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) e Shell per gli attributi di associazione file, vedere [Tipi percepiti e Registrazione dell'applicazione](fa-perceivedtypes.md).
 
-## <a name="completing-verb-implementation-tasks"></a>Completamento delle attività di implementazione del verbo
+## <a name="completing-verb-implementation-tasks"></a>Completamento delle attività di implementazione dei verbi
 
-Le attività seguenti per l'implementazione dei verbi sono rilevanti per le implementazioni di verbi statici e dinamici. Per altre informazioni sui verbi dinamici, vedere [personalizzazione di un menu di scelta rapida con verbi dinamici](shortcut-menu-using-dynamic-verbs.md).
+Le attività seguenti per l'implementazione dei verbi sono rilevanti per le implementazioni di verbi statici e dinamici. Per altre informazioni sui verbi dinamici, vedere [Personalizzazione di un menu di scelta rapida tramite verbi dinamici.](shortcut-menu-using-dynamic-verbs.md)
 
-### <a name="customizing-the-shortcut-menu-for-predefined-shell-objects"></a>Personalizzazione del menu di scelta rapida per oggetti shell predefiniti
+### <a name="customizing-the-shortcut-menu-for-predefined-shell-objects"></a>Personalizzazione del menu di scelta rapida per gli oggetti predefiniti della shell
 
-Molti oggetti shell predefiniti dispongono di menu di scelta rapida che possono essere personalizzati. Registrare il comando nello stesso modo in cui si registrano i tipi di file tipici, ma usare il nome dell'oggetto predefinito come nome del tipo di file.
+Molti oggetti shell predefiniti hanno menu di scelta rapida che possono essere personalizzati. Registrare il comando nello stesso modo in cui si registrano i tipi di file tipici, ma usare il nome dell'oggetto predefinito come nome del tipo di file.
 
-Un elenco di oggetti predefiniti si trova nella sezione *oggetti shell predefiniti* della creazione di [gestori di estensioni della shell](handlers.md). Gli oggetti shell predefiniti i cui menu di scelta rapida possono essere personalizzati aggiungendo verbi nel registro di sistema vengono contrassegnati nella tabella con il verbo di parola.
+Un elenco di oggetti predefiniti è disponibile nella *sezione Oggetti shell predefiniti* di Creazione di gestori di estensioni della [shell.](handlers.md) Gli oggetti shell predefiniti i cui menu di scelta rapida possono essere personalizzati aggiungendo verbi nel Registro di sistema vengono contrassegnati nella tabella con la parola Verbo.
 
 ### <a name="extending-a-new-submenu"></a>Estensione di un nuovo sottomenu
 
-Quando un utente apre il menu **file** in Esplora risorse, uno dei comandi visualizzati è **nuovo**. Se si seleziona questo comando, verrà visualizzato un sottomenu. Per impostazione predefinita, il sottomenu contiene due comandi, **cartella** e **collegamento**, che consentono agli utenti di creare sottocartelle e collegamenti. Questo sottomenu può essere esteso in modo da includere i comandi per la creazione di file per qualsiasi tipo di file.
+Quando un utente apre il menu **File** Esplora risorse, uno dei comandi visualizzati è **Nuovo**. Selezionando questo comando viene visualizzato un sottomenu. Per impostazione predefinita, il sottomenu contiene due comandi, **Cartella** e **Collegamento**, che consentono agli utenti di creare sottocartelle e collegamenti. Questo sottomenu può essere esteso per includere i comandi di creazione di file per qualsiasi tipo di file.
 
-Per aggiungere un comando per la creazione di file al **nuovo** sottomenu, i file dell'applicazione devono avere un tipo di file associato. Includere una sottochiave **ShellNew** sotto il nome del file. Quando si seleziona il comando **nuovo** del menu **file** , la shell aggiunge il tipo di file al **nuovo** sottomenu. La stringa di visualizzazione del comando è la stringa descrittiva assegnata al ProgID del programma.
+Per aggiungere un comando di creazione file al sottomenu **Nuovo,** i file dell'applicazione devono avere un tipo di file associato. Includere una **sottochiave ShellNew** sotto il nome del file. Quando il comando Nuovo **del** menu **File** è selezionato, la shell aggiunge il tipo di file al **sottomenu** Nuovo. La stringa di visualizzazione del comando è la stringa descrittiva assegnata al ProgID del programma.
 
-Per specificare il metodo di creazione del file, assegnare uno o più valori di dati alla sottochiave **ShellNew** . I valori disponibili sono elencati nella tabella seguente.
+Per specificare il metodo di creazione del file, assegnare uno o più valori di dati alla **sottochiave ShellNew.** I valori disponibili sono elencati nella tabella seguente.
 
 
 
-| Valore sottochiave ShellNew | Descrizione                                                                                                                                                              |
+| ShellNuovo valore della sottochiave | Descrizione                                                                                                                                                              |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Comando               | Esegue un'applicazione. Questo valore **reg \_ SZ** specifica il percorso dell'applicazione da eseguire. Ad esempio, è possibile impostarlo per avviare una procedura guidata.                  |
-| Dati                  | Crea un file contenente i dati specificati. Questo **valore \_ binario REG** specifica i dati del file. Se è specificato **NullFile** o **filename** , **i dati** vengono ignorati. |
-| FileName              | Crea un file che è una copia di un file specificato. Questo valore **reg \_ SZ** specifica il percorso completo del file da copiare.                                   |
-| NullFile              | Crea un file vuoto. A **NullFile** non è stato assegnato alcun valore. Se viene specificato **NullFile** , i valori del registro di sistema **Data** e **filename** verranno ignorati.                    |
+| Comando               | Esegue un'applicazione. Questo **valore \_ REG SZ** specifica il percorso dell'applicazione da eseguire. Ad esempio, è possibile impostarlo per avviare una procedura guidata.                  |
+| Data                  | Crea un file contenente i dati specificati. Questo **valore \_ REG BINARY** specifica i dati del file. **I** dati vengono ignorati se **viene specificato NullFile** o **FileName.** |
+| FileName              | Crea un file che è una copia di un file specificato. Questo **valore \_ REG SZ** specifica il percorso completo del file da copiare.                                   |
+| NullFile              | Crea un file vuoto. **A NullFile** non è assegnato alcun valore. Se **viene specificato NullFile,** i **valori del Registro di** sistema Data e **FileName** vengono ignorati.                    |
 
 
 
  
 
-Il seguente esempio di chiave del registro di sistema e screenshot illustrano il **nuovo** sottomenu per il tipo di file. MYP-ms. Dispone di un comando, **applicazione programmi**.
+L'esempio di chiave del Registro di sistema e lo screenshot seguenti illustrano il sottomenu **Nuovo** per il tipo di file .myp-ms. Include un comando **MyProgram Application**.
 
 ```
 HKEY_CLASSES_ROOT
@@ -430,19 +421,19 @@ HKEY_CLASSES_ROOT
          NullFile
 ```
 
-Lo screenshot illustra il **nuovo** sottomenu. Quando un utente seleziona l' **applicazione di programma** dal **nuovo** sottomenu, la shell crea un file denominato **nuovo programma Application. MYP-ms** e lo passa a **MyProgram.exe**.
+Lo screenshot illustra il **sottomenu Nuovo.** Quando un utente seleziona **MyProgram Application** dal sottomenu **New** (Nuovo), Shell crea un file denominato **New MyProgram Application.myp-ms** e lo **passa aMyProgram.exe**.
 
-![Screenshot di Esplora risorse che mostra un nuovo comando "programma applicazione" nel sottomenu "nuovo"](images/context-menu/context-myprogramexe.png)
+![Screenshot di Esplora risorse che mostra un nuovo comando "myprogram application" nel sottomenu "nuovo"](images/context-menu/context-myprogramexe.png)
 
 ### <a name="creating-drag-and-drop-handlers"></a>Creazione di gestori di trascinamento della selezione
 
-La procedura di base per l'implementazione di un gestore di trascinamento della selezione è identica a quella dei gestori di menu di scelta rapida convenzionali. Tuttavia, i gestori dei menu di scelta rapida usano in genere solo il puntatore [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) passato al metodo [**IShellExtInit:: Initialize**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) del gestore per estrarre il nome dell'oggetto. Un gestore di trascinamento della selezione può implementare un gestore dati più sofisticato per modificare il comportamento dell'oggetto trascinato.
+La procedura di base per l'implementazione di un gestore di trascinamento della selezione è la stessa di per i gestori di menu di scelta rapida convenzionali. Tuttavia, i gestori del menu di scelta rapida usano in genere solo il puntatore [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) passato al metodo [**IShellExtInit::Initialize**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) del gestore per estrarre il nome dell'oggetto. Un gestore di trascinamento della selezione può implementare un gestore dati più sofisticato per modificare il comportamento dell'oggetto trascinato.
 
-Quando un utente fa clic con il pulsante destro del mouse su un oggetto Shell per trascinare un oggetto, viene visualizzato un menu di scelta rapida quando l'utente tenta di eliminare l'oggetto. Lo screenshot seguente illustra un tipico menu di scelta rapida con trascinamento della selezione.
+Quando un utente fa clic con il pulsante destro del mouse su un oggetto shell per trascinare un oggetto, viene visualizzato un menu di scelta rapida quando l'utente tenta di rilasciare l'oggetto. Lo screenshot seguente illustra un tipico menu di scelta rapida con trascinamento della selezione.
 
-![screenshot del menu di scelta rapida del trascinamento della selezione](images/context-menu/context-dragdrop.png)
+![Screenshot del menu di scelta rapida con trascinamento della selezione](images/context-menu/context-dragdrop.png)
 
-Un gestore di trascinamento della selezione è un gestore di menu di scelta rapida che consente di aggiungere elementi a questo menu di scelta rapida. I gestori di trascinamento della selezione vengono in genere registrati nella sottochiave seguente.
+Un gestore di trascinamento della selezione è un gestore del menu di scelta rapida che può aggiungere voci a questo menu di scelta rapida. I gestori di trascinamento della selezione vengono in genere registrati nella sottochiave seguente.
 
 ```
 HKEY_CLASSES_ROOT
@@ -451,7 +442,7 @@ HKEY_CLASSES_ROOT
          DragDropHandlers
 ```
 
-Aggiungere una sottochiave nella sottochiave **DragDropHandlers** denominata per il gestore di trascinamento della selezione e impostare il valore predefinito della sottochiave sul formato stringa del GUID dell'identificatore di classe del gestore (CLSID). Nell'esempio seguente viene abilitato il gestore di trascinamento della selezione **MyDD** .
+Aggiungere una sottochiave nella sottochiave **DragDropHandlers** denominata per il gestore di trascinamento della selezione e impostare il valore predefinito della sottochiave sul formato stringa del GUID dell'identificatore di classe (CLSID) del gestore. L'esempio seguente abilita il gestore di trascinamento della selezione **myDD.**
 
 ```
 HKEY_CLASSES_ROOT
@@ -464,18 +455,18 @@ HKEY_CLASSES_ROOT
 
 ### <a name="suppressing-verbs-and-controlling-visibility"></a>Eliminazione di verbi e controllo della visibilità
 
-È possibile utilizzare le impostazioni dei criteri di Windows per controllare la visibilità dei verbi. I verbi possono essere eliminati tramite le impostazioni dei criteri aggiungendo un valore **SuppressionPolicy** o un valore GUID **SuppressionPolicyEx** alla sottochiave del registro di sistema del verbo. Impostare il valore della sottochiave **SuppressionPolicy** sull'ID criterio. Se il criterio è attivato, il verbo e la voce del menu di scelta rapida associato vengono eliminati. Per i possibili valori ID dei criteri, vedere l'enumerazione [**restrictions**](/windows/desktop/api/shlobj_core/ne-shlobj_core-restrictions) .
+È possibile usare le impostazioni dei criteri di Windows per controllare la visibilità dei verbi. I verbi possono essere eliminati tramite le impostazioni dei criteri aggiungendo un valore **SuppressionPolicy** o un valore GUID **SuppressionPolicyEx** alla sottochiave del Registro di sistema del verbo. Impostare il valore della **sottochiave SuppressionPolicy** sull'ID criteri. Se il criterio è attivato, il verbo e la voce di menu di scelta rapida associata vengono soppressi. Per i possibili valori id dei criteri, vedere [**l'enumerazione RESTRICTIONS.**](/windows/desktop/api/shlobj_core/ne-shlobj_core-restrictions)
 
-### <a name="employing-the-verb-selection-model"></a>Uso del modello di selezione dei verbi
+### <a name="employing-the-verb-selection-model"></a>Utilizzo del modello di selezione dei verbi
 
-I valori del registro di sistema devono essere impostati per i verbi per gestire le situazioni in cui un utente può selezionare un singolo elemento, più elementi o una selezione da un elemento. Un verbo richiede valori di registro distinti per ognuna di queste tre situazioni supportate dal verbo. I valori possibili per il modello di selezione dei verbi sono i seguenti:
+I valori del Registro di sistema devono essere impostati per i verbi per gestire situazioni in cui un utente può selezionare un singolo elemento, più elementi o una selezione da un elemento. Un verbo richiede valori del Registro di sistema separati per ognuna di queste tre situazioni supportate dal verbo. I valori possibili per il modello di selezione dei verbi sono i seguenti:
 
--   Specificare il valore MultiSelectModel per tutti i verbi. Se il valore MultiSelectModel non è specificato, viene dedotto dal tipo di implementazione del verbo scelto. Per i metodi basati su COM, ad esempio DropTarget e ExecuteCommand, viene utilizzato il **lettore** e per gli altri metodi viene utilizzato il **documento** .
+-   Specificare il valore MultiSelectModel per tutti i verbi. Se il valore MultiSelectModel non viene specificato, viene dedotto dal tipo di implementazione del verbo scelto. Per i metodi basati su COM (ad esempio DropTarget ed ExecuteCommand) si presuppone **Player** e per gli altri metodi si presuppone **Document.**
 -   Specificare **Single** per i verbi che supportano una sola selezione.
--   Specificare il **lettore** per i verbi che supportano un numero qualsiasi di elementi.
--   Specificare il **documento** per i verbi che creano una finestra di primo livello per ogni elemento. Questa operazione limita il numero di elementi attivati e consente di evitare l'esaurimento delle risorse di sistema se l'utente apre troppe finestre.
+-   Specificare **Player** per i verbi che supportano un numero qualsiasi di elementi.
+-   Specificare **Document** per i verbi che creano una finestra di primo livello per ogni elemento. In questo modo si limita il numero di elementi attivati e si evita l'estrazione di risorse di sistema se l'utente apre troppe finestre.
 
-Quando il numero di elementi selezionati non corrisponde al modello di selezione dei verbi o è maggiore dei limiti predefiniti indicati nella tabella seguente, il verbo non viene visualizzato.
+Quando il numero di elementi selezionati non corrisponde al modello di selezione dei verbi o è maggiore dei limiti predefiniti descritti nella tabella seguente, il verbo non viene visualizzato.
 
 
 
@@ -488,7 +479,7 @@ Quando il numero di elementi selezionati non corrisponde al modello di selezione
 
  
 
-Di seguito sono riportate alcune voci del registro di sistema che usano il valore MultiSelectModel.
+Di seguito sono riportati esempi di voci del Registro di sistema che usano il valore MultiSelectModel.
 
 ```
 HKEY_CLASSES_ROOT
@@ -508,15 +499,15 @@ HKEY_CLASSES_ROOT
 
 ### <a name="using-item-attributes"></a>Uso degli attributi degli elementi
 
-È possibile testare i valori del flag [**SFGAO**](sfgao.md) degli attributi della Shell per un elemento per determinare se il verbo deve essere abilitato o disabilitato.
+I valori del flag [**SFGAO**](sfgao.md) degli attributi shell per un elemento possono essere testati per determinare se il verbo deve essere abilitato o disabilitato.
 
-Per usare questa funzionalità di attributo, aggiungere i seguenti valori **reg \_ DWORD** sotto il verbo:
+Per usare questa funzionalità dell'attributo, aggiungere i valori **\_ DWORD REG** seguenti sotto il verbo:
 
--   Il valore AttributeMask specifica il valore [**SFGAO**](sfgao.md) dei valori di bit della maschera con cui eseguire il test.
--   Il valore AttributeValue specifica il valore [**SFGAO**](sfgao.md) dei bit sottoposti a test.
--   ImpliedSelectionModel specifica zero per i verbi di elemento o un valore diverso da zero per i verbi nel menu di scelta rapida in background.
+-   Il valore AttributeMask specifica il [**valore SFGAO**](sfgao.md) dei valori di bit della maschera con cui eseguire il test.
+-   Il valore AttributeValue specifica il [**valore SFGAO**](sfgao.md) dei bit che vengono testati.
+-   ImpliedSelectionModel specifica zero per i verbi elemento o diverso da zero per i verbi nel menu di scelta rapida in background.
 
-Nell'esempio seguente di voce del registro di sistema, AttributeMask è impostato su [**SFGAO \_ ReadOnly**](sfgao.md) (0x40000).
+Nella voce del Registro di sistema di esempio seguente AttributeMask è impostato su [**SFGAO \_ READONLY**](sfgao.md) (0x40000).
 
 ```
 HKEY_CLASSES_ROOT
@@ -532,19 +523,19 @@ HKEY_CLASSES_ROOT
 
 ### <a name="implementing-custom-verbs-for-folders-through-desktopini"></a>Implementazione di verbi personalizzati per le cartelle tramite Desktop.ini
 
-In Windows 7 e versioni successive, è possibile aggiungere verbi a una cartella tramite Desktop.ini. Per ulteriori informazioni sui file di Desktop.ini, vedere [How to Customize Folders with Desktop.ini](how-to-customize-folders-with-desktop-ini.md).
+In Windows 7 e versioni successive è possibile aggiungere verbi a una cartella tramite Desktop.ini. Per altre informazioni sui Desktop.ini, vedere [Come personalizzare le cartelle con Desktop.ini](how-to-customize-folders-with-desktop-ini.md).
 
 > [!Note]  
-> I file di Desktop.ini devono essere sempre contrassegnati come nascosti dal **sistema**  +   , in modo che non vengano visualizzati dagli utenti.
+> Desktop.ini file devono essere sempre contrassegnati come **Nascosti** dal sistema in modo che  +   non siano visualizzati dagli utenti.
 
  
 
-**Per aggiungere verbi personalizzati per le cartelle tramite un file di Desktop.ini, seguire questa procedura:**
+**Per aggiungere verbi personalizzati per le cartelle tramite un file Desktop.ini, seguire questa procedura:**
 
-1.  Creare una cartella contrassegnata come di sola **lettura** o di **sistema**.
-2.  Creare un file di Desktop.ini che includa un \[ . ShellClassInfo \] DirectoryClass = cartella ProgID.
-3.  Nel registro di sistema creare **HKEY \_ classi \_ radice** \\ **ProgID** con un valore CanUseForDirectory. Il valore CanUseForDirectory evita l'utilizzo improprio dei ProgID impostati per non partecipare all'implementazione di verbi personalizzati per le cartelle tramite Desktop.ini.
-4.  Aggiungere i verbi nella sottochiave ProgID della **cartella**, ad esempio:
+1.  Creare una cartella contrassegnata come Di sola **lettura** o **Sistema.**
+2.  Creare un Desktop.ini file che include un oggetto \[ . ShellClassInfo \] DirectoryClass=Folder ProgID.
+3.  Nel Registro di sistema creare **HKEY \_ CLASSES \_ ROOT** Folder \\ **ProgID** con il valore CanUseForDirectory. Il valore CanUseForDirectory evita l'uso improprio dei ProgID impostati per non partecipare all'implementazione di verbi personalizzati per le cartelle tramite Desktop.ini.
+4.  Aggiungere verbi nella **sottochiave** ProgID della cartella, ad esempio:
 
     ```
     HKEY_CLASSES_ROOT
@@ -556,7 +547,7 @@ In Windows 7 e versioni successive, è possibile aggiungere verbi a una cartella
     ```
 
 > [!Note]  
-> Questi verbi possono essere il verbo predefinito, nel qual caso fare doppio clic sulla cartella per attivare il verbo.
+> Questi verbi possono essere il verbo predefinito, nel qual caso facendo doppio clic sulla cartella viene attivato il verbo.
 
  
 
@@ -564,7 +555,7 @@ In Windows 7 e versioni successive, è possibile aggiungere verbi a una cartella
 
 <dl> <dt>
 
-[Procedure consigliate per i gestori di menu di scelta rapida e più verbi di selezione](verbs-best-practices.md)
+[Procedure consigliate per i gestori del menu di scelta rapida e più verbi di selezione](verbs-best-practices.md)
 </dt> <dt>
 
 [Scelta di un verbo statico o dinamico per il menu di scelta rapida](shortcut-choose-method.md)
@@ -573,7 +564,7 @@ In Windows 7 e versioni successive, è possibile aggiungere verbi a una cartella
 [Personalizzazione di un menu di scelta rapida tramite verbi dinamici](shortcut-menu-using-dynamic-verbs.md)
 </dt> <dt>
 
-[Menu di scelta rapida (contesto) e gestori di menu di scelta rapida](context-menu.md)
+[Menu di scelta rapida e gestori del menu di scelta rapida](context-menu.md)
 </dt> <dt>
 
 [Verbi e associazioni di file](fa-verbs.md)
