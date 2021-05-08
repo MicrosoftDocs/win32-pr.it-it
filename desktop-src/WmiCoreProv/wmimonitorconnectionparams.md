@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 64212c523459696ced37e42689f6a4be0edb056b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a88b80773ec60b161df51fc759cc932d5c53c931
+ms.sourcegitcommit: cfcac5a083b72fd7f2a5188166d470cc0e95d02d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232409"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "109626693"
 ---
 # <a name="wmimonitorconnectionparams-class"></a>Classe WmiMonitorConnectionParams
 
@@ -42,20 +42,20 @@ class WmiMonitorConnectionParams
 
 ## <a name="members"></a>Members
 
-La classe **WmiMonitorConnectionParams** dispone di questi tipi di membri:
+La **classe WmiMonitorConnectionParams** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **WmiMonitorConnectionParams** dispone di queste proprietà.
+La **classe WmiMonitorConnectionParams** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -68,13 +68,13 @@ Indica il monitoraggio attivo.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
 Nome dell'istanza di monitoraggio specifica.
@@ -84,13 +84,13 @@ Nome dell'istanza di monitoraggio specifica.
 **VideoOutputTechnology**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di connessione della tecnologia di output video. I valori validi sono documentati nell'enumerazione [D3DKMDT \_ video \_ output \_ Technology](https://msdn.microsoft.com/library/ms794498.aspx) .
+Tipo di connessione della tecnologia di output video. I valori validi sono documentati [nell'enumerazione VIDEO \_ OUTPUT \_ \_ TECHNOLOGY D3DKMDT.](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_d3dkmdt_video_output_technology)
 
 </dd> </dl>
 
@@ -102,8 +102,8 @@ Tipo di connessione della tecnologia di output video. I valori validi sono docum
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 
