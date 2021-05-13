@@ -1,6 +1,6 @@
 ---
 description: Converte un nome di accesso nell'ID di sicurezza utente corrispondente in formato stringa.
-title: DiskQuotaControl. TranslateLogonNameToSID, metodo
+title: Metodo DiskQuotaControl.TranslateLogonNameToSID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3b6b0d03-e9ef-4575-bb67-f7b7b39d2a16
-ms.openlocfilehash: ec5e6c0bbd013c8fbd3f6616671ee006109566d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f0a2591b0f5df6bc0f50994fcbf101b7bfbb36d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057843"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841562"
 ---
-# <a name="diskquotacontroltranslatelogonnametosid-method"></a>DiskQuotaControl. TranslateLogonNameToSID, metodo
+# <a name="diskquotacontroltranslatelogonnametosid-method"></a>Metodo DiskQuotaControl.TranslateLogonNameToSID
 
 Converte un nome di accesso nell'ID di sicurezza utente corrispondente in formato stringa.
 
@@ -39,10 +39,10 @@ DiskQuotaControl.TranslateLogonNameToSID(
 
 <dl> <dt>
 
-*LoginName* 
+*logonname* 
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **String**
 
 Valore stringa che specifica il nome di accesso dell'utente.
 
@@ -56,9 +56,9 @@ Restituisce l'ID di sicurezza utente (SID) in formato stringa corrispondente al 
 
 ## <a name="remarks"></a>Commenti
 
-La stringa SID restituita può essere passata al metodo [**FindUser**](diskquotacontrol-finduser.md) al posto di un nome di accesso.
+La stringa SID restituita può essere passata al [**metodo FindUser**](diskquotacontrol-finduser.md) al posto di un nome di accesso.
 
-Quando una chiamata al metodo [**FindUser**](diskquotacontrol-finduser.md)( *LogonName*) ha esito negativo, la causa potrebbe essere una mancata corrispondenza tra il form (ad esempio, Security Account Manager \[ Sam \] compatible e nome dell'entità utente \[ UPN \] ) del nome di accesso fornito e il modulo archiviato nella cache dei nomi SID. In questi casi, il nome di accesso può essere convertito in un SID e la chiamata a **FindUser** viene ripetuta. **FindUser** riconosce una stringa SID e ignorerà la ricerca nella cache dei nomi SID. Questa tecnica è illustrata nel codice seguente di Microsoft Visual Basic Scripting Edition (VBScript).
+Quando una chiamata al metodo [**FindUser**](diskquotacontrol-finduser.md)( *logonname*) ha esito negativo, potrebbe essere dovuta a una mancata corrispondenza tra il modulo (ad esempio, compatibile con SECURITY Account Manager SAM e l'UPN nome dell'entità utente ) del nome di accesso specificato e il modulo archiviato nella \[ cache \] \[ \] siD-name. In questi casi, il nome di accesso può essere convertito in un SID e la chiamata a **FindUser ripetuta.** **FindUser** riconosce una stringa SID e ignora la ricerca nella cache dei nomi SID. Il codice Microsoft Visual Basic Scripting Edition (VBScript) seguente illustra questa tecnica.
 
 
 ```
@@ -76,7 +76,7 @@ End Function
 
 
 
-La conversione da nome a SID può essere un processo lento rispetto alle ricerche nella cache dei nomi SID. È pertanto consigliabile chiamare prima [**FindUser**](diskquotacontrol-finduser.md) con un nome di accesso. L'esempio precedente usa questa tecnica.
+La conversione da nome a SID può essere un processo lento rispetto alle ricerche nella cache dei nomi SID. Pertanto, è consigliabile chiamare [**prima FindUser**](diskquotacontrol-finduser.md) con un nome di accesso. L'esempio precedente usa questa tecnica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,9 +84,9 @@ La conversione da nome a SID può essere un processo lento rispetto alle ricerch
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

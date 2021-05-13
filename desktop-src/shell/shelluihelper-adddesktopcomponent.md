@@ -1,6 +1,6 @@
 ---
 description: Aggiunge un elemento a Microsoft Active Desktop.
-title: Metodo ShellUIHelper. AddDesktopComponent (Exdisp. h)
+title: Metodo ShellUIHelper.AddDesktopComponent (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41634a89-15b9-41c8-ba3f-4bf19b786f6f
-ms.openlocfilehash: d5234a0b43ea25c8ac931dc14ec90f7a6696ddfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2edaa79bd62dcee40e4f197700d2128cb0b2070d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980591"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842462"
 ---
-# <a name="shelluihelperadddesktopcomponent-method"></a>ShellUIHelper. AddDesktopComponent, metodo
+# <a name="shelluihelperadddesktopcomponent-method"></a>Metodo ShellUIHelper.AddDesktopComponent
 
 Aggiunge un elemento a Microsoft Active Desktop.
 
@@ -44,27 +44,27 @@ iRetVal = ShellUIHelper.AddDesktopComponent(
 
 <dl> <dt>
 
-*surl* \[ in\]
+*sURL* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **stringa** che specifica l'URL del nuovo elemento preferito.
+Valore **String** che specifica l'URL del nuovo elemento preferito.
 
 </dd> <dt>
 
-*sPrevista* \[ in\]
+*sType* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **stringa** che specifica il tipo di elemento da aggiungere. Può corrispondere a uno dei valori seguenti.
+Valore **String** che specifica il tipo di elemento aggiunto. Può essere uno dei valori seguenti.
 
 <dt>
 
 
 
- immagine
+ (immagine)
 
 
 </dt> <dd>
@@ -75,7 +75,7 @@ Il componente è un'immagine.
 
 
 
- sito Web
+ (sito Web)
 
 
 </dt> <dd>
@@ -84,19 +84,19 @@ Il componente è un sito Web.
 
 </dd> </dl> </dd> <dt>
 
-A *sinistra* \[ in, facoltativo\]
+*A sinistra* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
 Posizione del bordo sinistro del componente, in coordinate dello schermo.
 
 </dd> <dt>
 
-In *alto* \[ in, facoltativo\]
+*In alto* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
 Posizione del bordo superiore del componente, in coordinate dello schermo.
 
@@ -124,7 +124,7 @@ Altezza del componente, in unità dello schermo.
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript incorporato in HTML e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -175,10 +175,10 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

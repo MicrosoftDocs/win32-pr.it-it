@@ -1,5 +1,5 @@
 ---
-description: 'Evento ShellFolderView.SelectionChanged: si verifica quando viene modificato lo stato di selezione di uno o più elementi nella visualizzazione.'
+description: 'Evento ShellFolderView.SelectionChanged: si verifica quando lo stato di selezione di uno o più elementi nella visualizzazione viene modificato.'
 title: Evento ShellFolderView.SelectionChanged (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: e91b72fd-fd26-4e38-8e80-41febec3ca03
-ms.openlocfilehash: 31a32865a979bf6b5fa115912bdc32a9680e5064
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f029ffb217249909e966b592280abf38b2ba2edd
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103999"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842572"
 ---
 # <a name="shellfolderviewselectionchanged-event"></a>Evento ShellFolderView.SelectionChanged
 
@@ -49,7 +49,7 @@ Questo gestore eventi non ha parametri.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

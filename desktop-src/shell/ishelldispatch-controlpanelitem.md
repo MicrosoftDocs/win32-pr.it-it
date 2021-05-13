@@ -1,6 +1,6 @@
 ---
-description: Esegue l'applicazione del pannello di controllo specificata.
-title: Metodo IShellDispatch. ControlPanelItem (shldisp. h)
+description: Esegue l'applicazione Pannello di controllo specificata.
+title: Metodo IShellDispatch.ControlPanelItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9A9B6B3F-FBBC-4e76-8018-8858B6392276
-ms.openlocfilehash: 72164ff76cbcf15703bc91160e6211b38015f989
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a1c024b316472be00f119485326b704a4fe8dd0
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527354"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842842"
 ---
-# <a name="ishelldispatchcontrolpanelitem-method"></a>IShellDispatch. ControlPanelItem, metodo
+# <a name="ishelldispatchcontrolpanelitem-method"></a>Metodo IShellDispatch.ControlPanelItem
 
-Esegue l'applicazione del pannello di controllo specificata. Se l'applicazione è già aperta, attiverà l'istanza in esecuzione.
+Esegue l'applicazione Pannello di controllo specificata. Se l'applicazione è già aperta, attiverà l'istanza in esecuzione.
 
 > [!Note]  
-> A partire da Windows Vista, la maggior parte delle applicazioni del pannello di controllo sono elementi della shell e non possono essere aperti con questa funzione. Per aprire le applicazioni del pannello di controllo, passare il nome canonico a control.exe. Ad esempio:
+> A data di Windows Vista, la maggior Pannello di controllo applicazioni sono elementi della shell e non possono essere aperte con questa funzione. Per aprire tali Pannello di controllo applicazioni, passare il nome canonico a control.exe. Ad esempio:
 >
 > ``` syntax
 > control.exe /name Microsoft.Personalization
@@ -58,12 +58,12 @@ IShellDispatch.ControlPanelItem( _
 
 <dl> <dt>
 
-*bstrDir* \[ in\]
+*bstrDir* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Nome del file dell'applicazione del pannello di controllo.
+Nome Pannello di controllo file dell'applicazione.
 
 </dd> </dl>
 
@@ -79,13 +79,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. ControlPanelItem**](shell-controlpanelitem.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.ControlPanelItem.**](shell-controlpanelitem.md)
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti usano [**ControlPanelItem**](shell-controlpanelitem.md) per eseguire l'elemento delle **proprietà di visualizzazione** del pannello di controllo. L'utilizzo viene visualizzato per JScript, VBScript e Visual Basic.
+Gli esempi seguenti usano [**ControlPanelItem**](shell-controlpanelitem.md) per eseguire l'Pannello di controllo **dell'Proprietà dello schermo** elemento. L'utilizzo viene visualizzato per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -101,7 +101,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -141,11 +141,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

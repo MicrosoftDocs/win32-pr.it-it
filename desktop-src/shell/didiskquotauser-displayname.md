@@ -1,6 +1,6 @@
 ---
 description: Ottiene il nome visualizzato dell'utente.
-title: Proprietà DIDiskQuotaUser. DisplayName
+title: DiDiskQuotaUser.DisplayName - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 2951c2fb-1682-4ec2-bb48-470a7c2d2b15
-ms.openlocfilehash: 8b0267949ed42fe8ddb07d92e9efd3bff9f57f67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 51e708bb406a79e7cfdd29c7a4a23f414e93335d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225922"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843262"
 ---
-# <a name="didiskquotauserdisplayname-property"></a>Proprietà DIDiskQuotaUser. DisplayName
+# <a name="didiskquotauserdisplayname-property"></a>DiDiskQuotaUser.DisplayName - proprietà
 
 Ottiene il nome visualizzato dell'utente.
 
@@ -41,7 +41,7 @@ Valore stringa impostato sul nome visualizzato dell'utente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà contiene il nome descrittivo dell'utente. Il valore non è necessariamente definito.
+Questa proprietà contiene il "nome descrittivo" dell'utente. Il relativo valore non è necessariamente definito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,7 +51,7 @@ Questa proprietà contiene il nome descrittivo dell'utente. Il valore non è nec
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: Specifica una funzione di callback definita dall'applicazione chiamata da file Manager per comunicare con un'estensione di file Manager.
-title: Funzione di callback FMExtensionProc (Wfext. h)
+description: Specifica una funzione di callback definita dall'applicazione chiamata da File Manager per comunicare con un'estensione di File Manager.
+title: Funzione di callback FMExtensionProc (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 6e02d655-f7d8-460a-97d2-5b369493e941
-ms.openlocfilehash: 40e18dfe64c6d2b24b982cdf891cbb63b091a7ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e7b1f0142ea77967af15087131d3036aaec505e
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993688"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842242"
 ---
 # <a name="fmextensionproc-callback-function"></a>Funzione di callback FMExtensionProc
 
-Specifica una funzione di callback definita dall'applicazione chiamata da file Manager per comunicare con un'estensione di file Manager.
+Specifica una funzione di callback definita dall'applicazione chiamata da File Manager per comunicare con un'estensione di File Manager.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,127 +42,127 @@ LONG CALLBACK FMExtensionProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Tipo: **HWND**
 
-Handle di finestra per file Manager. Un'estensione utilizza questo handle per specificare la finestra padre per qualsiasi finestra di dialogo o finestra di messaggio che deve visualizzare e per inviare messaggi di query a gestione file.
+Handle di finestra per File Manager. Un'estensione usa questo handle per specificare la finestra padre per qualsiasi finestra di dialogo o finestra di messaggio che deve visualizzare e per inviare messaggi di query a File Manager.
 
 </dd> <dt>
 
 *wMsg* 
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
-Uno dei seguenti messaggi di gestione file.
+Uno dei messaggi di File Manager seguenti.
 
 <dt>
 
 <span id="1_through_99"></span><span id="1_THROUGH_99"></span>
 
-<span id="1_through_99"></span><span id="1_THROUGH_99"></span>**da 1 a 99**
+<span id="1_through_99"></span><span id="1_THROUGH_99"></span>**Da 1 a 99**
 
 
 </dt> <dd>
 
-L'utente ha selezionato un elemento dal menu fornito dall'estensione. Il valore è l'identificatore della voce di menu selezionata.
+L'utente ha selezionato una voce dal menu fornito dall'estensione. Il valore è l'identificatore della voce di menu selezionata.
 
 </dd> <dt>
 
 <span id="FMEVENT_HELPMENUITEM"></span><span id="fmevent_helpmenuitem"></span>
 
-<span id="FMEVENT_HELPMENUITEM"></span><span id="fmevent_helpmenuitem"></span>**\_HELPMENUITEM FMEVENT**
+<span id="FMEVENT_HELPMENUITEM"></span><span id="fmevent_helpmenuitem"></span>**FMEVENT \_ HELPMENUITEM**
 
 
 </dt> <dd>
 
-Premere F1 durante la selezione di un menu di estensione o di un elemento del comando della barra degli strumenti. Indica che l'estensione deve chiamare **WinHelp** in modo appropriato per l'elemento di comando.
+L'utente ha premuto F1 durante la selezione di un menu di estensione o di un elemento di comando della barra degli strumenti. Indica che l'estensione deve chiamare **WinHelp** in modo appropriato per l'elemento di comando.
 
 </dd> <dt>
 
 <span id="FMEVENT_HELPSTRING"></span><span id="fmevent_helpstring"></span>
 
-<span id="FMEVENT_HELPSTRING"></span><span id="fmevent_helpstring"></span>**\_HELPSTRING FMEVENT**
+<span id="FMEVENT_HELPSTRING"></span><span id="fmevent_helpstring"></span>**FMEVENT \_ HELPSTRING**
 
 
 </dt> <dd>
 
-L'utente ha selezionato un menu di estensione o un elemento comando della barra degli strumenti. Indica che l'estensione deve fornire una stringa della guida.
+L'utente ha selezionato un menu di estensione o una voce di comando della barra degli strumenti. Indica che l'estensione deve fornire una stringa della Guida.
 
 </dd> <dt>
 
 <span id="FMEVENT_INITMENU"></span><span id="fmevent_initmenu"></span>
 
-<span id="FMEVENT_INITMENU"></span><span id="fmevent_initmenu"></span>**\_INITMENU FMEVENT**
+<span id="FMEVENT_INITMENU"></span><span id="fmevent_initmenu"></span>**FMEVENT \_ INITMENU**
 
 
 </dt> <dd>
 
-L'utente ha selezionato il menu dell'estensione. L'estensione deve inizializzare gli elementi nel menu.
+L'utente ha selezionato il menu dell'estensione. L'estensione deve inizializzare le voci nel menu.
 
 </dd> <dt>
 
 <span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>
 
-<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**\_carico FMEVENT**
+<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**FMEVENT \_ LOAD**
 
 
 </dt> <dd>
 
-Gestione file sta caricando la DLL di estensione e richiede la DLL per informazioni sul menu fornito dalla DLL.
+Gestione file carica la DLL di estensione e richiede informazioni sul menu fornito dalla DLL.
 
 </dd> <dt>
 
 <span id="FMEVENT_SELCHANGE"></span><span id="fmevent_selchange"></span>
 
-<span id="FMEVENT_SELCHANGE"></span><span id="fmevent_selchange"></span>**\_selChange FMEVENT**
+<span id="FMEVENT_SELCHANGE"></span><span id="fmevent_selchange"></span>**FMEVENT \_ SELCHANGE**
 
 
 </dt> <dd>
 
-La selezione nella finestra Directory di **file Manager** o nella finestra **Risultati ricerca** è stata modificata.
+La selezione nella **finestra directory di File Manager** o nella finestra **Risultati** ricerca è stata modificata.
 
 </dd> <dt>
 
 <span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>
 
-<span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>**\_TOOLBARLOAD FMEVENT**
+<span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>**FMEVENT \_ TOOLBARLOAD**
 
 
 </dt> <dd>
 
-La barra degli strumenti viene creata da Gestione file e viene richiesta la DLL di estensione per informazioni sui pulsanti aggiunti dalla DLL alla barra degli strumenti.
+Gestione file crea la barra degli strumenti e richiede alla DLL di estensione informazioni su eventuali pulsanti aggiunti dalla DLL alla barra degli strumenti.
 
 </dd> <dt>
 
 <span id="FMEVENT_UNLOAD"></span><span id="fmevent_unload"></span>
 
-<span id="FMEVENT_UNLOAD"></span><span id="fmevent_unload"></span>**\_scaricamento FMEVENT**
+<span id="FMEVENT_UNLOAD"></span><span id="fmevent_unload"></span>**FMEVENT \_ UNLOAD**
 
 
 </dt> <dd>
 
-Il file Manager sta scaricando la DLL di estensione.
+Gestione file sta scaricando la DLL dell'estensione.
 
 </dd> <dt>
 
 <span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>
 
-<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**\_aggiornamento utente \_ FMEVENT**
+<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**FMEVENT \_ USER \_ REFRESH**
 
 
 </dt> <dd>
 
-L'utente ha selezionato il comando **Aggiorna** dal menu **finestra** . Se necessario, l'estensione deve aggiornare gli elementi nel menu.
+L'utente **ha selezionato** il comando Aggiorna dal menu Finestra.  Se necessario, l'estensione deve aggiornare le voci del menu.
 
 </dd> </dl> </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 Valore specifico del messaggio.
 
@@ -170,9 +170,9 @@ Valore specifico del messaggio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Restituisce un valore che dipende dal messaggio di parametro *wmsg* .
+Restituisce un valore dipendente dal messaggio *del parametro wMsg.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -182,7 +182,7 @@ Restituisce un valore che dipende dal messaggio di parametro *wmsg* .
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **FMExtensionProcW** (Unicode)<br/>                                          |
 
 

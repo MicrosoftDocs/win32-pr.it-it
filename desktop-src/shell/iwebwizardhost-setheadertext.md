@@ -1,6 +1,6 @@
 ---
-description: Imposta il titolo e il sottotitolo visualizzati nell'intestazione della procedura guidata. In generale, il client visualizzerà l'intestazione sopra il codice HTML e sotto la barra del titolo.
-title: Metodo WebWizardHost. SetHeaderText (shldisp. h)
+description: Imposta il titolo e il sottotitolo visualizzati nell'intestazione della procedura guidata. In generale, il client visualizza l'intestazione sopra il codice HTML e sotto la barra del titolo.
+title: Metodo WebWizardHost.SetHeaderText (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: e627de44-9929-4e08-9fd9-ca22743f434a
-ms.openlocfilehash: 92e23fab94cfedd8bbc62e31086759af48238a95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d524f9ae6d1031d518e237d393bbb1dc0d35b2bd
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980255"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841832"
 ---
-# <a name="webwizardhostsetheadertext-method"></a>WebWizardHost. SetHeaderText, metodo
+# <a name="webwizardhostsetheadertext-method"></a>Metodo WebWizardHost.SetHeaderText
 
-Imposta il titolo e il sottotitolo visualizzati nell'intestazione della procedura guidata. In generale, il client visualizzerà l'intestazione sopra il codice HTML e sotto la barra del titolo.
+Imposta il titolo e il sottotitolo visualizzati nell'intestazione della procedura guidata. In generale, il client visualizza l'intestazione sopra il codice HTML e sotto la barra del titolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ iRetVal = WebWizardHost.SetHeaderText(
 
 <dl> <dt>
 
-*bstrHeaderTitle* \[ in\]
+*bstrHeaderTitle* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -49,7 +49,7 @@ Stringa contenente il titolo.
 
 </dd> <dt>
 
-*bstrHeaderSubtitle* \[ in\]
+*bstrHeaderSubtitle* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -64,10 +64,10 @@ Stringa contenente il sottotitolo.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                            |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

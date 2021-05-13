@@ -1,5 +1,5 @@
 ---
-description: Contiene informazioni che definiscono un nuovo elenco utilizzato più di recente (MRU). Usato da CreateMRUListW.
+description: Contiene informazioni che definiscono un nuovo elenco degli elementi usati più di recente. Usato da CreateMRUListW.
 title: Struttura MRUINFO
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 - NA
 api_location: ''
 ms.assetid: 31d5831d-9a19-4bd9-8439-ce844966c414
-ms.openlocfilehash: 91c0b1a2c10f4ac77afa5f8af2380b3d14ced8f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 652168e6a4e61ac754aac3202e0681ec6b7d9e66
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993789"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840762"
 ---
 # <a name="mruinfo-structure"></a>Struttura MRUINFO
 
-Contiene informazioni che definiscono un nuovo elenco utilizzato più di recente (MRU). Usato da [**CreateMRUListW**](createmrulist.md).
+Contiene informazioni che definiscono un nuovo elenco degli elementi usati più di recente. Usato da [**CreateMRUListW.**](createmrulist.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,14 +52,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Dimensione della struttura.
+Dimensione della struttura .
 
 </dd> <dt>
 
-**uMax**
+**Umax**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
@@ -70,7 +70,7 @@ Numero massimo di voci nell'elenco MRU.
 **fFlags**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
@@ -80,12 +80,12 @@ Uno o più dei flag seguenti.
 
 <span id="MRU_BINARY"></span><span id="mru_binary"></span>
 
-<span id="MRU_BINARY"></span><span id="mru_binary"></span>**MRU \_ BINARIO** (0x0001)
+<span id="MRU_BINARY"></span><span id="mru_binary"></span>**MRU \_ BINARY** (0x0001)
 
 
 </dt> <dd>
 
-I dati vengono archiviati nel registro di sistema come dati binari anziché come dati di tipo stringa.
+I dati vengono archiviati nel Registro di sistema come dati binari anziché come dati stringa.
 
 </dd> <dt>
 
@@ -96,11 +96,11 @@ I dati vengono archiviati nel registro di sistema come dati binari anziché come
 
 </dt> <dd>
 
-Scrivere le modifiche apportate alla versione di MRU archiviata nel registro di sistema solo quando viene aggiunto un nuovo elemento o le risorse dell'elenco MRU vengono liberate dalla memoria. Si noti che la versione attiva di MRU in memoria viene aggiornata immediatamente in risposta a qualsiasi modifica nel contenuto o nell'ordinamento.
+Scrivere le modifiche alla versione dell'elenco MRU archiviata nel Registro di sistema solo quando viene aggiunto un nuovo elemento o le risorse dell'elenco MRU vengono liberate dalla memoria. Si noti che la versione attiva dell'elenco MRU in memoria viene aggiornata immediatamente in risposta a qualsiasi modifica nel contenuto o nell'ordinamento.
 
 </dd> </dl> </dd> <dt>
 
-**hKey**
+**Hkey**
 </dt> <dd>
 
 Tipo: **HKEY**
@@ -111,10 +111,10 @@ Handle per la chiave attualmente aperta o uno dei valori predefiniti seguenti in
 
 <dl><span id="HKEY_CURRENT_USER"></span><span id="hkey_current_user"></span><dt>
 
-**HKEY \_ \_ utente corrente**
+**HKEY \_ CURRENT \_ USER**
 </dt><span id="HKEY_LOCAL_MACHINE"></span><span id="hkey_local_machine"></span><dt>
 
-**\_computer locale \_ HKEY**
+**HKEY \_ LOCAL \_ MACHINE**
 </dt> </dl> </dd> <dt>
 
 **lpszSubKey**
@@ -135,13 +135,13 @@ Tipo: **[ **MRUCMPPROC**](mrucmpproc.md)**
 
 </dd> <dd>
 
-Puntatore a una funzione di confronto dati facoltativa che può essere usata per determinare se un elemento è presente nell'elenco MRU. Questa operazione è utile quando l'elenco MRU è stato creato con il flag **\_ binario MRU** . Se questo membro è **null**, vengono utilizzate le funzioni di confronto di stringhe standard. per i dati binari, viene utilizzato un confronto diretto della memoria.
+Puntatore a una funzione di confronto dei dati facoltativa che può essere usata per determinare se un elemento è presente nell'elenco MRU. Ciò è utile quando l'elenco MRU è stato creato con il flag **MRU \_ BINARY.** Se questo membro è **NULL,** vengono usate le funzioni standard di confronto tra stringhe. Per i dati binari, viene usato un confronto diretto della memoria.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura non è definita in un file di intestazione. È necessario definirlo autonomamente.
+Questa struttura non è definita in un file di intestazione. È necessario definirlo manualmente.
 
 ## <a name="requirements"></a>Requisiti
 

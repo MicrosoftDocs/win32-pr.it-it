@@ -1,6 +1,6 @@
 ---
-description: Contiene informazioni su un pulsante aggiunto da una DLL di estensione di file Manager alla barra degli strumenti di gestione file.
-title: Struttura EXT_BUTTON (Wfext. h)
+description: Contiene informazioni su un pulsante aggiunto da una DLL di estensione di File Manager alla barra degli strumenti di File Manager.
+title: EXT_BUTTON struttura (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 8cd29a06-0f38-4285-9092-647a391b72d7
-ms.openlocfilehash: 5eabb9f5e958b1e0bd15a6412dfbfa276d23f255
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d1505ef7b330f0e935136eacaf808da3add8cd8
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751015"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843152"
 ---
-# <a name="ext_button-structure"></a>\_Struttura pulsante EXT
+# <a name="ext_button-structure"></a>Struttura EXT \_ BUTTON
 
-Contiene informazioni su un pulsante aggiunto da una DLL di estensione di file Manager alla barra degli strumenti di gestione file.
+Contiene informazioni su un pulsante aggiunto da una DLL di estensione di File Manager alla barra degli strumenti di File Manager.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct tagEXT_BUTTON {
 **idCommand**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -55,7 +55,7 @@ Identificatore di comando per il pulsante.
 **idsHelp**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -66,7 +66,7 @@ Identificatore della stringa della Guida per il pulsante.
 **fsStyle**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -82,7 +82,7 @@ Stile del pulsante.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
@@ -90,10 +90,10 @@ Stile del pulsante.
 
 <dl> <dt>
 
-[**\_TOOLBARLOAD FMEVENT**](fmevent-toolbarload.md)
+[**BARRA DEGLI STRUMENTI \_ FMEVENTLOAD**](fmevent-toolbarload.md)
 </dt> <dt>
 
-[**\_TOOLBARLOAD FMS**](fms-toolbarload.md)
+[**BARRA DEGLI STRUMENTI \_ FMSCARICA**](fms-toolbarload.md)
 </dt> </dl>
 
  

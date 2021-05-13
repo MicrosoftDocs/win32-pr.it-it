@@ -1,6 +1,6 @@
 ---
 description: Indica se un URL specificato è sottoscritto.
-title: Metodo ShellUIHelper. IsValid (Exdisp. h)
+title: Metodo ShellUIHelper.IsSubscribed (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: fcf23352-6603-4b17-9c3b-b353cca1c003
-ms.openlocfilehash: 2085f38e5f91f13a2f67ff4f22b003b533249386
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca68d2e46ce74593b66aac6f995b88ddcb79796b
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050175"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842492"
 ---
-# <a name="shelluihelperissubscribed-method"></a>Metodo ShellUIHelper. IsValid
+# <a name="shelluihelperissubscribed-method"></a>Metodo ShellUIHelper.IsSubscribed
 
 Indica se un URL specificato è sottoscritto.
 
@@ -39,26 +39,26 @@ bRetVal = ShellUIHelper.IsSubscribed(
 
 <dl> <dt>
 
-*surl* \[ in\]
+*sURL* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **stringa** che specifica l'URL.
+Valore **String** che specifica l'URL.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **Boolean \** _
+Tipo: **\* Boolean**
 
-_ *true** se l'URL è sottoscritto; in caso contrario, **false**.
+**true** se l'URL è sottoscritto; in caso contrario, **false**.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript incorporato in HTML e Visual Basic.
+L'esempio seguente illustra l'utilizzo corretto di questo metodo per JScript incorporato in HTML e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -114,10 +114,10 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

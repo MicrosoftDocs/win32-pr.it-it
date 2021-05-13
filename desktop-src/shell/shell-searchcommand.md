@@ -1,6 +1,6 @@
 ---
-description: Consente di visualizzare il riquadro di ricerca delle app.
-title: Metodo Shell. SearchCommand (shldisp. h)
+description: Visualizza il riquadro Ricerca app.
+title: Metodo Shell.SearchCommand (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 5E789607-AEB6-48F9-A9D7-8D27263DBA77
-ms.openlocfilehash: c1de2e5dd6bd84c477f992a3a2c65881e25cf5e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba0399051e71598a219d6425efa1a82cf6ccba3c
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104979890"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841822"
 ---
-# <a name="shellsearchcommand-method"></a>Shell. SearchCommand, metodo
+# <a name="shellsearchcommand-method"></a>Metodo Shell.SearchCommand
 
-Consente di visualizzare il riquadro di ricerca delle app.
+Visualizza il riquadro Ricerca app.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,10 +61,10 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

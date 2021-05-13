@@ -1,6 +1,6 @@
 ---
 description: Indica che è stata avviata una ricerca.
-title: 'Metodo IShellFolderSearchableCallback:: RunBegin'
+title: Metodo IShellFolderSearchableCallback::RunBegin
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 6e3ae592-a0cb-4d9d-b186-241a757da5ea
-ms.openlocfilehash: 2bef0f29486143f97f886c0d31ab456a070ed857
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 953bf54ff64cf41724ce0dfabd064f9c7b980cc6
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527313"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842812"
 ---
-# <a name="ishellfoldersearchablecallbackrunbegin-method"></a>Metodo IShellFolderSearchableCallback:: RunBegin
+# <a name="ishellfoldersearchablecallbackrunbegin-method"></a>Metodo IShellFolderSearchableCallback::RunBegin
 
 Indica che è stata avviata una ricerca.
 
@@ -39,7 +39,7 @@ HRESULT RunBegin(
 
 <dl> <dt>
 
-*dwReserved* \[ in\]
+*dwReserved* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -52,11 +52,11 @@ Riservato. Deve essere 0.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-In risposta a questo callback, l'applicazione può, ad esempio, abilitare il pulsante **Annulla** .
+In risposta a questo callback, l'applicazione può ad esempio abilitare **il pulsante** Annulla.
 
 ## <a name="requirements"></a>Requisiti
 

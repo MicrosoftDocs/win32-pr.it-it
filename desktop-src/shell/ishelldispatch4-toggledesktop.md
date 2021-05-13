@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 60199e18-b8da-48a6-b316-e7f07ff44b78
-ms.openlocfilehash: b635408ed8a44b8bb0d27e52c167470f80f61b18
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e78c14e2aa7f918ff27b21bdab0ce71bed08a84a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116819"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840932"
 ---
 # <a name="ishelldispatch4toggledesktop-method"></a>Metodo IShellDispatch4.ToggleDesktop
 
@@ -57,7 +57,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo ha lo stesso effetto del pulsante **Mostra desktop** sulla barra delle applicazioni. Nasconde tutte le finestre aperte per visualizzare il desktop oppure nasconde il desktop visualizzando tutte le finestre aperte. Il **metodo ToggleDesktop** non visualizza un'interfaccia utente, ma richiama solo l'azione Toggle.
+Questo metodo ha lo stesso effetto del **pulsante Mostra desktop** sulla barra delle applicazioni. Nasconde tutte le finestre aperte per visualizzare il desktop oppure nasconde il desktop visualizzando tutte le finestre aperte. Il **metodo ToggleDesktop** non visualizza un'interfaccia utente, ma richiama solo l'azione toggle.
 
 ## <a name="examples"></a>Esempio
 
