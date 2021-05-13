@@ -1,6 +1,6 @@
 ---
-description: Avvia la procedura guidata Passport se utilizzata con Rundll32.exe.
-title: PassportWizardRunDll (funzione)
+description: Avvia la Procedura guidata Passport quando viene usata con Rundll32.exe.
+title: Funzione PassportWizardRunDll
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Netplwiz.dll
 ms.assetid: 015c3875-698e-4d80-bbfc-4fc8a71197b7
-ms.openlocfilehash: a858a36caa4af8095fc7023abae5ad918321f53e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1678677bcb305b7e5c47d28f5168d1e596ca3e26
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232110"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842512"
 ---
-# <a name="passportwizardrundll-function"></a>PassportWizardRunDll (funzione)
+# <a name="passportwizardrundll-function"></a>Funzione PassportWizardRunDll
 
-\[Questa funzione è disponibile tramite Windows XP con Service Pack 2 (SP2) e Windows Server 2003. Potrebbe essere modificato o non disponibile nelle versioni successive di Windows.\]
+\[Questa funzione è disponibile tramite Windows XP con Service Pack 2 (SP2) e Windows Server 2003. Potrebbe essere stato modificato o non disponibile nelle versioni successive di Windows.\]
 
-Avvia la procedura guidata Passport se utilizzata con Rundll32.exe.
+Avvia la procedura guidata Passport se usata con Rundll32.exe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,25 +44,25 @@ void PassportWizardRunDll(
 
 <dl> <dt>
 
-*hwndStub* \[ in\]
+*hwndStub* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HWND**
 
-Handle per una finestra proprietaria. Questo parametro è in genere impostato su **null**.
+Handle per una finestra proprietaria. Questo parametro è in genere impostato su **NULL.**
 
 </dd> <dt>
 
-*hAppInstance* \[ in\]
+*hAppInstance* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HINSTANCE**
 
-Handle per il file di libreria, ottenuto come valore restituito da [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)("Netplwiz").
+Handle per il file di libreria, ottenuto come valore restituito da [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)("netplwiz").
 
 </dd> <dt>
 
-*lpszCmdLine* \[ in\]
+*lpszCmdLine* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPTSTR**
@@ -71,7 +71,7 @@ Dati dell'argomento. Questo valore sarà sempre vuoto.
 
 </dd> <dt>
 
-*nCmdShow* \[ in\]
+*nCmdShow* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -86,13 +86,13 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-La procedura guidata Passport viene utilizzata per ottenere un Passport predefinito per Windows. Un passaporto consente all'utente di accedere in modo personalizzato a tutti i siti Web di MSN e ad altri siti abilitati per Passport usando l'indirizzo di posta elettronica dell'utente. L'uso di **PassportWizardRunDll** come punto di ingresso nel file Netplwiz.dll tramite un comando rundll32 consente di avviare la procedura guidata Passport da una riga di comando come se si trattasse di un file eseguibile.
+La procedura guidata Passport viene usata per ottenere un passport predefinito per Windows. Passport consente all'utente di accedere in modo personalizzato a tutti i siti Web MSN e ad altri siti abilitati per Passport usando l'indirizzo di posta elettronica dell'utente. L'uso di **PassportWizardRunDll** come punto di ingresso nel file Netplwiz.dll tramite un comando Rundll32 consente di avviare la procedura guidata Passport da una riga di comando come se fosse un file eseguibile.
 
 **PassportWizardRunDll** viene usato esclusivamente nel contesto di un comando Rundll32.exe come indicato di seguito:
 
 **rundll32.exe netplwiz.dll, PassportWizardRunDll**
 
-L'uso di una funzione del punto di ingresso con Rundll32.exe non è simile a una normale chiamata di funzione. Il nome della funzione e il nome del file con estensione dll in cui è archiviato vengono utilizzati solo come parametri della riga di comando. La definizione della funzione mostrata in sintassi è solo un prototipo standard per tutte le funzioni che è possibile chiamare usando rundll32. I valori specifici per *hwndStub*, *hAppInstance* e *nCmdShow* non vengono forniti dall'utente, ma vengono gestiti dietro le quinte da rundll32. **PassportWizardRunDll** non utilizza il valore *lpszCmdLine* , pertanto non sono necessari dati aggiuntivi.
+L'uso di una funzione del punto Rundll32.exe non è simile a una normale chiamata di funzione. Il nome della funzione e il nome del file dll in cui è archiviato vengono usati solo come parametri della riga di comando. La definizione di funzione illustrata in Sintassi è solo un prototipo standard per tutte le funzioni che è possibile chiamare usando Rundll32. I valori specifici per *hwndStub*, *hAppInstance* e *nCmdShow* non vengono forniti dall'utente, ma vengono gestiti in background da Rundll32. **PassportWizardRunDll** non usa il valore *lpszCmdLine,* quindi non sono necessari dati aggiuntivi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -100,10 +100,10 @@ L'uso di una funzione del punto di ingresso con Rundll32.exe non è simile a una
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                            |
-| Intestazione<br/>                   | <dl> <dt>Nessuno</dt> </dl>                                 |
-| DLL<br/>                      | <dl> <dt>Netplwiz.dll (versione 5,60 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                     |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                            |
+| Intestazione<br/>                   | <dl> <dt>Nessuna</dt> </dl>                                 |
+| DLL<br/>                      | <dl> <dt>Netplwiz.dll (versione 5.60 o successiva)</dt> </dl> |
 
 
 

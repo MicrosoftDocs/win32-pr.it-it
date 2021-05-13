@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 665c4644-7749-446e-8212-3ecc9901a035
-ms.openlocfilehash: 2d7e8cfbd1e7a2a2392b78487c6a58b62de6df6a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6eadb580c73e5e56592c94e997bdc22c2cf894b4
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116809"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843022"
 ---
 # <a name="ishelldispatch4windowssecurity-method"></a>Metodo IShellDispatch4.WindowsSecurity
 
@@ -57,16 +57,16 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo visualizza la finestra di dialogo visualizzata dopo aver premuto CTRL+ALT+CANC o usando l'opzione di sicurezza nel menu **Start.**
+Questo metodo visualizza la finestra di dialogo visualizzata dopo la pressione di CTRL+ALT+CANC o l'uso dell'opzione di sicurezza nel menu **Start.**
 
 > [!Note]  
-> Questo metodo può essere usato solo quando è connesso da una sessione del terminale a Microsoft Terminal Server.
+> Questo metodo può essere usato solo quando si è connessi da una sessione terminal a Microsoft Terminal Server.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso di **WindowsSecurity** per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso **di WindowsSecurity** per JScript, VBScript e Visual Basic.
 
 Jscript:
 

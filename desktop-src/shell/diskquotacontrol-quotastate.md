@@ -1,6 +1,6 @@
 ---
 description: Imposta o ottiene lo stato delle quote disco del volume.
-title: Proprietà DiskQuotaControl. QuotaState
+title: DiskQuotaControl.QuotaState - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b0766ecf-6e22-4481-a6a7-df873a277bc2
-ms.openlocfilehash: 460decc1068642ae797723b31f7350082f591d8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3580ad47a5ec6a5d0276dc0e30a4a6463aca2fb3
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485524"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843192"
 ---
-# <a name="diskquotacontrolquotastate-property"></a>Proprietà DiskQuotaControl. QuotaState
+# <a name="diskquotacontrolquotastate-property"></a>DiskQuotaControl.QuotaState - proprietà
 
 Imposta o ottiene lo stato delle quote disco del volume.
 
@@ -60,7 +60,7 @@ Questa proprietà può essere impostata su uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

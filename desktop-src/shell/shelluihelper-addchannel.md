@@ -1,6 +1,6 @@
 ---
-description: Aggiunge un nuovo canale all'elenco di canali nel menu Preferiti di Windows Internet Explorer e alla barra del canale sul desktop.
-title: Metodo ShellUIHelper. AddChannel (Exdisp. h)
+description: Aggiunge un nuovo canale all'elenco di canali nel menu Preferiti di Windows Internet Explorer e alla barra Dei canali sul desktop.
+title: Metodo ShellUIHelper.AddChannel (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b62e6e82-429a-4d41-96d4-cba639b611f5
-ms.openlocfilehash: 93c62abd8f788f950e36bcfc5fa10f7c991a6410
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d08c1360cb2a96fbc7b87daecb650bbf46aa6ad9
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995141"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841202"
 ---
-# <a name="shelluihelperaddchannel-method"></a>ShellUIHelper. AddChannel, metodo
+# <a name="shelluihelperaddchannel-method"></a>Metodo ShellUIHelper.AddChannel
 
-Aggiunge un nuovo canale all'elenco di canali nel menu **Preferiti** di Windows Internet Explorer e alla barra del **canale** sul desktop.
+Aggiunge un nuovo canale all'elenco di canali nel **menu** Preferiti di Windows Internet Explorer e alla barra **Dei** canali sul desktop.
 
 > [!Note]  
 > Questo metodo non è più supportato in Windows Vista. In tale sistema operativo restituisce E \_ NOTIMPL.
@@ -44,15 +44,15 @@ iRetVal = ShellUIHelper.AddChannel(
 
 <dl> <dt>
 
-*surl* \[ in\]
+*sURL* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **stringa** che specifica l'URL del file CDF.
+Valore **String** che specifica l'URL del file CDF.
 
 > [!Note]  
-> I collegamenti nel file CDF devono usare i protocolli HTTP, HTTPS o FTP. Se il file CDF contiene altri protocolli, l'aggiunta del canale ha esito negativo e non viene visualizzata alcuna finestra di dialogo.
+> I collegamenti nel file CDF devono usare protocolli HTTP, HTTPS o FTP. Se il file CDF contiene qualsiasi altro protocollo, l'aggiunta del canale ha esito negativo e non viene visualizzata alcuna finestra di dialogo.
 
  
 
@@ -60,9 +60,9 @@ Valore **stringa** che specifica l'URL del file CDF.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript incorporato in HTML e Visual Basic.
+L'esempio seguente illustra l'utilizzo corretto di questo metodo per JScript incorporato in HTML e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -113,10 +113,10 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

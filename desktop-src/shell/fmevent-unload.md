@@ -1,6 +1,6 @@
 ---
-description: Inviato a una DLL di estensione quando il file Manager Scarica la DLL.
-title: Messaggio FMEVENT_UNLOAD (Wfext. h)
+description: Inviato a una DLL di estensione quando File Manager scarica la DLL.
+title: FMEVENT_UNLOAD messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 15ffcd46-602f-4ad0-9c58-0b8056b9cac4
-ms.openlocfilehash: 140fbdc79980a2ab6ba9f50b8815429436df0d3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24b5b2a77393178cad545cb63c1524a8d7e92c5c
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127863"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843072"
 ---
-# <a name="fmevent_unload-message"></a>\_Messaggio di scaricamento FMEVENT
+# <a name="fmevent_unload-message"></a>Messaggio FMEVENT \_ UNLOAD
 
-Inviato a una DLL di estensione quando il file Manager Scarica la DLL.
+Inviato a una DLL di estensione quando File Manager scarica la DLL.
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,7 +40,7 @@ Una DLL di estensione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-I valori *HWND* e **HMENU** passati con i messaggi [**FMEVENT \_ Load**](fmevent-load.md) e [**FMEVENT \_ INITMENU**](fmevent-initmenu.md) potrebbero non essere validi al momento dell'invio del messaggio.
+I *valori hwnd* e **hMenu** passati con i messaggi [**FMEVENT \_ LOAD**](fmevent-load.md) e [**FMEVENT \_ INITMENU**](fmevent-initmenu.md) potrebbero non essere validi al momento dell'invio del messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ I valori *HWND* e **HMENU** passati con i messaggi [**FMEVENT \_ Load**](fmevent
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 

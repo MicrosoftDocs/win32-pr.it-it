@@ -1,6 +1,6 @@
 ---
 description: Chiamato quando viene revocata la registrazione di una finestra della shell.
-title: DShellWindowsEvents. WindowRevoked, metodo
+title: Metodo DShellWindowsEvents.WindowRevoked
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shdocvw.dll
 ms.assetid: 92e8653f-7f41-4e0b-97e5-429fddc51951
-ms.openlocfilehash: b036bdde2916c2fa037d1b6e286a2096d9e1d8bd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ed78dcaa545b2321b04aff9ff2f4e711f93c992
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104983083"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843182"
 ---
-# <a name="dshellwindowseventswindowrevoked-method"></a>DShellWindowsEvents. WindowRevoked, metodo
+# <a name="dshellwindowseventswindowrevoked-method"></a>Metodo DShellWindowsEvents.WindowRevoked
 
 Chiamato quando viene revocata la registrazione di una finestra della shell.
 
@@ -39,7 +39,7 @@ DShellWindowsEvents.WindowRevoked(
 
 <dl> <dt>
 
-*lCookie* \[ in\]
+*lCookie* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **Integer**
@@ -54,7 +54,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-A una finestra viene concesso un cookie quando viene registrato come finestra della shell. Per ulteriori informazioni, vedere [**Register**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
+A una finestra viene concesso un cookie quando viene registrata come finestra della shell. Per altre informazioni, vedere [**Registrare**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
 
 ## <a name="requirements"></a>Requisiti
 

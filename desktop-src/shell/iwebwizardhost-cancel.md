@@ -1,6 +1,6 @@
 ---
-description: Simula un clic del pulsante Annulla.
-title: Metodo WebWizardHost. Cancel (shldisp. h)
+description: Simula un clic sul pulsante Annulla.
+title: Metodo WebWizardHost.Cancel (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: ea53c8ad-d6dd-4ff7-92e4-681d807a3d98
-ms.openlocfilehash: 79ad23dc0f419e884ad291ab911ddb66d156e1a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a75ecc508f6e901d5003f9e5ecd23497aa8de919
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049297"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841882"
 ---
-# <a name="webwizardhostcancel-method"></a>WebWizardHost. Cancel, metodo
+# <a name="webwizardhostcancel-method"></a>Metodo WebWizardHost.Cancel
 
-Simula un clic del pulsante **Annulla** .
+Simula un clic **sul pulsante** Annulla.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,10 +47,10 @@ Il client è responsabile della risposta a questo metodo con il comportamento pr
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                            |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

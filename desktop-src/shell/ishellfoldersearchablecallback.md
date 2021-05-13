@@ -1,5 +1,5 @@
 ---
-description: Espone le routine di callback per monitorare il processo di ricerca.
+description: Espone routine di callback per monitorare il processo di ricerca.
 title: Interfaccia IShellFolderSearchableCallback
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,33 +13,33 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3412a01b-d5ea-44e1-819c-f10f81fac391
-ms.openlocfilehash: aac648861f3bf9dc5ae8fdcc7173792e427b234f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf1a3b03eed2a15e82e1313875a4ab8584243190
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993821"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842782"
 ---
 # <a name="ishellfoldersearchablecallback-interface"></a>Interfaccia IShellFolderSearchableCallback
 
-Espone le routine di callback per monitorare il processo di ricerca.
+Espone routine di callback per monitorare il processo di ricerca.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IShellFolderSearchableCallback** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IShellFolderSearchableCallback** dispone anche di questi tipi di membri:
+**L'interfaccia IShellFolderSearchableCallback** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IShellFolderSearchableCallback** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IShellFolderSearchableCallback** dispone di questi metodi.
+**L'interfaccia IShellFolderSearchableCallback** include questi metodi.
 
 
 
 | Metodo                                                      | Descrizione                                      |
 |:------------------------------------------------------------|:-------------------------------------------------|
 | [**RunBegin**](ishellfoldersearchablecallback-runbegin.md) | Indica che è stata avviata una ricerca.<br/>  |
-| [**RunEnd**](ishellfoldersearchablecallback-runend.md)     | Indica il completamento di una ricerca.<br/> |
+| [**RunEnd**](ishellfoldersearchablecallback-runend.md)     | Indica che una ricerca è stata completata.<br/> |
 
 
 
@@ -47,7 +47,7 @@ L'interfaccia **IShellFolderSearchableCallback** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Questa interfaccia non è definita in alcun file di intestazione pubblica. Se si sceglie di implementare questa interfaccia, è possibile usare il codice C/C++ seguente per dichiararne i metodi.
+Questa interfaccia non è definita in alcun file di intestazione pubblico. Se si sceglie di implementare questa interfaccia, è possibile usare il codice C/C++ seguente per dichiararne i metodi.
 
 
 ```
@@ -55,12 +55,12 @@ Questa interfaccia non è definita in alcun file di intestazione pubblica. Se si
 #define INTERFACE IShellFolderSearchableCallback
 DECLARE_INTERFACE_IID_(IShellFolderSearchableCallback, IUnknown, "F98D8294-2BBC-11d2-8DBD-0000F87A556C")
 {
-    // **_ IUnknown methods _*_
-    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void _*ppv) PURE;
+    // *** IUnknown methods ***
+    STDMETHOD(QueryInterface) (THIS_ REFIID riid, __out void **ppv) PURE;
     STDMETHOD_(ULONG,AddRef)  (THIS) PURE;
     STDMETHOD_(ULONG,Release) (THIS) PURE;
 
-    // **_ IShellFolderSearchableCallback Methods _**
+    // *** IShellFolderSearchableCallback Methods ***
 
     STDMETHOD(RunBegin)(THIS_ DWORD dwReserved) PURE;
     STDMETHOD(RunEnd)(THIS_ DWORD dwReserved) PURE;

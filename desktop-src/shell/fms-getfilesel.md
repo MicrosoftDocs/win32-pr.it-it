@@ -1,6 +1,6 @@
 ---
-description: Contiene informazioni su un file selezionato nella finestra Active File Manager (la finestra Directory o la finestra dei risultati della ricerca).
-title: Struttura FMS_GETFILESEL (Wfext. h)
+description: Contiene informazioni su un file selezionato nella finestra attiva di File Manager (la finestra della directory o la finestra Risultati ricerca).
+title: FMS_GETFILESEL struttura (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: d8339f87-ba05-40bf-b7d1-a9de29eb15a4
-ms.openlocfilehash: e7ae92350e88e050b1208eed6e08f8faba811fee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1188840299a101081c5c29d0e5658963ca7a72e
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966396"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842222"
 ---
-# <a name="fms_getfilesel-structure"></a>\_Struttura GETFILESEL FMS
+# <a name="fms_getfilesel-structure"></a>Struttura \_ FMS GETFILESEL
 
-Contiene informazioni su un file selezionato nella finestra Active File Manager (la finestra Directory o la finestra dei risultati della ricerca).
+Contiene informazioni su un file selezionato nella finestra di Gestione file attiva (la finestra della directory o la finestra Risultati ricerca).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,11 +45,11 @@ typedef struct _FMS_GETFILESEL {
 **ftTime**
 </dt> <dd>
 
-Tipo: **FILEtime**
+Tipo: **FILETIME**
 
 </dd> <dd>
 
-Data e ora di creazione del file.
+Ora e data di creazione del file.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Dimensione, in byte, del file.
 **bAttr**
 </dt> <dd>
 
-Tipo: **byte**
+Tipo: **BYTE**
 
 </dd> <dd>
 
@@ -75,14 +75,14 @@ Attributi del file.
 
 </dd> <dt>
 
-**szName**
+**Szname**
 </dt> <dd>
 
 Tipo: **TCHAR**
 
 </dd> <dd>
 
-Il percorso completo con terminazione null e il nome del file selezionato.
+Percorso completo con terminazione Null e nome file del file selezionato.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Il percorso completo con terminazione null e il nome del file selezionato.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 

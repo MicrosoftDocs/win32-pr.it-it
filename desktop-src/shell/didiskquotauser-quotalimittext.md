@@ -1,6 +1,6 @@
 ---
 description: Ottiene il limite di quota corrente dell'utente come stringa di testo.
-title: Proprietà DIDiskQuotaUser. QuotaLimitText
+title: DIDiskQuotaUser.QuotaLimitText - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41f74c02-b673-46d4-87f1-4dfa040a2f06
-ms.openlocfilehash: 6f14b9a58f0e2cbd134ed2c022677698ae27a4b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 166e35b375c46942a082a39c7656cd1f2c13e8a3
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878761"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109843232"
 ---
-# <a name="didiskquotauserquotalimittext-property"></a>Proprietà DIDiskQuotaUser. QuotaLimitText
+# <a name="didiskquotauserquotalimittext-property"></a>DIDiskQuotaUser.QuotaLimitText - proprietà
 
-Ottiene il [**limite di quota**](diskquotacontrol-object.md) corrente dell'utente come stringa di testo.
+Ottiene il limite di quota corrente [**dell'utente**](diskquotacontrol-object.md) come stringa di testo.
 
 Questa proprietà è di sola lettura.
 
@@ -47,7 +47,7 @@ Valore stringa che contiene il limite di quota corrente dell'utente.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

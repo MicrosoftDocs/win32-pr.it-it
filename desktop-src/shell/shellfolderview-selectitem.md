@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 91c39d4c-56c3-4c2b-93e8-9f782ca0aa93
-ms.openlocfilehash: c8cbff0da4da55d9621bfeb01f26c5ed62fe230a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ab0f65094f638c56df6a10434f9a404072278c55
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116749"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842552"
 ---
 # <a name="shellfolderviewselectitem-method"></a>Metodo ShellFolderView.SelectItem
 
@@ -43,7 +43,7 @@ ShellFolderView.SelectItem(
 *vItem* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **\* Variante**
+Tipo: **\* Variant**
 
 Oggetto [**FolderItem**](folderitem.md) per il quale verrà impostato lo stato di selezione.
 
@@ -109,7 +109,7 @@ Deselezionare tutti gli elementi, ad esempio l'elemento specificato.
 
 </dt> <dd>
 
-Assicurarsi che l'elemento sia visualizzato nella visualizzazione.
+Verificare che l'elemento sia visualizzato nella visualizzazione.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Assicurarsi che l'elemento sia visualizzato nella visualizzazione.
 
 </dt> <dd>
 
-Assegnare lo stato attivo all'elemento.
+Assegnare all'elemento lo stato attivo.
 
 </dd> </dl> </dd> </dl>
 
@@ -134,7 +134,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra l'uso corretto di questo metodo in JScript incorporato in HTML.
+Nell'esempio seguente viene illustrato l'uso corretto di questo metodo in JScript incorporato in HTML.
 
 
 ```JScript
@@ -195,7 +195,7 @@ L'esempio seguente illustra l'uso corretto di questo metodo in JScript incorpora
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

@@ -1,6 +1,6 @@
 ---
 description: Rappresenta un singolo verbo disponibile per un elemento. Questo oggetto contiene proprietà e metodi che consentono di recuperare informazioni sul verbo.
-title: Oggetto FolderItemVerb (shldisp. h)
+title: Oggetto FolderItemVerb (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 22f52e3f-875e-4dde-8875-3228639bc7f1
-ms.openlocfilehash: d7039f05a3c22aa3e3195bd1c3bd786d9fd4c164
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 167fe7b48d68622b108aeb0caf0302c0cabce9f6
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227445"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840632"
 ---
 # <a name="folderitemverb-object"></a>Oggetto FolderItemVerb
 
@@ -26,20 +26,20 @@ Rappresenta un singolo verbo disponibile per un elemento. Questo oggetto contien
 
 ## <a name="members"></a>Membri
 
-L'oggetto **FolderItemVerb** dispone di questi tipi di membri:
+**L'oggetto FolderItemVerb** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **FolderItemVerb** dispone di questi metodi.
+**L'oggetto FolderItemVerb** dispone di questi metodi.
 
 
 
 | Metodo                              | Descrizione                                                                                  |
 |:------------------------------------|:---------------------------------------------------------------------------------------------|
-| [**DoIt**](folderitemverb-doit.md) | Esegue un verbo in [**FolderItem**](folderitem.md) associato al verbo.<br/> |
+| [**Doit**](folderitemverb-doit.md) | Esegue un verbo [**sull'elemento FolderItem**](folderitem.md) associato al verbo.<br/> |
 
 
 
@@ -47,7 +47,7 @@ L'oggetto **FolderItemVerb** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **FolderItemVerb** dispone di queste proprietà.
+**L'oggetto FolderItemVerb** ha queste proprietà.
 
 
 
@@ -67,11 +67,11 @@ L'oggetto **FolderItemVerb** dispone di queste proprietà.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

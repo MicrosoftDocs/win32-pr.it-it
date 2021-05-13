@@ -1,6 +1,6 @@
 ---
-description: Visualizza una finestra della guida che corrisponde all'impostazione della lingua dell'interfaccia utente corrente.
-title: MLHtmlHelp (funzione)
+description: Visualizza una finestra della Guida che corrisponde all'impostazione corrente della lingua dell'interfaccia utente.
+title: Funzione MLHtmlHelp
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 api_location:
 - Shlwapi.dll
 ms.assetid: 1108614d-7034-48da-a4a5-544f8d9af3ca
-ms.openlocfilehash: a477ef549b3b8437ba891259c7fecea4730f759e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38d331d57b9484ab6d7a505d929508f30d510ad8
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993800"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841212"
 ---
-# <a name="mlhtmlhelp-function"></a>MLHtmlHelp (funzione)
+# <a name="mlhtmlhelp-function"></a>Funzione MLHtmlHelp
 
 \[Questa funzione è disponibile tramite Windows XP e Windows Server 2003. Potrebbe essere modificato o non disponibile nelle versioni successive di Windows.\]
 
-Visualizza una finestra della guida che corrisponde all'impostazione della lingua dell'interfaccia utente corrente.
+Visualizza una finestra della Guida che corrisponde all'impostazione corrente della lingua dell'interfaccia utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ HWND MLHtmlHelp(
 
 <dl> <dt>
 
-*hwndCaller* \[ in\]
+*hwndCaller* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HWND**
@@ -56,39 +56,39 @@ Handle per la finestra padre che chiama questa funzione.
 
 </dd> <dt>
 
-*pszFile* \[ in\]
+*pszFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
 
-Puntatore a un buffer che contiene il percorso completo di un file della Guida compilato (con estensione chm) o un file di argomento all'interno di un file della Guida specificato.
+Puntatore a un buffer che contiene il percorso completo di un file della Guida compilato (con estensione chm) o di un file di argomento all'interno di un file della Guida specificato.
 
 </dd> <dt>
 
-*uCommand* \[ in\]
+*uCommand* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Comando da completare. Questa funzione supporta direttamente solo [l' \_ \_ argomento di visualizzazione HH](/previous-versions/windows/desktop/htmlhelp/hh-display-topic-command) e il [ \_ \_ \_ popup del testo visualizzato HH](/previous-versions/windows/desktop/htmlhelp/hh-display-text-popup-command). Nel caso di qualsiasi altro comando, la chiamata viene trasmessa senza il valore di *dwCrossCodePage* a [HTMLHelp](/previous-versions/windows/desktop/htmlhelp/accessing-the-html-help-api).
+Comando da completare. Questa funzione supporta direttamente solo [HH \_ DISPLAY TOPIC \_ e](/previous-versions/windows/desktop/htmlhelp/hh-display-topic-command) [HH DISPLAY TEXT \_ \_ \_ POPUP.](/previous-versions/windows/desktop/htmlhelp/hh-display-text-popup-command) Nel caso di qualsiasi altro comando, la chiamata viene inoltrata senza il *valore dwCrossCodePage* a [HtmlHelp](/previous-versions/windows/desktop/htmlhelp/accessing-the-html-help-api).
 
 </dd> <dt>
 
-*dwData* \[ in\]
+*dwData* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **DWORD \_ ptr**
+Tipo: **DWORD \_ PTR**
 
-Tutti i dati che potrebbero essere necessari, in base al valore del parametro *uCommand* .
+Tutti i dati che possono essere necessari, in base al valore del *parametro uCommand.*
 
 </dd> <dt>
 
-*dwCrossCodePage* \[ in\]
+*dwCrossCodePage* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Valore **DWORD** che indica la tabella codici dell'impostazione della lingua dell'interfaccia utente corrente, ad esempio CP \_ ACP.
+Valore **DWORD** che indica la tabella codici dell'impostazione corrente della lingua dell'interfaccia utente, ad esempio CP \_ ACP.
 
 </dd> </dl>
 
@@ -96,22 +96,22 @@ Valore **DWORD** che indica la tabella codici dell'impostazione della lingua del
 
 Tipo: **HWND**
 
-A seconda del *uCommand* specificato e del risultato, **MLHtmlHelp** restituisce uno o entrambi gli elementi seguenti:
+A seconda *dell'uCommand e* del risultato specificati, **MLHtmlHelp** restituisce uno o entrambi gli elementi seguenti:
 
--   Handle (HWND) della finestra della guida.
--   **Valore null**. In alcuni casi, **null** indica un errore. in altri casi, **null** indica che la finestra della guida non è stata ancora creata.
+-   Handle (hwnd) della finestra della Guida.
+-   **NULL**. In alcuni casi, **NULL** indica un errore. in altri casi, **NULL** indica che la finestra della Guida non è ancora stata creata.
 
 ## <a name="remarks"></a>Commenti
 
-Se si verifica un problema con il percorso del file della Guida per la lingua corrente, la chiamata viene trasmessa a [HTMLHelp](/previous-versions/windows/desktop/htmlhelp/accessing-the-html-help-api) per la gestione standard.
+Se si verifica un problema con il percorso del file della Guida per la lingua corrente, la chiamata viene inoltrata a [HtmlHelp](/previous-versions/windows/desktop/htmlhelp/accessing-the-html-help-api) per la gestione standard.
 
-Quando la finestra della guida è chiusa, lo stato attivo torna al proprietario, a meno che il proprietario non sia il desktop. Se *hwndCaller* è il desktop, il sistema operativo determina la posizione in cui viene restituito lo stato attivo.
+Quando la finestra della Guida viene chiusa, lo stato attivo torna al proprietario, a meno che il proprietario non sia il desktop. Se *hwndCaller* è il desktop, il sistema operativo determina dove viene restituito lo stato attivo.
 
-Inoltre, se **MLHtmlHelp** invia messaggi di notifica dalla finestra della guida, i messaggi vengono inviati a *hwndCaller* , purché sia stata abilitata la verifica dei [messaggi di notifica](/previous-versions/windows/desktop/htmlhelp/about-notification-messages) nella definizione della finestra della guida.
+Inoltre, se **MLHtmlHelp** invia messaggi di notifica dalla finestra della Guida, i messaggi vengono [](/previous-versions/windows/desktop/htmlhelp/about-notification-messages) inviati a *hwndCaller* purché sia stato abilitato il rilevamento dei messaggi di notifica nella definizione della finestra della Guida.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene chiamato il comando [HH \_ display \_ Topic](/previous-versions/windows/desktop/htmlhelp/hh-display-topic-command) per aprire il file della Guida denominato Help. chm e visualizzare il relativo argomento predefinito nella finestra della guida denominata `Mainwin` . In genere, la finestra della Guida specificata in questo comando è un [Visualizzatore della Guida HTML](/previous-versions/windows/desktop/htmlhelp/html-help-viewer-topics)standard.
+Nell'esempio seguente viene chiamato il comando [HH \_ DISPLAY \_ TOPIC](/previous-versions/windows/desktop/htmlhelp/hh-display-topic-command) per aprire il file della Guida denominato Help.chm e visualizzarne l'argomento predefinito nella finestra della Guida denominata `Mainwin` . In genere, la finestra della Guida specificata in questo comando è un visualizzatore [della Guida HTML standard.](/previous-versions/windows/desktop/htmlhelp/html-help-viewer-topics)
 
 ``` syntax
 HWND hwnd = HtmlHelp(GetDesktopWindow(),
@@ -122,7 +122,7 @@ HWND hwnd = HtmlHelp(GetDesktopWindow(),
 ```
 
 > [!Note]  
-> Quando si usa questa funzione, impostare la dimensione dello stack del file eseguibile di hosting su almeno 100.000. Se la dimensione dello stack definita è troppo piccola, il thread creato per eseguire la Guida HTML verrà creato anche con questa dimensione dello stack e l'operazione potrebbe non riuscire. Facoltativamente, è possibile rimuovere/STACK dalla riga di comando del collegamento e rimuovere anche eventuali impostazioni dello STACK nel file DEF dell'eseguibile. in questo caso, la dimensione predefinita dello stack è 1 MB. È anche possibile impostare le dimensioni dello stack usando il comando del compilatore/fnumber (il compilatore lo passerà al linker come/STACK).
+> Quando si usa questa funzione, impostare le dimensioni dello stack del file eseguibile di hosting su almeno 100.000. Se le dimensioni dello stack definite sono troppo piccole, verrà creato anche il thread creato per eseguire la Guida HTML con queste dimensioni dello stack e l'operazione potrebbe non riuscire. Facoltativamente, è possibile rimuovere /STACK dalla riga di comando del collegamento e anche rimuovere qualsiasi impostazione STACK nel file DEF del file eseguibile (in questo caso le dimensioni predefinite dello stack sono 1 MB). È anche possibile impostare le dimensioni dello stack usando il comando del compilatore /Fnumber (il compilatore lo passerà al linker come /STACK).
 
  
 
@@ -132,10 +132,10 @@ HWND hwnd = HtmlHelp(GetDesktopWindow(),
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Nessuno</dt> </dl>                               |
-| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Nessuna</dt> </dl>                               |
+| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versione 5.0 o successiva)</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **MLHtmlHelpW** (Unicode) e **MLHtmlHelpA** (ANSI)<br/>                                               |
 
 

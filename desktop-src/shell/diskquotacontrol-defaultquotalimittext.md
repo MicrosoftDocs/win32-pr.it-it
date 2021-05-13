@@ -1,6 +1,6 @@
 ---
 description: Ottiene il limite di quota predefinito come stringa di testo.
-title: Proprietà DiskQuotaControl. DefaultQuotaLimitText
+title: DiskQuotaControl.DefaultQuotaLimitText - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ea1b02e0-c480-4ef1-b6e0-1ec202d5f3c5
-ms.openlocfilehash: 442e9094c62f22c3d990cf1112d145a1b2838e62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14a5b5a0cc42bda17f922020a8485430797875e1
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128442"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841542"
 ---
-# <a name="diskquotacontroldefaultquotalimittext-property"></a>Proprietà DiskQuotaControl. DefaultQuotaLimitText
+# <a name="diskquotacontroldefaultquotalimittext-property"></a>DiskQuotaControl.DefaultQuotaLimitText - proprietà
 
 Ottiene il limite di quota predefinito come stringa di testo.
 
@@ -37,7 +37,7 @@ DefaultQuotaLimitText = DiskQuotaControl.DefaultQuotaLimitText
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore stringa che contiene il limite di quota predefinito per i nuovi utenti del volume. Se, ad esempio, la quota predefinita è 10,5 MB, il valore della proprietà sarà "10,5 MB". Se il volume non dispone di una quota predefinita, la proprietà viene impostata su "nessun limite" o sull'equivalente localizzato.
+Valore stringa che contiene il limite di quota predefinito per i nuovi utenti del volume. Ad esempio, se la quota predefinita è 10,5 MB, il valore della proprietà è "10,5 MB". Se il volume non ha una quota predefinita, la proprietà viene impostata su "Nessun limite" o sull'equivalente localizzato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Valore stringa che contiene il limite di quota predefinito per i nuovi utenti de
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

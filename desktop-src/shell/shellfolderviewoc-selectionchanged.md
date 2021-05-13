@@ -1,6 +1,6 @@
 ---
-description: Indica che lo stato di selezione di uno o più elementi nella vista è stato modificato.
-title: Evento ShellFolderViewOC. SelectionChanged (shldisp. h)
+description: Indica che lo stato di selezione di uno o più elementi nella visualizzazione è stato modificato.
+title: Evento ShellFolderViewOC.SelectionChanged (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 85c37f4e-229f-4383-8218-10f8c2b0b8a0
-ms.openlocfilehash: 3f88ad698b990847a9b7f2fa1b74cc5b53ec7beb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53d6fc3eb6f13d136af603a3129ba75a46c3c6a6
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347921"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841042"
 ---
-# <a name="shellfolderviewocselectionchanged-event"></a>Evento ShellFolderViewOC. SelectionChanged
+# <a name="shellfolderviewocselectionchanged-event"></a>Evento ShellFolderViewOC.SelectionChanged
 
-Indica che lo stato di selezione di uno o più elementi nella vista è stato modificato.
+Indica che lo stato di selezione di uno o più elementi nella visualizzazione è stato modificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,11 +64,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

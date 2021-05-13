@@ -1,6 +1,6 @@
 ---
-description: Chiamato quando una finestra viene registrata come finestra della shell.
-title: DShellWindowsEvents. WindowRegistered, metodo
+description: Chiamato quando una finestra viene registrata come finestra shell.
+title: Metodo DShellWindowsEvents.WindowRegistered
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shdocvw.dll
 ms.assetid: 7faf758a-daa0-47f5-9f95-61fe3d8286ea
-ms.openlocfilehash: b12ed98c6b2a11e5886ed9e76d324a1a6842cda8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 64bf83a88584c5d97994726696d4fb3a1e971bdf
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104983067"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841452"
 ---
-# <a name="dshellwindowseventswindowregistered-method"></a>DShellWindowsEvents. WindowRegistered, metodo
+# <a name="dshellwindowseventswindowregistered-method"></a>Metodo DShellWindowsEvents.WindowRegistered
 
-Chiamato quando una finestra viene registrata come finestra della shell.
+Chiamato quando una finestra viene registrata come finestra shell.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ DShellWindowsEvents.WindowRegistered(
 
 <dl> <dt>
 
-*lCookie* \[ in\]
+*lCookie* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **Integer**
@@ -54,7 +54,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-A una finestra viene concesso un cookie quando viene registrato come finestra della shell. Per ulteriori informazioni, vedere [**Register**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
+A una finestra viene concesso un cookie quando viene registrato come finestra shell. Per altre informazioni, vedere [**Registrare**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
 
 ## <a name="requirements"></a>Requisiti
 

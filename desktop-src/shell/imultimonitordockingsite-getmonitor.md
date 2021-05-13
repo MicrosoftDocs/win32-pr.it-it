@@ -1,6 +1,6 @@
 ---
 description: Ottiene il monitoraggio predefinito corrente.
-title: 'Metodo IMultiMonitorDockingSite:: getmonitor'
+title: Metodo IMultiMonitorDockingSite::GetMonitor
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 0bae75eb-ebd5-4de4-9249-0e9bb489f61f
-ms.openlocfilehash: 1260da5ee4404a7ec4597a57e7e3836d6f133426
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cd437fd6c0e842eb314db6c57420af6b54b05ff
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104994944"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840642"
 ---
-# <a name="imultimonitordockingsitegetmonitor-method"></a>Metodo IMultiMonitorDockingSite:: getmonitor
+# <a name="imultimonitordockingsitegetmonitor-method"></a>Metodo IMultiMonitorDockingSite::GetMonitor
 
 Ottiene il monitoraggio predefinito corrente.
 
@@ -39,29 +39,29 @@ HRESULT GetMonitor(
 
 <dl> <dt>
 
-*punkSrc* \[ in\]
+*punkSrc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Puntatore all'oggetto che implementa l'interfaccia [_ *IDockingWindow* *](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) per la quale viene richiesto il monitoraggio.
+Puntatore all'oggetto che implementa [**l'interfaccia IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) per cui viene richiesto il monitoraggio.
 
 </dd> <dt>
 
-*phMon* \[ out\]
+*phMon* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **HMONITOR \** _
+Tipo: **HMONITOR \***
 
-Quando la funzione restituisce un risultato, contiene un puntatore all'handle del monitor predefinito.
+Quando la funzione viene restituita, contiene un puntatore all'handle del monitoraggio predefinito.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                   |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                   |
 
 
 

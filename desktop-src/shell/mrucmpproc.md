@@ -1,5 +1,5 @@
 ---
-description: Usato per determinare se un elemento è presente in un elenco degli ultimi elementi usati (MRU).
+description: Usato per determinare se un elemento è presente in un elenco degli elementi usati più di recente.
 title: Funzione di callback MRUCMPPROC
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 - UserDefined
 api_location: ''
 ms.assetid: 00f31d6b-2a96-4abd-9647-24a6e66aa22f
-ms.openlocfilehash: f95856f6508ad728a15b3df3d6f5eafa4f5bd2ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83020fbcd0d4cfcfbc643d1360e3671595de6f32
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966876"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840782"
 ---
 # <a name="mrucmpproc-callback-function"></a>Funzione di callback MRUCMPPROC
 
-Usato per determinare se un elemento è presente in un elenco degli ultimi elementi usati (MRU).
+Consente di determinare se un elemento è presente in un elenco degli elementi usati più di recente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,11 +63,11 @@ Seconda stringa da confrontare con la prima.
 
 Tipo: **int**
 
-Restituisce 0 se gli elementi sono identici, altrimenti un valore diverso da zero.
+Restituisce 0 se gli elementi sono identici. In caso contrario, un valore diverso da zero.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione può essere specificata facoltativamente per l'uso nella struttura [**MRUINFO**](mruinfo.md) passata a [**CreateMRUListW**](createmrulist.md). Questa operazione è utile quando l'elenco MRU è stato creato con il flag **\_ binario MRU** . Quando questa funzione non viene specificata, vengono utilizzate le funzioni di confronto di stringhe standard.
+Questa funzione può essere facoltativamente specificata per l'uso nella [**struttura MRUINFO**](mruinfo.md) passata [**a CreateMRUListW.**](createmrulist.md) Ciò è utile quando l'elenco MRU è stato creato con il flag **BINARY MRU. \_** Quando questa funzione non viene specificata, vengono usate le funzioni di confronto di stringhe standard.
 
 ## <a name="requirements"></a>Requisiti
 

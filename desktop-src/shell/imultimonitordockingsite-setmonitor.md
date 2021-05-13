@@ -1,6 +1,6 @@
 ---
 description: Modifica il monitoraggio usato per le barre degli strumenti ancorate in un sistema a più monitor.
-title: 'Metodo IMultiMonitorDockingSite:: tomonitor'
+title: Metodo IMultiMonitorDockingSite::SetMonitor
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: ba4ace13-7096-4f05-bcb0-ab37f1632406
-ms.openlocfilehash: cc177316a850bbf5059cabf48362ab8d5cbe2466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be773ee68c214f6a2fab8da89f1f48b867e71239
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995200"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841942"
 ---
-# <a name="imultimonitordockingsitesetmonitor-method"></a>Metodo IMultiMonitorDockingSite:: tomonitor
+# <a name="imultimonitordockingsitesetmonitor-method"></a>Metodo IMultiMonitorDockingSite::SetMonitor
 
 Modifica il monitoraggio usato per le barre degli strumenti ancorate in un sistema a più monitor.
 
@@ -40,16 +40,16 @@ HRESULT SetMonitor(
 
 <dl> <dt>
 
-*punkSrc* \[ in\]
+*punkSrc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Puntatore all'oggetto che implementa l'interfaccia [_ *IDockingWindow* *](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) per la quale viene modificato il monitoraggio.
+Puntatore all'oggetto che implementa [**l'interfaccia IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) per cui viene modificato il monitoraggio.
 
 </dd> <dt>
 
-*hMonNew* \[ in\]
+*hMonNew* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HMONITOR**
@@ -58,20 +58,20 @@ Handle per il monitoraggio che sostituisce il monitoraggio predefinito esistente
 
 </dd> <dt>
 
-*phMonOld* \[ out\]
+*phMonOld* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **HMONITOR \** _
+Tipo: **HMONITOR \***
 
-Quando la funzione restituisce un risultato, contiene un puntatore all'handle del monitor predefinito precedente.
+Quando questa funzione viene restituita, contiene un puntatore all'handle del monitoraggio predefinito precedente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                   |
+| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                   |
 
 
 

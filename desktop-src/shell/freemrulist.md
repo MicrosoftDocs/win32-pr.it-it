@@ -1,6 +1,6 @@
 ---
-description: Libera l'handle associato all'elenco degli ultimi elementi usati (MRU) e scrive i dati memorizzati nella cache nel registro di sistema.
-title: FreeMRUList (funzione)
+description: Libera l'handle associato all'elenco MRU (Most Recently Used) e scrive i dati memorizzati nella cache nel Registro di sistema.
+title: Funzione FreeMRUList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: 51db9352-7188-4fb7-9c92-1d9579cd7250
-ms.openlocfilehash: 8140586d5f428a66f27a71ea665ae6761380e3a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d31d261629853c3b82b9d1564c5e8755e047570
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979650"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840622"
 ---
-# <a name="freemrulist-function"></a>FreeMRUList (funzione)
+# <a name="freemrulist-function"></a>Funzione FreeMRUList
 
-Libera l'handle associato all'elenco degli ultimi elementi usati (MRU) e scrive i dati memorizzati nella cache nel registro di sistema.
+Libera l'handle associato all'elenco MRU (Most Recently Used) e scrive i dati memorizzati nella cache nel Registro di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ int FreeMRUList(
 
 <dl> <dt>
 
-*hMRU* \[ in\]
+*hMRU* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **handle**
+Tipo: **HANDLE**
 
 Handle dell'elenco MRU da liberare.
 
@@ -52,13 +52,13 @@ Handle dell'elenco MRU da liberare.
 
 Tipo: **int**
 
-Restituisce un valore non negativo se ha esito positivo,-1 in caso contrario.
+Restituisce un valore non negativo in caso di esito positivo, -1 in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elenco MRU è stato creato con il flag **\_ CACHEWRITE di MRU** , la chiamata a **FreeMRUList** comporta la scrittura in questo momento di eventuali modifiche non ancora scritte nella versione dell'elenco MRU archiviato nel registro di sistema.
+Se l'elenco MRU è stato creato usando il flag **MRU \_ CACHEWRITE,** la chiamata a **FreeMRUList** determina la scrittura di tutte le modifiche non ancora scritte nella versione dell'elenco MRU archiviata nel Registro di sistema.
 
-Questa funzione non è inclusa in un'intestazione o in una libreria pubblica. Deve essere estratta da comctl32.dll in base all'ordinale 152.
+Questa funzione non è inclusa in un'intestazione o in una libreria pubblica. Deve essere estratto da comctl32.dll ordinale 152.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Questa funzione non è inclusa in un'intestazione o in una libreria pubblica. De
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                     |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| DLL<br/>                      | <dl> <dt>Comctl32.dll (versione 5,0 o successiva)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Comctl32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

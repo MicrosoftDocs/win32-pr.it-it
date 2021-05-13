@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4cc44e5a-3578-448b-9b19-1b71e1ae2cb9
-ms.openlocfilehash: e5ec05ab09c7592e976085c230a2b359091fb819
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 26677173cce2b72d1a0ba6bdc941cd2407908712
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104369"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841812"
 ---
 # <a name="shellbrowseforfolder-method"></a>Metodo Shell.BrowseForFolder
 
-Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto [**Cartella della cartella**](folder.md) selezionata.
+Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto [**Folder della cartella**](folder.md) selezionata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,7 +69,7 @@ Handle per la finestra padre della finestra di dialogo. Il valore può essere ze
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **String** che rappresenta il titolo visualizzato all'interno della **finestra di** dialogo Sfoglia.
+Valore **String** che rappresenta il titolo visualizzato nella finestra **di dialogo** Sfoglia.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Valore **String** che rappresenta il titolo visualizzato all'interno della **fin
 
 Tipo: **Integer**
 
-Valore **Integer** che contiene le opzioni per il metodo. Può essere zero o una combinazione dei valori elencati nel membro **ulFlags** della [**struttura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
+Valore **integer** che contiene le opzioni per il metodo. Può essere zero o una combinazione dei valori elencati nel **membro ulFlags** della [**struttura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Valore **Integer** che contiene le opzioni per il metodo. Può essere zero o una
 
 Tipo: **Variante**
 
-Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spostarsi più in alto nell'albero rispetto a questa cartella. Se questo valore non viene specificato, la cartella radice usata nella finestra di dialogo è il desktop. Questo valore può essere una stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
+Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spostarsi più in alto nell'albero rispetto a questa cartella. Se questo valore non viene specificato, la cartella radice usata nella finestra di dialogo è il desktop. Questo valore può essere una stringa che specifica il percorso della cartella o uno dei valori [**shellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
 </dd> </dl>
 
@@ -95,15 +95,15 @@ Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spost
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **\* \* CARTELLA**
+Tipo: **\* \* FOLDER**
 
-Riferimento a un oggetto all'oggetto [**Folder della cartella**](folder.md) selezionata.
+Riferimento all'oggetto Folder [**della cartella**](folder.md) selezionata.
 
 ### <a name="vb"></a>VB
 
-Tipo: **\* \* CARTELLA**
+Tipo: **\* \* FOLDER**
 
-Riferimento a un oggetto all'oggetto [**Folder della cartella**](folder.md) selezionata.
+Riferimento all'oggetto Folder [**della cartella**](folder.md) selezionata.
 
 ## <a name="examples"></a>Esempio
 
@@ -183,7 +183,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

@@ -1,6 +1,6 @@
 ---
-description: Indica il completamento di una ricerca.
-title: 'Metodo IShellFolderSearchableCallback:: RunEnd'
+description: Indica che una ricerca è stata completata.
+title: Metodo IShellFolderSearchableCallback::RunEnd
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 91700764-6cdf-488d-adc0-e34d9b4cb71d
-ms.openlocfilehash: 73155e65f4b6edb4a4b4b9b0d52ab5b042fa68b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c23d461fdbd175a80a8fa94fcc238f6cf2f89869
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104994152"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842822"
 ---
-# <a name="ishellfoldersearchablecallbackrunend-method"></a>Metodo IShellFolderSearchableCallback:: RunEnd
+# <a name="ishellfoldersearchablecallbackrunend-method"></a>Metodo IShellFolderSearchableCallback::RunEnd
 
-Indica il completamento di una ricerca.
+Indica che una ricerca è stata completata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ HRESULT RunEnd(
 
 <dl> <dt>
 
-*dwReserved* \[ in\]
+*dwReserved* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -52,7 +52,7 @@ Riservato. Deve essere 0.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

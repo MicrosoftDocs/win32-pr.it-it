@@ -1,6 +1,6 @@
 ---
-description: Implementato dalla Shell per consentire agli sviluppatori di script e Microsoft Visual Basic di usare alcune delle funzionalità disponibili nella shell. L'oggetto ShellUIHelper non dispone di proprietà o eventi. Sono disponibili metodi per aggiungere elementi alla Shell.
-title: Oggetto ShellUIHelper (Exdisp. h)
+description: Implementato da Shell per consentire agli sviluppatori di script e microsoft Visual Basic di usare alcune delle funzionalità disponibili in Shell. L'oggetto ShellUIHelper non ha proprietà o eventi. Vengono forniti metodi per aggiungere elementi alla shell.
+title: Oggetto ShellUIHelper (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,26 +13,26 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9fffebc8-29b9-4064-b60c-c8c63690a79e
-ms.openlocfilehash: f0df3b02624a802c19663b67cbcab508c3e0e487
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b77d618c4c772859a9009f3cca761c59df83257a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980719"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842432"
 ---
 # <a name="shelluihelper-object"></a>Oggetto ShellUIHelper
 
-Implementato dalla Shell per consentire agli sviluppatori di script e Microsoft Visual Basic di usare alcune delle funzionalità disponibili nella shell. L'oggetto **ShellUIHelper** non dispone di proprietà o eventi. Sono disponibili metodi per aggiungere elementi alla Shell.
+Implementato da Shell per consentire agli sviluppatori di script e microsoft Visual Basic di usare alcune delle funzionalità disponibili in Shell. **L'oggetto ShellUIHelper** non ha proprietà o eventi. Vengono forniti metodi per aggiungere elementi alla shell.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **ShellUIHelper** dispone di questi tipi di membri:
+**L'oggetto ShellUIHelper** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **ShellUIHelper** dispone di questi metodi.
+**L'oggetto ShellUIHelper** dispone di questi metodi.
 
 
 
@@ -50,16 +50,16 @@ L'oggetto **ShellUIHelper** dispone di questi metodi.
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="shelluihelper-addchannel.md"><strong>AddChannel</strong></a></td>
-<td style="text-align: left;">Consente di aggiungere un nuovo canale all'elenco di canali nel menu <strong>Preferiti</strong> di Internet Explorer e alla barra del <strong>canale</strong> sul desktop.<br/>
+<td style="text-align: left;">Aggiunge un nuovo canale all'elenco di canali nel <strong>menu</strong> Preferiti Internet Explorer canale e alla barra <strong>Dei</strong> canali sul desktop.<br/>
 <blockquote>
 [!Note]<br />
-Questo metodo non è più supportato in Windows Vista. In tale sistema operativo restituisce E_NOTIMPL.
+Questo metodo non è più supportato in Windows Vista. In tale sistema operativo, restituisce E_NOTIMPL.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shelluihelper-adddesktopcomponent.md"><strong>AddDesktopComponent</strong></a></td>
-<td style="text-align: left;">Aggiunge un elemento al desktop attivo.<br/></td>
+<td style="text-align: left;">Aggiunge un elemento al Active Desktop.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shelluihelper-addfavorite.md"><strong>AddFavorite</strong></a></td>
@@ -82,10 +82,10 @@ Questo metodo non è più supportato in Windows Vista. In tale sistema operativo
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

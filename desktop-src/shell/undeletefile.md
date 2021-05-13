@@ -1,6 +1,6 @@
 ---
-description: Specifica una funzione di callback definita dall'applicazione chiamata da file Manager quando l'utente sceglie il comando Annulla eliminazione dal menu file.
-title: Puntatore a funzione FM_UNDELETE_PROC (Wfext. h)
+description: Specifica una funzione di callback definita dall'applicazione chiamata da File Manager quando l'utente sceglie il comando Annulla eliminazione dal menu File.
+title: FM_UNDELETE_PROC puntatore a funzione (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 456b053e-e83d-43af-9691-57e1d4fd3f8f
-ms.openlocfilehash: 3bed8995954cdfe05bcc8eea82dc47415033e205
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7549b521c241429f1c5c7edb7f83eadf25f5d37
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233561"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842422"
 ---
-# <a name="fm_undelete_proc-function-pointer"></a>\_Puntatore alla funzione di annullamento dell'eliminazione FM \_
+# <a name="fm_undelete_proc-function-pointer"></a>Puntatore alla funzione FM \_ UNDELETE \_ PROC
 
-Specifica una funzione di callback definita dall'applicazione chiamata da file Manager quando l'utente sceglie il comando **Annulla eliminazione** dal menu **file** .
+Specifica una funzione di callback definita dall'applicazione chiamata da  File Manager quando l'utente sceglie il comando Annulla eliminazione dal menu **File.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ typedef DWORD ( APIENTRY *FM_UNDELETE_PROC)(
 
 Tipo: **HWND**
 
-Handle della finestra per file Manager. Una DLL di annullamento dell'eliminazione deve utilizzare questo handle per specificare la finestra proprietaria per qualsiasi finestra di dialogo o finestra di messaggio che può essere visualizzata dalla DLL.
+Handle di finestra per File Manager. Una DLL di annullamento dell'eliminazione deve utilizzare questo handle per specificare la finestra del proprietario per qualsiasi finestra di dialogo o finestra di messaggio che potrebbe essere visualizzata nella DLL.
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Handle della finestra per file Manager. Una DLL di annullamento dell'eliminazion
 
 Tipo: **LPSTR**
 
-Indirizzo di una stringa con terminazione null che contiene il nome della directory iniziale.
+Indirizzo di una stringa con terminazione Null che contiene il nome della directory iniziale.
 
 </dd> </dl>
 
@@ -69,8 +69,8 @@ Restituisce uno dei valori seguenti.
 | Codice restituito                                                                             | Descrizione                                                        |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**-1**</dt> </dl>       | Si è verificato un errore.<br/>                                      |
-| <dl> <dt>**IDOK**</dt> </dl>     | Un file non è stato eliminato. Gestione file ridisegna la finestra.<br/> |
-| <dl> <dt>**IDCANCEL**</dt> </dl> | Nessun file eliminato.<br/>                                  |
+| <dl> <dt>**IDOK**</dt> </dl>     | È stata annullata l'eliminazione di un file. File Manager ridisegna la finestra.<br/> |
+| <dl> <dt>**IDCANCEL**</dt> </dl> | Nessun file è stato annullato.<br/>                                  |
 
 
 
@@ -82,9 +82,9 @@ Restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                        |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 

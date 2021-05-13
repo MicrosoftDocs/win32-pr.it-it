@@ -1,6 +1,6 @@
 ---
 description: Verifica che il monitoraggio sia attivo e disponibile.
-title: 'Metodo IMultiMonitorDockingSite:: RequestMonitor'
+title: Metodo IMultiMonitorDockingSite::RequestMonitor
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 9aa6eb20-de39-41f7-a17e-183f4088f972
-ms.openlocfilehash: 5389b10af9aaa3da5d3106d82a4fbdcbd614a094
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f219e5fd62fb4f85fd206501e6a53ac3927195a
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968697"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841972"
 ---
-# <a name="imultimonitordockingsiterequestmonitor-method"></a>Metodo IMultiMonitorDockingSite:: RequestMonitor
+# <a name="imultimonitordockingsiterequestmonitor-method"></a>Metodo IMultiMonitorDockingSite::RequestMonitor
 
 Verifica che il monitoraggio sia attivo e disponibile.
 
@@ -39,29 +39,29 @@ HRESULT RequestMonitor(
 
 <dl> <dt>
 
-*punkSrc* \[ in\]
+*punkSrc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Puntatore all'oggetto che implementa l'interfaccia [_ *IDockingWindow* *](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) .
+Puntatore all'oggetto che implementa [**l'interfaccia IDockingWindow.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow)
 
 </dd> <dt>
 
-*phMon* \[ in\]
+*phMon* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **HMONITOR \** _
+Tipo: **HMONITOR \***
 
-Puntatore all'handle del monitor predefinito.
+Puntatore all'handle del monitoraggio predefinito.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                   |
+| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                   |
 
 
 

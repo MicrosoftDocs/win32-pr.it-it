@@ -1,6 +1,6 @@
 ---
-description: Inizia il processo di annullamento di una ricerca asincrona in sospeso.
-title: 'Metodo IShellFolderSearchable:: CancelAsyncSearch'
+description: Avvia il processo di annullamento di una ricerca asincrona in sospeso.
+title: Metodo IShellFolderSearchable::CancelAsyncSearch
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5c920dca-fbca-48e1-9dce-38713cf1fcef
-ms.openlocfilehash: e9e3231e8cc602a4e00b6ee79a25392717b6e68b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3146fea4f6c8d8547c8c86096b434cbaea5b5926
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977954"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842992"
 ---
-# <a name="ishellfoldersearchablecancelasyncsearch-method"></a>Metodo IShellFolderSearchable:: CancelAsyncSearch
+# <a name="ishellfoldersearchablecancelasyncsearch-method"></a>Metodo IShellFolderSearchable::CancelAsyncSearch
 
-Inizia il processo di annullamento di una ricerca asincrona in sospeso.
+Avvia il processo di annullamento di una ricerca asincrona in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,21 +40,21 @@ HRESULT CancelAsyncSearch(
 
 <dl> <dt>
 
-*pidlSearch* \[ in\]
+*pidlSearch* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCITEMIDLIST**
 
-Puntatore a un oggetto [**ItemId**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) per la ricerca.
+Puntatore a un [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) per la ricerca.
 
 </dd> <dt>
 
-*pdwFlags* \[ in\]
+*pdwFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Nessun flag attualmente definito. impostare su _ * NULL * *.
+Non è attualmente definito alcun flag. impostato su **NULL.**
 
 </dd> </dl>
 
@@ -62,11 +62,11 @@ Nessun flag attualmente definito. impostare su _ * NULL * *.
 
 Tipo: **HRESULT**
 
-Restituisce \_ OK se viene annullata o \_ è false se la ricerca non è in esecuzione.
+Restituisce S \_ OK in caso di annullamento oppure S FALSE se la ricerca non è in \_ esecuzione.
 
 ## <a name="remarks"></a>Commenti
 
-Quando la ricerca viene effettivamente annullata, verrà chiamato [**RunEnd**](ishellfoldersearchablecallback-runend.md) .
+Quando la ricerca viene effettivamente annullata, [**viene chiamato RunEnd.**](ishellfoldersearchablecallback-runend.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,6 +1,6 @@
 ---
-description: Ricostruisce un puntatore a un elenco di identificatori di elemento (PIDL) da una rappresentazione gerarchica della cartella della shell in una rappresentazione diversa.
-title: 'Metodo IShellFolderViewType:: TranslateViewPidl'
+description: Ricostruisce un puntatore a un elenco di identificatori di elemento (PIDL) da una rappresentazione gerarchica della cartella Shell in una rappresentazione diversa.
+title: Metodo IShellFolderViewType::TranslateViewPidl
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3b7fa6c4-3d02-44ed-b63d-80a799e4017a
-ms.openlocfilehash: 75876e5088c610c1f9f02ba9374db5cea4a6023c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 537a77e7ffffb462e0031ea0959f60cd695f7d99
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527312"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842672"
 ---
-# <a name="ishellfolderviewtypetranslateviewpidl-method"></a>Metodo IShellFolderViewType:: TranslateViewPidl
+# <a name="ishellfolderviewtypetranslateviewpidl-method"></a>Metodo IShellFolderViewType::TranslateViewPidl
 
-Ricostruisce un puntatore a un elenco di identificatori di elemento (PIDL) da una rappresentazione gerarchica della cartella della shell in una rappresentazione diversa.
+Ricostruisce un puntatore a un elenco di identificatori di elemento (PIDL) da una rappresentazione gerarchica della cartella Shell in una rappresentazione diversa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,28 +41,28 @@ HRESULT TranslateViewPidl(
 
 <dl> <dt>
 
-*PIDL* \[ in\]
+*pidl* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **PCUIDLIST \_ relativo**
+Tipo: **PCUIDLIST \_ RELATIVE**
 
-Matrice di ID elemento rispetto alla cartella radice.
+Matrice di ID elemento relativi alla cartella radice.
 
 </dd> <dt>
 
-*pidlView* \[ in\]
+*pidlView* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **PCUIDLIST \_ relativo**
+Tipo: **PCUIDLIST \_ RELATIVE**
 
-PIDL speciale della visualizzazione.
+PIDL speciale della vista.
 
 </dd> <dt>
 
-*ppidlOut* \[ in\]
+*ppidlOut* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **PCUIDLIST \_ relativo \** _
+Tipo: **PCUIDLIST \_ RELATIVE \***
 
 Indirizzo di una variabile PIDL per ricevere la traduzione.
 
@@ -70,13 +70,13 @@ Indirizzo di una variabile PIDL per ricevere la traduzione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Al termine, è necessario liberare il PIDL restituito con [**ILFree**](/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfree).
+Al termine, è necessario liberare il FILE PIDL restituito con [**ILFree.**](/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfree)
 
 ## <a name="requirements"></a>Requisiti
 

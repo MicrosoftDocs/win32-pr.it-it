@@ -1,6 +1,6 @@
 ---
-description: Inviato a una DLL di estensione quando il file Manager carica la barra degli strumenti. Questo messaggio consente a una DLL di estensione di aggiungere un pulsante alla barra degli strumenti di gestione file.
-title: Messaggio FMEVENT_TOOLBARLOAD (Wfext. h)
+description: Inviato a una DLL di estensione quando File Manager carica la relativa barra degli strumenti. Questo messaggio consente a una DLL di estensione di aggiungere un pulsante alla barra degli strumenti di File Manager.
+title: FMEVENT_TOOLBARLOAD messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: c5daab49-4ed5-439b-b1b7-a87f70c379f0
-ms.openlocfilehash: 5f04b524c8d44d987513b6605f9f827336078d02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4195acedbd696679a2deea2f4d6e268717566d1
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227448"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841272"
 ---
-# <a name="fmevent_toolbarload-message"></a>\_Messaggio FMEVENT TOOLBARLOAD
+# <a name="fmevent_toolbarload-message"></a>FMEVENT \_ TOOLBARLOAD message
 
-Inviato a una DLL di estensione quando il file Manager carica la barra degli strumenti. Questo messaggio consente a una DLL di estensione di aggiungere un pulsante alla barra degli strumenti di gestione file.
+Inviato a una DLL di estensione quando File Manager carica la relativa barra degli strumenti. Questo messaggio consente a una DLL di estensione di aggiungere un pulsante alla barra degli strumenti di File Manager.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,13 +34,13 @@ Inviato a una DLL di estensione quando il file Manager carica la barra degli str
 *lpfmstbl* 
 </dt> <dd>
 
-Indirizzo di una struttura [**di \_ TOOLBARLOAD FMS**](fms-toolbarload.md) . Se la DLL di estensione aggiunge un pulsante alla barra degli strumenti in file Manager, la DLL deve riempire la struttura con informazioni sul pulsante.
+Indirizzo di una [**struttura \_ TOOLBARLOAD fms.**](fms-toolbarload.md) Se la DLL di estensione aggiunge un pulsante alla barra degli strumenti in File Manager, la DLL deve riempire la struttura con le informazioni sul pulsante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Una DLL di estensione deve restituire **true** per aggiungere il pulsante alla barra degli strumenti. Se la DLL restituisce **false**, il pulsante non viene aggiunto dal file Manager.
+Una DLL di estensione deve restituire **TRUE** per aggiungere il pulsante alla barra degli strumenti. Se la DLL restituisce **FALSE,** File Manager non aggiunge il pulsante.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Una DLL di estensione deve restituire **true** per aggiungere il pulsante alla b
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: Inviato a una DLL di estensione quando l'utente seleziona un nome di file nella finestra Directory di file Manager o nei risultati della ricerca.
-title: Messaggio FMEVENT_SELCHANGE (Wfext. h)
+description: Inviato a una DLL di estensione quando l'utente seleziona un nome file nella finestra della directory di File Manager o nella finestra Risultati ricerca.
+title: FMEVENT_SELCHANGE messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0773aa74-adf2-4e90-aead-2a9a981be3cb
-ms.openlocfilehash: 4b05bca54f75bd48b5e710e31c31e5f0f56a2597
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9aa647434aab5a483626757179a7b23b3372a02
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524505"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842262"
 ---
-# <a name="fmevent_selchange-message"></a>\_Messaggio FMEVENT SelChange
+# <a name="fmevent_selchange-message"></a>Messaggio FMEVENT \_ SELCHANGE
 
-Inviato a una DLL di estensione quando l'utente seleziona un nome di file nella finestra Directory di file Manager o nei risultati della ricerca.
+Inviato a una DLL di estensione quando l'utente seleziona un nome file nella finestra della directory di File Manager o nella finestra Risultati ricerca.
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,9 +40,9 @@ Una DLL di estensione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Le modifiche apportate alla parte dell'albero della finestra della directory non producono questo messaggio.
+Le modifiche nella parte dell'albero della finestra della directory non generano questo messaggio.
 
-Poiché l'utente può modificare la selezione più volte, la DLL di estensione deve restituire tempestivamente dopo l'elaborazione di questo messaggio per evitare di rallentare il processo di selezione dell'utente.
+Poiché l'utente può modificare la selezione più volte, la DLL di estensione deve restituire prontamente dopo l'elaborazione del messaggio per evitare di rallentare il processo di selezione per l'utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Poiché l'utente può modificare la selezione più volte, la DLL di estensione d
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 

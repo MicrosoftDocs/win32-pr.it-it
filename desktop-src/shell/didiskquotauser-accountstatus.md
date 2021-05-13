@@ -1,6 +1,6 @@
 ---
 description: Ottiene lo stato dell'account dell'utente.
-title: Proprietà DIDiskQuotaUser. AccountStatus
+title: DIDiskQuotaUser.AccountStatus - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: ff2234f7-4758-43c7-a3c2-8fb980b27c04
-ms.openlocfilehash: 155ae627d70c5125fd0d1d501062224450fc8e3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e27e86fadab02616f91a4838acfc4be93e985ebd
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977258"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841652"
 ---
-# <a name="didiskquotauseraccountstatus-property"></a>Proprietà DIDiskQuotaUser. AccountStatus
+# <a name="didiskquotauseraccountstatus-property"></a>DIDiskQuotaUser.AccountStatus - proprietà
 
 Ottiene lo stato dell'account dell'utente.
 
@@ -48,7 +48,7 @@ Questa proprietà può assumere uno dei valori seguenti.
 | dqAcctDeleted     | 2     | L'account è stato eliminato.           |
 | dqAcctInvalid     | 3     | L'account non è valido.                 |
 | dqAcctUnknown     | 4     | Impossibile trovare l'account.            |
-| dqAcctUnresolved  | 5     | Informazioni sull'account non risolte.  |
+| dqAcctUnresolved  | 5     | Le informazioni sull'account non sono risolte.  |
 
 
 
@@ -62,7 +62,7 @@ Questa proprietà può assumere uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

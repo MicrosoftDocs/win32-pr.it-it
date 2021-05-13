@@ -1,6 +1,6 @@
 ---
-description: Carica un elenco di stringhe nell'elenco degli ultimi elementi usati (MRU) dal registro di sistema.
-title: 'Metodo IACLCustomMRU:: Initialize'
+description: Carica un elenco di stringhe nell'elenco MRU (Most Recently Used) dal Registro di sistema.
+title: Metodo IACLCustomMRU::Initialize
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 358921b0-46c4-4428-b0b5-57a44fc3247b
-ms.openlocfilehash: 768df625cb66c888ddccc85f72de5b8676c20b10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 715c6991021070dd132942de0bb18c8b77684860
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104994632"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109841232"
 ---
-# <a name="iaclcustommruinitialize-method"></a>Metodo IACLCustomMRU:: Initialize
+# <a name="iaclcustommruinitialize-method"></a>Metodo IACLCustomMRU::Initialize
 
-Carica un elenco di stringhe nell'elenco degli ultimi elementi usati (MRU) dal registro di sistema.
+Carica un elenco di stringhe nell'elenco degli ultimi caratteri usati dal Registro di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,21 +39,21 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*pwszMRURegKey* \[ in\]
+*pwszMRURegKey* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntatore a un buffer contenente la chiave del registro di sistema contenente le stringhe per l'elenco MRU.
+Puntatore a un buffer contenente la chiave del Registro di sistema contenente le stringhe per l'elenco MRU.
 
 </dd> <dt>
 
-*dwMax* \[ in\]
+*dwMax* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Numero massimo di voci che possono essere ricavate da *pwszMRURegKey*.
+Numero massimo di voci che possono essere prese da *pwszMRURegKey*.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Numero massimo di voci che possono essere ricavate da *pwszMRURegKey*.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
 
 
 

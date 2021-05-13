@@ -1,6 +1,6 @@
 ---
-description: Inviato da un'estensione di file Manager per recuperare il conteggio dei file selezionati nella finestra Active File Manager (la finestra Directory o la finestra dei risultati della ricerca).
-title: Messaggio FM_GETSELCOUNT (Wfext. h)
+description: Inviato da un'estensione di File Manager per recuperare un conteggio dei file selezionati nella finestra di Gestione file attiva (la finestra della directory o la finestra Risultati ricerca).
+title: FM_GETSELCOUNT messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0d43bf37-863c-45cc-94ea-5b2aedba5353
-ms.openlocfilehash: aac7d08de3785bb02c31dabc1ef7a25fea0d5b73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 727e098a98ecfe4a4349ebcf9c6f931a8579b70d
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993701"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842372"
 ---
-# <a name="fm_getselcount-message"></a>\_Messaggio GETSELCOUNT FM
+# <a name="fm_getselcount-message"></a>Messaggio DI FM \_ GETSELCOUNT
 
-Inviato da un'estensione di file Manager per recuperare il conteggio dei file selezionati nella finestra Active File Manager (la finestra Directory o la finestra dei risultati della ricerca).
+Inviato da un'estensione di File Manager per recuperare un conteggio dei file selezionati nella finestra di Gestione file attiva (la finestra della directory o la finestra Risultati ricerca).
 
 ## <a name="parameters"></a>Parametri
 
@@ -46,7 +46,7 @@ Restituisce il numero di file selezionati.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
@@ -54,13 +54,13 @@ Restituisce il numero di file selezionati.
 
 <dl> <dt>
 
-[**\_GETFILESEL FM**](fm-getfilesel.md)
+[**FM \_ GETFILESEL**](fm-getfilesel.md)
 </dt> <dt>
 
-[**\_GETFILESELLFN FM**](fm-getfilesellfn.md)
+[**FM \_ GETFILESELLFN**](fm-getfilesellfn.md)
 </dt> <dt>
 
-[**\_GETSELCOUNTLFN FM**](fm-getselcountlfn.md)
+[**FM \_ GETSELCOUNTLFN**](fm-getselcountlfn.md)
 </dt> </dl>
 
  

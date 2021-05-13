@@ -1,6 +1,6 @@
 ---
-description: Aggiorna i pulsanti indietro, avanti e fine nel frame della procedura guidata del client.
-title: Metodo WebWizardHost. SetWizardButtons (shldisp. h)
+description: Aggiorna i pulsanti Indietro, Avanti e Fine nel frame della procedura guidata del client.
+title: Metodo WebWizardHost.SetWizardButtons (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 863aa667-454c-40cd-8091-9bb456047b6c
-ms.openlocfilehash: 18af31eac1042e84a41e5651c517279869f03697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1b2a79c7ea323c36371e08d3519e71e4c537935
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980250"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109842622"
 ---
-# <a name="webwizardhostsetwizardbuttons-method"></a>WebWizardHost. SetWizardButtons, metodo
+# <a name="webwizardhostsetwizardbuttons-method"></a>Metodo WebWizardHost.SetWizardButtons
 
-Aggiorna i pulsanti **indietro**, **Avanti** e **fine** nel frame della procedura guidata del client.
+Aggiorna i **pulsanti Indietro** **,** Avanti **e** Fine nel frame della procedura guidata del client.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,36 +41,36 @@ iRetVal = WebWizardHost.SetWizardButtons(
 
 <dl> <dt>
 
-*vbEnableBack* \[ in\]
+*vbEnableBack* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **booleano**
+Tipo: **Boolean**
 
-Abilita il pulsante **indietro** .
+Abilita il **pulsante** Indietro.
 
 </dd> <dt>
 
-*vbEnableNext* \[ in\]
+*vbEnableNext* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **booleano**
+Tipo: **Boolean**
 
 Abilita il pulsante **Avanti**.
 
 </dd> <dt>
 
-*vbLastPage* \[ in\]
+*vbLastPage* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **booleano**
+Tipo: **Boolean**
 
-Abilita il pulsante **fine** . Indica che si tratta dell'ultima pagina sul lato server.
+Abilita il **pulsante** Fine. Indica che si tratta dell'ultima pagina sul lato server.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Assicurarsi di implementare le funzioni del gestore in ogni pagina lato server per onback () e OnNext (), corrispondenti **ai pulsanti della** procedura guidata e **successivamente**. Le funzioni onback () e OnNext () rispondono a **SetWizardButtons**. Al momento opportuno, la funzione OnNext () chiama **SetWizardButtons** con *vbLastPage* = **true**, che può attivare un pulsante **fine** . OnNext () chiama anche [**FinalNext**](iwebwizardhost-finalnext.md) quando un utente fa clic sul pulsante **fine** .
+Assicurarsi di implementare le funzioni del gestore in ogni pagina lato server per OnBack() e OnNext(), corrispondenti ai pulsanti **Indietro** e Avanti della **procedura guidata.** Le funzioni OnBack() e OnNext() rispondono a **SetWizardButtons**. Al momento appropriato, la funzione OnNext() chiama **SetWizardButtons** con *vbLastPage* true , che = può abilitare un **pulsante** Fine. OnNext() chiama anche [**FinalNext quando**](iwebwizardhost-finalnext.md) un utente fa clic sul **pulsante** Fine.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,10 +78,10 @@ Assicurarsi di implementare le funzioni del gestore in ogni pagina lato server p
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                            |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 
