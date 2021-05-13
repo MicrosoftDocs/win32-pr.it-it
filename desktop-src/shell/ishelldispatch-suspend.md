@@ -1,6 +1,6 @@
 ---
-description: Metodo IShellDispatch. Suspend
-title: Metodo IShellDispatch. Suspend
+description: Metodo IShellDispatch.Suspend
+title: Metodo IShellDispatch.Suspend
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: EC67DE5B-3A3B-486f-BDF2-D49195CFAFB3
-ms.openlocfilehash: bb6f20e588a2761872c9fe837c52a5282618d0f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24bd997f818b2ef0ba97682ff10ab8d5d7e7cffe
+ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993837"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109840902"
 ---
-# <a name="ishelldispatchsuspend-method"></a><span data-ttu-id="6251f-103">Metodo IShellDispatch. Suspend</span><span class="sxs-lookup"><span data-stu-id="6251f-103">IShellDispatch.Suspend method</span></span>
+# <a name="ishelldispatchsuspend-method"></a><span data-ttu-id="79727-103">Metodo IShellDispatch.Suspend</span><span class="sxs-lookup"><span data-stu-id="79727-103">IShellDispatch.Suspend method</span></span>
 
-<span data-ttu-id="6251f-104">Questo metodo non è implementato.</span><span class="sxs-lookup"><span data-stu-id="6251f-104">This method is not implemented.</span></span>
+<span data-ttu-id="79727-104">Questo metodo non è implementato.</span><span class="sxs-lookup"><span data-stu-id="79727-104">This method is not implemented.</span></span>
 
  
 
