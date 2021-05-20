@@ -1,9 +1,9 @@
 ---
-title: funzione gluOrtho2D (Glu. h)
+title: Funzione gluOrtho2D (Glu.h)
 description: La funzione gluOrtho2D definisce una matrice di proiezione ortogonale 2D.
 ms.assetid: ba83fb5c-e5c7-4486-a815-a1aff0469757
 keywords:
-- funzione gluOrtho2D OpenGL
+- Funzione gluOrtho2D OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a36b321f312a074a5dd78340968f1c9b2b844c6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bf07fea583c5ae46680d888f6bf6c0a9c5aa9a0
+ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400212"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110153554"
 ---
-# <a name="gluortho2d-function"></a>gluOrtho2D (funzione)
+# <a name="gluortho2d-function"></a>Funzione gluOrtho2D
 
-La funzione **gluOrtho2D** definisce una matrice di proiezione ortogonale 2D.
+La **funzione gluOrtho2D** definisce una matrice di proiezione ortogonale 2D.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ void WINAPI gluOrtho2D(
 
 <dl> <dt>
 
-*sinistra* 
+*Sinistra* 
 </dt> <dd>
 
 Coordinata per il piano di ritaglio verticale sinistro.
 
 </dd> <dt>
 
-*Ok* 
+*va bene* 
 </dt> <dd>
 
 Coordinata per il piano di ritaglio verticale destro.
@@ -64,7 +64,7 @@ Coordinata per il piano di ritaglio orizzontale superiore.
 
 </dd> <dt>
 
-*parte inferiore* 
+*Fondoschiena* 
 </dt> <dd>
 
 Coordinata per il piano di ritaglio orizzontale inferiore.
@@ -77,18 +77,18 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluOrtho2D** configura un'area di visualizzazione ortogonale bidimensionale. Equivale a chiamare [**glOrtho**](glortho.md) con near = 1 e lontano = 1.
+La **funzione gluOrtho2D** configura un'area di visualizzazione ortografica bidimensionale. Equivale a chiamare [**glOrtho con**](glortho.md) zNear = -1 e zFar = 1.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

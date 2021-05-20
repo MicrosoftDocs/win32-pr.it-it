@@ -1,5 +1,5 @@
 ---
-description: Rappresenta gli attributi e i comportamenti di una scheda di rete. Questa classe include proprietà e metodi aggiuntivi che supportano la gestione del protocollo TCP/IP indipendente dalla scheda di rete.
+description: Rappresenta gli attributi e i comportamenti di una scheda di rete. Questa classe include proprietà e metodi aggiuntivi che supportano la gestione del protocollo TCP/IP indipendenti dalla scheda di rete.
 ms.assetid: 690b46ed-a065-4973-b044-0df4e81e41a1
 ms.tgt_platform: multiple
 title: Classe Win32_NetworkAdapterConfiguration
@@ -75,18 +75,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2bccbe7fc44e75c2448d2eda800fe3c14cd13a9b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e93ae76ae3c4880c7ad041e6e90d39f1b22820d3
+ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127470"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110153574"
 ---
-# <a name="win32_networkadapterconfiguration-class"></a>Win32 \_ NetworkAdapterConfiguration (classe)
+# <a name="win32_networkadapterconfiguration-class"></a>Classe NetworkAdapterConfiguration Win32 \_
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) **\_ NetworkAdapterConfiguration Win32** rappresenta gli attributi e i comportamenti di una scheda di rete. Questa classe include proprietà e metodi aggiuntivi che supportano la gestione del protocollo TCP/IP indipendente dalla scheda di rete.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **Win32 \_ NetworkAdapterConfiguration** rappresenta gli attributi e i comportamenti di una scheda di rete. Questa classe include proprietà e metodi aggiuntivi che supportano la gestione del protocollo TCP/IP indipendenti dalla scheda di rete.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -160,60 +160,60 @@ class Win32_NetworkAdapterConfiguration : CIM_Setting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ NetworkAdapterConfiguration** presenta questi tipi di membri:
+La **classe \_ NetworkAdapterConfiguration Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ NetworkAdapterConfiguration** presenta questi metodi.
+La **classe \_ NetworkAdapterConfiguration Win32** include questi metodi.
 
 
 
 | Metodo                                                                                                                       | Descrizione                                                                                                                                           |
 |:-----------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DisableIPSec**](disableipsec-method-in-class-win32-networkadapterconfiguration.md)                                       | Disabilita IPsec in questa scheda di rete abilitata per TCP/IP.<br/>                                                                                     |
+| [**DisableIPSec**](disableipsec-method-in-class-win32-networkadapterconfiguration.md)                                       | Disabilita IPsec su questa scheda di rete abilitata per TCP/IP.<br/>                                                                                     |
 | [**EnableDHCP**](enabledhcp-method-in-class-win32-networkadapterconfiguration.md)                                           | Abilita il Dynamic Host Configuration Protocol (DHCP) per il servizio con questa scheda di rete.<br/>                                              |
 | [**EnableDNS**](enabledns-method-in-class-win32-networkadapterconfiguration.md)                                             | Abilita il Domain Name System (DNS) per il servizio in questa scheda di rete associata a TCP/IP.<br/>                                                     |
-| [**EnableIPFilterSec**](enableipfiltersec-method-in-class-win32-networkadapterconfiguration.md)                             | Abilita IPsec a livello globale in tutte le schede di rete con binding IP.<br/>                                                                               |
-| [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md)                                         | Abilita IPsec su questa specifica scheda di rete abilitata per TCP/IP.<br/>                                                                             |
+| [**EnableIPFilterSec**](enableipfiltersec-method-in-class-win32-networkadapterconfiguration.md)                             | Abilita IPsec a livello globale in tutte le schede di rete associate a IP.<br/>                                                                               |
+| [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md)                                         | Abilita IPsec su questa scheda di rete specifica abilitata per TCP/IP.<br/>                                                                             |
 | [**EnableStatic**](enablestatic-method-in-class-win32-networkadapterconfiguration.md)                                       | Abilita l'indirizzamento TCP/IP statico per la scheda di rete di destinazione.<br/>                                                                           |
-| [**EnableWINS**](enablewins-method-in-class-win32-networkadapterconfiguration.md)                                           | Abilita le impostazioni WINS specifiche per TCP/IP, ma indipendente dalla scheda di rete.<br/>                                                          |
-| [**ReleaseDHCPLease**](releasedhcplease-method-in-class-win32-networkadapterconfiguration.md)                               | Rilascia l'indirizzo IP associato a una specifica scheda di rete abilitata per DHCP.<br/>                                                                  |
+| [**EnableWINS**](enablewins-method-in-class-win32-networkadapterconfiguration.md)                                           | Abilita le impostazioni WINS specifiche di TCP/IP, ma indipendenti dalla scheda di rete.<br/>                                                          |
+| [**ReleaseDHCPLease**](releasedhcplease-method-in-class-win32-networkadapterconfiguration.md)                               | Rilascia l'indirizzo IP associato a una scheda di rete abilitata per DHCP specifica.<br/>                                                                  |
 | [**ReleaseDHCPLeaseAll**](releasedhcpleaseall-method-in-class-win32-networkadapterconfiguration.md)                         | Rilascia gli indirizzi IP associati a tutte le schede di rete abilitate per DHCP.<br/>                                                                      |
-| [**RenewDHCPLease**](renewdhcplease-method-in-class-win32-networkadapterconfiguration.md)                                   | Rinnovare l'indirizzo IP in specifiche schede di rete abilitate per DHCP.<br/>                                                                           |
+| [**RenewDHCPLease**](renewdhcplease-method-in-class-win32-networkadapterconfiguration.md)                                   | Rinnova l'indirizzo IP su schede di rete abilitate per DHCP specifiche.<br/>                                                                           |
 | [**RenewDHCPLeaseAll**](renewdhcpleaseall-method-in-class-win32-networkadapterconfiguration.md)                             | Rinnova gli indirizzi IP in tutte le schede di rete abilitate per DHCP.<br/>                                                                              |
-| [**SetArpAlwaysSourceRoute**](setarpalwayssourceroute-method-in-class-win32-networkadapterconfiguration.md)                 | Imposta la trasmissione di query ARP da parte del protocollo TCP/IP.<br/>                                                                                        |
-| [**SetArpUseEtherSNAP**](setarpuseethersnap-method-in-class-win32-networkadapterconfiguration.md)                           | Consente ai pacchetti Ethernet di usare la codifica SNAP 802,3.<br/>                                                                                       |
-| [**SetDatabasePath**](setdatabasepath-method-in-class-win32-networkadapterconfiguration.md)                                 | Imposta il percorso dei file di database Internet standard (host, LMHOSTS, reti e protocolli).<br/>                                           |
-| [**SetDeadGWDetect**](setdeadgwdetect-method-in-class-win32-networkadapterconfiguration.md)                                 | Abilita il rilevamento del gateway non attivo.<br/>                                                                                                            |
-| [**SetDefaultTOS**](setdefaulttos-method-in-class-win32-networkadapterconfiguration.md)                                     | Obsoleta. Questo metodo imposta il valore predefinito del tipo di servizio (TOS) nell'intestazione dei pacchetti IP in uscita.<br/>                                   |
-| [**SetDefaultTTL**](setdefaultttl-method-in-class-win32-networkadapterconfiguration.md)                                     | Imposta il valore TTL (time to Live) predefinito nell'intestazione dei pacchetti IP in uscita.<br/>                                                            |
+| [**SetArpAlwaysSourceRoute**](setarpalwayssourceroute-method-in-class-win32-networkadapterconfiguration.md)                 | Imposta la trasmissione delle query ARP tramite TCP/IP.<br/>                                                                                        |
+| [**SetArpUseEtherSNAP**](setarpuseethersnap-method-in-class-win32-networkadapterconfiguration.md)                           | Consente ai pacchetti Ethernet di usare la codifica SNAP 802.3.<br/>                                                                                       |
+| [**SetDatabasePath**](setdatabasepath-method-in-class-win32-networkadapterconfiguration.md)                                 | Imposta il percorso dei file di database Internet standard (HOSTS, LMHOSTS, NETWORKS e PROTOCOLS).<br/>                                           |
+| [**SetDeadGWDetect**](setdeadgwdetect-method-in-class-win32-networkadapterconfiguration.md)                                 | Abilita il rilevamento di gateway non attiva.<br/>                                                                                                            |
+| [**SetDefaultTOS**](setdefaulttos-method-in-class-win32-networkadapterconfiguration.md)                                     | Obsoleta. Questo metodo imposta il valore toS (Type of Service) predefinito nell'intestazione dei pacchetti IP in uscita.<br/>                                   |
+| [**SetDefaultTTL**](setdefaultttl-method-in-class-win32-networkadapterconfiguration.md)                                     | Imposta il valore TTL (Time to Live) predefinito nell'intestazione dei pacchetti IP in uscita.<br/>                                                            |
 | [**SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)                                       | Imposta il dominio DNS.<br/>                                                                                                                       |
-| [**SetDNSServerSearchOrder**](setdnsserversearchorder-method-in-class-win32-networkadapterconfiguration.md)                 | Imposta l'ordine di ricerca del server sotto forma di matrice di elementi.<br/>                                                                                      |
-| [**SetDNSSuffixSearchOrder**](setdnssuffixsearchorder-method-in-class-win32-networkadapterconfiguration.md)                 | Imposta l'ordine di ricerca dei suffissi come una matrice di elementi.<br/>                                                                                      |
+| [**SetDNSServerSearchOrder**](setdnsserversearchorder-method-in-class-win32-networkadapterconfiguration.md)                 | Imposta l'ordine di ricerca del server come matrice di elementi.<br/>                                                                                      |
+| [**SetDNSSuffixSearchOrder**](setdnssuffixsearchorder-method-in-class-win32-networkadapterconfiguration.md)                 | Imposta l'ordine di ricerca dei suffissi come matrice di elementi.<br/>                                                                                      |
 | [**SetDynamicDNSRegistration**](setdynamicdnsregistration-method-in-class-win32-networkadapterconfiguration.md)             | Indica la registrazione DNS dinamica degli indirizzi IP per questa scheda associata a IP.<br/>                                                              |
-| [**SetForwardBufferMemory**](setforwardbuffermemory-method-in-class-win32-networkadapterconfiguration.md)                   | Specifica la quantità di memoria allocata dall'IP per archiviare i dati dei pacchetti nella coda dei pacchetti del router.<br/>                                                    |
-| [**Gateway**](setgateways-method-in-class-win32-networkadapterconfiguration.md)                                         | Specifica un elenco di gateway per il routing dei pacchetti destinati a una subnet diversa da quella a cui è connessa questa scheda.<br/>                |
-| [**SetIGMPLevel**](setigmplevel-method-in-class-win32-networkadapterconfiguration.md)                                       | Imposta la misura in cui il sistema supporta il multicast IP e partecipa al protocollo di gestione dei gruppi Internet.<br/>                   |
-| [**SetIPConnectionMetric**](setipconnectionmetric-method-in-class-win32-networkadapterconfiguration.md)                     | Imposta la metrica di routing associata a questo adapter associato a IP.<br/>                                                                             |
-| [**SetIPUseZeroBroadcast**](setipusezerobroadcast-method-in-class-win32-networkadapterconfiguration.md)                     | Imposta l'utilizzo broadcast IP zero.<br/>                                                                                                              |
-| [**SetIPXFrameTypeNetworkPairs**](win32-networkadapterconfiguration-setipxframetypenetworkpairs.md)                         | Imposta le coppie di fotogrammi/numero di rete IPX (Internetworking Packet Exchange) per questa scheda di rete.<br/>                                            |
+| [**SetForwardBufferMemory**](setforwardbuffermemory-method-in-class-win32-networkadapterconfiguration.md)                   | Specifica la quantità di memoria allocata dall'IP per archiviare i dati dei pacchetti nella coda di pacchetti del router.<br/>                                                    |
+| [**SetGateways**](setgateways-method-in-class-win32-networkadapterconfiguration.md)                                         | Specifica un elenco di gateway per il routing di pacchetti destinati a una subnet diversa da quella a cui è connessa la scheda.<br/>                |
+| [**SetIGMPLevel**](setigmplevel-method-in-class-win32-networkadapterconfiguration.md)                                       | Imposta la misura in cui il sistema supporta il multicast IP e partecipa al Internet Group Management Protocol.<br/>                   |
+| [**SetIPConnectionMetric**](setipconnectionmetric-method-in-class-win32-networkadapterconfiguration.md)                     | Imposta la metrica di routing associata a questa scheda associata a IP.<br/>                                                                             |
+| [**SetIPUseZeroBroadcast**](setipusezerobroadcast-method-in-class-win32-networkadapterconfiguration.md)                     | Imposta l'utilizzo della trasmissione IP zero.<br/>                                                                                                              |
+| [**SetIPXFrameTypeNetworkPairs**](win32-networkadapterconfiguration-setipxframetypenetworkpairs.md)                         | Imposta coppie numero/frame di rete IPX (Internetworking Packet Exchange) per questa scheda di rete.<br/>                                            |
 | [**SetIPXVirtualNetworkNumber**](win32-networkadapterconfiguration-setipxvirtualnetworknumber.md)                           | Imposta il numero di rete virtuale IPX (Internetworking Packet Exchange) nel computer di destinazione.<br/>                                       |
-| [**SetKeepAliveInterval**](setkeepaliveinterval-method-in-class-win32-networkadapterconfiguration.md)                       | Imposta l'intervallo che separa le ritrasmissioni keep-alive fino a quando non viene ricevuta una risposta.<br/>                                                      |
-| [**SetKeepAliveTime**](setkeepalivetime-method-in-class-win32-networkadapterconfiguration.md)                               | Imposta la frequenza con cui TCP tenta di verificare che una connessione inattiva sia ancora disponibile inviando un pacchetto keep-alive.<br/>                           |
-| [**SetMTU**](setmtu-method-in-class-win32-networkadapterconfiguration.md)                                                   | Imposta l'unità di trasmissione massima (MTU) predefinita per un'interfaccia di rete.<br/> Questo metodo non è supportato.<br/>                         |
-| [**SetNumForwardPackets**](setnumforwardpackets-method-in-class-win32-networkadapterconfiguration.md)                       | Imposta il numero di intestazioni di pacchetti IP allocate per la coda dei pacchetti router.<br/>                                                                |
-| [**SetPMTUBHDetect**](setpmtubhdetect-method-in-class-win32-networkadapterconfiguration.md)                                 | Abilita il rilevamento di router black hole.<br/>                                                                                                   |
-| [**SetPMTUDiscovery**](setpmtudiscovery-method-in-class-win32-networkadapterconfiguration.md)                               | Abilita l'individuazione dell'unità di trasmissione massima (MTU).<br/>                                                                                         |
-| [**SetTcpipNetbios consente**](settcpipnetbios-method-in-class-win32-networkadapterconfiguration.md)                                 | Imposta l'operazione predefinita di NetBIOS su TCP/IP.<br/>                                                                                         |
-| [**SetTcpMaxConnectRetransmissions**](settcpmaxconnectretransmissions-method-in-class-win32-networkadapterconfiguration.md) | Imposta il numero di tentativi TCP per la ritrasmissione di una richiesta di connessione prima dell'interruzione.<br/>                                                         |
+| [**SetKeepAliveInterval**](setkeepaliveinterval-method-in-class-win32-networkadapterconfiguration.md)                       | Imposta l'intervallo che separa le ritrasmissioni Keep-Alive fino alla ricezione di una risposta.<br/>                                                      |
+| [**SetKeepAliveTime**](setkeepalivetime-method-in-class-win32-networkadapterconfiguration.md)                               | Imposta la frequenza con cui TCP tenta di verificare che una connessione inattiva sia ancora disponibile inviando un pacchetto Keep-Alive.<br/>                           |
+| [**SetMTU**](setmtu-method-in-class-win32-networkadapterconfiguration.md)                                                   | Imposta l'unità massima di trasmissione (MTU) predefinita per un'interfaccia di rete.<br/> Questo metodo non è supportato.<br/>                         |
+| [**SetNumForwardPackets**](setnumforwardpackets-method-in-class-win32-networkadapterconfiguration.md)                       | Imposta il numero di intestazioni di pacchetti IP allocate per la coda di pacchetti del router.<br/>                                                                |
+| [**SetPMTUBHDetect**](setpmtubhdetect-method-in-class-win32-networkadapterconfiguration.md)                                 | Abilita il rilevamento dei router Black Hole.<br/>                                                                                                   |
+| [**SetPMTUDiscovery**](setpmtudiscovery-method-in-class-win32-networkadapterconfiguration.md)                               | Abilita l'individuazione dell'unità massima di trasmissione (MTU).<br/>                                                                                         |
+| [**SetTcpipNetbios**](settcpipnetbios-method-in-class-win32-networkadapterconfiguration.md)                                 | Imposta l'operazione predefinita di NetBIOS su TCP/IP.<br/>                                                                                         |
+| [**SetTcpMaxConnectRetransmissions**](settcpmaxconnectretransmissions-method-in-class-win32-networkadapterconfiguration.md) | Imposta il numero di tentativi che TCP ritrasmetterà una richiesta di connessione prima dell'interruzione.<br/>                                                         |
 | [**SetTcpMaxDataRetransmissions**](settcpmaxdataretransmissions-method-in-class-win32-networkadapterconfiguration.md)       | Imposta il numero di volte in cui TCP ritrasmetterà un singolo segmento di dati prima di interrompere la connessione.<br/>                                    |
-| [**SetTcpNumConnections**](settcpnumconnections-method-in-class-win32-networkadapterconfiguration.md)                       | Imposta il numero massimo di connessioni che TCP potrebbe avere aperto simultaneamente.<br/>                                                              |
-| [**SetTcpUseRFC1122UrgentPointer**](settcpuserfc1122urgentpointer-method-in-class-win32-networkadapterconfiguration.md)     | Specifica se TCP utilizza la specifica RFC 1122 per i dati urgenti o la modalità utilizzata dai sistemi derivati da Berkeley Software Design (BSD).<br/> |
+| [**SetTcpNumConnections**](settcpnumconnections-method-in-class-win32-networkadapterconfiguration.md)                       | Imposta il numero massimo di connessioni che TCP può avere aperto contemporaneamente.<br/>                                                              |
+| [**SetTcpUseRFC1122UrgentPointer**](settcpuserfc1122urgentpointer-method-in-class-win32-networkadapterconfiguration.md)     | Specifica se TCP usa la specifica RFC 1122 per i dati urgenti o la modalità usata dai sistemi derivati da Berkeley Software Design (BSD).<br/> |
 | [**SetTcpWindowSize**](settcpwindowsize-method-in-class-win32-networkadapterconfiguration.md)                               | Imposta le dimensioni massime della finestra di ricezione TCP offerte dal sistema.<br/>                                                                            |
-| [**SetWINSServer**](setwinsserver-method-in-class-win32-networkadapterconfiguration.md)                                     | Imposta i server WINS (Windows Internet Naming Service) primari e secondari in questa scheda di rete associata a TCP/IP.<br/>                        |
+| [**SetWINSServer**](setwinsserver-method-in-class-win32-networkadapterconfiguration.md)                                     | Imposta i server WINS (Windows Internet Naming Service) primari e secondari su questa scheda di rete associata a TCP/IP.<br/>                        |
 
 
 
@@ -221,105 +221,105 @@ La classe **Win32 \_ NetworkAdapterConfiguration** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ NetworkAdapterConfiguration** dispone di queste proprietà.
+La **classe \_ NetworkAdapterConfiguration Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **ArpAlwaysSourceRoute**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| ArpAlwaysSourceRoute")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| ArpAlwaysSourceRoute")
 </dt> </dl>
 
-Se **true**, TCP/IP trasmette le query ARP (Address Resolution Protocol) con il routing del codice sorgente abilitato nelle reti token ring. Per impostazione predefinita (FALSE), ARP esegue prima una query senza routing del codice sorgente, quindi tenta di eseguire il routing del codice sorgente se non viene ricevuta alcuna risposta. Il routing del codice sorgente consente il routing dei pacchetti di rete tra diversi tipi di reti.
+Se **TRUE,** TCP/IP trasmette query ARP (Address Resolution Protocol) con routing di origine abilitato nelle reti Token Ring. Per impostazione predefinita (FALSE), ARP esegue prima query senza routing di origine e quindi riprova con il routing di origine abilitato se non viene ricevuta alcuna risposta. Il routing di origine consente il routing dei pacchetti di rete tra diversi tipi di reti.
 
 </dd> <dt>
 
-**ArpUseEtherSNAP**
+**ArpUseetherSNAP**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| ArpUseEtherSNAP")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| ArpUseEtherSNAP")
 </dt> </dl>
 
-Se il valore è **true**, i pacchetti Ethernet seguono la codifica di SNAP (Sub-Network Access Protocol) IEEE 802,3. Impostando questo parametro su 1 si impone a TCP/IP di trasmettere i pacchetti Ethernet utilizzando la codifica di SNAP 802,3. Per impostazione predefinita (FALSE), lo stack trasmette i pacchetti in formato Ethernet DIX.
+Se **TRUE,** i pacchetti Ethernet seguono la codifica SNAP (Sub-Network Access Protocol) IEEE 802.3. L'impostazione di questo parametro su 1 impone a TCP/IP di trasmettere pacchetti Ethernet usando la codifica SNAP 802.3. Per impostazione predefinita (FALSE), lo stack trasmette i pacchetti in formato DIX Ethernet.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
-**DatabasePath**
+**Databasepath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| DatabasePath")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| DatabasePath")
 </dt> </dl>
 
-Percorso file di Windows valido per i file di database Internet standard (host, LMHOSTS, reti e protocolli). Il percorso del file viene utilizzato dall'interfaccia Windows Sockets.
+Percorso di file windows valido per i file di database Internet standard (HOSTS, LMHOSTS, NETWORKS e PROTOCOLS). Il percorso del file viene usato dall'interfaccia di Windows Sockets.
 
 </dd> <dt>
 
 **DeadGWDetectEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| EnableDeadGWDetect")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services Parametri \\ \\ Tcpip \\ \\ \| EnableDeadGWDetect")
 </dt> </dl>
 
-Se **true**, si verifica il rilevamento del gateway inattivo. Se questa funzionalità è abilitata, Transmission Control Protocol (TCP) richiede il protocollo IP (Internet Protocol) per passare a un gateway di backup se ritrasmette un segmento più volte senza ricevere una risposta.
+Se **TRUE,** viene eseguito il rilevamento di gateway non in tempo reale. Con questa funzionalità abilitata, Transmission Control Protocol (TCP) chiede al protocollo IP (Internet Protocol) di passare a un gateway di backup se ritrasmette un segmento più volte senza ricevere una risposta.
 
 </dd> <dt>
 
 **DefaultIPGateway**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Parameters \| GatewayPredefinito")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Parameters \| \| DefaultGateway")
 </dt> </dl>
 
-Matrice di indirizzi IP di gateway predefiniti usati dal computer.
+Matrice di indirizzi IP dei gateway predefiniti utilizzati dal sistema del computer.
 
 Esempio: "192.168.12.1 192.168.46.1"
 
@@ -328,39 +328,39 @@ Esempio: "192.168.12.1 192.168.46.1"
 **DefaultTOS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| DefaultTOS")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| DefaultTOS")
 </dt> </dl>
 
-Valore predefinito del tipo di servizio (TOS) impostato nell'intestazione dei pacchetti IP in uscita. La richiesta di commenti (RFC) 791 definisce i valori. Valore predefinito: 0 (zero), intervallo valido: 0-255.
+Valore TOS (Type Of Service) predefinito impostato nell'intestazione dei pacchetti IP in uscita. Request for Comments (RFC) 791 definisce i valori. Valore predefinito: 0 (zero), Intervallo valido: 0 - 255.
 
 </dd> <dt>
 
 **DefaultTTL**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| DefaultTTL")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| DefaultTTL")
 </dt> </dl>
 
-Valore predefinito TTL (time to Live) impostato nell'intestazione dei pacchetti IP in uscita. La durata (TTL) specifica il numero di router che un pacchetto IP può attraversare per raggiungere la destinazione prima di essere scartato. Ogni router decrementa di uno il numero di TTL di un pacchetto mentre passa attraverso ed Elimina i pacchetti, se il valore TTL è 0 (zero). Valore predefinito: 32, intervallo valido: 1-255.
+Valore TTL (Time To Live) predefinito impostato nell'intestazione dei pacchetti IP in uscita. Il TTL specifica il numero di router che un pacchetto IP può passare per raggiungere la destinazione prima di essere eliminato. Ogni router decrementa di uno il conteggio TTL di un pacchetto durante il passaggio e rimuove i pacchetti, se il valore TTL è 0 (zero). Valore predefinito: 32, Intervallo valido: 1 - 255.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -368,72 +368,72 @@ Tipo di accesso: sola lettura
 
 Descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **DHCPEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| EnableDHCP")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \| EnableDHCP")
 </dt> </dl>
 
-Se **true**, il server DHCP (Dynamic Host Configuration Protocol) assegna automaticamente un indirizzo IP al sistema quando stabilisce una connessione di rete.
+Se **TRUE,** il server DHCP (Dynamic Host Configuration Protocol) assegna automaticamente un indirizzo IP al sistema del computer quando stabilisce una connessione di rete.
 
 </dd> <dt>
 
 **DHCPLeaseExpires**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| LeaseTerminatesTime")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \| LeaseTerminatesTime")
 </dt> </dl>
 
-Data e ora di scadenza per un indirizzo IP con lease assegnato al computer dal server DHCP (Dynamic Host Configuration Protocol).
+Data e ora di scadenza di un indirizzo IP con lease assegnato al computer dal server DHCP (Dynamic Host Configuration Protocol).
 
-Esempio: 20521201000230,000000000
+Esempio: 20521201000230.0000000000
 
 </dd> <dt>
 
 **DHCPLeaseObtained**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| LeaseObtainedTime")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \| LeaseObtainedTime")
 </dt> </dl>
 
-Data e ora in cui è stato ottenuto il lease per l'indirizzo IP assegnato al computer dal server DHCP (Dynamic Host Configuration Protocol).
+Data e ora in cui il lease è stato ottenuto per l'indirizzo IP assegnato al computer dal server DHCP (Dynamic Host Configuration Protocol).
 
-Esempio: 19521201000230,000000000
+Esempio: 19521201000230.0000000000
 
 </dd> <dt>
 
 **DHCPServer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| dhcpserver")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \| DhcpServer")
 </dt> </dl>
 
 Indirizzo IP del server DHCP (Dynamic Host Configuration Protocol).
@@ -445,16 +445,16 @@ Esempio: "10.55.34.2"
 **DNSDomain**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| Domain")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| Domain")
 </dt> </dl>
 
-Nome dell'organizzazione seguito da un punto e un'estensione che indica il tipo di organizzazione, ad esempio "microsoft.com". Il nome può essere una qualsiasi combinazione di lettere da A A Z, i numeri da 0 A 9 e il trattino (-), più il carattere punto (.) utilizzato come separatore.
+Nome dell'organizzazione seguito da un punto e da un'estensione che indica il tipo di organizzazione, ad esempio "microsoft.com". Il nome può essere qualsiasi combinazione delle lettere da A a Z, dai numerali da 0 a 9 e dal trattino (-) e dal punto (.) usato come separatore.
 
 Esempio: "microsoft.com"
 
@@ -463,16 +463,16 @@ Esempio: "microsoft.com"
 **DNSDomainSuffixSearchOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| Searching")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| SearchList")
 </dt> </dl>
 
-Matrice di suffissi di dominio DNS da accodare alla fine dei nomi host durante la risoluzione del nome. Quando si tenta di risolvere un nome di dominio completo (FQDN) da un nome di solo host, il sistema aggiungerà prima di tutto il nome di dominio locale. Se l'operazione non riesce, il sistema utilizzerà l'elenco dei suffissi di dominio per creare nomi di dominio completi aggiuntivi nell'ordine elencato ed eseguirà una query sui server DNS per ciascuno di essi.
+Matrice di suffissi di dominio DNS da aggiungere alla fine dei nomi host durante la risoluzione dei nomi. Quando si tenta di risolvere un nome di dominio completo (FQDN) da un nome solo host, il sistema aggiungerà prima il nome di dominio locale. In caso contrario, il sistema userà l'elenco di suffissi di dominio per creare fqdn aggiuntivi nell'ordine elencato ed eseguire query sui server DNS per ognuno.
 
 Esempio: "samples.microsoft.com example.microsoft.com"
 
@@ -481,32 +481,32 @@ Esempio: "samples.microsoft.com example.microsoft.com"
 **DNSEnabledForWINSResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| EnableDNS")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| EnableDNS")
 </dt> </dl>
 
-Se **true**, il Domain Name System (DNS) è abilitato per la risoluzione dei nomi sulla risoluzione di Windows Internet Naming Service (WINS). Se il nome non può essere risolto con DNS, la richiesta del nome viene trasmessa a WINS per la risoluzione.
+Se **TRUE,** la Domain Name System (DNS) è abilitata per la risoluzione dei nomi su Windows Internet Naming Service (WINS). Se il nome non può essere risolto tramite DNS, la richiesta di nome viene inoltrata a WINS per la risoluzione.
 
 </dd> <dt>
 
 **DNSHostName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| hostname")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| Hostname")
 </dt> </dl>
 
-Nome host utilizzato per identificare il computer locale per l'autenticazione da parte di alcune utilità. Altre utilità basate su TCP/IP possono usare questo valore per acquisire il nome del computer locale. I nomi host vengono archiviati nei server DNS di una tabella che esegue il mapping dei nomi agli indirizzi IP per l'utilizzo da DNS. Il nome può essere una qualsiasi combinazione di lettere da A A Z, i numeri da 0 A 9 e il trattino (-), più il carattere punto (.) utilizzato come separatore. Per impostazione predefinita, questo valore è il nome del computer di rete Microsoft, ma l'amministratore di rete può assegnare un altro nome host senza influire sul nome del computer.
+Nome host usato per identificare il computer locale per l'autenticazione da parte di alcune utilità. Altre utilità basate su TCP/IP possono usare questo valore per acquisire il nome del computer locale. I nomi host vengono archiviati nei server DNS in una tabella che esegue il mapping dei nomi agli indirizzi IP per l'uso da parte del DNS. Il nome può essere qualsiasi combinazione di lettere da A a Z, numeri da 0 a 9 e trattino (-) più il carattere punto (.) usato come separatore. Per impostazione predefinita, questo valore è il nome del computer di rete Microsoft, ma l'amministratore di rete può assegnare un altro nome host senza influire sul nome del computer.
 
 Esempio: "corpdns"
 
@@ -515,87 +515,87 @@ Esempio: "corpdns"
 **DNSServerSearchOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| nameserver")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| NameServer")
 </dt> </dl>
 
-Matrice di indirizzi IP del server da utilizzare nell'esecuzione di query per i server DNS.
+Matrice di indirizzi IP del server da usare per l'esecuzione di query per i server DNS.
 
 </dd> <dt>
 
 **DomainDNSRegistrationEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, gli indirizzi IP per questa connessione vengono registrati in DNS con il nome di dominio della connessione, oltre a essere registrati con il nome DNS completo del computer. Il nome di dominio della connessione viene impostato tramite il metodo [**SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)() o assegnato da DSCP. Il nome registrato è il nome host del computer a cui è stato aggiunto il nome di dominio.
+Se **TRUE,** gli indirizzi IP per questa connessione vengono registrati in DNS con il nome di dominio di questa connessione oltre a essere registrati con il nome DNS completo del computer. Il nome di dominio di questa connessione viene impostato usando il [**metodo SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)() o assegnato da DSCP. Il nome registrato è il nome host del computer con il nome di dominio aggiunto.
 
 </dd> <dt>
 
 **ForwardBufferMemory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| ForwardBufferMemory"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ \\ \\ Tcpip Parameters \| ForwardBufferMemory"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Memoria allocata dall'IP per archiviare i dati dei pacchetti nella coda dei pacchetti del router. Quando lo spazio del buffer viene riempito, il router inizia a scartare i pacchetti in modo casuale dalla propria coda. I buffer di dati della coda di pacchetti hanno una lunghezza di 256 byte, quindi il valore di questo parametro deve essere un multiplo di 256. Più buffer vengono concatenati per i pacchetti più grandi. L'intestazione IP per un pacchetto viene archiviata separatamente. Questo parametro viene ignorato e non vengono allocati buffer se il router IP non è abilitato. La dimensione del buffer può variare dall'MTU di rete a un valore inferiore a 0xFFFFFFFF. Valore predefinito: 74240 (pacchetti da 50 1480 byte, arrotondati a un multiplo di 256).
+Memoria allocata da IP per archiviare i dati dei pacchetti nella coda di pacchetti del router. Quando questo spazio del buffer viene riempito, il router inizia a rimuovere i pacchetti in modo casuale dalla coda. I buffer dei dati della coda di pacchetti hanno una lunghezza di 256 byte, quindi il valore di questo parametro deve essere un multiplo di 256. Più buffer vengono concatenati per pacchetti di dimensioni maggiori. L'intestazione IP per un pacchetto viene archiviata separatamente. Questo parametro viene ignorato e non vengono allocati buffer se il router IP non è abilitato. Le dimensioni del buffer possono variare dall'MTU di rete a un valore inferiore a 0xFFFFFFFF. Impostazione predefinita: 74240 (50 pacchetti da 1480 byte, arrotondati a un multiplo di 256).
 
 </dd> <dt>
 
 **FullDNSRegistrationEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, gli indirizzi IP per questa connessione sono registrati in DNS con il nome DNS completo del computer. Il nome DNS completo del computer viene visualizzato nella scheda **Identificazione rete** dell'applicazione di sistema nel pannello di controllo.
+Se **TRUE,** gli indirizzi IP per questa connessione vengono registrati in DNS con il nome DNS completo del computer. Il nome DNS completo del computer viene visualizzato nella scheda **Identificazione** di rete dell'applicazione Sistema in Pannello di controllo.
 
 </dd> <dt>
 
 **GatewayCostMetric**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di valori di metrica dei costi interi (compresi tra 1 e 9999) da usare per il calcolo delle route più veloci, più affidabili o meno a elevato utilizzo di risorse. Questo argomento ha una corrispondenza uno-a-uno con la proprietà **DefaultIPGateway** .
+Matrice di valori di metrica dei costi interi (compresi tra 1 e 9999) da usare per calcolare le route più veloci, affidabili o meno a elevato utilizzo di risorse. Questo argomento ha una corrispondenza uno-a-uno con la **proprietà DefaultIPGateway.**
 
 </dd> <dt>
 
 **IGMPLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| IGMPLevel")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| IGMPLevel")
 </dt> </dl>
 
-Extent a cui il sistema supporta il multicast IP e partecipa al protocollo IGMP (Internet Group Management Protocol). Al livello 0 (zero), il sistema non fornisce alcun supporto per il multicast. Al livello 1, il sistema può inviare solo pacchetti multicast IP. Al livello 2, il sistema può inviare pacchetti multicast IP e partecipare completamente a IGMP per ricevere pacchetti multicast.
+Misura in cui il sistema supporta il multicast IP e partecipa al Internet Group Management Protocol (IGMP). Al livello 0 (zero), il sistema non fornisce supporto multicast. Al livello 1, il sistema può inviare solo pacchetti multicast IP. Al livello 2, il sistema può inviare pacchetti multicast IP e partecipare completamente a IGMP per ricevere pacchetti multicast.
 
 <dt>
 
@@ -615,12 +615,12 @@ Extent a cui il sistema supporta il multicast IP e partecipa al protocollo IGMP 
 
 <span id="IP___IGMP_multicast"></span><span id="ip___igmp_multicast"></span><span id="IP___IGMP_MULTICAST"></span>
 
-<span id="IP___IGMP_multicast"></span><span id="ip___igmp_multicast"></span><span id="IP___IGMP_MULTICAST"></span>**Multicast IP & IGMP** (2)
+<span id="IP___IGMP_multicast"></span><span id="ip___igmp_multicast"></span><span id="IP___IGMP_MULTICAST"></span>**Ip & multicast IGMP** (2)
 
 
 </dt> <dd>
 
-Multicast IP e IGMP (impostazione predefinita)
+Ip e multicast IGMP (impostazione predefinita)
 
 </dd> </dl>
 
@@ -629,169 +629,169 @@ Multicast IP e IGMP (impostazione predefinita)
 **Index**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \\ \\ {4D36E972-E325-11CE-BFC1-08002BE10318}")
+Qualificatori: [**key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet Control Class \\ \\ \\ \\ \\ \\ {4D36E972-E325-11CE-BFC1-08002BE10318}")
 </dt> </dl>
 
-Numero di indice della configurazione della scheda di rete Windows. Il numero di indice viene usato quando è disponibile più di una configurazione.
+Numero di indice della configurazione della scheda di rete di Windows. Il numero di indice viene usato quando sono disponibili più configurazioni.
 
 </dd> <dt>
 
-**IndiceInterfaccia**
+**InterfaceIndex**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore di indice che identifica in modo univoco un'interfaccia di rete locale. Il valore in questa proprietà corrisponde al valore della proprietà **IndiceInterfaccia** nell'istanza di [**Win32 \_ IP4RouteTable**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetable) che rappresenta l'interfaccia di rete nella tabella di route.
+Valore di indice che identifica in modo univoco un'interfaccia di rete locale. Il valore di questa proprietà corrisponde al valore della proprietà **InterfaceIndex** nell'istanza di [**Win32 \_ IP4RouteTable**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetable) che rappresenta l'interfaccia di rete nella tabella di route.
 
 </dd> <dt>
 
 **IPAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Parameters \\ \\ TCPIP \| IPAddress")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Parameters \| \\ \\ Tcpip \| IPAddress")
 </dt> </dl>
 
-Matrice di tutti gli indirizzi IP associati alla scheda di rete corrente. Questa proprietà può contenere indirizzi IPv6 o IPv4. Per ulteriori informazioni, vedere [supporto di IPv6 e IPv4 in WMI](../wmisdk/ipv6-and-ipv4-support-in-wmi.md).
+Matrice di tutti gli indirizzi IP associati alla scheda di rete corrente. Questa proprietà può contenere indirizzi IPv6 o indirizzi IPv4. Per altre informazioni, vedere [Supporto di IPv6 e IPv4 in WMI.](../wmisdk/ipv6-and-ipv4-support-in-wmi.md)
 
-Esempio di indirizzo IPv6: "2010:836B: 4179:: 836B: 4179"
+Indirizzo IPv6 di esempio: "2010:836B:4179::836B:4179"
 
 </dd> <dt>
 
 **IPConnectionMetric**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Costo dell'utilizzo delle route configurate per l'adapter associato IP ed è il valore ponderato per le route nella tabella di routing IP. Se sono presenti più route a una destinazione nella tabella di routing IP, viene utilizzata la route con la metrica più bassa. Il valore predefinito è 1.
+Costo dell'uso delle route configurate per la scheda associata IP ed è il valore ponderato per tali route nella tabella di routing IP. Se sono presenti più route per una destinazione nella tabella di routing IP, viene usata la route con la metrica più bassa. Il valore predefinito è 1.
 
 </dd> <dt>
 
 **IPEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Parameters \\ \\ tcpip")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Parameters \| \\ \\ Tcpip")
 </dt> </dl>
 
-Se **true**, TCP/IP è associato e abilitato in questa scheda di rete.
+Se **TRUE,** TCP/IP è associato e abilitato su questa scheda di rete.
 
 </dd> <dt>
 
 **IPFilterSecurityEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| IPFilterSecurityEnabled")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| IPFilterSecurityEnabled")
 </dt> </dl>
 
-Se **true**, la sicurezza della porta IP è abilitata a livello globale in tutte le schede di rete associate a IP e i valori di sicurezza associati alle singole schede di rete sono attivati. Questa proprietà viene utilizzata insieme a **IPSecPermitTCPPorts**, **IPSecPermitUDPPorts** e **IPSecPermitIPProtocols**. Se **false**, la sicurezza del filtro IP viene disabilitata in tutte le schede di rete e consente il flusso non filtrato di tutto il traffico di porta e protocollo.
+Se **TRUE,** la sicurezza delle porte IP è abilitata a livello globale in tutte le schede di rete associate a IP e i valori di sicurezza associati alle singole schede di rete sono attivati. Questa proprietà viene utilizzata insieme a **IPSecPermitTCPPorts,** **IPSecPermitUDPPorts** e **IPSecPermitIPProtocols**. Se **FALSE,** la sicurezza del filtro IP è disabilitata in tutte le schede di rete e consente a tutto il traffico di porta e protocollo di fluire senza filtri.
 
 </dd> <dt>
 
 **IPPortSecurityEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkAdapterConfiguration \| IPFilterSecurityEnabled")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkAdapterConfiguration \| IPFilterSecurityEnabled")
 </dt> </dl>
 
-Se **true**, la sicurezza della porta IP è abilitata a livello globale in tutte le schede di rete con binding IP. Questa proprietà è obsoleta. Al posto di questa proprietà, è consigliabile usare **IPFilterSecurityEnabled**.
+Se **TRUE,** la sicurezza delle porte IP è abilitata a livello globale in tutte le schede di rete associate a IP. Questa proprietà è obsoleta. Al posto di questa proprietà, è necessario usare **IPFilterSecurityEnabled**.
 
 </dd> <dt>
 
 **IPSecPermitIPProtocols**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| RawIPAllowedProtocols")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| RawIPAllowedProtocols")
 </dt> </dl>
 
-Matrice dei protocolli di cui è consentita l'esecuzione su IP. L'elenco di protocolli viene definito utilizzando il metodo [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) . L'elenco può essere vuoto o contenere valori numerici. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutti i protocolli. Una stringa vuota indica che non è consentita l'esecuzione di protocolli quando **IPFilterSecurityEnabled** è **true**.
+Matrice dei protocolli consentiti per l'esecuzione sull'indirizzo IP. L'elenco di protocolli viene definito usando il [**metodo EnableIPSec.**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) L'elenco sarà vuoto o conterrà valori numerici. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutti i protocolli. Una stringa vuota indica che non è consentita l'esecuzione di protocolli **quando IPFilterSecurityEnabled** è **TRUE.**
 
 </dd> <dt>
 
 **IPSecPermitTCPPorts**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| TCPAllowedPorts")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| TCPAllowedPorts")
 </dt> </dl>
 
-Matrice delle porte a cui verrà concessa l'autorizzazione di accesso per TCP. L'elenco di protocolli viene definito utilizzando il metodo [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) . L'elenco può essere vuoto o contenere valori numerici. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una stringa vuota indica che alle porte non è concessa l'autorizzazione di accesso quando **IPFilterSecurityEnabled** è **true**.
+Matrice delle porte a cui verrà concessa l'autorizzazione di accesso per TCP. L'elenco dei protocolli viene definito usando [**il metodo EnableIPSec.**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) L'elenco sarà vuoto o conterrà valori numerici. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una stringa vuota indica che a nessuna porta viene concessa l'autorizzazione di accesso **quando IPFilterSecurityEnabled** è **TRUE.**
 
 </dd> <dt>
 
 **IPSecPermitUDPPorts**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| UDPAllowedPorts")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| UDPAllowedPorts")
 </dt> </dl>
 
-Matrice delle porte a cui verrà concessa l'autorizzazione di accesso UDP (User Datagram Protocol). L'elenco di protocolli viene definito utilizzando il metodo [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) . L'elenco può essere vuoto o contenere valori numerici. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una stringa vuota indica che alle porte non è concessa l'autorizzazione di accesso quando **IPFilterSecurityEnabled** è **true**.
+Matrice delle porte a cui verrà concessa l'autorizzazione di accesso UDP (User Datagram Protocol). L'elenco dei protocolli viene definito usando [**il metodo EnableIPSec.**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) L'elenco sarà vuoto o conterrà valori numerici. Un valore numerico pari a 0 (zero) indica che è stata concessa l'autorizzazione di accesso per tutte le porte. Una stringa vuota indica che a nessuna porta viene concessa l'autorizzazione di accesso **quando IPFilterSecurityEnabled** è **TRUE.**
 
 </dd> <dt>
 
 **IPSubnet**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| \| submask Parameters")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Parameters \| \| SubnetMask")
 </dt> </dl>
 
 Matrice di tutte le subnet mask associate alla scheda di rete corrente.
@@ -803,64 +803,64 @@ Esempio: "255.255.0.0"
 **IPUseZeroBroadcast**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| parametro UseZeroBroadcast")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| UseZeroBroadcast")
 </dt> </dl>
 
-Se **true**, vengono usati gli zeri IP-broadcast (0.0.0.0) e il sistema usa le trasmissioni-broadcast (255.255.255.255). I sistemi informatici usano in genere le trasmissioni, ma quelle derivate dalle implementazioni di BSD usano gli zeri. I sistemi che non utilizzano le stesse trasmissioni non interagiscono nella stessa rete. Il valore predefinito è **false**.
+Se **TRUE,** vengono usati ip zeros-broadcast (0.0.0.0) e il sistema usa le trasmissioni uno (255.255.255.255. 255). I sistemi informatici usano in genere le trasmissioni a uno, ma quelle derivate dalle implementazioni di BSD usano le trasmissioni azzeramento. I sistemi che non usano le stesse trasmissioni non interoperativizzano nella stessa rete. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
 **IPXAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Sockets versione 2 \| [**getsockopt**](/windows/win32/api/winsock/nf-winsock-getsockopt) \| IPX \_ Address")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Sockets versione 2 \| [**getsockopt**](/windows/win32/api/winsock/nf-winsock-getsockopt) \| IPX \_ ADDRESS")
 </dt> </dl>
 
-La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
+La tecnologia IPX (Internetwork Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
 
 </dd> <dt>
 
 **IPXEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
+La tecnologia IPX (Internetwork Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
 
 </dd> <dt>
 
 **IPXFrameType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt32**
+Tipo di dati: **matrice uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ NWLNKIPX \\ \\ Parameters \| PktType")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx Parameters \\ \\ \| PktType")
 </dt> </dl>
 
-La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
+La tecnologia IPX (Internetwork Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
 
 <dt>
 
@@ -873,28 +873,28 @@ La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa pro
 
 <span id="Ethernet_802.3"></span><span id="ethernet_802.3"></span><span id="ETHERNET_802.3"></span>
 
-**Ethernet 802,3** (1)
+**Ethernet 802.3** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_802.2"></span><span id="ethernet_802.2"></span><span id="ETHERNET_802.2"></span>
 
-**Ethernet 802,2** (2)
+**Ethernet 802.2** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_SNAP"></span><span id="ethernet_snap"></span><span id="ETHERNET_SNAP"></span>
 
-**Snap** -in Ethernet (3)
+**SNAP Ethernet** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUTO"></span><span id="auto"></span>
 
-**Automatico** (255)
+**AUTO** (255)
 
 
 </dt> <dd></dd> </dl>
@@ -904,16 +904,16 @@ La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa pro
 **IPXMediaType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ NWLNKIPX \\ \\ Parameters \| mediaType")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx Parameters \\ \\ \| MediaType")
 </dt> </dl>
 
-La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
+La tecnologia IpX (Internetwork Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
 
 <dt>
 
@@ -950,159 +950,159 @@ La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa pro
 **IPXNetworkNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ NWLNKIPX \\ \\ Parameters \| numerorete")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx Parameters \\ \\ \| NetworkNumber")
 </dt> </dl>
 
-La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
+La tecnologia IPX (Internetwork Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
 
 </dd> <dt>
 
 **IPXVirtualNetNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ NWLNKIPX \\ \\ Parameters \| VirtualNetworkNumber")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx Parameters \\ \\ \| VirtualNetworkNumber")
 </dt> </dl>
 
-La tecnologia IPX (Internet-Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
+La tecnologia IPX (Internetwork Packet Exchange) non è più supportata e questa proprietà non contiene dati utili.
 
 </dd> <dt>
 
 **KeepAliveInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| keepAliveInterval"), [**unità**](../wmisdk/standard-qualifiers.md) ("millisecondi")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| KeepAliveInterval"), [**Units**](../wmisdk/standard-qualifiers.md) ("milliseconds")
 </dt> </dl>
 
-L'intervallo separa le ritrasmissioni keep-alive fino a quando non viene ricevuta una risposta. Dopo la ricezione di una risposta, il ritardo fino a quando la trasmissione Keep-Alive successiva viene nuovamente controllata dal valore di **KeepAliveTime**. La connessione verrà interrotta dopo che il numero di ritrasmissioni specificato da **TcpMaxDataRetransmissions** non è stato risposto. Valore predefinito: 1000, intervallo valido: 1-0xFFFFFFFF.
+Intervallo che separa le ritrasmissioni Keep Alive fino a quando non viene ricevuta una risposta. Dopo la ricezione di una risposta, il ritardo fino alla successiva trasmissione Keep Alive viene nuovamente controllato dal valore **di KeepAliveTime**. La connessione verrà interrotta dopo che il numero di ritrasmissioni specificato da **TcpMaxDataRetransmissions** è stato annullato. Valore predefinito: 1000, Intervallo valido: 1 - 0xFFFFFFFF.
 
 </dd> <dt>
 
 **KeepAliveTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| keepAliveInterval"), [**unità**](../wmisdk/standard-qualifiers.md) ("millisecondi")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| KeepAliveInterval"), [**Units**](../wmisdk/standard-qualifiers.md) ("milliseconds")
 </dt> </dl>
 
-La proprietà **KeepAliveTime** indica la frequenza con cui il protocollo TCP tenta di verificare che una connessione inattiva sia ancora intatta inviando un pacchetto keep-alive. Un sistema remoto raggiungibile rileverà la trasmissione keep-alive. I pacchetti Keep-Alive non vengono inviati per impostazione predefinita. Questa funzionalità può essere abilitata in una connessione da un'applicazione. Valore predefinito: 7,2 milioni (due ore).
+La **proprietà KeepAliveTime** indica la frequenza con cui tcp tenta di verificare che una connessione inattiva sia ancora intatta inviando un pacchetto Keep Alive. Un sistema remoto raggiungibile riconoscerà la trasmissione Keep-Alive. I pacchetti Keep Alive non vengono inviati per impostazione predefinita. Questa funzionalità può essere abilitata in una connessione da un'applicazione. Valore predefinito: 7.200.000 (due ore).
 
 </dd> <dt>
 
-**MACAddress**
+**Macaddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| device input and Output functions \| DeviceIoControl")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni di input e output del dispositivo Win32API \| \| DeviceIoControl")
 </dt> </dl>
 
 Indirizzo MAC (Media Access Control) della scheda di rete. Un indirizzo MAC viene assegnato dal produttore per identificare in modo univoco la scheda di rete.
 
-Esempio: "00:80: C7:8F: 6C: 96"
+Esempio: "00:80:C7:8F:6C:96"
 
 </dd> <dt>
 
 **MTU**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| MTU"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| MTU"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Esegue l'override dell'unità di trasmissione massima (MTU) predefinita per un'interfaccia di rete. MTU è la dimensione massima del pacchetto (inclusa l'intestazione di trasporto) che il trasporto trasmetterà sulla rete sottostante. Il datagramma IP può estendersi su più pacchetti. L'intervallo di questo valore si estende alla dimensione minima del pacchetto (68) al valore MTU supportato dalla rete sottostante.
+Esegue l'override dell'unità massima di trasmissione (MTU) predefinita per un'interfaccia di rete. Il valore MTU è la dimensione massima del pacchetto (inclusa l'intestazione del trasporto) che il trasporto trasmetterà sulla rete sottostante. Il datagramma IP può estendersi su più pacchetti. L'intervallo di questo valore si estende tra le dimensioni minime del pacchetto (68) e le MTU supportate dalla rete sottostante.
 
 </dd> <dt>
 
 **NumForwardPackets**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| NumForwardPackets")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| NumForwardPackets")
 </dt> </dl>
 
-Numero di intestazioni di pacchetti IP allocate per la coda dei pacchetti router. Quando tutte le intestazioni sono in uso, il router inizierà a eliminare i pacchetti dalla coda in modo casuale. Questo valore deve essere almeno uguale al valore di **ForwardBufferMemory** diviso per la dimensione massima dei dati IP delle reti connesse al router. Il valore non deve essere maggiore del valore di **ForwardBufferMemory** diviso per 256, poiché per ogni pacchetto vengono utilizzati almeno 256 byte di memoria del buffer di avanzamento. Il numero ottimale di pacchetti di avanzamento per una determinata dimensione di **ForwardBufferMemory** dipende dal tipo di traffico sulla rete. Tra questi due valori. Se il router non è abilitato, questo parametro viene ignorato e non vengono allocate intestazioni. Valore predefinito: 50, intervallo valido: 1-0xFFFFFFFE.
+Numero di intestazioni di pacchetti IP allocate per la coda di pacchetti del router. Quando tutte le intestazioni sono in uso, il router inizierà a rimuovere i pacchetti dalla coda in modo casuale. Questo valore deve essere almeno pari al valore **ForwardBufferMemory** diviso per le dimensioni massime dei dati IP delle reti connesse al router. Non deve essere maggiore del valore **ForwardBufferMemory** diviso per 256, poiché per ogni pacchetto vengono usati almeno 256 byte di memoria del buffer di inoltro. Il numero ottimale di pacchetti di inoltro per una determinata **dimensione ForwardBufferMemory** dipende dal tipo di traffico sulla rete. Sarà compreso tra questi due valori. Se il router non è abilitato, questo parametro viene ignorato e non viene allocata alcuna intestazione. Impostazione predefinita: 50, Intervallo valido: 1 - 0xFFFFFFFE.
 
 </dd> <dt>
 
 **PMTUBHDetectEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| EnablePMTUBHDetect")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| EnablePMTUBHDetect")
 </dt> </dl>
 
-Se **true**, il rilevamento di router black hole si verifica mentre TCP individua il percorso dell'unità di trasmissione massima. Un router black hole non restituisce messaggi non raggiungibili della destinazione ICMP quando è necessario frammentare un datagramma IP con il bit not Fragment impostato. TCP dipende dalla ricezione di questi messaggi per l'esecuzione dell'individuazione MTU del percorso. Se questa funzionalità è abilitata, TCP tenterà di inviare segmenti senza il bit non frammento impostato se diverse ritrasmissioni di un segmento non vengono riconosciute. Se il segmento viene riconosciuto come risultato, la MSS verrà ridotta e il bit not Fragment verrà impostato in pacchetti futuri sulla connessione. L'abilitazione del rilevamento di buchi neri aumenta il numero massimo di ritrasmissioni eseguite per un determinato segmento. Il valore predefinito di questa proprietà è **false**.
+Se **TRUE,** il rilevamento dei router black hole si verifica mentre TCP individua il percorso dell'unità di trasmissione massima. Un router black hole non restituisce messaggi ICMP destination Unreachable quando deve frammentare un datagramma IP con il bit Don't Fragment impostato. TCP dipende dalla ricezione di questi messaggi per eseguire l'individuazione MTU del percorso. Con questa funzionalità abilitata, TCP tenterà di inviare segmenti senza il bit Don't Fragment impostato se diverse ritrasmissioni di un segmento non vengono riconoscite. Se il segmento viene riconosciuto come risultato, mss verrà ridotto e il bit Don't Fragment verrà impostato nei pacchetti futuri nella connessione. L'abilitazione del rilevamento dei black hole aumenta il numero massimo di ritrasmissioni eseguite per un determinato segmento. Il valore predefinito di questa proprietà è **FALSE.**
 
 </dd> <dt>
 
-**PMTUDiscoveryEnabled consente**
+**PMTUDiscoveryEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| EnablePMTUDiscovery")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| EnablePMTUDiscovery")
 </dt> </dl>
 
-Se **true**, il percorso dell'unità di trasmissione massima (MTU) viene individuato sul percorso di un host remoto. Scoprendo il percorso MTU e limitando i segmenti TCP a queste dimensioni, TCP può eliminare la frammentazione nei router lungo il percorso che connette le reti con MTU diversi. La frammentazione influisce negativamente sulla velocità effettiva TCP e sulla congestione della rete. Impostando questo parametro su **false** , viene usato un MTU di 576 byte per tutte le connessioni che non sono computer nella subnet locale. Il valore predefinito è **true**.
+Se **TRUE,** il percorso MTU (Maximum Transmission Unit) viene individuato nel percorso di un host remoto. Individuando il percorso MTU e limitando i segmenti TCP a queste dimensioni, TCP può eliminare la frammentazione nei router lungo il percorso che connettono reti con MTU diverse. La frammentazione influisce negativamente sulla velocità effettiva TCP e sulla congestione della rete. L'impostazione di questo parametro su **FALSE** comporta l'uso di un MTU di 576 byte per tutte le connessioni che non sono a computer nella subnet locale. Il valore predefinito è **TRUE.**
 
 </dd> <dt>
 
-**ServiceName**
+**Servicename**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ NetworkCards \| ServiceName")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ NetworkCards \| ServiceName")
 </dt> </dl>
 
 Nome del servizio della scheda di rete. Questo nome è in genere più breve del nome completo del prodotto.
@@ -1114,31 +1114,31 @@ Esempio: "Elnkii"
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Identificatore con cui è noto l'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **TcpipNetbiosOptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Bitmap delle possibili impostazioni correlate a NetBIOS su TCP/IP. I valori sono identificati nell'elenco seguente.
+Mappa di bit delle possibili impostazioni correlate a NetBIOS su TCP/IP. I valori sono identificati nell'elenco seguente.
 
 <dt>
 
@@ -1168,83 +1168,83 @@ Bitmap delle possibili impostazioni correlate a NetBIOS su TCP/IP. I valori sono
 **TcpMaxConnectRetransmissions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| TcpMaxConnectRetransmissions")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| TcpMaxConnectRetransmissions")
 </dt> </dl>
 
-Numero di tentativi effettuati da TCP per ritrasmettere una richiesta di connessione prima di terminare la connessione. Il timeout di ritrasmissione iniziale è di 3 secondi. Il timeout di ritrasmissione raddoppia per ogni tentativo. Valore predefinito: 3, intervallo valido: 0-0xFFFFFFFF.
+Numero di tentativi TCP di ritrasmissione di una richiesta di connessione prima di terminare la connessione. Il timeout di ritrasmissione iniziale è di 3 secondi. Il timeout di ritrasmissione raddoppia per ogni tentativo. Impostazione predefinita: 3, Intervallo valido: 0 - 0xFFFFFFFF.
 
 </dd> <dt>
 
 **TcpMaxDataRetransmissions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| TcpMaxDataRetransmissions")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| TcpMaxDataRetransmissions")
 </dt> </dl>
 
-Numero di volte in cui TCP ritrasmette un singolo segmento di dati (segmento non di connessione) prima di terminare la connessione. Il timeout di ritrasmissione raddoppia con ogni ritrasmissione successiva in una connessione. Valore predefinito: 5, intervallo valido: 0-0xFFFFFFFF.
+Numero di volte in cui TCP ritrasmette un singolo segmento di dati (segmento non di connessione) prima di terminare la connessione. Il timeout di ritrasmissione raddoppia a ogni successiva ritrasmissione in una connessione. Valore predefinito: 5, Intervallo valido: 0 - 0xFFFFFFFF.
 
 </dd> <dt>
 
 **TcpNumConnections**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| TcpNumConnections")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| TcpNumConnections")
 </dt> </dl>
 
-Numero massimo di connessioni che TCP può aprire contemporaneamente. Impostazione predefinita: 0xFFFFFE, intervallo valido: 0-0xFFFFFE.
+Numero massimo di connessioni che TCP può aprire contemporaneamente. Impostazione predefinita: 0xFFFFFE, Intervallo valido: 0 - 0xFFFFFE.
 
 </dd> <dt>
 
 **TcpUseRFC1122UrgentPointer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| TcpUseRFC1122UrgentPointer")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| TcpUseRFC1122UrgentPointer")
 </dt> </dl>
 
-Se **true**, TCP utilizza la specifica RFC 1122 per i dati urgenti. Se **false** (impostazione predefinita), TCP utilizza la modalità utilizzata dai sistemi derivati di Berkeley Software Design (BSD). I due meccanismi interpretano il puntatore urgente in modo diverso e non sono interoperativi. Il valore predefinito è **false**.
+Se **TRUE,** TCP usa la specifica RFC 1122 per i dati urgenti. Se **FALSE** (impostazione predefinita), TCP usa la modalità usata dai sistemi derivati da Berkeley Software Design (BSD). I due meccanismi interpretano il puntatore urgente in modo diverso e non sono interoperativi. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
 **TcpWindowSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| TcpWindowSize"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| TcpWindowSize"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Dimensioni massime della finestra di ricezione TCP offerte dal sistema. Nella finestra di ricezione viene specificato il numero di byte che un mittente può trasmettere senza ricevere un riconoscimento. In generale, le finestre di ricezione più grandi migliorano le prestazioni rispetto alle reti ad alto ritardo e a larghezza di banda elevata. Per migliorare l'efficienza, la finestra di ricezione deve essere un multiplo pari delle dimensioni del segmento massimo TCP (MSS). Impostazione predefinita: quattro volte la dimensione massima dei dati TCP o un multiplo pari delle dimensioni dei dati TCP arrotondati al multiplo più vicino di 8192. Il valore predefinito per le reti Ethernet è 8760. Intervallo valido: 0-65535.
+Dimensioni massime della finestra di ricezione TCP offerte dal sistema. La finestra di ricezione specifica il numero di byte che un mittente può trasmettere senza ricevere un riconoscimento. In generale, le finestre ricevente più grandi miglioreranno le prestazioni rispetto alle reti a ritardo elevato e a larghezza di banda elevata. Per migliorare l'efficienza, la finestra ricevente deve essere un multiplo pari delle dimensioni massime del segmento TCP (MSS). Impostazione predefinita: quattro volte le dimensioni massime dei dati TCP o un multiplo pari delle dimensioni dei dati TCP arrotondato al multiplo più vicino di 8192. Per impostazione predefinita, le reti Ethernet sono 8760. Intervallo valido: da 0 a 65535.
 
 > [!Note]  
-> Windows Vista: questa proprietà accede alla `"CurrentControlSet\\Services\\Tcpip\\Parameters|TcpWindowSize"` voce del registro di sistema, che non viene usata nell'implementazione corrente del sistema operativo.
+> Windows Vista: questa proprietà accede alla voce del Registro di sistema, che `"CurrentControlSet\\Services\\Tcpip\\Parameters|TcpWindowSize"` non viene usata nell'implementazione corrente del sistema operativo.
 
  
 
@@ -1253,94 +1253,94 @@ Dimensioni massime della finestra di ricezione TCP offerte dal sistema. Nella fi
 **WINSEnableLMHostsLookup**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| EnableLMHOSTS")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services Parametri \\ \\ Tcpip \\ \\ \| EnableLMHOSTS")
 </dt> </dl>
 
-Se **true**, vengono usati i file di ricerca locali. I file di ricerca conterranno una mappa degli indirizzi IP ai nomi host. Se sono presenti nel sistema locale, saranno disponibili in% SystemRoot% \\ system32 \\ drivers e \\ così via.
+Se **TRUE,** vengono usati i file di ricerca locali. I file di ricerca conterranno una mappa di indirizzi IP ai nomi host. Se esistono nel sistema locale, si trovano in %SystemRoot% \\ system32 \\ driver e così \\ via.
 
 </dd> <dt>
 
 **WINSHostLookupFile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| System Information Functions \| [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) \| \\ \\ drivers \\ \\ etc \\ \\ LMHOSTS")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| System Information Functions \| [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya)drivers etc \| \\ \\ \\ \\ \\ \\ lmhosts")
 </dt> </dl>
 
-Percorso di un file di ricerca WINS nel sistema locale. Questo file conterrà una mappa degli indirizzi IP ai nomi host. Se il file specificato in questa proprietà viene trovato, verrà copiato nella cartella% SystemRoot% \\ system32 \\ drivers \\ del sistema locale. Valido solo se la proprietà **WINSEnableLMHostsLookup** è **true**.
+Percorso di un file di ricerca WINS nel sistema locale. Questo file conterrà una mappa di indirizzi IP ai nomi host. Se il file specificato in questa proprietà viene trovato, verrà copiato nella cartella %SystemRoot% \\ driver system32 e così via del sistema \\ \\ locale. Valido solo se la **proprietà WINSEnableLMHostsLookup** è **TRUE.**
 
 </dd> <dt>
 
 **WINSPrimaryServer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| device input and Output functions \| DeviceIoControl")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni di input e output del dispositivo Win32API \| \| DeviceIoControl")
 </dt> </dl>
 
-Indirizzo IP del server WINS primario.
+Indirizzo IP per il server WINS primario.
 
 </dd> <dt>
 
 **WINSScopeID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ TCPIP \\ \\ Parameters \| elemento ScopeId")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip Parameters \\ \\ \| ScopeID")
 </dt> </dl>
 
-Valore aggiunto alla fine del nome NetBIOS che isola un gruppo di sistemi informatici che comunicano tra loro. Viene utilizzato per tutte le transazioni NetBIOS su comunicazioni TCP/IP dal sistema del computer. I computer configurati con identificatori di ambito identici sono in grado di comunicare con questo computer. I client TCP/IP con identificatori di ambito diversi ignorano i pacchetti provenienti da computer con questo identificatore di ambito. Valido solo quando il metodo [**EnableWINS**](enablewins-method-in-class-win32-networkadapterconfiguration.md) viene eseguito correttamente.
+Valore aggiunto alla fine del nome NetBIOS che isola un gruppo di sistemi di computer che comunicano solo tra loro. Viene usato per tutte le transazioni NetBIOS su comunicazioni TCP/IP dal sistema informatico. I computer configurati con identificatori di ambito identici sono in grado di comunicare con questo computer. I client TCP/IP con identificatori di ambito diversi ignorano i pacchetti provenienti dai computer con questo identificatore di ambito. Valido solo quando il [**metodo EnableWINS**](enablewins-method-in-class-win32-networkadapterconfiguration.md) viene eseguito correttamente.
 
 </dd> <dt>
 
 **WINSSecondaryServer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| device input and Output functions \| DeviceIoControl")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni di input e output del dispositivo Win32API \| \| DeviceIoControl")
 </dt> </dl>
 
-Indirizzo IP del server WINS secondario.
+Indirizzo IP per il server WINS secondario.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ NetworkAdapterConfiguration** deriva dall' [**\_ impostazione CIM**](cim-setting.md).
+La **classe \_ NetworkAdapterConfiguration Win32** deriva dall'impostazione [**CIM \_**](cim-setting.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript [Information Retriever WMI](https://Gallery.TechNet.Microsoft.Com/e493376c-1286-456b-bd4b-4ac3b0e9bb45) della raccolta TechNet viene utilizzata la classe **Win32 \_ NetworkAdapterConfiguration** per recuperare le informazioni di configurazione di rete da un numero di computer remoti.
+L'esempio di codice VBScript di [WMI Information Retriever](https://Gallery.TechNet.Microsoft.Com/e493376c-1286-456b-bd4b-4ac3b0e9bb45) in TechNet Gallery usa la **classe \_ NetworkAdapterConfiguration Win32** per recuperare le informazioni di configurazione di rete da diversi computer remoti.
 
-L'esempio relativo a [Get-ComputerInfo-query computer da computer locale/remoto-(WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) PowerShell nella raccolta TechNet usa una serie di chiamate a hardware e software, tra cui **Win32 \_ NetworkAdapterConfiguration**, per visualizzare informazioni su un sistema locale o remoto.
+L'esempio [Get-ComputerInfo - Query Computer Info From Local/Remote Computers - (WMI) PowerShell (Get-ComputerInfo - Query Computer Info From Local/Remote Computers - (WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) in TechNet Gallery usa una serie di chiamate all'hardware e al software, tra cui **\_ NetworkAdapterConfiguration Win32,** per visualizzare informazioni su un sistema locale o remoto.
 
-Il codice di PowerShell seguente consente di recuperare le impostazioni di configurazione per l'adapter Microsoft ISTAP.
+Il codice di PowerShell seguente recupera le impostazioni di configurazione per l'adapter Microsoft ISTAP.
 
 
 ```PowerShell
@@ -1350,7 +1350,7 @@ $IstapAdapterConfig
 
 
 
-Nell'esempio C seguente \# vengono recuperati la descrizione e il numero di indice di tutte le istanze di configurazione della scheda di rete. Si noti che \# in questo esempio C viene utilizzato lo spazio dei nomi [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) , che in genere è più efficiente delle classi WMI dello spazio dei nomi [System. Management](/dotnet/api/system.management) .
+Nell'esempio C \# seguente vengono recuperati la descrizione e il numero di indice di tutte le istanze di configurazione della scheda di rete. Si noti che in questo esempio C viene utilizzato lo spazio dei nomi \# [Microsoft.Management.Infrastructure,](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) che in genere viene ridimensionato in modo più efficiente rispetto alle classi WMI dello spazio dei [nomi System.Management.](/dotnet/api/system.management)
 
 
 ```CSharp
@@ -1374,7 +1374,7 @@ Console.ReadLine();
 
 
 
-Nell'esempio C seguente \# vengono recuperati la descrizione e il numero di indice di tutte le istanze di configurazione della scheda di rete. Si noti che \# in questo esempio C viene utilizzato lo spazio dei nomi [System. Management](/dotnet/api/system.management) originale, che è stato sostituito da [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)).
+Nell'esempio C \# seguente vengono recuperati la descrizione e il numero di indice di tutte le istanze di configurazione della scheda di rete. Si noti che in questo esempio C viene utilizzato lo spazio dei nomi \# [System.Management](/dotnet/api/system.management) originale, sostituito da [Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)).
 
 
 ```CSharp
@@ -1399,7 +1399,7 @@ static void oldSchoolQueryInstanceFunc()
 
 
 
-Nell'esempio seguente vengono recuperate le informazioni dalla classe **Win32 \_ NetworkAdapterConfiguration** .
+Nell'esempio seguente vengono recuperate informazioni **dalla classe \_ NetworkAdapterConfiguration Win32.**
 
 
 ```VB
@@ -1674,12 +1674,12 @@ End Function
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1688,16 +1688,16 @@ End Function
 
 <dl> <dt>
 
-[**\_Impostazione CIM**](cim-setting.md)
+[**Impostazione \_ CIM**](cim-setting.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[Attività WMI: rete](../wmisdk/wmi-tasks--networking.md)
+[Attività WMI: Rete](../wmisdk/wmi-tasks--networking.md)
 </dt> <dt>
 
-[Attività WMI: account e domini](../wmisdk/wmi-tasks--accounts-and-domains.md)
+[Attività WMI: Account e domini](../wmisdk/wmi-tasks--accounts-and-domains.md)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](../wmisdk/ipv6-and-ipv4-support-in-wmi.md)
