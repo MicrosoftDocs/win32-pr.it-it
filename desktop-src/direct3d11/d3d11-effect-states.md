@@ -1,104 +1,104 @@
 ---
-title: Gruppi di stati effetti (Direct3D 11)
-description: Gli Stati degli effetti sono coppie nome-valore sotto forma di espressione.
+title: Gruppi di stati degli effetti (Direct3D 11)
+description: Gli stati dell'effetto sono coppie nome-valore sotto forma di espressione.
 ms.assetid: 87883483-4fa6-4362-807e-53b79b7d1370
 keywords:
-- effetti, gruppi di stato (Direct3D 11)
+- effect, state groups (Direct3D 11)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58def71b6362706eb831129b1d222ef3d1cc9341
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e5a757926d8c4c259adc94f505a778cf73233b5a
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963110"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335335"
 ---
-# <a name="effect-state-groups-direct3d-11"></a>Gruppi di stati effetti (Direct3D 11)
+# <a name="effect-state-groups-direct3d-11"></a>Gruppi di stati degli effetti (Direct3D 11)
 
-Gli Stati degli effetti sono coppie nome-valore sotto forma di espressione.
+Gli stati dell'effetto sono coppie nome-valore sotto forma di espressione.
 
--   [Stato di Blend](#blend-state)
--   [Stato profondità e stencil](#depth-and-stencil-state)
+-   [Stato di blend](#blend-state)
+-   [Profondità e stato dello stencil](#depth-and-stencil-state)
 -   [Stato rasterizzazione](#rasterizer-state)
--   [Stato campionatore](#sampler-state)
--   [Stato dell'oggetto effetto](#effect-object-state)
--   [Definizione e utilizzo di oggetti stato](#defining-and-using-state-objects)
+-   [Stato del campionatore](#sampler-state)
+-   [Stato dell'oggetto effect](#effect-object-state)
+-   [Definizione e uso di oggetti di stato](#defining-and-using-state-objects)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="blend-state"></a>Stato di Blend
+## <a name="blend-state"></a>Stato di blend
 
 
 
-|                                                                                                                       |                                                           |
+| Stato dell'effetto                                                                                                                      | Gruppo                                                          |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| ALPHATOCOVERAGEENABLEBLENDENABLESRCBLENDDESTBLENDBLENDOP SRCBLENDALPHADESTBLENDALPHABLENDOPALPHARENDERTARGETWRITEMASK | Membri di [ **d3d11 \_ Blend \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_blend_desc) |
+| ALPHATOCOVERAGEENABLEBLENDENABLESRCBLENDDESTBLENDBLENDOP SRCBLENDALPHADESTBLENDALPHABLENDOPALPHARENDERTARGETWRITEMASK | Membri di [ **D3D11 \_ BLEND \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_blend_desc) |
 
 
 
- 
+ 
 
-## <a name="depth-and-stencil-state"></a>Stato profondità e stencil
+## <a name="depth-and-stencil-state"></a>Profondità e stato dello stencil
 
 
 
-|                                                                                                                                                                |                                                                               |
+|  Stato dell'effetto                                                                                                                                                              | Gruppo                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| DEPTHENABLEDEPTHWRITEMASKDEPTHFUNCSTENCILENABLESTENCILREADMASKSTENCILWRITEMASK                                                                                 | Membri di [ **d3d11 \_ Depth \_ stencil \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencil_desc)    |
-| FRONTFACESTENCILFAILFRONTFACESTENCILZFAILFRONTFACESTENCILPASSFRONTFACESTENCILFUNCBACKFACESTENCILFAILBACKFACESTENCILZFAILBACKFACESTENCILPASSBACKFACESTENCILFUNC | Membro di [ **d3d11 \_ Depth \_ STENCILOP \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencilop_desc) |
+| DEPTHENABLEDEPTHWRITEMASKDEPTHFUNCSTENCILENABLESTENCILREADMASKSTENCILWRITEMASK                                                                                 | Membri di [ **D3D11 \_ DEPTH \_ STENCIL \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencil_desc)    |
+| FRONTFACESTENCILFAILFRONTFACESTENCILZFAILFRONTFACESTENCILPASSFRONTFACESTENCILFUNCBACKFACESTENCILFAILBACKFACESTENCILZFAILBACKFACESTENCILPASSBACKFACESTENCILFUNC | Membro di [ **D3D11 \_ DEPTH \_ STENCILOP \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencilop_desc) |
 
 
 
- 
+ 
 
 ## <a name="rasterizer-state"></a>Stato rasterizzazione
 
 
 
-|                                                                                                                                 |                                                                     |
+| Stato dell'effetto                                                                                                                                | Gruppo                                                                    |
 |---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| FILLMODE                                                                                                                        | [**\_Modalità di riempimento d3d11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_fill_mode)                        |
-| CULLMODE                                                                                                                        | [**\_Modalità di eliminazione d3d11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cull_mode)                        |
-| FRONTCOUNTERCLOCKWISEDEPTHBIASDEPTHBIASCLAMPSLOPESCALEDDEPTHBIAS ZCLIPENABLESCISSORENABLEMULTISAMPLEENABLEANTIALIASEDLINEENABLE | Membri di [ **d3d11 \_ rasterizzator \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_rasterizer_desc) |
+| Fillmode                                                                                                                        | [**MODALITÀ RIEMPIMENTO D3D11 \_ \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_fill_mode)                        |
+| CULLMODE                                                                                                                        | [**MODALITÀ CULL D3D11 \_ \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cull_mode)                        |
+| FRONTCOUNTERCLOCKWISEDEPTHBIASDEPTHBIASCLAMPSLOPESCALEDDEPTHBIAS ZCLIPENABLESCISSORENABLEMULTISAMPLEENABLEANTIALIASEDLINEENABLE | Membri di [ **D3D11 \_ RASTERIZER \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_rasterizer_desc) |
 
 
 
- 
+ 
 
-## <a name="sampler-state"></a>Stato campionatore
+## <a name="sampler-state"></a>Stato del campionatore
 
 
 
-|                                                                                                     |                                                               |
+| Stato dell'effetto                                                                                                    | Gruppo                                                              |
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Filter Address AddressV AddressW MipLODBias MaxAnisotropy ComparisonFunc BorderColor MinLOD MaxLOD | Membri del [ **\_ campionatore d3d11 \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_sampler_desc) |
+| Filtro AddressU AddressV AddressW MipLODBias MaxAnisotropy ComparisonFunc BorderColor MinLOD MaxLOD | Membri di [ **D3D11 \_ SAMPLER \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_sampler_desc) |
 
 
 
- 
+ 
 
-Per esempi, vedere [Sampler Type (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler) .
+Per [esempi, vedere Sampler Type (DirectX HLSL) (Tipo](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler) di campionatore - DirectX HLSL).
 
-## <a name="effect-object-state"></a>Stato dell'oggetto effetto
+## <a name="effect-object-state"></a>Stato dell'oggetto Effect
 
 
 
-| Questo oggetto effetto                          | Mapping a                                                             |
+| Questo oggetto Effect                          | Mapping a                                                             |
 |---------------------------------------------|---------------------------------------------------------------------|
-| RASTERIZERSTATE                             | Oggetto stato di [rasterizzazione dello stato](#rasterizer-state) .               |
-| DEPTHSTENCILSTATE                           | Oggetto di stato di [profondità e stencil](#depth-and-stencil-state) . |
-| BLENDSTATE                                  | Oggetto di stato di [Blend](#blend-state) .                         |
+| RASTERIZERSTATE                             | Oggetto [stato rasterizzatore.](#rasterizer-state)               |
+| DEPTHSTENCILSTATE                           | Oggetto [di stato Depth e Stencil State.](#depth-and-stencil-state) |
+| BLENDSTATE                                  | Oggetto [stato blend.](#blend-state)                         |
 | VERTEXSHADER                                | Oggetto vertex shader compilato.                                    |
-| PIXELSHADER                                 | Oggetto pixel shader compilato.                                     |
-| GEOMETRYSHADER                              | Oggetto Geometry shader compilato.                                  |
-| DS \_ STENCILREFAB \_ BLENDFACTORAB \_ SAMPLEMASK | Membri di [**D3DX11 \_ pass \_ desc**](d3dx11-pass-desc.md).          |
+| Pixelshader                                 | Oggetto pixel shader compilato.                                     |
+| GEOMETRYSHADER                              | Oggetto geometry shader compilato.                                  |
+| DS \_ STENCILREFAB \_ BLENDFACTORAB \_ SAMPLEMASK | Membri di [**D3DX11 \_ PASS \_ DESC**](d3dx11-pass-desc.md).          |
 
 
 
- 
+ 
 
-## <a name="defining-and-using-state-objects"></a>Definizione e utilizzo di oggetti stato
+## <a name="defining-and-using-state-objects"></a>Definizione e uso di oggetti di stato
 
-Gli oggetti di stato vengono dichiarati in file FX nel formato seguente. StateObjectType è uno degli Stati elencati sopra e MemberName è il nome di qualsiasi membro che avrà un valore non predefinito.
+Gli oggetti di stato vengono dichiarati nei file FX nel formato seguente. StateObjectType è uno degli stati elencati in precedenza e MemberName è il nome di qualsiasi membro che avrà un valore non predefinito.
 
 
 ```
@@ -112,7 +112,7 @@ StateObjectType ObjectName {
 
 
 
-Per impostare, ad esempio, un oggetto di stato Blend con AlphaToCoverageEnable e BlendEnable \[ 0 \] impostato su **false** , viene utilizzato il codice seguente.
+Ad esempio, per impostare un oggetto stato di blend con AlphaToCoverageEnable e BlendEnable 0 impostato su FALSE, verrà usato \[ \] il codice seguente. 
 
 
 ```
@@ -125,7 +125,7 @@ BlendState NoBlend {
 
 
 
-L'oggetto di stato viene applicato a un passaggio di tecnica usando una delle funzioni SetStateGroup descritte in [Effect Technique Syntax (Direct3D 11)](d3d11-effect-technique-syntax.md). Per applicare, ad esempio, l'oggetto BlendState descritto sopra, verrebbe utilizzato il codice seguente.
+L'oggetto state viene applicato a un passaggio di tecnica usando una delle funzioni SetStateGroup descritte in [Effect Technique Syntax (Direct3D 11)](d3d11-effect-technique-syntax.md). Ad esempio, per applicare l'oggetto BlendState descritto sopra, verrà usato il codice seguente.
 
 
 ```
@@ -145,6 +145,6 @@ SetBlendState( NoBlend, float4( 0.0f, 0.0f, 0.0f, 0.0f ), 0xFFFFFFFF );
 [Formato effetto (Direct3D 11)](d3d11-effect-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Annullare un buffer.
+description: Annullare il mapping di un buffer.
 ms.assetid: 47f125cd-5c0a-4814-93c5-f2f11ce33ea6
-title: 'Metodo ID3DX10MeshBuffer:: annullare (D3DX10. h)'
+title: Metodo ID3DX10MeshBuffer::Unmap (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0c3b382e0cfd01a51d89ddacb51ad390446315a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 11b15f8bc1e4103503b183672ebd31e92b4daea7
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323763"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335375"
 ---
-# <a name="id3dx10meshbufferunmap-method"></a>Metodo ID3DX10MeshBuffer:: annullare
+# <a name="id3dx10meshbufferunmap-method"></a>Metodo ID3DX10MeshBuffer::Unmap
 
-Annullare un buffer.
+Annullare il mapping di un buffer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +42,15 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 
 
-|                                                                                                                                               |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Differenze tra Direct3D 9 e Direct3D 10:<br/> Annullare () in Direct3D 10 è analogo allo sblocco di risorse () in Direct3D 9.<br/> |
+Differenze tra Direct3D 9 e Direct3D 10:
+
+- Unmap() in Direct3D 10 è analogo alla risorsa Unlock() in Direct3D 9.
 
 
 
@@ -62,8 +62,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

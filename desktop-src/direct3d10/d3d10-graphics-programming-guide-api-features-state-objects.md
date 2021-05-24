@@ -1,75 +1,75 @@
 ---
-description: In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che consentono di ridurre notevolmente il costo delle modifiche di stato.
+description: In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che riducono notevolmente il costo delle modifiche dello stato.
 ms.assetid: b2839da9-60ed-4f6c-9cc7-eac53647cca7
-title: Oggetti stato (Direct3D 10)
+title: Oggetti di stato (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a06e8603361a83049440774cfd2e12b4148b183
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1a51c05e3e220e510c462265941549f91e6368a9
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304603"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335425"
 ---
-# <a name="state-objects-direct3d-10"></a>Oggetti stato (Direct3D 10)
+# <a name="state-objects-direct3d-10"></a>Oggetti di stato (Direct3D 10)
 
-In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che consentono di ridurre notevolmente il costo delle modifiche di stato. Sono disponibili diversi oggetti di stato e ognuno è progettato per inizializzare un set di stato per una determinata fase della pipeline. È possibile creare fino a 4096 di ogni tipo di oggetto di stato.
+In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che riducono notevolmente il costo delle modifiche dello stato. Sono disponibili diversi oggetti stato e ognuno è progettato per inizializzare un set di stato per una determinata fase della pipeline. È possibile creare fino a 4096 di ogni tipo di oggetto stato.
 
--   [Input-stato layout](#input-layout-state)
+-   [Stato del layout di input](#input-layout-state)
 -   [Stato rasterizzazione](#rasterizer-state)
--   [Stato stencil profondità](#depth-stencil-state)
--   [Stato di Blend](#blend-state)
--   [Stato campionatore](#sampler-state)
+-   [Stato depth-stencil](#depth-stencil-state)
+-   [Stato di blend](#blend-state)
+-   [Stato del campionatore](#sampler-state)
 -   [Considerazioni sulle prestazioni](#performance-considerations)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="input-layout-state"></a>Stato Input-Layout
+## <a name="input-layout-state"></a>Input-Layout stato
 
-Questo gruppo di stato (vedere [**\_ elemento input \_ D3D10 \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)) determina il modo in cui la [fase input-assembler](../direct3d11/d3d10-graphics-programming-guide-input-assembler-stage.md) legge i dati dai buffer di input e li assembla per l'uso da parte del vertex shader. Questo include lo stato, ad esempio il numero di elementi nel buffer di input e la firma dei dati di input. La fase input-assembler è una nuova fase della pipeline il cui compito è quello di trasmettere le primitive dalla memoria alla pipeline.
+Questo gruppo di stato (vedere [**D3D10 \_ INPUT \_ ELEMENT \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)determina il modo in cui la fase dell'assembler di [input](../direct3d11/d3d10-graphics-programming-guide-input-assembler-stage.md) legge i dati dai buffer di input e lo assembla per l'uso da parte del vertex shader. Include lo stato, ad esempio il numero di elementi nel buffer di input e la firma dei dati di input. La fase dell'assembler di input è una nuova fase della pipeline il cui processo è quello di trasmettere le primitive dalla memoria alla pipeline.
 
-Per creare un oggetto di stato del layout di input, vedere [**CreateInputLayout**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createinputlayout).
+Per creare un oggetto input-layout-state, vedere [**CreateInputLayout**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createinputlayout).
 
 ## <a name="rasterizer-state"></a>Stato rasterizzazione
 
-Questo gruppo di stato (vedere [**D3D10 \_ rasterizzator \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_rasterizer_desc)) Inizializza la [fase di rasterizzazione](../direct3d11/d3d10-graphics-programming-guide-rasterizer-stage.md). Questo oggetto include lo stato, ad esempio le modalità riempimento o selezione, l'abilitazione di un rettangolo a forbice per il ritaglio e l'impostazione di parametri multisample. In questa fase le primitive vengono rasterizzate in pixel, eseguendo operazioni come il ritaglio e il mapping delle primitive al viewport.
+Questo gruppo di stato (vedere [**D3D10 \_ RASTERIZER \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_rasterizer_desc)inizializza la fase [del rasterizzatore](../direct3d11/d3d10-graphics-programming-guide-rasterizer-stage.md). Questo oggetto include lo stato, ad esempio le modalità di riempimento o di interruzione, l'abilitazione di un rettangolo di forbice per il ritaglio e l'impostazione di parametri multicampionamento. Questa fase rasterizza le primitive in pixel, eseguendo operazioni come il ritaglio e il mapping delle primitive al viewport.
 
-Per creare un oggetto di stato di rasterizzazione, vedere [**CreateRasterizerState**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createrasterizerstate).
+Per creare un oggetto stato di rasterizzazione, vedere [**CreateRasterizerState.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createrasterizerstate)
 
-## <a name="depth-stencil-state"></a>Stato Depth-Stencil
+## <a name="depth-stencil-state"></a>Depth-Stencil stato
 
-Questo gruppo di stato (vedere [**D3D10 \_ Depth \_ stencil \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencil_desc)) Inizializza la parte depth-stencil della [fase di Unione dell'output](../direct3d11/d3d10-graphics-programming-guide-output-merger-stage.md). In particolare, questo oggetto Inizializza la profondità e il test di stencil.
+Questo gruppo di stato (vedere [**D3D10 \_ DEPTH \_ STENCIL \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_depth_stencil_desc)inizializza la parte depth-stencil della fase [di unione dell'output.](../direct3d11/d3d10-graphics-programming-guide-output-merger-stage.md) In particolare, questo oggetto inizializza i test di profondità e stencil.
 
-Per creare un oggetto depth-stencil-state, vedere [**CreateDepthStencilState**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createdepthstencilstate).
+Per creare un oggetto depth-stencil-state, vedere [**CreateDepthStencilState.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createdepthstencilstate)
 
-## <a name="blend-state"></a>Stato di Blend
+## <a name="blend-state"></a>Stato blend
 
-Questo gruppo di stato (vedere [**D3D10 \_ Blend \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_blend_desc)) Inizializza la parte di combinazione della [fase di Unione dell'output](../direct3d11/d3d10-graphics-programming-guide-output-merger-stage.md).
+Questo gruppo di stato (vedere [**D3D10 \_ BLEND \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_blend_desc)inizializza la parte di fusione della fase [di unione dell'output.](../direct3d11/d3d10-graphics-programming-guide-output-merger-stage.md)
 
-Per creare un oggetto di stato Blend, vedere [**CreateBlendState**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createblendstate).
+Per creare un oggetto stato di blend, vedere [**CreateBlendState.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createblendstate)
 
-## <a name="sampler-state"></a>Stato campionatore
+## <a name="sampler-state"></a>Stato del campionatore
 
-Questo gruppo di stato (vedere [**D3D10 \_ Sampler \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_sampler_desc)) Inizializza un oggetto Sampler. Un oggetto Sampler viene usato dalle fasi dello shader per filtrare le trame in memoria.
+Questo gruppo di stato (vedere [**D3D10 \_ SAMPLER \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_sampler_desc)inizializza un oggetto campionatore. Un oggetto campionatore viene usato dalle fasi dello shader per filtrare le trame in memoria.
 
 
 
-|                                                                                                                                                                                                             |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Differenze tra Direct3D 9 e Direct3D 10:<br/> In Direct3D 10, l'oggetto Sampler non è più associato a una trama specifica, ma descrive semplicemente come applicare il filtro in base a qualsiasi risorsa collegata. |
+Differenze tra Direct3D 9 e Direct3D 10:
+
+- In Direct3D 10 l'oggetto campionatore non è più associato a una trama specifica, ma descrive semplicemente come filtrare in base a qualsiasi risorsa collegata.
 
 
 
  
 
-Per creare un oggetto stato del campionatore, vedere [**CreateSamplerState**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createsamplerstate).
+Per creare un oggetto sampler-state, vedere [**CreateSamplerState.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createsamplerstate)
 
 ## <a name="performance-considerations"></a>Considerazioni sulle prestazioni
 
-La progettazione dell'API per l'utilizzo di oggetti stato crea diversi vantaggi in merito alle prestazioni. Sono inclusi lo stato di convalida al momento della creazione dell'oggetto, l'abilitazione della memorizzazione nella cache degli oggetti stato nell'hardware e la riduzione sostanziale della quantità di stato passato durante una chiamata API di impostazione dello stato (passando un handle all'oggetto stato anziché allo stato).
+La progettazione dell'API per l'uso di oggetti di stato offre diversi vantaggi in termini di prestazioni. Questi includono la convalida dello stato al momento della creazione dell'oggetto, l'abilitazione della memorizzazione nella cache degli oggetti di stato nell'hardware e la riduzione notevolmente della quantità di stato passata durante una chiamata API di impostazione dello stato (passando un handle all'oggetto di stato anziché lo stato).
 
-Per ottenere questi miglioramenti delle prestazioni, è necessario creare gli oggetti di stato all'avvio dell'applicazione, ben prima del ciclo di rendering. Gli oggetti di stato non sono modificabili, ovvero, una volta creati, non è possibile modificarli. È invece necessario eliminarli e ricrearli. Per ovviare a questa restrizione, è possibile creare fino a 4096 di ogni tipo di oggetti stato. Ad esempio, è possibile creare diversi oggetti sampler con diverse combinazioni di stato del campionatore. La modifica dello stato del campionatore viene quindi eseguita chiamando l'API set appropriata che passa un handle all'oggetto (anziché lo stato del campionatore). Questo riduce significativamente la quantità di overhead durante ogni frame di rendering per la modifica dello stato, in quanto il numero di chiamate e la quantità di dati vengono notevolmente ridotti.
+Per ottenere questi miglioramenti delle prestazioni, è necessario creare gli oggetti di stato all'avvio dell'applicazione, molto prima del ciclo di rendering. Gli oggetti di stato non sono modificabili, in altri modo, una volta creati, non è possibile modificarli. È invece necessario eliminare e ricrearli. Per far fronte a questa restrizione, è possibile creare fino a 4096 di ogni tipo di oggetti di stato. Ad esempio, è possibile creare diversi oggetti campionatore con varie combinazioni di stato del campionatore. La modifica dello stato del campionatore viene quindi eseguita chiamando l'API Set appropriata che passa un handle all'oggetto (anziché allo stato del campionatore). In questo modo si riduce notevolmente la quantità di overhead durante ogni frame di rendering per la modifica dello stato poiché il numero di chiamate e la quantità di dati vengono notevolmente ridotti.
 
-In alternativa, è possibile scegliere di utilizzare il sistema di effetti che gestirà automaticamente la creazione e l'eliminazione efficienti degli oggetti stato per l'applicazione.
+In alternativa, è possibile scegliere di usare il sistema di effetti che gestirà automaticamente la creazione e la distruzione efficienti degli oggetti di stato per l'applicazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

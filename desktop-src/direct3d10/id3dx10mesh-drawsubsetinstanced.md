@@ -1,7 +1,7 @@
 ---
-description: Creare diverse istanze dello stesso subset di una mesh.
+description: Disegnare diverse istanze dello stesso subset di una mesh.
 ms.assetid: 2a17ecdb-c6f3-401c-b7ed-8a42fe159de0
-title: Metodo ID3DX10Mesh::D rawSubsetInstanced (D3DX10. h)
+title: Metodo ID3DX10Mesh::D rawSubsetInstanced (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 314f85d896be629254def560e55ce6a05bfe1fbd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2e28d7a7d2c1d743090832d68793ec3743662308
+ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323158"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110335635"
 ---
-# <a name="id3dx10meshdrawsubsetinstanced-method"></a>ID3DX10Mesh::D Metodo rawSubsetInstanced
+# <a name="id3dx10meshdrawsubsetinstanced-method"></a>Metodo ID3DX10Mesh::D rawSubsetInstanced
 
-Creare diverse istanze dello stesso subset di una mesh.
+Disegnare diverse istanze dello stesso subset di una mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ HRESULT DrawSubsetInstanced(
 
 <dl> <dt>
 
-*AttribId* \[ in\]
+*AttribId* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Specifica il subset della mesh da creare. Questo valore viene utilizzato per distinguere i visi in una mesh come appartenenti a uno o più gruppi di attributi. Vedere la sezione Osservazioni.
+Specifica il subset della mesh da disegnare. Questo valore viene usato per distinguere i visi in una mesh come appartenenti a uno o più gruppi di attributi. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*InstanceCount* \[ in\]
+*InstanceCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di istanze di di cui eseguire il rendering.
+Numero di istanze di cui eseguire il rendering.
 
 </dd> <dt>
 
-*StartInstanceLocation* \[ in\]
+*StartInstanceLocation* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Istanza da cui iniziare il recupero in ogni buffer contrassegnato come dati dell'istanza.
 
@@ -73,15 +73,15 @@ Istanza da cui iniziare il recupero in ogni buffer contrassegnato come dati dell
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Una mesh contiene una tabella degli attributi. La tabella degli attributi può dividere una mesh in subset, in cui ogni subset viene identificato con un ID attributo. Ad esempio, una mesh con 200 visi, divisa in tre subset, potrebbe avere una tabella di attributi simile alla seguente:
+Una mesh contiene una tabella di attributi. La tabella degli attributi può dividere una mesh in subset, in cui ogni subset viene identificato con un ID attributo. Ad esempio, una mesh con 200 visi, suddivisa in tre subset, potrebbe avere una tabella di attributi simile alla seguente:
 
 
 
-|            |                 |
+| Subset     | Smile           |
 |------------|-----------------|
 | AttribID 0 | Visi 0 ~ 50    |
 | AttribID 1 | Visi 51 ~ 125  |
@@ -91,11 +91,11 @@ Una mesh contiene una tabella degli attributi. La tabella degli attributi può d
 
  
 
-La creazione di istanze può estendere le prestazioni riutilizzando la stessa geometria per creare più oggetti in una scena. Un esempio di istanza può consistere nel creare lo stesso oggetto con posizioni e colori diversi. L'indicizzazione richiede più buffer vertex: almeno uno per i dati per vertice e un secondo buffer per i dati per istanza.
+Le istanze possono estendere le prestazioni riutilizzando la stessa geometria per disegnare più oggetti in una scena. Un esempio di istanze può essere quello di disegnare lo stesso oggetto con posizioni e colori diversi. L'indicizzazione richiede più buffer dei vertici: almeno uno per i dati per vertice e un secondo buffer per i dati per istanza.
 
-Il disegno di istanze con DrawSubsetInstanced è molto simile al processo usato con [**ID3D10Device::D rawindexedinstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) descritto nell' [esempio di istanze](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx). La differenza principale quando si usa DrawSubsetInstanced è che i buffer dei vertici e degli indici devono essere estratti dall'oggetto [**interfaccia ID3DX10Mesh**](id3dx10mesh.md) prima di poter combinare i dati di istanza.
+Il disegno di istanze con DrawSubsetInstanced è molto simile al processo usato con [**ID3D10Device::D rawIndexedInstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) descritto in [Esempio](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx)di istanze. La differenza principale quando si usa DrawSubsetInstanced è che i buffer dei vertici e degli indici devono essere estratti dall'oggetto interfaccia [**ID3DX10Mesh**](id3dx10mesh.md) prima di poter combinare i dati di istanza.
 
-Il codice seguente illustra l'estrazione dei buffer di Vertex e index dall'oggetto mesh.
+Il codice seguente illustra l'estrazione dei buffer dei vertici e degli indici dall'oggetto mesh.
 
 
 ```
@@ -114,8 +114,8 @@ Il codice seguente illustra l'estrazione dei buffer di Vertex e index dall'ogget
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
