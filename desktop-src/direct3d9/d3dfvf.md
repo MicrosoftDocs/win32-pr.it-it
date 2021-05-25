@@ -4,12 +4,12 @@ ms.assetid: 85d9f5b2-8e4a-4f92-a587-eae5b293778c
 title: D3DFVF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a12b4f6008023a388bd204440a0b544db85c19
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: a088dda530904c320720371c76601fd4fb254481
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999438"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343261"
 ---
 # <a name="d3dfvf"></a>D3DFVF
 
@@ -23,14 +23,14 @@ I flag seguenti descrivono un formato di vertice. Per informazioni sui formati d
 
 | \#Definire                            | Descrizione                                                                                                                                                                                                                                                                                                                                                             | Ordine e tipo dei dati                                                                                       |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| D3DFVF \_ DIFFUSE                     | Il formato vertice include un componente di colore diffuso.                                                                                                                                                                                                                                                                                                                       | DWORD in ordine ARGB. Vedere [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md).                                         |
+| D3DFVF \_ DIFFUSE                     | Il formato vertice include un componente colore diffuso.                                                                                                                                                                                                                                                                                                                       | DWORD in ordine ARGB. Vedere [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md).                                         |
 | D3DFVF \_ NORMAL                      | Il formato vertice include un vettore normale dei vertici. Questo flag non può essere usato con il flag D3DFVF \_ XYZRHW.                                                                                                                                                                                                                                                                   | float, float, float                                                                                       |
 | D3DFVF \_ PSIZE                       | Formato del vertice specificato in dimensioni in punti. Queste dimensioni sono espresse in unità dello spazio della fotocamera per i vertici che non vengono trasformati e accesi e in unità di spazio del dispositivo per i vertici trasformati e accesi.                                                                                                                                                                          | float                                                                                                     |
-| D3DFVF \_ SPECULAR                    | Il formato vertice include un componente di colore speculare.                                                                                                                                                                                                                                                                                                                      | DWORD in ordine ARGB. Vedere [**D3DCOLOR \_ ARGB.**](d3dcolor-argb.md)                                         |
+| SPECULARE D3DFVF \_                    | Il formato vertice include un componente di colore speculare.                                                                                                                                                                                                                                                                                                                      | DWORD in ordine ARGB. Vedere [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md).                                         |
 | D3DFVF \_ XYZ                         | Il formato vertice include la posizione di un vertice non trasformato. Questo flag non può essere usato con il flag D3DFVF \_ XYZRHW.                                                                                                                                                                                                                                                  | float, float, float.                                                                                      |
 | D3DFVF \_ XYZRHW                      | Il formato vertice include la posizione di un vertice trasformato. Questo flag non può essere usato con i flag D3DFVF \_ XYZ o D3DFVF \_ NORMAL.                                                                                                                                                                                                                                     | float, float, float, float.                                                                               |
-| Da D3DFVF \_ XYZB1 a D3DFVF \_ XYZB5 | Il formato vertice contiene i dati sulla posizione e un numero corrispondente di valori di ponderazione (beta) da usare per le operazioni di fusione dei vertici multimatrix. Attualmente, Direct3D può essere misto con un massimo di tre valori di ponderazione e quattro matrici di fusione. Per altre informazioni sull'uso delle matrici di blending, vedere [Indexed Vertex Blending (Direct3D 9) (Blending vertici indicizzati (Direct3D 9)](indexed-vertex-blending.md)). | 1, 2 o 3 float. Quando si usa D3DFVF \_ LASTBETA UBYTE4, l'ultimo peso di fusione viene \_ considerato come DWORD. |
-| D3DFVF \_ XYZW                        | Il formato vertice contiene dati trasformati e ritagliati (x, y, z, w). ProcessVertices non richiama il clipper, ma restituisce i dati nelle coordinate del clip. Questa costante è progettata per e può essere usata solo con la pipeline dei vertici programmabili.                                                                                                                 | float, float, float, float                                                                                |
+| Da D3DFVF \_ XYZB1 a D3DFVF \_ XYZB5 | Il formato vertice contiene i dati di posizione e un numero corrispondente di valori di ponderazione (beta) da usare per le operazioni di fusione dei vertici multimatrix. Attualmente Direct3D può essere misto con un massimo di tre valori di ponderazione e quattro matrici di fusione. Per altre informazioni sull'uso delle matrici di fusione, vedere [Indexed Vertex Blending (Direct3D 9)](indexed-vertex-blending.md). | 1, 2 o 3 float. Quando si usa D3DFVF \_ LASTBETA UBYTE4, l'ultimo peso di \_ fusione viene considerato come DWORD. |
+| D3DFVF \_ XYZW                        | Il formato vertice contiene dati trasformati e ritagliati (x, y, z, w). ProcessVertices non richiama il clipper, ma restituisce i dati nelle coordinate di ritaglio. Questa costante è progettata per e può essere usata solo con la pipeline dei vertici programmabili.                                                                                                                 | float, float, float, float                                                                                |
 
 
 
@@ -45,7 +45,7 @@ I flag seguenti descrivono i flag di trama usati dalla pipeline a funzione fissa
 | \#Definire                          | Descrizione                                                                                                                                                                                                                                                                        |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D3DFVF \_ TEX0 - D3DFVF \_ TEX8       | Numero di set di coordinate di trama per questo vertice. I valori effettivi per questi flag non sono sequenziali.                                                                                                                                                                           |
-| D3DFVF \_ TEXCOORDSIZEN(coordIndex) | Definire un set di dati delle coordinate di trama. n indica la dimensione delle coordinate della trama. coordIndex indica il numero di indice delle coordinate di trama. Vedere [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) e [Coordinate trama e Fasi trama](texture-coordinates.md). |
+| D3DFVF \_ TEXCOORDSIZEN(coordIndex) | Definire un set di dati delle coordinate di trama. n indica la dimensione delle coordinate della trama. coordIndex indica il numero di indice delle coordinate di trama. Vedere [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) e [Coordinate della trama e Fasi della trama.](texture-coordinates.md) |
 
 
 
@@ -53,7 +53,7 @@ I flag seguenti descrivono i flag di trama usati dalla pipeline a funzione fissa
 
 ## <a name="mask-flags"></a>Flag di maschera
 
-I flag seguenti descrivono i flag di maschera usati dalla pipeline di funzioni fisse.
+I flag seguenti descrivono i flag di maschera usati dalla pipeline a funzione fissa.
 
 
 
@@ -85,7 +85,7 @@ I flag seguenti descrivono un'ampia gamma di flag usati dalla pipeline a funzion
 </tr>
 <tr class="even">
 <td>D3DFVF_LASTBETA_D3DCOLOR</td>
-<td>L'ultimo campo beta nei dati della posizione del vertice sarà di tipo D3DCOLOR. I dati nei campi beta vengono usati con l'interfaccia della tavolozza della matrice per specificare gli indici della matrice.</td>
+<td>L'ultimo campo beta nei dati della posizione dei vertici sarà di tipo D3DCOLOR. I dati nei campi beta vengono usati con l'interfaccia della tavolozza della matrice per specificare gli indici della matrice.</td>
 </tr>
 <tr class="odd">
 <td>D3DFVF_LASTBETA_UBYTE4</td>
@@ -114,7 +114,7 @@ struct VERTEXPOSITION
 </tbody>
 </table>
 
-<p>Dato che FVF è dichiarato come: D3DFVF_XYZB5 | D3DFVF_LASTBETA_UBYTE4. Weight e MatrixIndices sono inclusi nella versione beta[5], dove D3DFVF_LASTBETA_UBYTE4 indica di interpretare l'ultima DWORD in beta[5] come tipo UBYTE4.</p></td>
+<p>Dato che FVF è dichiarato come: D3DFVF_XYZB5 | D3DFVF_LASTBETA_UBYTE4. Weight e MatrixIndices sono inclusi nella versione beta[5], dove D3DFVF_LASTBETA_UBYTE4 indica di interpretare l'ultima DWORD nella versione beta[5] come tipo UBYTE4.</p></td>
 </tr>
 <tr class="even">
 <td>D3DFVF_TEXCOUNT_SHIFT</td>
@@ -198,7 +198,7 @@ dwFVF = ( D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
 
 
 
-|                          |             |
+| Requisito                         | Valore            |
 |--------------------------|-------------|
 | Intestazione                   | d3d9types.h |
 | Sistema operativo minimo | Windows 98  |

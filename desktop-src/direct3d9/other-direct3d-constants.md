@@ -4,22 +4,19 @@ ms.assetid: 3e314f73-2653-481a-ac7d-1ce7db0591e2
 title: Altre costanti Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb289cb080519fab661d7a43f59bca3d8a9db3a0
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: da78bf4ca08c8e1e2a09608a1a446d24e5846fb7
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998608"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342776"
 ---
 # <a name="other-direct3d-constants"></a>Altre costanti Direct3D
 
 ## <a name="sdk-version"></a>Versione dell'SDK
 
-
-
-|                     |
+|  \#Definire                   |
 |---------------------|
-| \#Definire            |
 | VERSIONE DELL'SDK D3D \_ \_   |
 | VERSIONE DELL'SDK D3D9B \_ \_ |
 
@@ -53,7 +50,7 @@ Queste \# definisce sono dichiarate in d3d9types.h.
 
 
 
-|                          |            |
+| Requisito                         | Valore           |
 |--------------------------|------------|
 | Sistema operativo minimo | Windows 98 |
 

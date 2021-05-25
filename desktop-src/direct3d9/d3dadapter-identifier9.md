@@ -1,7 +1,7 @@
 ---
 description: Contiene informazioni che identificano l'adapter.
 ms.assetid: d0d59df9-c512-4d69-b0a0-7d87d7a380f6
-title: Struttura D3DADAPTER_IDENTIFIER9 (D3D9Types. h)
+title: D3DADAPTER_IDENTIFIER9 struttura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 33aba75cafff5f9e69a74d5570f98455a9853289
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db4b25cb44b3b43b3b9754f241e2c505bdfedbc7
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322381"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343396"
 ---
-# <a name="d3dadapter_identifier9-structure"></a>\_Struttura D3DADAPTER IDENTIFIER9
+# <a name="d3dadapter_identifier9-structure"></a>Struttura D3DADAPTER \_ IDENTIFIER9
 
 Contiene informazioni che identificano l'adapter.
 
@@ -57,7 +57,7 @@ Tipo: **char**
 
 </dd> <dd>
 
-Utilizzato per la presentazione all'utente. Questa operazione non deve essere utilizzata per identificare driver specifici, perché molte stringhe diverse possono essere associate allo stesso dispositivo e driver di fornitori diversi.
+Usato per la presentazione all'utente. Questo non deve essere usato per identificare driver specifici, perché molte stringhe diverse potrebbero essere associate allo stesso dispositivo e driver di fornitori diversi.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Tipo: **char**
 
 </dd> <dd>
 
-Utilizzato per la presentazione all'utente.
+Usato per la presentazione all'utente.
 
 </dd> <dt>
 
@@ -86,11 +86,11 @@ Nome del dispositivo per GDI.
 **DriverVersion**
 </dt> <dd>
 
-Tipo: **[ **\_ Integer grande**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)**
+Tipo: **[ **LARGE \_ INTEGER**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)**
 
 </dd> <dd>
 
-Identificare la versione del driver Direct3D. È possibile eseguire confronti minori di e superiori rispetto al valore Signed Integer a 64 bit. Tuttavia, prestare attenzione se si utilizza questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
+Identificare la versione del driver Direct3D. È legale eseguire confronti minori e maggiori di sul valore intero con segno a 64 bit. Prestare tuttavia attenzione se si usa questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificare la versione del driver Direct3D. È lecito eseguire confronti < e > sul valore intero con segno a 64 bit. Tuttavia, prestare attenzione se si utilizza questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
+Identificare la versione del driver Direct3D. È possibile eseguire confronti < e > sul valore intero con segno a 64 bit. Tuttavia, prestare attenzione se si usa questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificare la versione del driver Direct3D. È lecito eseguire confronti < e > sul valore intero con segno a 64 bit. Tuttavia, prestare attenzione se si utilizza questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
+Identificare la versione del driver Direct3D. È possibile eseguire confronti < e > sul valore intero con segno a 64 bit. Tuttavia, prestare attenzione se si usa questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Può essere utilizzato per identificare un particolare set di chip. Eseguire una query su questo membro per identificare il produttore. Il valore può essere zero se sconosciuto.
+Può essere usato per identificare un determinato chip set. Eseguire una query su questo membro per identificare il produttore. Il valore può essere zero se sconosciuto.
 
 </dd> <dt>
 
@@ -134,7 +134,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Può essere utilizzato per identificare un particolare set di chip. Eseguire una query su questo membro per identificare il tipo di set di chip. Il valore può essere zero se sconosciuto.
+Può essere usato per identificare un determinato chip set. Eseguire una query su questo membro per identificare il tipo di chip set. Il valore può essere zero se sconosciuto.
 
 </dd> <dt>
 
@@ -145,7 +145,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Può essere utilizzato per identificare un particolare set di chip. Eseguire una query su questo membro per identificare il sottosistema, in genere la bacheca particolare. Il valore può essere zero se sconosciuto.
+Può essere usato per identificare un determinato chip set. Eseguire una query su questo membro per identificare il sottosistema, in genere la scheda specifica. Il valore può essere zero se sconosciuto.
 
 </dd> <dt>
 
@@ -156,7 +156,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Può essere utilizzato per identificare un particolare set di chip. Eseguire una query su questo membro per identificare il livello di revisione del set di chip. Il valore può essere zero se sconosciuto.
+Può essere usato per identificare un determinato chip set. Eseguire una query su questo membro per identificare il livello di revisione del chip set. Il valore può essere zero se sconosciuto.
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Tipo: **[ **GUID**](guid.md)**
 
 </dd> <dd>
 
-È possibile eseguire una query per verificare le modifiche apportate al driver e al set di chip. Questo GUID è un identificatore univoco per la coppia di driver e set di chip. Eseguire una query su questo membro per tenere traccia delle modifiche al driver e al set di chip per generare un nuovo profilo per il sottosistema grafico. DeviceIdentifier può essere usato anche per identificare driver problematici particolari.
+È possibile eseguire query per verificare le modifiche nel driver e nel chip set. Questo GUID è un identificatore univoco per la coppia di driver e chip set. Eseguire una query su questo membro per tenere traccia delle modifiche apportate al driver e al chip set per generare un nuovo profilo per il sottosistema grafico. DeviceIdentifier può essere usato anche per identificare driver problematici specifici.
 
 </dd> <dt>
 
@@ -178,28 +178,27 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Utilizzato per determinare il livello di convalida di Windows Hardware Quality Labs (WHQL) per questa coppia di driver e dispositivi. DWORD è una struttura di data compressa che definisce la data di rilascio del test WHQL più recente passato dal driver. È consentito eseguire operazioni di < e > su questo valore. Di seguito viene illustrato il formato della data.
+Usato per determinare il Windows Hardware Quality Labs di convalida (WHQL) per questa coppia di driver e dispositivo. Il valore DWORD è una struttura di data di tipo pack che definisce la data di rilascio del test WHQL più recente superato dal driver. È legale eseguire operazioni < e > su questo valore. Di seguito viene illustrato il formato della data.
 
 
 
-|       |                                               |
+| BITS  |  Descrizione                                             |
 |-------|-----------------------------------------------|
-| BITS  |                                               |
-| 31-16 | Anno, un numero decimale compreso tra 1999 e verso l'alto. |
-| 15-8  | Il mese, un numero decimale compreso tra 1 e 12.     |
-| 7-0   | Il giorno, un numero decimale compreso tra 1 e 31.       |
+| 31-16 | Anno, un numero decimale dal 1999 verso l'alto. |
+| 15-8  | Mese, un numero decimale da 1 a 12.     |
+| 7-0   | Giorno, un numero decimale da 1 a 31.       |
 
 
 
  
 
-Vengono inoltre utilizzati i valori seguenti.
+Vengono usati anche i valori seguenti.
 
 
 
-|     |                                                       |
+| Valore    |  Descrizione                                                     |
 |-----|-------------------------------------------------------|
-| 0   | Non certificata.                                        |
+| 0   | Non certificato.                                        |
 | 1   | WHQL convalidato, ma non sono disponibili informazioni sulla data. |
 
 
@@ -208,13 +207,13 @@ Vengono inoltre utilizzati i valori seguenti.
 
 Differenze tra Direct3D 9 e Direct3D 9Ex:
 
-Per Direct3D9Ex in esecuzione in Windows Vista, Windows Server 2008, Windows 7 e Windows Server 2008 R2 (o più sistemi operativi correnti), [**IDirect3D9:: GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) restituisce 1 per il livello WHQL senza controllare lo stato del driver.
+Per Direct3D9Ex in esecuzione in Windows Vista, Windows Server 2008, Windows 7 e Windows Server 2008 R2 (o più sistemi operativi correnti), [**IDirect3D9::GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) restituisce 1 per il livello WHQL senza controllare lo stato del driver.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nell'esempio di pseudocodice seguente viene illustrato il formato della versione codificato nei membri DriverVersion, DriverVersionLowPart e DriverVersionHighPart.
+L'esempio di pseudocodice seguente illustra il formato della versione codificato nei membri DriverVersion, DriverVersionLowPart e DriverVersionHighPart.
 
 
 ```
@@ -226,9 +225,9 @@ Build = LOWORD(DriverVersion.LowPart)
 
 
 
-Per ulteriori informazioni sulla macro HIWORD, sulla macro LOWORD e sulla struttura di tipo Integer grande, vedere Platform SDK \_ .
+Per altre informazioni sulla macro HIWORD, sulla macro LOWORD e sulla struttura LARGE INTEGER, vedere Platform \_ SDK.
 
-\_ \_ \_ La stringa dell'identificatore di dispositivo Max è una costante con la definizione seguente.
+MAX \_ DEVICE IDENTIFIER STRING è una costante con la definizione \_ \_ seguente.
 
 
 ```
@@ -237,7 +236,7 @@ Per ulteriori informazioni sulla macro HIWORD, sulla macro LOWORD e sulla strutt
 
 
 
-I membri VendorId, DeviceId, SubSysId e Revision possono essere utilizzati in combinazione per identificare determinati set di chip. Tuttavia, usare questi membri con cautela.
+I membri VendorId, DeviceId, SubSysId e Revision possono essere usati in tandem per identificare set di chip specifici. Tuttavia, usare questi membri con cautela.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -245,7 +244,7 @@ I membri VendorId, DeviceId, SubSysId e Revision possono essere utilizzati in co
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

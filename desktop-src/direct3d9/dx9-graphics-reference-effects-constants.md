@@ -1,28 +1,28 @@
 ---
-description: Si tratta di costanti shader e Effect.
+description: Si tratta di costanti shader ed effetti.
 ms.assetid: cfc6ef62-c791-4714-93cb-4df682543c30
-title: Costanti effetto
+title: Costanti degli effetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aaa3920bb9483526e264b7b16def448d6915feb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c08f0520541c80b64fdfc9837130ed10fcf42517
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124020"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342756"
 ---
-# <a name="effect-constants"></a>Costanti effetto
+# <a name="effect-constants"></a>Costanti degli effetti
 
-Si tratta di costanti shader e Effect.
+Si tratta di costanti shader ed effetti.
 
--   [**\_Parametro D3DX**](d3dx-parameter.md)
+-   [**PARAMETRO \_ D3DX**](d3dx-parameter.md)
 -   [D3DXFX](d3dxfx.md)
 
-Gli effetti utilizzano [handle (Direct3D 9)](handles.md) per fare riferimento a tecniche, passaggi, annotazioni e parametri.
+Gli effetti [usano Handle (Direct3D 9)](handles.md) per fare riferimento a tecniche, passaggi, annotazioni e parametri.
 
 
 
-|         |        |            |
+| Parametro        | Effetto       |  Handle          |
 |---------|--------|------------|
 | typedef | LPCSTR | D3DXHANDLE |
 
@@ -34,7 +34,7 @@ Gli effetti utilizzano [handle (Direct3D 9)](handles.md) per fare riferimento a 
 
 <dl> <dt>
 
-[Riferimento a effetti](dx9-graphics-reference-effects.md)
+[Informazioni di riferimento sull'effetto](dx9-graphics-reference-effects.md)
 </dt> </dl>
 
  

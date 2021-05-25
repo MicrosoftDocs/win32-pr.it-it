@@ -4,12 +4,12 @@ ms.assetid: faa2d610-cf85-42d0-833c-a46fb7fe3dbf
 title: LPD3DXFILL2D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8046c324511f2b308243d62fec1b6508a1d483ed
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8c341ccfcbcc566d65e7139813c676e2286e25cf
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087969"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342846"
 ---
 # <a name="lpd3dxfill2d"></a>LPD3DXFILL2D
 
@@ -33,7 +33,7 @@ typedef VOID (WINAPI *LPD3DXFILL2D)(
 
 pOut: puntatore a un vettore, che la funzione usa per restituire il risultato. X, Y, Z e W verranno mappati rispettivamente a R, G, B e A.
 
-pTexCoord: puntatore a un vettore contenente le coordinate del texel attualmente valutato. I componenti delle coordinate di trama per le trame di trama e volume sono da 0 a 1. I componenti delle coordinate di trama per le trame dei cubi sono da -1 a 1.
+pTexCoord: puntatore a un vettore contenente le coordinate del texel attualmente valutato. I componenti delle coordinate di trama per le trame di trama e volume sono da 0 a 1. I componenti delle coordinate di trama per le trame del cubo variano da -1 a 1.
 
 pTexelSize: puntatore a un vettore contenente le dimensioni del texel corrente.
 
@@ -49,7 +49,7 @@ Assicurarsi di specificare la convenzione [**di chiamata dei tipi di dati Window
 
 
 
-|                          |            |
+| Requisito                         | Valore           |
 |--------------------------|------------|
 | Intestazione                   | d3dx9tex.h |
 | Libreria di importazione           | d3dx9.lib  |

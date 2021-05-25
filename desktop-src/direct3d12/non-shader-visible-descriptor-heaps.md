@@ -1,53 +1,52 @@
 ---
-title: Heap descrittori non shader visibili
-description: Per gli shader non è possibile fare riferimento ad alcuni heap del descrittore tramite le tabelle dei descrittori, ma esistono per supportare l'app nella gestione temporanea dei descrittori prima di registrare un elenco di comandi o perché non è necessario alcun heap visibile dello shader.
+title: Heap dei descrittori non visibili allo shader
+description: Gli shader non possono fare riferimento ad alcuni heap dei descrittori tramite tabelle di descrittori, ma esistono per aiutare l'app a eseguire lo staging dei descrittori prima di registrare un elenco di comandi o perché non è necessario alcun heap visibile allo shader.
 ms.assetid: 85934873-8889-4564-A717-28A00614B38C
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 894640cde142f1241b088518ba7140ffb9405152
-ms.sourcegitcommit: 015fb35e736a235d3c9becff1f6832a0965b4303
+ms.openlocfilehash: d51d30c7a99250ee0842b79d76ccebb6150bcf9a
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104548809"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343456"
 ---
-# <a name="non-shader-visible-descriptor-heaps"></a>Heap descrittori non shader visibili
+# <a name="non-shader-visible-descriptor-heaps"></a>Heap dei descrittori non visibili allo shader
 
-Per gli shader non è possibile fare riferimento ad alcuni heap del descrittore tramite le tabelle dei descrittori, ma esistono per supportare l'app nella gestione temporanea dei descrittori prima di registrare un elenco di comandi o perché non è necessario alcun heap visibile dello shader.
+Gli shader non possono fare riferimento ad alcuni heap dei descrittori tramite tabelle di descrittori, ma esistono per aiutare l'app a eseguire lo staging dei descrittori prima di registrare un elenco di comandi o perché non è necessario alcun heap visibile allo shader.
 
--   [Viste non visibili](#non-visible-views)
+-   [Visualizzazioni non visibili](#non-visible-views)
 -   [Summary](#summary)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="non-visible-views"></a>Viste non visibili
+## <a name="non-visible-views"></a>Visualizzazioni non visibili
 
-Tutti gli heap dei descrittori, inclusi gli heap dei descrittori accessibili dello shader descritti in precedenza, possono essere modificati dagli elenchi della CPU e/o dei comandi a seconda del pool di memoria e delle proprietà di accesso alla CPU che l'applicazione seleziona per un heap del descrittore.
+Tutti gli heap dei descrittori, inclusi gli heap dei descrittori accessibili allo shader descritti in precedenza, possono essere manipolati dagli elenchi di CPU e/o comandi a seconda del pool di memoria e delle proprietà di accesso alla CPU selezionate dall'applicazione per un heap descrittore.
 
-Per gli [heap del descrittore visibile dello shader](shader-visible-descriptor-heaps.md), il motivo più ovvio per negare l'accesso dello shader a questi heap di descrittori è mentre sono in fase di gestione temporanea. Questi heap, quindi, vengono resi visibili allo shader e sono accessibili tramite tabelle descrittore nell'esecuzione dell'elenco dei comandi. Tuttavia, non esiste alcun requisito per gestire gli heap visibili dello shader, che possono essere popolati direttamente.
+Per [gli heap dei descrittori](shader-visible-descriptor-heaps.md)visibili allo shader, l'ovvio motivo per negare l'accesso dello shader a questi heap dei descrittori è durante la fase di stage. Questi heap vengono quindi resi visibili allo shader e vi si accede tramite tabelle di descrittori durante l'esecuzione dell'elenco dei comandi. Tuttavia, non è necessario eseguire lo stage degli heap visibili allo shader, che possono essere popolati direttamente.
 
-Gli altri descrittori vengono associati alla pipeline con il relativo contenuto registrato direttamente nell'elenco dei comandi. Questi descrittori servono solo per tradurre i parametri di visualizzazione in fase di record dell'elenco dei comandi. Questi heap sono sempre visibili senza shader e contengono quanto segue.
+Altri descrittori vengono associati alla pipeline registrando il relativo contenuto direttamente nell'elenco dei comandi. Questi descrittori servono solo per convertire i parametri di visualizzazione al momento del record dell'elenco dei comandi. Questi heap sono sempre non visibili per lo shader e contengono quanto segue.
 
--   Visualizzazioni destinazione rendering (RTVs)
--   Visualizzazioni stencil Depth (viste origine dati)
+-   Rendering delle visualizzazioni di destinazione (RTV)
+-   Visualizzazioni degli stencil di profondità (DSV)
 
-Le viste del buffer di indice (IBVs), le viste del buffer dei vertici (VBVs) e le viste di output del flusso (sovietici) vengono passate direttamente ai metodi API, non dispongono di tipi di heap specifici.
+Le viste IBV (Index Buffer Views), le viste vertex buffer (VBV) e le viste di output di flusso (SOV) vengono passate direttamente ai metodi API e non hanno tipi di heap specifici.
 
-Dopo la registrazione nell'elenco dei comandi (ad esempio, con una chiamata come [**OMSetRenderTargets**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetrendertargets)), la memoria usata per conservare i descrittori per questa chiamata è immediatamente disponibile per essere riutilizzata dopo la chiamata.
+Dopo la registrazione nell'elenco dei comandi ,ad esempio con una chiamata come [**OMSetRenderTargets,**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetrendertargets)la memoria usata per contenere i descrittori per questa chiamata è immediatamente disponibile per il nuovo uso dopo la chiamata.
 
-Anche le tabelle dei descrittori includono opzioni in cui un'app può consentire all'implementazione di scegliere di registrare il contenuto della tabella nella registrazione dell'elenco di comandi, anziché dereferenziare il puntatore della tabella in fase di esecuzione.
+Anche le tabelle descrittore hanno opzioni in cui un'app può consentire all'implementazione di scegliere di registrare il contenuto della tabella durante la registrazione dell'elenco dei comandi (anziché dereferenziare il puntatore di tabella in fase di esecuzione).
 
 ## <a name="summary"></a>Riepilogo
 
 
 
-|                   |                                    |                                        |
+|                   | Shader visibile, solo scrittura CPU                                   | Non-shader visibile, lettura/scrittura della CPU                                       |
 |-------------------|------------------------------------|----------------------------------------|
-|                   | **shader visibile, solo scrittura CPU** | **non shader visibile, lettura/scrittura CPU** |
-| **CBV, SRV, UAV** | sì                                | sì                                    |
-| **CAMPIONATORE**       | sì                                | sì                                    |
-| **RTV**           | no                                 | sì                                    |
-| **DSV**           | no                                 | sì                                    |
+| **CBV, SRV, UAV** | Sì                                | Sì                                    |
+| **Campionatore**       | Sì                                | Sì                                    |
+| **RTV**           | No                                 | sì                                    |
+| **Dsv**           | No                                 | sì                                    |
 
 
 
@@ -57,7 +56,7 @@ Anche le tabelle dei descrittori includono opzioni in cui un'app può consentire
 
 <dl> <dt>
 
-[Heap descrittore](descriptor-heaps.md)
+[Heap dei descrittori](descriptor-heaps.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 195ee969-30e8-4828-a0be-f0d2a82e247c
 title: D3DXSPRITE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe4dbf3e80e7cf6f7884d778860f9de61f5193f5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 23301f003eee54a7efbb933237576edd2946fcac
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997318"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343546"
 ---
 # <a name="d3dxsprite"></a>D3DXSPRITE
 
@@ -26,7 +26,7 @@ I flag seguenti vengono usati per specificare le opzioni di rendering dello spri
 | D3DXSPRITE \_ ALPHABLEND               | Abilita la fusione alfa con D3DRS \_ ALPHATESTENABLE impostato su **TRUE** (per alfa diverso da zero). D3DBLEND SRCALPHA sarà lo stato di blend di origine \_ e D3DBLEND INVSRCALPHA sarà lo stato di blend di destinazione nelle chiamate a \_ [**SetRenderState**](/windows/desktop/api). Vedere [Alpha Blending State (Direct3D 9) (Stato di fusione alfa - Direct3D 9).](alpha-blending-state.md) [**ID3DXFont**](id3dxfont.md) prevede che questo flag sia impostato durante il disegno di testo. |
 | TRAMA DI ORDINAMENTO D3DXSPRITE \_ \_            | Ordinare gli sprite in base alla trama prima del disegno. Ciò può migliorare le prestazioni quando si disegnano sprite non sovrapposti di profondità uniforme. È anche possibile combinare D3DXSPRITE SORT TEXTURE con \_ \_ D3DXSPRITE \_ SORT \_ DEPTH FRONTTOBACK o \_ D3DXSPRITE \_ SORT DEPTH \_ \_ BACKTOFRONT. In questo modo, l'elenco degli sprite verrà ordinato per profondità per primo e per secondo per trama.<br/>                                                                           |
 | D3DXSPRITE \_ SORT \_ DEPTH \_ FRONTTOBACK | Gli sprite vengono ordinati in base alla profondità in ordine front-to-back prima del disegno. Questa procedura è consigliata quando si disegnano sprite opachi di profondità variabili. È possibile combinare D3DXSPRITE \_ SORT \_ DEPTH FRONTTOBACK con \_ D3DXSPRITE SORT TEXTURE per ordinare prima in base alla profondità e secondo \_ \_ per trama.<br/>                                                                                                                                   |
-| D3DXSPRITE \_ SORT \_ DEPTH \_ BACKTOFRONT | Gli sprite vengono ordinati in base alla profondità in ordine di ritorno anteriore prima del disegno. Questa procedura è consigliata quando si disegnano sprite trasparenti di profondità variabili. È possibile combinare D3DXSPRITE \_ SORT \_ DEPTH BACKTOFRONT con \_ D3DXSPRITE SORT TEXTURE per ordinare prima in base alla profondità e secondo \_ \_ per trama.<br/>                                                                                                                              |
+| D3DXSPRITE \_ SORT \_ DEPTH \_ BACKTOFRONT | Gli sprite vengono ordinati in base alla profondità in ordine di ritorno anteriore prima del disegno. Questa procedura è consigliata quando si disegnano sprite trasparenti di profondità variabili. È possibile combinare D3DXSPRITE \_ SORT \_ DEPTH BACKTOFRONT con \_ D3DXSPRITE SORT TEXTURE per ordinare prima in base alla profondità e la seconda \_ \_ per trama.<br/>                                                                                                                              |
 | D3DXSPRITE \_ DO \_ NOT \_ ADDREF \_ TEXTURE | Disabilita la chiamata di AddRef() a ogni disegno e Release() su Flush() per ottenere prestazioni migliori.                                                                                                                                                                                                                                                                                                                                         |
 
 
@@ -37,7 +37,7 @@ I flag seguenti vengono usati per specificare le opzioni di rendering dello spri
 
 
 
-|                          |             |
+| Requisito                         | Valore            |
 |--------------------------|-------------|
 | Intestazione                   | d3dx9core.h |
 | Sistema operativo minimo | Windows 98  |

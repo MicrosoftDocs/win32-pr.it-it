@@ -1,7 +1,7 @@
 ---
-description: Gli Stati di rendering definiscono gli Stati di configurazione per tutti i tipi di elaborazione dei vertici e dei pixel.
+description: Gli stati di rendering definiscono gli stati di configurazione per tutti i tipi di elaborazione di vertici e pixel.
 ms.assetid: 2fd56388-f3bd-409f-876c-ae893840b623
-title: Enumerazione D3DRENDERSTATETYPE (D3D9Types. h)
+title: Enumerazione D3DRENDERSTATETYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 2386762eaa45f1eefbccac97723c3ad71c3a76fd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0a7ad803535032705e6e1bb5456109486c59d190
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322309"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343066"
 ---
 # <a name="d3drenderstatetype-enumeration"></a>Enumerazione D3DRENDERSTATETYPE
 
-Gli Stati di rendering definiscono gli Stati di configurazione per tutti i tipi di elaborazione dei vertici e dei pixel. Alcuni Stati di rendering configurano l'elaborazione dei vertici e alcuni configurano l'elaborazione dei pixel (vedere [gli Stati di rendering (Direct3D 9)](render-states.md)). Gli Stati di rendering possono essere salvati e ripristinati usando stateblocks (vedere lo stato [di salvataggio e ripristino del blocco di stato (Direct3D 9)](state-blocks-save-and-restore-state.md)).
+Gli stati di rendering definiscono gli stati di configurazione per tutti i tipi di elaborazione di vertici e pixel. Alcuni stati di rendering configurano l'elaborazione dei vertici e altri configurano l'elaborazione dei pixel (vedere Stati di rendering [(Direct3D 9)](render-states.md)). Gli stati di rendering possono essere salvati e ripristinati usando blocchi di stato (vedere [State Blocks Save and Restore State (Direct3D 9)](state-blocks-save-and-restore-state.md)).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -142,156 +142,156 @@ typedef enum D3DRENDERSTATETYPE {
 
 <dl> <dt>
 
-<span id="D3DRS_ZENABLE"></span><span id="d3drs_zenable"></span>**\_ZENABLE D3DRS**
+<span id="D3DRS_ZENABLE"></span><span id="d3drs_zenable"></span>**D3DRS \_ ZENABLE**
 </dt> <dd>
 
-Stato del buffer di profondità come un membro del tipo enumerato [**D3DZBUFFERTYPE**](./d3dzbuffertype.md) . Impostare questo stato su D3DZB \_ true per abilitare il buffering z, D3DZB \_ USEW per abilitare il buffering w o D3DZB \_ false per disabilitare il buffering di profondità.
+Stato di buffering di profondità come membro del [**tipo enumerato D3DZBUFFERTYPE.**](./d3dzbuffertype.md) Impostare questo stato su D3DZB TRUE per abilitare il \_ buffering z, D3DZB USEW per abilitare \_ il w-buffering o D3DZB FALSE per disabilitare il buffering di \_ profondità.
 
-Il valore predefinito per questo stato di rendering è D3DZB \_ true se è stato creato un depth stencil insieme alla catena di scambio impostando il membro EnableAutoDepthStencil della struttura dei [**\_ parametri D3DPRESENT**](d3dpresent-parameters.md) su **true** e D3DZB \_ false in caso contrario.
+Il valore predefinito per questo stato di rendering è D3DZB TRUE se è stato creato un depth stencil insieme alla catena di scambio impostando il membro \_ EnableAutoDepthStencil della struttura [**D3DPRESENT \_ PARAMETERS**](d3dpresent-parameters.md) su **TRUE** e D3DZB FALSE in caso \_ contrario.
 
 </dd> <dt>
 
-<span id="D3DRS_FILLMODE"></span><span id="d3drs_fillmode"></span>**\_FillMode D3DRS**
+<span id="D3DRS_FILLMODE"></span><span id="d3drs_fillmode"></span>**D3DRS \_ FILLMODE**
 </dt> <dd>
 
-Uno o più membri del tipo enumerato [**D3DFILLMODE**](./d3dfillmode.md) . Il valore predefinito è D3DFILL \_ Solid.
+Uno o più membri del [**tipo enumerato D3DFILLMODE.**](./d3dfillmode.md) Il valore predefinito è D3DFILL \_ SOLID.
 
 </dd> <dt>
 
-<span id="D3DRS_SHADEMODE"></span><span id="d3drs_shademode"></span>**\_MODOOMBRA D3DRS**
+<span id="D3DRS_SHADEMODE"></span><span id="d3drs_shademode"></span>**D3DRS \_ SHADEMODE**
 </dt> <dd>
 
-Uno o più membri del tipo enumerato [**D3DSHADEMODE**](./d3dshademode.md) . Il valore predefinito è D3DSHADE \_ Gouraud.
+Uno o più membri del [**tipo enumerato D3DSHADEMODE.**](./d3dshademode.md) Il valore predefinito è D3DSHADE \_ GOURAUD.
 
 </dd> <dt>
 
-<span id="D3DRS_ZWRITEENABLE"></span><span id="d3drs_zwriteenable"></span>**\_ZWRITEENABLE D3DRS**
+<span id="D3DRS_ZWRITEENABLE"></span><span id="d3drs_zwriteenable"></span>**D3DRS \_ ZWRITEENABLE**
 </dt> <dd>
 
-**True** per consentire all'applicazione di scrivere nel buffer di profondità. Il valore predefinito è **true**. Questo membro consente a un'applicazione di impedire al sistema di aggiornare il buffer di profondità con nuovi valori di profondità. Se **false**, i confronti di profondità vengono ancora eseguiti in base allo stato di rendering D3DRS \_ ZFUNC, presupponendo che venga eseguita la memorizzazione nel buffer di profondità, ma i valori di profondità non vengono scritti nel buffer.
+**TRUE** per consentire all'applicazione di scrivere nel buffer di profondità. Il valore predefinito è **TRUE.** Questo membro consente a un'applicazione di impedire al sistema di aggiornare il buffer di profondità con nuovi valori di profondità. Se **FALSE,** i confronti di profondità vengono comunque eseguono in base allo stato di rendering D3DRS ZFUNC, presupponendo che sia in corso il buffering della profondità, ma i valori di profondità non vengono scritti \_ nel buffer.
 
 </dd> <dt>
 
-<span id="D3DRS_ALPHATESTENABLE"></span><span id="d3drs_alphatestenable"></span>**\_ALPHATESTENABLE D3DRS**
+<span id="D3DRS_ALPHATESTENABLE"></span><span id="d3drs_alphatestenable"></span>**D3DRS \_ ALPHATESTENABLE**
 </dt> <dd>
 
-**True** per abilitare il test alfa per pixel. Se il test viene superato, il pixel viene elaborato dal buffer del frame. In caso contrario, l'elaborazione del buffer di frame viene ignorata per il pixel.
+**TRUE per** abilitare il test alfa per pixel. Se il test viene superato, il pixel viene elaborato dal buffer dei frame. In caso contrario, tutta l'elaborazione del buffer dei frame viene ignorata per il pixel.
 
-Il test viene eseguito confrontando il valore alfa in ingresso con il valore alfa di riferimento, usando la funzione di confronto fornita dallo \_ stato di rendering ALPHAFUNC di D3DRS. Il valore alfa di riferimento è determinato dal valore impostato per D3DRS \_ ALPHAREF. Per altre informazioni, vedere [stato di test Alfa (Direct3D 9)](alpha-testing-state.md).
+Il test viene eseguito confrontando il valore alfa in ingresso con il valore alfa di riferimento, usando la funzione di confronto fornita dallo stato di rendering D3DRS \_ ALPHAFUNC. Il valore alfa di riferimento è determinato dal valore impostato per D3DRS \_ ALPHAREF. Per altre informazioni, vedere [Alpha Testing State (Direct3D 9) (Stato di test alfa - Direct3D 9).](alpha-testing-state.md)
 
-Il valore predefinito di questo parametro è **false**.
+Il valore predefinito di questo parametro è **FALSE.**
 
 </dd> <dt>
 
-<span id="D3DRS_LASTPIXEL"></span><span id="d3drs_lastpixel"></span>**\_LASTPIXEL D3DRS**
+<span id="D3DRS_LASTPIXEL"></span><span id="d3drs_lastpixel"></span>**D3DRS \_ LASTPIXEL**
 </dt> <dd>
 
-Il valore predefinito è **true**, che consente di disegnare l'ultimo pixel in una riga. Per impedire il disegno dell'ultimo pixel, impostare questo valore su **false**. Per altre informazioni, vedere [stato di contorno e riempimento (Direct3D 9)](outline-and-fill-state.md).
+Il valore predefinito è **TRUE,** che consente di disegnare l'ultimo pixel di una linea. Per impedire il disegno dell'ultimo pixel, impostare questo valore su **FALSE.** Per altre informazioni, vedere [Stato contorno e riempimento (Direct3D 9).](outline-and-fill-state.md)
 
 </dd> <dt>
 
-<span id="D3DRS_SRCBLEND"></span><span id="d3drs_srcblend"></span>**\_SRCBLEND D3DRS**
+<span id="D3DRS_SRCBLEND"></span><span id="d3drs_srcblend"></span>**D3DRS \_ SRCBLEND**
 </dt> <dd>
 
-Un membro del tipo enumerato [**D3DBLEND**](./d3dblend.md) . Il valore predefinito è D3DBLEND \_ One.
+Membro del tipo [**enumerato D3DBLEND.**](./d3dblend.md) Il valore predefinito è D3DBLEND \_ ONE.
 
 </dd> <dt>
 
-<span id="D3DRS_DESTBLEND"></span><span id="d3drs_destblend"></span>**\_DESTBLEND D3DRS**
+<span id="D3DRS_DESTBLEND"></span><span id="d3drs_destblend"></span>**D3DRS \_ DESTBLEND**
 </dt> <dd>
 
-Un membro del tipo enumerato [**D3DBLEND**](./d3dblend.md) . Il valore predefinito è D3DBLEND \_ zero.
+Membro del tipo [**enumerato D3DBLEND.**](./d3dblend.md) Il valore predefinito è D3DBLEND \_ ZERO.
 
 </dd> <dt>
 
-<span id="D3DRS_CULLMODE"></span><span id="d3drs_cullmode"></span>**\_CULLMODE D3DRS**
+<span id="D3DRS_CULLMODE"></span><span id="d3drs_cullmode"></span>**D3DRS \_ CULLMODE**
 </dt> <dd>
 
-Specifica il modo in cui i triangoli rivolti al back-end vengono abbattuti, se presenti. Questo può essere impostato su un membro del tipo enumerato [**D3DCULL**](./d3dcull.md) . Il valore predefinito è D3DCULL \_ CCW.
+Specifica come vengono espulsi i triangoli rivolti verso il retro, se non del tutto. Può essere impostato su un membro del [**tipo enumerato D3DCULL.**](./d3dcull.md) Il valore predefinito è D3DCULL \_ CCW.
 
 </dd> <dt>
 
-<span id="D3DRS_ZFUNC"></span><span id="d3drs_zfunc"></span>**\_ZFUNC D3DRS**
+<span id="D3DRS_ZFUNC"></span><span id="d3drs_zfunc"></span>**D3DRS \_ ZFUNC**
 </dt> <dd>
 
-Un membro del tipo enumerato [**D3DCMPFUNC**](./d3dcmpfunc.md) . Il valore predefinito è D3DCMP \_ LESSEQUAL. Questo membro consente a un'applicazione di accettare o rifiutare un pixel, in base alla distanza dalla fotocamera.
+Membro del tipo [**enumerato D3DCMPFUNC.**](./d3dcmpfunc.md) Il valore predefinito è D3DCMP \_ LESSEQUAL. Questo membro consente a un'applicazione di accettare o rifiutare un pixel, in base alla distanza dalla fotocamera.
 
-Il valore di profondità del pixel viene confrontato con il valore del buffer di profondità. Se il valore di profondità del pixel supera la funzione di confronto, viene scritto il pixel.
+Il valore di profondità del pixel viene confrontato con il valore depth-buffer. Se il valore di profondità del pixel supera la funzione di confronto, viene scritto il pixel.
 
-Il valore di profondità viene scritto nel buffer di profondità solo se lo stato di rendering è **true**.
+Il valore di profondità viene scritto nel buffer di profondità solo se lo stato di rendering è **TRUE.**
 
-I rasterizzatori software e molti acceleratori hardware funzionano più velocemente se il test di profondità ha esito negativo, perché non è necessario filtrare e modulare la trama se non viene eseguito il rendering del pixel.
+I rasterizzatori software e molti acceleratori hardware funzionano più velocemente se il test di profondità ha esito negativo, perché non è necessario filtrare e modulare la trama se il pixel non verrà sottoposto a rendering.
 
 </dd> <dt>
 
-<span id="D3DRS_ALPHAREF"></span><span id="d3drs_alpharef"></span>**\_ALPHAREF D3DRS**
+<span id="D3DRS_ALPHAREF"></span><span id="d3drs_alpharef"></span>**D3DRS \_ ALPHAREF**
 </dt> <dd>
 
-Valore che specifica un valore alfa di riferimento rispetto al quale vengono testati i pixel quando è abilitato il test alfa. Si tratta di un valore a 8 bit inserito negli 8 bit bassi del valore di stato di rendering DWORD. I valori possono variare da 0x00000000 a 0x000000FF. Il valore predefinito è 0.
+Valore che specifica un valore alfa di riferimento rispetto al quale vengono testati i pixel quando è abilitato il test alfa. Si tratta di un valore a 8 bit inserito negli 8 bit bassi del valore dello stato di rendering DWORD. I valori possono variare da 0x00000000 a 0x000000FF. Il valore predefinito è 0.
 
 </dd> <dt>
 
-<span id="D3DRS_ALPHAFUNC"></span><span id="d3drs_alphafunc"></span>**\_ALPHAFUNC D3DRS**
+<span id="D3DRS_ALPHAFUNC"></span><span id="d3drs_alphafunc"></span>**D3DRS \_ ALPHAFUNC**
 </dt> <dd>
 
-Un membro del tipo enumerato [**D3DCMPFUNC**](./d3dcmpfunc.md) . Il valore predefinito è D3DCMP \_ Always. Questo membro consente a un'applicazione di accettare o rifiutare un pixel, in base al relativo valore alfa.
+Membro del tipo [**enumerato D3DCMPFUNC.**](./d3dcmpfunc.md) Il valore predefinito è D3DCMP \_ ALWAYS. Questo membro consente a un'applicazione di accettare o rifiutare un pixel, in base al relativo valore alfa.
 
 </dd> <dt>
 
-<span id="D3DRS_DITHERENABLE"></span><span id="d3drs_ditherenable"></span>**\_DITHERENABLE D3DRS**
+<span id="D3DRS_DITHERENABLE"></span><span id="d3drs_ditherenable"></span>**D3DRS \_ DITHERENABLE**
 </dt> <dd>
 
-**True** per abilitare la dithering. Il valore predefinito è **false**.
+**TRUE** per abilitare il dithering. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
-<span id="D3DRS_ALPHABLENDENABLE"></span><span id="d3drs_alphablendenable"></span>**\_ALPHABLENDENABLE D3DRS**
+<span id="D3DRS_ALPHABLENDENABLE"></span><span id="d3drs_alphablendenable"></span>**D3DRS \_ ALPHABLENDENABLE**
 </dt> <dd>
 
-**True** per abilitare la trasparenza con Blend alfa. Il valore predefinito è **false**.
+**TRUE** per abilitare la trasparenza con alpha blended. Il valore predefinito è **FALSE.**
 
-Il tipo di fusione alfa è determinato dagli \_ Stati di rendering D3DRS SRCBLEND e \_ D3DRS DESTBLEND.
+Il tipo di fusione alfa è determinato dagli stati di rendering D3DRS \_ SRCBLEND e D3DRS \_ DESTBLEND.
 
 </dd> <dt>
 
-<span id="D3DRS_FOGENABLE"></span><span id="d3drs_fogenable"></span>**\_FOGENABLE D3DRS**
+<span id="D3DRS_FOGENABLE"></span><span id="d3drs_fogenable"></span>**D3DRS \_ FOGENABLE**
 </dt> <dd>
 
-**True** per abilitare la fusione di nebbia. Il valore predefinito è **false**. Per ulteriori informazioni sull'utilizzo della combinazione di nebbia, vedere [Fog](fog.md).
+**TRUE per** abilitare la fusione. Il valore predefinito è **FALSE.** Per altre informazioni sull'uso della fusione blending, vedere [La combinazione di sfumature.](fog.md)
 
 </dd> <dt>
 
-<span id="D3DRS_SPECULARENABLE"></span><span id="d3drs_specularenable"></span>**\_SPECULARENABLE D3DRS**
+<span id="D3DRS_SPECULARENABLE"></span><span id="d3drs_specularenable"></span>**D3DRS \_ SPECULARENABLE**
 </dt> <dd>
 
-**True** per abilitare le evidenziazioni speculari. Il valore predefinito è **false**.
+**TRUE per** abilitare le evidenziazioni speculari. Il valore predefinito è **FALSE.**
 
-Le evidenziazioni speculari vengono calcolate come se ogni vertice nell'oggetto da illuminare è in corrispondenza dell'origine dell'oggetto. Ciò consente di ottenere i risultati previsti finché l'oggetto viene modellato intorno all'origine e la distanza tra la luce e l'oggetto è relativamente grande. In altri casi, i risultati non sono definiti.
+Le evidenziazioni speculari vengono calcolate come se ogni vertice nell'oggetto acceso fosse all'origine dell'oggetto. In questo modo vengono restituiti i risultati previsti, purché l'oggetto sia modellato intorno all'origine e la distanza dalla luce all'oggetto sia relativamente grande. In altri casi, i risultati sono indefiniti.
 
-Quando questo membro è impostato su **true**, il colore speculare viene aggiunto al colore di base dopo la propagazione della trama ma prima della fusione alfa.
+Quando questo membro è impostato su **TRUE,** il colore speculare viene aggiunto al colore di base dopo la propagazione della trama ma prima della fusione alfa.
 
 </dd> <dt>
 
-<span id="D3DRS_FOGCOLOR"></span><span id="d3drs_fogcolor"></span>**\_FogColor D3DRS**
+<span id="D3DRS_FOGCOLOR"></span><span id="d3drs_fogcolor"></span>**D3DRSCOLOR \_**
 </dt> <dd>
 
-Valore il cui tipo è [**D3DCOLOR**](d3dcolor.md). Il valore predefinito è 0. Per altre informazioni sul colore di nebbia, vedere [nebbia color (Direct3D 9)](fog-color.md).
+Valore il cui tipo è [**D3DCOLOR.**](d3dcolor.md) Il valore predefinito è 0. Per altre informazioni sul colore dei colori, vedere [Color Color (Direct3D 9)](fog-color.md).
 
 </dd> <dt>
 
-<span id="D3DRS_FOGTABLEMODE"></span><span id="d3drs_fogtablemode"></span>**\_FOGTABLEMODE D3DRS**
+<span id="D3DRS_FOGTABLEMODE"></span><span id="d3drs_fogtablemode"></span>**D3DRS \_ OSANNATABLEMODE**
 </dt> <dd>
 
-Formula di nebbia da usare per la nebbia dei pixel. Impostare su uno dei membri del tipo enumerato [**D3DFOGMODE**](./d3dfogmode.md) . Il valore predefinito è D3DFOG \_ None. Per ulteriori informazioni sulla nebbia dei pixel, vedere [pixel Fog (Direct3D 9)](pixel-fog.md).
+Formula della nebbia da usare per la nebbia in pixel. Impostare su uno dei membri del [**tipo enumerato D3DFOGMODE.**](./d3dfogmode.md) Il valore predefinito è D3DFOG \_ NONE. Per altre informazioni sulla nebbia dei pixel, vedere [Pixel Fog (Direct3D 9)](pixel-fog.md).
 
 </dd> <dt>
 
-<span id="D3DRS_FOGSTART"></span><span id="d3drs_fogstart"></span>**\_FOGSTART D3DRS**
+<span id="D3DRS_FOGSTART"></span><span id="d3drs_fogstart"></span>**D3DRS \_ FOGSTART**
 </dt> <dd>
 
-Profondità con cui gli effetti di nebbia pixel o vertice iniziano per la modalità di nebbia lineare. Il valore predefinito è 0,0 f. La profondità viene specificata nello spazio globale per la nebbia dei vertici e nello spazio del dispositivo \[ 0,0, 1,0 \] o nello spazio globale per la nebbia dei pixel. Per la nebbia dei pixel, questi valori si trovano nello spazio del dispositivo quando il sistema usa la z per i calcoli di nebbia e lo spazio globale quando il sistema usa la nebbia relativa agli occhi (w-Fog). Per ulteriori informazioni, vedere la pagina relativa ai [parametri di nebbia (Direct3D 9)](fog-parameters.md) e alla [profondità basata sull'occhio](pixel-fog.md)rispetto alla Z.
+Profondità alla quale iniziano gli effetti della sfumatura di pixel o vertici per la modalità nebbia lineare. Il valore predefinito è 0,0f. La profondità viene specificata nello spazio mondo per la nebbia dei vertici e nello spazio del dispositivo \[ 0.0, 1.0 o nello spazio mondo per la nebbia \] dei pixel. Per la nebbia dei pixel, questi valori si verificano nello spazio del dispositivo quando il sistema usa z per i calcoli della nebbia e lo spazio mondiale quando il sistema usa la nebbia relativa agli occhi (w-nebbia). Per altre informazioni, vedere [Parametri di nebbia (Direct3D 9)](fog-parameters.md) e Profondità relativa agli occhi rispetto [a Z.](pixel-fog.md)
 
-I valori per questo stato di rendering sono valori a virgola mobile. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+I valori per questo stato di rendering sono valori a virgola mobile. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -303,12 +303,12 @@ pDevice9->SetRenderState(D3DRS_FOGSTART,
 
 </dd> <dt>
 
-<span id="D3DRS_FOGEND"></span><span id="d3drs_fogend"></span>**\_FOGEND D3DRS**
+<span id="D3DRS_FOGEND"></span><span id="d3drs_fogend"></span>**D3DRS \_ OSANNA**
 </dt> <dd>
 
-Profondità con cui terminano gli effetti della nebbia del pixel o del vertice per la modalità di nebbia lineare. Il valore predefinito è 1.0 f. La profondità viene specificata nello spazio globale per la nebbia dei vertici e nello spazio del dispositivo \[ 0,0, 1,0 \] o nello spazio globale per la nebbia dei pixel. Per la nebbia dei pixel, questi valori si trovano nello spazio del dispositivo quando il sistema usa z per i calcoli di nebbia e nello spazio globale quando il sistema usa la nebbia relativa agli occhi (w-Fog). Per ulteriori informazioni, vedere la pagina relativa ai [parametri di nebbia (Direct3D 9)](fog-parameters.md) e alla [profondità basata sull'occhio](pixel-fog.md)rispetto alla Z.
+Profondità alla quale terminano gli effetti di sfumatura di pixel o vertici per la modalità nebbia lineare. Il valore predefinito è 1,0f. La profondità viene specificata nello spazio mondo per la nebbia dei vertici e nello spazio del dispositivo \[ 0.0, 1.0 o nello spazio mondo per la nebbia \] dei pixel. Per la nebbia dei pixel, questi valori si verificano nello spazio del dispositivo quando il sistema usa z per i calcoli della nebbia e nello spazio mondiale quando il sistema usa la nebbia relativa agli occhi (w-nebbia). Per altre informazioni, vedere [Parametri di nebbia (Direct3D 9)](fog-parameters.md) e Profondità relativa agli occhi rispetto [a Z.](pixel-fog.md)
 
-I valori per questo stato di rendering sono valori a virgola mobile. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+I valori per questo stato di rendering sono valori a virgola mobile. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -319,12 +319,12 @@ m_pDevice9->SetRenderState(D3DRS_FOGEND, *((DWORD*) (&fFogEnd)));
 
 </dd> <dt>
 
-<span id="D3DRS_FOGDENSITY"></span><span id="d3drs_fogdensity"></span>**\_FOGDENSITY D3DRS**
+<span id="D3DRS_FOGDENSITY"></span><span id="d3drs_fogdensity"></span>**\_D3DRSDENSITY**
 </dt> <dd>
 
-Densità di nebbia per la nebbia dei pixel o dei vertici usata nelle modalità di nebbia esponenziale (D3DFOG \_ exp e D3DFOG \_ exp2). I valori di densità validi sono compresi tra 0,0 e 1,0. Il valore predefinito è 1,0. Per altre informazioni, vedere [parametri di nebbia (Direct3D 9)](fog-parameters.md).
+Densità di densità di pixel o vertice usata nelle modalità esponenziali di exp (D3DFOG \_ EXP e D3DFOG \_ EXP2). I valori di densità validi sono da 0,0 a 1,0. Il valore predefinito è 1,0. Per altre informazioni, vedere [Parameters (Direct3D 9) .](fog-parameters.md)
 
-I valori per questo stato di rendering sono valori a virgola mobile. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+I valori per questo stato di rendering sono valori a virgola mobile. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -335,244 +335,244 @@ I valori per questo stato di rendering sono valori a virgola mobile. Poiché il 
 
 </dd> <dt>
 
-<span id="D3DRS_RANGEFOGENABLE"></span><span id="d3drs_rangefogenable"></span>**\_RANGEFOGENABLE D3DRS**
+<span id="D3DRS_RANGEFOGENABLE"></span><span id="d3drs_rangefogenable"></span>**D3DRS \_ RANGEFOGENABLE**
 </dt> <dd>
 
-**True** per abilitare la nebbia del vertice basata sull'intervallo. Il valore predefinito è **false**, nel qual caso il sistema usa la nebbia basata sulla profondità. Nella nebbia basata sull'intervallo, la distanza di un oggetto dal visualizzatore viene utilizzata per calcolare gli effetti di nebbia, non la profondità dell'oggetto, ovvero la coordinata z, nella scena. Nella nebbia basata sull'intervallo, tutti i metodi Fog funzionano come di consueto, ad eccezione del fatto che usano l'intervallo anziché la profondità nei calcoli.
+**TRUE per** abilitare il vertice basato su intervalli. Il valore predefinito è **FALSE,** nel qual caso il sistema usa un oggetto basato sulla profondità. Nel caso di un oggetto basato su intervalli, la distanza di un oggetto dal visualizzatore viene usata per calcolare gli effetti dell'effetto, non la profondità dell'oggetto (ovvero la coordinata z) nella scena. Nel caso di un'applicazione basata su intervalli, tutti i metodi dell'intervallo funzionano come di consueto, ad eccezione del fatto che usano l'intervallo anziché la profondità nei calcoli.
 
-L'intervallo è il fattore corretto da usare per i calcoli di nebbia, ma viene comunemente usata la profondità perché l'intervallo richiede molto tempo per il calcolo e la profondità è in genere già disponibile. L'uso della profondità per calcolare la nebbia ha l'effetto indesiderato che la fogginess di oggetti periferici cambia quando lo spostamento degli occhi del visualizzatore, in questo caso la profondità cambia e l'intervallo rimane costante.
+L'intervallo è il fattore corretto da usare per i calcoli dei tempi di calcolo, ma la profondità viene in genere usata perché l'intervallo richiede molto tempo e la profondità è in genere già disponibile. L'uso della profondità per calcolare il visore ha l'effetto indesiderato di modificare l'intensità degli oggetti periferici quando l'occhio del visualizzatore si sposta. In questo caso, la profondità cambia e l'intervallo rimane costante.
 
-Poiché nessun hardware supporta attualmente la nebbia basata sull'intervallo per pixel, la correzione dell'intervallo viene offerta solo per la nebbia dei vertici.
+Poiché attualmente nessun hardware supporta l'intervallo basato su intervalli per pixel, la correzione dell'intervallo è disponibile solo per vertexrere.
 
-Per altre informazioni, vedere [Vertex Fog (Direct3D 9)](vertex-fog.md).
+Per altre informazioni, vedere [VertexBie (Direct3D 9)](vertex-fog.md).
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILENABLE"></span><span id="d3drs_stencilenable"></span>**\_STENCILENABLE D3DRS**
+<span id="D3DRS_STENCILENABLE"></span><span id="d3drs_stencilenable"></span>**STENCIL \_ D3DRSABILITA**
 </dt> <dd>
 
-**True** per abilitare gli stencil oppure **false** per disabilitare lo stencil. Il valore predefinito è **false**. Per altre informazioni, vedere [tecniche di buffer di stencil (Direct3D 9)](stencil-buffer-techniques.md).
+**TRUE** per abilitare lo stencil o **FALSE per** disabilitare lo stencil. Il valore predefinito è **FALSE.** Per altre informazioni, vedere [Stencil Buffer Techniques (Direct3D 9) (Tecniche del buffer degli stencil ( Direct3D 9)](stencil-buffer-techniques.md)).
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILFAIL"></span><span id="d3drs_stencilfail"></span>**\_STENCILFAIL D3DRS**
+<span id="D3DRS_STENCILFAIL"></span><span id="d3drs_stencilfail"></span>**D3DRS \_ STENCILFAIL**
 </dt> <dd>
 
-Operazione dello stencil da eseguire se il test dello stencil ha esito negativo. I valori sono dal tipo enumerato [**D3DSTENCILOP**](./d3dstencilop.md) . Il valore predefinito è D3DSTENCILOP \_ Keep.
+Operazione di stencil da eseguire se il test di stencil ha esito negativo. I valori derivano [**dal tipo enumerato D3DSTENCILOP.**](./d3dstencilop.md) Il valore predefinito è D3DSTENCILOP \_ KEEP.
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILZFAIL"></span><span id="d3drs_stencilzfail"></span>**\_STENCILZFAIL D3DRS**
+<span id="D3DRS_STENCILZFAIL"></span><span id="d3drs_stencilzfail"></span>**D3DRS \_ STENCILZFAIL**
 </dt> <dd>
 
-Operazione dello stencil da eseguire se il test di stencil viene superato e il test di profondità (z-test) ha esito negativo. I valori sono dal tipo enumerato [**D3DSTENCILOP**](./d3dstencilop.md) . Il valore predefinito è D3DSTENCILOP \_ Keep.
+Operazione di stencil da eseguire se il test di stencil supera e il test di profondità (z-test) ha esito negativo. I valori sono del [**tipo enumerato D3DSTENCILOP.**](./d3dstencilop.md) Il valore predefinito è D3DSTENCILOP \_ KEEP.
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILPASS"></span><span id="d3drs_stencilpass"></span>**\_STENCILPASS D3DRS**
+<span id="D3DRS_STENCILPASS"></span><span id="d3drs_stencilpass"></span>**D3DRS \_ STENCILPASS**
 </dt> <dd>
 
-Operazione dello stencil da eseguire se vengono superati sia lo stencil che i test di profondità (z). I valori sono dal tipo enumerato [**D3DSTENCILOP**](./d3dstencilop.md) . Il valore predefinito è D3DSTENCILOP \_ Keep.
+Operazione di stencil da eseguire se vengono superati sia lo stencil che i test di profondità (z). I valori sono del [**tipo enumerato D3DSTENCILOP.**](./d3dstencilop.md) Il valore predefinito è D3DSTENCILOP \_ KEEP.
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILFUNC"></span><span id="d3drs_stencilfunc"></span>**\_STENCILFUNC D3DRS**
+<span id="D3DRS_STENCILFUNC"></span><span id="d3drs_stencilfunc"></span>**D3DRS \_ STENCILFUNC**
 </dt> <dd>
 
-Funzione di confronto per il test di stencil. I valori sono dal tipo enumerato [**D3DCMPFUNC**](./d3dcmpfunc.md) . Il valore predefinito è D3DCMP \_ Always.
+Funzione di confronto per il test di stencil. I valori sono del [**tipo enumerato D3DCMPFUNC.**](./d3dcmpfunc.md) Il valore predefinito è D3DCMP \_ ALWAYS.
 
-La funzione di confronto viene utilizzata per confrontare il valore di riferimento con una voce del buffer di stencil. Questo confronto si applica solo ai bit del valore di riferimento e alla voce del buffer dello stencil impostati nella maschera dello stencil (impostata dallo \_ stato di rendering STENCILMASK di D3DRS). Se **true**, il test dello stencil viene superato.
+La funzione di confronto viene usata per confrontare il valore di riferimento con una voce del buffer di stencil. Questo confronto si applica solo ai bit nel valore di riferimento e nella voce del buffer di stencil impostati nella maschera di stencil (impostata dallo stato di rendering D3DRS \_ STENCILMASK). Se **TRUE,** il test dello stencil viene superato.
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILREF"></span><span id="d3drs_stencilref"></span>**\_STENCILREF D3DRS**
+<span id="D3DRS_STENCILREF"></span><span id="d3drs_stencilref"></span>**D3DRS \_ STENCILREF**
 </dt> <dd>
 
-Valore di riferimento int per il test di stencil. Il valore predefinito è 0.
+Valore di riferimento int per il test dello stencil. Il valore predefinito è 0.
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILMASK"></span><span id="d3drs_stencilmask"></span>**\_STENCILMASK D3DRS**
+<span id="D3DRS_STENCILMASK"></span><span id="d3drs_stencilmask"></span>**D3DRS \_ STENCILMASK**
 </dt> <dd>
 
-Maschera applicata al valore di riferimento e a ogni voce del buffer di stencil per determinare i bit significativi per il test di stencil. La maschera predefinita è 0xFFFFFFFF.
+Maschera applicata al valore di riferimento e a ogni voce del buffer degli stencil per determinare i bit significativi per il test dello stencil. La maschera predefinita è 0xFFFFFFFF.
 
 </dd> <dt>
 
-<span id="D3DRS_STENCILWRITEMASK"></span><span id="d3drs_stencilwritemask"></span>**\_STENCILWRITEMASK D3DRS**
+<span id="D3DRS_STENCILWRITEMASK"></span><span id="d3drs_stencilwritemask"></span>**STENCIL \_ D3DRSWRITEMASK**
 </dt> <dd>
 
-Maschera di scrittura applicata ai valori scritti nel buffer dello stencil. La maschera predefinita è 0xFFFFFFFF.
+Maschera di scrittura applicata ai valori scritti nel buffer degli stencil. La maschera predefinita è 0xFFFFFFFF.
 
 </dd> <dt>
 
-<span id="D3DRS_TEXTUREFACTOR"></span><span id="d3drs_texturefactor"></span>**\_TEXTUREFACTOR D3DRS**
+<span id="D3DRS_TEXTUREFACTOR"></span><span id="d3drs_texturefactor"></span>**D3DRS \_ TEXTUREFACTOR**
 </dt> <dd>
 
-Colore usato per la fusione a più trame con l' \_ argomento D3DTA TFACTOR texture-blending o l' \_ operazione di combinazione di trame D3DTOP BLENDFACTORALPHA. Il valore associato è una variabile [**D3DCOLOR**](d3dcolor.md) . Il valore predefinito è opaco bianco (0xFFFFFFFF).
+Colore usato per la fusione di più trame con l'argomento di fusione della trama D3DTA TFACTOR o l'operazione di fusione della trama \_ D3DTOP \_ BLENDFACTORALPHA. Il valore associato è una [**variabile D3DCOLOR.**](d3dcolor.md) Il valore predefinito è bianco opaco (0xFFFFFFFF).
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP0"></span><span id="d3drs_wrap0"></span>**\_WRAP0 D3DRS**
+<span id="D3DRS_WRAP0"></span><span id="d3drs_wrap0"></span>**D3DRS \_ WRAP0**
 </dt> <dd>
 
-Comportamento di wrapping della trama per più set di coordinate di trama. I valori validi per questo stato di rendering possono essere qualsiasi combinazione di D3DWRAPCOORD \_ 0 (o D3DWRAP \_ U), D3DWRAPCOORD \_ 1 (o D3DWRAP \_ V), D3DWRAPCOORD \_ 2 (o D3DWRAP \_ W) e D3DWRAPCOORD \_ 3 flag. In questo modo il sistema esegue il wrapping nella direzione della prima, della seconda, della terza e della quarta dimensione, a volte definita le direzioni s, t, r e q, per una determinata trama. Il valore predefinito per questo stato di rendering è 0 (wrapping disabilitato in tutte le direzioni).
+Comportamento di wrapping della trama per più set di coordinate di trama. I valori validi per questo stato di rendering possono essere qualsiasi combinazione dei flag \_ D3DWRAPCOORD 0 (o D3DWRAP \_ U), D3DWRAPCOORD \_ 1 (o D3DWRAP \_ V), D3DWRAPCOORD \_ 2 (o D3DWRAP W) e \_ D3DWRAPCOORD \_ 3. In questo modo il sistema esegue il wrapping nella direzione della prima, seconda, terza e quarta dimensione, a volte definita come direzioni s, t, r e q, per una determinata trama. Il valore predefinito per questo stato di rendering è 0 (il ritorno a capo è disabilitato in tutte le direzioni).
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP1"></span><span id="d3drs_wrap1"></span>**\_WRAP1 D3DRS**
+<span id="D3DRS_WRAP1"></span><span id="d3drs_wrap1"></span>**D3DRS \_ WRAP1**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP2"></span><span id="d3drs_wrap2"></span>**\_WRAP2 D3DRS**
+<span id="D3DRS_WRAP2"></span><span id="d3drs_wrap2"></span>**D3DRS \_ WRAP2**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP3"></span><span id="d3drs_wrap3"></span>**\_WRAP3 D3DRS**
+<span id="D3DRS_WRAP3"></span><span id="d3drs_wrap3"></span>**WRAP D3DRS3 \_**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP4"></span><span id="d3drs_wrap4"></span>**\_WRAP4 D3DRS**
+<span id="D3DRS_WRAP4"></span><span id="d3drs_wrap4"></span>**D3DRS \_ WRAP4**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP5"></span><span id="d3drs_wrap5"></span>**\_WRAP5 D3DRS**
+<span id="D3DRS_WRAP5"></span><span id="d3drs_wrap5"></span>**WRAP D3DRS5 \_**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP6"></span><span id="d3drs_wrap6"></span>**\_WRAP6 D3DRS**
+<span id="D3DRS_WRAP6"></span><span id="d3drs_wrap6"></span>**WRAP D3DRS6 \_**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP7"></span><span id="d3drs_wrap7"></span>**\_WRAP7 D3DRS**
+<span id="D3DRS_WRAP7"></span><span id="d3drs_wrap7"></span>**WRAP D3DRS7 \_**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_CLIPPING"></span><span id="d3drs_clipping"></span>**Ritaglio D3DRS \_**
+<span id="D3DRS_CLIPPING"></span><span id="d3drs_clipping"></span>**RITAGLIO \_ D3DRS**
 </dt> <dd>
 
-**True** per abilitare il ritaglio primitivo da Direct3D o **false** per disabilitarlo. Il valore predefinito è **true**.
+**TRUE** per abilitare il ritaglio primitivo da Direct3D o **FALSE** per disabilitarlo. Il valore predefinito è **TRUE.**
 
 </dd> <dt>
 
-<span id="D3DRS_LIGHTING"></span><span id="d3drs_lighting"></span>**\_Illuminazione D3DRS**
+<span id="D3DRS_LIGHTING"></span><span id="d3drs_lighting"></span>**ILLUMINAZIONE \_ D3DRS**
 </dt> <dd>
 
-**True** per abilitare l'illuminazione Direct3D oppure **false** per disabilitarlo. Il valore predefinito è **true**. Solo i vertici che includono un vertice normale sono illuminati correttamente; i vertici che non contengono un normale impiegano un prodotto a virgola pari a 0 in tutti i calcoli di illuminazione.
+**TRUE** per abilitare l'illuminazione Direct3D o **FALSE** per disabilitarla. Il valore predefinito è **TRUE.** Vengono accesi correttamente solo i vertici che includono una normale vertice. I vertici che non contengono un normale utilizzano un prodotto punto 0 in tutti i calcoli di illuminazione.
 
 </dd> <dt>
 
-<span id="D3DRS_AMBIENT"></span><span id="d3drs_ambient"></span>**\_Ambiente D3DRS**
+<span id="D3DRS_AMBIENT"></span><span id="d3drs_ambient"></span>**AMBIENTE D3DRS \_**
 </dt> <dd>
 
-Colore chiaro ambiente. Questo valore è di tipo [**D3DCOLOR**](d3dcolor.md). Il valore predefinito è 0.
+Colore della luce ambientale. Questo valore è di tipo [**D3DCOLOR**](d3dcolor.md). Il valore predefinito è 0.
 
 </dd> <dt>
 
-<span id="D3DRS_FOGVERTEXMODE"></span><span id="d3drs_fogvertexmode"></span>**\_FOGVERTEXMODE D3DRS**
+<span id="D3DRS_FOGVERTEXMODE"></span><span id="d3drs_fogvertexmode"></span>**D3DRS \_ EVERTEXMODE**
 </dt> <dd>
 
-Formula di nebbia da usare per la nebbia del vertice. Impostare su un membro del tipo enumerato [**D3DFOGMODE**](./d3dfogmode.md) . Il valore predefinito è D3DFOG \_ None.
+Formula del vertice da usare per il vertice. Impostare su un membro del [**tipo enumerato D3DFOGMODE.**](./d3dfogmode.md) Il valore predefinito è D3DFOG \_ NONE.
 
 </dd> <dt>
 
-<span id="D3DRS_COLORVERTEX"></span><span id="d3drs_colorvertex"></span>**\_COLORVERTEX D3DRS**
+<span id="D3DRS_COLORVERTEX"></span><span id="d3drs_colorvertex"></span>**D3DRS \_ COLORVERTEX**
 </dt> <dd>
 
-**True** per abilitare il colore per vertice o **false** per disabilitarlo. Il valore predefinito è **true**. L'abilitazione del colore per vertice consente al sistema di includere il colore definito per i singoli vertici nei calcoli di illuminazione.
+**TRUE** per abilitare il colore per vertice o **FALSE** per disabilitarlo. Il valore predefinito è **TRUE.** L'abilitazione del colore per vertice consente al sistema di includere il colore definito per i singoli vertici nei calcoli di illuminazione.
 
-Per ulteriori informazioni, vedere gli Stati di rendering seguenti:
+Per altre informazioni, vedere gli stati di rendering seguenti:
 
--   \_DIFFUSEMATERIALSOURCE D3DRS
--   \_SPECULARMATERIALSOURCE D3DRS
--   \_AMBIENTMATERIALSOURCE D3DRS
--   \_EMISSIVEMATERIALSOURCE D3DRS
+-   D3DRS \_ DIFFUSEMATERIALSOURCE
+-   D3DRS \_ SPECULARMATERIALSOURCE
+-   D3DRS \_ AMBIENTMATERIALSOURCE
+-   D3DRS \_ EMISSIVEMATERIALSOURCE
 
 </dd> <dt>
 
-<span id="D3DRS_LOCALVIEWER"></span><span id="d3drs_localviewer"></span>**\_LOCALVIEWER D3DRS**
+<span id="D3DRS_LOCALVIEWER"></span><span id="d3drs_localviewer"></span>**D3DRS \_ LOCALVIEWER**
 </dt> <dd>
 
-**True** per abilitare le evidenziazioni speculari relative alla fotocamera o **false** per usare le evidenziazioni speculari ortogonali. Il valore predefinito è **true**. Le applicazioni che usano la proiezione ortogonale devono specificare **false**.
+**TRUE** per abilitare le evidenziazioni speculari relative alla fotocamera o **FALSE per** usare le evidenziazioni speculari ortogonali. Il valore predefinito è **TRUE.** Le applicazioni che usano la proiezione ortogonale devono specificare **FALSE.**
 
 </dd> <dt>
 
-<span id="D3DRS_NORMALIZENORMALS"></span><span id="d3drs_normalizenormals"></span>**\_NORMALIZENORMALS D3DRS**
+<span id="D3DRS_NORMALIZENORMALS"></span><span id="d3drs_normalizenormals"></span>**D3DRS \_ NORMALIZENORMALS**
 </dt> <dd>
 
-**True** per abilitare la normalizzazione automatica delle normali dei vertici oppure **false** per disabilitarla. Il valore predefinito è **false**. L'abilitazione di questa funzionalità consente al sistema di normalizzare le normali dei vertici per i vertici dopo averli trasformati nello spazio della fotocamera, operazione che può richiedere molto tempo.
+**TRUE** per abilitare la normalizzazione automatica delle normali dei vertici o **FALSE** per disabilitarla. Il valore predefinito è **FALSE.** Se si abilita questa funzionalità, il sistema normalizza le normali vertici per i vertici dopo averli trasformati nello spazio della fotocamera, operazione che può richiedere molto tempo a livello di calcolo.
 
 </dd> <dt>
 
-<span id="D3DRS_DIFFUSEMATERIALSOURCE"></span><span id="d3drs_diffusematerialsource"></span>**\_DIFFUSEMATERIALSOURCE D3DRS**
+<span id="D3DRS_DIFFUSEMATERIALSOURCE"></span><span id="d3drs_diffusematerialsource"></span>**D3DRS \_ DIFFUSEMATERIALSOURCE**
 </dt> <dd>
 
-Origine dei colori diffusa per i calcoli di illuminazione. I valori validi sono membri del tipo enumerato [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) . Il valore predefinito è D3DMCS \_ COLOR1. Il valore di questo stato di rendering viene utilizzato solo se lo \_ stato di rendering COLORVERTEX di D3DRS è impostato su **true**.
+Origine colore diffusa per i calcoli dell'illuminazione. I valori validi sono membri del [**tipo enumerato D3DMATERIALCOLORSOURCE.**](./d3dmaterialcolorsource.md) Il valore predefinito è D3DMCS \_ COLOR1. Il valore per questo stato di rendering viene usato solo se lo stato di rendering D3DRS \_ COLORVERTEX è impostato su **TRUE.**
 
 </dd> <dt>
 
-<span id="D3DRS_SPECULARMATERIALSOURCE"></span><span id="d3drs_specularmaterialsource"></span>**\_SPECULARMATERIALSOURCE D3DRS**
+<span id="D3DRS_SPECULARMATERIALSOURCE"></span><span id="d3drs_specularmaterialsource"></span>**D3DRS \_ SPECULARMATERIALSOURCE**
 </dt> <dd>
 
-Origine colore speculare per i calcoli di illuminazione. I valori validi sono membri del tipo enumerato [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) . Il valore predefinito è D3DMCS \_ color2.
+Origine di colore speculare per i calcoli di illuminazione. I valori validi sono membri del [**tipo enumerato D3DMATERIALCOLORSOURCE.**](./d3dmaterialcolorsource.md) Il valore predefinito è D3DMCS \_ COLOR2.
 
 </dd> <dt>
 
-<span id="D3DRS_AMBIENTMATERIALSOURCE"></span><span id="d3drs_ambientmaterialsource"></span>**\_AMBIENTMATERIALSOURCE D3DRS**
+<span id="D3DRS_AMBIENTMATERIALSOURCE"></span><span id="d3drs_ambientmaterialsource"></span>**D3DRS \_ AMBIENTMATERIALSOURCE**
 </dt> <dd>
 
-Origine del colore di ambiente per i calcoli di illuminazione. I valori validi sono membri del tipo enumerato [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) . Il valore predefinito è \_ Material D3DMCS.
+Origine dei colori di ambiente per i calcoli di illuminazione. I valori validi sono membri del [**tipo enumerato D3DMATERIALCOLORSOURCE.**](./d3dmaterialcolorsource.md) Il valore predefinito è D3DMCS \_ MATERIAL.
 
 </dd> <dt>
 
-<span id="D3DRS_EMISSIVEMATERIALSOURCE"></span><span id="d3drs_emissivematerialsource"></span>**\_EMISSIVEMATERIALSOURCE D3DRS**
+<span id="D3DRS_EMISSIVEMATERIALSOURCE"></span><span id="d3drs_emissivematerialsource"></span>**D3DRS \_ EMISSIVEMATERIALSOURCE**
 </dt> <dd>
 
-Origine colore emissivo per i calcoli di illuminazione. I valori validi sono membri del tipo enumerato [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md) . Il valore predefinito è \_ Material D3DMCS.
+Origine del colore emissiva per i calcoli di illuminazione. I valori validi sono membri del [**tipo enumerato D3DMATERIALCOLORSOURCE.**](./d3dmaterialcolorsource.md) Il valore predefinito è D3DMCS \_ MATERIAL.
 
 </dd> <dt>
 
-<span id="D3DRS_VERTEXBLEND"></span><span id="d3drs_vertexblend"></span>**\_VERTEXBLEND D3DRS**
+<span id="D3DRS_VERTEXBLEND"></span><span id="d3drs_vertexblend"></span>**D3DRS \_ VERTEXBLEND**
 </dt> <dd>
 
-Numero di matrici da usare per eseguire la fusione di geometria, se disponibile. I valori validi sono membri del tipo enumerato [**D3DVERTEXBLENDFLAGS**](./d3dvertexblendflags.md) . Il valore predefinito è D3DVBF \_ Disable.
+Numero di matrici da usare per eseguire la fusione geometrica, se presente. I valori validi sono membri del [**tipo enumerato D3DVERTEXBLENDFLAGS.**](./d3dvertexblendflags.md) Il valore predefinito è D3DVBF \_ DISABLE.
 
 </dd> <dt>
 
-<span id="D3DRS_CLIPPLANEENABLE"></span><span id="d3drs_clipplaneenable"></span>**\_CLIPPLANEENABLE D3DRS**
+<span id="D3DRS_CLIPPLANEENABLE"></span><span id="d3drs_clipplaneenable"></span>**D3DRS \_ CLIPPLANEENABLE**
 </dt> <dd>
 
-Abilita o Disabilita i piani di ritaglio definiti dall'utente. I valori validi sono qualsiasi valore DWORD in cui lo stato di ogni bit (set o not set) consente di attivare/disabilitare lo stato di attivazione di un piano di ritaglio definito dall'utente corrispondente. Il bit meno significativo (bit 0) controlla il primo piano di ritaglio in corrispondenza dell'indice 0 e i bit successivi controllano l'attivazione dei piani di ritaglio con indici più elevati. Se è impostato un bit, il sistema applica il piano di ritaglio appropriato durante il rendering della scena. Il valore predefinito è 0.
+Abilita o disabilita i piani di ritaglio definiti dall'utente. I valori validi sono qualsiasi DWORD in cui lo stato di ogni bit (impostato o non impostato) attiva o disattiva lo stato di attivazione di un piano di ritaglio corrispondente definito dall'utente. Il bit meno significativo (bit 0) controlla il primo piano di ritaglio in corrispondenza dell'indice 0 e i bit successivi controllano l'attivazione dei piani di ritaglio in corrispondenza degli indici superiori. Se è impostato un bit, il sistema applica il piano di ritaglio appropriato durante il rendering della scena. Il valore predefinito è 0.
 
-Le macro [**D3DCLIPPLANEn**](d3dclipplanen.md) sono definite per fornire un modo pratico per abilitare i piani di ritaglio.
+Le macro [**D3DCLIPPLANEn**](d3dclipplanen.md) sono definite per offrire un modo pratico per abilitare i piani di ritaglio.
 
 </dd> <dt>
 
-<span id="D3DRS_POINTSIZE"></span><span id="d3drs_pointsize"></span>**\_POINTSIZE D3DRS**
+<span id="D3DRS_POINTSIZE"></span><span id="d3drs_pointsize"></span>**D3DRS \_ POINTSIZE**
 </dt> <dd>
 
-Valore float che specifica le dimensioni da utilizzare per il calcolo delle dimensioni del punto nei casi in cui non viene specificata la dimensione del punto per ogni vertice. Questo valore non viene usato quando il vertice contiene le dimensioni dei punti. Questo valore si trova in unità dello spazio dello schermo se D3DRS \_ POINTSCALEENABLE è **false**; in caso contrario, questo valore è in unità di spazio globale. Il valore predefinito è il valore restituito da un driver. Se un driver restituisce 0 o 1, il valore predefinito è 64, che consente l'emulazione delle dimensioni del punto software. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+Valore float che specifica le dimensioni da usare per il calcolo delle dimensioni dei punti nei casi in cui la dimensione del punto non è specificata per ogni vertice. Questo valore non viene usato quando il vertice contiene dimensioni in punti. Questo valore è in unità di spazio dello schermo se D3DRS \_ POINTSCALEENABLE è **FALSE;** in caso contrario, questo valore è in unità di spazio del mondo. Il valore predefinito è il valore restituito da un driver. Se un driver restituisce 0 o 1, il valore predefinito è 64, che consente l'emulazione delle dimensioni dei punti software. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -583,10 +583,10 @@ m_pDevice9->SetRenderState(D3DRS_POINTSIZE, *((DWORD*)&pointSize));
 
 </dd> <dt>
 
-<span id="D3DRS_POINTSIZE_MIN"></span><span id="d3drs_pointsize_min"></span>**D3DRS \_ POINTSIZE \_ min**
+<span id="D3DRS_POINTSIZE_MIN"></span><span id="d3drs_pointsize_min"></span>**D3DRS \_ POINTSIZE \_ MIN**
 </dt> <dd>
 
-Valore float che specifica le dimensioni minime delle primitive di punti. Le primitive di punti vengono fissate a queste dimensioni durante il rendering. Se si imposta questa opzione su valori inferiori a 1,0, i punti vengono eliminati quando il punto non copre un pixel Center e l'anti-aliasing è disabilitato o viene sottoposto a rendering con intensità ridotta quando è abilitato l'anti-aliasing. Il valore predefinito è 1.0 f. L'intervallo per questo valore è maggiore o uguale a 0,0 f. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+Valore float che specifica la dimensione minima delle primitive di punti. Le primitive punto vengono imposte su queste dimensioni durante il rendering. L'impostazione di questa proprietà su valori inferiori a 1,0 comporta l'eliminazione dei punti quando il punto non copre un centro pixel e l'antialiasing viene disabilitato o sottoposto a rendering con intensità ridotta quando è abilitato l'anti-aliasing. Il valore predefinito è 1,0f. L'intervallo per questo valore è maggiore o uguale a 0,0f. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -597,24 +597,24 @@ m_pDevice9->SetRenderState(D3DRS_POINTSIZE_MIN, *((DWORD*)&pointSizeMin));
 
 </dd> <dt>
 
-<span id="D3DRS_POINTSPRITEENABLE"></span><span id="d3drs_pointspriteenable"></span>**\_POINTSPRITEENABLE D3DRS**
+<span id="D3DRS_POINTSPRITEENABLE"></span><span id="d3drs_pointspriteenable"></span>**PUNTI \_ D3DRSPRITEENABLE**
 </dt> <dd>
 
-valore bool. Se è **true**, le coordinate di trama delle primitive di punti vengono impostate in modo da eseguire il mapping delle trame complete in ogni punto. Se è **false**, le coordinate di trama dei vertici vengono utilizzate per l'intero punto. Il valore predefinito è **false**. È possibile ottenere i punti a pixel singolo dello stile DirectX 7 impostando D3DRS \_ POINTSCALEENABLE su **false** e D3DRS \_ POINTSIZE su 1,0, che corrispondono ai valori predefiniti.
+valore bool. Se **TRUE,** le coordinate di trama delle primitive di punto vengono impostate in modo che le trame complete siano mappate su ogni punto. Quando **FALSE,** le coordinate della trama dei vertici vengono usate per l'intero punto. Il valore predefinito è **FALSE.** È possibile ottenere punti a pixel singolo in stile DirectX 7 impostando D3DRS \_ POINTSCALEENABLE su **FALSE** e D3DRS \_ POINTSIZE su 1.0, che sono i valori predefiniti.
 
 </dd> <dt>
 
-<span id="D3DRS_POINTSCALEENABLE"></span><span id="d3drs_pointscaleenable"></span>**\_POINTSCALEENABLE D3DRS**
+<span id="D3DRS_POINTSCALEENABLE"></span><span id="d3drs_pointscaleenable"></span>**D3DRS \_ POINTSCALEENABLE**
 </dt> <dd>
 
-valore bool che controlla il calcolo delle dimensioni per le primitive puntiformi. Se è **true**, la dimensione del punto viene interpretata come valore di spazio della fotocamera e viene ridimensionata dalla funzione Distance e da tronco a viewport per il ridimensionamento dell'asse y per calcolare la dimensione finale dello spazio dello schermo. Se è **false**, le dimensioni del punto vengono interpretate come spazi dello schermo e utilizzate direttamente. Il valore predefinito è **false**.
+Valore bool che controlla il calcolo delle dimensioni per le primitive di punti. Quando **TRUE,** le dimensioni del punto vengono interpretate come un valore dello spazio della fotocamera e vengono ridimensionate dalla funzione distance e dal ridimensionamento dell'asse y del viewport al viewport per calcolare le dimensioni finali del punto dello spazio dello schermo. Quando **FALSE,** le dimensioni in punti vengono interpretate come spazio sullo schermo e usate direttamente. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
 <span id="D3DRS_POINTSCALE_A"></span><span id="d3drs_pointscale_a"></span>**D3DRS \_ POINTSCALE \_ A**
 </dt> <dd>
 
-Valore float che controlla l'attenuazione delle dimensioni basate sulla distanza per le primitive di punti. Attivo solo quando D3DRS \_ POINTSCALEENABLE è **true**. Il valore predefinito è 1.0 f. L'intervallo per questo valore è maggiore o uguale a 0,0 f. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+Valore float che controlla l'attenuazione delle dimensioni basata sulla distanza per le primitive di punto. Attivo solo quando D3DRS \_ POINTSCALEENABLE è **TRUE.** Il valore predefinito è 1,0f. L'intervallo per questo valore è maggiore o uguale a 0,0f. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -628,7 +628,7 @@ m_pDevice9->SetRenderState(D3DRS_POINTSCALE_A, *((DWORD*)&pointScaleA));
 <span id="D3DRS_POINTSCALE_B"></span><span id="d3drs_pointscale_b"></span>**D3DRS \_ POINTSCALE \_ B**
 </dt> <dd>
 
-Valore float che controlla l'attenuazione delle dimensioni basate sulla distanza per le primitive di punti. Attivo solo quando D3DRS \_ POINTSCALEENABLE è **true**. Il valore predefinito è 0,0 f. L'intervallo per questo valore è maggiore o uguale a 0,0 f. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+Valore float che controlla l'attenuazione delle dimensioni in base alla distanza per le primitive punto. Attiva solo quando D3DRS \_ POINTSCALEENABLE è **TRUE.** Il valore predefinito è 0,0f. L'intervallo per questo valore è maggiore o uguale a 0,0f. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -642,7 +642,7 @@ m_pDevice9->SetRenderState(D3DRS_POINTSCALE_B, *((DWORD*)&pointScaleB));
 <span id="D3DRS_POINTSCALE_C"></span><span id="d3drs_pointscale_c"></span>**D3DRS \_ POINTSCALE \_ C**
 </dt> <dd>
 
-Valore float che controlla l'attenuazione delle dimensioni basate sulla distanza per le primitive di punti. Attivo solo quando D3DRS \_ POINTSCALEENABLE è **true**. Il valore predefinito è 0,0 f. L'intervallo per questo valore è maggiore o uguale a 0,0 f. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+Valore float che controlla l'attenuazione delle dimensioni in base alla distanza per le primitive punto. Attiva solo quando D3DRS \_ POINTSCALEENABLE è **TRUE.** Il valore predefinito è 0,0f. L'intervallo per questo valore è maggiore o uguale a 0,0f. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -653,44 +653,44 @@ m_pDevice9->SetRenderState(D3DRS_POINTSCALE_C, *((DWORD*)&pointScaleC));
 
 </dd> <dt>
 
-<span id="D3DRS_MULTISAMPLEANTIALIAS"></span><span id="d3drs_multisampleantialias"></span>**\_MULTISAMPLEANTIALIAS D3DRS**
+<span id="D3DRS_MULTISAMPLEANTIALIAS"></span><span id="d3drs_multisampleantialias"></span>**D3DRS \_ MULTISAMPLEANTIALIAS**
 </dt> <dd>
 
-valore bool che determina il modo in cui vengono calcolati i singoli campioni quando si usa un buffer di destinazione di rendering multicampionamento. Se è impostato su **true**, vengono calcolati i diversi esempi in modo che l'anti-aliasing delle scene complete venga eseguito tramite il campionamento in posizioni di campionamento diverse per ogni campione multiplo. Se è impostato su **false**, gli esempi multipli vengono scritti con lo stesso valore di esempio, campionati in corrispondenza del pixel Center, che consente il rendering senza alias in un buffer multicampione. Questo stato di rendering non ha alcun effetto durante il rendering in un singolo buffer di esempio. Il valore predefinito è **true**.
+Valore bool che determina il modo in cui vengono calcolati i singoli campioni quando si usa un buffer di destinazione di rendering multicampionamento. Se impostato su **TRUE,** vengono calcolati più campioni in modo che l'anti-aliasing della scena completa sia eseguito tramite il campionamento in posizioni di campionamento diverse per ogni campione multiplo. Se impostato su **FALSE,** tutti i campioni multipli vengono scritti con lo stesso valore di campione, campionato al centro del pixel, che consente il rendering non antialias in un buffer multicampionamento. Questo stato di rendering non ha alcun effetto quando si esegue il rendering in un singolo buffer di esempio. Il valore predefinito è **TRUE.**
 
 </dd> <dt>
 
-<span id="D3DRS_MULTISAMPLEMASK"></span><span id="d3drs_multisamplemask"></span>**\_MULTISAMPLEMASK D3DRS**
+<span id="D3DRS_MULTISAMPLEMASK"></span><span id="d3drs_multisamplemask"></span>**D3DRS \_ MULTISAMPLEMASK**
 </dt> <dd>
 
-Ogni bit in questa maschera, iniziando dal bit meno significativo (LSB), controlla la modifica di uno degli esempi in una destinazione di rendering multicampionamento. Pertanto, per una destinazione di rendering di 8 campioni, il byte minimo contiene le otto abilitazioni di scrittura per ognuno degli otto esempi. Questo stato di rendering non ha alcun effetto durante il rendering in un singolo buffer di esempio. Il valore predefinito è 0xFFFFFFFF.
+Ogni bit di questa maschera, a partire dal bit meno significativo (LSB), controlla la modifica di uno degli esempi in una destinazione di rendering multicampionamento. Pertanto, per una destinazione di rendering di 8 campioni, il byte basso contiene le otto operazioni di scrittura abilitate per ognuno degli otto campioni. Questo stato di rendering non ha alcun effetto quando viene eseguito il rendering in un singolo buffer di esempio. Il valore predefinito è 0xFFFFFFFF.
 
-Questo stato di rendering consente l'uso di un buffer multisample come buffer di accumulo, eseguendo il rendering multipass della geometria in cui ogni passaggio Aggiorna un subset di esempi.
+Questo stato di rendering consente l'uso di un buffer multicampione come buffer di accumulo, eseguendo il rendering multipass della geometria in cui ogni passaggio aggiorna un subset di esempi.
 
-Se sono presenti n campioni multisamples e k Enabled, l'intensità risultante dell'immagine di cui è stato eseguito il rendering dovrebbe essere k/n. Ogni componente RGB di ogni pixel è fattorizzato da k/n.
+Se sono presenti n campioni multicampionati e k abilitati, l'intensità risultante dell'immagine sottoposta a rendering deve essere k/n. Ogni componente RGB di ogni pixel viene fattoriato da k/n.
 
 </dd> <dt>
 
-<span id="D3DRS_PATCHEDGESTYLE"></span><span id="d3drs_patchedgestyle"></span>**\_PATCHEDGESTYLE D3DRS**
+<span id="D3DRS_PATCHEDGESTYLE"></span><span id="d3drs_patchedgestyle"></span>**D3DRS \_ PATCHEDGESTYLE**
 </dt> <dd>
 
-Imposta se i bordi della patch utilizzeranno lo schema a mosaico di tipo float. I valori possibili sono definiti dal tipo enumerato [**D3DPATCHEDGESTYLE**](./d3dpatchedgestyle.md) . Il valore predefinito è D3DPATCHEDGE \_ discrete.
+Imposta un valore che indica se i bordi delle patch useranno la tessellazione in stile float. I valori possibili sono definiti dal [**tipo enumerato D3DPATCHEDGESTYLE.**](./d3dpatchedgestyle.md) Il valore predefinito è D3DPATCHEDGE \_ DISCRETE.
 
 </dd> <dt>
 
-<span id="D3DRS_DEBUGMONITORTOKEN"></span><span id="d3drs_debugmonitortoken"></span>**\_DEBUGMONITORTOKEN D3DRS**
+<span id="D3DRS_DEBUGMONITORTOKEN"></span><span id="d3drs_debugmonitortoken"></span>**D3DRS \_ DEBUGMONITORTOKEN**
 </dt> <dd>
 
-Impostare solo per il debug del monitoraggio. I valori possibili sono definiti dal tipo enumerato [**D3DDEBUGMONITORTOKENS**](./d3ddebugmonitortokens.md) . Si noti che se \_ è impostato D3DRS DEBUGMONITORTOKEN, la chiamata viene considerata come passaggio di un token al monitor di debug. Ad esempio, se-dopo il passaggio di D3DDMT \_ Enable o D3DDMT \_ Disable a D3DRS \_ DEBUGMONITORTOKEN. gli altri valori di token vengono passati, lo stato (abilitato o disabilitato) del monitoraggio del debug continuerà a essere persistente.
+Impostare solo per il debug del monitoraggio. I valori possibili sono definiti dal [**tipo enumerato D3DDEBUGMONITORTOKENS.**](./d3ddebugmonitortokens.md) Si noti che se d3DRS DEBUGMONITORTOKEN è impostato, la chiamata viene considerata come passaggio \_ di un token al monitoraggio di debug. Se, ad esempio, dopo aver passato D3DDMT ENABLE o \_ D3DDMT DISABLE a \_ D3DRS DEBUGMONITORTOKEN, vengono passati altri valori di token, lo stato (abilitato o disabilitato) del monitoraggio di debug continuerà a essere \_ persistente.
 
-Questo stato è utile solo per le compilazioni di debug. Per impostazione predefinita, il monitoraggio del debug viene abilitato per D3DDMT \_ .
+Questo stato è utile solo per le build di debug. Per impostazione predefinita, il monitoraggio del debug è D3DDMT \_ ENABLE.
 
 </dd> <dt>
 
-<span id="D3DRS_POINTSIZE_MAX"></span><span id="d3drs_pointsize_max"></span>**D3DRS \_ POINTSIZE \_ Max**
+<span id="D3DRS_POINTSIZE_MAX"></span><span id="d3drs_pointsize_max"></span>**D3DRS \_ POINTSIZE \_ MAX**
 </dt> <dd>
 
-Valore float che specifica la dimensione massima a cui verranno bloccati gli sprite del punto. Il valore deve essere minore o uguale al membro MaxPointSize di [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) e maggiore o uguale a D3DRS \_ POINTSIZE \_ min. Il valore predefinito è 64,0. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+Valore float che specifica le dimensioni massime fino a cui verranno ancoraggio gli sprite di punti. Il valore deve essere minore o uguale al membro MaxPointSize di [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) e maggiore o uguale a D3DRS \_ POINTSIZE \_ MIN. Il valore predefinito è 64.0. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -701,26 +701,26 @@ m_pDevice9->SetRenderState(D3DRS_PONTSIZE_MAX, *((DWORD*)&pointSizeMax));
 
 </dd> <dt>
 
-<span id="D3DRS_INDEXEDVERTEXBLENDENABLE"></span><span id="d3drs_indexedvertexblendenable"></span>**\_INDEXEDVERTEXBLENDENABLE D3DRS**
+<span id="D3DRS_INDEXEDVERTEXBLENDENABLE"></span><span id="d3drs_indexedvertexblendenable"></span>**D3DRS \_ INDEXEDVERTEXBLENDENABLE**
 </dt> <dd>
 
-valore bool che Abilita o Disabilita la fusione di vertici indicizzati. Il valore predefinito è **false**. Se impostato su **true**, la fusione di vertici indicizzati è abilitata. Se impostato su **false**, la fusione di vertici indicizzati è disabilitata. Se questo stato di rendering è abilitato, l'utente deve passare gli indici di matrice come DWORDwith compresso ogni vertice. Quando lo stato di rendering è disabilitato e la fusione dei vertici viene abilitata tramite lo \_ stato VERTEXBLEND di D3DRS, equivale a avere gli indici di matrice 0, 1, 2, 3 in ogni vertice.
+Valore bool che abilita o disabilita la fusione dei vertici indicizzati. Il valore predefinito è **FALSE.** Se impostato su **TRUE,** la fusione dei vertici indicizzata è abilitata. Se impostata **su FALSE,** la fusione dei vertici indicizzata è disabilitata. Se questo stato di rendering è abilitato, l'utente deve passare gli indici di matrice come DWORD di tipo packedcon ogni vertice. Quando lo stato di rendering è disabilitato e la fusione dei vertici viene abilitata tramite lo stato VERTEXBLEND D3DRS, equivale a disporre di indici matrice \_ 0, 1, 2, 3 in ogni vertice.
 
 </dd> <dt>
 
-<span id="D3DRS_COLORWRITEENABLE"></span><span id="d3drs_colorwriteenable"></span>**\_COLORWRITEENABLE D3DRS**
+<span id="D3DRS_COLORWRITEENABLE"></span><span id="d3drs_colorwriteenable"></span>**D3DRS \_ COLORWRITEENABLE**
 </dt> <dd>
 
-Valore UINT che consente la scrittura per canale per il buffer dei colori della destinazione di rendering. Un bit impostato comporta l'aggiornamento del canale colori durante il rendering 3D. Un bit chiaro restituisce il canale di colore ininteressato. Questa funzionalità è disponibile se il \_ bit D3DPMISCCAPS COLORWRITEENABLE capabilities è impostato nel membro PrimitiveMiscCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Questo stato di rendering non influisce sull'operazione di cancellazione. Il valore predefinito è 0x0000000F.
+Valore UINT che abilita una scrittura per canale per il buffer dei colori di destinazione del rendering. Un bit impostato determina l'aggiornamento del canale colori durante il rendering 3D. Un bit chiaro fa in modo che il canale di colore non sia interessato. Questa funzionalità è disponibile se il bit di funzionalità D3DPMISCCAPS COLORWRITEENABLE è impostato nel membro \_ PrimitiveMiscCaps della [**struttura D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Questo stato di rendering non influisce sull'operazione di cancellazione. Il valore predefinito è 0x0000000F.
 
-I valori validi per questo stato di rendering possono essere qualsiasi combinazione dei \_ flag D3DCOLORWRITEENABLE alfa, D3DCOLORWRITEENABLE \_ blu, D3DCOLORWRITEENABLE \_ verde o D3DCOLORWRITEENABLE \_ .
+I valori validi per questo stato di rendering possono essere qualsiasi combinazione dei flag D3DCOLORWRITEENABLE \_ ALPHA, D3DCOLORWRITEENABLE \_ BLUE, D3DCOLORWRITEENABLE GREEN o \_ D3DCOLORWRITEENABLE \_ RED.
 
 </dd> <dt>
 
-<span id="D3DRS_TWEENFACTOR"></span><span id="d3drs_tweenfactor"></span>**\_TWEENFACTOR D3DRS**
+<span id="D3DRS_TWEENFACTOR"></span><span id="d3drs_tweenfactor"></span>**D3DRS \_ TWEENFACTOR**
 </dt> <dd>
 
-Valore float che controlla il fattore di interpolazione. Il valore predefinito è 0,0 f. Poiché il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
+Valore float che controlla il fattore di interpolazione. Il valore predefinito è 0,0f. Poiché il [**metodo IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) accetta valori DWORD, l'applicazione deve eseguire il cast di una variabile che contiene il valore, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -731,280 +731,280 @@ m_pDevice9->SetRenderState(D3DRS_TWEENFACTOR, *((DWORD*)&TweenFactor));
 
 </dd> <dt>
 
-<span id="D3DRS_BLENDOP"></span><span id="d3drs_blendop"></span>**\_BLENDOP D3DRS**
+<span id="D3DRS_BLENDOP"></span><span id="d3drs_blendop"></span>**D3DRS \_ BLENDOP**
 </dt> <dd>
 
-Valore utilizzato per selezionare l'operazione aritmetica applicata quando lo stato di rendering della fusione alfa, D3DRS \_ ALPHABLENDENABLE, è impostato su **true**. I valori validi sono definiti dal tipo enumerato [**D3DBLENDOP**](./d3dblendop.md) . Il valore predefinito è D3DBLENDOP \_ Add.
+Valore utilizzato per selezionare l'operazione aritmetica applicata quando lo stato di rendering della fusione alfa, D3DRS \_ ALPHABLENDENABLE, è impostato su **TRUE.** I valori validi sono definiti dal [**tipo enumerato D3DBLENDOP.**](./d3dblendop.md) Il valore predefinito è D3DBLENDOP \_ ADD.
 
-Se la \_ funzionalità del dispositivo BLENDOP di D3DPMISCCAPS non è supportata, \_ viene eseguito D3DBLENDOP Add.
+Se la funzionalità del dispositivo D3DPMISCCAPS BLENDOP non è supportata, viene eseguito \_ D3DBLENDOP \_ ADD.
 
 </dd> <dt>
 
-<span id="D3DRS_POSITIONDEGREE"></span><span id="d3drs_positiondegree"></span>**\_POSITIONDEGREE D3DRS**
+<span id="D3DRS_POSITIONDEGREE"></span><span id="d3drs_positiondegree"></span>**D3DRS \_ POSITIONDEGREE**
 </dt> <dd>
 
-N: grado di interpolazione posizione patch. I valori possono essere D3DDEGREE \_ cubici (impostazione predefinita) o D3DDEGREE \_ lineari. Per ulteriori informazioni, vedere [**D3DDEGREETYPE**](./d3ddegreetype.md).
+Grado di interpolazione posizione N-patch. I valori possono essere D3DDEGREE \_ CUBIC (impostazione predefinita) o D3DDEGREE \_ LINEAR. Per altre informazioni, vedere [**D3DDEGREETYPE**](./d3ddegreetype.md).
 
 </dd> <dt>
 
-<span id="D3DRS_NORMALDEGREE"></span><span id="d3drs_normaldegree"></span>**\_NORMALDEGREE D3DRS**
+<span id="D3DRS_NORMALDEGREE"></span><span id="d3drs_normaldegree"></span>**D3DRS \_ NORMALDEGREE**
 </dt> <dd>
 
-N-patch del livello di interpolazione normale. I valori possono essere D3DDEGREE \_ lineari (impostazione predefinita) o D3DDEGREE \_ quadratici. Per ulteriori informazioni, vedere [**D3DDEGREETYPE**](./d3ddegreetype.md).
+Grado di interpolazione normale con patch a N. I valori possono essere D3DDEGREE \_ LINEAR (impostazione predefinita) o D3DDEGREE \_ QUADRATIC. Per altre informazioni, vedere [**D3DDEGREETYPE**](./d3ddegreetype.md).
 
 </dd> <dt>
 
-<span id="D3DRS_SCISSORTESTENABLE"></span><span id="d3drs_scissortestenable"></span>**\_SCISSORTESTENABLE D3DRS**
+<span id="D3DRS_SCISSORTESTENABLE"></span><span id="d3drs_scissortestenable"></span>**D3DRS \_ SCISSORTESTENABLE**
 </dt> <dd>
 
-**True** per abilitare il test di Scissor e **false** per disabilitarlo. Il valore predefinito è **false**.
+**TRUE** per abilitare il test della forbice e **FALSE** per disabilitarlo. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
-<span id="D3DRS_SLOPESCALEDEPTHBIAS"></span><span id="d3drs_slopescaledepthbias"></span>**\_SLOPESCALEDEPTHBIAS D3DRS**
+<span id="D3DRS_SLOPESCALEDEPTHBIAS"></span><span id="d3drs_slopescaledepthbias"></span>**D3DRS \_ SLOPESCALEDEPTHBIAS**
 </dt> <dd>
 
-Usato per determinare la distorsione che può essere applicata alle primitive coplanari per ridurre il combattimento z. Il valore predefinito è 0.
+Usato per determinare la quantità di distorsione che può essere applicata alle primitive co-planari per ridurre lo z-fighting. Il valore predefinito è 0.
 
-Bias = (Max \* D3DRS \_ SLOPESCALEDEPTHBIAS) + D3DRS \_ DEPTHBIAS.
+bias = (max \* D3DRS \_ SLOPESCALEDEPTHBIAS) + D3DRS \_ DEPTHBIAS.
 
-dove Max è la pendenza massima della profondità del triangolo sottoposto a rendering.
+dove max è l'inclinazione massima della profondità del triangolo sottoposto a rendering.
 
 </dd> <dt>
 
-<span id="D3DRS_ANTIALIASEDLINEENABLE"></span><span id="d3drs_antialiasedlineenable"></span>**\_ANTIALIASEDLINEENABLE D3DRS**
+<span id="D3DRS_ANTIALIASEDLINEENABLE"></span><span id="d3drs_antialiasedlineenable"></span>**D3DRS \_ ANTIALIASEDLINEENABLE**
 </dt> <dd>
 
-**True** per abilitare l'anti-aliasing della riga, **false** per disabilitare l'anti-aliasing della riga. Il valore predefinito è **false**.
+**TRUE** per abilitare l'anti-aliasing delle righe, **FALSE per** disabilitare l'anti-aliasing di riga. Il valore predefinito è **FALSE.**
 
-Quando si esegue il rendering in una destinazione di rendering multisample, D3DRS \_ ANTIALIASEDLINEENABLE viene ignorato e viene eseguito il rendering di tutte le righe con alias. Usare [**ID3DXLine**](id3dxline.md) per il rendering di una riga con alias in una destinazione di rendering multicampionamento.
+Quando si esegue il rendering in una destinazione di rendering multicampionamento, D3DRS ANTIALIASEDLINEENABLE viene ignorato e viene eseguito il rendering di tutte le \_ righe con alias. Usare [**ID3DXLine per**](id3dxline.md) il rendering di linee con antialias in una destinazione di rendering multicampionamento.
 
 </dd> <dt>
 
-<span id="D3DRS_MINTESSELLATIONLEVEL"></span><span id="d3drs_mintessellationlevel"></span>**\_MINTESSELLATIONLEVEL D3DRS**
+<span id="D3DRS_MINTESSELLATIONLEVEL"></span><span id="d3drs_mintessellationlevel"></span>**D3DRS \_ MINTESSELLATIONLEVEL**
 </dt> <dd>
 
-Livello minimo a mosaico. Il valore predefinito è 1.0 f. Vedere [mosaico (Direct3D 9)](tessellation.md).
+Livello minimo a più livelli. Il valore predefinito è 1,0f. Vedere [Tessellation (Direct3D 9)](tessellation.md).
 
 </dd> <dt>
 
-<span id="D3DRS_MAXTESSELLATIONLEVEL"></span><span id="d3drs_maxtessellationlevel"></span>**\_MAXTESSELLATIONLEVEL D3DRS**
+<span id="D3DRS_MAXTESSELLATIONLEVEL"></span><span id="d3drs_maxtessellationlevel"></span>**D3DRS \_ MAXTESSELLATIONLEVEL**
 </dt> <dd>
 
-Livello massimo a mosaico. Il valore predefinito è 1.0 f. Vedere [mosaico (Direct3D 9)](tessellation.md).
+Livello massimo a tessellazione. Il valore predefinito è 1,0f. Vedere [Tessellation (Direct3D 9)](tessellation.md).
 
 </dd> <dt>
 
 <span id="D3DRS_ADAPTIVETESS_X"></span><span id="d3drs_adaptivetess_x"></span>**D3DRS \_ ADAPTIVETESS \_ X**
 </dt> <dd>
 
-Valore di in modo adattivo conteggiarla suddividerla, nella direzione x. Il valore predefinito è 0,0 f. Vedere [schema a mosaico adattivo](tessellation.md).
+Quantità da a tessellare adattivamente, nella direzione x. Il valore predefinito è 0,0f. Vedere [a tessellazione adattiva.](tessellation.md)
 
 </dd> <dt>
 
 <span id="D3DRS_ADAPTIVETESS_Y"></span><span id="d3drs_adaptivetess_y"></span>**D3DRS \_ ADAPTIVETESS \_ Y**
 </dt> <dd>
 
-Valore di in modo adattivo conteggiarla suddividerla nella direzione y. Il valore predefinito è 0,0 f. Vedere [schema a \_ mosaico adattivo](tessellation.md).
+Quantità da a tessellare adattivamente, nella direzione y. Il valore predefinito è 0,0f. Vedere [a \_ tessellazione adattiva.](tessellation.md)
 
 </dd> <dt>
 
 <span id="D3DRS_ADAPTIVETESS_Z"></span><span id="d3drs_adaptivetess_z"></span>**D3DRS \_ ADAPTIVETESS \_ Z**
 </dt> <dd>
 
-Valore di in modo adattivo conteggiarla suddividerla, nella direzione z. Il valore predefinito è 1.0 f. Vedere [schema a \_ mosaico adattivo](tessellation.md).
+Quantità da a tessellare adattivamente, nella direzione z. Il valore predefinito è 1,0f. Vedere [a \_ tessellazione adattiva.](tessellation.md)
 
 </dd> <dt>
 
 <span id="D3DRS_ADAPTIVETESS_W"></span><span id="d3drs_adaptivetess_w"></span>**D3DRS \_ ADAPTIVETESS \_ W**
 </dt> <dd>
 
-Valore di in modo adattivo conteggiarla suddividerla, nella direzione w. Il valore predefinito è 0,0 f. Vedere [schema a \_ mosaico adattivo](tessellation.md).
+Quantità da a tessellare in modo adattivo, nella direzione w. Il valore predefinito è 0,0f. Vedere [a \_ tessellazione adattiva.](tessellation.md)
 
 </dd> <dt>
 
-<span id="D3DRS_ENABLEADAPTIVETESSELLATION"></span><span id="d3drs_enableadaptivetessellation"></span>**\_ENABLEADAPTIVETESSELLATION D3DRS**
+<span id="D3DRS_ENABLEADAPTIVETESSELLATION"></span><span id="d3drs_enableadaptivetessellation"></span>**D3DRS \_ ENABLEADAPTIVETESSELLATION**
 </dt> <dd>
 
-**True** per abilitare lo schema a mosaico adattivo, **false** per disabilitarlo. Il valore predefinito è **false**. Vedere [schema a \_ mosaico adattivo](tessellation.md).
+**TRUE** per abilitare la tessellazione adattiva, **FALSE** per disabilitarla. Il valore predefinito è **FALSE.** Vedere [a \_ tessellazione adattiva.](tessellation.md)
 
 </dd> <dt>
 
-<span id="D3DRS_TWOSIDEDSTENCILMODE"></span><span id="d3drs_twosidedstencilmode"></span>**\_TWOSIDEDSTENCILMODE D3DRS**
+<span id="D3DRS_TWOSIDEDSTENCILMODE"></span><span id="d3drs_twosidedstencilmode"></span>**D3DRS \_ TWOSIDEDSTENCILMODE**
 </dt> <dd>
 
-**True** Abilita lo stencil a due lati, **false** lo Disabilita. Il valore predefinito è **false**. Per \_ \_ abilitare la modalità stencil bilaterale, l'applicazione deve impostare D3DRS CULLMODE su D3DCULL None. Se l'ordine di avvolgimento del triangolo è in senso orario, \_ verranno usate le operazioni dello stencil D3DRS \* . Se l'ordine di avvolgimento è in senso antiorario, \_ \_ verranno usate le operazioni dello stencil D3DRS CCW \* .
+**TRUE** abilita lo stencil su due lati, **FALSE** lo disabilita. Il valore predefinito è **FALSE.** L'applicazione deve impostare D3DRS \_ CULLMODE su D3DCULL NONE per abilitare la \_ modalità di stencil a due lati. Se l'ordine di avvolgimento del triangolo è in senso orario, verranno usate le operazioni D3DRS \_ \* STENCIL. Se l'ordine di avvolgimento è in senso antiorario, verranno usate le operazioni \_ CCW STENCIL D3DRS. \_ \*
 
 Per verificare se lo stencil a due lati è supportato, controllare il membro StencilCaps di [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per D3DSTENCILCAPS \_ TWOSIDED. Vedere anche [D3DSTENCILCAPS](d3dstencilcaps.md).
 
 </dd> <dt>
 
-<span id="D3DRS_CCW_STENCILFAIL"></span><span id="d3drs_ccw_stencilfail"></span>**D3DRS \_ CCW \_ STENCILFAIL**
+<span id="D3DRS_CCW_STENCILFAIL"></span><span id="d3drs_ccw_stencilfail"></span>**STENCIL \_ CCW D3DRSFAIL \_**
 </dt> <dd>
 
-Operazione dello stencil da eseguire se il test di stencil CCW non riesce. I valori sono dal tipo enumerato [**D3DSTENCILOP**](./d3dstencilop.md) . Il valore predefinito è D3DSTENCILOP \_ Keep.
+Operazione stencil da eseguire se il test dello stencil CCW ha esito negativo. I valori derivano [**dal tipo enumerato D3DSTENCILOP.**](./d3dstencilop.md) Il valore predefinito è D3DSTENCILOP \_ KEEP.
 
 </dd> <dt>
 
-<span id="D3DRS_CCW_STENCILZFAIL"></span><span id="d3drs_ccw_stencilzfail"></span>**D3DRS \_ CCW \_ STENCILZFAIL**
+<span id="D3DRS_CCW_STENCILZFAIL"></span><span id="d3drs_ccw_stencilzfail"></span>**\_STENCIL CCW D3DRSZFAIL \_**
 </dt> <dd>
 
-Operazione dello stencil da eseguire se il test di stencil CCW supera e z-test ha esito negativo. I valori sono dal tipo enumerato [**D3DSTENCILOP**](./d3dstencilop.md) . Il valore predefinito è D3DSTENCILOP \_ Keep.
+Operazione stencil da eseguire se il test dello stencil CCW ha esito positivo e z-test ha esito negativo. I valori derivano [**dal tipo enumerato D3DSTENCILOP.**](./d3dstencilop.md) Il valore predefinito è D3DSTENCILOP \_ KEEP.
 
 </dd> <dt>
 
 <span id="D3DRS_CCW_STENCILPASS"></span><span id="d3drs_ccw_stencilpass"></span>**D3DRS \_ CCW \_ STENCILPASS**
 </dt> <dd>
 
-Operazione dello stencil da eseguire se vengono superati sia lo stencil CCW che i test z. I valori sono dal tipo enumerato [**D3DSTENCILOP**](./d3dstencilop.md) . Il valore predefinito è D3DSTENCILOP \_ Keep.
+Operazione stencil da eseguire se vengono superati sia lo stencil CCW che i test z. I valori derivano [**dal tipo enumerato D3DSTENCILOP.**](./d3dstencilop.md) Il valore predefinito è D3DSTENCILOP \_ KEEP.
 
 </dd> <dt>
 
 <span id="D3DRS_CCW_STENCILFUNC"></span><span id="d3drs_ccw_stencilfunc"></span>**D3DRS \_ CCW \_ STENCILFUNC**
 </dt> <dd>
 
-Funzione di confronto. Il test di stencil CCW passa se la funzione (((Ref & mask) dello stencil (stencil & mask)) è **true**. I valori sono dal tipo enumerato [**D3DCMPFUNC**](./d3dcmpfunc.md) . Il valore predefinito è D3DCMP \_ Always.
+Funzione di confronto. Il test degli stencil CCW viene superato se ((ref & mask) funzione stencil (stencil & mask)) è **TRUE.** I valori derivano [**dal tipo enumerato D3DCMPFUNC.**](./d3dcmpfunc.md) Il valore predefinito è D3DCMP \_ ALWAYS.
 
 </dd> <dt>
 
-<span id="D3DRS_COLORWRITEENABLE1"></span><span id="d3drs_colorwriteenable1"></span>**\_COLORWRITEENABLE1 D3DRS**
+<span id="D3DRS_COLORWRITEENABLE1"></span><span id="d3drs_colorwriteenable1"></span>**D3DRS \_ COLORWRITEENABLE1**
 </dt> <dd>
 
-Valori ColorWriteEnable aggiuntivi per i dispositivi. Vedere D3DRS \_ COLORWRITEENABLE. Questa funzionalità è disponibile se il \_ bit D3DPMISCCAPS INDEPENDENTWRITEMASKS capabilities è impostato nel membro PrimitiveMiscCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Il valore predefinito è 0x0000000F.
+Valori ColorWriteEnable aggiuntivi per i dispositivi. Vedere D3DRS \_ COLORWRITEENABLE. Questa funzionalità è disponibile se il bit di funzionalità D3DPMISCCAPS INDEPENDENTWRITEMASKS è impostato nel membro \_ PrimitiveMiscCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Il valore predefinito è 0x0000000f.
 
 </dd> <dt>
 
-<span id="D3DRS_COLORWRITEENABLE2"></span><span id="d3drs_colorwriteenable2"></span>**\_COLORWRITEENABLE2 D3DRS**
+<span id="D3DRS_COLORWRITEENABLE2"></span><span id="d3drs_colorwriteenable2"></span>**D3DRS \_ COLORWRITEENABLE2**
 </dt> <dd>
 
-Valori ColorWriteEnable aggiuntivi per i dispositivi. Vedere D3DRS \_ COLORWRITEENABLE. Questa funzionalità è disponibile se il \_ bit D3DPMISCCAPS INDEPENDENTWRITEMASKS capabilities è impostato nel membro PrimitiveMiscCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Il valore predefinito è 0x0000000F.
+Valori ColorWriteEnable aggiuntivi per i dispositivi. Vedere D3DRS \_ COLORWRITEENABLE. Questa funzionalità è disponibile se il bit di funzionalità D3DPMISCCAPS INDEPENDENTWRITEMASKS è impostato nel membro \_ PrimitiveMiscCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Il valore predefinito è 0x0000000f.
 
 </dd> <dt>
 
-<span id="D3DRS_COLORWRITEENABLE3"></span><span id="d3drs_colorwriteenable3"></span>**\_COLORWRITEENABLE3 D3DRS**
+<span id="D3DRS_COLORWRITEENABLE3"></span><span id="d3drs_colorwriteenable3"></span>**D3DRS \_ COLORWRITEENABLE3**
 </dt> <dd>
 
-Valori ColorWriteEnable aggiuntivi per i dispositivi. Vedere D3DRS \_ COLORWRITEENABLE. Questa funzionalità è disponibile se il \_ bit D3DPMISCCAPS INDEPENDENTWRITEMASKS capabilities è impostato nel membro PrimitiveMiscCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Il valore predefinito è 0x0000000F.
+Valori ColorWriteEnable aggiuntivi per i dispositivi. Vedere D3DRS \_ COLORWRITEENABLE. Questa funzionalità è disponibile se il bit di funzionalità D3DPMISCCAPS INDEPENDENTWRITEMASKS è impostato nel membro \_ PrimitiveMiscCaps della struttura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) per il dispositivo. Il valore predefinito è 0x0000000f.
 
 </dd> <dt>
 
-<span id="D3DRS_BLENDFACTOR"></span><span id="d3drs_blendfactor"></span>**\_BLENDFACTOR D3DRS**
+<span id="D3DRS_BLENDFACTOR"></span><span id="d3drs_blendfactor"></span>**D3DRS \_ BLENDFACTOR**
 </dt> <dd>
 
-[**D3DCOLOR**](d3dcolor.md) usato per un fattore di Blend costante durante la fusione alfa. Questa funzionalità è disponibile se il \_ bit D3DPBLENDCAPS BLENDFACTOR capabilities è impostato nel membro SrcBlendCaps di [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) o nel membro DestBlendCaps di **D3DCAPS9**. Vedere [**D3DRENDERSTATETYPE**](). Il valore predefinito è 0xFFFFFFFF.
+[**D3DCOLOR usato**](d3dcolor.md) per un fattore di blend costante durante la fusione alfa. Questa funzionalità è disponibile se il bit di funzionalità D3DPBLENDCAPS BLENDFACTOR è impostato nel membro \_ SrcBlendCaps di [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) o nel membro DestBlendCaps di **D3DCAPS9.** Vedere [**D3DRENDERSTATETYPE**](). Il valore predefinito è 0xffffffff.
 
 </dd> <dt>
 
-<span id="D3DRS_SRGBWRITEENABLE"></span><span id="d3drs_srgbwriteenable"></span>**\_SRGBWRITEENABLE D3DRS**
+<span id="D3DRS_SRGBWRITEENABLE"></span><span id="d3drs_srgbwriteenable"></span>**D3DRS \_ SRGBWRITEENABLE**
 </dt> <dd>
 
-Abilitare le scritture di destinazione rendering come gamma con correzione a sRGB. Il formato deve esporre D3DUSAGE \_ SRGBWRITE. Il valore predefinito è 0.
+Abilitare le scritture della destinazione di rendering per la correzione gamma in sRGB. Il formato deve esporre D3DUSAGE \_ SRGBWRITE. Il valore predefinito è 0.
 
 </dd> <dt>
 
-<span id="D3DRS_DEPTHBIAS"></span><span id="d3drs_depthbias"></span>**\_DEPTHBIAS D3DRS**
+<span id="D3DRS_DEPTHBIAS"></span><span id="d3drs_depthbias"></span>**D3DRS \_ DEPTHBIAS**
 </dt> <dd>
 
-Valore a virgola mobile utilizzato per il confronto dei valori di profondità. Vedere [Bias Depth (Direct3D 9)](depth-bias.md). Il valore predefinito è 0.
+Valore a virgola mobile utilizzato per il confronto dei valori di profondità. Vedere [Distorsione della profondità (Direct3D 9).](depth-bias.md) Il valore predefinito è 0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP8"></span><span id="d3drs_wrap8"></span>**\_WRAP8 D3DRS**
-</dt> <dd>
-
-Vedere D3DRS \_ WRAP0.
-
-</dd> <dt>
-
-<span id="D3DRS_WRAP9"></span><span id="d3drs_wrap9"></span>**\_WRAP9 D3DRS**
+<span id="D3DRS_WRAP8"></span><span id="d3drs_wrap8"></span>**D3DRS \_ WRAP8**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP10"></span><span id="d3drs_wrap10"></span>**\_WRAP10 D3DRS**
+<span id="D3DRS_WRAP9"></span><span id="d3drs_wrap9"></span>**D3DRS \_ WRAP9**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP11"></span><span id="d3drs_wrap11"></span>**\_WRAP11 D3DRS**
+<span id="D3DRS_WRAP10"></span><span id="d3drs_wrap10"></span>**D3DRS \_ WRAP10**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP12"></span><span id="d3drs_wrap12"></span>**\_WRAP12 D3DRS**
+<span id="D3DRS_WRAP11"></span><span id="d3drs_wrap11"></span>**D3DRS \_ WRAP11**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP13"></span><span id="d3drs_wrap13"></span>**\_WRAP13 D3DRS**
+<span id="D3DRS_WRAP12"></span><span id="d3drs_wrap12"></span>**D3DRS \_ WRAP12**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP14"></span><span id="d3drs_wrap14"></span>**\_WRAP14 D3DRS**
+<span id="D3DRS_WRAP13"></span><span id="d3drs_wrap13"></span>**D3DRS \_ WRAP13**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_WRAP15"></span><span id="d3drs_wrap15"></span>**\_WRAP15 D3DRS**
+<span id="D3DRS_WRAP14"></span><span id="d3drs_wrap14"></span>**D3DRS \_ WRAP14**
 </dt> <dd>
 
 Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_SEPARATEALPHABLENDENABLE"></span><span id="d3drs_separatealphablendenable"></span>**\_SEPARATEALPHABLENDENABLE D3DRS**
+<span id="D3DRS_WRAP15"></span><span id="d3drs_wrap15"></span>**D3DRS \_ WRAP15**
 </dt> <dd>
 
-**True** Abilita la modalità di Blend separata per il canale alfa. Il valore predefinito è **false**.
-
-Se è impostato su **false**, i fattori e le operazioni di combinazione di destinazione di rendering applicati a alfa sono obbligati a essere uguali a quelli definiti per il colore. Questa modalità è effettivamente cablata su **false** nelle implementazioni che non impostano il CAP D3DPMISCCAPS \_ SEPARATEALPHABLEND. Vedere [D3DPMISCCAPS](d3dpmisccaps.md).
-
-Il tipo di fusione alfa separata è determinato dagli \_ Stati di rendering D3DRS SRCBLENDALPHA e \_ D3DRS DESTBLENDALPHA.
+Vedere D3DRS \_ WRAP0.
 
 </dd> <dt>
 
-<span id="D3DRS_SRCBLENDALPHA"></span><span id="d3drs_srcblendalpha"></span>**\_SRCBLENDALPHA D3DRS**
+<span id="D3DRS_SEPARATEALPHABLENDENABLE"></span><span id="d3drs_separatealphablendenable"></span>**D3DRS \_ SEPARATEALPHABLENDENABLE**
 </dt> <dd>
 
-Un membro del tipo enumerato [**D3DBLEND**](./d3dblend.md) . Questo valore viene ignorato a meno che D3DRS \_ SEPARATEALPHABLENDENABLE non sia **true**. Il valore predefinito è D3DBLEND \_ One.
+**TRUE** abilita la modalità di fusione separata per il canale alfa. Il valore predefinito è **FALSE.**
+
+Se impostato su **FALSE,** i fattori di fusione della destinazione di rendering e le operazioni applicate al valore alfa devono essere uguali a quelli definiti per il colore. Questa modalità viene effettivamente impostata come hardwired su **FALSE** nelle implementazioni che non impostano il limite D3DPMISCCAPS \_ SEPARATEALPHABLEND. Vedere [D3DPMISCCAPS](d3dpmisccaps.md).
+
+Il tipo di fusione alfa separata è determinato dagli stati di rendering D3DRS \_ SRCBLENDALPHA e D3DRS \_ DESTBLENDALPHA.
 
 </dd> <dt>
 
-<span id="D3DRS_DESTBLENDALPHA"></span><span id="d3drs_destblendalpha"></span>**\_DESTBLENDALPHA D3DRS**
+<span id="D3DRS_SRCBLENDALPHA"></span><span id="d3drs_srcblendalpha"></span>**D3DRS \_ SRCBLENDALPHA**
 </dt> <dd>
 
-Un membro del tipo enumerato [**D3DBLEND**](./d3dblend.md) . Questo valore viene ignorato a meno che D3DRS \_ SEPARATEALPHABLENDENABLE non sia **true**. Il valore predefinito è D3DBLEND \_ zero.
+Membro del tipo [**enumerato D3DBLEND.**](./d3dblend.md) Questo valore viene ignorato a meno che D3DRS \_ SEPARATEALPHABLENDENABLE non sia **TRUE.** Il valore predefinito è D3DBLEND \_ ONE.
 
 </dd> <dt>
 
-<span id="D3DRS_BLENDOPALPHA"></span><span id="d3drs_blendopalpha"></span>**\_BLENDOPALPHA D3DRS**
+<span id="D3DRS_DESTBLENDALPHA"></span><span id="d3drs_destblendalpha"></span>**D3DRS \_ DESTBLENDALPHA**
 </dt> <dd>
 
-Valore usato per selezionare l'operazione aritmetica applicata per separare la fusione alfa quando lo stato di rendering, D3DRS \_ SEPARATEALPHABLENDENABLE, è impostato su **true**.
-
-I valori validi sono definiti dal tipo enumerato [**D3DBLENDOP**](./d3dblendop.md) . Il valore predefinito è D3DBLENDOP \_ Add.
-
-Se la \_ funzionalità del dispositivo BLENDOP di D3DPMISCCAPS non è supportata, \_ viene eseguito D3DBLENDOP Add. Vedere [D3DPMISCCAPS](d3dpmisccaps.md).
+Membro del tipo [**enumerato D3DBLEND.**](./d3dblend.md) Questo valore viene ignorato a meno che D3DRS \_ SEPARATEALPHABLENDENABLE non sia **TRUE.** Il valore predefinito è D3DBLEND \_ ZERO.
 
 </dd> <dt>
 
-<span id="D3DRS_FORCE_DWORD"></span><span id="d3drs_force_dword"></span>**D3DRS \_ Force \_ DWORD**
+<span id="D3DRS_BLENDOPALPHA"></span><span id="d3drs_blendopalpha"></span>**D3DRS \_ BLENDOPALPHA**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Valore utilizzato per selezionare l'operazione aritmetica applicata alla fusione alfa separata quando lo stato di rendering, D3DRS \_ SEPARATEALPHABLENDENABLE, è impostato su **TRUE.**
+
+I valori validi sono definiti dal [**tipo enumerato D3DBLENDOP.**](./d3dblendop.md) Il valore predefinito è D3DBLENDOP \_ ADD.
+
+Se la funzionalità del dispositivo D3DPMISCCAPS BLENDOP non è supportata, viene eseguito \_ D3DBLENDOP \_ ADD. Vedere [D3DPMISCCAPS](d3dpmisccaps.md).
+
+</dd> <dt>
+
+<span id="D3DRS_FORCE_DWORD"></span><span id="d3drs_force_dword"></span>**D3DRS \_ FORCE \_ DWORD**
+</dt> <dd>
+
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
@@ -1012,15 +1012,15 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 
 
 
-| Stati di rendering        |                    |
+| Stati di rendering        |   Campionatore di trama                 |
 |----------------------|--------------------|
-| \_da PS 1 \_ 1 a PS \_ 1 \_ 3 | 4 campionatori trama |
+| ps \_ 1 \_ 1 a ps \_ 1 \_ 3 | 4 campionatori di trama |
 
 
 
  
 
-Direct3D definisce la \_ costante D3DRENDERSTATE WRAPBIAS come comoda per le applicazioni per abilitare o disabilitare il wrapping della trama, in base al numero intero in base zero di un set di coordinate di trama, anziché usare in modo esplicito uno dei \_ valori di stato di incapsulamento n di D3DRS. Aggiungere il \_ valore D3DRENDERSTATE WRAPBIAS all'indice in base zero di un set di coordinate di trama per calcolare il \_ valore di D3DRS wrap n corrispondente a tale indice, come illustrato nell'esempio seguente.
+Direct3D definisce la costante WRAPBIAS D3DRENDERSTATE per consentire alle applicazioni di abilitare o disabilitare il wrapping delle trame, in base all'intero in base zero di un set di coordinate di trama (anziché usare in modo esplicito uno dei valori di stato \_ WRAP n D3DRS). \_ Aggiungere il valore D3DRENDERSTATE WRAPBIAS all'indice in base zero di un set di coordinate di trama per calcolare il valore WRAP n D3DRS corrispondente a tale indice, come illustrato nell'esempio \_ \_ seguente.
 
 
 ```
@@ -1043,7 +1043,7 @@ D3DWRAPCOORD_0 | D3DWRAPCOORD_1);
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -1054,10 +1054,10 @@ D3DWRAPCOORD_0 | D3DWRAPCOORD_1);
 [Enumerazioni Direct3D](dx9-graphics-reference-d3d-enums.md)
 </dt> <dt>
 
-[**IDirect3DDevice9:: GetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getrenderstate)
+[**IDirect3DDevice9::GetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getrenderstate)
 </dt> <dt>
 
-[**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate)
+[**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate)
 </dt> </dl>
 
  

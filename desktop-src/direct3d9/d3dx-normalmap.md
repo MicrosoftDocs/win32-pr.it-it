@@ -4,12 +4,12 @@ ms.assetid: edf4c3e4-1af4-43b4-80c7-6fab02575f7b
 title: D3DX_NORMALMAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90f76b6afe6eb68e8ddbc3ca28085861a518effc
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 4263237cedf92a5e322f2fe139e9afe2297f6b9b
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996328"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342856"
 ---
 # <a name="d3dx_normalmap"></a>D3DX \_ NORMALMAP
 
@@ -33,7 +33,7 @@ Costanti di generazione normali delle mappe.
 
 
 
-|                          |            |
+| Requisito                         | Valore           |
 |--------------------------|------------|
 | Intestazione                   | d3dx9tex.h |
 | Sistema operativo minimo | Windows 98 |

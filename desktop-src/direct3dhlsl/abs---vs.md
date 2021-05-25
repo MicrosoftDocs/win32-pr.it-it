@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e4d73ee738f575d93c2316e4ec47dced7cb128d3
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 612ed14fb538a419a0e7f0b1cf07904d654bb010
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994748"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343316"
 ---
 # <a name="abs---vs"></a>abs - vs
 
@@ -22,20 +22,12 @@ Calcola il valore assoluto.
 
 ## <a name="syntax"></a>Sintassi
 
-
-
-|              |
-|--------------|
-| abs dst, src |
-
-
-
- 
+**abs dst, src**
 
 dove
 
--   dst è il registro di destinazione.
--   src è un registro di origine.
+- dst è il registro di destinazione.
+- src è un registro di origine.
 
 ## <a name="remarks"></a>Commenti
 

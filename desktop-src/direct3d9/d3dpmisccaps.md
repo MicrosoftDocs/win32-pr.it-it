@@ -1,19 +1,19 @@
 ---
-description: Flag di funzionalità primitive del driver varie.
+description: Flag di funzionalità primitive del driver vari.
 ms.assetid: 7912c682-c179-453b-8a34-e87958217500
 title: D3DPMISCCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76af50a1e7f78f6441af9e985f55e42ee2298b46
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0b4ace0b9070d158769e22e02a759545b1bf7785
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225732"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110343136"
 ---
 # <a name="d3dpmisccaps"></a>D3DPMISCCAPS
 
-Flag di funzionalità primitive del driver varie.
+Flag di funzionalità primitive del driver vari.
 
 
 
@@ -25,59 +25,59 @@ Flag di funzionalità primitive del driver varie.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>#definire</td>
+<td>#Definire</td>
 <td>Valore</td>
 <td>Descrizione</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_MASKZ</td>
 <td>0x00000002L</td>
-<td>Il dispositivo può abilitare e disabilitare la modifica del buffer di profondità sulle operazioni pixel.</td>
+<td>Il dispositivo può abilitare e disabilitare la modifica del buffer di profondità nelle operazioni in pixel.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLNONE</td>
 <td>0x00000010L</td>
-<td>Il driver non esegue l'abbattimento dei triangoli. Corrisponde al membro D3DCULL_NONE del tipo enumerato <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL</strong></a> .</td>
+<td>Il driver non esegue il culling del triangolo. Corrisponde al membro D3DCULL_NONE del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerato D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CULLCW</td>
 <td>0x00000020L</td>
-<td>Il driver supporta l'abbattimento di triangolo in senso orario attraverso lo stato D3DRS_CULLMODE. (Si applica solo alle primitive triangolari). Questo flag corrisponde al membro D3DCULL_CW del tipo enumerato <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL</strong></a> .</td>
+<td>Il driver supporta l'culling triangolare in senso orario attraverso D3DRS_CULLMODE stato. Si applica solo alle primitive di triangolo. Questo flag corrisponde al D3DCULL_CW del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerato D3DCULL.</strong></a></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLCCW</td>
 <td>0x00000040L</td>
-<td>Il driver supporta l'eliminazione in senso antiorario tramite lo stato D3DRS_CULLMODE. (Si applica solo alle primitive triangolari). Questo flag corrisponde al membro D3DCULL_CCW del tipo enumerato <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL</strong></a> .</td>
+<td>Il driver supporta l'culling in senso antiorario attraverso lo D3DRS_CULLMODE stato. Si applica solo alle primitive di triangolo. Questo flag corrisponde al D3DCULL_CCW del tipo <a href="/windows/desktop/direct3d9/d3dcull"><strong>enumerato D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_COLORWRITEENABLE</td>
 <td>0x00000100L</td>
-<td>Il dispositivo supporta le Scritture per canale per il buffer dei colori della destinazione di rendering tramite lo stato D3DRS_COLORWRITEENABLE.</td>
+<td>Il dispositivo supporta le scritture per canale per il buffer dei colori di destinazione del rendering tramite lo D3DRS_COLORWRITEENABLE stato.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CLIPPLANESCALEDPOINTS</td>
 <td>0x00000200L</td>
-<td>Il dispositivo Ritaglia correttamente i punti ridimensionati di dimensioni maggiori di 1,0 ai piani di ritaglio definiti dall'utente.</td>
+<td>Il dispositivo ritaglia correttamente i punti di ridimensionamento maggiori di 1,0 ai piani di ritaglio definiti dall'utente.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CLIPTLVERTS</td>
 <td>0x00000200L</td>
-<td>I clip del dispositivo vengono ritagliate primitive dei vertici. Specificare D3DUSAGE_DONOTCLIP quando la pipeline non deve eseguire alcun ritaglio. In tal caso, potrebbe essere necessario eseguire il ritaglio software aggiuntivo in fase di estrazione, in modo che il buffer dei vertici si trovi nella memoria di sistema.<br/></td>
+<td>Clip del dispositivo dopo la trasformazione delle primitive dei vertici. Specificare D3DUSAGE_DONOTCLIP quando la pipeline non deve eseguire alcun ritaglio. In questo caso, potrebbe essere necessario eseguire un ritaglio software aggiuntivo in fase di disegno, che richiede che il vertex buffer sia nella memoria di sistema.<br/></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_TSSARGTEMP</td>
 <td>0x00000400L</td>
-<td>Il dispositivo supporta <a href="d3dta.md">D3DTA</a> per il registro temporaneo.</td>
+<td>Il dispositivo supporta <a href="d3dta.md">D3DTA per</a> il registro temporaneo.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_BLENDOP</td>
 <td>0x00000800L</td>
-<td>Il dispositivo supporta operazioni di fusione alfa diverse da D3DBLENDOP_ADD.</td>
+<td>Il dispositivo supporta operazioni di alpha blending diverse da D3DBLENDOP_ADD.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_NULLREFERENCE</td>
 <td>0x00000100L</td>
-<td>Dispositivo di riferimento che non esegue il rendering.</td>
+<td>Dispositivo di riferimento di cui non viene eseguito il rendering.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_INDEPENDENTWRITEMASKS</td>
@@ -87,12 +87,12 @@ Flag di funzionalità primitive del driver varie.
 <tr class="odd">
 <td>D3DPMISCCAPS_PERSTAGECONSTANT</td>
 <td>0x00008000L</td>
-<td>Il dispositivo supporta le costanti per fase. Vedere D3DTSS_CONSTANT in <a href="/windows/desktop/direct3d9/d3dtexturestagestatetype"><strong>D3DTEXTURESTAGESTATETYPE</strong></a>.</td>
+<td>Il dispositivo supporta costanti per fase. Vedere D3DTSS_CONSTANT in <a href="/windows/desktop/direct3d9/d3dtexturestagestatetype"><strong>D3DTEXTURESTAGESTATETYPE</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_POSTBLENDSRGBCONVERT</td>
 <td>0x00200000L</td>
-<td>Il dispositivo supporta la conversione a sRGB dopo la fusione. 
+<td>Il dispositivo supporta la conversione in sRGB dopo la fusione. 
 <table>
 <tbody>
 <tr class="odd">
@@ -106,27 +106,27 @@ Flag di funzionalità primitive del driver varie.
 <tr class="odd">
 <td>D3DPMISCCAPS_FOGANDSPECULARALPHA</td>
 <td>0x00010000L</td>
-<td>Il dispositivo supporta la nebbia separata e l'alfa speculare. Molti dispositivi usano il canale alfa speculare per archiviare il fattore di nebbia.</td>
+<td>Il dispositivo supporta alfa separati e speculari. Molti dispositivi usano il canale alfa speculare per archiviare il fattore di rischio.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_SEPARATEALPHABLEND</td>
 <td>0x00020000L</td>
-<td>Il dispositivo supporta impostazioni di Blend separate per il canale alfa.</td>
+<td>Il dispositivo supporta impostazioni di blend separate per il canale alfa.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_MRTINDEPENDENTBITDEPTHS</td>
 <td>0x00040000L</td>
-<td>Il dispositivo supporta profondità di bit diverse per più destinazioni di rendering.</td>
+<td>Il dispositivo supporta diverse profondità di bit per più destinazioni di rendering.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_MRTPOSTPIXELSHADERBLENDING</td>
 <td>0x00080000L</td>
-<td>Il dispositivo supporta operazioni post-pixel shader per più destinazioni di rendering.</td>
+<td>Il dispositivo supporta le operazioni post-pixel shader per più destinazioni di rendering.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_FOGVERTEXCLAMPED</td>
 <td>0x00100000L</td>
-<td>I dispositivi bloccano il fattore di Blend di nebbia per vertice.</td>
+<td>Fattore di fusione della nebbia per vertice delle piascie del dispositivo.</td>
 </tr>
 </tbody>
 </table>
@@ -135,15 +135,15 @@ Flag di funzionalità primitive del driver varie.
 
  
 
-Queste costanti vengono usate dal membro PrimitiveMiscCaps di [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
+Queste costanti vengono usate dal membro PrimitiveMiscCaps di [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
-## <a name="constant-information"></a>Informazioni sulle costanti
+## <a name="constant-information"></a>Informazioni costanti
 
 
 
-|                          |            |
+| Requisito                         |  Valore          |
 |--------------------------|------------|
-| Intestazione                   | d3d9caps. h |
+| Intestazione                   | d3d9caps.h |
 | Sistema operativo minimo | Windows 98 |
 
 

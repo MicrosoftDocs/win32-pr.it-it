@@ -4,12 +4,12 @@ ms.assetid: ab2f3005-150f-46e1-b75b-75c39e7feed1
 title: LPD3DXFILL3D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6c711459cffa3430b31ba7c91d77cc9519e6a43
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: feed5845f04486a6ac9cf1c984178fb0ed98447a
+ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114309"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110342766"
 ---
 # <a name="lpd3dxfill3d"></a>LPD3DXFILL3D
 
@@ -49,7 +49,7 @@ Assicurarsi di specificare la convenzione [**di chiamata dei tipi di dati Window
 
 
 
-|                          |            |
+| Requisito                         | Valore           |
 |--------------------------|------------|
 | Intestazione                   | d3dx9tex.h |
 | Libreria di importazione           | d3dx9.lib  |
