@@ -1,57 +1,56 @@
 ---
-title: Voce del registro di sistema runtime
-description: Voce del registro di sistema runtime
+title: Voce del Registro di sistema di runtime
+description: Voce del Registro di sistema di runtime
 ms.assetid: 3b2880f9-acb9-4a13-8364-67fbe76f8d29
 keywords:
-- Windows Media Player, voci del registro di sistema di runtime
-- Windows Media Player, estensioni di file
-- Windows Media Player, registro di sistema
-- Registro di sistema, estensioni di file
-- Registro di sistema, voci di runtime
-- Registro di sistema, impostazioni per Windows Media Player
-- impostazioni del registro di sistema estensione del nome file
-- voci del registro di sistema di runtime
+- Windows Media Player,voci del Registro di sistema di runtime
+- Windows Media Player,estensioni di file
+- Windows Media Player,registro
+- registro, estensioni di file
+- registro, voci di runtime
+- registro, impostazioni per Windows Media Player
+- Impostazioni del Registro di sistema dell'estensione di file
+- voci del Registro di sistema di runtime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b01a83c3642f49a9fdbe7f8c51f157a154a9843b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3bf485038965184add320e49c29482672c770f48
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044959"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424110"
 ---
-# <a name="runtime-registry-entry"></a>Voce del registro di sistema runtime
+# <a name="runtime-registry-entry"></a>Voce del Registro di sistema di runtime
 
-Quando Windows Media Player rileva un'estensione del nome di file personalizzata, Cerca una sottochiave del registro di sistema corrispondente all'estensione. La sottochiave è descritta in [impostazioni del registro di sistema estensione del nome file](file-name-extension-registry-settings.md). Una delle voci del registro di sistema che possono essere visualizzate sotto la sottochiave dell'estensione è la voce di **Runtime** .
+Quando Windows Media Player rileva un'estensione di file personalizzata, cerca una sottochiave del Registro di sistema corrispondente all'estensione. La sottochiave è descritta in Impostazioni del Registro di [sistema dell'estensione file](file-name-extension-registry-settings.md). Una delle voci del Registro di sistema che possono essere visualizzate sotto la sottochiave dell'estensione è la **voce Runtime.**
 
-La voce **Runtime** specifica la tecnologia sottostante che Windows Media Player può utilizzare per riprodurre o convertire file multimediali digitali con estensione personalizzata. La voce **Runtime** ha il formato seguente.
+La **voce Runtime** specifica la tecnologia sottostante che Windows Media Player possibile usare per riprodurre o convertire file multimediali digitali con estensione personalizzata. La **voce Runtime** ha il formato seguente.
 
 
 
-|          |                |                                                               |
+|   Nome   |   Type         |   valore                                                       |
 |----------|----------------|---------------------------------------------------------------|
-| **Nome** | **Tipo**       | **Valore**                                                     |
-| Runtime  | **REG \_ DWORD** | Numero intero positivo che identifica la tecnologia sottostante. |
+| Runtime  | **REG \_ DWORD** | Intero positivo che identifica la tecnologia sottostante. |
 
 
 
- 
+ 
 
-Il valore della voce di **Runtime** deve essere uno dei seguenti.
+Il valore della voce **Runtime** deve essere uno dei seguenti.
 
 
 
 | **Valore (decimale)** | **Descrizione**                                                                            |
 |---------------------|--------------------------------------------------------------------------------------------|
-| 6                   | Eseguire il rendering usando Windows Media Format SDK.                                                 |
+| 6                   | Eseguire il rendering con Windows Media Format SDK.                                                 |
 | 7                   | Eseguire il rendering con Microsoft DirectShow.                                                         |
-| 13                  | Converte il file utilizzando il plug-in di conversione specificato. Richiede Windows Media Player 11. |
+| 13                  | Convertire il file usando il plug-in di conversione specificato. Richiede Windows Media Player 11. |
 
 
 
- 
+ 
 
-I valori 6 e 7 della voce del registro di sistema di **Runtime** sono supportati dalla serie Windows Media Player 9 e versioni successive. Il valore 13 è supportato da Windows Media Player 11.
+I **valori 6** e 7 della voce del Registro di sistema Runtime sono supportati Windows Media Player serie 9 e successive. Il valore 13 è supportato da Windows Media Player 11.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -60,12 +59,12 @@ I valori 6 e 7 della voce del registro di sistema di **Runtime** sono supportati
 [**Sottochiave ConvertPluginCLSID**](convertpluginclsid-subkey.md)
 </dt> <dt>
 
-[**Impostazioni del registro di sistema estensione del nome file**](file-name-extension-registry-settings.md)
+[**Impostazioni del Registro di sistema dell'estensione del nome file**](file-name-extension-registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

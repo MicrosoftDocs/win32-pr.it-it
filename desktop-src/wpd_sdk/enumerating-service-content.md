@@ -4,37 +4,36 @@ ms.assetid: 4af4201c-d3f6-4630-91ec-6509c51871a5
 title: Enumerazione del contenuto del servizio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04adb949fdec9a0001583b1481ccd50ada1ef1df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2b701bdab867e96bc9658e2624ea18aa65dfc33
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226033"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424251"
 ---
 # <a name="enumerating-service-content"></a>Enumerazione del contenuto del servizio
 
-Quando l'applicazione apre un servizio, può iniziare a eseguire operazioni relative ai servizi. Nel caso dell'applicazione WpdServicesApiSample, una di queste operazioni è l'enumerazione del contenuto per un determinato servizio di contatti. Nella tabella seguente vengono descritte le interfacce utilizzate.
+Dopo l'apertura di un servizio, l'applicazione può iniziare a eseguire operazioni correlate al servizio. Nel caso dell'applicazione WpdServicesApiSample, una di queste operazioni è l'enumerazione del contenuto per un determinato servizio Contatti. Nella tabella seguente vengono descritte le interfacce utilizzate.
 
 
 
-|                                                                      |                                                                                                  |
-|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | Interfaccia                                                            | Descrizione                                                                                      |
-| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)             | Utilizzato per recuperare l'interfaccia IPortableDeviceContent2 per accedere al contenuto nel servizio.         |
-| [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)           | Utilizzato per recuperare l'interfaccia IEnumPortableDeviceObjectIDs per enumerare gli oggetti nel servizio. |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)             | Usato per recuperare l'interfaccia IPortableDeviceContent2 per accedere al contenuto nel servizio.         |
+| [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)           | Usato per recuperare l'interfaccia IEnumPortableDeviceObjectIDs per enumerare gli oggetti nel servizio. |
 | [**IEnumPortableDeviceObjectIDs**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-ienumportabledeviceobjectids) | Utilizzato per enumerare gli oggetti nel servizio.                                                        |
 
 
 
  
 
-Il codice di enumerazione del contenuto si trova nel modulo ContentEnumeration. cpp. Questo codice risiede nei metodi **EnumerateAllContent** e **RecursiveEnumerate** . Il primo metodo chiama quest'ultimo.
+Il codice di enumerazione del contenuto si trova nel modulo ContentEnumeration.cpp. Questo codice si trova nei **metodi EnumerateAllContent** e **RecursiveEnumerate.** Il primo metodo chiama il secondo.
 
-Il metodo **EnumerateContent** accetta un puntatore a un oggetto [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) come relativo parametro. Questo oggetto corrisponde a un servizio che l'applicazione ha aperto in precedenza quando chiamava il metodo [**IPortableDeviceService:: Open**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open) .
+Il **metodo EnumerateContent** accetta un puntatore a [**un oggetto IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) come unico parametro. Questo oggetto corrisponde a un servizio aperto in precedenza dall'applicazione quando ha chiamato il [**metodo IPortableDeviceService::Open.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open)
 
-Il metodo **EnumerateContent** crea un oggetto [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) e passa questo oggetto al metodo [**IPortableDeviceService:: content**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-content) . Questo metodo, a sua volta, recupera il contenuto a livello di radice del servizio e quindi inizia in modo ricorsivo a recuperare il contenuto trovato sotto la radice.
+Il **metodo EnumerateContent** crea un [**oggetto IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) e lo passa al metodo [**IPortableDeviceService::Content.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-content) Questo metodo, a sua volta, recupera il contenuto al livello radice del servizio e quindi inizia in modo ricorsivo a recuperare il contenuto trovato sotto la radice.
 
-Il codice seguente corrisponde al metodo **EnumerateContent** .
+Il codice seguente corrisponde al **metodo EnumerateContent.**
 
 
 ```C++
@@ -71,7 +70,7 @@ void EnumerateAllContent(
 
 
 
-Il codice seguente corrisponde al metodo **RecursiveEnumerate** . Il metodo RecursiveEnumerate crea un'istanza di un'interfaccia **IEnumPortableDeviceObjectIDs** per l'oggetto padre fornito e chiama **IEnumPortableDeviceObjectIDs:: Next**, recuperando un batch di oggetti figlio immediati. Per ogni oggetto figlio, RecursiveEnumerate viene chiamato di nuovo per restituire gli oggetti figlio discendenti e così via.
+Il codice seguente corrisponde al **metodo RecursiveEnumerate.** Il metodo RecursiveEnumerate crea un'istanza di un'interfaccia **IEnumPortableDeviceObjectIDs** per l'oggetto padre fornito e chiama **IEnumPortableDeviceObjectIDs::Next**, recuperando un batch di oggetti figlio immediati. Per ogni oggetto figlio, RecursiveEnumerate viene chiamato di nuovo per restituire i relativi oggetti figlio discendenti e così via.
 
 
 ```C++

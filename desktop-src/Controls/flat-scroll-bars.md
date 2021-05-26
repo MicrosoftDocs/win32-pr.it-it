@@ -1,44 +1,44 @@
 ---
-title: Barre di scorrimento Flat
-description: In Microsoft Internet Explorer 4,0 è stata introdotta una nuova tecnologia visiva denominata barre di scorrimento semplici.
+title: Barre di scorrimento flat
+description: Microsoft Internet Explorer 4.0 ha introdotto una nuova tecnologia visiva denominata barre di scorrimento flat.
 ms.assetid: f7e00e71-bf12-4db9-bb84-6d413b967049
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07fbbdb64aa9815cb56f5dc3bf55ffb17390db38
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 5e56db4ee987a6d8cdc7b185f5db0f8d89540453
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730458"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423891"
 ---
-# <a name="flat-scroll-bars"></a>Barre di scorrimento Flat
+# <a name="flat-scroll-bars"></a>Barre di scorrimento flat
 
-In Microsoft Internet Explorer 4,0 è stata introdotta una nuova tecnologia visiva denominata barre di scorrimento semplici. Dal punto di vista funzionale, le barre di scorrimento Flat funzionano esattamente come le barre di scorrimento standard. La differenza consiste nel fatto che è possibile personalizzare l'aspetto in modo più ampio rispetto alle barre di scorrimento standard.
+Microsoft Internet Explorer 4.0 ha introdotto una nuova tecnologia visiva denominata barre di scorrimento flat. Dal punto di vista funzionale, le barre di scorrimento flat si comportano esattamente come le barre di scorrimento standard. La differenza è che è possibile personalizzarne l'aspetto in misura maggiore rispetto alle barre di scorrimento standard.
 
-Nella figura seguente è illustrata una finestra che contiene una barra di scorrimento piatta.
+La figura seguente mostra una finestra che contiene una barra di scorrimento semplice.
 
 ![Screenshot di una finestra che contiene una barra di scorrimento semplice](images/flatsb.jpg)
 
 > [!Note]  
-> Le barre di scorrimento Flat sono supportate dalle versioni Comctl32.dll da 4,71 a 5,82. Comctl32.dll versioni 6,00 e successive non supportano le barre di scorrimento flat.
+> Le barre di scorrimento flat sono supportate Comctl32.dll versioni da 4.71 a 5.82. Comctl32.dll versioni 6.00 e successive non supportano barre di scorrimento flat.
 
- 
+ 
 
-## <a name="using-flat-scroll-bars"></a>Uso delle barre di scorrimento Flat
+## <a name="using-flat-scroll-bars"></a>Uso di barre di scorrimento flat
 
-In questa sezione viene descritto come implementare le barre di scorrimento flat nell'applicazione.
+Questa sezione descrive come implementare barre di scorrimento flat nell'applicazione.
 
 ### <a name="before-you-begin"></a>Prima di iniziare
 
-Per usare le funzioni della barra di scorrimento Flat, è necessario includere COMmctrl. h nei file di origine e il collegamento a Comctl32. lib.
+Per usare le funzioni della barra di scorrimento flat, è necessario includere Commctrl.h nei file di origine e collegarsi a Comctl32.lib.
 
-### <a name="adding-flat-scroll-bars-to-a-window"></a>Aggiunta di barre di scorrimento Flat a una finestra
+### <a name="adding-flat-scroll-bars-to-a-window"></a>Aggiunta di barre di scorrimento flat a una finestra
 
-Per aggiungere barre di scorrimento Flat a una finestra, chiamare [**InitializeFlatSB**](/windows/desktop/api/Commctrl/nf-commctrl-initializeflatsb), passando l'handle alla finestra. Anziché utilizzare le funzioni della barra di scorrimento standard per modificare le barre di scorrimento, è necessario utilizzare la \_ funzione equivalente FlatSB xxx. Sono disponibili funzioni barra di scorrimento semplice per l'impostazione e il recupero delle informazioni di scorrimento, dell'intervallo e della posizione. Se le barre di scorrimento semplice non sono state inizializzate per la finestra, l'API della barra di scorrimento flat verrà rinviata alle funzioni standard corrispondenti, se usate. In questo modo è possibile attivare e disattivare le barre di scorrimento piatte senza dover scrivere codice condizionale.
+Per aggiungere barre di scorrimento flat a una finestra, chiamare [**InitializeFlatSB**](/windows/desktop/api/Commctrl/nf-commctrl-initializeflatsb), passando l'handle alla finestra. Anziché usare le funzioni standard della barra di scorrimento per modificare le barre di scorrimento, è necessario usare la funzione XXX FlatSB \_ equivalente. Sono disponibili funzioni della barra di scorrimento flat per l'impostazione e il recupero delle informazioni di scorrimento, dell'intervallo e della posizione. Se le barre di scorrimento flat non sono state inizializzate per la finestra, l'API della barra di scorrimento flat rimanda alle funzioni standard corrispondenti, se presenti. In questo modo è possibile attivare e disattivare le barre di scorrimento flat senza dover scrivere codice condizionale.
 
-Poiché un'applicazione potrebbe avere impostato metriche personalizzate per le barre di scorrimento Flat, non vengono aggiornate automaticamente quando le metriche di sistema cambiano. Quando le metriche della barra di scorrimento del sistema cambiano, viene trasmesso un messaggio [**WM \_ SETTINGCHANGE**](/windows/desktop/winmsg/wm-settingchange) con il relativo *wParam* impostato su [**SPI \_ SETNONCLIENTMETRICS**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa). Per aggiornare le barre di scorrimento Flat alle nuove metriche di sistema, le applicazioni devono gestire questo messaggio e modificare le proprietà dipendenti dalla metrica della barra di scorrimento flat in modo esplicito.
+Poiché un'applicazione può aver impostato metriche personalizzate per le barre di scorrimento flat, non vengono aggiornate automaticamente quando le metriche di sistema cambiano. Quando le metriche della barra di scorrimento del sistema cambiano, viene trasmesso un messaggio [**WM \_ SETTINGCHANGE,**](/windows/desktop/winmsg/wm-settingchange) con *wParam* impostato su [**SPI \_ SETNONCLIENTMETRICS.**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) Per aggiornare le barre di scorrimento flat alle nuove metriche di sistema, le applicazioni devono gestire questo messaggio e modificare in modo esplicito le proprietà dipendenti dalla metrica della barra di scorrimento flat.
 
-Per aggiornare le proprietà della barra di scorrimento, usare [**FlatSB \_ SetScrollProp**](/windows/desktop/api/Commctrl/nf-commctrl-flatsb_setscrollprop). Il frammento di codice seguente modifica le proprietà dipendenti dalla metrica della barra di scorrimento semplice nei valori di sistema correnti.
+Per aggiornare le proprietà della barra di scorrimento, [**usare FlatSB \_ SetScrollProp**](/windows/desktop/api/Commctrl/nf-commctrl-flatsb_setscrollprop). Il frammento di codice seguente modifica le proprietà dipendenti dalla metrica di una barra di scorrimento semplice nei valori di sistema correnti.
 
 
 ```
@@ -55,28 +55,28 @@ FlatSB_SetScrollProp(hWnd, WSB_PROP_CYVTHUMB, GetSystemMetrics(SM_CYVTHUMB), TRU
 
 
 
-### <a name="enhancing-flat-scroll-bars"></a>Miglioramento delle barre di scorrimento Flat
+### <a name="enhancing-flat-scroll-bars"></a>Miglioramento delle barre di scorrimento flat
 
-[**FlatSB \_ SetScrollProp**](/windows/desktop/api/Commctrl/nf-commctrl-flatsb_setscrollprop) consente di modificare le barre di scorrimento flat per personalizzare l'aspetto della finestra. Per le barre di scorrimento verticali è possibile modificare la larghezza della barra e l'altezza delle frecce di direzione. Per le barre di scorrimento orizzontali, è possibile modificare l'altezza della barra e la larghezza delle frecce di direzione. È anche possibile modificare il colore di sfondo delle barre di scorrimento orizzontale e verticale.
+[**FlatSB \_ SetScrollProp**](/windows/desktop/api/Commctrl/nf-commctrl-flatsb_setscrollprop) consente di modificare le barre di scorrimento flat per personalizzare l'aspetto della finestra. Per le barre di scorrimento verticali, è possibile modificare la larghezza della barra e l'altezza delle frecce di direzione. Per le barre di scorrimento orizzontali, è possibile modificare l'altezza della barra e la larghezza delle frecce di direzione. È anche possibile modificare il colore di sfondo delle barre di scorrimento orizzontale e verticale.
 
-[**FlatSB \_ SetScrollProp**](/windows/desktop/api/Commctrl/nf-commctrl-flatsb_setscrollprop) consente inoltre di personalizzare il modo in cui vengono visualizzate le barre di scorrimento flat. Modificando le \_ Proprietà WSB Prop \_ VSTYLE e WSB \_ prop \_ HSTYLE è possibile impostare il tipo di barra di scorrimento che si desidera utilizzare. Sono disponibili tre stili.
+[**FlatSB \_ SetScrollProp**](/windows/desktop/api/Commctrl/nf-commctrl-flatsb_setscrollprop) consente anche di personalizzare la modalità di visualizzazione delle barre di scorrimento flat. Modificando le proprietà WSB PROP VSTYLE e \_ \_ WSB \_ PROP HSTYLE, è possibile impostare il tipo di barra di scorrimento \_ da usare. Sono disponibili tre stili.
 
 
 
-|                    |                                                                                                                                                                          |
+|   Stile                 |   Descrizione                                                                                                                                                                       |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_modalità Encarta di FSB \_ | Viene visualizzata una barra di scorrimento flat standard. Quando il mouse viene spostato su un pulsante di direzione o sul pollice, tale parte della barra di scorrimento verrà visualizzata in 3D.             |
-| \_modalità flat di FSB \_    | Viene visualizzata una barra di scorrimento flat standard. Quando il mouse viene spostato su un pulsante di direzione o sul pollice, tale parte della barra di scorrimento verrà visualizzata in colori invertiti. |
-| \_modalità normale \_ FSB | Viene visualizzata una barra di scorrimento normale e non semplice. Non verrà applicato alcun effetto visivo speciale.                                                                                    |
+| MODALITÀ \_ FSB \_ ENCARTA | Viene visualizzata una barra di scorrimento semplice standard. Quando il mouse si sposta su un pulsante di direzione o sul cursore, tale parte della barra di scorrimento verrà visualizzata in 3D.             |
+| FSB \_ FLAT \_ MODE    | Viene visualizzata una barra di scorrimento semplice standard. Quando il mouse si sposta su un pulsante di direzione o sul cursore, tale parte della barra di scorrimento verrà visualizzata con colori invertiti. |
+| MODALITÀ REGOLARE \_ \_ FSB | Viene visualizzata una barra di scorrimento normale e nonflat. Non verrà applicato alcun effetto visivo speciale.                                                                                    |
 
 
 
- 
+ 
 
-### <a name="removing-flat-scroll-bars"></a>Rimozione di barre di scorrimento Flat
+### <a name="removing-flat-scroll-bars"></a>Rimozione di barre di scorrimento flat
 
-Se si desidera rimuovere barre di scorrimento Flat dalla finestra, chiamare la funzione [**UninitializeFlatSB**](/windows/desktop/api/Commctrl/nf-commctrl-uninitializeflatsb) , passando l'handle alla finestra. Questa funzione rimuove solo le barre di scorrimento semplici dalla finestra in fase di esecuzione. Quando la finestra viene distrutta, non è necessario chiamare questa funzione.
+Per rimuovere le barre di scorrimento flat dalla finestra, chiamare la [**funzione UninitializeFlatSB,**](/windows/desktop/api/Commctrl/nf-commctrl-uninitializeflatsb) passando l'handle alla finestra. Questa funzione rimuove le barre di scorrimento flat dalla finestra solo in fase di esecuzione. Non è necessario chiamare questa funzione quando la finestra viene distrutta.
 
- 
+ 
 
- 
+ 

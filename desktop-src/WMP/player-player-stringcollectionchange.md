@@ -1,10 +1,10 @@
 ---
-title: Evento Player. StringCollectionChange
-description: L'evento StringCollectionChange si verifica quando viene modificata una raccolta di stringhe. | Evento Player. StringCollectionChange
+title: Evento Player.StringCollectionChange
+description: L'evento StringCollectionChange si verifica quando viene modificata una raccolta di stringhe. | Evento Player.StringCollectionChange
 ms.assetid: 465ec694-afd1-4baa-b559-3ab75874388f
 keywords:
-- Media Player di Windows Event StringCollectionChange
-- Windows Event StringCollectionChange Media Player, classe Player
+- Evento StringCollectionChange Windows Media Player
+- Evento StringCollectionChange Windows Media Player , classe Player
 - Classe Player Windows Media Player, evento StringCollectionChange
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a29f72d7af0f73d74393d980b2506a3b7f05e578
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6a61b8e1e09e749579f323d506371138b0d9b59
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325232"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424091"
 ---
-# <a name="playerstringcollectionchange-event"></a>Evento Player. StringCollectionChange
+# <a name="playerstringcollectionchange-event"></a>Evento Player.StringCollectionChange
 
 L'evento StringCollectionChange si verifica quando viene modificata una raccolta di stringhe.
 
@@ -47,26 +47,25 @@ Player.StringCollectionChange(
 *pdispStringCollection* 
 </dt> <dd>
 
-Oggetto **StringCollection** modificato.
+**Oggetto StringCollection** modificato.
 
 </dd> <dt>
 
 *change* 
 </dt> <dd>
 
-Numero (Long) che indica il tipo di modifica apportata alla raccolta di stringhe. Include uno dei valori seguenti.
+Numero (long) che indica il tipo di modifica apportata alla raccolta di stringhe. Include uno dei valori seguenti.
 
 
 
-|        |                                    |
-|--------|------------------------------------|
 | Number | Descrizione                        |
-| 0      | Sconosciuto. (Valore non valido)       |
+|--------|------------------------------------|
+| 0      | Sconosciuto. (Non è un valore valido)       |
 | 1      | È stato inserito un elemento.              |
-| 2      | Raccolta di stringhe modificata.     |
+| 2      | La raccolta di stringhe è stata modificata.     |
 | 3      | Un elemento è stato eliminato.               |
-| 4      | Raccolta di stringhe cancellata. |
-| 5      | Inizio degli aggiornamenti in blocco.        |
+| 4      | La raccolta di stringhe è stata cancellata. |
+| 5      | Sono in corso gli aggiornamenti in blocco.        |
 | 6      | Gli aggiornamenti in blocco sono terminati.           |
 
 
@@ -78,7 +77,7 @@ Numero (Long) che indica il tipo di modifica apportata alla raccolta di stringhe
 *lCollectionIndex* 
 </dt> <dd>
 
-Numero (Long) che contiene l'indice dell'elemento della raccolta di stringhe modificato.
+Numero (long) contenente l'indice dell'elemento della raccolta di stringhe modificato.
 
 </dd> </dl>
 
@@ -108,7 +107,7 @@ Questo evento non restituisce un valore.
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**StringCollection (oggetto)**](stringcollection-object.md)
+[**Oggetto StringCollection**](stringcollection-object.md)
 </dt> </dl>
 
  

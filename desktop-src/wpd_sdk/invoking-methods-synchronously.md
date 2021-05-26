@@ -4,39 +4,38 @@ ms.assetid: 3a2796c8-1a39-49eb-98e1-c9e06c61f397
 title: Richiamare metodi di servizio
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b568ea169d0f3c6465d9879eb9eb01c0b46b526
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15b9540cf7378e13d56af2611d6216897c6750f6
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315546"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424201"
 ---
 # <a name="invoking-service-methods"></a>Richiamare metodi di servizio
 
-L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può richiamare in modo sincrono i metodi supportati da un determinato servizio contatti. In questo esempio vengono utilizzate le interfacce seguenti
+L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può richiamare in modo sincrono i metodi supportati da un determinato servizio Contatti. Questo esempio usa le interfacce seguenti
 
 
 
-|                                                                        |                                                                                                                                                                         |
+| Interfaccia    | Descrizione    |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Interfaccia                                                              | Descrizione                                                                                                                                                             |
-| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)               | Utilizzato per recuperare l'interfaccia **IPortableDeviceServiceMethods** per richiamare i metodi su un servizio specificato.                                                                  |
-| [**IPortableDeviceServiceMethods**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemethods) | Utilizzato per richiamare un metodo del servizio.                                                                                                                                        |
-| [**IPortableDeviceValues**](iportabledevicevalues.md)                 | Utilizzato per conservare i parametri del metodo in uscita e i risultati del metodo in arrivo. Può essere **null** se il metodo non richiede parametri o restituisce alcun risultato. |
+| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)               | Usato per recuperare **l'interfaccia IPortableDeviceServiceMethods** per richiamare i metodi in un determinato servizio.                                                                  |
+| [**IPortableDeviceServiceMethods**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemethods) | Usato per richiamare un metodo di servizio.                                                                                                                                        |
+| [**IPortableDeviceValues**](iportabledevicevalues.md)                 | Usato per contenere i parametri del metodo in uscita e i risultati del metodo in ingresso. Può essere **NULL se** il metodo non richiede parametri o restituisce risultati. |
 
 
 
  
 
-Quando l'utente sceglie l'opzione "9" dalla riga di comando, l'applicazione richiama il metodo **InvokeMethods** trovato nel modulo ServiceMethods. cpp. Si noti che prima di richiamare i metodi, l'applicazione di esempio apre un servizio di contatti in un dispositivo connesso.
+Quando l'utente sceglie l'opzione "9" dalla riga di comando, l'applicazione richiama il metodo **InvokeMethods** presente nel modulo ServiceMethods.cpp. Si noti che prima di richiamare i metodi, l'applicazione di esempio apre un servizio Contatti in un dispositivo connesso.
 
-I metodi di servizio incapsulano le funzionalità che ogni servizio definisce e implementa. Sono univoche per ogni tipo di servizio e sono rappresentate da un GUID. Il servizio contatti, ad esempio, definisce un metodo **BeginSync** che le applicazioni chiamano per preparare il dispositivo per la sincronizzazione degli oggetti contatto e un metodo **EndSync** per notificare al dispositivo che la sincronizzazione è stata completata. Le applicazioni eseguono un metodo chiamando [**IPortableDeviceServiceMethods:: Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
+I metodi del servizio incapsulano le funzionalità che ogni servizio definisce e implementa. Sono univoci per ogni tipo di servizio e sono rappresentati da un GUID. Ad esempio, il servizio Contatti definisce un metodo **BeginSync** chiamato dalle applicazioni per preparare il dispositivo per la sincronizzazione degli oggetti Contact e un metodo **EndSync** per notificare al dispositivo che la sincronizzazione è stata completata. Le applicazioni eseguono un metodo chiamando [**IPortableDeviceServiceMethods::Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
 
-I metodi del servizio non devono essere confusi con i comandi WPD. I comandi WPD fanno parte dell'interfaccia DDI (WPD Device Driver Interface) standard e sono il meccanismo per la comunicazione tra un'applicazione WPD e il driver. I comandi sono predefiniti, raggruppati per categorie, ad esempio, **la \_ categoria WPD \_ comune** e sono rappresentati da una struttura **PropertyKey** . Un'applicazione invia comandi al driver di dispositivo chiamando [**IPortableDeviceService:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand). Per ulteriori informazioni, vedere l'argomento Commands (comandi).
+I metodi di servizio non devono essere confusi con i comandi WPD. I comandi WPD fanno parte dell'interfaccia DDI (Device Driver Interface) WPD standard e sono il meccanismo per la comunicazione tra un'applicazione WPD e il driver. I comandi sono predefiniti, raggruppati per categorie, ad esempio **WPD \_ CATEGORY \_ COMMON,** e sono rappresentati da **una struttura PROPERTYKEY.** Un'applicazione invia comandi al driver di dispositivo chiamando [**IPortableDeviceService::SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand). Per altre informazioni, vedere l'argomento Comandi.
 
-Il metodo **InvokeMethods** richiama il metodo [**IPortableDeviceService:: Methods**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare un'interfaccia [**IPortableDeviceServiceMethods**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) . Utilizzando questa interfaccia, vengono richiamati i metodi **BeginSync** e **EndSync** chiamando il metodo [**IPortableDeviceServiceMethods:: Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) . Ogni volta che chiama **Invoke**, l'applicazione fornisce REFGUID per il metodo richiamato.
+Il **metodo InvokeMethods** richiama il metodo [**IPortableDeviceService::Methods**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare [**un'interfaccia IPortableDeviceServiceMethods.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Usando questa interfaccia, richiama i **metodi BeginSync** ed **EndSync** chiamando il [**metodo IPortableDeviceServiceMethods::Invoke.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) Ogni volta che chiama **Invoke,** l'applicazione fornisce refGUID per il metodo richiamato.
 
-Il codice seguente usa il metodo **InvokeMethods** .
+Il codice seguente usa il **metodo InvokeMethods.**
 
 
 ```C++

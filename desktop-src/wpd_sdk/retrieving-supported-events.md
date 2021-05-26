@@ -1,27 +1,26 @@
 ---
-description: Recupero degli eventi del servizio supportati
+description: Recupero di eventi del servizio supportati
 ms.assetid: 1bf3aa08-7ffc-417f-a67e-9eee042337b9
-title: Recupero degli eventi del servizio supportati
+title: Recupero di eventi del servizio supportati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f515b65b8ed062c346777224a64539f5229a704a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfdc1df4c8255a4dc2a1297ae99216437ac3b4c9
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317224"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423471"
 ---
-# <a name="retrieving-supported-service-events"></a>Recupero degli eventi del servizio supportati
+# <a name="retrieving-supported-service-events"></a>Recupero di eventi del servizio supportati
 
-L'applicazione WpdServicesApiSample include codice che illustra in che modo un'applicazione può recuperare gli eventi supportati da un determinato servizio Contatti chiamando metodi sulle interfacce seguenti.
+L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può recuperare gli eventi supportati da un determinato servizio Contatti chiamando i metodi nelle interfacce seguenti.
 
 
 
-|                                                                                      |                                                                                                       |
+| Interfaccia                | Descrizione    |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Interfaccia                                                                            | Descrizione                                                                                           |
-| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                             | Utilizzato per recuperare l'interfaccia **IPortableDeviceServiceCapabilities** per accedere agli eventi supportati. |
-| [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornisce l'accesso agli eventi e agli attributi di evento supportati.                                         |
+| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                             | Usato per recuperare **l'interfaccia IPortableDeviceServiceCapabilities** per accedere agli eventi supportati. |
+| [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornisce l'accesso agli eventi supportati e agli attributi degli eventi.                                         |
 | [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Contiene l'elenco degli eventi supportati.                                                                |
 | [**IPortableDeviceValues**](iportabledevicevalues.md)                               | Contiene gli attributi per un determinato evento.                                                            |
 
@@ -29,17 +28,17 @@ L'applicazione WpdServicesApiSample include codice che illustra in che modo un'a
 
  
 
-Quando l'utente sceglie l'opzione "4" nella riga di comando, l'applicazione richiama il metodo **ListSupportedEvents** trovato nel modulo ServiceCapabilities. cpp.
+Quando l'utente sceglie l'opzione "4" nella riga di comando, l'applicazione richiama il metodo **ListSupportedEvents** presente nel modulo ServiceCapabilities.cpp.
 
-Si noti che prima di recuperare l'elenco di eventi, l'applicazione di esempio apre un servizio contatti in un dispositivo connesso.
+Si noti che prima di recuperare l'elenco di eventi, l'applicazione di esempio apre un servizio Contatti in un dispositivo connesso.
 
-In WPD, un evento viene descritto in base al nome, alle opzioni e ai parametri. Il nome dell'evento è una stringa descrittiva di script, ad esempio, "MyCustomEvent". Le opzioni evento indicano se un determinato evento viene trasmesso a tutti i client e se tale evento supporta AutoPlay. Gli attributi dei parametri dell'evento includono PROPERTYKEY e VARTYPE di un determinato parametro.
+In WPD un evento viene descritto in base al nome, alle opzioni e ai parametri. Il nome dell'evento è una stringa descrittiva per gli script, ad esempio "MyCustomEvent". Le opzioni dell'evento indicano se un determinato evento viene trasmesso a tutti i client e se tale evento supporta la riproduzione automatica. Gli attributi dei parametri dell'evento includono PROPERTYKEY e VARTYPE di un parametro specificato.
 
-Quattro metodi del modulo ServiceCapabilities. cpp supportano il recupero di eventi supportati per il servizio contatti specificato: **ListSupportedEvents**, **DisplayEvent**, **DisplayEventOptions** e **DisplayEventParameters**. Il metodo **ListSupportedEvents** recupera un conteggio degli eventi supportati e l'identificatore GUID per ogni evento. Il metodo **DisplayEvent** Visualizza il nome o il GUID dell'evento, quindi chiama **DisplayEventOptions** e **DisplayEventParameters** per visualizzare i dati relativi agli eventi.
+Quattro metodi nel modulo ServiceCapabilities.cpp supportano il recupero di eventi supportati per il servizio Contatti specificato: **ListSupportedEvents,** **DisplayEvent,** **DisplayEventOptions** e **DisplayEventParameters.** Il **metodo ListSupportedEvents** recupera un conteggio degli eventi supportati e l'identificatore GUID per ogni evento. Il **metodo DisplayEvent** visualizza il nome dell'evento o il GUID e quindi chiama **DisplayEventOptions** e **DisplayEventParameters** per visualizzare i dati correlati all'evento.
 
-Il metodo **ListSupportedEvents** richiama il metodo [**IPortableDeviceService:: capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare un'interfaccia [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) . Utilizzando questa interfaccia, vengono recuperati gli eventi supportati chiamando il metodo [**IPortableDeviceServiceCapabilities:: GetSupportedEvents**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedevents) . Il metodo **GetSupportedEvents** recupera i GUID per ogni evento supportato dal servizio e copia tali GUID in un oggetto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) .
+Il **metodo ListSupportedEvents** richiama il metodo [**IPortableDeviceService::Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare [**un'interfaccia IPortableDeviceServiceCapabilities.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Usando questa interfaccia, recupera gli eventi supportati chiamando il metodo [**IPortableDeviceServiceCapabilities::GetSupportedEvents.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedevents) Il **metodo GetSupportedEvents** recupera i GUID per ogni evento supportato dal servizio e li copia in un [**oggetto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 
-Il codice seguente illustra il recupero degli eventi del servizio supportati.
+Il codice seguente illustra il recupero di eventi del servizio supportati.
 
 
 ```C++
@@ -116,11 +115,11 @@ void ListSupportedEvents(
 
 
 
-Dopo che il metodo **ListSupportedEvents** recupera i GUID che rappresentano ogni evento supportato dal servizio specificato, richiama il metodo **DisplayEvent** per recuperare i dati specifici dell'evento. Questi dati includono il nome dell'evento, le relative opzioni (broadcast o AutoPlay), i GUID di parametro, i tipi di parametro e così via.
+Dopo che **il metodo ListSupportedEvents** recupera i GUID che rappresentano ogni evento supportato dal servizio specificato, richiama il metodo **DisplayEvent** per recuperare i dati specifici dell'evento. Questi dati includono il nome dell'evento, le opzioni (trasmissione o riproduzione automatica), i GUID dei parametri, i tipi di parametro e così via.
 
-Il metodo **DisplayEvent** richiama il metodo [**IPortableDeviceServiceCapabilities:: GetEventAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-geteventattributes) per recuperare una raccolta di attributi per l'evento specificato. Chiama quindi il metodo [**IPortableDeviceValues:: GetStringValue**](iportabledevicevalues-getstringvalue.md) e richiede che il driver restituisca un nome descrittivo per l'evento specificato. **DisplayEvent** chiama quindi [**IPortableDeviceValues:: GetIPortableDeviceValuesValue**](iportabledevicevalues-getiportabledevicevaluesvalue.md) per recuperare le opzioni dell'evento. Infine, DisplayEvent chiama [**IPortableDeviceValues:: GetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-getiportabledevicekeycollectionvalue.md) per recuperare l'elenco dei parametri dell'evento. Passa i dati restituiti da questi metodi alle funzioni di supporto **DisplayEventOptions** e **DisplayEventParameters** , che eseguono il rendering delle opzioni e delle informazioni sui parametri per l'evento specificato.
+Il **metodo DisplayEvent** richiama il metodo [**IPortableDeviceServiceCapabilities::GetEventAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-geteventattributes) per recuperare una raccolta di attributi per l'evento specificato. Chiama quindi il metodo [**IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md) e richiede che il driver restituirà un nome descrittivo per l'evento specificato. DisplayEvent **chiama** quindi [**IPortableDeviceValues::GetIPortableDeviceValuesValuesValue per**](iportabledevicevalues-getiportabledevicevaluesvalue.md) recuperare le opzioni dell'evento. Infine, DisplayEvent chiama [**IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-getiportabledevicekeycollectionvalue.md) per recuperare l'elenco di parametri dell'evento. Passa i dati restituiti da questi metodi alle funzioni helper **DisplayEventOptions** e **DisplayEventParameters,** che eseguono il rendering delle opzioni e delle informazioni sui parametri per l'evento specificato.
 
-Il codice seguente usa il metodo **DisplayEvent** .
+Il codice seguente usa il **metodo DisplayEvent.**
 
 
 ```C++
@@ -185,7 +184,7 @@ void DisplayEvent(
 
 
 
-La funzione helper **DisplayEventOptions** riceve un oggetto [**IPortableDeviceValues**](iportabledevicevalues.md) che contiene i dati dell'opzione dell'evento. Chiama quindi il metodo [**IPortableDeviceValues:: GetBoolValue**](iportabledevicevalues-getboolvalue.md) per recuperare i dati delle opzioni. Usando questi dati, viene eseguito il rendering di una stringa che indica se le opzioni broadcast e AutoPlay sono supportate.
+La funzione helper **DisplayEventOptions** riceve un [**oggetto IPortableDeviceValues**](iportabledevicevalues.md) che contiene i dati delle opzioni dell'evento. Chiama quindi il metodo [**IPortableDeviceValues::GetBoolValue**](iportabledevicevalues-getboolvalue.md) per recuperare i dati delle opzioni. Usando questi dati, viene eseguito il rendering di una stringa che indica se le opzioni di trasmissione e riproduzione automatica sono supportate.
 
 
 ```C++

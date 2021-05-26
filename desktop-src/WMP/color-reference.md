@@ -1,72 +1,72 @@
 ---
-title: Riferimento ai colori (Windows Media Player SDK)
-description: Riferimento ai colori
+title: Informazioni di riferimento sul colore (Windows Media Player SDK)
+description: Riferimento colore
 ms.assetid: 01d05d18-7b24-4237-973b-b7b84315252d
 keywords:
-- Windows Media Player Skin, riferimento ai colori
-- interfacce, riferimento ai colori
-- riferimento per interfacce, colori
-- riferimento ai colori per le interfacce
+- Windows Media Player, informazioni di riferimento sul colore
+- skins,color reference
+- informazioni di riferimento per le interfaccia, i colori
+- Informazioni di riferimento sul colore per le interfaccia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11085bbcf9461b48cee9892bb8da6a8e167a2495
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f67b6a5fb44aa7576c82b6567e7d3d4a91bc4ac8
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103873229"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110424101"
 ---
-# <a name="color-reference-windows-media-player-sdk"></a>Riferimento ai colori (Windows Media Player SDK)
+# <a name="color-reference-windows-media-player-sdk"></a>Informazioni di riferimento sul colore (Windows Media Player SDK)
 
-I colori seguenti sono supportati per l'uso con le interfacce. Ogni attributo che accetta un valore di colore può essere specificato utilizzando uno dei seguenti nomi di colori o valori esadecimali. È possibile utilizzare qualsiasi numero esadecimale a sei cifre, ma solo quelli in questo grafico hanno nomi validi.
+I colori seguenti sono supportati per l'uso con le interfaccia. Ogni attributo che accetta un valore di colore può essere specificato usando uno dei seguenti nomi di colore o valori esadecimali. È possibile usare qualsiasi numero esadecimale a sei cifre, ma solo quelli in questo grafico hanno nomi validi.
 
-Alcuni attributi accetteranno anche il valore "None". Per gli attributi **transparencyColor** , "None" significa che non viene utilizzata alcuna trasparenza. Per gli altri attributi di colore appropriati, "None" indica che viene utilizzata la trasparenza al posto di un colore.
+Alcuni attributi accetteranno anche il valore "none". Per **gli attributi transparencyColor,** "none" indica che non viene usata alcuna trasparenza. Per gli altri attributi di colore in base alle esigenze, "nessuno" significa che viene usata la trasparenza anziché un colore.
 
 
 
-|                            |                             |                                 |                              |
+|          &nbsp;            |            &nbsp;           |             &nbsp;              |           &nbsp;             |
 |----------------------------|-----------------------------|---------------------------------|------------------------------|
-| AliceBlue ( \# F0F8FF)       | titanio ( \# FAEBD7)     | Aqua ( \# 00FFFF)                 | Aquamarine ( \# 7FFFD4)        |
-| Azure ( \# F0FFFF)           | beige ( \# F5F5DC)            | Bisque ( \# FFE4C4)               | nero ( \# 000000)             |
-| BlanchedAlmond ( \# FFEBCD)  | blu ( \# 0000FF)             | BlueViolet ( \# 8A2BE2)           | marrone ( \# A52A2A)             |
-| BurlyWood ( \# DEB887)       | CadetBlue ( \# 5F9EA0)        | Chartreuse ( \# 7FFF00)           | cioccolato ( \# D2691E)         |
-| corallo ( \# FF7F50)           | CornflowerBlue ( \# 6495ED)   | Cornsilk ( \# FFF8DC)             | Crimson ( \# DC143C)           |
-| cyan ( \# 00FFFF)            | DarkBlue ( \# 00008B)         | DarkCyan ( \# 008B8B)             | DarkGoldenrod ( \# B8860B)     |
-| DarkGray ( \# A9A9A9)        | DarkGreen ( \# 006400)        | DarkKhaki ( \# BDB76B)            | DarkMagenta ( \# 8B008B)       |
-| DarkOliveGreen ( \# 556B2F)  | DarkOrange ( \# FF8C00)       | DarkOrchid ( \# 9932CC)           | DarkRed ( \# 8B0000)           |
-| DarkSalmon ( \# E9967A)      | DarkSeaGreen ( \# 8FBC8B)     | DarkSlateBlue ( \# 483D8B)        | DarkSlateGray ( \# 2F4F4F)     |
-| DarkTurquoise ( \# 00CED1)   | DarkViolet ( \# 9400D3)       | DeepPink ( \# FF1493)             | DeepSkyBlue ( \# 00BFFF)       |
-| DimGray ( \# 696969)         | DodgerBlue ( \# 1E90FF)       | rosso mattone ( \# B22222)            | FloralWhite ( \# FFFAF0)       |
-| ForestGreen ( \# 228B22)     | fucsia ( \# FF00FF)          | Gainsboro ( \# DCDCDC)            | GhostWhite ( \# F8F8FF)        |
-| oro ( \# FFD700)            | ocra ( \# DAA520)        | grigio ( \# 808080)                 | verde ( \# 008000)             |
-| GreenYellow ( \# ADFF2F)     | melone ( \# F0FFF0)         | HotPink ( \# FF69B4)              | IndianRed ( \# CD5C5C)         |
-| Indigo ( \# 4B0082)          | Avorio ( \# FFFFF0)            | Khaki ( \# F0E68C)                | lavanda ( \# E6E6FA)          |
-| LavenderBlush ( \# FFF0F5)   | LawnGreen ( \# 7CFC00)        | LemonChiffon ( \# FFFACD)         | LightBlue ( \# ADD8E6)         |
-| LightCoral ( \# F08080)      | CianoChiaro ( \# E0FFFF)        | LightGoldenrodYellow ( \# FAFAD2) | LightGreen ( \# 90EE90)        |
-| grigiochiaro ( \# D3D3D3)       | LightPink ( \# FFB6C1)        | LightSalmon ( \# FFA07A)          | LightSeaGreen ( \# 20B2AA)     |
-| LightSkyBlue ( \# 87CEFA)    | LightSlateGray ( \# 778899)   | LightSteelBlue ( \# B0C4DE)       | LightYellow ( \# FFFFE0)       |
-| lime ( \# 00FF00)            | LimeGreen ( \# 32CD32)        | lino ( \# FAF0E6)                | Magenta ( \# FF00FF)           |
-| marrone ( \# 800000)          | MediumAquamarine ( \# 66CDAA) | MediumBlue ( \# 0000CD)           | MediumOrchid ( \# BA55D3)      |
-| MediumPurple ( \# 9370DB)    | MediumSeaGreen ( \# 3CB371)   | MediumSlateBlue ( \# 7B68EE)      | MediumSpringGreen ( \# 00FA9A) |
-| MediumTurquoise ( \# 48D1CC) | MediumVioletRed ( \# C71585)  | MidnightBlue ( \# 191970)         | MintCream ( \# F5FFFA)         |
-| RosaPallido ( \# FFE4E1)       | Mocassino ( \# FFE4B5)         | NavajoWhite ( \# FFDEAD)          | blu marino ( \# 000080)              |
-| OldLace ( \# FDF5E6)         | olive ( \# 808000)            | OliveDrab ( \# 6B8E23)            | arancione ( \# FFA500)            |
-| OrangeRed ( \# FF4500)       | Orchidea ( \# DA70D6)           | PaleGoldenrod ( \# EEE8AA)        | PaleGreen ( \# 98FB98)         |
-| PaleTurquoise ( \# AFEEEE)   | PaleVioletRed ( \# DB7093)    | PapayaWhip ( \# FFEFD5)           | PeachPuff ( \# FFDAB9)         |
-| Perù ( \# CD853F)            | rosa ( \# FFC0CB)             | prugna ( \# DDA0DD)                 | PowderBlue ( \# B0E0E6)        |
-| viola ( \# 800080)          | rosso ( \# FF0000)              | RosyBrown ( \# BC8F8F)            | RoyalBlue ( \# 4169E1)         |
-| SaddleBrown ( \# 8B4513)     | salmone ( \# FA8072)           | SandyBrown ( \# F4A460)           | SeaGreen ( \# 2E8B57)          |
-| Seashell ( \# FFF5EE)        | Sienna ( \# A0522D)           | argento ( \# C0C0C0)               | SkyBlue ( \# 87CEEB)           |
-| SlateBlue ( \# 6A5ACD)       | GrigioArdesia ( \# 708090)        | neve ( \# FFFAFA)                 | SpringGreen ( \# 00FF7F)       |
-| SteelBlue ( \# 4682B4)       | Tan ( \# D2B48C)              | verde acqua ( \# 008080)                 | Cardo ( \# D8BFD8)           |
-| pomodoro ( \# FF6347)          | turchese ( \# 40E0D0)        | violetto ( \# EE82EE)               | frumento ( \# F5DEB3)             |
-| bianco ( \# FFFFFF)           | Bianco fumo ( \# F5F5F5)       | giallo ( \# FFFF00)               | YellowGreen ( \# 9ACD32)       |
+| aliceblue \# (F0F8FF)       | white \# (FAEBD7)     | aqua ( \# 00FFFF)                 | aquamarine ( \# 7FFFD4)        |
+| azure \# (F0FFFF)           | fro ( \# F5F5DC)            | bisque ( \# FFE4C4)               | black ( \# 0000000)             |
+| blanchedalmond \# (FFEBCD)  | blu \# (0000FF)             | blueviolet ( \# 8A2BE2)           | brown \# (A52A2A)             |
+| burlywood ( \# DEB887)       | cadetblue ( \# 5F9EA0)        | chartreuse ( \# 7FFF00)           | chocolate \# (D2691E)         |
+| corallo \# (FF7F50)           | cornflowerblue ( \# 6495ED)   | maissilk \# (FFF8DC)             | crimson ( \# DC143C)           |
+| ciano \# (00FFFF)            | darkblue ( \# 00008B)         | darkcyan ( \# 008B8B)             | darkgoldenrod ( \# B8860B)     |
+| darkgray \# (A9A9A9)        | darkgreen ( \# 006400)        | darkkhaki ( \# BDB76B)            | darkmagenta ( \# 8B008B)       |
+| verde scuro \# (556B2F)  | darkorange ( \# FF8C00)       | darkorchid ( \# 9932CC)           | scuro \# (8B0000)           |
+| darksalmon ( \# E9967A)      | darkseagreen ( \# 8FBC8B)     | blu ardesia scura ( \# 483D8B)        | darkslategray ( \# 2F4F4F)     |
+| blu scuro ( \# 00CED1)   | darkviolet ( \# 9400D3)       | deeppink ( \# FF1493)             | deepskyblue ( \# 00BFFF)       |
+| dimgray ( \# 696969)         | rblue ( \# 1E90FF)       | firebrick ( \# B22222)            | white \# (FFFAF0)       |
+| forestgreen ( \# 228B22)     | fuchsia ( \# FF00FF)          | gainsboro ( \# DCDCDC)            | ghostwhite \# (F8F8FF)        |
+| gold ( \# FFD700)            | goldenrod ( \# DAA520)        | gray \# (808080)                 | verde ( \# 008000)             |
+| greenyellow \# (ADFF2F)     | honeydew \# (F0FFF0)         | hotpink ( \# FF69B4)              | indianred ( \# CD5C5C)         |
+| indigo ( \# 4B0082)          | ivory \# (FFFFF0)            | kaki \# (F0E68C)                | lavanda \# (E6E6FA)          |
+| lavenderblush \# (FFF0F5)   | lawngreen ( \# 7CFC00)        | lemonchiffon \# (FFFACD)         | lightblue \# (ADD8E6)         |
+| lightcoral \# (F08080)      | lightcyan ( \# E0FFFF)        | lightgoldenrodyellow \# (FAFAD2) | verde chiaro ( \# 90EE90)        |
+| verde chiaro ( \# D3D3D3)       | puntina chiaro ( \# FFB6C1)        | lightsalmon ( \# FFA07A)          | lightseagreen ( \# 20B2AA)     |
+| lightskyblue ( \# 87CEFA)    | lightslategray ( \# 778899)   | lightsteelblue ( \# B0C4DE)       | lightyellow ( \# FFFFE0)       |
+| \#00FF00 ( 00FF00)            | verdegreen ( \# 32CD32)        | linen \# (FAF0E6)                | magenta ( \# FF00FF)           |
+| maroon ( \# 800000)          | mediumaquamarine ( \# 66CDAA) | mediumblue ( \# 0000CD)           | mediumorchid ( \# BA55D3)      |
+| mediumpurple ( \# 9370DB)    | mediumseagreen ( \# 3CB371)   | mediumslateblue ( \# 7B68EE)      | mediumspringgreen ( \# 00FA9A) |
+| mediumturquoise ( \# 48D1CC) | mediumvioletred ( \# C71585)  | midnightblue \# (191970)         | mintcream ( \# F5FFFA)         |
+| mistyrose \# (FFE4E1)       | moccasin ( \# FFE4B5)         | navajowhite \# (FFDEAD)          | navy \# (000080)              |
+| oldlace \# (FDF5E6)         | olive \# (808000)            | olivedrab ( \# 6B8E23)            | arancione \# (FFA500)            |
+| orangered ( \# FF4500)       | orchidea ( \# DA70D6)           | palegoldenrod ( \# EEE8AA)        | palegreen ( \# 98FB98)         |
+| paleturquoise \# (AFEEEE)   | palevioletred ( \# DB7093)    | papayawhip ( \# FFEFD5)           | \#FFDAB9 ( FFDAB9)         |
+| peru ( \# CD853F)            | rosa \# (FFC0CB)             | syde \# (DDA0DD)                 | tuttofare \# (B0E0E6)        |
+| viola \# (800080)          | red ( \# FF0000)              | rosybrown \# (BC8F8F)            | royalblue ( \# 4169E1)         |
+| \#8B4513 ( 8B4513)     | fro \# (FA8072)           | wnbrown ( \# F4A460)           | green \# (2E8B57)          |
+| seashell \# (FFF5EE)        | sienna \# (A0522D)           | silver ( \# C0C0C0)               | skyblue ( \# 87CEEB)           |
+| slateblue ( \# 6A5ACD)       | slategray ( \# 708090)        | snow \# (FFFAFA)                 | springgreen ( \# 00FF7F)       |
+| steelblue ( \# 4682B4)       | tan ( \# D2B48C)              | teal \# (008080)                 | thistle ( \# D8BFD8)           |
+| tomato \# (FF6347)          | turchese ( \# 40E0D0)        | viola \# (EE82EE)               | tutto ( \# F5DEB3)             |
+| white \# (FFFFFF)           | whitesmoke \# (F5F5F5)       | giallo ( \# FFFF00)               | yellowgreen ( \# 9ACD32)       |
 
 
 
  
 
-Per ulteriori informazioni, vedere l'articolo relativo alla [tabella dei colori](https://msdn.microsoft.com/library/ms531197.aspx) in Microsoft MSDN® online.
+Per altre informazioni, vedere [l'articolo Tabella](https://msdn.microsoft.com/library/ms531197.aspx) colori in Microsoft MSDN® Online.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

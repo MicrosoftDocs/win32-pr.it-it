@@ -1,27 +1,26 @@
 ---
-description: Recupero dei formati di servizio supportati
+description: Recupero di formati di servizio supportati
 ms.assetid: b54dfeda-c2a3-42ec-895f-9abbbd4dd2ec
-title: Recupero dei formati di servizio supportati
+title: Recupero di formati di servizio supportati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ed8021d8feefaaad3da7905e17e8c658dfb19e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73618f3450255ad470545ac472ad9f71238621e3
+ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317222"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110423812"
 ---
-# <a name="retrieving-supported-service-formats"></a>Recupero dei formati di servizio supportati
+# <a name="retrieving-supported-service-formats"></a>Recupero di formati di servizio supportati
 
 L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può recuperare i formati supportati da un determinato servizio Contatti chiamando i metodi delle interfacce nella tabella seguente.
 
 
 
-|                                                                                      |                                                                                                       |
+| Interfaccia | Descrizione   |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Interfaccia                                                                            | Descrizione                                                                                           |
-| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                             | Utilizzato per recuperare l'interfaccia **IPortableDeviceServiceCapabilities** per accedere agli eventi supportati. |
-| [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornisce l'accesso agli eventi e agli attributi di evento supportati.                                         |
+| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                             | Usato per recuperare **l'interfaccia IPortableDeviceServiceCapabilities** per accedere agli eventi supportati. |
+| [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornisce l'accesso agli eventi supportati e agli attributi degli eventi.                                         |
 | [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Contiene l'elenco dei formati supportati.                                                               |
 | [**IPortableDeviceValues**](iportabledevicevalues.md)                               | Contiene gli attributi per un formato specificato.                                                           |
 
@@ -29,19 +28,19 @@ L'applicazione WpdServicesApiSample include codice che illustra come un'applicaz
 
  
 
-Quando l'utente sceglie l'opzione "3" dalla riga di comando, l'applicazione richiama il metodo **ListSupportedFormats** trovato nel modulo ServiceCapabilities. cpp.
+Quando l'utente sceglie l'opzione "3" nella riga di comando, l'applicazione richiama il metodo **ListSupportedFormats** disponibile nel modulo ServiceCapabilities.cpp.
 
-Si noti che prima di recuperare l'elenco di eventi, l'applicazione di esempio apre un servizio contatti in un dispositivo connesso.
+Si noti che prima di recuperare l'elenco di eventi, l'applicazione di esempio apre un servizio Contatti in un dispositivo connesso.
 
-In WPD un formato è descritto dagli attributi che specificano il nome e, facoltativamente, il tipo MIME di un determinato formato. Questi attributi sono definiti nel file di intestazione thePortableDevice. h. Per una descrizione degli attributi supportati, vedere l'argomento [attributi](attributes.md) .
+In WPD, un formato è descritto dagli attributi che specificano il nome e (facoltativamente) il tipo MIME di un determinato formato. Questi attributi sono definiti nel file di intestazionePortableDevice.h. Per una descrizione degli attributi supportati, vedere [l'argomento](attributes.md) Attributi.
 
-Nel caso dell'applicazione di esempio, se WpdServiceSampleDriver è l'unico dispositivo installato, il driver restituisce due formati supportati per il servizio di contatto: "AbstractContactFormat" e "VCard2Format". Questi formati corrispondono al **\_ \_ \_ \_ contatto astratto del formato oggetto WPD** e al **\_ formato oggetto \_ WPD \_ VCARD2** attributi disponibili in portabledevice. h.
+Nel caso dell'applicazione di esempio, se WpdServiceSampleDriver è l'unico dispositivo installato, il driver restituisce due formati supportati per il servizio Contatto: "AbstractContactFormat" e "VCard2Format". Questi formati corrispondono agli attributi **\_ WPD OBJECT FORMAT ABSTRACT \_ \_ \_ CONTACT** e **WPD \_ OBJECT FORMAT \_ \_ VCARD2** disponibili in PortableDevice.h.
 
-Due metodi del modulo ServiceCapabilities. cpp supportano il recupero dei formati supportati per il servizio Contacts: **ListSupportedFormats** e **DisplayFormat**. Il primo recupera l'identificatore GUID per ogni formato supportato. Il secondo converte questo GUID in una stringa intuitiva.
+Due metodi nel modulo ServiceCapabilities.cpp supportano il recupero dei formati supportati per il servizio Contatti: **ListSupportedFormats** e **DisplayFormat.** Il primo recupera l'identificatore GUID per ogni formato supportato. Quest'ultimo converte questo GUID in una stringa descrittiva.
 
-Il metodo **ListSupportedFormats** richiama il metodo [**IPortableDeviceService:: capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare un'interfaccia [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) . Utilizzando questa interfaccia, vengono recuperati i formati supportati chiamando il metodo [**IPortableDeviceServiceCapabilities:: GetSupportedFormats**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedformats) . Il metodo **GetSupportedFormats** Recupera il GUID per ogni formato supportato dal servizio e copia il GUID in un oggetto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) .
+Il **metodo ListSupportedFormats** richiama il [**metodo IPortableDeviceService::Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare [**un'interfaccia IPortableDeviceServiceCapabilities.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Usando questa interfaccia, recupera i formati supportati chiamando il metodo [**IPortableDeviceServiceCapabilities::GetSupportedFormats.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedformats) Il **metodo GetSupportedFormats** recupera il GUID per ogni formato supportato dal servizio e lo copia in un [**oggetto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 
-Il codice seguente usa il metodo **ListSupportedFormats** .
+Il codice seguente usa il **metodo ListSupportedFormats.**
 
 
 ```C++
@@ -118,11 +117,11 @@ void ListSupportedFormats(
 
 
 
-Dopo che il metodo **ListSupportedFormats** Recupera il GUID per ogni formato supportato dal servizio specificato, richiama il metodo **DisplayFormat** per visualizzare il nome descrittivo dello script per ogni formato. ad esempio, "VCard2".
+Dopo che **il metodo ListSupportedFormats** ha recuperato il GUID per ogni formato supportato dal servizio specificato, richiama il **metodo DisplayFormat** per visualizzare il nome descrittivo dello script per ogni formato. ad esempio "VCard2".
 
-Il metodo **DisplayFormat** richiama il metodo [**IPortableDeviceServiceCapabilities:: GetFormatAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getformatattributes) per recuperare una raccolta di attributi per il GUID di formato specificato. Chiama quindi il metodo [**IPortableDeviceValues:: GetStringValue**](iportabledevicevalues-getstringvalue.md) e richiede che il driver restituisca un nome descrittivo per il formato specificato.
+Il **metodo DisplayFormat** richiama il metodo [**IPortableDeviceServiceCapabilities::GetFormatAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getformatattributes) per recuperare una raccolta di attributi per il GUID di formato specificato. Chiama quindi il metodo [**IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md) e richiede che il driver restituirà un nome descrittivo per lo script per il formato specificato.
 
-Il codice seguente usa il metodo **DisplayFormat** .
+Il codice seguente usa il **metodo DisplayFormat.**
 
 
 ```C++
