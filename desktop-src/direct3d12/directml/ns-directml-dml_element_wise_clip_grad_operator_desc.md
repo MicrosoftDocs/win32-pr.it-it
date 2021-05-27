@@ -1,7 +1,7 @@
 ---
 UID: NS:directml.DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
 title: DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
-description: Calcola le sfumature di backpropagation per [un clip per elemento.](/windows/win32/api/directml/ns-directml-dml_element_wise_clip_operator_desc)
+description: Calcola le sfumature di backpropagation per [il clip per elemento.](/windows/win32/api/directml/ns-directml-dml_element_wise_clip_operator_desc)
 helpviewer_keywords:
 - DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
 - DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC structure
@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 224fbacdb8816a6aed6a7779c5c8ff991736ee6c
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 3b993ca1c027119ae64157db2327a2836445bf43
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804490"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550206"
 ---
 # <a name="dml_element_wise_clip_grad_operator_desc-directmlh"></a>DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC (directml.h)
 
@@ -61,7 +61,7 @@ f(x, gradient) = if x <= Min then 0
                  else        then gradient
 ```
 
-Questo operatore supporta l'esecuzione sul posto, ovvero è `OutputTensor` consentito creare un alias di *InputTensor durante* l'associazione.
+Questo operatore supporta l'esecuzione sul posto, vale a dire che è `OutputTensor` consentito l'alias *InputTensor durante* l'associazione.
 
 > [!IMPORTANT]
 > Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.5 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
@@ -84,7 +84,7 @@ struct DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore della funzionalità di input. Si tratta in genere dello stesso tensore fornito da *InputTensor* DML_ELEMENT_WISE_CLIP_OPERATOR_DESC [nel](/windows/win32/api/directml/ns-directml-dml_element_wise_clip_operator_desc) passaggio in avanti.
+Tensore della funzionalità di input. Si tratta in genere dello stesso tensore fornito *dall'inputTensor* DML_ELEMENT_WISE_CLIP_OPERATOR_DESC [nel](/windows/win32/api/directml/ns-directml-dml_element_wise_clip_operator_desc) passaggio in avanti.
 
 `InputGradientTensor`
 
@@ -100,13 +100,13 @@ Tensore di output contenente le sfumature backpropagate. In genere, questo tenso
 
 `Min`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valore minimo. Se x è in corrispondenza o al di sotto di questo valore, il risultato della sfumatura è 0.
 
 `Max`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valore massimo. Se x è al di sopra di questo valore, il risultato della sfumatura è 0.
 

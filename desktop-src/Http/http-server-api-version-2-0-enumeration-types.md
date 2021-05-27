@@ -1,38 +1,35 @@
 ---
-title: Tipi di enumerazione versione 2,0 dell'API server HTTP
-description: Di seguito sono riportati i tipi di enumerazione http versione 2,0 HTTP \_ 503 \_ Response \_ VERBOSITYHTTP \_ auth \_ STATUSHTTP \_ Enabled \_ STATEHTTP \_ log \_ data \_ TYPEHTTP \_ registrazione \_ rollover \_ TYPEHTTP \_ registrazione \_ TYPEHTTP \_ QoS \_ impostazione \_ TYPEHTTP \_ Request \_ auth \_ TYPEHTTP \_ richiesta \_ info \_ TYPEHTTP \_ risposta \_ info TYPEHTTP \_ \_ server \_ PROPERTYHTTP \_ Service \_ config \_ cache \_ chiave di \_ \_ timeout configurazione servizio http \_ chiave di timeout \_
+title: Tipi di enumerazione dell'API server HTTP versione 2.0
+description: Di seguito sono riportati i tipi di enumerazione HTTP versione 2.0 HTTP \_ 503 \_ \_ VERBOSITYHTTP \_ AUTH \_ STATUSHTTP \_ \_ STATEHTTP STATEHTTP \_ LOG \_ \_ TYPEHTTP \_ LOGGING \_ ROLLOVER \_ \_ \_ TYPEHTTP LOGGING \_ TYPEHTTP QOS \_ SETTING \_ TYPEHTTP REQUEST \_ \_ AUTH \_ TYPEHTTP REQUEST INFO \_ \_ \_ TYPEHTTP RESPONSE INFO \_ \_ \_ TYPEHTTP SERVER \_ PROPERTYHTTP SERVER CONFIG \_ CACHE \_ \_ \_ \_ KEYHTTP SERVICE CONFIG TIMEOUT \_ \_ KEYHTTP SERVICE CONFIG \_ TIMEOUT \_ KEY
 ms.assetid: 849b88a1-e60b-4a1d-a660-cc3fe429d39f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77eaf6fb9c97adfc7a23aad657bfadbdf5e30296
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 208c2f648208b04a1eb29634d883f2d41b08017d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045051"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549086"
 ---
-# <a name="http-server-api-version-20-enumeration-types"></a>Tipi di enumerazione versione 2,0 dell'API server HTTP
+# <a name="http-server-api-version-20-enumeration-types"></a>Tipi di enumerazione dell'API server HTTP versione 2.0
 
-Di seguito sono riportati i tipi di enumerazione HTTP versione 2,0:
+Di seguito sono riportati i tipi di enumerazione HTTP versione 2.0.
 
--   [**Livello \_ di \_ dettaglio della risposta HTTP 503 \_**](/windows/desktop/api/Http/ne-http-http_503_response_verbosity)
--   [**\_stato di autenticazione HTTP \_**](/windows/desktop/api/Http/ne-http-http_auth_status)
--   [**\_stato abilitato \_ http**](/windows/desktop/api/Http/ne-http-http_enabled_state)
--   [**\_tipo di \_ dati del log http \_**](/windows/desktop/api/Http/ne-http-http_log_data_type)
--   [**\_tipo di \_ rollover \_ registrazione http**](/windows/desktop/api/Http/ne-http-http_logging_rollover_type)
--   [**\_tipo di registrazione http \_**](/windows/desktop/api/Http/ne-http-http_logging_type)
--   [**\_tipo di \_ impostazione \_ QoS http**](/windows/desktop/api/Http/ne-http-http_qos_setting_type)
--   [**\_tipo di \_ autenticazione della richiesta HTTP \_**](/windows/desktop/api/Http/ne-http-http_request_auth_type)
--   [**\_tipo di \_ informazioni \_ richiesta http**](/windows/desktop/api/Http/ne-http-http_request_info_type)
--   [**\_tipo di \_ informazioni di risposta http \_**](/windows/desktop/api/Http/ne-http-http_response_info_type)
--   [**\_proprietà del server http \_**](/windows/desktop/api/Http/ne-http-http_server_property)
--   [**\_chiave di \_ \_ cache della \_ configurazione del servizio http**](/windows/desktop/api/Http/ne-http-http_service_config_cache_key)
--   [**\_chiave di \_ \_ timeout configurazione servizio http \_**](/windows/desktop/api/Http/ne-http-http_service_config_timeout_key)
+| Enumerazione | Descrizione |
+|-|-|
+| [**HTTP_DELEGATE_REQUEST_PROPERTY_ID**](/windows/win32/api/http/ne-http-http_delegate_request_property_id) | Definisce costanti che specificano un tipo di informazioni sulle proprietà per una richiesta di delegato. |
+| [**HTTP_FEATURE_ID**](/windows/win32/api/http/ne-http-http_feature_id) | Definisce costanti che specificano un identificatore per una funzionalità HTTP. |
 
- 
-
- 
-
-
-
-
+-   [**LIVELLO DI DETTAGLIO DELLA RISPOSTA HTTP \_ 503 \_ \_**](/windows/desktop/api/Http/ne-http-http_503_response_verbosity)
+-   [**STATO \_ DELL'AUTENTICAZIONE \_ HTTP**](/windows/desktop/api/Http/ne-http-http_auth_status)
+-   [**STATO \_ HTTP \_ ABILITATO**](/windows/desktop/api/Http/ne-http-http_enabled_state)
+-   [**TIPO \_ DI DATI DEL LOG \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_log_data_type)
+-   [**TIPO \_ DI \_ ROLLOVER DELLA REGISTRAZIONE \_ HTTP**](/windows/desktop/api/Http/ne-http-http_logging_rollover_type)
+-   [**TIPO \_ DI REGISTRAZIONE \_ HTTP**](/windows/desktop/api/Http/ne-http-http_logging_type)
+-   [**TIPO \_ DI IMPOSTAZIONE HTTP QOS \_ \_**](/windows/desktop/api/Http/ne-http-http_qos_setting_type)
+-   [**TIPO \_ DI AUTENTICAZIONE RICHIESTA \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_request_auth_type)
+-   [**TIPO \_ DI INFORMAZIONI SULLA RICHIESTA \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_request_info_type)
+-   [**TIPO \_ DI INFORMAZIONI SULLA RISPOSTA \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_response_info_type)
+-   [**PROPRIETÀ \_ SERVER \_ HTTP**](/windows/desktop/api/Http/ne-http-http_server_property)
+-   [**CHIAVE \_ DELLA CACHE DI CONFIGURAZIONE DEL SERVIZIO \_ \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_service_config_cache_key)
+-   [**CHIAVE DI \_ TIMEOUT DELLA CONFIGURAZIONE DEL SERVIZIO \_ \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_service_config_timeout_key)
