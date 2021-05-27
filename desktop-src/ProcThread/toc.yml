@@ -22,7 +22,7 @@
               href: scheduling-priorities.md
             - name: Cambi di contesto
               href: context-switches.md
-            - name: Aumenti di priorità
+            - name: Priorità boost
               href: priority-boosts.md
             - name: Inversione priorità
               href: priority-inversion.md
@@ -30,12 +30,12 @@
               href: multiple-processors.md
             - name: Supporto NUMA
               href: numa-support.md
-            - name: Servizio di ordinamento thread
+            - name: Servizio di ordinamento dei thread
               href: thread-ordering-service.md
             - name: Servizio Utilità di pianificazione classi multimediali
               href: multimedia-class-scheduler-service.md
               items:
-                - name: API della coda di lavoro Real-Time
+                - name: Real-Time API coda di lavoro
                   href: platform-work-queue-api.md
                   items:
                     - name: IRtwqAsyncCallback
@@ -142,11 +142,11 @@
         - name: Più thread
           href: multiple-threads.md
           items:
-            - name: Dimensioni dello stack di thread
+            - name: Dimensioni stack thread
               href: thread-stack-size.md
-            - name: Handle di thread e identificatori
+            - name: Handle e identificatori di thread
               href: thread-handles-and-identifiers.md
-            - name: Sospensione dell'esecuzione del thread
+            - name: Sospensione dell'esecuzione di thread
               href: suspending-thread-execution.md
             - name: Sincronizzazione dell'esecuzione di più thread
               href: synchronizing-execution-of-multiple-threads.md
@@ -163,11 +163,11 @@
         - name: Processi figlio
           href: child-processes.md
           items:
-            - name: Impostazione delle proprietà della finestra mediante STARTUPINFO
+            - name: Impostazione delle proprietà della finestra tramite STARTUPINFO
               href: setting-window-properties-using-startupinfo.md
-            - name: Handle di processo e identificatori
+            - name: Handle e identificatori del processo
               href: process-handles-and-identifiers.md
-            - name: Elaborazione enumerazione
+            - name: Enumerazione dei processi
               href: process-enumeration.md
             - name: Recupero di informazioni aggiuntive sul processo
               href: obtaining-additional-process-information.md
@@ -177,14 +177,14 @@
               href: environment-variables.md
             - name: Terminazione di un processo
               href: terminating-a-process.md
-            - name: Working set di processo
+            - name: Elabora working set
               href: process-working-set.md
-            - name: Sicurezza del processo e diritti di accesso
+            - name: Sicurezza dei processi e diritti di accesso
               href: process-security-and-access-rights.md
         - name: Pool di thread
           href: thread-pools.md
           items:
-            - name: API del pool di thread
+            - name: Thread Pool API
               href: thread-pool-api.md
             - name: Pooling dei thread
               href: thread-pooling.md
@@ -193,13 +193,13 @@
           items:
             - name: Processi annidati
               href: nested-jobs.md
-            - name: Sicurezza dell'oggetto processo e diritti di accesso
+            - name: Sicurezza degli oggetti processo e diritti di accesso
               href: job-object-security-and-access-rights.md
         - name: Set di CPU
           href: cpu-sets.md
-        - name: Fiber
+        - name: Fibre
           href: fibers.md
-        - name: Pianificazione User-Mode
+        - name: User-Mode pianificazione
           href: user-mode-scheduling.md
     - name: Uso di processi e thread
       href: using-processes-and-threads.md
@@ -210,17 +210,17 @@
           href: creating-threads.md
         - name: Creazione di un processo figlio con input e output reindirizzati
           href: creating-a-child-process-with-redirected-input-and-output.md
-        - name: Processi IUM (isolated User Mode)
+        - name: Processi IUM (Isolated User Mode)
           href: isolated-user-mode--ium--processes.md
         - name: Modifica delle variabili di ambiente
           href: changing-environment-variables.md
-        - name: Uso dell'archiviazione locale di thread
+        - name: Uso dell'archiviazione thread-local
           href: using-thread-local-storage.md
-        - name: Uso di Fiber
+        - name: Uso di fiber
           href: using-fibers.md
         - name: Uso delle funzioni del pool di thread
           href: using-the-thread-pool-functions.md
-    - name: Riferimento a processi e thread
+    - name: Informazioni di riferimento su processi e thread
       href: process-and-thread-reference.md
       items:
         - name: Enumerazioni di processi e thread
@@ -273,7 +273,7 @@
               href: /windows/desktop/api/Avrt/nf-avrt-avsetmmthreadcharacteristicsa
             - name: AvSetMmThreadPriority
               href: /windows/desktop/api/Avrt/nf-avrt-avsetmmthreadpriority
-            - name: BindIoCompletionCallback ha provocato
+            - name: BindIoCompletionCallback
               href: /windows/desktop/api/WinBase/nf-winbase-bindiocompletioncallback
             - name: CallbackMayRunLong
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-callbackmayrunlong
@@ -285,7 +285,7 @@
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-closethreadpool
             - name: CloseThreadpoolCleanupGroup
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-closethreadpoolcleanupgroup
-            - name: CloseThreadpoolCleanupGroupMembers
+            - name: Closethreadpoolcleanupgroupmembers
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-closethreadpoolcleanupgroupmembers
             - name: CloseThreadpoolIo
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-closethreadpoolio
@@ -311,7 +311,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-createjobobjecta
             - name: CreateProcess
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa
-            - name: CreateProcessAsUser ha
+            - name: Createprocessasuser
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera
             - name: CreateProcessWithLogonW
               href: /windows/desktop/api/WinBase/nf-winbase-createprocesswithlogonw
@@ -454,7 +454,7 @@
             - name: GetProcessAffinityMask
               href: /windows/desktop/api/WinBase/nf-winbase-getprocessaffinitymask
             - name: GetProcessDefaultCpuSets
-              href: getprocessdefaultcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessdefaultcpusets
             - name: GetProcessGroupAffinity
               href: /windows/desktop/api/processtopologyapi/nf-processtopologyapi-getprocessgroupaffinity
             - name: GetProcessHandleCount
@@ -504,7 +504,7 @@
             - name: GetThreadPriorityBoost
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getthreadpriorityboost
             - name: GetThreadSelectedCpuSets
-              href: getthreadselectedcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getthreadselectedcpusets.md
             - name: GetThreadTimes
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getthreadtimes
             - name: GetUmsCompletionListEvent
@@ -515,7 +515,7 @@
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-initializeprocthreadattributelist
             - name: InitializeThreadpoolEnvironment
               href: /windows/desktop/api/WinBase/nf-winbase-initializethreadpoolenvironment
-            - name: IoCompletionCallback
+            - name: Iocompletioncallback
               href: /previous-versions/windows/desktop/legacy/ms684124(v=vs.85)
             - name: IsImmersiveProcess
               href: /windows/desktop/api/Winuser/nf-winuser-isimmersiveprocess
@@ -555,7 +555,7 @@
               href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryidleprocessorcycletime
             - name: QueryIdleProcessorCycleTimeEx
               href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryidleprocessorcycletimeex
-            - name: QueryInformationJobObject
+            - name: Oggetto QueryInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-queryinformationjobobject
             - name: QueryIoRateControlInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-queryioratecontrolinformationjobobject
@@ -571,7 +571,7 @@
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-querythreadpoolstackinformation
             - name: QueryUmsThreadInformation
               href: /windows/desktop/api/WinBase/nf-winbase-queryumsthreadinformation
-            - name: QueueUserWorkItem
+            - name: Queueuserworkitem
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-queueuserworkitem
             - name: ReleaseMutexWhenCallbackReturns
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-releasemutexwhencallbackreturns
@@ -581,11 +581,11 @@
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-resumethread
             - name: SetDisplayAutoRotationPreferences
               href: /windows/desktop/api/WinUser/nf-winuser-setdisplayautorotationpreferences
-            - name: Nell'SetEnvironmentVariable
+            - name: SetEnvironmentVariable
               href: /windows/desktop/api/WinBase/nf-winbase-setenvironmentvariable
             - name: SetEventWhenCallbackReturns
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-seteventwhencallbackreturns
-            - name: SetInformationJobObject
+            - name: Oggetto SetInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-setinformationjobobject
             - name: SetIoRateControlInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-setioratecontrolinformationjobobject
@@ -596,7 +596,7 @@
             - name: SetProcessAffinityUpdateMode
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessaffinityupdatemode
             - name: SetProcessDefaultCpuSets
-              href: setprocessdefaultcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessdefaultcpusets
             - name: SetProcessInformation
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessinformation
             - name: SetProcessMitigationPolicy
@@ -656,7 +656,7 @@
             - name: SetThreadPriorityBoost
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriorityboost
             - name: SetThreadSelectedCpuSets
-              href: setthreadselectedcpusets.md
+              href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadselectedcpusets
             - name: SetThreadStackGuarantee
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadstackguarantee
             - name: SetUmsThreadInformation
@@ -683,9 +683,9 @@
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminateprocess
             - name: TerminateThread
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread
-            - name: ThreadProc
+            - name: Threadproc
               href: /previous-versions/windows/desktop/legacy/ms686736(v=vs.85)
-            - name: TimerCallback
+            - name: Timercallback
               href: /previous-versions/windows/desktop/legacy/ms686790(v=vs.85)
             - name: TlsAlloc
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc
@@ -727,7 +727,7 @@
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute
             - name: UserHandleGrantAccess
               href: /windows/desktop/api/Winuser/nf-winuser-userhandlegrantaccess
-            - name: WaitCallback
+            - name: Waitcallback
               href: /previous-versions/windows/desktop/legacy/ms687017(v=vs.85)
             - name: WaitForInputIdle
               href: /windows/desktop/api/Winuser/nf-winuser-waitforinputidle
@@ -817,7 +817,7 @@
               href: /windows/win32/api/WinNT/ns-winnt-numa_node_relationship
             - name: ORIENTATION_PREFERENCE
               href: /windows/desktop/api/WinUser/ne-winuser-orientation_preference
-            - name: PEB
+            - name: Peb
               href: /windows/win32/api/Winternl/ns-winternl-peb
             - name: PEB_LDR_DATA
               href: /windows/win32/api/Winternl/ns-winternl-peb_ldr_data
@@ -873,5 +873,5 @@
               href: /windows/win32/api/WinBase/ns-winbase-ums_system_thread_information
             - name: GetProcessMitigationPolicy
               href: /windows/win32/api/processthreadsapi/nf-processthreadsapi-getprocessmitigationpolicy
-        - name: Flag di creazione processo
+        - name: Flag di creazione del processo
           href: process-creation-flags.md

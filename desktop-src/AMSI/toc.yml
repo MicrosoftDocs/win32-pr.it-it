@@ -1,11 +1,11 @@
 - name: Antimalware Scan Interface (AMSI)
   href: antimalware-scan-interface-portal.md
   items:
-    - name: Come aiuta AMSI
+    - name: In che modo AMSI è utile
       href: how-amsi-helps.md
     - name: 'Destinatari degli sviluppatori, esempi'
       href: dev-audience.md
-    - name: Riferimento a AMSI
+    - name: Informazioni di riferimento su AMSI
       href: antimalware-scan-interface-reference.md
       items:
         - name: Enumerazioni AMSI
@@ -22,8 +22,10 @@
               href: /windows/desktop/api/amsi/nf-amsi-amsiclosesession
             - name: AmsiInitialize
               href: /windows/desktop/api/amsi/nf-amsi-amsiinitialize
-            - name: AmsiOpenSession
+            - name: AmsiNotifyOperation
               href: /windows/desktop/api/amsi/nf-amsi-amsiopensession
+            - name: AmsiOpenSession
+              href: /windows/desktop/api/amsi/nf-amsi-amsinotifyoperation
             - name: AmsiResultIsMalware
               href: /windows/desktop/api/amsi/nf-amsi-amsiresultismalware
             - name: AmsiScanBuffer
@@ -49,12 +51,22 @@
                   href: /windows/desktop/api/amsi/nf-amsi-iantimalware-closesession
                 - name: Metodo di analisi
                   href: /windows/desktop/api/amsi/nf-amsi-iantimalware-scan
+            - name: IAntimalware2
+              href: /windows/desktop/api/amsi/nn-amsi-iantimalware2
+              items:
+                - name: Metodo Notify
+                  href: /windows/desktop/api/amsi/nf-amsi-iantimalware2-notify
             - name: IAntimalwareProvider
               href: /windows/desktop/api/amsi/nn-amsi-iantimalwareprovider
               items:
                 - name: Metodo CloseSession
                   href: /windows/desktop/api/amsi/nf-amsi-iantimalwareprovider-closesession
-                - name: DisplayName (metodo)
+                - name: Metodo DisplayName
                   href: /windows/desktop/api/amsi/nf-amsi-iantimalwareprovider-displayname
                 - name: Metodo di analisi
                   href: /windows/desktop/api/amsi/nf-amsi-iantimalwareprovider-scan
+            - name: IAntimalwareProvider2
+              href: /windows/desktop/api/amsi/nn-amsi-iantimalwareprovider2
+              items:
+                - name: Metodo Notify
+                  href: /windows/desktop/api/amsi/nf-amsi-iantimalwareprovider2-notify
