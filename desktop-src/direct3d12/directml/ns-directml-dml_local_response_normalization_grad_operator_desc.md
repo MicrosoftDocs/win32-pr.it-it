@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
-ms.openlocfilehash: eecf849a06ee8e99ac9c015ecd4568496120b2d9
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: e858b8ce20df4b1bf12ac9efe360941eb93c54d1
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804470"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550406"
 ---
 # <a name="dml_local_response_normalization_grad_operator_desc-directmlh"></a>DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC (directml.h)
 
@@ -81,7 +81,7 @@ struct DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore contenente i dati di input. Le dimensioni di *questo* tensore devono essere `{ BatchCount, ChannelCount, Height, Width }` .
+Tensore contenente i dati di input. Le dimensioni di questo *tensore* devono essere `{ BatchCount, ChannelCount, Height, Width }` .
 
 `InputGradientTensor`
 
@@ -93,43 +93,43 @@ Tensore sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'o
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di output contenente le sfumature backpropagate.
+Tensore di output contenente le sfumature di backpropagated.
 
 `CrossChannel`
 
-Tipo: **[BOOL](/windows/win32/winprog/windows-data-types)**
+Tipo: **[BOOL](../../winprog/windows-data-types.md)**
 
-**TRUE** se il livello LRN viene sommato tra canali; **FALSE** se il livello LRN somma le dimensioni spaziali.
+**TRUE** se il livello LRN somma i canali; **FALSE** se il livello LRN somma le dimensioni spaziali.
 
 `LocalSize`
 
-Tipo: **[UINT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../../winprog/windows-data-types.md)**
 
-Numero massimo di elementi da sommare per ogni dimensione (l'area locale viene ritagliata in modo che tutti gli elementi siano entro limiti). Se *CrossChannel* è **TRUE,** si tratta della larghezza e dell'altezza dell'area locale. Se *CrossChannel* è **FALSE,** questo è il numero di elementi nell'area locale. Il valore deve essere almeno 1.
+Numero massimo di elementi da sommare per dimensione (l'area locale viene ritagliata in modo che tutti gli elementi siano entro i limiti). Se *CrossChannel* è **TRUE,** si tratta della larghezza e dell'altezza dell'area locale. Se *CrossChannel* è **FALSE,** questo è il numero di elementi nell'area locale. Il valore deve essere almeno 1.
 
 `Alpha`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
-Valore del parametro di ridimensionamento. È consigliabile impostare il valore predefinito su 0,0001.
+Valore del parametro di ridimensionamento. È consigliabile usare il valore predefinito 0,0001.
 
 `Beta`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
-Valore dell'esponente. È consigliabile impostare il valore predefinito su 0,75.
+Valore dell'esponente. È consigliabile impostare 0,75 come valore predefinito.
 
 `Bias`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
-Valore della distorsione. È consigliabile impostare il valore predefinito su 1.
+Valore di distorsione. È consigliabile usare il valore 1 come impostazione predefinita.
 
 ## <a name="availability"></a>Disponibilità
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputGradientTensor,* *InputTensor* e *OutputGradientTensor* devono avere gli stessi *valori di DataType* *e Sizes.*
+*InputGradientTensor,* *InputTensor* e *OutputGradientTensor* devono avere gli stessi *Tipi di* dati e *Dimensioni*.
 
 ## <a name="tensor-support"></a>Supporto di Tensor
 | Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |

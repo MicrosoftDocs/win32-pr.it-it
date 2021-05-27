@@ -1,9 +1,9 @@
 ---
-title: D1111 utilizzando il livello quando il clip è sufficiente
+title: D1111 uso del livello quando la clip è sufficiente
 ms.assetid: 07fe3c66-15be-408b-a30b-a7f52919c058
-description: Un livello viene utilizzato con una maschera di opacità NULL, un'opacità 1,0 e una maschera geometrica rettangolare allineata asse. L'API di ritaglio push/pop dovrebbe ottenere gli stessi risultati con prestazioni più elevate.
+description: Un livello viene usato con una maschera di opacità NULL, un'opacità 1,0 e una maschera geometrica rettangolare allineata all'asse. L'API Push/Pop Clip dovrebbe ottenere gli stessi risultati con prestazioni più elevate.
 keywords:
-- D1111 utilizzando il livello quando il clip è un Direct2D sufficiente
+- D1111 Using Layer When Clip Is Sufficient Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,39 +13,39 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: a30bbfd7b8ca448928249018a28bc4d6a8a2f57f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e8463cc3940b69e326f13df6be9602dd6073fec0
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103730071"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549906"
 ---
-# <a name="d1111-using-layer-when-clip-is-sufficient"></a>D1111: utilizzo del livello quando il clip è sufficiente
+# <a name="d1111-using-layer-when-clip-is-sufficient"></a>D1111: Uso del livello quando la clip è sufficiente
 
-PERF: viene usato un livello con una maschera di opacità **null** , un'opacità 1,0 e una maschera geometrica rettangolare allineata asse. L'API di ritaglio push/pop dovrebbe ottenere gli stessi risultati con prestazioni più elevate.
+PERF: un livello viene usato con una maschera di opacità **NULL,** un'opacità 1,0 e una maschera geometrica rettangolare allineata all'asse. L'API Push/Pop Clip dovrebbe ottenere gli stessi risultati con prestazioni più elevate.
 
 ## <a name="placeholders"></a>Segnaposto
 
 <dl> <dt>
 
-<span id="interface"></span><span id="INTERFACE"></span>*interfaccia*
+<span id="interface"></span><span id="INTERFACE"></span>*Interfaccia*
 </dt> <dd>
 
 Indirizzo dell'interfaccia.
 
 </dd> </dl> 
 
-|             |             |
+| &nbsp;      |    &nbsp;   |
 |-------------|-------------|
 | Livello di errore | Informazioni |
 
 
 
- 
+ 
 
 ## <a name="examples"></a>Esempio
 
-Il codice seguente usa [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) quando il livello contiene solo una primitiva (un rettangolo) e i campi della struttura [**dei \_ \_ parametri del livello d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) sono impostati sui valori predefiniti. Per i valori predefiniti della struttura **dei \_ \_ parametri del livello d2d1** , vedere [**LayerParameter**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters).
+Il codice seguente usa [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) quando il livello contiene una sola primitiva (un rettangolo) e i campi della struttura [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) sono impostati sui valori predefiniti. Per i valori predefiniti della struttura **D2D1 \_ LAYER \_ PARAMETERS,** vedere [**LayerParameter**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters).
 
 
 ```C++
@@ -59,7 +59,7 @@ Il codice seguente usa [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rend
 
 
 
-Questo esempio produce il seguente messaggio di debug:
+In questo esempio viene generato il messaggio di debug seguente:
 
 ``` syntax
 DEBUG INFO - PERF - A layer is being used with a NULL opacity mask, 1.0 opacity, 
@@ -69,8 +69,8 @@ DEBUG INFO - PERF - A layer is being used with a NULL opacity mask, 1.0 opacity,
 
 ## <a name="possible-causes"></a>Possibili cause
 
-È stato usato un livello quando i metodi [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) e [**PopAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-popaxisalignedclip) sarebbero sufficienti.
+È stato usato un livello quando i metodi [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) e [**PopAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-popaxisalignedclip) sarebbero stati sufficiente.
 
- 
+ 
 
- 
+ 

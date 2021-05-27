@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b39075bddbd191f60a9f9bcbad745e213fe9a978
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 318aa2ffe4ddd47bcb1472f412f85ab785c5049e
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590868"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550076"
 ---
 # <a name="cdn_folderchange-notification-code"></a>Codice di notifica FOLDERCHANGE della rete CDN \_
 
-\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
+\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
 Inviato da una finestra di dialogo **Apri o** **Salva** con nome di tipo Esplora risorse quando viene aperta una nuova cartella.
 
@@ -104,6 +104,4 @@ Per ottenere il percorso della cartella appena aperta, la procedura hook può in
 
 [Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

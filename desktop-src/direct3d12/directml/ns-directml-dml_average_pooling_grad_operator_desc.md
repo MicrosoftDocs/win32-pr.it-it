@@ -45,16 +45,16 @@ api_location:
 - DirectML.h
 api_name:
 - DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC
-ms.openlocfilehash: 5c2803fc300ca862d54a74aee1c864e9097e3d8e
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: aaa2b5d2becac421214afe7c643426c1c93cf899
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803356"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550486"
 ---
 # <a name="dml_average_pooling_grad_operator_desc-structure-directmlh"></a>DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC struttura (directml.h)
 
-Calcola le sfumature di backpropagation per il pooling medio (vedere [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc)).
+Calcola le sfumature di backpropagation per il pooling medio [(vedere DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc)).
 
 Si consideri un DML_AVERAGE_POOLING_OPERATOR_DESC 2x2, senza spaziatura interna e uno stride di 1, che esegue le operazioni seguenti.
 
@@ -65,7 +65,7 @@ InputTensor             OutputTensor
    [7, 8, 9]]]]
 ```
 
-Ogni finestra 2x2 nel tensore di input viene mediata per produrre un elemento dell'output (lettura degli zeri per gli elementi oltre il bordo). Di seguito è riportato un esempio dell'output **DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC** parametri simili.
+Ogni finestra 2x2 nel tensore di input viene mediata per produrre un elemento dell'output (la lettura degli zeri per gli elementi oltre il bordo). Di seguito è riportato un esempio dell'output **DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC** parametri simili.
 
 ```
 InputGradientTensor            OutputGradientTensor
@@ -74,7 +74,7 @@ InputGradientTensor            OutputGradientTensor
                                  [0.75, 1.75,   1]]]]
 ```
 
-Si noti che i valori in *OutputGradientTensor* rappresentano i contributi ponderati di [](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc) tale elemento a *OutputTensor* durante l'operatore DML_AVERAGE_POOLING_OPERATOR_DESC originale.
+Si noti che i valori in *OutputGradientTensor* rappresentano i contributi ponderati di tale elemento *all'elemento OutputTensor* durante l'operatore DML_AVERAGE_POOLING_OPERATOR_DESC originale. [](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc)
 
 > [!IMPORTANT]
 > Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
@@ -101,41 +101,41 @@ struct DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output della retropropagazione di un livello precedente. In genere questo tensore avrebbe le stesse dimensioni *dell'output* del [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc) nel passaggio in avanti.
+Tensore sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output della backpropagazione di un livello precedente. In genere questo tensore ha le stesse dimensioni *dell'output* dell'DML_AVERAGE_POOLING_OPERATOR_DESC [nel](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc) passaggio in avanti.
 
 `OutputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di output contenente le sfumature di backpropagated. In genere questo tensore avrebbe le stesse dimensioni *dell'input* del [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc) nel passaggio in avanti.
+Tensore di output contenente le sfumature backpropagate. In genere, questo tensore ha le stesse dimensioni *dell'input* del [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc) nel passaggio in avanti.
 
 `DimensionCount`
 
 Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Numero di elementi nelle *matrici Strides,* *WindowSize,* *StartPadding* *ed EndPadding.* Questo valore deve essere uguale al conteggio delle dimensioni spaziali. Il numero di dimensioni spaziali è 2 se vengono forniti tensori 4D o 3 se vengono forniti tensori 5D.
+Numero di elementi nelle matrici *Strides*, *WindowSize*, *StartPadding* ed *EndPadding.* Questo valore deve essere uguale al numero di dimensioni spaziali. Il conteggio delle dimensioni spaziali è 2 se vengono forniti tensori 4D oppure 3 se vengono forniti tensori 5D.
 
 `Strides`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Vedere *Strides* in [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc).
 
 `WindowSize`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Vedere *WindowSize* in [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc).
 
 `StartPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Vedere *StartPadding* in [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc).
 
 `EndPadding`
 
-Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (DimensionCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Vedere *EndPadding* in [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/api/directml/ns-directml-dml_average_pooling_operator_desc).
 
@@ -149,7 +149,7 @@ Vedere *IncludePadding* in [DML_AVERAGE_POOLING_OPERATOR_DESC](/windows/win32/ap
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputGradientTensor* e *OutputGradientTensor* devono avere gli stessi *DataType* *e DimensionCount*.
+*InputGradientTensor* e *OutputGradientTensor* devono avere gli stessi *valori di DataType* *e DimensionCount.*
 
 ## <a name="tensor-support"></a>Supporto di Tensor
 | Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |

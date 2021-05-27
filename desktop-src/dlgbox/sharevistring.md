@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79535b66cff62ad0f9d3fd298fdd76bfc9123a3d
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 043bed9edd08269e4e030482cbd44debea3a3695
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590668"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548766"
 ---
 # <a name="sharevistring-message"></a>Messaggio SHAREVISTRING
 
-\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
+\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
 Una **finestra** di dialogo Apri o Salva con nome invia il messaggio registrato **SHAREVISTRING** alla procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)se si verifica una violazione di condivisione per il file selezionato quando l'utente fa clic sul pulsante **OK.** 
 
@@ -112,6 +112,4 @@ Se la routine hook restituisce un valore non definito, la finestra di dialogo ri
 
 [Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

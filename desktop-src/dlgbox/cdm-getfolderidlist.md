@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24d16b53c90c3efc874b8aeabd1b97938a1b21ec
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: bb3ffff4f80dc21ed685e589ed4780b43592c2d2
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590908"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549706"
 ---
 # <a name="cdm_getfolderidlist-message"></a>Messaggio CDM \_ GETFOLDERIDLIST
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
 Recupera l'indirizzo dell'elenco di identificatori di elemento  corrispondente  alla cartella attualmente aperta in una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
@@ -56,7 +56,7 @@ Puntatore al buffer che riceve l'elenco di identificatori di elemento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, il valore restituito è la dimensione, in byte, dell'elenco di identificatori di elemento. Si tratta del numero di byte copiati nel buffer o delle dimensioni del buffer richieste se il buffer è troppo piccolo.
+Se il messaggio ha esito positivo, il valore restituito è la dimensione, in byte, dell'elenco di identificatori di elemento. Si tratta del numero di byte copiati nel buffer o delle dimensioni del buffer necessarie se il buffer è troppo piccolo.
 
 Se si verifica un errore, il valore restituito è minore di zero.
 
@@ -76,7 +76,7 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Commdlg.h (include Windows.h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -101,6 +101,4 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 
 [Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

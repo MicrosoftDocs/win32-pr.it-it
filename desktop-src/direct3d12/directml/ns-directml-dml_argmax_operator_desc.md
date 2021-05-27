@@ -45,18 +45,18 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ARGMAX_OPERATOR_DESC
-ms.openlocfilehash: 0c466975ad3b88973f50bc06676f2197267c56a7
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 4c2852c3d301a12d318c5e3006b26830c6eaa6e1
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803544"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550496"
 ---
 # <a name="dml_argmax_operator_desc-structure-directmlh"></a>DML_ARGMAX_OPERATOR_DESC struttura (directml.h)
 
 Restituisce gli indici degli elementi con valori massimi all'interno di una o più dimensioni del tensore di input.
 
-Ogni elemento di output è il risultato dell'applicazione di *una riduzione argmax* su un subset del tensore di input. La *funzione argmax* restituisce l'indice dell'elemento con valori massimi all'interno di un set di elementi di input. Gli elementi di input coinvolti in ogni riduzione sono determinati dagli assi di input specificati. Analogamente, ogni indice di output è rispetto agli assi di input forniti. Se vengono specificati tutti gli assi di input, l'operatore applica una singola *riduzione argmax* e produce un singolo elemento di output.
+Ogni elemento di output è il risultato dell'applicazione di *una riduzione argmax* su un subset del tensore di input. La *funzione argmax* restituisce l'indice dell'elemento con valori massimi all'interno di un set di elementi di input. Gli elementi di input coinvolti in ogni riduzione sono determinati dagli assi di input forniti. Analogamente, ogni indice di output è rispetto agli assi di input forniti. Se vengono specificati tutti gli assi di input, l'operatore applica una singola *riduzione argmax* e produce un singolo elemento di output.
 
 > [!IMPORTANT]
 > Questa API è disponibile come parte del pacchetto ridistribuibile autonomo DirectML (vedere [Microsoft.AI.DirectML](https://www.nuget.org/packages/Microsoft.AI.DirectML/) versione 1.4 e successive). Vedere anche [Cronologia delle versioni di DirectML.](../dml-version-history.md)
@@ -85,20 +85,20 @@ Tensore da cui leggere.
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore in cui scrivere i risultati. Ogni elemento di output è il risultato di *una riduzione argmax* su un subset di elementi da *InputTensor*. 
+Tensore in cui scrivere i risultati. Ogni elemento di output è il risultato di *una riduzione argmax* su un subset di elementi da *InputTensor.* 
 
 - *DimensionCount deve* corrispondere a *InputTensor.DimensionCount* (viene mantenuta la classificazione del tensore di input).
 - *Le* dimensioni devono corrispondere *a InputTensor.Sizes*, ad eccezione delle dimensioni incluse negli assi *ridotti,* che devono essere di dimensioni 1.
 
 `AxisCount`
 
-Tipo: **[UINT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../../winprog/windows-data-types.md)**
 
 Numero di assi da ridurre. Questo campo determina le dimensioni della *matrice Axes.*
 
 `Axes`
 
-Tipo: \_ Field_size \_ (AxisCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (AxisCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Assi lungo i quali eseguire la riduzione. I valori devono essere nell'intervallo `[0, InputTensor.DimensionCount - 1]` .
 
@@ -156,7 +156,7 @@ OutputTensor: (Sizes:{1, 1}, DataType:UINT32)
 ```
 
 ## <a name="remarks"></a>Commenti
-Le dimensioni del tensore di output devono corrispondere alle dimensioni del tensore di input, ad eccezione degli assi ridotti, che devono essere 1.
+Le dimensioni del tensore di output devono essere le stesse delle dimensioni del tensore di input, ad eccezione degli assi ridotti, che devono essere 1.
 
 Quando *AxisDirection è* [DML_AXIS_DIRECTION_INCREASING](/windows/win32/api/directml/ne-directml-dml_axis_direction), questa API equivale a DML_REDUCE_OPERATOR_DESC [con](/windows/win32/api/directml/ns-directml-dml_reduce_operator_desc) [DML_REDUCE_FUNCTION_ARGMAX](/windows/win32/api/directml/ne-directml-dml_reduce_function).
 
@@ -166,7 +166,7 @@ Un subset di questa funzionalità viene esposto tramite l'operatore [DML_REDUCE_
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_0` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputTensor* e *OutputTensor* devono avere lo stesso *dimensionCount*.
+*InputTensor* e *OutputTensor* devono avere lo stesso *DimensionCount*.
 
 ## <a name="tensor-support"></a>Supporto di Tensor
 | Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |

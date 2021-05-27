@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 137429b8fa7eb29fb96ec579e0240c4c282d0766
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 62d61f88bd7cb6a84a94a3d8a246e6045f88a305
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590768"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550046"
 ---
 # <a name="lbselchstring-message"></a>Messaggio LBSELCHSTRING
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
 Una **finestra di** dialogo Apri o Salva con nome invia il messaggio registrato  **LBSELCHSTRING** alla procedura hook quando la selezione cambia in una delle caselle di riepilogo o delle caselle combinate della finestra di dialogo.
 
@@ -98,7 +98,7 @@ La routine hook deve specificare la costante **LBSELCHSTRING** in una chiamata a
 [**\_SELCHANGE della rete CDN**](cdn-selchange.md)
 </dt> <dt>
 
-[**TYPECHANGE della rete \_ CDN**](cdn-typechange.md)
+[**TIPO DI RETE \_ CDNCHANGE**](cdn-typechange.md)
 </dt> <dt>
 
 [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)
@@ -109,6 +109,4 @@ La routine hook deve specificare la costante **LBSELCHSTRING** in una chiamata a
 
 [Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

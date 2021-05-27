@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_MEAN_VARIANCE_NORMALIZATION1_OPERATOR_DESC
-ms.openlocfilehash: 759bf25d4b6a97e70c6de7708a5c9fd0bccae439
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: ae22b004f1e879eb020ddcfe39a5f26481a508b0
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803402"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549777"
 ---
 # <a name="dml_mean_variance_normalization1_operator_desc-structure-directmlh"></a>DML_MEAN_VARIANCE_NORMALIZATION1_OPERATOR_DESC struttura (directml.h)
 
@@ -90,7 +90,7 @@ Tipo: \_ Maybenull \_ **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-d
 
 Tensore facoltativo contenente i dati di scalabilità.
 
-Se **DML_FEATURE_LEVEL** è minore di **DML_FEATURE_LEVEL_4_0**, le dimensioni di questo tensore devono essere `{ ScaleBatchCount, ChannelCount, ScaleHeight, ScaleWidth }` . Le dimensioni ScaleBatchCount, ScaleHeight e ScaleWidth devono corrispondere a *InputTensor* o essere impostate su 1 per trasmettere automaticamente tali dimensioni nell'input.
+Se **DML_FEATURE_LEVEL** è minore **di DML_FEATURE_LEVEL_4_0**, le dimensioni di questo tensore devono essere `{ ScaleBatchCount, ChannelCount, ScaleHeight, ScaleWidth }` . Le dimensioni ScaleBatchCount, ScaleHeight e ScaleWidth devono corrispondere a *InputTensor* o essere impostate su 1 per trasmettere automaticamente tali dimensioni nell'input.
 
 Se **DML_FEATURE_LEVEL** è maggiore o uguale **a DML_FEATURE_LEVEL_4_0**, qualsiasi dimensione può essere impostata su 1 e trasmessa automaticamente in modo che corrisponda a *InputTensor*.
 
@@ -105,7 +105,7 @@ Tensore facoltativo contenente i dati di Bias.
 
 Se **DML_FEATURE_LEVEL** è minore di **DML_FEATURE_LEVEL_4_0**, le dimensioni di questo tensore devono essere `{ BiasBatchCount, ChannelCount, BiasHeight, BiasWidth }` . Le dimensioni BiasBatchCount, BiasHeight e BiasWidth devono corrispondere a *InputTensor* o essere impostate su 1 per trasmettere automaticamente tali dimensioni nell'input.
 
-Se **DML_FEATURE_LEVEL** è maggiore o uguale a **DML_FEATURE_LEVEL_4_0**, qualsiasi dimensione può essere impostata su 1 e trasmessa automaticamente in modo che corrisponda a *InputTensor*.
+Se **DML_FEATURE_LEVEL** è maggiore o uguale **a DML_FEATURE_LEVEL_4_0**, qualsiasi dimensione può essere impostata su 1 ed essere trasmessa automaticamente in modo che corrisponda a *InputTensor*.
 
 Questo tensore è obbligatorio se *si usa ScaleTensor.*
 
@@ -123,7 +123,7 @@ Numero di assi. Questo campo determina le dimensioni della *matrice Axes.*
 
 `Axes`
 
-Tipo: \_ Dimensione \_ campo \_ (AxisCount) **const [UINT](/windows/win32/winprog/windows-data-types) \*** 
+Tipo: \_ Dimensione \_ campo \_ (AxisCount) **const [UINT](../../winprog/windows-data-types.md) \*** 
 
 Assi lungo i quali calcolare la media e la varianza.
 

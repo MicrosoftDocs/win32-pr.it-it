@@ -1,6 +1,6 @@
 ---
 title: CDM_GETSPEC messaggio (Commdlg.h)
-description: Recupera il nome del file (non incluso il percorso) del file attualmente selezionato in una finestra di dialogo Apri o Salva con nome in stile Esplora risorse.
+description: Recupera il nome file (senza il percorso) del file attualmente selezionato in una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse.
 ms.assetid: 22a67c92-bd24-4cba-bef8-291d241e6ec8
 keywords:
 - CDM_GETSPEC finestre di dialogo del messaggio
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 938536ea7cc72ebb950420ad3d5c9bd35c64db72
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 27eff7e9a14f39554fa6c1a69846bbaca7c39990
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590928"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548876"
 ---
-# <a name="cdm_getspec-message"></a>Messaggio \_ GETSPEC CDM
+# <a name="cdm_getspec-message"></a>Messaggio \_ CDM GETSPEC
 
-\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
+\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
-Recupera il nome del file (non incluso il percorso)  del file attualmente selezionato in una finestra di dialogo Apri o **Salva con** nome in stile Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
+Recupera il nome file (senza il percorso) del file attualmente  selezionato in una finestra di dialogo Apri o **Salva con** nome di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
 
 ```C++
@@ -56,7 +56,7 @@ Puntatore al buffer che riceve il nome del file.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, il valore restituito è la dimensione, in caratteri, della stringa del nome file, incluso il carattere NULL di terminazione. Si tratta del numero di byte o caratteri copiati nel buffer o della dimensione del buffer necessaria se il buffer è troppo piccolo.
+Se il messaggio ha esito positivo, il valore restituito è la dimensione, in caratteri, della stringa del nome file, incluso il carattere NULL di terminazione. Si tratta del numero di byte o caratteri copiati nel buffer o delle dimensioni del buffer richieste se il buffer è troppo piccolo.
 
 Se si verifica un errore, il valore restituito è minore di zero.
 
@@ -99,8 +99,6 @@ int CommDlg_OpenSave_GetSpec(hwnd, lparam, wparam);
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

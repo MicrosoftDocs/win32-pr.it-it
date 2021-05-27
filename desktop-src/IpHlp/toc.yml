@@ -3,7 +3,7 @@
   items:
     - name: Novità dell'helper IP
       href: what-s-new-in-ip-helper.md
-    - name: Informazioni su helper IP
+    - name: Informazioni sull'helper IP
       href: about-ip-helper.md
       items:
         - name: Recupero di informazioni sulla configurazione di rete
@@ -20,27 +20,27 @@
           href: retrieving-information-on-the-internet-protocol-and-the-internet-control-message-protocol.md
         - name: Gestione del routing
           href: managing-routing.md
-        - name: Ricezione della notifica degli eventi di rete
+        - name: Ricezione di notifiche di eventi di rete
           href: receiving-notification-of-network-events.md
-        - name: Recupero di informazioni sul Transmission Control Protocol e sul protocollo del datagramma utente
+        - name: Recupero di informazioni sul Transmission Control Protocol e sul protocollo di datagramma utente
           href: retrieving-information-about-the-transmission-control-protocol-and-the-user-datagram-protocol.md
     - name: Uso dell'helper IP
       href: using-ip-helper.md
       items:
-        - name: Introduzione con helper IP
+        - name: Attività iniziali con l'helper IP
           href: getting-started-with-ip-helper.md
           items:
             - name: Creazione di un'applicazione helper IP di base
               href: creating-a-basic-ip-helper-application.md
             - name: Recupero di informazioni tramite GetNetworkParams
               href: retrieving-information-using-getnetworkparams.md
-            - name: Gestione delle schede di rete con GetAdaptersInfo
+            - name: Gestione delle schede di rete tramite GetAdaptersInfo
               href: managing-network-adapters-using-getadaptersinfo.md
-            - name: Gestione delle interfacce mediante GetInterfaceInfo
+            - name: Gestione delle interfacce tramite GetInterfaceInfo
               href: managing-interfaces-using-getinterfaceinfo.md
             - name: Gestione degli indirizzi IP tramite GetIpAddrTable
               href: managing-ip-addresses-using-getipaddrtable.md
-            - name: 'Gestire lease DHCP con IpReleaseAddress, IpRenewAddress'
+            - name: 'Gestire i lease DHCP con IpReleaseAddress, IpRenewAddress'
               href: managing-dhcp-leases-using-ipreleaseaddress-and-iprenewaddress.md
             - name: 'Gestire gli indirizzi IP con AddIPAddress, DeleteIPAddress'
               href: managing-ip-addresses-using-addipaddress-and-deleteipaddress.md
@@ -48,14 +48,18 @@
               href: retrieving-information-using-getipstatistics.md
             - name: Recupero di informazioni tramite GetTcpStatistics
               href: retrieving-information-using-gettcpstatistics.md
-            - name: Codice sorgente completo dell'applicazione helper IP
+            - name: Codice sorgente dell'applicazione helper IP completo
               href: complete-ip-helper-application-source-code.md
+            - name: Timestamp dei pacchetti
+              href: packet-timestamping.md
     - name: Riferimento dell'helper IP
       href: ip-helper-function-reference.md
       items:
         - name: Callback dell'helper IP
           href: ip-helper-callbacks.md
           items:
+            - name: INTERFACE_TIMESTAMP_CONFIG_CHANGE_CALLBACK
+              href: /windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp
             - name: 'PNETWORK_CONNECTIVITY_HINT_CHANGE_CALLBACK '
               href: /windows/win32/api/netioapi/nc-netioapi-pnetwork_connectivity_hint_change_callback
         - name: Enumerazioni dell'helper IP
@@ -104,6 +108,8 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-cancelmibchangenotify2
             - name: CancelSecurityHealthChangeNotify
               href: /previous-versions/windows/desktop/legacy/bb442512(v=vs.85)
+            - name: CaptureInterfaceHardwareCrossTimestamp
+              href: /windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp
             - name: ConvertInterfaceAliasToLuid
               href: /windows/win32/api/Netioapi/nf-netioapi-convertinterfacealiastoluid
             - name: ConvertInterfaceGuidToLuid
@@ -226,8 +232,12 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-getiftable2
             - name: GetIfTable2Ex
               href: /windows/win32/api/Netioapi/nf-netioapi-getiftable2ex
+            - name: GetInterfaceActiveTimestampCapabilities
+              href: /windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities
             - name: GetInterfaceInfo
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo
+            - name: GetInterfaceSupportedTimestampCapabilities
+              href: /windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities
             - name: GetInvertedIfStackTable
               href: /windows/win32/api/Netioapi/nf-netioapi-getinvertedifstacktable
             - name: GetIpAddrTable
@@ -378,6 +388,8 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-notifyunicastipaddresschange
             - name: ParseNetworkString
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-parsenetworkstring
+            - name: RegisterInterfaceTimestampConfigChange
+              href: /windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange
             - name: ResolveIpNetEntry2
               href: /windows/win32/api/Netioapi/nf-netioapi-resolveipnetentry2
             - name: ResolveNeighbor
@@ -434,6 +446,8 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-setunicastipaddressentry
             - name: UnenableRouter
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-unenablerouter
+            - name: UnregisterInterfaceTimestampConfigChange
+              href: /windows/win32/api/iphlpapi/unregisterinterfacetimestampconfigchange
         - name: Strutture dell'helper IP
           href: ip-helper-structures.md
           items:
@@ -451,6 +465,14 @@
               href: /windows/win32/api/Ipexport/ns-ipexport-icmpv6_echo_reply_lh
             - name: in_addr
               href: /windows/win32/api/Inaddr/ns-inaddr-in_addr
+            - name: INTERFACE_HARDWARE_TIMESTAMP_CAPABILITIES
+              href: /windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_timestamp_capabilities
+            - name: INTERFACE_HARDWARE_CROSSTIMESTAMP
+              href: /windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp
+            - name: INTERFACE_SOFTWARE_TIMESTAMP_CAPABILITIES
+              href: /windows/win32/api/iphlpapi/ns-iphlpapi-interface_software_timestamp_capabilities
+            - name: INTERFACE_TIMESTAMP_CAPABILITIES
+              href: /windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities
             - name: IP_ADAPTER_ADDRESSES
               href: /windows/win32/api/Iptypes/ns-iptypes-ip_adapter_addresses_lh
             - name: IP_ADAPTER_ANYCAST_ADDRESS

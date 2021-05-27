@@ -39,15 +39,15 @@ api_name:
 f1_keywords:
 - DML_RESAMPLE1_OPERATOR_DESC
 - directml/DML_RESAMPLE1_OPERATOR_DESC
-ms.openlocfilehash: ac98813e15ab3dac71a9f8395333160ce37778b0
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 3cf5a49f5c92b835646e146b631abd18b4b19e6b
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804054"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550396"
 ---
 # <a name="dml_resample1_operator_desc-structure-directmlh"></a>DML_RESAMPLE1_OPERATOR_DESC struttura (directml.h)
-Ricampiona gli elementi dal tensore di origine al tensore di destinazione, usando i fattori di scala per calcolare le dimensioni del tensore di destinazione. È possibile usare una modalità di interpolazione lineare o più vicina. L'operatore supporta l'interpolazione su più dimensioni, non solo 2D. È quindi possibile mantenere le stesse dimensioni spaziali, ma interpolare tra canali o tra batch. La relazione tra le coordinate di input e di output è la seguente.
+Ricampiona gli elementi dal tensore di origine al tensore di destinazione, usando i fattori di scala per calcolare le dimensioni del tensore di destinazione. È possibile usare una modalità di interpolazione lineare o più vicina. L'operatore supporta l'interpolazione su più dimensioni, non solo 2D. È quindi possibile mantenere le stesse dimensioni spaziali, ma interpolare tra i canali o tra batch. La relazione tra le coordinate di input e output è la seguente.
 
 `OutputTensorX = (InputTensorX + InputPixelOffset) * Scale + OutputPixelOffset`
 
@@ -105,21 +105,21 @@ Numero di valori nelle matrici a cui puntano *Scales,* *InputPixelOffsets* e *Ou
 
 `Scales`
 
-Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](../../winprog/windows-data-types.md) \***
 
 Le scale da applicare quando si ricampiona l'input, in cui le scale > 1 ridimensionano l'immagine e < 1 ridimensionano l'immagine per tale dimensione. Si noti che le scale non devono essere esattamente `OutputSize / InputSize` . Se l'input dopo il ridimensionamento è maggiore del limite di output, viene ritagliato in base alle dimensioni di output. D'altra parte, se l'input dopo il ridimensionamento è più piccolo del limite di output, i bordi di output sono vincolati.
 
 
 `InputPixelOffsets`
 
-Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](../../winprog/windows-data-types.md) \***
 
 Offset da applicare ai pixel di input prima del ricampionamento. Quando questo valore è , viene usato l'angolo superiore sinistro del pixel anziché il relativo centro, che in genere non dà `0` il risultato previsto. Per ricampionare l'immagine usando il centro dei pixel e ottenere lo stesso comportamento DML_RESAMPLE_OPERATOR_DESC [,](/windows/win32/api/directml/ns-directml-dml_resample_operator_desc)questo valore deve essere `0.5` .
 
 
 `OutputPixelOffsets`
 
-Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Dimensione \_ campo \_ (DimensionCount) **const [FLOAT](../../winprog/windows-data-types.md) \***
 
 Offset da applicare ai pixel di output dopo il ricampionamento. Quando questo valore è , viene usato l'angolo superiore sinistro del pixel anziché il relativo centro, che in genere non dà `0` il risultato previsto. Per ricampionare l'immagine usando il centro dei pixel e ottenere lo stesso comportamento DML_RESAMPLE_OPERATOR_DESC [,](/windows/win32/api/directml/ns-directml-dml_resample_operator_desc)questo valore deve essere `-0.5` .
 

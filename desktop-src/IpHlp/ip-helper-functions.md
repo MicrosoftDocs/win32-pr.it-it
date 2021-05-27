@@ -1,19 +1,19 @@
 ---
+title: Funzioni helper IP
 description: Le funzioni seguenti recuperano e modificano le impostazioni di configurazione per il trasporto TCP/IP nel computer locale.
-ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-title: Funzioni dell'helper IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11c8bff21f41c04bb5aecf505b251fbbe2f8bc62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
+ms.openlocfilehash: ae19803c25512242b613735a060c7beda8c1df70
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760478"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549506"
 ---
 # <a name="ip-helper-functions"></a>Funzioni helper IP
 
-Le funzioni seguenti recuperano e modificano le impostazioni di configurazione per il trasporto TCP/IP nel computer locale. L'elenco categorico seguente può essere utile per determinare quale raccolta di funzioni è più adatta per una determinata attività.
+Le funzioni seguenti recuperano e modificano le impostazioni di configurazione per il trasporto TCP/IP nel computer locale. L'elenco categorico seguente consente di determinare quale raccolta di funzioni è più adatta per una determinata attività.
 
 -   [**GetNetworkConnectivityHint**](/windows/win32/api/netioapi/nf-netioapi-getnetworkconnectivityhint)
 -   [**GetNetworkConnectivityHintForInterface**](/windows/win32/api/netioapi/nf-netioapi-getnetworkconnectivityhintforinterface)
@@ -27,7 +27,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**GetPerAdapterInfo**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getperadapterinfo)
 -   [**GetUniDirectionalAdapterInfo**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getunidirectionaladapterinfo)
 
-## <a name="address-resolution-protocol-arp-management"></a>Gestione ARP (Address Resolution Protocol)
+## <a name="address-resolution-protocol-arp-management"></a>Gestione del protocollo ARP (Address Resolution Protocol)
 
 -   [**CreateIpNetEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createipnetentry)
 -   [**CreateProxyArpEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createproxyarpentry)
@@ -50,10 +50,10 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**ConvertInterfaceLuidToNameW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfaceluidtonamew)
 -   [**ConvertInterfaceNameToLuidA**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluida)
 -   [**ConvertInterfaceNameToLuidW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluidw)
--   [**Se \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
--   [**Se \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
+-   [**if \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
+-   [**if \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
 
-## <a name="interface-management"></a>Gestione interfaccia
+## <a name="interface-management"></a>Gestione dell'interfaccia
 
 -   [**GetFriendlyIfIndex**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getfriendlyifindex)
 -   [**GetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getifentry)
@@ -72,7 +72,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**SetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-setifentry)
 -   [**SetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-setipinterfaceentry)
 
-## <a name="internet-protocol-ip-and-internet-control-message-protocol-icmp"></a>Protocollo IP (Internet Protocol) e Internet Control Message Protocol (ICMP)
+## <a name="internet-protocol-ip-and-internet-control-message-protocol-icmp"></a>Ip (Internet Protocol) e Internet Control Message Protocol (ICMP)
 
 -   [**GetIcmpStatistics**](/windows/win32/api/Iphlpapi/nf-iphlpapi-geticmpstatistics)
 -   [**GetIpStatistics**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getipstatistics)
@@ -108,7 +108,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**NotifyStableUnicastIpAddressTable**](/windows/win32/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 -   [**SetUnicastIpAddressEntry**](/windows/win32/api/Netioapi/nf-netioapi-setunicastipaddressentry)
 
-## <a name="ip-address-string-conversion"></a>Conversione di stringhe di indirizzi IP
+## <a name="ip-address-string-conversion"></a>Conversione della stringa di indirizzo IP
 
 -   [**RtlIpv4AddressToString**](/windows/win32/api/ip2string/nf-ip2string-rtlipv4addresstostringa)
 -   [**RtlIpv4AddressToStringEx**](/windows/win32/api/ip2string/nf-ip2string-rtlipv4addresstostringexw)
@@ -119,7 +119,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**RtlIpv6StringToAddress**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressa)
 -   [**RtlIpv6StringToAddressEx**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressexw)
 
-## <a name="ip-neighbor-address-management"></a>Gestione indirizzi IP adiacenti
+## <a name="ip-neighbor-address-management"></a>Gestione degli indirizzi IP adiacenti
 
 -   [**CreateIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-deleteipnetentry2)
@@ -182,7 +182,15 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**NotifyRouteChange2**](/windows/win32/api/Netioapi/nf-netioapi-notifyroutechange2)
 -   [**NotifyUnicastIpAddressChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyunicastipaddresschange)
 
-## <a name="persistent-port-reservation"></a>Prenotazione porta permanente
+## <a name="packet-timestamping"></a>Timestamp dei pacchetti
+
+-   [**CaptureInterfaceHardwareCrossTimestamp**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp)
+-   [**GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities)
+-   [**GetInterfaceSupportedTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities)
+-   [**RegisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange)
+-   [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/unregisterinterfacetimestampconfigchange)
+
+## <a name="persistent-port-reservation"></a>Prenotazione di porte persistenti
 
 -   [**CreatePersistentTcpPortReservation**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createpersistenttcpportreservation)
 -   [**CreatePersistentUdpPortReservation**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createpersistentudpportreservation)
@@ -201,7 +209,7 @@ Queste funzioni sono definite solo in Windows Server 2003.
 > [!Note]  
 > Queste funzioni non sono disponibili in Windows Vista, né in Windows Server 2008.
 
-## <a name="teredo-ipv6-client-management"></a>Gestione client IPv6 Teredo
+## <a name="teredo-ipv6-client-management"></a>Gestione client Teredo IPv6
 
 -   [**GetTeredoPort**](/windows/win32/api/Netioapi/nf-netioapi-getteredoport)
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)

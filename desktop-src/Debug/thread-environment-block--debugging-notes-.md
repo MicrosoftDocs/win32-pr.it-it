@@ -1,25 +1,25 @@
 ---
-description: Blocco ambiente thread (note di debug)
+description: Blocco dell'ambiente thread (note sul debug)
 ms.assetid: 5040CB82-D32F-4C44-8C03-30238D5B897A
-title: Blocco ambiente thread (note di debug)
+title: Blocco dell'ambiente thread (note sul debug)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d66b04b522bed8bdf7f5a5571c300019e4537b5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5e9397c2d442b09b308c4886c2672e3be58b661c
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877786"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550586"
 ---
-# <a name="thread-environment-block-debugging-notes"></a>Blocco ambiente thread (note di debug)
+# <a name="thread-environment-block-debugging-notes"></a>Blocco dell'ambiente thread (note sul debug)
 
-Il blocco dell'ambiente del thread ([**struttura TEB**](/windows/win32/api/winternl/ns-winternl-teb)) include informazioni di contesto per un thread.
+Il blocco di ambiente thread ([**struttura TEB**](/windows/win32/api/winternl/ns-winternl-teb)) contiene informazioni di contesto per un thread.
 
-Nelle versioni seguenti di Windows, l'offset dell'indirizzo TEB a 32 bit entro il TEB a 64 bit è 0. Può essere usato per accedere direttamente al TEB a 32 bit di un thread WOW64. Questo potrebbe cambiare nelle versioni successive di Windows
+Nelle versioni seguenti di Windows l'offset dell'indirizzo TEB a 32 bit all'interno del TEB a 64 bit è 0. Può essere usato per accedere direttamente al TEB a 32 bit di un thread WOW64. Questa modifica potrebbe cambiare nelle versioni successive di Windows
 
 
 
-|               |                        |
+|  Piattaforma     | Versione                |
 |---------------|------------------------|
 | Windows Vista | Windows Server 2008    |
 | Windows 7     | Windows Server 2008 R2 |
@@ -37,7 +37,7 @@ Nelle versioni seguenti di Windows, l'offset dell'indirizzo TEB a 32 bit entro i
 [Strutture di debug](debugging-structures.md)
 </dt> <dt>
 
-[**\_Contesto WOW64**](/windows/desktop/api/WinNT/ns-winnt-wow64_context)
+[**CONTESTO \_ WOW64**](/windows/desktop/api/WinNT/ns-winnt-wow64_context)
 </dt> </dl>
 
  

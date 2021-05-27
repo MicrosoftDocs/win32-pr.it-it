@@ -1,6 +1,6 @@
 ---
 title: CDM_SETCONTROLTEXT messaggio (Commdlg.h)
-description: Imposta il testo per il controllo specificato in una finestra di dialogo Apri o Salva con nome in stile Esplora risorse.
+description: Imposta il testo per il controllo specificato in una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse.
 ms.assetid: ff0e50b7-a14d-40d1-8576-f93a612f3aa3
 keywords:
 - CDM_SETCONTROLTEXT finestre di dialogo del messaggio
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74d75bb3d3ac486bbb43545df80c67383a7655b8
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 89c82a9144717224871caecf44da352a4e01cac2
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590888"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550126"
 ---
-# <a name="cdm_setcontroltext-message"></a>Messaggio CDM \_ SETCONTROLTEXT
+# <a name="cdm_setcontroltext-message"></a>Messaggio \_ CDM SETCONTROLTEXT
 
-\[A partire da Windows  Vista, le **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla [finestra di dialogo Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
+\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
-Imposta il testo per il controllo  specificato in una finestra di dialogo Apri o **Salva con** nome in stile Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
+Imposta il testo per il controllo specificato in una finestra di dialogo Apri **o** **Salva con** nome di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
 
 ```C++
@@ -43,7 +43,7 @@ Imposta il testo per il controllo  specificato in una finestra di dialogo Apri o
 *wParam* 
 </dt> <dd>
 
-Identificatore del controllo su cui deve essere impostato il testo.
+Identificatore del controllo sul quale deve essere impostato il testo.
 
 </dd> <dt>
 
@@ -97,8 +97,6 @@ void CommDlg_OpenSave_SetControlText(hwnd, wparam, lparam)
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

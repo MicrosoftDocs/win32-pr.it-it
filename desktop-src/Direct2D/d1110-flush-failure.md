@@ -1,9 +1,9 @@
 ---
 title: Errore di scaricamento D1110
 ms.assetid: 44f122b0-08e3-4f63-a575-0f3619144823
-description: Una chiamata di scaricamento da una destinazione di rendering non è riuscita
+description: Una chiamata flush da una destinazione di rendering non è riuscita
 keywords:
-- Direct2D errore di scaricamento D1110
+- Errore di scaricamento D1110 Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 4821ba291f3adc8d22d1d1298a88c74b47dc648b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 721fb27e8cfd5e83f94b93079ee66e4a1c35992d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399695"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549926"
 ---
-# <a name="d1110-flush-failure"></a>D1110: errore di svuotamento
+# <a name="d1110-flush-failure"></a>D1110: Errore di scaricamento
 
-Una chiamata di scaricamento da una destinazione di rendering non è riuscita \[  \] . Tag \[ *tag1*, *Tag2* \] .
+Una chiamata Flush da parte di una risorsa di destinazione di rendering non \[ *è riuscita.* \] Tag \[ *tag1,* *tag2* \] .
 
 ## <a name="placeholders"></a>Segnaposto
 
 <dl> <dt>
 
-<span id="resource"></span><span id="RESOURCE"></span>*risorse*
+<span id="resource"></span><span id="RESOURCE"></span>*Risorsa*
 </dt> <dd>
 
 Indirizzo della destinazione di rendering.
@@ -38,28 +38,28 @@ Indirizzo della destinazione di rendering.
 <span id="tag1"></span><span id="TAG1"></span>*tag1*
 </dt> <dd>
 
-Primo valore del tag. Per ulteriori informazioni, vedere i [**tag**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) .
+Primo valore del tag. Per [**altre informazioni, vedere SetTags.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags)
 
 </dd> <dt>
 
-<span id="tag2"></span><span id="TAG2"></span>*Tag2*
+<span id="tag2"></span><span id="TAG2"></span>*tag2*
 </dt> <dd>
 
-Il secondo valore del tag. Per ulteriori informazioni, vedere i [**tag**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) .
+Secondo valore del tag. Per [**altre informazioni, vedere SetTags.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags)
 
 </dd> </dl> 
 
-|             |         |
+| &nbsp;      |  &nbsp; |
 |-------------|---------|
 | Livello di errore | Avviso |
 
 
 
- 
+ 
 
 ## <a name="examples"></a>Esempio
 
-**Esempio 1:** Il codice seguente mostra che una chiamata di progetto è in uno stato non valido. Per evitare il messaggio di avviso, usare [**SetAntialiasMode**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-setantialiasmode) per impostare \_ l' \_ antialiasing della modalità antialias d2d1 \_ prima di una chiamata a [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md) .
+**Esempio 1:** Il codice seguente mostra che una chiamata di disegno è in uno stato non valido. Per evitare il messaggio di avviso, usare [**SetAntialiasMode**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-setantialiasmode) per impostare D2D1 \_ \_ ANTIALIAS MODE \_ ANTIALIASED prima di [**una chiamata a FillOpacityMask.**](id2d1rendertarget-fillopacitymask.md)
 
 
 ```C++
@@ -95,13 +95,13 @@ Il secondo valore del tag. Per ulteriori informazioni, vedere i [**tag**](/windo
 
 
 
-Questo esempio produce il seguente messaggio di debug:
+In questo esempio viene generato il messaggio di debug seguente:
 
 ``` syntax
 D2D DEBUG WARNING - Flush call on render target failed [88990001]. Tags [0, 0].
 ```
 
-**Esempio 2:** Il codice seguente mostra che lo [**scaricamento**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato dopo la chiamata a [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) .
+**Esempio 2:** Il codice seguente mostra che [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato dopo la [**chiamata di EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
 
 
 ```C++
@@ -114,7 +114,7 @@ D2D DEBUG WARNING - Flush call on render target failed [88990001]. Tags [0, 0].
 
 
 
-Questo esempio produce il seguente messaggio di debug:
+In questo esempio viene generato il messaggio di debug seguente:
 
 ``` syntax
 DEBUG WARNING - A Flush call by a render target failed [88990001]. Tags [0, 0].
@@ -122,12 +122,12 @@ DEBUG WARNING - A Flush call by a render target failed [88990001]. Tags [0, 0].
 
 ## <a name="possible-causes"></a>Possibili cause
 
-La chiamata di [**scaricamento**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) può non riuscire per uno dei due motivi. Potrebbe non riuscire perché il metodo è stato chiamato al [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)di fuori della / [**chiamata EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) BeginDraw o potrebbe non riuscire a causa di un errore prodotto da una delle operazioni di destinazione di rendering elaborate dall'ultima chiamata di **scaricamento** o dalla chiamata a **EndDraw** . Per risolvere il problema, l'applicazione deve determinare la causa dell'errore e intraprendere l'azione appropriata.
+La [**chiamata Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) può avere esito negativo per uno dei due motivi seguenti. L'operazione potrebbe non riuscire perché [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)il metodo è stato chiamato all'esterno della chiamata / [**BeginDraw EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) oppure perché si è verificato un errore generato da una delle operazioni di destinazione di rendering elaborate dopo l'ultima chiamata **Flush** o **EndDraw.** Per risolvere il problema, l'applicazione deve determinare la causa dell'errore ed eseguire l'azione appropriata.
 
 ## <a name="fixes"></a>Correzioni
 
-Esistono molti motivi per cui una chiamata di [**scaricamento**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) potrebbe non riuscire. L'applicazione deve determinare la causa dell'errore e intraprendere l'azione appropriata.
+Esistono molti motivi per cui una [**chiamata Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) potrebbe non riuscire. L'applicazione deve determinare la causa dell'errore ed eseguire l'azione appropriata.
 
- 
+ 
 
- 
+ 

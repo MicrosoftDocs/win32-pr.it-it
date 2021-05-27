@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bd5706e0bccf0b61c0737ef54d6e227e5593bc9
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 0b0b1169a2777d5a5f82925366c6723af741706d
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590858"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550116"
 ---
 # <a name="cdm_setdefext-message"></a>Messaggio \_ CDM SETDEFEXT
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
 Imposta l'estensione di file predefinita per una finestra di dialogo Apri **o** **Salva con** nome di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
@@ -99,6 +99,4 @@ void CommDlg_OpenSave_SetDefExt(hwnd, lparam)
 
 [Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

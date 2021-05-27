@@ -1,6 +1,6 @@
 ---
 title: CDN_SELCHANGE di notifica (Commdlg.h)
-description: Inviato da una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse quando la selezione viene modificata nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
+description: Inviato da una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse quando la selezione cambia nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
 ms.assetid: e622babf-7024-45c5-a8db-f80896f69140
 keywords:
 - CDN_SELCHANGE di dialogo del codice di notifica
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5a5c7aed47d02fb7c7fcf2232b144e7a99e7c46
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 8c21aa9dda117c74707b3c890ad96e017b45bcc0
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590754"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549226"
 ---
 # <a name="cdn_selchange-notification-code"></a>Codice di notifica \_ SELCHANGE della rete CDN
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](/windows/win32/shell/common-file-dialog). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
 Inviato da una  finestra  di dialogo Apri o Salva con nome di tipo Esplora risorse quando la selezione cambia nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
 
@@ -107,6 +107,4 @@ Per ottenere il nome del file o della cartella appena selezionata, la procedura 
 
 [Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
-
- 
 

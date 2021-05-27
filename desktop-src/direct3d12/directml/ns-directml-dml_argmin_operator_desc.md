@@ -45,12 +45,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_ARGMIN_OPERATOR_DESC
-ms.openlocfilehash: 2e12a81593504a4eb7a0917e545bfa20c70647ff
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: da270ea5354e361067335ba1c789efe18310437a
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804077"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550476"
 ---
 # <a name="dml_argmin_operator_desc-structure-directmlh"></a>DML_ARGMIN_OPERATOR_DESC struttura (directml.h)
 
@@ -92,13 +92,13 @@ Tensore in cui scrivere i risultati. Ogni elemento di output è il risultato di 
 
 `AxisCount`
 
-Tipo: **[UINT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../../winprog/windows-data-types.md)**
 
 Numero di assi da ridurre. Questo campo determina le dimensioni della *matrice Axes.*
 
 `Axes`
 
-Tipo: \_ Field_size \_ (AxisCount) **const [UINT](/windows/win32/winprog/windows-data-types) \***
+Tipo: \_ Field_size \_ (AxisCount) **const [UINT](../../winprog/windows-data-types.md) \***
 
 Assi lungo i quali eseguire la riduzione. I valori devono essere nell'intervallo `[0, InputTensor.DimensionCount - 1]` .
 

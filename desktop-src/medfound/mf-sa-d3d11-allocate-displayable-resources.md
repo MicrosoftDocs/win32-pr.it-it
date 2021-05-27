@@ -1,18 +1,18 @@
 ---
-description: Specifica se l'allocatore di esempio di MFT (SA) deve allocare la trama Direct3D sottostante usando il flag D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.
-title: MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES (Mftransform. h)
+description: Specifica se l'allocatore di esempio (SA) di MFT deve allocare la trama Direct3D sottostante usando il flag D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.
+title: MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES (Mftransform.h)
 ms.topic: reference
 ms.date: 03/31/2018
-ms.openlocfilehash: ac70ee8c3015a2e08df2ee78b8051723707a1686
-ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
+ms.openlocfilehash: fedcfbe98344dd9b424c1a8ce90e847e98f1af51
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107224026"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548706"
 ---
-# <a name="mf_sa_d3d_allocate_displayable_resources-attribute"></a>\_Attributo per \_ l' \_ allocazione di \_ risorse visualizzabili \_ da MF SA D3D
+# <a name="mf_sa_d3d_allocate_displayable_resources-attribute"></a>Attributo MF \_ SA \_ D3D \_ ALLOCATE \_ DISPLAYABLE \_ RESOURCES
 
-Specifica se l'allocatore di esempio di MFT (SA) deve allocare la trama Direct3D sottostante usando il flag [D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) . 
+Specifica se l'allocatore di esempio (SA) di MFT deve allocare la trama Direct3D sottostante usando il [flag](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE. 
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -20,16 +20,16 @@ Specifica se l'allocatore di esempio di MFT (SA) deve allocare la trama Direct3D
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è disponibile a stella con Windows 10 Preview Build 14383. 
+Questo attributo è disponibile fissando Windows 10 build 20348. 
 
 > [!NOTE]
-> Il **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** campo membro dell'enumerazione [D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) sarà disponibile in una versione futura dell'SDK.
+> Il **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** membro dell'enumerazione [D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) sarà disponibile in una versione futura dell'SDK.
 
-Il livello piattaforma Media Foundation imposta l'attributo **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** durante il rendering del video. Un'app può anche scegliere di impostare questo attributo se desidera implementare il proprio renderer video e usare le risorse visualizzabili con D3D11. 
+Il Media Foundation di piattaforma imposta **l'attributo MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** durante il rendering del video. Un'app può anche scegliere di impostare questo attributo se vuole implementare il proprio renderer video e usare le risorse visualizzabili D3D11. 
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio di codice riportato di seguito viene illustrato l'utilizzo dell'attributo **MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES** .
+Nell'esempio di codice seguente viene illustrato l'utilizzo **dell'attributo MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES.**
 
 ```cpp
 class DecoderMFT : public IMFAttributes, public IMFTransform 
@@ -132,8 +132,8 @@ private:
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 Preview Build 14383<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10 build 20348<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -141,16 +141,16 @@ private:
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[Attributi di Media Foundation](media-foundation-attributes.md)
+[Media Foundation attributi](media-foundation-attributes.md)
 </dt> </dl>
 
  

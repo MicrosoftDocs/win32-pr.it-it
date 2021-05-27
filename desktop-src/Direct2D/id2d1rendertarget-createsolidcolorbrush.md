@@ -3,7 +3,7 @@ title: Metodi ID2D1RenderTarget CreateSolidColorBrush (D2d1.h)
 description: Crea un nuovo oggetto ID2D1SolidColorBrush che può essere usato per disegnare aree con un colore a tinta unita.
 ms.assetid: 3dbfe26f-cf36-47b0-925e-4934e0d7c390
 keywords:
-- Metodi CreateSolidColorBrush Direct2D
+- Metodi di CreateSolidColorBrush Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: f49876a5eb9d7700aeb347e5168ca3e8c1e239e0
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: 9147dbdfe53aa21c5fa77849e3599ded69c8f243
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380625"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549386"
 ---
 # <a name="id2d1rendertargetcreatesolidcolorbrush-methods"></a>Metodi id2D1RenderTarget::CreateSolidColorBrush
 
@@ -29,9 +29,9 @@ Crea un nuovo [**oggetto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1
 
 | Metodo                                                                                                                                                                                                           | Descrizione                                                                                                                             |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ F&,ID2D1SolidColorBrush \* \* )**](https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx)                                                      | Crea un nuovo [**oggetto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) con il colore specificato e un'opacità di base di 1,0f. <br/> |
-| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ F&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1SolidColorBrush \* \* )**](https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx)   | Crea un nuovo [**oggetto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) con il colore e l'opacità specificati. <br/>                |
-| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ \* F,D2D1 \_ BRUSH \_ \* PROPERTIES,ID2D1SolidColorBrush \* \* )**](https://msdn.microsoft.com/library/Dd371867(v=VS.85).aspx) | Crea un nuovo [**oggetto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) con il colore e l'opacità specificati. <br/>                |
+| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ F&,ID2D1SolidColorBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush))                                                      | Crea un nuovo [**oggetto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) con il colore specificato e un'opacità di base di 1,0f. <br/> |
+| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ F&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1SolidColorBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush))   | Crea un nuovo [**oggetto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) con il colore e l'opacità specificati. <br/>                |
+| [**CreateSolidColorBrush(D2D1 \_ COLOR \_ \* F,D2D1 \_ BRUSH \_ \* PROPERTIES,ID2D1SolidColorBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) | Crea un nuovo [**oggetto ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)) con il colore e l'opacità specificati. <br/>                |
 
 
 
@@ -51,7 +51,7 @@ Per un esempio, vedere [Come creare un pennello a tinta unita.](how-to-create-a-
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 

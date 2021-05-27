@@ -1,5 +1,5 @@
 ---
-title: Panoramica sui livelli
+title: Panoramica dei livelli
 description: Descrive le nozioni di base dei livelli Direct2D.
 ms.assetid: 22d161fb-8470-49cc-a523-309f90643ea9
 keywords:
@@ -7,21 +7,21 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 0e86b32296718a975ebabccd5fc4ef0ee30cf289
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ac68ba25d1e8f35c5a41daec4d7a5295235a5d98
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963287"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549186"
 ---
-# <a name="layers-overview"></a>Panoramica sui livelli
+# <a name="layers-overview"></a>Panoramica dei livelli
 
 Questa panoramica descrive le nozioni di base sull'uso dei livelli Direct2D. Include le sezioni seguenti:
 
 -   [Che cosa sono i livelli?](#what-are-layers)
 -   [Livelli in Windows 8 e versioni successive](#layers-in-windows-8-and-later)
     -   [ID2D1DeviceContext e PushLayer](#id2d1devicecontext-and-pushlayer)
-    -   [D2D1 \_ Layer \_ PARAMETERS1 e d2d1 \_ Layer \_ OPTIONS1](/windows)
+    -   [D2D1 \_ LAYER \_ PARAMETERS1 e D2D1 \_ LAYER \_ OPTIONS1](/windows)
     -   [Modalità di fusione](#blend-modes)
     -   [Interazione](#interoperation)
 -   [Creazione di livelli](#creating-layers)
@@ -30,81 +30,81 @@ Questa panoramica descrive le nozioni di base sull'uso dei livelli Direct2D. Inc
 -   [Maschere di opacità](#opacity-masks)
 -   [Alternative ai livelli](#alternatives-to-layers)
 -   [Ritaglio di una forma arbitraria](#clipping-an-arbitrary-shape)
-    -   [Clip allineate asse](#axis-aligned-clips)
+    -   [Clip allineate all'asse](#axis-aligned-clips)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="what-are-layers"></a>Che cosa sono i livelli?
 
-I livelli, rappresentati da oggetti [**ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) , consentono a un'applicazione di modificare un gruppo di operazioni di disegno. Si usa un livello eseguendone il push in una destinazione di rendering. Le successive operazioni di disegno da parte della destinazione di rendering vengono indirizzate al livello. Una volta terminato il livello, si "estrae" il livello dalla destinazione di rendering, che compone nuovamente il contenuto del livello nella destinazione di rendering.
+I livelli, rappresentati da [**oggetti ID2D1Layer,**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) consentono a un'applicazione di modificare un gruppo di operazioni di disegno. È possibile usare un livello "push" in una destinazione di rendering. Le successive operazioni di disegno eseguite dalla destinazione di rendering vengono indirizzate al livello. Dopo aver completato il livello, si "pop" il livello dalla destinazione di rendering, che composito il contenuto del livello alla destinazione di rendering.
 
-Analogamente ai pennelli, i livelli sono risorse dipendenti dal dispositivo create dalle destinazioni di rendering. I livelli possono essere usati in qualsiasi destinazione di rendering nello stesso dominio delle risorse che contiene la destinazione di rendering che l'ha creata. Tuttavia, una risorsa livello può essere usata solo da una destinazione di rendering alla volta. Per ulteriori informazioni sulle risorse, vedere [Panoramica delle risorse](resources-and-resource-domains.md).
+Analogamente ai pennelli, i livelli sono risorse dipendenti dal dispositivo create dalle destinazioni di rendering. I livelli possono essere usati in qualsiasi destinazione di rendering nello stesso dominio di risorse che contiene la destinazione di rendering che la ha creata. Tuttavia, una risorsa livello può essere usata solo da una destinazione di rendering alla volta. Per altre informazioni sulle risorse, vedere Panoramica [delle risorse](resources-and-resource-domains.md).
 
-Sebbene i livelli offrano una tecnica di rendering potente per produrre effetti interessanti, un numero eccessivo di livelli in un'applicazione può influire negativamente sulle prestazioni, a causa dei diversi costi associati alla gestione di livelli e risorse del livello. Ad esempio, il costo del riempimento o della cancellazione del livello e la successiva fusione, soprattutto sull'hardware di fascia superiore. Quindi, esiste il costo della gestione delle risorse del livello. Se questi vengono riallocati di frequente, i blocchi risultanti rispetto alla GPU saranno il problema più significativo. Quando si progetta un'applicazione, provare a massimizzare il riutilizzo delle risorse di livello.
+Anche se i livelli offrono una potente tecnica di rendering per produrre effetti interessanti, un numero eccessivo di livelli in un'applicazione può influire negativamente sulle prestazioni, a causa dei vari costi associati alla gestione dei livelli e delle risorse del livello. Ad esempio, è necessario riempire o cancellare il livello e quindi combinarlo nuovamente, in particolare nell'hardware di fascia superiore. È quindi necessario gestire le risorse del livello. Se si riallocano questi elementi di frequente, il problema più significativo sarà lo stallo risultante rispetto alla GPU. Quando si progetta l'applicazione, provare a ottimizzare il riutilizzo delle risorse del livello.
 
 ## <a name="layers-in-windows-8-and-later"></a>Livelli in Windows 8 e versioni successive
 
-In Windows 8 sono state introdotte nuove API correlate ai livelli che semplificano, migliorano le prestazioni di e aggiungono funzionalità a livelli.
+Windows 8 sono state introdotte nuove API correlate ai livelli che semplificano, migliorano le prestazioni di e aggiungono funzionalità ai livelli.
 
 ### <a name="id2d1devicecontext-and-pushlayer"></a>ID2D1DeviceContext e PushLayer
 
-L'interfaccia [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) è derivata dall'interfaccia [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) ed è fondamentale per visualizzare il contenuto Direct2D in Windows 8. per ulteriori informazioni su questa interfaccia, vedere [dispositivi e contesti di dispositivo](devices-and-device-contexts.md). Con l'interfaccia del contesto di dispositivo, è possibile ignorare la chiamata al metodo [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e quindi passare null al metodo [**ID2D1DeviceContext::P ushlayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) . Direct2D gestisce automaticamente la risorsa livello e può condividere le risorse tra i livelli e i grafici degli effetti.
+[**L'interfaccia ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) deriva dall'interfaccia [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) ed è fondamentale per visualizzare il contenuto Direct2D in Windows 8. Per altre informazioni su questa interfaccia, vedere [Dispositivi](devices-and-device-contexts.md)e contesti di dispositivo . Con l'interfaccia del contesto di dispositivo, è possibile ignorare la chiamata al metodo [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e quindi passare NULL al metodo [**ID2D1DeviceContext::P ushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) Direct2D gestisce automaticamente la risorsa livello e può condividere le risorse tra i livelli e i grafici degli effetti.
 
-### <a name="d2d1_layer_parameters1-and-d2d1_layer_options1"></a>D2D1 \_ Layer \_ PARAMETERS1 e d2d1 \_ Layer \_ OPTIONS1
+### <a name="d2d1_layer_parameters1-and-d2d1_layer_options1"></a>D2D1 \_ LAYER \_ PARAMETERS1 e D2D1 \_ LAYER \_ OPTIONS1
 
-La [**struttura \_ \_ PARAMETERS1 di livello d2d1**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) è uguale a quella dei [**\_ \_ parametri del livello d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters), ad eccezione del fatto che il membro finale della struttura è ora un'enumerazione [**d2d1 \_ Layer \_ OPTIONS1**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1) .
+La [**struttura D2D1 \_ LAYER \_ PARAMETERS1**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) è uguale a [**D2D1 \_ LAYER \_ PARAMETERS,**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters)ad eccezione del fatto che il membro finale della struttura è ora [**un'enumerazione D2D1 \_ LAYER \_ OPTIONS1.**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1)
 
-[**D2d1 \_ Il livello \_ OPTIONS1**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1) non dispone di un'opzione ClearType e prevede due opzioni diverse che è possibile utilizzare per migliorare le prestazioni:
+[**D2D1 \_ LAYER \_ OPTIONS1 non**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1) ha l'opzione ClearType e ha due diverse opzioni che è possibile usare per migliorare le prestazioni:
 
--   [**D2d1 \_ LIVELLO \_ OPTIONS1 \_ Inizializza \_ da \_ background**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1): Direct2D esegue il rendering delle primitive nel livello senza cancellarlo con un nero trasparente. Questo non è il valore predefinito, ma nella maggior parte dei casi produce prestazioni migliori.
+-   [**D2D1 \_ LAYER \_ OPTIONS1 \_ INITIALIZE FROM \_ \_ BACKGROUND:**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1)Direct2D esegue il rendering delle primitive al livello senza cancellarlo con nero trasparente. Questa non è l'impostazione predefinita, ma nella maggior parte dei casi comporta prestazioni migliori.
 
--   [**D2d1 \_ LAYER \_ OPTIONS1 \_ Ignore \_ Alpha**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1): se la superficie sottostante è impostata su [**d2d1 \_ Alpha \_ mode \_ Ignore**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode), questa opzione consente a Direct2D di evitare di modificare il canale alfa del livello. Non utilizzarlo in altri casi.
+-   [**D2D1 \_ LAYER \_ OPTIONS1 \_ IGNORE \_ ALPHA**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1): se la superficie sottostante è impostata su [**D2D1 \_ ALPHA MODE \_ \_ IGNORE,**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode)questa opzione consente a Direct2D di evitare di modificare il canale alfa del livello. Non usarlo in altri casi.
 
 ### <a name="blend-modes"></a>Modalità di fusione
 
-A partire da Windows 8, il contesto di dispositivo ha una [**modalità di Blend primitiva**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) che determina il modo in cui ogni primitiva viene fusa con la superficie di destinazione. Questa modalità si applica anche ai livelli quando si chiama il metodo [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) .
+A partire Windows 8, il contesto di dispositivo ha una modalità di blend [**primitiva**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) che determina la modalità di fusione di ogni primitiva con la superficie di destinazione. Questa modalità si applica anche ai livelli quando si chiama il [**metodo PushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))
 
-Se, ad esempio, si usa un livello per ritagliare le primitive con trasparenza, impostare la modalità di [**\_ \_ \_ copia primitiva di d2d1**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) nel contesto di dispositivo per ottenere risultati appropriati. La modalità di copia rende il contesto di dispositivo lineare interpolare tutti i 4 canali dei colori, incluso il canale alfa, di ogni pixel con il contenuto della superficie di destinazione in base alla maschera geometrica del livello.
+Ad esempio, se si usa un livello per ritagliare primitive con trasparenza, impostare la modalità [**D2D1 \_ PRIMITIVE \_ BLEND \_ COPY**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) nel contesto di dispositivo per ottenere risultati corretti. La modalità di copia rende lineare il contesto di dispositivo interpolando tutti e 4 i canali di colore, incluso il canale alfa, di ogni pixel con il contenuto della superficie di destinazione in base alla maschera geometrica del livello.
 
 ### <a name="interoperation"></a>Interazione
 
-A partire da Windows 8, Direct2D supporta l'interoperabilità con Direct3D e GDI mentre viene eseguito il push di un livello o di una clip. È possibile chiamare [**ID2D1GdiInteropRenderTarget:: GetDC**](/windows/win32/api/d2d1/nf-d2d1-id2d1gdiinteroprendertarget-getdc) mentre viene eseguito il push di un livello per interagire con GDI. È possibile chiamare [**ID2D1DeviceContext:: Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) e quindi eseguire il rendering sulla superficie sottostante per interagire con Direct3D. È responsabilità dell'utente eseguire il rendering all'interno del livello o della clip con Direct3D o GDI. Se si tenta di eseguire il rendering al di fuori del livello o di ritagliare i risultati non sono definiti.
+A partire Windows 8, Direct2D supporta l'interoperabilità con Direct3D e GDI mentre viene premuto un livello o un clip. Si chiama [**ID2D1GdiInteropRenderTarget::GetDC**](/windows/win32/api/d2d1/nf-d2d1-id2d1gdiinteroprendertarget-getdc) mentre viene inserito un livello per interagire con GDI. Chiamare [**ID2D1DeviceContext::Flush e**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) quindi eseguire il rendering sulla superficie sottostante per interagire con Direct3D. È responsabilità dell'utente eseguire il rendering all'interno del livello o del clip con Direct3D o GDI. Se si tenta di eseguire il rendering all'esterno del livello o di ritagliare i risultati non sono definiti.
 
 ## <a name="creating-layers"></a>Creazione di livelli
 
-Per lavorare con i livelli è necessaria una certa familiarità con i metodi [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)), [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) e con la struttura dei [**\_ \_ parametri del livello d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) , che contiene un set di dati parametrici che definiscono il modo in cui è possibile utilizzare il livello. Nell'elenco seguente vengono descritti i metodi e la struttura.
+L'uso dei livelli richiede familiarità con i metodi [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)), [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) e con la struttura [**D2D1 \_ LAYER \_ PARAMETERS,**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) che contiene un set di dati parametrici che definisce come usare il livello. Nell'elenco seguente vengono descritti i metodi e la struttura .
 
--   Chiamare il metodo [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) per creare una risorsa livello.
+-   Chiamare il [**metodo CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) per creare una risorsa di livello.
     > [!Note]  
-    > A partire da Windows 8, è possibile ignorare la chiamata al metodo [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e quindi passare null al metodo [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) sull'interfaccia [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) . Si tratta di una soluzione più semplice che consente a Direct2D di gestire automaticamente la risorsa di livello e di condividere le risorse tra i livelli e i grafici di effetto.
+    > A partire Windows 8, è possibile ignorare la chiamata al [**metodo CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e quindi passare NULL al metodo [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) nell'interfaccia [**ID2D1DeviceContext.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Questo approccio è più semplice e consente a Direct2D di gestire automaticamente la risorsa del livello e di condividere le risorse tra i livelli e i grafici degli effetti.
 
-     
+     
 
--   Dopo che la destinazione di rendering ha iniziato a disegnare (dopo che è stato chiamato il metodo [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) ), è possibile usare il metodo [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) . Il metodo **PushLayer** aggiunge il livello specificato alla destinazione di rendering, in modo che la destinazione riceva tutte le operazioni di disegno successive fino a quando non viene chiamato [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) . Questo metodo accetta un oggetto [**ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) restituito chiamando [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e un *layerParameters* nella struttura dei [**\_ \_ parametri del livello d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) . Nella tabella seguente vengono descritti i campi della struttura. 
+-   Dopo che la destinazione di rendering ha iniziato a disegnare (dopo la chiamata al metodo [**BeginDraw),**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) è possibile usare il [**metodo PushLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) Il **metodo PushLayer** aggiunge il livello specificato alla destinazione di rendering, in modo che la destinazione riceva tutte le operazioni di disegno successive fino a quando non viene chiamato [**PopLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) Questo metodo accetta un [**oggetto ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) restituito chiamando [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e *un oggetto layerParameters* nella [**struttura D2D1 \_ LAYER \_ PARAMETERS.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) Nella tabella seguente vengono descritti i campi della struttura . 
 
-    | Campo                 | Descrizione                                                                                                                                                                                                                                                                 |     |
-    |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-    | **contentBounds**     | Limiti del contenuto del livello. Non è garantito il rendering del contenuto al di fuori di questi limiti. Il valore predefinito di questo parametro è [**InfiniteRect**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect). Quando viene utilizzato il valore predefinito, i limiti del contenuto vengono effettivamente considerati i limiti della destinazione di rendering. |     |
-    | **geometricMask**     | Opzionale Area, definita da un [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry), a cui deve essere ritagliato il livello. Impostare su **null** se il livello non deve essere ritagliato in una geometria.                                                                                           |     |
-    | **maskAntialiasMode** | Valore che specifica la modalità di anti-aliasing per la maschera geometrica specificata dal campo **geometricMask** .                                                                                                                                                               |     |
-    | **maskTransform**     | Valore che specifica la trasformazione applicata alla maschera geometrica quando si compone il livello. Questa operazione è relativa alla trasformazione globale.                                                                                                                               |     |
-    | **opacità**           | Valore di opacità del livello. L'opacità di ogni risorsa nel livello viene moltiplicata con questo valore durante la composizione della destinazione.                                                                                                                                     |     |
-    | **opacityBrush**      | Opzionale Pennello usato per modificare l'opacità del livello. Il pennello viene mappato al livello e il canale alfa di ogni pixel del pennello mappato viene moltiplicato per il pixel del livello corrispondente. Impostare su **null** se il livello non deve avere una maschera di opacità.    |     |
-    | **layerOptions**      | Valore che specifica se il livello intende eseguire il rendering del testo con anti-aliasing ClearType. Per impostazione predefinita, questo parametro è disattivato. La sua attivazione consente il corretto funzionamento di ClearType, ma comporta una velocità di rendering leggermente più lenta.                                          |     |
+    | Campo                 | Descrizione|
+    |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | **contentBounds**     | Limiti di contenuto del livello. Il rendering del contenuto esterno a questi limiti è garantito. Il valore predefinito di questo parametro [**è InfiniteRect**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect). Quando viene usato il valore predefinito, i limiti di contenuto vengono effettivamente presi come limiti della destinazione di rendering. |
+    | **geometricMask**     | (Facoltativo) Area, definita da [**id2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry)a cui deve essere ritagliato il livello. Impostare su **NULL** se il livello non deve essere ritagliato in una geometria. |
+    | **maskAntialiasMode** | Valore che specifica la modalità di anti-aliasing per la maschera geometrica specificata dal **campo geometricMask.** |
+    | **maskTransform**     | Valore che specifica la trasformazione applicata alla maschera geometrica durante la composizione del livello. Si tratta di un valore relativo alla trasformazione del mondo.  |
+    | **Opacità**           | Valore di opacità del livello. L'opacità di ogni risorsa nel livello viene moltiplicata con questo valore durante la composizione nella destinazione.  |
+    | **Oggetto opacityBrush**      | (Facoltativo) Pennello utilizzato per modificare l'opacità del livello. Il pennello viene mappato al livello e il canale alfa di ogni pixel del pennello mappato viene moltiplicato rispetto al pixel del livello corrispondente. Impostare su **NULL se** il livello non deve avere una maschera di opacità.   |
+    | **opzioni di livello**      | Valore che specifica se il livello intende eseguire il rendering del testo con l'anti-aliasing ClearType. Per impostazione predefinita, questo parametro è disattivato. Attivarla consente il corretto funzionamento di ClearType, ma comporta una velocità di rendering leggermente più lenta.    |
 
     
 
-     
+     
 
     > [!Note]  
-    > A partire da Windows 8, non è possibile eseguire il rendering con ClearType in un livello, quindi il parametro **layerOptions** deve essere sempre impostato su [**d2d1 \_ Layer \_ Options \_ None**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_layer_options)
+    > A partire Windows 8, non è possibile eseguire il rendering con ClearType in un livello, quindi il parametro **layerOptions** deve essere sempre impostato su [**D2D1 \_ LAYER OPTIONS \_ \_ NONE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_layer_options)
 
-     
+     
 
-    Per praticità, Direct2D fornisce il metodo [**D2D1:: LayerParameters**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters) per semplificare la creazione di strutture di [**\_ \_ parametri del livello d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) .
+    Per praticità, Direct2D fornisce il [**metodo D2D1::LayerParameters**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters) per facilitare la creazione [**di strutture D2D1 \_ LAYER \_ PARAMETERS.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters)
 
--   Per comporre il contenuto del livello nella destinazione di rendering, chiamare il metodo [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) . Prima di chiamare il metodo [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) , è necessario chiamare il metodo **PopLayer** .
+-   Per creare una composizione del contenuto del livello nella destinazione di rendering, chiamare il [**metodo PopLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) È necessario chiamare il **metodo PopLayer** prima di chiamare il [**metodo EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
 
-Nell'esempio seguente viene illustrato come utilizzare [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)), [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer). Tutti i campi nella struttura dei [**\_ \_ parametri del livello d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) sono impostati sulle impostazioni predefinite, ad eccezione di **opacityBrush**, che è impostato su un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush).
+L'esempio seguente illustra come [**usare CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)), [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer). Tutti i campi nella struttura [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) sono impostati sui valori predefiniti, ad eccezione di **opacityBrush**, che è impostato su [**ID2D1RadialGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)
 
 
 ```C++
@@ -153,15 +153,15 @@ SafeRelease(&pLayer);
 
 Il codice è stato omesso da questo esempio.
 
-Si noti che quando si chiamano [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer), assicurarsi che ogni **PushLayer** disponga di una chiamata **PopLayer** corrispondente. Se sono presenti più chiamate **PopLayer** rispetto alle chiamate di **PushLayer** , la destinazione di rendering viene inserita in uno stato di errore. Se [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato prima che vengano estratti tutti i livelli in attesa, la destinazione di rendering viene inserita in uno stato di errore e restituisce un errore. Per cancellare lo stato di errore, usare [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
+Si noti che quando si chiamano [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer), assicurarsi che ogni **PushLayer** abbia una **chiamata PopLayer** corrispondente. Se sono presenti più **chiamate PopLayer** rispetto alle **chiamate PushLayer,** la destinazione di rendering viene inserita in uno stato di errore. Se [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato prima che tutti i livelli in sospeso siano visualizzati, la destinazione di rendering viene inserita in uno stato di errore e restituisce un errore. Per cancellare lo stato di errore, usare [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
 
-## <a name="content-bounds"></a>Limiti del contenuto
+## <a name="content-bounds"></a>Limiti di contenuto
 
-**ContentBounds** imposta il limite di elementi da disegnare sul livello. Solo gli elementi all'interno dei limiti del contenuto vengono ricomposti alla destinazione di rendering.
+**contentBounds** imposta il limite di ciò che deve essere disegnato sul livello. Solo gli elementi all'interno dei limiti di contenuto vengono compositi nella destinazione di rendering.
 
-Nell'esempio seguente viene illustrato come specificare **ContentBounds** in modo che l'immagine originale venga ritagliata nei limiti del contenuto con l'angolo superiore sinistro in corrispondenza di (10, 108) e l'angolo inferiore destro in (121, 177). Nella figura seguente viene illustrata l'immagine originale e il risultato del ritaglio dell'immagine ai limiti del contenuto.
+L'esempio seguente illustra come specificare **contentBounds** in modo che l'immagine originale sia ritagliata ai limiti del contenuto con l'angolo superiore sinistro in corrispondenza di (10, 108) e l'angolo inferiore destro in corrispondenza di (121, 177). La figura seguente mostra l'immagine originale e il risultato del ritaglio dell'immagine ai limiti del contenuto.
 
-![illustrazione dei limiti del contenuto in un'immagine originale e nell'immagine ritagliata risultante](images/layers-contentbounds.png)
+![Illustrazione dei limiti di contenuto in un'immagine originale e dell'immagine ritagliata risultante](images/layers-contentbounds.png)
 
 
 ```C++
@@ -201,19 +201,19 @@ Il codice è stato omesso da questo esempio.
 
 > [!Note]
 >
-> L'immagine ritagliata risultante viene interessata ulteriormente se si specifica un **geometricMask**. Per ulteriori informazioni, vedere la sezione [maschere geometriche](#geometric-masks) .
+> L'immagine ritagliata risultante è ulteriormente interessata se si specifica **un oggetto geometricMask**. Per altre [informazioni, vedere](#geometric-masks) la sezione Maschere geometriche.
 
- 
+ 
 
 ## <a name="geometric-masks"></a>Maschere geometriche
 
-Una maschera geometrica è una clip o un ritaglio, definito da un oggetto [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) , che maschera un livello quando viene disegnato da una destinazione di rendering. È possibile usare il campo **geometricMask** della struttura [**\_ \_ parametri livello d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) per mascherare i risultati in una geometria. Se, ad esempio, si desidera visualizzare un'immagine mascherata da una lettera di blocco "A", è possibile creare innanzitutto una geometria che rappresenta la lettera di blocco "A" e utilizzare tale geometria come maschera geometrica per un livello. Quindi, dopo aver eseguito il push del livello, è possibile creare l'immagine. Se si schiocca il livello, l'immagine viene ritagliata nella forma della lettera di blocco "A".
+Una maschera geometrica è una clip o un ritaglio, definito da un [**oggetto ID2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) che maschera un livello quando viene disegnato da una destinazione di rendering. È possibile usare il **campo geometricMask** della struttura [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) per mascherare i risultati in una geometria. Ad esempio, se si vuole visualizzare un'immagine mascherata da una lettera di blocco "A", è possibile creare prima una geometria che rappresenta la lettera di blocco "A" e usare tale geometria come maschera geometrica per un livello. Quindi, dopo aver fatto il push del livello, è possibile disegnare l'immagine. Se si esscee il livello, l'immagine viene ritagliata in base alla forma "A" della lettera a blocchi.
 
-Nell'esempio seguente viene illustrato come creare un [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) contenente una forma di una montagna, quindi passare la geometria del percorso al [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)). Quindi disegna una bitmap e i quadrati. Se è presente solo una bitmap nel livello di cui eseguire il rendering, usare [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello bitmap bloccato per migliorare l'efficienza. L'immagine seguente illustra l'output dell'esempio.
+L'esempio seguente illustra come creare un [**oggetto ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) contenente una forma di una cima e quindi passare la geometria del percorso a [**PushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) Disegna quindi una bitmap e i quadrati. Se nel livello di cui eseguire il rendering è presente solo una bitmap, usare [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello bitmap con chiusura per migliorare l'efficienza. L'immagine seguente illustra l'output dell'esempio.
 
-![illustrazione di un'immagine di una foglia e dell'immagine risultante dopo che è stata applicata una maschera geometrica di una montagna](images/layers-bitmapmask.png)
+![illustrazione di un'immagine di una foglia e dell'immagine risultante dopo l'applicazione di una maschera geometrica di una cima](images/layers-bitmapmask.png)
 
-Nel primo esempio viene definita la geometria da utilizzare come maschera.
+Il primo esempio definisce la geometria da usare come maschera.
 
 
 ```C++
@@ -253,7 +253,7 @@ if(SUCCEEDED(hr))
 
 
 
-Nell'esempio seguente viene usata la geometria come maschera per il livello.
+L'esempio seguente usa la geometria come maschera per il livello.
 
 
 ```C++
@@ -302,21 +302,21 @@ Il codice è stato omesso da questo esempio.
 
 > [!Note]
 >
-> In generale, se si specifica un **geometricMask**, è possibile usare il valore predefinito [**InfiniteRect**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect)per **ContentBounds**.
+> In generale, se si specifica **un oggetto geometricMask**, è possibile usare il valore predefinito [**InfiniteRect**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect)per **contentBounds.**
 >
-> Se **ContentBounds** è null e **geometricMask** è diverso da null, i limiti del contenuto sono in effetti i limiti della maschera geometrica dopo l'applicazione della trasformazione della maschera.
+> Se **contentBounds** è NULL e **geometricMask** è diverso da NULL, i limiti del contenuto sono effettivamente i limiti della maschera geometrica dopo l'applicazione della trasformazione della maschera.
 >
-> Se **ContentBounds** è diverso da null e **geometricMask** è diverso da null, la maschera geometrica trasformata viene effettivamente ritagliata rispetto ai limiti del contenuto e si presuppone che i limiti del contenuto siano infiniti.
+> Se **contentBounds** è diverso da NULL e **geometricMask** è diverso da NULL, la maschera geometrica trasformata viene ritagliata in base ai limiti di contenuto e si presuppone che i limiti di contenuto siano infiniti.
 
- 
+ 
 
 ## <a name="opacity-masks"></a>Maschere di opacità
 
-Una maschera di opacità è una maschera, descritta da un pennello o una bitmap, applicata a un altro oggetto per rendere tale oggetto parzialmente o completamente trasparente. Consente di utilizzare il canale alfa di un pennello da utilizzare come maschera di contenuto. Ad esempio, è possibile definire un pennello a sfumatura radiale che varia da opaco a trasparente per creare un effetto vignette.
+Una maschera di opacità è una maschera, descritta da un pennello o da una bitmap, applicata a un altro oggetto per rendere l'oggetto parzialmente o completamente trasparente. Consente l'uso del canale alfa di un pennello come maschera del contenuto. Ad esempio, è possibile definire un pennello sfumato radiale che varia da opaco a trasparente per creare un effetto di sfondo.
 
-Nell'esempio seguente viene usato un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) (*m \_ pRadialGradientBrush*) come maschera di opacità. Quindi disegna una bitmap e i quadrati. Se è presente solo una bitmap nel livello di cui eseguire il rendering, usare [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello bitmap bloccato per migliorare l'efficienza. La figura seguente mostra l'output di questo esempio.
+L'esempio seguente usa [**id2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) (*m \_ pRadialGradientBrush*) come maschera di opacità. Disegna quindi una bitmap e quadrati. Se nel livello di cui eseguire il rendering è presente solo una bitmap, usare [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello bitmap con chiusura per migliorare l'efficienza. Nella figura seguente viene illustrato l'output di questo esempio.
 
-![illustrazione di un'immagine di alberi e dell'immagine risultante dopo l'applicazione di una maschera di opacità](images/layers-opacitymask.png)
+![illustrazione di un'immagine degli alberi e dell'immagine risultante dopo l'applicazione di una maschera di opacità](images/layers-opacitymask.png)
 
 
 ```C++
@@ -375,15 +375,15 @@ HRESULT DemoApp::RenderWithLayerWithOpacityMask(ID2D1RenderTarget *pRT)
 Il codice è stato omesso da questo esempio.
 
 > [!Note]  
-> Questo esempio usa un livello per applicare una maschera di opacità a un singolo oggetto per rendere l'esempio il più semplice possibile. Quando si applica una maschera di opacità a un singolo oggetto, è più efficiente usare i metodi [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md) o [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) anziché un livello.
+> Questo esempio usa un livello per applicare una maschera di opacità a un singolo oggetto per mantenere l'esempio il più semplice possibile. Quando si applica una maschera di opacità a un singolo oggetto, è più efficiente usare i metodi [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md) o [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) anziché un livello.
 
- 
+ 
 
-Per istruzioni su come applicare una maschera di opacità senza usare un livello, vedere [Cenni preliminari sulle maschere di opacità](opacity-masks-overview.md).
+Per istruzioni su come applicare una maschera di opacità senza usare un livello, vedere Panoramica delle maschere [di opacità.](opacity-masks-overview.md)
 
 ## <a name="alternatives-to-layers"></a>Alternative ai livelli
 
-Come indicato in precedenza, un numero eccessivo di livelli può influire negativamente sulle prestazioni dell'applicazione. Per migliorare le prestazioni, evitare di usare i livelli laddove possibile; usare invece le alternative. Nell'esempio di codice seguente viene illustrato come utilizzare [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f_d2d1_antialias_mode)) e [**PopAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-popaxisalignedclip) per ritagliare un'area, in alternativa all'utilizzo di un livello con limiti di contenuto.
+Come accennato in precedenza, un numero eccessivo di livelli può influire negativamente sulle prestazioni dell'applicazione. Per migliorare le prestazioni, evitare di usare i livelli quando possibile; usare invece le alternative. L'esempio di codice seguente illustra come usare [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f_d2d1_antialias_mode)) e [**PopAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-popaxisalignedclip) per ritagliare un'area, in alternativa all'uso di un livello con limiti di contenuto.
 
 
 ```C++
@@ -398,7 +398,7 @@ pRT->PopAxisAlignedClip();
 
 
 
-Analogamente, usare [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello bitmap clampato come alternativa all'uso di un livello con una maschera di opacità quando è presente un solo contenuto del livello di cui eseguire il rendering, come illustrato nell'esempio seguente.
+Analogamente, usare [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello bitmap con chiusura come alternativa all'uso di un livello con una maschera di opacità quando è presente un solo contenuto nel livello di cui eseguire il rendering, come illustrato nell'esempio seguente.
 
 
 ```C++
@@ -411,7 +411,7 @@ Analogamente, usare [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rend
 
 
 
-In alternativa all'uso di un livello con una maschera geometrica, provare a usare una maschera di bitmap per ritagliare un'area, come illustrato nell'esempio seguente.
+In alternativa all'uso di un livello con una maschera geometrica, è consigliabile usare una maschera bitmap per ritagliare un'area, come illustrato nell'esempio seguente.
 
 
 ```C++
@@ -433,7 +433,7 @@ m_pRenderTarget->SetAntialiasMode(D2D1_ANTIALIAS_MODE_PER_PRIMITIVE);
 
 
 
-Infine, se si desidera applicare l'opacità a una singola primitiva, è necessario moltiplicare l'opacità nell'oggetto nel colore del pennello e quindi eseguire il rendering della primitiva. Non è necessario un livello o una bitmap maschera di opacità.
+Infine, se si vuole applicare l'opacità a una singola primitiva, è necessario moltiplicare l'opacità in nel colore del pennello e quindi eseguire il rendering della primitiva. Non è necessario un livello o una bitmap della maschera di opacità.
 
 
 ```C++
@@ -455,13 +455,13 @@ m_pRenderTarget->FillRectangle(
 
 ## <a name="clipping-an-arbitrary-shape"></a>Ritaglio di una forma arbitraria
 
-La figura seguente mostra il risultato dell'applicazione di una clip a un'immagine.
+La figura seguente mostra il risultato dell'applicazione di un clip a un'immagine.
 
 ![immagine che mostra un esempio di immagine prima e dopo un clip.](images/clip.png)
 
-È possibile ottenere questo risultato usando i livelli con una maschera di geometria o il metodo [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello di opacità.
+È possibile ottenere questo risultato usando i livelli con una maschera geometrica o il [**metodo FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pennello di opacità.
 
-Di seguito è riportato un esempio che usa un livello:
+Ecco un esempio che usa un livello:
 
 
 ```C++
@@ -474,7 +474,7 @@ m_d2dContext->PushLayer(
 
 
 
-Di seguito è riportato un esempio che usa il metodo [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) :
+Ecco un esempio che usa il [**metodo FillGeometry:**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry)
 
 
 ```C++
@@ -508,24 +508,24 @@ m_d2dContext->FillGeometry(
 
 
 
-In questo esempio di codice, quando si chiama il metodo PushLayer, non si passa un livello creato dall'app. Direct2D crea automaticamente un livello. Direct2D è in grado di gestire l'allocazione e l'eliminazione di questa risorsa senza alcun intervento da parte dell'app. Questo consente a Direct2D di riutilizzare i livelli internamente e di applicare le ottimizzazioni di gestione delle risorse.
+In questo esempio di codice, quando si chiama il metodo PushLayer, non si passa un livello creato dall'app. Direct2D crea automaticamente un livello. Direct2D è in grado di gestire l'allocazione e la distruzione di questa risorsa senza alcun coinvolgimento da parte dell'app. In questo modo Direct2D può riutilizzare i livelli internamente e applicare le ottimizzazioni di gestione delle risorse.
 
 > [!Note]  
-> In Windows 8 sono state apportate numerose ottimizzazioni all'utilizzo dei livelli ed è consigliabile provare a usare le API di livello anziché [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) quando possibile.
+> In Windows 8 sono state apportate molte ottimizzazioni all'utilizzo dei livelli ed è consigliabile provare a usare le API del livello anziché [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) quando possibile.
 
- 
+ 
 
-### <a name="axis-aligned-clips"></a>Clip allineate asse
+### <a name="axis-aligned-clips"></a>Clip allineate all'asse
 
-Se l'area da ritagliare è allineata all'asse della superficie di disegno, anziché arbitraria. Questo caso è adatto per l'utilizzo di un rettangolo di ritaglio anziché di un livello. Il miglioramento delle prestazioni è maggiore per la geometria con alias rispetto alla geometria con alias. Per altre informazioni sulle clip allineate asse, vedere l'argomento [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) .
+Se l'area da ritagliare è allineata all'asse della superficie di disegno, anziché arbitraria. Questo caso è adatto per l'uso di un rettangolo di ritaglio anziché di un livello. Il miglioramento delle prestazioni è più per la geometria con alias che per la geometria con antialias. Per altre informazioni sulle clip allineate all'asse, vedi [**l'argomento PushAxisAlignedClip.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento Direct2D](reference.md)
+[Informazioni di riferimento su Direct2D](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

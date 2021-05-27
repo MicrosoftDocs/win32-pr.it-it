@@ -1,19 +1,19 @@
 ---
 description: I GUID seguenti definiscono i diversi tipi di profili dei sensori.
 ms.assetid: 9CA55255-484F-44C9-B3B7-3C152392FDF5
-title: GUID del profilo del sensore (Mfapi. h)
+title: GUID profilo sensore (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ae7bf1bd1e3391301cc6da4151968b4e761fb0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 825a7c83b45d9ceeaf32640b084682f138eca86b
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753874"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110549996"
 ---
-# <a name="sensor-profile-guids"></a>GUID profilo sensore
+# <a name="sensor-profile-guids"></a>GUID del profilo del sensore
 
-I GUID seguenti definiscono i diversi tipi di profili dei sensori. Questi GUID sono comunemente utilizzati nella struttura [**SENSORPROFILEID**](/windows/win32/api/mfidl/ns-mfidl-sensorprofileid) .
+I GUID seguenti definiscono i diversi tipi di profili dei sensori. Questi GUID vengono comunemente usati nella [**struttura SENSORPROFILEID.**](/windows/win32/api/mfidl/ns-mfidl-sensorprofileid)
 
 <dl> <dt>
 
@@ -22,32 +22,32 @@ I GUID seguenti definiscono i diversi tipi di profili dei sensori. Questi GUID s
 
 
 
-Frequenza elevata di fotogrammi.
+Frequenza dei fotogrammi elevata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="KSCAMERAPROFILE_HDRWithWCGVideo"></span><span id="kscameraprofile_hdrwithwcgvideo"></span><span id="KSCAMERAPROFILE_HDRWITHWCGVIDEO"></span>**\_HDRWITHWCGVIDEO KSCAMERAPROFILE**
+<span id="KSCAMERAPROFILE_HDRWithWCGVideo"></span><span id="kscameraprofile_hdrwithwcgvideo"></span><span id="KSCAMERAPROFILE_HDRWITHWCGVIDEO"></span>**KSCAMERAPROFILE \_ HDRWithWCGVideo**
 </dt> <dd> <dl> <dt>
 
 
 
-HDR con video WCG.
+HdR con video WCG.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="KSCAMERAPROFILE_HDRWithWCGPhoto"></span><span id="kscameraprofile_hdrwithwcgphoto"></span><span id="KSCAMERAPROFILE_HDRWITHWCGPHOTO"></span>**\_HDRWITHWCGPHOTO KSCAMERAPROFILE**
+<span id="KSCAMERAPROFILE_HDRWithWCGPhoto"></span><span id="kscameraprofile_hdrwithwcgphoto"></span><span id="KSCAMERAPROFILE_HDRWITHWCGPHOTO"></span>**KSCAMERAPROFILE \_ HDRWithWCGPhoto**
 </dt> <dd> <dl> <dt>
 
 
 
-HDR con la foto WCG.
+HDR con foto WCG.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="KSCAMERAPROFILE_VariablePhotoSequence"></span><span id="kscameraprofile_variablephotosequence"></span><span id="KSCAMERAPROFILE_VARIABLEPHOTOSEQUENCE"></span>**\_VARIABLEPHOTOSEQUENCE KSCAMERAPROFILE**
+<span id="KSCAMERAPROFILE_VariablePhotoSequence"></span><span id="kscameraprofile_variablephotosequence"></span><span id="KSCAMERAPROFILE_VARIABLEPHOTOSEQUENCE"></span>**Variabile \_ KSCAMERAPROFILEPhotoSequence**
 </dt> <dd> <dl> <dt>
 
 
@@ -57,12 +57,20 @@ Sequenza foto variabile.
 
 </dt> </dl> </dd> <dt>
 
-<span id="KSCAMERAPROFILE_VideoHDR8"></span><span id="kscameraprofile_videohdr8"></span><span id="KSCAMERAPROFILE_VIDEOHDR8"></span>**\_VIDEOHDR8 KSCAMERAPROFILE**
+<span id="KSCAMERAPROFILE_VideoHDR8"></span><span id="kscameraprofile_videohdr8"></span><span id="KSCAMERAPROFILE_VIDEOHDR8"></span>**KSCAMERAPROFILE \_ VideoHDR8**
 </dt> <dd> <dl> <dt>
 
 
 
 Video HDR8.
+
+
+</dt> </dl> </dd> </dl>
+
+<span id="KSCAMERAPROFILE_CompressedCamera"></span><span id="kscameraprofile_compressedcamera"></span><span id="KSCAMERAPROFILE_COMPRESSEDCAMERA"></span>**KSCAMERAPROFILE \_ CompressedCamera**
+</dt> <dd> <dl> <dt>
+
+Il profilo supporta i flussi compressi della fotocamera per consentire il salvataggio dei flussi compressi direttamente in un formato compresso senza incorrere nel costo della decompressione e della ricompressione del flusso.
 
 
 </dt> </dl> </dd> </dl>
@@ -73,9 +81,9 @@ Video HDR8.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

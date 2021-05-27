@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC
-ms.openlocfilehash: ba12541514c8121d483236afa2163a04bd991288
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 2b94ac1dcf389d424aaf74d615f36cdf7acc804c
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107804519"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110550436"
 ---
 # <a name="dml_batch_normalization_grad_operator_desc-directmlh"></a>DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC (directml.h)
 
@@ -82,21 +82,21 @@ struct DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore contenente i dati di input. Si tratta in genere dello stesso tensore fornito da *InputTensor* DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti.
+Tensore contenente i dati di input. Si tratta in genere dello stesso tensore fornito da *InputTensor* per DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti.
 
 `InputGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output della backpropagazione di un livello precedente. Questo tensore deve avere le stesse dimensioni delle dimensioni *di InputTensor*.
+Tensore sfumatura in ingresso. Questa operazione viene in genere ottenuta dall'output della retropropagazione di un livello precedente. Questo tensore deve avere le stesse dimensioni di *InputTensor.*
 
 `MeanTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore contenente i dati medio. Questo è in genere lo stesso tensore fornito dal *MeanTensor* per DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti.
+Tensore contenente i dati della media. Si tratta in genere dello stesso tensore fornito da *MeanTensor* per DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti.
 
-Tutte le dimensioni che non hanno le stesse dimensioni della dimensione corrispondente di *InputTensor* devono avere una dimensione di 1 in modo che possano essere trasmesse in modo che corrispondano all'input.
+Le dimensioni che non hanno le stesse dimensioni della dimensione corrispondente di *InputTensor* devono avere una dimensione di 1 in modo che possano essere trasmesse in modo che corrispondano all'input.
 
 Ad esempio, le dimensioni seguenti sono accettabili.
 
@@ -105,7 +105,7 @@ InputTensor: [3, 4, 5, 6]
 MeanTensor : [1, 4, 1, 1] or [3, 4, 1, 1] or [3, 4, 5, 1] or [3, 4, 5, 6] or [1, 1, 1, 1]
 ```
 
-Di seguito è riportato un errore perché, per essere compatibili con la trasmissione, le dimensioni che non corrispondono devono essere di dimensioni 1.
+Di seguito è riportato un errore perché, per essere compatibile con la trasmissione, le dimensioni che non corrispondono devono essere di dimensioni 1.
 
 ```
 InputTensor: [3, 4, 5, 6]  
@@ -116,13 +116,13 @@ MeanTensor : [1, 2, 1, 1]  // 2 causes an error.
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore contenente i dati di varianza. Si tratta in genere dello stesso tensore fornito da *VarianceTensor* per DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti. Questo tensore deve avere le stesse dimensioni di *MeanTensor.*
+Tensore contenente i dati di varianza. Si tratta in genere dello stesso tensore fornito da *VarianceTensor* DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti. Questo tensore deve avere le stesse dimensioni delle dimensioni *di MeanTensor*.
 
 `ScaleTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore contenente i dati della scala. Si tratta in genere dello stesso tensore fornito da *ScaleTensor* per DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti. Questo tensore deve avere le stesse dimensioni di *MeanTensor.*
+Tensore contenente i dati di scala. Si tratta in genere dello stesso tensore fornito da *ScaleTensor* DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti. Questo tensore deve avere le stesse dimensioni delle dimensioni *di MeanTensor*.
 
 `OutputGradientTensor`
 
@@ -130,19 +130,19 @@ Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tens
 
 Per ogni valore corrispondente negli input, `OutputGradient = InputGradient * (Scale / sqrt(Variance + Epsilon))` .
 
-Questo tensore deve avere le stesse dimensioni di *InputTensor* / *InputGradientTensor*.
+Questo tensore deve avere le stesse dimensioni delle dimensioni *di InputTensor* / *InputGradientTensor*.
 
 `OutputScaleGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Questo tensore deve avere le stesse dimensioni delle *dimensioni di MeanTensor* / *VarianceTensor* / *ScaleTensor'.*
+Questo tensore deve avere le stesse dimensioni delle dimensioni *di MeanTensor* / *VarianceTensor* / *ScaleTensor'*.
 
-Viene eseguito il calcolo seguente o ogni valore corrispondente negli input.
+Il calcolo seguente viene eseguito o ogni valore corrispondente negli input.
 
 `OutputScaleGradient = sum(InputGradient * (Input - Mean) / sqrt(Variance + Epsilon))`
 
-`sum`l'oggetto viene calcolato in tutte le dimensioni che devono essere trasmesse. Se non è necessaria alcuna trasmissione, non è necessaria alcuna somma.
+`sum`L'oggetto viene calcolato in tutte le dimensioni che devono essere trasmesse. Se non è necessaria alcuna trasmissione, non è necessaria alcuna somma.
 
 Ecco un esempio.
 
@@ -152,23 +152,23 @@ MeanTensor               : [1, 4, 1, 1] // dimensions 0, 2, 3 needed broadcastin
 OutputScaleGradientTensor: [1, 4, 1, 1]  
 ```
 
-L'elemento **[0, 0**, 0, 0] di è la somma di per tutti i `OutputScaleGradientTensor` `(InputGradient * (Input - Mean) / sqrt(variance + Epsilon)` 90 (3 \* 5 \* 6) elementi [[0,2], **0**, [0,4], [0,5]].
+L'elemento **[0, 0,** 0, 0] di è la somma di per tutti i `OutputScaleGradientTensor` `(InputGradient * (Input - Mean) / sqrt(variance + Epsilon)` 90 (3 \* 5 \* 6) elementi [[0,2], **0**, [0,4], [0,5]].
 
 `OutputBiasGradientTensor`
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Questo tensore deve avere le stesse dimensioni di *MeanTensor* / *VarianceTensor* / *ScaleTensor'*.
+Questo tensore deve avere le stesse dimensioni delle dimensioni *di MeanTensor* / *VarianceTensor* / *ScaleTensor'*.
 
 Viene eseguito il calcolo seguente o ogni valore corrispondente negli input.
 
 `OutputBiasGradient = sum(InputGradient)`  
 
-L'oggetto viene calcolato in tutte le dimensioni che `sum` devono essere trasmesse (vedere l'esempio per *OutputScaleGradientTensor*). Se non è necessaria alcuna trasmissione, non è necessaria alcuna somma.
+L'oggetto viene calcolato in tutte le dimensioni `sum` che devono essere trasmesse (vedere l'esempio *per OutputScaleGradientTensor).* Se non è necessaria alcuna trasmissione, non è necessaria alcuna somma.
 
 `Epsilon`
 
-Tipo: **[FLOAT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[FLOAT](../../winprog/windows-data-types.md)**
 
 Valore piccolo aggiunto alla varianza per evitare zero.
 
@@ -176,7 +176,7 @@ Valore piccolo aggiunto alla varianza per evitare zero.
 Questo operatore è stato introdotto in `DML_FEATURE_LEVEL_3_1` .
 
 ## <a name="tensor-constraints"></a>Vincoli tensore
-*InputGradientTensor,* *InputTensor,* *MeanTensor,* *OutputBiasGradientTensor,* *OutputGradientTensor,* *OutputScaleGradientTensor,* *ScaleTensor* e *VarianceTensor* devono avere gli stessi *DataType* *e DimensionCount.*
+*InputGradientTensor,* *InputTensor,* *MeanTensor,* *OutputBiasGradientTensor,* *OutputGradientTensor,* *OutputScaleGradientTensor,* *ScaleTensor* e *VarianceTensor* devono avere gli stessi *Valori DataType* *e DimensionCount.*
 
 ## <a name="tensor-support"></a>Supporto di Tensor
 | Tensore | Tipo | Conteggi delle dimensioni supportati | Tipi di dati supportati |

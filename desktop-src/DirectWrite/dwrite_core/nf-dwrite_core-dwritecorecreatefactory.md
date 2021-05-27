@@ -1,7 +1,7 @@
 ---
 UID: NE:dwrite_core.DWriteCoreCreateFactory
 title: DWriteCoreCreateFactory (dwrite_core.h)
-description: Crea un oggetto factory usato per la creazione successiva di singoli oggetti DWriteCore.
+description: Crea un oggetto factory utilizzato per la creazione successiva di singoli oggetti DWriteCore.
 tech.root: DirectWrite
 ms.date: 04/21/2021
 ms.topic: reference
@@ -39,19 +39,19 @@ api_location:
 - dwrite_core.h
 api_name:
 - DWriteCoreCreateFactory
-ms.openlocfilehash: 43e43e00385e10f0da0ba459cdc16e84562b72ec
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 3ba1b8f6e09212c1ba2f4a0093e2205acaa2e835
+ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107955024"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110548936"
 ---
 # <a name="dwritecorecreatefactory-function-dwrite_coreh"></a>Funzione DWriteCoreCreateFactory (dwrite_core.h)
 
-Crea un oggetto factory usato per la creazione successiva di singoli oggetti DWriteCore.
+Crea un oggetto factory utilizzato per la creazione successiva di singoli oggetti DWriteCore.
 
 > [!IMPORTANT]
-> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedi [Panoramica di DWriteCore.](/windows/win32/directwrite/dwritecore-overview)
+> Questa API è disponibile come parte dell'implementazione DWriteCore di [DirectWrite.](../direct-write-portal.md) DWriteCore è un'implementazione di DirectWrite, eseguibile su Windows fino alla versione 8, che offre opportunità per l'uso su più piattaforme. Per altre informazioni ed esempi di codice, vedere [Panoramica di DWriteCore.](../dwritecore-overview.md)
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -74,7 +74,7 @@ Valore che specifica se l'oggetto factory verrà condiviso, isolato o limitato.
 
 Tipo: <b>REFIID</b>
 
-Valore GUID che identifica l'interfaccia della factory DirectWrite, ad esempio __uuidof(<a href="/windows/win32/api/dwrite/nn-dwrite-idwritefactory">IDWriteFactory</a>).
+Valore GUID che identifica l'interfaccia factory DirectWrite, ad esempio __uuidof(<a href="/windows/win32/api/dwrite/nn-dwrite-idwritefactory">IDWriteFactory</a>).
 
 `factory`
 
@@ -86,18 +86,18 @@ Indirizzo di un puntatore all'oggetto factory DirectWrite appena creato.
 
 Tipo: <b>HRESULT</b>
 
-Se questo metodo ha esito positivo, restituisce <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. In caso contrario, restituisce un <b xmlns:loc="http://microsoft.com/wdcml/l10n">codice di errore HRESULT.</b>
+Se questo metodo ha esito positivo, <b xmlns:loc="http://microsoft.com/wdcml/l10n">restituisce</b>S_OK . In caso contrario, restituisce un <b xmlns:loc="http://microsoft.com/wdcml/l10n">codice di errore HRESULT.</b>
 
 ## <a name="examples"></a>Esempio
 
-Vedere [l'argomento di panoramica DWriteCore](/windows/win32/directwrite/dwritecore-overview) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
+Vedere [l'argomento di panoramica di DWriteCore](../dwritecore-overview.md) e l'app di esempio [DWriteCoreGallery.](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery)
 
 ## <a name="remarks"></a>Commenti
 
-Dal punto di vista funzionale è uguale alla [funzione DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) esportata dalla versione di sistema di DirectWrite. La funzione DWriteCore ha un nome diverso per evitare ambiguità.
+Funziona come la funzione [DWriteCreateFactory](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) esportata dalla versione di sistema di DirectWrite. La funzione DWriteCore ha un nome diverso per evitare ambiguità.
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Windows 10, Project Dispositivi [app Win32] |
-| **Intestazione** | dwrite.h (includere dwrite_core.h) |
+| **Client minimo supportato** | Windows 10, Project Reunion [app Win32] |
+| **Intestazione** | dwrite.h (include dwrite_core.h) |
