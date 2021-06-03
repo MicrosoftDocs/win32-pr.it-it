@@ -1,80 +1,80 @@
 ---
-description: International Components for Unicode (ICU) è un set di API di globalizzazione Open Source ampiamente usato.
+description: International Components for Unicode (ICU) è un set maturo e ampiamente usato di API di globalizzazione open source.
 ms.assetid: 4AEBE391-4121-44B2-B15B-0032645D7053
 title: International Components for Unicode (ICU)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e00a72885b37efebf8de0d5eb60a22fe01dfba4f
-ms.sourcegitcommit: 176ef0a00690f849282cb48464c97f6526a82113
+ms.openlocfilehash: 560a2f344a3024685e17df0f434f8ffa040b5c8b
+ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "103968771"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "111349990"
 ---
 # <a name="international-components-for-unicode-icu"></a>International Components for Unicode (ICU)
 
-International Components for Unicode (ICU) è un set di API di globalizzazione Open Source ampiamente usato. ICU usa il repository dei dati delle impostazioni locali (CLDR) di Unicode come raccolta dati, offrendo supporto per la globalizzazione per le applicazioni software. ICU è molto portatile e offre alle applicazioni gli stessi risultati in tutte le piattaforme.
+International Components for Unicode (ICU) è un set maturo e ampiamente usato di API di globalizzazione open source. ICU usa common locale data repository (CLDR) di Unicode come libreria di dati, fornendo il supporto della globalizzazione per le applicazioni software. L'unità di cu è ampiamente portabile e offre alle applicazioni gli stessi risultati in tutte le piattaforme.
 
-## <a name="highlights-of-the-globalization-api-services-provided-by-icu"></a>Highlights of the Globalization servizi API fornito da ICU
+## <a name="highlights-of-the-globalization-api-services-provided-by-icu"></a>Caratteristiche principali dei servizi API Globalizzazione ICU
 
--   **Conversione della tabella codici**: converte i dati di testo in o da Unicode e quasi qualsiasi altro set di caratteri o codifica. Le tabelle di conversione di ICU sono basate sui dati del set di caratteri raccolti da IBM nel corso di molti decenni ed è il più completo disponibile ovunque.
--   **Regole di confronto**: confrontare le stringhe in base alle convenzioni e agli standard di una lingua, un'area o un paese specifico. Le regole di confronto di ICU sono basate sull'algoritmo di confronto Unicode più le regole di confronto specifiche delle impostazioni locali di CLDR.
--   **Formattazione**: formattare numeri, date, ore e importi di valuta in base alle convenzioni delle impostazioni locali selezionate. Questo include la traduzione dei nomi di mese e giorno nella lingua selezionata, la scelta delle abbreviazioni appropriate, l'ordinamento corretto dei campi e così via. Questi dati provengono anche dal repository di dati delle impostazioni locali comuni.
--   **Calcoli temporali**: vengono forniti più tipi di calendario oltre il gregoriano tradizionale. Viene fornito un set completo di API per il calcolo del fuso orario.
--   **Supporto Unicode**: ICU monitora strettamente lo standard Unicode, semplificando l'accesso a tutte le numerose proprietà dei caratteri Unicode, alla normalizzazione Unicode, alla riduzione dei maiuscole e minuscole e ad altre operazioni fondamentali come specificato dallo [standard Unicode](https://www.unicode.org/).
--   **Espressione regolare**: le espressioni regolari di ICU supportano completamente Unicode offrendo prestazioni molto competitive.
--   **BiDi**: supporto per la gestione di testo che contiene una combinazione di dati da sinistra a destra (Inglese) e da destra a sinistra (arabo o ebraico).
+-   **Conversione tabella codici:** converte i dati di testo in o da Unicode e quasi qualsiasi altro set di caratteri o codifica. Le tabelle di conversione dell'unità di cu sono basate sui dati dei set di caratteri raccolti da IBM nel corso di molti decenni ed è la più completa disponibile ovunque.
+-   **Regole di confronto:** confrontare le stringhe in base alle convenzioni e agli standard di una determinata lingua, area geografica o paese. Le regole di confronto dell'unità di compatibilità si basano sull'algoritmo di confronto Unicode e sulle regole di confronto specifiche delle impostazioni locali di CLDR.
+-   **Formattazione:** formattare numeri, date, ore e importi di valuta in base alle convenzioni delle impostazioni locali scelte. Ciò include la conversione dei nomi di mese e giorno nella lingua selezionata, la scelta delle abbreviazioni appropriate, l'ordinamento corretto dei campi e così via. Questi dati provengono anche dal repository dei dati delle impostazioni locali comuni.
+-   **Calcoli dell'ora:** vengono forniti più tipi di calendari oltre al gregoriano tradizionale. Viene fornito un set completo di API di calcolo del fuso orario.
+-   **Supporto Unicode:** CU tiene traccia dello standard Unicode, offrendo un facile accesso a tutte le numerose proprietà dei caratteri Unicode, normalizzazione Unicode, case folding e altre operazioni fondamentali, come specificato dallo [standard Unicode](https://www.unicode.org/).
+-   **Espressione regolare:** le espressioni regolari di ICU supportano completamente Unicode e offrono prestazioni molto competitive.
+-   **Offeri:** supporto per la gestione di testo contenente una combinazione di dati da sinistra a destra (inglese) e da destra a sinistra (arabo o ebraico).
 
-Per ulteriori informazioni, è possibile visitare il sito Web di ICU: <http://site.icu-project.org/>
+Per altre informazioni, visitare il sito Web ICU: <http://site.icu-project.org/>
 
 ## <a name="overview"></a>Panoramica
 
-In Windows 10 Creators Update, ICU è stato integrato in Windows, rendendo accessibili pubblicamente le API C e i dati.
+In Windows 10 Creators Update, la cu è stata integrata in Windows, rendendo accessibili pubblicamente le API e i dati C.
 
 > [!IMPORTANT]
-> La versione di ICU in Windows espone solo le API C. Non espone alcuna API C++. Sfortunatamente, non è possibile esporre le API C++ a causa della mancanza di un'ABI stabile in C++.
+> La versione di ICU in Windows espone solo le API C. Non espone alcuna API C++. Sfortunatamente, non è possibile esporre mai le API C++ a causa della mancanza di un'interfaccia ABI stabile in C++.
 
-Per la documentazione sulle API di ICU C, consultare la pagina della documentazione di ICU ufficiale qui: <http://icu-project.org/apiref/icu4c/index.html#Module>
+Per la documentazione sulle API ICU C, vedere la pagina ufficiale della documentazione dell'unità di cu qui: <http://icu-project.org/apiref/icu4c/index.html#Module>
 
 ## <a name="history-of-changes-to-the-icu-library-in-windows"></a>Cronologia delle modifiche apportate alla libreria ICU in Windows
 
 ### <a name="version-1703-creators-update"></a>Versione 1703 (Creators Update)
-La libreria ICU è stata aggiunta per la prima volta al sistema operativo Windows 10 in questa versione.
+La libreria ICU è stata aggiunta per la prima volta Windows 10 sistema operativo in questa versione.
 È stato aggiunto come:
-- Due dll di sistema:
-    -   **icuuc.dll** (la libreria "Common" di ICU)
-    -   **icuin.dll** (la libreria "i18n" di ICU)
+- Due DLL di sistema:
+    -   **icuuc.dll** (questa è la libreria "comune" di cu)
+    -   **icuin.dll** (si tratta della libreria ICU "i18n")
 - Due file di intestazione in Windows 10 SDK:
-    -   **icucommon. h**
-    -   **icui18n. h**
+    -   **icucommon.h**
+    -   **icui18n.h**
 - Due librerie di importazione in Windows 10 SDK:
-    -   **icuuc. lib**
-    -   **icuin. lib**
+    -   **icuuc.lib**
+    -   **icuin.lib**
 
 ### <a name="version-1709-fall-creators-update"></a>Versione 1709 (Fall Creators Update)
-È stato aggiunto un file di intestazione combinato, **ICU. h**, che contiene il contenuto di entrambi i file di intestazione sopra (icucommon. h e icui18n. h) e modifica anche il tipo di `UCHAR` in `char16_t` .
+È stato aggiunto un file di intestazione combinato, **icu.h,** che contiene il contenuto di entrambi i file di intestazione precedenti (icucommon.h e icui18n.h) e modifica anche il tipo di `UCHAR` in `char16_t` .
 
 ### <a name="version-1903-may-2019-update"></a>Versione 1903 (aggiornamento di maggio 2019)
-È stata aggiunta una nuova DLL combinata, **icu.dll**, che contiene le librerie "Common" e "i18n". È stata inoltre aggiunta una nuova libreria di importazione a Windows 10 SDK: **ICU. lib**.
+È stata aggiunta una nuova DLL **combinata,icu.dll**, che contiene le librerie "common" e "i18n". Inoltre, è stata aggiunta una nuova libreria di importazione all'SDK Windows 10: **icu.lib**.
 
-In futuro, non verranno aggiunte nuove API alle intestazioni precedenti (icucommon. h e icui18n. h) o alle librerie di importazione precedenti (icuuc. lib e icuin. lib). Le nuove API verranno aggiunte solo all'intestazione combinata (ICU. h) e alla libreria di importazione combinata (ICU. lib).
+In futuro, non verranno aggiunte nuove API alle intestazioni precedente (icucommon.h e icui18n.h) o alle librerie di importazione (icuuc.lib e icuin.lib). Le nuove API verranno aggiunte solo all'intestazione combinata (icu.h) e alla libreria di importazione combinata (icu.lib).
 
 ## <a name="getting-started"></a>Introduzione
 
-È necessario seguire tre passaggi principali: (Windows 10 Creators Update o versione successiva)
+È necessario eseguire tre passaggi principali: (Windows 10 Creators Update o versione successiva)
 
 <dl>
 
-1. È necessario che l'applicazione sia destinata a Windows 10 versione 1703 (Creators Update) o successiva.
+1. L'applicazione deve essere Windows 10 versione 1703 (Creators Update) o successiva.
 
-2. Aggiungere le intestazioni:
+2. Aggiungere nelle intestazioni:
 
    ``` syntax
    #include <icucommon.h>
    #include <icui18n.h>
    ```
 
-   In Windows 10 versione 1709 e successive, è necessario includere invece l'intestazione combinata:
+   Nella Windows 10 versione 1709 e successive è invece necessario includere l'intestazione combinata:
 
    ``` syntax
    #include <icu.h>
@@ -82,35 +82,35 @@ In futuro, non verranno aggiunte nuove API alle intestazioni precedenti (icucomm
   
 3. Collegamento alle due librerie:
 
-   -   icuuc. lib
-   -   icuin. lib
+   -   icuuc.lib
+   -   icuin.lib
 
-   In Windows 10 versione 1903 e successive, è consigliabile usare invece la libreria combinata:
+   Nella Windows 10 versione 1903 e successive è consigliabile usare invece la libreria combinata:
 
-   -   ICU. lib
+   -   icu.lib
 
 </dl>
 
-Quindi, è possibile chiamare qualsiasi API di ICU C da queste librerie desiderate. (Nessuna API C++ esposta).
+È quindi possibile chiamare qualsiasi API C ICU da queste librerie desiderate. Non vengono esposte API C++.
 
 > [!IMPORTANT]
-> Se si usano le librerie di importazione legacy, icuuc. lib e icuin. lib, assicurarsi che siano elencate prima delle librerie Umbrella, ad esempio onecoreuap. lib o WindowsApp. lib, nell'impostazione del linker dipendenze aggiuntive (vedere l'immagine seguente). In caso contrario, il linker verrà collegato a ICU. lib, il che comporterà il tentativo di caricare icu.dll in fase di esecuzione. Tale DLL è presente solo a partire dalla versione 1903. Se quindi un utente aggiorna Windows 10 SDK in un computer Windows precedente alla versione 1903, l'app non verrà caricata ed eseguita. Per una cronologia delle librerie di ICU in Windows, vedere [cronologia delle modifiche apportate alla libreria ICU in Windows](#history-of-changes-to-the-icu-library-in-windows).
+> Se si usano le librerie di importazione legacy, icuuc.lib e icuin.lib, assicurarsi che siano elencate prima delle librerie umbrella, ad esempio onecoreuap.lib o WindowsApp.lib, nell'impostazione Del linker Dipendenze aggiuntive (vedere l'immagine seguente). In caso contrario, il linker si collega a icu.lib, il che comporta un tentativo di caricamento icu.dll in fase di esecuzione. Tale DLL è presente solo a partire dalla versione 1903. Pertanto, se un utente aggiorna Windows 10 SDK in un computer Windows precedente alla versione 1903, l'app non verrà caricata ed eseguita. Per una cronologia delle librerie ICU in Windows, vedere Cronologia delle modifiche apportate alla libreria di unità [di cu in Windows.](#history-of-changes-to-the-icu-library-in-windows)
 
-![esempio di ICU](images/icu-example.png)
+![Esempio di icu](images/icu-example.png)
 
 > [!Note]  
 >
-> - Si tratta della configurazione per "tutte le piattaforme".
-> - Per usare ICU, le app Win32 devono chiamare prima [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) .
-> - Non tutti i dati restituiti dalle API di ICU si allineano al sistema operativo Windows, perché il lavoro di allineamento è ancora in corso. 
+> - Questa è la configurazione per "Tutte le piattaforme".
+> - Per fare in modo che le app Win32 usino la cu, devono chiamare [prima CoInitializeEx.](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) Nella Windows 10 versione 1903 e successive, in cui è disponibile la libreria ICU combinata (icu.dll/icu.lib), è possibile omettere la chiamata CoInitializeEx usando la libreria combinata.
+> - Non tutti i dati restituiti dalle API di cu verranno allineati con il sistema operativo Windows, perché il lavoro di allineamento è ancora in corso. 
 
 ## <a name="icu-example-app"></a>App di esempio ICU
 
 ### <a name="example-code-snippet"></a>Frammento di codice di esempio
 
-Di seguito è riportato un esempio che illustra l'uso delle API di ICU dall'interno di un'applicazione C++ UWP. (Non è destinato a essere un'applicazione autonoma completa, ma è solo un esempio di chiamata a un metodo ICU).
+Di seguito è riportato un esempio che illustra l'uso delle API ICU da un'applicazione UWP C++. Non deve essere un'applicazione autonoma completa, ma è solo un esempio di chiamata a un metodo di descrizione dei cu.
 
-Nel piccolo esempio seguente si presuppone che esistano metodi **ErrorMessage** e **OutputMessage** che restituiscono le stringhe all'utente in un certo modo.
+Nell'esempio seguente si presuppone che siano presenti metodi **ErrorMessage** e **OutputMessage** che rendono le stringhe all'utente in qualche modo.
 
 ``` syntax
 // On Windows 10 Creators Update, include the following two headers. With Windows 10 Fall Creators Update and later, you can just include the single header <icu.h>.
