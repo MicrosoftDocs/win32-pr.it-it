@@ -4,44 +4,44 @@ ms.assetid: 6a36d7a1-c14a-42cd-81e1-1743673eca83
 title: Elemento ParagraphLineMetrics
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17ab0ec2be1c5cbf640d17ff05ec8a84f401c4d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a864c002e085596dc58814ddf1a708903a74724
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318696"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432603"
 ---
-# <a name="paragraphlinemetrics-element"></a><span data-ttu-id="08cf2-103">Elemento ParagraphLineMetrics</span><span class="sxs-lookup"><span data-stu-id="08cf2-103">ParagraphLineMetrics Element</span></span>
+# <a name="paragraphlinemetrics-element"></a><span data-ttu-id="a0992-103">Elemento ParagraphLineMetrics</span><span class="sxs-lookup"><span data-stu-id="a0992-103">ParagraphLineMetrics Element</span></span>
 
-<span data-ttu-id="08cf2-104">Contiene informazioni sulle righe di un paragrafo.</span><span class="sxs-lookup"><span data-stu-id="08cf2-104">Contains information about the lines of a paragraph.</span></span>
+<span data-ttu-id="a0992-104">Contiene informazioni sulle righe di un paragrafo.</span><span class="sxs-lookup"><span data-stu-id="a0992-104">Contains information about the lines of a paragraph.</span></span>
 
-## <a name="definition"></a><span data-ttu-id="08cf2-105">Definizione</span><span class="sxs-lookup"><span data-stu-id="08cf2-105">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="a0992-105">Definizione</span><span class="sxs-lookup"><span data-stu-id="a0992-105">Definition</span></span>
 
 ``` syntax
 <xs:element name="ParagraphLineMetrics" type="ParagraphLineMetricsType" />
 ```
 
-## <a name="parent-elements"></a><span data-ttu-id="08cf2-106">Elementi padre</span><span class="sxs-lookup"><span data-stu-id="08cf2-106">Parent Elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="a0992-106">Elementi padre</span><span class="sxs-lookup"><span data-stu-id="a0992-106">Parent Elements</span></span>
 
-[<span data-ttu-id="08cf2-107">**Paragraph**</span><span class="sxs-lookup"><span data-stu-id="08cf2-107">**Paragraph**</span></span>](paragraph-element.md)
+[<span data-ttu-id="a0992-107">**Paragraph**</span><span class="sxs-lookup"><span data-stu-id="a0992-107">**Paragraph**</span></span>](paragraph-element.md)
 
-## <a name="child-elements"></a><span data-ttu-id="08cf2-108">Elementi figlio</span><span class="sxs-lookup"><span data-stu-id="08cf2-108">Child Elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="a0992-108">Elementi figlio</span><span class="sxs-lookup"><span data-stu-id="a0992-108">Child Elements</span></span>
 
-[<span data-ttu-id="08cf2-109">**Di base**</span><span class="sxs-lookup"><span data-stu-id="08cf2-109">**Baseline**</span></span>](baseline-element.md)
+[<span data-ttu-id="a0992-109">**Di base**</span><span class="sxs-lookup"><span data-stu-id="a0992-109">**Baseline**</span></span>](baseline-element.md)
 
-## <a name="attributes"></a><span data-ttu-id="08cf2-110">Attributi</span><span class="sxs-lookup"><span data-stu-id="08cf2-110">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="a0992-110">Attributi</span><span class="sxs-lookup"><span data-stu-id="a0992-110">Attributes</span></span>
 
-<span data-ttu-id="08cf2-111">Nessuna.</span><span class="sxs-lookup"><span data-stu-id="08cf2-111">None.</span></span>
+<span data-ttu-id="a0992-111">Nessuno.</span><span class="sxs-lookup"><span data-stu-id="a0992-111">None.</span></span>
 
-## <a name="element-information"></a><span data-ttu-id="08cf2-112">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="08cf2-112">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a0992-112">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="a0992-112">Element Information</span></span>
 
 
 
-|              |                                                                                       |
+|  <span data-ttu-id="a0992-113">Elemento</span><span class="sxs-lookup"><span data-stu-id="a0992-113">Element</span></span>     | <span data-ttu-id="a0992-114">valore</span><span class="sxs-lookup"><span data-stu-id="a0992-114">Value</span></span>                                                     |
 |--------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="08cf2-113">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="08cf2-113">Element type</span></span> | <span data-ttu-id="08cf2-114">ComplexType [**ParagraphLineMetricsType**](paragraphlinemetricstype-complex-type.md)</span><span class="sxs-lookup"><span data-stu-id="08cf2-114">[**ParagraphLineMetricsType**](paragraphlinemetricstype-complex-type.md) complexType</span></span> |
-| <span data-ttu-id="08cf2-115">Spazio dei nomi</span><span class="sxs-lookup"><span data-stu-id="08cf2-115">Namespace</span></span>    | <span data-ttu-id="08cf2-116">urn: schemas-microsoft-com: TabletPC: RichInk</span><span class="sxs-lookup"><span data-stu-id="08cf2-116">urn:schemas-microsoft-com:tabletpc:richink</span></span>                                            |
-| <span data-ttu-id="08cf2-117">Nome schema</span><span class="sxs-lookup"><span data-stu-id="08cf2-117">Schema name</span></span>  | <span data-ttu-id="08cf2-118">Lettore Journal</span><span class="sxs-lookup"><span data-stu-id="08cf2-118">Journal Reader</span></span>                                                                        |
+| <span data-ttu-id="a0992-115">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="a0992-115">Element type</span></span> | <span data-ttu-id="a0992-116">[**ComplexType ParagraphLineMetricsType**](paragraphlinemetricstype-complex-type.md)</span><span class="sxs-lookup"><span data-stu-id="a0992-116">[**ParagraphLineMetricsType**](paragraphlinemetricstype-complex-type.md) complexType</span></span> |
+| <span data-ttu-id="a0992-117">Spazio dei nomi</span><span class="sxs-lookup"><span data-stu-id="a0992-117">Namespace</span></span>    | <span data-ttu-id="a0992-118">urn:schemas-microsoft-com:tabletpc:richink</span><span class="sxs-lookup"><span data-stu-id="a0992-118">urn:schemas-microsoft-com:tabletpc:richink</span></span>                                            |
+| <span data-ttu-id="a0992-119">Nome schema</span><span class="sxs-lookup"><span data-stu-id="a0992-119">Schema name</span></span>  | <span data-ttu-id="a0992-120">Lettore journal</span><span class="sxs-lookup"><span data-stu-id="a0992-120">Journal Reader</span></span>                                                                        |
 
 
 
