@@ -1,17 +1,17 @@
 ---
-title: Funzioni di risorsa (menu e altre risorse)
-description: Funzioni di risorsa (menu e altre risorse)
+title: Funzioni delle risorse (menu e altre risorse)
+description: Funzioni delle risorse (menu e altre risorse)
 ms.assetid: dfeaaf01-f947-453e-946e-65ad9ec40958
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd8e550bd42afcb98d2a1d7b1117c6c93d19529c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ee066a6a111c911dd704997eeb7ed1c89ae1f417
+ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117529"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111550003"
 ---
-# <a name="resource-functions-menus-and-other-resources"></a>Funzioni di risorsa (menu e altre risorse)
+# <a name="resource-functions-menus-and-other-resources"></a>Funzioni delle risorse (menu e altre risorse)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,7 +22,7 @@ ms.locfileid: "108117529"
 -   [*EnumResNameProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumresnameproca)
 -   [**EnumResourceLanguages**](/windows/desktop/api/Winbase/nf-winbase-enumresourcelanguagesa)
 -   [**EnumResourceLanguagesEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcelanguagesexa)
--   [**EnumResourceNames**](/windows/desktop/api/Winbase/nf-winbase-enumresourcenamesa)
+-   [**EnumResourceNames**](/windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesa)
 -   [**EnumResourceNamesEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcenamesexa)
 -   [**EnumResourceTypes**](/windows/desktop/api/Winbase/nf-winbase-enumresourcetypesa)
 -   [**EnumResourceTypesEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcetypesexa)

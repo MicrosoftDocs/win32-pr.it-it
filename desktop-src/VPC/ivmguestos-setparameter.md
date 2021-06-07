@@ -1,11 +1,11 @@
 ---
-title: Metodo separameter IVMGuestOS (VPCCOMInterfaces. h)
+title: Metodo SetParameter IVMGuestOS (VPCCOMInterfaces.h)
 description: Imposta un parametro denominato all'interno del sistema operativo guest.
 ms.assetid: ed6ade61-19dc-44ac-9e86-29fffe80e874
 keywords:
-- Metodo separameter Virtual PC
-- Metodo separameter Virtual PC, interfaccia IVMGuestOS
-- Interfaccia IVMGuestOS Virtual PC, metodo separameter
+- Metodo SetParameter Virtual PC
+- Metodo SetParameter Virtual PC, interfaccia IVMGuestOS
+- Interfaccia IVMGuestOS Virtual PC, metodo SetParameter
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80dd2290578ef55d56e4c194e27102a1075d7a10
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2cc99d9b38ab43327b4a435c4128378d49682935
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517896"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386710"
 ---
-# <a name="ivmguestossetparameter-method"></a>Metodo IVMGuestOS:: separameter
+# <a name="ivmguestossetparameter-method"></a>Metodo IVMGuestOS::SetParameter
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Imposta un parametro denominato all'interno del sistema operativo guest.
 
@@ -45,14 +45,14 @@ HRESULT SetParameter(
 
 <dl> <dt>
 
-*Inparametername* \[ in\]
+*inParameterName* \[ Pollici\]
 </dt> <dd>
 
-Nome del parametro. Deve avere una lunghezza compresa tra 1 e 255 caratteri e non può contenere una barra rovesciata ( \) carattere.
+Nome del parametro. Deve avere una lunghezza compresa tra 1 e 255 caratteri e non può contenere una barra rovesciata ( \\ ).
 
 </dd> <dt>
 
-*inParameterValue* \[ in\]
+*inParameterValue* \[ Pollici\]
 </dt> <dd>
 
 Valore del parametro.
@@ -68,12 +68,12 @@ Questo metodo può restituire uno di questi valori.
 | Codice/valore restituito                                                                                                                                                                    | Descrizione                                                     |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                          | L'operazione è stata completata.<br/>                        |
-| <dl> <dt>**E \_**</dt> <dt>0x80000003</dt> INVALIDARG </dl>                         | Un parametro non è valido o non è specificato.<br/>           |
-| <dl> <dt>**Macchina virtuale \_ E \_ timeout \_**</dt> <dt>0xA0040202</dt> </dl>                     | L'operazione non è stata completata in modo tempestivo.<br/>   |
-| <dl> <dt>**Macchina virtuale \_ \_VM E \_ non \_ in esecuzione**</dt> <dt>0xA0040206</dt> </dl>               | La macchina virtuale (VM) non è in esecuzione.<br/>             |
-| <dl> <dt>**Macchina virtuale \_ 0xA00400507 \_ macchina virtuale E \_ sospesa**</dt> <dt></dt> </dl>                    | La macchina virtuale è sospesa.<br/>                                    |
-| <dl> <dt>**Macchina virtuale \_ E \_ funzionalità aggiuntive \_ \_ non \_ disponibili**</dt> <dt>0xA0040505</dt> </dl> | I componenti di integrazione non sono installati in questa macchina virtuale.<br/> |
-| <dl> <dt>**Disp \_ 0x80020009 \_ eccezione E**</dt> <dt></dt> </dl>                    | Si è verificato un errore imprevisto.<br/>                    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>                         | Parametro non valido o non specificato.<br/>           |
+| <dl> <dt>**Macchina virtuale \_ E \_ TIMEOUT \_ 0xA0040202**</dt> <dt></dt> </dl>                     | L'operazione non è stata completata in modo corretto.<br/>   |
+| <dl> <dt>**Macchina virtuale \_ E \_ MACCHINA VIRTUALE NON IN \_ \_ ESECUZIONE**</dt> <dt>0xA0040206</dt> </dl>               | La macchina virtuale (VM) non è in esecuzione.<br/>             |
+| <dl> <dt>**Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SOSPESA**</dt> <dt>0xA00400507</dt> </dl>                    | La macchina virtuale è sospesa.<br/>                                    |
+| <dl> <dt>**Macchina virtuale \_ FUNZIONALITÀ \_ DELLE AGGIUNTE E NON \_ \_ \_ 0XA0040505**</dt> <dt></dt> </dl> | I componenti di integrazione non sono installati in questa macchina virtuale.<br/> |
+| <dl> <dt>**DISP \_ E \_ ECCEZIONE**</dt> <dt>0x80020009</dt> </dl>                    | Si è verificato un errore imprevisto.<br/>                    |
 
 
 
@@ -81,13 +81,13 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene richiamato questo metodo, è necessario che la macchina virtuale sia in esecuzione e che i componenti di integrazione siano installati. Questo metodo è supportato solo per i sistemi operativi guest basati su Windows.
+La macchina virtuale deve essere in esecuzione e i componenti di integrazione devono essere installati quando viene richiamato questo metodo. Questo metodo è supportato solo per i sistemi operativi guest basati su Windows.
 
-Con i componenti di integrazione installati, la chiave seguente viene aggiunta automaticamente al registro di sistema del sistema operativo guest:
+Con i componenti di integrazione installati, la chiave seguente viene aggiunta automaticamente al Registro di sistema del sistema operativo guest:
 
-**HKEY \_ \_ computer locale \\ software \\ Microsoft \\ Virtual Machine \\ \\ parametri Guest**
+**HKEY \_ LOCAL MACHINE SOFTWARE Parametri guest macchina virtuale \_ \\ \\ \\ \\ \\ Microsoft**
 
-Quando viene avviato il sistema operativo guest, i valori stringa del registro di sistema seguenti vengono popolati nella chiave **Parameters** :
+All'avvio del sistema operativo guest, i valori della stringa del Registro di sistema seguenti vengono popolati nella **chiave Parameters:**
 
 -   **HostName**
 -   **PhysicalHostName**
@@ -100,12 +100,12 @@ Quando viene avviato il sistema operativo guest, i valori stringa del registro d
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS è definito come 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMGuestOS è definito come 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

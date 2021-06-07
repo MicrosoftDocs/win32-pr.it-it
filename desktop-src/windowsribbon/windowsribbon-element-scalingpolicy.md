@@ -3,7 +3,7 @@ title: Elemento ScalingPolicy
 description: Rappresenta un contenitore per le specifiche di ridimensionamento.
 ms.assetid: 133e7994-9901-43e8-82b0-3d910cf8758e
 keywords:
-- Barra multifunzione Windows elemento ScalingPolicy
+- Elemento ScalingPolicy barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f0d0f484ebded1233e3c64f6c7830882395b90a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 812256b0ff329073eb516c6ab2eb7501db8de40d
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718802"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444992"
 ---
 # <a name="scalingpolicy-element"></a>Elemento ScalingPolicy
 
@@ -42,7 +42,7 @@ Non ci sono attributi.
 
 | Elemento                                                                                       | Descrizione                                        |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Scalabilità**](windowsribbon-element-scale.md)<br/>                                       | Può essere presente una o più volte<br/> <br/> |
+| [**Scalabilità**](windowsribbon-element-scale.md)<br/>                                       | Può verificarsi una o più volte<br/> <br/> |
 | [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md)<br/> | Può verificarsi al massimo una volta<br/> <br/>      |
 
 
@@ -53,7 +53,7 @@ Non ci sono attributi.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Tab. ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> |
+| [**Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> |
 
 
 
@@ -61,22 +61,22 @@ Non ci sono attributi.
 
 Obbligatorio.
 
-Deve essere presente una sola volta per ogni [**Tab. ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md).
+Deve verificarsi una sola volta per [**ogni Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md).
 
-L'elemento **ScalingPolicy** contiene un manifesto di [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) e le dichiarazioni di [**scala**](windowsribbon-element-scale.md) che specificano le preferenze di layout adattivo per uno o più elementi [**Group**](windowsribbon-element-group.md) quando la barra multifunzione viene ridimensionata.
+**L'elemento ScalingPolicy** contiene un manifesto di [**dichiarazioni ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) e [**Scale**](windowsribbon-element-scale.md) che specificano le preferenze di layout adattive per uno o più elementi [**Group**](windowsribbon-element-group.md) quando la barra multifunzione viene ridimensionata.
 
-L'elenco delle dichiarazioni di [**scala**](windowsribbon-element-scale.md) deve essere in ordine decrescente di dimensioni valide (large, medium, Small, popup) per il [**SizeDefinition**](windowsribbon-element-sizedefinition.md) associato all'elemento del [**gruppo**](windowsribbon-element-group.md) .
+L'elenco [**di dichiarazioni Scale**](windowsribbon-element-scale.md) deve essere in ordine decrescente di dimensioni valide (Large, Medium, Small, Popup) per l'elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) associato all'elemento [**Group.**](windowsribbon-element-group.md)
 
 > [!Note]  
-> È consigliabile specificare i dettagli dei criteri di scalabilità adeguati in modo che una barra multifunzione sia in grado di eseguire il rendering senza barre di scorrimento se ridimensionato a una larghezza di 300 pixel a 96 punti per pollice (dpi).
+> È consigliabile che siano specificati dettagli adeguati dei criteri di ridimensionamento in modo che una barra multifunzione sia in grado di eseguire il rendering senza barre di scorrimento quando viene ridimensionata a una larghezza di 300 pixel a 96 punti per pollice (dpi).
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come è possibile personalizzare l'aspetto dei controlli in un [**gruppo**](windowsribbon-element-group.md) tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition**](windowsribbon-element-sizedefinition.md) della barra multifunzione.
+L'esempio seguente illustra come personalizzare l'aspetto dei controlli in [**un**](windowsribbon-element-group.md) gruppo tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition della**](windowsribbon-element-sizedefinition.md) barra multifunzione.
 
-Il manifesto **ScalingPolicy** in questo esempio specifica una preferenza [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una scheda **Home** . Inoltre, gli elementi di [**scala**](windowsribbon-element-scale.md) vengono specificati per influenzare il comportamento di compressione, in ordine di ridimensionamento decrescente, di ogni gruppo.
+Il **manifesto ScalingPolicy** in questo esempio specifica una preferenza [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una **scheda** Home. Inoltre, gli [**elementi Scale**](windowsribbon-element-scale.md) vengono specificati per influire sul comportamento di compressione, in ordine decrescente, di ogni gruppo.
 
 
 ```XML
@@ -144,20 +144,16 @@ Il manifesto **ScalingPolicy** in questo esempio specifica una preferenza [**Sca
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+- **Sistema minimo supportato:** Windows 7 
+- **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

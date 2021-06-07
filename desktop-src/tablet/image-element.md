@@ -1,19 +1,19 @@
 ---
-description: Contiene i dati binari codificati per un'immagine nel documento Journal, se presente.
+description: Contiene dati binari codificati per un'immagine nel documento Journal, se presenti.
 ms.assetid: fbb86bef-68f7-4aad-8a98-1c68e79ea2de
 title: Elemento immagine
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8437495a4c248a8e5bc68a0f7b75a2cf7d761387
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9dd3b37a39ce45ee0294f46922fbab376523b64
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314926"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432583"
 ---
 # <a name="image-element"></a>Elemento immagine
 
-Contiene i dati binari codificati per un'immagine nel documento Journal, se presente.
+Contiene dati binari codificati per un'immagine nel documento Journal, se presenti.
 
 ## <a name="definition"></a>Definizione
 
@@ -25,11 +25,11 @@ Contiene i dati binari codificati per un'immagine nel documento Journal, se pres
 
 [**Contenuto**](content-element--journal-reader.md)
 
-[**Nodo del gruppo**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
@@ -37,10 +37,10 @@ Nessuna.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**   | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di delimitazione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**    | **xs:integer**            | Necessario | Distanza tra l'origine e il punto superiore del rettangolo di delimitazione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di delimitazione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di delimitazione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
+| **Top**    | **xs:integer**            | Obbligatoria | Distanza tra l'origine e il punto in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
 
 
 
@@ -50,11 +50,11 @@ Nessuna.
 
 
 
-|              |                                                         |
+|  Elemento     | valore                                                     |
 |--------------|---------------------------------------------------------|
-| Tipo di elemento | ComplexType [**ImageType**](imagetype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk              |
-| Nome schema  | Lettore Journal                                          |
+| Tipo di elemento | [**complexType ImageType**](imagetype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink              |
+| Nome schema  | Lettore journal                                          |
 
 
 

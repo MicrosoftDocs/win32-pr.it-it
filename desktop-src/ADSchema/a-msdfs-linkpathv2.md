@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFS-Link-Path-V2
-description: Percorso collegamento DFS relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome spazio dei nomi DFS. Utilizzare le barre (/) anziché le barre rovesciate ( \) , in modo che le ricerche LDAP possano essere eseguite senza utilizzare caratteri di escape.
+title: Attributo ms-DFS-Link-Path-v2
+description: Percorso di collegamento DFS relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome spazio dei nomi DFS. Usare barre (/) anziché barre rovesciate ( , in modo che le ricerche LDAP possano essere eseguite senza la necessità di \) usare caratteri di escape.
 ms.assetid: 98fd6e99-0d7e-4ffa-b8ec-d26ca03ffead
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DFS-Link-Path-V2
-- msDFS-schema AD attributo LinkPathv2
+- Attributo ms-DFS-Link-Path-v2 Schema DI AD
+- Schema AD dell'attributo msDFS-LinkPathv2
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 892cee6a5e6f423a0ed750858e19e1accccbe45f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4659dbf00c6a53c77a23e98836ea1af4eeb4c38a
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123018"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386860"
 ---
-# <a name="ms-dfs-link-path-v2-attribute"></a>attributo ms-DFS-Link-Path-V2
+# <a name="ms-dfs-link-path-v2-attribute"></a>Attributo ms-DFS-Link-Path-v2
 
-Percorso collegamento DFS relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome spazio dei nomi DFS. Utilizzare le barre (/) anziché le barre rovesciate ( \) , in modo che le ricerche LDAP possano essere eseguite senza utilizzare caratteri di escape.
+Percorso di collegamento DFS relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome spazio dei nomi DFS. Usare barre (/) anziché barre rovesciate ( ), in modo che le ricerche LDAP possano essere eseguite senza la necessità di \\ usare caratteri di escape.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFS-Link-Path-V2                         |
-| LDAP-Display-Name | msDFS-LinkPathv2                            |
+| CN                | ms-DFS-Link-Path-v2                         |
+| Ldap-Display-Name | msDFS-LinkPathv2                            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2039                     |
-| System-ID-GUID    | 86b021f6-10ab-40a2-a252-1dc0cc3be6a9        |
+| System-Id-Guid    | 86b021f6-10ab-40a2-a252-1dc0cc3be6a9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Percorso collegamento DFS relativo alla condivisione di destinazione radice DFS,
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 0                                                                                                                      |
 | Range-Upper            | 32766                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**MS-DFS-deleted-link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Percorso collegamento DFS relativo alla condivisione di destinazione radice DFS,
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 0                                                                                                                      |
 | Range-Upper            | 32766                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**MS-DFS-deleted-link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Percorso collegamento DFS relativo alla condivisione di destinazione radice DFS,
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 0                                                                                                                      |
 | Range-Upper            | 32766                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**MS-DFS-deleted-link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> |
 
 
 

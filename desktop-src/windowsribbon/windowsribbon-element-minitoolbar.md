@@ -3,7 +3,7 @@ title: Elemento MiniToolbar
 description: Rappresenta una barra degli strumenti contestuale.
 ms.assetid: bb50890d-554a-4add-a583-d4fd48b823bf
 keywords:
-- Barra multifunzione Windows elemento MiniToolbar
+- Barra multifunzione di Windows per l'elemento MiniToolbar
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb5e4a27d10fe5233f8e7059bc9da8ecfd2fa383
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ceea8ba1a220674f177e740411bf98a13d7bfc2e
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104116957"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443262"
 ---
 # <a name="minitoolbar-element"></a>Elemento MiniToolbar
 
@@ -39,7 +39,7 @@ Rappresenta una barra degli strumenti contestuale.
 
 | Attributo           | Type                 | Obbligatoria       | Descrizione                                                                                                                                                                                                                |
 |---------------------|----------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nome**<br/> | xs:string<br/> | Sì<br/> | <dt> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl> |
+| **Nome**<br/> | xs:string<br/> | Sì<br/> | <dt> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Rappresenta una barra degli strumenti contestuale.
 
 | Elemento                                                         | Descrizione                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Deve essere presente almeno una volta<br/> <br/> |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 
@@ -67,24 +67,24 @@ Rappresenta una barra degli strumenti contestuale.
 
 facoltativo.
 
-Può essere presente una o più volte per ogni [**ContextPopup. MiniToolbars**](windowsribbon-element-contextpopup-minitoolbars.md).
+Può verificarsi una o più volte per [**ogni ContextPopup.MiniToolbars**](windowsribbon-element-contextpopup-minitoolbars.md).
 
-Diversamente dall'elemento [**ContextMenu**](windowsribbon-element-contextmenu.md) , il **MiniToolbar** rimane visibile quando si fa clic su un elemento sulla barra degli strumenti.
+A differenza [**dell'elemento ContextMenu,**](windowsribbon-element-contextmenu.md) **miniToolbar** rimane visibile quando si fa clic su un elemento sulla barra degli strumenti.
 
-Se viene visualizzato senza un oggetto [**ContextMenu**](windowsribbon-element-contextmenu.md), il **MiniToolbar** si dissolve quando il puntatore del mouse viene spostato fuori.
+Se viene visualizzato senza [**ContextMenu,**](windowsribbon-element-contextmenu.md) **miniToolbar** si dissolve quando il puntatore del mouse viene spostato.
 
 > [!Note]  
-> A causa di questo comportamento di dissolvenza, un oggetto [**ContextMenu**](windowsribbon-element-contextmenu.md) deve essere visualizzato in prossimità del puntatore del mouse.
+> A causa di questo comportamento di dissolvente, [**un contextMenu**](windowsribbon-element-contextmenu.md) deve essere visualizzato in prossimità del puntatore del mouse.
 
  
 
-Poiché i controlli in **MiniToolbar** non sono accessibili da tastiera, i comandi da essi esposti dovrebbero essere disponibili altrove nell'interfaccia utente della barra multifunzione.
+Poiché i controlli in **MiniToolbar** non sono accessibili tramite tastiera, i comandi che espongono devono essere disponibili altrove nell'interfaccia utente della barra multifunzione.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per una visualizzazione [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+L'esempio seguente illustra il markup di base per [**una visualizzazione ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-Questa sezione di codice mostra un set di dichiarazioni di controllo **MiniToolbar** .
+Questa sezione di codice illustra un set di **dichiarazioni di controllo MiniToolbar.**
 
 
 ```XML
@@ -173,20 +173,16 @@ Questa sezione di codice mostra un set di dichiarazioni di controllo **MiniToolb
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Controllo popup contesto](windowsribbon-controls-contextpopup.md)
+[Controllo Popup di contesto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

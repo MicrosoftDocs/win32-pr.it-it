@@ -1,9 +1,9 @@
 ---
-title: Row-elemento
+title: Elemento Row
 description: Rappresenta una riga di controlli in un modello di layout SizeDefinition personalizzato.
 ms.assetid: c3dac35f-3537-4eb7-b378-501ea88813f5
 keywords:
-- Barra multifunzione di Windows elemento riga
+- Barra multifunzione di Windows dell'elemento Row
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 83a0a5a9e7908cc1c8cff688b3fefc1e8910b6a4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7d642cd209b3e00e2c63f7376e321132a1c0e686
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299036"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111445022"
 ---
-# <a name="row-element"></a>Row-elemento
+# <a name="row-element"></a>Elemento Row
 
 Rappresenta una riga di controlli in un modello di layout SizeDefinition personalizzato.
 
@@ -42,8 +42,8 @@ Non ci sono attributi.
 
 | Elemento                                                                                 | Descrizione                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                   | Può essere presente una o più volte<br/> <br/> |
-| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                   | Può verificarsi una o più volte<br/> <br/> |
+| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -61,11 +61,11 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può essere presente una o più volte per ogni elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .
+Può verificarsi una o più volte per ogni [**elemento GroupSizeDefinition.**](windowsribbon-element-groupsizedefinition.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato a quattro pulsanti con vari elementi **Row** .
+L'esempio di codice seguente illustra il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) a quattro pulsanti personalizzato con vari **elementi Row.**
 
 
 ```XML
@@ -159,18 +159,17 @@ Nell'esempio di codice seguente viene illustrato il markup di base per un modell
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

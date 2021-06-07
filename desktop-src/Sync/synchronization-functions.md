@@ -4,12 +4,12 @@ ms.assetid: 9b6359c2-0113-49b6-83d0-316ad95aba1b
 title: Funzioni di sincronizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf235321914fd0e340e47d23095f3884f24d13c7
-ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
+ms.openlocfilehash: fba1fce45eeb602040c2bc9d60c9e1bfc63b246a
+ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "111349952"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111549983"
 ---
 # <a name="synchronization-functions"></a>Funzioni di sincronizzazione
 
@@ -18,14 +18,14 @@ Nella sincronizzazione vengono usate le funzioni seguenti.
 -   [Funzioni asincrone](#asynchronous-functions)
 -   [Variabili di condizione e funzioni di blocco SRW](#condition-variable-and-srw-lock-functions)
 -   [Funzioni della sezione critica](#critical-section-functions)
--   [Funzioni degli eventi](#event-functions)
+-   [Funzioni evento](#event-functions)
 -   [Funzioni di inizializzazione una sola volta](#one-time-initialization-functions)
--   [Funzioni interlock](#interlocked-functions)
+-   [Funzioni interlocked](#interlocked-functions)
 -   [Funzioni mutex](#mutex-functions)
 -   [Funzioni dello spazio dei nomi privato](#private-namespace-functions)
--   [Funzioni del semaforo](#semaphore-functions)
--   [Funzioni degli elenchi collegati in modo singly](#singly-linked-list-functions)
--   [Funzioni barriera di sincronizzazione](#synchronization-barrier-functions)
+-   [Funzioni semaforo](#semaphore-functions)
+-   [Funzioni di elenco collegate in modo insod tosto](#singly-linked-list-functions)
+-   [Funzioni di barriera di sincronizzazione](#synchronization-barrier-functions)
 -   [Funzioni timer coda timer](#timer-queue-timer-functions)
 -   [Funzioni di attesa](#wait-functions)
 -   [Funzioni waitable-timer](#waitable-timer-functions)
@@ -38,7 +38,7 @@ Nella sincronizzazione vengono usate le funzioni seguenti.
 |--------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | [**APCProc**](/windows/win32/api/winnt/nc-winnt-papcfunc)                             | Funzione di callback definita dall'applicazione usata con la [**funzione QueueUserAPC.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-queueuserapc) |
 | [**GetOverlappedResult**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult)     | Recupera i risultati di un'operazione sovrapposta.                                                     |
-| [**GetOverlappedResultEx**](/windows/desktop/api/Ioapiset/nf-ioapiset-getoverlappedresultex) | Recupera i risultati di un'operazione sovrapposta entro un intervallo di timeout specificato.                 |
+| [**GetOverlappedResultEx**](/windows/desktop/api/Ioapiset/nf-ioapiset-getoverlappedresultex) | Recupera i risultati di un'operazione sovrapposta all'interno di un intervallo di timeout specificato.                 |
 | [**QueueUserAPC**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-queueuserapc)                   | Aggiunge un oggetto APC (User-Mode Asynchronous Procedure Call) alla coda APC del thread specificato.   |
 
 
@@ -49,20 +49,20 @@ Nella sincronizzazione vengono usate le funzioni seguenti.
 
 
 
-| Variabile di condizione e funzione di blocco SRW                           | Descrizione                                                                                                                                       |
+| Variabile condizione e funzione di blocco SRW                           | Descrizione                                                                                                                                       |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AcquireSRWLockExclusive**](/windows/win32/api/synchapi/nf-synchapi-acquiresrwlockexclusive)         | Acquisisce un blocco SRW (Slim Reader/Writer) in modalità esclusiva.                                                                                       |
-| [**AcquireSRWLockShared**](/windows/win32/api/synchapi/nf-synchapi-acquiresrwlockshared)               | Acquisisce un blocco SRW (Slim Reader/Writer) in modalità condivisa.                                                                                          |
+| [**AcquireSRWLockExclusive**](/windows/win32/api/synchapi/nf-synchapi-acquiresrwlockexclusive)         | Acquisisce un blocco reader/writer (SRW) in modalità esclusiva.                                                                                       |
+| [**AcquireSRWLockShared**](/windows/win32/api/synchapi/nf-synchapi-acquiresrwlockshared)               | Acquisisce un blocco reader/writer (SRW) in modalità condivisa.                                                                                          |
 | [**InitializeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-initializeconditionvariable) | Inizializza una variabile di condizione.                                                                                                                 |
-| [**InitializeSRWLock**](/windows/win32/api/synchapi/nf-synchapi-initializesrwlock)                     | Inizializzare un blocco SRW (Slim Reader/Writer).                                                                                                       |
-| [**ReleaseSRWLockExclusive**](/windows/win32/api/synchapi/nf-synchapi-releasesrwlockexclusive)         | Rilascia un blocco SRW (Slim Reader/Writer) acquisito in modalità esclusiva.                                                                     |
-| [**ReleaseSRWLockShared**](/windows/win32/api/synchapi/nf-synchapi-releasesrwlockshared)               | Rilascia un blocco SRW (Slim Reader/Writer) acquisito in modalità condivisa.                                                                        |
-| [**SleepConditionVariableCS**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablecs)       | Sospensione della variabile di condizione specificata e rilascio della sezione critica specificata come operazione atomica.                                    |
-| [**SleepConditionVariableSRW**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablesrw)     | Sospensione della variabile di condizione specificata e rilascio del blocco specificato come operazione atomica.                                                |
-| [**TryAcquireSRWLockExclusive**](/windows/win32/api/synchapi/nf-synchapi-tryacquiresrwlockexclusive)   | Tenta di acquisire un blocco SRW (Slim Reader/Writer) in modalità esclusiva. Se la chiamata ha esito positivo, il thread chiamante diventa proprietario del blocco. |
-| [**TryAcquireSRWLockShared**](/windows/win32/api/synchapi/nf-synchapi-tryacquiresrwlockshared)         | Tenta di acquisire un blocco SRW (Slim Reader/Writer) in modalità condivisa. Se la chiamata ha esito positivo, il thread chiamante diventa proprietario del blocco.    |
+| [**InitializeSRWLock**](/windows/win32/api/synchapi/nf-synchapi-initializesrwlock)                     | Inizializzare un blocco reader/writer (SRW).                                                                                                       |
+| [**ReleaseSRWLockExclusive**](/windows/win32/api/synchapi/nf-synchapi-releasesrwlockexclusive)         | Rilascia un blocco reader/writer (SRW) acquisito in modalità esclusiva.                                                                     |
+| [**ReleaseSRWLockShared**](/windows/win32/api/synchapi/nf-synchapi-releasesrwlockshared)               | Rilascia un blocco reader/writer (SRW) acquisito in modalità condivisa.                                                                        |
+| [**SleepConditionVariableCS**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablecs)       | Sosleva la variabile di condizione specificata e rilascia la sezione critica specificata come operazione atomica.                                    |
+| [**SleepConditionVariableSRW**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablesrw)     | Sosleva la variabile di condizione specificata e rilascia il blocco specificato come operazione atomica.                                                |
+| [**TryAcquireSRWLockExclusive**](/windows/win32/api/synchapi/nf-synchapi-tryacquiresrwlockexclusive)   | Tenta di acquisire un blocco reader/writer (SRW) in modalità esclusiva. Se la chiamata ha esito positivo, il thread chiamante assume la proprietà del blocco. |
+| [**TryAcquireSRWLockShared**](/windows/win32/api/synchapi/nf-synchapi-tryacquiresrwlockshared)         | Tenta di acquisire un blocco reader/writer (SRW) in modalità condivisa. Se la chiamata ha esito positivo, il thread chiamante assume la proprietà del blocco.    |
 | [**WakeAllConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-wakeallconditionvariable)       | Riattiva tutti i thread in attesa della variabile di condizione specificata.                                                                                     |
-| [**WakeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-wakeconditionvariable)             | Riattivare un singolo thread in attesa sulla variabile di condizione specificata.                                                                                 |
+| [**WakeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-wakeconditionvariable)             | Riattivare un singolo thread in attesa della variabile di condizione specificata.                                                                                 |
 
 
 
@@ -72,29 +72,29 @@ Nella sincronizzazione vengono usate le funzioni seguenti.
 
 
 
-| Funzione di sezione critica                                                              | Descrizione                                                                             |
+| Funzione della sezione critica                                                              | Descrizione                                                                             |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | [**DeleteCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection)                                 | Rilascia tutte le risorse usate da un oggetto sezione critica senzawned.                      |
 | [**EnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection)                                   | Attende la proprietà dell'oggetto sezione critica specificato.                           |
 | [**InitializeCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection)                         | Inizializza un oggetto sezione critica.                                                  |
-| [**InitializeCriticalSectionAndSpinCount**](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsectionandspincount) | Inizializza un oggetto sezione critica e imposta il numero di spin per la sezione critica. |
-| [**InitializeCriticalSectionEx**](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsectionex)                     | Inizializza un oggetto sezione critica con un numero di spin e flag facoltativi.             |
+| [**InitializeCriticalSectionAndSpinCount**](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsectionandspincount) | Inizializza un oggetto sezione critica e imposta il numero di rotazioni per la sezione critica. |
+| [**InitializeCriticalSectionEx**](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsectionex)                     | Inizializza un oggetto sezione critica con un numero di rotazioni e flag facoltativi.             |
 | [**LeaveCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection)                                   | Rilascia la proprietà dell'oggetto sezione critica specificato.                            |
-| [**SetCriticalSectionSpinCount**](/windows/win32/api/synchapi/nf-synchapi-setcriticalsectionspincount)                     | Imposta il numero di spin per la sezione critica specificata.                                 |
-| [**TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection)                             | Tenta di immettere una sezione critica senza bloccarsi.                                  |
+| [**SetCriticalSectionSpinCount**](/windows/win32/api/synchapi/nf-synchapi-setcriticalsectionspincount)                     | Imposta il numero di rotate per la sezione critica specificata.                                 |
+| [**TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection)                             | Tenta di accedere a una sezione critica senza blocco.                                  |
 
 
 
  
 
-## <a name="event-functions"></a>Funzioni degli eventi
+## <a name="event-functions"></a>Funzioni evento
 
 
 
 | Funzione event                         | Descrizione                                                                                                                                                  |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa)     | Crea o apre un oggetto evento denominato o senza nome.                                                                                                            |
-| [**CreateEventEx**](/windows/win32/api/synchapi/nf-synchapi-createeventexa) | Crea o apre un oggetto evento denominato o senza nome e restituisce un handle per l'oggetto .                                                                         |
+| [**CreateEventEx**](/windows/win32/api/synchapi/nf-synchapi-createeventexa) | Crea o apre un oggetto evento denominato o senza nome e restituisce un handle all'oggetto .                                                                         |
 | [**OpenEvent**](/windows/win32/api/synchapi/nf-synchapi-openeventa)         | Apre un oggetto evento denominato esistente.                                                                                                                        |
 | [**PulseEvent**](/windows/desktop/api/WinBase/nf-winbase-pulseevent)       | Imposta l'oggetto evento specificato sullo stato segnalato e quindi lo reimposta sullo stato non segnalato dopo il rilascio del numero appropriato di thread in attesa. |
 | [**ResetEvent**](/windows/win32/api/synchapi/nf-synchapi-resetevent)       | Imposta l'oggetto evento specificato sullo stato non associato.                                                                                                    |
@@ -357,7 +357,7 @@ Nella sincronizzazione vengono usate le funzioni seguenti.
 | [**ChangeTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-changetimerqueuetimer) | Aggiorna un timer della coda timer. |
 | [**CreateTimerQueue**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueue)           | Crea una coda per i timer.  |
 | [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) | Crea un timer della coda timer. |
-| [**DeleteTimerQueue**](/windows/desktop/api/WinBase/nf-winbase-deletetimerqueue)           | Elimina una coda timer.       |
+| [**DeleteTimerQueue**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueue)           | Elimina una coda timer.       |
 | [**DeleteTimerQueueEx**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueueex)       | Elimina una coda timer.       |
 | [**DeleteTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueuetimer) | Annulla un timer della coda del timer. |
 
@@ -380,9 +380,9 @@ Nella sincronizzazione vengono usate le funzioni seguenti.
 | [**Waitformultipleobjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects)           | Attende che uno o tutti gli oggetti specificati siano nello stato segnalato o che sia trascorso l'intervallo di timeout.                                                                                                                                                |
 | [**WaitForMultipleObjectsEx**](/windows/win32/api/winuser/nf-winuser-msgwaitformultipleobjectsex)       | Attende che uno o tutti gli oggetti specificati siano nello stato segnalato, che una routine di completamento I/O o una chiamata di procedura asincrona (APC) non sia accodata al thread o che sia trascorso l'intervallo di timeout.                                                       |
 | [**WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-waitforsingleobject)                 | Attende che l'oggetto specificato sia nello stato segnalato o che sia trascorso l'intervallo di timeout.                                                                                                                                                                |
-| [**WaitForSingleObjectEx**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex)             | Attende che l'oggetto specificato sia nello stato segnalato, che una routine di completamento I/O o una chiamata di procedura asincrona (APC) non sia accodata al thread o che sia trascorso l'intervallo di timeout.                                                                       |
+| [**WaitForSingleObjectEx**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex)             | Attende che l'oggetto specificato si trova nello stato segnalato, che una routine di completamento I/O o una chiamata di procedura asincrona (APC) non sia accodata al thread o che sia trascorso l'intervallo di timeout.                                                                       |
 | [**WaitOnAddress**](/windows/desktop/api/SynchAPI/nf-synchapi-waitonaddress)                             | Attende la modifica del valore in corrispondenza dell'indirizzo specificato.                                                                                                                                                                                                    |
-| [**Waitortimercallback**](/previous-versions/windows/desktop/legacy/ms687066(v=vs.85))                 | Funzione definita dall'applicazione che funge da indirizzo iniziale per un callback timer o un callback di attesa registrato.                                                                                                                                    |
+| [**Waitortimercallback**](/previous-versions/windows/desktop/legacy/ms687066(v=vs.85))                 | Funzione definita dall'applicazione che funge da indirizzo iniziale per un callback del timer o un callback di attesa registrato.                                                                                                                                    |
 | [**WakeByAddressAll**](/windows/desktop/api/SynchAPI/nf-synchapi-wakebyaddressall)                       | Riattiva tutti i thread in attesa della modifica del valore di un indirizzo.                                                                                                                                                                                           |
 | [**WakeByAddressSingle**](/windows/desktop/api/SynchAPI/nf-synchapi-wakebyaddresssingle)                 | Riattiva un thread in attesa della modifica del valore di un indirizzo.                                                                                                                                                                                              |
 
@@ -397,12 +397,12 @@ Nella sincronizzazione vengono usate le funzioni seguenti.
 | Funzione waitable-timer                                | Descrizione                                                                                                       |
 |--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | [**CancelWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-cancelwaitabletimer)     | Imposta il timer waitable specificato sullo stato inattivo.                                                          |
-| [**CreateWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw)     | Crea o apre un oggetto timer waitable.                                                                         |
-| [**CreateWaitableTimerEx**](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerexw) | Crea o apre un oggetto timer waitable e restituisce un handle per l'oggetto .                                      |
+| [**CreateWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw)     | Crea o apre un oggetto timer in attesa.                                                                         |
+| [**CreateWaitableTimerEx**](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerexw) | Crea o apre un oggetto timer attendebile e restituisce un handle all'oggetto .                                      |
 | [**OpenWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-openwaitabletimerw)         | Apre un oggetto timer waitable denominato esistente.                                                                    |
 | [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer)           | Attiva il timer waitable specificato.                                                                           |
 | [**SetWaitableTimerEx**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimerex)       | Attiva il timer waitable specificato e fornisce informazioni sul contesto per il timer. .                          |
-| [**TimerAPCProc**](/windows/win32/api/synchapi/nc-synchapi-ptimerapcroutine)                   | Routine di completamento del timer definita dall'applicazione utilizzata con la [**funzione SetWaitableTimer.**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) |
+| [**TimerAPCProc**](/windows/win32/api/synchapi/nc-synchapi-ptimerapcroutine)                   | Routine di completamento timer definita dall'applicazione usata con la [**funzione SetWaitableTimer.**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Indica che il gruppo è stato propagato.
+description: Indica che il gruppo è stato ridisposizione.
 ms.assetid: bf4b9916-737c-4efe-8e93-da85df5f0567
-title: Elemento reflow
+title: Elemento Reflow
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 635bf723be0a153bd7c42aa8f17b29d6f171367f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c16a6754182d82d92bfc77a8107cc25aecc8c9c
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485844"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432113"
 ---
-# <a name="reflow-element"></a>Elemento reflow
+# <a name="reflow-element"></a>Elemento Reflow
 
-Indica che il gruppo è stato propagato.
+Indica che il gruppo è stato ridisposizione.
 
 ## <a name="definition"></a>Definizione
 
@@ -23,25 +23,25 @@ Indica che il gruppo è stato propagato.
 
 ## <a name="parent-elements"></a>Elementi padre
 
-Vedere il tipo di [**gruppo ContentGroup**](contentgroup-group.md) .
+Vedere il [**tipo di gruppo ContentGroup.**](contentgroup-group.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Vedere il tipo di [**gruppo ContentGroup**](contentgroup-group.md) .
+Vedere il [**tipo di gruppo ContentGroup.**](contentgroup-group.md)
 
 ## <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|              |                                                           |
+|  Elemento     | valore                                                     |
 |--------------|-----------------------------------------------------------|
-| Tipo di elemento | ComplexType [**ReflowType**](reflowtype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                |
-| Nome schema  | Lettore Journal                                            |
+| Tipo di elemento | [**ComplexType ReflowType**](reflowtype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                |
+| Nome schema  | Lettore journal                                            |
 
 
 

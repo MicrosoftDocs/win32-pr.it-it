@@ -1,19 +1,19 @@
 ---
-description: Definisce un gruppo che contiene un set di contenuto raggruppato in una nota del journal.
+description: Definisce un gruppo che contiene un set di contenuto raggruppato in una nota journal.
 ms.assetid: e2561be1-03ce-41f7-9ad4-197d75411c48
 title: Gruppo ContentGroup
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fbbc13a3dee796646b6d61ac9ba0bde50880f12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02e4291da1912c43674871c06fb803e1936f7178
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057894"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432613"
 ---
 # <a name="contentgroup-group"></a>Gruppo ContentGroup
 
-Definisce un gruppo che contiene un set di contenuto raggruppato in una nota del journal.
+Definisce un gruppo che contiene un set di contenuto raggruppato in una nota journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -34,11 +34,11 @@ Definisce un gruppo che contiene un set di contenuto raggruppato in una nota del
 
 ## <a name="child-elements"></a>Elementi figlio
 
-[**Nodo del gruppo**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 [**Paragraph**](paragraph-element.md)
 
-[**InkWord**](inkword-element.md)
+[**Inkword**](inkword-element.md)
 
 [**Disegno**](drawing-element.md)
 
@@ -46,18 +46,18 @@ Definisce un gruppo che contiene un set di contenuto raggruppato in una nota del
 
 [**Immagine**](docimage-element.md)
 
-[**Contrassegno**](flag-element.md)
+[**Bandiera**](flag-element.md)
 
 ## <a name="attributes"></a>Attributi
 
 
 
-| Attributo  | Type                      | Obbligatoria | Descrizione                                                                                        | PossibleValues                       |
+| Attributo  | Type                      | Obbligatoria | Descrizione                                                                                        | Valori possibili                       |
 |------------|---------------------------|----------|----------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Sinistra**   | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di delimitazione per l'elemento.<br/> | Qualsiasi numero intero.<br/>              |
-| **Top**    | **xs:integer**            | Necessario | Distanza tra l'origine e il punto superiore del rettangolo di delimitazione per l'elemento.<br/>  | Qualsiasi numero intero.<br/>              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di delimitazione per l'elemento.<br/>                                          | Qualsiasi numero intero non negativo.<br/> |
-| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di delimitazione per l'elemento.<br/>                                         | Qualsiasi numero intero non negativo.<br/> |
+| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento.<br/> | Qualsiasi numero intero.<br/>              |
+| **Top**    | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più in alto nel rettangolo di selezione per l'elemento.<br/>  | Qualsiasi numero intero.<br/>              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.<br/>                                          | Qualsiasi numero intero non negativo.<br/> |
+| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.<br/>                                         | Qualsiasi numero intero non negativo.<br/> |
 
 
 
@@ -67,10 +67,10 @@ Definisce un gruppo che contiene un set di contenuto raggruppato in una nota del
 
 
 
-|             |                                            |
+|  Elemento     | valore                                                     |
 |-------------|--------------------------------------------|
-| Spazio dei nomi   | urn: schemas-microsoft-com: TabletPC: RichInk |
-| Nome schema | Lettore Journal                             |
+| Spazio dei nomi   | urn:schemas-microsoft-com:tabletpc:richink |
+| Nome schema | Lettore journal                             |
 
 
 

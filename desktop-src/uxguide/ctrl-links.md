@@ -1,29 +1,29 @@
 ---
 title: Collegamenti
-description: Con un collegamento, gli utenti possono passare a un'altra pagina, a una finestra o a un argomento della Guida; visualizzare una definizione; avviare un comando; in alternativa, scegliere un'opzione.
+description: Con un collegamento, gli utenti possono passare a un'altra pagina, finestra o argomento della Guida. visualizzare una definizione; avviare un comando; o scegliere un'opzione.
 ms.assetid: a23748e4-b2dd-4b9f-9a7c-ff6533922c8c
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 521f96146de535210d79814b375499ea34399179
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 161313008612d04b5009942f82f662888d1ffd35
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104565536"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524256"
 ---
 # <a name="links"></a>Collegamenti
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti](/windows/uwp/design/).
+> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-Con un *collegamento*, gli utenti possono passare a un'altra pagina, a una finestra o a un argomento della Guida; visualizzare una definizione; avviare un comando; in alternativa, scegliere un'opzione. Un collegamento è un testo o un elemento grafico che indica che è possibile fare clic su di esso, in genere visualizzando utilizzando i colori del [sistema di collegamento](vis-color.md)visitati o non visitati. Tradizionalmente, i collegamenti sono sottolineati, ma questo approccio è spesso superfluo e non è più adatto per ridurre il disordine visivo.
+Con un *collegamento*, gli utenti possono passare a un'altra pagina, finestra o argomento della Guida. visualizzare una definizione; avviare un comando; o scegliere un'opzione. Un collegamento è un testo o un elemento grafico che indica che è possibile fare clic su di esso, in genere visualizzando i colori del sistema dei collegamenti visitati o [non supervisionati.](vis-color.md) Tradizionalmente, anche i collegamenti sono sottolineati, ma questo approccio è spesso superfluo e non favorisce la riduzione del disordine visivo.
 
-Quando si passa il mouse su un collegamento, il testo del collegamento viene visualizzato come sottolineato (se non era già presente) e la forma del puntatore passa a una [mano](inter-mouse.md).
+Quando gli utenti passano il puntatore del mouse su un collegamento, il testo del collegamento viene visualizzato come sottolineato (se non lo era già) e la forma del puntatore assume la forma di una [mano.](inter-mouse.md)
 
-Un collegamento di testo è il controllo selezionabile con il peso più chiaro e viene spesso utilizzato per ridurre la complessità visiva di una progettazione.
+Un collegamento di testo è il controllo selezionabile con il peso più leggero e viene spesso usato per ridurre la complessità visiva di una progettazione.
 
 > [!Note]  
-> Le linee guida correlate ai collegamenti e al [layout](vis-layout.md) del [comando](ctrl-command-links.md) sono presentate in articoli distinti.
+> Le linee guida relative [ai collegamenti ai comandi](ctrl-command-links.md) e al [layout](vis-layout.md) sono presentate in articoli separati.
 
  
 
@@ -31,90 +31,90 @@ Un collegamento di testo è il controllo selezionabile con il peso più chiaro e
 
 Per decidere, prendi in considerazione queste domande:
 
--   **È il collegamento utilizzato per passare a un'altra pagina, a una finestra o a un argomento della Guida; visualizzare una definizione; avviare un comando; oppure scegliere un'opzione?** Se non è così, usa un altro controllo.
--   **Un pulsante di comando è la scelta migliore?** Usare un [pulsante di comando](ctrl-command-buttons.md) se:
+-   **Collegamento usato per passare a un'altra pagina, finestra o argomento della Guida. visualizzare una definizione; avviare un comando; o scegliere un'opzione?** Se non è così, usa un altro controllo.
+-   **Un pulsante di comando è una scelta migliore?** Usare un [pulsante di comando](ctrl-command-buttons.md) se:
     -   Il controllo avvia un'azione immediata, inclusa la visualizzazione di una finestra, e tale comando è correlato allo scopo principale della finestra.
-    -   Viene visualizzata una finestra per raccogliere l'input o le scelte, anche se per un comando secondario.
-    -   L'etichetta è breve, composta da quattro o meno parole, evitando così l'aspetto imbarazzante dei pulsanti lunghi.
+    -   Viene visualizzata una finestra per raccogliere input o effettuare scelte, anche se per un comando secondario.
+    -   L'etichetta è breve, costituita da quattro o meno parole, evitando così l'aspetto scomodo dei pulsanti lunghi.
     -   Il comando non è inline.
     -   Il controllo viene visualizzato all'interno di un gruppo di altri pulsanti di comando correlati.
-    -   L'azione è distruttiva o irreversibile. Poiché gli utenti associano i collegamenti con la navigazione (e la possibilità di eseguire il backup), i collegamenti non sono appropriati per i comandi con conseguenze significative.
-    -   Analogamente, in una [procedura guidata](win-wizards.md) o un [flusso di attività](glossary.md), il comando rappresenta l'impegno. In tali finestre, i pulsanti di comando suggeriscono un impegno mentre i collegamenti suggeriscono lo spostamento al passaggio successivo.
+    -   L'azione è distruttiva o irreversibile. Poiché gli utenti associano i collegamenti alla navigazione (e la possibilità di eseguire il back-out), i collegamenti non sono appropriati per i comandi con conseguenze significative.
+    -   Analogamente, in una procedura [guidata o](win-wizards.md) in un flusso [di attività,](glossary.md)il comando rappresenta l'impegno. In tali finestre i pulsanti di comando suggeriscono impegno, mentre i collegamenti suggeriscono di passare al passaggio successivo.
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
-**Creazione di collegamenti riconoscibili**
+**Rendere i collegamenti riconoscibili**
 
-I collegamenti non dispongono di [convenienza](glossary.md), il che significa che **le proprietà visive non suggeriscono come vengono usate** e sono comprese solo tramite esperienza. I collegamenti senza una sottolineatura e i colori del sistema di collegamento vengono visualizzati come testo normale; l'unico modo per verificare il comportamento è dalla presentazione, dal contesto o dal posizionamento del puntatore su di essi.
+I collegamenti non [dispongono di affordance,](glossary.md)il che significa che **le relative proprietà** visive non suggeriscono come vengono usati e sono compresi solo tramite esperienza. I collegamenti senza sottolineatura e i colori di sistema dei collegamenti vengono visualizzati come testo normale. l'unico modo per verificarne il comportamento è dalla presentazione, dal contesto o posizionando il puntatore su di essi.
 
-Sorprendentemente, questa mancanza di convenienza è spesso una motivazione per l'uso dei collegamenti perché appaiono così leggeri, riducendo così la complessità visiva di una progettazione. I collegamenti eliminano il frame visivamente intenso usato dai [pulsanti di comando](ctrl-command-buttons.md) e dal bordo usati da altri controlli. Ad esempio, anche se è possibile usare i pulsanti di comando per rendere evidenti i comandi primari, è possibile scegliere i collegamenti per i comandi secondari per deaccentuarli.
+Sorprendentemente, questa mancanza di convenienza è spesso una motivazione per l'uso dei collegamenti perché appaiono così leggeri, riducendo così la complessità visiva di una progettazione. I collegamenti eliminano la cornice visivamente pesante usata dai [pulsanti di comando](ctrl-command-buttons.md) e dai bordi usati da altri controlli. Ad esempio, anche se è possibile usare i pulsanti di comando per rendere ovvi i comandi principali, è possibile scegliere i collegamenti per i comandi secondari per de-enfatizzarli.
 
-Il problema è quindi tenere traccia di un numero sufficiente di indizi visivi, in modo che gli utenti possano riconoscere i collegamenti. Le linee guida fondamentali sono **gli utenti che devono essere in grado di riconoscere i collegamenti solo tramite l'ispezione visiva, non devono passare il puntatore su un oggetto o fare clic su di esso per determinare se si tratta di un collegamento**.
+La sfida consiste quindi nel mantenere un numero sufficiente di indizi visivi in modo che gli utenti possano riconoscere i collegamenti. La linea guida fondamentale è che gli utenti devono essere in grado di riconoscere i collegamenti solo tramite ispezione visiva e non devono passare il puntatore del mouse su un oggetto o fare clic su di esso per determinare se si tratta di **un collegamento**.
 
-Se il collegamento USA i [colori del sistema di collegamento](vis-color.md) e almeno uno dei seguenti indizi visivi, gli utenti possono riconoscere un collegamento solo tramite l'ispezione visiva:
+Gli utenti possono riconoscere un collegamento solo [](vis-color.md) tramite ispezione visiva se il collegamento usa i colori del sistema di collegamento e almeno uno degli indizi visivi seguenti:
 
 -   Testo sottolineato.
--   Grafico o punto elenco, ad esempio con il [testo con il modello di collegamento all'icona](#usage-patterns) .
--   Selezione host all'interno di un percorso, un'opzione o un percorso di comando standard, ad esempio l' [area del contenuto](glossary.md) di una finestra o in una barra di navigazione, una barra dei menu, una barra degli strumenti o un piè di pagina.
+-   Un elemento grafico o un punto elenco, ad esempio con il [testo con il modello di collegamento icona.](#usage-patterns)
+-   Posizionamento all'interno di una posizione standard di navigazione, opzione o comando, ad esempio [l'area](glossary.md) del contenuto di una finestra o in una barra di spostamento, una barra dei menu, una barra degli strumenti o un piè di pagina.
 
-Gli utenti possono anche riconoscere un collegamento mediante l'ispezione visiva con i seguenti indizi visivi, ma questi indizi non sono sufficienti da soli:
+Gli utenti possono anche riconoscere un collegamento tramite ispezione visiva con gli indizi visivi seguenti, ma questi indizi non sono sufficienti da soli:
 
--   Testo che suggerisce di fare clic, ad esempio un comando che inizia con un verbo imperativo come mostra, stampa, copia o Elimina.
+-   Testo che suggerisce di fare clic, ad esempio un comando che inizia con un verbo imperativo come Show, Print, Copy o Delete.
 -   Posizionamento all'interno di un blocco di testo normale.
 
-Naturalmente, gli utenti possono sempre determinare un collegamento tramite l'interazione con il puntatore del mouse o facendo clic su di esso. Se l'individuazione di un collegamento non è necessaria per le attività significative, è possibile delineare tali collegamenti.
+Naturalmente, gli utenti possono sempre determinare un collegamento tramite l'interazione al passaggio del mouse o facendo clic. Se l'individuazione di un collegamento non è necessaria per attività significative, è possibile de-evidenziare tali collegamenti.
 
-![screenshot delle etichette grigio sullo sfondo nero ](images/ctrl-links-image1.png)
+![Screenshot di etichette grigie su sfondo nero ](images/ctrl-links-image1.png)
 
-In questo esempio, contattaci, condizioni per l'utilizzo, marchi e informativa sulla privacy sono collegamenti. Sono delineati intenzionalmente perché non sono necessari per le attività importanti. Gli unici indizi che sono collegamenti sono che hanno un puntatore del mouse al passaggio del mouse e sono posizionati in un'area di navigazione standard nella parte inferiore della finestra.
+In questo esempio, Contattaci, Condizioni per l'utilizzo, Marchi e Informativa sulla privacy sono collegamenti. Vengono intenzionalmente de-sottolineate perché non sono necessarie per attività importanti. Gli unici indizi che si tratta di collegamenti sono che hanno un puntatore del mouse al passaggio del mouse e sono posizionati in un'area di spostamento standard nella parte inferiore della finestra.
 
 **Creazione di collegamenti specifici, pertinenti e prevedibili**
 
-Il testo del collegamento indicherà il risultato della selezione del collegamento.
+Il testo del collegamento dovrebbe indicare il risultato del clic sul collegamento.
 
-I collegamenti specifici sono più interessanti per gli utenti rispetto ai collegamenti generali. utilizzare quindi le etichette dei collegamenti **che forniscono informazioni descrittive specifiche sul risultato della selezione del collegamento**. Tuttavia, assicurarsi che il testo del collegamento non sia così specifico che è fuorviante e che sconsiglia l'uso corretto.
+I collegamenti specifici sono più interessanti per gli utenti rispetto ai collegamenti generali, quindi usare etichette di collegamento che forniscono informazioni descrittive specifiche sul risultato del clic **sul collegamento.** Assicurarsi tuttavia che il testo del collegamento non sia così specifico da essere fuorviante e sconsiglia l'uso corretto.
 
-È più probabile che i collegamenti concisi siano letti rispetto ai collegamenti dettagliati. **Eliminare il testo e i dettagli superflui.** Le etichette di collegamento non devono essere complete.
+È più probabile che i collegamenti concisi siano letti rispetto ai collegamenti dettagliati. **Eliminare testo e dettagli non necessari.** Le etichette di collegamento non devono essere complete.
 
 Per valutare il testo del collegamento:
 
--   Verificare che il testo del collegamento rispecchi gli scenari supportati dal collegamento.
--   Verificare che i risultati del collegamento siano prevedibili. I risultati non devono essere sorpresi dagli utenti.
+-   Assicurarsi che il testo del collegamento rifletta gli scenari supportati dal collegamento.
+-   Assicurarsi che i risultati del collegamento siano prevedibili. Gli utenti non devono essere sorprese dai risultati.
 
-**Se si eseguono solo due operazioni...**
+**Se si eservino solo due operazioni...**
 
-1. Rendere individuabili i collegamenti solo tramite controllo visivo. Gli utenti non devono interagire con il programma per trovare i collegamenti.
+1. Rendere i collegamenti individuabili solo tramite ispezione visiva. Gli utenti non devono interagire con il programma per trovare i collegamenti.
 
-2. Usare i collegamenti che forniscono informazioni descrittive specifiche sul risultato della selezione del collegamento, usando la quantità di testo necessaria. Gli utenti devono essere in grado di prevedere accuratamente il risultato di un collegamento dal testo del collegamento e da [infotip](ctrl-tooltips-and-infotips.md)facoltativi.
+2. Usare collegamenti che forniscono informazioni descrittive specifiche sul risultato del clic sul collegamento, usando il testo necessario. Gli utenti devono essere in grado di stimare in modo accurato il risultato di un collegamento dal testo del collegamento e dalla descrizione [comando facoltativa.](ctrl-tooltips-and-infotips.md)
 
 ## <a name="usage-patterns"></a>Modelli di utilizzo
 
-I collegamenti includono diversi modelli funzionali:
+I collegamenti hanno diversi modelli funzionali:
 
 
 
-|                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|    Utilizzo                  |    Esempio   |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Collegamenti di navigazione**<br/> Un collegamento usato per passare a un'altra pagina o a un'altra finestra. <br/>                                                      | Facendo clic sul collegamento si passa a un'altra pagina, come in una finestra del browser o in una procedura guidata. in alternativa, viene visualizzata una nuova finestra. A differenza dei collegamenti alle attività, la navigazione non avvia un'attività ma passa semplicemente a un'altra posizione o procede con un'attività già in corso. La navigazione implica la sicurezza perché l'utente può sempre tornare indietro.<br/> Titoli di notizie<br/> In questo esempio, facendo clic sul collegamento si passa alla pagina dei titoli delle notizie.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Collegamenti alle attività**<br/> Collegamento utilizzato per avviare un nuovo comando. <br/>                                                                        | Facendo clic sul collegamento viene eseguito immediatamente un comando oppure viene visualizzata una finestra di dialogo o una pagina per raccogliere più input. A differenza dei collegamenti di navigazione, i collegamenti alle attività avviano una nuova attività anziché continuare con un'attività esistente. Le attività non implicano che safetyusers non possa ripristinare lo stato precedente con un comando back. I collegamenti alle attività sono così chiamati per evitare confusione con i [collegamenti ai comandi](ctrl-command-links.md). <br/> Accedi<br/> In questo esempio, facendo clic sul collegamento viene avviato un comando di accesso.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Collegamenti alla guida**<br/> Collegamento di testo utilizzato per visualizzare un argomento della guida. <br/>                                                                     | Facendo clic sul collegamento viene visualizzato un articolo della Guida in una finestra separata.<br/> Che cos'è una password complessa?<br/> In questo esempio, facendo clic sul collegamento viene visualizzata una finestra della guida con l'argomento specificato.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Collegamenti alla definizione**<br/> un collegamento di testo usato per visualizzare una definizione in un infotip quando l'utente fa clic su o passa il puntatore del mouse sul collegamento. <br/> | Questo modello è utile per definire i termini che potrebbero non essere noti agli utenti senza aggiungere disordine dello schermo.<br/> ![Screenshot di infotip visualizzato dal passaggio del mouse ](images/ctrl-links-image2.png)<br/> In questo esempio viene visualizzata la definizione infotip. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Collegamenti a menu**<br/> set di collegamenti alle attività usato per creare un menu. <br/>                                                                    | Poiché il contesto del menu indica un set di collegamenti, il testo non è in genere sottolineato (eccetto al passaggio del mouse) e potrebbe non usare i colori del sistema di collegamento.<br/> ![Screenshot di un set di collegamenti ](images/ctrl-links-image3.png)<br/> In questo esempio, un set di collegamenti crea un menu.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Collegamenti alle opzioni**<br/> opzione selezionata o segnaposto, in cui fare clic sul collegamento richiama un comando per modificare tale opzione.<br/>       | a differenza dei collegamenti di testo normali, il collegamento modifica il testo in modo che corrisponda all'opzione attualmente selezionata e viene sempre disegnato usando il colore del collegamento non visitato. <br/> ![Screenshot di una regola nella procedura guidata delle regole di Outlook ](images/ctrl-links-image4.png)<br/> Nell'esempio a sinistra viene visualizzata una regola della procedura guidata delle regole di Microsoft Outlook con le opzioni segnaposto. Quando gli utenti fanno clic sui collegamenti e selezionano alcune opzioni, nell'esempio a destra viene aggiornato il testo del collegamento per visualizzare i risultati.<br/> l'uso di collegamenti di opzione è particolarmente adatto se le opzioni hanno un formato variabile. <br/> ![Screenshot di una regola modificata nella creazione guidata delle regole ](images/ctrl-links-image5.png)<br/> L'esempio a destra mostra che le regole di Outlook hanno un formato variabile. <br/> ![screenshot della modalità di modifica del testo nell'elenco a discesa ](images/ctrl-links-image6.png)<br/> Nell'esempio a sinistra viene visualizzato un collegamento all'opzione. Se selezionato, diventa un elenco a discesa, come illustrato a destra.<br/> |
+| **Collegamenti di spostamento**<br/> Collegamento usato per passare a un'altra pagina o finestra. <br/>                                                      | Facendo clic sul collegamento si passa a un'altra pagina, come in una finestra del browser o in una procedura guidata. o visualizza una nuova finestra. A differenza dei collegamenti alle attività, la navigazione non avvia un'attività, ma semplicemente passa a un'altra posizione o procede con un'attività già in corso. La navigazione implica la sicurezza perché l'utente può sempre tornare indietro.<br/> Notizie<br/> In questo esempio, facendo clic sul collegamento si passa alla pagina Titoli delle notizie.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Collegamenti alle attività**<br/> Collegamento usato per avviare un nuovo comando. <br/>                                                                        | Facendo clic sul collegamento viene eseguito immediatamente un comando oppure viene visualizzata una finestra di dialogo o una pagina per raccogliere più input. A differenza dei collegamenti di navigazione, i collegamenti alle attività avviano una nuova attività invece di continuare con un'attività esistente. Le attività non implicano che gli utenti di sicurezza non possano ripristinare lo stato precedente con un comando Indietro. I collegamenti alle attività vengono chiamati così per evitare confusione con [i collegamenti di comando.](ctrl-command-links.md) <br/> Accedi<br/> In questo esempio, facendo clic sul collegamento viene avviato un comando di accesso.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Collegamenti alla Guida**<br/> Collegamento di testo utilizzato per visualizzare un argomento della Guida. <br/>                                                                     | Facendo clic sul collegamento viene visualizzato un articolo della Guida in una finestra separata.<br/> Che cos'è una password complessa?<br/> In questo esempio, facendo clic sul collegamento viene visualizzata una finestra della Guida con l'argomento specificato.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Collegamenti alle definizioni**<br/> un collegamento di testo usato per visualizzare una definizione in un suggerimento quando l'utente fa clic o passa il puntatore del mouse sul collegamento. <br/> | questo modello è utile per definire termini che potrebbero non essere noti agli utenti senza aggiungere confusione sullo schermo.<br/> ![Screenshot della descrizione comando visualizzata al passaggio del mouse ](images/ctrl-links-image2.png)<br/> In questo esempio viene visualizzata la definizione della descrizione comando. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Collegamenti di menu**<br/> un set di collegamenti di attività usati per creare un menu. <br/>                                                                    | Poiché il contesto del menu indica un set di collegamenti, il testo non viene in genere sottolineato (ad eccezione del passaggio del mouse) e potrebbe non usare i colori del sistema dei collegamenti.<br/> ![Screenshot di un set di collegamenti ](images/ctrl-links-image3.png)<br/> In questo esempio un set di collegamenti crea un menu.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Collegamenti alle opzioni**<br/> un'opzione selezionata o il relativo segnaposto, in cui facendo clic sul collegamento viene richiamato un comando per modificare tale opzione.<br/>       | A differenza dei collegamenti di testo normali, il testo del collegamento cambia in base all'opzione attualmente selezionata e viene sempre disegnato usando il colore del collegamento non supervisionato. <br/> ![Screenshot di una regola nella procedura guidata regole di Outlook ](images/ctrl-links-image4.png)<br/> L'esempio a sinistra mostra una regola della procedura guidata delle regole di Microsoft Outlook con opzioni segnaposto. Dopo che gli utenti hanno fatto clic sui collegamenti e selezionato alcune opzioni, l'esempio a destra aggiorna il testo del collegamento per visualizzare i risultati.<br/> L'uso di collegamenti di opzione è particolarmente adatto se le opzioni hanno un formato variabile. <br/> ![Screenshot di una regola modificata nella procedura guidata per le regole ](images/ctrl-links-image5.png)<br/> L'esempio a destra mostra che le regole di Outlook hanno un formato variabile. <br/> ![Screenshot della modalità di modifica del testo nell'elenco a discesa ](images/ctrl-links-image6.png)<br/> L'esempio a sinistra mostra un collegamento di opzione. Se selezionata, diventa un elenco a discesa, come illustrato a destra.<br/> |
 
 
 
  
 
-I collegamenti includono inoltre diversi modelli di presentazione:
+I collegamenti hanno anche diversi modelli di presentazione:
 
 
 
-|                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|    Utilizzo                                 |    Esempio                               |
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Collegamenti testo normale**<br/> sono costituiti solo da testo. <br/>                                      | Questa presentazione è la più flessibile perché può essere usata ovunque, incluso [inline](glossary.md).<br/> ![screenshot del testo del collegamento blu ](images/ctrl-links-image7.png)<br/> In questo esempio, il colore del testo identifica chiaramente un collegamento inline.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Testo con collegamenti a icone**<br/> testo con un'icona precedente che indica la relativa funzione.<br/> | Poiché il grafico fornisce un'indicazione visiva aggiuntiva di un collegamento, è più facile da riconoscere come collegamento rispetto a un collegamento di testo normale non sottolineato. Questo modello USA in genere un'icona con 16x16 pixel.<br/> ![screenshot dell'elenco di quattro collegamenti con icone ](images/ctrl-links-image8.png)<br/> in questo esempio, le icone forniscono un'ulteriore indicazione visiva di un collegamento.<br/> ![screenshot del comando Play con un piccolo triangolo ](images/ctrl-links-image9.png)<br/> In questo esempio, il simbolo di riproduzione triangolare standard indica che questo testo è un comando.<br/>                                                                                                                                     |
-| **Collegamenti solo grafica**<br/> sono costituiti solo da un grafico.<br/>                               | Data la mancanza di un collegamento di testo, non è disponibile alcun colore di collegamento o sottolineatura per indicare il collegamento. questi collegamenti dipendono dalla progettazione grafica per suggerire il clic o dal testo all'interno dell'immagine che suggerisce un'azione quando gli utenti fanno clic. i collegamenti grafici solo a volte presentano un effetto del mouse per indicare il collegamento. Questo approccio consente, ma non è individuabile da solo ispezione visiva.<br/> ![screenshot dell'icona con collegamento-Seleziona puntatore del mouse ](images/ctrl-links-image10.png)<br/> In questo esempio il collegamento non è individuabile dall'ispezione visiva da solo.<br/> **A causa dei potenziali problemi di riconoscimento e localizzazione, i collegamenti solo grafici non sono consigliati come unico modo per eseguire un'attività.** <br/> |
+| **Collegamenti in testo normale**<br/> è costituito solo da testo. <br/>                                      | Questa presentazione è la più flessibile perché può essere usata ovunque, incluso [inline.](glossary.md)<br/> ![Screenshot del testo del collegamento blu ](images/ctrl-links-image7.png)<br/> In questo esempio il colore del testo identifica chiaramente un collegamento inline.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Testo con collegamenti icona**<br/> testo con un'icona precedente che ne indica la funzione.<br/> | Poiché l'elemento grafico fornisce un'indicazione visiva aggiuntiva di un collegamento, è più facile riconoscerlo come collegamento rispetto a un collegamento di testo normale non sottolineato. Questo modello usa in genere un'icona di 16x16 pixel.<br/> ![Screenshot dell'elenco di quattro collegamenti con icone ](images/ctrl-links-image8.png)<br/> In questo esempio le icone forniscono un'indicazione visiva aggiuntiva di un collegamento.<br/> ![Screenshot del comando play con triangolo piccolo ](images/ctrl-links-image9.png)<br/> In questo esempio il simbolo di riproduzione triangolare standard indica che questo testo è un comando.<br/>                                                                                                                                     |
+| **Collegamenti solo grafica**<br/> è costituito solo da un elemento grafico.<br/>                               | Data la mancanza di un collegamento di testo, non è presente alcun colore o sottolineatura del collegamento per indicare il collegamento. Questi collegamenti dipendono dalla progettazione grafica per suggerire il clic o dal testo all'interno dell'elemento grafico che suggerisce un'azione quando gli utenti fa clic. I collegamenti solo grafici talvolta hanno un effetto di passaggio del mouse per indicare il collegamento. Questo approccio è utile, ma non è individuabile solo tramite l'ispezione visiva.<br/> ![Screenshot dell'icona con il puntatore del mouse di selezione collegamento ](images/ctrl-links-image10.png)<br/> In questo esempio il collegamento non è individuabile solo tramite l'ispezione visiva.<br/> **A causa dei potenziali problemi di riconoscimento e localizzazione, i collegamenti solo grafici non sono consigliati come unico modo per eseguire un'attività.** <br/> |
 
 
 
@@ -124,88 +124,88 @@ I collegamenti includono inoltre diversi modelli di presentazione:
 
 ### <a name="interaction"></a>Interazione
 
--   **Visualizza un puntatore occupato se il risultato della selezione di un collegamento non è istantaneo.** Senza commenti, gli utenti potrebbero presupporre che il clic non sia stato fatto, quindi fare clic di nuovo su.
+-   **Visualizzare un puntatore occupato se il risultato della selezione di un collegamento non è istantaneo.** Senza commenti e suggerimenti, gli utenti potrebbero presupporre che il clic non sia stato fatto e fare di nuovo clic.
 
-### <a name="color"></a>Colore
+### <a name="color"></a>Color
 
--   **Usare i colori di sistema del tema o del collegamento per i collegamenti visitati e non visitati.** Il significato di questi colori è coerente in tutti i programmi. Se per qualsiasi motivo gli utenti non amano questi colori (ad esempio per motivi di accessibilità), possono modificarli autonomamente.
--   **Per i collegamenti di navigazione, usare colori diversi per i collegamenti visitati e non visitati.** Mantieni la cronologia dei collegamenti visitati solo per la durata dell'istanza del programma. Il colore visitato è importante per indicare la posizione in cui gli utenti sono già stati evitando di rivisitare le stesse pagine ripetutamente.
--   **Per altri tipi di collegamenti, non usare il colore dei collegamenti visitati.** Il valore non è sufficiente per identificare i comandi "visitati", ad esempio.
--   **Non colora il testo che non è un collegamento perché gli utenti possono presumere che sia un collegamento.** Usare il testo in grassetto o una sfumatura di grigio, in cui altrimenti si userebbe un testo colorato.
--   **Eccezione**: è possibile usare un testo colorato se tutti i collegamenti sono sottolineati o posizionati in percorsi di navigazione o di comando standard.
-
-    **Non corretto:**
-
-    ![screenshot del messaggio del piano di risparmio energia con testo blu ](images/ctrl-links-image11.png)
-
-    In questo esempio il testo blu viene erroneamente usato per il testo che non è un collegamento.
-
--   **Usare i colori di sfondo che si differenziano dai colori dei collegamenti.** Il [colore di sistema della finestra](vis-color.md) è sempre una scelta ottimale.
+-   **Usare il tema o i colori del sistema di collegamento per i collegamenti visitati e non visitati.** Il significato di questi colori è coerente in tutti i programmi. Se per qualsiasi motivo gli utenti non desiderano questi colori (ad esempio per motivi di accessibilità), possono modificarli.
+-   **Per i collegamenti di navigazione, usare colori diversi per i collegamenti visitati e non visitati.** Mantenere la cronologia dei collegamenti visitati solo per la durata dell'istanza del programma. Il colore visitato è importante per indicare dove sono già stati gli utenti, impedendo loro di rivedere involontariamente le stesse pagine ripetutamente.
+-   **Per altri tipi di collegamenti, non usare il colore dei collegamenti visitati.** L'identificazione dei comandi "visitati", ad esempio, non ha valore sufficiente.
+-   **Non colorare il testo che non è un collegamento perché gli utenti potrebbero presupporre che si tratta di un collegamento.** Usare il grassetto o una sfumatura di grigio in cui altrimenti si userebbe testo colorato.
+-   **Eccezione:** è possibile usare testo colorato se tutti i collegamenti sono sottolineati o posizionati all'interno di percorsi di spostamento o comandi standard.
 
     **Non corretto:**
 
-    ![screenshot del testo del collegamento blu sullo sfondo blu ](images/ctrl-links-image12.png)
+    ![Screenshot del messaggio di combinazione per il risparmio di energia con testo blu ](images/ctrl-links-image11.png)
 
-    In questo esempio, il colore di sfondo fornisce un contrasto scarso con il colore del collegamento.
+    In questo esempio il testo blu viene usato erroneamente per il testo che non è un collegamento.
+
+-   **Usare colori di sfondo in contrasto con i colori dei collegamenti.** Il [colore di sistema della](vis-color.md) finestra è sempre una scelta ottimale.
+
+    **Non corretto:**
+
+    ![Screenshot del testo del collegamento blu sullo sfondo blu ](images/ctrl-links-image12.png)
+
+    In questo esempio, il colore di sfondo offre un contrasto non elevato con il colore del collegamento.
 
 ### <a name="underlining"></a>Sottolineando
 
--   **Per i collegamenti necessari per eseguire un'attività primaria, fornire indizi visivi in modo che gli utenti possano riconoscere i collegamenti solo tramite controllo visivo.** Questi indizi includono la sottostruttura, i grafici o i punti elenco e le posizioni dei collegamenti standard. Gli utenti non devono passare il puntatore del mouse su un oggetto o provare a fare clic su di esso per determinare se si tratta di un collegamento. Usare il testo sottolineato se il collegamento non è ovvio dal contesto.
--   **Non sottolineare il testo che non è un collegamento perché gli utenti possono supporre che si tratta di un collegamento.** Usare i corsivo in cui si utilizzerebbe il testo sottolineato. Riservare la sottostruttura solo per i collegamenti.
--   **Quando si esegue la stampa, non stampare sottolineature o colori di collegamento.** I collegamenti stampati non hanno alcun valore e sono potenzialmente confusi.
+-   **Per i collegamenti necessari per eseguire un'attività principale, fornire indicazioni visive in modo che gli utenti possano riconoscere i collegamenti solo tramite ispezione visiva.** Questi indizi includono sottolineatura, grafica o punti elenco e posizioni standard dei collegamenti. Gli utenti non devono passare il puntatore del mouse su un oggetto o tentare di fare clic su di esso per determinare se si tratta di un collegamento. Usare il testo sottolineato se il collegamento non è ovvio dal contesto.
+-   **Non sottolineare il testo che non è un collegamento perché gli utenti potrebbero presupporre che si tratta di un collegamento.** Usare il corsivo dove altrimenti si userebbe il testo sottolineato. Riservare la sottolineatura solo per i collegamenti.
+-   **Durante la stampa, non stampare sottolineature o colori di collegamento.** I collegamenti stampati non hanno alcun valore e possono generare confusione.
 
-### <a name="text-with-icon-links"></a>Testo con collegamenti a icone
+### <a name="text-with-icon-links"></a>Testo con collegamenti icona
 
--   **Usare l'icona freccia solo per i collegamenti ai comandi.** I collegamenti regolari non devono utilizzare l'icona a forma di freccia a meno che non vengano utilizzati come sostituti per i [collegamenti ai comandi](ctrl-command-links.md) in Windows XP.
--   **Posizionare l'icona a sinistra del testo.** L'icona deve condurre visivamente il testo.
+-   **Usare l'icona a forma di freccia solo per i collegamenti di comando.** I collegamenti normali non devono usare l'icona a forma di freccia a meno che non vengano usati come sostituzione dei [collegamenti di comando](ctrl-command-links.md) in Windows XP.
+-   **Posizionare l'icona a sinistra del testo.** L'icona deve portare al testo visivamente.
 
 **Corretto:**
 
-![cattura di schermata dell'icona del testo precedente ](images/ctrl-links-image13.png)
+![Screenshot dell'icona che precede il testo ](images/ctrl-links-image13.png)
 
 **Non corretto:**
 
-![screenshot dell'icona che segue il testo ](images/ctrl-links-image14.png)
+![Screenshot dell'icona che segue il testo ](images/ctrl-links-image14.png)
 
-Nell'esempio errato, l'icona non determina il testo.
+Nell'esempio non corretto, l'icona non porta nel testo.
 
--   **Fare clic sull'icona come risultato facendo clic sul testo.** Altrimenti sarebbe imprevisto e confuso.
+-   **Fare in modo che il risultato della selezione dell'icona sia uguale al clic sul testo.** Altrimenti sarebbe imprevisto e confondere.
 
 ### <a name="graphics-only-links"></a>Collegamenti solo grafica
 
--   **Non usare collegamenti solo grafica.** Gli utenti li riconoscono come collegamenti e il testo all'interno del grafico (usato per indicare l'azione quando si fa clic) crea un problema di localizzazione.
+-   **Non usare collegamenti solo grafici.** Gli utenti hanno difficoltà a riconoscerli come collegamenti e qualsiasi testo all'interno dell'elemento grafico (usato per indicare l'azione quando si fa clic su di essi) crea un problema di localizzazione.
 
-### <a name="navigation-links"></a>Collegamenti di navigazione
+### <a name="navigation-links"></a>Collegamenti di spostamento
 
--   **Assicurarsi che i collegamenti di navigazione non richiedano un impegno.** Gli utenti devono essere sempre in grado di tornare allo stato iniziale, usando indietro per la navigazione inplace o Annulla per chiudere una nuova finestra.
--   **Collegamento a contenuto specifico anziché al contenuto generale.** Ad esempio, è preferibile collegarsi alla sezione pertinente di un documento rispetto al collegamento all'inizio.
--   **Utilizzare un collegamento solo se il materiale collegato è pertinente, utile e non ridondante.** Usare il vincolo nei collegamenti di navigazione non usarli solo perché è possibile.
--   **Se un collegamento passa a un sito esterno, inserire l'URL in infotip in** modo che gli utenti possano determinare la destinazione del collegamento.
--   **Collegare solo la prima occorrenza del testo del collegamento.** I collegamenti ridondanti non sono necessari e possono rendere il testo difficile da leggere.
+-   **Assicurarsi che i collegamenti di spostamento non richiedano impegno.** Gli utenti devono essere sempre in grado di tornare allo stato iniziale, usando Indietro per la navigazione sul posto o Annulla per chiudere una nuova finestra.
+-   **Collegamento a contenuto specifico anziché a contenuto generale.** Ad esempio, è meglio collegarsi alla sezione pertinente di un documento anziché collegarsi all'inizio.
+-   **Usare un collegamento solo se il materiale collegato è rilevante, utile e non ridondante.** L'uso dei collegamenti di navigazione non li usa solo perché è possibile.
+-   **Se un collegamento passa a un sito esterno,** inserire l'URL nella descrizione comandi in modo che gli utenti possano determinare la destinazione del collegamento.
+-   **Collegare solo la prima occorrenza del testo del collegamento.** I collegamenti ridondanti non sono necessari e possono rendere difficile la lettura del testo.
 
     **Corretto:**
 
-    La cartella Pictures semplifica la condivisione delle immagini. È possibile utilizzare le attività nelle immagini per inviare le immagini in un messaggio di posta elettronica o pubblicarle in una posizione sicura e privata sul Web. È anche possibile stampare le immagini direttamente dalla cartella immagini.
+    La cartella Immagini semplifica la condivisione delle immagini. È possibile usare le attività in Immagini per inviare le immagini tramite posta elettronica o pubblicarle in una posizione sicura e privata sul Web. È anche possibile stampare le immagini direttamente dalla cartella Immagini.
 
     **Non corretto:**
 
-    La cartella Pictures semplifica la condivisione delle immagini. È possibile utilizzare le attività nelle immagini per inviare le immagini in un messaggio di posta elettronica o pubblicarle in una posizione sicura e privata sul Web. È anche possibile stampare le immagini direttamente dalla cartella immagini.
+    La cartella Immagini semplifica la condivisione delle immagini. È possibile usare le attività in Immagini per inviare le immagini tramite posta elettronica o pubblicarle in una posizione sicura e privata sul Web. È anche possibile stampare le immagini direttamente dalla cartella Immagini.
 
-    Nell'esempio corretto, viene collegata solo la prima occorrenza del testo pertinente.
+    Nell'esempio corretto viene collegata solo la prima occorrenza del testo pertinente.
 
-    **Eccezioni**
+    **Eccezioni:**
 
-    -   **Se un'istruzione dispone di un collegamento, inserire il collegamento nell'istruzione.**
+    -   **Se un'istruzione ha un collegamento, inserire il collegamento nell'istruzione .**
 
-        L'utilizzo di password complesse è molto importante. Per altre informazioni, vedere Password complesse.
+        L'uso di password complesse è molto importante. Per altre informazioni, vedere Password complesse.
 
-        In questo esempio il collegamento è nell'istruzione invece che nella prima occorrenza.
+        In questo esempio il collegamento si trova nell'istruzione anziché nella prima occorrenza.
 
-    -   **Collegamento a occorrenze successive se sono lontani dalla prima.** Ad esempio, è possibile collegarsi in maniera ridondante in sezioni diverse all'interno di un argomento della guida.
+    -   **Collegarsi a occorrenze successive, se sono distorsi dalla prima.** Ad esempio, è possibile collegarsi in modo ridondante in sezioni diverse all'interno di un argomento della Guida.
 
 ### <a name="task-links"></a>Collegamenti alle attività
 
--   **Usare i collegamenti alle attività per i comandi che non sono distruttivi o sono facilmente reversibili.** Poiché gli utenti associano i collegamenti con la navigazione (e la possibilità di eseguire il backup), i collegamenti non sono appropriati per i comandi con conseguenze significative. I comandi che visualizzano una finestra di dialogo o una conferma rappresentano una scelta ottimale.
+-   **Usare i collegamenti alle attività per i comandi non distruttivi o facilmente reversibili.** Poiché gli utenti associano i collegamenti alla navigazione (e la possibilità di tornare indietro), i collegamenti non sono appropriati per i comandi con conseguenze significative. I comandi che visualizzano una finestra di dialogo o una conferma sono una scelta ottimale.
 
     **Corretto:**
 
@@ -217,53 +217,53 @@ Nell'esempio errato, l'icona non determina il testo.
 
     Elimina file
 
-    Nell'esempio errato, il comando è distruttivo.
+    Nell'esempio non corretto, il comando è distruttivo.
 
-### <a name="menu-links"></a>Collegamenti a menu
+### <a name="menu-links"></a>Collegamenti di menu
 
--   **Raggruppare i collegamenti delle attività e di navigazione nei menu.** Un menu di collegamenti correlati posizionati all'interno di un percorso di navigazione o comando standard semplifica la ricerca e la comprensione dei collegamenti rispetto a quando vengono posizionati separatamente.
--   **Per i menu dipendenti dalla selezione, rimuovere i collegamenti di menu che non si applicano.** Non disabilitarli. Questa operazione elimina il disordine e gli utenti non perderanno i collegamenti che richiedono la selezione.
--   **Per i menu indipendenti dalla selezione, disabilitare i collegamenti al menu che non si applicano.** Non rimuoverli. In questo modo i menu risultano più stabili e tali collegamenti sono più facili da trovare.
+-   **Raggruppare i collegamenti di attività e navigazione correlati nei menu.** Un menu di collegamenti correlati inseriti all'interno di un percorso di spostamento o di comando standard rende più semplice trovare e comprendere i collegamenti rispetto a quando vengono posizionati separatamente.
+-   **Per i menu dipendenti dalla selezione, rimuovere i collegamenti di menu non applicabili.** Non disabilitarli. In questo modo si elimina la confusione e gli utenti non perderanno i collegamenti che richiedono la selezione.
+-   **Per i menu indipendenti dalla selezione, disabilitare i collegamenti di menu non applicabili.** Non rimuoverli. In questo modo i menu sono più stabili e tali collegamenti sono più facili da trovare.
 
-    ![screenshot della finestra di dialogo con il comando di menu in grigio ](images/ctrl-links-image15.png)
+    ![Screenshot della finestra di dialogo con il comando di menu in grigio ](images/ctrl-links-image15.png)
 
-    In questo esempio da Windows Update, viene eseguito un aggiornamento, quindi il comando Controlla aggiornamenti è disabilitato anziché rimosso.
+    In questo esempio Windows Update viene eseguito un aggiornamento, quindi il comando Controlla aggiornamenti è disabilitato anziché rimosso.
 
-### <a name="link-infotips"></a>Collega infotip
+### <a name="link-infotips"></a>Suggerimenti per i collegamenti
 
--   Se un collegamento richiede una spiegazione ulteriore, **fornire la spiegazione in una spiegazione aggiuntiva in un controllo testo separato o in un** [infotip](ctrl-tooltips-and-infotips.md), ma non in entrambi. Usare le frasi complete e la punteggiatura finale. Se il testo è lo stesso, non è necessario fornire entrambe le differenze se il testo è diverso.
+-   Se un collegamento richiede un'ulteriore spiegazione, fornire la spiegazione in una spiegazione supplementare in un controllo di testo separato o **in** una [descrizione](ctrl-tooltips-and-infotips.md)comando, ma non in entrambi. Usare frasi complete e la punteggiatura finale. Fornire entrambi non è necessario se il testo è lo stesso e confondere se il testo è diverso.
 
-    ![screenshot del collegamento con testo supplementare ](images/ctrl-links-image16.png)
+    ![Screenshot del collegamento con testo supplementare ](images/ctrl-links-image16.png)
 
-    In questo esempio, una spiegazione supplementare fornisce ulteriori informazioni sul collegamento.
+    In questo esempio, una spiegazione supplementare fornisce altre informazioni sul collegamento.
 
-    ![screenshot del collegamento con infotip ](images/ctrl-links-image17.png)
+    ![Screenshot del collegamento con la descrizione comando ](images/ctrl-links-image17.png)
 
-    In questo esempio, un infotip fornisce ulteriori informazioni.
+    In questo esempio, una descrizione comando fornisce altre informazioni.
 
--   **Non fornire un infotip che è semplicemente una ripubblicazione del testo del collegamento.**
+-   **Non fornire una descrizione comando che sia semplicemente una rietichezza del testo del collegamento.**
 
     **Non corretto:**
 
-    ![screenshot del collegamento con infotip ridondante ](images/ctrl-links-image18.png)
+    ![Screenshot del collegamento con suggerimento ridondante ](images/ctrl-links-image18.png)
 
-    In questo esempio, il infotip rischia di infastidire gli utenti in base alla sua ripetibilità.
+    In questo esempio la descrizione comandi rischia di insodziare gli utenti per la sua ripetitività.
 
 ## <a name="text"></a>Testo
 
--   Non assegnare una [chiave di accesso](glossary.md). Per accedere ai collegamenti, utilizzare il tasto TAB.
--   **Usare i collegamenti che forniscono informazioni descrittive specifiche sul risultato della selezione del collegamento**, usando la quantità di testo necessaria. Il testo del collegamento indicherà il risultato della selezione del collegamento. **Gli utenti devono essere in grado di prevedere accuratamente il risultato di un collegamento dal testo del collegamento e da infotip facoltativi.**
+-   Non assegnare una chiave [di accesso](glossary.md). È possibile accedere ai collegamenti usando il tasto TAB.
+-   **Usare collegamenti che forniscono informazioni descrittive specifiche sul risultato del** clic sul collegamento , usando il testo necessario. Il testo del collegamento dovrebbe indicare il risultato del clic sul collegamento. **Gli utenti devono essere in grado di stimare accuratamente il risultato di un collegamento dal testo del collegamento e dalla descrizione comando facoltativa.**
 
     **Non corretto:**
 
-    ![Screenshot di un collegamento avviso di avviso di sicurezza ](images/ctrl-links-image19.png)
+    ![Screenshot di un collegamento di avviso relativo all'avviso di sicurezza ](images/ctrl-links-image19.png)
 
-    In questo esempio, anche se il collegamento risulta importante, l'etichetta è troppo generale. È più probabile che gli utenti clicchino su un collegamento più specifico.
+    In questo esempio, anche se il collegamento risulta importante, l'etichetta è troppo generale. È più probabile che gli utenti clicno su un collegamento più specifico.
 
 -   Per i collegamenti inline:
-    -   Mantenere le lettere maiuscole e punteggiatura del testo.
-    -   Non includere la punteggiatura finale nel collegamento, a meno che il testo non sia una domanda.
-    -   Collegamento alla parte più pertinente del testo e scegliere il testo del collegamento sufficientemente grande da fare clic.
+    -   Mantenere le maiuscole e la punteggiatura del testo.
+    -   Non includere la punteggiatura finale nel collegamento a meno che il testo non sia una domanda.
+    -   Collegarsi alla parte più pertinente del testo e scegliere il testo del collegamento sufficientemente grande da essere facilmente selezionato.
 
         **Corretto:**
 
@@ -273,37 +273,37 @@ Nell'esempio errato, l'icona non determina il testo.
 
         Passare a un newsgroup.
 
-        In questi esempi, "go" non è la parte più pertinente del testo e non è sufficientemente grande da creare una buona destinazione di clic, mentre "newsgroup" è.
+        In questi esempi, "Go" non è la parte più rilevante del testo e non è sufficientemente grande da fare un buon clic come destinazione, mentre il "newsgroup" lo è.
 
-    -   **Evitare di inserire due collegamenti inline diversi l'uno accanto all'altro.** È probabile che gli utenti credano di essere un singolo collegamento.
+    -   **Evitare di inserire due collegamenti inline diversi uno accanto all'altro.** È probabile che gli utenti creino di essere un singolo collegamento.
 
         **Non corretto:**
 
-        Per altre informazioni, vedere linee guida sull'UX.
+        Per altre informazioni, vedere Linee guida per l'esperienza utente.
 
-        In questo esempio, "UX" e "linee guida" sono due collegamenti diversi.
+        In questo esempio, "UX" e "guidelines" sono due collegamenti diversi.
 
 -   Per i collegamenti indipendenti (non inline):
-    -   Usare l'uso [di maiuscole in stile frase](glossary.md).
+    -   Usare [l'uso di maiuscole e minuscole in stile frase.](glossary.md)
     -   Non usare la punteggiatura finale a meno che il collegamento non sia una domanda.
     -   Usare tutto il testo come collegamento.
--   Usare i collegamenti che si distinguono chiaramente dagli altri collegamenti sullo schermo. Gli utenti devono essere in grado di prevedere e distinguere accuratamente le destinazioni di collegamento.
+-   Usare collegamenti chiaramente differenziati dagli altri collegamenti sullo schermo. Gli utenti devono essere in grado di stimare e distinguere accuratamente le destinazioni di collegamento.
 
     **Non corretto:**
 
-    Trova il software antivirus
+    Trovare software antivirus
 
-    Ottenere il software antivirus
+    Ottenere software antivirus
 
     **Corretto:**
 
-    Come verificare se il software antivirus è installato
+    Come sapere se è installato un software antivirus
 
     Installare il software antivirus
 
-    Nell'esempio errato, la distinzione tra i due collegamenti non è chiara.
+    Nell'esempio non corretto, la distinzione tra i due collegamenti non è chiara.
 
--   Non aggiungere clic o fare clic qui per il testo del collegamento. Non è necessario perché un collegamento implica la selezione. Inoltre, fare clic qui e non fornire informazioni sul collegamento durante la lettura da parte di un lettore di schermate.
+-   Non aggiungere Fare clic o Fare clic qui al testo del collegamento. Non è necessario perché un collegamento implica il clic. Inoltre, Fare clic qui e qui da solo non fornisce informazioni sul collegamento quando viene letto da un'utilità per la lettura dello schermo.
 
     **Non corretto:**
 
@@ -313,13 +313,13 @@ Nell'esempio errato, l'icona non determina il testo.
 
     Descrizione
 
-    Negli esempi non corretti, "fare clic qui" viene eseguito senza indicare e non vengono fornite informazioni sul collegamento.
+    Negli esempi non corretti, "fare clic qui" non viene detto e non fornisce informazioni sul collegamento.
 
 **Collegamenti di navigazione**
 
--   **Avviare il collegamento con un sostantivo e indicare chiaramente dove fare clic sul collegamento.** Non usare punteggiatura finale. In alcuni casi potrebbe essere necessario avviare collegamenti di navigazione con un verbo, ma non usare verbi che riiterano la navigazione che è già implicita nel fatto di collegamento, ad esempio View, Open o go to.
--   **Presentare un collegamento di navigazione come URL se passa a una pagina Web e si prevede che gli utenti di destinazione richiamino l'URL e lo digitano in un browser.** Se possibile, progettare tali URL in modo da essere brevi e facili da ricordare.
--   **Se il collegamento include un URL di un sito Web che inizia con "www", omettere il nome del protocollo https://e utilizzare testo minuscolo.**
+-   **Avviare il collegamento con un sostantivo e descrivere chiaramente dove verrà fatto clic sul collegamento.** Non usare punteggiatura finale. In alcuni casi potrebbe essere necessario avviare i collegamenti di navigazione con un verbo, ma non usare verbi che ritienino lo spostamento già implicito dal fatto di eseguire il collegamento, ad esempio Visualizza, Apri o Vai a.
+-   **Presentare un collegamento di navigazione come URL se si passa a una pagina Web e si prevede che gli utenti di destinazione richiamino l'URL e lo dimentitino in un browser.** Se possibile, progettare tali URL in modo che siano brevi e facili da ricordare.
+-   **Se il collegamento include un URL a un sito Web che inizia con "www", omettere il nome https:// protocollo e usare il testo in minuscolo.**
 
     **Non corretto:**
 
@@ -331,50 +331,50 @@ Nell'esempio errato, l'icona non determina il testo.
 
     microsoft.com
 
-    Negli esempi non corretti, le parole "https://" e "www" vengono escluse.
+    Negli esempi non corretti, le parole "https://" e "www" vanno senza dire.
 
 **Collegamenti alle attività**
 
 -   **Avviare il collegamento con un verbo imperativo e descrivere chiaramente l'attività eseguita dal collegamento.** Non usare punteggiatura finale.
--   **Terminare il collegamento con i puntini di sospensione se il comando richiede informazioni aggiuntive (inclusa una conferma) per il corretto completamento.** Non usare i puntini di sospensione quando il completamento dell'attività consiste nel visualizzare un'altra finestra solo quando sono necessarie altre informazioni per eseguire l'attività.
+-   **Terminare il collegamento con i puntini di sospensione se il comando necessita di informazioni aggiuntive (inclusa una conferma) per il corretto completamento.** Non usare i puntini di sospensione quando il completamento corretto dell'attività è visualizzare un'altra finestra solo quando sono necessarie informazioni aggiuntive per eseguire l'attività.
 
     Stampa...
 
-    In questo esempio, Print... il collegamento al comando Visualizza una finestra di dialogo Stampa per raccogliere ulteriori informazioni.
+    In questo esempio, il comando Stampa... Il collegamento al comando visualizza una finestra di dialogo Stampa per raccogliere altre informazioni.
 
     Stampa
 
-    Al contrario, in questo esempio un collegamento al comando stampa stampa una singola copia di un documento nella stampante predefinita senza ulteriori interazioni da parte dell'utente.
+    Al contrario, in questo esempio un collegamento al comando Stampa stampa una singola copia di un documento sulla stampante predefinita senza ulteriori interazioni con l'utente.
 
-    L' **uso corretto dei puntini di sospensione è importante per indicare che gli utenti possono effettuare altre scelte prima di eseguire l'attività oppure possono annullare completamente l'attività**. Il segnale visivo offerto dai puntini di sospensione consente agli utenti di esplorare il software senza timore.
+    È importante usare correttamente i puntini di sospensione per indicare che gli utenti possono effettuare altre scelte prima di eseguire l'attività o **annullare completamente l'attività.** Il segnale visivo offerto dai puntini di sospensione consente agli utenti di esplorare il software senza temere.
 
--   **Se necessario, terminare un collegamento a un'attività con "Now" per distinguerlo da un collegamento di navigazione.**
+-   **Se necessario, terminare un collegamento di attività con "now" per distinguerlo da un collegamento di navigazione.**
 
     Scaricare i file
 
-    Scarica file adesso
+    Scarica i file ora
 
-    In questo esempio, "Scarica file" passa a una pagina per il download di file, mentre "Scarica file ora" esegue effettivamente il comando.
+    In questo esempio "Download files" (Scarica file) passa a una pagina per il download dei file, mentre "Download files now" (Scarica file ora) esegue effettivamente il comando .
 
-**Collegamenti alla guida**
+**Collegamenti alla Guida**
 
-Per linee guida ed esempi, vedere la [Guida](winenv-help.md)di.
+Per linee guida ed esempi, vedere [la Guida](winenv-help.md).
 
-**Collega infotip**
+**Suggerimenti per i collegamenti**
 
--   Usare le frasi complete e la punteggiatura finale.
+-   Usare frasi complete e punteggiatura finale.
 
-Per altre linee guida ed esempi, vedere [Tooltips and infotip](ctrl-tooltips-and-infotips.md).
+Per altre linee guida ed esempi, vedere [Descrizioni comando e suggerimenti.](ctrl-tooltips-and-infotips.md)
 
 ## <a name="documentation"></a>Documentazione
 
 Quando si fa riferimento ai collegamenti:
 
 -   Usare il testo esatto del collegamento, inclusa la relativa maiuscola, ma non includere i puntini di sospensione.
--   Per descrivere l'interazione dell'utente, utilizzare fare clic su.
--   Quando possibile, formattare il testo del collegamento utilizzando il testo in grassetto. In caso contrario, inserire il testo del collegamento tra virgolette solo se necessario per evitare confusione.
+-   Per descrivere l'interazione dell'utente, usare click.
+-   Quando possibile, formattare il testo del collegamento usando il testo in grassetto. In caso contrario, inserire il testo del collegamento tra virgolette solo se necessario per evitare confusione.
 
-Esempio: per avviare l'analisi, fare clic su **analizza un computer**.
+Esempio: per avviare l'analisi, fare clic **su Analizza un computer**.
 
  
 

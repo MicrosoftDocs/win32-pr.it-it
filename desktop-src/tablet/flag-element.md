@@ -1,19 +1,19 @@
 ---
-description: Contiene una bitmap con codifica Base64 di un flag associato alla sezione di una nota del journal.
+description: Contiene una bitmap con codifica Base64 di un flag associato alla sezione di una nota journal.
 ms.assetid: 612f8814-ab3c-4a3e-9791-525788d4cc72
-title: Flag (elemento)
+title: Elemento Flag
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b6eda9aeb29c07c0de05eadffb8ba8d60f81954
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46508f9821379fbedb3291ba45d16dbdd0fb316f
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307490"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432330"
 ---
-# <a name="flag-element"></a>Flag (elemento)
+# <a name="flag-element"></a>Elemento Flag
 
-Contiene una bitmap con codifica Base64 di un flag associato alla sezione di una nota del journal.
+Contiene una bitmap con codifica Base64 di un flag associato alla sezione di una nota journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -25,11 +25,11 @@ Contiene una bitmap con codifica Base64 di un flag associato alla sezione di una
 
 [**Contenuto**](content-element--journal-reader.md)
 
-[**Nodo del gruppo**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
@@ -37,10 +37,10 @@ Nessuna.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**   | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di delimitazione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**    | **xs:integer**            | Necessario | Distanza tra l'origine e il punto superiore del rettangolo di delimitazione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di delimitazione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di delimitazione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
+| **Top**    | **xs:integer**            | Obbligatoria | Distanza tra l'origine e il punto in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
 
 
 
@@ -50,11 +50,11 @@ Nessuna.
 
 
 
-|              |                                                       |
+|  Elemento     | valore                                                     |
 |--------------|-------------------------------------------------------|
-| Tipo di elemento | ComplexType [**FlagType**](flagtype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk            |
-| Nome schema  | Lettore Journal                                        |
+| Tipo di elemento | [**complexType FlagType**](flagtype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink            |
+| Nome schema  | Lettore journal                                        |
 
 
 

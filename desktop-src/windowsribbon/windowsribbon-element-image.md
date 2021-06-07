@@ -1,9 +1,9 @@
 ---
-title: Elemento Image (Framework della barra multifunzione di Windows)
+title: Elemento Image (Windows Ribbon Framework)
 description: Rappresenta un'immagine.
 ms.assetid: 2c71bb16-93ac-484f-b81b-1b95842472b3
 keywords:
-- Barra multifunzione di Windows elemento immagine
+- Elemento Image della barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1d33f6710da2261a359aa7fd0a3b493871155cf4
-ms.sourcegitcommit: 40a1246849dba8ececf54c716b2794b99c96ad50
+ms.openlocfilehash: fe0b9afb51697d50de9cb80886cf829b90c81262
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "104117165"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442892"
 ---
 # <a name="image-element"></a>Elemento Image
 
@@ -58,29 +58,29 @@ Rappresenta un'immagine.
 <tbody>
 <tr class="odd">
 <td><strong>Id</strong><br/></td>
-<td>XS: positiveInteger Union XS: String<br/></td>
+<td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
-<td>ID di risorsa univoco. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (Unione di XS: positiveInteger e xs: String)<br/> </dt> <dd> Valore intero compreso tra 2 e 59999, inclusivo o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> La lunghezza massima è di 10 caratteri, inclusi gli zeri iniziali facoltativi. <br/> </dd> </dl></td>
+<td>ID risorsa univoco. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (Unione di xs:positiveInteger e xs:string)<br/> </dt> <dd> Valore intero compreso tra 2 e 59999, inclusi o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> La lunghezza massima è di 10 caratteri, inclusi gli zeri iniziali facoltativi. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinDPI</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: positiveInteger)<br/> </dt> <dd> Qualsiasi sequenza di cifre con un valore minimo pari a 96. <br/> Se MinDPI viene omesso, il valore predefinito è 96. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Qualsiasi sequenza di cifre con un valore minimo di 96. <br/> Se MinDPI viene omesso, il valore predefinito è 96. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Origine</strong><br/></td>
 <td>xs:anyURI<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: anyURI)<br/> </dt> <dd> Qualsiasi sequenza di caratteri che rappresenta un URI. Il valore URI è un percorso assoluto o relativo (per il file di markup della barra multifunzione) a una risorsa immagine di tipo BMP. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:anyURI)<br/> </dt> <dd> Qualsiasi sequenza di caratteri che rappresenta un URI. Il valore URI è un percorso assoluto o relativo (al file di markup della barra multifunzione) di una risorsa immagine di tipo BMP. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Simbolo</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Simbolo di risorsa per l'immagine.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da una lettera o un carattere di sottolineatura seguito da una sequenza di lettere, cifre o caratteri di sottolineatura fino a un massimo di 100 caratteri. <br/> </dd> </dl></td>
+<td>Simbolo della risorsa per l'immagine.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da una lettera o un carattere di sottolineatura seguito da qualsiasi sequenza di lettere, cifre o caratteri di sottolineatura fino a un massimo di 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -93,7 +93,7 @@ Rappresenta un'immagine.
 
 | Elemento                                                               | Descrizione                                   |
 |-----------------------------------------------------------------------|-----------------------------------------------|
-| [**Image. Source**](windowsribbon-element-image-source.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Image.Source**](windowsribbon-element-image-source.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
 
 
 
@@ -103,10 +103,10 @@ Rappresenta un'immagine.
 
 | Elemento                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|
-| [**Comando. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> |
-| [**Comando. LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         |
-| [**Comando. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> |
-| [**Comando. SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         |
+| [**Command.LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> |
+| [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         |
+| [**Command.SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> |
+| [**Command.SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         |
 
 
 
@@ -114,15 +114,15 @@ Rappresenta un'immagine.
 
 facoltativo.
 
-Può essere presente una o più volte per ogni [**comando. SmallImages**](windowsribbon-element-command-smallimages.md), [**Command. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md), [**Command. LargeImages**](windowsribbon-element-command-largeimages.md)o [**Command. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md) .
+Può verificarsi una o più volte per ogni elemento [**Command.SmallImages,**](windowsribbon-element-command-smallimages.md) [**Command.SmallHighContrastImages,**](windowsribbon-element-command-smallhighcontrastimages.md) [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)o [**Command.LargeHighContrastImages.**](windowsribbon-element-command-largehighcontrastimages.md)
 
-Quando una raccolta di risorse immagine progettate per supportare specifiche impostazioni dpi (screen punti per pollice) viene fornita al framework della barra multifunzione tramite un set di elementi **immagine** , il Framework usa l' **immagine** con un valore dell'attributo *MinDPI* che corrisponde all'impostazione DPI dello schermo corrente.
+Quando al framework della barra multifunzione viene fornita una raccolta di risorse immagine progettate per supportare impostazioni specifiche dei punti  per pollice (dpi) dello schermo tramite un set di elementi **Image,** il framework usa l'immagine con un valore di *attributo MinDPI* corrispondente all'impostazione dpi dello schermo corrente.
 
-Se nessun elemento **Image** è dichiarato con un valore *MinDPI* che corrisponde all'impostazione DPI dello schermo corrente, il Framework seleziona l' **immagine** con il valore *MinDPI* più vicino inferiore rispetto all'impostazione DPI dello schermo corrente e ridimensiona la risorsa dell'immagine verso l'alto. In caso contrario, se non viene dichiarato alcun elemento **Image** con un valore dell'attributo *MinDPI* inferiore a quello della schermata corrente, il Framework sceglie il valore *MinDPI* più vicino maggiore dell'impostazione corrente DPI dello schermo e ridimensiona la risorsa immagine verso il basso.
+Se nessun elemento **Image** viene dichiarato con un valore *MinDPI* corrispondente all'impostazione dpi dello schermo corrente, il framework seleziona l'immagine con il valore  *MinDPI* più vicino minore dell'impostazione dpi dello schermo corrente e ridimensiona la risorsa immagine. In caso contrario, se nessun elemento **Image** viene dichiarato con un valore di attributo *MinDPI* minore dell'impostazione dpi dello schermo corrente, il framework seleziona il valore *MinDPI* più vicino maggiore dell'impostazione dpi dello schermo corrente e ridimensiona la risorsa immagine.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato il markup necessario per dichiarare, tramite un set di elementi **immagine** , una raccolta di risorse immagine progettate per supportare quattro impostazioni DPI dello schermo specifiche.
+L'esempio di codice seguente illustra il markup necessario per dichiarare, tramite un set di elementi **Image,** una raccolta di risorse immagine progettate per supportare quattro impostazioni dpi dello schermo specifiche.
 
 
 ```XML
@@ -143,20 +143,16 @@ Nell'esempio di codice seguente viene illustrato il markup necessario per dichia
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Specifica delle risorse dell'immagine della barra multifunzione](windowsribbon-imageformats.md)
+[Specifica delle risorse immagine della barra multifunzione](windowsribbon-imageformats.md)
 </dt> </dl>
 
  

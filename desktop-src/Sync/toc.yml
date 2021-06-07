@@ -6,20 +6,20 @@
     - name: Informazioni sulla sincronizzazione
       href: about-synchronization.md
       items:
-        - name: Funzioni Wait
+        - name: Funzioni di attesa
           href: wait-functions.md
         - name: Oggetti di sincronizzazione
           href: synchronization-objects.md
           items:
             - name: Oggetti evento
               href: event-objects.md
-            - name: Oggetti mutex
+            - name: Oggetti Mutex
               href: mutex-objects.md
             - name: Oggetti semaforo
               href: semaphore-objects.md
             - name: Oggetti timer waitable
               href: waitable-timer-objects.md
-            - name: Sicurezza e diritti di accesso degli oggetti di sincronizzazione
+            - name: Sicurezza degli oggetti di sincronizzazione e diritti di accesso
               href: synchronization-object-security-and-access-rights.md
         - name: Sincronizzazione interprocesso
           href: interprocess-synchronization.md
@@ -36,19 +36,19 @@
           href: synchronization-and-multiprocessor-issues.md
         - name: Sincronizzazione e input e output sovrapposti
           href: synchronization-and-overlapped-input-and-output.md
-        - name: Chiamate di procedure asincrone
+        - name: Chiamate di procedura asincrone
           href: asynchronous-procedure-calls.md
         - name: Oggetti sezione critica
           href: critical-section-objects.md
         - name: Variabili di condizione
           href: condition-variables.md
-        - name: Blocchi di lettura/scrittura (SRW) Slim
+        - name: Blocchi SRW (Slim Reader/Writer)
           href: slim-reader-writer--srw--locks.md
-        - name: Inizializzazione One-Time
+        - name: One-Time inizializzazione
           href: one-time-initialization.md
-        - name: Accesso a variabili Interlocked
+        - name: Accesso alle variabili interlock
           href: interlocked-variable-access.md
-        - name: Elenchi collegati singolarmente con Interlocking
+        - name: Elenchi collegati in modo singly interlock
           href: interlocked-singly-linked-lists.md
         - name: Code timer
           href: timer-queues.md
@@ -57,13 +57,13 @@
     - name: Uso della sincronizzazione
       href: using-synchronization.md
       items:
-        - name: In attesa di più oggetti
+        - name: Attesa di più oggetti
           href: waiting-for-multiple-objects.md
         - name: Uso di oggetti denominati
           href: using-named-objects.md
-        - name: Utilizzo di oggetti evento
+        - name: Uso di oggetti evento
           href: using-event-objects.md
-        - name: Utilizzo di oggetti mutex
+        - name: Uso di oggetti Mutex
           href: using-mutex-objects.md
         - name: Uso di oggetti semaforo
           href: using-semaphore-objects.md
@@ -71,17 +71,17 @@
           href: using-waitable-timer-objects.md
         - name: Uso di timer waitable con una chiamata di procedura asincrona
           href: using-a-waitable-timer-with-an-asynchronous-procedure-call.md
-        - name: Utilizzo di oggetti sezione critici
+        - name: Uso di oggetti sezione critica
           href: using-critical-section-objects.md
-        - name: Utilizzo di variabili di condizione
+        - name: Uso delle variabili di condizione
           href: using-condition-variables.md
-        - name: Utilizzo dell'inizializzazione One-Time
+        - name: Uso dellOne-Time inizializzazione
           href: using-one-time-initialization.md
-        - name: Uso di elenchi collegati singolarmente
+        - name: Uso di elenchi collegati in modo singly
           href: using-singly-linked-lists.md
         - name: Uso delle code timer
           href: using-timer-queues.md
-    - name: Riferimento alla sincronizzazione
+    - name: Informazioni di riferimento sulla sincronizzazione
       href: synchronization-reference.md
       items:
         - name: Funzioni di sincronizzazione
@@ -119,9 +119,9 @@
               href: /windows/desktop/api/WinBase/nf-winbase-createsemaphorea
             - name: CreateSemaphoreEx
               href: /windows/desktop/api/WinBase/nf-winbase-createsemaphoreexa
-            - name: CreateTimerQueue ha provocato
+            - name: CreateTimerQueue
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueue
-            - name: CreateTimerQueueTimer ha provocato
+            - name: CreateTimerQueueTimer
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer
             - name: CreateWaitableTimer
               href: /windows/desktop/api/WinBase/nf-winbase-createwaitabletimera
@@ -133,11 +133,11 @@
               href: /windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection
             - name: DeleteSynchronizationBarrier
               href: /windows/desktop/api/SynchAPI/nf-synchapi-deletesynchronizationbarrier
-            - name: Deletetimerqueue ha provocato
-              href: /windows/desktop/api/WinBase/nf-winbase-deletetimerqueue
+            - name: DeleteTimerQueue
+              href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueue
             - name: DeleteTimerQueueEx
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueueex
-            - name: DeleteTimerQueueTimer ha provocato
+            - name: DeleteTimerQueueTimer
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueuetimer
             - name: EnterCriticalSection
               href: /windows/desktop/api/synchapi/nf-synchapi-entercriticalsection
@@ -371,7 +371,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683624(v=vs.85)
             - name: InterlockedIncrementNoFence64
               href: /previous-versions/windows/desktop/legacy/hh972668(v=vs.85)
-            - name: Interblocco
+            - name: InterlockedOr
               href: /windows/desktop/api/WinBase/nf-winbase-interlockedor
             - name: InterlockedOrAcquire
               href: /previous-versions/windows/desktop/legacy/ms683643(v=vs.85)
@@ -453,7 +453,7 @@
               href: /windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjectsex
             - name: OpenEvent
               href: /windows/desktop/api/synchapi/nf-synchapi-openeventa
-            - name: Errore in OpenMutex
+            - name: OpenMutex
               href: /windows/desktop/api/WinBase/nf-winbase-openmutexa
             - name: OpenPrivateNamespace
               href: /windows/desktop/api/WinBase/nf-winbase-openprivatenamespacea
@@ -467,13 +467,13 @@
               href: /windows/desktop/api/interlockedapi/nf-interlockedapi-querydepthslist
             - name: QueueUserAPC
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-queueuserapc
-            - name: RegisterWaitForSingleObject
+            - name: Registerwaitforsingleobject
               href: /windows/desktop/api/WinBase/nf-winbase-registerwaitforsingleobject
-            - name: ReleaseMutex
+            - name: Releasemutex
               href: /windows/desktop/api/synchapi/nf-synchapi-releasemutex
             - name: ReleaseSemaphore
               href: /windows/desktop/api/synchapi/nf-synchapi-releasesemaphore
-            - name: ComplementareReleaseSRWLockExclusive
+            - name: ReleaseSRWLockExclusive
               href: /windows/desktop/api/synchapi/nf-synchapi-releasesrwlockexclusive
             - name: ReleaseSRWLockShared
               href: /windows/desktop/api/synchapi/nf-synchapi-releasesrwlockshared
@@ -515,9 +515,9 @@
               href: /windows/desktop/api/synchapi/nf-synchapi-tryentercriticalsection
             - name: UnregisterWait
               href: /windows/desktop/api/WinBase/nf-winbase-unregisterwait
-            - name: Unregisterwaitex ha provocato
+            - name: UnregisterWaitEx
               href: unregisterwaitex.md
-            - name: WaitForMultipleObjects
+            - name: Waitformultipleobjects
               href: /windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects
             - name: WaitForMultipleObjectsEx
               href: /windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjectsex
@@ -527,7 +527,7 @@
               href: /windows/desktop/api/synchapi/nf-synchapi-waitforsingleobjectex
             - name: WaitOnAddress
               href: /windows/desktop/api/SynchAPI/nf-synchapi-waitonaddress
-            - name: WaitOrTimerCallback
+            - name: Waitortimercallback
               href: /previous-versions/windows/desktop/legacy/ms687066(v=vs.85)
             - name: WakeAllConditionVariable
               href: /windows/desktop/api/synchapi/nf-synchapi-wakeallconditionvariable
@@ -551,7 +551,7 @@
         - name: Strutture di sincronizzazione
           href: synchronization-structures.md
           items:
-            - name: OVERLAPPED
+            - name: Sovrapposta
               href: /windows/win32/api/minwinbase/ns-minwinbase-overlapped
             - name: SLIST_ENTRY
               href: /windows/win32/api/winnt/ns-winnt-slist_entry

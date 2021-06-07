@@ -1,19 +1,19 @@
 ---
-description: Contiene informazioni sul titolo relative alla nota Journal.
+description: Contiene informazioni sul titolo della nota journal.
 ms.assetid: efeed3a6-de5e-4698-9dc3-d0acb3d13dee
 title: Elemento Title
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2362e286482b329c50788b8eae4b4a30cbd1a125
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef687f809aae5c3722cdad84ee63d79c7bfcfb21
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318685"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432223"
 ---
 # <a name="title-element"></a>Elemento Title
 
-Contiene informazioni sul titolo relative alla nota Journal.
+Contiene informazioni sul titolo della nota journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -27,7 +27,7 @@ Contiene informazioni sul titolo relative alla nota Journal.
 
 ## <a name="child-elements"></a>Elementi figlio
 
-[**Elemento titlearea**](titlearea-element.md)
+[**TitleArea**](titlearea-element.md)
 
 ## <a name="attributes"></a>Attributi
 
@@ -54,10 +54,10 @@ Contiene informazioni sul titolo relative alla nota Journal.
 <tr class="odd">
 <td><strong>Style</strong></td>
 <td><strong>xs:string</strong></td>
-<td>Necessario</td>
+<td>Obbligatoria</td>
 <td>Specifica il tipo di bordo che circonda il titolo della nota.</td>
 <td><ul>
-<li>nessuno</li>
+<li>Nessuno</li>
 <li>SolidSquare</li>
 <li>OutlineSquare</li>
 <li>SolidRoundRect</li>
@@ -68,10 +68,10 @@ Contiene informazioni sul titolo relative alla nota Journal.
 <tr class="even">
 <td><strong>DateStyle</strong></td>
 <td><strong>xs:string</strong></td>
-<td>Necessario</td>
+<td>Obbligatoria</td>
 <td>Definisce se il titolo include o meno una data.</td>
 <td><ul>
-<li>nessuno</li>
+<li>Nessuno</li>
 <li>Short</li>
 </ul></td>
 </tr>
@@ -93,11 +93,11 @@ Contiene informazioni sul titolo relative alla nota Journal.
 
 
 
-|              |                                                         |
+| Elemento      | valore                                                   |
 |--------------|---------------------------------------------------------|
-| Tipo di elemento | ComplexType [**TitleType**](titletype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk              |
-| Nome schema  | Lettore Journal                                          |
+| Tipo di elemento | [**ComplexType TitleType**](titletype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink              |
+| Nome schema  | Lettore journal                                          |
 
 
 

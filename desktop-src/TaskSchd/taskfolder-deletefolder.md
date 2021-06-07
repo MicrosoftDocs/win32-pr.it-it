@@ -1,11 +1,11 @@
 ---
-title: TaskFolder. DeleteFolder, metodo
-description: Per la creazione di script, Elimina una sottocartella dalla cartella padre.
+title: Metodo TaskFolder.DeleteFolder
+description: Per lo scripting, elimina una sottocartella dalla cartella padre.
 ms.assetid: 0d6a9a60-7909-4945-8186-3495e6fe9bc4
 keywords:
-- Utilità di pianificazione del metodo DeleteFolder
-- Metodo DeleteFolder Utilità di pianificazione, oggetto TaskFolder
-- Oggetto TaskFolder Utilità di pianificazione, metodo DeleteFolder
+- Metodo DeleteFolder Utilità di pianificazione
+- Metodo DeleteFolder Utilità di pianificazione , oggetto TaskFolder
+- Oggetto TaskFolder Utilità di pianificazione metodo , DeleteFolder
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ea9b8aaa7da7710cedc49e10d6be2a203f62b34
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31080f017329cde376b646befd4b7e12ba02926b
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477482"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387040"
 ---
-# <a name="taskfolderdeletefolder-method"></a>TaskFolder. DeleteFolder, metodo
+# <a name="taskfolderdeletefolder-method"></a>Metodo TaskFolder.DeleteFolder
 
-Per la creazione di script, Elimina una sottocartella dalla cartella padre.
+Per lo scripting, elimina una sottocartella dalla cartella padre.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ TaskFolder.DeleteFolder( _
 
 <dl> <dt>
 
-*cartellaname* \[ in\]
+*folderName* \[ Pollici\]
 </dt> <dd>
 
-Nome della sottocartella da rimuovere. La cartella radice dell'attività è specificata con una barra rovesciata ( \) . Questo parametro può essere un percorso relativo della cartella che si desidera eliminare. Un esempio di percorso di una cartella attività, nella cartella radice dell'attività, è \\ MyTaskFolder. Non è possibile usare il carattere ' .' per specificare la cartella attività corrente è. .' non è possibile utilizzare i caratteri per specificare la cartella attività padre nel percorso.
+Nome della sottocartella da rimuovere. La cartella dell'attività radice viene specificata con una barra rovesciata ( \\ ). Questo parametro può essere un percorso relativo alla cartella che si vuole eliminare. Un esempio di percorso di cartella di attività, nella cartella dell'attività radice, è \\ MyTaskFolder. Il carattere '.' non può essere usato per specificare la cartella dell'attività corrente e '.'. Non è possibile usare caratteri per specificare la cartella dell'attività padre nel percorso.
 
 </dd> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
 Non supportata.
@@ -67,9 +67,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**TaskFolder**](taskfolder.md)
+[**Cartella attività**](taskfolder.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)
