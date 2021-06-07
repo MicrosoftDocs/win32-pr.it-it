@@ -1,33 +1,33 @@
 ---
-title: Chiavi e valori del registro di sistema per il backup e il ripristino
+title: Chiavi e valori del Registro di sistema per il backup e il ripristino
 ms.assetid: 83449f78-cca1-449b-8c5f-3c8a91c8b3e7
-description: 'Altre informazioni su: chiavi e valori del registro di sistema per il backup e il ripristino'
+description: 'Altre informazioni su: Chiavi e valori del Registro di sistema per il backup e il ripristino'
 keywords:
-- backup backup, chiavi del registro di sistema
-- Backup delle chiavi del registro di sistema
-- Backup CustomPerformanceSettings
-- Backup DisableMonitoring
-- Backup FilesNotToBackup
-- Backup FilesNotToSnapshot
-- Backup KeysNotToRestore
-- Backup LastInstance
-- Backup LastRestoreId
-- Backup MaxShadowCopies
-- Backup MinDiffAreaFileSize
-- Backup OverallPerformanceSetting
-- Backup SYSVOL
+- backup, chiavi del Registro di sistema
+- Backup delle chiavi del Registro di sistema
+- CustomPerformanceSettings Backup
+- DisableMonitoring Backup
+- FilesNotToBackup Backup
+- FilesNotToSnapshot Backup
+- KeysNotToRestore Backup
+- LastInstance Backup
+- LastRestoreId Backup
+- MaxShadowCopies Backup
+- MinDiffAreaFileSize Backup
+- OverallPerformanceSetting Backup
+- SYSVOL Backup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef9796ff96efbc20ac90de6d26a0c1bac7b17633
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e7058378561072bdc0f51abb455c098a22a9ad5e
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127659"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386790"
 ---
-# <a name="registry-keys-and-values-for-backup-and-restore"></a>Chiavi e valori del registro di sistema per il backup e il ripristino
+# <a name="registry-keys-and-values-for-backup-and-restore"></a>Chiavi e valori del Registro di sistema per il backup e il ripristino
 
-Le applicazioni che richiedono o eseguono operazioni di backup e ripristino devono usare le chiavi e i valori del registro di sistema seguenti per comunicare tra loro o con funzionalità quali il [servizio Copia Shadow del volume (VSS)](/windows/desktop/VSS/volume-shadow-copy-service-portal) e Windows backup:
+Le applicazioni che richiedono o eseguono operazioni di backup e ripristino devono usare le chiavi e i valori del Registro di sistema seguenti per comunicare tra loro o con funzionalità quali [Servizio Copia Shadow del volume (VSS)](/windows/desktop/VSS/volume-shadow-copy-service-portal) e Windows Backup:
 
 -   [CustomPerformanceSettings](#customperformancesettings)
 -   [DisableMonitoring](#disablemonitoring)
@@ -44,218 +44,218 @@ Le applicazioni che richiedono o eseguono operazioni di backup e ripristino devo
 
 ## <a name="customperformancesettings"></a>CustomPerformanceSettings
 
-Vedere [OverallPerformanceSetting e CustomPerformanceSettings](#overallperformancesetting-and-customperformancesettings).
+Vedere [OverallPerformanceSetting e CustomPerformanceSettings.](#overallperformancesetting-and-customperformancesettings)
 
 ## <a name="disablemonitoring"></a>DisableMonitoring
 
-Nelle piattaforme client Windows a partire da Windows 7, agli utenti viene automaticamente richiesto di configurare la funzionalità di backup di Windows, se non è già stata eseguita. Queste notifiche vengono visualizzate in fase di avvio del computer, a partire da sette giorni dopo l'installazione del sistema operativo. Vengono visualizzate anche quando l'utente si connette a un'unità disco rigido; in questo caso, le notifiche vengono visualizzate immediatamente.
+Nelle piattaforme client Windows a partire da Windows 7, agli utenti viene automaticamente richiesto di configurare la funzionalità Windows Backup, se non lo hanno già fatto. Queste notifiche vengono visualizzate all'avvio del computer, a partire da sette giorni dopo l'installazione del sistema operativo. Vengono visualizzati anche quando l'utente collega un'unità disco rigido; In questo caso, le notifiche vengono visualizzate immediatamente.
 
-Gli OEM e gli sviluppatori di applicazioni di backup di terze parti possono usare il valore del registro di sistema **DisableMonitoring** per disattivare queste notifiche automatiche.
+Gli OEM e gli sviluppatori di applicazioni di backup di terze parti possono usare il valore del Registro di sistema **DisableMonitoring** per disattivare queste notifiche automatiche.
 
-Questo valore non esiste per impostazione predefinita, pertanto deve essere creato nella seguente chiave del registro di sistema:
+Questo valore non esiste per impostazione predefinita, quindi deve essere creato con la chiave del Registro di sistema seguente:
 
-**HKEY \_ \_Computer locale** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **WindowsBackup**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **WindowsBackup**
 
-Il valore del registro di sistema **DisableMonitoring** ha il tipo di dati reg \_ DWORD ed è interpretato nel modo seguente:
+Il valore del Registro di sistema **DisableMonitoring** ha il tipo di dati REG \_ DWORD e viene interpretato come segue:
 
--   Se i dati del valore sono impostati su 1 e se gli utenti non hanno già configurato la funzionalità Windows backup, le notifiche automatiche sono disattivate. Se una notifica automatica è già presente nel centro operativo, impostando questo valore del registro di sistema la notifica verrà rimossa alle 10:00 del mattino successivo.
--   Se il valore non esiste, se i dati non sono impostati o se i dati sono impostati su zero, le notifiche automatiche non vengono disattivate.
+-   Se i dati del valore sono impostati su 1 e se gli utenti non hanno già configurato la funzionalità Windows Backup, le notifiche automatiche vengono disattivate. Se nel Centro notifiche è già presente una notifica automatica, l'impostazione di questo valore del Registro di sistema determina la rimozione della notifica alle 10:00 della mattina seguente.
+-   Se il valore non esiste, se i relativi dati non sono impostati o se i relativi dati sono impostati su zero, le notifiche automatiche non vengono disattivate.
 
-**Windows Vista e Windows XP:** Il valore del registro di sistema non è supportato.
+**Windows Vista e Windows XP:** Questo valore del Registro di sistema non è supportato.
 
 ## <a name="filesnottobackup"></a>FilesNotToBackup
 
-La chiave del registro di sistema **FilesNotToBackup** specifica i nomi dei file e delle directory per cui le applicazioni di backup non devono eseguire il backup o il ripristino. Ognuna delle voci in questa chiave è una stringa REG \_ \_ multisz nel formato seguente:
+La chiave del Registro di sistema **FilesNotToBackup** specifica i nomi dei file e delle directory di cui le applicazioni di backup non devono eseguire il backup o il ripristino. Ognuna delle voci in questa chiave è una stringa REG \_ MULTI \_ SZ nel formato seguente:
 
-\[*Unità di* \] \[  \] Percorso \\ *Nome file* \[ /s\]
+\[ \] Unità \[  \] Percorso \\ *FileName* \[ /s\]
 
--   *Unità* consente di specificare l'unità ed è facoltativa. Ad esempio, c:. Per specificare tutte le unità, utilizzare una barra rovesciata ( \) ; non è necessaria alcuna lettera di unità.
+-   *L'unità* specifica l'unità ed è facoltativa. Ad esempio, c:. Per specificare tutte le unità, usare una barra rovesciata ( \\ ); non sono necessarie lettere di unità.
 -   *Path* specifica il percorso ed è facoltativo. Non può contenere caratteri jolly.
--   *Filename* specifica il file o la directory ed è obbligatorio. Può contenere caratteri jolly.
--   /s indica che devono essere incluse tutte le sottodirectory del percorso specificato.
--   Le variabili di ambiente come% SystemRoot% possono essere sostituite per tutta o parte dell'intera stringa.
+-   *FileName* specifica il file o la directory ed è obbligatorio. Può contenere caratteri jolly.
+-   /s specifica che devono essere incluse tutte le sottodirectory del percorso specificato.
+-   Le variabili di ambiente come %Systemroot% possono essere sostituite per tutta o parte dell'intera stringa.
 
-Nella tabella seguente vengono illustrate alcune voci tipiche.
+La tabella seguente illustra alcune voci tipiche.
 
 | Nome voce                             | Valore predefinito                                                                             |
 |----------------------------------------|-------------------------------------------------------------------------------------------|
 | Internet Explorer                      | File temporanei                                                                           |
-| File di paging della memoria                       | \\Pagefile.sys                                                                            |
-| Distributed Transaction Coordinator MS | C: \\ Windows \\ system32 MSDTC MSDTC \\ \\ . LOG C: \\ Windows \\ system32 \\ MSDtc \\ trace \\ dtctrace. log |
-| Cache File offline                    | % SystemRoot% \\ csc \\ \* /s                                                                  |
+| File di pagine di memoria                       | \\Pagefile.sys                                                                            |
+| MS Distributed Transaction Coordinator | C: \\ \\ \\ msdtc MSDTC di sistema \\ Windows32. LOG C: \\ Windows \\ system32 \\ MSDtc \\ trace \\ dtctrace.log |
+| File offline cache                    | %Systemroot% \\ CSC \\ \* /s                                                                  |
 | Risparmio energia                       | \\hiberfil.sys                                                                            |
 | Single Instance Storage (SIS)                | \\Archivio comune SIS \\ \* . \* /s                                                              |
-| File temporanei                        | % TEMP% \\ \* /s                                                                             |
+| File temporanei                        | %TEMP% \\ \* /s                                                                             |
 
 
 
  
 
 > [!Note]  
-> Per le applicazioni che eseguono backup a livello di volume in genere, copiando l'intero volume a livello di blocco, non è possibile rispettare la chiave del registro di sistema **FilesNotToBackup** in fase di backup. Ma restano in attesa fino al momento del ripristino per eliminare i file di cui non è stato eseguito il backup. Nella maggior parte dei casi, si tratta di una strategia ragionevole. Tuttavia, nel caso di file di archiviazione a istanza singola, i file di archivio comuni SIS non devono essere eliminati in fase di ripristino.
+> Le applicazioni che eseguono backup a livello di volume in genere copiano l'intero volume a livello di blocco, quindi non possono rispettare la chiave del Registro di sistema **FilesNotToBackup** in fase di backup. Al contrario, attendono il tempo di ripristino per eliminare i file di cui non è stato eseguito il backup. Nella maggior parte dei casi si tratta di una strategia ragionevole. Tuttavia, nel caso di file di archiviazione a istanza singola, i file di archivio comune SIS non devono essere eliminati in fase di ripristino.
 
  
 
-Per i backup del volume a livello di blocco, Windows Server Backup e l'utilità Windows Wbadmin rispettano la chiave del registro di sistema **FilesNotToBackup** eliminando i file appropriati in fase di ripristino. Il ripristino del sistema e il backup dello stato del sistema non rispettano la chiave del registro di sistema **FilesNotToBackup** .
+Per i backup di volumi a livello di blocco, Windows Server Backup e l'utilità Wbadmin di Windows rispettano la chiave del Registro di sistema **FilesNotToBackup** eliminando i file appropriati in fase di ripristino. Ripristino configurazione di sistema e il backup dello stato del sistema non rispettano la chiave del Registro di **sistema FilesNotToBackup.**
 
-**Windows XP:** Ripristino configurazione di sistema rispetta la chiave del registro di sistema **FilesNotToBackup** .
+**Windows XP:** Ripristino configurazione di sistema rispetta la chiave **del Registro di sistema FilesNotToBackup.**
 
 ## <a name="filesnottosnapshot"></a>FilesNotToSnapshot
 
-VSS supporta la chiave del registro di sistema **FilesNotToSnapshot** . Le applicazioni e i servizi possono usare questa chiave per specificare i file da eliminare dalle copie shadow appena create. Per altre informazioni, vedere [esclusione di file dalle copie shadow](/windows/desktop/VSS/excluding-files-from-shadow-copies).
+VSS supporta la chiave **del Registro di sistema FilesNotToSnapshot.** Le applicazioni e i servizi possono usare questa chiave per specificare i file da eliminare dalle nuove copie shadow create. Per altre informazioni, vedere [Esclusione di file da copie shadow.](/windows/desktop/VSS/excluding-files-from-shadow-copies)
 
-**Windows Server 2003 e Windows XP:** Questa chiave del registro di sistema non è supportata.
+**Windows Server 2003 e Windows XP:** Questa chiave del Registro di sistema non è supportata.
 
-Per i backup del volume a livello di blocco, Windows Server Backup rispetta la chiave del registro di sistema **FilesNotToSnapshot** eliminando i file appropriati in fase di ripristino.
+Per i backup di volumi a livello di blocco, Windows Server Backup rispetta la chiave del Registro di sistema **FilesNotToSnapshot** eliminando i file appropriati in fase di ripristino.
 
 ## <a name="idletimeout"></a>IdleTimeout
 
-Il valore del registro di sistema **IdleTimeout** specifica la quantità di tempo, in secondi, in cui il servizio VSS resterà in attesa quando è inattivo. Se questo valore di timeout viene raggiunto e non è necessario eseguire alcuna attività, il servizio VSS verrà arrestato.
+Il valore del Registro di sistema **IdleTimeout** specifica la quantità di tempo, in secondi, di attesa del servizio VsS quando è inattivo. Se questo valore di timeout viene raggiunto e non sono presenti attività da eseguire, il servizio VsS verrà arrestato.
 
-Questo valore del registro di sistema si trova nella seguente chiave del registro di sistema:
+Questo valore del Registro di sistema è disponibile nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_** \\  \\  \\  \\  \\ **Impostazioni** VSS dei servizi CurrentControlSet di sistema del computer locale
+**HKEY \_ Local \_ MACHINE System** \\  \\ **CurrentControlSet** \\ **Services** \\ **VSS** \\ **Settings**
 
-Se il valore del registro di sistema non esiste:
+Se questo valore del Registro di sistema non esiste:
 
--   Per impostazione predefinita, il valore di timeout effettivo usato è 180 secondi (3 minuti).
+-   Il valore di timeout effettivo usato è 180 secondi (3 minuti) per impostazione predefinita.
 -   È possibile creare un valore con il nome **IdleTimeout** e il tipo DWORD e impostarlo sul valore desiderato.
 
-Se il valore del registro di sistema è impostato su 0 secondi:
+Se questo valore del Registro di sistema è impostato su 0 secondi:
 
--   Il valore di timeout effettivo utilizzato è 180 secondi (3 minuti).
+-   Il valore di timeout effettivo usato è 180 secondi (3 minuti).
 
-Se si imposta questo valore del registro di sistema:
+Se si imposta questo valore del Registro di sistema:
 
--   VSS utilizza il valore di timeout impostato.
--   È possibile specificare qualsiasi valore compreso tra 1 e FFFFFFFF secondi. Tuttavia, si consiglia di scegliere un valore compreso tra 1 e 180 secondi.
+-   VSS usa il valore di timeout impostato.
+-   È possibile specificare qualsiasi valore compreso tra 1 e FFFFFFFF secondi. È tuttavia consigliabile scegliere un valore compreso tra 1 e 180 secondi.
 
-**Windows Server 2003 e Windows XP:** Questa chiave del registro di sistema non è supportata.
+**Windows Server 2003 e Windows XP:** Questa chiave del Registro di sistema non è supportata.
 
 ## <a name="keysnottorestore"></a>KeysNotToRestore
 
-La chiave del registro di sistema **KeysNotToRestore** specifica i nomi delle sottochiavi del registro di sistema e i valori che non devono essere ripristinati dalle applicazioni di backup. Per ulteriori informazioni, vedere [KeysNotToRestore](/previous-versions/windows/it-pro/windows-server-2003/cc737538(v=ws.10)). Non è necessario rispettare la chiave del registro di sistema **KeysNotToRestore** .
+La chiave del Registro di sistema **KeysNotToRestore** specifica i nomi delle sottochiavi del Registro di sistema e i valori che le applicazioni di backup non devono ripristinare. Per altre informazioni, vedere [KeysNotToRestore.](/previous-versions/windows/it-pro/windows-server-2003/cc737538(v=ws.10)) Non è necessario rispettare la chiave **del Registro di sistema KeysNotToRestore.**
 
-**Windows Server 2003 e Windows XP:** È necessario rispettare la chiave del registro di sistema **KeysNotToRestore** .
+**Windows Server 2003 e Windows XP:** È necessario rispettare la chiave **del Registro di sistema KeysNotToRestore.**
 
-Per i backup del volume a livello di blocco, Windows Server Backup rispetta la chiave del registro di sistema **KeysNotToRestore** eliminando i file appropriati in fase di ripristino.
+Per i backup di volumi a livello di blocco, Windows Server Backup rispetta la chiave del Registro di sistema **KeysNotToRestore** eliminando i file appropriati in fase di ripristino.
 
-Il backup dello stato del sistema rispetta la chiave del registro di sistema **KeysNotToRestore** .
+Il backup dello stato del sistema rispetta la **chiave del Registro di sistema KeysNotToRestore.**
 
 ## <a name="lastinstance"></a>LastInstance
 
-Il valore del registro di sistema **LastInstance** indica che è stata eseguita un'operazione di ripristino bare metal e che i volumi sono stati sovrascritti ma non formattati. Per ulteriori informazioni, vedere [utilizzo del ripristino automatico del sistema VSS per il ripristino di emergenza](/windows/desktop/VSS/using-vss-automated-system-recovery-for-disaster-recovery).
+Il valore del Registro di sistema **LastInstance** indica che è stata eseguita un'operazione di ripristino bare metal e che i volumi sono stati sovrascritti ma non formattati. Per altre informazioni, vedere [Using VSS Automated Ripristino di sistema for Disaster Recovery](/windows/desktop/VSS/using-vss-automated-system-recovery-for-disaster-recovery).
 
-**Windows Server 2003 e Windows XP:** Il valore del registro di sistema non è supportato.
+**Windows Server 2003 e Windows XP:** Questo valore del Registro di sistema non è supportato.
 
 ## <a name="lastrestoreid"></a>LastRestoreId
 
-Quando un'applicazione di backup esegue un ripristino dello stato del sistema, deve indicare che l'operazione è stata eseguita impostando il valore del registro di sistema **LastRestoreId** . "Ripristino dello stato del sistema" in questo caso si riferisce a qualsiasi ripristino che ripristini in modo selettivo i driver e i binari del sistema operativo.
+Quando un'applicazione di backup esegue un ripristino dello stato del sistema, deve indicare che l'operazione è stata eseguita impostando il valore del Registro di sistema **LastRestoreId.** "Ripristino dello stato del sistema" in questo caso si riferisce a qualsiasi ripristino che ripristina in modo selettivo i file binari e i driver del sistema operativo.
 
 Se l'intero volume di avvio e di sistema viene ripristinato a livello di volume, questo valore non deve essere impostato.
 
-Se il valore del registro di sistema **LastRestoreId** non esiste, l'applicazione di backup deve crearla con la chiave del registro di sistema seguente:
+Se il valore del Registro di sistema **LastRestoreId** non esiste, l'applicazione di backup deve crearlo nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_Computer locale** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **backuprestore** \\ **SystemStateRestore**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **BackupRestore** \\ **SystemStateRestore**
 
-Creare un valore con il nome **LastRestoreId** e digitare reg \_ SZ. Il valore deve essere un valore opaco univoco, ad esempio un GUID.
+Creare un valore con il nome **LastRestoreId** e digitare REG \_ SZ. Il valore deve essere un valore opaco univoco, ad esempio un GUID.
 
-Ogni volta che viene eseguito un nuovo ripristino dello stato del sistema, l'applicazione di backup deve modificare i dati del valore **LastRestoreId** .
+Ogni volta che viene eseguito un nuovo ripristino dello stato del sistema, l'applicazione di backup deve modificare i dati del **valore LastRestoreId.**
 
-Altre applicazioni che devono monitorare i ripristini dello stato del sistema devono archiviare i dati di questo valore del registro di sistema. Questi dati possono essere confrontati con i dati correnti del valore del registro di sistema **LastRestoreId** per determinare se è stato eseguito un nuovo ripristino dello stato del sistema.
+Le altre applicazioni che devono monitorare i ripristini dello stato del sistema devono archiviare i dati di questo valore del Registro di sistema. Questi dati possono essere confrontati con i dati correnti del valore del Registro di **sistema LastRestoreId** per determinare se è stato eseguito un nuovo ripristino dello stato del sistema.
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Questo valore del registro di sistema non è supportato fino a Windows Vista con Service Pack 1 (SP1) e Windows Server 2008.
+**Windows Vista, Windows Server 2003 e Windows XP:** Questo valore del Registro di sistema non è supportato fino a Windows Vista con Service Pack 1 (SP1) e Windows Server 2008.
 
 ## <a name="maxshadowcopies"></a>MaxShadowCopies
 
-Il valore del registro di sistema **MaxShadowCopies** specifica il numero massimo di [*copie shadow accessibili dal client*](/windows/desktop/VSS/vssgloss-c) che possono essere archiviate in ogni volume del computer. Una copia shadow accessibile dal client è una copia shadow creata usando il valore **accessibile del \_ \_ client \_ VSS CTX** dell'enumerazione del [**\_ \_ \_ contesto dello snapshot VSS**](/windows/desktop/api/vss/ne-vss-vss_snapshot_context) . Le copie shadow accessibili dal client vengono usate da Copie shadow di cartelle condivise. Per ulteriori informazioni sulle copie shadow, vedere la documentazione di [VSS](/windows/desktop/VSS/volume-shadow-copy-service-portal) .
+Il valore del Registro di sistema **MaxShadowCopies** specifica il numero massimo di [*copie shadow*](/windows/desktop/VSS/vssgloss-c) accessibili dal client che possono essere archiviate in ogni volume del computer. Una copia shadow accessibile dal client è una copia shadow creata usando il valore ACCESSIBLE di **VSS \_ CTX \_ CLIENT \_** dell'enumerazione [**\_ VSS \_ SNAPSHOT \_ CONTEXT.**](/windows/desktop/api/vss/ne-vss-vss_snapshot_context) Le copie shadow accessibili dal client vengono usate da Copie shadow di cartelle condivise. Per altre informazioni sulle copie shadow, vedere la documentazione [del Servizio Copia](/windows/desktop/VSS/volume-shadow-copy-service-portal) Shadow del volume.
 
-Se il valore del registro di sistema **MaxShadowCopies** non esiste, l'applicazione di backup può crearla con la chiave del registro di sistema seguente:
+Se il valore del Registro di sistema **MaxShadowCopies** non esiste, l'applicazione di backup può crearlo nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_** \\  \\  \\  \\  \\ **Impostazioni** VSS dei servizi CurrentControlSet di sistema del computer locale
+**HKEY \_ Local \_ MACHINE System** \\  \\ **CurrentControlSet** \\ **Services** \\ **VSS** \\ **Settings**
 
 Creare un valore con il nome **MaxShadowCopies** e digitare DWORD. I dati predefiniti per questo valore sono 64. Il valore minimo è 1. Il valore massimo è 512.
 
 > [!Note]  
-> Per altri tipi di copie shadow, non esiste alcun valore del registro di sistema corrispondente a **MaxShadowCopies**. Il numero massimo di copie shadow è 512 per volume.
+> Per altri tipi di copie shadow, non esiste alcun valore del Registro di sistema corrispondente a **MaxShadowCopies.** Il numero massimo di copie shadow è 512 per volume.
 
  
 
-**Nota**  L'impostazione **MaxShadowCopies** è supportata in Windows Server 2003 o versioni successive.
+**Nota**  **L'impostazione MaxShadowCopies** è supportata in Windows Server 2003 o versioni successive.
 
-**Windows Server 2003:** Nei server del cluster è possibile che i dati del valore del registro di sistema **MaxShadowCopies** debbano essere impostati su un numero inferiore. Per ulteriori informazioni, vedere "quando si utilizza il Servizio Copia Shadow del volume nei computer basati su Windows Server 2003 che eseguono molte operazioni di I/O, i volumi del disco impiegano più tempo per l'esecuzione online" nella Knowledge base e supporto tecnico all'indirizzo [https://support.microsoft.com/kb/945058](https://support.microsoft.com/kb/945058) .
+**Windows Server 2003:** Nei server del cluster, potrebbe essere necessario impostare i dati del valore del Registro di sistema **MaxShadowCopies** su un numero inferiore. Per altre informazioni, vedere "Quando si usa il Servizio Copia Shadow del volume nei computer basati su Windows Server 2003 che eseguono molte operazioni di I/O, i volumi del disco possono richiedere più tempo per passare alla modalità online" in Guida e supporto tecnico Knowledge Base all'indirizzo [https://support.microsoft.com/kb/945058](https://support.microsoft.com/kb/945058) .
 
-**Windows XP:** Il valore del registro di sistema non è supportato.
+**Windows XP:** Questo valore del Registro di sistema non è supportato.
 
 ## <a name="mindiffareafilesize"></a>MinDiffAreaFileSize
 
-[VSS](/windows/desktop/VSS/volume-shadow-copy-service-portal) alloca un'area di archiviazione copia shadow (o "area diff") per archiviare i dati per le copie shadow. La dimensione minima dell'area di archiviazione copia shadow è un'impostazione per computer che può essere specificata usando il valore del registro di sistema **MinDiffAreaFileSize** .
+[VSS alloca](/windows/desktop/VSS/volume-shadow-copy-service-portal) un'area di archiviazione delle copie shadow (o "area diff") per archiviare i dati per le copie shadow. La dimensione minima dell'area di archiviazione della copia shadow è un'impostazione per computer che può essere specificata usando il valore del Registro di sistema **MinDiffAreaFileSize.**
 
-Se il valore del registro di sistema **MinDiffAreaFileSize** non è impostato, le dimensioni minime dell'area di archiviazione della copia shadow sono pari a 32 MB per i volumi inferiori a 500 mb e 320 MB per volumi di dimensioni superiori a 500 MB.
+Se il valore del Registro di sistema **MinDiffAreaFileSize** non è impostato, la dimensione minima dell'area di archiviazione della copia shadow è 32 MB per i volumi inferiori a 500 MB e 320 MB per i volumi di dimensioni superiori a 500 MB.
 
-**Windows server 2008, Windows server 2003 con SP1 e Windows Vista:** Se il valore del registro di sistema **MinDiffAreaFileSize** non è impostato, le dimensioni minime dell'area di archiviazione della copia shadow sono pari a 300 MB. Se viene impostato il valore del registro di sistema **MinDiffAreaFileSize** , i dati devono essere compresi tra 300 mb e 3000 MB (3 GB) e devono essere un multiplo di 300 MB.
+**Windows Server 2008, Windows Server 2003 con SP1 e Windows Vista:** Se il valore del Registro di sistema **MinDiffAreaFileSize** non è impostato, l'area di archiviazione della copia shadow ha una dimensione minima di 300 MB. Se il valore del Registro di sistema **MinDiffAreaFileSize** è impostato, i relativi dati devono essere compresi tra 300 MB e 3000 MB (3 GB) e devono essere un multiplo di 300 MB.
 
-**Windows Server 2003:** Se il valore del registro di sistema **MinDiffAreaFileSize** non è impostato, le dimensioni minime dell'area di archiviazione della copia shadow sono 100 MB.
+**Windows Server 2003:** Se il valore del Registro di sistema **MinDiffAreaFileSize** non è impostato, la dimensione minima dell'area di archiviazione della copia shadow è 100 MB.
 
-**Windows XP:** Il valore del registro di sistema non è supportato.
+**Windows XP:** Questo valore del Registro di sistema non è supportato.
 
-Se il valore del registro di sistema **MinDiffAreaFileSize** non esiste, l'applicazione di backup può crearla con la chiave del registro di sistema seguente:
+Se il valore del Registro di sistema **MinDiffAreaFileSize** non esiste, l'applicazione di backup può crearlo nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_Computer locale** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **VolSnap**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **VolSnap**
 
-Creare un valore con il nome **MinDiffAreaFileSize** e digitare reg \_ DWORD. I dati per questa chiave sono specificati in megabyte. 320 è uguale a 320 MB e 3200 è uguale a 3,2 GB. È necessario specificare un numero che corrisponde a un multiplo di 32. Se si specifica un valore che non è un multiplo di 32, verrà usato il multiplo successivo di 32.
+Creare un valore con il nome **MinDiffAreaFileSize** e digitare REG \_ DWORD. I dati per questa chiave sono specificati in megabyte. 320 equivale a 320 MB e 3200 a 3,2 GB. È necessario specificare un numero multiplo di 32. Se si specifica un valore che non è un multiplo di 32, verrà usato il multiplo successivo di 32.
 
-Le copie shadow potrebbero non funzionare correttamente se il valore del registro di sistema **MinDiffAreaFileSize** specifica una dimensione minima maggiore delle dimensioni massime dell'area di archiviazione della copia shadow. Per specificare le dimensioni massime dell'area di archiviazione copia shadow, usare il comando [vssadmin](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) add shadowstorage o vssadmin resize shadowstorage. Per visualizzare le dimensioni massime correnti, usare il comando [vssadmin list shadowstorage](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) . Se non è stata impostata una dimensione massima, non esiste alcun limite alla quantità di spazio che è possibile usare.
+Le copie shadow potrebbero non funzionare correttamente se il valore del Registro di sistema **MinDiffAreaFileSize** specifica una dimensione minima maggiore della dimensione massima dell'area di archiviazione della copia shadow. Per specificare le dimensioni massime dell'area di archiviazione della copia shadow, usare il comando [Vssadmin](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) add shadowstorage o vssadmin resize shadowstorage. Per visualizzare le dimensioni massime correnti, usare il [comando Vssadmin list shadowstorage.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) Se non è stata impostata una dimensione massima, non esiste alcun limite alla quantità di spazio che può essere usata.
 
 ## <a name="overallperformancesetting-and-customperformancesettings"></a>OverallPerformanceSetting e CustomPerformanceSettings
 
-I valori del registro di sistema **OverallPerformanceSetting** e **CustomPerformanceSettings** vengono usati per specificare le impostazioni delle prestazioni per Windows Server backup. Questi valori del registro di sistema sono supportati solo nei sistemi operativi Windows Server.
+I valori del Registro di sistema **OverallPerformanceSetting** e **CustomPerformanceSettings** vengono usati per specificare le impostazioni delle prestazioni per Windows Server Backup. Questi valori del Registro di sistema sono supportati solo nei sistemi operativi Windows Server.
 
-**Windows Server 2003:** Questi valori del registro di sistema non sono supportati.
+**Windows Server 2003:** Questi valori del Registro di sistema non sono supportati.
 
-Se questi valori del registro di sistema non esistono, l'applicazione di backup può crearli con la seguente chiave del registro di sistema:
+Se questi valori del Registro di sistema non esistono, l'applicazione di backup può crearli nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_Computer locale** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Windows block level backup**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Windows Block Level Backup**
 
-Per specificare le impostazioni delle prestazioni per tutti i volumi, creare un valore con il nome **OverallPerformanceSetting** e digitare reg \_ DWORD. I dati del valore devono essere impostati su uno dei valori seguenti.
+Per specificare le impostazioni relative alle prestazioni per tutti i volumi, creare un valore con il nome **OverallPerformanceSetting** e digitare REG \_ DWORD. I dati del valore devono essere impostati su uno dei valori seguenti.
 
 | Valore | Significato                                                                                                                                                                                                                                   |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | Normali prestazioni di backup (tramite backup completi). Questa impostazione corrisponde alla normale impostazione delle prestazioni di backup descritta in [ottimizzazione delle prestazioni di backup e server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11)).            |
-| 2     | Prestazioni di backup più veloci (usando i backup incrementali). Questa impostazione corrisponde all'impostazione delle prestazioni di backup più veloce descritta in [ottimizzazione delle prestazioni di backup e server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11)).     |
-| 3     | Prestazioni di backup personalizzate (specificando un'impostazione delle prestazioni per ogni volume). Questa impostazione corrisponde all'impostazione personalizzata descritta in [ottimizzazione delle prestazioni di backup e server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11)). |
+| 1     | Normali prestazioni di backup (tramite backup completi). Questa impostazione corrisponde all'impostazione Prestazioni normali del backup descritta in [Ottimizzazione delle prestazioni del backup e del server.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11))            |
+| 2     | Prestazioni di backup più veloci (tramite backup incrementali). Questa impostazione corrisponde all'impostazione Prestazioni di backup più veloci descritta in [Ottimizzazione delle prestazioni del backup e del server.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11))     |
+| 3     | Prestazioni di backup personalizzate (specificando un'impostazione delle prestazioni per ogni volume). Questa impostazione corrisponde all'impostazione Personalizzata descritta in [Ottimizzazione del backup e delle prestazioni del server.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11)) |
 
 
 
  
 
-Se si imposta **OverallPerformanceSetting** su 3, è necessario specificare anche le impostazioni relative alle prestazioni per ogni volume singolarmente. A tale scopo, creare un valore con il nome **CustomPerformanceSettings** e digitare reg \_ \_ multisz. I dati di questo valore devono essere impostati come segue:
+Se si imposta **OverallPerformanceSetting** su 3, è necessario specificare anche le impostazioni relative alle prestazioni per ogni singolo volume. A tale scopo, creare un valore con il nome **CustomPerformanceSettings** e digitare REG \_ MULTI \_ SZ. I dati di questo valore devono essere impostati come segue:
 
--   Ogni stringa nella sequenza REG \_ \_ multisz di stringhe contiene l'impostazione per un volume.
+-   Ogni stringa nella sequenza di stringhe REG \_ MULTI \_ SZ contiene l'impostazione per un volume.
 -   Ogni stringa è costituita da un GUID del volume, seguito da una virgola, seguita da un valore DWORD.
 -   Ognuno dei valori DWORD è 1 (backup completo) o 2 (backup incrementale).
 
-Si supponga, ad esempio, che il computer disponga di due volumi come segue:
+Si supponga, ad esempio, che il computer abbia due volumi come segue:
 
 -   I due volumi sono C: \\ e D: \\ .
--   Il GUID per il volume C: \\ è 07c473ca4-2df8-11de-9d80-806e6f6e6963 e il GUID per il volume D: \\ è 0ac22ea6c-712f-11de-ADB0-00215a67606e.
--   Si desidera specificare perfornance di backup normali per il volume C: \\ e prestazioni di backup più veloci per il volume D: \\ .
+-   Il GUID per il volume C: è \\ 07c473ca4-2df8-11de-9d80-806e6f6e6963 e il GUID per il volume D: è \\ 0ac22ea6c-712f-11de-adb0-00215a67606e.
+-   Si vuole specificare una normale perforazione di backup per il volume C: e prestazioni di backup più veloci \\ per il volume D: \\ .
 
-A tale scopo, impostare **OverallPerformanceSetting** su 3 e **CustomPerformanceSettings** su "07c473ca4-2df8-11de-9d80-806e6f6e6963, 1 \\ 00ac22ea6c-712f-11de-ADB0-00215a67606e, 2".
+A tale scopo, È necessario impostare **OverallPerformanceSetting** su 3 e **CustomPerformanceSettings** su "07c473ca4-2df8-11de-9d80-806e6f6e6963,1 \\ 00ac22ea6c-712f-11de-adb0-00215a67606e,2".
 
-Se si imposta **OverallPerformanceSetting** su 1 o 2, i dati nel valore **CustomPerformanceSettings** vengono ignorati.
+Se si imposta **OverallPerformanceSetting** su 1 o 2, i dati nel **valore CustomPerformanceSettings** vengono ignorati.
 
 ## <a name="sysvol"></a>SYSVOL
 
-Il valore del registro di sistema **SYSVOL** è un modo per notificare al servizio file System distribuito Replication (DFSR) che è stata avviata un'operazione di ripristino dello stato del sistema. Qualsiasi applicazione di backup che esegue il ripristino dello stato del sistema di SYSVOL deve usare questo valore per indicare se l'operazione di ripristino è autorevole o non autorevole. Questo valore viene letto dal servizio DFSR. Se questo valore non è impostato, per impostazione predefinita il ripristino di SYSVOL viene eseguito in un caso non autorevole.
+Il valore del Registro di sistema **SYSVOL** consente di notificare al servizio replica file system distribuito (DFSR) che è stata avviata un'operazione di ripristino dello stato del sistema. Qualsiasi applicazione di backup che esegue il ripristino dello stato del sistema di SYSVOL deve utilizzare questo valore per indicare se l'operazione di ripristino è autorevole o non autorevole. Questo valore viene letto dal servizio DFSR. Se questo valore non è impostato, il ripristino SYSVOL viene eseguito in modo non autorevole per impostazione predefinita.
 
-Se il valore del registro di sistema **SYSVOL** non esiste, l'applicazione di backup deve crearla con la seguente chiave del registro di sistema:
+Se il valore del Registro di sistema **SYSVOL** non esiste, l'applicazione di backup deve crearlo nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_** \\  \\  \\  \\  \\ **Ripristino** DFSR dei servizi CurrentControlSet del computer locale
+**HKEY \_ Local \_ MACHINE System** \\  \\ **CurrentControlSet** \\ **Services** \\ **DFSR** \\ **Restore**
 
-Creare un valore con il nome **SYSVOL** e digitare reg \_ SZ. I dati del valore devono essere impostati su "autorevole" o "non autorevole" in base alla richiesta dell'amministratore di sistema.
+Creare un valore con il nome **SYSVOL** e digitare REG \_ SZ. I dati del valore devono essere impostati su "autorevole" o "non autorevole" in base alla richiesta dell'amministratore di sistema.
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Il valore del registro di sistema non è supportato.
+**Windows Vista, Windows Server 2003 e Windows XP:** Questo valore del Registro di sistema non è supportato.
 
  
 

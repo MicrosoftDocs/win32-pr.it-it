@@ -4,12 +4,12 @@ description: TBD
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 68633f531c627eed8b02c7f65a248213743ca8bc
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: fdc489184b3220afd0b8c75738fa1d40de207c8d
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803792"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387050"
 ---
 # <a name="directml-feature-level-history"></a>Cronologia a livello di funzionalità DirectML
 
@@ -19,9 +19,9 @@ Per informazioni generali sulla cronologia delle versioni di DirectML, vedere [C
 
 Introdotto in DirectML versione 1.5.0.
 
-Aggiunta del supporto per gli operatori seguenti.
+Aggiunta del supporto per gli operatori [seguenti.](/windows/win32/api/directml/ne-directml-dml_operator_type)
 
-* [DML_OPERATOR_ELEMENT_WISE_ATAN_YX](/windows/win32/api/directml/ne-directml-dml_operator_type)
+* **DML_OPERATOR_ELEMENT_WISE_ATAN_YX**
 * **DML_OPERATOR_ELEMENT_WISE_CLIP_GRAD**
 * **DML_OPERATOR_ELEMENT_WISE_DIFFERENCE_SQUARE**
 * **DML_OPERATOR_LOCAL_RESPONSE_NORMALIZATION_GRAD**
@@ -46,9 +46,9 @@ Il numero massimo di dimensioni supportate per gli operatori seguenti è aumenta
 
 Introdotta in DirectML versione 1.4.0.
 
-Aggiunta del supporto per gli operatori seguenti.
+Aggiunta del supporto per gli operatori [seguenti.](/windows/win32/api/directml/ne-directml-dml_operator_type)
 
-* [DML_OPERATOR_ELEMENT_WISE_BIT_AND](/windows/win32/api/directml/ne-directml-dml_operator_type)
+* **DML_OPERATOR_ELEMENT_WISE_BIT_AND**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_OR**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_XOR**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_NOT**
@@ -71,12 +71,12 @@ Aggiunta del supporto per gli operatori seguenti.
 
 Sono stati aggiunti i miglioramenti seguenti.
 
-* Il numero massimo di dimensioni del tensore è stato aumentato da 5 a 8. Vedere [DML_TENSOR_DIMENSION_COUNT_MAX1](./direct3d-directml-constants.md).
-* Agli operatori seguenti è stato aggiunto il supporto aggiuntivo per i tipi di dati Integer.
+* Il numero massimo di dimensioni tensore è stato aumentato da 5 a 8. Vedere [DML_TENSOR_DIMENSION_COUNT_MAX1](./direct3d-directml-constants.md).
+* È stato aggiunto il supporto aggiuntivo per i tipi di dati Integer agli operatori seguenti.
   * **DML_OPERATOR_ELEMENT_WISE_POW**
   * **DML_OPERATOR_ELEMENT_WISE_CONSTANT_POW**
   * **DML_OPERATOR_MAX_POOLING**, **DML_OPERATOR_MAX_POOLING1** e **DML_OPERATOR_MAX_POOLING2**
-  * **DML_OPERATOR_REDUCE**, quando **si** usa DML_REDUCE_FUNCTION_ARGMIN o **DML_REDUCE_FUNCTION_ARGMAX**
+  * **DML_OPERATOR_REDUCE**, quando si usa **DML_REDUCE_FUNCTION_ARGMIN** o **DML_REDUCE_FUNCTION_ARGMAX**
 * Sono stati aggiunti i tipi di dati a 64 bit seguenti e sono supportati dagli operatori select.
   * **DML_TENSOR_DATA_TYPE_FLOAT64**
   * **DML_TENSOR_DATA_TYPE_UINT64**
@@ -93,7 +93,7 @@ Introdotto in DirectML versione 1.2.0.
 Sono state aggiunte le API seguenti.
 
 * [Interfaccia IDMLDevice1](./directml/nn-directml-idmldevice1.md)
-* Supporto del grafo dell'operatore [(vedere IDMLDevice1::CompileGraph)](./directml/nf-directml-idmldevice1-compilegraph.md)
+* Supporto del grafo dell'operatore [(vedere IDMLDevice1::CompileGraph](./directml/nf-directml-idmldevice1-compilegraph.md)
 
 Aggiunta del supporto per gli operatori seguenti.
 
@@ -124,7 +124,7 @@ Aggiunta del supporto per gli operatori seguenti.
 
 Sono stati aggiunti i miglioramenti seguenti.
 
-* Agli operatori seguenti è stato aggiunto il supporto aggiuntivo per i tipi di dati Integer.
+* È stato aggiunto il supporto aggiuntivo per i tipi di dati Integer agli operatori seguenti.
   * **DML_OPERATOR_ELEMENT_WISE_IDENTITY**
   * **DML_OPERATOR_ELEMENT_WISE_ABS**
   * **DML_OPERATOR_ELEMENT_WISE_ADD**
@@ -168,7 +168,7 @@ Introdotto in DirectML versione 1.1.0.
 Sono state aggiunte le API seguenti.
 * [Funzione DMLCreateDevice1](./directml/nf-directml-dmlcreatedevice1.md)
 * [DML_FEATURE_LEVEL enumerazione](/windows/win32/api/directml/ne-directml-dml_feature_level)
-* Query a livello di funzionalità [(vedere DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels))
+* Query a livello di funzionalità (vedere [DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels))
 
 Aggiunta del supporto per gli operatori seguenti.
 
@@ -194,8 +194,8 @@ Aggiunta del supporto per gli operatori seguenti.
 
 Sono stati aggiunti i miglioramenti seguenti.
 
-* Quando si associa una risorsa di input per l'invio di un [oggetto IDMLOperatorInitializer](/windows/win32/api/directml/nn-directml-idmloperatorinitializer), è ora valido fornire una risorsa con D3D12_HEAP_TYPE_CUSTOM (oltre **a** [D3D12_HEAP_TYPE_DEFAULT](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) ), purché siano impostate anche le proprietà dell'heap appropriate. Vedere [Binding in DirectML.](./dml-binding.md)
-* Gli operatori booleani logici seguenti supportano ora tensori di output **UINT8,** oltre al supporto esistente per **UINT32.**
+* Quando si associa una risorsa di input per l'invio di un [IDMLOperatorInitializer](/windows/win32/api/directml/nn-directml-idmloperatorinitializer), è ora legale fornire una risorsa [con D3D12_HEAP_TYPE_CUSTOM](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) (oltre **a D3D12_HEAP_TYPE_DEFAULT**), purché siano impostate anche le proprietà dell'heap appropriate. Vedere [Binding in DirectML](./dml-binding.md).
+* Gli operatori booleani logici seguenti supportano ora tensori di output **UINT8,** oltre al supporto esistente per **UINT32**.
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_AND**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_EQUALS**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_GREATER_THAN**

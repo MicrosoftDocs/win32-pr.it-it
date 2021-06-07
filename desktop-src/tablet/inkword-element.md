@@ -1,19 +1,19 @@
 ---
-description: Contiene informazioni su una parola input penna specificata nella nota Journal, incluse la posizione, le alternative e i dati effettivi sull'input penna.
+description: Contiene informazioni su una determinata parola di input penna nella nota Journal, tra cui posizione, alternative e i dati effettivi dell'input penna.
 ms.assetid: 1e197716-bf6c-4a28-ae66-38aa59d7371d
 title: Elemento InkWord
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 179fb5e2bcce2e01f684f0b39d662e8538c7d27e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8dc9baea7cda0346e82c11331c45f453e61f192
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313459"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432393"
 ---
 # <a name="inkword-element"></a>Elemento InkWord
 
-Contiene informazioni su una parola input penna specificata nella nota Journal, incluse la posizione, le alternative e i dati effettivi sull'input penna.
+Contiene informazioni su una determinata parola di input penna nella nota Journal, tra cui posizione, alternative e i dati effettivi dell'input penna.
 
 ## <a name="definition"></a>Definizione
 
@@ -23,15 +23,15 @@ Contiene informazioni su una parola input penna specificata nella nota Journal, 
 
 ## <a name="parent-elements"></a>Elementi padre
 
-[**Nodo del gruppo**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
-[**Linea**](line-element.md)
+[**A linee**](line-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
 [**ScalarTransform**](scalartransform-element.md)
 
-[**Alternativa**](alternatelist-element.md)
+[**AlternateList**](alternatelist-element.md)
 
 [**CanReClassify**](canreclassify-element.md)
 
@@ -45,17 +45,17 @@ Contiene informazioni su una parola input penna specificata nella nota Journal, 
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**   | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di delimitazione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**    | **xs:integer**            | Necessario | Distanza tra l'origine e il punto superiore del rettangolo di delimitazione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di delimitazione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di delimitazione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
+| **Top**    | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
 
 
 
  
 
 > [!WARNING]
-> Il mapping delle coordinate interne di Word Ink è costituito da unità metriche inglesi e un moltiplicatore di 2,54 deve essere usato dall'applicazione per convertire i valori di larghezza e altezza nelle unità HIMETRIC usate dalle API della piattaforma Tablet PC.
+> Il mapping delle coordinate interne della parola input penna è unità metriche inglese e un moltiplicatore di 2,54 dovrà essere usato dall'applicazione per convertire i valori Width e Height nelle unità HIMETRIC usate dalle API della piattaforma Tablet PC.
 
  
 
@@ -63,11 +63,11 @@ Contiene informazioni su una parola input penna specificata nella nota Journal, 
 
 
 
-|              |                                                             |
+|  Elemento     | valore                                                     |
 |--------------|-------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**InkWordType**](inkwordtype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                  |
-| Nome schema  | Lettore Journal                                              |
+| Tipo di elemento | [**ComplexType InkWordType**](inkwordtype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                  |
+| Nome schema  | Lettore journal                                              |
 
 
 

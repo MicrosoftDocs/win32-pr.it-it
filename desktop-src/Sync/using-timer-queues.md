@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene creata una routine timer che verrà eseguita da un thread da una coda timer dopo un ritardo di 10 secondi.
+description: Nell'esempio seguente viene creata una routine timer che verrà eseguita da un thread da una coda di timer dopo un ritardo di 10 secondi.
 ms.assetid: 779156fe-f825-452b-acbe-e2cb189e24d2
 title: Uso delle code timer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a13f7afd18a22c42e3af8cffd8b2b148f68b9d99
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d084a03eb25301f94361c1e7ca6b76dd9fee269
+ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316063"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111549933"
 ---
 # <a name="using-timer-queues"></a>Uso delle code timer
 
-Nell'esempio seguente viene creata una routine timer che verrà eseguita da un thread da una [coda timer](timer-queues.md) dopo un ritardo di 10 secondi. Innanzitutto, il codice usa la funzione [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) per creare un oggetto evento che viene segnalato al completamento del thread della coda del timer. Crea quindi una coda timer e un timer coda timer, usando rispettivamente le funzioni [**CreateTimerQueue ha provocato**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueue) e [**CreateTimerQueueTimer ha provocato**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) . Il codice usa la funzione [**WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) per determinare quando la routine del timer è stata completata. Infine, il codice chiama [**deletetimerqueue ha provocato**](/windows/desktop/api/WinBase/nf-winbase-deletetimerqueue) per eseguire la pulizia.
+Nell'esempio seguente viene creata una routine timer che verrà eseguita da un thread da una coda [di timer](timer-queues.md) dopo un ritardo di 10 secondi. In primo luogo, il codice usa [**la funzione CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) per creare un oggetto evento che viene segnalato al completamento del thread della coda del timer. Crea quindi una coda timer e un timer della coda, usando rispettivamente le funzioni [**CreateTimerQueue**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueue) e [**CreateTimerQueueTimer.**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) Il codice usa la [**funzione WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) per determinare quando la routine timer è stata completata. Infine, il codice chiama [**DeleteTimerQueue**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueue) per eseguire la pulizia.
 
-Per ulteriori informazioni sulla routine del timer, vedere [**WaitOrTimerCallback**](/previous-versions/windows/desktop/legacy/ms687066(v=vs.85)).
+Per altre informazioni sulla routine timer, vedere [**WaitOrTimerCallback.**](/previous-versions/windows/desktop/legacy/ms687066(v=vs.85))
 
 
 ```C++

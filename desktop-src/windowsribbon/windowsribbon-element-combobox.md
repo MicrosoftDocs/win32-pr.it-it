@@ -1,9 +1,9 @@
 ---
-title: ComboBox (elemento)
-description: Rappresenta un controllo casella combinata.
+title: Elemento ComboBox
+description: Rappresenta un controllo Casella combinata.
 ms.assetid: d796e26b-44c2-4e11-b1a5-2ede5bcff676
 keywords:
-- Barra multifunzione Windows elemento ComboBox
+- Elemento ComboBox nella barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5bdcc95c64c2bd60df4f2f53d3bd3699c0a7ee65
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 60ad8866b655be587e0c3d0f123d8bc59b6b8a21
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "106299365"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443582"
 ---
-# <a name="combobox-element"></a>ComboBox (elemento)
+# <a name="combobox-element"></a>Elemento ComboBox
 
-Rappresenta un controllo [casella combinata](windowsribbon-controls-combobox.md) .
+Rappresenta un [controllo Casella](windowsribbon-controls-combobox.md) combinata.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -56,30 +56,30 @@ Rappresenta un controllo [casella combinata](windowsribbon-controls-combobox.md)
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsAutoCompleteEnabled</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Limitato a uno dei valori seguenti (0 e 1 non sono validi):<br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> false<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>IsEditable</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Limitato a uno dei valori seguenti (0 e 1 non sono validi):<br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> false<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ResizeType</strong><br/></td>
 <td>ComboBoxResizeType<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> NoResize<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> (VerticalResize)<br/> </dt> <dd></dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (NoResize)<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> (VerticalResize)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -119,18 +119,18 @@ Non ci sono elementi figlio.
 
 </tr>
 <tr class="even">
-<td><a href="windowsribbon-element-group.md"><strong>Group</strong></a><br/></td>
+<td><a href="windowsribbon-element-group.md"><strong>Gruppo</strong></a><br/></td>
 
 </tr>
 <tr class="odd">
-<td><a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a><br/></td>
+<td><a href="windowsribbon-element-menugroup.md"><strong>Menugroup</strong></a><br/></td>
 
 </tr>
 <tr class="even">
-<td><a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar. ApplicationDefaults</strong></a><br/></td>
+<td><a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Windows 8 e versioni successive.
+Windows 8 e più recente.
 </blockquote>
 <br/> <br/></td>
 </tr>
@@ -147,19 +147,19 @@ Windows 8 e versioni successive.
 
 facoltativo.
 
-Può essere presente una o più volte per ogni elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md)o [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-Poiché **ComboBox** è esclusivamente una raccolta di elementi, non supporta gli elementi di comando. È anche l'unico controllo raccolta che non supporta uno spazio dei comandi (una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi). Per ulteriori informazioni, vedere [utilizzo delle raccolte](ribbon-controls-galleries.md).
+Poiché **ComboBox è** esclusivamente una raccolta di elementi, non supporta gli elementi Command. È anche l'unico controllo raccolta che non supporta uno spazio dei comandi (una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi). Per altre informazioni, vedere [Uso delle raccolte.](ribbon-controls-galleries.md)
 
-Lo screenshot seguente illustra un controllo [casella combinata](windowsribbon-controls-combobox.md) della barra multifunzione di Windows Live Movie Maker.
+Lo screenshot seguente illustra un controllo Casella combinata [della](windowsribbon-controls-combobox.md) barra multifunzione di Windows Live Movie Maker.
 
-![Screenshot di un controllo ComboBox sulla barra multifunzione di Microsoft Paint.](images/controls/combobox.png)
+![Screenshot di un controllo casella combinata nella barra multifunzione di Microsoft Paint.](images/controls/combobox.png)
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano il markup di base per **ComboBox**.
+Gli esempi seguenti illustrano il markup di base per **l'oggetto ComboBox.**
 
-In questa sezione del codice vengono illustrate le dichiarazioni di comando **ComboBox** , con un [**gruppo**](windowsribbon-element-group.md) associato che funge da contenitore padre per l'elemento **ComboBox** .
+Questa sezione di codice illustra le dichiarazioni del comando **ComboBox,** con un oggetto [**Group**](windowsribbon-element-group.md) associato che funge da contenitore padre per **l'elemento ComboBox.**
 
 
 ```XML
@@ -176,7 +176,7 @@ In questa sezione del codice vengono illustrate le dichiarazioni di comando **Co
 
 
 
-In questa sezione del codice vengono illustrate le dichiarazioni di controllo **ComboBox** .
+Questa sezione di codice illustra le **dichiarazioni del controllo ComboBox.**
 
 
 ```XML
@@ -191,12 +191,8 @@ In questa sezione del codice vengono illustrate le dichiarazioni di controllo **
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | Sì       |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** Sì
 
 
 

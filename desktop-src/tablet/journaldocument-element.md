@@ -1,19 +1,19 @@
 ---
-description: Elemento di primo livello in un file XML di nota del journal.
+description: Elemento di primo livello in un file XML di nota journal.
 ms.assetid: 3887667c-67a7-416a-b94d-c30bb02a7985
 title: Elemento JournalDocument
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 408df14347c130e6b0a73ba869b634ca2493fb56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7820ef68dc87bf42d9580c800e2e165f2f2859a4
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530169"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432173"
 ---
 # <a name="journaldocument-element"></a>Elemento JournalDocument
 
-Elemento di primo livello in un file XML di nota del journal.
+Elemento di primo livello in un file XML di nota journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -33,7 +33,7 @@ Elemento di primo livello in un file XML di nota del journal.
 
 ## <a name="parent-elements"></a>Elementi padre
 
-Nessuna.
+Nessuno.
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -47,9 +47,9 @@ Nessuna.
 
 | Attributo             | Type                      | Obbligatoria | Descrizione                                                      | Valori possibili           |
 |-----------------------|---------------------------|----------|------------------------------------------------------------------|---------------------------|
-| **Versione**           | **xs:string**             | Necessario | Versione del documento Journal rappresentata nel file XML. | 1.0                       |
-| **DefaultPageWidth**  | **xs:nonNegativeInteger** | Necessario | Larghezza predefinita della pagina per il documento Journal.          | Qualsiasi numero intero non negativo. |
-| **DefaultPageHeight** | **xs:nonNegativeInteger** | Necessario | Altezza predefinita della pagina per il documento Journal.         | Qualsiasi numero intero non negativo. |
+| **Versione**           | **xs:string**             | Obbligatoria | Versione del documento Journal rappresentata nel file XML. | 1.0                       |
+| **DefaultPageWidth**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza predefinita della pagina per il documento Journal.          | Qualsiasi numero intero non negativo. |
+| **DefaultPageHeight** | **xs:nonNegativeInteger** | Obbligatoria | Altezza predefinita della pagina per il documento Journal.         | Qualsiasi numero intero non negativo. |
 
 
 
@@ -59,11 +59,11 @@ Nessuna.
 
 
 
-|              |                                            |
+|  Elemento     | valore                                                     |
 |--------------|--------------------------------------------|
 | Tipo di elemento | **JournalDocument**                        |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk |
-| Nome schema  | Lettore Journal                             |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink |
+| Nome schema  | Lettore journal                             |
 
 
 

@@ -44,12 +44,12 @@ api_location:
 - DirectML.h
 api_name:
 - DML_CUMULATIVE_PRODUCT_OPERATOR_DESC
-ms.openlocfilehash: 71a078ad0f47c19ad1964d8d21f22e06822b5d01
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 68b001467496ab9affc559e76ecac5461902399c
+ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550216"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111521197"
 ---
 # <a name="dml_cumulative_product_operator_desc-directmlh"></a>DML_CUMULATIVE_PRODUCT_OPERATOR_DESC (directml.h)
 
@@ -76,7 +76,7 @@ struct DML_CUMULATIVE_PRODUCT_OPERATOR_DESC
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore contenente i dati di input. Si tratta in genere dello stesso tensore fornito da *InputTensor* per DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti.
+Tensore contenente i dati di input. Si tratta in genere dello stesso tensore fornito da *InputTensor* DML_BATCH_NORMALIZATION_OPERATOR_DESC [**nel**](/windows/win32/api/directml/ns-directml-dml_batch_normalization_operator_desc) passaggio in avanti.
 
 Tensore di input contenente gli elementi da moltiplicare.
 
@@ -84,19 +84,19 @@ Tensore di input contenente gli elementi da moltiplicare.
 
 Tipo: **const [DML_TENSOR_DESC](/windows/win32/api/directml/ns-directml-dml_tensor_desc) \***
 
-Tensore di output in cui scrivere i prodotti cumulativi risultanti. Questo tensore deve avere le stesse dimensioni e lo stesso tipo di dati di *InputTensor.*
+Tensore di output in cui scrivere i prodotti cumulativi risultanti. Questo tensore deve avere le stesse dimensioni e tipo di dati di *InputTensor*.
 
 `Axis`
 
 Tipo: [ **UINT**](/windows/desktop/winprog/windows-data-types)
 
-Indice della dimensione su cui moltiplicare gli elementi. Questo valore deve essere minore di *DimensionCount* di *InputTensor.*
+Indice della dimensione su cui moltiplicare gli elementi. Questo valore deve essere minore di *DimensionCount* di *InputTensor*.
 
 `AxisDirection`
 
-Tipo: **[DML_AXIS_DIRECTION](./ne-directml-dml_axis_direction.md)**
+Tipo: **[DML_AXIS_DIRECTION](/windows/win32/api/directml/ne-directml-dml_axis_direction)**
 
-Uno dei valori [dell'enumerazione DML_AXIS_DIRECTION](./ne-directml-dml_axis_direction.md) . Se impostato su **DML_AXIS_DIRECTION_INCREASING**, il prodotto si verifica attraversando il tensore lungo l'asse specificato tramite l'indice degli elementi crescente. Se impostato su DML_AXIS_DIRECTION_DECREASING , **il** contrario è true e il prodotto si verifica attraversando gli elementi in base all'indice decrescente.
+Uno dei valori dell'enumerazione [DML_AXIS_DIRECTION.](/windows/win32/api/directml/ne-directml-dml_axis_direction) Se impostato su **DML_AXIS_DIRECTION_INCREASING**, il prodotto si verifica attraversando il tensore lungo l'asse specificato tramite l'indice dell'elemento crescente. Se impostato su **DML_AXIS_DIRECTION_DECREASING**, il contrario è true e il prodotto si verifica scorrendo gli elementi in base all'indice decrescente.
 
 `HasExclusiveProduct`
 
@@ -145,7 +145,7 @@ OutputTensor: (Sizes:{1,1,3,4}, DataType:FLOAT32)
 
 ### <a name="example-3-axis-direction"></a>Esempio 3. Direzione dell'asse
 
-*L'impostazione di AxisDirection* [**su DML_AXIS_DIRECTION_DECREASING**](./ne-directml-dml_axis_direction.md) ha l'effetto di invertire l'ordine di attraversamento degli elementi durante il calcolo del numero in esecuzione.
+*L'impostazione di AxisDirection* [**su DML_AXIS_DIRECTION_DECREASING**](/windows/win32/api/directml/ne-directml-dml_axis_direction) ha l'effetto di invertire l'ordine di attraversamento degli elementi durante il calcolo del numero in esecuzione.
 
 ```
 Axis: 3

@@ -1,19 +1,19 @@
 ---
-description: Contiene informazioni sul layout delle linee utilizzate nella cancelleria per la nota Journal.
+description: Contiene informazioni sul layout delle linee utilizzate negli elementi di stazioni per la nota Journal.
 ms.assetid: b78ed5a3-ce7a-44fc-bc46-ad0332f9767c
 title: Elemento LineLayout
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5421e60fb6520eb93818c312a703ceb3f21c234
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6de772a19f1021644c45632b35c70537fea14626
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231904"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432322"
 ---
 # <a name="linelayout-element"></a>Elemento LineLayout
 
-Contiene informazioni sul layout delle linee utilizzate nella cancelleria per la nota Journal.
+Contiene informazioni sul layout delle linee utilizzate negli elementi di stazioni per la nota Journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -35,17 +35,17 @@ Contiene informazioni sul layout delle linee utilizzate nella cancelleria per la
 
 ## <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|              |                                                                   |
+|  Elemento     | valore                                                     |
 |--------------|-------------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**LineLayoutType**](linelayouttype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                        |
-| Nome schema  | Lettore Journal                                                    |
+| Tipo di elemento | [**complexType LineLayoutType**](linelayouttype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                        |
+| Nome schema  | Lettore journal                                                    |
 
 
 

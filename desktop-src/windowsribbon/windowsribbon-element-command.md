@@ -3,7 +3,7 @@ title: Elemento Command
 description: Rappresenta una definizione di comando.
 ms.assetid: f332423d-d258-488d-9233-71687288b462
 keywords:
-- Barra multifunzione Windows elemento di comando
+- Elemento Command Della barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b684b361927180a4bb87d2d7814d2f26d4fdcd91
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1e1df5b62c7b2d7c55345ba8d6da366d04697054
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338814"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443482"
 ---
 # <a name="command-element"></a>Elemento Command
 
@@ -65,62 +65,62 @@ Rappresenta una definizione di comando.
 <td><strong>Commento</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Utilizzato per annotare l'elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> Lunghezza massima: 250 caratteri.<br/> </dd> </dl></td>
+<td>Usato per annotare l'elemento di comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> Lunghezza massima: 250 caratteri.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Id</strong><br/></td>
-<td>XS: positiveInteger Union XS: String<br/></td>
+<td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
-<td>ID di risorsa univoco. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (Unione di XS: positiveInteger e xs: String)<br/> </dt> <dd> Valore intero compreso tra 2 e 59999, inclusivo o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> La lunghezza massima è di 10 caratteri, inclusi gli zeri iniziali facoltativi. <br/> </dd> </dl></td>
+<td>ID risorsa univoco. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (Unione di xs:positiveInteger e xs:string)<br/> </dt> <dd> Valore intero compreso tra 2 e 59999, inclusi o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> La lunghezza massima è di 10 caratteri, inclusi gli zeri iniziali facoltativi. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>Suggerimento tasto</strong><br/></td>
+<td><strong>Keytip</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Stringa che rappresenta il tasto di scelta rapida di un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti.<br/> </dd> </dl></td>
+<td>Stringa che rappresenta il tasto di scelta rapida di un elemento di comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>LabelDescription</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Stringa che rappresenta il testo visualizzato su un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl></td>
+<td>Stringa che rappresenta il testo visualizzato in un elemento di comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>LabelTitle</strong><br/></td>
+<td><strong>EtichettaTitle</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Stringa che rappresenta il testo visualizzato su un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl></td>
+<td>Stringa che rappresenta il testo visualizzato in un elemento di comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Nome</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da una lettera o un carattere di sottolineatura seguito da una sequenza di cifre, lettere o caratteri di sottolineatura.<br/> Lunghezza massima: 100 caratteri.<br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa costituita da una lettera o un carattere di sottolineatura seguito da qualsiasi sequenza di cifre, lettere o caratteri di sottolineatura.<br/> Lunghezza massima: 100 caratteri.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Simbolo</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da una lettera o un carattere di sottolineatura seguito da una sequenza di cifre, lettere o caratteri di sottolineatura.<br/> Lunghezza massima: 100 caratteri.<br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa costituita da una lettera o un carattere di sottolineatura seguito da qualsiasi sequenza di cifre, lettere o caratteri di sottolineatura.<br/> Lunghezza massima: 100 caratteri.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>TooltipDescription</strong><br/></td>
+<td><strong>Descrizione comando</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Stringa che rappresenta il testo visualizzato su un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl></td>
+<td>Stringa che rappresenta il testo visualizzato in un elemento di comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>TooltipTitle</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Stringa che rappresenta il testo visualizzato su un elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl></td>
+<td>Stringa che rappresenta il testo visualizzato in un elemento di comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -133,19 +133,19 @@ Rappresenta una definizione di comando.
 
 | Elemento                                                                                                     | Descrizione                                   |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**Comando. Comment**](windowsribbon-element-command-comment.md)<br/>                                 | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.Comment**](windowsribbon-element-command-comment.md)<br/>                                 | Può verificarsi al massimo una volta<br/> <br/> |
 | [**Command.Id**](windowsribbon-element-command-id.md)<br/>                                           | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Command. suggerimento**](windowsribbon-element-command-keytip.md)<br/>                                   | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. LabelDescription**](windowsribbon-element-command-labeldescription.md)<br/>               | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. LabelTitle**](windowsribbon-element-command-labeltitle.md)<br/>                           | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.Keytip**](windowsribbon-element-command-keytip.md)<br/>                                   | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.LabelDescription**](windowsribbon-element-command-labeldescription.md)<br/>               | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md)<br/>                           | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         | Può verificarsi al massimo una volta<br/> <br/> |
 | [**Command.Name**](windowsribbon-element-command-name.md)<br/>                                       | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Command. Symbol**](windowsribbon-element-command-symbol.md)<br/>                                   | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)<br/>           | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Comando. TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)<br/>                       | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.Symbol**](windowsribbon-element-command-symbol.md)<br/>                                   | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)<br/>           | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)<br/>                       | Può verificarsi al massimo una volta<br/> <br/> |
 
 
 
@@ -155,7 +155,7 @@ Rappresenta una definizione di comando.
 
 | Elemento                                                                               |
 |---------------------------------------------------------------------------------------|
-| [**Application. Commands**](windowsribbon-element-application-commands.md)<br/> |
+| [**Application.Commands**](windowsribbon-element-application-commands.md)<br/> |
 
 
 
@@ -163,26 +163,26 @@ Rappresenta una definizione di comando.
 
 Obbligatorio.
 
-Può essere presente una o più volte per ogni elemento [**Application. Commands**](windowsribbon-element-application-commands.md) .
+Può verificarsi una o più volte per ogni [**elemento Application.Commands.**](windowsribbon-element-application-commands.md)
 
-Gli elementi figlio dell'elemento **Command** possono verificarsi in qualsiasi ordine.
+Gli elementi figlio **dell'elemento Command** possono essere presenti in qualsiasi ordine.
 
-In genere, le risorse dei comandi sono dichiarate nel markup della barra multifunzione, ma possono anche essere impostate in fase di esecuzione con una chiamata a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). È ad esempio possibile impostare la proprietà pkey del [ \_ \_ Suggerimento utente](windowsribbon-reference-properties-uipkey-keytip.md) per un comando anziché dichiarare un valore nel markup con l'elemento [**Command. suggerimento**](windowsribbon-element-command-keytip.md) .
+In genere, le risorse command vengono dichiarate nel markup della barra multifunzione, ma possono anche essere impostate in fase di esecuzione con una chiamata a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). Ad esempio, è possibile impostare la proprietà [ \_ PKEY \_ Keytip](windowsribbon-reference-properties-uipkey-keytip.md) dell'interfaccia utente per un oggetto Command anziché dichiarare un valore nel markup con [**l'elemento Command.Keytip.**](windowsribbon-element-command-keytip.md)
 
-Nei casi in cui le proprietà del comando, ad esempio etichette e immagini, non possono essere impostate con [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) , possono essere invalidate con una chiamata a [**InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand). Dopo l'invalidamento, il Framework esegue una query sull'applicazione host per ottenere i dettagli della risorsa.
+Nei casi in cui le proprietà Command, ad esempio etichette e immagini, non possono essere impostate con [**SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) possono essere invalidate con una chiamata a [**InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand). Dopo l'invalidazione, il framework esegue una query sull'applicazione host per i dettagli della risorsa.
 
 > [!Note]  
 > Una risorsa non può essere ripristinata dalla tabella delle risorse di markup dopo che è stata invalidata.
 
  
 
-Una definizione di comando viene aggiunta al file di intestazione di markup della barra multifunzione per ogni **comando** dichiarato nel markup.
+Al file di intestazione di markup della barra multifunzione viene aggiunta una definizione command per **ogni comando** dichiarato nel markup.
 
-Il valore di *Suggerimento* tasto di scelta funge da tasto di scelta rapida per un comando, a meno che il comando non venga esposto tramite una voce di menu. In questo caso, il Framework ignora il valore del tasto di *Suggerimento* e usa invece un carattere preceduto da una e commerciale come specificato da *LabelTitle* o dall' [ \_ \_ etichetta pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-label.md). Se nessuna e commerciale è specificata da *LabelTitle* o dall'etichetta pkey dell'interfaccia utente \_ \_ , non viene esposto alcun tasto di scelta rapida o tasto di scelta rapida.
+Il valore di *Suggerimento tasto* di scelta rapida funge da tasto di scelta rapida per un comando a meno che tale comando non venga esposto tramite una voce di menu. In questo caso, il framework ignora il valore *keytip* e usa invece un carattere preceduto da una e commerciale come specificato da *LabelTitle* o [UI \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md). Se non viene specificata alcuna e commerciale da *LabelTitle* o UI PKEY Label, non viene esposta alcuna descrizione comando o \_ tasto di scelta \_ rapida.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un manifesto di elementi **Command** per una scheda **Home** .
+L'esempio seguente illustra un manifesto degli **elementi Command** per una **scheda** Home.
 
 
 ```XML
@@ -266,12 +266,8 @@ Nell'esempio seguente viene illustrato un manifesto di elementi **Command** per 
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: DirectMLX
-description: DirectMLX è una libreria helper solo intestazione C++ per DirectML, progettata per semplificare la composizione di singoli operatori in grafici.
+description: DirectMLX è una libreria helper solo intestazione C++ per DirectML, progettata per semplificare la composizione di singoli operatori in grafi.
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 2ddd6d9063002b76449224ebafdb6dd021b27fa0
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: ba7eca27a39b690f678bdac1ea0feba1991e8b40
+ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803367"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111521188"
 ---
 # <a name="directmlx"></a>DirectMLX
 
-DirectMLX è una libreria helper solo intestazione C++ per DirectML, progettata per semplificare la composizione di singoli operatori in grafici.
+DirectMLX è una libreria helper solo intestazione C++ per DirectML, progettata per semplificare la composizione di singoli operatori in grafi.
 
 DirectMLX offre wrapper pratici per tutti i tipi di operatore DirectML (DML), nonché overload intuitivi degli operatori, che semplificano l'istanza degli operatori DML e la concatenazione in grafici complessi.
 
@@ -31,7 +31,7 @@ DirectMLX.h richiede un compilatore con supporto C++11, che include (ma non solo
 * Visual Studio 2019
 * Clang 10
 
-Si noti che un compilatore C++17 (o versione più recente) è l'opzione consigliata. La compilazione per C++11 è possibile, ma richiede l'uso di librerie di terze parti (ad esempio [GSL](https://github.com/microsoft/GSL) e [Abseil)](https://github.com/abseil/abseil-cpp)per sostituire la funzionalità della libreria standard mancante.
+Si noti che un compilatore C++17 (o versione più recente) è l'opzione consigliata. La compilazione per C++11 è possibile, ma richiede l'uso di librerie di terze parti ( ad esempio [GSL](https://github.com/microsoft/GSL) e [Abseil](https://github.com/abseil/abseil-cpp)) per sostituire la funzionalità della libreria standard mancante.
 
 Se si dispone di una configurazione che non riesce a compilare `DirectMLX.h` , [compilare un problema in GitHub.](https://github.com/microsoft/DirectML/issues)
 
@@ -115,18 +115,18 @@ DirectMLX supporta la compilazione in #define per personalizzare varie parti del
 
 |Opzione|Descrizione|
 |-|-|
-|**DMLX_NO_EXCEPTIONS**|Se #define, causa errori che generano una chiamata a `std::abort` anziché generare un'eccezione. Questo valore viene definito per impostazione predefinita se le eccezioni non sono disponibili, ad esempio se le eccezioni sono state disabilitate nelle opzioni del compilatore.|
-|**DMLX_USE_WIL**|Se #define, le eccezioni vengono generate usando i tipi di eccezione della libreria [di implementazione](https://github.com/microsoft/wil) di Windows. In caso contrario, vengono usati i tipi di eccezione standard , `std::runtime_error` ad esempio . Questa opzione non ha alcun effetto **se DMLX_NO_EXCEPTIONS** è definito .|
-|**DMLX_USE_ABSEIL**|Se #define, usa [Abseil](https://github.com/abseil/abseil-cpp) come sostituzioni drop-in per i tipi di libreria standard non disponibili in C++11. Questi tipi includono `absl::optional` (al posto di `std::optional` ), `absl::Span` (al posto di `std::span` ) e `absl::InlinedVector` .|
-|**DMLX_USE_GSL**|Controlla se usare [GSL](https://github.com/microsoft/GSL) come sostituzione per `std::span` . Se #define, gli usi di `std::span` vengono sostituiti da `gsl::span` nei compilatori senza `std::span` implementazioni native. In caso contrario, viene invece fornita un'implementazione di rilascio inline. Si noti che questa opzione viene usata solo quando si esegue la compilazione in un compilatore precedente a C++20 senza supporto per e quando non è in uso alcuna altra sostituzione della libreria `std::span` standard drop-in (ad esempio Abseil).|
+|**DMLX_NO_EXCEPTIONS**|Se #define, gli errori generano una chiamata a anziché `std::abort` generare un'eccezione. Questa opzione viene definita per impostazione predefinita se le eccezioni non sono disponibili, ad esempio se le eccezioni sono state disabilitate nelle opzioni del compilatore.|
+|**DMLX_USE_WIL**|Se #define, le eccezioni vengono generate usando i tipi di eccezione della libreria di implementazione di [Windows.](https://github.com/microsoft/wil) In caso contrario, vengono usati i tipi di eccezione standard ( `std::runtime_error` ad esempio ). Questa opzione non ha alcun effetto **se DMLX_NO_EXCEPTIONS** definito.|
+|**DMLX_USE_ABSEIL**|Se #define, usa [Abseil](https://github.com/abseil/abseil-cpp) come sostituzione dell'elenco a discesa per i tipi di libreria standard non disponibili in C++11. Questi tipi includono `absl::optional` (al posto di `std::optional` ), `absl::Span` (al posto di `std::span` ) e `absl::InlinedVector` .|
+|**DMLX_USE_GSL**|Controlla se usare [GSL](https://github.com/microsoft/GSL) come sostituzione di `std::span` . Se #define, gli usi di `std::span` vengono sostituiti da `gsl::span` nei compilatori senza `std::span` implementazioni native. In caso contrario, viene invece fornita un'implementazione dell'elenco a discesa inline. Si noti che questa opzione viene usata solo quando si esegue la compilazione in un compilatore pre-C++20 senza supporto per e quando non è in uso alcuna altra sostituzione della libreria standard a discesa (ad esempio `std::span` Abseil).|
 
-## <a name="controlling-tensor-layout"></a>Controllo del layout tensore
+## <a name="controlling-tensor-layout"></a>Controllo del layout dei tensore
 
-Per la maggior parte degli operatori, DirectMLX calcola le proprietà dei tensori di output dell'operatore per conto dell'utente. Ad esempio, quando si esegue un tra assi con un tensore di input di dimensioni , DirectMLX calcola automaticamente le proprietà del `dml::Reduce` tensore di output, inclusa la `{ 0, 2, 3 }` `{ 3, 4, 5, 6 }` forma corretta di `{ 1, 4, 1, 1 }` .
+Per la maggior parte degli operatori, DirectMLX calcola le proprietà dei tensori di output dell'operatore per conto dell'utente. Ad esempio, quando si esegue un tra assi con un tensore di input di dimensioni `dml::Reduce` `{ 0, 2, 3 }` , `{ 3, 4, 5, 6 }` DirectMLX calcola automaticamente le proprietà del tensore di output, inclusa la forma corretta di `{ 1, 4, 1, 1 }` .
 
-Tuttavia, le altre proprietà di un tensore di output includono *Strides,* *TotalTensorSizeInBytes* e *GuaranteedBaseOffsetAlignment.* Per impostazione predefinita, DirectMLX imposta queste proprietà in modo che il tensore non abbia problemi, nessun allineamento dell'offset di base garantito e una dimensione totale del tensore in byte calcolata da [DMLCalcBufferTensorSize.](./dml-helper-functions.md#dmlcalcbuffertensorsize)
+Tuttavia, le altre proprietà di un tensore di output includono *Strides*, *TotalTensorSizeInBytes* e *GuaranteedBaseOffsetAlignment*. Per impostazione predefinita, DirectMLX imposta queste proprietà in modo che il tensore non abbia un allineamento di offset di base garantito e una dimensione totale del tensore in byte calcolata da [DMLCalcBufferTensorSize](./dml-helper-functions.md#dmlcalcbuffertensorsize).
 
-DirectMLX supporta la possibilità di personalizzare queste proprietà del tensore di output, usando oggetti noti come *criteri tensore.* **TensorPolicy** è un callback personalizzabile che viene richiamato da DirectMLX e restituisce le proprietà del tensore di output in base al tipo di dati calcolato, ai flag e alle dimensioni di un tensore.
+DirectMLX supporta la possibilità di personalizzare queste proprietà del tensore di output, usando oggetti noti come *criteri tensore.* **TensorPolicy** è un callback personalizzabile richiamato da DirectMLX e restituisce le proprietà del tensore di output in base al tipo di dati, ai flag e alle dimensioni calcolati di un tensore.
 
 I criteri tensor possono essere impostati **nell'oggetto dml::Graph** e verranno usati per tutti gli operatori successivi in tale grafico. I criteri tensor possono anche essere impostati direttamente durante la costruzione di **un oggetto TensorDesc**.
 
@@ -174,4 +174,4 @@ auto result = dml::Convolution(/* ... */);
 * [DirectML GitHub](https://github.com/microsoft/DirectML/tree/master/Libraries)
 * [Esempio di Yolov4 DirectMLX](https://github.com/microsoft/DirectML/tree/master/Samples/yolov4)
 * [Uso di stride per esprimere spaziatura interna e layout di memoria](./dml-strides.md)
-* [DML_GRAPH_DESC struttura](./directml/ns-directml-dml_graph_desc.md)
+* [DML_GRAPH_DESC struttura](/windows/win32/api/directml/ns-directml-dml_graph_desc)

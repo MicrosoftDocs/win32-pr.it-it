@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_DDE_INITIATE (DDE. h)
-description: Un'applicazione client di Dynamic Data Exchange (DDE) Invia un \_ \_ messaggio di inizializzazione di WM DDE per avviare una conversazione con un'applicazione server che risponde ai nomi di applicazione e di argomento specificati.
+title: WM_DDE_INITIATE messaggio (Dde.h)
+description: Un'applicazione client Dynamic Data Exchange (DDE) invia un messaggio WM DDE INITIATE per avviare una conversazione con un'applicazione server che risponde ai nomi dell'applicazione e \_ \_ dell'argomento specificati.
 ms.assetid: d486f584-75a3-4ffd-ba5d-f95f2692cd6c
 keywords:
-- Scambio di dati del messaggio WM_DDE_INITIATE
+- WM_DDE_INITIATE scambio di dati del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36485db262c46d5364ee0ee26e7e6f39ccf0e677
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bf65e222c7711d429db44e391d4f03c35997e219
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400554"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386729"
 ---
-# <a name="wm_dde_initiate-message"></a>\_Messaggio di avvio DDE di WM \_
+# <a name="wm_dde_initiate-message"></a>Messaggio WM \_ DDE \_ INITIATE
 
-Un'applicazione client di Dynamic Data Exchange (DDE) Invia un messaggio di **\_ \_ inizializzazione di WM DDE** per avviare una conversazione con un'applicazione server che risponde ai nomi di applicazione e di argomento specificati. Al momento della ricezione di questo messaggio, è previsto che tutte le applicazioni server con nomi corrispondenti all'applicazione specificata e che supportano l'argomento specificato lo riconosca. Per ulteriori informazioni, vedere il messaggio [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) .
+Un'applicazione client Dynamic Data Exchange (DDE) invia un messaggio **WM \_ DDE \_ INITIATE** per avviare una conversazione con un'applicazione server che risponde ai nomi dell'applicazione e degli argomenti specificati. Quando si riceve questo messaggio, tutte le applicazioni server con nomi che corrispondono all'applicazione specificata e che supportano l'argomento specificato devono confermarlo. Per altre informazioni, vedere il [**messaggio WM \_ DDE \_ ACK.**](wm-dde-ack.md)
 
 
 ```C++
@@ -39,36 +39,36 @@ Un'applicazione client di Dynamic Data Exchange (DDE) Invia un messaggio di **\_
 *wParam* 
 </dt> <dd>
 
-Handle per la finestra client che invia il messaggio.
+Handle alla finestra client che invia il messaggio.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-La parola di ordine inferiore contiene un Atom che identifica l'applicazione con cui viene richiesta una conversazione. Il nome dell'applicazione non può contenere barre (/) o barre rovesciate ( \) . Questi caratteri sono riservati per le implementazioni di rete. Se questo parametro è **null**, viene richiesta una conversazione con tutte le applicazioni.
+La parola di ordine basso contiene un atom che identifica l'applicazione con cui viene richiesta una conversazione. Il nome dell'applicazione non può contenere barre (/) o barre rovesciate ( \\ ). Questi caratteri sono riservati per le implementazioni di rete. Se questo parametro è **NULL,** viene richiesta una conversazione con tutte le applicazioni.
 
-La parola più significativa contiene un atomo che identifica l'argomento per il quale viene richiesta una conversazione. Se l'argomento è **null**, vengono richieste le conversazioni per tutti gli argomenti disponibili.
+La parola di ordine elevato contiene un atomo che identifica l'argomento per cui è richiesta una conversazione. Se l'argomento è **NULL,** vengono richieste conversazioni per tutti gli argomenti disponibili.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Se la parola di ordine inferiore di *lParam* è **null**, qualsiasi applicazione server può rispondere. Se la parola più ordinata di *lParam* è **null**, qualsiasi argomento è valido. Al momento della ricezione di una richiesta di **\_ \_ avvio di WM DDE** con la parola più ordinata del parametro *lParam* impostato su **null**, un server deve inviare un messaggio [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) per ogni argomento supportato.
+Se la parola di basso livello *di lParam* è **NULL,** qualsiasi applicazione server può rispondere. Se la parola di ordine superiore di *lParam* è **NULL,** qualsiasi argomento è valido. Quando si riceve una richiesta WM DDE INITIATE con la parola più alta del parametro *lParam* impostata su **NULL,** un server deve inviare un messaggio WM **\_ \_ DDE** [**\_ \_ ACK**](wm-dde-ack.md) per ognuno degli argomenti supportati.
 
 ### <a name="sending"></a>Invio
 
-Il client trasmette il messaggio a tutte le finestre di primo livello impostando il primo parametro di [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) sulla **\_ trasmissione HWND**.
+Il client trasmette il messaggio a tutte le finestre di primo livello impostando il primo parametro di [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) su **HWND \_ BROADCAST**.
 
-Se l'applicazione client ha già ottenuto l'handle di finestra del server desiderato, può inviare l' **\_ \_ avvio di WM DDE** direttamente alla finestra del server passando l'handle della finestra del server come primo parametro di [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage).
+Se l'applicazione client ha già ottenuto l'handle di finestra del server desiderato, può inviare **WM \_ DDE \_ INITIATE** direttamente alla finestra del server passando l'handle di finestra del server come primo parametro di [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage).
 
-L'applicazione client alloca gli atomi chiamando la funzione [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) .
+L'applicazione client alloca atom chiamando la [**funzione GlobalAddAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 
-Quando [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) restituisce, l'applicazione client deve eliminare gli atomi.
+Quando [**sendMessage viene**](/windows/desktop/api/winuser/nf-winuser-sendmessage) restituito, l'applicazione client deve eliminare gli atom.
 
 ### <a name="receiving"></a>Ricezione
 
-Per completare l'avvio di una conversazione, l'applicazione server deve rispondere con uno o più messaggi [**di \_ \_ ACK DDE WM**](wm-dde-ack.md) , dove ogni messaggio è per un argomento separato. Quando si invia un messaggio **\_ \_ ACK di WM DDE** , il server deve creare nuovi atomi. non deve riutilizzare gli atomi inviati con l' **\_ \_ avvio di WM DDE**.
+Per completare l'avvio di una conversazione, l'applicazione server deve rispondere con uno o più messaggi [**\_ WM DDE \_ ACK,**](wm-dde-ack.md) in cui ogni messaggio è relativo a un argomento separato. Quando si invia un messaggio **\_ WM DDE \_ ACK,** il server deve creare nuovi atomi e non riusare gli atomi inviati con **WM \_ DDE \_ INITIATE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,7 +78,7 @@ Per completare l'avvio di una conversazione, l'applicazione server deve risponde
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>DDE. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Dde.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -98,13 +98,13 @@ Per completare l'avvio di una conversazione, l'applicazione server deve risponde
 [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 </dt> <dt>
 
-[**\_ACK DDE \_ WM**](wm-dde-ack.md)
+[**WM \_ DDE \_ ACK**](wm-dde-ack.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Informazioni su Dynamic Data Exchange](about-dynamic-data-exchange.md)
+[Informazioni Dynamic Data Exchange](about-dynamic-data-exchange.md)
 </dt> </dl>
 
  

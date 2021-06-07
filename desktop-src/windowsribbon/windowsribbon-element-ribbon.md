@@ -1,9 +1,9 @@
 ---
-title: Ribbon (elemento)
-description: Rappresenta il controllo Ribbon nella visualizzazione della barra multifunzione.
+title: Elemento Ribbon
+description: Rappresenta il controllo barra multifunzione nella visualizzazione barra multifunzione.
 ms.assetid: 51083180-4e86-4c90-9fd1-a58c12bcc756
 keywords:
-- Barra multifunzione di Windows elemento barra multifunzione
+- Barra multifunzione dell'elemento Barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76ce73735d05b3d8c8cfa686f53570fd08ae6f1c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 9a743fc354dfea73c525884ec5ffe1f9471f3752
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299037"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111445002"
 ---
-# <a name="ribbon-element"></a>Ribbon (elemento)
+# <a name="ribbon-element"></a>Elemento Ribbon
 
-Rappresenta il controllo Ribbon nella visualizzazione della barra multifunzione.
+Rappresenta il controllo barra multifunzione nella visualizzazione barra multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -58,14 +58,14 @@ Rappresenta il controllo Ribbon nella visualizzazione della barra multifunzione.
 <td><strong>GroupSpacing</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> Piccolo<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> Media<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Grandi dimensioni<br/> </dt> <dd></dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (Piccola)<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> (Media)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Nome</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Utilizzato per annotare l'elemento Command.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Qualsiasi sequenza di zero o più caratteri.<br/> La lunghezza massima è unbounded.<br/> </dd> </dl></td>
+<td>Usato per annotare l'elemento di comando.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Qualsiasi sequenza di zero o più caratteri.<br/> La lunghezza massima è illimitata.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -78,12 +78,12 @@ Rappresenta il controllo Ribbon nella visualizzazione della barra multifunzione.
 
 | Elemento                                                                                         | Descrizione                                   |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**Ribbon. ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/>       | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Ribbon. ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/>         | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/>                 | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Ribbon. QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/>       | Può verificarsi al massimo una volta<br/> <br/> |
-| [**Ribbon. Tabs**](windowsribbon-element-ribbon-tabs.md)<br/>                             | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Ribbon.ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/>       | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Ribbon.ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/>         | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/>                 | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Ribbon.QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Ribbon.SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/>       | Può verificarsi al massimo una volta<br/> <br/> |
+| [**Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md)<br/>                             | Può verificarsi al massimo una volta<br/> <br/> |
 
 
 
@@ -93,7 +93,7 @@ Rappresenta il controllo Ribbon nella visualizzazione della barra multifunzione.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Application. views**](windowsribbon-element-application-views.md)<br/> |
+| [**Application.Views**](windowsribbon-element-application-views.md)<br/> |
 
 
 
@@ -101,11 +101,11 @@ Rappresenta il controllo Ribbon nella visualizzazione della barra multifunzione.
 
 Obbligatorio.
 
-Deve essere eseguita esattamente una volta per ogni elemento [**Application. views**](windowsribbon-element-application-views.md) .
+Deve verificarsi esattamente una volta per [**ogni elemento Application.Views.**](windowsribbon-element-application-views.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per una visualizzazione della **barra multifunzione** .
+L'esempio seguente illustra il markup di base per una **visualizzazione barra** multifunzione.
 
 
 ```XML
@@ -137,10 +137,9 @@ Nell'esempio seguente viene illustrato il markup di base per una visualizzazione
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 

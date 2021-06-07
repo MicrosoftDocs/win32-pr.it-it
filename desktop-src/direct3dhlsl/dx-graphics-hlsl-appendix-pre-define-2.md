@@ -1,6 +1,6 @@
 ---
-title: '\#define (direttiva) (macro)'
-description: Direttiva per il preprocessore che crea una macro simile a una funzione.
+title: '\#Direttiva define (macro)'
+description: Direttiva del preprocessore che crea una macro simile a una funzione.
 ms.assetid: 73c19cf8-fbc5-444b-a51f-dc9f881f397b
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a8de5a47fc92c02e9f565c80f600359e8e5b32f9
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: d0c54c0c433c91522c8a72c5955a419eb72f9eee
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104993277"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387517"
 ---
-# <a name="define-directive-macro"></a>\#define (direttiva) (macro)
+# <a name="define-directive-macro"></a>\#Direttiva define (macro)
 
-Direttiva per il preprocessore che crea una macro simile a una funzione.
+Direttiva del preprocessore che crea una macro simile a una funzione.
 
 
 
-| \#define *Identifier*( *argument0*,..., *argumentn-1* ) *token-String* |
+| \#identificatore *define*( *argument0*, ... , *argumentN-1* ) *token-string* |
 |--------------------------------------------------------------------------|
 
 
@@ -35,9 +35,9 @@ Direttiva per il preprocessore che crea una macro simile a una funzione.
 
 | Elemento                                                                                                                                                                                                                                                          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="identifier"></span><span id="IDENTIFIER"></span>*identificatore*<br/>                                                                                                                                                                             | Identificatore della macro. <br/> Una seconda [ \# definizione](dx-graphics-hlsl-appendix-pre-define.md) per una macro con un identificatore già esistente nel contesto corrente genera un errore a meno che la seconda sequenza di token non sia identica alla prima. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| <span id="___________argument0___...___argumentN-1_________"></span><span id="___________argument0___...___argumentn-1_________"></span><span id="___________ARGUMENT0___...___ARGUMENTN-1_________"></span> ( *argument0*,..., *argomento-1* ) <br/> | Elenco di argomenti per la macro. L'elenco di argomenti è delimitato da virgole, può essere di qualsiasi lunghezza e deve essere racchiuso tra parentesi. Ogni nome di argomento nell'elenco deve essere univoco. Nessuno spazio vuoto può separare il parametro *Identifier* e la parentesi di apertura. <br/> Utilizzare la concatenazione di righe per inserire una barra rovesciata ( \) immediatamente prima del carattere di nuova riga per suddividere le direttive Long su più righe di origine <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| <span id="token-string__optional________"></span><span id="TOKEN-STRING__OPTIONAL________"></span>*stringa* \[ di token opzionale\] <br/>                                                                                                                     | Valore della macro. Questo parametro è costituito da una serie di token, ad esempio parole chiave, costanti o istruzioni complete. Uno o più caratteri di spazio vuoto devono separare questo parametro dal parametro *Identifier* . Questo spazio vuoto non è considerato parte del testo sostituito, né lo spazio vuoto dopo l'ultimo token del testo. Usare le parentesi per assicurarsi che gli argomenti complessi vengano interpretati correttamente. <br/> Se il valore del parametro *Identifier* si verifica all'interno del parametro della *stringa del token* (anche come risultato di un'altra espansione di una macro), non viene espanso. <br/> Se si esclude questo parametro, tutte le istanze del parametro *Identifier* verranno rimosse dal file di origine. L'identificatore rimane definito e può essere testato utilizzando le direttive [ \# if defined](dx-graphics-hlsl-appendix-pre-ifdef.md), \# ifdef e \# ifndef. <br/> |
+| <span id="identifier"></span><span id="IDENTIFIER"></span>*Identificatore*<br/>                                                                                                                                                                             | Identificatore della macro. <br/> Una seconda [ \# definizione](dx-graphics-hlsl-appendix-pre-define.md) per una macro con un identificatore già esistente nel contesto corrente genera un errore a meno che la seconda sequenza di token non sia identica alla prima. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| <span id="___________argument0___...___argumentN-1_________"></span><span id="___________argument0___...___argumentn-1_________"></span><span id="___________ARGUMENT0___...___ARGUMENTN-1_________"></span> ( *argument0*, ... , *argumentN-1* ) <br/> | Elenco di argomenti per la macro. L'elenco di argomenti è delimitato da virgole, può essere di qualsiasi lunghezza e deve essere racchiuso tra parentesi. Ogni nome di argomento nell'elenco deve essere univoco. Nessuno spazio vuoto può separare il *parametro identifier* e la parentesi di apertura. <br/> Usare la concatenazione di righe posizionare una barra rovesciata ( ) immediatamente prima del carattere di nuova riga per dividere le direttive lunghe \\ in più righe di origine. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| <span id="token-string__optional________"></span><span id="TOKEN-STRING__OPTIONAL________"></span>*token-string* \[ Opzionale\] <br/>                                                                                                                     | Valore della macro. Questo parametro è costituito da una serie di token, ad esempio parole chiave, costanti o istruzioni complete. Uno o più spazi vuoti devono separare questo parametro dal parametro *identifier.* questo spazio vuoto non viene considerato parte del testo sostituito, né lo spazio vuoto dopo l'ultimo token del testo. Usare liberamente le parentesi per garantire che gli argomenti complessi vengano interpretati correttamente. <br/> Se il valore del parametro *identifier* si trova all'interno del *parametro token-string* (anche in seguito a un'altra espansione della macro), non viene espanso. <br/> Se si esclude questo parametro, tutte le istanze del parametro *identifier* vengono rimosse dal file di origine. L'identificatore rimane definito e può essere testato usando le direttive [ \# ifdefined](dx-graphics-hlsl-appendix-pre-ifdef.md), \# ifdef e \# ifndef. <br/> |
 
 
 
@@ -45,15 +45,15 @@ Direttiva per il preprocessore che crea una macro simile a una funzione.
 
 ## <a name="remarks"></a>Commenti
 
-Tutte le istanze del parametro *Identifier* che si verificano dopo la direttiva [ \# define](dx-graphics-hlsl-appendix-pre-define.md) nel file di origine costituiscono una chiamata di macro e l'identificatore verrà sostituito da una versione del parametro della *stringa di token* con argomenti effettivi sostituiti per i parametri formali. Il numero di parametri nella chiamata deve corrispondere al numero di parametri nella definizione della macro. L'identificatore viene sostituito solo quando costituisce un token. l'identificatore, ad esempio, non viene sostituito se viene visualizzato in un commento, all'interno di una stringa o come parte di un identificatore più lungo.
+Tutte le istanze del parametro *identifier* che si verificano dopo la direttiva [ \# define](dx-graphics-hlsl-appendix-pre-define.md) nel file di origine costituiscono una chiamata macro e l'identificatore verrà sostituito da una versione del parametro *token-string* con argomenti effettivi sostituiti da parametri formali. Il numero di parametri nella chiamata deve corrispondere al numero di parametri nella definizione della macro. L'identificatore viene sostituito solo quando forma un token. Ad esempio, l'identificatore non viene sostituito se viene visualizzato in un commento, all'interno di una stringa o come parte di un identificatore più lungo.
 
-La direttiva [ \# undef](dx-graphics-hlsl-appendix-pre-undef.md) indica al preprocessore di dimenticare la definizione di un identificatore. per ulteriori informazioni, vedere la \# direttiva undef (DirectX HLSL).
+La [ \# direttiva undef](dx-graphics-hlsl-appendix-pre-undef.md) indica al preprocessore di dimenticare la definizione di un identificatore. Per altre informazioni, vedere Direttiva \# undef (DirectX HLSL).
 
-La definizione di costanti con l'opzione del compilatore/D ha lo stesso effetto dell'uso della direttiva [ \# define](dx-graphics-hlsl-appendix-pre-define.md) all'inizio del file. Con l'opzione/D è possibile definire fino a 30 macro.
+La definizione di costanti con l'opzione del compilatore /D ha lo stesso effetto dell'uso della direttiva [ \# define](dx-graphics-hlsl-appendix-pre-define.md) all'inizio del file. È possibile definire fino a 30 macro con l'opzione /D.
 
-Gli argomenti effettivi nella chiamata della macro vengono associati agli argomenti formali corrispondenti nella definizione della macro. Ogni argomento formale nella stringa del token viene sostituito dall'argomento effettivo corrispondente, a meno che l'argomento non sia preceduto da un operatore per ( \# ), charizing ( \# @) o da un token-Pasting ( \# \# ) o sia seguito da un \# \# operatore. Eventuali macro presenti nell'argomento effettivo vengono espanse prima che la direttiva sostituisca il parametro formale.
+Gli argomenti effettivi nella chiamata di macro corrispondono agli argomenti formali corrispondenti nella definizione della macro. Ogni argomento formale nella stringa del token viene sostituito dall'argomento effettivo corrispondente, a meno che l'argomento non sia preceduto da un \# operatore stringizing ( ), charizing ( @) o token-pasting ( ) o seguito da \# \# \# un \# \# operatore . Eventuali macro presenti nell'argomento effettivo vengono espanse prima che la direttiva sostituisca il parametro formale.
 
-Il token incollato nel compilatore HLSL è leggermente diverso da quello del token incollato nel compilatore C, in quanto i token incollati devono essere token validi. Si consideri, ad esempio, la seguente definizione di macro:
+L'incollamento di token nel compilatore HLSL è leggermente diverso dall'incollamento di token nel compilatore C, in cui i token incollati devono essere token validi per conto proprio. Si consideri ad esempio la definizione di macro seguente:
 
 
 ```
@@ -63,7 +63,7 @@ MERGE(float, 4x4) test;
 
 
 
-Nel compilatore C, il risultato è il seguente:
+Nel compilatore C il risultato è il seguente:
 
 
 ```
@@ -72,7 +72,7 @@ float4x4 test
 
 
 
-Nel compilatore HLSL, tuttavia, si ottiene quanto segue:
+Nel compilatore HLSL, tuttavia, il risultato è il seguente:
 
 
 ```
@@ -81,7 +81,7 @@ float4 x4 test
 
 
 
-È possibile ovviare a questo comportamento usando invece la definizione di macro seguente.
+È possibile aggirare questo comportamento usando invece la definizione della macro seguente.
 
 
 ```
@@ -92,7 +92,7 @@ MERGE(MERGE(float, 4), x4) test;
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzata una macro per definire le linee del cursore.
+Nell'esempio seguente viene utilizzata una macro per definire le righe del cursore.
 
 
 ```
@@ -101,7 +101,7 @@ Nell'esempio seguente viene utilizzata una macro per definire le linee del curso
 
 
 
-Nell'esempio seguente viene definita una macro che recupera un Integer pseudocasuale nell'intervallo specificato.
+Nell'esempio seguente viene definita una macro che recupera un intero pseudocasuale nell'intervallo specificato.
 
 
 ```

@@ -1,9 +1,9 @@
 ---
-title: Elemento QuickAccessToolbar
-description: Rappresenta la barra di accesso rapido (QAT), una piccola barra degli strumenti che Visualizza i collegamenti ai comandi della barra multifunzione.
+title: QuickAccessToolbar - elemento
+description: Rappresenta la barra di accesso rapido, una piccola barra degli strumenti che visualizza i collegamenti ai comandi della barra multifunzione.
 ms.assetid: 59aa35c3-a844-46b3-b066-c9a321fb0891
 keywords:
-- Barra multifunzione Windows elemento QuickAccessToolbar
+- Elemento QuickAccessToolbar Barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0076890a8d9858d4bf410ecfdd866bf4f48fdbb6
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 6ae01f620d66298a5f7200d0be947dbfb3750af4
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104398508"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443302"
 ---
-# <a name="quickaccesstoolbar-element"></a>Elemento QuickAccessToolbar
+# <a name="quickaccesstoolbar-element"></a>QuickAccessToolbar - elemento
 
-Rappresenta la [barra di accesso rapido (QAT)](windowsribbon-controls-quickaccesstoolbar.md), una piccola barra degli strumenti che Visualizza i collegamenti ai comandi della barra multifunzione.
+Rappresenta la [barra di accesso rapido,](windowsribbon-controls-quickaccesstoolbar.md)una piccola barra degli strumenti che visualizza i collegamenti ai comandi della barra multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -56,17 +56,17 @@ Rappresenta la [barra di accesso rapido (QAT)](windowsribbon-controls-quickacces
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CustomizeCommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Inserisce un elemento del comando aggiuntivo nel menu QAT.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> <img src="images/markup/qat-customizecommandname.png" alt="Screen shot of a QAT menu with the More commands... Command item." /><br/> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Inserisce un'ulteriore voce Command nel menu QAT.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> <img src="images/markup/qat-customizecommandname.png" alt="Screen shot of a QAT menu with the More commands... Command item." /><br/> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -79,7 +79,7 @@ Rappresenta la [barra di accesso rapido (QAT)](windowsribbon-controls-quickacces
 
 | Elemento                                                                                                                   | Descrizione                                   |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**QuickAccessToolbar. ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
+| [**QuickAccessToolbar.ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> | Può verificarsi al massimo una volta<br/> <br/> |
 
 
 
@@ -89,7 +89,7 @@ Rappresenta la [barra di accesso rapido (QAT)](windowsribbon-controls-quickacces
 
 | Elemento                                                                                         |
 |-------------------------------------------------------------------------------------------------|
-| [**Ribbon. QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> |
+| [**Ribbon.QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> |
 
 
 
@@ -97,17 +97,17 @@ Rappresenta la [barra di accesso rapido (QAT)](windowsribbon-controls-quickacces
 
 Obbligatorio.
 
-Deve essere eseguita esattamente una volta per ogni [**Ribbon. QuickAccessToolBar**](windowsribbon-element-ribbon-quickaccesstoolbar.md).
+Deve verificarsi esattamente una volta per [**ogni ribbon.QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md).
 
-Gli elementi in QAT possono essere aggiunti o rimossi in fase di esecuzione.
+Gli elementi nella QAT possono essere aggiunti o rimossi in fase di esecuzione.
 
-Per coerenza tra le applicazioni della barra multifunzione, è consigliabile che il gestore di comandi *CustomizeCommandName* avvii una finestra di dialogo di personalizzazione di qat.
+Per coerenza tra le applicazioni della barra multifunzione, è consigliabile che il gestore del comando *CustomizeCommandName* avvii una finestra di dialogo di personalizzazione QAT.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per **QuickAccessToolBar**.
+L'esempio seguente illustra il markup di base per **QuickAccessToolbar**.
 
-Questa sezione di codice mostra la dichiarazione del comando **QuickAccessToolBar** .
+Questa sezione di codice illustra la **dichiarazione del comando QuickAccessToolbar.**
 
 
 ```XML
@@ -121,7 +121,7 @@ Questa sezione di codice mostra la dichiarazione del comando **QuickAccessToolBa
 
 
 
-Questa sezione di codice mostra la dichiarazione del controllo **QuickAccessToolBar** .
+Questa sezione di codice illustra la **dichiarazione del controllo QuickAccessToolbar.**
 
 
 ```XML
@@ -141,20 +141,16 @@ Questa sezione di codice mostra la dichiarazione del controllo **QuickAccessTool
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Controllo della barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md)
+[Controllo Barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md)
 </dt> </dl>
 
  

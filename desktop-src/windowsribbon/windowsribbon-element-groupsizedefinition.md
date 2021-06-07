@@ -1,9 +1,9 @@
 ---
 title: Elemento GroupSizeDefinition
-description: Rappresenta una dimensione del layout per un gruppo di controlli in un modello personalizzato.
+description: Rappresenta una dimensione di layout per un gruppo di controlli in un modello personalizzato.
 ms.assetid: c0e20c80-16af-41d5-81e1-0dc32e92e3fa
 keywords:
-- Barra multifunzione Windows elemento GroupSizeDefinition
+- Elemento GroupSizeDefinition nella barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5cf166dbf428c9d17beb148887cc94be73dc11a0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 650301a29ace2c6df9316a315d4cdbad448e5573
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299249"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443382"
 ---
 # <a name="groupsizedefinition-element"></a>Elemento GroupSizeDefinition
 
-Rappresenta una dimensione del layout per un gruppo di controlli in un modello personalizzato.
+Rappresenta una dimensione di layout per un gruppo di controlli in un modello personalizzato.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -58,7 +58,7 @@ Rappresenta una dimensione del layout per un gruppo di controlli in un modello p
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Limitato a uno dei valori seguenti:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Grandi dimensioni<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> Media<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Piccolo<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> (Media)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Small)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -71,10 +71,10 @@ Rappresenta una dimensione del layout per un gruppo di controlli in un modello p
 
 | Elemento                                                                                 | Descrizione                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**ColumnBreak**](windowsribbon-element-columnbreak.md)<br/>                     | Può essere presente una o più volte<br/> <br/> |
-| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                   | Può essere presente una o più volte<br/> <br/> |
-| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Può essere presente una o più volte<br/> <br/> |
-| [**Riga**](windowsribbon-element-row.md)<br/>                                     | Può essere presente una o più volte<br/> <br/> |
+| [**Interruzione di colonna**](windowsribbon-element-columnbreak.md)<br/>                     | Può verificarsi una o più volte<br/> <br/> |
+| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                   | Può verificarsi una o più volte<br/> <br/> |
+| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
+| [**Riga**](windowsribbon-element-row.md)<br/>                                     | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -92,11 +92,11 @@ Rappresenta una dimensione del layout per un gruppo di controlli in un modello p
 
 facoltativo.
 
-Può verificarsi fino a tre volte per ogni elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) (una volta per ogni *dimensione*).
+Può verificarsi fino a tre volte per ogni [**elemento SizeDefinition**](windowsribbon-element-sizedefinition.md) (una volta per ogni *size).*
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato un modello personalizzato di base che include le tre dimensioni del layout di gruppo che devono essere definite con l'elemento **GroupSizeDefinition** durante la creazione di un modello personalizzato.
+L'esempio di codice seguente illustra un modello personalizzato di base che include le tre dimensioni del layout di gruppo che devono essere definite con **l'elemento GroupSizeDefinition** durante la creazione di un modello personalizzato.
 
 
 ```XML
@@ -188,20 +188,16 @@ Nell'esempio di codice seguente viene illustrato un modello personalizzato di ba
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

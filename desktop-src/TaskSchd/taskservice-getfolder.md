@@ -1,11 +1,11 @@
 ---
-title: Metodo TaskService. GetFolder
-description: Per la creazione di script, ottiene una cartella di attività registrate.
+title: Metodo TaskService.GetFolder
+description: Per lo scripting, ottiene una cartella di attività registrate.
 ms.assetid: 57e5b411-1fb6-4ee1-9802-ed2adbb4fdf8
 keywords:
 - Metodo GetFolder Utilità di pianificazione
-- Metodo GetFolder Utilità di pianificazione, oggetto TaskService
-- Oggetto TaskService Utilità di pianificazione, metodo GetFolder
+- Metodo GetFolder Utilità di pianificazione , oggetto TaskService
+- Oggetto TaskService Utilità di pianificazione metodo , GetFolder
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74504e9cad124f8cbc9ec23e896ba4dec7d7f50c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e58f2d930a0577b6f1be620891b7ba631f18d77
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302671"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387100"
 ---
-# <a name="taskservicegetfolder-method"></a>Metodo TaskService. GetFolder
+# <a name="taskservicegetfolder-method"></a>Metodo TaskService.GetFolder
 
-Per la creazione di script, ottiene una cartella di attività registrate.
+Per lo scripting, ottiene una cartella di attività registrate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ TaskService.GetFolder( _
 
 <dl> <dt>
 
-*percorso* \[ in\]
+*path* \[ Pollici\]
 </dt> <dd>
 
-Percorso della cartella da recuperare. Non usare una barra rovesciata che segue il nome dell'ultima cartella nel percorso. La cartella radice dell'attività è specificata con una barra rovesciata ( \) . Un esempio di percorso di una cartella attività, nella cartella radice dell'attività, è \\ MyTaskFolder. Non è possibile usare il carattere ' .' per specificare la cartella attività corrente è. .' non è possibile utilizzare i caratteri per specificare la cartella attività padre nel percorso.
+Percorso della cartella da recuperare. Non usare una barra rovesciata dopo l'ultimo nome di cartella nel percorso. La cartella dell'attività radice viene specificata con una barra rovesciata ( \\ ). Un esempio di percorso di cartella di attività, nella cartella dell'attività radice, è \\ MyTaskFolder. Il carattere '.' non può essere usato per specificare la cartella dell'attività corrente e '.'. Non è possibile usare caratteri per specificare la cartella dell'attività padre nel percorso.
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Oggetto [**TaskFolder**](taskfolder.md) per la cartella richiesta.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -3,7 +3,7 @@ title: Elemento ControlNameMap
 description: Rappresenta un contenitore per i nomi dei controlli in un modello di layout SizeDefinition personalizzato.
 ms.assetid: b4bceb90-a9a3-42d7-a85b-bf6e4e02784b
 keywords:
-- Barra multifunzione Windows elemento ControlNameMap
+- Barra multifunzione di Windows per l'elemento ControlNameMap
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ca5338978be7f9ddf3432cbe1a0fb8d243d8c00
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 42654af7f81730d01f9c699de7041ba24be185e9
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857418"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442912"
 ---
 # <a name="controlnamemap-element"></a>Elemento ControlNameMap
 
@@ -42,7 +42,7 @@ Non ci sono attributi.
 
 | Elemento                                                                                 | Descrizione                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**ControlNameDefinition**](windowsribbon-element-controlnamedefinition.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**ControlNameDefinition**](windowsribbon-element-controlnamedefinition.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -60,11 +60,11 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
+Può verificarsi al massimo una volta per ogni [**elemento SizeDefinition.**](windowsribbon-element-sizedefinition.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato a quattro pulsanti con un elemento **ControlNameMap** .
+L'esempio di codice seguente illustra il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) a quattro pulsanti personalizzato con **un elemento ControlNameMap.**
 
 
 ```XML
@@ -156,20 +156,16 @@ Nell'esempio di codice seguente viene illustrato il markup di base per un modell
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

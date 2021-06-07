@@ -1,365 +1,365 @@
 ---
 title: Finestre di dialogo (nozioni di base sulla progettazione)
-description: Una finestra di dialogo è una finestra secondaria che consente agli utenti di eseguire un comando, chiedere agli utenti una domanda o fornire agli utenti informazioni o commenti e suggerimenti sullo stato di avanzamento.
+description: Una finestra di dialogo è una finestra secondaria che consente agli utenti di eseguire un comando, porre una domanda o fornire agli utenti informazioni o commenti sullo stato di avanzamento.
 ms.assetid: 2ded9f30-d45f-4027-a85d-4e7d0e412793
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 0db9d705cb697cdad9ed29dad86faf5f96665dd5
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b0e0deb28a706436e4d33ece35a40c26bd7499e0
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104550809"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444852"
 ---
 # <a name="dialog-boxes-design-basics"></a>Finestre di dialogo (nozioni di base sulla progettazione)
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti](/windows/uwp/design/).
+> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-Una finestra di dialogo è una finestra secondaria che consente agli utenti di eseguire un comando, chiedere agli utenti una domanda o fornire agli utenti informazioni o commenti e suggerimenti sullo stato di avanzamento.
+Una finestra di dialogo è una finestra secondaria che consente agli utenti di eseguire un comando, porre una domanda o fornire agli utenti informazioni o commenti sullo stato di avanzamento.
 
 ![screenshot che identifica gli elementi della finestra di dialogo ](images/win-dialog-box-image1.png)
 
-Una tipica finestra di dialogo.
+Finestra di dialogo tipica.
 
-Le finestre di dialogo sono costituite da una barra del titolo (per identificare il comando, la funzionalità o il programma da cui proviene una finestra di dialogo), un'istruzione principale facoltativa (per spiegare l'obiettivo dell'utente con la finestra di dialogo), vari controlli nell'area del contenuto (per presentare le opzioni) e i pulsanti di commit (per indicare la modalità di commit dell'utente nell'attività
+Le finestre di dialogo sono costituite da una barra del titolo (per identificare il comando, la funzionalità o il programma da cui ha origine una finestra di dialogo), un'istruzione principale facoltativa (per spiegare l'obiettivo dell'utente con la finestra di dialogo), vari controlli nell'area del contenuto (per presentare le opzioni) e pulsanti di commit (per indicare come l'utente vuole eseguire il commit nell'attività).
 
-Le finestre di dialogo presentano due tipi fondamentali:
+Le finestre di dialogo hanno due tipi fondamentali:
 
--   Le **finestre di dialogo modali** richiedono il completamento e la chiusura degli utenti prima di continuare con la finestra proprietaria. Queste finestre di dialogo vengono usate in modo ottimale per attività critiche o non frequenti che richiedono il completamento prima di continuare.
--   Le **finestre di dialogo non modali** consentono agli utenti di passare dalla finestra di dialogo alla finestra proprietaria e viceversa. Queste finestre di dialogo sono ideali per le attività frequenti, ripetitive e in corso.
+-   **Le finestre di dialogo modali** richiedono il completamento e la chiusura degli utenti prima di continuare con la finestra proprietaria. Queste finestre di dialogo sono più appropriate per le attività critiche o non frequenti che richiedono il completamento prima di continuare.
+-   **Le finestre di dialogo non modali** consentono agli utenti di passare dalla finestra di dialogo alla finestra proprietaria in base alle esigenze. Queste finestre di dialogo sono più usate per attività frequenti, ripetitive e in corso.
 
-**Una finestra di dialogo attività è una finestra di dialogo implementata utilizzando la finestra di dialogo attività Application Programming Interface (API).** Sono costituiti dalle parti seguenti, che possono essere assemblate in un'ampia gamma di combinazioni:
+**Una finestra di dialogo attività è una finestra di dialogo implementata usando l'API (Application Programming Interface) della finestra di dialogo attività.** Sono costituiti da parti seguenti, che possono essere assemblate in un'ampia gamma di combinazioni:
 
--   **Barra del titolo** per identificare la funzionalità dell'applicazione o del sistema da cui proviene la finestra di dialogo.
--   Un' **istruzione principale**, con un'icona facoltativa, per identificare l'obiettivo dell'utente con la finestra di dialogo.
--   Un' **area di contenuto** per i controlli e le informazioni descrittive.
--   Un' **area di comando** per i pulsanti di commit, incluso un pulsante Annulla e altre opzioni facoltative e non visualizzare questa <item> Controlla nuovamente.
--   **Area a piè** di pagina per spiegazioni e informazioni aggiuntive facoltative, in genere destinate a utenti meno esperti.
+-   Barra **del titolo per** identificare l'applicazione o la funzionalità di sistema da cui ha origine la finestra di dialogo.
+-   Istruzione **principale,** con un'icona facoltativa, per identificare l'obiettivo dell'utente con il dialogo.
+-   Area **di contenuto per** informazioni descrittive e controlli.
+-   **Un'area di** comando per i pulsanti di commit, tra cui un pulsante Annulla e altre opzioni facoltative e Non visualizzare <item> controlla di nuovo .
+-   Area **a piè di pagina per** spiegazioni aggiuntive facoltative e assistenza, in genere destinata a utenti meno esperti.
 
 ![Screenshot di una finestra di dialogo attività tipica ](images/win-dialog-box-image2.png)
 
 Una tipica finestra di dialogo attività.
 
-**Le finestre di dialogo delle attività sono consigliate quando appropriato perché sono facili da creare e ottengono un aspetto coerente.** Per le finestre di dialogo delle attività è necessario Windows Vista o versione successiva, quindi non sono adatte per le versioni precedenti di Microsoft Windows.
+**Le finestre di dialogo attività sono consigliate ogni volta che sono appropriate perché sono facili da creare e hanno un aspetto coerente.** Le finestre di dialogo attività richiedono Windows Vista o versioni successive, quindi non sono adatte alle versioni precedenti di Microsoft Windows.
 
-Un riquadro attività è simile a una finestra di dialogo, ad eccezione del fatto che viene visualizzato in un riquadro della finestra anziché in una finestra separata. Di conseguenza, i riquadri attività hanno una finestra di dialogo più diretta e contestuale. Anche se tecnicamente non sono gli stessi, i **riquadri attività sono così simili alle finestre di dialogo in cui sono presentate le linee guida in questo articolo**.
+Un riquadro attività è simile a una finestra di dialogo, ad eccezione del fatto che viene presentato all'interno di un riquadro della finestra anziché in una finestra separata. Di conseguenza, i riquadri attività hanno un aspetto più diretto e contestuale rispetto alle finestre di dialogo. Anche se tecnicamente non sono uguali, i riquadri attività sono così simili alle finestre di dialogo che le linee guida sono **presentate in questo articolo.**
 
 ![Screenshot di un riquadro attività tipico ](images/win-dialog-box-image3.png)
 
-Un riquadro attività tipico.
+Riquadro attività tipico.
 
-Le [finestre delle proprietà](win-property-win.md) sono un tipo specializzato di finestra di dialogo utilizzata per visualizzare e modificare le proprietà di un oggetto, di una raccolta di oggetti o di un programma. Inoltre, le finestre delle proprietà supportano in genere diverse attività, mentre le finestre di dialogo supportano in genere una singola attività o un solo passaggio in un'attività. Poiché il loro utilizzo è specializzato, le **finestre delle proprietà sono descritte in un set di linee guida diverso**.
+[Le finestre](win-property-win.md) delle proprietà sono un tipo specializzato di finestra di dialogo utilizzato per visualizzare e modificare le proprietà di un oggetto, di una raccolta di oggetti o di un programma. Inoltre, le finestre delle proprietà supportano in genere diverse attività, mentre le finestre di dialogo in genere supportano una singola attività o passaggio in un'attività. Poiché il loro utilizzo è specializzato, **le finestre delle proprietà sono trattate in un set diverso di linee guida.**
 
-Le finestre di dialogo possono contenere [tabulazioni](ctrl-tabs.md)e, in tal caso, sono denominate finestre di dialogo a schede. Le finestre delle proprietà sono determinate dalla presentazione delle proprietà, non dall'utilizzo delle schede.
+Le finestre di dialogo possono [avere schede](ctrl-tabs.md)e, in tal caso, sono denominate finestre di dialogo a schede. Le finestre delle proprietà sono determinate dalla presentazione delle proprietà, non dall'uso delle schede.
 
-**Nota:** Le linee guida relative a [layout](vis-layout.md), [Gestione finestre](win-window-mgt.md), finestre di dialogo comuni, [finestre delle proprietà](win-property-win.md), [procedure guidate](win-wizards.md), [conferme](mess-confirm.md), [messaggi di errore](mess-error.md)e messaggi di [avviso](mess-warn.md) sono presentate in articoli distinti.
+**Nota:** Le linee guida relative al [layout,](vis-layout.md)alla gestione delle finestre, alle finestre [](mess-warn.md) di dialogo [comuni,](win-property-win.md)alle finestre delle [proprietà,](win-wizards.md)alle procedure guidate, [](mess-confirm.md)alle conferme, [](mess-error.md)ai messaggi di errore e ai messaggi di avviso vengono presentate in articoli distinti. [](win-window-mgt.md)
 
-## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente corretta?
+## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente giusta?
 
 Per decidere, prendi in considerazione queste domande:
 
--   **Lo scopo è fornire agli utenti informazioni, chiedere agli utenti una domanda o consentire agli utenti di selezionare le opzioni per eseguire un comando o un'attività?** In caso contrario, utilizzare un'altra interfaccia utente (UI).
--   **Lo scopo è visualizzare e modificare le proprietà di un oggetto, di una raccolta di oggetti o di un programma?** In caso affermativo, usare invece una [finestra delle proprietà](win-property-win.md) o una [barra degli strumenti](cmd-toolbars.md) .
--   **Lo scopo è presentare una raccolta di comandi o strumenti?** In tal caso, utilizzare una barra degli strumenti o una [finestra della tavolozza](glossary.md).
--   **Lo scopo è verificare che l'utente voglia procedere con un'azione?** C'è un motivo chiaro per non continuare e una ragionevole probabilità che a volte gli utenti non lo siano? In tal caso, utilizzare una [conferma](mess-confirm.md).
--   **Lo scopo è fornire un messaggio di errore o di avviso?** In tal caso, utilizzare un [messaggio di errore](mess-error.md) o un messaggio di [avviso](mess-warn.md).
--   Scopo di:
-    -   Apri file
-    -   Salva file
-    -   Apri cartelle
-    -   Trova o Sostituisci testo
+-   **Lo scopo è fornire agli utenti informazioni, porre una domanda o consentire agli utenti di selezionare le opzioni per eseguire un comando o un'attività?** In caso contrario, usare un'altra interfaccia utente.
+-   **Lo scopo è visualizzare e modificare le proprietà di un oggetto, di una raccolta di oggetti o di un programma?** In tal caso, usare invece una [finestra delle proprietà o](win-property-win.md) una barra [degli](cmd-toolbars.md) strumenti.
+-   **Lo scopo è presentare una raccolta di comandi o strumenti?** In tal caso, usare una barra degli strumenti o [una finestra tavolozza](glossary.md).
+-   **Lo scopo è verificare che l'utente voglia procedere con un'azione?** C'è un motivo chiaro per non procedere e una ragionevole probabilità che a volte gli utenti non lo siano? In tal caso, usare un messaggio [di conferma.](mess-confirm.md)
+-   **Lo scopo è quello di fornire un messaggio di errore o di avviso?** In tal caso, usare un [messaggio di errore o](mess-error.md) un messaggio di [avviso](mess-warn.md).
+-   Lo scopo è:
+    -   Aprire i file
+    -   Salvare i file
+    -   Aprire cartelle
+    -   Trovare o sostituire testo
     -   Stampare un documento
     -   Selezionare gli attributi di una pagina stampata
     -   Selezionare un tipo di carattere
     -   Scegliere un colore
-    -   Cerca un file, una cartella, un computer o una stampante
-    -   Ricerca di utenti, computer o gruppi in Microsoft Active Directory
+    -   Cercare un file, una cartella, un computer o una stampante
+    -   Cercare utenti, computer o gruppi in Microsoft Active Directory
     -   Richiedere un nome utente e una password?
 
-In caso affermativo, usare invece la [finestra di dialogo comune](win-common-dlg.md) appropriata. Molte di queste finestre di dialogo comuni sono estendibili.
+In tal caso, usare invece il dialogo [comune](win-common-dlg.md) appropriato. Molti di questi dialoghe comuni sono estendibili.
 
--   **Lo scopo è quello di eseguire un'attività in più passaggi che richiede più di una singola finestra?** In caso affermativo, usare invece un [flusso attività](glossary.md) o una [procedura guidata](win-wizards.md) .
--   **Lo scopo è informare gli utenti di un evento di sistema o programma che non è correlato all'attività dell'utente corrente, che non richiede un'azione immediata da parte dell'utente e che gli utenti possono ignorarli liberamente?** In caso affermativo, usare invece una [notifica](mess-notif.md) .
--   **Lo scopo è mostrare lo stato del programma?** In caso affermativo, usare invece una [barra di stato](ctrl-status-bars.md) .
--   **È preferibile usare l'interfaccia utente sul posto?** Le finestre di dialogo possono suddividere il flusso dell'utente richiedendo attenzione. In alcuni casi l'interruzioni del flusso è giustificato, ad esempio quando l'utente deve eseguire un'azione che si trova al di fuori del contesto corrente. In altri casi, un approccio migliore consiste nel presentare l'interfaccia utente nel contesto, direttamente con l'interfaccia utente sul posto (ad esempio un riquadro attività) o su richiesta usando la [divulgazione progressiva](ctrl-progressive-disclosure-controls.md).
--   **Lo scopo è la visualizzazione di un problema di input utente non critico o di una condizione speciale?** In caso affermativo, usare invece un [fumetto](ctrl-balloons.md) .
--   **Per i flussi di attività, è preferibile usare un'altra pagina?** In genere si vuole che un'attività scorra da una pagina all'altra all'interno di un'unica finestra. Usare le finestre di dialogo per confermare i comandi sul posto, ottenere l'input per i comandi sul posto e per eseguire attività secondarie autonome che vengono eseguite meglio in modo indipendente e all'esterno del flusso attività principale.
--   **Per la selezione di opzioni, è probabile che gli utenti modifichino le opzioni?** In caso contrario, prendere in considerazione le alternative, ad esempio:
-    -   Utilizzando le opzioni predefinite senza richiedere, ma consentendo agli utenti di apportare modifiche in un secondo momento.
-    -   Specificando una versione con opzioni (ad esempio, **Print...** in un menu) e una versione senza opzioni, ad esempio **stampa** sulla barra degli strumenti. Generalmente, i comandi della barra degli strumenti devono essere immediati ed evitare la visualizzazione delle finestre di dialogo
--   **Per la selezione di opzioni, è disponibile un modo più semplice e diretto per presentare le opzioni?** In tal caso, prendere in considerazione le alternative, ad esempio:
-    -   Utilizzando un [pulsante di suddivisione](ctrl-command-buttons.md) per selezionare le variazioni di un comando.
+-   **Lo scopo è eseguire un'attività in più passaggi che richiede più di una singola finestra?** In tal caso, usare invece [un flusso di attività o](glossary.md) una [procedura](win-wizards.md) guidata.
+-   **Lo scopo è informare gli utenti di un evento di sistema o programma non correlato all'attività utente corrente, che non richiede un intervento immediato da parte dell'utente e gli utenti possono liberamente ignorare?** In tal caso, usare [invece una](mess-notif.md) notifica.
+-   **Lo scopo è mostrare lo stato del programma?** In tal caso, usare [invece una barra di](ctrl-status-bars.md) stato.
+-   **È preferibile usare l'interfaccia utente sul posto?** Le finestre di dialogo possono interrompere il flusso dell'utente richiedendo attenzione. A volte tale interruzione nel flusso è giustificata, ad esempio quando l'utente deve eseguire un'azione esterna al contesto corrente. In altri casi, un approccio migliore consiste nel presentare l'interfaccia utente nel contesto, direttamente con l'interfaccia utente sul posto (ad esempio un riquadro attività) o su richiesta usando la diffusione [progressiva](ctrl-progressive-disclosure-controls.md).
+-   **Lo scopo è quello di visualizzare un problema di input utente non critico o una condizione speciale?** In tal caso, usare invece [un balloon.](ctrl-balloons.md)
+-   **Per i flussi di attività, è preferibile usare un'altra pagina?** In genere si vuole che un'attività scorrono da una pagina all'altro all'interno di un'unica finestra. Usare le finestre di dialogo per confermare i comandi sul posto, ottenere l'input per i comandi sul posto ed eseguire attività secondarie autonome che vengono eseguite al meglio in modo indipendente e all'esterno del flusso di attività principale.
+-   **Per la selezione delle opzioni, è probabile che gli utenti cambino le opzioni?** In caso contrario, prendere in considerazione alternative, ad esempio:
+    -   Uso delle opzioni predefinite senza chiedere, ma consentendo agli utenti di apportare modifiche in un secondo momento.
+    -   Fornire una versione con opzioni (ad esempio, **Stampa...** in un menu) e una versione senza opzioni (ad esempio, **Stampa** sulla barra degli strumenti). In genere, i comandi della barra degli strumenti devono essere immediati ed evitare la visualizzazione di finestre di dialogo.
+-   **Per la selezione delle opzioni, esiste un modo più semplice e diretto per presentare le opzioni?** In tal caso, prendere in considerazione alternative, ad esempio:
+    -   Uso di [un pulsante di menu](ctrl-command-buttons.md) suddiviso per selezionare le varianti di un comando.
     -   Uso di un sottomenu per comandi, caselle di controllo, pulsanti di opzione ed elenchi semplici.
 
 ![Screenshot che mostra un menu e un sottomenu.](images/win-dialog-box-image4.png)
 
 ![Screenshot di un menu e di un sottomenu ](images/win-dialog-box-image5.png)
 
-In questi esempi vengono utilizzati i sottomenu anziché le finestre di dialogo per le selezioni semplici.
+In questi esempi vengono usati sottomenu anziché finestre di dialogo per selezioni semplici.
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
-Quando vengono usate correttamente, le finestre di dialogo sono un ottimo modo per offrire potenza e flessibilità al programma. Quando vengono usate in modo improprio, le finestre di dialogo sono un modo semplice per infastidire gli utenti, interrompere il flusso e far sentire il programma indiretto e noioso da usare. **Nelle finestre di dialogo modali è richiesta l'attenzione degli utenti.** Le finestre di dialogo sono spesso più facili da implementare rispetto alle interfacce utente alternative, quindi tendono a essere sovrautilizzate.
+Se usate correttamente, le finestre di dialogo sono un ottimo modo per offrire potenza e flessibilità al programma. In caso di uso improprio, le finestre di dialogo sono un modo semplice per infastidire gli utenti, interrompere il flusso e rendere il programma indiretto e noioso da usare. **Le finestre di dialogo modali richiedono l'attenzione degli utenti.** Le finestre di dialogo sono spesso più semplici da implementare rispetto a quelle alternative, quindi tendono a essere sovrautilizzate.
 
-**Una finestra di dialogo è particolarmente efficace quando le relative caratteristiche di progettazione corrispondono all'utilizzo.** La progettazione di una finestra di dialogo dipende in gran parte dal suo scopo (per offrire opzioni, porre domande, fornire informazioni o commenti e suggerimenti), digitare (modale o non modale) e l'interazione dell'utente (obbligatoria, risposta facoltativa o riconoscimento), mentre il suo utilizzo è determinato in gran parte dal contesto (avviato dall'utente o dal programma), dalla probabilità dell'azione dell'utente e dalla
+**Una finestra di dialogo è più efficace quando le caratteristiche di progettazione corrispondono al relativo utilizzo.** La progettazione di una finestra di dialogo è in gran parte determinata dallo scopo (per offrire opzioni, porre domande, fornire informazioni o feedback), dal tipo (modale o non modale) e dall'interazione dell'utente (richiesta, risposta facoltativa o riconoscimento), mentre l'utilizzo è determinato in gran parte dal contesto (avviato dall'utente o dal programma), dalla probabilità di azione dell'utente e dalla frequenza di visualizzazione.
 
-Per progettare finestre di dialogo efficaci, utilizzare in modo efficace gli elementi seguenti:
+Per progettare finestre di dialogo efficaci, usare in modo efficace gli elementi seguenti:
 
 -   Testo della finestra di dialogo
 -   Istruzioni principali
--   Non visualizzare <item> opzione di nuovo
+-   Non visualizzare questo <item> opzione again
 
-**Se si esegue una sola operazione...**
+**Se si fa una sola cosa...**
 
-Assicurarsi che la progettazione della finestra di dialogo (determinata in base allo scopo, al tipo e all'interazione dell'utente) corrisponda all'utilizzo (determinato dal contesto, dalla probabilità di azione dell'utente e dalla frequenza dello schermo).
+Assicurarsi che la progettazione della finestra di dialogo (determinata dallo scopo, dal tipo e dall'interazione dell'utente) corrisponda all'utilizzo (determinato dal contesto, dalla probabilità di azione dell'utente e dalla frequenza di visualizzazione).
 
 ## <a name="usage-patterns"></a>Modelli di utilizzo
 
-Nelle finestre di dialogo sono disponibili diversi modelli di utilizzo:
+Le finestre di dialogo hanno diversi modelli di utilizzo:
 
--   Le finestre di dialogo delle domande (usando i pulsanti) chiedono agli utenti una singola domanda o per confermare un comando e usano risposte semplici in pulsanti di comando disposti orizzontalmente.
--   Le finestre di dialogo delle domande (usando i collegamenti ai comandi) chiedono agli utenti una singola domanda o di selezionare un'attività da eseguire e usano risposte dettagliate nei collegamenti ai comandi disposti verticalmente.
--   Le finestre di dialogo Choice presentano gli utenti con un set di opzioni, in genere per specificare un comando in modo più completo. Diversamente dalle finestre di dialogo delle domande, le finestre di dialogo scelte possono porre più domande.
--   Le finestre di dialogo di stato presentano agli utenti il feedback sullo stato di avanzamento durante un'operazione di lunga durata (più di cinque secondi), insieme a un comando per annullare o arrestare l'operazione.
--   Le finestre di dialogo informative visualizzano le informazioni richieste dall'utente.
+-   Le finestre di dialogo delle domande (con i pulsanti) porre agli utenti una singola domanda o confermare un comando e usare risposte semplici in pulsanti di comando disposti orizzontalmente.
+-   Le finestre di dialogo delle domande (con collegamenti di comando) poneno agli utenti una singola domanda o selezionano un'attività da eseguire e usano risposte dettagliate in collegamenti di comando disposti verticalmente.
+-   Le finestre di dialogo di scelta presentano agli utenti un set di scelte, in genere per specificare un comando in modo più completo. A differenza dei dialoghe di domande, i dialoghe di scelta possono porre più domande.
+-   Le finestre di dialogo di stato presentano agli utenti un feedback sullo stato di avanzamento durante un'operazione di lunga durata (più di cinque secondi), insieme a un comando per annullare o arrestare l'operazione.
+-   Le finestre di dialogo in formato informativo visualizzano le informazioni richieste dall'utente.
 
 ## <a name="guidelines"></a>Indicazioni
 
 ### <a name="general"></a>Generale
 
--   **Non usare finestre di dialogo scorrevoli.** Non usare finestre di dialogo che richiedono l'uso di una barra di scorrimento per essere visualizzate completamente durante il normale utilizzo. Riprogettare invece la finestra di dialogo. Prendere in considerazione l'uso della [divulgazione](ctrl-progressive-disclosure-controls.md) o delle [schede](ctrl-tabs.md)progressive.
--   **Non si dispone di una barra dei menu o di una barra di stato.** Fornire invece l'accesso ai comandi e allo stato direttamente nella finestra di dialogo o usando i menu di scelta rapida sui controlli pertinenti.
+-   **Non usare finestre di dialogo scorrevoli.** Non usare finestre di dialogo che richiedono l'uso di una barra di scorrimento per essere visualizzate completamente durante il normale utilizzo. Riprogettare la finestra di dialogo. È consigliabile usare [la diffusione progressiva](ctrl-progressive-disclosure-controls.md) o [le tabulazioni](ctrl-tabs.md).
+-   **Non avere una barra dei menu o una barra di stato.** Fornire invece l'accesso ai comandi e allo stato direttamente nella finestra di dialogo stessa o usando i menu di scelta rapida nei controlli pertinenti.
 
-    -   **Eccezione:** Le barre dei menu sono accettabili quando viene usata una finestra di dialogo per implementare una finestra primaria, ad esempio un'utilità.
+    -   **Eccezione:** Le barre dei menu sono accettabili quando si usa una finestra di dialogo per implementare una finestra primaria, ad esempio un'utilità .
 
     **Non corretto:**
 
     ![Screenshot di una finestra di dialogo con una barra dei menu ](images/win-dialog-box-image6.png)
 
-    In questo esempio, trova certificati è una finestra di dialogo non modale con una barra dei menu.
+    In questo esempio Trova certificati è una finestra di dialogo non modabile con una barra dei menu.
 
--   Se una finestra di dialogo richiede attenzione immediata e il programma non è attivo, **lampeggiare il pulsante della barra delle applicazioni tre volte per attirare l'attenzione e lasciarlo evidenziato.** Non eseguire altre operazioni: non ripristinare o attivare la finestra e non riprodurre effetti acustici. Al contrario, rispettare la selezione dello stato della finestra dell'utente e consentire all'utente di attivare la finestra quando è pronta.
--   Per altre linee guida ed esempi, vedere [barra delle applicazioni](winenv-taskbar.md).
+-   Se una finestra di dialogo richiede attenzione immediata e il programma non è attivo, eseguire il flash del pulsante della barra delle applicazioni tre volte per attirare l'attenzione e **lasciarlo evidenziato.** Non eseguire altre operazioni: non ripristinare o attivare la finestra e non riprodurre alcun effetto sonoro. Al contrario, rispettare la selezione dello stato della finestra dell'utente e consentire all'utente di attivare la finestra quando è pronto.
+-   Per altre linee guida ed esempi, vedere Barra [delle applicazioni.](winenv-taskbar.md)
 
 ### <a name="modal-dialog-boxes"></a>Finestre di dialogo modali
 
--   **Utilizzare per attività critiche o non frequenti che richiedono il completamento prima di continuare.**
--   Usare un [modello con commit ritardato](glossary.md) in modo che le modifiche non abbiano effetto fino al commit esplicito.
--   **Implementare utilizzando una finestra di dialogo attività quando appropriato per ottenere un aspetto coerente.** Le finestre di dialogo delle attività richiedono Windows Vista o versione successiva, quindi non sono adatte per le versioni precedenti di Windows.
+-   **Usare per le attività critiche o non frequenti che richiedono il completamento prima di continuare.**
+-   Usare un modello [di commit ritardato in](glossary.md) modo che le modifiche non vengono applicate fino a quando non viene eseguito il commit in modo esplicito.
+-   **Implementare usando una finestra di dialogo attività ogni volta che è appropriato per ottenere un aspetto coerente.** Le finestre di dialogo attività richiedono Windows Vista o versioni successive, quindi non sono adatte alle versioni precedenti di Windows.
 
 ### <a name="modeless-dialog-boxes"></a>Finestre di dialogo non modali
 
--   **Da usare per attività frequenti, ripetitive e in corso.**
--   Usare un [modello di commit immediato](glossary.md) in modo che le modifiche abbiano effetto immediato.
--   Per le finestre di dialogo non modali, utilizzare un pulsante di comando Chiudi esplicito nella finestra di dialogo per chiudere la finestra. Per entrambi, utilizzare un pulsante Chiudi sulla barra del titolo per chiudere la finestra.
--   **Provare a rendere ancorabili le finestre di dialogo non modali.** Le finestre di dialogo non modali ancorabili consentono un posizionamento più flessibile.
+-   **Usare per attività frequenti, ripetitive e in corso.**
+-   Usare un [modello di commit immediato in](glossary.md) modo che le modifiche si apportare immediatamente.
+-   Per le finestre di dialogo non modali, usare un pulsante di comando Chiudi esplicito nella finestra di dialogo per chiudere la finestra. Per entrambi, usare un pulsante Chiudi sulla barra del titolo per chiudere la finestra.
+-   **È consigliabile rendere ancorabili le finestre di dialogo non modali.** Le finestre di dialogo non modali ancorabili consentono un posizionamento più flessibile.
 
-![Screenshot di una finestra di dialogo non modale ancorabile ](images/win-dialog-box-image7.png)
+![Screenshot di una finestra di dialogo ancorabile e non modale ](images/win-dialog-box-image7.png)
 
-Alcune finestre di dialogo non modali utilizzate nel Microsoft Office sono ancorabili.
+Alcune finestre di dialogo non modali usate in Microsoft Office sono ancorabili.
 
 ### <a name="multiple-dialog-boxes"></a>Più finestre di dialogo
 
--   **Non visualizzare più di una finestra di dialogo di scelta di proprietà alla volta dalla finestra di dialogo di scelta del proprietario.** La visualizzazione di più di uno rende il significato dei pulsanti di commit difficili da comprendere per gli utenti. È possibile visualizzare altri tipi di finestre di dialogo, ad esempio le finestre di dialogo delle domande, in base alle esigenze.
--   **Per una sequenza di finestre di dialogo correlate, è consigliabile utilizzare una finestra di dialogo a più pagine, se possibile.** Usare singole finestre di dialogo se non sono chiaramente correlate.
+-   **Non visualizzare più di una finestra di dialogo di scelta di proprietà alla volta da una finestra di dialogo di scelta del proprietario.** La visualizzazione di più pulsanti rende difficile per gli utenti comprendere il significato dei pulsanti di commit. È possibile visualizzare altri tipi di finestre di dialogo, ad esempio le finestre di dialogo delle domande, in base alle esigenze.
+-   **Per una sequenza di finestre di dialogo correlate, è consigliabile usare un dialogo a più pagine, se possibile.** Usare singoli dialoghe se non sono chiaramente correlati.
 
 ### <a name="multi-page-dialog-boxes"></a>Finestre di dialogo a più pagine
 
--   Utilizzare una finestra di dialogo a più pagine anziché singole finestre di dialogo quando si dispone della seguente sequenza di pagine correlate:
-    -   Una singola pagina di input (facoltativo)
+-   Usare una finestra di dialogo a più pagine anziché singole finestre di dialogo quando si dispone della sequenza di pagine correlate seguente:
+    -   Una singola pagina di input (facoltativa)
     -   Pagina di stato
-    -   Una singola pagina di risultati
+    -   Una singola pagina dei risultati
 
-La pagina di input è facoltativa perché l'attività potrebbe essere stata avviata altrove. **In questo modo si ottiene un'esperienza stabile, semplice e leggera.**
+La pagina di input è facoltativa perché l'attività potrebbe essere stata avviata in un'altra posizione. **In questo modo l'esperienza risultante ha un aspetto stabile, semplice e leggero.**
 
 ![Screenshot di un indicatore di stato ](images/win-dialog-box-image8.png)
 
-![screenshot del messaggio ' nessun problema trovato ' ](images/win-dialog-box-image9.png)
+![Screenshot del messaggio "Nessun problema trovato" ](images/win-dialog-box-image9.png)
 
-In questo esempio, la diagnostica di rete Windows è costituita dalle pagine stato e risultati.
+In questo esempio Diagnostica di rete Windows è costituito da pagine di stato e di risultati.
 
--   **Non usare una finestra di dialogo a più pagine se la pagina di input è una finestra di dialogo standard.** In questo caso la coerenza di utilizzo di una finestra di dialogo standard è più importante.
--   **Non usare pulsanti avanti o indietro e non avere più di tre pagine.** Le finestre di dialogo a più pagine sono destinate a attività in un singolo passaggio con feedback. Non sono [procedure guidate](win-wizards.md), che vengono usate per le attività in più passaggi. Le procedure guidate presentano un comportamento indiretto intenso rispetto alle finestre di dialogo a più pagine.
--   **Nella pagina input usare i pulsanti di comando o i collegamenti ai comandi specifici per avviare l'attività.**
--   **Utilizzare un pulsante Annulla nelle pagine di input e di stato e un pulsante Chiudi nella pagina risultati.**
+-   **Non usare una finestra di dialogo a più pagine se la pagina di input è una finestra di dialogo standard.** In questo caso è più importante la coerenza dell'uso di un dialogo standard.
+-   **Non usare i pulsanti Avanti o Indietro e non hanno più di tre pagine.** Le finestre di dialogo a più pagine sono per le attività in un singolo passaggio con commenti e suggerimenti. Non sono procedure [guidate,](win-wizards.md)che vengono usate per le attività in più passaggi. Le procedure guidate hanno un aspetto molto intenso e indiretto rispetto alle finestre di dialogo a più pagine.
+-   **Nella pagina di input usare pulsanti di comando o collegamenti di comando specifici per avviare l'attività.**
+-   **Usare un pulsante Annulla nelle pagine di input e di stato e un pulsante Chiudi nella pagina dei risultati.**
 
-**Sviluppatori:** È possibile creare finestre di dialogo di attività a più pagine usando il messaggio di [ \_ \_ pagina di spostamento TDM](../controls/tdm-navigate-page.md) .
+**Sviluppatori:** È possibile creare finestre di dialogo di attività a più pagine usando il [messaggio \_ TDM NAVIGATE \_ PAGE.](../controls/tdm-navigate-page.md)
 
 ### <a name="presentation"></a>Presentazione
 
-Per semplificare l'individuazione e l'accesso delle finestre di dialogo, associare chiaramente la finestra di dialogo alla relativa origine e utilizzare più monitor:
+Per semplificare l'individuazione e l'accesso delle finestre di dialogo, associare chiaramente il dialogo all'origine e usare correttamente più monitor:
 
--   **Visualizzare inizialmente le finestre di dialogo "centrate" nella parte superiore della finestra proprietaria.** Per la visualizzazione successiva, provare a visualizzarla nell'ultima posizione, relativa alla finestra proprietaria, se questa operazione è probabilmente più pratica.
+-   **Visualizzare inizialmente le finestre di dialogo "centrate" nella parte superiore della finestra del proprietario.** Per la visualizzazione successiva, è consigliabile visualizzarla nell'ultima posizione (relativa alla finestra del proprietario) se questa operazione è probabilmente più pratica.
 
-![diagramma della finestra di dialogo centrata sulla finestra sottostante ](images/win-dialog-box-image10.png)
+![Diagramma della finestra di dialogo centrata sulla finestra dietro di essa ](images/win-dialog-box-image10.png)
 
-Concentrare inizialmente i dialoghi nella parte superiore della finestra proprietaria.
+Centrare inizialmente le finestre di dialogo nella parte superiore della finestra proprietaria.
 
--   **Se una finestra di dialogo è contestuale, visualizzarla accanto all'oggetto da cui è stata avviata.** Tuttavia, posizionarlo fuori dalla modalità (preferibilmente offset verso il basso e verso destra) in modo che l'oggetto non sia coperto dalla finestra di dialogo.
+-   **Se un dialogo è contestuale, visualizzarlo accanto all'oggetto da cui è stato avviato.** Tuttavia, posizionarlo fuori dal modo (preferibilmente scostamento verso il basso e verso destra) in modo che l'oggetto non sia coperto dal dialogo.
 
-![diagramma dell'offset della finestra di dialogo verso il basso e verso destra ](images/win-dialog-box-image11.png)
+![Diagramma dell'offset della finestra di dialogo verso il basso e verso destra ](images/win-dialog-box-image11.png)
 
-Le proprietà di un oggetto vengono visualizzate accanto all'oggetto.
+Le proprietà di un oggetto vengono visualizzate accanto all'oggetto .
 
--   **Per le finestre di dialogo non modali, visualizzare inizialmente nella parte superiore della finestra proprietaria per facilitarne l'individuazione.** Se l'utente attiva la finestra proprietaria, questa potrebbe nascondere la finestra di dialogo non modale.
--   **Se necessario, modificare la posizione iniziale in modo che l'intera finestra di dialogo sia visibile all'interno del monitor di destinazione.** Se una finestra ridimensionabile è più grande del monitor di destinazione, ridurla per adattarla.
--   **Quando una finestra di dialogo viene visualizzata nuovamente, provare a visualizzarla nello stesso stato dell'ultimo accesso.** Al termine, salvare il monitoraggio usato, le dimensioni della finestra, la posizione e lo stato (ingrandito rispetto al ripristino). Durante la rivisualizzazione ripristinare le dimensioni, la posizione e lo stato della finestra di dialogo salvata utilizzando il monitor appropriato. Si consiglia inoltre di fare in modo che questi attributi vengano mantenuti tra le istanze del programma in base ai singoli utenti.
--   **Per le finestre ridimensionabili, impostare una dimensione minima della finestra se è presente una dimensione al di sotto della quale il contenuto non è più utilizzabile.** Provare a modificare la presentazione per rendere il contenuto utilizzabile a dimensioni inferiori.
+-   **Per le finestre di dialogo non modali, la visualizzazione viene inizialmente visualizzata sopra la finestra del proprietario per semplificarne l'individuazione.** Se l'utente attiva la finestra proprietaria, il dialogo non modali potrebbe essere nascosto.
+-   **Se necessario, modificare la posizione iniziale in modo che l'intero dialogo sia visibile all'interno del monitor di destinazione.** Se una finestra ridimensionabile è più grande del monitor di destinazione, ridurla per adattarla.
+-   **Quando una finestra di dialogo viene visualizzata nuovamente, è consigliabile visualizzarla nello stesso stato dell'ultimo accesso.** Alla chiusura, salvare il monitoraggio usato, le dimensioni della finestra, la posizione e lo stato (ingrandito o ripristinato). Quando viene visualizzata nuovamente, ripristinare le dimensioni, la posizione e lo stato della finestra di dialogo salvati usando il monitoraggio appropriato. Valutare anche la possibilità di rendere questi attributi persistenti tra le istanze del programma per singolo utente.
+-   **Per le finestre ridimensionabili, impostare una dimensione minima della finestra se è presente una dimensione inferiore alla quale il contenuto non è più utilizzabile.** Valutare la possibilità di modificare la presentazione per rendere il contenuto utilizzabile in dimensioni più piccole.
 
-![screenshot dei pulsanti del lettore multimediale centrato ](images/win-dialog-box-image12.png)
+![Screenshot dei pulsanti del lettore multimediale centrato ](images/win-dialog-box-image12.png)
 
 In questo esempio, Windows Media Player modifica il formato quando la finestra diventa troppo piccola per il formato standard.
 
--   **Non usare l'attributo always on top.**
-    -   **Eccezione:** Utilizzare solo quando una finestra di dialogo implementa un'operazione essenzialmente modale, ma deve essere sospesa brevemente per accedere alla finestra proprietaria. Ad esempio, durante il controllo ortografico di un documento, è possibile che gli utenti lascino occasionalmente la finestra di dialogo controllo ortografico e accedano al documento per correggere gli errori.
+-   **Non usare l'attributo Always On Top.**
+    -   **Eccezione:** Usare solo quando una finestra di dialogo implementa un'operazione essenzialmente modale, ma deve essere sospesa brevemente per accedere alla finestra proprietaria. Ad esempio, quando si esegue il controllo ortografico di un documento, gli utenti possono occasionalmente lasciare la finestra di dialogo di controllo ortografico e accedere al documento per correggere gli errori.
 
-Per ulteriori informazioni ed esempi, vedere [gestione della finestra](win-window-mgt.md).
+Per altre informazioni ed esempi, vedere [Gestione delle finestre.](win-window-mgt.md)
 
 ### <a name="title-bars"></a>Barre del titolo
 
--   **Le finestre di dialogo non hanno icone della barra del titolo.** Le icone della barra del titolo vengono usate come distinzione visiva tra le finestre [primarie](glossary.md) e le [finestre secondarie](glossary.md).
-    -   **Eccezione:** Se viene utilizzata una finestra di dialogo per implementare una finestra primaria, ad esempio un'utilità, che viene quindi visualizzata sulla barra delle applicazioni, è presente un'icona della barra del titolo. In questo caso, ottimizzare il titolo per la visualizzazione sulla barra delle applicazioni, inserendo prima di tutto le informazioni di distinzione.
--   **Nelle finestre di dialogo è sempre presente un pulsante Chiudi.** Anche le finestre di dialogo non modali possono avere un pulsante Riduci a icona. Le finestre di dialogo ridimensionabili possono avere un pulsante Ingrandisci.
--   **Non disabilitare il pulsante Chiudi.** Un pulsante Chiudi consente agli utenti di mantenere il controllo consentendo loro di chiudere le finestre che non vogliono.
+-   **Le finestre di dialogo non hanno icone della barra del titolo.** Le icone della barra del titolo vengono usate come distinzione visiva tra [le finestre primarie e](glossary.md) le finestre [secondarie.](glossary.md)
+    -   **Eccezione:** Se una finestra di dialogo viene usata per implementare una finestra primaria (ad esempio un'utilità ) e pertanto viene visualizzata sulla barra delle applicazioni, ha un'icona della barra del titolo. In questo caso, ottimizzare il titolo per la visualizzazione sulla barra delle applicazioni inserendo concisamente le informazioni distintive.
+-   **Le finestre di dialogo hanno sempre un pulsante Chiudi.** Le finestre di dialogo non modali possono anche avere un pulsante Riduci a icona. Le finestre di dialogo ridimensionabili possono avere un pulsante Ingrandisci.
+-   **Non disabilitare il pulsante Chiudi.** La presenza di un pulsante Chiudi consente agli utenti di mantenere il controllo consentendo loro di chiudere le finestre che non vogliono.
     -   **Eccezione:** Per le finestre di dialogo di stato, è possibile disabilitare il pulsante Chiudi se l'attività deve essere eseguita fino al completamento per ottenere uno stato valido o impedire la perdita di dati.
--   **Il pulsante Chiudi sulla barra del titolo deve avere lo stesso effetto del pulsante Annulla o Chiudi** nella finestra di dialogo. Non assegnare mai lo stesso effetto di OK.
--   Se la didascalia e l'icona della barra del titolo sono già visualizzate in un modo importante nella parte superiore della finestra, è possibile nascondere la didascalia e l'icona della barra del titolo per evitare la ridondanza. Tuttavia, è comunque necessario impostare un titolo appropriato internamente per l'uso da Windows.
+-   **Il pulsante Chiudi sulla barra del titolo dovrebbe avere lo stesso effetto** del pulsante Annulla o Chiudi all'interno della finestra di dialogo. Non assegnare mai lo stesso effetto di OK.
+-   Se la didascalia e l'icona della barra del titolo sono già visualizzate in modo prominente nella parte superiore della finestra, è possibile nascondere la didascalia e l'icona della barra del titolo per evitare ridondanza. Tuttavia, è comunque necessario impostare internamente un titolo appropriato per l'uso da parte di Windows.
 
 ### <a name="interaction"></a>Interazione
 
--   **Quando vengono visualizzate, le finestre di dialogo avviate dall'utente devono sempre prendere lo stato attivo per l'input.** Le finestre di dialogo avviate dal programma non devono assumere lo stato attivo per l'input perché l'utente potrebbe interagire con un'altra finestra. Tale interazione erroneamente indirizzata alla finestra di dialogo può avere conseguenze impreviste.
--   **Assegnare lo stato attivo per l'input iniziale al controllo che gli utenti con maggiore probabilità interagiranno prima**, che è in genere (ma non sempre) il primo controllo interattivo. Evitare di assegnare lo stato attivo per l'input iniziale a un collegamento alla guida.
--   **Per la navigazione tramite tastiera, l'ordine di tabulazione deve essere propagata in ordine logico, in genere da sinistra verso destra, dall'alto verso il basso.** In genere l'ordine di tabulazione segue l'ordine di lettura, ma è consigliabile eseguire le eccezioni seguenti:
+-   **Quando vengono visualizzate, le finestre di dialogo avviate dall'utente devono sempre avere lo stato attivo per l'input.** Le finestre di dialogo avviate dal programma non devono avere lo stato attivo per l'input perché l'utente potrebbe interagire con un'altra finestra. Tale interazione non è stata indiretta nella finestra di dialogo può avere conseguenze impreviste.
+-   **Assegnare lo stato attivo per l'input** iniziale al controllo con cui è più probabile che gli utenti interagiscano con , che in genere è (ma non sempre) il primo controllo interattivo. Evitare di assegnare lo stato attivo per l'input iniziale a un collegamento alla Guida.
+-   **Per lo spostamento tramite tastiera, l'ordine di tabulazione deve essere in ordine logico, in genere da sinistra a destra, dall'alto verso il basso.** In genere l'ordine di tabulazione segue l'ordine di lettura, ma è consigliabile effettuare queste eccezioni:
 
-    -   Inserire i controlli più comunemente utilizzati in precedenza in ordine di tabulazione.
-    -   Inserire i collegamenti della guida nella parte inferiore di una finestra di dialogo, dopo i pulsanti di commit in ordine di tabulazione.
+    -   Inserire i controlli usati più di frequente in precedenza nell'ordine di tabulazione.
+    -   Inserire i collegamenti della Guida nella parte inferiore di una finestra di dialogo, dopo i pulsanti di commit nell'ordine di tabulazione.
 
-    Quando si assegna l'ordine, si supponga che gli utenti visualizzino le finestre di dialogo per lo scopo previsto; quindi, ad esempio, gli utenti visualizzano le finestre di dialogo scelte per scegliere, non esaminare e fare clic su Annulla.
+    Quando si assegna l'ordine, si supponga che gli utenti visualizzano le finestre di dialogo per lo scopo previsto; pertanto, ad esempio, gli utenti visualizzano le finestre di dialogo di scelta per effettuare scelte, non per esaminare e fare clic su Annulla.
 
--   **Premendo il tasto ESC viene sempre chiusa una finestra di dialogo attiva.** Questo vale per le finestre di dialogo con annullamento o chiusura e anche se Annulla è stato rinominato per chiudere perché i risultati non possono più essere annullati.
+-   **Premendo ESC viene sempre chiusa una finestra di dialogo attiva.** Questo vale per le finestre di dialogo con Annulla o Chiudi e anche se Annulla è stato rinominato chiudi perché i risultati non possono più essere annullati.
 
 **Chiavi di accesso**
 
--   **Laddove possibile, assegnare chiavi di accesso univoche a tutti i controlli interattivi o alle relative etichette.** Le [caselle di testo](ctrl-text-boxes.md) di sola lettura sono controlli interattivi (poiché gli utenti possono scorrerli e copiare testo) in modo da trarre vantaggio dalle chiavi di accesso. **Non assegnare chiavi di accesso a:**
-    -   **Pulsanti OK, Annulla e Chiudi.** Per le chiavi di accesso vengono usati Enter e ESC. Tuttavia, assegnare sempre una chiave di accesso a un controllo che significa OK o Annulla, ma con un'etichetta diversa.
+-   **Quando possibile, assegnare chiavi di accesso univoche a tutti i controlli interattivi o alle relative etichette.** [Le caselle di testo di sola](ctrl-text-boxes.md) lettura sono controlli interattivi (perché gli utenti possono scorrerle e copiare il testo) in modo che possano trarre vantaggio dai tasti di scelta. **Non assegnare chiavi di accesso a:**
+    -   **PULSANTI OK, Annulla e Chiudi.** Per le chiavi di accesso vengono usati i tasti INVIO e ESC. Tuttavia, assegnare sempre un tasto di scelta a un controllo che indica OK o Annulla, ma ha un'etichetta diversa.
 
-        ![screenshot della finestra di dialogo Elimina file ](images/win-dialog-box-image13.png)
+        ![Screenshot della finestra di dialogo Elimina file ](images/win-dialog-box-image13.png)
 
-        In questo esempio il pulsante di commit positivo ha una chiave di accesso assegnata.
+        In questo esempio, al pulsante commit positivo è assegnata una chiave di accesso.
 
-    -   **Etichette del gruppo.** In genere, i singoli controlli all'interno di un gruppo vengono assegnati alle chiavi di accesso, quindi l'etichetta del gruppo non ne ha bisogno. Tuttavia, se è presente una carenza di chiavi di accesso, assegnare una chiave di accesso all'etichetta del gruppo e non ai singoli controlli.
-    -   **Pulsanti della Guida generici,** a cui è possibile accedere con F1.
-    -   **Etichette di collegamento.** Spesso sono presenti troppi collegamenti per assegnare chiavi di accesso univoche e i caratteri di sottolineatura usati spesso per indicare i collegamenti nascondono i caratteri di sottolineatura della chiave di accesso. Accedere ai collegamenti con il tasto TAB.
-    -   **Nomi delle schede.** Le tabulazioni vengono ciclate con CTRL + TAB e CTRL + MAIUSC + TAB.
-    -   **Pulsanti Sfoglia con etichetta "...".** A questi pulsanti di esplorazione non è possibile assegnare chiavi di accesso in modo univoco.
-    -   **Controlli senza etichetta,** ad esempio controlli di selezione, pulsanti di comando grafici e controlli di divulgazione progressivi senza etichetta.
-    -   **Testo statico senza etichetta o etichette per i controlli che non sono interattivi,** ad esempio le barre di stato.
+    -   **Raggruppare le etichette.** In genere, ai singoli controlli all'interno di un gruppo vengono assegnati tasti di scelta, quindi l'etichetta del gruppo non ne richiede uno. Tuttavia, in caso di mancanza di chiavi di accesso, assegnare una chiave di accesso all'etichetta del gruppo e non ai singoli controlli.
+    -   **Pulsanti della Guida generica a** cui si accede con F1.
+    -   **Collegare le etichette.** Spesso sono presenti troppi collegamenti per assegnare chiavi di accesso univoche e i caratteri di sottolineatura usati spesso per indicare i collegamenti nascondono i caratteri di sottolineatura dei tasti di scelta. Accedere invece ai collegamenti con il tasto TAB.
+    -   **Nomi delle schede.** Le schede vengono spostate in ciclo usando CTRL+TAB e CTRL+MAIUSC+TAB.
+    -   **Pulsanti Sfoglia con etichetta "...".** A questi pulsanti Sfoglia non è possibile assegnare chiavi di accesso in modo univoco.
+    -   **Controlli senza etichetta, ad** esempio controlli di selezione, pulsanti di comando grafici e controlli di divulgazione progressiva senza etichetta.
+    -   **Testo statico non etichettato o etichette per i controlli non interattivi,** ad esempio gli barre di stato.
 
--   **Laddove possibile, assegnare le chiavi di accesso per i comandi usati di frequente in base alle assegnazioni di chiavi di accesso standard**. Sebbene le assegnazioni di chiavi di accesso coerenti non siano sempre possibili, sono certamente preferite soprattutto per le finestre di dialogo di uso frequente.
--   **Assegnare prima di tutto i pulsanti di accesso per assicurarsi che abbiano le assegnazioni di chiavi standard.** Se non è disponibile un'assegnazione di chiave standard, usare la prima lettera della prima parola. La chiave di accesso per i pulsanti Sì e no commit, ad esempio, deve essere sempre "Y" e "N", indipendentemente dagli altri controlli della finestra di dialogo.
--   **Per semplificare la ricerca delle chiavi di accesso, assegnare le chiavi di accesso a un carattere che viene visualizzato all'inizio dell'etichetta,** idealmente il primo carattere, anche se è presente una parola chiave che viene visualizzata più avanti nell'etichetta.
+-   **Quando possibile, assegnare le chiavi di accesso per i comandi di uso comune in base alle assegnazioni standard delle chiavi di accesso.** Anche se le assegnazioni coerenti delle chiavi di accesso non sono sempre possibili, sono sicuramente preferibili soprattutto per le finestre di dialogo usate di frequente.
+-   **Assegnare prima le chiavi di accesso del pulsante di commit per assicurarsi che siano assegnate le assegnazioni di chiave standard.** Se non è presente un'assegnazione di chiave standard, usare la prima lettera della prima parola. Ad esempio, il tasto di scelta per i pulsanti Sì e No commit deve essere sempre "Y" e "N", indipendentemente dagli altri controlli nella finestra di dialogo.
+-   **Per semplificare** la ricerca dei tasti di scelta, assegnare i tasti di scelta a un carattere visualizzato all'inizio dell'etichetta, idealmente il primo carattere, anche se è presente una parola chiave che viene visualizzata più avanti nell'etichetta.
 -   **Preferisce caratteri con larghezze ampie,** ad esempio w, m e lettere maiuscole.
--   **Preferisce una consonante distinta o una vocale,** ad esempio "x" in uscita.
--   **Evitare l'uso di caratteri che rendono difficile la visualizzazione della sottolineatura,** ad esempio (dal più problematico al meno problematico):
-    -   Lettere con una sola larghezza di pixel, ad esempio i e l.
+-   **Preferisce una consonante distintiva o una vocale,** ad esempio "x" in Exit.
+-   **Evitare di usare caratteri che rendono difficile la sottolineatura,** ad esempio (dalla più problematica alla meno problematica):
+    -   Lettere che hanno una larghezza di un solo pixel, ad esempio i e l.
     -   Lettere con discendenti, ad esempio g, j, p, q e y.
     -   Lettere accanto a una lettera con un discendente.
 
-Per altre linee guida ed esempi, vedere [tastiera](inter-keyboard.md).
+Per altre linee guida ed esempi, vedere [Tastiera.](inter-keyboard.md)
 
 ### <a name="progress-dialogs"></a>Finestre di dialogo di stato
 
-Per le attività a esecuzione prolungata, **si supponga che gli utenti eseguano un'altra operazione durante il completamento dell'attività**. Progettare l'attività per l'esecuzione automatica.
+Per le attività con esecuzione di lunga **durata, si supponga che gli utenti eseereranno altre operazioni mentre l'attività sta completando**. Progettare l'attività per l'esecuzione automatica.
 
--   **Presentare agli utenti la finestra di dialogo per il feedback dello stato di avanzamento se un'operazione richiede più di cinque secondi per il completamento**, insieme a un comando per annullare o arrestare l'operazione.
-    -   **Eccezione:** Per le procedure guidate e i flussi di attività, utilizzare una finestra di dialogo modale per lo stato di avanzamento solo se l'attività rimane nella stessa pagina (anziché avanzare a un'altra pagina) e gli utenti non possono eseguire operazioni in attesa. In caso contrario, utilizzare una pagina stato o uno stato di avanzamento sul posto.
--   Se l'operazione è un'attività a esecuzione prolungata (oltre 30 secondi) e può essere eseguita in background, utilizzare una finestra di dialogo di stato non modale in modo che gli utenti possano continuare a utilizzare il programma in attesa.
--   Finestre di dialogo di avanzamento non modale:
-    -   Avere un pulsante Riduci a icona sulla barra del titolo.
+-   **Presentare agli utenti una finestra di dialogo** di feedback sullo stato di avanzamento se il completamento di un'operazione richiede più di cinque secondi, insieme a un comando per annullare o arrestare l'operazione.
+    -   **Eccezione:** Per le procedure guidate e i flussi di attività, usare una finestra di dialogo modale per lo stato di avanzamento solo se l'attività rimane nella stessa pagina (anziché passare a un'altra pagina) e gli utenti non possono eseguire operazioni durante l'attesa. In caso contrario, usare una pagina di stato o lo stato sul posto.
+-   Se l'operazione è un'attività a esecuzione lunga (oltre 30 secondi) e può essere eseguita in background, usare una finestra di dialogo di stato non modabile in modo che gli utenti possano continuare a usare il programma durante l'attesa.
+-   Finestre di dialogo di stato non modali:
+    -   Disporre di un pulsante Riduci a icona sulla barra del titolo.
     -   Vengono visualizzati sulla barra delle applicazioni.
--   Implementare le finestre di dialogo di avanzamento non modale in modo che continuino a essere eseguite anche se la finestra proprietaria è chiusa.
+-   Implementare finestre di dialogo di stato non modali in modo che continuino a essere eseguite anche se la finestra proprietaria è chiusa.
 
-![screenshot della finestra di dialogo Copia con indicatore di stato ](images/win-dialog-box-image14.png)
+![Screenshot della finestra di dialogo copia con l'indicatore di stato ](images/win-dialog-box-image14.png)
 
-In questo esempio, la copia del file continua anche se la finestra proprietaria è chiusa.
+In questo esempio la copia del file continua anche se la finestra del proprietario è chiusa.
 
--   **Fornire un pulsante di comando per arrestare l'operazione se il completamento richiede più di alcuni secondi oppure non è possibile completare mai il tentativo.** Etichetta il pulsante Annulla se l'annullamento restituisce l'ambiente allo stato precedente (senza effetti collaterali); in caso contrario, etichettare il pulsante Interrompi per indicare che lascia intatta l'operazione parzialmente completata. È possibile modificare l'etichetta del pulsante da Annulla per arrestarsi durante l'operazione, se a un certo punto non è possibile ripristinare lo stato precedente dell'ambiente.
+-   **Specificare un pulsante di comando per arrestare l'operazione se il completamento richiede più di pochi secondi o se può non essere mai completato.** Etichettare il pulsante Annulla se l'annullamento riporta l'ambiente allo stato precedente (senza effetti collaterali); In caso contrario, etichettare il pulsante Arresta per indicare che lascia intatta l'operazione parzialmente completata. È possibile modificare l'etichetta del pulsante da Annulla a Arresta al centro dell'operazione, se a un certo punto non è possibile ripristinare lo stato precedente dell'ambiente.
 
-![screenshot della finestra di dialogo con pulsante Annulla ](images/win-dialog-box-image15.png)
+![Screenshot della finestra di dialogo con il pulsante Annulla ](images/win-dialog-box-image15.png)
 
-In questo esempio, l'arresto della diagnosi dei problemi non ha alcun effetto collaterale.
+In questo esempio l'interruzione della diagnosi del problema non ha alcun effetto collaterale.
 
--   **Fornire un pulsante di comando per sospendere l'operazione se sono necessari più di alcuni minuti per il completamento e la capacità degli utenti di svolgere il lavoro.** Questa operazione non impone all'utente di scegliere se completare l'attività e di svolgere il proprio lavoro.
--   **Raccogliere quante più informazioni possibile prima di avviare l'attività.**
--   **Se vengono rilevati problemi reversibili, gli utenti devono gestire tutti i problemi individuati alla fine dell'attività.** Se ciò non è pratico, gli utenti possono gestire i problemi non appena si verificano.
--   **Non abbandonare le attività come risultato di errori reversibili.**
+-   **Fornire un pulsante di comando per sospendere l'operazione se il completamento richiede più di alcuni minuti e non consente agli utenti di lavorare.** In questo modo l'utente non deve scegliere tra il completamento dell'attività e il completamento del lavoro.
+-   **Raccogliere tutte le informazioni che è possibile prima di avviare l'attività.**
+-   **Se vengono rilevati problemi ripristinabili, fare in modo che gli utenti si occupino di tutti i problemi rilevati alla fine dell'attività.** Se ciò non è pratico, fare in modo che gli utenti si occupino dei problemi non appena si verificano.
+-   **Non abbandonare le attività in seguito a errori ripristinabili.**
 
-![screenshot della finestra di dialogo con il pulsante Riprova ](images/win-dialog-box-image16.png)
+![Screenshot della finestra di dialogo con il pulsante Riprova ](images/win-dialog-box-image16.png)
 
-In questo esempio Esplora risorse consente agli utenti di continuare l'attività dopo un errore reversibile.
+In questo esempio, Esplora risorse agli utenti di continuare con l'attività dopo un errore reversibile.
 
--   **Indica i problemi ruotando l'indicatore di stato rosso.**
+-   **Indicare i problemi attivando in rosso l'indicatore di stato.**
 
-![screenshot dell'indicatore di stato e pulsante Riprova ](images/win-dialog-box-image17.png)
+![Screenshot dell'indicatore di stato e pulsante Riprova ](images/win-dialog-box-image17.png)
 
-In questo esempio un disco rimovibile è stato rimosso durante la copia di un file.
+In questo esempio un disco rimovibile è stato rimosso durante una copia di file.
 
--   **Se i risultati sono chiaramente evidenti per gli utenti, chiudere la finestra di dialogo di stato automaticamente al termine del processo.** In caso contrario, utilizzare il feedback solo per segnalare problemi:
-    -   Per visualizzare commenti e suggerimenti semplici, visualizzare i commenti e i suggerimenti nella finestra di dialogo di stato e modificare il pulsante Annulla per chiudere.
-    -   Per visualizzare commenti dettagliati, chiudere la finestra di dialogo stato e visualizzare una finestra di dialogo informativa.
+-   **Se i risultati sono chiaramente evidenti per gli utenti, chiudere automaticamente la finestra di dialogo di stato al completamento.** In caso contrario, usare il feedback solo per segnalare i problemi:
+    -   Per visualizzare commenti e suggerimenti semplici, visualizzare il feedback nella finestra di dialogo di stato e modificare il pulsante Annulla in Chiudi.
+    -   Per visualizzare commenti e suggerimenti dettagliati, chiudere la finestra di dialogo di stato e visualizzare una finestra di dialogo informativo.
 
-**Non usare una notifica per il feedback di completamento.** Usare una finestra di dialogo di stato o una [notifica di esito positivo dell'azione](mess-notif.md), ma non entrambe.
+**Non usare una notifica per il feedback sul completamento.** Usare una finestra di dialogo di stato o una notifica [di esito positivo dell'azione,](mess-notif.md)ma non entrambe.
 
 **Tempo rimanente**
 
--   **Usare i formati di ora seguenti.** Iniziare con il primo dei formati seguenti, in cui l'unità di tempo più grande non è zero, quindi passare al formato successivo quando l'unità di tempo più grande diventa zero.
+-   **Usare i formati di ora seguenti.** Iniziare con il primo dei formati seguenti in cui l'unità di tempo più grande non è zero, quindi passare al formato successivo quando l'unità di tempo più grande diventa zero.
 
-**Per gli indicatori di stato:**
+**Per gli barre di stato:**
 
-**Se le informazioni correlate vengono visualizzate nel formato due punti:**
+**Se le informazioni correlate vengono visualizzate in formato due punti:**
 
-Tempo rimanente: h ore, m minuti
+Tempo rimanente: ore h, m minuti
 
 Tempo rimanente: m minuti, s secondi
 
 Tempo rimanente: s secondi
 
-**Se lo spazio sullo schermo è Premium:**
+**Se lo spazio sullo schermo è premium:**
 
-ore h, m minuti rimanenti
+h hrs, m min rimanenti
 
-m min, s sec rimanenti
+m mins, s secs remaining
 
-secondi rimanenti
+s secondi rimanenti
 
-**In caso contrario**
+**In caso contrario:**
 
 ore h, m minuti rimanenti
 
 m minuti, s secondi rimanenti
 
-secondi rimanenti
+s secondi rimanenti
 
 **Per le barre del titolo:**
 
-HH: mm rimanenti
+hh:mm rimanente
 
-mm: SS rimanenti
+mm:ss remaining
 
-0: SS rimanenti
+0:ss rimanenti
 
-Questo formato compatto Mostra prima le informazioni più importanti, in modo che non vengano troncate sulla barra delle applicazioni.
+Questo formato compatto mostra prima le informazioni più importanti in modo che non sia troncato sulla barra delle applicazioni.
 
--   **Rendere accurate le stime, ma non dare una precisione falsa.** Se l'unità più grande è di ore, concedere minuti (se significativo) ma non secondi.
+-   **Fare in modo che le stime siano accurate, ma non fornire false precisione.** Se l'unità più grande è di ore, assegnare minuti (se significativi) ma non secondi.
 
 **Non corretto:**
 
-hh ore, mm minuti, ss secondi
+hh hours, mm minutes, ss seconds
 
--   **Tenere aggiornata la stima.** Aggiornare le stime rimanenti almeno ogni 5 secondi.
--   **Concentrarsi sul tempo rimanente, in** quanto si tratta delle informazioni che gli utenti si occupano maggiormente. Fornire tempo totale trascorso solo quando sono presenti scenari in cui è utile il tempo trascorso, ad esempio quando è probabile che l'attività venga ripetuta. Se il tempo rimanente stimato è associato a un indicatore di stato, non è presente un testo con percentuale di completamento perché tali informazioni vengono trasmesse dall'indicatore di stato.
--   **Essere grammaticamente corretti.** Usare unità singolari quando il numero è uno.
+-   **Mantenere aggiornata la stima.** Aggiornare le stime del tempo rimanente almeno ogni 5 secondi.
+-   **Concentrarsi sul tempo rimanente** perché si tratta delle informazioni più importanti per gli utenti. Assegnare il tempo trascorso totale solo in alcuni scenari in cui il tempo trascorso è utile, ad esempio quando è probabile che l'attività sia ripetuta. Se la stima del tempo rimanente è associata a un indicatore di stato, non avere il testo completo della percentuale perché queste informazioni vengono trasmesse dall'indicatore di stato stesso.
+-   **Essere grammaticalmente corretti.** Usare unità singolari quando il numero è uno.
 
 **Non corretto:**
 
@@ -367,24 +367,24 @@ hh ore, mm minuti, ss secondi
 
 -   **Usare le maiuscole/minuscole come nelle frasi comuni.**
 
-Per ulteriori informazioni ed esempi, vedere la pagina relativa agli [indicatori di stato](progress-bars.md).
+Per altre informazioni ed esempi, vedere [ProgressBars](progress-bars.md).
 
 ### <a name="icons-and-graphics"></a>Icone e grafica
 
 **Grafica**
 
--   **Non usare elementi grafici di grandi dimensioni che non sono in grado di riempire lo spazio con Eye Candy.** In alternativa, Mantieni l'aspetto semplice.
+-   **Non usare grafica di grandi dimensioni che non ha alcuno scopo oltre a riempire lo spazio con gli occhi.** In alternativa, mantenere l'aspetto semplice.
 
 **Non corretto:**
 
-![screenshot della finestra di dialogo con un grafico di grandi dimensioni ](images/win-dialog-box-image18.png)
+![Screenshot della finestra di dialogo con un elemento grafico di grandi dimensioni ](images/win-dialog-box-image18.png)
 
-In questo esempio, l'immagine di grandi dimensioni non ha alcun effetto.
+In questo esempio, l'immagine di grandi dimensioni non ha alcun scopo.
 
 **Icone della barra del titolo**
 
 -   **Le finestre di dialogo non hanno icone della barra del titolo.**
-    -   **Eccezione:** Se viene utilizzata una finestra di dialogo per implementare una finestra primaria, ad esempio un'utilità, che viene quindi visualizzata sulla barra delle applicazioni, è presente un'icona della barra del titolo.
+    -   **Eccezione:** Se una finestra di dialogo viene usata per implementare una finestra primaria (ad esempio un'utilità ) e pertanto viene visualizzata sulla barra delle applicazioni, ha un'icona della barra del titolo.
 
 **Icone del corpo**
 
@@ -392,13 +392,12 @@ In questo esempio, l'immagine di grandi dimensioni non ha alcun effetto.
 
 
 
-|                                      |                                                                                                                            |
+| Modello | Icona Corpo |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| **Modello**<br/>               | **Icona corpo**<br/>                                                                                                   |
-| **Finestre di dialogo delle domande**<br/>      | Programma, funzionalità, oggetto, icona di avviso (se è possibile perdita di dati o accesso al sistema), avviso di sicurezza o nessuno.<br/> |
-| **Finestre di dialogo scelte**<br/>        | Nessuna.<br/>                                                                                                           |
-| **Finestre di dialogo di stato**<br/>      | None (ma può avere un'animazione).<br/>                                                                               |
-| **Finestre di dialogo informative**<br/> | Nessuna.<br/>                                                                                                           |
+| **Dialoghe di domande**<br/>      | Programma, funzionalità, oggetto, icona di avviso (in caso di potenziale perdita di dati o accesso al sistema), avviso di sicurezza o nessuno.<br/> |
+| **Finestre di dialogo di scelta**<br/>        | Nessuno.<br/>                                                                                                           |
+| **Finestre di dialogo di stato**<br/>      | Nessuno (ma può avere un'animazione).<br/>                                                                               |
+| **Dialoghe in formato informativo**<br/> | Nessuno.<br/>                                                                                                           |
 
 
 
@@ -406,57 +405,57 @@ In questo esempio, l'immagine di grandi dimensioni non ha alcun effetto.
 
 -   **Non corretto:**
 
-![screenshot della finestra di dialogo con icona di avviso ](images/win-dialog-box-image19.png)
+![Screenshot della finestra di dialogo con l'icona di avviso ](images/win-dialog-box-image19.png)
 
-In questo esempio, un'icona di avviso viene utilizzata erroneamente per una domanda che non implica la perdita potenziale di dati o l'accesso al sistema.
+In questo esempio, un'icona di avviso viene usata erroneamente per una domanda che non comporta una potenziale perdita di dati o accesso al sistema.
 
-- **Si consiglia di usare le icone per consentire agli utenti di riconoscere visivamente le funzionalità del programma.** Questa tecnica è particolarmente efficace quando le icone sono facilmente riconoscibili e vengono usate in diverse posizioni all'interno del programma.
+- **È consigliabile usare le icone per consentire agli utenti di riconoscere visivamente le funzionalità del programma.** Questa tecnica è più efficace quando le icone sono facilmente riconoscibili e usate in diverse posizioni all'interno del programma.
 
-![screenshot della finestra di dialogo Preferiti con icona a stella ](images/win-dialog-box-image20.png)
+![Screenshot della finestra di dialogo Preferiti con l'icona a forma di stella ](images/win-dialog-box-image20.png)
 
-In questo esempio, l'icona a stella gialla rappresenta i Preferiti. L'icona è facilmente riconoscibile e viene usata in modo coerente in tutte le finestre per rappresentare i Preferiti.
+In questo esempio l'icona a stella gialla rappresenta Preferiti. L'icona è facilmente riconoscibile e viene usata in modo coerente in Windows per rappresentare i Preferiti.
 
 -   **Usare le icone per consentire agli utenti di riconoscere l'oggetto in questione.**
 
-![screenshot della finestra di dialogo con icona PowerPoint ](images/win-dialog-box-image21.png)
+![Screenshot della finestra di dialogo con l'icona di PowerPoint ](images/win-dialog-box-image21.png)
 
-In questo esempio, l'icona dell'oggetto consente agli utenti di riconoscere il tipo di file aperto o salvato.
+In questo esempio l'icona dell'oggetto consente agli utenti di riconoscere il tipo di file aperto o salvato.
 
--   **Prendere in considerazione l'uso delle icone per semplificare la comprensione delle funzionalità.**
+-   **È consigliabile usare le icone per rendere le funzionalità più descrittive.**
 
-![immagini di frecce che mostrano come posizionare il monitoraggio ](images/win-dialog-box-image22.png)
+![Immagini di frecce che mostrano come posizionare il monitoraggio ](images/win-dialog-box-image22.png)
 
-In questo esempio, queste icone consentono agli utenti di visualizzare l'effetto delle proprie funzionalità.
+In questo esempio queste icone consentono agli utenti di visualizzare l'effetto delle funzionalità.
 
--   **Utilizzare un'icona nelle finestre di dialogo informazioni per la personalizzazione dell'applicazione.**
+-   **Usare un'icona nelle finestre di dialogo About Box per la personalizzazione dell'applicazione.**
 
-![screenshot della finestra di dialogo informazioni su con logo Windows ](images/win-dialog-box-image23.png)
+![Screenshot della finestra di dialogo Informazioni su con il logo di Windows ](images/win-dialog-box-image23.png)
 
-In questo esempio viene usata una bitmap nella casella About (informazioni) per identificare e personalizzare l'applicazione.
+In questo esempio viene usata una bitmap nella casella Informazioni su per identificare e modificare l'applicazione.
 
-**Icone a piè di pagina**
+**Icone delle note a piè di pagina**
 
--   **Se si dispone di una nota a piè di pagina, provare a usare un'icona a piè di pagina per riepilogare l'oggetto della nota.**
+-   **Se si dispone di una nota a piè di pagina, è consigliabile usare un'icona a piè di pagina per riepilogare l'oggetto della nota.**
 
-![screenshot della finestra di dialogo con icona a piè di pagina ](images/win-dialog-box-image24.png)
+![Screenshot della finestra di dialogo con l'icona della nota a piè di pagina ](images/win-dialog-box-image24.png)
 
-In questo esempio, l'icona a piè di pagina indica che la domanda presenta implicazioni di sicurezza.
+In questo esempio l'icona della nota a piè di pagina indica che la domanda ha implicazioni per la sicurezza.
 
--   **Non usare un'icona a piè di pagina che ripete l'icona del corpo.**
--   **Non usare le icone degli errori o delle informazioni standard.** Le condizioni di errore devono essere trasmesse attraverso l'icona del corpo e le note a piè di pagina sono sempre per informazioni, rendendo ridondante l'icona delle informazioni. Tuttavia, è possibile usare l'icona di avviso standard e lo scudo di sicurezza giallo per segnalare agli utenti le conseguenze rischiose.
+-   **Non usare un'icona di nota a piè di pagina che ripete l'icona del corpo.**
+-   **Non usare le icone standard relative a errori o informazioni.** Le condizioni di errore devono essere comunicate tramite l'icona del corpo e le note a piè di pagina sono sempre a forma di informazioni, rendendo ridondante l'icona delle informazioni. Tuttavia, è possibile usare l'icona di avviso standard e lo shield di sicurezza giallo per avvisare gli utenti di conseguenze rischiose.
 
-Per ulteriori informazioni ed esempi, vedere [Icone](vis-icons.md).
+Per altre informazioni ed esempi, vedere [Icone.](vis-icons.md)
 
 ### <a name="commit-buttons"></a>Pulsanti di commit
 
 **Note:**
 
--   Queste linee guida non si applicano ai dialoghi delle domande usando i collegamenti ai comandi, perché tale modello usa i collegamenti al comando anziché i pulsanti.
--   \[Eseguire questa operazione \] e \[ non eseguire \] le risposte in modo positivo e negativo, rispettivamente, all'istruzione principale.
+-   Queste linee guida non si applicano alle finestre di dialogo delle domande usando i collegamenti ai comandi, perché questo modello usa collegamenti di comando anziché pulsanti.
+-   \[Eseguire questa operazione e non eseguire questa operazione sono rispettivamente risposte affermative e negative \] \[ \] all'istruzione principale.
 
 **Generale**
 
--   **Scegliere i pulsanti commit in base al modello di progettazione:**
+-   **Scegliere i pulsanti di commit in base al modello di progettazione:**
 
     <table>
     <colgroup>
@@ -469,27 +468,27 @@ Per ulteriori informazioni ed esempi, vedere [Icone](vis-icons.md).
     <td><strong>Pulsanti di commit</strong><br/></td>
     </tr>
     <tr class="even">
-    <td><strong>Finestre di dialogo delle domande (usando i pulsanti)</strong><br/></td>
-    <td>Uno dei seguenti set di comandi concisi: Yes/No, Yes/No/Cancel, [do it]/Cancel, [do it]/[not do it], [do it]/[not do it]/Cancel.<br/></td>
+    <td><strong>Finestre di dialogo domanda (con pulsanti)</strong><br/></td>
+    <td>Uno dei seguenti set di comandi concisi: Yes/No, Yes/No/Cancel, [Do it]/Cancel, [Do it]/[Don't do it], [Do it]/[Don't do it]/[Don't do it]/Cancel.<br/></td>
     </tr>
     <tr class="odd">
-    <td><strong>Finestre di dialogo delle domande (usando i collegamenti)</strong><br/></td>
+    <td><strong>Finestre di dialogo per le domande (tramite collegamenti)</strong><br/></td>
     <td>Annulla.<br/></td>
     </tr>
     <tr class="even">
-    <td><strong>Finestre di dialogo scelte</strong><br/></td>
+    <td><strong>Finestre di dialogo di scelta</strong><br/></td>
     <td><ul>
-    <li>Finestre di dialogo modali: OK/Annulla o [do it]/Cancel</li>
+    <li>Finestre di dialogo modali: OK/Annulla o [Sì]/Annulla</li>
     <li>Finestre di dialogo non modali: pulsante Chiudi nella finestra di dialogo e nella barra del titolo</li>
     <li>Riquadro attività: pulsante Chiudi sulla barra del titolo</li>
     </ul></td>
     </tr>
     <tr class="odd">
     <td><strong>Finestre di dialogo di stato</strong><br/></td>
-    <td>Usare Annulla se restituisce l'ambiente allo stato precedente (senza effetto collaterale); in caso contrario, utilizzare Interrompi.<br/></td>
+    <td>Usare Cancel se riporta l'ambiente allo stato precedente (senza alcun effetto collaterale); In caso contrario, usare Stop.<br/></td>
     </tr>
     <tr class="even">
-    <td><strong>Finestre di dialogo informative</strong><br/></td>
+    <td><strong>Dialoghe in formato informativo</strong><br/></td>
     <td>Quasi.<br/></td>
     </tr>
     </tbody>
@@ -499,459 +498,459 @@ Per ulteriori informazioni ed esempi, vedere [Icone](vis-icons.md).
 
      
 
--   **Tutti i pulsanti commit eccetto Apply determinano la chiusura della finestra di dialogo.**
--   **Non confermare i pulsanti di commit.** Questa operazione inutilmente può essere molto fastidiosa. **Eccezioni**
+-   **Tutti i pulsanti di commit tranne Applica comportano la chiusura della finestra di dialogo.**
+-   **Non confermare i pulsanti di commit.** Inutilmente, questa operazione può essere molto fastidiosa. **Eccezioni:**
 
     -   L'azione è potenzialmente catastrofica.
     -   L'azione è chiaramente incoerente con altre azioni.
     -   Se non è corretta, l'azione può comportare una perdita significativa di dati, tempo o impegno per conto dell'utente.
 
-    Per altre linee guida ed esempi, vedere [conferme](mess-confirm.md).
+    Per altre linee guida ed esempi, vedere [Conferme](mess-confirm.md).
 
--   **Non disabilitare i pulsanti di commit. Eccezioni**
-    -   **Se gli utenti devono elevare per apportare una modifica, disabilitare i pulsanti di commit positivi fino a quando l'utente non apporta una modifica.** In questo modo si impedisce agli utenti di elevare solo la chiusura di una finestra forzando il clic su Annulla.
-    -   Per ulteriori eccezioni, vedere la pagina relativa alla [disabilitazione o alla rimozione di controlli rispetto a messaggi di errore](#disabling-or-removing-controls-vs-giving-error-messages).
--   **Allinea a destra i pulsanti di commit in una singola riga nella parte inferiore della finestra di dialogo,** ma sopra l'area della nota. Eseguire questa operazione anche se è presente un singolo pulsante di commit (ad esempio OK).
+-   **Non disabilitare i pulsanti di commit. Eccezioni:**
+    -   **Se gli utenti devono elevare il livello per apportare una modifica, disabilitare i pulsanti di commit positivo fino a quando l'utente non apporta una modifica.** In questo modo si impedisce agli utenti di elevare solo per chiudere una finestra forzandoli a fare clic su Annulla.
+    -   Per altre eccezioni, vedere [Disabilitazione o rimozione di controlli e invio di messaggi di errore.](#disabling-or-removing-controls-vs-giving-error-messages)
+-   **Allineare a destra i pulsanti di commit in una singola riga nella parte** inferiore della finestra di dialogo, ma sopra l'area della nota a piè di pagina. Eseguire questa operazione anche se è presente un solo pulsante di commit, ad esempio OK.
 
     **Non corretto:**
 
-    ![screenshot del messaggio con pulsante OK centrato ](images/win-dialog-box-image25.png)
+    ![Screenshot del messaggio con il pulsante OK centrato ](images/win-dialog-box-image25.png)
 
-    In questo esempio il pulsante OK non è centrato correttamente.
+    In questo esempio il pulsante OK viene centrato in modo errato.
 
--   **Presentare i pulsanti commit nell'ordine seguente:**
-    1.  OK/ \[ \] /Yes
-    2.  \[Non \] /No
+-   **Presentare i pulsanti di commit nell'ordine seguente:**
+    1.  OK/ \[ Eseguire \] l'operazione /Sì
+    2.  \[Non eseguire questa operazione \] /No
     3.  Annulla
     4.  Applica (se presente)
     5.  Guida (se presente)
--   **Se sono presenti molti pulsanti di commit correlati, consolidarli usando i pulsanti di divisione**.
--   **Avere una netta separazione dai pulsanti di commit (che chiudono la finestra) e da tutti gli altri pulsanti di comando (ad esempio Advanced).**
+-   **Se sono presenti molti pulsanti di commit correlati, consolidarli usando i pulsanti di divisione.**
+-   **Avere una netta separazione dai pulsanti di commit (che chiudono la finestra) e da tutti gli altri pulsanti di comando (ad esempio Avanzate).**
 
 **Risposta alle istruzioni principali**
 
--   **Usare i pulsanti di commit positivi che sono risposte specifiche all'istruzione principale, anziché etichette generiche, ad esempio OK o Sì/No.** Gli utenti devono essere in grado di comprendere le opzioni leggendo il testo del pulsante da solo. **Eccezioni**
-    -   Utilizzare Close per le finestre di dialogo che non dispongono di impostazioni, ad esempio le finestre di dialogo informative. Non usare mai Close per le finestre di dialogo con impostazioni.
-    -   Usare OK quando le risposte "specifiche" sono ancora generiche, ad esempio Save, SELECT o Choose. Utilizzare OK quando si modifica un'impostazione specifica o una raccolta di impostazioni.
-    -   **Per le finestre di dialogo legacy senza un'istruzione principale, è possibile utilizzare etichette generiche, ad esempio OK.** Spesso tali finestre di dialogo non sono progettate per eseguire un'attività specifica, impedendo risposte più specifiche.
-    -   Alcune attività richiedono un maggior numero di letture e una lettura attenta per consentire agli utenti di prendere decisioni informate. Questo è in genere il caso di [conferme](mess-confirm.md). **In questi casi, è possibile usare intenzionalmente le etichette dei pulsanti di commit generici per forzare gli utenti a leggere le istruzioni principali e a prevenire decisioni affrettate.**
+-   **Usare pulsanti di commit positivi che sono risposte specifiche all'istruzione principale, anziché etichette generiche come OK o Sì/No.** Gli utenti devono essere in grado di comprendere le opzioni leggendo solo il testo del pulsante. **Eccezioni:**
+    -   Usare Chiudi per le finestre di dialogo che non dispongono di impostazioni, ad esempio dialoghe in formato informativo. Non usare mai Chiudi per le finestre di dialogo con impostazioni.
+    -   Usare OK quando le risposte "specifiche" sono ancora generiche, ad esempio Salva, Seleziona o Scegli. Usare OK quando si modifica un'impostazione specifica o una raccolta di impostazioni.
+    -   **Per le finestre di dialogo legacy senza un'istruzione principale, è possibile usare etichette generiche, ad esempio OK.** Spesso tali finestre di dialogo non sono progettate per eseguire un'attività specifica, impedendo risposte più specifiche.
+    -   Alcune attività richiedono una lettura più attenta e più attenta per consentire agli utenti di prendere decisioni informate. Ciò avviene in genere con [le conferme](mess-confirm.md). **In questi casi, è possibile usare le etichette dei pulsanti di commit generiche per forzare gli utenti a leggere le istruzioni principali e a evitare decisioni rapide.**
 
         **Corretto:**
 
-        ![screenshot del messaggio con pulsanti Sì e no](images/win-dialog-box-image26.png)
+        ![Screenshot del messaggio con pulsanti Sì e No](images/win-dialog-box-image26.png)
 
-        In questo esempio, l'uso dei pulsanti Sì/no commit impone agli utenti di leggere almeno l'istruzione principale.
+        In questo esempio, l'uso dei pulsanti di commit Sì/No impone agli utenti di leggere almeno l'istruzione principale.
 
--   In **alternativa, è possibile aggiungere la parola "comunque" all'etichetta del pulsante di commit positivo per indicare che la finestra di dialogo presenta un motivo per non continuare** e che gli utenti devono leggere attentamente il dialogo prima di procedere.
-
-    **Corretto:**
-
-    ![screenshot del messaggio e pulsante Disinstalla comunque ](images/win-dialog-box-image27.png)
-
-    In questo esempio viene aggiunto "comunque" all'etichetta del pulsante commit per indicare che gli utenti devono procedere con cautela.
-
--   **Usare Annulla o Chiudi per i pulsanti di commit negativi anziché risposte specifiche all'istruzione principale.** Spesso gli utenti si rendono conto che non desiderano eseguire un'attività una volta visualizzata una finestra di dialogo. Se Cancel o Close sono stati rietichettati per risposte specifiche, gli utenti dovrebbero leggere attentamente tutti i pulsanti commit per determinare la modalità di annullamento. **L'assegnazione di etichette all'annullamento e alla chiusura li rende più facili da trovare. Eccezioni**
-    -   **Non usare Yes/Cancel.** Usare sempre Yes/No come coppia.
-    -   **Usare una risposta specifica quando l'annullamento è ambiguo.**
--   **Non eseguire il mapping di etichette generiche al significato specifico con il testo nell'area del contenuto.** Usare invece etichette di pulsanti di commit specifiche o una finestra di dialogo di domanda usando i collegamenti se le etichette sono lunghe.
-
-    **Non corretto:**
-
-    ![screenshot del messaggio con utilizzo non chiaro dei pulsanti ](images/win-dialog-box-image28.png)
-
-    In questo esempio, è stato eseguito il mapping di OK per continuare, viene eseguito il mapping dell'annullamento per rimanere nella pagina.
-
-**Pulsanti Sì e no**
-
--   **Preferisce risposte specifiche ai pulsanti Sì e no.** Sebbene non esistano problemi con l'uso di sì e No, le risposte specifiche possono essere interpretate più rapidamente, ottenendo un processo decisionale efficace. Tuttavia, le [conferme](mess-confirm.md) hanno in genere i pulsanti Sì e No per fare in [modo che gli](mess-confirm.md) utenti diano la conferma prima di rispondere.
--   **Usare i pulsanti Sì e no solo per rispondere alle domande sì o no.** L'istruzione principale deve essere naturalmente espressa come domanda sì o no. Non usare mai OK e Annulla per domande sì o no.
-
-    **Non corretto:**
-
-    ![Screenshot che mostra un messaggio con ' OK ' per una domanda sì-no.](images/win-dialog-box-image29.png)
+-   In alternativa, è possibile aggiungere la parola **"comunque"** all'etichetta del pulsante commit positivo per indicare che la finestra di dialogo presenta un motivo per non procedere e che gli utenti devono leggere attentamente la finestra di dialogo prima di procedere.
 
     **Corretto:**
 
-    ![screenshot del messaggio con Sì per la stessa domanda ](images/win-dialog-box-image30.png)
+    ![Screenshot del messaggio e pulsante Disinstalla comunque ](images/win-dialog-box-image27.png)
+
+    In questo esempio viene aggiunto "anyway" all'etichetta del pulsante commit per indicare che gli utenti devono procedere con attenzione.
+
+-   **Usare Annulla o Chiudi per i pulsanti di commit negativi anziché risposte specifiche all'istruzione principale.** Spesso gli utenti si rendono conto di non voler eseguire un'attività quando vedono una finestra di dialogo. Se Cancel o Close sono stati rietichettati in risposte specifiche, gli utenti devono leggere attentamente tutti i pulsanti di commit per determinare come annullare. **L'etichettatura Annulla e Chiudi li rende sempre più facili da trovare. Eccezioni:**
+    -   **Non usare Sì/Annulla.** Usare sempre Sì/No come coppia.
+    -   **Usare una risposta specifica quando Cancel è ambiguo.**
+-   **Non eseguire il mapping di etichette generiche al significato specifico con il testo nell'area del contenuto.** Usare invece etichette del pulsante di commit specifiche o una finestra di dialogo di domande usando collegamenti se le etichette sono lunghe.
+
+    **Non corretto:**
+
+    ![Screenshot del messaggio con un uso poco chiaro dei pulsanti ](images/win-dialog-box-image28.png)
+
+    In questo esempio viene eseguito il mapping di OK a Continua, Annulla viene mappato a Resta nella pagina.
+
+**Pulsanti Sì e No**
+
+-   **Preferire risposte specifiche ai pulsanti Sì e No.** Anche se non c'è nulla di sbagliato nell'uso di Sì e No, le risposte specifiche possono essere comprese più rapidamente, determinando un processo decisionale efficiente. Tuttavia, [le conferme](mess-confirm.md) in genere hanno pulsanti Sì e No per fare in modo che gli utenti diano alla conferma [un'idea prima](mess-confirm.md) di rispondere.
+-   **Usare i pulsanti Sì e No solo per rispondere a domande sì o no.** L'istruzione principale deve essere espressa naturalmente come una domanda sì o nessuna. Non usare mai OK e Annulla per domande sì o no.
+
+    **Non corretto:**
+
+    ![Screenshot che mostra un messaggio con un 'OK' per una domanda sì-no.](images/win-dialog-box-image29.png)
+
+    **Corretto:**
+
+    ![Screenshot del messaggio con sì per la stessa domanda ](images/win-dialog-box-image30.png)
 
     **Migliore:**
 
-    ![screenshot del messaggio con esecuzione per la stessa domanda ](images/win-dialog-box-image31.png)
+    ![Screenshot del messaggio con l'esecuzione per la stessa domanda ](images/win-dialog-box-image31.png)
 
-    In questi esempi, sì e no sono risposte ottimali a Sì e a nessuna domanda, ma le risposte specifiche sono ancora migliori.
+    In questi esempi, Sì e No sono risposte buone a domande sì e no, ma risposte specifiche sono ancora migliori.
 
--   **Provare a formulare l'istruzione principale come una domanda sì o no se i pulsanti di commit con una formulazione specifica si rivolgono a lunghe o scomode.** In alternativa, è possibile usare i collegamenti ai comandi per risposte più lunghe (cinque parole o più) all'istruzione principale.
+-   **Valutare la formulazione dell'istruzione principale come una domanda sì o nessuna se i pulsanti di commit con formulazione specifica sono lunghi o difficili.** In alternativa, è possibile usare i collegamenti di comando per risposte più lunghe (cinque parole o più) all'istruzione principale.
 
     **Non corretto:**
 
-    ![screenshot del messaggio con etichette dei pulsanti di Wordy ](images/win-dialog-box-image32.png)
+    ![Screenshot del messaggio con le etichette dei pulsanti wordy ](images/win-dialog-box-image32.png)
 
     **Corretto:**
 
-    ![screenshot del messaggio con etichette dei pulsanti Sì/No ](images/win-dialog-box-image33.png)
+    ![Screenshot del messaggio con etichette di pulsante Sì/No ](images/win-dialog-box-image33.png)
 
-    Il formulazione specifica nell'esempio errato è troppo lungo, quindi nell'esempio corretto viene usato Yes e no.
+    La formulazione specifica nell'esempio non corretto è troppo lunga, quindi l'esempio corretto usa Sì e No.
 
--   **Non usare i pulsanti Sì e no se il significato di nessuna risposta non è chiaro.** In caso affermativo, usare invece risposte specifiche.
+-   **Non usare i pulsanti Sì e No se il significato della risposta No non è chiaro.** In caso contrario, usare risposte specifiche.
 
 **Pulsanti OK**
 
--   **Nelle finestre di dialogo modali fare clic su OK per applicare i valori, eseguire l'attività e chiudere la finestra.**
+-   **Nelle finestre di dialogo modali, fare clic su OK significa applicare i valori, eseguire l'attività e chiudere la finestra.**
 -   **Non usare i pulsanti OK per rispondere alle domande.**
--   **Non assegnare chiavi di accesso a OK, perché immettere è la chiave di accesso per il pulsante predefinito.** In questo modo le altre chiavi di accesso risultano più semplici da assegnare.
--   **Etichetta OK pulsanti corretti.** Il pulsante OK dovrebbe essere etichettato OK, non OK o OK.
--   **Non usare i pulsanti OK per gli errori o gli avvisi.** I problemi non sono mai OK. In alternativa, utilizzare Close.
+-   **Non assegnare le chiavi di accesso a OK, perché INVIO è la chiave di accesso per il pulsante predefinito.** In questo modo le altre chiavi di accesso sono più facili da assegnare.
+-   **Etichettare correttamente i pulsanti OK.** Il pulsante OK deve essere etichettato come OK, non ok o Ok.
+-   **Non usare i pulsanti OK per errori o avvisi.** I problemi non sono mai OK. In alternativa, usare Close.
 
     **Non corretto:**
 
-    ![screenshot del messaggio con il pulsante OK ](images/win-dialog-box-image34.png)
+    ![Screenshot del messaggio con il pulsante OK ](images/win-dialog-box-image34.png)
 
-    In questo esempio, è necessario utilizzare Close anziché OK.
+    In questo esempio è necessario usare Close anziché OK.
 
--   **Non usare i pulsanti OK nelle finestre di dialogo non modali.** Piuttosto, le finestre di dialogo non modali devono usare pulsanti di commit specifici dell'attività, ad esempio find. Tuttavia, alcune finestre di dialogo non modali richiedono solo un pulsante Chiudi.
+-   **Non usare i pulsanti OK nelle finestre di dialogo non modali.** Le finestre di dialogo non modali devono invece usare pulsanti di commit specifici dell'attività, ad esempio Trova. Tuttavia, alcune finestre di dialogo non modali richiedono solo un pulsante Chiudi.
 
 **Pulsanti Annulla**
 
--   **Se si fa clic su Annulla, vengono ignorate tutte le modifiche, si annulla l'attività, si chiude la finestra e si ripristina lo stato precedente dell'ambiente, senza alcun effetto collaterale.** Per le finestre di dialogo di selezione nidificata, facendo clic su Annulla nella finestra di dialogo di scelta del proprietario si abbandonano anche le modifiche apportate dalle finestre di dialogo di proprietà
--   **Fornire un pulsante Annulla per consentire agli utenti di abbandonare in modo esplicito le modifiche.** Per le finestre di dialogo è necessario un punto di uscita chiaro. Non dipendere dagli utenti che trovano il pulsante Chiudi sulla barra del titolo.
+-   **Fare clic su Annulla significa abbandonare tutte le modifiche, annullare l'attività, chiudere la finestra e ripristinare lo stato precedente dell'ambiente, senza alcun effetto collaterale.** Per le finestre di dialogo di scelta annidate, se si fa clic su Annulla nella finestra di dialogo di scelta del proprietario, vengono abbandonate anche le modifiche apportate dalle finestre di dialogo di scelta di proprietà.
+-   **Specificare un pulsante Annulla per consentire agli utenti di abbandonare le modifiche in modo esplicito.** Le finestre di dialogo necessitano di un punto di uscita chiaro. Non dipendere dal fatto che gli utenti trovino il pulsante Chiudi sulla barra del titolo.
 
-    -   **Eccezione:** Non specificare un pulsante Annulla per le finestre di dialogo senza impostazioni. In questo caso i pulsanti OK e Chiudi hanno lo stesso effetto di Annulla.
+    -   **Eccezione:** Non specificare un pulsante Annulla per le finestre di dialogo senza impostazioni. I pulsanti OK e Chiudi hanno lo stesso effetto di Annulla in questo caso.
 
     **Non corretto:**
 
-    ![screenshot del messaggio con solo pulsante OK ](images/win-dialog-box-image35.png)
+    ![Screenshot del messaggio solo con il pulsante OK ](images/win-dialog-box-image35.png)
 
-    In questo esempio, se si dispone solo di un pulsante Chiudi sulla barra del titolo, viene visualizzato come se gli utenti non hanno una scelta.
+    In questo esempio, se sulla barra del titolo è presente solo un pulsante Chiudi, viene visualizzato come se gli utenti non fossero autorizzati a scegliere.
 
 -   **Non usare i pulsanti Annulla per rispondere alle domande.**
 
     **Non corretto:**
 
-    ![screenshot del messaggio con OK per Sì, nessuna domanda ](images/win-dialog-box-image36.png)
+    ![screenshot del messaggio con ok per una domanda sì-no ](images/win-dialog-box-image36.png)
 
-    In questo esempio OK e Annulla vengono erroneamente usati per rispondere a una domanda sì o no.
+    In questo esempio, OK e Annulla vengono usati in modo errato per rispondere a una domanda Sì o No.
 
--   **Non assegnare chiavi di accesso per l'annullamento, perché ESC è il tasto di accesso.** In questo modo le altre chiavi di accesso risultano più semplici da assegnare.
+-   **Non assegnare le chiavi di accesso a Annulla, perché ESC è la chiave di accesso.** In questo modo le altre chiavi di accesso sono più facili da assegnare.
 -   **Non usare i pulsanti Annulla nelle finestre di dialogo non modali.** Usare invece Close.
 -   **Non disabilitare il pulsante Annulla.** Gli utenti devono essere sempre in grado di annullare le finestre di dialogo.
-    -   **Eccezione:** È possibile disabilitare il pulsante Annulla in una finestra di dialogo di stato se si verifica un periodo durante il quale l'operazione non può essere annullata. Tuttavia, una soluzione migliore consiste nel progettare tali operazioni in modo da essere sempre annullabili.
+    -   **Eccezione:** È possibile disabilitare il pulsante Annulla in una finestra di dialogo di stato se è presente un periodo durante il quale l'operazione non può essere annullata. Tuttavia, una soluzione migliore consiste nel progettare tali operazioni in modo che siano sempre annullabili.
 
-**Chiudi pulsanti**
+**Pulsanti chiudi**
 
--   **Usare i pulsanti Chiudi per le finestre di dialogo non modali, nonché le finestre di dialogo modali che non possono essere annullate.**
--   **Se si fa clic su Chiudi si chiude la finestra di dialogo, lasciando gli effetti collaterali esistenti.** Non usare done perché non è una costruzione imperativa. Per le finestre di dialogo di selezione nidificata, facendo clic su Chiudi nella finestra di dialogo scelta proprietario viene mantenuta qualsiasi modifica apportata dalle finestre di dialogo di proprietà
--   **Inserire un pulsante Chiudi esplicito nel corpo della finestra di dialogo.** Per le finestre di dialogo è necessario un punto di uscita chiaro. Non dipendere dagli utenti che trovano il pulsante Chiudi sulla barra del titolo.
--   **Verificare che il pulsante Chiudi sulla barra del titolo abbia lo stesso effetto di Annulla o Chiudi.**
--   **Non assegnare chiavi di accesso per chiudere, perché ESC è la chiave di accesso.** In questo modo le altre chiavi di accesso risultano più semplici da assegnare.
+-   **Usare i pulsanti Chiudi per le finestre di dialogo non modali, nonché per le finestre di dialogo modali che non possono essere annullate.**
+-   **Fare clic su Chiudi per chiudere la finestra di dialogo, lasciando eventuali effetti collaterali esistenti.** Non usare Done perché non è una costruzione imperativa. Per le finestre di dialogo di scelta annidate, se si fa clic su Chiudi nella finestra di dialogo di scelta del proprietario, tutte le modifiche apportate dalle finestre di dialogo di scelta di proprietà vengono mantenute.
+-   **Inserire un pulsante Chiudi esplicito nel corpo della finestra di dialogo.** Le finestre di dialogo necessitano di un punto di uscita chiaro. Non dipendere dal fatto che gli utenti trovino il pulsante Chiudi sulla barra del titolo.
+-   **Assicurarsi che il pulsante Chiudi sulla barra del titolo abbia lo stesso effetto di Annulla o Chiudi.**
+-   **Non assegnare chiavi di accesso a Chiudi, perché ESC è la chiave di accesso.** In questo modo le altre chiavi di accesso sono più facili da assegnare.
 
-**Pulsanti applica**
+**Applicare i pulsanti**
 
--   **Non usare pulsanti applica nelle finestre di dialogo che non sono finestre delle proprietà o pannelli di controllo.** Il pulsante Applica significa applicare le modifiche in sospeso, ma lasciare aperta la finestra. Questa operazione consente agli utenti di valutare le modifiche prima di chiudere la finestra. Tuttavia, solo la finestra delle proprietà e i pannelli di controllo hanno questa esigenza.
+-   **Non usare i pulsanti Applica nelle finestre di dialogo che non sono finestre delle proprietà o pannelli di controllo.** Il pulsante Applica significa applicare le modifiche in sospeso, ma lasciare aperta la finestra. In questo modo gli utenti possono valutare le modifiche prima di chiudere la finestra. Tuttavia, solo la finestra delle proprietà e i pannelli di controllo hanno questa esigenza.
 
     **Non corretto:**
 
-    ![screenshot della finestra di dialogo con il pulsante applica ](images/win-dialog-box-image37.png)
+    ![Screenshot della finestra di dialogo con il pulsante Applica ](images/win-dialog-box-image37.png)
 
-    In questo esempio, una finestra di dialogo di scelta ha inutilmente un pulsante Applica.
+    In questo esempio, una finestra di dialogo di scelta include in modo inutile un pulsante Applica.
 
 **Pulsanti di commit per le finestre di dialogo indirette**
 
-**Nota:** Le finestre di dialogo indirette vengono visualizzate fuori contesto, come risultato indiretto di un'attività o il risultato di un problema con un processo di sistema o in background. Per le finestre di dialogo indirette, il pulsante Annulla è ambiguo perché potrebbe significare annullare la finestra di dialogo o annullare l'intera attività.
+**Nota:** Le finestre di dialogo indirette vengono visualizzate fuori contesto, come risultato indiretto di un'attività o come risultato di un problema con un processo di sistema o in background. Per le finestre di dialogo indirette, il pulsante Annulla è ambiguo perché potrebbe significare annullare la finestra di dialogo o annullare l'intera attività.
 
--   **Se gli utenti devono annullare la finestra di dialogo e l'attività, assegnare i pulsanti commit per eseguire entrambe le operazioni.** Etichetta il pulsante che annulla la finestra di dialogo con una risposta negativa all'istruzione principale. Etichetta il pulsante che annulla l'intera attività con Annulla. Con Annulla è possibile utilizzare la finestra di dialogo in molti contesti.
+-   **Se gli utenti devono annullare sia la finestra di dialogo che l'attività, assegnare i pulsanti di commit per eseguire entrambe le operazioni.** Etichettare il pulsante che annulla la finestra di dialogo con una risposta negativa all'istruzione principale. Etichettare il pulsante che annulla l'intera attività con Annulla. L'uso di Annulla consente di utilizzare la finestra di dialogo in molti contesti.
 
     **Corretto:**
 
-    ![screenshot della finestra di dialogo con Save/not save ](images/win-dialog-box-image38.png)
+    ![Screenshot della finestra di dialogo con salva/non salva ](images/win-dialog-box-image38.png)
 
-    In questo esempio, questa finestra di dialogo viene visualizzata da Windows Paint come risultato di un comando New o Exit quando il grafico non è stato salvato. Non salvare chiude la finestra di dialogo senza salvare, mentre Annulla Annulla il comando nuovo o Esci.
+    In questo esempio questa finestra di dialogo viene visualizzata da Windows Paint come risultato di un comando New o Exit quando l'elemento grafico non è stato salvato. Non salvare chiude la finestra di dialogo senza salvarla, mentre Annulla annulla il comando Nuovo o Esci.
 
     **Non corretto:**
 
-    ![screenshot della finestra di dialogo con i pulsanti Sì/No ](images/win-dialog-box-image39.png)
+    ![Screenshot della finestra di dialogo con pulsanti Sì/No ](images/win-dialog-box-image39.png)
 
-    In questo esempio, non è possibile annullare l'attività (chiudendo la barra dei collegamenti dell'ufficio) che ha portato a visualizzare questa finestra di dialogo. Per questa finestra di dialogo è necessario un pulsante Annulla.
+    In questo esempio non è possibile annullare l'attività (chiusura della barra dei collegamenti di Office) che ha portato alla visualizzazione di questa finestra di dialogo. Per questa finestra di dialogo è necessario un pulsante Annulla.
 
--   **Se gli utenti devono semplicemente annullare la finestra di dialogo, ma non l'attività, utilizzare un pulsante con una risposta specifica negativa all'istruzione principale** e non avere un pulsante Annulla.
+-   **Se gli utenti devono semplicemente** annullare la finestra di dialogo ma non l'attività, usare un pulsante con una risposta negativa specifica all'istruzione principale e non avere un pulsante Annulla.
 
-    ![screenshot della finestra di dialogo con esecuzione/non esecuzione ](images/win-dialog-box-image24.png)
+    ![Screenshot della finestra di dialogo con run/don't run ](images/win-dialog-box-image24.png)
 
-    In questo esempio, questa finestra di dialogo viene visualizzata indirettamente come risultato della navigazione a una pagina Web in cui viene installato un controllo ActiveX. L'uso di Cancel è ambiguo, quindi non viene utilizzato.
+    In questo esempio questa finestra di dialogo viene visualizzata indirettamente come risultato del passaggio a una pagina Web che installa un controllo ActiveX. In questo caso l'uso di Cancel sarebbe ambiguo, quindi viene usato Don't run (Non eseguire).
 
-Per ulteriori informazioni ed esempi, vedere [pulsanti di comando](ctrl-command-buttons.md).
+Per altre informazioni ed esempi, vedere [Pulsanti di comando.](ctrl-command-buttons.md)
 
-### <a name="command-links"></a>Collegamenti ai comandi
+### <a name="command-links"></a>Collegamenti di comando
 
--   **Presentare un set di comandi lunghi usando i collegamenti ai comandi, invece dei pulsanti di comando o una combinazione di pulsanti di opzione e un pulsante OK.** Questa operazione consente agli utenti di rispondere con un solo clic. Tuttavia, questo approccio funziona solo per una singola domanda.
--   **Presentare prima i collegamenti ai comandi usati più di frequente.** L'ordine risultante dovrebbe approssimativamente rispettare la probabilità di utilizzo, ma anche un flusso logico.
-    -   **Eccezione:** I collegamenti ai comandi che comportano l'operazione devono essere inseriti per primi.
--   Se un collegamento al comando richiede un'ulteriore spiegazione, **fornire una spiegazione aggiuntiva.** Le spiegazioni aggiuntive descrivono perché gli utenti potrebbero voler scegliere il comando o cosa accade se si sceglie il comando.
--   **Non usare spiegazioni aggiuntive che siano riformulazioni di testo del collegamento del comando.** Usare una spiegazione aggiuntiva solo quando non è possibile rendere il collegamento di un comando di chiara interpretazione. Fornire una spiegazione aggiuntiva per un collegamento al comando non significa che è necessario fornirli per tutti i comandi.
+-   **Presentare un set di comandi lunghi usando i collegamenti di comando, anziché pulsanti di comando o una combinazione di pulsanti di opzione e un pulsante OK.** In questo modo gli utenti possono rispondere con un solo clic. Tuttavia, questo approccio funziona solo per una singola domanda.
+-   **Presentare prima i collegamenti ai comandi usati più di frequente.** L'ordine risultante deve seguire approssimativamente la probabilità di utilizzo, ma avere anche un flusso logico.
+    -   **Eccezione:** I collegamenti di comando che comportano l'esecuzione di tutti gli elementi devono essere posizionati per primi.
+-   Se un collegamento al comando richiede un'ulteriore spiegazione, **fornire una spiegazione supplementare.** Le spiegazioni supplementari descrivono il motivo per cui gli utenti potrebbero voler scegliere il comando o cosa accade se si sceglie il comando.
+-   **Non usare spiegazioni supplementari che siano rielevazioni di parole del collegamento al comando.** Usare una spiegazione supplementare solo quando non è possibile rendere un collegamento di comando di auto-spiegazione. Fornire una spiegazione supplementare per un collegamento di comando non significa che è necessario specificarli per tutti i comandi.
 
-![screenshot della finestra di dialogo con le opzioni di annotazione del testo ](images/win-dialog-box-image40.png)
+![Screenshot della finestra di dialogo con opzioni di notazione del testo ](images/win-dialog-box-image40.png)
 
 In questo esempio la spiegazione supplementare descrive le implicazioni di una delle opzioni.
 
--   **Utilizzare frasi che iniziano con un verbo, senza la punteggiatura finale.**
--   **Se si consiglia di usare un comando, è consigliabile aggiungere "(scelta consigliata)" all'etichetta.** Assicurarsi di aggiungere all'etichetta di collegamento, non la spiegazione aggiuntiva.
--   **Se un comando è destinato solo agli utenti avanzati, è consigliabile aggiungere "(Advanced)" all'etichetta.** Assicurarsi di aggiungere all'etichetta di collegamento, non la spiegazione aggiuntiva.
--   **Fornire sempre un pulsante Annulla esplicito**. Non usare un collegamento di comando a questo scopo.
+-   **Usare frasi che iniziano con un verbo, senza terminare la punteggiatura.**
+-   **Se un comando è fortemente consigliato, è consigliabile aggiungere "(consigliato)" all'etichetta.** Assicurarsi di aggiungere all'etichetta del collegamento, non la spiegazione supplementare.
+-   **Se un comando è destinato solo agli utenti avanzati, è consigliabile aggiungere "(advanced)" all'etichetta.** Assicurarsi di aggiungere all'etichetta del collegamento, non la spiegazione supplementare.
+-   **Specificare sempre un pulsante Annulla esplicito.** Non usare un collegamento di comando a questo scopo.
 
 **Non corretto:**
 
-![screenshot della finestra di dialogo con il collegamento non uscire ](images/win-dialog-box-image41.png)
+![Screenshot della finestra di dialogo con il collegamento Non uscire ](images/win-dialog-box-image41.png)
 
-In questo esempio, nella finestra di dialogo viene utilizzato un collegamento al comando anziché un pulsante Annulla.
+In questo esempio la finestra di dialogo usa un collegamento di comando anziché un pulsante Annulla.
 
-Per ulteriori informazioni ed esempi, vedere [collegamenti ai comandi](ctrl-command-links.md).
+Per altre informazioni ed esempi, vedere [Collegamenti ai comandi.](ctrl-command-links.md)
 
-### <a name="dont-show-this-item-again"></a>Non visualizzare <item> nuovo
+### <a name="dont-show-this-item-again"></a>Non visualizzare questo <item> di nuovo
 
--   **Provare a usare un'opzione non visualizzare <item> più questo messaggio per consentire agli utenti di disattivare una finestra di dialogo ricorrente, solo se non è disponibile un'alternativa migliore.** È sempre meglio visualizzare la finestra di dialogo se gli utenti ne hanno effettivamente bisogno o semplicemente eliminarla.
--   **Usare questa formulazione specifica Replace <item> con l'elemento specifico.** Ad esempio, non visualizzare più questo promemoria. Quando si fa riferimento a una finestra di dialogo in generale, usare non visualizzare più questo messaggio.
--   **Indica chiaramente quando verrà usato l'input dell'utente per i valori predefiniti futuri** aggiungendo la frase seguente nell'opzione: le selezioni verranno usate per impostazione predefinita in futuro.
--   **Non selezionare l'opzione per impostazione predefinita. Se la finestra di dialogo deve essere visualizzata una sola volta, eseguire questa operazione senza richiedere.** Non usare questa opzione come scusa per infastidire gli utenti per assicurarsi che il comportamento predefinito non sia fastidioso.
+-   **È consigliabile usare l'opzione Non visualizzare più questa opzione per consentire agli utenti di eliminare una finestra di dialogo ricorrente solo se non esiste <item> un'alternativa migliore.** È sempre meglio visualizzare la finestra di dialogo se gli utenti ne hanno effettivamente bisogno o semplicemente eliminarla in caso contrario.
+-   **Usare questa formulazione specifica sostituire <item> con l'elemento specifico.** Ad esempio, Non visualizzare più questo promemoria. Quando si fa riferimento a una finestra di dialogo in generale, usare Non visualizzare più questo messaggio.
+-   **Indicare chiaramente quando verrà usato l'input** dell'utente per i valori predefiniti futuri aggiungendo la frase seguente sotto l'opzione : Le selezioni verranno usate per impostazione predefinita in futuro.
+-   **Non selezionare l'opzione per impostazione predefinita. Se la finestra di dialogo deve essere effettivamente visualizzata una sola volta, eseguire questa operazione senza chiedere conferma.** Non usare questa opzione per infastidire gli utenti e assicurarsi che il comportamento predefinito non sia fastidioso.
 
 **Non corretto:**
 
-![screenshot del messaggio che richiede una domanda superflua ](images/win-dialog-box-image42.png)
+![screenshot del messaggio che pone domande non necessarie ](images/win-dialog-box-image42.png)
 
-In questo esempio, il messaggio deve essere visualizzato solo una volta. Non è necessario richiedere.
+In questo esempio il messaggio deve essere visualizzato una sola volta. Non è necessario chiedere.
 
--   **Rendere l'impostazione permanente in base ai singoli utenti.**
--   **Se gli utenti selezionano l'opzione e fanno clic su Annulla, questa opzione ha effetto.** Questa impostazione è una meta-opzione, quindi non segue il comportamento di annullamento standard di senza effetto collaterale. Si noti che se gli utenti non vogliono visualizzare la finestra di dialogo in futuro, è molto probabile che vogliano annullarla.
--   Se gli utenti potrebbero dover ripristinare queste finestre di dialogo, fornire un comando **Ripristina messaggi** nella finestra di dialogo Opzioni del programma.
+-   **Rendere persistente l'impostazione per ogni utente.**
+-   **Se gli utenti selezionano l'opzione e fa clic su Annulla, questa opzione ha effetto.** Questa impostazione è una meta-opzione, quindi non segue il comportamento standard annulla di non lasciare alcun effetto collaterale. Si noti che se gli utenti non vogliono visualizzare il dialogo in futuro, è probabile che vogliano annullarlo.
+-   Se gli utenti potrebbero dover ripristinare queste finestre di dialogo, specificare un **comando** Ripristina messaggi nella finestra di dialogo Opzioni del programma.
 
 ### <a name="ask-me-later"></a>Richiedi in seguito
 
--   Specificare questa opzione per ignorare una finestra di dialogo solo quando:
-    -   **La finestra di dialogo è indiretta**, quindi è probabile che gli utenti siano incentrati su un'altra attività.
-    -   **Gli utenti devono rispondere ma non immediatamente**, in modo che possano continuare a lavorare.
-    -   Per **la domanda è necessario un pensiero o un impegno sufficiente** , in modo che gli utenti possano prendere decisioni migliori in caso di maggiore tempo.
-    -   **La finestra di dialogo o l'opzione verrà visualizzata automaticamente in un secondo momento** , in modo che gli utenti vengano effettivamente richiesti in un secondo momento.
+-   Specificare questa opzione per chiudere una finestra di dialogo solo quando:
+    -   **La finestra di dialogo è indiretta,** pertanto è probabile che gli utenti siano incentrati su un'altra attività.
+    -   **Gli utenti devono rispondere, ma non immediatamente,** in modo che possano continuare a lavorare.
+    -   **La domanda richiede un impegno o un impegno sufficiente** in modo che gli utenti potrebbero prendere decisioni migliori se hanno più tempo.
+    -   **La finestra di dialogo o l'opzione verrà visualizzata automaticamente in un secondo momento,** in modo che gli utenti siano effettivamente invitati in un secondo momento.
 -   **Non corretto:**
--   ![screenshot del messaggio con l'opzione Richiedi più tardi ](images/win-dialog-box-image43.png)
--   In questo esempio, la domanda è abbastanza semplice che l'aggiunta di un'opzione Richiedi in seguito ne complica solo l'operazione.
--   In caso contrario, si prevede che gli utenti rispondano ora, ma consentono loro di chiudere la finestra di dialogo normalmente con Annulla o Chiudi. Se utilizzata correttamente, questa opzione dovrebbe essere rara.
+-   ![Screenshot del messaggio con l'opzione Chiedi conferma in un secondo momento ](images/win-dialog-box-image43.png)
+-   In questo esempio la domanda è abbastanza semplice da complicare solo l'aggiunta di un'opzione Chiedi in un secondo momento.
+-   In caso contrario, si prevede che gli utenti rispondano ora, ma consentono loro di chiudere normalmente la finestra di dialogo con Annulla o Chiudi. Se usata correttamente, questa opzione dovrebbe essere rara.
 
 ### <a name="morefewer"></a>Più o meno
 
--   **Usare pulsanti di divulgazione progressivi più o meno per mostrare o nascondere le opzioni, i comandi o i dettagli avanzati o usati raramente che gli utenti di destinazione non sono in genere necessari.** Questa operazione semplifica la finestra di dialogo per l'utilizzo tipico. Non nascondere le opzioni, i comandi o le informazioni utilizzate comunemente perché gli utenti potrebbero non trovarli.
+-   **Usare i pulsanti Diffusione progressiva più o meno per mostrare o nascondere opzioni, comandi o dettagli avanzati o usati raramente che in genere non sono necessari per gli utenti.** Questa operazione semplifica la finestra di dialogo per l'utilizzo tipico. Non nascondere opzioni, comandi o informazioni di uso comune perché gli utenti potrebbero non trovarle.
 
-![screenshot della finestra di dialogo con un pulsante altre opzioni ](images/win-dialog-box-image24.png)
+![Screenshot della finestra di dialogo con il pulsante Altre opzioni ](images/win-dialog-box-image24.png)
 
 In questo esempio le opzioni usate raramente sono nascoste per impostazione predefinita.
 
--   **Non usare controlli più o meno a meno che non ci siano più dettagli da mostrare.** Non solo riformulare le stesse informazioni in un formato diverso.
--   **Non usare più o meno controlli per visualizzare la guida.** Usare invece i collegamenti della guida o le note a piè di pagina.
--   **Con le finestre di dialogo delle attività, evitare di combinare un numero maggiore o minore di controlli con non visualizzare più questo messaggio <item> .** Questa combinazione ha un aspetto imbarazzante.
--   Per le linee guida sulle etichette, vedere [divulgazione progressiva](ctrl-progressive-disclosure-controls.md).
+-   **Non usare più o meno controlli a meno che non ci siano effettivamente più dettagli da visualizzare.** Non è sufficiente ripristinare le stesse informazioni in un formato diverso.
+-   **Non usare più o meno controlli per visualizzare la Guida.** Usare invece i collegamenti della Guida o le note a piè di pagina.
+-   **Con le finestre di dialogo delle attività, evitare di combinare più/meno controlli con Non visualizzare <item> più.** Questa combinazione ha un aspetto scomodo.
+-   Per le linee guida sull'etichettatura, vedere [Divulgazione progressiva](ctrl-progressive-disclosure-controls.md).
 
 ### <a name="footnotes"></a>Note a piè di pagina
 
--   **Utilizzare note a piè di pagina per informazioni non essenziali per lo scopo di una finestra di dialogo, ma che gli utenti potrebbero risultare utili per prendere decisioni.** La maggior parte degli utenti dovrebbe essere in grado di ignorare le note a piè di pagina e prendere decisioni informate nella risposta alla finestra di dialogo.
+-   **Usare le note a piè di pagina per informazioni non essenziali per lo scopo di una finestra di dialogo, ma che gli utenti possono risultare utili per prendere decisioni.** La maggior parte degli utenti deve essere in grado di ignorare le note a piè di pagina e prendere decisioni informate nella risposta alla finestra di dialogo.
 
-![screenshot della finestra di dialogo con chiarimenti a piè di pagina ](images/win-dialog-box-image44.png)
+![Screenshot della finestra di dialogo con nota a piè di pagina chiarificante ](images/win-dialog-box-image44.png)
 
-In questo esempio le informazioni sulla nota a piè di pagina sono supplementari, non essenziali.
+In questo esempio, le informazioni sulle note a piè di pagina sono supplementari, non essenziali.
 
-### <a name="disabling-or-removing-controls-vs-giving-error-messages"></a>Disabilitazione o rimozione di controlli e assegnazione di messaggi di errore
+### <a name="disabling-or-removing-controls-vs-giving-error-messages"></a>Disabilitazione o rimozione di controlli e invio di messaggi di errore
 
--   Quando un controllo non viene applicato nel contesto corrente, prendere in considerazione le opzioni seguenti:
-    -   **Rimuovere il controllo quando non esiste alcun modo per consentire agli utenti di abilitarlo oppure gli utenti non si aspettano che venga applicato e il suo stato non cambia di frequente.** Questa operazione semplifica la finestra di dialogo e gli utenti non lo perdono. La presenza di un controllo visualizzato e scompare spesso è fastidioso.
-    -   **Disabilitare il controllo quando gli utenti si aspettano che venga applicato o il suo stato viene modificato frequentemente e gli utenti possono facilmente dedurre il motivo per cui il controllo è disabilitato.** Un esempio di deduzione facile è la disabilitazione di un pulsante di commit quando è presente una sola casella di testo vuota che richiede input. È possibile usare i [palloni](ctrl-balloons.md) per visualizzare problemi di input utente non critici con caselle di testo ed elenchi a discesa modificabili. Tuttavia, se il problema non può essere spiegato con un fumetto o include più controlli, la deduzione non sarà più semplice.
-    -   **In caso contrario, lasciare il controllo abilitato, ma fornire un messaggio di errore quando viene usato in modo non corretto.** La disabilitazione in questo caso renderebbe difficile per gli utenti comprendere il motivo per cui il controllo è disabilitato. Gli utenti dovranno determinare il problema tramite la sperimentazione e la logica dedottiva. È preferibile solo fornire un messaggio di errore utile per spiegare in modo esplicito il problema.
--   **Suggerimento:** Se non si è certi che sia necessario disabilitare un controllo o fornire un messaggio di errore, iniziare componendo il messaggio di errore che si potrebbe assegnare. Se il messaggio di errore contiene informazioni utili che gli utenti di destinazione non possono dedurre rapidamente, lasciare il controllo abilitato e restituire l'errore. In caso contrario, disabilitare il controllo.
--   **Se si disabilita un controllo, disabilitare anche tutti i controlli associati**, ad esempio l'etichetta, le spiegazioni aggiuntive o i pulsanti di comando. Tuttavia, non disabilitare le relative [caselle di gruppo](ctrl-group-boxes.md), l'etichetta di gruppo o la spiegazione del gruppo, se presenti.
+-   Quando un controllo non si applica nel contesto corrente, prendere in considerazione le opzioni seguenti:
+    -   **Rimuovere il controllo quando gli utenti non possono abilitarlo o non si aspettano che si applivi e il relativo stato non cambi di frequente.** In questo modo la finestra di dialogo viene semplificata e gli utenti non la mancheranno. La visualizzazione e la scomparsa di un controllo spesso è fastidioso.
+    -   **Disabilitare il controllo quando gli utenti prevedono l'applicazione o il relativo stato cambia di frequente e gli utenti possono facilmente dedurre il motivo per cui il controllo è disabilitato.** Un esempio di facile deduzione è la disabilitazione di un pulsante di commit quando è presente una singola casella di testo vuota che richiede qualsiasi input. È possibile usare [i fumetto per](ctrl-balloons.md) visualizzare problemi di input utente non critici con le caselle di testo e gli elenchi a discesa modificabili. Tuttavia, se il problema non può essere spiegato con un fumetto o coinvolge più controlli, la deduzione non sarebbe più semplice.
+    -   **In caso contrario, lasciare il controllo abilitato, ma fornire un messaggio di errore quando viene usato in modo non corretto.** La disabilitazione in questo caso renderebbe difficile agli utenti comprendere il motivo per cui il controllo è disabilitato. Gli utenti saranno costretti a determinare il problema tramite la sperimentazione e la logica deducibile. È meglio solo fornire un messaggio di errore utile per spiegare il problema in modo esplicito.
+-   **Suggerimento:** Se non si è certi che sia necessario disabilitare un controllo o inviare un messaggio di errore, iniziare componendo il messaggio di errore che è possibile fornire. Se il messaggio di errore contiene informazioni utili che gli utenti di destinazione probabilmente non dedurranno rapidamente, lasciare il controllo abilitato e fornire l'errore. In caso contrario, disabilitare il controllo .
+-   **Se si disabilita un controllo, disabilitare anche tutti** i controlli associati, ad esempio l'etichetta, le spiegazioni supplementari o i pulsanti di comando. Tuttavia, non disabilitare le caselle [di gruppo,](ctrl-group-boxes.md)l'etichetta di gruppo o la spiegazione del gruppo, se presenti.
 
-![screenshot della finestra di dialogo con controlli in grigio ](images/win-dialog-box-image45.png)
+![Screenshot della finestra di dialogo con controlli in grigio ](images/win-dialog-box-image45.png)
 
-In questo esempio, anche le etichette della casella di testo disabilitate sono disabilitate, ma l'etichetta del gruppo e la spiegazione del gruppo non lo sono.
+In questo esempio, anche le etichette delle caselle di testo disabilitate sono disabilitate, ma non l'etichetta del gruppo e la spiegazione del gruppo.
 
 ### <a name="required-input"></a>Input richiesto
 
--   Per indicare che gli utenti devono fornire informazioni in un controllo, prendere in considerazione le opzioni seguenti:
-    -   **Non indicare alcun valore, ma è necessario gestire l'input mancante con i messaggi di errore.** Questo approccio riduce il disordine e funziona bene se la maggior parte degli input è facoltativa o se gli utenti non sono in grado di ignorare i controlli, mantenendo al minimo il numero di messaggi di errore.
-    -   **Indica l'input obbligatorio usando un asterisco all'inizio dell'etichetta.** Spiegare l'asterisco usando uno dei seguenti:
+-   Per indicare che gli utenti devono fornire informazioni in un controllo , considerare le opzioni seguenti:
+    -   **Non indicare nulla, ma gestire l'input obbligatorio mancante con messaggi di errore.** Questo approccio riduce l'ingombro e funziona bene se la maggior parte dell'input è facoltativa o se gli utenti non ignorano i controlli, mantenendo così basso il numero di messaggi di errore.
+    -   **Indicare l'input richiesto usando un asterisco all'inizio dell'etichetta.** Spiegare l'asterisco usando:
 
-        -   Una nota a piè di pagina nella parte inferiore dell'area di contenuto che indica un \* input obbligatorio.
-        -   Descrizione comando sull'asterisco che indica l'input richiesto.
+        -   Nota a piè di pagina nella parte inferiore dell'area del contenuto che indica \* Input obbligatorio.
+        -   Descrizione comando sull'asterisco che indica Input obbligatorio.
 
-        Questo approccio funziona bene se non sono presenti molti controlli necessari, ma è scarso se la maggior parte dei controlli è necessaria.
+        Questo approccio funziona bene se non sono presenti molti controlli obbligatori, ma in modo non utile se è necessaria la maggior parte dei controlli.
 
-        ![screenshot delle etichette delle caselle di testo con asterischi ](images/win-dialog-box-image46.png)
+        ![Screenshot delle etichette delle caselle di testo con asterischi ](images/win-dialog-box-image46.png)
 
-        In questo esempio, gli asterischi vengono usati per indicare l'input richiesto.
+        In questo esempio vengono usati asterischi per indicare l'input richiesto.
 
-    -   **Se tutti i controlli richiedono input, dichiarare "tutti gli input necessari" in una posizione appropriata nella parte superiore dell'area di contenuto.** Questo approccio riduce il disordine per questo caso specifico.
-    -   **Indica gli input facoltativi con "(facoltativo)" dopo l'etichetta.** Questo approccio funziona bene se la maggior parte degli input è obbligatoria, ma in caso contrario.
+    -   **Se tutti i controlli richiedono l'input, immettere "Tutti gli input necessari" in una posizione appropriata nella parte superiore dell'area del contenuto.** Questo approccio riduce l'ingombro per questo caso specifico.
+    -   **Indicare gli input facoltativi con "(facoltativo)" dopo l'etichetta.** Questo approccio funziona correttamente se la maggior parte dell'input è necessaria, ma in caso contrario non è così.
 
--   **Per coerenza, provare a usare lo stesso metodo per indicare l'input necessario per tutto il programma.** In particolare, indicare un input obbligatorio o facoltativo, in base alle esigenze, ma evitare di usare entrambi all'interno dello stesso programma.
+-   **Per coerenza, provare a usare lo stesso metodo per indicare l'input richiesto in tutto il programma.** In particolare, indicare l'input obbligatorio o facoltativo in base alle esigenze, ma evitare di usare entrambi all'interno dello stesso programma.
 
 ### <a name="error-handling"></a>Gestione degli errori
 
--   Evitare gli errori usando i controlli vincolati all'input utente valido. È anche possibile ridurre il numero di errori fornendo valori predefiniti ragionevoli.
--   Convalidare l'input utente il prima possibile e mostrare gli errori nel modo più appropriato possibile al punto di input.
--   **Usare la gestione degli errori non modale (errori sul posto o palloncini) per i problemi di input dell'utente.**
-    -   **Usare i palloni per i problemi di input utente singoli e non critici rilevati in una casella di testo o immediatamente dopo che una casella di testo perde lo stato attivo.** Le mongolfiere non richiedono lo spazio disponibile sullo schermo o il layout dinamico necessario per visualizzare i messaggi sul posto. Visualizzare solo un singolo fumetto alla volta. Poiché il problema non è critico, non è necessaria alcuna icona di errore. Quando si fa clic su un pallone, quando il problema viene risolto o dopo un timeout.
+-   Evitare gli errori usando controlli vincolati all'input utente valido. È anche possibile ridurre il numero di errori fornendo valori predefiniti ragionevoli.
+-   Convalidare l'input dell'utente appena possibile e visualizzare gli errori il più possibile in base al punto di input.
+-   **Usare la gestione degli errori non modali (errori sul posto o fumetto) per i problemi di input dell'utente.**
+    -   **Usare i palloncino per i problemi di input utente non critici rilevati in una casella di testo o immediatamente dopo che una casella di testo perde lo stato attivo.** I fumetto non richiedono lo spazio disponibile sullo schermo o il layout dinamico necessario per visualizzare i messaggi sul posto. Consente di visualizzare un solo fumetto alla volta. Poiché il problema non è critico, non è necessaria alcuna icona di errore. I palloncini vengono visualizzati quando si fa clic, quando il problema viene risolto o dopo un timeout.
 
-        ![screenshot del messaggio "carattere non corretto" ](images/win-dialog-box-image47.png)
+        ![Screenshot del messaggio "carattere non corretto" ](images/win-dialog-box-image47.png)
 
-        In questo esempio un fumetto indica un problema di input mentre è ancora nel controllo.
+        In questo esempio, un fumetto indica un problema di input mentre è ancora nel controllo .
 
--   **Usare errori sul posto per il rilevamento degli errori ritardati**, in genere errori trovati facendo clic su un pulsante di commit. Non usare errori sul posto per le impostazioni di cui viene immediatamente eseguito il commit. Possono essere presenti più errori sul posto alla volta. Usare il testo normale e un'icona di errore 16x16 pixel, inserendoli direttamente accanto al problema quando possibile. Gli errori sul posto non vengono rilevati a meno che l'utente non venga sottoposto a commit e non vengono rilevati altri errori.
+-   Usare gli errori sul posto per il rilevamento degli errori **ritardati,** in genere gli errori rilevati facendo clic su un pulsante di commit. Non usare errori sul posto per le impostazioni di cui viene eseguito immediatamente il commit. Possono essere presenti più errori sul posto contemporaneamente. Usare testo normale e un'icona di errore di 16x16 pixel, posizionandoli direttamente accanto al problema, quando possibile. Gli errori sul posto non vengono visualizzati a meno che l'utente non eserciti il commit e non vengano trovati altri errori.
 
-    ![screenshot della finestra di dialogo con due messaggi di errore ](images/win-dialog-box-image48.png)
+    ![Screenshot della finestra di dialogo con due messaggi di errore ](images/win-dialog-box-image48.png)
 
     In questo esempio viene usato un errore sul posto per un errore rilevato facendo clic sul pulsante commit.
 
--   **Utilizzare la gestione degli errori modale (finestre di dialogo delle attività o finestre di messaggio) per tutti gli altri problemi,** inclusi errori che coinvolgono più controlli, oppure errori non contestuale o non di input trovati facendo clic su un pulsante di commit.
--   **Quando viene rilevato e segnalato un problema di input, impostare lo stato attivo per l'input sul primo controllo con i dati non corretti.** Se necessario, scorrere il controllo nella visualizzazione.
+-   Usare la gestione degli errori modale (finestre di dialogo di attività o finestre di messaggio) per tutti gli altri **problemi,** inclusi gli errori che coinvolgono più controlli o sono errori non contestuali o non di input trovati facendo clic su un pulsante di commit.
+-   **Quando viene rilevato e segnalato un problema di input, impostare lo stato attivo per l'input sul primo controllo con i dati non corretti.** Scorrere il controllo nella visualizzazione, se necessario.
 
-Per ulteriori informazioni ed esempi, vedere [messaggi di errore](mess-error.md) e [palloncini](ctrl-balloons.md).
+Per altre informazioni ed esempi, vedere [Messaggi di errore](mess-error.md) e [balloon](ctrl-balloons.md).
 
 ### <a name="help"></a>Help
 
--   Quando si fornisce assistenza agli utenti, tenere presenti le seguenti opzioni (elencate nell'ordine di preferenza):
-    -   Assegnare etichette interattive ai controlli. È più probabile che gli utenti leggano le etichette sui controlli interattivi rispetto a qualsiasi altro testo.
-    -   Fornire spiegazioni nel contesto usando [etichette di testo statiche](text-ui.md).
-    -   Fornire un collegamento alla Guida specifico per un argomento della Guida pertinente.
--   **Individuare i collegamenti della guida nella parte inferiore dell'area del contenuto della finestra di dialogo.** Se nella finestra di dialogo è presente una nota a piè di pagina e il collegamento alla guida è correlato, inserire il collegamento alla guida nella nota.
+-   Quando si fornisce assistenza all'utente, considerare le opzioni seguenti (elencate nell'ordine di preferenza):
+    -   Assegnare etichette descrittive ai controlli interattivi. È più probabile che gli utenti leggono le etichette nei controlli interattivi rispetto a qualsiasi altro testo.
+    -   Fornire spiegazioni nel contesto usando etichette [di testo statiche.](text-ui.md)
+    -   Fornire un collegamento della Guida specifico a un argomento della Guida pertinente.
+-   **Individuare i collegamenti della Guida nella parte inferiore dell'area del contenuto della finestra di dialogo.** Se la finestra di dialogo contiene una nota a piè di pagina e il collegamento Guida è correlato, inserire il collegamento Guida all'interno della nota a piè di pagina.
 
-    ![screenshot della finestra di dialogo con collegamento alla guida ](images/win-dialog-box-image40.png)
+    ![Screenshot della finestra di dialogo con collegamento alla Guida ](images/win-dialog-box-image40.png)
 
-    In questo esempio, il collegamento alla guida si applica all'intera finestra di dialogo.
+    In questo esempio il collegamento Guida si applica all'intera finestra di dialogo.
 
-    -   **Eccezione:** Se una finestra di dialogo include diversi gruppi distinti di impostazioni che includono argomenti della guida separati (probabilmente all'interno di caselle di gruppo), individuare i collegamenti della guida nella parte inferiore dei gruppi.
+    -   **Eccezione:** Se in una finestra di dialogo sono presenti diversi gruppi distinti di impostazioni con argomenti della Guida separati,ad esempio all'interno di caselle di gruppo, individuare i collegamenti della Guida nella parte inferiore dei gruppi.
 
--   **Non usare collegamenti all'argomento della Guida generici o vaghi o pulsanti della Guida generici.** Spesso gli utenti ignorano la guida generica.
+-   **Non usare collegamenti a argomenti della Guida generici o generici o pulsanti generici della Guida.** Gli utenti spesso ignorano la Guida generica.
 
-Per ulteriori informazioni ed esempi, vedere la [Guida](winenv-help.md)di.
+Per altre informazioni ed esempi, vedere [la Guida](winenv-help.md).
 
 ### <a name="default-values"></a>Valori predefiniti
 
 -   Includere un pulsante di commit predefinito in ogni finestra di dialogo.
--   Per le finestre di dialogo della domanda:
-    -   **Selezionare il più sicuro (per evitare la perdita di dati o l'accesso al sistema), la risposta più sicura è l'impostazione predefinita.** Se la sicurezza e la sicurezza non sono fattori, selezionare la risposta più probabile o pratica.
-        -   **Eccezione:** Non creare una risposta distruttiva per impostazione predefinita, a meno che non esista un modo semplice e ovvio per annullare il comando.
--   Per le finestre di dialogo Choice:
-    -   Per i valori predefiniti iniziali, **selezionare il più sicuro (per evitare la perdita di dati o l'accesso al sistema) e la maggior parte dei valori sicuri per ogni controllo.** Se la sicurezza e la sicurezza non sono fattori, selezionare le opzioni più probabili o convenienti.
-    -   Per i valori predefiniti successivi, **selezionare nuovamente le opzioni selezionate in precedenza se è probabile che tali valori vengano ripetuti ed è sicuro e sicuro.** In caso contrario, selezionare i valori predefiniti iniziali.
+-   Per le finestre di dialogo delle domande:
+    -   **Selezionare la risposta più sicura (per evitare la perdita di dati o l'accesso al sistema), la risposta più sicura per essere l'impostazione predefinita.** Se la sicurezza e la sicurezza non sono fattori, selezionare la risposta più probabile o conveniente.
+        -   **Eccezione:** Non impostare una risposta distruttiva come predefinita, a meno che non sia disponibile un modo semplice ed ovvio per annullare il comando.
+-   Per le finestre di dialogo di scelta:
+    -   Per i valori predefiniti iniziali, selezionare i valori più sicuri (per evitare la perdita di dati o l'accesso al sistema) e la maggior parte dei valori **sicuri per ogni controllo.** Se la sicurezza e la sicurezza non sono fattori, selezionare le opzioni più probabili o convenienti.
+    -   Per i valori predefiniti successivi, selezionare di nuovo le opzioni selezionate in precedenza se è probabile che tali valori siano ripetuti e questa operazione **è sicura e sicura.** In caso contrario, selezionare i valori predefiniti iniziali.
 
-![screenshot della finestra di dialogo Stampa ](images/win-dialog-box-image49.png)
+![Screenshot della finestra di dialogo stampa ](images/win-dialog-box-image49.png)
 
-In questo esempio, è più probabile che gli utenti scelgano le stesse impostazioni di stampa dell'ultima volta. Tuttavia, è probabile che il numero di copie desiderate venga modificato, quindi questa impostazione non viene riselezionata.
+In questo esempio, è molto probabile che gli utenti scelgo le stesse impostazioni di stampa dell'ultima volta. Tuttavia, è probabile che il numero di copie desiderato cambi, quindi questa impostazione non viene riselezionata.
 
-## <a name="recommended-sizing-and-spacing&quot;></a>Ridimensionamento e spaziatura consigliati
+## <a name="recommended-sizing-and-spacing&quot;></a>Dimensioni e spaziatura consigliate
 
--   **Supporta la risoluzione minima dello schermo di Windows Vista di 800 x 600 pixel.** I layout possono essere ottimizzati per le finestre ridimensionabili con una risoluzione dello schermo di 1024 x 768 pixel.
--   **Usare le finestre ridimensionabili ogni volta che è possibile evitare le barre di scorrimento e i dati troncati.** Windows con contenuto dinamico ed elenchi sfrutta al meglio le finestre ridimensionabili.
--   **Le finestre a dimensione fissa devono essere completamente visibili e dimensionate per adattarsi all'area di lavoro.**
--   **Le finestre ridimensionabili possono essere ottimizzate per risoluzioni più elevate, ma ridimensionate in base alle esigenze in fase di visualizzazione per la risoluzione effettiva dello schermo.**
--   **Scegliere le dimensioni predefinite della finestra appropriate per il relativo contenuto.** Se è possibile utilizzare lo spazio in modo efficiente, non è necessario utilizzare dimensioni della finestra iniziale maggiori.
+-   **Supporta la risoluzione minima dello schermo di Windows Vista di 800 x 600 pixel.** I layout possono essere ottimizzati per le finestre ridimensionabili usando una risoluzione dello schermo di 1024 x 768 pixel.
+-   **Usare le finestre ridimensionabili ogni volta che è pratico per evitare barre di scorrimento e dati troncati.** Windows con contenuto dinamico ed elenchi trae il massimo vantaggio dalle finestre ridimensionabili.
+-   **Le finestre a dimensione fissa devono essere completamente visibili e ridimensionate per adattarsi all'interno dell'area di lavoro.**
+-   **Le finestre ridimensionabili possono essere ottimizzate per risoluzioni più elevate, ma ridimensionate in base alle esigenze in fase di visualizzazione fino alla risoluzione effettiva dello schermo.**
+-   **Scegliere le dimensioni predefinite della finestra appropriate per il contenuto.** Se è possibile usare lo spazio in modo efficace, non è necessario usare dimensioni di finestra iniziali maggiori.
 
 ## <a name=&quot;text&quot;></a>Testo
 
 ### <a name=&quot;general&quot;></a>Generale
 
--   **Rimuovere il testo ridondante.** Cercare il testo ridondante nei titoli, le istruzioni principali, le istruzioni aggiuntive, le aree di contenuto, i collegamenti ai comandi e i pulsanti di commit. In genere, lasciare il testo completo nelle istruzioni e nei controlli interattivi e rimuovere qualsiasi ridondanza dalle altre posizioni.
--   **Usare la formulazione positiva.** La formulazione positiva è più semplice da comprendere per gli utenti.
+-   **Rimuovere il testo ridondante.** Cercare testo ridondante in titoli, istruzioni principali, istruzioni supplementari, aree di contenuto, collegamenti ai comandi e pulsanti di commit. In genere, lasciare il testo completo nelle istruzioni e nei controlli interattivi e rimuovere la ridondanza dalle altre posizioni.
+-   **Usare formulazioni positive.** La formulazione positiva è più facile da comprendere per gli utenti.
 
 **Corretto:**
 
-Abilitare la condivisione di file e stampanti?
+Si vuole abilitare la condivisione di file e stampanti?
 
 **Non corretto:**
 
 Disabilitare la condivisione di file e stampanti?
 
-Tuttavia, la formulazione deve corrispondere al comando associato, anche se il comando è con frase negativa. quindi, ad esempio, usare Disable per confermare un comando Disable.
+Tuttavia, la formulazione deve corrispondere al comando associato, anche se il comando è con frase negativa; quindi, ad esempio, usare disable per confermare un comando Disable.
 
--   **Se necessario, utilizzare la parola &quot;finestra&quot; per fare riferimento alla finestra di dialogo.**
--   **Usare la seconda persona (&quot;u/your") per indicare agli utenti cosa fare** nell'area principale dell'istruzione e del contenuto. Spesso la seconda persona è implicita.
+-   **Se necessario, usare la parola &quot;finestra&quot; per fare riferimento alla finestra di dialogo stessa.**
+-   **Usare la seconda persona (&quot;you/your")** per indicare agli utenti cosa fare nell'area principale dell'istruzione e del contenuto. Spesso la seconda persona è implicita.
 
 **Esempi:**
 
-Scegliere le immagini che si desidera stampare
+Scegliere le immagini da stampare
 
 Scegliere un account
 
--   **Usare la prima persona ("I/o/My") per consentire agli utenti di indicare al programma cosa fare** nei controlli nell'area di contenuto che rispondono all'istruzione principale.
+-   **Usare la prima persona ("I/me/my")** per consentire agli utenti di indicare al programma cosa fare nei controlli nell'area del contenuto che rispondono all'istruzione principale.
 
-**Esempio:** Stampa le foto sulla mia fotocamera.
+**Esempio:** Stampare le foto sulla fotocamera.
 
-### <a name="dialog-box-titles"></a>Titoli della finestra di dialogo
+### <a name="dialog-box-titles"></a>Titoli delle finestre di dialogo
 
--   **Utilizzare il titolo per identificare il comando, la funzionalità o il programma da cui proviene una finestra di dialogo.**
-    -   Se la finestra di dialogo viene avviata dall'utente, identificarla usando il nome del comando o della funzionalità. **Eccezioni**
-        -   Se una finestra di dialogo viene visualizzata da molti comandi diversi, provare a usare il nome del programma.
-        -   Se il titolo è ridondante con l'istruzione principale, usare invece il nome del programma.
-    -   Se si tratta di un programma o di un sistema avviato (e di conseguenza non contestuale), identificarlo utilizzando il nome del programma o della funzionalità per fornire il contesto.
+-   **Usare il titolo per identificare il comando, la funzionalità o il programma da cui viene visualizzata una finestra di dialogo.**
+    -   Se la finestra di dialogo viene avviata dall'utente, identificarla usando il nome del comando o della funzionalità. **Eccezioni:**
+        -   Se una finestra di dialogo viene visualizzata da molti comandi diversi, è consigliabile usare il nome del programma.
+        -   Se tale titolo sarebbe ridondante con l'istruzione main, usare invece il nome del programma.
+    -   Se è avviato dal programma o dal sistema (e quindi fuori contesto), identificarlo usando il nome del programma o della funzionalità per fornire il contesto.
     -   Non usare il titolo per spiegare cosa fare nella finestra di dialogo che è lo scopo dell'istruzione principale.
--   Usare il nome di comando esatto per i nomi basati su comandi, ma non includere i puntini di sospensione se ne esiste uno. Se necessario, è possibile includere il titolo del menu del comando per comporre un titolo valido. Esempio: per un oggetto... in un menu Inserisci, usare l'oggetto Insert del titolo.
--   **Se nella barra delle applicazioni viene visualizzata una finestra di dialogo non modale, ottimizzare il titolo per la visualizzazione sulla barra delle applicazioni,** inserendo prima di tutto le informazioni di distinzione. Esempi: "66% completo" e "3 promemoria".
--   **Non includere le parole "Dialog" o "Progress" nel titolo.** Questo è implicito e la sua uscita rende più semplice l'analisi da parte degli utenti.
--   Usare l'uso [di maiuscole in stile titolo](glossary.md)senza la punteggiatura finale.
+-   Usare il nome esatto del comando per i nomi basati su comandi, ma non includere i puntini di sospensione, se presenti. Se necessario, è possibile includere il titolo del menu del comando per comporre un titolo. Esempio: per un oggetto ... in un menu Inserisci usare il titolo Inserisci oggetto.
+-   **Se sulla barra delle applicazioni** viene visualizzata una finestra di dialogo non modali, ottimizzare il titolo per la visualizzazione sulla barra delle applicazioni inserendo concisamente le informazioni distintive. Esempi: "66% completato" e "3 promemoria".
+-   **Non includere le parole "dialog" o "progress" nel titolo.** Ciò è implicito e lasciarlo disattivato semplifica l'analisi da parte degli utenti.
+-   Usare [l'uso di maiuscole e minuscole](glossary.md)in stile titolo senza terminare la punteggiatura.
 
 ### <a name="main-instructions"></a>Istruzioni principali
 
--   **Utilizzare l'istruzione principale per illustrare in modo conciso le operazioni da eseguire nella finestra di dialogo.** L'istruzione deve essere un'istruzione, una direzione imperativa o una domanda specifica. Le istruzioni valide comunicano l'obiettivo dell'utente con la finestra di dialogo piuttosto che concentrarsi esclusivamente sui meccanismi di manipolazione.
--   **Omettere l'istruzione principale quando l'unica cosa che si può dire è ovvia.** In questi casi, il contenuto della finestra di dialogo è di chiara interpretazione. Ad esempio, le finestre di dialogo di apertura e salvataggio file comuni non necessitano di un'istruzione principale, in quanto il contesto e la progettazione ne fanno evidente la loro finalità.
--   **Omettere le etichette dei controlli che riportano l'istruzione principale.** In questo caso, l'istruzione principale accetta il tasto di accesso.
+-   **Usare l'istruzione principale per spiegare concisamente cosa fare nella finestra di dialogo.** L'istruzione deve essere un'istruzione specifica, una direzione imperativa o una domanda. Le buone istruzioni comunicano l'obiettivo dell'utente con il dialogo anziché concentrarsi esclusivamente sui meccanismi di modifica.
+-   **Omettere l'istruzione principale quando l'unica cosa che si può dire è ovvia.** In questi casi, il contenuto della finestra di dialogo è auto-esplicativo. Ad esempio, le finestre di dialogo Comuni Apri file e Salva file non necessitano di un'istruzione principale perché il contesto e la progettazione rendono evidente lo scopo.
+-   **Omettere le etichette di controllo che restate l'istruzione principale.** In questo caso, l'istruzione principale accetta la chiave di accesso.
 
 **Accettabile:**
 
-![screenshot della casella di testo con etichetta ridondante ](images/win-dialog-box-image50.png)
+![Screenshot della casella di testo con etichetta ridondante ](images/win-dialog-box-image50.png)
 
-In questo esempio, l'etichetta della casella di testo è semplicemente una ripubblicazione dell'istruzione principale.
+In questo esempio l'etichetta della casella di testo è solo una riezione dell'istruzione principale.
 
 **Migliore:**
 
-![screenshot della stessa casella di testo con un'etichetta ](images/win-dialog-box-image51.png)
+![Screenshot della stessa casella di testo con un'etichetta ](images/win-dialog-box-image51.png)
 
-In questo esempio, l'etichetta ridondante viene rimossa, quindi l'istruzione principale accetta il tasto di accesso.
+In questo esempio l'etichetta ridondante viene rimossa, quindi l'istruzione principale accetta la chiave di accesso.
 
--   **Usare concise solo una singola frase completa.** Riduci l'istruzione principale alle informazioni essenziali. Se è necessario spiegare altre informazioni, utilizzare l'istruzione supplementare.
--   **Quando possibile, usare verbi specifici.** Verbi specifici (esempi: Connetti, Salva, installa) sono più significativi per gli utenti rispetto a quelli generici (esempi: configurazione, gestione, impostazione).
--   Usare l'uso [di maiuscole in stile frase](glossary.md).
--   **Non includere i periodi finali se l'istruzione è un'istruzione.** Se l'istruzione è una domanda, includere un punto interrogativo finale.
--   **Per le finestre di dialogo dello stato di avanzamento, utilizzare una frase gerundio per spiegare brevemente l'operazione in corso,** terminando con i puntini di sospensione. Esempio: stampa delle immagini in corso...
--   **Suggerimento:** È possibile valutare un'istruzione principale immaginando ciò che si potrebbe dire a un amico. Se la risposta con l'istruzione principale è non naturale, non utile o imbarazzante, rielaborare l'istruzione.
+-   **Usare concisa una sola frase completa.** L'istruzione principale è in grado di accedere alle informazioni essenziali. Se è necessario spiegare altro, usare l'istruzione supplementare.
+-   **Usare verbi specifici quando possibile.** Verbi specifici (ad esempio: connect, save, install) sono più significativi per gli utenti rispetto a quelli generici (ad esempio: configure, manage, set).
+-   Usare [l'uso di maiuscole e minuscole in stile frase.](glossary.md)
+-   **Non includere i periodi finali se l'istruzione è un'istruzione .** Se l'istruzione è una domanda, includere un punto interrogativo finale.
+-   **Per i dialoghe di stato, usare** una frase gerund che spiega brevemente l'operazione in corso, terminando con i puntini di sospensione. Esempio: Stampa delle immagini in corso...
+-   **Suggerimento:** È possibile valutare un'istruzione principale immaginando cosa dire a un amico. Se rispondere con l'istruzione principale sarebbe innaturale, poco utile o scomodo, rielaborare l'istruzione.
 
 ### <a name="supplemental-instructions"></a>Istruzioni supplementari
 
--   **Quando necessario, utilizzare un'istruzione supplementare facoltativa per presentare informazioni aggiuntive utili per comprendere o utilizzare la pagina.** È possibile fornire informazioni più dettagliate e definire la terminologia.
--   **Se l'aspetto della finestra di dialogo è programma o avviato dal sistema (e di conseguenza non contestuale), utilizzare l'istruzione supplementare per spiegare il motivo per cui è stata visualizzata la finestra di dialogo.** Per tali finestre di dialogo, il contesto non è in genere ovvio.
--   **Non ripetere l'istruzione principale con una formulazione leggermente diversa.** Omettere invece l'istruzione supplementare se non è più necessario aggiungere.
--   Usare frasi complete, maiuscole e minuscole in stile frase e punteggiatura finale.
+-   **Se necessario, usare un'istruzione supplementare facoltativa per presentare informazioni aggiuntive utili per comprendere o usare la pagina.** È possibile fornire informazioni più dettagliate e definire la terminologia.
+-   **Se l'aspetto della finestra di dialogo è avviato dal programma o dal sistema (e quindi fuori contesto), usare l'istruzione supplementare per spiegare perché è stata visualizzata la finestra di dialogo.** Per tali dialoghe, il contesto non è in genere ovvio.
+-   **Non ripetere l'istruzione principale con una formulazione leggermente diversa.** Omettere invece l'istruzione supplementare se non sono presenti altre istruzioni da aggiungere.
+-   Usare frasi complete, lettere maiuscole in stile frase e punteggiatura finale.
 
 ### <a name="command-links"></a>Collegamenti ai comandi
 
--   **Scegliere testo conciso collegamento che comunica chiaramente e distingue il collegamento del comando.** Dovrebbe essere di chiara comprensione e corrispondere all'istruzione principale. Gli utenti non devono necessariamente determinare il significato del collegamento o la differenza rispetto ad altri collegamenti.
--   **Avviare sempre i collegamenti del comando con un verbo.**
+-   **Scegliere un testo di collegamento conciso che comunichi chiaramente e distingue ciò che fa il collegamento di comando.** Deve essere auto-esplicativo e corrispondere all'istruzione principale. Gli utenti non devono capire cosa significa realmente il collegamento o in che modo è diverso da altri collegamenti.
+-   **Avviare sempre i collegamenti ai comandi con un verbo.**
 -   Usare le maiuscole/minuscole come nelle frasi comuni.
 -   Non usare punteggiatura finale.
--   **Se necessario, fornire altre spiegazioni usando le frasi complete e la punteggiatura finale.** Tuttavia, aggiungere queste spiegazioni solo quando necessario non aggiungere spiegazioni a tutti i collegamenti ai comandi solo perché è necessario un solo collegamento al comando.
+-   **Se necessario, fornire altre spiegazioni usando frasi complete e terminando la punteggiatura.** Tuttavia, aggiungere tali spiegazioni solo quando necessario, non aggiungere spiegazioni a tutti i collegamenti di comando solo perché un collegamento di comando ne richiede uno.
 
-Per ulteriori informazioni ed esempi, vedere linee guida sui [collegamenti di comando](ctrl-command-links.md) .
+Per altre informazioni ed esempi, vedere Linee [guida per il collegamento ai](ctrl-command-links.md) comandi.
 
 ### <a name="commit-buttons"></a>Pulsanti di commit
 
--   **Usare etichette di pulsanti di commit specifiche che hanno un significato autonomo e sono una risposta all'istruzione principale.** Idealmente, gli utenti non devono leggere nient'altro per comprendere l'etichetta. È molto più probabile che gli utenti leggano le etichette dei pulsanti di comando rispetto al testo statico.
--   **Avviare le etichette dei pulsanti di commit con un verbo. Le eccezioni sono OK, sì e no.**
+-   **Usare etichette specifiche dei pulsanti di commit che hanno senso da soli e che sono una risposta all'istruzione principale.** Idealmente gli utenti non devono leggere altro per comprendere l'etichetta. È molto più probabile che gli utenti leggono le etichette dei pulsanti di comando rispetto al testo statico.
+-   **Avviare le etichette dei pulsanti di commit con un verbo. Le eccezioni sono OK, Sì e No.**
 -   Usare le maiuscole/minuscole come nelle frasi comuni.
 -   Non usare punteggiatura finale.
--   Assegnare una [chiave di accesso](glossary.md)univoca.
-    -   **Eccezione:** Non assegnare chiavi di accesso ai pulsanti OK e Annulla perché le chiavi di accesso sono Enter e ESC. In questo modo le altre chiavi di accesso risultano più semplici da assegnare.
+-   Assegnare una chiave [di accesso univoca.](glossary.md)
+    -   **Eccezione:** Non assegnare i tasti di scelta ai pulsanti OK e Annulla perché INVIO e ESC sono i tasti di scelta. In questo modo le altre chiavi di accesso sono più facili da assegnare.
 
 ## <a name="documentation"></a>Documentazione
 
-Quando si fa riferimento alle finestre di dialogo:
+Quando si fa riferimento a finestre di dialogo:
 
--   In programmazione e altri documenti tecnici, fare riferimento alle finestre di dialogo come finestre di dialogo. In tutti gli altri casi, fare riferimento alle finestre di dialogo in base al titolo. Se la barra del titolo è nascosta, fare riferimento alla finestra di dialogo usando l'istruzione principale.
--   Se è necessario fare riferimento a una finestra di dialogo in generale, utilizzare la finestra nella documentazione dell'utente. È possibile fare riferimento a una semplice finestra di dialogo o a una conferma come messaggio.
--   Usare il testo esatto del titolo o dell'istruzione principale, inclusa la relativa maiuscola.
--   Quando possibile, formattare il titolo usando il testo in grassetto. In caso contrario, inserire il titolo racchiuso tra virgolette solo se necessario per evitare confusione.
+-   Nella programmazione e in altre documentazione tecnica, fare riferimento alle finestre di dialogo come finestre di dialogo. In qualsiasi altro luogo, fare riferimento alle finestre di dialogo in base al titolo. Se la barra del titolo è nascosta, fare riferimento alla finestra di dialogo usando l'istruzione principale.
+-   Se è necessario fare riferimento a una finestra di dialogo in generale, usare window nella documentazione dell'utente. È possibile fare riferimento a una semplice finestra di dialogo di domande o a una conferma come messaggio.
+-   Usare il titolo esatto o il testo dell'istruzione principale, inclusa la relativa maiuscola.
+-   Quando possibile, formattare il titolo usando il testo in grassetto. In caso contrario, inserire il titolo tra virgolette solo se necessario per evitare confusione.
 
-Esempio: in **sicurezza di Windows** fare clic su **altre opzioni**.
+Esempio: in **Sicurezza di Windows** fare clic **su Altre opzioni**.
 

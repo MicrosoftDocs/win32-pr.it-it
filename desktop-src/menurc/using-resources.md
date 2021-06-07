@@ -4,34 +4,34 @@ description: Questa sezione contiene il codice correlato alle attività di progr
 ms.assetid: 73678045-1518-46cd-ab55-5d272852ba73
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51c197cbec1e2ecf495f7a682d70311edc45c069
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f9e4f42f908bc2ee63cfa273a5251b0bd8d9bf86
+ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104473091"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111549873"
 ---
 # <a name="using-resources"></a>Uso delle risorse
 
 Questa sezione contiene frammenti di codice per le attività seguenti:
 
--   [Aggiornamento di risorse](#updating-resources)
+-   [Aggiornamento delle risorse](#updating-resources)
 -   [Creazione di un elenco di risorse](#creating-a-resource-list)
 
-## <a name="updating-resources"></a>Aggiornamento di risorse
+## <a name="updating-resources"></a>Aggiornamento delle risorse
 
-Nell'esempio seguente viene copiata una risorsa della finestra di dialogo da un file eseguibile, Hand.exe, a un altro Foot.exe, attenendosi alla procedura seguente:
+L'esempio seguente copia una risorsa della finestra di dialogo da un file eseguibile, Hand.exe, a un altro Foot.exe, seguendo questa procedura:
 
-1.  Utilizzare la funzione [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) per caricare il file eseguibile Hand.exe.
-2.  Usare le funzioni [**FindResource**](/windows/desktop/api/Winbase/nf-winbase-findresourcea) e [**LoadResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadresource) per individuare e caricare la risorsa della finestra di dialogo.
-3.  Utilizzare la funzione [**LockResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-lockresource) per recuperare un puntatore ai dati della risorsa della finestra di dialogo.
-4.  Utilizzare la funzione [**BeginUpdateResource**](/windows/desktop/api/Winbase/nf-winbase-beginupdateresourcea) per aprire un handle di aggiornamento per Foot.exe.
-5.  Utilizzare la funzione [**UpdateResource**](/windows/desktop/api/Winbase/nf-winbase-updateresourcea) per copiare la risorsa della finestra di dialogo da Hand.exe a Foot.exe.
-6.  Per completare l'aggiornamento, usare la funzione [**EndUpdateResource**](/windows/desktop/api/Winbase/nf-winbase-endupdateresourcea) .
+1.  Usare la [**funzione LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) per caricare il file eseguibile Hand.exe.
+2.  Usare le [**funzioni FindResource**](/windows/desktop/api/Winbase/nf-winbase-findresourcea) [**e LoadResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadresource) per individuare e caricare la risorsa della finestra di dialogo.
+3.  Usare la [**funzione LockResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-lockresource) per recuperare un puntatore ai dati delle risorse della finestra di dialogo.
+4.  Usare la [**funzione BeginUpdateResource**](/windows/desktop/api/Winbase/nf-winbase-beginupdateresourcea) per aprire un handle di aggiornamento per Foot.exe.
+5.  Usare la [**funzione UpdateResource**](/windows/desktop/api/Winbase/nf-winbase-updateresourcea) per copiare la risorsa della finestra di dialogo Hand.exe in Foot.exe.
+6.  Usare la [**funzione EndUpdateResource**](/windows/desktop/api/Winbase/nf-winbase-endupdateresourcea) per completare l'aggiornamento.
 
-Nel codice seguente vengono implementati questi passaggi.
+Il codice seguente implementa questi passaggi.
 
-**Avviso di sicurezza:** L'uso errato di [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la dll non corretta. Per informazioni su come caricare correttamente le dll con versioni diverse di Windows, vedere la documentazione di **LoadLibrary** .
+**Avviso di sicurezza:** [**L'uso errato di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Per informazioni su come caricare correttamente le DLL con versioni diverse di Windows, vedere la documentazione di **LoadLibrary.**
 
 
 ```C++
@@ -117,15 +117,15 @@ if (!FreeLibrary(hExe))
 
 ## <a name="creating-a-resource-list"></a>Creazione di un elenco di risorse
 
-Nell'esempio seguente viene creato un elenco di tutte le risorse nel file di Hand.exe. L'elenco viene scritto nel file di Resinfo.txt.
+L'esempio seguente crea un elenco di tutte le risorse nel file Hand.exe. L'elenco viene scritto nel file Resinfo.txt.
 
-Il codice illustra come caricare il file eseguibile, creare un file in cui scrivere le informazioni sulle risorse e chiamare la funzione [**EnumResourceTypes**](/windows/desktop/api/Winbase/nf-winbase-enumresourcetypesa) per inviare ogni tipo di risorsa trovato nel modulo alla funzione di callback definita dall'applicazione `EnumTypesFunc` . Per informazioni sulle funzioni di callback di questo tipo, vedere [*EnumResTypeProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumrestypeproca) . Questa funzione di callback usa la funzione [**EnumResourceNames**](/windows/desktop/api/Winbase/nf-winbase-enumresourcenamesa) per passare il nome di ogni risorsa all'interno del tipo specificato a un'altra funzione di callback definita dall'applicazione, `EnumNamesFunc` . Per informazioni sulle funzioni di callback di questo tipo, vedere [*EnumResNameProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumresnameproca) . `EnumNamesFunc` Usa la funzione [**EnumResourceLanguages**](/windows/desktop/api/Winbase/nf-winbase-enumresourcelanguagesa) per passare la lingua di ogni risorsa del tipo e del nome specificati a una terza funzione di callback, `EnumLangsFunc` . Per informazioni sulle funzioni di callback di questo tipo, vedere [*EnumResLangProc*](/previous-versions/windows/desktop/legacy/ms648033(v=vs.85)) . `EnumLangsFunc` scrive informazioni sulla risorsa del tipo, del nome e della lingua specificati nel file di Resinfo.txt.
+Il codice illustra come caricare il file eseguibile, creare un file in cui scrivere informazioni sulle risorse e chiamare la [**funzione EnumResourceTypes**](/windows/desktop/api/Winbase/nf-winbase-enumresourcetypesa) per inviare ogni tipo di risorsa trovato nel modulo alla funzione di callback definita dall'applicazione `EnumTypesFunc` . Per informazioni sulle funzioni di callback di questo tipo, vedere [*EnumResTypeProc.*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumrestypeproca) Questa funzione di callback usa la [**funzione EnumResourceNames**](/windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesa) per passare il nome di ogni risorsa all'interno del tipo specificato a un'altra funzione di callback definita dall'applicazione, `EnumNamesFunc` . Per informazioni sulle funzioni di callback di questo tipo, vedere [*EnumResNameProc.*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumresnameproca) `EnumNamesFunc` usa la [**funzione EnumResourceLanguages**](/windows/desktop/api/Winbase/nf-winbase-enumresourcelanguagesa) per passare la lingua di ogni risorsa del tipo e del nome specificati a una terza funzione di callback, `EnumLangsFunc` . Per informazioni sulle funzioni di callback di questo tipo, vedere [*EnumResLangProc.*](/previous-versions/windows/desktop/legacy/ms648033(v=vs.85)) `EnumLangsFunc` scrive informazioni sulla risorsa del tipo, del nome e della lingua specificati nel file Resinfo.txt specificato.
 
-Si noti che *lpszType* in [*ENUMRESTYPEPROC*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumrestypeproca) è un ID di risorsa o un puntatore a una stringa (contenente un ID risorsa o un nome di tipo); *lpszType* e *lpszName* in [*EnumResNameProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumresnameproca) e [*EnumResLangProc*](/previous-versions/windows/desktop/legacy/ms648033(v=vs.85)) sono simili. Per caricare una risorsa enumerata, è sufficiente chiamare la funzione appropriata. Ad esempio, se è stata enumerata una risorsa di menu (**\_ menu RT**), passare *lpszName* a [**LoadMenu**](/windows/desktop/api/Winuser/nf-winuser-loadmenua). Per le risorse personalizzate, passare *lpszType* e *lpszName* a [**FindResource**](/windows/desktop/api/Winbase/nf-winbase-findresourcea).
+Si noti che *lpszType* in [*EnumResTypeProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumrestypeproca) è un ID risorsa o un puntatore a una stringa (contenente un ID risorsa o un nome di tipo); *lpszType* e *lpszName* in [*EnumResNameProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumresnameproca) ed [*EnumResLangProc*](/previous-versions/windows/desktop/legacy/ms648033(v=vs.85)) sono simili. Per caricare una risorsa enumerata, è sufficiente chiamare la funzione appropriata. Ad esempio, se è stata enumerata una risorsa di menu (**RT \_ MENU**), passare *lpszName* a [**LoadMenu**](/windows/desktop/api/Winuser/nf-winuser-loadmenua). Per le risorse personalizzate, passare *lpszType* e *lpszName* [**a FindResource.**](/windows/desktop/api/Winbase/nf-winbase-findresourcea)
 
-Il codice [delle risorse di aggiornamento](#updating-resources) segue un modello simile per una risorsa della finestra di dialogo.
+Il [codice Aggiornamento risorse](#updating-resources) segue un modello simile per una risorsa della finestra di dialogo.
 
-**Avviso di sicurezza:** L'uso errato di [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la dll non corretta. Per informazioni su come caricare correttamente le dll con versioni diverse di Windows, vedere la documentazione di **LoadLibrary** .
+**Avviso di sicurezza:** [**L'uso errato di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Per informazioni su come caricare correttamente le DLL con versioni diverse di Windows, vedere la documentazione di **LoadLibrary.**
 
 
 ```C++
@@ -388,6 +388,6 @@ BOOL EnumLangsFunc(
 
 
 
- 
+ 
 
- 
+ 

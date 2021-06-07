@@ -1,19 +1,19 @@
 ---
-description: Contiene i dettagli relativi a una singola pagina in una nota del journal.
+description: Contiene i dettagli relativi a una singola pagina in una nota journal.
 ms.assetid: 8cada667-188b-42f9-8602-34e23d512b82
 title: Elemento JournalPage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e7223818de8200f2ff7748edd7eb472f49e92e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0939194585b067525fa841d6d41674180a40adb9
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883418"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432143"
 ---
 # <a name="journalpage-element"></a>Elemento JournalPage
 
-Contiene i dettagli relativi a una singola pagina in una nota del journal.
+Contiene i dettagli relativi a una singola pagina in una nota journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -41,11 +41,11 @@ Contiene i dettagli relativi a una singola pagina in una nota del journal.
 
 | Attributo      | Type                      | Obbligatoria | Descrizione                                                                        | Valori possibili                                          |
 |----------------|---------------------------|----------|------------------------------------------------------------------------------------|----------------------------------------------------------|
-| **Number**     | **xs:nonNegativeInteger** | Necessario | Numero ordinale della pagina all'interno del documento Journal, a partire da uno (1). | Qualsiasi numero intero non negativo.                                |
-| **Larghezza**      | **xs:nonNegativeInteger** | Necessario | Larghezza della pagina.                                                             | Qualsiasi numero intero non negativo.                                |
-| **Altezza**     | **xs:nonNegativeInteger** | Necessario | Altezza della pagina.                                                            | Qualsiasi numero intero non negativo.                                |
+| **Number**     | **xs:nonNegativeInteger** | Obbligatoria | Numero ordinale della pagina all'interno del documento Journal, a partire da uno (1). | Qualsiasi numero intero non negativo.                                |
+| **Larghezza**      | **xs:nonNegativeInteger** | Obbligatoria | Larghezza della pagina.                                                             | Qualsiasi numero intero non negativo.                                |
+| **Altezza**     | **xs:nonNegativeInteger** | Obbligatoria | Altezza della pagina.                                                            | Qualsiasi numero intero non negativo.                                |
 | **LineHeight** | **xs:nonNegativeInteger** | Facoltativo | Altezza della riga utilizzata nella pagina.                                           | Qualsiasi numero intero non negativo.                                |
-| **LanguageId** | **xs:nonNegativeInteger** | Facoltativo | ID lingua utilizzato per la pagina.                                                 | Intero non negativo che rappresenta un ID lingua valido. |
+| **Languageid** | **xs:nonNegativeInteger** | Facoltativo | ID lingua usato per la pagina.                                                 | Intero non negativo che rappresenta un ID lingua valido. |
 
 
 
@@ -55,11 +55,11 @@ Contiene i dettagli relativi a una singola pagina in una nota del journal.
 
 
 
-|              |                                                                     |
+|  Elemento     | valore                                                     |
 |--------------|---------------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**JournalPageType**](journalpagetype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                          |
-| Nome schema  | Lettore Journal                                                      |
+| Tipo di elemento | [**ComplexType JournalPageType**](journalpagetype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                          |
+| Nome schema  | Lettore journal                                                      |
 
 
 

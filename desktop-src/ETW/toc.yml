@@ -10,7 +10,7 @@
           href: event-tracing-sessions.md
         - name: Driver di dispositivo
           href: device-drivers.md
-    - name: Utilizzo di traccia eventi
+    - name: Uso della traccia eventi
       href: using-event-tracing.md
       items:
         - name: Controllo delle sessioni di traccia eventi
@@ -19,25 +19,27 @@
             - name: Configurazione e avvio di una sessione di traccia eventi
               href: configuring-and-starting-an-event-tracing-session.md
               items:
-                - name: Esempio di creazione di una sessione e abilitazione di un provider basato su manifesto o classico
+                - name: Esempio che crea una sessione e abilita un provider basato su manifesto o classico
                   href: example-that-creates-a-session-and-enables-a-manifest-based-provider.md
             - name: Configurazione e avvio di una sessione SystemTraceProvider
               href: configuring-and-starting-a-systemtraceprovider-session.md
               items:
                 - name: Configurazione e avvio della sessione del logger del kernel NT
                   href: configuring-and-starting-the-nt-kernel-logger-session.md
+                - name: Provider di sistema
+                  href: system-providers.md
             - name: Configurazione e avvio di una sessione di autologger
               href: configuring-and-starting-an-autologger-session.md
               items:
-                - name: Configurazione e avvio della sessione Global Logger
+                - name: Configurazione e avvio della sessione del logger globale
                   href: configuring-and-starting-the-global-logger-session.md
-            - name: Configurazione e avvio di una sessione di logger privata
+            - name: Configurazione e avvio di una sessione privata del logger
               href: configuring-and-starting-a-private-logger-session.md
             - name: Aggiornamento di una sessione di traccia eventi
               href: updating-an-event-tracing-session.md
             - name: Recupero di dati di traccia eventi aggiuntivi
               href: retrieving-additional-event-tracing-data.md
-        - name: Invio di eventi
+        - name: Fornire eventi
           href: providing-events.md
           items:
             - name: Scrittura di eventi
@@ -45,11 +47,11 @@
               items:
                 - name: Scrittura di eventi basati su manifesto
                   href: writing-manifest-based-events.md
-                - name: Scrittura di eventi MOF (classico)
+                - name: Scrittura di eventi MOF (versione classica)
                   href: tracing-events.md
                 - name: Scrittura di eventi WPP
                   href: windows-software-trace-preprocessor.md
-                - name: Ottenere un provider e un GUID della classe
+                - name: Recupero di un PROVIDER e di un GUID di classe
                   href: obtaining-a-provider-and-class-guid.md
                 - name: Tratti del provider
                   href: provider-traits.md
@@ -70,33 +72,33 @@
         - name: Utilizzo di eventi
           href: consuming-events.md
           items:
-            - name: Recupero dei dati dell'evento
+            - name: Recupero dei dati degli eventi
               href: retrieving-event-data.md
               items:
-                - name: Cenni preliminari sui metadati degli eventi
+                - name: Panoramica dei metadati degli eventi
                   href: event-metadata-overview.md
                 - name: Recupero dei dati degli eventi tramite TDH
                   href: retrieving-event-data-using-tdh.md
                   items:
-                    - name: Utilizzo di TdhFormatProperty per utilizzare i dati degli eventi
+                    - name: Uso di TdhFormatProperty per utilizzare i dati degli eventi
                       href: using-tdhformatproperty-to-consume-event-data.md
-                    - name: Utilizzo di TdhGetProperty per utilizzare i dati degli eventi
+                    - name: Uso di TdhGetProperty per utilizzare i dati degli eventi
                       href: using-tdhgetproperty-to-consume-event-data.md
                     - name: Enumerazione dei provider
                       href: enumerating-providers.md
                     - name: Recupero dei metadati degli eventi
                       href: retrieving-event-metadata.md
-                - name: Recupero di dati di evento tramite MOF
+                - name: Recupero dei dati degli eventi tramite MOF
                   href: retrieving-event-data-using-mof.md
             - name: Uso di eventi per calcolare l'utilizzo della CPU
               href: using-events-to-calculate-cpu-usage.md
-    - name: Riferimento traccia eventi
+    - name: Informazioni di riferimento sulla traccia eventi
       href: event-tracing-reference.md
       items:
         - name: Costanti di traccia eventi
           href: event-tracing-constants.md
           items:
-            - name: Costanti del logger di kernel NT
+            - name: Costanti del logger del kernel NT
               href: nt-kernel-logger-constants.md
             - name: Costanti della modalità di registrazione
               href: logging-mode-constants.md
@@ -139,7 +141,7 @@
               href: /windows/desktop/api/Evntprov/nf-evntprov-eventdescsetversion
             - name: EventDescZero
               href: /windows/desktop/api/Evntprov/nf-evntprov-eventdesczero
-        - name: Classi MOF di traccia eventi
+        - name: Classi MOF di Traccia eventi
           href: event-tracing-mof-classes.md
           items:
             - name: EventTrace
@@ -185,7 +187,7 @@
                       items:
                         - name: EventTrace_Header
                           href: eventtrace-header.md
-                    - name: FileIo
+                    - name: Fileio
                       href: fileio.md
                       items:
                         - name: FileIo_Create
@@ -369,7 +371,7 @@
                           href: systemconfig-v0-services.md
                         - name: SystemConfig_V0_Video
                           href: systemconfig-v0-video.md
-                    - name: TcpIp
+                    - name: Tcpip
                       href: tcpip.md
                       items:
                         - name: TcpIp_Fail
@@ -441,7 +443,7 @@
                       items:
                         - name: UdpIp_V1_TypeGroup1
                           href: udpip-v1-typegroup1.md
-        - name: Qualificatori MOF di traccia eventi
+        - name: Qualificatori MOF di Traccia eventi
           href: event-tracing-mof-qualifiers.md
         - name: Strumenti di traccia eventi
           href: event-tracing-tools.md

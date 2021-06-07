@@ -1,19 +1,19 @@
 ---
 title: UI_PKEY_QuickAccessToolbarDock
-description: Identifica la proprietà QuickAccessToolbarDock dell'interfaccia utente \_ pkey \_ .
+description: Identifica la proprietà \_ UI PKEY \_ QuickAccessToolbarDock.
 ms.assetid: 77f7b0a8-f276-4501-9d53-fb5a3185edcc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1ae48cb9ef2ee665739de2f3aacab197b461665
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5e28ec2e153755fd243bf78ee389cad40485a348
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399107"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443762"
 ---
-# <a name="ui_pkey_quickaccesstoolbardock"></a>Interfaccia utente \_ pkey \_ QuickAccessToolbarDock
+# <a name="ui_pkey_quickaccesstoolbardock"></a>UI \_ PKEY \_ QuickAccessToolbarDock
 
-Identifica la proprietà QuickAccessToolbarDock dell'interfaccia utente \_ pkey \_ .
+Identifica la proprietà \_ UI PKEY \_ QuickAccessToolbarDock.
 
 ```
 propertyDescription
@@ -27,16 +27,16 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia utente \_ pkey \_ QuickAccessToolbarDock viene usata da un'applicazione per eseguire una query sullo stato di ancoraggio della barra di accesso rapido (QAT).
+UI \_ PKEY QuickAccessToolbarDock viene usato da un'applicazione per eseguire query sullo stato di ancoraggio della \_ barra di accesso rapido.
 
-Il valore della proprietà è dall' [**enumerazione \_ CONTROLDOCK dell'interfaccia utente**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_controldock) .
+Il valore della proprietà deriva [**dall'enumerazione \_ CONTROLDOCK dell'interfaccia**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_controldock) utente.
 
 
 
-|                         |                                                                                                                                                                                                                                                       |
+|    Enumerazione                     |    Descrizione                                                                                                                                                                                                                                                   |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| interfaccia utente \_ CONTROLDOCK \_ Top    | Il QAT è ancorato nell'area non client dell'applicazione host della barra multifunzione, come illustrato nella schermata seguente.![screenshot della barra di accesso rapido ancorata sopra la barra multifunzione nell'area non client.](images/properties/qat-docktop.png)<br/> |
-| interfaccia utente \_ CONTROLDOCK in \_ basso | Il QAT è ancorato come una banda integrale visiva sotto la barra multifunzione, come illustrato nella schermata seguente. ![screenshot della barra di accesso rapido ancorata sotto la barra multifunzione.](images/properties/qat-dockbottom.png)<br/>                           |
+| CONTROLLO INTERFACCIA \_ UTENTEDOCK \_ TOP    | L'interfaccia della riga di comando è ancorata nell'area non client dell'applicazione host della barra multifunzione, come illustrato nello screenshot seguente.![Screenshot della barra degli strumenti di accesso rapido ancorata sopra la barra multifunzione nell'area non client.](images/properties/qat-docktop.png)<br/> |
+| CONTROLLO INTERFACCIA \_ UTENTEDOCK \_ IN BASSO | L'interfaccia della riga di comando è ancorata come banda visivamente integrale sotto la barra multifunzione, come illustrato nello screenshot seguente. ![Screenshot della barra di accesso rapido ancorata sotto la barra multifunzione.](images/properties/qat-dockbottom.png)<br/>                           |
 
 
 

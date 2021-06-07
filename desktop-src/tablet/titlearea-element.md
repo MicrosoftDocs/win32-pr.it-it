@@ -1,19 +1,19 @@
 ---
-description: Contiene la posizione e le informazioni di delimitazione per il titolo della nota, se presente.
+description: Contiene informazioni sulla posizione e sul delimitatore per la nota Titolo, se presente.
 ms.assetid: b193f6c2-5f26-41f9-acc8-d734c426b069
-title: Elemento elemento titlearea
+title: Elemento TitleArea
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c009d817af9679edda618dd0262c7cbb85a612ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88d563e8d7f6fc0107bc3302d3f8d94d29dfbfb8
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968515"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432193"
 ---
-# <a name="titlearea-element"></a>Elemento elemento titlearea
+# <a name="titlearea-element"></a>Elemento TitleArea
 
-Contiene la posizione e le informazioni di delimitazione per il titolo della nota, se presente.
+Contiene informazioni sulla posizione e sul delimitatore per la nota Titolo, se presente.
 
 ## <a name="definition"></a>Definizione
 
@@ -27,7 +27,7 @@ Contiene la posizione e le informazioni di delimitazione per il titolo della not
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
@@ -35,10 +35,10 @@ Nessuna.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**   | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di delimitazione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**    | **xs:integer**            | Necessario | Distanza tra l'origine e il punto superiore del rettangolo di delimitazione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di delimitazione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di delimitazione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
+| **Top**    | **xs:integer**            | Obbligatoria | Distanza tra l'origine e il punto in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
 
 
 
@@ -48,11 +48,11 @@ Nessuna.
 
 
 
-|              |                                                                 |
+|   Elemento    | valore                                                           |
 |--------------|-----------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**TitleAreaType**](titleareatype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                      |
-| Nome schema  | Lettore Journal                                                  |
+| Tipo di elemento | [**complexType TitleAreaType**](titleareatype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                      |
+| Nome schema  | Lettore journal                                                  |
 
 
 

@@ -1,95 +1,95 @@
 ---
-title: Altri ruoli oggetto e metodi supportati (riferimento all'elemento dell'interfaccia utente MSAA)
-description: In questo argomento vengono fornite informazioni sui ruoli degli oggetti che non sono inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente.
+title: Altri ruoli oggetto e metodi supportati (riferimento agli elementi dell'interfaccia utente MSAA)
+description: Questo argomento fornisce informazioni sui ruoli oggetto non inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente.
 ms.assetid: 0c3a3ccf-f02a-4aca-9380-a13774598a19
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f3d7fbdbb6dfbf83729f3e1c1d4caa3027f8d51
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f17e8573142a57e0acf08980895fdae3ea6d1841
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729026"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444002"
 ---
-# <a name="other-object-roles-and-supported-methods-msaa-ui-element-reference"></a>Altri ruoli oggetto e metodi supportati (riferimento all'elemento dell'interfaccia utente MSAA)
+# <a name="other-object-roles-and-supported-methods-msaa-ui-element-reference"></a>Altri ruoli oggetto e metodi supportati (riferimento agli elementi dell'interfaccia utente MSAA)
 
-In questo argomento vengono fornite informazioni sui ruoli degli oggetti che non sono inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente. Ogni ruolo di oggetto include un elenco dei metodi e delle proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) supportati per il ruolo dell'oggetto. Mentre altri argomenti documentano i metodi e le proprietà **IAccessible** supportati per gli elementi dell'interfaccia utente, in questo argomento vengono elencati i metodi e le proprietà che possono essere supportati per un particolare ruolo dell'oggetto. Molti degli elementi dell'interfaccia utente che possono avere uno dei ruoli elencati di seguito vengono in genere visualizzati nei browser.
+Questo argomento fornisce informazioni sui ruoli oggetto non inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente. Ogni ruolo oggetto include un elenco dei metodi e delle proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) supportati per il ruolo oggetto. Mentre altri argomenti documentano i metodi e le proprietà **IAccessible** supportati per gli elementi dell'interfaccia utente, questo argomento elenca i metodi e le proprietà che è possibile aspettarsi di essere supportati per un ruolo oggetto specifico. Molti degli elementi dell'interfaccia utente che potrebbero avere uno dei ruoli elencati di seguito sono in genere visibili nei browser.
 
 > [!Note]  
-> Usare questo argomento come linee guida. Si consiglia vivamente di utilizzare gli strumenti di Microsoft Active Accessibility per verificare il comportamento previsto per un singolo ruolo di un oggetto.
+> Usare questo argomento come linea guida. È consigliabile usare gli strumenti Microsoft Active Accessibility per verificare il comportamento previsto per un singolo ruolo oggetto.
 
- 
+ 
 
-Nella tabella seguente sono elencati i ruoli oggetto aggiuntivi Oleacc.dll supportati da.
+Nella tabella seguente sono elencati altri ruoli oggetto supportati Oleacc.dll.
 
 
 
-|                                                                         |                                                           |
+| &nbsp; |  &nbsp; |
 |-------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**\_avviso di sistema del ruolo \_**](/windows)                           | [**\_elenco a \_ selezione sistema ruolo**](/windows)       |
-| [**\_applicazione di sistema ruolo \_**](/windows)               | [**\_equazione del sistema di ruolo \_**](/windows)       |
-| [**\_bordo sistema \_ ruolo**](/windows)                         | [**\_rappresentazione grafica del sistema di ruoli \_**](/windows)         |
-| [**\_BUTTONDROPDOWN di sistema ruolo \_**](/windows)         | [**\_HELPBALLOON di sistema ruolo \_**](/windows) |
-| [**\_BUTTONDROPDOWNGRID di sistema ruolo \_**](/windows) | [**\_IPAddress sistema \_ ruolo**](/windows)     |
-| [**\_BUTTONMENU di sistema ruolo \_**](/windows)                 | [**\_collegamento del sistema ruolo \_**](/windows)               |
-| [**\_cella del sistema del ruolo \_**](/windows)                             | [**\_riquadro sistema \_ ruoli**](/windows)               |
-| [**\_carattere di sistema ruolo \_**](/windows)                   | [**\_riga sistema \_ ruolo**](/windows)                 |
-| [**\_grafico del sistema di ruoli \_**](/windows)                           | [**\_ROWHEADER di sistema ruolo \_**](/windows)     |
-| [**\_clock di sistema del ruolo \_**](/windows)                           | [**\_separatore di sistema ruolo \_**](/windows)     |
-| [**\_colonna di sistema del ruolo \_**](/windows)                         | [**\_suono del sistema di ruolo \_**](/windows)             |
-| [**\_diagramma del sistema di ruoli \_**](/windows)                       | [**\_SPLITBUTTON di sistema ruolo \_**](/windows) |
-| [**\_Composizione sistema \_ ruolo**](/windows)                             | [**\_tabella di sistema del ruolo \_**](/windows)             |
-| [**\_documento di sistema del ruolo \_**](/windows)                     | [**\_spazio del sistema ruolo \_**](/windows)   |
+| [**AVVISO \_ DI SISTEMA DEL \_ RUOLO**](/windows)                           | [**ELENCO \_ A DISCESA DEL SISTEMA DEI \_ RUOLI**](/windows)       |
+| [**APPLICAZIONE \_ DI SISTEMA DEL \_ RUOLO**](/windows)               | [**EQUAZIONE \_ DEL SISTEMA \_ DEI RUOLI**](/windows)       |
+| [**BORDO \_ DEL SISTEMA DEL \_ RUOLO**](/windows)                         | [**IMMAGINE \_ DEL SISTEMA DEI \_ RUOLI**](/windows)         |
+| [**PULSANTE \_ SISTEMA \_ RUOLODROPDOWN**](/windows)         | [**GUIDA \_ AL SISTEMA DEI \_ RUOLIBALLOON**](/windows) |
+| [**PULSANTE \_ SISTEMA \_ RUOLODROPDOWNGRID**](/windows) | [**INDIRIZZO \_ IP DEL SISTEMA DEL \_ RUOLO**](/windows)     |
+| [**PULSANTE \_ SISTEMA \_ RUOLOMENU**](/windows)                 | [**COLLEGAMENTO \_ AL SISTEMA DEL \_ RUOLO**](/windows)               |
+| [**CELLA \_ DI SISTEMA DEL \_ RUOLO**](/windows)                             | [**RIQUADRO \_ SISTEMA \_ RUOLO**](/windows)               |
+| [**CARATTERE \_ DI SISTEMA DEL \_ RUOLO**](/windows)                   | [**ROLE \_ SYSTEM \_ ROW**](/windows)                 |
+| [**GRAFICO \_ DI SISTEMA DEI \_ RUOLI**](/windows)                           | [**ROLE \_ SYSTEM \_ ROWHEADER**](/windows)     |
+| [**OROLOGIO \_ DEL SISTEMA DEI \_ RUOLI**](/windows)                           | [**SEPARATORE \_ DI SISTEMA DEI \_ RUOLI**](/windows)     |
+| [**COLONNA \_ DI SISTEMA DEL \_ RUOLO**](/windows)                         | [**SUONO \_ DEL SISTEMA DEL \_ RUOLO**](/windows)             |
+| [**DIAGRAMMA \_ SISTEMA RUOLO \_**](/windows)                       | [**PULSANTE \_ DI DIVISIONE DEL SISTEMA DEL \_ RUOLO**](/windows) |
+| [**ROLE \_ SYSTEM \_ DIAL**](/windows)                             | [**TABELLA \_ DI SISTEMA DEI \_ RUOLI**](/windows)             |
+| [**DOCUMENTO \_ DI SISTEMA DEL \_ RUOLO**](/windows)                     | [**SPAZIO \_ VUOTO DEL SISTEMA DEI \_ RUOLI**](/windows)   |
 
 
 
- 
+ 
 
-## <a name="role_system_alert"></a>\_avviso di sistema del ruolo \_
+## <a name="role_system_alert"></a>AVVISO \_ DI SISTEMA DEL \_ RUOLO
 
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ avviso di sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ALERT**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
--   ottenere \_ accName
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accName
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_application"></a>\_applicazione di sistema ruolo \_
+## <a name="role_system_application"></a>APPLICAZIONE \_ DI SISTEMA DEL \_ RUOLO
 
-Per altre informazioni su questo ruolo, vedere [**\_ \_ applicazione di sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ APPLICATION**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
 -   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_border"></a>\_bordo sistema \_ ruolo
+## <a name="role_system_border"></a>BORDO \_ DEL SISTEMA DEL \_ RUOLO
 
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ bordo del sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BORDER**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_buttondropdown"></a>\_BUTTONDROPDOWN di sistema ruolo \_
+## <a name="role_system_buttondropdown"></a>PULSANTE \_ SISTEMA \_ RUOLODROPDOWN
 
-Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ BUTTONDROPDOWN**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BUTTONDROPDOWN**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -97,21 +97,21 @@ Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ BU
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDefaultAction
--   ottenere \_ accFocus
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accFocus
 -   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_buttondropdowngrid"></a>\_BUTTONDROPDOWNGRID di sistema ruolo \_
+## <a name="role_system_buttondropdowngrid"></a>PULSANTE \_ SISTEMA \_ RUOLODROPDOWNGRID
 
-Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ BUTTONDROPDOWNGRID**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BUTTONDROPDOWNGRID**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -119,21 +119,21 @@ Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ BU
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDefaultAction
--   ottenere \_ accFocus
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accFocus
 -   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_buttonmenu"></a>\_BUTTONMENU di sistema ruolo \_
+## <a name="role_system_buttonmenu"></a>ROLE \_ SYSTEM \_ BUTTONMENU
 
-Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ BUTTONMENU**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BUTTONMENU**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -141,98 +141,19 @@ Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ BU
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accDefaultAction
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accDefaultAction
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_cell"></a>\_cella del sistema del ruolo \_
+## <a name="role_system_cell"></a>CELLA \_ DEL SISTEMA \_ RUOLO
 
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ cella del sistema del ruolo**](object-roles.md).
-
-**Proprietà e metodi supportati**
-
--   accHitTest
--   accLocation
--   accNavigate
--   accSelect
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
-
-## <a name="role_system_character"></a>\_carattere di sistema ruolo \_
-
-Per ulteriori informazioni su questo ruolo, vedere [**Role \_ System \_ character**](object-roles.md).
-
-**Proprietà e metodi supportati**
-
--   accHitTest
--   accLocation
--   accNavigate
--   ottenere \_ accDescription
--   ottenere \_ accFocus
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
-
-## <a name="role_system_chart"></a>\_grafico del sistema di ruoli \_
-
-Per ulteriori informazioni su questo ruolo, vedere [**il \_ \_ grafico del sistema dei ruoli**](object-roles.md).
-
-**Proprietà e metodi supportati**
-
--   accHitTest
--   accLocation
--   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
-
-## <a name="role_system_clock"></a>\_clock di sistema del ruolo \_
-
-Per altre informazioni su questo ruolo, vedere [**\_ \_ clock di sistema del ruolo**](object-roles.md).
-
-**Proprietà e metodi supportati**
-
--   accHitTest
--   accLocation
--   accNavigate
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
-
-## <a name="role_system_column"></a>\_colonna di sistema del ruolo \_
-
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ colonna di sistema del ruolo**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ CELL**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -240,38 +161,117 @@ Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ colonna di sistema d
 -   accLocation
 -   accNavigate
 -   accSelect
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_diagram"></a>\_diagramma del sistema di ruoli \_
+## <a name="role_system_character"></a>ROLE \_ SYSTEM \_ CHARACTER
 
-Per altre informazioni su questo ruolo, vedere [**\_ \_ diagramma di sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ CHARACTER**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_dial"></a>\_Composizione sistema \_ ruolo
+## <a name="role_system_chart"></a>ROLE \_ SYSTEM \_ CHART
 
-Per ulteriori informazioni su questo ruolo, vedere la pagina relativa alla [**\_ \_ composizione del sistema di ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ CHART.**](object-roles.md)
+
+**Proprietà e metodi supportati**
+
+-   accHitTest
+-   accLocation
+-   accNavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+
+## <a name="role_system_clock"></a>OROLOGIO \_ DEL SISTEMA DEL \_ RUOLO
+
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ CLOCK**](object-roles.md).
+
+**Proprietà e metodi supportati**
+
+-   accHitTest
+-   accLocation
+-   accNavigate
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_column"></a>ROLE \_ SYSTEM \_ COLUMN
+
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ COLUMN.**](object-roles.md)
+
+**Proprietà e metodi supportati**
+
+-   accHitTest
+-   accLocation
+-   accNavigate
+-   accSelect
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_diagram"></a>DIAGRAMMA DEL \_ SISTEMA DI \_ RUOLI
+
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ DIAGRAM**](object-roles.md).
+
+**Proprietà e metodi supportati**
+
+-   accHitTest
+-   accLocation
+-   accNavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+
+## <a name="role_system_dial"></a>ROLE \_ SYSTEM \_ DIAL
+
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ DIAL.**](object-roles.md)
 
 **Proprietà e metodi supportati**
 
@@ -279,20 +279,20 @@ Per ulteriori informazioni su questo ruolo, vedere la pagina relativa alla [**\_
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accDefaultAction
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
+-   get \_ accDefaultAction
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_document"></a>\_documento di sistema del ruolo \_
+## <a name="role_system_document"></a>DOCUMENTO \_ DI SISTEMA DEL \_ RUOLO
 
-Per ulteriori informazioni su questo ruolo, vedere [**il \_ \_ documento di sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ DOCUMENT**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -300,17 +300,17 @@ Per ulteriori informazioni su questo ruolo, vedere [**il \_ \_ documento di sist
 -   accLocation
 -   accNavigate
 -   accSelect
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_droplist"></a>\_elenco a \_ selezione sistema ruolo
+## <a name="role_system_droplist"></a>ROLE \_ SYSTEM \_ DROPLIST
 
-Per ulteriori informazioni su questo ruolo, vedere la pagina relativa all' [**\_ \_ elenco**](object-roles.md)a discapito di sistema dei ruoli.
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ DROPLIST**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -318,94 +318,94 @@ Per ulteriori informazioni su questo ruolo, vedere la pagina relativa all' [**\_
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDefaultAction
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_equation"></a>\_equazione del sistema di ruolo \_
+## <a name="role_system_equation"></a>EQUAZIONE \_ DEL SISTEMA \_ DI RUOLI
 
-Per altre informazioni su questo ruolo, vedere [**\_ \_ equazione del sistema di ruolo**](object-roles.md).
-
-**Proprietà e metodi supportati**
-
--   accHitTest
--   accLocation
--   accNavigate
--   ottenere \_ accFocus
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
-
-## <a name="role_system_graphic"></a>\_rappresentazione grafica del sistema di ruoli \_
-
-Per altre informazioni su questo ruolo, vedere [**\_ \_ Graphic System Role**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ EQUATION**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_helpballoon"></a>\_HELPBALLOON di sistema ruolo \_
+## <a name="role_system_graphic"></a>IMMAGINE DEL \_ SISTEMA \_ RUOLO
 
-Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ HELPBALLOON**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ GRAPHIC.**](object-roles.md)
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDefaultAction
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_ipaddress"></a>\_IPAddress sistema \_ ruolo
+## <a name="role_system_helpballoon"></a>GUIDA \_ DEL SISTEMA DEI \_ RUOLIBALLOON
 
-Per ulteriori informazioni su questo ruolo, vedere [**Role \_ System \_ IPAddress**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ HELPBALLOON**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_link"></a>\_collegamento del sistema ruolo \_
+## <a name="role_system_ipaddress"></a>ROLE \_ SYSTEM \_ IPADDRESS
 
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ collegamento del sistema di ruolo**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ IPADDRESS**](object-roles.md).
+
+**Proprietà e metodi supportati**
+
+-   accHitTest
+-   accLocation
+-   accNavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_link"></a>COLLEGAMENTO SISTEMA \_ \_ RUOLO
+
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ LINK.**](object-roles.md)
 
 **Proprietà e metodi supportati**
 
@@ -413,61 +413,41 @@ Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ collegamento del sis
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDefaultAction
--   ottenere \_ accDescription
--   ottenere \_ accFocus
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_pane"></a>\_riquadro sistema \_ ruoli
+## <a name="role_system_pane"></a>RIQUADRO \_ SISTEMA \_ RUOLO
 
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ riquadro sistema ruoli**](object-roles.md).
-
-**Proprietà e metodi supportati**
-
--   accHitTest
--   accLocation
--   accNavigate
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
-
-## <a name="role_system_row"></a>\_riga sistema \_ ruolo
-
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ riga di sistema del ruolo**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ PANE**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
 -   accNavigate
--   accSelect
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDescription
--   ottenere \_ accFocus
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_rowheader"></a>\_ROWHEADER di sistema ruolo \_
+## <a name="role_system_row"></a>ROLE \_ SYSTEM \_ ROW
 
-Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ ROWHEADER**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ROW.**](object-roles.md)
 
 **Proprietà e metodi supportati**
 
@@ -475,45 +455,65 @@ Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ RO
 -   accLocation
 -   accNavigate
 -   accSelect
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDefaultAction
--   ottenere \_ accDescription
--   ottenere \_ accFocus
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
--   ottenere \_ accValue
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_separator"></a>\_separatore di sistema ruolo \_
+## <a name="role_system_rowheader"></a>ROLE \_ SYSTEM \_ ROWHEADER
 
-Per ulteriori informazioni su questo ruolo, vedere [**\_ \_ separatore di sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ROWHEADER**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accHitTest
 -   accLocation
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   accNavigate
+-   accSelect
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_sound"></a>\_suono del sistema di ruolo \_
+## <a name="role_system_separator"></a>ROLE \_ SYSTEM \_ SEPARATOR
 
-Per altre informazioni su questo ruolo, vedere [**\_ \_ suono del sistema di ruolo**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SEPARATOR**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
--   ottenere \_ accDescription
--   ottenere \_ accName
--   ottenere \_ accRole
--   ottenere \_ accState
+-   accHitTest
+-   accLocation
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_splitbutton"></a>\_SPLITBUTTON di sistema ruolo \_
+## <a name="role_system_sound"></a>SUONO \_ DEL SISTEMA DEL \_ RUOLO
 
-Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ SPLITBUTTON**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SOUND**](object-roles.md).
+
+**Proprietà e metodi supportati**
+
+-   get \_ accDescription
+-   get \_ accName
+-   get \_ accRole
+-   get \_ accState
+
+## <a name="role_system_splitbutton"></a>RUOLO \_ SISTEMA \_ SPLITBUTTON
+
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SPLITBUTTON**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -521,18 +521,18 @@ Per ulteriori informazioni su questo ruolo, vedere [**ruolo del \_ sistema \_ SP
 -   accHitTest
 -   accLocation
 -   accNavigate
--   ottenere \_ accDefaultAction
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accDefaultAction
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_table"></a>\_tabella di sistema del ruolo \_
+## <a name="role_system_table"></a>TABELLA \_ DI SISTEMA DEI \_ RUOLI
 
-Per altre informazioni su questo ruolo, vedere [**\_ \_ tabella di sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ TABLE.**](object-roles.md)
 
 **Proprietà e metodi supportati**
 
@@ -540,30 +540,30 @@ Per altre informazioni su questo ruolo, vedere [**\_ \_ tabella di sistema dei r
 -   accLocation
 -   accNavigate
 -   accSelect
--   ottenere \_ accChild
--   ottenere \_ accChildCount
--   ottenere \_ accDescription
--   ottenere \_ accFocus
--   ottenere \_ accHelp
--   ottenere \_ accHelpTopic
--   ottenere \_ accKeyboardShortcut
--   ottenere \_ accName
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_whitespace"></a>\_spazio del sistema ruolo \_
+## <a name="role_system_whitespace"></a>SPAZIO \_ VUOTO DEL SISTEMA DI \_ RUOLI
 
-Per altre informazioni su questo ruolo, vedere [**\_ \_ spazio del sistema dei ruoli**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ WHITESPACE**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
 -   accLocation
 -   accSelect
--   ottenere \_ accParent
--   ottenere \_ accRole
--   ottenere \_ accState
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
- 
+ 
 
- 
+ 
