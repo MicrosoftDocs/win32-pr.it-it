@@ -1,9 +1,9 @@
 ---
 title: Elemento ControlNameDefinition
-description: Rappresenta il nome di un controllo in un modello di layout SizeDefinition personalizzato.
+description: Rappresenta un nome di un controllo in un modello di layout SizeDefinition personalizzato.
 ms.assetid: 94b724bd-a4e3-40e0-9cf0-3cc6a71100d2
 keywords:
-- Barra multifunzione Windows elemento ControlNameDefinition
+- Barra multifunzione di Windows per l'elemento ControlNameDefinition
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14ec269ce51b0074b9a03f78aea218b482955d1b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6b2dc1db251d4d657c3793d2a66a9add1d324c37
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334180"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443442"
 ---
-# <a name="controlnamedefinition-element"></a><span data-ttu-id="31604-104">Elemento ControlNameDefinition</span><span class="sxs-lookup"><span data-stu-id="31604-104">ControlNameDefinition element</span></span>
+# <a name="controlnamedefinition-element"></a><span data-ttu-id="036ad-104">Elemento ControlNameDefinition</span><span class="sxs-lookup"><span data-stu-id="036ad-104">ControlNameDefinition element</span></span>
 
-<span data-ttu-id="31604-105">Rappresenta il nome di un controllo in un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato.</span><span class="sxs-lookup"><span data-stu-id="31604-105">Represents a name of a control in a custom [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template.</span></span>
+<span data-ttu-id="036ad-105">Rappresenta un nome di un controllo in un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato.</span><span class="sxs-lookup"><span data-stu-id="036ad-105">Represents a name of a control in a custom [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="31604-106">Utilizzo</span><span class="sxs-lookup"><span data-stu-id="31604-106">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="036ad-106">Utilizzo</span><span class="sxs-lookup"><span data-stu-id="036ad-106">Usage</span></span>
 
 ``` syntax
 <ControlNameDefinition
@@ -33,45 +33,45 @@ ms.locfileid: "104334180"
 </ControlNameDefinition>
 ```
 
-## <a name="attributes"></a><span data-ttu-id="31604-107">Attributi</span><span class="sxs-lookup"><span data-stu-id="31604-107">Attributes</span></span>
+## <a name="attributes"></a><span data-ttu-id="036ad-107">Attributi</span><span class="sxs-lookup"><span data-stu-id="036ad-107">Attributes</span></span>
 
 
 
-| <span data-ttu-id="31604-108">Attributo</span><span class="sxs-lookup"><span data-stu-id="31604-108">Attribute</span></span>           | <span data-ttu-id="31604-109">Type</span><span class="sxs-lookup"><span data-stu-id="31604-109">Type</span></span>                                       | <span data-ttu-id="31604-110">Obbligatoria</span><span class="sxs-lookup"><span data-stu-id="31604-110">Required</span></span>      | <span data-ttu-id="31604-111">Descrizione</span><span class="sxs-lookup"><span data-stu-id="31604-111">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                           |
+| <span data-ttu-id="036ad-108">Attributo</span><span class="sxs-lookup"><span data-stu-id="036ad-108">Attribute</span></span>           | <span data-ttu-id="036ad-109">Type</span><span class="sxs-lookup"><span data-stu-id="036ad-109">Type</span></span>                                       | <span data-ttu-id="036ad-110">Obbligatoria</span><span class="sxs-lookup"><span data-stu-id="036ad-110">Required</span></span>      | <span data-ttu-id="036ad-111">Descrizione</span><span class="sxs-lookup"><span data-stu-id="036ad-111">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------|--------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="31604-112">**Nome**</span><span class="sxs-lookup"><span data-stu-id="31604-112">**Name**</span></span><br/> | <span data-ttu-id="31604-113">XS: positiveInteger o xs: String</span><span class="sxs-lookup"><span data-stu-id="31604-113">xs:positiveInteger or xs:string</span></span><br/> | <span data-ttu-id="31604-114">No</span><span class="sxs-lookup"><span data-stu-id="31604-114">No</span></span><br/> | <span data-ttu-id="31604-115"><dt> (XS: positiveInteger o xs: String)</span><span class="sxs-lookup"><span data-stu-id="31604-115"><dt> (xs:positiveInteger or xs:string)</span></span><br/> </dt> <dd> <span data-ttu-id="31604-116">Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi.</span><span class="sxs-lookup"><span data-stu-id="31604-116">A string, an integer value between 2 and 59999, inclusive, or a hexadecimal value between 0x2 and 0xea5f, inclusive.</span></span> <br/> <span data-ttu-id="31604-117">Il valore deve essere univoco all'interno del documento XML della barra multifunzione.</span><span class="sxs-lookup"><span data-stu-id="31604-117">The value must be unique within the Ribbon XML document.</span></span> <br/> <span data-ttu-id="31604-118">Lunghezza massima: 100 caratteri.</span><span class="sxs-lookup"><span data-stu-id="31604-118">Maximum length: 100 characters.</span></span> <br/> </dd> </dl> |
+| <span data-ttu-id="036ad-112">**Nome**</span><span class="sxs-lookup"><span data-stu-id="036ad-112">**Name**</span></span><br/> | <span data-ttu-id="036ad-113">xs:positiveInteger o xs:string</span><span class="sxs-lookup"><span data-stu-id="036ad-113">xs:positiveInteger or xs:string</span></span><br/> | <span data-ttu-id="036ad-114">No</span><span class="sxs-lookup"><span data-stu-id="036ad-114">No</span></span><br/> | <span data-ttu-id="036ad-115"><dt> (xs:positiveInteger o xs:string)</span><span class="sxs-lookup"><span data-stu-id="036ad-115"><dt> (xs:positiveInteger or xs:string)</span></span><br/> </dt> <dd> <span data-ttu-id="036ad-116">Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi.</span><span class="sxs-lookup"><span data-stu-id="036ad-116">A string, an integer value between 2 and 59999, inclusive, or a hexadecimal value between 0x2 and 0xea5f, inclusive.</span></span> <br/> <span data-ttu-id="036ad-117">Il valore deve essere univoco all'interno del documento XML della barra multifunzione.</span><span class="sxs-lookup"><span data-stu-id="036ad-117">The value must be unique within the Ribbon XML document.</span></span> <br/> <span data-ttu-id="036ad-118">Lunghezza massima: 100 caratteri.</span><span class="sxs-lookup"><span data-stu-id="036ad-118">Maximum length: 100 characters.</span></span> <br/> </dd> </dl> |
 
 
 
-## <a name="child-elements"></a><span data-ttu-id="31604-119">Elementi figlio</span><span class="sxs-lookup"><span data-stu-id="31604-119">Child elements</span></span>
+## <a name="child-elements"></a><span data-ttu-id="036ad-119">Elementi figlio</span><span class="sxs-lookup"><span data-stu-id="036ad-119">Child elements</span></span>
 
 
 
-| <span data-ttu-id="31604-120">Elemento</span><span class="sxs-lookup"><span data-stu-id="31604-120">Element</span></span>                              | <span data-ttu-id="31604-121">Descrizione</span><span class="sxs-lookup"><span data-stu-id="31604-121">Description</span></span>                                        |
+| <span data-ttu-id="036ad-120">Elemento</span><span class="sxs-lookup"><span data-stu-id="036ad-120">Element</span></span>                              | <span data-ttu-id="036ad-121">Descrizione</span><span class="sxs-lookup"><span data-stu-id="036ad-121">Description</span></span>                                        |
 |--------------------------------------|----------------------------------------------------|
-| <span data-ttu-id="31604-122">**ControlNameDefinition**</span><span class="sxs-lookup"><span data-stu-id="31604-122">**ControlNameDefinition**</span></span><br/> | <span data-ttu-id="31604-123">Può essere presente una o più volte</span><span class="sxs-lookup"><span data-stu-id="31604-123">May occur one or more times</span></span><br/> <br/> |
+| <span data-ttu-id="036ad-122">**ControlNameDefinition**</span><span class="sxs-lookup"><span data-stu-id="036ad-122">**ControlNameDefinition**</span></span><br/> | <span data-ttu-id="036ad-123">Può verificarsi una o più volte</span><span class="sxs-lookup"><span data-stu-id="036ad-123">May occur one or more times</span></span><br/> <br/> |
 
 
 
-## <a name="parent-elements"></a><span data-ttu-id="31604-124">Elementi padre</span><span class="sxs-lookup"><span data-stu-id="31604-124">Parent elements</span></span>
+## <a name="parent-elements"></a><span data-ttu-id="036ad-124">Elementi padre</span><span class="sxs-lookup"><span data-stu-id="036ad-124">Parent elements</span></span>
 
 
 
-| <span data-ttu-id="31604-125">Elemento</span><span class="sxs-lookup"><span data-stu-id="31604-125">Element</span></span>                                                                   |
+| <span data-ttu-id="036ad-125">Elemento</span><span class="sxs-lookup"><span data-stu-id="036ad-125">Element</span></span>                                                                   |
 |---------------------------------------------------------------------------|
-| [<span data-ttu-id="31604-126">**ControlNameMap**</span><span class="sxs-lookup"><span data-stu-id="31604-126">**ControlNameMap**</span></span>](windowsribbon-element-controlnamemap.md)<br/> |
+| [<span data-ttu-id="036ad-126">**ControlNameMap**</span><span class="sxs-lookup"><span data-stu-id="036ad-126">**ControlNameMap**</span></span>](windowsribbon-element-controlnamemap.md)<br/> |
 
 
 
-## <a name="remarks"></a><span data-ttu-id="31604-127">Commenti</span><span class="sxs-lookup"><span data-stu-id="31604-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="036ad-127">Commenti</span><span class="sxs-lookup"><span data-stu-id="036ad-127">Remarks</span></span>
 
-<span data-ttu-id="31604-128">facoltativo.</span><span class="sxs-lookup"><span data-stu-id="31604-128">Optional.</span></span>
+<span data-ttu-id="036ad-128">facoltativo.</span><span class="sxs-lookup"><span data-stu-id="036ad-128">Optional.</span></span>
 
-<span data-ttu-id="31604-129">Può essere presente una o più volte per ogni elemento [**ControlNameMap**](windowsribbon-element-controlnamemap.md) .</span><span class="sxs-lookup"><span data-stu-id="31604-129">May occur one or more times for each [**ControlNameMap**](windowsribbon-element-controlnamemap.md) element.</span></span>
+<span data-ttu-id="036ad-129">Può verificarsi una o più volte per ogni [**elemento ControlNameMap.**](windowsribbon-element-controlnamemap.md)</span><span class="sxs-lookup"><span data-stu-id="036ad-129">May occur one or more times for each [**ControlNameMap**](windowsribbon-element-controlnamemap.md) element.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="31604-130">Esempio</span><span class="sxs-lookup"><span data-stu-id="31604-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="036ad-130">Esempio</span><span class="sxs-lookup"><span data-stu-id="036ad-130">Examples</span></span>
 
-<span data-ttu-id="31604-131">Nell'esempio di codice seguente viene illustrato il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato a quattro pulsanti con quattro elementi **ControlNameDefinition** .</span><span class="sxs-lookup"><span data-stu-id="31604-131">The following code example demonstrates the basic markup for a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template with four **ControlNameDefinition** elements.</span></span>
+<span data-ttu-id="036ad-131">L'esempio di codice seguente illustra il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) a quattro pulsanti personalizzato con quattro **elementi ControlNameDefinition.**</span><span class="sxs-lookup"><span data-stu-id="036ad-131">The following code example demonstrates the basic markup for a custom four-button [**SizeDefinition**](windowsribbon-element-sizedefinition.md) layout template with four **ControlNameDefinition** elements.</span></span>
 
 
 ```XML
@@ -161,22 +161,18 @@ ms.locfileid: "104334180"
 
 
 
-## <a name="element-information"></a><span data-ttu-id="31604-132">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="31604-132">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="036ad-132">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="036ad-132">Element information</span></span>
+
+* <span data-ttu-id="036ad-133">**Sistema minimo supportato:** Windows 7</span><span class="sxs-lookup"><span data-stu-id="036ad-133">**Minimum supported system**: Windows 7</span></span>
+* <span data-ttu-id="036ad-134">**Può essere vuoto:** No</span><span class="sxs-lookup"><span data-stu-id="036ad-134">**Can be empty**: No</span></span>
 
 
 
-|                                     |           |
-|-------------------------------------|-----------|
-| <span data-ttu-id="31604-133">Sistema minimo supportato</span><span class="sxs-lookup"><span data-stu-id="31604-133">Minimum supported system</span></span><br/> | <span data-ttu-id="31604-134">Windows 7</span><span class="sxs-lookup"><span data-stu-id="31604-134">Windows 7</span></span> |
-| <span data-ttu-id="31604-135">Può essere vuoto</span><span class="sxs-lookup"><span data-stu-id="31604-135">Can be empty</span></span>                        | <span data-ttu-id="31604-136">No</span><span class="sxs-lookup"><span data-stu-id="31604-136">No</span></span>        |
-
-
-
-## <a name="see-also"></a><span data-ttu-id="31604-137">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="31604-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="036ad-135">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="036ad-135">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="31604-138">Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità</span><span class="sxs-lookup"><span data-stu-id="31604-138">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
+[<span data-ttu-id="036ad-136">Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento</span><span class="sxs-lookup"><span data-stu-id="036ad-136">Customizing a Ribbon Through Size Definitions and Scaling Policies</span></span>](windowsribbon-templates.md)
 </dt> </dl>
 
  

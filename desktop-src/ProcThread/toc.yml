@@ -97,7 +97,7 @@
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqgetworkqueuemmcsstaskid
                     - name: RtwqInvokeCallback
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqinvokecallback
-                    - name: RtwqJoinWorkQueue
+                    - name: Coda di lavoro RtwqJoin
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqjoinworkqueue
                     - name: RtwqLockPlatform
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqlockplatform
@@ -163,13 +163,13 @@
         - name: Processi figlio
           href: child-processes.md
           items:
-            - name: Impostazione delle proprietà della finestra tramite STARTUPINFO
+            - name: Impostazione delle proprietà delle finestre tramite STARTUPINFO
               href: setting-window-properties-using-startupinfo.md
             - name: Handle e identificatori del processo
               href: process-handles-and-identifiers.md
-            - name: Enumerazione dei processi
+            - name: Enumerazione Process
               href: process-enumeration.md
-            - name: Recupero di informazioni aggiuntive sul processo
+            - name: Recupero di informazioni aggiuntive sui processi
               href: obtaining-additional-process-information.md
             - name: Ereditarietà
               href: inheritance.md
@@ -177,7 +177,7 @@
               href: environment-variables.md
             - name: Terminazione di un processo
               href: terminating-a-process.md
-            - name: Elabora working set
+            - name: Elaborare un working set
               href: process-working-set.md
             - name: Sicurezza dei processi e diritti di accesso
               href: process-security-and-access-rights.md
@@ -478,7 +478,7 @@
             - name: GetProcessVersion
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocessversion
             - name: GetProcessWorkingSetSize
-              href: /windows/desktop/api/WinBase/nf-winbase-getprocessworkingsetsize
+              href: /windows/desktop/api/memoryapi/nf-memoryapi-getprocessworkingsetsize
             - name: GetProcessWorkingSetSizeEx
               href: /windows/desktop/api/memoryapi/nf-memoryapi-getprocessworkingsetsizeex
             - name: GetProcessorSystemCycleTime
@@ -555,7 +555,7 @@
               href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryidleprocessorcycletime
             - name: QueryIdleProcessorCycleTimeEx
               href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryidleprocessorcycletimeex
-            - name: Oggetto QueryInformationJobObject
+            - name: QueryInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-queryinformationjobobject
             - name: QueryIoRateControlInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-queryioratecontrolinformationjobobject
@@ -585,7 +585,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-setenvironmentvariable
             - name: SetEventWhenCallbackReturns
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-seteventwhencallbackreturns
-            - name: Oggetto SetInformationJobObject
+            - name: SetInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-setinformationjobobject
             - name: SetIoRateControlInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-setioratecontrolinformationjobobject
@@ -608,7 +608,7 @@
             - name: SetProcessShutdownParameters
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessshutdownparameters
             - name: SetProcessWorkingSetSize
-              href: /windows/desktop/api/WinBase/nf-winbase-setprocessworkingsetsize
+              href: /windows/desktop/api/memoryapi/nf-memoryapi-setprocessworkingsetsize
             - name: SetProcessWorkingSetSizeEx
               href: /windows/desktop/api/memoryapi/nf-memoryapi-setprocessworkingsetsizeex
             - name: SetProtectedPolicy

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione MofDeserializerSchemaValidationOption'
+description: Altre informazioni sull'enumerazione MofDeserializerSchemaValidationOption
 title: Enumerazione MofDeserializerSchemaValidationOption (Microsoft.Management.Infrastructure.Serialization)
 TOCTitle: MofDeserializerSchemaValidationOption enumeration (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: T:Microsoft.Management.Infrastructure.Serialization.MofDeserializerSchemaValidationOption
@@ -38,21 +38,21 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: efb6c5a694d09bcb59fedf3f186498c940a95c7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18baf6fa3ab837a82d725b72b8b60e3b33b7175f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130395"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444972"
 ---
-# <a name="mofdeserializerschemavalidationoption-enumeration"></a><span data-ttu-id="b7c8a-103">Enumerazione MofDeserializerSchemaValidationOption</span><span class="sxs-lookup"><span data-stu-id="b7c8a-103">MofDeserializerSchemaValidationOption enumeration</span></span>
+# <a name="mofdeserializerschemavalidationoption-enumeration"></a><span data-ttu-id="dfc39-103">Enumerazione MofDeserializerSchemaValidationOption</span><span class="sxs-lookup"><span data-stu-id="dfc39-103">MofDeserializerSchemaValidationOption enumeration</span></span>
 
-<span data-ttu-id="b7c8a-104">Definisce le costanti che specificano le opzioni di convalida dello schema per la deserializzazione.</span><span class="sxs-lookup"><span data-stu-id="b7c8a-104">Defines constants that specify schema validation options for deserialization.</span></span>
+<span data-ttu-id="dfc39-104">Definisce le costanti che specificano le opzioni di convalida dello schema per la deserializzazione.</span><span class="sxs-lookup"><span data-stu-id="dfc39-104">Defines constants that specify schema validation options for deserialization.</span></span>
 
-<span data-ttu-id="b7c8a-105">**Spazio dei nomi:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="b7c8a-105">**Namespace:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span></span>  
-<span data-ttu-id="b7c8a-106">**Assembly:**  Microsoft. Management. Infrastructure (in Microsoft.Management.Infrastructure.dll)</span><span class="sxs-lookup"><span data-stu-id="b7c8a-106">**Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)</span></span>  
+<span data-ttu-id="dfc39-105">**Spazio dei nomi:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="dfc39-105">**Namespace:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span></span>  
+<span data-ttu-id="dfc39-106">**Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)</span><span class="sxs-lookup"><span data-stu-id="dfc39-106">**Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)</span></span>  
 
-## <a name="syntax"></a><span data-ttu-id="b7c8a-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="b7c8a-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="dfc39-107">Sintassi</span><span class="sxs-lookup"><span data-stu-id="dfc39-107">Syntax</span></span>
 
 ``` csharp
 internal enum MofDeserializerSchemaValidationOption
@@ -70,16 +70,16 @@ type internal MofDeserializerSchemaValidationOption
 Friend Enumeration MofDeserializerSchemaValidationOption
 ```
 
-## <a name="members"></a><span data-ttu-id="b7c8a-108">Members</span><span class="sxs-lookup"><span data-stu-id="b7c8a-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="dfc39-108">Members</span><span class="sxs-lookup"><span data-stu-id="dfc39-108">Members</span></span>
 
-||<span data-ttu-id="b7c8a-109">Nome del membro</span><span class="sxs-lookup"><span data-stu-id="b7c8a-109">Member name</span></span>|<span data-ttu-id="b7c8a-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="b7c8a-110">Description</span></span>|
-|-|-|-|
-||<span data-ttu-id="b7c8a-111">Predefinito</span><span class="sxs-lookup"><span data-stu-id="b7c8a-111">Default</span></span>|<span data-ttu-id="b7c8a-112">Specifica la convalida dello schema predefinito.</span><span class="sxs-lookup"><span data-stu-id="b7c8a-112">Specifies default schema validation.</span></span>|
-||<span data-ttu-id="b7c8a-113">Strict</span><span class="sxs-lookup"><span data-stu-id="b7c8a-113">Strict</span></span>|<span data-ttu-id="b7c8a-114">Specifica una convalida dello schema restrittiva.</span><span class="sxs-lookup"><span data-stu-id="b7c8a-114">Specifies strict schema validation.</span></span>|
-||<span data-ttu-id="b7c8a-115">Sciolto</span><span class="sxs-lookup"><span data-stu-id="b7c8a-115">Loose</span></span>|<span data-ttu-id="b7c8a-116">Specifica la convalida dello schema sciolta.</span><span class="sxs-lookup"><span data-stu-id="b7c8a-116">Specifies loose schema validation.</span></span>|
-||<span data-ttu-id="b7c8a-117">IgnorePropertyType</span><span class="sxs-lookup"><span data-stu-id="b7c8a-117">IgnorePropertyType</span></span>|<span data-ttu-id="b7c8a-118">Specifica che la convalida dello schema deve ignorare i tipi di proprietà.</span><span class="sxs-lookup"><span data-stu-id="b7c8a-118">Specifies that schema validation should ignore property types.</span></span>|
-||<span data-ttu-id="b7c8a-119">Ignora</span><span class="sxs-lookup"><span data-stu-id="b7c8a-119">Ignore</span></span>|<span data-ttu-id="b7c8a-120">Specifica che la convalida dello schema deve essere ignorata.</span><span class="sxs-lookup"><span data-stu-id="b7c8a-120">Specifies that schema validation should be ignored.</span></span>|
+|<span data-ttu-id="dfc39-109">Nome del membro</span><span class="sxs-lookup"><span data-stu-id="dfc39-109">Member name</span></span>|<span data-ttu-id="dfc39-110">Descrizione</span><span class="sxs-lookup"><span data-stu-id="dfc39-110">Description</span></span>|
+|-|-|
+|<span data-ttu-id="dfc39-111">Predefinito</span><span class="sxs-lookup"><span data-stu-id="dfc39-111">Default</span></span>|<span data-ttu-id="dfc39-112">Specifica la convalida dello schema predefinita.</span><span class="sxs-lookup"><span data-stu-id="dfc39-112">Specifies default schema validation.</span></span>|
+|<span data-ttu-id="dfc39-113">Strict</span><span class="sxs-lookup"><span data-stu-id="dfc39-113">Strict</span></span>|<span data-ttu-id="dfc39-114">Specifica una convalida rigida dello schema.</span><span class="sxs-lookup"><span data-stu-id="dfc39-114">Specifies strict schema validation.</span></span>|
+|<span data-ttu-id="dfc39-115">Sciolto</span><span class="sxs-lookup"><span data-stu-id="dfc39-115">Loose</span></span>|<span data-ttu-id="dfc39-116">Specifica la convalida dello schema libero.</span><span class="sxs-lookup"><span data-stu-id="dfc39-116">Specifies loose schema validation.</span></span>|
+|<span data-ttu-id="dfc39-117">IgnorePropertyType</span><span class="sxs-lookup"><span data-stu-id="dfc39-117">IgnorePropertyType</span></span>|<span data-ttu-id="dfc39-118">Specifica che la convalida dello schema deve ignorare i tipi di proprietà.</span><span class="sxs-lookup"><span data-stu-id="dfc39-118">Specifies that schema validation should ignore property types.</span></span>|
+|<span data-ttu-id="dfc39-119">Ignora</span><span class="sxs-lookup"><span data-stu-id="dfc39-119">Ignore</span></span>|<span data-ttu-id="dfc39-120">Specifica che la convalida dello schema deve essere ignorata.</span><span class="sxs-lookup"><span data-stu-id="dfc39-120">Specifies that schema validation should be ignored.</span></span>|
 
-## <a name="see-also"></a><span data-ttu-id="b7c8a-121">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="b7c8a-121">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dfc39-121">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="dfc39-121">See Also</span></span>
 
-<span data-ttu-id="b7c8a-122">[Spazio dei nomi Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="b7c8a-122">[Microsoft.Management.Infrastructure.Serialization Namespace](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span></span>
+<span data-ttu-id="dfc39-122">[Spazio dei nomi Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span><span class="sxs-lookup"><span data-stu-id="dfc39-122">[Microsoft.Management.Infrastructure.Serialization Namespace](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))</span></span>
