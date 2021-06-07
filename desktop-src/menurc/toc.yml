@@ -11,16 +11,16 @@
               href: adding-deleting-and-replacing-resources.md
             - name: Enumerazione delle risorse
               href: enumerating-resources.md
-            - name: Ricerca e caricamento delle risorse
+            - name: Ricerca e caricamento di risorse
               href: finding-and-loading-resources.md
             - name: Formati di file di risorse
               href: resource-file-formats.md
             - name: Uso delle risorse
               href: using-resources.md
-        - name: Riferimento alla risorsa
+        - name: Informazioni di riferimento sulla risorsa
           href: resources-reference.md
           items:
-            - name: Funzioni di risorsa
+            - name: Funzioni delle risorse
               href: resources-functions.md
               items:
                 - name: BeginUpdateResource
@@ -44,7 +44,7 @@
                 - name: EnumResourceLanguagesEx
                   href: /windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize
                 - name: EnumResourceNames
-                  href: /windows/desktop/api/Winbase/nf-winbase-enumresourcenamesa
+                  href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesa
                 - name: EnumResourceNamesEx
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesexw
                 - name: EnumResourceTypes
@@ -53,7 +53,7 @@
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcetypesexw
                 - name: EnumResTypeProc
                   href: /previous-versions/windows/desktop/legacy/ms648041(v=vs.85)
-                - name: FindResource
+                - name: Findresource
                   href: /windows/desktop/api/Winbase/nf-winbase-findresourcea
                 - name: FindResourceEx
                   href: /windows/desktop/api/Winbase/nf-winbase-findresourceexa
@@ -61,7 +61,7 @@
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-freeresource
                 - name: IndexFilePath
                   href: /windows/desktop/api/resourceindexer/nf-resourceindexer-indexfilepath
-                - name: LoadImage
+                - name: Loadimage
                   href: /windows/desktop/api/Winuser/nf-winuser-loadimagea
                 - name: LoadResource
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-loadresource
@@ -78,7 +78,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-is_intresource
                 - name: MAKEINTRESOURCE
                   href: /windows/desktop/api/winuser/nf-winuser-makeintresourcea
-            - name: Strutture di risorse
+            - name: Strutture delle risorse
               href: resources-structures.md
               items:
                 - name: ACCELTABLEENTRY
@@ -87,7 +87,7 @@
                   href: cursordir.md
                 - name: CURSORSHAPE
                   href: /windows/win32/api/Winuser/ns-winuser-cursorshape
-                - name: Diaffitto
+                - name: DIRENTRY
                   href: direntry.md
                 - name: FONTDIRENTRY
                   href: fontdirentry.md
@@ -121,17 +121,17 @@
                   href: resourceheader.md
             - name: Tipi di risorsa
               href: resource-types.md
-    - name: CARETS
+    - name: Caret
       href: carets.md
       items:
-        - name: Informazioni sui Carrier
+        - name: Informazioni sui caret
           href: about-carets.md
-        - name: Uso del punto di inserimento
+        - name: Uso dei caret
           href: using-carets.md
-        - name: Riferimento al punto di inserimento
+        - name: Informazioni di riferimento sul punto di riferimento
           href: caret-reference.md
           items:
-            - name: Funzioni del cursore
+            - name: Funzioni di caret
               href: caret-functions.md
               items:
                 - name: CreateCaret
@@ -157,7 +157,7 @@
           href: about-cursors.md
         - name: Uso dei cursori
           href: using-cursors.md
-        - name: Riferimento cursore
+        - name: Riferimento al cursore
           href: cursor-reference.md
           items:
             - name: Funzioni per i cursori
@@ -185,22 +185,22 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-loadcursora
                 - name: LoadCursorFromFile
                   href: /windows/desktop/api/Winuser/nf-winuser-loadcursorfromfilea
-                - name: SetCursor
+                - name: Setcursor
                   href: /windows/desktop/api/Winuser/nf-winuser-setcursor
                 - name: SetCursorPos
                   href: /windows/desktop/api/Winuser/nf-winuser-setcursorpos
                 - name: SetPhysicalCursorPos
                   href: /windows/desktop/api/Winuser/nf-winuser-setphysicalcursorpos
-                - name: Funzione SetSystemCursor
+                - name: SetSystemCursor
                   href: /windows/desktop/api/Winuser/nf-winuser-setsystemcursor
                 - name: ShowCursor
                   href: /windows/desktop/api/Winuser/nf-winuser-showcursor
             - name: Notifiche del cursore
               href: cursor-notifications.md
               items:
-                - name: WM_SETCURSOR
+                - name: Wm_setcursor
                   href: wm-setcursor.md
-            - name: Strutture di cursori
+            - name: Strutture cursore
               href: cursor-structures.md
               items:
                 - name: CURSORINFO
@@ -212,7 +212,7 @@
           href: about-icons.md
         - name: Uso delle icone
           href: using-icons.md
-        - name: Riferimento icona
+        - name: Informazioni di riferimento sull'icona
           href: icon-reference.md
           items:
             - name: Funzioni icona
@@ -270,12 +270,12 @@
       items:
         - name: Informazioni sui tasti di scelta rapida
           href: about-keyboard-accelerators.md
-        - name: Uso di tasti di scelta rapida
+        - name: Uso dei tasti di scelta rapida
           href: using-keyboard-accelerators.md
-        - name: Riferimento tasto di scelta rapida
+        - name: Informazioni di riferimento sull'acceleratore di tastiera
           href: keyboard-accelerator-reference.md
           items:
-            - name: Funzioni tasto di scelta rapida
+            - name: Funzioni dei tasti di scelta rapida
               href: keyboard-accelerator-functions.md
               items:
                 - name: CopyAcceleratorTable
@@ -288,7 +288,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa
                 - name: TranslateAccelerator
                   href: /windows/desktop/api/Winuser/nf-winuser-translateacceleratora
-            - name: Messaggi tasto di scelta rapida
+            - name: Messaggi dell'acceleratore di tastiera
               href: keyboard-accelerator-messages.md
               items:
                 - name: WM_CHANGEUISTATE
@@ -299,7 +299,7 @@
                   href: wm-queryuistate.md
                 - name: WM_UPDATEUISTATE
                   href: wm-updateuistate.md
-            - name: Notifiche tasti di scelta rapida
+            - name: Notifiche dell'acceleratore di tastiera
               href: keyboard-accelerator-notifications.md
               items:
                 - name: WM_INITMENUPOPUP
@@ -310,12 +310,12 @@
                   href: wm-menuselect.md
                 - name: WM_SYSCHAR
                   href: wm-syschar.md
-                - name: WM_SYSCOMMAND
+                - name: Wm_syscommand
                   href: wm-syscommand.md
-            - name: Strutture di tasti di scelta rapida
+            - name: Strutture dei tasti di scelta rapida
               href: keyboard-accelerator-structures.md
               items:
-                - name: ACCEL
+                - name: Accel
                   href: /windows/win32/api/Winuser/ns-winuser-accel
     - name: Menu
       href: menus.md
@@ -324,7 +324,7 @@
           href: about-menus.md
         - name: Uso di menu
           href: using-menus.md
-        - name: Riferimento a menu
+        - name: Informazioni di riferimento sul menu
           href: menu-reference.md
           items:
             - name: Funzioni di menu
@@ -372,7 +372,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenustate
                 - name: GetMenuString
                   href: /windows/desktop/api/Winuser/nf-winuser-getmenustringa
-                - name: Getsottomenù
+                - name: GetSubMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-getsubmenu
                 - name: GetSystemMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-getsystemmenu
@@ -382,7 +382,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-insertmenua
                 - name: InsertMenuItem
                   href: /windows/desktop/api/Winuser/nf-winuser-insertmenuitema
-                - name: Menu di scelta rapida
+                - name: IsMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-ismenu
                 - name: LoadMenu
                   href: /windows/desktop/api/Winuser/nf-winuser-loadmenua
@@ -454,16 +454,16 @@
                   href: /windows/desktop/api/Winuser/ns-winuser-menuitemtemplate
                 - name: MENUITEMTEMPLATEHEADER
                   href: /windows/desktop/api/Winuser/ns-winuser-menuitemtemplateheader
-                - name: TPMPARAMS
+                - name: PARAMETRI TPM
                   href: /windows/win32/api/Winuser/ns-winuser-tpmparams
     - name: Stringhe
       href: strings.md
       items:
         - name: Informazioni sulle stringhe
           href: about-strings.md
-        - name: Informazioni su strsafe. h
+        - name: Informazioni su Strsafe.h
           href: strsafe-ovw.md
-        - name: Riferimento alla stringa
+        - name: Informazioni di riferimento sulla stringa
           href: string-reference.md
           items:
             - name: Funzioni di stringa
@@ -501,9 +501,9 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-loadstringa
                 - name: lstrcat
                   href: /windows/desktop/api/Winbase/nf-winbase-lstrcata
-                - name: LSTRCMP
+                - name: lstrcmp
                   href: /windows/desktop/api/Winbase/nf-winbase-lstrcmpa
-                - name: due
+                - name: lstrcmpi
                   href: /windows/desktop/api/Winbase/nf-winbase-lstrcmpia
                 - name: lstrcpy
                   href: /windows/desktop/api/Winbase/nf-winbase-lstrcpya
@@ -519,7 +519,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-wsprintfa
                 - name: wvsprintf
                   href: /windows/desktop/api/Winuser/nf-winuser-wvsprintfa
-            - name: Funzioni strsafe
+            - name: Funzioni Strsafe
               href: string-overviews.md
               items:
                 - name: StringCbCat
@@ -605,21 +605,21 @@
     - name: Informazioni sulla versione
       href: version-information.md
       items:
-        - name: Informazioni sulle versioni
+        - name: Informazioni sulle informazioni sulla versione
           href: about-version-information.md
-        - name: Utilizzo delle informazioni sulla versione
+        - name: Uso delle informazioni sulla versione
           href: using-version-information.md
         - name: Informazioni di riferimento sulla versione
           href: version-information-reference.md
           items:
-            - name: Funzioni di informazioni sulla versione
+            - name: Funzioni relative alle informazioni sulla versione
               href: version-information-functions.md
               items:
                 - name: GetFileVersionInfo
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfoa
                 - name: GetFileVersionInfoEx
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfoexa
-                - name: Impossibile eseguire GetFileVersionInfoSize
+                - name: GetFileVersionInfoSize
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfosizea
                 - name: GetFileVersionInfoSizeEx
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfosizeexa
@@ -631,14 +631,14 @@
                   href: /windows/desktop/api/Winver/nf-winver-verlanguagenamea
                 - name: VerQueryValue
                   href: /windows/desktop/api/Winver/nf-winver-verqueryvaluea
-            - name: Strutture di informazioni sulla versione
+            - name: Strutture delle informazioni sulla versione
               href: version-information-structures.md
               items:
-                - name: string
+                - name: Stringa
                   href: string-str.md
                 - name: StringFileInfo
                   href: stringfileinfo.md
-                - name: Un'STRINGTABLE
+                - name: Stringtable
                   href: stringtable.md
                 - name: Var
                   href: var-str.md
@@ -683,10 +683,10 @@
               href: preprocessor-operators.md
             - name: Direttive pragma
               href: pragma-directives.md
-            - name: Istruzioni Resource-Definition
+            - name: Resource-Definition istruzioni
               href: resource-definition-statements.md
               items:
-                - name: Risorsa ACCELERAtori
+                - name: Risorsa ACCELERATORS
                   href: accelerators-resource.md
                 - name: Controllo AUTO3STATE
                   href: auto3state-control.md
@@ -696,33 +696,33 @@
                   href: autoradiobutton-control.md
                 - name: Risorsa BITMAP
                   href: bitmap-resource.md
-                - name: DIDASCALIa (istruzione)
+                - name: Istruzione CAPTION
                   href: caption-statement.md
-                - name: Caratteristiche (istruzione)
+                - name: Istruzione CHARACTERISTICS
                   href: characteristics-statement.md
-                - name: CHECKBOX (controllo)
+                - name: Controllo CHECKBOX
                   href: checkbox-control.md
                 - name: Istruzione CLASS
                   href: class-statement.md
                 - name: Controllo COMBOBOX
                   href: combobox-control.md
-                - name: Controllo controllo
+                - name: CONTROL Control
                   href: control-control.md
                 - name: Controllo CTEXT
                   href: ctext-control.md
-                - name: Risorsa cursore
+                - name: Risorsa CURSOR
                   href: cursor-resource.md
                 - name: Controllo DEFPUSHBUTTON
                   href: defpushbutton-control.md
-                - name: Risorsa finestra di dialogo
+                - name: Risorsa DIALOG
                   href: dialog-resource.md
                 - name: Risorsa DIALOGEX
                   href: dialogex-resource.md
                 - name: Controllo EDITTEXT
                   href: edittext-control.md
-                - name: EXSTYLE-istruzione
+                - name: Istruzione EXSTYLE
                   href: exstyle-statement.md
-                - name: Risorsa carattere
+                - name: Risorsa FONT
                   href: font-resource.md
                 - name: Istruzione FONT
                   href: font-statement.md
@@ -730,13 +730,13 @@
                   href: groupbox-control.md
                 - name: Risorsa HTML
                   href: html-resource.md
-                - name: ICONA risorsa
+                - name: Risorsa ICON
                   href: icon-resource.md
                 - name: Controllo ICON
                   href: icon-control.md
-                - name: LANGUAGE (istruzione)
+                - name: Istruzione LANGUAGE
                   href: language-statement.md
-                - name: LISTBOX (controllo)
+                - name: Controllo LISTBOX
                   href: listbox-control.md
                 - name: Controllo LTEXT
                   href: ltext-control.md
@@ -746,7 +746,7 @@
                   href: menu-statement.md
                 - name: Risorsa MENUEX
                   href: menuex-resource.md
-                - name: MENUITEM (istruzione)
+                - name: Istruzione MENUITEM
                   href: menuitem-statement.md
                 - name: Risorsa MESSAGETABLE
                   href: messagetable-resource.md
@@ -754,23 +754,23 @@
                   href: popup-resource.md
                 - name: Controllo PUSHBOX
                   href: pushbox-control.md
-                - name: Controllo pulsante
+                - name: Controllo PUSHBUTTON
                   href: pushbutton-control.md
-                - name: RADIOBUTTON (controllo)
+                - name: Controllo RADIOBUTTON
                   href: radiobutton-control.md
                 - name: Risorsa RCDATA
                   href: rcdata-resource.md
                 - name: Controllo RTEXT
                   href: rtext-control.md
-                - name: SCROLLBAR (controllo)
+                - name: Controllo SCROLLBAR
                   href: scrollbar-control.md
                 - name: Controllo STATE3
                   href: state3-control.md
-                - name: Risorsa un'STRINGTABLE
+                - name: Risorsa STRINGTABLE
                   href: stringtable-resource.md
                 - name: Istruzione STYLE
                   href: style-statement.md
-                - name: Risorsa User-Defined
+                - name: User-Defined risorsa
                   href: user-defined-resource.md
                 - name: Istruzione VERSION
                   href: version-statement.md
@@ -783,9 +783,9 @@
                       href: varfileinfo-block.md
                 - name: Parametri di controllo comuni
                   href: common-control-parameters.md
-                - name: Attributi delle risorse comuni
+                - name: Attributi comuni delle risorse
                   href: common-resource-attributes.md
-            - name: File Resource-Definition di esempio
+            - name: File di Resource-Definition di esempio
               href: sample-resource-definition-file.md
         - name: Using RC (The RC Command Line) (Uso di RC - Riga di comando RC)
           href: using-rc-the-rc-command-line-.md
@@ -796,12 +796,12 @@
               href: renaming-the-compiled-resource-file.md
             - name: Ricerca di file
               href: searching-for-files.md
-            - name: Visualizzazione dei messaggi di stato
+            - name: Visualizzazione di messaggi di stato
               href: displaying-progress-messages.md
             - name: Messaggi di diagnostica RC
               href: rc-diagnostic-messages.md
               items:
-                - name: A
+                - name: Una
                   href: a.md
                 - name: B
                   href: b.md
@@ -830,45 +830,45 @@
     - name: Informazioni di riferimento sulle API PRI
       href: pri-indexing-reference.md
       items:
-        - name: MrmCreateConfig (funzione)
+        - name: Funzione MrmCreateConfig
           href: mrmcreateconfig.md
-        - name: MrmCreateConfigInMemory (funzione)
+        - name: Funzione MrmCreateConfigInMemory
           href: mrmcreateconfiginmemory.md
-        - name: MrmCreateResourceFile (funzione)
+        - name: Funzione MrmCreateResourceFile
           href: mrmcreateresourcefile.md
-        - name: MrmCreateResourceFileInMemory (funzione)
+        - name: Funzione MrmCreateResourceFileInMemory
           href: mrmcreateresourcefileinmemory.md
-        - name: MrmCreateResourceIndexer (funzione)
+        - name: Funzione MrmCreateResourceIndexer
           href: mrmcreateresourceindexer.md
-        - name: MrmCreateResourceIndexerFromPreviousPriData (funzione)
+        - name: Funzione MrmCreateResourceIndexerFromPreviousPriData
           href: mrmcreateresourceindexerfrompreviouspridata-.md
-        - name: MrmCreateResourceIndexerFromPreviousPriFile (funzione)
+        - name: Funzione MrmCreateResourceIndexerFromPreviousPriFile
           href: mrmcreateresourceindexerfrompreviousprifile.md
-        - name: MrmCreateResourceIndexerFromPreviousSchemaData (funzione)
+        - name: Funzione MrmCreateResourceIndexerFromPreviousSchemaData
           href: mrmcreateresourceindexerfrompreviousschemadata.md
-        - name: MrmCreateResourceIndexerFromPreviousSchemaFile (funzione)
+        - name: Funzione MrmCreateResourceIndexerFromPreviousSchemaFile
           href: mrmcreateresourceindexerfrompreviousschemafile.md
-        - name: MrmDestroyIndexerAndMessages (funzione)
+        - name: Funzione MrmDestroyIndexerAndMessages
           href: mrmdestroyindexerandmessages.md
-        - name: MrmDumpPriFile (funzione)
+        - name: Funzione MrmDumpPriFile
           href: mrmdumpprifile.md
-        - name: MrmDumpPriFileInMemory (funzione)
+        - name: Funzione MrmDumpPriFileInMemory
           href: mrmdumpprifileinmemory.md
-        - name: MrmDumpPriDataInMemory (funzione)
+        - name: Funzione MrmDumpPriDataInMemory
           href: mrmdumppridatainmemory.md
-        - name: MrmFreeMemory (funzione)
+        - name: Funzione MrmFreeMemory
           href: mrmfreememory.md
-        - name: MrmIndexEmbeddedData (funzione)
+        - name: Funzione MrmIndexEmbeddedData
           href: mrmindexembeddeddata.md
-        - name: MrmIndexFile (funzione)
+        - name: Funzione MrmIndexFile
           href: mrmindexfile.md
-        - name: MrmIndexFileAutoQualifiers (funzione)
+        - name: Funzione MrmIndexFileAutoQualifiers
           href: mrmindexfileautoqualifiers.md
-        - name: MrmIndexResourceContainerAutoQualifiers (funzione)
+        - name: Funzione MrmIndexResourceContainerAutoQualifiers
           href: mrmindexresourcecontainerautoqualifiers.md
-        - name: MrmIndexString (funzione)
+        - name: Funzione MrmIndexString
           href: mrmindexstring.md
-        - name: MrmPeekResourceIndexerMessages (funzione)
+        - name: Funzione MrmPeekResourceIndexerMessages
           href: mrmpeekresourceindexermessages.md
         - name: Struttura MrmResourceIndexerHandle
           href: mrmresourceindexerhandle.md

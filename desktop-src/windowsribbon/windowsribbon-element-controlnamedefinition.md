@@ -1,9 +1,9 @@
 ---
 title: Elemento ControlNameDefinition
-description: Rappresenta il nome di un controllo in un modello di layout SizeDefinition personalizzato.
+description: Rappresenta un nome di un controllo in un modello di layout SizeDefinition personalizzato.
 ms.assetid: 94b724bd-a4e3-40e0-9cf0-3cc6a71100d2
 keywords:
-- Barra multifunzione Windows elemento ControlNameDefinition
+- Barra multifunzione di Windows per l'elemento ControlNameDefinition
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14ec269ce51b0074b9a03f78aea218b482955d1b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6b2dc1db251d4d657c3793d2a66a9add1d324c37
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334180"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443442"
 ---
 # <a name="controlnamedefinition-element"></a>Elemento ControlNameDefinition
 
-Rappresenta il nome di un controllo in un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato.
+Rappresenta un nome di un controllo in un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -39,7 +39,7 @@ Rappresenta il nome di un controllo in un modello di layout [**SizeDefinition**]
 
 | Attributo           | Type                                       | Obbligatoria      | Descrizione                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------|--------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nome**<br/> | XS: positiveInteger o xs: String<br/> | No<br/> | <dt> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl> |
+| **Nome**<br/> | xs:positiveInteger o xs:string<br/> | No<br/> | <dt> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Rappresenta il nome di un controllo in un modello di layout [**SizeDefinition**]
 
 | Elemento                              | Descrizione                                        |
 |--------------------------------------|----------------------------------------------------|
-| **ControlNameDefinition**<br/> | Può essere presente una o più volte<br/> <br/> |
+| **ControlNameDefinition**<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -67,11 +67,11 @@ Rappresenta il nome di un controllo in un modello di layout [**SizeDefinition**]
 
 facoltativo.
 
-Può essere presente una o più volte per ogni elemento [**ControlNameMap**](windowsribbon-element-controlnamemap.md) .
+Può verificarsi una o più volte per ogni [**elemento ControlNameMap.**](windowsribbon-element-controlnamemap.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzato a quattro pulsanti con quattro elementi **ControlNameDefinition** .
+L'esempio di codice seguente illustra il markup di base per un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) a quattro pulsanti personalizzato con quattro **elementi ControlNameDefinition.**
 
 
 ```XML
@@ -163,20 +163,16 @@ Nell'esempio di codice seguente viene illustrato il markup di base per un modell
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

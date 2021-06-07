@@ -1,19 +1,19 @@
 ---
-description: Contiene informazioni sulla formattazione per le linee orizzontali utilizzate per la cancelleria in una nota di Journal.
+description: Contiene informazioni di formattazione per le linee orizzontali utilizzate per gli elementi decorativi in una nota del journal.
 ms.assetid: e3c9e7a8-8de6-4871-b386-2186883f2ee7
 title: Elemento Horizontal
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e380ca35f86ce1012084d31de732cd66c79363
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50de08008d0243d27f8a8c5f64d6aeac5ddbcc1c
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751895"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432378"
 ---
 # <a name="horizontal-element"></a>Elemento Horizontal
 
-Contiene informazioni sulla formattazione per le linee orizzontali utilizzate per la cancelleria in una nota di Journal.
+Contiene informazioni di formattazione per le linee orizzontali utilizzate per gli elementi decorativi in una nota del journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -27,7 +27,7 @@ Contiene informazioni sulla formattazione per le linee orizzontali utilizzate pe
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
@@ -53,11 +53,11 @@ Nessuna.
 <tbody>
 <tr class="odd">
 <td><strong>Style</strong></td>
-<td>SimpleType <a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a></td>
-<td>Necessario</td>
+<td><a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a></td>
+<td>Obbligatoria</td>
 <td>Specifica il tipo di linea da disegnare.</td>
 <td><ul>
-<li>nessuno</li>
+<li>Nessuno</li>
 <li>Tinta unita</li>
 <li>Trattino</li>
 <li>Punto</li>
@@ -68,10 +68,10 @@ Nessuna.
 </tr>
 <tr class="even">
 <td><strong>Colore</strong></td>
-<td>SimpleType <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
+<td><a href="colortype-simple-type.md"><strong>SimpleType ColorType</strong></a></td>
 <td>Facoltativo</td>
 <td>Colore dell'elemento.</td>
-<td>Valore RGB esadecimale. Corrisponde all'espressione regolare seguente: # [0-9a-zA-Z] {6} . Ad esempio, #4a79B5.<br/></td>
+<td>Valore RGB esadecimale. Corrisponde all'espressione regolare seguente: #[0-9a-zA-Z] {6} . Ad esempio, #4a79B5.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>SpacingBefore</strong></td>
@@ -98,11 +98,11 @@ Nessuna.
 
 
 
-|              |                                                                   |
+|  Elemento     | valore                                                     |
 |--------------|-------------------------------------------------------------------|
 | Tipo di elemento | [**ComplexType HorizontalType**](horizontaltype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                        |
-| Nome schema  | Lettore Journal                                                    |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                        |
+| Nome schema  | Lettore journal                                                    |
 
 
 

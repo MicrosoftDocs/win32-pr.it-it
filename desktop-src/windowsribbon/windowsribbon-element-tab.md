@@ -1,9 +1,9 @@
 ---
 title: Elemento Tab
-description: Rappresenta una scheda di base o contestuale.
+description: Rappresenta una scheda principale o contestuale.
 ms.assetid: 2e73a89c-4d31-4075-93c8-e43213a20791
 keywords:
-- Barra multifunzione di Windows elemento scheda
+- Elemento Scheda Barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e54abc7e13906ada69c1e10f81878c77c4bf5d8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 410326961df84f6ae62d3c43bee3e651c9533066
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047145"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443882"
 ---
 # <a name="tab-element"></a>Elemento Tab
 
-Rappresenta una scheda di [base](windowsribbon-controls-tab.md) o [contestuale](windowsribbon-controls-tabgroup.md) .
+Rappresenta una scheda [principale](windowsribbon-controls-tab.md) o [contestuale.](windowsribbon-controls-tabgroup.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -59,14 +59,14 @@ Rappresenta una scheda di [base](windowsribbon-controls-tab.md) o [contestuale](
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Valido solo se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> è l'elemento padre.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e vengono ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -79,8 +79,8 @@ Rappresenta una scheda di [base](windowsribbon-controls-tab.md) o [contestuale](
 
 | Elemento                                                                         | Descrizione                                        |
 |---------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Gruppo**](windowsribbon-element-group.md)<br/>                         | Può essere presente una o più volte<br/> <br/> |
-| [**Tab. ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> | Può verificarsi al massimo una volta<br/> <br/>      |
+| [**Gruppo**](windowsribbon-element-group.md)<br/>                         | Può verificarsi una o più volte<br/> <br/> |
+| [**Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> | Può verificarsi al massimo una volta<br/> <br/>      |
 
 
 
@@ -90,7 +90,7 @@ Rappresenta una scheda di [base](windowsribbon-controls-tab.md) o [contestuale](
 
 | Elemento                                                             |
 |---------------------------------------------------------------------|
-| [**Ribbon. Tabs**](windowsribbon-element-ribbon-tabs.md)<br/> |
+| [**Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md)<br/> |
 | [**TabGroup**](windowsribbon-element-tabgroup.md)<br/>       |
 
 
@@ -99,17 +99,17 @@ Rappresenta una scheda di [base](windowsribbon-controls-tab.md) o [contestuale](
 
 Obbligatorio.
 
-Deve essere presente almeno una volta per ogni elemento [**Ribbon. Tabs**](windowsribbon-element-ribbon-tabs.md) o [**TabGroup**](windowsribbon-element-tabgroup.md) .
+Deve verificarsi almeno una volta per [**ogni elemento Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md) [**o TabGroup.**](windowsribbon-element-tabgroup.md)
 
-**Tab** supporta le [modalità di applicazione](ribbon-applicationmodes.md).
+**Tab** supporta le [modalità dell'applicazione](ribbon-applicationmodes.md).
 
-Se per l'elemento **Tab** è presente [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) , è necessario specificare una voce per ogni elemento di [**gruppo**](windowsribbon-element-group.md) e le relative dimensioni ideali in **ScalingPolicy. IdealSizes**.
+Se [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) è presente per l'elemento **Tab,** è necessaria una voce per ogni elemento [**Group**](windowsribbon-element-group.md) e le relative dimensioni ideali in **ScalingPolicy.IdealSizes.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per l'elemento **Tab** .
+L'esempio seguente illustra il markup di base per **l'elemento Tab.**
 
-Questa sezione di codice mostra le dichiarazioni dei comandi di **tabulazione** per una scheda **Home** .
+Questa sezione di codice illustra le **dichiarazioni di comando** tab per una **scheda** Home.
 
 
 ```XML
@@ -177,7 +177,7 @@ Questa sezione di codice mostra le dichiarazioni dei comandi di **tabulazione** 
 
 
 
-In questa sezione del codice vengono illustrate le dichiarazioni di controllo **Tab** .
+Questa sezione di codice illustra le **dichiarazioni del** controllo Tab.
 
 
 ```XML
@@ -195,26 +195,22 @@ In questa sezione del codice vengono illustrate le dichiarazioni di controllo **
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+- **Sistema minimo supportato:** Windows 7 
+- **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
 [Controllo Tab](windowsribbon-controls-tab.md)
 </dt> <dt>
 
-[Controllo gruppo schede](windowsribbon-controls-tabgroup.md)
+[Controllo Gruppo di schede](windowsribbon-controls-tabgroup.md)
 </dt> <dt>
 
-[**Modalità selettore**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
+[**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
 </dt> </dl>
 
  

@@ -1,12 +1,12 @@
 ---
 title: Metodo Create della classe Win32_Service (Servizi Desktop remoto)
-description: 'Metodo Create della classe Win32_Service (Servizi Desktop remoto): crea un nuovo servizio di sistema.'
+description: Create method of the Win32_Service class (Servizi Desktop remoto) - Crea un nuovo servizio di sistema.
 ms.assetid: 805754AA-B62A-4324-B289-503C42BEFA49
 ms.tgt_platform: multiple
 keywords:
-- Creare un metodo Servizi Desktop remoto
+- Creare il metodo Servizi Desktop remoto
 - Creare il metodo Servizi Desktop remoto , Win32_Service classe
-- Win32_Service classe Servizi Desktop remoto , metodo Create
+- Win32_Service classe Servizi Desktop remoto metodo , Create
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9daf877f56bb7e9bfcc349e4efb38635a9286a48
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 14b776d3e451d84c63be5bb61b98ed22081e1a29
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090689"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387120"
 ---
 # <a name="create-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo Create della classe Win32_Service (Servizi Desktop remoto)
 
@@ -59,7 +59,7 @@ uint32 Create(
 *Nome* \[ Pollici\]
 </dt> <dd>
 
-Nome del servizio da installare nel **metodo Create.** La lunghezza massima della stringa è di 256 caratteri. Il database di Gestione controllo servizi mantiene la distinzione tra maiuscole e minuscole dei caratteri, ma i confronti dei nomi dei servizi non esentengono sempre la distinzione tra maiuscole e minuscole. Le barre (/) e le doppie barre rovesciata ( \) sono caratteri del nome del servizio non validi.
+Nome del servizio da installare nel **metodo Create.** La lunghezza massima della stringa è di 256 caratteri. Il database di Gestione controllo servizi mantiene la distinzione tra maiuscole e minuscole dei caratteri, ma i confronti tra i nomi dei servizi non esentengono sempre la distinzione tra maiuscole e minuscole. Le barre (/) e le doppie barre rovesciata ( \\ \\ ) sono caratteri del nome di servizio non validi.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Nome del servizio da installare nel **metodo Create.** La lunghezza massima dell
 
 Nome visualizzato del servizio. La lunghezza massima della stringa è di 256 caratteri. Il nome viene mantenuto senza distinzione tra maiuscole e minuscole in Gestione controllo servizi. *Per i confronti displayName* non viene sempre fatto distinzione tra maiuscole e minuscole.
 
-Vincoli: accetta lo stesso valore del *parametro* Name.
+Vincoli: accetta lo stesso valore del *parametro Name.*
 
 Esempio: "Atdisk".
 
@@ -142,7 +142,7 @@ Processo interattivo
 *ErrorControl* \[ Pollici\]
 </dt> <dd>
 
-Gravità dell'errore se non **è possibile** avviare il metodo Create. Il valore indica l'azione eseguita dal programma di avvio in caso di errore. Tutti gli errori vengono registrati dal sistema.
+Gravità dell'errore se non **è possibile avviare** il metodo Create. Il valore indica l'azione eseguita dal programma di avvio in caso di errore. Tutti gli errori vengono registrati dal sistema.
 
 <dt>
 
@@ -170,7 +170,7 @@ Il sistema viene riavviato con l'ultima configurazione valida nota.
 3
 </dt> <dd>
 
-Il sistema tenta di iniziare con una buona configurazione.
+Il sistema tenta di iniziare con una configurazione valida.
 
 </dd> </dl> </dd> <dt>
 
@@ -226,7 +226,7 @@ Se **true,** il servizio può creare o comunicare con le finestre sul desktop.
 *StartName* \[ Pollici\]
 </dt> <dd>
 
-Nome dell'account con cui viene eseguito il servizio. A seconda del tipo di servizio, il nome dell'account può essere nel formato NomeDominioNomeUtente o Nome entità \\ utente (UPN) ( Username@DomainName ). Il processo del servizio viene registrato usando uno di questi due moduli durante l'esecuzione. Se l'account appartiene al dominio predefinito, . \\ È possibile specificare il nome utente. Se **viene specificato NULL,** il servizio viene connesso come account LocalSystem. Per un driver a livello di kernel o di sistema, *StartName* contiene il nome dell'oggetto driver ,ovvero FileSystem Rdr o Driver Xns, utilizzato dal sistema di \\ input e output \\ \\ (I/O) per caricare il driver di \\ dispositivo. Se **viene specificato NULL,** il driver viene eseguito con un nome di oggetto predefinito creato dal sistema di I/O in base al nome del servizio. Esempio: Amministratore \\ DWDOM.
+Nome dell'account con cui viene eseguito il servizio. A seconda del tipo di servizio, il nome dell'account può essere nel formato NomeDominioNomeUtente o Nome entità \\ utente (UPN) ( Username@DomainName ). Il processo del servizio viene registrato usando uno di questi due formati durante l'esecuzione. Se l'account appartiene al dominio predefinito, . \\ È possibile specificare il nome utente. Se viene specificato **NULL,** il servizio viene connesso come account LocalSystem. Per un kernel o driver a livello di sistema, *StartName* contiene il nome dell'oggetto driver (ovvero FileSystem Rdr o Driver Xns) che il sistema di input e \\ output \\ \\ (I/O) usa per caricare il driver di \\ dispositivo. Se **viene specificato NULL,** il driver viene eseguito con un nome di oggetto predefinito creato dal sistema di I/O in base al nome del servizio. Esempio: Amministratore \\ DWDOM.
 
 </dd> <dt>
 
@@ -256,13 +256,13 @@ Matrice di gruppi di ordinamento del carico che devono essere avviati prima di q
 *Dipendenze dei servizi* \[ Pollici\]
 </dt> <dd>
 
-Matrice contenente i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento della matrice è delimitato da **NULL** e l'elenco viene terminato da due **valori NULL.** In Visual Basic script è possibile passare un vbArray. Se il puntatore **è NULL** o punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che questo servizio può essere eseguito solo se il servizio da cui dipende è in esecuzione.
+Matrice contenente i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento nella matrice è delimitato da **NULL** e l'elenco termina con due **valori NULL.** In Visual Basic o script è possibile passare un oggetto vbArray. Se il puntatore **è NULL** o se punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che il servizio può essere eseguito solo se il servizio da cui dipende è in esecuzione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -283,7 +283,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non dispone dell'accesso necessario.
+L'utente non aveva l'accesso necessario.
 
 </dd> <dt>
 
@@ -304,7 +304,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio (proprietà **State** della classe [**\_ Win32 BaseService)**](/windows/desktop/CIMWin32Prov/win32-baseservice) è uguale a 0, 1 o 2.
+Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio (proprietà **State** della [**classe \_ Win32 BaseService)**](/windows/desktop/CIMWin32Prov/win32-baseservice) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -395,14 +395,14 @@ Il servizio non ha thread di esecuzione.
 **18**
 </dt> <dd>
 
-Il servizio ha dipendenze circolari all'avvio.
+Il servizio presenta dipendenze circolari all'avvio.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Un servizio è in esecuzione con lo stesso nome.
+Un servizio viene eseguito con lo stesso nome.
 
 </dd> <dt>
 

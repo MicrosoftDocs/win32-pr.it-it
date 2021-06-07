@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione MofDeserializerSchemaValidationOption'
+description: Altre informazioni sull'enumerazione MofDeserializerSchemaValidationOption
 title: Enumerazione MofDeserializerSchemaValidationOption (Microsoft.Management.Infrastructure.Serialization)
 TOCTitle: MofDeserializerSchemaValidationOption enumeration (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: T:Microsoft.Management.Infrastructure.Serialization.MofDeserializerSchemaValidationOption
@@ -38,19 +38,19 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: efb6c5a694d09bcb59fedf3f186498c940a95c7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18baf6fa3ab837a82d725b72b8b60e3b33b7175f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130395"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444972"
 ---
 # <a name="mofdeserializerschemavalidationoption-enumeration"></a>Enumerazione MofDeserializerSchemaValidationOption
 
 Definisce le costanti che specificano le opzioni di convalida dello schema per la deserializzazione.
 
-**Spazio dei nomi:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Assembly:**  Microsoft. Management. Infrastructure (in Microsoft.Management.Infrastructure.dll)  
+**Spazio dei nomi:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Sintassi
 
@@ -72,14 +72,14 @@ Friend Enumeration MofDeserializerSchemaValidationOption
 
 ## <a name="members"></a>Members
 
-||Nome del membro|Descrizione|
-|-|-|-|
-||Predefinito|Specifica la convalida dello schema predefinito.|
-||Strict|Specifica una convalida dello schema restrittiva.|
-||Sciolto|Specifica la convalida dello schema sciolta.|
-||IgnorePropertyType|Specifica che la convalida dello schema deve ignorare i tipi di proprietà.|
-||Ignora|Specifica che la convalida dello schema deve essere ignorata.|
+|Nome del membro|Descrizione|
+|-|-|
+|Predefinito|Specifica la convalida dello schema predefinita.|
+|Strict|Specifica una convalida rigida dello schema.|
+|Sciolto|Specifica la convalida dello schema libero.|
+|IgnorePropertyType|Specifica che la convalida dello schema deve ignorare i tipi di proprietà.|
+|Ignora|Specifica che la convalida dello schema deve essere ignorata.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Spazio dei nomi Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+[Spazio dei nomi Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

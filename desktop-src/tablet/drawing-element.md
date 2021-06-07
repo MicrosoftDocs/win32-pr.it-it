@@ -1,17 +1,17 @@
 ---
 description: Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 ms.assetid: 566542f3-b824-442d-9d8b-0064ebcf9b68
-title: Drawing-elemento
+title: Elemento Drawing
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe516a4ba33e6e597b17ce8365d792f19468c3b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d87c0a3d8879fb5f3146c46c9c88d83a6e658d8
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319573"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432513"
 ---
-# <a name="drawing-element"></a>Drawing-elemento
+# <a name="drawing-element"></a>Elemento Drawing
 
 Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
@@ -25,7 +25,7 @@ Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
 [**Contenuto**](content-element--journal-reader.md)
 
-[**Nodo del gruppo**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -33,7 +33,7 @@ Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
 [**CanReClassify**](canreclassify-element.md)
 
-[**InkClass**](inkclass-element.md)
+[**Classe InkClass**](inkclass-element.md)
 
 [**InkObject**](inkobject-element.md)
 
@@ -43,10 +43,10 @@ Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**   | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di delimitazione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**    | **xs:integer**            | Necessario | Distanza tra l'origine e il punto superiore del rettangolo di delimitazione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di delimitazione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di delimitazione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
+| **Top**    | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
 
 
 
@@ -56,11 +56,11 @@ Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
 
 
-|              |                                                             |
+|  Elemento     | valore                                                     |
 |--------------|-------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**DrawingType**](drawingtype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                  |
-| Nome schema  | Lettore Journal                                              |
+| Tipo di elemento | [**ComplexType DrawingType**](drawingtype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                  |
+| Nome schema  | Lettore journal                                              |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Contiene il contenuto di una pagina journal.
+description: Contiene il contenuto di una pagina Journal.
 ms.assetid: 1df78a17-1cd4-4e98-aed1-b09d2b357703
-title: Content (elemento) [Reader Journal]
+title: Content - elemento [Lettore journal]
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5b5a7c9631cd69d38b8db54e2a2f8e69636f7e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fec59601a91d63b09c703557b7c6cd28fd11620
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314930"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432153"
 ---
-# <a name="content-element-journal-reader"></a>\[Lettore Journal elemento contenuto\]
+# <a name="content-element-journal-reader"></a>Lettore journal \[ dell'elemento Content\]
 
-Contiene il contenuto di una pagina journal.
+Contiene il contenuto di una pagina Journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -27,7 +27,7 @@ Contiene il contenuto di una pagina journal.
 
 ## <a name="child-elements"></a>Elementi figlio
 
-[**Nodo del gruppo**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 [**Paragraph**](paragraph-element.md)
 
@@ -37,7 +37,7 @@ Contiene il contenuto di una pagina journal.
 
 [**Immagine**](image-element.md)
 
-[**Contrassegno**](flag-element.md)
+[**Bandiera**](flag-element.md)
 
 ## <a name="attributes"></a>Attributi
 
@@ -57,15 +57,15 @@ Contiene il contenuto di una pagina journal.
 <th>Type</th>
 <th>Obbligatoria</th>
 <th>Descrizione</th>
-<th>PossibleValues</th>
+<th>Valori possibili</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Tipo</strong></td>
-<td><a href="contenttype-complex-type.md"><strong>ComplexType ContentType</strong></a></td>
-<td>Necessario</td>
-<td>Se il tipo è &quot; inerte &quot; , il contenuto non può essere modificato.<br/></td>
+<td><a href="contenttype-complex-type.md"><strong>complexType ContentType</strong></a></td>
+<td>Obbligatoria</td>
+<td>Se il tipo è &quot; &quot; Inert, il contenuto non può essere modificato.<br/></td>
 <td><ul>
 <li>Normale</li>
 <li>Inerte</li>
@@ -82,11 +82,11 @@ Contiene il contenuto di una pagina journal.
 
 
 
-|              |                                                             |
+|  Elemento     | valore                                                     |
 |--------------|-------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**ContentType**](contenttype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                  |
-| Nome schema  | Lettore Journal                                              |
+| Tipo di elemento | [**complexType ContentType**](contenttype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                  |
+| Nome schema  | Lettore journal                                              |
 
 
 

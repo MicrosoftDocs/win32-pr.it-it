@@ -1,9 +1,9 @@
 ---
-title: Elemento Button (Framework della barra multifunzione di Windows)
+title: Elemento Button (framework della barra multifunzione di Windows)
 description: Rappresenta un controllo Button.
 ms.assetid: a17d4dd8-9b0d-4b4a-93f4-f2a8c008fc58
 keywords:
-- Barra multifunzione Windows elemento pulsante
+- Elemento Pulsante Barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 132c037a598a4a853db3203162bcdbe6cd71afca
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 40236b60a9fe9c72dd35d67fcf7c98bc188938af
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104117815"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443572"
 ---
 # <a name="button-element"></a>Elemento Button
 
-Rappresenta un controllo [Button](windowsribbon-controls-button.md) .
+Rappresenta un [controllo](windowsribbon-controls-button.md) Button.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -54,25 +54,25 @@ Rappresenta un controllo [Button](windowsribbon-controls-button.md) .
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>ApplicationDefaults. checkin</strong><br/></td>
+<td><strong>ApplicationDefaults.IsChecked</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
-<td>Questo attributo è valido solo quando l'elemento <strong>Button</strong> è figlio di <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolBar. ApplicationDefaults</strong></a>. <br/> Limitato a uno dei valori seguenti:<br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> false<br/> </dt> <dd></dd> </dl></td>
+<td>Questo attributo è valido solo quando <strong>l'elemento Button</strong> è figlio di <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults.</strong></a> <br/> Limitato a uno dei valori seguenti:<br/> <br/>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Valore predefinito. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Valido solo se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> è l'elemento padre.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e vengono ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -92,11 +92,11 @@ Non ci sono elementi figlio.
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                                                     |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>                                                 |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>                                               |
-| [**Group**](windowsribbon-element-group.md)<br/>                                                                   |
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/>                                                           |
-| [**QuickAccessToolbar. ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> |
+| [**Gruppo**](windowsribbon-element-group.md)<br/>                                                                   |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/>                                                           |
+| [**QuickAccessToolbar.ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                                                       |
-| [**SplitButton. ButtonItem**](windowsribbon-element-splitbutton-buttonitem.md)<br/>                                 |
+| [**SplitButton.ButtonItem**](windowsribbon-element-splitbutton-buttonitem.md)<br/>                                 |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/>                                         |
 
 
@@ -105,17 +105,17 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**SplitButton. ButtonItem**](windowsribbon-element-splitbutton-buttonitem.md) .
+Può verificarsi al massimo una volta per [**ogni elemento SplitButton.ButtonItem.**](windowsribbon-element-splitbutton-buttonitem.md)
 
-Può essere presente una o più volte per ogni elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolBar. ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md), [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md), [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-Il **pulsante** supporta le [modalità di applicazione](ribbon-applicationmodes.md) quando è ospitato nella colonna a sinistra del menu dell'applicazione.
+**Il** pulsante supporta [le modalità](ribbon-applicationmodes.md) dell'applicazione quando è ospitato nella colonna sinistra del menu dell'applicazione.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per il **pulsante**.
+Nell'esempio seguente viene illustrato il markup di base per **l'oggetto Button.**
 
-In questa sezione del codice vengono illustrate le dichiarazioni di comando dei **pulsanti** , con un [**gruppo**](windowsribbon-element-group.md) associato che funge da contenitore padre per l'elemento **Button** .
+Questa sezione di codice illustra le **dichiarazioni button** Command, con un oggetto [**Group**](windowsribbon-element-group.md) associato che funge da contenitore padre per **l'elemento** Button.
 
 
 ```XML
@@ -188,7 +188,7 @@ In questa sezione del codice vengono illustrate le dichiarazioni di comando dei 
 
 
 
-In questa sezione del codice vengono illustrate le dichiarazioni di controllo **Button** .
+Questa sezione di codice illustra le **dichiarazioni del** controllo Button.
 
 
 ```XML
@@ -204,12 +204,8 @@ In questa sezione del codice vengono illustrate le dichiarazioni di controllo **
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | Sì       |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** Sì
 
 
 
@@ -217,10 +213,10 @@ In questa sezione del codice vengono illustrate le dichiarazioni di controllo **
 
 <dl> <dt>
 
-[Button (controllo)](windowsribbon-controls-button.md)
+[Controllo Button](windowsribbon-controls-button.md)
 </dt> <dt>
 
-[**Modalità selettore**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
+[**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
 </dt> </dl>
 
  

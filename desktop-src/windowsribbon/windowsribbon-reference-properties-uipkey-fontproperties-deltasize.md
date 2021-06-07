@@ -1,66 +1,66 @@
 ---
 title: UI_PKEY_FontProperties_DeltaSize
-description: Identifica la \_ \_ Proprietà DeltaSize FontProperties di pkey dell'interfaccia utente \_ .
+description: Identifica la proprietà \_ \_ DeltaSize FontProperties PKEY \_ dell'interfaccia utente.
 ms.assetid: 021a6c79-1d3e-47d2-9601-cdaa2e66a50a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c0046edf41fa61382d45a0662119d8fda237a0f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 67778a710de8f69e0aea1134c12fb9ee3ebe0133
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046760"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444392"
 ---
-# <a name="ui_pkey_fontproperties_deltasize"></a>Interfaccia utente \_ pkey \_ FontProperties \_ DeltaSize
+# <a name="ui_pkey_fontproperties_deltasize"></a>UI \_ PKEY \_ FontProperties \_ DeltaSize
 
-Identifica la \_ \_ Proprietà DeltaSize FontProperties di pkey dell'interfaccia utente \_ .
+Identifica la proprietà \_ \_ DeltaSize FontProperties PKEY \_ dell'interfaccia utente.
 
 ```
 propertyDescription
-   name = UI_PKEY_FontProperties_DeltaSize
-   shellPKey = UI_PKEY_FontProperties_DeltaSize
-   formatID = 00000309-7363-696e-8441798acf5aebb7
-   propID = 313
-   typeInfo
-      type = UI_FONTDELTASIZE
+   name = UI_PKEY_FontProperties_DeltaSize
+   shellPKey = UI_PKEY_FontProperties_DeltaSize
+   formatID = 00000309-7363-696e-8441798acf5aebb7
+   propID = 313
+   typeInfo
+      type = UI_FONTDELTASIZE
 ```
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia utente \_ pkey \_ FontProperties \_ DeltaSize viene utilizzata da un'applicazione nei casi in cui non è possibile che l'applicazione specifichi un valore per le **dimensioni del carattere**, ad esempio quando viene selezionata un'esecuzione di testo di dimensioni eterogenee. Il controllo delle **dimensioni del carattere** è impostato su Blank e l'interfaccia utente \_ pkey \_ FontProperties \_ DeltaSize viene utilizzata per acquisire l'interazione dell'utente con i pulsanti di **espansione del tipo di carattere** e **compattazione dei caratteri** .
+Ui PKEY FontProperties DeltaSize viene usato da un'applicazione nei casi in cui non è possibile per l'applicazione specificare un valore per Dimensioni carattere, ad esempio quando viene selezionata un'esecuzione di testo di \_ \_ dimensioni \_ eterogenee.  Il **controllo Dimensioni carattere è** impostato su vuoto e l'interfaccia utente \_ PKEY FontProperties DeltaSize viene usata per acquisire l'interazione dell'utente con i pulsanti Aumenta e Riduci \_ \_ carattere.  
 
-UI \_ pkey \_ FontProperties \_ DeltaSize è incluso nell' [interfaccia \_ utente \_ pkey \_ FontProperties](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md)ChangedProperties.
+UI \_ PKEY \_ FontProperties \_ DeltaSize è incluso in [UI \_ PKEY \_ FontProperties \_ ChangedProperties](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md).
 
-La schermata seguente mostra i pulsanti **dimensioni** del carattere e **compattazione del carattere** della barra multifunzione [**FontControl**](windowsribbon-element-fontcontrol.md).
+Lo screenshot seguente mostra i pulsanti **Aumenta carattere e** Riduci carattere del controllo FontControl della barra [**multifunzione.**](windowsribbon-element-fontcontrol.md) 
 
-![cattura di schermata dei pulsanti dimensioni e compattazione carattere in fontcontrol.](images/markup/fontcontrol-incdec.png)
+![Screenshot dei pulsanti per l'estensione e la riduzione del tipo di carattere in fontcontrol.](images/markup/fontcontrol-incdec.png)
 
 Nella tabella seguente vengono descritti i valori delle proprietà.
 
 
 
-|                           |                                 |
+|     Valore                 |  Descrizione                    |
 |---------------------------|---------------------------------|
-| `UI_FONTDELTASIZE_GROW`   | Pulsante **aumenta carattere** selezionato.   |
-| `UI_FONTDELTASIZE_SHRINK` | Pulsante **compatta carattere** selezionato. |
+| `UI_FONTDELTASIZE_GROW`   | **Pulsante Aumenta dimensioni** carattere selezionato.   |
+| `UI_FONTDELTASIZE_SHRINK` | **È stato fatto clic sul** pulsante Riduci carattere. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Proprietà del controllo del tipo di carattere](windowsribbon-reference-properties-fontcontrol.md)
+[Proprietà del controllo Font](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
-[**interfaccia utente \_ FONTDELTASIZE**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontdeltasize)
+[**\_FONTDELTASIZE DELL'INTERFACCIA UTENTE**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontdeltasize)
 </dt> <dt>
 
-[Controllo carattere](windowsribbon-controls-fontcontrol.md)
+[Controllo Font](windowsribbon-controls-fontcontrol.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

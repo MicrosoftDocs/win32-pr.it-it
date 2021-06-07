@@ -1,19 +1,19 @@
 ---
-description: Contiene informazioni sulla cancelleria utilizzata nella nota Journal, inclusi il colore di sfondo o l'immagine, le informazioni sul titolo e le informazioni sul layout della linea, ad esempio le regole narrow e le regole dei margini.
+description: Contiene informazioni sugli elementi decorativi usati nella nota Journal, inclusi il colore di sfondo o l'immagine, le informazioni sul titolo e le informazioni sul layout della linea, ad esempio regole di tipo narrow e margin rules.
 ms.assetid: 39cc8ee6-b010-428e-b729-de49fa34b91b
-title: Elemento cancelleria
+title: Elemento Stationery
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7f681e7c27424af573425e852fe7ab345091728
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 012ec2c271d7b0509cf0a9669a9d7898cf7956b6
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319145"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432623"
 ---
-# <a name="stationery-element"></a>Elemento cancelleria
+# <a name="stationery-element"></a>Elemento Stationery
 
-Contiene informazioni sulla cancelleria utilizzata nella nota Journal, inclusi il colore di sfondo o l'immagine, le informazioni sul titolo e le informazioni sul layout della linea, ad esempio le regole narrow e le regole dei margini.
+Contiene informazioni sugli elementi decorativi usati nella nota Journal, inclusi il colore di sfondo o l'immagine, le informazioni sul titolo e le informazioni sul layout della linea, ad esempio regole di tipo narrow e margin rules.
 
 ## <a name="definition"></a>Definizione
 
@@ -35,17 +35,17 @@ Contiene informazioni sulla cancelleria utilizzata nella nota Journal, inclusi i
 
 ## <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|              |                                                                   |
+|  Elemento     | valore                                                             |
 |--------------|-------------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**StationeryType**](stationerytype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                        |
-| Nome schema  | Lettore Journal                                                    |
+| Tipo di elemento | [**ComplexType StationeryType**](stationerytype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                        |
+| Nome schema  | Lettore journal                                                    |
 
 
 

@@ -1,109 +1,109 @@
 ---
 title: Suoni
-description: Sound è l'elemento audio dell'esperienza utente.
+description: L'audio è l'elemento audio dell'esperienza utente.
 ms.assetid: 2a276370-eff9-4844-b008-eba9ae5ac395
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 664d78d00cf75dae8f43717db07290a26574f0c6
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 035f718494e5a0548324f3c5449c5e3ac3f49fa1
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104567425"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444542"
 ---
 # <a name="sound"></a>Suoni
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti](/windows/uwp/design/).
+> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-*Sound* è l'elemento audio dell'esperienza utente. Se usati in modo appropriato, il suono può essere una forma efficace di comunicazione che stabilisce una relazione non verbale e persino emotiva con gli utenti. I suoni possono essere usati singolarmente o come supplemento per l'interfaccia utente visiva. Ad esempio, l'aggiunta di un effetto audio a una notifica aumenta la probabilità che venga rilevata, soprattutto se l'utente non Visualizza lo schermo quando si verifica un evento.
+*L'audio* è l'elemento audio dell'esperienza utente. Se usato in modo appropriato, il suono può essere una forma efficace di comunicazione che stabilisce una relazione non verbale e persino emotivo con gli utenti. I suoni possono essere usati da soli o come supplemento all'interfaccia utente visiva. Ad esempio, l'aggiunta di un effetto sonoro a una notifica aumenta la probabilità che verrà notata, soprattutto se l'utente non guarda lo schermo quando si verifica un evento.
 
-![screenshot della finestra di dialogo audio ](images/vis-sound-image1.png)
+![Screenshot della finestra di dialogo audio ](images/vis-sound-image1.png)
 
-Dalla scheda suoni dell'elemento del pannello di controllo audio, gli utenti possono apportare modifiche ai suoni del sistema.
+Dalla scheda Suoni dell'elemento Del pannello di controllo Audio gli utenti possono apportare modifiche ai suoni del sistema.
 
-Questo articolo illustra l'uso di suoni all'interno di un programma come risposta a eventi e azioni degli utenti e l'integrazione del controllo audio di un programma con Windows. Non copre l'uso di musica o sintesi vocale.
+Questo articolo illustra l'uso dei suoni all'interno di un programma come risposta a eventi e azioni dell'utente e l'integrazione del controllo audio di un programma con Windows. Non tratta l'uso della musica o del parlato.
 
-**Nota:** Le linee guida relative alle [notifiche](mess-notif.md) e alla [personalizzazione](exper-branding.md) sono presentate in articoli distinti.
+**Nota:** Le linee guida [relative alle notifiche](mess-notif.md) e alla [personalizzazione](exper-branding.md) sono presentate in articoli separati.
 
-## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente corretta?
+## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente giusta?
 
-Per decidere se usare il suono, prendere in considerazione le domande seguenti:
+Per decidere se usare l'audio, considerare queste domande:
 
--   **Il vantaggio di un utente è evidente nell'uso di un suono?** Poiché gli svantaggi dell'uso del suono possono superare facilmente i vantaggi, usare il suono solo quando esiste un vantaggio evidente.
--   **L'uso del suono è appropriato?** L'uso di Sound attirare l'attenzione su elementi degni di attenzione? Gli utenti perderanno il suono se fosse assente? Concentrarsi sui suoni che consentono agli utenti di essere informati, probabilmente modificare il comportamento o fornire commenti e suggerimenti utili.
--   **Si tratta dell'utilizzo del suono che distrae?** Sono presenti suoni frequenti, forti e stonati? È probabile che gli utenti riducano il volume di sistema o il volume del programma come risultato dell'utilizzo del suono?
--   **Si sta usando un suono come una forma di comunicazione principale?** In molti casi, ad esempio per gli utenti che hanno un certo livello di perdita uditiva, non è consigliabile usare l'audio come mezzo di comunicazione principale. Il suono è più efficace come supplemento per altre modalità di comunicazione, ad esempio testo o oggetti visivi.
--   **Gli utenti di destinazione primari sono professionisti IT?** Il suono è in genere inefficace per le attività destinate ai professionisti IT perché molte delle attività vengono eseguite in modo automatico. Inoltre, l'audio non viene ridimensionato in modo da immaginare di eseguire centinaia di attività alla volta e ottenere i suoni quando vengono completati o non riescono.
+-   **L'uso del suono è vantaggioso per l'utente?** Poiché gli svantaggi dell'uso del suono possono facilmente superare i vantaggi, usare il suono solo quando esiste un chiaro vantaggio.
+-   **L'uso del suono è appropriato?** L'uso del suono richiama l'attenzione su elementi che sono di grande attenzione? Gli utenti perderebbero il suono se fosse assente? Concentrarsi sui suoni che tengono informati gli utenti, che probabilmente cambieranno il proprio comportamento o forniranno commenti e suggerimenti utili.
+-   **L'uso del suono distrae?** Sono presenti suoni frequenti, ad alta voce e insodduranti? È probabile che gli utenti riducano il volume di sistema o il volume del programma in seguito all'uso del suono?
+-   **Si sta usando il suono come forma principale di comunicazione?** In molti casi, ad esempio per gli utenti con un certo livello di perdita dell'udito, l'audio non deve essere usato come mezzo di comunicazione principale. L'audio è più efficace come integrazione ad altri mezzi di comunicazione, ad esempio testo o oggetti visivi.
+-   **I principali utenti di destinazione sono i professionisti IT?** Il suono è in genere inefficace per le attività destinate ai professionisti IT perché molte delle loro attività vengono eseguite in modo automatico. Inoltre, il suono non viene ridimensionato per loro, immaginare l'esecuzione di centinaia di attività alla volta e la riproduzione di suoni quando vengono completati o non riescono.
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
-In genere, il suono raggiunge uno o tutti gli scopi seguenti:
+In genere l'audio raggiunge uno o tutti gli scopi seguenti:
 
--   **Notifica.** Il suono può essere associato a eventi specifici. Ad esempio, un suono "nuovo messaggio" indica agli utenti quando arriva la posta senza compromettere l'attività corrente.
--   **Feedback.** Il suono può fornire commenti e suggerimenti per azioni utente specifiche. Ad esempio, un suono sottile che riproduce quando si rilascia il dispositivo di scorrimento nel controllo volume fornisce commenti e suggerimenti sul livello dell'impostazione corrente.
--   **Branding.** Il suono può essere associato a contenuti specifici per personalizzare il prodotto, l'applicazione o il servizio. Windows utilizza il suono in questo modo per l'avvio del sistema operativo.
--   **Intrattenimento.** Il suono viene comunemente usato per migliorare i prodotti di intrattenimento e per rendere più accattivante qualsiasi prodotto. Ad esempio, la maggior parte dei giochi, le applicazioni di formazione e i prodotti di consumo utilizzano un suono per intrattenere gli utenti e migliorare l'esperienza.
+-   **Notifica.** L'audio può essere associato a eventi specifici. Ad esempio, un suono "nuovo messaggio di posta elettronica" indica agli utenti quando arriva la posta senza interrompere l'attività corrente.
+-   **Valutazione.** L'audio può fornire commenti e suggerimenti per azioni utente specifiche. Ad esempio, un suono sottile che viene riprodotto quando si rilascia il dispositivo di scorrimento sul controllo del volume fornisce feedback sul livello dell'impostazione corrente.
+-   **Branding.** L'audio può essere associato a contenuto specifico per il marchio del prodotto, dell'applicazione o del servizio. Windows usa l'audio in questo modo per l'avvio del sistema operativo.
+-   **Intrattenimento.** Il suono viene comunemente usato per migliorare i prodotti di intrattenimento e per rendere i prodotti più coinvolgenti. Ad esempio, la maggior parte dei giochi, delle applicazioni di training e dei prodotti consumer usa il suono per insodettire gli utenti e migliorare l'esperienza.
 
-Determinati suoni possono soddisfare molti di questi scopi in una sola volta. Il suono di avvio di Windows, ad esempio, indica che il processo di avvio è stato completato e che il desktop è pronto per l'utilizzo. Fornisce inoltre una forma potente di personalizzazione dei prodotti e anche momentaneamente coinvolge gli utenti.
+Alcuni suoni possono soddisfare diversi di questi scopi contemporaneamente. L'audio Avvio di Windows, ad esempio, indica che il processo di avvio è stato completato e che il desktop è pronto per l'uso. Offre anche una potente forma di personalizzazione del prodotto e coinvolge momentaneamente gli utenti.
 
-I suoni che soddisfano nessuno di questi scopi dovrebbero essere probabilmente eliminati.
+I suoni che non soddisfano nessuno di questi scopi dovrebbero probabilmente essere eliminati.
 
-### <a name="inappropriate-use-of-sound"></a>Uso non appropriato del suono
+### <a name="inappropriate-use-of-sound"></a>Uso inappropriato del suono
 
-**Nonostante i vantaggi del suono, l'uso appropriato del suono richiede una limitazione significativa a tale scopo può comportare un programma fastidioso e distrazione.** Gli utenti spengono completamente il proprio suono se si infastidiscono in modo frequente, ripetitivo, stridente, sconvolgente e progettato male; in parte questo perché, per sua natura, il suono richiede attenzione ed è difficile ignorarlo. Per suggerimenti su come trovare un equilibrio ragionevole, vedere le [linee guida di progettazione valide](#sound-design).
+**Nonostante i vantaggi del suono, l'uso appropriato del suono richiede una notevole attenzione. In caso contrario, un programma può essere fastidioso e distrarre.** Gli utenti spegneranno completamente il suono se vengono infastiditi da suoni frequenti, ripetitivi, in jarring, che causano interruzioni, suoni progettati in modo non soddisfatto; in parte perché, per sua natura, il suono richiede attenzione ed è difficile da ignorare. Per suggerimenti su come trovare un equilibrio ragionevole, vedere Linee guida per la progettazione [del suono.](#sound-design)
 
-Poiché gli svantaggi dell'uso del suono possono superare facilmente i vantaggi, usare il suono solo quando esiste un vantaggio evidente. **In caso di dubbi, non usare un suono.**
+Poiché gli svantaggi dell'uso del suono possono facilmente superare i vantaggi, usare il suono solo quando esiste un chiaro vantaggio. **In caso di dubbi, non usare l'audio.**
 
-### <a name="make-sound-supplemental"></a>Rendere audio supplementare
+### <a name="make-sound-supplemental"></a>Rendere il suono supplementare
 
 Anche se il suono viene usato in modo appropriato, esistono molte situazioni in cui il suono potrebbe non essere efficace per tutti gli utenti:
 
--   Alcuni utenti possono lavorare in un ambiente rumoroso in cui non è possibile udire i suoni.
--   Alcuni utenti possono funzionare in un ambiente non interattivo che richiede che il suono venga disattivato o impostato su un volume basso.
+-   Alcuni utenti potrebbero lavorare in un ambiente rumoroso in cui i suoni non possono essere uditi.
+-   Alcuni utenti possono lavorare in un ambiente silenzioso che richiede che l'audio sia disattivato o impostato su un volume basso.
 -   Alcuni utenti potrebbero avere problemi di udito o perdita.
--   Il computer potrebbe non avere altoparlanti.
+-   È possibile che il computer non abbia altoparlanti.
 
-Per questi motivi, **il suono usato per le notifiche e il feedback non dovrebbe mai essere l'unico metodo di comunicazione,** ma deve aggiungere suggerimenti visivi o testuali.
+Per questi motivi, **l'audio usato** per le notifiche e il feedback non deve mai essere l'unico metodo di comunicazione, ma deve integrare segnali visivi o testuali.
 
-### <a name="desirable-characteristics-of-sound"></a>Caratteristiche auspicabili del suono
+### <a name="desirable-characteristics-of-sound"></a>Caratteristiche desiderabili del suono
 
 In generale, i suoni devono essere:
 
--   da mid ad High Frequency (600 Hertz \[ Hz \] a 2 kilohertz \[ kHz \] ).
--   Short (meno di un secondo).
--   soft o moderato nel volume.
--   significativo.
--   piacevole, non allarmante o stonato.
+-   frequenza medio-alta (da 600 Hertz \[ Hz \] a 2 kilohertz \[ \] kHz).
+-   short (meno di un secondo).
+-   soft o moderate nel volume.
+-   Significativo.
+-   non allarmismi o jarring.
 -   non verbale.
 -   non ripetitivo.
 
-Con il suono, less è più. **L'effetto acustico ideale è quello che gli utenti si accorgono a malapena, ma che mancano se fosse assente.**
+Con l'audio, meno è più. **L'effetto sonoro ideale è quello che gli utenti notano di essere notate, ma che mancherebbero se fosse assente.**
 
-**Un malinteso comune è che i suoni per gli eventi critici devono essere forti e stonati per attirare l'attenzione dell'utente.** Questo non è vero, perché il suono è effettivamente progettato per essere un mezzo di comunicazione supplementare. Nel caso di un messaggio di errore critico, la relativa presentazione (probabilmente in una finestra di dialogo modale), la relativa icona (un'icona di errore) e il testo e il tono vengono combinati per comunicare la natura dell'errore. Un suono di errore effettivo può essere leggermente più rumoroso rispetto al normale suono di Windows, ma non deve essere significativamente più potente.
+**Un'errata concepizione comune è che i suoni per gli eventi critici devono essere forti e insodettiti per ottenere l'attenzione dell'utente.** Questo non è vero, perché il suono è in realtà pensato per essere un mezzo di comunicazione supplementare. Nel caso di un messaggio di errore critico, la relativa presentazione (ad esempio in una finestra di dialogo modale), la relativa icona (icona di errore) e il testo e il tono si combinano per comunicare la natura dell'errore. Un suono di errore efficace può essere leggermente più alto del suono tipico di Windows, ma non deve essere notevolmente più alto.
 
 ### <a name="characteristics-of-windows-sounds"></a>Caratteristiche dei suoni di Windows
 
-Al di là di questa chiamata generale per il minimo, l'aspetto estetico di Windows usa i suoni chiaro, puri e vitrei, con una dissolvenza flessibile e una dissolvenza ("bordi") per evitare effetti improvvisi, stridente e a percussione. Sono progettate per essere sottili, delicate e consonanti. I suoni di Windows usano Echo, Reverb e equalation per ottenere un aspetto naturale e ambientale.
+Oltre a questa richiesta generale per il minimalismo, l'acustica di Windows usa luce, toni puri e suoni glassy e aridi, con una dissolvenza in entrata e una dissolvenza in uscita ("bordi" sfumati) per evitare effetti improvvi, inesatte e percussivi. Sono progettate per essere sottintese, consonanti e consonanti. I suoni di Windows usano l'eco, il riverbero e l'equalizzazione per ottenere un aspetto naturale e ambientale.
 
-Lo schema audio predefinito per Windows non usa in genere suoni strumentali o riconoscibili quotidianamente che sono troppo specifici o musicali. Esempi di suoni evitati sono strumenti musicali, ad esempio pianoforti o percussioni, suoni di animali, rumori ambientali, sintesi vocale, voci, effetti audio di tipo film o altri suoni di persone. Inoltre, i suoni di Windows non sono pensati per essere percepiti come brani musicali (vale a dire melodie più lunghe, più note). In questo modo, i suoni di Windows sono distinti dal punto di vista funzionale da altri tipi di suoni.
+La combinazione audio predefinita per Windows in genere non usa suoni quotidiani riconoscibili o riconoscibili che sono esempiamente specifici o meno. Esempi di suoni evitati sono strumenti acustici come piano o strumenti acustici, suoni di animali, rumori ambientali, voce, voci, effetti sonori simili a film o altri suoni di esseri umani. Inoltre, i suoni di Windows non sono concepiti per essere percepiti come musica(ovvero, purché siano presenti più note). Ciò rende i suoni di Windows diversi dal punto di vista funzionale rispetto ad altri tipi di suoni.
 
-Poiché i suoni di Windows sono stati progettati professionalmente per avere le caratteristiche desiderate e si rivolgono a un vasto pubblico, **provare a usare questi suoni predefiniti di Windows quando appropriato.**
+Poiché i suoni di Windows sono stati progettati professionalmente per avere le caratteristiche desiderate e accattivanti per un ampio pubblico, prendere in considerazione l'uso di questi suoni di Windows incorporati **quando appropriato.**
 
 ### <a name="designing-your-own-sounds"></a>Progettazione di suoni personalizzati
 
-Se è necessario creare suoni personalizzati, progettarli per avere le caratteristiche descritte in precedenza. Si vuole fare in modo che siano complementari alle attività o agli eventi associati.
+Se è necessario creare suoni personalizzati, progettarli in modo che abbia le caratteristiche descritte in precedenza. Cercare di renderli complementari alle attività o agli eventi associati.
 
-Si noti che la creazione di suoni originali è molto difficile da fare in particolare per i suoni destinati a un vasto pubblico. Il suono può essere un elemento di progettazione polarizzato. Per ogni utente che ama un suono, saranno presenti molti utenti che non lo amano.
+Comprendere che la creazione di suoni originali è difficile da fare bene, soprattutto per i suoni destinati a un ampio pubblico. L'audio può essere un elemento di progettazione polarizzante. Per ogni utente che ami un suono, saranno molti quelli che lo non gradiranno.
 
-**Progettare i suoni del programma come gruppo in modo che siano varianti correlate in un tema.** L'esperienza uditiva del programma dovrebbe essere coordinata con la relativa esperienza visiva. Inoltre, il "tono" dei suoni deve essere coordinato con il [tono del testo](text-style-tone.md). Si prenda in considerazione il modo in cui il testo con un tono naturale gradevole può essere sottoposto a una forte presenza di suoni allarmanti.
+**Progettare i suoni per il programma come gruppo in modo che siano variazioni correlate a un tema.** L'esperienza di revisione del programma deve essere coordinata con l'esperienza visiva. Inoltre, il "tono" dei suoni deve essere coordinato con il [tono del testo](text-style-tone.md). Considerare il modo in cui il testo con un tono naturale e gradevole può essere danneggiato quando è accompagnato da suoni allarmismi.
 
-**Se si eseguono solo quattro operazioni...**
+**Se si eservino solo quattro operazioni...**
 
-1.  Usare un suono con la limitazione assicurarsi che sia presente un vantaggio utente complessivo chiaro. In caso di dubbi, non usare un suono.
-2.  Usare i suoni predefiniti di Windows quando appropriato.
-3.  Se si progettano suoni personalizzati, assicurarsi che dispongano delle caratteristiche audio desiderate e che si tratti di varianti di un tema.
-4.  Non presupporre che i suoni debbano essere forti e stonati per attirare l'attenzione dell'utente.
+1.  Usare l'audio con una certa attenzione per assicurarsi che sia disponibile un chiaro vantaggio generale per l'utente. In caso di dubbi, non usare l'audio.
+2.  Usare i suoni di Windows predefiniti ogni volta che è appropriato.
+3.  Se si progettano suoni personalizzati, assicurarsi che abbia le caratteristiche sonore desiderabili e nel complesso si senta come variazioni su un tema.
+4.  Non presupporre che i suoni devono essere forti e stridenti per ottenere l'attenzione dell'utente.
 
 ## <a name="usage-patterns"></a>Modelli di utilizzo
 
@@ -111,14 +111,14 @@ I suoni hanno diversi modelli di utilizzo:
 
 
 
-|                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|     Uso del suono                                                                                                                                                                 |  Esempio                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Completamento azione**<br/> notifica in modo sonico agli utenti quando un'azione avviata dall'utente con esecuzione prolungata viene completata correttamente. <br/>                             | ![screenshot della finestra di dialogo di download del file ](images/vis-sound-image2.png)<br/> In questo esempio la finestra di dialogo riproduce un suono per notificare agli utenti che il download è stato completato.<br/>                                                                                                                                                                                                                                      |
-| **Errore azione**<br/> Invia una notifica in modo sonico agli utenti quando un'azione avviata dall'utente con esecuzione prolungata ha esito negativo. <br/>                                                 | ![cattura di schermata del messaggio del disco di backup non accessibile ](images/vis-sound-image3.png)<br/> In questo esempio, Windows riproduce un suono per notificare agli utenti che l'operazione di backup non è riuscita.<br/>                                                                                                                                                                                                                                  |
-| **Evento di sistema importante**<br/> avvisa in modo sonico gli utenti di importanti eventi di sistema o dello stato che richiedono attenzione immediata. <br/>                      | ![screenshot del messaggio a batteria insufficiente ](images/vis-sound-image4.png)<br/> In questo esempio gli utenti vengono avvisati che la batteria insufficiente richiede attenzione immediata.<br/>                                                                                                                                                                                                                                                      |
-| **FYI**<br/> consente di notificare sonicamente agli utenti le informazioni rilevanti e potenzialmente utili. <br/>                                                                 | Poiché queste informazioni in genere non richiedono l'attenzione immediata, un segnale acustico fornisce un feedback sottile senza compromettere il flusso dell'utente. <br/> ![screenshot del messaggio di accesso Live Messenger ](images/vis-sound-image5.png)<br/> In questo esempio, un suono viene riprodotto quando un contatto accede a un servizio di messaggistica istantanea.<br/>                                                                                 |
-| **Effetto audio**<br/> fornisce commenti e suggerimenti sulle interazioni degli utenti. <br/>                                                                            | Fornisce un feedback audio reale o con stile appropriato per l'interazione. gli effetti acustici spesso sono validi come se l'utente manipolasse un oggetto fisico reale. noto anche come Foley. <br/> ![screenshot della finestra ridotta a icona ](images/vis-sound-image6.png)<br/> In questo esempio, l'effetto acustico della finestra Riduci a icona sembra che un oggetto reale venga ridotto di dimensioni.<br/> |
-| **Suoni di personalizzazione**<br/> un suono fornito per migliorare l'esperienza utente anche se l'impatto emotivo e, come effetto collaterale, promuove il marchio del prodotto. <br/> | I suoni di personalizzazione sono migliori quando vengono sincronizzati con gli eventi visivi, in particolare le transizioni dell'interfaccia utente, ad esempio la visualizzazione di una finestra del programma. i marchi reali indicano l'origine dei beni, in modo analogo a una parola o un logo marchiato, e sono relativamente rari. <br/> ![screenshot dell'icona di avvio di Windows ](images/vis-sound-image7.png)<br/> In questo esempio, l'avvio di Windows è un'esperienza di transizione personalizzata.<br/>      |
+| **Completamento dell'azione**<br/> Notifica in modo simbolico agli utenti quando un'azione avviata dall'utente a esecuzione lunga viene completata correttamente. <br/>                             | ![Screenshot della finestra di dialogo di download del file ](images/vis-sound-image2.png)<br/> In questo esempio, la finestra di dialogo riproduce un suono per notificare agli utenti che il download è stato completato.<br/>                                                                                                                                                                                                                                      |
+| **Errore dell'azione**<br/> Notifica in modo simbolico agli utenti quando un'azione avviata dall'utente a esecuzione lunga ha esito negativo. <br/>                                                 | ![Screenshot del messaggio disco di backup non accessibile ](images/vis-sound-image3.png)<br/> In questo esempio, Windows riproduce un suono per notificare agli utenti che l'operazione di backup non è riuscita.<br/>                                                                                                                                                                                                                                  |
+| **Evento di sistema importante**<br/> avvisa gli utenti di eventi di sistema importanti o di stato che richiedono un'attenzione immediata. <br/>                      | ![Screenshot del messaggio di batteria in esaurimento ](images/vis-sound-image4.png)<br/> In questo esempio gli utenti vengono avvisati che la batteria in esaurimento richiede un'attenzione immediata.<br/>                                                                                                                                                                                                                                                      |
+| **Fyi**<br/> notifica in modo simbolico agli utenti informazioni potenzialmente utili e rilevanti. <br/>                                                                 | Poiché queste informazioni in genere non richiedono attenzione immediata, un suono fyi fornisce un feedback sottile senza interrompere il flusso dell'utente. <br/> ![Screenshot del messaggio di accesso live messenger ](images/vis-sound-image5.png)<br/> In questo esempio viene riprodotto un suono quando un contatto accede a un servizio di messaggistica immediata.<br/>                                                                                 |
+| **Effetto sonoro**<br/> fornisce commenti e suggerimenti alle interazioni dell'utente. <br/>                                                                            | Fornisce un feedback sonoro reale o con stile appropriato per l'interazione. Gli effetti sonori spesso sonori come se l'utente manipola un oggetto fisico reale. a volte definito foley. <br/> ![Screenshot della finestra ridotta a icona ](images/vis-sound-image6.png)<br/> In questo esempio, l'effetto sonoro della finestra di riduzione a icona sembra che le dimensioni di un oggetto reale vengano ridotte.<br/> |
+| **Suoni di personalizzazione**<br/> un suono fornito per migliorare l'esperienza utente anche se l'impatto emotivo e, come effetto collaterale, promuovere il marchio del prodotto. <br/> | I suoni di personalizzazione sono particolarmente utili quando vengono sincronizzati con gli eventi visivi, in particolare le transizioni dell'interfaccia utente, ad esempio la visualizzazione di una finestra del programma. I marchi sonori veri indicano l'origine dei beni, simili a una parola o un logo marchiati, e sono relativamente insoliti. <br/> ![Screenshot dell'icona di avvio di Windows ](images/vis-sound-image7.png)<br/> In questo esempio l'avvio di Windows è un'esperienza di transizione personalizzata.<br/>      |
 
 
 
@@ -128,77 +128,77 @@ I suoni hanno diversi modelli di utilizzo:
 
 ### <a name="usage"></a>Utilizzo
 
--   **Usare un suono con la limitazione** assicurarsi che sia presente un vantaggio utente complessivo chiaro. Concentrarsi sui suoni che consentono agli utenti di essere informati, probabilmente modificare il comportamento o fornire commenti e suggerimenti utili. In caso di dubbi, non usare un suono.
+-   **Usare l'audio con restrizioni per** assicurarsi che sia disponibile un vantaggio generale per l'utente. Concentrarsi sui suoni che tengono informati gli utenti, probabilmente cambieranno il loro comportamento o forniranno feedback utili. In caso di dubbi, non usare il suono.
 -   **Selezionare il suono e le relative caratteristiche in base al modo in cui viene usato.** Per una descrizione di ogni modello di utilizzo, vedere la tabella nella sezione precedente.
--   **Per le notifiche e il feedback, non usare il suono come unico metodo di comunicazione.** Usare invece Sound come metodo supplementare per rinforzare i segnali visivi o testuali. In questo modo si garantisce che gli utenti possano visualizzare le informazioni se non riescono a ascoltare il suono.
--   **Non riprodurre spesso suoni forti o rigidi.** Questa operazione non è necessaria e comporta un'esperienza utente insufficiente. Più spesso viene riprodotto un suono, minore è il numero di invasivo. Per attirare l'attenzione, non è necessario che i suoni siano troppo o troppo rigidi.
--   **Non emettere segnali acustici.** Il segnale acustico non è appropriato per i programmi moderni. Ai segnali acustici non può essere assegnato un significato specifico e gli utenti non possono controllarli.
-    -   **Eccezione:** Le funzioni di sistema critiche possono emettere un segnale acustico per avvisare gli utenti delle situazioni in cui devono partecipare immediatamente, ad esempio con una batteria a batteria insufficiente.
+-   **Per le notifiche e i commenti e suggerimenti, non usare l'audio come unico metodo di comunicazione.** Usare invece il suono come metodo supplementare per rinforzare i segnali visivi o testuali. In questo modo si garantisce che gli utenti possano visualizzare le informazioni se non possono ascoltare il suono.
+-   **Non riprodurre suoni rumorosi o difficili di frequente.** Questa operazione non è necessaria e comporta un'esperienza utente scadente. Più spesso viene riprodotto un suono, meno invadente dovrebbe essere. I suoni non devono essere forti o dure per attirare l'attenzione.
+-   **Non esigono un segnale acustico.** Il beeping non è appropriato per i programmi moderni. I beeps non possono avere significati specifici assegnati e gli utenti non possono controllarli.
+    -   **Eccezione:** Le funzioni di sistema critiche possono segnale acustico per avvisare gli utenti di situazioni a cui devono partecipare immediatamente, ad esempio l'alimentazione a batteria criticamente bassa.
 
 ### <a name="playback"></a>Riproduzione
 
 -   **Non ripetere un suono più di due volte consecutivamente.**
--   **Per una sequenza consecutiva di eventi audio correlati, riprodurre un suono solo sul primo evento.** Evitare di usare più suoni perché potrebbero entrare in collisione tra loro o causare un'esperienza utente spiacevole.
+-   **Per una sequenza consecutiva di eventi sonori correlati, riprodurre un suono solo al primo evento.** Evitare di usare più suoni perché possono collidere tra loro o causare un'esperienza utente spiacevole.
 
-### <a name="sound-selection"></a>Selezione audio
+### <a name="sound-selection"></a>Selezione del suono
 
--   **Scegliere suoni piacevoli.** Non usare suoni sgradevoli, allarmanti, ad esempio ronzio, arresti anomali e interruzioni.
+-   **Scegliere suoni gradevoli.** Non usare suoni fastidiosi e allarmanti, ad esempio ronzio, arresto anomalo e interruzione.
 -   **Usare suoni brevi** (meno di un secondo).
--   **Utilizzare suoni approssimativamente dello stesso volume del tipico suono di Windows.** Gli utenti non amano dover spegnere il volume quando avviano un computer o un programma, soprattutto in ambienti pubblici come riunioni e presentazioni. I file audio di Microsoft Windows si trovano nella cartella media all'interno della cartella Windows.
--   **Non scegliere suoni per i quali è necessaria la localizzazione.** A tale scopo, è possibile utilizzare suoni che non utilizzano la voce di riconoscimento vocale o con significati o connotazioni dipendenti dalle impostazioni cultura.
+-   **Usare suoni approssimativamente dello stesso volume del suono tipico di Windows.** Agli utenti non piace dover disattivare il volume quando si avvia un computer o un programma, in particolare in ambienti pubblici come riunioni e presentazioni. I file audio di Microsoft Windows si trovano nella cartella Media all'interno della cartella Windows.
+-   **Non scegliere suoni che richiedono la localizzazione.** È possibile ottenere questo risultato usando suoni che non usano il parlato o hanno significati o connotazioni dipendenti dalla cultura.
 
-### <a name="windows-system-sounds"></a>Suoni del sistema Windows
+### <a name="windows-system-sounds"></a>Suoni di sistema di Windows
 
--   **Usare i suoni del sistema Windows incorporati ogni volta che è appropriato.**
--   **Scegliere di usare i suoni di sistema in base al significato associato, non solo al suono.** I suoni di sistema devono essere usati in modo coerente.
+-   **Usare i suoni predefiniti del sistema Windows quando appropriato.**
+-   **Scegliere di usare i suoni di sistema in base al significato associato, non solo al suono stesso.** I suoni di sistema devono essere usati in modo coerente.
 
-### <a name="sound-design"></a>Progettazione audio
+### <a name="sound-design"></a>Progettazione del suono
 
 Quando si creano suoni personalizzati:
 
--   **Creare suoni con le caratteristiche del suono auspicabili.**
--   **Comporre suoni con la maggior parte del mid-range fino a frequenze elevate (da 600 Hz a 2 kHz).** Non usare frequenze basse perché si spostano oltre, sono più difficili da individuare e possono essere allarmanti.
--   **Impostare l'ampiezza relativa dei suoni normali sul livello del suono di Windows tipico.** I suoni di Windows sono stati opportunamente livellati per gli ambienti domestici e lavorativi. L'uso di livelli diversi per i suoni forza gli utenti a apportare modifiche al volume.
-    -   Impostare i suoni importanti in modo che siano leggermente più potenti. Tali suoni includono i completamenti delle azioni, gli errori di azione e gli eventi di sistema importanti.
-    -   Impostare i suoni che si verificano di frequente in modo che siano leggermente più morbidi. Sono inclusi FYIs, suoni di personalizzazione e effetti audio.
--   **Scegliere suoni coerenti con il significato dei suoni di Windows.** Per creare una versione personalizzata di un suono Windows, mantenere lo stesso passo e intervallo, ma modificare l'orchestrazione o il timbro. Non assegnare significati diversi ai suoni con passi e intervalli simili come suoni di Windows.
--   **Progettare i suoni per il programma in modo che siano varianti correlate in un tema.** L'esperienza uditiva del programma dovrebbe essere coordinata con la relativa esperienza visiva.
-    -   **Progetta transizioni di scena e transizioni audio insieme.** Se, ad esempio, una scena si dissolve gradualmente, qualsiasi suono dovrebbe dissolversi gradualmente. Non rovinare le transizioni visive senza problemi con transizioni audio improvvise.
--   **I suoni devono essere nel formato di file WAV.** È consigliabile usare il formato stereo a 16 bit 44,1 kHz stereo non compresso Pulse Code Modulation (PCM). Se le dimensioni del file sono importanti, usare i formati compressi o mono (mono), ma tenere presente che esiste una perdita di qualità facilmente percepibile che potrebbe riflettere negativamente sull'applicazione.
+-   **Creare suoni con le caratteristiche sonore desiderabili.**
+-   **Comporre suoni con frequenze per lo più medio-alte (da 600 Hz a 2 kHz).** Non usare frequenze basse perché viaggiano più lontano, sono più difficili da individuare e possono essere allarmanti.
+-   **Impostare l'ampiezza relativa dei suoni normali sul livello del suono tipico di Windows.** I suoni di Windows sono stati livellati in modo appropriato per gli ambienti di lavoro e di casa. L'uso di livelli diversi per i suoni forza gli utenti a apportare modifiche al volume.
+    -   Impostare suoni importanti in modo che siano leggermente più forti. Tali suoni includono completamenti delle azioni, errori di azione ed eventi di sistema importanti.
+    -   Impostare i suoni che si verificano di frequente in modo che siano leggermente più soffi. Questi includono fYI, suoni di personalizzazione ed effetti sonori.
+-   **Scegliere suoni coerenti con il significato dei suoni di Windows.** Per creare una versione personalizzata di un suono windows, mantenere lo stesso passo e intervallo, ma modificare l'orchestrazione o il timbro. Non assegnare significati diversi ai suoni con altezze e intervalli simili a quelli dei suoni di Windows.
+-   **Progettare i suoni per il programma in modo che si senta come variazioni correlate in un tema.** L'esperienza udita del programma deve essere coordinata con l'esperienza visiva.
+    -   **Progettare transizioni di scena e transizioni audio insieme.** Ad esempio, se una scena si dissolve gradualmente, anche qualsiasi suono dovrebbe dissolversi gradualmente. Non rovinire le transizioni visive senza interruzioni grazie a transizioni sonore improvpende.
+-   **I suoni devono essere in formato di file wav.** È consigliabile il formato PCM (Uncompressed Pulse Code Modulation) stereo a 16 bit a 44,1 kHz. Se le dimensioni del file sono importanti, usare formati compressi o monaurali (mono), ma tenere presente che esiste una perdita di qualità facilmente individuabile che potrebbe riflettersi negativamente sull'applicazione.
 
-### <a name="mixing"></a>Combinazione
+### <a name="mixing"></a>Miscelazione
 
--   **Non sono presenti controlli volume o mute nel programma.** Al contrario, consentire agli utenti di controllare le impostazioni del volume relativo tra le applicazioni con il mixer del volume di Windows. Se il programma dispone di un controllo del volume, saranno presenti più posizioni in cui gli utenti possono modificare le impostazioni, causando confusione.
+-   **Non sono presenti controlli di volume o disattivazione dell'audio nel programma.** Consentire invece agli utenti di controllare le impostazioni relative del volume tra le applicazioni con il mixer di volumi Windows. Se il programma ha un controllo del volume, gli utenti modificano le impostazioni in più posizioni, causando confusione.
 
-    ![screenshot del mixer del volume di Windows ](images/vis-sound-image8.png)
+    ![Screenshot del mixer di volumi di Windows ](images/vis-sound-image8.png)
 
-    Il mixer del volume di Windows consente agli utenti di controllare l'impostazione principale del volume e il volume per ogni programma che sta attualmente eseguendo audio.
+    Il mixer di volumi di Windows consente agli utenti di controllare l'impostazione del volume principale e il volume per ogni programma che sta riproducendo l'audio.
 
 <!-- -->
 
--   **Eccezione:** Se lo scopo principale è la riproduzione o la riproduzione di audio o video, potrebbe essere utile disporre di un controllo volume nel programma. Usare un controllo dispositivo di scorrimento a questo scopo e fornire un feedback immediato quando l'utente modifica il volume.
+-   **Eccezione:** Se lo scopo principale del programma è la riproduzione o la creazione di audio o video, può essere utile avere un controllo del volume nel programma. Usare un controllo dispositivo di scorrimento a questo scopo e fornire commenti e suggerimenti immediati quando l'utente modifica il volume.
 
-### <a name="windows-integration"></a>Integrazione di Windows
+### <a name="windows-integration"></a>Integrazione con Windows
 
--   **Registrare i suoni del programma nel registro suoni di Windows.** In questo modo, il mixer del volume di Windows può aggiungere un dispositivo di scorrimento per il programma.
--   **Registrare gli eventi audio personalizzati del programma.** Questa operazione consente all'elemento del pannello di controllo audio di Windows di visualizzarli. Creare la chiave seguente per ogni evento audio personalizzato: HKEY \_ Current \_ User \| AppEvents \| Event labels \| EventName = nome evento.
--   **Non hardwire i suoni per gli eventi audio del programma.** Specificare invece i suoni da riprodurre utilizzando le voci del registro di sistema. Questa operazione consente agli utenti di personalizzare gli eventi audio tramite l'elemento del pannello di controllo audio.
-    -   **Eccezione:** È possibile scegliere di hardwire i suoni usati per la personalizzazione.
--   **Non fornire agli utenti un modo per configurare i suoni nelle opzioni del programma.** Usare invece l'elemento del pannello di controllo suoni Windows a questo scopo.
--   **Per impostazione predefinita, provare a non assegnare suoni agli eventi che si verificano di frequente.** Non è necessario che gli utenti configurino l'uscita da un'esperienza iniziale fastidiosa.
+-   **Registrare i suoni del programma nel registro Suoni di Windows.** In questo modo, il mixer di volumi Di Windows può aggiungere un dispositivo di scorrimento per il programma.
+-   **Registrare gli eventi audio personalizzati del programma.** In questo modo, l'elemento del pannello di controllo Suono di Windows può visualizzarli. Creare la chiave seguente per ogni evento audio personalizzato: HKEY \_ CURRENT \_ USER \| AppEvents \| Event Labels \| EventName = Event Name.
+-   **Non eseguire il hardwire dei suoni per gli eventi sonori del programma.** Specificare invece i suoni da riprodurre usando le voci del Registro di sistema. In questo modo, gli utenti possono personalizzare gli eventi audio tramite l'elemento del pannello di controllo Audio.
+    -   **Eccezione:** È possibile scegliere di eseguire il hardwire dei suoni usati per la personalizzazione.
+-   **Non fornire agli utenti un modo per configurare i suoni all'interno delle opzioni del programma.** Usare invece l'elemento del pannello di controllo Suoni di Windows a questo scopo.
+-   **Per impostazione predefinita, è consigliabile non assegnare suoni agli eventi che si verificano di frequente.** Non richiedere agli utenti di configurare la propria uscita da un'esperienza iniziale fastidiosa.
 
-### <a name="directsound-programming-issues"></a>Problemi di programmazione DirectSound
+### <a name="directsound-programming-issues"></a>Problemi di programmazione di DirectSound
 
--   Per i programmi DirectSound che dispongono di un proprio controllo del volume, **impostare il volume del programma su 100% per impostazione predefinita.** Questa operazione consente di massimizzare l'intervallo dinamico dell'audio.
--   **Non bloccare altri eventi audio eseguendo il programma in modalità esclusiva.** Questa operazione può impedire il corretto funzionamento di altri programmi. Ad esempio, l'uso della modalità esclusiva impedisce a un computer di essere utilizzato come dispositivo di telefonia.
+-   Per i programmi DirectSound con il proprio controllo del volume, impostare il volume del programma sul **100% per impostazione predefinita.** In questo modo si ottimizza l'intervallo dinamico dell'audio.
+-   **Non bloccare altri eventi sonori eseguendo il programma in modalità esclusiva.** Questa operazione può impedire il corretto funzionamento di altri programmi. Ad esempio, l'uso della modalità esclusiva impedisce l'uso di un computer come dispositivo di telefonia.
 
 ## <a name="text"></a>Testo
 
--   Non usare la frase scheda audio. Usare invece la scheda audio.
--   Usare il dispositivo per fare riferimento in modo generico a altoparlanti, cuffie e microfoni.
--   Usare il controller per fare riferimento a hardware audio che controlla i dispositivi, ad esempio schede audio e chipset.
--   Utilizzare lo schema audio frase per descrivere una raccolta di suoni per gli eventi di programma comuni, ad esempio l'accesso o la ricezione di un nuovo messaggio di posta elettronica. Usare il tema del desktop frase per descrivere una raccolta di elementi visivi e suoni per il desktop del computer.
--   Usare il termine audio per fare riferimento a parole, musica e suoni. Usare il termine suono per fare riferimento in modo più restrittivo al programma e ai suoni di Windows descritti in questo articolo.
+-   Non usare l'adattatore audio per frasi. Usare invece la scheda audio.
+-   Usare il dispositivo per fare riferimento genericamente a altoparlanti, cuffia e microfoni.
+-   Usare il controller per fare riferimento all'hardware audio che controlla i dispositivi, ad esempio schede audio e chipset.
+-   Usare lo schema sonoro della frase per descrivere una raccolta di suoni per eventi comuni del programma, ad esempio l'accesso o la ricezione di nuovi messaggi di posta elettronica. Usare il tema del desktop della frase per descrivere una raccolta di elementi visivi e suoni per il desktop del computer.
+-   Usare il termine audio per fare riferimento a voce, musica e suoni. Usare il termine suono per fare riferimento in modo più ristretto al programma e ai suoni di Windows descritti in questo articolo.
 
  
 

@@ -1,64 +1,64 @@
 ---
 title: Elementi grafici
-description: Gli elementi grafici mostrano visivamente relazioni, gerarchie e enfasi. Sono inclusi gli sfondi, i banner, i bicchieri, gli aggregatori, i separatori, le ombreggiature e gli handle.
+description: Gli elementi grafici mostrano visivamente le relazioni, la gerarchia e l'enfasi. Includono sfondi, banner, vetri, aggregatori, separatori, ombreggiature e punti di controllo.
 ms.assetid: f9e741e9-a72e-4bdb-bd95-8916c7cf344f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: a452668bc1685143273df80fd144642a18019213
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 03db1f7a90554848f71cd43cdfa769597b71cd2f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103968823"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444632"
 ---
 # <a name="graphic-elements"></a>Elementi grafici
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti](/windows/uwp/design/).
+> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-*Gli elementi grafici* mostrano visivamente relazioni, gerarchie e enfasi. Sono inclusi gli sfondi, i banner, i bicchieri, gli aggregatori, i separatori, le ombreggiature e gli handle.
+*Gli elementi grafici* mostrano visivamente le relazioni, la gerarchia e l'enfasi. Includono sfondi, banner, vetri, aggregatori, separatori, ombreggiature e punti di controllo.
 
-![Screenshot di Esplora risorse con ombreggiatura e così via. ](images/vis-graphic-image1.png)
+![screenshot di Esplora risorse con ombreggiatura e così via. ](images/vis-graphic-image1.png)
 
 Esempio con diversi tipi di elementi grafici.
 
-Gli elementi grafici in genere non sono interattivi. Tuttavia, i separatori sono interattivi per contenuti ridimensionabili e gli handle sono elementi grafici che mostrano interattività.
+Gli elementi grafici non sono in genere interattivi. Tuttavia, i separatori sono interattivi per il contenuto ridimensionabile e gli handle sono elementi grafici che mostrano interattività.
 
-**Nota:** Le linee guida correlate a [caselle di gruppo](ctrl-group-boxes.md), [animazioni](vis-animations.md), [Icone](vis-icons.md)e [personalizzazione](exper-branding.md) sono presentate in articoli distinti.
+**Nota:** Le linee guida [relative a caselle di](ctrl-group-boxes.md) [gruppo, animazioni,](vis-animations.md) [icone](vis-icons.md)e [personalizzazione](exper-branding.md) sono presentate in articoli separati.
 
-## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente corretta?
+## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente giusta?
 
-Sebbene gli elementi grafici siano un metodo visivo sicuro per indicare le relazioni, il loro utilizzo aggiunge confusione visiva e riduce lo spazio disponibile su una superficie. Devono essere usati sporadicamente.
+Anche se gli elementi grafici sono un mezzo visivo forte per indicare le relazioni, il loro uso in e sovrautilizzo aggiunge confusione visiva e riduce lo spazio disponibile su una superficie. Devono essere usati con moderamento.
 
-Una tendenza di progettazione in Microsoft Windows è un aspetto più semplice e pulito eliminando grafica e linee non necessarie.
+Una tendenza di progettazione in Microsoft Windows è un aspetto più semplice e pulito eliminando linee e grafica non necessarie.
 
-Per decidere se un elemento grafico è necessario, prendere in considerazione le domande seguenti:
+Per decidere se è necessario un elemento grafico, considerare queste domande:
 
--   **La presentazione e la comunicazione della progettazione sono altrettanto chiare ed efficaci senza l'elemento?** In tal caso, rimuoverlo.
--   **È possibile comunicare efficacemente le relazioni usando solo il layout?** In caso affermativo, usare invece il [layout](vis-layout.md) . È possibile posizionare i controlli correlati uno accanto all'altro e inserire spazi aggiuntivi tra i controlli non correlati. È anche possibile usare il rientro per visualizzare le relazioni gerarchiche.
+-   **La presentazione e la comunicazione del progetto sono così chiare ed efficaci senza l'elemento ?** In tal caso, rimuoverlo.
+-   **È possibile comunicare in modo efficace le relazioni usando solo il layout?** In tal caso, usare [invece il layout](vis-layout.md) . È possibile posizionare i controlli correlati uno accanto all'altro e inserire ulteriore spaziatura tra i controlli non correlati. È anche possibile usare il rientro per visualizzare le relazioni gerarchiche.
 
-![Screenshot di un layout con quattro icone ](images/vis-graphic-image2.png)
+![Screenshot di un layout a quattro icone ](images/vis-graphic-image2.png)
 
-In questo esempio, viene usato solo il layout per visualizzare le relazioni di controllo.
+In questo esempio viene usato solo il layout per mostrare le relazioni tra i controlli.
 
--   **La comunicazione è efficace senza testo?** In caso contrario, utilizzare una [casella di gruppo](ctrl-group-boxes.md), un separatore con etichetta o un'altra [etichetta](text-ui.md).
+-   **La comunicazione è efficace senza testo?** In caso contrario, usare una [casella di gruppo,](ctrl-group-boxes.md)un separatore con etichetta o un'altra [etichetta](text-ui.md).
 
 ## <a name="usage-patterns"></a>Modelli di utilizzo
 
-Gli elementi grafici includono diversi modelli di utilizzo:
+Gli elementi grafici hanno diversi modelli di utilizzo:
 
 
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Elemento                                                                                                              |   Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Illustrazioni grafiche**<br/> usare per comunicare visivamente un'idea. <br/>                         | Le illustrazioni grafiche sono simili alle icone, ad eccezione del fatto che possono essere di qualsiasi dimensione e in genere non interattive. <br/> ![grafico della Cronologia utilizzo CPU screenshot ](images/vis-graphic-image3.png)<br/> In questo esempio viene usata un'illustrazione grafica per suggerire la natura di una funzionalità.<br/>                                                                                                                                                                                                        |
-| **Sfondi**<br/> usare per enfatizzare o deaccentuare tipi diversi di contenuto. <br/>           | Gli sfondi possono essere usati per evidenziare contenuto importante. <br/> ![screenshot del messaggio del virus sullo sfondo rosso ](images/vis-graphic-image4.png)<br/> in questo esempio viene usato uno sfondo per evidenziare un'attività importante.<br/> gli sfondi possono anche essere usati per deaccentuare il contenuto secondario. <br/> ![screenshot degli elementi del pannello di controllo ](images/vis-graphic-image5.png)<br/> In questo esempio, le attività secondarie sono deaccentuate individuando le attività in un riquadro attività.<br/>   |
-| **Banner**<br/> utilizzato per indicare lo stato importante. <br/>                                         | A differenza degli sfondi, i banner enfatizzano principalmente una singola stringa di testo. <br/> ![screenshot del banner con le informazioni sulle impostazioni ](images/vis-graphic-image6.png)<br/> In questo esempio viene usato un banner per indicare che le impostazioni della pagina sono controllate da Criteri di gruppo.<br/>                                                                                                                                                                                                       |
-| **Vetro**<br/> usare in modo strategico per ridurre il peso visivo di una finestra. <br/>                   | Glass può ridurre il peso di una superficie concentrandosi sul contenuto invece che sulla finestra stessa. <br/> ![Screenshot di Bird nella raccolta foto di Windows ](images/vis-graphic-image7.png)<br/> In questo esempio, Glass concentra l'attenzione dell'utente sul contenuto anziché sui controlli.<br/>                                                                                                                                                                                                 |
-| **Aggregatori**<br/> utilizzare per creare una relazione visiva tra i controlli fortemente correlati. <br/> | ![screenshot delle frecce di navigazione indietro e in secondo piano ](images/vis-graphic-image8.png)<br/> in questo esempio viene usato uno sfondo di aggregator per evidenziare la relazione tra i pulsanti indietro e indietro in Esplora.<br/> ![screenshot dei controlli della raccolta foto di Windows ](images/vis-graphic-image7.png)<br/> In questo esempio viene usato un aggregatore di limiti per evidenziare la relazione tra i controlli e fare in modo che sembri un singolo controllo anziché otto.<br/> |
-| **Separatori**<br/> usare per separare i controlli correlati o non correlati. <br/>                   | I separatori possono essere interattivi o non interattivi. i separatori interattivi tra contenuti ridimensionabili sono noti come divisori. <br/> ![screenshot del separatore della barra di divisione per il pulsante nome ](images/vis-graphic-image9.png)<br/> in questo esempio viene usato un separatore interattivo per il contenuto ridimensionabile.<br/> ![screenshot del separatore per le informazioni del browser ](images/vis-graphic-image10.png)<br/> In questo esempio il separatore non è interattivo.<br/>                  |
-| **Ombreggiature**<br/> usare questa proprietà per far emergere il contenuto in modo visivo rispetto al relativo sfondo. <br/>             | ![Screenshot di quattro foto con ombre ](images/vis-graphic-image11.png)<br/> In questo esempio le ombre fanno emergere l'artwork rispetto allo sfondo.<br/>                                                                                                                                                                                                                                                                                                                                   |
-| **Selettori**<br/> usare per indicare che un oggetto può essere spostato o ridimensionato. <br/>                    | Gli handle sono sempre interattivi e il relativo comportamento viene suggerito dal puntatore del mouse al passaggio del mouse. <br/> ![Screenshot di un angolo della finestra con puntatore di ridimensionamento ](images/vis-graphic-image12.png)<br/> ![screenshot della casella di selezione con puntatore di ridimensionamento ](images/vis-graphic-image13.png)<br/> In questi esempi, gli handle indicano che un oggetto può essere ridimensionato.<br/>                                                                                                                       |
+| **Illustrazioni grafiche**<br/> usare per comunicare visivamente un'idea. <br/>                         | Le illustrazioni grafiche sono simili alle icone, ad eccezione del fatto che possono avere qualsiasi dimensione e in genere non sono interattive. <br/> ![screenshot del grafico della cronologia di utilizzo della CPU ](images/vis-graphic-image3.png)<br/> In questo esempio viene usata un'illustrazione grafica per suggerire la natura di una funzionalità.<br/>                                                                                                                                                                                                        |
+| **Sfondi**<br/> usare per evidenziare o de-evidenziare diversi tipi di contenuto. <br/>           | Gli sfondi possono essere usati per evidenziare contenuto importante. <br/> ![Screenshot del messaggio di virus sullo sfondo rosso ](images/vis-graphic-image4.png)<br/> In questo esempio viene usato uno sfondo per evidenziare un'attività importante.<br/> Gli sfondi possono essere usati anche per de-evidenziare il contenuto secondario. <br/> ![Screenshot degli elementi del Pannello di controllo ](images/vis-graphic-image5.png)<br/> In questo esempio le attività secondarie vengono de-evidenziate individuandole in un riquadro attività.<br/>   |
+| **Banner**<br/> utilizzato per indicare lo stato importante. <br/>                                         | A differenza degli sfondi, i banner evidenziano principalmente una singola stringa di testo. <br/> ![Screenshot del banner con informazioni sulle impostazioni ](images/vis-graphic-image6.png)<br/> In questo esempio viene usato un banner per indicare che le impostazioni della pagina sono controllate da Criteri di gruppo.<br/>                                                                                                                                                                                                       |
+| **Vetro**<br/> usare in modo strategico per ridurre il peso visivo di una finestra. <br/>                   | Glass può ridurre il peso di una superficie concentrandosi sul contenuto anziché sulla finestra stessa. <br/> ![screenshot di un volatile nella raccolta foto di Windows ](images/vis-graphic-image7.png)<br/> In questo esempio, glass concentra l'attenzione dell'utente sul contenuto anziché sui controlli .<br/>                                                                                                                                                                                                 |
+| **Aggregatori**<br/> Usare per creare una relazione visiva tra controlli fortemente correlati. <br/> | ![Screenshot delle frecce di spostamento avanti e indietro ](images/vis-graphic-image8.png)<br/> In questo esempio viene usato uno sfondo dell'aggregatore per evidenziare la relazione tra i pulsanti Indietro e Avanti in Explorer.<br/> ![Screenshot dei controlli raccolta foto di Windows ](images/vis-graphic-image7.png)<br/> In questo esempio viene usato un aggregatore di limiti per evidenziare la relazione tra i controlli e renderli come un singolo controllo anziché otto.<br/> |
+| **Separatori**<br/> Usare per separare i controlli correlati in modo debole o non correlati. <br/>                   | I separatori possono essere interattivi o non interattivi. I separatori interattivi tra contenuto ridimensionabile sono noti come separatori. <br/> ![Screenshot del separatore della barra di divisione per il pulsante Nome ](images/vis-graphic-image9.png)<br/> In questo esempio viene usato un separatore interattivo per il contenuto ridimensionabile.<br/> ![Screenshot del separatore per le informazioni sul browser ](images/vis-graphic-image10.png)<br/> In questo esempio il separatore non è interattivo.<br/>                  |
+| **Ombreggiature**<br/> usare per fare in modo che il contenuto si disalva visivamente sullo sfondo. <br/>             | ![screenshot di quattro foto con ombreggiature ](images/vis-graphic-image11.png)<br/> In questo esempio, le ombreggiature fanno in modo che le illustrazioni si distinguono sullo sfondo.<br/>                                                                                                                                                                                                                                                                                                                                   |
+| **Selettori**<br/> Usare per indicare che un oggetto può essere spostato o ridimensionato. <br/>                    | Gli handle sono sempre interattivi e il relativo comportamento è suggerito dal puntatore del mouse al passaggio del mouse. <br/> ![Screenshot dell'angolo di una finestra con il puntatore di ridimensionamento ](images/vis-graphic-image12.png)<br/> ![Screenshot della casella di selezione con il puntatore di ridimensionamento ](images/vis-graphic-image13.png)<br/> In questi esempi, gli handle indicano che un oggetto può essere ridimensionato.<br/>                                                                                                                       |
 
 
 
@@ -68,76 +68,76 @@ Gli elementi grafici includono diversi modelli di utilizzo:
 
 ### <a name="general"></a>Generale
 
--   **Non fornire informazioni essenziali solo tramite elementi grafici.** In questo modo si presentano problemi di accessibilità per gli utenti con disabilità visive o difficoltà.
+-   **Non trasmettere informazioni essenziali solo tramite elementi grafici.** Questa operazione presenta problemi di accessibilità per gli utenti con disabilità visive o problemi.
 
 ### <a name="graphic-designs"></a>Progettazioni grafiche
 
--   **I grafici sono più efficaci quando rinforzano una singola idea semplice.** I grafici complessi che richiedono l'interpretazione del pensiero non funzionano correttamente. I geroglifici sono ideali per i disegni delle Cave.
+-   **La grafica è la più efficace quando consolida una singola idea semplice.** La grafica complessa che richiede un'interpretazione di tipo "thought" non funziona correttamente. I hieroglifi sono la scelta migliore per i disegni in una grotta.
 
     **Non corretto:**
 
-    ![cattura di schermata dell'avviso utilizzando un elemento grafico complesso ](images/vis-graphic-image14.png)
+    ![Schermata di avviso con immagine complessa ](images/vis-graphic-image14.png)
 
-    In questo esempio, un grafico complesso di Windows XP tenta in modo inefficace di spiegare una decisione di attendibilità complessa.
+    In questo esempio, un grafico complesso di Windows XP tenta inefficacemente di spiegare una decisione di attendibilità complessa.
 
--   **Non usare frecce, virgolette, frame di pulsanti o altri affordances associati a controlli interattivi.** In questo modo gli utenti possono interagire con la grafica.
--   **Evitare le fasce di colore rosso, giallo e verde puri nei progetti.** Per evitare confusione, riservare questi colori per comunicare lo stato. Se è necessario usare questi colori per un valore diverso da status, usare i toni silenziati anziché i colori puri.
--   **Usare progettazioni indipendenti dalle impostazioni cultura.** Ciò che può avere un determinato significato in un paese, in un'area geografica o in una cultura potrebbe non avere lo stesso significato in un altro.
--   **Evitare di usare persone, visi, sesso o parti del corpo, oltre a simboli religiosi, politici e nazionali.** Tali immagini potrebbero non essere facilmente convertite o potrebbero essere offensive.
--   **Quando è necessario rappresentare persone o utenti, rappresentarli in modo generico;** evitare rappresentazioni realistiche.
+-   **Non usare frecce, frecce di controllo, riquadri dei pulsanti o altri affordance associati ai controlli interattivi.** In questo modo si invitano gli utenti a interagire con la grafica.
+-   **Evitare swath di rosso puro, giallo e verde nei progetti.** Per evitare confusione, riservare questi colori per comunicare lo stato. Se è necessario usare questi colori per un valore diverso da status, usare toni disattivati anziché colori puri.
+-   **Usare progettazioni indipendenti dalla cultura.** Ciò che può avere un determinato significato in un paese, un'area o una cultura potrebbe non avere lo stesso significato in un altro.
+-   **Evitare di usare persone, visi, sesso o parti del corpo, nonché simboli di forza, politiche e nazionali.** Tali immagini potrebbero non essere facilmente tradotte o essere offensive.
+-   **Quando è necessario rappresentare persone o utenti, rappresentarle in modo generico;** evitare rappresentazioni realistiche.
 
 ### <a name="backgrounds-and-banners"></a>Sfondi e banner
 
--   **Per enfatizzare il contenuto, usare il testo scuro su uno sfondo chiaro.** Il testo nero su uno sfondo grigio chiaro o giallo funziona correttamente.
+-   **Per evidenziare il contenuto, usare testo scuro su uno sfondo chiaro.** Il testo nero su sfondo grigio chiaro o giallo funziona correttamente.
 
-    ![screenshot del testo del collegamento blu sullo sfondo giallo ](images/vis-graphic-image15.png)
+    ![Screenshot del testo del collegamento blu sullo sfondo giallo ](images/vis-graphic-image15.png)
 
-    In questo esempio il collegamento ottiene l'attenzione dell'utente perché si trova in uno sfondo giallo.
+    In questo esempio, il collegamento riceve l'attenzione dell'utente perché si trova su uno sfondo giallo.
 
--   **Per deaccentuare il contenuto, usare il testo chiaro sullo sfondo scuro.** Il testo bianco su uno sfondo grigio scuro o blu funziona correttamente.
+-   **Per de-evidenziare il contenuto, usare testo chiaro su uno sfondo scuro.** Il testo bianco su sfondo grigio scuro o blu funziona correttamente.
 
-    ![screenshot del collegamento alla guida bianca sullo sfondo verde ](images/vis-graphic-image16.png)
+    ![Screenshot del collegamento alla Guida bianco su sfondo verde ](images/vis-graphic-image16.png)
 
-    In questo esempio, lo sfondo scuro de-enfatizza il contenuto.
+    In questo esempio, lo sfondo scuro de-evidenzia il contenuto.
 
--   **Se viene utilizzata una sfumatura, verificare che il colore del testo abbia un contrasto positivo nell'intera sfumatura.**
--   **Usare sempre un'icona di pixel 16x16 per attirare l'attenzione sul banner.** I banner sono troppo semplici da ignorare in altro modo. Per altre linee guida ed esempi, vedere [icone standard](vis-std-icons.md).
--   **Usare gli sfondi e i banner con cautela.** Sebbene lo scopo dello sfondo o del banner possa essere quello di evidenziare il contenuto, molto spesso i risultati sono l'opposto di un fenomeno noto come "cecità del banner".
+-   **Se si usa una sfumatura, assicurarsi che il colore del testo abbia un buon contrasto nell'intera sfumatura.**
+-   **Usare sempre un'icona di 16x16 pixel per attirare l'attenzione sul banner.** I banner sono troppo facili da tralasciare in caso contrario. Per altre linee guida ed esempi, vedere [Icone standard.](vis-std-icons.md)
+-   **Usare sfondi e banner con cautela.** Anche se lo scopo dello sfondo o del banner può essere quello di evidenziare il contenuto, spesso i risultati sono l'opposto di un fenomeno noto come "cecità banner".
 
 ### <a name="glass"></a>Vetro
 
--   **Si consiglia di usare il vetro in modo strategico in aree di piccole dimensioni toccando la cornice della finestra senza testo.** Questa operazione può offrire a un programma un aspetto più semplice, più chiaro e più coeso, facendo in modo che l'area appaia come parte del frame.
--   **Non usare il vetro in situazioni in cui uno sfondo normale della finestra sarebbe più interessante o più semplice da usare.**
+-   **È consigliabile usare il cristallo in modo strategico in piccole aree toccando la cornice della finestra senza testo.** In questo modo, un programma può avere un aspetto più semplice, più leggero e più coeso facendo in modo che l'area appaia come parte del frame.
+-   **Non usare glass nelle situazioni in cui uno sfondo di finestra normale sarebbe più interessante o più facile da usare.**
 
 ### <a name="separators"></a>Separatori
 
--   **Utilizzare linee verticali e orizzontali per i separatori.** Assicurarsi di disporre di spazio sufficiente tra i separatori e il contenuto separato.
--   Per i separatori tra contenuto ridimensionabile (splitter), visualizzare il puntatore di ridimensionamento al passaggio del mouse.
+-   **Usare linee verticali e orizzontali per i separatori.** Assicurarsi di disporre di spazio sufficiente tra i separatori e il contenuto da separare.
+-   Per i separatori tra contenuto ridimensionabile (separatori), visualizzare il puntatore di ridimensionamento al passaggio del mouse.
 
 ![Screenshot che mostra una barra di divisione con puntatore di ridimensionamento.](images/vis-graphic-image17.png)
 
-![screenshot della barra di divisione con puntatore di ridimensionamento ](images/vis-graphic-image18.png)
+![Screenshot della barra di divisione con puntatore di ridimensionamento ](images/vis-graphic-image18.png)
 
-In questi esempi, i puntatori di ridimensionamento vengono visualizzati al passaggio del mouse.
+In questi esempi i puntatori di ridimensionamento vengono visualizzati al passaggio del mouse.
 
 ### <a name="shadows"></a>Ombreggiature
 
--   **Usare solo per rendere il contenuto o gli oggetti più significativi del programma trascinati in modo visivo rispetto al relativo sfondo.** Prendere in considerazione le ombreggiature per un disordine visivo in altre circostanze.
+-   **Usare solo per fare in modo che il contenuto o gli oggetti più significativi del programma trascinati si distinguono visivamente sullo sfondo.** Considerare le ombreggiature come confusione visiva in altre circostanze.
 
-### <a name="high-dpi-support"></a>Supporto di valori DPI alti
+### <a name="high-dpi-support"></a>Supporto dpi elevato
 
--   **Supporta le modalità video dpi (punti per pollice) 96 e 120.** Rilevare la modalità dpi all'avvio e gestire gli eventi di modifica dpi. Windows è ottimizzato per 96 e 120 dpi e utilizza 96 dpi per impostazione predefinita.
--   **Preferisci fornire bitmap separate di cui è stato eseguito il rendering in modo specifico per 96 e 120 DPI rispetto alla scala grafica.** Almeno fornire le versioni 96 e 120 dpi per le bitmap più importanti e visibili e centrare o ridimensionare gli altri. Tali applicazioni sono considerate "High-DPI Aware" e offrono un'esperienza visiva complessiva migliore rispetto ai programmi che vengono ridimensionati automaticamente da Windows.
-    -   Sviluppatori: è possibile dichiarare un programma con valori DPI elevati (e impedire il ridimensionamento automatico) impostando il flag DPI Aware nel manifesto del programma o chiamando l'API SetProcessDPIAware () durante l'inizializzazione del programma. È possibile utilizzare le macro per semplificare la selezione della grafica corretta. Per le bitmap Win32, è possibile usare SS \_ CENTERIMAGE per centrare o SS \_ REALSIZECONTROL per la scalabilità.
--   Verificare il programma in 96 e 120 dpi per:
+-   **Supporto delle modalità video 96 e 120 punti per pollice (dpi).** Rilevare la modalità dpi all'avvio e gestire gli eventi di modifica dpi. Windows è ottimizzato per 96 e 120 dpi e usa 96 dpi per impostazione predefinita.
+-   **Preferisce fornire bitmap separate di cui viene eseguito il rendering in modo specifico per 96 e 120 dpi rispetto al ridimensionamento della grafica.** Fornire almeno 96 e 120 dpi per le bitmap più importanti e visibili e per centrare o ridimensionare le altre. Tali applicazioni sono considerate "con valori dpi elevati" e offrono un'esperienza visiva complessiva migliore rispetto ai programmi che vengono ridimensionati automaticamente da Windows.
+    -   Sviluppatori: è possibile dichiarare un programma con riconoscimento dpi elevato (e impedire il ridimensionamento automatico) impostando il flag con riconoscimento dpi nel manifesto del programma oppure chiamando l'API SetProcessDPIAware() durante l'inizializzazione del programma. È possibile usare le macro per semplificare la selezione della grafica giusta. Per le bitmap Win32, è possibile usare SS CENTERIMAGE per centrare o \_ SS \_ REALSIZECONTROL per ridimensionare.
+-   Controllare il programma in 96 e 120 dpi per:
     -   Grafica troppo piccola o troppo grande.
-    -   I grafici vengono ritagliati, sovrapposti o non vengono adattati in modo corretto.
-    -   Grafica non allungata ("scatti").
-    -   Testo ritagliato o non adattabile in background grafici.
+    -   Grafica ritagliata, sovrapposta o in altro modo non adattata correttamente.
+    -   Grafica poco estesa ("pixilated").
+    -   Testo ritagliato o non adattato a sfondi grafici.
 
 ## <a name="text"></a>Testo
 
--   **Per l'accessibilità e la localizzazione, non usare testo nella grafica.** Creare eccezioni solo per rappresentare la [personalizzazione](exper-branding.md) e il testo come concetto astratto.
+-   **Per l'accessibilità e la localizzazione, non usare testo nella grafica.** Creare eccezioni solo per rappresentare [la personalizzazione e](exper-branding.md) il testo come concetto astratto.
 
  
 

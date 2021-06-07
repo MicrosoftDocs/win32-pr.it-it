@@ -4,12 +4,12 @@ ms.assetid: c3047706-affd-4feb-9d48-cfb4c7dd6fa0
 title: Elemento Margin
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0500d4db165012393cb600c1e118089b68c76695
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 547177a10fc3724f3b9bf3dde65f857d03f0f2a4
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233865"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432133"
 ---
 # <a name="margin-element"></a>Elemento Margin
 
@@ -28,7 +28,7 @@ Definisce le linee dei margini disegnate nella pagina.
 
 ## <a name="parent-elements"></a>Elementi padre
 
-Nessuna.
+Nessuno.
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -58,11 +58,11 @@ Nessuno..
 <tbody>
 <tr class="odd">
 <td><strong>Style</strong></td>
-<td>SimpleType <a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a></td>
-<td>Necessario</td>
+<td><a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a></td>
+<td>Obbligatoria</td>
 <td>Specifica il tipo di linea da disegnare.</td>
 <td><ul>
-<li>nessuno</li>
+<li>Nessuno</li>
 <li>Tinta unita</li>
 <li>Trattino</li>
 <li>Punto</li>
@@ -73,14 +73,14 @@ Nessuno..
 </tr>
 <tr class="even">
 <td><strong>Colore</strong></td>
-<td>SimpleType <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
+<td><a href="colortype-simple-type.md"><strong>SimpleType ColorType</strong></a></td>
 <td>Facoltativo</td>
 <td>Colore dell'elemento.</td>
-<td>Valore RGB esadecimale. Corrisponde all'espressione regolare seguente: # [0-9a-zA-Z] {6} . Ad esempio, #4a79B5.<br/></td>
+<td>Valore RGB esadecimale. Corrisponde all'espressione regolare seguente: #[0-9a-zA-Z] {6} . Ad esempio, #4a79B5.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong></td>
-<td>SimpleType <a href="margintypetype-simple-type.md"><strong>MarginTypeType</strong></a></td>
+<td><a href="margintypetype-simple-type.md"><strong>SimpleType MarginTypeType</strong></a></td>
 <td>Facoltativo</td>
 <td>Indica il margine sinistro o destro.</td>
 <td><ul>
@@ -106,11 +106,11 @@ Nessuno..
 
 
 
-|              |                                                           |
+|  Elemento     | valore                                                     |
 |--------------|-----------------------------------------------------------|
-| Tipo di elemento | ComplexType [**MarginType**](margintype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                |
-| Nome schema  | Lettore Journal                                            |
+| Tipo di elemento | [**ComplexType MarginType**](margintype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                |
+| Nome schema  | Lettore journal                                            |
 
 
 

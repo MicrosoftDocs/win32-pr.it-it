@@ -1,9 +1,9 @@
 ---
 title: Elemento ContextMenu
-description: Rappresenta un controllo del menu di scelta rapida.
+description: Rappresenta un controllo menu di scelta rapida.
 ms.assetid: 08cc0514-0795-4e6b-b80c-33d920783032
 keywords:
-- Barra multifunzione Windows elemento ContextMenu
+- Barra multifunzione di Windows per l'elemento ContextMenu
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c824e87c063fb863e79f10cb9755b74df36023f7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 916a031ed642a76fb22ecc58dbbe1ce29cbcd105
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718379"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443470"
 ---
 # <a name="contextmenu-element"></a>Elemento ContextMenu
 
-Rappresenta un controllo del menu di scelta rapida.
+Rappresenta un controllo menu di scelta rapida.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -39,7 +39,7 @@ Rappresenta un controllo del menu di scelta rapida.
 
 | Attributo           | Type                 | Obbligatoria       | Descrizione                                                                                                                                                                                                                |
 |---------------------|----------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nome**<br/> | xs:string<br/> | Sì<br/> | <dt> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl> |
+| **Nome**<br/> | xs:string<br/> | Sì<br/> | <dt> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Rappresenta un controllo del menu di scelta rapida.
 
 | Elemento                                                         | Descrizione                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Deve essere presente almeno una volta<br/> <br/> |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 
@@ -59,7 +59,7 @@ Rappresenta un controllo del menu di scelta rapida.
 
 | Elemento                                                                                         |
 |-------------------------------------------------------------------------------------------------|
-| [**ContextPopup. ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md)<br/> |
+| [**ContextPopup.ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md)<br/> |
 
 
 
@@ -67,18 +67,18 @@ Rappresenta un controllo del menu di scelta rapida.
 
 facoltativo.
 
-Può verificarsi una o più volte per ogni [**ContextPopup. ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md).
+Può verificarsi una o più volte per [**ogni ContextPopup.ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md).
 
 > [!IMPORTANT]
-> Un oggetto **ContextMenu** non può [ospitare controlli](windowsribbon-controls-spinner.md) [casella combinata o casella](windowsribbon-controls-combobox.md) di selezione.
+> ContextMenu **non** può ospitare [controlli Casella combinata](windowsribbon-controls-combobox.md) o Casella di [selezione.](windowsribbon-controls-spinner.md)
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per una visualizzazione [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+L'esempio seguente illustra il markup di base per [**una visualizzazione ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-Questa sezione di codice mostra un set di dichiarazioni di controllo **ContextMenu** .
+Questa sezione di codice illustra un set di **dichiarazioni di controllo ContextMenu.**
 
 
 ```XML
@@ -167,20 +167,16 @@ Questa sezione di codice mostra un set di dichiarazioni di controllo **ContextMe
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Controllo popup contesto](windowsribbon-controls-contextpopup.md)
+[Controllo Popup di contesto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

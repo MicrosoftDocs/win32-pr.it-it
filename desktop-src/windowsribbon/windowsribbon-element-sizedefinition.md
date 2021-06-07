@@ -1,9 +1,9 @@
 ---
 title: Elemento SizeDefinition
-description: Rappresenta un modello di layout personalizzato dei controlli della barra multifunzione.
+description: Rappresenta un modello di layout personalizzato dei controlli barra multifunzione.
 ms.assetid: f90bb469-aee2-4bba-9efe-142a39a8c1ae
 keywords:
-- Barra multifunzione Windows elemento SizeDefinition
+- Barra multifunzione di Windows per l'elemento SizeDefinition
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7bfab87f01700f8f4d36f76cbcbfe3696acfbec2
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: cc68ac032459bed77d402ebd860886398748c874
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "106299363"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444802"
 ---
 # <a name="sizedefinition-element"></a>Elemento SizeDefinition
 
-Rappresenta un modello di layout personalizzato dei controlli della barra multifunzione.
+Rappresenta un modello di layout personalizzato dei controlli barra multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -55,10 +55,10 @@ Rappresenta un modello di layout personalizzato dei controlli della barra multif
 <tbody>
 <tr class="odd">
 <td><strong>Nome</strong><br/></td>
-<td>XS: positiveInteger o xs: String o xs: token<br/></td>
+<td>xs:positiveInteger o xs:string o xs:token<br/></td>
 <td>Sì<br/></td>
-<td>Quando <a href="windowsribbon-element-ribbon-sizedefinitions.md"><strong>Ribbon. SizeDefinitions</strong></a> è l'elemento padre; in caso contrario, facoltativo.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String o xs: token)<br/> </dt> <dd> Stringa o valore intero compreso tra 2 e 59999, inclusivo o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Quando <a href="windowsribbon-element-ribbon-sizedefinitions.md"><strong>Ribbon.SizeDefinitions è</strong></a> l'elemento padre, in caso contrario facoltativo.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string o xs:token)<br/> </dt> <dd> Stringa o valore intero compreso tra 2 e 59999, inclusivo o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +72,7 @@ Rappresenta un modello di layout personalizzato dei controlli della barra multif
 | Elemento                                                                             | Descrizione                                     |
 |-------------------------------------------------------------------------------------|-------------------------------------------------|
 | [**ControlNameMap**](windowsribbon-element-controlnamemap.md)<br/>           | Può verificarsi al massimo una volta<br/> <br/>   |
-| [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> | Deve essere presente almeno una volta<br/> <br/> |
+| [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 
@@ -82,8 +82,8 @@ Rappresenta un modello di layout personalizzato dei controlli della barra multif
 
 | Elemento                                                                                   |
 |-------------------------------------------------------------------------------------------|
-| [**Group**](windowsribbon-element-group.md)<br/>                                   |
-| [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/> |
+| [**Gruppo**](windowsribbon-element-group.md)<br/>                                   |
+| [**Ribbon.SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/> |
 
 
 
@@ -91,17 +91,17 @@ Rappresenta un modello di layout personalizzato dei controlli della barra multif
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento di [**gruppo**](windowsribbon-element-group.md) .
+Può verificarsi al massimo una volta per ogni [**elemento**](windowsribbon-element-group.md) Group.
 
-Può essere presente una o più volte per ogni elemento [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md) .
+Può verificarsi una o più volte per [**ogni elemento Ribbon.SizeDefinitions.**](windowsribbon-element-ribbon-sizedefinitions.md)
 
-I [modelli di layout](windowsribbon-templates.md) del Framework della barra multifunzione predefiniti vengono specificati con l'attributo *SizeDefinition* dell'elemento di [**gruppo**](windowsribbon-element-group.md) .
+I modelli di layout predefiniti del framework [della](windowsribbon-templates.md) barra multifunzione vengono specificati con *l'attributo SizeDefinition* dell'elemento [**Group.**](windowsribbon-element-group.md)
 
-Se un elemento [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) corrispondente non viene dichiarato per ogni elemento di [**gruppo**](windowsribbon-element-group.md) in un elemento [**Tab**](windowsribbon-element-tab.md) , si verificherà un errore di convalida.
+Se un elemento [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) corrispondente non viene dichiarato per ogni [**elemento Group**](windowsribbon-element-group.md) in un elemento [**Tab,**](windowsribbon-element-tab.md) si verificherà un errore di convalida.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice riportato di seguito viene illustrato un modello personalizzato di base.
+L'esempio di codice seguente illustra un modello personalizzato di base.
 
 
 ```XML
@@ -194,19 +194,16 @@ Nell'esempio di codice riportato di seguito viene illustrato un modello personal
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+- **Sistema minimo supportato:** Windows 7 
+- **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

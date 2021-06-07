@@ -1,7 +1,7 @@
 ---
 description: Contiene un paragrafo.
 ms.assetid: 60322907-3902-49a9-91a9-e00b0a714c00
-title: Elemento Paragraph (Windows.ui.xaml.documents. h)
+title: Elemento Paragraph (Windows.ui.xaml.documents.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.documents.h
-ms.openlocfilehash: bfe3752541bb54571e9802f557e83dcc7632f845
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f246294c80814ec809c0a1ca035fcb4741c30c5
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324356"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432233"
 ---
-# <a name="paragraph-element"></a>Paragraph-elemento
+# <a name="paragraph-element"></a>Elemento Paragraph
 
 Contiene un paragrafo.
 
@@ -34,11 +34,11 @@ Contiene un paragrafo.
 
 [**Contenuto**](content-element--journal-reader.md)
 
-[**Nodo del gruppo**](groupnode-element.md)
+[**GroupNode**](groupnode-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
-[**Linea**](line-element.md)
+[**A linee**](line-element.md)
 
 [**ParagraphLineMetrics**](paragraphlinemetrics-element.md)
 
@@ -48,12 +48,12 @@ Contiene un paragrafo.
 
 | Attributo       | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |-----------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**        | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di delimitazione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**         | **xs:integer**            | Necessario | Distanza tra l'origine e il punto superiore del rettangolo di delimitazione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**       | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di delimitazione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza**      | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di delimitazione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
-| **BlockNumber** | **xs:nonNegativeInteger** | Necessario | Numero del blocco.                                                                           | Qualsiasi numero intero non negativo. |
-| **LineNumber**  | **xs:nonNegativeInteger** | Necessario | Riga in cui inizia il paragrafo.                                                 | Qualsiasi numero intero non negativo. |
+| **Sinistra**        | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
+| **Top**         | **xs:integer**            | Obbligatoria | Distanza tra l'origine e il punto in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**       | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza**      | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **BlockNumber** | **xs:nonNegativeInteger** | Obbligatoria | Numero di blocco.                                                                           | Qualsiasi numero intero non negativo. |
+| **LineNumber**  | **xs:nonNegativeInteger** | Obbligatoria | Riga in cui inizia il paragrafo.                                                 | Qualsiasi numero intero non negativo. |
 
 
 
@@ -63,11 +63,11 @@ Contiene un paragrafo.
 
 
 
-|              |                                                                 |
+|  Elemento     | valore                                                     |
 |--------------|-----------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**ParagraphType**](paragraphtype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                      |
-| Nome schema  | Lettore Journal                                                  |
+| Tipo di elemento | [**complexType ParagraphType**](paragraphtype-complex-type.md) |
+| Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                      |
+| Nome schema  | Lettore journal                                                  |
 
 
 
@@ -79,7 +79,7 @@ Contiene un paragrafo.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Windows.ui.xaml.documents. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Windows.ui.xaml.documents.h</dt> </dl> |
 
 
 

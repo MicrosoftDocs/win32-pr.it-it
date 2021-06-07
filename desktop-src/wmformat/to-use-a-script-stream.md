@@ -4,44 +4,44 @@ description: Per usare un flusso di script
 ms.assetid: 502b1f66-213d-41d8-992a-9bef4f6209f9
 keywords:
 - Windows Media Format SDK, flussi di script
-- Formati di sistema avanzati (ASF), flussi di script
-- ASF (formato avanzato dei sistemi), flussi di script
+- Advanced Systems Format (ASF), flussi di script
+- ASF (Advanced Systems Format), flussi di script
 - flussi di script, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82dee2c4a9789406c21b18c58a5f281a768fc713
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09782855bd3000d711f134c5889733e49e020c44
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332556"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444732"
 ---
 # <a name="to-use-a-script-stream"></a>Per usare un flusso di script
 
-In questa sezione viene descritto come inviare i dati di script al writer per l'inclusione in un file. Per informazioni sull'inclusione di flussi di script nei profili, vedere [configurazione di tipi di flusso arbitrari](configuring-arbitrary-stream-types.md).
+Questa sezione descrive come inviare dati script al writer per l'inclusione in un file. Per informazioni sull'inclusione di flussi di script nei profili, vedere [Configurazione di tipi di flusso arbitrari.](configuring-arbitrary-stream-types.md)
 
-Ogni script è costituito da due stringhe, una stringa di *tipo* e una stringa di *argomento* .
+Ogni script è costituito da due stringhe, una *stringa di tipo* e una stringa *di* argomento.
 
-I dati di script devono essere formattati prima di essere inviati al writer. Le stringhe devono essere concatenate, separate da un carattere **null** e terminate con un carattere **null** . Nell'esempio seguente viene illustrato uno script legittimo:
+I dati dello script devono essere formattati prima di essere inviati al writer. Le stringhe devono essere concatenate, separate da un **carattere NULL** e terminate con un **carattere NULL.** L'esempio seguente illustra uno script legittimo:
 
 
 
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |   &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;  | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;  | &nbsp; |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| U   | R   | L   | \\0 | h   | u   | u   | p   | :   | /   | /   | w   | w   | w   | .   | a   | d   | a   | u   | u   | m   | .   | c   | o   | m   | \\0 |
+| U   | R   | L   | &nbsp; | h   | t   | t   | p   | :   | /   | /   | w   | w   | w   | .   | a   | d   | a   | t   | u   | m   | .   | c   | o   | m   | &nbsp; |
 
 
 
- 
+ 
 
-Ogni coppia di comandi di script deve essere scritta come esempio per il writer. Per ulteriori informazioni sulla scrittura di esempi, vedere [per scrivere esempi](to-write-samples.md).
+Ogni coppia di comandi script deve essere scritta come esempio nel writer. Per altre informazioni sulla scrittura di esempi, vedere [Per scrivere esempi](to-write-samples.md).
 
-Quando viene riprodotto il file ASF, i comandi di script vengono recapitati dal lettore (o dal lettore sincrono) nell'ordine temporale della presentazione. È responsabilità dell'applicazione analizzare le due stringhe e rispondere al comando script.
+Quando viene riprodotto il file ASF, i comandi script verranno recapitati dal lettore (o lettore sincrono) in ordine di tempo di presentazione. È responsabilità dell'applicazione analizzare le due stringhe e rispondere al comando script.
 
 > [!Note]  
-> Quando si usa il DRM per crittografare un file, nessun comando di script può avere un tempo di presentazione pari a 0.
+> Quando si usa DRM per crittografare un file, nessun comando script può avere un'ora di presentazione di 0.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -50,9 +50,9 @@ Quando viene riprodotto il file ASF, i comandi di script vengono recapitati dal 
 [**Uso di comandi script**](using-script-commands.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

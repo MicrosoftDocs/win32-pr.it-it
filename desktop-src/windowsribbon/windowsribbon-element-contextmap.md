@@ -1,9 +1,9 @@
 ---
 title: Elemento ContextMap
-description: Rappresenta un mapping di coppie ContextMenu e MiniToolbar.
+description: Rappresenta un mapping di coppia ContextMenu e MiniToolbar.
 ms.assetid: 84379578-24c6-4bf7-8dcf-8e21e5665d29
 keywords:
-- Barra multifunzione Windows elemento ContextMap
+- Elemento ContextMap Nella barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e2ddcc8bdea16f5e00974b2b2e58934941e44c68
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 4754fc75ca09e39cdc7eabbeae2a0a2d2630c31f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "106299367"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443012"
 ---
 # <a name="contextmap-element"></a>Elemento ContextMap
 
-Rappresenta un mapping di coppie [**ContextMenu**](windowsribbon-element-contextmenu.md) e [**MiniToolbar**](windowsribbon-element-minitoolbar.md) .
+Rappresenta un mapping [**di coppia ContextMenu**](windowsribbon-element-contextmenu.md) [**e MiniToolbar.**](windowsribbon-element-minitoolbar.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -55,24 +55,24 @@ Rappresenta un mapping di coppie [**ContextMenu**](windowsribbon-element-context
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ContextMenu</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Deve corrispondere a un nome <a href="windowsribbon-element-contextmenu.md"><strong>ContextMenu</strong></a> <em></em>esistente.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl></td>
+<td>Deve corrispondere a un nome <a href="windowsribbon-element-contextmenu.md"><strong>ContextMenu</strong></a> <em>esistente.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MiniToolbar</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Deve corrispondere a un nome <a href="windowsribbon-element-minitoolbar.md"><strong>MiniToolbar</strong></a> <em></em>esistente.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: String)<br/> </dt> <dd> Stringa costituita da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.<br/> </dd> </dl></td>
+<td>Deve corrispondere a un nome <a href="windowsribbon-element-minitoolbar.md"><strong>MiniToolbar</strong></a> <em>esistente.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -97,13 +97,13 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può essere presente una o più volte per ogni [**ContextPopup. ContextMaps**](windowsribbon-element-contextpopup-contextmaps.md).
+Può verificarsi una o più volte per [**ogni ContextPopup.ContextMaps**](windowsribbon-element-contextpopup-contextmaps.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per una visualizzazione [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+L'esempio seguente illustra il markup di base per [**una visualizzazione ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-Questa sezione di codice mostra un set di dichiarazioni di controllo **ContextMap** .
+Questa sezione di codice illustra un set di **dichiarazioni di controllo ContextMap.**
 
 
 ```XML
@@ -193,11 +193,8 @@ Questa sezione di codice mostra un set di dichiarazioni di controllo **ContextMa
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | Sì       |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** Sì
 
 
 
@@ -205,7 +202,7 @@ Questa sezione di codice mostra un set di dichiarazioni di controllo **ContextMa
 
 <dl> <dt>
 
-[Controllo popup contesto](windowsribbon-controls-contextpopup.md)
+[Controllo Popup del contesto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

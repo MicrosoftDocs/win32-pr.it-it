@@ -1,9 +1,9 @@
 ---
 title: Elemento HelpButton
-description: Rappresenta il controllo pulsante della guida.
+description: Rappresenta il controllo Pulsante ? .
 ms.assetid: 24c709da-539e-4ea0-bd3e-d3fbd72dfb97
 keywords:
-- Barra multifunzione Windows elemento HelpButton
+- Elemento HelpButton nella barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5be084ff6fc92d4eac4bbaffb3c507142f91eba8
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 9f34f04133b7628cce01ac0ce2808923b4f6bbdb
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "106299361"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442842"
 ---
 # <a name="helpbutton-element"></a>Elemento HelpButton
 
-Rappresenta il controllo [pulsante della Guida](windowsribbon-controls-helpbutton.md) .
+Rappresenta il [controllo Pulsante ?](windowsribbon-controls-helpbutton.md) .
 
 ## <a name="usage"></a>Utilizzo
 
@@ -53,10 +53,10 @@ Rappresenta il controllo [pulsante della Guida](windowsribbon-controls-helpbutto
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +73,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/> |
+| [**Ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/> |
 
 
 
@@ -81,15 +81,15 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md).
+Può verificarsi al massimo una volta per [**ogni ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md).
 
-Viene avviata una finestra di dialogo della Guida dell'applicazione quando si fa clic su.
+Avvia una finestra di dialogo della Guida dell'applicazione quando si fa clic su .
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base necessario per implementare un controllo [pulsante della Guida](windowsribbon-controls-helpbutton.md) della barra multifunzione.
+L'esempio seguente illustra il markup di base necessario per implementare un controllo Pulsante [? della barra](windowsribbon-controls-helpbutton.md) multifunzione.
 
-Questa sezione di codice mostra la dichiarazione del comando **HelpButton** .
+Questa sezione di codice illustra la **dichiarazione del comando HelpButton.**
 
 
 ```XML
@@ -100,7 +100,7 @@ Questa sezione di codice mostra la dichiarazione del comando **HelpButton** .
 
 
 
-Questa sezione di codice mostra la dichiarazione del controllo **HelpButton** .
+Questa sezione di codice mostra la dichiarazione **del controllo HelpButton.**
 
 
 ```XML
@@ -113,12 +113,8 @@ Questa sezione di codice mostra la dichiarazione del controllo **HelpButton** .
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | Sì       |
+* **Sistema minimo supportato:** Windows 7
+* **Può essere vuoto:** Sì
 
 
 
@@ -126,7 +122,7 @@ Questa sezione di codice mostra la dichiarazione del controllo **HelpButton** .
 
 <dl> <dt>
 
-[Controllo pulsante della Guida](windowsribbon-controls-helpbutton.md)
+[Controllo Pulsante ?](windowsribbon-controls-helpbutton.md)
 </dt> </dl>
 
  

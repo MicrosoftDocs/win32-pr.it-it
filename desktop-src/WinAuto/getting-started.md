@@ -1,30 +1,30 @@
 ---
-title: Introduzione (Microsoft Active Accessibility)
-description: Microsoft Active Accessibility è un set di interfacce Component Object Model (COM) ed elementi API che consentono di esporre e raccogliere informazioni sugli elementi dell'interfaccia utente basati su Microsoft Windows e sul contenuto Web.
+title: Attività iniziali (Microsoft Active Accessibility)
+description: Microsoft Active Accessibility è un set di interfacce Component Object Model (COM) ed elementi API che forniscono un modo affidabile per esporre e raccogliere informazioni sugli elementi dell'interfaccia utente basati su Microsoft Windows e sul contenuto Web.
 ms.assetid: 13148049-dbb0-4529-b1d7-0c41ebeb7543
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdf8e84f6e647868b23e845522c137e6cfb1b9dd
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 65713143e241a11d29782a4adc0f919ab9ebc3e0
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "106300906"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444982"
 ---
-# <a name="getting-started-microsoft-active-accessibility"></a>Introduzione (Microsoft Active Accessibility)
+# <a name="getting-started-microsoft-active-accessibility"></a>Attività iniziali (Microsoft Active Accessibility)
 
-Microsoft Active Accessibility è un set di interfacce Component Object Model (COM) ed elementi API che consentono di esporre e raccogliere informazioni sugli elementi dell'interfaccia utente basati su Microsoft Windows e sul contenuto Web. Utilizzando queste informazioni, i fornitori di tecnologie per l'accesso facilitato possono rappresentare l'interfaccia utente in formati alternativi, ad esempio vocale o Braille, e le applicazioni di controllo vocale e controllo possono modificare l'interfaccia in modalità remota. Microsoft Active Accessibility si basa sulla tecnologia Windows e può essere utilizzato in combinazione solo con controlli basati su Windows e altre applicazioni Windows.
+Microsoft Active Accessibility è un set di interfacce Component Object Model (COM) ed elementi API che forniscono un modo affidabile per esporre e raccogliere informazioni sugli elementi dell'interfaccia utente basati su Microsoft Windows e sul contenuto Web. Usando queste informazioni, assistive technology fornitori possono rappresentare l'interfaccia utente in formati alternativi, ad esempio voce o Braille, e le applicazioni di comando vocale e controllo possono modificare in remoto l'interfaccia. Microsoft Active Accessibility si basa sulla tecnologia Windows e può essere usato in combinazione solo con i controlli basati su Windows e altre applicazioni Windows.
 
-Questa documentazione è organizzata per soddisfare le esigenze degli sviluppatori che hanno familiarità con Microsoft Active Accessibility. Le sezioni principali della documentazione sono descritte di seguito:
+Questa documentazione è organizzata per soddisfare le esigenze degli sviluppatori che non hanno familiarità con Microsoft Active Accessibility. Le sezioni principali della documentazione sono descritte di seguito:
 
 
 
-|                                                        |                                                                                                                                                                   |
+|  Sezione                                                      |  Descrizione                                                                                                                                                                 |
 |--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Panoramica tecnica](technical-overview.md)           | Panoramica di Microsoft Active Accessibility e linee guida generali per gli sviluppatori di Microsoft Active Accessibility client e server.                                |
-| [Guida per gli sviluppatori in C/C++](c-c---developer-s-guide.md) | Informazioni approfondite sugli elementi e i concetti principali dell'API dell'applicazione Microsoft Active Accessibility. Usa termini ed esempi noti per gli sviluppatori C o C++. |
-| [Riferimenti per C/C++](c-c---reference.md)                 | Un riferimento completo per tutte le interfacce, le funzioni, i tipi di dati, le strutture di dati e i messaggi di Microsoft Active Accessibility.                           |
-| [Appendici](appendixes.md)                           | Materiale di riferimento aggiuntivo per sviluppatori Microsoft Active Accessibility client e server e Microsoft Visual Basicdevelopers.                               |
+| [Panoramica tecnica](technical-overview.md)           | Panoramica delle Microsoft Active Accessibility e delle linee guida generali per Microsoft Active Accessibility sviluppatori di client e server.                                |
+| [Guida per sviluppatori C/C++](c-c---developer-s-guide.md) | Informazioni approfondite sui concetti e sugli elementi dell'API Microsoft Active Accessibility'applicazione. Usa termini ed esempi familiari agli sviluppatori C o C++. |
+| [Riferimenti per C/C++](c-c---reference.md)                 | Riferimento completo per tutte le Microsoft Active Accessibility, le funzioni, i tipi di dati, le strutture di dati e i messaggi.                           |
+| [Appendici](appendixes.md)                           | Materiale di riferimento aggiuntivo per Microsoft Active Accessibility sviluppatori client e server e sviluppatori Microsoft Visual Basic.                               |
 
 
 
@@ -32,9 +32,9 @@ Questa documentazione è organizzata per soddisfare le esigenze degli sviluppato
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Componenti Active Accessibility](sdk-components.md)
+-   [Active Accessibility componenti](sdk-components.md)
 -   [Piattaforme supportate](supported-platforms.md)
--   [Active Accessibility e automazione interfaccia utente](active-accessibility-and-ui-automation.md)
+-   [Active Accessibility e Automazione interfaccia utente](active-accessibility-and-ui-automation.md)
 
  
 

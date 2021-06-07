@@ -1,9 +1,9 @@
 ---
 title: Elemento TabGroup
-description: Rappresenta un set contestuale di controlli struttura a schede.
+description: Rappresenta un set contestuale di controlli Tab.
 ms.assetid: f131efe1-b8c4-416e-997a-5e2d3bcc03ea
 keywords:
-- Barra multifunzione Windows elemento TabGroup
+- Elemento TabGroup Nella barra multifunzione di Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fcbe0760c850f37c6a7bf348c38e48aa7cf54ddc
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 6a4c18db72d6b0161842bfde9d5a836d14189c6a
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104223036"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444062"
 ---
 # <a name="tabgroup-element"></a>Elemento TabGroup
 
-Rappresenta un set contestuale di controlli struttura a [schede](windowsribbon-controls-tabgroup.md) .
+Rappresenta un set contestuale di [controlli Tab.](windowsribbon-controls-tabgroup.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -55,10 +55,10 @@ Rappresenta un set contestuale di controlli struttura a [schede](windowsribbon-c
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ Rappresenta un set contestuale di controlli struttura a [schede](windowsribbon-c
 
 | Elemento                                             | Descrizione                                     |
 |-----------------------------------------------------|-------------------------------------------------|
-| [**Scheda**](windowsribbon-element-tab.md)<br/> | Deve essere presente almeno una volta<br/> <br/> |
+| [**Scheda**](windowsribbon-element-tab.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 
@@ -81,7 +81,7 @@ Rappresenta un set contestuale di controlli struttura a [schede](windowsribbon-c
 
 | Elemento                                                                                 |
 |-----------------------------------------------------------------------------------------|
-| [**Ribbon. ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/> |
+| [**Ribbon.ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/> |
 
 
 
@@ -89,13 +89,13 @@ Rappresenta un set contestuale di controlli struttura a [schede](windowsribbon-c
 
 Obbligatorio.
 
-Deve essere presente almeno una volta per ogni elemento [**Ribbon. ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md) .
+Deve verificarsi almeno una volta per [**ogni elemento Ribbon.ContextualTabs.**](windowsribbon-element-ribbon-contextualtabs.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per l'elemento **TabGroup** .
+L'esempio seguente illustra il markup di base per **l'elemento TabGroup.**
 
-In questa sezione del codice viene illustrata una dichiarazione di comando **TabGroup** con due schede contestuali.
+Questa sezione di codice mostra una dichiarazione **di comando TabGroup** con due schede contestuali.
 
 
 ```XML
@@ -113,7 +113,7 @@ In questa sezione del codice viene illustrata una dichiarazione di comando **Tab
 
 
 
-In questa sezione del codice vengono illustrate le dichiarazioni di controllo **TabGroup** corrispondenti.
+Questa sezione di codice mostra le dichiarazioni **di controllo TabGroup** corrispondenti.
 
 
 ```XML
@@ -157,20 +157,16 @@ In questa sezione del codice vengono illustrate le dichiarazioni di controllo **
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema minimo supportato<br/> | Windows 7 |
-| Può essere vuoto                        | No        |
+- **Sistema minimo supportato:** Windows 7 
+- **Può essere vuoto:** No
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Controllo gruppo schede](windowsribbon-controls-tabgroup.md)
+[Controllo Gruppo di schede](windowsribbon-controls-tabgroup.md)
 </dt> <dt>
 
 [Controllo Tab](windowsribbon-controls-tab.md)
