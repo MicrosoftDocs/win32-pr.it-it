@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c277723628d5337e41e5fbf83baa9fda8af16adf
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2d87c791694e91de135052b4172e3bd5f55577d7
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993868"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827100"
 ---
 # <a name="shader-model-3-hlsl-reference"></a>Modello shader 3 (informazioni di riferimento su HLSL)
 
@@ -32,25 +32,25 @@ Sono stati aggiunti altri stati di rendering della modalità di ritorno a capo p
 -   [Specifica della precisione completa o parziale](#specifying-full-or-partial-precision)
 -   [Vertici software e pixel shader](#software-vertex-and-pixel-shaders)
 
-## <a name="vertex-shader-model-3-features"></a>Funzionalità del modello vertex shader 3
+## <a name="vertex-shader-model-3-features"></a>Funzionalità di Vertex Shader Model 3
 
-I tipi di registro di output del vertex shader sono stati compressi in dodici registri (vedere [Registri di output).](dx9-graphics-reference-asm-vs-registers-output.md) Ogni registro usato deve essere dichiarato usando l'istruzione [dcl](dcl-usage---ps.md) e una semantica ,ad esempio dcl \_ color0 o0.xyzw.
+I tipi di registro di output vertex shader sono stati compressi in dodici registri (vedere [Registri di output](dx9-graphics-reference-asm-vs-registers-output.md)). Ogni registro usato deve essere dichiarato usando l'istruzione [dcl](dcl-usage---ps.md) e una semantica ,ad esempio dcl \_ color0 o0.xyzw.
 
-Il modello di vertex shader a \_ 3 0 (vs 3 0) si espande sulle funzionalità di vs 2 0 con un'indicizzazione dei registri più potente, un set di registri di output semplificati, la possibilità di campionare una trama in un vertex shader e la possibilità di controllare la frequenza con cui vengono inizializzati \_ \_ gli input dello \_ \_ shader.
+Il modello di vertex shader a \_ 3 0 (rispetto a 3 0) si espande sulle funzionalità di vs 2 0 con l'indicizzazione dei registri più potente, un set di registri di output semplificati, la possibilità di campionare una trama in un vertex shader e la possibilità di controllare la velocità con cui vengono inizializzati \_ \_ gli input dello \_ \_ shader.
 
-### <a name="index-any-register"></a>Indicizzare qualsiasi registro
+### <a name="index-any-register"></a>Indicizza qualsiasi registro
 
 Tutti i registri ( [Registro di input](dx9-graphics-reference-asm-vs-registers-input.md) e Registri di [output](dx9-graphics-reference-asm-vs-registers-output.md)) possono essere indicizzati usando loop [counter register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (solo i registri costanti possono essere indicizzati nelle versioni precedenti).
 
-È necessario dichiarare i registri di input e output prima di indicizzarli. Tuttavia, non è possibile indicizzare alcun registro di output dichiarato con una semantica di posizione o dimensione del punto. In realtà, se si usa l'indicizzazione, la semantica di posizione e psize deve essere dichiarata rispettivamente nei registri o0 e o1.
+È necessario dichiarare i registri di input e output prima di indicizzarli. Tuttavia, non è possibile indicizzare alcun registro di output dichiarato con una semantica delle dimensioni di posizione o punto. In realtà, se si usa l'indicizzazione, la semantica di posizione e psize devono essere dichiarate rispettivamente nei registri o0 e o1.
 
-È consentito indicizzare solo un intervallo continuo di registri. ciò significa che non è possibile indicizzare i registri che non sono stati dichiarati. Anche se questa restrizione può essere poco pratico, consente l'ottimizzazione dell'hardware. Il tentativo di indicizzare i registri non contigui produrrà risultati non definiti. La convalida dello shader non applica questa restrizione.
+È consentito indicizzare solo un intervallo continuo di registri. in altri, non è possibile indicizzare i registri che non sono stati dichiarati. Anche se questa restrizione può essere poco pratico, consente di eseguire l'ottimizzazione dell'hardware. Il tentativo di indicizzare i registri non contigui produrrà risultati non definiti. La convalida dello shader non applica questa restrizione.
 
 ### <a name="simplify-output-registers"></a>Semplificare i registri di output
 
-Tutti i vari tipi di registri di output sono stati compressi in dodici registri di output: 1 per la posizione, 2 per il colore, 8 per la trama e 1 per le dimensioni del punto o del punto. Questi registri interpoleranno tutti i dati che contengono per il pixel shader. Le dichiarazioni dei registri di output sono obbligatorie e la semantica viene assegnata a ogni registro.
+Tutti i vari tipi di registri di output sono stati compressi in dodici registri di output: 1 per la posizione, 2 per il colore, 8 per la trama e 1 per le dimensioni della nebbia o del punto. Questi registri interpoleranno tutti i dati che contengono per il pixel shader. Le dichiarazioni del registro di output sono obbligatorie e la semantica viene assegnata a ogni registro.
 
-I registri possono essere suddivisi come segue:
+I registri possono essere suddivisi nel modo seguente:
 
 -   Almeno un registro deve essere dichiarato come registro di posizione a quattro componenti. Questo è l'unico registro vertex shader necessario.
 -   I primi dieci registri utilizzati da uno shader possono usare un massimo di quattro componenti (xyzw).
@@ -89,9 +89,9 @@ dcl_texcoord2_centroid v1.w
 
 
 
-Ogni registro ha una semantica diversa. Si noti che è anche possibile assegnare ai nomi v0.x e v0.yz una semantica diversa (multipla) a causa dell'uso della maschera di scrittura.
+Ogni registro ha una semantica diversa. Si noti che è anche possibile assegnare ai nomi v0.x e v0.yz una semantica diversa (più) a causa dell'uso della maschera di scrittura.
 
-Dato il pixel shader, lo shader 3 0 seguente non \_ può essere associato ad \_ esso:
+Dato il pixel shader, non è possibile associare lo shader seguente rispetto a \_ \_ 3 0:
 
 
 ```
@@ -104,7 +104,7 @@ dcl_texcoord1 o6.yzw
 
 
 
-Questi due shader sono in conflitto con l'uso della semantica [**D3DDECLUSAGE \_ TEXCOORD0**](/windows/desktop/direct3d9/d3ddeclusage) e **D3DDECLUSAGE \_ TEXCOORD1.**
+Questi due shader sono in conflitto con l'uso delle semantiche [**D3DDECLUSAGE \_ TEXCOORD0**](/windows/desktop/direct3d9/d3ddeclusage) e **D3DDECLUSAGE \_ TEXCOORD1.**
 
 Riscrivere il vertex shader in questo modo per evitare la collisione semantica:
 
@@ -134,7 +134,7 @@ dcl_texcoord3 o9 ...
 
 
 
-D'altra parte, questo vertex shader non può essere associato al pixel shader perché la maschera di output per un parametro con una determinata semantica non fornisce i dati richiesti dal pixel shader:
+D'altra parte, questo vertex shader non può essere associato al pixel shader perché la maschera di output per un parametro con una semantica specificata non fornisce i dati richiesti dal pixel shader:
 
 
 ```
@@ -149,7 +149,7 @@ dcl_texcoord3 o9
 
 
 
-Questo vertex shader non fornisce un output con uno dei nomi semantici richiesti dal pixel shader, quindi l'associazione di shader non è valida:
+Questo vertex shader non fornisce un output con uno dei nomi semantici richiesti dal pixel shader, quindi l'associazione dello shader non è valida:
 
 
 ```
@@ -165,11 +165,11 @@ dcl_texcoord3 o9
 
 
 
-## <a name="fog-depth-and-shading-mode-changes"></a>Modifiche alla modalità di ombreggiatura, profondità e profondità
+## <a name="fog-depth-and-shading-mode-changes"></a>Modifiche alla modalità nebbia, profondità e ombreggiatura
 
-Quando L'opzione D3DRS SHADEMODE è impostata per l'ombreggiatura piana durante la rasterizzazione del triangolo e del ritaglio, gli attributi con \_ COLORE D3DDECLUSAGE vengono interpolati come ombreggiati. \_ Se a qualsiasi componente di un registro viene dichiarata una semantica dei colori, ma ad altri componenti dello stesso registro viene data una semantica diversa, l'interpolazione di ombreggiatura piatta (lineare o flat) non sarà definita nei componenti del registro senza una semantica di colore.
+Quando D3DRS SHADEMODE è impostato per l'ombreggiatura piatta durante il ritaglio e la rasterizzazione del triangolo, gli attributi con \_ D3DDECLUSAGE COLOR vengono interpolati come ombreggiatura \_ piatta. Se i componenti di un registro vengono dichiarati con una semantica dei colori, ma ad altri componenti dello stesso registro viene data una semantica diversa, l'interpolazione dell'ombreggiatura flat (lineare o flat) non sarà definita nei componenti del registro senza una semantica del colore.
 
-Se si desidera eseguire il rendering del rendering, gli \_ shader 3 0 e \_ ps 3 0 devono \_ \_ implementare il modello a confronto. Non viene eseguito alcun calcolo al di fuori degli shader. Non è presente alcun registro di nebbia in confronto a 3 0 e sono state aggiunte altre semantiche D3DDECLUSAGE FOG (per il fattore di blend della nebbia calcolato per vertice) e \_ \_ \_ D3DDECLUSAGE DEPTH (per passare un valore di profondità al pixel shader per calcolare il fattore di blend della \_ nebbia).
+Se si desidera il rendering della nebbia, gli \_ \_ shader ps 3 0 e ps \_ 3 \_ 0 devono implementare la nebbia. Non viene eseguito alcun calcolo della nebbia all'esterno degli shader. Non è presente alcun registro di nebbia in confronto a 3 0 e sono state aggiunte altre semantiche D3DDECLUSAGE FOG (per il fattore di blend della nebbia calcolato per vertice) e \_ \_ \_ D3DDECLUSAGE DEPTH (per passare un valore di profondità al pixel shader per calcolare il fattore di blend della \_ nebbia).
 
 Lo stato della fase della trama D3DTSS TEXCOORDINDEX viene ignorato quando si usa \_ pixel shader 3.0.
 
@@ -233,29 +233,28 @@ Il \_ modificatore pp può verificarsi in due contesti:
 Un'applicazione potrebbe scegliere deliberatamente di trovare un compromesso tra precisione e prestazioni. Esistono diversi tipi di dati di input shader che sono candidati naturali per l'elaborazione con precisione parziale:
 
 -   Gli iteratori di colore sono ben rappresentati da valori a precisione parziale.
--   I valori di trama della maggior parte dei formati possono essere rappresentati in modo accurato da valori a precisione parziale (i valori campionati da trame in formato a virgola mobile a 32 bit sono un'eccezione ovvia).
+-   I valori di trama della maggior parte dei formati possono essere rappresentati in modo accurato da valori a precisione parziale(i valori campionati da trame in formato a virgola mobile a 32 bit sono un'eccezione ovvia).
 -   Le costanti possono essere rappresentate da una rappresentazione a precisione parziale in base alle esigenze dello shader.
 
 In tutti questi casi lo sviluppatore può scegliere di specificare una precisione parziale per elaborare i dati, sapendo che non viene persa alcuna precisione dei dati di input. In alcuni casi, uno shader può richiedere che i passaggi interni di un calcolo siano eseguiti con la massima precisione anche quando i valori di input e di output finale non hanno una precisione maggiore di parziale.
 
-## <a name="software-vertex-and-pixel-shaders"></a>Vertici software e pixel shader
+## <a name="software-vertex-and-pixel-shaders"></a>Vertex software e pixel shader
 
-Le implementazioni software (run-time e riferimento per i vertex shader e informazioni di riferimento per i pixel shader) degli shader versione 2 0 e successive hanno una convalida \_ più disassociato. Ciò è utile a scopo di debug e prototipazione. L'applicazione indica al runtime/assembler che è necessario un po' della convalida con il \_ flag sw nell'assembler (ad esempio, vs \_ 2 \_ sw). Uno shader software non funzionerà con l'hardware.
+Le implementazioni software (fase di esecuzione e riferimento per vertex shader e informazioni di riferimento per i pixel shader) degli shader versione 2 0 e successive hanno una convalida \_ più disincisa. Ciò è utile a scopo di debug e prototipazione. L'applicazione indica al runtime/assembler che è necessario un po' di convalida con il \_ flag sw nell'assembler (ad esempio, vs \_ 2 \_ sw). Uno shader software non funziona con l'hardware.
 
-rispetto a 2 sw è un relax rispetto ai limiti massimi di vs \_ \_ \_ 2 \_ x; analogamente, ps 2 sw è un relax ai limiti massimi di \_ \_ ps \_ 2 \_ x. In particolare, le convalide seguenti sono di tipo relaxed:
+vs 2 sw è un'avaie ai limiti massimi di vs \_ \_ \_ 2 \_ x; analogamente, ps 2 sw è un'avarita al limite massimo di \_ \_ ps \_ 2 \_ x. In particolare, le convalide seguenti sono di tipo relaxed:
 
 
 
-|                                            |                                      |                                                                                                                                   |
+| Modello shader                                           |  Risorsa                                    |  Limite                                                                                                                                  |
 |--------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Modello di shader                               | Risorsa                             | Limite                                                                                                                             |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Conteggi delle istruzioni                   | Nessuna limitazione                                                                                                                         |
-| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registri costanti float             | 8192                                                                                                                              |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registri costanti Float             | 8192                                                                                                                              |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registri costanti Integer           | 2048                                                                                                                              |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registri costanti booleani           | 2048                                                                                                                              |
 | ps \_ 2 \_ sw                                  | Profondità di lettura dipendente                 | Nessuna limitazione                                                                                                                         |
-| vs \_ 2 \_ sw                                  | Istruzioni ed etichette per il controllo di flusso | Nessuna limitazione                                                                                                                         |
-| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Inizio ciclo/passaggio/conteggio               | Le dimensioni dei passaggi di inizio e iterazione per le istruzioni rep e loop sono interi con segno a 32 bit. Il conteggio può essere fino a MAX \_ INT/64. |
+| vs \_ 2 \_ sw                                  | istruzioni ed etichette per il controllo di flusso | Nessuna limitazione                                                                                                                         |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Inizio/passaggio/conteggio del ciclo               | Le dimensioni dei passaggi di inizio e iterazione per le istruzioni rep e loop sono interi con segno a 32 bit. Il conteggio può essere fino a MAX \_ INT/64. |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Limiti delle porte                          | I limiti delle porte per tutti i file di registro sono di tipo relaxed.                                                                                   |
 | vs \_ 3 \_ sw                                  | Numero di interpolatori              | 16 registri di output in vs \_ 3 \_ sw.                                                                                                 |
 | ps \_ 3 \_ sw                                  | Numero di interpolatori              | 14(16-2) registri di input per ps \_ 3 \_ sw.                                                                                           |

@@ -1,6 +1,6 @@
 ---
 title: Esempio (oggetto trama DirectX HLSL)
-description: Campiona una trama. | Esempio (oggetto trama DirectX HLSL)
+description: Campiota una trama. | Esempio (oggetto trama DirectX HLSL)
 ms.assetid: 788ba4b4-8013-411f-9a19-fb9983386fa0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ec80d296025684c1bb67642661a31d8cdc119a53
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2374063d222d06576f720fed2aa7fb714bcccf04
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995296"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111825748"
 ---
 # <a name="sample-directx-hlsl-texture-object"></a>Esempio (oggetto trama DirectX HLSL)
 
-Campiona una trama.
+Campiota una trama.
 
-|                                                                                  |
-|----------------------------------------------------------------------------------|
-| &lt;Tipo &gt; di modello Object. Sample ( \_ stato campionatore, percorso float \[ , offset int \] ); |
+&lt;Tipo di &gt; modello Object.Sample( sampler \_ state S, float Location , int Offset \[ \] );
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,19 +38,19 @@ Campiona una trama.
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Oggetto</em><br/></td>
-<td>Qualsiasi tipo <a href="dx-graphics-hlsl-to-type.md">di oggetto trama</a> (ad eccezione di Texture2DMS e Texture2DMSArray).<br/></td>
+<td>Qualsiasi <a href="dx-graphics-hlsl-to-type.md">tipo di oggetto</a> trama (ad eccezione di Texture2DMS e Texture2DMSArray).<br/></td>
 </tr>
 <tr class="even">
 <td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
-<td>in <a href="dx-graphics-hlsl-sampler.md">Stato del campionatore</a>. Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.<br/></td>
+<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file di effetti che contiene assegnazioni di stato.<br/></td>
 </tr>
 <tr class="odd">
-<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Percorso</em><br/></td>
-<td>in Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama. <br/> 
+<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Posizione</em><br/></td>
+<td>[in] Coordinate della trama. Il tipo di argomento dipende dal tipo texture-object. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo di Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo di parametro</th>
 </tr>
 </thead>
@@ -79,13 +77,13 @@ Campiona una trama.
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Offset</em></p></td>
-<td><p>in Offset della coordinata di trama facoltativo che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato al percorso prima del campionamento. Gli offset della trama devono essere statici. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">applicazione degli offset delle coordinate di trama</a>.</p>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>compensare</em></p></td>
+<td><p>[in] Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato alla posizione prima del campionamento. Gli offset di trama devono essere statici. Il tipo di argomento dipende dal tipo texture-object. Per altre informazioni, vedere <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">Applicazione degli offset delle coordinate di trama.</a></p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo di Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo di parametro</th>
 </tr>
 </thead>
@@ -116,22 +114,22 @@ Campiona una trama.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il tipo di modello della trama, che può essere un vettore a un solo o più componenti. Il formato è basato sul [**\_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)della trama.
+Tipo di modello della trama, che può essere un vettore singolo o multi-componente. Il formato è basato sul formato [**DXGI \_ della trama.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 |          |           | x        | x         |          |           |
 
-1.  TextureCubeArray è disponibile nel modello Shader 4,1 o versione successiva.
-2.  Il modello di Shader 4,1 è disponibile in Direct3D 10,1 o versione successiva.
+1.  TextureCubeArray è disponibile in Shader Model 4.1 o versione successiva.
+2.  Shader Model 4.1 è disponibile in Direct3D 10.1 o versione successiva.
 
 ## <a name="example"></a>Esempio
 
-Questo esempio di codice parziale è basato sul file BasicHLSL11. FX nell' [esempio BasicHLSL11](https://github.com/microsoftarchive/msdn-code-gallery-community-a-c/tree/master/Basic%20DXUT%20Win32%20Samples/%5BC%2B%2B%5D-Basic%20DXUT%20Win32%20Samples/C%2B%2B/BasicHLSL11).
+Questo esempio di codice parziale è basato sul file BasicHLSL11.fx nell'esempio [BasicHLSL11.](https://github.com/microsoftarchive/msdn-code-gallery-community-a-c/tree/master/Basic%20DXUT%20Win32%20Samples/%5BC%2B%2B%5D-Basic%20DXUT%20Win32%20Samples/C%2B%2B/BasicHLSL11)
 
 ```
 // Object Declarations
@@ -160,22 +158,22 @@ VS_OUTPUT In;
 
 ## <a name="remarks"></a>Commenti
 
-Il campionamento della trama usa la posizione di Texel per cercare un valore di Texel. Un offset può essere applicato alla posizione prima della ricerca. Lo stato del campionatore contiene le opzioni di campionamento e filtro. Questo metodo può essere richiamato all'interno di una pixel shader, ma non è supportato in un vertex shader o in un geometry shader.
+Il campionamento trame usa la posizione texel per cercare un valore texel. È possibile applicare un offset alla posizione prima della ricerca. Lo stato del campionatore contiene le opzioni di campionamento e filtro. Questo metodo può essere richiamato all'interno di un pixel shader, ma non è supportato in un vertex shader o geometry shader.
 
-Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati diversi a seconda dell'implementazione dell'hardware o delle impostazioni del driver.
+Usare un offset solo in corrispondenza di un valore integer miplevel. In caso contrario, è possibile ottenere risultati diversi a seconda dell'implementazione dell'hardware o delle impostazioni del driver.
 
-### <a name="calculating-texel-positions"></a>Calcolo delle posizioni di Texel
+### <a name="calculating-texel-positions"></a>Calcolo delle posizioni texel
 
-Le coordinate di trama sono valori a virgola mobile che fanno riferimento a dati di trama, noti anche come spazio di trama normalizzato. Le modalità di wrapping degli indirizzi vengono applicate in questo ordine (coordinate di trama + offset + modalità a capo) per modificare le coordinate di trama al di fuori dell' \[ intervallo 0... 1 \] .
+Le coordinate di trama sono valori a virgola mobile che fanno riferimento ai dati della trama, noto anche come spazio trame normalizzato. Le modalità di ritorno a capo degli indirizzi vengono applicate in questo ordine (coordinate trama + offset + modalità di ritorno a capo) per modificare le coordinate di trama al di fuori dell'intervallo \[ 0...1. \]
 
-Per le matrici di trama, un valore aggiuntivo nel parametro location specifica un indice in una matrice di trame. Questo indice viene considerato come valore float scalato, invece dello spazio normalizzato per le coordinate di trama standard. La conversione in un indice Integer viene eseguita nell'ordine seguente (float + round-to-more-even integer + Clamp nell'intervallo di matrici).
+Per le matrici di trame, un valore aggiuntivo nel parametro location specifica un indice in una matrice di trame. Questo indice viene considerato come un valore float ridimensionato anziché come spazio normalizzato per le coordinate di trama standard. La conversione in un indice integer viene eseguita nell'ordine seguente (float + round-to-nearest-even integer + clamp all'intervallo di matrici).
 
 ### <a name="applying-texture-coordinate-offsets"></a>Applicazione degli offset delle coordinate di trama
 
-Il parametro offset modifica le coordinate di trama, nello spazio Texel. Anche se le coordinate di trama sono numeri a virgola mobile normalizzati, l'offset applica un offset intero. Si noti inoltre che gli offset della trama devono essere statici.
+Il parametro offset modifica le coordinate della trama, nello spazio texel. Anche se le coordinate della trama sono numeri a virgola mobile normalizzati, l'offset applica un offset intero. Si noti anche che gli offset trame devono essere statici.
 
-Il formato di dati restituito è determinato dal formato di trama. Se, ad esempio, la risorsa di trama è stata definita con il formato DXGI \_ \_ A8B8G8R8 \_ UNORM \_ sRGB format, l'operazione di campionamento converte i Texel campionati da gamma 2,0 a 1,0, filtra e scrive il risultato come valore a virgola mobile nell'intervallo \[ 0.. 1 \] .
+Il formato dei dati restituito è determinato dal formato della trama. Ad esempio, se la risorsa trama è stata definita con il formato DXGI \_ FORMAT A8B8G8R8 UNORM SRGB, l'operazione di campionamento converte i texel campionati da \_ \_ gamma 2.0 a 1.0, filtra e scrive il risultato come valore a virgola mobile nell'intervallo \_ \[ 0,.1 \] .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto texture](dx-graphics-hlsl-to-type.md)

@@ -1,9 +1,9 @@
 ---
 title: packoffset
-description: Parola chiave facoltativa di compressione costante dello shader, che usa la sintassi seguente
+description: Parola chiave facoltativa per la creazione di un pacchetto di costanti shader, che usa la sintassi seguente
 ms.assetid: f0a3031b-d385-430d-83ee-7a8142334ad7
 keywords:
-- HLSL packoffset
+- packoffset HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6feeaa586abe30fa8a36c28d0298dc408cdfb099
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5c92a6375f0724a1910fc0f09b47e1593614f9f1
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104333908"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826080"
 ---
 # <a name="packoffset"></a>packoffset
 
-Parola chiave facoltativa di compressione costante dello shader, che usa la sintassi seguente:
+Parola chiave facoltativa per la creazione di un pacchetto di costanti shader, che usa la sintassi seguente:
 
-
-
-|                                                 |
-|-------------------------------------------------|
-| : packoffset (c \[ SubComponent \] \[ . Component \] ) |
+: packoffset( c \[ Subcomponent \] \[ .component \] )
 
 
 
@@ -40,9 +36,9 @@ Parola chiave facoltativa di compressione costante dello shader, che usa la sint
 
 | Elemento                                                                                                                                                                                 | Descrizione                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="packoffset"></span><span id="PACKOFFSET"></span>**packoffset**<br/>                                                                                                  | Parola chiave required.<br/>                                                                                                                         |
-| <span id="c"></span><span id="C"></span>**c**<br/>                                                                                                                             | La compressione si applica solo ai registri costanti (c). <br/>                                                                                          |
-| <span id="_Subcomponent__.component_"></span><span id="_subcomponent__.component_"></span><span id="_SUBCOMPONENT__.COMPONENT_"></span>**\[Sottocomponente \] \[ . componente\]**<br/> | Componenti e sottocomponenti facoltativi. Un sottocomponente è un numero di registro, ovvero un numero intero. Il formato di un componente è \[ . xyzw \] .<br/> |
+| <span id="packoffset"></span><span id="PACKOFFSET"></span>**packoffset**<br/>                                                                                                  | Parola chiave obbligatoria.<br/>                                                                                                                         |
+| <span id="c"></span><span id="C"></span>**C**<br/>                                                                                                                             | La creazione di un pacchetto si applica solo ai registri costanti (c). <br/>                                                                                          |
+| <span id="_Subcomponent__.component_"></span><span id="_subcomponent__.component_"></span><span id="_SUBCOMPONENT__.COMPONENT_"></span>**\[Componente \] \[ secondario .component\]**<br/> | Sottocomponenti e componenti facoltativi. Un sottocomponente è un numero di registro, ovvero un numero intero. Un componente è nel formato \[ .xyzw \] .<br/> |
 
 
 
@@ -50,22 +46,22 @@ Parola chiave facoltativa di compressione costante dello shader, che usa la sint
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa parola chiave per comprimere manualmente una costante dello shader quando si [dichiara un tipo di variabile](dx-graphics-hlsl-variable-syntax.md).
+Usare questa parola chiave per creare manualmente un pacchetto di una costante shader [quando si dichiara un tipo di variabile](dx-graphics-hlsl-variable-syntax.md).
 
-Quando si imballa una costante, non è possibile combinare tipi costanti.
+Quando si esegue il pacchetto di una costante, non è possibile combinare tipi costanti.
 
 Il compilatore si comporta in modo leggermente diverso per le costanti globali e le costanti uniformi:
 
--   Costante globale. Una variabile globale viene aggiunta come costante globale a un *$Global* cbuffer dal compilatore. Gli elementi compressi automaticamente (quelli dichiarati senza packoffset) verranno visualizzati dopo l'ultima variabile compressa manualmente. È possibile combinare i tipi durante la compressione delle costanti globali.
--   Costante uniforme. Un parametro uniforme nell'elenco di parametri di una funzione verrà aggiunto a un buffer costante *$param* dal compilatore quando lo shader viene compilato all'esterno del Framework degli effetti. Quando viene compilato all'interno del Framework degli effetti, una costante uniforme deve essere risolta in una variabile uniforme definita nell'ambito globale. Una costante uniforme non può essere offset manualmente; l'utilizzo consigliato è solo per la specializzazione di shader in cui viene eseguito l'aliasing a Globals, non come mezzo per passare i dati dell'applicazione allo shader.
+-   Costante globale. Una variabile globale viene aggiunta come costante globale *a* un $Global cbuffer dal compilatore. Gli elementi di tipo packed automaticamente (quelli dichiarati senza packoffset) verranno visualizzati dopo l'ultima variabile di tipo packed manualmente. È possibile combinare tipi durante la creazione di un pacchetto di costanti globali.
+-   Costante uniforme. Un parametro uniforme nell'elenco di parametri di una funzione verrà aggiunto $Param un buffer costante di *$Param* dal compilatore quando lo shader viene compilato all'esterno del framework degli effetti. Quando viene compilata all'interno del framework degli effetti, una costante uniforme deve risolversi in una variabile uniforme definita nell'ambito globale. Non è possibile eseguire manualmente l'offset di una costante uniforme. L'uso consigliato è solo per la specializzazione degli shader in cui vengono di nuovo alias alle variabili globali, non come mezzo per passare i dati dell'applicazione nello shader.
 
-Di seguito sono riportati alcuni esempi aggiuntivi: le [costanti di compressione con il modello di Shader 4](dx-graphics-hlsl-packing-rules.md).
+Ecco alcuni esempi aggiuntivi: [creazione di un pacchetto di costanti usando il modello shader 4.](dx-graphics-hlsl-packing-rules.md)
 
 ## <a name="examples"></a>Esempio
 
-Di seguito sono riportati alcuni esempi di compressione manuale delle costanti shader.
+Di seguito sono riportati alcuni esempi di creazione manuale di un pacchetto di costanti shader.
 
-Comprimere i sottocomponenti di vettori e scalari le cui dimensioni sono sufficientemente grandi da impedire l'attraversamento dei limiti del registro. Ad esempio, sono tutti validi:
+Creare un pacchetto di sottocomponenti di vettori e scalari la cui dimensione è sufficientemente grande da impedire l'attraversamento dei limiti del registro. Ad esempio, sono tutti validi:
 
 
 ```

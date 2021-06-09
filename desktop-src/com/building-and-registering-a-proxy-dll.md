@@ -1,21 +1,21 @@
 ---
 title: Compilazione e registrazione di una DLL proxy
-description: Se è stato scelto il marshalling del proxy/stub per l'applicazione, i file. c e. h generati da MIDL devono essere compilati e collegati per creare una DLL proxy e tale DLL deve essere inserita nel registro di sistema in modo che i client possano individuare le interfacce.
+description: Se si sceglie il marshalling proxy/stub per l'applicazione, i file con estensione c e h generati da MIDL devono essere compilati e collegati per creare una DLL proxy e tale DLL deve essere immessa nel Registro di sistema in modo che i client possano individuare le interfacce.
 ms.assetid: 939e6eed-2a2d-4d90-8fbb-c07142e7ba70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61b0dcd28359172ff2f90391d44a66f8f51a4cbf
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 37d4cafbe2be56d9e9a02a451e3daf905496c424
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730514"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826806"
 ---
 # <a name="building-and-registering-a-proxy-dll"></a>Compilazione e registrazione di una DLL proxy
 
-Se è stato scelto il marshalling del proxy/stub per l'applicazione, i file. c e. h generati da MIDL devono essere compilati e collegati per creare una DLL proxy e tale DLL deve essere inserita nel registro di sistema in modo che i client possano individuare le interfacce. Il file generato da MIDL dlldata. c contiene le routine e altre informazioni necessarie per compilare e registrare una DLL proxy/stub.
+Se si sceglie il marshalling proxy/stub per l'applicazione, i file con estensione c e h generati da MIDL devono essere compilati e collegati per creare una DLL proxy e tale DLL deve essere immessa nel Registro di sistema in modo che i client possano individuare le interfacce. Il file dlldata.c generato da MIDL contiene le routine necessarie e altre informazioni per compilare e registrare una DLL proxy/stub.
 
-Il primo passaggio nella creazione della DLL consiste nel scrivere un file di definizione del modulo per il linker, come illustrato nell'esempio seguente:
+Il primo passaggio per la compilazione della DLL consiste nello scrivere un file di definizione del modulo per il linker, come illustrato nell'esempio seguente:
 
 ``` syntax
 LIBRARY        example.dll
@@ -27,9 +27,9 @@ EXPORTS        DllGetClassObject      @1 PRIVATE
  
 ```
 
-In alternativa, è possibile specificare queste funzioni esportate nella riga di comando del collegamento del makefile.
+In alternativa, è possibile specificare queste funzioni esportate nella riga di comando LINK del makefile.
 
-Le funzioni esportate sono dichiarate in Rpcproxy. h, che dlldata. c include e le implementazioni predefinite fanno parte della libreria di runtime RPC. COM utilizza queste funzioni per creare un class factory, scaricare le dll (dopo aver verificato che non esistano oggetti o blocchi), recuperare informazioni sulla DLL proxy e registrare e annullare la registrazione della DLL del proxy. Per sfruttare i vantaggi di queste funzioni predefinite, è necessario richiamare l'opzione Cpreprocessor/D (o-D) quando si compilano i file dlldata. c e \_ p. c di esempio, come illustrato nel makefile seguente:
+Le funzioni esportate vengono dichiarate in Rpcproxy.h, incluso in Dlldata.c, e le implementazioni predefinite fanno parte della libreria di runtime RPC. COM usa queste funzioni per creare un class factory, scaricare le DLL (dopo aver verificato che non esistano oggetti o blocchi), recuperare informazioni sulla DLL proxy e per autoregistrare e annullare la registrazione della DLL proxy. Per sfruttare queste funzioni predefinite, è necessario richiamare l'opzione Cpreprocessor /D (o -D) quando si compilano i file Dlldata.c e Example p.c, come illustrato nel \_ makefile seguente:
 
 ``` syntax
 example.h example.tlb example_p.c example_i.c dlldata.c : example.idl
@@ -41,35 +41,35 @@ example.obj : example_p.c
 iids.obj : example_i.c
 PROXYSTUBOBJS = dlldata.obj example.obj iids.obj
 PROXYSTUBLIBS = kernel32.lib rpcndr.lib rpcns4.lib rpcrt4.lib uuid.lib
-proxy.dll : $(PROXYSTUBOBJX) example.def
+proxy.dll : $(PROXYSTUBOBJS) example.def
     link /dll /out:proxy.dll /def:example.def
-        $(PROXYSTUBOBJS) $(ORIXYSTUBLIBS)
+        $(PROXYSTUBOBJS) $(PROXYSTUBLIBS)
     regsvr32 /s proxy.dll
  
 ```
 
-Se non si specificano queste definizioni per il preprocessore in fase di compilazione, queste funzioni non vengono definite automaticamente. (Ovvero, le macro in Rpcproxy. c si espandono su Nothing). È necessario che siano stati definiti in modo esplicito in un altro file di origine, il cui modulo verrebbe incluso anche nel collegamento e nella compilazione finali nella riga di comando del compilatore C.
+Se non si specificano queste definizioni del preprocessore in fase di compilazione, queste funzioni non vengono definite automaticamente. Ovvero, le macro in Rpcproxy.c non si espandono fino a nulla. È necessario averle definite in modo esplicito in un altro file di origine, il cui modulo sarebbe stato incluso anche nel collegamento e nella compilazione finali nella riga di comando del compilatore C.
 
-Quando \_ \_ si definisce la dll del proxy di registrazione, Rpcproxy. h fornisce un ulteriore controllo di compilazione condizionale con proxy \_ CLSID =*GUID*, il \_ CLSID proxy \_ è =*valore esplicito GUID* e \_ prefisso voce =*stringa prefisso*. Queste definizioni di macro sono descritte più dettagliatamente nelle [definizioni del compilatore C per proxy/stub](/windows/desktop/Midl/c-compiler-definitions-for-proxy-stubs) in MIDL Programmer ' s Guide.
+Quando viene definita la DLL REGISTER PROXY, Rpcproxy.h fornisce un controllo di compilazione condizionale aggiuntivo con \_ \_ \_ CLSID PROXY=*guid,* \_ CLSID PROXY IS= \_ valore \_ esplicito di guid e ENTRY PREFIX= stringa di prefisso . Queste definizioni di macro sono descritte in modo più dettagliato in Definizioni del compilatore [C per proxy/stub](/windows/desktop/Midl/c-compiler-definitions-for-proxy-stubs) nella Guida per programmatori MIDL.
 
-## <a name="manually-registering-the-proxy-dll"></a>Registrazione manuale della DLL proxy
+## <a name="manually-registering-the-proxy-dll"></a>Registrazione manuale della DLL del proxy
 
-Se per qualche motivo non è possibile usare le routine di registrazione stub proxy predefinite, è possibile registrare manualmente la DLL aggiungendo le voci seguenti al registro di sistema, usando Regedt32.exe.
-
-```
-HKEY_CLASSES_ROOT
-   Interface
-      iid
-         (Default) = ICustomInterfaceName
-         ProxyStubClsid32 = {clsid}
-```
+Se per qualche motivo non è possibile usare le routine di registrazione predefinite dello stub proxy, è possibile registrare manualmente la DLL aggiungendo le voci seguenti al Registro di sistema usando Regedt32.exe.
 
 ```
 HKEY_CLASSES_ROOT
-   CLSID
-      clsid
-         (Default) = ICustomInterfaceName_PSFactory
-         InprocServer32 = proxstub.dll
+   Interface
+      iid
+         (Default) = ICustomInterfaceName
+         ProxyStubClsid32 = {clsid}
+```
+
+```
+HKEY_CLASSES_ROOT
+   CLSID
+      clsid
+         (Default) = ICustomInterfaceName_PSFactory
+         InprocServer32 = proxstub.dll
 ```
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -85,6 +85,6 @@ HKEY_CLASSES_ROOT
 [Registrazione automatica](self-registration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

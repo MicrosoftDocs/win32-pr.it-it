@@ -1,6 +1,6 @@
 ---
-title: SampleGrad (oggetto trama di DirectX HLSL)
-description: Campiona una trama utilizzando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio. | SampleGrad (oggetto trama di DirectX HLSL)
+title: SampleGrad (oggetto Texture HLSL DirectX)
+description: Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione. | SampleGrad (oggetto Texture HLSL DirectX)
 ms.assetid: f3d73296-23c4-4178-b89e-6f84cfcb48a5
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 236c453f3636452cbba8ed6000b2416e5187898d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 959304d36da2b95bdf6289fba1b8c75d6ecfa314
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234684"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111825738"
 ---
-# <a name="samplegrad-directx-hlsl-texture-object"></a>SampleGrad (oggetto trama di DirectX HLSL)
+# <a name="samplegrad-directx-hlsl-texture-object"></a>SampleGrad (oggetto Texture HLSL DirectX)
 
-Campiona una trama utilizzando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio.
+Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione.
 
-
-
-|                                                                                                            |
-|------------------------------------------------------------------------------------------------------------|
-| &lt;Tipo &gt; di modello Object. SampleGrad ( \_ stato campionatore S, percorso float, DDX float, float ddy \[ , offset int \] ); |
+&lt;Template Type &gt; Object.SampleGrad( sampler \_ state S, float Location, float DDX, float DDY \[ , int Offset \] );
 
 
 
@@ -48,19 +44,19 @@ Campiona una trama utilizzando una sfumatura per influenzare il modo in cui vien
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Oggetto</em><br/></td>
-<td>Qualsiasi tipo <a href="dx-graphics-hlsl-to-type.md">di oggetto trama</a> (ad eccezione di Texture2DMS e Texture2DMSArray).<br/></td>
+<td>Qualsiasi <a href="dx-graphics-hlsl-to-type.md">tipo di oggetto</a> trama (ad eccezione di Texture2DMS e Texture2DMSArray).<br/></td>
 </tr>
 <tr class="even">
 <td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
-<td>in <a href="dx-graphics-hlsl-sampler.md">Stato del campionatore</a>. Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.<br/></td>
+<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file di effetto che contiene assegnazioni di stato.<br/></td>
 </tr>
 <tr class="odd">
-<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Percorso</em><br/></td>
-<td>in Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama. <br/> 
+<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Posizione</em><br/></td>
+<td>[in] Coordinate della trama. Il tipo di argomento dipende dal tipo di oggetto trama. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo di Texture-Object</th>
+<th>tipo Texture-Object</th>
 <th>Tipo di parametro</th>
 </tr>
 </thead>
@@ -91,13 +87,13 @@ Campiona una trama utilizzando una sfumatura per influenzare il modo in cui vien
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="DDX"></span><span id="ddx"></span><em>DDX</em></p></td>
-<td><p>in Frequenza di modifica della geometria della superficie nella direzione x. Il tipo di argomento dipende dal tipo di oggetto trama.</p>
+<td><p><span id="DDX"></span><span id="ddx"></span><em>Ddx</em></p></td>
+<td><p>[in] Frequenza di modifica della geometria della superficie nella direzione x. Il tipo di argomento dipende dal tipo di oggetto trama.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo di Texture-Object</th>
+<th>tipo Texture-Object</th>
 <th>Tipo di parametro</th>
 </tr>
 </thead>
@@ -125,12 +121,12 @@ Campiona una trama utilizzando una sfumatura per influenzare il modo in cui vien
 </tr>
 <tr class="odd">
 <td><p><span id="DDY"></span><span id="ddy"></span><em>DDY</em></p></td>
-<td><p>in Frequenza di modifica della geometria della superficie nella direzione y. Il tipo di argomento dipende dal tipo di oggetto trama.</p>
+<td><p>[in] Frequenza di modifica della geometria della superficie nella direzione y. Il tipo di argomento dipende dal tipo di oggetto trama.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo di Texture-Object</th>
+<th>tipo Texture-Object</th>
 <th>Tipo di parametro</th>
 </tr>
 </thead>
@@ -157,13 +153,13 @@ Campiona una trama utilizzando una sfumatura per influenzare il modo in cui vien
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Offset</em></p></td>
-<td><p>in Offset della coordinata di trama facoltativo, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato al percorso prima del campionamento. Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati che non si traducono correttamente nell'hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere<a href="dx-graphics-hlsl-to-sample.md">Applying Integer offsets</a>.</p>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>compensare</em></p></td>
+<td><p>[in] Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel; In caso contrario, è possibile che si otterrà un risultato che non si traduce bene in hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere<a href="dx-graphics-hlsl-to-sample.md">Applicazione di offset di interi.</a></p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo di Texture-Object</th>
+<th>tipo Texture-Object</th>
 <th>Tipo di parametro</th>
 </tr>
 </thead>
@@ -202,15 +198,15 @@ Campiona una trama utilizzando una sfumatura per influenzare il modo in cui vien
 
 ## <a name="return-value"></a>Valore restituito
 
-Il tipo di modello della trama, che può essere un vettore a un solo o più componenti. Il formato è basato sul [**\_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)della trama.
+Tipo di modello della trama, che può essere un vettore a uno o più componenti. Il formato è basato sul formato [**DXGI \_ della trama.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 | x        | x         | x        | x         | x        | x         |
 
@@ -218,12 +214,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
  
 
-1.  TextureCubeArray è disponibile nel modello Shader 4,1 o versione successiva.
-2.  Il modello di Shader 4,1 è disponibile in Direct3D 10,1 o versione successiva.
+1.  TextureCubeArray è disponibile in Shader Model 4.1 o versione successiva.
+2.  Il modello shader 4.1 è disponibile in Direct3D 10.1 o versione successiva.
 
 ## <a name="example"></a>Esempio
 
-Questo esempio di codice parziale viene dal file MotionBlur. FX nell' [esempio MotionBlur10](https://msdn.microsoft.com/library/Ee416417(v=VS.85).aspx).
+Questo esempio di codice parziale è dal file MotionBlur.fx in [MotionBlur10 Sample](https://msdn.microsoft.com/library/Ee416417(v=VS.85).aspx).
 
 
 ```
@@ -264,7 +260,7 @@ float4 PSSceneMain( VSSceneOut Input ) : SV_TARGET
 
 <dl> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto Texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

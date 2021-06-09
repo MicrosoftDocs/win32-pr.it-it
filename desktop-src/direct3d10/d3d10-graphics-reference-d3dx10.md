@@ -1,22 +1,20 @@
 ---
 description: 'Questa sezione contiene le sezioni seguenti:'
 ms.assetid: 27bd0b8a-fece-4db1-a954-ff91c2a919e6
-title: Guida di riferimento a D3DX (grafica Direct3D 10)
+title: Informazioni di riferimento su D3DX (grafica Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af62cd2c919123544b91e82eb2f00997f3b76eba
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 026ea9d8ce13cc86b4d4a99b5ff90030331ed90a
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523218"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826990"
 ---
-# <a name="d3dx-reference-direct3d-10-graphics"></a>Guida di riferimento a D3DX (grafica Direct3D 10)
+# <a name="d3dx-reference-direct3d-10-graphics"></a>Informazioni di riferimento su D3DX (grafica Direct3D 10)
 
-> [!Note]  
-> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
-
- 
+> [!NOTE]  
+> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Microsoft Store. Se l'aggiornamento a una versione più recente di Direct3D e del codice di utilità associato non è un'opzione, è possibile usare il pacchetto [NuGet Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) anziché basarsi su DirectX SDK o DirectSetup legacy.
 
 Questa sezione contiene le sezioni seguenti:
 
@@ -27,14 +25,4 @@ Questa sezione contiene le sezioni seguenti:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-<dl> <dt>
-
-[Informazioni di riferimento su Direct3D 10](d3d10-graphics-reference.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
+* [Informazioni di riferimento per Direct3D 10](d3d10-graphics-reference.md)

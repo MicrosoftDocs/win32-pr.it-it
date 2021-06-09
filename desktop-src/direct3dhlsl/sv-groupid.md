@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cf96e1db7dbb93c88ec741e309413dea3df2b01d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: ab94cef0a9a33f23947e11b93a5487c65eee3890
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996998"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827040"
 ---
 # <a name="sv_groupid"></a>SV \_ GroupID
 
@@ -30,9 +30,8 @@ Definisce l'offset del gruppo all'interno [**di una chiamata Dispatch,**](/windo
 
 
 
-|       |
+| Tipo      |
 |-------|
-| Tipo  |
 | uint3 |
 
 

@@ -4,30 +4,30 @@ ms.assetid: 39a701b3-2633-426f-9733-2172ad3ea372
 title: Introduzione a DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01733db5f8168a67871ec1797f79cd10a90c6c22
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5706ff0dec34c5db3762f5782f96804e5c85e889
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124353"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827225"
 ---
 # <a name="introduction-to-directshow"></a>Introduzione a DirectShow
 
-Microsoft® DirectShow® è un'architettura per lo streaming di contenuti multimediali sulla piattaforma® di Microsoft Windows. DirectShow fornisce l'acquisizione e la riproduzione di alta qualità dei flussi multimediali. Supporta un'ampia gamma di formati, tra cui il formato ASF (Advanced Systems Format), MPEG (Motion Picture Experts Group), Audio-Video file con interfoliazione (AVI), MPEG Audio Layer-3 (MP3) e WAV audio. Supporta l'acquisizione da dispositivi digitali e analoghi basati sul Windows Driver Model (WDM) o sul video per Windows. Rileva automaticamente e utilizza hardware di accelerazione video e audio, se disponibile, ma supporta anche sistemi senza hardware di accelerazione.
+Microsoft® DirectShow® è un'architettura per lo streaming di contenuti multimediali nella piattaforma Microsoft Windows®. DirectShow consente l'acquisizione e la riproduzione di flussi multimediali di alta qualità. Supporta un'ampia gamma di formati, tra cui ASF (Advanced Systems Format), Motion Picture Experts Group (MPEG), Audio-Video Interleaved (AVI), MPEG Audio Layer-3 (MP3) e file audio WAV. Supporta l'acquisizione da dispositivi digitali e analoghi basati su Windows Driver Model (WDM) o Video per Windows. Rileva e usa automaticamente l'hardware di accelerazione audio e video quando disponibile, ma supporta anche sistemi senza hardware di accelerazione.
 
-DirectShow si basa sul Component Object Model (COM). Per scrivere un'applicazione o un componente DirectShow, è necessario comprendere la programmazione client COM. Per la maggior parte delle applicazioni, non è necessario implementare oggetti COM personalizzati. DirectShow fornisce i componenti necessari. Se si desidera estendere DirectShow scrivendo i propri componenti, è tuttavia necessario implementarli come oggetti COM.
+DirectShow è basato sul Component Object Model (COM). Per scrivere un'applicazione o un componente DirectShow, è necessario comprendere la programmazione client COM. Per la maggior parte delle applicazioni, non è necessario implementare oggetti COM personalizzati. DirectShow fornisce i componenti necessari. Se tuttavia si vuole estendere DirectShow scrivendo componenti personalizzati, è necessario implementarli come oggetti COM.
 
 DirectShow è progettato per C++. Microsoft non fornisce un'API gestita per DirectShow.
 
-DirectShow semplifica la riproduzione dei contenuti multimediali, la conversione del formato e le attività di acquisizione. Allo stesso tempo, fornisce l'accesso all'architettura di controllo del flusso sottostante per le applicazioni che richiedono soluzioni personalizzate. È anche possibile creare componenti DirectShow personalizzati per supportare nuovi formati o effetti personalizzati.
+DirectShow semplifica le attività di riproduzione multimediale, conversione del formato e acquisizione. Allo stesso tempo, fornisce l'accesso all'architettura di controllo del flusso sottostante per le applicazioni che richiedono soluzioni personalizzate. È anche possibile creare componenti DirectShow personalizzati per supportare nuovi formati o effetti personalizzati.
 
-Esempi di tipi di applicazione che è possibile scrivere con DirectShow includono lettori di file, lettori TV e DVD, applicazioni di modifica video, convertitori di formati di file, applicazioni di acquisizione video audio, codificatori e decodificatori, processori di segnali digitali e molto altro.
+Esempi di tipi di applicazione che è possibile scrivere con DirectShow includono lettori di file, lettori TV e DVD, applicazioni di modifica video, convertitori di formati di file, applicazioni di acquisizione audio-video, codificatori e decodificatori, processori di segnali digitali e altro ancora.
 
 Questa sezione contiene i seguenti argomenti:
 
 -   [Novità di DirectShow](whats-new-in-directshow.md)
 -   [Formati supportati in DirectShow](supported-formats-in-directshow.md)
--   [Domande frequenti su DirectShow](directshow-faq.md)
+-   [Domande frequenti su DirectShow](directshow-faq.yml)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

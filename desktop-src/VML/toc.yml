@@ -1,64 +1,64 @@
-- name: Vector Markup Language (la)
+- name: Vector Markup Language (VML)
   href: web-workshop---specs---standards----introduction-to-vector-markup-language--vml-.md
   items:
-    - name: Introduzione a la
+    - name: Introduzione a VML
       href: msdn-online-vml-introduction.md
       items:
-        - name: Tipi di la di base
+        - name: Tipi VML di base
           href: basic-vml-types.md
-        - name: Domande frequenti su la
-          href: frequently-asked-questions-about-vml.md
+        - name: Domande frequenti su VML
+          href: frequently-asked-questions-about-vml.yml
         - name: Appendice
           href: web-workshop---how-to-use-vml-on-web-pages----appendix.md
-    - name: Come usare la nelle pagine Web
+    - name: Come usare VML nelle pagine Web
       href: web-workshop---specs---standards----how-to-use-vml-on-web-pages.md
       items:
         - name: Disegno di forme di base
           href: web-workshop---how-to-use-vml-on-web-pages----drawing-basic-shapes.md
         - name: Uso di forme predefinite
           href: web-workshop---how-to-use-vml-on-web-pages----using-predefined-shapes.md
-        - name: Colori delle forme
+        - name: Colorazione delle forme
           href: web-workshop---how-to-use-vml-on-web-pages----coloring-shapes.md
-        - name: Ridimensionamento di forme
+        - name: Ridimensionamento delle forme
           href: web-workshop---how-to-use-vml-on-web-pages----scaling-shapes.md
         - name: Posizionamento di forme
           href: web-workshop---how-to-use-vml-on-web-pages----positioning-shapes.md
-        - name: Forme di raggruppamento
+        - name: Raggruppamento di forme
           href: web-workshop---how-to-use-vml-on-web-pages----grouping-shapes.md
-        - name: Utilizzo dell'elemento TipoForma
+        - name: Uso dell'elemento Shapetype
           href: web-workshop---how-to-use-vml-on-web-pages-----shapetype--element.md
-        - name: Utilizzo dell'elemento Stroke
+        - name: Uso dell'elemento Stroke
           href: web-workshop---how-to-use-vml-on-web-pages-----stroke--element.md
         - name: Uso dell'elemento Fill
           href: web-workshop---how-to-use-vml-on-web-pages-----fill--element.md
-        - name: Utilizzo dell'elemento Image
+        - name: Uso dell'elemento Image
           href: web-workshop---how-to-use-vml-on-web-pages-----image--element.md
-        - name: Utilizzo dell'elemento background
+        - name: Uso dell'elemento background
           href: web-workshop---how-to-use-vml-on-web-pages-----background--element.md
-        - name: Utilizzo dell'elemento Shadow
+        - name: Uso dell'elemento Shadow
           href: web-workshop---how-to-use-vml-on-web-pages-----shadow--element.md
-        - name: Utilizzo dell'elemento Path
+        - name: Uso dell'elemento Path
           href: web-workshop---how-to-use-vml-on-web-pages-----path--element.md
-        - name: Utilizzo dell'elemento TextBox
+        - name: Uso dell'elemento Textbox
           href: web-workshop---how-to-use-vml-on-web-pages-----textbox--element.md
-        - name: Utilizzo dello spazio delle coordinate locale
+        - name: Uso dello spazio delle coordinate locale
           href: web-workshop---how-to-use-vml-on-web-pages----local-coordinate-space.md
-        - name: Utilizzo dell'elemento formules
+        - name: Uso dell'elemento Formulas
           href: web-workshop---how-to-use-vml-on-web-pages-----formulas--element.md
-        - name: Utilizzo dell'elemento Handles
+        - name: Uso dell'elemento Handles
           href: web-workshop---how-to-use-vml-on-web-pages-----handles--element.md
-        - name: Utilizzo dell'elemento TextPath
+        - name: Uso dell'elemento Textpath
           href: web-workshop---how-to-use-vml-on-web-pages-----textpath--element.md
-    - name: Riferimento al modello a oggetti la
+    - name: Informazioni di riferimento sul modello a oggetti VML
       href: msdn-online-vector-markup-language-object-model-reference.md
       items:
-        - name: Shape-elemento
+        - name: Elemento Shape
           href: shape-element--vml.md
           items:
             - name: Attributi
               href: attributes.md
               items:
-                - name: ADJ
+                - name: Adj
                   href: adj-attribute.md
                 - name: AllowInCell
                   href: allowincell-attribute.md
@@ -74,7 +74,7 @@
                   href: msdn-online-vml-borderrightcolor-attribute.md
                 - name: BorderTopColor
                   href: msdn-online-vml-bordertopcolor-attribute.md
-                - name: Punto elenco
+                - name: Proiettile
                   href: msdn-online-vml-bullet-attribute.md
                 - name: Pulsante
                   href: msdn-online-vml-button-attribute.md
@@ -86,7 +86,7 @@
                   href: msdn-online-vml-bwpure-attribute.md
                 - name: Classe
                   href: msdn-online-vml-class-attribute.md
-                - name: ConnectorType
+                - name: Connectortype
                   href: msdn-online-vml-connectortype-attribute.md
                 - name: CoordOrigin
                   href: msdn-online-vml-coordorigin-attribute.md
@@ -94,11 +94,11 @@
                   href: msdn-online-vml-coordsize-attribute.md
                 - name: DoubleClickNotify
                   href: msdn-online-vml-doubleclicknotify-attribute.md
-                - name: FillColor
+                - name: Fillcolor
                   href: msdn-online-vml-fillcolor-attribute.md
-                - name: Compilato
+                - name: Riempito
                   href: msdn-online-vml-filled-attribute.md
-                - name: Capovolgi
+                - name: Flip
                   href: msdn-online-vml-flip-attribute.md
                 - name: ForceDash
                   href: msdn-online-vml-forcedash-attribute.md
@@ -108,7 +108,7 @@
                   href: msdn-online-vml-hr-attribute.md
                 - name: HRAlign
                   href: msdn-online-vml-hralign-attribute.md
-                - name: HRef
+                - name: Href
                   href: href-attribute--shape--vml.md
                 - name: HRHeight
                   href: msdn-online-vml-hrheight-attribute.md
@@ -132,27 +132,27 @@
                   href: msdn-online-vml-margin-right-attribute.md
                 - name: Margin-Top
                   href: msdn-online-vml-margin-top-attribute.md
-                - name: OnMouseOver
+                - name: Onmouseover
                   href: msdn-online-vml-onmouseover-attribute.md
-                - name: MSO-posizione-orizzontale-relativa
+                - name: MSO-Position-Horizontal-Relative
                   href: msdn-online-vml-mso-position-horizontal-relative-attribute.md
-                - name: MSO-position-vertical-relativa
+                - name: MSO-Position-Vertical-Relative
                   href: msdn-online-vml-mso-position-vertical-relative-attribute.md
-                - name: MSO-posizione-orizzontale
+                - name: MSO-Position-Horizontal
                   href: msdn-online-vml-mso-position-horizontal-attribute.md
-                - name: MSO-posizione-verticale
+                - name: MSO-Position-Vertical
                   href: msdn-online-vml-mso-position-vertical-attribute.md
-                - name: MSO-modificato a capo
+                - name: MsO -Wrap-Edited
                   href: msdn-online-vml-mso-wrap-edited-attribute.md
-                - name: MSO-modalità a capo automatico
+                - name: MsO-Wrap-Mode
                   href: msdn-online-vml-mso-wrap-mode-attribute.md
-                - name: MSO-wrap-distance-Bottom
+                - name: MSO-Wrap-Distance-Bottom
                   href: msdn-online-vml-mso-wrap-distance-bottom-attribute.md
-                - name: MSO-wrap-Distance-Left
+                - name: MSO-Wrap-Distance-Left
                   href: msdn-online-vml-mso-wrap-distance-left-attribute.md
-                - name: MSO-wrap-distance-right
+                - name: MSO-Wrap-Distance-Right
                   href: msdn-online-vml-mso-wrap-distance-right-attribute.md
-                - name: MSO-wrap-distance-Top
+                - name: MSO-Wrap-Distance-Top
                   href: msdn-online-vml-mso-wrap-distance-top-attribute.md
                 - name: OLEIcon
                   href: msdn-online-vml-oleicon-attribute.md
@@ -174,13 +174,13 @@
                   href: rotation-attribute--shape--vml.md
                 - name: RuleInitiator
                   href: msdn-online-vml-ruleinitiator-attribute.md
-                - name: RuleProxy
+                - name: Proxy regola
                   href: msdn-online-vml-ruleproxy-attribute.md
-                - name: SPT
+                - name: Spt
                   href: msdn-online-vml-spt-attribute.md
                 - name: StrokeColor
                   href: msdn-online-vml-strokecolor-attribute.md
-                - name: Tracciato
+                - name: Accarezzò
                   href: msdn-online-vml-stroked-attribute.md
                 - name: StrokeWeight
                   href: msdn-online-vml-strokeweight-attribute.md
@@ -206,52 +206,52 @@
                   href: msdn-online-vml-width-attribute.md
                 - name: WrapCoords
                   href: msdn-online-vml-wrapcoords-attribute.md
-                - name: Indice Z
+                - name: Z-Index
                   href: msdn-online-vml-z-index-attribute.md
-        - name: Sottoelementi della forma
+        - name: Sottoelementi di Shape
           href: subelements-of-shape.md
           items:
-            - name: Elemento callout
+            - name: Elemento Callout
               href: msdn-online-vml-callout-element.md
               items:
                 - name: Attributo AccentBar
                   href: msdn-online-vml-accentbar-attribute.md
                 - name: Attributo Angle
                   href: angle-attribute--callout--vml.md
-                - name: Attributo distance
+                - name: Attributo Distance
                   href: msdn-online-vml-distance-attribute.md
-                - name: Drop (attributo)
+                - name: Rilasciare l'attributo
                   href: msdn-online-vml-drop-attribute.md
                 - name: Attributo DropAuto
                   href: msdn-online-vml-dropauto-attribute.md
-                - name: Attributo EXT
+                - name: Attributo Ext
                   href: ext-attribute--callout--vml.md
-                - name: Gap (attributo)
+                - name: Attributo Gap
                   href: msdn-online-vml-gap-attribute.md
-                - name: Attributo length
+                - name: Attributo Length
                   href: msdn-online-vml-length-attribute.md
                 - name: Attributo LengthSpecified
                   href: msdn-online-vml-lengthspecified-attribute.md
                 - name: Attributo MinusX
                   href: msdn-online-vml-minusx-attribute.md
-                - name: Attributo meno
+                - name: Attributo minusy
                   href: msdn-online-vml-minusy-attribute.md
-                - name: On (attributo)
+                - name: Su attributo
                   href: on-attribute--callout--vml.md
                 - name: Attributo TextBorder
                   href: msdn-online-vml-textborder-attribute.md
-                - name: Attributo Type
+                - name: Attributo type
                   href: type-attribute--callout--vml.md
             - name: Elemento Extrusion
               href: msdn-online-vml-extrusion-element.md
               items:
                 - name: Attributo AutoRotationCenter
                   href: msdn-online-vml-autorotationcenter-attribute.md
-                - name: Attributo backdepth
+                - name: Attributo BackDepth
                   href: msdn-online-vml-backdepth-attribute.md
-                - name: Attributo Brightness
+                - name: Attributo Luminosità
                   href: msdn-online-vml-brightness-attribute.md
-                - name: Attributo color
+                - name: Attributo Color
                   href: color-attribute--extrusion--vml.md
                 - name: Attributo ColorMode
                   href: msdn-online-vml-colormode-attribute.md
@@ -259,7 +259,7 @@
                   href: msdn-online-vml-diffusity-attribute.md
                 - name: Attributo Edge
                   href: msdn-online-vml-edge-attribute.md
-                - name: Attributo EXT
+                - name: Attributo Ext
                   href: ext-attribute--extrusion--vml.md
                 - name: Attributo facet
                   href: msdn-online-vml-facet-attribute.md
@@ -275,43 +275,43 @@
                   href: msdn-online-vml-lightlevel-attribute.md
                 - name: Attributo LightLevel2
                   href: msdn-online-vml-lightlevel2-attribute.md
-                - name: Attributo Posizioneilluminazione
+                - name: Attributo LightPosition
                   href: msdn-online-vml-lightposition-attribute.md
                 - name: Attributo LightPosition2
                   href: msdn-online-vml-lightposition2-attribute.md
                 - name: Attributo LockRotationCenter
                   href: msdn-online-vml-lockrotationcenter-attribute.md
-                - name: Metal (attributo)
+                - name: Attributo Metal
                   href: msdn-online-vml-metal-attribute.md
-                - name: On (attributo)
+                - name: Su attributo
                   href: on-attribute--extrusion--vml.md
                 - name: Attributo Orientation
                   href: msdn-online-vml-orientation-attribute.md
                 - name: Attributo OrientationAngle
                   href: msdn-online-vml-orientationangle-attribute.md
-                - name: Attributo Plane
+                - name: Attributo piano
                   href: msdn-online-vml-plane-attribute.md
-                - name: Render (attributo)
+                - name: Attributo di rendering
                   href: msdn-online-vml-render-attribute.md
                 - name: Attributo RotationAngle
                   href: msdn-online-vml-rotationangle-attribute.md
                 - name: Attributo RotationCenter
                   href: msdn-online-vml-rotationcenter-attribute.md
-                - name: Attributo lucentezza
+                - name: Attributo di luminosità
                   href: msdn-online-vml-shininess-attribute.md
                 - name: Attributo SkewAmt
                   href: msdn-online-vml-skewamt-attribute.md
                 - name: Attributo SkewAngle
                   href: msdn-online-vml-skewangle-attribute.md
-                - name: Attributo di specularità
+                - name: Attributo specularity
                   href: msdn-online-vml-specularity-attribute.md
-                - name: Attributo Type
+                - name: Attributo type
                   href: type-attribute--extrusion--vml.md
-                - name: Attributo Viewpoint
+                - name: Attributo del punto di vista
                   href: msdn-online-vml-viewpoint-attribute.md
                 - name: Attributo ViewpointOrigin
                   href: msdn-online-vml-viewpointorigin-attribute.md
-            - name: Fill (elemento)
+            - name: Elemento Fill
               href: msdn-online-vml-fill-element.md
               items:
                 - name: Attributo AlignShape
@@ -320,17 +320,17 @@
                   href: althref-attribute--fill--vml.md
                 - name: Attributo Angle
                   href: angle-attribute--fill--vml.md
-                - name: Attributo aspect
+                - name: Attributo Aspect
                   href: msdn-online-vml-aspect-attribute.md
-                - name: Attributo color
+                - name: Attributo Color
                   href: color-attribute--fill--vml.md
-                - name: Attributo color2
+                - name: Attributo Color2
                   href: color2-attribute--fill--vml.md
-                - name: Colors (attributo)
+                - name: Attributo Colors
                   href: msdn-online-vml-colors-attribute.md
                 - name: Attributo DetectMouseClick
                   href: detectmouseclick-attribute--fill--vml.md
-                - name: Attributo Focus
+                - name: Attributo dello stato attivo
                   href: msdn-online-vml-focus-attribute.md
                 - name: Attributo FocusPosition
                   href: msdn-online-vml-focusposition-attribute.md
@@ -342,33 +342,33 @@
                   href: id-attribute--fill--vml.md
                 - name: Attributo method
                   href: msdn-online-vml-method-attribute.md
-                - name: On (attributo)
+                - name: Su attributo
                   href: on-attribute--fill--vml.md
-                - name: Attributo Opacity
+                - name: Attributo di opacità
                   href: opacity-attribute--fill--vml.md
                 - name: Attributo Opacity2
                   href: msdn-online-vml-opacity2-attribute.md
-                - name: Attributo Origin
+                - name: Attributo origin
                   href: origin-attribute--fill--vml.md
-                - name: Position (attributo)
+                - name: Attributo Position
                   href: position-attribute--fill--vml.md
-                - name: Attributo size
+                - name: Attributo Size
                   href: size-attribute--fill--vml.md
-                - name: Attributo src
+                - name: Attributo Src
                   href: src-attribute--fill--vml.md
-                - name: Attributo title
+                - name: Attributo Title
                   href: title-attribute--fill--vml.md
-                - name: Attributo Type
+                - name: Attributo type
                   href: type-attribute--fill--vml.md
-            - name: Elemento formules
+            - name: Elemento Formulas
               href: msdn-online-vml-formulas-element.md
               items:
-                - name: F (elemento)
+                - name: Elemento F
                   href: msdn-online-vml-f-element.md
                   items:
-                    - name: Attributo EQN
+                    - name: Attributo Eqn
                       href: msdn-online-vml-eqn-attribute.md
-            - name: Handles-elemento
+            - name: Elemento Handles
               href: msdn-online-vml-handles-element.md
               items:
                 - name: Elemento H
@@ -378,26 +378,26 @@
                       href: msdn-online-vml-invx-attribute.md
                     - name: Attributo InvY
                       href: msdn-online-vml-invy-attribute.md
-                    - name: Map (attributo)
+                    - name: Attributo map
                       href: msdn-online-vml-map-attribute.md
-                    - name: Attributo polare
+                    - name: Attributo Polar
                       href: msdn-online-vml-polar-attribute.md
-                    - name: Position (attributo)
+                    - name: Attributo Position
                       href: position-attribute--h--vml.md
                     - name: Attributo RadiusRange
                       href: msdn-online-vml-radiusrange-attribute.md
-                    - name: Attributo switch
+                    - name: Attributo Switch
                       href: msdn-online-vml-switch-attribute.md
                     - name: Attributo XRange
                       href: msdn-online-vml-xrange-attribute.md
                     - name: Attributo YRange
                       href: msdn-online-vml-yrange-attribute.md
-            - name: Elemento ImageData
+            - name: Elemento Imagedata
               href: msdn-online-vml-imagedata-element.md
               items:
                 - name: Attributo AltHRef
                   href: althref-attribute--imagedata--vml.md
-                - name: Attributo bilevel
+                - name: Attributo Bilevel
                   href: msdn-online-vml-bilevel-attribute.md
                 - name: Attributo BlackLevel
                   href: msdn-online-vml-blacklevel-attribute.md
@@ -415,11 +415,11 @@
                   href: detectmouseclick-attribute--imagedata--vml.md
                 - name: Attributo EmbossColor
                   href: msdn-online-vml-embosscolor-attribute.md
-                - name: Ottieni attributo
+                - name: Attributo Gain
                   href: msdn-online-vml-gain-attribute.md
-                - name: Attributo gamma
+                - name: Attributo Gamma
                   href: msdn-online-vml-gamma-attribute.md
-                - name: Scalabilità (attributo)
+                - name: Attributo GrayScale
                   href: msdn-online-vml-grayscale-attribute.md
                 - name: Attributo HRef
                   href: href-attribute--imagedata--vml.md
@@ -429,9 +429,9 @@
                   href: msdn-online-vml-movie-attribute.md
                 - name: Attributo OLEID
                   href: msdn-online-vml-oleid-attribute.md
-                - name: Attributo src
+                - name: Attributo Src
                   href: src-attribute--imagedata--vml.md
-                - name: Attributo title
+                - name: Attributo Title
                   href: title-attribute--imagedata--vml.md
             - name: Elemento Locks
               href: msdn-online-vml-locks-element.md
@@ -440,23 +440,23 @@
                   href: msdn-online-vml-adjusthandles-attribute.md
                 - name: Attributo AspectRatio
                   href: msdn-online-vml-aspectratio-attribute.md
-                - name: Ritaglio dell'attributo
+                - name: Attributo di ritaglio
                   href: msdn-online-vml-cropping-attribute.md
-                - name: Attributo EXT
+                - name: Attributo Ext
                   href: ext-attribute--lock--vml.md
-                - name: Attributo GROUPING
+                - name: Attributo di raggruppamento
                   href: msdn-online-vml-grouping-attribute.md
-                - name: Position (attributo)
+                - name: Attributo Position
                   href: position-attribute--lock--vml.md
-                - name: Attributo Rotation
+                - name: Attributo di rotazione
                   href: rotation-attribute--lock--vml.md
                 - name: Attributo selection
                   href: msdn-online-vml-selection-attribute.md
-                - name: Attributo TipoForma
+                - name: Attributo ShapeType
                   href: msdn-online-vml-shapetype-attribute.md
-                - name: Attributo testo
+                - name: Attributo Text
                   href: msdn-online-vml-text-attribute.md
-                - name: Attributo vertici
+                - name: Attributo Vertices
                   href: msdn-online-vml-vertices-attribute.md
             - name: Elemento Path
               href: msdn-online-vml-path-element.md
@@ -477,7 +477,7 @@
                   href: msdn-online-vml-gradientshapeok-attribute.md
                 - name: Attributo ID
                   href: id-attribute--path--vml.md
-                - name: Limo (attributo)
+                - name: Attributo Limo
                   href: msdn-online-vml-limo-attribute.md
                 - name: Attributo ShadowOK
                   href: msdn-online-vml-shadowok-attribute.md
@@ -492,63 +492,63 @@
             - name: Elemento Shadow
               href: msdn-online-vml-shadow-element.md
               items:
-                - name: Attributo color
+                - name: Attributo Color
                   href: color-attribute--shadow--vml.md
-                - name: Attributo color2
+                - name: Attributo Color2
                   href: color2-attribute--shadow--vml.md
                 - name: Attributo ID
                   href: id-attribute--shadow--vml.md
-                - name: Attributo Matrix
+                - name: Attributo Matrice
                   href: matrix-attribute--shadow--vml.md
-                - name: Attributo Obscured
+                - name: Attributo nascosto
                   href: msdn-online-vml-obscured-attribute.md
-                - name: Offset (attributo)
+                - name: Attributo offset
                   href: offset-attribute--shadow--vml.md
                 - name: Attributo Offset2
                   href: msdn-online-vml-offset2-attribute.md
-                - name: On (attributo)
+                - name: Su attributo
                   href: on-attribute--shadow--vml.md
-                - name: Attributo Opacity
+                - name: Attributo di opacità
                   href: opacity-attribute--shadow--vml.md
-                - name: Attributo Origin
+                - name: Attributo origin
                   href: origin-attribute--shadow--vml.md
-                - name: Attributo Type
+                - name: Attributo type
                   href: type-attribute--shadow--vml.md
-            - name: Elemento asimmetria
+            - name: Elemento Skew
               href: msdn-online-vml-skew-element.md
               items:
-                - name: Attributo EXT
+                - name: Attributo Ext
                   href: ext-attribute--skew--vml.md
                 - name: Attributo ID
                   href: id-attribute--skew--vml.md
-                - name: Attributo Matrix
+                - name: Attributo Matrice
                   href: matrix-attribute--skew--vml.md
-                - name: Offset (attributo)
+                - name: Attributo offset
                   href: offset-attribute--skew--vml.md
-                - name: On (attributo)
+                - name: Su attributo
                   href: on-attribute--skew--vml.md
-                - name: Attributo Origin
+                - name: Attributo origin
                   href: origin-attribute--skew--vml.md
-            - name: Stroke-elemento
+            - name: Elemento Stroke
               href: msdn-online-vml-stroke-element.md
               items:
                 - name: Attributo AltHRef
                   href: althref-attribute--stroke--vml.md
-                - name: Attributo color
+                - name: Attributo Color
                   href: color-attribute--stroke--vml.md
-                - name: Attributo color2
+                - name: Attributo Color2
                   href: color2-attribute--stroke--vml.md
                 - name: Attributo DashStyle
                   href: msdn-online-vml-dashstyle-attribute.md
-                - name: Attributo.
+                - name: Attributo EndArrow
                   href: msdn-online-vml-endarrow-attribute.md
                 - name: Attributo EndArrowLength
                   href: msdn-online-vml-endarrowlength-attribute.md
                 - name: Attributo EndArrowWidth
                   href: msdn-online-vml-endarrowwidth-attribute.md
-                - name: Estremità (attributo)
+                - name: Attributo EndCap
                   href: msdn-online-vml-endcap-attribute.md
-                - name: Attributo elemento FillType
+                - name: Attributo FillType
                   href: msdn-online-vml-filltype-attribute.md
                 - name: Attributo HRef
                   href: href-attribute--stroke--vml.md
@@ -566,11 +566,11 @@
                   href: msdn-online-vml-linestyle-attribute.md
                 - name: Attributo MiterLimit
                   href: msdn-online-vml-miterlimit-attribute.md
-                - name: On (attributo)
+                - name: Su attributo
                   href: on-attribute--stroke--vml.md
-                - name: Attributo Opacity
+                - name: Attributo di opacità
                   href: opacity-attribute--stroke--vml.md
-                - name: Attributo src
+                - name: Attributo Src
                   href: src-attribute--stroke--vml.md
                 - name: Attributo StartArrow
                   href: msdn-online-vml-startarrow-attribute.md
@@ -578,9 +578,9 @@
                   href: msdn-online-vml-startarrowlength-attribute.md
                 - name: Attributo StartArrowWidth
                   href: msdn-online-vml-startarrowwidth-attribute.md
-                - name: Attributo title
+                - name: Attributo Title
                   href: title-attribute--stroke--vml.md
-                - name: Attributo weight
+                - name: Attributo Weight
                   href: msdn-online-vml-weight-attribute.md
             - name: Elemento TextBox
               href: msdn-online-vml-textbox-element.md
@@ -589,29 +589,29 @@
                   href: msdn-online-vml-direction-attribute.md
                 - name: Attributo ID
                   href: id-attribute--textbox--vml.md
-                - name: Attributo INSERT
+                - name: Attributo inset
                   href: msdn-online-vml-inset-attribute.md
                 - name: Attributo InsetMode
                   href: msdn-online-vml-insetmode-attribute.md
-                - name: Attributo Layout-Flow
+                - name: Layout-Flow attributo
                   href: msdn-online-vml-layout-flow-attribute.md
-                - name: MSO-Direction-alt-attributo
+                - name: Attributo MSO-Direction-Alt
                   href: msdn-online-vml-mso-direction-alt-attribute.md
-                - name: Attributo MSO-Fit-Shape-to-text
+                - name: Attributo MSO-Fit-Shape-To-Text
                   href: msdn-online-vml-mso-fit-shape-to-text-attribute.md
-                - name: Attributo MSO-Fit-Text-to-Shape
+                - name: Attributo MSO-Fit-Text-To-Shape
                   href: msdn-online-vml-mso-fit-text-to-shape-attribute.md
-                - name: Attributo MSO-layout-Flow-Alt
+                - name: Attributo MSO-Layout-Flow-Alt
                   href: msdn-online-vml-mso-layout-flow-alt-attribute.md
-                - name: MSO-Next-TextBox (attributo)
+                - name: Attributo MSO-Next-Textbox
                   href: msdn-online-vml-mso-next-textbox-attribute.md
-                - name: Attributo MSO-Rotate
+                - name: MSO-Rotate attributo
                   href: msdn-online-vml-mso-rotate-attribute.md
-                - name: MSO-attributo scala testo
+                - name: Attributo MSO-Text-Scale
                   href: msdn-online-vml-mso-text-scale-attribute.md
                 - name: Attributo SingleClick
                   href: msdn-online-vml-singleclick-attribute.md
-                - name: Attributo V-text-anchor
+                - name: Attributo V-Text-Anchor
                   href: msdn-online-vml-v-text-anchor-attribute.md
             - name: Elemento TextPath
               href: msdn-online-vml-textpath-element.md
@@ -620,41 +620,41 @@
                   href: msdn-online-vml-fitpath-attribute.md
                 - name: Attributo FitShape
                   href: msdn-online-vml-fitshape-attribute.md
-                - name: Attributo Font-Family
+                - name: Font-Family attributo
                   href: msdn-online-vml-font-family-attribute.md
-                - name: Attributo Font-Size
+                - name: Font-Size attributo
                   href: msdn-online-vml-font-size-attribute.md
-                - name: Attributo Font-Style
+                - name: Font-Style attributo
                   href: msdn-online-vml-font-style-attribute.md
-                - name: Attributo Font-Variant
+                - name: Font-Variant attributo
                   href: msdn-online-vml-font-variant-attribute.md
-                - name: Attributo Font-Weight
+                - name: Font-Weight attributo
                   href: msdn-online-vml-font-weight-attribute.md
-                - name: Attributo font
+                - name: Attributo Font
                   href: msdn-online-vml-font-attribute.md
-                - name: MSO-testo-attributo Shadow
+                - name: Attributo MSO-Text-Shadow
                   href: msdn-online-vml-mso-text-shadow-attribute.md
-                - name: On (attributo)
+                - name: Su attributo
                   href: on-attribute--textpath--vml.md
-                - name: Attributo stringa
+                - name: Attributo String
                   href: msdn-online-vml-string-attribute.md
-                - name: Attributo Text-Decoration
+                - name: Text-Decoration attributo
                   href: msdn-online-vml-text-decoration-attribute.md
-                - name: Trim (attributo)
+                - name: Attributo Trim
                   href: msdn-online-vml-trim-attribute.md
-                - name: Attributo V-rotate-Letters
+                - name: Attributo V-Rotate-Letters
                   href: msdn-online-vml-v-rotate-letters-attribute.md
-                - name: Attributo V-same-Letter-Heights
+                - name: Attributo V-Same-Letter-Heights
                   href: msdn-online-vml-v-same-letter-heights-attribute.md
-                - name: Attributo V-text-align
+                - name: Attributo V-Text-Align
                   href: msdn-online-vml-v-text-align-attribute.md
-                - name: Attributo V-text-Kern
+                - name: Attributo V-Text-Kern
                   href: msdn-online-vml-v-text-kern-attribute.md
-                - name: V-Text-attributo inverso
+                - name: Attributo V-Text-Reverse
                   href: msdn-online-vml-v-text-reverse-attribute.md
-                - name: Attributo della modalità di spaziatura con testo V
+                - name: Attributo V-Text-Spacing-Mode
                   href: msdn-online-vml-v-text-spacing-mode-attribute.md
-                - name: Attributo di spaziatura con testo V
+                - name: Attributo V-Text-Spacing
                   href: msdn-online-vml-v-text-spacing-attribute.md
                 - name: Attributo XScale
                   href: msdn-online-vml-xscale-attribute.md
@@ -666,31 +666,31 @@
               items:
                 - name: Attributo StartAngle
                   href: msdn-online-vml-startangle-attribute.md
-                - name: Attributo inpenzolare
+                - name: Attributo EndAngle
                   href: msdn-online-vml-endangle-attribute.md
-            - name: Curva-elemento
+            - name: Elemento Curve
               href: msdn-online-vml-curve-element.md
               items:
                 - name: Attributo Control1
                   href: msdn-online-vml-control1-attribute.md
-                - name: Attributo controllo2
+                - name: Attributo Control2
                   href: msdn-online-vml-control2-attribute.md
-                - name: Attributo from
+                - name: Dall'attributo
                   href: from-attribute--curve--vml.md
-                - name: Attributo to
+                - name: A attributo
                   href: to-attribute--curve--vml.md
             - name: Elemento immagine
               href: msdn-online-vml-image-element.md
             - name: Elemento Line
               href: msdn-online-vml-line-element.md
               items:
-                - name: Attributo from
+                - name: Dall'attributo
                   href: from-attribute--line--vml.md
-                - name: Attributo to
+                - name: A attributo
                   href: to-attribute--line--vml.md
-            - name: Oval (elemento)
+            - name: Elemento Oval
               href: msdn-online-vml-oval-element.md
-            - name: Elemento polilinea
+            - name: Elemento Polyline
               href: msdn-online-vml-polyline-element.md
               items:
                 - name: Attributo Points
@@ -707,27 +707,27 @@
           items:
             - name: Elemento Group
               href: msdn-online-vml-group-element.md
-            - name: Elemento TipoForma
+            - name: Elemento ShapeType
               href: msdn-online-vml-shapetype-element.md
               items:
-                - name: Attributo Master
+                - name: Attributo master
                   href: msdn-online-vml-master-attribute.md
             - name: Elemento VMLFrame
               href: msdn-online-vml-vmlframe-element.md
               items:
-                - name: Clip (attributo)
+                - name: Attributo clip
                   href: msdn-online-vml-clip-attribute.md
                 - name: Attributo ID
                   href: id-attribute--vmlframe--vml.md
-                - name: Attributo Origin
+                - name: Attributo origin
                   href: origin-attribute--vmlframe--vml.md
-                - name: Attributo size
+                - name: Attributo Size
                   href: size-attribute--vmlframe.md
-                - name: Attributo src
+                - name: Attributo Src
                   href: src-attribute--vmlframe--vml.md
-                - name: Attributo di stile
+                - name: Attributo style
                   href: msdn-online-vml-style-attribute.md
-        - name: Tipi di dati la
+        - name: Tipi di dati VML
           href: vml-data-types.md
           items:
             - name: Tipo di dati IVgAdjustments
@@ -748,5 +748,5 @@
               href: msdn-online-vml-vglength.md
             - name: VgTriState
               href: msdn-online-vml-vgtristate.md
-        - name: Unità la
+        - name: Unità VML
           href: msdn-online-vml-units.md

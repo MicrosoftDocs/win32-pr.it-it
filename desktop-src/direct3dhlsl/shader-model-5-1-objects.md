@@ -4,24 +4,23 @@ description: Gli oggetti seguenti sono stati aggiunti al modello shader 5.1.
 ms.assetid: 2958618D-54C6-4860-9910-B45AAB73CCFD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c56fbe035f63bd8f25a8b34377c333c2ce9946c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 376ce272e789501e21f5866be37f56daf31bc829
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993858"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111825718"
 ---
 # <a name="shader-model-51-objects"></a>Oggetti modello shader 5.1
 
 Gli oggetti seguenti sono stati aggiunti al modello shader 5.1.
 
-Per le visualizzazioni degli ordini di [rasterizzazione](/windows/desktop/direct3d11/rasterizer-order-views) (disponibili in D3D11.3 e D3D12), gli oggetti seguenti sono nuovi e sono consentiti solo nel pixel shader. Si noti che i metodi supportati sono identici agli oggetti UAV corrispondenti.
+Per le viste [ordine rasterizzatore](/windows/desktop/direct3d11/rasterizer-order-views) (disponibili in D3D11.3 e D3D12), gli oggetti seguenti sono nuovi e sono consentiti solo nella pixel shader. Si noti che i metodi supportati sono identici agli oggetti UAV corrispondenti.
 
 
 
-|                                    |                                                               |
+| Oggetto rasterizzatore                                   | Oggetto UAV                                                              |
 |------------------------------------|---------------------------------------------------------------|
-| Oggetto Rasterizer                  | Oggetto UAV                                                    |
 | RasterizerOrderedBuffer            | [**RWBuffer**](sm5-object-rwbuffer.md)                       |
 | RasterizerOrderedByteAddressBuffer | [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md) |
 | RasterizerOrderedStructuredBuffer  | [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md)   |

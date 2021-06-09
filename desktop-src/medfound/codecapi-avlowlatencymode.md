@@ -1,39 +1,42 @@
 ---
 description: Abilita la modalità a bassa latenza in un codec.
 ms.assetid: 15E8FF6F-AD8C-436F-B3C0-5062B1F86E32
-title: Proprietà CODECAPI_AVLowLatencyMode (codecapit. h)
+title: CODECAPI_AVLowLatencyMode proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f159045f6b40d531495338b1598c214926a59612
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5be7e23a29e9dd5f88f7a96e6c32fd42b68a7204
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305481"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826905"
 ---
-# <a name="codecapi_avlowlatencymode-property"></a>Proprietà AVLowLatencyMode di codecapi \_
+# <a name="codecapi_avlowlatencymode-property"></a>CODECAPI \_ AVLowLatencyMode - proprietà
 
 Abilita la modalità a bassa latenza in un codec.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**ULONG** (**VT \_ bool**)
+**ULONG** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVLowLatencyMode**
+**CODECAPI \_ AVLowLatencyMode**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Se il valore è diverso da zero, è abilitata la modalità a bassa latenza. Se il valore è zero, la modalità a bassa latenza è disabilitata.
+Se il valore è diverso da zero, viene abilitata la modalità a bassa latenza. Se il valore è zero, la modalità a bassa latenza è disabilitata.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà si applica a codificatori e decodificatori.
+Questa proprietà si applica sia ai codificatori che ai decodificatori.
 
-La modalità a bassa latenza è utile per le comunicazioni in tempo reale o Live Capture, quando la latenza deve essere ridotta a icona. Tuttavia, la modalità a bassa latenza può ridurre anche la decodifica o la qualità della codifica.
+La modalità a bassa latenza è utile per le comunicazioni in tempo reale o l'acquisizione in tempo reale, quando la latenza deve essere ridotta al minimo. Tuttavia, la modalità a bassa latenza potrebbe anche ridurre la qualità di decodifica o codifica.
 
-Si prevede che il codificatore non aggiunga alcun ritardo di esempio a causa del riordino dei frame nel processo di codifica e un esempio di input produrrà un esempio di output. Le sezioni e i frame B possono essere presenti a condizione che non introducano un nuovo ordinamento del frame nel codificatore.
+Il codificatore non dovrebbe aggiungere alcun ritardo del campione a causa del riordinamento dei fotogrammi nel processo di codifica e un campione di input genererà un campione di output. Le sezioni/fotogrammi B possono essere presenti purché non introduca alcun ordinamento dei fotogrammi nel codificatore.
+
+> [!WARNING] 
+> Nell'implementazione corrente il Media Foundation decodificatore H.264 usa il **tipo VT_UI4** per questa proprietà. Tutte le altre implementazioni, incluso il codificatore H.264, usano il **tipo VT_BOOL**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +44,9 @@ Si prevede che il codificatore non aggiunga alcun ritardo di esempio a causa del
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 app \[ desktop \| UWP\]<br/>                                     |
+| Server minimo supportato<br/> | App desktop di Windows Server 2012 \[ \| per app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -51,7 +54,7 @@ Si prevede che il codificatore non aggiunga alcun ritardo di esempio a causa del
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

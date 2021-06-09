@@ -1,0 +1,302 @@
+### YamlMime:FAQ
+metadata:
+  title: Domande frequenti su Direct3D 10
+  description: Questo articolo contiene alcune delle domande frequenti relative a Direct3D 10 dal punto di vista di uno sviluppatore che sta portando un'applicazione esistente da Direct3D 9 (D3D9) a Direct3D 10 (D3D10).
+  ms.assetid: da3022ca-b120-d0d7-6747-65b946dbc73c
+  ms.topic: article
+  ms.date: 05/31/2018
+  ms.openlocfilehash: e4d83f20d5dac1c067144e715dee7331cabe2ce7
+  ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 06/09/2021
+  ms.locfileid: "111852725"
+title: Domande frequenti su Direct3D 10
+summary: >
+  Questo articolo contiene alcune delle domande frequenti relative a Direct3D 10 dal punto di vista di uno sviluppatore che sta portando un'applicazione esistente da Direct3D 9 (D3D9) a Direct3D 10 (D3D10).
+sections:
+- name: Buffer costanti
+  questions:
+  - question: Qual è il modo migliore per aggiornare i buffer costanti?
+    answer: UpdateSubresource e Map with Discard devono avere circa la stessa velocità. Scegliere tra di essi a seconda di quale copia la quantità minima di memoria. Se i dati sono già archiviati in memoria in un blocco contiguo, usare UpdateSubresource. Se è necessario accumulare dati da altre posizioni, usare Mappa con Discard.
+  - question: Qual è il modo peggiore per organizzare i buffer costanti?
+    answer: >
+      Le prestazioni peggiori si realizzano inserendo tutte le costanti per un particolare shader in un unico buffer costante. Anche se questo è spesso il modo più semplice per eseguire il port da D3D9 a D3D10, può migliorare le prestazioni. Si consideri ad esempio uno scenario che usa il buffer costante seguente:
+
+
+      ``` syntax
+
+      cbuffer VSGlobalsCB
+
+      {
+          matrix  ViewProj;
+          matrix  Bones[100];
+          matrix  World;
+          float   SpecPower;
+          float4  BDRFCoefficients;
+          float   AppTime;
+          uint2   RenderTargetSize;
+      };
+
+      ```
+
+
+      Il buffer è di 6560 byte. Si supponga che sia presente un'applicazione con 1000 oggetti di cui eseguire il rendering, di cui 100 mesh con interfaccia e 900 di cui mesh statiche. Si supponga inoltre che questa applicazione utilizzi il mapping delle ombreggiatura con una sorgente di luce. Ciò significa che sono presenti due passaggi, uno per la mappa di profondità sottoposta a rendering dalla luce e uno per il passaggio di rendering in avanti. Ciò comporta chiamate di disegno del 2000. Anche se ogni chiamata di disegno non deve aggiornare ogni parte del buffer costante, l'intero buffer costante viene comunque aggiornato e inviato alla scheda. Ciò comporta l'aggiornamento di 13 MB di dati ogni frame (2000 chiamate di disegno per 6560 KB).
+  - question: Qual è il modo migliore per organizzare i buffer costanti?
+    answer: "Il modo migliore è organizzare i buffer costanti in base alla frequenza di aggiornamento. Le costanti aggiornate a frequenze simili devono essere nello stesso buffer. Si consideri ad esempio lo scenario presentato in \"Qual è il modo peggiore per organizzare i buffer costanti?\", ma con un layout costante migliore:\n\n``` syntax\ncbuffer VSGlobalPerFrameCB\n  { \n    float   AppTime; \n  };\ncbuffer VSPerSkinnedCB\n  { \n    matrix  Bones[100]; \n  };\ncbuffer VSPerStaticCB\n  {\n    matrix  World;\n  };\ncbuffer VSPerPassCB\n  {\n    matrix  ViewProj;\n    uint2   RenderTargetSize;\n  };\ncbuffer VSPerMaterialCB\n  {\n    float   SpecPower;\n    float4  BDRFCoefficients;\n  };    \n```\n\nI buffer costanti vengono suddivisi in base alla frequenza di aggiornamento, ma questa è solo la metà della soluzione. L'applicazione deve aggiornare correttamente i buffer costanti per sfruttare appieno la suddivisione. Si presuppone la stessa scena precedente: 900 mesh statiche, 100 mesh con interfaccia, un passaggio leggero e un passaggio in avanti. Si presuppone anche che alcuni buffer costanti per oggetto verranno archiviati. Ciò significa che ogni oggetto conterrà un oggetto VSPerSkinnedCB o VSPerStaticCB, a seconda che sia o meno con interfaccia o statica. Questa operazione viene richiesta per evitare il raddoppio della quantità di matrici inviate tramite la pipeline.\n\nIl frame viene suddiviso in tre fasi. La prima fase è l'inizio del frame e non prevede alcun rendering, ma solo aggiornamenti costanti.\n\n\n\n**Begin Frame**\n\n\n-   Aggiornare VSGlobalPerFrameCB per il tempo applicazione (4 byte)\n-   Aggiornare 100 VSPerSkinnedCB per i 100 oggetti con interfaccia (640000 byte)\n-   Aggiornare VSPerStaticCB per 900 oggetti statici (57600 byte)\n\nIl passaggio successivo è la mappa ombreggiata. Si noti che l'unico buffer costante effettivamente aggiornato è VSPerPassCB. Tutti gli altri buffer costanti sono stati aggiornati durante il passaggio del frame di inizio. Anche se è ancora necessario associare questi buffer costanti, la quantità di informazioni passate alla scheda video è minima, perché i buffer sono già stati aggiornati.\n\n\n**Passaggio dell'ombreggiatura**\n\n\n-   Aggiornare VSPerPassCB (72 byte)\n-   Disegnare 100 mesh con interfaccia (100 associazioni, nessun aggiornamento)\n-   Disegnare 900 mesh statiche (100 associazioni, nessun aggiornamento)\n\nAnalogamente, il passaggio di rendering in avanti deve solo aggiornare i dati per materiale, perché non sono stati archiviati per mesh. Se si presuppone che nella scena siano in uso 500 materiali:\n\n\n**Passaggio in avanti**\n\n\n-   Aggiornare VSPerPassCB (72 byte)\n-   Aggiornamento 500 VSPerMaterialCBs (10000 byte)\n\nIl risultato è di soli 707 KB. Anche se si tratta di uno scenario molto contrivato, viene illustrato il sovraccarico costante degli aggiornamenti che può essere ridotto ordinando le costanti in base alla frequenza di aggiornamento.\n\n \n"
+  - question: Cosa succede se non si ha spazio sufficiente per archiviare singoli buffer costanti per le mesh, il materiale e così via?
+    answer: >
+      È sempre possibile usare un sistema a livelli di buffer costanti. Creare buffer costanti di dimensioni variabili (16 byte, 32 byte, 64 byte e così via) fino alla dimensione massima del buffer costante necessaria. Quando è il momento di associare un buffer costante a uno shader, selezionare il buffer costante più piccolo che può contenere i dati necessari per lo shader. Anche se questo approccio è leggermente meno efficiente, è un buon passaggio intermedio.
+  - question: Sto condividendo buffer costanti tra shader diversi. Uno shader può usare tutte le costanti, mentre un altro può usare alcune costanti. Qual è il modo migliore per aggiornarlo?
+    answer: >
+      Un approccio consiste nel suddividere ulteriormente il buffer costante. Tuttavia, arriva un punto in cui sono associati troppi buffer costanti. In questo caso, spostare le costanti che potrebbero non essere utilizzate da diversi shader alla fine del buffer costante. Quando si rendono i dati delle variabili dallo shader, usare il flag D3D10 \_ SVF USED da \_ D3D10 SHADER VARIABLE DESC per determinare se viene usata \_ \_ la \_ variabile. Inserendo variabili inutilizzate alla fine del buffer costante, è possibile associare un buffer più piccolo allo shader che non usa queste variabili, risparmiando così il costo di aggiornamento.
+  - question: Quanto è possibile migliorare la frequenza dei fotogrammi se si carica l'osso del carattere una sola volta per fotogramma anziché una volta per passaggio/disegno?
+    answer: >
+      È possibile migliorare la frequenza dei fotogrammi tra l'8% e il 50% a seconda della quantità di dati ridondanti. Nel peggiore dei casi, le prestazioni non verranno ridotte.
+  - question: Quanti buffer costanti è necessario avere associato contemporaneamente?
+    answer: >
+      Associare il numero minimo di buffer costanti necessari per ottenere tutti i dati nello shader. In uno scenario realistico, cinque è il numero consigliato di buffer costanti da usare. Anche la condivisione di buffer costanti tra shader (associazione dello stesso CB a Vs e PS) può migliorare le prestazioni.
+  - question: È previsto un costo per l'associazione di buffer costanti senza usarli?
+    answer: >
+      Sì, se non si usa effettivamente il buffer, non chiamare VSSetConsantBuffer o PSSetConstantBuffer. Questo sovraccarico api aggiuntivo può sommarsi nel corso di più chiamate di disegno.
+- name: Stato
+  questions:
+  - question: Qual è il modo migliore per gestire lo stato in D3D10?
+    answer: >
+      La soluzione migliore consiste nel conoscere tutto lo stato in anticipo e creare gli oggetti di stato in anticipo. Ciò significa che in fase di rendering, l'associazione di stato è l'unica operazione che deve essere eseguita. D3D10 filtra anche i duplicati.
+  - question: Il gioco ha caricato dinamicamente o ha contenuto generato dall'utente. Non è possibile caricare tutti gli oggetti di stato in anticipo. Cosa devo fare?
+    answer: >
+      Sono disponibili due soluzioni. Il primo è creare oggetti di stato in tempo reale e consentire a D3D10 di filtrare i duplicati. Questa operazione, tuttavia, non è consigliata per gli scenari con molte modifiche all'oggetto stato per frame. Una soluzione migliore consiste nell'eseguire manualmente l'hash degli oggetti di stato e creare un oggetto stato solo se uno che soddisfa i requisiti non viene trovato nella tabella hash. Il motivo alla base dell'uso di una tabella hash personalizzata è che un'applicazione può selezionare un hash veloce in base allo scenario di utilizzo specifico di tale applicazione. Ad esempio, se un'applicazione modifica solo rendertargetwritemask in BlendState e mantiene tutti gli altri valori uguali, l'applicazione può generare un hash dalla rendertargetwritemask anziché dall'intera struttura.
+  - question: Lo stato AlphaTest non è più disponibile. Dove è andata?
+    answer: >
+      AlphaTest dovrebbe ora avere prestazioni nello shader. Vedere l'esempio FixedFuncEMU.
+  - question: Cosa è successo ai piani di ritaglio utente?
+    answer: >
+      I piani di ritaglio utente sono stati spostati nello shader. Esistono due modi per gestire questa operazione. Il primo è l'output di SV \_ ClipDistance dal vertex shader o dallo shader geometry. L'altra opzione è usare discard nel pixel shader in base a un valore passato dal vertex shader o dallo shader geometry. Provare a eseguire entrambe le operazioni per vedere quale è più veloce per uno scenario specifico. L'uso di SV ClipDistance potrebbe causare l'uso di una routine di ritaglio basata sulla geometria che potrebbe rallentare le chiamate di disegno associate alla \_ geometria. Analogamente, l'uso di discard sposta il lavoro sull'pixel shader, causando una lentezza delle chiamate di disegno associate ai pixel.
+  - question: Le cancellazioni non rispettano le impostazioni dello stato, ad esempio le impostazioni del retto della forbice nello stato del rasterizzatore.
+    answer: >
+      Le cancellazioni sono state separate dallo stato della pipeline. Per ottenere un comportamento in stile D3D9, emulare le cancellazioni disegnando un quad a schermo intero.
+  - question: I miei stati vengono impostati nuovamente sul valore predefinito per provare a diagnosticare un errore di rendering. Ora lo schermo mostra solo il nero, anche se so di disegnare oggetti sullo schermo.
+    answer: >
+      Quando si imposta lo stato su valori predefiniti (NULL), assicurarsi che SampleMask nella chiamata a OMSetBlendState non sia mai zero. Se SampleMask è impostato su zero, tutti gli esempi andranno logicamente con zero. In questo scenario, nessun esempio supererà il test di blend.
+  - question: Dove si trova lo stato D3DSAMP\SRGBTEXTURE?
+    answer: >
+      SRGB è stato rimosso come parte dello stato del campionatore e ora è associato al formato della trama. L'associazione di una trama SRGB comporta lo stesso campionamento che si ottiene se si è specificato D3DSAMP \_ SRGBTEXTURE in Direct3D 9.
+- name: Formati
+  questions:
+  - question: Quale formato D3D9 corrisponde al formato D3D10?
+    answer: >
+      Per informazioni, vedere [Considerazioni da Direct3D 9 a Direct3D 10.](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-d3d9-to-d3d10-considerations)
+  - question: Che cosa è successo ai formati di trama A8R8G8B8?
+    answer: >
+      Sono stati deprecati in D3D10. È possibile rigenerare le trame come R8G8B8A8 oppure eseguire lo scorrimento al caricamento oppure è possibile eseguire lo scorrimento dello shader.
+  - question: Ricerca per categorie usare trame palettizzate?
+    answer: >
+      Inserire la tavolozza dei colori in una trama o in un buffer costante e associarla alla pipeline. Nella finestra pixel shader una ricerca indiretta usando l'indice nella trama palettizzata.
+  - question: Quali sono i nuovi formati SRGB?
+    answer: >
+      SRGB è stato rimosso come parte dello stato del campionatore ed è ora associato al formato della trama. L'associazione di una trama SRGB comporta lo stesso campionamento che si ottiene se si è specificato D3DSAMP \_ SRGBTEXTURE in Direct3D 9.
+  - question: Dove sono le ventole dei triangoli?
+    answer: >
+      Le ventole a triangolo sono state deprecate in D3D10. Le ventole a triangolo dovranno essere convertite nella pipeline del contenuto o al caricamento.
+- name: Collegamento shader
+  questions:
+  - question: Gli shader Direct3D 9 vengono compilati correttamente in Shader Model 4.0, ma quando li si associa alla pipeline, vengono visualizzati errori di collegamento nell'output di debug con il runtime di debug.
+    answer: >
+      Il collegamento dello shader è molto più rigido in D3D10. Gli elementi in una fase successiva devono essere letti nell'ordine in cui vengono restituiti dalla fase precedente. Ad esempio:
+
+
+      Viene restituito un vertex shader:
+
+
+      ``` syntax
+          float4 Pos  : SV_POSITION;
+          float3 Norm : NORMAL;
+          float2 Tex  : TEXCOORD0;
+      ```
+
+
+      Un pixel shader legge in:
+
+
+      ``` syntax
+              float3 Norm : NORMAL;
+              float2 Tex  : TEXCOORD0;
+      ```
+
+
+      Anche se la posizione non è necessaria nel pixel shader, si verifica un errore di collegamento, perché la posizione viene restituita dal vertex shader, ma non viene letta dal pixel shader. La versione più corretta sarà simile alla seguente:
+
+
+      Viene restituito un vertex shader:
+
+
+      ``` syntax
+              float3 Norm : NORMAL;
+              float2 Tex  : TEXCOORD0;
+              float4 Pos  : SV_POSITION;
+      ```
+
+
+      Un pixel shader legge in:
+
+
+      ``` syntax
+              float3 Norm : NORMAL;
+              float2 Tex  : TEXCOORD0;
+      ```
+
+
+      In questo caso, il vertex shader restituisce le stesse informazioni, ma pixel shader legge gli elementi nell'output dell'ordine. Poiché il pixel shader non legge nulla dopo Tex, non è necessario preoccuparsi del fatto che vs sta generando più informazioni di quelle che il PS sta leggendo.
+  - question: È necessaria una firma shader per creare un layout di input, ma si caricano le mesh e si creano layout prima di creare gli shader. Cosa devo fare?
+    answer: >
+      Una soluzione consiste nel cambiare l'ordine e caricare gli shader prima di caricare le mesh. Tuttavia, questo è molto più facile a dirsi che a fare. È sempre possibile creare i layout di input su richiesta quando necessario dall'applicazione. È necessario mantenere una versione della firma shader. È consigliabile creare un hash basato sul layout dello shader e del buffer e creare il layout di input solo se non esiste già uno corrispondente.
+- name: Chiamate di disegno
+  questions:
+  - question: Qual è il limite per le chiamate di disegno per D3D10 a 60 Hz? 30 Hz?
+    answer: >
+      Direct3D 9 presentava una limitazione al numero di chiamate di disegno a causa del costo della CPU per ogni chiamata di disegno. In Direct3D 10 il costo di ogni chiamata di estrazione è stato ridotto. Tuttavia, non esiste più una correlazione definita tra le chiamate di disegno e le frequenze dei fotogrammi. Poiché le chiamate di disegno richiedono spesso molte chiamate di supporto (aggiornamenti costanti del buffer, associazioni di trame, impostazione dello stato e così via), l'impatto della frequenza dei fotogrammi dell'API è ora più dipendente dall'utilizzo complessivo dell'API anziché semplicemente dal semplice disegno dei conteggi delle chiamate.
+- name: Risorse
+  questions:
+  - question: Quale tipo di utilizzo delle risorse è consigliabile usare per quali operazioni?
+    answer: >
+      Usare il foglio di controllo seguente:
+
+
+      -   La CPU aggiorna la risorsa più di una volta per frame: D3D10 \_ USAGE \_ DYNAMIC
+
+      -   La CPU aggiorna la risorsa meno di una volta per frame: D3D10 \_ USAGE \_ DEFAULT
+
+      -   La CPU non aggiorna la risorsa: D3D10 \_ USAGE \_ IMMUTABLE
+
+      -   La CPU deve leggere la risorsa: D3D10 \_ USAGE \_ STAGING
+
+
+      Poiché i buffer costanti devono sempre essere aggiornati di frequente, non sono conformi al "foglio di controllo". Per i tipi di risorse da usare per i buffer costanti, vedere la [sezione Buffer costanti.](/windows/win32/dxtecharts/direct3d10-frequently-asked-questions#constant-buffers)
+  - question: Che cosa è successo a DrawPrimitiveUP e DrawIndexedPrimitiveUP?
+    answer: >
+      Non sono più disponibili in D3D10. Per la geometria dinamica usare un buffer DINAMICO D3D10 \_ USAGE \_ di grandi dimensioni. All'inizio del frame eseguire il mapping con D3D10 \_ MAP \_ WRITE \_ DISCARD. Per ogni chiamata di disegno successiva, il puntatore di scrittura passa oltre la posizione dei vertici tracciati in precedenza ed esegue il mapping del buffer con D3D10 \_ MAP \_ WRITE NO \_ \_ OVERWRITE. Se si avvicina la fine del buffer prima della fine del frame, eseguire il wrapping del puntatore di scrittura all'inizio ed eseguire il mapping con D3D10 \_ MAP \_ WRITE \_ DISCARD.
+  - question: È possibile scrivere indici a 16 bit e indici a 32 bit nello stesso buffer geometry dinamico?
+    answer: >
+      Sì, è possibile, ma ciò può incorrere in una penalizzazione delle prestazioni per determinati componenti hardware. È più sicuro creare buffer separati per i dati dinamici dell'indice a 16 bit e i dati di indice a 32 bit.
+  - question: Ricerca per categorie i dati dalla GPU alla CPU?
+    answer: >
+      È necessario usare una risorsa di staging. Copiare i dati dalla risorsa GPU alla risorsa di staging usando CopyResource. Eseguire il mapping della risorsa di staging per leggere i dati.
+  - question: L'applicazione dipende dalla funzionalità StretchRect.
+    answer: >
+      Poiché si tratta essenzialmente di un wrapper per la funzionalità Direct3D di base, è stato rimosso dall'API. Parte della funzionalità StretchRect è stata spostata in D3DX10LoadTextureFromTexture. Per le conversioni di formato e la copia di trame, D3DX10LoadTextureFromTexture può eseguire il processo. Tuttavia, operazioni come la conversione da una dimensione a un'altra probabilmente richiederanno un'operazione di rendering in trama nell'applicazione.
+  - question: Non sono presenti offset o dimensioni nelle chiamate map per le risorse. Queste erano presenti nelle chiamate di blocco in Direct3D 9; perché sono cambiate?
+    answer: >
+      Gli offset e le dimensioni delle chiamate Lock in Direct3D 9 erano fondamentalmente disordini dell'API e spesso ignorati dal driver. Gli offset devono essere calcolati dall'applicazione dal puntatore restituito nella chiamata Map.
+- name: Profondità come trama
+  questions:
+  - question: Quale è più veloce? Usare la profondità come trama o scrivere la profondità in alfa e leggerlo?
+    answer: >
+      Si tratta di applicazioni e hardware specifici. Usare quello che consente di risparmiare la maggior parte della larghezza di banda. Se si usano già più destinazioni di rendering e si ha un canale aggiuntivo, la scrittura della profondità dallo shader potrebbe essere una soluzione migliore. Inoltre, la scrittura della profondità in alfa o in un'altra destinazione di rendering consente di scrivere valori di profondità lineare che possono velocizzare i calcoli che devono accedere al buffer di profondità.
+  - question: È possibile avere una trama associata come and di input come trama depth-stencil purché si disabilitano le scritture di profondità?
+    answer: >
+      Non in D3D10.
+- name: MSAA
+  questions:
+  - question: È possibile risolvere una trama depth-stencil MSAA?
+    answer: >
+      Non in D3D10. Tuttavia, è possibile campionare singoli esempi dalla trama MSAA. Per informazioni [dettagliate, vedere la sezione HLSL.](/windows/win32/dxtecharts/direct3d10-frequently-asked-questions#hlsl)
+  - question: Perché l'applicazione si arresta in modo anomalo non appena si abilita MSAA?
+    answer: >
+      Assicurarsi di abilitare un numero di campioni MSAA e un numero di qualità effettivamente enumerati dal driver.
+- name: Crashes
+  questions:
+  - question: L'applicazione si arresta in modo anomalo in D3D10 o nel driver e non so perché.
+    answer: >
+      Il primo passaggio consiste nell'abilitare il runtime di debug ( flag [**D3D10 \_ CREATE \_ DEVICE \_ DEBUG**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_create_device_flag) passato in [**D3D10CreateDevice**](/windows/desktop/api/d3d10misc/nf-d3d10misc-d3d10createdevice)). Verranno esposti gli errori più comuni come output di debug.
+  - question: PIX si arresta in modo anomalo quando si prova a usare l'applicazione.
+    answer: >
+      Il primo passaggio consiste nell'abilitare il runtime di debug ( flag [**D3D10 \_ CREATE \_ DEVICE \_ DEBUG**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_create_device_flag) passato in [**D3D10CreateDevice**](/windows/desktop/api/d3d10misc/nf-d3d10misc-d3d10createdevice)). PIX ha una probabilità molto più elevata di arresto anomalo se l'output di debug non è pulito.
+  - question: Il gioco si esauri nello spazio degli indirizzi virtuali in Vista a 32 bit in D3D10. Non si verificano problemi in D3D9.
+    answer: >
+      Si sono verificati alcuni problemi con D3D10 e lo spazio degli indirizzi virtuali. Questo problema è stato risolto in [KB940105.](https://support.microsoft.com/kb/940105) Se il problema persiste, assicurarsi di non creare più risorse che possono essere mappate (bloccate) in D3D10 rispetto a quelle create in D3D9. Si pensi anche al porting a 64 bit, perché questo diventerà più prevalente in futuro.
+- name: Rendering predicato
+  questions:
+  - question: È stato usato il rendering predicato (in base ai risultati della query di occlusione). Perché l'app è ancora la stessa velocità?
+    answer: >
+      Assicurarsi innanzitutto che il rendering da ignorare sia effettivamente il collo di bottiglia dell'applicazione. Se non è il collo di bottiglia, ignorare il rendering non consente la frequenza dei fotogrammi.
+
+
+      In secondo momento, assicurarsi che sia passato un tempo sufficiente tra il problema della query e il rendering che si vuole predicare. Se la query non è stata completata quando la chiamata di rendering raggiunge la GPU, il rendering verrà eseguito comunque.
+
+
+      In terzo piano, la predicazione ignora solo determinate chiamate. Le chiamate ignorate sono Draw, Clear, Copy, Update, ResolveSubresource e GenerateMips. Le chiamate state setting, IA setup, Map e Create non rispettano la predicazione. Se sono presenti molte chiamate di impostazione dello stato intorno alla chiamata di disegno da predicare, questi stati verranno comunque impostati.
+- name: Geometry shader
+  questions:
+  - question: È necessario usare lo shader geometry per eseguire l'inserimento a tessella (inserire un elemento qui)?
+    answer: >
+      No. Lo shader geometry NON deve essere usato per la tessellazione.
+  - question: È possibile usare lo shader geometry per creare la geometria?
+    answer: >
+      Sì, in scenari molto limitati. Lo shader geometry nelle parti D3D10 (2008) correnti non è in grado di gestire l'espansione. Questo potrebbe cambiare in futuro. I fornitori di schede video possono avere un percorso speciale per le espansioni da una a quattro a causa dell'hardware point-sprite esistente. Qualsiasi altra espansione deve essere molto limitata. Gli esempi DisequenzeGS e PipesGS esercitono frequenze fotogrammi elevate solo eseguendo un'espansione limitata. Vengono espansi solo alcuni punti per frame.
+  - question: A cosa è necessario usare lo shader geometry?
+    answer: >
+      Tutto ciò che richiede operazioni su un'intera primitiva, ad esempio il rilevamento della siluri, le coordinate barycentriche e così via. Usarlo anche per selezionare la sezione di una matrice di destinazione di rendering a cui inviare primitive.
+  - question: È possibile eseguire l'output di quantità variabili di geometria dallo shader geometry?
+    answer: >
+      Sì, ma ciò può causare problemi di prestazioni. Si consideri l'esempio dell'output di 1 punto per una chiamata e di 4 punti per un'altra. Anche se rientra nelle linee guida di espansione, ciò può causare l'esecuzione seriale dei thread dello shader geometry.
+  - question: In che modo D3D10 sa come generare indici di adicenza per la mesh? In caso contrario, perché il rendering di D3D10 non viene eseguito correttamente quando si specifica che lo shader geometry necessita di informazioni di adienza.
+    answer: >
+      Le informazioni di adicenza non vengono create da D3D10, ma dall'applicazione. Gli indici di adicenza vengono generati dall'applicazione e devono contenere sei indici per primitiva. dei sei indici numerati dispari sono i vertici adiacenti del bordo. ID3DX10Mesh::GenerateAdjacencyAndPointsReps può essere usato per generare questi dati.
+- name: HLSL
+  questions:
+  - question: Le istruzioni intere e bit per bit sono lente?
+    answer: >
+      Possono essere. Varie schede D3D10 possono essere in grado di eseguire solo operazioni intere su un subset delle unità ALU disponibili. Questo dipende in modo molto dipendente dall'hardware. Per consigli su come risolvere le operazioni integer su tale hardware specifico, vedere il fornitore dell'hardware. Prestare inoltre attenzione ai cast tra i tipi.
+  - question: Che cosa è successo a VPOS?
+    answer: >
+      Se si dichiara un input al pixel shader come SV POSITION, si otterrà lo stesso comportamento della dichiarazione \_ come VPOS.
+  - question: Ricerca per categorie esempio di trama MSAA?
+    answer: >
+      Nello shader dichiarare la trama come Texture2DMS. È quindi possibile recuperare singoli esempi usando i metodi Sample dell'oggetto Texture2DMS.
+  - question: Ricerca per categorie se viene effettivamente usata una variabile shader in un buffer costante?
+    answer: >
+      Esaminare lo struct DESC DELLA VARIABILE SHADER D3D10 \_ \_ \_ riflessa per tale variabile. uFlags deve avere il flag D3D10 \_ SVF \_ USED impostato.
+  - question: Ricerca per categorie se una variabile shader in un buffer costante usa effettivamente FX10?
+    answer: >
+      Attualmente non è possibile usare FX10.
+  - question: Non ho alcun controllo sui buffer costanti creati da FX10. Come vengono creati e aggiornati?
+    answer: >
+      Tutti i buffer costanti gestiti da FX10 vengono creati come risorse D3D10 USAGE DEFAULT e \_ \_ vengono aggiornati tramite UpdateSubresource. Poiché FX10 mantiene un archivio di backup di tutti i dati costanti, UpdateSubresource è l'approccio migliore per aggiornarlo.
+  - question: Ricerca per categorie emulare la pipeline di funzioni fisse usando gli shader?
+    answer: >
+      Vedere l'esempio FixedFuncEMU.
+  - question: È consigliabile usare i nuovi hint \[ del compilatore unroll , loop , branch e \] così \[ \] \[ \] via?
+    answer: >
+      Generalmente, no. Il compilatore spesso proverà in entrambi i modi e sceglierà quello più veloce. In alcuni casi può essere necessario usare l'annullamento della registrazione, ad esempio quando un recupero di trama all'interno di un \[ \] ciclo richiede l'accesso a una sfumatura.
+  - question: La precisione parziale fa qualche differenza in D3D10? È possibile specificare la precisione parziale in D3D9 HLSL, ma non in D3D10 HLSL.
+    answer: >
+      Tutte le operazioni D3D10 vengono specificate per l'esecuzione con precisione a virgola mobile a 32 bit. Pertanto, la precisione parziale non deve fare alcuna differenza in D3D10.
+  - question: In D3D9 è possibile applicare filtri HW PCF shadow associando un buffer di profondità come trama e usando le normali istruzioni hlsl tex2d. Ricerca per categorie eseguire questa operazione in D3D10?
+    answer: >
+      È necessario usare uno stato del campionatore di confronto e usare le istruzioni SampleCmp.
+  - question: Come funziona questa parola chiave di registrazione in D3D10?
+    answer: >
+      La parola chiave register in D3D10 ora si applica a quale slot è associata una determinata risorsa. In questo caso, la risorsa può essere buffer (costante o altro), trama o sampler.
+
+
+      -   Per i buffer costanti, usare la sintassi: register(bN), dove N è lo slot di input (0-15)
+
+      -   Per le trame, usare la sintassi: register(tN), dove N è lo slot di input (0-127)
+
+      -   Per i campionatori, usare la sintassi: register(sN), dove N è lo slot di input (0-127)
+  - question: Ricerca per categorie inserire una variabile all'interno di un buffer costante se register viene usato solo per specificare dove associare l'intero buffer?
+    answer: >-
+      Usare la parola chiave packoffset. L'argomento per packoffset è nel formato c \[ 0-4095 \] . \[ x,y,z,w \] . Ad esempio:
+
+
+      ``` syntax
+              cbuffer cbLotsOfEmptySpace
+              {
+              float   IWaste2Floats   : packoffset(c0.z);
+              float4  IWasteMore  : packoffset(c13);
+              };
+      ```
+
+
+      In questo buffer costante, IWaste2Floats viene inserito in corrispondenza del terzo float (12° byte) nel buffer costante. IWasteMore viene posizionato in corrispondenza del 13° float4 o 52° float nel buffer costante.

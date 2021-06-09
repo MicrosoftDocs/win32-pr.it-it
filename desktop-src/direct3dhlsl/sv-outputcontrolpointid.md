@@ -1,6 +1,6 @@
 ---
 title: SV_OutputControlPointID
-description: Definisce l'indice dell'ID del punto di controllo gestito da una chiamata del punto di ingresso principale dello shader di tipo hull.
+description: Definisce l'indice dell'ID del punto di controllo gestito da una chiamata del punto di ingresso principale dello hull shader.
 ms.assetid: 0b4c070f-1c7b-4739-af32-16410d3c5abd
 keywords:
 - SV_OutputControlPointID HLSL
@@ -13,24 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aa6ac503eb99b24bee8e869676812c473ab42bf5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 90e3699b06eedfe5ec655de8156363c0ec42cd05
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996908"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826539"
 ---
 # <a name="sv_outputcontrolpointid"></a>SV \_ OutputControlPointID
 
-Definisce l'indice dell'ID del punto di controllo su cui opera una chiamata del punto di ingresso principale dello hull shader.
+Definisce l'indice dell'ID del punto di controllo gestito da una chiamata del punto di ingresso principale dello hull shader.
 
 ## <a name="type"></a>Tipo
 
 
 
-|      |
+| Tipo     |
 |------|
-| Tipo |
 | uint |
 
 
