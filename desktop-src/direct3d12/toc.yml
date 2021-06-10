@@ -239,7 +239,7 @@
                 - name: Abilitare TensorFlow con DirectML in Windows
                   href: gpu-tensorflow-windows.md
                 - name: Domande frequenti su TensorFlow con il pacchetto DirectML
-                  href: gpu-faq.md
+                  href: gpu-faq.yml
             - name: Funzioni helper
               href: dml-helper-functions.md
             - name: Applicazioni di esempio
@@ -1399,7 +1399,7 @@
                   href: /windows/win32/api/d3d12/ne-d3d12-d3d12_writebufferimmediate_mode
             - name: Costanti di base
               href: constants.md
-            - name: Tipi di dati principali
+            - name: Tipi di dati di base
               href: direct3d-12-data-types.md
               items:
                 - name: D3D12_GPU_VIRTUAL_ADDRESS
@@ -1803,7 +1803,7 @@
                 - name: IDMLCommandRecorder
                   href: /windows/win32/api/directml/nn-directml-idmlcommandrecorder
                   items:
-                    - name: RecordDispatch
+                    - name: Invio record
                       href: /windows/win32/api/directml/nf-directml-idmlcommandrecorder-recorddispatch
                 - name: IDMLCompiledOperator
                   href: /windows/win32/api/directml/nn-directml-idmlcompiledoperator
@@ -1864,7 +1864,7 @@
                       href: /windows/win32/api/directml/nf-directml-idmlobject-setname
                     - name: SetPrivateData
                       href: /windows/win32/api/directml/nf-directml-idmlobject-setprivatedata
-                    - name: SetPrivateDataInterface
+                    - name: Interfaccia SetPrivateDataInterface
                       href: /windows/win32/api/directml/nf-directml-idmlobject-setprivatedatainterface
                 - name: IDMLOperator
                   href: /windows/win32/api/directml/nn-directml-idmloperator
@@ -2490,15 +2490,15 @@
         - name: Direct3D 12 Raytracing
           href: direct3d-12-raytracing.md
           items:
-            - name: Informazioni di riferimento su HLSL per Direct3D 12 Raytracing
+            - name: Informazioni di riferimento su Direct3D 12 Raytracing HLSL
               href: direct3d-12-raytracing-hlsl-reference.md
               items:
-                - name: Enumerazioni HLSL Di Direct3D 12 Raytracing
+                - name: Enumerazioni HLSL Direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-enumerations.md
                   items:
                     - name: RAY_FLAG
                       href: ray_flag.md
-                - name: Oggetti intrinseci HLSL raytracing di Direct3D 12
+                - name: Intrinseci HLSL direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-intrinsics.md
                   items:
                     - name: Funzione AcceptHitAndEndSearch
@@ -2511,27 +2511,27 @@
                       href: reporthit-function.md
                     - name: Funzione TraceRay
                       href: traceray-function.md
-                - name: Tipi di risorse HLSL Di Direct3D 12 Raytracing
+                - name: Tipi di risorse HLSL Direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-resource-types.md
                   items:
                     - name: RaytracingAccelerationStructure
                       href: raytracingaccelerationstructure.md
-                - name: Shader HLSL Raytracing Direct3D 12
+                - name: Shader HLSL Direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-shaders.md
                   items:
                     - name: Qualsiasi hit shader
                       href: any-hit-shader.md
                     - name: Shader chiamabile
                       href: callable-shader.md
-                    - name: Hit shader più vicino
+                    - name: Hit Shader più vicino
                       href: closest-hit-shader.md
-                    - name: Intersection Shader
+                    - name: Shader di intersezione
                       href: intersection-shader.md
                     - name: Miss Shader
                       href: miss-shader.md
-                    - name: Ray Generation Shader
+                    - name: Shader di generazione di raggi
                       href: ray-generation-shader.md
-                - name: Strutture HLSL di Raytracing Direct3D 12
+                - name: Strutture HLSL Direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-structures.md
                   items:
                     - name: Struttura dei parametri di chiamata
@@ -2542,12 +2542,12 @@
                       href: ray-payload.md
                     - name: Struttura RayDesc
                       href: raydesc.md
-                - name: Oggetti intrinseci dei valori di sistema HLSL raytracing di Direct3D 12
+                - name: Intrinseci del valore di sistema HLSL raytracing direct3D 12
                   href: direct3d-12-raytracing-hlsl-system-value-intrinsics.md
         - name: Direct3D 12 in Windows 7
           href: direct3d-12on7-reference.md
           items:
-            - name: Direct3D 12 nelle interfacce di Windows 7
+            - name: Interfacce Direct3D 12 in Windows 7
               href: direct3d-12on7-interfaces.md
               items:
                 - name: ID3D12CommandQueueDownlevel
@@ -2606,5 +2606,5 @@
               items:
                 - name: CommitDirect3D12Resource
                   href: /windows/win32/api/windows.graphics.holographic.interop/nf-windows-graphics-holographic-interop-iholographicquadlayerupdateparametersinterop-commitdirect3d12resource
-    - name: Glossario di Direct3D 12
+    - name: Glossario Direct3D 12
       href: directx-12-glossary.md
