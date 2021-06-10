@@ -1,30 +1,33 @@
 ---
-description: D3DX è una raccolta di strumenti progettati per fornire funzionalità grafiche aggiuntive oltre a Direct3D. D3DX viene fornito come libreria a collegamento dinamico (DLL).
+description: D3DX è una libreria di strumenti progettati per fornire funzionalità grafiche aggiuntive su Direct3D. D3DX viene fornito come libreria a collegamento dinamico (DLL).
 ms.assetid: d7b8c6ba-5c4f-494c-a24f-3b81a176725f
 title: D3DX (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c54899b47936d309502a591fed6fdd81ea90fe3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 397a2164349b761cd7ff2ccca5e2158abc22bd64
+ms.sourcegitcommit: 78ce1d1e3f12ee3e08390868e5b93c034f437657
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342211"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111910243"
 ---
 # <a name="d3dx-direct3d-9"></a>D3DX (Direct3D 9)
 
-D3DX è una raccolta di strumenti progettati per fornire funzionalità grafiche aggiuntive oltre a Direct3D. D3DX viene fornito come libreria a collegamento dinamico (DLL).
+> [!NOTE]
+> La libreria D3DX è deprecata. Se l'aggiornamento a una versione più recente di Direct3D e al codice di utilità associato non è un'opzione, è possibile usare il pacchetto NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) invece di basarsi su DirectX SDK o DirectSetup legacy.
 
-In questa versione di DirectX SDK è disponibile una sola versione di D3DX. La DLL D3DX per la vendita al dettaglio è inclusa nel pacchetto ridistribuibile fornito nell'SDK e viene installata automaticamente come parte dell' [installazione di DirectX con DirectSetup](https://msdn.microsoft.com/library/ee418267(VS.85).aspx). La libreria D3DX inclusa in questa versione dipende dai runtime Direct3D forniti con questo SDK. Le applicazioni che si collegano alla versione di D3DX in questa versione devono anche ridistribuire il runtime da questo SDK.
+D3DX è una libreria di strumenti progettati per fornire funzionalità grafiche aggiuntive su Direct3D. D3DX viene fornito come libreria a collegamento dinamico (DLL).
 
-Più versioni di D3DX possono risiedere in modo indipendente in un singolo sistema simultaneamente. Collegando in modo statico un'applicazione a D3dx9. lib, l'applicazione si collega dinamicamente alla DLL D3DX Retail corrispondente in fase di esecuzione. Questa DLL corrisponde alle intestazioni D3DX in base a cui viene compilata l'applicazione (denominata con la \_ \_ costante della versione SDK di D3DX in D3dx9core. h). Poiché le nuove versioni di D3DX vengono fornite nelle versioni future di DirectX SDK, le applicazioni che si collegano a librerie D3DX precedenti non saranno interessate.
+In questa versione di DirectX SDK è disponibile una sola versione di D3DX. La DLL D3DX definitiva è inclusa nel file ridistribuibile fornito nell'SDK e viene installata automaticamente come parte dell'installazione di **DirectX con DirectSetup.** La libreria D3DX inclusa in questa versione dipende dai runtime Direct3D forniti con questo SDK. Anche le applicazioni che si collegano alla versione di D3DX in questa versione devono ridistribuire il runtime da questo SDK.
 
-La libreria D3DX risolve le seguenti aree generali di funzionalità:
+Più versioni di D3DX possono risiedere in modo indipendente in un singolo sistema contemporaneamente. Collegando in modo statico un'applicazione a D3dx9.lib, l'applicazione si collega in modo dinamico alla DLL D3DX finale corrispondente in fase di esecuzione. Questa DLL corrisponde alle intestazioni D3DX con cui viene compilata l'applicazione (denominata con la costante VERSION di D3DX \_ SDK \_ in D3dx9core.h). Poiché le nuove versioni di D3DX verranno rilasciate nelle versioni future di DirectX SDK, le applicazioni che si collegano alle librerie D3DX precedenti rimarranno invariate.
 
--   [Supporto per disegno linee in D3DX (Direct3D 9)](line-drawing-support-in-d3dx.md)
+La libreria D3DX risolve queste aree generali di funzionalità:
+
+-   [Supporto per il disegno di linee in D3DX (Direct3D 9)](line-drawing-support-in-d3dx.md)
 -   [Supporto mesh in D3DX (Direct3D 9)](mesh-support-in-d3dx.md)
--   [Supporto della funzione Math in D3DX (Direct3D 9)](math-function-support-in-d3dx.md)
--   [Supporto della trama in D3DX (Direct3D 9)](texture-support-in-d3dx.md)
+-   [Supporto delle funzioni matematiche in D3DX (Direct3D 9)](math-function-support-in-d3dx.md)
+-   [Supporto delle trame in D3DX (Direct3D 9)](texture-support-in-d3dx.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
