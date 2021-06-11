@@ -1,7 +1,7 @@
 ---
-description: Nota Questa interfaccia è stata deprecata.
+description: Informazioni sul metodo IAMFilterData::CreateFilterData, che crea dati binari del Registro di sistema per un filtro. Questa interfaccia è stata deprecata.
 ms.assetid: ab6972ef-7c28-4cd1-b007-eb70f9aeb2cb
-title: 'Metodo IAMFilterData:: CreateFilterData (Fil \_ Data. h)'
+title: Metodo IAMFilterData::CreateFilterData (Fil \_ data.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,23 +13,23 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 4c83f19de8e709f9890b23957f730fbbac12dd7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0a0126266fc33dca030abad65ccf9f0d35f6e195
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326819"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989456"
 ---
-# <a name="iamfilterdatacreatefilterdata-method"></a>Metodo IAMFilterData:: CreateFilterData
+# <a name="iamfilterdatacreatefilterdata-method"></a>Metodo IAMFilterData::CreateFilterData
 
 > [!Note]  
-> Questa interfaccia è stata deprecata. Le nuove applicazioni non devono utilizzarlo.
+> Questa interfaccia è stata deprecata. Le nuove applicazioni non devono usarlo.
 
  
 
-Il `CreateFilterData` metodo crea dati del registro di sistema binari per un filtro. Questi dati possono essere scritti nel registro di sistema come una \_ sottochiave reg Binary denominata FilterData, sotto la chiave CLSID del filtro.
+Il `CreateFilterData` metodo crea dati binari del Registro di sistema per un filtro. Questi dati possono essere scritti nel Registro di sistema come sottochiave REG \_ BINARY denominata FilterData, nella chiave CLSID del filtro.
 
-Non esiste in genere un motivo per cui un'applicazione chiama questo metodo. Il metodo [**IFilterMapper2:: RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automaticamente i dati binari e li aggiunge alla posizione corretta nel registro di sistema. Per altre informazioni, vedere [How to register DirectShow Filters](how-to-register-directshow-filters.md).
+In genere non esiste alcun motivo per cui un'applicazione chiami questo metodo. Il [**metodo IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) crea automaticamente i dati binari e li aggiunge al percorso corretto nel Registro di sistema. Per altre informazioni, vedere [How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ HRESULT CreateFilterData(
 
 <dl> <dt>
 
-*PRF2* \[ in\]
+*prf2* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) che contiene le informazioni sul filtro.
+Puntatore a [**una struttura REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) che contiene le informazioni sul filtro.
 
 </dd> <dt>
 
-*prgbFilterData* \[ out\]
+*prgbFilterData* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore ai dati binari. Il metodo alloca la memoria per i dati. Il chiamante deve rilasciare la memoria chiamando il metodo **CoTaskMemFree** .
+Indirizzo di una variabile che riceve un puntatore ai dati binari. Il metodo alloca la memoria per i dati. Il chiamante deve rilasciare la memoria chiamando il **metodo CoTaskMemFree.**
 
 </dd> <dt>
 
-*PCB* \[ out\]
+*pcb* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a una variabile che riceve le dimensioni dei dati binari, in byte.
@@ -76,7 +76,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, viene
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> L'intestazione fil \_ Data. h si trova nella directory degli [esempi del Mapper](mapper-sample.md) nel Windows SDK.
+> L'intestazione Fil \_ data.h si trova nella directory [Mapper Sample](mapper-sample.md) nella Windows SDK.
 
  
 
@@ -86,7 +86,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, viene
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Fil \_ Data. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Fil \_ data.h</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Quartz.dll</dt> </dl>  |
 
 

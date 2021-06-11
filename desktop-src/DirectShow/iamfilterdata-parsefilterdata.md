@@ -1,7 +1,7 @@
 ---
-description: Nota Questa interfaccia è stata deprecata.
+description: Informazioni sul metodo IAMFilterData::P arseFilterData, decomprime i dati binari del Registro di sistema per un filtro. Questa interfaccia è stata deprecata.
 ms.assetid: 86095fcf-3364-42a0-95db-08223fa3cc20
-title: 'IAMFilterData: metodo:P arseFilterData (Fil \_ Data. h)'
+title: Metodo IAMFilterData::P arseFilterData (Fil \_ data.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,23 +13,23 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 18e1367813adff6b0debdfb698644731668bfc5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9560280fa6f16699af907cdb5cf682b9c4bb1277
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326817"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989446"
 ---
-# <a name="iamfilterdataparsefilterdata-method"></a>IAMFilterData::P metodo arseFilterData
+# <a name="iamfilterdataparsefilterdata-method"></a>Metodo IAMFilterData::P arseFilterData
 
 > [!Note]  
-> Questa interfaccia è stata deprecata. Le nuove applicazioni non devono utilizzarlo.
+> Questa interfaccia è stata deprecata. Le nuove applicazioni non devono usarlo.
 
  
 
-Il `ParseFilterData` Metodo decomprime i dati del registro di sistema binario per un filtro.
+Il `ParseFilterData` metodo decomprime i dati binari del Registro di sistema per un filtro.
 
-Non esiste in genere un motivo per cui un'applicazione chiama questo metodo. Il metodo [**IFilterMapper2:: EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) fornisce un modo più pratico per accedere ai dati del registro di sistema del filtro.
+In genere non esiste alcun motivo per cui un'applicazione chiami questo metodo. Il [**metodo IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) offre un modo più pratico per accedere ai dati del Registro di sistema di filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,24 +48,24 @@ HRESULT ParseFilterData(
 
 <dl> <dt>
 
-*rgbFilterData* \[ in\]
+*rgbFilterData* \[ Pollici\]
 </dt> <dd>
 
-Puntatore ai dati binari del registro di sistema. È possibile ottenere questi dati recuperando la proprietà "FilterData" dal moniker del filtro. I dati vengono archiviati come **SAFEARRAY** di byte (VT \_ Ui1 \| VT \_ Array).
+Puntatore ai dati binari del Registro di sistema. È possibile ottenere questi dati recuperando la proprietà "FilterData" dal moniker di filtro. I dati vengono archiviati come **SAFEARRAY** di byte (VT \_ UI1 \| VT \_ ARRAY).
 
 </dd> <dt>
 
-*CB* \[ in\]
+*cb* \[ Pollici\]
 </dt> <dd>
 
-Specifica le dimensioni in byte dei dati binari.
+Specifica le dimensioni dei dati binari, in byte.
 
 </dd> <dt>
 
-*prgbRegFilter2* \[ out\]
+*prgbRegFilter2* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore ai dati decompressi. Quando il metodo restituisce un risultato, eseguire il cast di questo puntatore a un tipo [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) per accedere ai dati del filtro. Il chiamante deve rilasciare la memoria chiamando il metodo **CoTaskMemFree** .
+Indirizzo di una variabile che riceve un puntatore ai dati decompressi. Quando il metodo viene restituito, eseguire il cast di questo puntatore a [**un tipo REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) per accedere ai dati del filtro. Il chiamante deve rilasciare la memoria chiamando il **metodo CoTaskMemFree.**
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, viene
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> L'intestazione fil \_ Data. h si trova nella directory degli [esempi del Mapper](mapper-sample.md) nel Windows SDK.
+> L'intestazione Fil \_ data.h si trova nella directory [Mapper Sample](mapper-sample.md) nella Windows SDK.
 
  
 
@@ -86,7 +86,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, viene
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Fil \_ Data. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Fil \_ data.h</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Quartz.dll</dt> </dl>  |
 
 

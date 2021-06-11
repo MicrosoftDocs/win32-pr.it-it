@@ -1,21 +1,21 @@
 ---
-description: In Windows Vista e versioni successive, i metadati sono diventati centrali come metodo per organizzare elementi quali file, posta elettronica o contatti.
+description: Informazioni sugli scenari di sviluppo per proprietà personalizzate e gestori di proprietà all'interno del Sistema di proprietà Windows.
 ms.assetid: 3281736b-f9ea-4699-a128-3bce6810126e
 title: Guida per gli sviluppatori del sistema di proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6746c24d24a6926d20078c00f6780c72fb7c8e0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46a26044d0d457d4ba24b8c9a18555885c12a571
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313529"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111988926"
 ---
 # <a name="property-system-developers-guide"></a>Guida per gli sviluppatori del sistema di proprietà
 
-In Windows Vista e versioni successive, i metadati sono diventati centrali come metodo per organizzare elementi quali file, posta elettronica o contatti. Per abilitare un sistema in cui è possibile eseguire la ricerca di elementi in base ai relativi metadati e dove gli utenti possono leggere o scrivere i metadati, Windows Vista ha introdotto un nuovo sistema di proprietà. I metadati in questo sistema sono rappresentati da un set estendibile di proprietà. Con l'introduzione delle proprietà in Windows Vista che astraggono le specifiche di elementi quali foto, musica, documenti, messaggi, contatti e file, i fornitori di software indipendenti (ISV) possono ora introdurre le proprie proprietà sulla piattaforma se nessuna proprietà esistente soddisfa le proprie esigenze.
+In Windows Vista e versioni successive i metadati sono diventati centrali come metodo di organizzazione di elementi come file, messaggi di posta elettronica o contatti. Per abilitare un sistema in cui è possibile eseguire ricerche di elementi in base ai relativi metadati e in cui gli utenti possono leggere o scrivere i metadati, Windows Vista ha introdotto un nuovo sistema di proprietà. I metadati in questo sistema sono rappresentati da un set estendibile di proprietà. Con l'introduzione di proprietà in Windows Vista che hanno astratto le specifiche di elementi come foto, musica, documenti, messaggi, contatti e file, i fornitori di software indipendenti (ISV) possono ora introdurre le proprie proprietà alla piattaforma se nessuna proprietà esistente soddisfa le proprie esigenze.
 
-In questa sezione vengono descritti gli scenari di sviluppo seguenti all'interno del sistema di proprietà di Windows:
+In questa sezione vengono descritti gli scenari di sviluppo seguenti all'interno del Sistema di proprietà Windows:
 
 -   [Creazione di proprietà personalizzate.](./building-property-handlers-property-schemas.md)
 -   [Implementazione di gestori di proprietà](./building-property-handlers.md)

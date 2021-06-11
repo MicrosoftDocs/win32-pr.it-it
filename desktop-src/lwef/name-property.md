@@ -1,19 +1,19 @@
 ---
-title: Proprietà Name (oggetto characters)
-description: Proprietà Name
+title: Proprietà Name (oggetto Characters)
+description: Informazioni sulla proprietà Name dell'oggetto Characters. Microsoft Agent è deprecato a livello di Windows 7.
 ms.assetid: vs|msagent|~\pacontrol_2bxm.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6e7b4a8872952cce0ae68445ec22a5599891674
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 7365550d5d4d4071cf4292e505f16e7047628cf1
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104474837"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989326"
 ---
-# <a name="name-property-characters-object"></a>Proprietà Name (oggetto characters)
+# <a name="name-property-characters-object"></a>Proprietà Name (oggetto Characters)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Restituisce o imposta una stringa che specifica il nome predefinito del caratter
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agente ***. Caratteri ("**_CharacterID_*_")._ *  \[  =  *Stringa* nome\]
+*agent***. Caratteri ("**_CharacterID_*_"). Stringa del_ *  \[  =  *nome*\]
 
 
 
@@ -43,9 +43,9 @@ Restituisce o imposta una stringa che specifica il nome predefinito del caratter
 
 ## <a name="remarks"></a>Commenti
 
-Il **nome** di un carattere può dipendere dall'impostazione [**LanguageID**](languageid-property.md) del carattere. Il nome di un carattere in una lingua può essere diverso o usare caratteri diversi rispetto a un altro. Il **nome** predefinito del carattere per una lingua specifica viene definito quando il carattere viene compilato con l'editor dei caratteri di Microsoft Agent.
+Il nome di un **carattere** può dipendere dall'impostazione [**LanguageID del**](languageid-property.md) carattere. Il nome di un carattere in una lingua può essere diverso o usare caratteri diversi rispetto a in un'altra. Il nome predefinito **del** carattere per una lingua specifica viene definito quando il carattere viene compilato con Microsoft Agent Character Editor.
 
-Evitare di rinominare un carattere, soprattutto quando viene usato in uno scenario in cui altre applicazioni client possono usare lo stesso carattere. Inoltre, Agent usa il **nome** del carattere per creare automaticamente i comandi per nascondere e visualizzare il carattere.
+Evitare di rinominare un carattere, soprattutto quando lo si usa in uno scenario in cui altre applicazioni client possono usare lo stesso carattere. Agent usa anche il nome del **carattere** per creare automaticamente i comandi per nascondere e visualizzare il carattere.
 
  
 

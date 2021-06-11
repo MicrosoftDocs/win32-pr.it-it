@@ -1,6 +1,6 @@
 ---
 title: Elemento AcceptServerName (PeapExtensionsType)
-description: Indica se il nome del server viene convalidato in base alla stringa del nome specificata nell'elemento ServerNames (ServerValidationParameters). | Elemento AcceptServerName (PeapExtensionsType)
+description: L'elemento AcceptServerName (PeapExtensionsType) indica se il nome del server viene convalidato rispetto alla stringa del nome specificata in ServerNames nello schema mspeapconnectionpropertiesv2.
 ms.assetid: 24409775-d00d-439f-bb0b-a9fe5fb736a7
 keywords:
 - Elemento AcceptServerName EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d085122104c2764896801015c58fcbc9f72a1580
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 64e82defae9c5ae9f7cf60056cfdac8b58373602
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969230"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989476"
 ---
 # <a name="acceptservername-peapextensionstype-element"></a>Elemento AcceptServerName (PeapExtensionsType)
 
-L'elemento **AcceptServerName (PeapExtensionsType)** indica se il nome del server viene convalidato in base alla stringa del nome specificata nell'elemento [**serverNames (ServerValidationParameters)**](mspeapconnectionpropertiesv1schema-servernames-servervalidationparameters-element.md) .
+**L'elemento AcceptServerName (PeapExtensionsType)** indica se il nome del server viene convalidato rispetto alla stringa del nome specificata nell'elemento [**ServerNames (ServerValidationParameters).**](mspeapconnectionpropertiesv1schema-servernames-servervalidationparameters-element.md)
 
 ``` syntax
 <xs:element name="AcceptServerName"
@@ -31,11 +31,11 @@ L'elemento **AcceptServerName (PeapExtensionsType)** indica se il nome del serve
  />
 ```
 
-L'elemento **AcceptServerName** è definito dall'elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
+**L'elemento AcceptServerName** è definito dall'elemento [**PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **AcceptServerName** è facoltativo.
+**L'elemento AcceptServerName** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,8 +43,8 @@ L'elemento **AcceptServerName** è facoltativo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/>              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/> |
 
 
 
@@ -58,7 +58,7 @@ L'elemento **AcceptServerName** è facoltativo.
 [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**PeapExtensions**](mspeapconnectionpropertiesv1schema-peapextensions-eaptype-element.md)
@@ -67,7 +67,7 @@ L'elemento **AcceptServerName** è facoltativo.
 
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)

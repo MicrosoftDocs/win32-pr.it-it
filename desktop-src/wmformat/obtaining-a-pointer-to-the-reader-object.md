@@ -1,36 +1,36 @@
 ---
-title: Acquisizione di un puntatore all'oggetto Reader (Windows Media Format 11 SDK)
-description: Recupero di un puntatore all'oggetto Reader
+title: Recupero di un puntatore all'oggetto reader (Windows Media Format 11 SDK)
+description: Informazioni su come ottenere un puntatore all'oggetto reader di Windows Media Format SDK usando l'interfaccia IWMReaderAdvanced2.
 ms.assetid: 70696ffc-2612-460d-b445-f200ba85d3c7
 keywords:
-- Windows Media Format SDK, DirectShow
-- Windows Media Format SDK, oggetti Reader
+- Windows Media Format SDK,DirectShow
+- Windows Media Format SDK, oggetti lettore
 - Windows Media Format SDK, interfaccia IWMReaderAdvanced2
-- ASF (Advanced Systems Format), DirectShow
-- ASF (Advanced Systems Format), DirectShow
-- ASF (Advanced Systems Format), oggetti Reader
-- ASF (formato avanzato dei sistemi), oggetti Reader
+- Advanced Systems Format (ASF), DirectShow
+- ASF (Advanced Systems Format),DirectShow
+- Advanced Systems Format (ASF), oggetti reader
+- ASF (Advanced Systems Format), oggetti reader
 - Advanced Systems Format (ASF), interfaccia IWMReaderAdvanced2
-- ASF (formato avanzato dei sistemi), interfaccia IWMReaderAdvanced2
+- ASF (Advanced Systems Format), interfaccia IWMReaderAdvanced2
 - DirectShow, oggetti Reader
-- DirectShow, puntatori a oggetti Reader
-- DirectShow, interfaccia IWMReaderAdvanced2
-- oggetti Reader, recupero di puntatori
+- DirectShow, puntatori a oggetti reader
+- Interfaccia DirectShow,IWMReaderAdvanced2
+- oggetti reader, recupero di puntatori
 - flussi, oggetti Reader
-- flussi, puntatori a oggetti Reader
+- flussi,puntatori a oggetti reader
 - IWMReaderAdvanced2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63e0bb6611ba1d4e3c41fb2c00a68dd9c898505f
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6dd31bd868365b87b38eefd0c0c81e8beafef51c
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104340103"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989136"
 ---
-# <a name="obtaining-a-pointer-to-the-reader-object-windows-media-format-11-sdk"></a>Acquisizione di un puntatore all'oggetto Reader (Windows Media Format 11 SDK)
+# <a name="obtaining-a-pointer-to-the-reader-object-windows-media-format-11-sdk"></a>Recupero di un puntatore all'oggetto reader (Windows Media Format 11 SDK)
 
-In alcuni casi, ad esempio quando si determinano le estensioni di unità dati impostate in un determinato flusso, potrebbe essere necessario accedere direttamente all' [oggetto Reader](reader-object.md) di Windows Media Format SDK. La funzione seguente mostra come ottenere l'interfaccia [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) sull'oggetto Reader stesso:
+In alcuni casi, ad esempio quando si determinano le estensioni di unità [](reader-object.md) dati impostate in un determinato flusso, potrebbe essere necessario accedere direttamente all'oggetto lettore di Windows Media Format SDK. La funzione seguente illustra come ottenere [**l'interfaccia IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) nell'oggetto reader stesso:
 
 
 ```C++

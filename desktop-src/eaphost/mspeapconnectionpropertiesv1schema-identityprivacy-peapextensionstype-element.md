@@ -1,6 +1,6 @@
 ---
-title: Elemento IdentityPrivacy (PeapExtensionsType) (V1)
-description: Indica se viene inviata un'identità vera o anonima dell'utente. | Elemento IdentityPrivacy (PeapExtensionsType)
+title: Elemento IdentityPrivacy (PeapExtensionsType) (v1)
+description: L'elemento IdentityPrivacy (PeapExtensionsType) indica se l'identità reale di un utente viene inviata nello schema mspeapconnectionpropertiesv1.
 ms.assetid: 1ae5b6e8-b1f8-45a7-ad22-fdb57cc756a2
 keywords:
 - elemento EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 748cf3ae8d5a4da4f8885332a72326bced45b398
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 7195ce43fb3f1a1f1710fe7aee3f5f74e18f3786
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389072"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989216"
 ---
 # <a name="identityprivacy-peapextensionstype-element"></a>Elemento IdentityPrivacy (PeapExtensionsType)
 
-L'elemento **IdentityPrivacy (PeapExtensionsType)** indica se viene inviata un'identità true o un'identità anonima dell'utente.
+**L'elemento IdentityPrivacy (PeapExtensionsType)** indica se viene inviata l'identità vera o anonima di un utente.
 
 ``` syntax
 <xs:element
@@ -32,11 +32,11 @@ L'elemento **IdentityPrivacy (PeapExtensionsType)** indica se viene inviata un'i
  />
 ```
 
-L'elemento è definito dall'elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
+L'elemento è definito [**dall'elemento PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **IdentityPrivacy** è facoltativo.
+**L'elemento IdentityPrivacy** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,8 +44,8 @@ L'elemento **IdentityPrivacy** è facoltativo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/>              |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/> |
 
 
 
@@ -59,7 +59,7 @@ L'elemento **IdentityPrivacy** è facoltativo.
 [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**PeapExtensions**](mspeapconnectionpropertiesv1schema-peapextensions-eaptype-element.md)
@@ -68,7 +68,7 @@ L'elemento **IdentityPrivacy** è facoltativo.
 
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)

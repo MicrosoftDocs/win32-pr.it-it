@@ -1,31 +1,31 @@
 ---
 title: Installazione (Windows Multimedia)
-description: Installazione
+description: Informazioni sull'installazione di Windows Multimedia, inclusa l'elaborazione DRV_INSTALL e DRV_REMOVE messaggi.
 ms.assetid: 1f0e23ad-4db7-4f32-98d9-e672370db559
 keywords:
 - driver installabili, installazione
-- driver installabili, messaggio DRV_INSTALL
-- driver installabili, messaggio DRV_REMOVE
-- Messaggio DRV_INSTALL
-- Messaggio DRV_REMOVE
+- driver installabili, DRV_INSTALL messaggio
+- driver installabili, DRV_REMOVE messaggio
+- DRV_INSTALL messaggio
+- DRV_REMOVE messaggio
 - Messaggio DRVCONFIGINFO
-- installazione dei driver
+- installazione di driver
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4ebebd090c7499698c59c325d1ac0d487902454
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 29f82a23a781e62553d6488331b2c832104fd770
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400111"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989036"
 ---
 # <a name="installation-windows-multimedia"></a>Installazione (Windows Multimedia)
 
-Un driver installabile può eseguire attività di installazione specifiche del driver quando si elaborano i messaggi [**drv \_ Install**](drv-install.md) e [**drv \_ Remove**](drv-remove.md) . Un'applicazione di installazione, ad esempio un'applicazione del pannello di controllo, invia i messaggi al driver rispettivamente durante l'installazione o la rimozione del driver.
+Un driver installabile può eseguire attività di installazione specifiche del driver durante l'elaborazione dei messaggi [**\_ DRV INSTALL**](drv-install.md) [**e DRV \_ REMOVE.**](drv-remove.md) Un'applicazione di installazione, ad esempio Pannello di controllo, invia i messaggi al driver rispettivamente durante l'installazione o la rimozione del driver.
 
-Quando si elabora il \_ messaggio di installazione di DRV, il driver verifica in genere che l'hardware necessario sia presente e quindi Visualizza la finestra di dialogo di configurazione per consentire all'utente di scegliere le impostazioni di configurazione iniziali per il driver e l'hardware associato. Il messaggio include l'indirizzo di una struttura [**DRVCONFIGINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-drvconfiginfo) che contiene i nomi della chiave del registro di sistema e il valore associato al driver; il driver controlla il valore del registro di sistema per le informazioni di configurazione predefinite. Infine, il driver crea anche le chiavi del registro di sistema e i valori aggiuntivi necessari per l'operazione riuscita.
+Durante l'elaborazione del messaggio DRV INSTALL, il driver verifica in genere che l'hardware necessario sia presente e quindi visualizza la finestra di dialogo di configurazione per consentire all'utente di scegliere le impostazioni di configurazione iniziali per il driver e \_ l'hardware associato. Il messaggio include l'indirizzo di una [**struttura DRVCONFIGINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-drvconfiginfo) che contiene i nomi della chiave e del valore del Registro di sistema associati al driver. Il driver controlla il valore del Registro di sistema per le informazioni di configurazione predefinite. Infine, il driver crea anche eventuali chiavi e valori del Registro di sistema aggiuntivi necessari per il corretto funzionamento.
 
-Quando si elabora il \_ messaggio di rimozione di DRV, il driver rimuove le chiavi del registro di sistema e i valori che potrebbero essere stati creati.
+Durante l'elaborazione del messaggio DRV REMOVE, il driver rimuove le chiavi e i valori \_ del Registro di sistema che potrebbero essere stati creati.
 
  
 

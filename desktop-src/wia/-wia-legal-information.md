@@ -1,15 +1,15 @@
 ---
-description: Le informazioni contenute nel presente documento, inclusi gli URL e altri riferimenti a siti Web, sono soggette a modifiche senza preavviso.
+description: Questo articolo fornisce informazioni legali su WIA, incluse informazioni sul copyright e sui marchi.
 ms.assetid: 343c8f3c-3172-4e38-b276-082199b2d48b
 title: Informazioni legali (WIA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a1bbf1942c87405020067ee07e9e71a99278d5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb8023ce16eed495f977f5703d14c9457179fbbc
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966720"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989496"
 ---
 # <a name="legal-information-wia"></a>Informazioni legali (WIA)
 
