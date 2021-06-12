@@ -1,6 +1,6 @@
 ---
 title: vs_2_x
-description: Un vertex shader programmabile è costituito da un set di istruzioni che operano sui dati dei vertici. Registra i dati di trasferimento all'interno e all'esterno dell'ALU. È possibile applicare un controllo aggiuntivo per modificare l'istruzione, i risultati o i dati che vengono scritti.
+description: Informazioni su vs_2_x, un vertex shader programmabile, costituito da un set di istruzioni che operano sui dati dei vertici.
 ms.assetid: 64b07597-1e16-4803-b991-e78eabc2c060
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,66 +9,66 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d09af016ca4fd399de0f2aeec1267343b9d11574
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3449ae4c1e1eb3b977916f6fb1d19303e9d21a4e
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473755"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112010715"
 ---
 # <a name="vs_2_x"></a>vs \_ 2 \_ x
 
-Un vertex shader programmabile è costituito da un set di istruzioni che operano sui dati dei vertici. Registra i dati di trasferimento all'interno e all'esterno dell'ALU. È possibile applicare un controllo aggiuntivo per modificare l'istruzione, i risultati o i dati che vengono scritti.
+Un vertex shader programmabile è costituito da un set di istruzioni che operano sui dati dei vertici. Registra i dati di trasferimento in e da ALU. È possibile applicare un controllo aggiuntivo per modificare l'istruzione, i risultati o quali dati vengono scritti.
 
-Vertex shader versione vs \_ 2 \_ x estende il set di funzionalità supportato da vs \_ 2 \_ 0. Ogni funzionalità aggiuntiva è rappresentata da un limite corrispondente nella struttura [**D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) all'interno di [D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps). Per usare una delle funzionalità avanzate rappresentate da questi limiti, è necessario specificare la versione di vertex shader come vs \_ 2 \_ x.
+La versione vertex shader rispetto \_ alla versione 2 \_ x estende il set di funzionalità supportato da vs \_ 2 \_ 0. Ogni funzionalità aggiuntiva è rappresentata da un limite corrispondente nella [**struttura D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) all'interno di [D3DVS20CAPS.](/windows/desktop/direct3d9/d3dvs20caps) Per usare una qualsiasi delle funzionalità avanzate rappresentate da queste estremità, la versione del vertex shader deve essere specificata come \_ vs 2 \_ x.
 
--   [Istruzioni: vs \_ 2 \_ x](dx9-graphics-reference-asm-vs-instructions-vs-2-x.md) contiene un elenco delle istruzioni disponibili.
--   [Registers-vs \_ 2 \_ x](dx9-graphics-reference-asm-vs-registers-vs-2-x.md) elenca i diversi tipi di registri usati da vertex shader Alu.
--   I [modificatori del registro vertex shader](dx9-graphics-reference-asm-vs-registers-modifiers.md) vengono usati per modificare la modalità di funzionamento di un'istruzione.
--   I [modificatori del registro di origine vertex shader](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) modificano i dati del registro di origine prima dell'esecuzione dell'istruzione.
--   Il [Registro di origine swizzling](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) fornisce un controllo aggiuntivo sui componenti di registro letti, copiati o scritti.
--   Il [mascheramento del registro di destinazione](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) determina quali componenti del registro di destinazione vengono scritti.
+-   [Instructions - vs \_ 2 \_ x](dx9-graphics-reference-asm-vs-instructions-vs-2-x.md) contiene un elenco delle istruzioni disponibili.
+-   [Registri: rispetto \_ a 2 \_ x](dx9-graphics-reference-asm-vs-registers-vs-2-x.md) elenca i diversi tipi di registri usati dal vertex shader ALU.
+-   [I modificatori di registro vertex shader](dx9-graphics-reference-asm-vs-registers-modifiers.md) vengono usati per modificare il funzionamento di un'istruzione.
+-   [I modificatori del registro di origine vertex shader modificano](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) i dati del registro di origine prima dell'esecuzione dell'istruzione.
+-   [Source Register Swizzling](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) offre un controllo aggiuntivo sui componenti del registro da leggere, copiare o scrivere.
+-   [Destination Register Masking determina](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) quali componenti del registro di destinazione vengono scritti.
 
 ## <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 Le nuove funzionalità sono le seguenti:
 
-### <a name="dynamic-flow-control"></a>Controllo dinamico di flusso
+### <a name="dynamic-flow-control"></a>Controllo dinamico del flusso
 
-Se [D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) > 0, sono supportate le istruzioni seguenti per il controllo dinamico del flusso:
+Se [D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) > 0, sono supportate le istruzioni di controllo dinamico del flusso seguenti:
 
--   [Se \_ comp-vs](if-comp---vs.md)
--   [Break-vs](break---vs.md)
--   [Interrompi \_ comp-vs](break-comp---vs.md)
+-   [if \_ comp - vs](if-comp---vs.md)
+-   [break - vs](break---vs.md)
+-   [break \_ comp - vs](break-comp---vs.md)
 
-Se si imposta anche [D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) , sono supportate le istruzioni aggiuntive per il controllo di flusso seguenti:
+Se [è impostato anche D3DVS20CAPS,](/windows/desktop/direct3d9/d3dvs20caps) sono supportate le istruzioni di controllo di flusso aggiuntive seguenti:
 
--   [setp \_ comp-vs](setp-comp---vs.md)
--   [Se prede-vs](if-pred---vs.md)
--   [callnz Predator-vs](callnz-pred---vs.md)
--   [Breakp-vs](breakp---vs.md)
+-   [setp \_ comp - vs](setp-comp---vs.md)
+-   [if pred - vs](if-pred---vs.md)
+-   [callnz pred - vs](callnz-pred---vs.md)
+-   [breakp - vs](breakp---vs.md)
 
-L'intervallo di valori per la profondità del controllo di flusso dinamico è compreso tra 0 e 24 ed è uguale alla profondità di annidamento delle istruzioni di controllo del flusso dinamico. per informazioni dettagliate, vedere [limiti di nidificazione del controllo di flusso](dx9-graphics-reference-asm-vs-instructions-flow-control.md) . Se questo limite è pari a zero, il dispositivo non supporta le istruzioni per il controllo dinamico dei flussi.
+L'intervallo di valori per la profondità del controllo dinamico del flusso è compreso tra 0 [](dx9-graphics-reference-asm-vs-instructions-flow-control.md) e 24 ed è uguale alla profondità di annidamento delle istruzioni di controllo dinamico del flusso.Per informazioni dettagliate, vedere Limiti di annidamento del controllo di flusso. Se questo limite è zero, il dispositivo non supporta le istruzioni di controllo dinamico del flusso.
 
 ### <a name="number-of-temporary-registers"></a>Numero di registri temporanei
 
-[D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) rappresenta il numero di [registri temporanei](dx9-graphics-reference-asm-vs-registers-temporary.md)supportati dal dispositivo. L'intervallo di valori per questo limite è 12-32.
+[D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) rappresenta il [numero](dx9-graphics-reference-asm-vs-registers-temporary.md)di registri temporanei supportati dal dispositivo. L'intervallo di valori per questo limite è compreso tra 12 e 32.
 
 ### <a name="static-flow-control-nesting-depth"></a>Profondità di annidamento del controllo di flusso statico
 
-[D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) rappresenta la profondità di annidamento di due tipi di istruzioni di controllo di flusso statiche: le istruzioni [loop-vs](loop---vs.md) / [Rep-vs](rep---vs.md) e [Call-vs](call---vs.md) / [callnz bool-vs](callnz-bool---vs.md) / [se bool-vs](if-bool---vs.md). loop-vs/Rep-vs possono essere nidificate fino a D3DVS20CAPS Deep. In modo indipendente, le istruzioni Call-vs/callnz bool-vs possono essere nidificate fino a D3DVS20CAPS Deep. Se viene impostato anche D3DVS20CAPS, [callnz prede-vs](callnz-pred---vs.md) viene conteggiato nella profondità di annidamento di Call-vs/callnz bool-vs/if bool-vs (vedere [limiti di nidificazione del controllo di flusso](dx9-graphics-reference-asm-vs-instructions-flow-control.md) per informazioni dettagliate).
+[D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) rappresenta la profondità di annidamento di due tipi di istruzioni di controllo di flusso statiche: [loop -](loop---vs.md)vs rep - vs e call - vs callnz bool - vs if bool - vs . loop - vs/rep - vs instructions può essere annidato fino a / [](rep---vs.md) [](call---vs.md) / [](callnz-bool---vs.md) / [](if-bool---vs.md)D3DVS20CAPS deep. In modo indipendente, chiamare - vs/callnz bool - e le istruzioni possono essere annidate fino a D3DVS20CAPS deep. Se è impostato anche D3DVS20CAPS, chiamare [pred](callnz-pred---vs.md) - vs viene conteggiato per la profondità di annidamento della chiamata [](dx9-graphics-reference-asm-vs-instructions-flow-control.md) - vs/callnz bool - vs/if bool - vs (vedere Limiti di annidamento del controllo di flusso per informazioni dettagliate).
 
 ### <a name="predication"></a>Predicazione
 
-Se è impostato [D3DVS20CAPS](/windows/desktop/direct3d9/d3dvs20caps) , il dispositivo supporta [setp \_ comp-vs](setp-comp---vs.md) e l'istruzione predicazione. Se anche D3DVS20CAPS è maggiore di 0, sono supportate le istruzioni aggiuntive per il controllo di flusso dinamico seguenti:
+Se [è impostato D3DVS20CAPS,](/windows/desktop/direct3d9/d3dvs20caps) il dispositivo supporta [setp comp - \_ e](setp-comp---vs.md) il predicato dell'istruzione. Se anche D3DVS20CAPS è maggiore di 0, sono supportate le istruzioni di controllo dinamico del flusso aggiuntive seguenti:
 
--   [Se prede-vs](if-pred---vs.md)
--   [callnz Predator-vs](callnz-pred---vs.md)
--   [Breakp-vs](breakp---vs.md)
+-   [if pred - vs](if-pred---vs.md)
+-   [callnz pred - vs](callnz-pred---vs.md)
+-   [breakp - vs](breakp---vs.md)
 
 ### <a name="instruction-count"></a>Conteggio istruzioni
 
-Ogni vertex shader può avere fino a 256 istruzioni archiviate. Il numero di istruzioni eseguite può essere molto più alto (a causa del supporto ciclo/Rep) ed è limitato da [**D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9), che deve essere almeno 0xFFFF.
+Ogni vertex shader può contenere fino a 256 istruzioni archiviate. Il numero di istruzioni eseguite può essere molto più elevato (a causa del supporto per cicli/rep) ed è limitato da [**D3DCAPS9,**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9)che deve essere almeno 0xFFFF.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -77,6 +77,6 @@ Ogni vertex shader può avere fino a 256 istruzioni archiviate. Il numero di ist
 [Vertex shader](dx9-graphics-reference-asm-vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

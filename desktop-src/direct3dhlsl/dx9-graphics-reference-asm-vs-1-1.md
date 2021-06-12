@@ -1,6 +1,6 @@
 ---
 title: vs_1_1
-description: Un vertex shader programmabile è costituito da un set di istruzioni che operano sui dati dei vertici. Registra i dati di trasferimento all'interno e all'esterno dell'ALU. È possibile applicare un controllo aggiuntivo per modificare l'istruzione, i risultati o i dati che vengono scritti.
+description: Informazioni su vs_1_1, un vertex shader programmabile, costituito da un set di istruzioni che operano sui dati dei vertici.
 ms.assetid: 54ad41d7-aaa4-4cf4-8834-47f10cd5425c
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b956613c2a4dd882b8bb810e586de9b6b90a2f3b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 78ea10e751fd7fe902b1631376e9eb2023d31c12
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856977"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011064"
 ---
 # <a name="vs_1_1"></a>vs \_ 1 \_ 1
 
-Un vertex shader programmabile è costituito da un set di istruzioni che operano sui dati dei vertici. Registra i dati di trasferimento all'interno e all'esterno dell'ALU. È possibile applicare un controllo aggiuntivo per modificare l'istruzione, i risultati o i dati che vengono scritti.
+Un vertex shader programmabile è costituito da un set di istruzioni che operano sui dati dei vertici. Registra i dati di trasferimento in e da ALU. È possibile applicare un controllo aggiuntivo per modificare l'istruzione, i risultati o quali dati vengono scritti.
 
--   [Istruzioni-vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md) contiene un elenco delle istruzioni disponibili.
--   [Registers-vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-registers-vs-1-1.md) elenca i diversi tipi di registri usati da vertex shader Alu.
--   I [modificatori del registro vertex shader](dx9-graphics-reference-asm-vs-registers-modifiers.md) vengono usati per modificare la modalità di funzionamento di un'istruzione.
--   I [modificatori del registro di origine vertex shader](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) modificano i dati del registro di origine prima dell'esecuzione dell'istruzione.
--   Il [swizzling del registro di origine](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) offre un controllo aggiuntivo sui componenti di registro letti, copiati o scritti.
--   Il [mascheramento del registro di destinazione](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) determina quali componenti del registro di destinazione vengono scritti.
+-   [Instructions - vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md) contiene un elenco delle istruzioni disponibili.
+-   [Registri: rispetto \_ a 1 \_ 1](dx9-graphics-reference-asm-vs-registers-vs-1-1.md) elenca i diversi tipi di registri usati dall'ALU del vertex shader.
+-   [I modificatori di registro vertex shader](dx9-graphics-reference-asm-vs-registers-modifiers.md) vengono usati per modificare il funzionamento di un'istruzione.
+-   [I modificatori del registro di origine vertex shader modificano](dx9-graphics-reference-asm-vs-registers-modifiers-source.md) i dati del registro di origine prima dell'esecuzione dell'istruzione.
+-   [Source Register Swizzling](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md) offre un controllo aggiuntivo sui componenti del registro da leggere, copiare o scrivere.
+-   [Destination Register Masking determina](dx9-graphics-reference-asm-vs-registers-modifiers-masking.md) quali componenti del registro di destinazione vengono scritti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -34,9 +34,9 @@ Un vertex shader programmabile è costituito da un set di istruzioni che operano
 [Vertex shader](dx9-graphics-reference-asm-vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

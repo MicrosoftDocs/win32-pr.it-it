@@ -1,57 +1,57 @@
 ---
-title: Informazioni sulle interfacce
-description: Informazioni sulle interfacce
+title: Informazioni sulle skin
+description: Informazioni sulle skin. Le skin sono file di arte informatica organizzati da un file di testo, che Windows Media Player come visualizzare un'interfaccia.
 ms.assetid: 35c8c8b0-6feb-4fc5-b944-da712b521300
 keywords:
-- Windows Media Player, interfacce
-- Windows Media Player Skin, informazioni
-- interfacce, informazioni
+- Windows Media Player,skin
+- Windows Media Player, informazioni
+- skins,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5660a4223d7803863f114944e6117d3279dcfe12
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 20bef3149aad859819b03f4ba76b721a622860de
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221651"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011194"
 ---
-# <a name="about-skins"></a>Informazioni sulle interfacce
+# <a name="about-skins"></a>Informazioni sulle skin
 
-Con Windows Media Player, gli utenti possono scegliere tra un'ampia gamma di interfacce standard, ognuna delle quali offre un'esperienza visiva aggiuntiva che migliora l'ascolto e la visualizzazione del piacere. Windows Media Player dispone di diverse interfacce tra cui scegliere, ma è relativamente semplice creare e distribuire interfacce personalizzate.
+Con Windows Media Player, gli utenti possono scegliere tra un'ampia gamma di skin standard, ognuna delle quali offre un'esperienza visiva aggiuntiva che migliora l'ascolto e la visualizzazione. Windows Media Player con diverse skin tra cui scegliere, ma è relativamente semplice creare e distribuire skin personalizzate.
 
-Le interfacce sono semplicemente raccolte di uno o più file di immagine del computer, organizzati in un file di testo, che indica a Windows Media Player come usare questi file per visualizzare un'interfaccia. È possibile usare un'ampia gamma di programmi per modificare la grafica esistente o creare un'arte semplice. Ad esempio, usando gli strumenti di disegno e la clip art forniti con Microsoft PowerPoint, è possibile creare un'immagine semplicemente trascinando. Analogamente, non è necessario essere un programmatore per creare il file di testo usato per definire una singola interfaccia.
+Le skin sono semplicemente raccolte di uno o più file di computer art, organizzati in base a un file di testo, che Windows Media Player come usare questi file per visualizzare un'interfaccia. È possibile usare un'ampia gamma di programmi per modificare l'arte esistente o creare un'arte semplice. Ad esempio, usando gli strumenti di disegno e gli oggetti ClipArt forniti con Microsoft PowerPoint, è possibile creare grafica semplicemente trascinandola. Analogamente, non è necessario essere programmatori per creare il file di testo usato per definire una singola interfaccia.
 
-Uno dei motivi per cui le interfacce sono relativamente semplici da creare è che è possibile esaminare le singole parti dell'arte e il codice sorgente per qualsiasi interfaccia e vedere in che modo ogni interfaccia viene inserita. Con questo SDK sono disponibili alcune semplici interfacce di esempio, oltre a un riferimento per gli elementi e gli attributi dell'interfaccia.
+Uno dei motivi per cui le skin sono relativamente facili da creare è che è possibile esaminare le singole immagini e il codice sorgente per qualsiasi interfaccia e vedere come viene messa insieme ogni interfaccia. In questo SDK vengono fornite diverse semplici skin di esempio, oltre a un riferimento per gli elementi e gli attributi dell'interfaccia.
 
-Nelle sezioni seguenti vengono fornite informazioni generali sulle interfacce di Windows Media Player.
+Le sezioni seguenti forniscono informazioni generali sulle Windows Media Player personalizzate.
 
 
 
 | Sezione                                                                                           | Descrizione                                                                               |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [Perché creare le interfacce?](why-make-skins.md)                                                             | Vengono descritti alcuni degli usi per le interfacce.                                                     |
-| [File di interfaccia](skin-files.md)                                                                      | Descrive i tipi di file per le interfacce e i relativi utilizzi.                                          |
-| [Scrittura di codice](writing-code.md)                                                                  | Viene fornita una panoramica sull'utilizzo di Microsoft JScript nelle interfacce.                            |
-| [Debug del codice](debugging-code.md)                                                              | Descrive le tecniche per individuare i bug nel codice di interfaccia.                                       |
-| [Invio dell'interfaccia utente](submitting-your-skin.md)                                                  | La distribuzione delle interfacce nel sito Web WMPlugins non è più supportata.                  |
-| [Riferimento a interfacce in URL](referencing-skins-in-urls.md)                                        | Viene illustrato come creare URL che consentono a Windows Media Player di visualizzare una particolare interfaccia. |
-| [Novità per Windows Media Player Skin](new-for-windows-media-player-skins.md)                      | Elenca i nuovi elementi disponibili per la creazione di interfacce.                                         |
-| [Bordi per Windows Media Player (deprecato)](borders-for-windows-media-player--deprecated.md) | Viene descritto l'utilizzo delle interfacce nei pacchetti di download di Windows Media.                                 |
+| [Perché creare skin?](why-make-skins.md)                                                             | Descrive alcuni degli usi per le skin.                                                     |
+| [File di interfaccia](skin-files.md)                                                                      | Dettagli sui tipi di file per le skin e il relativo utilizzo.                                          |
+| [Scrittura di codice](writing-code.md)                                                                  | Viene fornita una panoramica dell'uso di Microsoft JScript nelle skin.                            |
+| [Debug del codice](debugging-code.md)                                                              | Vengono descritte le tecniche per la ricerca di bug nel codice dell'interfaccia.                                       |
+| [Invio dell'interfaccia](submitting-your-skin.md)                                                  | La distribuzione delle skin nel sito Web WMPlugins non è più supportata.                  |
+| [Riferimento alle skin negli URL](referencing-skins-in-urls.md)                                        | Viene illustrato come creare URL che Windows Media Player visualizzare un'interfaccia specifica. |
+| [Novità per Windows Media Player skin](new-for-windows-media-player-skins.md)                      | Elenca i nuovi elementi disponibili per la creazione di skin.                                         |
+| [Bordi per Windows Media Player (deprecato)](borders-for-windows-media-player--deprecated.md) | Descrive l'uso di skin nei pacchetti di download di Windows Media.                                 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Interfacce di Media Player Windows**](windows-media-player-skins.md)
+[**Windows Media Player skin**](windows-media-player-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

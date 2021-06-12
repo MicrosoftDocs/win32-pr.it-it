@@ -1,37 +1,37 @@
 ---
-title: Informazioni su DirectShow (Windows Media Format 11 SDK)
+title: Informazioni su DirectShow in Windows Media Format 11 SDK, un'architettura di streaming di dati di alto livello, modulare, estendibile per la piattaforma Windows.
 description: Informazioni su DirectShow
 ms.assetid: 1a0b68c7-9444-4389-8d81-dc734e95634d
 keywords:
-- Windows Media Format SDK, DirectShow
-- ASF (Advanced Systems Format), DirectShow
-- ASF (Advanced Systems Format), DirectShow
-- DirectShow, informazioni
+- Windows Media Format SDK,DirectShow
+- Advanced Systems Format (ASF),DirectShow
+- ASF (Advanced Systems Format),DirectShow
+- DirectShow,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd77507643edb220bc71a029779c88fe56760eae
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 1a76d7c8971c452f01176be7472e313181eb2831
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047745"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011294"
 ---
 # <a name="about-directshow-windows-media-format-11-sdk"></a>Informazioni su DirectShow (Windows Media Format 11 SDK)
 
-DirectShow è un'architettura di streaming di dati di alto livello, modulare, estendibile e modulare per la piattaforma Windows. Fornisce i componenti software e le API (Application Programming Interface) sottostanti per un'ampia gamma di applicazioni audio e video digitali sul mercato. DirectShow è disponibile come parte di Microsoft DirectX Software Development Kit. Per ulteriori informazioni su DirectShow, vedere Microsoft Platform SDK.
+DirectShow è un'architettura di flusso dei dati di alto livello, modulare, estendibile e di streaming dei dati per la piattaforma Windows. Fornisce i componenti software sottostanti e le API (Application Programming Interface) per un'ampia gamma di applicazioni audio e video digitali attualmente disponibili sul mercato. DirectShow è disponibile come parte di Microsoft DirectX Software Development Kit. Per altre informazioni su DirectShow, vedere Microsoft Platform SDK.
 
-In DirectShow tutti i componenti del flusso di dati sono denominati *filtri*. Un filtro può rappresentare un dispositivo hardware, un codificatore software o un decodificatore, un renderer audio o video o qualsiasi funzionalità di elaborazione video audio. Per consentire alle applicazioni basate su DirectShow di leggere e scrivere contenuto in formato Windows Media, incluso il contenuto protetto da Digital Rights Management (DRM), Microsoft offre due filtri che incapsulano parti di Windows Media Format SDK. Si tratta del [lettore WM ASF](wm-asf-reader-filter.md) e del [writer ASF WM](wm-asf-writer-filter.md). Questi filtri e le interfacce che espongono sono collettivamente denominati componenti QASF, dopo la DLL in cui sono inclusi nel pacchetto. (Q sta per quarzo, un nome di codice iniziale per DirectShow).
+In DirectShow tutti i componenti di streaming dei dati sono denominati *filtri*. Un filtro può rappresentare un dispositivo hardware, un codificatore software o un decodificatore, un renderer audio o video o qualsiasi funzionalità di elaborazione audio-video. Per consentire alle applicazioni basate su DirectShow di leggere e scrivere contenuto di Windows Media Format, incluso il contenuto protetto da Digital Rights Management (DRM), Microsoft fornisce due filtri che incapsulano parti di Windows Media Format SDK. Si tratta del [lettore ASF WM](wm-asf-reader-filter.md) e [di WM ASF Writer.](wm-asf-writer-filter.md) Questi filtri e le interfacce che espongono vengono collettivamente definiti componenti QASF, dopo la DLL in cui sono in pacchetto. La Q è l'acronimo di Quartz, un nome in codice iniziale per DirectShow.
 
 > [!Note]  
-> L'uso dei codec della serie Windows Media Audio e video 9 con i componenti DirectShow QASF richiede Microsoft Windows Millennium Edition o versione successiva o DirectX 8,0 o versione successiva.
+> L'uso dei codec Windows Media Audio e Video 9 tramite i componenti QASF DirectShow richiede Microsoft Windows Millennium Edition o versione successiva o DirectX 8.0 o versione successiva.
 
  
 
-Il diagramma seguente mostra un grafico filtro DirectShow per la riproduzione di file di Windows Media Video.
+Il diagramma seguente mostra un grafico di filtro DirectShow per la riproduzione Windows Media Video file.
 
-![grafico di riproduzione video di Windows Media](images/wmv-wmasfreader.png)
+![Grafico di riproduzione di video multimediali di Windows](images/wmv-wmasfreader.png)
 
-Il [lettore di WM ASF](wm-asf-reader-filter.md) è un componente qasf, i decodificatori sono componenti Windows Media Format SDK ospitati nel filtro del wrapper DMO (un componente QASF) e i renderer sono componenti DirectShow.
+Wm [ASF Reader](wm-asf-reader-filter.md) è un componente QASF, i decodificatori sono componenti di Windows Media Format SDK ospitati nel filtro wrapper DMO (un componente QASF) e i renderer sono componenti DirectShow.
 
  
 
