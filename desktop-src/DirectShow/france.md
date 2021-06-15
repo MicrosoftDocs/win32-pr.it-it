@@ -1,33 +1,33 @@
 ---
-description: Per una spiegazione delle tabelle seguenti, vedere tabelle e assegnazioni.
+description: Questo articolo contiene tabelle di frequenza per l'ottimizzazione della TV analogica internazionale per la Francia. Gli indici di frequenza non sono adatti per i numeri di canale.
 ms.assetid: 852ead0e-3539-483d-943d-1779f7358ba5
 title: Francia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da01c7645f8ed8a7715ae0514b073b63bd33e0f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 825efa71702dfe617325586d657665a302076369
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303767"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068116"
 ---
 # <a name="france"></a>Francia
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
-Gli indici di frequenza nelle tabelle Francia non sono adatti per l'utilizzo come numeri di canale.
+Gli indici di frequenza nelle tabelle France non sono adatti per l'uso come numeri di canale.
 
 -   [Windows 7 e versioni successive](#windows-7-and-later)
-    -   [Assegnazioni broadcast in Francia](#france-broadcast-assignments)
+    -   [Assegnazioni di trasmissioni in Francia](#france-broadcast-assignments)
     -   [Assegnazioni di cavi in Francia](#france-cable-assignments)
--   [Assegnazioni di canale precedenti](#earlier-channel-assignments)
-    -   [Assegnazioni broadcast in Francia](#france-broadcast-assignments)
+-   [Assegnazioni di canali precedenti](#earlier-channel-assignments)
+    -   [Assegnazioni di trasmissioni in Francia](#france-broadcast-assignments)
     -   [Assegnazioni di cavi in Francia](#france-cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="windows-7-and-later"></a>Windows 7 e versioni successive
 
-### <a name="france-broadcast-assignments"></a>Assegnazioni broadcast in Francia
+### <a name="france-broadcast-assignments"></a>Assegnazioni di trasmissioni in Francia
 
 ``` syntax
         2L,             // Lowest channel
@@ -233,9 +233,9 @@ Gli indici di frequenza nelle tabelle Francia non sono adatti per l'utilizzo com
        296000000L,      // 120 TV37++
 ```
 
-## <a name="earlier-channel-assignments"></a>Assegnazioni di canale precedenti
+## <a name="earlier-channel-assignments"></a>Assegnazioni di canali precedenti
 
-### <a name="france-broadcast-assignments"></a>Assegnazioni broadcast in Francia
+### <a name="france-broadcast-assignments"></a>Assegnazioni di trasmissioni in Francia
 
 ``` syntax
         2L,             // Lowest channel
@@ -431,7 +431,7 @@ Gli indici di frequenza nelle tabelle Francia non sono adatti per l'utilizzo com
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

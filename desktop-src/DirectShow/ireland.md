@@ -1,33 +1,33 @@
 ---
-description: Per una spiegazione delle tabelle seguenti, vedere tabelle e assegnazioni.
+description: Questo articolo contiene tabelle di frequenza per l'ottimizzazione della TV analogica internazionale per l'Irlanda. Gli indici di frequenza non sono adatti per i numeri di canale.
 ms.assetid: be60ca37-9f3a-44cd-8646-28fcbda5e79e
 title: Irlanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81dba5254cd64262fa40c330b3f65ba589090fed
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b004a811a59a6e2556cdd4187728e5842bea1a46
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520938"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068157"
 ---
 # <a name="ireland"></a>Irlanda
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
-Gli indici di frequenza nelle tabelle Ireland non sono adatti all'uso come numeri di canale.
+Gli indici di frequenza nelle tabelle dell'Irlanda non sono adatti per l'uso come numeri di canale.
 
 -   [Windows 7 e versioni successive](#windows-7-and-later)
-    -   [Assegnazioni broadcast dell'Irlanda](#ireland-broadcast-assignments)
-    -   [Assegnazioni di cavi per l'Irlanda](#ireland-cable-assignments)
+    -   [Assegnazioni di trasmissioni in Irlanda](#ireland-broadcast-assignments)
+    -   [Assegnazioni di cavi in Irlanda](#ireland-cable-assignments)
 -   [Assegnazioni di canale precedenti](#earlier-channel-assignments)
-    -   [Assegnazioni broadcast dell'Irlanda](#ireland-broadcast-assignments)
-    -   [Assegnazioni di cavi per l'Irlanda](#ireland-cable-assignments)
+    -   [Assegnazioni di trasmissioni in Irlanda](#ireland-broadcast-assignments)
+    -   [Assegnazioni di cavi in Irlanda](#ireland-cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="windows-7-and-later"></a>Windows 7 e versioni successive
 
-### <a name="ireland-broadcast-assignments"></a>Assegnazioni broadcast dell'Irlanda
+### <a name="ireland-broadcast-assignments"></a>Assegnazioni di trasmissioni in Irlanda
 
 ``` syntax
         1L,             // Lowest channel
@@ -103,7 +103,7 @@ Gli indici di frequenza nelle tabelle Ireland non sono adatti all'uso come numer
        855250000L,      // 68 69
 ```
 
-### <a name="ireland-cable-assignments"></a>Assegnazioni di cavi per l'Irlanda
+### <a name="ireland-cable-assignments"></a>Assegnazioni di cavi in Irlanda
 
 ``` syntax
         1L,             // Lowest channel
@@ -164,7 +164,7 @@ Gli indici di frequenza nelle tabelle Ireland non sono adatti all'uso come numer
 
 ## <a name="earlier-channel-assignments"></a>Assegnazioni di canale precedenti
 
-### <a name="ireland-broadcast-assignments"></a>Assegnazioni broadcast dell'Irlanda
+### <a name="ireland-broadcast-assignments"></a>Assegnazioni di trasmissioni in Irlanda
 
 ``` syntax
         1L,             // Lowest channel
@@ -182,7 +182,7 @@ Gli indici di frequenza nelle tabelle Ireland non sono adatti all'uso come numer
        223250000L,      // J
 ```
 
-### <a name="ireland-cable-assignments"></a>Assegnazioni di cavi per l'Irlanda
+### <a name="ireland-cable-assignments"></a>Assegnazioni di cavi in Irlanda
 
 ``` syntax
         1L,             // Lowest channel
@@ -204,7 +204,7 @@ Gli indici di frequenza nelle tabelle Ireland non sono adatti all'uso come numer
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

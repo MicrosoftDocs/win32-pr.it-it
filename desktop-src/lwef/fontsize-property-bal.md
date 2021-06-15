@@ -1,39 +1,39 @@
 ---
 title: Proprietà FontSize (oggetto Balloon)
-description: Proprietà FontSize
+description: Informazioni sulla proprietà dell'oggetto FontSize Balloon. Microsoft Agent è deprecato a livello di Windows 7.
 ms.assetid: 36d5526a-1ae9-4ef2-94f6-0ad63ce86882
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 569c07e98fb8bf973a554e89655f71e816b4a51b
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 85e6a2c13708d3066faaf396a3a451c9be01d177
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400156"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068218"
 ---
 # <a name="fontsize-property-balloon-object"></a>Proprietà FontSize (oggetto Balloon)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Restituisce o imposta la dimensione del carattere supportata per la parola Balloon per il carattere specificato.
+Restituisce o imposta la dimensione del carattere supportata per il fumetto per il carattere specificato.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*Agent. * * * caratteri* *  **("**_CharacterID_*_"). Punti di Balloon. FontSize_* \[  =  \]
+*agent.***Caratteri* *  **("**_CharacterID_*_"). Balloon.FontSize_* \[  =  *Points*\]
 
 
 
 | Parte     | Descrizione                                              |
 |----------|----------------------------------------------------------|
-| *Punti* | Valore long integer che specifica la dimensione del carattere in punti. |
+| *Punti* | Valore Long Integer che specifica la dimensione del carattere in punti. |
 
 
 
@@ -43,9 +43,9 @@ Restituisce o imposta la dimensione del carattere supportata per la parola Ballo
 
 ## <a name="remarks"></a>Commenti
 
-La proprietà [**FontSize**](fontsize-property.md) restituisce un valore long integer che specifica la dimensione corrente del carattere in punti. Il valore massimo per **FontSize** è 2160 punti.
+La [**proprietà FontSize**](fontsize-property.md) restituisce un valore Long Integer che specifica le dimensioni correnti del carattere in punti. Il valore massimo per **FontSize** è 2160 punti.
 
-Il valore predefinito per le impostazioni del tipo di carattere del fumetto di parole di un carattere viene impostato nell'editor dei caratteri di Microsoft Agent. Inoltre, l'utente può eseguire l'override delle impostazioni del tipo di carattere per tutti i caratteri nella finestra delle proprietà di Microsoft Agent.
+Il valore predefinito per le impostazioni del carattere del fumetto di un carattere viene impostato nell'Editor caratteri di Microsoft Agent. Inoltre, l'utente può eseguire l'override delle impostazioni dei caratteri per tutti i caratteri nella finestra delle proprietà di Microsoft Agent.
 
  
 

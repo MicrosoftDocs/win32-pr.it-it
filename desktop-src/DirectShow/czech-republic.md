@@ -1,33 +1,33 @@
 ---
-description: Per una spiegazione delle tabelle seguenti, vedere tabelle e assegnazioni.
+description: Questo articolo contiene tabelle di frequenza per l'ottimizzazione della TV analogica internazionale per la Repubblica Ceco. Gli indici di frequenza non sono adatti per i numeri di canale.
 ms.assetid: 6bbef2a3-7104-4b5f-8381-0a89751e572b
 title: Repubblica Ceca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 732a8a9082484d0b8167d8c3f565afdafd0664a0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91e3d946fdfc42f0e418d7bba1a786d49c5d6785
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747503"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068027"
 ---
 # <a name="czech-republic"></a>Repubblica Ceca
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
-Gli indici di frequenza nelle tabelle della Repubblica Ceca non sono adatti all'uso come numeri di canale.
+Gli indici di frequenza nelle tabelle della Repubblica Ceco non sono adatti per l'uso come numeri di canale.
 
 -   [Windows 7 e versioni successive](#windows-7-and-later)
-    -   [Assegnazioni broadcast Repubblica Ceca](#czech-republic-broadcast-assignments)
-    -   [Assegnazioni di cavi per la Repubblica Ceca](#czech-republic-cable-assignments)
+    -   [Assegnazioni di trasmissioni repubblicane ceche](#czech-republic-broadcast-assignments)
+    -   [Assegnazioni dei cavi della Repubblica Ceco](#czech-republic-cable-assignments)
 -   [Assegnazioni di canale precedenti](#earlier-channel-assignments)
-    -   [Assegnazioni broadcast Repubblica Ceca](#czech-republic-broadcast-assignments)
-    -   [Assegnazioni di cavi per la Repubblica Ceca](#czech-republic-cable-assignments)
+    -   [Assegnazioni di trasmissioni repubblicane ceche](#czech-republic-broadcast-assignments)
+    -   [Assegnazioni dei cavi della Repubblica Ceco](#czech-republic-cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="windows-7-and-later"></a>Windows 7 e versioni successive
 
-### <a name="czech-republic-broadcast-assignments"></a>Assegnazioni broadcast Repubblica Ceca
+### <a name="czech-republic-broadcast-assignments"></a>Assegnazioni di trasmissioni repubblicane ceche
 
 ``` syntax
         1L,             // Lowest channel
@@ -106,7 +106,7 @@ Gli indici di frequenza nelle tabelle della Repubblica Ceca non sono adatti all'
        855250000L,      // 71 TV71
 ```
 
-### <a name="czech-republic-cable-assignments"></a>Assegnazioni di cavi per la Repubblica Ceca
+### <a name="czech-republic-cable-assignments"></a>Assegnazioni dei cavi della Repubblica Ceco
 
 ``` syntax
         1L,             // Lowest channel
@@ -254,7 +254,7 @@ Gli indici di frequenza nelle tabelle della Repubblica Ceca non sono adatti all'
 
 ## <a name="earlier-channel-assignments"></a>Assegnazioni di canale precedenti
 
-### <a name="czech-republic-broadcast-assignments"></a>Assegnazioni broadcast Repubblica Ceca
+### <a name="czech-republic-broadcast-assignments"></a>Assegnazioni di trasmissioni repubblicane ceche
 
 ``` syntax
         1L,             // Lowest channel
@@ -333,7 +333,7 @@ Gli indici di frequenza nelle tabelle della Repubblica Ceca non sono adatti all'
        855250000L,      // 69
 ```
 
-### <a name="czech-republic-cable-assignments"></a>Assegnazioni di cavi per la Repubblica Ceca
+### <a name="czech-republic-cable-assignments"></a>Assegnazioni dei cavi della Repubblica Ceco
 
 ``` syntax
         1L,             // Lowest channel
@@ -403,7 +403,7 @@ Gli indici di frequenza nelle tabelle della Repubblica Ceca non sono adatti all'
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

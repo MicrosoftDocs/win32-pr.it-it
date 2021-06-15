@@ -1,39 +1,39 @@
 ---
-title: Proprietà HelpContextID (oggetto Collection Commands)
-description: Proprietà HelpContextID
+title: Proprietà HelpContextID (oggetto raccolta Commands)
+description: Informazioni sulla proprietà HelpContextID dell'oggetto raccolta Commands. Microsoft Agent è deprecato a livello di Windows 7.
 ms.assetid: 8b8ac1c6-1a34-45f1-a0a6-2ae14ad6adef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44d530a1563080108ef2a2798589519ecca03416
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f1ed6ccf40545e15b3603ce5abe80ef94ff4272a
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104474921"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068237"
 ---
-# <a name="helpcontextid-property-commands-collection-object"></a>Proprietà HelpContextID (oggetto Collection Commands)
+# <a name="helpcontextid-property-commands-collection-object"></a>Proprietà HelpContextID (oggetto raccolta Commands)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Restituisce o imposta un numero di contesto associato per l'oggetto [**Commands**](/windows/desktop/lwef/the-commands-collection-object) . Utilizzato per fornire la Guida sensibile al contesto per l'oggetto **Commands** .
+Restituisce o imposta un numero di contesto associato per [**l'oggetto**](/windows/desktop/lwef/the-commands-collection-object) Commands. Usato per fornire la Guida sensibile al contesto per **l'oggetto** Commands.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*Agent. ***Characters ("**_CharacterID_*_"). Comandi ("_*_Name_*_")._ *  \[  =  *Numero* HelpContextID\]
+*agent.***Characters("**_CharacterID_*_"). Commands("_*_name_*_"). HelpContextID_ *  \[  =  *Number*\]
 
 
 
 | Parte     | Descrizione                                   |
 |----------|-----------------------------------------------|
-| *Number* | Integer che specifica un numero di contesto valido. |
+| *Number* | Intero che specifica un numero di contesto valido. |
 
 
 
@@ -43,18 +43,18 @@ Restituisce o imposta un numero di contesto associato per l'oggetto [**Commands*
 
 ## <a name="remarks"></a>Commenti
 
-Se è stato creato un file della Guida di Windows per l'applicazione e si è impostata la proprietà filecommand [**del carattere**](helpfile-property.md) , Agent chiama automaticamente la guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **true** e l'utente seleziona l'oggetto [**Commands**](/windows/desktop/lwef/the-commands-collection-object) . Se si imposta un numero di contesto in **HelpContextID**, Agent chiama la guida e cerca l'argomento identificato da tale numero di contesto.
+Se è stato creato un file della Guida di Windows per l'applicazione e si è impostata la proprietà [**HelpFile**](helpfile-property.md) del carattere, Agent chiama automaticamente help quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona l'oggetto [**Commands.**](/windows/desktop/lwef/the-commands-collection-object) Se si imposta un numero di contesto in **HelpContextID**, Agent chiama la Guida e cerca l'argomento identificato da tale numero di contesto.
 
-Questa proprietà si applica solo all'utilizzo del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
+Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. L'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
 
 > [!Note]  
-> La compilazione di un file della guida richiede il compilatore della Guida di Microsoft Windows.
+> La compilazione di un file della Guida richiede il compilatore della Guida di Microsoft Windows.
 
  
 
 ## <a name="see-also"></a>Vedere anche
 
-[**Proprietà filelima**](helpfile-property.md)
+[**Proprietà HelpFile**](helpfile-property.md)
 
 
  

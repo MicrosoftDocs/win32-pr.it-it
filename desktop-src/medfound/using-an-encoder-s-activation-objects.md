@@ -1,59 +1,59 @@
 ---
-description: Per la conversione di file multimediali in formato ASF, è possibile utilizzare codificatori Windows Media. Per usare questi codificatori, è necessario registrarli nel sistema.
+description: Per convertire i file multimediali in formato ASF, è possibile usare i codificatori Windows Media. Informazioni sull'uso degli oggetti di attivazione di un codificatore.
 ms.assetid: 18c26619-6047-4f7f-bb65-ca418f02e5b1
-title: Uso di oggetti attivazione codificatori
+title: Uso di oggetti di attivazione dei codificatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfd44a1b97ad0f133b7215ff4474835ddfba66bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c4111d116c8864cc0a500fa3a0c2f612d1d6345
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880578"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112067980"
 ---
-# <a name="using-an-encoders-activation-objects"></a>Uso di oggetti di attivazione del codificatore
+# <a name="using-an-encoders-activation-objects"></a>Uso degli oggetti di attivazione di un codificatore
 
-Per la conversione di file multimediali in formato ASF, è possibile utilizzare codificatori Windows Media. Per usare questi codificatori, è necessario registrarli nel sistema.
+Per convertire i file multimediali in formato ASF, è possibile usare i codificatori Windows Media. Per usare questi codificatori, è necessario registrarli con il sistema.
 
-Per informazioni sulla registrazione del codificatore, vedere Creazione di un' [istanza di un codificatore MFT](instantiating-the-encoder-mft.md).
+Per informazioni sulla registrazione del codificatore, vedere [Creazione di un'istanza di un codificatore MFT.](instantiating-the-encoder-mft.md)
 
--   [Uso di oggetti di attivazione del codificatore](#using-an-encoders-activation-objects)
+-   [Uso degli oggetti di attivazione di un codificatore](#using-an-encoders-activation-objects)
 -   [Enumerazione del codificatore in Windows 7 e versioni successive](#encoder-enumeration-in-windows-7-and-later)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="using-an-encoders-activation-objects"></a>Uso di oggetti di attivazione del codificatore
+## <a name="using-an-encoders-activation-objects"></a>Uso degli oggetti di attivazione di un codificatore
 
-In alternativa all'uso di un'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) del codificatore (descritta in [creazione di un codificatore tramite CoCreateInstance](using-an-encoder-s-imftransform--interface.md)), è possibile creare un'istanza dell'oggetto attivazione per il codificatore. Oggetti attivazione facilita la creazione del codificatore e Media Foundation fornisce le due funzioni seguenti per questo approccio:
+In alternativa all'uso [**dell'interfaccia IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) di un codificatore (descritta in Creazione di un codificatore tramite [CoCreateInstance),](using-an-encoder-s-imftransform--interface.md)è possibile creare un'istanza dell'oggetto attivazione per il codificatore. Gli oggetti attivazione facilitano la creazione del codificatore Media Foundation fornisce le due funzioni seguenti per questo approccio:
 
--   [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) per la creazione di un'istanza del codificatore audio Windows Media.
--   [**MFCreateWMVEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) per la creazione di un'istanza del codificatore video Windows Media.
+-   [**MFCreateWMAEncoderActivate per**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) creare un'istanza del codificatore audio Windows Media.
+-   [**MFCreateWMVEncoderActivate per**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) creare un'istanza del codificatore video Windows Media.
 
-Per entrambe queste funzioni è necessario creare il tipo di supporto di destinazione e impostare le proprietà di codifica prima di chiamare queste funzioni. Se l'applicazione usa [componenti ASF a livello di pipeline](pipeline-layer-asf-components.md) per codificare un file in formato ASF ed è già stato creato e configurato il sink dei [supporti ASF](asf-media-sinks.md), è possibile ottenere questo set di informazioni dal sink dei supporti ASF.
+Entrambe queste funzioni richiedono la creazione del tipo di supporto di destinazione e l'impostazione delle proprietà di codifica prima di chiamare queste funzioni. Se l'applicazione usa componenti [ASF](pipeline-layer-asf-components.md) del livello pipeline per codificare un file in formato ASF e ha già creato e configurato i sink multimediali di [ASF,](asf-media-sinks.md)è possibile ottenere questo set di informazioni dal sink multimediale di ASF.
 
-[**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) e [**MFCreateWMVEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) impostare il tipo di output del codificatore sul tipo di supporto specificato dall'applicazione.
+[**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) e [**MFCreateWMVEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) impostano il tipo di output del codificatore sul tipo di supporto specificato dall'applicazione.
 
-**Nota**  Se si usano [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) e [**MFCreateWMVEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) , è possibile attivare il codificatore chiamando [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) , ma non è possibile modificare l'input e i tipi di supporti di output del codificatore, né modificare alcuna delle proprietà di codifica.
+**Nota**  Se si usano [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) e [**MFCreateWMVEncoderActivate,**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) è possibile attivare il codificatore chiamando [**IMFActivate::ActivateObject,**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) ma non è possibile modificare i tipi di input e supporti di output del codificatore né modificare le proprietà di codifica.
 
-Per ulteriori informazioni sulla creazione di oggetti Media Foundation tramite oggetti Activation, vedere [oggetti Activation](activation-objects.md).
+Per altre informazioni sulla creazione di Media Foundation di attivazione tramite oggetti di attivazione, vedere [Oggetti di attivazione.](activation-objects.md)
 
-**Per ottenere il tipo di supporto di destinazione dal sink multimediale ASF**
+**Per ottenere il tipo di supporto di destinazione dal sink del supporto ASF**
 
-1.  Ottenere un puntatore al puntatore [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) del sink multimediale ASF chiamando **IMFMediaSink:: QueryInterface** sul sink multimediale ASF e passando **IID \_ IMFASFContentInfo** come identificatore di interfaccia.
-2.  Ottenere l'oggetto profilo ASF associato all'oggetto ContentInfo.
+1.  Ottenere un puntatore al puntatore [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) del sink multimediale asf chiamando **IMFMediaSink::QueryInterface** nel sink multimediale ASF e passando **IID \_ IMFASFContentInfo** come identificatore di interfaccia.
+2.  Ottiene l'oggetto profilo ASF associato all'oggetto ContentInfo.
 3.  Enumerare i flussi nel profilo per ottenere il tipo di supporto del flusso.
 
-**Per ottenere le proprietà di codifica dal sink multimediale ASF**
+**Per ottenere le proprietà di codifica dal sink multimediale di ASF**
 
-1.  Se sono state configurate le [proprietà di codifica](configuring-the-encoder.md) nel sink dei supporti (descritto in [impostazione delle proprietà nel sink di file](setting-properties-in-the-file-sink.md)), è possibile un riferimento all'archivio delle proprietà del sink chiamando **IMFMediaSink:: QueryInterface** sul sink multimediale ASF e passando **IID \_ IPropertyStore** come identificatore di interfaccia.
-2.  Se è presente un puntatore all'oggetto ContentInfo del sink, è possibile chiamare [**IMFASFContentInfo:: GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) per ottenere un riferimento all'archivio delle proprietà del sink multimediale.
+1.  Se sono state [](configuring-the-encoder.md) configurate le proprietà di codifica nel sink multimediale (descritto in Impostazione delle proprietà nel [sink file](setting-properties-in-the-file-sink.md)), è possibile fare riferimento all'archivio delle proprietà del sink chiamando **IMFMediaSink::QueryInterface** nel sink multimediale ASF e passando **IID \_ IPropertyStore** come identificatore di interfaccia.
+2.  Se si dispone di un puntatore all'oggetto ContentInfo del sink, è possibile chiamare [**IMFASFContentInfo::GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) per ottenere un riferimento all'archivio delle proprietà del sink multimediale.
 
-    Verificare che tutte le proprietà di codifica impostate nel sink multimediale ASF siano riflesse nell'archivio delle proprietà passato a [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) e [**MFCreateWMVEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate). Il codificatore viene configurato automaticamente in base alle impostazioni specificate dall'applicazione.
+    Assicurarsi che tutte le proprietà di codifica impostate nel sink multimediale di ASF si riflettano nell'archivio delle proprietà passato a [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) e [**MFCreateWMVEncoderActivate.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) Il codificatore viene configurato automaticamente in base alle impostazioni specificate dall'applicazione.
 
-Durante la creazione del nodo Transform nella topologia di codifica, è possibile impostare il tipo di oggetto come un puntatore [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) ricevuto in queste due chiamate. Quando la topologia viene risolta, la sessione multimediale usa l'oggetto attivazione per creare un'istanza del codificatore MFT.
+Durante la creazione del nodo di trasformazione nella topologia di codifica, è possibile impostare il tipo di oggetto come [**puntatore IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) ricevuto in queste due chiamate. Quando la topologia viene risolta, la sessione multimediale usa l'oggetto attivazione per creare un'istanza del codificatore MFT.
 
 ## <a name="encoder-enumeration-in-windows-7-and-later"></a>Enumerazione del codificatore in Windows 7 e versioni successive
 
-Per le applicazioni in esecuzione in Windows 7, oltre a [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) , è possibile enumerare il codificatore MFTS chiamando [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex). Questa funzione restituisce un puntatore all'oggetto Activation del codificatore MFT. La struttura della funzione è molto simile a quella descritta in precedenza, ad eccezione di **MFTEnumEx** restituisce una matrice di puntatori [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) per il codificatore MFTS che corrispondono ai **criteri di ricerca** .
+Per le applicazioni in esecuzione in Windows 7, oltre a [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) è possibile enumerare i MFT del codificatore chiamando [**MFTEnumEx.**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) Questa funzione restituisce un puntatore all'oggetto attivazione del codificatore MFT. La struttura della funzione è molto simile a **MFTEnum** descritta in precedenza, ad eccezione del fatto che **MFTEnumEx** restituisce una matrice di puntatori [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) per i MFT del codificatore che corrispondono ai criteri di ricerca.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -65,7 +65,7 @@ Per le applicazioni in esecuzione in Windows 7, oltre a [**MFTEnum**](/windows/d
 [Codificatori Windows Media](windows-media-encoders.md)
 </dt> <dt>
 
-[Oggetti attivazione](activation-objects.md)
+[Oggetti di attivazione](activation-objects.md)
 </dt> </dl>
 
  

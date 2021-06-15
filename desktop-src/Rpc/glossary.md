@@ -1,15 +1,15 @@
 ---
 title: Glossario (RPC)
-description: Glossario
+description: Questo glossario include termini e concetti chiave sulle chiamate di procedura remota. Seguire questi collegamenti per visualizzare le voci.
 ms.assetid: 4EC80A0B-D816-452C-93C0-D48A5220EEF6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42d891640e8359565eca11350c2f4645c45b98e4
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 0a4c82bc9f1bcd78f09d226111bfe567e998397f
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104118831"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068137"
 ---
 # <a name="glossary-rpc"></a>Glossario (RPC)
 
@@ -21,7 +21,7 @@ ms.locfileid: "104118831"
 -   [D](d-glos.md)
 -   [E](e-glos.md)
 -   [F](f-glos.md)
--   [I](i-glos.md)
+-   [Ho](i-glos.md)
 -   [L](l-glos.md)
 -   [M](m-glos.md)
 -   [N](n-glos.md)
