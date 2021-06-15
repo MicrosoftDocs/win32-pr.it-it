@@ -1,33 +1,33 @@
 ---
-description: Per una spiegazione delle tabelle seguenti, vedere tabelle e assegnazioni.
+description: Questo articolo contiene tabelle di frequenza per l'ottimizzazione della TV analogica internazionale per la Repubblica Ceco. Gli indici di frequenza non sono adatti per i numeri di canale.
 ms.assetid: 6bbef2a3-7104-4b5f-8381-0a89751e572b
 title: Repubblica Ceca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 732a8a9082484d0b8167d8c3f565afdafd0664a0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91e3d946fdfc42f0e418d7bba1a786d49c5d6785
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747503"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068027"
 ---
-# <a name="czech-republic"></a><span data-ttu-id="7c848-103">Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-103">Czech Republic</span></span>
+# <a name="czech-republic"></a><span data-ttu-id="c9871-104">Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="c9871-104">Czech Republic</span></span>
 
-<span data-ttu-id="7c848-104">Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="7c848-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="c9871-105">Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)</span><span class="sxs-lookup"><span data-stu-id="c9871-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="7c848-105">Gli indici di frequenza nelle tabelle della Repubblica Ceca non sono adatti all'uso come numeri di canale.</span><span class="sxs-lookup"><span data-stu-id="7c848-105">The frequency indexes in the Czech Republic tables are not suitable for use as channel numbers.</span></span>
+<span data-ttu-id="c9871-106">Gli indici di frequenza nelle tabelle della Repubblica Ceco non sono adatti per l'uso come numeri di canale.</span><span class="sxs-lookup"><span data-stu-id="c9871-106">The frequency indexes in the Czech Republic tables are not suitable for use as channel numbers.</span></span>
 
--   [<span data-ttu-id="7c848-106">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="7c848-106">Windows 7 and Later</span></span>](#windows-7-and-later)
-    -   [<span data-ttu-id="7c848-107">Assegnazioni broadcast Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-107">Czech Republic Broadcast Assignments</span></span>](#czech-republic-broadcast-assignments)
-    -   [<span data-ttu-id="7c848-108">Assegnazioni di cavi per la Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-108">Czech Republic Cable Assignments</span></span>](#czech-republic-cable-assignments)
--   [<span data-ttu-id="7c848-109">Assegnazioni di canale precedenti</span><span class="sxs-lookup"><span data-stu-id="7c848-109">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
-    -   [<span data-ttu-id="7c848-110">Assegnazioni broadcast Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-110">Czech Republic Broadcast Assignments</span></span>](#czech-republic-broadcast-assignments)
-    -   [<span data-ttu-id="7c848-111">Assegnazioni di cavi per la Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-111">Czech Republic Cable Assignments</span></span>](#czech-republic-cable-assignments)
--   [<span data-ttu-id="7c848-112">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7c848-112">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="c9871-107">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="c9871-107">Windows 7 and Later</span></span>](#windows-7-and-later)
+    -   [<span data-ttu-id="c9871-108">Assegnazioni di trasmissioni repubblicane ceche</span><span class="sxs-lookup"><span data-stu-id="c9871-108">Czech Republic Broadcast Assignments</span></span>](#czech-republic-broadcast-assignments)
+    -   [<span data-ttu-id="c9871-109">Assegnazioni dei cavi della Repubblica Ceco</span><span class="sxs-lookup"><span data-stu-id="c9871-109">Czech Republic Cable Assignments</span></span>](#czech-republic-cable-assignments)
+-   [<span data-ttu-id="c9871-110">Assegnazioni di canale precedenti</span><span class="sxs-lookup"><span data-stu-id="c9871-110">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
+    -   [<span data-ttu-id="c9871-111">Assegnazioni di trasmissioni repubblicane ceche</span><span class="sxs-lookup"><span data-stu-id="c9871-111">Czech Republic Broadcast Assignments</span></span>](#czech-republic-broadcast-assignments)
+    -   [<span data-ttu-id="c9871-112">Assegnazioni dei cavi della Repubblica Ceco</span><span class="sxs-lookup"><span data-stu-id="c9871-112">Czech Republic Cable Assignments</span></span>](#czech-republic-cable-assignments)
+-   [<span data-ttu-id="c9871-113">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="c9871-113">Related topics</span></span>](#related-topics)
 
-## <a name="windows-7-and-later"></a><span data-ttu-id="7c848-113">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="7c848-113">Windows 7 and Later</span></span>
+## <a name="windows-7-and-later"></a><span data-ttu-id="c9871-114">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="c9871-114">Windows 7 and Later</span></span>
 
-### <a name="czech-republic-broadcast-assignments"></a><span data-ttu-id="7c848-114">Assegnazioni broadcast Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-114">Czech Republic Broadcast Assignments</span></span>
+### <a name="czech-republic-broadcast-assignments"></a><span data-ttu-id="c9871-115">Assegnazioni di trasmissioni repubblicane ceche</span><span class="sxs-lookup"><span data-stu-id="c9871-115">Czech Republic Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -106,7 +106,7 @@ ms.locfileid: "103747503"
        855250000L,      // 71 TV71
 ```
 
-### <a name="czech-republic-cable-assignments"></a><span data-ttu-id="7c848-115">Assegnazioni di cavi per la Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-115">Czech Republic Cable Assignments</span></span>
+### <a name="czech-republic-cable-assignments"></a><span data-ttu-id="c9871-116">Assegnazioni dei cavi della Repubblica Ceco</span><span class="sxs-lookup"><span data-stu-id="c9871-116">Czech Republic Cable Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -252,9 +252,9 @@ ms.locfileid: "103747503"
        855250000L,      // 138 K69
 ```
 
-## <a name="earlier-channel-assignments"></a><span data-ttu-id="7c848-116">Assegnazioni di canale precedenti</span><span class="sxs-lookup"><span data-stu-id="7c848-116">Earlier Channel Assignments</span></span>
+## <a name="earlier-channel-assignments"></a><span data-ttu-id="c9871-117">Assegnazioni di canale precedenti</span><span class="sxs-lookup"><span data-stu-id="c9871-117">Earlier Channel Assignments</span></span>
 
-### <a name="czech-republic-broadcast-assignments"></a><span data-ttu-id="7c848-117">Assegnazioni broadcast Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-117">Czech Republic Broadcast Assignments</span></span>
+### <a name="czech-republic-broadcast-assignments"></a><span data-ttu-id="c9871-118">Assegnazioni di trasmissioni repubblicane ceche</span><span class="sxs-lookup"><span data-stu-id="c9871-118">Czech Republic Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -333,7 +333,7 @@ ms.locfileid: "103747503"
        855250000L,      // 69
 ```
 
-### <a name="czech-republic-cable-assignments"></a><span data-ttu-id="7c848-118">Assegnazioni di cavi per la Repubblica Ceca</span><span class="sxs-lookup"><span data-stu-id="7c848-118">Czech Republic Cable Assignments</span></span>
+### <a name="czech-republic-cable-assignments"></a><span data-ttu-id="c9871-119">Assegnazioni dei cavi della Repubblica Ceco</span><span class="sxs-lookup"><span data-stu-id="c9871-119">Czech Republic Cable Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -399,11 +399,11 @@ ms.locfileid: "103747503"
        863250000L,      // 57
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="7c848-119">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7c848-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c9871-120">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="c9871-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7c848-120">Ottimizzazione della TV analoga internazionale</span><span class="sxs-lookup"><span data-stu-id="7c848-120">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="c9871-121">International Analog TV Tuning</span><span class="sxs-lookup"><span data-stu-id="c9871-121">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

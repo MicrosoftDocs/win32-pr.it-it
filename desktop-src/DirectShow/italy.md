@@ -1,33 +1,33 @@
 ---
-description: Per una spiegazione delle tabelle seguenti, vedere tabelle e assegnazioni.
+description: Questo articolo contiene tabelle di frequenza per l'ottimizzazione della TV analogica internazionale per l'Italia. Gli indici di frequenza non sono adatti per i numeri di canale.
 ms.assetid: 955fb828-4290-4e60-a5db-d3f243b86d8d
 title: Italia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c92fd079a61b95b2007134b17601f6f3dfbfbc4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f1e74092318cfbc889f9173685176d48d6b72fc0
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303891"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068577"
 ---
-# <a name="italy"></a><span data-ttu-id="4cbca-103">Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-103">Italy</span></span>
+# <a name="italy"></a><span data-ttu-id="9713e-104">Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-104">Italy</span></span>
 
-<span data-ttu-id="4cbca-104">Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="4cbca-104">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
+<span data-ttu-id="9713e-105">Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).</span><span class="sxs-lookup"><span data-stu-id="9713e-105">For an explanation of the following tables, see [Tables and Assignments](tables-and-assignments.md).</span></span>
 
-<span data-ttu-id="4cbca-105">Gli indici di frequenza nelle tabelle Italia non sono adatti all'uso come numeri di canale.</span><span class="sxs-lookup"><span data-stu-id="4cbca-105">The frequency indexes in the Italy tables are not suitable for use as channel numbers.</span></span>
+<span data-ttu-id="9713e-106">Gli indici di frequenza nelle tabelle italiane non sono adatti per l'uso come numeri di canale.</span><span class="sxs-lookup"><span data-stu-id="9713e-106">The frequency indexes in the Italy tables are not suitable for use as channel numbers.</span></span>
 
--   [<span data-ttu-id="4cbca-106">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="4cbca-106">Windows 7 and Later</span></span>](#windows-7-and-later)
-    -   [<span data-ttu-id="4cbca-107">Assegnazioni broadcast Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-107">Italy Broadcast Assignments</span></span>](#italy-broadcast-assignments)
-    -   [<span data-ttu-id="4cbca-108">Assegnazioni di cavi Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-108">Italy Cable Assignments</span></span>](#italy-cable-assignments)
--   [<span data-ttu-id="4cbca-109">Assegnazioni di canale precedenti</span><span class="sxs-lookup"><span data-stu-id="4cbca-109">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
-    -   [<span data-ttu-id="4cbca-110">Assegnazioni broadcast Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-110">Italy Broadcast Assignments</span></span>](#italy-broadcast-assignments)
-    -   [<span data-ttu-id="4cbca-111">Assegnazioni di cavi Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-111">Italy Cable Assignments</span></span>](#italy-cable-assignments)
--   [<span data-ttu-id="4cbca-112">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="4cbca-112">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="9713e-107">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="9713e-107">Windows 7 and Later</span></span>](#windows-7-and-later)
+    -   [<span data-ttu-id="9713e-108">Assegnazioni di trasmissioni per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-108">Italy Broadcast Assignments</span></span>](#italy-broadcast-assignments)
+    -   [<span data-ttu-id="9713e-109">Assegnazioni di cavi per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-109">Italy Cable Assignments</span></span>](#italy-cable-assignments)
+-   [<span data-ttu-id="9713e-110">Assegnazioni di canali precedenti</span><span class="sxs-lookup"><span data-stu-id="9713e-110">Earlier Channel Assignments</span></span>](#earlier-channel-assignments)
+    -   [<span data-ttu-id="9713e-111">Assegnazioni di trasmissioni per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-111">Italy Broadcast Assignments</span></span>](#italy-broadcast-assignments)
+    -   [<span data-ttu-id="9713e-112">Assegnazioni di cavi per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-112">Italy Cable Assignments</span></span>](#italy-cable-assignments)
+-   [<span data-ttu-id="9713e-113">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="9713e-113">Related topics</span></span>](#related-topics)
 
-## <a name="windows-7-and-later"></a><span data-ttu-id="4cbca-113">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="4cbca-113">Windows 7 and Later</span></span>
+## <a name="windows-7-and-later"></a><span data-ttu-id="9713e-114">Windows 7 e versioni successive</span><span class="sxs-lookup"><span data-stu-id="9713e-114">Windows 7 and Later</span></span>
 
-### <a name="italy-broadcast-assignments"></a><span data-ttu-id="4cbca-114">Assegnazioni broadcast Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-114">Italy Broadcast Assignments</span></span>
+### <a name="italy-broadcast-assignments"></a><span data-ttu-id="9713e-115">Assegnazioni di trasmissioni per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-115">Italy Broadcast Assignments</span></span>
 
 ``` syntax
         1L,             // Lowest channel
@@ -104,7 +104,7 @@ ms.locfileid: "106303891"
        855250000L,      // 69 TV69
 ```
 
-### <a name="italy-cable-assignments"></a><span data-ttu-id="4cbca-115">Assegnazioni di cavi Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-115">Italy Cable Assignments</span></span>
+### <a name="italy-cable-assignments"></a><span data-ttu-id="9713e-116">Assegnazioni di cavi per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-116">Italy Cable Assignments</span></span>
 
 ``` syntax
          1L,            // Lowest channel
@@ -133,9 +133,9 @@ ms.locfileid: "106303891"
        305250000L,      // 20 Not used
 ```
 
-## <a name="earlier-channel-assignments"></a><span data-ttu-id="4cbca-116">Assegnazioni di canale precedenti</span><span class="sxs-lookup"><span data-stu-id="4cbca-116">Earlier Channel Assignments</span></span>
+## <a name="earlier-channel-assignments"></a><span data-ttu-id="9713e-117">Assegnazioni di canali precedenti</span><span class="sxs-lookup"><span data-stu-id="9713e-117">Earlier Channel Assignments</span></span>
 
-### <a name="italy-broadcast-assignments"></a><span data-ttu-id="4cbca-117">Assegnazioni broadcast Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-117">Italy Broadcast Assignments</span></span>
+### <a name="italy-broadcast-assignments"></a><span data-ttu-id="9713e-118">Assegnazioni di trasmissioni per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-118">Italy Broadcast Assignments</span></span>
 
 ``` syntax
          1L,             // Lowest channel
@@ -214,7 +214,7 @@ ms.locfileid: "106303891"
        855250000L,      // 69
 ```
 
-### <a name="italy-cable-assignments"></a><span data-ttu-id="4cbca-118">Assegnazioni di cavi Italia</span><span class="sxs-lookup"><span data-stu-id="4cbca-118">Italy Cable Assignments</span></span>
+### <a name="italy-cable-assignments"></a><span data-ttu-id="9713e-119">Assegnazioni di cavi per l'Italia</span><span class="sxs-lookup"><span data-stu-id="9713e-119">Italy Cable Assignments</span></span>
 
 ``` syntax
          1L,            // Lowest channel
@@ -243,11 +243,11 @@ ms.locfileid: "106303891"
        305250000L,      // 20 Not used
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="4cbca-119">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="4cbca-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="9713e-120">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="9713e-120">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="4cbca-120">Ottimizzazione della TV analoga internazionale</span><span class="sxs-lookup"><span data-stu-id="4cbca-120">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
+[<span data-ttu-id="9713e-121">Ottimizzazione tv analogica internazionale</span><span class="sxs-lookup"><span data-stu-id="9713e-121">International Analog TV Tuning</span></span>](international-analog-tv-tuning.md)
 </dt> </dl>
 
  
