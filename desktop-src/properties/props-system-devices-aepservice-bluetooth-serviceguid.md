@@ -1,17 +1,17 @@
 ---
-description: GUID del servizio Bluetooth.
+description: Informazioni sul GUID del servizio Bluetooth. Questa pagina di riferimento descrive la proprietà System.Devices.AepService.Bluetooth.ServiceGuid.
 ms.assetid: b623c597-3cf3-4c46-a1df-3a15425a41c6
-title: System. Devices. AepService. Bluetooth. ServiceGuid
+title: System.Devices.AepService.Bluetooth.ServiceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e167a626e6cdf03943a2c6c61b912fdea03fe1ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1f71d58b9661bdbbb7a531d6ce5d1364f79e19a
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050191"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262563"
 ---
-# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System. Devices. AepService. Bluetooth. ServiceGuid
+# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System.Devices.AepService.Bluetooth.ServiceGuid
 
 GUID del servizio Bluetooth.
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,17 +1,17 @@
 ---
-description: Aspetto del dispositivo Bluetooth LE.
+description: Informazioni sull'aspetto del dispositivo Bluetooth LE. Questa pagina di riferimento descrive la proprietà System.Devices.Aep.Bluetooth.Le.Appearance.Subcategory.
 ms.assetid: 7a98896f-a99f-4db8-8743-6d5b5b2abfee
-title: System. Devices. AEP. Bluetooth. le. Appearance. SubCategory
+title: System.Devices.Aep.Bluetooth.Le.Appearance.Subcategory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc378a4d4c7e776e3fae9853e123688f7ea79ad1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cb95e7295837d4b4f51f3dd54f5960d3ce446e6
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232510"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262163"
 ---
-# <a name="systemdevicesaepbluetoothleappearancesubcategory"></a>System. Devices. AEP. Bluetooth. le. Appearance. SubCategory
+# <a name="systemdevicesaepbluetoothleappearancesubcategory"></a>System.Devices.Aep.Bluetooth.Le.Appearance.Subcategory
 
 Aspetto del dispositivo Bluetooth LE.
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

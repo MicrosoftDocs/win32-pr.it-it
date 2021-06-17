@@ -1,17 +1,17 @@
 ---
 title: ProgID
-description: Associa un ProgID a un CLSID.
+description: Informazioni sulla chiave HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID del Registro di sistema, che associa un ProgID a un CLSID.
 ms.assetid: 89060943-7007-418b-a544-effbad548e87
 keywords:
-- Chiave del registro di sistema ProgID COM
+- Chiave del Registro di sistema PROGID COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: feec17db2cf16425968c64ef25759f284341bdb5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 486f7e30bb0caff72eca3ad68191aaf50ab70280
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710348"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262723"
 ---
 # <a name="progid"></a>ProgID
 
@@ -21,27 +21,27 @@ Associa un ProgID a un CLSID.
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      ProgID = value
+   {CLSID}
+      ProgID = value
 ```
 
 ## <a name="remarks"></a>Commenti
 
-Ogni classe di oggetti Insertable ha un ProgID. Per informazioni sulla creazione di un ProgID, vedere la [ <ProgID> chiave](-progid--key.md).
+Ogni classe di oggetto inseribile ha un ProgID. Per informazioni sulla creazione di un ProgID, vedere la [ <ProgID> chiave](-progid--key.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[<ProgID> chiave](-progid--key.md)
+[<ProgID> Chiave](-progid--key.md)
 </dt> <dt>
 
 [**VersionIndependentProgID**](versionindependentprogid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

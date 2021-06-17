@@ -1,33 +1,33 @@
 ---
-description: Prima di poter scrivere eventi in una sessione di traccia, è necessario registrare il provider.
+description: Informazioni sulla scrittura di eventi basati su manifesto in una sessione di traccia. Iniziare con la registrazione del provider, in modo che sia pronto per scrivere eventi in una sessione di traccia.
 ms.assetid: 76e7202e-74ce-40a3-a04b-9af5117fe20e
 title: Scrittura di eventi basati su manifesto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08a1817defe85e68860d8a628a2d3275034ce285
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: bc2887194d731ca93379b07c9929de239cef3cdb
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130079"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112261963"
 ---
 # <a name="writing-manifest-based-events"></a>Scrittura di eventi basati su manifesto
 
-Prima di poter scrivere eventi in una sessione di traccia, è necessario registrare il provider. La registrazione di un provider indica a ETW che il provider è pronto per la scrittura di eventi in una sessione di traccia. Un processo può registrare fino a 1.024 GUID del provider. Tuttavia, è necessario limitare il numero di provider registrati dal processo a uno o due.
+Prima di poter scrivere eventi in una sessione di traccia, è necessario registrare il provider. La registrazione di un provider indica a ETW che il provider è pronto per scrivere eventi in una sessione di traccia. Un processo può registrare fino a 1.024 GUID del provider. Tuttavia, è consigliabile limitare il numero di provider registrati dal processo a uno o due.
 
-**Prima di Windows Vista:** Non esiste alcun limite al numero di provider che possono essere registrati da un processo.
+**Prima di Windows Vista:** Non esiste alcun limite al numero di provider che un processo può registrare.
 
-Per registrare un provider basato su manifesto, chiamare la funzione [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) . La funzione registra il GUID del provider e identifica un callback facoltativo che ETW chiama quando un controller Abilita o Disabilita il provider.
+Per registrare un provider basato su manifesto, chiamare la [**funzione EventRegister.**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) La funzione registra il GUID del provider e identifica un callback facoltativo chiamato da ETW quando un controller abilita o disabilita il provider.
 
-Prima della chiusura del provider, chiamare la funzione [**EventUnregister**](/windows/desktop/api/Evntprov/nf-evntprov-eventunregister) per rimuovere la registrazione del provider da ETW. La funzione [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) restituisce l'handle di registrazione passato alla funzione **EventUnregister** .
+Prima che il provider venga chiuso, chiamare la [**funzione EventUnregister**](/windows/desktop/api/Evntprov/nf-evntprov-eventunregister) per rimuovere la registrazione del provider da ETW. La [**funzione EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) restituisce l'handle di registrazione passato alla **funzione EventUnregister.**
 
-I provider [basati su manifesto](about-event-tracing.md) non devono implementare una funzione [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback) per ricevere notifiche quando una sessione Abilita o Disabilita il provider. Il callback è facoltativo e viene usato a scopo informativo. non è necessario specificare o implementare il callback quando si registra il provider. Un provider basato su manifesto può semplicemente scrivere eventi e ETW decide se l'evento viene registrato in una sessione di traccia. Se un evento richiede l'esecuzione di un lavoro esteso per generare i dati dell'evento, potrebbe essere necessario chiamare prima la funzione [**EventEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventenabled) o [**EventProviderEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventproviderenabled) per verificare che l'evento venga scritto in una sessione prima di eseguire il lavoro.
+[I provider basati su](about-event-tracing.md) manifesto non devono implementare una funzione [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback) per ricevere notifiche quando una sessione abilita o disabilita il provider. Il callback è facoltativo e viene usato a scopo informativo. Non è necessario specificare o implementare il callback durante la registrazione del provider. Un provider basato su manifesto può semplicemente scrivere eventi e ETW decide se l'evento viene registrato in una sessione di traccia. Se un evento richiede l'esecuzione di numerose operazioni per generare i dati dell'evento, è possibile chiamare prima la funzione [**EventEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventenabled) o [**EventProviderEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventproviderenabled) per verificare che l'evento venga scritto in una sessione prima di eseguire il lavoro.
 
-In genere, è necessario implementare il callback se il provider richiede che il controller passi i dati del filtro definiti dal provider (vedere il parametro *FilterData* di [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback)) al provider oppure il provider usa le informazioni di contesto specificate durante la registrazione (vedere il parametro *CallbackContext* di [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister)).
+In genere, è necessario implementare il callback se il provider richiede che il controller passi i dati di filtro definiti dal provider (vedere il parametro *FilterData* di [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback)) al provider o il provider usi le informazioni di contesto specificate al momento della registrazione (vedere il parametro *CallbackContext* di [**EventRegister).**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister)
 
-I provider [basati su manifesto](about-event-tracing.md) chiamano la funzione [**EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) o [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) per scrivere eventi in una sessione. Se i dati dell'evento sono una stringa o se non si definisce un manifesto per il provider e i dati dell'evento sono una singola stringa, chiamare la funzione [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) per scrivere l'evento. Per i dati dell'evento che contengono tipi di dati numerici o complessi, chiamare la funzione [**EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) per registrare l'evento.
+[I provider basati su](about-event-tracing.md) manifesto chiamano la [**funzione EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) o [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) per scrivere eventi in una sessione. Se i dati dell'evento sono una stringa o se non si definisce un manifesto per il provider e i dati dell'evento sono una singola stringa, chiamare la funzione [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) per scrivere l'evento. Per i dati degli eventi che contengono tipi di dati numerici o complessi, chiamare la [**funzione EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) per registrare l'evento.
 
-Nell'esempio seguente viene illustrato come preparare i dati dell'evento da scrivere utilizzando la funzione [**EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) . L'esempio fa riferimento agli eventi definiti nella [pubblicazione dello schema di eventi per un provider basato su manifesto](publishing-your-event-schema-for-a-manifest-base-provider.md).
+Nell'esempio seguente viene illustrato come preparare i dati dell'evento da scrivere usando la [**funzione EventWrite.**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) L'esempio fa riferimento agli eventi definiti in [Pubblicazione dello schema di eventi per un provider basato su manifesto.](publishing-your-event-schema-for-a-manifest-base-provider.md)
 
 
 ```C++
@@ -158,7 +158,7 @@ cleanup:
 
 
 
-Quando si compila il manifesto (vedere [compilazione di un manifesto di strumentazione](../wes/compiling-an-instrumentation-manifest.md)) usato nell'esempio precedente, viene creato il file di intestazione seguente (a cui si fa riferimento nell'esempio precedente).
+Quando si compila il [](../wes/compiling-an-instrumentation-manifest.md)manifesto (vedere Compilazione di un manifesto di strumentazione) utilizzato nell'esempio precedente, viene creato il file di intestazione seguente (a cui si fa riferimento nell'esempio precedente).
 
 
 ```C++
