@@ -1,47 +1,47 @@
 ---
 title: ProgID
-description: Associa un ProgID a un CLSID.
+description: Informazioni sulla chiave HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID del Registro di sistema, che associa un ProgID a un CLSID.
 ms.assetid: 89060943-7007-418b-a544-effbad548e87
 keywords:
-- Chiave del registro di sistema ProgID COM
+- Chiave del Registro di sistema PROGID COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: feec17db2cf16425968c64ef25759f284341bdb5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 486f7e30bb0caff72eca3ad68191aaf50ab70280
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710348"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262723"
 ---
-# <a name="progid"></a><span data-ttu-id="ecce4-104">ProgID</span><span class="sxs-lookup"><span data-stu-id="ecce4-104">ProgID</span></span>
+# <a name="progid"></a><span data-ttu-id="9b257-104">ProgID</span><span class="sxs-lookup"><span data-stu-id="9b257-104">ProgID</span></span>
 
-<span data-ttu-id="ecce4-105">Associa un ProgID a un CLSID.</span><span class="sxs-lookup"><span data-stu-id="ecce4-105">Associates a ProgID with a CLSID.</span></span>
+<span data-ttu-id="9b257-105">Associa un ProgID a un CLSID.</span><span class="sxs-lookup"><span data-stu-id="9b257-105">Associates a ProgID with a CLSID.</span></span>
 
-## <a name="registry-entry"></a><span data-ttu-id="ecce4-106">Voce del Registro di sistema</span><span class="sxs-lookup"><span data-stu-id="ecce4-106">Registry Entry</span></span>
+## <a name="registry-entry"></a><span data-ttu-id="9b257-106">Voce del Registro di sistema</span><span class="sxs-lookup"><span data-stu-id="9b257-106">Registry Entry</span></span>
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      ProgID = value
+   {CLSID}
+      ProgID = value
 ```
 
-## <a name="remarks"></a><span data-ttu-id="ecce4-107">Commenti</span><span class="sxs-lookup"><span data-stu-id="ecce4-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9b257-107">Commenti</span><span class="sxs-lookup"><span data-stu-id="9b257-107">Remarks</span></span>
 
-<span data-ttu-id="ecce4-108">Ogni classe di oggetti Insertable ha un ProgID.</span><span class="sxs-lookup"><span data-stu-id="ecce4-108">Every insertable object class has a ProgID.</span></span> <span data-ttu-id="ecce4-109">Per informazioni sulla creazione di un ProgID, vedere la [ <ProgID> chiave](-progid--key.md).</span><span class="sxs-lookup"><span data-stu-id="ecce4-109">For information on creating a ProgID, see the [<ProgID> key](-progid--key.md).</span></span>
+<span data-ttu-id="9b257-108">Ogni classe di oggetto inseribile ha un ProgID.</span><span class="sxs-lookup"><span data-stu-id="9b257-108">Every insertable object class has a ProgID.</span></span> <span data-ttu-id="9b257-109">Per informazioni sulla creazione di un ProgID, vedere la [ <ProgID> chiave](-progid--key.md).</span><span class="sxs-lookup"><span data-stu-id="9b257-109">For information on creating a ProgID, see the [<ProgID> key](-progid--key.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="ecce4-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="ecce4-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="9b257-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="9b257-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="ecce4-111"><ProgID> chiave</span><span class="sxs-lookup"><span data-stu-id="ecce4-111"><ProgID> key</span></span>](-progid--key.md)
+[<span data-ttu-id="9b257-111"><ProgID> Chiave</span><span class="sxs-lookup"><span data-stu-id="9b257-111"><ProgID> key</span></span>](-progid--key.md)
 </dt> <dt>
 
-[<span data-ttu-id="ecce4-112">**VersionIndependentProgID**</span><span class="sxs-lookup"><span data-stu-id="ecce4-112">**VersionIndependentProgID**</span></span>](versionindependentprogid.md)
+[<span data-ttu-id="9b257-112">**VersionIndependentProgID**</span><span class="sxs-lookup"><span data-stu-id="9b257-112">**VersionIndependentProgID**</span></span>](versionindependentprogid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
