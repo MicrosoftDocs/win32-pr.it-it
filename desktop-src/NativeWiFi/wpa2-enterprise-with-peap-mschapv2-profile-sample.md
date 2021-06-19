@@ -1,23 +1,23 @@
 ---
-description: USA Protected Extensible Authentication Protocol con Microsoft Challenge Handshake Authentication Protocol versione 2 (PEAP-MSCHAPv2) con nome utente/password per l'autenticazione alla rete.
+description: Usa Protected Extensible Authentication Protocol con Microsoft Challenge Handshake Authentication Protocol versione 2, con WPA2-Enterprise.
 ms.assetid: fcbc74a6-1990-45a0-af2e-1c343a84497a
-title: Esempio di WPA2-Enterprise con PEAP-MSCHAPv2 profile
+title: WPA2-Enterprise esempio di PEAP-MSCHAPv2 profilo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43363be10a6d7d77d445e188b1c3084f71ce3b10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd05ac34992244eedae08f9c76becd5b2c95564e
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317107"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394806"
 ---
-# <a name="wpa2-enterprise-with-peap-mschapv2-profile-sample"></a><span data-ttu-id="7af3c-103">Esempio di WPA2-Enterprise con PEAP-MSCHAPv2 profile</span><span class="sxs-lookup"><span data-stu-id="7af3c-103">WPA2-Enterprise with PEAP-MSCHAPv2 Profile Sample</span></span>
+# <a name="wpa2-enterprise-with-peap-mschapv2-profile-sample"></a><span data-ttu-id="519c2-103">WPA2-Enterprise esempio di PEAP-MSCHAPv2 profilo</span><span class="sxs-lookup"><span data-stu-id="519c2-103">WPA2-Enterprise with PEAP-MSCHAPv2 Profile Sample</span></span>
 
-<span data-ttu-id="7af3c-104">Questo profilo di esempio USA Protected Extensible Authentication Protocol con Microsoft Challenge Handshake Authentication Protocol versione 2 (PEAP-MSCHAPv2) con la **/** _password_ \* username \* per l'autenticazione alla rete.</span><span class="sxs-lookup"><span data-stu-id="7af3c-104">This sample profile uses Protected Extensible Authentication Protocol with Microsoft Challenge Handshake Authentication Protocol version 2 (PEAP-MSCHAPv2) with \*UserName\***/**_Password_ to authenticate to the network.</span></span> <span data-ttu-id="7af3c-105">All'utente viene richiesto di immettere le credenziali.</span><span class="sxs-lookup"><span data-stu-id="7af3c-105">The user is prompted to enter credentials.</span></span>
+<span data-ttu-id="519c2-104">Questo profilo di esempio usa Protected Extensible Authentication Protocol con Microsoft Challenge Handshake Authentication Protocol versione 2 (PEAP-MSCHAPv2) con *UserName* Password per l'autenticazione **/**  alla rete.</span><span class="sxs-lookup"><span data-stu-id="519c2-104">This sample profile uses Protected Extensible Authentication Protocol with Microsoft Challenge Handshake Authentication Protocol version 2 (PEAP-MSCHAPv2) with \*UserName\***/**_Password_ to authenticate to the network.</span></span> <span data-ttu-id="519c2-105">All'utente viene richiesto di immettere le credenziali.</span><span class="sxs-lookup"><span data-stu-id="519c2-105">The user is prompted to enter credentials.</span></span>
 
-<span data-ttu-id="7af3c-106">Questo esempio è configurato per l'uso di Wi-Fi sicurezza protetta di Access 2 in esecuzione in modalità Enterprise (WPA2-Enterprise).</span><span class="sxs-lookup"><span data-stu-id="7af3c-106">This sample is configured to use Wi-Fi Protected Access 2 security running in Enterprise mode (WPA2-Enterprise).</span></span> <span data-ttu-id="7af3c-107">Il tipo di sicurezza WPA2-Enterprise USA 802.1 X per lo scambio di autenticazione con il back-end.</span><span class="sxs-lookup"><span data-stu-id="7af3c-107">The WPA2-Enterprise security type uses 802.1X for the authentication exchange with the backend.</span></span> <span data-ttu-id="7af3c-108">Il tipo di crittografia Advanced Encryption Standard (AES) viene utilizzato per la crittografia.</span><span class="sxs-lookup"><span data-stu-id="7af3c-108">The Advanced Encryption Standard (AES) cipher type is used for encryption.</span></span>
+<span data-ttu-id="519c2-106">Questo esempio è configurato per l'Wi-Fi protezione di Accesso protetto 2 in esecuzione in modalità Enterprise (WPA2-Enterprise).</span><span class="sxs-lookup"><span data-stu-id="519c2-106">This sample is configured to use Wi-Fi Protected Access 2 security running in Enterprise mode (WPA2-Enterprise).</span></span> <span data-ttu-id="519c2-107">Il WPA2-Enterprise di sicurezza usa 802.1X per lo scambio di autenticazione con il back-end.</span><span class="sxs-lookup"><span data-stu-id="519c2-107">The WPA2-Enterprise security type uses 802.1X for the authentication exchange with the backend.</span></span> <span data-ttu-id="519c2-108">Il Advanced Encryption Standard (AES) viene usato per la crittografia.</span><span class="sxs-lookup"><span data-stu-id="519c2-108">The Advanced Encryption Standard (AES) cipher type is used for encryption.</span></span>
 
-<span data-ttu-id="7af3c-109">**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato.</span><span class="sxs-lookup"><span data-stu-id="7af3c-109">**Windows XP with SP3 and Wireless LAN API for Windows XP with SP2:** The [**name**](wlan-profileschema-name-wlanprofile-element.md) child of the [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) element is ignored.</span></span> <span data-ttu-id="7af3c-110">Il nome del profilo, come archiviato nell'archivio profili, deriva dal [**nome**](wlan-profileschema-name-ssid-element.md) figlio dell'elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) .</span><span class="sxs-lookup"><span data-stu-id="7af3c-110">The name of the profile, as stored in the profile store, is derived from the [**name**](wlan-profileschema-name-ssid-element.md) child of the [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) element.</span></span>
+<span data-ttu-id="519c2-109">**Windows XP con SP3 e API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato.</span><span class="sxs-lookup"><span data-stu-id="519c2-109">**Windows XP with SP3 and Wireless LAN API for Windows XP with SP2:** The [**name**](wlan-profileschema-name-wlanprofile-element.md) child of the [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) element is ignored.</span></span> <span data-ttu-id="519c2-110">Il nome del profilo, archiviato nell'archivio profili, deriva dal nome [**figlio**](wlan-profileschema-name-ssid-element.md) [**dell'elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)</span><span class="sxs-lookup"><span data-stu-id="519c2-110">The name of the profile, as stored in the profile store, is derived from the [**name**](wlan-profileschema-name-ssid-element.md) child of the [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) element.</span></span>
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>
@@ -78,11 +78,11 @@ ms.locfileid: "106317107"
 </WLANProfile>
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="7af3c-111">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7af3c-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="519c2-111">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="519c2-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7af3c-112">Esempi di profili wireless</span><span class="sxs-lookup"><span data-stu-id="7af3c-112">Wireless Profile Samples</span></span>](wireless-profile-samples.md)
+[<span data-ttu-id="519c2-112">Esempi di profili wireless</span><span class="sxs-lookup"><span data-stu-id="519c2-112">Wireless Profile Samples</span></span>](wireless-profile-samples.md)
 </dt> </dl>
 
  
