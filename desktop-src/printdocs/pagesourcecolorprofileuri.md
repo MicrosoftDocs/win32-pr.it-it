@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Ottenere informazioni sul parametro PageSourceColorProfileURI. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 25c3c70f-20e3-4e44-9c59-bb66b4bd14d9
 title: PageSourceColorProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f515fca037e58c0794f20bc1dd1afee8a779fb49
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d7b6acd064a6b0652720a6c0d783f10a7467fa16
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996898"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395626"
 ---
 # <a name="pagesourcecolorprofileuri"></a>PageSourceColorProfileURI
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica l'origine per il profilo colori.
 
@@ -74,8 +74,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
-| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
+| UnitType<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

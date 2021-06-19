@@ -1,27 +1,27 @@
 ---
-title: Informazioni di riferimento su Windows Defender
-description: Windows Defender consente di proteggere i computer da popup, rallentamento delle prestazioni e minacce alla sicurezza causati da spyware e altro software indesiderato.
+title: Windows Defender informazioni di riferimento
+description: Questi articoli di riferimento descrivono Windows Defender, che consente di proteggere i computer da popup, prestazioni lente e minacce per la sicurezza.
 ms.assetid: ed86e1bc-0625-4367-a1f7-fdb23412828f
 keywords:
 - Windows Defender
-- API di Windows Defender
+- WINDOWS DEFENDER API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 756dec2f9805382a64e6173e7776135ff3a31573
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ef04a4c7a5306473d1f505e0457fb27ba62b6ef1
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104399965"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396426"
 ---
-# <a name="windows-defender-reference"></a>Informazioni di riferimento su Windows Defender
+# <a name="windows-defender-reference"></a>Windows Defender informazioni di riferimento
 
-Windows Defender consente di proteggere i computer da popup, rallentamento delle prestazioni e minacce alla sicurezza causati da spyware e altro software indesiderato. Le app possono eseguire una query per ottenere informazioni quali integrità del computer, informazioni malware specifiche e Cronologia malware per il client e possono richiamare analisi su richiesta.
+Windows Defender consente di proteggere i computer da popup, prestazioni lente e minacce alla sicurezza causate da spyware e altro software indesiderato. Le app possono eseguire query per ottenere informazioni come l'integrità del computer, informazioni specifiche sul malware e la cronologia malware per il client e possono richiamare analisi su richiesta.
 
 
--   [Enumerazioni di Windows Defender](windows-defender-enumerations.md)
--   [Funzioni di Windows Defender](windows-defender-functions.md)
--   [Strutture di Windows Defender](windows-defender-structures.md)
+-   [enumerazioni Windows Defender](windows-defender-enumerations.md)
+-   [Windows Defender funzioni](windows-defender-functions.md)
+-   [Windows Defender strutture](windows-defender-structures.md)
 
  
 

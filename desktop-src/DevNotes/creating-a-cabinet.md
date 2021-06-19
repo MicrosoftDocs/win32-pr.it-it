@@ -1,22 +1,22 @@
 ---
-description: Nella sintassi seguente viene illustrata la creazione di un file CAB.
+description: Visualizzare un esempio di codice che illustra come creare un file CAB usando l'API Cabinet. Per compilare, è necessario definire le funzioni di callback.
 ms.assetid: a16c332d-5afc-46ad-992b-324ed5e70683
 title: Creazione di un file CAB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b54df5e5373de82e7de6cc194d3e16e6917bb62
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7d1d746a61f09237d08ade349ea33b4ec8146913
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225565"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396606"
 ---
 # <a name="creating-a-cabinet"></a>Creazione di un file CAB
 
-Nella sintassi seguente viene illustrata la creazione di un file CAB.
+La sintassi seguente illustra la creazione di un file CAB.
 
 > [!Note]  
-> Questo codice è solo a scopo illustrativo. Per la compilazione, è necessario definire le funzioni di callback.
+> Questo codice è solo a scopo illustrativo. Per compilare, è necessario definire le funzioni di callback.
 
  
 
@@ -249,13 +249,13 @@ LPCSTR FCIErrorToString(FCIERROR err)
 
 <dl> <dt>
 
-[**FCICreate**](/windows/desktop/api/Fci/nf-fci-fcicreate)
+[**FCICrea**](/windows/desktop/api/Fci/nf-fci-fcicreate)
 </dt> <dt>
 
 [**FCIAddFile**](/windows/desktop/api/Fci/nf-fci-fciaddfile)
 </dt> <dt>
 
-[**FCIFlushFolder**](/windows/desktop/api/Fci/nf-fci-fciflushfolder)
+[**Cartella FCIFlush**](/windows/desktop/api/Fci/nf-fci-fciflushfolder)
 </dt> <dt>
 
 [**FCIFlushCabinet**](/windows/desktop/api/Fci/nf-fci-fciflushcabinet)
@@ -264,7 +264,7 @@ LPCSTR FCIErrorToString(FCIERROR err)
 [**FCIDestroy**](/windows/desktop/api/Fci/nf-fci-fcidestroy)
 </dt> <dt>
 
-[Macro API cabinet](cabinet-api-macros.md)
+[Macro dell'API Cab](cabinet-api-macros.md)
 </dt> </dl>
 
  

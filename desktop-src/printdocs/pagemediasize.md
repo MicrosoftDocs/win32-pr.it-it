@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento PageMediaSize configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 6f99f54b-c401-42ea-8715-95a2aad73042
 title: Pagemediasize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdbaef403027190676b57455aa460198c2868424
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 907f6a76932e17b6d60a67a65c3cfa657282b60c
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995520"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395846"
 ---
 # <a name="pagemediasize"></a>Pagemediasize
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le dimensioni dei supporti fisici usati per l'output.
+Descrive le dimensioni fisiche dei supporti utilizzate per l'output.
 
 Il diagramma seguente illustra l'utilizzo della variabile PageMediaSize (come esempio viene usata l'opzione ISOA4).
 
@@ -27,18 +27,11 @@ Il diagramma seguente illustra l'utilizzo della variabile PageMediaSize (come es
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                            |                    |
-|----------------------------|--------------------|
-| Nome | Valore |
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Nome                 | Valore        |
+|----------------------|--------------|
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
-
-
-
- 
 
 ## <a name="structural-content"></a>Contenuto strutturale
 
@@ -72,7 +65,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                                                   |
 |-------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>           | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Specifica il nome del supporto. La denominazione deve usare la convenzione seguente: " \_ OptionNameStandard \_ "" \_ OptionNameCommonName \_ "" \_ OptionNameDescriptor \_ ".<br/> |
+| \_OptionName\_<br/>           | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Specifica il nome del supporto. La denominazione deve usare la convenzione seguente: " \_ OptionNameStandard \_ "" \_ OptionNameCommonName \_ "" \_ OptionNameDescriptor \_ ".<br/> |
 | \_IdentityOptionValue\_<br/>  | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                              |
 | \_OptionNameStandard\_<br/>   | string<br/>  | caratteri<br/> | 'ISO', 'JIS', 'Japan', 'NorthAmerica', 'OtherMetric', 'PRC', none.<br/>                                                                                                         | Indica se le dimensioni del supporto sono definite da uno standard specifico.<br/>                                                                                               |
 | \_OptionNameCommonName\_<br/> | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome comune per le dimensioni del supporto.<br/>                                                                                                                                |

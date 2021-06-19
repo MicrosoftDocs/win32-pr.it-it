@@ -1,40 +1,40 @@
 ---
 title: Gestire utenti
-description: Gli account utente vengono creati e archiviati come oggetti in Active Directory Domain Services.
+description: Informazioni sulla gestione degli utenti. Gli account utente vengono creati e archiviati come oggetti in Active Directory Domain Services.
 ms.assetid: 57c83e4d-2d9f-4f22-97e2-27e2d277f014
 ms.tgt_platform: multiple
 keywords:
-- Active Directory, utilizzo, gestione degli utenti
+- Active Directory, uso, gestione degli utenti
 - utenti AD
-- utenti AD, gestione utenti
+- utenti AD, gestione degli utenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1105132c6836e108a416331b2f4a6ad666c03d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e8154dc9d062b86d10b0df6418b5b4cbb79b44d2
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855413"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395316"
 ---
 # <a name="managing-users"></a>Gestire utenti
 
-Gli account utente vengono creati e archiviati come oggetti in Active Directory Domain Services. Questi oggetti utente rappresentano utenti e computer. Questa sezione definisce gli utenti e il modo in cui vengono usati e spiega come gestire gli utenti a livello di codice in Active Directory Domain Services. In questa sezione vengono illustrati gli argomenti seguenti:
+Gli account utente vengono creati e archiviati come oggetti in Active Directory Domain Services. Questi oggetti utente rappresentano utenti e computer. Questa sezione definisce cosa sono gli utenti e come vengono usati e spiega come gestire gli utenti a livello di codice in Active Directory Domain Services. In questa sezione vengono illustrati gli argomenti seguenti:
 
 -   [Utenti in Active Directory Domain Services](users-in-active-directory-domain-services.md)
 -   [Entità di sicurezza](security-principals.md)
 -   [Che cos'è un utente?](what-is-a-user.md)
--   [Codice di esempio per l'associazione al contenitore degli utenti](example-code-for-binding-to-the-users-container.md)
+-   [Codice di esempio per l'associazione al contenitore Users](example-code-for-binding-to-the-users-container.md)
 -   [Attributi dell'oggetto utente](user-object-attributes.md)
 -   [Creazione di un utente](creating-a-user.md)
--   Eliminazione di un utente. Un utente è stato eliminato allo stesso modo di qualsiasi altro oggetto in Active Directory Domain Services. Per ulteriori informazioni sull'eliminazione di oggetti, vedere [creazione ed eliminazione di oggetti in Active Directory Domain Services](creating-and-deleting-objects-in-active-directory-domain-services.md).
+-   Eliminazione di un utente. Un utente viene eliminato nello stesso stato di qualsiasi altro oggetto in Active Directory Domain Services. Per altre informazioni sull'eliminazione di oggetti, vedere [Creazione ed eliminazione di oggetti in Active Directory Domain Services](creating-and-deleting-objects-in-active-directory-domain-services.md).
 -   [Enumerazione degli utenti](enumerating-users.md)
 -   [Esecuzione di query per gli utenti](querying-for-users.md)
--   Trasferimento degli utenti. Un utente è stato spostato allo stesso modo di qualsiasi altro oggetto Active Directory. Per ulteriori informazioni sullo stato di Active Directory degli oggetti, vedere la pagina relativa al [trasferimento di oggetti](moving-objects.md).
--   [Gestione degli utenti su server membri e Windows 2000 Professional](managing-users-on-member-servers-and-windows-2000-professional.md)
+-   Spostamento degli utenti. Un utente viene spostato nello stesso stato di qualsiasi altro oggetto di Active Directory. Per altre informazioni sullo spostamento di oggetti Active Directory, vedere [Spostamento di oggetti](moving-objects.md).
+-   [Gestione degli utenti nei server membri e in Windows 2000 Professional](managing-users-on-member-servers-and-windows-2000-professional.md)
 
- 
+ 
 
- 
+ 
 
 
 

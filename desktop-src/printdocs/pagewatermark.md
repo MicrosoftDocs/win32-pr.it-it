@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento configurabile dall'utente PageWatermark. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: d1c36c47-107c-4012-a839-1018c2652209
 title: PageWatermark
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e16a475255e42bda8e60b3bfb2ab41ea3998738
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 4b93eadfb3aeaa2c0be1de2cf5775bd1b5c88666
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994458"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396086"
 ---
 # <a name="pagewatermark"></a>PageWatermark
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Descrive l'impostazione del limite dell'output e le caratteristiche del limite. Le filigrane si applicano alla pagina logica, non alla pagina fisica. Ad esempio, se DocumentDuplex è abilitato, verrà visualizzata una filigrana in ogni pagina NUp in ogni foglio. Se DocumentDuplex, PagesPerSheet=2, ogni foglio avrà 2 filigrane.
 
@@ -27,7 +27,7 @@ Descrive l'impostazione del limite dell'output e le caratteristiche del limite. 
 
 | Nome | Valore |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                              |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                              |
 | Prefisso di ambito <br/> | Pagina<br/>                                                                                                                                 |
 | Note <br/>          | Le coordinate sono relative a PageImageableSize, dove l'origine della filigrana è relativa all'origine di PageImageableSize.<br/> |
 
@@ -97,7 +97,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 

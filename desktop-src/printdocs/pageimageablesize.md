@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento pageImageableSize configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 6b81814f-2d9e-4862-8633-6ba016c11dac
 title: PageImageableSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1eef9012a7fda3eed6afd16add1d483c35c1111
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: ee4e44bc9afe33b87d32b43c93eafc3b6d4ba4b0
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996108"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395306"
 ---
 # <a name="pageimageablesize"></a>PageImageableSize
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'area di disegno con immagine per il layout e il rendering. Verrà segnalato in base a PageMediaSize e PageOrientation.
+Descrive l'area di disegno con immagini per il layout e il rendering. Verrà segnalato in base a PageMediaSize e PageOrientation.
 
 I diagrammi seguenti illustrano l'utilizzo delle variabili PageImageableSize in base a PageOrientation.
 
@@ -27,18 +27,11 @@ I diagrammi seguenti illustrano l'utilizzo delle variabili PageImageableSize in 
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|                            |                     |
-|----------------------------|---------------------|
-| Nome | Valore |
+| Nome                 | Valore         |
+|----------------------|---------------|
 | Tipo di elemento<br/>    | Proprietà<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>     |
 | Note <br/>          | nessuno<br/>     |
-
-
-
- 
 
 ## <a name="structural-content"></a>Contenuto strutturale
 
@@ -78,7 +71,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                    | Tipo di dati          | Unità               | Valori supportati                       | Riepilogo                                                                                                                    |
 |-----------------------------------------|--------------------|--------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| \_ImageableSizeWidthValue\_<br/>  | numero intero<br/> | Micron<br/> | Maggiore di 0.<br/>             | Specifica la dimensione orizzontale del supporto dell'applicazione rispetto a PageOrientation.<br/>               |
+| \_ImageableSizeWidthValue\_<br/>  | numero intero<br/> | Micron<br/> | Maggiore di 0.<br/>             | Specifica la dimensione orizzontale delle dimensioni dei supporti dell'applicazione rispetto a PageOrientation.<br/>               |
 | \_ImageableSizeHeightValue\_<br/> | numero intero<br/> | Micron<br/> | Maggiore di 0.<br/>             | Specifica la dimensione verticale delle dimensioni dei supporti dell'applicazione rispetto a PageOrientation.<br/>                 |
 | \_OriginWidthValue\_<br/>         | numero intero<br/> | Micron<br/> | Maggiore o uguale a 0.<br/> | Specifica l'origine orizzontale dell'area immagine rispetto alle dimensioni del supporto dell'applicazione.<br/>                   |
 | \_OriginHeightValue\_<br/>        | numero intero<br/> | Micron<br/> | Maggiore o uguale a 0.<br/> | Specifica l'origine verticale dell'area immagine rispetto alle dimensioni del supporto dell'applicazione.<br/>                     |

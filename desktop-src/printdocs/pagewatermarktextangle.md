@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere altre informazioni sul parametro PageWatermarkTextAngle. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 157bb79c-68d2-4121-8a85-cd2f48095541
 title: PageWatermarkTextAngle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86c13d759232670c6957a91de12f9c35cf48aeb4
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1dce37512314e1eaac0cbbe3b5b4b817cb2ee455
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995548"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395976"
 ---
 # <a name="pagewatermarktextangle"></a>PageWatermarkTextAngle
 
@@ -77,7 +77,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | integer<br/> | 0<br/>               |
 | MaxValue<br/>     | numero intero<br/> | 359<br/>             |
 | Minvalue<br/>     | integer<br/> | 0<br/>               |
-| Più elementi<br/>     | integer<br/> | 1<br/>               |
+| Multipli<br/>     | integer<br/> | 1<br/>               |
 | Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | gradi<br/>         |
 

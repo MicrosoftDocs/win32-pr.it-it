@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Leggere le informazioni di riferimento sul parametro PageCopies. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: a15fe075-6696-4c70-b658-ae62d542bb4e
 title: PageCopies
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83b1fc822d27d104364c2414ca89cf1fdf30c7d3
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5002850fa1df5a86b0022a941e3b2a1f7e414a44
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997668"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396686"
 ---
 # <a name="pagecopies"></a>PageCopies
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il numero di copie di una pagina.
 
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>         |
 | Minvalue<br/>     | integer<br/> | 1<br/>                 |
-| Obbligatorio<br/>    | string<br/>  | psk:Unconditional<br/> |
-| Più elementi<br/>     | integer<br/> | 1<br/>                 |
-| UnitType<br/>     | string<br/>  | Copie<br/>            |
+| Obbligatorio<br/>    | string<br/>  | psk:unconditional<br/> |
+| Multipli<br/>     | integer<br/> | 1<br/>                 |
+| Tipo di unità<br/>     | string<br/>  | Copie<br/>            |
 
 
 

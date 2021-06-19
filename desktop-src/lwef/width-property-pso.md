@@ -1,39 +1,39 @@
 ---
 title: Proprietà Width (oggetto PropertySheet)
-description: Width (proprietà)
+description: Informazioni sulla proprietà Width dell'oggetto PropertySheet, che restituisce un valore intero che specifica la larghezza corrente, in pixel, della finestra della finestra delle proprietà di Microsoft Agent.
 ms.assetid: fe5d4c44-3eea-4b13-913e-09f4c97f3aaa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 552bf4b0299cbcc5d1a4f359bc5dc3a26f09a02e
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 62f0bfa7d2f77a358f9ac43d46bcc03abab80223
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104118851"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395156"
 ---
 # <a name="width-property-propertysheet-object"></a>Proprietà Width (oggetto PropertySheet)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Restituisce un valore intero che specifica la larghezza corrente, in pixel, della finestra delle proprietà di Microsoft Agent.
+Restituisce un valore intero che specifica la larghezza corrente, in pixel, della finestra della finestra delle proprietà di Microsoft Agent.
 
 </dd> <dt>
 
 <span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintassi** 
 </dt> <dd>
 
-*agente * * *. PropertySheet. Width**
+*agent***. PropertySheet.Width**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il server Visualizza la finestra in base alla posizione impostata dall'utente.
+Il server visualizza la finestra in base alla posizione impostata dall'utente.
 
  
 

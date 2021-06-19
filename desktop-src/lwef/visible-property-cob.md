@@ -1,19 +1,19 @@
 ---
-title: Proprietà Visible (oggetto characters)
-description: Visible (proprietà)
+title: Proprietà Visible (oggetto Characters)
+description: Informazioni sulla proprietà Visible dell'oggetto Characters, che restituisce un valore booleano che indica se il carattere è visibile.
 ms.assetid: c06d623d-8997-413a-b4ab-24275eccfa10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a994fd59e5eaaebcaabbd9257b860fa4e27a09b4
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 7358cd87a7fb3232b22cef33cbee5f2609708875
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "106300727"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396306"
 ---
-# <a name="visible-property-characters-object"></a>Proprietà Visible (oggetto characters)
+# <a name="visible-property-characters-object"></a>Proprietà Visible (oggetto Characters)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,13 +27,13 @@ Restituisce un valore booleano che indica se il carattere è visibile.
 <span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintassi** 
 </dt> <dd>
 
-*agente ***. Caratteri (**"* CharacterID *" * *). Visibile**
+*agent***. Characters(**"* CharacterID *"**). Visibile**
 
 
 
 | Valore | Descrizione                            |
 |-------|----------------------------------------|
-| True  | Viene visualizzato il carattere.            |
+| True  | Viene visualizzato il carattere .            |
 | Falso | Il carattere è nascosto (non visibile). |
 
 
@@ -44,9 +44,9 @@ Restituisce un valore booleano che indica se il carattere è visibile.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà indica se viene visualizzato il frame del carattere. Non significa necessariamente che sia presente un'immagine sullo schermo. Questa proprietà, ad esempio, restituisce **true** anche quando il carattere è posizionato all'esterno dell'area di visualizzazione visibile o quando il frame di caratteri corrente non contiene immagini. L'impostazione di questa proprietà si applica a tutti i client del carattere.
+Questa proprietà indica se il frame del carattere viene visualizzato. Non significa necessariamente che sia presente un'immagine sullo schermo. Ad esempio, questa proprietà restituisce **True** anche quando il carattere è posizionato fuori dall'area di visualizzazione visibile o quando la cornice del carattere corrente non contiene immagini. L'impostazione di questa proprietà si applica a tutti i client del carattere.
 
-Questa proprietà è di sola lettura. Per rendere un carattere visibile o nascosto, utilizzare i metodi [**Mostra**](show-method.md) o [**Nascondi**](https://www.bing.com/search?q=**Hide**) .
+Questa proprietà è di sola lettura. Per rendere visibile o nascosto un carattere, usare i [**metodi Mostra**](show-method.md) [**o Nascondi.**](https://www.bing.com/search?q=**Hide**)
 
  
 

@@ -1,31 +1,31 @@
 ---
-description: Per utilizzare dati specifici dell'evento, il consumer deve essere in grado di individuare il formato dei dati dell'evento.
+description: Recuperare i dati degli eventi con Managed Object Format (MOF) durante l'utilizzo degli eventi. Per utilizzare dati specifici dell'evento, il consumer deve conoscere il formato dei dati dell'evento.
 ms.assetid: 13512236-c416-43ba-bf36-b05c5c08d6c9
-title: Recupero di dati di evento tramite MOF
+title: Recupero dei dati degli eventi tramite MOF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 455ddc08aae189b2ceab05aab365d9b9fb1a15d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8752d7a4dc71ddb7b5a5dbc39e93c5fe16bb652
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977610"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395016"
 ---
-# <a name="retrieving-event-data-using-mof"></a>Recupero di dati di evento tramite MOF
+# <a name="retrieving-event-data-using-mof"></a>Recupero dei dati degli eventi tramite MOF
 
-Per utilizzare dati specifici dell'evento, il consumer deve essere in grado di individuare il formato dei dati dell'evento. Se il provider utilizza MOF per pubblicare il formato dei dati dell'evento, è possibile utilizzare la classe MOF per analizzare i dati dell'evento. Tutti gli eventi del kernel utilizzano MOF per pubblicare il formato dei dati dell'evento. Per informazioni sulla pubblicazione di eventi, vedere [pubblicazione dello schema di eventi](publishing-your-event-schema.md).
+Per utilizzare dati specifici dell'evento, il consumer deve conoscere il formato dei dati dell'evento. Se il provider ha usato MOF per pubblicare il formato dei dati dell'evento, è possibile usare la classe MOF per analizzare i dati dell'evento. Tutti gli eventi del kernel usano MOF per pubblicare il formato dei dati degli eventi. Per informazioni sulla pubblicazione di eventi, vedere [Pubblicazione dello schema di eventi](publishing-your-event-schema.md).
 
-L'analisi dei dati dell'evento richiede l'uso dell'API WMI (Windows Management Infrastructure). Lo spazio dei nomi ETW in cui i provider pubblicano la classe MOF è \\ WMI radice. Lo spazio dei nomi ETW contiene tre tipi di classi MOF: la classe MOF del provider, la classe MOF dell'evento e la classe MOF del tipo di evento. La classe MOF dell'evento raggruppa logicamente una o più classi MOF di tipo di evento. La classe MOF del tipo di evento definisce i dati effettivi dell'evento.
+L'analisi dei dati degli eventi richiede l'uso dell'API WMI (Windows Management Infrastructure). Lo spazio dei nomi ETW in cui i provider pubblicano la classe MOF è \\ wmi radice. Lo spazio dei nomi ETW contiene tre tipi di classi MOF: la classe MOF del provider, la classe MOF dell'evento e la classe MOF del tipo di evento. La classe MOF dell'evento raggruppa in modo logico una o più classi MOF del tipo di evento. La classe MOF del tipo di evento definisce i dati dell'evento effettivi.
 
-Una classe MOF dell'evento contiene un qualificatore di classe **GUID** il cui valore deve corrispondere al valore nel membro **header. Guid** della struttura di [**\_ traccia eventi**](/windows/win32/api/evntrace/ns-evntrace-event_trace) . Per assicurarsi di avere la versione corretta della classe, confrontare anche il qualificatore della classe **EventVersion** con il membro **header. Class. Version** della struttura di **\_ traccia eventi** .
+Una classe MOF dell'evento contiene un **qualificatore** di classe Guid il cui valore deve corrispondere al valore nel membro **Header.Guid** della [**struttura EVENT \_ TRACE.**](/windows/win32/api/evntrace/ns-evntrace-event_trace) Per assicurarsi di avere la versione corretta della classe, confrontare anche il qualificatore di classe **EventVersion** con il membro **Header.Class.Version** della **struttura EVENT \_ TRACE.**
 
-Dopo aver individuato la classe di evento corretta, enumerare le classi del tipo di evento figlio per trovare la classe che contiene il formato dei dati dell'evento. La classe del tipo di evento corretta contiene un qualificatore di classe **eventType** il cui valore corrisponde al valore nel membro **header. Class. Type** della struttura di [**\_ traccia eventi**](/windows/win32/api/evntrace/ns-evntrace-event_trace) .
+Dopo aver trovato la classe di evento corretta, enumerare le classi del tipo di evento figlio per trovare la classe che contiene il formato dei dati dell'evento. La classe del tipo di evento corretta contiene un qualificatore di classe **EventType** il cui valore corrisponde al valore nel membro **Header.Class.Type** della [**struttura EVENT \_ TRACE.**](/windows/win32/api/evntrace/ns-evntrace-event_trace)
 
-È quindi possibile usare l'API WMI per enumerare le proprietà della classe MOF. Usare i qualificatori e il tipo di dati di ogni proprietà per determinare le dimensioni dell'elemento dati nei dati dell'evento da leggere e come formattarlo. Per un elenco di qualificatori MOF supportati da ETW, vedere [qualificatori MOF di traccia eventi](event-tracing-mof-qualifiers.md).
+È quindi possibile usare l'API WMI per enumerare le proprietà della classe MOF. Usare i qualificatori e il tipo di dati di ogni proprietà per determinare le dimensioni dell'elemento dati nei dati dell'evento da leggere e come formattarlo. Per un elenco dei qualificatori MOF supportati da ETW, vedere [Qualificatori MOF di](event-tracing-mof-qualifiers.md)Traccia eventi .
 
-Poiché ETW non impone l'allineamento tra i valori dei dati degli eventi, typecasting o l'assegnazione del valore direttamente da un buffer può causare un errore di allineamento. non è consigliabile creare una struttura dalla classe MOF e provare a usarla per utilizzare i dati degli eventi. Se, ad esempio, si dispone di un carattere seguito da ULONGLONG, ULONGLONG non verrà allineato a un limite di 8 byte, pertanto un'assegnazione provocherebbe un'eccezione di allineamento. Nei computer a 64 bit questo problema si verifica più spesso. Per questo motivo, è consigliabile usare CopyMemory per copiare i dati dal buffer a una variabile locale. Inoltre, se l'evento viene rivisto in un secondo momento, il consumer potrebbe non funzionare se si tenta di utilizzare una struttura.
+Poiché ETW non forza l'allineamento tra i valori dei dati dell'evento, il typecasting o l'assegnazione del valore direttamente da un buffer può causare un errore di allineamento. Non è consigliabile creare una struttura dalla classe MOF e provare a usarla per utilizzare i dati degli eventi. Ad esempio, se si ha un carattere seguito da ULONGLONG, ULONGLONG non sarebbe allineato a un limite di 8 byte, quindi un'assegnazione causerebbe un'eccezione di allineamento. Nei computer a 64 bit questa situazione si verifica più spesso. Per questo motivo, è necessario usare CopyMemory per copiare i dati dal buffer a una variabile locale. Inoltre, se l'evento viene successivamente modificato, il consumer potrebbe non funzionare se si tenta di usare una struttura .
 
-A partire da Windows Vista, si consiglia di utilizzare le funzioni TDH (Trace Data Helper) per utilizzare gli eventi pubblicati utilizzando le classi MOF. Per informazioni dettagliate, vedere [recupero di dati di eventi con TDH](retrieving-event-data-using-tdh.md).
+A partire da Windows Vista, si consiglia di usare le funzioni dell'helper dati di traccia (TDH) per utilizzare gli eventi pubblicati usando le classi MOF. Per informazioni dettagliate, [vedere Recupero dei dati degli eventi tramite TDH.](retrieving-event-data-using-tdh.md)
 
 Nell'esempio seguente viene illustrato come utilizzare gli eventi definiti da una classe MOF.
 

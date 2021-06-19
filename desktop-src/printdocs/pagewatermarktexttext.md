@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere altre informazioni sul parametro PageWatermarkTextText. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 3b01f05c-fe2e-4467-b2a7-5431a41200cd
 title: PageWatermarkTextText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb19f5965347e79732aa116e5be51f90e4ef6943
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3db5ef33008f0ccb66b6af34e2cc245b90c1ebea
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996078"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395966"
 ---
 # <a name="pagewatermarktexttext"></a>PageWatermarkTextText
 

@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sul parametro PageDeviceColorSpaceProfileURI. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: ab26850e-554a-4a1b-9250-edb0b4e17fe2
 title: PageDeviceColorSpaceProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20a1b4cf607ddf880311659e562647ba583a2951
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 21420dec2e3057de903b1e04c55a7c6d234343b0
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995678"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396646"
 ---
 # <a name="pagedevicecolorspaceprofileuri"></a>PageDeviceColorSpaceProfileURI
 
@@ -73,8 +73,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
-| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
+| UnitType<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

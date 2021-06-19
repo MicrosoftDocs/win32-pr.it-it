@@ -1,19 +1,19 @@
 ---
-description: Nella sintassi seguente viene illustrata la creazione di un file CAB.
+description: Visualizzare un esempio di codice che illustra come estrarre file da un archivio tramite l'API Cabinet. Per la compilazione, è necessario definire le funzioni di callback.
 ms.assetid: d9d0e14a-f68c-4b3d-b91d-a3fa824031ea
-title: Estrazione di file da un file CAB
+title: Estrazione di file da un archivio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ed62779f97c083fd39af79626d5b79baa6d305
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aeb7089ded913a874a41c458bc99a8546f63bad6
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966041"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396616"
 ---
-# <a name="extracting-files-from-a-cabinet"></a>Estrazione di file da un file CAB
+# <a name="extracting-files-from-a-cabinet"></a>Estrazione di file da un archivio
 
-Nella sintassi seguente viene illustrata la creazione di un file CAB.
+La sintassi seguente illustra la creazione di un file cab.
 
 > [!Note]  
 > Questo codice è solo a scopo illustrativo. Per la compilazione, è necessario definire le funzioni di callback.
@@ -240,7 +240,7 @@ LPCSTR FDIErrorToString(FDIERROR err)
 
 <dl> <dt>
 
-[**FDICreate**](/windows/desktop/api/Fdi/nf-fdi-fdicreate)
+[**FDICrea**](/windows/desktop/api/Fdi/nf-fdi-fdicreate)
 </dt> <dt>
 
 [**FDICopy**](/windows/desktop/api/Fdi/nf-fdi-fdicopy)
@@ -249,7 +249,7 @@ LPCSTR FDIErrorToString(FDIERROR err)
 [**FDIDestroy**](/windows/desktop/api/Fdi/nf-fdi-fdidestroy)
 </dt> <dt>
 
-[Macro API cabinet](cabinet-api-macros.md)
+[Macro dell'API Cabinet](cabinet-api-macros.md)
 </dt> </dl>
 
  
