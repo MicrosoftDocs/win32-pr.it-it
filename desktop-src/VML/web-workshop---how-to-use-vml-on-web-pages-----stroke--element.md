@@ -1,69 +1,69 @@
 ---
-title: Utilizzo dell'elemento Stroke
-description: In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+title: Uso dell'elemento Stroke
+description: Questo articolo descrive l'uso dell'elemento Stroke di VML, una funzionalità deprecata a Internet Explorer 9 di Windows.
 ms.assetid: e3d9dbe5-e087-4b6f-8318-c7d4485cd502
 keywords:
-- Web Workshop, elemento Stroke
-- progettazione di pagine Web, elemento Stroke
-- Vector Markup Language (la), elemento Stroke
-- LA (Vector Markup Language), elemento Stroke
-- grafica vettoriale, elemento Stroke
-- Stroke-elemento
-- Elementi la, Stroke
-- Forme la, elemento Stroke
-- Vector Markup Language (la), attributo proprietà DashStyle
-- LA (Vector Markup Language), attributo proprietà DashStyle
-- grafica vettoriale, attributo proprietà DashStyle
-- attributo proprietà DashStyle
-- Vector Markup Language (la), attributo della proprietà Opacity
-- LA (Vector Markup Language), attributo della proprietà Opacity
-- Vector graphics, attributo Property Opacity
-- attributo della proprietà Opacity
-- Vector Markup Language (la), attributo proprietà LineStyle
-- LA (Vector Markup Language), attributo proprietà LineStyle
-- grafica vettoriale, attributo proprietà LineStyle
-- attributo proprietà LineStyle
-- Vector Markup Language (la), attributo proprietà joinstyle
-- LA (Vector Markup Language), attributo proprietà joinstyle
-- grafica vettoriale, attributo proprietà joinstyle
-- attributo proprietà joinstyle
-- Vector Markup Language (la), attributo proprietà elemento FillType
-- LA (Vector Markup Language), attributo proprietà elemento FillType
-- grafica vettoriale, attributo proprietà elemento FillType
-- attributo proprietà elemento FillType
+- Web workshop, elemento stroke
+- progettazione di pagine Web, elemento stroke
+- Vector Markup Language (VML), elemento stroke
+- VML (Vector Markup Language),elemento stroke
+- grafica vettoriale, elemento stroke
+- Elemento stroke
+- Elementi VML, tratto
+- Forme VML, elemento stroke
+- Vector Markup Language (VML), attributo della proprietà dashstyle
+- VML (Vector Markup Language),attributo della proprietà dashstyle
+- vector graphics,dashstyle - attributo della proprietà
+- Attributo della proprietà dashstyle
+- Vector Markup Language (VML), attributo della proprietà opacità
+- VML (Vector Markup Language),attributo della proprietà opacità
+- grafica vettoriale, attributo della proprietà opacità
+- Attributo della proprietà opacity
+- Vector Markup Language (VML), attributo della proprietà linestyle
+- VML (Vector Markup Language),attributo della proprietà linestyle
+- Vector Graphics, attributo della proprietà linestyle
+- Attributo della proprietà linestyle
+- Vector Markup Language (VML), attributo della proprietà joinstyle
+- VML (Vector Markup Language),attributo della proprietà joinstyle
+- vector graphics,joinstyle - attributo della proprietà
+- Attributo della proprietà joinstyle
+- Vector Markup Language (VML), attributo della proprietà filltype
+- VML (Vector Markup Language),attributo della proprietà filltype
+- vector graphics, attributo della proprietà filltype
+- Attributo della proprietà filltype
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b58e02945884ea63ad1be01e67cfc156951cd5e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dff7a4b3bc654063fe8156476cc9c52453247a0b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104339102"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407844"
 ---
-# <a name="using-the-stroke-element"></a><span data-ttu-id="8bd38-132">Utilizzo dell'elemento Stroke</span><span class="sxs-lookup"><span data-stu-id="8bd38-132">Using the Stroke Element</span></span>
+# <a name="using-the-stroke-element"></a><span data-ttu-id="96882-131">Uso dell'elemento Stroke</span><span class="sxs-lookup"><span data-stu-id="96882-131">Using the Stroke Element</span></span>
 
-<span data-ttu-id="8bd38-133">In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9.</span><span class="sxs-lookup"><span data-stu-id="8bd38-133">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="8bd38-134">Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.</span><span class="sxs-lookup"><span data-stu-id="8bd38-134">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
+<span data-ttu-id="96882-132">Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer 9 di Windows.</span><span class="sxs-lookup"><span data-stu-id="96882-132">This topic describes VML, a feature that is deprecated as of Windows Internet Explorer 9.</span></span> <span data-ttu-id="96882-133">È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.</span><span class="sxs-lookup"><span data-stu-id="96882-133">Webpages and applications that rely on VML should be migrated to SVG or other widely supported standards.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="8bd38-135">Al 2011 dicembre, questo argomento è stato archiviato.</span><span class="sxs-lookup"><span data-stu-id="8bd38-135">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="8bd38-136">Di conseguenza, non viene più gestita attivamente.</span><span class="sxs-lookup"><span data-stu-id="8bd38-136">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="8bd38-137">Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="8bd38-137">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="8bd38-138">Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="8bd38-138">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
+> <span data-ttu-id="96882-134">A partire da dicembre 2011, questo argomento è stato archiviato.</span><span class="sxs-lookup"><span data-stu-id="96882-134">As of December 2011, this topic has been archived.</span></span> <span data-ttu-id="96882-135">Di conseguenza, non viene più gestito attivamente.</span><span class="sxs-lookup"><span data-stu-id="96882-135">As a result, it is no longer actively maintained.</span></span> <span data-ttu-id="96882-136">Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/).</span><span class="sxs-lookup"><span data-stu-id="96882-136">For more information, see [Archived Content](/previous-versions/windows/internet-explorer/ie-developer/).</span></span> <span data-ttu-id="96882-137">Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).</span><span class="sxs-lookup"><span data-stu-id="96882-137">For information, recommendations, and guidance regarding the current version of Windows Internet Explorer, see [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).</span></span>
 
- 
+ 
 
-<span data-ttu-id="8bd38-139">Uso di `<stroke>`</span><span class="sxs-lookup"><span data-stu-id="8bd38-139">Using `<stroke>`</span></span>
+<span data-ttu-id="96882-138">Uso di `<stroke>`</span><span class="sxs-lookup"><span data-stu-id="96882-138">Using `<stroke>`</span></span>
 
-<span data-ttu-id="8bd38-140">Come si è appreso, è possibile usare gli attributi di proprietà **StrokeColor** e **StrokeWeight** di una forma predefinita, ad esempio `<oval>` , `<line>` , `<polyline>` , `<curve>` , `<rect>` , `<roundrect>` , `<arc>` --per specificare il colore e il peso del contorno di una forma.</span><span class="sxs-lookup"><span data-stu-id="8bd38-140">As you've learned, you can use the **strokecolor** and **strokeweight** property attributes of a predefined shape -- such as `<oval>` , `<line>`, `<polyline>`, `<curve>`, `<rect>`, `<roundrect>`, `<arc>` -- to specify the color and weight of a shape's outline.</span></span> <span data-ttu-id="8bd38-141">In questo argomento verrà illustrato come disegnare una forma con una struttura più avanzata.</span><span class="sxs-lookup"><span data-stu-id="8bd38-141">In this topic, we will illustrate how to draw a shape that has a more advanced outline.</span></span>
+<span data-ttu-id="96882-139">Come si è appreso, è possibile usare gli attributi di proprietà **strokecolor** e **strokeweight** di una forma predefinita, ad esempio , , , , , , per specificare il colore e lo spessore del contorno di una `<oval>` `<line>` `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` forma.</span><span class="sxs-lookup"><span data-stu-id="96882-139">As you've learned, you can use the **strokecolor** and **strokeweight** property attributes of a predefined shape -- such as `<oval>` , `<line>`, `<polyline>`, `<curve>`, `<rect>`, `<roundrect>`, `<arc>` -- to specify the color and weight of a shape's outline.</span></span> <span data-ttu-id="96882-140">In questo argomento verrà illustrato come disegnare una forma con una struttura più avanzata.</span><span class="sxs-lookup"><span data-stu-id="96882-140">In this topic, we will illustrate how to draw a shape that has a more advanced outline.</span></span>
 
-<span data-ttu-id="8bd38-142">`<stroke>` `<shape>` Per descrivere come disegnare il contorno della forma, è possibile inserire il sottoelemento all'interno dell'elemento della forma, o `<shapetype>` o di qualsiasi elemento Shape predefinito.</span><span class="sxs-lookup"><span data-stu-id="8bd38-142">You can place the `<stroke>` sub-element inside the `<shape>`, or `<shapetype>`, or any predefined shape element to describe how to draw the outline of the shape.</span></span> <span data-ttu-id="8bd38-143">È quindi possibile usare gli attributi delle proprietà, ad esempio [DashStyle](#dashstyle), [Opacity](#opacity), [LineStyle](#linestyle), [joinstyle](#joinstyle), [elemento FillType](#filltype) , del `<stroke>` sottoelemento per personalizzare il contorno.</span><span class="sxs-lookup"><span data-stu-id="8bd38-143">You can then use the property attributes -- for example, [dashstyle](#dashstyle), [opacity](#opacity), [linestyle](#linestyle), [joinstyle](#joinstyle), [filltype](#filltype) -- of the `<stroke>` sub-element to customize the outline.</span></span>
+<span data-ttu-id="96882-141">È possibile inserire il sotto-elemento all'interno di , o o qualsiasi elemento forma predefinito per descrivere come disegnare il `<stroke>` `<shape>` `<shapetype>` contorno della forma.</span><span class="sxs-lookup"><span data-stu-id="96882-141">You can place the `<stroke>` sub-element inside the `<shape>`, or `<shapetype>`, or any predefined shape element to describe how to draw the outline of the shape.</span></span> <span data-ttu-id="96882-142">È quindi possibile usare gli attributi della proprietà, ad esempio [dashstyle,](#dashstyle) [opacity,](#opacity) [linestyle,](#linestyle) [joinstyle,](#joinstyle) [filltype,](#filltype) del sotto-elemento per personalizzare `<stroke>` la struttura.</span><span class="sxs-lookup"><span data-stu-id="96882-142">You can then use the property attributes -- for example, [dashstyle](#dashstyle), [opacity](#opacity), [linestyle](#linestyle), [joinstyle](#joinstyle), [filltype](#filltype) -- of the `<stroke>` sub-element to customize the outline.</span></span>
 
-<span data-ttu-id="8bd38-144">[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="8bd38-144">[![back to top](images/top.gif) Back to top](#top)</span></span>
+<span data-ttu-id="96882-143">[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="96882-143">[![back to top](images/top.gif) Back to top](#top)</span></span>
 
-## <a name="dashstyle"></a><span data-ttu-id="8bd38-145">DashStyle</span><span class="sxs-lookup"><span data-stu-id="8bd38-145">dashstyle</span></span>
+## <a name="dashstyle"></a><span data-ttu-id="96882-144">Dashstyle</span><span class="sxs-lookup"><span data-stu-id="96882-144">dashstyle</span></span>
 
-<span data-ttu-id="8bd38-146">È possibile usare l'attributo della proprietà **DashStyle** del `<stroke>` sottoelemento per disegnare una struttura con diversi stili di tratteggio.</span><span class="sxs-lookup"><span data-stu-id="8bd38-146">You can use the **dashstyle** property attribute of the `<stroke>` sub-element to draw an outline with various dash styles.</span></span>
+<span data-ttu-id="96882-145">È possibile usare **l'attributo della** proprietà dashstyle del `<stroke>` sotto-elemento per disegnare un contorno con vari stili di tratteggio.</span><span class="sxs-lookup"><span data-stu-id="96882-145">You can use the **dashstyle** property attribute of the `<stroke>` sub-element to draw an outline with various dash styles.</span></span>
 
-<span data-ttu-id="8bd38-147">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="8bd38-147">**Examples:**</span></span>
+<span data-ttu-id="96882-146">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="96882-146">**Examples:**</span></span>
 
-<span data-ttu-id="8bd38-148">Se si specifica `<v:stroke dashstyle="solid" />` all'interno dell' `<line>` elemento, è possibile creare una linea continua, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-148">If you specify `<v:stroke dashstyle="solid" />` inside the `<line>` element, you can create a solid line, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-147">Se si specifica `<v:stroke dashstyle="solid" />` all'interno `<line>` dell'elemento , è possibile creare una linea continua, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-147">If you specify `<v:stroke dashstyle="solid" />` inside the `<line>` element, you can create a solid line, as shown in the following VML representation:</span></span>
 
 ![solid.gif (96 byte)](images/solid.gif)
 
@@ -79,7 +79,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-150">Se si imposta l'attributo della proprietà **DashStyle** su "dot", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-150">If you change the **dashstyle** property attribute to "dot", you can create a dotted line, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-149">Se si modifica l'attributo della proprietà **dashstyle** in "dot", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-149">If you change the **dashstyle** property attribute to "dot", you can create a dotted line, as shown in the following VML representation:</span></span>
 
 ![dot.gif (144 byte)](images/dot.gif)
 
@@ -95,7 +95,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-152">Se si imposta l'attributo della proprietà **DashStyle** su "Dash", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-152">If you change the **dashstyle** property attribute to "dash", you can create a dash line, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-151">Se si modifica l'attributo della proprietà **dashstyle** in "dash", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-151">If you change the **dashstyle** property attribute to "dash", you can create a dash line, as shown in the following VML representation:</span></span>
 
 ![dash.gif (137 byte)](images/dash.gif)
 
@@ -111,7 +111,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-154">Se si imposta l'attributo della proprietà **DashStyle** su "DashDot", è possibile creare una riga con uno stile tratteggiato e tratteggiato, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-154">If you change the **dashstyle** property attribute to "dashdot", you can create a line with a dashed and dotted style, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-153">Se si modifica l'attributo della proprietà **dashstyle** in "dashdot", è possibile creare una linea con uno stile tratteggiato e punteggiato, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-153">If you change the **dashstyle** property attribute to "dashdot", you can create a line with a dashed and dotted style, as shown in the following VML representation:</span></span>
 
 ![dashdot.gif (145 byte)](images/dashdot.gif)
 
@@ -127,7 +127,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-156">Se si imposta l'attributo della proprietà **DashStyle** su "longdash", è possibile creare una riga con stile tratteggiato lungo, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-156">If you change the **dashstyle** property attribute to "longdash", you can create a line with a long dashed style, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-155">Se si modifica l'attributo della proprietà **dashstyle** in "longdash", è possibile creare una linea con uno stile tratteggiato lungo, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-155">If you change the **dashstyle** property attribute to "longdash", you can create a line with a long dashed style, as shown in the following VML representation:</span></span>
 
 ![longdash.gif (123 byte)](images/longdash.gif)
 
@@ -143,7 +143,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-158">Se si imposta l'attributo della proprietà **DashStyle** su "longdashdot", è possibile creare una linea con uno stile tratteggiato lungo e tratteggiato, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-158">If you change the **dashstyle** property attribute to "longdashdot", you can create a line with a long dashed and dotted style, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-157">Se si modifica l'attributo della proprietà **dashstyle** in "longdashdot", è possibile creare una linea con uno stile tratteggiato e punteggiato lungo, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-157">If you change the **dashstyle** property attribute to "longdashdot", you can create a line with a long dashed and dotted style, as shown in the following VML representation:</span></span>
 
 ![longdashdot.gif (135 byte)](images/longdashdot.gif)
 
@@ -159,7 +159,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-160">Se si posiziona `<v:stroke dashstyle="dashdot" />` all'interno dell' `<rect>` elemento, è possibile creare un rettangolo con un contorno tratteggiato e tratteggiato, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-160">If you place `<v:stroke dashstyle="dashdot" />` inside the `<rect>` element, you can create a rectangle that has a dashed and dotted outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-159">Se si posiziona all'interno dell'elemento , è possibile creare un rettangolo con un contorno tratteggiato e punteggiato, come illustrato nella `<v:stroke dashstyle="dashdot" />` `<rect>` rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-159">If you place `<v:stroke dashstyle="dashdot" />` inside the `<rect>` element, you can create a rectangle that has a dashed and dotted outline, as shown in the following VML representation:</span></span>
 
 ![rect.gif (615 byte)](images/rect.gif)
 
@@ -174,15 +174,15 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-162">[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="8bd38-162">[![back to top](images/top.gif) Back to top](#top)</span></span>
+<span data-ttu-id="96882-161">[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="96882-161">[![back to top](images/top.gif) Back to top](#top)</span></span>
 
-## <a name="opacity"></a><span data-ttu-id="8bd38-163">opacità</span><span class="sxs-lookup"><span data-stu-id="8bd38-163">opacity</span></span>
+## <a name="opacity"></a><span data-ttu-id="96882-162">opacità</span><span class="sxs-lookup"><span data-stu-id="96882-162">opacity</span></span>
 
-<span data-ttu-id="8bd38-164">È possibile usare l'attributo della proprietà **Opacity** del `<stroke>` sottoelemento per disegnare un contorno con diversi stili di opacità.</span><span class="sxs-lookup"><span data-stu-id="8bd38-164">You can use the **opacity** property attribute of the `<stroke>` sub-element to draw an outline with various opacity styles.</span></span> <span data-ttu-id="8bd38-165">Il valore dell'attributo della proprietà **Opacity** può essere qualsiasi numero compreso tra 0 e 1.</span><span class="sxs-lookup"><span data-stu-id="8bd38-165">The value for the **opacity** property attribute can be any number between 0 to 1.</span></span> <span data-ttu-id="8bd38-166">Per impostazione predefinita, è 1, che indica l'opacità completa.</span><span class="sxs-lookup"><span data-stu-id="8bd38-166">By default, it is 1, indicating full opacity.</span></span>
+<span data-ttu-id="96882-163">È possibile usare **l'attributo della proprietà opacità** del sotto-elemento per disegnare un `<stroke>` contorno con vari stili di opacità.</span><span class="sxs-lookup"><span data-stu-id="96882-163">You can use the **opacity** property attribute of the `<stroke>` sub-element to draw an outline with various opacity styles.</span></span> <span data-ttu-id="96882-164">Il valore **dell'attributo della proprietà di opacità** può essere qualsiasi numero compreso tra 0 e 1.</span><span class="sxs-lookup"><span data-stu-id="96882-164">The value for the **opacity** property attribute can be any number between 0 to 1.</span></span> <span data-ttu-id="96882-165">Per impostazione predefinita, è 1, che indica l'opacità completa.</span><span class="sxs-lookup"><span data-stu-id="96882-165">By default, it is 1, indicating full opacity.</span></span>
 
-<span data-ttu-id="8bd38-167">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="8bd38-167">**Examples:**</span></span>
+<span data-ttu-id="96882-166">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="96882-166">**Examples:**</span></span>
 
-<span data-ttu-id="8bd38-168">La rappresentazione la seguente crea una riga con opacità completa:</span><span class="sxs-lookup"><span data-stu-id="8bd38-168">The following VML representation creates a line with full opacity:</span></span>
+<span data-ttu-id="96882-167">La rappresentazione VML seguente crea una riga con opacità completa:</span><span class="sxs-lookup"><span data-stu-id="96882-167">The following VML representation creates a line with full opacity:</span></span>
 
 ![line1.gif (96 byte)](images/line1.gif)
 
@@ -197,7 +197,7 @@ strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-170">Se si aggiunge `<v:stroke opacity="0.5" />` all'interno dell' `<line>` elemento, è possibile creare una riga con opacità del 50%, come illustrato nella seguente rappresentazione la:</span><span class="sxs-lookup"><span data-stu-id="8bd38-170">If you add `<v:stroke opacity="0.5" />` inside the `<line>` element, you can create a line with 50% opacity, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-169">Se si aggiunge all'interno dell'elemento , è possibile creare una riga con `<v:stroke opacity="0.5" />` opacità del 50%, come illustrato nella `<line>` rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-169">If you add `<v:stroke opacity="0.5" />` inside the `<line>` element, you can create a line with 50% opacity, as shown in the following VML representation:</span></span>
 
 ![line2.gif (108 byte)](images/line2.gif)
 
@@ -213,15 +213,15 @@ strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-172">[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="8bd38-172">[![back to top](images/top.gif) Back to top](#top)</span></span>
+<span data-ttu-id="96882-171">[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="96882-171">[![back to top](images/top.gif) Back to top](#top)</span></span>
 
-## <a name="linestyle"></a><span data-ttu-id="8bd38-173">LineStyle</span><span class="sxs-lookup"><span data-stu-id="8bd38-173">linestyle</span></span>
+## <a name="linestyle"></a><span data-ttu-id="96882-172">Linestyle</span><span class="sxs-lookup"><span data-stu-id="96882-172">linestyle</span></span>
 
-<span data-ttu-id="8bd38-174">È possibile usare l'attributo della proprietà **LineStyle** del `<stroke>` sottoelemento per disegnare un contorno con vari stili di linea.</span><span class="sxs-lookup"><span data-stu-id="8bd38-174">You can use the **linestyle** property attribute of the `<stroke>` sub-element to draw an outline with various line styles.</span></span>
+<span data-ttu-id="96882-173">È possibile usare **l'attributo della** proprietà linestyle del `<stroke>` sotto-elemento per disegnare un contorno con vari stili di linea.</span><span class="sxs-lookup"><span data-stu-id="96882-173">You can use the **linestyle** property attribute of the `<stroke>` sub-element to draw an outline with various line styles.</span></span>
 
-<span data-ttu-id="8bd38-175">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="8bd38-175">**Examples:**</span></span>
+<span data-ttu-id="96882-174">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="96882-174">**Examples:**</span></span>
 
-<span data-ttu-id="8bd38-176">Se si specifica `<v:stroke linestyle="single" />` all'interno dell' `<rect>` elemento, è possibile creare un rettangolo con un unico contorno, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-176">If you specify `<v:stroke linestyle="single" />` inside the `<rect>` element, you can create a rectangle with a single outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-175">Se si specifica all'interno dell'elemento , è possibile creare un rettangolo con un singolo `<v:stroke linestyle="single" />` `<rect>` contorno, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-175">If you specify `<v:stroke linestyle="single" />` inside the `<rect>` element, you can create a rectangle with a single outline, as shown in the following VML representation:</span></span>
 
 ![single.gif (537 byte)](images/single.gif)
 
@@ -236,7 +236,7 @@ strokeweight="2pt">
 
 
 
-<span data-ttu-id="8bd38-178">Se si imposta l'attributo della proprietà **LineStyle** su "thinthin", è possibile creare un rettangolo con il contorno (1:1:1), come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-178">If you change the **linestyle** property attribute to "thinthin", you can create a rectangle with the outline (1:1:1), as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-177">Se si modifica l'attributo della proprietà **linestyle** in "thinthin", è possibile creare un rettangolo con il contorno (1:1:1), come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-177">If you change the **linestyle** property attribute to "thinthin", you can create a rectangle with the outline (1:1:1), as shown in the following VML representation:</span></span>
 
 ![thinthin.gif (642 byte)](images/thinthin.gif)
 
@@ -252,7 +252,7 @@ strokeweight="10pt">
 
 
 
-<span data-ttu-id="8bd38-180">Se si imposta l'attributo della proprietà **LineStyle** su "thinthick", è possibile creare un rettangolo con il contorno (1:1:2), come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-180">If you change the **linestyle** property attribute to "thinthick", you can create a rectangle with the outline (1:1:2), as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-179">Se si modifica l'attributo della proprietà **linestyle** in "thinthick", è possibile creare un rettangolo con il contorno (1:1:2), come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-179">If you change the **linestyle** property attribute to "thinthick", you can create a rectangle with the outline (1:1:2), as shown in the following VML representation:</span></span>
 
 ![thinthick.gif (646 byte)](images/thinthick.gif)
 
@@ -268,7 +268,7 @@ strokeweight="10pt">
 
 
 
-<span data-ttu-id="8bd38-182">Se si imposta l'attributo della proprietà **LineStyle** su "thickthin", è possibile creare un rettangolo con il contorno (2:1:1), come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-182">If you change the **linestyle** property attribute to "thickthin", you can create a rectangle with the outline (2:1:1), as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-181">Se si modifica l'attributo della proprietà **linestyle** in "thickthin", è possibile creare un rettangolo con il contorno (2:1:1), come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-181">If you change the **linestyle** property attribute to "thickthin", you can create a rectangle with the outline (2:1:1), as shown in the following VML representation:</span></span>
 
 ![thickthin.gif (676 byte)](images/thickthin.gif)
 
@@ -284,7 +284,7 @@ strokeweight="10pt">
 
 
 
-<span data-ttu-id="8bd38-184">Se si imposta l'attributo della proprietà **LineStyle** su "thickbetweenthin", è possibile creare un rettangolo con il contorno (1:1:2:1:1), come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-184">If you change the **linestyle** property attribute to "thickbetweenthin", you can create a rectangle with the outline (1:1:2:1:1), as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-183">Se si modifica l'attributo della proprietà **linestyle** in "thickbetweenthin", è possibile creare un rettangolo con il contorno (1:1:2:1:1), come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-183">If you change the **linestyle** property attribute to "thickbetweenthin", you can create a rectangle with the outline (1:1:2:1:1), as shown in the following VML representation:</span></span>
 
 ![thickbthin.gif (669 byte)](images/thickbthin.gif)
 
@@ -300,13 +300,13 @@ strokeweight="10pt">
 
 
 
-<span data-ttu-id="8bd38-186">[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="8bd38-186">[![back to top](images/top.gif) Back to top](#top)</span></span>
+<span data-ttu-id="96882-185">[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="96882-185">[![back to top](images/top.gif) Back to top](#top)</span></span>
 
-## <a name="joinstyle"></a><span data-ttu-id="8bd38-187">joinstyle</span><span class="sxs-lookup"><span data-stu-id="8bd38-187">joinstyle</span></span>
+## <a name="joinstyle"></a><span data-ttu-id="96882-186">joinstyle</span><span class="sxs-lookup"><span data-stu-id="96882-186">joinstyle</span></span>
 
-<span data-ttu-id="8bd38-188">È possibile usare l'attributo **joinstyle** del `<stroke>` sottoelemento per definire la modalità di Unione delle linee.</span><span class="sxs-lookup"><span data-stu-id="8bd38-188">You can use the **joinstyle** attribute of the `<stroke>` sub-element to define how lines are joined together.</span></span>
+<span data-ttu-id="96882-187">È possibile usare **l'attributo joinstyle** del `<stroke>` sotto-elemento per definire la modalità di unione delle linee.</span><span class="sxs-lookup"><span data-stu-id="96882-187">You can use the **joinstyle** attribute of the `<stroke>` sub-element to define how lines are joined together.</span></span>
 
-<span data-ttu-id="8bd38-189">Ad esempio, per creare una forma con il contorno di un round join, come illustrato nella figura seguente, è possibile specificare `<v:stroke joinstyle="round" />` all'interno dell' `<polyline>` elemento, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-189">For example, to create a shape that has the round-join outline, as shown in the following illustration, you can specify `<v:stroke joinstyle="round" />` inside the `<polyline>` element, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-188">Ad esempio, per creare una forma con la struttura round join, come illustrato nella figura seguente, è possibile specificare all'interno dell'elemento , come illustrato nella rappresentazione `<v:stroke joinstyle="round" />` `<polyline>` VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-188">For example, to create a shape that has the round-join outline, as shown in the following illustration, you can specify `<v:stroke joinstyle="round" />` inside the `<polyline>` element, as shown in the following VML representation:</span></span>
 
 ![round.gif (660 byte)](images/round.gif)
 
@@ -323,7 +323,7 @@ strokecolor="red" strokeweight="20pt">
 
 
 
-<span data-ttu-id="8bd38-191">Se si imposta l'attributo della proprietà **joinstyle** su "smussatura", è possibile creare una forma con il contorno di join smussato, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-191">If you change the **joinstyle** property attribute to "bevel", you can create a shape that has the bevel-join outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-190">Se si modifica l'attributo della proprietà **joinstyle** in "smussatura", è possibile creare una forma con il contorno smussato, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-190">If you change the **joinstyle** property attribute to "bevel", you can create a shape that has the bevel-join outline, as shown in the following VML representation:</span></span>
 
 ![bevel.gif (650 byte)](images/bevel.gif)
 
@@ -340,7 +340,7 @@ strokecolor="red" strokeweight="20pt">
 
 
 
-<span data-ttu-id="8bd38-193">Se si imposta l'attributo della proprietà **joinstyle** su "Miter", è possibile creare una forma con la struttura ad angolo acuto-join, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-193">If you change the **joinstyle** property attribute to "miter", you can create a shape that has the miter-join outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-192">Se si modifica l'attributo della proprietà **joinstyle** in "miter", è possibile creare una forma con la struttura miter-join, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-192">If you change the **joinstyle** property attribute to "miter", you can create a shape that has the miter-join outline, as shown in the following VML representation:</span></span>
 
 ![miter.gif (702 byte)](images/miter.gif)
 
@@ -357,15 +357,15 @@ strokecolor="red" strokeweight="20pt">
 
 
 
-<span data-ttu-id="8bd38-195">[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="8bd38-195">[![back to top](images/top.gif) Back to top](#top)</span></span>
+<span data-ttu-id="96882-194">[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)</span><span class="sxs-lookup"><span data-stu-id="96882-194">[![back to top](images/top.gif) Back to top](#top)</span></span>
 
-## <a name="filltype"></a><span data-ttu-id="8bd38-196">elemento FillType</span><span class="sxs-lookup"><span data-stu-id="8bd38-196">filltype</span></span>
+## <a name="filltype"></a><span data-ttu-id="96882-195">filltype</span><span class="sxs-lookup"><span data-stu-id="96882-195">filltype</span></span>
 
-<span data-ttu-id="8bd38-197">È possibile usare l'attributo della proprietà **elemento FillType** del `<stroke>` sottoelemento per disegnare un contorno con vari effetti di riempimento.</span><span class="sxs-lookup"><span data-stu-id="8bd38-197">You can use the **filltype** property attribute of the `<stroke>` sub-element to draw an outline with various fill effects.</span></span>
+<span data-ttu-id="96882-196">È possibile usare **l'attributo della** proprietà filltype del `<stroke>` sotto-elemento per disegnare un contorno con vari effetti di riempimento.</span><span class="sxs-lookup"><span data-stu-id="96882-196">You can use the **filltype** property attribute of the `<stroke>` sub-element to draw an outline with various fill effects.</span></span>
 
-<span data-ttu-id="8bd38-198">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="8bd38-198">**Examples:**</span></span>
+<span data-ttu-id="96882-197">**Esempi:**</span><span class="sxs-lookup"><span data-stu-id="96882-197">**Examples:**</span></span>
 
-<span data-ttu-id="8bd38-199">Se si specifica `<v:stroke filltype="solid" />` all'interno dell' `<roundrect>` elemento, è possibile creare un rettangolo arrotondato con il contorno con riempimento a tinta unita, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-199">If you specify `<v:stroke filltype="solid" />` inside the `<roundrect>` element, you can create a rounded rectangle with the solid-filled outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-198">Se si specifica all'interno dell'elemento , è possibile creare un rettangolo arrotondato con il contorno con riempimento a tinta unita, come illustrato nella `<v:stroke filltype="solid" />` `<roundrect>` rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-198">If you specify `<v:stroke filltype="solid" />` inside the `<roundrect>` element, you can create a rounded rectangle with the solid-filled outline, as shown in the following VML representation:</span></span>
 
 ![solid.gif (701 byte)](images/solidborder.gif)
 
@@ -381,7 +381,7 @@ strokeweight="15pt">
 
 
 
-<span data-ttu-id="8bd38-201">Se si imposta l'attributo della proprietà **elemento FillType** su "pattern", puntare l'attributo della proprietà **src** al percorso del file di immagine del modello e impostare l'attributo della proprietà **color2** sul secondo colore del criterio, è possibile creare un rettangolo arrotondato con un contorno di pattern, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-201">If you change the **filltype** property attribute to "pattern", point the **src** property attribute to the location of the pattern image file, and set the **color2** property attribute to the second pattern color, you can create a rounded rectangle with a pattern outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-200">Se si modifica l'attributo della proprietà **filltype** in "pattern", si punta l'attributo della proprietà **src** alla posizione del file di immagine del modello e si imposta l'attributo della proprietà **color2** sul secondo colore del motivo, è possibile creare un rettangolo arrotondato con un contorno di motivo, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-200">If you change the **filltype** property attribute to "pattern", point the **src** property attribute to the location of the pattern image file, and set the **color2** property attribute to the second pattern color, you can create a rounded rectangle with a pattern outline, as shown in the following VML representation:</span></span>
 
 ![pattern.gif (1055 byte)](images/pattern.gif)
 
@@ -398,7 +398,7 @@ color2="green" />
 
 
 
-<span data-ttu-id="8bd38-203">Se si imposta l'attributo della proprietà **elemento FillType** su "Tile" e si posiziona l'attributo della proprietà **src** sul percorso del file di immagine, è possibile creare un rettangolo arrotondato con un contorno affiancato, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-203">If you change the **filltype** property attribute to "tile" and point the **src** property attribute to the location of the image file, you can create a rounded rectangle with a tiled outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-202">Se si modifica l'attributo della proprietà **filltype** in "tile" e si punta l'attributo della proprietà **src** alla posizione del file di immagine, è possibile creare un rettangolo arrotondato con un contorno affiancato, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-202">If you change the **filltype** property attribute to "tile" and point the **src** property attribute to the location of the image file, you can create a rounded rectangle with a tiled outline, as shown in the following VML representation:</span></span>
 
 ![tile.gif (6617 byte)](images/tile.gif)
 
@@ -414,7 +414,7 @@ strokeweight="15pt">
 
 
 
-<span data-ttu-id="8bd38-205">Se si imposta l'attributo della proprietà **elemento FillType** su "frame" e si posiziona l'attributo della proprietà **src** sul percorso del file di immagine, è possibile creare un rettangolo arrotondato con un contorno immagine, come illustrato nella rappresentazione la seguente:</span><span class="sxs-lookup"><span data-stu-id="8bd38-205">If you change the **filltype** property attribute to "frame" and point the **src** property attribute to the location of the image file, you can create a rounded rectangle with a picture outline, as shown in the following VML representation:</span></span>
+<span data-ttu-id="96882-204">Se si modifica l'attributo della proprietà **filltype** in "frame" e si punta l'attributo della proprietà **src** alla posizione del file di immagine, è possibile creare un rettangolo arrotondato con un contorno immagine, come illustrato nella rappresentazione VML seguente:</span><span class="sxs-lookup"><span data-stu-id="96882-204">If you change the **filltype** property attribute to "frame" and point the **src** property attribute to the location of the image file, you can create a rounded rectangle with a picture outline, as shown in the following VML representation:</span></span>
 
 ![frame.gif (6203 byte)](images/frame.gif)
 
@@ -430,8 +430,8 @@ strokeweight="15pt">
 
 
 
-<span data-ttu-id="8bd38-207">Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://www.w3.org/TR/NOTE-VML#-toc416858395) .</span><span class="sxs-lookup"><span data-stu-id="8bd38-207">For more information about this element, see the [VML specification](https://www.w3.org/TR/NOTE-VML#-toc416858395) .</span></span>
+<span data-ttu-id="96882-206">Per altre informazioni su questo elemento, vedere la [specifica VML](https://www.w3.org/TR/NOTE-VML#-toc416858395) .</span><span class="sxs-lookup"><span data-stu-id="96882-206">For more information about this element, see the [VML specification](https://www.w3.org/TR/NOTE-VML#-toc416858395) .</span></span>
 
- 
+ 
 
- 
+ 

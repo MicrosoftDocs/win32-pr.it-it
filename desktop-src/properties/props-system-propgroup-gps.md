@@ -1,21 +1,21 @@
 ---
-description: Separatore del gruppo di proprietà utilizzato negli elenchi di proprietà per separare i file audio da altri tipi. Non usare questa proprietà per ottenere o impostare i valori. Viene utilizzato solo come marcatore.
+description: Informazioni sulla proprietà System.PropGroup.GPS. Non usare questa proprietà per ottenere o impostare valori. È destinato solo a un marcatore.
 ms.assetid: bdc3d22c-d055-47f7-86ad-6e050608ad12
-title: System. PropGroup. GPS
+title: System.PropGroup.GPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 508782aaf576fbba363a061283b1a837f6ffa6f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3544f433ef83d64b65f1ad33a8d732ccf80b8181
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311171"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404554"
 ---
-# <a name="systempropgroupgps"></a><span data-ttu-id="b11bf-105">System. PropGroup. GPS</span><span class="sxs-lookup"><span data-stu-id="b11bf-105">System.PropGroup.GPS</span></span>
+# <a name="systempropgroupgps"></a><span data-ttu-id="5aa95-105">System.PropGroup.GPS</span><span class="sxs-lookup"><span data-stu-id="5aa95-105">System.PropGroup.GPS</span></span>
 
-<span data-ttu-id="b11bf-106">Separatore del gruppo di proprietà utilizzato negli elenchi di proprietà per separare i file audio da altri tipi.</span><span class="sxs-lookup"><span data-stu-id="b11bf-106">The property group separator used in property lists to separate audio files from other types.</span></span> <span data-ttu-id="b11bf-107">Non usare questa proprietà per ottenere o impostare i valori.</span><span class="sxs-lookup"><span data-stu-id="b11bf-107">Do not use this property for getting or setting values.</span></span> <span data-ttu-id="b11bf-108">Viene utilizzato solo come marcatore.</span><span class="sxs-lookup"><span data-stu-id="b11bf-108">It is intended only as a marker.</span></span>
+<span data-ttu-id="5aa95-106">Separatore di gruppi di proprietà usato negli elenchi di proprietà per separare i file audio da altri tipi.</span><span class="sxs-lookup"><span data-stu-id="5aa95-106">The property group separator used in property lists to separate audio files from other types.</span></span> <span data-ttu-id="5aa95-107">Non usare questa proprietà per ottenere o impostare valori.</span><span class="sxs-lookup"><span data-stu-id="5aa95-107">Do not use this property for getting or setting values.</span></span> <span data-ttu-id="5aa95-108">È destinato solo a un marcatore.</span><span class="sxs-lookup"><span data-stu-id="5aa95-108">It is intended only as a marker.</span></span>
 
-## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a><span data-ttu-id="b11bf-109">Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span><span class="sxs-lookup"><span data-stu-id="b11bf-109">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span></span>
+## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a><span data-ttu-id="5aa95-109">Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span><span class="sxs-lookup"><span data-stu-id="5aa95-109">Windows 10, version 1703, Windows 10, version 1607, Windows 10, version 1511, Windows 10, version 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista</span></span>
 
 ```
 propertyDescription
@@ -30,54 +30,54 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a><span data-ttu-id="b11bf-110">Commenti</span><span class="sxs-lookup"><span data-stu-id="b11bf-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5aa95-110">Commenti</span><span class="sxs-lookup"><span data-stu-id="5aa95-110">Remarks</span></span>
 
-<span data-ttu-id="b11bf-111">I valori PKEY sono definiti in Propkey. h.</span><span class="sxs-lookup"><span data-stu-id="b11bf-111">PKEY values are defined in Propkey.h.</span></span>
+<span data-ttu-id="5aa95-111">I valori PKEY sono definiti in Propkey.h.</span><span class="sxs-lookup"><span data-stu-id="5aa95-111">PKEY values are defined in Propkey.h.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="b11bf-112">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="b11bf-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5aa95-112">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="5aa95-112">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="b11bf-113">propertyDescription</span><span class="sxs-lookup"><span data-stu-id="b11bf-113">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
+[<span data-ttu-id="5aa95-113">proprietàDescrizione</span><span class="sxs-lookup"><span data-stu-id="5aa95-113">propertyDescription</span></span>](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-114">searchInfo</span><span class="sxs-lookup"><span data-stu-id="b11bf-114">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
+[<span data-ttu-id="5aa95-114">searchInfo</span><span class="sxs-lookup"><span data-stu-id="5aa95-114">searchInfo</span></span>](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-115">labelInfo</span><span class="sxs-lookup"><span data-stu-id="b11bf-115">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
+[<span data-ttu-id="5aa95-115">labelInfo</span><span class="sxs-lookup"><span data-stu-id="5aa95-115">labelInfo</span></span>](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-116">typeInfo</span><span class="sxs-lookup"><span data-stu-id="b11bf-116">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
+[<span data-ttu-id="5aa95-116">Typeinfo</span><span class="sxs-lookup"><span data-stu-id="5aa95-116">typeInfo</span></span>](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-117">displayInfo</span><span class="sxs-lookup"><span data-stu-id="b11bf-117">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
+[<span data-ttu-id="5aa95-117">displayInfo</span><span class="sxs-lookup"><span data-stu-id="5aa95-117">displayInfo</span></span>](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-118">stringFormat</span><span class="sxs-lookup"><span data-stu-id="b11bf-118">stringFormat</span></span>](./propdesc-schema-stringformat.md)
+[<span data-ttu-id="5aa95-118">Stringformat</span><span class="sxs-lookup"><span data-stu-id="5aa95-118">stringFormat</span></span>](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-119">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="b11bf-119">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
+[<span data-ttu-id="5aa95-119">booleanFormat</span><span class="sxs-lookup"><span data-stu-id="5aa95-119">booleanFormat</span></span>](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-120">numberFormat</span><span class="sxs-lookup"><span data-stu-id="b11bf-120">numberFormat</span></span>](./propdesc-schema-numberformat.md)
+[<span data-ttu-id="5aa95-120">numberFormat</span><span class="sxs-lookup"><span data-stu-id="5aa95-120">numberFormat</span></span>](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-121">dateTimeFormat</span><span class="sxs-lookup"><span data-stu-id="b11bf-121">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
+[<span data-ttu-id="5aa95-121">Datetimeformat</span><span class="sxs-lookup"><span data-stu-id="5aa95-121">dateTimeFormat</span></span>](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-122">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="b11bf-122">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
+[<span data-ttu-id="5aa95-122">enumeratedList</span><span class="sxs-lookup"><span data-stu-id="5aa95-122">enumeratedList</span></span>](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-123">drawControl</span><span class="sxs-lookup"><span data-stu-id="b11bf-123">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
+[<span data-ttu-id="5aa95-123">DrawControl</span><span class="sxs-lookup"><span data-stu-id="5aa95-123">drawControl</span></span>](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-124">editControl</span><span class="sxs-lookup"><span data-stu-id="b11bf-124">editControl</span></span>](./propdesc-schema-editcontrol.md)
+[<span data-ttu-id="5aa95-124">editControl</span><span class="sxs-lookup"><span data-stu-id="5aa95-124">editControl</span></span>](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-125">filterControl</span><span class="sxs-lookup"><span data-stu-id="b11bf-125">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
+[<span data-ttu-id="5aa95-125">filterControl</span><span class="sxs-lookup"><span data-stu-id="5aa95-125">filterControl</span></span>](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[<span data-ttu-id="b11bf-126">queryControl</span><span class="sxs-lookup"><span data-stu-id="b11bf-126">queryControl</span></span>](./propdesc-schema-querycontrol.md)
+[<span data-ttu-id="5aa95-126">queryControl</span><span class="sxs-lookup"><span data-stu-id="5aa95-126">queryControl</span></span>](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

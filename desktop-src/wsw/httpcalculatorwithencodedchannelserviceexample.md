@@ -1,31 +1,31 @@
 ---
 title: HttpCalculatorWithEncodedChannelServiceExample
-description: Questo esempio illustra come usare l'host del servizio per ospitare un servizio di calcolatrice con un'implementazione del canale e del listener personalizzata che si trova su HTTP.
+description: Esaminare un esempio C++ dell'API Servizi Web Windows (WWSAPI) di una calcolatrice HTTP con servizio di canale codificato.
 ms.assetid: 3b8d58dd-2f0c-4008-81ad-abda23a26a52
 keywords:
-- HttpCalculatorWithEncodedChannelServiceExample native-servizi Web
+- HttpCalculatorWithEncodedChannelServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4f0e35c84d0e3e23d23e8acf2b8d1a5f1ced500
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c1eb0ef089b546a87ce741934ce26855e726c38a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332567"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404164"
 ---
-# <a name="httpcalculatorwithencodedchannelserviceexample"></a><span data-ttu-id="35eb9-106">HttpCalculatorWithEncodedChannelServiceExample</span><span class="sxs-lookup"><span data-stu-id="35eb9-106">HttpCalculatorWithEncodedChannelServiceExample</span></span>
+# <a name="httpcalculatorwithencodedchannelserviceexample"></a><span data-ttu-id="2f684-106">HttpCalculatorWithEncodedChannelServiceExample</span><span class="sxs-lookup"><span data-stu-id="2f684-106">HttpCalculatorWithEncodedChannelServiceExample</span></span>
 
-<span data-ttu-id="35eb9-107">Questo esempio illustra come usare l'host del servizio per ospitare un servizio di calcolatrice con un'implementazione del canale e del listener personalizzata che si trova su HTTP.</span><span class="sxs-lookup"><span data-stu-id="35eb9-107">This example shows how to use service host for hosting a calculator service with a custom channel and listener implementation that layer on top of HTTP.</span></span>
+<span data-ttu-id="2f684-107">Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice con un canale personalizzato e un'implementazione del listener su tale livello su HTTP.</span><span class="sxs-lookup"><span data-stu-id="2f684-107">This example shows how to use service host for hosting a calculator service with a custom channel and listener implementation that layer on top of HTTP.</span></span>
 
--   [<span data-ttu-id="35eb9-108">HttpCalculatorWithEncodedChannelService. cpp</span><span class="sxs-lookup"><span data-stu-id="35eb9-108">HttpCalculatorWithEncodedChannelService.cpp</span></span>](#httpcalculatorwithencodedchannelservicecpp)
--   [<span data-ttu-id="35eb9-109">EncodedChannel. h</span><span class="sxs-lookup"><span data-stu-id="35eb9-109">EncodedChannel.h</span></span>](#encodedchannelh)
--   [<span data-ttu-id="35eb9-110">EncodedChannel. cpp</span><span class="sxs-lookup"><span data-stu-id="35eb9-110">EncodedChannel.cpp</span></span>](#encodedchannelcpp)
--   [<span data-ttu-id="35eb9-111">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="35eb9-111">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
--   [<span data-ttu-id="35eb9-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="35eb9-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="2f684-108">HttpCalculatorWithEncodedChannelService.cpp</span><span class="sxs-lookup"><span data-stu-id="2f684-108">HttpCalculatorWithEncodedChannelService.cpp</span></span>](#httpcalculatorwithencodedchannelservicecpp)
+-   [<span data-ttu-id="2f684-109">EncodedChannel.h</span><span class="sxs-lookup"><span data-stu-id="2f684-109">EncodedChannel.h</span></span>](#encodedchannelh)
+-   [<span data-ttu-id="2f684-110">EncodedChannel.cpp</span><span class="sxs-lookup"><span data-stu-id="2f684-110">EncodedChannel.cpp</span></span>](#encodedchannelcpp)
+-   [<span data-ttu-id="2f684-111">CalculatorService.wsdl</span><span class="sxs-lookup"><span data-stu-id="2f684-111">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
+-   [<span data-ttu-id="2f684-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="2f684-112">Makefile</span></span>](#makefile)
 
-## <a name="httpcalculatorwithencodedchannelservicecpp"></a><span data-ttu-id="35eb9-113">HttpCalculatorWithEncodedChannelService. cpp</span><span class="sxs-lookup"><span data-stu-id="35eb9-113">HttpCalculatorWithEncodedChannelService.cpp</span></span>
+## <a name="httpcalculatorwithencodedchannelservicecpp"></a><span data-ttu-id="2f684-113">HttpCalculatorWithEncodedChannelService.cpp</span><span class="sxs-lookup"><span data-stu-id="2f684-113">HttpCalculatorWithEncodedChannelService.cpp</span></span>
 
 
 ```C++
@@ -273,7 +273,7 @@ Exit:
 
 
 
-## <a name="encodedchannelh"></a><span data-ttu-id="35eb9-114">EncodedChannel. h</span><span class="sxs-lookup"><span data-stu-id="35eb9-114">EncodedChannel.h</span></span>
+## <a name="encodedchannelh"></a><span data-ttu-id="2f684-114">EncodedChannel.h</span><span class="sxs-lookup"><span data-stu-id="2f684-114">EncodedChannel.h</span></span>
 
 
 ```C++
@@ -283,7 +283,7 @@ extern WS_CHANNEL_DECODER channelDecoder;
 
 
 
-## <a name="encodedchannelcpp"></a><span data-ttu-id="35eb9-115">EncodedChannel. cpp</span><span class="sxs-lookup"><span data-stu-id="35eb9-115">EncodedChannel.cpp</span></span>
+## <a name="encodedchannelcpp"></a><span data-ttu-id="2f684-115">EncodedChannel.cpp</span><span class="sxs-lookup"><span data-stu-id="2f684-115">EncodedChannel.cpp</span></span>
 
 
 ```C++
@@ -649,7 +649,7 @@ WS_CHANNEL_DECODER channelDecoder =
 
 
 
-## <a name="calculatorservicewsdl"></a><span data-ttu-id="35eb9-116">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="35eb9-116">CalculatorService.wsdl</span></span>
+## <a name="calculatorservicewsdl"></a><span data-ttu-id="2f684-116">CalculatorService.wsdl</span><span class="sxs-lookup"><span data-stu-id="2f684-116">CalculatorService.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -746,7 +746,7 @@ WS_CHANNEL_DECODER channelDecoder =
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="35eb9-117">Makefile</span><span class="sxs-lookup"><span data-stu-id="35eb9-117">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="2f684-117">Makefile</span><span class="sxs-lookup"><span data-stu-id="2f684-117">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>
@@ -777,9 +777,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
