@@ -1,21 +1,21 @@
 ---
-title: Supporto del contenuto lato dispositivo WPD (ContextMenu)
-description: Supporto di Device-Side contenuto
+title: Supporto del contenuto sul lato dispositivo WPD (ContextMenu)
+description: Informazioni su come usare l'API della shell di Windows o l'API WPD per ottenere i dati per gli oggetti dispositivo WPD, che non sono accessibili tramite il file system in Windows Vista.
 ms.assetid: 47fb7f49-9026-43c1-be46-8a520c048862
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b5e7029a6a772a5706eaf80270cc87ea83ab76b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 626c92633b1aa215c0e826a4b720de0375aa6048
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316371"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404284"
 ---
-# <a name="supporting-wpd-device-side-content"></a>Supporto del contenuto lato dispositivo WPD
+# <a name="supporting-wpd-device-side-content"></a>Supporto del contenuto sul lato dispositivo WPD
 
-Poiché il contenuto lato dispositivo non è accessibile tramite il file system in Windows Vista, è necessario usare l'API shell di Windows o l'API WPD per recuperare i dati per gli oggetti dispositivo. Questa è la differenza principale tra un normale gestore del menu di scelta rapida e un gestore del menu di scelta rapida WPD. Il codice di esempio seguente illustra il recupero del contenuto sul lato dispositivo tramite l'API shell di Windows.
+Poiché il contenuto sul lato dispositivo non è accessibile tramite il file system in Windows Vista, dovrai usare l'API shell di Windows o l'API WPD per recuperare i dati per gli oggetti dispositivo. Questa è la differenza principale tra un gestore di menu di scelta rapida normale e un gestore del menu di scelta rapida WPD. Il codice di esempio seguente illustra il recupero del contenuto sul lato dispositivo usando l'API della shell di Windows.
 
-Il primo passaggio è l'inizializzazione dell'elenco di identificatori di elemento o di PIDL. (Questo elenco contiene l'identificatore univoco per l'oggetto dispositivo specificato).
+Il primo passaggio è l'inizializzazione dell'elenco di identificatori di elemento o PIDL. Questo elenco contiene l'identificatore univoco per l'oggetto dispositivo specificato.
 
 
 ```C++
@@ -62,7 +62,7 @@ HRESULT CWPDContextMenu::_InitializePIDLArray(IDataObject *pDataObj)
 
 
 
-La funzione di inizializzazione chiama la \_ funzione ExaminePIDLArray, che recupera le proprietà per l'oggetto identificato da un PIDL nella matrice PIDL.
+La funzione di inizializzazione chiama la funzione ExaminePIDLArray, che recupera le proprietà per l'oggetto identificato da \_ un PIDL nella matrice PIDL.
 
 
 ```C++

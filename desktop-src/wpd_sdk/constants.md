@@ -1,31 +1,31 @@
 ---
 title: Costanti WPD
-description: Costanti
+description: Questi articoli descrivono i tipi di costanti per i dispositivi portatili Windows, ad esempio costanti generali, costanti di errore e costanti di evento.
 ms.assetid: 523d88ac-7a8c-4de3-b973-60ec87334a67
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef8c976f2f2f3d7d474a4535fa760ddabc7aef2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0e336fb4395c17e015194ed5a26725eb99c7477
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306652"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409874"
 ---
 # <a name="wpd-constants"></a>Costanti WPD
 
-I dispositivi portatili Windows definiscono i tipi costanti seguenti.
+Dispositivi portatili Windows definisce i tipi costanti seguenti.
 
 
 
-| Tipo di costante                                              | Descrizione                                                                                                                                                                                                                               |
+| Tipo costante                                              | Descrizione                                                                                                                                                                                                                               |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Costanti generali](general-constants.md)                 | Costanti di utilizzo generali per i dispositivi e le applicazioni.                                                                                                                                                                                       |
+| [Costanti generali](general-constants.md)                 | Le costanti di utilizzo generale per dispositivi e applicazioni.                                                                                                                                                                                       |
 | [Costanti di errore](error-constants.md)                     | Valori di errore restituiti dai metodi.                                                                                                                                                                                                         |
-| [Costanti evento](event-constants.md)                     | Tipi di evento definiti da dispositivi portatili Windows. Tra i tipi di evento sono inclusi oggetto aggiunto, rimosso oggetto, aggiornamento oggetto, spostamento oggetto, copia oggetto, trasferimento oggetto richiesto, ripristino del dispositivo, dispositivo rimosso e funzionalità del dispositivo aggiornate. |
-| [GUID del tipo di oggetto](object-type-guids.md)                 | Tipi di oggetto definiti da dispositivi portatili Windows. I tipi di oggetto includono gli oggetti audio, di posta elettronica e di immagine.                                                                                                                                  |
-| [GUID formato oggetto](object-format-guids.md)             | Tipi di formato di file definiti da dispositivi portatili Windows. I tipi di formato sono WMA, WMV e JPEG.                                                                                                                                           |
-| [GUID di tipo di risorsa](resource-type-guids.md)             | Tipi di risorse definiti da dispositivi portatili Windows. I tipi di risorsa includono i dati dell'immagine audio e di anteprima.                                                                                                                                |
-| [Proprietà e attributi](properties-and-attributes.md) | Proprietà e attributi definiti da dispositivi portatili Windows.                                                                                                                                                                            |
+| [Costanti dell'evento](event-constants.md)                     | Tipi di evento definiti da Dispositivi portatili Windows. I tipi di evento includono object added, object removed, object updated, object moved, object copied, object transfer requested, device reset, device removed e device capabilities updated. |
+| [GUID del tipo di oggetto](object-type-guids.md)                 | Tipi di oggetto definiti da Dispositivi portatili Windows. I tipi di oggetto includono oggetti audio, di posta elettronica e di immagine.                                                                                                                                  |
+| [GUID di formato oggetto](object-format-guids.md)             | Tipi di formato di file definiti da Dispositivi portatili Windows. I tipi di formato includono WMA, WMV e JPEG.                                                                                                                                           |
+| [GUID del tipo di risorsa](resource-type-guids.md)             | Tipi di risorse definiti da Dispositivi portatili Windows. I tipi di risorse includono i dati dell'immagine audio e di anteprima.                                                                                                                                |
+| [Proprietà e attributi](properties-and-attributes.md) | Proprietà e attributi definiti da Dispositivi portatili Windows.                                                                                                                                                                            |
 
 
 

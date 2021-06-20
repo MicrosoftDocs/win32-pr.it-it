@@ -1,19 +1,19 @@
 ---
-title: Proprietà Enabled (oggetto input vocale)
-description: Proprietà Enabled
+title: Proprietà Enabled (oggetto Input vocale)
+description: Informazioni sulla proprietà dell'oggetto Input vocale abilitato. Microsoft Agent è deprecato a livello di Windows 7.
 ms.assetid: d48f02f1-7d93-4780-88a7-61597672bb58
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ed92d33a6215a0534181f887662c3549f4f9f62
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 88a3e5d7989da4144805fbb926f744026033638d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400142"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407324"
 ---
-# <a name="enabled-property-speech-input-object"></a>Proprietà Enabled (oggetto input vocale)
+# <a name="enabled-property-speech-input-object"></a>Proprietà Enabled (oggetto Input vocale)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Restituisce un valore booleano che indica se l'input vocale è abilitato.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agente * * *. SpeechInput. Enabled**
+*agent***. SpeechInput.Enabled**
 
 
 
@@ -44,7 +44,7 @@ Restituisce un valore booleano che indica se l'input vocale è abilitato.
 
 ## <a name="remarks"></a>Commenti
 
-La proprietà [**Enabled**](enabled-property.md) riflette l'opzione di ascolto dei caratteri per l'input nella pagina input vocale della finestra delle proprietà dell'agente (Opzioni carattere avanzate). L'impostazione della proprietà ha effetto su tutti i caratteri dell'agente ed è di sola lettura. Questa proprietà può essere modificata solo dall'utente.
+La [**proprietà Enabled**](enabled-property.md) riflette l'opzione Caratteri in ascolto dell'input nella pagina Input vocale della finestra delle proprietà Agente (Opzioni carattere avanzate). L'impostazione della proprietà influisce su tutti i caratteri di Agent ed è di sola lettura. solo l'utente può modificare questa proprietà.
 
  
 

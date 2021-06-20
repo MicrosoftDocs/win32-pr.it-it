@@ -1,15 +1,15 @@
 ---
-description: Sicurezza
+description: Questo articolo elenca gli argomenti relativi alla sicurezza, tra cui IIsolatedAppLauncher, FveEnableRawAccessW, IPassportManager3 Add-ons e Ntsecpkg.
 ms.assetid: b53e9104-5515-463c-af95-1e1b51d97845
 title: Sicurezza (note per gli sviluppatori)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d11e655c38e4de274075ebe2102063742e2eeb6a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85f09338c60fcb5c3288f9299cac5acc86552c8a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877529"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410084"
 ---
 # <a name="security-developer-notes"></a>Sicurezza (note per gli sviluppatori)
 
@@ -17,10 +17,10 @@ ms.locfileid: "103877529"
 
 -   [**IIsolatedAppLauncher**](/windows/desktop/api/isolatedapplauncher/nn-isolatedapplauncher-iisolatedapplauncher)
 -   [**FveEnableRawAccessW**](fveenablerawaccessw.md)
--   [Componenti aggiuntivi di IPassportManager3](ipassportmanager3-add-ons.md)
+-   [Componenti aggiuntivi IPassportManager3](ipassportmanager3-add-ons.md)
 -   [Ntsecpkg](ntsecpkg.md)
 -   [API più sicura](safer-api.md)
--   [Centro sicurezza Windows](windows-security-center.md)
+-   [Sicurezza di Windows Center](windows-security-center.md)
 
  
 

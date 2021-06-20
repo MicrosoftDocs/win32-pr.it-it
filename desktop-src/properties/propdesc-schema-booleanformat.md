@@ -1,21 +1,21 @@
 ---
-description: 'Specifica il modo in cui IPropertyDescription:: FormatForDisplay deve formattare il valore della proprietà come stringa. Questa operazione è applicabile solo se <displayInfo displayType=&\#0034;String&\#0034;> .'
+description: Specifica il modo in cui IPropertyDescription::FormatForDisplay deve formattare il valore della proprietà booleanFormat come stringa.
 ms.assetid: f6384910-4411-4ac2-884d-3476c1b6ff96
 title: booleanFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d91332f0cc062e7ee4a83e3584776ecf09c5c4b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 528458d9c31d54ef43eca8325b1daeef4eee1195
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967585"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405964"
 ---
 # <a name="booleanformat"></a>booleanFormat
 
-Specifica il modo in cui [**IPropertyDescription:: FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formattare il valore della proprietà come stringa. Questa operazione è applicabile solo se <displayInfo displayType="String"> . Deve essere presente un solo elemento [booleanFormat]() per ogni elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Specifica il modo [**in cui IPropertyDescription::FormatForDisplay deve**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) formattare il valore della proprietà come stringa. Questa opzione è applicabile solo se <displayInfo displayType="String"> . Deve essere presente un solo [elemento booleanFormat]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [booleanFormat]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non [viene specificato alcun elemento booleanFormat,]() le impostazioni predefinite dell'attributo vengono applicate alla descrizione della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 | Elemento padre                                   | Elementi figlio |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | nessuno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Nessuno           |
 
 
 
@@ -68,8 +68,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </thead>
 <tbody>
 <tr class="odd">
-<td>formato</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; YesNo &quot; . I valori validi sono i seguenti. 
+<td>formatAs</td>
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è YesNo &quot; . I valori validi sono i seguenti. 
 <table>
 <thead>
 <tr class="header">
@@ -80,15 +80,15 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>YesNo</td>
-<td>Valore predefinito. Formatta il valore come &quot; Yes &quot; o &quot; No &quot; . Richiede che il tipo di proprietà sia booleano.</td>
+<td>Valore predefinito. Formatta il valore come &quot; Sì &quot; o &quot; &quot; No. Richiede che il tipo di proprietà sia booleano.</td>
 </tr>
 <tr class="even">
-<td>OnOff</td>
-<td>Formatta il valore come &quot; on &quot; o &quot; off &quot; . Richiede che il tipo di proprietà sia booleano.</td>
+<td>Onoff</td>
+<td>Formatta il valore come &quot; On &quot; o &quot; &quot; Off. Richiede che il tipo di proprietà sia booleano.</td>
 </tr>
 <tr class="odd">
 <td>TrueFalse</td>
-<td>Formatta il valore come &quot; true &quot; o &quot; false &quot; . Richiede che il tipo di proprietà sia booleano.</td>
+<td>Formatta il valore come &quot; True &quot; o &quot; &quot; False. Richiede che il tipo di proprietà sia booleano.</td>
 </tr>
 </tbody>
 </table>

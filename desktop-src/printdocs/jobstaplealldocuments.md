@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento JobStapleAllDocuments, che descrive le caratteristiche di graffatura dell'output del processo.
 ms.assetid: a6721c13-a3dc-4273-b40f-2a28184b04a9
 title: JobStapleAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9abf6184c3164e0e5a1492911e15794ea7e1d948
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8f9598f09181a225bf10d097b8c2aedaf19373a1
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993908"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408644"
 ---
 # <a name="jobstaplealldocuments"></a>JobStapleAllDocuments
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di graffatura dell'output. Tutti i documenti nel processo vengono graffati insieme. Le parole chiave JobStapleAllDocuments e DocumentStaple si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra queste parole chiave.
+Descrive le caratteristiche di graffatura dell'output. Tutti i documenti nel processo vengono graffati insieme. Le parole chiave JobStapleAllDocuments e DocumentStaple si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive le caratteristiche di graffatura dell'output. Tutti i documenti nel pro
 
 | Nome | Valore |
 |----------------------------|--------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                             |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                             |
 | Prefisso di ambito <br/> | Processo<br/>                                                                 |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize <br/> |
 
@@ -67,7 +67,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati          | Unità                       | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                               |
 |------------------------------------|--------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | Caratteri<br/>      | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                    |
+| \_OptionName\_<br/>          | string<br/>  | Caratteri<br/>      | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                    |
 | \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>             | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                          |
 | \_AngleValue\_<br/>          | numero intero<br/> | gradi<br/>         | Maggiore di 0.<br/>                                                                                                                                                            | Specifica l'angolo di graffatura rispetto alla larghezza di PageImageableSize. L'angolo di graffatura viene misurato in senso antiorario.<br/> |
 | \_SheetCapacityValue\_<br/>  | numero intero<br/> | fogli di supporti<br/> | Maggiore di 0.<br/>                                                                                                                                                            | Specifica il numero di fogli supportati dall'opzione di graffatura per l'oggetto MediaType attualmente selezionato.<br/>                                          |

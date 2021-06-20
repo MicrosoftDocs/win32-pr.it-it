@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento DocumentInputBin, che descrive il bin di input installato in un dispositivo o l'elenco completo dei contenitori supportati per un dispositivo.
 ms.assetid: 334503d7-c044-41f7-b6aa-892b002b7a4e
 title: DocumentInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57890492ed5f0b575e6d462351282dd199f34f45
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 452e2f94b3e75a2b0555610db26d69e2a2f7548b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997768"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409304"
 ---
 # <a name="documentinputbin"></a>DocumentInputBin
 
@@ -29,7 +29,7 @@ Descrive il bin di input installato in un dispositivo o l'elenco completo dei co
 
 | Nome | Valore |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                             |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                             |
 | Prefisso di ambito <br/> | Documento<br/>                                                                                                            |
 | Note <br/>          | I bin supportati che non sono attualmente installati devono essere contrassegnati come vincolati nel documento PrintCapabilities.<br/> |
 
@@ -96,13 +96,13 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>        |
 | \_EnvelopeOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Specifica il tipo di contenitore.<br/>                                           |
-| \_FeedTypeValue\_<br/>           | string<br/>  | n/d<br/>        | Automatico, Manuale.<br/>                                                                                                                                                         | Specifica il meccanismo di feed del contenitore.<br/>                                 |
+| \_FeedTypeValue\_<br/>           | string<br/>  | n/d<br/>        | Automatico, Manuale.<br/>                                                                                                                                                         | Specifica il meccanismo di avanzamento del contenitore.<br/>                                 |
 | \_MediaCapacityValue\_<br/>      | numero intero<br/> | Fogli<br/>     | Vincolo integer massimo consentito dal dispositivo.<br/>                                                                                                                              | Specifica se il bin è un bin a capacità elevata (qualitativo).<br/>          |
-| \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | n/d<br/>        | Supportato, Nessuno.<br/>                                                                                                                                                           | Specifica la capacità di rilevamento automatico delle dimensioni dei supporti del dispositivo.<br/>            |
-| \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | n/d<br/>        | Supportato, Nessuno.<br/>                                                                                                                                                           | Specifica la capacità multimediale in numero di pagine (livello completo) del contenitore.<br/> |
-| \_MediaPathValue\_<br/>          | string<br/>  | n/d<br/>        | Linea retta, serpentina.<br/>                                                                                                                                                      | Specifica le caratteristiche del percorso del supporto.<br/>                         |
-| \_FeedFaceValue\_<br/>           | string<br/>  | n/d<br/>        | FaceUp, FaceDown<br/>                                                                                                                                                           | Specifica se i supporti devono essere stampati a faccia in su o in giù.<br/>           |
-| \_FeedDirectionValue\_<br/>      | string<br/>  | n/d<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Specifica se i supporti vengono prima alimentato dal bordo lungo o dal bordo breve.<br/>      |
+| \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | n/d<br/>        | Supportato, Nessuno.<br/>                                                                                                                                                           | Specifica la funzionalità di rilevamento automatico delle dimensioni dei supporti del dispositivo.<br/>            |
+| \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | n/d<br/>        | Supportato, Nessuno.<br/>                                                                                                                                                           | Specifica la capacità dei supporti in numero di pagine (livello completo) del contenitore.<br/> |
+| \_MediaPathValue\_<br/>          | string<br/>  | n/d<br/>        | Diritto, Serpentine.<br/>                                                                                                                                                      | Specifica le caratteristiche del percorso multimediale.<br/>                         |
+| \_FeedFaceValue\_<br/>           | string<br/>  | n/d<br/>        | FaceUp, FaceDown<br/>                                                                                                                                                           | Specifica se i supporti devono essere stampati a faccia in su o a faccia in giù.<br/>           |
+| \_FeedDirectionValue\_<br/>      | string<br/>  | n/d<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Specifica se il supporto viene alimentato per primo dal bordo lungo o dal bordo corto.<br/>      |
 
 
 
@@ -110,7 +110,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentInputBin">

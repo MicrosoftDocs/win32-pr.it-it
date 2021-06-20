@@ -1,21 +1,21 @@
 ---
-description: 'Specifica il modo in cui IPropertyDescription:: FormatForDisplay deve formattare il valore della proprietà come stringa. Questa operazione è applicabile solo se <displayInfo displayType=&\#0034;String&\#0034;> .'
+description: Specifica il modo in cui IPropertyDescription::FormatForDisplay deve formattare il valore della proprietà stringFormat come stringa.
 ms.assetid: 7c38bc15-be86-4260-b2e4-13afc90de6d7
 title: stringFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec05a6eedf1734c1d62c0503027810ad05916160
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 730355507b78d99eba02e82666427dd29425c942
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310110"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408354"
 ---
 # <a name="stringformat"></a>stringFormat
 
-Specifica il modo in cui [**IPropertyDescription:: FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formattare il valore della proprietà come stringa. Questa operazione è applicabile solo se <displayInfo displayType="String"> . Deve essere presente un solo elemento [StringFormat]() per ogni elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Specifica il modo [**in cui IPropertyDescription::FormatForDisplay deve**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) formattare il valore della proprietà come stringa. Questa opzione è applicabile solo se <displayInfo displayType="String"> . Deve essere presente un solo [elemento stringFormat]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [StringFormat]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non viene [specificato alcun elemento stringFormat,]() le impostazioni dell'attributo predefinite vengono applicate alla descrizione della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 | Elemento padre                                   | Elementi figlio |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | nessuno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Nessuno           |
 
 
 
@@ -69,8 +69,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </thead>
 <tbody>
 <tr class="odd">
-<td>formato</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; Generale &quot; . I valori validi sono i seguenti. 
+<td>formatAs</td>
+<td>Pubblica. facoltativo. Il valore predefinito è &quot; &quot; Generale. I valori validi sono i seguenti. 
 <table>
 <thead>
 <tr class="header">
@@ -85,11 +85,11 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="even">
 <td>FileName</td>
-<td>Formatta il valore come nome file. Nasconde l'estensione in base alle impostazioni utente. Richiede che il tipo di proprietà sia una stringa.</td>
+<td>Formatta il valore come nome file. Nasconde l'estensione in base alle impostazioni utente. Richiede che il tipo di proprietà sia String.</td>
 </tr>
 <tr class="odd">
 <td>FilePath</td>
-<td>Formatta il valore come percorso di file. Nasconde l'estensione in base alle impostazioni utente. Richiede che il tipo di proprietà sia una stringa.</td>
+<td>Formatta il valore come percorso di file. Nasconde l'estensione in base alle impostazioni utente. Richiede che il tipo di proprietà sia String.</td>
 </tr>
 <tr class="even">
 <td>Hyperlink</td>

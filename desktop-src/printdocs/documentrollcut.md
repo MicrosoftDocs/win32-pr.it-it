@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento DocumentRollCut, che descrive il metodo di taglio per la carta a rullo. Ogni documento viene gestito separatamente.
 ms.assetid: 8eb4e574-3209-459c-9a25-95377b2f7439
 title: DocumentRollCut
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3d4bfb09a1c3f6f43f11886685a0edfcf2bbd92
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 92f7232cbe9dafce25aa2ee482ca40bf99145841
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997048"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409184"
 ---
 # <a name="documentrollcut"></a>DocumentRollCut
 
@@ -27,7 +27,7 @@ Descrive il metodo di taglio per la carta a rullo. Ogni documento viene gestito 
 
 | Nome | Valore |
 |----------------------------|---------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>  |
+| Tipo di elemento <br/>   | Funzionalità<br/>  |
 | Prefisso di ambito <br/> | Documento<br/> |
 | Note <br/>          | nessuno<br/>     |
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentRollCut">

@@ -1,29 +1,29 @@
 ---
-description: È necessario inizializzare alcune costanti di effetto.
+description: Alcune costanti di effetto devono essere inizializzate. Vedere il codice di base per l'impostazione delle variabili di effetto in Direct3D 10.
 ms.assetid: 743261a8-fdd8-492e-be8a-4faeb9b6f986
 title: Impostare lo stato dell'effetto (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f14d4cdfb23c56f9534d1b4029482ce4e494b37
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6df7133276b6392abca8d75eed16de896fb58f84
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966025"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404724"
 ---
 # <a name="set-effect-state-direct3d-10"></a>Impostare lo stato dell'effetto (Direct3D 10)
 
-È necessario inizializzare alcune costanti di effetto. Una volta inizializzato, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering. È necessario aggiornare altre variabili ogni volta che viene chiamato il ciclo di rendering. Di seguito è riportato il codice di base per l'impostazione delle variabili di effetto, per ognuno dei tipi di variabili.
+Alcune costanti di effetto devono essere inizializzate. Dopo l'inizializzazione, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering. È necessario aggiornare altre variabili ogni volta che viene chiamato il ciclo di rendering. Il codice di base per l'impostazione delle variabili di effetto è illustrato di seguito, per ognuno dei tipi di variabili.
 
-Un effetto incapsula tutti gli Stati di rendering necessari per eseguire un passaggio di rendering. In termini di API, esistono tre tipi di stato incapsulati in un effetto.
+Un effetto incapsula tutto lo stato di rendering necessario per eseguire un passaggio di rendering. In termini di API, esistono tre tipi di stato incapsulati in un effetto.
 
 -   [Stato costante](#constant-state)
--   [Stato dello shader](#shader-state)
+-   [Stato shader](#shader-state)
 -   [Stato trama](#texture-state)
 
 ## <a name="constant-state"></a>Stato costante
 
-Per prima cosa, dichiarare le variabili in un effetto usando i tipi di dati HLSL.
+In primo luogo, dichiarare le variabili in un effetto usando i tipi di dati HLSL.
 
 
 ```
@@ -47,7 +47,7 @@ float4x4 g_mWorldViewProjection;    // World * View * Projection matrix
 
 
 
-In secondo luogo, dichiarare le variabili nell'applicazione che possono essere impostate dall'applicazione e aggiorneranno le variabili di effetto.
+In secondo piano, dichiarare le variabili nell'applicazione che possono essere impostate dall'applicazione e quindi aggiornare le variabili dell'effetto.
 
 
 ```
@@ -83,7 +83,7 @@ OnD3D10CreateDevice()
 
 
 
-In terzo luogo, usare i metodi Update per impostare il valore delle variabili nell'applicazione nelle variabili di effetto.
+In terzo piano, usare i metodi di aggiornamento per impostare il valore delle variabili nell'applicazione nelle variabili dell'effetto.
 
 
 ```
@@ -104,9 +104,9 @@ OnD3D10FrameRender()
 
 ### <a name="two-ways-to-get-the-state-in-an-effect-variable"></a>Due modi per ottenere lo stato in una variabile di effetto
 
-Esistono due modi per ottenere lo stato contenuto in una variabile effetto. Dato un effetto che è stato caricato in memoria.
+Esistono due modi per ottenere lo stato contenuto in una variabile di effetto. Dato un effetto caricato in memoria.
 
-Un modo consiste nell'ottenere lo stato del campionatore da un' [**interfaccia ID3D10EffectVariable**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effectvariable) di cui è stato eseguito il cast come interfaccia del campionatore.
+Un modo è ottenere lo stato del campionatore da [**un'interfaccia ID3D10EffectVariable**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effectvariable) di cui è stato eseguito il cast come interfaccia del campionatore.
 
 
 ```
@@ -123,7 +123,7 @@ if( g_pEffect10 )
 
 
 
-Un altro modo consiste nell'ottenere lo stato del campionatore da un' [**interfaccia ID3D10SamplerState**](/windows/desktop/api/D3D10/nn-d3d10-id3d10samplerstate).
+L'altro modo è ottenere lo stato del campionatore da [**un'interfaccia ID3D10SamplerState**](/windows/desktop/api/D3D10/nn-d3d10-id3d10samplerstate).
 
 
 ```
@@ -145,7 +145,7 @@ if( g_pEffect10 )
 
 
 
-## <a name="shader-state"></a>Stato dello shader
+## <a name="shader-state"></a>Stato shader
 
 Lo stato dello shader viene dichiarato e assegnato in una tecnica di effetto, all'interno di un passaggio.
 
@@ -164,11 +164,11 @@ technique10 RenderSceneWithTexture1Light
 
 
 
-Questa operazione funziona esattamente come se non si stesse usando un effetto. Sono disponibili tre chiamate, una per ogni tipo di shader (vertice, geometria e pixel). Il primo, SetVertexShader, chiama [**ID3D10Device:: VSSetShader**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-vssetshader). CompileShader è una funzione di effetto speciale che accetta il profilo dello shader (vs \_ 4 \_ 0) e il nome della funzione vertex shader (RenderVS). In altre parole, ciascuna di queste chiamate SetXXXShader compila la funzione shader associata e restituisce un puntatore allo shader compilato.
+Questa operazione funziona esattamente come se non si usasse un effetto. Sono disponibili tre chiamate, una per ogni tipo di shader (vertice, geometria e pixel). Il primo, SetVertexShader, chiama [**ID3D10Device::VSSetShader**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-vssetshader). CompileShader è una funzione di effetto speciale che accetta il profilo shader (vs 4 0) e il nome della funzione \_ \_ vertex shader (RenderVS). In altre parole, ognuna di queste chiamate SetXXXShader compila la funzione shader associata e restituisce un puntatore allo shader compilato.
 
 ## <a name="texture-state"></a>Stato trama
 
-Lo stato della trama è leggermente più complesso rispetto all'impostazione di una variabile, perché i dati della trama non sono semplicemente letti come una variabile, vengono campionati da una trama. Pertanto, è necessario definire la variabile di trama (proprio come una variabile normale ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento. Di seguito è riportato un esempio di una dichiarazione di variabile di trama e la dichiarazione dello stato di campionamento corrispondente.
+Lo stato della trama è un po' più complesso rispetto all'impostazione di una variabile, perché i dati di trama non vengono semplicemente letti come una variabile, ma vengono campionati da una trama. Pertanto, è necessario definire la variabile di trama (proprio come una variabile normale, ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento. Di seguito è riportato un esempio di dichiarazione di variabile di trama e di dichiarazione dello stato di campionamento corrispondente.
 
 
 ```
@@ -185,7 +185,7 @@ SamplerState MeshTextureSampler
 
 
 
-Di seguito è riportato un esempio di impostazione di una trama da un'applicazione. In questo esempio, la trama viene archiviata nei dati della mesh, che è stata caricata quando è stato creato l'effetto.
+Di seguito è riportato un esempio di impostazione di una trama da un'applicazione. In questo esempio la trama viene archiviata nei dati della mesh, caricati al momento della creazione dell'effetto.
 
 Il primo passaggio consiste nell'ottenere un puntatore alla trama dall'effetto (dalla mesh).
 
@@ -199,7 +199,7 @@ ID3D10EffectShaderResourceVariable* g_ptxDiffuse = NULL;
 
 
 
-Il secondo passaggio consiste nel specificare una visualizzazione per accedere alla trama. La visualizzazione definisce un modo generale per accedere ai dati dalla risorsa trama.
+Il secondo passaggio consiste nel specificare una vista per l'accesso alla trama. La vista definisce un modo generale per accedere ai dati dalla risorsa trama.
 
 
 ```
@@ -217,7 +217,7 @@ OnD3D10FrameRender()
 
 
 
-Per altre informazioni sulla visualizzazione delle risorse, vedere [texture views (Direct3D 10)](d3d10-graphics-programming-guide-resources-access-views.md).
+Per altre informazioni sulla visualizzazione delle risorse, vedere [Visualizzazioni trama (Direct3D 10).](d3d10-graphics-programming-guide-resources-access-views.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

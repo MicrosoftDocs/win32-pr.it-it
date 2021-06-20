@@ -1,22 +1,22 @@
 ---
 title: Informativa sulla privacy (Windows Media Format 11 SDK)
-description: Informativa sulla privacy
+description: Informazioni su un'informativa sulla privacy, in cui gli sviluppatori che usano Windows Media Format 11 SDK devono comunicare come potrebbe essere influenzata la privacy degli utenti.
 ms.assetid: d2535273-6671-4bd7-9c43-cbb8093d1d52
 keywords:
 - Windows Media Format SDK, informativa sulla privacy
 - informativa sulla privacy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c5de7329a16c91bd667b4d7a179c8b733f5dae9
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e5ba4440d75caa1e2f8ffcae6835a80e251d07cc
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400150"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404334"
 ---
 # <a name="privacy-statement-windows-media-format-11-sdk"></a>Informativa sulla privacy (Windows Media Format 11 SDK)
 
-Gli sviluppatori che compilano applicazioni su questo software dovrebbero comunicare chiaramente agli utenti finali il modo in cui potrebbe influire la privacy degli utenti finali. 
+Gli sviluppatori che compilano applicazioni su questo software devono comunicare chiaramente agli utenti finali come potrebbe essere influenzata la privacy degli utenti finali. 
 
 ## <a name="related-topics"></a>Argomenti correlati
 

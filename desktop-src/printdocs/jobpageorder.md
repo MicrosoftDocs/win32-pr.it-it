@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento JobPageOrder, che definisce l'ordine delle pagine fisiche per l'output.
 ms.assetid: 0c255d50-8b0e-4ecd-876d-eaaccdca7b27
 title: JobPageOrder
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bbae794f90718ec5dc7461f6495332809521e79
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: fa2216330034c458095af7e67ff0904100126451
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997758"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408744"
 ---
 # <a name="jobpageorder"></a>JobPageOrder
 
@@ -27,7 +27,7 @@ Definisce l'ordine delle pagine fisiche per l'output.
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Processo<br/>     |
 | Note <br/>          | nessuno<br/>    |
 
@@ -69,7 +69,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobPageOrder">

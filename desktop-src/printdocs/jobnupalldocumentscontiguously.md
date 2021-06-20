@@ -1,25 +1,25 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento JobNUpAllDocumentsContiguously, che descrive l'output di più pagine logiche in un singolo foglio fisico.
 ms.assetid: e73e1736-9be5-4831-8277-23a62658b7b5
 title: JobNUpAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f90620ac99bf97e85acb22c723a938c31605bd
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 9106259c80a7efb89cc4481780bfb55af4f07e23
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998088"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408864"
 ---
 # <a name="jobnupalldocumentscontiguously"></a>JobNUpAllDocumentsContiguously
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'output di più pagine logiche in un singolo foglio fisico. Tutti i documenti nel processo vengono compilati in modo contiguo. JobNUpAllDocumentsContiguously e DocumentNUp si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra queste parole chiave.
+Descrive l'output di più pagine logiche in un singolo foglio fisico. Tutti i documenti nel processo vengono compilati insieme in modo contiguo. JobNUpAllDocumentsContiguously e DocumentNUp si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
 
-Il diagramma seguente illustra un esempio con il documento 1 contenente 3 pagine e il documento 2 contenente 2 pagine. Ogni documento nel processo è duplex in modo contiguo. Le indicazioni per la presentazione mostrate nell'esempio sono l'opzione RightBottom.
+Il diagramma seguente illustra un esempio con il documento 1 contenente 3 pagine e il documento 2 contenente 2 pagine. Ogni documento del processo è duplex in modo contiguo. Le direzioni di presentazione mostrate nell'esempio sono l'opzione RightBottom.
 
-![diagramma che illustra come le pagine del documento vengono disposte su un singolo foglio in base all'impostazione documentnup](images/local-1242234459-jobduplexpics.gif)
+![diagramma che mostra come vengono disposte le pagine del documento in un singolo foglio in base all'impostazione di documentnup](images/local-1242234459-jobduplexpics.gif)
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -31,7 +31,7 @@ Il diagramma seguente illustra un esempio con il documento 1 contenente 3 pagine
 
 | Nome | Valore |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                             |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                             |
 | Prefisso di ambito <br/> | Processo<br/>                                                                                                                                 |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize, dove TopLeft è denotato dall'origine dell'altezza e della larghezza.<br/> |
 

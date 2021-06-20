@@ -1,37 +1,37 @@
 ---
-title: Visualizzazione corretta in una visualizzazione a DPI elevato
-description: Viene descritto come creare una finestra visualizzata correttamente su schermi a DPI elevato.
+title: Visualizzazione corretta su uno schermo con valori DPI elevati
+description: Descrive i passaggi per creare una finestra per l'applicazione che viene visualizzata correttamente in schermi con valori DPI elevati.
 ms.assetid: 72a4b076-1cf0-4dc9-bd75-43b5173fc2a0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58b3e82951dfa77e6f61c661b87064dad5cb9f08
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1dd45b4b654556fc251575410cc11f9b66961263
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963365"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406154"
 ---
-# <a name="displaying-properly-on-a-high-dpi-display"></a>Visualizzazione corretta in una visualizzazione a DPI elevato
+# <a name="displaying-properly-on-a-high-dpi-display"></a>Visualizzazione corretta su uno schermo con valori DPI elevati
 
-Anche se Direct2D risolve molti problemi di elevata risoluzione dei problemi, è necessario eseguire due passaggi per assicurarsi che l'applicazione funzioni correttamente su schermi a DPI elevato:
+Anche se Direct2D risolve automaticamente molti problemi di DPI elevati, è necessario eseguire due passaggi per assicurarsi che l'applicazione funzioni correttamente su schermi con valori DPI elevati:
 
--   [Passaggio 1: usare il valore DPI di sistema durante la creazione di Windows](#step-1-use-the-system-dpi-when-creating-windows)
--   [Passaggio 2: dichiarare che l'applicazione è compatibile con DPI](#step-2-declare-that-the-application-is-dpi-aware)
+-   [Passaggio 1: Usare l'interfaccia DPI di sistema durante la creazione di Windows](#step-1-use-the-system-dpi-when-creating-windows)
+-   [Passaggio 2: Dichiarare che l'applicazione è in grado di riconoscere DPI](#step-2-declare-that-the-application-is-dpi-aware)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Passaggio 1: usare il valore DPI di sistema durante la creazione di Windows
+## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Passaggio 1: Usare l'interfaccia DPI di sistema durante la creazione di Windows
 
-L'interfaccia [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) fornisce il metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) per il recupero del valore dpi del sistema. Fornisce le dimensioni orizzontali e verticali dello schermo in punti per pollice (DPI). Per utilizzare questi valori per impostare la larghezza di una finestra, utilizzare la formula seguente:
+[**L'interfaccia ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) fornisce il [**metodo GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) per il recupero dell'interfaccia DPI di sistema. Fornisce le dimensioni orizzontali e verticali della visualizzazione in punti per pollice (DPI). Per usare questi valori per impostare la larghezza di una finestra, usare la formula seguente:
 
-<*dpi* >  \* orizzontale  < *larghezza*, in pixel>/<*DPI orizzontale predefinito*>
+<*DPI orizzontale* >  \*  < *width*, in pixel>/<*valore DPI orizzontale predefinito*>
 
-... dove *DPI orizzontale* è il valore recuperati da [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) e *DPI orizzontale predefinito* è 96. La formula è simile alla dimensione verticale:
+... dove *DPI orizzontale* è il valore ritentato da [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) e *il valore DPI orizzontale* predefinito è 96. La formula è simile per le dimensioni verticali:
 
-<*dpi* >  \* verticale  < *altezza*, in pixel>/<*dpi verticale predefinito*>
+<*DPI verticale* >  \*  < *height*, in pixel>/<*DPI verticale predefinito*>
 
-... dove *dpi verticale* è il valore recuperato dal metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) e il valore *dpi verticale predefinito* è 96.
+... dove *DPI verticale* è il valore recuperato dal [**metodo GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) e *il valore DPI verticale* predefinito è 96.
 
-Il codice seguente usa il metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) per recuperare il valore dpi di sistema e quindi crea una finestra 640 × 480, ridimensionata in base al valore dpi del sistema.
+Il codice seguente usa il metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) per recuperare il valore DPI di sistema e quindi crea una finestra di 640 × 480, ridimensionata al valore DPI di sistema.
 
 
 ```C++
@@ -64,15 +64,15 @@ Il codice seguente usa il metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-
 
 > [!Note]
 >
-> A partire da Windows 8, è possibile usare la classe [**Windows:: graphics::D:D isplayproperties**](/uwp/api/Windows.Graphics.Display.DisplayProperties) per ottenere il valore dpi del sistema.
+> A partire da Windows 8, è possibile usare la classe [**Windows::Graphics::D isplay::D isplayProperties**](/uwp/api/Windows.Graphics.Display.DisplayProperties) per ottenere il valore DPI di sistema.
 
- 
+ 
 
-## <a name="step-2-declare-that-the-application-is-dpi-aware"></a>Passaggio 2: dichiarare che l'applicazione è DPI-Aware
+## <a name="step-2-declare-that-the-application-is-dpi-aware"></a>Passaggio 2: Dichiarare che l'applicazione è DPI-Aware
 
-Quando un'applicazione dichiara se stessa in modo che sia compatibile con DPI, si tratta di un'istruzione che specifica che l'applicazione si comporta bene alle impostazioni DPI fino a 200 DPI. In Windows Vista e Windows 7, quando è abilitata la virtualizzazione DPI, le applicazioni che non sono compatibili con DPI vengono ridimensionate e le applicazioni ricevono dati virtualizzati dalle API di sistema, ad esempio la funzione [**GetSystemMetric**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) . Per dichiarare che l'applicazione è compatibile con DPI, completare i passaggi seguenti.
+Quando un'applicazione si dichiara in grado di riconoscere DPI, si tratta di un'istruzione che specifica che l'applicazione si comporta bene in base alle impostazioni DPI fino a 200 DPI. In Windows Vista e Windows 7, quando è abilitata la virtualizzazione DPI, le applicazioni che non supportano DPI vengono ridimensionate e le applicazioni ricevono dati virtualizzati dalle API di sistema, ad esempio la [**funzione GetSystemMetric.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Per dichiarare che l'applicazione è in grado di riconoscere DPI, seguire questa procedura.
 
-1.  Creare un file denominato DeclareDPIAware. manifest.
+1.  Creare un file denominato DeclareDPIAware.manifest.
 2.  Copiare il codice XML seguente nel file e salvarlo:
     ```C++
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" >
@@ -86,7 +86,7 @@ Quando un'applicazione dichiara se stessa in modo che sia compatibile con DPI, s
 
     
 
-3.  Nel file con estensione vcproj del progetto aggiungere la voce seguente all'interno di ogni elemento di configurazione in Progettovisualstudio/Configurations:
+3.  Nel file con estensione vcproj del progetto aggiungere la voce seguente all'interno di ogni elemento Configuration in VisualStudioProject/Configurations:
     ```C++
     <Tool
         Name="VCManifestTool"
@@ -103,6 +103,6 @@ Quando un'applicazione dichiara se stessa in modo che sia compatibile con DPI, s
 [Direct2D e High-DPI](direct2d-and-high-dpi.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,29 +1,29 @@
 ---
 title: RequestReplyTcpServerExample
-description: Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi.
+description: Vedere un esempio di richiesta e risposta al server TCP che usa l'API dei servizi Web Windows (WWSAPI). Questo esempio accetta un canale e riceve e risponde ai messaggi.
 ms.assetid: da9a507b-952d-4378-a37f-c2c4407335e8
 keywords:
-- RequestReplyTcpServerExample native-servizi Web
+- RequestReplyTcpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e6c2d33029c588823e5301198cf4562cc194782
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3dd347c5adad07140ed2b9942a1a9718bf9f5f85
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297929"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404084"
 ---
 # <a name="requestreplytcpserverexample"></a>RequestReplyTcpServerExample
 
-Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi.
+In questo esempio viene illustrato un server TCP che accetta un canale e riceve e risponde ai messaggi.
 
--   [RequestReplyTcpServer. cpp](#requestreplytcpservercpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [RequestReplyTcpServer.cpp](#requestreplytcpservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="requestreplytcpservercpp"></a>RequestReplyTcpServer. cpp
+## <a name="requestreplytcpservercpp"></a>RequestReplyTcpServer.cpp
 
 
 ```C++
@@ -490,7 +490,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -633,9 +633,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Percorso di visualizzazione semplice e intuitivo della cartella padre di un elemento.
+description: Informazioni sulla proprietà System.ItemFolderPathDisplay, che rappresenta il percorso di visualizzazione descrittivo della cartella padre di un elemento.
 ms.assetid: 16f67edc-ca8a-4c2e-9d9b-be8600446e51
-title: System. ItemFolderPathDisplay
+title: System.ItemFolderPathDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c4ae4c9178356d36c644f1bc886d63331155e88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c12909b29790ea2c016154cea9fccf7c53e45630
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311340"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403934"
 ---
-# <a name="systemitemfolderpathdisplay"></a>System. ItemFolderPathDisplay
+# <a name="systemitemfolderpathdisplay"></a>System.ItemFolderPathDisplay
 
-Percorso di visualizzazione semplice e intuitivo della cartella padre di un elemento.
+Percorso di visualizzazione descrittivo della cartella padre di un elemento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,9 +33,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Se [System. ItemPathDisplay](./props-system-itempathdisplay.md) è un VT \_ vuoto, anche questa proprietà deve essere vuota. In caso contrario, deve essere derivato in modo appropriato dall'origine dati da System. ItemPathDisplay.
+Se [System.ItemPathDisplay è](./props-system-itempathdisplay.md) VT \_ EMPTY, anche questa proprietà deve essere vuota. In caso contrario, deve essere derivato in modo appropriato dall'origine dati da System.ItemPathDisplay.
 
 Valori di esempio
 
@@ -44,10 +44,10 @@ Valori di esempio
 | Percorso                                   | ItemFolderPathDisplay    |
 |----------------------------------------|--------------------------|
 | c: \\ file \\ personali \\hello.txt         | c: \\ file \\ personali      |
-| \\\\\\condivisione server \\ mydir \\goodnews.doc | \\\\\\mydir condivisione \\ Server |
-| \\\\\\numbers.xls condivisione \\ Server         | \\\\\\condivisione server        |
-| c: \\ cartella di alimenti \\                     | c: \\ cibo                 |
-| /Mailbox account/Inbox/' re: Hello!'    | Account/posta in arrivo di/Mailbox   |
+| \\\\condivisione \\ server \\ mydir \\goodnews.doc | \\\\condivisione \\ server \\ mydir |
+| \\\\condivisione \\ server \\numbers.xls         | \\\\condivisione \\ server        |
+| c: \\ food \\ MyFolder                     | c: \\ food                 |
+| /Mailbox Account/Inbox/'Re: Hello!'    | /Mailbox Account/Inbox   |
 
 
 
@@ -57,7 +57,7 @@ Valori di esempio
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,13 +66,13 @@ Valori di esempio
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -81,13 +81,13 @@ Valori di esempio
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

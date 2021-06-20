@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento JobStapleAllDocuments, che descrive le caratteristiche di graffatura dell'output.
 ms.assetid: 53e38979-2065-4304-a0ed-0434c8d2efc8
 title: DocumentStaple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 338a72baecc62d22ac63ef50d8ce8967c7fd534a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: bc2cda02c452ebb053c71811fb2642cea7371b2f
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997038"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409134"
 ---
 # <a name="documentstaple"></a>DocumentStaple
 
@@ -27,7 +27,7 @@ Descrive le caratteristiche di graffatura dell'output. Ogni documento viene graf
 
 | Nome | Valore |
 |----------------------------|--------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                             |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                             |
 | Prefisso di ambito <br/> | Documento<br/>                                                            |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize.<br/> |
 
@@ -78,7 +78,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentStaple">

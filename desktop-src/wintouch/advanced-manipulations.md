@@ -1,40 +1,40 @@
 ---
-title: Manipolazioni avanzate
-description: In questa sezione vengono illustrate le modifiche avanzate per le applicazioni.
+title: Modifiche avanzate
+description: Visualizzare la pagina di destinazione per le modifiche avanzate per le applicazioni. Vedere i collegamenti alle pagine di panoramica, espansione, rotazione e traduzione.
 ms.assetid: 8a1cff27-b2c0-4e72-9f4c-df656059953f
 keywords:
-- Windows Touch, modifiche
+- Windows Touch, manipolazioni
 - Windows Touch, modifiche avanzate
 - Windows Touch, modifiche complesse
 - manipolazioni, avanzate
 - manipolazioni, complesse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 628e85d9b2963e6377ba5ab239d10c70e8343465
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48c059ad30a338fe5d413ff6c7e6e7f2e9383dc9
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044201"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406324"
 ---
-# <a name="advanced-manipulations"></a>Manipolazioni avanzate
+# <a name="advanced-manipulations"></a>Modifiche avanzate
 
-In questa sezione vengono illustrate le modifiche avanzate per le applicazioni.
+Questa sezione illustra le modifiche avanzate per le applicazioni.
 
-Ai fini dell'usabilità, potrebbe essere necessario aggiungere modifiche complesse all'applicazione in modo che gli oggetti possano essere manipolati con un grado di granularità preciso. Nelle sezioni seguenti vengono descritte le manipolazioni avanzate.
+Ai fini dell'usabilità, è possibile aggiungere modifiche complesse all'applicazione in modo che gli oggetti possano essere manipolati con un livello di granularità fine. Le sezioni seguenti descrivono le modifiche avanzate.
 
 
 
 | Sezione                                                                | Descrizione                                           |
 |------------------------------------------------------------------------|-------------------------------------------------------|
-| [Cenni preliminari sulle manipolazioni avanzate](advanced-manipulations-overview.md) | Mostra le varie modifiche avanzate.             |
-| [Espansione avanzata](advanced-expansion.md)                           | Viene illustrato come abilitare il supporto per l'espansione avanzata.   |
-| [Rotazione avanzata](advanced-rotation.md)                             | Viene illustrato come abilitare il supporto per la rotazione avanzata.    |
-| [Traduzione avanzata](advanced-translation.md)                       | Viene illustrato come abilitare il supporto per la conversione avanzata. |
+| [Panoramica delle modifiche avanzate](advanced-manipulations-overview.md) | Mostra le varie modifiche avanzate.             |
+| [Espansione avanzata](advanced-expansion.md)                           | Illustra come abilitare il supporto per l'espansione avanzata.   |
+| [Rotazione avanzata](advanced-rotation.md)                             | Illustra come abilitare il supporto per la rotazione avanzata.    |
+| [Traduzione avanzata](advanced-translation.md)                       | Illustra come abilitare il supporto per la traduzione avanzata. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -43,9 +43,9 @@ Ai fini dell'usabilità, potrebbe essere necessario aggiungere modifiche comples
 [Modifiche](getting-started-with-manipulations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

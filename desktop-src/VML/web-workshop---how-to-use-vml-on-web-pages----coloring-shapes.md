@@ -1,52 +1,52 @@
 ---
-title: Colori delle forme
-description: In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+title: Colorazione delle forme
+description: Questo articolo descrive la colorazione delle forme in VML, una funzionalità deprecata a Internet Explorer 9 di Windows.
 ms.assetid: f528f0c7-1351-4bca-b309-67511431b711
 keywords:
-- Workshop Web, forme colorazione
+- Web workshop, colorazione di forme
 - progettazione di pagine Web, colorazione di forme
-- Vector Markup Language (la), forme colorazione
-- LA (Vector Markup Language), forme colorazione
-- grafica vettoriale, forme colorazione
-- Forme la, colorazione
-- colori delle forme
-- Vector Markup Language (la), nomi dei colori delle parole chiave
-- LA (Vector Markup Language), nomi di colori delle parole chiave
+- Vector Markup Language (VML), colorazione delle forme
+- VML (Vector Markup Language), colorazione delle forme
+- grafica vettoriale, colorazione di forme
+- forme VML, colorazione
+- colorare le forme
+- Vector Markup Language (VML), nomi dei colori delle parole chiave
+- VML (Vector Markup Language),nomi dei colori delle parole chiave
 - grafica vettoriale, nomi dei colori delle parole chiave
 - nomi dei colori delle parole chiave
-- Vector Markup Language (la), triple RGB
-- LA (Vector Markup Language), triple RGB
+- Vector Markup Language (VML), triplette RGB
+- VML (Vector Markup Language),triplette RGB
 - grafica vettoriale, triplette RGB
 - Triplette RGB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1257c5f5b0cf8021658820f09de6e87099f0a52b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c203debd01d4234ae58900a023944511f9fc73c1
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047047"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407744"
 ---
-# <a name="coloring-shapes"></a>Colori delle forme
+# <a name="coloring-shapes"></a>Colorazione delle forme
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer 9 di Windows. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Come indicato nelle sezioni precedenti, è possibile usare "Red" per rappresentare un colore in rosso, "blu" per rappresentare un colore in blu e così via. In questo argomento verrà illustrato come creare forme nei colori desiderati.
+Come accennato nelle sezioni precedenti, è possibile usare "red" per rappresentare un colore in rosso, "blu" per rappresentare un colore in blu e così via. In questo argomento verrà illustrato come disegnare forme in qualsiasi colore desiderato.
 
-LA estende la sintassi di colore HTML e CSS. Quando il tipo di attributo di un elemento la è color, ad esempio **FillColor** e **StrokeColor** , è possibile esprimere il colore usando un [nome di colore della parola chiave](#keyword-color-name) o una [tripletta RGB](#rgb-triplet).
+VML estende la sintassi dei colori HTML e CSS. Quando il tipo di attributo di un elemento VML è color, ad esempio **fillcolor** e **strokecolor,** è possibile esprimere il colore usando un nome di colore della parola chiave o una [tripletta RGB.](#rgb-triplet) [](#keyword-color-name)
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="keyword-color-name"></a>Nome colore parola chiave
 
-HTML 4,0 definisce un elenco di nomi di colori delle parole chiave. Sono Aqua, black, Blue, fucsia, grigio, verde, lime, Maroon, Navy, olive, Purple, Red, Silver, alzavola, White e Yellow. Il valore RGB per questi 16 colori è definito nella [specifica HTML 4,0](https://www.w3.org/TR/REC-html40/types.mdl#h-6-5) .
+HTML 4.0 definisce un elenco di nomi di colori delle parole chiave. Si tratta di acqua, nero, blu, fucsia, grigio, verde, calce, maioon, blu, blu, viola, rosso, argento, verde acqua, bianco e giallo. Il valore RGB per questi 16 colori è definito nella specifica [HTML 4.0](https://www.w3.org/TR/REC-html40/types.mdl#h-6-5) .
 
-Ad esempio, è possibile disegnare un rettangolo riempito con il giallo specificando `fillcolor="yellow"` e assegnargli un contorno blu specificando `strokecolor="blue"` , come illustrato nella rappresentazione la seguente:
+Ad esempio, è possibile disegnare un rettangolo pieno di giallo specificando e assegnandogli un contorno blu specificando , come illustrato nella rappresentazione `fillcolor="yellow"` `strokecolor="blue"` VML seguente:
 
 ![color1.gif (305 byte)](images/color1.gif)
 
@@ -60,13 +60,13 @@ fillcolor="yellow" strokecolor="blue"/>
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="rgb-triplet"></a>Tripletta RGB
 
-Se il colore non è un [nome di colore di parola chiave](#keyword-color-name), è possibile esprimere il colore come una tripletta decimale RGB o una tripletta esadecimale RGB. Con le triplette RGB è possibile specificare i valori per i componenti rosso, verde e blu del colore, impostando ogni componente su un valore compreso tra 0 e 255 in decimale oppure 00 con FF in formato esadecimale.
+Se il colore non è un [nome](#keyword-color-name)di colore della parola chiave, è possibile esprimere il colore come tripletta decimale RGB o tripletta esadecimale RGB. Con le triplette RGB, è possibile specificare i valori per i componenti rosso, verde e blu del colore, impostando ogni componente su un valore compreso tra 0 e 255 in decimale o da 00 a FF in formato esadecimale.
 
-È ad esempio possibile creare un rettangolo con un colore personalizzato con un valore RGB 253, 249, 186 in Decimal specificando `fillcolor="rgb(253,249, 186)"` o `fillcolor="#FDF9BA"` , come illustrato nella rappresentazione la seguente. In esadecimale, il valore 253 diventa FD, 249 diventa F9 e 186 diventa BA.
+Ad esempio, è possibile creare un rettangolo riempito con un colore personalizzato con un valore RGB pari a 253, 249, 186 in formato decimale specificando o , come illustrato nella rappresentazione `fillcolor="rgb(253,249, 186)"` `fillcolor="#FDF9BA"` VML seguente. In formato esadecimale, il valore 253 diventa FD, 249 diventa F9 e 186 diventa BA.
 
 ![color2.gif (305 byte)](images/color2.gif)
 
@@ -80,18 +80,18 @@ fillcolor="#FDF9BA" strokecolor="blue"/>
 
 
 
-Se l'oggetto RGB in formato esadecimale ha un modello, ad esempio XXYYZZ, è possibile abbreviare l'oggetto con XYZ. Ad esempio, " \# 66FF99" può essere scritto come " \# 6F9".
+Se il RGB in formato esadecimale ha un modello come XXYYZZ, è possibile abbreviarlo in XYZ. Ad esempio, \# "66FF99" può essere scritto come \# "6F9".
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="summary"></a>Riepilogo
 
-In la è possibile rappresentare un colore in uno dei formati seguenti:
+In VML è possibile rappresentare un colore in uno dei formati seguenti:
 
-1.  FillColor = "blu"
-2.  FillColor = "RGB (0, 0255)"
-3.  FillColor = " \# 0000FF"
+1.  fillcolor="blue"
+2.  fillcolor="rgb(0,0,255)"
+3.  fillcolor=" \# 0000ff"
 
- 
+ 
 
- 
+ 
