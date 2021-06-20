@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento DocumentCoverBackSource, che specifica l'origine per un foglio di copertura posteriore personalizzato.
 ms.assetid: 43a0c881-75cc-4fbc-a0c3-b3eab9dfe4df
 title: DocumentCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6547ac2dc2c3f91ea4d0ebeea87622c790ae7d4d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5be16ab26a4aa3dd7109fee7d630ed354b9b686d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996278"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409354"
 ---
 # <a name="documentcoverbacksource"></a>DocumentCoverBackSource
 

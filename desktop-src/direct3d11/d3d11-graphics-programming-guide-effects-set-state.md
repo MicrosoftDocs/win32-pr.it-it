@@ -1,29 +1,29 @@
 ---
 title: Impostare lo stato dell'effetto (Direct3D 11)
-description: È necessario inizializzare alcune costanti di effetto.
+description: Alcune costanti di effetto devono solo essere inizializzate. Vedere il codice di base per l'impostazione delle variabili di effetto in Direct3D 12.
 ms.assetid: f94ba82e-fc67-4e4d-a49d-20e1163bdff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8df65e164c2df01f78ae9ea9ab83a547b977335
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 65c64f9e642e867e9398722d4590a4c2ce9193b4
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515529"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407664"
 ---
 # <a name="set-effect-state-direct3d-11"></a>Impostare lo stato dell'effetto (Direct3D 11)
 
-È necessario inizializzare alcune costanti di effetto. Una volta inizializzato, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering. È necessario aggiornare altre variabili ogni volta che viene chiamato il ciclo di rendering. Di seguito è riportato il codice di base per l'impostazione delle variabili di effetto, per ognuno dei tipi di variabili.
+Alcune costanti di effetto devono solo essere inizializzate. Una volta inizializzato, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering. Le altre variabili devono essere aggiornate ogni volta che viene chiamato il ciclo di rendering. Il codice di base per l'impostazione delle variabili di effetto è illustrato di seguito, per ognuno dei tipi di variabili.
 
-Un effetto incapsula tutti gli Stati di rendering necessari per eseguire un passaggio di rendering. In termini di API, esistono tre tipi di stato incapsulati in un effetto.
+Un effetto incapsula tutto lo stato di rendering necessario per eseguire un passaggio di rendering. In termini di API, esistono tre tipi di stato incapsulati in un effetto.
 
 -   [Stato costante](#constant-state)
--   [Stato dello shader](#shader-state)
+-   [Stato shader](#shader-state)
 -   [Stato trama](#texture-state)
 
 ## <a name="constant-state"></a>Stato costante
 
-Per prima cosa, dichiarare le variabili in un effetto usando i tipi di dati HLSL.
+In primo luogo, dichiarare le variabili in un effetto usando i tipi di dati HLSL.
 
 
 ```
@@ -47,7 +47,7 @@ float4x4 g_mWorldViewProjection;    // World * View * Projection matrix
 
 
 
-In secondo luogo, dichiarare le variabili nell'applicazione che possono essere impostate dall'applicazione e aggiorneranno le variabili di effetto.
+In secondo momento, dichiarare nell'applicazione le variabili che possono essere impostate dall'applicazione e quindi aggiornare le variabili di effetto.
 
 
 ```
@@ -83,7 +83,7 @@ OnD3D11CreateDevice()
 
 
 
-In terzo luogo, usare i metodi Update per impostare il valore delle variabili nell'applicazione nelle variabili di effetto.
+In terzo modo, usare i metodi update per impostare il valore delle variabili nell'applicazione nelle variabili di effetto.
 
 
 ```
@@ -104,9 +104,9 @@ OnD3D11FrameRender()
 
 ### <a name="two-ways-to-get-the-state-in-an-effect-variable"></a>Due modi per ottenere lo stato in una variabile di effetto
 
-Esistono due modi per ottenere lo stato contenuto in una variabile effetto. Dato un effetto che è stato caricato in memoria.
+Esistono due modi per ottenere lo stato contenuto in una variabile di effetto. Dato un effetto caricato in memoria.
 
-Un modo consiste nell'ottenere lo stato del campionatore da un [**ID3DX11EffectVariable**](id3dx11effectvariable.md) di cui è stato eseguito il cast come interfaccia del campionatore.
+Un modo è ottenere lo stato del campionatore da un [**id3DX11EffectVariable**](id3dx11effectvariable.md) di cui è stato eseguito il cast come interfaccia del campionatore.
 
 
 ```
@@ -123,7 +123,7 @@ if( g_pEffect11 )
 
 
 
-Un altro modo consiste nell'ottenere lo stato del campionatore da un [**ID3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).
+L'altro modo è ottenere lo stato del campionatore da [**id3D11SamplerState.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate)
 
 
 ```
@@ -145,7 +145,7 @@ if( g_pEffect11 )
 
 
 
-## <a name="shader-state"></a>Stato dello shader
+## <a name="shader-state"></a>Stato shader
 
 Lo stato dello shader viene dichiarato e assegnato in una tecnica di effetto, all'interno di un passaggio.
 
@@ -165,13 +165,13 @@ technique10 RenderSceneWithTexture1Light
 
 
 
-Questa operazione funziona esattamente come se non si stesse usando un effetto. Sono disponibili tre chiamate, una per ogni tipo di shader (vertice, geometria e pixel). Il primo, SetVertexShader, chiama [**sul ID3D11DeviceContext:: VSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader). CompileShader è una funzione di effetto speciale che accetta il profilo dello shader (vs \_ 4 \_ 0) e il nome della funzione vertex shader (RenderVS). In altre parole, ciascuna di queste chiamate CompileShader compila la funzione shader associata e restituisce un puntatore allo shader compilato.
+Questa operazione funziona esattamente come se non si usasse un effetto. Sono disponibili tre chiamate, una per ogni tipo di shader (vertice, geometria e pixel). Il primo, SetVertexShader, chiama [**ID3D11DeviceContext::VSSetShader.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader) CompileShader è una funzione di effetto speciale che accetta il profilo shader (vs 4 0) e il nome della funzione \_ \_ vertex shader (RenderVS). In altre parole, ognuna di queste chiamate CompileShader compila la funzione shader associata e restituisce un puntatore allo shader compilato.
 
-Si noti che non è necessario impostare tutti gli Stati dello shader. Questo passaggio non include alcuna chiamata a SetHullShader o SetDomainShader, vale a dire che lo scafo e gli shader del dominio attualmente associati rimarranno invariati.
+Si noti che non è necessario impostare tutto lo stato dello shader. Questo passaggio non include alcuna chiamata a SetHullShader o SetDomainShader, vale a dire che gli shader della forma e del dominio attualmente associati rimangono invariati.
 
 ## <a name="texture-state"></a>Stato trama
 
-Lo stato della trama è leggermente più complesso rispetto all'impostazione di una variabile, perché i dati della trama non sono semplicemente letti come una variabile, vengono campionati da una trama. Pertanto, è necessario definire la variabile di trama (proprio come una variabile normale ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento. Di seguito è riportato un esempio di una dichiarazione di variabile di trama e la dichiarazione dello stato di campionamento corrispondente.
+Lo stato della trama è un po' più complesso rispetto all'impostazione di una variabile, perché i dati della trama non vengono semplicemente letti come una variabile, ma vengono campionati da una trama. Pertanto, è necessario definire la variabile di trama (proprio come una variabile normale, ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento. Di seguito è riportato un esempio di dichiarazione di variabile di trama e di dichiarazione dello stato di campionamento corrispondente.
 
 
 ```
@@ -188,7 +188,7 @@ SamplerState MeshTextureSampler
 
 
 
-Di seguito è riportato un esempio di impostazione di una trama da un'applicazione. In questo esempio, la trama viene archiviata nei dati della mesh, che è stata caricata quando è stato creato l'effetto.
+Di seguito è riportato un esempio di impostazione di una trama da un'applicazione. In questo esempio la trama viene archiviata nei dati della mesh, caricati al momento della creazione dell'effetto.
 
 Il primo passaggio consiste nell'ottenere un puntatore alla trama dall'effetto (dalla mesh).
 
@@ -202,7 +202,7 @@ g_ptxDiffuse = g_pEffect11->GetVariableByName( "g_MeshTexture" )->AsShaderResour
 
 
 
-Il secondo passaggio consiste nel specificare una visualizzazione per accedere alla trama. La visualizzazione definisce un modo generale per accedere ai dati dalla risorsa trama.
+Il secondo passaggio consiste nel specificare una visualizzazione per l'accesso alla trama. La vista definisce un modo generale per accedere ai dati dalla risorsa trama.
 
 
 ```
@@ -220,9 +220,9 @@ OnD3D11FrameRender()
 
 
 
-Dal punto di vista dell'applicazione, le visualizzazioni di accesso non ordinato vengono gestite in modo analogo alle viste delle risorse dello shader. Tuttavia, nelle funzioni pixel shader e compute shader, i dati della vista di accesso non ordinati vengono letti da/scritti direttamente in. Non è possibile eseguire l'esempio da una visualizzazione di accesso non ordinata.
+Dal punto di vista dell'applicazione, le visualizzazioni di accesso non ordinato vengono gestite in modo analogo alle visualizzazioni delle risorse shader. Tuttavia, nell'effetto delle pixel shader e compute shader, i dati della visualizzazione di accesso non ordinati vengono letti o scritti direttamente in . Non è possibile eseguire il campionamento da una visualizzazione di accesso non ordinata.
 
-Per ulteriori informazioni sulla visualizzazione delle risorse, vedere [risorse](overviews-direct3d-11-resources.md).
+Per altre informazioni sulla visualizzazione delle risorse, vedere [Risorse.](overviews-direct3d-11-resources.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -231,9 +231,9 @@ Per ulteriori informazioni sulla visualizzazione delle risorse, vedere [risorse]
 [Rendering di un effetto (Direct3D 11)](d3d11-graphics-programming-guide-effects-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

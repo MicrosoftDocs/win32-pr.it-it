@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Le istanze ScoredProperty possono anche essere annidate all'interno di altre istanze scoredProperty o come elementi figlio di un'istanza option.
 ms.assetid: 071dc91f-3574-4e0e-b2ba-0e4a56ce4a28
-title: Istanze ScoredProperty annidate
+title: Istanze scoredProperty annidate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f1bfed09c48bc0ac6e93e09f96dc8116e8b0a91
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 15a80d291fa59b2f36191f42b2f99ea9d22789a2
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320933"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408604"
 ---
-# <a name="nested-scoredproperty-instances"></a>Istanze ScoredProperty annidate
+# <a name="nested-scoredproperty-instances"></a>Istanze scoredProperty annidate
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Si noti che non è possibile aggiungere istanze di ScoredProperty come elementi figlio di un'istanza di Option. Le istanze di ScoredProperty possono anche essere annidate all'interno di altre istanze di ScoredProperty. Questa operazione è utile quando una proprietà del dispositivo è complessa ed è rappresentata in modo ottimale da più sottoproprietà. L'aggiunta di sottoproprietà a una proprietà (o Public) esistente o a ScoredProperty è un modo efficace per migliorare un'opzione, mantenendo al tempo stesso la portabilità con le istanze delle opzioni esistenti. Ad esempio, le istanze di opzioni standard per la funzionalità MediaType contengono un ScoredProperty che descrive il peso del supporto come leggero, medio, intenso o intenso. Se si desidera una descrizione più precisa del peso, è possibile aggiungere una sottoproprietà (GramsPer100Sheets nell'esempio seguente) che contiene il peso effettivo (in grammi) di 100 fogli di supporti. L'opzione avanzata potrebbe essere simile all'esempio seguente.
+Si noti che non si è limitati all'aggiunta di istanze ScoredProperty come elementi figlio di un'istanza option. Le istanze ScoredProperty possono anche essere annidate all'interno di altre istanze scoredProperty. Ciò è utile quando una proprietà del dispositivo è complessa ed è rappresentata meglio da più sottoproprietà. L'aggiunta di sottoproprietà a una proprietà esistente (o pubblica) o ScoredProperty è un buon modo per migliorare un'opzione, mantenendo al tempo stesso la portabilità con le istanze Option esistenti. Ad esempio, le istanze Option standard per la funzionalità MediaType contengono un oggetto ScoredProperty che descrive il peso dei supporti come Light, Medium, Heavy o ExtraHeavy. Se si desidera una descrizione più precisa del peso, è possibile aggiungere una sottoproprietà (SheetsPer100Sheets nell'esempio seguente) che contiene il peso effettivo (in grammi) di 100 fogli di supporti. L'opzione avanzata potrebbe essere simile all'esempio seguente.
 
 ``` syntax
 <!-- Note: The following ScoredProperty is not a Public Print Schema ScoredProperty -->
@@ -30,7 +30,7 @@ Si noti che non è possibile aggiungere istanze di ScoredProperty come elementi 
 </psf:ScoredProperty>
 ```
 
-Un confronto tra le istanze di opzioni originali e avanzate produce una corrispondenza quasi perfetta, perché l'opzione Enhanced è un superset dell'originale e vengono mantenuti i percorsi e i valori di ognuna delle istanze di ScoredProperty originali.
+Un confronto tra le istanze Option originali e migliorate produce una corrispondenza quasi perfetta, perché l'opzione avanzata è un superset dell'originale e vengono mantenuti i percorsi e i valori di ognuna delle istanze scoredProperty originali.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

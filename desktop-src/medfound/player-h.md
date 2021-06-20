@@ -1,19 +1,19 @@
 ---
-description: Questo argomento contiene il codice per l'esercitazione su come riprodurre file multimediali con Media Foundation.
+description: Questo articolo contiene il codice per il file player.h per l'esercitazione Come riprodurre file multimediali con Media Foundation.
 ms.assetid: c3f05482-138c-4d95-9b76-a9715227961f
-title: Player. h
+title: player.h
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb04c0d99d2d83843fac8988050e17bf8ebe5efe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38c9d1c564edefb1683705d9ef8c4f009b061a7c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527859"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404594"
 ---
-# <a name="playerh"></a>Player. h
+# <a name="playerh"></a>player.h
 
-Questo argomento contiene il codice per l'esercitazione [su come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md).
+Questo argomento contiene il codice per [l'esercitazione Come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++
@@ -145,7 +145,7 @@ protected:
 
 <dl> <dt>
 
-[Esempio di riproduzione della sessione multimediale](media-session-playback-example.md)
+[Esempio di riproduzione di sessioni multimediali](media-session-playback-example.md)
 </dt> <dt>
 
 [Riproduzione di audio/video](audio-video-playback.md)

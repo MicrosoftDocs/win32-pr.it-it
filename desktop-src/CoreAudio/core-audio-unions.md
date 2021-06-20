@@ -1,19 +1,19 @@
 ---
-description: Questa sezione descrive le unioni usate dalle API audio di base.
+description: Questa sezione descrive le unioni usate dalle API Core Audio, ad esempio SpatialAudioHrtfDirectivityUnion.
 ms.assetid: 305D63E7-800C-4792-B04C-127E5844EF3E
 title: Unioni audio principali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c90af63027f6dca046d5314e33c16a5b87fb6a7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0c09473150fe36f18aa42c0ddb01b106327aa59b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104125766"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406964"
 ---
 # <a name="core-audio-unions"></a>Unioni audio principali
 
-Questa sezione descrive le unioni usate dalle API audio di base.
+Questa sezione descrive le unioni usate dalle API Core Audio.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ Questa sezione descrive le unioni usate dalle API audio di base.
 
 | Argomento                                                                                   | Descrizione                                                                                                                   |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [**SpatialAudioHrtfDirectivityUnion**](/windows/desktop/api/spatialaudiohrtf/ns-spatialaudiohrtf-spatialaudiohrtfdirectivityunion)<br/> | Definisce un modello di direttività audio spaziale per un [**ISpatialAudioObjectForHrtf**](/windows/desktop/api/spatialaudiohrtf/nn-spatialaudiohrtf-ispatialaudioobjectforhrtf).<br/> |
+| [**SpatialAudioHrtfDirectivityUnion**](/windows/desktop/api/spatialaudiohrtf/ns-spatialaudiohrtf-spatialaudiohrtfdirectivityunion)<br/> | Definisce un modello di directtività audio spaziale per [**un oggetto ISpatialAudioObjectForHrtf.**](/windows/desktop/api/spatialaudiohrtf/nn-spatialaudiohrtf-ispatialaudioobjectforhrtf)<br/> |
 
 
 

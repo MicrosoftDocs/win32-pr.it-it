@@ -1,23 +1,23 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Informazioni sull'elemento ParameterInit, che definisce un valore per un'istanza di un elemento ParameterDef.
 ms.assetid: d5419c40-43e9-49ff-a378-9aeb0757e400
 title: ParameterInit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16cb985e746b400b1c804f21b5996352ae590e3b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: e211fcad2c53824c7786850a7fc78c6825c219a7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104234565"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407264"
 ---
 # <a name="parameterinit"></a>ParameterInit
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Definisce un valore per un'istanza di un elemento ParameterDef. Un elemento ParameterInit è la destinazione del riferimento eseguito da un elemento ParameterRef.
+Definisce un valore per un'istanza di un elemento ParameterDef. Un elemento ParameterInit è la destinazione del riferimento effettuato da un elemento ParameterRef.
 
-## <a name="element-tag"></a>Tag elemento
+## <a name="element-tag"></a>Element Tag
 
 <ParameterInit>
 
@@ -29,21 +29,21 @@ Nella tabella seguente sono elencati gli attributi XML che possono essere relati
 
 | Attributo XML   | Dettagli                                                                                                                               |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| name<br/> | Include l'attributo Name dell'elemento ParameterDef che deve essere inizializzato nel contesto del documento corrente.<br/> |
+| name<br/> | Contiene l'attributo name dell'elemento ParameterDef che deve essere inizializzato nel contesto del documento corrente.<br/> |
 
 
 
  
 
-Per ulteriori informazioni, vedere la sezione [attributi XML](xml-attributes.md) .
+Per altre informazioni, vedere la [sezione Attributi](xml-attributes.md) XML.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-Nella tabella seguente sono elencati gli elementi che possono essere elementi padre di questo elemento, gli elementi che possono essere elementi figlio di questo elemento e tutte le restrizioni relative all'elemento stesso.
+Nella tabella seguente sono elencati gli elementi che possono essere elementi padre di questo elemento, gli elementi che possono essere elementi figlio di questo elemento ed eventuali restrizioni sull'elemento stesso.
 
 
 
-| Category                   |                                                                                                   |
+| Categoria                   |                                                                                                   |
 |----------------------------|---------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | PrintTicket (radice PrintTicket)<br/>                                                         |
 | Elementi figlio<br/>  | Valore (uno)<br/>                                                                            |
@@ -59,7 +59,7 @@ nessuno
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene inizializzato un parametro su 1. Nell'esempio in [ParameterDef](parameterdef.md) viene illustrato come impostare tutti gli elementi della proprietà necessari per questo parametro.
+Nell'esempio seguente viene inizializzato un parametro su 1. L'esempio in [ParameterDef](parameterdef.md) illustra come impostare tutti gli elementi Property necessari per questo parametro.
 
 ``` syntax
 <psf:ParameterInit name="psk:PageCopyCount">

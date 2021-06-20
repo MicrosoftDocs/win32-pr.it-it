@@ -1,19 +1,19 @@
 ---
-description: Questo argomento contiene il codice per la riproduzione audio/video dell'esercitazione in DirectShow.
+description: Questo articolo contiene il codice per il file video.cpp per l'esercitazione Riproduzione audio/video in DirectShow.
 ms.assetid: c406a099-4956-46a8-b1f4-6d2e6ab3427a
-title: video. cpp
+title: video.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 623372e1d958959d410e6e60f5a976f52f9f3180
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f24d7bd3f27ce995d69e3f1425b7cae95d8997f3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308960"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407854"
 ---
-# <a name="videocpp"></a>video. cpp
+# <a name="videocpp"></a>video.cpp
 
-Questo argomento contiene il codice per la [riproduzione audio/video dell'esercitazione in DirectShow](audio-video-playback-in-directshow.md).
+Questo argomento contiene il codice per l'esercitazione [Riproduzione audio/video in DirectShow.](audio-video-playback-in-directshow.md)
 
 
 ```C++
