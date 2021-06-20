@@ -1,39 +1,39 @@
 ---
-description: Il sink di file ASF è un'implementazione di IMFMediaSink fornita da Media Foundation che un'applicazione può usare per archiviare i dati del supporto ASF in un file. Per informazioni sul modello a oggetti dei sink multimediali ASF e sull'utilizzo generale, vedere la pagina relativa ai sink di supporto ASF.
+description: Informazioni sull'aggiunta di metadati al sink di file ASF, che un'applicazione può usare per archiviare i dati multimediali asf in un file.
 ms.assetid: ecfddf4e-71b4-42c4-8b54-9868cec6ed9b
 title: Aggiunta di metadati al sink di file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71bb63a10d935b52e6d048dbc5dcd07370dd2ab4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16ea86a09ff9e3d2a25bbf8d00d46691fd803365
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049533"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409964"
 ---
 # <a name="adding-metadata-to-the-file-sink"></a>Aggiunta di metadati al sink di file
 
-Il sink di file ASF è un'implementazione di [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) fornita da Media Foundation che un'applicazione può usare per archiviare i dati del supporto ASF in un file. Per informazioni sul modello a oggetti dei sink multimediali ASF e sull'utilizzo generale, vedere la pagina relativa ai [sink di supporto ASF](asf-media-sinks.md).
+Il sink di file ASF è un'implementazione di [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) fornita da Media Foundation che un'applicazione può usare per archiviare i dati multimediali asf in un file. Per informazioni sul modello a oggetti di ASF Media Sinks e sull'utilizzo generale, vedere [ASF Media Sinks](asf-media-sinks.md).
 
-Dopo aver [creato il sink di file ASF](creating-the-asf-file-sink.md), è necessario configurarlo con informazioni sui flussi e le informazioni di codifica nel file di output. Queste procedure sono descritte in [aggiungere informazioni sul flusso al sink di file ASF](adding-stream-information-to-the-asf-file-sink.md) e [impostare le proprietà nel sink di file](setting-properties-in-the-file-sink.md). Inoltre, è anche possibile aggiungere informazioni sui metadati, incluse le coppie nome/valore, ad esempio "autore", titolo ". In questo argomento viene descritto il processo di aggiunta di informazioni sui metadati al sink di file in modo che venga visualizzato nell' [oggetto intestazione ASF](asf-file-structure.md)finale.
+Dopo [aver creato il sink di file ASF,](creating-the-asf-file-sink.md)è necessario configurarlo con informazioni sui flussi e le informazioni di codifica nel file di output. Queste procedure sono descritte in [Aggiunta di informazioni sul flusso al sink di file ASF](adding-stream-information-to-the-asf-file-sink.md) e [impostazione delle proprietà nel sink di file](setting-properties-in-the-file-sink.md). È anche possibile aggiungere informazioni sui metadati includendo coppie nome/valore, ad esempio "Autore", Titolo". Questo argomento descrive il processo di aggiunta di informazioni sui metadati al sink di file in modo che venga visualizzato nell'oggetto intestazione [ASF finale.](asf-file-structure.md)
 
-È possibile aggiungere informazioni sui metadati al sink di file ASF prima di compilare la topologia di codifica. L'oggetto dell'oggetto ContentInfo ASF per il sink di file tiene traccia delle proprietà dei metadati e viene esposto all'applicazione tramite l'interfaccia [**IMFMetadata**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) . Alcune di queste proprietà, ad esempio "IsVBR" che indica se il file contiene flussi di velocità in bit variabili (VBR), vengono impostate automaticamente dal sink di file analizzando le proprietà di codifica del flusso impostate.
+È possibile aggiungere informazioni sui metadati al sink del file ASF prima di compilare la topologia di codifica. L'oggetto ContentInfo asf per il sink di file tiene traccia delle proprietà dei metadati e viene esposto all'applicazione tramite [**l'interfaccia IMFMetadata.**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) Alcune di queste proprietà, ad esempio "IsVBR" che indica se il file contiene flussi VBR (Variable Bit Rate), vengono impostate automaticamente dal sink di file analizzando le proprietà di codifica del flusso impostate.
 
-Per un elenco completo delle proprietà, vedere l'argomento "elenco attributi" nella documentazione relativa al formato SDK.
+Per un elenco completo delle proprietà, vedere l'argomento "Elenco attributi" nella documentazione di Format SDK.
 
-## <a name="using-the-imfmetadata-interface-on-the-asf-file-sink"></a>Utilizzo dell'interfaccia IMFMetadata nel sink di file ASF
+## <a name="using-the-imfmetadata-interface-on-the-asf-file-sink"></a>Uso dell'interfaccia IMFMetadata nel sink di file ASF
 
-1.  Eseguire una query sull'oggetto sink di file ASF per ottenere un puntatore all'implementazione dell'interfaccia [**IMFMetadataProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadataprovider) .
-2.  Chiamare [**IMFMetadataProvider:: GetMFMetadata**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadataprovider-getmfmetadata) per ottenere un puntatore [**IMFMetadata**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) .
+1.  Eseguire una query sull'oggetto sink del file ASF per ottenere un puntatore all'implementazione [**dell'interfaccia IMFMetadataProvider.**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadataprovider)
+2.  Chiamare [**IMFMetadataProvider::GetMFMetadata**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadataprovider-getmfmetadata) per ottenere un [**puntatore IMFMetadata.**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata)
 
-    Il parametro *pPresentationDescriptor* viene ignorato e l'applicazione può passare **null**. Se l'applicazione passa zero come identificatore del flusso nel parametro *dwStreamIdentifier* , il metodo recupera i metadati che si applicano all'intero file ASF. In caso contrario, vengono recuperati solo i metadati per il flusso.
+    Il *parametro pPresentationDescriptor* viene ignorato e l'applicazione può passare **NULL.** Se l'applicazione passa zero come identificatore di flusso nel *parametro dwStreamIdentifier,* il metodo recupera i metadati applicabili all'intero file ASF. In caso contrario, vengono recuperati solo i metadati per il flusso.
 
-3.  Chiamare [**IMFMetadata:: GetAllPropertyNames**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getallpropertynames) per recuperare l'elenco delle proprietà di codifica dei file impostate sul contenuto multimediale.
-4.  Chiamare [**IMFMetadata:: GetProperty**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getproperty) per ottenere i valori delle proprietà.
+3.  Chiamare [**IMFMetadata::GetAllPropertyNames**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getallpropertynames) per recuperare l'elenco delle proprietà di codifica file impostate nel contenuto multimediale.
+4.  Chiamare [**IMFMetadata::GetProperty**](/windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getproperty) per ottenere i valori della proprietà.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio di codice riportato di seguito viene illustrato come enumerare i nomi e i valori delle proprietà impostati nel file ASF.
+Il codice di esempio seguente illustra come enumerare i nomi e i valori delle proprietà impostati nel file ASF.
 
 
 ```C++
@@ -98,10 +98,10 @@ done:
 [Sink di supporti ASF](asf-media-sinks.md)
 </dt> <dt>
 
-[Componenti ASF a livello pipeline](pipeline-layer-asf-components.md)
+[Componenti ASF del livello pipeline](pipeline-layer-asf-components.md)
 </dt> <dt>
 
-[Supporto ASF in Media Foundation](asf-support-in-media-foundation.md)
+[Supporto di ASF in Media Foundation](asf-support-in-media-foundation.md)
 </dt> </dl>
 
  

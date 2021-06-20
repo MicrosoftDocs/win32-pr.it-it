@@ -1,27 +1,27 @@
 ---
-title: Recupero delle proprietà dell'oggetto WPD
-description: Recupero delle proprietà dell'oggetto
+title: Recupero delle proprietà degli oggetti WPD
+description: L'applicazione WpdServiceApiSample illustra come un'applicazione può recuperare le proprietà dell'oggetto contenuto supportate da un determinato servizio Contatti.
 ms.assetid: 7fbd6f65-366a-49ea-a680-be77ca0d64f2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e2c206b6e3afe75144ce10de615657e788d6d1c
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 98e57258993d0a81f68042195db2caf338c97c53
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424061"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404314"
 ---
-# <a name="retrieving-wpd-object-properties"></a>Recupero delle proprietà dell'oggetto WPD
+# <a name="retrieving-wpd-object-properties"></a>Recupero delle proprietà degli oggetti WPD
 
 I servizi contengono spesso oggetti figlio appartenenti a uno dei formati supportati da ogni servizio. Ad esempio, un servizio Contatti può supportare più oggetti contatto nel formato Contatto astratto. Ogni oggetto contatto è descritto dalle proprietà correlate (nome del contatto, numero di telefono, indirizzo di posta elettronica e così via).
 
-L'applicazione WpdServiceApiSample include codice che illustra come un'applicazione può recuperare le proprietà dell'oggetto contenuto supportate da un determinato servizio Contatti. Questo esempio usa le interfacce seguenti.
+L'applicazione WpdServiceApiSample include codice che illustra come un'applicazione può recuperare le proprietà dell'oggetto contenuto supportate da un determinato servizio Contatti. In questo esempio vengono utilizzate le interfacce seguenti.
 
 
 
 | Interfaccia | Descrizione    |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)             | Recupera **l'interfaccia IPortableDeviceContent2** per accedere ai metodi di servizio supportati. |
+| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)             | Recupera **l'interfaccia IPortableDeviceContent2** per accedere ai metodi del servizio supportati. |
 | [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)           | Fornisce l'accesso ai metodi specifici del contenuto.                                             |
 | [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)       | Recupera i valori delle proprietà dell'oggetto.                                                        |
 | [**IPortableDeviceValues**](iportabledevicevalues.md)               | Contiene i valori delle proprietà letti per l'oggetto.                                    |
@@ -31,7 +31,7 @@ L'applicazione WpdServiceApiSample include codice che illustra come un'applicazi
 
  
 
-Quando l'utente sceglie l'opzione "7" dalla riga di comando, l'applicazione richiama il metodo **ReadContentProperties** disponibile nel modulo ContentProperties.cpp.
+Quando l'utente sceglie l'opzione "7" nella riga di comando, l'applicazione richiama il metodo **ReadContentProperties** disponibile nel modulo ContentProperties.cpp.
 
 Questo metodo recupera le quattro proprietà seguenti per l'oggetto contatto specificato.
 
@@ -39,7 +39,7 @@ Questo metodo recupera le quattro proprietà seguenti per l'oggetto contatto spe
 
 | Proprietà                     | Descrizione                                                                                                                                                                                                      | PROPERTYKEY di Servizi dispositivi     | PROPERTYKEY WPD \_ equivalente         |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|-------------------------------------|
-| Identificatore dell'oggetto padre     | Stringa che specifica l'identificatore per l'elemento padre dell'oggetto specificato.                                                                                                                                            | PKEY \_ GenericObj \_ ParentID      | ID PADRE \_ \_ DELL'OGGETTO \_ WPD             |
+| Identificatore dell'oggetto padre     | Stringa che specifica l'identificatore per l'elemento padre dell'oggetto specificato.                                                                                                                                            | PKEY \_ GenericObj \_ ParentID      | ID PADRE \_ DELL'OGGETTO WPD \_ \_             |
 | Nome dell'oggetto                  | Stringa che specifica il nome dell'oggetto specificato.                                                                                                                                                             | PKEY \_ GenericObj \_ Name          | NOME OGGETTO \_ WPD \_                   |
 | Identificatore univoco permanente | Stringa che specifica un identificatore univoco per l'oggetto specificato. Questo identificatore è persistente tra le sessioni, a differenza dell'identificatore di oggetto. Per i servizi, deve essere una rappresentazione di stringa di un GUID. | PKEY \_ GenericObj \_ PersistentUID | \_ID UNIVOCO \_ PERSISTENTE \_ DELL'OGGETTO \_ WPD |
 | Formato oggetto                | Identificatore univoco globale (GUID) che specifica il formato del file corrispondente a un determinato oggetto                                                                                                        | PKEY \_ GenericObj \_ ObjectFormat  | FORMATO OGGETTO \_ WPD \_                 |
@@ -55,7 +55,7 @@ Questo metodo recupera le quattro proprietà seguenti per l'oggetto contatto spe
 
 Si noti che prima di recuperare le proprietà del contenuto, l'applicazione di esempio apre un servizio Contatti in un dispositivo connesso.
 
-Il codice seguente per il **metodo ReadContentProperties** illustra come l'applicazione usa l'interfaccia [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) per recuperare [**un'interfaccia IPortableDeviceProperties.**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) Passando propertyKEYS delle proprietà richieste al metodo [**IPortableDeviceProperties::GetValues,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) **ReadContentProperties** recupera i valori richiesti e li visualizza nella finestra della console.
+Il codice seguente per il **metodo ReadContentProperties** illustra come l'applicazione usa l'interfaccia [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) per recuperare [**un'interfaccia IPortableDeviceProperties.**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) Passando le proprietà PROPERTYKEYS delle proprietà richieste al metodo [**IPortableDeviceProperties::GetValues,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) **ReadContentProperties** recupera i valori richiesti e li visualizza nella finestra della console.
 
 
 ```C++

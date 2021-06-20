@@ -1,82 +1,82 @@
 ---
 title: Posizionamento di forme
-description: In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+description: Questo articolo descrive il posizionamento delle forme in VML, una funzionalità deprecata a Internet Explorer 9.
 ms.assetid: dbd68f54-201a-48dc-a3a9-a8dd42178c11
 keywords:
-- Web Workshop, posizionamento delle forme
+- Web workshop, posizionamento di forme
 - progettazione di pagine Web, posizionamento di forme
-- Vector Markup Language (la), posizionamento delle forme
-- LA (Vector Markup Language), posizionamento delle forme
-- grafica vettoriale, forme posizionamento
-- Forme la, posizionamento
+- Vector Markup Language (VML), posizionamento di forme
+- VML (Vector Markup Language),posizionamento di forme
+- grafica vettoriale, posizionamento di forme
+- forme VML, posizionamento
 - posizionamento di forme
-- Vector Markup Language (la), stile posizione statica
-- LA (Vector Markup Language), stile posizione statica
-- grafica vettoriale, stile posizione statica
-- stile posizione statica
-- Vector Markup Language (la), stile posizione relativa
-- LA (Vector Markup Language), stile di posizione relativo
-- grafica vettoriale, stile posizione relativa
-- stile posizione relativa
-- Vector Markup Language (la), stile di posizione assoluto
-- LA (Vector Markup Language), stile di posizione assoluto
-- grafica vettoriale, stile posizione assoluta
-- stile posizione assoluta
-- Vector Markup Language (la), stile posizione indice z
-- LA (Vector Markup Language), stile posizione indice z
-- grafica vettoriale, stile posizione indice z
-- stile posizione indice z
-- Vector Markup Language (la), stile posizione rotazione
-- LA (Vector Markup Language), stile posizione rotazione
-- grafica vettoriale, stile posizione rotazione
-- stile posizione rotazione
-- Vector Markup Language (la), Capovolgi stile posizione
-- LA (Vector Markup Language), Capovolgi stile posizione
-- grafica vettoriale, stile flip position
-- Inverti stile posizione
+- Vector Markup Language (VML), stile di posizione statica
+- VML (Vector Markup Language),stile di posizione statica
+- grafica vettoriale, stile di posizione statica
+- stile di posizione statica
+- Vector Markup Language (VML), stile di posizione relativa
+- VML (Vector Markup Language),stile di posizione relativa
+- grafica vettoriale, stile di posizione relativa
+- stile di posizione relativa
+- Vector Markup Language (VML), stile di posizione assoluta
+- VML (Vector Markup Language),absolute position style
+- grafica vettoriale, stile di posizione assoluta
+- stile di posizione assoluta
+- Vector Markup Language (VML),z-index position style
+- VML (Vector Markup Language),z-index position style
+- grafica vettoriale, stile di posizione z-index
+- Stile di posizione z-index
+- Vector Markup Language (VML), stile della posizione di rotazione
+- VML (Vector Markup Language),stile della posizione di rotazione
+- grafica vettoriale, stile di posizione di rotazione
+- stile della posizione di rotazione
+- Vector Markup Language (VML), stile di capovolgimento della posizione
+- VML (Vector Markup Language),flip position style
+- grafica vettoriale, stile posizione capovolgimento
+- stile di posizione capovolgimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd8e01d0c7962467b1894f0f4c2c6cd1f6b01509
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7c96a8de891ed1bbd1b9bfee9eff52ede946247b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046901"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407714"
 ---
 # <a name="positioning-shapes"></a>Posizionamento di forme
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer Windows 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Si è appreso come creare e colorare forme in una pagina Web usando la. In questo argomento verrà usato la per posizionare con precisione la grafica in una pagina Web.
+Si è appreso come disegnare e colorare forme in una pagina Web usando VML. In questo argomento si userà VML per posizionare con precisione la grafica in una pagina Web.
 
-LA utilizza la stessa sintassi definita nelle sezioni [modello di riquadro](https://www.w3.org/TR/PR-CSS2/box.mdl) e [modello di rendering visivo](https://www.w3.org/TR/PR-CSS2/visuren.mdl) di [CSS2](https://www.w3.org/TR/PR-CSS2/) per posizionare le forme in una pagina Web. È possibile usare [static](#static), [relativa](#relative)o [Absolute](#absolute) per determinare la posizione in cui si trova il punto di base in una pagina Web. È quindi possibile usare gli attributi di stile **superiore** e **sinistro** per specificare l'offset dal punto di base in cui verrà posizionata la casella contenitore per la forma.
+VML usa la stessa sintassi definita nelle sezioni Box Model (Modello [box)](https://www.w3.org/TR/PR-CSS2/box.mdl) e [Visual Rendering Model](https://www.w3.org/TR/PR-CSS2/visuren.mdl) (Modello di rendering visivo) di [CSS2](https://www.w3.org/TR/PR-CSS2/) per posizionare le forme in una pagina Web. È possibile usare [static](#static), [relative](#relative)o [absolute](#absolute) per determinare dove si trova il punto di base in una pagina Web. È quindi possibile usare  gli **attributi** di stile superiore e sinistro per specificare l'offset dal punto di base in cui verrà posizionata la casella contenitore per la forma.
 
-È inoltre possibile utilizzare [z-index](#z-index) per specificare l'ordine z delle forme in una pagina Web.
+È anche possibile usare [z-index](#z-index) per specificare l'ordine z delle forme in una pagina Web.
 
-Inoltre, la fornisce [rotazione](#rotation) e [Capovolgi](#flip) per ruotare o capovolgere le forme.
+VmL offre inoltre la [rotazione](#rotation) e il [capovolgimento](#flip) per ruotare o capovolgere le forme.
 
 In questo argomento
 
 -   [static](#static)
 -   [relative](#relative)
 -   [absolute](#absolute)
--   [indice z](#z-index)
--   [rotazione](#rotation)
+-   [z-index](#z-index)
+-   [Rotazione](#rotation)
 -   [flip](#flip)
 -   [Summary](#summary)
 
 ## <a name="static"></a>static
 
-Lo stile di posizione predefinito è statico, che indica ai browser di posizionare la forma in corrispondenza del punto corrente, ovvero il punto di base, nel flusso di testo e ignorare le impostazioni negli attributi di stile **superiore** e **sinistro** .
+Lo stile di posizione predefinito è statico, che indica ai browser di posizionare la forma in corrispondenza del  punto  corrente (il punto di base) nel flusso di testo e ignorare le impostazioni negli attributi di stile superiore e sinistro.
 
-Nella rappresentazione la seguente, ad esempio, il rosso ovale viene posizionato immediatamente dopo il testo "inizio della forma:", come illustrato nell'immagine seguente:
+Nella rappresentazione VML seguente, ad esempio, l'ovale rosso viene posizionato immediatamente dopo il testo "Beginning of the shape:", come illustrato nell'immagine seguente:
 
-![\-ps.gif Shape1 (2123 byte)](images/shape1-ps.gif)
+![shape1 \-ps.gif (2123 byte)](images/shape1-ps.gif)
 
 
 ```HTML
@@ -91,13 +91,13 @@ End.
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="relative"></a>relative
 
-L'impostazione dell'attributo di stile position su "relativa" consente di posizionare la casella contenitore con un offset dal punto corrente (il punto di base) nel flusso di testo. L'offset è determinato dalle impostazioni negli attributi di stile **superiore** e **sinistro** . Tenere presente che la casella contenitore che è posizionata come relativa occupa spazio nel flusso di testo.
+L'impostazione dell'attributo di stile della posizione su "relative" consente di posizionare la casella contenitore con un offset dal punto corrente (il punto di base) nel flusso di testo. L'offset è determinato dalle impostazioni negli attributi di stile **superiore** **e** sinistro. Tenere presente che la casella contenitore posizionata come relativa occupa spazio nel flusso di testo.
 
-Nella rappresentazione la seguente, ad esempio, il rosso ovale è posizionato a 20 punti da sinistra e 10 punti dalla parte superiore rispetto al punto corrente nel flusso di testo, come illustrato nell'immagine seguente:
+Nella rappresentazione VML seguente, ad esempio, l'ovale rosso viene posizionato 20 punti da sinistra e 10 punti dall'alto rispetto al punto corrente nel flusso di testo, come illustrato nell'immagine seguente:
 
 ![shape3.gif (2048 byte)](images/shape3.gif)
 
@@ -115,13 +115,13 @@ End.
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="absolute"></a>assoluto
 
-Impostando l'attributo di stile position su "Absolute" è possibile posizionare la casella contenente una distanza esatta dall'angolo superiore sinistro (il punto di base) del relativo elemento padre, ovvero l'elemento posizionato che contiene la forma. Tenere presente che la casella contenitore che è posizionata come assoluta non occupi spazio nel flusso di testo.
+L'impostazione dell'attributo di stile della posizione su "absolute" consente di posizionare la casella contenitore a una distanza esatta dall'angolo superiore sinistro (il punto di base) dell'elemento padre (l'elemento posizionato che contiene la forma). Tenere presente che la casella contenitore posizionata come assoluta non richiede spazio nel flusso di testo.
 
-Nella rappresentazione la seguente, ad esempio, il rosso ovale è contenuto all'interno dell' `<body>` elemento (l'intera pagina Web); Pertanto, il punto di base si trova nell'angolo superiore sinistro della pagina Web. La casella contenitore per l'ovale è posizionata esattamente a 20 punti da sinistra e 10 punti dalla parte superiore rispetto all'angolo superiore sinistro della pagina Web, come illustrato nell'immagine seguente:
+Nella rappresentazione VML seguente, ad esempio, l'ovale rosso è contenuto all'interno dell'elemento (l'intera pagina Web). Pertanto, il punto di base si trova nell'angolo superiore sinistro della `<body>` pagina Web. La casella contenitore per l'ovale è posizionata esattamente a 20 punti da sinistra e a 10 punti dall'alto, rispetto all'angolo superiore sinistro della pagina Web, come illustrato nell'immagine seguente:
 
 ![shape2.gif (2006 byte)](images/shape2.gif)
 
@@ -139,15 +139,15 @@ End.
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="z-index"></a>indice z
 
 È possibile posizionare una forma che si sovrappone a un'altra forma. In genere, il grafico elencato per ultimo nel codice HTML viene visualizzato nella parte superiore.
 
-In la è possibile controllare l'ordine z usando l'attributo di stile **z-index** . Il valore di questo attributo può essere zero, un numero intero positivo o un numero intero negativo. Il grafico con un valore di indice z più grande viene visualizzato sopra l'elemento grafico con un valore di indice z inferiore. Quando entrambi i grafici hanno lo stesso valore di indice z, il grafico elencato per ultimo nel codice HTML viene visualizzato nella parte superiore.
+In VML è possibile controllare l'ordine z usando **l'attributo di stile z-index.** Il valore di questo attributo può essere zero, un numero intero positivo o un numero intero negativo. L'elemento grafico con un valore z-index maggiore viene visualizzato sopra l'elemento grafico con un valore z-index più piccolo. Quando entrambi gli elementi grafici hanno lo stesso valore z-index, l'elemento grafico elencato per ultimo nel codice HTML viene visualizzato nella parte superiore.
 
-Nella rappresentazione la seguente, ad esempio, il rosso ovale viene visualizzato sopra il rettangolo blu. Questo è dovuto al fatto che il valore dell'indice z dell'ovale rosso è maggiore del valore dell'indice z del rettangolo blu.
+Nella rappresentazione VML seguente, ad esempio, l'ovale rosso viene visualizzato sopra il rettangolo blu. Questo perché il valore z-index dell'ovale rosso è maggiore del valore z-index del rettangolo blu.
 
 ![shape4.gif (572 byte)](images/shape4.gif)
 
@@ -163,7 +163,7 @@ fillcolor="red" />
 
 
 
-Se si modifica l'indice z, come illustrato nella seguente rappresentazione la, il rosso ovale si sposta dietro il rettangolo blu.
+Se si modifica l'indice z, come illustrato nella rappresentazione VML seguente, l'ovale rosso si sposterà dietro il rettangolo blu.
 
 ![shape5.gif (469 byte)](images/shape5.gif)
 
@@ -180,7 +180,7 @@ fillcolor="blue" />
 
 
 
-Se si specifica un numero intero negativo, è possibile usare z-index per posizionare la grafica dietro il normale flusso di testo, come illustrato nella rappresentazione la seguente.
+Se si specifica un numero intero negativo, è possibile usare z-index per posizionare la grafica dietro il normale flusso di testo, come illustrato nella rappresentazione VML seguente.
 
 ![shape6.gif (2125 byte)](images/shape6.gif)
 
@@ -198,47 +198,47 @@ End.
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
-## <a name="rotation"></a>rotazione
+## <a name="rotation"></a>Rotazione
 
-È possibile utilizzare l'attributo di stile **Rotation** per specificare il numero di gradi per cui si desidera che una forma accenda l'asse. Un valore positivo indica una rotazione in senso orario; un valore negativo indica una rotazione in senso antiorario.
+È possibile usare **l'attributo di** stile di rotazione per specificare quanti gradi si vuole che una forma accerti il relativo asse. Un valore positivo indica una rotazione in senso orario; un valore negativo indica una rotazione in senso antiorario.
 
-Ad esempio, se si specifica **Style**='... Rotation: 90', è possibile ruotare la forma 90 gradi in senso orario.
+Ad esempio, se si specifica **style**='... rotation:90', è possibile ruotare la forma di 90 gradi in senso orario.
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="flip"></a>flip
 
-È possibile utilizzare l'attributo **Flip** Style per capovolgere una forma sull'asse x o y in base alla tabella seguente:
+È possibile usare **l'attributo dello** stile di capovolgimento per capovolgere una forma sul relativo asse x o y in base alla tabella seguente:
 
 
 
 | Valore | Descrizione                                                  |
 |-------|--------------------------------------------------------------|
-| x     | Capovolgere la forma ruotata sull'asse y (Inverti le coordinate x) |
-| y     | Capovolgere la forma ruotata sull'asse x (coordinate y invertite) |
+| x     | Capovolgere la forma ruotata intorno all'asse y (inverti x ordinate) |
+| y     | Capovolgere la forma ruotata intorno all'asse x (inverte ordinate y) |
 
 
 
- 
+ 
 
-Nella proprietà Flip è possibile specificare sia x che y.
+Sia x che y possono essere specificati nella proprietà flip.
 
-Ad esempio, se si digita **Style**='... Flip: x y. la forma viene invertita sia sull'asse x che su quello y.
+Ad esempio, se si digita **style**='... flip:x y', la forma verrà capovolta sia sull'asse x che sull'asse y.
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="summary"></a>Riepilogo
 
-In base a quanto appreso, è possibile posizionare con precisione una forma in una pagina Web attenendosi alla seguente procedura:
+In base a quanto appreso, è possibile posizionare con precisione una forma in una pagina Web seguendo questa procedura:
 
-1.  Decidere dove si desidera che la forma venga visualizzata in una pagina Web e la dimensione della forma.
-2.  Specificare **Style**=' position: relativa (o relativa)' per determinare il punto di base.
-3.  Utilizzare **Left** e **Top** per specificare l'offset dal punto di base.
-4.  Usare **Width** e **Height** per specificare la dimensione della casella contenitore per la forma.
-5.  Utilizzare **z-index** per specificare l'ordine z della forma.
+1.  Decidere dove si vuole che la forma venga visualizzata in una pagina Web e le dimensioni della forma.
+2.  Specificare **style**='position:relative (or relative)' per determinare il punto di base.
+3.  Usare **left** e **top** per specificare l'offset dal punto di base.
+4.  Usare **larghezza** e **altezza** per specificare le dimensioni della casella contenitore per la forma.
+5.  Usare **z-index** per specificare l'ordine z della forma.
 
- 
+ 
 
- 
+ 

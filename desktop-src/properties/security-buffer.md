@@ -1,19 +1,19 @@
 ---
-description: Sicurezza
+description: Questo articolo elenca gli argomenti relativi alla Sistema di proprietà Windows, tra cui AllowedEnterpriseDataProtectionIdentities e EncryptionOwners.
 ms.assetid: 3754BBDB-3CBE-4C79-897D-15359B90AC82
-title: Sicurezza (sistema di proprietà di Windows)
+title: Sicurezza (Sistema di proprietà Windows)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15ae90a92103843e210cde4c81e3b07429bee86e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51f9aa9a536bb42fb3d08d6a3efb0ef092af29aa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878834"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405604"
 ---
-# <a name="security-windows-property-system"></a>Sicurezza (sistema di proprietà di Windows)
+# <a name="security-windows-property-system"></a>Sicurezza (Sistema di proprietà Windows)
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,9 +21,9 @@ ms.locfileid: "103878834"
 
 | Argomento                                                                                                                                        | Descrizione                   |
 |----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [System. Security. AllowedEnterpriseDataProtectionIdentities](https://www.bing.com/search?q=System.Security.AllowedEnterpriseDataProtectionIdentities)<br/> | Opzioni crittografia<br/> |
-| [System. Security. EncryptionOwners](props-system-security-encryptionowners.md)<br/>                                                    | Proprietà file<br/>     |
-| [System. Security. EncryptionOwnersDisplay](props-system-security-encryptionownersdisplay.md)<br/>                                      | Proprietà file<br/>     |
+| [System.Security.AllowedEnterpriseDataProtectionIdentities](https://www.bing.com/search?q=System.Security.AllowedEnterpriseDataProtectionIdentities)<br/> | Opzioni crittografia<br/> |
+| [System.Security.EncryptionOwners](props-system-security-encryptionowners.md)<br/>                                                    | Proprietà dei file<br/>     |
+| [System.Security.EncryptionOwnersDisplay](props-system-security-encryptionownersdisplay.md)<br/>                                      | Proprietà dei file<br/>     |
 
 
 

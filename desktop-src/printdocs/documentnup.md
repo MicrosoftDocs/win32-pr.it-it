@@ -1,25 +1,25 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento DocumentNUp, che descrive l'output e il formato di più pagine logiche in un singolo foglio fisico.
 ms.assetid: 941515a8-ba3f-47b9-9f3f-08a48122661a
 title: DocumentNUp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab531a2095e83aa35f3dff450270c2a5b4520d62
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8b49bd4fa3eb9f2b3b0083fc8022dbd6f41d090e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996288"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409264"
 ---
 # <a name="documentnup"></a>DocumentNUp
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'output e il formato di più pagine logiche in un singolo foglio fisico. Ogni documento viene compilato separatamente. DocumentNUp e JobNUpAllDocumentsContiguously si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
+Descrive l'output e il formato di più pagine logiche in un singolo foglio fisico. Ogni documento viene compilato separatamente. DocumentNUp e JobNUpAllDocumentsContiguously si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra queste parole chiave.
 
-Il diagramma seguente illustra un esempio con il documento 1 contenente 3 pagine e il documento 2 contenente 2 pagine. Ogni documento viene duplexato separatamente. La direzione di presentazione illustrata di seguito è l'opzione RightBottom.
+Il diagramma seguente illustra un esempio con il documento 1 contenente 3 pagine e il documento 2 contenente 2 pagine. Ogni documento viene duplexato separatamente. La direzione della presentazione illustrata di seguito è l'opzione RightBottom.
 
-![diagramma che illustra come vengono disposte le pagine del documento in un singolo foglio in base all'impostazione di documentnup](images/local-1663869164-docduplex1.gif)
+![diagramma che illustra come le pagine del documento vengono disposte su un singolo foglio in base all'impostazione documentnup](images/local-1663869164-docduplex1.gif)
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -31,7 +31,7 @@ Il diagramma seguente illustra un esempio con il documento 1 contenente 3 pagine
 
 | Nome | Valore |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                              |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                              |
 | Prefisso di ambito <br/> | Documento<br/>                                                                                                                             |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize, dove TopLeft è denotato dall'origine dell'asse x e dell'asse y.<br/> |
 

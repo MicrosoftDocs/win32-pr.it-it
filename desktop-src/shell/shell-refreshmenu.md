@@ -1,7 +1,7 @@
 ---
-description: Aggiorna il contenuto del menu Start. Utilizzato solo con i sistemi precedenti a Windows XP.
+description: Informazioni sul metodo Shell.RefreshMenu, che aggiorna il contenuto del menu Start. Usato solo con i sistemi precedenti a Windows XP.
 ms.assetid: 1269c66d-61df-432d-9220-5ac975e3ad58
-title: Metodo Shell. RefreshMenu (shldisp. h)
+title: Metodo Shell.RefreshMenu (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a5812312c846026f4e0c7d2a4f6a5f857a572a23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90020cd128f5cbc585bd7bc9ab33a8a81c745f8e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979767"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404534"
 ---
-# <a name="shellrefreshmenu-method"></a>Shell. RefreshMenu, metodo
+# <a name="shellrefreshmenu-method"></a>Metodo Shell.RefreshMenu
 
-Aggiorna il contenuto del menu **Start** . Utilizzato solo con i sistemi precedenti a Windows XP.
+Aggiorna il contenuto del menu **Start.** Usato solo con i sistemi precedenti a Windows XP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="remarks"></a>Commenti
 
-La funzionalità fornita da **RefreshMenu** viene gestita automaticamente in Windows XP o versioni successive. Non chiamare questo metodo in quel sistema operativo.
+La funzionalità fornita **da RefreshMenu** viene gestita automaticamente in Windows XP o versioni successive. Non chiamare questo metodo in tale sistema operativo.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato **RefreshMenu** in uso. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente mostra **RefreshMenu** in uso. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
 
-JScript
+Jscript:
 
 
 ```JScript
@@ -69,7 +69,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -109,11 +109,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

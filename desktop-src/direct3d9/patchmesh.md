@@ -1,19 +1,19 @@
 ---
-description: Definisce una mesh definita dalle patch di Bézier. La prima matrice è un elenco di vertici e la seconda matrice definisce le patch per la mesh mediante l'indicizzazione nella matrice di vertici.
+description: PatchMesh definisce una mesh definita dalle patch di Bézier, incluso un elenco di vertici e le patch per la mesh tramite l'indicizzazione nella matrice dei vertici.
 ms.assetid: vs|directx_sdk|~\patchmesh.htm
 title: PatchMesh
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fcdefac9799736c796aef7cbb7222ab1942540d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fabb3846246c7fb76a7146baf0b30bd9730fe24b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520890"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404714"
 ---
 # <a name="patchmesh"></a>PatchMesh
 
-Definisce una mesh definita dalle patch di Bézier. La prima matrice è un elenco di vertici e la seconda matrice definisce le patch per la mesh mediante l'indicizzazione nella matrice di vertici.
+Definisce una mesh definita dalle patch di Bézier. La prima matrice è un elenco di vertici e la seconda matrice definisce le patch per la mesh tramite l'indicizzazione nella matrice dei vertici.
 
 ``` syntax
 template PatchMesh
@@ -30,12 +30,12 @@ template PatchMesh
 Dove:
 
 -   nVertices: numero di vertici.
--   vertici \[ nVertices \] : matrice di vertici. Vedere [**vector**](vector.md).
+-   vertices \[ nVertices \] : matrice di vertici. Vedere [**Vector.**](vector.md)
 -   nPatches: numero di patch.
--   patch \[ nPatches \] : matrice di patch. Vedere [**patch**](patch.md).
--   \[ ... \] -È possibile usare qualsiasi modello di file con estensione x. Questa operazione rende l'architettura estendibile.
+-   patches \[ nPatches \] : matrice di patch. Vedere [**Patch**](patch.md).
+-   \[ ... \] - Qui è possibile usare qualsiasi modello di file con estensione x. In questo modo l'architettura è estensibile.
 
-Le patch usano i vertici nella matrice di vertici come punti di controllo per ogni patch. Si tratta di un modello legacy. Il modello mesh patch più recente è [**PatchMesh9**](patchmesh9.md).
+Le patch usano i vertici nella matrice di vertici come punti di controllo per ogni patch. Si tratta di un modello legacy. Il modello patch mesh più recente è [**PatchMesh9.**](patchmesh9.md)
 
 ## <a name="see-also"></a>Vedi anche
 

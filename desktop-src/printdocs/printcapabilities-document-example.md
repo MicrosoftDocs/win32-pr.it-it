@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Questo articolo include un esempio di documento PrintCapabilities. I nomi delle istanze nell'esempio sono solo a scopo illustrativo.
 ms.assetid: 86577c09-919b-4f07-9388-47879c656f32
 title: Esempio di documento PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a032958221f531186c5c6ec993102e574aefc315
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: f3e2bf839e3e88e43a295912966f5b1906ef8f35
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "106321107"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407104"
 ---
 # <a name="printcapabilities-document-example"></a>Esempio di documento PrintCapabilities
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Note: lo spazio dei nomi predefinito non è applicabile agli attributi XML. Devono essere qualificati in modo esplicito con prefisso. I nomi di istanza utilizzati nell'esempio seguente sono a solo illustrazione, sebbene siano generalmente conformi ai nomi di istanza definiti nelle parole chiave dello schema di stampa.
+Note: lo spazio dei nomi predefinito non si applica agli attributi XML. Devono essere qualificati in modo esplicito come prefisso. I nomi delle istanze usati nell'esempio seguente sono solo a scopo illustrativo, anche se in genere sono conformi ai nomi di istanza definiti nelle parole chiave dello schema di stampa.
 
 ``` syntax
 <psf:PrintCapabilities xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 

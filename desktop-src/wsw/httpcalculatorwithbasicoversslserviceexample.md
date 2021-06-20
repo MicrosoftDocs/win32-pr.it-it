@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithBasicOverSslServiceExample
-description: Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio di calcolo tramite HTTP, con la sicurezza del trasporto SSL e l'autenticazione di base dell'intestazione HTTP.
+description: Esaminare un esempio C++ di API dei servizi Web Windows (WWSAPI) di una calcolatrice HTTP con servizio over-SSL di base.
 ms.assetid: ff56afec-da8c-4a2c-b26e-a065f9b73db1
 keywords:
-- HttpCalculatorWithBasicOverSslServiceExample native-servizi Web
+- HttpCalculatorWithBasicOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18517b52bf0a623877dc2d04b28daa177f1a9e81
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0490c8409ea8a08c990bad49472303dd4ae58c93
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298947"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404154"
 ---
 # <a name="httpcalculatorwithbasicoversslserviceexample"></a>HttpCalculatorWithBasicOverSslServiceExample
 
-Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio di calcolo tramite HTTP, con la sicurezza del trasporto SSL e l'autenticazione di base dell'intestazione HTTP. In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
+Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP. In questa configurazione la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
 
--   [HttpCalculatorWithBasicOverSslService. cpp](#httpcalculatorwithbasicoversslservicecpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [HttpCalculatorWithBasicOverSslService.cpp](#httpcalculatorwithbasicoversslservicecpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorwithbasicoversslservicecpp"></a>HttpCalculatorWithBasicOverSslService. cpp
+## <a name="httpcalculatorwithbasicoversslservicecpp"></a>HttpCalculatorWithBasicOverSslService.cpp
 
 
 ```C++
@@ -282,7 +282,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -407,9 +407,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

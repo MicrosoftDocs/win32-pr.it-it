@@ -1,19 +1,19 @@
 ---
-description: Imposta l'indirizzo del dispositivo Bluetooth su cui eseguire la query.
+description: Informazioni su come la proprietà System.Devices.AepService.Bluetooth.GattService.Device imposta l'indirizzo del dispositivo Bluetooth su cui eseguire query.
 ms.assetid: 0a84f283-4b18-4042-afc5-5b75907fe9f2
-title: System. Devices. AepService. Bluetooth. GattService. Device
+title: System.Devices.AepService.Bluetooth.GattService.Device
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7adf0b7b7311c4e22f082030347429b204ff898b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fb2b38f9c67a86668b6eed85d951aa72ac22058
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311465"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405274"
 ---
-# <a name="systemdevicesaepservicebluetoothgattservicedevice"></a>System. Devices. AepService. Bluetooth. GattService. Device
+# <a name="systemdevicesaepservicebluetoothgattservicedevice"></a>System.Devices.AepService.Bluetooth.GattService.Device
 
-Imposta l'indirizzo del dispositivo Bluetooth su cui eseguire la query.
+Imposta l'indirizzo del dispositivo Bluetooth su cui eseguire una query.
 
 ## <a name="windows-10-version-1511"></a>Windows 10 versione 1511
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,24 +1,24 @@
 ---
-description: La libreria Math fornita dalla libreria di utilità D3DX fornisce funzioni per calcolare le operazioni matematiche 3D.
+description: Informazioni sulla libreria matematica fornita dalla libreria di utilità D3DX in Direct3D 10 Graphics. La libreria fornisce funzioni per calcolare operazioni matematiche 3D.
 ms.assetid: 6e180c12-8cbe-4013-8bb4-3ac5bb9c65f1
 title: Funzioni matematiche (grafica Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5401299b1aafd5663d8aaefefa4c7fa0da88a89
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85b47aec382f8b21d8769722afab51cb69a7452e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878190"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408044"
 ---
 # <a name="math-functions-direct3d-10-graphics"></a>Funzioni matematiche (grafica Direct3D 10)
 
 > [!Note]  
-> Le funzioni matematiche della libreria di utilità D3DX sono deprecate per Windows 8. È invece consigliabile usare [DirectXMath](../dxmath/directxmath-portal.md) .
+> Le funzioni matematiche della libreria di utilità D3DX sono deprecate per Windows 8. In alternativa, è [consigliabile usare DirectXMath.](../dxmath/directxmath-portal.md)
 
  
 
-La libreria Math fornita dalla libreria di utilità D3DX fornisce funzioni per calcolare le operazioni matematiche 3D. Ognuna delle funzioni può assumere lo stesso oggetto del passato \[ \] e restituire i \[ \] parametri. Inoltre, i parametri out vengono in genere restituiti come valori restituiti, in modo che l'output di una funzione matematica possa essere utilizzato come parametro per un'altra funzione matematica.
+La libreria matematica fornita dalla libreria di utilità D3DX fornisce funzioni per calcolare operazioni matematiche 3D. Ognuna delle funzioni può assumere lo stesso oggetto dei parametri passati \[ e \] \[ \] restituiti. Inoltre, i parametri out vengono in genere restituiti come valori restituiti, in modo che l'output di una funzione matematica possa essere usato come parametro per un'altra funzione matematica.
 
 -   [**D3DXColorAdjustContrast**](d3d10-d3dxcoloradjustcontrast.md)
 -   [**D3DXColorAdjustSaturation**](d3d10-d3dxcoloradjustsaturation.md)
@@ -84,7 +84,7 @@ La libreria Math fornita dalla libreria di utilità D3DX fornisce funzioni per c
 -   [**D3DXSHMultiply6**](d3d10-d3dxshmultiply6.md)
 -   [**D3DX10SHProjectCubeMap**](d3dx10shprojectcubemap.md)
 -   [**D3DXSHRotate**](d3d10-d3dxshrotate.md)
--   [**D3DXSHRotateZ**](d3d10-d3dxshrotatez.md)
+-   [**D3DXSHRotatez**](d3d10-d3dxshrotatez.md)
 -   [**D3DXSHScale**](d3d10-d3dxshscale.md)
 -   [**D3DXVec2BaryCentric**](d3d10-d3dxvec2barycentric.md)
 -   [**D3DXVec2CatmullRom**](d3d10-d3dxvec2catmullrom.md)
@@ -116,11 +116,11 @@ La libreria Math fornita dalla libreria di utilità D3DX fornisce funzioni per c
 -   [**D3DXVec4Transform**](d3d10-d3dxvec4transform.md)
 -   [**D3DXVec4TransformArray**](d3d10-d3dxvec4transformarray.md)
 
-## <a name="resolving-link-errors-with-d3dx-math-functions"></a>Risoluzione degli errori di collegamento con D3DX Math Functions
+## <a name="resolving-link-errors-with-d3dx-math-functions"></a>Risoluzione degli errori di collegamento con le funzioni matematiche D3DX
 
-Le funzioni matematiche D3DX vengono implementate in modo identico in D3DX10 (D3DX10math. h) e D3DX9 (D3DX9math. h). Ciò può causare errori di collegamento se un progetto implementa sia il codice DirectX 9 che quello DirectX 10 e tenta di collegare una funzione da un'intestazione con la libreria opposta.
+Le funzioni matematiche D3DX vengono implementate in modo identico in D3DX10 (D3DX10math.h) e D3DX9 (D3DX9math.h). Ciò può causare errori di collegamento se un progetto implementa sia codice DirectX 9 che DirectX 10 e tenta di collegare una funzione da un'intestazione alla libreria opposta.
 
-Per eliminare il problema di includere entrambe le intestazioni, D3DX10math. h include quanto segue \# :
+Per eliminare il problema dell'inclusione di entrambe le intestazioni, D3DX10math.h include la definizione \# seguente:
 
 
 ```
@@ -130,7 +130,7 @@ Per eliminare il problema di includere entrambe le intestazioni, D3DX10math. h i
 
 
 
-Per eliminare i possibili errori di collegamento, gli esempi di DX SDK si collegano prima alle librerie di D3DX9 (D3DX9d. lib e D3DX9. lib), quindi le librerie D3DX10 Second (D3DX10d. lib e D3DX10. lib). Queste impostazioni si trovano in progetto/proprietà se si usa Visual Studio.
+Per eliminare possibili errori di collegamento, gli esempi di DX SDK si collegano prima alle librerie D3DX9 (D3DX9d.lib e D3DX9.lib) e quindi alle librerie D3DX10 (D3DX10d.lib e D3DX10.lib). Queste impostazioni sono disponibili in Progetto/Proprietà se si usa Visual Studio.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

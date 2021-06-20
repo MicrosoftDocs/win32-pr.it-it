@@ -1,19 +1,19 @@
 ---
-description: Percorso di visualizzazione intuitivo per l'elemento.
+description: Informazioni sulla proprietà System.ItemPathDisplay, che rappresenta il percorso di visualizzazione descrittivo dell'elemento.
 ms.assetid: 27e4490b-7914-4b38-9799-e9d5dc407f13
-title: System. ItemPathDisplay
+title: System.ItemPathDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb76a4218e7e7580ec70cb57dd16c635ca024ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ddad0edbc1a77a3de1fab7956d8ce6e6f906f06
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131574"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403904"
 ---
-# <a name="systemitempathdisplay"></a>System. ItemPathDisplay
+# <a name="systemitempathdisplay"></a>System.ItemPathDisplay
 
-Percorso di visualizzazione intuitivo per l'elemento.
+Percorso di visualizzazione descrittivo dell'elemento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,11 +33,11 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Se l'elemento è un file o una cartella, questa proprietà include l'estensione in tutti i casi ed è localizzata se è disponibile un nome localizzato. Per gli altri elementi, questo è l'equivalente intuitivo, supponendo che l'elemento esista nell'archivio gerarchico.
+Se l'elemento è un file o una cartella, questa proprietà include l'estensione in tutti i casi e viene localizzata se è disponibile un nome localizzato. Per altri elementi, si tratta dell'equivalente descrittivo, presupponendo che l'elemento esista nell'archiviazione gerarchica.
 
-Diversamente da [System. ItemUrl](./props-system-itemurl.md), il valore di questa proprietà non include lo schema URL. Per analizzare un percorso di elemento, usare System. ItemUrl o [System. ParsingPath](./props-system-parsingpath.md). Per fare riferimento agli elementi dello spazio dei nomi della shell usando le API della shell, usare System. ParsingPath.
+A [differenza di System.ItemUrl,](./props-system-itemurl.md)questo valore della proprietà non include lo schema URL. Per analizzare il percorso di un elemento, usare System.ItemUrl [o System.ParsingPath](./props-system-parsingpath.md). Per fare riferimento agli elementi dello spazio dei nomi shell usando le API shell, usare System.ParsingPath.
 
 Valori di esempio
 
@@ -45,11 +45,11 @@ Valori di esempio
 
 | Percorso                                   | ItemPathDisplay                        |
 |----------------------------------------|----------------------------------------|
-| c: \\ \\hello.txt della barra mydir \\              | c: \\ \\hello.txt della barra mydir \\              |
-| \\\\\\condivisione server \\ mydir \\goodnews.doc | \\\\\\condivisione server \\ mydir \\goodnews.doc |
-| \\\\\\numbers.xls condivisione \\ Server         | \\\\\\numbers.xls condivisione \\ Server         |
-| c: \\ mydir \\ cartella                    | c: \\ mydir \\ cartella                    |
-| /Mailbox account/Inbox/' re: Hello!'    | /Mailbox account/Inbox/' re: Hello!'    |
+| c: \\ barra mydir \\ \\hello.txt              | c: \\ barra mydir \\ \\hello.txt              |
+| \\\\condivisione \\ server \\ mydir \\goodnews.doc | \\\\condivisione \\ server \\ mydir \\goodnews.doc |
+| \\\\condivisione \\ \\ servernumbers.xls         | \\\\condivisione \\ \\ servernumbers.xls         |
+| c: \\ mydir \\ MyFolder                    | c: \\ mydir \\ MyFolder                    |
+| /Mailbox Account/Inbox/'Re: Hello!'    | /Mailbox Account/Inbox/'Re: Hello!'    |
 
 
 
@@ -68,13 +68,13 @@ Valori di esempio
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -83,7 +83,7 @@ Valori di esempio
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

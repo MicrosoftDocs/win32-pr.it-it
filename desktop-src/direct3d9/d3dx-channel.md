@@ -1,15 +1,15 @@
 ---
-description: Informazioni sui flag usati per specificare i canali in una trama su cui operare, ad esempio D3DX \_ CHANNEL \_ RED.
+description: Informazioni sui flag D3DX_CHANNEL usati per specificare i canali in una trama su cui operare, ad esempio D3DX_CHANNEL_RED.
 ms.assetid: b592b42a-0af1-49df-b159-4b84e4e12c95
 title: D3DX_CHANNEL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f2725644295ac85d892799033cdac1d8f83416
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: d1fa9d5df75011e62034d814549202f14fe7cdba
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342906"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408254"
 ---
 # <a name="d3dx_channel"></a>CANALE \_ D3DX
 
@@ -19,17 +19,17 @@ I flag seguenti vengono usati per specificare i canali in una trama su cui opera
 
 | \#Definire                 | Descrizione                                                                   |
 |--------------------------|-------------------------------------------------------------------------------|
-| CANALE D3DX \_ \_ ROSSO       | Indica che deve essere usato il canale rosso.                                     |
-| CANALE D3DX \_ \_ BLU      | Indica che deve essere utilizzato il canale blu.                                    |
+| D3DX \_ CHANNEL \_ RED       | Indica che deve essere usato il canale rosso.                                     |
+| CANALE D3DX \_ \_ BLU      | Indica che deve essere usato il canale blu.                                    |
 | CANALE D3DX \_ \_ VERDE     | Indica che deve essere usato il canale verde.                                   |
 | D3DX \_ CHANNEL \_ ALPHA     | Indica che deve essere usato il canale alfa.                                   |
-| LUMINANCE \_ DEL CANALE D3DX \_ | Indica che devono essere usate le luminance dei canali rosso, verde e blu. |
+| LUMINANZA DEL \_ CANALE D3DX \_ | Indica che devono essere usate le luminanze dei canali rosso, verde e blu. |
 
 
 
  
 
-## <a name="constant-information"></a>Informazioni sulle costanti
+## <a name="constant-information"></a>Informazioni costanti
 
 
 

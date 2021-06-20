@@ -1,25 +1,25 @@
 ---
 title: NavigateXmlExample
-description: Questo esempio scrive il codice XML in un buffer XML e quindi lo legge.
+description: Esaminare un esempio di navigazione XML che usa l'API Servizi Web Windows (WWSAPI). Questo esempio scrive codice XML in un buffer XML e quindi lo legge nuovamente.
 ms.assetid: b37da839-de05-4fb6-b1aa-b00801e88e47
 keywords:
-- Servizi Web NavigateXmlExample per Windows
+- NavigateXmlExample Web Services for Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c78cd9687d5f84005128834346a84e648a59495
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d056a7931ed469bdb84c3b27cc947e463db4cad5
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955770"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404104"
 ---
 # <a name="navigatexmlexample"></a>NavigateXmlExample
 
-Questo esempio scrive il codice XML in un buffer XML e quindi lo legge.
+Questo esempio scrive codice XML in un buffer XML e quindi lo legge nuovamente.
 
-## <a name="navigatexmlcpp"></a>NavigateXml. cpp
+## <a name="navigatexmlcpp"></a>NavigateXml.cpp
 
 
 ```C++
@@ -360,9 +360,9 @@ Exit:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

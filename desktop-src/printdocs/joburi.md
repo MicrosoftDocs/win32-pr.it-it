@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento JobURI, che specifica un URI (Uniform Resource Identifier) per il documento.
 ms.assetid: c7abb657-6c9d-435a-a700-2eb0f14707c0
 title: JobURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3c80611a4e7dbd10f4841fae098578f0a8fdc96
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: ecc145ac9a393c09ecab762b84e9ac7d58870ddf
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993888"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408614"
 ---
 # <a name="joburi"></a>JobURI
 

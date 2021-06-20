@@ -1,39 +1,39 @@
 ---
 title: Proprietà Enabled (oggetto Command)
-description: Proprietà Enabled
+description: Informazioni sulla proprietà dell'oggetto Comando abilitato. Microsoft Agent è deprecato a livello di Windows 7.
 ms.assetid: d9dcbdf0-ba35-4ebd-b6f2-f3c8bdfc0431
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5999e396f61fbcc820bc1cec7deb0c603eb948e4
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 1dc0c65d5cfa0438fe9d61eac0c59e916731e057
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "106300831"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407334"
 ---
 # <a name="enabled-property-command-object"></a>Proprietà Enabled (oggetto Command)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrizione**
 </dt> <dd>
 
-Restituisce o imposta un valore che indica se il **comando** è abilitato nel menu di scelta rapida del carattere specificato.
+Restituisce o imposta un valore che indica se **il comando** è abilitato nel menu a comparsa del carattere specificato.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agente ***. Caratteri ("**_CharacterID_*_"). Comandi ("_*_Name_*_")._ *  \[  =  *Valore booleano* abilitato\]
+*agent***. Caratteri ("**_CharacterID_*_"). Commands("_*_name_*_"). Valore_ *  \[  =  *booleano abilitato*\]
 
 
 
 | Parte      | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *boolean* | Espressione booleana che specifica se il **comando** è abilitato.<br/> <dl> <dt><span id="True"></span><span id="true"></span><span id="TRUE"></span>**Vero**</dt> <dd> Il **comando** è abilitato.<br/> </dd> <dt><span id="False"></span><span id="false"></span><span id="FALSE"></span>**False**</dt> <dd> Il **comando** è disabilitato.<br/> </dd> </dl> |
+| *boolean* | Espressione booleana che specifica se **il comando è** abilitato.<br/> <dl> <dt><span id="True"></span><span id="true"></span><span id="TRUE"></span>**Vero**</dt> <dd> Il **comando** è abilitato.<br/> </dd> <dt><span id="False"></span><span id="false"></span><span id="FALSE"></span>**Falso**</dt> <dd> Il **comando** è disabilitato.<br/> </dd> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Restituisce o imposta un valore che indica se il **comando** è abilitato nel me
 
 ## <a name="remarks"></a>Commenti
 
-Se la proprietà [**Enabled**](enabled-property.md) è impostata su **true**, la didascalia degli oggetti [**comando**](/windows/desktop/lwef/the-command-object) viene visualizzata come testo normale nel menu popup del carattere quando l'applicazione client è di tipo input-attivo. Se la proprietà **Enabled** è **false**, la didascalia viene visualizzata come testo non disponibile (disabilitato). Non è inoltre possibile accedere a un **comando** disabilitato per l'input vocale.
+Se la [**proprietà Enabled**](enabled-property.md) è impostata su **True,** la didascalia dell'oggetto [**Command**](/windows/desktop/lwef/the-command-object) viene visualizzata come testo normale nel menu a comparsa del carattere quando l'applicazione client è attiva per l'input. Se la **proprietà Enabled** è **False**, la didascalia viene visualizzata come testo non disponibile (disabilitato). Un comando **disabilitato non** è accessibile anche per l'input vocale.
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: Questa sezione contiene informazioni di riferimento per le interfacce COM (Component Object Model) fornite dalla libreria di utilità D3DX. Con la libreria di utilità D3DX vengono utilizzate le interfacce seguenti.
+description: Questa sezione contiene informazioni di riferimento per le interfacce COM (Component Object Model) fornite dalla libreria di utilità D3DX nella grafica Direct3D 9.
 ms.assetid: 4b8cdbf8-650c-4dd8-a730-b7ba7dad638b
 title: Interfacce D3DX (grafica Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd5b66c013d43e1f288bea211f28954660084d50
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5705b37c1089cd965213339f50486a6f1c4f8fd7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104123870"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408174"
 ---
 # <a name="d3dx-interfaces-direct3d-9-graphics"></a>Interfacce D3DX (grafica Direct3D 9)
 
-Questa sezione contiene informazioni di riferimento per le interfacce COM (Component Object Model) fornite dalla libreria di utilità D3DX. Con la libreria di utilità D3DX vengono utilizzate le interfacce seguenti.
+Questa sezione contiene informazioni di riferimento per le interfacce COM (Component Object Model) fornite dalla libreria di utilità D3DX. Le interfacce seguenti vengono usate con la libreria di utilità D3DX.
 
 -   [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md)
 -   [**ID3DXAnimationCallbackHandler**](id3dxanimationcallbackhandler.md)
@@ -51,7 +51,7 @@ Questa sezione contiene informazioni di riferimento per le interfacce COM (Compo
 
 <dl> <dt>
 
-[Riferimento a D3DX](dx9-graphics-reference-d3dx.md)
+[Informazioni di riferimento su D3DX](dx9-graphics-reference-d3dx.md)
 </dt> </dl>
 
  

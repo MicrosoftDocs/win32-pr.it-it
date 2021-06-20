@@ -1,6 +1,6 @@
 ---
-description: L'argomento briciolo supporta le istruzioni complete AQS (Advanced Query Syntax) ed è particolarmente utile come mezzo per controllare l'ambito di una ricerca.
-title: Argomento BRICIOLo (shell di Windows)
+description: Informazioni su come usare l'argomento CRUMB nell'interfaccia utente della shell di Windows per controllare l'ambito di una ricerca.
+title: Argomento CRUMB (shell di Windows)
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 8f87a2b7-7f5a-4629-b881-44bf418b2df0
@@ -9,27 +9,27 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7d38fff38c14a6b537bde068b92e19cedf53d5d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 543bc90647bbe1daed1a3a6d1f7bc54a4713a8ed
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980199"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403604"
 ---
-# <a name="crumb-argument-the-windows-shell"></a>Argomento BRICIOLo (shell di Windows)
+# <a name="crumb-argument-the-windows-shell"></a>Argomento CRUMB (shell di Windows)
 
-L' `crumb` argomento supporta le istruzioni complete AQS (Advanced Query Syntax) ed è particolarmente utile come mezzo per controllare l'ambito di una ricerca. Oltre alle istruzioni AQS, l' `crumb` argomento può assumere un parametro speciale `location` in Windows Vista e i `kind` `store` parametri e in Windows XP, come descritto più avanti in questo argomento.
+`crumb`L'argomento supporta istruzioni Complete Advanced Query Syntax (AQS) ed è particolarmente utile per controllare l'ambito di una ricerca. Oltre alle istruzioni AQS, l'argomento può assumere un parametro speciale in Windows Vista e parametri in Windows XP, come descritto `crumb` più avanti in questo `location` `kind` `store` argomento.
 
 In questo argomento sono incluse le sezioni seguenti:
 
--   [Sintassi briciola](#crumb-syntax)
+-   [Sintassi di Crumb](#crumb-syntax)
     -   [Esempi generali](#general-examples)
--   [Uso di briciole con vista (percorso)](#using-crumb-with-vista-location)
-    -   [Esempi di vista](#vista-examples)
+-   [Uso della briciola con Vista (posizione)](#using-crumb-with-vista-location)
+    -   [Esempi di Vista](#vista-examples)
     -   [Costanti per le cartelle comuni](#constants-for-common-folders)
-    -   [Informazioni argomento](#argument-information)
+    -   [Informazioni sugli argomenti](#argument-information)
 
-## <a name="crumb-syntax"></a>Sintassi briciola
+## <a name="crumb-syntax"></a>Sintassi di Crumb
 
 La sintassi della briciola è la seguente:
 
@@ -40,7 +40,7 @@ crumb=<column>:<value>[,<label>][,<column>:<value>[,<label>]]&
 
 
 
-La <column> parte è qualsiasi proprietà nel sistema di proprietà e il <value> parte è un valore valido per la proprietà. La <label> parte è un alias facoltativo per la proprietà visualizzata come hint dell'interfaccia utente.
+La <column> parte è qualsiasi proprietà nel sistema di proprietà e <value> portion è un valore valido per tale proprietà. La <label> parte è un alias facoltativo per la proprietà che viene visualizzata come suggerimento dell'interfaccia utente.
 
 ### <a name="general-examples"></a>Esempi generali
 
@@ -53,11 +53,11 @@ crumb=location:c%3a%5cMyVacationPix,Vacation&
 
 
 
-## <a name="using-crumb-with-vista-location"></a>Uso di briciole con vista (percorso)
+## <a name="using-crumb-with-vista-location"></a>Uso della briciola con Vista (posizione)
 
-Nel parametro briciola, Windows Vista supporta AQS completi e anche la `location` proprietà, che dispone di un'implementazione speciale disponibile solo in Windows Vista. È possibile usare una stringa AQS o la `location` proprietà all'interno di un singolo parametro briciolo, ma non entrambi. Se il parametro briciolo include AQS, tutto il resto del parametro briciolo viene ignorato.
+Nel parametro crumb Windows Vista supporta AQS completo e anche la proprietà , che ha un'implementazione `location` speciale disponibile solo in Windows Vista. È possibile usare una stringa AQS o la proprietà all'interno di un singolo parametro `location` crumb, ma non entrambi. Se il parametro crumb include AQS, tutti gli altri elementi nel parametro crumb vengono ignorati.
 
-La `location` proprietà consente di specificare un percorso per la ricerca. Windows Vista può ignorare l'indicizzatore e attraversare la directory direttamente se il percorso è esterno all'ambito di ricerca per indicizzazione dell'indicizzatore. Di conseguenza, queste ricerche possono risultare più lente delle ricerche che usano l'indicizzatore.
+La `location` proprietà consente di specificare un percorso in cui eseguire la ricerca. Windows Vista può ignorare l'indicizzatore e attraversare direttamente la directory se il percorso non è compreso nell'ambito di ricerca per indicizzazione dell'indicizzatore. Di conseguenza, queste ricerche possono essere più lente rispetto alle ricerche che usano l'indicizzatore.
 
 Quando si specifica una `location` proprietà, sono supportati due parametri aggiuntivi e facoltativi:
 
@@ -65,30 +65,30 @@ Quando si specifica una `location` proprietà, sono supportati due parametri agg
 
 | Parametro | Valori                  | Descrizione                                                                                                                                                                       |
 |-----------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| inclusione | Includi, Escludi        | Specifica se la query deve includere o escludere elementi da tale percorso. Il valore predefinito è "include". Windows Vista non supporta le esclusioni senza inclusioni. (Vedere l'esempio) |
-| ricorsione | ricorsivo, non ricorsivo | Specifica se la ricerca deve rimaledire tutte le sottocartelle a partire dal valore definito nel percorso:<value>. Il valore predefinito è "ricorsivo".                             |
+| Inclusione | includere, escludere        | Specifica se la query deve includere o escludere elementi da tale percorso. "Include" è l'impostazione predefinita. Windows Vista non supporta le esclusioni senza inclusioni. (Vedere l'esempio) |
+| ricorsione | ricorsivo, non ricorsivo | Specifica se la ricerca deve eseguire di nuovo tutte le sottocartelle a partire dal valore definito nel percorso:<value>. Il valore predefinito è "Ricorsivo".                             |
 
 
 
  
 
-Per definire l'ambito di una ricerca usando il protocollo **Search:** , sono disponibili diverse opzioni a seconda della destinazione dell'ambito.
+Per impostare l'ambito di una ricerca usando il protocollo **search:** sono disponibili opzioni diverse a seconda della destinazione dell'ambito.
 
 Cartella in un computer locale:
 
--   Usare AQS (briciole = Folder: <percorso con codifica URL>)
--   Usare l'argomento location (briciole = location: <percorso con codifica URL>)
+-   Usare AQS (crumb=folder:<percorso con codifica URL>)
+-   Usare l'argomento location (crumb=location:<percorso con codifica URL>)
 
-Cartella in un computer remoto/rete:
+Cartella in un computer/rete remoto:
 
--   Usare l'argomento location (briciole = location: <percorso con codifica URL>)
+-   Usare l'argomento location (crumb=location:<percorso con codifica URL>)
 
-Cartella a cui si accede tramite un gestore di protocollo Universal Naming Convention (UNC) noto:
+Cartella a cui si accede tramite un gestore Universal Naming Convention (UNC) noto:
 
--   Usare AQS (briciole = Store: <UNC protocol handler name> )
--   Usare l'argomento location (briciole = location: <percorso con codifica URL>)
+-   Usare AQS (crumb=store: <UNC protocol handler name> )
+-   Usare l'argomento location (crumb=location:<percorso con codifica URL>)
 
-### <a name="vista-examples"></a>Esempi di vista
+### <a name="vista-examples"></a>Esempi di Vista
 
 
 ```
@@ -101,17 +101,17 @@ search:crumb=location:c%3a%5cDocuments&crumb=kind:pics&
 
 
 
-Nel primo esempio viene eseguita una ricerca di "Vacation" a partire dalla `shell://Personal` posizione (un collegamento speciale alla cartella **documenti** dell'utente), inclusa la cartella e tutte le sottocartelle. Vedere la tabella seguente.
+Nel primo esempio viene eseguita una ricerca di "ferie" a partire dal percorso (un collegamento speciale alla cartella Documenti dell'utente), inclusa la cartella e tutte le `shell://Personal` sottocartelle.  Vedere la tabella seguente.
 
-Nel secondo esempio viene eseguita una ricerca all'interno di C: \\ Immagini, ma non in c: \\ Immagini \\ duplicati.
+Il secondo esempio esegue una ricerca all'interno di C: \\ Pictures, ma non in C: \\ Pictures \\ Duplicates.
 
-Il terzo esempio esegue una ricerca all'interno di C: \\ Documents, limitato ai file con la `kind` proprietà impostata su pics.
+Il terzo esempio esegue una ricerca all'interno di C: Documents, limitata ai file con \\ `kind` la proprietà impostata su pics.
 
 ### <a name="constants-for-common-folders"></a>Costanti per le cartelle comuni
 
-Windows Vista consente l'utilizzo di valori CSIDL che forniscono un metodo univoco indipendente dal sistema per identificare le cartelle speciali utilizzate spesso dalle applicazioni, ma che potrebbero non avere lo stesso nome o percorso in un determinato sistema. Ad esempio, la cartella di sistema può essere "C: \\ Windows" in un sistema e "c: \\ WinNT" in un altro.
+Windows Vista consente l'uso di valori CSIDL che forniscono un modo univoco indipendente dal sistema per identificare le cartelle speciali usate di frequente dalle applicazioni, ma che potrebbero non avere lo stesso nome o percorso in un sistema specificato. Ad esempio, la cartella di sistema può essere "C: Windows" in un sistema \\ e "C: \\ Winnt" in un altro.
 
-Usare questi percorsi con questa sintassi:
+Usare questi percorsi con la sintassi seguente:
 
 
 ```
@@ -120,75 +120,75 @@ crumb=location:shell%3a<LocationName>&
 
 
 
-Nella tabella seguente sono elencati i valori CSIDL. Per ulteriori informazioni, fare riferimento a [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) .
+Nella tabella seguente sono elencati i valori CSIDL. Per altre [**informazioni, vedere ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants)
 
 
 
 | Nome                        | stringa di ricerca                   | Descrizione                                                                                                                                                                            |
 |-----------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| STRUMENTI DI AMMINISTRAZIONE        | % 20TOOLS AMMINISTRATIVO          | Directory del file System che funge da repository per gli strumenti di amministrazione.                                                                                                            |
-| APPDATA                     | APPDATA                         | Directory del file System che funge da repository comune per i dati specifici dell'applicazione. Un percorso tipico è C: \\ Documents and Settings \\ nomeutente \\ Application Data.                      |
-| CACHE                       | CACHE                           | Directory del file System che funge da repository comune per i file temporanei di Internet. Un percorso tipico è C: \\ Documents and Settings \\ username \\ Temporary Internet Files.               |
-| MASTERIZZAZIONE CD                  | CD% 20BURNING                    | Cartella contenente i dati da masterizzare su CD.                                                                                                                                             |
-| STRUMENTI DI AMMINISTRAZIONE COMUNI | COMUNE% 20ADMINISTRATIVE% 20TOOLS | Strumenti di amministrazione per tutti gli utenti.                                                                                                                                                    |
-| APPDATA COMUNE              | COMUNE% 20APPDATA                | Dati dell'applicazione per tutti gli utenti. Un percorso tipico è C: \\ Documents and Settings \\ All Users \\ Application Data.                                                                             |
-| DESKTOP COMUNE              | DESKTOP COMUNE                  | Dati desktop di Microsoft Windows per tutti gli utenti. Cartella virtuale che rappresenta la radice dello spazio dei nomi.                                                                                        |
-| DOCUMENTI COMUNI            | COMUNE% 20DOCUMENTS              | Documenti per tutti gli utenti. Un percorso tipico è C: \\ Documents and Settings \\ All Users \\ My Documents.                                                                                        |
-| PROGRAMMI COMUNI             | COMUNE% 20PROGRAMS               | Gruppi di programmi comuni a tutti gli utenti. Un percorso tipico è C: \\ Documents and Settings \\ All Users \\ Start menu \\ Programs.                                                                     |
-| MENU START COMUNE           | COMUNE% 20START% 20MENU           | Voci del menu Start comuni a tutti gli utenti. Un percorso tipico è C: \\ Documents and Settings \\ All Users \\ Start menu.                                                                             |
-| AVVIO COMUNE              | COMUNE% 20STARTUP                | Gruppo di programmi di avvio comune a tutti gli utenti.                                                                                                                                             |
-| MODELLI COMUNI            | COMUNE% 20TEMPLATES              | Modelli di documento comuni a tutti gli utenti.                                                                                                                                                |
-| COMMONMUSIC                 | MY% 20MUSIC                      | Modelli di cartella musica comune a tutti gli utenti.                                                                                                                                         |
-| COMMONPICTURES              | MY% 20PICTURES                   | Modelli di cartella immagini comuni a tutti gli utenti.                                                                                                                                      |
-| COMMONVIDEO                 | MY %2 0 VIDEO                      | Modelli di cartella video comuni a tutti gli utenti.                                                                                                                                         |
+| STRUMENTI DI AMMINISTRAZIONE        | ADMINISTRATIVE%20TOOLS          | Directory del file system che funge da repository per gli strumenti di amministrazione.                                                                                                            |
+| APPDATA                     | APPDATA                         | Directory del file system che funge da repository comune per i dati specifici dell'applicazione. Un percorso tipico è C: \\ Documents and Settings username Application \\ \\ Data.                      |
+| CACHE                       | CACHE                           | Directory del file system che funge da repository comune per i file Temporanei Internet. Un percorso tipico è C: \\ Documents and Settings username Temporary Internet \\ \\ Files.               |
+| MASTERIZZAZIONE CD                  | CD%20REZIONE                    | Cartella contenente i dati da masterizzazione su CD.                                                                                                                                             |
+| STRUMENTI DI AMMINISTRAZIONE COMUNI | COMMON%20ADMINISTRATIVE%20TOOLS | Strumenti di amministrazione per tutti gli utenti.                                                                                                                                                    |
+| APPDATA COMUNE              | COMMON%20APPDATA                | Dati dell'applicazione per tutti gli utenti. Un percorso tipico è C: \\ Documenti e impostazioni Tutti i dati \\ \\ dell'applicazione utenti.                                                                             |
+| DESKTOP COMUNE              | DESKTOP COMUNE                  | Dati di Microsoft Windows Desktop per tutti gli utenti. Cartella virtuale che rappresenta la radice dello spazio dei nomi.                                                                                        |
+| DOCUMENTI COMUNI            | COMMON%20DOCUMENTS              | Documenti per tutti gli utenti. Un percorso tipico è C: \\ Documents and Settings All Users \\ \\ Documenti.                                                                                        |
+| PROGRAMMI COMUNI             | COMMON%20PROGRAMS               | Gruppi di programmi comuni a tutti gli utenti. Un percorso tipico è C: \\ Documenti e impostazioni Tutti i programmi del menu Start degli \\ \\ \\ utenti.                                                                     |
+| MENU START COMUNE           | COMMON%20START%20MENU           | menu Start elementi comuni a tutti gli utenti. Un percorso tipico è C: \\ Documenti e impostazioni Menu start tutti gli \\ \\ utenti.                                                                             |
+| AVVIO COMUNE              | COMMON%20STARTUP                | Gruppo di programmi di avvio comune a tutti gli utenti.                                                                                                                                             |
+| MODELLI COMUNI            | COMMON%20TEMPLATES              | Modelli di documento comuni a tutti gli utenti.                                                                                                                                                |
+| COMMONMUSIC                 | MY%20MUSIC                      | Modelli di cartella My Music comuni a tutti gli utenti.                                                                                                                                         |
+| COMMONPICTURES              | MY%20PICTURES                   | Modelli di cartella Immagini comuni a tutti gli utenti.                                                                                                                                      |
+| COMMONVIDEO                 | MY%20VIDEO                      | Modelli di cartella Video comuni a tutti gli utenti.                                                                                                                                         |
 | CONNECTIONSFOLDER           | CONNECTIONSFOLDER               | cartella contenente i dati di connessione.                                                                                                                                                     |
-| CARTELLA PANNELLO DI CONTROLLO        | CONTROLPANELFOLDER              | Cartella virtuale contenente le icone per le applicazioni del pannello di controllo.                                                                                                                    |
-| COOKIE                     | COOKIE                         | Directory del file System che funge da repository comune per i cookie di Internet. Un percorso tipico è C: \\ Documents and Settings \\ username \\ cookies.                                        |
-| DESKTOP                     | DESKTOP                         | Microsoft Windows desktop. Cartella virtuale che rappresenta la radice dello spazio dei nomi.                                                                                                           |
-| PREFERITI                   | PREFERITI                       | Directory del file System che funge da repository comune per gli elementi preferiti dell'utente. Un percorso tipico è C: \\ Documents and Settings \\ nomeutente \\ Preferiti.                             |
-| FONT                       | FONT                           | Cartella virtuale che contiene i tipi di carattere installati. Un percorso tipico è C: \\ Windows \\ fonts.                                                                                                       |
-| CRONOLOGIA                     | CRONOLOGIA                         | Directory del file System che funge da repository comune per gli elementi della cronologia Internet.                                                                                                   |
-| INTERNETFOLDER              | INTERNETFOLDER                  | Cartella che contiene i dati Internet.                                                                                                                                                    |
-| APPDATA LOCALE               | % 20APPDATA LOCALE                 | Directory del file System che funge da archivio dati per le applicazioni locali (non in roaming). Un percorso tipico è C: \\ Documents and Settings \\ nome utente \\ impostazioni locali \\ dati applicazione. |
-| LOCALIZEDRESOURCEDIR        | LOCALIZEDRESOURCEDIR            | Directory delle risorse localizzata.                                                                                                                                                          |
-| MYCOMPUTERFOLDER            | MYCOMPUTERFOLDER                | Risorse del computer. Cartella virtuale che contiene tutto il computer locale: dispositivi di archiviazione, stampanti e pannello di controllo. Questa cartella può inoltre contenere unità di rete mappate.             |
-| MUSICA                    | MY% 20MUSIC                      | Cartella musica. Un percorso tipico è C: \\ Documents and Settings \\ username \\ My Documents \\ My Music.                                                                                       |
-| IMMAGINI PERSONALI                 | MY% 20PICTURES                   | Cartella immagini. Un percorso tipico è C: \\ Documents and Settings \\ username \\ My Documents \\ My Pictures.                                                                                 |
-| VIDEO                    | MY %2 0 VIDEO                      | Cartella video. Un percorso tipico è C: \\ Documents and Settings \\ username \\ My Documents \\ My video.                                                                                       |
+| CARTELLA DEL PANNELLO DI CONTROLLO        | CONTROLPANELFOLDER              | Cartella virtuale contenente le icone per le Pannello di controllo applicazioni.                                                                                                                    |
+| Biscotti                     | Biscotti                         | Directory del file system che funge da repository comune per i cookie Internet. Un percorso tipico è C: \\ Documents and Settings username \\ \\ Cookies.                                        |
+| DESKTOP                     | DESKTOP                         | Microsoft Windows Desktop. Cartella virtuale che rappresenta la radice dello spazio dei nomi.                                                                                                           |
+| PREFERITI                   | PREFERITI                       | Directory del file system che funge da repository comune per gli elementi preferiti dell'utente. Un percorso tipico è \\ C:Documents and Settings username \\ \\ Favorites.                             |
+| Caratteri                       | Caratteri                           | Cartella virtuale contenente i tipi di carattere installati. Un percorso tipico è C: \\ Tipi di carattere \\ WINDOWS.                                                                                                       |
+| CRONOLOGIA                     | CRONOLOGIA                         | Directory del file system che funge da repository comune per gli elementi della cronologia Internet.                                                                                                   |
+| INTERNETFOLDER              | INTERNETFOLDER                  | Cartella che contiene dati Internet.                                                                                                                                                    |
+| APPDATA LOCALE               | LOCAL%20APPDATA                 | Directory del file system che funge da repository di dati per applicazioni locali (non mobili). Un percorso tipico è C: \\ Documents and Settings username Local Settings Application \\ \\ Data(Dati dell'applicazione delle impostazioni \\ locali). |
+| LOCALIZEDRESOURCEDIR        | LOCALIZEDRESOURCEDIR            | Directory delle risorse localizzate.                                                                                                                                                          |
+| CARTELLA MYCOMPUTER            | CARTELLA MYCOMPUTER                | Risorse del computer. Cartella virtuale contenente tutti gli elementi nel computer locale: dispositivi di archiviazione, stampanti e Pannello di controllo. Questa cartella può contenere anche unità di rete mappate.             |
+| MY MUSIC                    | MY%20MUSIC                      | Cartella Musica. Un percorso tipico è C: \\ Documents and Settings username Documenti My \\ \\ \\ Music.                                                                                       |
+| IMMAGINI PERSONALI                 | MY%20PICTURES                   | Cartella Immagini. Un percorso tipico è C: \\ Documents and Settings username Documenti My \\ \\ \\ Pictures.                                                                                 |
+| MY VIDEO                    | MY%20VIDEO                      | Cartella Video. Un percorso tipico è C: \\ Documents and Settings username Documenti My \\ \\ \\ Video.                                                                                       |
 | NETHOOD                     | NETHOOD                         | Cartella virtuale che rappresenta la radice della gerarchia dello spazio dei nomi di rete.                                                                                                               |
-| CARTELLA POSIZIONI DI RETE       | NETWORKDPLACESFOLDER            | Una cartella file system contenente gli oggetti collegamento che possono esistere nella cartella virtuale risorse di rete. Non è uguale a NETHOOD, che rappresenta la radice dello spazio dei nomi di rete.   |
-| COLLEGAMENTI OEM                   | OEM% 20LINKS                     | Cartella contenente i collegamenti ai siti OEM.                                                                                                                                                  |
-| PERSONAL                    | PERSONAL                        | Directory del file System che funge da repository comune per i documenti di un utente. Un percorso tipico è C: \\ Documents and Settings \\ username \\ My Documents.                                 |
-| CARTELLA STAMPANTI             | CARTELLA STAMPANTI                 | Cartella virtuale contenente le stampanti installate.                                                                                                                                          |
-| PRINTHOOD                   | PRINTHOOD                       | Directory del file System che contiene gli oggetti collegamento che possono esistere nella cartella virtuale stampanti. Un percorso tipico è C: \\ Documents and Settings \\ nomeutente \\ PrintHood.                 |
-| PROGRAMMI                    | PROGRAMMI                        | Directory del file System che contiene i gruppi di programmi dell'utente (che sono anche file system directory). Un percorso tipico è C: \\ Documents and Settings \\ nome utente \\ programmi menu Start \\ .  |
+| CARTELLA RISORSE DI RETE       | NETWORKDPLACESFOLDER            | Una file system contenente gli oggetti collegamento che possono esistere nella cartella virtuale Risorse di rete. Non corrisponde a NETHOOD, che rappresenta la radice dello spazio dei nomi di rete.   |
+| COLLEGAMENTI OEM                   | OEM%20LINKS                     | Cartella contenente i collegamenti ai siti OEM.                                                                                                                                                  |
+| PERSONAL                    | PERSONAL                        | Directory del file system che funge da repository comune per i documenti di un utente. Un percorso tipico è C: \\ Documents and Settings username \\ \\ Documenti.                                 |
+| CARTELLA PRINTERS             | CARTELLA PRINTERS                 | Cartella virtuale contenente le stampanti installate.                                                                                                                                          |
+| PRINTHOOD                   | PRINTHOOD                       | Directory del file system che contiene gli oggetti collegamento che possono esistere nella cartella virtuale Stampanti. Un percorso tipico è C: \\ Documents and Settings username \\ \\ PrintHood.                 |
+| PROGRAMMI                    | PROGRAMMI                        | Directory del file system che contiene i gruppi di programmi dell'utente ,che sono anche file system directory. Un percorso tipico è C: \\ Documents and Settings username Start Menu \\ \\ \\ Programs.  |
 | PROFILE                     | PROFILE                         | Cartella del profilo dell'utente.                                                                                                                                                                 |
-| FILE DI PROGRAMMA               | PROGRAMMA% 20FILES                 | Cartella programmi. Un percorso tipico è C: \\ Program Files.                                                                                                                             |
-| FILE DI PROGRAMMA COMUNI        | PROGRAMFILESCOMMON              | Cartella programmi comune a tutti gli utenti.                                                                                                                                              |
-| FILE di programma comuni x86    | PROGRAMFILESCOMMONX86           | Cartella programmi comune a tutti gli utenti di computer x86.                                                                                                                              |
-| PROGRAMMA FILESx86            | PROGRAMFILESx86                 | Cartella programmi in computer x86.                                                                                                                                                  |
-| RECENTE                      | RECENTE                          | Directory del file System che contiene i documenti utilizzati di recente dall'utente. Un percorso tipico è C: \\ Documents and Settings \\ nomeutente \\ recenti.                                           |
-| CARTELLA CESTINO          | RECYCLEBINFOLDER                | Cartella virtuale contenente gli oggetti del cestino dell'utente.                                                                                                                       |
-| RESOURCEDIR                 | RESOURCEDIR                     | Directory delle risorse.                                                                                                                                                                |
-| SENDTO                      | SENDTO                          | Directory del file System che contiene le voci del menu Invia a. Un percorso tipico è C: \\ Documents and Settings \\ nomeutente \\ SendTo.                                                                |
-| MENU START                  | INIZIO% 20MENU                    | Directory del file system contenente le voci del menu Start. Un percorso tipico è C: \\ Documents and Settings \\ nome utente \\ menu Start.                                                                 |
-| AVVIO                     | AVVIO                         | Directory del file System che corrisponde al gruppo di programmi di avvio dell'utente.                                                                                                            |
+| FILE DI PROGRAMMA               | PROGRAM%20FILES                 | Cartella Programmi. Un percorso tipico è C: \\ Programmi.                                                                                                                             |
+| PROGRAMMI COMUNI        | PROGRAMFILESCOMMON              | Cartella Programmi comune a tutti gli utenti.                                                                                                                                              |
+| PROGRAMMI COMUNI x86    | PROGRAMFILESCOMMONX86           | Cartella Programmi comune a tutti gli utenti nei computer x86.                                                                                                                              |
+| PROGRAM FILESx86            | PROGRAMFILESx86                 | Cartella Programmi nei computer x86.                                                                                                                                                  |
+| Recente                      | Recente                          | Directory del file system che contiene i documenti usati più di recente dall'utente. Un percorso tipico è C: \\ Documents and Settings username \\ \\ Recent.                                           |
+| CARTELLA CESTINO          | RECYCLEBINFOLDER                | Cartella virtuale contenente gli oggetti nella cartella dell'Cestino.                                                                                                                       |
+| RESOURCEDIR                 | RESOURCEDIR                     | Directory della risorsa.                                                                                                                                                                |
+| Sendto                      | Sendto                          | Directory del file system che contiene le voci di menu Invia a. Un percorso tipico è C: \\ Documents and Settings username \\ \\ SendTo.                                                                |
+| START MENU                  | START%20MENU                    | Directory del file system contenente menu Start elementi. Un percorso tipico è C: \\ Documents and Settings username Start \\ \\ Menu.                                                                 |
+| Avvio                     | Avvio                         | Directory del file system che corrisponde al gruppo di programmi di avvio dell'utente.                                                                                                            |
 | SYSTEMx86                   | SYSTEMx86                       | Cartella di sistema nei computer x86.                                                                                                                                                         |
-| TEMPLATES                   | TEMPLATES                       | Directory del file System che funge da repository comune per i modelli di documento.                                                                                                       |
-| SYSTEM                      | SYSTEM                          | Cartella di sistema. Un percorso tipico è C: \\ \\ sistema Windows.                                                                                                                                  |
+| TEMPLATES                   | TEMPLATES                       | Directory del file system che funge da repository comune per i modelli di documento.                                                                                                       |
+| SYSTEM                      | SYSTEM                          | Cartella di sistema. Un percorso tipico è C: \\ Sistema \\ Windows.                                                                                                                                  |
 | WINDOWS                     | WINDOWS                         | Directory di Windows o SYSROOT.                                                                                                                                                          |
 
 
 
  
 
-### <a name="argument-information"></a>Informazioni argomento
+### <a name="argument-information"></a>Informazioni sugli argomenti
 
 
 
-|                          |                                         |
-|--------------------------|-----------------------------------------|
-| Sistema operativo minimo | Windows Vista con Service Pack 1 (SP1) |
+|                              | Valore                                   |
+|------------------------------|-----------------------------------------|
+| **Sistema operativo minimo** | Windows Vista con Service Pack 1 (SP1) |
 
 
 

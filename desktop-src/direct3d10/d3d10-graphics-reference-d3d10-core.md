@@ -1,19 +1,19 @@
 ---
-description: L'API Direct3D definisce diversi elementi API di base.
+description: Esaminare le informazioni di riferimento di base sull'API Direct3D 10, che definisce diversi elementi principali dell'API.
 ms.assetid: 0b217811-555e-4433-8cf8-8c43cd5edba6
-title: Guida di riferimento a Direct3D 10 core
+title: Informazioni di riferimento su Direct3D 10 Core
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29eebb193a0f6dcd88fd5683f2eb27b7bc88a758
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 42bc28cdfe1c19e6dd1dba574e4b06263cb61c32
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342376"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408064"
 ---
-# <a name="direct3d-10-core-reference"></a>Guida di riferimento a Direct3D 10 core
+# <a name="direct3d-10-core-reference"></a>Informazioni di riferimento su Direct3D 10 Core
 
-L'API Direct3D definisce diversi elementi API di base.
+L'API Direct3D definisce diversi elementi principali dell'API.
 
 -   [Interfacce di base](d3d10-graphics-reference-d3d10-core-interfaces.md)
 -   [Funzioni di sistema](d3d10-graphics-reference-d3d10-core-functions.md)
@@ -24,7 +24,7 @@ L'API Direct3D definisce diversi elementi API di base.
 
 <dl> <dt>
 
-[Riferimento a Direct3D](d3d10-graphics-reference-d3d10.md)
+[Informazioni di riferimento su Direct3D](d3d10-graphics-reference-d3d10.md)
 </dt> </dl>
 
  

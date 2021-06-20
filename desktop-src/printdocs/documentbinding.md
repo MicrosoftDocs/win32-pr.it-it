@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento DocumentBinding, che descrive il metodo di associazione. DocumentBinding e JobBindAllDocuments si escludono a vicenda.
 ms.assetid: 36a7c360-2d26-46b9-b829-0fb35b36c79c
-title: Associazione documento
+title: DocumentBinding
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da4aeb31acb72932bbf272d52676b7795abe8311
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: bf2b8f44c90cdef37a6599bf25904949748c82ba
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996298"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409464"
 ---
-# <a name="documentbinding"></a>Associazione documento
+# <a name="documentbinding"></a>DocumentBinding
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il metodo di associazione. Ogni documento è associato separatamente. DocumentBinding e JobBindAllDocuments si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra parole chiave.
+Descrive il metodo di associazione. Ogni documento viene associato separatamente. DocumentBinding e JobBindAllDocuments si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra le parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive il metodo di associazione. Ogni documento è associato separatamente. D
 
 | Nome | Valore |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                              |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                              |
 | Prefisso di ambito <br/> | Documento<br/>                                                                                                                             |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize, dove TopLeft è denotato dall'origine dell'asse x e dell'asse y.<br/> |
 
@@ -63,7 +63,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                                                |
 |------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                                     |
+| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                           |
 | \_BindingGutterValue\_<br/>  | Intero<br/> | Micron<br/>    | Maggiore o uguale a 0.<br/>                                                                                                                                                | Definisce la distanza minima dell'associazione per l'associazione finale specificata. La grondaia viene misurata in micron rispetto al bordo della dimensione dei supporti fisici.<br/> |
 
