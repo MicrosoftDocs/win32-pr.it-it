@@ -1,19 +1,19 @@
 ---
-description: 'Passaggio 2:'
+description: Implementare l'interfaccia ISpecifyPropertyPages nel filtro come parte della creazione di una pagina delle proprietà del filtro per un filtro DirectShow personalizzato.
 ms.assetid: 8be83564-07ad-47cf-9538-73136f42ba79
 title: 'Passaggio 2: Implementare ISpecifyPropertyPages'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3125230c8e28c6bd6b8593839d7175bb43d39674
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe37a22c6ba9c14f8656ac41294360569316be1a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315532"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410054"
 ---
-# <a name="step-2-implement-ispecifypropertypages"></a><span data-ttu-id="08c70-104">Passaggio 2:</span><span class="sxs-lookup"><span data-stu-id="08c70-104">Step 2.</span></span> <span data-ttu-id="08c70-105">Implementare ISpecifyPropertyPages</span><span class="sxs-lookup"><span data-stu-id="08c70-105">Implement ISpecifyPropertyPages</span></span>
+# <a name="step-2-implement-ispecifypropertypages"></a><span data-ttu-id="2a2c1-104">Passaggio 2:</span><span class="sxs-lookup"><span data-stu-id="2a2c1-104">Step 2.</span></span> <span data-ttu-id="2a2c1-105">Implementare ISpecifyPropertyPages</span><span class="sxs-lookup"><span data-stu-id="2a2c1-105">Implement ISpecifyPropertyPages</span></span>
 
-<span data-ttu-id="08c70-106">Implementare quindi l'interfaccia **ISpecifyPropertyPages** nel filtro.</span><span class="sxs-lookup"><span data-stu-id="08c70-106">Next, implement the **ISpecifyPropertyPages** interface in your filter.</span></span> <span data-ttu-id="08c70-107">Questa interfaccia dispone di un singolo metodo, **GetPages**, che restituisce una matrice di CLSID per le pagine delle proprietà supportate dal filtro.</span><span class="sxs-lookup"><span data-stu-id="08c70-107">This interface has a single method, **GetPages**, which returns an array of CLSIDs for the property pages that the filter supports.</span></span> <span data-ttu-id="08c70-108">In questo esempio, il filtro ha una singola pagina delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="08c70-108">In this example, the filter has a single property page.</span></span> <span data-ttu-id="08c70-109">Per iniziare, generare il CLSID e dichiararlo nel file di intestazione:</span><span class="sxs-lookup"><span data-stu-id="08c70-109">Start by generating the CLSID and declaring it in your header file:</span></span>
+<span data-ttu-id="2a2c1-106">Implementare quindi **l'interfaccia ISpecifyPropertyPages** nel filtro.</span><span class="sxs-lookup"><span data-stu-id="2a2c1-106">Next, implement the **ISpecifyPropertyPages** interface in your filter.</span></span> <span data-ttu-id="2a2c1-107">Questa interfaccia ha un singolo metodo, **GetPages,** che restituisce una matrice di CLSID per le pagine delle proprietà supportate dal filtro.</span><span class="sxs-lookup"><span data-stu-id="2a2c1-107">This interface has a single method, **GetPages**, which returns an array of CLSIDs for the property pages that the filter supports.</span></span> <span data-ttu-id="2a2c1-108">In questo esempio il filtro ha una singola pagina delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="2a2c1-108">In this example, the filter has a single property page.</span></span> <span data-ttu-id="2a2c1-109">Per iniziare, generare il CLSID e dichiararlo nel file di intestazione:</span><span class="sxs-lookup"><span data-stu-id="2a2c1-109">Start by generating the CLSID and declaring it in your header file:</span></span>
 
 
 ```C++
@@ -24,7 +24,7 @@ DEFINE_GUID(CLSID_SaturationProp, 0xa9bd4eb, 0xded5,
 
 
 
-<span data-ttu-id="08c70-110">Implementare ora il metodo **GetPages** :</span><span class="sxs-lookup"><span data-stu-id="08c70-110">Now implement the **GetPages** method:</span></span>
+<span data-ttu-id="2a2c1-110">Implementare ora **il metodo GetPages:**</span><span class="sxs-lookup"><span data-stu-id="2a2c1-110">Now implement the **GetPages** method:</span></span>
 
 
 ```C++
@@ -54,15 +54,15 @@ public:
 
 
 
-<span data-ttu-id="08c70-111">Allocare memoria per la matrice utilizzando **CoTaskMemAlloc**.</span><span class="sxs-lookup"><span data-stu-id="08c70-111">Allocate memory for the array using **CoTaskMemAlloc**.</span></span> <span data-ttu-id="08c70-112">Il chiamante rilascerà la memoria.</span><span class="sxs-lookup"><span data-stu-id="08c70-112">The caller will release the memory.</span></span>
+<span data-ttu-id="2a2c1-111">Allocare memoria per la matrice usando **CoTaskMemAlloc.**</span><span class="sxs-lookup"><span data-stu-id="2a2c1-111">Allocate memory for the array using **CoTaskMemAlloc**.</span></span> <span data-ttu-id="2a2c1-112">Il chiamante rilascerà la memoria.</span><span class="sxs-lookup"><span data-stu-id="2a2c1-112">The caller will release the memory.</span></span>
 
-<span data-ttu-id="08c70-113">Successivo: [passaggio 3. Supporta QueryInterface](step-3--support-queryinterface.md).</span><span class="sxs-lookup"><span data-stu-id="08c70-113">Next: [Step 3. Support QueryInterface](step-3--support-queryinterface.md).</span></span>
+<span data-ttu-id="2a2c1-113">Passaggio [successivo: Passaggio 3. Supporto di QueryInterface.](step-3--support-queryinterface.md)</span><span class="sxs-lookup"><span data-stu-id="2a2c1-113">Next: [Step 3. Support QueryInterface](step-3--support-queryinterface.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="08c70-114">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="08c70-114">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="2a2c1-114">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="2a2c1-114">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="08c70-115">Creazione di una pagina delle proprietà del filtro</span><span class="sxs-lookup"><span data-stu-id="08c70-115">Creating a Filter Property Page</span></span>](creating-a-filter-property-page.md)
+[<span data-ttu-id="2a2c1-115">Creazione di una pagina delle proprietà del filtro</span><span class="sxs-lookup"><span data-stu-id="2a2c1-115">Creating a Filter Property Page</span></span>](creating-a-filter-property-page.md)
 </dt> </dl>
 
  

@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithSslPolicyServiceExample
-description: Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio di calcolo tramite HTTP, con la sicurezza del trasporto SSL e l'autenticazione di base dell'intestazione HTTP.
+description: Esaminare un esempio C++ di API servizi Web Windows (WWSAPI) di una calcolatrice HTTP con il servizio criteri SSL.
 ms.assetid: 5b3fc119-10c2-444b-91d3-415ad36a65ab
 keywords:
-- HttpCalculatorWithSslPolicyServiceExample native-servizi Web
+- HttpCalculatorWithSslPolicyServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45fd787d10dab20386c016848e238eb345b347f9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 05ef60e86ff6c14bb8fb91369785c197b3994c94
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395962"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409774"
 ---
-# <a name="httpcalculatorwithsslpolicyserviceexample"></a><span data-ttu-id="7847d-106">HttpCalculatorWithSslPolicyServiceExample</span><span class="sxs-lookup"><span data-stu-id="7847d-106">HttpCalculatorWithSslPolicyServiceExample</span></span>
+# <a name="httpcalculatorwithsslpolicyserviceexample"></a><span data-ttu-id="2f5d2-106">HttpCalculatorWithSslPolicyServiceExample</span><span class="sxs-lookup"><span data-stu-id="2f5d2-106">HttpCalculatorWithSslPolicyServiceExample</span></span>
 
-<span data-ttu-id="7847d-107">Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio di calcolo tramite HTTP, con la sicurezza del trasporto SSL e l'autenticazione di base dell'intestazione HTTP.</span><span class="sxs-lookup"><span data-stu-id="7847d-107">This example shows how to use service host for hosting a calculator service over HTTP, with SSL transport security and HTTP header basic authentication.</span></span> <span data-ttu-id="7847d-108">In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server.</span><span class="sxs-lookup"><span data-stu-id="7847d-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="7847d-109">L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.</span><span class="sxs-lookup"><span data-stu-id="7847d-109">Client authentication is provided by a username/password pair supplied in HTTP headers using the basic scheme.</span></span>
+<span data-ttu-id="2f5d2-107">Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP.</span><span class="sxs-lookup"><span data-stu-id="2f5d2-107">This example shows how to use service host for hosting a calculator service over HTTP, with SSL transport security and HTTP header basic authentication.</span></span> <span data-ttu-id="2f5d2-108">In questa configurazione, la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server.</span><span class="sxs-lookup"><span data-stu-id="2f5d2-108">In this setup, the transport connection is protected (signed, encrypted) by SSL which also provides server authentication.</span></span> <span data-ttu-id="2f5d2-109">L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.</span><span class="sxs-lookup"><span data-stu-id="2f5d2-109">Client authentication is provided by a username/password pair supplied in HTTP headers using the basic scheme.</span></span>
 
--   [<span data-ttu-id="7847d-110">HttpCalculatorWithSslPolicyService. cpp</span><span class="sxs-lookup"><span data-stu-id="7847d-110">HttpCalculatorWithSslPolicyService.cpp</span></span>](#httpcalculatorwithsslpolicyservicecpp)
--   [<span data-ttu-id="7847d-111">CalculatorServiceWithPolicy. WSDL</span><span class="sxs-lookup"><span data-stu-id="7847d-111">CalculatorServiceWithPolicy.wsdl</span></span>](#calculatorservicewithpolicywsdl)
--   [<span data-ttu-id="7847d-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="7847d-112">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="2f5d2-110">HttpCalculatorWithSslPolicyService.cpp</span><span class="sxs-lookup"><span data-stu-id="2f5d2-110">HttpCalculatorWithSslPolicyService.cpp</span></span>](#httpcalculatorwithsslpolicyservicecpp)
+-   [<span data-ttu-id="2f5d2-111">CalculatorServiceWithPolicy.wsdl</span><span class="sxs-lookup"><span data-stu-id="2f5d2-111">CalculatorServiceWithPolicy.wsdl</span></span>](#calculatorservicewithpolicywsdl)
+-   [<span data-ttu-id="2f5d2-112">Makefile</span><span class="sxs-lookup"><span data-stu-id="2f5d2-112">Makefile</span></span>](#makefile)
 
-## <a name="httpcalculatorwithsslpolicyservicecpp"></a><span data-ttu-id="7847d-113">HttpCalculatorWithSslPolicyService. cpp</span><span class="sxs-lookup"><span data-stu-id="7847d-113">HttpCalculatorWithSslPolicyService.cpp</span></span>
+## <a name="httpcalculatorwithsslpolicyservicecpp"></a><span data-ttu-id="2f5d2-113">HttpCalculatorWithSslPolicyService.cpp</span><span class="sxs-lookup"><span data-stu-id="2f5d2-113">HttpCalculatorWithSslPolicyService.cpp</span></span>
 
 
 ```C++
@@ -271,7 +271,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewithpolicywsdl"></a><span data-ttu-id="7847d-114">CalculatorServiceWithPolicy. WSDL</span><span class="sxs-lookup"><span data-stu-id="7847d-114">CalculatorServiceWithPolicy.wsdl</span></span>
+## <a name="calculatorservicewithpolicywsdl"></a><span data-ttu-id="2f5d2-114">CalculatorServiceWithPolicy.wsdl</span><span class="sxs-lookup"><span data-stu-id="2f5d2-114">CalculatorServiceWithPolicy.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -396,7 +396,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="7847d-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="7847d-115">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="2f5d2-115">Makefile</span><span class="sxs-lookup"><span data-stu-id="2f5d2-115">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>
@@ -424,9 +424,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
