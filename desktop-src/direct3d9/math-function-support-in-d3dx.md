@@ -1,45 +1,45 @@
 ---
-description: D3DX è una libreria di utilità che fornisce servizi di supporto. Si tratta di un livello sopra il componente Direct3D.
+description: Informazioni sul supporto delle funzioni matematiche in D3DX. D3DX è una libreria di utilità che fornisce servizi helper. Si tratta di un livello sopra il componente Direct3D.
 ms.assetid: a44d25de-f79d-4132-a75a-0c22ccd84341
-title: Supporto della funzione Math in D3DX (Direct3D 9)
+title: Supporto delle funzioni matematiche in D3DX (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac69e0385919b015d1f8d3e7d47e221c06a04fbb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a28c32b13d185694e4ffa41c314cf9f77cbb18b7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124476"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407524"
 ---
-# <a name="math-function-support-in-d3dx-direct3d-9"></a><span data-ttu-id="6378a-104">Supporto della funzione Math in D3DX (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="6378a-104">Math Function Support in D3DX (Direct3D 9)</span></span>
+# <a name="math-function-support-in-d3dx-direct3d-9"></a><span data-ttu-id="67b1e-105">Supporto delle funzioni matematiche in D3DX (Direct3D 9)</span><span class="sxs-lookup"><span data-stu-id="67b1e-105">Math Function Support in D3DX (Direct3D 9)</span></span>
 
-<span data-ttu-id="6378a-105">D3DX è una libreria di utilità che fornisce servizi di supporto.</span><span class="sxs-lookup"><span data-stu-id="6378a-105">D3DX is a utility library that provides helper services.</span></span> <span data-ttu-id="6378a-106">Si tratta di un livello sopra il componente Direct3D.</span><span class="sxs-lookup"><span data-stu-id="6378a-106">It is a layer above the Direct3D component.</span></span>
+<span data-ttu-id="67b1e-106">D3DX è una libreria di utilità che fornisce servizi helper.</span><span class="sxs-lookup"><span data-stu-id="67b1e-106">D3DX is a utility library that provides helper services.</span></span> <span data-ttu-id="67b1e-107">Si tratta di un livello sopra il componente Direct3D.</span><span class="sxs-lookup"><span data-stu-id="67b1e-107">It is a layer above the Direct3D component.</span></span>
 
-## <a name="math"></a><span data-ttu-id="6378a-107">Math</span><span class="sxs-lookup"><span data-stu-id="6378a-107">Math</span></span>
+## <a name="math"></a><span data-ttu-id="67b1e-108">Math</span><span class="sxs-lookup"><span data-stu-id="67b1e-108">Math</span></span>
 
-<span data-ttu-id="6378a-108">Il supporto matematico, contenuto in un set di funzioni, è disponibile per:</span><span class="sxs-lookup"><span data-stu-id="6378a-108">Math support, contained in a set of functions, is provided for:</span></span>
+<span data-ttu-id="67b1e-109">Il supporto matematico, contenuto in un set di funzioni, viene fornito per:</span><span class="sxs-lookup"><span data-stu-id="67b1e-109">Math support, contained in a set of functions, is provided for:</span></span>
 
--   <span data-ttu-id="6378a-109">Calcoli colori</span><span class="sxs-lookup"><span data-stu-id="6378a-109">Color calculations</span></span>
--   <span data-ttu-id="6378a-110">Aerei</span><span class="sxs-lookup"><span data-stu-id="6378a-110">Planes</span></span>
--   <span data-ttu-id="6378a-111">Manipolazione della matrice</span><span class="sxs-lookup"><span data-stu-id="6378a-111">Matrix manipulation</span></span>
--   <span data-ttu-id="6378a-112">Quaternioni</span><span class="sxs-lookup"><span data-stu-id="6378a-112">Quaternions</span></span>
--   <span data-ttu-id="6378a-113">vettori 2D</span><span class="sxs-lookup"><span data-stu-id="6378a-113">2D vectors</span></span>
--   <span data-ttu-id="6378a-114">vettori 3D</span><span class="sxs-lookup"><span data-stu-id="6378a-114">3D vectors</span></span>
--   <span data-ttu-id="6378a-115">vettori 4D</span><span class="sxs-lookup"><span data-stu-id="6378a-115">4D vectors</span></span>
+-   <span data-ttu-id="67b1e-110">Calcoli dei colori</span><span class="sxs-lookup"><span data-stu-id="67b1e-110">Color calculations</span></span>
+-   <span data-ttu-id="67b1e-111">Aerei</span><span class="sxs-lookup"><span data-stu-id="67b1e-111">Planes</span></span>
+-   <span data-ttu-id="67b1e-112">Manipolazione della matrice</span><span class="sxs-lookup"><span data-stu-id="67b1e-112">Matrix manipulation</span></span>
+-   <span data-ttu-id="67b1e-113">Quaternioni</span><span class="sxs-lookup"><span data-stu-id="67b1e-113">Quaternions</span></span>
+-   <span data-ttu-id="67b1e-114">Vettori 2D</span><span class="sxs-lookup"><span data-stu-id="67b1e-114">2D vectors</span></span>
+-   <span data-ttu-id="67b1e-115">Vettori 3D</span><span class="sxs-lookup"><span data-stu-id="67b1e-115">3D vectors</span></span>
+-   <span data-ttu-id="67b1e-116">Vettori 4D</span><span class="sxs-lookup"><span data-stu-id="67b1e-116">4D vectors</span></span>
 
-<span data-ttu-id="6378a-116">Si noti che, quando abbinato agli overload C++, il supporto per i tipi matematici 3D di base è esteso.</span><span class="sxs-lookup"><span data-stu-id="6378a-116">Please note that when coupled with the C++ overloads, the support for basic 3D math types is extensive.</span></span>
+<span data-ttu-id="67b1e-117">Si noti che, se associato con gli overload di C++, il supporto per i tipi matematici 3D di base è ampio.</span><span class="sxs-lookup"><span data-stu-id="67b1e-117">Please note that when coupled with the C++ overloads, the support for basic 3D math types is extensive.</span></span>
 
-<span data-ttu-id="6378a-117">Per ulteriori informazioni su queste funzioni, vedere [D3DX Functions](dx9-graphics-reference-d3dx-functions.md).</span><span class="sxs-lookup"><span data-stu-id="6378a-117">For more information about these functions, see [D3DX Functions](dx9-graphics-reference-d3dx-functions.md).</span></span> <span data-ttu-id="6378a-118">Per individuare la funzione di cui si ha bisogno, vengono suddivise in diverse cartelle.</span><span class="sxs-lookup"><span data-stu-id="6378a-118">To help find the function you need, they are broken up in several folders.</span></span>
+<span data-ttu-id="67b1e-118">Per altre informazioni su queste funzioni, vedere [Funzioni D3DX.](dx9-graphics-reference-d3dx-functions.md)</span><span class="sxs-lookup"><span data-stu-id="67b1e-118">For more information about these functions, see [D3DX Functions](dx9-graphics-reference-d3dx-functions.md).</span></span> <span data-ttu-id="67b1e-119">Per facilitare l'individuazione della funzione necessaria, queste vengono suddivise in diverse cartelle.</span><span class="sxs-lookup"><span data-stu-id="67b1e-119">To help find the function you need, they are broken up in several folders.</span></span>
 
-## <a name="float16"></a><span data-ttu-id="6378a-119">FLOAT16</span><span class="sxs-lookup"><span data-stu-id="6378a-119">FLOAT16</span></span>
+## <a name="float16"></a><span data-ttu-id="67b1e-120">FLOAT16</span><span class="sxs-lookup"><span data-stu-id="67b1e-120">FLOAT16</span></span>
 
-<span data-ttu-id="6378a-120">Quando si usa il tipo di dati FLOAT16, assicurarsi di limitare i valori a un massimo di D3DX \_ 16F \_ max.</span><span class="sxs-lookup"><span data-stu-id="6378a-120">When using the FLOAT16 data type, be sure to limit values to a maximum of D3DX\_16F\_MAX.</span></span> <span data-ttu-id="6378a-121">Qualsiasi valore di FLOAT16 che supera questa operazione determinerà un comportamento indefinito nella pipeline.</span><span class="sxs-lookup"><span data-stu-id="6378a-121">Any FLOAT16 value that exceeds this will result in undefined behavior in the pipeline.</span></span> <span data-ttu-id="6378a-122">Vedere [altre costanti D3DX](other-d3dx-constants.md).</span><span class="sxs-lookup"><span data-stu-id="6378a-122">See [Other D3DX Constants](other-d3dx-constants.md).</span></span>
+<span data-ttu-id="67b1e-121">Quando si usa il tipo di dati FLOAT16, assicurarsi di limitare i valori a un massimo di D3DX \_ 16F \_ MAX.</span><span class="sxs-lookup"><span data-stu-id="67b1e-121">When using the FLOAT16 data type, be sure to limit values to a maximum of D3DX\_16F\_MAX.</span></span> <span data-ttu-id="67b1e-122">Qualsiasi valore FLOAT16 che supera questo valore comporta un comportamento non definito nella pipeline.</span><span class="sxs-lookup"><span data-stu-id="67b1e-122">Any FLOAT16 value that exceeds this will result in undefined behavior in the pipeline.</span></span> <span data-ttu-id="67b1e-123">Vedere [Altre costanti D3DX.](other-d3dx-constants.md)</span><span class="sxs-lookup"><span data-stu-id="67b1e-123">See [Other D3DX Constants](other-d3dx-constants.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="6378a-123">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="6378a-123">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="67b1e-124">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="67b1e-124">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6378a-124">D3DX</span><span class="sxs-lookup"><span data-stu-id="6378a-124">D3DX</span></span>](d3dx.md)
+[<span data-ttu-id="67b1e-125">D3DX</span><span class="sxs-lookup"><span data-stu-id="67b1e-125">D3DX</span></span>](d3dx.md)
 </dt> </dl>
 
  

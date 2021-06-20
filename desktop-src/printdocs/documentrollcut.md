@@ -1,43 +1,43 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento DocumentRollCut, che descrive il metodo di taglio per la carta a rullo. Ogni documento viene gestito separatamente.
 ms.assetid: 8eb4e574-3209-459c-9a25-95377b2f7439
 title: DocumentRollCut
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3d4bfb09a1c3f6f43f11886685a0edfcf2bbd92
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 92f7232cbe9dafce25aa2ee482ca40bf99145841
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997048"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409184"
 ---
-# <a name="documentrollcut"></a><span data-ttu-id="6264b-104">DocumentRollCut</span><span class="sxs-lookup"><span data-stu-id="6264b-104">DocumentRollCut</span></span>
+# <a name="documentrollcut"></a><span data-ttu-id="8f27a-104">DocumentRollCut</span><span class="sxs-lookup"><span data-stu-id="8f27a-104">DocumentRollCut</span></span>
 
-<span data-ttu-id="6264b-105">Questo argomento non è corrente.</span><span class="sxs-lookup"><span data-stu-id="6264b-105">This topic is not current.</span></span> <span data-ttu-id="6264b-106">Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="6264b-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
+<span data-ttu-id="8f27a-105">Questo argomento non è corrente.</span><span class="sxs-lookup"><span data-stu-id="8f27a-105">This topic is not current.</span></span> <span data-ttu-id="8f27a-106">Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span><span class="sxs-lookup"><span data-stu-id="8f27a-106">For the most current information, see the [Print Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).</span></span>
 
-<span data-ttu-id="6264b-107">Descrive il metodo di taglio per la carta a rullo.</span><span class="sxs-lookup"><span data-stu-id="6264b-107">Describes the cutting method for roll paper.</span></span> <span data-ttu-id="6264b-108">Ogni documento viene gestito separatamente.</span><span class="sxs-lookup"><span data-stu-id="6264b-108">Each document is handled separately.</span></span> <span data-ttu-id="6264b-109">Le opzioni specificate descrivono i diversi metodi per il roll cut.</span><span class="sxs-lookup"><span data-stu-id="6264b-109">The specified options describe the different methods for roll cut.</span></span>
+<span data-ttu-id="8f27a-107">Descrive il metodo di taglio per la carta a rullo.</span><span class="sxs-lookup"><span data-stu-id="8f27a-107">Describes the cutting method for roll paper.</span></span> <span data-ttu-id="8f27a-108">Ogni documento viene gestito separatamente.</span><span class="sxs-lookup"><span data-stu-id="8f27a-108">Each document is handled separately.</span></span> <span data-ttu-id="8f27a-109">Le opzioni specificate descrivono i diversi metodi per il roll cut.</span><span class="sxs-lookup"><span data-stu-id="8f27a-109">The specified options describe the different methods for roll cut.</span></span>
 
--   [<span data-ttu-id="6264b-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="6264b-110">Element Information</span></span>](#element-information)
--   [<span data-ttu-id="6264b-111">Contenuto strutturale</span><span class="sxs-lookup"><span data-stu-id="6264b-111">Structural Content</span></span>](#structural-content)
--   [<span data-ttu-id="6264b-112">Extensible Markup Language (XML) Content</span><span class="sxs-lookup"><span data-stu-id="6264b-112">Extensible Markup Language (XML) Content</span></span>](#extensible-markup-language-xml-content)
+-   [<span data-ttu-id="8f27a-110">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="8f27a-110">Element Information</span></span>](#element-information)
+-   [<span data-ttu-id="8f27a-111">Contenuto strutturale</span><span class="sxs-lookup"><span data-stu-id="8f27a-111">Structural Content</span></span>](#structural-content)
+-   [<span data-ttu-id="8f27a-112">Extensible Markup Language (XML) Content</span><span class="sxs-lookup"><span data-stu-id="8f27a-112">Extensible Markup Language (XML) Content</span></span>](#extensible-markup-language-xml-content)
 
-## <a name="element-information"></a><span data-ttu-id="6264b-113">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="6264b-113">Element Information</span></span>
+## <a name="element-information"></a><span data-ttu-id="8f27a-113">Informazioni sull'elemento</span><span class="sxs-lookup"><span data-stu-id="8f27a-113">Element Information</span></span>
 
 
 
-| <span data-ttu-id="6264b-114">Nome</span><span class="sxs-lookup"><span data-stu-id="6264b-114">Name</span></span> | <span data-ttu-id="6264b-115">Valore</span><span class="sxs-lookup"><span data-stu-id="6264b-115">Value</span></span> |
+| <span data-ttu-id="8f27a-114">Nome</span><span class="sxs-lookup"><span data-stu-id="8f27a-114">Name</span></span> | <span data-ttu-id="8f27a-115">Valore</span><span class="sxs-lookup"><span data-stu-id="8f27a-115">Value</span></span> |
 |----------------------------|---------------------|
-| <span data-ttu-id="6264b-116">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="6264b-116">Element Type</span></span> <br/>   | <span data-ttu-id="6264b-117">Caratteristica</span><span class="sxs-lookup"><span data-stu-id="6264b-117">Feature</span></span><br/>  |
-| <span data-ttu-id="6264b-118">Prefisso di ambito</span><span class="sxs-lookup"><span data-stu-id="6264b-118">Scoping Prefix</span></span> <br/> | <span data-ttu-id="6264b-119">Documento</span><span class="sxs-lookup"><span data-stu-id="6264b-119">Document</span></span><br/> |
-| <span data-ttu-id="6264b-120">Note</span><span class="sxs-lookup"><span data-stu-id="6264b-120">Notes</span></span> <br/>          | <span data-ttu-id="6264b-121">nessuno</span><span class="sxs-lookup"><span data-stu-id="6264b-121">None</span></span><br/>     |
+| <span data-ttu-id="8f27a-116">Tipo di elemento</span><span class="sxs-lookup"><span data-stu-id="8f27a-116">Element Type</span></span> <br/>   | <span data-ttu-id="8f27a-117">Funzionalità</span><span class="sxs-lookup"><span data-stu-id="8f27a-117">Feature</span></span><br/>  |
+| <span data-ttu-id="8f27a-118">Prefisso di ambito</span><span class="sxs-lookup"><span data-stu-id="8f27a-118">Scoping Prefix</span></span> <br/> | <span data-ttu-id="8f27a-119">Documento</span><span class="sxs-lookup"><span data-stu-id="8f27a-119">Document</span></span><br/> |
+| <span data-ttu-id="8f27a-120">Note</span><span class="sxs-lookup"><span data-stu-id="8f27a-120">Notes</span></span> <br/>          | <span data-ttu-id="8f27a-121">nessuno</span><span class="sxs-lookup"><span data-stu-id="8f27a-121">None</span></span><br/>     |
 
 
 
  
 
-## <a name="structural-content"></a><span data-ttu-id="6264b-122">Contenuto strutturale</span><span class="sxs-lookup"><span data-stu-id="6264b-122">Structural Content</span></span>
+## <a name="structural-content"></a><span data-ttu-id="8f27a-122">Contenuto strutturale</span><span class="sxs-lookup"><span data-stu-id="8f27a-122">Structural Content</span></span>
 
-<span data-ttu-id="6264b-123">La struttura XML di questo elemento è:</span><span class="sxs-lookup"><span data-stu-id="6264b-123">The XML structure of this element is:</span></span>
+<span data-ttu-id="8f27a-123">La struttura XML di questo elemento è:</span><span class="sxs-lookup"><span data-stu-id="8f27a-123">The XML structure of this element is:</span></span>
 
 ``` syntax
 <psf:Feature name="psk:DocumentRollCut">
@@ -53,24 +53,24 @@ ms.locfileid: "107997048"
       
 ```
 
-## <a name="structure-variables"></a><span data-ttu-id="6264b-124">Variabili di struttura</span><span class="sxs-lookup"><span data-stu-id="6264b-124">Structure Variables</span></span>
+## <a name="structure-variables"></a><span data-ttu-id="8f27a-124">Variabili di struttura</span><span class="sxs-lookup"><span data-stu-id="8f27a-124">Structure Variables</span></span>
 
-<span data-ttu-id="6264b-125">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="6264b-125">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
+<span data-ttu-id="8f27a-125">Nella tabella seguente vengono descritte le caratteristiche delle variabili definite nella struttura XML.</span><span class="sxs-lookup"><span data-stu-id="8f27a-125">The following table outlines the characteristics of the variables defined in the XML structure.</span></span>
 
 
 
-| <span data-ttu-id="6264b-126">Nome</span><span class="sxs-lookup"><span data-stu-id="6264b-126">Name</span></span>                               | <span data-ttu-id="6264b-127">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="6264b-127">Data type</span></span>         | <span data-ttu-id="6264b-128">Unità</span><span class="sxs-lookup"><span data-stu-id="6264b-128">Unit</span></span>                  | <span data-ttu-id="6264b-129">Valori supportati</span><span class="sxs-lookup"><span data-stu-id="6264b-129">Supported values</span></span>                                                                                                                                                                      | <span data-ttu-id="6264b-130">Riepilogo</span><span class="sxs-lookup"><span data-stu-id="6264b-130">Summary</span></span>                                                                      |
+| <span data-ttu-id="8f27a-126">Nome</span><span class="sxs-lookup"><span data-stu-id="8f27a-126">Name</span></span>                               | <span data-ttu-id="8f27a-127">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="8f27a-127">Data type</span></span>         | <span data-ttu-id="8f27a-128">Unità</span><span class="sxs-lookup"><span data-stu-id="8f27a-128">Unit</span></span>                  | <span data-ttu-id="8f27a-129">Valori supportati</span><span class="sxs-lookup"><span data-stu-id="8f27a-129">Supported values</span></span>                                                                                                                                                                      | <span data-ttu-id="8f27a-130">Riepilogo</span><span class="sxs-lookup"><span data-stu-id="8f27a-130">Summary</span></span>                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span data-ttu-id="6264b-131">\_OptionName\_</span><span class="sxs-lookup"><span data-stu-id="6264b-131">\_OptionName\_</span></span><br/>          | <span data-ttu-id="6264b-132">string</span><span class="sxs-lookup"><span data-stu-id="6264b-132">string</span></span><br/> | <span data-ttu-id="6264b-133">caratteri</span><span class="sxs-lookup"><span data-stu-id="6264b-133">characters</span></span><br/> | <span data-ttu-id="6264b-134">Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/)</span><span class="sxs-lookup"><span data-stu-id="6264b-134">Valid fully qualified name as defined by [Namespaces in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/).</span></span> <span data-ttu-id="6264b-135">Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.</span><span class="sxs-lookup"><span data-stu-id="6264b-135">If no namespace is specified, default namespace is assumed.</span></span><br/> | <span data-ttu-id="6264b-136">Nome dell'opzione.</span><span class="sxs-lookup"><span data-stu-id="6264b-136">The name of the option.</span></span><br/>                                           |
-| <span data-ttu-id="6264b-137">\_IdentityOptionValue\_</span><span class="sxs-lookup"><span data-stu-id="6264b-137">\_IdentityOptionValue\_</span></span><br/> | <span data-ttu-id="6264b-138">string</span><span class="sxs-lookup"><span data-stu-id="6264b-138">string</span></span><br/> | <span data-ttu-id="6264b-139">n/d</span><span class="sxs-lookup"><span data-stu-id="6264b-139">n/a</span></span><br/>        | <span data-ttu-id="6264b-140">True, False.</span><span class="sxs-lookup"><span data-stu-id="6264b-140">True, False.</span></span><br/>                                                                                                                                                               | <span data-ttu-id="6264b-141">Definisce un'opzione che, se selezionata, disabilita questa funzionalità.</span><span class="sxs-lookup"><span data-stu-id="6264b-141">Defines an Option which when selected would disable this feature.</span></span><br/> |
+| <span data-ttu-id="8f27a-131">\_OptionName\_</span><span class="sxs-lookup"><span data-stu-id="8f27a-131">\_OptionName\_</span></span><br/>          | <span data-ttu-id="8f27a-132">string</span><span class="sxs-lookup"><span data-stu-id="8f27a-132">string</span></span><br/> | <span data-ttu-id="8f27a-133">caratteri</span><span class="sxs-lookup"><span data-stu-id="8f27a-133">characters</span></span><br/> | <span data-ttu-id="8f27a-134">Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/)</span><span class="sxs-lookup"><span data-stu-id="8f27a-134">Valid fully qualified name as defined by [Namespaces in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/).</span></span> <span data-ttu-id="8f27a-135">Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.</span><span class="sxs-lookup"><span data-stu-id="8f27a-135">If no namespace is specified, default namespace is assumed.</span></span><br/> | <span data-ttu-id="8f27a-136">Nome dell'opzione.</span><span class="sxs-lookup"><span data-stu-id="8f27a-136">The name of the option.</span></span><br/>                                           |
+| <span data-ttu-id="8f27a-137">\_IdentityOptionValue\_</span><span class="sxs-lookup"><span data-stu-id="8f27a-137">\_IdentityOptionValue\_</span></span><br/> | <span data-ttu-id="8f27a-138">string</span><span class="sxs-lookup"><span data-stu-id="8f27a-138">string</span></span><br/> | <span data-ttu-id="8f27a-139">n/d</span><span class="sxs-lookup"><span data-stu-id="8f27a-139">n/a</span></span><br/>        | <span data-ttu-id="8f27a-140">True, False.</span><span class="sxs-lookup"><span data-stu-id="8f27a-140">True, False.</span></span><br/>                                                                                                                                                               | <span data-ttu-id="8f27a-141">Definisce un'opzione che, se selezionata, disabilita questa funzionalità.</span><span class="sxs-lookup"><span data-stu-id="8f27a-141">Defines an Option which when selected would disable this feature.</span></span><br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a><span data-ttu-id="6264b-142">Extensible Markup Language (XML) Content</span><span class="sxs-lookup"><span data-stu-id="6264b-142">Extensible Markup Language (XML) Content</span></span>
+## <a name="extensible-markup-language-xml-content"></a><span data-ttu-id="8f27a-142">Extensible Markup Language (XML) Content</span><span class="sxs-lookup"><span data-stu-id="8f27a-142">Extensible Markup Language (XML) Content</span></span>
 
-<span data-ttu-id="6264b-143">Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi .</span><span class="sxs-lookup"><span data-stu-id="6264b-143">The public Print Schema keywords are defined in the https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace.</span></span> <span data-ttu-id="6264b-144">Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:</span><span class="sxs-lookup"><span data-stu-id="6264b-144">The public Extensible Markup Language (XML) content for this keyword is defined below:</span></span>
+<span data-ttu-id="8f27a-143">Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi .</span><span class="sxs-lookup"><span data-stu-id="8f27a-143">The public Print Schema keywords are defined in the https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace.</span></span> <span data-ttu-id="8f27a-144">Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:</span><span class="sxs-lookup"><span data-stu-id="8f27a-144">The public Extensible Markup Language (XML) content for this keyword is defined below:</span></span>
 
 ``` syntax
 <psf:Feature name="psk:DocumentRollCut">
@@ -89,11 +89,11 @@ ms.locfileid: "107997048"
     
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="6264b-145">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="6264b-145">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8f27a-145">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="8f27a-145">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6264b-146">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="6264b-146">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[<span data-ttu-id="8f27a-146">Specifica dello schema di stampa</span><span class="sxs-lookup"><span data-stu-id="8f27a-146">Print Schema Specification</span></span>](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

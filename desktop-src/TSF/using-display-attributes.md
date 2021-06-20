@@ -1,34 +1,34 @@
 ---
-title: Utilizzo degli attributi di visualizzazione
-description: Il Framework di servizi di testo (TSF) consente a un servizio di testo di fornire attributi di visualizzazione per il testo.
+title: Uso degli attributi di visualizzazione
+description: Snello come usare gli attributi di visualizzazione. Framework servizi di testo (TSF) consente a un servizio di testo di fornire attributi di visualizzazione per il testo.
 ms.assetid: b0f6e8e8-586a-4b51-a498-fb22bd36161f
 keywords:
-- Framework servizi di testo (TSF), attributi di visualizzazione
-- TSF (Text Services Framework), attributi di visualizzazione
-- Applicazioni abilitate per TSF, attributi di visualizzazione
+- Framework servizi di testo (TSF), visualizzare gli attributi
+- TSF (Framework servizi di testo), visualizzare gli attributi
+- applicazioni abilitate per TSF,visualizzazione di attributi
 - attributi di visualizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbc725f67fab904db23f6232ac5efb5d63c62c26
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3c576064ab22571b5a7822f5e6ff143add55d03
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708344"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406134"
 ---
-# <a name="using-display-attributes"></a><span data-ttu-id="f87fa-107">Utilizzo degli attributi di visualizzazione</span><span class="sxs-lookup"><span data-stu-id="f87fa-107">Using Display Attributes</span></span>
+# <a name="using-display-attributes"></a><span data-ttu-id="f4605-108">Uso degli attributi di visualizzazione</span><span class="sxs-lookup"><span data-stu-id="f4605-108">Using Display Attributes</span></span>
 
-<span data-ttu-id="f87fa-108">Il Framework di servizi di testo (TSF) consente a un servizio di testo di fornire attributi di visualizzazione per il testo.</span><span class="sxs-lookup"><span data-stu-id="f87fa-108">Text Services Framework (TSF) enables a text service to provide display attributes for text.</span></span> <span data-ttu-id="f87fa-109">Questo consente a un'applicazione di visualizzare ulteriori commenti e suggerimenti visivi.</span><span class="sxs-lookup"><span data-stu-id="f87fa-109">This enables an application to display additional visual feedback.</span></span> <span data-ttu-id="f87fa-110">Ad esempio, un servizio di testo del correttore ortografico può evidenziare una parola errata con una sottolineatura rossa.</span><span class="sxs-lookup"><span data-stu-id="f87fa-110">For example, a spelling checker text service can highlight a misspelled word with a red underline.</span></span> <span data-ttu-id="f87fa-111">Gli attributi di visualizzazione che è possibile fornire sono definiti dalla struttura [tf \_ DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) e includono il colore del testo, il colore di sfondo del testo, lo stile di sottolineatura, il colore di sottolineatura e il peso della</span><span class="sxs-lookup"><span data-stu-id="f87fa-111">The display attributes that can be provided are defined by the [TF\_DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) structure and include text color, text background color, underline style, underline color, and underline weight.</span></span>
+<span data-ttu-id="f4605-109">Framework servizi di testo (TSF) consente a un servizio di testo di fornire attributi di visualizzazione per il testo.</span><span class="sxs-lookup"><span data-stu-id="f4605-109">Text Services Framework (TSF) enables a text service to provide display attributes for text.</span></span> <span data-ttu-id="f4605-110">In questo modo un'applicazione può visualizzare commenti e suggerimenti visivi aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="f4605-110">This enables an application to display additional visual feedback.</span></span> <span data-ttu-id="f4605-111">Ad esempio, un servizio di testo per il controllo ortografico può evidenziare una parola con errori di ortografia con una sottolineatura rossa.</span><span class="sxs-lookup"><span data-stu-id="f4605-111">For example, a spelling checker text service can highlight a misspelled word with a red underline.</span></span> <span data-ttu-id="f4605-112">Gli attributi di visualizzazione che è possibile specificare sono definiti dalla struttura [TF \_ DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) e includono il colore del testo, il colore di sfondo del testo, lo stile di sottolineatura, il colore della sottolineatura e lo spessore della sottolineatura.</span><span class="sxs-lookup"><span data-stu-id="f4605-112">The display attributes that can be provided are defined by the [TF\_DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) structure and include text color, text background color, underline style, underline color, and underline weight.</span></span>
 
-<span data-ttu-id="f87fa-112">Quando si esegue il rendering del testo, un'applicazione deve ottenere gli attributi di visualizzazione per il testo disegnato e utilizzare gli attributi per modificare la modalità di disegno del testo.</span><span class="sxs-lookup"><span data-stu-id="f87fa-112">When rendering text, an application should obtain the display attributes for the text drawn and use the attributes to modify how the text is drawn.</span></span> <span data-ttu-id="f87fa-113">Completare i passaggi seguenti per ottenere gli attributi di visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="f87fa-113">Complete the following steps to obtain display attributes.</span></span>
+<span data-ttu-id="f4605-113">Quando si esegue il rendering del testo, un'applicazione deve ottenere gli attributi di visualizzazione per il testo disegnato e usare gli attributi per modificare il modo in cui viene disegnato il testo.</span><span class="sxs-lookup"><span data-stu-id="f4605-113">When rendering text, an application should obtain the display attributes for the text drawn and use the attributes to modify how the text is drawn.</span></span> <span data-ttu-id="f4605-114">Completare la procedura seguente per ottenere gli attributi di visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="f4605-114">Complete the following steps to obtain display attributes.</span></span>
 
-1.  <span data-ttu-id="f87fa-114">Ottenere un oggetto Property per l' \_ attributo GUID prop chiamando \_ [ITfContext:: GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty).</span><span class="sxs-lookup"><span data-stu-id="f87fa-114">Obtain a property object for GUID\_PROP\_ATTRIBUTE by calling [ITfContext::GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty).</span></span>
-2.  <span data-ttu-id="f87fa-115">Ottenere il valore dell'attributo GUID \_ prop \_ per l'intervallo specificato chiamando [ITfReadOnlyProperty:: GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue).</span><span class="sxs-lookup"><span data-stu-id="f87fa-115">Obtain the value of the GUID\_PROP\_ATTRIBUTE for the specified range by calling [ITfReadOnlyProperty::GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue).</span></span> <span data-ttu-id="f87fa-116">Questa operazione fornisce un valore [TfGuidAtom](tfguidatom.md) .</span><span class="sxs-lookup"><span data-stu-id="f87fa-116">This supplies a [TfGuidAtom](tfguidatom.md) value.</span></span>
-3.  <span data-ttu-id="f87fa-117">Convertire il valore [TfGuidAtom](tfguidatom.md) in un GUID chiamando [ITfCategoryMgr:: GetGuid](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid).</span><span class="sxs-lookup"><span data-stu-id="f87fa-117">Convert the [TfGuidAtom](tfguidatom.md) value into a GUID by calling [ITfCategoryMgr::GetGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid).</span></span>
-4.  <span data-ttu-id="f87fa-118">Creare un oggetto [ITfDisplayAttributeInfo](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo) per l'attributo di visualizzazione chiamando [ITfDisplayAttributeMgr:: GetDisplayAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span><span class="sxs-lookup"><span data-stu-id="f87fa-118">Create an [ITfDisplayAttributeInfo](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo) object for the display attribute by calling [ITfDisplayAttributeMgr::GetDisplayAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span></span>
-5.  <span data-ttu-id="f87fa-119">Ottenere le informazioni sugli attributi di visualizzazione chiamando [ITfDisplayAttributeInfo:: GetAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span><span class="sxs-lookup"><span data-stu-id="f87fa-119">Obtain the display attribute information by calling [ITfDisplayAttributeInfo::GetAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span></span>
+1.  <span data-ttu-id="f4605-115">Ottenere un oggetto proprietà per GUID \_ PROP \_ ATTRIBUTE chiamando [ITfContext::GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty).</span><span class="sxs-lookup"><span data-stu-id="f4605-115">Obtain a property object for GUID\_PROP\_ATTRIBUTE by calling [ITfContext::GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty).</span></span>
+2.  <span data-ttu-id="f4605-116">Ottenere il valore dell'ATTRIBUTO \_ GUID PROP \_ per l'intervallo specificato chiamando [ITfReadOnlyProperty::GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue).</span><span class="sxs-lookup"><span data-stu-id="f4605-116">Obtain the value of the GUID\_PROP\_ATTRIBUTE for the specified range by calling [ITfReadOnlyProperty::GetValue](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue).</span></span> <span data-ttu-id="f4605-117">Viene fornito un [valore TfGuidAtom.](tfguidatom.md)</span><span class="sxs-lookup"><span data-stu-id="f4605-117">This supplies a [TfGuidAtom](tfguidatom.md) value.</span></span>
+3.  <span data-ttu-id="f4605-118">Convertire il [valore TfGuidAtom](tfguidatom.md) in un GUID chiamando [ITfCategoryMgr::GetGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid).</span><span class="sxs-lookup"><span data-stu-id="f4605-118">Convert the [TfGuidAtom](tfguidatom.md) value into a GUID by calling [ITfCategoryMgr::GetGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid).</span></span>
+4.  <span data-ttu-id="f4605-119">Creare un [oggetto ITfDisplayAttributeInfo](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo) per l'attributo di visualizzazione chiamando [ITfDisplayAttributeMgr::GetDisplayAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span><span class="sxs-lookup"><span data-stu-id="f4605-119">Create an [ITfDisplayAttributeInfo](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo) object for the display attribute by calling [ITfDisplayAttributeMgr::GetDisplayAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span></span>
+5.  <span data-ttu-id="f4605-120">Ottenere le informazioni sull'attributo di visualizzazione chiamando [ITfDisplayAttributeInfo::GetAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span><span class="sxs-lookup"><span data-stu-id="f4605-120">Obtain the display attribute information by calling [ITfDisplayAttributeInfo::GetAttributeInfo](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo).</span></span>
 
-<span data-ttu-id="f87fa-120">Nell'esempio di codice seguente viene illustrata una funzione che ottiene gli attributi di visualizzazione da un contesto, un intervallo e un cookie di modifica forniti.</span><span class="sxs-lookup"><span data-stu-id="f87fa-120">The following code example demonstrates a function that obtains the display attributes from a supplied context, range, and edit cookie.</span></span>
+<span data-ttu-id="f4605-121">Nell'esempio di codice seguente viene illustrata una funzione che ottiene gli attributi di visualizzazione da un contesto, un intervallo e un cookie di modifica forniti.</span><span class="sxs-lookup"><span data-stu-id="f4605-121">The following code example demonstrates a function that obtains the display attributes from a supplied context, range, and edit cookie.</span></span>
 
 
 ```C++
@@ -117,37 +117,37 @@ HRESULT GetDispAttrFromRange(   ITfContext *pContext,
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="f87fa-121">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="f87fa-121">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f4605-122">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="f4605-122">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f87fa-122">\_DISPLAYATTRIBUTE TF</span><span class="sxs-lookup"><span data-stu-id="f87fa-122">TF\_DISPLAYATTRIBUTE</span></span>](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute)
+[<span data-ttu-id="f4605-123">TF \_ DISPLAYATTRIBUTE</span><span class="sxs-lookup"><span data-stu-id="f4605-123">TF\_DISPLAYATTRIBUTE</span></span>](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute)
 </dt> <dt>
 
-[<span data-ttu-id="f87fa-123">ITfContext:: GetProperty</span><span class="sxs-lookup"><span data-stu-id="f87fa-123">ITfContext::GetProperty</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty)
+[<span data-ttu-id="f4605-124">ITfContext::GetProperty</span><span class="sxs-lookup"><span data-stu-id="f4605-124">ITfContext::GetProperty</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty)
 </dt> <dt>
 
-[<span data-ttu-id="f87fa-124">ITfReadOnlyProperty:: GetValue</span><span class="sxs-lookup"><span data-stu-id="f87fa-124">ITfReadOnlyProperty::GetValue</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue)
+[<span data-ttu-id="f4605-125">ITfReadOnlyProperty::GetValue</span><span class="sxs-lookup"><span data-stu-id="f4605-125">ITfReadOnlyProperty::GetValue</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getvalue)
 </dt> <dt>
 
-[<span data-ttu-id="f87fa-125">TfGuidAtom</span><span class="sxs-lookup"><span data-stu-id="f87fa-125">TfGuidAtom</span></span>](tfguidatom.md)
+[<span data-ttu-id="f4605-126">TfGuidAtom</span><span class="sxs-lookup"><span data-stu-id="f4605-126">TfGuidAtom</span></span>](tfguidatom.md)
 </dt> <dt>
 
-[<span data-ttu-id="f87fa-126">ITfCategoryMgr:: GetGuid</span><span class="sxs-lookup"><span data-stu-id="f87fa-126">ITfCategoryMgr::GetGUID</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid)
+[<span data-ttu-id="f4605-127">ITfCategoryMgr::GetGUID</span><span class="sxs-lookup"><span data-stu-id="f4605-127">ITfCategoryMgr::GetGUID</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-getguid)
 </dt> <dt>
 
-[<span data-ttu-id="f87fa-127">ITfDisplayAttributeInfo</span><span class="sxs-lookup"><span data-stu-id="f87fa-127">ITfDisplayAttributeInfo</span></span>](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo)
+[<span data-ttu-id="f4605-128">ITfDisplayAttributeInfo</span><span class="sxs-lookup"><span data-stu-id="f4605-128">ITfDisplayAttributeInfo</span></span>](/windows/desktop/api/Msctf/nn-msctf-itfdisplayattributeinfo)
 </dt> <dt>
 
-[<span data-ttu-id="f87fa-128">ITfDisplayAttributeMgr::GetDisplayAttributeInfo</span><span class="sxs-lookup"><span data-stu-id="f87fa-128">ITfDisplayAttributeMgr::GetDisplayAttributeInfo</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo)
+[<span data-ttu-id="f4605-129">ITfDisplayAttributeMgr::GetDisplayAttributeInfo</span><span class="sxs-lookup"><span data-stu-id="f4605-129">ITfDisplayAttributeMgr::GetDisplayAttributeInfo</span></span>](/windows/desktop/api/Msctf/nf-msctf-itfdisplayattributemgr-getdisplayattributeinfo)
 </dt> <dt>
 
- <span data-ttu-id="f87fa-129">ITfDisplayAttributeInfo::GetAttributeInfo</span><span class="sxs-lookup"><span data-stu-id="f87fa-129">ITfDisplayAttributeInfo::GetAttributeInfo</span></span> 
+ <span data-ttu-id="f4605-130">ITfDisplayAttributeInfo::GetAttributeInfo</span><span class="sxs-lookup"><span data-stu-id="f4605-130">ITfDisplayAttributeInfo::GetAttributeInfo</span></span> 
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
