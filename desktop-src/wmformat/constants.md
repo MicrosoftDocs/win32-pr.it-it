@@ -1,31 +1,31 @@
 ---
-title: Costanti SDK del formato Windows Media
-description: Costanti
+title: Costanti di Windows Media Format SDK
+description: Questi articoli descrivono le costanti usate dagli oggetti delle API estese del client DRM di Windows Media.
 ms.assetid: 4a481813-c876-4603-85e3-7652e3e20c02
 keywords:
-- Windows Media Format SDK, costanti
-- Digital Rights Management (DRM), costanti
-- DRM (Digital Rights Management), costanti
+- Windows Media Format SDK,costanti
+- digital rights management (DRM), costanti
+- DRM (digital rights management), costanti
 - API estese del client DRM, costanti
-- API estese client, costanti
+- API estese client,costanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41de1d8dfc81d4f9343461f75b1d16f785417a91
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 79e246665761d8d85afef03641d1f9f0c20b1f69
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104340213"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406214"
 ---
-# <a name="windows-media-format-sdk-constants"></a>Costanti SDK del formato Windows Media
+# <a name="windows-media-format-sdk-constants"></a>Costanti di Windows Media Format SDK
 
-In questa sezione vengono descritte le costanti utilizzate dagli oggetti delle API estese del client Windows Media DRM. Sono inclusi gli argomenti elencati nella tabella seguente.
+Questa sezione descrive le costanti usate dagli oggetti delle API estese del client DRM di Windows Media. Include gli argomenti elencati nella tabella seguente.
 
 
 
 | Argomento                                                          | Descrizione                                                                                |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Costanti Rights](rights-constants.md)                       | Elenca le costanti dei diritti utilizzate da diversi metodi in tutte le interfacce DRM. |
+| [Costanti dei diritti](rights-constants.md)                       | Elenca le costanti dei diritti usate da diversi metodi in tutte le interfacce DRM. |
 | [Identificatori del tipo di revoca](revocation-type-identifiers.md) | Elenca le costanti definite per i GUID del tipo di revoca.                                     |
 
 

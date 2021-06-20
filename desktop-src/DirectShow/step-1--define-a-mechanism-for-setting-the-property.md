@@ -1,25 +1,25 @@
 ---
-description: Passaggio 1.
+description: Definire un meccanismo per l'impostazione della proprietà come parte della creazione di una pagina delle proprietà del filtro per un filtro DirectShow personalizzato.
 ms.assetid: 1912af22-11dc-4864-8c20-91675d4f45d9
 title: Passaggio 1. Definire un meccanismo per l'impostazione della proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74a1845cfb3cdf5642378a2321e827e52720a83d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 191014c35e27974c52961c2c6218e3a83effcc99
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314407"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410074"
 ---
 # <a name="step-1-define-a-mechanism-for-setting-the-property"></a>Passaggio 1. Definire un meccanismo per l'impostazione della proprietà
 
-Il filtro deve supportare una modalità di comunicazione della pagina delle proprietà, in modo che la pagina delle proprietà possa impostare e recuperare le proprietà sul filtro. I meccanismi possibili includono i seguenti:
+Il filtro deve supportare una modalità di comunicazione tra la pagina delle proprietà, in modo che la pagina delle proprietà possa impostare e recuperare le proprietà nel filtro. Di seguito sono riportati i possibili meccanismi:
 
 -   Esporre un'interfaccia COM personalizzata.
--   Supportare le proprietà di automazione tramite **IDispatch**.
--   Esporre l'interfaccia **IPropertyBag** e definire un set di proprietà denominate.
+-   Supporto delle proprietà di automazione tramite **IDispatch.**
+-   Esporre **l'interfaccia IPropertyBag** e definire un set di proprietà denominate.
 
-In questo esempio viene utilizzata un'interfaccia COM personalizzata, denominata ISaturation. Non si tratta di un'interfaccia DirectShow effettiva; viene definito solo per questo esempio. Iniziare dichiarando l'interfaccia in un file di intestazione, insieme all'identificatore di interfaccia (IID):
+In questo esempio viene utilizzata un'interfaccia COM personalizzata, denominata ISaturation. Non si tratta di un'interfaccia DirectShow effettiva. è definito solo per questo esempio. Per iniziare, dichiarare l'interfaccia in un file di intestazione, insieme all'identificatore di interfaccia (IID):
 
 
 ```C++
@@ -36,7 +36,7 @@ interface ISaturation : public IUnknown
 
 
 
-È anche possibile definire l'interfaccia con IDL e usare il compilatore MIDL per creare il file di intestazione. Implementare quindi l'interfaccia personalizzata nel filtro. In questo esempio vengono usati i metodi "Get" e "set" per il valore di saturazione del filtro. Si noti che entrambi i metodi proteggono il \_ membro lSaturation m con una sezione critica.
+È anche possibile definire l'interfaccia con IDL e usare il compilatore MIDL per creare il file di intestazione. Implementare quindi l'interfaccia personalizzata nel filtro. Questo esempio usa i metodi "Get" e "Set" per il valore di saturazione del filtro. Si noti che entrambi i metodi proteggono il membro \_ m lSaturation con una sezione critica.
 
 
 ```C++
@@ -68,9 +68,9 @@ public:
 
 
 
-Naturalmente, i dettagli dell'implementazione si differenziano dall'esempio illustrato di seguito.
+Naturalmente, i dettagli della propria implementazione differiranno dall'esempio illustrato qui.
 
-Successivo: [passaggio 2. Implementare ISpecifyPropertyPages](step-2--implement-ispecifypropertypages.md).
+Passaggio [2. Implementare ISpecifyPropertyPages.](step-2--implement-ispecifypropertypages.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

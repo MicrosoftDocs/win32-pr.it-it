@@ -1,15 +1,15 @@
 ---
-description: Vedere un elenco di flag di funzionalità del driver. Include definizioni, valori e descrizioni con collegamenti alle API.
+description: Vedere un elenco di flag di funzionalità del driver D3DCAPS2. Include definizioni, valori e descrizioni con collegamenti alle API.
 ms.assetid: 0c0c65fc-f953-4379-a6d0-6ce447a0c183
 title: D3DCAPS2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f209e840450b834c3a69593d1297f2cba9ee43c0
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: b2266073c2d803f9bf11f4a3548078c0d34e5f78
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343376"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408294"
 ---
 # <a name="d3dcaps2"></a>D3DCAPS2
 
@@ -37,7 +37,7 @@ Flag di funzionalità del driver.
 <tr class="odd">
 <td>D3DCAPS2_CANCALIBRATEGAMMA</td>
 <td>0x00100000L</td>
-<td>Nel sistema è installato un calibratore in grado di regolare automaticamente la rampa gamma in modo che il risultato sia identico in tutti i sistemi con calibrazione. Per richiamare il calibratore quando si impostano nuovi livelli gamma, usare il flag D3DSGR_CALIBRATE quando si <a href="/windows/desktop/api"><strong>chiama SetGammaRamp</strong></a>. La calibrazione delle rampe gamma comporta un sovraccarico di elaborazione e non deve essere usata di frequente.</td>
+<td>Il sistema ha installato un calibratore in grado di regolare automaticamente la rampa gamma in modo che il risultato sia identico in tutti i sistemi con calibrazione. Per richiamare il calibratore quando si impostano nuovi livelli gamma, usare il flag D3DSGR_CALIBRATE quando si <a href="/windows/desktop/api"><strong>chiama SetGammaRamp</strong></a>. La calibrazione delle rampe gamma comporta un sovraccarico di elaborazione e non deve essere usata di frequente.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_CANSHARERESOURCE</td>
@@ -56,7 +56,7 @@ Flag di funzionalità del driver.
 <tr class="odd">
 <td>D3DCAPS2_CANMANAGERESOURCE</td>
 <td>0x10000000L</td>
-<td>Il driver è in grado di gestire le risorse. Su tali driver, D3DPOOL_MANAGED risorse verranno gestite dal driver. Per fare in modo che Direct3D ese sostituisca il driver in modo che Direct3D gestirà le risorse, usare il flag D3DCREATE_DISABLE_DRIVER_MANAGEMENT quando si chiama <a href="/windows/desktop/api"><strong>CreateDevice.</strong></a></td>
+<td>Il driver è in grado di gestire le risorse. In questi driver, D3DPOOL_MANAGED risorse verranno gestite dal driver. Per fare in modo che Direct3D ese sostituisca il driver in modo che Direct3D gestirà le risorse, usare il flag D3DCREATE_DISABLE_DRIVER_MANAGEMENT quando si chiama <a href="/windows/desktop/api"><strong>CreateDevice</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_DYNAMICTEXTURES</td>
@@ -71,7 +71,7 @@ Flag di funzionalità del driver.
 <tr class="even">
 <td>D3DCAPS2_RESERVED</td>
 <td>0x02000000L</td>
-<td>Riservato; non utilizzato.</td>
+<td>Riservato; non usato.</td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +82,7 @@ Flag di funzionalità del driver.
 
 Queste costanti vengono usate dal membro D3CAPS2 di [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
-## <a name="constant-information"></a>Informazioni sulle costanti
+## <a name="constant-information"></a>Informazioni costanti
 
 
 

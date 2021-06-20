@@ -1,19 +1,19 @@
 ---
-description: Questa sezione descrive le unioni usate dalle API audio di base.
+description: Questa sezione descrive i tipi di dati usati dalle API audio di base, ad esempio SpatialAudioHrtfOrientation.
 ms.assetid: B2ED2C84-3226-49B3-9391-E1A2B2391A94
-title: Tipi di database audio Core
+title: Tipi di dati audio di base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b838564ecde8a05dd3c29d4ce7da795c19a5a52
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ea7f9289af0c67a4713d7f11da4f32bc7872bd2b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225666"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405904"
 ---
-# <a name="core-audio-datatypes"></a>Tipi di database audio Core
+# <a name="core-audio-datatypes"></a>Tipi di dati audio di base
 
-Questa sezione descrive le unioni usate dalle API audio di base.
+Questa sezione descrive i tipi di dati usati dalle API core audio.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ Questa sezione descrive le unioni usate dalle API audio di base.
 
 | Argomento                                                                         | Descrizione                                                                                                   |
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [**SpatialAudioHrtfOrientation**](spatialaudiohrtforientation.md)<br/> | Rappresenta l'orientamento di un [**ISpatialAudioObjectForHrtf**](/windows/desktop/api/spatialaudiohrtf/nn-spatialaudiohrtf-ispatialaudioobjectforhrtf).<br/> |
+| [**SpatialAudioHrtfOrientation**](spatialaudiohrtforientation.md)<br/> | Rappresenta l'orientamento di [**un oggetto ISpatialAudioObjectForHrtf.**](/windows/desktop/api/spatialaudiohrtf/nn-spatialaudiohrtf-ispatialaudioobjectforhrtf)<br/> |
 
 
 

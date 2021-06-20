@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento JobCopiesAllDocuments, che specifica il numero di copie di un processo.
 ms.assetid: 584a71cd-fc32-485e-a627-27be95c377a9
 title: JobCopiesAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e8e606095462dc3a2eee1391121bf663de3655c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 05166715a5985c5ddee33fa6808d0fb6b150774b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998368"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409034"
 ---
 # <a name="jobcopiesalldocuments"></a>JobCopiesAllDocuments
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il numero di copie di un processo.
 
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>         |
 | Minvalue<br/>     | integer<br/> | 1<br/>                 |
-| Obbligatorio<br/>    | string<br/>  | psk:Unconditional<br/> |
-| Più elementi<br/>     | integer<br/> | 1<br/>                 |
-| UnitType<br/>     | string<br/>  | Copie<br/>            |
+| Obbligatorio<br/>    | string<br/>  | psk:unconditional<br/> |
+| Multipli<br/>     | integer<br/> | 1<br/>                 |
+| Tipo di unità<br/>     | string<br/>  | Copie<br/>            |
 
 
 

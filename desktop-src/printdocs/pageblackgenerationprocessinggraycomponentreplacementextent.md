@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Il parametro PageBlackGenerationProcessingGrayComponentReplacementExtent descrive l'extent oltre i neutri in colori cromatici a cui viene applicato GCR.
 ms.assetid: ba62f902-9bc9-4492-ab53-4a4ddbc23530
 title: PageBlackGenerationProcessingGrayComponentReplacementExtent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f9a790d66d1f7806a7ef86ee4a85f62225aa836
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5b3bd5e4fdbafba97884a7aed608b23e4c26ce1c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997708"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408504"
 ---
 # <a name="pageblackgenerationprocessinggraycomponentreplacementextent"></a>PageBlackGenerationProcessingGrayComponentReplacementExtent
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'estensione oltre i neutri (in colori cromatici) applicata da GCR. 0% = sostituzione uniforme del componente, 100% = sostituzione di componenti grigi.
+Descrive l'estensione oltre i neutri (in colori cromatici) applicata da GCR. 0% = Sostituzione uniforme dei componenti, 100% = Sostituzione componente grigio.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -76,9 +76,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | 100<br/>             |
 | Minvalue<br/>     | integer<br/> | 0<br/>               |
-| Più elementi<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| UnitType<br/>     | string<br/>  | percent<br/>         |
+| Multipli<br/>     | integer<br/> | 1<br/>               |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | percent<br/>         |
 
 
 

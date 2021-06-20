@@ -1,28 +1,28 @@
 ---
-description: La libreria Math fornita dalla libreria di utilità D3DX fornisce funzioni per calcolare le operazioni matematiche 3D.
+description: Informazioni sulla libreria matematica fornita dalla libreria di utilità D3DX nella grafica Direct3D 9. La libreria fornisce funzioni per calcolare operazioni matematiche 3D.
 ms.assetid: 00f0f943-64fa-45e3-8bd3-ca61c8b87e1a
 title: Funzioni matematiche (grafica Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 069b0de6a40806a4461fa68ba00e456b1d3b9dfb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 17fa7e56282d74dbe6a67b023ca5f64d0f88be20
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746551"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408214"
 ---
 # <a name="math-functions-direct3d-9-graphics"></a>Funzioni matematiche (grafica Direct3D 9)
 
 > [!Note]  
-> Le funzioni matematiche della libreria di utilità D3DX sono deprecate per Windows 8. È invece consigliabile usare [DirectXMath](../dxmath/directxmath-portal.md) .
+> Le funzioni matematiche della libreria di utilità D3DX sono deprecate per Windows 8. In alternativa, è [consigliabile usare DirectXMath.](../dxmath/directxmath-portal.md)
 
  
 
-La libreria Math fornita dalla libreria di utilità D3DX fornisce funzioni per calcolare le operazioni matematiche 3D. Ognuna delle funzioni può assumere lo stesso oggetto del passato \[ \] e restituire i \[ \] parametri. Inoltre, i parametri out vengono in genere restituiti come valori restituiti, in modo che l'output di una funzione matematica possa essere utilizzato come parametro per un'altra funzione matematica.
+La libreria matematica fornita dalla libreria di utilità D3DX fornisce funzioni per calcolare operazioni matematiche 3D. Ognuna delle funzioni può assumere lo stesso oggetto dei parametri passati \[ e \] \[ \] restituiti. Inoltre, i parametri out vengono in genere restituiti come valori restituiti, in modo che l'output di una funzione matematica possa essere usato come parametro per un'altra funzione matematica.
 
-Molte delle funzioni sono implementate in d3dx9math. inl.
+Molte delle funzioni vengono implementate in d3dx9math.inl.
 
-Le funzioni dell'applicazione Math 3D possono essere organizzate nei gruppi seguenti.
+Le funzioni dell'applicazione matematica 3D possono essere organizzate nei gruppi seguenti.
 
 ## <a name="functions"></a>Funzioni
 
@@ -110,7 +110,7 @@ Le funzioni dell'applicazione Math 3D possono essere organizzate nei gruppi segu
 -   [**D3DXSHEvalSphericalLight**](d3dxshevalsphericallight.md)
 -   [**D3DXSHProjectCubeMap**](d3dxshprojectcubemap.md)
 -   [**D3DXSHRotate**](d3dxshrotate.md)
--   [**D3DXSHRotateZ**](d3dxshrotatez.md)
+-   [**D3DXSHRotatez**](d3dxshrotatez.md)
 -   [**D3DXSHScale**](d3dxshscale.md)
 -   [**D3DXVec2Add**](d3dxvec2add.md)
 -   [**D3DXVec2BaryCentric**](d3dxvec2barycentric.md)

@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento DocumentDuplex, che descrive le caratteristiche duplex dell'output. La funzionalità duplex consente la stampa su entrambi i lati del supporto.
 ms.assetid: dadc52e8-1733-4267-85aa-33d0ddd3dfa2
 title: DocumentDuplex
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 959bbddbfa06e47fe2bc744af3ead0a72b13af7b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5c2ad8521835213594f10507ab6fd4b9cca24040
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998418"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409344"
 ---
 # <a name="documentduplex"></a>DocumentDuplex
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche duplex dell'output. La funzionalità duplex consente la stampa su entrambi i lati del supporto. Ogni documento viene duplexato separatamente. DocumentDuplex e JobDuplexAllDocumentsContiguously si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra queste parole chiave.
+Descrive le caratteristiche duplex dell'output. La funzionalità duplex consente la stampa su entrambi i lati del supporto. Ogni documento viene duplexato separatamente. DocumentDuplex e JobDuplexAllDocumentsContiguously si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive le caratteristiche duplex dell'output. La funzionalità duplex consente
 
 | Nome | Valore |
 |----------------------------|---------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>  |
+| Tipo di elemento <br/>   | Funzionalità<br/>  |
 | Prefisso di ambito <br/> | Documento<br/> |
 | Note <br/>          | nessuno<br/>     |
 
@@ -63,7 +63,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                     |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                           |
 | \_DuplexModeValue\_<br/>     | string<br/> | n/d<br/>        | Automatico, Manuale.<br/>                                                                                                                                                         | Definisce la modalità duplex. Il duplex automatico viene eseguito dall'hardware. Il duplex manuale viene eseguito dal software e dall'utente.<br/> |
 

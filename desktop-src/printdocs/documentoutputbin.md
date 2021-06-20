@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni su DocumentOutputBin, che descrive l'elenco completo dei bin supportati per il dispositivo e consente di specificare il bin di output per ogni documento.
 ms.assetid: 73840548-f68b-4af8-acb4-6f7faa2e8879
 title: DocumentOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96f6d16ca000e76b01cd2c3165054d7acc81351b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2afc20f15aed8d3076afb79d755c54791573b393
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997138"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409244"
 ---
 # <a name="documentoutputbin"></a>DocumentOutputBin
 
@@ -29,7 +29,7 @@ Descrive l'elenco completo dei bin supportati per il dispositivo. Consente di sp
 
 | Nome | Valore |
 |----------------------------|---------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>  |
+| Tipo di elemento <br/>   | Funzionalità<br/>  |
 | Prefisso di ambito <br/> | Documento<br/> |
 | Note <br/>          | nessuno<br/>     |
 

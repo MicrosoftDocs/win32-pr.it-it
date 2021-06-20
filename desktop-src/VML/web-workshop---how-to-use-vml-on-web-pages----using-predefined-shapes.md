@@ -1,80 +1,80 @@
 ---
 title: Uso di forme predefinite
-description: In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+description: Questo articolo descrive l'uso di forme predefinite in VML, una funzionalità deprecata a Internet Explorer Windows 9.
 ms.assetid: 9a2e8b5a-b1d0-4a73-b058-24dac1f0b655
 keywords:
-- Web Workshop, forme predefinite
+- Web workshop, forme predefinite
 - progettazione di pagine Web, forme predefinite
-- Vector Markup Language (la), forme predefinite
-- LA (Vector Markup Language), forme predefinite
+- Vector Markup Language (VML), forme predefinite
+- VML (Vector Markup Language),forme predefinite
 - grafica vettoriale, forme predefinite
-- Forme la, predefinite
+- Forme VML, predefinite
 - forme predefinite
-- Vector Markup Language (la), elemento Rect
-- LA (Vector Markup Language), elemento Rect
-- grafica vettoriale, elemento Rect
-- elemento Rect
-- Elementi la, Rect
-- Vector Markup Language (la), elemento RoundRect
-- LA (Vector Markup Language), elemento RoundRect
-- grafica vettoriale, elemento RoundRect
-- elemento RoundRect
-- Elementi la, RoundRect
-- Vector Markup Language (la), elemento linea
-- LA (Vector Markup Language), elemento linea
-- grafica vettoriale, elemento linea
-- elemento Line
-- Elementi la, riga
-- Vector Markup Language (la), elemento polilinea
-- LA (Vector Markup Language), elemento polilinea
+- Vector Markup Language (VML),elemento rect
+- VML (Vector Markup Language),elemento rect
+- grafica vettoriale, elemento rect
+- Elemento rect
+- Elementi VML, rect
+- Vector Markup Language (VML),elemento roundrect
+- VML (Vector Markup Language),elemento roundrect
+- grafica vettoriale, elemento roundrect
+- roundrect - elemento
+- elementi VML, roundrect
+- Vector Markup Language (VML),elemento line
+- VML (Vector Markup Language),elemento line
+- grafica vettoriale, elemento line
+- line - elemento
+- Elementi VML, riga
+- Vector Markup Language (VML),elemento polyline
+- VML (Vector Markup Language),elemento polyline
 - grafica vettoriale, elemento polilinea
-- elemento polilinea
-- Elementi la, polilinea
-- Vector Markup Language (la), elemento curva
-- LA (Vector Markup Language), elemento curva
-- grafica vettoriale, elemento curva
-- curva-elemento
-- Elementi la, curva
-- Vector Markup Language (la), elemento Arc
-- LA (Vector Markup Language), elemento Arc
-- grafica vettoriale, elemento Arc
-- elemento Arc
-- Elementi la, Arc
+- elemento polyline
+- elementi VML, polilinea
+- Vector Markup Language (VML),elemento curve
+- VML (Vector Markup Language),elemento curve
+- grafica vettoriale, elemento curve
+- elemento curve
+- elementi VML, curva
+- Vector Markup Language (VML),elemento arc
+- VML (Vector Markup Language),elemento arc
+- grafica vettoriale, elemento arc
+- elemento arc
+- elementi VML, arco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c1cafacf00f6f3f9129c29c56837f3f485aa3a3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b410cf288a3ba63e4c1d745fd962a445b0b220b8
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104516882"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407684"
 ---
 # <a name="using-predefined-shapes"></a>Uso di forme predefinite
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer Windows 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Come si è appreso, è possibile usare l' `<oval>` elemento di la per creare un semplice Oval. LA fornisce molti altri elementi predefiniti. In questo argomento verrà illustrato come creare grafica usando questi elementi.
+Come si è appreso, è possibile usare `<oval>` l'elemento di VML per creare un semplice ovale. VML fornisce diversi altri elementi predefiniti. In questo argomento verrà illustrato come disegnare grafica usando questi elementi.
 
 In questo argomento
 
 -   [Rect](#roundrect)
--   [RoundRect](#roundrect)
--   [linea](#polyline)
--   [polilinea](#polyline)
+-   [roundrect](#roundrect)
+-   [Linea](#polyline)
+-   [Polilinea](#polyline)
 -   [curva](#curve)
--   [arco](#arc)
+-   [Arco](#arc)
 -   [Summary](#summary)
 
 ## <a name="rect"></a>rect
 
-`<rect>`Per creare un rettangolo, è possibile usare l'elemento. È quindi possibile personalizzare il rettangolo specificando attributi di proprietà diversi.
+È possibile usare `<rect>` l'elemento per disegnare un rettangolo. È quindi possibile personalizzare il rettangolo specificando attributi di proprietà diversi.
 
-Ad esempio, è possibile disegnare un rettangolo che viene riempito con blu specificando **FillColor**= "Blue" e assegnargli un contorno rosso a 3,5 punti specificando **StrokeColor**= "Red" **StrokeWeight**= "3.5 pt", come illustrato nella rappresentazione la seguente:
+Ad esempio, è possibile disegnare un rettangolo riempito di blu specificando **fillcolor**="blue" e assegnargli un contorno rosso di 3,5 punti specificando **strokecolor**="red" **strokeweight**="3.5pt", come illustrato nella rappresentazione VML seguente:
 
 ![rect1.gif (485 byte)](images/rect1.gif)
 
@@ -88,15 +88,15 @@ strokecolor="red" strokeweight="3.5pt"/>
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) . Nota: la specifica la non dispone di un segnalibro per l' `<rect>` elemento.
+Per altre informazioni su questo elemento, vedere la [specifica VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) . Nota: la specifica VML non ha un segnalibro per `<rect>` l'elemento .
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
-## <a name="roundrect"></a>RoundRect
+## <a name="roundrect"></a>roundrect
 
-È possibile utilizzare l' `<roundrect>` elemento per creare un rettangolo con angoli arrotondati. È quindi possibile personalizzare il rettangolo arrotondato specificando attributi di proprietà diversi.
+È possibile usare `<roundrect>` l'elemento per disegnare un rettangolo con angoli arrotondati. È quindi possibile personalizzare il rettangolo arrotondato specificando attributi di proprietà diversi.
 
-È possibile, ad esempio, disegnare un rettangolo con angoli arrotondati del 30% della metà della dimensione più piccola del rettangolo specificando **arcsize**= "0,3", riempirlo con il giallo specificando **FillColor**= "Yellow" e assegnargli un contorno rosso a 2 punte specificando **StrokeColor**= "Red" **StrokeWeight**= "2PT", come illustrato nella rappresentazione la seguente:
+Ad esempio, è possibile disegnare un rettangolo con angoli arrotondati pari al 30% della metà della dimensione più piccola del rettangolo specificando **arcsize**="0.3", riempirlo di giallo specificando **fillcolor**="yellow" e assegnargli un contorno rosso a 2 punti specificando **strokecolor**="red" **strokeweight**="2pt", come illustrato nella rappresentazione VML seguente:
 
 ![roundrect1.gif (622 byte)](images/roundrect1.gif)
 
@@ -111,15 +111,15 @@ strokecolor="red" strokeweight="2pt"/>
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) .
+Per altre informazioni su questo elemento, vedere la [specifica VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) .
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="line"></a>line
 
-È possibile usare l' `<line>` elemento per creare una linea retta. È quindi possibile personalizzare la riga specificando attributi di proprietà diversi.
+È possibile usare `<line>` l'elemento per creare una linea retta. È quindi possibile personalizzare la riga specificando attributi di proprietà diversi.
 
-Ad esempio, è possibile creare una linea orizzontale specificando **from**= "20pt, 20pt" **a**= "100PT, 20pt" e impostarla su 2-Point e Red specificando **StrokeColor**= "Red" **StrokeWeight**= "2PT", come illustrato nella rappresentazione la seguente:
+Ad esempio, è possibile disegnare una linea orizzontale specificando da ="20pt,20pt" a ="100pt,20pt" e impostarla su 2 punti e sul rosso specificando **strokecolor**="red" **strokeweight**="2pt", come illustrato nella rappresentazione VML seguente:
 
 ![line1.gif (88 byte)](images/line1.gif)
 
@@ -133,7 +133,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-È possibile creare una linea verticale o diagonale semplicemente specificando valori diversi per gli attributi di proprietà **from** e **to** , come illustrato nella rappresentazione la seguente:
+È possibile disegnare una linea verticale o diagonale specificando semplicemente valori diversi per gli attributi delle proprietà **from** e **to,** come illustrato nella rappresentazione VML seguente:
 
 ![line2.gif (86 byte)](images/line2.gif)
 
@@ -147,15 +147,15 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://WWW.w3.org/TR/NOTE-VML#-toc416858402) .
+Per altre informazioni su questo elemento, vedere la [specifica VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858402) .
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
-## <a name="polyline"></a>polilinea
+## <a name="polyline"></a>Polilinea
 
-È possibile utilizzare l' `<polyline>` elemento per definire forme create da segmenti di linea connessi. È quindi possibile personalizzare la forma specificando attributi di proprietà diversi.
+È possibile usare `<polyline>` l'elemento per definire le forme create da segmenti di linea connessi. È quindi possibile personalizzare la forma specificando attributi di proprietà diversi.
 
-Per disegnare la forma illustrata nell'immagine seguente, ad esempio, è possibile digitare la rappresentazione la seguente:
+Ad esempio, per disegnare la forma illustrata nell'immagine seguente, è possibile digitare la rappresentazione VML seguente:
 
 ![polyline1.gif (957 byte)](images/polyline1.gif)
 
@@ -169,15 +169,15 @@ strokecolor="red" strokeweight="2pt"/>
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://WWW.w3.org/TR/NOTE-VML#-toc416858403) .
+Per altre informazioni su questo elemento, vedere la [specifica VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858403) .
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="curve"></a>curva
 
-È possibile usare l' `<curve>` elemento per creare una curva di Bézier cubica. È quindi possibile personalizzare la curva specificando attributi di proprietà diversi.
+È possibile usare `<curve>` l'elemento per disegnare una curva di Bézier cubica. È quindi possibile personalizzare la curva specificando attributi di proprietà diversi.
 
-Ad esempio, per creare una curva come illustrato nell'immagine seguente, è possibile digitare la rappresentazione la seguente:
+Ad esempio, per disegnare una curva come illustrato nell'immagine seguente, è possibile digitare la rappresentazione VML seguente:
 
 ![curve1.gif (992 byte)](images/curve1.gif)
 
@@ -192,15 +192,15 @@ to="300pt,0" strokecolor="red" strokeweight="3pt"/>
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://WWW.w3.org/TR/NOTE-VML#-toc416858404) .
+Per altre informazioni su questo elemento, vedere la [specifica VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858404) .
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="arc"></a>arco
 
-È possibile utilizzare l' `<arc>` elemento per creare un arco definito come segmento di un Oval. L'arco è definito dall'intersezione dell'ovale con i vettori RADIUS iniziale e finale specificati dagli angoli. Gli angoli vengono calcolati usando le proprietà di un cerchio (larghezza uguale a altezza), quindi ridimensionato in modo anisotropico fino alla larghezza e all'altezza desiderate.
+È possibile usare `<arc>` l'elemento per disegnare un arco definito come segmento di un ovale. L'arco è definito dall'intersezione dell'ovale con i vettori di raggio iniziale e finale specificati dagli angoli. Gli angoli vengono calcolati usando le proprietà di un cerchio (larghezza uguale all'altezza), quindi ridimensionati in modo orizzontale in base alla larghezza e all'altezza desiderate.
 
-Ad esempio, è possibile creare un arco che inizia con 0 gradi e termina con 90 gradi specificando **startAngle** **= "0",** ovvero "90", come illustrato nella rappresentazione la seguente:
+Ad esempio, è possibile disegnare un arco che inizia da 0 gradi e termina a 90 gradi specificando **startangle**="0" **endangle**="90", come illustrato nella rappresentazione VML seguente:
 
 ![arc1.gif (410 byte)](images/arc1.gif)
 
@@ -215,7 +215,7 @@ strokecolor="red" strokeweight="2pt"/>
 
 
 
-È possibile modificare l'arco specificando **valori diversi** per **startAngle** e indicizzazione, come illustrato nella rappresentazione la seguente:
+È possibile modificare l'arco specificando valori **startangle** ed **endangle** diversi, come illustrato nella rappresentazione VML seguente:
 
 ![arc2.gif (608 byte)](images/arc2.gif)
 
@@ -243,14 +243,14 @@ strokecolor="red" strokeweight="2pt"/>
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://WWW.w3.org/TR/NOTE-VML#-toc416858407) .
+Per altre informazioni su questo elemento, vedere la specifica [VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858407) .
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="summary"></a>Riepilogo
 
-È possibile utilizzare gli elementi predefiniti la, ad esempio `<oval>` ,, `<line>` `<polyline>` , `<curve>` , `<rect>` , `<roundrect>` e `<arc>` per creare facilmente la grafica in una pagina Web e quindi personalizzare tali immagini cambiando semplicemente gli attributi di proprietà.
+È possibile usare elementi predefiniti vml, ad esempio , , , , , e per disegnare facilmente grafica in una pagina Web e quindi personalizzare tali elementi grafici modificando semplicemente gli attributi `<oval>` `<line>` delle `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` proprietà.
 
- 
+ 
 
- 
+ 

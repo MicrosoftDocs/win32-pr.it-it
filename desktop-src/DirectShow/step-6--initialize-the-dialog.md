@@ -1,19 +1,19 @@
 ---
-description: Passaggio 6.
+description: Eseguire l'override del metodo CBasePropertyPage::OnActivate per inizializzare la finestra di dialogo durante la creazione di una pagina delle proprietà del filtro per un filtro DirectShow personalizzato.
 ms.assetid: 8462958d-3958-453b-8034-3cfc2fb5ae2e
-title: Passaggio 6. Inizializzare la finestra di dialogo
+title: Passaggio 6. Inizializzare il dialogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 282eb03db38c543678fb2c4ef1155e1150b419bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcbdf18e272ac548227626bc9da4f992786a4ab3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316316"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404494"
 ---
-# <a name="step-6-initialize-the-dialog"></a>Passaggio 6. Inizializzare la finestra di dialogo
+# <a name="step-6-initialize-the-dialog"></a>Passaggio 6. Inizializzare il dialogo
 
-Eseguire l'override del metodo [**CBasePropertyPage:: OnActivate**](cbasepropertypage-onactivate.md) per inizializzare la finestra di dialogo. In questo esempio, nella pagina delle proprietà viene usato un controllo dispositivo di scorrimento, quindi il primo passaggio in **OnActivate** consiste nell'inizializzare la libreria di controlli comuni. Il metodo inizializza quindi il controllo dispositivo di scorrimento usando il valore corrente della proprietà saturazione del filtro:
+Eseguire [**l'override del metodo CBasePropertyPage::OnActivate**](cbasepropertypage-onactivate.md) per inizializzare la finestra di dialogo. In questo esempio la pagina delle proprietà usa un dispositivo di scorrimento, quindi il primo passaggio in **OnActivate** consiste nell'inizializzare la libreria di controlli comune. Il metodo inizializza quindi il dispositivo di scorrimento usando il valore corrente della proprietà di saturazione del filtro:
 
 
 ```C++
@@ -45,7 +45,7 @@ HRESULT CGrayProp::OnActivate(void)
 
 
 
-Successivo: [passaggio 7. Gestire i messaggi della finestra](step-7--handle-window-messages.md)
+Passaggio [successivo: Passaggio 7. Gestire i messaggi della finestra](step-7--handle-window-messages.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

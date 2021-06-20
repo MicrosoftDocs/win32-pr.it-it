@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento JobDeviceLanguage, che descrive le lingue dei dispositivi supportate per l'invio di dati dal driver al dispositivo fisico.
 ms.assetid: 3894d9fa-2bf7-447a-bac3-e72a0fdb7187
 title: JobDeviceLanguage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66b9f85b44ae9fdc6efb66ce5b72bb68c5187790
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3b7bf56018a2b395ec5aa182336a89d8872057e7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998298"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408995"
 ---
 # <a name="jobdevicelanguage"></a>JobDeviceLanguage
 
@@ -27,7 +27,7 @@ Descrive le lingue dei dispositivi supportate per l'invio di dati dal driver al 
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Processo<br/>     |
 | Note <br/>          | nessuno<br/>    |
 
@@ -72,7 +72,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 |--------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | \_OptionName\_<br/>            | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
 | \_IdentityOptionValue\_<br/>   | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
-| \_LanguageLevelValue\_<br/>    | string<br/> | n/d<br/>        | Nessuno.<br/>                                                                                                                                                                      | Specifica il livello del linguaggio,ad esempio PS Level 2.<br/>           |
+| \_LanguageLevelValue\_<br/>    | string<br/> | n/d<br/>        | Nessuno.<br/>                                                                                                                                                                      | Specifica il livello di lingua ,ad esempio PS Level 2.<br/>           |
 | \_LanguageEncodingValue\_<br/> | string<br/> | n/d<br/>        | Nessuno.<br/>                                                                                                                                                                      | Specifica la codifica della lingua, ad esempio ISOLatin1.<br/>         |
 | \_LanguageVersionValue\_<br/>  | string<br/> | n/d<br/>        | Nessuno.<br/>                                                                                                                                                                      | Specifica la versione del linguaggio.<br/>                                   |
 
@@ -82,7 +82,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobDeviceLanguage">

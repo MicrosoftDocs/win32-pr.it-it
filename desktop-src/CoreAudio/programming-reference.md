@@ -1,34 +1,34 @@
 ---
-description: Guida di riferimento alla programmazione
+description: Questo riferimento alla programmazione descrive le API audio principali in Windows SDK. Le API core audio vengono implementate in Mmdevapi.dll e Audioses.dll.
 ms.assetid: 80a0df34-5f67-4f61-b9c7-a586d1870765
-title: Guida di riferimento alla programmazione audio Core
+title: Informazioni di riferimento sulla programmazione audio di base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2db77e741ddc53a7d21fa0d1f983ffb92808bce9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7c8c3f3d5ead190cf3151629f015095b404be778
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225759"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405844"
 ---
-# <a name="core-audio-programming-reference"></a>Guida di riferimento alla programmazione audio Core
+# <a name="core-audio-programming-reference"></a>Informazioni di riferimento sulla programmazione audio di base
 
-Questo riferimento di programmazione per le API di base di audio in Windows SDK contiene le sezioni seguenti:
+Questo riferimento alla programmazione per le API audio principali in Windows SDK contiene le sezioni seguenti:
 
--   [Interfacce audio principali](core-audio-interfaces.md)
+-   [Interfacce audio di base](core-audio-interfaces.md)
 -   [Strutture audio di base](core-audio-structures.md)
--   [Enumerazioni audio principali](core-audio-enumerations.md)
--   [Costanti audio Core](core-audio-constants.md)
+-   [Enumerazioni audio di base](core-audio-enumerations.md)
+-   [Costanti audio principali](core-audio-constants.md)
 -   [Proprietà audio principali](core-audio-properties.md)
--   [Funzioni audio principali](core-audio-functions.md)
+-   [Funzioni audio di base](core-audio-functions.md)
 
-Le API Core Audio sono implementate nei componenti di sistema Mmdevapi.dll e Audioses.dll, entrambi eseguiti in modalità utente.
+Le API core audio vengono implementate nei componenti Mmdevapi.dll e Audioses.dll di sistema, entrambi eseguiti in modalità utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**API audio Core**](core-audio-apis-in-windows-vista.md)
+[**API audio di base**](core-audio-apis-in-windows-vista.md)
 </dt> </dl>
 
  

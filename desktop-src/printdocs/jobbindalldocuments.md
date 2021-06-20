@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento JobBindAllDocuments, che descrive il metodo di associazione. Tutti i documenti nel processo sono associati tra loro.
 ms.assetid: f21199e2-2220-40c4-9429-72aa2a34a5f2
 title: JobBindAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: deff299aa5c8d76c9fb8e904539c287ecc881ee6
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d5abff455756b2abc1d84bf2cff470fa49c93278
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998448"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409084"
 ---
 # <a name="jobbindalldocuments"></a>JobBindAllDocuments
 
@@ -27,7 +27,7 @@ Descrive il metodo di associazione. Tutti i documenti nel processo sono associat
 
 | Nome | Valore |
 |----------------------------|--------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                             |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                             |
 | Prefisso di ambito <br/> | Processo<br/>                                                                 |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize.<br/> |
 
@@ -65,7 +65,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 |------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                           |
-| \_BindingGutterValue\_<br/>  | numero intero<br/> | Micron<br/>    | Maggiore di 0.<br/>                                                                                                                                                            | Definisce la distanza minima dell'associazione per l'associazione finale specificata. La grondaia viene misurata in micron rispetto al bordo della dimensione dei supporti fisici.<br/> |
+| \_BindingGutterValue\_<br/>  | numero intero<br/> | Micron<br/>    | Maggiore di 0.<br/>                                                                                                                                                            | Definisce la barra di associazione minima per l'associazione finale specificata. La barra di margine viene misurata in micron rispetto al bordo della dimensione fisica dei supporti.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobBindAllDocuments">

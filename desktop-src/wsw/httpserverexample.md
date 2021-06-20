@@ -1,29 +1,29 @@
 ---
 title: HttpServerExample
-description: Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi.
+description: Vedere un esempio di server HTTP che usa l'API dei servizi Web Windows. In questo esempio viene illustrato un server TCP che accetta un canale e riceve e risponde ai messaggi.
 ms.assetid: b8cf29af-f13f-47ae-9954-7845515135f9
 keywords:
-- HttpServerExample native-servizi Web
+- HttpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41194ce745c214c6892235d24f53012233131595
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72859f9e59353fe926f18570e10de65cd40e0fd4
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298904"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409754"
 ---
 # <a name="httpserverexample"></a>HttpServerExample
 
-Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi.
+In questo esempio viene illustrato un server TCP che accetta un canale e riceve e risponde ai messaggi.
 
--   [HttpServer. cpp](#httpservercpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpServer.cpp](#httpservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpservercpp"></a>HttpServer. cpp
+## <a name="httpservercpp"></a>HttpServer.cpp
 
 
 ```C++
@@ -489,7 +489,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -629,9 +629,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,23 +1,23 @@
 ---
-description: L'API Microsoft Web Services on Devices (WSDAPI) supporta l'implementazione di dispositivi e servizi controllati dal client e degli host di dispositivi conformi al profilo dei dispositivi per i servizi Web (DPWS).
+description: Usare i servizi Web nei dispositivi tramite l'USO dell'API WSDAPI (Microsoft Web Services on Devices).
 ms.assetid: c87bb033-2e38-4c04-bec0-ad8970602fdf
-title: Uso dei servizi Web nei dispositivi
+title: Uso di servizi Web nei dispositivi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fdb6975f42bfa40c872f471942813b2ca604024
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 985e3ffebef1c7fd1b12e9c9912d6f0fb2f701bc
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308079"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405804"
 ---
-# <a name="using-web-services-on-devices"></a>Uso dei servizi Web nei dispositivi
+# <a name="using-web-services-on-devices"></a>Uso di servizi Web nei dispositivi
 
-L'API Microsoft Web Services on Devices (WSDAPI) supporta l'implementazione di dispositivi e servizi controllati dal client e degli host di dispositivi conformi al [profilo dei dispositivi per i servizi Web](https://specs.xmlsoap.org/ws/2006/02/devprof/) (DPWS). WSDAPI può essere usato per lo sviluppo di implementazioni di client e server (dispositivo).
+L'API Servizi Web Microsoft nei dispositivi (WSDAPI) supporta l'implementazione di dispositivi e servizi controllati dal client e host di dispositivi conformi al profilo dispositivi per i servizi [Web](https://specs.xmlsoap.org/ws/2006/02/devprof/) (DPWS). WSDAPI può essere usato per lo sviluppo di implementazioni client e server (dispositivo).
 
-Quando possibile, usare WSDAPI per creare un'applicazione client WSD o un host del dispositivo basato su Windows. L'uso di WSDAPI consente di ridurre la complessità dello sviluppo e risparmiare tempo. Per altre informazioni, vedere [sviluppo di applicazioni WSD](wsd-application-development-on-windows.md) negli [strumenti di sviluppo](wsdapi-development-tools.md)per Windows e WSDAPI.
+Quando possibile, usare WSDAPI per creare un'applicazione host del dispositivo o un client WSD basato su Windows. L'uso di WSDAPI riduce la complessità dello sviluppo e consente di risparmiare tempo. Per altre informazioni, vedere Sviluppo di [applicazioni WSD in Windows](wsd-application-development-on-windows.md) e [WSDAPI Development Tools](wsdapi-development-tools.md).
 
-È anche possibile creare dispositivi WSD che non eseguono Windows e sono interoperativi con client WSD e host di dispositivi basati su Windows. Questi dispositivi devono soddisfare requisiti specifici per mantenere l'interoperabilità. Per ulteriori informazioni, vedere la pagina relativa [allo sviluppo di dispositivi WSD](wsd-device-development.md).
+È anche possibile creare dispositivi WSD che non eseguono Windows e sono interoperativi con client WSD basati su Windows e host di dispositivi. Questi dispositivi devono soddisfare requisiti specifici per mantenere l'interoperabilità. Per altre informazioni, vedere [Sviluppo di dispositivi WSD](wsd-device-development.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

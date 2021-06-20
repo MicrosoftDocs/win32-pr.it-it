@@ -1,15 +1,15 @@
 ---
-description: D3DX fornisce le funzioni mesh seguenti.
+description: Informazioni sulle funzioni mesh in D3DX. D3DX fornisce le diverse funzioni mesh, ad esempio D3DXboxBoundProbe e D3DXCleanMesh.
 ms.assetid: d6698040-8fdd-40e6-a61a-402647d48dbc
 title: Funzioni mesh (grafica Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7a5242a06b1261d3fddd9649ac52c73f1555a30
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b74a35933fd9c6302b8c59ef1cd8ea62b4fac231
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520362"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408184"
 ---
 # <a name="mesh-functions-direct3d-9-graphics"></a>Funzioni mesh (grafica Direct3D 9)
 

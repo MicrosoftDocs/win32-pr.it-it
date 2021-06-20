@@ -1,69 +1,69 @@
 ---
-title: Utilizzo dell'elemento Stroke
-description: In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+title: Uso dell'elemento Stroke
+description: Questo articolo descrive l'uso dell'elemento Stroke di VML, una funzionalità deprecata a Internet Explorer 9 di Windows.
 ms.assetid: e3d9dbe5-e087-4b6f-8318-c7d4485cd502
 keywords:
-- Web Workshop, elemento Stroke
-- progettazione di pagine Web, elemento Stroke
-- Vector Markup Language (la), elemento Stroke
-- LA (Vector Markup Language), elemento Stroke
-- grafica vettoriale, elemento Stroke
-- Stroke-elemento
-- Elementi la, Stroke
-- Forme la, elemento Stroke
-- Vector Markup Language (la), attributo proprietà DashStyle
-- LA (Vector Markup Language), attributo proprietà DashStyle
-- grafica vettoriale, attributo proprietà DashStyle
-- attributo proprietà DashStyle
-- Vector Markup Language (la), attributo della proprietà Opacity
-- LA (Vector Markup Language), attributo della proprietà Opacity
-- Vector graphics, attributo Property Opacity
-- attributo della proprietà Opacity
-- Vector Markup Language (la), attributo proprietà LineStyle
-- LA (Vector Markup Language), attributo proprietà LineStyle
-- grafica vettoriale, attributo proprietà LineStyle
-- attributo proprietà LineStyle
-- Vector Markup Language (la), attributo proprietà joinstyle
-- LA (Vector Markup Language), attributo proprietà joinstyle
-- grafica vettoriale, attributo proprietà joinstyle
-- attributo proprietà joinstyle
-- Vector Markup Language (la), attributo proprietà elemento FillType
-- LA (Vector Markup Language), attributo proprietà elemento FillType
-- grafica vettoriale, attributo proprietà elemento FillType
-- attributo proprietà elemento FillType
+- Web workshop, elemento stroke
+- progettazione di pagine Web, elemento stroke
+- Vector Markup Language (VML), elemento stroke
+- VML (Vector Markup Language),elemento stroke
+- grafica vettoriale, elemento stroke
+- Elemento stroke
+- Elementi VML, tratto
+- Forme VML, elemento stroke
+- Vector Markup Language (VML), attributo della proprietà dashstyle
+- VML (Vector Markup Language),attributo della proprietà dashstyle
+- vector graphics,dashstyle - attributo della proprietà
+- Attributo della proprietà dashstyle
+- Vector Markup Language (VML), attributo della proprietà opacità
+- VML (Vector Markup Language),attributo della proprietà opacità
+- grafica vettoriale, attributo della proprietà opacità
+- Attributo della proprietà opacity
+- Vector Markup Language (VML), attributo della proprietà linestyle
+- VML (Vector Markup Language),attributo della proprietà linestyle
+- Vector Graphics, attributo della proprietà linestyle
+- Attributo della proprietà linestyle
+- Vector Markup Language (VML), attributo della proprietà joinstyle
+- VML (Vector Markup Language),attributo della proprietà joinstyle
+- vector graphics,joinstyle - attributo della proprietà
+- Attributo della proprietà joinstyle
+- Vector Markup Language (VML), attributo della proprietà filltype
+- VML (Vector Markup Language),attributo della proprietà filltype
+- vector graphics, attributo della proprietà filltype
+- Attributo della proprietà filltype
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b58e02945884ea63ad1be01e67cfc156951cd5e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dff7a4b3bc654063fe8156476cc9c52453247a0b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104339102"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407844"
 ---
-# <a name="using-the-stroke-element"></a>Utilizzo dell'elemento Stroke
+# <a name="using-the-stroke-element"></a>Uso dell'elemento Stroke
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer 9 di Windows. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Uso di `<stroke>`
 
-Come si è appreso, è possibile usare gli attributi di proprietà **StrokeColor** e **StrokeWeight** di una forma predefinita, ad esempio `<oval>` , `<line>` , `<polyline>` , `<curve>` , `<rect>` , `<roundrect>` , `<arc>` --per specificare il colore e il peso del contorno di una forma. In questo argomento verrà illustrato come disegnare una forma con una struttura più avanzata.
+Come si è appreso, è possibile usare gli attributi di proprietà **strokecolor** e **strokeweight** di una forma predefinita, ad esempio , , , , , , per specificare il colore e lo spessore del contorno di una `<oval>` `<line>` `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` forma. In questo argomento verrà illustrato come disegnare una forma con una struttura più avanzata.
 
-`<stroke>` `<shape>` Per descrivere come disegnare il contorno della forma, è possibile inserire il sottoelemento all'interno dell'elemento della forma, o `<shapetype>` o di qualsiasi elemento Shape predefinito. È quindi possibile usare gli attributi delle proprietà, ad esempio [DashStyle](#dashstyle), [Opacity](#opacity), [LineStyle](#linestyle), [joinstyle](#joinstyle), [elemento FillType](#filltype) , del `<stroke>` sottoelemento per personalizzare il contorno.
+È possibile inserire il sotto-elemento all'interno di , o o qualsiasi elemento forma predefinito per descrivere come disegnare il `<stroke>` `<shape>` `<shapetype>` contorno della forma. È quindi possibile usare gli attributi della proprietà, ad esempio [dashstyle,](#dashstyle) [opacity,](#opacity) [linestyle,](#linestyle) [joinstyle,](#joinstyle) [filltype,](#filltype) del sotto-elemento per personalizzare `<stroke>` la struttura.
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
-## <a name="dashstyle"></a>DashStyle
+## <a name="dashstyle"></a>Dashstyle
 
-È possibile usare l'attributo della proprietà **DashStyle** del `<stroke>` sottoelemento per disegnare una struttura con diversi stili di tratteggio.
+È possibile usare **l'attributo della** proprietà dashstyle del `<stroke>` sotto-elemento per disegnare un contorno con vari stili di tratteggio.
 
 **Esempi:**
 
-Se si specifica `<v:stroke dashstyle="solid" />` all'interno dell' `<line>` elemento, è possibile creare una linea continua, come illustrato nella rappresentazione la seguente:
+Se si specifica `<v:stroke dashstyle="solid" />` all'interno `<line>` dell'elemento , è possibile creare una linea continua, come illustrato nella rappresentazione VML seguente:
 
 ![solid.gif (96 byte)](images/solid.gif)
 
@@ -79,7 +79,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Se si imposta l'attributo della proprietà **DashStyle** su "dot", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **dashstyle** in "dot", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione VML seguente:
 
 ![dot.gif (144 byte)](images/dot.gif)
 
@@ -95,7 +95,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Se si imposta l'attributo della proprietà **DashStyle** su "Dash", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **dashstyle** in "dash", è possibile creare una linea tratteggiata, come illustrato nella rappresentazione VML seguente:
 
 ![dash.gif (137 byte)](images/dash.gif)
 
@@ -111,7 +111,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Se si imposta l'attributo della proprietà **DashStyle** su "DashDot", è possibile creare una riga con uno stile tratteggiato e tratteggiato, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **dashstyle** in "dashdot", è possibile creare una linea con uno stile tratteggiato e punteggiato, come illustrato nella rappresentazione VML seguente:
 
 ![dashdot.gif (145 byte)](images/dashdot.gif)
 
@@ -127,7 +127,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Se si imposta l'attributo della proprietà **DashStyle** su "longdash", è possibile creare una riga con stile tratteggiato lungo, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **dashstyle** in "longdash", è possibile creare una linea con uno stile tratteggiato lungo, come illustrato nella rappresentazione VML seguente:
 
 ![longdash.gif (123 byte)](images/longdash.gif)
 
@@ -143,7 +143,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Se si imposta l'attributo della proprietà **DashStyle** su "longdashdot", è possibile creare una linea con uno stile tratteggiato lungo e tratteggiato, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **dashstyle** in "longdashdot", è possibile creare una linea con uno stile tratteggiato e punteggiato lungo, come illustrato nella rappresentazione VML seguente:
 
 ![longdashdot.gif (135 byte)](images/longdashdot.gif)
 
@@ -159,7 +159,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Se si posiziona `<v:stroke dashstyle="dashdot" />` all'interno dell' `<rect>` elemento, è possibile creare un rettangolo con un contorno tratteggiato e tratteggiato, come illustrato nella rappresentazione la seguente:
+Se si posiziona all'interno dell'elemento , è possibile creare un rettangolo con un contorno tratteggiato e punteggiato, come illustrato nella `<v:stroke dashstyle="dashdot" />` `<rect>` rappresentazione VML seguente:
 
 ![rect.gif (615 byte)](images/rect.gif)
 
@@ -174,15 +174,15 @@ Se si posiziona `<v:stroke dashstyle="dashdot" />` all'interno dell' `<rect>` el
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="opacity"></a>opacità
 
-È possibile usare l'attributo della proprietà **Opacity** del `<stroke>` sottoelemento per disegnare un contorno con diversi stili di opacità. Il valore dell'attributo della proprietà **Opacity** può essere qualsiasi numero compreso tra 0 e 1. Per impostazione predefinita, è 1, che indica l'opacità completa.
+È possibile usare **l'attributo della proprietà opacità** del sotto-elemento per disegnare un `<stroke>` contorno con vari stili di opacità. Il valore **dell'attributo della proprietà di opacità** può essere qualsiasi numero compreso tra 0 e 1. Per impostazione predefinita, è 1, che indica l'opacità completa.
 
 **Esempi:**
 
-La rappresentazione la seguente crea una riga con opacità completa:
+La rappresentazione VML seguente crea una riga con opacità completa:
 
 ![line1.gif (96 byte)](images/line1.gif)
 
@@ -197,7 +197,7 @@ strokeweight="2pt">
 
 
 
-Se si aggiunge `<v:stroke opacity="0.5" />` all'interno dell' `<line>` elemento, è possibile creare una riga con opacità del 50%, come illustrato nella seguente rappresentazione la:
+Se si aggiunge all'interno dell'elemento , è possibile creare una riga con `<v:stroke opacity="0.5" />` opacità del 50%, come illustrato nella `<line>` rappresentazione VML seguente:
 
 ![line2.gif (108 byte)](images/line2.gif)
 
@@ -213,15 +213,15 @@ strokeweight="2pt">
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
-## <a name="linestyle"></a>LineStyle
+## <a name="linestyle"></a>Linestyle
 
-È possibile usare l'attributo della proprietà **LineStyle** del `<stroke>` sottoelemento per disegnare un contorno con vari stili di linea.
+È possibile usare **l'attributo della** proprietà linestyle del `<stroke>` sotto-elemento per disegnare un contorno con vari stili di linea.
 
 **Esempi:**
 
-Se si specifica `<v:stroke linestyle="single" />` all'interno dell' `<rect>` elemento, è possibile creare un rettangolo con un unico contorno, come illustrato nella rappresentazione la seguente:
+Se si specifica all'interno dell'elemento , è possibile creare un rettangolo con un singolo `<v:stroke linestyle="single" />` `<rect>` contorno, come illustrato nella rappresentazione VML seguente:
 
 ![single.gif (537 byte)](images/single.gif)
 
@@ -236,7 +236,7 @@ Se si specifica `<v:stroke linestyle="single" />` all'interno dell' `<rect>` ele
 
 
 
-Se si imposta l'attributo della proprietà **LineStyle** su "thinthin", è possibile creare un rettangolo con il contorno (1:1:1), come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **linestyle** in "thinthin", è possibile creare un rettangolo con il contorno (1:1:1), come illustrato nella rappresentazione VML seguente:
 
 ![thinthin.gif (642 byte)](images/thinthin.gif)
 
@@ -252,7 +252,7 @@ strokeweight="10pt">
 
 
 
-Se si imposta l'attributo della proprietà **LineStyle** su "thinthick", è possibile creare un rettangolo con il contorno (1:1:2), come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **linestyle** in "thinthick", è possibile creare un rettangolo con il contorno (1:1:2), come illustrato nella rappresentazione VML seguente:
 
 ![thinthick.gif (646 byte)](images/thinthick.gif)
 
@@ -268,7 +268,7 @@ strokeweight="10pt">
 
 
 
-Se si imposta l'attributo della proprietà **LineStyle** su "thickthin", è possibile creare un rettangolo con il contorno (2:1:1), come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **linestyle** in "thickthin", è possibile creare un rettangolo con il contorno (2:1:1), come illustrato nella rappresentazione VML seguente:
 
 ![thickthin.gif (676 byte)](images/thickthin.gif)
 
@@ -284,7 +284,7 @@ strokeweight="10pt">
 
 
 
-Se si imposta l'attributo della proprietà **LineStyle** su "thickbetweenthin", è possibile creare un rettangolo con il contorno (1:1:2:1:1), come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **linestyle** in "thickbetweenthin", è possibile creare un rettangolo con il contorno (1:1:2:1:1), come illustrato nella rappresentazione VML seguente:
 
 ![thickbthin.gif (669 byte)](images/thickbthin.gif)
 
@@ -300,13 +300,13 @@ strokeweight="10pt">
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="joinstyle"></a>joinstyle
 
-È possibile usare l'attributo **joinstyle** del `<stroke>` sottoelemento per definire la modalità di Unione delle linee.
+È possibile usare **l'attributo joinstyle** del `<stroke>` sotto-elemento per definire la modalità di unione delle linee.
 
-Ad esempio, per creare una forma con il contorno di un round join, come illustrato nella figura seguente, è possibile specificare `<v:stroke joinstyle="round" />` all'interno dell' `<polyline>` elemento, come illustrato nella rappresentazione la seguente:
+Ad esempio, per creare una forma con la struttura round join, come illustrato nella figura seguente, è possibile specificare all'interno dell'elemento , come illustrato nella rappresentazione `<v:stroke joinstyle="round" />` `<polyline>` VML seguente:
 
 ![round.gif (660 byte)](images/round.gif)
 
@@ -323,7 +323,7 @@ strokecolor="red" strokeweight="20pt">
 
 
 
-Se si imposta l'attributo della proprietà **joinstyle** su "smussatura", è possibile creare una forma con il contorno di join smussato, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **joinstyle** in "smussatura", è possibile creare una forma con il contorno smussato, come illustrato nella rappresentazione VML seguente:
 
 ![bevel.gif (650 byte)](images/bevel.gif)
 
@@ -340,7 +340,7 @@ strokecolor="red" strokeweight="20pt">
 
 
 
-Se si imposta l'attributo della proprietà **joinstyle** su "Miter", è possibile creare una forma con la struttura ad angolo acuto-join, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **joinstyle** in "miter", è possibile creare una forma con la struttura miter-join, come illustrato nella rappresentazione VML seguente:
 
 ![miter.gif (702 byte)](images/miter.gif)
 
@@ -357,15 +357,15 @@ strokecolor="red" strokeweight="20pt">
 
 
 
-[![Torna all'inizio ](images/top.gif) Torna all'inizio](#top)
+[![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
-## <a name="filltype"></a>elemento FillType
+## <a name="filltype"></a>filltype
 
-È possibile usare l'attributo della proprietà **elemento FillType** del `<stroke>` sottoelemento per disegnare un contorno con vari effetti di riempimento.
+È possibile usare **l'attributo della** proprietà filltype del `<stroke>` sotto-elemento per disegnare un contorno con vari effetti di riempimento.
 
 **Esempi:**
 
-Se si specifica `<v:stroke filltype="solid" />` all'interno dell' `<roundrect>` elemento, è possibile creare un rettangolo arrotondato con il contorno con riempimento a tinta unita, come illustrato nella rappresentazione la seguente:
+Se si specifica all'interno dell'elemento , è possibile creare un rettangolo arrotondato con il contorno con riempimento a tinta unita, come illustrato nella `<v:stroke filltype="solid" />` `<roundrect>` rappresentazione VML seguente:
 
 ![solid.gif (701 byte)](images/solidborder.gif)
 
@@ -381,7 +381,7 @@ strokeweight="15pt">
 
 
 
-Se si imposta l'attributo della proprietà **elemento FillType** su "pattern", puntare l'attributo della proprietà **src** al percorso del file di immagine del modello e impostare l'attributo della proprietà **color2** sul secondo colore del criterio, è possibile creare un rettangolo arrotondato con un contorno di pattern, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **filltype** in "pattern", si punta l'attributo della proprietà **src** alla posizione del file di immagine del modello e si imposta l'attributo della proprietà **color2** sul secondo colore del motivo, è possibile creare un rettangolo arrotondato con un contorno di motivo, come illustrato nella rappresentazione VML seguente:
 
 ![pattern.gif (1055 byte)](images/pattern.gif)
 
@@ -398,7 +398,7 @@ color2="green" />
 
 
 
-Se si imposta l'attributo della proprietà **elemento FillType** su "Tile" e si posiziona l'attributo della proprietà **src** sul percorso del file di immagine, è possibile creare un rettangolo arrotondato con un contorno affiancato, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **filltype** in "tile" e si punta l'attributo della proprietà **src** alla posizione del file di immagine, è possibile creare un rettangolo arrotondato con un contorno affiancato, come illustrato nella rappresentazione VML seguente:
 
 ![tile.gif (6617 byte)](images/tile.gif)
 
@@ -414,7 +414,7 @@ strokeweight="15pt">
 
 
 
-Se si imposta l'attributo della proprietà **elemento FillType** su "frame" e si posiziona l'attributo della proprietà **src** sul percorso del file di immagine, è possibile creare un rettangolo arrotondato con un contorno immagine, come illustrato nella rappresentazione la seguente:
+Se si modifica l'attributo della proprietà **filltype** in "frame" e si punta l'attributo della proprietà **src** alla posizione del file di immagine, è possibile creare un rettangolo arrotondato con un contorno immagine, come illustrato nella rappresentazione VML seguente:
 
 ![frame.gif (6203 byte)](images/frame.gif)
 
@@ -430,8 +430,8 @@ strokeweight="15pt">
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://www.w3.org/TR/NOTE-VML#-toc416858395) .
+Per altre informazioni su questo elemento, vedere la [specifica VML](https://www.w3.org/TR/NOTE-VML#-toc416858395) .
 
- 
+ 
 
- 
+ 

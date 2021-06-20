@@ -1,39 +1,39 @@
 ---
-description: Mostra la relazione tra i parametri di funzione che puntano a strutture o matrici e i relativi dati inizializzati.
+description: Mostra la relazione tra i parametri della funzione che puntano a strutture o matrici e i relativi dati inizializzati, con un esempio di codice.
 ms.assetid: b1ad0f13-fb4d-421f-b054-a99c8ad9c83a
-title: 'Esempio di programma C: uso di CryptEncryptMessage e CryptDecryptMessage'
+title: 'Programma C di esempio: uso di CryptEncryptMessage e CryptDecryptMessage'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 726381b1c76c987207e2115c6282534b94212931
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b776ea1e0286717da94ed1b92caccfc19652e70
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104569227"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410034"
 ---
-# <a name="example-c-program-using-cryptencryptmessage-and-cryptdecryptmessage"></a>Esempio di programma C: uso di CryptEncryptMessage e CryptDecryptMessage
+# <a name="example-c-program-using-cryptencryptmessage-and-cryptdecryptmessage"></a>Programma C di esempio: uso di CryptEncryptMessage e CryptDecryptMessage
 
-[**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) è l'unica chiamata di funzione necessaria per eseguire tutte le attività elencate in [crittografia di un messaggio](../secauthn/encrypting-a-message.md). L'inizializzazione delle strutture di dati è necessaria. Nella figura seguente viene illustrata la relazione tra i parametri di funzione che puntano a strutture o matrici e i relativi dati inizializzati. In questo esempio viene inoltre decrittografato il messaggio utilizzando [**CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage).
+[**CryptEncryptMessage è**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) l'unica chiamata di funzione necessaria per eseguire tutte le attività elencate in [Crittografia di un messaggio.](../secauthn/encrypting-a-message.md) È necessaria l'inizializzazione delle strutture di dati. Nella figura seguente viene illustrata la relazione tra i parametri della funzione che puntano a strutture o matrici e i relativi dati inizializzati. Questo esempio decrittografa anche il messaggio [**usando CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage).
 
-![Mappa di inizializzazione per una chiamata a cryptencryptmessage](images/crypenc.png)
+![mappa di inizializzazione per una chiamata a cryptencryptmessage](images/crypenc.png)
 
 **Per crittografare i dati**
 
 1.  Ottenere un puntatore al contenuto da crittografare.
 2.  Determinare le dimensioni del contenuto da crittografare.
-3.  Acquisire un handle per un provider di crittografia.
+3.  Acquisire un handle per un provider del servizio di crittografia.
 4.  Aprire un [*archivio certificati*](../secgloss/c-gly.md).
 5.  Ottenere il certificato del destinatario.
 6.  Creare la matrice di certificati del destinatario.
-7.  Inizializza la struttura dell' [**\_ \_ identificatore dell'algoritmo di crittografia**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) .
-8.  Inizializzare la struttura del [**\_ messaggio di crittografia \_ \_ crypt**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_encrypt_message_para) .
-9.  Chiamare [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) per crittografare il contenuto e creare un messaggio in busta digitale.
+7.  Inizializzare la [**struttura CRYPT \_ ALGORITHM \_ IDENTIFIER.**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier)
+8.  Inizializzare la [**struttura CRYPT \_ ENCRYPT MESSAGE \_ \_ PARA.**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_encrypt_message_para)
+9.  Chiamare [**CryptEncryptMessage per**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) crittografare il contenuto e creare un messaggio in busta digitale.
 
 Nell'esempio seguente viene implementata questa procedura.
 
-I commenti correlano i frammenti di codice a ogni passaggio della procedura. Per ulteriori informazioni sulla funzione, vedere [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage). Per ulteriori informazioni sulle strutture dei dati, vedere [**crypt \_ algorithm \_ Identifier**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) and [**crypt \_ Encrypt \_ message \_ para**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_encrypt_message_para).
+I commenti correlano frammenti di codice a ogni passaggio della procedura. Per altre informazioni sulla funzione , vedere [**CryptEncryptMessage.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) Per altre informazioni sulle strutture dei dati, vedere [**CRYPT \_ ALGORITHM \_ IDENTIFIER**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) e [**CRYPT \_ ENCRYPT MESSAGE \_ \_ PARA.**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_encrypt_message_para)
 
-Questo esempio usa le funzioni [**MyHandleError**](myhandleerror.md) e [**ByteToStr**](bytetostr.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+Questo esempio usa le [**funzioni MyHandleError**](myhandleerror.md) e [**ByteToStr**](bytetostr.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

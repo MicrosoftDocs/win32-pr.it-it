@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento DocumentCopiesAllPages, che specifica il numero di copie di un documento.
 ms.assetid: 6319e8fc-787f-4bc8-8436-1b498b3882d2
 title: DocumentCopiesAllPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723242ddd127113b573f167e6902b27fcca9665a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 05bf82c23b764f3fe1f8257f4cdb2e7fa03374bd
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993988"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409444"
 ---
 # <a name="documentcopiesallpages"></a>DocumentCopiesAllPages
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il numero di copie di un documento.
 
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>         |
 | Minvalue<br/>     | integer<br/> | 1<br/>                 |
-| Obbligatorio<br/>    | string<br/>  | psk:unconditional<br/> |
-| Più elementi<br/>     | integer<br/> | 1<br/>                 |
-| Tipo di unità<br/>     | string<br/>  | Copie<br/>            |
+| Obbligatorio<br/>    | string<br/>  | psk:Unconditional<br/> |
+| Multipli<br/>     | integer<br/> | 1<br/>                 |
+| UnitType<br/>     | string<br/>  | Copie<br/>            |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento DocumentHolePunch, che descrive le caratteristiche di emissione del foro dell'output.
 ms.assetid: 46fd5e22-a2f3-424d-8c2f-2d5ac089a230
 title: DocumentHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 825120996d0d488af347ed871386a12d7f8014a7
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 760559d3bb155030ff72a616096e5a860ba0d6b0
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997888"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409293"
 ---
 # <a name="documentholepunch"></a>DocumentHolePunch
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di foratura del foro dell'output. Ogni documento viene perforato separatamente. Le parole chiave JobHolePunch e DocumentHolePunch si escludono a vicenda. Entrambi non devono essere specificati contemporaneamente in un documento PrintTicket o Funzionalità di stampa.
+Descrive le caratteristiche di emissione dei fori dell'output. Ogni documento viene esportato separatamente. Le parole chiave JobHolePunch e DocumentHolePunch si escludono a vicenda. Entrambi non devono essere specificati contemporaneamente in un documento PrintTicket o Funzionalità di stampa.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive le caratteristiche di foratura del foro dell'output. Ogni documento vie
 
 | Nome | Valore |
 |----------------------------|--------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                             |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                             |
 | Prefisso di ambito <br/> | Documento<br/>                                                            |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize.<br/> |
 
@@ -60,7 +60,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 
@@ -69,7 +69,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentHolePunch">

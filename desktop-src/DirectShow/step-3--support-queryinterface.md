@@ -1,21 +1,21 @@
 ---
-description: Passaggio 3.
+description: Esporre le nuove interfacce di un filtro ai client come parte della creazione di una pagina delle proprietà del filtro per un filtro DirectShow personalizzato.
 ms.assetid: a0e52ba9-9f7c-4cf3-ba5f-b0035ed1794c
-title: Passaggio 3. Supporta QueryInterface
+title: Passaggio 3. Supporto di QueryInterface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e3d44b67971e165b8586aa3a02cc65ab3ab05f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84b62132a6f24c68453ad4e51f72cdd9a2a78c65
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317223"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410024"
 ---
-# <a name="step-3-support-queryinterface"></a>Passaggio 3. Supporta QueryInterface
+# <a name="step-3-support-queryinterface"></a>Passaggio 3. Supporto di QueryInterface
 
 Per esporre le nuove interfacce del filtro ai client, eseguire le operazioni seguenti:
 
--   Includere la macro [**Declare \_ IUnknown**](declare-iunknown.md) nella sezione public Declaration del filtro:
+-   Includere la macro [**DECLARE \_ IUNKNOWN**](declare-iunknown.md) nella sezione della dichiarazione pubblica del filtro:
     ```C++
     public:
         DECLARE_IUNKNOWN;
@@ -23,7 +23,7 @@ Per esporre le nuove interfacce del filtro ai client, eseguire le operazioni seg
 
     
 
--   Eseguire l'override di [**CUnknown:: NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) per verificare la IID delle due interfacce:
+-   Eseguire [**l'override di CUnknown::NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) per verificare la presenza degli ID delle due interfacce:
     ```C++
     STDMETHODIMP CGrayFilter::NonDelegatingQueryInterface(REFIID riid, void **ppv)
     {
@@ -51,7 +51,7 @@ Per esporre le nuove interfacce del filtro ai client, eseguire le operazioni seg
 
     
 
-Successivo: [passaggio 4. Creare la pagina delle proprietà](step-4--create-the-property-page.md).
+Passaggio [4. Creare la pagina delle proprietà](step-4--create-the-property-page.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

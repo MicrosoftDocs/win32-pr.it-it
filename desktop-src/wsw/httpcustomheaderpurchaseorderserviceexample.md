@@ -1,30 +1,30 @@
 ---
 title: HttpCustomHeaderPurchaseOrderServiceExample
-description: Questo esempio illustra come usare l'host del servizio per ospitare un servizio PurchaseOrder su HTTP.
+description: Esaminare un esempio C++ dell'API Servizi Web Windows (WWSAPI) di un servizio di ordine di acquisto tramite intestazioni personalizzate HTTP.
 ms.assetid: 7a86e0be-6e52-4ad2-bca4-0162a8030cdc
 keywords:
-- HttpCustomHeaderPurchaseOrderServiceExample native-servizi Web
+- HttpCustomHeaderPurchaseOrderServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 022fa8fa7ddd128fa86f8b1bcb49119bfa369953
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93c412b0106a9343695b4a96cd01e54df7ea654d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396279"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404124"
 ---
 # <a name="httpcustomheaderpurchaseorderserviceexample"></a>HttpCustomHeaderPurchaseOrderServiceExample
 
-Questo esempio illustra come usare l'host del servizio per ospitare un servizio PurchaseOrder su HTTP.
+Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio PurchaseOrder su HTTP.
 
--   [HttpCustomHeaderService. cpp](#httpcustomheaderservicecpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
--   [OrderSessionHeader. xsd](#ordersessionheaderxsd)
+-   [HttpCustomHeaderService.cpp](#httpcustomheaderservicecpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
+-   [OrderSessionHeader.xsd](#ordersessionheaderxsd)
 -   [Makefile](#makefile)
 
-## <a name="httpcustomheaderservicecpp"></a>HttpCustomHeaderService. cpp
+## <a name="httpcustomheaderservicecpp"></a>HttpCustomHeaderService.cpp
 
 
 ```C++
@@ -385,7 +385,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -496,7 +496,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="ordersessionheaderxsd"></a>OrderSessionHeader. xsd
+## <a name="ordersessionheaderxsd"></a>OrderSessionHeader.xsd
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>
@@ -545,9 +545,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
