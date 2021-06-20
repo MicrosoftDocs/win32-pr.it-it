@@ -1,29 +1,29 @@
 ---
 title: Impostare lo stato dell'effetto (Direct3D 11)
-description: È necessario inizializzare alcune costanti di effetto.
+description: Alcune costanti di effetto devono solo essere inizializzate. Vedere il codice di base per l'impostazione delle variabili di effetto in Direct3D 12.
 ms.assetid: f94ba82e-fc67-4e4d-a49d-20e1163bdff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8df65e164c2df01f78ae9ea9ab83a547b977335
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 65c64f9e642e867e9398722d4590a4c2ce9193b4
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515529"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407664"
 ---
-# <a name="set-effect-state-direct3d-11"></a><span data-ttu-id="7ff81-103">Impostare lo stato dell'effetto (Direct3D 11)</span><span class="sxs-lookup"><span data-stu-id="7ff81-103">Set Effect State (Direct3D 11)</span></span>
+# <a name="set-effect-state-direct3d-11"></a><span data-ttu-id="a7137-104">Impostare lo stato dell'effetto (Direct3D 11)</span><span class="sxs-lookup"><span data-stu-id="a7137-104">Set Effect State (Direct3D 11)</span></span>
 
-<span data-ttu-id="7ff81-104">È necessario inizializzare alcune costanti di effetto.</span><span class="sxs-lookup"><span data-stu-id="7ff81-104">Some effect constants only need to be initialized.</span></span> <span data-ttu-id="7ff81-105">Una volta inizializzato, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering.</span><span class="sxs-lookup"><span data-stu-id="7ff81-105">Once initialized, the effect state is set to the device for the entire render loop.</span></span> <span data-ttu-id="7ff81-106">È necessario aggiornare altre variabili ogni volta che viene chiamato il ciclo di rendering.</span><span class="sxs-lookup"><span data-stu-id="7ff81-106">Other variables need to be updated each time the render loop is called.</span></span> <span data-ttu-id="7ff81-107">Di seguito è riportato il codice di base per l'impostazione delle variabili di effetto, per ognuno dei tipi di variabili.</span><span class="sxs-lookup"><span data-stu-id="7ff81-107">The basic code for setting effect variables is shown below, for each of the types of variables.</span></span>
+<span data-ttu-id="a7137-105">Alcune costanti di effetto devono solo essere inizializzate.</span><span class="sxs-lookup"><span data-stu-id="a7137-105">Some effect constants only need to be initialized.</span></span> <span data-ttu-id="a7137-106">Una volta inizializzato, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering.</span><span class="sxs-lookup"><span data-stu-id="a7137-106">Once initialized, the effect state is set to the device for the entire render loop.</span></span> <span data-ttu-id="a7137-107">Le altre variabili devono essere aggiornate ogni volta che viene chiamato il ciclo di rendering.</span><span class="sxs-lookup"><span data-stu-id="a7137-107">Other variables need to be updated each time the render loop is called.</span></span> <span data-ttu-id="a7137-108">Il codice di base per l'impostazione delle variabili di effetto è illustrato di seguito, per ognuno dei tipi di variabili.</span><span class="sxs-lookup"><span data-stu-id="a7137-108">The basic code for setting effect variables is shown below, for each of the types of variables.</span></span>
 
-<span data-ttu-id="7ff81-108">Un effetto incapsula tutti gli Stati di rendering necessari per eseguire un passaggio di rendering.</span><span class="sxs-lookup"><span data-stu-id="7ff81-108">An effect encapsulates all of the render state required to do a rendering pass.</span></span> <span data-ttu-id="7ff81-109">In termini di API, esistono tre tipi di stato incapsulati in un effetto.</span><span class="sxs-lookup"><span data-stu-id="7ff81-109">In terms of the API, there are three types of state encapsulated in an effect.</span></span>
+<span data-ttu-id="a7137-109">Un effetto incapsula tutto lo stato di rendering necessario per eseguire un passaggio di rendering.</span><span class="sxs-lookup"><span data-stu-id="a7137-109">An effect encapsulates all of the render state required to do a rendering pass.</span></span> <span data-ttu-id="a7137-110">In termini di API, esistono tre tipi di stato incapsulati in un effetto.</span><span class="sxs-lookup"><span data-stu-id="a7137-110">In terms of the API, there are three types of state encapsulated in an effect.</span></span>
 
--   [<span data-ttu-id="7ff81-110">Stato costante</span><span class="sxs-lookup"><span data-stu-id="7ff81-110">Constant State</span></span>](#constant-state)
--   [<span data-ttu-id="7ff81-111">Stato dello shader</span><span class="sxs-lookup"><span data-stu-id="7ff81-111">Shader State</span></span>](#shader-state)
--   [<span data-ttu-id="7ff81-112">Stato trama</span><span class="sxs-lookup"><span data-stu-id="7ff81-112">Texture State</span></span>](#texture-state)
+-   [<span data-ttu-id="a7137-111">Stato costante</span><span class="sxs-lookup"><span data-stu-id="a7137-111">Constant State</span></span>](#constant-state)
+-   [<span data-ttu-id="a7137-112">Stato shader</span><span class="sxs-lookup"><span data-stu-id="a7137-112">Shader State</span></span>](#shader-state)
+-   [<span data-ttu-id="a7137-113">Stato trama</span><span class="sxs-lookup"><span data-stu-id="a7137-113">Texture State</span></span>](#texture-state)
 
-## <a name="constant-state"></a><span data-ttu-id="7ff81-113">Stato costante</span><span class="sxs-lookup"><span data-stu-id="7ff81-113">Constant State</span></span>
+## <a name="constant-state"></a><span data-ttu-id="a7137-114">Stato costante</span><span class="sxs-lookup"><span data-stu-id="a7137-114">Constant State</span></span>
 
-<span data-ttu-id="7ff81-114">Per prima cosa, dichiarare le variabili in un effetto usando i tipi di dati HLSL.</span><span class="sxs-lookup"><span data-stu-id="7ff81-114">First, declare variables in an effect using HLSL data types.</span></span>
+<span data-ttu-id="a7137-115">In primo luogo, dichiarare le variabili in un effetto usando i tipi di dati HLSL.</span><span class="sxs-lookup"><span data-stu-id="a7137-115">First, declare variables in an effect using HLSL data types.</span></span>
 
 
 ```
@@ -47,7 +47,7 @@ float4x4 g_mWorldViewProjection;    // World * View * Projection matrix
 
 
 
-<span data-ttu-id="7ff81-115">In secondo luogo, dichiarare le variabili nell'applicazione che possono essere impostate dall'applicazione e aggiorneranno le variabili di effetto.</span><span class="sxs-lookup"><span data-stu-id="7ff81-115">Second, declare variables in the application that can be set by the application, and will then update the effect variables.</span></span>
+<span data-ttu-id="a7137-116">In secondo momento, dichiarare nell'applicazione le variabili che possono essere impostate dall'applicazione e quindi aggiornare le variabili di effetto.</span><span class="sxs-lookup"><span data-stu-id="a7137-116">Second, declare variables in the application that can be set by the application, and will then update the effect variables.</span></span>
 
 
 ```
@@ -83,7 +83,7 @@ OnD3D11CreateDevice()
 
 
 
-<span data-ttu-id="7ff81-116">In terzo luogo, usare i metodi Update per impostare il valore delle variabili nell'applicazione nelle variabili di effetto.</span><span class="sxs-lookup"><span data-stu-id="7ff81-116">Third, use the update methods to set the value of the variables in the application in the effect variables.</span></span>
+<span data-ttu-id="a7137-117">In terzo modo, usare i metodi update per impostare il valore delle variabili nell'applicazione nelle variabili di effetto.</span><span class="sxs-lookup"><span data-stu-id="a7137-117">Third, use the update methods to set the value of the variables in the application in the effect variables.</span></span>
 
 
 ```
@@ -102,11 +102,11 @@ OnD3D11FrameRender()
 
 
 
-### <a name="two-ways-to-get-the-state-in-an-effect-variable"></a><span data-ttu-id="7ff81-117">Due modi per ottenere lo stato in una variabile di effetto</span><span class="sxs-lookup"><span data-stu-id="7ff81-117">Two Ways to Get the State in an Effect Variable</span></span>
+### <a name="two-ways-to-get-the-state-in-an-effect-variable"></a><span data-ttu-id="a7137-118">Due modi per ottenere lo stato in una variabile di effetto</span><span class="sxs-lookup"><span data-stu-id="a7137-118">Two Ways to Get the State in an Effect Variable</span></span>
 
-<span data-ttu-id="7ff81-118">Esistono due modi per ottenere lo stato contenuto in una variabile effetto.</span><span class="sxs-lookup"><span data-stu-id="7ff81-118">There are two ways to get the state contained in an effect variable.</span></span> <span data-ttu-id="7ff81-119">Dato un effetto che è stato caricato in memoria.</span><span class="sxs-lookup"><span data-stu-id="7ff81-119">Given an effect that has been loaded into memory.</span></span>
+<span data-ttu-id="a7137-119">Esistono due modi per ottenere lo stato contenuto in una variabile di effetto.</span><span class="sxs-lookup"><span data-stu-id="a7137-119">There are two ways to get the state contained in an effect variable.</span></span> <span data-ttu-id="a7137-120">Dato un effetto caricato in memoria.</span><span class="sxs-lookup"><span data-stu-id="a7137-120">Given an effect that has been loaded into memory.</span></span>
 
-<span data-ttu-id="7ff81-120">Un modo consiste nell'ottenere lo stato del campionatore da un [**ID3DX11EffectVariable**](id3dx11effectvariable.md) di cui è stato eseguito il cast come interfaccia del campionatore.</span><span class="sxs-lookup"><span data-stu-id="7ff81-120">One way is to get the sampler state from an [**ID3DX11EffectVariable**](id3dx11effectvariable.md) that has been cast as a sampler interface.</span></span>
+<span data-ttu-id="a7137-121">Un modo è ottenere lo stato del campionatore da un [**id3DX11EffectVariable**](id3dx11effectvariable.md) di cui è stato eseguito il cast come interfaccia del campionatore.</span><span class="sxs-lookup"><span data-stu-id="a7137-121">One way is to get the sampler state from an [**ID3DX11EffectVariable**](id3dx11effectvariable.md) that has been cast as a sampler interface.</span></span>
 
 
 ```
@@ -123,7 +123,7 @@ if( g_pEffect11 )
 
 
 
-<span data-ttu-id="7ff81-121">Un altro modo consiste nell'ottenere lo stato del campionatore da un [**ID3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).</span><span class="sxs-lookup"><span data-stu-id="7ff81-121">The other way is to get the sampler state from an [**ID3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).</span></span>
+<span data-ttu-id="a7137-122">L'altro modo è ottenere lo stato del campionatore da [**id3D11SamplerState.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate)</span><span class="sxs-lookup"><span data-stu-id="a7137-122">The other way is to get the sampler state from an [**ID3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).</span></span>
 
 
 ```
@@ -145,9 +145,9 @@ if( g_pEffect11 )
 
 
 
-## <a name="shader-state"></a><span data-ttu-id="7ff81-122">Stato dello shader</span><span class="sxs-lookup"><span data-stu-id="7ff81-122">Shader State</span></span>
+## <a name="shader-state"></a><span data-ttu-id="a7137-123">Stato shader</span><span class="sxs-lookup"><span data-stu-id="a7137-123">Shader State</span></span>
 
-<span data-ttu-id="7ff81-123">Lo stato dello shader viene dichiarato e assegnato in una tecnica di effetto, all'interno di un passaggio.</span><span class="sxs-lookup"><span data-stu-id="7ff81-123">Shader state is declared and assigned in an effect technique, within a pass.</span></span>
+<span data-ttu-id="a7137-124">Lo stato dello shader viene dichiarato e assegnato in una tecnica di effetto, all'interno di un passaggio.</span><span class="sxs-lookup"><span data-stu-id="a7137-124">Shader state is declared and assigned in an effect technique, within a pass.</span></span>
 
 
 ```
@@ -165,13 +165,13 @@ technique10 RenderSceneWithTexture1Light
 
 
 
-<span data-ttu-id="7ff81-124">Questa operazione funziona esattamente come se non si stesse usando un effetto.</span><span class="sxs-lookup"><span data-stu-id="7ff81-124">This works just like it would if you were not using an effect.</span></span> <span data-ttu-id="7ff81-125">Sono disponibili tre chiamate, una per ogni tipo di shader (vertice, geometria e pixel).</span><span class="sxs-lookup"><span data-stu-id="7ff81-125">There are three calls, one for each type of shader (vertex, geometry, and pixel).</span></span> <span data-ttu-id="7ff81-126">Il primo, SetVertexShader, chiama [**sul ID3D11DeviceContext:: VSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader).</span><span class="sxs-lookup"><span data-stu-id="7ff81-126">The first one, SetVertexShader, calls [**ID3D11DeviceContext::VSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader).</span></span> <span data-ttu-id="7ff81-127">CompileShader è una funzione di effetto speciale che accetta il profilo dello shader (vs \_ 4 \_ 0) e il nome della funzione vertex shader (RenderVS).</span><span class="sxs-lookup"><span data-stu-id="7ff81-127">CompileShader is a special effect function that takes the shader profile(vs\_4\_0) and the name of the vertex shader function (RenderVS).</span></span> <span data-ttu-id="7ff81-128">In altre parole, ciascuna di queste chiamate CompileShader compila la funzione shader associata e restituisce un puntatore allo shader compilato.</span><span class="sxs-lookup"><span data-stu-id="7ff81-128">In other words, each of these CompileShader calls compiles their associated shader function and returns a pointer to the compiled shader.</span></span>
+<span data-ttu-id="a7137-125">Questa operazione funziona esattamente come se non si usasse un effetto.</span><span class="sxs-lookup"><span data-stu-id="a7137-125">This works just like it would if you were not using an effect.</span></span> <span data-ttu-id="a7137-126">Sono disponibili tre chiamate, una per ogni tipo di shader (vertice, geometria e pixel).</span><span class="sxs-lookup"><span data-stu-id="a7137-126">There are three calls, one for each type of shader (vertex, geometry, and pixel).</span></span> <span data-ttu-id="a7137-127">Il primo, SetVertexShader, chiama [**ID3D11DeviceContext::VSSetShader.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader)</span><span class="sxs-lookup"><span data-stu-id="a7137-127">The first one, SetVertexShader, calls [**ID3D11DeviceContext::VSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader).</span></span> <span data-ttu-id="a7137-128">CompileShader è una funzione di effetto speciale che accetta il profilo shader (vs 4 0) e il nome della funzione \_ \_ vertex shader (RenderVS).</span><span class="sxs-lookup"><span data-stu-id="a7137-128">CompileShader is a special effect function that takes the shader profile(vs\_4\_0) and the name of the vertex shader function (RenderVS).</span></span> <span data-ttu-id="a7137-129">In altre parole, ognuna di queste chiamate CompileShader compila la funzione shader associata e restituisce un puntatore allo shader compilato.</span><span class="sxs-lookup"><span data-stu-id="a7137-129">In other words, each of these CompileShader calls compiles their associated shader function and returns a pointer to the compiled shader.</span></span>
 
-<span data-ttu-id="7ff81-129">Si noti che non è necessario impostare tutti gli Stati dello shader.</span><span class="sxs-lookup"><span data-stu-id="7ff81-129">Note that not all shader state must be set.</span></span> <span data-ttu-id="7ff81-130">Questo passaggio non include alcuna chiamata a SetHullShader o SetDomainShader, vale a dire che lo scafo e gli shader del dominio attualmente associati rimarranno invariati.</span><span class="sxs-lookup"><span data-stu-id="7ff81-130">This pass does not include any SetHullShader or SetDomainShader calls, meaning that the currently bound hull and domain shaders will be unchanged.</span></span>
+<span data-ttu-id="a7137-130">Si noti che non è necessario impostare tutto lo stato dello shader.</span><span class="sxs-lookup"><span data-stu-id="a7137-130">Note that not all shader state must be set.</span></span> <span data-ttu-id="a7137-131">Questo passaggio non include alcuna chiamata a SetHullShader o SetDomainShader, vale a dire che gli shader della forma e del dominio attualmente associati rimangono invariati.</span><span class="sxs-lookup"><span data-stu-id="a7137-131">This pass does not include any SetHullShader or SetDomainShader calls, meaning that the currently bound hull and domain shaders will be unchanged.</span></span>
 
-## <a name="texture-state"></a><span data-ttu-id="7ff81-131">Stato trama</span><span class="sxs-lookup"><span data-stu-id="7ff81-131">Texture State</span></span>
+## <a name="texture-state"></a><span data-ttu-id="a7137-132">Stato trama</span><span class="sxs-lookup"><span data-stu-id="a7137-132">Texture State</span></span>
 
-<span data-ttu-id="7ff81-132">Lo stato della trama è leggermente più complesso rispetto all'impostazione di una variabile, perché i dati della trama non sono semplicemente letti come una variabile, vengono campionati da una trama.</span><span class="sxs-lookup"><span data-stu-id="7ff81-132">Texture state is a little more complex than setting a variable, because texture data is not simply read like a variable, it is sampled from a texture.</span></span> <span data-ttu-id="7ff81-133">Pertanto, è necessario definire la variabile di trama (proprio come una variabile normale ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento.</span><span class="sxs-lookup"><span data-stu-id="7ff81-133">Therefore, you must define the texture variable (just like a normal variable except it uses a texture type) and you must define the sampling conditions.</span></span> <span data-ttu-id="7ff81-134">Di seguito è riportato un esempio di una dichiarazione di variabile di trama e la dichiarazione dello stato di campionamento corrispondente.</span><span class="sxs-lookup"><span data-stu-id="7ff81-134">Here is an example of a texture variable declaration and the corresponding sampling state declaration.</span></span>
+<span data-ttu-id="a7137-133">Lo stato della trama è un po' più complesso rispetto all'impostazione di una variabile, perché i dati della trama non vengono semplicemente letti come una variabile, ma vengono campionati da una trama.</span><span class="sxs-lookup"><span data-stu-id="a7137-133">Texture state is a little more complex than setting a variable, because texture data is not simply read like a variable, it is sampled from a texture.</span></span> <span data-ttu-id="a7137-134">Pertanto, è necessario definire la variabile di trama (proprio come una variabile normale, ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento.</span><span class="sxs-lookup"><span data-stu-id="a7137-134">Therefore, you must define the texture variable (just like a normal variable except it uses a texture type) and you must define the sampling conditions.</span></span> <span data-ttu-id="a7137-135">Di seguito è riportato un esempio di dichiarazione di variabile di trama e di dichiarazione dello stato di campionamento corrispondente.</span><span class="sxs-lookup"><span data-stu-id="a7137-135">Here is an example of a texture variable declaration and the corresponding sampling state declaration.</span></span>
 
 
 ```
@@ -188,9 +188,9 @@ SamplerState MeshTextureSampler
 
 
 
-<span data-ttu-id="7ff81-135">Di seguito è riportato un esempio di impostazione di una trama da un'applicazione.</span><span class="sxs-lookup"><span data-stu-id="7ff81-135">Here is an example of setting a texture from an application.</span></span> <span data-ttu-id="7ff81-136">In questo esempio, la trama viene archiviata nei dati della mesh, che è stata caricata quando è stato creato l'effetto.</span><span class="sxs-lookup"><span data-stu-id="7ff81-136">In this example, the texture is stored in the mesh data, that was loaded when the effect was created.</span></span>
+<span data-ttu-id="a7137-136">Di seguito è riportato un esempio di impostazione di una trama da un'applicazione.</span><span class="sxs-lookup"><span data-stu-id="a7137-136">Here is an example of setting a texture from an application.</span></span> <span data-ttu-id="a7137-137">In questo esempio la trama viene archiviata nei dati della mesh, caricati al momento della creazione dell'effetto.</span><span class="sxs-lookup"><span data-stu-id="a7137-137">In this example, the texture is stored in the mesh data, that was loaded when the effect was created.</span></span>
 
-<span data-ttu-id="7ff81-137">Il primo passaggio consiste nell'ottenere un puntatore alla trama dall'effetto (dalla mesh).</span><span class="sxs-lookup"><span data-stu-id="7ff81-137">The first step is getting a pointer to the texture from the effect (from the mesh).</span></span>
+<span data-ttu-id="a7137-138">Il primo passaggio consiste nell'ottenere un puntatore alla trama dall'effetto (dalla mesh).</span><span class="sxs-lookup"><span data-stu-id="a7137-138">The first step is getting a pointer to the texture from the effect (from the mesh).</span></span>
 
 
 ```
@@ -202,7 +202,7 @@ g_ptxDiffuse = g_pEffect11->GetVariableByName( "g_MeshTexture" )->AsShaderResour
 
 
 
-<span data-ttu-id="7ff81-138">Il secondo passaggio consiste nel specificare una visualizzazione per accedere alla trama.</span><span class="sxs-lookup"><span data-stu-id="7ff81-138">The second step is specifying a view for accessing the texture.</span></span> <span data-ttu-id="7ff81-139">La visualizzazione definisce un modo generale per accedere ai dati dalla risorsa trama.</span><span class="sxs-lookup"><span data-stu-id="7ff81-139">The view defines a general way to access the data from the texture resource.</span></span>
+<span data-ttu-id="a7137-139">Il secondo passaggio consiste nel specificare una visualizzazione per l'accesso alla trama.</span><span class="sxs-lookup"><span data-stu-id="a7137-139">The second step is specifying a view for accessing the texture.</span></span> <span data-ttu-id="a7137-140">La vista definisce un modo generale per accedere ai dati dalla risorsa trama.</span><span class="sxs-lookup"><span data-stu-id="a7137-140">The view defines a general way to access the data from the texture resource.</span></span>
 
 
 ```
@@ -220,20 +220,20 @@ OnD3D11FrameRender()
 
 
 
-<span data-ttu-id="7ff81-140">Dal punto di vista dell'applicazione, le visualizzazioni di accesso non ordinato vengono gestite in modo analogo alle viste delle risorse dello shader.</span><span class="sxs-lookup"><span data-stu-id="7ff81-140">From the application perspective, unordered access views are handled similarly to shader resource views.</span></span> <span data-ttu-id="7ff81-141">Tuttavia, nelle funzioni pixel shader e compute shader, i dati della vista di accesso non ordinati vengono letti da/scritti direttamente in.</span><span class="sxs-lookup"><span data-stu-id="7ff81-141">However, in the effect pixel shader and compute shader functions, unordered access view data is read from/written to directly.</span></span> <span data-ttu-id="7ff81-142">Non è possibile eseguire l'esempio da una visualizzazione di accesso non ordinata.</span><span class="sxs-lookup"><span data-stu-id="7ff81-142">You cannot sample from an unordered access view.</span></span>
+<span data-ttu-id="a7137-141">Dal punto di vista dell'applicazione, le visualizzazioni di accesso non ordinato vengono gestite in modo analogo alle visualizzazioni delle risorse shader.</span><span class="sxs-lookup"><span data-stu-id="a7137-141">From the application perspective, unordered access views are handled similarly to shader resource views.</span></span> <span data-ttu-id="a7137-142">Tuttavia, nell'effetto delle pixel shader e compute shader, i dati della visualizzazione di accesso non ordinati vengono letti o scritti direttamente in .</span><span class="sxs-lookup"><span data-stu-id="a7137-142">However, in the effect pixel shader and compute shader functions, unordered access view data is read from/written to directly.</span></span> <span data-ttu-id="a7137-143">Non è possibile eseguire il campionamento da una visualizzazione di accesso non ordinata.</span><span class="sxs-lookup"><span data-stu-id="a7137-143">You cannot sample from an unordered access view.</span></span>
 
-<span data-ttu-id="7ff81-143">Per ulteriori informazioni sulla visualizzazione delle risorse, vedere [risorse](overviews-direct3d-11-resources.md).</span><span class="sxs-lookup"><span data-stu-id="7ff81-143">For more information about viewing resources, see [Resources](overviews-direct3d-11-resources.md).</span></span>
+<span data-ttu-id="a7137-144">Per altre informazioni sulla visualizzazione delle risorse, vedere [Risorse.](overviews-direct3d-11-resources.md)</span><span class="sxs-lookup"><span data-stu-id="a7137-144">For more information about viewing resources, see [Resources](overviews-direct3d-11-resources.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="7ff81-144">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7ff81-144">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="a7137-145">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="a7137-145">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="7ff81-145">Rendering di un effetto (Direct3D 11)</span><span class="sxs-lookup"><span data-stu-id="7ff81-145">Rendering an Effect (Direct3D 11)</span></span>](d3d11-graphics-programming-guide-effects-render.md)
+[<span data-ttu-id="a7137-146">Rendering di un effetto (Direct3D 11)</span><span class="sxs-lookup"><span data-stu-id="a7137-146">Rendering an Effect (Direct3D 11)</span></span>](d3d11-graphics-programming-guide-effects-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
