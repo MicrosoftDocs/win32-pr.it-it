@@ -1,93 +1,93 @@
 ---
 title: Disegno indiretto
-description: Il disegno indiretto consente lo spostamento da parte della CPU alla GPU di alcuni attraversamenti della scena, che possono migliorare le prestazioni. Il buffer dei comandi può essere generato dalla CPU o dalla GPU.
+description: Il disegno indiretto consente di spostare parte dell'attraversamento e del culling della scena dalla CPU alla GPU, migliorando le prestazioni. Il buffer dei comandi può essere generato dalla CPU o dalla GPU.
 ms.assetid: F8D6C88A-101E-4F66-999F-43206F6527B6
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7731a662bc6064e635d68942e6b0b222adf1eda8
-ms.sourcegitcommit: 56f8e4d5119e5018363fa2dc3472cdff203c6913
+ms.openlocfilehash: 6fa474a469d5789d4b31830400d981ea771db2e8
+ms.sourcegitcommit: b9a7a48e52219bf8d33e6b8171fc9f8b52151e92
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "104548793"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "112421879"
 ---
 # <a name="indirect-drawing"></a>Disegno indiretto
 
-Il disegno indiretto consente lo spostamento da parte della CPU alla GPU di alcuni attraversamenti della scena, che possono migliorare le prestazioni. Il buffer dei comandi può essere generato dalla CPU o dalla GPU.
+Il disegno indiretto consente di spostare parte dell'attraversamento e del culling della scena dalla CPU alla GPU, migliorando le prestazioni. Il buffer dei comandi può essere generato dalla CPU o dalla GPU.
 
--   [Firme del comando](#command-signatures)
--   [Strutture di buffer di argomenti indiretti](#indirect-argument-buffer-structures)
+-   [Firme dei comandi](#command-signatures)
+-   [Strutture di buffer degli argomenti indiretti](#indirect-argument-buffer-structures)
 -   [Creazione della firma del comando](#command-signature-creation)
-    -   [Nessun argomento modificato](#no-argument-changes)
-    -   [Costanti radice e buffer dei vertici](#root-constants-and-vertex-buffers)
+    -   [Nessuna modifica dell'argomento](#no-argument-changes)
+    -   [Costanti radice e vertex buffer](#root-constants-and-vertex-buffers)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="command-signatures"></a>Firme del comando
+## <a name="command-signatures"></a>Firme dei comandi
 
-L'oggetto della firma del comando ([**ID3D12CommandSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandsignature)) consente alle app di specificare il disegno indiretto, in particolare impostando quanto segue:
+L'oggetto firma del comando ([**ID3D12CommandSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandsignature)) consente alle app di specificare il disegno indiretto, in particolare impostando quanto segue:
 
 -   Formato del buffer dell'argomento indiretto.
 -   Tipo di comando che verrà usato (dai metodi [**ID3D12GraphicsCommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist) [**DrawInstanced**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawinstanced), [**DrawIndexedInstanced**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawindexedinstanced)o [**Dispatch**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-dispatch)).
--   Il set di associazioni di risorse che cambieranno la chiamata per ogni comando rispetto al set che verrà ereditato.
+-   Set di associazioni di risorse che modificherà la chiamata per comando rispetto al set che verrà ereditato.
 
-All'avvio, un'app crea un piccolo set di **firme dei comandi**. In fase di esecuzione, l'applicazione riempie un buffer con i comandi (tramite qualsiasi altro strumento scelto dallo sviluppatore di app). I comandi contengono facoltativamente lo stato da impostare per le visualizzazioni dei buffer di vertici, le visualizzazioni dei buffer di indice, le costanti radice e i descrittori radice (non elaborato o strutturato SRV/UAV/CBVs). Questi layout degli argomenti non sono specifici dell'hardware, quindi le app possono generare direttamente i buffer. La firma del comando eredita lo stato rimanente dall'elenco dei comandi. L'app chiama quindi [**ExecuteIndirect**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) per indicare alla GPU di interpretare il contenuto del buffer di argomenti indiretto in base al formato definito da una particolare firma del comando.
+All'avvio, un'app crea un piccolo set di **firme di comando**. In fase di esecuzione, l'applicazione riempie un buffer con comandi (tramite qualsiasi mezzo scelto dallo sviluppatore dell'app). I comandi contengono facoltativamente lo stato da impostare per le viste del buffer dei vertici, le visualizzazioni index buffer, le costanti radice e i descrittori radice (SRV/UAV/CBV non elaborati o strutturati). Questi layout di argomento non sono specifici dell'hardware, quindi le app possono generare direttamente i buffer. La firma del comando eredita lo stato rimanente dall'elenco dei comandi. L'app chiama [**quindi ExecuteIndirect**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) per indicare alla GPU di interpretare il contenuto del buffer degli argomenti indiretti in base al formato definito da una firma di comando specifica.
 
-Se la firma del comando modifica qualsiasi argomento radice, viene archiviato nella firma del comando come subset di una firma radice.
+Se la firma del comando modifica gli argomenti radice, questo viene archiviato all'interno della firma del comando come subset di una firma radice.
 
-Si noti che nessuno stato della firma del comando perde l'elenco dei comandi al termine dell'esecuzione.
+Si noti che lo stato della firma del comando non torna all'elenco dei comandi al termine dell'esecuzione.
 
-Si supponga, ad esempio, che uno sviluppatore di app voglia specificare una costante radice univoca per la chiamata per ogni progetto nel buffer degli argomenti indiretti. L'app crea una firma del comando che consente al buffer di argomenti indiretto di specificare i seguenti parametri per chiamata di traccia:
+Si supponga, ad esempio, che uno sviluppatore di app voglia che una costante radice univoca sia specificata per ogni chiamata di disegno nel buffer degli argomenti indiretti. L'app creerebbe una firma di comando che consente al buffer degli argomenti indiretti di specificare i parametri seguenti per ogni chiamata di disegno:
 
 -   Valore di una costante radice.
--   Argomenti di estrazione (conteggio vertici, numero di istanze e così via).
+-   Argomenti di disegno (conteggio vertici, numero di istanze e così via).
 
-Il buffer di argomento indiretto generato dall'applicazione conterrà una matrice di record di dimensioni fisse. Ogni struttura corrisponde a una chiamata di progetto. Ogni struttura contiene gli argomenti del disegno e il valore della costante radice. Il numero di chiamate di progetto viene specificato in un buffer visibile GPU separato.
+Il buffer dell'argomento indiretto generato dall'applicazione conterrà una matrice di record a dimensione fissa. Ogni struttura corrisponde a una chiamata di disegno. Ogni struttura contiene gli argomenti di disegno e il valore della costante radice. Il numero di chiamate di disegno è specificato in un buffer separato visibile alla GPU.
 
 Di seguito è riportato un esempio di buffer dei comandi generato dall'app:
 
 ![formato del buffer dei comandi](images/indirect-drawing-command-buffer.png)
 
-## <a name="indirect-argument-buffer-structures"></a>Strutture di buffer di argomenti indiretti
+## <a name="indirect-argument-buffer-structures"></a>Strutture di buffer degli argomenti indiretti
 
-Le strutture seguenti definiscono la modalità di visualizzazione di argomenti specifici in un buffer di argomento indiretto. Queste strutture non vengono visualizzate in alcuna API D3D12. Le applicazioni usano queste definizioni durante la scrittura in un buffer di argomenti indiretto (con CPU o GPU):
+Le strutture seguenti definiscono il modo in cui determinati argomenti vengono visualizzati in un buffer di argomenti indiretti. Queste strutture non vengono visualizzate in alcuna API D3D12. Le applicazioni usano queste definizioni durante la scrittura in un buffer di argomenti indiretti (con CPU o GPU):
 
--   [**Argomenti di D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_draw_arguments)
--   [**D3D12 \_ creare \_ argomenti indicizzati \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_draw_indexed_arguments)
--   [**\_Argomenti dispatch \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_dispatch_arguments)
--   [**\_ \_ Visualizzazione buffer vertex \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_vertex_buffer_view)
--   [**\_ \_ Visualizzazione buffer dell'indice D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_index_buffer_view)
--   \_ \_ Indirizzo virtuale della GPU D3D12 \_ (sinonimo di UInt64).
--   [**\_ \_ Visualizzazione buffer costante \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_constant_buffer_view_desc)
+-   [**ARGOMENTI DI DISEGNO D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_draw_arguments)
+-   [**D3D12 \_ DRAW \_ INDEXED \_ ARGUMENTS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_draw_indexed_arguments)
+-   [**ARGOMENTI DISPATCH D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_dispatch_arguments)
+-   [**VISTA \_ VERTEX BUFFER \_ D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_vertex_buffer_view)
+-   [**VISTA BUFFER INDICE D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_index_buffer_view)
+-   D3D12 \_ GPU \_ VIRTUAL ADDRESS \_ (un sinonimo di typedef di UINT64).
+-   [**VISUALIZZAZIONE BUFFER COSTANTE D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_constant_buffer_view_desc)
 
 ## <a name="command-signature-creation"></a>Creazione della firma del comando
 
-Per creare una firma del comando, usare gli elementi API seguenti:
+Per creare una firma di comando, usare gli elementi API seguenti:
 
--   [**ID3D12Device:: CreateCommandSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommandsignature) (restituisce un [**ID3D12CommandSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandsignature))
--   [**\_Tipo di \_ argomento INdiretto D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_indirect_argument_type)
--   [**\_Desc D3D12 \_ argomento indiretto \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_indirect_argument_desc)
--   [**\_Descrizione della \_ firma del comando D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_command_signature_desc)
+-   [**ID3D12Device::CreateCommandSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommandsignature) (restituisce un [**ID3D12CommandSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandsignature))
+-   [**TIPO DI ARGOMENTO \_ INDIRETTO D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_indirect_argument_type)
+-   [**D3D12 \_ ARGOMENTO \_ INDIRETTO \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_indirect_argument_desc)
+-   [**D3D12 \_ COMMAND \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_command_signature_desc)
 
-L'ordinamento degli argomenti all'interno di un buffer di argomento indiretto viene definito in modo da corrispondere esattamente all'ordine degli argomenti specificato nel parametro *pArguments* della [**firma del \_ comando D3D12 \_ \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_command_signature_desc). Tutti gli argomenti per una chiamata/dispatch (Compute) di un grafico (calcolo) all'interno di un buffer di argomento indiretto sono strettamente compressi. Tuttavia, le applicazioni possono specificare uno stride di byte arbitrario tra i comandi di estrazione/invio in un buffer di argomento indiretto.
+L'ordinamento degli argomenti all'interno di un buffer di argomenti indiretti è definito in modo che corrisponda esattamente all'ordine degli argomenti specificato nel *parametro pArguments* di [**D3D12 \_ COMMAND SIGNATURE \_ \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_command_signature_desc) Tutti gli argomenti per una chiamata di disegno (grafica)/invio (calcolo) all'interno di un buffer di argomenti indiretti sono strettamente imballati. Tuttavia, alle applicazioni è consentito specificare uno stride di byte arbitrario tra i comandi di disegno/invio in un buffer di argomenti indiretti.
 
 La firma radice deve essere specificata solo se la firma del comando modifica uno degli argomenti radice.
 
-Per la radice SRV/UAV/CBV, le dimensioni specificate per l'applicazione sono in byte. Il livello di debug convaliderà le restrizioni seguenti per l'indirizzo:
+Per la radice SRV/UAV/CBV, le dimensioni specificate dall'applicazione sono in byte. Il livello di debug convaliderà le restrizioni seguenti sull'indirizzo:
 
 -   CBV: l'indirizzo deve essere un multiplo di 256 byte.
 -   SRV/UAV non elaborato: l'indirizzo deve essere un multiplo di 4 byte.
 -   SRV/UAV strutturato: l'indirizzo deve essere un multiplo dello stride di byte della struttura (dichiarato nello shader).
 
-Una firma del comando specificata è una firma del comando di calcolo o di traccia. Se una firma del comando contiene un'operazione di disegno, si tratta di una firma del comando grafica. In caso contrario, la firma del comando deve contenere un'operazione di invio ed è una firma del comando COMPUTE.
+Una firma di comando specificata è una firma di comando di disegno o di calcolo. Se una firma di comando contiene un'operazione di disegno, si tratta di una firma di comando grafica. In caso contrario, la firma del comando deve contenere un'operazione di invio ed è una firma del comando di calcolo.
 
-Le sezioni seguenti illustrano alcune firme dei comandi di esempio.
+Le sezioni seguenti illustrano alcune firme di comando di esempio.
 
-### <a name="no-argument-changes"></a>Nessun argomento modificato
+### <a name="no-argument-changes"></a>Nessuna modifica dell'argomento
 
-In questo esempio, il buffer di argomenti indiretto generato dall'applicazione include una matrice di strutture a 36 byte. Ogni struttura contiene solo i cinque parametri passati a [**DrawIndexedInstanced**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawindexedinstanced) (più la spaziatura interna).
+In questo esempio il buffer degli argomenti indiretti generato dall'applicazione contiene una matrice di strutture a 36 byte. Ogni struttura contiene solo i cinque parametri passati a [**DrawIndexedInstanced**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawindexedinstanced) (più la spaziatura interna).
 
-Di seguito è riportato il codice per creare la descrizione della firma del comando:
+Il codice per creare la descrizione della firma del comando è il seguente:
 
 ``` syntax
 D3D12_INDIRECT_ARGUMENT_DESC Args[1];
@@ -99,7 +99,7 @@ ProgramDesc.NumArgumentDescs = 1;
 ProgramDesc.pArguments = Args;
 ```
 
-Il layout di una singola struttura all'interno di un buffer di argomento indiretto è:
+Il layout di una singola struttura all'interno di un buffer di argomenti indiretti è:
 
 
 
@@ -116,9 +116,9 @@ Il layout di una singola struttura all'interno di un buffer di argomento indiret
 
  
 
-### <a name="root-constants-and-vertex-buffers"></a>Costanti radice e buffer dei vertici
+### <a name="root-constants-and-vertex-buffers"></a>Costanti radice e vertex buffer
 
-In questo esempio, ogni struttura in un buffer di argomento indiretto modifica due costanti radice, modifica un'associazione di buffer di Vertex ed esegue un'operazione di disegno non indicizzata. Nessun riempimento tra le strutture.
+In questo esempio, ogni struttura in un buffer di argomenti indiretti modifica due costanti radice, modifica un'associazione al buffer dei vertici ed esegue un'operazione di disegno non indicizzata. Non è presente alcuna spaziatura interna tra le strutture.
 
 Il codice per creare la descrizione della firma del comando è:
 
@@ -126,14 +126,18 @@ Il codice per creare la descrizione della firma del comando è:
 D3D12_INDIRECT_ARGUMENT_DESC Args[4];
 Args[0].Type = D3D12_INDIRECT_ARGUMENT_TYPE_CONSTANT;
 Args[0].Constant.RootParameterIndex = 2;
+Args[0].Constant.DestOffsetIn32BitValues = 0;
+Args[0].Constant.Num32BitValuesToSet = 1;
 
 Args[1].Type = D3D12_INDIRECT_ARGUMENT_TYPE_CONSTANT;
 Args[1].Constant.RootParameterIndex = 6;
+Args[1].Constant.DestOffsetIn32BitValues = 0;
+Args[1].Constant.Num32BitValuesToSet = 1;
 
 Args[2].Type = D3D12_INDIRECT_ARGUMENT_TYPE_VERTEX_BUFFER_VIEW;
-Args[2].VertexBuffer.VBSlot = 3;
+Args[2].VertexBuffer.Slot = 3;
 
-Args[3].Type = D3D12_INDIRECT_ARGUMENT_TYPE_DRAW_INSTANCED;
+Args[3].Type = D3D12_INDIRECT_ARGUMENT_TYPE_DRAW;
 
 D3D12_COMMAND_SIGNATURE_DESC ProgramDesc;
 ProgramDesc.ByteStride = 40;
@@ -145,17 +149,17 @@ Il layout di una singola struttura all'interno del buffer degli argomenti indire
 
 
 
-| Byte | Descrizione                     |
-|-------|---------------------------------|
-| 0:3   | Dati per il parametro root index 2 |
-| 4:7   | Dati per il parametro root index 6 |
-| 8:15  | Indirizzo virtuale di VB (64 bit)  |
-| 16:19 | Dimensioni di VB                         |
-| 20:23 | Stride VB                       |
-| 24:27 | VertexCountPerInstance          |
-| 28:31 | InstanceCount                   |
-| 32:35 | StartVertexLocation             |
-| 36:39 | StartInstanceLocation           |
+| Byte | Descrizione                               |
+|-------|-------------------------------------------|
+| 0:3   | Dati per l'indice del parametro radice 2           |
+| 4:7   | Dati per l'indice del parametro radice 6           |
+| 8:15  | Indirizzo virtuale di VB nello slot 3 (64 bit)  |
+| 16:19 | Dimensioni vb                                   |
+| 20:23 | Vb stride                                 |
+| 24:27 | VertexCountPerInstance                    |
+| 28:31 | InstanceCount                             |
+| 32:35 | StartVertexLocation                       |
+| 36:39 | StartInstanceLocation                     |
 
 
 
@@ -165,10 +169,10 @@ Il layout di una singola struttura all'interno del buffer degli argomenti indire
 
 <dl> <dt>
 
-[Esercitazioni video su DirectX Advanced Learning: eseguire l'abbattimento indiretto e asincrono della GPU](https://www.youtube.com/watch?v=fKD-VKJeeds)
+[Esercitazioni video sull'apprendimento avanzato di DirectX: Eseguire il culling indiretto e asincrono della GPU](https://www.youtube.com/watch?v=fKD-VKJeeds)
 </dt> <dt>
 
-[Disegno indiretto e eliminazione della GPU: procedura dettagliata del codice](indirect-drawing-and-gpu-culling-.md)
+[Disegno indiretto ed culling GPU: procedura dettagliata per il codice](indirect-drawing-and-gpu-culling-.md)
 </dt> <dt>
 
 [Rendering](rendering.md)
