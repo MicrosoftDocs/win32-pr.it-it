@@ -1,11 +1,11 @@
 - name: Domain Name System (DNS)
   href: dns-start-page.md
   items:
-    - name: Documenti standard DNS
+    - name: Documenti relativi agli standard DNS
       href: dns-standards-documents.md
     - name: Informazioni su DNS
       href: about-dns.md
-    - name: Riferimento DNS
+    - name: Informazioni di riferimento su DNS
       href: dns-reference.md
       items:
         - name: Callback DNS
@@ -124,6 +124,8 @@
               href: /windows/desktop/api/Windns/ns-windns-dns_addr_array
             - name: DNS_ATMA_DATA
               href: /windows/desktop/api/Windns/ns-windns-dns_atma_data
+            - name: DNS_CUSTOM_SERVER
+              href: /windows/win32/api/windns/ns-windns-dns_custom_server
             - name: DNS_DHCID_DATA
               href: /windows/desktop/api/Windns/ns-windns-dns_dhcid_data
             - name: DNS_DS_DATA
@@ -158,6 +160,8 @@
               href: /windows/win32/api/Windns/ns-windns-dns_query_cancel
             - name: DNS_QUERY_REQUEST
               href: /windows/win32/api/Windns/ns-windns-dns_query_request
+            - name: DNS_QUERY_REQUEST3
+              href: /windows/win32/api/windns/ns-windns-dns_query_request3
             - name: DNS_QUERY_RESULT
               href: /windows/win32/api/Windns/ns-windns-dns_query_result
             - name: DNS_RRSET
@@ -208,10 +212,10 @@
               href: /windows/desktop/api/windns/ns-windns-mdns_query_handle
             - name: MDNS_QUERY_REQUEST
               href: /windows/desktop/api/windns/ns-windns-mdns_query_request
-    - name: Provider WMI DNS
+    - name: DNS WMI Provider
       href: dns-wmi-provider.md
       items:
-        - name: Ricerca di ciò che è necessario nel provider WMI DNS
+        - name: Individuazione degli elementi necessari nel provider WMI DNS
           href: finding-what-you-need-in-the-dns-wmi-provider.md
         - name: Informazioni sulle risorse per il provider WMI DNS
           href: resource-information-for-the-dns-wmi-provider.md
@@ -226,7 +230,7 @@
             - name: Concetti relativi a DNS
               href: dns-concepts.md
               items:
-                - name: Spazio nome
+                - name: Spazio dei nomi
                   href: name-space.md
                 - name: Domini DNS
                   href: dns-domains.md
@@ -255,9 +259,9 @@
               href: managing-dns-servers.md
             - name: Gestione dei record di risorse DNS
               href: managing-dns-resource-records.md
-            - name: Gestione di Zone DNS
+            - name: Gestione delle zone DNS
               href: managing-dns-zones.md
-        - name: Riferimento del provider WMI DNS
+        - name: Informazioni di riferimento sul provider WMI DNS
           href: dns-wmi-provider-reference.md
           items:
             - name: Classi WMI DNS
@@ -274,12 +278,12 @@
                   items:
                     - name: Metodo ClearCache
                       href: microsoftdns-cache-clearcache.md
-                    - name: Getdistinguishname (metodo)
+                    - name: Metodo GetDistinguishedName
                       href: microsoftdns-cache-getdistinguishedname.md
                 - name: MicrosoftDNS_Domain
                   href: microsoftdns-domain.md
                   items:
-                    - name: Getdistinguishname (metodo)
+                    - name: Metodo GetDistinguishedName
                       href: microsoftdns-domain-getdistinguishedname.md
                 - name: MicrosoftDNS_Server
                   href: microsoftdns-server.md
@@ -290,7 +294,7 @@
                       href: microsoftdns-server-stopservice.md
                     - name: Metodo StartScavenging
                       href: microsoftdns-server-startscavenging.md
-                    - name: Getdistinguishname (metodo)
+                    - name: Metodo GetDistinguishedName
                       href: microsoftdns-server-getdistinguishedname.md
                 - name: MicrosoftDNS_Statistic
                   href: microsoftdns-statistic.md
@@ -308,7 +312,7 @@
                       href: microsoftdns-zone-createzone.md
                     - name: Metodo ForceRefresh
                       href: microsoftdns-zone-forcerefresh.md
-                    - name: Getdistinguishname (metodo)
+                    - name: Metodo GetDistinguishedName
                       href: microsoftdns-zone-getdistinguishedname.md
                     - name: Metodo PauseZone
                       href: microsoftdns-zone-pausezone.md
@@ -327,7 +331,7 @@
                   items:
                     - name: Metodo WriteBackRootHintDatafile
                       href: microsoftdns-roothints-writebackroothintdatafile.md
-                    - name: Getdistinguishname (metodo)
+                    - name: Metodo GetDistinguishedName
                       href: microsoftdns-roothints-getdistinguishedname.md
                 - name: MicrosoftDNS_ResourceRecord
                   href: microsoftdns-resourcerecord.md
@@ -533,11 +537,11 @@
         - name: Esempi di script del provider WMI DNS
           href: dns-wmi-provider-scripting-examples.md
           items:
-            - name: Esempi di provider WMI DNS-gestione di un server DNS
+            - name: Esempi di provider WMI DNS- Gestione di un server DNS
               href: dns-wmi-provider-samples-managing-a-dns-server.md
-            - name: Esempi di provider WMI DNS-gestione dei record di risorse DNS
+            - name: Esempi di provider WMI DNS- Gestione dei record di risorse DNS
               href: dns-wmi-provider-samples-managing-dns-resource-records.md
-            - name: Esempi di provider WMI DNS-gestione di Zone DNS
+            - name: Esempi di provider WMI DNS- Gestione delle zone DNS
               href: dns-wmi-provider-samples-managing-dns-zones.md
     - name: Glossario
       href: glossary-gly.md
