@@ -38,21 +38,21 @@
           items:
             - name: Come allineare il testo
               href: how-to-align-text.md
-            - name: Come aggiungere il supporto per più monitoraggi
+            - name: Come aggiungere il supporto per più monitor
               href: how-to-add-support-for-multiple-monitors.md
-            - name: Come assicurarsi che l'applicazione venga visualizzata correttamente su schermi con valori DPI elevati
+            - name: Come assicurarsi che l'applicazione venga visualizzata correttamente su schermi con valori DPI alti
               href: how-to-ensure-that-your-application-displays-properly-on-high-dpi-displays.md
-            - name: Assicurarsi che il testo sia visualizzato con la direzione di lettura corretta
+            - name: Verificare che il testo sia visualizzato con la direzione di lettura corretta
               href: how-to-ensure-text-is-displayed-with-the-correct-reading-direction.md
             - name: Come enumerare i tipi di carattere
               href: font-enumeration.md
-            - name: Come eseguire l'hit testing in un layout di testo
+            - name: Come eseguire l'hit testing su un layout di testo
               href: how-to-perform-hit-testing-on-a-text-layout.md
             - name: Come aggiungere oggetti inline a un layout di testo
               href: how-to-add-inline-objects-to-a-text-layout.md
             - name: Come aggiungere effetti di disegno client a un layout di testo
               href: how-to-add-custom-drawing-efffects-to-a-text-layout.md
-        - name: Glifi e esecuzioni di glifi
+        - name: Glyphs e Glyph Runs
           href: glyphs-and-glyph-runs.md
         - name: Set di caratteri personalizzati
           href: custom-font-sets-win10.md
@@ -75,7 +75,7 @@
             - name: DWriteCreateFactory
               href: /windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory
             - name: DWriteCoreCreateFactory (DWriteCore)
-              href: ./dwrite_core/nf-dwrite_core-dwritecorecreatefactory.md
+              href: /windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory
         - name: Enumerazioni DirectWrite
           href: enumerations.md
           items:
@@ -90,7 +90,7 @@
             - name: DWRITE_FACTORY_TYPE
               href: /windows/win32/api/dwrite/ne-dwrite-dwrite_factory_type
             - name: DWRITE_FACTORY_TYPE (DWriteCore)
-              href: ./dwrite/ne-dwrite-dwrite_factory_type.md
+              href: /windows/windows-app-sdk/api/win32/dwrite/ne-dwrite-dwrite_factory_type
             - name: DWRITE_FLOW_DIRECTION
               href: /windows/win32/api/dwrite/ne-dwrite-dwrite_flow_direction
             - name: DWRITE_FONT_AXIS_ATTRIBUTES
@@ -195,7 +195,7 @@
               href: /windows/win32/api/dwrite/ne-dwrite-dwrite_pixel_geometry
             - name: DWRITE_READING_DIRECTION
               href: /windows/win32/api/dwrite/ne-dwrite-dwrite_reading_direction
-            - name: DWRITE_RENDERING_MODE enumerazioni
+            - name: DWRITE_RENDERING_MODE di dati
               href: ./dwrite-rendering-mode-enumerations.md
               items:
                 - name: DWRITE_RENDERING_MODE (Windows 8 e versioni successive)
@@ -253,10 +253,10 @@
                 - name: Metodo SetTextAntialiasMode
                   href: /windows/win32/api/dwrite_1/nf-dwrite_1-idwritebitmaprendertarget1-settextantialiasmode
             - name: IDWriteBitmapRenderTarget2 (DWriteCore)
-              href: ./dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2.md
+              href: /windows/windows-app-sdk/api/win32/dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2
               items:
                 - name: Metodo GetBitmapData (DWriteCore)
-                  href: ./dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata.md
+                  href: /windows/windows-app-sdk/api/win32/dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata
             - name: IDWriteColorGlyphRunEnumerator
               href: idwritecolorglyphrunenumerator.md
               items:
@@ -361,7 +361,7 @@
             - name: IDWriteFactory4
               href: /windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory4
               items:
-                - name: Metodi ComputeGlyphOrigins
+                - name: Metodi computeGlyphOrigins
                   href: idwritefactory4-computeglyphorigins-overload.md
                   items:
                     - name: 'Metodo ComputeGlyphOrigins(DWRITE_GLYPH_RUN, DWRITE_MEASURING_MODE, D2D1_POINT_2F, DWRITE_MATRIX, D2D1_POINT_2F*)'
@@ -1397,7 +1397,7 @@
           href: structures.md
           items:
             - name: DWRITE_BITMAP_DATA_BGRA32 (DWriteCore)
-              href: ./dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32.md
+              href: /windows/windows-app-sdk/api/win32/dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32
             - name: DWRITE_CARET_METRICS
               href: /windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_caret_metrics
             - name: DWRITE_CLUSTER_METRICS
