@@ -1,28 +1,28 @@
 ---
 title: Parole chiave dinamiche del firewall
-description: Le API delle parole chiave dinamiche del firewall vengono usate per gestire gli indirizzi delle parole chiave dinamiche Windows Defender Firewall.
+description: Usare le API delle parole chiave dinamiche del firewall per gestire gli indirizzi delle parole chiave dinamiche Microsoft Defender Firewall.
 keywords:
 - Parole chiave dinamiche del firewall
 ms.topic: article
 ms.date: 05/17/2021
 ms.localizationpriority: low
-ms.openlocfilehash: e60526d8a7889af3173913774790bdd209121040
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 15e35f26b72ed8d685e8302f6222836507e5c6a3
+ms.sourcegitcommit: ae8c320a757558262167a4f4e385235b8d89035c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/24/2021
-ms.locfileid: "112681212"
+ms.locfileid: "112765535"
 ---
 # <a name="firewall-dynamic-keywords"></a>Parole chiave dinamiche del firewall
 
-Usare le API delle parole chiave dinamiche del firewall per gestire *gli indirizzi delle parole chiave dinamiche* in [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Un indirizzo di parola chiave dinamico viene usato per creare un set di indirizzi IP a cui possono fare riferimento una o più regole del firewall. Gli indirizzi delle parole chiave dinamiche supportano sia IPv4 che IPv6.
+Usare le API delle parole chiave dinamiche del firewall per gestire *gli indirizzi delle parole chiave* dinamiche in [Microsoft Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Un indirizzo di parola chiave dinamico viene usato per creare un set di indirizzi IP a cui possono fare riferimento una o più regole del firewall. Gli indirizzi delle parole chiave dinamiche supportano sia IPv4 che IPv6.
 
 > [!NOTE]
 > Per il contenuto di riferimento sulle API per le API introdotte in questo argomento, vedere Informazioni di riferimento [sulle parole chiave dinamiche del firewall.](firewall-dynamic-keywords-reference.md)
 
 ## <a name="operations-on-dynamic-keyword-addresses"></a>Operazioni sugli indirizzi delle parole chiave dinamiche
 
-Con le API delle parole chiave dinamiche del firewall è possibile eseguire le operazioni seguenti.
+Con le API delle parole chiave dinamiche del firewall, è possibile eseguire le operazioni seguenti.
 
 * Aggiungere indirizzi di parole chiave dinamiche
 * Eliminare gli indirizzi delle parole chiave dinamiche
@@ -40,21 +40,21 @@ Esistono due classi di indirizzi di parole chiave dinamici, come descritto nelle
 
 Il primo tipo è *AutoResolve,* dove il campo della parola chiave rappresenta un nome risolvibile e gli indirizzi IP non sono definiti al momento della creazione. 
 
-Questi oggetti hanno lo scopo di risolvere automaticamente gli indirizzi IP. Cio' non tramite un amministratore in fase di creazione dell'oggetto; né tramite il sistema operativo stesso. Un componente esterno al servizio firewall deve eseguire la risoluzione degli indirizzi IP per questi oggetti e aggiornarli in modo appropriato. L'implementazione di un componente di questo tipo non rientra nell'ambito di questo contenuto.
+Questi oggetti hanno lo scopo di risolvere automaticamente gli indirizzi IP. Cio' non tramite un amministratore in fase di creazione dell'oggetto; né tramite il sistema operativo stesso. Un componente esterno al servizio firewall deve eseguire la risoluzione degli indirizzi IP per questi oggetti e aggiornarli in modo appropriato. L'implementazione di tale componente non rientra nell'ambito di questo contenuto.
 
 Un indirizzo di parola chiave dinamico viene indicato come *AutoResolve* impostando il **flag** FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS_AUTO_RESOLVE nell'oggetto quando si chiama la [**funzione FWAddDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) Il *campo della* parola chiave deve essere usato per rappresentare il valore risolto, ovvero un nome di dominio completo &mdash; (FQDN) o un nome host. Il *campo addresses* deve inizialmente essere NULL per questi oggetti. Gli indirizzi IP di questi oggetti non saranno persistenti tra i cicli di avvio ed è consigliabile ri-valutare/popolare nuovamente gli indirizzi durante il ciclo di avvio successivo.
 
 > [!NOTE]
 > Gli oggetti di indirizzo delle parole chiave dinamiche AutoResolve attivano le notifiche in [**FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) e [**FWDeleteDynamicKeywordAddress0,**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)ma non [**in FWUpdateDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0)
 
-## <a name="non-autoresolve-dynamic-keyword-addresses"></a>Indirizzi di parole chiave dinamiche non AutoResolve
+## <a name="non-autoresolve-dynamic-keyword-addresses"></a>Indirizzi di parole chiave dinamiche non risolvibili automaticamente
 
 Il secondo tipo è *non AutoResolve*, dove il campo della parola chiave è qualsiasi stringa e gli indirizzi vengono definiti in fase di creazione. 
 
-Questi oggetti vengono usati per archiviare un set di indirizzi IP, subnet o intervalli. Il *campo della* parola chiave viene usato per praticità di gestione e può essere impostato su qualsiasi stringa. Al *momento della* creazione, il campo addresses deve essere diverso da NULL. Gli indirizzi per questi oggetti vengono resi persistenti tra i riavvii.
+Questi oggetti vengono usati per archiviare un set di indirizzi IP, subnet o intervalli. Il *campo della* parola chiave qui viene usato per praticità di gestione e può essere impostato su qualsiasi stringa. Al *momento della* creazione, il campo addresses deve essere diverso da NULL. Gli indirizzi per questi oggetti vengono resi persistenti tra i riavvii.
 
 > [!NOTE]
-> Gli oggetti di indirizzo delle parole chiave dinamiche non AutoResolve attivano le notifiche in [**FWAddDynamicKeywordAddress0,**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)e [**FWUpdateDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0)
+> Gli oggetti indirizzo dinamico non AutoResolve attivano le notifiche in [**FWAddDynamicKeywordAddress0,**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)e [**FWUpdateDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0)
 
 ## <a name="more-about-dynamic-keyword-addresses"></a>Altre informazioni sugli indirizzi delle parole chiave dinamiche 
 
