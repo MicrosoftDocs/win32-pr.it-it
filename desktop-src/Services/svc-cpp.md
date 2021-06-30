@@ -1,21 +1,21 @@
 ---
-description: Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere il codice alle sezioni precedute da a \_ .
+description: Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere codice alle sezioni precedute da TO \_ DO.
 ms.assetid: dc968bd2-0397-4cec-a825-f807037b4c14
 title: Svc.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57db06947be0143712568eb8a25e8700fc075c7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6388a51335883aa48d15a52667d89d2188ac4ea3
+ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316090"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113102120"
 ---
 # <a name="svccpp"></a>Svc.cpp
 
-Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere il codice alle sezioni precedute da `TO_DO` .
+Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere codice alle sezioni precedute da `TO_DO` .
 
-Quando si compila l'esempio, assicurarsi di eseguire il collegamento a Kernel32. lib e Advapi32. lib. Il file Sample. h viene generato quando si compila la DLL di sole risorse Sample.dll. Per ulteriori informazioni, vedere [Sample.MC](sample-mc.md).
+Quando si compila l'esempio, assicurarsi di collegarsi a Kernel32.lib e Advapi32.lib. Il file Sample.h viene generato durante la compilazione della DLL di sola risorsa, Sample.dll. Per altre informazioni, vedere [Sample.mc](sample-mc.md).
 
 
 ```C++
@@ -214,7 +214,7 @@ VOID SvcInit( DWORD dwArgc, LPTSTR *lpszArgv)
 
     if ( ghSvcStopEvent == NULL)
     {
-        ReportSvcStatus( SERVICE_STOPPED, NO_ERROR, 0 );
+        ReportSvcStatus( SERVICE_STOPPED, GetLastError(), 0 );
         return;
     }
 
