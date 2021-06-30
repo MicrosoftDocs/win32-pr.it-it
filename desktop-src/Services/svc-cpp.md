@@ -1,21 +1,21 @@
 ---
-description: Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere il codice alle sezioni precedute da a \_ .
+description: Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere codice alle sezioni precedute da TO \_ DO.
 ms.assetid: dc968bd2-0397-4cec-a825-f807037b4c14
 title: Svc.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57db06947be0143712568eb8a25e8700fc075c7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6388a51335883aa48d15a52667d89d2188ac4ea3
+ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316090"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113102120"
 ---
-# <a name="svccpp"></a><span data-ttu-id="3f779-104">Svc.cpp</span><span class="sxs-lookup"><span data-stu-id="3f779-104">Svc.cpp</span></span>
+# <a name="svccpp"></a><span data-ttu-id="3df7f-104">Svc.cpp</span><span class="sxs-lookup"><span data-stu-id="3df7f-104">Svc.cpp</span></span>
 
-<span data-ttu-id="3f779-105">Di seguito è riportato un esempio di servizio completo.</span><span class="sxs-lookup"><span data-stu-id="3f779-105">The following is a complete service sample.</span></span> <span data-ttu-id="3f779-106">Quando si usa questo codice come modello, è sufficiente aggiungere il codice alle sezioni precedute da `TO_DO` .</span><span class="sxs-lookup"><span data-stu-id="3f779-106">When using this code as a template, simply add code to the sections that are prefaced by `TO_DO`.</span></span>
+<span data-ttu-id="3df7f-105">Di seguito è riportato un esempio di servizio completo.</span><span class="sxs-lookup"><span data-stu-id="3df7f-105">The following is a complete service sample.</span></span> <span data-ttu-id="3df7f-106">Quando si usa questo codice come modello, è sufficiente aggiungere codice alle sezioni precedute da `TO_DO` .</span><span class="sxs-lookup"><span data-stu-id="3df7f-106">When using this code as a template, simply add code to the sections that are prefaced by `TO_DO`.</span></span>
 
-<span data-ttu-id="3f779-107">Quando si compila l'esempio, assicurarsi di eseguire il collegamento a Kernel32. lib e Advapi32. lib.</span><span class="sxs-lookup"><span data-stu-id="3f779-107">When building the sample, be sure to link with Kernel32.lib and Advapi32.lib.</span></span> <span data-ttu-id="3f779-108">Il file Sample. h viene generato quando si compila la DLL di sole risorse Sample.dll.</span><span class="sxs-lookup"><span data-stu-id="3f779-108">The file Sample.h is generated when building the resource-only DLL, Sample.dll.</span></span> <span data-ttu-id="3f779-109">Per ulteriori informazioni, vedere [Sample.MC](sample-mc.md).</span><span class="sxs-lookup"><span data-stu-id="3f779-109">For more information, see [Sample.mc](sample-mc.md).</span></span>
+<span data-ttu-id="3df7f-107">Quando si compila l'esempio, assicurarsi di collegarsi a Kernel32.lib e Advapi32.lib.</span><span class="sxs-lookup"><span data-stu-id="3df7f-107">When building the sample, be sure to link with Kernel32.lib and Advapi32.lib.</span></span> <span data-ttu-id="3df7f-108">Il file Sample.h viene generato durante la compilazione della DLL di sola risorsa, Sample.dll.</span><span class="sxs-lookup"><span data-stu-id="3df7f-108">The file Sample.h is generated when building the resource-only DLL, Sample.dll.</span></span> <span data-ttu-id="3df7f-109">Per altre informazioni, vedere [Sample.mc](sample-mc.md).</span><span class="sxs-lookup"><span data-stu-id="3df7f-109">For more information, see [Sample.mc](sample-mc.md).</span></span>
 
 
 ```C++
@@ -214,7 +214,7 @@ VOID SvcInit( DWORD dwArgc, LPTSTR *lpszArgv)
 
     if ( ghSvcStopEvent == NULL)
     {
-        ReportSvcStatus( SERVICE_STOPPED, NO_ERROR, 0 );
+        ReportSvcStatus( SERVICE_STOPPED, GetLastError(), 0 );
         return;
     }
 
@@ -354,11 +354,11 @@ VOID SvcReportEvent(LPTSTR szFunction)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="3f779-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="3f779-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3df7f-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="3df7f-110">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="3f779-111">Esempio di servizio completo</span><span class="sxs-lookup"><span data-stu-id="3f779-111">The Complete Service Sample</span></span>](the-complete-service-sample.md)
+[<span data-ttu-id="3df7f-111">Esempio di servizio completo</span><span class="sxs-lookup"><span data-stu-id="3df7f-111">The Complete Service Sample</span></span>](the-complete-service-sample.md)
 </dt> </dl>
 
  
