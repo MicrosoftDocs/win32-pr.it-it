@@ -1,29 +1,29 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento PageScaling. Questo elemento descrive le caratteristiche di ridimensionamento dell'output.
 ms.assetid: cf35bb37-bf67-4e86-bfef-9838606982a5
 title: Scalabilità di pagine
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e32beceead1c0dc867a2bb7b24d476ef05bf8820
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 795332f38da331a9f16b614154bf0a9270e613de
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997498"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119036"
 ---
 # <a name="pagescaling"></a>Scalabilità di pagine
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di ridimensionamento dell'output. Alcune opzioni di questa funzionalità richiedono che il consumer sia in grado di determinare le caratteristiche delle "dimensioni del contenuto dell'applicazione". In assenza della possibilità di determinare queste caratteristiche, il consumer deve impostare per impostazione predefinita l'opzione identity. Queste caratteristiche sono:
+Descrive le caratteristiche di ridimensionamento dell'output. Alcune opzioni di questa funzionalità richiedono che il consumer sia in grado di determinare le caratteristiche delle "dimensioni del contenuto dell'applicazione". In assenza della possibilità di determinare queste caratteristiche, il consumer deve impostare come predefinita l'opzione identity. Queste caratteristiche sono:
 
 
 
-|                          |                                                                                                                                                                                                                                                       |
+| Caratteristica di ridimensionamento                         | Descrizione                                                                                                                                                                                                                                                      |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimensioni dei supporti dell'applicazione   | Dimensioni dei supporti definiti dal layout dell'applicazione. Le dimensioni del supporto dell'applicazione possono corrispondere o meno a un oggetto PageMediaSize supportato dal consumer.<br/>                                                                          |
+| Dimensioni del supporto dell'applicazione   | Dimensioni dei supporti definiti dal layout dell'applicazione. Le dimensioni del supporto dell'applicazione possono corrispondere o meno a un oggetto PageMediaSize supportato dal consumer.<br/>                                                                          |
 | Dimensioni del contenuto dell'applicazione | Dimensioni dei supporti definiti dal layout dell'applicazione. Le dimensioni del supporto dell'applicazione possono corrispondere o meno a un oggetto PageMediaSize supportato dal consumer.<br/>                                                                          |
-| Dimensioni pagina al disagio dell'applicazione   | Offset e estensione dell'area di smarginazione dell'applicazione, una casella di overflow usata dall'applicazione per la registrazione e il layout, in relazione alle dimensioni dei supporti dell'applicazione. L'area di smarsata sarà grande o uguale alle dimensioni del supporto dell'applicazione.<br/> |
+| Application Bleed Size   | Offset ed estensione dell'area di smarginamento dell'applicazione, una casella di overflow utilizzata dall'applicazione per la registrazione e il layout, in relazione alle dimensioni del supporto dell'applicazione. L'area smarsata sarà maggiore o uguale alle dimensioni del supporto dell'applicazione.<br/> |
 
 
 
@@ -39,7 +39,7 @@ Descrive le caratteristiche di ridimensionamento dell'output. Alcune opzioni di 
 
 | Nome | Valore |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                                                                                    |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                                                                                    |
 | Prefisso di ambito <br/> | Pagina<br/>                                                                                                                                                                                       |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize. Le coordinate sono relative a PageImageableSize, dove l'origine di è relativa all'origine di PageImageableSize.<br/> |
 

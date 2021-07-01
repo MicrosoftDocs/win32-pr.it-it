@@ -1,6 +1,6 @@
 ---
-title: Istruzione do (ocidl. h)
-description: Eseguire continuamente una serie di istruzioni fino a quando l'espressione condizionale non riesce.
+title: Istruzione do (Ocidl.h)
+description: Eseguire una serie di istruzioni in modo continuo fino a quando l'espressione condizionale non ha esito negativo.
 ms.assetid: 07fd37b0-59c2-404b-a755-7178e4a058e4
 keywords:
 - Istruzione do HLSL
@@ -14,22 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c0ced3c9747f0bfbdf01847b21350a45b68aa6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
-ms.translationtype: HT
+ms.openlocfilehash: a1f019af77ef0021ad0574bf703ff2a2a52ac0f6
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235007"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118786"
 ---
 # <a name="do-statement"></a>Istruzione do
 
-Eseguire continuamente una serie di istruzioni fino a quando l'espressione condizionale non riesce.
+Eseguire una serie di istruzioni in modo continuo fino a quando l'espressione condizionale non ha esito negativo.
 
-
-
-|                                                                     |
-|---------------------------------------------------------------------|
-| \[*Attributo* \] do { *Block Statement*;} while ( *condizionale* ); |
+\[*Attributo* \] do { *Statement Block*; } while( *Conditional* );
 
 
 
@@ -48,7 +44,7 @@ Parametro facoltativo che controlla la modalità di compilazione dell'istruzione
 
 | Attributo | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fastopt   | Riduce il tempo di compilazione ma produce ottimizzazioni meno aggressive. Se si usa questo attributo, il compilatore non eseguirà l'unrolling dei cicli.<br/> Questo attributo ha effetto solo sulle destinazioni del modello dello shader che supportano le istruzioni di [interruzioni](dx-graphics-hlsl-break.md) . Questo attributo è disponibile nel modello shader [vs \_ 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) e nel [Modello Shader 3](dx-graphics-hlsl-sm3.md) e versioni successive. È particolarmente utile nel [Modello Shader 4](dx-graphics-hlsl-sm4.md) e versioni successive quando il compilatore compila i cicli. Per impostazione predefinita, il compilatore simula i cicli per valutare se è possibile eseguirne il rollback. Se non si desidera che il compilatore esegua l'unrolling dei cicli, utilizzare questo attributo per ridurre il tempo di compilazione.<br/> |
+| fastopt   | Riduce il tempo di compilazione, ma produce ottimizzazioni meno aggressive. Se si usa questo attributo, il compilatore non annulla la registrazione dei cicli.<br/> Questo attributo influisce solo sulle destinazioni del modello shader che supportano [le istruzioni di](dx-graphics-hlsl-break.md) interruzione. Questo attributo è disponibile nel modello shader [rispetto a \_ 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) e nel modello [shader 3](dx-graphics-hlsl-sm3.md) e versioni successive. È particolarmente utile nel modello [shader 4 e](dx-graphics-hlsl-sm4.md) versioni successive quando il compilatore compila i cicli. Il compilatore simula i cicli per impostazione predefinita per valutare se è possibile annullarne la registrazione. Se non si vuole che il compilatore srotoli i cicli, usare questo attributo per ridurre il tempo di compilazione.<br/> |
 
 
 
@@ -66,7 +62,7 @@ Una o più [istruzioni](dx-graphics-hlsl-statement-blocks.md).
 <span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Condizionale*
 </dt> <dd>
 
-[Espressione](dx-graphics-hlsl-expressions.md)condizionale. Il blocco di istruzioni viene eseguito prima della valutazione dell'espressione. Il ciclo viene terminato quando l'espressione restituisce false.
+Espressione [condizionale](dx-graphics-hlsl-expressions.md). Il blocco di istruzioni viene eseguito prima della valutazione dell'espressione. Il ciclo viene terminato quando l'espressione restituisce false.
 
 </dd> </dl>
 
@@ -76,11 +72,11 @@ Una o più [istruzioni](dx-graphics-hlsl-statement-blocks.md).
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Ocidl. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Ocidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 

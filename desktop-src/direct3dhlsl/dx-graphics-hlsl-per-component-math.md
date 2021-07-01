@@ -1,6 +1,6 @@
 ---
-title: Operazioni matematiche Per-Component
-description: Con HLSL è possibile programmare gli shader a livello di algoritmo.
+title: Per-Component operazioni matematiche
+description: Con HLSL è possibile programmare shader a livello di algoritmo.
 ms.assetid: a919df50-2d13-489d-9011-1137c997e121
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5ff30cd19b7821c9a059251e105f6acfa9cf961e
-ms.sourcegitcommit: fa5c081bf792b119a7bb92182cde1f85ca75967b
+ms.openlocfilehash: 2c8c9eeea1072c53915588ac0099998e76c0452a
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "104982819"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119596"
 ---
-# <a name="per-component-math-operations"></a>Operazioni matematiche Per-Component
+# <a name="per-component-math-operations"></a>Per-Component operazioni matematiche
 
-Con HLSL è possibile programmare gli shader a livello di algoritmo. Per comprendere il linguaggio, è necessario sapere come dichiarare variabili e funzioni, usare funzioni intrinseche, definire tipi di dati personalizzati e usare la semantica per connettere gli argomenti dello shader ad altri shader e alla pipeline.
+Con HLSL è possibile programmare shader a livello di algoritmo. Per comprendere il linguaggio, è necessario sapere come dichiarare variabili e funzioni, usare funzioni intrinseche, definire tipi di dati personalizzati e usare la semantica per connettere argomenti shader ad altri shader e alla pipeline.
 
-Dopo aver apprendere come creare shader in HLSL, è necessario ottenere informazioni sulle chiamate API, in modo da poter compilare uno shader per hardware specifico, inizializzare costanti shader e inizializzare altro stato della pipeline, se necessario.
+Dopo aver appreso come creare shader in HLSL, è necessario acquisire informazioni sulle chiamate API in modo da poter compilare uno shader per hardware specifico, inizializzare le costanti dello shader e inizializzare altri stati della pipeline, se necessario.
 
 -   [Tipo di vettore](#the-vector-type)
--   [Tipo matrice](#the-matrix-type)
-    -   [Ordinamento matrice](#matrix-ordering)
+-   [Tipo di matrice](#the-matrix-type)
+    -   [Ordinamento delle matrici](#matrix-ordering)
 -   [esempi](#examples)
 -   [Argomenti correlati](#related-topics)
 
@@ -43,7 +43,7 @@ double4 dVector;   // vector containing 4 doubles
 
 
 
-Il valore integer che segue immediatamente il tipo di dati è il numero di componenti sul vettore.
+L'intero immediatamente successivo al tipo di dati è il numero di componenti nel vettore.
 
 Gli inizializzatori possono anche essere inclusi nelle dichiarazioni.
 
@@ -57,7 +57,7 @@ double4 dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 
 
-In alternativa, è possibile usare il tipo di vettore per creare le stesse dichiarazioni:
+In alternativa, il tipo di vettore può essere usato per creare le stesse dichiarazioni:
 
 
 ```
@@ -69,14 +69,14 @@ vector <double, 4> dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 
 
-Il tipo Vector usa le parentesi angolari per specificare il tipo e il numero di componenti.
+Il tipo di vettore usa parentesi angolari per specificare il tipo e il numero di componenti.
 
-I vettori contengono fino a quattro componenti, a ognuno dei quali è possibile accedere utilizzando uno dei due set di denominazione seguenti:
+I vettori contengono fino a quattro componenti, ognuno dei quali è accessibile usando uno dei due set di denominazione seguenti:
 
--   Il set di posizioni: x, y, z, w
--   Set di colori: r, g, b, a
+-   Posizione impostata: x,y,z,w
+-   Set di colori: r,g,b,a
 
-Entrambe le istruzioni restituiscono il valore nel terzo componente.
+Entrambe queste istruzioni restituiscono il valore nel terzo componente.
 
 
 ```
@@ -105,7 +105,7 @@ temp = pos.xg  // NOT VALID because the position and color sets were used.
 
 
 
-La specifica di uno o più componenti vettoriali durante la lettura dei componenti è denominata swizzling. Ad esempio:
+La specifica di uno o più componenti vettoriali durante la lettura dei componenti è detta swizzling. Ad esempio:
 
 
 ```
@@ -121,7 +121,7 @@ f_2D = pos.yy;
 
 
 
-Il mascheramento controlla il numero di componenti scritti.
+La maschera controlla il numero di componenti scritti.
 
 
 ```
@@ -138,7 +138,7 @@ f_4D.wzyx = pos;
 
 
 
-Le assegnazioni non possono essere scritte nello stesso componente più di una volta. Quindi, il lato sinistro di questa istruzione non è valido:
+Le assegnazioni non possono essere scritte nello stesso componente più di una volta. Il lato sinistro di questa istruzione non è quindi valido:
 
 
 ```
@@ -147,7 +147,7 @@ f_4D.xx = pos.xy;   // cannot write to the same destination components
 
 
 
-Inoltre, gli spazi dei nomi di componente non possono essere misti. La scrittura di un componente non è valida:
+Inoltre, gli spazi dei nomi dei componenti non possono essere misti. Si tratta di un componente non valido:
 
 
 ```
@@ -156,7 +156,7 @@ f_4D.xg = pos.rgrg;    // invalid write: cannot mix component name spaces
 
 
 
-L'accesso a un vettore come scalare può accedere al primo componente del vettore. Le due istruzioni seguenti sono equivalenti.
+L'accesso a un vettore come scalare accederà al primo componente del vettore. Le due istruzioni seguenti sono equivalenti.
 
 
 ```
@@ -166,9 +166,9 @@ f_4D.a = pos.r * 5.0f;
 
 
 
-## <a name="the-matrix-type"></a>Tipo matrice
+## <a name="the-matrix-type"></a>Tipo di matrice
 
-Una matrice è una struttura di dati che contiene righe e colonne di dati. I dati possono essere qualsiasi tipo di dati scalari, tuttavia, ogni elemento di una matrice è dello stesso tipo di dati. Il numero di righe e colonne viene specificato con la stringa riga per colonna aggiunta al tipo di dati.
+Una matrice è una struttura di dati che contiene righe e colonne di dati. I dati possono essere di qualsiasi tipo scalare, tuttavia, ogni elemento di una matrice è dello stesso tipo di dati. Il numero di righe e colonne viene specificato con la stringa riga per colonna aggiunta al tipo di dati .
 
 
 ```
@@ -199,7 +199,7 @@ float2x2 fMatrix = { 0.0f, 0.1, // row 1
 
 
 
-In alternativa, il tipo di matrice può essere usato per creare le stesse dichiarazioni:
+In caso contrario, il tipo di matrice può essere usato per creare le stesse dichiarazioni:
 
 
 ```
@@ -210,7 +210,7 @@ matrix <float, 2, 2> fMatrix = { 0.0f, 0.1, // row 1
 
 
 
-Il tipo di matrice utilizza le parentesi acute per specificare il tipo, il numero di righe e il numero di colonne. In questo esempio viene creata una matrice a virgola mobile, con due righe e due colonne. È possibile utilizzare qualsiasi tipo di dati scalari.
+Il tipo matrice usa le parentesi angolari per specificare il tipo, il numero di righe e il numero di colonne. In questo esempio viene creata una matrice a virgola mobile, con due righe e due colonne. È possibile usare qualsiasi tipo di dati scalare.
 
 Questa dichiarazione definisce una matrice di valori float (numeri a virgola mobile a 32 bit) con due righe e tre colonne:
 
@@ -221,20 +221,20 @@ matrix <float, 2, 3> fFloatMatrix;
 
 
 
-Una matrice contiene valori organizzati in righe e colonne, a cui è possibile accedere utilizzando l'operatore di struttura "." seguito da uno dei due set di denominazione seguenti:
+Una matrice contiene valori organizzati in righe e colonne, a cui è possibile accedere usando l'operatore di struttura "." seguito da uno dei due set di denominazione seguenti:
 
--   Posizione in base zero della colonna di riga:
-    -   \_M00, \_ M01, \_ M02, \_ M03
-    -   \_M10, \_ M11, \_ M12, \_ M13
-    -   \_M20, \_ M21, \_ M22, \_ M23
-    -   \_M30, \_ M31, \_ M32, \_ M33
--   Posizione della colonna di riga in base 1:
+-   Posizione della colonna di riga in base zero:
+    -   \_m00, \_ m01, \_ m02, \_ m03
+    -   \_m10, \_ m11, \_ m12, \_ m13
+    -   \_m20, \_ m21, \_ m22, \_ m23
+    -   \_m30, \_ m31, \_ m32, \_ m33
+-   Posizione della colonna di riga in base uno:
     -   \_11, \_ 12, \_ 13, \_ 14
     -   \_21, \_ 22, \_ 23, \_ 24
     -   \_31, \_ 32, \_ 33, \_ 34
     -   \_41, \_ 42, \_ 43, \_ 44
 
-Ogni set di denominazione inizia con un carattere di sottolineatura seguito dal numero di riga e dal numero di colonna. La convenzione in base zero include anche la lettera "m" prima del numero di riga e colonna. Di seguito è riportato un esempio che usa i due set di denominazione per accedere a una matrice:
+Ogni set di denominazione inizia con un carattere di sottolineatura seguito dal numero di riga e dal numero di colonna. La convenzione in base zero include anche la lettera "m" prima del numero di riga e colonna. Ecco un esempio che usa i due set di denominazione per accedere a una matrice:
 
 
 ```
@@ -253,7 +253,7 @@ f_1D = matrix._22;  // read the value in row 2, column 2: 2.1
 
 
 
-Analogamente ai vettori, i set di denominazione possono usare uno o più componenti da uno dei due set di denominazione.
+Analogamente ai vettori, i set di denominazione possono usare uno o più componenti di entrambi i set di denominazione.
 
 
 ```
@@ -271,7 +271,7 @@ temp = fMatrix._22_11   // valid
 
 
 
-È possibile accedere a una matrice anche usando la notazione di accesso alla matrice, ovvero un set di indici in base zero. Ogni indice è racchiuso tra parentesi quadre. È possibile accedere a una matrice 4x4 con gli indici seguenti:
+È anche possibile accedere a una matrice usando la notazione di accesso alla matrice, ovvero un set di indici in base zero. Ogni indice è racchiuso tra parentesi quadre. È possibile accedere a una matrice 4x4 con gli indici seguenti:
 
 -   \[0 \] \[ 0 \] , \[ 0 \] \[ 1 \] , \[ 0 \] \[ 2 \] , \[ 0 \] \[ 3\]
 -   \[1 \] \[ 0 \] , \[ 1 \] \[ 1 \] , \[ 1 \] \[ 2 \] , \[ 1 \] \[ 3\]
@@ -293,7 +293,7 @@ temp = fMatrix[0][1] // single component read
 
 
 
-Si noti che l'operatore di struttura "." non viene usato per accedere a una matrice. La notazione di accesso alla matrice non può utilizzare swizzling per leggere più di un componente.
+Si noti che l'operatore di struttura "." non viene usato per accedere a una matrice. La notazione di accesso alle matrici non può usare lo swizzling per leggere più di un componente.
 
 
 ```
@@ -303,7 +303,7 @@ temp = fMatrix[0][0]_[0][1] // invalid, cannot read two components
 
 
 
-Tuttavia, l'accesso alla matrice può leggere un vettore a più componenti.
+Tuttavia, l'accesso alle matrici può leggere un vettore a più componenti.
 
 
 ```
@@ -314,7 +314,7 @@ temp = fMatrix[0] // read the first row
 
 
 
-Come per i vettori, la lettura di più di un componente della matrice è denominata swizzling. È possibile assegnare più di un componente, supponendo che venga utilizzato un solo spazio dei nomi. Tutte le assegnazioni valide sono:
+Come per i vettori, la lettura di più componenti della matrice è detta swizzling. È possibile assegnare più componenti, presupponendo che sia usato solo uno spazio dei nomi. Queste sono tutte assegnazioni valide:
 
 
 ```
@@ -331,7 +331,7 @@ tempMatrix._11_22_33 = worldMatrix._24_23_22;
 
 
 
-Il mascheramento controlla il numero di componenti scritti.
+La maschera controlla il numero di componenti scritti.
 
 
 ```
@@ -345,7 +345,7 @@ tempMatrix._m23_m00 = worldMatrix._m00_m11;
 
 
 
-Le assegnazioni non possono essere scritte nello stesso componente più di una volta. Quindi, il lato sinistro di questa istruzione non è valido:
+Le assegnazioni non possono essere scritte nello stesso componente più di una volta. Il lato sinistro di questa istruzione non è quindi valido:
 
 
 ```
@@ -355,7 +355,7 @@ tempMatrix._m00_m00 = worldMatrix._m00_m11;
 
 
 
-Inoltre, gli spazi dei nomi di componente non possono essere misti. La scrittura di un componente non è valida:
+Inoltre, gli spazi dei nomi dei componenti non possono essere misti. Si tratta di un componente non valido:
 
 
 ```
@@ -365,49 +365,88 @@ tempMatrix._11_m23 = worldMatrix._11_22;
 
 
 
-### <a name="matrix-ordering"></a>Ordinamento matrice
+### <a name="matrix-ordering"></a>Ordinamento delle matrici
 
-Per impostazione predefinita, l'ordine di compressione della matrice per i parametri uniformi è impostato su column-major. Ciò significa che ogni colonna della matrice viene archiviata in un unico registro costante. D'altra parte, una matrice di righe-principali imballa ogni riga della matrice in un unico registro costante. La compressione della matrice può essere modificata con la direttiva **\# pragmapack \_ Matrix** oppure con la parola chiave Major della **riga \_** o con la parola chiave **\_ Major della colonna** .
+L'ordine di tabulazione della matrice per i parametri uniformi è impostato su column-major per impostazione predefinita. Ciò significa che ogni colonna della matrice viene archiviata in un singolo registro costante. D'altra parte, una matrice row-major racchiude ogni riga della matrice in un singolo registro costante. La creazione di una matrice può essere modificata con la **\# direttiva pragmapack \_ matrix** o con la parola chiave **row \_ major** o **column \_ major.**
 
-I dati di una matrice vengono caricati in registri costanti dello shader prima dell'esecuzione di uno shader. Sono disponibili due opzioni per il modo in cui vengono letti i dati della matrice, in ordine di riga o in ordine principale. Per ordine di colonna si intende che ogni colonna della matrice verrà archiviata in un unico registro costante e l'ordine delle righe significa che ogni riga della matrice verrà archiviata in un unico registro costante. Si tratta di una considerazione importante per il numero di registri costanti utilizzati per una matrice.
+I dati in una matrice vengono caricati nei registri costanti dello shader prima dell'esecuzione di uno shader. Esistono due opzioni per la modalità di lettura dei dati della matrice: nell'ordine delle righe principali o nell'ordine delle colonne principali. L'ordine delle colonne principali indica che ogni colonna della matrice verrà archiviata in un singolo registro costante e l'ordine delle righe principali indica che ogni riga della matrice verrà archiviata in un unico registro costante. Si tratta di una considerazione importante per il numero di registri costanti usati per una matrice.
 
-Una matrice riga-principale è configurata come la seguente:
+Una matrice principale di riga è strutturata come la seguente:
 
+:::row:::
+    :::column:::
+        11<br/>
+        21<br/>
+        31<br/>
+        41<br/>
+    :::column-end:::
+    :::column:::
+        12<br/>
+        22<br/>
+        32<br/>
+        42<br/>
+    :::column-end:::
+    :::column:::
+        13<br/>
+        23<br/>
+        33<br/>
+        43<br/>
+    :::column-end:::
+    :::column:::
+        14<br/>
+        24<br/>
+        34<br/>
+        44<br/>
+    :::column-end:::
+:::row-end:::
 
-
-|     |     |     |     |
-|-----|-----|-----|-----|
-| 11  | 12  | 13  | 14  |
-| 21  | 22  | 23  | 24  |
-| 31  | 32  | 33  | 34  |
-| 41  | 42  | 43  | 44  |
 
 
 
  
 
-Una matrice column-major è configurata come la seguente:
+Una matrice di colonne principali è strutturata come segue:
 
 
+:::row:::
+    :::column:::
+        11<br/>
+        12<br/>
+        13<br/>
+        14<br/>
+    :::column-end:::
+    :::column:::
+        21<br/>
+        22<br/>
+        23<br/>
+        24<br/>
+    :::column-end:::
+    :::column:::
+        31<br/>
+        32<br/>
+        33<br/>
+        34<br/>
+    :::column-end:::
+    :::column:::
+        14<br/>
+        24<br/>
+        34<br/>
+        44<br/>
+    :::column-end:::
+:::row-end:::
 
-|     |     |     |     |
-|-----|-----|-----|-----|
-| 11  | 21  | 31  | 41  |
-| 12  | 22  | 32  | 42  |
-| 13  | 23  | 33  | 43  |
-| 14  | 24  | 34  | 44  |
 
 
 
  
 
-Ordine delle matrici row-major e column-major determinare l'ordine in cui i componenti della matrice vengono letti dagli input dello shader. Una volta scritti i dati in registri costanti, l'ordine della matrice non influisce sul modo in cui i dati vengono utilizzati o a cui si accede dal codice dello shader. Inoltre, le matrici dichiarate in un corpo dello shader non vengono compresse in registri costanti. L'ordine di compressione delle righe e delle colonne principali non ha alcun effetto sull'ordine di compressione dei costruttori (che segue sempre l'ordinamento della riga principale).
+L'ordinamento delle matrici row-major e column-major determina l'ordine in cui i componenti della matrice vengono letti dagli input dello shader. Dopo che i dati sono stati scritti in registri costanti, l'ordine della matrice non ha alcun effetto sul modo in cui i dati vengono usati o accessibili dal codice dello shader. Inoltre, le matrici dichiarate in un corpo dello shader non vengono suddivise in registri costanti. L'ordine di tabulazione delle righe principale e della colonna non influisce sull'ordine di creazione dei costruttori( che segue sempre l'ordinamento principale delle righe).
 
-L'ordine dei dati in una matrice può essere dichiarato in fase di compilazione oppure il compilatore Ordina i dati in fase di esecuzione per un uso più efficiente.
+L'ordine dei dati in una matrice può essere dichiarato in fase di compilazione oppure il compilatore ordinerà i dati in fase di esecuzione per un uso più efficiente.
 
 ## <a name="examples"></a>Esempio
 
-HLSL usa due tipi speciali, un tipo di vettore e un tipo matrice per semplificare la programmazione di grafica 2D e 3D. Ognuno di questi tipi contiene più di un componente. un vettore contiene fino a quattro componenti e una matrice contiene fino a 16 componenti. Quando i vettori e le matrici vengono usati nelle equazioni HLSL standard, la matematica eseguita è progettata per funzionare per ogni componente. Ad esempio, HLSL implementa questa operazione Multiply:
+HLSL usa due tipi speciali, un tipo vettore e un tipo matrice per semplificare la programmazione della grafica 2D e 3D. Ognuno di questi tipi contiene più di un componente. un vettore contiene fino a quattro componenti e una matrice contiene fino a 16 componenti. Quando vettori e matrici vengono usati nelle equazioni HLSL standard, i calcoli matematici eseguiti sono progettati per funzionare in base al componente. Ad esempio, HLSL implementa questa moltiplicazione:
 
 
 ```
@@ -416,7 +455,7 @@ float4 v = a*b;
 
 
 
-come moltiplicatore a quattro componenti. Il risultato è quattro scalari:
+come moltiplicazione di quattro componenti. Il risultato è quattro scalari:
 
 
 ```
@@ -430,9 +469,9 @@ v.w = a.w*b.w;
 
 
 
-Si tratta di quattro moltiplicazioni in cui ogni risultato viene archiviato in un componente separato di v. Si tratta di una moltiplicazione a quattro componenti. HLSL usa la matematica dei componenti che rende molto efficiente la scrittura degli shader.
+Si tratta di quattro moltiplicazioni in cui ogni risultato viene archiviato in un componente separato di v. Questa operazione è detta moltiplicazione di quattro componenti. HLSL usa operazioni matematiche dei componenti che rendono molto efficiente la scrittura di shader.
 
-Si tratta di un'operazione molto diversa da una moltiplicazione, che viene in genere implementata come prodotto a virgola, che genera un singolo scalare:
+Questo è molto diverso da una moltiplicazione che viene in genere implementata come prodotto punto che genera un singolo scalare:
 
 
 ```
@@ -441,7 +480,7 @@ v = a.x*b.x + a.y*b.y + a.z*b.z + a.w*b.w;
 
 
 
-Una matrice USA anche operazioni per componente in HLSL:
+Una matrice usa anche operazioni per componente in HLSL:
 
 
 ```
@@ -452,7 +491,7 @@ float3x3 mat3 = mat1*mat2;
 
 
 
-Il risultato è un moltiplicatore per componente delle due matrici (in contrapposizione a una matrice standard 3x3). Un moltiplicatore di matrice per componente produce il primo termine:
+Il risultato è una moltiplicazione per componente delle due matrici (a differenza di una moltiplicazione standard di matrice 3x3). La moltiplicazione di una matrice per componente restituisce questo primo termine:
 
 
 ```
@@ -461,7 +500,7 @@ mat3.m00 = mat1.m00 * mat2._m00;
 
 
 
-Si tratta di una differenza rispetto a una matrice 3x3 che produrrebbe il primo termine:
+Questo è diverso da una moltiplicazione di matrice 3x3 che restituisce questo primo termine:
 
 
 ```
@@ -474,7 +513,7 @@ mat.m00 = mat1._m00 * mat2._m00 +
 
 
 
-Le versioni di overload della funzione intrinseca Multiply gestiscono i casi in cui un operando è un vettore e l'altro operando è una matrice. Ad esempio: Vector Vector \* , vector \* Matrix, Matrix \* Vector e Matrix Matrix \* . Ad esempio:
+Le versioni in overload della funzione intrinseca multiply gestiscono i casi in cui un operando è un vettore e l'altro operando è una matrice. Ad esempio: \* vettore vettore, \* matrice vettoriale, \* vettore matrice e matrice \* matrice. Ad esempio:
 
 
 ```
@@ -510,9 +549,9 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-Questo esempio esegue il cast del vettore POS a un vettore di colonna usando il cast (float1x4). La modifica di un vettore mediante il cast o lo scambio dell'ordine degli argomenti forniti a Multiply equivale alla trasposizione della matrice.
+Questo esempio esegue il cast del vettore pos a un vettore di colonna usando il cast (float1x4). La modifica di un vettore tramite cast o lo scambio dell'ordine degli argomenti forniti per la moltiplicazione equivale a trasporre la matrice.
 
-La conversione del cast automatico fa in modo che le funzioni intrinseche Multiply e dot restituiscano gli stessi risultati usati in questo esempio:
+La conversione cast automatica fa in modo che le funzioni intrinseche multiply e dot restituiranno gli stessi risultati usati qui:
 
 
 ```
@@ -524,7 +563,7 @@ La conversione del cast automatico fa in modo che le funzioni intrinseche Multip
 
 
 
-Questo risultato della moltiplicazione è un \* vettore 4 4x1 = 1x1. Equivale a un prodotto a virgola:
+Questo risultato della moltiplicazione è un vettore 1x4 \* 4x1 = 1x1. Equivale a un prodotto punto:
 
 
 ```

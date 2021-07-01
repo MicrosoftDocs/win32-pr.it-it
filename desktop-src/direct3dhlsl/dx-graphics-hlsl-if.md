@@ -1,9 +1,9 @@
 ---
 title: Istruzione if
-description: Eseguire in modo condizionale una serie di istruzioni, in base alla valutazione dell'espressione condizionale.
+description: Eseguire in modo condizionale una serie di istruzioni in base alla valutazione dell'espressione condizionale.
 ms.assetid: ed4e347b-b5ee-40bc-a3f8-36e83ccf45b8
 keywords:
-- Istruzione If HLSL
+- Istruzione if HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e8a3c20e73b9783d39b4f4cbdb7c0be5b75fcda
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: df4a1f049526422f39c3529395481548943c7e84
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104046242"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118956"
 ---
 # <a name="if-statement"></a>Istruzione if
 
-Eseguire in modo condizionale una serie di istruzioni, in base alla valutazione dell'espressione condizionale.
+Eseguire in modo condizionale una serie di istruzioni in base alla valutazione dell'espressione condizionale.
 
-
-
-|                                                               |
-|---------------------------------------------------------------|
-| \[*Attributo* \] if ( *Conditional* ) { *Block Statement*;} |
+\[*Attributo* \] if ( *condizionale* ) { *Blocco di istruzioni*; }
 
 
 
@@ -62,7 +58,7 @@ Parametro facoltativo che controlla la modalità di compilazione dell'istruzione
 <td>Valutare solo un lato dell'istruzione if a seconda della condizione specificata.
 <blockquote>
 [!Note]<br />
-Quando si usa il modello di <a href="dx-graphics-hlsl-sm2.md">shader 2. x</a> o <a href="dx-graphics-hlsl-sm3.md">Shader 3,0</a>, ogni volta che si usa la creazione di rami dinamici si utilizzano le risorse. Quindi, se si usa una diramazione dinamica eccessivamente quando si hanno come destinazione questi profili, è possibile ricevere errori di compilazione.
+Quando si usa <a href="dx-graphics-hlsl-sm2.md">il modello shader 2.x</a> o il modello <a href="dx-graphics-hlsl-sm3.md">shader 3.0,</a>ogni volta che si usa la diramazione dinamica si usano le risorse. Pertanto, se si usa la diramazione dinamica in modo eccessivo quando si usano questi profili come destinazione, è possibile ricevere errori di compilazione.
 </blockquote>
 <br/></td>
 </tr>
@@ -82,7 +78,7 @@ Quando si usa il modello di <a href="dx-graphics-hlsl-sm2.md">shader 2. x</a> o 
 <span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Condizionale*
 </dt> <dd>
 
-[Espressione](dx-graphics-hlsl-expressions.md)condizionale. L'espressione viene valutata e, se true, viene eseguito il blocco di istruzioni.
+Espressione [condizionale](dx-graphics-hlsl-expressions.md). L'espressione viene valutata e, se true, viene eseguito il blocco di istruzioni.
 
 </dd> <dt>
 
@@ -95,7 +91,7 @@ Una o più [istruzioni HLSL](dx-graphics-hlsl-statement-blocks.md).
 
 ## <a name="remarks"></a>Commenti
 
-Quando il compilatore usa il metodo Branch per la compilazione di un'istruzione if, verrà generato codice che valuterà solo un lato dell'istruzione if a seconda della condizione specificata. Ad esempio, nell'istruzione if:
+Quando il compilatore usa il metodo branch per compilare un'istruzione if, genererà codice che valuterà solo un lato dell'istruzione if a seconda della condizione specificata. Ad esempio, nell'istruzione if:
 
 
 ```
@@ -107,9 +103,9 @@ Quando il compilatore usa il metodo Branch per la compilazione di un'istruzione 
 
 
 
-L'istruzione **if** ha un blocco Else implicito, equivalente a x = x. Poiché è stato indicato al compilatore di usare il metodo Branch con l'attributo Branch precedente, il codice compilato valuterà x ed eseguirà solo il lato che deve essere eseguito. Se x è zero, verrà eseguito il lato **else** e se è diverso da zero, verrà eseguito il lato **then** .
+**L'istruzione if** ha un blocco else implicito, che equivale a x = x. Poiché è stato detto al compilatore di usare il metodo branch con l'attributo branch precedente, il codice compilato valuterà x ed eseguirà solo il lato che deve essere eseguito; Se x è zero, verrà eseguito il lato **else** e se è diverso da zero verrà eseguito il **lato then.**
 
-Viceversa, se viene usato l'attributo **Flat** , il codice compilato valuterà entrambi i lati dell'istruzione **if** e sceglierà tra i due valori risultanti usando il valore originale di x. Di seguito è riportato un esempio di utilizzo dell'attributo Flat:
+Viceversa, se viene usato l'attributo **flatten,** il codice compilato valuterà entrambi i lati dell'istruzione **if** e sceglierà tra i due valori risultanti usando il valore originale di x. Di seguito è riportato un esempio di utilizzo dell'attributo flat:
 
 
 ```
@@ -121,11 +117,11 @@ Viceversa, se viene usato l'attributo **Flat** , il codice compilato valuterà e
 
 
 
-In alcuni casi, l'utilizzo degli attributi Branch o flat può generare un errore di compilazione. L'attributo Branch può non riuscire se uno dei lati dell'istruzione if contiene una funzione Gradient, ad esempio [**tex2D**](dx-graphics-hlsl-tex2d.md). L'attributo flat può non riuscire se entrambi i lati dell'istruzione If contengono un'istruzione di Accodamento del flusso o qualsiasi altra istruzione con effetti collaterali.
+In alcuni casi l'uso del ramo o dell'appiattimento degli attributi può generare un errore di compilazione. L'attributo branch può avere esito negativo se entrambi i lati dell'istruzione if contengono una funzione di sfumatura, ad esempio [**tex2D.**](dx-graphics-hlsl-tex2d.md) L'attributo flat può avere esito negativo se entrambi i lati dell'istruzione if contengono un'istruzione di accodamento del flusso o qualsiasi altra istruzione con effetti collaterali.
 
-Un'istruzione **if** può inoltre utilizzare un blocco else facoltativo. Se l'espressione **if** è true, il codice nel blocco di istruzioni associato all'istruzione if viene elaborato. In caso contrario, il blocco di istruzioni associato al blocco else facoltativo viene elaborato.
+**Un'istruzione if** può anche usare un blocco else facoltativo. Se **l'espressione if** è true, viene elaborato il codice nel blocco di istruzioni associato all'istruzione if. In caso contrario, viene elaborato il blocco di istruzioni associato al blocco else facoltativo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
 title: GetRenderTargetSamplePosition
-description: Ottiene la posizione di campionamento (x, y) per un indice di esempio specificato.
+description: Ottiene la posizione di campionamento (x,y) per un determinato indice di campionamento.
 ms.assetid: 07f14d1c-4fe5-4838-acce-d664cdc641e6
 keywords:
-- HLSL GetRenderTargetSamplePosition
+- GetRenderTargetSamplePosition HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3b0cd944b175522ab7d722ae791f3548c6633b71
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c31bc829f8990517ddbea8be7c25eead413ab666
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103717776"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120576"
 ---
 # <a name="getrendertargetsampleposition"></a>GetRenderTargetSamplePosition
 
-Ottiene la posizione di campionamento (x, y) per un indice di esempio specificato.
+Ottiene la posizione di campionamento (x,y) per un determinato indice di campionamento.
 
-
-
-|                                                                                  |
-|----------------------------------------------------------------------------------|
-| float<2> GetRenderTargetSamplePosition (in int<1> index<br/>); |
+float<2> GetRenderTargetSamplePosition( in int<1> Index<br/>);
 
 
 
@@ -48,30 +44,30 @@ Ottiene la posizione di campionamento (x, y) per un indice di esempio specificat
 
 ## <a name="return-value"></a>Valore restituito
 
-Posizione (x, y) dell'esempio specificato.
+Posizione (x,y) dell'esempio specificato.
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa funzione e [**GetRenderTargetSampleCount**](dx-graphics-hlsl-getrendertargetsamplecount.md) per trovare il numero e la posizione dei percorsi di campionamento per una destinazione di rendering.
+Usare questa funzione e [**GetRenderTargetSampleCount**](dx-graphics-hlsl-getrendertargetsamplecount.md) per individuare il numero e la posizione delle posizioni di campionamento per una destinazione di rendering.
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                        | Supportato |
 |---------------------------------------------------------------------|-----------|
-| [Shader Model 4](dx-graphics-hlsl-sm4.md) e versioni successive shader Models | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | no        |
+| [Modello shader 4 e](dx-graphics-hlsl-sm4.md) modelli di shader superiori | yes       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | No        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | No        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)           | No        |
 
 
 
  
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 

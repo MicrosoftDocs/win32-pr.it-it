@@ -1,6 +1,6 @@
 ---
 title: Append (oggetto Stream-Output DirectX HLSL)
-description: Accodare i dati di output geometry-shader a un flusso esistente.
+description: Aggiungere dati di output geometry shader a un flusso esistente.
 ms.assetid: 7df51383-7fc7-4a6f-aaa2-6c929f0443a3
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 97ab88961b22529accb4402fc2bd095ede5275c1
-ms.sourcegitcommit: 477b1efe7d9c2f91d5f2ac588a20edf348b1c734
+ms.openlocfilehash: 19d767f3c501cc42e21bbc44a196ba08cd6f1883
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "104335812"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120186"
 ---
 # <a name="append-directx-hlsl-stream-output-object"></a>Append (oggetto Stream-Output DirectX HLSL)
 
-Accodare i dati di output geometry-shader a un flusso esistente.
+Aggiungere dati di output geometry shader a un flusso esistente.
 
-
-
-|                            |
-|----------------------------|
-| Append ( *StreamDataType*); |
+Append( *StreamDataType*);
 
 
 
@@ -36,7 +32,7 @@ Accodare i dati di output geometry-shader a un flusso esistente.
 
 | Elemento                                                                                                                             | Descrizione                                                                                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="StreamDataType"></span><span id="streamdatatype"></span><span id="STREAMDATATYPE"></span>**StreamDataType**<br/> | Descrizione dell'input di dati. Questa descrizione deve corrispondere al parametro del modello di oggetto Stream denominato [DataType](dx-graphics-hlsl-so-type.md).<br/> |
+| <span id="StreamDataType"></span><span id="streamdatatype"></span><span id="STREAMDATATYPE"></span>**StreamDataType**<br/> | Descrizione dell'input di dati. Questa descrizione deve corrispondere al parametro del modello stream-object denominato [DataType](dx-graphics-hlsl-so-type.md).<br/> |
 
 
 
@@ -48,7 +44,7 @@ nessuno
 
 ## <a name="example"></a>Esempio
 
-Questo frammento di codice (dell' [esempio CubeMapGS](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx)) Mostra un esempio parziale di aggiunta di primitive di striping a un oggetto Stream-output.
+Questo frammento di codice (dall'esempio [CubeMapGS)](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx)illustra un esempio parziale di aggiunta di primitive di striscia triangolare a un oggetto di output del flusso.
 
 
 ```
@@ -75,18 +71,18 @@ void GS_CubeMap( triangle GS_CUBEMAP_IN input[3],
 
 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | yes       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -96,7 +92,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Stream-oggetto di output](dx-graphics-hlsl-so-type.md)
+[Oggetto Stream-Output](dx-graphics-hlsl-so-type.md)
 </dt> </dl>
 
  

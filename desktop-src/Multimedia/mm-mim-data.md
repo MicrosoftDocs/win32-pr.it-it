@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_MIM_DATA (mmsystem. h)
-description: Il \_ \_ messaggio di dati MIM mm viene inviato a una finestra quando un messaggio MIDI completo viene ricevuto da un dispositivo di input MIDI.
+title: MM_MIM_DATA messaggio (Mmsystem.h)
+description: Il messaggio MM \_ MIM \_ DATA viene inviato a una finestra quando un messaggio MIDI completo viene ricevuto da un dispositivo di input MIDI.
 ms.assetid: 9c580e48-78f3-4914-bdea-393823fb8482
 keywords:
-- MM_MIM_DATA messaggi multimediali di Windows
+- MM_MIM_DATA messaggio Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa8c015ba5e08302f7567fe8f474bedca74d3064
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2a79a5a4ab6b0422705fe737ba3da4a6fd4f923
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047969"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119696"
 ---
-# <a name="mm_mim_data-message"></a>MM \_ \_ messaggio dati MIM
+# <a name="mm_mim_data-message"></a>Messaggio MM \_ MIM \_ DATA
 
-Il messaggio di **\_ \_ dati MIM mm** viene inviato a una finestra quando un messaggio MIDI completo viene ricevuto da un dispositivo di input MIDI.
+Il **messaggio MM \_ MIM \_ DATA** viene inviato a una finestra quando un messaggio MIDI completo viene ricevuto da un dispositivo di input MIDI.
 
 
 ```C++
@@ -48,16 +48,16 @@ Handle per il dispositivo di input MIDI che ha ricevuto il messaggio MIDI.
 <span id="lMidiMessage"></span><span id="lmidimessage"></span><span id="LMIDIMESSAGE"></span>*lMidiMessage*
 </dt> <dd>
 
-Messaggio MIDI ricevuto. Il messaggio viene compresso in un valore parola doppia come indicato di seguito:
+Messaggio MIDI ricevuto. Il messaggio viene inserito in un valore doubleword come indicato di seguito:
 
 
 
-| Requisito | Valore |
+| Requisito | Valore | Descrizione |
 |-----------|-----------------|-----------------------------------------------------|
-| Parola alta | Byte di ordine superiore | Non usato.                                           |
-|           | Byte di ordine inferiore  | Contiene un secondo byte di dati MIDI (quando necessario).  |
-| Parola bassa  | Byte di ordine superiore | Contiene il primo byte dei dati MIDI (quando necessario). |
-|           | Byte di ordine inferiore  | Contiene lo stato MIDI.                           |
+| Parola alta | Byte di ordine elevato | Non usato.                                           |
+|           | Byte in ordine ridotto  | Contiene un secondo byte di dati MIDI (quando necessario).  |
+| Parola bassa  | Byte di ordine elevato | Contiene il primo byte di dati MIDI (se necessario). |
+|           | Byte in ordine ridotto  | Contiene lo stato MIDI.                           |
 
 
 
@@ -69,13 +69,13 @@ I due byte di dati MIDI sono facoltativi, a seconda del byte di stato MIDI.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Lo stato dell'esecuzione dei messaggi MIDI ricevuti da una porta di input MIDI è disabilitato; ogni messaggio viene espanso in modo da includere il byte di stato MIDI.
+Lo stato di esecuzione dei messaggi MIDI ricevuti da una porta di input MIDI è disabilitato. ogni messaggio viene espanso per includere il byte di stato MIDI.
 
-Questo messaggio non viene inviato quando viene ricevuto un messaggio esclusivo del sistema MIDI. Nessun timestamp disponibile con questo messaggio. Per i dati di input con timestamp, è necessario utilizzare i messaggi inviati alle funzioni di callback.
+Questo messaggio non viene inviato quando viene ricevuto un messaggio esclusivo di sistema MIDI. Con questo messaggio non è disponibile alcun timestamp. Per i dati di input con timestamp, è necessario usare i messaggi inviati alle funzioni di callback.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,15 +85,15 @@ Questo messaggio non viene inviato quando viene ricevuto un messaggio esclusivo 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 
-[MIDI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
+[MidI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Messaggi MIDI](midi-messages.md)

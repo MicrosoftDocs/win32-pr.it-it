@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2781d173eb4a1c18a661495d9fb55a0cced81921
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 847194c08b865542cff1deb20c8518a7e4b62ab9
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998328"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119046"
 ---
 # <a name="function-declaration-syntax"></a>Sintassi di dichiarazione di funzione
 
 Le funzioni HLSL vengono dichiarate con la sintassi seguente.
 
-
-
-|                                                                                                                                          |
-|------------------------------------------------------------------------------------------------------------------------------------------|
-| \[*StorageClass* \] \[clipplanes() \] \[ precise \] Return Value \_ *Name* ( \[ *ArgumentList* \] ) : \[ *Semantic* \] { \[ *StatementBlock* \] }; |
+\[*StorageClass* \] \[clipplanes() \] \[ precise \] Return Value \_ *Name* ( \[ *ArgumentList* \] ) : \[ *Semantic* \] { \[ *StatementBlock* \] };
 
 
 
@@ -41,10 +37,10 @@ Modificatore che ridefinisce una dichiarazione di funzione. **inline** è attual
 
 </dd> <dt>
 
-<span id="Clipplanes"></span><span id="clipplanes"></span><span id="CLIPPLANES"></span>*Clipplanes*
+<span id="Clipplanes"></span><span id="clipplanes"></span><span id="CLIPPLANES"></span>*Clipplan*
 </dt> <dd>
 
-Elenco facoltativo dei piani di ritaglio, ovvero fino a 6 piani di ritaglio specificati dall'utente. Si tratta di un meccanismo alternativo per [SV \_ ClipDistance](dx-graphics-hlsl-semantics.md) che funziona [sul](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) livello di funzionalità 9 \_ x e versioni successive.
+Elenco facoltativo dei piani di ritaglio, ovvero fino a 6 piani di ritaglio specificati dall'utente. Si tratta di un meccanismo alternativo [per SV \_ ClipDistance](dx-graphics-hlsl-semantics.md) che funziona [sul](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) livello di funzionalità 9 x e versioni \_ successive.
 
 </dd> <dt>
 
@@ -72,25 +68,25 @@ Stringa facoltativa che identifica l'utilizzo previsto dei dati restituiti (vede
 <span id="StatementBlock"></span><span id="statementblock"></span><span id="STATEMENTBLOCK"></span>*StatementBlock*
 </dt> <dd>
 
-Istruzioni [facoltative](dx-graphics-hlsl-statement-blocks.md) che costituiscono il corpo della funzione. Una funzione definita senza un corpo viene chiamata prototipo di funzione. Il corpo di una funzione prototipo deve essere definito altrove prima di poter chiamare la funzione.
+Istruzioni [facoltative](dx-graphics-hlsl-statement-blocks.md) che costituiscono il corpo della funzione. Una funzione definita senza corpo è denominata prototipo di funzione. Il corpo di una funzione prototipo deve essere definito altrove prima di poter chiamare la funzione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il tipo restituito può essere uno qualsiasi di questi [tipi HLSL](dx-graphics-hlsl-data-types.md).
+Il tipo restituito può essere uno qualsiasi di [questi tipi HLSL.](dx-graphics-hlsl-data-types.md)
 
 ## <a name="remarks"></a>Commenti
 
-La sintassi in questa pagina descrive quasi tutti i tipi di funzione HLSL, inclusi vertex shader, pixel shader e funzioni helper. Anche se un geometry shader viene implementato anche con una funzione , la relativa sintassi è un po' più complessa, quindi esiste una pagina separata che definisce una dichiarazione di funzione geometry shader (vedere [Oggetto Geometry-Shader (DirectX HLSL).](dx-graphics-hlsl-geometry-shader.md)
+La sintassi in questa pagina descrive quasi tutti i tipi di funzione HLSL, inclusi vertex shader, pixel shader e funzioni helper. Anche se un geometry shader viene implementato anche con una funzione, la relativa sintassi è un po' più complessa, quindi esiste una pagina separata che definisce una dichiarazione di funzione [geometry shader (vedere Oggetto Geometry-Shader (DirectX HLSL)](dx-graphics-hlsl-geometry-shader.md)).
 
-È possibile eseguire l'overload di una funzione purché le sia stata data una combinazione univoca di tipi di parametro e/o ordine dei parametri. HLSL implementa anche una serie di funzioni intrinseche [**o incorporate.**](dx-graphics-hlsl-intrinsic-functions.md)
+È possibile eseguire l'overload di una funzione purché le sia data una combinazione univoca di tipi di parametro e/o ordine dei parametri. HLSL implementa anche una serie di funzioni intrinseche [**o incorporate.**](dx-graphics-hlsl-intrinsic-functions.md)
 
-È possibile specificare piani di ritaglio specifici dell'utente con **l'attributo clipplanes.** Le finestre applicano questi piani di ritaglio a tutte le primitive disegnate. **L'attributo clipplanes** funziona come [ \_ ClipDistance SV,](dx-graphics-hlsl-semantics.md) ma funziona con tutte le funzionalità hardware [di livello](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) 9 x \_ e successive. Per altre informazioni, vedi [Piani di ritaglio utente nell'hardware a livello di funzionalità 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
+È possibile specificare piani di ritaglio specifici dell'utente con **l'attributo clipplanes.** Windows applica questi piani di ritaglio a tutte le primitive disegnate. **L'attributo clipplanes** funziona come [SV \_ ClipDistance,](dx-graphics-hlsl-semantics.md) ma funziona su tutti i livelli di funzionalità [hardware](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) 9 x e \_ versioni successive. Per altre informazioni, vedere [Piani di ritaglio utente nell'hardware del livello di funzionalità 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
 
 ## <a name="examples"></a>Esempio
 
-Questo esempio è da BasicHLSL10.fx [dell'esempio BasicHLSL10.](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)
+Questo esempio deriva da BasicHLSL10.fx [dell'esempio BasicHLSL10.](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)
 
 
 ```hlsl

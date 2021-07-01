@@ -1,33 +1,18 @@
 ---
-description: La documentazione di Network Monitor in Platform Software Development Kit (SDK) presenta una propria nomenclatura.
+description: La Network Monitor in Platform Software Development Kit (SDK) ha la propria nomenclatura.
 ms.assetid: 56d82bd2-a7ee-435e-bcc9-b2cdad4f1d62
 title: Glossario (Network Monitor)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 289ccb1176a03a680147bad6708ca165c08d1dbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8764b3e2c892fed6f16529b5fe1459450c4fbd2c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305892"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120426"
 ---
 # <a name="glossary-network-monitor"></a>Glossario (Network Monitor)
 
-La documentazione di Network Monitor in Platform Software Development Kit (SDK) presenta una propria nomenclatura. Molti di questi termini hanno familiarità con gli sviluppatori, ma hanno definizioni nuove o modificate nell'ambiente di sviluppo Network Monitor. Leggere attentamente l'elenco di definizioni seguente per comprendere il significato dei termini.
+La Network Monitor in Platform Software Development Kit (SDK) ha la propria nomenclatura. Molti di questi termini hanno familiarità con gli sviluppatori, ma hanno definizioni nuove o modificate nell'Network Monitor di sviluppo. Leggere attentamente l'elenco di definizioni seguente per comprendere il significato dei termini.
 
-
-
-|                                                                                                                                                                          |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [A](a.md)[B](b.md)[C](c.md)[d](d.md)[E](e.md)[F](f.md)[G](g.md)[H](h.md) i J K L [M](m.md)[N](n.md) O [P](p.md) Q R [S](s.md)[T](t.md) U V [W](w.md) X Y Z |
-
-
-
- 
-
- 
-
- 
-
-
-
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) I J K L [M](m.md) [N](n.md) O [P](p.md) Q R [S](s.md) T [U](t.md) V [W](w.md) X Y Z

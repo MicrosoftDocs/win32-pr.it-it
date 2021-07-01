@@ -1,6 +1,6 @@
 ---
-title: Modelli shader rispetto ai profili shader
-description: Modelli shader rispetto ai profili shader
+title: Modelli di shader e profili shader
+description: Modelli di shader e profili shader
 ms.assetid: 6224f05e-20b1-42ea-96fb-63dd0edb720e
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,67 +9,59 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 93a8d5c02662bff285c13461e8d716b03b8553b0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 963e68d5875c3ee512e7e0d6ee7c243db72f4400
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856677"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119616"
 ---
-# <a name="shader-models-vs-shader-profiles"></a>Modelli shader rispetto ai profili shader
+# <a name="shader-models-vs-shader-profiles"></a>Modelli di shader e profili shader
 
-Il linguaggio di ombreggiatura di alto livello per DirectX implementa una serie di modelli shader. Con HLSL è possibile creare shader programmabili di tipo C per la pipeline Direct3D. Ogni modello di shader si basa sul funzionalità del modello prima di esso, implementando una maggiore funzionalità con meno restrizioni.
+Il linguaggio di ombreggiatura di alto livello per DirectX implementa una serie di modelli di shader. Con HLSL è possibile creare shader programmabili simili a C per la pipeline Direct3D. Ogni modello shader si basa sulle funzionalità del modello precedente, implementando più funzionalità con meno restrizioni.
 
-Il modello di shader 1 è stato avviato con DirectX 8 ed è stato incluso il livello di assembly e le istruzioni di tipo C. Questo modello presenta molte limitazioni dovute all'hardware Shader programmabile. Il modello di shader 2 e 3 si espande notevolmente sul numero di istruzioni e le costanti shader possono usare. Sono molto più potenti rispetto al modello di shader 1, ma presentano comunque alcune delle limitazioni esistenti del primo modello di shader.
+Il modello shader 1 è stato avviato con DirectX 8 e include istruzioni a livello di assembly e di tipo C. Questo modello presenta molte limitazioni causate dall'hardware dello shader programmabile in anticipo. Il modello di shader 2 e 3 è notevolmente espanso in base al numero di istruzioni e gli shader costanti possono usare. Sono molto più potenti del modello shader 1, ma presentano comunque alcune delle limitazioni esistenti del primo modello shader.
 
-A partire da Windows Vista, Shader Model 4 è una riprogettazione completa. Consente istruzioni e costanti illimitate (all'interno dei vincoli hardware del computer), dispone di oggetti basati su modelli per rendere più semplice il campionamento della trama e più efficiente e presenta il minor numero di restrizioni di qualsiasi modello di shader. Richiede tuttavia la Windows Driver Model che è disponibile solo nel sistema operativo Windows Vista (o versioni successive).
+A partire da Windows Vista, il modello shader 4 è una riprogettazione completa. Consente istruzioni e costanti illimitate (all'interno dei vincoli hardware del computer), dispone di oggetti modellati per rendere il campionamento delle trame più pulito e più efficiente e presenta il numero minimo di restrizioni di qualsiasi modello shader. Richiede tuttavia il Windows Driver Model disponibile solo nel sistema operativo Windows Vista (o versioni successive).
 
 ## <a name="shader-profiles"></a>Profili shader
 
-Un profilo shader è la destinazione per la compilazione di uno shader; Questa tabella elenca i profili shader supportati da ogni modello shader.
+Un profilo shader è la destinazione per la compilazione di uno shader. Questa tabella elenca i profili di shader supportati da ogni modello di shader.
 
 
 
-|                                                    |                                                                                                                                                                                                                                                                                                       |
+| Modello shader                                                   | Profili shader                                                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Modello di shader                                       | Profili shader                                                                                                                                                                                                                                                                                       |
-| [Modello Shader 1](dx-graphics-hlsl-sm1.md)         | vs \_ 1 \_ 1                                                                                                                                                                                                                                                                                              |
-| [Modello Shader 2](dx-graphics-hlsl-sm2.md)         | PS \_ 2 \_ 0, PS \_ 2 \_ x, vs \_ 2 \_ 0, vs \_ 2 \_ x, PS \_ 4 \_ 0 \_ level \_ 9 0 \_ , PS \_ 4 \_ 0 \_ level \_ 9 \_ 1, PS \_ 4 \_ 0 \_ level \_ 9 \_ 3, vs \_ 4 \_ 0 \_ level \_ 9 \_ 0, vs \_ 4 \_ 0 \_ level \_ 9 \_ 1, vs \_ 4 \_ 0 \_ level \_ 9 \_ 3, lib \_ 4 \_ 0 \_ level \_ 9 \_ 1, lib \_ 4 \_ 0 \_ \_ \_ Level 9 3                                                                      |
-| [Modello Shader 3](dx-graphics-hlsl-sm3.md)         | PS \_ 3 \_ 0, vs \_ 3 \_ 0                                                                                                                                                                                                                                                                                    |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)         | cs \_ 4 \_ 0, GS \_ 4 \_ 0, PS \_ 4 \_ 0, vs \_ 4 \_ 0, cs \_ 4 \_ 1, GS \_ 4 \_ 1, PS \_ 4 \_ 1, vs \_ 4 \_ 1, lib \_ 4 \_ 0, lib \_ 4 \_ 1                                                                                                                                                                                                  |
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md) | cs \_ 5 \_ 0, DS \_ 5 \_ 0, GS \_ 5 \_ 0, HS \_ 5 \_ 0, PS \_ 5 \_ 0, vs \_ 5 \_ 0, lib \_ 5 \_ 0 (sebbene GS \_ 4 \_ 0, GS \_ 4 \_ 1, PS \_ 4 \_ 0, PS \_ 4 \_ 1, vs \_ 4 \_ 0 e vs \_ 4 \_ 1 sono stati introdotti nel modello di Shader 4,0, Shader Model 5 aggiunge il supporto per i profili shader per i buffer strutturati e i buffer degli indirizzi byte).<br/> |
-| [Modello shader 6](shader-model-6-0.md)             | cs \_ 6 \_ 0, DS \_ 6 0 \_ , GS \_ 6 \_ 0, HS \_ 6 \_ 0, PS \_ 6 \_ 0, vs \_ 6 \_ 0, lib \_ 6 \_ 0                                                                                                                                                                                                                                 |
+| [Modello shader 1](dx-graphics-hlsl-sm1.md)         | vs \_ 1 \_ 1                                                                                                                                                                                                                                                                                              |
+| [Modello shader 2](dx-graphics-hlsl-sm2.md)         | ps \_ 2 \_ 0, ps \_ 2 \_ x, vs \_ 2 \_ 0, vs \_ 2 \_ x, ps \_ 4 \_ 0 \_ level \_ 9 \_ 0, ps \_ 4 \_ 0 level \_ \_ 9 \_ 1, ps \_ 4 \_ 0 level \_ \_ 9 \_ 3, vs \_ 4 \_ 0 level \_ \_ \_ 9 0, vs \_ \_ 4 0 \_ level \_ \_ 9 1, vs \_ 4 \_ 0 level \_ \_ 9 \_ 3, lib \_ 4 \_ 0 level \_ \_ 9 \_ 1, lib \_ 4 \_ 0 level \_ \_ 9 \_ 3                                                                      |
+| [Modello shader 3](dx-graphics-hlsl-sm3.md)         | ps \_ 3 \_ 0, vs \_ 3 \_ 0                                                                                                                                                                                                                                                                                    |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)         | cs \_ 4 \_ 0, gs \_ 4 \_ 0, ps \_ 4 \_ 0, vs \_ 4 \_ 0, cs \_ 4 \_ 1, gs \_ 4 \_ 1, ps \_ 4 \_ 1, vs \_ 4 \_ 1, lib \_ 4 \_ 0, lib \_ 4 \_ 1                                                                                                                                                                                                  |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md) | cs \_ 5 \_ 0, ds \_ 5 \_ 0, gs \_ 5 \_ 0, hs \_ 5 \_ 0, ps \_ 5 \_ 0, vs \_ 5 \_ 0, lib \_ 5 \_ 0 (anche se gs \_ 4 \_ 0, gs \_ 4 \_ 1, ps \_ 4 \_ 0, ps 4 1, vs 4 0 e vs 4 1 \_ \_ \_ \_ \_ \_ sono stati introdotti nel modello shader 4.0, il modello shader 5 aggiunge il supporto a questi profili shader per buffer strutturati e buffer di indirizzi byte).<br/> |
+| [Modello shader 6](shader-model-6-0.md)             | cs \_ 6 \_ 0, ds \_ 6 \_ 0, gs \_ 6 \_ 0, hs \_ 6 \_ 0, ps \_ 6 \_ 0, vs \_ 6 \_ 0, lib \_ 6 \_ 0                                                                                                                                                                                                                                 |
+
+Differenze tra Direct3D 9 e Direct3D 10:
+
+- Direct3D 9 ha introdotto i modelli di shader 1, 2 e 3.
+- Direct3D 10 ha introdotto il modello shader 4.
+- Direct3D 10.1 ha introdotto il modello shader 4.1.
 
 
 
  
 
+## <a name="effect-profiles"></a>Profili di effetto
 
+Un profilo di effetto è la destinazione per la compilazione di un effetto/shader. Questa tabella elenca i profili di effetto supportati da ogni versione di Direct3D.
 
-|                                                                                                                                                                                                                                |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Differenze tra Direct3D 9 e Direct3D 10:<br/> In Direct3D 9 sono stati introdotti i modelli shader 1, 2 e 3.<br/> Direct3D 10 ha introdotto il modello di Shader 4.<br/> Direct3D 10,1 ha introdotto il modello di Shader 4,1.<br/> |
+Differenze tra Direct3D 9 e Direct3D 10:
 
-
-
- 
-
-## <a name="effect-profiles"></a>Profili effetti
-
-Un profilo di effetto è la destinazione per la compilazione di un effetto/shader; Questa tabella elenca i profili degli effetti supportati da ogni versione di Direct3D.
-
-
-
-|                                                                                                                                                                                                                                                                                                                                                               |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Differenze tra Direct3D 9 e Direct3D 10:<br/> In Direct3D 9 è stato introdotto Effect-framework Profiles FX \_ 1 \_ 0 e FX \_ 2 \_ 0.<br/> In Direct3D 10 è stato introdotto un effetto del profilo del Framework FX \_ 4 \_ 0.<br/> Direct3D 10,1 ha introdotto Effect-framework profile FX \_ 4 \_ 1.<br/> In Direct3D 11 è stato introdotto Effect-framework profile FX \_ 5 \_ 0.<br/> |
-
-
-
- 
+- Direct3D 9 ha introdotto i profili del framework degli effetti fx \_ 1 \_ 0 e fx \_ 2 \_ 0.
+- Direct3D 10 ha introdotto effect-framework profile fx \_ 4 \_ 0.
+- Direct3D 10.1 ha introdotto effect-framework profile fx \_ 4 \_ 1.
+- Direct3D 11 ha introdotto effect-framework profile fx \_ 5 \_ 0.
 
 > [!Note]  
-> Questi profili degli effetti legacy sono deprecati.
+> Questi profili di effetti legacy sono deprecati.
 
  
 
@@ -77,7 +69,7 @@ Un profilo di effetto è la destinazione per la compilazione di un effetto/shade
 
 <dl> <dt>
 
-[Riferimento per HLSL](dx-graphics-hlsl-reference.md)
+[Informazioni di riferimento per HLSL](dx-graphics-hlsl-reference.md)
 </dt> </dl>
 
  

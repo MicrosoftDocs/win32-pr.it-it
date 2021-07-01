@@ -1,23 +1,23 @@
 ---
 title: Puntatori (RPC)
-description: Informazioni su un puntatore comune RPC, definito come tutto ciò che è diverso da puntatori a interfaccia e puntatori di conteggio dei byte.
+description: Informazioni su un puntatore comune RPC, definito come qualsiasi elemento diverso da puntatori a interfaccia e puntatori al conteggio dei byte.
 ms.assetid: 9756E637-BCBB-48F1-B962-25AF2C917921
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e41a0b6208745b543a9efe2fe22ab090046778
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ade676610a310e230eb6fa89dd666996bb82040f
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406594"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119706"
 ---
 # <a name="pointers-rpc"></a>Puntatori (RPC)
 
 ## <a name="common-pointers"></a>Puntatori comuni
 
-Un puntatore comune è definito come qualsiasi elemento diverso da puntatori a interfaccia e puntatori di conteggio dei byte.
+Un puntatore comune è definito come qualsiasi elemento diverso da puntatori a interfaccia e puntatori al conteggio dei byte.
 
-Per la descrizione sono disponibili due layout possibili:
+Esistono due possibili layout per la descrizione:
 
 ``` syntax
 pointer_type<1> pointer_attributes<1>
@@ -31,46 +31,46 @@ pointer_type<1> pointer_attributes<1>
 offset_to_complex_description<2>
 ```
 
-Il primo formato viene usato se il puntatore è un puntatore a un tipo semplice o a un puntatore di stringa non disized. Il secondo formato viene usato per i puntatori a tutti gli altri tipi. Gli attributi del puntatore indicano il layout della descrizione con il \_ flag FC SIMPLE \_ POINTER.
+Il primo formato viene usato se il puntatore è un puntatore a un tipo semplice o a un puntatore di stringa non di tipo grande. Il secondo formato viene usato per i puntatori a tutti gli altri tipi. Gli attributi del puntatore indicano il layout della descrizione con il \_ flag FC SIMPLE \_ POINTER.
 
 Il \_ tipo di<1> è uno dei seguenti.
 
 
 
-| Carattere di formattazione | Descrizione                              |
+| Formatta carattere | Descrizione                              |
 |------------------|------------------------------------------|
 | FC \_ RP           | Puntatore di riferimento.                     |
 | FC \_ UP           | Puntatore univoco.                        |
 | FC \_ FP           | Puntatore completo.                          |
-| FC \_ OP           | Puntatore univoco in un'interfaccia a oggetti. |
+| FC \_ OP           | Puntatore univoco in un'interfaccia oggetto. |
 
 
 
  
 
-Il motivo per distinguere FC OP è semantico: nelle interfacce oggetto, un puntatore in,out deve essere liberato prima di annullare ilmarshaling di un nuovo oggetto e assegnare un nuovo valore \_ \[ del \] puntatore.
+Il motivo per distinguere FC OP è semantico: nelle interfacce oggetto, un puntatore in uscita deve essere liberato prima di eseguire \_ l'unmarsshaling di un nuovo oggetto e assegnare un nuovo valore del \[ \] puntatore.
 
-Gli attributi del<1> possono avere \_ uno qualsiasi dei flag illustrati nella tabella seguente.
+Gli \_ attributi<1> possono avere uno qualsiasi dei flag illustrati nella tabella seguente.
 
 
 
-| Flag | Descrizione              |                                                                                                                                                                                                                                       |
+| Attributo | Flag              | Descrizione                                                                                                                                                                                                                                      |
 |------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 01   | FC \_ \_ ALLOCA TUTTI I \_ NODI | Il puntatore fa parte di uno schema di allocazione (tutti \_ i nodi).                                                                                                                                                                   |
+| 01   | FC \_ ALLOCATE \_ ALL \_ NODES | Il puntatore fa parte di uno schema di allocazione allocate(tutti \_ i nodi).                                                                                                                                                                   |
 | 02   | FC \_ DONT \_ FREE           | Puntatore allocate(don't \_ free).                                                                                                                                                                                                      |
-| 04   | FC \_ ALLOCATO \_ NELLO \_ STACK   | Puntatore il cui riferimento è allocato nello stack dello stub.                                                                                                                                                                            |
-| 08   | PUNTATORE SEMPLICE FC \_ \_      | Puntatore a un tipo semplice o a una stringa conforme non di formato. Questo flag impostato indica il layout della descrizione del puntatore come layout del puntatore semplice descritto in precedenza, in caso contrario viene indicato il formato del descrittore con l'offset. |
-| 10   | DEREF \_ DEL \_ PUNTATORE FC       | Puntatore che deve essere dereferenziato prima di gestire il riferimento del puntatore.                                                                                                                                                           |
+| 04   | FC \_ ALLOCED \_ ON \_ STACK   | Puntatore il cui riferimento viene allocato nello stack dello stub.                                                                                                                                                                            |
+| 08   | PUNTATORE \_ FC \_ SEMPLICE      | Puntatore a un tipo semplice o a una stringa non conforme. Questo flag impostato indica il layout della descrizione del puntatore come layout del puntatore semplice descritto in precedenza. In caso contrario, viene indicato il formato del descrittore con l'offset. |
+| 10   | DEREF \_ \_ PUNTATORE FC       | Puntatore che deve essere dereferenziato prima di gestire il riferimento del puntatore.                                                                                                                                                           |
 
 
 
  
 
-I puntatori con size \_ is(), max \_ is(), length \_ is(), last \_ is() e/o first is() applicati hanno descrizioni di stringa di formato identiche a un puntatore a una matrice del tipo appropriato \_ (ad esempio, \_ \_ una matrice conforme se size is() viene applicata, una matrice variabile conforme se size is() e length vengono \_ applicate).
+I puntatori con size \_ is(), max \_ is(), length \_ is(), last \_ is() e/o first is() applicati hanno descrizioni di stringa di formato identiche a un puntatore a una matrice del tipo appropriato \_ (ad esempio, \_ \_ una matrice conforme se size is() viene applicato, una matrice variabile conforme se size is() e length viene \_ applicato).
 
 ## <a name="interface-pointers"></a>Puntatori a interfaccia
 
-Una stringa di formato del puntatore a interfaccia a oggetti ha uno dei due formati, a seconda che l'IID corrispondente sia noto al compilatore.
+Una stringa di formato del puntatore a interfaccia a oggetti ha uno dei due formati seguenti, a seconda che l'IID corrispondente sia noto al compilatore.
 
 Un puntatore a interfaccia con un IID costante ha la descrizione seguente:
 
@@ -79,7 +79,7 @@ FC_IP FC_CONSTANT_IID
 iid<16>
 ```
 
-L'iid<16> è l'IID effettivo per il puntatore a interfaccia. L'iid viene scritto nella stringa di formato in un formato identico alla struttura dei dati GUID: long, short, short, char \[ 8 \] .
+L'iid<16> parte è l'IID effettivo per il puntatore di interfaccia. L'iid viene scritto nella stringa di formato in un formato identico alla struttura dei dati GUID: long, short, short, char \[ 8 \] .
 
 La descrizione di un puntatore a interfaccia con iid \_ is() applicata è:
 
@@ -88,11 +88,11 @@ FC_IP FC_PAD
 iid_description<> 
 ```
 
-La descrizione dell'iid<> descrittore di correlazione e ha 4 o 6 byte a seconda che \_ [**sia usato /robust.**](/windows/desktop/Midl/-robust) Il valore calcolato dalla **funzione NdrComputeConformance** è il puntatore IID.
+La descrizione iid<> descrittore di correlazione e ha 4 o 6 byte a seconda che \_ [**/robust**](/windows/desktop/Midl/-robust) sia o meno utilizzato. Il valore calcolato dalla **funzione NdrComputeConformance** è il puntatore IID.
 
 ## <a name="byte-count-pointers"></a>Puntatori di conteggio byte
 
-I puntatori di conteggio dei byte sono correlati a uno speciale attributo di ottimizzazione denominato \[ **byte \_ count** \] . Vengono usati i formati seguenti:
+I puntatori al conteggio dei byte sono correlati a uno speciale attributo di ottimizzazione denominato \[ **byte \_ count** \] . Vengono usati i formati seguenti:
 
 ``` syntax
 FC_BYTE_COUNT_POINTER 
@@ -100,7 +100,7 @@ simple_type<1>
 byte_count_description<> 
 ```
 
-–e -
+–and:
 
 ``` syntax
 FC_BYTE_COUNT_POINTER 
@@ -109,9 +109,9 @@ byte_count_description<>
 pointee_description<>
 ```
 
-La descrizione del<> byte è un descrittore di correlazione e ha 4 o 6 byte a seconda che \_ \_ [**/robust**](/windows/desktop/Midl/-robust) sia o meno usato.
+La descrizione del<> byte è un descrittore di correlazione e ha 4 o 6 byte a seconda che \_ \_ [**/robust**](/windows/desktop/Midl/-robust) sia o meno utilizzato.
 
-La descrizione \_ del<> pointee è una descrizione del tipo di puntato.
+La descrizione \_<> pointee è una descrizione del tipo pointee.
 
  
 

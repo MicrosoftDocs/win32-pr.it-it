@@ -13,26 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 525abf6d815d2073ee39a6bc6a5a81120cf652ee
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 876c69f3ecfcf1ee1c8391ccc503b2316056b37a
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104976194"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119586"
 ---
 # <a name="return-statement"></a>Istruzione return
 
 Un'istruzione return segnala la fine di una funzione.
 
-
-
-|                   |
-|-------------------|
-| \[valore restituito \] ; |
+valore \[ restituito \] ;
 
 
 
- 
+ 
 
 L'istruzione return più semplice restituisce il controllo dalla funzione al programma chiamante. non restituisce alcun valore.
 
@@ -46,7 +42,7 @@ void main()
 
 
 
-Tuttavia, un'istruzione Return può restituire uno o più valori. In questo esempio viene restituito un valore letterale:
+Tuttavia, un'istruzione return può restituire uno o più valori. Questo esempio restituisce un valore letterale:
 
 
 ```
@@ -67,7 +63,7 @@ return  light.enabled = true ;
 
 
 
-In questo esempio viene restituito un vettore a quattro componenti costruito da una variabile locale e un valore letterale.
+Questo esempio restituisce un vettore a quattro componenti costruito da una variabile locale e da un valore letterale.
 
 
 ```
@@ -76,7 +72,7 @@ return  float4(color.rgb, 1) ;
 
 
 
-In questo esempio viene restituito un vettore a quattro componenti costruito dal risultato restituito da una funzione intrinseca, insieme ai valori letterali.
+Questo esempio restituisce un vettore a quattro componenti costruito dal risultato restituito da una funzione intrinseca, insieme ai valori letterali.
 
 
 ```
@@ -88,7 +84,7 @@ float4 func(float2 a: POSITION): COLOR
 
 
 
-In questo esempio viene restituita una struttura che contiene uno o più membri.
+In questo esempio viene restituita una struttura contenente uno o più membri.
 
 
 ```
@@ -109,16 +105,16 @@ VS_OUTPUT VertexShader_Tutorial_1(float4 inPos : POSITION )
 
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 
 [Funzioni (DirectX HLSL)](dx-graphics-hlsl-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

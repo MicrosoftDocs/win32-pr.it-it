@@ -1,22 +1,22 @@
 ---
 title: Filtro lettore ASF WM (Windows Media Format 11 SDK)
-description: Informazioni sul filtro lettore ASF WM.
+description: Informazioni sul filtro lettore ASF WM per Windows Media Format 11 SDK. Esaminare le informazioni sui filtri e vedere gli argomenti correlati.
 ms.assetid: 3d5ca88a-86bd-4d84-b4f4-782564ced58d
 keywords:
 - Windows Media Format SDK,Lettore ASF WM
 - DirectShow, Lettore ASF WM
-- Filtri QASF, Lettore ASF WM
+- filtri QASF, Lettore ASF WM
 - Lettore ASF WM
 - Advanced Systems Format (ASF),Lettore ASF WM
 - ASF (Advanced Systems Format),Lettore ASF WM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 421ab634a0d68837b22961b37005c5670d73e5fa
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 26bde36b1b2cfa7644d6e75d8d1ff96260b2e457
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444282"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119646"
 ---
 # <a name="wm-asf-reader-filter-windows-media-format-11-sdk"></a>Filtro lettore ASF WM (Windows Media Format 11 SDK)
 
@@ -27,7 +27,7 @@ Quando viene specificato il nome di un file ASF o di un URL, il lettore ASF WM l
 
  
 
-La tabella seguente contiene informazioni sul filtro Lettore ASF WM, ad esempio le interfacce e i tipi di supporti supportati.
+La tabella seguente contiene informazioni sul filtro Lettore ASF WM, ad esempio le interfacce e i tipi di supporto supportati.
 
 
 
@@ -51,7 +51,7 @@ La tabella seguente contiene informazioni sul filtro Lettore ASF WM, ad esempio 
 
 ## <a name="remarks"></a>Commenti
 
-Il lettore ASF WM implementa parzialmente le interfacce **IWMReaderAdvanced** e **IWMReaderAdvanced2** per consentire alle applicazioni di accedere ai metodi in formato informativo sull'oggetto lettore. L'implementazione del filtro passa semplicemente le chiamate all'interfaccia sull'oggetto reader. I metodi di streaming non vengono implementati perché il filtro deve avere il controllo completo sul processo di streaming. Vengono **implementati i metodi IWMReaderAdvanced** e **IWMReaderAdvanced2** seguenti:
+Il lettore ASF WM implementa parzialmente le interfacce **IWMReaderAdvanced** e **IWMReaderAdvanced2** per consentire alle applicazioni di accedere ai metodi in formato informativo sull'oggetto reader. L'implementazione del filtro passa semplicemente le chiamate all'interfaccia sull'oggetto reader. I metodi di streaming non vengono implementati perché il filtro deve avere il controllo completo sul processo di streaming. Vengono **implementati i metodi IWMReaderAdvanced** e **IWMReaderAdvanced2** seguenti:
 
 -   [**IWMReaderAdvanced::GetStatistics**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-getstatistics)
 -   [**IWMReaderAdvanced::SetClientInfo**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setclientinfo)

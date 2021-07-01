@@ -4,16 +4,16 @@ ms.assetid: 692cce3b-ebf5-4a49-8c37-48c8ef6caee7
 title: provider (elemento)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56ca319b686101766dacd79821ac6d9caf859cf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d96b3015dddbcff74c09f77a1b6245d052fe034
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753898"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118446"
 ---
 # <a name="provider-element"></a>provider (elemento)
 
-Specifica un provider di traccia (ETW o WPP) per [MFTrace](mftrace.md).
+Specifica un provider di traccia (ETW o WPP) per [MFTrace.](mftrace.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -42,7 +42,7 @@ Specifica un provider di traccia (ETW o WPP) per [MFTrace](mftrace.md).
 
 | Elemento                               |
 |---------------------------------------|
-| [**parola chiave**](keyword.md)<br/> |
+| [**Parola chiave**](keyword.md)<br/> |
 
 
 
@@ -58,25 +58,26 @@ keyword+
 
 | Elemento                                   |
 |-------------------------------------------|
-| [**provider**](providers.md)<br/> |
+| [**Provider**](providers.md)<br/> |
 
 
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-
-
-|              |     |
-|--------------|-----|
-| Può essere vuoto | No  |
-
-
+:::row:::
+    :::column:::
+        Può essere vuoto
+    :::column-end:::
+    :::column span="2":::
+        No
+    :::column-end:::
+:::row-end:::
 
 ## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 
-[File di configurazione MFTrace](mftrace-configuration-file.md)
+[File di configurazione di MFTrace](mftrace-configuration-file.md)
 </dt> </dl>
 
  

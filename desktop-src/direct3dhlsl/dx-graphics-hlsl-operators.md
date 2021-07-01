@@ -9,44 +9,43 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 69fc29f366fa781483edb5fd4653674b387fd156
-ms.sourcegitcommit: 37fb32f6150b6ca1db6c52d68a553ec2c8c0879a
-ms.translationtype: HT
+ms.openlocfilehash: d7a44fe02983038658247fedaec7122f09306548
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "104472342"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119606"
 ---
 # <a name="operators"></a>Operatori
 
-Le espressioni sono sequenze di [variabili](dx-graphics-hlsl-variable-syntax.md) e valori letterali punteggiati da [operatori](dx-graphics-hlsl-statement-blocks.md). Gli operatori determinano il modo in cui le variabili e i valori letterali vengono combinati, confrontati, selezionati e così via. Gli operatori includono:
+Le espressioni sono sequenze di [variabili](dx-graphics-hlsl-variable-syntax.md) e valori letterali punteggiati dagli [operatori](dx-graphics-hlsl-statement-blocks.md). Gli operatori determinano il modo in cui le variabili e i valori letterali vengono combinati, confrontati, selezionati e così via. Gli operatori includono:
 
 
 
-|                                                                                 |                                                                    |
+| Nome operatore                                                                                | Operatori                                                                   |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| Nome operatore                                                                   | Operatori                                                          |
-| [Operatori additivi e moltiplicatori](#additive-and-multiplicative-operators) | +, -, \*, /, %                                                     |
-| [Operatore array](#array-operator)                                               | \[i\]                                                              |
+| [Operatori additivi e moltiplicativi](#additive-and-multiplicative-operators) | +, -, \*, /, %                                                     |
+| [Operatore Array](#array-operator)                                               | \[i\]                                                              |
 | [Operatori di assegnazione](#assignment-operators)                                   | =, +=, -=, \*=, /=, %=                                             |
-| [Cast binari](#binary-casts)                                                   | Regole c per le funzioni float e int, C o HLSL per bool     |
-| [Operatori bit per bit](#bitwise-operators)                                         | ~,  <<,  >>, &, \| , ^,  <<=,  >>=, &=, \| =, ^ = |
-| [Operatori matematici booleani](#boolean-math-operators)                               | & &, \| \| ,?:                                                      |
-| [Operatore cast](#cast-operator)                                                 | tipo                                                             |
+| [Cast binari](#binary-casts)                                                   | Regole C per float e int, regole C o intrinseci HLSL per bool     |
+| [Operatori bit per bit](#bitwise-operators)                                         | ~, <<, >>, &, \| , ^, <<=, >>=, &=, \| =, ^= |
+| [Operatori matematici booleani](#boolean-math-operators)                               | & &, , \| \| ?:                                                      |
+| [Operatore Cast](#cast-operator)                                                 | (tipo)                                                             |
 | [Operatore virgola](#comma-operator)                                               | ,                                                                  |
-| [Operatori di confronto](#comparison-operators)                                   | <, >, = =,! =, <=, >=                                   |
+| [Operatori di confronto](#comparison-operators)                                   | <, >, ==, !=, <=, >=                                   |
 | [Operatori di prefisso o suffisso](#prefix-or-postfix-operators)                     | ++, --                                                             |
 | [Operatore Structure](#structure-operator)                                       | .                                                                  |
 | [Operatori unari](#unary-operators)                                             | !, -, +                                                            |
 
 
 
- 
+ 
 
-Molti operatori sono per componente, il che significa che l'operazione viene eseguita in modo indipendente per ogni componente di ogni variabile. Ad esempio, per una singola variabile componente è stata eseguita un'operazione. D'altra parte, una variabile a quattro componenti esegue quattro operazioni, una per ogni componente.
+Molti operatori sono per componente, pertanto l'operazione viene eseguita in modo indipendente per ogni componente di ogni variabile. Ad esempio, una singola variabile componente ha un'operazione eseguita. D'altra parte, una variabile a quattro componenti ha quattro operazioni eseguite, una per ogni componente.
 
-Tutti gli operatori che eseguono un'operazione sul valore, ad esempio + e \* , funzionano per componente.
+Tutti gli operatori che e fanno qualcosa per il valore, ad esempio + e \* , funzionano per componente.
 
-Gli operatori di confronto richiedono un singolo componente per funzionare a meno che non si usi la funzione [**All**](dx-graphics-hlsl-all.md) o [**any**](dx-graphics-hlsl-any.md) intrinseca con una variabile a più componenti. L'operazione seguente ha esito negativo perché l'istruzione if richiede un solo bool ma riceve un bool4:
+Gli operatori di confronto richiedono il funzionamento di un singolo componente, a meno che non si usi [**la**](dx-graphics-hlsl-all.md) funzione all o [**qualsiasi**](dx-graphics-hlsl-any.md) funzione intrinseca con una variabile a più componenti. L'operazione seguente non riesce perché l'istruzione if richiede un singolo bool ma riceve un bool4:
 
 
 ```
@@ -65,9 +64,9 @@ if ( all(A4 < B4) )
 
 
 
-Gli operatori di cast binari [**AsFloat**](dx-graphics-hlsl-asfloat.md), [**AsInt**](dx-graphics-hlsl-asint.md)e così via funzionano per componente, ad eccezione di [**AsDouble**](asdouble.md) le cui regole speciali sono documentate.
+Gli operatori di cast binari [**asfloat**](dx-graphics-hlsl-asfloat.md), [**asint**](dx-graphics-hlsl-asint.md)e così via funzionano per componente, ad eccezione di [**asdouble**](asdouble.md) le cui regole speciali sono documentate.
 
-Gli operatori di selezione come il punto, la virgola e le parentesi di matrice non funzionano per componente.
+Gli operatori di selezione, ad esempio punto, virgola e parentesi di matrice, non funzionano per componente.
 
 Gli operatori cast modificano il numero di componenti. Le operazioni cast seguenti mostrano l'equivalenza:
 
@@ -79,9 +78,9 @@ Gli operatori cast modificano il numero di componenti. Le operazioni cast seguen
 
 
 
-## <a name="additive-and-multiplicative-operators"></a>Operatori additivi e moltiplicatori
+## <a name="additive-and-multiplicative-operators"></a>Operatori additivi e moltiplicativi
 
-Gli operatori additivi e moltiplicatori sono: +,-, \* ,/,%
+Gli operatori additivi e moltiplicativi sono: +, -, \* , /, %
 
 
 ```
@@ -119,7 +118,7 @@ f3 = f2/f1;        // f3 = 2.0/1.0 = 2.0
 
 
 
-L'operatore modulo restituisce il resto di una divisione. Questo produce risultati diversi quando si usano numeri interi e numeri a virgola mobile. I rimanenti integer che sono frazionari verranno troncati.
+L'operatore modulo restituisce il resto di una divisione. Ciò produce risultati diversi quando si usano numeri interi e numeri a virgola mobile. I resti interi frazionari verranno troncati.
 
 
 ```
@@ -143,11 +142,11 @@ f3 = f2 % f1;      // f3 = remainder of 2.0/1.0, which is 0.0
 
 
 
-L'operatore% viene definito solo nei casi in cui entrambi i lati sono positivi o entrambi i lati sono negativi. Diversamente da C, funziona anche sui tipi di dati a virgola mobile, nonché sui numeri interi.
+L'operatore % viene definito solo nei casi in cui entrambi i lati sono positivi o entrambi i lati sono negativi. A differenza di C, funziona anche su tipi di dati a virgola mobile, nonché su numeri interi.
 
-## <a name="array-operator"></a>Operatore array
+## <a name="array-operator"></a>Operatore Array
 
-L'operatore di selezione dei membri della matrice " \[ i \] " seleziona uno o più componenti in una matrice. Si tratta di un set di parentesi quadre che contengono un indice in base zero.
+L'operatore di selezione dei membri della matrice " \[ i " seleziona uno o più componenti in una \] matrice. È un set di parentesi quadre che contengono un indice in base zero.
 
 
 ```
@@ -158,7 +157,7 @@ arrayOfInts[1] = arrayOfInts[0];
 
 
 
-L'operatore di matrice può essere usato anche per accedere a un vettore.
+L'operatore array può essere usato anche per accedere a un vettore.
 
 
 ```
@@ -168,7 +167,7 @@ float 1DFloat = 4D_Vector[1];          // 1.0f
 
 
 
-Con l'aggiunta di un indice aggiuntivo, l'operatore di matrice può accedere anche a una matrice.
+Aggiungendo un indice aggiuntivo, l'operatore array può anche accedere a una matrice.
 
 
 ```
@@ -183,7 +182,7 @@ Il primo indice è l'indice di riga in base zero. Il secondo indice è l'indice 
 
 ## <a name="assignment-operators"></a>Operatori di assegnazione
 
-Gli operatori di assegnazione sono: =, + =,-=, \* =,/=
+Gli operatori di assegnazione sono: =, +=, -=, \* =, /=
 
 Alle variabili possono essere assegnati valori letterali:
 
@@ -197,7 +196,7 @@ string str = "string";
 
 
 
-Alle variabili è inoltre possibile assegnare il risultato di un'operazione matematica:
+È anche possibile assegnare alle variabili il risultato di un'operazione matematica:
 
 
 ```
@@ -217,7 +216,7 @@ f3 *= f3;          // f3 = 0.5 * 0.5 = 0.25
 
 
 
-La divisione per le variabili a virgola mobile è come previsto perché i residui decimali non rappresentano un problema.
+La divisione per le variabili a virgola mobile è come previsto perché i resti decimali non sono un problema.
 
 
 ```
@@ -227,7 +226,7 @@ f1 /= 3.0f;        // f1 = 1.0/3.0 = 0.333
 
 
 
-Prestare attenzione se si usano numeri interi che possono essere divisi, specialmente quando il troncamento influiscono sul risultato. Questo esempio è identico all'esempio precedente, ad eccezione del tipo di dati. Il troncamento causa un risultato molto diverso.
+Prestare attenzione se si usano numeri interi che possono essere divisi, soprattutto quando il troncamento influisce sul risultato. Questo esempio è identico all'esempio precedente, ad eccezione del tipo di dati . Il troncamento causa un risultato molto diverso.
 
 
 ```
@@ -239,9 +238,9 @@ i1 /= 3;           // i1 = 1/3 = 0.333, which gets truncated to 0
 
 ## <a name="binary-casts"></a>Cast binari
 
-Con l'operazione di cast tra int e float, il valore numerico viene convertito nelle rappresentazioni appropriate che seguono le regole C per il troncamento di un tipo int. Eseguendo il cast di un valore da un valore float a un int e viceversa a un valore float si otterrà una conversione con perdita di valori in base alla precisione della destinazione.
+L'operazione di cast tra int e float converte il valore numerico nelle rappresentazioni appropriate in base alle regole C per il troncamento di un tipo int. Il cast di un valore da float a int e di nuovo a un tipo float comporta una conversione in perdita in base alla precisione della destinazione.
 
-I cast binari possono essere eseguiti anche usando [**funzioni intrinseche (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md), che riinterpretano la rappresentazione di bit di un numero nel tipo di dati di destinazione.
+I cast binari possono essere eseguiti anche usando [**funzioni intrinseche (DirectX HLSL),**](dx-graphics-hlsl-intrinsic-functions.md)che reinterpretano la rappresentazione in bit di un numero nel tipo di dati di destinazione.
 
 
 ```
@@ -254,39 +253,38 @@ asuint()  // Cast to uint
 
 ## <a name="bitwise-operators"></a>Operatori bit per bit
 
-HLSL supporta gli operatori bit per bit seguenti, che seguono la stessa precedenza di C rispetto ad altri operatori. Nella tabella seguente vengono descritti gli operatori di.
+HLSL supporta gli operatori bit per bit seguenti, che seguono la stessa precedenza di C rispetto ad altri operatori. Nella tabella seguente vengono descritti gli operatori .
 
 > [!Note]  
-> Gli operatori bit per bit richiedono il [modello di Shader 4 \_ 0](dx-graphics-hlsl-sm4.md) con Direct3D 10 e hardware superiore.
+> Gli operatori bit per bit [richiedono Shader Model \_ 4 0](dx-graphics-hlsl-sm4.md) con Direct3D 10 e hardware superiore.
 
- 
+ 
 
 
 
-|           |                   |
+| Operatore          |  Funzione                 |
 |-----------|-------------------|
-| Operatore  | Funzione          |
 | ~         | Not logico       |
-| <<  | Spostamento a sinistra        |
-| >>  | Spostamento a destra       |
+| <<  | Maiusc di sinistra        |
+| >>  | Maiusc di destra       |
 | &         | And logico       |
 | \|        | Esegue un'operazione di Or logico.        |
-| ^         | XOR logico       |
-| <<= | Spostamento a sinistra uguale  |
-| >>= | Spostamento a destra uguale |
-| &=        | E uguale a         |
+| ^         | Xor logico       |
+| <<= | Maiusc di sinistra uguale  |
+| >>= | Maiusc destro uguale |
+| &=        | E uguale         |
 | \|=       | O uguale a          |
-| ^=        | XOR uguale         |
+| ^=        | Xor Uguale         |
 
 
 
- 
+ 
 
-Gli operatori bit per bit vengono definiti per operare solo sui tipi di dati int e uint. Il tentativo di utilizzare operatori bit per bit sui tipi di dati float o struct provocherà un errore.
+Gli operatori bit per bit vengono definiti per operare solo sui tipi di dati int e uint. Il tentativo di usare operatori bit per bit su tipi di dati float o struct restituirà un errore.
 
 ## <a name="boolean-math-operators"></a>Operatori matematici booleani
 
-Gli operatori matematici booleani sono:  &&, \| \| ,?:
+Gli operatori matematici booleani sono:  &&, \| \| , ?:
 
 
 ```
@@ -298,19 +296,19 @@ b3 = b1 || b2                // b3 = true OR false = true
 
 
 
-A differenza della valutazione a corto circuito di &&, \| \| e?: in C, le espressioni HLSL non eseguono mai un cortocircuito di valutazione perché si tratta di operazioni vettoriali. Tutti i lati dell'espressione vengono sempre valutati.
+A differenza della valutazione di corto circuito di &&, e ?: in C, le espressioni HLSL non esereranno mai un corto circuito per una valutazione perché \| \| sono operazioni vettoriali. Tutti i lati dell'espressione vengono sempre valutati.
 
-Gli operatori booleani funzionano in base ai singoli componenti. Ciò significa che se si confrontano due vettori, il risultato è un vettore che contiene il risultato booleano del confronto per ogni componente.
+Gli operatori booleani funzionano in base al componente. Ciò significa che se si confrontano due vettori, il risultato è un vettore contenente il risultato booleano del confronto per ogni componente.
 
-Per le espressioni che usano operatori booleani, le dimensioni e il tipo di componente di ogni variabile vengono promossi come uguali prima che si verifichi l'operazione. Il tipo innalzato di livello determina la risoluzione in cui viene eseguita l'operazione e il tipo di risultato dell'espressione. Ad esempio, un'espressione INT3 + float verrà innalzata a float3 + float3 per la valutazione e il risultato sarà di tipo float3.
+Per le espressioni che usano operatori booleani, le dimensioni e il tipo di componente di ogni variabile vengono promossi in modo che siano uguali prima che venga eseguita l'operazione. Il tipo alzato di livello determina la risoluzione in corrispondenza della quale viene eseguita l'operazione, nonché il tipo di risultato dell'espressione. Ad esempio, un'espressione int3 + float viene promossa a float3 + float3 per la valutazione e il risultato sarà di tipo float3.
 
 ## <a name="cast-operator"></a>Operatore cast
 
-Un'espressione preceduta da un nome di tipo tra parentesi è un cast di tipo esplicito. Un cast di tipo converte l'espressione originale nel tipo di dati del cast. In generale, è possibile eseguire il cast dei tipi di dati semplici ai tipi di dati più complessi (con un cast di innalzamento di livello), ma è possibile eseguire il cast solo di alcuni tipi di dati complessi in tipi di dati semplici (con un cast di abbassamento di livello).
+Un'espressione preceduta da un nome di tipo tra parentesi è un cast di tipo esplicito. Un cast di tipo converte l'espressione originale nel tipo di dati del cast. In generale, è possibile eseguire il cast dei tipi di dati semplici ai tipi di dati più complessi (con un cast di promozione), ma è possibile eseguire il cast solo di alcuni tipi di dati complessi in tipi di dati semplici (con un cast di abbassamento di livello).
 
-Il cast del tipo di lato destro è valido. Ad esempio, le espressioni come non `(int)myFloat = myInt;` sono valide. In alternativa, utilizzare `myFloat = (float)myInt;`.
+È valido solo il cast del tipo sul lato destro. Ad esempio, espressioni come non `(int)myFloat = myInt;` sono valide. In alternativa, utilizzare `myFloat = (float)myInt;`.
 
-Il compilatore esegue anche il cast implicito del tipo. Ad esempio, le due espressioni seguenti sono equivalenti:
+Il compilatore esegue anche il cast di tipo implicito. Ad esempio, le due espressioni seguenti sono equivalenti:
 
 
 ```
@@ -322,9 +320,9 @@ int2 b = int2(1,2) + int2(2,2);
 
 ## <a name="comma-operator"></a>Operatore virgola
 
-L'operatore virgola (,) separa una o più espressioni che devono essere valutate in ordine. Il valore dell'ultima espressione nella sequenza viene utilizzato come valore della sequenza.
+L'operatore virgola (,) separa una o più espressioni che devono essere valutate in ordine. Il valore dell'ultima espressione nella sequenza viene usato come valore della sequenza.
 
-Di seguito è riportato un caso che vale la pena richiamare attenzione a. Se il tipo di costruttore viene accidentalmente lasciato dal lato destro del segno di uguale, il lato destro contiene ora quattro espressioni, separate da tre virgole.
+Ecco un caso a cui vale la pena richiamare l'attenzione. Se il tipo di costruttore viene accidentalmente lasciato fuori dal lato destro del segno di uguale, il lato destro contiene ora quattro espressioni, separate da tre virgole.
 
 
 ```
@@ -346,7 +344,7 @@ float4 x = 1;
 
 
 
-In questo caso, HLSL usa la promozione scalare, quindi il risultato è come se fosse stato scritto nel modo seguente:
+HLSL usa la promozione scalare in questo caso, quindi il risultato è come se fosse scritto come segue:
 
 
 ```
@@ -355,13 +353,13 @@ float4 x = float4(1,1,1,1);
 
 
 
-In questo caso, l'uscita dal tipo float4 dal lato destro è probabilmente un errore che il compilatore non è in grado di rilevare perché si tratta di un'istruzione valida.
+In questo caso, lasciare il tipo float4 dal lato destro è probabilmente un errore che il compilatore non è in grado di rilevare perché si tratta di un'istruzione valida.
 
 ## <a name="comparison-operators"></a>Operatori di confronto
 
-Gli operatori di confronto sono: <, >, = =,! =, <=, >=.
+Gli operatori di confronto sono: <, >, ==, !=, <=, >=.
 
-Confrontare i valori che sono maggiori di (o minori di) qualsiasi valore scalare:
+Confrontare i valori maggiori o minori di qualsiasi valore scalare:
 
 
 ```
@@ -379,7 +377,7 @@ if( dot(lightDirection, normalVector) < 0 )
 
 
 
-In alternativa, confrontare i valori uguali a (o non uguali) con qualsiasi valore scalare:
+In caso contrario, confrontare i valori uguali (o non uguali) a qualsiasi valore scalare:
 
 
 ```
@@ -392,7 +390,7 @@ if(color.a != 0)
 
 
 
-In alternativa, combinare e confrontare i valori che sono maggiori o uguali o minori o uguali a qualsiasi valore scalare:
+Oppure combinare e confrontare valori maggiori o uguali a (o minori o uguali a) qualsiasi valore scalare:
 
 
 ```
@@ -410,11 +408,11 @@ if( currentValue <= someInitialCondition )
 
 
 
-Ognuno di questi confronti può essere eseguito con qualsiasi tipo di dati scalari.
+Ognuno di questi confronti può essere eseguito con qualsiasi tipo di dati scalare.
 
-Per utilizzare gli operatori di confronto con i tipi Vector e Matrix, utilizzare la funzione [**All**](dx-graphics-hlsl-all.md) o [**any**](dx-graphics-hlsl-any.md) intrinseca.
+Per usare gli operatori di confronto con i tipi di vettore e matrice, usare la [**funzione intrinseca all**](dx-graphics-hlsl-all.md) [**o**](dx-graphics-hlsl-any.md) any.
 
-Questa operazione ha esito negativo perché l'istruzione if richiede un solo bool ma riceve un bool4:
+Questa operazione ha esito negativo perché l'istruzione if richiede un solo bool ma riceve un valore bool4:
 
 
 ```
@@ -433,11 +431,11 @@ if ( all(A4 < B4) )
 
 
 
-## <a name="prefix-or-postfix-operators"></a>Operatori di prefisso o suffisso
+## <a name="prefix-or-postfix-operators"></a>Operatori prefisso o suffisso
 
-Gli operatori prefisso e suffisso sono: + +,--. Gli operatori di prefisso modificano il contenuto della variabile prima che l'espressione venga valutata. Gli operatori di suffisso modificano il contenuto della variabile dopo la valutazione dell'espressione.
+Gli operatori prefisso e suffisso sono: ++, --. Gli operatori di prefisso modificano il contenuto della variabile prima che l'espressione venga valutata. Gli operatori suffissi modificano il contenuto della variabile dopo la valutazione dell'espressione.
 
-In questo caso, un ciclo utilizza il contenuto di i per tenere traccia del conteggio dei cicli.
+In questo caso, un ciclo usa il contenuto di i per tenere traccia del conteggio dei cicli.
 
 
 ```
@@ -451,7 +449,7 @@ for (int i = 0; i<4; )
 
 
 
-Poiché viene usato l'operatore di incremento suffisso (+ +), arrayOfFloats \[ i \] viene moltiplicato per 2 prima di essere incrementato. Questa operazione potrebbe essere leggermente riordinata in modo da utilizzare l'operatore di incremento prefisso. Questo è più difficile da leggere, sebbene entrambi gli esempi siano equivalenti.
+Poiché viene usato l'operatore di incremento suffisso (++), arrayOfFloats i viene moltiplicato per \[ \] 2 prima che i venga incrementato. Questa operazione potrebbe essere leggermente ridisposta in modo da usare l'operatore di incremento prefisso. Questo è più difficile da leggere, anche se entrambi gli esempi sono equivalenti.
 
 
 ```
@@ -465,9 +463,9 @@ for (int i = 0; i<4; )
 
 
 
-Poiché viene usato l'operatore di prefisso (+ +), arrayOfFloats \[ i + 1-1 \] viene moltiplicato per 2 dopo l'incremento.
+Poiché viene usato l'operatore prefisso (++), arrayOfFloats \[ i+1 - 1 viene moltiplicato per 2 dopo l'incremento \] di i.
 
-L'operatore di decremento prefisso e di decremento suffisso (--) viene applicato nella stessa sequenza dell'operatore di incremento. La differenza consiste nel fatto che decrementa sottrae 1 anziché aggiungere 1.
+L'operatore di decremento prefisso e decremento suffisso (--) viene applicato nella stessa sequenza dell'operatore di incremento. La differenza è che il decremento sottrae 1 anziché aggiungere 1.
 
 ## <a name="structure-operator"></a>Operatore Structure
 
@@ -485,7 +483,7 @@ float4 z;
 
 
 
-Può essere letto come segue:
+Può essere letto nel modo seguente:
 
 
 ```
@@ -497,7 +495,7 @@ float 1D_Float = pos.x
 
 
 
-Ogni membro può essere letto o scritto con l'operatore Structure:
+Ogni membro può essere letto o scritto con l'operatore structure:
 
 
 ```
@@ -511,7 +509,7 @@ pos.z = pos.x      // z = 2.0f
 
 ## <a name="unary-operators"></a>Operatori unari
 
-Gli operatori unari sono:!,-, +
+Gli operatori unari sono: !, -, +
 
 Gli operatori unari operano su un singolo operando.
 
@@ -532,7 +530,7 @@ Quando un'espressione contiene più di un operatore, la precedenza degli operato
 
 ## <a name="remarks"></a>Commenti
 
-Le parentesi graffe ( {,} ) iniziano e terminano un blocco di istruzioni. Quando un blocco di istruzioni usa un'unica istruzione, le parentesi graffe sono facoltative.
+Le parentesi graffe ( {,} ) avviano e terminano un blocco di istruzioni. Quando un blocco di istruzioni usa una singola istruzione, le parentesi graffe sono facoltative.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -541,9 +539,9 @@ Le parentesi graffe ( {,} ) iniziano e terminano un blocco di istruzioni. Quando
 [Istruzioni (DirectX HLSL)](dx-graphics-hlsl-statements.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

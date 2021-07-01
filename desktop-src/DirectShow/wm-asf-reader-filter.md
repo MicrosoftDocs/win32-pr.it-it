@@ -1,33 +1,33 @@
 ---
-description: Filtro lettore ASF WM
+description: Informazioni sul filtro lettore ASF WM per DirectShow. Si tratta di un filtro wrapper per l'oggetto lettore fornito con Windows Media Format SDK.
 ms.assetid: 82b9f849-b9dc-439b-8ca7-9dcd992338ab
 title: Filtro lettore ASF WM (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a35cea4b6dbf8c720f3059e0317484fd2f34d10
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 330ab870b97fc3e84ccb5b0f726d4f35ef1af147
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908869"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118666"
 ---
 # <a name="wm-asf-reader-filter-directshow"></a>Filtro lettore ASF WM (DirectShow)
 
-Wm ASF Reader è un filtro wrapper per l'oggetto lettore fornito con Windows Media Format SDK ed è il filtro di origine consigliato per la riproduzione di file di contenuti basati su Windows Media e contenuti creati con uno dei DMO del codificatore Microsoft MPEG-4.
+Wm ASF Reader è un filtro wrapper per l'oggetto lettore fornito con Windows Media Format SDK ed è il filtro di origine consigliato per la riproduzione di file del contenuto basato su Windows Media e del contenuto creato con uno dei DMO del codificatore MPEG-4 Microsoft.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Interfacce di filtro                        | [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) [**IFileSourceFilter,**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) [**IAMExtendedSeeking,**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamextendedseeking) **IServiceProvider** Inoltre, il filtro espone le interfacce seguenti di Windows Media Format SDK: [**IWMHeaderInfo,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) [**IWMReaderAdvanced**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced), [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2), [**IWMDRMReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader) (tramite **IServiceProvider**)<br/> |
+| Interfacce di filtro                        | [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) [**IFileSourceFilter,**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) [**IAMExtendedSeeking,**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamextendedseeking) **IServiceProvider** Inoltre, il filtro espone le interfacce di Windows Media Format SDK seguenti: [**IWMHeaderInfo,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) [**IWMReaderAdvanced,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced) [**IWMReaderAdvanced2,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) [**IWMDRMReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader) (tramite **IServiceProvider)**<br/> |
 | Tipi di supporti pin di input                    | Non applicabile.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Interfacce pin di input                     | Non applicabile.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Tipi di supporti pin di output                   | MEDIATYPE \_ Video, MEDIATYPE \_ Audio, MEDIATYPE \_ ScriptCommand, MEDIATYPE \_ FileTransfer                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Interfacce pin di output                    | [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IAMWMBufferPass,**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iamwmbufferpass) **IServiceProvider** Inoltre, i pin espongono le interfacce seguenti di Windows Media Format SDK: **IWMStreamConfig2** (tramite **IServiceProvider**)<br/>                                                                                                                                                                                                                                    |
-| CLSID del filtro                             | CLSID \_ WMAsfReader                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| CLSID pagina delle proprietà                      | Nessuna pagina delle proprietà.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Interfacce pin di output                    | [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IAMWMBufferPass,**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iamwmbufferpass) **IServiceProvider** Inoltre, i pin espongono le interfacce di Windows Media Format SDK seguenti: **IWMStreamConfig2** (tramite **IServiceProvider**)<br/>                                                                                                                                                                                                                                    |
+| Filtro CLSID                             | CLSID \_ WMAsfReader                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| CLSID della pagina delle proprietà                      | Nessuna pagina delle proprietà.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | File eseguibile                               | Qasf.dll                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [Merito](merit.md)                       | PROBABILITÀ \_ IMPROBABILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [Merito](merit.md)                       | MERITO \_ IMPROBABILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | [Categoria filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 
@@ -36,7 +36,7 @@ Wm ASF Reader è un filtro wrapper per l'oggetto lettore fornito con Windows Med
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene assegnato il nome di un file ASF o di un URL, il lettore ASF WM legge il contenuto compresso, analizza i flussi compressi ed espone un pin di output per ognuno di essi. Questo filtro si connette a valle ai filtri codec audio e/o video, che esecutori della decompressione. La ricerca è supportata se il file ASF è ricercabile. Il lettore ASF contrassegna gli esempi prima di inviarli a valle, ma non modifica i timestamp in alcun modo.
+Quando viene assegnato il nome di un file ASF o di un URL, il lettore ASF WM legge il contenuto compresso, analizza i flussi compressi ed espone un pin di output per ognuno di essi. Questo filtro connette downstream ai filtri codec audio e/o video, che esecutori della decompressione. La ricerca è supportata se il file ASF è ricercabile. Il lettore ASF contrassegna gli esempi prima di inviarli a valle, ma non modifica i timestamp in alcun modo.
 
 La riproduzione a velocità diverse da 1.0 (come specificato in [**IMediaSeeking::SetRate)**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setrate)non è supportata.
 
@@ -57,7 +57,7 @@ Wm ASF Reader implementa parzialmente le [**interfacce IWMReaderAdvanced**](/pre
 
 <dl> <dt>
 
-[DirectShow Filters](directshow-filters.md)
+[Filtri DirectShow](directshow-filters.md)
 </dt> <dt>
 
 [Lettura di file ASF in DirectShow](reading-asf-files-in-directshow.md)

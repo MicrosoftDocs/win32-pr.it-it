@@ -1,6 +1,6 @@
 ---
 title: RestartStrip (oggetto Stream-Output DirectX HLSL)
-description: Termina la striscia primitiva corrente e avvia una nuova striscia. Se la striscia corrente non ha un numero sufficiente di vertici emessi per riempire la topologia primitiva, la primitiva incompleta alla fine verrà ignorata.
+description: Termina la striscia primitiva corrente e avvia una nuova striscia. Se la striscia corrente non ha un numero di vertici sufficiente per riempire la topologia primitiva, la primitiva incompleta alla fine verrà eliminata.
 ms.assetid: ca8eb7cf-1b4a-4082-b768-01390c5f8b47
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 16b31bbd1e2f72ce6b31a0c079f7ec5739aba87a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: aafd6407d556a6d0b4269c38192107edbc7cb1fa
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993424"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120196"
 ---
 # <a name="restartstrip-directx-hlsl-stream-output-object"></a>RestartStrip (oggetto Stream-Output DirectX HLSL)
 
-Termina la striscia primitiva corrente e avvia una nuova striscia. Se la striscia corrente non ha un numero sufficiente di vertici emessi per riempire la topologia primitiva, la primitiva incompleta alla fine verrà ignorata.
+Termina la striscia primitiva corrente e avvia una nuova striscia. Se la striscia corrente non ha un numero di vertici sufficiente per riempire la topologia primitiva, la primitiva incompleta alla fine verrà eliminata.
 
-
-
-|                 |
-|-----------------|
-| RestartStrip(); |
+RestartStrip();
 
 
 
@@ -48,16 +44,16 @@ nessuno
 
 ## <a name="remarks"></a>Osservazioni
 
-Un taglio striscia causa la fine della striscia corrente e una nuova striscia da avviare. Una striscia può essere eseguita chiamando in modo esplicito questo metodo o semplicemente eseguendo il rendering fino al valore di indice massimo (1, ovvero 0xFFFFFFFF per gli indici a 32 bit o 0xFFFF per gli indici a 16 bit). Ogni istanza di un oggetto di estrazione con istanza indicizzata genera automaticamente uno strip Cut. Questo vale anche se la topologia non è una striscia di triangolo.
+Un taglio di strip determina la fine della striscia corrente e l'avvio di una nuova striscia. È possibile eseguire un strip cut chiamando in modo esplicito questo metodo o semplicemente effettuando il rendering fino al valore massimo dell'indice ( 1, che è 0xffffffff per indici a 32 bit o 0xffff per indici a 16 bit). Ogni istanza di un disegno con istanze indicizzate genera automaticamente un strip cut. Questo vale anche se la topologia non è una striscia a triangolo.
 
 > [!Note]  
-> Il supporto per il riavvio e il valore "Magic value" per un taglio sono disponibili solo su dispositivi di [livello funzionalità](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) 10,0 o superiore.
+> Il supporto per il riavvio e l'1 [](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) "valore magico" per un taglio sono disponibili solo nei dispositivi con livello di funzionalità 10.0 o versione successiva.
 
  
 
-L'output viene sempre considerato una striscia di triangolo. Per rendere l'output un elenco di triangolo, è necessario chiamare RestartStrip tra ogni triangolo. Le ventole del triangolo non sono supportate.
+Si presuppone sempre che l'output sia una striscia triangolare. Per rendere l'output un elenco di triangoli, è necessario chiamare RestartStrip tra ogni triangolo. Le ventole a triangolo non sono supportate.
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -65,10 +61,10 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | yes       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -78,7 +74,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Stream-oggetto di output](dx-graphics-hlsl-so-type.md)
+[Oggetto stream-output](dx-graphics-hlsl-so-type.md)
 </dt> </dl>
 
  

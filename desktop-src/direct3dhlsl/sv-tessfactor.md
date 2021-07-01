@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 808365fbcba4a1180c1838b94a6c098aa4c6f9ac
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 308034fe607283ef9f1213cca1cabb4a7229765e
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999058"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118896"
 ---
 # <a name="sv_tessfactor"></a>SV \_ TessFactor
 
@@ -28,9 +28,8 @@ Definisce la quantità a tessellazione su ogni bordo di una patch.
 
 
 
-|            |                |
+|  Tipo          |  Topologia di input              |
 |------------|----------------|
-| Tipo       | Topologia di input |
 | float \[ 4\] | quad patch     |
 | float \[ 3\] | tri patch      |
 | float \[ 2\] | isoline        |
@@ -45,7 +44,7 @@ I fattori a tessellazione devono essere dichiarati come matrice. non possono ess
 
 Il valore per il fattore a tessellazione deve essere definito durante la funzione costante patch dello hull shader.
 
-Valore di output obbligatorio per lo hull shader se si usano patch quad o tri. Questo valore è anche un valore di input obbligatorio per il domain shader in modo che corrisponda alle firme di dati costanti per le patch tra le fasi a fasi.
+Valore di output obbligatorio per lo hull shader se si usano patch quad o tri. Questo valore è anche un valore di input obbligatorio per il domain shader in modo che corrisponda alle firme di dati costanti per la patch tra le fasi a tessellazione.
 
 Per un'isolinea, il primo valore in SV TessFactor è il fattore a tessellazione della densità della linea, il secondo valore è il fattore a trama \_ riga-dettaglio.
 
@@ -69,7 +68,7 @@ Questa funzione è supportata nei tipi di shader seguenti:
 
  
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 

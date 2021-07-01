@@ -1,23 +1,23 @@
 ---
-description: La fusione alfa viene utilizzata per visualizzare una bitmap Alpha, ovvero una bitmap con pixel trasparenti o semitrasparenti.
+description: La fusione alfa viene usata per visualizzare una bitmap alfa, ovvero una bitmap con pixel trasparenti o semitrasparenti.
 ms.assetid: 52a044cc-a471-4951-adbe-32319b8e3129
-title: Fusione alfa (Windows GDI)
+title: Alpha Blending (Windows GDI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f68cb34d189fb80d23cbb5eeec9d9006aa93a1eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4add2aca8ac4e2d7e1b24988eb5d40f80bac259c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978826"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120286"
 ---
-# <a name="alpha-blending-windows-gdi"></a>Fusione alfa (Windows GDI)
+# <a name="alpha-blending-windows-gdi"></a>Alpha Blending (Windows GDI)
 
-La *fusione alfa* viene utilizzata per visualizzare una bitmap Alpha, ovvero una bitmap con pixel trasparenti o semitrasparenti. Oltre a un canale di colore rosso, verde e blu, ogni pixel in una bitmap alfa presenta un componente di trasparenza noto come *canale alfa*. Il canale alfa contiene in genere tutti i bit di un canale colori. Un canale alfa a 8 bit, ad esempio, può rappresentare 256 livelli di trasparenza, da 0 (l'intera bitmap è trasparente) a 255 (l'intera bitmap è opaca).
+*La fusione alfa* viene usata per visualizzare una bitmap alfa, ovvero una bitmap con pixel trasparenti o semitrasparenti. Oltre a un canale di colori rosso, verde e blu, ogni pixel in una bitmap alfa ha un componente di trasparenza noto come *canale alfa.* Il canale alfa contiene in genere tutti i bit di un canale di colore. Ad esempio, un canale alfa a 8 bit può rappresentare 256 livelli di trasparenza, da 0 (l'intera bitmap è trasparente) a 255 (l'intera bitmap è opaca).
 
-I meccanismi di fusione alfa vengono richiamati chiamando [**AlphaBlend**](/windows/desktop/api/WinGdi/nf-wingdi-alphablend), che fa riferimento alla struttura [**BlendFunction**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction) .
+I meccanismi di fusione alfa vengono richiamati chiamando [**AlphaBlend**](/windows/desktop/api/WinGdi/nf-wingdi-alphablend), che fa riferimento alla [**struttura BLENDFUNCTION.**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction)
 
-I valori alfa per pixel sono supportati solo per l'RGB BI 32-bpp \_ . Questa formula viene definita come segue:
+I valori alfa per pixel sono supportati solo per RGB BI a 32 \_ bpp. Questa formula è definita come:
 
 
 ```C++
@@ -31,22 +31,41 @@ typedef struct {
 
 
 
-Questa operazione viene rappresentata in memoria, come illustrato nella tabella seguente.
+È rappresentato in memoria come illustrato nella tabella seguente.
 
+:::row:::
+    :::column:::
+        31:24
+    :::column-end:::
+    :::column:::
+        23:16
+    :::column-end:::
+    :::column:::
+        15:08
+    :::column-end:::
+    :::column:::
+        07:00
+    :::column-end:::
+:::row-end:::
 
+:::row:::
+    :::column:::
+        Alfa
+    :::column-end:::
+    :::column:::
+        Red
+    :::column-end:::
+    :::column:::
+        Green
+    :::column-end:::
+    :::column:::
+        Blu
+    :::column-end:::
+:::row-end:::
 
-|       |       |       |       |
-|-------|-------|-------|-------|
-| 31:24 | 23:16 | 15:08 | 07:00 |
-| Alfa | Red   | Green | Blu  |
+Le bitmap possono anche essere visualizzate con un fattore di trasparenza applicato all'intera bitmap. Qualsiasi formato bitmap può essere visualizzato con un valore alfa costante globale impostando **SourceConstantAlpha** nella [**struttura BLENDFUNCTION.**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction) Il valore alfa costante globale ha 256 livelli di trasparenza, da 0 (l'intera bitmap è completamente trasparente) a 255 (l'intera bitmap è completamente opaca). Il valore alfa costante globale viene combinato con il valore alfa per pixel.
 
-
-
- 
-
-Le bitmap possono essere visualizzate anche con un fattore di trasparenza applicato all'intera bitmap. Qualsiasi formato bitmap può essere visualizzato con un valore alfa costante globale impostando **SourceConstantAlpha** nella struttura [**BlendFunction**](/windows/desktop/api/Wingdi/ns-wingdi-blendfunction) . Il valore alfa costante globale presenta 256 livelli di trasparenza, da 0 (intera bitmap completamente trasparente) a 255 (l'intera bitmap è completamente opaca). Il valore alfa della costante globale è combinato con il valore alfa per pixel.
-
-Per un esempio, vedere [fusione alfa di una bitmap](alpha-blending-a-bitmap.md).
+Per un esempio, vedere [Alpha Blending a Bitmap (Fusione alfa di una bitmap).](alpha-blending-a-bitmap.md)
 
  
 

@@ -4,29 +4,29 @@ ms.assetid: 59332096-bdfe-4208-b99a-1f434652f287
 title: Filtro renderer a schermo intero
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c175907ef0f60c3b1fe183eb0941b5118d24c9f2
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3d331ff6f31d1c985c7e255b23381a289931da60
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908609"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120476"
 ---
 # <a name="full-screen-renderer-filter"></a>Filtro renderer a schermo intero
 
-Il filtro renderer a schermo intero fornisce il rendering video a schermo intero su hardware meno recente. Le schede video più nuove possono estendere il video in modo sufficientemente efficiente da non renderer a schermo intero non necessario. Di conseguenza, l'uso di questo filtro è ora deprecato.
+Il filtro Renderer a schermo intero fornisce il rendering video a schermo intero su hardware meno recente. Le schede video più nuove possono estendere il video in modo sufficientemente efficiente da non renderer a schermo intero. Pertanto, l'uso di questo filtro è ora deprecato.
 
-Non aggiungere manualmente questo filtro al grafico dei filtri. Se un'applicazione chiama [**IVideoWindow::p ut \_ FullScreenMode**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode), Gestione grafici filtri seleziona automaticamente il renderer video appropriato per la modalità schermo intero. La selezione è trasparente per l'applicazione. Con le schede video correnti, è improbabile che Filter Graph Manager selezione il renderer a schermo intero.
+Non aggiungere manualmente questo filtro al grafico dei filtri. Se un'applicazione chiama [**IVideoWindow::p ut \_ FullScreenMode,**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode)Filter Graph Manager seleziona automaticamente il renderer video appropriato per la modalità schermo intero. La selezione è trasparente per l'applicazione. Con le schede video correnti, è improbabile che Filter Graph Manager selezione il renderer a schermo intero.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Interfacce di filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IFullScreenVideoEx**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-ifullscreenvideoex), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol), [**IQualProp**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop) |
-| Tipi di supporti pin di input                    | VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ Null                                                                                                                                                                                                               |
-| Interfacce pin di input                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                             |
+| Interfacce di filtro                        | [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) [**IFullScreenVideoEx,**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-ifullscreenvideoex) [**IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IQualityControl,**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) [**IQualProp**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop) |
+| Tipi di supporti pin di input                    | Video \_ MEDIATYPE, MEDIASUBTYPE \_ Null                                                                                                                                                                                                               |
+| Interfacce pin di input                     | [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                             |
 | Tipi di supporti pin di output                   | Non applicabile                                                                                                                                                                                                                                     |
 | Interfacce pin di output                    | Non applicabile                                                                                                                                                                                                                                     |
-| CLSID del filtro                             | CLSID \_ ModexRenderer                                                                                                                                                                                                                               |
+| Filtro CLSID                             | CLSID \_ ModexRenderer                                                                                                                                                                                                                               |
 | CLSID della pagina delle proprietà                      | CLSID \_ ModexProperties                                                                                                                                                                                                                             |
 | File eseguibile                               | quartz.dll                                                                                                                                                                                                                                         |
 | [Merito](merit.md)                       | MERITO \_ IMPROBABILE                                                                                                                                                                                                                                    |
@@ -42,9 +42,8 @@ Il renderer a schermo intero supporta un set statico di modalità di visualizzaz
 
 
 
-| Label | Valore |
+| Mode | Larghezza | Altezza | Profondità in bit |
 |------|-------|--------|-----------|
-| Modalità | Larghezza | Altezza | Profondità in bit |
 | 0    | 320   | 200    | 16        |
 | 1    | 320   | 200    | 8         |
 | 2    | 320   | 240    | 16        |
@@ -66,9 +65,9 @@ Il renderer a schermo intero supporta un set statico di modalità di visualizzaz
 
  
 
-Tutte le modalità sono RGB. Questo elenco è tuttavia soggetto a modifiche. Usare il [**metodo IFullScreenVideoEx::GetModeInfo**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getmodeinfo) per ottenere informazioni sulle modalità. Il renderer a schermo intero sceglie sempre la modalità a risoluzione più bassa disponibile, limitata da una proprietà denominata *fattore di clip,* che determina la quantità di video che il renderer a schermo intero può ritagliare. Per altre informazioni, vedere [**IFullScreenVideoEx::GetClipFactor**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getclipfactor).
+Tutte le modalità sono RGB. Questo elenco è tuttavia soggetto a modifiche. Usare il [**metodo IFullScreenVideoEx::GetModeInfo**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getmodeinfo) per ottenere informazioni sulle modalità. Il renderer a schermo intero sceglie sempre la modalità di risoluzione più bassa disponibile, limitata da una proprietà denominata fattore di *ritaglio*, che determina la quantità di video che il renderer a schermo intero può ritagliare. Per altre informazioni, vedere [**IFullScreenVideoEx::GetClipFactor.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getclipfactor)
 
-Quando l'applicazione esegue o sospende il grafico dei filtri, il renderer a schermo intero passa alla modalità di visualizzazione scelta. Quando il grafico si arresta, il renderer a schermo intero ripristina la modalità di visualizzazione originale.
+Quando l'applicazione viene eseguita o sospende il grafico dei filtri, il renderer a schermo intero passa alla modalità di visualizzazione scelta. Quando il grafico si arresta, il renderer a schermo intero ripristina la modalità di visualizzazione originale.
 
 Il renderer a schermo intero può funzionare solo come finestra attiva in primo piano. Se l'utente passa a un'altra applicazione, il renderer a schermo intero nasconde il video riducendo al minimo o nascondendo la finestra video.
 

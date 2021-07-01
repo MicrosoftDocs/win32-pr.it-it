@@ -1,19 +1,19 @@
 ---
 description: Contiene un elenco di provider di traccia per MFTrace.
 ms.assetid: ee483f0a-5a90-4150-ada4-0b63ae312523
-title: Providers (elemento)
+title: Elemento providers
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04e5aaedcd14d840cfdc0d85559f6a7981943593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d38a86bf3ca8ffa1ea9e3da20e0244e7abec8513
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226510"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118486"
 ---
-# <a name="providers-element"></a>Providers (elemento)
+# <a name="providers-element"></a>Elemento providers
 
-Contiene un elenco di provider di traccia per [MFTrace](mftrace.md).
+Contiene un elenco di provider di traccia per [MFTrace.](mftrace.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -33,8 +33,8 @@ Non ci sono attributi.
 
 | Elemento                                   | Descrizione                                                                                                      |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [**mfdetours**](mfdetours.md)<br/> | Specifica il provider di detouring Media Foundation, che traccia Media Foundation chiamate API.<br/> <br/> |
-| [**provider**](provider.md)<br/>   | Specifica un provider di traccia (ETW o WPP).<br/> <br/>                                                  |
+| [**mfdetours**](mfdetours.md)<br/> | Specifica il provider Media Foundation Detours, che traccia Media Foundation chiamate API.<br/> <br/> |
+| [**Provider**](provider.md)<br/>   | Specifica un provider di traccia (ETW o WPP).<br/> <br/>                                                  |
 
 
 
@@ -53,19 +53,20 @@ Non ci sono elementi padre.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
+:::row:::
+    :::column:::
+        Può essere vuoto
+    :::column-end:::
+    :::column span="2":::
+        Sì
+    :::column-end:::
+:::row-end:::
 
-
-|              |     |
-|--------------|-----|
-| Può essere vuoto | Sì |
-
-
-
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 
-[File di configurazione MFTrace](mftrace-configuration-file.md)
+[File di configurazione di MFTrace](mftrace-configuration-file.md)
 </dt> </dl>
 
  

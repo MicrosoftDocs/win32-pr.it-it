@@ -4,90 +4,78 @@ description: Chiarire e limitare le scelte
 ms.assetid: 4ec3ca01-231b-4a45-aae1-fba5b2ba0033
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a43ed5f95c2e516f304ffa28bcca1d9fd67a9169
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 953001d706089244d6366c8dab0cdb580a2d72ca
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298673"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118476"
 ---
 # <a name="clarify-and-limit-choices"></a>Chiarire e limitare le scelte
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Il riconoscimento vocale diventa più efficace quando l'utente apprende l'intervallo di grammatica appropriato. Funziona inoltre meglio quando l'intervallo di scelte è limitato. Minore è il numero di input aperto, più il motore vocale può analizzare l'input di informazioni acustiche.
+Il riconoscimento vocale diventa più efficace quando l'utente apprende l'intervallo di grammatica appropriato. Funziona anche meglio quando la gamma di scelte è limitata. Meno aperto è l'input, migliore sarà il motore di riconoscimento vocale in grado di analizzare l'input di informazioni acustiche.
 
-Microsoft Agent include diverse clausole predefinite che aumentano la riuscita dell'input vocale. Il primo è la finestra dei comandi visualizzata quando l'utente dice "Apri finestra comandi" o "cosa posso dire?" (o quando l'utente sceglie la finestra Apri comandi dal menu popup del carattere). La finestra di comando funge da guida visiva alla grammatica attiva del motore di riconoscimento vocale. Consente inoltre di ridurre gli errori di riconoscimento attivando solo la grammatica vocale dei comandi globali dell'applicazione input-Active e di Microsoft Agent. Pertanto, la grammatica attiva del motore di riconoscimento vocale si applica al contesto immediato. Per ulteriori informazioni sulla finestra comandi, vedere [Cenni preliminari sull'interfaccia di programmazione Microsoft Agent](microsoft-agent-programming-interface-overview.md).
+Microsoft Agent include diverse disposizioni incorporate che aumentano il successo dell'input vocale. La prima è la finestra comandi visualizzata quando l'utente dice "Apri finestra comandi" o "Cosa posso dire?" (o quando l'utente sceglie Apri finestra comandi dal menu a comparsa del carattere). La finestra di comando funge da guida visiva alla grammatica attiva del motore di riconoscimento vocale. Riduce inoltre gli errori di riconoscimento attivando solo la grammatica vocale dell'applicazione attiva di input e i comandi globali di Microsoft Agent. Pertanto, la grammatica attiva del motore di riconoscimento vocale si applica al contesto immediato. Per altre informazioni sulla finestra Comandi, vedere Panoramica [dell'interfaccia di programmazione di Microsoft Agent.](microsoft-agent-programming-interface-overview.md)
 
-Quando si creano comandi abilitati per la voce di Microsoft Agent, è possibile creare il testo della didascalia visualizzato nella finestra comandi e il testo vocale (grammatica), ovvero le parole che il motore deve usare per la corrispondenza di questo comando. Provare sempre a rendere i comandi più distinti possibile. Maggiore è la differenza tra la formulazione dei comandi, in particolare per il testo vocale, più probabilmente il motore vocale sarà in grado di distinguere tra i comandi vocali e fornire una corrispondenza accurata. È anche possibile evitare comandi a parola singola o molto breve. In generale, le informazioni acustiche in un'espressione pronunciata forniscono al motore una migliore probabilità di ottenere una corrispondenza precisa.
+Quando si creano comandi abilitati per la voce di Microsoft Agent, è possibile creare il testo della didascalia visualizzato nella finestra comandi e il relativo testo vocale (grammatica), ovvero le parole che il motore deve usare per trovare la corrispondenza con questo comando. Provare sempre a rendere i comandi il più distintivi possibile. Maggiore è la differenza tra la formulazione dei comandi, in particolare per il testo vocale, maggiore è la probabilità che il motore di riconoscimento vocale sia in grado di discriminare tra i comandi vocali e fornire una corrispondenza accurata. Evitare anche comandi con una sola parola o molto brevi. In genere, un maggior numero di informazioni acustiche in un'espressione parlata offre al motore una migliore possibilità di ottenere una corrispondenza accurata.
 
-Quando si definisce il testo vocale per un comando, fornire un'ampia gamma di parole. Le richieste che significano la stessa cosa possono essere formulate in modo molto diverso, come illustrato nell'esempio seguente:
+Quando si definisce il testo vocale per un comando, fornire un'ampia gamma di formulazioni. Le richieste che hanno lo stesso significato possono essere formulate in modo molto diverso, come illustrato nell'esempio seguente:
 
-Aggiungere alcuni peperoni.
+Aggiungere un po' di pepperoni.
 
-Vorrei un po' di peperoni.
+I'd like some pepperoni.
 
-È possibile aggiungere alcuni peperoni?
+È possibile aggiungere un po' di salame?
 
-Pepperone,
+Pepperoni, please.
 
-Microsoft Agent consente di specificare facilmente alternative o parole facoltative per la grammatica vocale per l'applicazione. Racchiudere le parole o le frasi alternative tra parentesi separate da un carattere di barra verticale. È possibile definire parole facoltative racchiudendo i caratteri tra parentesi quadre. È anche possibile annidare alternative o parole facoltative. Inoltre, è possibile utilizzare i puntini di sospensione (...) nel testo vocale come segnaposto per qualsiasi parola. Tuttavia, l'uso troppo frequente dei puntini di sospensione potrebbe rendere più difficile la distinzione tra i diversi comandi vocali del motore. In ogni caso, assicurarsi sempre che il testo vocale includa almeno una parola distinta per ogni comando che non è facoltativo. In genere, questo deve corrispondere a una parola o a parole nel testo della didascalia definito che viene visualizzato nella finestra dei comandi.
+Microsoft Agent consente di specificare facilmente alternative o parole facoltative per la grammatica vocale per l'applicazione. È possibile racchiudere parole o frasi alternative tra parentesi, separate da un carattere barra verticale. È possibile definire parole facoltative racchiudendole tra parentesi quadre. È anche possibile annidare alternative o parole facoltative. È anche possibile usare i puntini di sospensione (...) nel testo vocale come segnaposto per qualsiasi parola. Tuttavia, l'uso troppo frequente dei puntini di sospensione può rendere più difficile per il motore distinguere tra comandi vocali diversi. In ogni caso, assicurarsi sempre che il testo vocale includa almeno una parola distintiva per ogni comando non facoltativo. In genere, deve corrispondere a una o più parole nel testo della didascalia definito visualizzato nella finestra Comandi.
 
-Sebbene sia possibile includere simboli, punteggiatura o abbreviazioni nel testo della didascalia, evitarli nel testo vocale. Molti motori di riconoscimento vocale non possono gestire simboli e abbreviazioni oppure possono usarli per impostare parametri di input speciali. Inoltre, vengono digitati i numeri. Questo garantisce anche un supporto per il riconoscimento più affidabile.
+Anche se è possibile includere simboli, punteggiatura o abbreviazioni nel testo della didascalia, evitarli nel testo vocale. Molti motori di riconoscimento vocale non possono gestire simboli e abbreviazioni o possono usarli per impostare parametri di input speciali. È anche possibile scrivere i numeri. In questo modo si garantisce anche un supporto di riconoscimento più affidabile.
 
-È anche possibile usare i prompt della direttiva per evitare input aperti. I prompt della direttiva fanno riferimento in modo implicito alle scelte o lo dichiarano in modo esplicito, come illustrato negli esempi seguenti:
+È anche possibile usare richieste di direttiva per evitare input aperto. Le richieste di direttiva fanno riferimento in modo implicito alle scelte o le dichiarano in modo esplicito, come illustrato negli esempi seguenti:
 
 
 
-|                                            |                                                     |
+| Prompt                                           | Valutazione                                                    |
 |--------------------------------------------|-----------------------------------------------------|
 | Cosa vuoi?                          | Troppo generale, una richiesta aperta                  |
-| Scegliere uno stile o un ingrediente per la pizza.        | Bene, se le scelte sono visibili, ma ancora generali     |
-| Pronunciare "Hawaiian", "Chicago" o "The Works". | Migliore, una direttiva esplicita con opzioni specifiche |
+| Scegliere uno stile o un ingrediente per la pizza.        | Buona, se le scelte sono visibili, ma comunque generali     |
+| Pronunciare "Chicago", "Chicago" o "The Works". | Meglio, una direttiva esplicita con opzioni specifiche |
 
 
 
- 
+ 
 
-In questo modo l'utente viene indirizzato per l'invio di un comando valido. Suggerendo parole o frasi, è più probabile che si tratti di una formulazione prevista in return. Per evitare la ripetibilità non naturale, modificare il testo o abbreviare l'originale per la presentazione successiva quando l'utente diventa più esperto con lo stile di input. I prompt della direttiva possono essere usati anche nelle situazioni in cui l'utente non riesce a emettere un comando entro un periodo di tempo previsto o non fornisce un comando previsto. I prompt della direttiva possono essere forniti usando l'output vocale, le interfacce dell'applicazione o entrambi. La chiave sta aiutando l'utente a comprendere le scelte appropriate.
+Questo guida l'utente verso l'esecuzione di un comando valido. Suggerendo le parole o la frase, è più probabile che si ritieni in cambio la formulazione prevista. Per evitare ripetitività innaturale, modificare la formulazione o abbreviare l'originale per la presentazione successiva man appena l'utente diventa più esperto con lo stile di input. I prompt delle direttive possono essere usati anche in situazioni in cui l'utente non riesce a eseguire un comando entro un periodo prestabilito o non riesce a fornire un comando previsto. Le richieste di direttiva possono essere fornite usando l'output vocale, le interfacce dell'applicazione o entrambi. La chiave è aiutare l'utente a conoscere le scelte appropriate.
 
-Il wording influisce sull'esito positivo di una richiesta. Ad esempio, la richiesta "si vuole ordinare la pizza?" potrebbe generare una risposta "Yes" o "No", ma potrebbe anche generare una richiesta di ordine. Definire richieste non ambigue o essere pronte ad accettare una maggiore varietà di risposte possibili. Si noti inoltre la tendenza per le persone a simulare parole e costrutti che ascoltano. Questo può essere usato spesso per aiutare a evocare una risposta appropriata come nell'esempio seguente:
+La formulazione influenza il successo di una richiesta. Ad esempio, il prompt "Would you like to order your pizza?" potrebbe generare una risposta "Sì" o "No", ma potrebbe anche generare una richiesta di ordine. Definire le richieste in modo che siano non ambigue o prepararsi ad accettare una più ampia gamma di possibili risposte. Si noti anche la tendenza delle persone a simulare le parole e i costrutti che udino. Questo può essere spesso usato per aiutare a ottenere una risposta appropriata, come nell'esempio seguente:
 
+**Utente:** Mostrami tutti i messaggi di Paul.
 
+**Carattere:**
 
-|            |                                 |
-|------------|---------------------------------|
-| Utente:      | Mostra tutti i messaggi di Paul. |
-| Carattere |                                 |
+È più probabile che il nome completo di una delle parti sia preceduto dal prefisso "Intendevo" o "Intendevo".
 
+Poiché i caratteri di Microsoft Agent operano all'interno dell'interfaccia visiva di Microsoft Windows, è possibile usare gli elementi visivi per fornire richieste di direttiva per l'input vocale. Ad esempio, è possibile fare in modo che il movimento del carattere sia in un elenco di scelte e richiedere all'utente di selezionarne una o di visualizzare le scelte in una finestra di dialogo o di messaggio. Ciò offre due vantaggi: suggerisce in modo esplicito le parole che l'utente deve pronunciare e offre un modo alternativo per rispondere.
 
+È anche possibile usare altre modalità di interazione per suggerire agli utenti la grammatica vocale appropriata, come illustrato nell'esempio seguente:
 
- 
+**Utente:** (fa clic sull'opzione pizza di tipo napoletano con il mouse)
 
-È più probabile che il nome completo di una delle parti venga determinato con il prefisso "I mean" o "I means".
+**Carattere:** Pizza in stile napoletano.
 
-Poiché i caratteri di Microsoft Agent operano all'interno dell'interfaccia visiva di Microsoft Windows, è possibile usare gli elementi visivi per fornire i prompt della direttiva per l'input vocale. Ad esempio, è possibile impostare il carattere su un elenco di scelte e richiedere che l'utente ne selezioni uno oppure visualizzare le scelte in una finestra di dialogo o in una finestra di messaggio. Questo offre due vantaggi: suggerisce esplicitamente le parole che si desidera che l'utente parli e fornisce un modo alternativo per rispondere all'utente.
+**Utente:** (fa clic sull'opzione Extra Cheese con il mouse)
 
-È anche possibile usare altre modalità di interazione per suggerire leggermente agli utenti la grammatica vocale appropriata, come illustrato nell'esempio seguente:
+**Carattere:** Aggiungere "Extra Cheese".
 
+Un altro fattore importante per la riuscita dell'input vocale è il segnale dell'utente quando il motore è pronto per l'input, perché molti motori vocali consentono una sola espressione alla volta. Microsoft Agent offre supporto per questa operazione in due modi. In primo luogo, se la scheda audio supporta MIDI, Microsoft Agent genera un breve segnale quando il canale di input vocale è disponibile. In secondo momento, nella finestra Suggerimento per l'ascolto viene visualizzata una richiesta di testo appropriata quando il carattere (motore di riconoscimento vocale) è in ascolto dell'input. Inoltre, questo suggerimento visualizza ciò che il motore ha sentito.
 
+ 
 
-|            |                                                     |
-|------------|-----------------------------------------------------|
-| Utente:      | (Fare clic sull'opzione della pizza in stile hawaiano con il mouse) |
-| Carattere | Pizza in stile hawaiano.                               |
-| Utente:      | (Fare clic sull'opzione di formaggio aggiuntivo con il mouse)         |
-| Carattere | Aggiungere "Cheese aggiuntivo".                                 |
-
-
-
- 
-
-Un altro fattore importante nella riuscita dell'input vocale è la messa a punto dell'utente quando il motore è pronto per l'input, perché molti motori di riconoscimento vocale consentono una sola espressione alla volta. Microsoft Agent fornisce supporto per questa operazione in due modi. Prima di tutto, se la scheda audio supporta MIDI, Microsoft Agent genera un breve segnale acustico quando il canale di input vocale è disponibile. In secondo luogo, la finestra del suggerimento di ascolto Visualizza una richiesta di testo appropriata quando il carattere (motore vocale) è in ascolto dell'input. Inoltre, questo suggerimento Visualizza il contenuto del motore.
-
- 
-
- 
+ 
 
 
 

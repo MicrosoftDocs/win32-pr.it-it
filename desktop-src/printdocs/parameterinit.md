@@ -4,20 +4,20 @@ ms.assetid: d5419c40-43e9-49ff-a378-9aeb0757e400
 title: ParameterInit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e211fcad2c53824c7786850a7fc78c6825c219a7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0e0e0cadbf26d6ff516ab0ace90165e11420a9b7
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407264"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118976"
 ---
 # <a name="parameterinit"></a>ParameterInit
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Definisce un valore per un'istanza di un elemento ParameterDef. Un elemento ParameterInit è la destinazione del riferimento effettuato da un elemento ParameterRef.
 
-## <a name="element-tag"></a>Element Tag
+## <a name="element-tag"></a>Tag di elemento
 
 <ParameterInit>
 
@@ -35,7 +35,7 @@ Nella tabella seguente sono elencati gli attributi XML che possono essere relati
 
  
 
-Per altre informazioni, vedere la [sezione Attributi](xml-attributes.md) XML.
+Per altre informazioni, vedere la [sezione Attributi XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
@@ -43,7 +43,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 
 
-| Categoria                   |                                                                                                   |
+| Categoria                   | Nome o restrizione                                                                                                  |
 |----------------------------|---------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | PrintTicket (radice PrintTicket)<br/>                                                         |
 | Elementi figlio<br/>  | Valore (uno)<br/>                                                                            |
