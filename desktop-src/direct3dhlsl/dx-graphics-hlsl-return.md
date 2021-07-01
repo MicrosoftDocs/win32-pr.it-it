@@ -13,28 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 525abf6d815d2073ee39a6bc6a5a81120cf652ee
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 876c69f3ecfcf1ee1c8391ccc503b2316056b37a
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104976194"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119586"
 ---
-# <a name="return-statement"></a><span data-ttu-id="21af1-104">Istruzione return</span><span class="sxs-lookup"><span data-stu-id="21af1-104">return Statement</span></span>
+# <a name="return-statement"></a><span data-ttu-id="14a0f-104">Istruzione return</span><span class="sxs-lookup"><span data-stu-id="14a0f-104">return Statement</span></span>
 
-<span data-ttu-id="21af1-105">Un'istruzione return segnala la fine di una funzione.</span><span class="sxs-lookup"><span data-stu-id="21af1-105">A return statement signals the end of a function.</span></span>
+<span data-ttu-id="14a0f-105">Un'istruzione return segnala la fine di una funzione.</span><span class="sxs-lookup"><span data-stu-id="14a0f-105">A return statement signals the end of a function.</span></span>
 
-
-
-|                   |
-|-------------------|
-| <span data-ttu-id="21af1-106">\[valore restituito \] ;</span><span class="sxs-lookup"><span data-stu-id="21af1-106">return \[value\];</span></span> |
+<span data-ttu-id="14a0f-106">valore \[ restituito \] ;</span><span class="sxs-lookup"><span data-stu-id="14a0f-106">return \[value\];</span></span>
 
 
 
- 
+ 
 
-<span data-ttu-id="21af1-107">L'istruzione return più semplice restituisce il controllo dalla funzione al programma chiamante. non restituisce alcun valore.</span><span class="sxs-lookup"><span data-stu-id="21af1-107">The simplest return statement returns control from the function to the calling program; it returns no value.</span></span>
+<span data-ttu-id="14a0f-107">L'istruzione return più semplice restituisce il controllo dalla funzione al programma chiamante. non restituisce alcun valore.</span><span class="sxs-lookup"><span data-stu-id="14a0f-107">The simplest return statement returns control from the function to the calling program; it returns no value.</span></span>
 
 
 ```
@@ -46,7 +42,7 @@ void main()
 
 
 
-<span data-ttu-id="21af1-108">Tuttavia, un'istruzione Return può restituire uno o più valori.</span><span class="sxs-lookup"><span data-stu-id="21af1-108">However, a return statement can return one or more values.</span></span> <span data-ttu-id="21af1-109">In questo esempio viene restituito un valore letterale:</span><span class="sxs-lookup"><span data-stu-id="21af1-109">This example returns a literal value:</span></span>
+<span data-ttu-id="14a0f-108">Tuttavia, un'istruzione return può restituire uno o più valori.</span><span class="sxs-lookup"><span data-stu-id="14a0f-108">However, a return statement can return one or more values.</span></span> <span data-ttu-id="14a0f-109">Questo esempio restituisce un valore letterale:</span><span class="sxs-lookup"><span data-stu-id="14a0f-109">This example returns a literal value:</span></span>
 
 
 ```
@@ -58,7 +54,7 @@ float main( float input : COLOR0) : COLOR0
 
 
 
-<span data-ttu-id="21af1-110">In questo esempio viene restituito il risultato scalare di un'espressione.</span><span class="sxs-lookup"><span data-stu-id="21af1-110">This example returns the scalar result of an expression.</span></span>
+<span data-ttu-id="14a0f-110">In questo esempio viene restituito il risultato scalare di un'espressione.</span><span class="sxs-lookup"><span data-stu-id="14a0f-110">This example returns the scalar result of an expression.</span></span>
 
 
 ```
@@ -67,7 +63,7 @@ return  light.enabled = true ;
 
 
 
-<span data-ttu-id="21af1-111">In questo esempio viene restituito un vettore a quattro componenti costruito da una variabile locale e un valore letterale.</span><span class="sxs-lookup"><span data-stu-id="21af1-111">This example returns a four-component vector that is constructed from a local variable and a literal.</span></span>
+<span data-ttu-id="14a0f-111">Questo esempio restituisce un vettore a quattro componenti costruito da una variabile locale e da un valore letterale.</span><span class="sxs-lookup"><span data-stu-id="14a0f-111">This example returns a four-component vector that is constructed from a local variable and a literal.</span></span>
 
 
 ```
@@ -76,7 +72,7 @@ return  float4(color.rgb, 1) ;
 
 
 
-<span data-ttu-id="21af1-112">In questo esempio viene restituito un vettore a quattro componenti costruito dal risultato restituito da una funzione intrinseca, insieme ai valori letterali.</span><span class="sxs-lookup"><span data-stu-id="21af1-112">This example returns a four-component vector that is constructed from the result that is returned from an intrinsic function, together with literal values.</span></span>
+<span data-ttu-id="14a0f-112">Questo esempio restituisce un vettore a quattro componenti costruito dal risultato restituito da una funzione intrinseca, insieme ai valori letterali.</span><span class="sxs-lookup"><span data-stu-id="14a0f-112">This example returns a four-component vector that is constructed from the result that is returned from an intrinsic function, together with literal values.</span></span>
 
 
 ```
@@ -88,7 +84,7 @@ float4 func(float2 a: POSITION): COLOR
 
 
 
-<span data-ttu-id="21af1-113">In questo esempio viene restituita una struttura che contiene uno o più membri.</span><span class="sxs-lookup"><span data-stu-id="21af1-113">This example returns a structure that contains one or more members.</span></span>
+<span data-ttu-id="14a0f-113">In questo esempio viene restituita una struttura contenente uno o più membri.</span><span class="sxs-lookup"><span data-stu-id="14a0f-113">This example returns a structure that contains one or more members.</span></span>
 
 
 ```
@@ -109,16 +105,16 @@ VS_OUTPUT VertexShader_Tutorial_1(float4 inPos : POSITION )
 
 
 
-## <a name="see-also"></a><span data-ttu-id="21af1-114">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="21af1-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="14a0f-114">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="14a0f-114">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="21af1-115">Funzioni (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="21af1-115">Functions (DirectX HLSL)</span></span>](dx-graphics-hlsl-functions.md)
+[<span data-ttu-id="14a0f-115">Funzioni (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="14a0f-115">Functions (DirectX HLSL)</span></span>](dx-graphics-hlsl-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
