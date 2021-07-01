@@ -1,6 +1,6 @@
 ---
 title: texld - ps_1_4
-description: Carica il registro di destinazione con i dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate della trama. La trama campionata è la trama associata al numero di registro di destinazione.
+description: Carica il registro di destinazione con dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate di trama. La trama campionata è la trama associata al numero di registro di destinazione.
 ms.assetid: 1970aed4-4da7-40a1-960d-fba4dfd8c433
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ca305b16db0f390354962a3e959f08b6e956f2ef
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d956d9176a6356dc3837ee4f4d13b5bb700dda98
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996868"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118826"
 ---
 # <a name="texld---ps_1_4"></a>texld - ps \_ 1 \_ 4
 
-Carica il registro di destinazione con i dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate della trama. La trama campionata è la trama associata al numero di registro di destinazione.
+Carica il registro di destinazione con dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate di trama. La trama campionata è la trama associata al numero di registro di destinazione.
 
 
 
@@ -33,7 +33,7 @@ Carica il registro di destinazione con i dati di colore (RGBA) campionati usando
 
 
 
-|          |                      | Vn        | Cn  | Tn  | Rn  |              |
+| Valore         | Descrizione                     | Vn        | Cn  | Tn  | Rn  | Versione pixel shader              |
 |----------|----------------------|-----------|-----|-----|-----|--------------|
 | Dst      | Registro di destinazione |           |     |     | x   | 1\_4         |
 | src      | Registro di origine      |           |     | x   |     | 1 \_ 4 fase 1 |
@@ -49,7 +49,7 @@ Per altre informazioni sui registri, vedere [ps \_ 1 \_ 1 \_ \_ ps \_ 1 \_ 2 ps 
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione campio la trama nella fase della trama associata al numero di registro di destinazione. La trama viene campionata usando i dati delle coordinate della trama del registro di origine.
+Questa istruzione consente di eseguire il campionamento della trama nella fase di trama associata al numero di registro di destinazione. La trama viene campionata usando i dati delle coordinate della trama del registro di origine.
 
 La sintassi per le istruzioni texld e texcrd espone il supporto per una divisione proiettativa con un modificatore del registro trame. Per pixel shader versione 1.4, il flag di trasformazione della trama PROIETTATA D3DTTFF \_ viene sempre ignorato.
 
@@ -71,7 +71,7 @@ Regole per l'uso di texld:
 
 ## <a name="examples"></a>Esempio
 
-L'istruzione texld offre un certo controllo sui componenti dei dati delle coordinate della trama di origine. Il set completo di sintassi consentita per texld segue e include tutti i modificatori del registro di origine validi, i selettori e le combinazioni di maschera di scrittura.
+L'istruzione texld offre un certo controllo sui componenti dei dati delle coordinate della trama di origine. Il set completo di sintassi consentita per texld segue e include tutti i modificatori del registro di origine validi, i selettori e le combinazioni di maschere di scrittura.
 
 
 ```

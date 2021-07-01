@@ -1,5 +1,5 @@
 ---
-title: Gather (oggetto trama DirectX HLSL)
+title: Gather (oggetto Texture HLSL DirectX)
 description: Ottiene i quattro campioni (solo componente rosso) che verrebbero usati per l'interpolazione bilineare durante il campionamento di una trama.
 ms.assetid: a394d8c2-99cc-4a38-9ac9-34afc666ebe0
 ms.topic: reference
@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f333c204b77d6e0c64119e16f31e170fec1d0f6c
-ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
+ms.openlocfilehash: 4659ba19e9fa950a659969f2491533858f4658fb
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644103"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120546"
 ---
-# <a name="gather-directx-hlsl-texture-object"></a>Gather (oggetto trama DirectX HLSL)
+# <a name="gather-directx-hlsl-texture-object"></a>Gather (oggetto Texture HLSL DirectX)
 
 Ottiene i quattro campioni (solo componente rosso) che verrebbero usati per l'interpolazione bilineare durante il campionamento di una trama.
 
-
-
-|                                                                                                    |
-|----------------------------------------------------------------------------------------------------|
-| &lt;Tipo di &gt; modello 4 Object.Gather( sampler \_ state S, float2 \| 3 \| 4 \[ Location, int2 Offset \] ); |
+&lt;Template Type &gt; 4 Object.Gather( sampler \_ state S, float2 \| 3 \| 4 Location \[ , int2 Offset \] );
 
 
 
@@ -48,19 +44,19 @@ Ottiene i quattro campioni (solo componente rosso) che verrebbero usati per l'in
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Oggetto</em><br/></td>
-<td>Sono supportati <a href="dx-graphics-hlsl-to-type.md">i tipi di</a> oggetto trama seguenti: Texture2D, Texture2DArray, TextureCube, TextureCubeArray.<br/></td>
+<td>Sono supportati <a href="dx-graphics-hlsl-to-type.md">i tipi di oggetto</a> trama seguenti: Texture2D, Texture2DArray, TextureCube, TextureCubeArray.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
-<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file di effetti che contiene assegnazioni di stato.<br/></td>
+<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file di effetto che contiene assegnazioni di stato.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Posizione</em><br/></td>
-<td>[in] Coordinate della trama. Il tipo di argomento dipende dal tipo texture-object. <br/> 
+<td>[in] Coordinate della trama. Il tipo di argomento dipende dal tipo di oggetto trama. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>tipo Texture-Object</th>
 <th>Tipo di parametro</th>
 </tr>
 </thead>
@@ -84,7 +80,7 @@ Ottiene i quattro campioni (solo componente rosso) che verrebbero usati per l'in
 </tr>
 <tr class="even">
 <td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>compensare</em></p></td>
-<td><p>[in] Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Il tipo di argomento dipende dal tipo texture-object. Per gli shader con destinazione Shader Model 5.0 e successive, i 6 bit meno significativi di ogni valore di offset vengono rispettati come valore con segno, producendo l'intervallo [-32..31]. Per gli shader del modello di shader precedenti, gli offset devono essere numeri interi immediati compresi tra -8 e 7.</p>
+<td><p>[in] Offset delle coordinate della trama facoltativo, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Il tipo di argomento dipende dal tipo di oggetto trama. Per gli shader che hanno come destinazione il modello shader 5.0 e versione superiore, i 6 bit meno significativi di ogni valore di offset vengono rispettati come valore con segno, producendo un intervallo [-32..31]. Per gli shader del modello di shader precedenti, gli offset devono essere numeri interi immediati compresi tra -8 e 7.</p>
 
 <table>
 <thead>

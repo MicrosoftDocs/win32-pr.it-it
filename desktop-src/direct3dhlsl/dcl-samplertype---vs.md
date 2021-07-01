@@ -1,6 +1,6 @@
 ---
-title: dcl_samplerType (SM3-vs ASM)
-description: Dichiarare un campionatore vertex shader.
+title: dcl_samplerType (sm3 - vs asm)
+description: Dichiarare un campionatore di vertex shader.
 ms.assetid: 733307ac-24ab-4db7-bf70-58a83b4c39b1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,61 +9,57 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 556655d793e94b9290fcd1a4a40fdf7f797e80ae
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 2fbcb934ad591274d743f09c810de2db42278261
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104993205"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129869"
 ---
-# <a name="dcl_samplertype-sm3---vs-asm"></a>DCL \_ samplerType (SM3-vs ASM)
+# <a name="dcl_samplertype-sm3---vs-asm"></a>dcl \_ samplerType (sm3 - vs asm)
 
-Dichiarare un campionatore vertex shader.
+Dichiarare un campionatore di vertex shader.
 
 ## <a name="syntax"></a>Sintassi
 
-
-
-|                      |
-|----------------------|
-| samplerType di DCL \_\# |
+dcl \_ samplerType s\#
 
 
 
- 
+ 
 
 dove:
 
--   \_samplerType definisce il tipo di dati del campionatore. Determina il numero di coordinate necessarie per ogni coordinata di trama durante il campionamento. Sono definite le dimensioni delle coordinate di trama seguenti.
-    -   \_2D
-    -   \_cubo
-    -   \_volume
--   s \# identifica un campionatore dove s è un'abbreviazione del campionatore e \# è il numero di campionatore. [Sampler (Direct3D 9 ASM-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md)s sono pseudo-registri perché non è possibile leggere o scrivere direttamente.
+-   \_samplerType definisce il tipo di dati sampler. In questo modo viene determinato il numero di coordinate richieste da ogni coordinata di trama durante il campionamento. Vengono definite le dimensioni delle coordinate di trama seguenti.
+    -   \_2d
+    -   \_Cubo
+    -   \_Volume
+-   s \# identifica un campionatore, dove s è un'abbreviazione del campionatore e \# è il numero del campionatore. [I sampler (Direct3D 9 asm-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md)sono pseudoregistri perché non è possibile leggerli o scriverli direttamente.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| \_samplerType DCL       |      |      |      |       | x    | x     |
+| dcl \_ samplerType       |      |      |      |       | x    | x     |
 
 
 
- 
+ 
 
-Tutte le \_ istruzioni samplerType di DCL devono essere visualizzate prima della prima istruzione eseguibile.
+Tutte le istruzioni dcl \_ samplerType devono essere visualizzate prima della prima istruzione eseguibile.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

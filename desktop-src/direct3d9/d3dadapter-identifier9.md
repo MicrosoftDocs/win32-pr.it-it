@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: db4b25cb44b3b43b3b9754f241e2c505bdfedbc7
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 85401573956d29386b5ddabbd48711a7be140463
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343396"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129970"
 ---
 # <a name="d3dadapter_identifier9-structure"></a>Struttura D3DADAPTER \_ IDENTIFIER9
 
@@ -32,9 +32,12 @@ typedef struct D3DADAPTER_IDENTIFIER9 {
   char          Driver[MAX_DEVICE_IDENTIFIER_STRING];
   char          Description[MAX_DEVICE_IDENTIFIER_STRING];
   char          DeviceName[32];
+#ifdef _WIN32
   LARGE_INTEGER DriverVersion;
+#else
   DWORD         DriverVersionLowPart;
   DWORD         DriverVersionHighPart;
+#endif
   DWORD         VendorId;
   DWORD         DeviceId;
   DWORD         SubSysId;
@@ -101,7 +104,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificare la versione del driver Direct3D. È possibile eseguire confronti < e > sul valore intero con segno a 64 bit. Tuttavia, prestare attenzione se si usa questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
+Identificare la versione del driver Direct3D. È legale eseguire confronti < e > sul valore intero con segno a 64 bit. Prestare tuttavia attenzione se si usa questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -112,7 +115,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificare la versione del driver Direct3D. È possibile eseguire confronti < e > sul valore intero con segno a 64 bit. Tuttavia, prestare attenzione se si usa questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
+Identificare la versione del driver Direct3D. È legale eseguire confronti < e > sul valore intero con segno a 64 bit. Prestare tuttavia attenzione se si usa questo elemento per identificare i driver problematici. È invece consigliabile usare DeviceIdentifier. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -167,7 +170,7 @@ Tipo: **[ **GUID**](guid.md)**
 
 </dd> <dd>
 
-È possibile eseguire query per verificare le modifiche nel driver e nel chip set. Questo GUID è un identificatore univoco per la coppia di driver e chip set. Eseguire una query su questo membro per tenere traccia delle modifiche apportate al driver e al chip set per generare un nuovo profilo per il sottosistema grafico. DeviceIdentifier può essere usato anche per identificare driver problematici specifici.
+È possibile eseguire query per controllare le modifiche nel driver e nel chip set. Questo GUID è un identificatore univoco per la coppia di driver e chip set. Eseguire una query su questo membro per tenere traccia delle modifiche apportate al driver e al chip set per generare un nuovo profilo per il sottosistema grafico. DeviceIdentifier può essere usato anche per identificare driver problematici specifici.
 
 </dd> <dt>
 
@@ -185,8 +188,8 @@ Usato per determinare il Windows Hardware Quality Labs di convalida (WHQL) per q
 | BITS  |  Descrizione                                             |
 |-------|-----------------------------------------------|
 | 31-16 | Anno, un numero decimale dal 1999 verso l'alto. |
-| 15-8  | Mese, un numero decimale da 1 a 12.     |
-| 7-0   | Giorno, un numero decimale da 1 a 31.       |
+| 15-8  | Mese, numero decimale da 1 a 12.     |
+| 7-0   | Giorno, numero decimale da 1 a 31.       |
 
 
 
@@ -198,7 +201,7 @@ Vengono usati anche i valori seguenti.
 
 | Valore    |  Descrizione                                                     |
 |-----|-------------------------------------------------------|
-| 0   | Non certificato.                                        |
+| 0   | Non certificata.                                        |
 | 1   | WHQL convalidato, ma non sono disponibili informazioni sulla data. |
 
 
@@ -207,7 +210,7 @@ Vengono usati anche i valori seguenti.
 
 Differenze tra Direct3D 9 e Direct3D 9Ex:
 
-Per Direct3D9Ex in esecuzione in Windows Vista, Windows Server 2008, Windows 7 e Windows Server 2008 R2 (o più sistemi operativi correnti), [**IDirect3D9::GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) restituisce 1 per il livello WHQL senza controllare lo stato del driver.
+Per Direct3D9Ex in esecuzione in Windows Vista, Windows Server 2008, Windows 7 e Windows Server 2008 R2 (o un sistema operativo più recente), [**IDirect3D9::GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) restituisce 1 per il livello WHQL senza controllare lo stato del driver.
 
 </dd> </dl>
 
@@ -236,7 +239,7 @@ MAX \_ DEVICE IDENTIFIER STRING è una costante con la definizione \_ \_ seguent
 
 
 
-I membri VendorId, DeviceId, SubSysId e Revision possono essere usati in tandem per identificare set di chip specifici. Tuttavia, usare questi membri con cautela.
+I membri VendorId, DeviceId, SubSysId e Revision possono essere usati in tandem per identificare determinati chip set. Tuttavia, usare questi membri con cautela.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -248,7 +251,7 @@ I membri VendorId, DeviceId, SubSysId e Revision possono essere usati in tandem 
 
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 178b31a386a7ae4aa266ac33ddbb1ee5c842f2d1
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2c506d2ad23003f93bbaea409cacc60b18c86534
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997168"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129708"
 ---
 # <a name="dcl_semantics-sm3---ps-asm"></a>semantica dcl \_ (sm3 - ps asm)
 
@@ -22,11 +22,7 @@ Dichiarare l'associazione tra l'output del vertex shader e pixel shader input.
 
 ## <a name="syntax"></a>Sintassi
 
-
-
-|                                                   |
-|---------------------------------------------------|
-| dcl \_ semantics \[ \_ centroid \] dst \[ .write \_ mask\] |
+dcl \_ semantics \[ \_ centroid \] dst \[ .write \_ mask\]
 
 
 
@@ -35,7 +31,7 @@ Dichiarare l'associazione tra l'output del vertex shader e pixel shader input.
 Dove:
 
 -   \_semantica: identifica l'utilizzo dei dati previsto e può essere uno dei valori in [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (senza il prefisso D3DDECLUSAGE). \_ Inoltre, è possibile aggiungere un indice integer alla semantica per distinguere i parametri che usano una semantica simile.
--   \[\_[Centroide](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] è un modificatore di istruzione facoltativo. È supportato nelle istruzioni di utilizzo dcl che dichiarano i registri \_ di input e nelle istruzioni di ricerca trame. Il centroide viene aggiunto senza spazio.
+-   \[\_[Centroid](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] è un modificatore di istruzione facoltativo. È supportato nelle istruzioni di utilizzo dcl che dichiarano i registri \_ di input e nelle istruzioni di ricerca trame. Il centroide viene aggiunto senza spazio.
 -   dst: registro di destinazione. Vedere [ps \_ 3 \_ 0 Registers](dx9-graphics-reference-asm-ps-registers-ps-3-0.md).
 -   write mask: lo stesso registro di output può essere dichiarato più volte, ogni volta con una maschera di scrittura univoca (in modo che sia possibile applicare una semantica diversa \_ ai singoli componenti). Tuttavia, la stessa semantica non può essere usata più volte in una dichiarazione. Ciò significa che i vettori devono essere quattro componenti o meno e non possono attraversare i limiti del registro a quattro componenti (registri di output singoli). Quando viene \_ usata la semantica psize, deve avere una maschera di scrittura completa perché è considerata scalare. Quando viene usata la semantica di posizione, deve avere una maschera di scrittura completa perché tutti e quattro i componenti \_ devono essere scritti.
 
@@ -45,13 +41,13 @@ Dove:
 
 | Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| dcl \_ usage            |      |      |      |      |      |      |       | x    | x     |
+| Utilizzo di \_ dcl            |      |      |      |      |      |      |       | x    | x     |
 
 
 
  
 
-Tutte le istruzioni dcl \_ usage devono essere visualizzate prima della prima istruzione eseguibile.
+Tutte le istruzioni di \_ utilizzo dcl devono essere visualizzate prima della prima istruzione eseguibile.
 
 ## <a name="declaration-examples"></a>Esempi di dichiarazione
 

@@ -1,6 +1,6 @@
 ---
-title: Break-PS
-description: Suddividere il ciclo corrente nel EndLoop-PS o endrep-PS più vicino.
+title: break - ps
+description: Uscire dal ciclo corrente all'endloop più vicino - ps o endrep - ps.
 ms.assetid: c1f81e40-5df3-4094-8ab2-1d8009130367
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ce370cb53a5589c2e3318e54b109a535f323a23a
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: b5df9f4edf7a4261e907bd715a5528b8036799b5
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398263"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129879"
 ---
-# <a name="break---ps"></a>Break-PS
+# <a name="break---ps"></a>break - ps
 
-Suddividere il ciclo corrente nel [EndLoop-PS](endloop---ps.md) o [endrep-PS](endrep---ps.md)più vicino.
+Uscire dal ciclo corrente [all'endloop più](endloop---ps.md) vicino - ps [o endrep - ps](endrep---ps.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,7 +29,7 @@ Suddividere il ciclo corrente nel [EndLoop-PS](endloop---ps.md) o [endrep-PS](en
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
@@ -37,34 +37,34 @@ Questa istruzione è supportata nelle versioni seguenti.
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | break                 |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 
 
-|                          |            |
+|   Requisito                       | Valore           |
 |--------------------------|------------|
 | Sistema operativo minimo | Windows 98 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

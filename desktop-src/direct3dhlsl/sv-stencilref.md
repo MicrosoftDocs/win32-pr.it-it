@@ -1,6 +1,6 @@
 ---
 title: SV_StencilRef
-description: SV \_ StencilRef rappresenta il valore di riferimento dello pixel shader dello stencil corrente.
+description: SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader corrente.
 ms.assetid: 0E27BF04-9DA0-4D6D-BD50-07553F80590E
 keywords:
 - SV_StencilRef HLSL
@@ -12,24 +12,23 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 565a554508277ab9ce49b377b5a7e121db45b20c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e2900b2a821a03db4bc749a01c85b909901c39b2
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996498"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118936"
 ---
 # <a name="sv_stencilref"></a>SV \_ StencilRef
 
-SV \_ StencilRef rappresenta il valore di riferimento dello pixel shader dello stencil corrente.
+SV \_ StencilRef rappresenta il valore di riferimento dello stencil pixel shader corrente.
 
 ## <a name="type"></a>Tipo
 
 
 
-|      |
+| Tipo     |
 |------|
-| Tipo |
 | uint |
 
 
@@ -43,7 +42,7 @@ La specifica del valore di riferimento dello shader pixel shader è disponibile 
 -   [Valore di riferimento dello stencil specificato dello shader D3D11.3](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
 -   [Valore di riferimento dello stencil specificato dello shader D3D12](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 

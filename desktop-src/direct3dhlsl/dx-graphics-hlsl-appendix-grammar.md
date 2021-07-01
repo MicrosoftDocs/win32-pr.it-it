@@ -1,6 +1,6 @@
 ---
 title: Grammatica
-description: Le istruzioni HLSL vengono create usando le regole seguenti per la grammatica.
+description: Le istruzioni HLSL vengono costruite usando le regole seguenti per la grammatica.
 ms.assetid: 683248e9-6fc7-451a-906b-6e0aab1b0c8c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d2346e1ca2302f80c796558b4aa2bbdce016d494
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b77f1050beaee2b269d12e69704018e3c5abee6e
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104516519"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129849"
 ---
 # <a name="grammar"></a>Grammatica
 
-Le istruzioni HLSL vengono create usando le regole seguenti per la grammatica.
+Le istruzioni HLSL vengono costruite usando le regole seguenti per la grammatica.
 
--   [Whitespace](#whitespace)
+-   [Spazio vuoto](#whitespace)
 -   [Numeri a virgola mobile](#floating-point-numbers)
 -   [Numeri interi](#integer-numbers)
 -   [Caratteri](#characters)
@@ -29,49 +29,41 @@ Le istruzioni HLSL vengono create usando le regole seguenti per la grammatica.
 -   [Operatori](#operators)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="whitespace"></a>Spazi vuoti
+## <a name="whitespace"></a>Spazio vuoto
 
-I caratteri seguenti sono riconosciuti come spazi vuoti.
+I caratteri seguenti vengono riconosciuti come spazi vuoti.
 
-
-
-|                            |
-|----------------------------|
-| SPACE                      |
-| TAB                        |
-| FINE riga                        |
-| Commenti in stile C (/ \* \* /) |
-| Commenti in stile C++ (//)    |
-
-
-
- 
+- SPACE
+- TAB
+- Eol
+- Commenti in stile C (/ \* \* /)
+- Commenti in stile C++ (//)
 
 ## <a name="floating-point-numbers"></a>Numeri a virgola mobile
 
-I numeri a virgola mobile sono rappresentati in HLSL, come indicato di seguito:
+I numeri a virgola mobile sono rappresentati in HLSL come segue:
 
--   frazionario: suffisso a virgola mobile (opt) a virgola mobile (opt)
+-   fractional-constant exponent-part(opt) floating-suffix(opt)
 
-    cifre-sequenza esponente-parte a virgola mobile (opt)
+    digit-sequence exponent-part floating-suffix(opt)
 
--   costante frazionaria:
+-   fractional-constant :
 
-    digit-Sequence (opt). digit-sequence
+    digit-sequence(opt) . digit-sequence
 
-    sequenza numerica.
+    digit-sequence .
 
--   parte esponente:
+-   exponent-part :
 
-    segno e (opt) digit-Sequence
+    e sign(opt) digit-sequence
 
-    Segno E (opt) digit-Sequence
+    E sign(opt) digit-sequence
 
 -   sign : uno tra
 
     \+ -
 
--   sequenza numerica:
+-   digit-sequence :
 
     digit
 
@@ -79,11 +71,11 @@ I numeri a virgola mobile sono rappresentati in HLSL, come indicato di seguito:
 
 -   floating-suffix : uno tra
 
-    h H f l L
+    h H f F l L
 
-    Usare il suffisso "L" per specificare un valore letterale a virgola mobile con precisione a 64 bit completo. Il valore predefinito è un valore letterale float a 32 bit.
+    Usare il suffisso "L" per specificare un valore letterale a virgola mobile e precisione a 64 bit completo. Un valore letterale float a 32 bit è il valore predefinito.
 
-    Il compilatore, ad esempio, riconosce il valore letterale seguente come valore letterale a virgola mobile con precisione a 32 bit e ignora i bit inferiori:
+    Ad esempio, il compilatore riconosce il valore letterale seguente come valore letterale a virgola mobile e precisione a 32 bit e ignora i bit inferiori:
 
     ```
     double x = -0.6473313946860445;
@@ -91,7 +83,7 @@ I numeri a virgola mobile sono rappresentati in HLSL, come indicato di seguito:
 
     
 
-    Il compilatore riconosce il valore letterale seguente come valore letterale a virgola mobile con precisione a 64 bit:
+    Il compilatore riconosce il valore letterale seguente come valore letterale a virgola mobile e precisione a 64 bit:
 
     ```
     double x = -0.6473313946860445L;
@@ -101,10 +93,10 @@ I numeri a virgola mobile sono rappresentati in HLSL, come indicato di seguito:
 
 ## <a name="integer-numbers"></a>Numeri interi
 
-I numeri interi sono rappresentati in HLSL, come indicato di seguito:
+I numeri interi sono rappresentati in HLSL come segue:
 
--   Integer-Constant Integer-suffisso (opt)
--   costante Integer: uno tra
+-   integer-constant integer-suffix(opt)
+-   integer-constant: uno di
 
     \# (numero decimale)
 
@@ -112,39 +104,39 @@ I numeri interi sono rappresentati in HLSL, come indicato di seguito:
 
     0x \# (numero esadecimale)
 
--   il suffisso Integer può essere uno dei seguenti:
+-   integer-suffix può essere uno dei seguenti:
 
-    u U l
+    u U l L
 
 ## <a name="characters"></a>Caratteri
 
-I caratteri sono rappresentati in HLSL, come indicato di seguito:
+I caratteri sono rappresentati in HLSL come indicato di seguito:
 
 
 
-|                                           |                                                                 |
+| Carattere                                          | Descrizione                                                                |
 |-------------------------------------------|-----------------------------------------------------------------|
-| c                                       | carattere                                                     |
-| ' \\ a' \\ b '' \\ f '' \\ b '' \\ r '' T'' \\ \\ v' | Escape                                                       |
+| 'c'                                       | (carattere)                                                     |
+| \\'a' \\ 'b' \\ 'f' \\ 'b' \\ 'r' \\ 't' \\ 'v' | (caratteri di escape)                                                       |
 | '\\\#\#\#'                                | (escape ottale, ognuno \# è una cifra ottale)                       |
-| ' \\ x \# '                                   | (escape esadecimale, \# è un numero esadecimale, un numero qualsiasi di cifre)            |
-| ' \\ c'                                     | (c è un altro carattere, incluse la barra rovesciata e le virgolette) |
+| ' \\ x \# '                                   | (carattere di escape esadecimale, \# numero esadecimale, qualsiasi numero di cifre)            |
+| \\'c'                                     | (c è un altro carattere, incluse la barra rovesciata e le virgolette) |
 
 
 
- 
+ 
 
-Le espressioni di escape non sono supportate nelle espressioni del preprocessore.
+Gli escape non sono supportati nelle espressioni del preprocessore.
 
 ## <a name="strings"></a>Stringhe
 
-Le stringhe sono rappresentate in HLSL, come indicato di seguito:
+Le stringhe sono rappresentate in HLSL come indicato di seguito:
 
 "s" (s è qualsiasi stringa con caratteri di escape).
 
 ## <a name="identifiers"></a>Identificatori
 
-Gli identificatori sono rappresentati in HLSL, come indicato di seguito:
+Gli identificatori sono rappresentati in HLSL come segue:
 
 
 ```
@@ -163,7 +155,7 @@ Gli identificatori sono rappresentati in HLSL, come indicato di seguito:
 
 
 
-Anche qualsiasi altro carattere singolo che non corrisponde a un'altra regola.
+Qualsiasi altro carattere singolo che non corrisponde a un'altra regola.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -172,9 +164,9 @@ Anche qualsiasi altro carattere singolo che non corrisponde a un'altra regola.
 [Appendice (DirectX HLSL)](dx-graphics-hlsl-appendix.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,31 +1,31 @@
 ---
-description: Alcuni file di immagine contengono metadati che è possibile leggere per determinare le funzionalità dell'immagine.
+description: Alcuni file di immagine contengono metadati che è possibile leggere per determinare le caratteristiche dell'immagine.
 ms.assetid: 2febea35-3fea-4a2d-baaf-7a4f935fc81f
 title: Lettura e scrittura di metadati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f599c1134efc8768d0b6ed59deaae8adf9f6f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e4ea0a8f389f31870b31a0b15480815bdd7cf1f
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751314"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118296"
 ---
 # <a name="reading-and-writing-metadata"></a>Lettura e scrittura di metadati
 
-Alcuni file di immagine contengono metadati che è possibile leggere per determinare le funzionalità dell'immagine. Ad esempio, una fotografia digitale potrebbe contenere metadati che è possibile leggere per determinare la marca e il modello della fotocamera usata per acquisire l'immagine. Con Windows GDI+ è possibile leggere i metadati esistenti ed è anche possibile scrivere nuovi metadati nei file di immagine.
+Alcuni file di immagine contengono metadati che è possibile leggere per determinare le caratteristiche dell'immagine. Ad esempio, una fotografia digitale potrebbe contenere metadati che è possibile leggere per determinare la make e il modello della fotocamera usata per acquisire l'immagine. Con GDI+ di Windows è possibile leggere i metadati esistenti ed è anche possibile scrivere nuovi metadati nei file di immagine.
 
-GDI+ fornisce un modo uniforme per archiviare e recuperare i metadati dai file di immagine in vari formati. In GDI+, un frammento di metadati viene chiamato *elemento proprietà*. È possibile archiviare e recuperare i metadati chiamando i metodi **SetPropertyItem** e **GetPropertyItem** della classe [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e non è necessario preoccuparsi dei dettagli del modo in cui un particolare formato di file archivia tali metadati.
+GDI+ offre un modo uniforme per archiviare e recuperare metadati dai file di immagine in vari formati. In GDI+, una parte di metadati è denominata elemento *di proprietà*. È possibile archiviare e recuperare metadati chiamando i metodi **SetPropertyItem** e **GetPropertyItem** della classe [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e non è necessario preoccuparsi dei dettagli del modo in cui un particolare formato di file archivia i metadati.
 
-GDI+ supporta attualmente i metadati per i formati di file TIFF, JPEG, EXIF e PNG. Il formato EXIF, che specifica come archiviare le immagini acquisite dalle fotocamere digitali ancora, si basa sui formati TIFF e JPEG. EXIF usa il formato TIFF per i dati pixel non compressi e il formato JPEG per i dati pixel compressi.
+GDI+ supporta attualmente i metadati per i formati di file TIFF, JPEG, Exif e PNG. Il formato Exif, che specifica come archiviare le immagini acquisite da fotocamere digitali, è basato sui formati TIFF e JPEG. Exif usa il formato TIFF per i dati pixel non compressi e il formato JPEG per i dati pixel compressi.
 
-GDI+ definisce un set di tag di proprietà che identificano gli elementi di proprietà. Alcuni tag sono di uso generale; ovvero sono supportati da tutti i formati di file indicati nel paragrafo precedente. Gli altri tag sono specifici per scopi specifici e si applicano solo a determinati formati. Se si tenta di salvare un elemento di proprietà in un file che non supporta tale elemento della proprietà, GDI+ ignora la richiesta. In particolare, il metodo [**Image:: SetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpropertyitem) restituisce PropertyNotSupported.
+GDI+ definisce un set di tag di proprietà che identificano gli elementi delle proprietà. Alcuni tag sono per utilizzo generico. sono supportati da tutti i formati di file indicati nel paragrafo precedente. Altri tag sono a scopo speciale e si applicano solo a determinati formati. Se si tenta di salvare un elemento proprietà in un file che non supporta tale elemento proprietà, GDI+ ignora la richiesta. In particolare, il [**metodo Image::SetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpropertyitem) restituisce PropertyNotSupported.
 
-È possibile determinare gli elementi delle proprietà archiviati in un file di immagine chiamando [**Image:: GetPropertyIdList**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertyidlist). Se si tenta di recuperare un elemento della proprietà che non è presente nel file, GDI+ ignora la richiesta. In particolare, il metodo [**Image:: GetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertyitem) restituisce PropertyNotFound.
+È possibile determinare gli elementi delle proprietà archiviati in un file di immagine chiamando [**Image::GetPropertyIdList.**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertyidlist) Se si tenta di recuperare un elemento di proprietà che non si trova nel file, GDI+ ignora la richiesta. In particolare, il [**metodo Image::GetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertyitem) restituisce PropertyNotFound.
 
-## <a name="reading-metadata-from-a-file"></a>Lettura dei metadati da un file
+## <a name="reading-metadata-from-a-file"></a>Lettura di metadati da un file
 
-La seguente applicazione console chiama il metodo **GetPropertySize** di un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) per determinare il numero di parti di metadati presenti nel file FakePhoto.jpg.
+L'applicazione console seguente chiama **il metodo GetPropertySize** di un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) per determinare il numero di metadati presenti nel file FakePhoto.jpg.
 
 
 ```
@@ -54,7 +54,7 @@ INT main()
 
 
 
-Il codice precedente, insieme a un determinato file FakePhoto.jpg, ha prodotto l'output seguente:
+Il codice precedente, insieme a un particolare file, FakePhoto.jpg, ha prodotto l'output seguente:
 
 
 ```
@@ -64,24 +64,24 @@ The total size of the metadata is 436 bytes.
 
 
 
-In GDI+ viene archiviato un singolo elemento di metadati in un oggetto [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) . È possibile chiamare il metodo **GetAllPropertyItems** della classe [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) per recuperare tutti i metadati da un file. Il metodo **GetAllPropertyItems** restituisce una matrice di oggetti **PropertyItem** . Prima di chiamare **GetAllPropertyItems**, è necessario allocare un buffer sufficientemente grande da ricevere tale matrice. È possibile chiamare il metodo **GetPropertySize** della classe **Image** per ottenere la dimensione (in byte) del buffer richiesto.
+GDI+ archivia una singola parte di metadati in un [**oggetto PropertyItem.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) È possibile chiamare il **metodo GetAllPropertyItems** della [**classe Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) per recuperare tutti i metadati da un file. Il **metodo GetAllPropertyItems** restituisce una matrice di **oggetti PropertyItem.** Prima di chiamare **GetAllPropertyItems,** è necessario allocare un buffer sufficientemente grande per ricevere tale matrice. È possibile chiamare il **metodo GetPropertySize** della **classe Image** per ottenere le dimensioni (in byte) del buffer richiesto.
 
-Un oggetto [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) dispone dei quattro membri pubblici seguenti:
+Un [**oggetto PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) ha i quattro membri pubblici seguenti:
 
 
 
-|            |                                                                                                                                                                                                                                                                                                        |
+|            | Descrizione                                                                                                                                                                                                                                                                                                       |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **id**     | Tag che identifica l'elemento dei metadati. I valori che possono essere assegnati all' **ID** (PropertyTagImageTitle, PropertyTagEquipMake, PropertyTagExifExposureTime e like) sono definiti in Gdiplusimaging. h.                                                                                           |
-| **length** | Lunghezza, in byte, della matrice di valori a cui punta il membro dati del **valore** . Si noti che se il membro dati **Type** è impostato su PropertyTagTypeASCII, il membro dati length è la **lunghezza** di una stringa di caratteri con terminazione null, incluso il terminatore null.                        |
-| **type**   | Tipo di dati dei valori nella matrice a cui punta il membro dati value. Le costanti (PropertyTagTypeByte, PropertyTagTypeASCII e like) che rappresentano vari tipi di dati sono descritte in [**costanti di tipo di tag della proprietà Image**](-gdiplus-constant-image-property-tag-type-constants.md). |
+| **id**     | Tag che identifica l'elemento di metadati. I valori che possono essere assegnati a **id** (PropertyTagImageTitle, PropertyTagEquipMake, PropertyTagExifExposureTime e simili) sono definiti in Gdiplusimaging.h.                                                                                           |
+| **length** | Lunghezza, in byte, della matrice di valori a cui punta il membro **dati** value. Si noti  che se il membro dati type è impostato su PropertyTagTypeASCII, il membro dati length è la lunghezza di una stringa di caratteri con terminazione Null, incluso il carattere di terminazione NULL.                         |
+| **type**   | Tipo di dati dei valori nella matrice a cui punta il membro dati value. Le costanti (PropertyTagTypeByte, PropertyTagTypeASCII e simili) che rappresentano vari tipi di dati sono descritte in Costanti del tipo di tag delle proprietà [**dell'immagine.**](-gdiplus-constant-image-property-tag-type-constants.md) |
 | **value**  | Puntatore a una matrice di valori.                                                                                                                                                                                                                                                                       |
 
 
 
  
 
-La seguente applicazione console legge e visualizza le sette parti di metadati nel file FakePhoto.jpg. La funzione Main si basa sulla funzione helper PropertyTypeFromWORD, che viene mostrata dopo la funzione Main.
+L'applicazione console seguente legge e visualizza i sette metadati nel file FakePhoto.jpg. La funzione main si basa sulla funzione helper PropertyTypeFromWORD, illustrata dopo la funzione main.
 
 
 ```
@@ -195,19 +195,19 @@ Property Item 6
 
 
 
-L'output precedente mostra un numero ID esadecimale per ogni elemento di proprietà. È possibile cercare i numeri ID nelle [costanti dei tag delle proprietà dell'immagine](-gdiplus-constant-image-property-tag-constants.md) e scoprire che rappresentano i tag di proprietà seguenti.
+L'output precedente mostra un numero ID esadecimale per ogni elemento di proprietà. È possibile cercare i numeri ID in [Costanti tag](-gdiplus-constant-image-property-tag-constants.md) proprietà immagine e scoprire che rappresentano i tag di proprietà seguenti.
 
 
 
-| Valore esadecimale                                                                                                       | Tag proprietà                                                                                                                                                                                                                                        |
+| Valore esadecimale                                                                                                       | Tag di proprietà                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x010F 0x0320<br/>  0x0110<br/>  0x9003<br/>  0x829a<br/>  0x5090<br/>  0x5091<br/> | PropertyTagImageTitle PropertyTagEquipMake<br/>  PropertyTagEquipModel<br/>  PropertyTagExifDTOriginal<br/>  PropertyTagExifExposureTime<br/>  PropertyTagLuminanceTable<br/>  PropertyTagChrominanceTable<br/> |
+| 0x0320 0x010f<br/>  0x0110<br/>  0x9003<br/>  0x829a<br/>  0x5090<br/>  0x5091<br/> | PropertyTagImageTitle PropertyTagEquipMake<br/>  PropertyTagEquipModel<br/>  PropertyTagExifDTOriginal<br/>  PropertyTagExifExposureTime<br/>  PropertyTagLuminanceTable<br/>  PropertyTagChrominanceTable<br/> |
 
 
 
  
 
-Il secondo elemento della proprietà (indice 1) nell'elenco contiene l' **ID** PropertyTagEquipMake e il **tipo** PropertyTagTypeASCII. Nell'esempio seguente, che è una continuazione dell'applicazione console precedente, viene visualizzato il valore di tale elemento della proprietà:
+Il secondo elemento della proprietà (indice 1) nell'elenco ha **ID** PropertyTagEquipMake e **tipo** PropertyTagTypeASCII. Nell'esempio seguente, che è una continuazione dell'applicazione console precedente, viene visualizzato il valore di tale elemento di proprietà:
 
 
 ```
@@ -225,7 +225,7 @@ The equipment make is Northwind Traders.
 
 
 
-Il quinto elemento della proprietà (indice 4) nell'elenco contiene l' **ID** PropertyTagExifExposureTime e il **tipo** PropertyTagTypeRational. Il tipo di dati (PropertyTagTypeRational) è una coppia di **Long** s. Nell'esempio seguente, che è una continuazione dell'applicazione console precedente, Visualizza i due valori **Long** come frazione. Tale frazione, 1/125, è il tempo di esposizione espresso in secondi.
+Il quinto elemento della proprietà (indice 4) nell'elenco ha **ID** PropertyTagExifExposureTime e **tipo** PropertyTagTypeRational. Il tipo di dati (PropertyTagTypeRational) è una coppia di **valori LONG.** Nell'esempio seguente, che è una continuazione dell'applicazione console precedente, vengono visualizzati i due **valori LONG** come frazione. Tale frazione, 1/125, è il tempo di esposizione misurato in secondi.
 
 
 ```
@@ -246,9 +246,9 @@ The exposure time is 1/125.
 
 ## <a name="writing-metadata-to-a-file"></a>Scrittura di metadati in un file
 
-Per scrivere un elemento di metadati in un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) , inizializzare un oggetto [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) e quindi passare l'indirizzo dell'oggetto **PropertyItem** al metodo **SetPropertyItem** dell'oggetto **Image** .
+Per scrivere un elemento di metadati in un oggetto [**Image,**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) inizializzare un oggetto [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) e quindi passare l'indirizzo di tale oggetto **PropertyItem** al **metodo SetPropertyItem** dell'oggetto **Image.**
 
-La seguente applicazione console scrive un elemento, ovvero il titolo dell'immagine, dei metadati in un oggetto [**immagine**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e quindi Salva l'immagine nel file su disco FakePhoto2.jpg. La funzione Main si basa sulla funzione helper GetEncoderClsid, illustrata nell'argomento [recupero dell'identificatore di classe per un codificatore](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md).
+L'applicazione console seguente scrive un elemento (il titolo dell'immagine) dei metadati in un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e quindi salva l'immagine nel file su disco FakePhoto2.jpg. La funzione main si basa sulla funzione helper GetEncoderClsid, illustrata nell'argomento Recupero dell'identificatore di classe per [un codificatore.](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md)
 
 
 ```

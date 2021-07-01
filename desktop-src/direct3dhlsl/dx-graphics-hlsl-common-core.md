@@ -9,48 +9,48 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e27ebe7d908c473890ac5b851eac3e0bc840c859
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 66c1f763c4771a8406acd2f3401445d1a29cde79
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855722"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129718"
 ---
 # <a name="common-shader-core"></a>Common-Shader Core
 
-In Shader Model 4, tutte le fasi dello shader implementano la stessa funzionalità di base usando un core shader comune. Inoltre, ognuna delle tre fasi dello shader (vertice, geometria e pixel) offre funzionalità univoche per ogni fase, ad esempio la possibilità di generare nuove primitive dalla fase geometry shader o di rimuovere un pixel specifico nella fase pixel shader. Il diagramma seguente illustra il flusso dei dati attraverso una fase dello shader e la relazione tra il nucleo di shader comune e le risorse di memoria dello shader.
+Nel modello shader 4 tutte le fasi dello shader implementano la stessa funzionalità di base usando un core di shader comune. Inoltre, ognuna delle tre fasi dello shader (vertice, geometria e pixel) offre funzionalità specifiche per ogni fase, ad esempio la possibilità di generare nuove primitive dalla fase geometry shader o di eliminare un pixel specifico nella fase pixel shader. Il diagramma seguente illustra il flusso dei dati attraverso una fase dello shader e la relazione tra il core dello shader comune e le risorse di memoria dello shader.
 
-![diagramma del flusso di dati in una fase dello shader](images/d3d10-shader-unit.png)
+![diagramma del flusso di dati in una fase shader](images/d3d10-shader-unit.png)
 
--   **Dati di input**: un vertex shader riceve gli input dalla fase dell'assembler di input. la geometria e i pixel shader ricevono gli input dalla fase precedente dello shader. Gli input aggiuntivi includono la [semantica dei valori di sistema](dx-graphics-hlsl-semantics.md), che possono essere utilizzati dalla prima unità nella pipeline a cui sono applicabili.
--   **Dati di output**: gli shader generano i risultati di output da passare alla fase successiva nella pipeline. Per un geometry shader, la quantità di output di dati da una singola chiamata può variare. Alcuni output sono interpretati da Common-shader core, ad esempio la posizione del vertice e l'indice della matrice di destinazione di rendering, altri sono progettati per essere interpretati da un'applicazione.
--   **Codice shader**: gli shader possono leggere dalla memoria, eseguire operazioni aritmetiche a virgola mobile e numeri interi o operazioni di controllo di flusso. Non esiste alcun limite al numero di istruzioni che possono essere implementate in uno shader.
--   **Samplers**: i sampler definiscono le modalità di campionamento e filtro delle trame. È possibile associare un massimo di 16 campioni a uno shader simultaneamente.
--   **Trame**: è possibile filtrare le trame usando i sampler o leggere direttamente in base a Texel con la funzione intrinseca [Load](dx-graphics-hlsl-to-load.md) .
--   **Buffer**: i buffer non vengono mai filtrati, ma possono essere letti dalla memoria in base a ogni elemento direttamente con la funzione intrinseca [Load](dx-graphics-hlsl-to-load.md) . Fino a un massimo di 128, le risorse di trama e buffer (combinate) possono essere associate contemporaneamente a uno shader.
--   **Buffer costanti**: i buffer costanti sono ottimizzati per le variabili costanti dello shader. Fino a un massimo di 16 buffer costanti è possibile associare contemporaneamente una fase dello shader. Sono progettate per un aggiornamento più frequente dalla CPU; Pertanto, presentano restrizioni di dimensioni, layout e accesso aggiuntive.
+-   **Dati di input:** un vertex shader riceve gli input dalla fase dell'assembler di input. I geometry shader e i pixel shader ricevono i rispettivi input dalla fase shader precedente. Gli input aggiuntivi includono [la semantica dei](dx-graphics-hlsl-semantics.md)valori di sistema, che possono essere utilizzati dalla prima unità nella pipeline a cui sono applicabili.
+-   **Dati di** output: gli shader generano risultati di output da passare alla fase successiva nella pipeline. Per uno shader geometry, la quantità di dati restituiti da una singola chiamata può variare. Alcuni output vengono interpretati dal core dello shader comune (ad esempio la posizione del vertice e l'indice render-target-array), altri sono progettati per essere interpretati da un'applicazione.
+-   **Codice shader:** gli shader possono leggere dalla memoria, eseguire operazioni a virgola mobile vettoriale e aritmetiche su interi o operazioni di controllo del flusso. Non esiste alcun limite al numero di istruzioni che possono essere implementate in uno shader.
+-   **Campionatori:** i campionatori definiscono come campionare e filtrare le trame. A uno shader possono essere associati simultaneamente fino a 16 campionatori.
+-   **Trame:** le trame possono essere filtrate usando campionatori o lette in base ai texel direttamente con la funzione intrinseca [di](dx-graphics-hlsl-to-load.md) caricamento.
+-   **Buffer:** i buffer non vengono mai filtrati, ma possono essere letti dalla memoria in base all'elemento direttamente con la funzione intrinseca [di](dx-graphics-hlsl-to-load.md) caricamento. A uno shader possono essere associate simultaneamente fino a 128 risorse di trama e buffer (combinate).
+-   **Buffer costanti:** i buffer costanti sono ottimizzati per le variabili costanti shader. A una fase shader possono essere associati simultaneamente fino a 16 buffer costanti. Sono progettati per un aggiornamento più frequente dalla CPU. pertanto hanno restrizioni aggiuntive per dimensioni, layout e accesso.
 
 
+Differenze tra Direct3D 9 e Direct3D 10:
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Differenze tra Direct3D 9 e Direct3D 10:<br/> In Direct3D 9 ogni unità shader aveva un singolo file di registro costante di piccole dimensioni per archiviare tutte le variabili di shader costanti. Per ospitare tutti gli shader con questo spazio costante limitato è necessario riciclo frequente delle costanti da parte della CPU.<br/> In Direct3D 10, le costanti vengono archiviate in buffer non modificabili in memoria e vengono gestite come qualsiasi altra risorsa. Non esiste alcun limite al numero di buffer costanti che un'applicazione può creare. Organizzando le costanti in buffer in base alla frequenza di aggiornamento e utilizzo, la quantità di larghezza di banda necessaria per aggiornare le costanti per adattarsi a tutti gli shader può essere notevolmente ridotta.<br/> |
+- In Direct3D 9 ogni unità shader aveva un singolo file di registro costante di piccole dimensioni per archiviare tutte le variabili di shader costanti. Per ospitare tutti gli shader con questo spazio costante limitato è necessario riciclare frequentemente le costanti da parte della CPU.
+- In Direct3D 10 le costanti vengono archiviate in buffer non modificabili in memoria e vengono gestite come qualsiasi altra risorsa. Non esiste alcun limite al numero di buffer costanti che un'applicazione può creare. Organizzando le costanti in buffer in base alla frequenza di aggiornamento e utilizzo, la quantità di larghezza di banda necessaria per aggiornare le costanti per contenere tutti gli shader può essere notevolmente ridotta.
 
 
 
  
 
-## <a name="integer-and-bitwise-support"></a>Supporto Integer e bit per bit
+## <a name="integer-and-bitwise-support"></a>Supporto di interi e bit per bit
 
-Common shader Core offre un set completo di operazioni bit per bit conformi a IEEE e a 32 bit. Queste operazioni abilitano una nuova classe di algoritmi negli esempi di hardware grafico sono le tecniche di compressione e compressione, FFT e il controllo del flusso del programma bit.
+Il nucleo comune dello shader fornisce un set completo di operazioni bit per bit e interi a 32 bit conformi a IEEE. Queste operazioni abilitano una nuova classe di algoritmi negli esempi di hardware grafico, tra cui tecniche di compressione e compressione, FFT e controllo del flusso di programma dei campi di bit.
 
-I tipi di dati **int** e **uint** in Direct3D 10 HLSL vengono mappati a interi a 32 bit nell'hardware.
+I **tipi di** dati int e **uint** in HLSL Direct3D 10 sono mappati a interi a 32 bit nell'hardware.
 
 
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Differenze tra Direct3D 9 e Direct3D 10:<br/> Negli input di flusso Direct3D 9 contrassegnati come Integer in HLSL sono stati interpretati come virgola mobile. In Direct3D 10, gli input di flusso contrassegnati come Integer vengono interpretati come Integer a 32 bit.<br/> Inoltre, i valori booleani sono ora tutti impostati su bit oppure tutti i bit non vengono impostati. I dati convertiti in **bool** verranno interpretati come true se il valore non è uguale a 0,0 f (il valore zero positivo e negativo possono essere false) e false in caso contrario.<br/> |
+| Differenze tra Direct3D 9 e Direct3D 10:<br/> In Direct3D 9 gli input del flusso contrassegnati come integer in HLSL sono stati interpretati come a virgola mobile. In Direct3D 10 gli input di flusso contrassegnati come integer vengono interpretati come integer a 32 bit.<br/> Inoltre, i valori booleani sono ora tutti bit impostati o tutti i bit non impostati. I dati convertiti in **bool** verranno interpretati come true se il valore non è uguale a 0,0f (sia lo zero positivo che quello negativo possono essere false) e false in caso contrario.<br/> |
 
 
 
@@ -58,7 +58,7 @@ I tipi di dati **int** e **uint** in Direct3D 10 HLSL vengono mappati a interi a
 
 ## <a name="bitwise-operators"></a>Operatori bit per bit
 
-Common shader Core supporta gli operatori bit per bit seguenti:
+Il nucleo comune dello shader supporta gli operatori bit per bit seguenti:
 
 
 
@@ -69,22 +69,22 @@ Common shader Core supporta gli operatori bit per bit seguenti:
 | >>  | Spostamento a destra       |
 | &         | And logico       |
 | \|        | Esegue un'operazione di Or logico.        |
-| ^         | XOR logico       |
+| ^         | Xor logico       |
 | <<= | Spostamento a sinistra uguale  |
-| >>= | Spostamento a destra uguale |
-| &=        | E uguale a         |
-| \|=       | O uguale a          |
-| ^=        | XOR uguale         |
+| >>= | Right Shift Equal |
+| &=        | Ed è uguale a         |
+| \|=       | o uguale a          |
+| ^=        | Xor Uguale         |
 
 
 
  
 
-Gli operatori bit per bit vengono definiti per operare solo sui tipi di dati **int** e **uint** . Il tentativo di utilizzare operatori bit per bit sui tipi di dati **float** o **struct** genererà un errore. Gli operatori bit per bit seguono la stessa precedenza di C rispetto ad altri operatori.
+Gli operatori bit per bit vengono definiti per operare solo sui **tipi di** dati int e **uint.** Il tentativo di usare operatori bit per bit **su tipi di** dati float o **struct** restituirà un errore. Gli operatori bit per bit seguono la stessa precedenza di C rispetto ad altri operatori.
 
 ## <a name="binary-casts"></a>Cast binari
 
-Eseguendo il cast tra un Integer e un tipo a virgola mobile, il valore numerico viene convertito dopo le regole di troncamento C. Il cast di un valore da un valore **float**, a un valore **int** e **viceversa è una** conversione con perdita di dati dipendente dalla precisione del tipo di dati di destinazione. Di seguito sono riportate alcune delle funzioni di conversione: [**AsFloat (DirectX HLSL)**](dx-graphics-hlsl-asfloat.md), [**AsInt (DirectX HLSL)**](dx-graphics-hlsl-asint.md), [**asuint (DirectX HLSL)**](dx-graphics-hlsl-asuint.md).
+Il cast tra un integer e un tipo a virgola mobile convertirà il valore numerico in base alle regole di troncamento C. Il cast di un valore **da float** a **int** e di nuovo a un **tipo float** è una conversione persa che dipende dalla precisione del tipo di dati di destinazione. Ecco alcune delle funzioni di conversione: [**asfloat (DirectX HLSL),**](dx-graphics-hlsl-asfloat.md) [**asint (DirectX HLSL)**](dx-graphics-hlsl-asint.md), [**asuint (DirectX HLSL).**](dx-graphics-hlsl-asuint.md)
 
 I cast binari possono essere eseguiti anche usando funzioni intrinseche HLSL. In questo modo il compilatore reinterpreta la rappresentazione di bit di un numero nel tipo di dati di destinazione.
 
@@ -92,7 +92,7 @@ I cast binari possono essere eseguiti anche usando funzioni intrinseche HLSL. In
 
 <dl> <dt>
 
-[Modello Shader 4](dx-graphics-hlsl-sm4.md)
+[Modello shader 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
  

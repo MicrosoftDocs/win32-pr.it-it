@@ -1,6 +1,6 @@
 ---
-title: Add-PS
-description: Aggiunge due vettori. | Add-PS
+title: add - ps
+description: Aggiunge due vettori. | add - ps
 ms.assetid: f7d29a66-879b-4160-82fd-0a1b2076559a
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f8c6ef7c14ac54610301f283d076751b0c4d4a5e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 54092caf19a486b68b92ef63d992f11289a51c93
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981122"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113130090"
 ---
-# <a name="add---ps"></a>Add-PS
+# <a name="add---ps"></a>add - ps
 
 Aggiunge due vettori.
 
@@ -24,7 +24,7 @@ Aggiunge due vettori.
 
 
 
-| aggiungere DST, src0, src1 |
+| add dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Aggiunge due vettori.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | add                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ dove
 
  
 
-Il frammento di codice seguente mostra le operazioni eseguite.
+Il frammento di codice seguente illustra le operazioni eseguite.
 
 
 ```
@@ -61,11 +61,11 @@ dest.w = src0.w + src1.w;
 
 
 
-## <a name="instruction-information"></a>Informazioni istruzioni
+## <a name="instruction-information"></a>Informazioni sulle istruzioni
 
 
 
-|                          |            |
+|   Requisito                       | Valore           |
 |--------------------------|------------|
 | Sistema operativo minimo | Windows 98 |
 
@@ -77,7 +77,7 @@ dest.w = src0.w + src1.w;
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

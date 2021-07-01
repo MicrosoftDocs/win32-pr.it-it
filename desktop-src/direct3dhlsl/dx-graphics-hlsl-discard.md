@@ -1,9 +1,9 @@
 ---
-title: Ignora istruzione
-description: Non restituire il risultato del pixel corrente.
+title: Istruzione discard
+description: Non restituisce il risultato del pixel corrente.
 ms.assetid: 5fab6a3f-8ef6-41e4-827d-ce20d44edc1a
 keywords:
-- Elimina istruzione HLSL
+- Istruzione discard HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,26 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4400150f74a0c643f87b028b98fdd0c03721602f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ec054bde5431ee938b2bfd65ff101398ab54c660
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045921"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118836"
 ---
-# <a name="discard-statement"></a>Ignora istruzione
+# <a name="discard-statement"></a>Istruzione discard
 
-Non restituire il risultato del pixel corrente.
+Non restituisce il risultato del pixel corrente.
 
-
-
-|          |
-|----------|
-| rimuovere |
+discard;
 
 
 
- 
+ 
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,18 +36,18 @@ nessuno
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa istruzione può essere chiamata solo da un pixel shader; non è supportato in un geometry shader o in un vertex shader.
+Questa istruzione può essere chiamata solo da un pixel shader; non è supportato all'interno di un geometry shader o di un vertex shader.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 <dl> <dt>
 
 [Controllo di flusso](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

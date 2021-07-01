@@ -1,40 +1,40 @@
 ---
-title: Guida alla programmazione del file System proiettato
-description: Informazioni concettuali sull'implementazione di un'applicazione del provider ProjFS.
+title: Guida alla programmazione del file system proiettato
+description: Informazioni concettuali sull'implementazione di un'applicazione provider ProjFS.
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: a6b2d186ac3e674c3fa68e17ecd523b2c94f2401
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 86c6f49eaf9da578226031eaf84abff7ebb059c0
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047061"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120566"
 ---
-# <a name="projected-file-system-projfs-programming-guide"></a>Guida alla programmazione del file System proiettato (ProjFS)
+# <a name="projected-file-system-projfs-programming-guide"></a>Guida alla programmazione del file system proiettato (ProjFS)
 
-Il file System proiettato da Windows (ProjFS) consente a un'applicazione in modalità utente denominata "provider" di proiettare i dati gerarchici nella file system, facendoli apparire come file e directory nel file system.
+Windows Projected File System (ProjFS) consente a un'applicazione in modalità utente denominata "provider" di proiettare i dati gerarchici nel file system, rendendoli visualizzati come file e directory nel file system.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 | Argomento                                                                                                       | Descrizione |
 |-------------------------------------------------------------------------------------------------------------|-------------|
 | [Panoramica del provider](provider-overview.md)                                                                   | Panoramica concettuale di un'applicazione provider.
-| [Stato della cache nella radice di virtualizzazione](cache-state.md)                                                    | Descrive i diversi Stati della cache che un file o una directory gestita dal provider può avere. 
-| [Abilitazione del file System proiettato di Windows](enabling-windows-projected-file-system.md)                         | Viene descritto come abilitare il componente facoltativo ProjFS.
+| [Stato della cache nella radice di virtualizzazione](cache-state.md)                                                    | Descrive i diversi stati della cache che possono avere un file o una directory gestita dal provider. 
+| [Abilitazione del file system proiettato di Windows](enabling-windows-projected-file-system.md)                         | Viene descritto come abilitare il componente facoltativo ProjFS.
 | [Ciclo di vita dell'istanza di virtualizzazione](virtualization-instance-lifecycle.md)                                   | Panoramica del ciclo di vita di un'istanza di virtualizzazione ProjFS.
-| [Enumerazione di file e directory](enumerating-files-and-directories.md)                                   | Viene descritto il modo in cui un provider ProjFS partecipa all'enumerazione di directory.
-| [Fornire dati di file](providing-file-data.md)                                                               | Descrive il modo in cui un provider fornisce informazioni sui segnaposto e i dati dei file.
-| [Notifiche delle operazioni del file System](file-system-operation-notifications.md)                               | Viene descritto come un provider può ricevere notifiche di file system operazioni.
-| [Gestione delle modifiche della visualizzazione](handling-view-changes.md)                                                           | Viene descritto come aggiornare la visualizzazione client dell'archivio di backup di un provider.
-| [Gestione asincrona del callback](asynchronous-callback-handling.md)                                         | Viene descritto in che modo il provider è in grado di servire in modo asincrono i callback.
-| [Riferimento all'API del file System proiettato di Windows](/windows/desktop/api/_projfs) | Informazioni di riferimento per l'interfaccia di programmazione ProjFS.
+| [Enumerazione di file e directory](enumerating-files-and-directories.md)                                   | Viene descritto il modo in cui un provider ProjFS partecipa all'enumerazione delle directory.
+| [Fornire dati di file](providing-file-data.md)                                                               | Descrive il modo in cui un provider fornisce informazioni segnaposto e dati di file.
+| [Notifiche delle operazioni del file system](file-system-operation-notifications.md)                               | Viene descritto in che modo un provider può ricevere notifiche file system operazioni.
+| [Gestione delle modifiche delle visualizzazione](handling-view-changes.md)                                                           | Viene descritto come aggiornare la visualizzazione client dell'archivio di backup di un provider.
+| [Gestione dei callback asincroni](asynchronous-callback-handling.md)                                         | Viene descritto come il provider può eseguire in modo asincrono i callback.
+| [Informazioni di riferimento sulle API del file system proiettato di Windows](/windows/desktop/api/_projfs) | Informazioni di riferimento per l'interfaccia di programmazione ProjFS.
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-|                                                                                                              |                                                                                   |
+| Argomento                                                                                                             | Descrizione                                                                                  |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Esempio RegFS](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/ProjectedFileSystem) | Un provider ProjFS di esempio che proietta il registro di sistema di Windows nell'file system. |
+| [Esempio di RegFS](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/ProjectedFileSystem) | Provider ProjFS di esempio che proietta il Registro di sistema di Windows nel file system. |
 <!--
 | [ProjFS.Managed API](https://github.com/Microsoft/URL_TBD)                                                   | A .NET wrapper for the ProjFS API.                                                |
 -->

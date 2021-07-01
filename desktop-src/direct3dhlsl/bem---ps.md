@@ -1,6 +1,6 @@
 ---
-title: bem-PS
-description: Applicare una trasformazione della mappa dell'ambiente di Bump Fake.
+title: bem - ps
+description: Applicare una trasformazione mappa dell'ambiente di urto fittizia.
 ms.assetid: b41009d4-a2bb-4397-ad23-c95ef2620a66
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,31 +9,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7c591555e2cbd2c6eaebf6e392bb94d6ec50e748
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1adae07e3e2ebbca085981ca03a3b6449e2ffd9d
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398264"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129930"
 ---
-# <a name="bem---ps"></a>bem-PS
+# <a name="bem---ps"></a>bem - ps
 
-Applicare una trasformazione della mappa dell'ambiente di Bump Fake.
+Applicare una trasformazione mappa dell'ambiente di urto fittizia.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| bem DST. RG, src0, src1 |
+| bem dst.rg, src0, src1 |
 |------------------------|
 
 
 
- 
+ 
 
 dove
 
--   DST. RG DST è il registro di destinazione. È necessario utilizzare la maschera di scrittura del componente rosso e verde.
+-   dst.rg dst è il registro di destinazione. È necessario usare la maschera di scrittura del componente rosso e verde.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,13 +41,13 @@ dove
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| bem                   |      |      |      | x    |      |      |       |      |       |
+| Bem                   |      |      |      | x    |      |      |       |      |       |
 
 
 
- 
+ 
 
 Questa istruzione esegue il calcolo seguente.
 
@@ -65,35 +65,35 @@ dest.g = src0.g + D3DTSS_BUMPENVMAT01(stage n) * src1.r
 
 Regole per l'uso di bem:
 
-1.  il bem deve essere visualizzato nella prima fase di uno shader, ovvero prima di un marcatore di fase.
-2.  bem usa due slot di istruzione aritmetici.
-3.  È consentito un solo utilizzo di questa istruzione per shader.
-4.  Il writemask di destinazione deve essere. RG/.XY.
-5.  Questa istruzione non può essere rilasciata.
-6.  A parte la restrizione, la maschera di scrittura della destinazione è. RG, i modificatori nei modificatori di origine src0, src1 e istruzioni non sono vincolati.
+1.  bem deve essere visualizzato nella prima fase di uno shader, ovvero prima di un marcatore di fase.
+2.  bem utilizza due slot di istruzioni aritmetiche.
+3.  È consentito un solo uso di questa istruzione per shader.
+4.  La maschera di scrittura di destinazione deve essere .rg /.xy.
+5.  Questa istruzione non può essere co-rilasciata.
+6.  A parte la restrizione che destination write mask è rg, i modificatori di origine src0, src1 e i modificatori di istruzione non sono vincolati.
 
-## <a name="instruction-information"></a>Informazioni istruzioni
+## <a name="instruction-information"></a>Informazioni sulle istruzioni
 
 
 
-|                          |            |
+| Requisito                         | Valore           |
 |--------------------------|------------|
 | Sistema operativo minimo | Windows 98 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

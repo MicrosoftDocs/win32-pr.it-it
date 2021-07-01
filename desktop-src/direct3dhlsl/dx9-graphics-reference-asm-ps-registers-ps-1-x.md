@@ -11,18 +11,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 291f78b8bf74a20dfecf4a74ed65173a895bcc1b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 68e3645c3e634c4e9cd886600977882dcc3e2018
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998638"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129859"
 ---
 # <a name="ps_1_1__ps_1_2__ps_1_3__ps_1_4-registers"></a>ps \_ 1 \_ 1 \_ \_ ps \_ 1 \_ 2 ps \_ \_ \_ 1 \_ 3 ps \_ \_ \_ 1 \_ 4 Registri
 
 I pixel shader dipendono dai registri per ottenere i dati dei vertici, per l'output dei dati pixel, per contenere risultati temporanei durante i calcoli e per identificare le fasi di campionamento delle trame. Esistono diversi tipi di registri, ognuno con una funzionalità univoca. Questa sezione contiene informazioni di riferimento per i registri di input e output implementati da pixel shader versione 1 \_ X.
 
-Registra i dati di conservazione per l'uso da parte del pixel shader. I registri sono descritti in modo completo nelle sezioni seguenti.
+Registra i dati di blocco per l'uso da parte del pixel shader. I registri sono descritti in modo completo nelle sezioni seguenti.
 
 -   I tipi di registro descrivono i quattro tipi di registri disponibili e i relativi scopi.
 -   In Read Port Limit sono dettagliate le restrizioni relative all'uso di più registri in una singola istruzione.
@@ -33,40 +33,39 @@ Registra i dati di conservazione per l'uso da parte del pixel shader. I registri
 
 
 
-|      |                    | Versioni |      |      |              |
+| Nome |  Tipo              | Versione 1 \_ 1 | Versione 1 \_ 2      | Versione 1 \_ 3     | Versione 1 \_ 4             |
 |------|--------------------|----------|------|------|--------------|
-| Nome | Tipo               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4         |
 | c\#  | Registro costanti  | 8        | 8    | 8    | 8            |
 | R\#  | Registro temporaneo | 2        | 2    | 2    | 6            |
-| t\#  | Registro trame   | 4        | 4    | 4    | 6            |
-| Presso\#  | Registro colori     | 2        | 2    | 2    | 2 nella fase 2 |
+| T\#  | Registro trame   | 4        | 4    | 4    | 6            |
+| v\#  | Registro colori     | 2        | 2    | 2    | 2 nella fase 2 |
 
 
 
  
 
--   I registri costanti contengono dati costanti. I dati possono essere caricati in un registro costante usando [**SetPixelShaderConstantF**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf) oppure possono essere definiti usando [def - ps](def---ps.md). I registri costanti non sono utilizzabili dalle istruzioni dell'indirizzo di trama. L'unica eccezione è l'istruzione [texm3x3spec - ps,](texm3x3spec---ps.md) che usa un registro costante per fornire un vettore di raggio oculare.
--   I registri temporanei vengono usati per archiviare i risultati intermedi. r0 funge anche da output pixel shader output. Il valore in r0 alla fine dello shader è il colore pixel per lo shader.
+-   I registri costanti contengono dati costanti. I dati possono essere caricati in un registro costante usando [**SetPixelShaderConstantF**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf) oppure possono essere definiti tramite [def - ps](def---ps.md). I registri costanti non sono utilizzabili dalle istruzioni relative all'indirizzo della trama. L'unica eccezione è l'istruzione [texm3x3spec - ps,](texm3x3spec---ps.md) che usa un registro costante per fornire un vettore di raggi oculare.
+-   I registri temporanei vengono usati per archiviare i risultati intermedi. r0 funge anche da output pixel shader. Il valore in r0 alla fine dello shader è il colore pixel per lo shader.
 
     La convalida dello shader avrà esito negativo [**per CreatePixelShader**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createpixelshader) in qualsiasi shader che tenta di leggere da un registro temporaneo che non è stato scritto da un'istruzione precedente. [**D3DXAssembleShader**](/windows/desktop/direct3d9/d3dxassembleshader) avrà esito negativo in modo analogo, presupponendo che la convalida sia abilitata (non usare D3DXSHADER \_ SKIPVALIDATION).
 
 -   Registri di trama
 
-    Ad pixel shader versione 1 \_ da 1 a 1 3, i registri delle trame contengono dati di trama \_ o coordinate di trama. I dati della trama vengono caricati in un registro di trama quando viene campionata una trama. Il campionamento trame usa le coordinate della trama per cercare, o campionare, un valore di colore in corrispondenza delle coordinate specificate (u,v,w,q) tenendo conto degli attributi dello stato della fase della trama. I dati delle coordinate della trama vengono interpolati dai dati delle coordinate della trama dei vertici e sono associati a una fase di trama specifica. Esiste un'associazione uno-a-uno predefinita tra il numero della fase della trama e l'ordine di dichiarazione delle coordinate della trama. Per impostazione predefinita, il primo set di coordinate di trama definito nel formato vertice è associato alla fase di trama 0.
+    Per pixel shader 1 \_ a 1 3, i registri di trama contengono dati di trama \_ o coordinate di trama. I dati di trama vengono caricati in un registro di trame quando viene campionata una trama. Il campionamento trame usa le coordinate della trama per cercare o campionare un valore di colore in corrispondenza delle coordinate specificate (u,v,w,q) tenendo conto degli attributi dello stato della fase della trama. I dati delle coordinate della trama vengono interpolati dai dati delle coordinate della trama dei vertici e sono associati a una fase di trama specifica. Esiste un'associazione uno-a-uno predefinita tra il numero di fase della trama e l'ordine di dichiarazione delle coordinate della trama. Per impostazione predefinita, il primo set di coordinate di trama definito nel formato vertice è associato alla fase di trama 0.
 
     Per queste pixel shader, i registri di trama si comportano esattamente come i registri temporanei quando vengono usati da istruzioni aritmetiche.
 
-    Ad pixel shader versione 1 4, i registri di trama (t ) contengono dati delle coordinate di \_ \# trama di sola lettura. Ciò significa che il set di coordinate della trama e il numero di fase della trama sono indipendenti l'uno dall'altro. Il numero di fase della trama (da cui campionare una trama) è determinato dal numero di registro di destinazione (da r0 a r5). Per l'istruzione texld, il set di coordinate della trama è determinato dal registro di origine (da t0 a t5), quindi il set di coordinate di trama può essere mappato a qualsiasi fase della trama. Inoltre, il registro di origine (che specifica le coordinate della trama) per texld può anche essere un registro temporaneo (r ), nel qual caso il contenuto del registro temporaneo viene usato come coordinate \# di trama.
+    Ad pixel shader versione 1 4, i registri trame (t ) contengono dati delle coordinate di \_ \# trama di sola lettura. Ciò significa che il set di coordinate della trama e il numero di fase della trama sono indipendenti l'uno dall'altro. Il numero di fase della trama (da cui campionare una trama) è determinato dal numero di registro di destinazione (da r0 a r5). Per l'istruzione texld, il set di coordinate della trama è determinato dal registro di origine (da t0 a t5), quindi il set di coordinate di trama può essere mappato a qualsiasi fase della trama. Inoltre, il registro di origine (che specifica le coordinate della trama) per texld può anche essere un registro temporaneo (r ), nel qual caso il contenuto del registro temporaneo viene usato come coordinate \# di trama.
 
 -   I registri colori contengono valori di colore per pixel. I valori vengono ottenuti dall'iterazione per pixel dei valori di colore diffusi e speculari nei dati dei vertici. Per pixel shader shader versione \_ 1 4, i registri colori sono disponibili solo durante la seconda fase.
 
-    Se la modalità ombreggiatura è impostata su D3DSHADE FLAT, l'iterazione di entrambi i colori dei vertici (diffuse e \_ speculari) è disabilitata. Indipendentemente dalla modalità ombreggiatura, la nebbia verrà comunque iterata dalla pipeline se è abilitata la nebbia pixel. Tenere presente che la nebbia viene applicata in un secondo momento nella pipeline rispetto al pixelshader.
+    Se la modalità ombreggiatura è impostata su D3DSHADE FLAT, l'iterazione di entrambi i colori dei vertici \_ (diffuse e speculari) è disabilitata. Indipendentemente dalla modalità ombreggiatura, la nebbia verrà comunque iterata dalla pipeline se è abilitata la nebbia pixel. Tenere presente che la nebbia viene applicata in un secondo momento nella pipeline rispetto al pixelshader.
 
     È comune caricare il registro v0 con i dati sui colori diffusi dei vertici. È anche comune caricare il registro v1 con i dati sui colori speculari dei vertici.
 
-    I valori dei dati dei colori di input vengono definiti (saturati) nell'intervallo compreso tra 0 e 1 perché si tratta dell'intervallo di input valido per i registri colori nel pixel shader.
+    I valori dei dati di colore di input vengono definiti (saturati) nell'intervallo da 0 a 1 perché si tratta dell'intervallo di input valido per i registri colori nel pixel shader.
 
-    I pixel shader hanno accesso in sola lettura ai registri colori. Il contenuto di questi registri è un valore iterato, ma l'iterazione può essere eseguita a una precisione molto inferiore rispetto alle coordinate della trama.
+    I pixel shader hanno accesso in sola lettura ai registri colori. I contenuti di questi registri sono valori iterati, ma l'iterazione può essere eseguita a una precisione molto inferiore rispetto alle coordinate della trama.
 
 ## <a name="read-port-limit"></a>Limite di porte di lettura
 
@@ -74,13 +73,12 @@ Il limite di porte di lettura specifica il numero di registri diversi di ogni ti
 
 
 
-|      |                    | Versioni |      |      |              |
+| Nome     | Tipo                   | Versione 1 \_ 1 | Versione 1 \_ 2      | Versione 1 \_ 3     | Versione 1 \_ 4             |
 |------|--------------------|----------|------|------|--------------|
-| Nome | Tipo               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4         |
 | c\#  | Registro costanti  | 2        | 2    | 2    | 2            |
 | R\#  | Registro temporaneo | 2        | 2    | 2    | 3            |
-| t\#  | Registro delle trame   | 2        | 3    | 3    | 1            |
-| Presso\#  | Registro colori     | 2        | 2    | 2    | 2 nella fase 2 |
+| T\#  | Registro trame   | 2        | 3    | 3    | 1            |
+| v\#  | Registro colori     | 2        | 2    | 2    | 2 nella fase 2 |
 
 
 
@@ -101,13 +99,13 @@ I tipi di registro vengono identificati in base alla funzionalità di sola lettu
 
 
 
-|      |                    | Versioni |      |      |                    |
+| Nome     |  Tipo                  | Versione 1 \_ 1 | Versione 1 \_ 2     | Versione 1 \_ 3     | Versione 1 \_ 4 |
 |------|--------------------|----------|------|------|--------------------|
 | Nome | Tipo               | 1\_1     | 1\_2 | 1 \_ 3 | 1\_4               |
 | c\#  | Registro delle costanti  | RO       | RO   | RO   | RO                 |
 | R\#  | Registro temporaneo | LS       | LS   | LS   | LS                 |
-| t\#  | Registro delle trame   | LS       | LS   | LS   | Vedere la nota seguente |
-| Presso\#  | Registro colori     | RO       | RO   | RO   | RO                 |
+| T\#  | Registro delle trame   | LS       | LS   | LS   | Vedere la nota seguente |
+| v\#  | Registro colori     | RO       | RO   | RO   | RO                 |
 
 
 
@@ -117,28 +115,28 @@ I registri che supportano RW possono essere usati per archiviare i risultati int
 
 > [!Note]  
 >
-> -   Per pixel shader versione 1 4, i registri di trama sono ro per le istruzioni di indirizzamento delle trame e i registri di trama non possono essere né letti né scritti da istruzioni \_ aritmetiche. Inoltre, poiché i registri trame sono diventati registri delle coordinate di trama, l'accesso ro non è una regressione delle funzionalità precedenti.
+> -   Per pixel shader versione 1 4, i registri di trama sono RO per le istruzioni di indirizzamento delle trame e i registri di trama non possono essere letti né scritti in da istruzioni \_ aritmetiche. Inoltre, poiché i registri di trama sono diventati registri delle coordinate di trama, l'accesso ro non è una regressione delle funzionalità precedenti.
 
  
 
 ## <a name="range"></a>Intervallo
 
-L'intervallo è il valore massimo e minimo dei dati del registro. Gli intervalli variano in base al tipo di registro. Gli intervalli per alcuni registri possono essere sottoposti a query dai limiti del dispositivo usando [**GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps).
+L'intervallo è il valore massimo e minimo dei dati del registro. Gli intervalli variano in base al tipo di registro. Gli intervalli per alcuni registri possono essere sottoposti a query dai limiti del dispositivo usando [**GetDeviceCaps.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps)
 
 
 
 | Nome | Tipo               | Intervallo                                               | Versioni     |
 |------|--------------------|-----------------------------------------------------|--------------|
-| c\#  | Registro costanti  | Da -1 a +1                                            | Tutte le versioni |
+| c\#  | Registro delle costanti  | Da -1 a +1                                            | Tutte le versioni |
 | R\#  | Registro temporaneo | \- PixelShader1xMaxValue in + PixelShader1xMaxValue | Tutte le versioni |
-| t\#  | Registro trame   | \- MaxTextureRepeat a + MaxTextureRepeat           | Tutte le versioni |
-| Presso\#  | Registro colori     | Da 0 a 1                                              | Tutte le versioni |
+| T\#  | Registro delle trame   | \- Da MaxTextureRepeat a + MaxTextureRepeat           | Tutte le versioni |
+| v\#  | Registro colori     | Da 0 a 1                                              | Tutte le versioni |
 
 
 
  
 
-L pixel shader hardware rappresenta i dati nei registri usando un numero a virgola fissa. Ciò limita la precisione a un massimo di circa otto bit per la parte frazionaria di un numero. Tenere presente questo problema durante la progettazione di uno shader.
+La pixel shader hardware rappresenta i dati nei registri usando un numero a virgola fissa. Questo limita la precisione a un massimo di circa otto bit per la parte frazionaria di un numero. Tenere presente questo problema quando si progetta uno shader.
 
 Per pixel shader versione \_ 1 da 1 \_ a 1 3, MaxTextureRepeat deve essere almeno uno. Per 1 \_ 4, MaxTextureRepeat deve essere almeno otto.
 
