@@ -4,12 +4,12 @@ ms.assetid: dcb56d5d-ed0d-49bb-95bf-940a49c033f1
 title: Funzioni WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf5f9db8fcde5589a86556111bec6df3b2b18c76
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 41e45289230c1cc22a7f8799dfbbe1dafddccf38
+ms.sourcegitcommit: 8e3d8594fa073a9c43eb5dcc7babea03ea30f10f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587746"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113174973"
 ---
 # <a name="winhttp-functions"></a>Funzioni WinHTTP
 
@@ -24,6 +24,13 @@ Aggiunge una o più intestazioni di richiesta HTTP all'handle della richiesta HT
 
 </dd> <dt>
 
+[**WinHttpAddRequestHeadersEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheadersex)
+</dt> <dd>
+
+Aggiunge una o più intestazioni di richiesta HTTP a un handle di richiesta HTTP, consentendo di usare stringhe nome/valore separate.
+
+</dd> <dt>
+
 [**WinHttpCheckPlatform**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcheckplatform)
 </dt> <dd>
 
@@ -34,7 +41,7 @@ Determina se la piattaforma corrente è supportata da WinHTTP.
 [**WinHttpCloseHandle**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpclosehandle)
 </dt> <dd>
 
-Chiude un singolo [handle HINTERNET.](hinternet-handles-in-winhttp.md)
+Chiude un singolo handle [HINTERNET.](hinternet-handles-in-winhttp.md)
 
 </dd> <dt>
 
@@ -45,10 +52,10 @@ Specifica il server di destinazione iniziale di una richiesta HTTP.
 
 </dd> <dt>
 
-[**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl)
+[**WinHttpUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl)
 </dt> <dd>
 
-Separa un URL nelle relative parti del componente, ad esempio il nome host e il percorso.
+Separa un URL nelle relative parti componenti, ad esempio il nome host e il percorso.
 
 </dd> <dt>
 
@@ -69,7 +76,7 @@ Crea un URL dalle parti del componente, ad esempio il nome host e il percorso.
 [**WinHttpDetectAutoProxyConfigUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpdetectautoproxyconfigurl)
 </dt> <dd>
 
-Trova l'URL per il file pac (Proxy Auto-Configuration). Questa funzione segnala l'URL del file PAC, ma non scarica il file.
+Trova l'URL per il file di configurazione automatica del proxy (PAC). Questa funzione segnala l'URL del file PAC, ma non scarica il file.
 
 </dd> <dt>
 
@@ -94,10 +101,10 @@ Recupera la configurazione del proxy WinHTTP predefinita dal Registro di sistema
 
 </dd> <dt>
 
-[**WinHTTPGetIeProxyConfigForCurrentUser**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser)
+[**WinHTTPGetIEProxyConfigForCurrentUser**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser)
 </dt> <dd>
 
-Ottiene la configurazione Internet Explorer proxy (IE) per l'utente corrente.
+Ottiene la configurazione Internet Explorer proxy per l'utente corrente.
 
 </dd> <dt>
 
@@ -153,7 +160,7 @@ Recupera una descrizione dello stato corrente delle connessioni di WinHttp.
 [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable)
 </dt> <dd>
 
-Restituisce il numero di byte di dati immediatamente disponibili per la lettura [**con WinHttpReadData.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata)
+Restituisce il numero di byte di dati immediatamente disponibili per la lettura con [**WinHttpReadData.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata)
 
 </dd> <dt>
 
@@ -161,6 +168,13 @@ Restituisce il numero di byte di dati immediatamente disponibili per la lettura 
 </dt> <dd>
 
 Recupera le informazioni di intestazione associate a una richiesta HTTP.
+
+</dd> <dt>
+
+[**WinHttpQueryHeadersEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheadersex)
+</dt> <dd>
+
+Recupera le informazioni di intestazione associate a una richiesta HTTP. offre un modo per recuperare le stringhe di nome e valore dell'intestazione analizzata.
 
 </dd> <dt>
 
@@ -172,6 +186,13 @@ Esegue una query su un'opzione Internet sull'handle specificato.
 </dd> <dt>
 
 [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata)
+</dt> <dd>
+
+Legge i dati da un handle aperto dalla [**funzione WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)
+
+</dd> <dt>
+
+[**WinHttpReadDataEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddataex)
 </dt> <dd>
 
 Legge i dati da un handle aperto dalla [**funzione WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)
@@ -223,7 +244,7 @@ Imposta un'opzione Internet.
 [**WinHttpSetStatusCallback**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetstatuscallback)
 </dt> <dd>
 
-Configura una funzione di callback che WinHTTP può chiamare quando viene effettuato lo stato di avanzamento durante un'operazione.
+Configura una funzione di callback che WinHTTP può chiamare quando viene eseguito lo stato di avanzamento durante un'operazione.
 
 </dd> <dt>
 
@@ -293,10 +314,8 @@ Invia dati tramite una connessione WebSocket.
 [**WinHttpWebSocketShutdown**](/windows/desktop/api/winhttp/nf-winhttp-winhttpwebsocketshutdown)
 </dt> <dd>
 
-Invia un frame di chiusura a una connessione WebSocket.
+Invia un frame vicino a una connessione WebSocket.
 
 </dd> </dl>
 
- 
 
- 

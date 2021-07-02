@@ -4,12 +4,12 @@ ms.assetid: e1567393-162e-48d4-8e6b-7620e351136c
 title: Strutture WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9d6f0cdbb467e916b1a6ac54b90491cbee9efdb
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: f7ecf91702a2f49e2c0a754fcc69d9d34febf229
+ms.sourcegitcommit: 8e3d8594fa073a9c43eb5dcc7babea03ea30f10f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587977"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113174981"
 ---
 # <a name="winhttp-structures"></a>Strutture WinHTTP
 
@@ -27,7 +27,7 @@ Contiene la versione HTTP globale.
 [**URL_COMPONENTS**](/windows/win32/api/winhttp/ns-winhttp-url_components)
 </dt> <dd>
 
-Contiene le parti costituenti di un URL. Questa struttura viene usata con le [**funzioni WinHttpUrl e**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) [**WinHttpCreateUrl.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl)
+Contiene le parti costituenti di un URL. Questa struttura viene usata con le [**funzioni WinHttpUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) e [**WinHttpCreateUrl.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl)
 
 </dd> <dt>
 
@@ -90,6 +90,20 @@ Contiene le informazioni Internet Explorer configurazione del proxy.
 
 </dd> <dt>
 
+[**WINHTTP_EXTENDED_HEADER**](/windows/win32/api/winhttp/ns-winhttp-winhttp_extended_header)
+</dt> <dd>
+
+Rappresenta un'intestazione di richiesta HTTP come coppia nome/valore di stringa.
+
+</dd> <dt>
+
+[**WINHTTP_HEADER_NAME**](/windows/win32/api/winhttp/ns-winhttp-winhttp_header_name)
+</dt> <dd>
+
+Rappresenta il nome di un'intestazione di richiesta HTTP.
+
+</dd> <dt>
+
 [**WINHTTP_HOST_CONNECTION_GROUP**](/windows/win32/api/Winhttp/ns-winhttp-winhttp_host_connection_group)
 </dt> <dd>
 
@@ -114,7 +128,7 @@ Contiene la configurazione della sessione o del proxy predefinito.
 [**WINHTTP_PROXY_RESULT**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_proxy_result)
 </dt> <dd>
 
-Raccolta di voci dei risultati proxy fornite da [**WinHttpGetProxyResult.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult)
+Raccolta di voci dei risultati del proxy fornite da [**WinHttpGetProxyResult.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult)
 
 </dd> <dt>
 
