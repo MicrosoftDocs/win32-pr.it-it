@@ -4,22 +4,52 @@ description: TBD
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 1e5d9f8b0532b809bab617655694af68ba530430
-ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
+ms.openlocfilehash: 3ddb2eec80448b8119bf2d990afbb998f212db26
+ms.sourcegitcommit: 0b93de98c4afc79a6801a113bc91adbc89e835b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111521206"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113282550"
 ---
 # <a name="directml-feature-level-history"></a>Cronologia a livello di funzionalità DirectML
 
 Per informazioni generali sulla cronologia delle versioni di DirectML, vedere [Cronologia delle versioni di DirectML.](./dml-version-history.md)
 
+## <a name="dml_feature_level_4_0"></a>DML_FEATURE_LEVEL_4_0
+
+Introdotto in DirectML versione 1.6.0.
+
+Aggiunta del supporto per i tipi di operatore seguenti, documentati in [**DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Per ogni costante di tipo di operatore, tale argomento fornisce un collegamento alla struttura corrispondente.
+
+* **DML_OPERATOR_ELEMENT_WISE_QUANTIZED_LINEAR_ADD**
+* **DML_OPERATOR_DYNAMIC_QUANTIZE_LINEAR**
+* **DML_OPERATOR_ROI_ALIGN1**
+
+Supporto del tipo di dati esteso e del conteggio delle dimensioni per gli operatori seguenti, documentati in [**DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Per informazioni dettagliate sul supporto specifico aggiunto in [**DML_FEATURE_LEVEL_4_0**](/windows/win32/api/directml/ne-directml-dml_feature_level), vedere l'argomento relativo alla struttura di ogni operatore.
+
+* **DML_OPERATOR_ACTIVATION_RELU_GRAD**
+* **DML_OPERATOR_ADAM_OPTIMIZER**
+* **DML_OPERATOR_CONVOLUTION**
+* **DML_OPERATOR_CONVOLUTION_INTEGER**
+* **DML_OPERATOR_CUMULATIVE_PRODUCT**
+* **DML_OPERATOR_CUMULATIVE_SUMMATION**
+* **DML_OPERATOR_DIAGONAL_MATRIX**
+* **DML_OPERATOR_FILL_VALUE_CONSTANT**
+* **DML_OPERATOR_FILL_VALUE_SEQUENCE**
+* **DML_OPERATOR_GEMM**
+* **DML_OPERATOR_MATRIX_MULTIPLY_INTEGER**
+* **DML_OPERATOR_MAX_POOLING_GRAD**
+* **DML_OPERATOR_NONZERO_COORDINATES**
+* **DML_OPERATOR_QUANTIZED_LINEAR_CONVOLUTION**
+* **DML_OPERATOR_QUANTIZED_LINEAR_MATRIX_MULTIPLY**
+* **DML_OPERATOR_RANDOM_GENERATOR**
+* **DML_OPERATOR_REVERSE_SUBSEQUENCES**
+
 ## <a name="dml_feature_level_3_1"></a>DML_FEATURE_LEVEL_3_1
 
 Introdotto in DirectML versione 1.5.0.
 
-Aggiunta del supporto per gli operatori [seguenti.](/windows/win32/api/directml/ne-directml-dml_operator_type)
+Aggiunta del supporto per i tipi di operatore seguenti, documentati in [**DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Per ogni costante di tipo di operatore, tale argomento fornisce un collegamento alla struttura corrispondente.
 
 * **DML_OPERATOR_ELEMENT_WISE_ATAN_YX**
 * **DML_OPERATOR_ELEMENT_WISE_CLIP_GRAD**
@@ -46,7 +76,7 @@ Il numero massimo di dimensioni supportate per gli operatori seguenti è aumenta
 
 Introdotto in DirectML versione 1.4.0.
 
-Aggiunta del supporto per gli operatori [seguenti.](/windows/win32/api/directml/ne-directml-dml_operator_type)
+Aggiunta del supporto per i tipi di operatore seguenti, documentati in [**DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Per ogni costante di tipo di operatore, tale argomento fornisce un collegamento alla struttura corrispondente.
 
 * **DML_OPERATOR_ELEMENT_WISE_BIT_AND**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_OR**
@@ -95,7 +125,7 @@ Sono state aggiunte le API seguenti.
 * [Interfaccia IDMLDevice1](/windows/win32/api/directml/nn-directml-idmldevice1)
 * Supporto del grafo dell'operatore (vedere [IDMLDevice1::CompileGraph)](/windows/win32/api/directml/nf-directml-idmldevice1-compilegraph)
 
-Aggiunta del supporto per gli operatori seguenti.
+Aggiunta del supporto per i tipi di operatore seguenti, documentati in [**DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Per ogni costante di tipo di operatore, tale argomento fornisce un collegamento alla struttura corrispondente.
 
 * **DML_OPERATOR_ELEMENT_WISE_BIT_SHIFT_LEFT**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_SHIFT_RIGHT**
@@ -170,7 +200,7 @@ Sono state aggiunte le API seguenti.
 * [DML_FEATURE_LEVEL enumerazione](/windows/win32/api/directml/ne-directml-dml_feature_level)
 * Query a livello di funzionalità (vedere [DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels))
 
-Aggiunta del supporto per gli operatori seguenti.
+Aggiunta del supporto per i tipi di operatore seguenti, documentati in [**DML_OPERATOR_TYPE**](/windows/win32/api/directml/ne-directml-dml_operator_type). Per ogni costante di tipo di operatore, tale argomento fornisce un collegamento alla struttura corrispondente.
 
 * **DML_OPERATOR_ELEMENT_WISE_SIGN**
 * **DML_OPERATOR_ELEMENT_WISE_IS_NAN**
@@ -194,7 +224,7 @@ Aggiunta del supporto per gli operatori seguenti.
 
 Sono stati aggiunti i miglioramenti seguenti.
 
-* Quando si associa una risorsa di input per l'invio di un [IDMLOperatorInitializer,](/windows/win32/api/directml/nn-directml-idmloperatorinitializer)è ora legale fornire una risorsa [con D3D12_HEAP_TYPE_CUSTOM](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) (oltre **a D3D12_HEAP_TYPE_DEFAULT**), purché siano impostate anche le proprietà dell'heap appropriate. Vedere [Binding in DirectML](./dml-binding.md).
+* Quando si associa una risorsa di input per l'invio di un [IDMLOperatorInitializer](/windows/win32/api/directml/nn-directml-idmloperatorinitializer), è ora legale fornire una risorsa [con D3D12_HEAP_TYPE_CUSTOM](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) (oltre **a D3D12_HEAP_TYPE_DEFAULT**), purché siano impostate anche le proprietà dell'heap appropriate. Vedere [Binding in DirectML](./dml-binding.md).
 * Gli operatori booleani logici seguenti supportano ora tensori di output **UINT8,** oltre al supporto esistente per **UINT32**.
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_AND**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_EQUALS**
@@ -209,7 +239,7 @@ Sono stati aggiunti i miglioramenti seguenti.
 
 Livello di funzionalità in cui è stato introdotto DirectML.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cronologia delle versioni di DirectML](./dml-version-history.md)
 * [DML_FEATURE_LEVEL enumerazione](/windows/win32/api/directml/ne-directml-dml_feature_level)

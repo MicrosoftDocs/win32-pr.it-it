@@ -1,6 +1,6 @@
 ---
-title: WaveReadLaneAt (funzione)
-description: Restituisce il valore dell'espressione per l'indice della corsia specificato all'interno dell'onda specificata.
+title: Funzione WaveReadLaneAt
+description: Restituisce il valore dell'espressione per l'indice di corsia specificato all'interno dell'onda specificata.
 ms.assetid: CA9467D9-8885-4A5D-87F3-5BA40AE78993
 keywords:
 - Funzione WaveReadLaneAt HLSL
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e40940f2df6685a3096da6886ad3bcb6d9ca99af
-ms.sourcegitcommit: 4423a9d48f1c90d2ec2eca68e9cae30df1787f25
+ms.openlocfilehash: 573730053a93a110381637ef8e62dc08a4aa1535
+ms.sourcegitcommit: 1897c2a39b4ac4ca4b1e4aec394cef2ce2619c03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "104398811"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113316483"
 ---
-# <a name="wavereadlaneat-function"></a>WaveReadLaneAt (funzione)
+# <a name="wavereadlaneat-function"></a>Funzione WaveReadLaneAt
 
-Restituisce il valore dell'espressione per l'indice della corsia specificato all'interno dell'onda specificata.
+Restituisce il valore dell'espressione per l'indice di corsia specificato all'interno dell'onda specificata.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 <type> WaveReadLaneAt(
-   <type> expr,
-   uint laneIndex
+   <type> expr,
+   uint laneIndex
 );
 ```
 
@@ -37,7 +37,7 @@ Restituisce il valore dell'espressione per l'indice della corsia specificato all
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione da valutare.
@@ -47,7 +47,7 @@ Espressione da valutare.
 *laneIndex* 
 </dt> <dd>
 
-Indice della corsia per cui verrà restituito il risultato *expr* .
+Indice della corsia per cui verrà restituito il risultato *expr.*
 
 </dd> </dl>
 
@@ -57,34 +57,11 @@ Il valore risultante è il risultato di *expr*. Sarà uniforme se *laneIndex* è
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è effettivamente una trasmissione del valore nella corsia laneIndex'th.
+Questa funzione è in effetti una trasmissione del valore nella *laneIndex*'th lane.
 
-Questa funzione è supportata dal modello shader 6,0, nei tipi di shader seguenti:
-
-
-
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
-|--------|------|--------|----------|-------|---------|
-|        |      |        |          | x     | x       |
-
-
-
- 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader.
 
 ## <a name="see-also"></a>Vedi anche
 
-<dl> <dt>
-
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
-</dt> <dt>
-
-[Modello shader 6](shader-model-6-0.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
+* [Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+* [Modello shader 6](shader-model-6-0.md)
