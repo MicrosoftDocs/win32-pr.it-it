@@ -1,0 +1,36 @@
+### YamlMime:FAQ
+metadata:
+  description: Domande frequenti su Web Authentication Broker.
+  ms.assetid: 49ACB2E3-CF57-4D8E-9670-E7C18A06F76A
+  title: Domande frequenti su Web Authentication Broker
+  ms.topic: article
+  ms.date: 05/31/2018
+  ms.openlocfilehash: ef15108a0c6384d833faaef052480c0e3eb79dda
+  ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "113366762"
+title: Domande frequenti su Web Authentication Broker
+summary: >
+  Domande frequenti su Web Authentication Broker.
+sections:
+- name: Ignorato
+  questions:
+  - question: >
+      Come è possibile assicurarsi che la pagina https:// funzioni con Il Gestore autenticazione Web?
+    answer: >
+      Provare a caricare la pagina in Windows Internet Explorer prima di provarla con Gestore autenticazione Web. Se la pagina Web viene caricata senza errori, verrà eseguito correttamente anche dal Gestore autenticazione Web.
+  - question: >
+      In caso di errore, i codici di errore verranno visualizzati all'utente?
+    answer: >
+      Mentre all'utente verrà visualizzata una pagina di errore, il codice di errore sottostante non viene visualizzato. Viene restituito solo all'app. In alternativa, è anche possibile usare i log operativi.
+  - question: >
+      Come è possibile trovare altri dettagli sull'errore riscontrato?
+    answer: >
+      Per informazioni dettagliate, usare i log operativi.
+  - question: >
+      Il contenitore dell'app Single Sign-On (SSO) condivide i cookie con Internet Explorer o altri browser?
+    answer: >
+      No. 
+additionalContent: "\n## <a name=\"related-topics\"></a>Argomenti correlati\n\n[Considerazioni relative allo sviluppo di pagine Web](considerations-for-the-web-page-development.md)\n\n[App di esempio Web Authentication Broker SDK](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)\n\n[**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web)"

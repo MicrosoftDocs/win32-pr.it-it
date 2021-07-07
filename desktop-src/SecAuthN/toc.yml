@@ -28,16 +28,16 @@
             - name: Pacchetti di autenticazione
               href: authentication-packages.md
               items:
-                - name: Pacchetti di autenticazione di Windows
+                - name: Windows Pacchetti di autenticazione
                   href: windows-authentication-packages.md
-                - name: Pacchetti di autenticazione/provider di supporto per la sicurezza
+                - name: Provider di supporto per la sicurezza/pacchetti di autenticazione
                   href: security-support-provider-authentication-packages.md
                 - name: Pacchetti di autenticazione forniti da Microsoft
                   href: authentication-packages-provided-by-microsoft.md
                   items:
                     - name: Provider di servizi condivisi Kerberos/AP
                       href: kerberos-ssp-ap.md
-                    - name: MSV1_0 di autenticazione
+                    - name: MSV1_0 pacchetto di autenticazione
                       href: msv1-0-authentication-package.md
                 - name: Pacchetti di sottoautenticazione
                   href: subauthentication-packages.md
@@ -146,7 +146,7 @@
                 - name: Provider di supporto per la sicurezza delle credenziali
                   href: credential-security-support-provider.md
                   items:
-                    - name: Impostazioni Criteri di gruppo CredSSP
+                    - name: CredSSP Criteri di gruppo Impostazioni
                       href: credssp-group-policy-settings.md
                 - name: Microsoft Negotiate
                   href: microsoft-negotiate.md
@@ -160,7 +160,7 @@
                       items:
                         - name: Autenticazione della chiave
                           href: key-authentication.md
-                        - name: Messaggi dell'autenticatore
+                        - name: Authenticator Messaggi
                           href: authenticator-messages.md
                         - name: Distribuzione delle chiavi
                           href: key-distribution.md
@@ -175,7 +175,7 @@
                           href: authentication-service-exchange.md
                         - name: Scambio del servizio di concessione ticket
                           href: ticket-granting-service-exchange.md
-                        - name: Scambio client/server
+                        - name: Client/server Exchange
                           href: client-server-exchange.md
                     - name: Modello Kerberos
                       href: kerberos-components.md
@@ -258,7 +258,7 @@
                           href: tls-cipher-suites-in-windows-10-v1607.md
                         - name: Pacchetti di crittografia TLS in Windows 10 v1511
                           href: tls-cipher-suites-in-windows-10-v1511.md
-                        - name: Pacchetti di crittografia TLS in Windows 10 v1507
+                        - name: Tls Cipher Suites in Windows 10 v1507
                           href: tls-cipher-suites-in-windows-10--version-1507.md
                         - name: Pacchetti di crittografia TLS in Windows 8.1
                           href: tls-cipher-suites-in-windows-8-1.md
@@ -268,7 +268,7 @@
                           href: tls-cipher-suites-in-windows-7.md
                         - name: Pacchetti di crittografia TLS in Windows Vista
                           href: schannel-cipher-suites-in-windows-vista.md
-                        - name: Assegnazione delle priorità ai pacchetti di crittografia Schannel
+                        - name: Assegnazione della priorità alle suite di crittografia Schannel
                           href: prioritizing-schannel-cipher-suites.md
                     - name: Curve ellittiche in TLS (SSP Schannel)
                       items:
@@ -290,18 +290,18 @@
             - name: Pacchetti di sicurezza personalizzati
               href: custom-security-packages.md
               items:
-                - name: SSP/APs e SSP
+                - name: Provider di servizi condivisi/provider di servizi condivisi e provider di servizi condivisi
                   href: ssp-aps-versus-ssps.md
                 - name: Modalità LSA e modalità utente
                   href: lsa-mode-versus-user-mode.md
                 - name: Restrizioni relative alla registrazione e all'installazione di un pacchetto di sicurezza
                   href: restrictions-around-registering-and-installing-a-security-package.md
-            - name: Informazioni estese sugli errori
+            - name: Informazioni sugli errori estesi
               href: extended-error-information.md
         - name: Winlogon e provider di credenziali
           href: winlogon-and-credential-providers.md
           items:
-            - name: Winlogon e LANA
+            - name: Winlogon e GINA
               href: winlogon-and-gina.md
               items:
                 - name: Winlogon
@@ -313,16 +313,16 @@
                       href: winlogon-states.md
                     - name: Operazioni di timeout del servizio Della finestra di dialogo supportate
                       href: supported-dialog-box-service-time-out-operations.md
-                    - name: Invio di messaggi all'APPLICAZIONE
+                    - name: Invio di messaggi all'applicazione GINA
                       href: sending-messages-to-the-gina.md
                 - name: Gina
                   href: gina.md
                   items:
-                    - name: Caricamento ed esecuzione di una DLL DELL'APPLICAZIONE
+                    - name: Caricamento ed esecuzione di una DLL GINA
                       href: loading-and-running-a-gina-dll.md
-                    - name: Compilazione e test di una DLL DELL'APPLICAZIONE
+                    - name: Compilazione e test di una DLL GINA
                       href: building-and-testing-a-gina-dll.md
-                - name: Funzioni DISA di Servizi terminal
+                - name: Funzioni GINA di Servizi terminal
                   href: terminal-services-gina-functions.md
                 - name: Interazione con i provider di rete
                   href: interaction-with-network-providers.md
@@ -331,7 +331,7 @@
                   items:
                     - name: Responsabilità di Winlogon
                       href: responsibilities-of-winlogon.md
-                    - name: Responsabilità dell'ARTICOLO
+                    - name: Responsabilità di GINA
                       href: responsibilities-of-the-gina.md
                     - name: MSGina.dll funzionalità
                       href: msgina-dll-features.md
@@ -344,7 +344,7 @@
                       href: creating-a-winlogon-notification-package.md
                     - name: Registrazione di un pacchetto di notifica Winlogon
                       href: registering-a-winlogon-notification-package.md
-                    - name: Eventi di notifica winlogon
+                    - name: Eventi di notifica di Winlogon
                       href: winlogon-notification-events.md
                     - name: Informazioni di riferimento sul pacchetto di notifica Winlogon
                       href: winlogon-notification-package-reference.md
@@ -370,7 +370,7 @@
               href: user-mode-initialization.md
             - name: Registrazione delle DLL SSP/AP
               href: registering-ssp-ap-dlls.md
-            - name: Uso di nomi di entità in tre parti
+            - name: Uso dei nomi delle entità in tre parti
               href: using-three-part-principal-names.md
         - name: Personalizzazione di Winlogon
           href: customizing-winlogon.md
@@ -393,7 +393,7 @@
             - name: Problemi relativi all'autenticazione Web
               href: web-authentication-problems.md
             - name: Domande frequenti su Web Authentication Broker
-              href: faq-for-web-authentication-broker.md
+              href: faq-for-web-authentication-broker.yml
         - name: Uso dell'API del provider di rete
           href: using-network-provider-api.md
           items:
@@ -401,9 +401,9 @@
               href: implementing-a-network-provider.md
             - name: Implementazione di un Gestione credenziali
               href: implementing-a-credential-manager.md
-            - name: Registrazione di provider di rete e gestori delle credenziali
+            - name: Registrazione di provider di rete e gestori credenziali
               href: registering-network-providers-and-credential-managers.md
-            - name: Restituzione di valori alla MPR
+            - name: Restituzione di valori all'MPR
               href: returning-values-to-the-mpr.md
             - name: Gestione dei dati memorizzati nel buffer
               href: handling-buffered-data.md
@@ -416,7 +416,7 @@
         - name: Uso di SSPI
           href: using-sspi.md
           items:
-            - name: Procedure utilizzate con la maggior parte dei pacchetti e dei protocolli di sicurezza
+            - name: Procedure usate con la maggior parte dei pacchetti e dei protocolli di sicurezza
               href: procedures-used-with-most-security-packages-and-protocols.md
               items:
                 - name: Uso di SecBufferDesc e SecBuffer
@@ -424,7 +424,7 @@
                 - name: Inizializzazione di SSPI
                   href: initializing-sspi.md
                   items:
-                    - name: Scrittura e installazione di un security support provider
+                    - name: Scrittura e installazione di un provider di supporto per la sicurezza
                       href: writing-and-installing-a-security-support-provider.md
                     - name: Inizializzazione del pacchetto di sicurezza
                       href: initializing-the-security-package.md
@@ -445,16 +445,16 @@
                       items:
                         - name: Continuazione del server
                           href: server-continuation.md
-                - name: Garantire l'integrità delle comunicazioni durante lo scambio di messaggi
+                - name: Garantire l'integrità della comunicazione durante l'Exchange
                   href: ensuring-communication-integrity-during-message-exchange.md
-                - name: Fine di una sessione SSPI
+                - name: Chiusura di una sessione SSPI
                   href: ending-an-sspi-session.md
             - name: Codice SSPI di esempio
               href: sample-sspi-code.md
               items:
                 - name: Uso di SSPI con un client Windows Sockets
                   href: using-sspi-with-a-windows-sockets-client.md
-                - name: Uso di SSPI con un server Windows Sockets
+                - name: Uso di SSPI con Windows Sockets Server
                   href: using-sspi-with-a-windows-sockets-server.md
                 - name: File di intestazione per client e server SSPI
                   href: header-file-for-sspi-client-and-server.md
@@ -1022,12 +1022,12 @@
               href: /windows/desktop/api/Certpoleng/nf-certpoleng-pstvalidate
             - name: QueryContextAttributesEx
               href: /windows/desktop/api/Sspi/nf-sspi-querycontextattributesexa
-            - name: QueryContextAttributes (Generale)
+            - name: QueryContextAttributes (generale)
               href: querycontextattributes--general.md
               items:
                 - name: QueryContextAttributes (CredSSP)
                   href: querycontextattributes--credssp.md
-                - name: QueryContextAttributes (Digest)
+                - name: QueryContextAttributes (digest)
                   href: querycontextattributes--digest.md
                 - name: QueryContextAttributes (Kerberos)
                   href: querycontextattributes--kerberos.md
@@ -1037,7 +1037,7 @@
                   href: querycontextattributes--ntlm.md
                 - name: QueryContextAttributes (Schannel)
                   href: querycontextattributes--schannel.md
-            - name: Attributi QueryCredentialsAttributes
+            - name: QueryCredentialsAttributes
               href: /windows/desktop/api/Sspi/nf-sspi-querycredentialsattributesa
             - name: QuerySecurityContextToken
               href: /windows/desktop/api/Sspi/nf-sspi-querysecuritycontexttoken
@@ -1153,7 +1153,7 @@
               href: /windows/desktop/api/Winscard/nf-winscard-scardwritecachea
             - name: SendSAS
               href: /windows/desktop/api/Sas/nf-sas-sendsas
-            - name: Attributi SetContextAttributes
+            - name: SetContextAttributes
               href: /windows/desktop/api/Sspi/nf-sspi-setcontextattributesa
             - name: SetCredentialsAttributes
               href: /windows/desktop/api/Sspi/nf-sspi-setcredentialsattributesa
@@ -1434,11 +1434,6 @@
                       href: ibytebuffer-unlockregion.md
                     - name: Metodo Write
                       href: ibytebuffer-write.md
-            - name: ICcgDomainAuthCredentials
-              href: windows/win32/api/ccgplugins/nn-ccgplugins-iccgdomainauthcredentials
-              items:
-                - name: Metodo GetPasswordCredentials
-                  href: windows/win32/api/ccgplugins/nf-ccgplugins-iccgdomainauthcredentials-getpasswordcredentials
             - name: IConnectedIdentityProvider
               href: /windows/desktop/api/Identityprovider/nn-identityprovider-iconnectedidentityprovider
               items:
@@ -1552,7 +1547,7 @@
                       href: iscardcmd-clear.md
                     - name: Metodo Encapsulate
                       href: iscardcmd-encapsulate.md
-                    - name: metodo get_AlternateClassId
+                    - name: get_AlternateClassId metodo
                       href: iscardcmd-get-alternateclassid.md
                     - name: metodo get_Apdu
                       href: iscardcmd-get-apdu.md
@@ -1598,9 +1593,9 @@
                       href: iscardcmd-put-instructionid.md
                     - name: metodo put_Nad
                       href: iscardcmd-put-nad.md
-                    - name: Metodo put_P1
+                    - name: metodo put_P1
                       href: iscardcmd-put-p1.md
-                    - name: metodo put_P2
+                    - name: put_P2 metodo
                       href: iscardcmd-put-p2.md
                     - name: metodo put_ReplyStatus
                       href: iscardcmd-put-replystatus.md
