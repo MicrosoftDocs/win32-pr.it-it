@@ -11,7 +11,7 @@
         - name: Informazioni su Direct3D 12
           href: directx-12-getting-started.md
           items:
-            - name: Installazione dell'ambiente di programmazione Direct3D 12
+            - name: Configurazione dell'ambiente di programmazione Direct3D 12
               href: directx-12-programming-environment-set-up.md
             - name: Creazione di un componente Direct3D 12 di base
               href: creating-a-basic-direct3d-12-component.md
@@ -22,7 +22,7 @@
         - name: Invio di lavoro in Direct3D 12
           href: command-queues-and-command-lists.md
           items:
-            - name: Filosofia di progettazione di code di comandi ed elenchi di comandi
+            - name: Filosofia di progettazione delle code di comandi e degli elenchi di comandi
               href: design-philosophy-of-command-queues-and-command-lists.md
             - name: Creazione e registrazione di elenchi di comandi e aggregazioni
               href: recording-command-lists-and-bundles.md
@@ -30,9 +30,9 @@
               href: executing-and-synchronizing-command-lists.md
             - name: Gestione dello stato della pipeline grafica in Direct3D 12
               href: managing-graphics-pipeline-state-in-direct3d-12.md
-            - name: Uso di barriere alle risorse per sincronizzare gli stati delle risorse in Direct3D 12
+            - name: Uso delle barriere delle risorse per sincronizzare gli stati delle risorse in Direct3D 12
               href: using-resource-barriers-to-synchronize-resource-states-in-direct3d-12.md
-            - name: Pipeline e shader con Direct3D 12
+            - name: Pipelines e shader con Direct3D 12
               href: pipelines-and-shaders-with-directx-12.md
             - name: Ombreggiatura a velocità variabile (VRS)
               href: vrs.md
@@ -43,12 +43,12 @@
           items:
             - name: Panoramica dell'associazione di risorse
               href: resource-binding-flow-of-control.md
-            - name: Differenze nel modello di associazione da Direct3D 11
+            - name: Differenze nel modello di associazione rispetto a Direct3D 11
               href: binding-model.md
             - name: Descrittori
               href: descriptors.md
               items:
-                - name: Panoramica dei descrittori
+                - name: Cenni preliminari sui descrittori
                   href: descriptors-overview.md
                 - name: Creazione di descrittori
                   href: creating-descriptors.md
@@ -74,9 +74,9 @@
             - name: Tabelle dei descrittori
               href: descriptor-tables.md
               items:
-                - name: Panoramica delle tabelle dei descrittori
+                - name: Cenni preliminari sulle tabelle dei descrittori
                   href: descriptor-tables-overview.md
-                - name: Uso delle tabelle dei descrittori
+                - name: Uso di tabelle di descrizione
                   href: using-descriptor-tables.md
                 - name: Uso avanzato delle tabelle dei descrittori
                   href: advanced-use-of-descriptor-tables.md
@@ -91,9 +91,9 @@
                   href: creating-a-root-signature.md
                 - name: Limiti della firma radice
                   href: root-signature-limits.md
-                - name: Uso di costanti direttamente nella firma radice
+                - name: Uso diretto delle costanti nella firma radice
                   href: using-constants-directly-in-the-root-signature.md
-                - name: Uso dei descrittori direttamente nella firma radice
+                - name: Uso di descrittori direttamente nella firma radice
                   href: using-descriptors-directly-in-the-root-signature.md
                 - name: Firme radice di esempio
                   href: example-root-signatures.md
@@ -107,9 +107,9 @@
               href: resource-binding-in-hlsl.md
             - name: 'Ottimizzazioni UMA: trame accessibili dalla CPU e swizzle standard'
               href: default-texture-mapping.md
-            - name: Caricamenti di visualizzazione di accesso non ordinati tipi
+            - name: Caricamenti tipi di visualizzazione di accesso non ordinati
               href: typed-unordered-access-view-loads.md
-            - name: Risorse in riquadri del volume
+            - name: Risorse affiancate del volume
               href: volume-tiled-resources.md
             - name: Sottorisorse
               href: subresources.md
@@ -123,16 +123,16 @@
               items:
                 - name: Caricamento di diversi tipi di risorse
                   href: uploading-resources.md
-                - name: Caricamento di dati di trama tramite buffer
+                - name: Caricamento dei dati di trama tramite buffer
                   href: upload-and-readback-of-texture-data.md
                 - name: Leggere i dati tramite un buffer
                   href: readback-data-using-heaps.md
-                - name: Fence-Based Gestione risorse
+                - name: Fence-Based Resource Management
                   href: fence-based-resource-management.md
             - name: Sottoallocazione all'interno degli heap
               href: suballocation-within-heaps.md
               items:
-                - name: Alias di memoria ed ereditarietà dei dati
+                - name: Aliasing della memoria ed ereditarietà dei dati
                   href: memory-aliasing-and-data-inheritance.md
                 - name: Heap condivisi
                   href: shared-heaps.md
@@ -142,7 +142,7 @@
           href: core-feature-levels.md
         - name: Sistemi con più schede
           href: multi-engine.md
-        - name: Sincronizzazione con più motori
+        - name: Sincronizzazione di più motori
           href: user-mode-heap-synchronization.md
         - name: Rendering
           href: rendering.md
@@ -163,7 +163,7 @@
             - name: 'Contatori, query e predicazione'
               href: counters-and-queries.md
               items:
-                - name: Contatori di output di flusso
+                - name: Contatori di output del flusso
                   href: stream-output-counters.md
                 - name: Contatori UAV
                   href: uav-counters.md
@@ -195,14 +195,14 @@
               href: predication-queries.md
             - name: Indicizzazione dinamica con HLSL 5.1
               href: dynamic-indexing-using-hlsl-5-1.md
-            - name: Disegno indiretto ed culling GPU
+            - name: Disegno indiretto e culling della GPU
               href: indirect-drawing-and-gpu-culling-.md
         - name: Debug e diagnostica
           href: understanding-the-d3d12-debug-layer.md
           items:
             - name: Usare la convalida basata su GPU del livello di debug
               href: using-d3d12-debug-layer-gpu-based-validation.md
-            - name: Usare DRED per diagnosticare gli errori gpu
+            - name: Usare DRED per diagnosticare gli errori GPU
               href: use-dred.md
         - name: Direct Machine Learning (DirectML)
           href: dml.md
@@ -219,7 +219,7 @@
               href: dml-barriers.md
             - name: Uso di stride per indicare la spaziatura interna e il layout della memoria
               href: dml-strides.md
-            - name: Uso di operatori fusi per migliorare le prestazioni
+            - name: Uso di operatori fusibili per migliorare le prestazioni
               href: dml-fused-activations.md
             - name: DirectMLX
               href: dml-directmlx.md
@@ -236,7 +236,7 @@
                   href: gpu-cuda-in-wsl.md
                 - name: Abilitare TensorFlow con DirectML in WSL 2
                   href: gpu-tensorflow-wsl.md
-                - name: Abilitare TensorFlow con DirectML in Windows
+                - name: Abilitare TensorFlow con DirectML Windows
                   href: gpu-tensorflow-windows.md
                 - name: Domande frequenti su TensorFlow con il pacchetto DirectML
                   href: gpu-faq.yml
@@ -578,7 +578,7 @@
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setmarker
                     - name: SetPipelineState
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate
-                    - name: Impostazione della predicazione
+                    - name: SetPredication
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpredication
                     - name: SOSetTargets
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-sosettargets
@@ -1399,7 +1399,7 @@
                   href: /windows/win32/api/d3d12/ne-d3d12-d3d12_writebufferimmediate_mode
             - name: Costanti di base
               href: constants.md
-            - name: Tipi di dati di base
+            - name: Tipi di dati principali
               href: direct3d-12-data-types.md
               items:
                 - name: D3D12_GPU_VIRTUAL_ADDRESS
@@ -1526,9 +1526,9 @@
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-getstoragefilter
                     - name: GetStorageFilterStackSize
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-getstoragefilterstacksize
-                    - name: PopRetrievalFilter
+                    - name: Filtro PopRetrieval
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-popretrievalfilter
-                    - name: PopStorageFilter
+                    - name: Filtro di archiviazione popstorage
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-popstoragefilter
                     - name: PushCopyOfRetrievalFilter
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-pushcopyofretrievalfilter
@@ -1559,7 +1559,7 @@
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12sharingcontract-present
                     - name: Metodo SharedFenceSignal
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12sharingcontract-sharedfencesignal
-            - name: Eseguire il debug delle strutture del livello
+            - name: Eseguire il debug delle strutture dei livelli
               href: direct3d-12-sdklayers-structures.md
               items:
                 - name: D3D12_DEBUG_COMMAND_LIST_GPU_BASED_VALIDATION_SETTINGS
@@ -1597,7 +1597,7 @@
                   href: /windows/win32/api/d3d12sdklayers/ne-d3d12sdklayers-d3d12_message_severity
                 - name: D3D12_RLDO_FLAGS
                   href: /windows/win32/api/d3d12sdklayers/ne-d3d12sdklayers-d3d12_rldo_flags
-        - name: Informazioni di riferimento su shader
+        - name: Informazioni di riferimento per lo shader
           href: d3d12-graphics-reference-shader-reference.md
           items:
             - name: Interfacce shader
@@ -1969,6 +1969,8 @@
                   href: /windows/win32/api/directml/ns-directml-dml_depth_to_space1_operator_desc
                 - name: 'DML_DIAGONAL_MATRIX_OPERATOR_DESC '
                   href: /windows/win32/api/directml/ns-directml-dml_diagonal_matrix_operator_desc
+                - name: DML_DYNAMIC_QUANTIZE_LINEAR_OPERATOR_DESC
+                  href: /windows/win32/api/directml/ns-directml-dml_dynamic_quantize_linear_operator_desc
                 - name: DML_ELEMENT_WISE_ABS_OPERATOR_DESC
                   href: /windows/win32/api/directml/ns-directml-dml_element_wise_abs_operator_desc
                 - name: DML_ELEMENT_WISE_ACOS_OPERATOR_DESC
@@ -2071,6 +2073,8 @@
                   href: /windows/win32/api/directml/ns-directml-dml_element_wise_pow_operator_desc
                 - name: DML_ELEMENT_WISE_QUANTIZE_LINEAR_OPERATOR_DESC
                   href: /windows/win32/api/directml/ns-directml-dml_element_wise_quantize_linear_operator_desc
+                - name: DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC
+                  href: /windows/win32/api/directml/ns-directml-dml_element_wise_quantized_linear_add_operator_desc
                 - name: DML_ELEMENT_WISE_RECIP_OPERATOR_DESC
                   href: /windows/win32/api/directml/ns-directml-dml_element_wise_recip_operator_desc
                 - name: DML_ELEMENT_WISE_ROUND_OPERATOR_DESC
@@ -2181,6 +2185,8 @@
                   href: /windows/win32/api/directml/ns-directml-dml_rnn_operator_desc
                 - name: DML_ROI_ALIGN_OPERATOR_DESC
                   href: /windows/win32/api/directml/ns-directml-dml_roi_align_operator_desc
+                - name: DML_ROI_ALIGN1_OPERATOR_DESC
+                  href: /windows/win32/api/directml/ns-directml-dml_roi_align1_operator_desc
                 - name: DML_ROI_POOLING_OPERATOR_DESC
                   href: /windows/win32/api/directml/ns-directml-dml_roi_pooling_operator_desc
                 - name: DML_SCALAR_UNION
@@ -2490,15 +2496,15 @@
         - name: Direct3D 12 Raytracing
           href: direct3d-12-raytracing.md
           items:
-            - name: Informazioni di riferimento su Direct3D 12 Raytracing HLSL
+            - name: Informazioni di riferimento su HLSL per Direct3D 12 Raytracing
               href: direct3d-12-raytracing-hlsl-reference.md
               items:
-                - name: Enumerazioni HLSL Direct3D 12 Raytracing
+                - name: Enumerazioni HLSL Di Direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-enumerations.md
                   items:
                     - name: RAY_FLAG
                       href: ray_flag.md
-                - name: Intrinseci HLSL direct3D 12 Raytracing
+                - name: Oggetti intrinseci HLSL raytracing di Direct3D 12
                   href: direct3d-12-raytracing-hlsl-intrinsics.md
                   items:
                     - name: Funzione AcceptHitAndEndSearch
@@ -2511,27 +2517,27 @@
                       href: reporthit-function.md
                     - name: Funzione TraceRay
                       href: traceray-function.md
-                - name: Tipi di risorse HLSL Direct3D 12 Raytracing
+                - name: Tipi di risorse HLSL raytracing di Direct3D 12
                   href: direct3d-12-raytracing-hlsl-resource-types.md
                   items:
                     - name: RaytracingAccelerationStructure
                       href: raytracingaccelerationstructure.md
-                - name: Shader HLSL Direct3D 12 Raytracing
+                - name: Shader HLSL raytracing Direct3D 12
                   href: direct3d-12-raytracing-hlsl-shaders.md
                   items:
                     - name: Qualsiasi hit shader
                       href: any-hit-shader.md
                     - name: Shader chiamabile
                       href: callable-shader.md
-                    - name: Hit Shader più vicino
+                    - name: Hit shader più vicino
                       href: closest-hit-shader.md
-                    - name: Shader di intersezione
+                    - name: Intersection Shader
                       href: intersection-shader.md
                     - name: Miss Shader
                       href: miss-shader.md
-                    - name: Shader di generazione di raggi
+                    - name: Ray Generation Shader
                       href: ray-generation-shader.md
-                - name: Strutture HLSL Direct3D 12 Raytracing
+                - name: Strutture HLSL Di Direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-structures.md
                   items:
                     - name: Struttura dei parametri di chiamata
@@ -2542,12 +2548,12 @@
                       href: ray-payload.md
                     - name: Struttura RayDesc
                       href: raydesc.md
-                - name: Intrinseci del valore di sistema HLSL raytracing direct3D 12
+                - name: Intrinseci dei valori di sistema HLSL raytracing di Direct3D 12
                   href: direct3d-12-raytracing-hlsl-system-value-intrinsics.md
         - name: Direct3D 12 in Windows 7
           href: direct3d-12on7-reference.md
           items:
-            - name: Interfacce Direct3D 12 in Windows 7
+            - name: Interfacce Direct3D 12 Windows 7
               href: direct3d-12on7-interfaces.md
               items:
                 - name: ID3D12CommandQueueDownlevel
@@ -2560,7 +2566,7 @@
                   items:
                     - name: 'ID3D12DeviceDownlevel::QueryVideoMemoryInfo'
                       href: id3d12devicedownlevel-queryvideomemoryinfo.md
-            - name: Enumerazioni Direct3D 12 in Windows 7
+            - name: Enumerazioni Direct3D 12 Windows 7
               href: direct3d-12on7-enumerations.md
               items:
                 - name: D3D12_DOWNLEVEL_PRESENT_FLAGS
@@ -2606,5 +2612,5 @@
               items:
                 - name: CommitDirect3D12Resource
                   href: /windows/win32/api/windows.graphics.holographic.interop/nf-windows-graphics-holographic-interop-iholographicquadlayerupdateparametersinterop-commitdirect3d12resource
-    - name: Glossario Direct3D 12
+    - name: Glossario di Direct3D 12
       href: directx-12-glossary.md
