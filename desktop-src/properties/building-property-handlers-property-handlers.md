@@ -1,62 +1,62 @@
 ---
-description: Questo articolo illustra come inizializzare i gestori delle proprietà per l'uso con il sistema di proprietà di Windows.
+description: Questo articolo illustra come inizializzare i gestori delle proprietà da usare con il Windows di proprietà.
 ms.assetid: 3b54dd65-b7db-4e6a-bc3d-1008fdabcfa9
-title: Inizializzazione dei gestori di proprietà
+title: Inizializzazione di gestori di proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7d7626f92b3d81a6764e635c10302747f82a383
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4482af2a029a91049d421ee49eb0f439c5fd8d0e
+ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406994"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113481906"
 ---
-# <a name="initializing-property-handlers"></a>Inizializzazione dei gestori di proprietà
+# <a name="initializing-property-handlers"></a>Inizializzazione di gestori di proprietà
 
-Questo argomento illustra come creare e registrare gestori di proprietà per l'uso con il sistema di proprietà di Windows.
+Questo argomento illustra come creare e registrare gestori di proprietà da usare con il Windows proprietà.
 
 Questo argomento è organizzato come segue:
 
--   [Gestori delle proprietà](#property-handlers)
+-   [Gestori di proprietà](#property-handlers)
 -   [Prima di iniziare](#before-you-begin)
--   [Inizializzazione dei gestori di proprietà](#initializing-property-handlers)
--   [In memoria Archivio proprietà](#in-memory-property-store)
+-   [Inizializzazione di gestori di proprietà](#initializing-property-handlers)
+-   [In-Memory Archivio proprietà](#in-memory-property-store)
 -   [Gestione dei PROPVARIANT-Based predefiniti](#dealing-with-propvariant-based-values)
 -   [Supporto dei metadati aperti](#supporting-open-metadata)
 -   [Contenuto full-text](#full-text-contents)
--   [Fornire valori per le proprietà](#providing-values-for-properties)
+-   [Specifica di valori per le proprietà](#providing-values-for-properties)
 -   [Scrittura di valori](#writing-back-values)
 -   [Implementazione di IPropertyStoreCapabilities](#implementing-ipropertystorecapabilities)
 -   [Registrazione e distribuzione di gestori di proprietà](#registering-and-distributing-property-handlers)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="property-handlers"></a>Gestori delle proprietà
+## <a name="property-handlers"></a>Gestori di proprietà
 
-I gestori delle proprietà sono una parte fondamentale del sistema di proprietà. Vengono richiamati in-process dall'indicizzatore per leggere e indicizzare i valori delle proprietà e vengono richiamati anche da Esplora risorse in-process per leggere e scrivere i valori delle proprietà direttamente nei file. Questi gestori devono essere scritti e testati con attenzione per evitare prestazioni ridotte o la perdita di dati nei file interessati. Per altre informazioni sulle considerazioni specifiche dell'indicizzatore che influiscono sull'implementazione del gestore delle proprietà, vedere Sviluppo di gestori di proprietà [per Windows Search](../search/-search-3x-wds-extidx-propertyhandlers.md).
+I gestori di proprietà sono una parte fondamentale del sistema di proprietà. Vengono richiamati in-process dall'indicizzatore per leggere e indicizzare i valori delle proprietà e vengono richiamati anche da Windows Explorer in-process per leggere e scrivere i valori delle proprietà direttamente nei file. Questi gestori devono essere scritti e testati con attenzione per evitare prestazioni ridotte o la perdita di dati nei file interessati. Per altre informazioni sulle considerazioni specifiche dell'indicizzatore che influiscono sull'implementazione del gestore delle proprietà, vedere Sviluppo di gestori di proprietà [Windows ricerca](../search/-search-3x-wds-extidx-propertyhandlers.md).
 
-Questo argomento illustra un formato di file basato su XML di esempio che descrive una ricetta con estensione recipe. L'estensione di file con estensione recipe viene registrata come formato di file distinto anziché basarsi sul formato di file .xml più generico, il cui gestore usa un flusso secondario per archiviare le proprietà. È consigliabile registrare estensioni di file univoche per i tipi di file.
+In questo argomento viene illustrato un formato di file basato su XML di esempio che descrive una ricetta con estensione recipe. L'estensione del nome file recipe viene registrata come formato di file distinto anziché basarsi sul formato di file .xml più generico, il cui gestore usa un flusso secondario per archiviare le proprietà. È consigliabile registrare estensioni di file univoche per i tipi di file.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-I gestori di proprietà sono oggetti COM che creano [**l'astrazione IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) per un formato di file specifico. Leggono (analizzano) e scrivono questo formato di file in modo conforme alle specifiche. Alcuni gestori di proprietà esereranno il proprio lavoro in base alle API che astrarranno l'accesso a un formato di file specifico. Prima di sviluppare un gestore delle proprietà per il formato di file, è necessario comprendere in che modo il formato di file archivia le proprietà e come tali proprietà (nomi e valori) vengono mappate nell'astrazione dell'archivio proprietà.
+I gestori di proprietà sono oggetti COM che creano [**l'astrazione IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) per un formato di file specifico. Leggono (analizzano) e scrivono questo formato di file in modo conforme alla specifica. Alcuni gestori di proprietà si basano sulle API che astraeno l'accesso a un formato di file specifico. Prima di sviluppare un gestore delle proprietà per il formato di file, è necessario comprendere in che modo il formato di file archivia le proprietà e come tali proprietà (nomi e valori) vengono mappate nell'astrazione dell'archivio delle proprietà.
 
-Quando si pianifica l'implementazione, tenere presente che i gestori delle proprietà sono componenti di basso livello caricati nel contesto di processi come Esplora risorse, l'indicizzatore Windows Search e applicazioni di terze parti che usano il modello di programmazione dell'elemento Shell. Di conseguenza, i gestori di proprietà non possono essere implementati nel codice gestito e devono essere implementati in C++. Se il gestore usa api o servizi per eseguire il proprio lavoro, è necessario assicurarsi che tali servizi possano funzionare correttamente negli ambienti in cui viene caricato il gestore delle proprietà.
+Quando si pianifica l'implementazione, tenere presente che i gestori delle proprietà sono componenti di basso livello caricati nel contesto di processi come Windows Explorer, l'indicizzatore di ricerca di Windows e applicazioni di terze parti che usano il modello di programmazione degli elementi della shell. Di conseguenza, i gestori di proprietà non possono essere implementati nel codice gestito e devono essere implementati in C++. Se il gestore usa api o servizi per eseguire il proprio lavoro, è necessario assicurarsi che tali servizi possano funzionare correttamente negli ambienti in cui è caricato il gestore delle proprietà.
 
 > [!Note]  
 > I gestori di proprietà sono sempre associati a tipi di file specifici. Pertanto, se il formato di file contiene proprietà che richiedono un gestore delle proprietà personalizzate, è necessario registrare sempre un'estensione di file univoca per ogni formato di file.
 
  
 
-## <a name="initializing-property-handlers"></a>Inizializzazione dei gestori di proprietà
+## <a name="initializing-property-handlers"></a>Inizializzazione di gestori di proprietà
 
-Prima che una proprietà venga usata dal sistema, viene inizializzata chiamando un'implementazione di [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream). Il gestore della proprietà deve essere inizializzato facendo in modo che il sistema gli assegni un flusso anziché lasciare tale assegnazione all'implementazione del gestore. Questo metodo di inizializzazione garantisce quanto segue:
+Prima che una proprietà venga usata dal sistema, viene inizializzata chiamando un'implementazione di [**IInitializeWithStream.**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) Il gestore della proprietà deve essere inizializzato facendo in modo che il sistema gli assegni un flusso anziché lasciare tale assegnazione all'implementazione del gestore. Questo metodo di inizializzazione garantisce quanto segue:
 
--   Il gestore delle proprietà può essere eseguito in un processo con restrizioni (una funzionalità di sicurezza importante) senza avere diritti di accesso per leggere o scrivere direttamente i file, anziché accedere al contenuto tramite il flusso.
+-   Il gestore delle proprietà può essere eseguito in un processo con restrizioni (una funzionalità di sicurezza importante) senza disporre dei diritti di accesso per leggere o scrivere direttamente i file, invece di accedere al contenuto tramite il flusso.
 -   Il sistema può essere considerato attendibile per gestire correttamente gli oplock dei file, che è una misura di affidabilità importante.
--   Il sistema di proprietà fornisce un servizio di salvataggio sicuro automatico senza alcuna funzionalità aggiuntiva richiesta dall'implementazione del gestore delle proprietà. Per altre [informazioni sui flussi,](#writing-back-values) vedere la sezione Writing Back Values (Scrittura di valori).
+-   Il sistema di proprietà fornisce un servizio di salvataggio sicuro automatico senza alcuna funzionalità aggiuntiva richiesta dall'implementazione del gestore delle proprietà. Per altre [informazioni sui flussi,](#writing-back-values) vedere la sezione Scrittura di valori.
 -   L'uso di [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) astrae l'implementazione file system dettagli. In questo modo il gestore può supportare l'inizializzazione tramite archivi alternativi, ad esempio una cartella File Transfer Protocol (FTP) o un file compresso con un'estensione .zip file.
 
-In alcuni casi l'inizializzazione con i flussi non è possibile. In queste situazioni, sono disponibili altre due interfacce che i gestori delle proprietà possono implementare: [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile) e [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem). Se un gestore delle proprietà non implementa [**IInitializeWithStream,**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream)deve rifiutare esplicitamente l'esecuzione nel processo isolato in cui l'indicizzatore di sistema lo insererebbe per impostazione predefinita in caso di modifica al flusso. Per rifiutare esplicitamente questa funzionalità, impostare il valore del Registro di sistema seguente.
+In alcuni casi l'inizializzazione con i flussi non è possibile. In queste situazioni, i gestori di proprietà possono implementare altre due interfacce: [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile) e [**IInitializeWithItem.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) Se un gestore di proprietà non implementa [**IInitializeWithStream,**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream)deve rifiutare esplicitamente l'esecuzione nel processo isolato in cui l'indicizzatore di sistema lo insererebbe per impostazione predefinita se fosse stata apportata una modifica al flusso. Per rifiutare esplicitamente questa funzionalità, impostare il valore del Registro di sistema seguente.
 
 ```
 HKEY_CLASSES_ROOT
@@ -65,12 +65,12 @@ HKEY_CLASSES_ROOT
          DisableProcessIsolation = 1
 ```
 
-Tuttavia, è molto meglio implementare [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) ed eseguire un'inizializzazione basata su flusso. Di conseguenza, il gestore della proprietà sarà più sicuro e affidabile. La disabilitazione dell'isolamento dei processi è in genere destinata solo ai gestori di proprietà legacy e deve essere evitata in modo faticoso da qualsiasi nuovo codice.
+Tuttavia, è molto meglio implementare [**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) ed eseguire un'inizializzazione basata sul flusso. Di conseguenza, il gestore delle proprietà sarà più sicuro e affidabile. La disabilitazione dell'isolamento dei processi è in genere destinata solo ai gestori di proprietà legacy e deve essere evitata da qualsiasi nuovo codice.
 
-Per esaminare in dettaglio l'implementazione di un gestore di proprietà, esaminare l'esempio di codice seguente, ovvero un'implementazione di [**IInitializeWithStream::Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize). Il gestore viene inizializzato caricando un documento recipe basato su XML tramite un puntatore all'istanza [**IStream**](/windows/win32/api/objidl/nn-objidl-istream) associata del documento. La **\_ variabile spDocEle** usata vicino alla fine dell'esempio di codice è definita in precedenza nell'esempio come MSXML2::IXMLDOMElementPtr.
+Per esaminare in dettaglio l'implementazione di un gestore delle proprietà, esaminare l'esempio di codice seguente, ovvero un'implementazione di [**IInitializeWithStream::Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize). Il gestore viene inizializzato caricando un documento recipe basato su XML tramite un puntatore all'istanza [**IStream**](/windows/win32/api/objidl/nn-objidl-istream) associata del documento. La **\_ variabile spDocEle** usata verso la fine dell'esempio di codice è definita in precedenza nell'esempio come MSXML2::IXMLDOMElementPtr.
 
 > [!Note]  
-> Gli esempi di codice seguenti e di tutti i successivi sono tratto dall'esempio di gestore di ricette incluso nel Windows Software Development Kit (Windows SDK) (SDK). .
+> L'esempio seguente e tutti gli esempi di codice successivi sono tratto dall'esempio di gestore di recipe incluso in Windows Software Development Kit (SDK). .
 
  
 
@@ -98,7 +98,7 @@ HRESULT CRecipePropertyStore::Initialize(IStream *pStream, DWORD grfMode)
 
 Â 
 
-Dopo il caricamento del documento stesso, le proprietà da visualizzare nel Esplora risorse vengono caricate chiamando il metodo **\_ LoadProperties** protetto, come illustrato nell'esempio di codice seguente. Questo processo viene esaminato in dettaglio nella sezione successiva.
+Dopo il caricamento del documento stesso, le proprietà da visualizzare in Windows Explorer vengono caricate chiamando il metodo **\_ LoadProperties** protetto, come illustrato nell'esempio di codice seguente. Questo processo viene esaminato in dettaglio nella sezione successiva.
 
 
 ```
@@ -134,15 +134,15 @@ Dopo il caricamento del documento stesso, le proprietà da visualizzare nel Espl
 
 
 
-Se il flusso è di sola lettura ma il *parametro grfMode* contiene il flag STGM READWRITE, l'inizializzazione avrà esito negativo e restituirà \_ STG \_ E \_ ACCESSDENIED. Senza questo controllo, Esplora risorse i valori delle proprietà come scrivibili anche se non lo sono, con un'esperienza utente finale confusa.
+Se il flusso è di sola lettura ma il parametro *grfMode* contiene il flag STGM READWRITE, l'inizializzazione deve avere esito negativo e restituire \_ STG \_ E \_ ACCESSDENIED. Senza questo controllo, Windows Explorer mostra i valori delle proprietà come scrivibili anche se non lo sono, con un'esperienza utente finale confusa.
 
-Il gestore della proprietà viene inizializzato una sola volta nella relativa durata. Se viene richiesta una seconda inizializzazione, il gestore deve restituire `HRESULT_FROM_WIN32(ERROR_ALREADY_INITIALIZED)` .
+Il gestore della proprietà viene inizializzato una sola volta nella sua durata. Se viene richiesta una seconda inizializzazione, il gestore deve restituire `HRESULT_FROM_WIN32(ERROR_ALREADY_INITIALIZED)` .
 
 ## <a name="in-memory-property-store"></a>In-Memory Archivio proprietà
 
 Prima di vedere l'implementazione di **\_ LoadProperties,** è necessario comprendere la matrice **PropertyMap** usata nell'esempio per eseguire il mapping delle proprietà nel documento XML alle proprietà esistenti nel sistema di proprietà tramite i relativi valori PKEY.
 
-Non esporre ogni elemento e attributo nel file XML come proprietà. Selezionare invece solo quelli che si ritiene siano utili per gli utenti finali nell'organizzazione dei documenti (in questo caso, le ricette). Si tratta di un concetto importante da tenere presente quando si sviluppano i gestori delle proprietà: la differenza tra le informazioni realmente utili per gli scenari aziendali e le informazioni che appartengono ai dettagli del file e possono essere visualizzate aprendo il file stesso. Le proprietà non devono essere una duplicazione completa di un file XML.
+È consigliabile non esporre ogni elemento e attributo nel file XML come proprietà. Selezionare invece solo quelli che si ritiene saranno utili agli utenti finali nell'organizzazione dei propri documenti (in questo caso, le ricette). Si tratta di un concetto importante da tenere presente quando si sviluppano i gestori di proprietà: la differenza tra le informazioni realmente utili per gli scenari organizzativi e le informazioni che appartengono ai dettagli del file e che possono essere visualizzate aprendo il file stesso. Le proprietà non devono essere una duplicazione completa di un file XML.
 
 
 ```
@@ -169,7 +169,7 @@ PropertyMap c_rgPropertyMap[] =
 
 
 
-Ecco l'implementazione completa **\_ del metodo LoadProperties** chiamato da [**IInitializeWithStream::Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize).
+Ecco l'implementazione completa **\_ del metodo LoadProperties** chiamato da [**IInitializeWithStream::Initialize.**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize)
 
 
 ```
@@ -204,9 +204,9 @@ HRESULT CRecipePropertyStore::_LoadProperties()
 
 
 
-Il **\_ metodo LoadProperties** chiama la funzione helper Shell [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) per creare un archivio delle proprietà in memoria (cache) per le proprietà gestite. Usando una cache, le modifiche vengono rilevate per l'utente. In questo modo è possibile verificare se un valore di proprietà è stato modificato nella cache ma non è stato ancora salvato nell'archiviazione persistente. Consente inoltre di rendere inutili persistenti i valori delle proprietà che non sono stati modificati.
+Il **\_ metodo LoadProperties** chiama la funzione helper della shell [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) per creare un archivio delle proprietà in memoria (cache) per le proprietà gestite. Usando una cache, le modifiche vengono rilevate per l'utente. In questo modo non è possibile verificare se un valore della proprietà è stato modificato nella cache ma non è ancora stato salvato nell'archiviazione persistente. Consente inoltre di non rendere inutili persistenti i valori delle proprietà che non sono stati modificati.
 
-Il **\_ metodo LoadProperties** chiama anche **\_ LoadProperty** la cui implementazione è illustrata nel codice seguente) una volta per ogni proprietà mappata. **\_ LoadProperty** ottiene il valore della proprietà come specificato nell'elemento **PropertyMap** nel flusso XML e lo assegna alla cache in memoria tramite una chiamata a [**IPropertyStoreCache::SetValueAndState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate). Il flag PSC NORMAL nella chiamata \_ a **IPropertyStoreCache::SetValueAndState** indica che il valore della proprietà non è stato modificato dopo l'immissione nella cache.
+Il **\_ metodo LoadProperties** chiama anche **\_ LoadProperty la** cui implementazione è illustrata nel codice seguente) una volta per ogni proprietà mappata. **\_ LoadProperty** ottiene il valore della proprietà come specificato nell'elemento **PropertyMap** nel flusso XML e lo assegna alla cache in memoria tramite una chiamata a [**IPropertyStoreCache::SetValueAndState.**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate) Il flag PSC NORMAL nella chiamata \_ a **IPropertyStoreCache::SetValueAndState** indica che il valore della proprietà non è stato modificato dopo l'immissione nella cache.
 
 
 ```
@@ -255,7 +255,7 @@ HRESULT CRecipePropertyStore::_LoadProperty(PropertyMap &map)
 
 ## <a name="dealing-with-propvariant-based-values"></a>Gestione dei PROPVARIANT-Based predefiniti
 
-Nell'implementazione **\_ di LoadProperty** viene fornito un valore della proprietà sotto forma di [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant). Viene fornito un set di API nel Software Development Kit (SDK) per la conversione da tipi primitivi come **PWSTR** o **int** a o da tipi **PROPVARIANT.** Queste API sono disponibili in Propvarutil.h.
+Nell'implementazione **\_ di LoadProperty** viene fornito un valore della proprietà sotto forma di [**propVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Viene fornito un set di API nel Software Development Kit (SDK) per la conversione da tipi primitivi come **PWSTR** o **int** a o da tipi **PROPVARIANT.** Queste API sono disponibili in Propvarutil.h.
 
 Ad esempio, per convertire [**un oggetto PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) in una stringa, è possibile usare [**PropVariantToString**](/windows/win32/api/propvarutil/nf-propvarutil-propvarianttostring) come illustrato di seguito.
 
@@ -275,7 +275,7 @@ InitPropVariantFromString(PCWSTR psz, PROPVARIANT *ppropvar);
 
 
 
-Come si può vedere in uno dei file di ricette inclusi nell'esempio, può essere presente più di una parola chiave in ogni file. A tale scopo, il sistema di proprietà supporta stringhe multivalore rappresentate come vettore di stringhe ,ad esempio "VT \_ VECTOR \| VT \_ LPWSTR". Il **\_ metodo LoadVectorProperty** nell'esempio usa valori basati su vettori.
+Come si può vedere in uno dei file recipe inclusi nell'esempio, può essere presente più di una parola chiave in ogni file. A tale scopo, il sistema di proprietà supporta stringhe multivalore rappresentate come vettore di stringhe ,ad esempio "VT \_ VECTOR \| VT \_ LPWSTR". Il **\_ metodo LoadVectorProperty** nell'esempio usa valori basati su vettori.
 
 
 ```
@@ -334,7 +334,7 @@ Se non esiste un valore nel file, non restituire un errore. Impostare invece il 
 
 ## <a name="supporting-open-metadata"></a>Supporto dei metadati aperti
 
-In questo esempio viene utilizzato un formato di file basato su XML. Il relativo schema può essere esteso per supportare le proprietà che non sono state pensate durante lo sviluppo, ad esempio. Questo sistema è noto come metadati aperti. Questo esempio estende il sistema di proprietà creando un nodo nell'elemento **Recipe** denominato **ExtendedProperties**, come illustrato nell'esempio di codice seguente.
+In questo esempio viene utilizzato un formato di file basato su XML. Il relativo schema può essere esteso per supportare proprietà che non sono state pensate durante lo sviluppo, ad esempio. Questo sistema è noto come metadati aperti. Questo esempio estende il sistema di proprietà creando un nodo nell'elemento **Recipe** denominato **ExtendedProperties,** come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -388,7 +388,7 @@ HRESULT CRecipePropertyStore::_LoadExtendedProperties()
 
 
 
-Le API di serializzazione dichiarate in Propsys.h vengono usate per serializzare e deserializzare i tipi [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) in BLOB di dati e quindi viene usata la codifica Base64 per serializzare tali BLOB in stringhe che possono essere salvate nel codice XML. Queste stringhe vengono archiviate **nell'attributo EncodedValue** dell'elemento **ExtendedProperties.** Il metodo di utilità seguente, implementato nel file Util.cpp dell'esempio, esegue la serializzazione. Inizia con una chiamata alla [**funzione StgSerializePropVariant**](/windows/win32/api/propvarutil/nf-propvarutil-stgserializepropvariant) per eseguire la serializzazione binaria, come illustrato nell'esempio di codice seguente.
+Le API di serializzazione dichiarate in Propsys.h vengono usate per serializzare e deserializzare i tipi [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) in BLOB di dati, quindi viene usata la codifica Base64 per serializzare tali BLOB in stringhe che possono essere salvate nel codice XML. Queste stringhe vengono archiviate **nell'attributo EncodedValue** **dell'elemento ExtendedProperties.** Il metodo di utilità seguente, implementato nel file Util.cpp dell'esempio, esegue la serializzazione. Inizia con una chiamata alla funzione [**StgSerializePropVariant**](/windows/win32/api/propvarutil/nf-propvarutil-stgserializepropvariant) per eseguire la serializzazione binaria, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -401,7 +401,7 @@ HRESULT SerializePropVariantAsString(const PROPVARIANT *ppropvar, PWSTR *pszOut)
 
 
 
-Successivamente, la [**funzione CryptBinaryToString,**](/windows/win32/api/wincrypt/nf-wincrypt-cryptbinarytostringa)dichiarata in Wincrypt.h, esegue la conversione Base64.
+La funzione [**Â CryptBinaryToString,**](/windows/win32/api/wincrypt/nf-wincrypt-cryptbinarytostringa)dichiarata in Wincrypt.h, esegue quindi la conversione Base64.
 
 
 ```
@@ -447,23 +447,23 @@ Successivamente, la [**funzione CryptBinaryToString,**](/windows/win32/api/wincr
 
 La **funzione DeserializePropVariantFromString,** disponibile anche in Util.cpp, inverte l'operazione, deserializzando i valori dal file XML.
 
-Per informazioni sul supporto per i metadati aperti, vedere "Tipi di file che supportano metadati aperti" in [Tipi di file.](../shell/fa-file-types.md)
+Per informazioni sul supporto per i metadati aperti, vedere "Tipi di file che supportano metadati aperti" in [Tipi di file](../shell/fa-file-types.md).
 
 ## <a name="full-text-contents"></a>Full-Text contenuto
 
-I gestori di proprietà possono anche semplificare una ricerca full-text del contenuto del file e sono un modo semplice per fornire tale funzionalità se il formato di file non è troppo complicato. Esiste un modo alternativo e più potente per fornire il testo completo del file tramite [**l'implementazione dell'interfaccia IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
+I gestori delle proprietà possono anche facilitare una ricerca full-text del contenuto del file e sono un modo semplice per fornire tale funzionalità se il formato del file non è e troppo complesso. Esiste un modo alternativo e più potente per fornire il testo completo del file tramite [**l'implementazione dell'interfaccia IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
 
-La tabella seguente riepiloga i vantaggi di ogni approccio usando [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) o [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+La tabella seguente riepiloga i vantaggi di ogni approccio usando [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) o [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 
 
 | Funzionalità                                   | Ifilter                      | Ipropertystore |
 |----------------------------------------------|------------------------------|----------------|
-| Consente il write back nei file?                  | No                           | Sì            |
+| Consente la scrittura nei file?                  | No                           | Sì            |
 | Fornisce una combinazione di contenuto e proprietà?      | Sì                          | Sì            |
 | Multilingue?                                | Sì                          | No             |
 | MIME/Embedded?                               | Sì                          | No             |
-| Limiti di testo?                             | Frase, paragrafo, capitolo | Nessuno           |
+| Limiti del testo?                             | Frase, paragrafo, capitolo | Nessuno           |
 | Implementazione supportata per SPS/SQL Server? | Sì                          | No             |
 | Implementazione                               | Complex                      | Semplice         |
 
@@ -471,7 +471,7 @@ La tabella seguente riepiloga i vantaggi di ogni approccio usando [**IFilter**](
 
  
 
-Nell'esempio del gestore di recipe il formato del file recipe non presenta requisiti complessi, quindi è stato implementato solo [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) per il supporto full-text. La ricerca full-text viene implementata per i nodi XML denominati nella matrice seguente.
+Nell'esempio del gestore di ricette, il formato del file recipe non presenta requisiti complessi, pertanto solo [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) è stato implementato per il supporto full-text. La ricerca full-text viene implementata per i nodi XML denominati nella matrice seguente.
 
 
 ```
@@ -485,7 +485,7 @@ const PWSTR c_rgszContentXPath[] = {
 
 
 
-Il sistema di proprietà contiene la proprietà (PKEY Search Contents), creata per fornire `System.Search.Contents` \_ contenuto \_ full-text all'indicizzatore. Il valore di questa proprietà non viene mai visualizzato direttamente nell'interfaccia utente. Il testo di tutti i nodi XML denominati nella matrice precedente viene concatenato in un'unica stringa. Tale stringa viene quindi fornita all'indicizzatore come contenuto full-text del file recipe tramite una chiamata a [**IPropertyStoreCache::SetValueAndState,**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate) come illustrato nell'esempio di codice seguente.
+Il sistema di proprietà contiene la proprietà (PKEY Search Contents), creata per fornire `System.Search.Contents` \_ contenuto \_ full-text all'indicizzatore. Il valore di questa proprietà non viene mai visualizzato direttamente nell'interfaccia utente. Il testo di tutti i nodi XML denominati nella matrice precedente viene concatenato in un'unica stringa. Tale stringa viene quindi fornita all'indicizzatore come contenuto full-text del file di ricette tramite una chiamata a [**IPropertyStoreCache::SetValueAndState,**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate) come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -530,21 +530,21 @@ HRESULT CRecipePropertyStore::_LoadSearchContent()
 
 
 
-## <a name="providing-values-for-properties"></a>Specifica di valori per le proprietà
+## <a name="providing-values-for-properties"></a>Fornire valori per le proprietà
 
 Quando vengono usati per leggere i valori, i gestori delle proprietà vengono in genere richiamati per uno dei motivi seguenti:
 
 -   Per enumerare tutti i valori delle proprietà.
 -   Per ottenere il valore di una proprietà specifica.
 
-Per l'enumerazione, a un gestore delle proprietà viene richiesto di enumerarne le proprietà durante l'indicizzazione o quando la finestra di dialogo delle proprietà richiede la visualizzazione delle proprietà nel **gruppo Altro** . L'indicizzazione continua come operazione in background. Ogni volta che un file viene modificato, l'indicizzatore viene informato e indicizza nuovamente il file richiedendo al gestore delle proprietà di enumerarne le proprietà. È quindi fondamentale che i gestori delle proprietà siano implementati in modo efficiente e restituiranno i valori delle proprietà il più rapidamente possibile. Enumerare tutte le proprietà per le quali si dispone di valori, come si farebbe per qualsiasi raccolta, ma non enumerare le proprietà che comportano calcoli a elevato utilizzo di memoria o richieste di rete che potrebbero renderle lente per il recupero.
+Per l'enumerazione, a un gestore delle proprietà viene richiesto di enumerare le proprietà durante l'indicizzazione o quando la finestra di dialogo delle proprietà richiede la visualizzazione delle proprietà nel **gruppo Altro.** L'indicizzazione continua come operazione in background. Ogni volta che un file cambia, l'indicizzatore viene informato e indicizza nuovamente il file richiedendo al gestore delle proprietà di enumerarne le proprietà. È pertanto fondamentale che i gestori delle proprietà siano implementati in modo efficiente e restituiranno i valori delle proprietà il più rapidamente possibile. Enumerare tutte le proprietà per le quali si dispone di valori, esattamente come si farebbe per qualsiasi raccolta, ma non le proprietà che comportano calcoli a elevato utilizzo di memoria o richieste di rete che potrebbero renderle lente da recuperare.
 
-Quando si scrive un gestore di proprietà, in genere è necessario considerare i due set di proprietà seguenti.
+Quando si scrive un gestore delle proprietà, è in genere necessario considerare i due set di proprietà seguenti.
 
 -   Proprietà primarie: proprietà supportate dal tipo di file in modo nativo. Ad esempio, un gestore della proprietà photo per i metadati EXIF (Exchangeable Image File) supporta in modo nativo `System.Photo.FNumber` .
 -   Proprietà estese: proprietà supportate dal tipo di file come parte dei metadati aperti.
 
-Poiché l'esempio usa la cache in memoria, l'implementazione dei metodi [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) è solo una questione di delega a tale cache, come illustrato nell'esempio di codice seguente.
+Poiché l'esempio usa la cache in memoria, l'implementazione dei metodi [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) è solo una delega a tale cache, come illustrato nell'esempio di codice seguente.
 
 
 ```
@@ -560,7 +560,7 @@ IFACEMETHODIMP GetValue(REFPROPERTYKEY key, __out PROPVARIANT *pPropVar)
 
 
 
-Se si sceglie di non delegare alla cache in memoria, è necessario implementare i metodi> il comportamento previsto seguente:
+Se si sceglie di non delegare alla cache in memoria, è necessario implementare i metodi per> il comportamento previsto seguente:
 
 -   [**IPropertyStore::GetCount:**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85))se non sono presenti proprietà, questo metodo restituisce **S \_ OK.**
 -   [**IPropertyStore::GetAt:**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85))se *iProp* è maggiore o uguale a *cProps,* questo metodo restituisce E INVALIDARG e la struttura a cui punta il parametro pkey viene riempita con \_ zeri. 
@@ -569,7 +569,7 @@ Se si sceglie di non delegare alla cache in memoria, è necessario implementare 
 
 ## <a name="writing-back-values"></a>Scrittura di valori
 
-Quando il gestore delle proprietà scrive il valore di una proprietà usando [**IPropertyStore::SetValue,**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85))non scrive il valore nel file fino a quando non viene chiamato [**IPropertyStore::Commit.**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) La cache in memoria può essere utile per implementare questo schema. Nel codice di esempio l'implementazione **di IPropertyStore::SetValue** imposta semplicemente il nuovo valore nella cache in memoria e imposta lo stato di tale proprietà su PSC \_ DIRTY.
+Quando il gestore della proprietà scrive il valore di una proprietà usando [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), non scrive il valore nel file fino a quando non viene chiamato [**IPropertyStore::Commit.**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) La cache in memoria può essere utile per implementare questo schema. Nel codice di esempio l'implementazione **di IPropertyStore::SetValue** imposta semplicemente il nuovo valore nella cache in memoria e imposta lo stato di tale proprietà su PSC \_ DIRTY.
 
 
 ```
@@ -594,15 +594,15 @@ HRESULT CRecipePropertyStore::SetValue(REFPROPERTYKEY key, const PROPVARIANT *pP
 
 
 
-In qualsiasi [**implementazione di IPropertyStore,**](/windows/win32/api/propsys/nn-propsys-ipropertystore) da [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85))è previsto il comportamento seguente:
+In qualsiasi [**implementazione di IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) è previsto il comportamento seguente da [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)):
 
 -   Se la proprietà esiste già, viene impostato il valore della proprietà .
--   Se la proprietà non esiste, viene aggiunta la nuova proprietà e ne viene impostato il valore.
--   Se il valore della proprietà non può essere reso persistente con la stessa accuratezza specificata (ad esempio, il troncamento a causa di limitazioni delle dimensioni nel formato di file), il valore viene impostato per quanto possibile e viene restituito INPLACE \_ S \_ TRUNCATED.
+-   Se la proprietà non esiste, viene aggiunta la nuova proprietà e viene impostato il relativo valore.
+-   Se il valore della proprietà non può essere salvato in modo permanente con la stessa accuratezza specificata (ad esempio, il troncamento a causa di limitazioni delle dimensioni nel formato di file), il valore viene impostato per quanto possibile e viene restituito INPLACE \_ S \_ TRUNCATED.
 -   Se la proprietà non è supportata dal gestore della proprietà, `HRESULT_FROM_WIN32(ERROR_NOT_SUPPORTED)` viene restituito .
--   Se esiste un altro motivo per cui non è possibile impostare il valore della proprietà, ad esempio il file bloccato o la mancanza di diritti di modifica tramite elenchi di controllo di accesso (ACL), viene restituito STG \_ E \_ ACCESSDENIED.
+-   Se esiste un altro motivo per cui non è possibile impostare il valore della proprietà, ad esempio il file bloccato o la mancanza di diritti per la modifica tramite elenchi di controllo di accesso (ACL), viene restituito STG \_ E \_ ACCESSDENIED.
 
-Uno dei principali vantaggi dell'uso dei flussi, come nell'esempio, è l'affidabilità. I gestori di proprietà devono sempre considerare che non possono lasciare un file in uno stato incoerente in caso di errore irreversibile. È ovviamente consigliabile evitare di danneggiare i file di un utente e il modo migliore per eseguire questa operazione è con un meccanismo di copia su scrittura. Se il gestore delle proprietà usa un flusso per accedere a un file, si ottiene automaticamente questo comportamento. il sistema scrive tutte le modifiche nel flusso, sostituendo il file con la nuova copia solo durante l'operazione di commit.
+Uno dei principali vantaggi dell'uso dei flussi, come esempio, è l'affidabilità. I gestori delle proprietà devono sempre considerare che non possono lasciare un file in uno stato incoerente in caso di errore irreversibile. È ovviamente consigliabile evitare di danneggiare i file di un utente e il modo migliore per eseguire questa operazione è con un meccanismo di copia in scrittura. Se il gestore delle proprietà usa un flusso per accedere a un file, si ottiene questo comportamento automaticamente. il sistema scrive tutte le modifiche nel flusso, sostituendo il file con la nuova copia solo durante l'operazione di commit.
 
 Per eseguire l'override di questo comportamento e controllare manualmente il processo di salvataggio dei file, è possibile rifiutare esplicitamente il comportamento di salvataggio sicuro impostando il valore ManualSafeSave nella voce del Registro di sistema del gestore, come illustrato di seguito.
 
@@ -613,18 +613,18 @@ HKEY_CLASSES_ROOT
          ManualSafeSave = 1
 ```
 
-Quando un gestore specifica il valore ManualSafeSave, il flusso con cui viene inizializzato non è un flusso transazionato (STGM \_ TRANSACTED). Il gestore stesso deve implementare la funzione di salvataggio sicuro per garantire che il file non sia danneggiato se l'operazione di salvataggio viene interrotta. Se il gestore implementa la scrittura sul posto, scriverà nel flusso specificato. Se il gestore non supporta questa funzionalità, deve recuperare un flusso con cui scrivere la copia aggiornata del file usando [**IDestinationStreamFactory::GetDestinationStream**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-idestinationstreamfactory-getdestinationstream). Al termine della scrittura, il gestore deve chiamare [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) nel flusso originale per completare l'operazione e sostituire il contenuto del flusso originale con la nuova copia del file.
+Quando un gestore specifica il valore ManualSafeSave, il flusso con cui viene inizializzato non è un flusso transazionato (STGM \_ TRANSACTED). Il gestore stesso deve implementare la funzione di salvataggio sicuro per assicurarsi che il file non sia danneggiato se l'operazione di salvataggio viene interrotta. Se il gestore implementa la scrittura sul posto, scriverà nel flusso specificato. Se il gestore non supporta questa funzionalità, deve recuperare un flusso con cui scrivere la copia aggiornata del file usando [**IDestinationStreamFactory::GetDestinationStream**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-idestinationstreamfactory-getdestinationstream). Al termine della scrittura, il gestore deve chiamare [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) nel flusso originale per completare l'operazione e sostituire il contenuto del flusso originale con la nuova copia del file.
 
 ManualSafeSave è anche la situazione predefinita se non si inizializza il gestore con un flusso. Senza un flusso originale per ricevere il contenuto del flusso temporaneo, è necessario usare [**ReplaceFile**](/windows/win32/api/winbase/nf-winbase-replacefilea) per eseguire una sostituzione atomica del file di origine.
 
-I formati di file di grandi dimensioni che verranno usati in modo da produrre file superiori a 1 MB devono implementare il supporto per la scrittura di proprietà sul posto; In caso contrario, il comportamento delle prestazioni non soddisfa le aspettative dei client del sistema di proprietà. In questo scenario, il tempo necessario per scrivere le proprietà non deve essere influenzato dalle dimensioni del file.
+I formati di file di grandi dimensioni che verranno usati in modo da produrre file superiori a 1 MB devono implementare il supporto per la scrittura di proprietà sul posto. In caso contrario, il comportamento delle prestazioni non soddisfa le aspettative dei client del sistema di proprietà. In questo scenario, il tempo necessario per scrivere le proprietà non deve essere influenzato dalle dimensioni del file.
 
-Per i file di dimensioni molto grandi, ad esempio un file video di almeno 1 GB, è necessaria una soluzione diversa. Se lo spazio nel file non è sufficiente per eseguire la scrittura sul posto, il gestore potrebbe non riuscire a eseguire l'aggiornamento della proprietà se la quantità di spazio riservata per la scrittura delle proprietà sul posto è stata esaurita. Questo errore si verifica per evitare prestazioni scarse derivanti da 2 GB di I/O (da 1 a lettura, 1 da scrivere). A causa di questo potenziale errore, questi formati di file devono riservare spazio sufficiente per la scrittura delle proprietà sul posto.
+Per i file di dimensioni molto grandi, ad esempio un file video di almeno 1 GB, è necessaria una soluzione diversa. Se lo spazio nel file non è sufficiente per eseguire la scrittura sul posto, il gestore potrebbe non riuscire nell'aggiornamento della proprietà se la quantità di spazio riservato per la scrittura delle proprietà sul posto è esaurita. Questo errore si verifica per evitare prestazioni scarse derivanti da 2 GB di I/O (1 per la lettura, 1 per la scrittura). A causa di questo potenziale errore, questi formati di file devono riservare spazio sufficiente per la scrittura delle proprietà sul posto.
 
-Se il file ha spazio sufficiente nell'intestazione per scrivere i metadati e se la scrittura di questi metadati non causa l'aumentare o la riduzione del file, potrebbe essere sicuro scrivere sul posto. Come punto di partenza è consigliabile usare 64 KB. La scrittura sul posto equivale al gestore che richiede ManualSafeSave e chiama [**IStream::Commit**](/windows/win32/api/objidl/nf-objidl-istream-commit) nell'implementazione di [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85))e ha prestazioni molto migliori rispetto alla copia in scrittura. Se le dimensioni del file cambiano a causa di modifiche al valore della proprietà, non è consigliabile eseguire la scrittura sul posto a causa del potenziale danneggiamento di un file in caso di terminazione anomala.
+Se il file ha spazio sufficiente nell'intestazione per scrivere i metadati e se la scrittura di questi metadati non causa l'estensione o la compattazione del file, potrebbe essere sicuro scrivere sul posto. È consigliabile usare 64 KB come punto di partenza. La scrittura sul posto equivale al gestore che richiede ManualSafeSave e chiama [**IStream::Commit**](/windows/win32/api/objidl/nf-objidl-istream-commit) nell'implementazione di [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85))e ha prestazioni molto migliori rispetto alla copia in scrittura. Se le dimensioni del file cambiano a causa di modifiche al valore della proprietà, non è consigliabile eseguire la scrittura sul posto a causa della possibilità di un file danneggiato in caso di terminazione anomala.
 
 > [!Note]  
-> Per motivi di prestazioni, è consigliabile usare l'opzione ManualSafeSave con gestori di proprietà che funzionano con file di dimensioni maggiori o superiori a 100 KB.
+> Per motivi di prestazioni, è consigliabile usare l'opzione ManualSafeSave con gestori di proprietà che lavorano con file di dimensioni superiori a 100 KB.
 
  
 
@@ -670,7 +670,7 @@ Chiedere quindi se il pecified supporta [**IDestinationStreamFactory.**](/window
 
 
 
-Eseguire quindi il commit del flusso originale, che scrive di nuovo i dati nel file originale in modo sicuro.
+Eseguire quindi il commit del flusso originale, che scrive i dati nel file originale in modo sicuro.
 
 
 ```
@@ -729,7 +729,7 @@ Scorrere ora le proprietà per determinare se il valore di una proprietà è sta
 
 
 
-Il [**metodo IPropertyStoreCache::GetState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-getstate) ottiene lo stato della proprietà nella cache. Il flag DIRTY di PSC, impostato nell'implementazione \_ di [**IPropertyStore::SetValue,**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) contrassegna una proprietà come modificata.
+Il [**metodo IPropertyStoreCache::GetState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-getstate) ottiene lo stato della proprietà nella cache. Il flag DIRTY PSC, impostato nell'implementazione \_ di [**IPropertyStore::SetValue,**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) contrassegna una proprietà come modificata.
 
 
 ```
@@ -767,7 +767,7 @@ if (SUCCEEDED(hr))
 
 
 
-Se una proprietà non è presente nella mappa, è una nuova proprietà impostata da Esplora risorse. Poiché i metadati aperti sono supportati, salvare la nuova proprietà nella **sezione ExtendedProperties** del codice XML.
+Se una proprietà non è presente nella mappa, è una nuova proprietà impostata da Windows Explorer. Poiché i metadati aperti sono supportati, salvare la nuova proprietà nella **sezione ExtendedProperties** del codice XML.
 
 
 ```
@@ -803,7 +803,7 @@ interface IPropertyStoreCapabilities : IUnknown
 
 
 
-[**IsPropertyWritable restituisce**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) **S \_ OK** per indicare che agli utenti finali deve essere consentito modificare direttamente la proprietà. S \_ FALSE indica che non dovrebbero. S \_ FALSE può significare che le applicazioni sono responsabili della scrittura della proprietà, non degli utenti. Shell disabilita la modifica dei controlli in base ai risultati delle chiamate a questo metodo. Si presuppone che un gestore che non [**implementa IPropertyStoreCapabilities supporti**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) i metadati aperti tramite il supporto per la scrittura di qualsiasi proprietà.
+[**IsPropertyWritable restituisce**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) **S \_ OK** per indicare che agli utenti finali deve essere consentito modificare direttamente la proprietà. S \_ FALSE indica che non dovrebbero. S \_ FALSE può indicare che le applicazioni sono responsabili della scrittura della proprietà, non degli utenti. Shell disabilita la modifica dei controlli in base ai risultati delle chiamate a questo metodo. Si presuppone che un gestore che non [**implementa IPropertyStoreCapabilities supporti**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) i metadati aperti tramite il supporto per la scrittura di qualsiasi proprietà.
 
 Se si compila un gestore che gestisce solo proprietà di sola lettura, è necessario implementare il metodo **Initialize** ([**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem)o [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile)) in modo che restituisca STG E ACCESSDENIED quando viene chiamato con il \_ flag \_ STGM \_ READWRITE.
 
@@ -835,7 +835,7 @@ Con il gestore della proprietà implementato, deve essere registrato e la relati
 [Registrazione e distribuzione di gestori di proprietà](./prophand-reg-dist.md)
 </dt> <dt>
 
-[Procedure consigliate e domande frequenti sul gestore delle proprietà](./prophand-bestprac-faq.md)
+[Procedure consigliate e domande frequenti sul gestore delle proprietà](./prophand-bestprac-faq.yml)
 </dt> </dl>
 
  

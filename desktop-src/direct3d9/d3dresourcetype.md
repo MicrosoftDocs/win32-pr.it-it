@@ -1,7 +1,7 @@
 ---
 description: Definisce i tipi di risorse.
 ms.assetid: 6b360fb1-4a5a-47a2-bef9-d8234770bf0c
-title: Enumerazione D3DRESOURCETYPE (D3D9Types. h)
+title: Enumerazione D3DRESOURCETYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 4d7fab861d85a2c0289ba1636dece0e76c7819e1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ecb6b0c84f884df6441f3272a585ee3e09928661
+ms.sourcegitcommit: bfab92e16614d4fa54b044917358261232bda81a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969312"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "113489685"
 ---
 # <a name="d3dresourcetype-enumeration"></a>Enumerazione D3DRESOURCETYPE
 
@@ -33,7 +33,7 @@ typedef enum D3DRESOURCETYPE {
   D3DRTYPE_VOLUME         = 2,
   D3DRTYPE_TEXTURE        = 3,
   D3DRTYPE_VOLUMETEXTURE  = 4,
-  D3DRTYPE_CubeTexture    = 5,
+  D3DRTYPE_CUBETEXTURE    = 5,
   D3DRTYPE_VERTEXBUFFER   = 6,
   D3DRTYPE_INDEXBUFFER    = 7,
   D3DRTYPE_FORCE_DWORD    = 0x7fffffff
@@ -46,35 +46,35 @@ typedef enum D3DRESOURCETYPE {
 
 <dl> <dt>
 
-<span id="D3DRTYPE_SURFACE"></span><span id="d3drtype_surface"></span>**\_Superficie D3DRTYPE**
+<span id="D3DRTYPE_SURFACE"></span><span id="d3drtype_surface"></span>**SUPERFICIE D3DRTYPE \_**
 </dt> <dd>
 
-Risorsa superficie.
+Risorsa Surface.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_VOLUME"></span><span id="d3drtype_volume"></span>**\_Volume D3DRTYPE**
+<span id="D3DRTYPE_VOLUME"></span><span id="d3drtype_volume"></span>**D3DRTYPE \_ VOLUME**
 </dt> <dd>
 
 Risorsa volume.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_TEXTURE"></span><span id="d3drtype_texture"></span>**\_Trama D3DRTYPE**
+<span id="D3DRTYPE_TEXTURE"></span><span id="d3drtype_texture"></span>**TRAMA D3DRTYPE \_**
 </dt> <dd>
 
 Risorsa trama.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_VOLUMETEXTURE"></span><span id="d3drtype_volumetexture"></span>**\_VOLUMETEXTURE D3DRTYPE**
+<span id="D3DRTYPE_VOLUMETEXTURE"></span><span id="d3drtype_volumetexture"></span>**D3DRTYPE \_ VOLUMETEXTURE**
 </dt> <dd>
 
 Risorsa trama del volume.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_CubeTexture"></span><span id="d3drtype_cubetexture"></span><span id="D3DRTYPE_CUBETEXTURE"></span>**\_CUBETEXTURE D3DRTYPE**
+<span id="D3DRTYPE_CubeTexture"></span><span id="d3drtype_cubetexture"></span><span id="D3DRTYPE_CUBETEXTURE"></span>**D3DRTYPE \_ CUBETEXTURE**
 </dt> <dd>
 
 Risorsa trama cubo.
@@ -84,21 +84,21 @@ Risorsa trama cubo.
 <span id="D3DRTYPE_VERTEXBUFFER"></span><span id="d3drtype_vertexbuffer"></span>**D3DRTYPE \_ VERTEXBUFFER**
 </dt> <dd>
 
-Risorsa buffer vertex.
+Risorsa vertex buffer.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_INDEXBUFFER"></span><span id="d3drtype_indexbuffer"></span>**\_INDEXBUFFER D3DRTYPE**
+<span id="D3DRTYPE_INDEXBUFFER"></span><span id="d3drtype_indexbuffer"></span>**D3DRTYPE \_ INDEXBUFFER**
 </dt> <dd>
 
-Risorsa buffer di indice.
+Risorsa buffer dell'indice.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_FORCE_DWORD"></span><span id="d3drtype_force_dword"></span>**D3DRTYPE \_ Force \_ DWORD**
+<span id="D3DRTYPE_FORCE_DWORD"></span><span id="d3drtype_force_dword"></span>**D3DRTYPE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -119,7 +119,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 [Enumerazioni Direct3D](dx9-graphics-reference-d3d-enums.md)
 </dt> <dt>
 
-[**IDirect3DResource9:: GetType**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dresource9-gettype)
+[**IDirect3DResource9::GetType**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dresource9-gettype)
 </dt> </dl>
 
  

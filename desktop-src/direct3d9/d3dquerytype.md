@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 7a9c20050e7d0dce5a19664d937c016a475a9a13
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 0778e879a6147c185964808ee4b4c302bd211ef3
+ms.sourcegitcommit: bfab92e16614d4fa54b044917358261232bda81a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343076"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "113489695"
 ---
 # <a name="d3dquerytype-enumeration"></a>Enumerazione D3DQUERYTYPE
 
@@ -30,7 +30,7 @@ Identifica il tipo di query. Per informazioni sulle query, vedere [Query (Direct
 ```C++
 typedef enum D3DQUERYTYPE { 
   D3DQUERYTYPE_VCACHE             = 4,
-  D3DQUERYTYPE_ResourceManager    = 5,
+  D3DQUERYTYPE_RESOURCEMANAGER    = 5,
   D3DQUERYTYPE_VERTEXSTATS        = 6,
   D3DQUERYTYPE_EVENT              = 8,
   D3DQUERYTYPE_OCCLUSION          = 9,
@@ -84,7 +84,7 @@ Eseguire una query per tutti gli eventi asincroni emessi dalle chiamate API.
 <span id="D3DQUERYTYPE_OCCLUSION"></span><span id="d3dquerytype_occlusion"></span>**OCCLUSIONE D3DQUERYTYPE \_**
 </dt> <dd>
 
-Una query di occlusione restituisce il numero di pixel che superano z-testing. Questi pixel sono per le primitive disegnate tra il problema [**di D3DISSUE \_ BEGIN**](d3dissue-begin.md) e [**D3DISSUE \_ END.**](d3dissue-end.md) In questo modo un'applicazione può controllare il risultato dell'occlusione rispetto a 0. Zero è completamente occluso, ovvero i pixel non sono visibili dalla posizione corrente della fotocamera.
+Una query di occlusione restituisce il numero di pixel che superano z-testing. Questi pixel sono per le primitive disegnate tra il problema [**di D3DISSUE \_ BEGIN**](d3dissue-begin.md) e [**D3DISSUE \_ END.**](d3dissue-end.md) In questo modo un'applicazione può controllare il risultato dell'occlusione rispetto a 0. Zero è completamente occluded, ovvero i pixel non sono visibili dalla posizione corrente della fotocamera.
 
 </dd> <dt>
 
@@ -95,28 +95,28 @@ Restituisce un timestamp a 64 bit.
 
 </dd> <dt>
 
-<span id="D3DQUERYTYPE_TIMESTAMPDISJOINT"></span><span id="d3dquerytype_timestampdisjoint"></span>**TIMESTAMP \_ D3DQUERYTYPEDISJOINT**
+<span id="D3DQUERYTYPE_TIMESTAMPDISJOINT"></span><span id="d3dquerytype_timestampdisjoint"></span>**D3DQUERYTYPE \_ TIMESTAMPDISJOINT**
 </dt> <dd>
 
 Usare questa query per inviare una notifica a un'applicazione se la frequenza del contatore è stata modificata rispetto a D3DQUERYTYPE \_ TIMESTAMP.
 
 </dd> <dt>
 
-<span id="D3DQUERYTYPE_TIMESTAMPFREQ"></span><span id="d3dquerytype_timestampfreq"></span>**TIMESTAMP D3DQUERYTYPEFREQ \_**
+<span id="D3DQUERYTYPE_TIMESTAMPFREQ"></span><span id="d3dquerytype_timestampfreq"></span>**D3DQUERYTYPE \_ TIMESTAMPFREQ**
 </dt> <dd>
 
-Questo risultato della query è **TRUE** se non è possibile garantire che i valori delle query TIMESTAMP D3DQUERYTYPE siano continui per tutta la durata della \_ query D3DQUERYTYPE \_ TIMESTAMPDISJOINT. In caso contrario, il risultato della query è **FALSE.**
+Il risultato della query è **TRUE** se non è possibile garantire che i valori delle query D3DQUERYTYPE TIMESTAMP siano continui per tutta la durata della \_ query D3DQUERYTYPE \_ TIMESTAMPDISJOINT. In caso contrario, il risultato della query **è FALSE.**
 
 </dd> <dt>
 
-<span id="D3DQUERYTYPE_PIPELINETIMINGS"></span><span id="d3dquerytype_pipelinetimings"></span>**\_PIPELINE D3DQUERYTYPETIMINGS**
+<span id="D3DQUERYTYPE_PIPELINETIMINGS"></span><span id="d3dquerytype_pipelinetimings"></span>**PIPELINE \_ D3DQUERYTYPETIMINGS**
 </dt> <dd>
 
 Percentuale di tempo di elaborazione dei dati della pipeline.
 
 </dd> <dt>
 
-<span id="D3DQUERYTYPE_INTERFACETIMINGS"></span><span id="d3dquerytype_interfacetimings"></span>**INTERFACCIA \_ D3DQUERYTYPETIMINGS**
+<span id="D3DQUERYTYPE_INTERFACETIMINGS"></span><span id="d3dquerytype_interfacetimings"></span>**INTERFACCE D3DQUERYTYPE \_**
 </dt> <dd>
 
 Percentuale di tempo di elaborazione dei dati nel driver.
@@ -126,7 +126,7 @@ Percentuale di tempo di elaborazione dei dati nel driver.
 <span id="D3DQUERYTYPE_VERTEXTIMINGS"></span><span id="d3dquerytype_vertextimings"></span>**D3DQUERYTYPE \_ VERTEXTIMINGS**
 </dt> <dd>
 
-Percentuale di tempo di elaborazione dei dati vertex shader.
+Percentuale di tempo di elaborazione dei dati del vertex shader.
 
 </dd> <dt>
 
@@ -147,7 +147,7 @@ Confronti delle misurazioni della velocità effettiva per comprendere le prestaz
 <span id="D3DQUERYTYPE_CACHEUTILIZATION"></span><span id="d3dquerytype_cacheutilization"></span>**D3DQUERYTYPE \_ CACHEUTILIZATION**
 </dt> <dd>
 
-Misurare le prestazioni di hit rate della cache per trame e vertici indicizzati.
+Misurare le prestazioni di riscontri nella cache per trame e vertici indicizzati.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Efficienza dell'allocazione di memoria contenuta in [**una struttura D3DMEMORYPR
 
 Differenze tra Direct3D 9 e Direct3D 9Ex:
 
-- D3DQUERYTYPE MEMORYPRESSURE è disponibile solo \_ in Direct3D9Ex in esecuzione in Windows 7 (o in un sistema operativo più corrente).
+- D3DQUERYTYPE MEMORYPRESSURE è disponibile solo \_ in Direct3D9Ex in esecuzione Windows 7 (o più sistema operativo corrente).
 
 
 

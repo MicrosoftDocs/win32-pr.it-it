@@ -1,19 +1,19 @@
 ---
-description: Questo articolo illustra come registrare e distribuire i gestori delle proprietà per l'uso con il sistema di proprietà di Windows.
+description: Questo articolo illustra come registrare e distribuire i gestori delle proprietà per usare il Windows proprietà.
 ms.assetid: E6E81E04-9CC1-4df5-9A87-DE0CBD177356
 title: Registrazione e distribuzione di gestori di proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cffd6169ecbf371e49e27c555f468cdc03e2c3fc
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ce53f0805c4db5efe38e77ba4e7d1ab5b331c83f
+ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408344"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113481926"
 ---
 # <a name="registering-and-distributing-property-handlers"></a>Registrazione e distribuzione di gestori di proprietà
 
-In questo argomento viene illustrato come creare e registrare gestori di proprietà da usare con il sistema di proprietà di Windows.
+Questo argomento illustra come creare e registrare gestori di proprietà da usare con il sistema Windows proprietà.
 
 Questo argomento è organizzato come segue:
 
@@ -46,7 +46,7 @@ HKEY_LOCAL_MACHINE
                         (Default) = {50d9450f-2a80-4f08-93b9-2eb526477d1a}
 ```
 
-I gestori delle proprietà per un particolare tipo di file vengono comunemente distribuiti con le applicazioni che creano o modificano file di tale tipo. È tuttavia consigliabile rendere disponibili i gestori delle proprietà indipendentemente da queste applicazioni per supportare l'indicizzazione del tipo di file negli scenari server in cui i gestori delle proprietà vengono usati dall'indicizzatore, ma le applicazioni che li accompagnano non sono necessarie. Se si crea un pacchetto di installazione autonomo per il gestore delle proprietà, assicurarsi che includa quanto segue:
+I gestori delle proprietà per un particolare tipo di file vengono comunemente distribuiti con le applicazioni che creano o modificano file di tale tipo. È tuttavia consigliabile rendere disponibili i gestori delle proprietà indipendentemente da queste applicazioni per supportare l'indicizzazione del tipo di file negli scenari server in cui i gestori delle proprietà vengono usati dall'indicizzatore, ma le applicazioni che lo accompagnano non sono necessarie. Se si crea un pacchetto di installazione autonomo per il gestore delle proprietà, assicurarsi che includa quanto segue:
 
 -   Dettagli di registrazione del gestore delle proprietà specificati nell'argomento Registrazione e [distribuzione di gestori di proprietà]().
 -   Registrazione per il tipo di file ed eventuali file di schema che devono essere installati, per consentire ai client di accedere a tutte le funzionalità del gestore delle proprietà.
@@ -56,7 +56,7 @@ I gestori delle proprietà per un particolare tipo di file vengono comunemente d
 I gestori delle proprietà vengono richiamati per ogni file in un computer specifico. In genere vengono chiamati nelle circostanze seguenti:
 
 -   Durante l'indicizzazione del file. Questa operazione viene eseguita out-of-process, in un processo isolato con diritti limitati.
--   Quando si accede ai file in Esplora risorse allo scopo di leggere e scrivere valori di proprietà. Questa operazione viene eseguita in-process.
+-   Quando si accede ai file in Windows Explorer per la lettura e la scrittura dei valori delle proprietà. Questa operazione viene eseguita in-process.
 
 ### <a name="guidelines-for-performance-and-reliability"></a>Linee guida per prestazioni e affidabilità
 
@@ -70,7 +70,7 @@ Tenere presenti le linee guida seguenti durante lo sviluppo e il test del gestor
 
 -   **Scrittura di proprietà sul posto**
 
-    Se possibile, quando si gestiscono file di medie dimensioni o di grandi dimensioni (diverse centinaia di KB o più grandi), il formato di file deve essere organizzato in modo che la lettura o la scrittura dei valori delle proprietà non richieda la lettura dell'intero file dal disco. Anche se è necessario cercare il file, non deve essere letto nella memoria nella sua interezza, perché ciò infetterà il working set di Esplora risorse o l'indicizzatore Windows Search mentre tentano di accedere a questi file o indicizzarlo. Per altre informazioni, vedere [Inizializzazione di gestori di proprietà](./building-property-handlers-property-handlers.md).
+    Se possibile, quando si gestiscono file di medie dimensioni o di grandi dimensioni (diverse centinaia di KB o più grandi), il formato di file deve essere organizzato in modo che la lettura o la scrittura dei valori delle proprietà non richieda la lettura dell'intero file dal disco. Anche se il file deve essere cercato, non deve essere letto nella memoria nella sua interezza, perché ciò intasa il working set di esplora Windows o l'indicizzatore di ricerca Windows mentre tentano di accedere o indicizzare questi file. Per altre informazioni, vedere [Inizializzazione di gestori di proprietà](./building-property-handlers-property-handlers.md).
 
     Una tecnica utile per eseguire questa operazione consiste nel riempire l'intestazione del file con spazio aggiuntivo in modo che alla successiva scrittura di un valore di proprietà, il valore possa essere scritto sul posto senza dover riscrivere l'intero file. Questa operazione richiede la funzionalità ManualSafeSave. Questo approccio comporta un rischio aggiuntivo che l'operazione di scrittura di file possa essere interrotta mentre è in corso la scrittura (a causa di un arresto anomalo del sistema o di una perdita di alimentazione), ma poiché le dimensioni delle proprietà sono in genere ridotte, la probabilità di un'interruzione di questo tipo è analoga e i miglioramenti delle prestazioni che possono essere realizzati tramite la scrittura di proprietà sul posto sono considerati sufficientemente significativi da giustificare questo rischio aggiuntivo. Anche in questo caso, è necessario eseguire test approfonditi dell'implementazione per assicurarsi che i file non siano danneggiati nel caso in cui si verifica un errore nel corso di un'operazione di scrittura.
 
@@ -78,11 +78,11 @@ Tenere presenti le linee guida seguenti durante lo sviluppo e il test del gestor
 
 -   **Scelta del modello di threading COM**
 
-    Per ottimizzare l'efficienza del gestore delle proprietà, è necessario specificare che usa il modello di threading COM `Both` . Ciò consente l'accesso diretto dagli apartment STA (Esplora risorse, ad esempio) e dagli apartment dell'agente di trasferimento messaggi (MTA), ad esempio il processo SearchProtocolHost in Windows Search, evitando il sovraccarico del marshalling in tali ambienti. Per ottenere il massimo vantaggio del modello di threading, è necessario designare anche tutti i servizi da cui dipende il gestore per evitare il marshalling nelle chiamate `Both` `Both` a tali componenti. Controllare la documentazione di questi servizi specifici per verificare se usano questo modello di threading.
+    Per ottimizzare l'efficienza del gestore delle proprietà, è necessario specificare che usa il modello di threading COM `Both` . Ciò consente l'accesso diretto dagli apartment STA (Windows Explorer, ad esempio) e dagli apartment dell'agente di trasferimento messaggi (MTA), ad esempio il processo SearchProtocolHost in ricerca Windows, evitando il sovraccarico del marshalling in tali ambienti. Per ottenere il vantaggio completo del modello di threading, è necessario designare anche tutti i servizi da cui dipende il gestore per evitare il marshalling nelle chiamate `Both` `Both` a tali componenti. Controllare la documentazione di questi servizi specifici per verificare se usano questo modello di threading.
 
 -   **Concorrenza del gestore delle proprietà**
 
-    I gestori di proprietà e [**l'interfaccia IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) sono progettati per l'accesso seriale anziché simultaneo. Esplora risorse, l'Windows Search indicizzatore e tutte le altre chiamate del gestore delle proprietà dalla codebase di Windows garantiscono questo utilizzo. Non deve esserci alcun motivo per cui terze parti usino contemporaneamente un gestore delle proprietà, ma questo comportamento non può essere garantito. Anche se è previsto che il modello di chiamata sia seriale, le chiamate possono essere effettuate su thread diversi, ad esempio quando l'oggetto viene chiamato in modalità remota tramite RPC COM, come avviene nell'indicizzatore. Pertanto, le implementazioni del gestore delle proprietà devono supportare la chiamata su thread diversi e idealmente non devono subire effetti negativi quando vengono chiamate contemporaneamente. Poiché il modello di chiamata previsto è seriale, un'implementazione semplice che usa una sezione critica dovrebbe essere sufficiente per soddisfare questi requisiti nella maggior parte dei casi. È accettabile evitare il blocco sulle chiamate simultanee usando la [**funzione TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection) per rilevare e non eseguire chiamate simultanee.
+    I gestori di proprietà e [**l'interfaccia IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) sono progettati per l'accesso seriale anziché simultaneo. Windows Explorer, l'Windows di ricerca e tutte le altre chiamate del gestore delle proprietà dalla Windows codebase garantiscono questo utilizzo. Non deve esserci alcun motivo per cui terze parti usino contemporaneamente un gestore delle proprietà, ma questo comportamento non può essere garantito. Anche se è previsto che il modello di chiamata sia seriale, le chiamate possono essere effettuate su thread diversi, ad esempio quando l'oggetto viene chiamato in modalità remota tramite RPC COM, come avviene nell'indicizzatore. Pertanto, le implementazioni del gestore delle proprietà devono supportare la chiamata su thread diversi e idealmente non devono subire effetti negativi quando vengono chiamate contemporaneamente. Poiché il modello di chiamata previsto è seriale, un'implementazione semplice che usa una sezione critica dovrebbe essere sufficiente per soddisfare questi requisiti nella maggior parte dei casi. È accettabile evitare il blocco sulle chiamate simultanee usando la [**funzione TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection) per rilevare e non eseguire chiamate simultanee.
 
 -   **Concorrenza di file**
 
@@ -125,7 +125,7 @@ Tenere presenti le linee guida seguenti durante lo sviluppo e il test del gestor
 [Inizializzazione dei gestori di proprietà](./building-property-handlers-property-handlers.md)
 </dt> <dt>
 
-[Procedure consigliate e domande frequenti sul gestore delle proprietà](./prophand-bestprac-faq.md)
+[Procedure consigliate e domande frequenti sul gestore delle proprietà](./prophand-bestprac-faq.yml)
 </dt> </dl>
 
  
