@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Ottenere informazioni sull'elemento PageInputBin configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 78eb3119-a52f-4ff8-83bb-903e181c8a11
 title: PageInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f74e75653f7c6cbc6a586b80b3e8217286ce7c36
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: dc53d377106b95b26e694d531af2952cea98a8b1
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993768"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549169"
 ---
 # <a name="pageinputbin"></a>PageInputBin
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il bin di input installato in un dispositivo o l'elenco completo dei bin supportati per un dispositivo. Consente di specificare il contenitore di input per pagina. Le parole chiave JobInputBin, DocumentInputBin e PageInputBin si escludono a vicenda. Entrambi non devono essere specificati contemporaneamente in un documento PrintTicket o Funzionalità di stampa.
+Descrive il bin di input installato in un dispositivo o l'elenco completo dei contenitori supportati per un dispositivo. Consente la specifica del contenitore di input per ogni pagina. Le parole chiave JobInputBin, DocumentInputBin e PageInputBin si escludono a vicenda. Entrambi non devono essere specificati contemporaneamente in un documento PrintTicket o Funzionalità di stampa.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive il bin di input installato in un dispositivo o l'elenco completo dei bi
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -91,7 +91,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                   | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                             |
 |----------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
+| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
 | \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>        |
 | \_EnvelopeOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Specifica il tipo di contenitore.<br/>                                           |

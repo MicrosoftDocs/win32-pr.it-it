@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Ottenere informazioni sull'elemento configurabile dall'utente JobHolePunch. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 26e9e7d6-7c01-4687-aa64-7aea867b4e58
 title: JobHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56316c94dc56a2646446a8cd63885cceaa1407fa
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 7c82a36784ab6a1fb5eb0c8d682c45cce574ee9e
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999298"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549359"
 ---
 # <a name="jobholepunch"></a>JobHolePunch
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di emissione dei fori dell'output. Tutti i documenti vengono riuniti insieme. Le parole chiave JobHolePunch e DocumentHolePunch si escludono a vicenda. Entrambi non devono essere specificati contemporaneamente in un documento PrintTicket o Funzionalità di stampa.
+Descrive le caratteristiche di emissione del foro dell'output. Tutti i documenti vengono riuniti insieme. Le parole chiave JobHolePunch e DocumentHolePunch si escludono a vicenda. Entrambi non devono essere specificati contemporaneamente in un documento PrintTicket o Funzionalità di stampa.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive le caratteristiche di emissione dei fori dell'output. Tutti i documenti
 
 | Nome | Valore |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/>                                                                                                                              |
+| Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                              |
 | Prefisso di ambito <br/> | Processo<br/>                                                                                                                                  |
 | Note <br/>          | Top, Bottom, Left e Right sono relativi a PageImageableSize, dove TopLeft è denotato dall'origine dell'asse x e dell'asse y.<br/> |
 
@@ -69,7 +69,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobHolePunch">

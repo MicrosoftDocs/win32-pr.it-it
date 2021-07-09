@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento configurabile dall'utente PageForceFrontSide. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 0658c808-f050-41f3-90b6-2a013b616b58
 title: PageForceFrontSide
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e363050034137bcfb3ff2b779ecda05200865312
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 79f22e9ec52b7cee72e8f3a479d161e9abb765c4
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996938"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549189"
 ---
 # <a name="pageforcefrontside"></a>PageForceFrontSide
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Forza la visualizzazione dell'output nella parte anteriore di un foglio multimediale. Pertinente ai fogli multimediali con superfici diverse su ogni lato. Nei casi in cui questa funzionalità interferisce con le opzioni di elaborazione (ad esempio DocumentDuplex), PageForceFrontSide ha la precedenza per la pagina specifica a cui si applica la funzionalità.
+Forza la visualizzazione dell'output nella parte anteriore di un foglio multimediale. Pertinente ai fogli multimediali con superfici diverse su ogni lato. Nei casi in cui questa funzionalità interferisce con le opzioni di elaborazione(ad esempio DocumentDuplex), PageForceFrontSide ha la precedenza per la pagina specifica a cui si applica la funzionalità.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Forza la visualizzazione dell'output nella parte anteriore di un foglio multimed
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -61,7 +61,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 

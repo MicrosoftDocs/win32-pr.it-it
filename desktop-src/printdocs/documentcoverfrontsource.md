@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Ottenere informazioni sul parametro DocumentCoverFrontSource. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: ec41d0c8-ea77-44ac-a02b-6a48237b324f
 title: DocumentCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15b558a044716c5c13ae012665193f958f8ce6aa
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: afeb6ecb089eb271e0b8fff136e73a20194f0c8f
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997898"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548759"
 ---
 # <a name="documentcoverfrontsource"></a>DocumentCoverFrontSource
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'origine per un foglio di copertura anteriore personalizzato.
+Specifica l'origine per un foglio front-cover personalizzato.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -73,8 +73,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
-| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
+| UnitType<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sul parametro PageDestinationColorProfileEmbedded. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: b360f870-bfaa-4d4d-adce-17fcfc48b6a6
 title: PageDestinationColorProfileEmbedded
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7053cfaf82d7fdfccfe79cebcd76e49befeb125
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 05865636b6554873844a99b523f8c21fe2bfc1c7
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996128"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549209"
 ---
 # <a name="pagedestinationcolorprofileembedded"></a>PageDestinationColorProfileEmbedded
 

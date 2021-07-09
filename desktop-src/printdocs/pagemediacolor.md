@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento PageMediaColor configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 3e0e2cb2-cb51-446d-a6ff-f76aa8c305f6
 title: PageMediaColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60c9a314bf435664d121fd35e588b62903da323e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3041c8954048f60f52e9324f0c6565396d7fafe2
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994508"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549159"
 ---
 # <a name="pagemediacolor"></a>PageMediaColor
 
@@ -27,7 +27,7 @@ Vengono descritte le opzioni Colore supporto e le caratteristiche di ogni opzion
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -74,7 +74,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageMediaColor">

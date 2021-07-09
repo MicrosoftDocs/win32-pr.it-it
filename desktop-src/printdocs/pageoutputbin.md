@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento PageOutputBin configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: c5050804-0e77-4d26-bf00-5d9690102b18
 title: PageOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 557a742604f6e643e8812493049b7f2b118e262c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5a9963bf2ca7a2dd60be37c797a27c6ff09b1206
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997528"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548999"
 ---
 # <a name="pageoutputbin"></a>PageOutputBin
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive l'elenco completo dei bin supportati per il dispositivo. Consente la specifica del contenitore di output per ogni pagina. Le parole chiave JobOutputBin, DocumentOutputBin e PageOutputBin si escludono a vicenda solo in un documento PrintTicket o Funzionalità di stampa.
+Descrive l'elenco completo dei bin supportati per il dispositivo. Consente di specificare il contenitore di output per pagina. Le parole chiave JobOutputBin, DocumentOutputBin e PageOutputBin si escludono a vicenda solo se ne deve essere specificata una in un documento PrintTicket o Funzionalità di stampa.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive l'elenco completo dei bin supportati per il dispositivo. Consente la sp
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -67,7 +67,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                   | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                             |
 |----------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
+| \_OptionName\_<br/>              | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                  |
 | \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | FaceDownTray, FaceUpTray, MailBox, Sorter, Stacker, Finisher None.<br/>                                                                                                         | Specifica il tipo generale del contenitore.<br/>                                   |
 | \_MediaSheetCapacityValue\_<br/> | numero intero<br/> | Fogli<br/>     | Maggiore di 0.<br/>                                                                                                                                                            | Specifica la capacità multimediale in numero di pagine (livello completo) del contenitore.<br/> |

@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Esaminare l'elemento PageDeviceFontSubstitution configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 741aa729-35c3-43c2-93d8-e25ed508cfa6
 title: PageDeviceFontSubstitution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f40b86d6d81603e2ff9929275571ff6be72d839b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 4dc5650c687a4c96e6c54ef7ea0631e77407e874
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995588"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549199"
 ---
 # <a name="pagedevicefontsubstitution"></a>PageDeviceFontSubstitution
 
@@ -27,7 +27,7 @@ Descrive lo stato abilitato/disabilitato della sostituzione dei tipi di caratter
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageDeviceFontSubstitution">

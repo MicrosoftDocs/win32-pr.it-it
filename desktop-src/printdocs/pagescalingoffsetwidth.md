@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere informazioni sul parametro PageScalingOffsetWidth. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: e82394d1-f765-4679-b1de-ea17825d6478
 title: PageScalingOffsetWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b82c2b0c0f2c86a792706ec7e00819ccda1038c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 63152e6a3d9f8ea47bac3b5a0efe559e71e0cb35
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997958"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548849"
 ---
 # <a name="pagescalingoffsetwidth"></a>PageScalingOffsetWidth
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica l'offset di ridimensionamento nella direzione ImageableSizeWidth per il ridimensionamento personalizzato.
 
@@ -28,7 +28,7 @@ Specifica l'offset di ridimensionamento nella direzione ImageableSizeWidth per i
 |----------------------------|---------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                 |
 | Prefisso di ambito <br/> | Pagina<br/>                                         |
-| Note <br/>          | Collegato all'elemento PageScaling, opzione Personalizzata<br/> |
+| Note <br/>          | Collegato all'elemento PageScaling, opzione Custom<br/> |
 
 
 
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
 | Minvalue<br/>     | numero intero<br/> | Non definito<br/>       |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| Più elementi<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | Micron<br/>         |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Multipli<br/>     | integer<br/> | 1<br/>               |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
 
 
 

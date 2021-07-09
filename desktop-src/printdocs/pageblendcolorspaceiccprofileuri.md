@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sul parametro PageBlendColorSpaceICCProfileURI. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 05924c7d-e074-4835-b42c-53c77dc1bbb5
 title: PageBlendColorSpaceICCProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cbf1233e172a81053baee0abe1e21d79064045a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 50db89757737ff5aa6a1358af418ee33809b960e
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997698"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549319"
 ---
 # <a name="pageblendcolorspaceiccprofileuri"></a>PageBlendColorSpaceICCProfileURI
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica un riferimento URI relativo a un profilo ICC che definisce lo spazio colore da utilizzare per la fusione. è <Uri> un nome di parte assoluto relativo alla radice del \_ pacchetto.
+Specifica un riferimento URI relativo a un profilo ICC che definisce lo spazio colore da usare per la fusione. è <Uri> un nome di parte assoluto relativo alla radice del \_ pacchetto.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -73,8 +73,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
-| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
+| UnitType<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

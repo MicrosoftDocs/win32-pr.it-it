@@ -1,15 +1,15 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere informazioni sul parametro PageScalingScaleHeight. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: ccc2ad1c-b0c2-4c45-bc95-7c15426c2534
 title: PageScalingScaleHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92d718d80f6b3cc369ddcb5c088a1299d639634b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d51bdb5577b5e3863cfadab1fa9eb74ff40d54da
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997478"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548839"
 ---
 # <a name="pagescalingscaleheight"></a>PageScalingScaleHeight
 
@@ -78,7 +78,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | MaxValue<br/>     | Intero<br/> | Non definito<br/>       |
 | Minvalue<br/>     | Integer<br/> | 1<br/>               |
 | Obbligatorio<br/>    | Stringa<br/>  | psk:Conditional<br/> |
-| Più elementi<br/>     | Integer<br/> | 1<br/>               |
+| Multipli<br/>     | Integer<br/> | 1<br/>               |
 | UnitType<br/>     | Stringa<br/>  | percent<br/>         |
 
 

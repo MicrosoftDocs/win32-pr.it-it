@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere informazioni sul parametro PageMediaSizePSWidthOffset. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: b93ad6e6-ab27-4fab-b488-6f402b6ee857
 title: PageMediaSizePSWidthOffset
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca8051fc265e107bff0be53c409eb103df2a8326
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 265acad803dbc334be115440e195967465b3ef50
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995509"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549105"
 ---
 # <a name="pagemediasizepswidthoffset"></a>PageMediaSizePSWidthOffset
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'offset perpendicolare alla direzione di orientamento del feed (Specifica del formato del file di descrizione della stampante [PostScript di riferimento).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+Specifica l'offset perpendicolare alla direzione di orientamento del feed (riferimento PostScript [Printer Description File Format Specification](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
 | Minvalue<br/>     | numero intero<br/> | Non definito<br/>       |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| Più elementi<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | Micron<br/>         |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Multipli<br/>     | integer<br/> | 1<br/>               |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
 
 
 
@@ -89,7 +89,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 <dl> <dt>
 
-[Specifica del formato del file di descrizione della stampante PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+[PostScript Specifica del formato del file di descrizione della stampante](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 </dt> <dt>
 
 [Specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)

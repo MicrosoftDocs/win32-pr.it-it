@@ -1,35 +1,35 @@
 ---
-description: Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la specifica dello schema di stampa.
+description: Informazioni sul supporto dei delta PrintTicket. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 80fdc8f1-4fda-4102-9b27-16d9acb4d077
-title: Supporto di Delta PrintTicket
+title: Supporto dei delta di PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 730c8d32d881dd30a6ab57b88d8fc1dfa87eee7a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: b7f72f82875d0207ed232f4db897c78295ce2ee0
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106321037"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548780"
 ---
-# <a name="supporting-printticket-deltas"></a>Supporto di Delta PrintTicket
+# <a name="supporting-printticket-deltas"></a>Supporto dei delta di PrintTicket
 
-Questo argomento non è aggiornato. Per informazioni aggiornate, vedere la [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-L'interfaccia del provider PrintTicket dispone di metodi che possono essere utilizzati per apportare modifiche incrementali a un oggetto PrintTicket esistente. Le modifiche del PrintTicket incrementale possono essere specificate in un oggetto PrintTicket parziale noto come Delta PrintTicket. Un oggetto PrintTicket modificato viene creato unendo un Delta PrintTicket con un oggetto PrintTicket esistente. Per ulteriori informazioni sui metodi che coinvolgono i Delta PrintTicket, vedere il documento di interfaccia del provider PrintTicket imminente.
+L'interfaccia del provider PrintTicket include metodi che possono essere usati per apportare modifiche incrementali a un oggetto PrintTicket esistente. Le modifiche incrementali di PrintTicket possono essere specificate in un oggetto PrintTicket parziale noto come delta di PrintTicket. Un oggetto PrintTicket modificato viene creato unendo un delta PrintTicket con un oggetto PrintTicket esistente. Per altre informazioni sui metodi che coinvolgono i delta di PrintTicket, vedere il documento dell'interfaccia del provider PrintTicket.
 
-Quando viene elaborato un Delta PrintTicket, è necessario eseguire i passaggi seguenti.
+Quando viene elaborato un delta PrintTicket, è necessario eseguire i passaggi seguenti.
 
-1.  Identificare le istanze di feature o ParameterInit comuni sia al PrintTicket esistente (il PrintTicket di destinazione) sia al Delta PrintTicket.
+1.  Identificare le istanze Feature o ParameterInit comuni sia all'oggetto PrintTicket esistente (PrintTicket di destinazione) che al delta PrintTicket.
 
-    -   Per ogni funzionalità comune sia per l'oggetto PrintTicket di destinazione che per il Delta PrintTicket, sostituire la funzionalità nel PrintTicket di destinazione con la caratteristica corrispondente nel Delta PrintTicket.
+    -   Per ogni funzionalità comune sia al valore PrintTicket di destinazione che al delta PrintTicket, sostituire la funzionalità nell'oggetto PrintTicket di destinazione con la funzionalità corrispondente nel delta PrintTicket.
 
-    -   Per ogni ParameterInit comune sia al PrintTicket di destinazione sia al Delta PrintTicket, sostituire ParameterInit nel PrintTicket di destinazione con il ParameterInit corrispondente nel Delta PrintTicket.
+    -   Per ogni ParameterInit comune sia al valore PrintTicket di destinazione che al delta PrintTicket, sostituire ParameterInit nell'oggetto PrintTicket di destinazione con il parametro ParameterInit corrispondente nel delta PrintTicket.
 
-2.  Copiare tutte le istanze ParameterInit e della funzionalità rimanenti nel Delta PrintTicket nel PrintTicket di destinazione.
+2.  Copiare tutte le istanze Feature e ParameterInit rimanenti nel delta PrintTicket nell'oggetto PrintTicket di destinazione.
 
-3.  Se l'algoritmo di risoluzione dei conflitti consente di specificare le priorità nel PrintTicket stesso, è possibile scegliere di elevare le priorità della funzionalità e delle istanze di ParameterInit denominate nel Delta PrintTicket.
+3.  Se l'algoritmo di risoluzione dei conflitti consente di definire priorità in PrintTicket stesso, è possibile scegliere di elevare le priorità delle istanze Feature e ParameterInit denominate nel delta PrintTicket.
 
-4.  Eseguire la convalida PrintTicket come descritto nell' [elenco di controllo di convalida PrintTicket](printticket-validation-checklist.md).
+4.  Eseguire la convalida di PrintTicket come descritto in [Elenco di controllo per la convalida di PrintTicket](printticket-validation-checklist.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

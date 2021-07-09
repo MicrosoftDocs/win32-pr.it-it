@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Ottenere informazioni sul parametro PageScalingScale. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 49a60a94-fb65-4439-bebf-3f77ea0861fe
 title: PageScalingScale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 974242cf43bae50a8e81b17bcdd13d653032c6a9
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d8c6cee5fc46568e3cf7f15ecd43c07c6584c856
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999198"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548829"
 ---
 # <a name="pagescalingscale"></a>PageScalingScale
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il fattore di scala per il ridimensionamento quadrato personalizzato.
 
@@ -28,7 +28,7 @@ Specifica il fattore di scala per il ridimensionamento quadrato personalizzato.
 |----------------------------|---------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                 |
 | Prefisso di ambito <br/> | Pagina<br/>                                         |
-| Note <br/>          | Collegato all'elemento PageScaling, opzione Custom<br/> |
+| Note <br/>          | Collegato all'elemento PageScaling, opzione Personalizzata<br/> |
 
 
 
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
 | Minvalue<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
-| Più elementi<br/>     | integer<br/> | 1<br/>               |
-| Tipo di unità<br/>     | string<br/>  | percent<br/>         |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
+| Multipli<br/>     | integer<br/> | 1<br/>               |
+| UnitType<br/>     | string<br/>  | percent<br/>         |
 
 
 

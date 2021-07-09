@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sull'elemento PageOutputColor configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 1afcf2e6-5d6d-4b87-a005-15d42a610f69
 title: PageOutputColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4791ca4a53b8bdcc43a32c5c7aa5a1e38bbe1e5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 79fc71f58bde44224642d3a5f6979e3aef929976
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998048"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548989"
 ---
 # <a name="pageoutputcolor"></a>PageOutputColor
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche delle impostazioni del colore per l'output.
+Descrive le caratteristiche delle impostazioni dei colori per l'output.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -27,7 +27,7 @@ Descrive le caratteristiche delle impostazioni del colore per l'output.
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -67,7 +67,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                   | Tipo di dati          | Unità                      | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                           |
 |----------------------------------------|--------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>              | string<br/>  | caratteri<br/>     | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                |
+| \_OptionName\_<br/>              | string<br/>  | caratteri<br/>     | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                |
 | \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>            | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                      |
 | \_DeviceBitsPerPixelValue\_<br/> | numero intero<br/> | bit per pixel<br/> | Maggiore di 0, minore del valore massimo di supporto del dispositivo.<br/>                                                                                                                    | Valore numerico che indica il numero di bit per pixel dei dati di colore supportati dalla stampante.<br/>                          |
 | \_DriverBitsPerPixelValue\_<br/> | numero intero<br/> | bit per pixel<br/> | Maggiore di 0, minore del valore massimo di supporto del dispositivo.<br/>                                                                                                                    | Valore numerico che indica il numero di bit per pixel che il driver principale deve usare per il buffer di rendering della bitmap.<br/> |

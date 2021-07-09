@@ -1,21 +1,21 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Esaminare l'elemento PagePhotoPrintingIntent configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: f9a00828-52df-449e-914b-4c6cd7c29f3a
 title: PagePhotoPrintingIntent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01d56a0b46c73bb3afdcefe96dc2131c861d5419
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2d1cf9ae587062efc68b953f5931b55147940b1b
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997978"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548979"
 ---
 # <a name="pagephotoprintingintent"></a>PagePhotoPrintingIntent
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Indica una finalità di alto livello per il driver per il popolamento delle impostazioni di stampa foto. Queste impostazioni si occupano della qualità di output prevista che un utente può specificare durante la stampa di foto.
+Indica una finalità di alto livello al driver per il popolamento delle impostazioni di stampa foto. Queste impostazioni si occupano della qualità di output prevista che un utente può specificare durante la stampa di foto.
 
 -   [Informazioni sull'elemento](#element-information)
 
@@ -29,7 +29,7 @@ Indica una finalità di alto livello per il driver per il popolamento delle impo
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -62,7 +62,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione<br/>                                            |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione<br/>                                            |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False<br/>                                                                                                                                                                | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 

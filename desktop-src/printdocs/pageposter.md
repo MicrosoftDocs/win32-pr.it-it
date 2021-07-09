@@ -1,19 +1,19 @@
 ---
-description: Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Ottenere informazioni sull'elemento pagePoster configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 66a3ac9a-674e-4f16-a2d8-8f5b753f876c
 title: PagePoster
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c46cad46abcad7541f1282d691c950211bb7670c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 72b8bb7b57074fe058c7cc5be8dd609577ceb6c1
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996088"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548969"
 ---
 # <a name="pageposter"></a>PagePoster
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Descrive l'output di una singola pagina in più fogli multimediali fisici.
 
@@ -27,7 +27,7 @@ Descrive l'output di una singola pagina in più fogli multimediali fisici.
 
 | Nome | Valore |
 |----------------------------|--------------------|
-| Tipo di elemento <br/>   | Caratteristica<br/> |
+| Tipo di elemento <br/>   | Funzionalità<br/> |
 | Prefisso di ambito <br/> | Pagina<br/>    |
 | Note <br/>          | nessuno<br/>    |
 
@@ -64,7 +64,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione<br/>                                            |
+| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione<br/>                                            |
 | \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>        | True, False<br/>                                                                                                                                                                | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 | \_SheetsPerPageValue\_<br/>  | numero intero<br/> | pagine<br/>      | Maggiore o uguale a 0.<br/>                                                                                                                                                | Specifica il numero di fogli fisici per pagina logica.<br/>         |
 
