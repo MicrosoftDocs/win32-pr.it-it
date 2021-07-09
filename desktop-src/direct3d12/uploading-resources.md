@@ -1,42 +1,42 @@
 ---
 title: Caricamento di diversi tipi di risorse
-description: Viene illustrato come utilizzare un buffer per caricare sia i dati del buffer costante che i dati del buffer dei vertici nella GPU e come suddividere e collocare correttamente i dati all'interno dei buffer.
+description: Illustra come usare un buffer per caricare sia i dati costanti del buffer che i dati del buffer dei vertici nella GPU e come sottoallocare e inserire correttamente i dati all'interno dei buffer.
 ms.assetid: 255B0482-21D6-4276-8009-3F3891879CA1
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd2edca2cd9f4d3becf5036056a89f91c50f2c24
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b03d4755124bbadcdd255a6e99739b710845ab14
+ms.sourcegitcommit: a30d0436a84986234df673c6def6694d5a8579f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74104067"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113563781"
 ---
 # <a name="uploading-different-types-of-resources"></a>Caricamento di diversi tipi di risorse
 
-Viene illustrato come utilizzare un buffer per caricare sia i dati del buffer costante che i dati del buffer dei vertici nella GPU e come suddividere e collocare correttamente i dati all'interno dei buffer. L'utilizzo di un singolo buffer aumenta la flessibilità di utilizzo della memoria e fornisce alle applicazioni un controllo più rigoroso sull'utilizzo della memoria. Mostra anche le differenze tra i modelli D3D11 e D3D12 per il caricamento di diversi tipi di risorse.
+Illustra come usare un buffer per caricare sia i dati costanti del buffer che i dati del buffer dei vertici nella GPU e come sottoallocare e inserire correttamente i dati all'interno dei buffer. L'uso di un singolo buffer aumenta la flessibilità di utilizzo della memoria e offre alle applicazioni un controllo più stretto sull'utilizzo della memoria. Illustra anche le differenze tra i modelli Direct3D 11 e Direct3D 12 per il caricamento di diversi tipi di risorse.
 
--   [Caricare tipi diversi di risorse](#upload-different-types-of-resources)
-    -   [Esempio di codice: D3D11](#code-example-d3d11)
-    -   [Esempio di codice: D3D12](#code-example-d3d12)
--   [Costanti](#constants)
--   [Risorse](#uploading-different-types-of-resources)
--   [Reflection delle dimensioni delle risorse](#resource-size-reflection)
--   [Allineamento buffer](#buffer-alignment)
--   [Argomenti correlati](#related-topics)
+## <a name="upload-different-types-of-resources"></a>Upload diversi tipi di risorse
 
-## <a name="upload-different-types-of-resources"></a>Caricare tipi diversi di risorse
+In Direct3D 12 si crea un buffer per supportare diversi tipi di dati delle risorse per il caricamento e si copiano i dati delle risorse nello stesso buffer in modo simile per dati di risorse diversi. Vengono quindi create singole visualizzazioni per associare i dati delle risorse alla pipeline grafica nel modello di associazione di risorse Direct3D 12.
 
-In D3D12 le applicazioni creano un buffer per supportare diversi tipi di dati delle risorse per il caricamento e copiano i dati delle risorse nello stesso buffer in modo analogo per i dati di risorse differenti. Vengono quindi create visualizzazioni singole per associare i dati delle risorse alla pipeline grafica nel nuovo modello di associazione di risorse.
+In Direct3D 11 si creano buffer separati per diversi tipi di dati delle risorse (si noti il diverso usato nel codice di esempio Direct3D 11 riportato di seguito), si associa in modo esplicito ogni buffer di risorse alla pipeline grafica e si aggiornano i dati delle risorse con metodi diversi in base a tipi di `BindFlags` risorse diversi.
 
-In D3D11, le applicazioni creano buffer distinti per i diversi tipi di dati delle risorse (si noti il diverso `BindFlags` usato nel codice di esempio d3d11 seguente), associando in modo esplicito ogni buffer delle risorse alla pipeline grafica e aggiornando i dati delle risorse con metodi diversi in base ai diversi tipi di risorse.
+Sia in Direct3D 12 che in Direct3D 11 è consigliabile caricare le risorse solo dove la CPU scriverà i dati una sola volta e la GPU la leggerà una sola volta.
 
-In D3D12 e D3D11, le applicazioni devono usare solo le risorse di caricamento in cui la CPU scriverà i dati una sola volta e la GPU lo leggerà una volta. Se i dati vengono letti più volte dalla GPU, la GPU non leggerà i dati in modo lineare oppure il rendering sarà già limitato a una GPU. L'opzione migliore potrebbe consistere nell'usare [**ID3D12GraphicsCommandList:: CopyTextureRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion) o [**ID3D12GraphicsCommandList:: CopyBufferRegion**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copybufferregion) per copiare i dati del buffer di caricamento in una risorsa predefinita. Una risorsa predefinita può risiedere nella memoria video fisica sulle GPU discrete.
+In alcuni casi,
+* la GPU leggerà i dati più volte oppure
+* la GPU non leggerà i dati in modo lineare o
+* il rendering è già notevolmente limitato alla GPU.
 
-### <a name="code-example-d3d11"></a>Esempio di codice: D3D11
+In questi casi, l'opzione migliore potrebbe essere usare [**ID3D12GraphicsCommandList::CopyTextureRegion**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion) o [**ID3D12GraphicsCommandList::CopyBufferRegion**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copybufferregion) per copiare i dati del buffer di caricamento in una risorsa predefinita.
 
-``` syntax
-// D3D11: Separate buffers for each resource type.
+Una risorsa predefinita può risiedere nella memoria video fisica in GPU discrete.
+
+### <a name="code-example-direct3d-11"></a>Esempio di codice: Direct3D 11
+
+```cpp
+// Direct3D 11: Separate buffers for each resource type.
 
 void main()
 {
@@ -111,10 +111,10 @@ void DrawFrame()
 }
 ```
 
-### <a name="code-example-d3d12"></a>Esempio di codice: D3D12
+### <a name="code-example-direct3d-12"></a>Esempio di codice: Direct3D 12
 
-``` syntax
-// D3D12: One buffer to accommodate different types of resources
+```cpp
+// Direct3D 12: One buffer to accommodate different types of resources
 
 ComPtr<ID3D12Resource> m_spUploadBuffer;
 UINT8* m_pDataBegin = nullptr;    // starting position of upload buffer
@@ -265,67 +265,56 @@ UINT Align(UINT uLocation, UINT uAlign)
 }
 ```
 
-Si noti l'uso delle strutture helper [**CD3DX12 \_ \_ Proprietà heap**](cd3dx12-heap-properties.md) e [**CD3DX12 \_ Resource \_ desc**](cd3dx12-resource-desc.md).
+Si noti l'uso delle strutture helper [**CD3DX12_HEAP_PROPERTIES**](cd3dx12-heap-properties.md) e [**CD3DX12_RESOURCE_DESC**](cd3dx12-resource-desc.md).
 
 ## <a name="constants"></a>Costanti
 
-Per impostare costanti, vertici e indici in un heap upload o readback, usare le API seguenti:
+Per impostare costanti, vertici e indici all'interno di un heap di caricamento o readback, usare le API seguenti.
 
--   [**ID3D12Device::CreateConstantBufferView**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createconstantbufferview)
--   [**ID3D12GraphicsCommandList::IASetVertexBuffers**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-iasetvertexbuffers)
--   [**ID3D12GraphicsCommandList::IASetIndexBuffer**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-iasetindexbuffer)
+-   [**ID3D12Device::CreateConstantBufferView**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createconstantbufferview)
+-   [**ID3D12GraphicsCommandList::IASetVertexBuffers**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-iasetvertexbuffers)
+-   [**ID3D12GraphicsCommandList::IASetIndexBuffer**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-iasetindexbuffer)
 
 ## <a name="resources"></a>Risorse
 
-Le risorse sono il concetto di D3D che astrae l'utilizzo della memoria fisica della GPU. Le risorse richiedono lo spazio degli indirizzi virtuali della GPU per accedere alla memoria fisica. La creazione di risorse è a thread libero.
+Le risorse sono il concetto direct3D che astrae l'utilizzo della memoria fisica GPU. Le risorse richiedono lo spazio degli indirizzi virtuali GPU per accedere alla memoria fisica. La creazione di risorse è a thread libero.
 
-Sono disponibili tre tipi di risorse per quanto riguarda la creazione e la flessibilità degli indirizzi virtuali in D3D12:
+Esistono tre tipi di risorse per quanto riguarda la creazione di indirizzi virtuali e la flessibilità in Direct3D 12.
 
--   Risorse sottoposte a commit
+### <a name="committed-resources"></a>Risorse di cui è stato eseguito il commit
 
-    Le risorse di cui è stato eseguito il commit sono l'idea più comune delle risorse D3D nelle generazioni. La creazione di una risorsa di questo tipo consente di allocare l'intervallo di indirizzi virtuali, un heap implicito sufficientemente grande da adattarsi all'intera risorsa ed eseguire il commit dell'intervallo di indirizzi virtuali nella memoria fisica incapsulata dall'heap. Le proprietà dell'heap implicite devono essere passate per corrispondere alla parità funzionale con le versioni D3D precedenti. Vedere [**ID3D12Device:: CreateCommittedResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommittedresource).
+Le risorse di cui è stato eseguito il commit sono l'idea più comune di risorse Direct3D nelle generazioni. La creazione di una risorsa di questo tipo alloca un intervallo di indirizzi virtuali, un heap implicito sufficientemente grande da adattarsi all'intera risorsa ed esegue il commit dell'intervallo di indirizzi virtuali nella memoria fisica incapsulata dall'heap. Le proprietà heap implicite devono essere passate in modo che corrispondano alla parità funzionale con le versioni precedenti di Direct3D. Vedere [**ID3D12Device::CreateCommittedResource**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createcommittedresource).
 
--   Risorse riservate
+### <a name="reserved-resources"></a>Risorse riservate
 
-    Le risorse riservate sono equivalenti alle risorse D3D11 affiancate. Al momento della creazione, viene allocato solo un intervallo di indirizzi virtuali e non viene eseguito il mapping ad alcun heap. L'applicazione eseguirà il mapping di tali risorse agli heap in un secondo momento. Le funzionalità di tali risorse sono attualmente invariate rispetto a D3D11, perché è possibile eseguirne il mapping a un heap a una granularità del riquadro 64KB con [**UpdateTileMappings**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-updatetilemappings). Vedere [ **ID3D12Device:: CreateReservedResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createreservedresource)
+Le risorse riservate sono equivalenti alle risorse affiancate Direct3D 11. Al momento della creazione, viene allocato solo un intervallo di indirizzi virtuali e non ne viene eseguito il mapping ad alcun heap. L'applicazione esegue il mapping di tali risorse agli heap in un secondo momento. Le funzionalità di tali risorse sono attualmente invariate rispetto a Direct3D 11, perché possono essere mappate a un heap con una granularità del riquadro di 64 KB con [**UpdateTileMappings.**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-updatetilemappings) Vedere [**ID3D12Device::CreateReservedResource**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createreservedresource).
 
--   Risorse posizionate
+### <a name="placed-resources"></a>Risorse posizionate
 
-    Nuove per D3D12, le applicazioni possono creare heap distinti dalle risorse. Successivamente, l'applicazione può individuare più risorse all'interno di un singolo heap. Questa operazione può essere eseguita senza creare risorse affiancate o riservate, abilitando le funzionalità per tutti i tipi di risorse che possono essere creati direttamente dalle applicazioni. È possibile che più risorse si sovrappongano e che l'applicazione debba utilizzare `TiledResourceBarrier` per riutilizzare correttamente la memoria fisica. Vedere [ **ID3D12Device:: CreatePlacedResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createplacedresource)
+Una novità di Direct3D 12 è la creazione di heap separati dalle risorse. Successivamente, è possibile individuare più risorse all'interno di un singolo heap. È possibile farlo senza creare risorse affiancate o riservate, abilitando le funzionalità per tutti i tipi di risorse che possono essere create direttamente dall'applicazione. È possibile che più risorse si sovrappongano ed è necessario usare [**ID3D12GraphicsCommandList::ResourceBarrier**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) per usare di nuovo correttamente la memoria fisica. Fare riferimento [**a ID3D12Device::CreatePlacedResource**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createplacedresource).
 
 ## <a name="resource-size-reflection"></a>Reflection delle dimensioni delle risorse
 
-Le applicazioni devono usare la reflection delle dimensioni delle risorse per comprendere la quantità di trame della stanza con layout di trama sconosciuti richiesti negli heap. Sono supportati anche i buffer, ma per lo più per praticità.
+È necessario usare la reflection delle dimensioni delle risorse per comprendere la quantità di trame di spazio con layout di trama sconosciuti necessari negli heap. Sono supportati anche i buffer, ma soprattutto per praticità.
 
-Le applicazioni devono essere a conoscenza delle principali discrepanze di allineamento, per aiutare a comprimere più densamente le risorse.
+È necessario essere a conoscenza delle principali discrepanze di allineamento, per facilitare la creazione di un pacchetto di risorse più denso.
 
-Ad esempio, una matrice a elemento singolo con un buffer a un byte restituisce una dimensione di 64KB e un allineamento di 64KB, in quanto i buffer attualmente possono essere allineati solo 64KB.
+Ad esempio, una matrice a elemento singolo con  un buffer a un byte restituisce dimensioni di 64 KB e *allineamento* di 64 KB, perché i buffer possono essere allineati solo a 64 KB.
 
-Inoltre, una matrice a tre elementi con due trame allineate 64KB a Texel singolo e una trama a singolo Texel 4 bit allineata segnala dimensioni diverse in base all'ordine della matrice. Se le trame da 4 MB sono allineate al centro, le dimensioni risultanti sono 12 MB. In caso contrario, la dimensione risultante è 8 MB. L'allineamento restituito sarà sempre di 4 MB, il super-set di tutti gli allineamenti nella matrice di risorse.
+Inoltre, una matrice a tre elementi con due trame allineate a 64 KB a texel singolo e una trama allineata a 4 MB a texel singolo segnala dimensioni diverse in base all'ordine della matrice. Se le trame allineate a 4 MB si trova al centro, la dimensione *risultante* è 12 MB. In caso contrario, la dimensione risultante è 8 MB. L'allineamento restituito sarebbe sempre di 4 MB, il superset di tutti gli allineamenti nella matrice di risorse.
 
-Fare riferimento alle seguenti API:
+Fare riferimento alle API seguenti.
 
--   [**\_Informazioni sull' \_ allocazione delle risorse D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)
--   [**GetResourceAllocationInfo**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getresourceallocationinfo)
+- [**INFORMAZIONI SULL'ALLOCAZIONE DELLE RISORSE D3D12 \_ \_ \_**](/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)
+- [**GetResourceAllocationInfo**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-getresourceallocationinfo)
 
-## <a name="buffer-alignment"></a>Allineamento buffer
+## <a name="buffer-alignment"></a>Allineamento del buffer
 
-Le restrizioni di allineamento del buffer non sono state modificate da D3D11, in particolare:
+Le restrizioni di allineamento del buffer non sono cambiate rispetto a Direct3D 11, in particolare:
 
--   4 MB per le trame multicampionamento.
--   64 KB per trame e buffer a singolo campione.
+- 4 MB per trame multi-campione.
+- 64 KB per trame e buffer a campione singolo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-<dl> <dt>
-
-[Sottoallocazione nei buffer](large-buffers.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
+* [Sottoallocazione all'interno dei buffer](large-buffers.md)
