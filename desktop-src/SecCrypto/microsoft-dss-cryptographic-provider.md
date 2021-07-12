@@ -1,26 +1,26 @@
 ---
-description: Il provider di crittografia Microsoft DSS supporta l'hashing, la firma dei dati e la verifica della firma utilizzando gli algoritmi SHA (Secure Hash Algorithm) e DSS (Digital Signature Standard). È possibile esportarlo all'esterno del Stati Uniti e del Canada.
+description: Microsoft DSS Cryptographic Provider supporta l'hashing, la firma dei dati e la verifica della firma usando gli algoritmi SECURE (Secure Hash Algorithm) e Digital Signature Standard (DSS). Può essere esportato al di fuori del Stati Uniti e del Canada.
 ms.assetid: 9b9a288e-0167-4696-98a3-283a788f8062
 title: Provider di crittografia Microsoft DSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9dd9a5a5ab9e270a96e29f2013f6c482a8abf00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 930fca73edfbb652a077c5c4b9dcd5f069b11ffb
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129667"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581859"
 ---
 # <a name="microsoft-dss-cryptographic-provider"></a>Provider di crittografia Microsoft DSS
 
-Il provider di crittografia Microsoft DSS supporta l'hashing, la firma dei dati e la verifica della firma utilizzando gli algoritmi SHA ( [*Secure Hash Algorithm*](../secgloss/s-gly.md) ) e DSS ( [*Digital Signature Standard*](../secgloss/d-gly.md) ). È possibile esportarlo all'esterno del Stati Uniti e del Canada.
+Microsoft DSS Cryptographic Provider supporta l'hashing, la firma dei dati e la verifica della firma usando gli algoritmi [*Secure Hash Algorithm*](../secgloss/s-gly.md) (SHA) e Digital Signature [*Standard*](../secgloss/d-gly.md) (DSS). Può essere esportato al di fuori del Stati Uniti e del Canada.
 
 
 
-|                |                        |
-|----------------|------------------------|
-| Tipo di provider: | **PROVA \_ DSS**          |
-| Nome provider: | **MS \_ def \_ DSS \_ prov** |
+|                   | Valore               |
+|-------------------|---------------------|
+| **Tipo provider** | PROV \_ DSS           |
+| **Nome provider** | MS \_ DEF \_ DSS \_ PROV  |
 
 
 

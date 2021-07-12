@@ -1,52 +1,52 @@
 ---
-description: La Shell offre diversi modi per gestire i file System.
+description: Shell offre diversi modi per gestire i file system.
 ms.assetid: d9ffda6f-adc0-44a3-b410-e23bf5f4f165
-title: Gestione del file System
+title: Gestione del file system
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 404b456ce1f26c128e6c3fc3bc9971672378a0d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee0f3b47e17e691c540a9775f3b8588b311b9878
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342431"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581619"
 ---
-# <a name="managing-the-file-system"></a>Gestione del file System
+# <a name="managing-the-file-system"></a>Gestione del file system
 
-La Shell offre diversi modi per gestire i file System. La shell fornisce una funzione, [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa), che consente a un'applicazione di spostare, copiare, rinominare ed eliminare i file a livello di codice. La Shell supporta inoltre alcune funzionalità di gestione dei file aggiuntive.
+Shell offre diversi modi per gestire i file system. Shell fornisce una funzione, [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa), che consente a un'applicazione di spostare, copiare, rinominare ed eliminare file a livello di codice. Shell supporta anche alcune funzionalità di gestione dei file aggiuntive.
 
--   I documenti HTML possono essere *connessi* a file correlati, ad esempio file di grafica o fogli di stile. Quando il documento viene spostato o copiato, anche i file connessi vengono spostati o copiati automaticamente.
--   Per i sistemi disponibili per più di un utente, i file possono essere gestiti in base ai singoli utenti. Gli utenti possono accedere facilmente ai file di dati, ma non ai file appartenenti ad altri utenti.
--   Se i file di documento vengono aggiunti o modificati, è possibile aggiungerli all'elenco dei documenti recenti della shell. Quando l'utente fa clic sul comando **documenti** nel menu Start, viene visualizzato un elenco di collegamenti ai documenti.
+-   I documenti HTML possono *essere connessi* a file correlati, ad esempio file di grafica o fogli di stile. Quando il documento viene spostato o copiato, anche i file connessi vengono spostati o copiati automaticamente.
+-   Per i sistemi disponibili per più utenti, i file possono essere gestiti in base all'utente. Gli utenti possono accedere facilmente ai file di dati, ma non ai file appartenenti ad altri utenti.
+-   Se i file di documento vengono aggiunti o modificati, possono essere aggiunti all'elenco di documenti recenti della shell. Quando l'utente fa clic **sul comando** Documenti nel menu Start, viene visualizzato un elenco di collegamenti ai documenti.
 
-In questo documento viene illustrato il funzionamento di queste tecnologie di gestione file. Viene quindi descritto come utilizzare la Shell per spostare, copiare, rinominare ed eliminare i file e come gestire gli oggetti nel Cestino.
+Questo documento illustra il funzionamento di queste tecnologie di gestione dei file. Descrive quindi come usare Shell per spostare, copiare, rinominare ed eliminare file e come gestire gli oggetti nel Cestino.
 
 -   [Gestione file per utente](#per-user-file-management)
--   [Cartelle documenti e immagini personali](#my-documents-and-my-pictures-folders)
+-   [cartelle Documenti e Immagini personali](#my-documents-and-my-pictures-folders)
 -   [File connessi](#connected-files)
--   [Trasferimento, copia, ridenominazione ed eliminazione di file](#moving-copying-renaming-and-deleting-files)
-    -   [Notifica della shell](#notifying-the-shell)
+-   [Spostamento, copia, ridenominazione ed eliminazione di file](#moving-copying-renaming-and-deleting-files)
+    -   [Notifica alla shell](#notifying-the-shell)
 -   [Esempio semplice di gestione dei file con SHFileOperation](#simple-example-of-managing-files-with-shfileoperation)
 -   [Aggiunta di file all'elenco di documenti recenti della shell](#adding-files-to-the-shells-list-of-recent-documents)
 
-## <a name="per-user-file-management"></a>Gestione dei file Per-User
+## <a name="per-user-file-management"></a>Per-User Gestione file
 
-La shell di Windows 2000 consente di associare i file a un utente specifico, in modo che i file rimangano nascosti ad altri utenti. In termini di file system, i file vengono archiviati nella cartella del profilo dell'utente, in genere C: \\ Documents and Settings \\ *username* \\ nei sistemi Windows 2000. Questa funzionalità consente a molti utenti di utilizzare lo stesso computer, mantenendo al tempo stesso la privacy dei file di altri utenti. Diversi utenti possono avere programmi diversi. Fornisce inoltre agli amministratori e alle applicazioni un modo semplice per archiviare elementi quali l'inizializzazione (INI) o i file di collegamento (lnk). Le applicazioni possono quindi mantenere uno stato diverso per ogni utente e recuperare facilmente lo stato specifico quando necessario. È disponibile anche una cartella del profilo per archiviare le informazioni comuni a tutti gli utenti.
+La Windows 2000 Shell consente di associare i file a un determinato utente in modo che i file rimangano nascosti ad altri utenti. In termini di file system, i file vengono archiviati nella cartella del profilo dell'utente, in genere C: Documents e Impostazioni Username nei sistemi \\ \\  \\ Windows 2000. Questa funzionalità consente a molti utenti di usare lo stesso computer, mantenendo la privacy dei file di altri utenti. Per utenti diversi possono essere disponibili programmi diversi. Offre anche un modo semplice per gli amministratori e le applicazioni di archiviare elementi quali l'inizializzazione (.ini) o i file di collegamento (con estensione lnk). Le applicazioni possono quindi mantenere uno stato diverso per ogni utente e ripristinare facilmente tale stato specifico quando necessario. Esiste anche una cartella del profilo per l'archiviazione di informazioni comuni a tutti gli utenti.
 
-Poiché non è pratico determinare quale utente è connesso e dove si trovano i file, le cartelle standard per utente sono cartelle speciali e sono identificate da un [**CSIDL**](csidl.md). Ad esempio, il CSIDL per la cartella dei file di programma per utente è CSIDL \_ Programs. Se l'applicazione chiama [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) o [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) con uno dei CSIDL per utente, la funzione restituisce il puntatore a un elenco di identificatori di elemento (PIDL) o a un percorso appropriato per l'utente attualmente connesso. Se l'applicazione deve recuperare il percorso o PIDL della cartella del profilo, il relativo CSIDL è **CSIDL \_ profilo**.
+Poiché è poco pratico determinare quale utente è connesso e dove si trovano i file, le cartelle standard per utente sono cartelle speciali e sono identificate da [**CSIDL**](csidl.md). Ad esempio, il linguaggio CSIDL per la cartella Programmi per utente è PROGRAMMI \_ CSIDL. Se l'applicazione chiama [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) o [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) con uno dei CSIDL per utente, la funzione restituisce il puntatore a un elenco di identificatori di elemento (PIDL) o al percorso appropriato per l'utente attualmente connesso. Se l'applicazione deve recuperare il percorso o il file PIDL della cartella del profilo, CSIDL è **CSIDL \_ PROFILE**.
 
-## <a name="my-documents-and-my-pictures-folders"></a>Cartelle documenti e immagini personali
+## <a name="my-documents-and-my-pictures-folders"></a>Documenti cartelle Immagini personali
 
-Una delle icone standard trovate sul desktop è la **mia documentazione**. Quando si apre questa cartella, contiene i file di documento dell'utente corrente. L'istanza desktop dei documenti è una cartella virtuale, ovvero un alias per il file system percorso usato per archiviare fisicamente i documenti dell'utente, situato immediatamente sotto il desktop nella gerarchia dello spazio dei nomi.
+Una delle icone standard presenti sul desktop è **Documenti**. Quando si apre questa cartella, contiene i file di documento dell'utente corrente. L'istanza desktop di Documenti è una cartella virtuale, ovvero un alias del percorso file system usato per archiviare fisicamente i documenti dell'utente, che si trova immediatamente sotto il desktop nella gerarchia dello spazio dei nomi.
 
-Lo scopo delle cartelle documenti e immagini è quello di fornire agli utenti un modo semplice e sicuro per accedere ai file di documenti e immagini in un sistema che potrebbe avere più utenti. A ogni utente vengono assegnate cartelle di file system separate per i propri file. Ad esempio, la posizione della cartella documenti di un utente nel file system è in genere simile a C: \\ Documents and Settings \\ *username* \\ My Documents. Non è necessario che gli utenti conoscano la posizione fisica delle cartelle file system. Si limitano ad accedere ai file tramite l'icona documenti.
+Lo scopo delle cartelle Documenti e Immagini è fornire agli utenti un modo semplice e sicuro per accedere ai file di documenti e immagini in un sistema che potrebbe avere più utenti. A ogni utente vengono assegnate cartelle file system per i file. Ad esempio, il percorso della cartella documenti di un utente nel file system è in genere simile a C: Documenti e Impostazioni \\ \\ *nome utente* \\ Documenti. Non è necessario che gli utenti sappiano nulla sulla posizione fisica delle file system cartelle. È sufficiente accedere ai file tramite l'icona Documenti.
 
 > [!Note]  
-> Documenti consente a un utente di accedere ai propri file ma non a quelli di altri utenti. Se più persone utilizzano lo stesso computer, un amministratore può bloccare gli utenti partendo dall'file system in cui sono archiviati i file effettivi. Gli utenti potranno quindi lavorare nei propri documenti tramite la cartella documenti, ma non nei documenti che appartengono ad altri utenti.
+> Documenti consente a un utente di accedere ai propri file, ma non a quelli di altri utenti. Se più utenti usano lo stesso computer, un amministratore può bloccare gli utenti dalla parte del file system in cui sono archiviati i file effettivi. Gli utenti potranno quindi lavorare sui propri documenti tramite la cartella Documenti ma non sui documenti che appartengono ad altri utenti.
 
  
 
-Non è in genere necessario che un'applicazione conosca quale utente è connesso o dove si trova nella file system cartella documenti dell'utente. Al contrario, l'applicazione può recuperare il PIDL dell'icona del desktop My Documents chiamando il metodo [**IShellFolder::P arsedisplayname**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname) del desktop. Il nome di analisi usato per identificare la cartella documenti non è un percorso di file, bensì:: {450D8FBA-AD25-11D0-98A8-0800361B1103}. L'espressione tra parentesi è il formato di testo del GUID documenti. Ad esempio, per recuperare il PIDL dei documenti, l'applicazione deve usare questa chiamata a **IShellFolder::P arsedisplayname**.
+In genere non è necessario che un'applicazione sappia quale utente è connesso o dove si trova file system cartella Documenti dell'utente. L'applicazione può invece recuperare il file PIDL dell'icona del desktop Documenti chiamando il metodo [**IShellFolder::P arseDisplayName del**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname) desktop. Il nome di analisi usato per identificare la cartella Documenti non è un percorso di file, ma piuttosto ::{450d8fba-ad25-11d0-98a8-0800361b1103}. L'espressione tra parentesi quadre è la forma di testo del GUID Documenti. Ad esempio, per recuperare il file PIDL di Documenti, l'applicazione deve usare questa chiamata a **IShellFolder::P arseDisplayName**.
 
 
 ```C++
@@ -60,39 +60,113 @@ hr = psfDeskTop->ParseDisplayName(NULL,
 
 
 
-Una volta che l'applicazione dispone del PIDL documenti, può gestire la cartella in modo analogo a una normale cartella file system, enumerando gli elementi, analizzando, associando ed eseguendo qualsiasi altra operazione di cartella valida. La shell esegue automaticamente il mapping delle modifiche nei documenti o nelle relative sottocartelle alle cartelle file system appropriate.
+Una volta che l'applicazione ha il Documenti PIDL, può gestire la cartella esattamente come una normale cartella file system, enumerando elementi, analizzando, associando ed eseguendo qualsiasi altra operazione di cartella valida. Shell esegue automaticamente il mapping delle Documenti o delle relative sottocartelle alle cartelle file system appropriate.
 
-Se l'applicazione deve accedere alla cartella file system effettiva che contiene i documenti dell'utente corrente, passare CSIDL \_ Personal a [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation). La funzione restituisce il PIDL della cartella file system visualizzata nella cartella documenti dell'utente corrente.
+Se l'applicazione deve accedere alla cartella file system che contiene i documenti dell'utente corrente, passare CSIDL \_ PERSONAL a [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation). La funzione restituisce il file PIDL della file system visualizzata nella cartella Documenti dell'utente corrente.
 
 ## <a name="connected-files"></a>File connessi
 
-I documenti HTML hanno spesso un certo numero di file di grafica associati, un file di foglio di stile, diversi file di Microsoft JScript (compatibili con ECMA 262 Language Specification) e così via. Quando si sposta o si copia il documento HTML primario, in genere si desidera spostare o copiare i file associati per evitare la suddivisione dei collegamenti. Sfortunatamente, finora non è stato possibile determinare quali file sono correlati a un documento HTML specifico, ad eccezione del fatto che analizzarne il contenuto. Per ovviare a questo problema, Windows 2000 fornisce un modo semplice per *connettere* un documento HTML primario al relativo gruppo di file associati. Se la connessione file è abilitata, quando il documento viene spostato o copiato tutti i relativi file connessi vengono associati.
+I documenti HTML hanno spesso una serie di file grafici associati, un file di foglio di stile, diversi file di Microsoft JScript (compatibili con la specifica del linguaggio ECMA 262) e così via. Quando si sposta o si copia il documento HTML primario, in genere si vogliono anche spostare o copiare i file associati per evitare collegamenti di rilievo. Sfortunatamente, finora non esisteva un modo semplice per determinare quali file sono correlati a un determinato documento HTML se non analizzandone il contenuto. Per risolvere questo problema, Windows 2000 offre un  modo semplice per connettere un documento HTML primario al gruppo di file associati. Se la connessione file è abilitata, quando il documento viene spostato o copiato, vengono associati tutti i file connessi.
 
-Per creare un gruppo di file connessi, il documento primario deve avere un'estensione di file con estensione htm o HTML. Creare una sottocartella della cartella padre del documento primario. Il nome della sottocartella deve corrispondere al nome del documento primario, meno l'estensione. htm o. html, seguito da una delle estensioni elencate di seguito. Le estensioni usate più di frequente sono ". Files" o " \_ files". Ad esempio, se il documento primario è denominato MyDoc.htm, la denominazione della sottocartella "MyDoc \_ files" definisce la sottocartella come contenitore per i file connessi del documento. Se il documento primario viene spostato o copiato, anche la sottocartella e i relativi file vengono spostati o copiati.
+Per creare un gruppo di file connessi, il documento primario deve avere un'estensione .htm o .html file. Creare una sottocartella della cartella padre del documento primario. Il nome della sottocartella deve essere il nome del documento primario, meno l'estensione .htm o .html, seguita da una delle estensioni elencate di seguito. Le estensioni usate più di frequente sono ".files" o \_ "files". Ad esempio, se il documento primario è denominato MyDoc.htm, il nome della sottocartella "File MyDoc" definisce la sottocartella come contenitore per i \_ file connessi del documento. Se il documento primario viene spostato o copiato, anche la sottocartella e i relativi file vengono spostati o copiati.
 
-Per alcune lingue, è possibile usare un equivalente localizzato di " \_ files" per creare una sottocartella per i file connessi. Nella tabella seguente sono elencate le stringhe valide che è possibile aggiungere al nome di un documento per creare una sottocartella di file connessi. Si noti che alcune di queste stringhe hanno '-' come primo carattere anziché come ' \_ ' o ' .'.
+Per alcune lingue, è possibile usare un equivalente localizzato di \_ "file" per creare una sottocartella per i file connessi. Nella tabella seguente sono elencate le stringhe valide che possono essere aggiunte a un nome di documento per creare una sottocartella di file connessi. Si noti che alcune di queste stringhe hanno '-' come primo carattere anziché \_ '' o '.'.
 
 
 
-|              |               |                 |               |
-|--------------|---------------|-----------------|---------------|
-| " \_ archiviazioni" | " \_ arquivos"  | "si basa su" \_   | " \_ bylos"     |
-| "-Dateien"   | " \_ datoteke"  | " \_ dosyalar"    | " \_ elemei"    |
-| " \_ failid"   | " \_ non riuscito"     | " \_ fajlovi"     | " \_ ficheiros" |
-| " \_ fichiers" | "-filer"      | ". Files"        | " \_ file"     |
-| " \_ file"     | " \_ fitxers"   | " \_ fitxategiak" | " \_ pliki"     |
-| " \_ Soubory"  | " \_ tiedostot" |                 |               |
+:::row:::
+   :::column span="":::
+      \_"archivos"
+   :::column-end:::
+   :::column span="":::
+      \_"arquivos"
+   :::column-end:::
+   :::column span="":::
+      \_"bestanden"
+   :::column-end:::
+   :::column span="":::
+      " \_ bylos"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      "-Dateien"
+   :::column-end:::
+   :::column span="":::
+      \_"datoteke"
+   :::column-end:::
+   :::column span="":::
+      \_"dosyalar"
+   :::column-end:::
+   :::column span="":::
+      \_"elemei"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      " \_ failid"
+   :::column-end:::
+   :::column span="":::
+      "ha \_ esito negativo"
+   :::column-end:::
+   :::column span="":::
+      \_"fajlovi"
+   :::column-end:::
+   :::column span="":::
+      \_"ficheiros"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      \_"fichiers"
+   :::column-end:::
+   :::column span="":::
+      "-filer"
+   :::column-end:::
+   :::column span="":::
+      ".files"
+   :::column-end:::
+   :::column span="":::
+      \_"files"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      \_"file"
+   :::column-end:::
+   :::column span="":::
+      \_"fitxers"
+   :::column-end:::
+   :::column span="":::
+      \_"fitxategiak"
+   :::column-end:::
+   :::column span="":::
+      \_"pliki"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      \_"soubory"
+   :::column-end:::
+   :::column span="":::
+      \_"tiedostot"
+   :::column-end:::
+   :::column span="":::
+   :::column-end:::
+   :::column span="":::
+   :::column-end:::
+:::row-end:::
 
 
 
  
 
 > [!Note]  
-> Questa funzionalità è sensibile al caso dell'estensione. Ad esempio, per l'esempio precedente, una sottocartella denominata "MyDoc \_ files" non verrà connessa a MyDoc.htm.
+> Questa funzionalità è sensibile al caso dell'estensione. Ad esempio, per l'esempio indicato in precedenza, una sottocartella denominata "MyDoc Files" non verrà connessa a \_ MyDoc.htm.
 
  
 
-Se la connessione file è abilitata o disabilitata è controllata da un valore **reg \_ DWORD** , NoFileFolderConnection, della chiave del registro di sistema seguente.
+Se la connessione file è abilitata o disabilitata è controllata da un valore **\_ DWORD REG,** NoFileFolderConnection, della chiave del Registro di sistema seguente.
 
 ```
 HKEY_CURRENT_USER
@@ -103,53 +177,53 @@ HKEY_CURRENT_USER
                Explorer
 ```
 
-Questo valore non è normalmente definito e la connessione file è abilitata. Se necessario, è possibile disabilitare la connessione file aggiungendo questo valore alla chiave e impostandolo su 1. Per abilitare di nuovo la connessione file, impostare NoFileFolderConnection su zero.
+Questo valore in genere non è definito e la connessione file è abilitata. Se necessario, è possibile disabilitare la connessione file aggiungendo questo valore alla chiave e impostandola su 1. Per abilitare nuovamente la connessione file, impostare NoFileFolderConnection su zero.
 
 > [!Note]  
-> La connessione file deve in genere essere abilitata perché altre applicazioni potrebbero dipendere da tale connessione. Disabilitare la connessione file solo se assolutamente necessario.
+> La connessione file deve in genere essere abilitata perché altre applicazioni potrebbero dipendere da essa. Disabilitare la connessione file solo se assolutamente necessario.
 
  
 
-## <a name="moving-copying-renaming-and-deleting-files"></a>Trasferimento, copia, ridenominazione ed eliminazione di file
+## <a name="moving-copying-renaming-and-deleting-files"></a>Spostamento, copia, ridenominazione ed eliminazione di file
 
-Lo spazio dei nomi non è statico e le applicazioni in genere devono gestire il file system eseguendo una delle operazioni seguenti.
+Lo spazio dei nomi non è statico e le applicazioni in genere devono gestire file system eseguendo una delle operazioni seguenti.
 
 -   Copia di un oggetto in un'altra cartella.
--   Lo stato di un oggetto viene spostato in un'altra cartella.
+-   Spostamento di un oggetto in un'altra cartella.
 -   Eliminazione di un oggetto.
 -   Ridenominazione di un oggetto.
 
-Tutte queste operazioni vengono eseguite con [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa). Questa funzione accetta uno o più file di origine e produce file di destinazione corrispondenti. Nel caso dell'operazione di eliminazione, il sistema tenta di inserire i file eliminati nel Cestino.
+Queste operazioni vengono tutte eseguite con [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa). Questa funzione accetta uno o più file di origine e produce i file di destinazione corrispondenti. Nel caso dell'operazione di eliminazione, il sistema tenta di inserire i file eliminati nel Cestino.
 
-È anche possibile spostare i file usando la funzionalità di [trascinamento della selezione](dragdrop.md) .
+È anche possibile spostare i file usando la [funzionalità di trascinamento della](dragdrop.md) selezione.
 
-Per usare la funzione, è necessario compilare i membri di una struttura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) e passarla a [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa). I membri chiave della struttura sono **pFrom** e **PTO**.
+Per usare la funzione , è necessario compilare i membri di una struttura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) e passarla [**a SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa). I membri chiave della struttura sono **pFrom** e **pTo.**
 
-Il membro **pFrom** è una stringa con terminazione **null** doppia che contiene uno o più nomi di file di origine. Questi nomi possono essere percorsi completi o caratteri jolly standard di DOS, ad esempio \* . \* Sebbene questo membro sia dichiarato come stringa con terminazione **null**, viene usato come buffer per memorizzare più nomi di file. Ogni nome file deve terminare con il consueto carattere **null** singolo. È necessario aggiungere un carattere **null** aggiuntivo alla fine del nome finale per indicare la fine di **pFrom**.
+Il **membro pFrom** è una stringa con terminazione **Null** doppia che contiene uno o più nomi di file di origine. Questi nomi possono essere percorsi completi o caratteri jolly DOS standard, ad esempio \* \* . Anche se questo membro è dichiarato come stringa con terminazione **Null,** viene usato come buffer per contenere più nomi di file. Ogni nome di file deve essere terminato dal singolo carattere **NULL** consueto. È necessario aggiungere un carattere **NULL** aggiuntivo alla fine del nome finale per indicare la fine di **pFrom.**
 
-Il membro **PTO** è una stringa con terminazione **null** doppia, molto simile a **pFrom**. Il membro **PTO** contiene i nomi di uno o più nomi di destinazione completi. Vengono compressi in **PTO** nello stesso modo in cui sono disponibili per **pFrom**. Se **PTO** contiene più nomi, è necessario impostare anche il flag **FOF \_ MULTIDESTFILES** nel membro **fFlags** . L'utilizzo di **PTO** dipende dall'operazione descritta qui.
+Il **membro pTo** è una stringa con terminazione **Null** doppia, in modo molto simile a **pFrom**. Il **membro pTo** contiene i nomi di uno o più nomi di destinazione completi. Vengono imballati in **pTo** nello stesso modo in cui sono per **pFrom**. Se **pTo** contiene più nomi, è necessario impostare anche il flag **\_ FOF MULTIDESTFILES** nel **membro fFlags.** L'utilizzo **di pTo** dipende dall'operazione come descritto di seguito.
 
--   Per le operazioni di copia e spostamento, se tutti i file passano a una singola directory, **PTO** contiene il nome completo della directory. Se i file passano a destinazioni diverse, **PTO** può anche contenere una directory o un nome di file completo per ogni file di origine. Se una directory non esiste, verrà creata dal sistema.
--   Per le operazioni di ridenominazione, **PTO** contiene un percorso completo per ogni file di origine in **pFrom**.
--   Per le operazioni di eliminazione, non viene usato **PTO** .
+-   Per le operazioni di copia e spostamento, se tutti i file vengono spostati in una singola directory, **pTo** contiene il nome completo della directory. Se i file vengono verso destinazioni diverse, **pTo** può contenere anche una directory o un nome file completo per ogni file di origine. Se non esiste una directory, il sistema la crea.
+-   Per le operazioni di **ridenominazione, pTo** contiene un percorso completo per ogni file di origine in **pFrom**.
+-   Per le operazioni di eliminazione, **pTo** non viene usato.
 
-### <a name="notifying-the-shell"></a>Notifica della shell
+### <a name="notifying-the-shell"></a>Notifica alla shell
 
-Inviare una notifica alla shell della modifica dopo aver usato [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) per spostare, copiare, rinominare o eliminare file oppure dopo aver eseguito altre azioni che influiscono sullo spazio dei nomi. Le azioni che devono essere accompagnate dalla notifica includono quanto segue:
+Notificare alla shell la modifica dopo l'uso di [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) per spostare, copiare, rinominare o eliminare file o dopo l'azione che interessa lo spazio dei nomi. Di seguito sono riportate le azioni che devono essere accompagnate da una notifica:
 
 -   Aggiunta o eliminazione di file o cartelle.
--   Trasferimento, copia o ridenominazione di file o cartelle.
+-   Spostamento, copia o ridenominazione di file o cartelle.
 -   Modifica di un'associazione di file.
 -   Modifica degli attributi del file.
 -   Aggiunta o rimozione di unità o supporti di archiviazione.
 -   Creazione o disabilitazione di una cartella condivisa.
 -   Modifica dell'elenco di immagini di sistema.
 
-Un'applicazione invia una notifica alla shell chiamando [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) con i dettagli delle modifiche apportate. La shell può quindi aggiornare l'immagine dello spazio dei nomi per riflettere accuratamente il nuovo stato.
+Un'applicazione invia una notifica alla shell chiamando [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) con i dettagli delle modifiche. Shell può quindi aggiornare l'immagine dello spazio dei nomi in modo da riflettere in modo accurato il nuovo stato.
 
 ## <a name="simple-example-of-managing-files-with-shfileoperation"></a>Esempio semplice di gestione dei file con SHFileOperation
 
-Nell'applicazione console di esempio seguente viene illustrato l'uso di [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) per copiare i file da una directory a un'altra. Le directory di origine e di destinazione, C: \\ My \_ docs e c: \\ My \_ Docs2, sono hardcoded nell'applicazione per semplicità.
+L'applicazione console di esempio seguente illustra l'uso di [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) per copiare file da una directory a un'altra. Le directory di origine e di destinazione, C: My Docs e \\ \_ C: \\ My \_ Docs2, sono hard-coded nell'applicazione per semplicità.
 
 
 ```C++
@@ -229,17 +303,17 @@ int main(void)
 
 
 
-L'applicazione recupera innanzitutto un puntatore all'interfaccia [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) del desktop. Recupera quindi il PIDL della directory di origine passando il percorso completo a [**IShellFolder::P arsedisplayname**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname). Si noti che **IShellFolder::P arsedisplayname** richiede che il percorso della directory sia una stringa Unicode. L'applicazione viene quindi associata alla directory di origine e utilizza l'interfaccia **IShellFolder** per recuperare l'interfaccia [**IEnumIDList**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ienumidlist) di un oggetto enumeratore.
+L'applicazione recupera innanzitutto un puntatore [**all'interfaccia IShellFolder del**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) desktop. Recupera quindi il file PIDL della directory di origine passando il percorso completo a [**IShellFolder::P arseDisplayName**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname). Si noti **che IShellFolder::P arseDisplayName** richiede che il percorso della directory sia una stringa Unicode. L'applicazione esegue quindi il binding alla directory di origine e usa la relativa **interfaccia IShellFolder** per recuperare l'interfaccia [**IEnumIDList**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ienumidlist) di un oggetto enumeratore.
 
-Poiché ogni file nella directory di origine è enumerato, [**IShellFolder:: GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) viene usato per recuperare il nome. \_Viene impostato il flag SHGDN FORPARSING, che fa sì che **IShellFolder:: GetDisplayNameOf** restituisca il percorso completo del file. I percorsi dei file, inclusi i caratteri **null** di terminazione, vengono concatenati in una singola matrice, *szSourceFiles*. Un secondo carattere **null** viene aggiunto al percorso finale per terminare correttamente la matrice.
+Quando ogni file nella directory di origine viene enumerato, viene usato [**IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) per recuperarne il nome. Il flag SHGDN FORPARSING è impostato \_ e **IShellFolder::GetDisplayNameOf** restituisce il percorso completo del file. I percorsi di file, inclusi i caratteri **NULL** di terminazione, vengono concatenati in una singola matrice, *szSourceFiles*. Un secondo **carattere NULL** viene aggiunto al percorso finale per terminare correttamente la matrice.
 
-Al termine dell'enumerazione, l'applicazione assegna valori a una struttura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) . Si noti che la matrice assegnata a **PTO** per specificare la destinazione deve anche essere terminata da un **valore null** doppio. In questo caso, viene semplicemente incluso nella stringa assegnata a **PTO**. Poiché si tratta di un'applicazione console, i \_ flag FOF Silent, FOF \_ noconfirmation e FOF \_ NOCONFIRMMKDIR sono impostati in modo da non visualizzare le finestre di dialogo eventualmente visualizzate. Dopo la restituzione di [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) , viene chiamato [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) per notificare la shell della modifica. Quindi, l'applicazione esegue la normale pulizia e restituisce il risultato.
+Al termine dell'enumerazione, l'applicazione assegna valori a [**una struttura SHFILEOPSTRUCT.**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) Si noti che anche la matrice assegnata a **pTo** per specificare la destinazione deve essere terminata da un valore **NULL doppio.** In questo caso, viene semplicemente incluso nella stringa assegnata a **pTo**. Poiché si tratta di un'applicazione console, i flag FOF \_ SILENT, FOF \_ NOCONFIRMATION e FOF NOCONFIRMMKDIR sono impostati per eliminare eventuali finestre di dialogo che potrebbero \_ essere visualizzate. Al [**termine di SHFileOperation,**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) [**viene chiamato SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) per notificare la modifica alla shell. L'applicazione esegue quindi la pulizia consueta e restituisce .
 
 ## <a name="adding-files-to-the-shells-list-of-recent-documents"></a>Aggiunta di file all'elenco di documenti recenti della shell
 
-La shell gestisce un elenco di documenti aggiunti o modificati di recente per ogni utente. L'utente può visualizzare un elenco di collegamenti a questi file scegliendo documenti dal menu Start. Come per i documenti, ogni utente dispone di una directory file system per il collegamento dei collegamenti effettivi. Per recuperare il PIDL della directory recente dell'utente corrente, l'applicazione può chiamare [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) con CSIDL \_ recente oppure chiamare [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) per recuperare il percorso.
+Shell gestisce un elenco di documenti aggiunti o modificati di recente per ogni utente. L'utente può visualizzare un elenco di collegamenti a questi file facendo clic su Documenti nel menu Start. Come per Documenti, ogni utente ha una directory file system per contenere i collegamenti effettivi. Per recuperare il FILE PIDL della directory Recent dell'utente corrente, l'applicazione può chiamare [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) con CSIDL \_ RECENT oppure chiamare [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) per recuperarne il percorso.
 
-L'applicazione può enumerare il contenuto della cartella recente usando le tecniche descritte in precedenza in questo documento. Tuttavia, un'applicazione non deve modificare il contenuto della cartella come se si trattasse di una normale cartella file system. In tal caso, l'elenco dei documenti recenti della shell non verrà aggiornato correttamente e le modifiche non verranno riflesse nel menu Start. Per aggiungere un collegamento a un documento alla cartella recente di un utente, l'applicazione può invece chiamare [**funzione SHAddToRecentDocs**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs). La Shell consente di aggiungere un collegamento alla cartella file system appropriata, nonché di aggiornare l'elenco dei documenti recenti e il menu Start. È anche possibile usare questa funzione per cancellare la cartella.
+L'applicazione può enumerare il contenuto della cartella Recenti usando le tecniche descritte in precedenza in questo documento. Tuttavia, un'applicazione non deve modificare il contenuto della cartella come se fosse una normale file system cartella. In questo caso, l'elenco di documenti recenti della Shell non verrà aggiornato correttamente e le modifiche non verranno riflesse nel menu Start. Al contrario, per aggiungere un collegamento di documento alla cartella Recenti di un utente, l'applicazione può chiamare [**SHAddToRecentDocs**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs). Shell aggiungerà un collegamento alla cartella file system appropriata, oltre ad aggiornare l'elenco dei documenti recenti e il menu Start. È anche possibile usare questa funzione per cancellare la cartella.
 
  
 

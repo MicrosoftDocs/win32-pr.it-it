@@ -1,54 +1,54 @@
 ---
 description: I file di descrizione della libreria sono file XML che definiscono le librerie.
 ms.assetid: 12F6E6AE-2776-408c-B9AC-E885BE93C27F
-title: Schema Descrizione libreria
+title: Schema di descrizione della libreria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5bebbd7ed168cd977530ccfeb0b319c33142687
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 0a6da99820e81c55e5d705c72d4d0509ea271a4a
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104981063"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581739"
 ---
-# <a name="library-description-schema"></a>Schema Descrizione libreria
+# <a name="library-description-schema"></a>Schema di descrizione della libreria
 
-I file di descrizione della libreria sono file XML che definiscono le librerie. Le librerie aggregano gli elementi da percorsi di archiviazione locali e remoti in una singola visualizzazione in Esplora risorse. I file di descrizione della libreria seguono lo schema della descrizione della libreria e vengono salvati come \* file con estensione library-ms.
+I file di descrizione della libreria sono file XML che definiscono le librerie. Le librerie aggregano gli elementi da posizioni di archiviazione locali e remote in un'unica visualizzazione in Windows Explorer. I file di descrizione della libreria seguono lo schema di descrizione della libreria e vengono salvati \* come file con estensione library-ms.
 
 In questo argomento sono incluse le sezioni seguenti:
 
 -   [Panoramica dello schema di descrizione della libreria](#overview-of-the-library-description-schema)
 -   [Controllo delle versioni dello spazio dei nomi](#namespace-versioning)
--   [Esempio di un file di descrizione della libreria](#example-of-a-library-description-file)
+-   [Esempio di file di descrizione della libreria](#example-of-a-library-description-file)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="overview-of-the-library-description-schema"></a>Panoramica dello schema di descrizione della libreria
 
-Le librerie contengono file archiviati in uno o più percorsi di archiviazione. Le librerie non archiviano effettivamente questi file; al contrario, monitorano le cartelle che contengono i file e consentono agli utenti di accedere ai file e disporli in modi diversi. Ad esempio, un utente può avere file musicali in più cartelle in un disco rigido locale e anche in un disco rigido esterno. Utilizzando la **libreria musicale**, l'utente può accedere a tutti i file contemporaneamente e ordinarli tutti in base al nome dell'artista o al titolo dell'album come singolo gruppo.
+Le librerie contengono file archiviati in una o più posizioni di archiviazione. Le librerie non archiviano effettivamente questi file. ma monitorano le cartelle che contengono i file e consentono agli utenti di accedere ai file e di disporli in modi diversi. Ad esempio, un utente può avere file musicali in più cartelle in un disco rigido locale e anche in un disco rigido esterno. Usando la **Musica,** l'utente può accedere a tutti questi file contemporaneamente e ordinarli tutti in base al nome dell'artista o al titolo dell'album come singolo gruppo.
 
-Lo schema di descrizione della libreria è costituito da tre parti principali, descritte nella tabella seguente:
+Lo schema Descrizione libreria è costituito da tre parti principali, descritte nella tabella seguente:
 
 
 
-|                             |                                                                                                                                                            |
+| Parte                        | Descrizione                                                                                                                                                |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Informazioni generali sulla libreria | Informazioni sulla libreria, ad esempio nome, proprietario, versione, icona, che Esplora risorse può usare quando Visualizza la libreria a un utente.                   |
-| Proprietà libreria          | Una o più proprietà che descrivono la libreria. Queste proprietà personalizzate sono specifiche della libreria.                                                     |
-| Percorsi di libreria           | Uno o più connettori di ricerca che identificano i percorsi di archiviazione da includere nella libreria. Ognuno di questi percorsi può avere anche un set univoco di proprietà. |
+| Informazioni generali sulla libreria | Informazioni sulla libreria, ad esempio nome, proprietario, versione, icona, che Windows Explorer può usare quando visualizza la libreria a un utente.                   |
+| Proprietà della libreria          | Una o più proprietà che descrivono la libreria. Queste proprietà personalizzate sono specifiche della libreria.                                                     |
+| Percorsi delle librerie           | Uno o più connettori di ricerca che identificano i percorsi di archiviazione da includere nella libreria. Ognuna di queste posizioni può anche avere un set univoco di proprietà. |
 
 
 
  
 
-I file di libreria in Windows 7 sono archiviati nella cartella nota FOLDERID \_ Libraries. Per impostazione predefinita, la \_ cartella FOLDERID Libraries si trova in% UserProfile% \\ AppData \\ roaming \\ Microsoft \\ Windows \\ Libraries.
+I file di libreria Windows 7 vengono archiviati nella cartella nota FOLDERID \_ Libraries. Per impostazione predefinita, la cartella FOLDERID \_ Libraries si trova in %USERPROFILE% \\ AppData Roaming Microsoft Windows \\ \\ \\ \\ Libraries.
 
 ## <a name="namespace-versioning"></a>Controllo delle versioni dello spazio dei nomi
 
-Le versioni del formato di file della descrizione della libreria ( \* . Library-MS) vengono rilevate modificando lo spazio dei nomi. Per Windows 7, il formato del file è lo spazio dei nomi predefinito seguente: https://schemas.microsoft.com/windows/2009/library .
+Le versioni del formato di file di descrizione della libreria ( \* .library-ms) vengono rilevate modificando lo spazio dei nomi . Per Windows 7, il formato di file ha lo spazio dei nomi predefinito seguente: https://schemas.microsoft.com/windows/2009/library .
 
-Le versioni del contenuto della libreria, tuttavia, vengono rilevate usando l' [<version>](schema-library-version.md) elemento in un file di descrizione della libreria specifico.
+Le versioni del contenuto della libreria, tuttavia, vengono rilevate usando [<version>](schema-library-version.md) l'elemento in un file di descrizione della libreria specifico.
 
-## <a name="example-of-a-library-description-file"></a>Esempio di un file di descrizione della libreria
+## <a name="example-of-a-library-description-file"></a>Esempio di file di descrizione della libreria
 
 Di seguito è riportato un esempio di un file di descrizione della libreria che definisce una raccolta per i file di documento.
 
@@ -103,13 +103,13 @@ Di seguito è riportato un esempio di un file di descrizione della libreria che 
 [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md)
 </dt> <dt>
 
-[Elemento Name (schema della libreria)](schema-library-name.md)
+[Elemento name (schema della libreria)](schema-library-name.md)
 </dt> <dt>
 
 [Elemento ownerSID (schema della libreria)](schema-library-ownersid.md)
 </dt> <dt>
 
-[Elemento Property (schema della libreria)](schema-library-property.md)
+[Elemento property (schema della libreria)](schema-library-property.md)
 </dt> <dt>
 
 [Elemento propertyStore (schema della libreria)](schema-library-propertystore.md)
@@ -124,10 +124,10 @@ Di seguito è riportato un esempio di un file di descrizione della libreria che 
 [Elemento templateInfo (schema della libreria)](schema-library-templateinfo.md)
 </dt> <dt>
 
-[Elemento Version (schema della libreria)](schema-library-version.md)
+[Elemento version (schema della libreria)](schema-library-version.md)
 </dt> <dt>
 
-[Cerca nello schema di descrizione del connettore](../search/search-sconn-desc-schema-entry.md)
+[Schema di descrizione del connettore di ricerca](../search/search-sconn-desc-schema-entry.md)
 </dt> </dl>
 
  

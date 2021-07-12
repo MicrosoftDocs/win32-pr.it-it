@@ -1,19 +1,19 @@
 ---
-description: L'argomento Syntax consente di identificare la sintassi della query. I valori consentiti sono la sintassi di query naturale (NQS) o la sintassi di query avanzata (AQS). AQS è il valore predefinito e viene sempre considerato come analizzato e supportato.
+description: L'argomento della sintassi consente di identificare la sintassi della query. I valori consentiti sono Natural Query Syntax (NQS) o Advanced Query Syntax (AQS). AQS è l'impostazione predefinita e si presuppone sempre che sia analizzato e supportato.
 ms.assetid: cd439a29-4908-47af-b3f7-3794bd65db7c
-title: Argomento della sintassi (shell di Windows)
+title: Argomento SYNTAX (Windows Shell)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5957dca03434d7ad2b469adfd1634a80b0155492
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cb7607718d46677284ac09eca005bb95be3525e
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995032"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581789"
 ---
-# <a name="syntax-argument-the-windows-shell"></a>Argomento della sintassi (shell di Windows)
+# <a name="syntax-argument-the-windows-shell"></a>Argomento SYNTAX (Windows Shell)
 
-L' `syntax` argomento consente di identificare la sintassi della query. I valori consentiti sono la sintassi di query naturale (NQS) o la sintassi di query avanzata (AQS). AQS è il valore predefinito e viene sempre considerato come analizzato e supportato.
+`syntax`L'argomento consente di identificare la sintassi della query. I valori consentiti sono Natural Query Syntax (NQS) o Advanced Query Syntax (AQS). AQS è l'impostazione predefinita e si presuppone sempre che sia analizzato e supportato.
 
 ## <a name="example"></a>Esempio
 
@@ -21,13 +21,13 @@ L' `syntax` argomento consente di identificare la sintassi della query. I valori
 search:query=from:paolo&syntax=AQS
 ```
 
-### <a name="argument-information"></a>Informazioni argomento
+### <a name="argument-information"></a>Informazioni sugli argomenti
 
 
 
-|                          |                                         |
-|--------------------------|-----------------------------------------|
-| Sistema operativo minimo | Windows Vista con Service Pack 1 (SP1) |
+|                              | Valore                                   |
+|------------------------------|-----------------------------------------|
+| **Sistema operativo minimo** | Windows Vista con Service Pack 1 (SP1) |
 
 
 

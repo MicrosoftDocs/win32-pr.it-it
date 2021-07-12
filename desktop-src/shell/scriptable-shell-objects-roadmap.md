@@ -1,6 +1,6 @@
 ---
-description: La shell di Windows fornisce un potente set di oggetti di automazione che consentono di programmare la shell con Microsoft Visual Basic e linguaggi di scripting, ad esempio Microsoft JScript (compatibile con la specifica del linguaggio ECMA 262) e Microsoft Visual Basic Scripting Edition (VBScript). È possibile usare questi oggetti per accedere a molte delle funzionalità e delle finestre di dialogo della shell. Ad esempio, è possibile accedere alla file system, avviare programmi e modificare le impostazioni di sistema.
-title: Oggetti Shell tramite script
+description: Windows Shell offre un potente set di oggetti di automazione che consentono di programmare la shell con Microsoft Visual Basic e linguaggi di scripting come Microsoft JScript (compatibile con la specifica del linguaggio ECMA 262) e Microsoft Visual Basic Scripting Edition (VBScript). È possibile usare questi oggetti per accedere a molte delle funzionalità e delle finestre di dialogo della shell. Ad esempio, è possibile accedere al file system, avviare programmi e modificare le impostazioni di sistema.
+title: Oggetti della shell gestibili da script
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 09455fad-a769-42ef-83ba-b745ac819bf3
@@ -9,34 +9,34 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 4c39e7e58a9715598056fb74aa154ed8a850f523
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8685b44d00d3f48e8de2a567218ef08c1cb5070
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980466"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581779"
 ---
-# <a name="scriptable-shell-objects"></a>Oggetti Shell tramite script
+# <a name="scriptable-shell-objects"></a>Oggetti della shell gestibili da script
 
-La shell di Windows fornisce un potente set di oggetti di automazione che consentono di programmare la shell con Microsoft Visual Basic e linguaggi di scripting, ad esempio Microsoft JScript (compatibile con la specifica del linguaggio ECMA 262) e Microsoft Visual Basic Scripting Edition (VBScript). È possibile usare questi oggetti per accedere a molte delle funzionalità e delle finestre di dialogo della shell. Ad esempio, è possibile accedere alla file system, avviare programmi e modificare le impostazioni di sistema.
+Windows Shell offre un potente set di oggetti di automazione che consentono di programmare la shell con Microsoft Visual Basic e linguaggi di scripting come Microsoft JScript (compatibile con la specifica del linguaggio ECMA 262) e Microsoft Visual Basic Scripting Edition (VBScript). È possibile usare questi oggetti per accedere a molte delle funzionalità e delle finestre di dialogo della shell. Ad esempio, è possibile accedere al file system, avviare programmi e modificare le impostazioni di sistema.
 
-In questa sezione vengono introdotti gli oggetti della shell di scripting.
+Questa sezione presenta gli oggetti shell gestibili da script.
 
 -   [Versioni della shell](#shell-versions)
--   [Creazione di istanze di oggetti Shell](#instantiating-shell-objects)
+-   [Creazione di istanze di oggetti shell](#instantiating-shell-objects)
     -   [Associazione tardiva](#late-binding)
-    -   [Elemento oggetto HTML](#html-object-element)
--   [Oggetto Shell](#shell-object)
+    -   [Elemento OBJECT HTML](#html-object-element)
+-   [Oggetto shell](#shell-object)
     -   [Sicurezza](#security)
--   [Oggetti Folder](#folder-objects)
+-   [Oggetti cartella](#folder-objects)
 
 ## <a name="shell-versions"></a>Versioni della shell
 
-Molti degli oggetti della shell sono diventati disponibili nella [versione 4,71](versions.md) della shell. Altre sono disponibili nella versione 5,00 e successive. La versione 5,00 è diventata disponibile con Windows 2000. La tabella seguente elenca ogni oggetto Shell sotto la versione della shell in cui l'oggetto è diventato disponibile.
+Molti degli oggetti shell sono diventati disponibili [nella versione 4.71](versions.md) della shell. Altri sono disponibili nella versione 5.00 e successive. La versione 5.00 è diventata disponibile con Windows 2000. La tabella seguente elenca ogni oggetto Shell nella versione della shell in cui l'oggetto è diventato disponibile.
 
 
 
-| Versione 4,71                                            | Versione 5,00                                          |
+| Versione 4.71                                            | Versione 5.00                                          |
 |---------------------------------------------------------|-------------------------------------------------------|
 | [**Cartella**](folder.md)                                | [**DIDiskQuotaUser**](didiskquotauser-object.md)     |
 | [**FolderItemVerb**](folderitemverb.md)                | [**DiskQuotaControl**](diskquotacontrol-object.md)   |
@@ -54,16 +54,16 @@ Molti degli oggetti della shell sono diventati disponibili nella [versione 4,71]
 
  
 
-## <a name="instantiating-shell-objects"></a>Creazione di istanze di oggetti Shell
+## <a name="instantiating-shell-objects"></a>Creazione di istanze di oggetti shell
 
-Per creare un'istanza degli oggetti della shell in Visual Basic applicazioni con associazione anticipata, aggiungere i riferimenti alle librerie seguenti nel progetto:
+Per creare un'istanza degli oggetti shell Visual Basic applicazioni con associazione anticipata, aggiungere riferimenti alle librerie seguenti nel progetto:
 
 -   Microsoft Internet Controls (SHDocVw)
 -   Controlli e automazione della shell Microsoft (Shell32)
 
 ### <a name="late-binding"></a>Associazione tardiva
 
-È anche possibile creare un'istanza di molti oggetti della shell con associazione tardiva. Questo approccio funziona nelle applicazioni Visual Basic e nello script. Nell'esempio seguente viene illustrato come creare un'istanza dell'oggetto [**Shell**](shell.md) in JScript.
+È anche possibile creare un'istanza di molti oggetti shell con associazione tardiva. Questo approccio funziona nelle applicazioni Visual Basic e nello script. L'esempio seguente illustra come creare un'istanza [**dell'oggetto Shell**](shell.md) in JScript.
 
 
 ```
@@ -81,7 +81,7 @@ Per creare un'istanza degli oggetti della shell in Visual Basic applicazioni con
 
 
 
-Nell'esempio seguente viene illustrato come creare un'istanza dell'oggetto [**Folder**](folder.md) in VBScript.
+Nell'esempio seguente viene illustrato come creare un'istanza [**dell'oggetto Folder**](folder.md) in VBScript.
 
 
 ```
@@ -102,7 +102,7 @@ Nell'esempio seguente viene illustrato come creare un'istanza dell'oggetto [**Fo
 
 
 
-Nell'esempio precedente, *SDIR* è il percorso dell'oggetto [**Folder**](folder.md) . Si noti che i valori di enumerazione [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) non sono disponibili nello script.
+Nell'esempio precedente *sDir è* il percorso [**dell'oggetto**](folder.md) Folder. Si noti che [**i valori di enumerazione ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) non sono disponibili nello script.
 
 Il ProgID per ogni oggetto Shell è illustrato nella tabella seguente.
 
@@ -110,33 +110,33 @@ Il ProgID per ogni oggetto Shell è illustrato nella tabella seguente.
 
 | Oggetto                                                  | ProgID                                                                                  |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**DIDiskQuotaUser**](didiskquotauser-object.md)       | Microsoft. DiskQuota. 1                                                                   |
-| [**DiskQuotaControl**](diskquotacontrol-object.md)     | Non è possibile eseguire l'associazione tardiva                                                                        |
-| [**Cartella**](folder.md)                                | Shell. \_Applicazione shell. Namespace ("...")                                               |
-| [**Cartella2**](folder2-object.md)                       | Shell. \_Applicazione shell. Namespace ("...")                                               |
-| [**FolderItem**](folderitem.md)                        | Shell. \_Applicazione shell. Namespace ("..."). Self o Folder. Items. Item o Folder. ParseName |
-| [**FolderItems**](folderitems.md)                      | Folder. Items                                                                            |
-| [**FolderItems2**](folderitems2-object.md)             | Folder. Items                                                                            |
-| [**FolderItemVerb**](folderitemverb.md)                | Shell. NameSpace ("..."). Self. Verbs. Item ()                                                |
-| [**FolderItemVerbs**](folderitemverbs.md)              | FolderItem. Verbs o Shell. NameSpace ("..."). Verbi autonomi                                   |
-| [**IShellDispatch2**](ishelldispatch2-object.md)       | Shell. \_Applicazione shell                                                                |
-| [**IShellLinkDual2**](ishelllinkdual2-object.md)       | Shell. NameSpace ("..."). Self. GetLink o Shell. NameSpace ("..."). Elementi (). GetLink           |
-| [**Shell**](shell.md)                                  | Shell. \_Applicazione shell                                                                |
-| [**ShellFolderItem**](shellfolderitem-object.md)       | Shell. NameSpace ("..."). Self o Shell. NameSpace ("..."). Elementi ()                           |
-| [**ShellFolderView**](shellfolderview.md)              | Non è possibile eseguire l'associazione tardiva                                                                        |
-| [**ShellFolderViewOC**](shellfolderviewoc-object.md)   | Non è possibile eseguire l'associazione tardiva                                                                        |
-| [**ShellLinkObject**](shelllinkobject-object.md)       | Shell. NameSpace ("..."). Self. GetLink o Shell. NameSpace ("..."). Elementi (). GetLink           |
-| [**ShellUIHelper**](shelluihelper.md)                  | Non è possibile eseguire l'associazione tardiva                                                                        |
-| [**ShellWindows**](shellwindows.md)                    | Shell. Shell \_ Windows o shellwindows. \_ NewEnum                                          |
-| [**WebViewFolderContents**](../lwef/webviewfoldercontents.md) | Non è possibile eseguire l'associazione tardiva                                                                        |
+| [**DIDiskQuotaUser**](didiskquotauser-object.md)       | Microsoft.DiskQuota.1                                                                   |
+| [**DiskQuotaControl**](diskquotacontrol-object.md)     | Impossibile eseguire l'associazione tardiva                                                                        |
+| [**Cartella**](folder.md)                                | Guscio. Shell \_ Application.NameSpace("...")                                               |
+| [**Cartella2**](folder2-object.md)                       | Guscio. Shell \_ Application.NameSpace("...")                                               |
+| [**FolderItem**](folderitem.md)                        | Guscio. Shell \_ Application.NameSpace("..."). Self o Folder.Items.Item o Folder.ParseName |
+| [**FolderItems**](folderitems.md)                      | Folder.Items                                                                            |
+| [**FolderItems2**](folderitems2-object.md)             | Folder.Items                                                                            |
+| [**FolderItemVerb**](folderitemverb.md)                | Shell.NameSpace("..."). Self.Verbs.Item()                                                |
+| [**FolderItemVerbs**](folderitemverbs.md)              | FolderItem.Verbs o Shell.NameSpace("..."). Self.Verbs                                   |
+| [**IShellDispatch2**](ishelldispatch2-object.md)       | Guscio. Applicazione \_ shell                                                                |
+| [**IShellLinkDual2**](ishelllinkdual2-object.md)       | Shell.NameSpace("..."). Self.GetLink o Shell.NameSpace("..."). Items(). GetLink           |
+| [**Shell**](shell.md)                                  | Guscio. Applicazione \_ shell                                                                |
+| [**ShellFolderItem**](shellfolderitem-object.md)       | Shell.NameSpace("..."). Self o Shell.NameSpace("..."). Items()                           |
+| [**ShellFolderView**](shellfolderview.md)              | Impossibile eseguire l'associazione tardiva                                                                        |
+| [**ShellFolderViewOC**](shellfolderviewoc-object.md)   | Impossibile eseguire l'associazione tardiva                                                                        |
+| [**ShellLinkObject**](shelllinkobject-object.md)       | Shell.NameSpace("..."). Self.GetLink o Shell.NameSpace("..."). Items(). GetLink           |
+| [**ShellUIHelper**](shelluihelper.md)                  | Impossibile eseguire l'associazione tardiva                                                                        |
+| [**ShellWindows**](shellwindows.md)                    | Guscio. Shell \_ Windows o ShellWindows. \_ NewEnum                                          |
+| [**WebViewFolderContents**](../lwef/webviewfoldercontents.md) | Impossibile eseguire l'associazione tardiva                                                                        |
 
 
 
  
 
-### <a name="html-object-element"></a>Elemento oggetto HTML
+### <a name="html-object-element"></a>Elemento OBJECT HTML
 
-È anche possibile usare l'elemento [**oggetto**](https://msdn.microsoft.com/library/ms535859(v=VS.85).aspx) per creare un'istanza di oggetti Shell in una pagina HTML. A tale scopo, impostare l'attributo **ID** dell'elemento **oggetto** sul nome della variabile che verrà usato negli script e identificare l'oggetto usando il numero registrato (ClassID). Il codice HTML seguente crea un'istanza dell'oggetto [**ShellFolderItem**](shellfolderitem-object.md) usando l'elemento **Object** .
+È anche possibile usare [**l'elemento OBJECT**](https://msdn.microsoft.com/library/ms535859(v=VS.85).aspx) per creare un'istanza degli oggetti shell in una pagina HTML. A tale scopo, impostare l'attributo **ID** dell'elemento **OBJECT** sul nome della variabile che verrà utilizzata negli script e identificare l'oggetto usando il relativo numero registrato (CLASSID). Il codice HTML seguente crea un'istanza [**dell'oggetto ShellFolderItem**](shellfolderitem-object.md) usando l'elemento **OBJECT.**
 
 
 ```
@@ -148,15 +148,15 @@ Il ProgID per ogni oggetto Shell è illustrato nella tabella seguente.
 
 
 
-Nella tabella seguente sono elencati tutti gli oggetti Shell e i rispettivi CLASSId.
+La tabella seguente elenca ogni oggetto Shell e il rispettivo CLASSID.
 
 
 
-|                                                         |                                      |
-|---------------------------------------------------------|--------------------------------------|
+| Oggetto shell                                           | Classid                              |
+|--------------------------------------------------------|--------------------------------------|
 | [**DIDiskQuotaUser**](didiskquotauser-object.md)       | 7988B571-EC89-11cf-9C00-00AA00A14F56 |
 | [**DiskQuotaControl**](diskquotacontrol-object.md)     | 7988B571-EC89-11cf-9C00-00AA00A14F56 |
-| [**Cartella**](folder.md)                                | BBCBDE60-C3FF-11CE-8350-444553540000 |
+| [**Cartella**](folder.md)                                | TBBDE60-C3FF-11CE-8350-444553540000 |
 | [**Cartella2**](folder2-object.md)                       | f0d2d8ef-3890-11d2-bf8b-00c04fb93661 |
 | [**FolderItem**](folderitem.md)                        | 744129E0-CBE5-11CE-8350-444553540000 |
 | [**FolderItems**](folderitems.md)                      | 744129E0-CBE5-11CE-8350-444553540000 |
@@ -178,16 +178,16 @@ Nella tabella seguente sono elencati tutti gli oggetti Shell e i rispettivi CLAS
 
  
 
-## <a name="shell-object"></a>Oggetto Shell
+## <a name="shell-object"></a>Oggetto shell
 
-L'oggetto [**Shell**](shell.md) rappresenta gli oggetti nella shell. È possibile utilizzare i metodi esposti dall'oggetto Shell per:
+[**L'oggetto Shell**](shell.md) rappresenta gli oggetti nella shell. È possibile usare i metodi esposti dall'oggetto Shell per:
 
 -   Aprire, esplorare e cercare le cartelle.
--   Ridurre a icona, ripristinare, Cascade o affiancare finestre aperte.
--   Avviare le applicazioni del pannello di controllo.
--   Finestre di dialogo del sistema di visualizzazione.
+-   Ridurre a icona, ripristinare, sovrapporre o affiancare le finestre aperte.
+-   Avviare Pannello di controllo applicazioni.
+-   Visualizzare le finestre di dialogo di sistema.
 
-È probabile che gli utenti abbiano familiarità con i comandi a cui accedono dal menu **Start** e dal menu di scelta rapida della barra delle applicazioni. Quando gli utenti fanno clic con il pulsante destro del mouse sulla barra delle applicazioni viene visualizzato il menu di scelta rapida La seguente applicazione HTML (HTA) produce una pagina iniziale con pulsanti che implementano molti dei metodi dell'oggetto [**Shell**](shell.md) . Alcuni di questi metodi implementano funzionalità dal menu **Start** e dal menu di scelta rapida della barra delle applicazioni.
+Gli utenti hanno probabilmente maggiore familiarità con i comandi a cui accedono dal menu **Start** e dal menu di scelta rapida della barra delle applicazioni. Il menu di scelta rapida della barra delle applicazioni viene visualizzato quando gli utenti fa clic con il pulsante destro del mouse sulla barra delle applicazioni. L'applicazione HTML (HTA) seguente genera una pagina iniziale con pulsanti che implementano molti [**dei**](shell.md) metodi dell'oggetto Shell. Alcuni di questi metodi implementano funzionalità nel menu **Start** e nel menu di scelta rapida della barra delle applicazioni.
 
 
 ```
@@ -263,21 +263,21 @@ L'oggetto [**Shell**](shell.md) rappresenta gli oggetti nella shell. È possibil
 
 ### <a name="security"></a>Sicurezza
 
-Come applicazione, una HTA viene eseguita con un modello di sicurezza diverso rispetto a una pagina Web. Per interagire con una pagina Web che implementa la funzionalità degli oggetti della shell, gli utenti devono abilitare i **controlli ActiveX Initialize e script non contrassegnati come opzione Safe** per l'area di sicurezza in cui stanno visualizzando la pagina.
+Come applicazione, un'istanza HTA viene eseguita con un modello di sicurezza diverso rispetto a una pagina Web. **Per interagire con** una pagina Web che implementa la funzionalità degli oggetti shell, gli utenti devono abilitare l'opzione Inizializza e script per i controlli ActiveX non contrassegnati come sicuri per l'area di sicurezza in cui visualizzano la pagina.
 
-## <a name="folder-objects"></a>Oggetti Folder
+## <a name="folder-objects"></a>Oggetti cartella
 
-L'oggetto [**Folder**](folder.md) rappresenta una cartella della shell. È possibile utilizzare i metodi esposti dall'oggetto Folder per:
+[**L'oggetto Folder**](folder.md) rappresenta una cartella shell. È possibile usare i metodi esposti dall'oggetto Folder per:
 
 -   Ottenere informazioni su una cartella.
 -   Creare sottocartelle.
--   Copiare e spostare gli oggetti file nella cartella.
+-   Copiare e spostare gli oggetti file nella cartella .
 
-L'oggetto [**FolderItem**](folderitem.md) rappresenta un elemento in una cartella della shell. Le proprietà consentono di recuperare le informazioni sull'elemento. È possibile usare i metodi esposti da questo oggetto per eseguire i verbi di un elemento o per recuperare informazioni sull'oggetto [**folderitemverbs**](folderitemverbs.md) di un elemento.
+[**L'oggetto FolderItem**](folderitem.md) rappresenta un elemento in una cartella shell. Le relative proprietà consentono di recuperare informazioni sull'elemento. È possibile usare i metodi esposti da questo oggetto per eseguire i verbi di un elemento o per recuperare informazioni sull'oggetto [**FolderItemVerbs di un**](folderitemverbs.md) elemento.
 
-L'oggetto [**FolderItems**](folderitems.md) rappresenta una raccolta di elementi in una cartella della shell. I metodi e le proprietà consentono di recuperare informazioni sulla raccolta.
+[**L'oggetto FolderItems**](folderitems.md) rappresenta una raccolta di elementi in una cartella shell. I relativi metodi e proprietà consentono di recuperare informazioni sulla raccolta.
 
-Nell'esempio di Visual Basic seguente viene illustrata la relazione tra diversi oggetti cartella e il modo in cui possono essere utilizzati insieme. Quando l'utente fa clic sul pulsante di comando denominato **cmdGetPath**, il programma visualizza una finestra di dialogo che consente all'utente di selezionare una cartella da **computer locale**, dove ssfDRIVES è il valore di enumerazione [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) per **computer locale**. Quando l'utente sceglie una cartella, il percorso della cartella viene visualizzato nella casella di testo denominata **txtPath**.
+Nell'Visual Basic seguente viene illustrata la relazione tra diversi oggetti cartella e il modo in cui possono essere usati insieme. Quando l'utente fa clic sul pulsante di comando **denominato cmdGetPath**, il programma visualizza una finestra di dialogo che consente all'utente di selezionare una cartella da Computer locale , **dove** ssfDRIVES è il valore di enumerazione [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) per **Computer locale**. Quando l'utente sceglie una cartella, il percorso della cartella viene visualizzato nella casella di testo denominata **txtPath**.
 
 
 ```
@@ -319,7 +319,7 @@ In VBScript questa funzione è leggermente diversa perché i valori di enumerazi
 
 
 
-Nell'esempio JScript seguente, che è una traduzione diretta dell'esempio VBScript precedente, si noti come vengono [**usate le parentesi**](folder-items.md) vuote ' ()' per richiamare i metodi [**Items e Item**](folderitems-item.md) .
+Nell'esempio JScript seguente, che è una traduzione diretta dell'esempio di VBScript precedente, si noti come le parentesi vuote '()' vengono usate per richiamare i metodi [**Items**](folder-items.md) [**e Item.**](folderitems-item.md)
 
 
 ```

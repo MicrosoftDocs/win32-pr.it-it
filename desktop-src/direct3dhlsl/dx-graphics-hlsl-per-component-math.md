@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2c8c9eeea1072c53915588ac0099998e76c0452a
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 5cd065e415aafffa59dd6c31d2b9aa4f4505021d
+ms.sourcegitcommit: 7c7a05f65d2cf1ba2dadf05f63ae91a048083946
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119596"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113589588"
 ---
 # <a name="per-component-math-operations"></a>Per-Component operazioni matematiche
 
 Con HLSL è possibile programmare shader a livello di algoritmo. Per comprendere il linguaggio, è necessario sapere come dichiarare variabili e funzioni, usare funzioni intrinseche, definire tipi di dati personalizzati e usare la semantica per connettere argomenti shader ad altri shader e alla pipeline.
 
-Dopo aver appreso come creare shader in HLSL, è necessario acquisire informazioni sulle chiamate API in modo da poter compilare uno shader per hardware specifico, inizializzare le costanti dello shader e inizializzare altri stati della pipeline, se necessario.
+Dopo aver appreso come creare shader in HLSL, è necessario conoscere le chiamate API in modo da poter compilare uno shader per hardware specifico, inizializzare le costanti dello shader e inizializzare altri stati della pipeline, se necessario.
 
 -   [Tipo di vettore](#the-vector-type)
 -   [Tipo di matrice](#the-matrix-type)
@@ -71,7 +71,7 @@ vector <double, 4> dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 Il tipo di vettore usa parentesi angolari per specificare il tipo e il numero di componenti.
 
-I vettori contengono fino a quattro componenti, ognuno dei quali è accessibile usando uno dei due set di denominazione seguenti:
+I vettori contengono fino a quattro componenti, ognuno dei quali è accessibile usando uno dei due set di denominazione:
 
 -   Posizione impostata: x,y,z,w
 -   Set di colori: r,g,b,a
@@ -210,7 +210,7 @@ matrix <float, 2, 2> fMatrix = { 0.0f, 0.1, // row 1
 
 
 
-Il tipo matrice usa le parentesi angolari per specificare il tipo, il numero di righe e il numero di colonne. In questo esempio viene creata una matrice a virgola mobile, con due righe e due colonne. È possibile usare qualsiasi tipo di dati scalare.
+Il tipo matrice usa le parentesi angolari per specificare il tipo, il numero di righe e il numero di colonne. Questo esempio crea una matrice a virgola mobile, con due righe e due colonne. È possibile usare qualsiasi tipo di dati scalare.
 
 Questa dichiarazione definisce una matrice di valori float (numeri a virgola mobile a 32 bit) con due righe e tre colonne:
 
@@ -314,7 +314,7 @@ temp = fMatrix[0] // read the first row
 
 
 
-Come per i vettori, la lettura di più componenti della matrice è detta swizzling. È possibile assegnare più componenti, presupponendo che sia usato solo uno spazio dei nomi. Queste sono tutte assegnazioni valide:
+Come per i vettori, la lettura di più componenti della matrice è detta swizzling. È possibile assegnare più componenti, presupponendo che sia usato un solo spazio dei nomi. Queste sono tutte assegnazioni valide:
 
 
 ```
@@ -367,7 +367,7 @@ tempMatrix._11_m23 = worldMatrix._11_22;
 
 ### <a name="matrix-ordering"></a>Ordinamento delle matrici
 
-L'ordine di tabulazione della matrice per i parametri uniformi è impostato su column-major per impostazione predefinita. Ciò significa che ogni colonna della matrice viene archiviata in un singolo registro costante. D'altra parte, una matrice row-major racchiude ogni riga della matrice in un singolo registro costante. La creazione di una matrice può essere modificata con la **\# direttiva pragmapack \_ matrix** o con la parola chiave **row \_ major** o **column \_ major.**
+Per impostazione predefinita, l'ordine di tabulazione della matrice per i parametri uniformi è impostato su column-major. Ciò significa che ogni colonna della matrice viene archiviata in un unico registro costante. D'altra parte, una matrice row-major racchiude ogni riga della matrice in un unico registro costante. La creazione di una matrice può essere modificata con la **\# direttiva pragmapack \_ matrix** o con la parola chiave **row \_ major** o **column \_ major.**
 
 I dati in una matrice vengono caricati nei registri costanti dello shader prima dell'esecuzione di uno shader. Esistono due opzioni per la modalità di lettura dei dati della matrice: nell'ordine delle righe principali o nell'ordine delle colonne principali. L'ordine delle colonne principali indica che ogni colonna della matrice verrà archiviata in un singolo registro costante e l'ordine delle righe principali indica che ogni riga della matrice verrà archiviata in un unico registro costante. Si tratta di una considerazione importante per il numero di registri costanti usati per una matrice.
 
@@ -428,9 +428,9 @@ Una matrice di colonne principali è strutturata come segue:
         34<br/>
     :::column-end:::
     :::column:::
-        14<br/>
-        24<br/>
-        34<br/>
+        41<br/>
+        42<br/>
+        43<br/>
         44<br/>
     :::column-end:::
 :::row-end:::
@@ -440,13 +440,13 @@ Una matrice di colonne principali è strutturata come segue:
 
  
 
-L'ordinamento delle matrici row-major e column-major determina l'ordine in cui i componenti della matrice vengono letti dagli input dello shader. Dopo che i dati sono stati scritti in registri costanti, l'ordine della matrice non ha alcun effetto sul modo in cui i dati vengono usati o accessibili dal codice dello shader. Inoltre, le matrici dichiarate in un corpo dello shader non vengono suddivise in registri costanti. L'ordine di tabulazione delle righe principale e della colonna non influisce sull'ordine di creazione dei costruttori( che segue sempre l'ordinamento principale delle righe).
+L'ordinamento delle matrici row-major e column-major determina l'ordine in cui i componenti della matrice vengono letti dagli input shader. Dopo che i dati sono stati scritti in registri costanti, l'ordine delle matrici non ha alcun effetto sul modo in cui i dati vengono usati o accessibili dall'interno del codice shader. Inoltre, le matrici dichiarate in un corpo dello shader non vengono imballate in registri costanti. L'ordine di tabulazione delle righe principali e delle colonne non influisce sull'ordine di creazione dei costruttori (che segue sempre l'ordinamento principale delle righe).
 
-L'ordine dei dati in una matrice può essere dichiarato in fase di compilazione oppure il compilatore ordinerà i dati in fase di esecuzione per un uso più efficiente.
+L'ordine dei dati in una matrice può essere dichiarato in fase di compilazione oppure il compilatore ordina i dati in fase di esecuzione per un uso più efficiente.
 
 ## <a name="examples"></a>Esempio
 
-HLSL usa due tipi speciali, un tipo vettore e un tipo matrice per semplificare la programmazione della grafica 2D e 3D. Ognuno di questi tipi contiene più di un componente. un vettore contiene fino a quattro componenti e una matrice contiene fino a 16 componenti. Quando vettori e matrici vengono usati nelle equazioni HLSL standard, i calcoli matematici eseguiti sono progettati per funzionare in base al componente. Ad esempio, HLSL implementa questa moltiplicazione:
+HLSL usa due tipi speciali, un tipo vettore e un tipo matrice per semplificare la programmazione della grafica 2D e 3D. Ognuno di questi tipi contiene più di un componente. un vettore contiene fino a quattro componenti e una matrice contiene fino a 16 componenti. Quando vettori e matrici vengono usati nelle equazioni HLSL standard, la matematica eseguita è progettata per funzionare per componente. Ad esempio, HLSL implementa questa moltiplicazione:
 
 
 ```
@@ -455,7 +455,7 @@ float4 v = a*b;
 
 
 
-come moltiplicazione di quattro componenti. Il risultato è quattro scalari:
+come moltiplicazione a quattro componenti. Il risultato è quattro scalari:
 
 
 ```
@@ -469,9 +469,9 @@ v.w = a.w*b.w;
 
 
 
-Si tratta di quattro moltiplicazioni in cui ogni risultato viene archiviato in un componente separato di v. Questa operazione è detta moltiplicazione di quattro componenti. HLSL usa operazioni matematiche dei componenti che rendono molto efficiente la scrittura di shader.
+Si tratta di quattro moltiplicazioni in cui ogni risultato viene archiviato in un componente separato di v. Si tratta di una moltiplicazione a quattro componenti. HLSL usa componenti matematici che rendono molto efficiente la scrittura di shader.
 
-Questo è molto diverso da una moltiplicazione che viene in genere implementata come prodotto punto che genera un singolo scalare:
+Questo è molto diverso da una moltiplicazione che viene in genere implementata come un prodotto punto che genera un singolo scalare:
 
 
 ```
@@ -491,7 +491,7 @@ float3x3 mat3 = mat1*mat2;
 
 
 
-Il risultato è una moltiplicazione per componente delle due matrici (a differenza di una moltiplicazione standard di matrice 3x3). La moltiplicazione di una matrice per componente restituisce questo primo termine:
+Il risultato è una moltiplicazione per componente delle due matrici (anziché una moltiplicazione standard di matrice 3x3). La moltiplicazione di una matrice per componente restituisce il primo termine:
 
 
 ```
@@ -500,7 +500,7 @@ mat3.m00 = mat1.m00 * mat2._m00;
 
 
 
-Questo è diverso da una moltiplicazione di matrice 3x3 che restituisce questo primo termine:
+Questa operazione è diversa da una moltiplicazione di matrice 3x3 che restituisce questo primo termine:
 
 
 ```
@@ -513,7 +513,7 @@ mat.m00 = mat1._m00 * mat2._m00 +
 
 
 
-Le versioni in overload della funzione intrinseca multiply gestiscono i casi in cui un operando è un vettore e l'altro operando è una matrice. Ad esempio: \* vettore vettore, \* matrice vettoriale, \* vettore matrice e matrice \* matrice. Ad esempio:
+Le versioni di overload della funzione intrinseca multiply gestiscono i casi in cui un operando è un vettore e l'altro operando è una matrice. Ad esempio: \* vettore vettoriale, \* matrice vettoriale, \* vettore matrice e matrice \* matrice. Ad esempio:
 
 
 ```
@@ -531,7 +531,7 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-produce lo stesso risultato di:
+produce lo stesso risultato di :
 
 
 ```
@@ -549,9 +549,9 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-Questo esempio esegue il cast del vettore pos a un vettore di colonna usando il cast (float1x4). La modifica di un vettore tramite cast o lo scambio dell'ordine degli argomenti forniti per la moltiplicazione equivale a trasporre la matrice.
+Questo esempio esegue il cast del vettore pos a un vettore di colonna usando il cast (float1x4). La modifica di un vettore tramite cast o lo scambio dell'ordine degli argomenti forniti per la moltiplicazione equivale a trasposizione della matrice.
 
-La conversione cast automatica fa in modo che le funzioni intrinseche multiply e dot restituiranno gli stessi risultati usati qui:
+La conversione cast automatica fa sì che le funzioni intrinseche multiply e dot restituiranno gli stessi risultati usati qui:
 
 
 ```
