@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Windows7Api. JetConfigureProcessForCrashDump, metodo'
-title: Metodo Windows7Api. JetConfigureProcessForCrashDump (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Metodo Windows7Api.JetConfigureProcessForCrashDump'
+title: Metodo Windows7Api.JetConfigureProcessForCrashDump (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: 'JetConfigureProcessForCrashDump method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows7.Windows7Api.JetConfigureProcessForCrashDump(Microsoft.Isam.Esent.Interop.Windows7.CrashDumpGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7api.jetconfigureprocessforcrashdump(v=EXCHG.10)
@@ -20,23 +20,24 @@ topic_type:
 - kbSyntax
 - apiref
 api_type:
-- Managed
+- DllExport
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
+- esent.interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3291e882ecaac97699385e9e344702ea5414bd68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecabba69d87d64995179de99e5fc4e42a93d0f3e
+ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308481"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113691670"
 ---
-# <a name="windows7apijetconfigureprocessforcrashdump-method"></a>Windows7Api. JetConfigureProcessForCrashDump, metodo
+# <a name="windows7apijetconfigureprocessforcrashdump-method"></a>Metodo Windows7Api.JetConfigureProcessForCrashDump
 
-Opzioni di dump di arresto anomalo per Watson.
+Opzioni di dump di arresto anomalo del sistema per Watson.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,9 +59,9 @@ public static void JetConfigureProcessForCrashDump(
 #### <a name="parameters"></a>Parametri
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. Windows7. CrashDumpGrbit](./crashdumpgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows7.CrashDumpGrbit](./crashdumpgrbit-enumeration.md)  
     
-    Opzioni di dump di arresto anomalo.
+    Opzioni di dump di arresto anomalo del sistema.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,4 +71,4 @@ public static void JetConfigureProcessForCrashDump(
 
 [Membri di Windows7Api](./windows7api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

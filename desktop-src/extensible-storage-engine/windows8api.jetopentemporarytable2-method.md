@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Windows8Api. JetOpenTemporaryTable2, metodo'
-title: Metodo Windows8Api. JetOpenTemporaryTable2 (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: Metodo Windows8Api.JetOpenTemporaryTable2'
+title: Metodo Windows8Api.JetOpenTemporaryTable2 (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JetOpenTemporaryTable2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.JetOpenTemporaryTable2(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.jetopentemporarytable2(v=EXCHG.10)
@@ -20,23 +20,24 @@ topic_type:
 - apiref
 - kbSyntax
 api_type:
-- Managed
+- DllExport
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
+- esent.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5ebb96af18e655c9f9304e2fe7a339663c0206fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb01792608ec542918f4bd8ff6ec06ef27091bb1
+ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308799"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113691730"
 ---
-# <a name="windows8apijetopentemporarytable2-method"></a>Windows8Api. JetOpenTemporaryTable2, metodo
+# <a name="windows8apijetopentemporarytable2-method"></a>Metodo Windows8Api.JetOpenTemporaryTable2
 
-Crea una tabella temporanea con un solo indice. Una tabella temporanea archivia e recupera i record esattamente come una tabella ordinaria creata con JetCreateTableColumnIndex. Tuttavia, le tabelle temporanee sono molto più veloci delle tabelle ordinarie a causa della loro natura volatile. Possono anche essere usati per ordinare ed eseguire molto rapidamente la rimozione dei duplicati nei set di record quando si accede in modo puramente sequenziale. Vedere anche [JetOpenTempTable (JET_SESID, \[ \] , Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), "API. JetOpenTempTable2", [JetOpenTempTable3 (JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md). [JetOpenTemporaryTable (JET_SESID, JET_OPENTEMPORARYTABLE)](./vistaapi.jetopentemporarytable-method.md).
+Crea una tabella temporanea con un singolo indice. Una tabella temporanea archivia e recupera i record esattamente come una normale tabella creata usando JetCreateTableColumnIndex. Tuttavia, le tabelle temporanee sono molto più veloci delle tabelle normali a causa della loro natura volatile. Possono anche essere usati per ordinare ed eseguire molto rapidamente la rimozione dei duplicati nei set di record quando vi si accede in modo puramente sequenziale. Vedere anche [JetOpenTempTable(JET_SESID, \[ \] , Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), "Api.JetOpenTempTable2", [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md). [JetOpenTemporaryTable(JET_SESID, JET_OPENTEMPORARYTABLE)](./vistaapi.jetopentemporarytable-method.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,20 +63,20 @@ public static void JetOpenTemporaryTable2(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - temporarytable  
-    Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-class.md)  
+  - tabella temporanea  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-class.md)  
     
-    Descrizione della tabella temporanea da creare in input. Dopo una chiamata con esito positivo, la struttura contiene l'handle per gli identificatori di tabella e colonna temporanei. Al termine [, usare JetCloseTable (JET_SESID, JET_TABLEID)](./api.jetclosetable-method.md) per liberare la tabella temporanea.
+    Descrizione della tabella temporanea da creare in base all'input. Dopo una chiamata riuscita, la struttura contiene l'handle per le identificazioni di tabella e colonna temporanee. Usare [JetCloseTable(JET_SESID, JET_TABLEID)](./api.jetclosetable-method.md) per liberare la tabella temporanea al termine.
 
 ## <a name="remarks"></a>Commenti
 
-Usare [JetOpenTemporaryTable (JET_SESID, JET_OPENTEMPORARYTABLE)](./vistaapi.jetopentemporarytable-method.md) per le versioni precedenti di esent.
+Usare [JetOpenTemporaryTable(JET_SESID, JET_OPENTEMPORARYTABLE)](./vistaapi.jetopentemporarytable-method.md) per le versioni precedenti di Esent.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -83,6 +84,6 @@ Usare [JetOpenTemporaryTable (JET_SESID, JET_OPENTEMPORARYTABLE)](./vistaapi.jet
 
 [Classe Windows8Api](./windows8api-class.md)
 
-[Membri di Windows8Api](./windows8api-members.md)
+[Membri windows8Api](./windows8api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
