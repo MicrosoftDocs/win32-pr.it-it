@@ -1,25 +1,25 @@
 ---
-title: Implementare l'oggetto di accesso al dispositivo
+title: Implementare l'oggetto Device Access
 description: Questo argomento illustra come creare un'istanza dell'oggetto di accesso al dispositivo e usarlo per accedere a un dispositivo.
 ms.assetid: 26619A25-67FE-44DC-82DD-36076326748D
 ms.topic: article
 ms.date: 02/11/2020
-ms.openlocfilehash: 60bd634f72b29bb6520223a7933b22a396f99723
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 9fee82f84a9325472928de69513e5f8e1c3ea1d1
+ms.sourcegitcommit: 1f917afc149b5cc449a4a25a87de311e4842734b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104474597"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113689214"
 ---
-# <a name="implement-the-device-access-object"></a>Implementare l'oggetto di accesso al dispositivo
+# <a name="implement-the-device-access-object"></a>Implementare l'oggetto Device Access
 
-Questo argomento illustra come creare un'istanza dell'oggetto di accesso al dispositivo e usarlo per accedere a un dispositivo. La classe di cui è stata creata un'istanza implementa le interfacce [**IDeviceIoControl**](/windows/win32/api/Deviceaccess/nn-deviceaccess-ideviceiocontrol) e [**ICreateDeviceAccessAsync**](/windows/win32/api/Deviceaccess/nn-deviceaccess-icreatedeviceaccessasync) .
+Questo argomento illustra come creare un'istanza dell'oggetto di accesso al dispositivo e usarlo per accedere a un dispositivo. La classe di cui è stata creata [**un'istanza implementa le interfacce IDeviceIoControl**](/windows/win32/api/Deviceaccess/nn-deviceaccess-ideviceiocontrol) [**e ICreateDeviceAccessAsync.**](/windows/win32/api/Deviceaccess/nn-deviceaccess-icreatedeviceaccessasync)
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="step-1"></a>Passaggio 1
 
-Per creare un'istanza dell'oggetto di accesso al dispositivo, è prima necessario chiamare la funzione [**CreateDeviceAccessInstance**](/windows/win32/api/deviceaccess/nf-deviceaccess-createdeviceaccessinstance) . Se **CreateDeviceAccessInstance** ha esito positivo, è possibile chiamare il metodo [**wait**](/windows/win32/api/Deviceaccess/nf-deviceaccess-icreatedeviceaccessasync-wait) per attendere il completamento dell'operazione asincrona. Se l' **attesa** ha esito positivo, è possibile recuperare un oggetto [**IDeviceIoControl**](/windows/win32/api/Deviceaccess/nn-deviceaccess-ideviceiocontrol) (o l'errore appropriato) dal metodo [**GetResult**](/windows/win32/api/Deviceaccess/nf-deviceaccess-icreatedeviceaccessasync-getresult) .
+Per creare un'istanza dell'oggetto di accesso al dispositivo, è prima necessario chiamare [**la funzione CreateDeviceAccessInstance.**](/windows/win32/api/deviceaccess/nf-deviceaccess-createdeviceaccessinstance) Se **CreateDeviceAccessInstance ha** esito positivo, è possibile chiamare il [**metodo Wait**](/windows/win32/api/Deviceaccess/nf-deviceaccess-icreatedeviceaccessasync-wait) per attendere il completamento dell'operazione asincrona. Se **Wait** ha esito positivo, è possibile recuperare un [**oggetto IDeviceIoControl**](/windows/win32/api/Deviceaccess/nn-deviceaccess-ideviceiocontrol) (o l'errore appropriato) dal [**metodo GetResult.**](/windows/win32/api/Deviceaccess/nf-deviceaccess-icreatedeviceaccessasync-getresult)
 
 ```C++
 HRESULT
@@ -57,7 +57,7 @@ Return Value:
 
    hr = CreateDeviceAccessInstance(pszDeviceInterfacePath,
                                    GENERIC_READ|GENERIC_WRITE,
-                                   &amp;pDeviceAccess);
+                                   &pDeviceAccess);
 
     if (FAILED(hr)) {
         return hr;
@@ -69,7 +69,7 @@ Return Value:
 
     if (SUCCEEDED(hr)) {
         hr = pDeviceAccess->GetResult(IID_IDeviceIoControl,
-                                            (void **)&amp;m_pDeviceIoControl);
+                                            (void **)&m_pDeviceIoControl);
     }
 
     pDeviceAccess->Release();
@@ -82,7 +82,7 @@ Return Value:
 
 ### <a name="step-2"></a>Passaggio 2
 
-Questo è un esempio di una chiamata al metodo **DeviceIoControlSync** .
+Questo è un esempio di chiamata al **metodo DeviceIoControlSync.**
 
 
 ```C++
@@ -116,7 +116,7 @@ Return Value:
     sevenSegment = g_NumberToMask[value];
     hr = m_pDeviceIoControl->DeviceIoControlSync(
                          IOCTL_OSRUSBFX2_SET_7_SEGMENT_DISPLAY,
-                         &amp;sevenSegment,
+                         &sevenSegment,
                          sizeof(BYTE),
                          NULL,
                          0,
@@ -131,8 +131,8 @@ Return Value:
 
 ## <a name="remarks"></a>Commenti
 
-È anche possibile inviare un IOCTL in modo asincrono usando il metodo [**DeviceIoControlAsync**](/windows/win32/api/Deviceaccess/nf-deviceaccess-ideviceiocontrol-deviceiocontrolasync) . In tal caso, è necessario implementare l'interfaccia [**IDeviceRequestCompletionCallback**](/windows/win32/api/Deviceaccess/nn-deviceaccess-idevicerequestcompletioncallback) .
+È anche possibile inviare un IOCTL in modo asincrono usando il [**metodo DeviceIoControlAsync.**](/windows/win32/api/Deviceaccess/nf-deviceaccess-ideviceiocontrol-deviceiocontrolasync) In tal caso, è necessario implementare [**l'interfaccia IDeviceRequestCompletionCallback.**](/windows/win32/api/Deviceaccess/nn-deviceaccess-idevicerequestcompletioncallback)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Esempio di accesso ai driver personalizzato](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample), [app per dispositivi UWP per dispositivi interni](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices), [hardware Dev Center](/windows-hardware/drivers/)
+[Esempio di accesso ai driver personalizzati,](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample) [app per dispositivi UWP per dispositivi interni,](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) [Hardware Dev Center](/windows-hardware/drivers/)

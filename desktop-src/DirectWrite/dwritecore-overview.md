@@ -1,21 +1,21 @@
 ---
 title: Panoramica di DWriteCore
-description: DWriteCore è l'implementazione di DirectWrite in Windows App SDK.
+description: DWriteCore è l'implementazione Windows App SDK di DirectWrite.
 keywords:
-- DirectWrite Core
+- DirectWrite nucleo
 - DWriteCore
 ms.topic: article
 ms.date: 04/22/2021
-ms.openlocfilehash: a537d26f6aca4e2be64b61fd41da91e1f8829894
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 644ce3c5715e1cc57129b36047169c20e80a6697
+ms.sourcegitcommit: 1f917afc149b5cc449a4a25a87de311e4842734b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587781"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113689194"
 ---
 # <a name="dwritecore-overview"></a>Panoramica di DWriteCore
 
-DWriteCore è l'implementazione di [DirectWrite](/windows/apps/windows-app-sdk/) in Windows App SDK (DirectWrite è l'API DirectX per il rendering di testo di alta qualità, i tipi di carattere del contorno indipendenti dalla risoluzione e il supporto completo di layout e testo Unicode). [](./direct-write-portal.md) DWriteCore è una forma di DirectWrite che viene eseguita nelle versioni di Windows fino a Windows 10, versione 1809 (10.0; Build 17763) e apre la porta per l'uso multipiattaforma.
+DWriteCore è [l'implementazione](/windows/apps/windows-app-sdk/) di [Windows](./direct-write-portal.md) App SDK di DirectWrite (DirectWrite è l'API DirectX per il rendering del testo di alta qualità, i tipi di carattere del contorno indipendenti dalla risoluzione e il supporto completo di layout e testo Unicode). DWriteCore è una forma di DirectWrite che viene eseguita in versioni di Windows fino a Windows 10, versione 1809 (10.0; Build 17763) e apre la porta per l'uso multipiattaforma.
 
 Questo argomento introduttivo descrive che cos'è DWriteCore e illustra come installarlo nell'ambiente di sviluppo e programmarlo con esso.
 
@@ -24,25 +24,25 @@ Questo argomento introduttivo descrive che cos'è DWriteCore e illustra come ins
 
 ## <a name="the-value-proposition-of-dwritecore"></a>Proposta di valore di DWriteCore
 
-[DirectWrite](./direct-write-portal.md) stesso supporta una vasta gamma di funzionalità che lo rendono lo strumento di rendering dei caratteri preferito in Windows per la maggior parte delle app, sia tramite chiamate dirette &mdash; che tramite [Direct2D.](../direct2d/direct2d-portal.md) DirectWrite include un sistema di layout di testo indipendente dal dispositivo, rendering del testo [ClearType Microsoft ClearType](/typography/cleartype/) di qualità elevata, testo con accelerazione hardware, testo multi-formato, funzionalità [opentype avanzate®](/typography/opentype/) tipografia, supporto di lingue wide e layout e rendering compatibili con [GDI.](../gdi/windows-gdi.md) DirectWrite è disponibile a partire da Windows Vista SP2 e si è evoluto nel corso degli anni per includere funzionalità più avanzate, ad esempio i tipi di carattere variabili, che consentono di applicare stili, pesi e altri attributi a un tipo di carattere con una sola risorsa tipo di carattere.
+[DirectWrite](./direct-write-portal.md) supporta una vasta gamma di funzionalità che lo rendono lo strumento di rendering dei caratteri preferito in Windows per la maggior parte delle app, sia tramite chiamate dirette che tramite &mdash; [Direct2D.](../direct2d/direct2d-portal.md) DirectWrite include un sistema di layout di testo indipendente dal dispositivo, rendering del testo [ClearType Microsoft ClearType](/typography/cleartype/) di qualità elevata, testo con accelerazione hardware, testo multi-formato, funzionalità avanzate [openType®](/typography/opentype/) tipografia, supporto di lingue ampie e layout e rendering compatibili con [GDI.](../gdi/windows-gdi.md) DirectWrite è disponibile da Windows Vista SP2 e si è evoluto nel corso degli anni per includere funzionalità più avanzate, ad esempio i tipi di carattere variabili, che consentono di applicare stili, pesi e altri attributi a un tipo di carattere con una sola risorsa tipo di carattere.
 
-A causa della lunga durata di DirectWrite, tuttavia, i progressi nello sviluppo hanno tendenziamente lasciato indietro le versioni precedenti di Windows. Inoltre, lo stato di DirectWrite come tecnologia di rendering del testo premier è limitato solo a Windows, lasciando alle applicazioni multipiattaforma di scrivere il proprio stack di rendering del testo o di basarsi su soluzioni di terze parti.
+A causa della lunga durata della DirectWrite, tuttavia, i progressi nello sviluppo tendono a lasciare indietro le versioni precedenti Windows. Inoltre, lo stato di DirectWrite come tecnologia di rendering del testo premier è limitato solo a Windows, lasciando alle applicazioni multipiattaforma di scrivere il proprio stack di rendering del testo o di affidarsi a soluzioni di terze parti.
 
 DWriteCore risolve i problemi fondamentali dell'orfano delle funzionalità della versione e della compatibilità multipiattaforma rimuovendo la libreria dal sistema e selezionando come destinazione tutti i possibili endpoint supportati. A tale scopo, DWriteCore è stato integrato in Windows App SDK.
 
-Il valore principale che DWriteCore offre agli sviluppatori in Windows App SDK è che fornisce l'accesso a molte (e infine a tutte) funzionalità DirectWrite. Tutte le funzionalità di DWriteCore funzioneranno allo stesso modo in tutte le versioni di livello inferiore senza alcuna disparità riguardo alle funzionalità che potrebbero funzionare in quali versioni.
+Il valore principale che DWriteCore offre, in quanto sviluppatore, in Windows App SDK è che fornisce l'accesso a molte e infine a tutte le DirectWrite funzionalità. Tutte le funzionalità di DWriteCore funzioneranno allo stesso modo in tutte le versioni di livello inferiore senza alcuna disparità riguardo alle funzionalità che potrebbero funzionare in quali versioni.
 
 ## <a name="the-dwritecore-demo-appmdashdwritecoregallery"></a>The DWriteCore demo app &mdash; DWriteCoreGallery
 
-DWriteCore viene illustrato tramite l'app di esempio [DWriteCoreGallery,](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) che è ora disponibile per il download e lo studio.
+DWriteCore viene illustrato tramite l'app di esempio [DWriteCoreGallery,](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/TextRendering) che è ora disponibile per il download e lo studio.
 
 ## <a name="get-started-with-dwritecore"></a>Introduzione a DWriteCore
 
 DWriteCore fa parte di [Windows App SDK 0.8.](https://github.com/microsoft/ProjectReunion/releases/tag/v0.8.0) Questa sezione descrive come configurare l'ambiente di sviluppo per la programmazione con DWriteCore.
 
-### <a name="install-the-windows-app-sdk-08-vsix"></a>Installare Windows App SDK 0.8 VSIX
+### <a name="install-the-windows-app-sdk-08-vsix"></a>Installare vsIX Windows App SDK 0.8
 
-In Visual Studio fare clic su **Estensioni**  >  **Gestisci estensioni,** cercare *Windows App SDK* e scaricare l'estensione Windows App SDK. Chiudere e riaprire Visual Studio e seguire le istruzioni per installare l'estensione.
+In Visual Studio fare clic su **Estensioni** Gestisci  >  estensioni, cercare *Windows App SDK* e scaricare l'estensione Windows App SDK. Chiudere e riaprire Visual Studio e seguire le istruzioni per installare l'estensione.
 
 Per altre informazioni, vedere [Windows App SDK 0.8](https://github.com/microsoft/ProjectReunion/releases/tag/v0.8.0) e [Configurare l'ambiente di sviluppo.](/windows/apps/windows-app-sdk/set-up-your-development-environment#3-install-the-windows-app-sdk-extension-for-visual-studio)
 
@@ -50,15 +50,15 @@ Per altre informazioni, vedere [Windows App SDK 0.8](https://github.com/microsof
 
 In Visual Studio creare un nuovo progetto dal modello di progetto App vuota, in pacchetto **(WinUI 3 in Desktop).** È possibile trovare il modello di progetto scegliendo il linguaggio: *C++.* platform: *Windows App SDK*; Tipo di progetto: *Desktop.*
 
-Per altre informazioni, vedi [Modelli di progetto per WinUI 3.](/windows/apps/winui/winui3/winui-project-templates-in-visual-studio#project-templates-for-winui-3)
+Per altre informazioni, vedi [Modelli Project per WinUI 3.](/windows/apps/winui/winui3/winui-project-templates-in-visual-studio#project-templates-for-winui-3)
 
-### <a name="install-the-microsoftprojectreuniondwrite-nuget-package"></a>Installare il pacchetto NuGet Microsoft.ProjectReunion.DWrite
+### <a name="install-the-microsoftprojectreuniondwrite-nuget-package"></a>Installare il pacchetto Microsoft.ProjectReunion.DWrite NuGet
 
-In Visual Studio fare clic  su Progetto Gestisci pacchetti NuGet... Sfoglia , digitare o incollare \>  \>  **Microsoft.ProjectReunion.DWrite**  nella casella di ricerca, selezionare l'elemento nei risultati della ricerca e quindi fare clic su Installa per installare il pacchetto per il progetto.
+In Visual Studio fare clic su **Project** Gestisci pacchetti NuGet... Sfoglia , digitare o \> **incollare** \>  **Microsoft.ProjectReunion.DWrite** nella casella di ricerca, selezionare l'elemento nei risultati della ricerca e quindi fare clic su **Installa** per installare il pacchetto per il progetto.
 
 ### <a name="alternatively-begin-with-the-dwritecoregallery-sample-app"></a>In alternativa, iniziare con l'app di esempio DWriteCoreGallery
 
-In alternativa, è possibile programmare con DWriteCore iniziando con il progetto di app di esempio [DWriteCoreGallery](https://github.com/microsoft/Project-Reunion-Samples/tree/main/DWriteCore/DWriteCoreGallery) e basando lo sviluppo su tale progetto. È quindi possibile rimuovere qualsiasi codice sorgente (o file) esistente dal progetto di esempio e aggiungere qualsiasi nuovo codice sorgente (o file) al progetto.
+In alternativa, è possibile programmare con DWriteCore iniziando con il progetto di app di esempio [DWriteCoreGallery](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/TextRendering) e basando lo sviluppo su tale progetto. È quindi possibile rimuovere qualsiasi codice sorgente (o file) esistente dal progetto di esempio e aggiungere qualsiasi nuovo codice sorgente (o file) al progetto.
 
 ### <a name="use-dwritecore-in-your-project"></a>Usare DWriteCore nel progetto
 
@@ -66,7 +66,7 @@ Per altre informazioni sulla programmazione con DWriteCore, vedere la [sezione P
 
 ## <a name="the-release-phases-of-dwritecore"></a>Fasi di rilascio di DWriteCore
 
-La portabilità di DirectWrite in DWriteCore è un progetto sufficientemente grande da estendersi su più cicli di rilascio di Windows. Il progetto è suddiviso in fasi, ognuna delle quali corrisponde a un blocco di funzionalità fornito in una versione.
+La portabilità DirectWrite a DWriteCore è un progetto sufficientemente grande da estendersi su Windows cicli di rilascio. Il progetto è suddiviso in fasi, ognuna delle quali corrisponde a un blocco di funzionalità fornito in una versione.
 
 ### <a name="features-in-the-current-release-of-dwritecore"></a>Funzionalità nella versione corrente di DWriteCore
 
@@ -86,19 +86,19 @@ La versione di DWriteCore attualmente disponibile fa parte di [Windows App SDK 0
 - Supporto per il testo verticale tramite [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) &mdash; vedere Testo [verticale.](/windows/win32/directwrite/vertical-text)
 - Vengono implementati tutti i metodi delle interfacce [**IDWriteTextAnalyzer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextanalyzer) e [**IDWriteTextAnalyzer1.**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritetextanalyzer1)
 
-Una funzionalità banner è tipi di carattere a colori. I tipi di carattere a colori consentono di eseguire il rendering dei tipi di carattere con funzionalità di colore più sofisticate oltre a semplici colori singoli. Ad esempio, i tipi di carattere a colori sono ciò che consente di eseguire il rendering dei tipi di carattere icona emoji e barra degli strumenti (quest'ultimo viene usato da Office, ad esempio). I tipi di carattere a colori sono stati introdotti per la prima volta Windows 8.1, ma la funzionalità è stata ampiamente ampliata in Windows 10 versione 1607 (Aggiornamento dell'anniversario).
+Una funzionalità banner è tipi di carattere a colori. I tipi di carattere a colori consentono di eseguire il rendering dei tipi di carattere con funzionalità di colore più sofisticate oltre a semplici colori singoli. Ad esempio, i tipi di carattere a colori sono ciò che consente di eseguire il rendering di emoji e tipi di carattere icona della barra degli strumenti (quest'ultimo viene usato da Office, ad esempio). I tipi di carattere a colori sono stati introdotti per la prima volta in Windows 8.1, ma la funzionalità è stata ampiamente ampliata in Windows 10 versione 1607 (Aggiornamento dell'anniversario).
 
 Le operazioni di pulizia della cache dei tipi di carattere e del caricatore dei tipi di carattere in memoria consentono un caricamento più rapido dei tipi di carattere e miglioramenti della memoria.
 
-Con queste funzionalità, è possibile iniziare immediatamente a sfruttare alcune delle funzionalità di base moderne di &mdash; DirectWrite, ad esempio i tipi di carattere variabili. I tipi di carattere variabili sono una delle funzionalità più importanti per i clienti DirectWrite.
+Con queste funzionalità, è possibile iniziare immediatamente a sfruttare alcune delle DirectWrite di base moderne, ad esempio i tipi &mdash; di carattere variabili. I tipi di carattere variabili sono una delle funzionalità più importanti per DirectWrite clienti.
 
-## <a name="our-invitation-to-you-as-a-directwrite-developer"></a>L'invito a microsoft come sviluppatore DirectWrite
+## <a name="our-invitation-to-you-as-a-directwrite-developer"></a>L'invito è stato inviato come sviluppatore DirectWrite
 
-DWriteCore, insieme ad altri componenti di Windows App SDK, verrà sviluppato con apertura al feedback degli sviluppatori. Ti invitiamo a iniziare a esplorare DWriteCore e a fornire informazioni dettagliate o richieste sullo sviluppo di funzionalità nel repository GitHub di [Windows App SDK.](https://github.com/microsoft/ProjectReunion/)
+DWriteCore, insieme ad altri componenti Windows App SDK, verrà sviluppato con apertura ai commenti e suggerimenti degli sviluppatori. Si invita a iniziare a esplorare DWriteCore e a fornire informazioni dettagliate o richieste sullo sviluppo di funzionalità nel repository Windows [App SDK GitHub](https://github.com/microsoft/ProjectReunion/).
 
 ## <a name="programming-with-dwritecore"></a>Programmazione con DWriteCore
 
-Proprio come con [DirectWrite,](./direct-write-portal.md)è possibile programmare con DWriteCore tramite la relativa API com-light, tramite [**l'interfaccia IDWriteFactory.**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory)
+Proprio come con [DirectWrite](./direct-write-portal.md), è possibile programmare con DWriteCore tramite la relativa API com-light, tramite l'interfaccia [**IDWriteFactory.**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory)
 
 Per usare DWriteCore, è necessario includere il `dwrite_core.h` file di intestazione.
 
@@ -109,11 +109,11 @@ Per usare DWriteCore, è necessario includere il `dwrite_core.h` file di intesta
 #include <dwrite_core.h>
 ```
 
-Il `dwrite_core.h` file di intestazione definisce innanzitutto il token *DWRITE_CORE* e quindi include il file `dwrite_3.h` di intestazione. Il *DWRITE_CORE* token è importante, perché indica a tutte le intestazioni incluse successivamente di rendere disponibili tutte le API DirectWrite. Dopo che il progetto ha incluso , è possibile procedere `dwrite_core.h` e scrivere codice, compilare ed eseguire.
+Il `dwrite_core.h` file di intestazione definisce innanzitutto il token *DWRITE_CORE* e quindi include il file `dwrite_3.h` di intestazione. Il *DWRITE_CORE* token è importante, perché indica a tutte le intestazioni incluse successivamente di rendere disponibili tutte le API DirectWrite personalizzate. Dopo che il progetto ha incluso , è possibile procedere `dwrite_core.h` e scrivere codice, compilare ed eseguire.
 
 ### <a name="apis-that-are-new-or-different-for-dwritecore"></a>API nuove o diverse per DWriteCore
 
-La superficie dell'API DWriteCore è in gran parte uguale a come per [DirectWrite.](/windows/win32/api/_directwrite/) Esiste tuttavia un numero ridotto di nuove API attualmente presenti solo in DWriteCore.
+La superficie dell'API DWriteCore è in gran parte uguale a come per [DirectWrite](/windows/win32/api/_directwrite/). Esiste tuttavia un numero ridotto di nuove API attualmente presenti solo in DWriteCore.
 
 #### <a name="create-a-factory-object"></a>Creare un oggetto factory
 
@@ -146,9 +146,9 @@ DirectWrite ha un'interfaccia di destinazione di rendering bitmap che supporta i
 
 DWriteCore introduce quindi [**l'interfaccia IDWriteBitmapRenderTarget2**](/windows/windows-app-sdk/api/win32/dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata) e il relativo [**metodo IDWriteBitmapRenderTarget2::GetBitmapData**](/windows/windows-app-sdk/api/win32/dwrite_3/nf-dwrite_3-idwritebitmaprendertarget2-getbitmapdata). Tale metodo accetta un parametro di tipo (puntatore a) [**DWRITE_BITMAP_DATA_BGRA32**](/windows/windows-app-sdk/api/win32/dwrite_3/ns-dwrite_3-dwrite_bitmap_data_bgra32), che è un nuovo struct.
 
-L'applicazione crea una destinazione di rendering bitmap chiamando [IDWriteGdiInterop::CreateBitmapRenderTarget.](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget) In Windows, una destinazione di rendering bitmap incapsula un controller di dominio di memoria GDI con una bitmap GDI indipendente dal dispositivo (DIB) selezionata al suo interno. [IDWriteBitmapRenderTarget::D rawGlyphRun](/windows/win32/api/dwrite/nf-dwrite-idwritebitmaprendertarget-drawglyphrun) esegue il rendering dei glifi nel DIB. DirectWrite esegue il rendering dei glifi senza passare attraverso GDI. L'applicazione può quindi ottenere **l'HDC** dalla destinazione di rendering bitmap e usare [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) per copiare i pixel in una **finestra HDC.**
+L'applicazione crea una destinazione di rendering bitmap chiamando [IDWriteGdiInterop::CreateBitmapRenderTarget.](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget) In Windows destinazione di rendering bitmap incapsula un controller di dominio di memoria GDI con una bitmap GDI indipendente dal dispositivo (DIB) selezionata. [IDWriteBitmapRenderTarget::D rawGlyphRun](/windows/win32/api/dwrite/nf-dwrite-idwritebitmaprendertarget-drawglyphrun) esegue il rendering dei glifi nel DIB. DirectWrite esegue il rendering dei glifi senza passare attraverso GDI. L'applicazione può quindi ottenere **l'HDC** dalla destinazione di rendering bitmap e usare [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) per copiare i pixel in una **finestra HDC.**
 
-Nelle piattaforme non Windows, l'applicazione può comunque creare una destinazione di rendering bitmap, ma incapsula semplicemente una matrice di memoria di sistema senza **HDC** e senza DIB. Senza un **HDC,** l'applicazione deve avere un altro modo per ottenere i pixel bitmap in modo che possa copiarli o usarli in altro modo. Anche in Windows, a volte è utile ottenere i dati pixel effettivi e viene illustrato il modo corrente per eseguire questa operazione nell'esempio di codice seguente.
+Nelle piattaforme non Windows, l'applicazione può comunque creare una destinazione di rendering bitmap, ma incapsula semplicemente una matrice di memoria di sistema senza **HDC** e senza DIB. Senza **HDC,** l'applicazione deve ottenere i pixel della bitmap in modo che possa copiarli o usarli in altro modo. Anche in Windows, a volte è utile ottenere i dati pixel effettivi e viene illustrato il modo corrente per eseguire questa operazione nell'esempio di codice seguente.
 
 ```cppwinrt
 // pch.h
@@ -206,8 +206,8 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
 }
 ```
 
-#### <a name="other-api-differences-between-dwritecore-and-directwrite"></a>Altre differenze delle API tra DWriteCore e DirectWrite
+#### <a name="other-api-differences-between-dwritecore-and-directwrite"></a>Altre differenze dell'API tra DWriteCore e DirectWrite
 
-Alcune API sono solo stub o si comportano in modo leggermente diverso nelle piattaforme non Windows. Ad esempio, [IDWriteGdiInterop::CreateFontFaceFromHdc](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createfontfacefromhdc) restituisce **E_NOTIMPL** su piattaforme non Windows, poiché non esiste un **HDC** senza [GDI.](../gdi/windows-gdi.md)
+Esistono alcune API che sono solo stub o si comportano in modo leggermente diverso nelle piattaforme non Windows. Ad esempio, [IDWriteGdiInterop::CreateFontFaceFromHdc](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createfontfacefromhdc) restituisce **E_NOTIMPL** su piattaforme non Windows, poiché non esiste un **HDC** senza [GDI.](../gdi/windows-gdi.md)
 
-Infine, esistono alcune altre API di Windows che vengono in genere usate insieme a DirectWrite (Direct2D è un esempio di grande impatto). Tuttavia, attualmente Direct2D e DWriteCore non interagisce. Ad esempio, se si crea un [**oggetto IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usando DWriteCore e lo si passa a [**D2D1RenderTarget::D rawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout)la chiamata avrà esito negativo.
+Infine, esistono alcune altre API Windows che vengono in genere usate insieme a DirectWrite (Direct2D è un esempio di grande impatto). Tuttavia, attualmente Direct2D e DWriteCore non interoperativizzano. Ad esempio, se si crea un [**oggetto IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usando DWriteCore e lo si passa a [**D2D1RenderTarget::D rawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout), la chiamata avrà esito negativo.
