@@ -22,9 +22,9 @@
               href: scheduling-priorities.md
             - name: Cambi di contesto
               href: context-switches.md
-            - name: Priorità boost
+            - name: Boost di priorità
               href: priority-boosts.md
-            - name: Inversione priorità
+            - name: Inversione di priorità
               href: priority-inversion.md
             - name: Processori multipli
               href: multiple-processors.md
@@ -35,7 +35,7 @@
             - name: Servizio Utilità di pianificazione classi multimediali
               href: multimedia-class-scheduler-service.md
               items:
-                - name: Real-Time API coda di lavoro
+                - name: Real-Time'API Coda di lavoro
                   href: platform-work-queue-api.md
                   items:
                     - name: IRtwqAsyncCallback
@@ -97,7 +97,7 @@
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqgetworkqueuemmcsstaskid
                     - name: RtwqInvokeCallback
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqinvokecallback
-                    - name: Coda di lavoro RtwqJoin
+                    - name: RtwqJoinWorkQueue
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqjoinworkqueue
                     - name: RtwqLockPlatform
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqlockplatform
@@ -139,12 +139,14 @@
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqunregisterplatformfrommmcss
             - name: Gruppi di processori
               href: processor-groups.md
+            - name: QoS (Quality of Service)
+              href: quality-of-service.md
         - name: Più thread
           href: multiple-threads.md
           items:
-            - name: Dimensioni stack thread
+            - name: Dimensioni dello stack di thread
               href: thread-stack-size.md
-            - name: Handle e identificatori di thread
+            - name: Handle di thread e identificatori
               href: thread-handles-and-identifiers.md
             - name: Sospensione dell'esecuzione di thread
               href: suspending-thread-execution.md
@@ -154,7 +156,7 @@
               href: multiple-threads-and-gdi-objects.md
             - name: archiviazione thread-local
               href: thread-local-storage.md
-            - name: Creazione di finestre nei thread
+            - name: Creazione Windows nei thread
               href: creating-windows-in-threads.md
             - name: '  Terminazione di un thread'
               href: terminating-a-thread.md
@@ -163,13 +165,13 @@
         - name: Processi figlio
           href: child-processes.md
           items:
-            - name: Impostazione delle proprietà delle finestre tramite STARTUPINFO
+            - name: Impostazione delle proprietà della finestra tramite STARTUPINFO
               href: setting-window-properties-using-startupinfo.md
             - name: Handle e identificatori del processo
               href: process-handles-and-identifiers.md
-            - name: Enumerazione Process
+            - name: Enumerazione dei processi
               href: process-enumeration.md
-            - name: Recupero di informazioni aggiuntive sui processi
+            - name: Recupero di informazioni aggiuntive sul processo
               href: obtaining-additional-process-information.md
             - name: Ereditarietà
               href: inheritance.md
@@ -177,7 +179,7 @@
               href: environment-variables.md
             - name: Terminazione di un processo
               href: terminating-a-process.md
-            - name: Elaborare un working set
+            - name: Elabora working set
               href: process-working-set.md
             - name: Sicurezza dei processi e diritti di accesso
               href: process-security-and-access-rights.md
@@ -214,9 +216,9 @@
           href: isolated-user-mode--ium--processes.md
         - name: Modifica delle variabili di ambiente
           href: changing-environment-variables.md
-        - name: Uso dell'archiviazione thread-local
+        - name: Uso di thread locali Archiviazione
           href: using-thread-local-storage.md
-        - name: Uso di fiber
+        - name: Uso di fibre
           href: using-fibers.md
         - name: Uso delle funzioni del pool di thread
           href: using-the-thread-pool-functions.md
@@ -517,7 +519,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-initializethreadpoolenvironment
             - name: Iocompletioncallback
               href: /previous-versions/windows/desktop/legacy/ms684124(v=vs.85)
-            - name: IsImmersiveProcess
+            - name: IsItellisiveProcess
               href: /windows/desktop/api/Winuser/nf-winuser-isimmersiveprocess
             - name: IsProcessInJob
               href: /windows/desktop/api/jobapi/nf-jobapi-isprocessinjob
@@ -555,7 +557,7 @@
               href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryidleprocessorcycletime
             - name: QueryIdleProcessorCycleTimeEx
               href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryidleprocessorcycletimeex
-            - name: QueryInformationJobObject
+            - name: Oggetto QueryInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-queryinformationjobobject
             - name: QueryIoRateControlInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-queryioratecontrolinformationjobobject
@@ -585,7 +587,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-setenvironmentvariable
             - name: SetEventWhenCallbackReturns
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-seteventwhencallbackreturns
-            - name: SetInformationJobObject
+            - name: Oggetto SetInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-setinformationjobobject
             - name: SetIoRateControlInformationJobObject
               href: /windows/desktop/api/jobapi2/nf-jobapi2-setioratecontrolinformationjobobject
