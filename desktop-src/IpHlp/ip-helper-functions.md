@@ -4,12 +4,12 @@ description: Le funzioni seguenti recuperano e modificano le impostazioni di con
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-ms.openlocfilehash: ae19803c25512242b613735a060c7beda8c1df70
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ee16bb0b65545c4abbef387c5b90d42fb9d3c629
+ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549506"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "114394213"
 ---
 # <a name="ip-helper-functions"></a>Funzioni helper IP
 
@@ -53,8 +53,9 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**if \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
 -   [**if \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
 
-## <a name="interface-management"></a>Gestione dell'interfaccia
+## <a name="interface-management"></a>Gestione delle interfacce
 
+-   [**FreeInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-freeinterfacednssettings)
 -   [**GetFriendlyIfIndex**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getfriendlyifindex)
 -   [**GetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getifentry)
 -   [**GetIfEntry2**](/windows/win32/api/Netioapi/nf-netioapi-getifentry2)
@@ -63,6 +64,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**GetIfTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getiftable)
 -   [**GetIfTable2**](/windows/win32/api/Netioapi/nf-netioapi-getiftable2)
 -   [**GetIfTable2Ex**](/windows/win32/api/Netioapi/nf-netioapi-getiftable2ex)
+-   [**GetInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-getinterfacednssettings)
 -   [**GetInterfaceInfo**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo)
 -   [**GetInvertedIfStackTable**](/windows/win32/api/Netioapi/nf-netioapi-getinvertedifstacktable)
 -   [**GetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-getipinterfaceentry)
@@ -70,6 +72,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**GetNumberOfInterfaces**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getnumberofinterfaces)
 -   [**InitializeIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-initializeipinterfaceentry)
 -   [**SetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-setifentry)
+-   [**SetInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-setinterfacednssettings)
 -   [**SetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-setipinterfaceentry)
 
 ## <a name="internet-protocol-ip-and-internet-control-message-protocol-icmp"></a>Ip (Internet Protocol) e Internet Control Message Protocol (ICMP)
@@ -119,7 +122,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**RtlIpv6StringToAddress**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressa)
 -   [**RtlIpv6StringToAddressEx**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressexw)
 
-## <a name="ip-neighbor-address-management"></a>Gestione degli indirizzi IP adiacenti
+## <a name="ip-neighbor-address-management"></a>Gestione degli indirizzi ip adiacenti
 
 -   [**CreateIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-deleteipnetentry2)
@@ -158,7 +161,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**SetIpStatisticsEx**](/windows/win32/api/Iphlpapi/nf-iphlpapi-setipstatisticsex)
 -   [**UnenableRouter**](/windows/win32/api/Iphlpapi/nf-iphlpapi-unenablerouter)
 
-## <a name="ip-table-memory-management"></a>Gestione della memoria della tabella IP
+## <a name="ip-table-memory-management"></a>Gestione della memoria delle tabelle IP
 
 -   [**FreeMibTable**](/windows/win32/api/Netioapi/nf-netioapi-freemibtable)
 
@@ -209,7 +212,7 @@ Queste funzioni sono definite solo in Windows Server 2003.
 > [!Note]  
 > Queste funzioni non sono disponibili in Windows Vista, né in Windows Server 2008.
 
-## <a name="teredo-ipv6-client-management"></a>Gestione client Teredo IPv6
+## <a name="teredo-ipv6-client-management"></a>Teredo Gestione client IPv6
 
 -   [**GetTeredoPort**](/windows/win32/api/Netioapi/nf-netioapi-getteredoport)
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)

@@ -4,18 +4,23 @@ description: Pagina di spostamento Strutture helper IP.
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: d53c3821-00a0-4eaa-9a06-69ec7aa98d84
-ms.openlocfilehash: bf265de124133ece69c3898a6849535ca44e9cde
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ac8a8f9a143cd661050204483d9dca9a66ce5255
+ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549336"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "114394208"
 ---
 # <a name="ip-helper-structures"></a>Strutture dell'helper IP
 
 Le strutture e le unioni seguenti vengono usate con l'helper IP.
 
 - [**ARP_SEND_REPLY**](/windows/win32/api/Ipexport/ns-ipexport-arp_send_reply)
+- [**DNS_DOH_SERVER_SETTINGS**](/windows/win32/api/netioapi/ns-netioapi-dns_doh_server_settings)
+- [**DNS_INTERFACE_SETTINGS**](/windows/win32/api/netioapi/ns-netioapi-dns_interface_settings)
+- [**DNS_INTERFACE_SETTINGS3**](/windows/win32/api/netioapi/ns-netioapi-dns_interface_settings3)
+- [**DNS_SERVER_PROPERTY_TYPES**](/windows/win32/api/netioapi/ns-netioapi-dns_server_property_types)
+- [**DNS_SERVER_PROPERTY**](/windows/win32/api/netioapi/ns-netioapi-dns_server_property)
 - [**FIXED_INFO**](/windows/win32/api/Iptypes/ns-iptypes-fixed_info_w2ksp1)
 - [**ICMP_ECHO_REPLY**](/windows/win32/api/Ipexport/ns-ipexport-icmp_echo_reply)
 - [**ICMP_ECHO_REPLY32**](/windows/win32/api/Ipexport/ns-ipexport-icmp_echo_reply32)
