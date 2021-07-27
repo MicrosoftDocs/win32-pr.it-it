@@ -1,20 +1,20 @@
 ---
-Description: Le costanti KNOWNFOLDERID rappresentano i GUID che identificano le cartelle standard registrate con il sistema come cartelle note.
+Description: Le costanti KNOWNFOLDERID rappresentano GUID che identificano le cartelle standard registrate con il sistema come Cartelle note.
 ms.assetid: f2c08ade-3083-44e4-82b0-dde45f0e3094
-title: KNOWNFOLDERID (KnownFolders. h)
+title: KNOWNFOLDERID (Knownfolders.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 97748d074d6b0982708f51ea679f0629e8abfad6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
-ms.translationtype: HT
+ms.openlocfilehash: eb4b6ef46179abbe515edfcd323a349c7d091ac9
+ms.sourcegitcommit: c8f1dc81483739b697c96ae97ca533028efc3b2c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104982859"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114656879"
 ---
 # <a name="knownfolderid"></a>KNOWNFOLDERID
 
-Le costanti **KNOWNFOLDERID** rappresentano i GUID che identificano le cartelle standard registrate con il sistema come [cartelle note](known-folders.md). Queste cartelle vengono installate con Windows Vista e sistemi operativi successivi e un computer avrà solo le cartelle appropriate per l'installazione. Per le descrizioni di queste cartelle, vedere [**CSIDL**](csidl.md).
+Le **costanti KNOWNFOLDERID** rappresentano GUID che identificano le cartelle standard registrate con il sistema come [Cartelle note.](known-folders.md) Queste cartelle vengono installate con Windows Vista e i sistemi operativi successivi e in un computer saranno installate solo le cartelle appropriate. Per le descrizioni di queste cartelle, vedere [**CSIDL.**](csidl.md)
 
 ## <a name="example"></a>Esempio
 
@@ -56,7 +56,7 @@ HRESULT CExplorerBrowserHostDialog::_FillViewWithKnownFolders(IResultsFolder *pr
 
 ```
 
-Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/winui/shell/appplatform/ExplorerBrowserCustomContents/ExplorerBrowserCustomContents.cpp) in GitHub.
+Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/winui/shell/appplatform/ExplorerBrowserCustomContents/ExplorerBrowserCustomContents.cpp) in GitHub.
 
 ## <a name="constants"></a>Costanti
 
@@ -85,7 +85,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Immagini account</td>
+<td>Immagini dell'account</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -123,11 +123,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Ottieni programmi</td>
+<td>Ottenere programmi</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -135,11 +135,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Aggiungere nuovi programmi (disponibili nell'elemento <strong>Installazione applicazioni</strong> nel pannello di controllo)</td>
+<td>Aggiungi nuovi programmi (disponibile <strong>nell'elemento</strong> Installazione applicazioni nella Pannello di controllo)</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -169,7 +169,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Strumenti Avvio\Programmi\Strumenti%APPDATA%\Microsoft\Windows\Start</td>
+<td>%APPDATA%\Microsoft\Windows\Start Menu\Programmi\Strumenti di amministrazione</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -181,7 +181,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Strumenti Avvio\Programmi\Strumenti%USERPROFILE%\Menu</td>
+<td>%USERPROFILE%\Menu Start\Programmi\Strumenti di amministrazione</td>
 </tr>
 </tbody>
 </table>
@@ -225,7 +225,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </table>
 
 <p> </p>
-<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità dell'app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
+<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FOLDERID_AppDataDocuments"></span><span id="folderid_appdatadocuments"></span><span id="FOLDERID_APPDATADOCUMENTS"></span><dl> <dt><strong>FOLDERID_AppDataDocuments</strong></dt> </dl></td>
@@ -264,7 +264,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </table>
 
 <p> </p>
-<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità dell'app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
+<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FOLDERID_AppDataFavorites"></span><span id="folderid_appdatafavorites"></span><span id="FOLDERID_APPDATAFAVORITES"></span><dl> <dt><strong>FOLDERID_AppDataFavorites</strong></dt> </dl></td>
@@ -285,11 +285,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%LOCALAPPDATA%\Favorites</td>
+<td>%LOCALAPPDATA%\Preferiti</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 10, versione 1709</td>
+<td>Nessuno, valore introdotto in Windows 10, versione 1709</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -303,7 +303,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </table>
 
 <p> </p>
-<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità dell'app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
+<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non deve essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FOLDERID_AppDataProgramData"></span><span id="folderid_appdataprogramdata"></span><span id="FOLDERID_APPDATAPROGRAMDATA"></span><dl> <dt><strong>FOLDERID_AppDataProgramData</strong></dt> </dl></td>
@@ -328,7 +328,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 10, versione 1709</td>
+<td>Nessuno, valore introdotto in Windows 10, versione 1709</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -342,7 +342,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </table>
 
 <p> </p>
-<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità dell'app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
+<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non deve essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FOLDERID_ApplicationShortcuts"></span><span id="folderid_applicationshortcuts"></span><span id="FOLDERID_APPLICATIONSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ApplicationShortcuts</strong></dt> </dl></td>
@@ -363,11 +363,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Collegamenti%LOCALAPPDATA%\Microsoft\Windows\Application</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\Collegamenti all'applicazione</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8</td>
+<td>Nessuno, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -397,7 +397,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -405,7 +405,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8</td>
+<td>Nessuno, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -435,7 +435,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -443,11 +443,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>None, valore introdotto in Windows Vista. Nelle versioni precedenti di Windows le informazioni contenute in questa pagina sono state incluse in <strong>Installazione applicazioni</strong> se è stata selezionata la casella <strong>Mostra aggiornamenti</strong> .</td>
+<td>Nessuno, valore introdotto in Windows Vista. Nelle versioni precedenti di Windows, le informazioni in questa pagina erano incluse <strong>in</strong> Installazione applicazioni se la <strong>casella</strong> Mostra aggiornamenti era selezionata.</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -469,7 +469,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Rullo della fotocamera</td>
+<td>Rullino</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -477,11 +477,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%USERPROFILE%\Pictures\Camera roll</td>
+<td>%USERPROFILE%\Pictures\Camera Roll</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8.1</td>
+<td>Nessuno, valore introdotto in Windows 8.1</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -527,7 +527,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%USERPROFILE%\Local locali\Dati Applicazioni\microsoft\masterizzazione CD Burning</td>
+<td>%USERPROFILE%\Local Impostazioni\Application Data\Microsoft\CD Burning</td>
 </tr>
 </tbody>
 </table>
@@ -549,7 +549,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -557,7 +557,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -587,11 +587,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Strumenti Avvio\Programmi\Strumenti%ALLUSERSPROFILE%\Microsoft\Windows\Start</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -603,7 +603,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Strumenti Avvio\Programmi\Strumenti%ALLUSERSPROFILE%\Menu</td>
+<td>%ALLUSERSPROFILE%\Menu Start\Programmi\Strumenti di amministrazione</td>
 </tr>
 </tbody>
 </table>
@@ -617,7 +617,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{C1BAE2D0-10DF-4334-BEDD-7AA20B227A9D}</td>
+<td>{C1BAE2D0-10DF-4334-TBD-7AA20B227A9D}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -625,11 +625,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Collegamenti%ALLUSERSPROFILE%\OEM</td>
+<td>%ALLUSERSPROFILE%\Collegamenti OEM</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -641,7 +641,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Collegamenti%ALLUSERSPROFILE%\OEM</td>
+<td>%ALLUSERSPROFILE%\Collegamenti OEM</td>
 </tr>
 </tbody>
 </table>
@@ -663,11 +663,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Avvio\programmi%ALLUSERSPROFILE%\Microsoft\Windows\Start</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -679,7 +679,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Avvio\programmi%ALLUSERSPROFILE%\Menu</td>
+<td>%ALLUSERSPROFILE%\Menu Start\Programmi</td>
 </tr>
 </tbody>
 </table>
@@ -701,11 +701,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Menu%ALLUSERSPROFILE%\Microsoft\Windows\Start</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -717,7 +717,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Menu%ALLUSERSPROFILE%\Menu</td>
+<td>%ALLUSERSPROFILE%\Menu Start</td>
 </tr>
 </tbody>
 </table>
@@ -739,11 +739,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Avvio\programmi\esecuzione automatica%ALLUSERSPROFILE%\Microsoft\Windows\Start</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -755,7 +755,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Avvio\programmi\esecuzione automatica%ALLUSERSPROFILE%\Menu</td>
+<td>%ALLUSERSPROFILE%\Start Menu\Programmi\StartUp</td>
 </tr>
 </tbody>
 </table>
@@ -777,7 +777,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -815,7 +815,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -853,7 +853,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -861,11 +861,11 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Non applicabile. Questo <strong>KNOWNFOLDERID</strong> fa riferimento a Gestione sincronizzazione Windows Vista. Non è la cartella a cui fa riferimento il <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>ISyncMgrConflictFolder</strong></a>precedente.</td>
+<td>Non applicabile. Questo <strong>KNOWNFOLDERID fa</strong> riferimento alla Windows di sincronizzazione di Vista. Non è la cartella a cui fa riferimento la cartella <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>precedente ISyncMgrConflictFolder</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -891,7 +891,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -937,7 +937,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -967,7 +967,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1081,7 +1081,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1089,7 +1089,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1123,7 +1123,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%UserProfile%\Documenti</td>
+<td>%USERPROFILE%\Documents</td>
 </tr>
 <tr class="odd">
 <td>Equivalenti CSIDL</td>
@@ -1135,7 +1135,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Documenti%USERPROFILE%\My</td>
+<td>%USERPROFILE%\Documenti</td>
 </tr>
 </tbody>
 </table>
@@ -1165,7 +1165,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1203,7 +1203,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1237,7 +1237,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%USERPROFILE%\Favorites</td>
+<td>%USERPROFILE%\Preferiti</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -1249,7 +1249,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%USERPROFILE%\Favorites</td>
+<td>%USERPROFILE%\Preferiti</td>
 </tr>
 </tbody>
 </table>
@@ -1299,7 +1299,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 <td style="text-align: left;"><div class="alert">
 <blockquote>
 [!Note]<br />
-Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive. In queste versioni restituisce <strong>0x80070057-E_INVALIDARG</strong>
+Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste versioni restituisce 0x80070057 <strong>- E_INVALIDARG</strong>
 </blockquote>
 </div>
 <div>
@@ -1318,7 +1318,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1326,7 +1326,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1410,7 +1410,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Locali\cronologia%USERPROFILE%\Local</td>
+<td>%USERPROFILE%\Local Impostazioni\History</td>
 </tr>
 </tbody>
 </table>
@@ -1432,7 +1432,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1440,7 +1440,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1466,11 +1466,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Nome utente dell'utente (% USERNAME%)</td>
+<td>Nome utente dell'utente (%USERNAME%)</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1512,11 +1512,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts</td>
+<td>%APPDATA%\Microsoft\Internet Explorer\Avvio veloce\User Pinned\ImplicitAppShortcuts</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1550,7 +1550,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>File%LOCALAPPDATA%\Microsoft\Windows\Temporary Internet</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -1562,7 +1562,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>File%USERPROFILE%\Local Locali\temporary Internet</td>
+<td>%USERPROFILE%\Local Impostazioni\Temporary Internet Files</td>
 </tr>
 </tbody>
 </table>
@@ -1584,7 +1584,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1630,7 +1630,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1668,7 +1668,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1690,7 +1690,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>F1B32785-6FBA-4FCF-9D55-7B8E7F157091</td>
+<td>{F1B32785-6FBA-4FCF-9D55-7B8E7F157091}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -1702,7 +1702,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% LOCALAPPDATA% (%USERPROFILE%\AppData\Local)</td>
+<td>%LOCALAPPDATA% (%USERPROFILE%\AppData\Local)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -1714,7 +1714,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Dati locali\Dati%USERPROFILE%\Local</td>
+<td>%USERPROFILE%\Local Impostazioni\Application Data</td>
 </tr>
 </tbody>
 </table>
@@ -1744,7 +1744,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1770,7 +1770,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -1778,7 +1778,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%WINDIR%\resources\0409 (tabella codici)</td>
+<td>%windir%\resources\0409 (tabella codici)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -1786,11 +1786,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%WINDIR%\resources\0409 (tabella codici)</td>
+<td>%windir%\resources\0409 (tabella codici)</td>
 </tr>
 </tbody>
 </table>
@@ -1816,7 +1816,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%USERPROFILE%\Music</td>
+<td>%USERPROFILE%\Musica</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -1824,11 +1824,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Musica</td>
+<td>My Musica</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%USERPROFILE%\My di musica</td>
+<td>%USERPROFILE%\Documenti\My Musica</td>
 </tr>
 </tbody>
 </table>
@@ -1854,11 +1854,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%APPDATA%\Microsoft\Windows\Libraries\Music.library-ms</td>
+<td>%APPDATA%\Microsoft\Windows\Libraries\Musica.library-ms</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1892,7 +1892,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Collegamenti%APPDATA%\Microsoft\Windows\Network</td>
+<td>%APPDATA%\Microsoft\Windows\Collegamenti di rete</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -1926,7 +1926,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1968,11 +1968,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Oggetti%USERPROFILE%\3D</td>
+<td>%USERPROFILE%\3D Objects</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 10, versione 1703</td>
+<td>Nessuno, valore introdotto in Windows 10, versione 1703</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2006,11 +2006,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Immagini di Gallery\Original foto%LOCALAPPDATA%\Microsoft\Windows</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows Raccolta foto\Original Images</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2044,11 +2044,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%USERPROFILE%\Pictures\Slide Mostra</td>
+<td>%USERPROFILE%\Pictures\Slide Shows</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2086,7 +2086,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2132,7 +2132,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Immagini di%USERPROFILE%\My</td>
+<td>%USERPROFILE%\Documenti\My Pictures</td>
 </tr>
 </tbody>
 </table>
@@ -2158,11 +2158,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%USERPROFILE%\Music\Playlists</td>
+<td>%USERPROFILE%\Musica\Playlists</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2192,7 +2192,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2226,7 +2226,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Collegamenti stampanti</td>
+<td>Tasti di scelta rapida della stampante</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -2234,7 +2234,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Collegamenti%APPDATA%\Microsoft\Windows\Printer</td>
+<td>%APPDATA%\Microsoft\Windows\Printer Shortcuts</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2264,7 +2264,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Nome utente dell'utente (% USERNAME%)</td>
+<td>Nome utente dell'utente (%USERNAME%)</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -2272,7 +2272,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% USERPROFILE% (%SystemDrive%\Users \% nomeutente%)</td>
+<td>%USERPROFILE% (%SystemDrive%\Users \% USERNAME%)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2280,11 +2280,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Nome utente dell'utente (% USERNAME%)</td>
+<td>Nome utente dell'utente (%USERNAME%)</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>% USERPROFILE% (%SystemDrive%\Documents e impostazioni \% nome utente%)</td>
+<td>%USERPROFILE% (%SystemDrive%\Documents and Impostazioni \% USERNAME%)</td>
 </tr>
 </tbody>
 </table>
@@ -2310,7 +2310,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% ALLUSERSPROFILE% (% ProgramData%,%SystemDrive%\ProgramData)</td>
+<td>%ALLUSERSPROFILE% (%ProgramData%, %SystemDrive%\ProgramData)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2322,7 +2322,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Dati%ALLUSERSPROFILE%\Application</td>
+<td>%ALLUSERSPROFILE%\Application Data</td>
 </tr>
 </tbody>
 </table>
@@ -2349,7 +2349,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% Programmi% (file%SystemDrive%\Program)</td>
+<td>%Programmi% (%SystemDrive%\Programmi)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2361,7 +2361,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>% Programmi% (file%SystemDrive%\Program)</td>
+<td>%Programmi% (%SystemDrive%\Programmi)</td>
 </tr>
 </tbody>
 </table>
@@ -2370,13 +2370,13 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FOLDERID_ProgramFilesX64"></span><span id="folderid_programfilesx64"></span><span id="FOLDERID_PROGRAMFILESX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesX64</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Questo valore non è supportato nei sistemi operativi a 32 bit. Non è inoltre supportata per le applicazioni a 32 bit in esecuzione su sistemi operativi a 64 bit. Il tentativo di utilizzare FOLDERID_ProgramFilesX64 in una delle due situazioni genera un errore. Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
+<td style="text-align: left;"><p>Questo valore non è supportato nei sistemi operativi a 32 bit. Non è inoltre supportato per le applicazioni a 32 bit in esecuzione in sistemi operativi a 64 bit. Il tentativo di usare FOLDERID_ProgramFilesX64 in entrambe le situazioni comporta un errore. Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
 
 <table>
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{6D809377-6AF0-444B-8957-A3773F02200E}</td>
+<td>{6D809377-6AF0-444b-8957-A3773F02200E}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -2388,11 +2388,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% Programmi% (file%SystemDrive%\Program)</td>
+<td>%Programmi% (%SystemDrive%\Programmi)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2400,7 +2400,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>% Programmi% (file%SystemDrive%\Program)</td>
+<td>%Programmi% (%SystemDrive%\Programmi)</td>
 </tr>
 </tbody>
 </table>
@@ -2427,7 +2427,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% Programmi% (file%SystemDrive%\Program)</td>
+<td>%Programmi% (%SystemDrive%\Programmi)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2439,7 +2439,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>% Programmi% (file%SystemDrive%\Program)</td>
+<td>%Programmi% (%SystemDrive%\Programmi)</td>
 </tr>
 </tbody>
 </table>
@@ -2466,7 +2466,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>File%programmi%\Common</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2478,7 +2478,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>File%programmi%\Common</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 </tbody>
 </table>
@@ -2505,11 +2505,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>File%programmi%\Common</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2517,7 +2517,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>File%programmi%\Common</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 </tbody>
 </table>
@@ -2544,7 +2544,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>File%programmi%\Common</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2556,7 +2556,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>File%programmi%\Common</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 </tbody>
 </table>
@@ -2582,7 +2582,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Avvio\programmi%APPDATA%\Microsoft\Windows\Start</td>
+<td>%APPDATA%\Microsoft\Windows\Start Menu\Programs</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2594,7 +2594,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Avvio\programmi%USERPROFILE%\Menu</td>
+<td>%USERPROFILE%\Menu Start\Programmi</td>
 </tr>
 </tbody>
 </table>
@@ -2612,7 +2612,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Pubblico</td>
+<td>Blockchain pubblica</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -2620,11 +2620,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% PUBLIC% (%SystemDrive%\Users\Public)</td>
+<td>%PUBLIC% (%SystemDrive%\Users\Public)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, nuovo per Windows Vista</td>
+<td>None, novità per Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2654,7 +2654,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2692,7 +2692,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2730,7 +2730,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2768,7 +2768,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2806,7 +2806,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2814,7 +2814,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2836,7 +2836,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{3214FAB5-9757-4298-BB61-92A9DEAA44FF}</td>
+<td>{3214FAB5-9757-4298-BB61-92A9DEA44FF}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -2844,11 +2844,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%PUBLIC%\Music</td>
+<td>%PUBLIC%\Musica</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2856,11 +2856,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Musica condivisa</td>
+<td>Condivisione Musica</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Musica%ALLUSERSPROFILE%\Documents\My</td>
+<td>%ALLUSERSPROFILE%\Documents\My Musica</td>
 </tr>
 </tbody>
 </table>
@@ -2882,7 +2882,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2898,7 +2898,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Immagini di%ALLUSERSPROFILE%\Documents\My</td>
+<td>%ALLUSERSPROFILE%\Documents\My Pictures</td>
 </tr>
 </tbody>
 </table>
@@ -2920,7 +2920,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2928,7 +2928,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2954,11 +2954,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Immagini di account pubblico</td>
+<td>Immagini dell'account pubblico</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2966,7 +2966,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8</td>
+<td>Nessuno, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2996,7 +2996,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3012,7 +3012,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Video su%ALLUSERSPROFILE%\Documents\My</td>
+<td>%ALLUSERSPROFILE%\Documents\My Videos</td>
 </tr>
 </tbody>
 </table>
@@ -3038,11 +3038,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\Quick Launch</td>
+<td>%APPDATA%\Microsoft\Internet Explorer\Avvio veloce</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3050,7 +3050,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\Quick Launch</td>
+<td>%APPDATA%\Microsoft\Internet Explorer\Avvio veloce</td>
 </tr>
 </tbody>
 </table>
@@ -3097,7 +3097,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FOLDERID_RecordedTV"></span><span id="folderid_recordedtv"></span><span id="FOLDERID_RECORDEDTV"></span><dl> <dt><strong>FOLDERID_RecordedTV</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Non usato. Questo valore non è definito a partire da Windows 7.</p></td>
+<td style="text-align: left;"><p>Non usato. Questo valore non è definito a Windows 7.</p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FOLDERID_RecordedTVLibrary"></span><span id="folderid_recordedtvlibrary"></span><span id="FOLDERID_RECORDEDTVLIBRARY"></span><dl> <dt><strong>FOLDERID_RecordedTVLibrary</strong></dt> </dl></td>
@@ -3114,7 +3114,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3122,7 +3122,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3152,7 +3152,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3236,7 +3236,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3270,7 +3270,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>% APPDATA% (%USERPROFILE%\AppData\Roaming)</td>
+<td>%APPDATA% (%USERPROFILE%\AppData\Roaming)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -3282,7 +3282,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>% APPDATA% (dati%USERPROFILE%\Application)</td>
+<td>%APPDATA% (%USERPROFILE%\Application Data)</td>
 </tr>
 </tbody>
 </table>
@@ -3376,27 +3376,27 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Musica di esempio</td>
+<td>Esempio Musica</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Musica%PUBLIC%\Music\Sample</td>
+<td>%PUBLIC%\Musica\Sample Musica</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Musica di esempio</td>
+<td>Esempio Musica</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Musica%ALLUSERSPROFILE%\Documents\My Music\Sample</td>
+<td>%ALLUSERSPROFILE%\Documents\My Musica\Sample Musica</td>
 </tr>
 </tbody>
 </table>
@@ -3418,15 +3418,15 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Immagini di%PUBLIC%\Pictures\Sample</td>
+<td>%PUBLIC%\Pictures\Sample Pictures</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3434,7 +3434,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Immagini di%ALLUSERSPROFILE%\Documents\My Immagini\immagini</td>
+<td>%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures</td>
 </tr>
 </tbody>
 </table>
@@ -3456,11 +3456,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%PUBLIC%\Music\Sample playlist</td>
+<td>%PUBLIC%\Musica\Sample Playlists</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -3494,15 +3494,15 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Video su%PUBLIC%\Videos\Sample</td>
+<td>%PUBLIC%\Videos\Sample Videos</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3536,7 +3536,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Giochi%USERPROFILE%\Saved</td>
+<td>%USERPROFILE%\Saved Games</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -3574,11 +3574,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Immagini di%USERPROFILE%\Pictures\Saved</td>
+<td>%USERPROFILE%\Pictures\Saved Pictures</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3604,7 +3604,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Libreria immagini salvate</td>
+<td>Raccolta immagini salvate</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -3612,11 +3612,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%APPDATE%\Microsoft\Windows\Libraries\SavedPictures.library-ms</td>
+<td>%APPDATA%\Microsoft\Windows\Libraries\SavedPictures.library-ms</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3654,7 +3654,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3722,7 +3722,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3730,7 +3730,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3790,7 +3790,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{190337d1-B8CA-4121-A639-6d472d16972a}</td>
+<td>{190337d1-b8ca-4121-a639-6d472d16972a}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -3798,7 +3798,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3806,7 +3806,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3836,7 +3836,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3844,7 +3844,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3882,7 +3882,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8.1</td>
+<td>Nessuno, valore introdotto in Windows 8.1</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3908,7 +3908,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>SendTo</td>
+<td>Sendto</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -3924,7 +3924,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>SendTo</td>
+<td>Sendto</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -3950,11 +3950,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>COMUNE</td>
+<td>Comune</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Sidebar\Gadgets%programmi%\Windows</td>
+<td>%ProgramFiles%\Windows Sidebar\Gadgets</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -4034,7 +4034,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8.1</td>
+<td>Nessuno, valore introdotto in Windows 8.1</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4068,7 +4068,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%USERPROFILE%\OneDrive\Pictures\Camera roll</td>
+<td>%USERPROFILE%\OneDrive\Pictures\Camera Roll</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -4182,7 +4182,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Menu%APPDATA%\Microsoft\Windows\Start</td>
+<td>%APPDATA%\Microsoft\Windows\Start Menu</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -4194,7 +4194,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Menu%USERPROFILE%\Menu</td>
+<td>%USERPROFILE%\Menu Start</td>
 </tr>
 </tbody>
 </table>
@@ -4220,7 +4220,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>Avvio\programmi\esecuzione automatica%APPDATA%\Microsoft\Windows\Start</td>
+<td>%APPDATA%\Microsoft\Windows\Start Menu\Programs\StartUp</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -4232,7 +4232,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Avvio\programmi\esecuzione automatica%USERPROFILE%\Menu</td>
+<td>%USERPROFILE%\Start Menu\Programmi\StartUp</td>
 </tr>
 </tbody>
 </table>
@@ -4254,7 +4254,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4288,11 +4288,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Risultati sincronizzazione</td>
+<td>Risultati della sincronizzazione</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4330,7 +4330,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4436,7 +4436,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>A63293E8-664E-48DB-A079-DF759E0509F7</td>
+<td>{A63293E8-664E-48DB-A079-DF759E0509F7}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -4469,7 +4469,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FOLDERID_TreeProperties"></span><span id="folderid_treeproperties"></span><span id="FOLDERID_TREEPROPERTIES"></span><dl> <dt><strong>FOLDERID_TreeProperties</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Non utilizzato in Windows Vista. Non supportato a partire da Windows 7.</p></td>
+<td style="text-align: left;"><p>Non usato in Windows Vista. Non supportato a Windows 7.</p></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FOLDERID_UserPinned"></span><span id="folderid_userpinned"></span><span id="FOLDERID_USERPINNED"></span><dl> <dt><strong>FOLDERID_UserPinned</strong></dt> </dl></td>
@@ -4482,7 +4482,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Utente aggiunto</td>
+<td>Aggiunto dall'utente</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -4490,11 +4490,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User aggiunto</td>
+<td>%APPDATA%\Microsoft\Internet Explorer\Avvio veloce\User Pinned</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4532,7 +4532,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, nuovo per Windows Vista</td>
+<td>None, novità per Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4566,11 +4566,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%LOCALAPPDATA%\Programs</td>
+<td>%LOCALAPPDATA%\Programmi</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4604,11 +4604,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%LOCALAPPDATA%\Programs\Common</td>
+<td>%LOCALAPPDATA%\Programmi\Common</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4634,11 +4634,11 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Nome completo dell'utente (ad esempio, Jean Philippe bagel) immesso al momento della creazione dell'account utente.</td>
+<td>Nome completo dell'utente(ad esempio, Luise Bagel) immesso al momento della creazione dell'account utente.</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4646,7 +4646,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4676,7 +4676,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>VIRTUALE</td>
+<td>Virtuale</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4684,7 +4684,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4730,7 +4730,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>Video su%USERPROFILE%\My</td>
+<td>%USERPROFILE%\Documenti\My Videos</td>
 </tr>
 </tbody>
 </table>
@@ -4760,7 +4760,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto in Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4794,7 +4794,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>WINDIR</td>
+<td>%windir%</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -4806,7 +4806,7 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>WINDIR</td>
+<td>%windir%</td>
 </tr>
 </tbody>
 </table>
@@ -4820,82 +4820,82 @@ Questo FOLDERID è deprecato in Windows 10, versione 1803 e versioni successive.
 
 ## <a name="remarks"></a>Commenti
 
-L'interpretazione di determinati valori di **KNOWNFOLDERID** varia a seconda che la cartella faccia parte di un'applicazione a 32 bit o a 64 bit e che l'applicazione sia in esecuzione in un sistema operativo a 32 bit o a 64 bit. Se l'applicazione deve distinguere tra, ad esempio, **i file di programma** e **programmi (x86)**, è necessario usare il **KNOWNFOLDERID** corretto per la situazione.
+L'interpretazione di determinati valori **KNOWNFOLDERID** dipende dal fatto che la cartella fa parte di un'applicazione a 32 o 64 bit e se l'applicazione è in esecuzione in un sistema operativo a 32 o 64 bit. Se l'applicazione deve distinguere, ad **esempio,** programmi e file di programma **(x86),** è necessario usare **il valore KNOWNFOLDERID** giusto per la situazione.
 
-Le tabelle seguenti riepilogano l'uso di **KNOWNFOLDERID** in tali casi.
+Nelle tabelle seguenti viene riepilogato **l'utilizzo di KNOWNFOLDERID** in questi casi.
 
 
-**\_Programmi FOLDERID** 
+**FOLDERID \_ ProgramFiles** 
 
 | Sistema operativo | Applicazione | KNOWNFOLDERID | Predefinito Path | Equivalente CSIDL |
 |------------------|-------------|---------------|--------------|------------------|  
-| 32 bit | 32 bit | \_Programmi FOLDERID | % File di programma% SystemDrive% \\ | \_file di programma CSIDL \_ |
-| 32 bit | 32 bit | \_PROGRAMFILESX86 FOLDERID | % File di programma% SystemDrive% \\ | \_Programma CSIDL \_ FILESX86 |
+| 32 bit | 32 bit | FOLDERID \_ ProgramFiles | %SystemDrive% \\ Programmi | FILE DI PROGRAMMA \_ \_ CSIDL |
+| 32 bit | 32 bit | FOLDERID \_ ProgramFilesX86 | %SystemDrive% \\ Programmi | FILE DI PROGRAMMA \_ \_ CSIDLX86 |
 | 32 bit | 32 bit | FOLDERID \_ ProgramFilesX64 (non supportato nei sistemi operativi a 32 bit) | Non applicabile | Non applicabile |
-| 64 bit | 64 bit | \_Programmi FOLDERID | % File di programma% SystemDrive% \\ | \_file di programma CSIDL \_ |
-| 64 bit | 64 bit | \_PROGRAMFILESX86 FOLDERID | % SystemDrive% \\ Program Files (x86) | \_Programma CSIDL \_ FILESX86 |
-| 64 bit | 64 bit | \_PROGRAMFILESX64 FOLDERID | % File di programma% SystemDrive% \\ | nessuno |
-| 64 bit | 32 bit | \_Programmi FOLDERID | % SystemDrive% \\ Program Files (x86) | \_file di programma CSIDL \_ |
-| 64 bit | 32 bit | \_PROGRAMFILESX86 FOLDERID | % SystemDrive% \\ Program Files (x86) | \_Programma CSIDL \_ FILESX86 |
+| 64 bit | 64 bit | FOLDERID \_ ProgramFiles | %SystemDrive% \\ Programmi | FILE DI PROGRAMMA \_ \_ CSIDL |
+| 64 bit | 64 bit | FOLDERID \_ ProgramFilesX86 | %SystemDrive% \\ Programmi (x86) | FILE DI PROGRAMMA \_ \_ CSIDLX86 |
+| 64 bit | 64 bit | FOLDERID \_ ProgramFilesX64 | %SystemDrive% \\ Programmi | Nessuno |
+| 64 bit | 32 bit | FOLDERID \_ ProgramFiles | %SystemDrive% \\ Programmi (x86) | FILE DI PROGRAMMA \_ \_ CSIDL |
+| 64 bit | 32 bit | FOLDERID \_ ProgramFilesX86 | %SystemDrive% \\ Programmi (x86) | FILE DI PROGRAMMA \_ \_ CSIDLX86 |
 | 64 bit | 32 bit | FOLDERID \_ ProgramFilesX64 (non supportato per le applicazioni a 32 bit) | Non applicabile | Non applicabile |
 
 
-**\_PROGRAMFILESCOMMON FOLDERID**
+**FOLDERID \_ ProgramFilesCommon**
 
 | Sistema operativo | Applicazione | KNOWNFOLDERID | Predefinito Path | Equivalente CSIDL |
 |------------------|-------------|---------------|--------------|------------------|  
-| 32 bit | 32 bit | \_PROGRAMFILESCOMMON FOLDERID | File comuni% ProgramFiles% \\ | \_file di programma CSIDL \_ \_ comuni |
-| 32 bit | 32 bit | \_PROGRAMFILESCOMMONX86 FOLDERID | File comuni% ProgramFiles% \\ | \_File di programma CSIDL \_ \_ COMMONX86 |
-| 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX64 (undefined) | Non applicabile | Non applicabile |
-| 64 bit | 64 bit | \_PROGRAMFILESCOMMON FOLDERID | File comuni% ProgramFiles% \\ | \_file di programma CSIDL \_ \_ comuni |
-| 64 bit | 64 bit | \_PROGRAMFILESCOMMONX86 FOLDERID | % ProgramFiles (x86)% \\ file comuni | \_File di programma CSIDL \_ \_ COMMONX86 |
-| 64 bit | 64 bit | \_PROGRAMFILESCOMMONX64 FOLDERID | File comuni% ProgramFiles% \\ | nessuno |
-| 64 bit | 32 bit | \_PROGRAMFILESCOMMON FOLDERID | % ProgramFiles (x86)% \\ file comuni | \_file di programma CSIDL \_ \_ comuni |
-| 64 bit | 32 bit | \_PROGRAMFILESCOMMONX86 FOLDERID | % ProgramFiles (x86)% \\ file comuni | \_File di programma CSIDL \_ \_ COMMONX86 |
-| 64 bit | 32 bit | \_PROGRAMFILESCOMMONX64 FOLDERID | File comuni% ProgramFiles% \\ | nessuno |
+| 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommon | %ProgramFiles% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMUNI |
+| 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMMONX86 |
+| 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX64 (non definito) | Non applicabile | Non applicabile |
+| 64 bit | 64 bit | FOLDERID \_ ProgramFilesCommon | %ProgramFiles% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMUNI |
+| 64 bit | 64 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMMONX86 |
+| 64 bit | 64 bit | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ File comuni | Nessuno |
+| 64 bit | 32 bit | FOLDERID \_ ProgramFilesCommon | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMUNI |
+| 64 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMMONX86 |
+| 64 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ File comuni | Nessuno |
 
 
-**\_Sistema FOLDERID**
+**FOLDERID \_ System**
 
 | Sistema operativo | Applicazione | KNOWNFOLDERID | Predefinito Path | Equivalente CSIDL |
 |------------------|-------------|---------------|--------------|------------------|  
-| 32 bit | 32 bit | \_Sistema FOLDERID | % WINDIR% \\ system32 | \_sistema CSIDL |
-| 32 bit | 32 bit | \_SYSTEMX86 FOLDERID | % WINDIR% \\ system32 | \_SYSTEMX86 CSIDL |
-| 64 bit | 64 bit | \_Sistema FOLDERID | % WINDIR% \\ system32 | \_sistema CSIDL |
-| 64 bit | 64 bit | \_SYSTEMX86 FOLDERID | % WINDIR% \\ SysWow64 | \_SYSTEMX86 CSIDL |
-| 64 bit | 32 bit | \_Sistema FOLDERID | % WINDIR% \\ system32 | \_sistema CSIDL |
-| 64 bit | 32 bit | \_SYSTEMX86 FOLDERID | % WINDIR% \\ SysWow64 | \_SYSTEMX86 CSIDL |
+| 32 bit | 32 bit | FOLDERID \_ System | %windir% \\ system32 | SISTEMA \_ CSIDL |
+| 32 bit | 32 bit | FOLDERID \_ SystemX86 | %windir% \\ system32 | CSIDL \_ SYSTEMX86 |
+| 64 bit | 64 bit | FOLDERID \_ System | %windir% \\ system32 | SISTEMA \_ CSIDL |
+| 64 bit | 64 bit | FOLDERID \_ SystemX86 | %windir% \\ syswow64 | CSIDL \_ SYSTEMX86 |
+| 64 bit | 32 bit | FOLDERID \_ System | %windir% \\ system32 | SISTEMA \_ CSIDL |
+| 64 bit | 32 bit | FOLDERID \_ SystemX86 | %windir% \\ syswow64 | CSIDL \_ SYSTEMX86 |
 
 
-Sono state usate stringhe di ambiente per fornire percorsi generici in questo argomento. Le tabelle seguenti forniscono esempi dei percorsi rappresentati da tali stringhe di ambiente. In alcuni casi, questi percorsi potrebbero non corrispondere a quelli di un determinato computer a causa di scelte effettuate durante l'installazione o il reindirizzamento delle cartelle successivo. Si noti che alcuni percorsi sono stati modificati per Windows Vista.
+In questo argomento sono state usate stringhe di ambiente per fornire percorsi generici. Le tabelle seguenti forniscono esempi dei percorsi che rappresentano tali stringhe di ambiente. In alcuni casi, questi percorsi potrebbero non corrispondere a quelli in un determinato computer a causa delle scelte effettuate durante l'installazione o il reindirizzamento delle cartelle successivo. Si noti che alcuni percorsi sono stati modificati per Windows Vista.
 
 
 **Windows Vista e versioni successive**
 
 | Stringa di ambiente | Percorso di esempio |
 |--------------------|--------------|
-| ALLUSERSPROFILE | C: \\ ProgramData |
-| %APPDATA% | C: \\ utenti \\ *nomeutente* \\ AppData \\ roaming |
-| LocalAppData | C: \\ utenti \\ *nomeutente* \\ AppData \\ locale |
+| %ALLUSERSPROFILE% | C: \\ ProgramData |
+| %APPDATA% | C: \\ Nome utente \\ *utenti* \\ AppData \\ Roaming |
+| %LOCALAPPDATA% | C: \\ Users \\ *username* \\ AppData \\ Local |
 | %ProgramData% | C: \\ ProgramData |
-| %ProgramFiles% | C: \\ programmi |
-| %ProgramFiles(x86)% | C: \\ programmi (x86) |
-| PUBBLICO | C: \\ utenti \\ pubblici |
+| %ProgramFiles% | C: \\ Programmi |
+| %ProgramFiles(x86)% | C: \\ Programmi (x86) |
+| %PUBLIC% | C: \\ Utenti \\ pubblici |
 | %SystemDrive% | C: |
-| UserProfile | C: \\ \\ *nome utente* utenti |
-| WINDIR | C: \\ Windows |
+| %USERPROFILE% | C: \\ Nome utente \\ *utenti* |
+| %windir% | C: \\ Windows |
 
 
 **Windows XP e versioni precedenti**
 
 | Stringa di ambiente | Percorso di esempio |
 |--------------------|--------------|
-| ALLUSERSPROFILE | C: \\ Documents and Settings \\ All Users |
-| %APPDATA% | C: \\ Documents and Settings \\ *nome utente* \\ dati applicazione |
-| %ProgramFiles% | C: \\ programmi |
+| %ALLUSERSPROFILE% | C: \\ Documenti e Impostazioni tutti gli \\ utenti |
+| %APPDATA% | C: \\ Documents and Impostazioni \\ *username* \\ Application Data |
+| %ProgramFiles% | C: \\ Programmi |
 | %SystemDrive% | C: |
-| UserProfile | C: \\ Documents and Settings \\ *nome utente* |
-| WINDIR | C: \\ Windows |
+| %USERPROFILE% | C: \\ Documenti e nome Impostazioni utente \\  |
+| %windir% | C: \\ Windows |
 
 
 ## <a name="requirements"></a>Requisiti
@@ -4903,7 +4903,7 @@ Sono state usate stringhe di ambiente per fornire percorsi generici in questo ar
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>KnownFolders. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Knownfolders.h</dt> </dl> |
 
 
 
@@ -4917,10 +4917,10 @@ Sono state usate stringhe di ambiente per fornire percorsi generici in questo ar
 [Cartelle note](known-folders.md)
 </dt> <dt>
 
-[Utilizzo di cartelle note nelle applicazioni](working-with-known-folders.md)
+[Uso di cartelle note nelle applicazioni](working-with-known-folders.md)
 </dt> <dt>
 
-[Come estendere le cartelle note con cartelle personalizzate](how-to-extend-known-folders-with-custom-folders.md)
+[Come estendere cartelle note con cartelle personalizzate](how-to-extend-known-folders-with-custom-folders.md)
 </dt> <dt>
 
 [Esempio di cartelle note](/previous-versions/windows/desktop/legacy/dd940364(v=vs.85))

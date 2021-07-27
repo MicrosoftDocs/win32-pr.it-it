@@ -1,19 +1,19 @@
 ---
-description: Contiene un'alternativa di riconoscimento per un InkWord. Le alternative sono ordinate in base alla confidenza del riconoscitore nell'alternativa, con la prima più alta.
+description: Contiene un'alternativa di riconoscimento per InkWord. Le alternative sono ordinate in base all'attendibilità del riconoscimento nell'alternativa, con il valore più alto per primo.
 ms.assetid: 6ec78ac9-c10c-4227-bead-5ddfc48ce27e
-title: Elemento alternativo (wingdi. h)
+title: Elemento Alternate (Wingdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71eb1bc0bf74462cadecb480ceb87a0b610be876
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55dfb629aadea988a6aeec1cba1020c8ab47c994
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333283"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436606"
 ---
 # <a name="alternate-element"></a>Elemento alternativo
 
-Contiene un'alternativa di riconoscimento per un [**InkWord**](inkword-element.md). Le alternative sono ordinate in base alla confidenza del riconoscitore nell'alternativa, con la prima più alta.
+Contiene un'alternativa di riconoscimento per [**un oggetto InkWord.**](inkword-element.md) Le alternative sono ordinate in base all'attendibilità del riconoscimento nell'alternativa, con il valore più alto per primo.
 
 ## <a name="definition"></a>Definizione
 
@@ -23,25 +23,25 @@ Contiene un'alternativa di riconoscimento per un [**InkWord**](inkword-element.m
 
 ## <a name="parent-elements"></a>Elementi padre
 
-[**Alternativa**](alternatelist-element.md)
+[**AlternateList**](alternatelist-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo di elemento | **xs:string**                              |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk |
-| Nome schema  | Lettore Journal                             |
+|                  | Valore                                      |
+|------------------|--------------------------------------------|
+| **Tipo di elemento** | xs:string                                  |
+| **Namespace**    | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nome schema**  | Lettore di journal                             |
 
 
 
@@ -53,7 +53,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wingdi. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wingdi.h</dt> </dl> |
 
 
 

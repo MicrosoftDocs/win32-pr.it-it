@@ -1,21 +1,21 @@
 ---
-description: Le chiavi di sessione sono chiavi generate per essere utilizzate in una singola sessione di comunicazione.
+description: Le chiavi di sessione sono chiavi generate per essere usate in una singola sessione di comunicazione.
 ms.assetid: 18bf2023-084d-400d-b60d-1ba51ce6a2bc
 title: Chiavi di sessione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db4089f9ab5a0ae6889463c1b24c2eecb376c7f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a7fd11aacd467ac53f91420879d9cb350e5766d
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317696"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436216"
 ---
 # <a name="session-keys"></a>Chiavi di sessione
 
-Le [*chiavi di sessione*](../secgloss/s-gly.md) sono chiavi generate per essere utilizzate in una singola sessione di comunicazione. Le chiavi di sessione vengono modificate di frequente e vengono scartate quando non sono più necessarie. Ad esempio, TLS usa una chiave di sessione separata per ogni connessione e S/MIME usa una chiave di sessione separata per ogni messaggio di posta elettronica. Viene in genere usata una [*chiave simmetrica*](../secgloss/s-gly.md) come chiave della sessione.
+[*Le chiavi di*](../secgloss/s-gly.md) sessione sono chiavi generate per essere usate in una singola sessione di comunicazione. Le chiavi di sessione vengono modificate di frequente e vengono eliminate quando non sono più necessarie. In [*genere, come chiave di*](../secgloss/s-gly.md) sessione viene utilizzata una chiave simmetrica.
 
-Le chiavi della sessione sono volatili. Le applicazioni possono salvare queste chiavi per un uso successivo o per la trasmissione ad altri utenti. Per altre informazioni, vedere [archiviazione delle chiavi crittografiche ed Exchange](cryptographic-key-storage-and-exchange.md).
+Le chiavi di sessione sono volatili. Le applicazioni possono salvare queste chiavi per un uso successivo o per la trasmissione ad altri utenti. Per altre informazioni, vedere [Cryptographic Key Archiviazione and Exchange](cryptographic-key-storage-and-exchange.md).
 
  
 

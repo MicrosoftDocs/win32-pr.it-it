@@ -1,19 +1,19 @@
 ---
-description: Fornisce le informazioni (x, y) per i punti iniziale e finale della linea di base di un paragrafo nel documento Journal. Lo spazio delle coordinate usato per questi valori è HIMETRIC.
+description: Fornisce informazioni (x, y) per i punti iniziale e finale della linea di base di un paragrafo nel documento Journal. Lo spazio delle coordinate usato per questi valori è HIMETRIC.
 ms.assetid: ff6a97ad-0e48-4128-8f94-24802b6ddc05
 title: Elemento Baseline
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b64986707eaa1b382d2f88851367b9147c59c5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bc64f332608b4bd0281ae2a7f29db96101e9d2e
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225874"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436566"
 ---
 # <a name="baseline-element"></a>Elemento Baseline
 
-Fornisce le informazioni (x, y) per i punti iniziale e finale della linea di base di un paragrafo nel documento Journal. Lo spazio delle coordinate usato per questi valori è **HIMETRIC**.
+Fornisce informazioni (x, y) per i punti iniziale e finale della linea di base di un paragrafo nel documento Journal. Lo spazio delle coordinate usato per questi valori è **HIMETRIC.**
 
 ## <a name="definition"></a>Definizione
 
@@ -27,7 +27,7 @@ Fornisce le informazioni (x, y) per i punti iniziale e finale della linea di bas
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
@@ -35,9 +35,9 @@ Nessuna.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                      | Valori possibili           |
 |------------|---------------------------|----------|------------------------------------------------------------------|---------------------------|
-| **StartX** | **xs:nonNegativeInteger** | Necessario | Valore X per il punto che contrassegna l'inizio della linea di base. | Qualsiasi numero intero non negativo. |
-| **StartY** | **xs:nonNegativeInteger** | Necessario | Valore Y per il punto che contrassegna l'inizio della linea di base. | Qualsiasi numero intero non negativo. |
-| **EndX**   | **xs:nonNegativeInteger** | Necessario | Valore X per il punto che contrassegna la fine della linea di base.       | Qualsiasi numero intero non negativo. |
+| **Startx** | **xs:nonNegativeInteger** | Obbligatoria | Valore X per il punto che contrassegna l'inizio della linea di base. | Qualsiasi numero intero non negativo. |
+| **StartY** | **xs:nonNegativeInteger** | Obbligatoria | Valore Y per il punto che contrassegna l'inizio della linea di base. | Qualsiasi numero intero non negativo. |
+| **EndX**   | **xs:nonNegativeInteger** | Obbligatoria | Valore X per il punto che contrassegna la fine della linea di base.       | Qualsiasi numero intero non negativo. |
 
 
 
@@ -47,11 +47,11 @@ Nessuna.
 
 
 
-|              |                                                               |
-|--------------|---------------------------------------------------------------|
-| Tipo di elemento | ComplexType [**BaselineType**](baselinetype-complex-type.md) |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk                    |
-| Nome schema  | Lettore Journal                                                |
+|                  | Valore                                                         |
+|------------------|---------------------------------------------------------------|
+| **Tipo di elemento** | [**complexType BaselineType**](baselinetype-complex-type.md) |
+| **Namespace**    | urn:schemas-microsoft-com:tabletpc:richink                    |
+| **Nome schema**  | Lettore journal                                                |
 
 
 

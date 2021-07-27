@@ -1,19 +1,19 @@
 ---
-description: Se è true, indica che l'input penna può essere analizzato nuovamente. Questo elemento è false se l'utente ha impostato in modo esplicito il tipo di input penna utilizzando il Converti grafia in testo o la forma modifica in funzionalità del journal.
+description: Se true, indica che l'input penna può essere analizzato nuovamente. Questo elemento è false se l'utente ha impostato in modo esplicito il tipo di input penna usando le funzionalità Converti scrittura manuale in testo o Cambia forma in di Journal.
 ms.assetid: d1b9bd7f-e420-4290-a542-f1216b6ef203
 title: Elemento CanReClassify
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c8c2898ce789e8c967c74ca26d2ab46d968c22d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f243b4237e0dd9195a2a254a06cd86dceb31b63
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749103"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436476"
 ---
 # <a name="canreclassify-element"></a>Elemento CanReClassify
 
-Se è **true**, indica che l'input penna può essere analizzato nuovamente. Questo elemento è **false** se l'utente ha impostato in modo esplicito il tipo di input penna utilizzando il Converti grafia in testo o la forma modifica in funzionalità del journal.
+Se **true,** indica che l'input penna può essere analizzato nuovamente. Questo elemento è **false se** l'utente ha impostato in modo esplicito il tipo di input penna usando le funzionalità Converti scrittura manuale in testo o Cambia forma in di Journal.
 
 ## <a name="definition"></a>Definizione
 
@@ -27,21 +27,21 @@ Se è **true**, indica che l'input penna può essere analizzato nuovamente. Ques
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo di elemento | **xs:boolean**                             |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk |
-| Nome schema  | Lettore Journal                             |
+|                  | Valore                                      |
+|------------------|--------------------------------------------|
+| **Tipo di elemento** | xs:boolean                                 |
+| **Namespace**    | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nome schema**  | Lettore journal                             |
 
 
 

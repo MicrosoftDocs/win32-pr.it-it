@@ -1,19 +1,19 @@
 ---
-description: Contiene la classificazione di confidenza restituita da Journal Ink Analyzer per InkWord.
+description: Contiene la classificazione di attendibilità restituita dall'analizzatore input penna journal per InkWord.
 ms.assetid: cb0ed0d0-5e2f-44a3-b72b-61cbfd22bae8
 title: Elemento Confidence
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cef4869776a6cafc4e6ef4758649b918e0b5988
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5fdaaed8d9c57822ad94ec49183a399ed317917
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128131"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436501"
 ---
 # <a name="confidence-element"></a>Elemento Confidence
 
-Contiene la classificazione di confidenza restituita da Journal Ink Analyzer per [**InkWord**](inkword-element.md).
+Contiene la classificazione di attendibilità restituita dall'analizzatore input penna journal per [**InkWord.**](inkword-element.md)
 
 ## <a name="definition"></a>Definizione
 
@@ -23,29 +23,29 @@ Contiene la classificazione di confidenza restituita da Journal Ink Analyzer per
 
 ## <a name="parent-elements"></a>Elementi padre
 
-[**InkWord**](inkword-element.md)
+[**Inkword**](inkword-element.md)
 
 ## <a name="values"></a>Valori
 
-I valori validi per questo campo sono "0", "1" e "2". 0 indica una confidenza elevata, 1 indica una confidenza intermedia e 2 indica una scarsa confidenza.
+I valori validi per questo campo includono "0", "1" e "2". 0 indica attendibilità forte, 1 indica attendibilità intermedia e 2 indica attendibilità scarsa.
 
 ## <a name="child-elements"></a>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ## <a name="attributes"></a>Attributi
 
-Nessuna.
+Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo di elemento | **xs:string**                              |
-| Spazio dei nomi    | urn: schemas-microsoft-com: TabletPC: RichInk |
-| Nome schema  | Lettore Journal                             |
+|                  | Valore                                      |
+|------------------|--------------------------------------------|
+| **Tipo di elemento** | xs:string                                  |
+| **Namespace**    | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nome schema**  | Lettore di journal                             |
 
 
 
