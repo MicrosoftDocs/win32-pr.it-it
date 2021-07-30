@@ -1,21 +1,21 @@
 ---
 title: IUniversalOrchestrator::HasMoratoriumPassed
-description: Esegue una query dell'agente di orchestrazione universale per determinare se il periodo post-configurazione è stato superato.
-ms.topic: method
+description: Esegue una query su Universal Orchestrator per determinare se il periodo post-OOBE è stato superato.
+ms.topic: reference
 ms.date: 01/14/2021
-ms.openlocfilehash: 2ed354d365b795a0c959396e6b26d6bc73baad97
-ms.sourcegitcommit: 9c8ddec1e955f181beecad0478c1fb79013b5e9d
+ms.openlocfilehash: 3ccbf673b8fe22fabe7001112e04e87bd45eeaa4
+ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "106320072"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991798"
 ---
-# <a name="iuniversalorchestratorhasmoratoriumpassed-method"></a>Metodo IUniversalOrchestrator:: HasMoratoriumPassed
+# <a name="iuniversalorchestratorhasmoratoriumpassed-method"></a>Metodo IUniversalOrchestrator::HasMoratoriumPassed
 
 > [!NOTE] 
-> Questa API appartiene all'API dell'agente di orchestrazione universale.
+> Questa API appartiene all'API Universal Orchestrator.
 
-Consente ai client di determinare se l'agente di orchestrazione universale funziona immediatamente dopo l'esperienza predefinita del nuovo dispositivo, il che limita i tentativi di lavoro per ridurre al minimo l'interruzione dell'utente. 
+Consente ai client di determinare se Universal Orchestrator funziona immediatamente dopo il nuovo dispositivo Out of Box Experience, che limita i tentativi di lavoro per ridurre al minimo l'interruzione dell'utente. 
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,10 +33,10 @@ Stringa univoca che identifica tutte le chiamate da questo client specifico.
 
 `hasMoratoriumPassed`
 
-Parametro di output in cui è archiviato il risultato della query.
+Parametro di output che archivia il risultato della query.
 
 ## <a name="return-value"></a>Valore restituito
-Se questo metodo ha esito positivo, restituisce **S_OK**.  In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S_OK**.  In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
