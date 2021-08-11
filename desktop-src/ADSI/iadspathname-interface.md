@@ -1,24 +1,24 @@
 ---
 title: Interfaccia IADsPathname
-description: Analizza e modifica vari elementi di un ADsPath.
+description: Analizza e modifica vari elementi di ADsPath.
 ms.assetid: 1f820488-2e75-4257-90c7-9ec67aac4fe4
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IADsPathname ADSI
-- IADsPathname ADSI, utilizzo
-- ADSI ADSI, codice di esempio C/C++, uso di IADsPathname
+- IADsPathname ADSI , con
+- ADSI ADSI, codice di esempio C/C++, con IADsPathname
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f5cbc5901c8f9dcebebde485decc49fc5bcf312
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a2a87e64a5afabf0e7fc1fa760ec43c8ba4113fd9f39e90e42f77c307f6e6f8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179524"
 ---
 # <a name="iadspathname-interface"></a>Interfaccia IADsPathname
 
-L'interfaccia [**IADsPathname**](/windows/desktop/api/Iads/nn-iads-iadspathname) analizza e modifica vari elementi di un ADsPath. Converte inoltre ADsPaths tra diversi formati di visualizzazione.
+[**L'interfaccia IADsPathname**](/windows/desktop/api/Iads/nn-iads-iadspathname) analizza e modifica vari elementi di un oggetto ADsPath. Converte anche ADsPaths tra vari formati di visualizzazione.
 
 Nell'esempio di codice seguente viene estratto e restituito il nome del server da un ADsPath valido per la visualizzazione all'utente in un'utilità di manutenzione.
 
@@ -56,7 +56,7 @@ HRESULT GetServerName(BSTR adsPath, BSTR *adsServer)
 
 
 
-L'esempio di codice seguente consente di inizializzare un oggetto ADSI appena creato impostando la proprietà del **nome distinto** dell'oggetto dal proprio ADsPath. Tenere presente che la routine chiamante deve eseguire il commit di tutte le modifiche apportate all'archivio directory sottostante richiamando il metodo **seinfo** .
+L'esempio di codice seguente consente di inizializzare un oggetto ADSI appena creato impostando la proprietà **Distinguished Name** dell'oggetto dal proprio ADsPath. Tenere presente che la routine chiamante deve eseguire il commit di tutte le modifiche apportate all'archivio directory sottostante richiamando il **metodo SetInfo.**
 
 
 ```C++
@@ -114,9 +114,9 @@ HRESULT SetDistinguishedName(IADs *pIADs)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo Attribute-Types
+title: Attribute-Types attributo
 description: Proprietà multivalore che contiene stringhe che rappresentano ogni attributo nello schema.
 ms.assetid: 37d48944-b573-4067-982c-2e57db040b54
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Attribute-Types attribute
-- Schema AD dell'attributo attributeTypes
+- Attribute-Types schema AD dell'attributo
+- Attributo attributeTypes Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99f587f1704f7e2ea393279a8dbf0a20be10ef02
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8fc2e13bac48c208c08512b5fab2ae16523b92f763bfba18a1f474e3b7931350
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177949"
 ---
-# <a name="attribute-types-attribute"></a>Attributo Attribute-Types
+# <a name="attribute-types-attribute"></a>Attribute-Types attributo
 
 Proprietà multivalore che contiene stringhe che rappresentano ogni attributo nello schema.
 
@@ -30,12 +30,12 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Attribute-Types                             |
-| LDAP-Display-Name | attributeTypes                              |
+| Ldap-Display-Name | attributeTypes                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore schema                        |
+| Aggiorna privilegio  | Amministratore dello schema                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 2.5.21.5                                    |
-| System-ID-GUID    | 9a7ad944-ca53-11d1-bbd0-0080c76670c0        |
+| System-Id-Guid    | 9a7ad944-ca53-11d1-bbd0-0080c76670c0        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Proprietà multivalore che contiene stringhe che rappresentano ogni attributo ne
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Risorsa DIALOGEX
 description: Definisce una finestra di dialogo. | Risorsa DIALOGEX
 ms.assetid: 3ff28b68-e8b4-444d-8e26-5119ed30e44e
 keywords:
-- Menu risorse DIALOGEX e altre risorse
+- Menu delle risorse DIALOGEX e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd55bfb06b678742aa5e356c9e62b14229aa8d3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4e999d4f42477451fef25bd59fb95606624cc4fd60d340231b3ee95558834d25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235310"
 ---
 # <a name="dialogex-resource"></a>Risorsa DIALOGEX
 
-Definisce una finestra di dialogo. L'istruzione definisce la posizione e le dimensioni della finestra di dialogo sullo schermo nonché lo stile della finestra di dialogo. Definisce inoltre quanto segue:
+Definisce una finestra di dialogo. L'istruzione definisce la posizione e le dimensioni della finestra di dialogo sullo schermo, nonché lo stile della finestra di dialogo. Definisce anche quanto segue:
 
--   ID della guida nella finestra di dialogo e nei controlli all'interno della finestra di dialogo.
--   Utilizzare l'istruzione [**ExStyle**](exstyle-statement.md) per la finestra di dialogo e i controlli all'interno della finestra di dialogo.
--   Spessore del carattere e impostazioni italiche per il tipo di carattere da utilizzare nella finestra di dialogo.
+-   ID della Guida nella finestra di dialogo stessa e nei controlli all'interno della finestra di dialogo.
+-   Uso [**dell'istruzione EXSTYLE**](exstyle-statement.md) per la finestra di dialogo stessa e per i controlli all'interno della finestra di dialogo.
+-   Impostazioni relative a spessore del carattere e corsivo per il tipo di carattere da utilizzare nella finestra di dialogo.
 -   Dati specifici del controllo per i controlli all'interno della finestra di dialogo.
--   Uso dei nomi di classe di sistema predefiniti **BEdit**, **IEDIT** e **hedit** .
+-   Uso dei nomi di classe di sistema predefiniti **BEDIT,** **IEDIT** e **HEDIT.**
 
 ``` syntax
 nameID DIALOGEX x, y, width, height [ , helpID] [optional-statements]  {control-statements}
@@ -37,66 +37,66 @@ nameID DIALOGEX x, y, width, height [ , helpID] [optional-statements]  {control-
 
 <dl> <dt>
 
-<span id="nameID"></span><span id="nameid"></span><span id="NAMEID"></span>*nameID*
+<span id="nameID"></span><span id="nameid"></span><span id="NAMEID"></span>*Nameid*
 </dt> <dd>
 
-Nome univoco o valore di Unsigned Integer a 16 bit univoco che identifica la finestra di dialogo.
+Nome univoco o valore unsigned integer a 16 bit univoco che identifica la finestra di dialogo.
 
 </dd> <dt>
 
-<span id="x"></span><span id="X"></span>*x*
+<span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Posizione sulla schermata del lato sinistro della finestra di dialogo, in unità di dialogo.
+Posizione nella schermata del lato sinistro della finestra di dialogo, in unità di finestra di dialogo.
 
 </dd> <dt>
 
-<span id="y"></span><span id="Y"></span>*y*
+<span id="y"></span><span id="Y"></span>*Y*
 </dt> <dd>
 
-Posizione sullo schermo della parte superiore della finestra di dialogo, in unità di dialogo.
+Posizione nella schermata superiore della finestra di dialogo, in unità di finestra di dialogo.
 
 </dd> <dt>
 
 <span id="width"></span><span id="WIDTH"></span>*Larghezza*
 </dt> <dd>
 
-Larghezza della finestra di dialogo, in unità di dialogo.
+Larghezza della finestra di dialogo, in unità di finestra di dialogo.
 
 </dd> <dt>
 
-<span id="height"></span><span id="HEIGHT"></span>*altezza*
+<span id="height"></span><span id="HEIGHT"></span>*Altezza*
 </dt> <dd>
 
-Altezza della finestra di dialogo, in unità di dialogo.
+Altezza della finestra di dialogo, in unità di finestra di dialogo.
 
 </dd> <dt>
 
-<span id="helpID"></span><span id="helpid"></span><span id="HELPID"></span>*helpID*
+<span id="helpID"></span><span id="helpid"></span><span id="HELPID"></span>*HELPID*
 </dt> <dd>
 
-Espressione numerica che indica l'ID utilizzato per identificare la finestra di dialogo durante l'elaborazione della [**\_ Guida di WM**](../shell/wm-help.md) .
+Espressione numerica che indica l'ID usato per identificare la finestra di dialogo durante [**l'elaborazione della \_ Guida WM.**](../shell/wm-help.md)
 
 </dd> <dt>
 
-<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*facoltativo-istruzioni*
+<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*istruzioni facoltative*
 </dt> <dd>
 
-Opzioni per la finestra di dialogo. Questa operazione può essere costituita da zero o più delle istruzioni seguenti.
+Opzioni per la finestra di dialogo. Può trattarsi di zero o più delle istruzioni seguenti.
 
 
 
 | Istruzione                                                         | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Didascalia** "*testo*"                                              | Didascalia della finestra di dialogo se dispone di una barra del titolo. Per ulteriori informazioni, vedere l' [**istruzione Caption**](caption-statement.md).                                                                                                                                                                                                                                                                                                                                                            |
-| **Caratteristiche** *DWORD*                                       | Valore **DWORD** definito dall'utente per l'utilizzo da strumenti di risorse. Questo valore non viene utilizzato dal sistema. Per altre informazioni, vedere [**dichiarazione di caratteristiche**](characteristics-statement.md).                                                                                                                                                                                                                                                                                               |
-| _Classe_ Class                                                  | Unsigned Integer a 16 bit o una stringa racchiusa tra virgolette doppie ("), che identifica la classe della finestra di dialogo. Per ulteriori informazioni, vedere [**istruzione Class**](class-statement.md).                                                                                                                                                                                                                                                                                     |
-| **ExStyle** =  *stili estesi*                                    | Stile finestra esteso della finestra di dialogo. Per ulteriori informazioni, vedere l' [**istruzione EXSTYLE**](exstyle-statement.md).                                                                                                                                                                                                                                                                                                                                                                    |
-| **Font** *pointsize*, "*Typeface*", *Weight*, *Italic*, *CharSet* | Dimensioni del punto e carattere tipografico per il tipo di carattere. Per *Weight*, usare i valori ** \_ \* FW* _ definiti in wingdi. h. Per _italic *, specificare TRUE per usare un tipo di carattere corsivo; in caso contrario, FALSE. Per *CharSet*, usare il valore definito nel membro **LfCharSet** della struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) . Per ottenere il tipo di carattere definitivo per una finestra di dialogo, un'applicazione deve specificare *CharSet* insieme ad altre proprietà del tipo di carattere. Per altre informazioni, vedere [**istruzione font**](font-statement.md). |
-|  *Lingua* lingua, *lingua*                            | Lingua della finestra di dialogo. Per ulteriori informazioni, vedere [**istruzione language**](language-statement.md).                                                                                                                                                                                                                                                                                                                                                                               |
-|  *Menu* menu                                               | Menu da utilizzare. Questo valore è il nome del menu o il relativo identificatore di tipo Integer. Per ulteriori informazioni, vedere [**istruzione di menu**](menu-statement.md).                                                                                                                                                                                                                                                                                                                             |
-|  *Stili* di stile                                                | Stili della finestra di dialogo. Per ulteriori informazioni, vedere [**istruzione Style**](style-statement.md).                                                                                                                                                                                                                                                                                                                                                                                       |
-|  *DWORD* versione                                               | Valore **DWORD** definito dall'utente. Questa istruzione è destinata all'utilizzo da parte di altri strumenti di risorse e non viene utilizzata dal sistema. Per ulteriori informazioni, vedere [**istruzione version**](version-statement.md).                                                                                                                                                                                                                                                                                |
+| **DIDASCALIA** "*text*"                                              | Didascalia della finestra di dialogo se dispone di una barra del titolo. Per altre informazioni, vedere [**Istruzione CAPTION.**](caption-statement.md)                                                                                                                                                                                                                                                                                                                                                            |
+| **CHARACTERISTICS** *dword*                                       | Valore DWORD definito **dall'utente** per l'uso da parte degli strumenti delle risorse. Questo valore non viene utilizzato dal sistema. Per altre informazioni, vedere [**Istruzione CHARACTERISTICS.**](characteristics-statement.md)                                                                                                                                                                                                                                                                                               |
+| **Classe**_CLASS_                                                  | Intero senza segno a 16 bit o stringa, racchiusa tra virgolette doppie ("), che identifica la classe della finestra di dialogo. Per altre informazioni, vedere [**Istruzione CLASS.**](class-statement.md)                                                                                                                                                                                                                                                                                     |
+| **EXSTYLE** =  *stili estesi*                                    | Stile esteso della finestra di dialogo. Per altre informazioni, vedere [**Istruzione EXSTYLE.**](exstyle-statement.md)                                                                                                                                                                                                                                                                                                                                                                    |
+| **FONT** *punta a*, " carattere *tipografico*", *spessore*, *corsivo*, *charset* | Dimensione del punto e carattere tipografico per il tipo di carattere. Per *peso,* usare i valori **FW \_ \** _ definiti in WinGDI.h. Per _italic*, specificare TRUE per usare un carattere corsivo, FALSE in caso contrario. Per *charset*, usare il valore definito nel membro **lfCharSet** della [**struttura LOGFONT.**](/windows/win32/api/wingdi/ns-wingdi-logfonta) Per ottenere il tipo di carattere definitivo per una finestra di dialogo, un'applicazione deve specificare *un set di* caratteri insieme ad altre proprietà del tipo di carattere. Per altre informazioni, vedere [**Istruzione FONT**](font-statement.md). |
+| **LANGUAGE** *language*, *sottolinguaggio*                            | Lingua della finestra di dialogo. Per altre informazioni, vedere [**Language Statement**](language-statement.md).                                                                                                                                                                                                                                                                                                                                                                               |
+| **MENU** *menuname*                                               | Menu da usare. Questo valore è il nome del menu o il relativo identificatore integer. Per altre informazioni, vedere [**Istruzione MENU.**](menu-statement.md)                                                                                                                                                                                                                                                                                                                             |
+| **Stili DI** *STILE*                                                | Stili della finestra di dialogo. Per altre informazioni, vedere [**Istruzione STYLE.**](style-statement.md)                                                                                                                                                                                                                                                                                                                                                                                       |
+| **VERSION** *dword*                                               | Valore **DWORD definito dall'utente.** Questa istruzione è destinata all'uso da parte di strumenti aggiuntivi per le risorse e non viene usata dal sistema. Per altre informazioni, vedere [**Istruzione VERSION.**](version-statement.md)                                                                                                                                                                                                                                                                                |
 
 
 
@@ -107,26 +107,26 @@ Opzioni per la finestra di dialogo. Questa operazione può essere costituita da 
 <span id="control-statements"></span><span id="CONTROL-STATEMENTS"></span>*istruzioni di controllo*
 </dt> <dd>
 
-Il corpo della risorsa **DIALOGEX** è costituito da un numero qualsiasi di istruzioni di controllo. Sono disponibili quattro famiglie di istruzioni di controllo: generico, statico, pulsante e modifica. Per altre informazioni, vedere la sezione Osservazioni.
+Il corpo della **risorsa DIALOGEX** è costituito da un numero qualsiasi di istruzioni di controllo. Sono disponibili quattro famiglie di istruzioni di controllo: generica, statica, pulsante e modifica. Per altre informazioni, vedere la sezione Osservazioni.
 
 </dd> </dl>
 
-Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [attributi di risorse comuni](common-resource-attributes.md).
+Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [Attributi comuni delle risorse.](common-resource-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
-Le operazioni valide che possono essere contenute in qualsiasi espressione numerica nelle istruzioni di **DIALOGEX** sono le seguenti:
+Le operazioni valide che possono essere contenute in una qualsiasi delle espressioni numeriche nelle istruzioni di **DIALOGEX** sono le seguenti:
 
--   Aggiungi (' +')
--   Subtract ('-')
--   Meno unario ('-')
--   NOT unario (' ~')
--   E (' &')
--   O (' \| ')
+-   Aggiungi ('+')
+-   Sottrazione ('-')
+-   Unry minus ('-')
+-   NOT uniri ('~')
+-   AND ('&')
+-   OR (' \| ')
 
-Il corpo della risorsa è costituito da istruzioni generiche, statiche, di controllo Button e di modifica. Sebbene ognuna di queste famiglie di istruzioni usi una sintassi diversa per la definizione di funzionalità specifiche dei controlli, tutti condividono una sintassi comune per definire la posizione, le dimensioni, gli stili estesi, il numero di identificazione della guida e i dati specifici del controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Il corpo della risorsa è costituito da istruzioni generiche, statiche, pulsanti e controlli di modifica. Sebbene ognuna di queste famiglie di istruzioni usi una sintassi diversa per la definizione di funzionalità specifiche dei relativi controlli, condividono tutte una sintassi comune per la definizione di posizione, dimensioni, stili estesi, numero di identificazione della Guida e dati specifici del controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
-### <a name="generic-control-statements"></a>Istruzioni di controllo generico
+### <a name="generic-control-statements"></a>Istruzioni di controllo generiche
 
 ``` syntax
 CONTROL controlText, id, className, style
@@ -137,28 +137,28 @@ CONTROL controlText, id, className, style
 <span id="controlText"></span><span id="controltext"></span><span id="CONTROLTEXT"></span>*controlText*
 </dt> <dd>
 
-Testo della finestra per il controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Testo della finestra per il controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 </dd> <dt>
 
-<span id="id"></span><span id="ID"></span>*ID*
+<span id="id"></span><span id="ID"></span>*Id*
 </dt> <dd>
 
-Identificatore del controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Identificatore del controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 </dd> <dt>
 
-<span id="className"></span><span id="classname"></span><span id="CLASSNAME"></span>*className*
+<span id="className"></span><span id="classname"></span><span id="CLASSNAME"></span>*Classname*
 </dt> <dd>
 
-Nome della classe. Può trattarsi di una stringa racchiusa tra virgolette doppie (") o di una delle classi di sistema predefinite seguenti: **Button**, **static**, **Edit**, **ListBox**, **ScrollBar** o **ComboBox**.
+Nome della classe. Può trattarsi di una stringa racchiusa tra virgolette doppie (") o di una delle classi di sistema predefinite **seguenti: BUTTON**, **STATIC**, **EDIT**, **LISTBOX**, **SCROLLBAR** o **COMBOBOX**.
 
 </dd> <dt>
 
-<span id="style"></span><span id="STYLE"></span>*stile*
+<span id="style"></span><span id="STYLE"></span>*Stile*
 </dt> <dd>
 
-Gli stili della finestra (esplicito **WS \_ \* *_, _* BS \_ \* *_, _* SS \_ \* *_, _* es \_ \* *_, _* lbs \_ \* *_, _* SBS \_ \* *_ e _* \_ \*** i valori di stile CBS definiti in winuser. H possono essere usati aggiungendo un'inclusione al file RC: `#include "winuser.h"` ). Per altre informazioni, vedere [stili di finestra](/windows/desktop/winmsg/window-styles).
+Stili di finestra (I valori di stile **WS \_ \* *_, _* \_ \* BS *_, _* \_ \* SS *_, _* ES \_ \* *_, _* LBS \_ \* *_, _* \_ \* SBS *_, e _* CBS \_ \*** definiti in Winuser.H possono essere usati aggiungendo un'inclusione al file RC: `#include "winuser.h"` ). Per altre informazioni, vedere [Stili delle finestre.](/windows/desktop/winmsg/window-styles)
 
 </dd> </dl>
 
@@ -173,21 +173,21 @@ staticClass controlText, id
 <span id="staticClass"></span><span id="staticclass"></span><span id="STATICCLASS"></span>*staticClass*
 </dt> <dd>
 
-**LTEXT**, **RTEXT** o **CTEXT**.
+**LTEXT,** **RTEXT** o **CTEXT.**
 
 </dd> <dt>
 
 <span id="controlText"></span><span id="controltext"></span><span id="CONTROLTEXT"></span>*controlText*
 </dt> <dd>
 
-Testo della finestra per il controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Testo della finestra per il controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 </dd> <dt>
 
-<span id="id"></span><span id="ID"></span>*ID*
+<span id="id"></span><span id="ID"></span>*Id*
 </dt> <dd>
 
-Identificatore del controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Identificatore del controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 </dd> </dl>
 
@@ -199,28 +199,28 @@ buttonClass controlText, id
 
 <dl> <dt>
 
-<span id="buttonClass"></span><span id="buttonclass"></span><span id="BUTTONCLASS"></span>*buttonClass*
+<span id="buttonClass"></span><span id="buttonclass"></span><span id="BUTTONCLASS"></span>*Classe button*
 </dt> <dd>
 
-**AUTO3STATE**, **AUTOCHECKBOX**, **AUTORADIOBUTTON**, **CheckBox**, **PUSHBOX**, **pulsante**, **RadioButton**, **STATE3** o **UserButton**.
+**AUTO3STATE**, **AUTOCHECKBOX**, **AUTORADIOBUTTON**, **CHECKBOX**, **PUSHBOX**, **PUSHBUTTON**, **RADIOBUTTON**, **STATE3** O **USERBUTTON**.
 
 </dd> <dt>
 
 <span id="controlText"></span><span id="controltext"></span><span id="CONTROLTEXT"></span>*controlText*
 </dt> <dd>
 
-Testo della finestra per il controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Testo della finestra per il controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 </dd> <dt>
 
-<span id="id"></span><span id="ID"></span>*ID*
+<span id="id"></span><span id="ID"></span>*Id*
 </dt> <dd>
 
-Identificatore del controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Identificatore del controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 </dd> </dl>
 
-### <a name="edit-control-statements"></a>Modificare le istruzioni di controllo
+### <a name="edit-control-statements"></a>Modificare istruzioni di controllo
 
 ``` syntax
 editClass id
@@ -231,14 +231,14 @@ editClass id
 <span id="editClass"></span><span id="editclass"></span><span id="EDITCLASS"></span>*editClass*
 </dt> <dd>
 
-**EDITTEXT**, **BEdit**, **hedit** o **IEDIT**.
+**EDITTEXT,** **BEDIT,** **HEDIT** o **IEDIT.**
 
 </dd> <dt>
 
-<span id="id"></span><span id="ID"></span>*ID*
+<span id="id"></span><span id="ID"></span>*Id*
 </dt> <dd>
 
-Identificatore del controllo. Per ulteriori informazioni, vedere [parametri di controllo comuni](common-control-parameters.md).
+Identificatore del controllo. Per altre informazioni, vedere [Parametri di controllo comuni.](common-control-parameters.md)
 
 </dd> </dl>
 
@@ -246,43 +246,43 @@ Identificatore del controllo. Per ulteriori informazioni, vedere [parametri di c
 
 <dl> <dt>
 
-[Utilizzo delle finestre di dialogo](../dlgbox/using-dialog-boxes.md)
+[Uso delle finestre di dialogo](../dlgbox/using-dialog-boxes.md)
 </dt> <dt>
 
-[**ACCELERATORI**](accelerators-resource.md)
+[**Acceleratori**](accelerators-resource.md)
 </dt> <dt>
 
-[**CARATTERISTICHE**](characteristics-statement.md)
+[**Caratteristiche**](characteristics-statement.md)
 </dt> <dt>
 
-[**CONTROLLO**](control-control.md)
+[**Controllo**](control-control.md)
 </dt> <dt>
 
-[**CreateDialog**](/windows/win32/api/winuser/nf-winuser-createdialoga)
+[**Finestra di dialogo CreateDialog**](/windows/win32/api/winuser/nf-winuser-createdialoga)
 </dt> <dt>
 
-[**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa)
+[**Createwindow**](/windows/win32/api/winuser/nf-winuser-createwindowa)
 </dt> <dt>
 
-[**DialogBox**](/windows/win32/api/winuser/nf-winuser-dialogboxa)
+[**Finestra di dialogo**](/windows/win32/api/winuser/nf-winuser-dialogboxa)
 </dt> <dt>
 
 [**GetDialogBaseUnits**](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits)
 </dt> <dt>
 
-[**LINGUAGGIO**](language-statement.md)
+[**Lingua**](language-statement.md)
 </dt> <dt>
 
-[**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
+[**Logfont**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 </dt> <dt>
 
-[MENU](menu-resource.md)
+[Menu](menu-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
 </dt> <dt>
 
-[**UN'STRINGTABLE**](stringtable-resource.md)
+[**Stringtable**](stringtable-resource.md)
 </dt> <dt>
 
 [**Versione**](version-statement.md)

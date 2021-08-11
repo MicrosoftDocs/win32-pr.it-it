@@ -1,28 +1,28 @@
 ---
-title: Impossibile modificare la password dell'utente (provider WinNT)
+title: Modifica dell'utente non è possibile modificare la password (provider WinNT)
 description: Informazioni su come negare a un utente l'autorizzazione per modificare una password per il provider WinNT. La possibilità di un utente di modificare la propria password può essere concessa o negata.
 ms.assetid: 071a817b-087e-49ee-af1a-6f190493cac0
 ms.tgt_platform: multiple
 keywords:
-- Impossibile modificare la password dell'utente (provider WinNT)
+- Modifica dell'utente non è possibile modificare la password (provider WinNT)
 - L'utente non può modificare la password (provider WinNT), modifica
-- Provider WINNT ADSI, esempi di gestione degli utenti, utente non può modificare la password, modifica
+- Provider WinNT ADSI, esempi di gestione utenti,Utente non può modificare la password, modifica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33510fa36285fa49a413b84d91e29f8d5a367622
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 6b510fb08172a178a454ee731110765844368ca78108047a7a5a738b78b6a196
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178965"
 ---
-# <a name="modifying-user-cannot-change-password-winnt-provider"></a>Impossibile modificare la password dell'utente (provider WinNT)
+# <a name="modifying-user-cannot-change-password-winnt-provider"></a>Modifica dell'utente non è possibile modificare la password (provider WinNT)
 
-La possibilità di un utente di modificare la propria password è un'autorizzazione che può essere concessa o negata. Per negare questa autorizzazione, aggiungere il flag **\_ ADS UF \_ PASSWD \_ CANT \_ CHANGE** alla **proprietà userFlags** dell'oggetto utente. Per concedere questa autorizzazione, rimuovere il flag **\_ ADS UF \_ PASSWD \_ CANT \_ CHANGE** dalla **proprietà userFlags** dell'oggetto utente.
+La possibilità di un utente di modificare la propria password è un'autorizzazione che può essere concessa o negata. Per negare questa autorizzazione, aggiungere il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** alla **proprietà userFlags** dell'oggetto utente. Per concedere questa autorizzazione, rimuovere il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** dalla **proprietà userFlags** dell'oggetto utente.
 
 ## <a name="example-code"></a>Codice di esempio
 
-Nell'esempio di codice seguente viene illustrato come modificare il flag **\_ ADS UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
+L'esempio di codice seguente illustra come modificare il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
 
 
 ```VB
@@ -62,7 +62,7 @@ End Sub
 
 
 
-Nell'esempio di codice seguente viene illustrato come modificare il flag **\_ ADS UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
+L'esempio di codice seguente illustra come modificare il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
 
 
 ```C++

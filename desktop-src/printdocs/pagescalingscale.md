@@ -4,12 +4,12 @@ ms.assetid: 49a60a94-fb65-4439-bebf-3f77ea0861fe
 title: PageScalingScale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8c6cee5fc46568e3cf7f15ecd43c07c6584c856
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 01b8a46c0c0055e48f5feb536295ffc1045a4e71df2ae353506ea6ed9f592e7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234391"
 ---
 # <a name="pagescalingscale"></a>PageScalingScale
 

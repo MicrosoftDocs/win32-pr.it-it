@@ -1,19 +1,19 @@
 ---
 description: Informazioni sull'elemento DocumentPageRanges, che descrive l'intervallo di output del documento nelle pagine.
 ms.assetid: 4cd1b0f8-7f7e-40cc-8d19-d44187822cd1
-title: Controlli DocumentPageRanges
+title: DocumentPageRanges
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e854736c72b3bff5ba2e4750e0b09e0b87c2c9f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8c9a1941b36970628ddcb5c94cad42bd7f520f0b48e00ff5e1263079818757a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235118"
 ---
-# <a name="documentpageranges"></a>Controlli DocumentPageRanges
+# <a name="documentpageranges"></a>DocumentPageRanges
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Descrive l'intervallo di output del documento nelle pagine. Il valore del parametro deve essere conforme alla struttura seguente:
 
@@ -21,7 +21,7 @@ Descrive l'intervallo di output del documento nelle pagine. Il valore del parame
 
 -   PageRange: "*PageNumber*" o "*PageNumber* - *PageNumber*"
 
--   PageNumber: da 1 a N, dove N è il numero di pagine nel documento. Se *PageNumber* > N, *PageNumber* = N.
+-   PageNumber: da 1 a N, dove N è il numero di pagine nel documento. Se *PageNumber >* N, *PageNumber* = N.
 
 Gli spazi vuoti nella stringa devono essere ignorati.
 
@@ -82,8 +82,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
-| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
+| UnitType<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 5ce12c5a-c9ed-4f96-bdbf-1e14b7b5dbcd
 title: System.Media.ThumbnailSmallPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c834315bc423f29b916167d2ff6f29f178cb5cb5
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 4b296bf93d0fb4bdd95d5b1d2275e9e1e517718c17ef5918e427a6098afb397c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230815"
 ---
 # <a name="systemmediathumbnailsmallpath"></a>System.Media.ThumbnailSmallPath
 

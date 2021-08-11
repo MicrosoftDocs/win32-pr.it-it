@@ -1,19 +1,19 @@
 ---
-description: Indica il numero di frame per l'immagine.
+description: Indica il numero di fotogrammi per l'immagine.
 ms.assetid: c24d397a-69c3-4a2c-a9b8-967a03a89e58
-title: System. Media. FrameCount
+title: System.Media.FrameCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12170c336a8c35fa6ec439b4304b9126e22a4029
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a55eb350529a32bfdce1b5a3f22b5f1f11e04d54331adc783ad0b84df9c9efae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230843"
 ---
-# <a name="systemmediaframecount"></a>System. Media. FrameCount
+# <a name="systemmediaframecount"></a>System.Media.FrameCount
 
-Indica il numero di frame per l'immagine.
+Indica il numero di fotogrammi per l'immagine.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -48,7 +48,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,7 +78,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

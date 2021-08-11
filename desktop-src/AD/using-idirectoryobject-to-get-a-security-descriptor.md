@@ -4,26 +4,26 @@ description: Questo argomento include un esempio di codice usato per ottenere un
 ms.assetid: 989abd3f-9043-4c3f-a99a-63fa95daf203
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, uso di IDirectoryObject per ottenere un descrittore di sicurezza
+- Active Directory è un esempio di Active Directory, usando IDirectoryObject per ottenere un descrittore di sicurezza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 562438d37d6bfadadfee95d13f80cb4c4728e0f2
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: bd7b2bd256fb9601cc61ff41465763ccc30c39bc68ff79760019dad1f8d510bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103724391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118182515"
 ---
 # <a name="using-idirectoryobject-to-get-a-security-descriptor"></a>Uso di IDirectoryObject per ottenere un descrittore di sicurezza
 
 Questo argomento include un esempio di codice usato per ottenere un descrittore di sicurezza.
 
-Nell'esempio di codice C++ riportato di seguito:
+L'esempio di codice C++ seguente:
 
 -   Crea un buffer.
--   Usa l'interfaccia [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) per ottenere il descrittore di sicurezza dell'oggetto specificato.
+-   Usa [**l'interfaccia IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) per ottenere il descrittore di sicurezza dell'oggetto specificato.
 -   Copia il descrittore di sicurezza nel buffer.
--   Restituisce un puntatore a una struttura di [**\_ descrittore di sicurezza**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) che contiene i dati del descrittore di sicurezza.
+-   Restituisce un puntatore a una [**struttura SECURITY \_ DESCRIPTOR**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) che contiene i dati del descrittore di sicurezza.
 
 
 ```C++
@@ -85,6 +85,6 @@ HRESULT GetSDFromIDirectoryObject(
 
 
 
- 
+ 
 
- 
+ 

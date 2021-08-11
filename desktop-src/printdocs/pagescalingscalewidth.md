@@ -1,21 +1,21 @@
 ---
-description: Ottenere informazioni sul parametro PageScalingScaleWidth. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere informazioni sul parametro PageScalingScaleWidth. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 0de776f3-ae09-49f4-a829-b3c0e2ab5bbc
 title: PageScalingScaleWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75b6180395eb656ee40d8558f7208fec2ad2fce8
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 4c461b8e66b38605af749546a66b31016362140365e7998dca9960e9ad61d201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234346"
 ---
 # <a name="pagescalingscalewidth"></a>PageScalingScaleWidth
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica il fattore di scala nella direzione ImageableSizeWidth per il ridimensionamento personalizzato.
+Specifica il fattore di ridimensionamento nella direzione ImageableSizeWidth per il ridimensionamento personalizzato.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -28,7 +28,7 @@ Specifica il fattore di scala nella direzione ImageableSizeWidth per il ridimens
 |----------------------------|---------------------------------------------------------|
 | Tipo di elemento <br/>   | ParameterDef<br/>                                 |
 | Prefisso di ambito <br/> | Pagina<br/>                                         |
-| Note <br/>          | Collegato all'elemento PageScaling, opzione Personalizzata<br/> |
+| Note <br/>          | Collegato all'elemento PageScaling, opzione Custom<br/> |
 
 
 
@@ -73,13 +73,13 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Proprietà                | xsi:type           | Valore                      |
 |-------------------------|--------------------|----------------------------|
-| DataType<br/>     | Stringa<br/>  | xs:integer<br/>      |
+| DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | Intero<br/> | Non definito<br/>       |
 | Minvalue<br/>     | Integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | Stringa<br/>  | psk:Conditional<br/> |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
 | Multipli<br/>     | Integer<br/> | 1<br/>               |
-| UnitType<br/>     | Stringa<br/>  | Micron<br/>         |
+| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
 
 
 

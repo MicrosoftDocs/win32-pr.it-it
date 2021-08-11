@@ -1,7 +1,7 @@
 ---
-description: Carica un driver della stampante nell'archivio driver dei server di stampa, in modo che possa essere installato chiamando InstallPrinterDriverFromPackage.
+description: Carica un driver della stampante nell'archivio dei driver dei server di stampa in modo che possa essere installato chiamando InstallPrinterDriverFromPackage.
 ms.assetid: dd3b3a3b-8ded-44ae-85dd-e630bc62e898
-title: Funzione UploadPrinterDriverPackage (winspool. h)
+title: Funzione UploadPrinterDriverPackage (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: f616c4f731d3a416806f499a513f48466263f441
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15347171299e370bd5e0128976f65e4de1f7034b083b16880ac21659bfac35f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118233869"
 ---
-# <a name="uploadprinterdriverpackage-function"></a>UploadPrinterDriverPackage (funzione)
+# <a name="uploadprinterdriverpackage-function"></a>Funzione UploadPrinterDriverPackage
 
-Carica un driver della stampante nell'archivio driver del server di stampa, in modo che possa essere installato chiamando [**InstallPrinterDriverFromPackage**](installprinterdriverfrompackage.md).
+Carica un driver della stampante nell'archivio driver del server di stampa in modo che possa essere installato chiamando [**InstallPrinterDriverFromPackage.**](installprinterdriverfrompackage.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,39 +47,39 @@ HRESULT UploadPrinterDriverPackage(
 
 <dl> <dt>
 
-*pszServer* \[ in\]
+*pszServer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica il nome del server di stampa. Utilizzare **null** se il server è il computer locale.
+Puntatore a una stringa costante con terminazione Null che specifica il nome del server di stampa. Utilizzare **NULL** se il server è il computer locale.
 
 </dd> <dt>
 
-*pszInfPath* \[ in\]
+*pszInfPath* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica il percorso di origine del file. inf del driver.
+Puntatore a una stringa costante con terminazione Null che specifica il percorso di origine del file inf del driver.
 
 </dd> <dt>
 
-*pszEnvironment* \[ in\]
+*pszEnvironment* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica l'architettura del processore del server (ad esempio, Windows NT x86). Può essere **null**.
+Puntatore a una stringa costante con terminazione Null che specifica l'architettura del processore del server, ad esempio Windows NT x86. Può essere **NULL.**
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-I possibili valori sono i seguenti:
+Può essere uno dei valori seguenti:
 
 
 
 | Valore                                                                                                                                                                                     | Significato                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="UPDP_SILENT_UPLOAD"></span><span id="updp_silent_upload"></span><dl> <dt>**UPDP_SILENT_UPLOAD**</dt> </dl>             | L'interfaccia utente non verrà visualizzata durante il caricamento.<br/>                                                                                                             |
-| <span id="UPDP_UPLOAD_ALWAYS"></span><span id="updp_upload_always"></span><dl> <dt>**UPDP_UPLOAD_ALWAYS**</dt> </dl>             | I file verranno caricati anche se il pacchetto è già presente nell'archivio driver del server.<br/>                                                                 |
-| <span id="UPDP_CHECK_DRIVERSTORE"></span><span id="updp_check_driverstore"></span><dl> <dt>**UPDP_CHECK_DRIVERSTORE**</dt> </dl> | L'archivio driver del server verrà verificato prima del caricamento per verificare se il pacchetto è già presente. Questa impostazione viene ignorata se è impostato UPDP_UPLOAD_ALWAYS.<br/> |
+| <span id="UPDP_UPLOAD_ALWAYS"></span><span id="updp_upload_always"></span><dl> <dt>**UPDP_UPLOAD_ALWAYS**</dt> </dl>             | I file verranno caricati anche se il pacchetto si trova già nell'archivio driver del server.<br/>                                                                 |
+| <span id="UPDP_CHECK_DRIVERSTORE"></span><span id="updp_check_driverstore"></span><dl> <dt>**UPDP_CHECK_DRIVERSTORE**</dt> </dl> | L'archivio driver del server verrà controllato prima del caricamento per verificare se il pacchetto è già presente. Questa impostazione viene ignorata se UPDP_UPLOAD_ALWAYS è impostata.<br/> |
 
 
 
@@ -87,45 +87,45 @@ I possibili valori sono i seguenti:
 
 </dd> <dt>
 
-*HWND* \[ in\]
+*hwnd* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'interfaccia utente di copia.
 
 </dd> <dt>
 
-*pszDestInfPath* \[ out\]
+*pszDestInfPath* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al percorso di destinazione, nell'archivio driver, in cui è stato copiato il file. inf del driver.
+Puntatore al percorso di destinazione, nell'archivio driver, in cui è stato copiato il file inf del driver.
 
 </dd> <dt>
 
-*pcchDestInfPath* \[ in uscita\]
+*pcchDestInfPath* \[ in, out\]
 </dt> <dd>
 
-In input, specifica la dimensione, in caratteri, del buffer *pszDestInfPath* . Nell'output, riceve la dimensione, in caratteri, della stringa di percorso, incluso il carattere null di terminazione.
+Nell'input specifica la dimensione, in caratteri, del buffer *pszDestInfPath.* Nell'output riceve la dimensione, in caratteri, della stringa di percorso, incluso il carattere Null di terminazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, il valore restituito viene S_OK. in caso contrario, **HRESULT** conterrà un codice di errore.
+Se l'operazione ha esito positivo, il valore restituito S_OK; in caso contrario, **HRESULT** conterrà un codice di errore.
 
-Per ulteriori informazioni sui codici di errore COM, vedere [gestione degli errori](../com/error-handling-in-com.md).
+Per altre informazioni sui codici di errore COM, vedere [Gestione degli errori.](../com/error-handling-in-com.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona che potrebbe non essere restituita immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-L'archivio driver è in genere% windir% \\ inf o% windir% \\ system32 \\ DriverStore \\ FileRepository.
+L'archivio driver è in genere %windir% \\ inf o %windir% \\ System32 \\ DriverStore \\ FileRepository.
 
-È possibile caricare un solo pacchetto alla volta. Se un pacchetto dipende da altri, è necessario caricarlo separatamente.
+È possibile caricare un solo pacchetto alla volta. Se un pacchetto dipende da altri, deve essere caricato separatamente.
 
-È possibile caricare solo i pacchetti driver firmati.
+È possibile caricare solo pacchetti driver firmati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -133,10 +133,10 @@ L'archivio driver è in genere% windir% \\ inf o% windir% \\ system32 \\ DriverS
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomi Unicode e ANSI<br/>   | **UploadPrinterDriverPackageW** (Unicode) e **UploadPrinterDriverPackageA** (ANSI)<br/>           |
 

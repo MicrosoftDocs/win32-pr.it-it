@@ -4,12 +4,12 @@ ms.assetid: 5dd44e13-bc5c-4e32-b5eb-2c7c40e10dfb
 title: System.ItemPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b84455a8b69ebf42cb91c191d1c275b70eeeb5ac
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 28385a889ea74b94ea990321dbb46173b078ff20222c22fe3599619faf9cb938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118231474"
 ---
 # <a name="systemitempathdisplaynarrow"></a>System.ItemPathDisplayNarrow
 
@@ -35,20 +35,20 @@ propertyDescription
 
 I valori PKEY sono definiti in Propkey.h.
 
-Per ottimizzare una colonna di visualizzazione ridotta, il formato della stringa deve essere personalizzato in modo che il nome venga visualizzato per primo.
+Per ottimizzare una colonna di visualizzazione stretta, è necessario adattare il formato della stringa in modo che il nome venga visualizzato per primo.
 
-Se l'elemento è un file, il valore della proprietà esclude l'estensione di file, ma include i nomi localizzati, se presenti. Se l'elemento è un messaggio, il valore include [System.ItemNamePrefix.](./props-system-itemnameprefix.md) Per analizzare il percorso di un elemento, [usare System.ItemUrl](./props-system-itemurl.md) [o System.ParsingPath.](./props-system-parsingpath.md)
+Se l'elemento è un file, il valore della proprietà esclude l'estensione di file, ma include i nomi localizzati, se presenti. Se l'elemento è un messaggio, il valore include [System.ItemNamePrefix](./props-system-itemnameprefix.md). Per analizzare il percorso di un elemento, [usare System.ItemUrl](./props-system-itemurl.md) o [System.ParsingPath](./props-system-parsingpath.md).
 
 Valori di esempio
 
 
 
-| Percorso                                   | ItemPathDisplayName                 |
+| Path                                   | ItemPathDisplayName                 |
 |----------------------------------------|-------------------------------------|
 | c: \\ barra mydir \\ \\hello.txt              | hello (c: \\ barra \\ mydir)              |
-| \\\\condivisione \\ server \\ mydir \\goodnews.doc | goodnews \\ \\ (condivisione \\ server \\ mydir) |
+| \\\\condivisione \\ server \\ mydir \\goodnews.doc | goodnews \\ \\ (condivisione server \\ \\ mydir) |
 | \\\\cartella \\ di condivisione \\ server              | folder \\ \\ (condivisione \\ server)          |
-| c: \\ MyDir \\ MyFolder                    | Cartella (c: \\ mydir)                |
+| c: \\ MyDir \\ MyFolder                    | MyFolder (c: \\ mydir)                |
 | /Mailbox Account/Inbox/'Re: Hello!'    | Re: Hello! (/Account cassetta postale/Posta in arrivo) |
 
 
@@ -59,7 +59,7 @@ Valori di esempio
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -89,7 +89,7 @@ Valori di esempio
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

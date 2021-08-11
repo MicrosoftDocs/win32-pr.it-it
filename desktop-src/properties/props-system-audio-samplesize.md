@@ -1,17 +1,17 @@
 ---
 description: Indica le dimensioni del campione per il file audio in bit per campione.
 ms.assetid: abbfd194-e800-46c3-b961-1cf3f5d59c82
-title: System. audio. SampleSize
+title: System.Audio.SampleSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36f1428de5052936684a97c93d4b275181e2fd8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be9568e1e60d568be9f2ffde0ddd77ed3db3f80318dcc4071a0facfeb9cffef5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232629"
 ---
-# <a name="systemaudiosamplesize"></a>System. audio. SampleSize
+# <a name="systemaudiosamplesize"></a>System.Audio.SampleSize
 
 Indica le dimensioni del campione per il file audio in bit per campione.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,6 +1,6 @@
 ---
-title: attributo bootParameter
-description: Fornisce i dati necessari per avviare un client senza dischi.
+title: Attributo bootParameter
+description: Fornisce i dati necessari per avviare un client senza disco.
 ms.assetid: b6e90890-ad27-4d2a-aa71-bb433fe7eb75
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 649507f7a59c46a4221711ba7cf5380b59d6650c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bbf763257df3eed0143210e1b5ad7d4b7f007234c7cad6ef67a038f0a97daeec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177922"
 ---
-# <a name="bootparameter-attribute"></a>attributo bootParameter
+# <a name="bootparameter-attribute"></a>Attributo bootParameter
 
-Fornisce i dati necessari per avviare un client senza dischi.
+Fornisce i dati necessari per avviare un client senza disco.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | bootParameter                        |
-| LDAP-Display-Name | bootParameter                        |
+| Ldap-Display-Name | bootParameter                        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.23                     |
-| System-ID-GUID    | d72a0750-8c7c-416E-8714-e65f11e908be |
+| System-Id-Guid    | d72a0750-8c7c-416e-8714-e65f11e908be |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Fornisce i dati necessari per avviare un client senza dischi.
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| Is-Single-Valued       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Fornisce i dati necessari per avviare un client senza dischi.
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| Is-Single-Valued       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Fornisce i dati necessari per avviare un client senza dischi.
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| Is-Single-Valued       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Fornisce i dati necessari per avviare un client senza dischi.
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Falso                                                 |
+| Is-Single-Valued       | Falso                                                 |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000000                                            |
-| Classi utilizzate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
+| Classi usate in        | [**bootableDevice**](c-bootabledevice.md)<br/> |
 
 
 

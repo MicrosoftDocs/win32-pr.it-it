@@ -1,17 +1,17 @@
 ---
-description: System.Music.Genre
+description: Sistema. Musica. Genere
 ms.assetid: c1adbc13-5069-4760-901c-d5ca47913695
-title: System.Music.Genre
+title: Sistema. Musica. Genere
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb29e6242dcdc97fe3b814a6fa571551f77e4765
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d056cda4cbd3a7de6d639eb96076ca90dfd8afa60ad15e0f7d1de34ee9ff6bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230545"
 ---
-# <a name="systemmusicgenre"></a>System.Music.Genre
+# <a name="systemmusicgenre"></a>Sistema. Musica. Genere
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 I valori PKEY sono definiti in Propkey.h.
 
-Si noti che alcuni formati di file, ad esempio un file mp3, supportano solo un singolo genere. Altri, ad esempio file con estensione wma, supportano più generi. Se si specificano più generi per un formato di file con un solo genere, verrà riconosciuto solo il primo genere nell'elenco.
+Si noti che alcuni formati di file, ad esempio .mp3 file, supportano solo un singolo genere. Altri, ad esempio file wma, supportano più generi. Se si specificano più generi per un formato di file a genere singolo, verrà riconosciuto solo il primo genere nell'elenco.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,7 +68,7 @@ Si noti che alcuni formati di file, ad esempio un file mp3, supportano solo un s
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

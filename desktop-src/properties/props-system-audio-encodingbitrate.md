@@ -1,17 +1,17 @@
 ---
 description: Indica la velocità media dei dati in Hertz (Hz) per il file audio in bit al secondo.
 ms.assetid: 570711c2-ef9b-4b3a-9b5f-94a6601fa3d4
-title: System. audio. EncodingBitrate
+title: System.Audio.EncodingBitrate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fd0325ea0e8971e7764346b3dada2784d9209cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce2aa4f560ee0efc63838f11be2a66370f06c06e3f7b1f34c9af736d4e350d32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232896"
 ---
-# <a name="systemaudioencodingbitrate"></a>System. audio. EncodingBitrate
+# <a name="systemaudioencodingbitrate"></a>System.Audio.EncodingBitrate
 
 Indica la velocità media dei dati in Hertz (Hz) per il file audio in bit al secondo.
 
@@ -97,7 +97,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -112,13 +112,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -127,7 +127,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

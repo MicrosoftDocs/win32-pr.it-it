@@ -1,11 +1,11 @@
 ---
-title: Attributo Domain-Component
-description: Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DomainName DC.
+title: Domain-Component attributo
+description: Attributo di denominazione per gli oggetti Domain e DNS. In genere visualizzato come dc DomainName.
 ms.assetid: 1d674af1-ed2f-4266-9704-8c6ed5a9bdd8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Domain-Component attribute
-- Schema AD dell'attributo DC
+- Domain-Component schema AD dell'attributo
+- Attributo dc Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a97a6958d51c6e0e29f70685b2624fb194d42e05
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fe93b6629ac176452edbe5cdf13bf35afa955890cde369273f87990034bcd3e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177772"
 ---
-# <a name="domain-component-attribute"></a>Attributo Domain-Component
+# <a name="domain-component-attribute"></a>Domain-Component attributo
 
-Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = domainname.
+Attributo di denominazione per gli oggetti Domain e DNS. In genere viene visualizzato come dc=DomainName.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Domain-Component                            |
-| LDAP-Display-Name | dc                                          |
+| Ldap-Display-Name | dc                                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
+| Aggiorna privilegio  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | Quando viene creato il dominio.                 |
 | Attribute-Id      | 0.9.2342.19200300.100.1.25                  |
-| System-ID-GUID    | 19195a55-6da0-11d0-afd3-00c04fd930c9        |
+| System-Id-Guid    | 19195a55-6da0-11d0-afd3-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 | ID collegamento                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
 | System-Only            | Falso                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                   |
 | Nel catalogo globale      | Vero                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 | ID collegamento                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
 | System-Only            | Falso                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                   |
 | Nel catalogo globale      | Vero                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Vero                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | 1                                     |
 | Range-Upper            | 255                                   |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000012                            |
-| Classi utilizzate in        | [**Dominio**](c-domain.md)<br/> |
+| Classi usate in        | [**Dominio**](c-domain.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 | ID collegamento                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
 | System-Only            | Falso                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                   |
 | Nel catalogo globale      | Vero                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 | ID collegamento                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
 | System-Only            | Falso                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                   |
 | Nel catalogo globale      | Vero                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 | ID collegamento                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
 | System-Only            | Falso                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                   |
 | Nel catalogo globale      | Vero                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Attributo Naming per gli oggetti Domain e DNS. Visualizzato in genere come DC = 
 | ID collegamento                | \-                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                      |
 | System-Only            | Falso                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                   |
 | Nel catalogo globale      | Vero                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 1                                                                                                                       |
 | Range-Upper            | 255                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                              |
 | System-Flags           | 0x00000012                                                                                                              |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> [**Zona DNS**](c-dnszone.md)<br/> [**Dominio**](c-domain.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Default-Group
-description: Gruppo a cui viene assegnato questo oggetto al momento della creazione.
+title: Default-Group attributo
+description: Gruppo a cui viene assegnato l'oggetto al momento della creazione.
 ms.assetid: 47fc8548-377b-4299-9c12-8f41e350eec9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Default-Group attribute
+- Default-Group schema AD dell'attributo
 - Schema AD dell'attributo defaultGroup
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dfd6a9d54fb4d16212d5b05fe73f392aa1ddf25
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f5006e0eefd0fac82e97baacd41de7ce947e8047d2d534d6185d9f9976454050
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177761"
 ---
-# <a name="default-group-attribute"></a>Attributo Default-Group
+# <a name="default-group-attribute"></a>Default-Group attributo
 
-Gruppo a cui viene assegnato questo oggetto al momento della creazione.
+Gruppo a cui viene assegnato l'oggetto al momento della creazione.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Default-Group                           |
-| LDAP-Display-Name | defaultGroup                            |
+| Ldap-Display-Name | defaultGroup                            |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.480                  |
-| System-ID-GUID    | 720bc4e2-a54a-11d0-afdf-00c04fd930c9    |
+| System-Id-Guid    | 720bc4e2-a54a-11d0-afdf-00c04fd930c9    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Gruppo a cui viene assegnato questo oggetto al momento della creazione.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 

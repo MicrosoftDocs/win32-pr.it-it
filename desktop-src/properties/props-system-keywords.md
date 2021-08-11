@@ -1,15 +1,15 @@
 ---
-description: Il set di parole chiave (noto anche come &\# 0034; tag&\# 0034;) assegnato all'elemento.
+description: Set di parole chiave (noto anche come \# &0034;tag&\# 0034;) assegnato all'elemento.
 ms.assetid: 427ed6c9-88cb-4b33-998f-663b59e677c9
 title: System.Keywords
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc7b0038d6e5ab36049a82445dbf0b83a6fd679
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c3b4e252627060931537e394b60de7f243be7f2d7bb5490a48090aaf00046c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118231376"
 ---
 # <a name="systemkeywords"></a>System.Keywords
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

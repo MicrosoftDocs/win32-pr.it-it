@@ -1,10 +1,10 @@
 ---
-title: Attributo admin-Property-Pages
-description: Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da visualizzare nelle schermate di amministrazione Active Directory. Per ulteriori informazioni, vedere il documento estensione dell'interfaccia utente per gli oggetti directory.
+title: Attributo Admin-Property-Pages
+description: Numero di ordine e GUID delle pagine delle proprietà per un oggetto da visualizzare nelle schermate di amministrazione di Active Directory. Per altre informazioni, vedere il documento Extending the Interfaccia utente for Directory Objects.
 ms.assetid: 70455768-11e0-4d12-ad44-4b3115aa1594
 ms.tgt_platform: multiple
 keywords:
-- Admin-Property-Pages attributo schema AD
+- Schema AD dell'attributo Admin-Property-Pages
 - Schema AD dell'attributo adminPropertyPages
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97d4e3814662cc8acf1a987cb92a1b9579cc43a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a32f79b8e85243ae3d69b3b024171301fe60810c4f4e530985691f1ddd39200d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178040"
 ---
-# <a name="admin-property-pages-attribute"></a>Attributo admin-Property-Pages
+# <a name="admin-property-pages-attribute"></a>Attributo Admin-Property-Pages
 
-Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da visualizzare nelle schermate di amministrazione Active Directory. Per ulteriori informazioni, vedere il documento estensione dell'interfaccia utente per gli oggetti directory.
+Numero di ordine e GUID delle pagine delle proprietà per un oggetto da visualizzare nelle schermate di amministrazione di Active Directory. Per altre informazioni, vedere il documento Extending the Interfaccia utente for Directory Objects.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------|
-| CN                | Admin-proprietà-pagine                           |
-| LDAP-Display-Name | adminPropertyPages                             |
+| CN                | Admin-Property-Pages                           |
+| Ldap-Display-Name | adminPropertyPages                             |
 | Dimensione              | \-                                             |
-| Privilegio aggiornamento  | Amministratore di dominio o sviluppatore di applicazioni. |
+| Aggiorna privilegio  | Amministratore di dominio o sviluppatore di applicazioni. |
 | Frequenza di aggiornamento  | Ogni volta che viene aggiunta o rimossa una pagina delle proprietà.  |
 | Attribute-Id      | 1.2.840.113556.1.4.562                         |
-| System-ID-GUID    | 52458038-ca6a-11D0-AFFF-0000f80367c1           |
+| System-Id-Guid    | 52458038-ca6a-11d0-afff-0000f80367c1           |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)    |
 
 
@@ -58,15 +58,15 @@ Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da vi
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| A valore singolo       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da vi
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| A valore singolo       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da vi
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| A valore singolo       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da vi
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| A valore singolo       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da vi
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| A valore singolo       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Il numero di ordine e il GUID delle pagine delle proprietà per un oggetto da vi
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| A valore singolo       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 

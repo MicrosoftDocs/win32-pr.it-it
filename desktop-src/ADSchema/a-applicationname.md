@@ -1,11 +1,11 @@
 ---
-title: Attributo Application-Name
+title: Application-Name attributo
 description: Nome dell'applicazione.
 ms.assetid: ebcbae00-04bd-40be-b256-8e27611eee22
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Application-Name attribute
-- Schema AD dell'attributo ApplicationName
+- Application-Name schema AD dell'attributo
+- Attributo applicationName Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05927d3c2105ab3d811c15022e8025eef30371d6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 248c852919b934c219fe7037e06ab46b2921594b8dd91239a1d536788e3276f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178030"
 ---
-# <a name="application-name-attribute"></a>Attributo Application-Name
+# <a name="application-name-attribute"></a>Application-Name attributo
 
 Nome dell'applicazione.
 
@@ -30,12 +30,12 @@ Nome dell'applicazione.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Application-Name                            |
-| LDAP-Display-Name | applicationName                             |
+| Ldap-Display-Name | applicationName                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
+| Aggiorna privilegio  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.218                      |
-| System-ID-GUID    | dd712226-10e4-11d0-a05f-00aa006c33ed        |
+| System-Id-Guid    | dd712226-10e4-11d0-a05f-00aa006c33ed        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome dell'applicazione.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| A valore singolo       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> |
+| Classi usate in        | [**Applicazione Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome dell'applicazione.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| A valore singolo       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> |
+| Classi usate in        | [**Applicazione Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome dell'applicazione.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| A valore singolo       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> |
+| Classi usate in        | [**Applicazione Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome dell'applicazione.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| A valore singolo       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> |
+| Classi usate in        | [**Applicazione Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome dell'applicazione.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| A valore singolo       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> |
+| Classi usate in        | [**Applicazione Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome dell'applicazione.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| A valore singolo       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | 1                                                                                                                                          |
 | Range-Upper            | 64                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> |
+| Classi usate in        | [**Applicazione Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> |
 
 
 

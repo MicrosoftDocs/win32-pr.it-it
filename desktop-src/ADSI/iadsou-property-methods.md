@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsOU (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsOU ottengono o impostano le proprietà elencate nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi delle proprietà IADsOU (Iads.h)
+description: I metodi di proprietà dell'interfaccia IADsOU ottengono o impostano le proprietà elencate nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: 8cb84972-733b-47ca-8647-1b7a85c97021
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsOU ADSI
+- Metodi della proprietà IADsOU ADSI
 topic_type:
 - apiref
 api_name:
@@ -36,16 +36,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0ce30fad6a690a26a8e16b817b77b129dee25f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 019fb93575bc8b8b419797c7efdf41c15a6375172a834f48626befd3526b3b2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179531"
 ---
-# <a name="iadsou-property-methods"></a>Metodi di proprietà IADsOU
+# <a name="iadsou-property-methods"></a>Metodi delle proprietà IADsOU
 
-I metodi di proprietà dell'interfaccia [**IADsOU**](/windows/desktop/api/Iads/nn-iads-iadsou) ottengono o impostano le proprietà elencate nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsOU**](/windows/desktop/api/Iads/nn-iads-iadsou) ottengono o impostano le proprietà elencate nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -54,11 +54,11 @@ I metodi di proprietà dell'interfaccia [**IADsOU**](/windows/desktop/api/Iads/n
 **BusinessCategory**
 </dt> <dd> <dl>
 
-Stringa che contiene la funzione o le funzioni aziendali generali eseguite dall'unità organizzativa, ad esempio "contabilità".
+Stringa che contiene la funzione o le funzioni aziendali generali eseguite dall'unità organizzativa, ad esempio "Accounting".
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -86,7 +86,7 @@ Stringa che contiene una descrizione testuale dell'unità organizzativa.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -107,14 +107,14 @@ HRESULT put_Description(
 
 </dt> </dl> </dd> <dt>
 
-**NumeroFax**
+**Numero fax**
 </dt> <dd> <dl>
 
-Stringa che contiene il numero di fax dell'unità organizzativa.
+Stringa che contiene il numero facsimile dell'unità organizzativa.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -142,7 +142,7 @@ Stringa che contiene il nome dell'area geografica dell'unità organizzativa.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -170,7 +170,7 @@ Stringa che contiene l'indirizzo postale dell'unità organizzativa.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -198,10 +198,10 @@ Matrice di stringhe che contiene i nomi distinti di altri oggetti directory che 
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -219,14 +219,14 @@ HRESULT put_SeeAlso(
 
 </dt> </dl> </dd> <dt>
 
-**TelephoneNumber**
+**Numero di telefono**
 </dt> <dd> <dl>
 
-Stringa che contiene il numero di telefono dell'unità organizzativa.
+Stringa contenente il numero di telefono dell'unità organizzativa.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -251,7 +251,7 @@ HRESULT put_TelephoneNumber(
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice seguente Visualizza il **BusinessCategory** e la **Descrizione** di tutte le unità organizzative in un contenitore. Si presuppone che il servizio directory sottostante supporti il raggruppamento di oggetti directory per unità organizzativa.
+Nell'esempio di codice seguente vengono visualizzate **le proprietà BusinessCategory** e **Description** di tutte le unità organizzative in un contenitore. Si presuppone che il servizio directory sottostante supporti il raggruppamento di oggetti directory per unità organizzativa.
 
 
 ```VB
@@ -281,9 +281,9 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsOU è definito come A2F733B8-Effe-11CF-8ABC-00C04FD8D503<br/>               |
+| IID<br/>                      | IID \_ IADsOU è definito come A2F733B8-EFFE-11CF-8ABC-00C04FD8D503<br/>               |
 
 
 
@@ -294,7 +294,7 @@ Next
 [**IADsOU**](/windows/desktop/api/Iads/nn-iads-iadsou)
 </dt> <dt>
 
-[Metodi di proprietà dell'interfaccia](interface-property-methods.md)
+[Metodi delle proprietà dell'interfaccia](interface-property-methods.md)
 </dt> </dl>
 
  

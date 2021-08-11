@@ -1,10 +1,10 @@
 ---
 title: Supporto del provider di interfacce ADSI
-description: La tabella seguente elenca una breve descrizione delle interfacce supportate dai provider inclusi in ADSI per Windows 2000 e il client DS.
+description: La tabella seguente elenca una breve descrizione delle interfacce supportate dai provider inclusi in ADSI per Windows 2000 e client DS.
 ms.assetid: 8eb9a88c-cf18-4fe4-b256-1d6fcaf96c62
 ms.tgt_platform: multiple
 keywords:
-- Supporto provider di ADSI Interfaces ADSI
+- Supporto del provider di interfacce ADSI ADSI
 - ADSI ADSI, provider di servizi, interfacce supportate da ogni provider
 - Supporto del provider per IADsUser
 - Supporto del provider per IADsComputer
@@ -28,36 +28,36 @@ keywords:
 - Supporto del provider per IADsPrintQueueOperations
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf12803929d96a61aac6603be2c528084c91693c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2c393cb8476830617a300f33eac741bd27b3cacbd686442dd4def5bf6c35526e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178830"
 ---
 # <a name="provider-support-of-adsi-interfaces"></a>Supporto del provider di interfacce ADSI
 
-La tabella seguente elenca una breve descrizione delle interfacce supportate dai provider inclusi in ADSI per Windows 2000 e il client DS. Una voce contrassegnata con "Yes" indica che almeno un oggetto ADSI del provider specificato supporta l'interfaccia associata. "No" indica che nessun oggetto del provider supporta l'interfaccia in questa versione. In futuro, le interfacce attualmente non supportate possono essere supportate dai provider forniti dal sistema.
+La tabella seguente elenca una breve descrizione delle interfacce supportate dai provider inclusi in ADSI per Windows 2000 e client DS. Una voce contrassegnata con "Sì" indica che almeno un oggetto ADSI del provider specificato supporta l'interfaccia associata. "No" indica che nessun oggetto del provider supporta l'interfaccia in questa versione. In futuro, le interfacce attualmente non supportate potrebbero essere supportate dai provider forniti dal sistema.
 
-Per ulteriori informazioni sui dettagli di implementazione specifici del provider ADSI, vedere:
+Per altre informazioni sui dettagli di implementazione specifici del provider ADSI, vedere:
 
--   [Provider LDAP ADSI](adsi-ldap-provider.md)
--   [Provider ADSI WinNT](adsi-winnt-provider.md)
--   [ROUTER ADSI](adsi-router.md)
+-   [ADSI LDAP Provider](adsi-ldap-provider.md)
+-   [ADSI WinNT Provider](adsi-winnt-provider.md)
+-   [ADSI ROUTER](adsi-router.md)
 
-Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni interfaccia, fare clic sul nome dell'interfaccia appropriato nella prima colonna della tabella.
+Per altre informazioni sulla proprietà o sul metodo supportato per ogni interfaccia, fare clic sul nome dell'interfaccia appropriato nella prima colonna della tabella.
 
 
 
-| Interface Name (Nome interfaccia)                                                 | LDAP | WinNT |
+| Interface Name (Nome interfaccia)                                                 | LDAP | Winnt |
 |----------------------------------------------------------------|------|-------|
-| [**IADs**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Sì  | Sì   |
+| [**IAD**](/windows/desktop/api/Iads/nn-iads-iads)                                           | Sì  | Sì   |
 | [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)       | Sì  | No    |
 | [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)         | Sì  | No    |
 | [**IADsAcl**](/windows/desktop/api/Iads/nn-iads-iadsacl)                                     | No   | No    |
 | [**IADsBackLink**](/windows/desktop/api/Iads/nn-iads-iadsbacklink)                           | No   | No    |
 | [**IADsCaseIgnoreList**](/windows/desktop/api/Iads/nn-iads-iadscaseignorelist)               | No   | No    |
-| [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)                                 | Sì  | Sì   |
+| [**Classe IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)                                 | Sì  | Sì   |
 | [**IADsCollection**](/windows/desktop/api/Iads/nn-iads-iadscollection)                       | No   | Sì   |
 | [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                           | No   | Sì   |
 | [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)       | No   | Sì   |
@@ -109,30 +109,30 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsuser"></a>Supporto del provider per IADsUser
 
 
 
-| Proprietà                                                    | LDAP          | WinNT         |
+| Proprietà                                                    | LDAP          | Winnt         |
 |-------------------------------------------------------------|---------------|---------------|
 | [**AccountDisabled**](iadsuser-property-methods.md)        | Supportato     | Supportato     |
 | [**AccountExpirationDate**](iadsuser-property-methods.md)  | Supportato     | Supportato     |
 | [**BadLoginAddress**](iadsuser-property-methods.md)        | Non supportato   | Non supportato |
 | [**BadLoginCount**](iadsuser-property-methods.md)          | Supportato     | Supportato     |
-| [**Reparto**](iadsuser-property-methods.md)             | Supportato     | Non supportato   |
+| [**Dipartimento**](iadsuser-property-methods.md)             | Supportato     | Non supportato   |
 | [**Descrizione**](iadsuser-property-methods.md)            | Supportato     | Supportato     |
 | [**Divisione**](iadsuser-property-methods.md)               | Supportato     | Non supportato   |
-| [**EmailAddress**](iadsuser-property-methods.md)           | Supportato     | Non supportato   |
+| [**Emailaddress**](iadsuser-property-methods.md)           | Supportato     | Non supportato   |
 | [**EmployeeID**](iadsuser-property-methods.md)             | Supportato     | Non supportato   |
-| [**NumeroFax**](iadsuser-property-methods.md)              | Supportato     | Non supportato   |
+| [**Numero fax**](iadsuser-property-methods.md)              | Supportato     | Non supportato   |
 | [**FirstName**](iadsuser-property-methods.md)              | Supportato     | Non supportato   |
-| [**FullName**](iadsuser-property-methods.md)               | Supportato     | Supportato     |
+| [**Fullname**](iadsuser-property-methods.md)               | Supportato     | Supportato     |
 | [**GraceLoginsAllowed**](iadsuser-property-methods.md)     | Non supportato | Non supportato   |
 | [**GraceLoginsRemaining**](iadsuser-property-methods.md)   | Non supportato | Non supportato   |
 | [**HomeDirectory**](iadsuser-property-methods.md)          | Supportato     | Supportato     |
-| [**Home page**](iadsuser-property-methods.md)               | Supportato     | Non supportato   |
+| [**Homepage**](iadsuser-property-methods.md)               | Supportato     | Non supportato   |
 | [**IsAccountLocked**](iadsuser-property-methods.md)        | Supportato     | Supportato     |
 | [**Linguaggi**](iadsuser-property-methods.md)              | Non supportato | Non supportato   |
 | [**LastFailedLogin**](iadsuser-property-methods.md)        | Supportato     | Non supportato   |
@@ -148,40 +148,40 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 | [**NamePrefix**](iadsuser-property-methods.md)             | Supportato     | Non supportato   |
 | [**NameSuffix**](iadsuser-property-methods.md)             | Supportato     | Non supportato   |
 | [**OfficeLocations**](iadsuser-property-methods.md)        | Supportato     | Non supportato   |
-| [**UPN**](iadsuser-property-methods.md)              | Supportato     | Non supportato   |
+| [**OtherName**](iadsuser-property-methods.md)              | Supportato     | Non supportato   |
 | [**PasswordExpirationDate**](iadsuser-property-methods.md) | Non supportato   | Supportato     |
 | [**PasswordLastChanged**](iadsuser-property-methods.md)    | Supportato     | Non supportato   |
 | [**PasswordMinimumLength**](iadsuser-property-methods.md)  | Non supportato   | Supportato     |
 | [**PasswordRequired**](iadsuser-property-methods.md)       | Supportato     | Supportato     |
 | [**Immagine**](iadsuser-property-methods.md)                | Supportato     | Non supportato   |
 | [**PostalAddresses**](iadsuser-property-methods.md)        | Supportato     | Non supportato   |
-| [**PostalCodes**](iadsuser-property-methods.md)            | Supportato     | Non supportato   |
+| [**Codici postali**](iadsuser-property-methods.md)            | Supportato     | Non supportato   |
 | [**Profilo**](iadsuser-property-methods.md)                | Supportato     | Supportato     |
 | [**RequireUniquePassword**](iadsuser-property-methods.md)  | Non supportato   | Non supportato   |
 | [**SeeAlso**](iadsuser-property-methods.md)                | Supportato     | Non supportato   |
-| [**TelephoneHome**](iadsuser-property-methods.md)          | Supportato     | Non supportato   |
-| [**TelephoneMobile**](iadsuser-property-methods.md)        | Supportato     | Non supportato   |
-| [**TelephoneNumber**](iadsuser-property-methods.md)        | Supportato     | Non supportato   |
+| [**TelefonoHome**](iadsuser-property-methods.md)          | Supportato     | Non supportato   |
+| [**TelefonoMobile**](iadsuser-property-methods.md)        | Supportato     | Non supportato   |
+| [**Numero di telefono**](iadsuser-property-methods.md)        | Supportato     | Non supportato   |
 | [**TelephonePager**](iadsuser-property-methods.md)         | Supportato     | Non supportato   |
 | [**Titolo**](iadsuser-property-methods.md)                  | Supportato     | Non supportato   |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscomputer"></a>Supporto del provider per IADsComputer
 
 
 
-| Proprietà                                     | LDAP                    | WinNT       |
+| Proprietà                                     | LDAP                    | Winnt       |
 |------------------------------------------------|-------------------------|-------------|
-| [**Con informatizzazione**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaccia non supportata | Non supportato |
-| [**Reparto**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaccia non supportata | Non supportato |
+| [**ID computer**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaccia non supportata | Non supportato |
+| [**Dipartimento**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaccia non supportata | Non supportato |
 | [**Descrizione**](/windows/desktop/api/Iads/nn-iads-iadscomputer)            | Interfaccia non supportata | Non supportato |
 | [**Divisione**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaccia non supportata | Supportato   |
-| [**Location**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaccia non supportata | Non supportato |
+| [**Percorso**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaccia non supportata | Non supportato |
 | [**MemorySize**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaccia non supportata | Non supportato |
-| [**Modello**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                  | Interfaccia non supportata | Non supportato |
+| [**Modellare**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                  | Interfaccia non supportata | Non supportato |
 | [**NetAddresses**](/windows/desktop/api/Iads/nn-iads-iadscomputer)           | Interfaccia non supportata | Non supportato |
 | [**OperatingSystem**](/windows/desktop/api/Iads/nn-iads-iadscomputer)        | Interfaccia non supportata | Supportato   |
 | [**OperatingSystemVersion**](/windows/desktop/api/Iads/nn-iads-iadscomputer) | Interfaccia non supportata | Supportato   |
@@ -195,28 +195,28 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscomputeroperations"></a>Supporto del provider per IADsComputerOperations
 
 
 
-| Proprietà                                   | LDAP                    | WinNT           |
+| Proprietà                                   | LDAP                    | Winnt           |
 |--------------------------------------------|-------------------------|-----------------|
 | [**Arresto**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations) | Interfaccia non supportata | Non implementato |
-| [**Stato**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)   | Interfaccia non supportata | Non implementato |
+| [**Status**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)   | Interfaccia non supportata | Non implementato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsdomain"></a>Supporto del provider per IADsDomain
 
 
 
-| Proprietà                                         | LDAP                    | WinNT           |
+| Proprietà                                         | LDAP                    | Winnt           |
 |--------------------------------------------------|-------------------------|-----------------|
-| [**Gruppo di lavoro**](/windows/desktop/api/Iads/nn-iads-iadsdomain)                | Interfaccia non supportata | Non implementato |
+| [**IsWorkgroup**](/windows/desktop/api/Iads/nn-iads-iadsdomain)                | Interfaccia non supportata | Non implementato |
 | [**MinPasswordLength**](/windows/desktop/api/Iads/nn-iads-iadsdomain)          | Interfaccia non supportata | Supportato       |
 | [**MinPasswordAge**](/windows/desktop/api/Iads/nn-iads-iadsdomain)             | Interfaccia non supportata | Supportato       |
 | [**MaxpasswordAge**](/windows/desktop/api/Iads/nn-iads-iadsdomain)             | Interfaccia non supportata | Supportato       |
@@ -228,68 +228,68 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsfileservice"></a>Supporto del provider per IADsFileService
 
 
 
-| Proprietà                                | LDAP                    | WinNT     |
+| Proprietà                                | LDAP                    | Winnt     |
 |-----------------------------------------|-------------------------|-----------|
 | [**Descrizione**](/windows/desktop/api/Iads/nn-iads-iadsfileservice)  | Interfaccia non supportata | Supportato |
 | [**MaxUserCount**](/windows/desktop/api/Iads/nn-iads-iadsfileservice) | Interfaccia non supportata | Supportato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsgroup"></a>Supporto del provider per IADsGroup
 
 
 
-| Proprietà                         | LDAP      | WinNT     |
+| Proprietà                         | LDAP      | Winnt     |
 |----------------------------------|-----------|-----------|
 | [**Descrizione**](/windows/desktop/api/Iads/nn-iads-iadsgroup) | Supportato | Supportato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsclass"></a>Supporto del provider per IADsClass
 
 
 
-| Proprietà                                   | LDAP               | WinNT           |
+| Proprietà                                   | LDAP               | Winnt           |
 |--------------------------------------------|--------------------|-----------------|
-| [**PrimaryInterface**](/windows/desktop/api/Iads/nn-iads-iadsclass)      | Supportato          | Supportato       |
-| [**CLSID**](/windows/desktop/api/Iads/nn-iads-iadsclass)                 | Supportato          | Supportato       |
-| [**OID**](/windows/desktop/api/Iads/nn-iads-iadsclass)                   | Supportato          | Supportato       |
+| [**Interfaccia primaria**](/windows/desktop/api/Iads/nn-iads-iadsclass)      | Supportato          | Supportato       |
+| [**Clsid**](/windows/desktop/api/Iads/nn-iads-iadsclass)                 | Supportato          | Supportato       |
+| [**Oid**](/windows/desktop/api/Iads/nn-iads-iadsclass)                   | Supportato          | Supportato       |
 | [**Contenuto**](/windows/desktop/api/Iads/nn-iads-iadsclass)              | Supportato          | Supportato       |
 | [**Ausiliario**](/windows/desktop/api/Iads/nn-iads-iadsclass)             | Supportato          | Supportato       |
-| [**MandatoryProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)   | Supportato          | Supportato       |
-| [**OptionalProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)    | Supportato          | Supportato       |
+| [**Proprietà obbligatorie**](/windows/desktop/api/Iads/nn-iads-iadsclass)   | Supportato          | Supportato       |
+| [**Proprietà facoltative**](/windows/desktop/api/Iads/nn-iads-iadsclass)    | Supportato          | Supportato       |
 | [**NamingProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)      | Supportato          | Non implementato |
-| [**Estratta da**](/windows/desktop/api/Iads/nn-iads-iadsclass)           | Supportato          | Non supportato     |
+| [**DerivedFrom**](/windows/desktop/api/Iads/nn-iads-iadsclass)           | Supportato          | Non supportato     |
 | [**AuxDerivedFrom**](/windows/desktop/api/Iads/nn-iads-iadsclass)        | Supportato          | Non supportato     |
-| [**PossibleSuperiors**](/windows/desktop/api/Iads/nn-iads-iadsclass)     | Supportato          | Supportato       |
+| [**PossibiliSuperiors**](/windows/desktop/api/Iads/nn-iads-iadsclass)     | Supportato          | Supportato       |
 | [**Contenimento**](/windows/desktop/api/Iads/nn-iads-iadsclass)           | Supportato per la lettura | Supportato       |
 | [**Contenitore**](/windows/desktop/api/Iads/nn-iads-iadsclass)             | Supportato per la lettura | Supportato       |
 | [**HelpFileName**](/windows/desktop/api/Iads/nn-iads-iadsclass)          | Supportato          | Supportato       |
 | [**HelpFileContext**](/windows/desktop/api/Iads/nn-iads-iadsclass)       | Supportato          | Supportato       |
-| Metodo                                     | LDAP               | WinNT           |
+| Metodo                                     | LDAP               | Winnt           |
 | [**Qualificatori**](/windows/desktop/api/Iads/nf-iads-iadsclass-qualifiers) | Non implementato    | Non implementato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsproperty"></a>Supporto del provider per IADsProperty
 
 
 
-| Proprietà                            | LDAP      | WinNT     |
+| Proprietà                            | LDAP      | Winnt     |
 |-------------------------------------|-----------|-----------|
-| [**OID**](/windows/desktop/api/Iads/nn-iads-iadsproperty)         | Supportato | Supportato |
+| [**Oid**](/windows/desktop/api/Iads/nn-iads-iadsproperty)         | Supportato | Supportato |
 | [**Sintassi**](/windows/desktop/api/Iads/nn-iads-iadsproperty)      | Supportato | Supportato |
 | [**MaxRange**](/windows/desktop/api/Iads/nn-iads-iadsproperty)    | Supportato | Supportato |
 | [**MinRange**](/windows/desktop/api/Iads/nn-iads-iadsproperty)    | Supportato | Supportato |
@@ -297,25 +297,25 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadssyntax"></a>Supporto del provider per IADsSyntax
 
 
 
-| Proprietà                              | LDAP      | WinNT     |
+| Proprietà                              | LDAP      | Winnt     |
 |---------------------------------------|-----------|-----------|
 | [**OleAutoDataType**](/windows/desktop/api/Iads/nn-iads-iadssyntax) | Supportato | Supportato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscontainer"></a>Supporto del provider per IADsContainer
 
 
 
-| Proprietà                        | LDAP            | WinNT           |
+| Proprietà                        | LDAP            | Winnt           |
 |---------------------------------|-----------------|-----------------|
 | [**Conteggio**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | Non implementato | Non implementato |
 | [**Hint**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | Supportato       | Non implementato |
@@ -323,27 +323,27 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsnamespaces"></a>Supporto del provider per IADsNamespaces
 
 
 
-| Proprietà                                   | LDAP      | WinNT     |
+| Proprietà                                   | LDAP      | Winnt     |
 |--------------------------------------------|-----------|-----------|
 | [**defaultContainer**](/windows/desktop/api/Iads/nn-iads-iadsnamespaces) | Supportato | Supportato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsaccesscontrolentry"></a>Supporto del provider per IADsAccessControlEntry
 
 
 
-| Proprietà                                              | LDAP      | WinNT       |
+| Proprietà                                              | LDAP      | Winnt       |
 |-------------------------------------------------------|-----------|-------------|
-| [**AccessMask**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Supportato | Non supportato |
+| [**Accessmask**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Supportato | Non supportato |
 | [**AccessType**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Supportato | Non supportato |
 | [**AccessFlags**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)         | Supportato | Non supportato |
 | [**Bandiere**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)               | Supportato | Non supportato |
@@ -353,100 +353,100 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsaccesscontrollist"></a>Supporto del provider per IADsAccessControlList
 
 
 
-| Proprietà                                                       | LDAP      | WinNT       |
+| Proprietà                                                       | LDAP      | Winnt       |
 |----------------------------------------------------------------|-----------|-------------|
 | [**AceCount**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)                      | Supportato | Non supportato |
 | [**AceRevision**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)                   | Supportato | Non supportato |
-| Metodo                                                         | LDAP      | WinNT       |
+| Metodo                                                         | LDAP      | Winnt       |
 | [**AddAce**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-addace)                 | Supportato | Non supportato |
 | [**CopyAccessList**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-copyaccesslist) | Supportato | Non supportato |
 | [**RemoveAce**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-removeace)           | Supportato | Non supportato |
-| [**ottenere \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-get__newenum)   | Supportato | Non supportato |
+| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-get__newenum)   | Supportato | Non supportato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadssecuritydescriptor"></a>Supporto del provider per IADsSecurityDescriptor
 
 
 
-| Proprietà                                                                        | LDAP      | WinNT       |
+| Proprietà                                                                        | LDAP      | Winnt       |
 |---------------------------------------------------------------------------------|-----------|-------------|
 | [**Control**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                       | Supportato | Non supportato |
 | [**DaclDefaulted**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                 | Supportato | Non supportato |
-| [**DiscretionaryAcl**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                              | Supportato | Non supportato |
-| [**Group**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                         | Supportato | Non supportato |
+| [**Discretionaryacl**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                              | Supportato | Non supportato |
+| [**Gruppo**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                         | Supportato | Non supportato |
 | [**GroupDefaulted**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                | Supportato | Non supportato |
 | [**Proprietario**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                         | Supportato | Non supportato |
 | [**OwnerDefaulted**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                | Supportato | Non supportato |
 | [**SaclDefaulted**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                 | Supportato | Non supportato |
-| [**SystemAcl**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                     | Supportato | Non supportato |
-| Metodo                                                                          | LDAP      | WinNT       |
+| [**Systemacl**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)                                     | Supportato | Non supportato |
+| Metodo                                                                          | LDAP      | Winnt       |
 | [**CopySecurityDescriptor**](/windows/desktop/api/Iads/nf-iads-iadssecuritydescriptor-copysecuritydescriptor) | Supportato | Non supportato |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsobjectoptions"></a>Supporto del provider per IADsObjectOptions
 
 
 
-| Metodo                                           | LDAP      | WinNT                   |
+| Metodo                                           | LDAP      | Winnt                   |
 |--------------------------------------------------|-----------|-------------------------|
 | [**GetOption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-getoption) | Supportato | Interfaccia non supportata |
-| [**SetOption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-setoption) | Supportato | Interfaccia non supportata |
+| [**Setoption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-setoption) | Supportato | Interfaccia non supportata |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadscollection"></a>Supporto del provider per IADsCollection
 
 
 
-| Metodo                                                | LDAP                    | WinNT       |
+| Metodo                                                | LDAP                    | Winnt       |
 |-------------------------------------------------------|-------------------------|-------------|
-| [**Aggiungere**](/windows/desktop/api/Iads/nf-iads-iadscollection-add)                     | Interfaccia non supportata | Non supportato |
-| [**ottenere \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscollection-get__newenum) | Interfaccia non supportata | Supportato   |
-| [**GetObject**](/windows/desktop/api/Iads/nf-iads-iadscollection-getobject)         | Interfaccia non supportata | Supportato   |
+| [**Add**](/windows/desktop/api/Iads/nf-iads-iadscollection-add)                     | Interfaccia non supportata | Non supportato |
+| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscollection-get__newenum) | Interfaccia non supportata | Supportato   |
+| [**Getobject**](/windows/desktop/api/Iads/nf-iads-iadscollection-getobject)         | Interfaccia non supportata | Supportato   |
 | [**Rimuovi**](/windows/desktop/api/Iads/nf-iads-iadscollection-remove)               | Interfaccia non supportata | Supportato   |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsmembers"></a>Supporto del provider per IADsMembers
 
 
 
-| Proprietà                                           | LDAP                                                      | WinNT       |
+| Proprietà                                           | LDAP                                                      | Winnt       |
 |----------------------------------------------------|-----------------------------------------------------------|-------------|
 | [**Conteggio**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                       | Supportato per GroupCollection, ma non per UserCollection | Non supportato |
 | [**Filtra**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                      | Supportato                                                 | Supportato   |
-| Metodo                                             | LDAP                                                      | WinNT       |
-| [**ottenere \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsmembers-get__newenum) | Supportato                                                 | Supportato   |
+| Metodo                                             | LDAP                                                      | Winnt       |
+| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsmembers-get__newenum) | Supportato                                                 | Supportato   |
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadspathname"></a>Supporto del provider per IADsPathname
 
 
 
-| Proprietà                                                    | LDAP      | WinNT       |
+| Proprietà                                                    | LDAP      | Winnt       |
 |-------------------------------------------------------------|-----------|-------------|
-| [**EscapedMode**](/windows/desktop/api/Iads/nn-iads-iadspathname)                         | Supportato | Supportato   |
-| Metodo                                                      | LDAP      | WinNT       |
-| [**Set**](/windows/desktop/api/Iads/nf-iads-iadspathname-set)                             | Supportato | Supportato   |
+| [**Modalità escape**](/windows/desktop/api/Iads/nn-iads-iadspathname)                         | Supportato | Supportato   |
+| Metodo                                                      | LDAP      | Winnt       |
+| [**Impostare**](/windows/desktop/api/Iads/nf-iads-iadspathname-set)                             | Supportato | Supportato   |
 | [**SetDisplayType**](/windows/desktop/api/Iads/nf-iads-iadspathname-setdisplaytype)       | Supportato | Supportato   |
 | [**Recupero**](/windows/desktop/api/Iads/nf-iads-iadspathname-retrieve)                   | Supportato | Supportato   |
 | [**GetNumElements**](/windows/desktop/api/Iads/nf-iads-iadspathname-getnumelements)       | Supportato | Supportato   |
@@ -457,21 +457,21 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsprintqueue"></a>Supporto del provider per IADsPrintQueue
 
 
 
-| Proprietà                                     | LDAP        | WinNT       |
+| Proprietà                                     | LDAP        | Winnt       |
 |----------------------------------------------|-------------|-------------|
 | [**PrinterPath**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)        | Supportato   | Non supportato |
-| [**Modello**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)              | Supportato   | Supportata.  |
-| [**Tipo**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Non supportato | Supportato   |
-| [**PrintProcessor**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)     | Non supportato | Supportato   |
+| [**Modellare**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)              | Supportato   | Supportata.  |
+| [**Datatype**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Non supportato | Supportato   |
+| [**Printprocessor**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)     | Non supportato | Supportato   |
 | [**Descrizione**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)        | Supportato   | Supportato   |
-| [**Location**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Supportato   | Supportato   |
-| [**StartTime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Supportato   | Supportato   |
+| [**Percorso**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Supportato   | Supportato   |
+| [**Starttime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Supportato   | Supportato   |
 | [**UntilTime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Supportato   | Supportato   |
 | [**DefaultJobPriority**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue) | Non supportato | Supportato   |
 | [**Priority**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Supportato   | Supportato   |
@@ -481,28 +481,28 @@ Per ulteriori informazioni sulla proprietà o sul metodo supportato per ogni int
 
 
 
- 
+ 
 
 ## <a name="provider-support-for-iadsprintqueueoperations"></a>Supporto del provider per IADsPrintQueueOperations
 
 
 
-| Proprietà                                                | LDAP      | WinNT      |
+| Proprietà                                                | LDAP      | Winnt      |
 |---------------------------------------------------------|-----------|------------|
-| [**Stato**](/windows/desktop/api/Iads/nn-iads-iadsprintqueueoperations)              | Supportato | Supportato  |
-| Metodo                                                  | LDAP      | WinNT      |
-| [**Sospendere**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-pause)         | Supportato | Supportata. |
+| [**Status**](/windows/desktop/api/Iads/nn-iads-iadsprintqueueoperations)              | Supportato | Supportato  |
+| Metodo                                                  | LDAP      | Winnt      |
+| [**Sospendi**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-pause)         | Supportato | Supportata. |
 | [**PrintJobs**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-printjobs) | Supportato | Supportato  |
 | [**Ripulisci**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-purge)         | Supportato | Supportato  |
 | [**Riprendi**](/windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-resume)       | Supportato | Supportato  |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

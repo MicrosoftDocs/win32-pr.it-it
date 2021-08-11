@@ -1,10 +1,10 @@
 ---
-title: Messaggio WM_DSA_SHEET_CLOSE_NOTIFY
-description: Inserito nello snap-in di MMC Active Directory quando viene eliminata definitivamente una finestra delle proprietà secondaria.
+title: WM_DSA_SHEET_CLOSE_NOTIFY messaggio
+description: Inviato nello snap-in MMC di Active Directory quando una finestra delle proprietà secondaria viene distrutta.
 ms.assetid: 74271550-e1f7-4576-a04f-52d5b7c619cb
 ms.tgt_platform: multiple
 keywords:
-- Messaggio WM_DSA_SHEET_CLOSE_NOTIFY Active Directory
+- WM_DSA_SHEET_CLOSE_NOTIFY message Active Directory
 topic_type:
 - apiref
 api_name:
@@ -13,19 +13,19 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36f03cdb6224ae5f55bc995897d766ce61e67693
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f840790de51ce712b33fc9a9611934e8be9a76a35a0fc01a4ce0abe4ba040d2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181674"
 ---
-# <a name="wm_dsa_sheet_close_notify-message"></a>\_Messaggio di \_ \_ notifica chiusura del foglio DSA WM \_
+# <a name="wm_dsa_sheet_close_notify-message"></a>MESSAGGIO DI \_ NOTIFICA CHIUSURA FOGLIO WM DSA \_ \_ \_
 
-Il messaggio di **\_ notifica di \_ \_ chiusura \_ del foglio DSA WM** viene inserito nello snap-in di MMC Active Directory quando una finestra delle proprietà secondaria viene distrutta.
+Il **messaggio WM \_ DSA \_ SHEET CLOSE \_ \_ NOTIFY** viene inviato nello snap-in MMC di Active Directory quando una finestra delle proprietà secondaria viene distrutta.
 
 > [!Note]  
-> Il valore di questo messaggio non è definito in un file di intestazione pubblicato. Per usare questo valore del messaggio, è necessario definirlo nel formato esatto indicato.
+> Questo valore del messaggio non è definito in un file di intestazione pubblicato. Per usare questo valore di messaggio, è necessario definirlo manualmente nel formato esatto visualizzato.
 
  
 
@@ -50,17 +50,17 @@ LRESULT SendMessage( (HWND)   hwnd,
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Handle della finestra dello snap-in che elaborerà questo messaggio. Questo handle viene ottenuto dal membro **hwndHidden** della struttura [**PROPSHEETCFG**](propsheetcfg.md) .
+Handle della finestra dello snap-in che eelaborare il messaggio. Questo handle viene ottenuto dal **membro hwndHidden** della [**struttura PROPSHEETCFG.**](propsheetcfg.md)
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Contiene un valore definito dall'applicazione a 32 bit. Questa operazione viene ottenuta dal membro **wParamSheetClose** della struttura [**PROPSHEETCFG**](propsheetcfg.md) .
+Contiene un valore a 32 bit definito dall'applicazione. Questa operazione viene ottenuta **dal membro wParamSheetClose** della [**struttura PROPSHEETCFG.**](propsheetcfg.md)
 
 </dd> <dt>
 

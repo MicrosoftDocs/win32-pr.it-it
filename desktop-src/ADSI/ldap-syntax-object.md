@@ -4,18 +4,18 @@ description: Il provider LDAP usa il mapping seguente tra la sintassi LDAP e la 
 ms.assetid: a82cf8ab-9591-4489-87a6-ccfab0e01d61
 ms.tgt_platform: multiple
 keywords:
-- ADSI ADSI, provider di servizi, sintassi di mapping a sintassi LDAP
+- ADSI ADSI, provider di servizi, sintassi di mapping alla sintassi LDAP
 - mapping della sintassi ADSI alla sintassi LDAP ADSI
-- sintassi e mapping da ADSI a LDAP ADSI
+- sintassi e mapping da ADSI ad LDAP ADSI
 - Provider di servizi LDAP ADSI, mapping della sintassi ADSI alla sintassi LDAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2272a0805ec32fd7ade9c4584feefb64fb1467f3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e776c795df239c026cd47fe60042d0ccbd1ae79bee1397af1853f91d5d9aa1a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179495"
 ---
 # <a name="ldap-syntax-object"></a>Oggetto sintassi LDAP
 
@@ -23,32 +23,32 @@ Il provider LDAP usa il mapping seguente tra la sintassi LDAP e la sintassi ADSI
 
 
 
-| Sintassi LDAP   | Sintassi ADSI (automazione)            |
+| Sintassi LDAP   | Sintassi ADSI (Automazione)            |
 |---------------|-------------------------------------|
-| ADsPath       | \_BSTR VT                            |
-| Boolean       | \_bool VT                            |
+| ADsPath       | VT \_ BSTR                            |
+| Boolean       | VT \_ BOOL                            |
 | Contatore       | VT \_ I4                              |
-| EmailAddress  | \_BSTR VT                            |
-| NumeroFax     | \_BSTR VT                            |
-| Integer       | VT \_ I4                              |
-| Interval      | VT \_ I4                              |
-| Elenco          | \_variante VT ( \_ Array VT BSTR VT \| \_ ) |
-| NetAddress    | \_BSTR VT                            |
-| OctetString   | \_variante VT                         |
-| Percorso          | \_BSTR VT                            |
-| PhoneNumber   | \_BSTR VT                            |
-| PostalAddress | \_BSTR VT                            |
+| EmailAddress  | VT \_ BSTR                            |
+| Numero fax     | VT \_ BSTR                            |
+| Intero       | VT \_ I4                              |
+| Intervallo      | VT \_ I4                              |
+| Elenco          | VT \_ VARIANT (VT \_ BSTR \| VT \_ ARRAY) |
+| NetAddress    | VT \_ BSTR                            |
+| OctetString   | VARIANTE \_ VT                         |
+| Path          | VT \_ BSTR                            |
+| PhoneNumber   | VT \_ BSTR                            |
+| PostalAddress | VT \_ BSTR                            |
 | SmallInterval | VT \_ I4                              |
-| string        | \_BSTR VT                            |
-| Tempo          | \_Data VT                            |
+| string        | VT \_ BSTR                            |
+| Ora          | DATA \_ VT                            |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

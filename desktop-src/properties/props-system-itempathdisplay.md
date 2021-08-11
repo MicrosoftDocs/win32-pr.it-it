@@ -4,12 +4,12 @@ ms.assetid: 27e4490b-7914-4b38-9799-e9d5dc407f13
 title: System.ItemPathDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ddad0edbc1a77a3de1fab7956d8ce6e6f906f06
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 88a58d48740c6f7a2f9db0e496a951105c176ca7eba3dd205c2971188af7fd55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118231664"
 ---
 # <a name="systemitempathdisplay"></a>System.ItemPathDisplay
 
@@ -37,17 +37,17 @@ I valori PKEY sono definiti in Propkey.h.
 
 Se l'elemento è un file o una cartella, questa proprietà include l'estensione in tutti i casi e viene localizzata se è disponibile un nome localizzato. Per altri elementi, si tratta dell'equivalente descrittivo, presupponendo che l'elemento esista nell'archiviazione gerarchica.
 
-A [differenza di System.ItemUrl,](./props-system-itemurl.md)questo valore della proprietà non include lo schema URL. Per analizzare il percorso di un elemento, usare System.ItemUrl [o System.ParsingPath](./props-system-parsingpath.md). Per fare riferimento agli elementi dello spazio dei nomi shell usando le API shell, usare System.ParsingPath.
+A [differenza di System.ItemUrl,](./props-system-itemurl.md)questo valore della proprietà non include lo schema URL. Per analizzare il percorso di un elemento, usare System.ItemUrl [o System.ParsingPath.](./props-system-parsingpath.md) Per fare riferimento agli elementi dello spazio dei nomi della shell usando le API shell, usare System.ParsingPath.
 
 Valori di esempio
 
 
 
-| Percorso                                   | ItemPathDisplay                        |
+| Path                                   | ItemPathDisplay                        |
 |----------------------------------------|----------------------------------------|
 | c: \\ barra mydir \\ \\hello.txt              | c: \\ barra mydir \\ \\hello.txt              |
 | \\\\condivisione \\ server \\ mydir \\goodnews.doc | \\\\condivisione \\ server \\ mydir \\goodnews.doc |
-| \\\\condivisione \\ \\ servernumbers.xls         | \\\\condivisione \\ \\ servernumbers.xls         |
+| \\\\condivisione \\ server \\numbers.xls         | \\\\condivisione \\ server \\numbers.xls         |
 | c: \\ mydir \\ MyFolder                    | c: \\ mydir \\ MyFolder                    |
 | /Mailbox Account/Inbox/'Re: Hello!'    | /Mailbox Account/Inbox/'Re: Hello!'    |
 
@@ -59,7 +59,7 @@ Valori di esempio
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -89,7 +89,7 @@ Valori di esempio
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

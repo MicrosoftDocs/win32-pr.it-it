@@ -4,12 +4,12 @@ ms.assetid: d5b3eb74-bd6a-4e05-90f9-fe713f931106
 title: System.Link.TargetUrlPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4098d29c192e13eb9ddd50a49c16549600d8ddc3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f682384bc4b8f142357b65cb495dc03d0729474034fede3ab3935c7f4ad110cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118231149"
 ---
 # <a name="systemlinktargeturlpath"></a>System.Link.TargetUrlPath
 

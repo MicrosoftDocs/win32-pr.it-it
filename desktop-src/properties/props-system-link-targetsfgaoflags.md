@@ -1,19 +1,19 @@
 ---
-description: 'Flag IShellFolder:: GetAttributesOf per la destinazione di un collegamento, con attributi SFGAO \_ PKEYSFGAOMASK mascherati.'
+description: Flag IShellFolder::GetAttributesOf per la destinazione di un collegamento, con gli attributi SFGAO \_ PKEYSFGAOMASK mascherati.
 ms.assetid: ac17754c-efd5-4894-8013-dd67a5d2e486
-title: System. link. TargetSFGAOFlags
+title: System.Link.TargetSFGAOFlags
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5e9b35a61b890d608394ecffbcad3bb50d36b3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46e67f053441b0533f736adfae7280a2b046708babb72c68abfd4bd6fce24a15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118231179"
 ---
-# <a name="systemlinktargetsfgaoflags"></a>System. link. TargetSFGAOFlags
+# <a name="systemlinktargetsfgaoflags"></a>System.Link.TargetSFGAOFlags
 
-Flag [**IShellFolder:: GetAttributesOf**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getattributesof) per la destinazione di un collegamento, con attributi SFGAO \_ PKEYSFGAOMASK mascherati.
+Flag [**IShellFolder::GetAttributesOf**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getattributesof) per la destinazione di un collegamento, con gli attributi SFGAO \_ PKEYSFGAOMASK mascherati.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -48,13 +48,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

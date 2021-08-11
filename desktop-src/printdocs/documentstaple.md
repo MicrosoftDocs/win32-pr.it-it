@@ -4,18 +4,18 @@ ms.assetid: 53e38979-2065-4304-a0ed-0434c8d2efc8
 title: DocumentStaple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2cda02c452ebb053c71811fb2642cea7371b2f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d448ae54ccb4368e5ea0d30f8feaca9cb5bafb54c4ae6a89c7f901cb9372284a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235028"
 ---
 # <a name="documentstaple"></a>DocumentStaple
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di graffatura dell'output. Ogni documento viene graffato separatamente. Le parole chiave JobStapleAllDocuments e DocumentStaple si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra queste parole chiave.
+Descrive le caratteristiche di graffatura dell'output. Ogni documento viene graffato separatamente. Le parole chiave JobStapleAllDocuments e DocumentStaple si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -67,7 +67,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati          | Unità                       | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                                     |
 |------------------------------------|--------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caratteri<br/>      | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                          |
+| \_OptionName\_<br/>          | string<br/>  | caratteri<br/>      | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                          |
 | \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>             | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                |
 | \_AngleValue\_<br/>          | numero intero<br/> | gradi<br/>         | Maggiore di 0.<br/>                                                                                                                                                            | Specifica l'angolo di graffatura rispetto alla direzione X di PageImageableSize. L'angolo di graffatura viene misurato in senso antiorario.<br/> |
 | \_SheetCapacityValue\_<br/>  | numero intero<br/> | fogli di supporti<br/> | Maggiore di 0.<br/>                                                                                                                                                            | Specifica il numero di fogli supportati dall'opzione di graffatura per l'oggetto MediaType attualmente selezionato.<br/>                                                |
@@ -78,7 +78,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentStaple">

@@ -4,12 +4,12 @@ ms.assetid: cd71978d-09d9-43f1-ab1b-4b213e3a193b
 title: File multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72d436db24aba399b49cc6c905091900d8c08c23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cdfac0eafc04def953e669facff17bd1df1594623a7d32c4e4c4318fabf2a7dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118233176"
 ---
 # <a name="media"></a>File multimediali
 
@@ -36,7 +36,7 @@ ms.locfileid: "108105029"
 | [System.Media.DVDID](./props-system-media-dvdid.md)<br/>                                         |                                                                                                                        |
 | [System.Media.EncodedBy](./props-system-media-encodedby.md)<br/>                                 |                                                                                                                        |
 | [System.Media.EncodingSettings](./props-system-media-encodingsettings.md)<br/>                   |                                                                                                                        |
-| [System.Media.EpisodeNumber](props-system-media-episodenumber.md)<br/>                                | Numero monotonamente incrementato in base 1 che corrisponde all'episodio dello show<br/>                      |
+| [System.Media.EpisodeNumber](props-system-media-episodenumber.md)<br/>                                | Numero a incremento monotona in base 1 corrispondente all'episodio dello show<br/>                      |
 | [System.Media.FrameCount](./props-system-media-framecount.md)<br/>                               | Indica il numero di fotogrammi per l'immagine.<br/>                                                                    |
 | [System.Media.MCDI](./props-system-media-mcdi.md)<br/>                                           |                                                                                                                        |
 | [System.Media.MetadataContentProvider](./props-system-media-metadatacontentprovider.md)<br/>     |                                                                                                                        |
@@ -45,8 +45,8 @@ ms.locfileid: "108105029"
 | [System.Media.ProtectionType](./props-system-media-protectiontype.md)<br/>                       | Descrive il tipo di protezione dei supporti.<br/>                                                                     |
 | [System.Media.ProviderRating](./props-system-media-providerrating.md)<br/>                       | Classificazione (da 0 a 99) fornita dal provider di metadati.<br/>                                                          |
 | [System.Media.ProviderStyle](./props-system-media-providerstyle.md)<br/>                         | Stile di musica o video, fornito dal provider di metadati.<br/>                                                 |
-| [System.Media.Publisher](./props-system-media-publisher.md)<br/>                                 |                                                                                                                        |
-| [System.Media.SeasonNumber](props-system-media-seasonnumber.md)<br/>                                  | Numero monotonamente incrementato in base 1 che corrisponde alla stagione in cui lo show è stato presentato per la prima volta<br/> |
+| [System.Media. Publisher](./props-system-media-publisher.md)<br/>                                 |                                                                                                                        |
+| [System.Media.SeasonNumber](props-system-media-seasonnumber.md)<br/>                                  | Numero a incremento monotona in base 1 corrispondente alla stagione in cui lo show è stato presentato per la prima volta<br/> |
 | [System.Media.SeriesName](props-system-media-seriesname.md)<br/>                                      | Nome che rappresenta una serie specifica, ad esempio un podcast o una serie tv registrata.<br/>                  |
 | [System.Media.SubscriptionContentId](./props-system-media-subscriptioncontentid.md)<br/>         |                                                                                                                        |
 | [System.Media.SubTitle](./props-system-media-subtitle.md)<br/>                                   |                                                                                                                        |

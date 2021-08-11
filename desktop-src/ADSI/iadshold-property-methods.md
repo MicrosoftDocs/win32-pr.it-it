@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsHold (IADs. h)
-description: Il metodo Property dell'interfaccia IADsHold imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsHold (Iads.h)
+description: Il metodo di proprietà dell'interfaccia IADsHold imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: 55968bc1-c44a-4db4-acc8-e1b6f1e4ad4c
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsHold ADSI
+- Metodi della proprietà IADsHold ADSI
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cae2499efb461e6c13397fdaef75e515f0a1a21a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2fae4d5f5a83577d297bfea6e109d78ad3d8bd2291cfa028f37fb8ab1a4f825b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179559"
 ---
-# <a name="iadshold-property-methods"></a>Metodi di proprietà IADsHold
+# <a name="iadshold-property-methods"></a>Metodi della proprietà IADsHold
 
-Il metodo Property dell'interfaccia [**IADsHold**](/windows/desktop/api/Iads/nn-iads-iadshold) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+Il metodo di proprietà [**dell'interfaccia IADsHold**](/windows/desktop/api/Iads/nn-iads-iadshold) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -39,14 +39,14 @@ Il metodo Property dell'interfaccia [**IADsHold**](/windows/desktop/api/Iads/nn-
 **Amount**
 </dt> <dd> <dl>
 
-Importo degli addebiti addebitati all'utente per il periodo di attesa mentre il server verifica il saldo dell'account dell'utente.
+L'importo degli addebiti a carico dell'utente per il periodo di attesa mentre il server controlla il saldo dell'account dell'utente.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -71,10 +71,10 @@ Nome dell'oggetto che rappresenta un utente in attesa.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -102,9 +102,9 @@ HRESULT put_ObjectName(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsHold è definito come B3EB3B37-4080-11D1-A3AC-00C04FB950DC<br/>             |
+| IID<br/>                      | IADsHold IID è definito \_ come B3EB3B37-4080-11D1-A3AC-00C04FB950DC<br/>             |
 
 
 

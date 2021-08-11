@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsComputer (IADs. h)
-description: I metodi dell'interfaccia IADsComputer leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsComputer (Iads.h)
+description: I metodi dell'interfaccia IADsComputer leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: c990b6bb-6256-4216-9435-c85c67db4d13
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsComputer ADSI
+- Metodi della proprietà IADsComputer ADSI
 topic_type:
 - apiref
 api_name:
@@ -64,22 +64,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f2f3c455e2e43436627b62d142781bb6a605bef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5692ffadde78c338845c497a1209cc6466923fe83e32fbf25649b4cd1d4b367d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179579"
 ---
-# <a name="iadscomputer-property-methods"></a>Metodi di proprietà IADsComputer
+# <a name="iadscomputer-property-methods"></a>Metodi della proprietà IADsComputer
 
-I metodi dell'interfaccia [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer) leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I [**metodi dell'interfaccia IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer) leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
 <dl> <dt>
 
-**Con informatizzazione**
+**ComputerID**
 </dt> <dd> <dl>
 
 Identificatore univoco globale assegnato a ogni computer.
@@ -89,7 +89,7 @@ Identificatore univoco globale assegnato a ogni computer.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -107,14 +107,14 @@ HRESULT get_ComputerID(
 **Reparto**
 </dt> <dd> <dl>
 
-Unità organizzativa (OU), ad esempio Department, a cui appartiene il computer.
+Unità organizzativa a cui appartiene il computer, ad esempio il reparto.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -139,10 +139,10 @@ Descrizione del computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -167,10 +167,10 @@ Divisione, all'interno di un'organizzazione, a cui appartiene il computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -191,14 +191,14 @@ HRESULT put_Division(
 **Posizione**
 </dt> <dd> <dl>
 
-Percorso fisico assegnato del computer.
+Posizione fisica assegnata del computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -223,10 +223,10 @@ Dimensioni, in megabyte, della memoria ad accesso casuale per questo computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -247,14 +247,14 @@ HRESULT put_MemorySize(
 **Modello**
 </dt> <dd> <dl>
 
-Marca e modello del computer.
+La make e il modello di questo computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -275,14 +275,14 @@ HRESULT put_Model(
 **NetAddresses**
 </dt> <dd> <dl>
 
-Matrice di campi NetAddress che rappresentano gli indirizzi in base ai quali è possibile raggiungere il computer. NetAddress è un **BSTR** specifico del provider composto da due sottostringhe separate da due punti (:). La sottostringa sinistra indica il tipo di indirizzo e la sottostringa destra è una rappresentazione di stringa di un indirizzo di quel tipo. Ad esempio, gli indirizzi TCP/IP hanno il formato: IP: 100.201.301.45. Il formato degli indirizzi di tipo IPX è IPX: 10.123456.80.
+Matrice di campi NetAddress che rappresentano gli indirizzi con cui è possibile raggiungere il computer. NetAddress è un **BSTR** specifico del provider costituito da due sottostringhe separate da due punti (:). La sottostringa sinistra indica il tipo di indirizzo e la sottostringa di destra è una rappresentazione di stringa di un indirizzo di tale tipo. Ad esempio, gli indirizzi TCP/IP hanno il formato IP:100.201.301.45. Gli indirizzi di tipo IPX hanno il formato IPX:10.123456.80.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -303,14 +303,14 @@ HRESULT put_NetAddresses(
 **OperatingSystem**
 </dt> <dd> <dl>
 
-Sistema operativo utilizzato nel computer.
+Sistema operativo usato nel computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -331,14 +331,14 @@ HRESULT put_OperatingSystem(
 **OperatingSystemVersion**
 </dt> <dd> <dl>
 
-Versione del sistema operativo utilizzato nel computer.
+Versione del sistema operativo usata nel computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -359,14 +359,14 @@ HRESULT put_OperatingSystemVersion(
 **Proprietario**
 </dt> <dd> <dl>
 
-Persona a cui viene assegnato il computer. L'utente deve inoltre disporre di una licenza per eseguire il software installato.
+Persona a cui è assegnato il computer. Questa persona deve anche avere una licenza per eseguire il software installato.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -387,14 +387,14 @@ HRESULT put_Owner(
 **PrimaryUser**
 </dt> <dd> <dl>
 
-Nome dell'utente del contatto, ad esempio un amministratore, per questo computer.
+Nome della persona di contatto, ad esempio un amministratore, per questo computer.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -419,10 +419,10 @@ Tipo di processore.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -447,10 +447,10 @@ Numero di processori installati.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -475,10 +475,10 @@ Ruolo del computer, ad esempio workstation, server o controller di dominio.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -499,14 +499,14 @@ HRESULT put_Role(
 **Sito**
 </dt> <dd> <dl>
 
-Identificatore univoco globale che identifica il sito in cui è stato installato il computer. Un sito è un'area fisica di una connettività efficace in una rete.
+Identificatore univoco globale che identifica il sito in cui è stato installato il computer. Un sito è un'area fisica di buona connettività in una rete.
 
 <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -524,14 +524,14 @@ HRESULT get_Site(
 **StorageCapacity**
 </dt> <dd> <dl>
 
-Dimensione, in megabyte, del disco.
+Dimensioni, in megabyte, del disco.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -553,15 +553,15 @@ HRESULT put_StorageCapacity(
 
 ## <a name="remarks"></a>Commenti
 
-Provider diversi possono scegliere di esporre proprietà diverse di un oggetto computer. Per ulteriori informazioni, vedere [provider di sistema ADSI](adsi-system-providers.md).
+Provider diversi possono scegliere di esporre proprietà diverse di un oggetto computer. Per altre informazioni, vedere [Provider di sistema ADSI](adsi-system-providers.md).
 
-È possibile individuare le proprietà supportate controllando le proprietà obbligatorie e facoltative tramite la relativa classe dello schema. Per ulteriori informazioni, vedere l'interfaccia [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) .
+È possibile individuare le proprietà supportate controllando le proprietà obbligatorie e facoltative tramite la relativa classe dello schema. Per altre informazioni, vedere [**l'interfaccia IADsClass.**](/windows/desktop/api/Iads/nn-iads-iadsclass)
 
-Per esaminare lo stato di un computer o per eseguire l'operazione di arresto attraverso la rete, è necessario usare l'interfaccia [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations) .
+Per esaminare lo stato di un computer o per eseguire l'operazione di arresto in rete, è necessario usare [**l'interfaccia IADsComputerOperations.**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice Visual Basic riportato di seguito vengono esaminate le proprietà del computer supportate dal provider ADSI WinNT.
+Nell'Visual Basic di codice seguente vengono esaminate le proprietà del computer supportate dal provider ADSI WinNT.
 
 
 ```VB
@@ -581,7 +581,7 @@ End If
 
 
 
-Nell'esempio di codice C++ riportato di seguito vengono esaminate le proprietà del computer supportate dal provider ADSI WinNT.
+Nell'esempio di codice C++ seguente vengono esaminate le proprietà del computer supportate dal provider ADSI WinNT.
 
 
 ```C++
@@ -620,7 +620,7 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsComputer è definito come EFE3CC70-1D9F-11CF-B1F3-02608C9E7553<br/>         |
 
@@ -642,7 +642,7 @@ Cleanup:
 [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)
 </dt> <dt>
 
-[Metodi di proprietà dell'interfaccia](interface-property-methods.md)
+[Metodi delle proprietà dell'interfaccia](interface-property-methods.md)
 </dt> </dl>
 
  

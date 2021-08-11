@@ -4,12 +4,12 @@ ms.assetid: a75660e7-d417-46ba-8222-bc827ebb5d75
 title: System.IsFlaggedComplete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8df1624955531590a6836a2d25e0327abacfbcff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 55dbdb7ef0a1834b70bee1124fdf428c75202350cb83f88e5144aaa293d7b0a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232124"
 ---
 # <a name="systemisflaggedcomplete"></a>System.IsFlaggedComplete
 

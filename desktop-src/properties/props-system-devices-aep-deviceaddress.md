@@ -1,19 +1,19 @@
 ---
-description: Indirizzo basato sul protocollo dell'endpoint di associazione dei dispositivi. Indirizzo IP per un dispositivo IP, indirizzo Bluetooth per il dispositivo Bluetooth e così via.
+description: Indirizzo basato sul protocollo dell'endpoint di associazione del dispositivo. Indirizzo IP per un dispositivo IP, Bluetooth per Bluetooth dispositivo e così via.
 ms.assetid: 20bc4ac6-151e-4666-bf17-5eb4a3c87c40
 title: System.Devices.Aep.DeviceAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe170bc76184ed2cf739468809c725020c14f1e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d03231756b625b93d1375d2c27e06c0f3272dd5aac262369dfc0a74de3bca60f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232249"
 ---
 # <a name="systemdevicesaepdeviceaddress"></a>System.Devices.Aep.DeviceAddress
 
-Indirizzo basato sul protocollo dell'endpoint di associazione dei dispositivi. Indirizzo IP per un dispositivo IP, indirizzo Bluetooth per il dispositivo Bluetooth e così via.
+Indirizzo basato sul protocollo dell'endpoint di associazione del dispositivo. Indirizzo IP per un dispositivo IP, Bluetooth per Bluetooth dispositivo e così via.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

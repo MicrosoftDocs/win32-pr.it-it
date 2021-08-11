@@ -4,12 +4,12 @@ ms.assetid: 78eb3119-a52f-4ff8-83bb-903e181c8a11
 title: PageInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc53d377106b95b26e694d531af2952cea98a8b1
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 04499e22d3e0ebb10d00aa3cd966c4efea569f291f0eb0d9871a03ca001a8217
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234741"
 ---
 # <a name="pageinputbin"></a>PageInputBin
 
