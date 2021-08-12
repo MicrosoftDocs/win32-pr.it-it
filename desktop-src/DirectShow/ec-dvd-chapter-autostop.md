@@ -1,7 +1,7 @@
 ---
-description: Indica che la riproduzione DVD è stata arrestata in seguito a una chiamata al metodo IDvdControl2::P layChaptersAutoStop.
+description: Indica che la riproduzione di DVD è stata interrotta in seguito a una chiamata al metodo IDvdControl2::P layChaptersAutoStop.
 ms.assetid: ccafaf76-ec8c-4d67-9b29-565f3ed6593b
-title: EC_DVD_CHAPTER_AUTOSTOP (Dvdevcode. h)
+title: EC_DVD_CHAPTER_AUTOSTOP (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 43e1414c0f9cee7e8daf37b87d5f0c3d0599a017
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a25c4ea621875403ad47ee6815b07b84572f939e4f2a6713d47aa53ba61f983e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118652675"
 ---
-# <a name="ec_dvd_chapter_autostop"></a>autostop del \_ capitolo DVD EC \_ \_
+# <a name="ec_dvd_chapter_autostop"></a>EC \_ DVD \_ CHAPTER \_ AUTOSTOP
 
-Indica che la riproduzione DVD è stata arrestata in seguito a una chiamata al metodo [**IDVDControl2::P laychaptersautostop**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-playchaptersautostop) .
+Indica che la riproduzione del DVD è stata interrotta in seguito a una chiamata al metodo [**IDvdControl2::P layChaptersAutoStop.**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-playchaptersautostop)
 
 ## <a name="parameters"></a>Parametri
 
@@ -52,7 +52,7 @@ Questo evento viene generato nel dominio del titolo.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

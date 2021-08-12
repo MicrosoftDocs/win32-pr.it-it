@@ -1,9 +1,9 @@
 ---
-title: Messaggio BM_SETCHECK (winuser. h)
-description: Imposta lo stato di selezione di un pulsante di opzione o di una casella di controllo. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro di controllo Button.
+title: BM_SETCHECK messaggio (Winuser.h)
+description: Imposta lo stato di controllo di un pulsante di opzione o di una casella di controllo. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro Button SetCheck.
 ms.assetid: 8294e6c4-caac-4c60-85ff-38698a1d2ae4
 keywords:
-- Controlli di Windows Message BM_SETCHECK
+- BM_SETCHECK dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c298fb865fe34946bfedc9f1d6d1924f6d32202
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 171515cb3c8498537bd0f9cc6d8c06017ff9d5d00f5505e193862f6cf9ebff76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674804"
 ---
-# <a name="bm_setcheck-message"></a>Messaggio BM ( \_ SEcheck)
+# <a name="bm_setcheck-message"></a>Messaggio \_ SETCHECK BM
 
-Imposta lo stato di selezione di un pulsante di opzione o di una casella di controllo. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro di [**\_ controllo Button**](/windows/desktop/api/Windowsx/nf-windowsx-button_setcheck) .
+Imposta lo stato di controllo di un pulsante di opzione o di una casella di controllo. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button SetCheck.**](/windows/desktop/api/Windowsx/nf-windowsx-button_setcheck)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,15 +32,15 @@ Imposta lo stato di selezione di un pulsante di opzione o di una casella di cont
 *wParam* 
 </dt> <dd>
 
-Stato di selezione. Questo parametro può avere uno dei valori seguenti.
+Stato del controllo. Questo parametro può avere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                     | Significato                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BST_CHECKED"></span><span id="bst_checked"></span><dl> <dt>**\_controllo BST**</dt> </dl>                   | Imposta lo stato del pulsante su controllato.<br/>                                                                                                                                                                                           |
-| <span id="BST_INDETERMINATE"></span><span id="bst_indeterminate"></span><dl> <dt>**BST \_ INdeterminato**</dt> </dl> | Imposta lo stato del pulsante su grigio, che indica uno stato indeterminato. Usare questo valore solo se il pulsante ha lo stile [**BS \_ 3STATE**](button-styles.md) o [**BS \_ AUTO3STATE**](button-styles.md) .<br/> |
-| <span id="BST_UNCHECKED"></span><span id="bst_unchecked"></span><dl> <dt>**BST \_ DEselezionata**</dt> </dl>             | Imposta lo stato del pulsante su deselezionato.<br/>                                                                                                                                                                                           |
+| <span id="BST_CHECKED"></span><span id="bst_checked"></span><dl> <dt>**BST \_ CHECKED**</dt> </dl>                   | Imposta lo stato del pulsante su checked.<br/>                                                                                                                                                                                           |
+| <span id="BST_INDETERMINATE"></span><span id="bst_indeterminate"></span><dl> <dt>**BST \_ INDETERMINATO**</dt> </dl> | Imposta lo stato del pulsante su disattivato, a indicare uno stato indeterminato. Usare questo valore solo se il pulsante ha lo [**stile BS \_ 3STATE**](button-styles.md) o [**BS \_ AUTO3STATE.**](button-styles.md)<br/> |
+| <span id="BST_UNCHECKED"></span><span id="bst_unchecked"></span><dl> <dt>**BST \_ UNCHECKED**</dt> </dl>             | Imposta lo stato del pulsante su deselezionato.<br/>                                                                                                                                                                                           |
 
 
 
@@ -61,7 +61,7 @@ Questo messaggio restituisce sempre zero.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **BM \_ secheck** non ha alcun effetto sui pulsanti di push.
+Il **messaggio \_ BM SETCHECK** non ha effetto sui pulsanti di comando.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,9 +69,9 @@ Il messaggio **BM \_ secheck** non ha alcun effetto sui pulsanti di push.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -82,13 +82,13 @@ Il messaggio **BM \_ secheck** non ha alcun effetto sui pulsanti di push.
 **Riferimento**
 </dt> <dt>
 
-[**GetCheck BM \_**](bm-getcheck.md)
+[**BM \_ GETCHECK**](bm-getcheck.md)
 </dt> <dt>
 
-[**BM \_ GETstate**](bm-getstate.md)
+[**BM \_ GETSTATE**](bm-getstate.md)
 </dt> <dt>
 
-[**STATO di BM \_**](bm-setstate.md)
+[**BM \_ SETSTATE**](bm-setstate.md)
 </dt> </dl>
 
  

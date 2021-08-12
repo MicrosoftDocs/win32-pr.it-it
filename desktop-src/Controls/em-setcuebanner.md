@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_SETCUEBANNER (COMmctrl. h)
-description: Imposta la cue testuale, o tip, visualizzata dal controllo di modifica per richiedere informazioni all'utente.
+title: EM_SETCUEBANNER messaggio (Commctrl.h)
+description: Imposta il suggerimento testuale visualizzato dal controllo di modifica per richiedere informazioni all'utente.
 ms.assetid: 1b1ff5e7-e0b8-40c1-8b7e-7003e9ef959b
 keywords:
-- Controlli di Windows Message EM_SETCUEBANNER
+- EM_SETCUEBANNER controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,47 +14,47 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d740bf0a3a055f45c6d104d44349f078d3bf9ad2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b08694d7368a994c639f236f18537e13d81f57083521599c23671941c74889bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673104"
 ---
-# <a name="em_setcuebanner-message"></a>\_Messaggio SETCUEBANNER em
+# <a name="em_setcuebanner-message"></a>Messaggio \_ EM SETCUEBANNER
 
-Imposta la cue testuale, o tip, visualizzata dal controllo di modifica per richiedere informazioni all'utente.
+Imposta il suggerimento testuale visualizzato dal controllo di modifica per richiedere informazioni all'utente.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
-**True** se il banner cue dovrebbe essere visualizzato anche quando il controllo di modifica ha lo stato attivo; in caso contrario, **false**. **False** è il comportamento predefinito. il banner di cue scompare quando l'utente fa clic nel controllo.
+**TRUE** se il banner del segnale deve essere visualizzato anche quando il controllo di modifica ha lo stato attivo; in caso contrario, **FALSE.** **FALSE** è il comportamento predefinito che il banner del segnale scompare quando l'utente fa clic nel controllo.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode che contiene il testo da visualizzare come cue testuale.
+Puntatore a una stringa Unicode che contiene il testo da visualizzare come segnale testuale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, restituisce **true**. In caso contrario, restituisce **false**.
+Se il messaggio ha esito positivo, restituisce **TRUE.** In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Un controllo di modifica usato per iniziare una ricerca può visualizzare "immettere la ricerca qui" in testo grigio come cue testuale. Quando l'utente fa clic sul testo, il testo viene allontanato e l'utente può digitare.
+Un controllo di modifica usato per iniziare una ricerca può visualizzare "Immettere la ricerca qui" in testo grigio come segnale testuale. Quando l'utente fa clic sul testo, il testo non viene più visualizzato e l'utente può digitare.
 
-Non è possibile impostare un banner cue su un controllo di modifica su più righe o su un controllo Rich Edit.
+Non è possibile impostare un banner cue in un controllo di modifica su più righe o in un controllo Rich Edit.
 
 > [!Note]  
-> Per usare questa API, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questa API, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -64,9 +64,9 @@ Non è possibile impostare un banner cue su un controllo di modifica su più rig
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

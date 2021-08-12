@@ -1,9 +1,9 @@
 ---
 title: Controllo AUTORADIOBUTTON
-description: Definisce un controllo pulsante di opzione automatico. Questo controllo esegue automaticamente l'esclusione reciproca con gli altri controlli di AUTORADIOBUTTON nello stesso gruppo. Quando si sceglie il pulsante, l'applicazione riceve una notifica con un \_ clic su BN.
+description: Definisce un controllo pulsante di opzione automatico. Questo controllo esegue automaticamente l'esclusione reciproca con gli altri controlli AUTORADIOBUTTON nello stesso gruppo. Quando si sceglie il pulsante, l'applicazione viene notificata con BN \_ CLICKED.
 ms.assetid: af843084-5213-4934-b291-0787b88ef62d
 keywords:
-- Menu di controllo AUTORADIOBUTTON e altre risorse
+- Menu e altre risorse del controllo AUTORADIOBUTTON
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67395437303de0adc8c1af226210f8ca2f45958d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 29c8a966a21b07744ce05063ae8c68f09156c47717fcff825875f82b4535f945
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235650"
 ---
 # <a name="autoradiobutton-control"></a>Controllo AUTORADIOBUTTON
 
-Definisce un controllo pulsante di opzione automatico. Questo controllo esegue automaticamente l'esclusione reciproca con gli altri controlli di **AUTORADIOBUTTON** nello stesso gruppo. Quando si sceglie il pulsante, l'applicazione riceve una notifica con un **\_ clic su BN**.
+Definisce un controllo pulsante di opzione automatico. Questo controllo esegue automaticamente l'esclusione reciproca con gli altri **controlli AUTORADIOBUTTON** nello stesso gruppo. Quando si sceglie il pulsante, l'applicazione viene notificata con **BN \_ CLICKED.**
 
 ``` syntax
 AUTORADIOBUTTON text, id, x, y, width, height [, style [, extended-style]]
@@ -29,40 +29,40 @@ AUTORADIOBUTTON text, id, x, y, width, height [, style [, extended-style]]
 
 <dl> <dt>
 
-<span id="text"></span><span id="TEXT"></span>*testo*
+<span id="text"></span><span id="TEXT"></span>*Testo*
 </dt> <dd>
 
 Testo che verrà visualizzato accanto al pulsante di opzione.
 
 </dd> <dt>
 
-<span id="style"></span><span id="STYLE"></span>*stile*
+<span id="style"></span><span id="STYLE"></span>*Stile*
 </dt> <dd>
 
-Stili per il pulsante di opzione automatico, che può essere una combinazione di stili di classi di pulsanti e gli stili seguenti: **WS \_ TABSTOP**, **WS \_ disabled** e **WS \_ Group**.
+Stili per il pulsante di opzione automatico, che può essere una combinazione di stili di classe BUTTON e gli stili seguenti: **WS \_ TABSTOP,** **WS \_ DISABLED** e **WS \_ GROUP**.
 
 Se non si specifica uno stile, lo stile predefinito è `BS_AUTORADIOBUTTON | WS_TABSTOP` .
 
 </dd> </dl>
 
-Per ulteriori informazioni sulla sintassi generale di un'istruzione di controllo, vedere [parametri di controllo comuni](common-control-parameters.md).
+Per altre informazioni sulla sintassi generale di un'istruzione di controllo, vedere [Parametri di controllo comuni](common-control-parameters.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**CONTROLLO**](control-control.md)
+[**Controllo**](control-control.md)
 </dt> <dt>
 
-[Pulsanti di opzione](https://www.bing.com/search?q=Radio+Buttons)
+[Pulsanti](https://www.bing.com/search?q=Radio+Buttons)
 </dt> <dt>
 
-[**RADIOBUTTON**](radiobutton-control.md)
+[**Radiobutton**](radiobutton-control.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

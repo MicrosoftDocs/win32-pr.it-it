@@ -1,9 +1,9 @@
 ---
-title: Controls. currentMarker
-description: La proprietà currentMarker specifica o Recupera il numero di marcatore corrente.
+title: Controls.currentMarker
+description: La proprietà currentMarker specifica o recupera il numero del marcatore corrente.
 ms.assetid: 4b4eacd4-3df0-4e11-8755-1ac326fad027
 keywords:
-- Media Player di Windows Controls. currentMarker
+- Controlli.currentMarker Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aae8af226b62550b3faae9389385d321bf10aad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bcc11f79460661b6622da529b0de025672794af660aeb27bf56c7910a6d5a50b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580307"
 ---
-# <a name="controlscurrentmarker"></a>Controls. currentMarker
+# <a name="controlscurrentmarker"></a>Controls.currentMarker
 
-La proprietà **currentMarker** specifica o Recupera il numero di marcatore corrente.
+La **proprietà currentMarker** specifica o recupera il numero del marcatore corrente.
 
 ``` syntax
 player.controls.currentMarker
@@ -32,19 +32,19 @@ player.controls.currentMarker
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di lettura/scrittura (**Long**) il cui valore predefinito è zero.
+Questa proprietà è un numero di **lettura/scrittura** (**long**) con un valore predefinito pari a zero.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione di **currentMarker** fa sì che la riproduzione venga avviata dal marcatore specificato. Prima di provare a impostare **currentMarker**, determinare se un file contiene marcatori e il numero di marcatori utilizzando **markerCount**. Se un file non ha marcatori, l'impostazione di **currentMarker** su qualsiasi elemento, ma con zero, genera un errore. L'impostazione di **currentMarker** su un numero maggiore di **markerCount** genera anche un errore.
+Se **si imposta currentMarker,** la riproduzione viene avviata dal marcatore specificato. Prima di tentare di impostare **currentMarker,** determinare se un file contiene marcatori e il numero di marcatori usando **markerCount.** Se un file non contiene marcatori, l'impostazione **di currentMarker** su un valore diverso da zero restituisce un errore. **L'impostazione di currentMarker** su un numero maggiore di **markerCount** comporta anche un errore.
 
-La proprietà **currentMarker** restituisce sempre il marcatore corrente o ultimo, il che significa che la posizione effettiva del file può essere in corrispondenza del marcatore corrente o prima del marcatore successivo. I marcatori sono numerati a partire da 1, pertanto se un file contiene marcatori, è possibile impostare **currentMarker** su zero per modificare la posizione del file su zero.
+La **proprietà currentMarker** restituisce sempre l'indicatore corrente o l'ultimo, il che significa che la posizione effettiva del file può essere in corrispondenza del marcatore corrente o prima del marcatore successivo. I marcatori sono numerati a partire da 1, quindi se un file contiene marcatori, è possibile impostare **currentMarker** su zero per modificare la posizione del file su zero.
 
-Fino a quando non viene impostato l'elemento multimediale corrente (utilizzando *Player*.**URL** o *lettore*. **currentMedia**), **currentMarker** restituisce zero.
+Fino a quando non viene impostato l'elemento multimediale corrente (utilizzando *Player.***URL o** *Player*. **currentMedia**), **currentMarker** restituisce zero.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato **currentMarker** per avviare la riproduzione video dal marcatore che corrisponde alla proprietà **SelectedIndex** di un elemento HTML SELECT. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene utilizzato **currentMarker** per avviare la riproduzione video dal marcatore che corrisponde alla proprietà **selectedIndex** di un elemento HTML SELECT. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -71,7 +71,7 @@ Nell'esempio JScript seguente viene usato **currentMarker** per avviare la ripro
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -83,13 +83,13 @@ Nell'esempio JScript seguente viene usato **currentMarker** per avviare la ripro
 [**Oggetto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Media. markerCount**](media-markercount.md)
+[**Media.markerCount**](media-markercount.md)
 </dt> <dt>
 
-[**Player. currentMedia**](player-currentmedia.md)
+[**Player.currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Player. URL**](player-url.md)
+[**Player.URL**](player-url.md)
 </dt> </dl>
 
  

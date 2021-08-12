@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fc217211455d8804de47b2b3ffc761d4328fa49a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8dfe86439e9760fb06e8cd29e9140e73e71030744b064408df6275ced4a2e30c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676597"
 ---
-# <a name="enabledns-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo EnableDNS della \_ classe NetworkAdapterConfiguration Win32
+# <a name="enabledns-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo EnableDNS della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo statico della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDNS** Abilita il Domain Name System (DNS) per il servizio.
+Il metodo statico della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDNS** abilita il Domain Name System (DNS) per il servizio.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa la Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,13 +48,13 @@ uint32 EnableDNS(
 *DNSHostName* \[ in, facoltativo\]
 </dt> <dd>
 
-Nome dell'host DNS abilitato da questo metodo.
+Nome dell'host DNS che questo metodo abilita.
 
 Esempio: "corpdns"
 
 </dd> <dt>
 
-*Dnsdomain* \[ in, facoltativo\]
+*DNSDomain* \[ in, facoltativo\]
 </dt> <dd>
 
 Rappresenta il nome di un'organizzazione seguito da un punto e un'estensione che indica il tipo di organizzazione.
@@ -66,38 +66,38 @@ Esempio: "microsoft.com"
 *DNSServerSearchOrder* \[ in, facoltativo\]
 </dt> <dd>
 
-Elenco di indirizzi IP del server su cui eseguire una query per i server DNS.
+Elenco di indirizzi IP del server su cui eseguire query per i server DNS.
 
 </dd> <dt>
 
 *DNSDomainSuffixSearchOrder* \[ in, facoltativo\]
 </dt> <dd>
 
-Suffisso di dominio DNS aggiunto a un nome host durante la risoluzione dei nomi. Quando si risolve un nome di dominio completo (FQDN) da un nome di solo host, il sistema aggiunge il nome di dominio locale. Se la risoluzione dei nomi ha esito negativo, il sistema utilizza l'elenco dei suffissi di dominio per creare altri FQDN nell'ordine elencato, quindi esegue una query sui server DNS per ciascuno di essi.
+Suffisso di dominio DNS aggiunto a un nome host durante la risoluzione dei nomi. Quando si risolve un nome di dominio completo (FQDN) da un nome solo host, il sistema aggiunge il nome di dominio locale. Se la risoluzione dei nomi non riesce, il sistema usa l'elenco di suffissi di dominio per creare fqdn aggiuntivi nell'ordine elencato e quindi esegue una query sui server DNS per ognuno di essi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto un riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e qualsiasi altro numero se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario un riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e qualsiasi altro numero in caso di errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, nessun riavvio necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, nessun riavvio necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito, riavvio necessario.
 
 </dd> <dt>
 
@@ -119,12 +119,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non è subnet mask.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -164,7 +164,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -173,12 +173,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -227,12 +227,12 @@ Percorso di sistema non valido.
 
 </dd> <dt>
 
-**Copia del file non riuscita**
+**La copia del file non è riuscita**
 </dt> <dd>
 
 78
 
-Copia del file non riuscita.
+La copia del file non è riuscita.
 
 </dd> <dt>
 
@@ -254,7 +254,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -263,16 +263,16 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
-**Non è possibile rilasciare il lease DHCP**
+**Impossibile rilasciare il lease DHCP**
 </dt> <dd>
 
 83
@@ -290,7 +290,7 @@ IP non abilitato sulla scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -299,12 +299,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti del numero di frame/rete**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del frame o del numero di rete.
 
 </dd> <dt>
 
@@ -335,12 +335,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro al di fuori dei limiti.
 
 </dd> <dt>
 
@@ -376,20 +376,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -416,7 +416,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -434,7 +434,7 @@ DHCP non abilitato sulla scheda.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente, tratto dall'esempio di codice VBScript [Abilita DNS su tutte le schede di rete](https://Gallery.TechNet.Microsoft.Com/c5736a48-71cc-4483-9605-d71d222740ac) nella raccolta TechNet, Abilita il DNS per tutte le schede di rete in un computer.
+L'esempio di codice seguente, tratto dall'esempio di codice VBScript Enable [DNS on All Network Adapters](https://Gallery.TechNet.Microsoft.Com/c5736a48-71cc-4483-9605-d71d222740ac) (Abilita DNS in tutte le schede di rete) nella raccolta TechNet, abilita DNS per tutte le schede di rete in un computer.
 
 
 ```VB
@@ -461,7 +461,7 @@ objNetworkSettings.EnableDNS strHostName, , , arrDNSSuffixes
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -470,16 +470,16 @@ objNetworkSettings.EnableDNS strHostName, , , arrDNSSuffixes
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Attività WMI: Account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

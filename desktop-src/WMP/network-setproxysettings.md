@@ -1,11 +1,11 @@
 ---
-title: Metodo Network. setProxySettings
-description: Il metodo setProxySettings specifica l'impostazione del proxy per un protocollo specificato.
+title: Metodo Network.setProxySettings
+description: Il metodo setProxySettings specifica l'impostazione proxy per un protocollo specificato.
 ms.assetid: 473501c9-27ea-47ec-bc82-691804fbfb89
 keywords:
 - Metodo setProxySettings Windows Media Player
-- Metodo setProxySettings Media Player Windows, classe di rete
-- Classe di rete Media Player Windows, metodo setProxySettings
+- Metodo setProxySettings Windows Media Player , classe Network
+- Classe di rete Windows Media Player, metodo setProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b3f3da665b07f717449721c9fb43a8733cdb6c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6501d097a4ec342c2831e4b72bf8f17edc4e4e1bec02b2b51cd7840325674b88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573859"
 ---
-# <a name="networksetproxysettings-method"></a>Metodo Network. setProxySettings
+# <a name="networksetproxysettings-method"></a>Metodo Network.setProxySettings
 
-Il metodo **setProxySettings** specifica l'impostazione del proxy per un protocollo specificato.
+Il **metodo setProxySettings** specifica l'impostazione proxy per un protocollo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ Network.setProxySettings(
 
 <dl> <dt>
 
-*protocollo* \[ di in\]
+*protocollo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che specifica il nome del protocollo. Per un elenco di protocolli supportati, vedere [protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+**Stringa** che specifica il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*impostazione* \[ di in\]
+*impostazione* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) contenente uno dei valori seguenti.
+**Numero** (**long**) contenente uno dei valori seguenti.
 
 
 
@@ -82,7 +82,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzato JScript con un elemento HTML SELECT **per consentire all'utente di specificare l'impostazione del proxy di Windows Media Player per il protocollo http. L'oggetto Player** è stato creato con ID = "Player".
+Nell'esempio seguente viene JScript con un elemento HTML SELECT per consentire all'utente di specificare l Windows Media Player **proxy per il protocollo HTTP. L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -112,7 +112,7 @@ Nell'esempio seguente viene utilizzato JScript con un elemento HTML SELECT **per
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -121,7 +121,7 @@ Nell'esempio seguente viene utilizzato JScript con un elemento HTML SELECT **per
 
 <dl> <dt>
 
-[**Oggetto di rete**](network-object.md)
+[**Oggetto Di rete**](network-object.md)
 </dt> </dl>
 
  

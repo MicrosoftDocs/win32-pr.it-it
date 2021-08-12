@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso EventDataType
-description: Definisce gli elementi e le strutture dei dati dell'evento che contiene i dati dell'evento.
+description: Definisce gli elementi e le strutture dei dati dell'evento che contengono i dati dell'evento.
 ms.assetid: 9531163f-34ce-4673-b2d8-636042915c73
 keywords:
-- Log eventi di tipo complesso EventDataType
+- EventDataType tipo complesso EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a93695db477ebb0c7b5652419198f8f5c6370dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 424f7f5f6472859a06605467c427fc7b9f210a960f0920fb8593778bd757fc06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589024"
 ---
 # <a name="eventdatatype-complex-type"></a>Tipo complesso EventDataType
 
-Definisce gli elementi e le strutture dei dati dell'evento che contiene i dati dell'evento.
+Definisce gli elementi e le strutture dei dati dell'evento che contengono i dati dell'evento.
 
 ``` syntax
 <xs:complexType name="EventDataType">
@@ -56,9 +56,9 @@ Definisce gli elementi e le strutture dei dati dell'evento che contiene i dati d
 
 | Elemento                                                              | Tipo                                                               | Descrizione                                                                                          |
 |----------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**Binary**](eventschema-binary-eventdatatype-element.md)           | hexBinary                                                          | BLOB di dati binari per gli eventi scritti mediante la [registrazione degli eventi](/windows/desktop/EventLog/event-logging).<br/> |
+| [**Binario**](eventschema-binary-eventdatatype-element.md)           | Hexbinary                                                          | BLOB di dati binari per gli eventi scritti tramite [Registrazione eventi](/windows/desktop/EventLog/event-logging).<br/> |
 | [**ComplexData**](eventschema-complexdata-eventdatatype-element.md) | [**ComplexDataType**](eventschema-complexdatatype-complextype.md) | Struttura definita nel modello per l'evento.<br/>                                |
-| [**Data**](eventschema-data-eventdatatype-element.md)               | [**Tipo**](eventschema-datafieldtype-complextype.md)          | Elemento di dati di primo livello definito nel modello per l'evento.<br/>                      |
+| [**Dati**](eventschema-data-eventdatatype-element.md)               | [**Datatype**](eventschema-datafieldtype-complextype.md)          | Elemento di dati di primo livello definito nel modello per l'evento.<br/>                      |
 
 
 
@@ -74,7 +74,7 @@ Definisce gli elementi e le strutture dei dati dell'evento che contiene i dati d
 
 ## <a name="remarks"></a>Commenti
 
-La funzione [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) esegue il rendering di matrici e strutture come BLOB binari.
+La [**funzione EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) esegue il rendering di matrici e strutture come BLOB binari.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,8 +82,8 @@ La funzione [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) ese
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: Recupero di un servizio SDO
-description: Recupero di un servizio SDO
+title: Recupero di un SDO del servizio
+description: Recupero di un SDO del servizio
 ms.assetid: bac95c42-8f7e-4011-960c-8f18b4b7c088
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afcea1885e0ed714587e99bc7c2dcd92f2fea422
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 51f1ec3f8537cbf6e9a7be82f8152bc764a263093fe0ebeee46ed1499abfd346
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104223960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618957"
 ---
-# <a name="retrieving-a-service-sdo"></a>Recupero di un servizio SDO
+# <a name="retrieving-a-service-sdo"></a>Recupero di un SDO del servizio
 
 > [!Note]  
-> Il servizio di autenticazione Internet (IAS) è stato rinominato server dei criteri di rete (NPS) a partire da Windows Server 2008.
+> Il servizio Autenticazione Internet (IAS) è stato rinominato Server dei criteri di rete (NPS) a partire da Windows Server 2008.
 
- 
+ 
 
 Il codice seguente recupera un oggetto dati server (SDO) per il server dei criteri di rete.
 
@@ -52,13 +52,13 @@ Il codice seguente recupera un oggetto dati server (SDO) per il server dei crite
 
 ## <a name="remarks"></a>Commenti
 
-Prima di poter chiamare uno dei metodi [**ISdoMachine**](/windows/desktop/api/sdoias/nn-sdoias-isdomachine) , è necessario [connettersi](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer) a un computer.
+È necessario [connettersi](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer) a un computer prima di poter chiamare uno dei metodi [**ISdoMachine.**](/windows/desktop/api/sdoias/nn-sdoias-isdomachine)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Connessione a un computer SDO-Enabled](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer)
+[Collegamento a un SDO-Enabled computer](/windows/desktop/Nps/sdo-attaching-to-an-sdo-enabled-computer)
 </dt> <dt>
 
 [**ISdoMachine::GetServiceSDO**](/windows/desktop/api/sdoias/nf-sdoias-isdomachine-getservicesdo)
@@ -67,6 +67,6 @@ Prima di poter chiamare uno dei metodi [**ISdoMachine**](/windows/desktop/api/sd
 [**ISdoServiceControl**](/windows/desktop/api/sdoias/nn-sdoias-isdoservicecontrol)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

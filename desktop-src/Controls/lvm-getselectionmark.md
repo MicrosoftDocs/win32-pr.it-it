@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETSELECTIONMARK (COMmctrl. h)
-description: Recupera il contrassegno di selezione da un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetSelectionMark di ListView.
+title: LVM_GETSELECTIONMARK messaggio (Commctrl.h)
+description: Recupera il segno di selezione da un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView GetSelectionMark.
 ms.assetid: 21daf7d7-1217-4608-93f9-c390546f1591
 keywords:
-- Controlli di Windows Message LVM_GETSELECTIONMARK
+- LVM_GETSELECTIONMARK di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 076aff15ff69c4b442c74022ed5a7c02b92a8c52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed2675550ebc4cf456b439a2e5869068e983f46c82bf6fdde99d8b92806e6cac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118670979"
 ---
-# <a name="lvm_getselectionmark-message"></a>\_Messaggio GETSELECTIONMARK LVM
+# <a name="lvm_getselectionmark-message"></a>Messaggio LVM \_ GETSELECTIONMARK
 
-Recupera il contrassegno di selezione da un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetSelectionMark di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getselectionmark) .
+Recupera il segno di selezione da un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView GetSelectionMark.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getselectionmark)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,11 +37,11 @@ Recupera il contrassegno di selezione da un controllo visualizzazione elenco. È
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il contrassegno di selezione in base zero oppure-1 se non è presente alcun contrassegno di selezione.
+Restituisce il segno di selezione in base zero oppure -1 se non è presente alcun segno di selezione.
 
 ## <a name="remarks"></a>Commenti
 
-Il *contrassegno di selezione* è l'indice dell'elemento da cui inizia una selezione multipla.
+Il *segno di selezione* è l'indice dell'elemento da cui inizia una selezione multipla.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Il *contrassegno di selezione* è l'indice dell'elemento da cui inizia una selez
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Il *contrassegno di selezione* è l'indice dell'elemento da cui inizia una selez
 
 <dl> <dt>
 
-[**\_SETSELECTIONMARK LVM**](lvm-setselectionmark.md)
+[**LVM \_ SETSELECTIONMARK**](lvm-setselectionmark.md)
 </dt> </dl>
 
  

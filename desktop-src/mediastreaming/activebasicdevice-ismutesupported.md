@@ -1,11 +1,11 @@
 ---
-title: Proprietà ActiveBasicDevice IsMuteSupported (PlayToDevice. h)
-description: Ottiene un valore che indica se il dispositivo supporta la soppressione dell'audio.
+title: Proprietà ActiveBasicDevice IsMuteSupported (PlayToDevice.h)
+description: Ottiene un valore che indica se il dispositivo supporta la disattivazione dell'audio.
 ms.assetid: FF4B533F-B416-4DBE-BF86-FA34E785FFA2
 keywords:
-- API di streaming multimediale della proprietà IsMuteSupported
-- API di streaming multimediale della proprietà IsMuteSupported, interfaccia ActiveBasicDevice
-- API di streaming multimediale dell'interfaccia ActiveBasicDevice, proprietà IsMuteSupported
+- Proprietà IsMuteSupported API Streaming multimediale
+- Proprietà IsMuteSupported API Streaming multimediale, interfaccia ActiveBasicDevice
+- Interfaccia ActiveBasicDevice API Streaming multimediale , proprietà IsMuteSupported
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcec2e4520bd3b15b715c01e4369da87887355e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fad8352504a6c950bb76206f05c77c5baa9f3baed2f1144a1d6c165e380a4b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236649"
 ---
-# <a name="activebasicdeviceismutesupported-property"></a>Proprietà ActiveBasicDevice:: IsMuteSupported
+# <a name="activebasicdeviceismutesupported-property"></a>Proprietà ActiveBasicDevice::IsMuteSupported
 
-Ottiene un valore che indica se il dispositivo supporta la soppressione dell'audio.
+Ottiene un valore che indica se il dispositivo supporta la disattivazione dell'audio.
 
 Questa proprietà è di sola lettura.
 
@@ -43,9 +43,9 @@ HRESULT get_IsMuteSupported(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore a un **valore booleano** che indica se il dispositivo supporta la soppressione dell'audio.
+Puntatore a un **valore booleano** che indica se il dispositivo supporta la disattivazione dell'audio.
 
-**true** se il dispositivo supporta la soppressione dell'audio; in caso contrario, **false**.
+**true** se il dispositivo supporta la disattivazione dell'audio; in caso contrario, **false**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,10 +53,10 @@ Puntatore a un **valore booleano** che indica se il dispositivo supporta la sopp
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

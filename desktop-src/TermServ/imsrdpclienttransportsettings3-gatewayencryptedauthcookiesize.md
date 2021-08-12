@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayEncryptedAuthCookieSize di IMsRdpClientTransportSettings3
+title: Proprietà IMsRdpClientTransportSettings3 GatewayEncryptedAuthCookieSize
 description: Dimensione, in caratteri, della proprietà GatewayEncryptedAuthCookie.
 ms.assetid: 52e24bef-5afa-4954-b639-08ea8701404a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayEncryptedAuthCookieSize
-- Servizi Desktop remoto proprietà GatewayEncryptedAuthCookieSize, interfaccia IMsRdpClientTransportSettings3
-- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto, proprietà GatewayEncryptedAuthCookieSize
+- Proprietà GatewayEncryptedAuthCookieSize Servizi Desktop remoto
+- Proprietà GatewayEncryptedAuthCookieSize Servizi Desktop remoto , interfaccia IMsRdpClientTransportSettings3
+- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto , proprietà GatewayEncryptedAuthCookieSize
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 238245cdb9c0164b69434cf61f790b8f81fa3da2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41e26e4d15c134bcd8a2dd5bbf74b574f38ce56627d0f7e7840547ed1d56a67a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606936"
 ---
-# <a name="imsrdpclienttransportsettings3gatewayencryptedauthcookiesize-property"></a>Proprietà IMsRdpClientTransportSettings3:: GatewayEncryptedAuthCookieSize
+# <a name="imsrdpclienttransportsettings3gatewayencryptedauthcookiesize-property"></a>Proprietà IMsRdpClientTransportSettings3::GatewayEncryptedAuthCookieSize
 
-Dimensione, in caratteri, della proprietà [**GatewayEncryptedAuthCookie**](imsrdpclienttransportsettings3-gatewayencryptedauthcookie.md) .
+Dimensione, in caratteri, della [**proprietà GatewayEncryptedAuthCookie.**](imsrdpclienttransportsettings3-gatewayencryptedauthcookie.md)
 
 Si tratta di una proprietà di lettura/scrittura.
 

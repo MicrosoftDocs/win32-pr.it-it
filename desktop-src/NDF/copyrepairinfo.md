@@ -1,9 +1,9 @@
 ---
-title: Funzione CopyRepairInfo (Ndattributils. h)
+title: Funzione CopyRepairInfo (Ndattributils.h)
 description: Crea una copia di una struttura RepairInfo.
 ms.assetid: a1147ce6-9a90-4a46-8fe4-da3353391a13
 keywords:
-- CopyRepairInfo funzione NDF
+- Funzione CopyRepairInfo NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a24d15ec5a8a69b3c8c40700273ebcb6f32bcfd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e40a054df2b16684840f22295f0c26de6029ef150a97ca8839c98d94713ab030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620436"
 ---
-# <a name="copyrepairinfo-function"></a>CopyRepairInfo (funzione)
+# <a name="copyrepairinfo-function"></a>Funzione CopyRepairInfo
 
-La funzione **CopyRepairInfo** crea una copia di una struttura [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) .
+La **funzione CopyRepairInfo** crea una copia di una [**struttura RepairInfo.**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,19 +41,19 @@ HRESULT CopyRepairInfo(
 
 <dl> <dt>
 
-*Dest* \[ out\]
+*Dest* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) \** _
+Tipo: **[ **RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo)\***
 
 Struttura da aggiornare.
 
 </dd> <dt>
 
-_Source * \[ in\]
+*Origine* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) \** _
+Tipo: **const [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) \***
 
 Struttura esistente da copiare.
 
@@ -61,17 +61,17 @@ Struttura esistente da copiare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
+I possibili valori restituiti includono, ma non solo, quanto segue.
 
 
 
 | Codice restituito                                                                                   | Descrizione                                                                 |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata.<br/>                                         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Uno o più parametri non sono stati specificati correttamente.<br/>          |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria disponibile insufficiente per completare questa operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                                         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Uno o più parametri non sono stati forniti correttamente.<br/>          |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | La memoria disponibile non è sufficiente per completare questa operazione.<br/> |
 
 
 
@@ -83,9 +83,9 @@ I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

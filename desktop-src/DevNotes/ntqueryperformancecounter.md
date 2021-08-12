@@ -1,7 +1,7 @@
 ---
 description: Restituisce il valore corrente di un contatore delle prestazioni e, facoltativamente, la frequenza del contatore delle prestazioni.
 ms.assetid: ab8973b7-a358-4e50-85e8-9dbff4e67010
-title: NtQueryPerformanceCounter (funzione)
+title: Funzione NtQueryPerformanceCounter
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 5bf0aad74f6992212fb3b2238b3030c68cda2fc6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c92863adbc0865700dad272bbc299e1f1a667b2fd4afbcd75d548e3330890b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118667228"
 ---
-# <a name="ntqueryperformancecounter-function"></a>NtQueryPerformanceCounter (funzione)
+# <a name="ntqueryperformancecounter-function"></a>Funzione NtQueryPerformanceCounter
 
-\[Questa funzione non è supportata e non deve essere utilizzata. Usare invece le funzioni **QueryPerformanceCounter** e **QueryPerformanceFrequency** .\]
+\[Questa funzione non è supportata e non deve essere usata. Usare invece **le funzioni QueryPerformanceCounter** e **QueryPerformanceFrequency.**\]
 
 Restituisce il valore corrente di un contatore delle prestazioni e, facoltativamente, la frequenza del contatore delle prestazioni.
 
@@ -42,29 +42,29 @@ NTSTATUS NtQueryPerformanceCounter(
 
 <dl> <dt>
 
-*PerformanceCounter* \[ out\]
+*PerformanceCounter* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile per la ricezione del valore corrente del contatore delle prestazioni.
+Indirizzo di una variabile per ricevere il valore corrente del contatore delle prestazioni.
 
 </dd> <dt>
 
-*PerformanceFrequency* \[ out, facoltativo\]
+*PrestazioniFrequenza* \[ out, facoltativo\]
 </dt> <dd>
 
-Indirizzo di una variabile per la ricezione della frequenza del contatore delle prestazioni.
+Indirizzo di una variabile per ricevere la frequenza del contatore delle prestazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce lo stato del codice **NTSTATUS** . in caso contrario, restituisce un codice di errore, ad esempio **\_** **\_ \_ violazione di accesso allo stato**.
+Se la funzione ha esito positivo, restituisce il codice **NTSTATUS** **STATUS \_ SUCCESS;** in caso contrario, restituisce un codice di errore, ad esempio **STATUS ACCESS \_ \_ VIOLATION**.
 
 ## <a name="remarks"></a>Commenti
 
-Nessun file di intestazione disponibile per **NtQueryPerformanceCounter**. È consigliabile usare le funzioni alternative indicate sopra, sebbene sia anche possibile usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente a Ntdll.dll.
+Per **NtQueryPerformanceCounter** non è disponibile alcun file di intestazione. È consigliabile usare le funzioni alternative indicate in precedenza, anche se è anche possibile usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Ntdll.dll.
 
-La frequenza delle prestazioni è la frequenza del contatore delle prestazioni in Hertz, in particolare nei conteggi al secondo. Questo valore è dipendente dall'implementazione. Se l'implementazione di non dispone di hardware per supportare la tempistica delle prestazioni, il valore restituito è 0.
+La frequenza delle prestazioni è la frequenza del contatore delle prestazioni in hertz, in particolare in conteggi al secondo. Questo valore dipende dall'implementazione. Se l'implementazione non dispone di hardware per supportare i tempi di prestazioni, il valore restituito è 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ La frequenza delle prestazioni è la frequenza del contatore delle prestazioni i
 
 <dl> <dt>
 
-[**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter)
+[**Queryperformancecounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter)
 </dt> <dt>
 
 [**QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency)

@@ -1,5 +1,5 @@
 ---
-description: Il metodo SetPowerState della classe CIM \_ PCMCIAController imposta lo stato di alimentazione desiderato per un dispositivo logico e quando un dispositivo deve essere inserito in tale stato.
+description: Il metodo SetPowerState della classe CIM PCMCIAController imposta lo stato di alimentazione desiderato per un dispositivo logico e quando un dispositivo deve essere \_ inserito in tale stato.
 ms.assetid: 30e6936d-f621-4dd1-b25c-8d959ea97cc8
 ms.tgt_platform: multiple
 title: Metodo SetPowerState della classe CIM_PCMCIAController
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7d6ab0d4ca0ad2c44f6d6818888423efeff323f5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 20547a654f0f010cae315b27c921590e6e504575f33b67bf71972ea08a6e233f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675597"
 ---
-# <a name="setpowerstate-method-of-the-cim_pcmciacontroller-class"></a>Metodo SetPowerState della classe CIM \_ PCMCIAController
+# <a name="setpowerstate-method-of-the-cim_pcmciacontroller-class"></a>Metodo SetPowerState della classe \_ CIM PCMCIAController
 
-Il metodo **SetPowerState** della classe CIM \_ PCMCIAController imposta lo stato di alimentazione desiderato per un dispositivo logico e quando un dispositivo deve essere inserito in tale stato. In una sottoclasse, è necessario specificare il set di possibili codici restituiti utilizzando un qualificatore **ValueMap** nel metodo. Le stringhe a cui viene convertito il contenuto **ValueMap** devono essere specificate anche nella sottoclasse come qualificatore della matrice di **valori** . Questo metodo viene ereditato da [**\_ LogicalDevice CIM**](cim-logicaldevice.md).
+Il **metodo SetPowerState** della classe \_ CIM PCMCIAController imposta lo stato di alimentazione desiderato per un dispositivo logico e quando un dispositivo deve essere inserito in tale stato. In una sottoclasse, il set di possibili codici restituiti deve essere specificato usando un **qualificatore ValueMap** nel metodo . Le stringhe in cui vengono **convertiti i contenuti di ValueMap** devono essere specificate anche nella sottoclasse come qualificatore di matrice **Values.** Questo metodo viene ereditato da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -46,7 +46,7 @@ uint32 SetPowerState(
 
 <dl> <dt>
 
-*PowerState* \[ in\]
+*PowerState* \[ Pollici\]
 </dt> <dd>
 
 Valore **ValueMap** che specifica lo stato di alimentazione desiderato per questo dispositivo logico.
@@ -56,14 +56,14 @@ Valore **ValueMap** che specifica lo stato di alimentazione desiderato per quest
 1
 </dt> <dd>
 
-Potenza piena.
+Alimentazione completa.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Risparmio energia-modalità a basso consumo.
+Risparmio energia in modalità a basso consumo.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Risparmio energia standby.
 4
 </dt> <dd>
 
-Risparmio di energia.
+Risparmio energia altro.
 
 </dd> <dt>
 
@@ -91,26 +91,26 @@ Ciclo di alimentazione.
 6
 </dt> <dd>
 
-Spegnimento.
+Spegnere.
 
 </dd> </dl> </dd> <dt>
 
-*Ora* \[ di in\]
+*Ora* \[ Pollici\]
 </dt> <dd>
 
-Specifica quando deve essere impostato lo stato di alimentazione, come valore di data e ora normale o come valore di intervallo, in cui l'intervallo inizia quando viene ricevuta la chiamata al metodo. Quando il parametro *PowerState* è uguale a 5 ("ciclo di alimentazione"), il parametro *Time* indica quando riaccendere il dispositivo. Lo spegnimento è immediato.
+Specifica quando deve essere impostato lo stato di alimentazione, come valore di data e ora regolare o come valore di intervallo (in cui l'intervallo inizia quando viene ricevuta la chiamata al metodo). Quando il *parametro PowerState* è uguale a 5 ("Ciclo di alimentazione"), il *parametro Time* indica quando il dispositivo deve essere ri accensione. L'accensione è immediata.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 (zero) se ha esito positivo, 1 (uno) se la richiesta *PowerState* e *Time* specificata non è supportata e un altro valore se si sono verificati altri errori.
+Restituisce 0 (zero) se ha esito positivo, 1 (uno) se le richieste *PowerState* e *Time* specificate non sono supportate e un altro valore se si è verificato un altro errore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non è implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider. Per le classi WMI derivate da [**CIM \_ PCMCIAController**](cim-pcmciacontroller.md), vedere [Win32 Classes](win32-provider.md).
+Questo metodo non viene implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider. Per le classi WMI derivate [**da CIM \_ PCMCIAController,**](cim-pcmciacontroller.md)vedere [Classi Win32](win32-provider.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,7 +121,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -130,10 +130,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_PCMCIACONTROLLER CIM](setpowerstate-method-in-class-cim-pcmciacontroller.md)
+[CIM \_ PCMCIAController](setpowerstate-method-in-class-cim-pcmciacontroller.md)
 </dt> <dt>
 
-[**\_PCMCIACONTROLLER CIM**](cim-pcmciacontroller.md)
+[**CIM \_ PCMCIAController**](cim-pcmciacontroller.md)
 </dt> </dl>
 
  

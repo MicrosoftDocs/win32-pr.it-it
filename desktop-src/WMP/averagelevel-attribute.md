@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 594612f3675d818f94270b1952d2a9ca7bed15d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e169b1e2d63e6f8215515acc852d431ff13ccd513924e4c2a237b16c17dacfc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582746"
 ---
 # <a name="averagelevel-attribute"></a>Attributo AverageLevel
 
-L'attributo **AverageLevel** è un valore di ampiezza a 16 bit che indica il livello medio del volume.
+**L'attributo AverageLevel** è un valore di ampiezza a 16 bit che indica il livello medio del volume.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [File di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [File multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -34,12 +34,12 @@ Questo attributo viene archiviato sia nella libreria che nel file multimediale d
 
 Windows Media Player imposta questo valore in una delle istanze seguenti:
 
--   Dopo l'estrazione di un file.
--   Dopo aver riprodotto un file (quando è abilitata la funzionalità avanzata di livellamento automatico del volume).
+-   Dopo aver decompresso un file.
+-   Dopo aver riprodotto un file (quando è abilitato il miglioramento livellamento del volume automatico).
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszAverageLevel.
+La Windows media format SDK costante per questo attributo è g \_ wszAverageLevel.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -55,7 +55,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

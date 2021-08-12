@@ -1,26 +1,26 @@
 ---
 title: Esempi di WMDM
-description: Informazioni su come compilare ed eseguire questi esempi in Windows Media Device Manager SDK e sul funzionamento degli esempi.
+description: Informazioni su come compilare ed eseguire questi esempi in Windows Media Device Manager SDK e come funzionano gli esempi.
 ms.assetid: 5e58ba53-3c3c-4492-8b87-7e50d10e655f
 keywords:
-- Gestione dispositivi multimediali di Windows, esempi
+- Windows Gestione dispositivi multimediali, esempi
 - Gestione dispositivi, esempi
 - applicazioni desktop, esempi
-- provider di servizi, esempi
+- provider di servizi,esempi
 - esempi, applicazioni desktop
-- esempi, provider di servizi
+- esempi,provider di servizi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf3ba0d7b91736940efe6b9f85e9f6043a721be1
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4a513a70f7310d445be0dd159858412e3142d7cbd341e00dd63d06defb2ebd45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584249"
 ---
 # <a name="wmdm-samples"></a>Esempi di WMDM
 
-Windows Media Device Manager SDK include due esempi compilabili: un'applicazione desktop grafica di esempio che consente di esplorare i dispositivi connessi, creare playlist e trascinare file da e verso un dispositivo; e un provider di servizi di esempio che comunica con "dispositivi" virtuali nel computer (che sono effettivamente i dischi rigidi nel computer). La documentazione illustra come compilare ed eseguire questi progetti e fornisce informazioni sul loro funzionamento.
+L'SDK Windows Media Device Manager include due esempi compilabili: un'applicazione desktop grafica di esempio che consente di esplorare i dispositivi connessi, creare playlist e trascinare file da e verso un dispositivo; e un provider di servizi di esempio che comunica con i "dispositivi" virtuali nel computer (che sono in realtà i dischi rigidi nel computer). La documentazione illustra come compilare ed eseguire questi progetti e fornisce informazioni sul loro funzionamento.
 
 Questi due progetti sono documentati nelle sezioni seguenti:
 

@@ -6,20 +6,20 @@ keywords:
 - OpenGL, appendice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 740660f2b324b69b362d0b80f657fc48c68265ee
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 3abd318166daf42dac6b212b26fae7a04d5b91c530aae8a825c1f2fc1ba55cba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618474"
 ---
 # <a name="appendix-opengl"></a>Appendice (OpenGL)
 
-OpenGL, sviluppato originariamente da Silicon Graphics Incorporated (SGI) per le workstation grafiche, consente alle applicazioni di creare immagini a colori di alta qualità indipendenti da sistemi Windows, sistemi operativi e componenti hardware.
+OpenGL, originariamente sviluppato da Silicon Graphics Incorporated (SGI) per le workstation grafiche, consente alle applicazioni di creare immagini a colori di alta qualità indipendenti dai sistemi di windowing, dai sistemi operativi e dall'hardware.
 
-La bacheca dell'architettura OpenGL (ARB), un consorzio di settore, è attualmente responsabile della definizione di OpenGL. I membri di ARB includono Silicon Graphics Incorporated, Microsoft Corporation, Intel, IBM e Digital Equipment Corporation.
+OpenGL Architecture Review Board (ARB), un consorzio di settore, è attualmente responsabile della definizione di OpenGL. I membri dell'ARB includono Silicon Graphics Incorporated, Microsoft Corporation, Intel, IBM e Digital Equipment Corporation.
 
-Il documento di riferimento ufficiale per OpenGL versione 1 è il *Manuale di riferimento OpenGL*, della lavagna di revisione dell'architettura OpenGL (ISBN 0-201-63276-4). La guida ufficiale per apprendere la versione 1 di OpenGL è la *Guida per programmatori OpenGL*, di Jackie invidioso, Tom Davis e Mason Woo (ISBN 0-201-63274-8). Entrambi i libri sono pubblicati da Addison-Wesley.
+Il documento di riferimento ufficiale per OpenGL versione 1 è il manuale di riferimento *di OpenGL,* di OpenGL Architecture Review Board (ISBN 0-201-63276-4). La guida ufficiale per l'apprendimento di OpenGL versione 1 è la Guida alla programmazione *OpenGL,* di Jackie Neider, Tom Tom Tom e Mason Woo (ISBN 0-201-63274-8). Entrambi i libri sono pubblicati da Addison-Wesley.
 
  
 

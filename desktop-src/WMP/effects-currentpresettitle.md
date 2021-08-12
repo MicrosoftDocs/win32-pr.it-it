@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentPresetTitle
-description: L'attributo currentPresetTitle Recupera il titolo del set di impostazioni corrente della visualizzazione corrente.
+title: EFFECTS.currentPresetTitle
+description: L'attributo currentPresetTitle recupera il titolo del set di impostazioni corrente della visualizzazione corrente.
 ms.assetid: 479968a2-fb5e-4cde-b3fb-1f940ea1078c
 keywords:
-- EFFECTs. currentPresetTitle Windows Media Player
+- EFFECTS.currentPresetTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a93674b4be5e6490c846827ec7b17d496a5484b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1199b29ecc2871512e1d8dde7effda19a47998bd7bc6113ffabfa51ace07d559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578810"
 ---
-# <a name="effectscurrentpresettitle"></a>EFFECTs. currentPresetTitle
+# <a name="effectscurrentpresettitle"></a>EFFECTS.currentPresetTitle
 
-L'attributo **currentPresetTitle** Recupera il titolo del set di impostazioni corrente della visualizzazione corrente.
+**L'attributo currentPresetTitle** recupera il titolo del set di impostazioni corrente della visualizzazione corrente.
 
 ``` syntax
         elementID.currentPresetTitle
@@ -29,7 +29,7 @@ L'attributo **currentPresetTitle** Recupera il titolo del set di impostazioni co
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di sola lettura.
+Questo attributo è una stringa di sola **lettura.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è una **stringa** di sola lettura.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -45,7 +45,7 @@ Questo attributo è una **stringa** di sola lettura.
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

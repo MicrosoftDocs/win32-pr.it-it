@@ -1,21 +1,21 @@
 ---
-title: Effetto Unpremultiply
-description: Utilizzare questo effetto per convertire un'immagine da alfa premoltiplicato a unpremultiplied alfa.
+title: Effetto non premoltimultipamente
+description: Usare questo effetto per convertire un'immagine da alfa premoltilied a alfa non premoltitipli.
 ms.assetid: A4FAF899-81DA-4BDA-98B4-DE63EC1664F5
 keywords:
-- effetto unpremultiply
+- effetto nonpremultiply
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5628ea646443a08abffa4549ad25147deb609acf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a152803956b9839b881404be013c521dc0f5bfc764b2f07a8462275b523ba762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664879"
 ---
-# <a name="unpremultiply-effect"></a>Effetto Unpremultiply
+# <a name="unpremultiply-effect"></a>Effetto non premoltimultipamente
 
-Utilizzare questo effetto per convertire un'immagine da alfa premoltiplicato a unpremultiplied alfa. L'effetto sostituisce ogni pixel di input `P = {R, G, B, A}` con `P' = {R/A, G/A, B/A, A}` nell'output.
+Usare questo effetto per convertire un'immagine da alfa premoltilied a alfa non premoltitipli. L'effetto sostituisce ogni pixel di input `P = {R, G, B, A}` `P' = {R/A, G/A, B/A, A}` con nell'output.
 
 Questo effetto non ha proprietà.
 
@@ -23,7 +23,7 @@ Il CLSID per questo effetto è CLSID \_ D2D1Unpremultiply.
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-La dimensione bitmap di output corrisponde alla dimensione bitmap di input.
+Le dimensioni della bitmap di output sono le stesse della bitmap di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,10 +31,10 @@ La dimensione bitmap di output corrisponde alla dimensione bitmap di input.
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

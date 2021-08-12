@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ QuickFixEngineering&\# 8194; La classe WMI rappresenta un piccolo aggiornamento a livello di sistema, comunemente noto come aggiornamento QFE (Quick-Fix Engineering), applicato al sistema operativo corrente.
+description: Oggetto \_ QuickFixEngineering Win32&\# 8194; La classe WMI rappresenta un piccolo aggiornamento a livello di sistema, comunemente definito aggiornamento QFE (Quick Fix Engineering), applicato al sistema operativo corrente.
 ms.assetid: 84aed428-7620-4f7a-941f-f9d683020d8a
 ms.tgt_platform: multiple
-title: Classe Win32_QuickFixEngineering
+title: Win32_QuickFixEngineering classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0e9db31dd452161a31575b6f7184a34c35dea71e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 15110b5801555947eed434b8148aec3cc753f6eec359f32b96cd67a5b2649f31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675013"
 ---
-# <a name="win32_quickfixengineering-class"></a>Win32 \_ QuickFixEngineering (classe)
+# <a name="win32_quickfixengineering-class"></a>Classe \_ Win32 QuickFixEngineering
 
-La  [classe WMI](../wmisdk/retrieving-a-class.md) **\_ QuickFixEngineering Win32** rappresenta un piccolo aggiornamento a livello di sistema, comunemente noto come aggiornamento QFE (Quick Fix Engineering), applicato al sistema operativo corrente. Questa classe restituisce solo gli aggiornamenti forniti da Component Based Servicing (CBS). Questi aggiornamenti non sono elencati nel registro di sistema. Gli aggiornamenti forniti da Microsoft Windows Installer (MSI) o dal sito Windows Update ( [https://update.microsoft.com](https://update.microsoft.com/) ) non vengono restituiti da **Win32 \_ QuickFixEngineering**.
+La classe  [WMI](../wmisdk/retrieving-a-class.md) **Win32 \_ QuickFixEngineering** rappresenta un piccolo aggiornamento a livello di sistema, comunemente definito aggiornamento QFE (Quick Fix Engineering), applicato al sistema operativo corrente. Questa classe restituisce solo gli aggiornamenti forniti da Component Based Servicing (CBS). Questi aggiornamenti non sono elencati nel Registro di sistema. Gli aggiornamenti forniti da Microsoft Windows Installer (MSI) o dal sito di aggiornamento Windows ( ) non vengono restituiti da [https://update.microsoft.com](https://update.microsoft.com/) **Win32 \_ QuickFixEngineering**.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,54 +60,54 @@ class Win32_QuickFixEngineering : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ QuickFixEngineering** presenta questi tipi di membri:
+La **classe Win32 \_ QuickFixEngineering** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ QuickFixEngineering** dispone di queste proprietà.
+La **classe Win32 \_ QuickFixEngineering** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto.
+Breve descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**propagati**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nome**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" WMI ")
+Qualificatori: [**CIM \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Nome locale del computer. Il valore di questa proprietà deriva dalla classe [**CIM \_ ComputerSystem**](cim-computersystem.md) .
+Nome locale del sistema del computer. Il valore di questa proprietà deriva dalla [**classe CIM \_ ComputerSystem.**](cim-computersystem.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -116,72 +116,72 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **FixComments**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
-Commenti aggiuntivi relativi all'aggiornamento.
+Commenti aggiuntivi correlati all'aggiornamento.
 
 </dd> <dt>
 
 **HotFixID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Qualificatori: [**key,**](../wmisdk/key-qualifier.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
-Identificatore univoco associato a un particolare aggiornamento.
+Identificatore univoco associato a un aggiornamento specifico.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data di installazione ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Install Date")
 </dt> </dl>
 
 Indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstalledBy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
 Persona che ha installato l'aggiornamento. Se questo valore è sconosciuto, la proprietà è vuota.
@@ -191,19 +191,19 @@ Persona che ha installato l'aggiornamento. Se questo valore è sconosciuto, la p
 **InstalledOn**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
 Data di installazione dell'aggiornamento. Se questo valore è sconosciuto, la proprietà è vuota.
 
 > [!Note]  
-> Questa proprietà può usare formati diversi, a seconda del momento in cui è stato installato QuickFix. Per la maggior parte dei sistemi viene utilizzato un formato di data standard, ad esempio "23-10-2013". Tuttavia, alcuni sistemi possono restituire un valore esadecimali a 64 bit nel formato Win32 [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) .
+> Questa proprietà può usare formati diversi, a seconda di quando è stato installato QuickFix. La maggior parte dei sistemi usa un formato di data standard, ad esempio "23-10-2013". Tuttavia, alcuni sistemi possono restituire un valore esadecimale a 64 bit nel formato [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) Win32.
 
  
 
@@ -212,7 +212,7 @@ Data di installazione dell'aggiornamento. Se questo valore è sconosciuto, la pr
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -221,45 +221,45 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override di questa proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. In caso di sottoclasse, questa proprietà può essere sottoposta a override come proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ServicePackInEffect**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+Qualificatori: [**key,**](../wmisdk/key-qualifier.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
-Service Pack attivo quando è stato applicato l'aggiornamento. Se non è stato applicato alcun Service Pack, la proprietà assume il valore SP0. Se non è possibile determinare quale Service Pack era attivo, questa proprietà è **null**.
+Service Pack attivo quando è stato applicato l'aggiornamento. Se non è stato applicato alcun Service Pack, la proprietà assume il valore SP0. Se non è possibile determinare il Service Pack in vigore, questa proprietà è **NULL.**
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto. È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "danneggiato" e "errore predazione". "Predator fail" indica che un elemento funziona correttamente, ma sta stimando un errore, ad esempio un'unità disco rigido abilitata per SMART.
+Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Degraded" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma sta stimando un errore (ad esempio, un disco rigido abilitato per SMART).
 
-Lo stato non operativo può includere "Error", "starting", "stoping" e "Service". Il "servizio" può essere applicato durante il mirroring del disco, ovvero la riattivazione, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". "Servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altre operazioni amministrative. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -274,77 +274,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -353,23 +353,23 @@ Ridotto **("danneggiato"** )
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ QuickFixEngineering** deriva da [**CIM \_ LogicalElement**](cim-logicalelement.md).
+La **classe Win32 \_ QuickFixEngineering** è derivata da [**CIM \_ LogicalElement.**](cim-logicalelement.md)
 
-Poiché gli aggiornamenti vengono archiviati in due posizioni, un'enumerazione di questa classe può generare duplicati.
+Poiché gli aggiornamenti vengono archiviati in due posizioni, un'enumerazione di questa classe può causare duplicati.
 
-Una correzione a caldo è una patch temporanea del sistema operativo prodotta dal gruppo di progettazione Quick Fix in Microsoft. Analogamente ai Service Pack, le correzioni rapide rappresentano le modifiche apportate a una versione di Windows dopo il rilascio del sistema operativo.
+Una correzione rapida è una patch temporanea del sistema operativo prodotta dal correzione rapida Engineering di Microsoft. Analogamente ai Service Pack, le correzioni a caldo rappresentano le modifiche apportate a una versione di Windows dopo il rilascio del sistema operativo.
 
-A differenza dei Service Pack, le correzioni rapide non sono destinate all'installazione coperta in tutti i computer. Vengono invece sviluppate per risolvere problemi molto specifici, spesso per configurazioni di computer specifiche.
+A differenza dei Service Pack, le correzioni a caldo non sono destinate all'installazione in tutti i computer. Vengono invece sviluppati per risolvere problemi molto specifici, spesso per configurazioni di computer specifiche.
 
-Inoltre, le correzioni rapide rappresentano installazioni indipendenti che non dipendono da altre correzioni rapide rilasciate. Ad esempio, un ipotetico correzione a caldo 4 non include le correzioni di bug e le funzionalità incluse negli hotfix 1, 2 e 3. Nella maggior parte dei casi, non è necessario installare le correzioni rapide 1, 2 e 3 prima di installare Hot Fix 4. In questo modo l'enumerazione dei singoli aggiornamenti rapidi è un'attività amministrativa importante: per comprendere la configurazione esatta di un computer, è necessario individuare non solo i Service Pack installati, ma anche i singoli aggiornamenti rapidi installati.
+Inoltre, le correzioni a caldo rappresentano installazioni indipendenti che non dipendono da altre correzioni a caldo rilasciate. Ad esempio, un'ipotetica correzione rapida 4 non include le correzioni di bug e le funzionalità incluse nelle correzioni a caldo 1, 2 e 3. Nella maggior parte dei casi, non è necessario installare le correzioni a caldo 1, 2 e 3 prima di installare la correzione rapida 4. Ciò rende l'enumerazione delle singole correzioni a caldo un'attività amministrativa importante: per conoscere la configurazione esatta di un computer, è necessario sapere non solo quali Service Pack sono stati installati, ma anche quali singole correzioni sono state installate.
 
-La classe **Win32 \_ QuickFixEngineering** consente di enumerare tutti gli aggiornamenti rapidi installati in un computer
+La **classe Win32 \_ QuickFixEngineering** consente di enumerare tutte le correzioni rapide installate in un computer
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di installazione di PowerShell [programmi installati](https://Gallery.TechNet.Microsoft.Com/Get-Installed-Programs-fae091ed) restituisce un elenco completo dei programmi installati.
+[L'esempio di](https://Gallery.TechNet.Microsoft.Com/Get-Installed-Programs-fae091ed) PowerShell Get Installed Programs (Ottieni programmi installati) restituisce un elenco completo dei programmi installati.
 
-Nell'esempio VBScript seguente vengono enumerati gli aggiornamenti rapidi installati in un computer
+L'esempio VBScript seguente enumera le correzioni rapida installate in un computer
 
 
 ```VB
@@ -396,7 +396,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -405,7 +405,7 @@ Next
 
 <dl> <dt>
 
-[**\_LogicalElement CIM**](cim-logicalelement.md)
+[**CIM \_ LogicalElement**](cim-logicalelement.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

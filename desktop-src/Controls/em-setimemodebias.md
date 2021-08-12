@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETIMEMODEBIAS (RichEdit. h)
+title: EM_SETIMEMODEBIAS messaggio (Richedit.h)
 description: Impostare la distorsione della modalità IME (Input Method Editor) per un controllo Rich Edit.
 ms.assetid: 4a3f97eb-fe80-4e84-a73e-3ed6d73644de
 keywords:
-- Controlli di Windows Message EM_SETIMEMODEBIAS
+- EM_SETIMEMODEBIAS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48fbd93971a57cffa3441c2a3db0816572f761d7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b4812c21558fba07be2709c0fd1a011f31d79fad17e0b4146fa0c7d65843a087
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118672671"
 ---
-# <a name="em_setimemodebias-message"></a>\_Messaggio SETIMEMODEBIAS em
+# <a name="em_setimemodebias-message"></a>Messaggio EM \_ SETIMEMODEBIAS
 
 Impostare la distorsione della modalità IME (Input Method Editor) per un controllo Rich Edit.
 
@@ -38,8 +38,8 @@ Valore di distorsione della modalità IME. Può essere uno dei seguenti.
 
 | Valore                                                                                                                                                                                        | Significato                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| <span id="IMF_SMODE_PLAURALCLAUSE"></span><span id="imf_smode_plauralclause"></span><dl> <dt>**\_PLAURALCLAUSE SMODE \_ FMI**</dt> </dl> | Imposta la distorsione della modalità IME su Name.<br/> |
-| <span id="IMF_SMODE_NONE"></span><span id="imf_smode_none"></span><dl> <dt>**\_SMODE FMI \_**</dt> </dl>                            | Nessuna distorsione.<br/>                        |
+| <span id="IMF_SMODE_PLAURALCLAUSE"></span><span id="imf_smode_plauralclause"></span><dl> <dt>**IMF \_ SMODE \_ PLAURALCLAUSE**</dt> </dl> | Imposta la distorsione della modalità IME su Nome.<br/> |
+| <span id="IMF_SMODE_NONE"></span><span id="imf_smode_none"></span><dl> <dt>**IMF \_ SMODE \_ NONE**</dt> </dl>                            | Nessuna distorsione.<br/>                        |
 
 
 
@@ -50,7 +50,7 @@ Valore di distorsione della modalità IME. Può essere uno dei seguenti.
 *lParam* 
 </dt> <dd>
 
-Deve corrispondere al valore *wParam*.
+Deve essere lo stesso valore di *wParam*.
 
 </dd> </dl>
 
@@ -60,11 +60,11 @@ Questo messaggio restituisce la nuova impostazione di distorsione della modalit�
 
 ## <a name="remarks"></a>Commenti
 
-Quando l'IME genera un elenco di scelte alternative per un set di caratteri, questo messaggio imposta i criteri in base ai quali verranno visualizzate alcune delle scelte nella parte superiore dell'elenco.
+Quando l'IME genera un elenco di scelte alternative per un set di caratteri, questo messaggio imposta i criteri in base ai quali alcune scelte verranno visualizzate all'inizio dell'elenco.
 
-Per impostare la distorsione della modalità TSF (Text Services Framework), usare [**em \_ SETCTFMODEBIAS**](em-setctfmodebias.md).
+Per impostare la distorsione Framework servizi di testo (TSF), usare [**EM \_ SETCTFMODEBIAS.**](em-setctfmodebias.md)
 
-Prima di chiamare questa funzione, l'applicazione deve chiamare [**em \_ ISIME**](em-isime.md) .
+L'applicazione deve [**chiamare \_ l'ISIME EM**](em-isime.md) prima di chiamare questa funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,9 +72,9 @@ Prima di chiamare questa funzione, l'applicazione deve chiamare [**em \_ ISIME**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP1 \[\]<br/>                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP solo con \[ app desktop SP1\]<br/>                                  |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ Prima di chiamare questa funzione, l'applicazione deve chiamare [**em \_ ISIME**
 **Riferimento**
 </dt> <dt>
 
-[**\_ISIME em**](em-isime.md)
+[**EM \_ ISIME**](em-isime.md)
 </dt> <dt>
 
-[**\_SETCTFMODEBIAS em**](em-setctfmodebias.md)
+[**EM \_ SETCTFMODEBIAS**](em-setctfmodebias.md)
 </dt> </dl>
 
  

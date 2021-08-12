@@ -1,19 +1,19 @@
 ---
-description: 'Di seguito sono riportate le classi pubbliche API copia shadow del volume:'
+description: "Di seguito sono riportate le classi pubbliche dell'API Copia Shadow del volume:"
 ms.assetid: da803101-76f6-48d7-a8b6-8f8af278bed7
-title: Classi API copia shadow del volume
+title: Classi dell'API Copia Shadow del volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccb6bce923ab3ccd9b9c8379f22307b52223848c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f667e86fefe13bb41f03ce6fdb4fa0b366e6c12367950155598adb44d3e2f80b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590713"
 ---
-# <a name="volume-shadow-copy-api-classes"></a>Classi API copia shadow del volume
+# <a name="volume-shadow-copy-api-classes"></a>Classi dell'API Copia Shadow del volume
 
-Di seguito sono riportate le classi pubbliche API copia shadow del volume:
+Di seguito sono riportate le classi pubbliche dell'API Copia Shadow del volume:
 
 -   [**CVssWriter**](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriter)
 -   [**CVssWriterEx**](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex)

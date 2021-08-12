@@ -1,36 +1,36 @@
 ---
-title: Informazioni sugli oggetti Mediacollection e media
-description: Informazioni sugli oggetti Mediacollection e media
+title: Informazioni sugli oggetti MediaCollection e Media
+description: Informazioni sugli oggetti MediaCollection e Media
 ms.assetid: e3260efd-44cc-4b4e-9f48-3441631bfa4f
 keywords:
-- Windows Media Player, oggetto Mediacollection
-- Modello a oggetti di Windows Media Player, oggetto Mediacollection
-- modello a oggetti, oggetto Mediacollection
-- Controllo ActiveX Windows Media Player, oggetto Mediacollection
-- Controllo ActiveX, oggetto Mediacollection
-- Controllo ActiveX Windows Media Player Mobile, oggetto Mediacollection
-- Windows Media Player Mobile, oggetto Mediacollection
-- Mediacollection (oggetto)
-- Windows Media Player, oggetto multimediale
-- Modello a oggetti di Windows Media Player, oggetto multimediale
+- Windows Media Player,Oggetto MediaCollection
+- Windows Media Player a oggetti, oggetto MediaCollection
+- modello a oggetti, oggetto MediaCollection
+- Windows Media Player ActiveX, oggetto MediaCollection
+- ActiveX, oggetto MediaCollection
+- Windows Media Player Mobile ActiveX control,MediaCollection object
+- Windows Media Player Mobile, oggetto MediaCollection
+- Oggetto MediaCollection
+- Windows Media Player,Oggetto Media
+- Windows Media Player a oggetti, oggetto Media
 - modello a oggetti, oggetto multimediale
-- Controllo ActiveX Windows Media Player, oggetto multimediale
-- Controllo ActiveX, oggetto multimediale
-- Controllo ActiveX Windows Media Player Mobile, oggetto multimediale
-- Windows Media Player Mobile, oggetto multimediale
+- Windows Media Player ActiveX, oggetto Media
+- ActiveX, oggetto Media
+- Windows Media Player Mobile ActiveX control,Media object
+- Windows Media Player Mobile, oggetto Media
 - Oggetto multimediale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe902fd9ed046e0197fb5c8c2d995d26befafe29
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 082bea6eb3707915422a0bfa5cba63a2a999ac8df27ffa13876e74ffcfc6a882
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583683"
 ---
-# <a name="about-the-mediacollection-and-media-objects"></a>Informazioni sugli oggetti Mediacollection e media
+# <a name="about-the-mediacollection-and-media-objects"></a>Informazioni sugli oggetti MediaCollection e Media
 
-**Mediacollection** e gli oggetti **multimediali** regolano la raccolta di supporti, che definisce le posizioni dei file multimediali digitali a cui può accedere Windows Media Player. Si ottiene l'oggetto **mediacollection** dalla proprietà **mediacollection** dell'oggetto **Player** . La proprietà **mediacollection** restituisce l'oggetto **mediacollection** . È possibile accedere alle proprietà dell'oggetto **mediacollection** solo dopo averlo creato. Ad esempio, per aggiungere un oggetto **multimediale** (un brano), usare il codice seguente:
+Gli **oggetti MediaCollection** **e Media** regolano la raccolta multimediale, che definisce le posizioni dei file multimediali digitali a cui Windows Media Player possibile accedere. Ottieni **l'oggetto MediaCollection** dalla **proprietà mediaCollection** dell'oggetto **Player.** La **proprietà mediaCollection** restituisce l'oggetto **MediaCollection.** È possibile accedere alle proprietà **dell'oggetto MediaCollection** solo dopo che è stato creato. Ad esempio, per aggiungere un **oggetto Media** (brano), usare il codice seguente:
 
 
 ```C++
@@ -40,9 +40,9 @@ player.mediacollection.add('laure.wma');
 
 
 
-Il file Laure. WMA è stato aggiunto alla raccolta di supporti.
+Il file laure.wma è stato aggiunto alla raccolta di supporti.
 
-È possibile ottenere l'oggetto **multimediale** corrente usando la proprietà **currentMedia** del **lettore**. Questo codice, ad esempio, ottiene la proprietà **Duration** dell'oggetto **multimediale** corrente:
+È possibile ottenere **l'oggetto Multimediale** corrente usando la **proprietà currentMedia** di **Player.** Ad esempio, questo codice ottiene la **proprietà duration** dell'oggetto **Media** corrente:
 
 
 ```C++
@@ -52,9 +52,9 @@ myduration = player.currentmedia.duration;
 
 
 
-Esistono diversi modi per ottenere un oggetto **multimediale** per poter accedere alle relative proprietà. Se ad esempio si vuole accedere alla proprietà **Duration** del supporto corrente, è possibile usare ognuna delle righe di codice seguenti.
+Esistono diversi modi per ottenere un oggetto **Media** in modo da poter accedere alle relative proprietà. Ad esempio, se si vuole accedere alla proprietà **duration** del supporto corrente, è possibile usare ognuna delle righe di codice seguenti.
 
-Per ottenere la durata del supporto attualmente in riproduzione:
+Per ottenere la durata del contenuto multimediale attualmente in riproduzione:
 
 
 ```C++
@@ -110,15 +110,15 @@ player.playlistCollection.getAll.item(1).item(2).duration;
 [**Oggetto multimediale**](media-object.md)
 </dt> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Modello a oggetti del lettore per i linguaggi di scripting**](player-object-model-for-scripting-languages.md)
+[**Modello a oggetti del lettore per linguaggi di scripting**](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

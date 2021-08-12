@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b6dfcd68f1bc684554d45feb13b9976465b70efa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9276a03d28bdfeee2b97b44e180bf190cbf20fc40ec58d0aafb44962a6e8fa9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118667984"
 ---
 # <a name="cabinetdllversioninfo-structure"></a>Struttura CABINETDLLVERSIONINFO
 
-\[Questa struttura contiene le informazioni necessarie solo quando si usa la funzione **DllGetVersion** , che non è supportata. Questa documentazione viene fornita solo a scopo informativo.\]
+\[Questa struttura contiene informazioni necessarie solo quando si usa la **funzione DllGetVersion,** che non è supportata. Questa documentazione viene fornita solo a scopo informativo.\]
 
-**CABINETDLLVERSIONINFO** contiene le informazioni sulla versione per Cabinet.dll.
+**CABINETDLLVERSIONINFO contiene** le informazioni sulla versione per Cabinet.dll.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ typedef struct {
 **cbStruct**
 </dt> <dd>
 
-Dimensioni, in byte, della struttura.
+Dimensioni della struttura, in byte.
 
 </dd> <dt>
 
@@ -68,14 +68,14 @@ Riservato.
 **dwFileVersionMS**
 </dt> <dd>
 
-Contiene i bit più significativi delle informazioni sulla versione. BITS 0-15 contengono la versione secondaria e BITS 16-31 contengono la versione principale.
+Contiene i bit più significativi delle informazioni sulla versione. I bit 0-15 contengono la versione secondaria e i bit 16-31 contengono la versione principale.
 
 </dd> <dt>
 
 **dwFileVersionLS**
 </dt> <dd>
 
-Contiene i bit meno significativi delle informazioni sulla versione. BITS 0-15 contengono il numero di revisione e BITS 16-31 contengono il numero di Build.
+Contiene i bit meno significativi delle informazioni sulla versione. I bit 0-15 contengono il numero di revisione e i bit 16-31 contengono il numero di build.
 
 </dd> </dl>
 

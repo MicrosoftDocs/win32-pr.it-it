@@ -1,23 +1,23 @@
 ---
-description: La \_ classe CIM UnitaryComputerSystem espone i metodi seguenti.
+description: La classe CIM \_ UnitaryComputerSystem espone i metodi seguenti.
 ms.assetid: AE0FCA45-9F75-4608-9F83-28B238DBD960
 ms.tgt_platform: multiple
-title: Metodi di CIM_UnitaryComputerSystem
+title: CIM_UnitaryComputerSystem metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77c4724d6175211ed4c6cb25d699481f1b4723f0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b432ff3425800d723b88058d83bc91db3fd96ba1604bcd68b44b042f4a122028
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103747930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118677377"
 ---
-# <a name="cim_unitarycomputersystem-methods"></a>\_Metodi CIM UnitaryComputerSystem
+# <a name="cim_unitarycomputersystem-methods"></a>Metodi di CIM \_ UnitaryComputerSystem
 
-La classe [**CIM \_ UnitaryComputerSystem**](cim-unitarycomputersystem.md) espone i metodi seguenti.
+La [**classe CIM \_ UnitaryComputerSystem**](cim-unitarycomputersystem.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

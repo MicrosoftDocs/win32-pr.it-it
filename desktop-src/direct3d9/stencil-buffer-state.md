@@ -1,19 +1,19 @@
 ---
-description: Le applicazioni utilizzano il buffer dello stencil per determinare se un pixel viene scritto nell'area di destinazione del rendering. Per informazioni dettagliate, vedere tecniche di buffer di stencil (Direct3D 9).
+description: Le applicazioni usano il buffer di stencil per determinare se un pixel viene scritto nella superficie di destinazione del rendering. Per informazioni dettagliate, vedere Stencil Buffer Techniques (Direct3D 9).
 ms.assetid: 651c5f34-b9f1-4146-847e-c6a72a536120
-title: Stato buffer stencil (Direct3D 9)
+title: Stato buffer di stencil (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f685381fa49dbd99dcac522fb22ef5b8b273fce
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 44c164b11b1e9d826ae5e025728ce99c32591079a3573da472c06ada16195ab4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103875950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118291718"
 ---
-# <a name="stencil-buffer-state-direct3d-9"></a>Stato buffer stencil (Direct3D 9)
+# <a name="stencil-buffer-state-direct3d-9"></a>Stato buffer di stencil (Direct3D 9)
 
-Le applicazioni utilizzano il buffer dello stencil per determinare se un pixel viene scritto nell'area di destinazione del rendering. Per informazioni dettagliate, vedere [tecniche di buffer di stencil (Direct3D 9)](stencil-buffer-techniques.md).
+Le applicazioni usano il buffer di stencil per determinare se un pixel viene scritto nella superficie di destinazione del rendering. Per informazioni dettagliate, vedere [Stencil Buffer Techniques (Direct3D 9)](stencil-buffer-techniques.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

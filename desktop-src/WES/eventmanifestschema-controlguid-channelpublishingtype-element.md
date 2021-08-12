@@ -1,9 +1,9 @@
 ---
 title: Elemento controlGuid (ChannelPublishingType)
-description: Identifica il GUID della sessione per una sessione ETW che contiene eventi WPP.
+description: Identifica il GUID di sessione per una sessione ETW che contiene eventi WPP.
 ms.assetid: a9e86468-8a97-4689-a258-85d253debf55
 keywords:
-- EventLog elemento controlGuid
+- Elemento controlGuid EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 92d4f6e1d2985bc983c34552b2e7a973075c9989
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd831592d7b01f8ffca102c2cab6626d74d6b666bf6f0d6cfc6e6311c4aa7eab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589952"
 ---
 # <a name="controlguid-channelpublishingtype-element"></a>Elemento controlGuid (ChannelPublishingType)
 
-Identifica il GUID della sessione per una sessione ETW che contiene eventi WPP.
+Identifica il GUID di sessione per una sessione ETW che contiene eventi WPP.
 
 ``` syntax
 <xs:element name="controlGuid"
@@ -30,7 +30,7 @@ Identifica il GUID della sessione per una sessione ETW che contiene eventi WPP.
  />
 ```
 
-L'elemento **controlGuid** è definito dal tipo complesso [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+**L'elemento controlGuid** è definito dal tipo complesso [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **controlGuid** è definito dal tipo complesso [**ChannelPublishingTy
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **controlGuid** è definito dal tipo complesso [**ChannelPublishingTy
 **Elemento padre**
 </dt> <dt>
 
-[**pubblicazione (ChannelType)**](eventmanifestschema-publishing-channeltype-element.md)
+[**publishing (ChannelType)**](eventmanifestschema-publishing-channeltype-element.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_CHAR (winuser. h)
-description: Inviato alla finestra con lo stato attivo quando un \_ messaggio di WM KeyDown viene convertito dalla funzione TranslateMessage. Il \_ messaggio WM Char contiene il codice carattere della chiave che è stata premuta.
+title: WM_CHAR messaggio (Winuser.h)
+description: Inviato alla finestra con lo stato attivo della tastiera quando un messaggio WM \_ KEYDOWN viene convertito dalla funzione TranslateMessage. Il messaggio WM \_ CHAR contiene il codice carattere del tasto premuto.
 ms.assetid: 7e45dc6f-ff68-4534-9e52-46e5f4110532
 keywords:
-- Input della tastiera e del mouse WM_CHAR messaggio
+- WM_CHAR messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/28/2020
-ms.openlocfilehash: 8d174f64fa776b506814540d4f2c97635fba38a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16f9f1160f9766bd6284f62f2203b940ab6336f326aa31a0d9fa2894d243cf59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247950"
 ---
-# <a name="wm_char-message"></a>\_Messaggio WM char
+# <a name="wm_char-message"></a>Messaggio \_ WM CHAR
 
-Inviato alla finestra con lo stato attivo quando un messaggio di [**WM \_ KeyDown**](wm-keydown.md) viene convertito dalla funzione [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) . Il messaggio **WM \_ char** contiene il codice carattere della chiave che è stata premuta.
+Inviato alla finestra con lo stato attivo della tastiera quando un [**messaggio WM \_ KEYDOWN**](wm-keydown.md) viene convertito dalla [**funzione TranslateMessage.**](/windows/desktop/api/winuser/nf-winuser-translatemessage) Il **messaggio WM \_ CHAR** contiene il codice carattere del tasto premuto.
 
 
 ```C++
@@ -47,21 +47,21 @@ Codice carattere della chiave.
 *lParam* 
 </dt> <dd>
 
-Il numero di ripetizioni, il codice di analisi, il flag di chiave estesa, il codice del contesto, il flag di stato precedente e il flag di stato di transizione, come illustrato nella tabella seguente.
+Il conteggio delle ripetizioni, il codice di analisi, il flag di chiave estesa, il codice di contesto, il flag di stato della chiave precedente e il flag dello stato di transizione, come illustrato nella tabella seguente.
 
 
 
 | BITS  | Significato                                                                                                                                                                                                                                                               |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0-15  | Numero di ripetizioni per il messaggio corrente. Il valore è il numero di volte in cui la sequenza di tasti viene ripetuta in modo ripetitivo a causa dell'arresto della chiave da parte dell'utente. Se la sequenza di tasti viene mantenuta abbastanza a lungo, vengono inviati più messaggi. Tuttavia, il numero di ripetizioni non è cumulativo. |
+| 0-15  | Numero di ripetizioni per il messaggio corrente. Il valore è il numero di volte in cui la sequenza di tasti viene ripetuta in modo automatico in seguito al fatto che l'utente tiene premuto il tasto. Se la pressione del tasto è sufficientemente lunga, vengono inviati più messaggi. Tuttavia, il conteggio delle ripetizioni non è cumulativo. |
 | 16-23 | Codice di analisi. Il valore dipende dall'OEM.                                                                                                                                                                                                                          |
-| 24    | Indica se la chiave è una chiave estesa, ad esempio i tasti ALT e CTRL a destra che vengono visualizzati in una tastiera migliorata 101 o 102. Il valore è 1 se è una chiave estesa; in caso contrario, è 0.                                                              |
-| 25-28 | Riservati Non usare.                                                                                                                                                                                                                                                 |
-| 29    | Codice del contesto. Il valore è 1 se il tasto ALT è premuto mentre il tasto è premuto; in caso contrario, il valore è 0.                                                                                                                                                     |
-| 30    | Stato precedente della chiave. Il valore è 1 se la chiave è inattiva prima dell'invio del messaggio oppure è 0 se la chiave è attiva.                                                                                                                                                    |
-| 31    | Stato di transizione. Il valore è 1 se la chiave viene rilasciata oppure è 0 se viene premuto il tasto.                                                                                                                                                            |
+| 24    | Indica se il tasto è un tasto esteso, ad esempio i tasti ALT e CTRL di destra visualizzati su una tastiera avanzata a 101 o 102 tasti. Il valore è 1 se si tratta di una chiave estesa. in caso contrario, è 0.                                                              |
+| 25-28 | Riservato; non utilizzare .                                                                                                                                                                                                                                                 |
+| 29    | Codice di contesto. Il valore è 1 se il tasto ALT viene premuto mentre viene premuto. In caso contrario, il valore è 0.                                                                                                                                                     |
+| 30    | Stato precedente della chiave. Il valore è 1 se la chiave non è disponibile prima dell'invio del messaggio oppure è 0 se la chiave è in alto.                                                                                                                                                    |
+| 31    | Stato della transizione. Il valore è 1 se il tasto viene rilasciato oppure è 0 se il tasto viene premuto.                                                                                                                                                            |
 
-Per informazioni dettagliate, vedere [flag dei messaggi di sequenza di tasti](about-keyboard-input.md#keystroke-message-flags).
+Per altri dettagli, vedere [Flag di messaggi di sequenza di tasti.](about-keyboard-input.md#keystroke-message-flags)
  
 
 </dd> </dl>
@@ -90,17 +90,17 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
     return 0;
 }
 ```
-Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/multimedia/mediafoundation/protectedplayback/winmain.cpp) in GitHub.
+Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/multimedia/mediafoundation/protectedplayback/winmain.cpp) in GitHub.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **WM \_ char** usa Unicode Transformation Format (UTF)-16.
+Il **messaggio WM \_ CHAR** usa il formato di trasformazione Unicode (UTF)-16.
 
-Non esiste necessariamente una corrispondenza uno-a-uno tra i tasti premuti e i messaggi di tipo carattere generati, quindi le informazioni nella parola più significativa del parametro *lParam* non sono in genere utili per le applicazioni. Le informazioni nella parola più ordinata si applicano solo al messaggio più recente di [**WM \_ KeyDown**](wm-keydown.md) che precede la pubblicazione del messaggio **WM \_ char** .
+Non esiste necessariamente una corrispondenza uno-a-uno tra i tasti premuti e i messaggi di caratteri generati, quindi le informazioni nella parola più importante del parametro *lParam* non sono in genere utili per le applicazioni. Le informazioni nella parola più importante si applicano solo al messaggio [**WM \_ KEYDOWN**](wm-keydown.md) più recente che precede la pubblicazione del **messaggio WM \_ CHAR.**
 
-Per le tastiere avanzate 101 e 102-Key, le chiavi estese sono i tasti ALT e CTRL destro nella sezione principale della tastiera; i tasti INS, CANC, HOME, END, PGSU, PGGIÙ e freccia nei cluster a sinistra del tastierino numerico; e la divisione (/) e immettere le chiavi nel tastierino numerico. È possibile che alcune altre tastiere supportino il bit della chiave estesa nel parametro *lParam* .
+Per le tastiere avanzate a 101 e 102 tasti, i tasti estesi sono i tasti ALT destro e CTRL destro nella sezione principale della tastiera; i tasti INS, DEL, HOME, END, PGGIER, PGGI GIÙ e i tasti di direzione nei cluster a sinistra del tastierino numerico; e i tasti di divisione (/) e INVIO nel tastierino numerico. Altre tastiere possono supportare il bit del tasto esteso nel *parametro lParam.*
 
-Il messaggio di [**WM \_ UNICHAR**](wm-unichar.md) è uguale a **WM \_ char**, ad eccezione del fatto che usa UTF-32. È progettato per inviare o inviare caratteri Unicode alle finestre ANSI e può gestire i caratteri del piano supplementare Unicode.
+Il [**messaggio \_ WM UNICHAR**](wm-unichar.md) è identico a **WM \_ CHAR,** ad eccezione del fatto che usa UTF-32. È progettato per inviare o pubblicare caratteri Unicode nelle finestre ANSI e può gestire i caratteri del piano supplementare Unicode.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -110,7 +110,7 @@ Il messaggio di [**WM \_ UNICHAR**](wm-unichar.md) è uguale a **WM \_ char**, a
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -124,10 +124,10 @@ Il messaggio di [**WM \_ UNICHAR**](wm-unichar.md) è uguale a **WM \_ char**, a
 [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage)
 </dt> <dt>
 
-[**KeyDown di WM \_**](wm-keydown.md)
+[**WM \_ KEYDOWN**](wm-keydown.md)
 </dt> <dt>
 
-[**UNICHAR WM \_**](wm-unichar.md)
+[**WM \_ UNICHAR**](wm-unichar.md)
 </dt> <dt>
 
 **Informazioni concettuali**

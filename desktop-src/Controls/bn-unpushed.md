@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica BN_UNPUSHED (winuser. h)
-description: Inviato quando lo stato di push di un pulsante è impostato su non sottoposto a push.
+title: BN_UNPUSHED di notifica (Winuser.h)
+description: Inviato quando lo stato di push di un pulsante è impostato su unpushed.
 ms.assetid: 1ae7311d-f067-41fe-a117-e0c70d239e9d
 keywords:
-- Controlli di Windows per il codice di notifica BN_UNPUSHED
+- BN_UNPUSHED del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,23 +14,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eb8c16d8860274c070c31910254311a897c0f1d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 418cb2cacc872fd1e1dfcd86778fddf35939c8e022510a4e0df7e00cf7718bc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674115"
 ---
-# <a name="bn_unpushed-notification-code"></a>BN \_ codice di notifica non push
+# <a name="bn_unpushed-notification-code"></a>Codice di \_ notifica UNPUSHED BN
 
-Inviato quando lo stato di push di un pulsante è impostato su non sottoposto a push.
+Inviato quando lo stato di push di un pulsante è impostato su unpushed.
 
 > [!Note]  
-> Questo codice di notifica viene fornito solo per la compatibilità con le versioni di Windows a 16 bit precedenti alla versione 3,0. Le applicazioni devono utilizzare lo stile del pulsante [**BS \_ OWNERDRAW**](button-styles.md) e la struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) per questa attività.
+> Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit Windows precedente alla versione 3.0. Le applicazioni devono usare lo stile del pulsante [**BS \_ OWNERDRAW**](button-styles.md) e la [**struttura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) per questa attività.
 
  
 
-La finestra padre del pulsante riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+La finestra padre del pulsante riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -49,7 +49,7 @@ BN_UNPUSHED
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo del pulsante. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+LoWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) l'identificatore del controllo del pulsante. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Handle per il pulsante.
 
 ## <a name="remarks"></a>Commenti
 
-BN \_ UNpushed equivale al codice di notifica [ \_ UNHILITE di BN](bn-unhilite.md) .
+BN \_ UNPUSHED corrisponde al codice di notifica [ \_ BN UNHILITE.](bn-unhilite.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,9 +70,9 @@ BN \_ UNpushed equivale al codice di notifica [ \_ UNHILITE di BN](bn-unhilite.m
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ BN \_ UNpushed equivale al codice di notifica [ \_ UNHILITE di BN](bn-unhilite.m
 
 <dl> <dt>
 
-[BN \_ push](bn-pushed.md)
+[PUSH \_ BN](bn-pushed.md)
 </dt> </dl>
 
  

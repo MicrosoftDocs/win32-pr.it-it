@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 78a34b506f4db72d8b61d7c0918c93658e18a062
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f34a45a0fc527c4c27e24ad3137dfe49438f9255baf1893e1090137bfb40a3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619536"
 ---
 # <a name="denyallibss-networkfilter-element"></a>Elemento denyAllIBSS (networkFilter)
 
-L'elemento denyAllIBSS (networkFilter) specifica se l'accesso a tutte le reti ad hoc è bloccato. Quando **denyAllIBSS** ha il valore true, i computer non possono connettersi a una rete ad hoc; in caso contrario, è possibile che i computer si connettano alle reti ad hoc.
+L'elemento denyAllIBSS (networkFilter) specifica se l'accesso a tutte le reti ad hoc è bloccato. Quando **denyAllIBSS ha** valore TRUE, i computer non possono connettersi a una rete ad hoc. in caso contrario, i computer possono connettersi a reti ad hoc.
 
-Il valore predefinito per questo elemento è FALSE. Se **denyAllIBSS** non è specificato in un profilo, per impostazione predefinita i computer possono connettersi alle reti ad hoc.
+Il valore predefinito per questo elemento è FALSE. Se **denyAllIBSS** non è specificato in un profilo, per impostazione predefinita i computer possono connettersi a reti ad hoc.
 
 ``` syntax
 <xs:element name="denyAllIBSS"
@@ -31,7 +31,7 @@ Il valore predefinito per questo elemento è FALSE. Se **denyAllIBSS** non è sp
  />
 ```
 
-L'elemento **denyAllIBSS** è definito dall'elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+**L'elemento denyAllIBSS** è definito dall'elemento [**networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,8 +39,8 @@ L'elemento **denyAllIBSS** è definito dall'elemento [**networkFilter**](wlan-po
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

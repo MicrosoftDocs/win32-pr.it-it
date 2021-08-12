@@ -1,43 +1,43 @@
 ---
-description: Indica se un frame video è interlacciato o progressivo.
+description: Indica se un fotogramma video è interlacciato o progressivo.
 ms.assetid: 3cb80e75-e803-493b-a22d-e485e77b5177
-title: Attributo MFSampleExtension_Interlaced (Mfapi. h)
+title: MFSampleExtension_Interlaced attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43a273b548192ac52da8604eb36fde5ec0e9fcf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36d928d42fc2399536d5beee4f4af87cbacaa82171048ad191a4e9fc7ef3e939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240648"
 ---
-# <a name="mfsampleextension_interlaced-attribute"></a>MFSampleExtension- \_ attributo interlacciato
+# <a name="mfsampleextension_interlaced-attribute"></a>Attributo interlacciato MFSampleExtension \_
 
-Indica se un frame video è interlacciato o progressivo. Se **true**, il frame è interlacciato. Se **false**, il frame è progressivo. Se non impostato, il tipo di supporto descrive il interlacciamento. Questo attributo si applica agli esempi di supporti.
+Indica se un fotogramma video è interlacciato o progressivo. Se **TRUE,** il frame è interlacciato. Se **FALSE,** il frame è progressivo. Se non è impostato, il tipo di supporto descrive l'interlacciamento. Questo attributo si applica agli esempi di supporti.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Bool** archiviato come **UInt32**
+**BOOL** archiviato come **UINT32**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**Esempio IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 ## <a name="remarks"></a>Commenti
 
-Per contenuti video contenenti frame misti progressivi e interlacciati, impostare il tipo di supporto su interlacciato e utilizzare questo attributo in ogni frame per indicare se il frame è progressivo o interlacciato.
+Per il contenuto video che contiene fotogrammi progressivi e interlacciati misti, impostare il tipo di supporto su interlacciato e usare questo attributo in ogni fotogramma per indicare se il fotogramma è progressivo o interlacciato.
 
-Per contenuto video completamente interlacciato, impostare il tipo di supporto su interlacciato e omettere questo attributo o impostarlo su **true** in ogni campione.
+Per il contenuto video interamente interlacciato, impostare il tipo di supporto su interlacciato e omettere questo attributo oppure impostarlo su **TRUE** in ogni esempio.
 
-Per contenuti video completamente progressivi, impostare il tipo di supporto su progressive e omettere questo attributo o impostarlo su **false** in ogni esempio.
+Per il contenuto video completamente progressivo, impostare il tipo di supporto su progressivo e omettere questo attributo oppure impostarlo su **FALSE** in ogni esempio.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -55,16 +55,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**Esempio IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 </dt> <dt>
 
 [Attributi di esempio](sample-attributes.md)

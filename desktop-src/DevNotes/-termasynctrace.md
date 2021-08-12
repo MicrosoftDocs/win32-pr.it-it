@@ -1,7 +1,7 @@
 ---
 description: Termina la traccia.
 ms.assetid: e823ed82-1966-4e44-b062-0c8ab0fb5f6e
-title: TermAsyncTrace (funzione)
+title: Funzione TermAsyncTrace
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Exstrace.dll
-ms.openlocfilehash: c8f2ed58115130e141b5fc097965396847ebd147
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6857e8e6164392a12604779d51914d7d297ec89a3890adec000cf662019a7485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118668800"
 ---
-# <a name="termasynctrace-function"></a>TermAsyncTrace (funzione)
+# <a name="termasynctrace-function"></a>Funzione TermAsyncTrace
 
 Termina la traccia.
 
@@ -39,13 +39,13 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce **true** se ha esito positivo; in caso contrario, restituisce **false**.
+Questa funzione restituisce **TRUE** se ha esito positivo; In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
 Exstrace.dll è un componente facoltativo che viene installato con il Simple Mail Transfer Protocol (SMTP) e il protocollo NNTP (Network News Transfer Protocol).
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

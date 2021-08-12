@@ -1,31 +1,31 @@
 ---
-description: In questo argomento viene descritto come utilizzare il lettore di origine in modalità asincrona.
+description: Questo argomento descrive come usare il lettore di origine in modalità asincrona.
 ms.assetid: 9D3C2780-D7DB-4151-8474-9A19EC94F6BE
-title: Utilizzo del lettore di origine in modalità asincrona
+title: Uso del lettore di origine in modalità asincrona
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 357d0405cb3e594d059b7c93e793250e0be88562
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 514331f9d1635cbe83222ccf413b1dbb5a7d350b4656e23ed27ccede5c0be6f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237506"
 ---
-# <a name="using-the-source-reader-in-asynchronous-mode"></a>Utilizzo del lettore di origine in modalità asincrona
+# <a name="using-the-source-reader-in-asynchronous-mode"></a>Uso del lettore di origine in modalità asincrona
 
-In questo argomento viene descritto come utilizzare il [lettore di origine](source-reader.md) in modalità asincrona. In modalità asincrona, l'applicazione fornisce un'interfaccia di callback, che viene usata per notificare all'applicazione che i dati sono disponibili.
+Questo argomento descrive come usare il lettore [di](source-reader.md) origine in modalità asincrona. In modalità asincrona, l'applicazione fornisce un'interfaccia di callback, che viene usata per notificare all'applicazione che i dati sono disponibili.
 
-In questo argomento si presuppone che l'utente abbia già letto l'argomento [utilizzo del lettore di origine per l'elaborazione dei dati multimediali](processing-media-data-with-the-source-reader.md).
+In questo argomento si presuppone che sia già stato letto l'argomento Uso del lettore [di origine per elaborare i dati multimediali](processing-media-data-with-the-source-reader.md).
 
 ## <a name="using-asynchronous-mode"></a>Uso della modalità asincrona
 
-Il lettore di origine funziona in modalità sincrona o asincrona. Nell'esempio di codice illustrato nella sezione precedente si presuppone che il lettore di origine usi la modalità sincrona, che è l'impostazione predefinita. In modalità sincrona, il metodo [**IMFSourceReader:: ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) si blocca mentre l'origine multimediale produce l'esempio successivo. Un'origine multimediale acquisisce in genere i dati da un'origine esterna, ad esempio un file locale o una connessione di rete, in modo che il metodo possa bloccare il thread chiamante per un periodo di tempo significativo.
+Il lettore di origine opera in modalità sincrona o asincrona. L'esempio di codice illustrato nella sezione precedente presuppone che il lettore di origine utilizzi la modalità sincrona, ovvero l'impostazione predefinita. In modalità sincrona, il metodo [**IMFSourceReader::ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) si blocca mentre l'origine multimediale produce l'esempio successivo. Un'origine multimediale acquisisce in genere dati da un'origine esterna,ad esempio un file locale o una connessione di rete, quindi il metodo può bloccare il thread chiamante per una notevole quantità di tempo.
 
-In modalità asincrona, il [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) viene restituito immediatamente e il lavoro viene eseguito in un altro thread. Al termine dell'operazione, il lettore di origine chiama l'applicazione tramite l'interfaccia di callback [**IMFSourceReaderCallback**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback) . Per usare la modalità asincrona, è necessario fornire un puntatore di callback quando si crea per la prima volta il lettore di origine, come indicato di seguito:
+In modalità asincrona, [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) restituisce immediatamente e il lavoro viene eseguito su un altro thread. Al termine dell'operazione, il lettore di origine chiama l'applicazione tramite l'interfaccia di callback [**IMFSourceReaderCallback.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback) Per usare la modalità asincrona, è necessario fornire un puntatore di callback quando si crea il lettore di origine per la prima volta, come indicato di seguito:
 
-1.  Creare un archivio di attributi chiamando la funzione [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) .
-2.  Impostare l'attributo di [ \_ \_ \_ \_ callback asincrono di MF source Reader](mf-source-reader-async-callback.md) nell'archivio di attributi. Il valore dell'attributo è un puntatore all'oggetto callback.
-3.  Quando si crea il lettore di origine, passare l'archivio attributi alla funzione di creazione nel parametro *pAttributes* . Tutte le funzioni per la creazione del lettore di origine dispongono di questo parametro.
+1.  Creare un archivio attributi chiamando la [**funzione MFCreateAttributes.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes)
+2.  Impostare [l'attributo \_ MF SOURCE \_ READER \_ ASYNC \_ CALLBACK](mf-source-reader-async-callback.md) nell'archivio attributi. Il valore dell'attributo è un puntatore all'oggetto callback.
+3.  Quando si crea il lettore di origine, passare l'archivio attributi alla funzione di creazione nel *parametro pAttributes.* Tutte le funzioni per creare il lettore di origine hanno questo parametro.
 
 Nell'esempio seguente sono illustrati i passaggi per l'operazione.
 
@@ -61,9 +61,9 @@ done:
 
 
 
-Dopo aver creato il lettore di origine, non è possibile passare da una modalità all'altra sincrona a una asincrona.
+Dopo aver creato il lettore di origine, non è possibile passare da modalità sincrone a asincrone.
 
-Per ottenere i dati in modalità asincrona, chiamare il metodo [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) , ma impostare gli ultimi quattro parametri su **null**, come illustrato nell'esempio seguente.
+Per ottenere dati in modalità asincrona, chiamare il [**metodo ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) ma impostare gli ultimi quattro parametri su **NULL,** come illustrato nell'esempio seguente.
 
 
 ```C++
@@ -74,10 +74,10 @@ Per ottenere i dati in modalità asincrona, chiamare il metodo [**ReadSample**](
 
 
 
-Quando il metodo [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) viene completato in modo asincrono, il lettore di origine chiama il metodo [**IMFSourceReaderCallback:: OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) . Questo metodo ha cinque parametri:
+Quando il [**metodo ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) viene completato in modo asincrono, il lettore di origine chiama il metodo [**IMFSourceReaderCallback::OnReadSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) Questo metodo ha cinque parametri:
 
--   *hrStatus*: contiene un valore **HRESULT** . Si tratta dello stesso valore restituito da [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) in modalità sincrona. Se *hrStatus* contiene un codice di errore, è possibile ignorare i parametri rimanenti.
--   *dwStreamIndex*, *dwStreamFlags*, llTimestamp e *pSample*: questi tre parametri sono equivalenti agli ultimi tre parametri in [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample). Contengono rispettivamente il numero di flusso, i flag di stato e il puntatore [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) .
+-   *hrStatus:* contiene un **valore HRESULT.** Si tratta dello stesso valore [**restituito da ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) in modalità sincrona. Se *hrStatus contiene* un codice di errore, è possibile ignorare i parametri rimanenti.
+-   *dwStreamIndex*, *dwStreamFlags*, llTimestamp e *pSample*: questi tre parametri sono equivalenti agli ultimi tre parametri in [**ReadSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) Contengono rispettivamente il numero di flusso, i flag di stato e [**il puntatore IMFSample.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 
 ```C++
@@ -89,18 +89,18 @@ Quando il metodo [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrit
 
 Inoltre, l'interfaccia di callback definisce altri due metodi:
 
--   [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent). Invia una notifica all'applicazione quando si verificano determinati eventi nell'origine multimediale, ad esempio gli eventi di connessione di rete o di buffering.
--   [**OnFlush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush). Chiamato quando il metodo [**Flush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-flush) viene completato.
+-   [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent). Notifica all'applicazione quando si verificano determinati eventi nell'origine multimediale, ad esempio eventi di memorizzazione nel buffer o di connessione di rete.
+-   [**OnFlush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush). Chiamato al completamento del metodo [**Flush.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-flush)
 
 ## <a name="implementing-the-callback-interface"></a>Implementazione dell'interfaccia di callback
 
 L'interfaccia di callback deve essere thread-safe, perché [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) e gli altri metodi di callback vengono chiamati dai thread di lavoro.
 
-Quando si implementa il callback, è possibile adottare diversi approcci. Ad esempio, è possibile eseguire tutte le operazioni all'interno del callback oppure è possibile usare il callback per inviare una notifica all'applicazione, ad esempio segnalando un handle di evento, quindi eseguire operazioni dal thread dell'applicazione.
+Quando si implementa il callback, è possibile adottare diversi approcci. Ad esempio, è possibile eseguire tutte le operazioni all'interno del callback oppure usare il callback per inviare una notifica all'applicazione (ad esempio, segnalando un handle di evento) e quindi eseguire operazioni dal thread dell'applicazione.
 
-Il metodo [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) verrà chiamato una volta per ogni chiamata eseguita al metodo [**IMFSourceReader:: ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) . Per ottenere l'esempio successivo, chiamare di nuovo **ReadSample** . Se si verifica un errore, viene chiamato **OnReadSample** con un codice di errore per il parametro *hrStatus* .
+Il [**metodo OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) verrà chiamato una volta per ogni chiamata al metodo [**IMFSourceReader::ReadSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) Per ottenere l'esempio successivo, chiamare **di nuovo ReadSample.** Se si verifica un errore, **OnReadSample** viene chiamato con un codice di errore per il *parametro hrStatus.*
 
-Nell'esempio seguente viene illustrata un'implementazione minima dell'interfaccia di callback. In primo luogo, di seguito è illustrata la dichiarazione di una classe che implementa l'interfaccia.
+Nell'esempio seguente viene illustrata un'implementazione minima dell'interfaccia di callback. In primo luogo, ecco la dichiarazione di una classe che implementa l'interfaccia .
 
 
 ```C++
@@ -196,9 +196,9 @@ private:
 
 
 
-In questo esempio non sono interessati ai metodi [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent) e [**OnFlush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush) , quindi semplicemente restituiscono **S \_ OK**. La classe usa un handle di evento per segnalare l'applicazione; Questo handle viene fornito tramite il costruttore.
+In questo esempio i metodi [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent) e [**OnFlush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush) non sono interessati, quindi restituiscono **semplicemente S \_ OK.** La classe usa un handle di evento per segnalare l'applicazione. questo handle viene fornito tramite il costruttore .
 
-In questo esempio minimo il metodo [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) stampa semplicemente il timestamp nella finestra della console. Archivia quindi il codice di stato e il flag di fine del flusso e segnala l'handle dell'evento:
+In questo esempio minimo, il [**metodo OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) stampa semplicemente il timestamp nella finestra della console. Archivia quindi il codice di stato e il flag di fine flusso e segnala l'handle dell'evento:
 
 
 ```C++
@@ -241,7 +241,7 @@ HRESULT SourceReaderCB::OnReadSample(
 
 
 
-Il codice seguente mostra che l'applicazione userà questa classe di callback per leggere tutti i fotogrammi video da un file multimediale:
+Il codice seguente mostra che l'applicazione userebbe questa classe di callback per leggere tutti i fotogrammi video da un file multimediale:
 
 
 ```C++

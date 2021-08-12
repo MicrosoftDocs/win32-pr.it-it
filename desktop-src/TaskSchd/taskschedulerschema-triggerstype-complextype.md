@@ -1,9 +1,9 @@
 ---
-title: Tipo complesso triggersType
+title: triggersType Tipo complesso
 description: Definisce il gruppo (triggerGroup) per tutti gli elementi trigger.
 ms.assetid: ceabc332-e028-491e-8fd8-c02ac23a2635
 keywords:
-- Utilità di pianificazione di tipo complesso triggersType
+- triggersType tipo complesso Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9903fdc292fe832cc6931d794a4c1f39fd91f83e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c2bd6fa4011841958ad08239640024f9878528aecb1307487c3354ac74e31db4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118610538"
 ---
-# <a name="triggerstype-complex-type"></a>Tipo complesso triggersType
+# <a name="triggerstype-complex-type"></a>triggersType Tipo complesso
 
-Definisce il gruppo ([**triggerGroup**](taskschedulerschema-triggergroup-group.md)) per tutti gli elementi trigger. Il gruppo [**triggerGroup**](taskschedulerschema-triggergroup-group.md) contiene l'elenco dei trigger che possono essere usati in un'attività.
+Definisce il gruppo ([**triggerGroup**](taskschedulerschema-triggergroup-group.md)) per tutti gli elementi trigger. Il [**gruppo triggerGroup**](taskschedulerschema-triggergroup-group.md) contiene l'elenco di trigger che è possibile usare in un'attività.
 
 ``` syntax
 <xs:complexType name="triggersType">
@@ -40,8 +40,8 @@ Definisce il gruppo ([**triggerGroup**](taskschedulerschema-triggergroup-group.m
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

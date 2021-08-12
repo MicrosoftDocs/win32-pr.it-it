@@ -5,7 +5,7 @@ ms.assetid: d36dbc5c-ccb0-400a-ab5b-918598c218f1
 keywords:
 - Metodo getAll Windows Media Player
 - Metodo getAll Windows Media Player, interfaccia IWMPPlaylistCollection
-- Interfaccia IWMPPlaylistCollection Windows Media Player, metodo getAll
+- Interfaccia IWMPPlaylistCollection Windows Media Player metodo , getAll
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4260f5c960650cf6c04a1dd8b39d887f711fb8a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c9ff50c2983d911e7aa3951e34f908d9982b623912539aa4e162c9cccb2f5256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568450"
 ---
-# <a name="iwmpplaylistcollectiongetall-method"></a>Metodo IWMPPlaylistCollection:: getAll
+# <a name="iwmpplaylistcollectiongetall-method"></a>Metodo IWMPPlaylistCollection::getAll
 
-Il metodo **GetAll** restituisce un'interfaccia **IWMPPlaylistArray** che fornisce l'accesso a tutte le playlist nella libreria.
+Il **metodo getAll** restituisce **un'interfaccia IWMPPlaylistArray** che fornisce l'accesso a tutte le playlist nella libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPPlaylistArray** per la matrice di playlist recuperata.
+Interfaccia **WMPLib.IWMPPlaylistArray** per la matrice recuperata di playlist.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura 
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva.<br/>                                                                     |
+| Versione<br/>   | Windows Media Player serie 9 o successive.<br/>                                                                     |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

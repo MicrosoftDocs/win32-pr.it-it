@@ -1,23 +1,23 @@
 ---
-title: struttura dcl_resource (SM5-ASM)
-description: Dichiarare un input di risorsa shader e assegnarlo a un registro segnaposto t \-a per la risorsa. | struttura dcl_resource (SM5-ASM)
+title: dcl_resource strutturato (sm5 - asm)
+description: Dichiarare un input della risorsa shader e assegnarlo a t\ - un registro segnaposto per la risorsa. | dcl_resource strutturato (sm5 - asm)
 ms.assetid: 87FC8A56-9DB2-424B-889C-2AB59885DA13
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ab993e0cb260529c3419210c33f5d735a625bce
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 79ec0bc0b818b345c62bb48ae6f5db68671127110ed06a85c988f8a0449fd490
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285894"
 ---
-# <a name="dcl_resource-structured-sm5---asm"></a>\_struttura della risorsa DCL (SM5-ASM)
+# <a name="dcl_resource-structured-sm5---asm"></a>Strutturata risorsa dcl \_ (sm5 - asm)
 
-Dichiarare un input di risorsa dello shader e assegnarlo a un \# Registro di segnaposto t-a per la risorsa.
+Dichiarare un input della risorsa shader e assegnarlo a un registro segnaposto per \# la risorsa.
 
 
 
-| \_ \_ dstSRV strutturato delle risorse DCL, structByteStride |
+| dcl \_ resource \_ structured dstSRV, structByteStride |
 |----------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Dichiarare un input di risorsa dello shader e assegnarlo a un \# Registro di seg
 
 | Elemento                                                                                                                                   | Descrizione                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dstSRV"></span><span id="dstsrv"></span><span id="DSTSRV"></span>*dstSRV*<br/>                                         | \[in \] un \# Registro t dichiarato come riferimento a un ShaderResourceView di un buffer strutturato con lo stride specificato che deve essere associato allo slot SRV \# nell'API. <br/> |
-| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[in \] un uint che specifica la dimensione della struttura in byte nel buffer dichiarato. Il valore deve essere maggiore di zero.<br/>                                   |
+| <span id="dstSRV"></span><span id="dstsrv"></span><span id="DSTSRV"></span>*dstSRV*<br/>                                         | \[in Un registro t dichiarato come riferimento a shaderResourceView di un buffer strutturato con lo stride specificato che deve essere associato \] \# allo slot SRV \# nell'API. <br/> |
+| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[in \] uint che specifica le dimensioni della struttura in byte nel buffer dichiarato. Il valore deve essere maggiore di zero.<br/>                                   |
 
 
 
@@ -37,17 +37,17 @@ Dichiarare un input di risorsa dello shader e assegnarlo a un \# Registro di seg
 
 ## <a name="remarks"></a>Commenti
 
-Il contenuto della struttura non è di tipo; le operazioni eseguite sulla memoria possono interpretare in modo implicito i dati come aventi un tipo.
+Il contenuto della struttura non ha alcun tipo. Le operazioni eseguite sulla memoria possono interpretare implicitamente i dati come con un tipo .
 
-Le istruzioni che fanno riferimento a un'istruzione t strutturata \# accettano un indirizzo 2D, dove il primo componente sceglie lo \[ struct \] e il secondo componente sceglie \[ offset all'interno dello struct, più di 32 bit \] .
+Le istruzioni che fanno riferimento a un oggetto strutturato t accettano un indirizzo 2D, in cui il primo componente seleziona lo struct e il secondo componente seleziona l'offset all'interno dello struct, multiplo di \# \[ \] \[ 32 \] bit.
 
 cs \_ 4 \_ 0 e cs \_ 4 \_ 1 supportano questa istruzione.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -55,20 +55,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -78,7 +78,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

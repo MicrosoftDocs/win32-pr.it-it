@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentSLVStreamingFileReadOnlyException'
+description: Altre informazioni sul costruttore EsentSLVStreamingFileReadOnlyException
 title: Costruttore EsentSLVStreamingFileReadOnlyException
 TOCTitle: 'EsentSLVStreamingFileReadOnlyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVStreamingFileReadOnlyException.#ctor
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8b5bdd060ccd8ae3fb042ac3c6bf5c9e5dff306b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eed9ee85c1977f84cff5b21d24b02e770f28eecadbd9479b129f355b4a6772c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118259199"
 ---
 # <a name="esentslvstreamingfilereadonlyexception-constructor"></a>Costruttore EsentSLVStreamingFileReadOnlyException
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,4 +58,4 @@ public EsentSLVStreamingFileReadOnlyException()
 
 [Membri di EsentSLVStreamingFileReadOnlyException](./esentslvstreamingfilereadonlyexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_SHOWBALLOONTIP (COMmctrl. h)
-description: Il \_ messaggio SHOWBALLOONTIP em Visualizza un fumetto suggerimento associato a un controllo di modifica.
+title: EM_SHOWBALLOONTIP messaggio (Commctrl.h)
+description: Il messaggio EM \_ SHOWBALLOONTIP visualizza una descrizione a forma di fumetto associata a un controllo di modifica.
 ms.assetid: 1e6915b7-4b61-43b2-be13-b89c72378a1a
 keywords:
-- Controlli di Windows Message EM_SHOWBALLOONTIP
+- EM_SHOWBALLOONTIP dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8fc0174752ab8214873da9478a0af435be76427
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0ec2666d18c0f6ce43d5c7644eca0aa2a2cc1f3af72cea03ad34af5ca451cda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118672324"
 ---
-# <a name="em_showballoontip-message"></a>\_Messaggio SHOWBALLOONTIP em
+# <a name="em_showballoontip-message"></a>MESSAGGIO EM \_ SHOWBALLOONTIP
 
-Il **messaggio \_ SHOWBALLOONTIP em** Visualizza un fumetto suggerimento associato a un controllo di modifica.
+Il **messaggio EM \_ SHOWBALLOONTIP** visualizza una descrizione a forma di fumetto associata a un controllo di modifica.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,25 +32,25 @@ Il **messaggio \_ SHOWBALLOONTIP em** Visualizza un fumetto suggerimento associa
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**EDITBALLOONTIP**](/windows/desktop/api/Commctrl/ns-commctrl-editballoontip) che contiene informazioni sul fumetto suggerimento da visualizzare.
+Puntatore a una [**struttura EDITBALLOONTIP**](/windows/desktop/api/Commctrl/ns-commctrl-editballoontip) che contiene informazioni sulla descrizione del fumetto da visualizzare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, restituisce **true**. In caso contrario, restituisce **false**.
+Se il messaggio ha esito positivo, restituisce **TRUE.** In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -60,9 +60,9 @@ Se il messaggio ha esito positivo, restituisce **true**. In caso contrario, rest
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -4,20 +4,20 @@ ms.assetid: f3cd8e90-8949-482a-8ada-47711f6c935f
 title: Filtro wrapper ACM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8da0c1283ac6d4980f51d40001b38c719f5e31c4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c6aaa56d955fe9cf1966e17c657fbf741b4bb8694a7f18b501b148b0383ea19d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664080"
 ---
 # <a name="acm-wrapper-filter"></a>Filtro wrapper ACM
 
-Il filtro del wrapper ACM consente ai codec ACM (Audio Compression Manager) di aggiungere un grafico a filtro. Può fungere da filtro di decompressione o come filtro di compressione.
+Il filtro Wrapper ACM consente ai codec ACM (Audio Compression Manager) di unire un grafico filtri. Può fungere da filtro di decompressione o da filtro di compressione.
 
-Come filtro di decompressione, il wrapper ACM viene visualizzato nella categoria "filtri DirectShow" (CLSID \_ LegacyAmFilterCategory) e ha un merito del \_ normale merito. Il tipo di supporto di connessione al pin di input determina il codec utilizzato dal filtro. In genere, l'applicazione non deve aggiungere il filtro al grafico di filtro; Quando necessario, viene eseguito il pull automatico dal gestore del grafico dei filtri. La decompressione è solo l'audio PCM.
+Come filtro di decompressione, il wrapper ACM viene visualizzato nella categoria "filtri DirectShow" (CLSID LegacyAmFilterCategory) e ha un merito di \_ MERIT \_ NORMAL. Il tipo di supporto di connessione sul pin di input determina il codec utilizzato dal filtro. In genere, l'applicazione non deve aggiungere il filtro al grafico dei filtri. viene estratto automaticamente da Filter Graph Manager quando necessario. La decompressione è solo per l'audio PCM.
 
-Come filtro di compressione, il wrapper ACM viene visualizzato nella categoria "comprimer audio" (CLSID \_ AudioCompressorCategory) ed è caratterizzato da un \_ merito \_ non \_ utilizzato. Ogni codec viene visualizzato come un'istanza separata. Per la compressione non è possibile creare direttamente il filtro con CoCreateInstance. È invece necessario utilizzare l'enumeratore di dispositivo di sistema. Per ulteriori informazioni, vedere [using the System Device Enumerator](using-the-system-device-enumerator.md).
+Come filtro di compressione, il wrapper ACM viene visualizzato nella categoria "Audio Compressions" (CLSID AudioCompressorCategory) e ha un merito di \_ MERIT \_ DO NOT \_ \_ USE. Ogni codec viene visualizzato come istanza separata. Per la compressione, non è possibile creare direttamente il filtro con CoCreateInstance. È invece necessario usare l'enumeratore del dispositivo di sistema. Per altre informazioni, vedere [Uso dell'enumeratore del dispositivo di sistema](using-the-system-device-enumerator.md).
 
 
 
@@ -29,7 +29,7 @@ Come filtro di compressione, il wrapper ACM viene visualizzato nella categoria "
 <tbody>
 <tr class="odd">
 <td>Interfacce di filtro</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, IPersist, IPersistPropertyBag</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a>IPersist, IPersistPropertyBag</td>
 </tr>
 <tr class="even">
 <td>Tipi di supporti pin di input</td>
@@ -37,23 +37,23 @@ Come filtro di compressione, il wrapper ACM viene visualizzato nella categoria "
 </tr>
 <tr class="odd">
 <td>Interfacce pin di input</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>Ipin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
 </tr>
 <tr class="even">
 <td>Tipi di supporti pin di output</td>
-<td>MEDIATYPE_Audio, MEDIASUBTYPE_PCM, FORMAT_WaveFormatEx. qualsiasi combinazione dei seguenti elementi è possibile:<br/>
+<td>MEDIATYPE_Audio, MEDIASUBTYPE_PCM, FORMAT_WaveFormatEx.Qualsiasi combinazione di quanto segue è possibile:<br/>
 <ul>
-<li>Campioni al secondo (kHz): 44,1, 22,05, 11,025 o 8,0.</li>
+<li>Esempi al secondo (kHz): 44.1, 22.05, 11.025 o 8.0.</li>
 <li>Canali: stereo o mono.</li>
-<li>BITS per campione: 8 o 16.</li>
+<li>Bit per campione: 8 o 16.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Interfacce del PIN di output</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig"><strong>IAMStreamConfig</strong></a>, <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>Ipin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
+<td>Interfacce pin di output</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig"><strong>IAMStreamConfig,</strong></a> <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
 </tr>
 <tr class="even">
-<td>CLSID filtro</td>
+<td>Filtro CLSID</td>
 <td>CLSID_ACMWrapper</td>
 </tr>
 <tr class="odd">
@@ -83,7 +83,7 @@ Come filtro di compressione, il wrapper ACM viene visualizzato nella categoria "
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> </dl>
 
  

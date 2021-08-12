@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_SETBASE (COMmctrl. h)
-description: Imposta la base radice per un controllo di scorrimento. Il valore di base determina se la finestra Buddy Visualizza numeri in cifre decimali o esadecimali. I numeri esadecimali sono sempre senza segno e i numeri decimali sono firmati.
+title: UDM_SETBASE messaggio (Commctrl.h)
+description: Imposta la base di base per un controllo di tipo up-down. Il valore di base determina se nella finestra del controllo vengono visualizzati numeri in cifre decimali o esadecimali. I numeri esadecimali sono sempre senza segno e i numeri decimali sono con segno.
 ms.assetid: c76cdec1-e73b-4b4b-89be-9a00ff2ea172
 keywords:
-- Controlli di Windows Message UDM_SETBASE
+- UDM_SETBASE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d6bcd7d6154b4ba732e5ffbbec889b326ec8176
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f9fd3750a70e676c3e9f32efe9ff0bfd9b300b812d09f4a04c34e4a90f36933
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669079"
 ---
-# <a name="udm_setbase-message"></a>UDM- \_ messaggio di base
+# <a name="udm_setbase-message"></a>Messaggio SETBASE UDM \_
 
-Imposta la base radice per un controllo di scorrimento. Il valore di base determina se la finestra Buddy Visualizza numeri in cifre decimali o esadecimali. I numeri esadecimali sono sempre senza segno e i numeri decimali sono firmati.
+Imposta la base di base per un controllo di tipo up-down. Il valore di base determina se nella finestra del controllo vengono visualizzati numeri in cifre decimali o esadecimali. I numeri esadecimali sono sempre senza segno e i numeri decimali sono con segno.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta la base radice per un controllo di scorrimento. Il valore di base determ
 *wParam* 
 </dt> <dd>
 
-Nuovo valore di base per il controllo. Questo parametro può essere 10 per Decimal o 16 per l'esadecimale.
+Nuovo valore di base per il controllo. Questo parametro può essere 10 per decimal o 16 per esadecimale.
 
 </dd> <dt>
 
@@ -49,9 +49,9 @@ Il valore restituito è il valore di base precedente. Se viene specificata una b
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

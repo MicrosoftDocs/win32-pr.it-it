@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica BCN_DROPDOWN (winuser. h)
-description: Inviato quando l'utente fa clic su una freccia a discesa di un pulsante. La finestra padre del controllo riceve questo codice di notifica sotto forma di un messaggio di \_ notifica WM.
+title: BCN_DROPDOWN di notifica (Winuser.h)
+description: Inviato quando l'utente fa clic su una freccia a discesa su un pulsante. La finestra padre del controllo riceve questo codice di notifica sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 61503b8d-193e-4855-b9eb-35c0dc636c02
 keywords:
-- Controlli di Windows per il codice di notifica BCN_DROPDOWN
+- BCN_DROPDOWN del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e78512419f62beaa82aff42ccaf951d34130fe3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1fbacf22cdabbac7c5d2932c604fab634dbc185207acda8cee311d434478e5ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674973"
 ---
-# <a name="bcn_dropdown-notification-code"></a>\_Codice di notifica a discesa BCN
+# <a name="bcn_dropdown-notification-code"></a>Codice di notifica \_ BCN DROPDOWN
 
-Inviato quando l'utente fa clic su una freccia a discesa di un pulsante. La finestra padre del controllo riceve questo codice di notifica sotto forma di un messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato quando l'utente fa clic su una freccia a discesa su un pulsante. La finestra padre del controllo riceve questo codice di notifica sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ BCN_DROPDOWN
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMBCDROPDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) . Il membro **rcButton** è impostato in modo da descrivere l'area a discesa.
+Puntatore a una [**struttura NMBCDROPDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) Il **membro rcButton** è impostato per descrivere l'area a discesa.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Il ricevitore di notifiche esegue il cast di **lParam** per recuperare la struttura [**NMBCDROPDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) . **WParam** contiene l'ID del controllo che invia questo messaggio. Il controllo Button deve avere uno stile del pulsante a discesa.
+Il ricevitore della notifica esegue il cast **di LPARAM** per recuperare [**la struttura NMBCDROPDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) **WPARAM** contiene l'ID del controllo che invia il messaggio. Il controllo pulsante deve avere uno stile di pulsante a discesa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Il ricevitore di notifiche esegue il cast di **lParam** per recuperare la strutt
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

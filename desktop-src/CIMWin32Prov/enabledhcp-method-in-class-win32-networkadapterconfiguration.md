@@ -1,8 +1,8 @@
 ---
-description: Il metodo della classe WMI EnableDHCP Abilita il Dynamic Host Configuration Protocol (DHCP) per il servizio con questa scheda di rete. DHCP consente l'allocazione dinamica degli indirizzi IP.
+description: Il metodo della classe WMI EnableDHCP abilita il Dynamic Host Configuration Protocol (DHCP) per il servizio con questa scheda di rete. DHCP consente l'allocazione dinamica degli indirizzi IP.
 ms.assetid: 8c61d731-77a3-4ef4-bad9-26edaca60892
 ms.tgt_platform: multiple
-title: Metodo EnableDHCP della classe Win32_NetworkAdapterConfiguration
+title: Metodo EnableDHCP della Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 002dedd3b0165053fea98dda035316676af638f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d5be73abab17303cce7a9a0e4ae2beab9bdb53df6a45d0162a575ce167ee1df8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676577"
 ---
-# <a name="enabledhcp-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo EnableDHCP della \_ classe NetworkAdapterConfiguration Win32
+# <a name="enabledhcp-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo EnableDHCP della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDHCP** Abilita il Dynamic Host Configuration Protocol (DHCP) per il servizio con questa scheda di rete. DHCP consente l'allocazione dinamica degli indirizzi IP.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDHCP** abilita il Dynamic Host Configuration Protocol (DHCP) per il servizio con questa scheda di rete. DHCP consente l'allocazione dinamica degli indirizzi IP.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,25 +42,25 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto un riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e qualsiasi altro numero se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario un riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e qualsiasi altro numero in caso di errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, riavvio non necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, riavvio non necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito. È necessario riavviare il computer.
 
 </dd> <dt>
 
@@ -82,12 +82,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non subnet mask.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -127,7 +127,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -136,12 +136,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -217,7 +217,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -226,12 +226,12 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
@@ -249,11 +249,11 @@ Impossibile rilasciare il lease DHCP.
 
 84
 
-IP non abilitato sulla scheda.
+IP non abilitato nella scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -262,12 +262,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti dei numeri di rete/frame**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di rete o del frame.
 
 </dd> <dt>
 
@@ -298,12 +298,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro al di fuori dei limiti.
 
 </dd> <dt>
 
@@ -339,20 +339,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -379,12 +379,12 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
 
-DHCP non abilitato nell'adapter.
+DHCP non abilitato sulla scheda.
 
 </dd> <dt>
 
@@ -397,13 +397,13 @@ DHCP non abilitato nell'adapter.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non cancella tutti i gateway statici predefiniti presenti nel computer.
+Questo metodo non cancella i gateway predefiniti statici presenti nel computer.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice [Enable DHCP and assign DNS Servers](https://Gallery.TechNet.Microsoft.Com/7b1cec46-bdb8-4afc-b240-9789eefce6de) VBScript sulla raccolta TechNet USA EnableDHCP per abilitare DHCP e assegnare i server DNS a un computer.
+L'esempio di codice VBScript Enable DHCP and Assign DNS Servers (Abilita DHCP e assegna server [DNS)](https://Gallery.TechNet.Microsoft.Com/7b1cec46-bdb8-4afc-b240-9789eefce6de) nella raccolta TechNet usa EnableDHCP per abilitare DHCP e assegnare server DNS a un computer.
 
-Nell'esempio di codice VBScript seguente viene illustrato come abilitare l'utilizzo di DHCP in un'istanza di [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) . In questo caso viene specificato l'adapter con un indice pari a 0. È necessario selezionare l'indice corretto dalle \_ istanze di NetworkAdapter Win32 per altre interfacce.
+Nell'esempio di codice VBScript seguente viene illustrato come abilitare l'utilizzo di DHCP in un'istanza di [**\_ NetworkAdapterConfiguration Win32.**](win32-networkadapterconfiguration.md) In questo caso si specifica l'adattatore con un indice 0. L'indice corretto deve essere selezionato dalle istanze NetworkAdapter Win32 \_ per altre interfacce.
 
 > [!Note]  
 > Supportato solo nelle piattaforme NT.
@@ -425,7 +425,7 @@ end if
 
 
 
-Nell'esempio di codice Perl seguente viene illustrato come abilitare l'utilizzo di DHCP in un'istanza di [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) . In questo caso viene specificato l'adapter con un indice pari a 0. È necessario selezionare l'indice corretto dalle \_ istanze di NetworkAdapter Win32 per altre interfacce.
+L'esempio di codice Perl seguente illustra come abilitare l'uso di DHCP in un'istanza di [**\_ NetworkAdapterConfiguration Win32.**](win32-networkadapterconfiguration.md) In questo caso si specifica l'adattatore con un indice 0. L'indice corretto deve essere selezionato dalle istanze NetworkAdapter Win32 \_ per altre interfacce.
 
 > [!Note]  
 > Supportato solo nelle piattaforme NT.
@@ -471,7 +471,7 @@ else
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -480,16 +480,16 @@ else
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Attività WMI: Account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

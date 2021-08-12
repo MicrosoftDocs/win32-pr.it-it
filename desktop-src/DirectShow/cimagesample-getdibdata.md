@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetDIBData recupera le informazioni sulla bitmap indipendente dal dispositivo (DIB) GDI gestita da questo oggetto.
+description: Il metodo GetDIBData recupera informazioni sulla bitmap GDI indipendente dal dispositivo (DIB) che questo oggetto gestisce.
 ms.assetid: ec337336-69ec-47ff-a522-42c0388f9bc0
-title: Metodo CImageSample. GetDIBData (Winutil. h)
+title: Metodo CImageSample.GetDIBData (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0fd198152e7c0042a6d48cf942a48745540960d3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 894d75512c6c7909f617e13999e7290efea663fa843bf64424aad8371965de75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655600"
 ---
-# <a name="cimagesamplegetdibdata-method"></a>CImageSample. GetDIBData, metodo
+# <a name="cimagesamplegetdibdata-method"></a>Metodo CImageSample.GetDIBData
 
-Il `GetDIBData` metodo recupera le informazioni sulla bitmap indipendente dal dispositivo (DIB) GDI gestita da questo oggetto.
+Il metodo recupera informazioni sulla bitmap GDI indipendente dal dispositivo `GetDIBData` (DIB) che questo oggetto gestisce.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore a una struttura [**DIBDATA**](dibdata.md) .
+Restituisce un puntatore a una [**struttura DIBDATA.**](dibdata.md)
 
 ## <a name="remarks"></a>Commenti
 
-Il chiamante deve inizializzare la struttura **DIBDATA** prima di chiamare questo metodo. verificare il valore di **CImageSample:: m \_ Binit**. Per inizializzare la struttura, chiamare il metodo [**CImageSample:: SetDIBData**](cimagesample-setdibdata.md) .
+Il chiamante deve inizializzare **la struttura DIBDATA** prima di chiamare questo metodo. controllare il valore di **CImageSample::m \_ bInit**. Per inizializzare la struttura, chiamare il [**metodo CImageSample::SetDIBData.**](cimagesample-setdibdata.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il chiamante deve inizializzare la struttura **DIBDATA** prima di chiamare quest
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

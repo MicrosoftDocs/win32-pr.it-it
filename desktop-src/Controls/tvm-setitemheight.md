@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_SETITEMHEIGHT (COMmctrl. h)
-description: Imposta l'altezza degli elementi della visualizzazione struttura ad albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SetItemHeight di TreeView.
+title: TVM_SETITEMHEIGHT messaggio (Commctrl.h)
+description: Imposta l'altezza degli elementi della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro TreeView SetItemHeight.
 ms.assetid: 23f6f2a4-cdd9-441d-af24-ed40513d2721
 keywords:
-- Controlli di Windows Message TVM_SETITEMHEIGHT
+- TVM_SETITEMHEIGHT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 114769f689cbf8d9475460e40d205c4282a1a787
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9afff57188a9683d18c6bff780b4a9f61479526d44ea77985742520a47e66cca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669646"
 ---
-# <a name="tvm_setitemheight-message"></a>\_Messaggio SETITEMHEIGHT TVM
+# <a name="tvm_setitemheight-message"></a>Messaggio \_ TVM SETITEMHEIGHT
 
-Imposta l'altezza degli elementi della visualizzazione struttura ad albero. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SetItemHeight di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitemheight) .
+Imposta l'altezza degli elementi della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ TreeView SetItemHeight.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitemheight)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta l'altezza degli elementi della visualizzazione struttura ad albero. È p
 *wParam* 
 </dt> <dd>
 
-Nuova altezza di ogni elemento nella visualizzazione albero, in pixel. L'altezza minore di 1 verrà impostata su 1. Se questo argomento non è pari e il controllo di visualizzazione albero non ha lo stile [**\_ NONEVENHEIGHT TVS**](tree-view-control-window-styles.md) , questo valore verrà arrotondato per difetto al valore pari più vicino. Se questo argomento è-1, il controllo verrà ripristinato utilizzando l'altezza predefinita dell'elemento.
+Nuova altezza di ogni elemento nella visualizzazione albero, in pixel. Le altezze minori di 1 verranno impostate su 1. Se questo argomento non è pari e il controllo visualizzazione albero non ha lo stile [**\_ TVS NONEVENHEIGHT,**](tree-view-control-window-styles.md) questo valore verrà arrotondato per esere al valore pari più vicino. Se questo argomento è -1, il controllo ripristina l'altezza predefinita dell'elemento.
 
 </dd> <dt>
 
@@ -41,11 +41,11 @@ Nuova altezza di ogni elemento nella visualizzazione albero, in pixel. L'altezza
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'altezza precedente, in pixel, degli elementi.
+Restituisce l'altezza precedente degli elementi, in pixel.
 
 ## <a name="remarks"></a>Commenti
 
-Il controllo di visualizzazione albero utilizza questo valore per l'altezza di tutti gli elementi. Per modificare l'altezza dei singoli elementi, vedere la descrizione del membro **iIntegral** della struttura [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) .
+Il controllo di visualizzazione albero usa questo valore per l'altezza di tutti gli elementi. Per modificare l'altezza dei singoli elementi, vedere la descrizione del membro **iIntegral** della [**struttura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il controllo di visualizzazione albero utilizza questo valore per l'altezza di t
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il controllo di visualizzazione albero utilizza questo valore per l'altezza di t
 
 <dl> <dt>
 
-[**\_GETITEMHEIGHT TVM**](tvm-getitemheight.md)
+[**TVM \_ GETITEMHEIGHT**](tvm-getitemheight.md)
 </dt> </dl>
 
  

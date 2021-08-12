@@ -1,17 +1,17 @@
 ---
-title: Modificare le funzioni di controllo
-description: Modificare le funzioni di controllo
+title: Funzioni di controllo di modifica
+description: Funzioni di controllo di modifica
 ms.assetid: 26f2696a-e03c-4092-a8c1-80c782e0621a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06189f54ea4393f110ae8b18b4d7c8fef3fa0d27
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e89dc58c2f3f4f9b0bf5fa676f55c33c1829ece427344a494c32ba10d8a2e85e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673473"
 ---
-# <a name="edit-control-functions"></a>Modificare le funzioni di controllo
+# <a name="edit-control-functions"></a>Funzioni di controllo di modifica
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

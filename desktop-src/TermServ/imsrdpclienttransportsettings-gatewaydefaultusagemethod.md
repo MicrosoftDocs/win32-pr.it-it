@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayDefaultUsageMethod di IMsRdpClientTransportSettings
-description: Metodo di utilizzo predefinito per Desktop remoto Gateway (Gateway Desktop remoto).
+title: Proprietà IMsRdpClientTransportSettings GatewayDefaultUsageMethod
+description: Il metodo di utilizzo predefinito Desktop remoto Gateway Desktop remoto.
 ms.assetid: 7014538d-550a-4246-ad32-406ef67fb112
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayDefaultUsageMethod
-- Servizi Desktop remoto proprietà GatewayDefaultUsageMethod, interfaccia IMsRdpClientTransportSettings
-- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto, proprietà GatewayDefaultUsageMethod
+- Proprietà GatewayDefaultUsageMethod Servizi Desktop remoto
+- Proprietà GatewayDefaultUsageMethod Servizi Desktop remoto, interfaccia IMsRdpClientTransportSettings
+- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto , proprietà GatewayDefaultUsageMethod
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b8417da30f9a692e6e233174a33f4b03682a5bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6403f319eaa79b9d140a3d75f9dd4f7625eced916ee907755c017d3e58a1767f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607422"
 ---
-# <a name="imsrdpclienttransportsettingsgatewaydefaultusagemethod-property"></a>Proprietà IMsRdpClientTransportSettings:: GatewayDefaultUsageMethod
+# <a name="imsrdpclienttransportsettingsgatewaydefaultusagemethod-property"></a>Proprietà IMsRdpClientTransportSettings::GatewayDefaultUsageMethod
 
-Metodo di utilizzo predefinito per Desktop remoto Gateway (Gateway Desktop remoto).
+Il metodo di utilizzo predefinito Desktop remoto Gateway Desktop remoto.
 
 Questa proprietà è di sola lettura.
 
@@ -44,11 +44,11 @@ HRESULT get_GatewayDefaultUsageMethod(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore al metodo di utilizzo predefinito per Gateway Desktop remoto. Restituisce un'Unione delle impostazioni utente impostate mediante [**put \_ GatewayUsageMethod ()**](imsrdpclienttransportsettings-gatewayusagemethod.md)e le impostazioni di criteri di gruppo. Se non sono state impostate impostazioni utente mediante **put \_ GatewayUsageMethod ()**, **get \_ GatewayDefaultUsageMethod ()** restituirà il valore predefinito **della \_ modalità proxy TSC \_ \_ Detect**.
+Puntatore al metodo di utilizzo predefinito per Gateway Desktop remoto. Restituisce un'unione delle impostazioni utente impostate da [**\_ put GatewayUsageMethod()**](imsrdpclienttransportsettings-gatewayusagemethod.md)e le impostazioni di Criteri di gruppo. Se **\_ gatewayUsageMethod()** non ha impostato alcuna impostazione utente, **get \_ GatewayDefaultUsageMethod()** restituirà il valore predefinito **TSC \_ PROXY MODE \_ \_ DETECT**.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 

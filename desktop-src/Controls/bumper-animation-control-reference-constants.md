@@ -1,21 +1,21 @@
 ---
-title: Costanti di controllo dell'animazione
-description: Costanti di controllo dell'animazione
+title: Costanti del controllo Animation
+description: Costanti del controllo Animation
 ms.assetid: f3c40e40-b8ff-4483-bd73-d2d9d2d5a4de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12e5163094705c4c49a76f068b9071be2722f1a0
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 46f6b508d2158df4e2aa6c94502cfe4cc23ec6fce3b43630b418c29f5bea8aa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674049"
 ---
-# <a name="animation-control-constants"></a>Costanti di controllo dell'animazione
+# <a name="animation-control-constants"></a>Costanti del controllo Animation
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Stili del controllo di animazione](animation-control-styles.md)
+-   [Stili dei controlli di animazione](animation-control-styles.md)
 
  
 

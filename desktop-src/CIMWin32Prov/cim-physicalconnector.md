@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM PhysicalConnector rappresenta qualsiasi elemento fisico usato per connettersi ad altri elementi. Qualsiasi oggetto in grado di connettersi e trasmettere segnali o potere tra due o più elementi fisici è un discendente (o membro) di questa classe.
+description: La classe \_ CIM PhysicalConnector rappresenta qualsiasi elemento fisico usato per connettersi ad altri elementi. Qualsiasi oggetto in grado di connettersi e trasmettere segnali o potenza tra due o più elementi fisici è un discendente (o membro) di questa classe.
 ms.assetid: cc135ae8-5ae1-4028-a2e3-a81db8694d9d
 ms.tgt_platform: multiple
-title: Classe CIM_PhysicalConnector
+title: CIM_PhysicalConnector classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,23 +31,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 106b8ab30296b77be550809771db3b0208485872
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e4c5e53c2c8d02abb0762a9c3cc5bc5540f175f0810ec319180eb06435948ed4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118678273"
 ---
-# <a name="cim_physicalconnector-class"></a>CIM \_ PhysicalConnector (classe)
+# <a name="cim_physicalconnector-class"></a>Classe \_ CiM PhysicalConnector
 
-La classe **CIM \_ PhysicalConnector** rappresenta qualsiasi elemento fisico usato per connettersi ad altri elementi. Qualsiasi oggetto in grado di connettersi e trasmettere segnali o potere tra due o più elementi fisici è un discendente (o membro) di questa classe. Ad esempio, slot e connettori D-shell sono tipi di connettori fisici.
+La **classe \_ CIM PhysicalConnector** rappresenta qualsiasi elemento fisico usato per connettersi ad altri elementi. Qualsiasi oggetto in grado di connettersi e trasmettere segnali o potenza tra due o più elementi fisici è un discendente (o membro) di questa classe. Ad esempio, gli slot e i connettori D-Shell sono tipi di connettori fisici.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,57 +77,57 @@ class CIM_PhysicalConnector : CIM_PhysicalElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ PhysicalConnector** presenta questi tipi di membri:
+La **classe \_ CiM PhysicalConnector** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ PhysicalConnector** dispone di queste proprietà.
+La **classe \_ CIM PhysicalConnector** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ConnectorPinout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa in formato libero che descrive la configurazione del PIN e l'uso del segnale di un connettore fisico.
+Stringa in formato libero che descrive la configurazione del pin e l'uso del segnale di un connettore fisico.
 
 </dd> <dt>
 
-**ConnectorType**
+**Connectortype**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di connettore fisico. Viene specificata una matrice per consentire la descrizione delle combinazioni di informazioni del connettore. Una voce della matrice, ad esempio, può specificare RS-232, un altro DB-25 e una terza voce può definire il connettore come "maschio".
+Tipo di connettore fisico. Viene specificata una matrice per consentire la descrizione delle combinazioni di informazioni sul connettore. Ad esempio, una voce di matrice può specificare RS-232, un'altra DB-25 e una terza voce può definire il connettore come "male".
 
 <dt>
 
@@ -147,7 +147,7 @@ Tipo di connettore fisico. Viene specificata una matrice per consentire la descr
 
 <span id="Male"></span><span id="male"></span><span id="MALE"></span>
 
-**Maschio** (2)
+**Male** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -168,28 +168,28 @@ Tipo di connettore fisico. Viene specificata una matrice per consentire la descr
 
 <span id="Unshielded"></span><span id="unshielded"></span><span id="UNSHIELDED"></span>
 
-Non **schermato** (5)
+**Non sshielded** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI__A__High-Density__50_pins_"></span><span id="scsi__a__high-density__50_pins_"></span><span id="SCSI__A__HIGH-DENSITY__50_PINS_"></span>
 
-**SCSI (A) High-Density (50 pin)** (6)
+**ScSI (A) High-Density (50 pin)** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI__A__Low-Density__50_pins_"></span><span id="scsi__a__low-density__50_pins_"></span><span id="SCSI__A__LOW-DENSITY__50_PINS_"></span>
 
-**SCSI (A) Low-Density (50 pin)** (7)
+**ScSI (A) Low-Density (50 pin)** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI__P__High-Density__68_pins_"></span><span id="scsi__p__high-density__68_pins_"></span><span id="SCSI__P__HIGH-DENSITY__68_PINS_"></span>
 
-**High-Density SCSI (P) (68 pin)** (8)
+**ScSI (P) High-Density (68 pin)** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -210,14 +210,14 @@ Non **schermato** (5)
 
 <span id="SCSI_Fibre_Channel__DB-9__Copper_"></span><span id="scsi_fibre_channel__db-9__copper_"></span><span id="SCSI_FIBRE_CHANNEL__DB-9__COPPER_"></span>
 
-**Fibre Channel SCSI (DB-9, rame)** (11)
+**SCSI Fibre Channel (DB-9, Rame)** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Fibre_Channel__Fibre_"></span><span id="scsi_fibre_channel__fibre_"></span><span id="SCSI_FIBRE_CHANNEL__FIBRE_"></span>
 
-**Fibre Channel SCSI (fibre)** (12)
+**SCSI Fibre Channel (Fibre)** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -245,14 +245,14 @@ Non **schermato** (5)
 
 <span id="ATA_3-1_2_Inch__40_pins_"></span><span id="ata_3-1_2_inch__40_pins_"></span><span id="ATA_3-1_2_INCH__40_PINS_"></span>
 
-**ATA 3-1/2 pollice (40 pin)** (16)
+**ATA 3-1/2 Pollice (40 pin)** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATA_2-1_2_Inch__44_pins_"></span><span id="ata_2-1_2_inch__44_pins_"></span><span id="ATA_2-1_2_INCH__44_PINS_"></span>
 
-**ATA 2-1/2 inch (44 pin)** (17)
+**ATA 2-1/2 Pollice (44 pin)** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -343,14 +343,14 @@ Non **schermato** (5)
 
 <span id="V.35"></span><span id="v.35"></span>
 
-**V. 35** (30)
+**V.35** (30)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="X.21"></span><span id="x.21"></span>
 
-**X. 21** (31)
+**X.21** (31)
 
 
 </dt> <dd></dd> <dt>
@@ -371,21 +371,21 @@ Non **schermato** (5)
 
 <span id="UTP_Category_3"></span><span id="utp_category_3"></span><span id="UTP_CATEGORY_3"></span>
 
-**Categoria UTP 3** (34)
+**UTP Categoria 3** (34)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UTP_Category_4"></span><span id="utp_category_4"></span><span id="UTP_CATEGORY_4"></span>
 
-**UTP categoria 4** (35)
+**UTP Categoria 4** (35)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UTP_Category_5"></span><span id="utp_category_5"></span><span id="UTP_CATEGORY_5"></span>
 
-**Categoria UTP 5** (36)
+**UTP Categoria 5** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -469,21 +469,21 @@ Non **schermato** (5)
 
 <span id="PCMCIA_Type_I"></span><span id="pcmcia_type_i"></span><span id="PCMCIA_TYPE_I"></span>
 
-**Tipi PCMCIA I** (48)
+**PCMCIA Tipo I** (48)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCMCIA_Type_II"></span><span id="pcmcia_type_ii"></span><span id="PCMCIA_TYPE_II"></span>
 
-**Tipo PCMCIA II** (49)
+**PCMCIA Di tipo II** (49)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCMCIA_Type_III"></span><span id="pcmcia_type_iii"></span><span id="PCMCIA_TYPE_III"></span>
 
-**Tipo PCMCIA III** (50)
+**PCMCIA Di tipo III** (50)
 
 
 </dt> <dd></dd> <dt>
@@ -567,28 +567,28 @@ Non **schermato** (5)
 
 <span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>
 
-**Infrarossi** (62)
+**A lor** (62)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HP-HIL"></span><span id="hp-hil"></span>
 
-**HP-** b (63)
+**HP-PF** (63)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Access.bus"></span><span id="access.bus"></span><span id="ACCESS.BUS"></span>
 
-**Access. bus** (64)
+**Access.bus** (64)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NuBus"></span><span id="nubus"></span><span id="NUBUS"></span>
 
-**Nubus** (65)
+**NuBus** (65)
 
 
 </dt> <dd></dd> <dt>
@@ -602,28 +602,28 @@ Non **schermato** (5)
 
 <span id="Mini-Centronics"></span><span id="mini-centronics"></span><span id="MINI-CENTRONICS"></span>
 
-**Mini-Centronics** (67)
+**Mini-centronics** (67)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-14"></span><span id="mini-centronics_type-14"></span><span id="MINI-CENTRONICS_TYPE-14"></span>
 
-**Tipo Mini-Centronics-14** (68)
+**Mini-Centronics Type-14** (68)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-20"></span><span id="mini-centronics_type-20"></span><span id="MINI-CENTRONICS_TYPE-20"></span>
 
-**Tipo Mini-Centronics-20** (69)
+**Mini-Centronics Type-20** (69)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-26"></span><span id="mini-centronics_type-26"></span><span id="MINI-CENTRONICS_TYPE-26"></span>
 
-**Tipo Mini-Centronics-26** (70)
+**Mini-Centronics Type-26** (70)
 
 
 </dt> <dd></dd> <dt>
@@ -679,14 +679,14 @@ Non **schermato** (5)
 
 <span id="Proprietary_Memory_Card_Slot"></span><span id="proprietary_memory_card_slot"></span><span id="PROPRIETARY_MEMORY_CARD_SLOT"></span>
 
-**Slot scheda di memoria proprietaria** (78)
+**Slot della scheda di memoria** proprietaria (78)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Proprietary_I_O_Riser_Slot"></span><span id="proprietary_i_o_riser_slot"></span><span id="PROPRIETARY_I_O_RISER_SLOT"></span>
 
-**Slot di riser I/O proprietario** (79)
+**Slot riser di I/O** proprietario (79)
 
 
 </dt> <dd></dd> <dt>
@@ -735,7 +735,7 @@ Non **schermato** (5)
 
 <span id="PC-98Note"></span><span id="pc-98note"></span><span id="PC-98NOTE"></span>
 
-**PC-98Note** (86)
+**PC-98Nota** (86)
 
 
 </dt> <dd></dd> <dt>
@@ -749,7 +749,7 @@ Non **schermato** (5)
 
 <span id="SSA_SCSI"></span><span id="ssa_scsi"></span>
 
-**SCSI ssa** (88)
+**SSA SCSI** (88)
 
 
 </dt> <dd></dd> <dt>
@@ -763,49 +763,49 @@ Non **schermato** (5)
 
 <span id="On_Board_IDE_Connector"></span><span id="on_board_ide_connector"></span><span id="ON_BOARD_IDE_CONNECTOR"></span>
 
-**Connettore IDE a bordo** (90)
+**Connettore IDE su scheda** (90)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="On_Board_Floppy_Connector"></span><span id="on_board_floppy_connector"></span><span id="ON_BOARD_FLOPPY_CONNECTOR"></span>
 
-**Connettore floppy a bordo** (91)
+**Connettore floppy** su scheda (91)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="9_Pin_Dual_Inline"></span><span id="9_pin_dual_inline"></span><span id="9_PIN_DUAL_INLINE"></span>
 
-**2 pin doppio inline** (92)
+**9 Pin Dual Inline** (92)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="25_Pin_Dual_Inline"></span><span id="25_pin_dual_inline"></span><span id="25_PIN_DUAL_INLINE"></span>
 
-**25 pin doppio inline** (93)
+**25 Pin Dual Inline** (93)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="50_Pin_Dual_Inline"></span><span id="50_pin_dual_inline"></span><span id="50_PIN_DUAL_INLINE"></span>
 
-**Pin 50 dual inline** (94)
+**50 Pin Dual Inline** (94)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="68_Pin_Dual_Inline"></span><span id="68_pin_dual_inline"></span><span id="68_PIN_DUAL_INLINE"></span>
 
-**Pin 68 dual inline** (95)
+**68 Pin Dual Inline** (95)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="On_Board_Sound_Connector"></span><span id="on_board_sound_connector"></span><span id="ON_BOARD_SOUND_CONNECTOR"></span>
 
-**Connettore audio a bordo** (96)
+**Connettore audio su scheda** (96)
 
 
 </dt> <dd></dd> <dt>
@@ -826,14 +826,14 @@ Non **schermato** (5)
 
 <span id="Sbus_IEEE_1396-1993_32_bit"></span><span id="sbus_ieee_1396-1993_32_bit"></span><span id="SBUS_IEEE_1396-1993_32_BIT"></span>
 
-**SBus IEEE 1396-1993 32 bit** (99)
+**Sbus IEEE 1396-1993 a 32 bit** (99)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Sbus_IEEE_1396-1993_64_bit"></span><span id="sbus_ieee_1396-1993_64_bit"></span><span id="SBUS_IEEE_1396-1993_64_BIT"></span>
 
-**SBus IEEE 1396-1993 64 bit** (100)
+**Sbus IEEE 1396-1993 a 64 bit** (100)
 
 
 </dt> <dd></dd> <dt>
@@ -847,7 +847,7 @@ Non **schermato** (5)
 
 <span id="GIO"></span><span id="gio"></span>
 
-**Gio** (102)
+**GIO** (102)
 
 
 </dt> <dd></dd> <dt>
@@ -861,7 +861,7 @@ Non **schermato** (5)
 
 <span id="HIO"></span><span id="hio"></span>
 
-**Hio** (104)
+**HIO** (104)
 
 
 </dt> <dd></dd> <dt>
@@ -917,21 +917,21 @@ Non **schermato** (5)
 
 <span id="Electrical"></span><span id="electrical"></span><span id="ELECTRICAL"></span>
 
-**Elettrico** (112)
+**Elettrica** (112)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Optical"></span><span id="optical"></span><span id="OPTICAL"></span>
 
-**Ottico** (113)
+**Ottica** (113)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ribbon"></span><span id="ribbon"></span><span id="RIBBON"></span>
 
-**Barra multifunzione** (114)
+**Barra** multifunzione (114)
 
 
 </dt> <dd></dd> <dt>
@@ -966,14 +966,14 @@ Non **schermato** (5)
 
 <span id="HSSC"></span><span id="hssc"></span>
 
-**Hssc** (119)
+**HSSC** (119)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VHDCI_Shielded__68_pins_"></span><span id="vhdci_shielded__68_pins_"></span><span id="VHDCI_SHIELDED__68_PINS_"></span>
 
-**Schermate VHDCI (68 pin)** (120)
+**VHDCI Schermato (68 pin)** (120)
 
 
 </dt> <dd></dd> <dt>
@@ -990,25 +990,25 @@ Non **schermato** (5)
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata per la creazione di un'istanza di. Se utilizzata con altre proprietà chiave della classe, questa proprietà consente di identificare in modo univoco tutte le istanze della classe e le relative sottoclassi.
+Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza. Se usata con altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze della classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1017,70 +1017,70 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome dell'organizzazione responsabile della creazione dell'elemento fisico. Per ulteriori informazioni, vedere la proprietà **Vendor** del [**\_ prodotto CIM**](cim-product.md).
+Nome dell'organizzazione responsabile della produzione dell'elemento fisico. Per altre informazioni, vedere la **proprietà Vendor** di [**CIM \_ Product**](cim-product.md).
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Modello**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Nome in base al quale l'elemento fisico è generalmente noto.
+Nome con cui l'elemento fisico è noto a livello generale.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1089,113 +1089,113 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override di questa proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. In caso di sottoclasse, questa proprietà può essere sottoposta a override come proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dati aggiuntivi, oltre alle informazioni sui tag asset, che possono essere usati per identificare un elemento fisico. Un esempio è costituito dai dati del codice a barre associati a un elemento, che include anche un tag asset. Si noti che se sono disponibili solo dati del codice a barre ed è univoco e può essere usato come chiave dell'elemento, questa proprietà sarà null e i dati del codice a barre verrebbero usati come chiave della classe nella proprietà **tag** .
+Dati aggiuntivi, oltre alle informazioni sui tag di asset, che possono essere usati per identificare un elemento fisico. Un esempio è dato dal codice a barre associato a un elemento, che include anche un tag asset. Si noti che se sono disponibili solo dati di codice a barre e sono univoci e possono essere usati come chiave dell'elemento, questa proprietà sarà Null e i dati del codice a barre verranno usati come chiave di classe nella **proprietà Tag.**
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
-**NumeroArticolo**
+**PartNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Numero di parte assegnato dall'organizzazione responsabile della produzione o della produzione dell'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **PoweredOn**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, l'elemento fisico è acceso. In caso contrario, è attualmente disattivato.
+Se **TRUE,** l'elemento fisico è acceso. In caso contrario, è attualmente disattivata.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Numero allocato dal produttore utilizzato per identificare l'elemento fisico.
+Numero allocato dal produttore usato per identificare l'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **SKU**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Numero di unità di conservazione per questo elemento fisico.
+Numero di unità di mantenimento delle scorte per questo elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto. È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "danneggiato" e "errore predazione". "Predator fail" indica che un elemento funziona correttamente, ma sta stimando un errore, ad esempio un'unità disco rigido abilitata per SMART.
+Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Degraded" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma sta stimando un errore (ad esempio, un disco rigido abilitato per SMART).
 
-Lo stato non operativo può includere "Error", "starting", "stoping" e "Service". Il "servizio" può essere applicato durante il mirroring del disco, ovvero la riattivazione, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". "Servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altre operazioni amministrative. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -1210,77 +1210,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -1290,46 +1290,46 @@ Ridotto **("danneggiato"** )
 **Tag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identifica in modo univoco l'elemento fisico e funge da chiave dell'elemento. Questa proprietà può contenere informazioni, ad esempio i dati del tag asset o del numero di serie. La chiave per [**CIM \_ PhysicalElement**](cim-physicalelement.md) è posizionata in modo molto elevato nella gerarchia degli oggetti per identificare in modo indipendente l'hardware o l'entità, indipendentemente dalla posizione fisica nei cabinet, nelle schede e così via. Ad esempio, un componente rimovibile che può essere scambiato a caldo può essere tratto dal pacchetto contenitore (ambito) ed essere temporaneamente inutilizzato. L'oggetto continua a esistere e può anche essere inserito in un altro contenitore di ambito. La chiave per un elemento fisico è una stringa arbitraria definita indipendentemente dal posizionamento o dalla gerarchia orientata alla posizione.
+Identifica in modo univoco l'elemento fisico e funge da chiave dell'elemento. Questa proprietà può contenere informazioni, ad esempio i dati relativi al tag di asset o al numero di serie. La chiave [**per CIM \_ PhysicalElement**](cim-physicalelement.md) è posizionata molto in alto nella gerarchia di oggetti per identificare in modo indipendente l'hardware o l'entità, indipendentemente dal posizionamento fisico in (o in) archivi, adattatori e così via. Ad esempio, un componente rimovibile che può essere scambiato a caldo può essere prelevato dal pacchetto contenitore (ambito) e temporaneamente inutilizzato. L'oggetto continua a esistere e può anche essere inserito in un contenitore di ambito diverso. La chiave per un elemento fisico è una stringa arbitraria definita indipendentemente dalla gerarchia di posizionamento o orientata alla posizione.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Indica la versione dell'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ PhysicalConnector** è derivata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+La **classe CIM \_ PhysicalConnector** è derivata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
-WMI non implementa questa classe. Per le classi WMI derivate da **CIM \_ PhysicalConnector**, vedere [Win32 Classes](win32-provider.md).
+WMI non implementa questa classe. Per le classi WMI derivate da **CIM \_ PhysicalConnector,** vedere [Classi Win32](win32-provider.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -1340,7 +1340,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1349,7 +1349,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_PhysicalElement CIM**](cim-physicalelement.md)
+[**CIM \_ PhysicalElement**](cim-physicalelement.md)
 </dt> </dl>
 
  
