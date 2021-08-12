@@ -1,42 +1,42 @@
 ---
-title: Introduzione con la procedura guidata plug-in
-description: Introduzione con la procedura guidata plug-in
+title: Attività iniziali con la Creazione guidata plug-in
+description: Attività iniziali con la Creazione guidata plug-in
 ms.assetid: 77fc1b0c-20f5-434d-9142-f112489a7f08
 keywords:
-- Plug-in di Windows Media Player, installazione guidata plug-in
+- Windows Media Player plug-in, installazione guidata plug-in
 - plug-in, installazione guidata plug-in
-- creazione di plug-in, installazione guidata plug-in
-- Creazione guidata plug-in di Windows Media Player, installazione
+- compilazione di plug-in, installazione guidata plug-in
+- Windows Media Player Creazione guidata plug-in, installazione
 - installazione guidata plug-in
-- procedura guidata plug-in
+- Creazione guidata plug-in
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a4feb9cfa60c120bfc5bb675ea8a8078b95ad14
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2d2699d0316be93f6387bdc64c6671df868eaa70fb24a4ad3619026524106432
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576580"
 ---
-# <a name="getting-started-with-the-plug-in-wizard"></a>Introduzione con la procedura guidata plug-in
+# <a name="getting-started-with-the-plug-in-wizard"></a>Attività iniziali con la Creazione guidata plug-in
 
-Per configurare l'ambiente di sviluppo per la creazione di plug-in di Windows Media Player, è necessario installare gli elementi seguenti:
+Per configurare l'ambiente di sviluppo per la Windows Media Player plug-in, è necessario installare gli elementi seguenti:
 
 -   Microsoft Visual Studio .NET 2003 o versione successiva
--   Windows Media Player 9 serie o versione successiva
+-   Windows Media Player serie 9 o successive
 -   Windows SDK, che include Windows Media Player SDK
--   Procedura guidata plug-in di Windows Media Player
+-   Windows Media Player Creazione guidata plug-in
 
 ## <a name="installing-the-wizard"></a>Installazione della procedura guidata
 
-Per installare la creazione guidata plug-in di Windows Media Player, attenersi alla procedura riportata di seguito.
+Seguire questa procedura per installare la procedura guidata Windows Media Player plug-in.
 
-1.  Individuare la cartella in cui è stato installato il Windows SDK. Espandere la cartella per visualizzare le relative sottocartelle e passare a esempi di \\ strumenti multimediali per \\ WMP \\ \\ wmpwiz.
+1.  Individuare la cartella in cui è stato installato Windows SDK. Espandere la cartella per visualizzarne le sottocartelle e passare a Esempi di procedure \\ \\ guidate WMP \\ multimediali \\ wmpwiz.
 2.  Individuare i tre file seguenti:
-    -   wmpwiz. vsz
-    -   wmpwiz. vsdir
-    -   wmpwiz. ico
-3.  Utilizzando un editor di testo, ad esempio Blocco note, modificare il file wmpwiz. vsz.
+    -   wmpwiz.vsz
+    -   wmpwiz.vsdir
+    -   wmpwiz.ico
+3.  Usando un editor di testo, ad esempio Blocco note, modificare il file wmpwiz.vsz.
 
     Individuare la riga seguente:
 
@@ -46,19 +46,19 @@ Per installare la creazione guidata plug-in di Windows Media Player, attenersi a
 
     
 
-    Passare `<VsWizardEngine version goes here>` a uno dei valori seguenti, a seconda della versione di Visual Studio installata.
+    Passare a uno dei valori seguenti, a seconda della versione Visual Studio `<VsWizardEngine version goes here>` installata.
 
     
 
     | Valore              | Versione di Visual Studio   |
     |--------------------|-------------------------|
-    | VsWizardEngine. 7.1 | Visual Studio .NET 2003 |
-    | VsWizardEngine. 8.0 | Visual Studio 2005      |
-    | VsWizardEngine. 9.0 | Visual Studio 2008      |
+    | VsWizardEngine.7.1 | Visual Studio .NET 2003 |
+    | VsWizardEngine.8.0 | Visual Studio 2005      |
+    | VsWizardEngine.9.0 | Visual Studio 2008      |
 
     
 
-     
+     
 
     Individuare la riga seguente:
 
@@ -70,7 +70,7 @@ Per installare la creazione guidata plug-in di Windows Media Player, attenersi a
 
     Passare `<path to wmpwiz directory goes here>` al percorso in cui si trovano i file della procedura guidata.
 
-    Si supponga, ad esempio, di avere Visual Studio 2008 e che i file della procedura guidata siano disponibili qui: C: \\ programmi \\ Microsoft SDK \\ Windows \\ v 7.0 \\ esempi di \\ strumenti multimediali per \\ WMP \\ \\ wmpwiz. Il file wmpwiz. vsz avrà un aspetto simile al seguente:
+    Si supponga ad esempio di avere Visual Studio 2008 e che i file della procedura guidata siano qui: C: Programmi \\ \\ Microsoft SDK Windows \\ \\ v7.0 \\ Samples Multimedia \\ \\ WMP \\ \\ wizards wmpwiz. Il file wmpwiz.vsz sarà quindi simile al seguente:
 
     ```
     VSWIZARD 7.0
@@ -83,22 +83,22 @@ Per installare la creazione guidata plug-in di Windows Media Player, attenersi a
 
     
 
-4.  Individuare la cartella in cui è installato Visual Studio. Espandere la cartella per visualizzare le relative sottocartelle e individuare una cartella denominata vcprojects.
-5.  Copiare i tre file elencati nel passaggio 2 nella cartella VCProjects. Ora è installata la procedura guidata.
+4.  Individuare la cartella in cui è stato installato Visual Studio. Espandere la cartella per visualizzarne le sottocartelle e individuare una cartella denominata vcprojects.
+5.  Copiare i tre file elencati nel passaggio 2 nella cartella vcprojects. La procedura guidata è ora installata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Creazione di un plug-in](building-a-plug-in.md)
+[Compilazione di un plug-in](building-a-plug-in.md)
 </dt> <dt>
 
-[Uso della procedura guidata plug-in con Visual Studio](using-the-plug-in-wizard-with-visual-studio.md)
+[Uso della Creazione guidata plug-in con Visual Studio](using-the-plug-in-wizard-with-visual-studio.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

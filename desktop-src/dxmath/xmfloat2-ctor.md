@@ -1,21 +1,21 @@
 ---
 description: Costruttori esposti da XMFLOAT2.
 ms.assetid: 2b679681-f50c-4028-8a0d-28d283e0e9e7
-title: Costruttori XMFLOAT2 (DirectXMath. h)
+title: Costruttori XMFLOAT2 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 234c91c7e7c4588fecdaaa155de301a5118c1e0e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fc78325a76d3a78bc8ae613b1a465dc8de3165006c642870247943345f9d235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276389"
 ---
 # <a name="xmfloat2-constructors"></a>Costruttori XMFLOAT2
 
 Costruttori esposti da `XMFLOAT2` .
 
-Costruisce istanze della struttura [**XMFLOAT2**](/windows/win32/api/directxmath/ns-directxmath-xmfloat2) .
+Costruisce istanze della [**struttura XMFLOAT2.**](/windows/win32/api/directxmath/ns-directxmath-xmfloat2)
 
 > [!Note]  
 > I costruttori elencati di seguito sono disponibili solo in C++.
@@ -39,8 +39,8 @@ Costruisce istanze della struttura [**XMFLOAT2**](/windows/win32/api/directxmath
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMFLOAT2 ()</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmfloat2-xmfloat2 (constxmfloat2_))</td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMFLOAT2</code> . <br/> Costruttore predefinito per [<strong>XMFLOAT2</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmfloat2). <br/>
+<td style="text-align: left;">[<strong>XMFLOAT2 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(constxmfloat2_))</td>
+<td style="text-align: left;">Costruttore predefinito per <code>XMFLOAT2</code> . <br/> Costruttore predefinito per [<strong>XMFLOAT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat2). <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -48,8 +48,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMFLOAT2 (float, float)</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmfloat2-xmfloat2 (float_float))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMFLOAT2</code> da due <code>float</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di [<strong>XMFLOAT2</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmfloat2) da due <code>float</code> argomenti. <br/>
+<td style="text-align: left;">[<strong>XMFLOAT2 (float,float)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(float_float))</td>
+<td style="text-align: left;">Inizializza una nuova istanza di <code>XMFLOAT2</code> da due <code>float</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di [<strong>XMFLOAT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat2) da due <code>float</code> argomenti. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -57,8 +57,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMFLOAT2 (const Float *)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(constfloat))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMFLOAT2</code> da un argomento di matrice a due elementi <code>float</code> . <br/> Questo costruttore inizializza una nuova istanza di [<strong>XMFLOAT2</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmfloat2) da un argomento di matrice a due elementi <code>float</code> . <br/>
+<td style="text-align: left;">[<strong>XMFLOAT2 (const float*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat2-xmfloat2(constfloat))</td>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMFLOAT2</code> un argomento della matrice di due <code>float</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di [<strong>XMFLOAT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat2) da un argomento di matrice di due <code>float</code> elementi. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -76,7 +76,7 @@ Questo costruttore è disponibile solo in C++.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 

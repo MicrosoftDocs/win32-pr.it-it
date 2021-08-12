@@ -3,37 +3,37 @@ title: Copia da CD con IWMPPlayerServices::setTaskPane
 description: Copia da CD con IWMPPlayerServices::setTaskPane
 ms.assetid: 0d3efb0e-e8f5-40e3-abb5-6ad22009a4eb
 keywords:
-- Windows Media Player, copia di CD
-- Modello a oggetti di Windows Media Player, copia di CD
-- modello a oggetti, copia di CD
-- Controllo ActiveX di Windows Media Player, copia di CD
-- Controllo ActiveX, copia di CD
-- Controllo ActiveX Windows Media Player Mobile, copia di CD
-- Windows Media Player Mobile, copia di CD
-- Ripping del CD, interfaccia setTaskPane di IWMPPlayerServices
-- ripping di CDs, interfaccia setTaskPane di IWMPPlayerServices
-- Interfaccia setTaskPane di IWMPPlayerServices
+- Windows Media Player,ripping CD
+- Windows Media Player a oggetti, ripping CD
+- modello a oggetti, ripping CD
+- Windows Media Player ActiveX, ripping CD
+- ActiveX controllo, ripping CD
+- Windows Media Player Controllo ActiveX per dispositivi mobili, ripping CD
+- Windows Media Player Mobile, ripping CD
+- Ripping cd, interfaccia IWMPPlayerServices setTaskPane
+- ripping di CD, interfaccia IWMPPlayerServices setTaskPane
+- Interfaccia IWMPPlayerServices setTaskPane
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfb1a09d67f310266ae4818bc0b594fe3b74d128
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 2abf53d29284b5da629598e6f23d6dcae78c69c60c23ba07f30445d5252845e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104472382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118569834"
 ---
-# <a name="ripping-by-using-iwmpplayerservicessettaskpane"></a>Estrazione tramite IWMPPlayerServices:: setTaskPane
+# <a name="ripping-by-using-iwmpplayerservicessettaskpane"></a>Ripping tramite IWMPPlayerServices::setTaskPane
 
 > [!Note]  
-> Questa sezione documenta una funzionalità dei controlli ActiveX Windows Media Player 9 e Windows Media Player 10. Si consiglia di usare l'interfaccia **IWMPCdromRip** con versioni successive. Vedere [interfaccia IWMPCdromRip](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip).
+> Questa sezione documenta una funzionalità dei controlli Windows Media Player Serie 9 Windows Media Player 10 ActiveX. È consigliabile usare **l'interfaccia IWMPCdromRip** con le versioni successive. Vedere [Interfaccia IWMPCdromRip](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip).
 
- 
+ 
 
-È possibile utilizzare il controllo Windows Media Player 9 Series o versione successiva per copiare tracce di CD nel computer dell'utente. Questo processo è denominato *estrazione*. A tale scopo, è necessario incorporare il controllo Media Player Windows in modalità remota. Per ulteriori informazioni sulla modalità remota, vedere [la pagina relativa alla comunicazione remota del controllo Media Player di Windows](remoting-the-windows-media-player-control.md).
+È possibile usare il controllo Windows Media Player serie 9 o successive per copiare tracce CD nel computer dell'utente. Questo processo è denominato *ripping* di . A tale scopo, è necessario incorporare il controllo Windows Media Player in modalità remota. Per altre informazioni sulla modalità remota, vedere [Remoting the Windows Media Player Control](remoting-the-windows-media-player-control.md).
 
-Per avviare il processo di strappo, chiamare [IWMPPlayerServices:: setTaskPane](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpplayerservices-settaskpane), passando il CopyFromCD? AutoCopy: valore *ID* per il parametro *bstrTaskPane* , dove *ID* è l'indice dell'unità CD da cui eseguire la copia. Questo indice corrisponde all'indice di un oggetto **CDROM** nell'interfaccia **IWMPCdromCollection** o dell'evento **CdromMediaChange** .
+Per avviare il processo di ripping, chiamare [IWMPPlayerServices::setTaskPane](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpplayerservices-settaskpane)passando CopyFromCD? AutoCopy:*valore id* per il parametro *bstrTaskPane,* dove *id* è l'indice dell'unità CD da cui copiare. Questo indice corrisponde all'indice di **un oggetto Cdrom** nell'interfaccia **IWMPCdromCollection** o nell'evento **CdromMediaChange.**
 
-Il codice di esempio seguente è una funzione che avvia il processo di estrazione di un CD dall'unità CD identificata dall'indice zero. La funzione usa la variabile membro seguente:
+Il codice di esempio seguente è una funzione che avvia il processo di copia di un CD dall'unità CD identificata dall'indice zero. La funzione usa la variabile membro seguente:
 
 
 ```C++
@@ -43,7 +43,7 @@ CComPtr<IWMPPlayer4>  m_spPlayer;  // Smart pointer to IWMPPlayer4.
 
 
 
-Il codice seguente illustra il corpo della funzione:
+Il codice seguente illustra il corpo della funzione :
 
 
 ```C++
@@ -76,9 +76,9 @@ HRESULT CMyApp::StartRip()
 
 
 
-Visualizzazione dello stato dell'utente
+Visualizzazione dello stato per l'utente
 
-Quando si esegue la copia da un CD, è possibile recuperare una stringa contenente informazioni sullo stato relative all'operazione di copia. A tale scopo, è necessario innanzitutto recuperare una playlist contenente elementi multimediali che rappresentano le tracce CD chiamando [IWMPCdrom:: Get \_ playlist](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdrom-get_playlist). Come nell'esempio precedente, il codice di esempio seguente funziona con l'indice di unità CD zero. Archivia la playlist recuperata nella variabile membro seguente:
+Quando si esegue la copia da un CD, è possibile recuperare una stringa contenente informazioni sullo stato dell'operazione di copia. A tale scopo, è necessario recuperare prima una playlist contenente elementi multimediali che rappresentano le tracce CD chiamando [IWMPCdrom::get \_ playlist](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdrom-get_playlist). Come nell'esempio precedente, il codice di esempio seguente funziona con l'indice dell'unità CD zero. Archivia la playlist recuperata nella variabile membro seguente:
 
 
 ```C++
@@ -88,7 +88,7 @@ CComPtr<IWMPPlaylist>  m_spCDPlaylist;
 
 
 
-Il codice seguente illustra il corpo della funzione:
+Il codice seguente illustra il corpo della funzione :
 
 
 ```C++
@@ -139,13 +139,13 @@ HRESULT CMyApp::GetCDPlaylist()
 
 
 
-Quindi, gestire l'evento [IWMPEvents:: MediaChange](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-mediachange) . Questo evento si verifica quando viene rilevata una traccia del CD. Il puntatore **IDispatch** passato al gestore eventi punta all'interfaccia **IWMPMedia** per la traccia del CD. Chiamare **QueryInterface** tramite **IDispatch** per recuperare il puntatore a **IWMPMedia**.
+Gestire quindi [l'evento IWMPEvents::MediaChange.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-mediachange) Questo evento si verifica quando viene derubata una traccia CD. Il **puntatore IDispatch** passato al gestore eventi punta all'interfaccia **IWMPMedia** per la traccia CD. Chiamare **QueryInterface** tramite **IDispatch per** recuperare il puntatore a **IWMPMedia.**
 
-Per individuare la traccia del CD da estrarre, confrontare il puntatore **IWMPMedia** dall'evento con gli elementi multimediali nella playlist CD chiamando [IWMPMedia:: Get \_ identico](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-get_isidentical).
+Per rilevare quale traccia CD viene decritto, confrontare il puntatore **IWMPMedia** dell'evento con gli elementi multimediali nella playlist cd chiamando [IWMPMedia::get \_ isIdentical](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-get_isidentical).
 
-Chiamare [IWMPMedia:: GetItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo), passando la stringa "status" come nome dell'elemento. **Lo stato** è un attributo temporaneo impostato da Windows Media Player su elementi multimediali mentre vengono ricopiati dal CD; non è disponibile dalla libreria.
+Chiamare [IWMPMedia::getItemInfo,](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo)passando la stringa "Status" come nome dell'elemento. **Lo** stato è un attributo temporaneo impostato Windows Media Player elementi multimediali mentre vengono decompressi da CD. non è disponibile nella libreria.
 
-Il codice di esempio seguente mostra un gestore dell'evento **MediaChange** .
+Il codice di esempio seguente mostra un **gestore dell'evento MediaChange.**
 
 
 ```C++
@@ -262,15 +262,15 @@ void CMyApp::MediaChange(IDispatch * Item)
 [**Interfaccia IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
 </dt> <dt>
 
-[**Guida al controllo del lettore**](player-control-guide.md)
+[**Guida al controllo del giocatore**](player-control-guide.md)
 </dt> <dt>
 
-[**Ripping mediante l'interfaccia IWMPCdromRip**](ripping-by-using-the-iwmpcdromrip-interface.md)
+[**Ripping tramite l'interfaccia IWMPCdromRip**](ripping-by-using-the-iwmpcdromrip-interface.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

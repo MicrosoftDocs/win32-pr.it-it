@@ -1,32 +1,32 @@
 ---
-description: L'attributo cutpoint specifica quando una transizione passa da un'origine all'altra, se viene eseguito il rendering della transizione come taglia. Il valore è relativo all'inizio della transizione.
+description: L'attributo cutpoint specifica quando una transizione viene tagliata da un'origine a quella successiva, se viene eseguito il rendering della transizione come taglio. Il valore è relativo all'inizio della transizione.
 ms.assetid: bdb0b8cd-025f-4b56-9cd4-f71c58ee809a
 title: Attributo cutpoint
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd516bd67577906a0a06d8da692ffbd7563ce32f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7332d3ef1b608b192b18e0d32bc99bce547058754950847e0a9767eb500a1553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654592"
 ---
 # <a name="cutpoint-attribute"></a>Attributo cutpoint
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `cutpoint` attributo specifica quando una transizione passa da un'origine all'altra, se viene eseguito il rendering della transizione come taglia. Il valore è relativo all'inizio della transizione.
+`cutpoint`L'attributo specifica quando una transizione viene tagliata da un'origine a quella successiva, se viene eseguito il rendering della transizione come taglio. Il valore è relativo all'inizio della transizione.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Deve essere una stringa con formato *hh: mm: SS. FF* , dove *HH* = hours, *mm* = minutes, *SS* = seconds e *FF* = frazioni di secondi. Esempio: 1:04:30.512. È possibile omettere le unità iniziali. Ad esempio, 3:00 (tre minuti) e 45 (45 secondi) sono entrambi validi.
+Deve essere una stringa nel formato *hh:mm:ss.ff,* dove *hh* = ore, mm = *minuti,* *ss* = secondi e *ff* = frazioni di secondi. Esempio: 1:04:30.512. Le unità iniziali possono essere omesse. Ad esempio, 3:00 (tre minuti) e 45 (45 secondi) sono entrambi validi.
 
 ## <a name="applies-to"></a>Si applica a
 
-[**transizione**](transition-element.md)
+[**Transizione**](transition-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 

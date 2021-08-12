@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero di vertici nella mesh, inclusi tutti i nuovi vertici aggiunti come risultato del campionamento spaziale adattivo.
+description: Recupera il numero di vertici nella mesh, inclusi eventuali nuovi vertici aggiunti come risultato del campionamento spaziale adattivo.
 ms.assetid: 066be26c-a2c0-4636-b4b7-c4405a41c307
-title: 'Metodo ID3DXPRTEngine:: GetNumVerts (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::GetNumVerts (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ae125be35ae25424ecc1a396f3d57a763eb419fa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 26017eefec18e5c8cb2c2d9cadf00a45a367670032f3f55bd2b152e2294b0a0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293482"
 ---
-# <a name="id3dxprtenginegetnumverts-method"></a>Metodo ID3DXPRTEngine:: GetNumVerts
+# <a name="id3dxprtenginegetnumverts-method"></a>Metodo ID3DXPRTEngine::GetNumVerts
 
-Recupera il numero di vertici nella mesh, inclusi tutti i nuovi vertici aggiunti come risultato del campionamento spaziale adattivo.
+Recupera il numero di vertici nella mesh, inclusi eventuali nuovi vertici aggiunti come risultato del campionamento spaziale adattivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di vertici nella mesh, inclusi tutti i nuovi vertici aggiunti come risultato del campionamento adattivo.
+Numero di vertici nella mesh, inclusi eventuali nuovi vertici aggiunti come risultato del campionamento adattivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Numero di vertici nella mesh, inclusi tutti i nuovi vertici aggiunti come risult
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

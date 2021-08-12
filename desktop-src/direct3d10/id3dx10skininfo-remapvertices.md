@@ -1,7 +1,7 @@
 ---
-description: Modificare i vertici influenzati da quali ossa.
+description: Modificare i vertici influenzati da quale gruppo.
 ms.assetid: b0d71f3e-9a2d-469d-808b-2fa768cf14b0
-title: 'Metodo ID3DX10SkinInfo:: RemapVertices (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::RemapVertices (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cc51c912794135b456542bb9a8a779601681f393
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d73b9878a43ef876174561f16678f78787b15b88f423ecfb3f1765bd82c84630
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302477"
 ---
-# <a name="id3dx10skininforemapvertices-method"></a>Metodo ID3DX10SkinInfo:: RemapVertices
+# <a name="id3dx10skininforemapvertices-method"></a>Metodo ID3DX10SkinInfo::RemapVertices
 
-Modificare i vertici influenzati da quali ossa.
+Modificare i vertici influenzati da quale gruppo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT RemapVertices(
 
 <dl> <dt>
 
-*NewVertexCount* \[ in\]
+*NewVertexCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Nuovo numero di vertici.
 
 </dd> <dt>
 
-*pVertexRemap* \[ in\]
+*pVertexRemap* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntatore a una matrice di indici dei vertici, che descrivono la modifica del mapping. Si immagini, ad esempio, che SkinInfo contenga alcuni vertici in modo che bone0 sia mappato a V0, bone1 a V1 e bone2 a V2 e che sia specificata una matrice con 2, 1, 0 per pBoneRemap. In questo modo verrà eseguito il mapping di bone0 a V2, da bone1 a V1 e da bone2 a V0.
+Puntatore a una matrice di indici dei vertici, che descrivono il nuovo mapping. Si supponga, ad esempio, che SkinInfo contenga alcuni vertici, in modo che sia stato eseguito il mapping di 0 a v0, da 1 a v1 e da 2 a v2 e che la matrice con 2,1,0 sia specificata per pBoneRemap. In questo modo verrà eseguito il mapping di a v2, da 1 a v1 e da 2 a v0.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntatore a una matrice di indici dei vertici, che descrivono la modifica del ma
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere: E \_ OutOfMemory o e \_ INVALIDARG.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere E \_ OUTOFMEMORY o E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo INapEnforcementClientConnection2 SetInstalledShvs (NapEnforcementClient. h)
-description: Utilizzato dall'agente NAP per impostare i validator di integrità di sistema installati (SHV) nel client.
+title: Metodo SetInstalledShvs INapEnforcementClientConnection2 (NapEnforcementClient.h)
+description: Usato dall'agente protezione accesso alla rete per impostare i validator dell'integrità del sistema installati nel client.
 ms.assetid: 38aa99b9-a15a-414d-91fc-128de8f5a654
 keywords:
-- NAP metodo SetInstalledShvs
-- Metodo SetInstalledShvs NAP, interfaccia INapEnforcementClientConnection2
-- Interfaccia INapEnforcementClientConnection2 NAP, metodo SetInstalledShvs
+- Metodo SetInstalledShvs nap
+- Metodo SetInstalledShvs NAP , interfaccia INapEnforcementClientConnection2
+- Interfaccia INapEnforcementClientConnection2 nap, metodo SetInstalledShvs
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6651cd5248094f82d9faa1862492f82648e94125
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31a95f9ad491b0b5a6354bb5c44a7ff54f64b29ffa715762ab43a7752e3a3ac0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621336"
 ---
-# <a name="inapenforcementclientconnection2setinstalledshvs-method"></a>Metodo INapEnforcementClientConnection2:: SetInstalledShvs
+# <a name="inapenforcementclientconnection2setinstalledshvs-method"></a>Metodo INapEnforcementClientConnection2::SetInstalledShvs
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **SetInstalledShvs** viene utilizzato dall'agente NAP per impostare i validator di integrità del sistema installati (SHV) nel client.
+Il **metodo SetInstalledShvs** viene usato dall'agente protezione accesso alla rete per impostare i validator dell'integrità del sistema installati nel client.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,30 +48,30 @@ HRESULT SetInstalledShvs(
 
 <dl> <dt>
 
-*numero* \[ di in\]
+*count* \[ Pollici\]
 </dt> <dd>
 
-Valore [SystemHealthEntityCount](nap-datatypes.md) che specifica il numero di SHV da installare negli *ID*.
+Valore [SystemHealthEntityCount](nap-datatypes.md) che specifica il numero di shv da installare negli *ID*.
 
 </dd> <dt>
 
-*ID* \[ di in\]
+*ID* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un valore [SystemHealthEntityId](nap-datatypes.md) che contiene un elenco di ID di convalida integrità sistema da installare.
+Puntatore a un [valore SystemHealthEntityId](nap-datatypes.md) che contiene un elenco di ID SHV da installare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                    |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>        | Il metodo è stato eseguito correttamente.<br/>          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *count* è 0 (zero).<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro count* è 0 (zero).<br/> |
 
 
 
@@ -83,10 +83,10 @@ Puntatore a un valore [SystemHealthEntityId](nap-datatypes.md) che contiene un e
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

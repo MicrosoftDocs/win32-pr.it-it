@@ -1,9 +1,9 @@
 ---
-title: Description (InputType)-elemento
+title: Elemento description (InputType)
 description: Descrizione del tipo di input.
 ms.assetid: f7d534d6-3477-4868-ab94-d4713222acf2
 keywords:
-- EventLog-elemento Descrizione
+- Elemento description EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 11ea044efc9e9a0ed54d31ad98614c1c4ba8fa06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b501de2b1232da479006f31974ed44b8c8ba5e595c14840a25d28e265f2ce6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589616"
 ---
-# <a name="description-inputtype-element"></a>Description (InputType)-elemento
+# <a name="description-inputtype-element"></a>Elemento description (InputType)
 
 Descrizione del tipo di input.
 
@@ -30,7 +30,7 @@ Descrizione del tipo di input.
  />
 ```
 
-L'elemento **Description** è definito dal tipo complesso [**InputType**](eventmanifestschema-inputtype-complextype.md) .
+**L'elemento** description è definito dal [**tipo complesso InputType.**](eventmanifestschema-inputtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Description** è definito dal tipo complesso [**InputType**](eventm
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **Description** è definito dal tipo complesso [**InputType**](eventm
 **Elemento padre**
 </dt> <dt>
 
-[**Intype (InputTypeListType)**](eventmanifestschema-intype-inputtypelisttype-element.md)
+[**inType (InputTypeListType)**](eventmanifestschema-intype-inputtypelisttype-element.md)
 </dt> </dl>
 
  

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a0f6c976f64fe64d3ca583351ae5c7c32aa958fd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ea9b91fe926ecbab34fa65fd6c21f852501b6d515acaf8b9aaa5b8971a27c37b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118304505"
 ---
 # <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Funzione D3DXMatrixPerspectiveLH (D3DX10Math.h)
 
-Compila una matrice di proiezione prospettica mancino
+Crea una matrice di proiezione prospettica mancino
 
 ## <a name="syntax"></a>Sintassi
 
@@ -93,11 +93,11 @@ Valore Z del piano di visualizzazione lontano.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a una struttura D3DXMATRIX che è una matrice di proiezione prospettica mancino.
+Puntatore a una struttura D3DXMATRIX che rappresenta una matrice di proiezione prospettica mancino.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della funzione D3DXMatrixPerspectiveLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
+Tutti i parametri della funzione D3DXMatrixPerspectiveLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixPerspectiveLH può essere usata come parametro per un'altra funzione.
 

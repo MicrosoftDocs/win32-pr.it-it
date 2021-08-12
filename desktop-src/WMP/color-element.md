@@ -1,9 +1,9 @@
 ---
-title: Elemento color
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. | Elemento color
+title: Elemento Color
+description: Nota In questa sezione vengono descritte le funzionalità progettate per l'uso da parte dei negozi online. | Elemento Color
 ms.assetid: 36fafe16-b708-4dc1-9325-d4f39265069a
 keywords:
-- Finestra elementi colori Media Player
+- Elemento Color Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c73aa9fe2c7f731e872c4a2e235bf9c0e29ce05
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b8576f94c2d1aa88608f8f40cbfe32c2d1dc315e0e4578ca6554fa5fcde82c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580756"
 ---
-# <a name="color-element"></a>Elemento color
+# <a name="color-element"></a>Elemento Color
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-L'elemento color specifica il colore di sfondo per i pulsanti di spostamento online, il testo del pulsante e la barra delle applicazioni delle funzionalità.
+L'elemento Color specifica il colore di sfondo per i pulsanti di spostamento del negozio online, il testo del pulsante e la barra delle applicazioni Funzionalità.
 
 ``` syntax
 <Color
@@ -71,7 +71,7 @@ Valore di colore RGB esadecimale. Specifica il colore per il testo del pulsante.
 
 Il valore predefinito per **MediaPlayer** è \# 7C9AD6. Il valore predefinito per **MediaPlayerText** è \# FFFFFF.
 
-Assicurarsi di usare i colori che semplificano la lettura del testo del pulsante da parte dell'utente. Ad esempio, è consigliabile evitare di usare il testo del pulsante bianco sui pulsanti di colore chiaro.
+Assicurarsi di usare colori che semplificano la lettura del testo del pulsante da parte dell'utente. Ad esempio, è consigliabile evitare di usare il testo del pulsante bianco sui pulsanti colorati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,10 +87,10 @@ Assicurarsi di usare i colori che semplificano la lettura del testo del pulsante
 
 <dl> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

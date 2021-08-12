@@ -1,7 +1,7 @@
 ---
 description: Il metodo DoSetWindowForeground porta la finestra in primo piano.
 ms.assetid: 5aace88b-14c0-41ce-95a3-0e255ca56ae6
-title: Metodo CBaseWindow. DoSetWindowForeground (Winutil. h)
+title: Metodo CBaseWindow.DoSetWindowForeground (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16a4c8bf41c042c99624289fa26fe252dee62747
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f0d0dd99f5e2c5e5afffb78066a9380c56f744a4ba54b64bf987df15ea58862
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658020"
 ---
-# <a name="cbasewindowdosetwindowforeground-method"></a>CBaseWindow. DoSetWindowForeground, metodo
+# <a name="cbasewindowdosetwindowforeground-method"></a>Metodo CBaseWindow.DoSetWindowForeground
 
 Il `DoSetWindowForeground` metodo porta la finestra in primo piano.
 
@@ -45,7 +45,7 @@ void DoSetWindowForeground(
 *bFocus* 
 </dt> <dd>
 
-Valore booleano che specifica se assegnare lo stato attivo della finestra. Se il valore è **true**, la finestra ottiene lo stato attivo.
+Valore booleano che specifica se assegnare lo stato attivo alla finestra. Se il valore è **TRUE,** la finestra ottiene lo stato attivo.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

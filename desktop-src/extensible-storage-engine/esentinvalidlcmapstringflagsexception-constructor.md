@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidLCMapStringFlagsException'
+description: Altre informazioni sul costruttore EsentInvalidLCMapStringFlagsException
 title: Costruttore EsentInvalidLCMapStringFlagsException
 TOCTitle: 'EsentInvalidLCMapStringFlagsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidLCMapStringFlagsException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4963f1f0bfc4dc81752b8f997fc893e91bd89d9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8373e1a9ec8a151b4472a5af34bbad4612e872136232188e5e6bfb0bc76dddc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118265748"
 ---
 # <a name="esentinvalidlcmapstringflagsexception-constructor"></a>Costruttore EsentInvalidLCMapStringFlagsException
 
 Inizializza una nuova istanza della classe EsentInvalidLCMapStringFlagsException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidLCMapStringFlagsException()
 
 [Membri di EsentInvalidLCMapStringFlagsException](./esentinvalidlcmapstringflagsexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

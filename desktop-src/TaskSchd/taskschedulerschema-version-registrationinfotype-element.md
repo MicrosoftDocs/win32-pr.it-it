@@ -1,9 +1,9 @@
 ---
-title: Version (registrationInfoType)-elemento
+title: Elemento Version (registrationInfoType)
 description: Specifica il numero di versione dell'attività.
 ms.assetid: 0a7223ae-dfc7-4356-aea4-88ff3b3b9148
 keywords:
-- Elemento version Utilità di pianificazione
+- Elemento Version Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb1ae5094ad6f69a61e86da1716169a1b7929e3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63d69b501b12890939f3bd0b146c959278eeaa0d5eb596851a488cef87f0770a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118610426"
 ---
-# <a name="version-registrationinfotype-element"></a>Version (registrationInfoType)-elemento
+# <a name="version-registrationinfotype-element"></a>Elemento Version (registrationInfoType)
 
 Specifica il numero di versione dell'attività.
 
@@ -31,7 +31,7 @@ Specifica il numero di versione dell'attività.
  />
 ```
 
-L'elemento **Version** è definito dal tipo complesso [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) .
+**L'elemento** Version è definito dal tipo complesso [**registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -39,15 +39,15 @@ L'elemento **Version** è definito dal tipo complesso [**registrationInfoType**]
 
 | Elemento                                                                           | Derivato da                                                                         | Descrizione                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica le informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
+| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, la versione di un'attività viene specificata utilizzando la proprietà [**RegistrationInfo. Version**](registrationinfo-version.md) .
+Per lo sviluppo di script, la versione di un'attività viene specificata tramite [**la proprietà RegistrationInfo.Version.**](registrationinfo-version.md)
 
-Per lo sviluppo in C++, la versione di un'attività viene specificata utilizzando la proprietà [**IRegistrationInfo:: Version**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_version) .
+Per lo sviluppo C++, la versione di un'attività viene specificata tramite [**la proprietà IRegistrationInfo::Version.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_version)
 
 ## <a name="examples"></a>Esempio
 
@@ -68,8 +68,8 @@ Il codice XML seguente definisce la versione di un'attività.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -77,7 +77,7 @@ Il codice XML seguente definisce la versione di un'attività.
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

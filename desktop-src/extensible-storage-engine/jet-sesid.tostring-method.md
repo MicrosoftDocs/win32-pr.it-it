@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 05cdfe05cb9aa6dda470f4cfcef4c08240b5fe34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7c88c03b4b9f9bbbc540112589bcad233babbbb549dd19dfc92b229951ef641
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253826"
 ---
 # <a name="jet_sesidtostring-method"></a>JET_SESID. Metodo ToString
 
-Genera una rappresentazione di stringa della struttura.
+Generare una rappresentazione di stringa della struttura .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,17 +52,17 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Struttura sotto forma di stringa.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Struttura come stringa.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_SESID](./jet-sesid-structure.md)
+[JET_SESID struttura](./jet-sesid-structure.md)
 
-[Membri JET_SESID](./jet-sesid-members.md)
+[JET_SESID membri](./jet-sesid-members.md)
 
-[Overload ToString](./jet-sesid.tostring-method2.md)
+[Overload di ToString](./jet-sesid.tostring-method2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

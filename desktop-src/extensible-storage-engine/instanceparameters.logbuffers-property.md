@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. LogBuffers'
-title: Proprietà InstanceParameters. LogBuffers
+description: Altre informazioni sulla proprietà InstanceParameters.LogBuffers
+title: InstanceParameters.LogBuffers - proprietà
 TOCTitle: 'LogBuffers property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.LogBuffers
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.logbuffers(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f58e43ea38792549d384328dc0fd6c5d31616e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60fbf06d13a8252051830c9a91dd348c2a7295a63212b587bfac9905b3b5903a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118255962"
 ---
-# <a name="instanceparameterslogbuffers-property"></a>Proprietà InstanceParameters. LogBuffers
+# <a name="instanceparameterslogbuffers-property"></a>InstanceParameters.LogBuffers - proprietà
 
-Ottiene o imposta la quantità di memoria utilizzata per memorizzare nella cache i record del log prima che vengano scritti nel file di log delle transazioni. L'unità per questo parametro è la dimensione settoriale del volume che include i file di log delle transazioni. La dimensione del settore è quasi sempre di 512 byte, quindi è sicuro presupporre che le dimensioni dell'unità. Questo parametro ha un effetto sulle prestazioni. Quando il motore di database è sottoposto a un carico di aggiornamento intenso, questo buffer può essere pieno molto rapidamente. Una dimensione della cache maggiore per il file di log delle transazioni è essenziale per le prestazioni di aggiornamento ottimali in una condizione di carico elevato. Il valore predefinito è troppo piccolo per questo caso. Non impostare questo parametro su un numero di buffer maggiore (in byte) della metà delle dimensioni di un file di log delle transazioni.
+Ottiene o imposta la quantità di memoria utilizzata per memorizzare nella cache i record del log prima che siano scritti nel file di log delle transazioni. L'unità per questo parametro è la dimensione del settore del volume che contiene i file di log delle transazioni. Le dimensioni del settore sono quasi sempre di 512 byte, pertanto è sicuro presupporre che le dimensioni per l'unità. Questo parametro influisce sulle prestazioni. Quando il motore di database è in condizioni di carico di aggiornamento elevato, questo buffer può diventare pieno molto rapidamente. Una dimensione della cache maggiore per il file di log delle transazioni è fondamentale per prestazioni di aggiornamento ottimali in condizioni di carico così elevate. Il valore predefinito è noto come troppo piccolo per questo caso. Non impostare questo parametro su un numero di buffer maggiore (in byte) rispetto alla metà delle dimensioni di un file di log delle transazioni.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int LogBuffers { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membri di InstanceParameters](./instanceparameters-members.md)
+[Membri instanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Puntatore a una sezione critica utilizzata per serializzare le modifiche di stato.
+description: Puntatore a una sezione critica utilizzata per serializzare le modifiche dello stato.
 ms.assetid: 4fecd9a6-54df-49d7-bf2f-5dcaef919ad7
-title: 'Membro CBaseFilter:: m_pLock (Amfilter. h)'
+title: Membro CBaseFilter::m_pLock (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 40b2f6ece048fc6463fda0a22792d57839d59e55
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3bc8d3b627e6cd8c3ae4821864f6980db5acd251c721bb8841be40e04377ad55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659794"
 ---
-# <a name="cbasefilterm_plock-member"></a>Membro pLock di CBaseFilter:: m \_
+# <a name="cbasefilterm_plock-member"></a>Membro CBaseFilter::m \_ pLock
 
-Puntatore a una sezione critica utilizzata per serializzare le modifiche di stato.
+Puntatore a una sezione critica utilizzata per serializzare le modifiche dello stato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,20 +38,20 @@ CCritSec *m_pLock;
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa variabile viene inizializzata nel costruttore della classe; vedere [**CBaseFilter:: CBaseFilter**](cbasefilter-cbasefilter.md).
+Questa variabile viene inizializzata nel costruttore della classe. vedere [**CBaseFilter::CBaseFilter**](cbasefilter-cbasefilter.md).
 
-Questa sezione critica viene mantenuta durante le transizioni di stato o quando un metodo accede allo stato su più operazioni. La classe base include la sezione Critical nei metodi seguenti:
+Mantenere questa sezione critica durante le transizioni di stato o quando un metodo accede allo stato su più operazioni. La classe base contiene la sezione critica nei metodi seguenti:
 
 -   [**CBaseFilter::FindPin**](cbasefilter-findpin.md)
 -   [**CBaseFilter::GetSyncSource**](cbasefilter-getsyncsource.md)
 -   [**CBaseFilter::JoinFilterGraph**](cbasefilter-joinfiltergraph.md)
--   [**CBaseFilter:: inattivo**](cbasefilter-isactive.md)
+-   [**CBaseFilter::IsActive**](cbasefilter-isactive.md)
 -   [**CBaseFilter::SetSyncSource**](cbasefilter-setsyncsource.md)
 -   [**CBaseFilter::P ause**](cbasefilter-pause.md)
--   [**CBaseFilter:: Run**](cbasefilter-run.md)
--   [**CBaseFilter:: Stop**](cbasefilter-stop.md)
+-   [**CBaseFilter::Run**](cbasefilter-run.md)
+-   [**CBaseFilter::Stop**](cbasefilter-stop.md)
 
-Non mantenere questa sezione critica durante le operazioni di streaming, ovvero durante la distribuzione di campioni a un filtro downstream. Serializzare le operazioni di streaming usando un'altra sezione critica. In caso contrario, può causare un deadlock.
+Non mantenere questa sezione critica durante le operazioni di streaming, ovvero quando si forniscono esempi a un filtro downstream. Serializzare le operazioni di streaming usando una sezione critica diversa. In caso contrario, può causare un deadlock.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Non mantenere questa sezione critica durante le operazioni di streaming, ovvero 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

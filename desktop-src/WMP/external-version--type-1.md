@@ -1,9 +1,9 @@
 ---
-title: External. Version (tipo 1)
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. La proprietà Version recupera la versione corrente di Windows Media Player. | External. Version (tipo 1)
+title: External.version (tipo 1)
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. La proprietà version recupera la versione corrente di Windows Media Player. | External.version (tipo 1)
 ms.assetid: 36120a19-5322-402e-8a48-1a28eb250068
 keywords:
-- External. Version (tipo 1) Windows Media Player
+- External.version (tipo 1) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df2f8062f37672d76182701329f9369019583a12
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee8120c123d7c5fb52cbb5ce94cb8b326b25a41cdc46a85e06fb0d7aa3d3cb13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576822"
 ---
-# <a name="externalversion-type-1"></a>External. Version (tipo 1)
+# <a name="externalversion-type-1"></a>External.version (tipo 1)
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La proprietà **Version** recupera la versione corrente di Windows Media Player.
+La **proprietà** version recupera la versione corrente di Windows Media Player.
 
 ## <a name="syntax"></a>Sintassi
 
-**Window. External. Version**
+**window.external.version**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,7 +44,7 @@ Questa proprietà è una **stringa** di sola lettura.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                  |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -53,7 +53,7 @@ Questa proprietà è una **stringa** di sola lettura.
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 1 online**](external-object-for-type-1-online-stores.md)
+[**Oggetto esterno per i negozi online di tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> </dl>
 
  

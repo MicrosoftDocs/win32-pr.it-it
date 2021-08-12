@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. moveSelectedDown
+title: PLAYLIST.moveSelectedDown
 description: Il metodo moveSelectedDown sposta l'elemento selezionato verso il basso di una posizione nell'elenco.
 ms.assetid: dbd2fa20-8e94-47d8-89e8-9b4677d9b825
 keywords:
-- PLAYLIST. moveSelectedDown Windows Media Player
+- PLAYLIST.moveSelectedDown Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bce3a6fd2f27656684d77288cf5d3a1cdf6c36f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43124fc13044b1802b78d036700af9077ed8893bb9cc4ea0f2ad9df9a117e405
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571140"
 ---
-# <a name="playlistmoveselecteddown"></a>PLAYLIST. moveSelectedDown
+# <a name="playlistmoveselecteddown"></a>PLAYLIST.moveSelectedDown
 
-Il metodo **moveSelectedDown** sposta l'elemento selezionato verso il basso di una posizione nell'elenco.
+Il **metodo moveSelectedDown** sposta l'elemento selezionato verso il basso di una posizione nell'elenco.
 
 ``` syntax
         elementID.moveSelectedDown()
@@ -42,7 +42,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -50,10 +50,10 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. moveSelectedUp**](playlist-moveselectedup.md)
+[**PLAYLIST.moveSelectedUp**](playlist-moveselectedup.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Costruttore JET_SNPROG'
-title: Costruttore JET_SNPROG
+description: 'Altre informazioni su: JET_SNPROG costruttore'
+title: JET_SNPROG costruttore
 TOCTitle: 'JET_SNPROG constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SNPROG.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snprog.jet_snprog(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ab03bd1967cd4702827c606dc0a0629baae6108e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3192c4dbb4f95357f4088aaf5984b7caf951abb96e1404be45a797ae55d4a14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252928"
 ---
-# <a name="jet_snprog-constructor"></a>Costruttore JET_SNPROG
+# <a name="jet_snprog-constructor"></a>JET_SNPROG costruttore
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,8 +54,8 @@ public JET_SNPROG()
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_SNPROG](./jet-snprog-class.md)
+[JET_SNPROG classe](./jet-snprog-class.md)
 
-[Membri JET_SNPROG](./jet-snprog-members.md)
+[JET_SNPROG membri](./jet-snprog-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: Formati di file di immagine supportati dalle funzioni D3DXCreatexxx e D3DX10Savexxx.
 ms.assetid: 39602f3c-5c91-4667-96d0-c3bdba712d88
-title: Enumerazione D3DX10_IMAGE_FILE_FORMAT (D3DX10Tex. h)
+title: D3DX10_IMAGE_FILE_FORMAT enumerazione (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: fba878a40f510cc5e76256161255e01deaa7ee04
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 597f929a2a5f2800b1761fdba377f2ed022460e7585e1a9d0131d3e6e21127e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303496"
 ---
-# <a name="d3dx10_image_file_format-enumeration"></a>\_Enumerazione del \_ formato del file di immagine d3dx10 \_
+# <a name="d3dx10_image_file_format-enumeration"></a>Enumerazione D3DX10 \_ IMAGE \_ FILE \_ FORMAT
 
 Formati di file di immagine supportati dalle funzioni D3DXCreatexxx e D3DX10Savexxx.
 
@@ -46,69 +46,69 @@ typedef enum D3DX10_IMAGE_FILE_FORMAT {
 
 <dl> <dt>
 
-<span id="D3DX10_IFF_BMP"></span><span id="d3dx10_iff_bmp"></span>**D3DX10 \_ IFF ( \_ BMP)**
+<span id="D3DX10_IFF_BMP"></span><span id="d3dx10_iff_bmp"></span>**D3DX10 \_ IFF \_ BMP**
 </dt> <dd>
 
-Formato di file bitmap di Windows (BMP). Contiene un'intestazione che descrive la risoluzione del dispositivo in cui è stato creato il rettangolo di pixel, le dimensioni del rettangolo, le dimensioni della matrice di bit, una tavolozza logica e una matrice di bit che definisce la relazione tra i pixel nell'immagine bitmap e le voci della tavolozza logica. L'estensione del file per questo formato è BMP.
+Windows di file bitmap (BMP). Contiene un'intestazione che descrive la risoluzione del dispositivo in cui è stato creato il rettangolo dei pixel, le dimensioni del rettangolo, le dimensioni della matrice di bit, una tavolozza logica e una matrice di bit che definisce la relazione tra i pixel nell'immagine bitmap e le voci nella tavolozza logica. L'estensione di file per questo formato è .bmp.
 
 </dd> <dt>
 
-<span id="D3DX10_IFF_JPG"></span><span id="d3dx10_iff_jpg"></span>**\_Jpg d3dx10 IFF \_**
+<span id="D3DX10_IFF_JPG"></span><span id="d3dx10_iff_jpg"></span>**D3DX10 \_ IFF \_ JPG**
 </dt> <dd>
 
-Formato file compresso Joint Photographic Experts Group (JPEG). Specifica la compressione di variabili di colori RGB a 24 bit e file di documento di immagine TIFF (grigio a 8 bit Tagged Image File Format). L'estensione di file per questo formato è. jpg.
+Joint Photographic Experts Group file compresso (JPEG). Specifica la compressione variabile del colore RGB a 24 bit e dei file di documento di immagine tiFF (Gray Scale Tagged Image File Format) a 8 bit. L'estensione di file per questo formato è .jpg.
 
 </dd> <dt>
 
-<span id="D3DX10_IFF_PNG"></span><span id="d3dx10_iff_png"></span>**D3DX10 \_ IFF ( \_ png)**
+<span id="D3DX10_IFF_PNG"></span><span id="d3dx10_iff_png"></span>**D3DX10 \_ IFF \_ PNG**
 </dt> <dd>
 
-Formato di file Portable Network Graphics (PNG). Formato bitmap non proprietario con compressione senza perdita di pagina. L'estensione di file per questo formato è. png.
+Portable Network Graphics (PNG). Formato bitmap non proprietario che usa la compressione senza perdita di dati. L'estensione di file per questo formato è .png.
 
 </dd> <dt>
 
-<span id="D3DX10_IFF_DDS"></span><span id="d3dx10_iff_dds"></span>**D3DX10 \_ IFF ( \_ DDS)**
+<span id="D3DX10_IFF_DDS"></span><span id="d3dx10_iff_dds"></span>**D3DX10 \_ IFF \_ DDS**
 </dt> <dd>
 
-Formato di file DirectDraw Surface (DDS). Archivia trame, trame di volumi e mappe di ambienti cubici, con o senza livelli di mipmap e con o senza compressione pixel. L'estensione di file per questo formato è. DDS.
+Formato di file DDS (DirectDraw Surface). Archivia trame, trame di volume e mappe dell'ambiente cubico, con o senza livelli mipmap e con o senza compressione dei pixel. L'estensione di file per questo formato è dds.
 
 </dd> <dt>
 
-<span id="D3DX10_IFF_TIFF"></span><span id="d3dx10_iff_tiff"></span>**\_TIFF d3dx10 IFF \_**
+<span id="D3DX10_IFF_TIFF"></span><span id="d3dx10_iff_tiff"></span>**D3DX10 \_ IFF \_ TIFF**
 </dt> <dd>
 
-Tagged Image File Format (TIFF). Le estensioni di file per questo formato sono TIF e TIFF.
+Tagged Image File Format (TIFF). Le estensioni di file per questo formato sono tif e tiff.
 
 </dd> <dt>
 
-<span id="D3DX10_IFF_GIF"></span><span id="d3dx10_iff_gif"></span>**\_Gif d3dx10 IFF \_**
+<span id="D3DX10_IFF_GIF"></span><span id="d3dx10_iff_gif"></span>**D3DX10 \_ IFF \_ GIF**
 </dt> <dd>
 
-Graphics Interchange Format (GIF). L'estensione di file per questo formato è. gif.
+Graphics Interchange Format (GIF). L'estensione di file per questo formato è .gif.
 
 </dd> <dt>
 
 <span id="D3DX10_IFF_WMP"></span><span id="d3dx10_iff_wmp"></span>**D3DX10 \_ IFF \_ WMP**
 </dt> <dd>
 
-Windows Media Photo Format (WMP). Questo formato è noto anche come HD Photo e JPEG XR. Le estensioni di file per questo formato sono. HDP,. JXR e. wdp.
+Windows Formato foto multimediale (WMP). Questo formato è noto anche come HD Photo e JPEG XR. Le estensioni di file per questo formato sono hdp, jxr e wdp.
 
-Per funzionare correttamente, **d3dx10 \_ IFF \_ WMP** richiede l'inizializzazione di com. Chiamare quindi [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) o [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) nell'applicazione prima di chiamare D3DX.
+Per il corretto funzionamento, **D3DX10 \_ IFF \_ WMP** richiede l'inizializzazione di COM. Chiamare quindi [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) o [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) nell'applicazione prima di chiamare D3DX.
 
 </dd> <dt>
 
-<span id="D3DX10_IFF_FORCE_DWORD"></span><span id="d3dx10_iff_force_dword"></span>**D3DX10 \_ IFF \_ Force \_ DWORD**
+<span id="D3DX10_IFF_FORCE_DWORD"></span><span id="d3dx10_iff_force_dword"></span>**D3DX10 \_ IFF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su alcuni di questi formati, vedere [tipi di bitmap (GDI+)](../gdiplus/-gdiplus-types-of-bitmaps-about.md) .
+Vedere [Tipi di bitmap (GDI+)](../gdiplus/-gdiplus-types-of-bitmaps-about.md) per altre informazioni su alcuni di questi formati.
 
-D3DX10 usa il componente Windows Imaging per implementare la maggior parte dei tipi di file bitmap supportati. Per ulteriori informazioni, vedere [Cenni preliminari sui componenti Windows Imaging](https://msdn.microsoft.com/library/ms737408.aspx) .
+D3DX10 usa il Windows imaging per implementare la maggior parte dei tipi di file bitmap supportati. Per [altre informazioni, Windows panoramica del componente di](https://msdn.microsoft.com/library/ms737408.aspx) imaging.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -116,7 +116,7 @@ D3DX10 usa il componente Windows Imaging per implementare la maggior parte dei t
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Tex.h</dt> </dl> |
 
 
 

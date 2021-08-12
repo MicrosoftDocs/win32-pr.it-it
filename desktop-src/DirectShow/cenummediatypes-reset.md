@@ -1,7 +1,7 @@
 ---
-description: "Il metodo Reset reimposta l'inizio della sequenza di enumerazione. Questo metodo implementa il metodo IEnumMediaTypes:: Reset."
+description: Il metodo Reset reimposta la sequenza di enumerazione all'inizio. Questo metodo implementa il metodo IEnumMediaTypes::Reset.
 ms.assetid: 3a5388d5-eaab-47af-b45e-c75199a22f02
-title: Metodo CEnumMediaTypes. Reset (Amfilter. h)
+title: Metodo CEnumMediaTypes.Reset (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 81451b1a01e873d380da6c341977af0028d5160b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82dd6ff798136f6e97ddfcbcb181ea9fa1cc91d593b762a2b555e958b9073294
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656416"
 ---
-# <a name="cenummediatypesreset-method"></a>Metodo CEnumMediaTypes. Reset
+# <a name="cenummediatypesreset-method"></a>Metodo CEnumMediaTypes.Reset
 
-Il `Reset` metodo reimposta l'inizio della sequenza di enumerazione. Questo metodo implementa il metodo [**IEnumMediaTypes:: Reset**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-reset) .
+Il `Reset` metodo reimposta la sequenza di enumerazione all'inizio. Questo metodo implementa il [**metodo IEnumMediaTypes::Reset.**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-reset)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce \_ OK.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

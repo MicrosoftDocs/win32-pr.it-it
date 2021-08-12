@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDbTimeCorruptedException'
+description: Altre informazioni sul costruttore EsentDbTimeCorruptedException
 title: Costruttore EsentDbTimeCorruptedException
 TOCTitle: 'EsentDbTimeCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDbTimeCorruptedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2904beca8bf9eddb4a9ee4fa170d786a03e51afb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4d63b3ea38410b2d57341e27bacd0a10352c1d1c7e0a17b9240d94976da779c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118271125"
 ---
 # <a name="esentdbtimecorruptedexception-constructor"></a>Costruttore EsentDbTimeCorruptedException
 
 Inizializza una nuova istanza della classe EsentDbTimeCorruptedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDbTimeCorruptedException()
 
 [Membri di EsentDbTimeCorruptedException](./esentdbtimecorruptedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

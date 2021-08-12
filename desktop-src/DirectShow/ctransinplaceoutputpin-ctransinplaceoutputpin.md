@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6b63ee3aa52bc0363bcab90275be4148659b3bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: faf8b2cf0a4f1def8ea89ad04bd013d3867ff5a456e6c8922f72a078d860df92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654779"
 ---
 # <a name="ctransinplaceoutputpinctransinplaceoutputpin-constructor"></a>Costruttore CTransInPlaceOutputPin.CTransInPlaceOutputPin
 
@@ -48,7 +48,7 @@ CTransInPlaceOutputPin(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug dell'oggetto. Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
+Stringa contenente il nome di debug dell'oggetto . Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
@@ -69,13 +69,13 @@ Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito po
 *Pname* 
 </dt> <dd>
 
-Stringa di caratteri wide contenente il nome del pin.
+Stringa di caratteri wide contenente il nome del segnaposto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il *parametro pName* specifica il nome del pin, restituito dal metodo [**IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Tuttavia, la stringa non viene usata per l'identificatore pin. L'identificatore pin per questa classe è sempre "Out". Per altre informazioni, vedere [**QueryId**](ctransforminputpin-queryid.md).
+Il *parametro pName* specifica il nome del pin, restituito dal [**metodo IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Tuttavia, la stringa non viene usata per l'identificatore pin. L'identificatore pin per questa classe è sempre "Out". Per altre informazioni, vedere [**QueryId.**](ctransforminputpin-queryid.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,7 +83,7 @@ Il *parametro pName* specifica il nome del pin, restituito dal metodo [**IPin::Q
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Transip.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

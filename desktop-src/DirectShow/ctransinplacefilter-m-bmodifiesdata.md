@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro bModifiesData m indica se il filtro modifica i dati di esempio ricevuti. Il valore viene impostato nel costruttore CTransInPlaceFilter, ma il valore predefinito è TRUE.
+description: La variabile \_ membro m bModifiesData indica se il filtro modifica i dati di esempio ricevuti. Il valore viene impostato nel costruttore CTransInPlaceFilter, ma il valore predefinito è TRUE.
 ms.assetid: 8ccdba46-315f-4519-b363-6870d1217f98
-title: 'Membro CTransInPlaceFilter:: m_bModifiesData (Transip. h)'
+title: Membro CTransInPlaceFilter::m_bModifiesData (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5bc0d630fd0eda6e9915f8c11f5b15d21b725ce8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7461f7f62a6cbd1fea2ff18f6e8f2e4b73825ea04cb9e3b0a679ee7cf15fef90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654880"
 ---
-# <a name="ctransinplacefilterm_bmodifiesdata-member"></a>Membro bModifiesData di CTransInPlaceFilter:: m \_
+# <a name="ctransinplacefilterm_bmodifiesdata-member"></a>Membro CTransInPlaceFilter::m \_ bModifiesData
 
-La `m_bModifiesData` variabile membro indica se il filtro modifica i dati di esempio ricevuti. Il valore viene impostato nel costruttore **CTransInPlaceFilter** , ma il valore predefinito è **true**.
+La `m_bModifiesData` variabile membro indica se il filtro modifica i dati di esempio ricevuti. Il valore viene impostato nel costruttore **CTransInPlaceFilter,** ma il valore predefinito è **TRUE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ bool m_bModifiesData;
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa variabile influiscono sul modo in cui il filtro negozia l'allocatore. Se il valore è **true**, il filtro non può utilizzare un allocatore di sola lettura per entrambe le connessioni pin.
+Questa variabile influisce sul modo in cui il filtro negozia l'allocatore. Se il valore è **TRUE,** il filtro non può usare un allocatore di sola lettura per entrambe le connessioni pin.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Questa variabile influiscono sul modo in cui il filtro negozia l'allocatore. Se 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

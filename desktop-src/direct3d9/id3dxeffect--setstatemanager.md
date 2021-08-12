@@ -1,7 +1,7 @@
 ---
-description: Impostare il gestore degli Stati dell'effetto.
+description: Impostare il gestore dello stato dell'effetto.
 ms.assetid: 87409687-03f1-4593-ae58-3a8ba08e592b
-title: 'Metodo ID3DXEffect:: SetStateManager (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::SetStateManager (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: bb32e3f668884a6f51bd5c5058a4f27e141f0aa3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 06b6a7404f664e8ec18247b2eda57c5097cd575a3556853bfe8a9eb67705d071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295904"
 ---
-# <a name="id3dxeffectsetstatemanager-method"></a>Metodo ID3DXEffect:: SetStateManager
+# <a name="id3dxeffectsetstatemanager-method"></a>Metodo ID3DXEffect::SetStateManager
 
-Impostare il gestore degli Stati dell'effetto.
+Impostare il gestore dello stato dell'effetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT SetStateManager(
 
 <dl> <dt>
 
-*pManager* \[ in\]
+*pManager* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTSTATEMANAGER**](id3dxeffectstatemanager.md)**
 
-Puntatore al gestore di stato. Vedere [**ID3DXEffectStateManager**](id3dxeffectstatemanager.md).
+Puntatore al gestore dello stato. Vedere [**ID3DXEffectStateManager**](id3dxeffectstatemanager.md).
 
 </dd> </dl>
 
@@ -65,8 +65,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

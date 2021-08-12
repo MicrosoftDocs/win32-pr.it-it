@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get AvgFrameRate calcola e recupera la frequenza dei fotogrammi media conseguita.
+description: Il metodo get \_ AvgFrameRate calcola e recupera la frequenza media dei fotogrammi ottenuta.
 ms.assetid: f36fc020-8c1a-491f-9f55-18265fde8bf8
-title: Metodo CBaseVideoRenderer.get_AvgFrameRate (Renbase. h)
+title: CBaseVideoRenderer.get_AvgFrameRate metodo (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 56d8fff53f3d56676805eca9029670d51210ef2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79aab0677cfd5cba5f6a889519e0c12ed2236d8f82eca28b3fa7b227b941b2b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658784"
 ---
-# <a name="cbasevideorendererget_avgframerate-method"></a>Metodo CBaseVideoRenderer. Get \_ AvgFrameRate
+# <a name="cbasevideorendererget_avgframerate-method"></a>Metodo CBaseVideoRenderer.get \_ AvgFrameRate
 
-Il `get_AvgFrameRate` metodo calcola e recupera la frequenza dei fotogrammi media conseguita.
+Il `get_AvgFrameRate` metodo calcola e recupera la frequenza media dei fotogrammi ottenuta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Puntatore al numero di fotogrammi al secondo dall'inizio del flusso.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro implementa il metodo [**IQualProp:: Get \_ AvgFrameRate**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_avgframerate) .
+Questa funzione membro implementa il [**metodo IQualProp::get \_ AvgFrameRate.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_avgframerate)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro implementa il metodo [**IQualProp:: Get \_ AvgFrameRate**
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

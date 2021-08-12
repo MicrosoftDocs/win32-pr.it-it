@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe077b2c69f603eef8737cbf7ea8c514e9b90c85
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 81f93b4ee22c12495b77c0a71b4a4602c7f93255446874e89a51678598ba8c67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655336"
 ---
 # <a name="cmediacontrolinvoke-method"></a>Metodo CMediaControl.Invoke
 
@@ -52,7 +52,7 @@ HRESULT Invoke(
 *dispidMember* 
 </dt> <dd>
 
-Identificatore del membro. Usare [**CMediaControl::GetIDsOfNames**](cmediacontrol-getidsofnames.md) o la documentazione dell'oggetto per ottenere l'identificatore di invio.
+Identificatore del membro. Usare [**CMediaControl::GetIDsOfNames**](cmediacontrol-getidsofnames.md) o la documentazione dell'oggetto per ottenere l'identificatore dispatch.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Puntatore a una struttura contenente una matrice di argomenti, una matrice di ID
 *pvarResult* 
 </dt> <dd>
 
-Puntatore alla posizione in cui deve essere archiviato il risultato oppure **NULL** se il chiamante non prevede alcun risultato.
+Puntatore alla posizione in cui deve essere archiviato il risultato oppure **NULL se** il chiamante non prevede alcun risultato.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Restituisce DISP \_ E \_ UNKNOWNINTERFACE se *riid* non è IID \_ NULL. Restitui
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

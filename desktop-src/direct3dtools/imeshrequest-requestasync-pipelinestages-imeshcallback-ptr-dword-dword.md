@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 0adc6c06c252174d50323bb91e3f1690f6f7eaee
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 48e994634277b0d7cfd9807db2795eb1cf84c03ec64dfbb7cb6ab1a537639740
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283574"
 ---
 # <a name="span-idvspixengineimeshrequest_requestasync_pipelinestages_imeshcallback_ptr_dword_dwordspanimeshrequestrequestasync-method"></a><span id="vspixengine.imeshrequest_requestasync_pipelinestages_imeshcallback_ptr_dword_dword"></span>Metodo IMeshRequest::RequestAsync
 

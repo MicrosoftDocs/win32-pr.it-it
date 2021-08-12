@@ -1,9 +1,9 @@
 ---
-title: CUSTOMSLIDER. min
-description: L'attributo min specifica o Recupera il valore minimo dell'intervallo definito dal dispositivo di scorrimento personalizzato.
+title: PIÙELIDER.min
+description: L'attributo min specifica o recupera il valore minimo dell'intervallo definito dal dispositivo di scorrimento personalizzato.
 ms.assetid: a152cf9f-7383-47da-a9b2-dedd13749964
 keywords:
-- Media Player CUSTOMSLIDER. min Windows
+- WINDOWS MEDIA PLAYER
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95fa28e010dc969a041fbe8e2e16a58f4729df4a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f324fd70aa996c593ce9a89365341919e10e9407c20326f8f9a8f9300c0dd7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579729"
 ---
-# <a name="customslidermin"></a>CUSTOMSLIDER. min
+# <a name="customslidermin"></a>PIÙELIDER.min
 
-L'attributo **min** specifica o Recupera il valore minimo dell'intervallo definito dal dispositivo di scorrimento personalizzato.
+**L'attributo min** specifica o recupera il valore minimo dell'intervallo definito dal dispositivo di scorrimento personalizzato.
 
 ``` syntax
         elementID.min
@@ -29,15 +29,15 @@ L'attributo **min** specifica o Recupera il valore minimo dell'intervallo defini
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**float**) con un valore predefinito pari a zero.
+Questo attributo è un numero di **lettura/scrittura** (**float**) con un valore predefinito pari a zero.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore **minimo** deve essere minore di **Max**.
+Il valore di **min** deve essere minore di **max.**
 
 ## <a name="examples"></a>Esempio
 
-Vedere l'attributo [dimensione positionImage](customslider-positionimage.md) per un esempio che illustra come vengono usati gli attributi dell'elemento **CUSTOMSLIDER** .
+Vedere [l'attributo positionImage](customslider-positionimage.md) per un esempio che illustra come vengono usati gli attributi dell'elementoLIDER. 
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Vedere l'attributo [dimensione positionImage](customslider-positionimage.md) per
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -53,10 +53,10 @@ Vedere l'attributo [dimensione positionImage](customslider-positionimage.md) per
 
 <dl> <dt>
 
-[**Elemento CUSTOMSLIDER**](customslider-element.md)
+[**Elemento INSODELIDER**](customslider-element.md)
 </dt> <dt>
 
-[**CUSTOMSLIDER. max**](customslider-max.md)
+[**PIÙELIDER.max**](customslider-max.md)
 </dt> </dl>
 
  

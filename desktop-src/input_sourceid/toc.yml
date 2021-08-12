@@ -1,7 +1,7 @@
-- name: Identificazione origine input
+- name: Identificazione dell'origine di input
   href: input-source-identification-portal.md
   items:
-    - name: Riferimento identificazione origine input
+    - name: Informazioni di riferimento per l'identificazione dell'origine di input
       href: input-source-identification-reference.md
       items:
         - name: Enumerazioni

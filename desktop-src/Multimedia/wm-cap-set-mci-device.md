@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SET_MCI_DEVICE (VFW. h)
-description: Il \_ messaggio del dispositivo WM Cap \_ set \_ MCI \_ specifica il nome del dispositivo video MCI da usare per l'acquisizione dei dati. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capSetMCIDeviceName.
+title: WM_CAP_SET_MCI_DEVICE messaggio (Vfw.h)
+description: Il messaggio WM CAP SET MCI DEVICE specifica il nome del dispositivo video MCI da usare per \_ \_ acquisire i \_ \_ dati. È possibile inviare questo messaggio in modo esplicito o usando la macro capSetMCIDeviceName.
 ms.assetid: 83fdf567-ceb2-45aa-8529-433a5c64ac0a
 keywords:
-- WM_CAP_SET_MCI_DEVICE messaggi multimediali di Windows
+- WM_CAP_SET_MCI_DEVICE messaggio Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86187f3357bf72866e05b497332454c10bcd2fd3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f2df82b171e2353b51198fcd4a908abb586d981417c3fd14e5a81731975012aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622180"
 ---
-# <a name="wm_cap_set_mci_device-message"></a>Messaggio di set di WM \_ Cap \_ set \_ MCI \_
+# <a name="wm_cap_set_mci_device-message"></a>Messaggio \_ WM CAP SET \_ \_ MCI \_ DEVICE
 
-Il messaggio del **\_ dispositivo WM Cap \_ set \_ MCI \_** specifica il nome del dispositivo video MCI da usare per l'acquisizione dei dati. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capSetMCIDeviceName**](/windows/desktop/api/Vfw/nf-vfw-capsetmcidevicename) .
+Il **messaggio WM CAP SET \_ \_ \_ MCI \_ DEVICE** specifica il nome del dispositivo video MCI da usare per acquisire i dati. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capSetMCIDeviceName.**](/windows/desktop/api/Vfw/nf-vfw-capsetmcidevicename)
 
 
 ```C++
@@ -38,20 +38,20 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 
 <dl> <dt>
 
-<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
+<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*Szname*
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che contiene il nome del dispositivo.
+Puntatore a una stringa con terminazione Null contenente il nome del dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio archivia il nome del dispositivo MCI in una struttura interna. Non apre né accede al dispositivo. Il nome del dispositivo predefinito è **null**.
+Questo messaggio archivia il nome del dispositivo MCI in una struttura interna. Non si apre né si accede al dispositivo. Il nome del dispositivo predefinito è **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Questo messaggio archivia il nome del dispositivo MCI in una struttura interna. 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

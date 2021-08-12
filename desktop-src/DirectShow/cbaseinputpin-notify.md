@@ -1,5 +1,5 @@
 ---
-description: 'Metodo CBaseInputPin.Notify: il metodo Notify notifica al pin che è richiesta una modifica di qualità. Questo metodo implementa il metodo IQualityControl::Notify.'
+description: 'Metodo CBaseInputPin.Notify: il metodo Notify notifica al pin che è richiesta una modifica della qualità. Questo metodo implementa il metodo IQualityControl::Notify.'
 ms.assetid: 76124321-0d2d-4fee-a08a-4db23078e8df
 title: Metodo CBaseInputPin.Notify (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 610888193762618d427a0329a27d3019bd625e69
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2067c7698c1af7d7295cffed552ab4f58d0402594dd13bfd82224c81652b9aff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659164"
 ---
 # <a name="cbaseinputpinnotify-method"></a>Metodo CBaseInputPin.Notify
 
@@ -53,7 +53,7 @@ Puntatore al filtro che invia il messaggio di controllo qualità.
 *D* 
 </dt> <dd>
 
-[**Struttura**](/windows/win32/api/strmif/ns-strmif-quality) di qualità che contiene il messaggio di controllo qualità.
+[**Struttura**](/windows/win32/api/strmif/ns-strmif-quality) Quality che contiene il messaggio di controllo qualità.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-I filtri passano in genere messaggi di controllo della qualità a un pin di output upstream, non a un pin di input. Pertanto, questo metodo restituisce S \_ OK senza eseguire alcuna operazione.
+I filtri passano in genere i messaggi di controllo di qualità a un pin di output upstream, non a un pin di input. Pertanto, questo metodo restituisce S \_ OK senza eseguire alcuna operazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ I filtri passano in genere messaggi di controllo della qualità a un pin di outp
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

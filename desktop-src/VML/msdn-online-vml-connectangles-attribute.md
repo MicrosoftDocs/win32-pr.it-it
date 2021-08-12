@@ -1,24 +1,24 @@
 ---
-title: Attributo ConnectAngles di la
-description: Attributo ConnectAngles di la
+title: Attributo VML ConnectAngles
+description: Attributo VML ConnectAngles
 ms.assetid: 282c2f75-8f1d-464d-925e-e3f7ad211659
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4fa87dee90740161dbb7c150dc93d20c366cb4c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e1b37e21eb7b048a39fc497e59890e35a7ebd52b1451ff860da201017cd0b7e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118601964"
 ---
-# <a name="vml-connectangles-attribute"></a>Attributo ConnectAngles di la
+# <a name="vml-connectangles-attribute"></a>Attributo VML ConnectAngles
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Specifica l'angolo che le curve si connetteranno ai punti di connessione di una forma. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,16 +26,16 @@ Specifica l'angolo che le curve si connetteranno ai punti di connessione di una 
 
 [Percorso](msdn-online-vml-path-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:connectangles = " *Expression* " >
+<v: *elemento* o:connectangles=" *espressione* ">
 
 **Osservazioni:**
 
-Gli angoli di connessione sono definiti da una stringa costituita da valori di angolo delimitati da virgole. Il valore predefinito è una stringa **null** .
+Gli angoli di connessione sono definiti da una stringa costituita da valori angolari delimitati da virgole. Il valore predefinito è una **stringa Null.**
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -1,21 +1,21 @@
 ---
 title: Recupero e impostazione delle proprietà di configurazione di un canale
-description: Un canale viene inizialmente configurato nel manifesto (vedere Definizione dei canali). Per ottenere le proprietà configurabili di un canale, chiamare la funzione EvtOpenChannelConfig per ottenere un handle per il canale.
+description: Un canale viene configurato inizialmente nel manifesto (vedere Definizione dei canali). Per ottenere le proprietà configurabili di un canale, chiamare la funzione EvtOpenChannelConfig per ottenere un handle per il canale.
 ms.assetid: 4ee44dae-b390-4d98-bcef-836b53b04860
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52b28e96e45a8b061fac2914b2ef79847cf25a6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82f77271e811a2f16599ac9fe94ce4c984564b2b8af559dba46a391d7759060d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588131"
 ---
 # <a name="getting-and-setting-a-channels-configuration-properties"></a>Recupero e impostazione delle proprietà di configurazione di un canale
 
-Un canale viene inizialmente configurato nel manifesto (vedere [definizione dei canali](defining-channels.md)). Per ottenere le proprietà configurabili di un canale, chiamare la funzione [**EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) per ottenere un handle per il canale. Chiamare quindi la funzione [**EvtGetChannelConfigProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgetchannelconfigproperty) per ottenere il valore di una proprietà configurabile del canale. Per un elenco di proprietà configurabili, vedere l'enumerazione dell' [**ID della proprietà di \_ configurazione del canale \_ \_ \_ evt**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) . Il nome, il valore e le proprietà della stringa del messaggio del canale sono considerati metadati e non possono essere recuperati tramite la funzione **EvtGetChannelConfigProperty** . Per informazioni dettagliate su come ottenere queste proprietà, vedere [recupero dei metadati di un provider](getting-a-provider-s-metadata-.md).
+Un canale viene configurato inizialmente nel manifesto (vedere [Definizione dei canali](defining-channels.md)). Per ottenere le proprietà configurabili di un canale, chiamare la [**funzione EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) per ottenere un handle per il canale. Chiamare quindi la [**funzione EvtGetChannelConfigProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgetchannelconfigproperty) per ottenere il valore di una proprietà configurabile del canale. Per un elenco delle proprietà configurabili, vedere [**l'enumerazione EVT \_ CHANNEL CONFIG PROPERTY \_ \_ \_ ID**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) . Le proprietà nome, valore e stringa di messaggio del canale sono considerate metadati e non possono essere recuperate usando la **funzione EvtGetChannelConfigProperty.** Per informazioni dettagliate su come ottenere queste proprietà, vedere [Recupero dei metadati di un provider.](getting-a-provider-s-metadata-.md)
 
-È possibile configurare molte delle proprietà del canale in fase di esecuzione. L'enumerazione dell' [**ID della proprietà di \_ configurazione del canale \_ \_ \_ evt**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) identifica le proprietà che non è possibile impostare. Per configurare le proprietà del canale, l'utente deve appartenere al gruppo Administrators ed essere in esecuzione con privilegi elevati. Per impostare le proprietà configurabili di un canale, chiamare la funzione [**EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) per ottenere un handle per il canale. Chiamare quindi la funzione [**EvtSetChannelConfigProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtsetchannelconfigproperty) per impostare il valore di una proprietà configurabile. Dopo aver impostato le proprietà configurabili, chiamare la funzione [**EvtSaveChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtsavechannelconfig) per salvare e applicare le modifiche.
+È possibile configurare molte delle proprietà del canale in fase di esecuzione. [**L'enumerazione EVT \_ CHANNEL CONFIG PROPERTY \_ \_ \_ ID**](/windows/desktop/api/WinEvt/ne-winevt-evt_channel_config_property_id) identifica le proprietà che non è possibile impostare. Per configurare le proprietà del canale, l'utente deve essere nel gruppo administrators ed essere in esecuzione con privilegi elevati. Per impostare le proprietà configurabili di un canale, chiamare la [**funzione EvtOpenChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtopenchannelconfig) per ottenere un handle per il canale. Chiamare quindi la [**funzione EvtSetChannelConfigProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtsetchannelconfigproperty) per impostare il valore di una proprietà configurabile. Dopo aver impostato le proprietà configurabili, chiamare la [**funzione EvtSaveChannelConfig**](/windows/desktop/api/WinEvt/nf-winevt-evtsavechannelconfig) per salvare e applicare le modifiche.
 
 Vedere le sezioni seguenti per esempi che illustrano come ottenere e impostare le proprietà del canale:
 
@@ -422,9 +422,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

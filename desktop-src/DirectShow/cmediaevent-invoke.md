@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ea812d0c7629b98d90f3f7e535d229c707452b23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 37fadefe3163ed4211b8112ec17cc1cfb3fb3625b4aba207db06a25de3e27b17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655225"
 ---
 # <a name="cmediaeventinvoke-method"></a>Metodo CMediaEvent.Invoke
 
@@ -107,7 +107,7 @@ Puntatore all'indice del primo argomento, all'interno della matrice **rgvarg** d
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce DISP \_ E \_ UNKNOWNINTERFACE se *riid* non è IID \_ NULL. Restituisce uno dei codici di errore da [**CMediaEvent::GetTypeInfo**](cmediaevent-gettypeinfo.md) se la chiamata non riesce. In caso contrario, **restituisce il valore HRESULT** dalla chiamata a **IDispatch::Invoke.**
+Restituisce DISP \_ E \_ UNKNOWNINTERFACE se *riid* non è IID \_ NULL. Restituisce uno dei codici di errore da [**CMediaEvent::GetTypeInfo**](cmediaevent-gettypeinfo.md) se la chiamata ha esito negativo. In caso contrario, restituisce **HRESULT** dalla chiamata a **IDispatch::Invoke**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,7 +115,7 @@ Restituisce DISP \_ E \_ UNKNOWNINTERFACE se *riid* non è IID \_ NULL. Restitui
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

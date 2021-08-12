@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 50fb09a4619be9c3dbcff98bc939d6f99ad33bd4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 62c70524fd1b729473c09c0ff0cb6b1c764e356069a29eb40e9cf52dfa434127
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297684"
 ---
 # <a name="d3dxvec3transformnormal-function-d3dx9mathh"></a>Funzione D3DXVec3TransformNormal (D3dx9math.h)
 

@@ -1,22 +1,22 @@
 ---
-title: Proprietà ConnectionBarShowRestoreButton di IMsRdpClientAdvancedSettings3
+title: Proprietà ConnectionBarShowRestoreButton IMsRdpClientAdvancedSettings3
 description: Specifica se visualizzare il pulsante Ripristina sulla barra delle connessioni.
 ms.assetid: a56c3c05-d253-404a-bf49-9c1d804802e0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ConnectionBarShowRestoreButton
-- Servizi Desktop remoto proprietà ConnectionBarShowRestoreButton, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà ConnectionBarShowRestoreButton
-- Servizi Desktop remoto proprietà ConnectionBarShowRestoreButton, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà ConnectionBarShowRestoreButton
-- Servizi Desktop remoto proprietà ConnectionBarShowRestoreButton, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà ConnectionBarShowRestoreButton
-- Servizi Desktop remoto proprietà ConnectionBarShowRestoreButton, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà ConnectionBarShowRestoreButton
-- Servizi Desktop remoto proprietà ConnectionBarShowRestoreButton, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà ConnectionBarShowRestoreButton
-- Servizi Desktop remoto proprietà ConnectionBarShowRestoreButton, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà ConnectionBarShowRestoreButton
+- Proprietà ConnectionBarShowRestoreButton Servizi Desktop remoto
+- Proprietà ConnectionBarShowRestoreButton Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà ConnectionBarShowRestoreButton
+- Proprietà ConnectionBarShowRestoreButton Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà ConnectionBarShowRestoreButton
+- Proprietà ConnectionBarShowRestoreButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà ConnectionBarShowRestoreButton
+- Proprietà ConnectionBarShowRestoreButton Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà ConnectionBarShowRestoreButton
+- Proprietà ConnectionBarShowRestoreButton Servizi Desktop remoto interfaccia , IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà ConnectionBarShowRestoreButton
+- Proprietà ConnectionBarShowRestoreButton Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà ConnectionBarShowRestoreButton
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ae83ecde31461eff9c553782b8bfa3ae760fb54
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81bcdefbd7cc41a0a1771705482cc67da028bf6dd349e473c02249284dcfcfe3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608420"
 ---
-# <a name="imsrdpclientadvancedsettings3connectionbarshowrestorebutton-property"></a>Proprietà IMsRdpClientAdvancedSettings3:: ConnectionBarShowRestoreButton
+# <a name="imsrdpclientadvancedsettings3connectionbarshowrestorebutton-property"></a>Proprietà IMsRdpClientAdvancedSettings3::ConnectionBarShowRestoreButton
 
-Specifica se visualizzare il pulsante **Ripristina** sulla barra delle connessioni.
+Specifica se visualizzare il **pulsante** Ripristina sulla barra delle connessioni.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -74,17 +74,17 @@ HRESULT get_ConnectionBarShowRestoreButton(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare su **Variant \_ true** per visualizzare il pulsante **Ripristina** e su **Variant \_ false** per disabilitare la visualizzazione del pulsante **Ripristina** .
+Impostare su **VARIANT \_ TRUE per** visualizzare il **pulsante** Ripristina e su **VARIANT \_ FALSE** per disabilitare la visualizzazione **del pulsante** Ripristina.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Impossibile impostare questa proprietà quando il controllo è connesso.
+Questa proprietà non può essere impostata mentre il controllo è connesso.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                   |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings3 è definito come 19cd856b-C542-4c53-Acee-f127e3be1a59<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings3 è definito come 19cd856b-c542-4c53-acee-f127e3be1a59<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_SIGNATURE'
-title: Struttura JET_SIGNATURE
+description: 'Altre informazioni su: JET_SIGNATURE struttura'
+title: JET_SIGNATURE struttura
 TOCTitle: JET_SIGNATURE structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SIGNATURE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_signature(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f5c8ce12b23194aea2a45c273e0207f88faad6f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0f9c6508f3901d9755b3a244f88eb948959164918278f067ee6f6d25fefd3e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253415"
 ---
-# <a name="jet_signature-structure"></a>Struttura JET_SIGNATURE
+# <a name="jet_signature-structure"></a>JET_SIGNATURE struttura
 
-La struttura JET_SIGNATURE contiene informazioni che identificano in modo univoco una sequenza di database o logfile.
+La JET_SIGNATURE contiene informazioni che identificano in modo univoco un database o una sequenza di file di log.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,6 +62,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE membri](./jet-signature-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

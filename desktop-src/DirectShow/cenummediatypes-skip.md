@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo Skip ignora un numero specificato di tipi di supporti. Questo metodo implementa il metodo IEnumMediaTypes:: Skip.'
+description: Il metodo Skip ignora un numero specificato di tipi di supporti. Questo metodo implementa il metodo IEnumMediaTypes::Skip.
 ms.assetid: a01fb084-b227-4ca6-b5ca-c57d56e8b1aa
-title: Metodo CEnumMediaTypes. Skip (Amfilter. h)
+title: Metodo CEnumMediaTypes.Skip (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6e09217bc45b866cfb08aa2ab0cae5a7a28815fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a9930472b5c8a2873ca0a7f3280565bd41ac6b0aac7e1e33303464d3a2c1ca3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656446"
 ---
-# <a name="cenummediatypesskip-method"></a>Metodo CEnumMediaTypes. Skip
+# <a name="cenummediatypesskip-method"></a>Metodo CEnumMediaTypes.Skip
 
-Il `Skip` metodo ignora un numero specificato di tipi di supporti. Questo metodo implementa il metodo [**IEnumMediaTypes:: Skip**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-skip) .
+Il `Skip` metodo ignora un numero specificato di tipi di supporti. Questo metodo implementa il [**metodo IEnumMediaTypes::Skip.**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-skip)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT Skip(
 *cMediaTypes* 
 </dt> <dd>
 
-Numero di tipi di supporto da ignorare.
+Numero di tipi di supporti da ignorare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                                                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>                    | Ignorato oltre la fine della sequenza.<br/>                                    |
-| <dl> <dt>**\_OK**</dt> </dl>                       | Esito positivo.<br/>                                                                 |
-| <dl> <dt>**non \_ \_ \_ \_ sincronizzato con VFW E enum \_**</dt> </dl> | Lo stato del PIN è stato modificato ed è ora incoerente con l'enumeratore.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                    | Ignorato oltre la fine della sequenza.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Operazione completata.<br/>                                                                 |
+| <dl> <dt>**ENUMERAZIONE VFW \_ \_ NON \_ \_ \_ SINCRONIZZATA**</dt> </dl> | Lo stato del pin è stato modificato ed è ora incoerente con l'enumeratore.<br/> |
 
 
 
@@ -71,8 +71,8 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

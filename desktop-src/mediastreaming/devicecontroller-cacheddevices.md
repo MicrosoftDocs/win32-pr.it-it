@@ -1,11 +1,11 @@
 ---
-title: DeviceController. CachedDevices, metodo
-description: Recupera una raccolta di puntatori dell'interfaccia IBasicDevice che rappresenta la visualizzazione memorizzata nella cache di tutti i dispositivi DLNA individuabili. | DeviceController. CachedDevices, metodo
+title: Metodo DeviceController.CachedDevices
+description: Recupera una raccolta di puntatori all'interfaccia IBasicDevice che rappresenta la visualizzazione memorizzata nella cache di tutti i dispositivi DLNA individuabili. | Metodo DeviceController.CachedDevices
 ms.assetid: 89CFA4BB-EDA8-461A-A3A0-A84CBDA99EA4
 keywords:
-- API di streaming multimediale del metodo CachedDevices
-- API di streaming multimediale del metodo CachedDevices, interfaccia DeviceController
-- API di streaming multimediale dell'interfaccia DeviceController, metodo CachedDevices
+- Metodo CachedDevices API Streaming multimediale
+- Metodo CachedDevices API Streaming multimediale, interfaccia DeviceController
+- Interfaccia DeviceController API Streaming multimediale, metodo CachedDevices
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c0bb39e03a9788e0c444f682b61d39fc1c65781b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 86e2c4209649450fb3a8df46cde151a0b9899cd26e58bfc0b35fd7ac6e7d02b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236361"
 ---
-# <a name="devicecontrollercacheddevices-method"></a>DeviceController. CachedDevices, metodo
+# <a name="devicecontrollercacheddevices-method"></a>Metodo DeviceController.CachedDevices
 
-Recupera una raccolta di puntatori dell'interfaccia [**IBasicDevice**](ibasicdevice.md) che rappresenta la visualizzazione memorizzata nella cache di tutti i dispositivi DLNA individuabili.
+Recupera una raccolta di [**puntatori all'interfaccia IBasicDevice**](ibasicdevice.md) che rappresenta la visualizzazione memorizzata nella cache di tutti i dispositivi DLNA individuabili.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ HRESULT CachedDevices(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Riceve una raccolta enumerabile di puntatori dell'interfaccia [**IBasicDevice**](ibasicdevice.md) .
+Riceve una raccolta enumerabile di puntatori [**a interfaccia IBasicDevice.**](ibasicdevice.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

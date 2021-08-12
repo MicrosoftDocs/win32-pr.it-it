@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: d57f4d1b7b0377518f55a50e08606c02f68339d6
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 255167085390629387819696a02729d5e7f92cd6468378219c14b55092af84b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252028"
 ---
 # <a name="jet_tableidtostring-method-overload-list"></a>JET_TABLEID. Elenco di overload del metodo ToString
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -40,11 +40,11 @@ Includi membri ereditati
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="hh596766(v=exchg.10).md">ToString()</a></td>
-<td>Genera una rappresentazione di stringa della struttura. Esegue l'override di <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>.</td>
+<td>Generare una rappresentazione di stringa della struttura . Esegue l'override <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">di ValueType.ToString()</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh557544(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh557544(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Formatta il valore dell'istanza corrente usando il formato specificato.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID struttura](./jet-tableid-structure.md)
 
-[Membri JET_TABLEID](./jet-tableid-members.md)
+[JET_TABLEID membri](./jet-tableid-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

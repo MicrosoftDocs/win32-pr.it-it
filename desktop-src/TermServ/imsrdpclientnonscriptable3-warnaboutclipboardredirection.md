@@ -1,26 +1,26 @@
 ---
 title: Proprietà WarnAboutClipboardRedirection di IMsRdpClientNonScriptable3
-description: Specifica o recupera un valore che indica se deve essere visualizzata la finestra di dialogo avviso di sicurezza per avvisare gli utenti del reindirizzamento degli Appunti.
+description: Specifica o recupera un valore che indica se la finestra di dialogo di avviso di sicurezza deve essere visualizzata per avvisare gli utenti del reindirizzamento degli Appunti.
 ms.assetid: 2f3ca58b-3c89-4251-ae15-2c0aaf308893
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, oggetto MsRdpClient5
-- Oggetto MsRdpClient5 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, oggetto MsRdpClient7
-- Oggetto MsRdpClient7 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, oggetto MsRdpClient8
-- Oggetto MsRdpClient8 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
-- Servizi Desktop remoto proprietà WarnAboutClipboardRedirection, oggetto MsRdpClient9
-- Oggetto MsRdpClient9 Servizi Desktop remoto, proprietà WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto , oggetto MsRdpClient5
+- Oggetto MsRdpClient5 Servizi Desktop remoto proprietà , WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà , WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà , WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà , WarnAboutClipboardRedirection
+- Proprietà WarnAboutClipboardRedirection Servizi Desktop remoto , oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà , WarnAboutClipboardRedirection
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8da6fa2f7fb36a110666c8b14a818264813d816
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3f9b0865b8d7e1b374cd0f8f7ebc47a817f8ca79e0156a57f24971456733532
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607670"
 ---
-# <a name="imsrdpclientnonscriptable3warnaboutclipboardredirection-property"></a>Proprietà IMsRdpClientNonScriptable3:: WarnAboutClipboardRedirection
+# <a name="imsrdpclientnonscriptable3warnaboutclipboardredirection-property"></a>Proprietà IMsRdpClientNonScriptable3::WarnAboutClipboardRedirection
 
-Specifica o recupera un valore che indica se deve essere visualizzata la finestra di dialogo avviso di sicurezza per avvisare gli utenti del reindirizzamento degli Appunti.
+Specifica o recupera un valore che indica se la finestra di dialogo di avviso di sicurezza deve essere visualizzata per avvisare gli utenti del reindirizzamento degli Appunti.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -74,7 +74,7 @@ HRESULT get_WarnAboutClipboardRedirection(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Specifica se deve essere visualizzata la finestra di dialogo avviso di sicurezza per avvisare gli utenti sul reindirizzamento degli Appunti.
+Specifica se la finestra di dialogo di avviso di sicurezza deve essere visualizzata per avvisare gli utenti del reindirizzamento degli Appunti.
 
 ## <a name="requirements"></a>Requisiti
 

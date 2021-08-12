@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_SPACEHINTS. grbit'
-title: Proprietà JET_SPACEHINTS. grbit
+description: 'Altre informazioni su: JET_SPACEHINTS.grbit'
+title: JET_SPACEHINTS.grbit
 TOCTitle: 'grbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS.grbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_spacehints.grbit(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 252b1cda9de09e1739e074bddd41fc23c4043433
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4e9f52675cee097512af1e8581eec297f7a7d6e0533370f7a0d7cc503c36dfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252083"
 ---
-# <a name="jet_spacehintsgrbit-property"></a>Proprietà JET_SPACEHINTS. grbit
+# <a name="jet_spacehintsgrbit-property"></a>JET_SPACEHINTS.grbit
 
-Ottiene o imposta le opzioni degli hint di spazio.
+Ottiene o imposta le opzioni dei suggerimenti per lo spazio.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public SpaceHintsGrbit grbit { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft. ISAM. esent. Interop. SpaceHintsGrbit](./spacehintsgrbit-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.SpaceHintsGrbit](./spacehintsgrbit-enumeration.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_SPACEHINTS](./jet-spacehints-class.md)
+[JET_SPACEHINTS classe](./jet-spacehints-class.md)
 
-[Membri JET_SPACEHINTS](./jet-spacehints-members.md)
+[JET_SPACEHINTS membri](./jet-spacehints-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

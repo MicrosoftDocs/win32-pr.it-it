@@ -1,7 +1,7 @@
 ---
 description: Imposta un vettore.
 ms.assetid: 7dae88fc-d5d3-4751-859a-fa1bde4d0ce8
-title: 'Metodo ID3DXBaseEffect:: sevector (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetVector (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 5d6fccc24410e06dd9bb4e6b0b1f1c36b03dd355
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 34c61a4b6b3dc1882a1d5d0598b249b51618574993e3439d791482051cc39301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296264"
 ---
-# <a name="id3dxbaseeffectsetvector-method"></a>Metodo ID3DXBaseEffect:: sevector
+# <a name="id3dxbaseeffectsetvector-method"></a>Metodo ID3DXBaseEffect::SetVector
 
 Imposta un vettore.
 
@@ -41,16 +41,16 @@ HRESULT SetVector(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pVector* \[ in\]
+*pVector* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Se il vettore di destinazione è inferiore al vettore di origine, i componenti aggiuntivi del vettore di origine verranno ignorati.
+Se il vettore di destinazione è più piccolo del vettore di origine, i componenti aggiuntivi del vettore di origine verranno ignorati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Se il vettore di destinazione è inferiore al vettore di origine, i componenti a
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -87,7 +87,7 @@ Se il vettore di destinazione è inferiore al vettore di origine, i componenti a
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**Getvector**](id3dxbaseeffect--getvector.md)
+[**GetVector**](id3dxbaseeffect--getvector.md)
 </dt> </dl>
 
  

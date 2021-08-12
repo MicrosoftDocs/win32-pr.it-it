@@ -4,16 +4,16 @@ ms.assetid: 5b798477-9b36-4f59-b9cc-2938b5e4009f
 title: Interfacce deprecate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5584d06c5976899de6a65660d7eca838a3b22cbc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 383b2d8acdef9028020a74420655454b3da4b954ed279d30e3854878a39659a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653808"
 ---
 # <a name="deprecated-interfaces"></a>Interfacce deprecate
 
-Le seguenti interfacce DirectShow sono state deprecate. Sono ancora supportati per la compatibilità con le versioni precedenti delle applicazioni esistenti, ma le nuove applicazioni non devono utilizzarle.
+Le interfacce DirectShow seguenti sono deprecate. Sono ancora supportati per la compatibilità con le versioni precedenti delle applicazioni esistenti, ma le nuove applicazioni non devono usarle.
 
 -   [**IAMAnalogVideoEncoder**](/windows/desktop/api/strmif/nn-strmif-iamanalogvideoencoder)
 -   [**IAMDevMemoryAllocator**](/windows/desktop/api/strmif/nn-strmif-iamdevmemoryallocator)

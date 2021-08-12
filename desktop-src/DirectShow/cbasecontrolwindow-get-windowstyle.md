@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get WindowStyle recupera gli stili della finestra standard.
+description: Il metodo get \_ WindowStyle recupera gli stili di finestra standard.
 ms.assetid: 5c204814-5c7c-47e2-95dd-86455ed77cc7
-title: Metodo CBaseControlWindow.get_WindowStyle (Ctlutil. h)
+title: CBaseControlWindow.get_WindowStyle metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 91e04efac3a67c262b4eeb85948f846dbb06086a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e9356b449adbb4ee760ec70990c4db0b6703c16e9d0970f2756bac23907b1bfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660260"
 ---
-# <a name="cbasecontrolwindowget_windowstyle-method"></a>Metodo CBaseControlWindow. Get \_ WindowStyle
+# <a name="cbasecontrolwindowget_windowstyle-method"></a>Metodo CBaseControlWindow.get \_ WindowStyle
 
-Il `get_WindowStyle` metodo recupera gli stili della finestra standard.
+Il `get_WindowStyle` metodo recupera gli stili di finestra standard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Puntatore agli stili della finestra.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro restituisce gli stili standard della finestra, ad esempio WS \_ child e WS \_ Visible. Chiama la funzione membro [**CBaseControlWindow::D ogetwindowstyle**](cbasecontrolwindow-dogetwindowstyle.md) .
+Questa funzione membro restituisce gli stili di finestra standard, ad esempio WS \_ CHILD e WS \_ VISIBLE. Chiama la [**funzione membro CBaseControlWindow::D oGetWindowStyle.**](cbasecontrolwindow-dogetwindowstyle.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro restituisce gli stili standard della finestra, ad esempio
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

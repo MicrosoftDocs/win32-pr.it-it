@@ -1,7 +1,7 @@
 ---
-description: Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna dall'istanza corrente di XMFLOAT4X4.
+description: Accede a elementi della matrice specifici a cui fanno riferimento righe e colonne dall'istanza corrente di XMFLOAT4X4.
 ms.assetid: de367692-6974-4e54-9f1e-d8c56b3aa752
-title: Operatori XMFLOAT4X4 operator ()
+title: Operatori XMFLOAT4X4 ()
 ms.topic: reference
 ms.date: 12/06/2018
 topic_type:
@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6526867b7f3a22a02f64b5fc5073487d962d78f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7ea5349bfd922f5876ee62fd0b249b40e722aafe8e24a88d13af9a96e4d56d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276298"
 ---
-# <a name="xmfloat4x4-operator--operators"></a>Operatori XMFLOAT4X4 operator ()
+# <a name="xmfloat4x4-operator--operators"></a>Operatori XMFLOAT4X4 ()
 
-Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna dall'istanza corrente di `XMFLOAT4X4` .
+Accede a elementi della matrice specifici a cui fanno riferimento righe e colonne dall'istanza corrente di `XMFLOAT4X4` .
 
-Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna dall'istanza corrente di [ **XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)
+Accede a elementi della matrice specifici a cui fanno riferimento righe e colonne dall'istanza corrente di [ **XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -41,8 +41,8 @@ Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna 
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x4-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X4:: operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Restituisce un oggetto <code>reference</code> a un elemento Matrix di un'istanza <code>XMFLOAT4X4</code> come specificato dagli argomenti di riga e colonna.<br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x4-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X4::operator () (size_t,size_t)</strong></a></td>
+<td style="text-align: left;">Restituisce un <code>reference</code> oggetto a un elemento matrice di un'istanza di come specificato dagli argomenti di riga e <code>XMFLOAT4X4</code> colonna.<br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
@@ -50,8 +50,8 @@ Questo operatore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x4-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X4:: operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Restituisce il valore di un elemento matrice in un'istanza <code>XMFLOAT4X4</code> come specificato dagli argomenti di riga e colonna. <br/> Questo operatore restituisce il valore di un elemento Matrix di un'istanza <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x4"><strong>XMFLOAT4X4</strong></a> come specificato dagli argomenti di riga e colonna. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x4-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X4::operator () (size_t,size_t)</strong></a></td>
+<td style="text-align: left;">Restituisce il valore di un elemento della matrice in <code>XMFLOAT4X4</code> un'istanza come specificato dagli argomenti di riga e colonna. <br/> Questo operatore restituisce il valore di un elemento matrice di un'istanza <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x4"><strong>XMFLOAT4X4</strong></a> come specificato dagli argomenti di riga e colonna. <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo quando si sviluppa con C++.

@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso DataDefinitionType
-description: Definisce un elemento di dati che si desidera includere nell'evento. | Tipo complesso DataDefinitionType
+description: Definisce un elemento di dati da includere con l'evento . | Tipo complesso DataDefinitionType
 ms.assetid: f4234e54-a5a8-48e4-941f-05107dcd3f88
 keywords:
-- Log eventi di tipo complesso DataDefinitionType
+- EventLog di tipo complesso DataDefinitionType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 19584c28a7bdf7ae01b87d1f414b9464b7b4271d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fa492acf00740b0df9b761c40797ec05feb5b2e38b84ec0682296dd845cbe613
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589606"
 ---
 # <a name="datadefinitiontype-complex-type"></a>Tipo complesso DataDefinitionType
 
-Definisce un elemento di dati che si desidera includere nell'evento.
+Definisce un elemento di dati da includere con l'evento .
 
 ``` syntax
 <xs:complexType name="DataDefinitionType"
@@ -86,22 +86,22 @@ Definisce un elemento di dati che si desidera includere nell'evento.
 <tr class="odd">
 <td>count</td>
 <td><a href="eventmanifestschema-counttype-simpletype.md"><strong>CountType</strong></a></td>
-<td>Il numero di elementi nella matrice se l'elemento dati è una matrice. È possibile specificare il conteggio effettivo o il nome di un altro elemento di dati che contiene il conteggio. <br/></td>
+<td>Numero di elementi nella matrice se l'elemento dati è una matrice. È possibile specificare il conteggio effettivo o il nome di un altro elemento di dati che contiene il conteggio. <br/></td>
 </tr>
 <tr class="even">
 <td>inType</td>
 <td><strong>QName</strong></td>
-<td>Tipo di dati per questo elemento di dati. Per un elenco di tipi di dati di input predefiniti, vedere il tipo complesso <a href="eventmanifestschema-inputtype-complextype.md"><strong>InputType</strong></a> .<br/></td>
+<td>Tipo di dati per questo elemento di dati. Per un elenco dei tipi di dati di input predefiniti, vedere il <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complesso InputType.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td>length</td>
 <td><a href="eventmanifestschema-lengthtype-simpletype.md"><strong>LengthType</strong></a></td>
-<td>Lunghezza di un elemento di dati a lunghezza variabile, ad esempio un BLOB binario. Per i dati binari, specificare la lunghezza in byte e per i dati di tipo stringa, specificare la lunghezza in caratteri. È possibile specificare la lunghezza effettiva o il nome di un altro elemento di dati che contiene la lunghezza.<br/> Se si usa l'attributo length per specificare una stringa a lunghezza fissa, è necessario aggiungere la stringa alla lunghezza fissa consentendo il carattere di terminazione null alla fine. ad esempio, se la lunghezza è 5, la stringa &quot; ABC &quot; deve essere riempita come &quot; ABC &quot; . La lunghezza della stringa deve includere il carattere di terminazione null.<br/></td>
+<td>Lunghezza di un elemento di dati a lunghezza variabile, ad esempio un BLOB binario. Per i dati binari, specificare la lunghezza in byte e per i dati stringa specificare la lunghezza in caratteri. È possibile specificare la lunghezza effettiva o il nome di un altro elemento di dati che contiene la lunghezza.<br/> Se si usa l'attributo length per specificare una stringa a lunghezza fissa, è necessario riempire la stringa fino alla lunghezza fissa consentendo il carattere di terminazione Null alla fine (ad esempio, se la lunghezza è 5, la stringa abc deve essere riempita come &quot; &quot; &quot; abc &quot; . La lunghezza della stringa deve includere il carattere di terminazione Null.<br/></td>
 </tr>
 <tr class="even">
 <td>map</td>
 <td>string</td>
-<td>Nome del mapping nome/valore da utilizzare per eseguire il mapping dei valori interi alle stringhe. Il tipo di dati dell'elemento dati deve essere uno dei tipi seguenti:<br/>
+<td>Nome del mapping nome/valore da usare per eseguire il mapping di valori interi alle stringhe. Il tipo di dati dell'elemento dati deve essere uno dei tipi seguenti:<br/>
 <ul>
 <li>win:UInt8</li>
 <li>win:UInt16</li>
@@ -111,12 +111,12 @@ Definisce un elemento di dati che si desidera includere nell'evento.
 <tr class="odd">
 <td>name</td>
 <td>string</td>
-<td>Nome dell'elemento dati. È possibile usare il nome per fare riferimento a questo elemento di dati nel frammento XML se si specifica una sezione <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>UserData</strong></a> nel modello. È anche possibile fare riferimento a questo nome in un attributo length o count di un altro elemento di dati se questo elemento dati contiene la lunghezza o il valore Count.<br/> <strong>Windows Vista:</strong> Questo attributo è facoltativo.<br/></td>
+<td>Nome dell'elemento dati. È possibile usare il nome per fare riferimento a questo elemento di dati nel frammento XML se si specifica una <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>sezione UserData</strong></a> nel modello. È anche possibile fare riferimento a questo nome in un attributo length o count di un altro elemento di dati se questo elemento di dati contiene il relativo valore di lunghezza o conteggio.<br/> <strong>Windows Vista:</strong> Questo attributo è facoltativo.<br/></td>
 </tr>
 <tr class="even">
-<td>outtype</td>
+<td>outType</td>
 <td><strong>QName</strong></td>
-<td>Tipo di dati da utilizzare per il rendering dell'elemento di dati. Per un elenco di tipi di dati di output predefiniti, vedere il tipo complesso <a href="eventmanifestschema-outputtype-complextype.md"><strong>OutputType</strong></a> .<br/> <strong>Windows Vista:</strong> Il tipo di output viene ignorato e il servizio determina il tipo in base al tipo di input.<br/></td>
+<td>Tipo di dati da utilizzare per il rendering di questo elemento di dati. Per un elenco dei tipi di dati di output predefiniti, vedere il <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complesso OutputType.</strong></a><br/> <strong>Windows Vista:</strong> Il tipo di output viene ignorato e il servizio determina il tipo in base al tipo di input.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -125,11 +125,11 @@ Definisce un elemento di dati che si desidera includere nell'evento.
 
 ## <a name="remarks"></a>Commenti
 
-Per i tipi di input a lunghezza variabile, ad esempio i BLOB binari, è necessario usare l'attributo length per specificare in modo esplicito le dimensioni dei dati. Per le stringhe, specificare l'attributo length solo se le stringhe hanno una lunghezza fissa.
+Per i tipi di input a lunghezza variabile, ad esempio BLOB binari, è necessario usare l'attributo length per specificare in modo esplicito le dimensioni dei dati. Per le stringhe, specificare l'attributo length solo se le stringhe sono di lunghezza fissa.
 
 ## <a name="examples"></a>Esempio
 
-Di seguito sono riportati alcuni esempi delle definizioni degli elementi di dati.
+Di seguito sono riportati alcuni esempi di definizioni di elementi di dati.
 
 
 ```XML
@@ -209,8 +209,8 @@ Di seguito sono riportati alcuni esempi delle definizioni degli elementi di dati
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

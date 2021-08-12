@@ -1,40 +1,40 @@
 ---
 title: Uso dell'input da tastiera
-description: In questa sezione vengono illustrate le attività associate all'input da tastiera.
+description: Questa sezione illustra le attività associate all'input da tastiera.
 ms.assetid: d08e7f12-6595-4234-bfc4-08daad93e4c4
 keywords:
-- input dell'utente, input da tastiera
-- acquisizione dell'input dell'utente, input da tastiera
+- input utente, input da tastiera
+- acquisizione di input utente, input da tastiera
 - input da tastiera
-- messaggi di tasti
+- messaggi di sequenza di tasti
 - messaggi di tipo carattere
-- carenze, input da tastiera
+- caret, input da tastiera
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d76b3f90a626506430b91e7539069c6ecdf634c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cb1be8753ec6a5f920f09f6e5376b7988a88de0f9a49551492408e84908bb0c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248273"
 ---
 # <a name="using-keyboard-input"></a>Uso dell'input da tastiera
 
-Una finestra riceve l'input da tastiera sotto forma di messaggi di sequenza di tasti e messaggi di tipo carattere. Il ciclo di messaggi collegato alla finestra deve includere il codice per convertire i messaggi di sequenza di tasti nei messaggi di caratteri corrispondenti. Se nella finestra viene visualizzato l'input da tastiera nell'area client, è necessario creare e visualizzare un accento circonflesso per indicare la posizione in cui verrà immesso il carattere successivo. Le sezioni seguenti descrivono il codice richiesto per la ricezione, l'elaborazione e la visualizzazione dell'input da tastiera:
+Una finestra riceve l'input da tastiera sotto forma di messaggi di sequenza di tasti e di caratteri. Il ciclo di messaggi associato alla finestra deve includere il codice per convertire i messaggi di sequenza di tasti nei messaggi di caratteri corrispondenti. Se la finestra visualizza l'input da tastiera nell'area client, deve creare e visualizzare un punto di inserimento per indicare la posizione in cui verrà immesso il carattere successivo. Le sezioni seguenti descrivono il codice necessario per la ricezione, l'elaborazione e la visualizzazione dell'input da tastiera:
 
--   [Elaborazione dei messaggi di sequenza di tasti](#processing-keystroke-messages)
--   [Conversione di messaggi di tipo carattere](#translating-character-messages)
+-   [Elaborazione di messaggi di sequenza di tasti](#processing-keystroke-messages)
+-   [Traduzione di messaggi di tipo carattere](#translating-character-messages)
 -   [Elaborazione di messaggi di tipo carattere](#processing-character-messages)
--   [Uso del punto di inserimento](#using-the-caret)
+-   [Uso del caret](#using-the-caret)
 -   [Visualizzazione dell'input da tastiera](#displaying-keyboard-input)
 
-## <a name="processing-keystroke-messages"></a>Elaborazione dei messaggi di sequenza di tasti
+## <a name="processing-keystroke-messages"></a>Elaborazione di messaggi di sequenza di tasti
 
-La routine della finestra della finestra con lo stato attivo riceve i messaggi di sequenza di tasti quando l'utente digita sulla tastiera. I messaggi di tasti sono [**WM \_ KeyDown**](wm-keydown.md), [**WM \_ KEYUP**](wm-keyup.md), [**WM \_ SYSKEYDOWN**](wm-syskeydown.md)e [**WM \_ SYSKEYUP**](wm-syskeyup.md). Una routine di finestra tipica ignora tutti i messaggi di sequenza di tasti eccetto **WM \_ KeyDown**. Il sistema invia il messaggio di **WM \_ KeyDown** quando l'utente preme un tasto.
+La routine della finestra con lo stato attivo della tastiera riceve messaggi di pressione dei tasti quando l'utente digita sulla tastiera. I messaggi di pressione dei tasti [**sono WM \_ KEYDOWN,**](wm-keydown.md) [**WM \_ KEYUP,**](wm-keyup.md) [**WM \_ SYSKEYDOWN**](wm-syskeydown.md)e [**WM \_ SYSKEYUP.**](wm-syskeyup.md) Una tipica routine della finestra ignora tutti i messaggi di pressione dei tasti, ad eccezione **di WM \_ KEYDOWN.** Il sistema invia il **messaggio WM \_ KEYDOWN** quando l'utente preme un tasto.
 
-Quando la routine della finestra riceve il messaggio di [**WM \_ KeyDown**](wm-keydown.md) , deve esaminare il codice della chiave virtuale che accompagna il messaggio per determinare come elaborare la sequenza di tasti. Il codice della chiave virtuale si trova nel parametro *wParam* del messaggio. In genere, un'applicazione elabora solo le sequenze di tasti generate da chiavi non di tipo carattere, inclusi i tasti funzione, i tasti di spostamento del cursore e i tasti per scopi specifici, ad esempio INS, CANC, HOME e END.
+Quando la routine della finestra riceve il [**messaggio WM \_ KEYDOWN,**](wm-keydown.md) deve esaminare il codice del tasto virtuale che accompagna il messaggio per determinare come elaborare la sequenza di tasti. Il codice della chiave virtuale si trova nel parametro *wParam del* messaggio. In genere, un'applicazione elabora solo le sequenze di tasti generate da tasti non carattere, inclusi i tasti funzione, i tasti di spostamento del cursore e i tasti di scopo speciale, ad esempio INS, DEL, HOME ed END.
 
-Nell'esempio seguente viene illustrato il Framework di routine della finestra utilizzato da una tipica applicazione per ricevere ed elaborare i messaggi di sequenza di tasti.
+L'esempio seguente illustra il framework di routine della finestra utilizzato da un'applicazione tipica per ricevere ed elaborare i messaggi di pressione dei tasti.
 
 
 ```
@@ -105,11 +105,11 @@ Nell'esempio seguente viene illustrato il Framework di routine della finestra ut
 
 
 
-## <a name="translating-character-messages"></a>Conversione di messaggi di tipo carattere
+## <a name="translating-character-messages"></a>Traduzione di messaggi di tipo carattere
 
-Qualsiasi thread che riceve input di caratteri dall'utente deve includere la funzione [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) nel ciclo di messaggi. Questa funzione esamina il codice della chiave virtuale di un messaggio di sequenza di tasti e, se il codice corrisponde a un carattere, inserisce un messaggio di tipo carattere nella coda di messaggi. Il messaggio del carattere viene rimosso e inviato alla successiva iterazione del ciclo di messaggi; il parametro *wParam* del messaggio contiene il codice carattere.
+Qualsiasi thread che riceve input di caratteri dall'utente deve includere la [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) nel ciclo di messaggi. Questa funzione esamina il codice del tasto virtuale di un messaggio di sequenza di tasti e, se il codice corrisponde a un carattere, inserisce un messaggio di tipo carattere nella coda di messaggi. Il messaggio carattere viene rimosso e inviato all'iterazione successiva del ciclo di messaggi. il *parametro wParam* del messaggio contiene il codice carattere.
 
-In generale, il ciclo di messaggi di un thread deve utilizzare la funzione [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) per tradurre ogni messaggio, non solo i messaggi della chiave virtuale. Sebbene **TranslateMessage** non abbia alcun effetto su altri tipi di messaggi, garantisce che l'input da tastiera venga convertito correttamente. Nell'esempio seguente viene illustrato come includere la funzione **TranslateMessage** in un normale ciclo di messaggi del thread.
+In generale, il ciclo di messaggi di un thread deve usare la funzione [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) per convertire ogni messaggio, non solo i messaggi con chiave virtuale. Sebbene **TranslateMessage non** abbia alcun effetto su altri tipi di messaggi, garantisce che l'input da tastiera venga tradotto correttamente. L'esempio seguente illustra come includere la funzione **TranslateMessage** in un tipico ciclo di messaggi di thread.
 
 
 ```
@@ -137,18 +137,18 @@ while (( bRet = GetMessage(&msg, (HWND) NULL, 0, 0)) != 0)
 
 ## <a name="processing-character-messages"></a>Elaborazione di messaggi di tipo carattere
 
-Una routine della finestra riceve un messaggio di carattere quando la funzione [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) converte un codice di chiave virtuale corrispondente a un tasto carattere. I messaggi di tipo carattere sono [**WM \_ char**](wm-char.md), [**WM \_ DEADCHAR**](wm-deadchar.md), [**WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar)e [**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md). Una routine di finestra tipica ignora tutti i messaggi di tipo carattere eccetto **WM \_ char**. La funzione **TranslateMessage** genera un messaggio **WM \_ char** quando l'utente preme una delle chiavi seguenti:
+Una routine della finestra riceve un messaggio di tipo carattere quando la [**funzione TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) converte un codice di chiave virtuale corrispondente a un tasto di scelta. I messaggi di tipo carattere [**sono WM \_ CHAR,**](wm-char.md) [**WM \_ DEADCHAR,**](wm-deadchar.md) [**WM \_ SYSCHAR**](/windows/desktop/menurc/wm-syschar)e [**WM \_ SYSDEADCHAR.**](wm-sysdeadchar.md) Una tipica routine della finestra ignora tutti i messaggi di tipo carattere ad eccezione **di WM \_ CHAR.** La **funzione TranslateMessage** genera un **messaggio WM \_ CHAR** quando l'utente preme uno dei tasti seguenti:
 
--   Qualsiasi tasto carattere
+-   Qualsiasi tasto di scelta
 -   BACKSPACE
 -   ENTER (ritorno a capo)
 -   ESC
--   MAIUSC + INVIO (avanzamento riga)
+-   MAIUSC+INVIO (avanzamento riga)
 -   TAB
 
-Quando una routine della finestra riceve il messaggio [**WM \_ char**](wm-char.md) , deve esaminare il codice carattere che accompagna il messaggio per determinare come elaborare il carattere. Il codice carattere si trova nel parametro *wParam* del messaggio.
+Quando una routine della finestra riceve il [**messaggio WM \_ CHAR,**](wm-char.md) deve esaminare il codice carattere che accompagna il messaggio per determinare come elaborare il carattere. Il codice carattere si trova nel parametro *wParam del* messaggio.
 
-Nell'esempio seguente viene illustrato il Framework di routine della finestra utilizzato da una tipica applicazione per ricevere ed elaborare i messaggi di tipo carattere.
+Nell'esempio seguente viene illustrato il framework di routine della finestra utilizzato da un'applicazione tipica per ricevere ed elaborare messaggi di tipo carattere.
 
 
 ```
@@ -195,23 +195,23 @@ Nell'esempio seguente viene illustrato il Framework di routine della finestra ut
 
 
 
-## <a name="using-the-caret"></a>Uso del punto di inserimento
+## <a name="using-the-caret"></a>Uso del caret
 
-Una finestra che riceve l'input da tastiera Visualizza in genere i caratteri che l'utente digita nell'area client della finestra. Una finestra deve usare un accento circonflesso per indicare la posizione nell'area client in cui verrà visualizzato il carattere successivo. La finestra deve anche creare e visualizzare il cursore quando riceve lo stato attivo della tastiera e nascondere ed eliminare il cursore quando perde lo stato attivo. Una finestra può eseguire queste operazioni nell'elaborazione dei messaggi WM [**\_ SetFocus**](wm-setfocus.md) e [**WM \_ KILLFOCUS**](wm-killfocus.md) . Per ulteriori informazioni sui Carrier, vedere la pagina relativa ai [Carrier](/windows/desktop/menurc/carets).
+Una finestra che riceve l'input da tastiera visualizza in genere i caratteri tipi dall'utente nell'area client della finestra. Una finestra deve usare un cursore per indicare la posizione nell'area client in cui verrà visualizzato il carattere successivo. La finestra deve anche creare e visualizzare il punto di interesse quando riceve lo stato attivo della tastiera e nascondere ed eliminare il punto di interesse quando perde lo stato attivo. Una finestra può eseguire queste operazioni nell'elaborazione dei [**messaggi WM \_ SETFOCUS**](wm-setfocus.md) e [**WM \_ KILLFOCUS.**](wm-killfocus.md) Per altre informazioni sui caret, vedere [Carets](/windows/desktop/menurc/carets).
 
 ## <a name="displaying-keyboard-input"></a>Visualizzazione dell'input da tastiera
 
-Nell'esempio riportato in questa sezione viene illustrato il modo in cui un'applicazione può ricevere i caratteri dalla tastiera, visualizzarli nell'area client di una finestra e aggiornare la posizione del punto di inserimento con ogni carattere digitato. Viene inoltre illustrato come spostare il punto di inserimento in risposta alle sequenze di tasti freccia sinistra, freccia destra, HOME e fine e viene illustrato come evidenziare il testo selezionato in risposta alla combinazione di tasti MAIUSC + freccia destra.
+L'esempio in questa sezione illustra come un'applicazione può ricevere caratteri dalla tastiera, visualizzarli nell'area client di una finestra e aggiornare la posizione del cursore con ogni carattere digitato. Viene inoltre illustrato come spostare il cursore in risposta alle sequenze di tasti FRECCIA SINISTRA, FRECCIA DESTRA, HOME ed FINE e viene illustrato come evidenziare il testo selezionato in risposta alla combinazione di tasti MAIUSC+FRECCIA DESTRA.
 
-Durante l'elaborazione del messaggio [**WM \_ create**](/windows/desktop/winmsg/wm-create) , la procedura della finestra illustrata nell'esempio alloca un buffer 64K per l'archiviazione dell'input da tastiera. Recupera anche le metriche del tipo di carattere attualmente caricato, salvando l'altezza e la larghezza media dei caratteri nel tipo di carattere. L'altezza e la larghezza vengono utilizzate nell'elaborazione del messaggio di [**\_ dimensioni WM**](/windows/desktop/winmsg/wm-size) per calcolare la lunghezza della riga e il numero massimo di righe, in base alle dimensioni dell'area client.
+Durante l'elaborazione [**del messaggio WM \_ CREATE,**](/windows/desktop/winmsg/wm-create) la procedura della finestra illustrata nell'esempio alloca un buffer di 64.000 per l'archiviazione dell'input da tastiera. Recupera anche le metriche del tipo di carattere attualmente caricato, salvando l'altezza e la larghezza media dei caratteri nel tipo di carattere. L'altezza e la larghezza vengono usate nell'elaborazione del messaggio [**WM \_ SIZE**](/windows/desktop/winmsg/wm-size) per calcolare la lunghezza della riga e il numero massimo di righe, in base alle dimensioni dell'area client.
 
-La procedura finestra Crea e visualizza il punto di inserimento quando si elabora il messaggio di [**\_ SetFocus di WM**](wm-setfocus.md) . Nasconde ed Elimina il punto di inserimento durante l'elaborazione del messaggio [**WM \_ KILLFOCUS**](wm-killfocus.md) .
+La routine della finestra crea e visualizza il caret durante l'elaborazione [**del messaggio WM \_ SETFOCUS.**](wm-setfocus.md) Nasconde ed elimina il caret durante l'elaborazione del [**messaggio \_ KILLFOCUS WM.**](wm-killfocus.md)
 
-Quando si elabora il messaggio [**WM \_ char**](wm-char.md) , la routine della finestra Visualizza i caratteri, li archivia nel buffer di input e aggiorna la posizione del punto di inserimento. La procedura della finestra converte anche i caratteri di tabulazione in quattro spazi consecutivi. I caratteri backspace, avanzamento riga e Escape generano un segnale acustico, ma non vengono elaborati in altro modo.
+Quando si elabora [**il messaggio WM \_ CHAR,**](wm-char.md) la routine della finestra visualizza i caratteri, li archivia nel buffer di input e aggiorna la posizione del cursore. La routine della finestra converte anche i caratteri di tabulazione in quattro spazi consecutivi. I caratteri backspace, linefeed e escape generano un segnale acustico, ma non vengono elaborati in altro modo.
 
-La routine della finestra esegue i movimenti di cursore a sinistra, a destra, fine e Home durante l'elaborazione del messaggio del [**\_ KeyDown di WM**](wm-keydown.md) . Durante l'elaborazione dell'azione del tasto freccia destra, la routine della finestra Controlla lo stato del tasto MAIUSC e, se è inattivo, seleziona il carattere a destra del punto di inserimento quando il punto di inserimento viene spostato.
+La routine della finestra esegue i movimenti del punto di controllo sinistro, destro, finale e iniziale durante l'elaborazione del [**messaggio WM \_ KEYDOWN.**](wm-keydown.md) Durante l'elaborazione dell'azione del tasto FRECCIA DESTRA, la routine della finestra controlla lo stato del tasto MAIUSC e, se è in giù, seleziona il carattere a destra del cursore mentre il cursore viene spostato.
 
-Si noti che il codice seguente viene scritto in modo che sia possibile compilarlo come Unicode o come ANSI. Se il codice sorgente definisce UNICODE, le stringhe vengono gestite come caratteri Unicode; in caso contrario, vengono gestiti come caratteri ANSI.
+Si noti che il codice seguente viene scritto in modo che possa essere compilato come Unicode o COME ANSI. Se il codice sorgente definisce UNICODE, le stringhe vengono gestite come caratteri Unicode. In caso contrario, vengono gestiti come caratteri ANSI.
 
 
 ```
@@ -561,6 +561,6 @@ LONG APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lParam
 
 
 
- 
+ 
 
- 
+ 

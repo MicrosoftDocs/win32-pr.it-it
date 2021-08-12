@@ -1,29 +1,29 @@
 ---
-title: Compilazione del provider di servizi di esempio mediante Visual Studio
-description: Compilazione del provider di servizi di esempio mediante Visual Studio
+title: Compilazione del provider di servizi di esempio tramite Visual Studio
+description: Compilazione del provider di servizi di esempio tramite Visual Studio
 ms.assetid: db0ecc18-d5b0-47d8-9b3f-3a9644343de8
 keywords:
-- Windows Media Gestione dispositivi, esempi
+- Windows Gestione dispositivi multimediali, esempi
 - Gestione dispositivi, esempi
-- Windows Media Gestione dispositivi, esempio di provider di servizi
-- Gestione dispositivi, esempio di provider di servizi
+- Windows Media Device Manager, esempio di provider di servizi
+- Device Manager, esempio di provider di servizi
 - provider di servizi, esempi
 - esempi, provider di servizi
 - esempi, compilazione con Visual Studio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abded2aa1272f2e5e14b711c0d8b0a8ec79f280
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd220e314a6de0a9c5e4cf50ccd710a0236c3b3ec469247ef99f319b553b15c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586019"
 ---
-# <a name="compiling-the-sample-service-provider-using-visual-studio"></a>Compilazione del provider di servizi di esempio mediante Visual Studio
+# <a name="compiling-the-sample-service-provider-using-visual-studio"></a>Compilazione del provider di servizi di esempio tramite Visual Studio
 
-Windows Media Format SDK non include un file di soluzione di Visual Studio. Tuttavia, questo documento include due file che consentono di usare Visual Studio per compilare ed eseguire il debug del provider di servizi di esempio. Entrambi i file sono disponibili per Visual Studio .NET 2003.
+L Windows Media Format SDK non include un file Visual Studio soluzione. Tuttavia, questo documento include due file che consentono di usare Visual Studio per compilare ed eseguire il debug del provider di servizi di esempio. Entrambi i file forniti sono per Visual Studio .NET 2003.
 
--   Salvare il codice seguente come file di testo denominato mshdsp. vcproj nella cartella <*percorso di installazione SDK* > \\ wmfsdk \\ WMFSDK95 \\ WMDM MDSP mshdsp \\ \\ .
+-   Salvare il codice seguente come file di testo denominato mshdsp.vcproj nella cartella <*SDK percorso* di installazione > \\ \\ WMFSDK WMFSDK95 \\ WMDM \\ mdsp \\ mshdsp.
 
 
 ```C++
@@ -300,7 +300,7 @@ Windows Media Format SDK non include un file di soluzione di Visual Studio. Tutt
 
 
 
--   Salvare il codice seguente come file di testo denominato mshdsp. sln nella stessa cartella in cui è stato salvato mshdsp. vcproj.
+-   Salvare il codice seguente come file di testo denominato mshdsp.sln nella stessa cartella in cui è stato salvato mshdsp.vcproj.
 
 
 ```C++
@@ -338,9 +338,9 @@ EndGlobal
 [**Provider di servizi di esempio**](sample-service-provider.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

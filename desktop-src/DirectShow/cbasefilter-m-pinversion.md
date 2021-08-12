@@ -1,7 +1,7 @@
 ---
-description: Versione corrente del set di pin in questo filtro.
+description: Versione corrente del set di pin su questo filtro.
 ms.assetid: c748d62a-a725-43a0-b5f4-b14ae9e6ef2c
-title: 'Membro CBaseFilter:: m_PinVersion (Amfilter. h)'
+title: Membro CBaseFilter::m_PinVersion (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 15936bc37ff4c1c02077ad65d6700cdbdf1dbe8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aef93f49119573d7c6fdacba3ba3796bea6fe3fafdf8b631bcf694e7b68fc433
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659955"
 ---
-# <a name="cbasefilterm_pinversion-member"></a>Membro PinVersion di CBaseFilter:: m \_
+# <a name="cbasefilterm_pinversion-member"></a>Membro CBaseFilter::m \_ PinVersion
 
-Versione corrente del set di pin in questo filtro.
+Versione corrente del set di pin su questo filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ long m_PinVersion;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo inverso inverte l'ordine dell'elenco.
+description: Il metodo Reverse inverte l'ordine dell'elenco.
 ms.assetid: f6f72f06-d219-4e18-a4fa-a816f9b50462
-title: Metodo CBaseList. Reverse (Wxlist. h)
+title: Metodo CBaseList.Reverse (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d37e56310bc48350f45b36c8c18d93c6246e36db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5af7e0aa31a2694af8ce2114f84342f09807d26e05b43af8cfce5ecc6f4146d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658884"
 ---
-# <a name="cbaselistreverse-method"></a>Metodo CBaseList. Reverse
+# <a name="cbaselistreverse-method"></a>Metodo CBaseList.Reverse
 
 Il `Reverse` metodo inverte l'ordine dell'elenco.
 
@@ -50,8 +50,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

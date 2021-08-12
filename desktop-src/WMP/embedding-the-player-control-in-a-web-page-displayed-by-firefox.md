@@ -3,53 +3,53 @@ title: Incorporamento del controllo Player in una pagina Web visualizzata da Fir
 description: Incorporamento del controllo Player in una pagina Web visualizzata da Firefox
 ms.assetid: 57e725dc-6430-43ec-a39c-c17854a7d8db
 keywords:
-- Windows Media Player, incorporamento del controllo ActiveX
-- Modello a oggetti di Windows Media Player, incorporamento del controllo ActiveX
-- modello a oggetti, incorporamento del controllo ActiveX
-- Windows Media Player Mobile, incorporamento del controllo ActiveX
-- Controllo ActiveX di Windows Media Player, incorporamento
-- Controllo ActiveX Windows Media Player Mobile, incorporamento
-- Controllo ActiveX, incorporamento
-- Controllo ActiveX di Windows Media Player, pagine Web
-- Controllo ActiveX Windows Media Player Mobile, pagine Web
-- Controllo ActiveX, pagine Web
-- Windows Media Player, Firefox
-- Modello a oggetti di Windows Media Player, Firefox
-- modello a oggetti, Firefox
+- Windows Media Player,incorporamento ActiveX controllo
+- Windows Media Player a oggetti, incorporamento ActiveX controllo
+- modello a oggetti, incorporamento ActiveX controllo
+- Windows Media Player Dispositivi mobili, incorporamento ActiveX controllo
+- Windows Media Player ActiveX, incorporamento
+- Windows Media Player Controllo ActiveX per dispositivi mobili, incorporamento
+- ActiveX, incorporamento
+- Windows Media Player ActiveX, pagine Web
+- Windows Media Player Controllo ActiveX per dispositivi mobili, pagine Web
+- ActiveX, pagine Web
+- Windows Media Player,Firefox
+- Windows Media Player a oggetti, Firefox
+- modello a oggetti,Firefox
 - Windows Media Player Mobile, Firefox
-- Controllo ActiveX di Windows Media Player, Firefox
-- Controllo ActiveX Windows Media Player Mobile, Firefox
-- Controllo ActiveX, Firefox
+- Windows Media Player ActiveX controllo, Firefox
+- Windows Media Player Controllo ActiveX per dispositivi mobili,Firefox
+- ActiveX controllo, Firefox
 - Firefox, informazioni sull'incorporamento di pagine Web
 - incorporamento, pagine Web
-- Incorporamento di pagine Web, Firefox
+- incorporamento di pagine Web,Firefox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16063ea07a0262ab798e58ed02e4d5a5b6b5d65
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: e0c1db799df78cb6c62516798f4bbd196c093f02225386f0c1009bfa11d9a668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "106299014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578588"
 ---
 # <a name="embedding-the-player-control-in-a-web-page-displayed-by-firefox"></a>Incorporamento del controllo Player in una pagina Web visualizzata da Firefox
 
-Per incorporare il controllo Media Player di Windows in una pagina Web che può essere visualizzata da un browser Firefox, creare un elemento oggetto o un elemento di INCORPORAmento con uno dei seguenti tipi MIME come attributo di **tipo** :
+Per incorporare il controllo Windows Media Player in una pagina Web che può essere visualizzata da un browser Firefox, creare un elemento OBJECT o un elemento EMBED con uno dei tipi MIME seguenti come attributo **type:**
 
--   applicazione/x-ms-WMP
--   applicazione/ASX
--   video/x-ms-asf-plug-in
--   applicazione/x-mplayer2
+-   application/x-ms-wmp
+-   application/asx
+-   video/x-ms-asf-plugin
+-   application/x-mplayer2
 -   video/x-ms-asf
--   video/x-ms-WM
--   audio/x-ms-WMA
--   audio/x-ms-Wax
--   video/x-MS-WMV
+-   video/x-ms-wm
+-   audio/x-ms-wma
+-   audio/x-ms-cerere
+-   video/x-ms-wmv
 -   video/x-ms-wvx
 
-Il tipo MIME preferito è application/x-ms-WMP.
+Il tipo mime preferito è application/x-ms-wmp.
 
-Negli esempi seguenti viene illustrato come incorporare il controllo Player utilizzando un elemento oggetto o un elemento EMBED.
+Gli esempi seguenti illustrano come incorporare il controllo Player usando un elemento OBJECT o un elemento EMBED.
 
 
 ```HTML
@@ -68,9 +68,9 @@ Negli esempi seguenti viene illustrato come incorporare il controllo Player util
 
 
 
-Gli esempi di precedente funzionano in Firefox ma non in Internet Explorer. Per incorporare il controllo Player in una pagina Web che può essere visualizzata da Internet Explorer, è necessario creare un elemento oggetto con un attributo **ClassID** impostato sull'ID classe del controllo Media Player di Windows.
+Gli esempi precedenti funzionano in Firefox, ma non in Internet Explorer. Per incorporare il controllo Player in una pagina Web che può essere visualizzata da Internet Explorer, è necessario creare un elemento OBJECT con un attributo **classid** impostato sull'ID classe del controllo Windows Media Player.
 
-Nell'esempio seguente viene illustrato come incorporare il controllo Windows Media Player in una pagina Web che può essere visualizzata correttamente da Internet Explorer e Firefox. Lo script nella pagina rileva il tipo di browser e genera il tag oggetto appropriato.
+L'esempio seguente illustra come incorporare il controllo Windows Media Player in una pagina Web che può essere visualizzata correttamente sia da Internet Explorer che da Firefox. Lo script nella pagina rileva il tipo di browser e genera il tag OBJECT appropriato.
 
 
 ```HTML
@@ -101,12 +101,12 @@ Nell'esempio seguente viene illustrato come incorporare il controllo Windows Med
 
 <dl> <dt>
 
-[**Uso del controllo Media Player Windows con Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**Uso del controllo Windows Media Player con Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

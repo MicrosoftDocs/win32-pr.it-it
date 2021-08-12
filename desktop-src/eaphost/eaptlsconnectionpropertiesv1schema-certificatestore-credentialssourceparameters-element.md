@@ -1,6 +1,6 @@
 ---
 title: Elemento CertificateStore (CredentialsSourceParameters)
-description: Indica che EAP-TLS deve leggere il certificato dall'archivio personale dell'utente o dal computer in fase di autenticazione.
+description: Indica che EAP-TLS deve leggere il certificato dall'archivio dell'utente o dal computer da autenticare.
 ms.assetid: 6b15c7cc-b686-4419-a962-e3dd6b4b84a6
 keywords:
 - Elemento CertificateStore EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cc7c8841fe275d19752f8b774de5766b95824339
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8fb3d2b5c9d50ea8b63c513e4fd9e7297afe236c5ccd16711d9bf4371e76a8d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274293"
 ---
 # <a name="certificatestore-credentialssourceparameters-element"></a>Elemento CertificateStore (CredentialsSourceParameters)
 
-L'elemento **CertificateStore (CredentialsSourceParameters)** indica che EAP-TLS deve leggere il certificato dall'archivio personale dell'utente o dal computer in fase di autenticazione.
+**L'elemento CertificateStore (CredentialsSourceParameters)** indica che EAP-TLS deve leggere il certificato dall'archivio dell'utente o dal computer da autenticare.
 
 ``` syntax
 <xs:element name="CertificateStore"
@@ -31,11 +31,11 @@ L'elemento **CertificateStore (CredentialsSourceParameters)** indica che EAP-TLS
  />
 ```
 
-L'elemento **CertificateStore** è definito dal tipo complesso [**CredentialsSourceParameters**](eaptlsconnectionpropertiesv1schema-credentialssourceparameters-complextype.md) .
+**L'elemento CertificateStore** è definito dal [**tipo complesso CredentialsSourceParameters.**](eaptlsconnectionpropertiesv1schema-credentialssourceparameters-complextype.md)
 
 ## <a name="remarks"></a>Commenti
 
-Gli elementi **CertificateStore** e [**smartcard**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md) non possono essere usati contemporaneamente.
+Gli **elementi CertificateStore** [**e SmartCard**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md) non possono essere usati contemporaneamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,8 +43,8 @@ Gli elementi **CertificateStore** e [**smartcard**](eaptlsconnectionpropertiesv1
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_SNT'
-title: Enumerazione JET_SNT
+description: Altre informazioni sull'enumerazione JET_SNT'
+title: JET_SNT enumerazione
 TOCTitle: JET_SNT enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SNT
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snt(v=EXCHG.10)
@@ -34,19 +34,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f6cad661d8265c32d605bbef94d75714ccb1783
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d25137c9e976d05bd065837fed7753e26e3afdae020499b3388948e11733fd77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252525"
 ---
-# <a name="jet_snt-enumeration"></a>Enumerazione JET_SNT
+# <a name="jet_snt-enumeration"></a>JET_SNT enumerazione
 
-Tipo di stato di avanzamento segnalato.
+Tipo di stato segnalato.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -100,8 +100,8 @@ public enum JET_SNT
 <tr class="odd">
 <td></td>
 <td>RecoveryStep</td>
-<td>Callback per il controllo di ripristino.
-<p>Usato per l'elaborazione interna nelle versioni del sistema operativo Windows precedenti a Windows 8. Questo valore non è applicabile alle versioni di Windows a partire da Windows 8.</p></td>
+<td>Callback per il controllo del ripristino.
+<p>Usato per l'elaborazione interna nelle versioni del Windows sistema operativo precedente a Windows 8. Questo valore non è applicabile alle versioni di Windows a partire da Windows 8.</p></td>
 </tr>
 </tbody>
 </table>
@@ -111,4 +111,4 @@ public enum JET_SNT
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

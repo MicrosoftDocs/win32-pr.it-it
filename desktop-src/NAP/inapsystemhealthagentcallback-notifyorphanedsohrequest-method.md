@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSystemHealthAgentCallback NotifyOrphanedSoHRequest (NapSystemHealthAgent. h)
-description: Viene chiamato se un SoHRequest è stato sottoposto a query dall'SHA, ma la risposta non è mai stata restituita.
+title: Metodo INapSystemHealthAgentCallback NotifyOrphanedSoHRequest (NapSystemHealthAgent.h)
+description: Viene chiamato se è stata eseguita una query su un oggetto SoHRequest da SHA, ma la risposta non è mai tornati.
 ms.assetid: 9e6fac6c-fb23-4725-ae0f-28ef8a6c4ea6
 keywords:
-- NAP metodo NotifyOrphanedSoHRequest
+- Metodo NotifyOrphanedSoHRequest NAP
 - Metodo NotifyOrphanedSoHRequest NAP, interfaccia INapSystemHealthAgentCallback
 - Interfaccia INapSystemHealthAgentCallback NAP, metodo NotifyOrphanedSoHRequest
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 676b67b61a9375f4fd44ecc41f9e56e92a97b693
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 171191c266ae3fd59ab1ba8f55acd73eb143e9aa220fb3d2989a7ced9f716513
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621182"
 ---
-# <a name="inapsystemhealthagentcallbacknotifyorphanedsohrequest-method"></a>Metodo INapSystemHealthAgentCallback:: NotifyOrphanedSoHRequest
+# <a name="inapsystemhealthagentcallbacknotifyorphanedsohrequest-method"></a>Metodo INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSystemHealthAgentCallback:: NotifyOrphanedSoHRequest** viene chiamato se un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) è stato sottoposto a query dall'SHA, ma la risposta non è mai stata restituita.
+Il **metodo INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest** viene chiamato se è stata eseguita una query [**soHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) dall'SHA, ma la risposta non è mai tornati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,10 +47,10 @@ HRESULT NotifyOrphanedSoHRequest(
 
 <dl> <dt>
 
-ID correlazione  \[ in\]
+*correlationId* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla struttura univoca [**CorrelationId**](/windows/win32/api/naptypes/ns-naptypes-correlationid) che identifica il [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh)orfano.
+Puntatore alla struttura [**CorrelationId univoca**](/windows/win32/api/naptypes/ns-naptypes-correlationid) che identifica l'oggetto [**SoHRequest orfano.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                          | Descrizione                   |
 |--------------------------------------------------------------------------------------|-------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Indica l'esito positivo dell'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Indica l'esito positivo dell'operazione.<br/> |
 
 
 
@@ -70,21 +70,21 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di callback viene dichiarato dal sistema NAP e deve essere implementato dal writer SHA.
+Questo metodo di callback viene dichiarato dal sistema nap e deve essere implementato dal writer SHA.
 
 Questo metodo può essere chiamato dal sistema nei casi seguenti:
 
--   Non è stato possibile inviare un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) in rete.
--   Un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) è stato inviato in rete, ma non è stato restituito alcun **SoHResponse** , ovvero si è verificato il timeout dell'applicazione o non è presente alcun servizio di convalida dell'integrità corrispondente sul lato server.
--   La connessione è stata interrotta o un Enforcer è andato offline.
+-   Non è stato possibile inviare un oggetto [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) in transito.
+-   Un [**oggetto SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) è stato inviato in transito, ma non è stato restituito alcun oggetto **SoHResponse,** ad esempio si è timeout o non è presente alcun shv corrispondente sul lato server.
+-   La connessione si è erta o un'applicazione è passata offline.
 
-Si tratta solo di una notifica di massimo sforzo, quindi SHAs non deve basarsi su queste informazioni per pulire lo stato. Esistono diverse situazioni in cui un SHA non riceve alcuna notifica:
+Si tratta solo di una notifica del massimo sforzo, quindi gli account di servizio non devono basarsi su queste informazioni per pulire lo stato. Esistono diverse situazioni in cui un'applicazione SHA non riceverà una notifica:
 
--   Se un Enforcer si comporta in modo improprio, ovvero non invia una notifica all'SHA quando lo stato della connessione non è attivo.
--   Se un'applicazione si arresta in modo anomalo.
--   In condizioni di errore, ad esempio, il NapAgent ha esaurito la memoria.
+-   Se un imponitore si comporta in modo non valido, ad esempio non invia una notifica all'SHA quando lo stato della connessione non è attivo.
+-   In caso di arresto anomalo di un'applicazione.
+-   In condizioni di errore, ad esempio la memoria di NapAgent è insufficiente.
 
-SHAs può ricevere alcune notifiche non corrette quando vengono prima associate al NapAgent, ad esempio se è in corso uno scambio di rapporto di integrità quando si verifica un binding SHA e si verifica il timeout.
+Gli sha possono ricevere alcune notifiche non erre quando si associano per la prima volta a NapAgent, ad esempio, se è in corso uno scambio SoH quando l'sha è associato e quindi si verifica il timeout.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,10 +92,10 @@ SHAs può ricevere alcune notifiche non corrette quando vengono prima associate 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

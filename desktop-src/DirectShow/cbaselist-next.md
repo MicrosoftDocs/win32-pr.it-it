@@ -1,7 +1,7 @@
 ---
-description: Il metodo successivo recupera la posizione successiva nell'elenco.
+description: Il metodo Next recupera la posizione successiva nell'elenco.
 ms.assetid: ba9753b0-c82e-4772-84a7-e9982de3b8ad
-title: Metodo CBaseList. Next (Wxlist. h)
+title: Metodo CBaseList.Next (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f8a09ec91191437fbfb851ce92824b118a5440ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d07030c046f3fe55178707af297542f383bfd5cf75f40169b5c93cfafa1c698b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658957"
 ---
-# <a name="cbaselistnext-method"></a>Metodo CBaseList. Next
+# <a name="cbaselistnext-method"></a>Metodo CBaseList.Next
 
 Il `Next` metodo recupera la posizione successiva nell'elenco.
 
@@ -45,7 +45,7 @@ POSITION Next(
 *pos* 
 </dt> <dd>
 
-Valore della posizione.
+Valore POSITION.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Restituisce l'indicatore di posizione che segue la posizione specificata da *pos
 
 ## <a name="remarks"></a>Commenti
 
-Se *pos* è l'ultima posizione nell'elenco, il metodo restituisce **null**. Se *pos* è **null**, il metodo restituisce la prima posizione nell'elenco.
+Se *pos* è l'ultima posizione nell'elenco, il metodo restituisce **NULL.** Se *pos* è **NULL,** il metodo restituisce la prima posizione nell'elenco.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Se *pos* è l'ultima posizione nell'elenco, il metodo restituisce **null**. Se *
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Imposta il valore di timeout del debug. Ignorato nelle compilazioni al dettaglio.
+description: Imposta il valore di timeout del debug. Ignorato nelle build per la vendita al dettaglio.
 ms.assetid: d0f60d8b-34f2-44b2-bdd6-5e8e6f7806d8
-title: Funzione DbgSetWaitTimeout (Wxdebug. h)
+title: Funzione DbgSetWaitTimeout (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5805112b19132045e0245ef7baf29cb5c844e290
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67a5522184b9e88cd4b8ac9f23246f96c13ffad2175d625334de32d34c750e12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654023"
 ---
-# <a name="dbgsetwaittimeout-function"></a>DbgSetWaitTimeout (funzione)
+# <a name="dbgsetwaittimeout-function"></a>Funzione DbgSetWaitTimeout
 
-Imposta il valore di timeout del debug. Ignorato nelle compilazioni al dettaglio.
+Imposta il valore di timeout del debug. Ignorato nelle build per la vendita al dettaglio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void DbgSetWaitTimeout(
 *dwTimeout* 
 </dt> <dd>
 
-Valore di timeout in millisecondi o infinito per un'attesa indefinita.
+Valore di timeout in millisecondi o INFINITE per un'attesa illimitata.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Nelle build di debug, le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) usano questo valore come intervallo di timeout.
+Nelle build di debug le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) usano questo valore come intervallo di timeout.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Nelle build di debug, le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformult
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Nelle build di debug, le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformult
 
 <dl> <dt>
 
-[Funzioni di debug di attesa](wait-debugging-functions.md)
+[Funzioni di debug wait](wait-debugging-functions.md)
 </dt> </dl>
 
  

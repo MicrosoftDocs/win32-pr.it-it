@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro di m Binit indica se l'oggetto CImageSample è stato inizializzato. In tal caso, il valore è TRUE. In caso contrario, è FALSE.
+description: La variabile \_ membro m bInit indica se l'oggetto CImageSample è stato inizializzato. In tal caso, il valore se TRUE. In caso contrario, è FALSE.
 ms.assetid: bd508622-356e-46fe-98aa-c001c7742383
-title: 'Membro CImageSample:: m_bInit (Winutil. h)'
+title: Membro CImageSample::m_bInit (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8a2f2b91d81dfbdd4f385d8f38104c365c44b318
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24f5ff7e56422afb40e85040de3d496a45143b5683af0c3882f5fc0a04688666
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655585"
 ---
-# <a name="cimagesamplem_binit-member"></a>Membro CImageSample:: m \_ Binit
+# <a name="cimagesamplem_binit-member"></a>Membro CImageSample::m \_ bInit
 
-La `m_bInit` variabile membro indica se l'oggetto **CImageSample** è stato inizializzato. In tal caso, il valore è **true**. In caso contrario, è **false**.
+La `m_bInit` variabile membro indica se l'oggetto **CImageSample** è stato inizializzato. In tal caso, il valore se **TRUE**. In caso contrario, è **FALSE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bInit;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

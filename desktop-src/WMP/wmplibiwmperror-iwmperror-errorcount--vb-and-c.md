@@ -1,11 +1,11 @@
 ---
-title: Proprietà errorCount di IWMPError
+title: IWMPError - proprietà errorCount
 description: La proprietà errorCount ottiene il numero di errori nella coda degli errori.
 ms.assetid: a30750c8-2025-4087-bd2b-f313ccbde38c
 keywords:
-- Finestra delle proprietà di errorCount Media Player
-- Proprietà di errorCount Media Player Windows, interfaccia IWMPError
-- Interfaccia IWMPError Windows Media Player, proprietà errorCount
+- Proprietà errorCount Windows Media Player
+- Proprietà errorCount Windows Media Player, interfaccia IWMPError
+- Interfaccia IWMPError Windows Media Player proprietà , errorCount
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b62c16f07260847c91f1c9f18885587444a4ceb8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 42d288d1476318b1cace98d4b7549b7f5755b383da19d88ce04cbcf271326ac8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568773"
 ---
-# <a name="iwmperrorerrorcount-property"></a>Proprietà IWMPError:: errorCount
+# <a name="iwmperrorerrorcount-property"></a>Proprietà IWMPError::errorCount
 
-La proprietà **ErrorCount** ottiene il numero di errori nella coda degli errori.
+La **proprietà errorCount** ottiene il numero di errori nella coda degli errori.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,15 +46,15 @@ Public ReadOnly Property errorCount As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il numero di errori.
+**System.Int32** che rappresenta il numero di errori.
 
 ## <a name="remarks"></a>Commenti
 
-È necessario impostare **IWMPSettings. enableErrorDialogs** su **false** se si sceglie di visualizzare i messaggi di errore personalizzati.
+È consigliabile impostare **IWMPSettings.enableErrorDialogs** su **false** se si sceglie di visualizzare messaggi di errore personalizzati.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **ErrorCount** in un gestore eventi di errore per avvisare l'utente dell'errore più recente nella coda degli errori. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **errorCount** in un gestore dell'evento Error per avvisare l'utente dell'errore più recente nella coda degli errori. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -100,7 +100,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -113,7 +113,7 @@ End Sub
 [**Interfaccia IWMPError (VB e C#)**](iwmperror--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. enableErrorDialogs (VB e C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
+[**IWMPSettings.enableErrorDialogs (VB e C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
 </dt> </dl>
 
  

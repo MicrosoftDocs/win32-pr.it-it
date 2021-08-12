@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b4366c8fdac3d94ef65006adb0fd3e869832cdf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7da58236104e5fe1a9644f83592896c238e8a5387ea507c9aa68d62d220b2721
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253937"
 ---
 # <a name="jet_objtyp"></a>JET_OBJTYP
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_objtyp"></a>JET_OBJTYP
 
-Il gruppo **JET_OBJTYP** di costanti rappresenta il tipo di un oggetto di database. Attualmente sono supportate solo le tabelle.
+Il **JET_OBJTYP** di costanti rappresenta il tipo di un oggetto di database. Attualmente sono supportate solo le tabelle.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ Il gruppo **JET_OBJTYP** di costanti rappresenta il tipo di un oggetto di databa
 <tr class="odd">
 <td><p>JET_objtypNil<br />
 0</p></td>
-<td><p>Rappresenta tutti i tipi di oggetti. Attualmente sono supportate solo le tabelle.</p></td>
+<td><p>Rappresenta tutti i tipi di oggetti . Attualmente sono supportate solo le tabelle.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_objtypTable<br />
@@ -75,7 +75,7 @@ Il gruppo **JET_OBJTYP** di costanti rappresenta il tipo di un oggetto di databa
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

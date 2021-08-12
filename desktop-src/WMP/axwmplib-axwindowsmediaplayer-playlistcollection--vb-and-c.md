@@ -1,11 +1,11 @@
 ---
-title: Proprietà AxWindowsMediaPlayer. PlaylistCollection
-description: La proprietà PlaylistCollection ottiene un'interfaccia IWMPPlaylistCollection.
+title: AxWindowsMediaPlayer.playlistCollection - proprietà
+description: La proprietà playlistCollection ottiene un'interfaccia IWMPPlaylistCollection.
 ms.assetid: f3c65f70-b58f-41c1-afe0-3a9d9c95561c
 keywords:
-- Proprietà di PlaylistCollection Media Player Windows
-- Proprietà PlaylistCollection Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Windows Media Player, proprietà PlaylistCollection
+- Proprietà playlistCollection Windows Media Player
+- Proprietà playlistCollection Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player proprietà , playlistCollection
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94a01ca41d194a6321e02d34280241cd5701597e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d646bec99c61032c0347d9d21df443c890837424255ebd687c15cc9f780a1d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581901"
 ---
-# <a name="axwindowsmediaplayerplaylistcollection-property"></a>Proprietà AxWindowsMediaPlayer. PlaylistCollection
+# <a name="axwindowsmediaplayerplaylistcollection-property"></a>AxWindowsMediaPlayer.playlistCollection - proprietà
 
-La proprietà PlaylistCollection ottiene un'interfaccia **IWMPPlaylistCollection** .
+La proprietà playlistCollection ottiene **un'interfaccia IWMPPlaylistCollection.**
 
 Questa proprietà è di sola lettura.
 
@@ -48,11 +48,11 @@ Public ReadOnly Property playlistCollection As IWMPPlaylistCollection
 
 ## <a name="property-value"></a>Valore proprietà
 
-WMPLib. Interfaccia **IWMPPlaylistCollection** .
+Oggetto WMPLib. **Interfaccia IWMPPlaylistCollection.**
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Per recuperare il valore di questa proprietà, è necessario l'accesso in lettur
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -76,10 +76,10 @@ Per recuperare il valore di questa proprietà, è necessario l'accesso in lettur
 [**Interfaccia IWMPPlaylistCollection (VB e C#)**](iwmpplaylistcollection--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Il metodo Get recupera una proprietà identificata da un GUID del set di proprietà e da un ID di proprietà.
+description: Il metodo Get recupera una proprietà identificata da un GUID del set di proprietà e da un ID proprietà.
 ms.assetid: f39862db-0659-4533-8cee-aee2f778e085
-title: 'Metodo IKsPropertySet:: Get (ksproxy. h)'
+title: Metodo IKsPropertySet::Get (Ksproxy.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: 9c4461e8c5886d84bcf3b7faa6675b749bc0c37d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fbfd44002270209c055b5a4003d9062a6821aeffb3ce71de7977fc20d0c64e81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118652243"
 ---
-# <a name="ikspropertysetget-method"></a>Metodo IKsPropertySet:: Get
+# <a name="ikspropertysetget-method"></a>Metodo IKsPropertySet::Get
 
-Il metodo **Get** recupera una proprietà identificata da un GUID del set di proprietà e da un ID di proprietà.
+Il **metodo Get** recupera una proprietà identificata da un GUID del set di proprietà e da un ID proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,66 +46,66 @@ HRESULT Get(
 
 <dl> <dt>
 
-*guidPropSet* \[ in\]
+*guidPropSet* \[ Pollici\]
 </dt> <dd>
 
-GUID del set di proprietà.
+GUID del set di proprietà .
 
 </dd> <dt>
 
-*dwPropID* \[ in\]
+*dwPropID* \[ Pollici\]
 </dt> <dd>
 
 Identificatore della proprietà all'interno del set di proprietà.
 
 </dd> <dt>
 
-*pInstanceData* \[ in\]
+*pInstanceData* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a una matrice di byte che contiene i dati dell'istanza per la proprietà.
 
 </dd> <dt>
 
-*cbInstanceData* \[ in\]
+*cbInstanceData* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte della matrice specificata in *pInstanceData*.
+Dimensione della matrice specificata in *pInstanceData,* in byte.
 
 </dd> <dt>
 
-*pPropData* \[ out\]
+*pPropData* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a una matrice di byte che riceve i dati della proprietà.
 
 </dd> <dt>
 
-*cbPropData* \[ in\]
+*cbPropData* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte della matrice specificata in *pPropData*.
+Dimensione della matrice specificata in *pPropData,* in byte.
 
 </dd> <dt>
 
-*pcbReturned* \[ out\]
+*pcbReturned* \[ Cambio\]
 </dt> <dd>
 
-Riceve il numero di byte che il metodo copia nella matrice *pPropData* .
+Riceve il numero di byte copiati dal metodo nella *matrice pPropData.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                              | Descrizione                                                                 |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                     | Esito positivo.<br/>                                                         |
-| <dl> <dt>**\_Set Prop \_ non \_ supportato**</dt> </dl> | Il set di proprietà non è supportato.<br/>                               |
-| <dl> <dt>**\_ID Prop \_ non \_ supportato**</dt> </dl>  | ID di proprietà non supportato per il set di proprietà specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                     | Operazione completata.<br/>                                                         |
+| <dl> <dt>**E \_ PROP \_ SET \_ UNSUPPORTED**</dt> </dl> | Il set di proprietà non è supportato.<br/>                               |
+| <dl> <dt>**E \_ PROP \_ ID \_ UNSUPPORTED**</dt> </dl>  | L'ID della proprietà non è supportato per il set di proprietà specificato.<br/> |
 
 
 
@@ -114,17 +114,17 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Nel file di intestazione DSOUND. h esiste un'altra interfaccia con questo nome. Le due interfacce non sono compatibili. L'interfaccia [IKsControl](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol) , documentata in DirectShow DDK, è ora l'interfaccia consigliata per passare i set di proprietà tra i driver WDM e i componenti in modalità utente.
+> Un'altra interfaccia con questo nome esiste nel file di intestazione dsound.h. Le due interfacce non sono compatibili. [L'interfaccia IKsControl,](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol) documentata in DirectShow DDK, è ora l'interfaccia consigliata per il passaggio di set di proprietà tra i driver WDM e i componenti in modalità utente.
 
  
 
-Per recuperare una proprietà, allocare un buffer che verrà compilato da questo metodo. Per determinare le dimensioni del buffer necessarie, specificare **null** per *pPropData* e zero (0) per *cbPropData*. Questo metodo restituisce le dimensioni del buffer necessarie in *pcbReturned*.
+Per recuperare una proprietà, allocare un buffer che verrà quindi riempito da questo metodo. Per determinare le dimensioni del buffer necessarie, specificare **NULL** per *pPropData* e zero (0) per *cbPropData*. Questo metodo restituisce le dimensioni del buffer necessarie in *pcbReturned.*
 
-Prima di ksproxy. h, è necessario includere KS. h.
+È necessario includere Ks.h prima di Ksproxy.h.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene eseguita una query su un PIN per la relativa categoria pin, recuperando la proprietà di **\_ \_ categoria AMPROPERTY pin** . (Vedere [impostare la proprietà pin](pin-property-set.md)).
+L'esempio seguente esegue una query su un pin per la relativa categoria di pin recuperando la **proprietà AMPROPERTY \_ PIN \_ CATEGORY.** Vedere Aggiungere [un set di proprietà.](pin-property-set.md)
 
 
 ```C++
@@ -160,8 +160,8 @@ HRESULT GetPinCategory(IPin *pPin, GUID *pPinCategory)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Ksproxy. h</dt> </dl>    |
-| Libreria<br/>                  | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ksproxy.h</dt> </dl>    |
+| Libreria<br/>                  | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: WaveActiveBitAnd (funzione)
+title: Funzione WaveActiveBitAnd
 description: Restituisce l'operatore AND bit per bit di tutti i valori dell'espressione in tutte le corsie attive nell'onda corrente e lo replica in tutte le corsie attive.
 ms.assetid: 602884CD-E656-4DEB-A30A-8A7D127A2217
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2b6a3b0b097ea8737e07a91fcfc6553f22b828f1
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 96d09d91df4ff9226a8fb86203be0bd79bc3c11d1882553607358c3c84d3814c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104047601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118282999"
 ---
-# <a name="waveactivebitand-function"></a>WaveActiveBitAnd (funzione)
+# <a name="waveactivebitand-function"></a>Funzione WaveActiveBitAnd
 
 Restituisce l'operatore AND bit per bit di tutti i valori dell'espressione in tutte le corsie attive nell'onda corrente e lo replica in tutte le corsie attive.
 
@@ -39,7 +39,7 @@ Restituisce l'operatore AND bit per bit di tutti i valori dell'espressione in tu
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione da valutare.
@@ -48,11 +48,11 @@ Espressione da valutare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore AND bit per bit.
+Valore AND bit per bit.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -62,7 +62,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

@@ -1,7 +1,7 @@
 ---
 description: Il metodo Reply risponde a una richiesta.
 ms.assetid: 90e91b99-6a1c-46a2-b83d-eba483f1832a
-title: Metodo CAMThread. Reply (Wxutil. h)
+title: Metodo CAMThread.Reply (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5e86e0bc0155e527aa11c26531ae5608e6828362
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9783703d711800b8002aa0372292349d83620eafb097be2256ffde6ab2c91c09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662367"
 ---
-# <a name="camthreadreply-method"></a>Metodo CAMThread. Reply
+# <a name="camthreadreply-method"></a>Metodo CAMThread.Reply
 
 Il `Reply` metodo risponde a una richiesta.
 
@@ -45,7 +45,7 @@ void Reply(
 *dw* 
 </dt> <dd>
 
-Valore da restituire nel metodo [**CAMThread:: CallWorker**](camthread-callworker.md) .
+Valore da restituire nel [**metodo CAMThread::CallWorker.**](camthread-callworker.md)
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo CallWorker si blocca fino a quando non viene chiamato questo metodo. Il parametro *DW* fornisce il valore restituito per CallWorker. Chiamare questo metodo nella routine del thread dopo aver recuperato una richiesta, per rilasciare il thread richiedente.
+Il metodo CallWorker si blocca fino a quando non viene chiamato questo metodo. Il *parametro dw* fornisce il valore restituito per CallWorker. Chiamare questo metodo nella routine del thread dopo aver recuperato una richiesta per rilasciare il thread richiedente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Il metodo CallWorker si blocca fino a quando non viene chiamato questo metodo. I
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Evento Player. errore MediaError
-description: L'evento errore MediaError si verifica quando l'oggetto multimediale presenta una condizione di errore.
+title: Evento Player.MediaError
+description: L'evento MediaError si verifica quando l'oggetto Media presenta una condizione di errore.
 ms.assetid: b2e0176a-cc52-4f59-8894-440f426a1b6e
 keywords:
-- Media Player di Windows Event errore MediaError
-- Windows Event errore MediaError Media Player, classe Player
-- Classe Player Windows Media Player, evento errore MediaError
+- Evento MediaError Windows Media Player
+- Classe di evento MediaError Windows Media Player , Player
+- Classe Player Windows Media Player, evento MediaError
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec8c22825f4aa720efa85275ce520eb81f082fd9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb1eb94d245f0b0a91786b2b1a7b677429cc9040d8cbb1372164bf6e7ed209d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572841"
 ---
-# <a name="playermediaerror-event"></a>Evento Player. errore MediaError
+# <a name="playermediaerror-event"></a>Evento Player.MediaError
 
-L'evento **errore MediaError** si verifica quando l'oggetto **multimediale** presenta una condizione di errore.
+**L'evento MediaError** si verifica quando **l'oggetto Media** presenta una condizione di errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Player.MediaError(
 *pMediaObject* 
 </dt> <dd>
 
-Oggetto **multimediale** con una condizione di errore.
+**Oggetto** multimediale con una condizione di errore.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dei parametri evento viene specificato da Windows Media Player ed è possibile accedervi o passarli a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, incluse le maiuscole.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva.<br/>                           |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive.<br/>                           |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

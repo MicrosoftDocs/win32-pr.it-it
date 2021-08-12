@@ -12,16 +12,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 655379676bd117b89a6fe41a8d6895260e71a2bf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5d4915b2342e6c453134cabd431db59c62c037d6c5ec8cde139f402933bd4f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273706"
 ---
 # <a name="performservervalidation-eaptype"></a>PerformServerValidation (EapType)
 
-L'elemento **PerformServerValidation (EapType)** indica se viene eseguita la convalida del server.
+**L'elemento PerformServerValidation (EapType)** indica se viene eseguita la convalida del server.
 
 ``` syntax
 <xs:element
@@ -31,20 +31,20 @@ L'elemento **PerformServerValidation (EapType)** indica se viene eseguita la con
  />
 ```
 
-L'elemento è definito dall'elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+L'elemento è definito [**dall'elemento EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **PerformServerValidation** è facoltativo.
+**L'elemento PerformServerValidation** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -58,7 +58,7 @@ L'elemento **PerformServerValidation** è facoltativo.
 [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
@@ -67,7 +67,7 @@ L'elemento **PerformServerValidation** è facoltativo.
 
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)

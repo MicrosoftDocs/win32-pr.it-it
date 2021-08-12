@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_PSD_FULLPAGERECT (COMMDLG. h)
-description: Notifica a una procedura di hook PagePaintHook le coordinate del rettangolo della pagina di esempio nella finestra di dialogo Imposta pagina. La finestra di dialogo Invia questo messaggio quando sta per essere disegnato il contenuto della pagina di esempio.
+title: WM_PSD_FULLPAGERECT messaggio (Commdlg.h)
+description: Notifica a una routine hook PagePaintHook le coordinate del rettangolo della pagina di esempio nella finestra di dialogo Imposta pagina. La finestra di dialogo invia questo messaggio quando sta per disegnare il contenuto della pagina di esempio.
 ms.assetid: 88ca1d60-3335-480a-b874-c6f248a3c23a
 keywords:
-- Finestre di dialogo WM_PSD_FULLPAGERECT messaggio
+- WM_PSD_FULLPAGERECT finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b5265144822ba1f46c470b71169e0b27f2e1c75
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0b3d49ca34775657fbb626823fe68632ad963abc29a99ff5aa99dce69753e17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118280371"
 ---
-# <a name="wm_psd_fullpagerect-message"></a>\_ \_ Messaggio FULLPAGERECT di WM PSD
+# <a name="wm_psd_fullpagerect-message"></a>Messaggio \_ WM PSD \_ FULLPAGERECT
 
-Notifica a una procedura di hook [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) le coordinate del rettangolo della pagina di esempio nella finestra di dialogo **Imposta pagina** . La finestra di dialogo Invia questo messaggio quando sta per essere disegnato il contenuto della pagina di esempio.
+Notifica a una [*routine hook PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) le coordinate del rettangolo della pagina di esempio nella **finestra di dialogo Imposta** pagina. La finestra di dialogo invia questo messaggio quando sta per disegnare il contenuto della pagina di esempio.
 
 
 ```C++
@@ -47,19 +47,19 @@ Handle per il contesto di dispositivo per la pagina di esempio.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che contiene le coordinate, in pixel, della pagina di esempio.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) che contiene le coordinate, in pixel, della pagina di esempio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la procedura di hook restituisce **true**, la finestra di dialogo non invia più messaggi e non viene disegnato nella pagina di esempio fino alla successiva necessità di ricreare la pagina di esempio dal sistema.
+Se la routine hook restituisce **TRUE,** la finestra di dialogo non invia altri messaggi e non disegna nella pagina di esempio fino al successivo ridisegno della pagina di esempio da parte del sistema.
 
-Se la routine hook restituisce **false**, la finestra di dialogo Invia i messaggi rimanenti della sequenza di disegno.
+Se la routine hook restituisce **FALSE,** la finestra di dialogo invia i messaggi rimanenti della sequenza di disegno.
 
 ## <a name="remarks"></a>Commenti
 
-Nella finestra di dialogo **Imposta pagina** è inclusa un'immagine di una pagina di esempio in cui viene illustrato il modo in cui le selezioni dell'utente influiscono sull'aspetto dell'output stampato. Quando si chiama la funzione [**PAGESETUPDLG**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) , è possibile fornire una procedura di hook [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) per personalizzare l'aspetto della pagina di esempio. Ogni volta che la finestra di dialogo sta per creare il contenuto della pagina di esempio, la finestra di dialogo Invia una sequenza di messaggi alla routine hook.
+La **finestra di dialogo** Imposta pagina include un'immagine di una pagina di esempio che mostra in che modo le selezioni dell'utente influiscono sull'aspetto dell'output stampato. Quando si chiama la [**funzione PageSetupDlg,**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) è possibile fornire una procedura hook [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) per personalizzare l'aspetto della pagina di esempio. Ogni volta che la finestra di dialogo sta per disegnare il contenuto della pagina di esempio, la finestra di dialogo invia una sequenza di messaggi alla procedura hook.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ Nella finestra di dialogo **Imposta pagina** è inclusa un'immagine di una pagin
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -86,13 +86,13 @@ Nella finestra di dialogo **Imposta pagina** è inclusa un'immagine di una pagin
 [**PageSetupDlg**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85))
 </dt> <dt>
 
-[**\_PAGESETUPDLG PSD \_ WM**](wm-psd-pagesetupdlg.md)
+[**PAGINA \_ DI WM \_ PSDSETUPDLG**](wm-psd-pagesetupdlg.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
 
  

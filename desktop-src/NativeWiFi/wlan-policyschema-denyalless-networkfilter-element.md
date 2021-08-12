@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c3e83aeb14e0572f8e2ccc49bf2d04718afa7f30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5057f94dd91e2d7090c4f147ba987324e369dda706031ecebb8a79b165214414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619866"
 ---
 # <a name="denyalless-networkfilter-element"></a>Elemento denyAllESS (networkFilter)
 
-L'elemento denyAllESS (networkFilter) specifica se l'accesso a tutte le reti dell'infrastruttura è bloccato. Quando **denyAllESS** ha il valore true, i computer non possono connettersi a una rete dell'infrastruttura; in caso contrario, i computer possono connettersi alle reti dell'infrastruttura.
+L'elemento denyAllESS (networkFilter) specifica se l'accesso a tutte le reti dell'infrastruttura è bloccato. Quando **denyAllESS ha** valore TRUE, i computer non possono connettersi a una rete di infrastruttura. in caso contrario, i computer possono connettersi alle reti dell'infrastruttura.
 
 Il valore predefinito per questo elemento è FALSE. Se **denyAllESS** non è specificato in un profilo, per impostazione predefinita i computer possono connettersi alle reti dell'infrastruttura.
 
@@ -31,7 +31,7 @@ Il valore predefinito per questo elemento è FALSE. Se **denyAllESS** non è spe
  />
 ```
 
-L'elemento **denyAllESS** è definito dall'elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+**L'elemento denyAllESS** è definito dall'elemento [**networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,8 +39,8 @@ L'elemento **denyAllESS** è definito dall'elemento [**networkFilter**](wlan-pol
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -54,7 +54,7 @@ L'elemento **denyAllESS** è definito dall'elemento [**networkFilter**](wlan-pol
 [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**networkFilter (WLANPolicy)**](wlan-policyschema-networkfilter-wlanpolicy-element.md)

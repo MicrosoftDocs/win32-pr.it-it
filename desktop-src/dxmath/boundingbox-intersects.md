@@ -1,7 +1,7 @@
 ---
-description: Verifica il BoundingBox per l'intersezione con un altro oggetto.
+description: Verifica l'intersezione di BoundingBox con un altro oggetto.
 ms.assetid: df3d3df9-aa74-413d-808c-f7b276d11279
-title: BoundingBox. Intersects (metodi)
+title: Metodi di BoundingBox.Intersects
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9039d99640ae3989d0b20e9d48f681edabb021f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be730abe6d723f8a1eacd212a1c5cec971400afeeea733efba590838f19a0f5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278778"
 ---
-# <a name="boundingboxintersects-methods"></a>BoundingBox. Intersects (metodi)
+# <a name="boundingboxintersects-methods"></a>Metodi di BoundingBox.Intersects
 
-Verifica il BoundingBox per l'intersezione con un altro oggetto.
+Verifica l'intersezione di BoundingBox con un altro oggetto.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -28,13 +28,13 @@ Verifica il BoundingBox per l'intersezione con un altro oggetto.
 
 | Metodo                                                                                   | Descrizione                                                                                                                        |
 |:-----------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-| [**BoundingBox:: Intersects (XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector))                   | Testare il BoundingBox per l'intersezione con un piano.<br/>                                                                     |
-| [**BoundingBox:: Intersects (const BoundingBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(constboundingbox_))         | Verifica il BoundingBox per l'intersezione con un altro BoundingBox.<br/>                                                        |
-| [**BoundingBox:: Intersects (const BoundingSphere&)**](/previous-versions/windows/desktop/legacy/hh437825(v=vs.85))      | Verifica il BoundingBox per l'intersezione con una BoundingSphere.<br/>                                                           |
-| [**BoundingBox:: Intersects (const BoundingFrustum&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(constboundingfrustum_))     | Testare il [**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox) per l'intersezione con un [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>         |
-| [**BoundingBox:: Intersects (XMVECTOR, XMVECTOR, float&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector_fxmvector_float_))   | Testare il BoundingBox per l'intersezione con un raggio.<br/>                                                                       |
-| [**BoundingBox:: Intersects (XMVECTOR, XMVECTOR, XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector_fxmvector_fxmvector)) | Testare il BoundingBox per l'intersezione con un triangolo.<br/>                                                                  |
-| [**BoundingBox:: Intersects (const BoundingOrientedBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(constboundingorientedbox_)) | Testare il [**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox) per l'intersezione con un [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox).<br/> |
+| [**BoundingBox::Intersects (XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector))                   | Testare BoundingBox per l'intersezione con un piano.<br/>                                                                     |
+| [**BoundingBox::Intersects (const BoundingBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(constboundingbox_))         | Verifica l'intersezione di BoundingBox con un altro oggetto BoundingBox.<br/>                                                        |
+| [**BoundingBox::Intersects (const BoundingSphere&)**](/previous-versions/windows/desktop/legacy/hh437825(v=vs.85))      | Verifica l'intersezione di BoundingBox con BoundingSphere.<br/>                                                           |
+| [**BoundingBox::Intersects (const BoundingFrustum&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(constboundingfrustum_))     | Testare [**BoundingBox per**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox) l'intersezione con [**un oggetto BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>         |
+| [**BoundingBox::Intersects (XMVECTOR,XMVECTOR, float&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector_fxmvector_float_))   | Testare BoundingBox per l'intersezione con un raggio.<br/>                                                                       |
+| [**BoundingBox::Intersects (XMVECTOR,XMVECTOR,XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector_fxmvector_fxmvector)) | Testare BoundingBox per l'intersezione con un triangolo.<br/>                                                                  |
+| [**BoundingBox::Intersects (const BoundingOrientedBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(constboundingorientedbox_)) | Testare [**BoundingBox per**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox) l'intersezione con [**boundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox).<br/> |
 
 
 
@@ -48,7 +48,7 @@ Verifica il BoundingBox per l'intersezione con un altro oggetto.
 **Riferimento**
 </dt> <dt>
 
-[**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
+[**Boundingbox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
 </dt> </dl>
 
  

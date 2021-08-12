@@ -1,9 +1,9 @@
 ---
-title: EFFETTI. precedente
-description: Il metodo precedente Visualizza il set di impostazioni di visualizzazione precedente, se necessario, andando all'ultimo set di impostazioni della visualizzazione precedente.
+title: EFFECTS.previous
+description: Il metodo precedente visualizza il set di impostazioni di visualizzazione precedente, passando all'ultimo set di impostazioni della visualizzazione precedente, se necessario.
 ms.assetid: 20ef8f8b-a308-4e79-a4a8-70d04f1f0be6
 keywords:
-- EFFETTI. Media Player precedenti di Windows
+- EFFECTS.previous Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ee6bb89aab58324132a0023e843d23b840668b6f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41a4a8848ebad2e1580ff0ee0a5d102f012f8a91ef36ccd11803ee8933402f33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578755"
 ---
-# <a name="effectsprevious"></a>EFFETTI. precedente
+# <a name="effectsprevious"></a>EFFECTS.previous
 
-Il metodo **precedente** Visualizza il set di impostazioni di visualizzazione precedente, se necessario, andando all'ultimo set di impostazioni della visualizzazione precedente.
+Il **metodo precedente** visualizza il set di impostazioni di visualizzazione precedente, passando all'ultimo set di impostazioni della visualizzazione precedente, se necessario.
 
 ``` syntax
         elementID.previous()
@@ -46,7 +46,7 @@ Se il set di impostazioni corrente è il primo nella serie di tutte le visualizz
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -54,13 +54,13 @@ Se il set di impostazioni corrente è il primo nella serie di tutte le visualizz
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFETTI. avanti**](effects-next.md)
+[**EFFECTS.next**](effects-next.md)
 </dt> <dt>
 
-[**EFFECTs. allowAll**](effects-allowall.md)
+[**EFFECTS.allowAll**](effects-allowall.md)
 </dt> </dl>
 
  

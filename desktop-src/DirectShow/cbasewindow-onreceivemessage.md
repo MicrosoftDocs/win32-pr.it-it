@@ -1,7 +1,7 @@
 ---
 description: Il metodo OnReceiveMessage gestisce i messaggi della finestra.
 ms.assetid: 0f074f9b-00e5-42ff-a491-020d441acad1
-title: Metodo CBaseWindow. OnReceiveMessage (Winutil. h)
+title: Metodo CBaseWindow.OnReceiveMessage (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: defef9a7ca24d6875eda508989615f308a2385b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a5dbfb84edef1f5257cfda8cae08d27b219909f47a7d88fd29580ae12e48b3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657964"
 ---
-# <a name="cbasewindowonreceivemessage-method"></a>CBaseWindow. OnReceiveMessage, metodo
+# <a name="cbasewindowonreceivemessage-method"></a>Metodo CBaseWindow.OnReceiveMessage
 
 Il `OnReceiveMessage` metodo gestisce i messaggi della finestra.
 
@@ -45,14 +45,14 @@ virtual LRESULT OnReceiveMessage(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
 
 </dd> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
 Identificatore del messaggio.
@@ -81,14 +81,14 @@ Restituisce 0 se il messaggio è stato elaborato oppure 1 se il messaggio non è
 
 La classe base gestisce i messaggi seguenti:
 
--   \_chiusura WM
--   \_spostamento WM
--   \_PALETTECHANGED WM
--   \_QUERYNEWPALETTE WM
--   \_dimensioni WM
--   \_SYSCOLORCHANGE WM
+-   WM \_ CLOSE
+-   WM \_ MOVE
+-   WM \_ PALETTECHANGED
+-   WM \_ QUERYNEWPALETTE
+-   DIMENSIONI \_ WM
+-   WM \_ SYSCOLORCHANGE
 
-Una classe derivata può eseguire l'override di questo metodo per gestire altri messaggi. La classe derivata deve chiamare il metodo della classe base per gestire tutti i messaggi ignorati dalla classe derivata.
+Una classe derivata può eseguire l'override di questo metodo per gestire altri messaggi. La classe derivata deve chiamare il metodo della classe base per gestire eventuali messaggi ignorati dalla classe derivata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,8 +96,8 @@ Una classe derivata può eseguire l'override di questo metodo per gestire altri 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

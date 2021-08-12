@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo get Owner Recupera il proprietario della finestra corrente.
+description: Il metodo get \_ Owner recupera il proprietario della finestra corrente.
 ms.assetid: f0eea5e7-4dfa-4973-ae12-487657e6be80
-title: Metodo CBaseControlWindow.get_Owner (Ctlutil. h)
+title: CBaseControlWindow.get_Owner metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8f8e3d4a331dbc66397a7b0058fcefcede2cdbb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a64325fddebc410c5a75a5c2fb8811241012feb6a046b9059897f9b13e0206f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660514"
 ---
-# <a name="cbasecontrolwindowget_owner-method"></a>Metodo CBaseControlWindow. Get \_ Owner
+# <a name="cbasecontrolwindowget_owner-method"></a>Metodo CBaseControlWindow.get \_ Owner
 
 Il `get_Owner` metodo recupera il proprietario della finestra corrente.
 
@@ -51,15 +51,15 @@ Puntatore al proprietario della finestra.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-La finestra video può rientrare in un ambiente di documento. A tale scopo, è necessario che la finestra sia costituita da un elemento figlio di un'altra finestra, in modo che venga ritagliata e spostata in modo appropriato. Questa proprietà consente di impostare e recuperare il proprietario della finestra. Quando la finestra è di proprietà di un'altra finestra, viene semplicemente chiamata la funzione **padre** di Microsoft Win32. Un'applicazione che chiama questa funzione modificherà gli stili della finestra in modo da impostare il \_ bit WS figlio su.
+La finestra video può essere riprodotta all'interno di un ambiente di documento. A tale scopo, la finestra deve essere resa figlio di un'altra finestra (in modo che sia ritagliata e spostata in modo appropriato). Questa proprietà consente di impostare e recuperare il proprietario della finestra. Quando la finestra è di proprietà di un'altra finestra, chiama semplicemente la funzione **SetParent** di Microsoft Win32. Un'applicazione che chiama questa funzione modificherà gli stili della finestra per impostare il \_ bit WS CHILD.
 
-Quando la finestra è di proprietà di un'altra finestra, verranno automaticamente trasmessi determinati set di messaggi (in particolare, i messaggi del mouse e della tastiera). Questo consente a un'applicazione di eseguire semplici modifiche e altre interazioni.
+Quando la finestra è di proprietà di un'altra finestra, inoltra automaticamente determinati set di messaggi ,in particolare i messaggi del mouse e della tastiera. In questo modo un'applicazione può eseguire semplici operazioni di modifica dell'area sensibile e altre interazioni.
 
-Questa funzione membro deve essere chiamata da oggetti esterni tramite l'interfaccia [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) e pertanto blocca la sezione critica per la sincronizzazione con il filtro associato. Chiamare la funzione membro [**CBaseControlWindow:: GetOwnerWindow**](cbasecontrolwindow-getownerwindow.md) per recuperare questa proprietà se non viene chiamata da un oggetto esterno.
+Questa funzione membro deve essere chiamata da oggetti esterni tramite [**l'interfaccia IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) e pertanto blocca la sezione critica per la sincronizzazione con il filtro associato. Chiamare la [**funzione membro CBaseControlWindow::GetOwnerWindow**](cbasecontrolwindow-getownerwindow.md) per recuperare questa proprietà se non viene chiamata da un oggetto esterno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Questa funzione membro deve essere chiamata da oggetti esterni tramite l'interfa
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

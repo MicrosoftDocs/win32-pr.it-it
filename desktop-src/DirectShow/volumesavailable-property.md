@@ -1,15 +1,15 @@
 ---
-description: La proprietà VolumesAvailable Recupera il numero di volumi in un set multivolume.
+description: La proprietà VolumesAvailable recupera il numero di volumi in un set multivolume.
 ms.assetid: d056b6d5-f4a4-480b-96a5-8e95dce23dfb
 title: Proprietà VolumesAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccdcf32ba8b7bea3958ef469bc0f90f9d41ecc14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb0ab5b07f30e49f1bbe7655a2d66d9aaa683099df64cadf94b5dfffdd3b3af0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118650938"
 ---
 # <a name="volumesavailable-property"></a>Proprietà VolumesAvailable
 
@@ -26,11 +26,11 @@ La `VolumesAvailable` proprietà recupera il numero di volumi in un set multivol
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il numero di volumi nel set come valore integer.
+Restituisce il numero di volumi nel set come Integer.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di sola lettura e non prevede alcun valore predefinito. È possibile che alcuni titoli di DVD vengano rilasciati come serie o set multidisco. Utilizzare questo metodo per determinare il numero del volume del disco corrente.
+Questa proprietà è di sola lettura senza alcun valore predefinito. Alcuni titoli DVD potrebbero essere rilasciati come set o serie multidisco. Usare questo metodo per determinare il numero di volume per il disco corrente.
 
  
 

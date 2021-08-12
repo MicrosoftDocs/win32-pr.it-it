@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 81e68c94420b3d7715845f8d6bd14e26b770b44f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: da80cdb4810ea3e598ad9483ccf52e8033ccb1a5b7ee65351e2cfcc273a3415f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660018"
 ---
 # <a name="cbasedispatchgettypeinfocount-method"></a>Metodo CBaseDispatch.GetTypeInfoCount
 
@@ -58,7 +58,7 @@ Restituisce uno dei valori seguenti.
 | Codice restituito                                                                               | Descrizione                           |
 |-------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione completata.<br/>                   |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | Argomento del puntatore **NULL.**<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl> | Argomento del puntatore **NULL.**<br/> |
 
 
 
@@ -70,7 +70,7 @@ Restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

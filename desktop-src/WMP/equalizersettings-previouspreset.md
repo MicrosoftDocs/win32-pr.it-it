@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.previousPreset
-description: Il metodo previousPreset applica il set di impostazioni di equalizzatore precedente.
+description: Il metodo previousPreset applica il set di impostazioni dell'equalizzatore precedente.
 ms.assetid: 0b344e5f-fe0d-4a23-b204-8fea340a8e21
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. previousPreset
+- EQUALIZERSETTINGS.previousPreset Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 799775a5958903bc2d5e98b6ae467088b355962f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc18a978a391c7d2aff5efa3ca10fdbb84ddadc820c6b5990fa16f04692af38e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577948"
 ---
 # <a name="equalizersettingspreviouspreset"></a>EQUALIZERSETTINGS.previousPreset
 
-Il metodo **previousPreset** applica il set di impostazioni di equalizzatore precedente.
+Il **metodo previousPreset applica** il set di impostazioni dell'equalizzatore precedente.
 
 ``` syntax
         elementID.previousPreset()
@@ -46,7 +46,7 @@ Se il set di impostazioni corrente è il primo disponibile, l'ultimo set di impo
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

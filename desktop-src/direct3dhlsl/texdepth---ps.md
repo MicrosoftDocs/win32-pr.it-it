@@ -1,6 +1,6 @@
 ---
-title: texdepth-PS
-description: Calcola i valori di profondità da usare nel test di confronto del buffer di profondità per questo pixel.
+title: texdepth - ps
+description: Calcolare i valori di profondità da usare nel test di confronto del buffer di profondità per questo pixel.
 ms.assetid: f7128dbb-a5f3-4e95-b53b-7432439ae0c4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,55 +9,55 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3eb5cd337108d08efee465c136adf1afb4921123
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f39135c34c07a9a20f03c9ebc979647733884b37680ef07b9bc666b882052690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103857754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118284175"
 ---
-# <a name="texdepth---ps"></a>texdepth-PS
+# <a name="texdepth---ps"></a>texdepth - ps
 
-Calcola i valori di profondità da usare nel test di confronto del buffer di profondità per questo pixel.
+Calcolare i valori di profondità da usare nel test di confronto del buffer di profondità per questo pixel.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| texdepth DST |
+| texdepth dst |
 |--------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texdepth              |      |      |      | x    |      |      |       |      |       |
 
 
 
- 
+ 
 
-Questa istruzione USA R5. r/R5. g nel test di confronto del buffer di profondità per questo pixel. I dati nei canali blu e alfa vengono ignorati. Se R5. g = 0, il risultato di R5. r/R5. g = 1,0.
+Questa istruzione usa r5.r/r5.g nel test di confronto del buffer di profondità per questo pixel. I dati nei canali blu e alfa vengono ignorati. Se r5.g = 0, il risultato di r5.r/r5.g = 1,0.
 
-Il registro temporaneo R5 è l'unico registro che questa istruzione può utilizzare.
+Il registro temporaneo r5 è l'unico registro che questa istruzione può usare.
 
-Dopo l'esecuzione di questa istruzione, il registro temporaneo R5 non è disponibile per un uso aggiuntivo nello shader.
+Dopo l'esecuzione di questa istruzione, il registro temporaneo r5 non è disponibile per un uso aggiuntivo nello shader.
 
-Quando si esegue il campionamento multiplo, l'utilizzo di questa istruzione Elimina la maggior parte del vantaggio del buffer di profondità di risoluzione superiore. Poiché il pixel shader viene eseguito una volta per ogni pixel, viene usato il valore di profondità singola restituito da [texm3x2depth-PS](texm3x2depth---ps.md) o texdepth per ogni test di confronto di profondità dei sottopixel.
+Quando si esegue il multicampionamento, l'uso di questa istruzione elimina la maggior parte dei vantaggi del buffer di profondità con risoluzione più elevata. Poiché il pixel shader viene eseguito una volta per pixel, per ognuno dei test di confronto della profondità subpixel verrà usato il valore di profondità singolo restituito da [texm3x2depth - ps](texm3x2depth---ps.md) o texdepth.
 
 ## <a name="examples"></a>Esempio
 
-Di seguito è riportato un esempio che usa texdepth.
+Di seguito è riportato un esempio di uso di texdepth.
 
 
 ```
@@ -78,12 +78,12 @@ texdepth  r5         // Calculate pixel depth as r5.r / r5.g
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

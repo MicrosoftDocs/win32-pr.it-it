@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. addSelectedToPlaylist
+title: PLAYLIST.addSelectedToPlaylist
 description: Il metodo addSelectedToPlaylist aggiunge l'elemento selezionato a una playlist.
 ms.assetid: 02ce8553-4ffc-44c1-b260-f41d0877137f
 keywords:
-- PLAYLIST. addSelectedToPlaylist Windows Media Player
+- PLAYLIST.addSelectedToPlaylist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5cda55f82d13db6061cb713388a618dfa8f2b5e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b67fd824bb5055156a6ae1846ab4017b662dbeea9434ff1657d7fe76ebda640b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571481"
 ---
-# <a name="playlistaddselectedtoplaylist"></a>PLAYLIST. addSelectedToPlaylist
+# <a name="playlistaddselectedtoplaylist"></a>PLAYLIST.addSelectedToPlaylist
 
-Il metodo **addSelectedToPlaylist** aggiunge l'elemento selezionato a una playlist.
+Il **metodo addSelectedToPlaylist aggiunge** l'elemento selezionato a una playlist.
 
 ``` syntax
         elementID.addSelectedToPlaylist(playlist)
@@ -32,10 +32,10 @@ Il metodo **addSelectedToPlaylist** aggiunge l'elemento selezionato a una playli
 
 <dl> <dt>
 
-<span id="playlist"></span><span id="PLAYLIST"></span>*playlist*
+<span id="playlist"></span><span id="PLAYLIST"></span>*Playlist*
 </dt> <dd>
 
-Oggetto **playlist** che riceverà l'elemento selezionato.
+**Oggetto playlist** che riceverà l'elemento selezionato.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -57,7 +57,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

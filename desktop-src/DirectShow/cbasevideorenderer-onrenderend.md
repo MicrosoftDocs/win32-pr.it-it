@@ -1,7 +1,7 @@
 ---
-description: Il metodo OnRenderEnd esegue una smussatura per i casi in cui il tempo di rendering varia a causa di interruzioni.
+description: Il metodo OnRenderEnd esegue l'arrotondamento per i casi in cui il tempo di rendering varia a causa di interruzioni.
 ms.assetid: 561b3306-0c41-4f04-b73a-78e7b4038e86
-title: Metodo CBaseVideoRenderer. OnRenderEnd (Renbase. h)
+title: Metodo CBaseVideoRenderer.OnRenderEnd (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8f37b4d03f77090f4cac40a218fd3ac27c0c349d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24d622ec62b27ae2e85eb9bef37516c82acbb17e03bef9a51b161edacd0b95c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658689"
 ---
-# <a name="cbasevideorendereronrenderend-method"></a>CBaseVideoRenderer. OnRenderEnd, metodo
+# <a name="cbasevideorendereronrenderend-method"></a>Metodo CBaseVideoRenderer.OnRenderEnd
 
-Il `OnRenderEnd` metodo esegue la smussatura per i casi in cui il tempo di rendering varia a causa di interruzioni.
+Il `OnRenderEnd` metodo esegue l'arrotondamento per i casi in cui il tempo di rendering varia a causa di interruzioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void OnRenderEnd(
 *pMediaSample* 
 </dt> <dd>
 
-Puntatore all'esempio di supporto.
+Puntatore all'esempio multimediale.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Questo metodo non restituisce valori.
 
 Questa funzione membro deve essere chiamata subito dopo il disegno di un'immagine.
 
-Questa funzione membro esegue l'override di [**CBaseRenderer:: OnRenderEnd**](cbaserenderer-onrenderend.md).
+Questa funzione membro esegue l'override [**di CBaseRenderer::OnRenderEnd**](cbaserenderer-onrenderend.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Questa funzione membro esegue l'override di [**CBaseRenderer:: OnRenderEnd**](cb
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

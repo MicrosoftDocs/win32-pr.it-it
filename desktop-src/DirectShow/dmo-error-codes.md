@@ -1,19 +1,19 @@
 ---
-description: La tabella seguente contiene i codici di errore specifici di Microsoft DirectX Media Objects (DMOs). Questi codici di errore sono definiti nel file di intestazione Mediaerr. h.
+description: La tabella seguente contiene codici di errore specifici di Microsoft DirectX Media Objects (DMO). Questi codici di errore sono definiti nel file di intestazione Mediaerr.h.
 ms.assetid: 1ded5656-084d-4315-a414-aebf4a1820dc
-title: Codici di errore DMO (Mediaerr. h)
+title: DMO Codici di errore (Mediaerr.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d76c8cd5e7001751cd2cf9eb7da4d88b2dc100bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1aa8f45b8f9f61185adbcd79a354df8ab3e41471067b66179193b825a5e40651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653295"
 ---
-# <a name="dmo-error-codes"></a>Codici di errore DMO
+# <a name="dmo-error-codes"></a>DMO Codici di errore
 
-La tabella seguente contiene i codici di errore specifici di Microsoft DirectX Media Objects (DMOs). Questi codici di errore sono definiti nel file di intestazione Mediaerr. h.
+La tabella seguente contiene codici di errore specifici di Microsoft DirectX Media Objects (DMO). Questi codici di errore sono definiti nel file di intestazione Mediaerr.h.
 
 
 
@@ -21,10 +21,10 @@ La tabella seguente contiene i codici di errore specifici di Microsoft DirectX M
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DMO_E_INVALIDSTREAMINDEX"></span><span id="dmo_e_invalidstreamindex"></span><dl> <dt>**DMO \_ E \_ INVALIDSTREAMINDEX**</dt> <dt>0x80040201</dt> </dl> | Indice del flusso non valido.<br/>                                                                                                                                    |
 | <span id="DMO_E_INVALIDTYPE"></span><span id="dmo_e_invalidtype"></span><dl> <dt>**DMO \_ E \_ INVALIDTYPE**</dt> <dt>0x80040202</dt> </dl>                      | Tipo di supporto non valido.<br/>                                                                                                                                      |
-| <span id="DMO_E_TYPE_NOT_SET"></span><span id="dmo_e_type_not_set"></span><dl> <dt>**DMO \_ \_Tipo E \_ non \_ impostato**</dt> <dt>0x80040203</dt> </dl>                 | Il tipo di supporto non è stato impostato. Uno o più flussi richiedono un tipo di supporto prima di poter eseguire questa operazione.<br/>                                                 |
-| <span id="DMO_E_NOTACCEPTING"></span><span id="dmo_e_notaccepting"></span><dl> <dt>**DMO \_ E \_ NOTACCEPTING**</dt> <dt>0x80040204</dt> </dl>                   | Non è possibile accettare i dati nel flusso. Potrebbe essere necessario elaborare altri dati di output; vedere [**IMediaObject::P rocessinput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processinput).<br/> |
-| <span id="DMO_E_TYPE_NOT_ACCEPTED"></span><span id="dmo_e_type_not_accepted"></span><dl> <dt>**DMO \_ \_Tipo E \_ non \_ accettato**</dt> <dt>0x80040205</dt> </dl>  | Il tipo di supporto non è stato accettato.<br/>                                                                                                                             |
-| <span id="DMO_E_NO_MORE_ITEMS"></span><span id="dmo_e_no_more_items"></span><dl> <dt>**DMO \_ E \_ nessun \_ altro \_ elemento**</dt> <dt>0x80040206</dt> </dl>              | Indice del tipo di supporto non compreso nell'intervallo.<br/>                                                                                                                        |
+| <span id="DMO_E_TYPE_NOT_SET"></span><span id="dmo_e_type_not_set"></span><dl> <dt>**DMO \_ E \_ TYPE \_ NOT \_ SET**</dt> <dt>0x80040203</dt> </dl>                 | Tipo di supporto non impostato. Uno o più flussi richiedono un tipo di supporto prima di poter eseguire questa operazione.<br/>                                                 |
+| <span id="DMO_E_NOTACCEPTING"></span><span id="dmo_e_notaccepting"></span><dl> <dt>**DMO \_ E \_ NOTACCEPTING**</dt> <dt>0x80040204</dt> </dl>                   | I dati non possono essere accettati in questo flusso. Potrebbe essere necessario elaborare più dati di output. vedere [**IMediaObject::P rocessInput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processinput).<br/> |
+| <span id="DMO_E_TYPE_NOT_ACCEPTED"></span><span id="dmo_e_type_not_accepted"></span><dl> <dt>**DMO \_ E \_ TIPO \_ NON \_ ACCETTATO**</dt> <dt>0X80040205</dt> </dl>  | Tipo di supporto non accettato.<br/>                                                                                                                             |
+| <span id="DMO_E_NO_MORE_ITEMS"></span><span id="dmo_e_no_more_items"></span><dl> <dt>**DMO \_ E \_ NO MORE ITEMS \_ \_ 0x80040206**</dt> <dt></dt> </dl>              | L'indice di tipo media non è compreso nell'intervallo.<br/>                                                                                                                        |
 
 
 
@@ -34,7 +34,7 @@ La tabella seguente contiene i codici di errore specifici di Microsoft DirectX M
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Mediaerr. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Mediaerr.h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ La tabella seguente contiene i codici di errore specifici di Microsoft DirectX M
 
 <dl> <dt>
 
-[Costanti DMO](dmo-constants.md)
+[DMO Costanti](dmo-constants.md)
 </dt> </dl>
 
  

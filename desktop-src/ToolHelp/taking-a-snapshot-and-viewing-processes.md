@@ -1,21 +1,21 @@
 ---
 title: Creazione di uno snapshot e visualizzazione dei processi
-description: La seguente applicazione console semplice ottiene un elenco di processi in esecuzione.
+description: La semplice applicazione console seguente ottiene un elenco di processi in esecuzione.
 ms.assetid: 318d166f-858f-4f33-9422-977e0c4beb3f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b90a90ea3456d2783c6015ae230d0f0b9e84806e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9cdf74ec3d0d0d47e91b385598b06a672ee17e63681f2c82305474db06993ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118603794"
 ---
 # <a name="taking-a-snapshot-and-viewing-processes"></a>Creazione di uno snapshot e visualizzazione dei processi
 
-La seguente applicazione console semplice ottiene un elenco di processi in esecuzione. In primo luogo, la `GetProcessList` funzione acquisisce uno snapshot dei processi attualmente in esecuzione nel sistema usando [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot), quindi esamina l'elenco registrato nello snapshot usando [**Process32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32first) e [**Process32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32next). Per ogni processo, a sua volta, `GetProcessList` chiama la `ListProcessModules` funzione descritta in [attraversando l'elenco dei moduli](traversing-the-module-list.md)e la `ListProcessThreads` funzione descritta in [attraversando l'elenco dei thread](traversing-the-thread-list.md).
+La semplice applicazione console seguente ottiene un elenco di processi in esecuzione. In primo luogo, la funzione crea uno snapshot dei processi attualmente in esecuzione nel sistema usando `GetProcessList` [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot)e quindi esegue l'elenco registrato nello snapshot usando [**Process32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32first) e [**Process32Next.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32next) Per ogni processo a sua volta, chiama la funzione descritta in Attraversamento dell'elenco di moduli e la funzione descritta `GetProcessList` `ListProcessModules` in [](traversing-the-module-list.md) `ListProcessThreads` [Attraversamento dell'elenco di thread](traversing-the-thread-list.md).
 
-Una semplice funzione di segnalazione degli errori, `printError` , Visualizza la causa di eventuali errori, che in genere risultano da restrizioni di sicurezza. Ad esempio, [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) non riesce per i processi inattivi e CSRSS perché le relative restrizioni di accesso impediscono l'apertura del codice a livello di utente.
+Una semplice funzione di segnalazione degli errori, , visualizza il motivo di eventuali errori, che in genere `printError` derivano da restrizioni di sicurezza. Ad esempio, [**OpenProcess ha**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) esito negativo per i processi Inattivi e CSRSS perché le restrizioni di accesso impediscono al codice a livello di utente di aprirli.
 
 
 ```C++
@@ -217,6 +217,6 @@ void printError( TCHAR* msg )
 [Snapshot del sistema](snapshots-of-the-system.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

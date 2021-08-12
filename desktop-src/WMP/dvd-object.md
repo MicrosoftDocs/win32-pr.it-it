@@ -1,9 +1,9 @@
 ---
 title: Oggetto DVD
-description: L'oggetto DVD fornisce proprietà e metodi per lavorare con i DVD.
+description: L'oggetto DVD fornisce proprietà e metodi per l'uso dei DVD.
 ms.assetid: 953f6ba5-637b-4f70-aeea-dfe9f52d8675
 keywords:
-- Media Player di Windows per oggetti DVD
+- Oggetto DVD Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,67 +13,67 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 656b08f90f3b6878cfde2a526ddf682a82dd8498
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: e7d399a3d62eb2d37402db599bd5d3303e5e978ab6ab5fbfee4b4c8970c9e836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104398080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579063"
 ---
 # <a name="dvd-object"></a>Oggetto DVD
 
-L'oggetto **DVD** fornisce proprietà e metodi per lavorare con i DVD.
+**L'oggetto DVD** fornisce proprietà e metodi per l'uso dei DVD.
 
-L'oggetto **DVD** supporta le seguenti proprietà.
+**L'oggetto DVD** supporta le proprietà seguenti.
 
 
 
 | Proprietà                           | Descrizione                                                                                        |
 |------------------------------------|----------------------------------------------------------------------------------------------------|
-| [dominio](dvd-domain.md)           | Recupera il dominio corrente del DVD.                                                           |
-| [isAvailable](dvd-isavailable.md) | Recupera un valore che indica se un tipo specificato di informazioni è disponibile o se è possibile eseguire una determinata azione. |
+| [Dominio](dvd-domain.md)           | Recupera il dominio corrente del DVD.                                                           |
+| [isAvailable](dvd-isavailable.md) | Recupera se un tipo specificato di informazioni è disponibile o se è possibile eseguire una determinata azione. |
 
 
 
- 
+ 
 
-L'oggetto **DVD** supporta i metodi seguenti.
+**L'oggetto DVD** supporta i metodi seguenti.
 
 
 
 | Metodo                         | Descrizione                                                                                          |
 |--------------------------------|------------------------------------------------------------------------------------------------------|
-| [Indietro](dvd-back.md)           | Consente di modificare la visualizzazione da un sottomenu al relativo menu padre.                                               |
-| [riprendere](dvd-resume.md)       | Passa alla modalità di riproduzione dalla modalità menu, riprendendo nella stessa posizione in cui è stato richiamato il menu. |
+| [Indietro](dvd-back.md)           | Modifica la visualizzazione da un sottomenu al menu padre.                                               |
+| [riassumere](dvd-resume.md)       | Modifiche alla modalità di riproduzione dalla modalità menu, riprendendo nella stessa posizione in cui è stato richiamato il menu. |
 | [titleMenu](dvd-titlemenu.md) | Interrompe la riproduzione e visualizza il menu del titolo.                                                          |
-| [Menu di scelta rapida](dvd-topmenu.md)     | Interrompe la riproduzione e visualizza il menu radice.                                                           |
+| [topMenu](dvd-topmenu.md)     | Arresta la riproduzione e visualizza il menu radice.                                                           |
 
 
 
- 
+ 
 
-È possibile accedere all'oggetto **DVD** tramite la proprietà seguente.
+**L'accesso** all'oggetto DVD avviene tramite la proprietà seguente.
 
 
 
 | Oggetto                      | Proprietà              |
 |-----------------------------|-----------------------|
-| [Player](player-object.md) | [DVD](player-dvd.md) |
+| [Player](player-object.md) | [Dvd](player-dvd.md) |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**Riferimento del modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
+[**Informazioni di riferimento sul modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: "Membro CBaseFilter::m_tStart: tempo di riferimento corrispondente all'ora del flusso 0."
+description: "Membro CBaseFilter::m_tStart: ora di riferimento corrispondente all'ora del flusso 0."
 ms.assetid: 3a4aadf7-6ae4-4aaa-9d14-cad1392de88c
 title: Membro CBaseFilter::m_tStart (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3482725d1afbce1969fe18e095b01e84829e4996
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b453758e2eeb56054b3c43e395a8ae3490d67b3367c52e13a0fa6a1f4c240fe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108120099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659784"
 ---
 # <a name="cbasefilterm_tstart-member"></a>Membro CBaseFilter::m \_ tStart
 
@@ -42,7 +42,7 @@ CRefTime m_tStart;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

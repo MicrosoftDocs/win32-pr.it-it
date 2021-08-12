@@ -1,9 +1,9 @@
 ---
-title: Messaggio DRV_CLOSE (mmsystem. h)
-description: Indica al driver di chiudere l'istanza di specificata. Se non sono aperte altre istanze, il driver deve prepararsi per la versione successiva dalla memoria.
+title: DRV_CLOSE messaggio (Mmsystem.h)
+description: Indica al driver di chiudere l'istanza specificata. Se non sono aperte altre istanze, il driver deve prepararsi per il rilascio successivo dalla memoria.
 ms.assetid: 98d7fe47-5194-4912-a9d6-3af3d1fa4e60
 keywords:
-- DRV_CLOSE messaggi multimediali di Windows
+- DRV_CLOSE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a205b7e6edb4a427b0e80d32cc711d9bf2b052c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d89be1821b03e43fbe05b5ed2efc90e40db03e36538cf0412201baa7273e596
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622668"
 ---
-# <a name="drv_close-message"></a>\_Messaggio di chiusura DRV
+# <a name="drv_close-message"></a>Messaggio CLOSE di \_ DRV
 
-Indica al driver di chiudere l'istanza di specificata. Se non sono aperte altre istanze, il driver deve prepararsi per la versione successiva dalla memoria.
+Indica al driver di chiudere l'istanza specificata. Se non sono aperte altre istanze, il driver deve prepararsi per il rilascio successivo dalla memoria.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Indica al driver di chiudere l'istanza di specificata. Se non sono aperte altre 
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificatore del driver installabile. Si tratta dello stesso valore restituito in precedenza dal driver dal messaggio [**\_ aperto DRV**](drv-open.md) .
+Identificatore del driver installabile. Si tratta dello stesso valore restituito in precedenza dal driver dal [**messaggio DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
@@ -46,20 +46,20 @@ Handle dell'istanza del driver installabile.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-valore a 32 bit specificato come parametro *lParam1* in una chiamata alla funzione **DriverClose** .
+Valore a 32 bit specificato come parametro *lParam1* in una chiamata alla **funzione DriverClose.**
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-valore a 32 bit specificato come parametro *lParam2* in una chiamata alla funzione **DriverClose** .
+Valore a 32 bit specificato come *parametro lParam2* in una chiamata alla **funzione DriverClose.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero in caso di esito positivo o zero.
+Restituisce un valore diverso da zero se ha esito positivo o zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ Restituisce un valore diverso da zero in caso di esito positivo o zero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (include Windows.h)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Restituisce un valore diverso da zero in caso di esito positivo o zero.
 [Driver installabili](installable-drivers.md)
 </dt> <dt>
 
-[Messaggi di driver installabili](installable-driver-messages.md)
+[Messaggi del driver installabili](installable-driver-messages.md)
 </dt> </dl>
 
  

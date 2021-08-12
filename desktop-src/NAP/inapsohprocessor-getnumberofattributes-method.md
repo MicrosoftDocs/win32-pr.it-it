@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSoHProcessor GetNumberOfAttributes (NapProtocol. h)
-description: Recupera il numero totale di attributi nel rapporto di integrità.
+title: Metodo INapSoHProcessor GetNumberOfAttributes (NapProtocol.h)
+description: Recupera il numero totale di attributi in SoH.
 ms.assetid: ee0b1857-65a7-47bb-ae91-c939344a24d0
 keywords:
-- NAP metodo GetNumberOfAttributes
+- Metodo GetNumberOfAttributes NAP
 - Metodo GetNumberOfAttributes NAP, interfaccia INapSoHProcessor
 - Interfaccia INapSoHProcessor NAP, metodo GetNumberOfAttributes
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f1336362b44d49c71ce81b197f9f95b1a1b8fc9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a55805d85cc6a809a915f3998ab1b3dd218bd35a10b3b0044ff7c78130a72d97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621172"
 ---
-# <a name="inapsohprocessorgetnumberofattributes-method"></a>Metodo INapSoHProcessor:: GetNumberOfAttributes
+# <a name="inapsohprocessorgetnumberofattributes-method"></a>Metodo INapSoHProcessor::GetNumberOfAttributes
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSoHProcessor:: GetNumberOfAttributes** Recupera il numero totale di attributi nel rapporto di integrità.
+Il **metodo INapSoHProcessor::GetNumberOfAttributes** recupera il numero totale di attributi in SoH.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ HRESULT GetNumberOfAttributes(
 
 <dl> <dt>
 
-*attributeCount* \[ out\]
+*attributeCount* \[ Cambio\]
 </dt> <dd>
 
 Puntatore al conteggio degli attributi restituiti.
@@ -56,14 +56,14 @@ Puntatore al conteggio degli attributi restituiti.
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -76,10 +76,10 @@ Puntatore al conteggio degli attributi restituiti.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

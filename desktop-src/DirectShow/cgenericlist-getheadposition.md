@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetHeadPosition recupera la posizione del primo elemento nell'elenco.
 ms.assetid: 3f376b0b-5551-4baf-943a-224a7cb9bb1a
-title: Metodo CGenericList. GetHeadPosition (Wxlist. h)
+title: Metodo CGenericList.GetHeadPosition (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b8f0669dd5b6647b362b610805ddc8a394e1ba59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b34b8e4c01a66e27c4a9a98aae8db87ce83cf46e5c46345d336da08548aa7383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656167"
 ---
-# <a name="cgenericlistgetheadposition-method"></a>CGenericList. GetHeadPosition, metodo
+# <a name="cgenericlistgetheadposition-method"></a>Metodo CGenericList.GetHeadPosition
 
 Il `GetHeadPosition` metodo recupera la posizione del primo elemento nell'elenco.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore di posizione oppure **null** se l'elenco è vuoto.
+Restituisce un valore POSITION o **NULL se** l'elenco è vuoto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce un valore di posizione oppure **null** se l'elenco è vuoto.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

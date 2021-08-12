@@ -1,9 +1,9 @@
 ---
-title: Struttura EapHostPeerNapInfo (Eaphostpeerapis. h)
-description: Contiene le informazioni di protezione accesso alla rete (NAP) su un supplicant EAP.
+title: Struttura EapHostPeerNapInfo (Eaphostpeerapis.h)
+description: Contiene le informazioni di Protezione accesso alla rete (NAP) su un supplicant EAP.
 ms.assetid: 703eda56-5932-44d5-ae7f-0a6328d82237
 keywords:
-- Struttura EapHostPeerNapInfo EAPHost
+- Struttura EAPHostPeerNapInfo
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3221f40dea9e84e410a1a643bbbcdc94e9039b21
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5fe91c88f633f2e42599938e45e1291c90f1ec9c08559a84f132f3af9269de39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274538"
 ---
 # <a name="eaphostpeernapinfo-structure"></a>Struttura EapHostPeerNapInfo
 
-La struttura **EapHostPeerNapInfo** contiene le informazioni di protezione accesso alla rete (NAP) su un supplicant EAP.
+La **struttura EapHostPeerNapInfo** contiene le informazioni di Protezione accesso alla rete in un supplicante EAP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,27 +46,27 @@ typedef struct _tagEapHostPeerNapInfo {
 **isolationState**
 </dt> <dd>
 
-Struttura [**di \_ stato di isolamento**](/windows/desktop/api/eaphostpeertypes/ne-eaphostpeertypes-isolation_state) che specifica lo stato di isolamento NAP di un computer. Lo stato di isolamento determina il livello di accesso alla rete concesso.
+Struttura [**ISOLATION \_ STATE**](/windows/desktop/api/eaphostpeertypes/ne-eaphostpeertypes-isolation_state) che specifica lo stato di isolamento protezione accesso alla rete di un computer. Lo stato di isolamento determina il livello di accesso alla rete concesso.
 
 </dd> <dt>
 
 **probationTime**
 </dt> <dd>
 
-Struttura **ProbationTime** che specifica il tempo necessario affinché la connessione esca dalla quarantena dopo la quale viene eliminata la connessione. Una struttura **ProbationTime** è identica a una struttura [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) .
+Struttura **ProbationTime** che specifica il tempo necessario per uscire dalla quarantena della connessione dopo il quale la connessione verrà eliminata. Una **struttura ProbationTime** è identica a una [struttura FILETIME.](/windows/win32/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
 **stringCorrelationIdLength**
 </dt> <dd>
 
-Lunghezza, in byte, del [stringCorrelationId](/windows/desktop/NAP/nap-datatypes) di protezione accesso alla rete che segue la struttura.
+Lunghezza, in byte, della stringa [napCorrelationId](/windows/desktop/NAP/nap-datatypes) che segue questa struttura.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La struttura **EapHostPeerNapInfo** precede il [stringCorrelationId](/windows/desktop/NAP/nap-datatypes) di protezione accesso alla rete del tipo di dati **WCHAR** nel flusso di byte RPC.
+La **struttura EapHostPeerNapInfo** precede la stringa [NAPCorrelationId](/windows/desktop/NAP/nap-datatypes) del tipo di dati **WCHAR** nel flusso di byte RPC.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,9 +74,9 @@ La struttura **EapHostPeerNapInfo** precede il [stringCorrelationId](/windows/de
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                   |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                      |
-| Intestazione<br/>                   | <dl> <dt>Eaphostpeerapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                      |
+| Intestazione<br/>                   | <dl> <dt>Eaphostpeerapis.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsAutoShowEnabled recupera informazioni sull'eventuale visualizzazione automatica della finestra video quando il filtro di rendering viene sospeso o eseguito.
+description: Il metodo IsAutoShowEnabled recupera informazioni sulla visualizzazione automatica della finestra video quando il filtro di rendering viene sospeso o eseguito.
 ms.assetid: 769e3023-a515-4b80-a979-2e4fa9612e65
-title: Metodo CBaseControlWindow. IsAutoShowEnabled (Ctlutil. h)
+title: Metodo CBaseControlWindow.IsAutoShowEnabled (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2c4b4a894593cb3be26a1034098cd2a0cdacf926
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 81f5190d3b0634c763703a3e13aa711f097641285f49c469dab6bad6ce0d9055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660230"
 ---
-# <a name="cbasecontrolwindowisautoshowenabled-method"></a>CBaseControlWindow. IsAutoShowEnabled, metodo
+# <a name="cbasecontrolwindowisautoshowenabled-method"></a>Metodo CBaseControlWindow.IsAutoShowEnabled
 
-Il `IsAutoShowEnabled` metodo recupera informazioni sull'eventuale visualizzazione automatica della finestra video quando il filtro di rendering viene sospeso o eseguito.
+Il metodo recupera informazioni sulla visualizzazione automatica della finestra video quando il filtro `IsAutoShowEnabled` di rendering viene sospeso o eseguito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il **membro \_ bAutoShow m** è impostato su 1 o su **false** se è impostato su 0.
+Restituisce **TRUE** se il **membro m \_ bAutoShow** è impostato su 1 o **FALSE** se è impostato su 0.
 
 ## <a name="remarks"></a>Commenti
 
-Se il **membro \_ bAutoShow m** è impostato su 1 in una finestra video nascosta, la finestra diventa visibile quando il filtro viene sospeso o eseguito. Se questo membro è impostato su 0, la finestra viene visualizzata solo se si usa la funzione membro [**CBaseControlWindow::p UT \_ Visible**](cbasecontrolwindow-put-visible.md) o [**CBaseControlWindow::p UT \_ WindowState**](cbasecontrolwindow-put-windowstate.md) con i parametri appropriati.
+Se il **membro m \_ bAutoShow** è impostato su 1 in una finestra video nascosta, la finestra diventa visibile quando il filtro viene sospeso o eseguito. Se questo membro è impostato su 0, la finestra verrà visualizzata solo se si usa la funzione membro [**CBaseControlWindow::p ut \_ Visible**](cbasecontrolwindow-put-visible.md) o [**CBaseControlWindow::p ut \_ WindowState**](cbasecontrolwindow-put-windowstate.md) con i parametri appropriati.
 
-Questa funzione membro recupera l'impostazione del membro **\_ bAutoShow di m** e ha lo stesso risultato dell'utilizzo del metodo [**IVideoWindow:: Get \_ AutoShow**](/windows/desktop/api/Control/nf-control-ivideowindow-get_autoshow) .
+Questa funzione membro recupera l'impostazione del membro **m \_ bAutoShow** e ha lo stesso risultato dell'uso del metodo [**IVideoWindow::get \_ AutoShow.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_autoshow)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Questa funzione membro recupera l'impostazione del membro **\_ bAutoShow di m** 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

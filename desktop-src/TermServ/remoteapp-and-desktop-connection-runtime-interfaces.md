@@ -1,22 +1,22 @@
 ---
-title: Interfacce di runtime Connessione RemoteApp e desktop
+title: Connessione RemoteApp e desktop runtime
 description: Supporta le interfacce che consentono lo sviluppo di client personalizzati in Connessione RemoteApp e desktop.
 ms.assetid: 4580df05-5e44-40d0-8765-5d9b4e1d339e
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto Servizi Desktop remoto, informazioni di riferimento sull'API di runtime Connessione RemoteApp e desktop
+- Servizi Desktop remoto Servizi Desktop remoto, informazioni di riferimento Connessione RemoteApp e desktop'API runtime di Connessione RemoteApp e desktop
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6b7c3c2fd3841cfe797fc559ba1aa30d3479436
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 974b68a5787a2e2e7fb0ad6e0cd653d4c1c4e583eb22f4475e749b8e03889970
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104117057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118605286"
 ---
-# <a name="remoteapp-and-desktop-connection-runtime-interfaces"></a>Interfacce di runtime Connessione RemoteApp e desktop
+# <a name="remoteapp-and-desktop-connection-runtime-interfaces"></a>Connessione RemoteApp e desktop runtime
 
-L'API di runtime Connessione RemoteApp e desktop supporta le interfacce che consentono lo sviluppo di client personalizzati in Connessione RemoteApp e desktop.
+L'API Connessione RemoteApp e desktop Runtime supporta le interfacce che consentono lo sviluppo di client personalizzati in Connessione RemoteApp e desktop.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -39,7 +39,7 @@ Espone metodi aggiuntivi che forniscono informazioni su una connessione in Conne
 [**IWorkspace3**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspace3)
 </dt> <dd>
 
-Espone metodi che forniscono informazioni su una connessione in Connessione RemoteApp e desktop e aggiunge la possibilità di recuperare o impostare un token di attestazione.
+Espone metodi che forniscono informazioni su una connessione in Connessione RemoteApp e desktop e aggiunge la possibilità di recuperare o impostare un token di attestazioni.
 
 </dd> <dt>
 
@@ -53,14 +53,14 @@ Espone metodi che consentono al runtime di disconnettere un client personalizzat
 [**IWorkspaceRegistration**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspaceregistration)
 </dt> <dd>
 
-Espone metodi che aggiungono e rimuovono i riferimenti ai client personalizzati in Connessione RemoteApp e desktop.
+Espone metodi che aggiungono e rimuovono riferimenti ai client personalizzati in Connessione RemoteApp e desktop.
 
 </dd> <dt>
 
 [**IWorkspaceRegistration2**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspaceregistration2)
 </dt> <dd>
 
-Espone metodi che aggiungono e rimuovono i riferimenti ai client personalizzati in Connessione RemoteApp e desktop.
+Espone metodi che aggiungono e rimuovono riferimenti ai client personalizzati in Connessione RemoteApp e desktop.
 
 </dd> <dt>
 
@@ -74,34 +74,34 @@ Espone metodi che supportano la gestione dei messaggi di errore per le aree di l
 [**IWorkspaceResTypeRegistry**](/windows/desktop/api/Workspaceax/nn-workspaceax-iworkspacerestyperegistry)
 </dt> <dd>
 
-Espone metodi che consentono a un plug-in di gestire le estensioni di file di terze parti in Connessione RemoteApp e desktop Runtime.
+Espone metodi che consentono a un plug-in di gestire estensioni di file di terze parti in Connessione RemoteApp e desktop runtime.
 
 </dd> <dt>
 
 [**IWorkspaceScriptable**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable)
 </dt> <dd>
 
-Espone metodi che gestiscono le credenziali e le connessioni Connessione RemoteApp e desktop.
+Espone metodi che gestiscono Connessione RemoteApp e desktop credenziali e connessioni.
 
 </dd> <dt>
 
 [**IWorkspaceScriptable2**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable2)
 </dt> <dd>
 
-Espone metodi che gestiscono le credenziali e le connessioni Connessione RemoteApp e desktop.
+Espone metodi che gestiscono Connessione RemoteApp e desktop credenziali e connessioni.
 
 </dd> <dt>
 
 [**IWorkspaceScriptable3**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable3)
 </dt> <dd>
 
-Espone metodi che gestiscono le credenziali e le connessioni Connessione RemoteApp e desktop.
+Espone metodi che gestiscono Connessione RemoteApp e desktop credenziali e connessioni.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

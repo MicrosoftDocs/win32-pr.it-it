@@ -1,7 +1,7 @@
 ---
-description: Flag che specifica se i campioni dall'allocatore del pin sono di sola lettura. Se il valore è TRUE, l'esempio è di sola lettura. Il valore predefinito è FALSE.
+description: Flag che specifica se i campioni dell'allocatore del pin sono di sola lettura. Se il valore è TRUE, l'esempio è di sola lettura. Il valore predefinito è FALSE.
 ms.assetid: c2c6247c-4b37-416c-99a2-847d35f48358
-title: 'Membro CDynamicOutputPin:: m_bPinUsesReadOnlyAllocator (Amfilter. h)'
+title: Membro CDynamicOutputPin::m_bPinUsesReadOnlyAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff4e7ab7dd887f7290cfc229c7af439bf8150277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2a03816d3ad324f7f50a3edbfd1166403442afec7133d14288d0aafa3d91cd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656426"
 ---
-# <a name="cdynamicoutputpinm_bpinusesreadonlyallocator-member"></a>Membro bPinUsesReadOnlyAllocator di CDynamicOutputPin:: m \_
+# <a name="cdynamicoutputpinm_bpinusesreadonlyallocator-member"></a>Membro CDynamicOutputPin::m \_ bPinUsesReadOnlyAllocator
 
-Flag che specifica se i campioni dall'allocatore del pin sono di sola lettura. Se il valore è **true**, l'esempio è di sola lettura. Il valore predefinito è **false**.
+Flag che specifica se i campioni dell'allocatore del pin sono di sola lettura. Se il valore è **TRUE,** l'esempio è di sola lettura. Il valore predefinito è **FALSE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bPinUsesReadOnlyAllocator;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

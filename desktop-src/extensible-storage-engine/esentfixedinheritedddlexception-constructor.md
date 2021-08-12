@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentFixedInheritedDDLException'
+description: Altre informazioni sul costruttore EsentFixedInheritedDDLException
 title: Costruttore EsentFixedInheritedDDLException
 TOCTitle: 'EsentFixedInheritedDDLException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFixedInheritedDDLException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b2daab80e50416e0555dab54ab971225cd895342
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b06f5da1537af20674a14a215dd07bacad70a9217eabe6ec1772fe9ad6b6a660
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118268298"
 ---
 # <a name="esentfixedinheritedddlexception-constructor"></a>Costruttore EsentFixedInheritedDDLException
 
 Inizializza una nuova istanza della classe EsentFixedInheritedDDLException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentFixedInheritedDDLException()
 
 [Membri di EsentFixedInheritedDDLException](./esentfixedinheritedddlexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

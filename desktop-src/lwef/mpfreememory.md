@@ -1,9 +1,9 @@
 ---
-title: Funzione MpFreeMemory (MpClient. h)
-description: Libera la memoria per malware Protection Manager.
+title: Funzione MpFreeMemory (MpClient.h)
+description: Libera memoria per Malware Protection Manager.
 ms.assetid: D0B43AE5-756F-4E86-B8A5-8268A41901BC
 keywords:
-- Funzionalità dell'ambiente Windows legacy della funzione MpFreeMemory
+- Funzione MpFreeMemory legacy Windows dell'ambiente
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a15a2845b034a3aa739b1ba2f33a023b742b4b22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 806795cee45fcfe95473c0961106da074c1157b65ac5c19f5d4813c84865616a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247426"
 ---
-# <a name="mpfreememory-function"></a>MpFreeMemory (funzione)
+# <a name="mpfreememory-function"></a>Funzione MpFreeMemory
 
-Libera la memoria per malware Protection Manager. Tutti i buffer allocati e restituiti dalle funzioni Malware Protection devono essere liberati dal chiamante tramite questa funzione.
+Libera memoria per Malware Protection Manager. Tutti i buffer allocati e restituiti dalle funzioni di protezione da malware devono essere liberati dal chiamante che usa questa funzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ void WINAPI MpFreeMemory(
 
 <dl> <dt>
 
-*pMemory* \[ in\]
+*pMemory* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **PVOID**
@@ -55,15 +55,15 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Per facilitare la gestione della memoria per i client, malware Protection Manager definisce anche le macro per liberare memoria associata alle varie strutture restituite dalle funzioni di malware Protection. Le macro seguenti sono definite nel file di intestazione mpmemfree. h:
+Per facilitare la gestione della memoria per i client, Malware Protection Manager definisce anche le macro per liberare la memoria associata a varie strutture restituite dalle funzioni di protezione da malware. Le macro seguenti sono definite nel file di intestazione mpmemfree.h:
 
 
 
 | Nome                            | Descrizione                                                                      |
 |---------------------------------|----------------------------------------------------------------------------------|
-| \_informazioni MPRESOURCE \_ gratuite          | Libera le [**\_ informazioni MPRESOURCE**](mpresource-info.md)allocate.                  |
-| \_informazioni MPTHREAT \_ gratuite            | Libera le [**\_ informazioni MPTHREAT**](mpthreat-info.md)allocate.                      |
-| MPTHREAT \_ informazioni localizzate \_ \_ gratuite | Libera le [**\_ \_ informazioni localizzate MPTHREAT**](mpthreat-localized-info.md)allocate. |
+| MPRESOURCE \_ INFO \_ FREE          | Libera un oggetto [**MPRESOURCE \_ INFO allocato.**](mpresource-info.md)                  |
+| MPTHREAT \_ INFO \_ FREE            | Libera un oggetto [**MPTHREAT \_ INFO allocato.**](mpthreat-info.md)                      |
+| MPTHREAT \_ LOCALIZED \_ INFO \_ FREE | Libera un OGGETTO [**MPTHREAT \_ LOCALIZED INFO \_ allocato.**](mpthreat-localized-info.md) |
 
 
 
@@ -75,9 +75,9 @@ Per facilitare la gestione della memoria per i client, malware Protection Manage
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
@@ -89,13 +89,13 @@ Per facilitare la gestione della memoria per i client, malware Protection Manage
 [**MpErrorMessageFormat**](mperrormessageformat.md)
 </dt> <dt>
 
-[**\_informazioni MPRESOURCE**](mpresource-info.md)
+[**MPRESOURCE \_ INFO**](mpresource-info.md)
 </dt> <dt>
 
-[**\_informazioni MPTHREAT**](mpthreat-info.md)
+[**INFORMAZIONI SU \_ MPTHREAT**](mpthreat-info.md)
 </dt> <dt>
 
-[**\_informazioni localizzate MPTHREAT \_**](mpthreat-localized-info.md)
+[**INFORMAZIONI LOCALIZZATE MPTHREAT \_ \_**](mpthreat-localized-info.md)
 </dt> </dl>
 
  

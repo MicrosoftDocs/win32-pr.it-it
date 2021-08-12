@@ -1,7 +1,7 @@
 ---
-description: Il metodo Wait si blocca fino a quando l'evento non viene segnalato o fino a quando non si verifica un timeout.
+description: Il metodo Wait si blocca fino a quando non viene segnalato l'evento o fino a quando non si verifica un timeout.
 ms.assetid: bcc13723-a59b-4e8a-bfc8-eadb6facf116
-title: Metodo CAMEvent. Wait (Wxutil. h)
+title: Metodo CAMEvent.Wait (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ab5bc2aabf77fb73739528e99cda7961ae87e9d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3875647cb93619e8326066bc9af7a6f99f79a0b0a2df58f668b1e365fd39102b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662512"
 ---
-# <a name="cameventwait-method"></a>Metodo CAMEvent. Wait
+# <a name="cameventwait-method"></a>Metodo CAMEvent.Wait
 
 Il `Wait` metodo si blocca fino a quando l'evento non viene segnalato o fino a quando non si verifica un timeout.
 
@@ -51,11 +51,11 @@ Valore di timeout facoltativo, rappresentato in millisecondi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'evento viene segnalato. In caso contrario, restituisce **false**.
+Restituisce **TRUE** se l'evento viene segnalato. In caso contrario, **restituisce FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Per gli eventi di reimpostazione automatica, l'evento viene reimpostato su uno stato non segnalato quando il metodo restituisce un risultato.
+Per gli eventi di reimpostazione automatica, l'evento viene reimpostato su uno stato nonsignaled quando questo metodo viene restituito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Per gli eventi di reimpostazione automatica, l'evento viene reimpostato su uno s
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
