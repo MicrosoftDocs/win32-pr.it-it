@@ -1,15 +1,15 @@
 ---
-description: La proprietà CurrentVolume Recupera il numero di volume per la directory radice corrente.
+description: La proprietà CurrentVolume recupera il numero di volume per la directory radice corrente.
 ms.assetid: f8d06a30-d6d5-43b9-b838-741d781f8d01
 title: Proprietà CurrentVolume
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b91c394be620dfc3f00b8793222848131355f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d07f9d82facc243654bad2e16e9a028e8cf920a51f15dd92cc879b0ea1340d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654603"
 ---
 # <a name="currentvolume-property"></a>Proprietà CurrentVolume
 
@@ -26,17 +26,17 @@ La `CurrentVolume` proprietà recupera il numero di volume per la directory radi
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore intero che rappresenta il volume DVD corrente. Se un disco fa parte di un set di più volumi, il valore intero deve essere maggiore di zero.
+Restituisce un valore intero che rappresenta il volume DVD corrente. Se un disco fa parte di un set con più volumi, il valore intero deve essere maggiore di zero.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di sola lettura e non prevede alcun valore predefinito.
+Questa proprietà è di sola lettura senza alcun valore predefinito.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**VolumesAvailable**](volumesavailable-property.md)
+[**VolumiDisponibili**](volumesavailable-property.md)
 </dt> </dl>
 
  

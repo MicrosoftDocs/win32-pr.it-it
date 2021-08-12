@@ -1,29 +1,29 @@
 ---
-description: Usa Extensible Authentication Protocol Transport Level Security (EAP-TLS) con certificati per l'autenticazione alla rete (WPA-Enterprise).
+description: Usa Extensible Authentication Protocol Transport Level Security (EAP-TLS) con certificati per l'autenticazione in rete (WPA-Enterprise).
 ms.assetid: fceeae22-3761-48ab-a190-1a7b1568ed64
 title: WPA-Enterprise esempio di profilo TLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d6f236429c94e9602e173c2d6c3eb1e3bc8111f
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: a9ebb9fa779c1a1d9a4e77c20d462f31fcafc9ec562e47ae106386b58c112a1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619044"
 ---
 # <a name="wpa-enterprise-with-tls-profile-sample"></a>WPA-Enterprise esempio di profilo TLS
 
-Questo profilo di esempio usa Extensible Authentication Protocol Transport Level Security (EAP-TLS) con certificati per l'autenticazione nella rete.
+Questo profilo di esempio usa Extensible Authentication Protocol Transport Level Security (EAP-TLS) con certificati per l'autenticazione alla rete.
 
-Questo esempio è configurato per l'Wi-Fi sicurezza dell'accesso protetto in esecuzione in modalità Enterprise (WPA-Enterprise). Il WPA-Enterprise di sicurezza usa 802.1X per lo scambio di autenticazione con il back-end. Il protocollo TKIP (Temporal Key Integrity Protocol) viene usato per la crittografia.
+Questo esempio è configurato per l'Wi-Fi sicurezza da accesso protetto in esecuzione in modalità Enterprise (WPA-Enterprise). Il WPA-Enterprise di sicurezza usa 802.1X per lo scambio di autenticazione con il back-end. Il protocollo TKIP (Temporal Key Integrity Protocol) viene usato per la crittografia.
 
-Le credenziali EAP-TLS vengono ottenute dall'archivio certificati. Se l'autenticazione basata sulle credenziali nell'archivio certificati ha esito negativo, all'utente viene richiesto di fornire credenziali valide. Se il primo tentativo non riesce, non vengono usati server alternativi, autorità di certificazione radice o nomi utente per l'autenticazione.
+Le credenziali EAP-TLS vengono ottenute dall'archivio certificati. Se l'autenticazione basata sulle credenziali nell'archivio certificati non riesce, all'utente viene richiesto di fornire credenziali valide. Se il primo tentativo non riesce, non vengono utilizzati server alternativi, autorità di certificazione radice o nomi utente per l'autenticazione.
 
-La configurazione EAPHost usata in questo esempio di profilo wireless è stata derivata dall'esempio di proprietà [di connessione EAP-TLS.](../eaphost/eap-tls-connection-properties.md)
+La configurazione EAPHost usata in questo esempio di profilo wireless è stata derivata dall'esempio delle proprietà di connessione [EAP-TLS.](../eaphost/eap-tls-connection-properties.md)
 
-**Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato:** Le modifiche vengono implementate in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato per ottimizzare le prestazioni di rete wireless. L'impostazione predefinita per [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando questo elemento non è impostato in un profilo LAN wireless è stato modificato. L'impostazione predefinita viene modificata in "false" in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato. L'impostazione predefinita era "true" in Windows Server 2008 e Windows Vista. Per altre informazioni, vedere la descrizione dell'elemento dello schema [**autoSwitch.**](wlan-profileschema-autoswitch-wlanprofile-element.md)
+**Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato:** Le modifiche vengono implementate in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato per ottimizzare le prestazioni di rete wireless. L'impostazione predefinita per [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando questo elemento non è impostato in un profilo LAN wireless è stata modificata. L'impostazione predefinita viene modificata in "false" in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato. L'impostazione predefinita era "true" Windows Server 2008 e Windows Vista. Per altre informazioni, vedere la descrizione dell'elemento dello schema [**autoSwitch.**](wlan-profileschema-autoswitch-wlanprofile-element.md)
 
-**Windows XP con SP3 e API LAN wireless per Windows XP con SP2:** EAP-TLS non è supportato.
+**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** EAP-TLS non è supportato.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

@@ -15,16 +15,16 @@ keywords:
 - VML (Vector Markup Language),benefits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4637fff0550ce9c93e295c51fc529f62c370b8aa
-ms.sourcegitcommit: 78ce1d1e3f12ee3e08390868e5b93c034f437657
+ms.openlocfilehash: 6199b481c58bbc5cd769ba43e614f21ae0105b4ef703858b559cdd76ff5516bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111910261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596067"
 ---
 # <a name="vector-markup-language-vml"></a>Vector Markup Language (VML)
 
-Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer 9 di Windows. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!NOTE]
 > A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
@@ -35,7 +35,7 @@ VML è attualmente supportato da Microsoft Internet Explorer versione 5.0 o succ
 
 VmL è stato proposto al W3C come standard per la grafica vettoriale sul Web (vedere [Vector Markup Language (VML)](https://www.w3.org/TR/NOTE-VML)). Microsoft continua a guidare lo sviluppo e l'implementazione di tecnologie basate su XML, collaborando con i principali partner del settore (AutoDesk, Hewlett-Packard, Macromedia, Visio) e W3C per promuovere gli standard basati sul Web. Si prevede di usare W3C per ottenere un formato standard per la grafica vettoriale sul Web.
 
-VML è supportato anche da Microsoft Office 2000 o versione successiva. Microsoft Word, Microsoft Excel e Microsoft PowerPoint possono essere usati per creare grafica VML.
+VML è supportato anche da Microsoft Office 2000 o versioni successive. Microsoft Word, Microsoft Excel e Microsoft PowerPoint possono essere usati per creare grafica VML.
 
 ### <a name="using-vml"></a>Uso di VML
 
@@ -65,7 +65,7 @@ Infine, aggiungere elementi VML per definire gli effetti visivi. Ad esempio, il 
 ### <a name="benefits-of-vml"></a>Vantaggi di VML
 
 -   VML semplifica la creazione per utenti e autori di produttività. Facilita lo scambio (tramite taglia e incolla) e la successiva modifica della grafica vettoriale tra un'ampia gamma di applicazioni di produttività e progettazione.
--   VML offre download grafici più veloci e una migliore esperienza utente. Consente la distribuzione di grafica vettoriale di alta qualità, completamente integrata e scalabile al Web, in un formato aperto basato su testo. Invece di fare riferimento alla grafica come file esterni, la grafica VML viene recapitata inline con la pagina HTML, consentendo loro di interagire e ridimensionarsi con l'interazione dell'utente.
+-   VML offre download grafici più veloci e una migliore esperienza utente. Consente la distribuzione di grafica vettoriale di alta qualità, completamente integrata e scalabile al Web, in un formato aperto basato su testo. Invece di fare riferimento alla grafica come file esterni, la grafica VML viene recapitata inline con la pagina HTML, consentendo loro di interagire e ridimensionare con l'interazione dell'utente.
 -   VML è aperto e basato su standard. Si tratta di un formato basato su XML. XML 1.0 è un linguaggio aperto, semplice e basato su testo per la descrizione dei dati strutturati sul Web e integra il codice HTML per la visualizzazione. VML supporta anche altri standard W3C, ad esempio Cascading Style Sheets 2.0 (CSS), che specifica informazioni di stile e posizionamento 2D, nonché Document Object Model (DOM), che consente agli sviluppatori di interagire in modo coerente con gli elementi della pagina come oggetti.
 
 ### <a name="for-additional-information"></a>Per altre informazioni
@@ -73,6 +73,6 @@ Infine, aggiungere elementi VML per definire gli effetti visivi. Ad esempio, il 
 Vedere i collegamenti seguenti:
 
 -   Per le risposte alle domande frequenti su VML, vedere le [domande frequenti su VML.](frequently-asked-questions-about-vml.yml)
--   Per un'esercitazione sull'uso di VML nelle pagine Web, vedere [How to Use VML on Web Pages](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)(Come usare VML nelle pagine Web), che integra la specifica [VML](https://www.w3.org/TR/NOTE-datetime.html) inviata a W3C.
+-   Per un'esercitazione sull'uso di VML nelle pagine Web, vedere [How to Use VML on Web Pages](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)(Come usare VML nelle pagine Web), che integra la specifica [VML](https://www.w3.org/TR/NOTE-datetime.html) inviata al W3C.
 -   Per informazioni sui tipi di dati VML, vedere il [documento Tipi VML di](basic-vml-types.md) base.
 -   Per informazioni di riferimento complete su VML, incluse informazioni su come usare VML con tag e script, vedere riferimento [a VML](msdn-online-vml-introduction.md).

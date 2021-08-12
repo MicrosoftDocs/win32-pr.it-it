@@ -1,22 +1,22 @@
 ---
-title: Proprietà AllowCredentialSaving di IMsRdpClientNonScriptable4
-description: Specifica se nella finestra di dialogo credenziali viene visualizzata una casella di controllo che consente di salvare le credenziali.
+title: Proprietà IMsRdpClientNonScriptable4 AllowCredentialSaving
+description: Specifica se nella finestra di dialogo delle credenziali viene visualizzata una casella di controllo che consente il salvataggio delle credenziali.
 ms.assetid: c5148ff0-0d7f-413d-b2a8-ff942668bee6
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AllowCredentialSaving
-- Servizi Desktop remoto proprietà AllowCredentialSaving, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà AllowCredentialSaving
-- Servizi Desktop remoto proprietà AllowCredentialSaving, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà AllowCredentialSaving
-- Servizi Desktop remoto proprietà AllowCredentialSaving, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà AllowCredentialSaving
-- Servizi Desktop remoto proprietà AllowCredentialSaving, oggetto MsRdpClient7
-- Oggetto MsRdpClient7 Servizi Desktop remoto, proprietà AllowCredentialSaving
-- Servizi Desktop remoto proprietà AllowCredentialSaving, oggetto MsRdpClient8
-- Oggetto MsRdpClient8 Servizi Desktop remoto, proprietà AllowCredentialSaving
-- Servizi Desktop remoto proprietà AllowCredentialSaving, oggetto MsRdpClient9
-- Oggetto MsRdpClient9 Servizi Desktop remoto, proprietà AllowCredentialSaving
+- Impostazione della proprietà AllowCredentialSaving Servizi Desktop remoto
+- Proprietà AllowCredentialSaving Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà AllowCredentialSaving
+- Proprietà AllowCredentialSaving Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà AllowCredentialSaving
+- Proprietà AllowCredentialSaving Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà , AllowCredentialSaving
+- Proprietà AllowCredentialSaving Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà , AllowCredentialSaving
+- Proprietà AllowCredentialSaving Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà , AllowCredentialSaving
+- Proprietà AllowCredentialSaving Servizi Desktop remoto , oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà , AllowCredentialSaving
 topic_type:
 - apiref
 api_name:
@@ -36,16 +36,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 240e2eb8e80209ee5c90d63f2996231cf84bb2dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cca6f61b8cbcc315eb93e6e9c3ab0f89684e4d29c3fcb8313af0198ee594cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607733"
 ---
-# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>Proprietà IMsRdpClientNonScriptable4:: AllowCredentialSaving
+# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>Proprietà IMsRdpClientNonScriptable4::AllowCredentialSaving
 
-Specifica se nella finestra di dialogo credenziali viene visualizzata una casella di controllo che consente di salvare le credenziali.
+Specifica se nella finestra di dialogo delle credenziali viene visualizzata una casella di controllo che consente il salvataggio delle credenziali.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -66,11 +66,11 @@ HRESULT get_AllowCredentialSaving(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Imposta un valore che indica se nella finestra di dialogo credenziali viene visualizzata una casella di controllo che consente di salvare le credenziali.
+Specifica se nella finestra di dialogo delle credenziali viene visualizzata una casella di controllo che consente il salvataggio delle credenziali.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 

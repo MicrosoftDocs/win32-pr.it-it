@@ -1,54 +1,54 @@
 ---
-title: Attributo JoinStyle di la
-description: Attributo JoinStyle di la
+title: Attributo VML JoinStyle
+description: Attributo VML JoinStyle
 ms.assetid: d947d115-2064-446a-8c12-e8063fe10953
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 657d3c815d6165cecd853f394780237ad0b89f0d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1cbad649d2a8889846d1d0c1e1df3d62e94cb8e8ff03f0dfa5c47f7bd414dcdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118599365"
 ---
-# <a name="vml-joinstyle-attribute"></a>Attributo JoinStyle di la
+# <a name="vml-joinstyle-attribute"></a>Attributo VML JoinStyle
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce lo stile di join di una polilinea. Proprietà di lettura/scrittura. Stringa.
 
 **Si applica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[infarto](msdn-online-vml-stroke-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* joinstyle = " *Expression* " >
+<v: *element* joinstyle=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . joinstyle = "*Expression*"
+*element* .joinstyle="*expression*"
 
-*espressione* = *elemento*. joinstyle
+*expression* = *elemento*.joinstyle
 
 **Osservazioni:**
 
 I possibili valori sono:
 
--   Round (impostazione predefinita)
+-   round (impostazione predefinita)
 -   smussatura
--   quartabuono
+-   Miter
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Le giunzioni sulla polilinea sono smussate.
+Le giunzioni sulla polilinea vengono smussate.
 
 
 ```HTML
@@ -61,6 +61,6 @@ Le giunzioni sulla polilinea sono smussate.
 
 
 
- 
+ 
 
- 
+ 

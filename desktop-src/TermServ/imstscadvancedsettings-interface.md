@@ -1,11 +1,11 @@
 ---
 title: Interfaccia IMsTscAdvancedSettings
-description: Include metodi per recuperare e impostare le proprietà che abilitano la memorizzazione nella cache, la compressione e il reindirizzamento degli Appunti e della stampante bitmap.
+description: Include metodi per recuperare e impostare proprietà che consentono la memorizzazione nella cache delle bitmap, la compressione e il reindirizzamento della stampante e degli Appunti.
 ms.assetid: 3385e843-be05-4801-8d59-6395d95686b1
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto
-- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto, descritta
+- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -16,28 +16,28 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad4d55df30c940ecc5a5515f13c05a285507499e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f1156f59178275ff9406299fc553afacd3ce99a0488497f836d147ec1d63547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606198"
 ---
 # <a name="imstscadvancedsettings-interface"></a>Interfaccia IMsTscAdvancedSettings
 
-Include metodi per recuperare e impostare le proprietà che abilitano la memorizzazione nella cache, la compressione e il reindirizzamento degli Appunti e della stampante bitmap. È anche possibile specificare i nomi delle dll client del canale virtuale.
+Include metodi per recuperare e impostare proprietà che consentono la memorizzazione nella cache delle bitmap, la compressione e il reindirizzamento della stampante e degli Appunti. È anche possibile specificare i nomi delle DLL client del canale virtuale.
 
-Per ottenere un'istanza di questa interfaccia, è possibile usare la proprietà [**IMsTscAx:: AdvancedSettings**](imstscax-advancedsettings.md) .
+È possibile ottenere un'istanza di questa interfaccia [**usando la proprietà IMsTscAx::AdvancedSettings.**](imstscax-advancedsettings.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IMsTscAdvancedSettings** eredita dall'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . **IMsTscAdvancedSettings** dispone anche di questi tipi di membri:
+**L'interfaccia IMsTscAdvancedSettings** eredita dall'interfaccia [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IMsTscAdvancedSettings** include anche questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IMsTscAdvancedSettings** ha queste proprietà.
+**L'interfaccia IMsTscAdvancedSettings** ha queste proprietà.
 
 
 
@@ -63,7 +63,7 @@ L'interfaccia **IMsTscAdvancedSettings** ha queste proprietà.
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-bitmapperistence.md"><strong>BitmapPeristence</strong></a><br/></td>
 <td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se la memorizzazione nella cache bitmap è abilitata.<br/>
+<td style="text-align: left;">Specifica se la memorizzazione nella cache delle bitmap è abilitata.<br/>
 <blockquote>
 [!Note]<br />
 L'errore di ortografia nel nome della proprietà si trova nella versione rilasciata del controllo.
@@ -78,7 +78,7 @@ L'errore di ortografia nel nome della proprietà si trova nella versione rilasci
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-containerhandledfullscreen.md"><strong>ContainerHandledFullScreen</strong></a><br/></td>
 <td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se la modalità a schermo intero gestita dal contenitore è abilitata.<br/></td>
+<td style="text-align: left;">Specifica se la modalità schermo intero gestita dal contenitore è abilitata.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-disablerdpdr.md"><strong>DisableRdpdr</strong></a><br/></td>
@@ -88,22 +88,22 @@ L'errore di ortografia nel nome della proprietà si trova nella versione rilasci
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-iconfile.md"><strong>IconFile</strong></a><br/></td>
 <td style="text-align: left;">Sola scrittura<br/></td>
-<td style="text-align: left;">Specifica il nome del file che contiene i dati dell'icona a cui sarà possibile accedere quando viene visualizzato il client in modalità schermo intero.<br/></td>
+<td style="text-align: left;">Specifica il nome del file contenente i dati dell'icona a cui sarà possibile accedere quando si visualizza il client in modalità schermo intero.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-iconindex.md"><strong>IconIndex</strong></a><br/></td>
 <td style="text-align: left;">Sola scrittura<br/></td>
-<td style="text-align: left;">Specifica l'indice dell'icona all'interno del file icona corrente.<br/></td>
+<td style="text-align: left;">Specifica l'indice dell'icona all'interno del file dell'icona corrente.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscadvancedsettings-keyboardlayoutstr.md"><strong>KeyBoardLayoutStr</strong></a><br/></td>
 <td style="text-align: left;">Sola scrittura<br/></td>
-<td style="text-align: left;">Specifica il nome dell'identificatore delle impostazioni locali di input attivo (denominato in precedenza il layout della tastiera) da usare per la connessione.<br/></td>
+<td style="text-align: left;">Specifica il nome dell'identificatore delle impostazioni locali di input attivo (in precedenza denominato layout di tastiera) da utilizzare per la connessione.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscadvancedsettings-plugindlls.md"><strong>PluginDlls</strong></a><br/></td>
 <td style="text-align: left;">Sola scrittura<br/></td>
-<td style="text-align: left;">Specifica i nomi delle dll client del canale virtuale da caricare.<br/></td>
+<td style="text-align: left;">Specifica i nomi delle DLL client del canale virtuale da caricare.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +114,7 @@ L'errore di ortografia nel nome della proprietà si trova nella versione rilasci
 
 ## <a name="remarks"></a>Commenti
 
-Questa interfaccia è stata estesa dalle interfacce seguenti, in cui ogni nuova interfaccia eredita tutti i metodi e le proprietà delle interfacce precedenti:
+Questa interfaccia è stata estesa dalle interfacce seguenti, con ogni nuova interfaccia che eredita tutti i metodi e le proprietà delle interfacce precedenti:
 
 -   [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
 -   [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md)
@@ -124,7 +124,7 @@ Questa interfaccia è stata estesa dalle interfacce seguenti, in cui ogni nuova 
 -   [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings6.md)
 -   [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -136,7 +136,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>    |
-| IID<br/>                      | IID \_ IMsTscAdvancedSettings è definito come 809945cc-4b3b-4A92-a6b0-dbf9b5f2ef2d<br/> |
+| IID<br/>                      | IID \_ IMsTscAdvancedSettings è definito come 809945cc-4b3b-4a92-a6b0-dbf9b5f2ef2d<br/> |
 
 
 
@@ -144,10 +144,10 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 
 <dl> <dt>
 
-[**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
+[**Idispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[Riferimento Connessione Web Desktop remoto](remote-desktop-web-connection-reference.md)
+[Connessione Web Desktop remoto informazioni di riferimento](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

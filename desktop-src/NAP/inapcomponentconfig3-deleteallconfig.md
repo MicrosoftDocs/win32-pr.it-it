@@ -1,10 +1,10 @@
 ---
-title: Metodo INapComponentConfig3 DeleteAllConfig (NapCommon. h)
-description: Viene implementato da convalida integrità sistema (SHV) per fornire un modo per reimpostare l'archivio di convalida integrità di sistema sullo stato originale dopo l'installazione.
+title: Metodo INapComponentConfig3 DeleteAllConfig (NapCommon.h)
+description: Viene implementato dai validator dell'integrità del sistema (SHV) per fornire un modo per ripristinare lo stato originale dell'archivio SHV dopo l'installazione.
 ms.assetid: 7f079743-1c32-430d-a250-b49a96b99f14
 keywords:
-- NAP metodo DeleteAllConfig
-- Metodo DeleteAllConfig NAP, interfaccia INapComponentConfig3
+- Metodo DeleteAllConfig NAP
+- Metodo DeleteAllConfig NAP , interfaccia INapComponentConfig3
 - Interfaccia INapComponentConfig3 NAP, metodo DeleteAllConfig
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12a766690114db20fb9be5cccbd4508f4565f2cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05b2a81a33dfb659c3398c8c853132244d088b7fa65bd4bb0317869e13b85abf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621740"
 ---
-# <a name="inapcomponentconfig3deleteallconfig-method"></a>INapComponentConfig3::D Metodo eleteAllConfig
+# <a name="inapcomponentconfig3deleteallconfig-method"></a>Metodo INapComponentConfig3::D eleteAllConfig
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **DeleteAllConfig** viene implementato da convalida integrità sistema (SHV) per fornire un modo per reimpostare l'archivio di convalida integrità di sistema sullo stato originale dopo l'installazione. È necessario eliminare tutti i dati di configurazione ad eccezione della configurazione predefinita.
+Il **metodo DeleteAllConfig** viene implementato dai validator dell'integrità del sistema (SHV) per consentire di ripristinare lo stato originale dell'archivio SHV dopo l'installazione. Tutti i dati di configurazione, ad eccezione della configurazione predefinita, devono essere eliminati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti codici di errore in base al risultato di questa operazione.
+Restituisce uno dei codici di errore seguenti in base al risultato di questa operazione.
 
 
 
@@ -66,9 +66,9 @@ Restituisce uno dei seguenti codici di errore in base al risultato di questa ope
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 
