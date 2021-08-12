@@ -1,7 +1,7 @@
 ---
-description: Imposta le proprietà di campionamento utilizzate dal simulatore di trasferimento di luminosità (PRT) pre-calcolato.
+description: Imposta le proprietà di campionamento usate dal simulatore PRT (Precomputed Radiance Transfer).
 ms.assetid: a33963a7-fbcb-4e1c-a4f3-fb20a99fcf9f
-title: 'Metodo ID3DXPRTEngine:: SetSamplingInfo (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::SetSamplingInfo (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ab229652fe9e333519acce7d8474d3c4f0cf7ef9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db15bc2120f90cf52aa4f3c41eccecc7d308cc8392ae368cd4423a90f218f6ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293365"
 ---
-# <a name="id3dxprtenginesetsamplinginfo-method"></a>Metodo ID3DXPRTEngine:: SetSamplingInfo
+# <a name="id3dxprtenginesetsamplinginfo-method"></a>Metodo ID3DXPRTEngine::SetSamplingInfo
 
-Imposta le proprietà di campionamento utilizzate dal simulatore di trasferimento di luminosità (PRT) pre-calcolato.
+Imposta le proprietà di campionamento usate dal simulatore PRT (Precomputed Radiance Transfer).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,46 +44,46 @@ HRESULT SetSamplingInfo(
 
 <dl> <dt>
 
-*NumRays* \[ in\]
+*NumRays* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di raggi luminosi da indirizzare a ogni campione. Deve essere maggiore di zero.
+Numero di raggi di luce da indirizzare a ogni campione. Deve essere maggiore di zero.
 
 </dd> <dt>
 
-*UseSphere* \[ in\]
+*UseSphere* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se **true**, gli esempi verranno calcolati su una sfera completa. Se **false**, gli esempi verranno calcolati su un emisfero.
+Se **TRUE,** gli esempi verranno calcolati su una sfera completa. Se **FALSE,** gli esempi verranno calcolati su un emisfero.
 
 </dd> <dt>
 
-*UseCosine* \[ in\]
+*UseCosine* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se **true**, usare una ponderazione del coseno degli esempi. Se UseCosine e UseSphere sono **true**, il metodo avrà esito negativo e verrà restituito un errore.
+Se **TRUE,** usare un peso coseno dei campioni. Se useCosine e UseSphere sono **entrambi TRUE,** il metodo avrà esito negativo e verrà restituito un errore.
 
 </dd> <dt>
 
-*Adattivo* \[ in\]
+*Adattiva* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Deve essere **false**. Il campionamento adattivo non è attualmente implementato.
+Deve essere **FALSE.** Il campionamento adattivo non è attualmente implementato.
 
 </dd> <dt>
 
-*AdaptiveThresh* \[ in\]
+*AdaptiveThresh* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Ignorato.
 
@@ -93,7 +93,7 @@ Ignorato.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, e \_ NOTIMPL, e \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ NOTIMPL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

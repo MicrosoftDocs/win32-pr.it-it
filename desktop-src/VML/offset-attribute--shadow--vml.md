@@ -1,50 +1,50 @@
 ---
-title: Attributo offset (Shadow) (la)
-description: Attributo offset (Shadow) (la)
+title: Attributo offset (Shadow)(VML)
+description: Attributo offset (Shadow)(VML)
 ms.assetid: bb5810cd-bd9a-4888-a0ce-8de732215c80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a61daaf3b311a87a3e3bcf064ceffc491e1134fe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a0683e9536e10bed141ecca56b4335d6221c5ced7e3d26220908aa388b453843
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596906"
 ---
-# <a name="offset-attribute-shadowvml"></a>Attributo offset (Shadow) (la)
+# <a name="offset-attribute-shadowvml"></a>Attributo offset (Shadow)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce la distanza con cui l'ombreggiatura si estende oltre la forma. Proprietà di lettura/scrittura. **VgVector2D**.
+Definisce l'estensione dell'ombreggiatura oltre la forma. Proprietà di lettura/scrittura. **VgVector2D**.
 
 **Si applica a**
 
 [Shadow](msdn-online-vml-shadow-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* offset = " *Expression* " >
+<v: *element* offset=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . offset = "*Expression*"
+*element* .offset="*expression*"
 
-*espressione* = *elemento*. offset
+*expression* = *elemento*.offset
 
 **Osservazioni:**
 
-L'offset predefinito per il valore x è 2PT e l'impostazione predefinita per il valore y è 2Pt. I valori sono una misura assoluta o un valore frazionario di forma. Se frazionarie, variano da 50% a-50%.
+L'offset predefinito per il valore x è 2pt e il valore predefinito per il valore y è 2pt. I valori sono una misura assoluta o un valore frazionario di forma. Se frazionarie, vanno dal 50% al -50%.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-La forma presenta un'ombreggiatura con un offset di 5 punti verso il basso e 10 punta a destra.
+La forma ha un'ombreggiatura con un offset di 5 punti verso il basso e 10 punti a destra.
 
 
 ```HTML
@@ -59,6 +59,6 @@ La forma presenta un'ombreggiatura con un offset di 5 punti verso il basso e 10 
 
 
 
- 
+ 
 
- 
+ 

@@ -1,12 +1,12 @@
 ---
 title: Metodo SetServerWeight della classe Win32_TSSessionDirectory
-description: Imposta il valore del peso del server per il bilanciamento del carico di Connessione Desktop remoto broker (gestore connessione Desktop remoto).
+description: Imposta il valore del peso del server per il bilanciamento del carico Connessione Desktop remoto Broker di connessione Desktop remoto.
 ms.assetid: 9c7563e5-bb45-495d-90b0-43170b58581e
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetServerWeight
-- Metodo SetServerWeight Servizi Desktop remoto, classe Win32_TSSessionDirectory
-- Classe Win32_TSSessionDirectory Servizi Desktop remoto, metodo SetServerWeight
+- Metodo SetServerWeight Servizi Desktop remoto
+- Metodo SetServerWeight Servizi Desktop remoto , Win32_TSSessionDirectory classe
+- Win32_TSSessionDirectory classe Servizi Desktop remoto metodo SetServerWeight
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46e8456fa590de0c9d6236f96f3b09c16087d730
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 96d8c9af7995f2d42f02075fde8ae43f4b5f5e9a5ccb7d3fa6f4635cb9645464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604630"
 ---
-# <a name="setserverweight-method-of-the-win32_tssessiondirectory-class"></a>Metodo SetServerWeight della \_ classe TSSessionDirectory Win32
+# <a name="setserverweight-method-of-the-win32_tssessiondirectory-class"></a>Metodo SetServerWeight della classe \_ TSSessionDirectory Win32
 
-Imposta il valore del peso del server per il bilanciamento del carico di Connessione Desktop remoto broker (gestore connessione Desktop remoto).
+Imposta il valore del peso del server per il bilanciamento del carico Connessione Desktop remoto Broker di connessione Desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ uint32 SetServerWeight(
 
 <dl> <dt>
 
-*ServerWeightValue* \[ in\]
+*ServerWeightValue* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Valore del peso del server. L'intervallo valido è compreso tra 1 e 10000.
 
@@ -54,9 +54,9 @@ Valore del peso del server. L'intervallo valido è compreso tra 1 e 10000.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, nell'interfaccia utente di Servizi Desktop remoto configurazione, il valore del peso del server è 100. Il peso del server è relativo. Se pertanto si assegna un server a un valore 100 e un valore pari a 200, il server con un peso relativo di 200 riceverà il doppio del numero di sessioni.
+Per impostazione predefinita nell'interfaccia utente di Servizi Desktop remoto, il valore del peso del server è 100. Il peso del server è relativo. Pertanto, se si assegna a un server un valore pari a 100 e un valore pari a 200, il server con un peso relativo pari a 200 riceverà il doppio del numero di sessioni.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,8 +66,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -76,7 +76,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSSessionDirectory Win32**](win32-tssessiondirectory.md)
+[**Win32 \_ TSSessionDirectory**](win32-tssessiondirectory.md)
 </dt> </dl>
 
  

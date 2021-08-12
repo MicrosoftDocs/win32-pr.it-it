@@ -4,20 +4,20 @@ description: È possibile eseguire una query per gli eventi da un canale o da un
 ms.assetid: 929bedbf-6dce-428e-b2c0-de9dcfe4531b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6fa69f9b1308cd7ebbc4e4510692bb25ab031ec
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 981e4a8c39daebbce641c79e7d26331b9b36845d3c71fd1902ea667ca85c5dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587802"
 ---
 # <a name="querying-for-events"></a>Esecuzione di query per gli eventi
 
-È possibile eseguire una query per gli eventi da un canale o da un file di log. Il canale o il file di log può esistere nel computer locale o in un computer remoto. Per specificare gli eventi che si desidera ottenere dal canale o dal file di log, utilizzare una query XPath o una query XML della struttura. Per informazioni dettagliate sulla scrittura della query, vedere [utilizzo degli eventi](consuming-events.md).
+È possibile eseguire una query per gli eventi da un canale o da un file di log. Il canale o il file di log può esistere nel computer locale o in un computer remoto. Per specificare gli eventi che si desidera ottenere dal canale o dal file di log, usare una query XPath o una query XML di struttura. Per informazioni dettagliate sulla scrittura della query, vedere [Utilizzo di eventi.](consuming-events.md)
 
-Per eseguire query sugli eventi, chiamare la funzione [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) . È possibile specificare l'ordine in cui gli eventi vengono restituiti (dal meno recente al più recente (impostazione predefinita) o più recente al meno recente) e se tollerare espressioni XPath non valide nella query. per informazioni dettagliate su come la funzione ignora le espressioni in formato non valido, vedere il flag [**EvtQueryTolerateQueryErrors**](/windows/desktop/api/WinEvt/ne-winevt-evt_query_flags) .
+Per eseguire query sugli eventi, chiamare [**la funzione EvtQuery.**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) È possibile specificare l'ordine in cui vengono restituiti gli eventi (dal meno recente al più recente (impostazione predefinita) o dal più recente al meno recente) e se tollerare espressioni XPath in formato non valido nella query . Per informazioni dettagliate su come la funzione ignora le espressioni in formato non valido, vedere il flag [**EvtQueryTolerateQueryErrors.**](/windows/desktop/api/WinEvt/ne-winevt-evt_query_flags)
 
-Nell'esempio seguente viene illustrato come eseguire una query sugli eventi da un canale utilizzando un'espressione XPath.
+Nell'esempio seguente viene illustrato come eseguire query sugli eventi da un canale usando un'espressione XPath.
 
 
 ```C++
@@ -70,7 +70,7 @@ cleanup:
 
 
 
-Nell'esempio seguente viene illustrato come eseguire una query sugli eventi da un canale utilizzando una query XML strutturata. Gli eventi vengono restituiti in ordine dal più recente al meno recente.
+Nell'esempio seguente viene illustrato come eseguire query sugli eventi da un canale utilizzando una query XML strutturata. Gli eventi vengono restituiti in ordine dal più recente al meno recente.
 
 
 ```C++
@@ -125,7 +125,7 @@ cleanup:
 
 
 
-Se si usa una query XML strutturata e si passa il flag EvtQueryTolerateQueryErrors a [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery), la funzione ha esito positivo anche se è possibile che una o più query della query strutturata siano in realtà non riuscite. Per determinare quali query della query strutturata hanno avuto esito positivo o negativo, chiamare la funzione [**EvtGetQueryInfo**](/windows/desktop/api/WinEvt/nf-winevt-evtgetqueryinfo) . Se non si passa il flag EvtQueryTolerateQueryErrors, la funzione **EvtQuery** avrà esito negativo con il primo errore rilevato nella query. Se la query ha esito negativo con errore \_ evt \_ query non valida \_ , chiamare la funzione [**EvtGetExtendedStatus**](/windows/desktop/api/WinEvt/nf-winevt-evtgetextendedstatus) per ottenere una stringa di messaggio che descrive l'errore XPath.
+Se si usa una query XML strutturata e si passa il flag EvtQueryTolerateQueryErrors a [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery), la funzione ha esito positivo anche se una o più query nella query strutturata potrebbero avere effettivamente avuto esito negativo. Per determinare quali query nella query strutturata hanno avuto esito positivo o negativo, chiamare la [**funzione EvtGetQueryInfo.**](/windows/desktop/api/WinEvt/nf-winevt-evtgetqueryinfo) Se non si passa il flag EvtQueryTolerateQueryErrors, la funzione **EvtQuery** avrà esito negativo con il primo errore rilevato nella query. Se la query ha esito negativo con ERROR EVT INVALID QUERY, chiamare la funzione \_ \_ \_ [**EvtGetExtendedStatus**](/windows/desktop/api/WinEvt/nf-winevt-evtgetextendedstatus) per ottenere una stringa di messaggio che descrive l'errore XPath.
 
 Nell'esempio seguente viene illustrato come determinare l'esito positivo o negativo di ogni query in una query strutturata quando si passa il flag EvtQueryTolerateQueryErrors a [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery).
 
@@ -210,7 +210,7 @@ cleanup:
 
 ## <a name="reading-events-from-the-result-set"></a>Lettura di eventi dal set di risultati
 
-Per enumerare gli eventi nel set di risultati, chiamare la funzione [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) in un ciclo fino a quando la funzione non restituisce **false** e la funzione [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce un errore di \_ \_ altri \_ elementi. Gli eventi nel set di risultati non sono statici. i nuovi eventi scritti nel canale verranno inclusi nel set di risultati fino a quando \_ non \_ viene impostato alcun numero di \_ elementi. Per migliorare le prestazioni, recuperare gli eventi dal set di risultati in batch (tenendo conto delle dimensioni di ogni evento durante la determinazione del numero di eventi da recuperare).
+Per enumerare gli eventi nel set di risultati, chiamare la funzione [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) in un ciclo finché la funzione non restituisce **FALSE** e la funzione [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce ERROR \_ NO MORE \_ \_ ITEMS. Gli eventi nel set di risultati non sono statici. I nuovi eventi scritti nel canale verranno inclusi nel set di risultati fino a quando non viene impostato ERROR \_ \_ NO MORE \_ ITEMS. Per migliorare le prestazioni, recuperare gli eventi dal set di risultati in batch (tenendo conto delle dimensioni di ogni evento quando si determina il numero di eventi da recuperare).
 
 Nell'esempio seguente viene illustrato come enumerare gli eventi in un set di risultati.
 
@@ -266,10 +266,10 @@ cleanup:
 
 
 
-Per informazioni dettagliate sul rendering degli eventi che si ottengono dal set di risultati, vedere [rendering degli](rendering-events.md)eventi.
+Per informazioni dettagliate sul rendering degli eventi che si ottengono dal set di risultati, vedere [Eventi di rendering.](rendering-events.md)
 
-Se si desidera eseguire una query per gli eventi dal punto in cui si è interrotto, creare un segnalibro dell'ultimo evento letto e utilizzarlo alla successiva esecuzione della query. Per informazioni dettagliate, vedere [segnalibro Events](bookmarking-events.md).
+Se si desidera eseguire una query per gli eventi dal punto in cui è stata seguiti, creare un segnalibro dell'ultimo evento letto e usarlo alla successiva esecuzione della query. Per informazioni dettagliate, vedere [Bookmarking Events](bookmarking-events.md).
 
- 
+ 
 
- 
+ 

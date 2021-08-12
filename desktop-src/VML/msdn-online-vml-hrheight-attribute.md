@@ -1,41 +1,41 @@
 ---
-title: Attributo HRHeight di la
-description: Attributo HRHeight di la
+title: Attributo VML HRHeight
+description: Attributo VML HRHeight
 ms.assetid: 92e30245-a753-4b79-ae37-d1bd9cd6495b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f91147d30bd262fd61133ad962dedafd946131f6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e141b86b092ffab4d7864817ba500a99c7dd8829dff761c5d012f90f98c20798
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118601074"
 ---
-# <a name="vml-hrheight-attribute"></a>Attributo HRHeight di la
+# <a name="vml-hrheight-attribute"></a>Attributo VML HRHeight
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce lo spessore di una regola orizzontale. Proprietà di lettura/scrittura. **VgLength**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:hrheight = " *Expression* " >
+<v: *element* o:hrheight=" *expression* ">
 
 **Osservazioni:**
 
-Il valore predefinito è 0. Le unità predefinite sono punti. L'attributo **HRHeight** è simile all'attributo **HRSize** HTML standard.
+Il valore predefinito è 0. Le unità predefinite sono i punti. **L'attributo HRHeight** è simile all'attributo **HRSize** HTML standard.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Event. ctrlKey
-description: L'attributo ctrlKey recupera un valore che indica se il tasto CTRL è inattivo quando si è verificato l'evento.
+title: event.ctrlKey
+description: L'attributo ctrlKey recupera un valore che indica se il tasto CTRL era premuto quando si è verificato l'evento.
 ms.assetid: a96e1575-1610-4e4b-9292-d853c1a1d5bd
 keywords:
-- Media Player di Windows Event. ctrlKey
+- event.ctrlKey Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f2365337bb1d046f72bd965f3812dd126c041db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d55221a1448b23e2ea308e0e16cd174fe4cd0d404164a01a7ff59011010075a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577245"
 ---
-# <a name="eventctrlkey"></a>Event. ctrlKey
+# <a name="eventctrlkey"></a>event.ctrlKey
 
-L'attributo **ctrlKey** recupera un valore che indica se il tasto CTRL è inattivo quando si è verificato l'evento.
+**L'attributo ctrlKey** recupera un valore che indica se il tasto CTRL era premuto quando si è verificato l'evento.
 
 ``` syntax
 event.ctrlKey
@@ -29,14 +29,14 @@ event.ctrlKey
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di sola lettura.
+Questo attributo è un valore booleano di **sola lettura.**
 
 
 
 | Valore | Descrizione                                      |
 |-------|--------------------------------------------------|
-| true  | Indica che il tasto CTRL è posizionato in basso. |
-| false | Indica che il tasto CTRL è posizionato in alto.   |
+| true  | Indica che il tasto CTRL si è posizionato in basso. |
+| false | Indica che il tasto CTRL era nella posizione verso l'alto.   |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **valore booleano** di sola lettura.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -56,7 +56,7 @@ Questo attributo è un **valore booleano** di sola lettura.
 
 <dl> <dt>
 
-[**Attributi dell'evento di ambiente**](ambient-event-attributes.md)
+[**Attributi degli eventi di ambiente**](ambient-event-attributes.md)
 </dt> </dl>
 
  

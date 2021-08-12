@@ -1,7 +1,7 @@
 ---
 description: Imposta il contenuto del buffer sulla tabella delle costanti.
 ms.assetid: 6058795c-fa32-42aa-9a36-af0b7f6eed1d
-title: 'Metodo ID3DXConstantTable:: SetValue (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::SetValue (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e5e02c43e0d0ad84615650bc0b1c0d5fd5654e38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 630d63e8cd70f3743940bc4b71b1312fa777e7cda868fd20f546793b816e6f5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296081"
 ---
-# <a name="id3dxconstanttablesetvalue-method"></a>Metodo ID3DXConstantTable:: SetValue
+# <a name="id3dxconstanttablesetvalue-method"></a>Metodo ID3DXConstantTable::SetValue
 
 Imposta il contenuto del buffer sulla tabella delle costanti.
 
@@ -43,16 +43,16 @@ HRESULT SetValue(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato alla tabella delle costanti.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella delle costanti.
 
 </dd> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -61,19 +61,19 @@ Identificatore univoco di una costante. Vedere [D3DXHANDLE](dx9-graphics-referen
 
 </dd> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Buffer contenente i dati.
+Buffer contenente dati.
 
 </dd> <dt>
 
-*Byte* \[ in\]
+*Byte* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Dimensioni del buffer, in byte.
 
@@ -91,8 +91,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

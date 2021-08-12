@@ -1,31 +1,31 @@
 ---
 description: Contiene un puntatore al descrittore di flusso per l'origine multimediale.
 ms.assetid: 5acafbc1-823f-4b6d-8737-04b3a6a0cf87
-title: Attributo MF_TOPONODE_STREAM_DESCRIPTOR (Mfidl. h)
+title: MF_TOPONODE_STREAM_DESCRIPTOR attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f074a1c1ffde3671779362724676f884c3b6b0b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92517560f0a1f60681afc1209d6d14d3e3c5d663958d365d18b20558c0003199
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244325"
 ---
-# <a name="mf_toponode_stream_descriptor-attribute"></a>\_Attributo del \_ descrittore di flusso MF TOPONODE \_
+# <a name="mf_toponode_stream_descriptor-attribute"></a>Attributo MF \_ TOPONODE \_ STREAM \_ DESCRIPTOR
 
 Contiene un puntatore al descrittore di flusso per l'origine multimediale.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**IUnknown \** _
+**IUnknown\***
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai nodi di origine (_ * MF \_ topologia \_ SOURCESTREAM \_ nodo * *).
+Questo attributo si applica ai nodi di origine (**MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE**).
 
-Il valore dell'attributo è un puntatore all'interfaccia [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor) del descrittore del flusso. Questo attributo è obbligatorio.
+Il valore dell'attributo è un puntatore all'interfaccia [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor) del descrittore di flusso. Questo attributo è obbligatorio.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
+[**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
 </dt> <dt>
 
-[**IMFAttributes:: Unknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
+[**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

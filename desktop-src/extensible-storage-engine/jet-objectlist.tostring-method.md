@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d3a39f5be0fe93904ef95e2e54ad1d5bede63144
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e736024d8746389eef68cb1db987aa59f7de852236a8344be449452b1f4af6dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254107"
 ---
 # <a name="jet_objectlisttostring-method"></a>JET_OBJECTLIST. Metodo ToString
 
-Restituisce una [stringa](/dotnet/api/system.string) che rappresenta la [JET_OBJECTLIST](./jet-objectlist-class.md)corrente.
+Restituisce un [oggetto String](/dotnet/api/system.string) che rappresenta l'oggetto [JET_OBJECTLIST](./jet-objectlist-class.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Stringa](/dotnet/api/system.string) che rappresenta la [JET_OBJECTLIST](./jet-objectlist-class.md)corrente.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Valore [String](/dotnet/api/system.string) che rappresenta l'oggetto [JET_OBJECTLIST](./jet-objectlist-class.md).  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_OBJECTLIST](./jet-objectlist-class.md)
+[JET_OBJECTLIST classe](./jet-objectlist-class.md)
 
-[Membri JET_OBJECTLIST](./jet-objectlist-members.md)
+[JET_OBJECTLIST membri](./jet-objectlist-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

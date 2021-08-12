@@ -1,19 +1,19 @@
 ---
 title: Riferimento (controllo Microsoft Agent)
-description: Questi argomenti di riferimento descrivono gli oggetti nel controllo di Microsoft Agent. Microsoft Agent è deprecato a livello di Windows 7.
+description: Questi argomenti di riferimento descrivono gli oggetti nel controllo di Microsoft Agent. Microsoft Agent è deprecato a Windows 7.
 ms.assetid: vs|msagent|~\paface_4dk5.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb9436f6df6d59cf16975b40046fe58d0fed6787
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 42ce78c2a2131fd6b8039af315d65bb3e9270bcaa3face983bec507725f837eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118246604"
 ---
 # <a name="reference-microsoft-agent-control"></a>Riferimento (controllo Microsoft Agent)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 Questo riferimento contiene gli oggetti seguenti:
 

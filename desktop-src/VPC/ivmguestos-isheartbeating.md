@@ -1,11 +1,11 @@
 ---
-title: Proprietà di heartbeat IVMGuestOS (VPCCOMInterfaces. h)
+title: Proprietà IVMGuestOS IsInterfacebeating (VPCCOMInterfaces.h)
 description: Determina se la macchina virtuale ha un heartbeat.
 ms.assetid: b1697a7b-6119-47aa-b261-6009f5287993
 keywords:
-- Proprietà di heartbeat-PC virtuale
-- Proprietà di heartbeat, Virtual PC, interfaccia IVMGuestOS
-- Interfaccia IVMGuestOS Virtual PC, proprietà di heartbeat
+- Proprietà IsAting Virtual PC
+- Proprietà IsAting Virtual PC, interfaccia IVMGuestOS
+- Interfaccia IVMGuestOS Virtual PC, proprietà Is Facile da utilizzare
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faad446749cbf3cdb75d6e8fa7469022cc004ea7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91598284d3765c5ff6de185ca0cf3b652036c226d80b0fe01a9944a9d7480b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118594181"
 ---
-# <a name="ivmguestosisheartbeating-property"></a>Proprietà IVMGuestOS:: heartbeat
+# <a name="ivmguestosisheartbeating-property"></a>Proprietà IVMGuestOS::Is Libeating
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Determina se la macchina virtuale ha un heartbeat.
 
@@ -45,7 +45,7 @@ HRESULT get_IsHeartbeating(
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Variante \_ TRUE** se viene rilevato un heartbeat, **Variant \_ false** in caso contrario.
+**VARIANT \_ TRUE** se viene rilevato un heartbeat, **VARIANT FALSE in \_ caso** contrario.
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,28 +54,28 @@ HRESULT get_IsHeartbeating(
 | Nome/valore                                                                                                                                                              | Significato                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                 | L'operazione è stata completata.<br/>                                                                                                                         |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>                   | Il parametro è **null**.<br/>                                                                                                                            |
-| <dl> <dt>Macchina virtuale \_ 0xA0040207 E \_ VM \_ sconosciute</dt> <dt></dt> </dl>           | La configurazione è sconosciuta.<br/>                                                                                                                         |
-| <dl> <dt>Macchina virtuale \_ \_VM E \_ non \_ in esecuzione</dt> <dt>0xA0040206</dt> </dl>      | Per questa operazione è necessario che la macchina virtuale sia in esecuzione.<br/>                                                                                               |
-| <dl> <dt>Macchina virtuale \_ \_Aggiunte di E \_ non \_ disponibili</dt> <dt>0xA0040504</dt> </dl> | La macchina virtuale non è stata avviata completamente, la funzionalità componenti di integrazione non è installata oppure la versione installata non supporta questa funzionalità.<br/> |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl>           | Si è verificato un errore imprevisto.<br/>                                                                                                                     |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>                   | Il parametro è **NULL.**<br/>                                                                                                                            |
+| <dl> <dt>Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA</dt> <dt>0xA0040207</dt> </dl>           | La configurazione è sconosciuta.<br/>                                                                                                                         |
+| <dl> <dt>Macchina virtuale \_ E \_ MACCHINA VIRTUALE NON IN \_ \_ ESECUZIONE</dt> <dt>0xA0040206</dt> </dl>      | La macchina virtuale deve essere in esecuzione per questa operazione.<br/>                                                                                               |
+| <dl> <dt>Macchina virtuale \_ E \_ ADDITIONS \_ NOT \_ AVAIL</dt> <dt>0xA0040504</dt> </dl> | La macchina virtuale non è completamente avviata, la funzionalità dei componenti di integrazione non è installata o la versione installata non supporta questa funzionalità.<br/> |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl>           | Si è verificato un errore imprevisto.<br/>                                                                                                                     |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Quando si installano componenti di integrazione nel sistema operativo guest, viene inviato un normale "battito" o un heartbeat dalla sessione della macchina virtuale a Windows Virtual PC. Se il sistema operativo guest è caricato in modo elevato, è possibile che Virtual PC riceva un minor numero di heartbeat del previsto. Se non viene rilevato alcun heartbeat, è possibile che il sistema operativo guest non risponda o venga arrestato in modo anomalo.
+Quando i componenti di integrazione vengono installati nel sistema operativo guest, viene inviato un normale "tick" o heartbeat dalla sessione della macchina virtuale Windows Virtual PC. Se il sistema operativo guest è molto caricato, è possibile che Virtual PC riceva meno heartbeat del previsto. Se non viene rilevato alcun heartbeat, è possibile che il sistema operativo guest non risponda o si arresti in modo anomalo.
 
-Per impostazione predefinita, una macchina virtuale produce dieci cicli di heartbeat al minuto. Se non viene rilevato alcun battito di heartbeat per un minuto intero, Windows Virtual PC tenterà di riavviare la sessione della macchina virtuale una volta ogni dieci secondi per un massimo di due minuti. Questo comportamento è controllato dai valori chiave seguenti nel file di configurazione della sessione della macchina virtuale.
+Per impostazione predefinita, una macchina virtuale produce dieci tick di heartbeat al minuto. Se non vengono rilevati tick di heartbeat per un intero minuto, Windows Virtual PC tenterà di riavviare la sessione della macchina virtuale una volta ogni dieci secondi per un massimo di due minuti. Questo comportamento è controllato dai valori chiave seguenti nel file di configurazione della sessione della macchina virtuale.
 
 
 
 | Chiave di configurazione                                            | Predefinito       | Descrizione                                                                                                                             |
 |--------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| integrazione/Microsoft/heartbeat/ora<br/>              | 60<br/> | Lunghezza del blocco di tempo utilizzato per generare i cicli di heartbeat, in secondi.<br/>                                             |
-| integrazione/Microsoft/heartbeat/frequenza<br/>              | 10<br/> | Numero di cicli generati in ogni blocco di tempo heartbeat.<br/>                                                                  |
-| integrazione/Microsoft/heartbeat/intervallo di errori \_<br/> | 10<br/> | Il numero di secondi tra i tentativi di riavvio, quando non viene ricevuto alcun battito di heartbeat entro un blocco di tempo heartbeat specifico.<br/> |
-| tentativi di integrazione/Microsoft/heartbeat/errore \_<br/> | 12<br/> | Numero di tentativi di riavvio effettuati.<br/>                                                                                         |
+| integration/microsoft/heartbeat/time<br/>              | 60<br/> | Durata, in secondi, del blocco di tempo utilizzato per generare i tick di heartbeat.<br/>                                             |
+| integration/microsoft/heartbeat/rate<br/>              | 10<br/> | Numero di tick generati in ogni blocco di tempo heartbeat.<br/>                                                                  |
+| integration/microsoft/heartbeat/failure \_ interval<br/> | 10<br/> | Numero di secondi tra i tentativi di riavvio, quando non vengono ricevuti tick di heartbeat all'interno di un blocco di tempo heartbeat specifico.<br/> |
+| integration/microsoft/heartbeat/failure \_ attempts<br/> | 12<br/> | Numero di tentativi di riavvio effettuati.<br/>                                                                                         |
 
 
 
@@ -87,12 +87,12 @@ Per impostazione predefinita, una macchina virtuale produce dieci cicli di heart
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS è definito come 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMGuestOS è definito come 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

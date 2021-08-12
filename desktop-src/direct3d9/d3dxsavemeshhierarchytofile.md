@@ -1,7 +1,7 @@
 ---
-description: Crea un file con estensione x e salva la gerarchia mesh e le relative animazioni corrispondenti.
+description: Crea un file con estensione x e salva la gerarchia mesh e le animazioni corrispondenti.
 ms.assetid: 803926fe-8cb7-422a-9920-56f7d0b0d0ea
-title: Funzione D3DXSaveMeshHierarchyToFile (D3dx9anim. h)
+title: Funzione D3DXSaveMeshHierarchyToFile (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f2de65f9bc2f9e40a5bc07c6f0b4d00112f0df21
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 892d27e305badc2cf1b21de41a1f9d37da13f36c1521135a79a65619e31903f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298529"
 ---
-# <a name="d3dxsavemeshhierarchytofile-function"></a>D3DXSaveMeshHierarchyToFile (funzione)
+# <a name="d3dxsavemeshhierarchytofile-function"></a>Funzione D3DXSaveMeshHierarchyToFile
 
-Crea un file con estensione x e salva la gerarchia mesh e le relative animazioni corrispondenti.
+Crea un file con estensione x e salva la gerarchia mesh e le animazioni corrispondenti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,25 +44,25 @@ HRESULT D3DXSaveMeshHierarchyToFile(
 
 <dl> <dt>
 
-*pFilename* \[ in\]
+*pFilename* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome del file con estensione x che identifica la mesh salvata. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati String viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Puntatore a una stringa che specifica il nome del file con estensione x che identifica la mesh salvata. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati stringa viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*XFormat* \[ in\]
+*XFormat* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Formato del file con estensione x (testo o binario, compresso o meno). Vedere D3DXF \_ FILEformat. D3DXF \_ FileFormat \_ compresso può essere combinato (usando un OR logico) con i flag di testo FileFormat D3DXF \_ \_ o D3DXF \_ \_ per ridurre le dimensioni del file di output.
+Formato del file con estensione x (testo o binario, compresso o meno). Vedere FILEFORMAT D3DXF. \_ D3DXF FILEFORMAT COMPRESSED può essere combinato (usando un OR logico) con i flag \_ \_ D3DXF FILEFORMAT BINARY o \_ \_ D3DXF \_ FILEFORMAT \_ TEXT per ridurre le dimensioni del file di output.
 
 </dd> <dt>
 
-*pFrameRoot* \[ in\]
+*pFrameRoot* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXFRAME**](d3dxframe.md) \***
@@ -71,7 +71,7 @@ Nodo radice della gerarchia da salvare. Vedere [**D3DXFRAME**](d3dxframe.md).
 
 </dd> <dt>
 
-*pAnimController* \[ in\]
+*pAnimController* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)**
@@ -80,12 +80,12 @@ Controller di animazione con set di animazioni da archiviare. Vedere [**ID3DXAni
 
 </dd> <dt>
 
-*pUserDataSaver* \[ in\]
+*pUserDataSaver* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXSAVEUSERDATA**](id3dxsaveuserdata.md)**
 
-Interfaccia fornita dall'applicazione che consente il salvataggio dei dati utente. Vedere [**ID3DXSaveUserData**](id3dxsaveuserdata.md).
+Interfaccia fornita dall'applicazione che consente di salvare i dati utente. Vedere [**ID3DXSaveUserData**](id3dxsaveuserdata.md).
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXSaveMeshHierarchyToFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXSaveMeshHierarchyToFileA.
+L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in D3DXSaveMeshHierarchyToFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXSaveMeshHierarchyToFileA.
 
 Questa funzione non salva i set di animazioni compressi.
 
@@ -107,8 +107,8 @@ Questa funzione non salva i set di animazioni compressi.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -119,7 +119,7 @@ Questa funzione non salva i set di animazioni compressi.
 [Funzioni di animazione](dx9-graphics-reference-d3dx-functions-animation.md)
 </dt> <dt>
 
-[Riferimento al file X](dx9-graphics-reference-d3dx-x-file.md)
+[Informazioni di riferimento sul file X](dx9-graphics-reference-d3dx-x-file.md)
 </dt> </dl>
 
  

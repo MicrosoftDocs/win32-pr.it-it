@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidColumnException'
+description: Altre informazioni sul costruttore EsentInvalidColumnException
 title: Costruttore EsentInvalidColumnException
 TOCTitle: 'EsentInvalidColumnException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidColumnException.#ctor
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 71ac7891a7d5fb126b8cd091a95bed3a386cc53e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df57343ab6d045164a0a99b65f1b826a7bddc91b257744dfa19851a6f30ecff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118266555"
 ---
 # <a name="esentinvalidcolumnexception-constructor"></a>Costruttore EsentInvalidColumnException
 
 Inizializza una nuova istanza della classe EsentInvalidColumnException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,6 +56,6 @@ public EsentInvalidColumnException()
 
 [Membri di EsentInvalidColumnException](./esentinvalidcolumnexception-members.md)
 
-[Overload EsentInvalidColumnException](./esentinvalidcolumnexception-constructor2.md)
+[Overload di EsentInvalidColumnException](./esentinvalidcolumnexception-constructor2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

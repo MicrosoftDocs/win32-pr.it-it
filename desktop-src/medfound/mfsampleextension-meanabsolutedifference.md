@@ -1,19 +1,19 @@
 ---
-description: Questo attributo restituisce la differenza assoluta media (MAD) in tutti i blocchi di macro nel piano Y.
+description: Questo attributo restituisce la differenza media assoluta (MAD) in tutti i macro-blocchi nel piano Y.
 ms.assetid: 7F0358F1-794A-4E75-8D97-3B91955E19EE
-title: Attributo MFSampleExtension_MeanAbsoluteDifference (Mfapi. h)
+title: MFSampleExtension_MeanAbsoluteDifference attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4b7187b295071b8e27b68d9b5804aab6b2ddef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7908c8ea69d5d2b074fa8d2ac6b44ca0b3f40ba5b2ca72cd358350c2e749b62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240638"
 ---
-# <a name="mfsampleextension_meanabsolutedifference-attribute"></a>\_Attributo MeanAbsoluteDifference di MFSampleExtension
+# <a name="mfsampleextension_meanabsolutedifference-attribute"></a>Attributo MFSampleExtension \_ MeanAbsoluteDifference
 
-Questo attributo restituisce la differenza assoluta media (MAD) in tutti i blocchi di macro nel piano Y.
+Questo attributo restituisce la differenza media assoluta (MAD) in tutti i macro-blocchi nel piano Y.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Questo attributo restituisce la differenza assoluta media (MAD) in tutti i blocc
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione può richiedere al codificatore di impostare questo attributo sugli esempi di output usando [CODEcapis \_ AVEncVideoMeanAbsoluteDifference](codecapi-avencvideomeanabsolutedifference.md).
+L'applicazione può richiedere al codificatore di impostare questo attributo sugli esempi di output usando [CODECAPI \_ AVEncVideoMeanAbsoluteDifference.](codecapi-avencvideomeanabsolutedifference.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ L'applicazione può richiedere al codificatore di impostare questo attributo sug
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                |
+| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| app UWP\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ L'applicazione può richiedere al codificatore di impostare questo attributo sug
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

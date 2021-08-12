@@ -1,7 +1,7 @@
 ---
-description: Ottiene le informazioni di conversione per un fotogramma chiave specifico nel set di animazioni.
+description: Ottenere informazioni sulla traduzione per un fotogramma chiave specifico nel set di animazioni.
 ms.assetid: 757af408-8a9c-4294-9343-91f52d4cc1ab
-title: 'Metodo ID3DXKeyframedAnimationSet:: GetTranslationKey (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::GetTranslationKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f61d1caecb46477d16be4367588ab5609bfd6224
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b09eac144382bb21114b1c9b3b878baca57fb134555e37bea00580a9f2bfba6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294942"
 ---
-# <a name="id3dxkeyframedanimationsetgettranslationkey-method"></a>Metodo ID3DXKeyframedAnimationSet:: GetTranslationKey
+# <a name="id3dxkeyframedanimationsetgettranslationkey-method"></a>Metodo ID3DXKeyframedAnimationSet::GetTranslationKey
 
-Ottiene le informazioni di conversione per un fotogramma chiave specifico nel set di animazioni.
+Ottenere informazioni sulla traduzione per un fotogramma chiave specifico nel set di animazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT GetTranslationKey(
 
 <dl> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice di animazione.
+Indice dell'animazione.
 
 </dd> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Fotogramma chiave.
 
 </dd> <dt>
 
-*pTranslationKey* \[ out\]
+*pTranslationKey* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
 
-Puntatore alle informazioni di rotazione. Vedere [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
+Puntatore alle informazioni sulla rotazione. Vedere [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntatore alle informazioni di rotazione. Vedere [**D3DXKEY \_ VECTOR3**](d3dxke
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

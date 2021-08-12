@@ -1,7 +1,7 @@
 ---
-description: Definisce la modalità di compressione utilizzata per l'archiviazione dei dati del set di animazioni compresso.
+description: Definisce la modalità di compressione usata per l'archiviazione dei dati dei set di animazioni compressi.
 ms.assetid: 41592b71-52ba-4727-a885-fb10fc23c5f8
-title: Enumerazione D3DXCOMPRESSION_FLAGS (D3dx9anim. h)
+title: D3DXCOMPRESSION_FLAGS enumerazione (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 6f912c44659d418d543194ba82a9d82f31e7ef08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a4d1e19e2e6fb8e0625b20c7755b3cf3b5c68c06cbc01da1b8a22fd9893d0027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299999"
 ---
-# <a name="d3dxcompression_flags-enumeration"></a>\_Enumerazione flag D3DXCOMPRESSION
+# <a name="d3dxcompression_flags-enumeration"></a>Enumerazione D3DXCOMPRESSION \_ FLAGS
 
-Definisce la modalità di compressione utilizzata per l'archiviazione dei dati del set di animazioni compresso.
+Definisce la modalità di compressione usata per l'archiviazione dei dati dei set di animazioni compressi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,24 +41,24 @@ typedef enum D3DXCOMPRESSION_FLAGS {
 
 <dl> <dt>
 
-<span id="D3DXCOMPRESS_DEFAULT"></span><span id="d3dxcompress_default"></span>**\_Impostazione predefinita D3DXCOMPRESS**
+<span id="D3DXCOMPRESS_DEFAULT"></span><span id="d3dxcompress_default"></span>**D3DXCOMPRESS \_ DEFAULT**
 </dt> <dd>
 
 Implementa la compressione rapida.
 
 </dd> <dt>
 
-<span id="D3DXCOMPRESS_STRONG"></span><span id="d3dxcompress_strong"></span>**D3DXCOMPRESS \_ forte**
+<span id="D3DXCOMPRESS_STRONG"></span><span id="d3dxcompress_strong"></span>**D3DXCOMPRESS \_ STRONG**
 </dt> <dd>
 
-Implementa la compressione lenta. Viene in genere creato un set di animazioni compresso di qualità superiore rispetto a quando \_ si usa l'impostazione predefinita D3DXCOMPRESS.
+Implementa la compressione lenta. In genere, viene restituito un set di animazioni compresse di migliore qualità rispetto all'uso di D3DXCOMPRESS \_ DEFAULT.
 
 </dd> <dt>
 
-<span id="D3DXCOMPRESS_FORCE_DWORD"></span><span id="d3dxcompress_force_dword"></span>**D3DXCOMPRESS \_ Force \_ DWORD**
+<span id="D3DXCOMPRESS_FORCE_DWORD"></span><span id="d3dxcompress_force_dword"></span>**D3DXCOMPRESS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

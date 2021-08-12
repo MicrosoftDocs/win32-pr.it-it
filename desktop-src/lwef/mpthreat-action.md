@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPTHREAT_ACTION (MpClient. h)
+title: MPTHREAT_ACTION enumerazione (MpClient.h)
 description: Possibili azioni di minaccia.
 ms.assetid: 142249A5-4C9D-4E3A-A06E-70C040F9C14F
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPTHREAT_ACTION
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPTHREAT_ACTION
+- MPTHREAT_ACTION funzionalità dell'Windows legacy
+- PMPTHREAT_ACTION puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ae0377517af590072b797a57c051ad062842ea9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a3cd46583b9736ad8304c16e3b12d4f0157edcdb319fd0923a0fe737d504415
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247265"
 ---
-# <a name="mpthreat_action-enumeration"></a>\_Enumerazione azione MPTHREAT
+# <a name="mpthreat_action-enumeration"></a>Enumerazione MPTHREAT \_ ACTION
 
 Possibili azioni di minaccia.
 
@@ -49,31 +49,31 @@ typedef enum tagMPTHREAT_ACTION {
 
 <dl> <dt>
 
-<span id="MP_THREAT_ACTION_UNKNOWN"></span><span id="mp_threat_action_unknown"></span>**\_azione di minaccia MP \_ \_ sconosciuta**
+<span id="MP_THREAT_ACTION_UNKNOWN"></span><span id="mp_threat_action_unknown"></span>**AZIONE \_ DI MINACCIA MP \_ \_ SCONOSCIUTA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_CLEAN"></span><span id="mp_threat_action_clean"></span>**\_azione di minaccia MP \_ \_ pulita**
+<span id="MP_THREAT_ACTION_CLEAN"></span><span id="mp_threat_action_clean"></span>**MP \_ THREAT \_ ACTION \_ CLEAN**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_QUARANTINE"></span><span id="mp_threat_action_quarantine"></span>**\_ \_ quarantena azione minaccia MP \_**
+<span id="MP_THREAT_ACTION_QUARANTINE"></span><span id="mp_threat_action_quarantine"></span>**QUARANTENA \_ \_ DELL'AZIONE DI MINACCIA \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_REMOVE"></span><span id="mp_threat_action_remove"></span>**\_azione di minaccia MP \_ \_ Rimuovi**
+<span id="MP_THREAT_ACTION_REMOVE"></span><span id="mp_threat_action_remove"></span>**MP \_ THREAT \_ ACTION \_ REMOVE**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_ALLOW"></span><span id="mp_threat_action_allow"></span>**\_azione di minaccia MP \_ \_ Consenti**
+<span id="MP_THREAT_ACTION_ALLOW"></span><span id="mp_threat_action_allow"></span>**AZIONE \_ DI MINACCIA MP \_ \_ CONSENTITA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_USERDEFINED"></span><span id="mp_threat_action_userdefined"></span>**\_azione di minaccia MP \_ \_ USERDEFINED**
+<span id="MP_THREAT_ACTION_USERDEFINED"></span><span id="mp_threat_action_userdefined"></span>**AZIONE \_ DI MINACCIA MP DEFINITA \_ \_ DALL'UTENTE**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_NOACTION"></span><span id="mp_threat_action_noaction"></span>**NoAction MP \_ Threat \_ Action \_**
+<span id="MP_THREAT_ACTION_NOACTION"></span><span id="mp_threat_action_noaction"></span>**MP \_ THREAT \_ ACTION \_ NOACTION**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_BLOCK"></span><span id="mp_threat_action_block"></span>**\_ \_ blocco azione minaccia \_ MP**
+<span id="MP_THREAT_ACTION_BLOCK"></span><span id="mp_threat_action_block"></span>**MP \_ THREAT \_ ACTION \_ BLOCK**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_ACTION_MAX_VALUE"></span><span id="mp_threat_action_max_value"></span>**\_ \_ \_ valore massimo azione minaccia \_ MP**
+<span id="MP_THREAT_ACTION_MAX_VALUE"></span><span id="mp_threat_action_max_value"></span>**VALORE MASSIMO \_ \_ DELL'AZIONE \_ DI MINACCIA \_ MP**
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -82,9 +82,9 @@ typedef enum tagMPTHREAT_ACTION {
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

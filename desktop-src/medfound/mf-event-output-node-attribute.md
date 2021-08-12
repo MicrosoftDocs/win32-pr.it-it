@@ -1,17 +1,17 @@
 ---
 description: Identifica il nodo della topologia per un sink di flusso.
 ms.assetid: 9aa6ca66-5122-4d05-94b9-32be194e9eb3
-title: Attributo MF_EVENT_OUTPUT_NODE (Mfapi. h)
+title: MF_EVENT_OUTPUT_NODE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02c484ea55841f4057bf0855dd51b90db951acb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b2cbcbc243c195deb1061417adb6d93271b328fa242b497a7fdb232f5f7695e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244710"
 ---
-# <a name="mf_event_output_node-attribute"></a>\_Attributo del \_ nodo di output evento MF \_
+# <a name="mf_event_output_node-attribute"></a>Attributo \_ MF EVENT \_ OUTPUT \_ NODE
 
 Identifica il nodo della topologia per un sink di flusso.
 
@@ -23,14 +23,14 @@ Considera come [**TOPOID**](topoid.md).
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un identificatore di nodo per un nodo di output nella topologia corrente. Per ottenere un puntatore al nodo associato, chiamare [**IMFTopology:: GetNodeByID**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-getnodebyid) nella topologia.
+Il valore di questo attributo è un identificatore di nodo per un nodo di output nella topologia corrente. Per ottenere un puntatore al nodo associato, chiamare [**IMFTopology::GetNodeByID**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-getnodebyid) nella topologia.
 
 Questo attributo viene usato con gli eventi seguenti:
 
 -   [MESessionStreamSinkFormatChanged](mesessionstreamsinkformatchanged.md)
 -   [MESinkInvalidated](mesinkinvalidated.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,9 +38,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -48,16 +48,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi dell'evento](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes:: UINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> </dl>
 
  

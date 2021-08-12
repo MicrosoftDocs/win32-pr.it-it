@@ -1,19 +1,19 @@
 ---
-description: Elenca le funzioni di vettore bit-Wise.
+description: Elenca le funzioni vettore bit per bit.
 ms.assetid: c28ade14-3cf8-3d8e-260b-58751caea8d0
-title: Funzioni di Bit-Wise Vector
+title: Bit-Wise funzioni vettoriali
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0690ba97eda94df44c359c40b68ab53af95f15b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 530a311a01c557a16ab72a504da4f08a09a0a5ae3de8f4d4dd6b9f417e9d0c3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276986"
 ---
-# <a name="bit-wise-vector-functions"></a>Funzioni di Bit-Wise Vector
+# <a name="bit-wise-vector-functions"></a>Bit-Wise funzioni vettoriali
 
-Elenca le funzioni di vettore bit-Wise.
+Elenca le funzioni vettore bit per bit.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,13 +21,13 @@ Elenca le funzioni di vettore bit-Wise.
 
 | Argomento                                                         | Descrizione                                                                                                                             |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**XMVectorAndCInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorandcint)<br/>         | Calcola l'operatore logico AND di un vettore con la negazione di un secondo vettore, considerando ogni componente come Unsigned Integer.<br/> |
-| [**XMVectorAndInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorandint)<br/>           | Calcola l'operatore AND logico di due vettori, considerando ogni componente come Unsigned Integer.<br/>                                     |
-| [**XMVectorNorInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectornorint)<br/>           | Calcola l'operatore logico and di due vettori, considerando ogni componente come Unsigned Integer.<br/>                                     |
-| [**XMVectorNotEqual**](/windows/win32/api/directxmath/nf-directxmath-xmvectornotequal)<br/>       | Esegue un test per componente per la disuguaglianza di due vettori.<br/>                                                             |
-| [**XMVectorNotEqualInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectornotequalint)<br/> | Esegue un test per componente per la disuguaglianza di due vettori, considerando ogni componente come Unsigned Integer.<br/>             |
-| [**XMVectorOrInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectororint)<br/>             | Calcola l'operatore logico OR di due vettori, considerando ogni componente come Unsigned Integer.<br/>                                      |
-| [**XMVectorXorInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorxorint)<br/>           | Calcola l'XOR logico di due vettori, considerando ogni componente come Unsigned Integer.<br/>                                     |
+| [**XMVectorAndCInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorandcint)<br/>         | Calcola l'AND logico di un vettore con la negazione di un secondo vettore, trattando ogni componente come intero senza segno.<br/> |
+| [**XMVectorAndInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorandint)<br/>           | Calcola l'AND logico di due vettori, trattando ogni componente come intero senza segno.<br/>                                     |
+| [**XMVectorNorInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectornorint)<br/>           | Calcola l'operatore NOR logico di due vettori, trattando ogni componente come intero senza segno.<br/>                                     |
+| [**XMVectorNotEqual**](/windows/win32/api/directxmath/nf-directxmath-xmvectornotequal)<br/>       | Esegue un test per componente per verificare la disuguaglianza di due vettori.<br/>                                                             |
+| [**XMVectorNotEqualInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectornotequalint)<br/> | Esegue un test per componente per verificare la disuguaglianza di due vettori, trattando ogni componente come intero senza segno.<br/>             |
+| [**XMVectorOrInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectororint)<br/>             | Calcola l'OR logico di due vettori, trattando ogni componente come un intero senza segno.<br/>                                      |
+| [**XMVectorXorInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorxorint)<br/>           | Calcola l'XOR logico di due vettori, trattando ogni componente come intero senza segno.<br/>                                     |
 
 
 
@@ -37,7 +37,7 @@ Elenca le funzioni di vettore bit-Wise.
 
 <dl> <dt>
 
-[Funzioni Vector della libreria DirectXMath](ovw-xnamath-reference-functions-vector.md)
+[Funzioni vettoriali della libreria DirectXMath](ovw-xnamath-reference-functions-vector.md)
 </dt> </dl>
 
  

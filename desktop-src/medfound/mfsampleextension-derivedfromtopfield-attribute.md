@@ -1,45 +1,45 @@
 ---
-description: Specifica se un fotogramma video deinterlacciato è stato derivato dal campo superiore o dal campo inferiore.
+description: Specifica se un fotogramma video deinterlaced è stato derivato dal campo superiore o dal campo inferiore.
 ms.assetid: 3710ab94-afb3-44d3-a680-b4a716810ec1
-title: Attributo MFSampleExtension_DerivedFromTopField (Mfapi. h)
+title: MFSampleExtension_DerivedFromTopField attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f90a67edf0b08337748bc118b0aa4ff024ec0ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 376cc499dd76702abb4c7054014a7c720118f33a732856202c4e654992c30985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241191"
 ---
-# <a name="mfsampleextension_derivedfromtopfield-attribute"></a>\_Attributo DerivedFromTopField di MFSampleExtension
+# <a name="mfsampleextension_derivedfromtopfield-attribute"></a>Attributo DerivedFromTopField di MFSampleExtension \_
 
-Specifica se un fotogramma video deinterlacciato è stato derivato dal campo superiore o dal campo inferiore. Questo attributo si applica agli esempi di supporti.
+Specifica se un fotogramma video deinterlaced è stato derivato dal campo superiore o dal campo inferiore. Questo attributo si applica agli esempi di supporti.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Bool** archiviato come **UInt32**
+**BOOL** archiviato come **UINT32**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**Esempio IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è valido solo per gli esempi deinterlacciati. Impostare questo attributo se il frame è stato deinterlacciato interpolando uno dei campi.
+Questo attributo è valido solo per gli esempi deinterlaced. Impostare questo attributo se il frame è stato deinterlaced interpolando uno dei campi.
 
-Se il valore è **true**, il campo inferiore è stato interpolato dal campo superiore. Se il valore è **false**, il campo superiore è stato interpolato dal campo inferiore.
+Se il valore è **TRUE,** il campo inferiore è stato interpolato dal campo superiore. Se il valore è **FALSE,** il campo superiore è stato interpolato dal campo inferiore.
 
-Se l'attributo non è impostato, il frame non è stato deinterlacciato. Il frame è un frame progressivo reale oppure è un frame interlacciato.
+Se l'attributo non è impostato, il frame non è stato deinterlaced. Il frame è un frame progressivo vero o è un frame interlacciato.
 
-Questo attributo è informativo. Un deinterlacciatore software può impostare questo attributo. Se questo attributo è impostato, fornisce un suggerimento che è possibile ripristinare il campo originale eliminando le righe di analisi interpolate. Se, ad esempio, l'attributo è **true**, è possibile ripristinare il campo superiore originale rimuovendo il campo inferiore interpolato.
+Questo attributo è informativo. Un deinterlacer software può impostare questo attributo. Se questo attributo è impostato, fornisce un suggerimento per recuperare il campo originale eliminando le righe di analisi interpolate. Ad esempio, se l'attributo è **TRUE,** è possibile recuperare il campo superiore originale eliminando il campo inferiore interpolato.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,9 +47,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi di esempio](sample-attributes.md)

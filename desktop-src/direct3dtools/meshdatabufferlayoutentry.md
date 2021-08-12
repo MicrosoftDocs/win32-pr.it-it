@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni su una singola voce nel layout del buffer di una mesh.
+description: Rappresenta informazioni su una singola voce nel layout del buffer di una mesh.
 MS-HAID: vspixengine.MeshDataBufferLayoutEntry
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bce67b8316e9eb9b96e641e2a90260fab6bfdaad
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 44cc67402c69b690ba9070fa51bf8d26f316faa7d10ac991226db2c05b6d6a6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118282275"
 ---
 # <a name="span-idvspixenginemeshdatabufferlayoutentryspanmeshdatabufferlayoutentry-structure"></a><span id="vspixengine.meshdatabufferlayoutentry"></span>Struttura MeshDataBufferLayoutEntry
 
-Rappresenta le informazioni su una singola voce nel layout del buffer di una mesh.
+Rappresenta informazioni su una singola voce nel layout del buffer di una mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,21 +37,21 @@ Rappresenta le informazioni su una singola voce nel layout del buffer di una mes
 
 ## <a name="members"></a>Members
 
-**pName**  
+**Pname**  
 Stringa COM contenente il nome della voce.
 
 **numComponents**  
 Numero di componenti omogenei (valori) che costituiscono questa voce.
 
-**Posizione**  
+**isPosition**  
 true se la voce è una posizione; in caso contrario, false.
 
 **format**  
-Formato dati della voce (Register). Per ulteriori informazioni, vedere l' \_ enumerazione del formato Register.
+Formato dei dati della voce (registro). Per altre informazioni, vedere l'enumerazione REGISTER \_ FORMAT.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

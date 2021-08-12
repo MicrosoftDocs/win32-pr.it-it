@@ -3,47 +3,47 @@ title: Classe CSecureChannelServer
 description: Classe CSecureChannelServer
 ms.assetid: e6e1463a-5a26-4b83-85e0-a639d384a199
 keywords:
-- Windows Media Gestione dispositivi, classe CSecureChannelServer
+- Windows Gestione dispositivi multimediali, classe CSecureChannelServer
 - Gestione dispositivi, classe CSecureChannelServer
-- provider di servizi, classe CSecureChannelServer
-- Guida di riferimento alla programmazione, classe CSecureChannelServer
-- informazioni di riferimento su Windows Media Gestione dispositivi, classe CSecureChannelServer
+- provider di servizi,classe CSecureChannelServer
+- informazioni di riferimento sulla programmazione, classe CSecureChannelServer
+- informazioni di riferimento Windows Gestione dispositivi multimediali, classe CSecureChannelServer
 - Classe CSecureChannelServer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99efdd4d4fa245000d27b5874439375d968591e5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 87627fcdee6da42927ab88411dd579225dc38f025ae73bf9f4fe787c0c5e44bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585485"
 ---
 # <a name="csecurechannelserver-class"></a>Classe CSecureChannelServer
 
-La classe **CSecureChannelServer** è una classe helper (non un'interfaccia) che consente a un provider di servizi o a un provider di contenuti protetto di autenticare un'applicazione usando l'interfaccia [**IComponentAuthenticate**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate) , di crittografare e decrittografare i dati e di creare firme Mac. Il processo di autenticazione richiede che l'applicazione crei un oggetto **CSecureChannelClient** e che il provider di servizi crei un oggetto **CSecureChannelServer** . Le classi **CSecureChannelClient** e **CSecureChannelServer** sono dichiarate nella libreria a collegamento statico, mssachlp. lib. Tutti i metodi di Windows Media Gestione dispositivi, provider di servizi e interfacce del provider di contenuti protetti possono restituire WMDM \_ E \_ NOTCERTIFIED per indicare che il chiamante non è stato autenticato correttamente.
+La **classe CSecureChannelServer** è una classe helper (non un'interfaccia) che consente a un provider di servizi o a un provider di contenuto protetto di autenticare un'applicazione usando l'interfaccia [**IComponentAuthenticate,**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate) crittografare e decrittografare i dati e creare firme MAC. Il processo di autenticazione richiede che l'applicazione crei un **oggetto CSecureChannelClient** e che il provider di servizi crei un **oggetto CSecureChannelServer.** Le **classi CSecureChannelClient** **e CSecureChannelServer** vengono dichiarate nella libreria a collegamento statico Mssachlp.lib. Tutti i metodi di Windows Gestione dispositivi multimediali, il provider di servizi e le interfacce del provider di contenuti protetti possono restituire WMDM E NOTCERTIFIED per indicare che il chiamante non è stato \_ \_ autenticato correttamente.
 
-La classe **CSecureChannelServer** espone i metodi seguenti.
+La **classe CSecureChannelServer** espone i metodi seguenti.
 
 
 
 | Metodo                                                            | Descrizione                                                                                 |
 |-------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**DecryptParam**](/previous-versions/bb231598(v=vs.85))         | Decrittografa i dati contenuti in un parametro.                                                 |
+| [**DecryptParam**](/previous-versions/bb231598(v=vs.85))         | Decrittografa i dati contenuti in un parametro .                                                 |
 | [**EncryptParam**](/previous-versions/ms868509(v=msdn.10))         | Crittografa i dati contenuti in un parametro.                                                 |
-| [**fIsAuthenticated**](/previous-versions/bb231600(v=vs.85)) | Verifica che sia stato stabilito correttamente un canale di autenticazione protetto.            |
+| [**fIsAuthenticated**](/previous-versions/bb231600(v=vs.85)) | Verifica che un canale di autenticazione sicuro sia stato stabilito correttamente.            |
 | [**GetAppSec**](/previous-versions/bb231601(v=vs.85))               | Recupera i livelli di sicurezza dell'applicazione dei componenti locali e remoti.               |
-| [**GetSessionKey**](/previous-versions/bb231602(v=vs.85))       | Recupera la chiave della sessione corrente.                                                          |
+| [**GetSessionKey**](/previous-versions/bb231602(v=vs.85))       | Recupera la chiave di sessione corrente.                                                          |
 | [**MACFinal**](/previous-versions/ms868513(v=msdn.10))                 | Rilascia il canale MAC (Message Authentication Code) e recupera un valore MAC finale.     |
 | [**MACInit**](/previous-versions/ms868514(v=msdn.10))                   | Acquisisce un canale MAC (Message Authentication Code).                                       |
-| [**MACUpdate**](/previous-versions/ms868515(v=msdn.10))               | Aggiorna il valore del codice MAC (Message Authentication Code) con un valore di parametro.                 |
+| [**MACUpdate**](/previous-versions/ms868515(v=msdn.10))               | Aggiorna il valore mac (Message Authentication Code) con un valore di parametro.                 |
 | [**SACAuth**](/previous-versions/ms868516(v=msdn.10))                   | Stabilisce un canale autenticato sicuro tra i componenti.                              |
 | [**SACGetProtocols**](/previous-versions/ms868517(v=msdn.10))   | Segnala i protocolli supportati da un componente.                                             |
 | [**SetCertificate**](/previous-versions/ms868518(v=msdn.10))     | Specifica il certificato e la chiave privata del server SAC (Secure Authenticated Channel). |
-| [**SetSessionKey**](/previous-versions/ms868519(v=msdn.10))       | Imposta la chiave della sessione utilizzata per comunicare con un altro componente.                    |
+| [**SetSessionKey**](/previous-versions/ms868519(v=msdn.10))       | Imposta la chiave di sessione utilizzata per comunicare con un altro componente.                    |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -58,9 +58,9 @@ La classe **CSecureChannelServer** espone i metodi seguenti.
 [**Interfacce per i provider di servizi**](interfaces-for-service-providers.md)
 </dt> <dt>
 
-[**Uso di canali con autenticazione sicura**](using-secure-authenticated-channels.md)
+[**Uso di canali autenticati sicuri**](using-secure-authenticated-channels.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

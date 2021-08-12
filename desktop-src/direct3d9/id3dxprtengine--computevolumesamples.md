@@ -1,7 +1,7 @@
 ---
-description: Calcola una proiezione dell'illuminazione diretta dal rimbalzo della luce precedente in vettori di base armonici sferici che rappresentano la radianza dell'evento imprevisto nelle posizioni specificate.
+description: Calcola una proiezione dell'illuminazione diretta dal mancato rilascio della luce precedente in vettori di base sferici aricali (SH) che rappresentano la luminosità dell'evento imprevisto in posizioni specificate.
 ms.assetid: ccde7c59-cb82-4d61-822a-e1e9ecea0a28
-title: 'Metodo ID3DXPRTEngine:: ComputeVolumeSamples (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::ComputeVolumeSamples (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bd77fff723f0cf7e3dc2a52be6a40ff6f0d71fe1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: edc13e8b6f0e5c725e957be22f1b297f825a4f3b622ced68adf19b34a0b64b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293502"
 ---
-# <a name="id3dxprtenginecomputevolumesamples-method"></a>Metodo ID3DXPRTEngine:: ComputeVolumeSamples
+# <a name="id3dxprtenginecomputevolumesamples-method"></a>Metodo ID3DXPRTEngine::ComputeVolumeSamples
 
-Calcola una proiezione dell'illuminazione diretta dal rimbalzo della luce precedente in vettori di base armonici sferici che rappresentano la radianza dell'evento imprevisto nelle posizioni specificate.
+Calcola una proiezione dell'illuminazione diretta dal mancato rilascio della luce precedente in vettori di base sferici aricali (SH) che rappresentano la luminosità dell'evento imprevisto in posizioni specificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ HRESULT ComputeVolumeSamples(
 
 <dl> <dt>
 
-*pSurfDataIn* \[ in\]
+*pSurfDataIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di input che rappresenta l'oggetto 3D del rimbalzo della luce precedente.
+Puntatore a un [**oggetto ID3DXPRTBuffer di**](id3dxprtbuffer.md) input che rappresenta l'oggetto 3D del precedente bounce di luce.
 
 </dd> <dt>
 
-*Ordine* \[ di in\]
+*Ordine* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso tra [D3DXSH \_ MINORDER](other-d3dx-constants.md) \_ e D3DXSH MAXORDER, inclusi. La valutazione genera coefficienti Order ². Il livello della valutazione è Order-1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
-*NumVolSamples.xml* \[ in\]
+*NumVolSamples.xml* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di percorsi di esempio.
+Numero di posizioni di esempio.
 
 </dd> <dt>
 
-*pSampleLocs* \[ in\]
+*pSampleLocs* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Posizione per ogni esempio. Se pSampleLocs è **null**, ComputeVolumeSamples calcolerà le matrici di trasferimento a ogni vertice di rete. Tuttavia, se pSampleLocs non è **null**, è necessario campionare su una sfera (set UseSphere = **true** e UseCosine = **false** in [**ID3DXPRTEngine:: SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md)); in caso contrario, ComputeVolumeSamples restituirà D3DERR \_ INVALIDCALL.
+Posizione per ogni campione. Se pSampleLocs è **NULL,** ComputeVolumeSamples calcola le matrici di trasferimento a ogni vertice mesh. Tuttavia, se pSampleLocs non è **NULL,** è necessario eseguire il campionamento su una sfera (impostare UseSphere = **TRUE** e UseCosine = **FALSE** in [**ID3DXPRTEngine::SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md)); In caso contrario, ComputeVolumeSamples restituirà D3DERR \_ INVALIDCALL.
 
 </dd> <dt>
 
-*pDataOut* \[ in uscita\]
+*pDataOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che proietta l'illuminazione diretta dal rimbalzo della luce precedente nei vettori di base sh. Questo buffer deve avere il numero appropriato di canali di colore allocati per la simulazione.
+Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che proietta l'illuminazione diretta dal precedente flusso di luce nei vettori di base SH. Questo buffer deve avere il numero corretto di canali di colore allocati per la simulazione.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che pro
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo calcola il modo in cui la luce della funzione di luminosità di origine viene riflessa dalla superficie che rappresenta la scena (pSurfDataIn) e arriva a ogni punto nello spazio specificato da pSampleLocs. I coefficienti SH rappresentano il mapping, a ogni punto di pSampleLocs, della luminosità del codice sorgente per l'evento imprevisto trasferito.
+Questo metodo calcola il modo in cui la luce della funzione di luminosità di origine viene riflessa dalla superficie che rappresenta la scena (pSurfDataIn) e arriva a ogni punto nello spazio specificato da pSampleLocs. I coefficienti SH rappresentano il mapping, in ogni punto pSampleLocs, della radice di origine alla radice degli eventi imprevisti trasferiti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ Questo metodo calcola il modo in cui la luce della funzione di luminosità di or
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

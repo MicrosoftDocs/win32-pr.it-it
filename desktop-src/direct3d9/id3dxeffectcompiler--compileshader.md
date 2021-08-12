@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3e8d1d72fccd5c4ad47d21d05ee46013860a7743
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 1e42eec5cc9c5c90d1fa4e26c4ad38d611dce3ce0df933d76b1eb81d2534b8dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295877"
 ---
 # <a name="id3dxeffectcompilercompileshader-method"></a>Metodo ID3DXEffectCompiler::CompileShader
 
@@ -77,7 +77,7 @@ Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente lo shader compilato. Lo shader del compilatore è una matrice di DWORD. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer**](id3dxbuffer.md).
+Buffer contenente lo shader compilato. Lo shader del compilatore è una matrice di DWORD. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Buffer contenente lo shader compilato. Lo shader del compilatore è una matrice 
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente almeno il primo messaggio di errore di compilazione che si è verificato. Sono inclusi gli errori del compilatore degli effetti e gli errori di compilazione del linguaggio di alto livello. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer**](id3dxbuffer.md).
+Buffer contenente almeno il primo messaggio di errore di compilazione che si è verificato. Sono inclusi gli errori del compilatore degli effetti e gli errori di compilazione del linguaggio di alto livello. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Buffer contenente almeno il primo messaggio di errore di compilazione che si è 
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Restituisce [**un'interfaccia ID3DXConstantTable,**](id3dxconstanttable.md) che può essere usata per accedere alle costanti shader. Questo valore può essere **NULL.** Se si compila l'applicazione come con supporto per gli indirizzi di grandi dimensioni, ovvero si usa l'opzione del linker /LARGEADDRESSAWARE per gestire indirizzi di dimensioni superiori a 2 GB, non è possibile usare questo parametro e impostarlo su **NULL.** È invece necessario usare la [**funzione D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella costante dello shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
+Restituisce [**un'interfaccia ID3DXConstantTable,**](id3dxconstanttable.md) che può essere usata per accedere alle costanti shader. Questo valore può essere **NULL.** Se si compila l'applicazione con informazioni su indirizzi di grandi dimensioni, ovvero si usa l'opzione del linker /LARGEADDRESSAWARE per gestire indirizzi di dimensioni superiori a 2 GB, non è possibile usare questo parametro e impostarlo su **NULL.** È invece necessario usare la [**funzione D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella costante shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
 
 </dd> </dl>
 
@@ -111,7 +111,7 @@ Se il metodo ha esito negativo, il valore restituito sarà E \_ FAIL.
 
 ## <a name="remarks"></a>Commenti
 
-Le destinazioni possono essere specificate per vertex shader, pixel shader e funzioni di riempimento della trama.
+È possibile specificare destinazioni per vertex shader, pixel shader e funzioni di riempimento della trama.
 
 
 

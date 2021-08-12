@@ -1,29 +1,29 @@
 ---
-title: Come applicare le trasformazioni 2D
-description: In questo argomento viene illustrato come applicare le trasformazioni 2D a un oggetto visivo tramite Microsoft DirectComposition.
+title: Come applicare trasformazioni 2D
+description: Questo argomento illustra come applicare trasformazioni 2D a un oggetto visivo usando Microsoft DirectComposition.
 ms.assetid: DED74416-C85A-4220-89BD-3F9BEF786B7D
 keywords:
-- come applicare le trasformazioni DirectComposition 2D
-- Trasformazioni 2D DirectComposition
+- come applicare trasformazioni DirectComposition 2D
+- Trasformazioni DirectComposition 2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b52d2e0ce9fbb56547c42ea4ea18d57d173a7e40
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6ef965ce98bb064eb63b34de569160c9b68932c96ce757e3e5d13450f73098b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281957"
 ---
-# <a name="how-to-apply-2d-transforms"></a>Come applicare le trasformazioni 2D
+# <a name="how-to-apply-2d-transforms"></a>Come applicare trasformazioni 2D
 
 > [!NOTE]
-> Per le app in Windows 10, è consigliabile usare le API Windows. UI. Composition anziché DirectComposition. Per altre informazioni, vedere [modernizzare l'app desktop usando il livello visivo](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Per le app Windows 10, è consigliabile usare le API Windows.UI.Composition anziché DirectComposition. Per altre informazioni, vedi [Modernizzare l'app desktop usando il livello visivo](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-In questo argomento viene illustrato come applicare le trasformazioni 2D a un oggetto visivo tramite Microsoft DirectComposition. Nell'esempio riportato in questo argomento viene applicato un gruppo di trasformazioni che:
+Questo argomento illustra come applicare trasformazioni 2D a un oggetto visivo usando Microsoft DirectComposition. L'esempio in questo argomento applica un gruppo di trasformazioni che:
 
 1.  Ruotare l'oggetto visivo di 180 gradi.
-2.  Ridimensionare l'oggetto visivo fino a tre volte le dimensioni originali.
-3.  Trasla (sposta) l'oggetto visivo 150 pixel a destra della posizione originale.
+2.  Aumentare le dimensioni dell'oggetto visivo fino a tre volte le dimensioni originali.
+3.  Trasla (sposta) l'oggetto visivo di 150 pixel a destra della posizione originale.
 
 Le schermate seguenti mostrano l'oggetto visivo prima e dopo l'applicazione delle trasformazioni 2D.
 
@@ -35,7 +35,7 @@ Le schermate seguenti mostrano l'oggetto visivo prima e dopo l'applicazione dell
 
 -   [DirectComposition](directcomposition-portal.md)
 -   [Grafica Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
--   [Infrastruttura grafica DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
+-   [DirectX Graphic Infrastructure (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
@@ -45,14 +45,14 @@ Le schermate seguenti mostrano l'oggetto visivo prima e dopo l'applicazione dell
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-initialize-directcomposition-objects"></a>Passaggio 1: inizializzare gli oggetti DirectComposition
+### <a name="step-1-initialize-directcomposition-objects"></a>Passaggio 1: Inizializzare gli oggetti DirectComposition
 
 1.  Creare l'oggetto dispositivo e l'oggetto di destinazione della composizione.
 2.  Creare un oggetto visivo, impostarne il contenuto e aggiungerlo alla struttura ad albero visuale.
 
-Per ulteriori informazioni, vedere [come inizializzare DirectComposition](initialize-directcomposition.md).
+Per altre informazioni, vedere [Come inizializzare DirectComposition.](initialize-directcomposition.md)
 
-### <a name="step-2-create-the-transform-group-array"></a>Passaggio 2: creare la matrice del gruppo di trasformazione
+### <a name="step-2-create-the-transform-group-array"></a>Passaggio 2: Creare la matrice di gruppi di trasformazioni
 
 
 ```C++
@@ -61,11 +61,11 @@ IDCompositionTransform *pTransforms[3];
 
 
 
-### <a name="step-3-create-the-transform-objects-set-their-properties-and-add-them-to-the-transform-group-array"></a>Passaggio 3: creare gli oggetti Transform, impostarne le proprietà e aggiungerli alla matrice del gruppo Transform
+### <a name="step-3-create-the-transform-objects-set-their-properties-and-add-them-to-the-transform-group-array"></a>Passaggio 3: Creare gli oggetti di trasformazione, impostarne le proprietà e aggiungerli alla matrice del gruppo di trasformazioni
 
-1.  Usare i metodi [**IDCompositionDevice:: CreateRotateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrotatetransform), [**:: CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform)e [**:: CreateTranslateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtranslatetransform) per creare gli oggetti Transform.
-2.  Utilizzare le funzioni membro delle interfacce [**IDCompositionRotateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionrotatetransform), [**IDCompositionScaleTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionscaletransform)e [**IDCompositionTranslateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositiontranslatetransform) per impostare le proprietà delle trasformazioni.
-3.  Copiare i puntatori dell'interfaccia di trasformazione nella matrice del gruppo di trasformazione.
+1.  Usare i [**metodi IDCompositionDevice::CreateRotateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrotatetransform), [**::CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform)e [**::CreateTranslateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtranslatetransform) per creare gli oggetti di trasformazione.
+2.  Usare le funzioni membro delle [**interfacce IDCompositionRotateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionrotatetransform), [**IDCompositionScaleTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionscaletransform)e [**IDCompositionTranslateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositiontranslatetransform) per impostare le proprietà delle trasformazioni.
+3.  Copiare i puntatori dell'interfaccia di trasformazione nella matrice del gruppo di trasformazioni.
 
 
 ```C++
@@ -140,9 +140,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-4-create-the-transform-group-object"></a>Passaggio 4: creare l'oggetto gruppo di trasformazione
+### <a name="step-4-create-the-transform-group-object"></a>Passaggio 4: Creare l'oggetto gruppo di trasformazioni
 
-Chiamare il metodo [**IDCompositionDevice:: CreateTransformGroup**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtransformgroup) per creare l'oggetto gruppo di trasformazione.
+Chiamare il [**metodo IDCompositionDevice::CreateTransformGroup**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtransformgroup) per creare l'oggetto gruppo di trasformazioni.
 
 
 ```C++
@@ -155,9 +155,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-5-apply-the-transform-group-object-to-the-visual"></a>Passaggio 5: applicare l'oggetto gruppo di trasformazione all'oggetto visivo
+### <a name="step-5-apply-the-transform-group-object-to-the-visual"></a>Passaggio 5: Applicare l'oggetto gruppo di trasformazioni all'oggetto visivo
 
-Usare il metodo [**IDCompositionVisual:: setransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-settransform(constd2d_matrix_3x2_f_)) per associare la proprietà Transform dell'oggetto visivo all'oggetto gruppo Transform.
+Usa il [**metodo IDCompositionVisual::SetTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-settransform(constd2d_matrix_3x2_f_)) per associare la proprietà Transform dell'oggetto visivo all'oggetto gruppo di trasformazioni.
 
 
 ```C++
@@ -170,9 +170,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-6-commit-the-composition"></a>Passaggio 6: eseguire il commit della composizione
+### <a name="step-6-commit-the-composition"></a>Passaggio 6: Eseguire il commit della composizione
 
-Chiamare il metodo [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) per eseguire il commit degli aggiornamenti nell'oggetto visivo in DirectComposition per l'elaborazione. Il risultato dell'applicazione del gruppo di trasformazioni 2D viene visualizzato nella finestra di destinazione.
+Chiamare il [**metodo IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) per eseguire il commit degli aggiornamenti nell'oggetto visivo in DirectComposition per l'elaborazione. Il risultato dell'applicazione del gruppo di trasformazioni 2D viene visualizzato nella finestra di destinazione.
 
 
 ```C++
@@ -185,9 +185,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-7-free-the-directcomposition-objects"></a>Passaggio 7: liberare gli oggetti DirectComposition
+### <a name="step-7-free-the-directcomposition-objects"></a>Passaggio 7: Liberare gli oggetti DirectComposition
 
-Assicurarsi di liberare il gruppo di oggetti trasformazione 2D quando non sono più necessari. Nell'esempio seguente viene chiamata la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definita dall'applicazione per liberare gli oggetti Transform.
+Assicurarsi di liberare il gruppo di oggetti di trasformazione 2D quando non sono più necessari. Nell'esempio seguente viene chiamata la macro [**SafeRelease definita**](/windows/desktop/medfound/saferelease) dall'applicazione per liberare gli oggetti transform.
 
 
 ```C++
@@ -200,7 +200,7 @@ for (int i = 0; i < 3; i++)
 
 
 
-Ricordare anche di liberare l'oggetto dispositivo, l'oggetto di destinazione della composizione e gli oggetti visivi prima che l'applicazione venga chiusa.
+Ricordarsi anche di liberare l'oggetto dispositivo, l'oggetto di destinazione della composizione e gli oggetti visivi prima della chiusura dell'applicazione.
 
 ## <a name="complete-example"></a>Esempio completo
 
@@ -327,6 +327,6 @@ HRESULT DemoApp::ApplyTransformGroup(IDCompositionDevice *pDevice,
 [Trasformazioni](transforms.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,33 +1,33 @@
 ---
-description: Specifica il GUID che identifica il sistema di protezione Rights Management digitale (DRM) nel contenitore.
+description: Specifica il GUID che identifica il sistema di protezione DRM (Digital Rights Management) nel contenitore.
 ms.assetid: DACB355B-17B9-4968-8920-5233603FD796
-title: Proprietà MFPKEY_MediaProtectionContainerGuid (Mfidl. h)
+title: MFPKEY_MediaProtectionContainerGuid proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 433ef4723eb91527ad621a50bada79da76e39631
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 86dcfd4bb3a99041b15022dde4833d4a4f7fb866998283028fb82d5e650acc8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242568"
 ---
-# <a name="mfpkey_mediaprotectioncontainerguid-property"></a>\_Proprietà MediaProtectionContainerGuid di MFPKEY
+# <a name="mfpkey_mediaprotectioncontainerguid-property"></a>MFPKEY \_ MediaProtectionContainerGuid - proprietà
 
-Specifica il GUID che identifica il sistema di protezione Rights Management digitale (DRM) nel contenitore.
+Specifica il GUID che identifica il sistema di protezione DRM (Digital Rights Management) nel contenitore.
 
-**Tipo:** \_CLSID VT
+**Digitare:** VT \_ CLSID
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
 **GUID** (**CLSID** \* )
 
-\_CLSID VT
+VT \_ CLSID
 
 **puuid**
 
@@ -39,9 +39,9 @@ membro PROPVARIANT
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                |
+| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ membro PROPVARIANT
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Imposta la trasformazione sprite.
 ms.assetid: 87dfc169-b647-4a96-897d-abbe765ea9e2
-title: 'Metodo ID3DXSprite:: setransform (D3dx9core. h)'
+title: Metodo ID3DXSprite::SetTransform (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 316e7e2c68dfa8f25a712c2077ece03d09455050
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fba7c21d0ba0e99aefc5c4d5dfd69301bb706f804e736badcbe0227d58aca81a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292618"
 ---
-# <a name="id3dxspritesettransform-method"></a>Metodo ID3DXSprite:: setransform
+# <a name="id3dxspritesettransform-method"></a>Metodo ID3DXSprite::SetTransform
 
 Imposta la trasformazione sprite.
 
@@ -40,12 +40,12 @@ HRESULT SetTransform(
 
 <dl> <dt>
 
-*pTransform* \[ in\]
+*pTransform* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a un [**D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione dello sprite dallo spazio globale originale. Usare questa trasformazione per ridimensionare, ruotare o trasformare lo sprite.
+Puntatore a [**un oggetto D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione dello sprite dallo spazio mondiale originale. Usare questa trasformazione per ridimensionare, ruotare o trasformare lo sprite.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a un [**D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente. \_INVALIDCALL D3DERR
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente. D3DERR \_ INVALIDCALL
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

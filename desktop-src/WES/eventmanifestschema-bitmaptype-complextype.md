@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso BitMapType
-description: Definisce un elenco di mapping nome/valore tra valori di bit e valori di stringa.
+description: Definisce un elenco di mapping nome/valore tra valori di bit e valori stringa.
 ms.assetid: 65dc6a48-878c-415c-872c-41dc27691b7f
 keywords:
-- Log eventi di tipo complesso BitMapType
+- EventLog di tipo complesso BitMapType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ef3a48b102b9ab36ef492fcd38c4bb8b2560d5fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c899718cd28e337bbc5d34301b7bb49446fde51f21db5b742e98dd95c5092c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590411"
 ---
 # <a name="bitmaptype-complex-type"></a>Tipo complesso BitMapType
 
-Definisce un elenco di mapping nome/valore tra valori di bit e valori di stringa.
+Definisce un elenco di mapping nome/valore tra valori di bit e valori stringa.
 
 ``` syntax
 <xs:complexType name="BitMapType">
@@ -69,8 +69,8 @@ Definisce un elenco di mapping nome/valore tra valori di bit e valori di stringa
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

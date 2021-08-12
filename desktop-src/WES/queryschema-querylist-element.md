@@ -1,9 +1,9 @@
 ---
-title: Elemento query
+title: Elemento QueryList
 description: Nodo radice della query.
 ms.assetid: 944170c6-2b97-4a80-81b9-631484f973f1
 keywords:
-- Log eventi dell'elemento query
+- Elemento QueryList EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 02aa303d0d3eb016a73a4df338cabe2143b018e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e340ece78b0631b09ba8ff2588a272bb3955e6d49a3906f5f41a5626dd51f34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587718"
 ---
-# <a name="querylist-element"></a>Elemento query
+# <a name="querylist-element"></a>Elemento QueryList
 
 Nodo radice della query.
 
@@ -36,8 +36,8 @@ Nodo radice della query.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

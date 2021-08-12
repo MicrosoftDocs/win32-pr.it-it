@@ -1,24 +1,24 @@
 ---
-title: Attributo TextBoxRect di la
-description: Attributo TextBoxRect di la
+title: Attributo TEXTBoxRect di VML
+description: Attributo TEXTBoxRect di VML
 ms.assetid: 22c3510a-be5f-4357-b288-02d96eae99ed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c23e955c8dc929a442fe147d5401fd597534242e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 644d4a89effa54a991d04de4c97c4f9d86876a78d86149d9b99c3a8161585b44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597483"
 ---
-# <a name="vml-textboxrect-attribute"></a>Attributo TextBoxRect di la
+# <a name="vml-textboxrect-attribute"></a>Attributo TEXTBoxRect di VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce una o più caselle di testo all'interno di una forma. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,25 +26,25 @@ Definisce una o più caselle di testo all'interno di una forma. Proprietà di le
 
 [Percorso](msdn-online-vml-path-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* textboxrect = " *Expression* " >
+<v: *elemento* textboxrect=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . textboxrect = "*Expression*"
+*element* .textboxrect="*expression*"
 
-*espressione* = *elemento*. textboxrect
+*expression* = *elemento*.textboxrect
 
 **Osservazioni:**
 
-Una casella di testo viene definita da uno o più set di numeri che specificano (in ordine) i punti sinistro, superiore, destro e inferiore del rettangolo. Più set sono delimitati da un punto e virgola. Il valore predefinito è lo stesso valore della dimensione del rettangolo che lo contiene. Se è definita più di una casella di testo, i set di quadrupli delimitati da virgole che definiscono ogni casella di testo sono separati da punti e virgola. Normalmente le caselle di testo vengono impostate in set di 1, 2, 3 o 6 rettangoli su una forma.
+Una casella di testo è definita da uno o più set di numeri che specificano (nell'ordine) i punti sinistro, superiore, destro e inferiore del rettangolo. Più set sono delimitati da un punto e virgola. Il valore predefinito è lo stesso valore di dimensione del rettangolo contenitore. Se sono definite più caselle di testo, i set quadrupli delimitati da virgole che definiscono ogni casella di testo sono separati da punti e virgola. In genere le caselle di testo sono in set di 1, 2, 3 o 6 rettangoli in una forma.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-Una casella di testo di 95 unità per 95 unità è definita e posizionata 5 unità all'interno dell'angolo superiore sinistro della forma.
+Viene definita una casella di testo di 95 unità per 95 unità e posizionata 5 unità all'interno dell'angolo superiore sinistro della forma.
 
 
 ```HTML
@@ -59,6 +59,6 @@ Una casella di testo di 95 unità per 95 unità è definita e posizionata 5 unit
 
 
 
- 
+ 
 
- 
+ 

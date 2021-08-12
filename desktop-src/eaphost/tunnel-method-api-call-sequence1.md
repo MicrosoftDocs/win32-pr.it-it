@@ -1,49 +1,49 @@
 ---
-title: Sequenza di chiamate API del metodo tunnel
-description: Informazioni sulla sequenza di chiamate API per i metodi di tunneling. Vedere una panoramica e visualizzare altre risorse disponibili.
+title: Tunnel Sequenza di chiamate api dei metodi
+description: Informazioni sulla sequenza di chiamate API per Tunnel metodi. Vedere una panoramica e visualizzare altre risorse disponibili.
 ms.assetid: 48aad213-1d29-4809-9599-b56325b2b8e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef5f6b30fda111162585fb5c8b2aa370fa6af61e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ca32a889229b6cdbdb3f008ebea8b838f9b6d64fba36bc2a30c4ddd9d62ac83d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104339302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272794"
 ---
-# <a name="tunnel-method-api-call-sequence"></a>Sequenza di chiamate API del metodo tunnel
+# <a name="tunnel-method-api-call-sequence"></a>Tunnel Sequenza di chiamate api dei metodi
 
-In questo argomento viene illustrata la sequenza di chiamate API per i metodi tunnel
+Questo argomento illustra la sequenza di chiamate API per Tunnel metodi
 
-## <a name="tunnel-method-call-sequence-overview"></a>Panoramica della sequenza di chiamate al metodo tunnel
+## <a name="tunnel-method-call-sequence-overview"></a>Tunnel Cenni preliminari sulla sequenza di chiamate al metodo
 
-Quando richiedente viene richiesta l'identità dell'utente e i dati utente, viene in genere generato il flusso di chiamate API seguente.
+Quando Supplicant ottiene la richiesta di identità utente e dati utente, si verifica in genere il flusso di chiamate API seguente.
 
--   Il supplicant chiama EapHostPeerProcessReceivedPacket su EapHost per elaborare il pacchetto ricevuto dall'autenticatore.
--   Quando si elabora questo pacchetto, EAPHost lo determina come pacchetto IdentityRequest e chiama [**EapPeerGetIdentity**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetidentity) sul metodo tunnel per ottenere l'identità utente da usare per l'autenticazione.
--   Se il metodo tunnel deve ottenere l'identità dell'utente dal metodo interno, chiama [**EAPHostPeerGetIdentity**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetidentity) su EAPHost interno, che a sua volta chiama [**EapPeerGetIdentity**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetidentity) sul metodo interno.
+-   Il supplicant chiama EapHostPeerProcessReceivedPacket in EapHost per elaborare il pacchetto ricevuto dall'autenticatore.
+-   Al momento dell'elaborazione di questo pacchetto, EAPHost lo determina come pacchetto IdentityRequest e chiama [**EapPeerGetIdentity**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetidentity) sul metodo tunnel per ottenere l'identità utente da usare per l'autenticazione.
+-   Se il metodo tunnel deve ottenere l'identità utente dal metodo interno, chiama [**EAPHostPeerGetIdentity**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetidentity) su EAPHost interno, che a sua volta chiama [**EapPeerGetIdentity**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeergetidentity) sul metodo interno.
 
-## <a name="user-interaction-with-the-tunnel-methods-api-call-flow"></a>Interazione dell'utente con il flusso di chiamate API dei metodi tunnel
+## <a name="user-interaction-with-the-tunnel-methods-api-call-flow"></a>Interazione dell'utente con Tunnel metodi di gestione delle Flow
 
-In alcuni casi, quando l'identità non è disponibile o quando l'utente deve fornire informazioni aggiuntive, il metodo EAP genera una finestra di dialogo dell'interfaccia utente nel supplicant.
+In alcuni casi, quando l'identità non è disponibile o quando l'utente deve fornire informazioni aggiuntive, il metodo Eap genera una finestra di dialogo dell'interfaccia utente sul supplicant.
 
-In questi casi, la sequenza di chiamate viene in genere svolta per ottenere informazioni direttamente dall'utente.
+In questi casi si verifica in genere la sequenza di chiamate per ottenere informazioni direttamente dall'utente.
 
--   Il metodo EAP del tunnel restituisce il codice dell'azione per richiamare l'interfaccia utente in EapHost. Supplicant chiama [**EapHostPeerGetUIContext**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetuicontext)per ottenere le informazioni sul contesto dell'interfaccia utente corrente per la finestra di dialogo dell'interfaccia utente.
--   Supplicant chiama quindi [ **EapHostPeerInvokeInteractiveUI.**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerinvokeinteractiveui) Questa funzione utilizza le informazioni sul contesto dell'interfaccia utente per generare un'interfaccia utente interattiva utilizzata per ottenere informazioni sulle credenziali dall'utente. Il processo dell'interfaccia utente carica Eappcfg.dll e ottiene i puntatori a EapPeerInvokeInteractiveUI e EapPeerFreeMemory.
+-   Tunnel Il metodo Eap restituisce il codice azione per richiamare l'interfaccia utente a EapHost. Supplicant chiama [**EapHostPeerGetUIContext**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetuicontext)per ottenere le informazioni sul contesto dell'interfaccia utente corrente per la finestra di dialogo dell'interfaccia utente.
+-   Supplicant chiama quindi [ **EapHostPeerInvokeInteractiveUI.**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerinvokeinteractiveui) Questa funzione usa le informazioni sul contesto dell'interfaccia utente per generare un'interfaccia utente interattiva usata per ottenere informazioni sulle credenziali dall'utente. Il processo dell'interfaccia Eappcfg.dll e ottiene i puntatori a EapPeerInvokeInteractiveUI ed EapPeerFreeMemory.
     > [!Note]  
-    > Il processo dell'interfaccia utente in genere raccoglie l'interfaccia utente o gestisce l'interfaccia utente interattiva ed è separato dal processo di supplicant. La separazione dei due processi non è un requisito di EAPHost, ma questa operazione ha il vantaggio di consentire al processo dell'interfaccia utente di interagire con il desktop.
+    > Il processo dell'interfaccia utente raccoglie in genere l'interfaccia utente o gestisce l'interfaccia utente interattiva ed è separato dal processo supplicant. La separazione dei due processi non è un requisito di EAPHost, ma ha il vantaggio di consentire al processo dell'interfaccia utente di interagire con il desktop.
 
-     
+     
 
 -   EapHost chiama [**EapPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeidentityui) sul metodo tunnel per ottenere informazioni sull'identità dell'utente.
--   Per ottenere l'identità dell'utente dal metodo interno, il metodo tunnel chiama [**EapHostPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerinvokeidentityui) sull'EAPHost interno.
--   EAPHost interno chiama [**EapPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeidentityui) sul metodo interno per richiamare l'interfaccia utente dell'identità utente.
--   [**EapHostPeerSetUIContext**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeersetuicontext) fornisce informazioni sul contesto dell'interfaccia utente nuove o aggiornate al metodo peer EAP caricato in EAPHost dopo la generazione dell'interfaccia utente.
+-   Per ottenere l'identità utente dal metodo interno, il metodo tunnel chiama [**EapHostPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerinvokeidentityui) su EAPHost interno.
+-   Inner EAPHost chiama [**EapPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeidentityui) sul metodo interno per richiamare l'interfaccia utente dell'identità utente.
+-   [**EapHostPeerSetUIContext**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeersetuicontext) fornisce informazioni sul contesto dell'interfaccia utente nuove o aggiornate al metodo peer EAP caricato in EAPHost dopo la creazione dell'interfaccia utente.
 
-Il diagramma seguente illustra la sequenza di chiamate API per i metodi tunnel
+Il diagramma seguente illustra la sequenza di chiamate API per Tunnel metodi
 
-![sequenza di chiamate API di metodi tunnel](images/tunnel-identity-processing-new.png)
+![sequenza di chiamate api dei metodi tunnel](images/tunnel-identity-processing-new.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -55,12 +55,12 @@ Il diagramma seguente illustra la sequenza di chiamate API per i metodi tunnel
 [Sequenza di chiamate API supplicant](supplicant-api-call-sequence.md)
 </dt> <dt>
 
-[Informazioni di riferimento sull'API del richiedente EAPHost](eap-host-supplicant-api-reference.md)
+[Informazioni di riferimento sulle API supplicant EAPHost](eap-host-supplicant-api-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

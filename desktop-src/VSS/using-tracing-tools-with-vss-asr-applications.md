@@ -1,71 +1,71 @@
 ---
-description: È possibile utilizzare lo strumento logman per raccogliere informazioni di traccia per le applicazioni VSS che utilizzano il ripristino automatico del sistema (ASR).
+description: È possibile usare lo strumento Logman per raccogliere informazioni di traccia per le applicazioni VSS che usano Automated Ripristino di sistema (ASR).
 ms.assetid: 872609c8-a123-40a8-96ca-58f34d37f3d8
-title: Uso degli strumenti di traccia con le applicazioni ASR
+title: Uso degli strumenti di traccia con le applicazioni asr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c13eee1c62cd6636eebe5bcfd35bd5abb119645
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e2d22dbb1488b5fd60836926d3c5ef2de5913ff1cc1529fdb278773b2ccd8b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590870"
 ---
-# <a name="using-tracing-tools-with-asr-applications"></a>Uso degli strumenti di traccia con le applicazioni ASR
+# <a name="using-tracing-tools-with-asr-applications"></a>Uso degli strumenti di traccia con le applicazioni asr
 
-È possibile utilizzare lo strumento logman per raccogliere informazioni di traccia per le applicazioni VSS che utilizzano il [Ripristino automatico del sistema (ASR)](using-vss-automated-system-recovery-for-disaster-recovery.md). Logman (logman.exe) è un controller di traccia per gli eventi di traccia e i contatori delle prestazioni. È incluso in Windows XP e nelle versioni successive di Windows. In alternativa, se si preferisce, è possibile usare lo strumento tracelog per raccogliere le stesse informazioni di traccia di ASR. Tracelog è incluso in Windows Driver Kit (WDK).
+È possibile usare lo strumento Logman per raccogliere informazioni di traccia per le applicazioni VSS che usano [Automated Ripristino di sistema (ASR).](using-vss-automated-system-recovery-for-disaster-recovery.md) Logman (logman.exe) è un controller di traccia per gli eventi di traccia e i contatori delle prestazioni. È incluso in Windows XP e versioni successive di Windows. Oppure, se si preferisce, è possibile usare lo strumento Tracelog per raccogliere le stesse informazioni di traccia asr. Tracelog è incluso in Windows Driver Kit (WDK).
 
-Per usare gli strumenti di traccia con VSS, vedere [uso degli strumenti di traccia con VSS](using-tracing-tools-with-vss.md).
+Per usare gli strumenti di traccia con VSS, vedere [Uso degli strumenti di traccia con VSS.](using-tracing-tools-with-vss.md)
 
-## <a name="using-logman"></a>Uso di logman
+## <a name="using-logman"></a>Uso di Logman
 
-Nella procedura seguente viene descritto come utilizzare logman con l'applicazione ASR.
+La procedura seguente descrive come usare Logman con l'applicazione asr.
 
-**Per usare logman con l'applicazione ASR**
+**Per usare Logman con l'applicazione asr**
 
 1.  Usare il comando seguente per avviare la traccia:
 
-    **logman avviare ASR-o** *x: \\ * * * ASR. etl-ETS-p {6407345b-94F2-44c8-b3db-4e076be46816} 0xFF 0xFF**
+    **logman start asr -o** *x: \\ ***asr.etl -ets -p {6407345b-94f2-44c8-b3db-4e076be46816} 0xff 0xff**
 
     > [!Note]  
-    > Sostituire "x: \\ " con il percorso della directory in cui si desidera archiviare il file di log di traccia. Per prestazioni ottimali, il file di log di traccia deve trovarsi in un volume che non fa parte della copia shadow.
+    > Sostituire "x: " con il percorso della directory in cui si vuole archiviare il file di \\ log di traccia. Per prestazioni ottimali, il file di log di traccia deve trovarsi in un volume che non fa parte della copia shadow.
 
      
 
 2.  Usare il comando seguente per arrestare la traccia:
 
-    **logman stop ASR-ETS**
+    **logman stop asr -ets**
 
-Il file di log di traccia è *x: \\* ASR. etl.
+Il file di log di traccia *è x: \\* asr.etl.
 
-Per ulteriori informazioni sullo strumento Logman, vedere [logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
+Per altre informazioni sullo strumento Logman, vedere [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
 
-## <a name="using-tracelog"></a>Uso di tracelog
+## <a name="using-tracelog"></a>Uso del log di traccia
 
-Nella procedura seguente viene descritto come utilizzare tracelog.
+La procedura seguente descrive come usare Tracelog.
 
-**Per usare tracelog**
+**Per usare Tracelog**
 
-1.  Creare un file di testo denominato ASR. CTL che contiene solo il testo seguente:
+1.  Creare un file di testo denominato asr.ctl contenente solo il testo seguente:
 
-    **6407345b-94F2-44c8-b3db-4e076be46816 ASR**
+    **6407345b-94f2-44c8-b3db-4e076be46816 asr**
 
 2.  Usare il comando seguente per avviare la traccia:
 
-    **tracelog-avviare ASR-f** *x: \\ * * * ASR. etl-GUID ASR. CTL-flag 0xFF-Level 0xFF**
+    **tracelog -start asr -f** *x: \\ ***asr.etl -guid asr.ctl -flag 0xff -level 0xff**
 
     > [!Note]  
-    > Sostituire "x: \\ " con il percorso della directory in cui si desidera archiviare il file di log di traccia. Per prestazioni ottimali, il file di log di traccia deve trovarsi in un volume che non fa parte della copia shadow.
+    > Sostituire "x: " con il percorso della directory in cui si vuole archiviare il file di \\ log di traccia. Per prestazioni ottimali, il file di log di traccia deve trovarsi in un volume che non fa parte della copia shadow.
 
      
 
 3.  Usare il comando seguente per arrestare la traccia:
 
-    **tracelog-arresta ASR**
+    **tracelog -stop asr**
 
-Il file di log di traccia è *x: \\* ASR. etl.
+Il file di log di traccia *è x: \\* asr.etl.
 
-Per ulteriori informazioni sullo strumento tracelog, vedere [tracelog](https://msdn.microsoft.com/library/ms797927.aspx).
+Per altre informazioni sullo strumento Tracelog, vedere [Tracelog](https://msdn.microsoft.com/library/ms797927.aspx).
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Contiene il CLSID per una trasformazione Media Foundation (MFT).
 ms.assetid: adb10fe8-760b-4aff-a582-254e11bb76af
-title: Proprietà MFPKEY_CLSID (Mftransform. h)
+title: MFPKEY_CLSID proprietà (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1b1ab57ae17029b2b01823e84f607b5b21676b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cb90d427de9c2df11e9bee538b2a7f1baf9ac1885624d6df54a41253abc27b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242990"
 ---
-# <a name="mfpkey_clsid-property"></a>MFPKEY ( \_ proprietà CLSID)
+# <a name="mfpkey_clsid-property"></a>MFPKEY \_ - proprietà CLSID
 
 Contiene il CLSID per una trasformazione Media Foundation (MFT).
 
@@ -19,13 +19,13 @@ Contiene il CLSID per una trasformazione Media Foundation (MFT).
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
 **GUID** (**CLSID** \* )
 
-\_CLSID VT
+VT \_ CLSID
 
 **puuid**
 
@@ -33,7 +33,7 @@ membro PROPVARIANT
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è facoltativa ed è solo informativa. Per ottenere questa proprietà, eseguire una query su MFT per l'interfaccia **IPropertyStore** .
+Questa proprietà è facoltativa ed è solo informativo. Per ottenere questa proprietà, eseguire una query su MFT per **l'interfaccia IPropertyStore.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ Questa proprietà è facoltativa ed è solo informativa. Per ottenere questa pro
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ Questa proprietà è facoltativa ed è solo informativa. Per ottenere questa pro
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
-[Trasformazioni Media Foundation](media-foundation-transforms.md)
+[Media Foundation trasformazioni](media-foundation-transforms.md)
 </dt> </dl>
 
  

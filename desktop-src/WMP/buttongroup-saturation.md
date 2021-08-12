@@ -1,9 +1,9 @@
 ---
-title: BUTTONGROUP. saturazione
-description: L'attributo Saturation specifica o Recupera il valore di saturazione delle immagini BUTTONGROUP.
+title: BUTTONGROUP.saturation
+description: L'attributo di saturazione specifica o recupera il valore di saturazione delle immagini BUTTONGROUP.
 ms.assetid: bfd957f0-8201-4a4f-9162-a397ed97c747
 keywords:
-- Media Player di Windows BUTTONGROUP. Saturation
+- BUTTONGROUP.saturation Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8de7dd39eb0b1a9e3f24031e24851eba22c6c6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90d3579ac8109cb56e56c78a07a8f53e4cd7c017a695b6018f6a2ad41f703035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581303"
 ---
-# <a name="buttongroupsaturation"></a>BUTTONGROUP. saturazione
+# <a name="buttongroupsaturation"></a>BUTTONGROUP.saturation
 
-L'attributo **Saturation** specifica o Recupera il valore di saturazione delle immagini **ButtonGroup** .
+**L'attributo di saturazione** specifica o recupera il valore di saturazione delle **immagini BUTTONGROUP.**
 
 ``` syntax
         elementID.saturation
@@ -29,11 +29,11 @@ L'attributo **Saturation** specifica o Recupera il valore di saturazione delle i
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**float**) con un valore compreso tra 0,0 e 2,0 e il cui valore predefinito è 1,0.
+Questo attributo è un numero di lettura/scrittura **(** **float**) con un valore compreso tra 0,0 e 2,0 con un valore predefinito pari a 1,0.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo modifica il valore di saturazione delle immagini specificate dagli attributi **disabledImage**, **downImage**, **hoverDownImage**, **hoverImage** e **Image** se sono stati specificati e fanno riferimento a immagini BMP a 8 bit.
+Questo attributo modifica il valore di saturazione delle immagini specificate dagli attributi **disabledImage**, **downImage**, **hoverDownImage**, **hoverImage** e **image** se sono stati specificati e fanno riferimento a immagini BMP a 8 bit.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Questo attributo modifica il valore di saturazione delle immagini specificate da
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -52,22 +52,22 @@ Questo attributo modifica il valore di saturazione delle immagini specificate da
 [**Elemento BUTTONGROUP**](buttongroup-element.md)
 </dt> <dt>
 
-[**BUTTONGROUP. disabledImage**](buttongroup-disabledimage.md)
+[**BUTTONGROUP.disabledImage**](buttongroup-disabledimage.md)
 </dt> <dt>
 
-[**BUTTONGROUP. downImage**](buttongroup-downimage.md)
+[**BUTTONGROUP.downImage**](buttongroup-downimage.md)
 </dt> <dt>
 
-[**BUTTONGROUP. hoverDownImage**](buttongroup-hoverdownimage.md)
+[**BUTTONGROUP.hoverDownImage**](buttongroup-hoverdownimage.md)
 </dt> <dt>
 
-[**BUTTONGROUP. hoverImage**](buttongroup-hoverimage.md)
+[**BUTTONGROUP.hoverImage**](buttongroup-hoverimage.md)
 </dt> <dt>
 
-[**BUTTONGROUP. hueShift**](buttongroup-hueshift.md)
+[**BUTTONGROUP.hueShift**](buttongroup-hueshift.md)
 </dt> <dt>
 
-[**BUTTONGROUP. image**](buttongroup-image.md)
+[**BUTTONGROUP.image**](buttongroup-image.md)
 </dt> </dl>
 
  

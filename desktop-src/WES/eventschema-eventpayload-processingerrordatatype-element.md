@@ -3,7 +3,7 @@ title: Elemento EventPayload (ProcessingErrorDataType)
 description: Contiene i dati degli eventi binari per l'evento che ha causato un errore durante l'elaborazione dei dati dell'evento.
 ms.assetid: 0ba72d72-8f43-40ca-b3ee-89fe27a4dd07
 keywords:
-- EventLog elemento EventPayload
+- EventPayload - elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4dd20f95924282ae8cb0f1b0604c0e77d07766ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 131869f9c54143f32780ff2ad1133b2c9ddf113c990b13be497a554caec30ba0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589014"
 ---
 # <a name="eventpayload-processingerrordatatype-element"></a>Elemento EventPayload (ProcessingErrorDataType)
 
@@ -30,7 +30,7 @@ Contiene i dati degli eventi binari per l'evento che ha causato un errore durant
  />
 ```
 
-L'elemento **EventPayload** è definito dal tipo complesso [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) .
+**L'elemento EventPayload** è definito dal tipo complesso [**ProcessingErrorDataType.**](eventschema-processingerrordatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **EventPayload** è definito dal tipo complesso [**ProcessingErrorDat
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

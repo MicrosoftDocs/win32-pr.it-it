@@ -1,52 +1,52 @@
 ---
-title: Recupero dello stato di RIP
-description: Recupero dello stato di RIP
+title: Recupero dello stato rip
+description: Recupero dello stato rip
 ms.assetid: 9907bfdd-eae7-4ca2-b488-5a6ad11416f5
 keywords:
-- Windows Media Player, copia di CD
-- Modello a oggetti di Windows Media Player, copia di CD
-- modello a oggetti, copia di CD
-- Controllo ActiveX di Windows Media Player, copia di CD
-- Controllo ActiveX, copia di CD
-- Controllo ActiveX Windows Media Player Mobile, copia di CD
-- Windows Media Player Mobile, copia di CD
-- Ripping del CD, recupero dello stato RIP
-- copia di CD, recupero dello stato di RIP
+- Windows Media Player, ripping CD
+- Windows Media Player a oggetti, ripping cd
+- modello a oggetti, ripping CD
+- Windows Media Player ActiveX controllo, ripping CD
+- ActiveX controllo, ripping CD
+- Windows Media Player Controllo ActiveX per dispositivi mobili, ripping cd
+- Windows Media Player Dispositivi mobili, ripping di CD
+- Ripping cd, recupero dello stato di rip
+- ripping di CD, recupero dello stato di rip
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be1fce1a46f9cc2d8477cabcc12a3a1b5bd159d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: a3210fa9e0db5f9260989d7bebb3650770cec7626892bc20546a6b602fb98955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104046348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570192"
 ---
-# <a name="retrieving-the-rip-status"></a>Recupero dello stato di RIP
+# <a name="retrieving-the-rip-status"></a>Recupero dello stato rip
 
-È possibile monitorare lo stato di avanzamento dell'operazione di strappo chiamando periodicamente [IWMPCdromRip:: Get \_ ripProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress). Questo metodo recupera un valore di avanzamento per l'intera operazione di estrazione. Il valore recuperato è un numero che rappresenta la percentuale di ripping completata, da 0 a 100.
+È possibile monitorare lo stato dell'operazione di ripping chiamando periodicamente [IWMPCdromRip::get \_ ripProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress). Questo metodo recupera un valore di stato per l'intera operazione di ripping. Il valore recuperato è un numero che rappresenta la percentuale di ripping completato, da 0 a 100.
 
-Il valore di avanzamento rappresenta la percentuale completa dell'intero processo di estrazione. Per determinare lo stato di avanzamento di una traccia specifica, usare [IWMPMedia:: GetItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo) con "RipProgress" come nome dell'attributo. Per determinare l'indice della traccia attualmente in fase di ripping, chiamare **IWMPPlaylist:: GetItemInfo** con "CurrentRipTrackIndex" come nome dell'attributo.
+Il valore di avanzamento rappresenta la percentuale completata dell'intero processo di ripping. Per determinare lo stato di avanzamento di una traccia specifica, usare [IWMPMedia::getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo) con "RipProgress" come nome dell'attributo. Per determinare l'indice della traccia attualmente in corso di decompressione, chiamare **IWMPPlaylist::getItemInfo** con "CurrentRipTrackIndex" come nome dell'attributo.
 
-È possibile monitorare lo stato dell'operazione di strappo chiamando periodicamente [IWMPCdromRip:: Get \_ ripState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate). Questo metodo recupera un valore di enumerazione [WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) che indica se l'operazione è in corso o è stata arrestata. È anche possibile monitorare lo stato dell'operazione di strappo gestendo l'evento [IWMPEvents3:: CdromRipStateChange](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) . (Vedere [gestione di eventi in C++](handling-events-in-c.md)). Prestare attenzione a confrontare il puntatore **IWMPCdromRip** (fornito dall'evento) al puntatore che rappresenta l'operazione di strappo, per garantire che l'evento sia stato generato dall'operazione.
+È possibile monitorare lo stato dell'operazione di ripping chiamando periodicamente [IWMPCdromRip::get \_ ripState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate). Questo metodo recupera un valore [di enumerazione WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) che indica se l'operazione è in corso o arrestata. È anche possibile monitorare lo stato dell'operazione di ripping gestendo l'evento [IWMPEvents3::CdromRipStateChange.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) Vedere [Gestione degli eventi in C++.](handling-events-in-c.md) Fare attenzione a confrontare il puntatore **IWMPCdromRip** (fornito dall'evento) con il puntatore che rappresenta l'operazione di depping, per assicurarsi che l'evento sia stato generato dall'operazione.
 
-Nell'esempio di codice seguente viene illustrato come utilizzare queste funzioni per recuperare lo stato di un'operazione di estrazione.
+Nell'esempio di codice seguente viene illustrato come usare queste funzioni per recuperare lo stato di un'operazione di depping.
 
-I controlli della finestra di dialogo seguenti sono definiti per l'esempio di codice.
+I controlli finestra di dialogo seguenti sono definiti per l'esempio di codice.
 
 
 
 | ID controllo                   | Descrizione                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| \_traccia corrente di IDC \_          | Testo statico che rappresenta l'indice della traccia attualmente in fase di ripping.                                         |
-| \_messaggio di \_ stato \_ traccia di IDC   | Testo statico che rappresenta lo stato di avanzamento della traccia attualmente ricopiata come percentuale.                      |
-| \_traccia stato \_ IDC         | Indicatore di stato con intervallo compreso tra 0 e 100 che rappresenta lo stato di avanzamento della traccia attualmente ricopiata come percentuale. |
-| \_testo di \_ stato \_ generale IDC | Testo statico che rappresenta lo stato di avanzamento del processo di strappo totale come percentuale.                             |
-| \_stato di avanzamento IDC \_ generale       | Indicatore di stato con intervallo compreso tra 0 e 100 che rappresenta lo stato di avanzamento del processo di strappo totale come percentuale.        |
-| \_stato RIP \_ IDC              | Testo statico che Visualizza l'operazione attualmente in esecuzione ("Rip", "Stopped" o "Unknown")             |
+| TRACCIA \_ CORRENTE IDC \_          | Testo statico che rappresenta l'indice della traccia attualmente decompressa.                                         |
+| TESTO DI AVANZAMENTO TRACCIA IDC \_ \_ \_   | Testo statico che rappresenta lo stato di avanzamento della traccia attualmente decompressa come percentuale.                      |
+| TRACCIA DELLO \_ STATO DI AVANZAMENTO \_ IDC         | Indicatore di stato con intervallo compreso tra 0 e 100 che rappresenta lo stato di avanzamento della traccia attualmente decompressa come percentuale. |
+| TESTO DI STATO COMPLESSIVO IDC \_ \_ \_ | Testo statico che rappresenta lo stato di avanzamento del processo di depping totale come percentuale.                             |
+| IDC \_ PROGRESS \_ OVERALL       | Indicatore di stato con intervallo compreso tra 0 e 100 che rappresenta lo stato di avanzamento del processo di ripping totale come percentuale.        |
+| STATO \_ RIP \_ IDC              | Testo statico che visualizza l'operazione attualmente in esecuzione ("Ripping", "Stopped" o "Unknown")             |
 
 
 
- 
+ 
 
 
 ```C++
@@ -155,21 +155,21 @@ HRESULT CMainDlg::UpdateStatus (void)
 
 <dl> <dt>
 
-[**Copia di un CD**](ripping-a-cd.md)
+[**Ripping di un CD**](ripping-a-cd.md)
 </dt> <dt>
 
 [**Recupero dell'interfaccia di copia da CD**](retrieving-the-ripping-interface.md)
 </dt> <dt>
 
-[**Avvio del processo RIP**](starting-the-rip-process.md)
+[**Avvio del processo Rip**](starting-the-rip-process.md)
 </dt> <dt>
 
-[**Selezione di elementi per l'estrazione**](selecting-items-for-ripping.md)
+[**Selezione degli elementi per il ripping**](selecting-items-for-ripping.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

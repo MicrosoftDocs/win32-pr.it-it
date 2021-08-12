@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: parametri di sistema Extensible Storage Engine'
-title: Parametri di sistema Extensible Storage Engine
+description: 'Altre informazioni su: Extensible Archiviazione Engine System Parameters'
+title: Extensible Archiviazione Engine System Parameters
 TOCTitle: Extensible Storage Engine System Parameters
 ms:assetid: f95c2e87-b25e-4be5-8c17-8486ba37dad4
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294139(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 43473f1bf5f599ba8efd06bd31345485acc07061
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 531e599c66279312f80216f1eb09fc612636821227e76f3572645ab6b4ee5137
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118256448"
 ---
-# <a name="extensible-storage-engine-system-parameters"></a>Parametri di sistema Extensible Storage Engine
+# <a name="extensible-storage-engine-system-parameters"></a>Extensible Archiviazione Engine System Parameters
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="extensible-storage-engine-system-parameters"></a>Parametri di sistema Extensible Storage Engine
+## <a name="extensible-storage-engine-system-parameters"></a>Extensible Archiviazione Engine System Parameters
 
-Le costanti seguenti vengono usate come valori per il parametro *Paramid* delle funzioni [JetGetSystemParameter](./jetgetsystemparameter-function.md) e [JetSetSystemParameter](./jetsetsystemparameter-function.md) .
+Le costanti seguenti vengono usate come valori per il *parametro paramid* delle [funzioni JetGetSystemParameter](./jetgetsystemparameter-function.md) [e JetSetSystemParameter.](./jetsetsystemparameter-function.md)
 
   - [Parametri di backup e ripristino](./backup-and-restore-parameters.md)
 
@@ -47,9 +47,9 @@ Le costanti seguenti vengono usate come valori per il parametro *Paramid* delle 
 
   - [Parametri dell'indice](./index-parameters.md)
 
-  - [Parametri informativi](./informational-parameters.md)
+  - [Parametri in informazioni](./informational-parameters.md)
 
-  - [Meta parametri](./meta-parameters.md)
+  - [Meta Parameters](./meta-parameters.md)
 
   - [Parametri delle risorse](./resource-parameters.md)
 
@@ -57,13 +57,13 @@ Le costanti seguenti vengono usate come valori per il parametro *Paramid* delle 
 
   - [Parametri del log delle transazioni](./transaction-log-parameters.md)
 
-### <a name="system-parameter-description-format"></a>Formato Descrizione parametro di sistema
+### <a name="system-parameter-description-format"></a>Formato della descrizione dei parametri di sistema
 
-Ogni parametro di sistema verrà descritto utilizzando il formato seguente:
+Ogni parametro di sistema verrà descritto usando il formato seguente:
 
 JET_paramX
 
-Descrizione del parametro di sistema JET_paramX.
+Descrizione del JET_paramX di sistema.
 
 <table>
 <colgroup>
@@ -85,35 +85,35 @@ Descrizione del parametro di sistema JET_paramX.
 </tr>
 <tr class="even">
 <td><p>Ambito:</p></td>
-<td><p>Il parametro è globale o per istanza?</p></td>
+<td><p>Il parametro è Globale o per istanza?</p></td>
 </tr>
 <tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>È possibile impostare il parametro se esistono istanze?</p></td>
+<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
+<td><p>È possibile impostare il parametro se sono presenti istanze?</p></td>
 </tr>
 <tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>È possibile impostare il parametro durante l'inizializzazione?</p></td>
+<td><p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
+<td><p>È possibile impostare il parametro quando viene inizializzato?</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
+<td><p>Influisce sul layout fisico:</p></td>
 <td><p>Il parametro influisce sui file su disco?</p></td>
 </tr>
 <tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
+<td><p>Influisce sull'affidabilità:</p></td>
 <td><p>Il parametro influisce sull'affidabilità del motore?</p></td>
 </tr>
 <tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
+<td><p>Influisce sulle prestazioni:</p></td>
 <td><p>Il parametro influisce sulle prestazioni del motore?</p></td>
 </tr>
 <tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
+<td><p>Influisce sulle risorse:</p></td>
 <td><p>Il parametro influisce sulle risorse del motore?</p></td>
 </tr>
 <tr class="odd">
 <td><p>Disponibilità:</p></td>
-<td><p>Versioni di Windows che supportano il parametro.</p></td>
+<td><p>Versioni di Windows che supportano il parametro .</p></td>
 </tr>
 </tbody>
 </table>

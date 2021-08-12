@@ -1,46 +1,46 @@
 ---
-title: Attributo la Left
-description: Attributo la Left
+title: Attributo vml left
+description: Attributo vml left
 ms.assetid: a0558d24-c0a5-48ef-9042-743d6eab6f86
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f17810d7635d4b8194f2bd2df258a900cb534581
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f6c067b15281277a85f707f6152fa855c51ee49aba439b16c009f6ff029139a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104474027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118599289"
 ---
-# <a name="vml-left-attribute"></a>Attributo la Left
+# <a name="vml-left-attribute"></a>Attributo vml left
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina la posizione della forma rispetto all'elemento a sinistra del flusso del documento. Proprietà di lettura/scrittura. **Stringa**.
+Determina la posizione della forma rispetto all'elemento a sinistra nel flusso del documento. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "Left: *Expression* " >
+<v: *element* style="left: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. Left = "*Expression*"
+*element* .style.left="*expression*"
 
-*espressione* = *element*. Style. Left
+*expression* = *elemento*.style.left
 
 **Osservazioni:**
 
-L'attributo **Left** è simile all'attributo HTML **Left** standard per gli stili.
+**L'attributo Left** è simile all'attributo HTML **Left** standard per gli stili.
 
-È possibile eseguire il mapping delle unità all'elemento padre oppure in unità assolute. Questo attributo non verrà scritto per le forme ancorate inline.
+Le unità possono essere mappate all'elemento padre o essere in unità assolute. Questo attributo non verrà scritto per le forme ancorate inline.
 
 I possibili valori sono:
 
@@ -49,14 +49,14 @@ I possibili valori sono:
 | Valore      | Descrizione                                                                                                                                                      |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Auto       | Posizione predefinita di un elemento nel flusso della pagina.                                                                                                          |
-| units      | Un numero con un indicatore di unità assoluto (cm, mm, in, PT, PC o px) o un designatore di unità relative (em o ex). Se non viene specificata alcuna unità, viene utilizzato pixels (px). |
+| units      | Numero con un identificatore di unità assoluto (cm, mm, in, pt, pc o px) o un designatore di unità relative (em o ex). Se non viene specificata alcuna unità, vengono utilizzati i pixel (px). |
 | percentuale | Valore espresso come percentuale della larghezza dell'oggetto padre.                                                                                                    |
 
 
 
- 
+ 
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Vedere anche**
 
@@ -64,7 +64,7 @@ I possibili valori sono:
 
 **Esempio**
 
-Il valore sinistro della forma è impostato su 1 nell'esempio riportato di seguito.
+Il valore sinistro della forma è impostato su 1 nell'esempio seguente.
 
 
 ```HTML
@@ -75,8 +75,8 @@ Il valore sinistro della forma è impostato su 1 nell'esempio riportato di segui
 
 
 
-[Esempio di attributo Left](https://samples.msdn.microsoft.com/workshop/samples/vml/shape/examples/x_left.md). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo left](https://samples.msdn.microsoft.com/workshop/samples/vml/shape/examples/x_left.md). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

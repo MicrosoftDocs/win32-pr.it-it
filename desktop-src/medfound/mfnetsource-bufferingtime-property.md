@@ -1,29 +1,29 @@
 ---
-description: Numero di secondi di dati che l'origine di rete memorizza nel buffer all'avvio.
+description: Numero di secondi di dati memorizzati nel buffer dell'origine di rete all'avvio.
 ms.assetid: 186b55fc-d1b1-4187-a748-efaee114eca9
-title: Proprietà MFNETSOURCE_BUFFERINGTIME (Mfidl. h)
+title: MFNETSOURCE_BUFFERINGTIME proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21c165e58ebd5f2aec0f1ca7ce38281f8c94896d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b6de79344913d77a30dc05dcad4e4f8dd3608e0d35009b1d8e5254e08790993
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243808"
 ---
-# <a name="mfnetsource_bufferingtime-property"></a>\_Proprietà BUFFERINGTIME di MFNETSOURCE
+# <a name="mfnetsource_bufferingtime-property"></a>MFNETSOURCE \_ BUFFERINGTIME - proprietà
 
-Numero di secondi di dati che l'origine di rete memorizza nel buffer all'avvio.
+Numero di secondi di dati memorizzati nel buffer dell'origine di rete all'avvio.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**DWORD** (archiviato come **Long**)
+**DWORD** (archiviato come **LONG**)
 
 VT \_ I4
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-La costante **MFNETSOURCE \_ BUFFERINGTIME** definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero.
+La costante **MFNETSOURCE \_ BUFFERINGTIME** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un puntatore **IPropertyStore** al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **puntatore IPropertyStore** al sistema di risoluzione di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale](configuring-a-media-source.md).
 
 Il valore predefinito di questa proprietà è 5 secondi.
 
@@ -45,9 +45,9 @@ Il valore predefinito di questa proprietà è 5 secondi.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -55,10 +55,10 @@ Il valore predefinito di questa proprietà è 5 secondi.
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
-[Funzionalità di origine della rete](network-source-features.md)
+[Funzionalità dell'origine di rete](network-source-features.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)

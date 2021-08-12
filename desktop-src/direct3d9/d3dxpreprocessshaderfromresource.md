@@ -1,7 +1,7 @@
 ---
-description: Pre-elabora una risorsa shader senza eseguire la compilazione. Questo consente di risolvere tutte le \# definizioni e le \# inclusioni, fornendo uno shader autonomo per la successiva compilazione.
+description: Pre-elabora una risorsa shader senza eseguire la compilazione. In questo modo vengono \# risolte tutte le operazioni defines e includes, fornendo uno shader autonomo \# per la compilazione successiva.
 ms.assetid: a00c2db9-d7ba-48ab-80e3-dc20774e1b1e
-title: Funzione D3DXPreprocessShaderFromResource (D3DX9Shader. h)
+title: Funzione D3DXPreprocessShaderFromResource (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c45073d0b84ef6fb33d378c4c18f862f55c6b84a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 235b1146cd589d09d4718f938f15e7250fdb57993295d48eaa94290abe1cd52f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298519"
 ---
-# <a name="d3dxpreprocessshaderfromresource-function"></a>D3DXPreprocessShaderFromResource (funzione)
+# <a name="d3dxpreprocessshaderfromresource-function"></a>Funzione D3DXPreprocessShaderFromResource
 
-Pre-elabora una risorsa shader senza eseguire la compilazione. Questo consente di risolvere tutte le \# definizioni e le \# inclusioni, fornendo uno shader autonomo per la successiva compilazione.
+Pre-elabora una risorsa shader senza eseguire la compilazione. In questo modo vengono \# risolte tutte le operazioni defines e includes, fornendo uno shader autonomo \# per la compilazione successiva.
 
 > [!Note]  
-> Invece di usare questa funzione legacy, è consigliabile usare l'API [**D3DPreprocess**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dpreprocess) .
+> Invece di usare questa funzione legacy, è consigliabile usare [**l'API D3DPreprocess.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dpreprocess)
 
  
 
@@ -50,16 +50,16 @@ HRESULT D3DXPreprocessShaderFromResource(
 
 <dl> <dt>
 
-*hSrcModule* \[ in\]
+*hSrcModule* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **hmodule**](../winprog/windows-data-types.md)**
+Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Handle per il modulo che include la risorsa shader. Se questo valore è **null**, verrà usato il modulo corrente.
+Handle per il modulo che contiene la risorsa shader. Se questo valore è **NULL,** verrà usato il modulo corrente.
 
 </dd> <dt>
 
-*pSrcResource* \[ in\]
+*pSrcResource* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -68,39 +68,39 @@ Stringa che rappresenta il nome della risorsa nel modulo.
 
 </dd> <dt>
 
-*pDefines* \[ in\]
+*pDefines* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matrice facoltativa con terminazione **null** di strutture [**D3DXMACRO**](d3dxmacro.md) . Questo valore può essere **null**.
+Matrice facoltativa con terminazione **NULL** di [**strutture D3DXMACRO.**](d3dxmacro.md) Questo valore può essere **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ in\]
+*pInclude* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntatore a interfaccia facoltativo, [**ID3DXInclude**](id3dxinclude.md), da usare per la gestione delle \# direttive include. Se questo valore è **null**, le \# inclusioni verranno rispettate durante la compilazione da un file o genereranno un errore quando vengono compilate da una risorsa o da una memoria.
+Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione delle \# direttive include. Se questo valore è **NULL,** le include verranno rispettate durante la compilazione da un file o causeranno un errore durante la compilazione \# da una risorsa o da una memoria.
 
 </dd> <dt>
 
-*ppShaderText* \[ out\]
+*ppShaderText* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente un'unica stringa di grandi dimensioni che rappresenta il flusso del token formattato risultante.
+Restituisce un buffer contenente una singola stringa di grandi dimensioni che rappresenta il flusso di token formattato risultante.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ out\]
+*ppErrorMsgs* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente un elenco di errori e avvisi che sono stati rilevati durante la compilazione. Si tratta degli stessi messaggi visualizzati dal debugger durante l'esecuzione in modalità di debug. Questo valore può essere **null**.
+Restituisce un buffer contenente un elenco di errori e avvisi rilevati durante la compilazione. Si tratta degli stessi messaggi visualizzati dal debugger durante l'esecuzione in modalità di debug. Questo valore può essere **NULL.**
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Restituisce un buffer contenente un elenco di errori e avvisi che sono stati ril
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -116,8 +116,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

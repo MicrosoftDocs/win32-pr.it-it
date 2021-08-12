@@ -1,19 +1,19 @@
 ---
 description: Numero di angoli che definiscono BoundingFrustum.
 ms.assetid: 0344b0ca-de22-454a-b140-33f5790fb1b9
-title: BoundingFrustum.CORNER_COUNT (DirectXCollision. h)
+title: BoundingFrustum.CORNER_COUNT (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 497fc560a96bb06df6ca8288c8c581c587190675
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f5611fc8c6ad820d759fa7ab7895b0b8d571b40bf9d813fb791c7403170ffbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278625"
 ---
-# <a name="boundingfrustumcorner_count"></a>Conteggio BoundingFrustum. angolo \_
+# <a name="boundingfrustumcorner_count"></a>BoundingFrustum.CORNER \_ COUNT
 
-Numero di angoli che definiscono [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Numero di angoli che definiscono [**l'oggetto BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e Windows Phone 8 app.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 **Riferimento**
 </dt> <dt>
 
-[**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
+[**Boundingfrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 </dt> </dl>
 
  

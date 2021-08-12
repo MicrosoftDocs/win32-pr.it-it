@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. normalizzazione
+title: EQUALIZERSETTINGS.normalization
 description: L'attributo di normalizzazione specifica o recupera un valore che indica se la normalizzazione è abilitata.
 ms.assetid: d0819624-7bc5-447a-b890-c8af94faa7b0
 keywords:
-- EQUALIZERSETTINGS. normalizzazione di Windows Media Player
+- EQUALIZERSETTINGS.normalization Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9714359e5d5e2af0c82a0d687555f7cfcbf1cf70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6f2befdd62f0508822d5547cb3b894b93ea095f52db4cf9bbdb4a444d99251c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578168"
 ---
-# <a name="equalizersettingsnormalization"></a>EQUALIZERSETTINGS. normalizzazione
+# <a name="equalizersettingsnormalization"></a>EQUALIZERSETTINGS.normalization
 
-L'attributo di **normalizzazione** specifica o recupera un valore che indica se la normalizzazione è abilitata.
+**L'attributo di** normalizzazione specifica o recupera un valore che indica se la normalizzazione è abilitata.
 
 ``` syntax
         elementID.normalization
@@ -29,7 +29,7 @@ L'attributo di **normalizzazione** specifica o recupera un valore che indica se 
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Quando è abilitata la normalizzazione, il segnale audio per un intero file multimediale digitale viene scalato fino al valore massimo. In questo modo è possibile riprodurre più file approssimativamente nello stesso volume senza che sia necessario apportare modifiche al volume.
+Quando la normalizzazione è abilitata, il segnale audio per un intero file multimediale digitale viene ridimensionato fino al valore massimo. In questo modo è possibile riprodurre più file approssimativamente allo stesso volume senza richiedere modifiche al volume.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Quando è abilitata la normalizzazione, il segnale audio per un intero file mult
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

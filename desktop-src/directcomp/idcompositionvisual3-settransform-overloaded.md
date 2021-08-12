@@ -1,9 +1,9 @@
 ---
-title: Metodi di trasformazione IDCompositionVisual3 (Dcomp. h)
-description: Imposta la proprietà Transform di questo oggetto visivo. La proprietà Transform specifica una trasformazione 3D utilizzata per modificare il sistema di coordinate di questo oggetto visivo. La proprietà può specificare una matrice di trasformazione 4 per 4 o un oggetto Transform.
+title: Metodi IdCompositionVisual3 SetTransform (Dcomp.h)
+description: Imposta la proprietà Transform di questo oggetto visivo. La proprietà Transform specifica una trasformazione 3D usata per modificare il sistema di coordinate di questo oggetto visivo. La proprietà può specificare una matrice di trasformazione 4 per 4 o un oggetto di trasformazione.
 ms.assetid: a59498c2-8659-dd35-8dc2-87457f493965
 keywords:
-- Metodi di trasformazione DirectComposition
+- Metodi SetTransform DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 50237d4bbc8504a6bdcc9650f6c02dbdc30d093c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08b243704c3eabae528d475c92b924f6aecfba92f923b7190c085e3e89bd1f74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281238"
 ---
-# <a name="idcompositionvisual3settransform-methods"></a>Metodi IDCompositionVisual3:: setransform
+# <a name="idcompositionvisual3settransform-methods"></a>Metodi IDCompositionVisual3::SetTransform
 
-Imposta la proprietà Transform di questo oggetto visivo. La proprietà Transform specifica una trasformazione 3D utilizzata per modificare il sistema di coordinate di questo oggetto visivo. La proprietà può specificare una matrice di trasformazione 4 per 4 o un oggetto Transform.
+Imposta la proprietà Transform di questo oggetto visivo. La proprietà Transform specifica una trasformazione 3D usata per modificare il sistema di coordinate di questo oggetto visivo. La proprietà può specificare una matrice di trasformazione 4 per 4 o un oggetto di trasformazione.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Imposta la proprietà Transform di questo oggetto visivo. La proprietà Transfor
 
 | Metodo                                                                                  | Descrizione                                                                    |
 |:----------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
-| [**Setransform (D2D \_ Matrix \_ 4x4 \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(constd2d_matrix_4x4_f_))       | Imposta la proprietà Transform sulla matrice di trasformazione specificata.<br/>      |
-| [**Setransform (IDCompositionTransform3D \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(idcompositiontransform3d)) | Imposta la proprietà Transform sull'oggetto Transformation specificato.<br/> |
+| [**SetTransform(D2D \_ MATRIX \_ 4X4 \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(constd2d_matrix_4x4_f_))       | Imposta la proprietà Transform sulla matrice di trasformazione specificata.<br/>      |
+| [**SetTransform(IDCompositionTransform3D \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(idcompositiontransform3d)) | Imposta la proprietà Transform sull'oggetto trasformazione specificato.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Imposta la proprietà Transform di questo oggetto visivo. La proprietà Transfor
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2012 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 
@@ -79,7 +79,7 @@ Imposta la proprietà Transform di questo oggetto visivo. La proprietà Transfor
 [**IDCompositionVisual::SetOffsetX**](idcompositionvisual-setoffsetx-overloaded.md)
 </dt> <dt>
 
-[**IDCompositionVisual:: seoffsety**](idcompositionvisual-setoffsety-overloaded.md)
+[**IDCompositionVisual::SetOffsetY**](idcompositionvisual-setoffsety-overloaded.md)
 </dt> </dl>
 
 �

@@ -1,6 +1,6 @@
 ---
-title: Identity-elemento
-description: Informazioni sull'elemento Identity EAPHost. Questo elemento acquisisce l'identità utilizzata per l'autenticazione.
+title: Elemento Identity
+description: Informazioni sull'elemento Identity di EAPHost. Questo elemento acquisisce l'identità usata per l'autenticazione.
 ms.assetid: 464979f0-6a2b-43e7-a207-2fbd1e2e5f51
 keywords:
 - Elemento Identity EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 485d576155d5ac63df2776016f3aafabf8c18c25
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ad88e84583be2b392ce8a4dfdaec7495f1c063fa13d4327004bfbecbc1f925ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104474278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118275468"
 ---
-# <a name="identity-element"></a>Identity-elemento
+# <a name="identity-element"></a>Elemento Identity
 
-L'elemento **Identity** acquisisce l'identità utilizzata per l'autenticazione.
+**L'elemento Identity** acquisisce l'identità usata per l'autenticazione.
 
 ``` syntax
 <xs:element name="Identity"
@@ -33,16 +33,16 @@ L'elemento **Identity** acquisisce l'identità utilizzata per l'autenticazione.
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **Identity** è astratto; ogni metodo deve definire e utilizzare un elemento derivato nei documenti dell'istanza.
+**L'elemento Identity** è astratto. ogni metodo deve definire e usare un elemento derivato nei documenti dell'istanza.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **Identity** è astratto; ogni metodo deve definire e utilizzare un e
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md)

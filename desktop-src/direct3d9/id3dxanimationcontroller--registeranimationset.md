@@ -1,7 +1,7 @@
 ---
-description: Aggiunge un set di animazioni al controller dell'animazione.
+description: Aggiunge un set di animazioni al controller di animazione.
 ms.assetid: 93351d61-b7f4-4bd1-a5bf-313911cf6b61
-title: 'Metodo ID3DXAnimationController:: RegisterAnimationSet (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::RegisterAnimationSet (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ca70baf55a3dae19422c9026575d75f63eed4bde
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0c6572b4a09967f2a911ffb3b147f3786aae75d71650d4d77d0564c1dbefc5f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296981"
 ---
-# <a name="id3dxanimationcontrollerregisteranimationset-method"></a>Metodo ID3DXAnimationController:: RegisterAnimationSet
+# <a name="id3dxanimationcontrollerregisteranimationset-method"></a>Metodo ID3DXAnimationController::RegisterAnimationSet
 
-Aggiunge un set di animazioni al controller dell'animazione.
+Aggiunge un set di animazioni al controller di animazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT RegisterAnimationSet(
 
 <dl> <dt>
 
-*pAnimSet* \[ in\]
+*pAnimSet* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)**
 
-Puntatore al set di animazioni [**ID3DXAnimationSet**](id3dxanimationset.md) da aggiungere.
+Puntatore al set [**di animazioni ID3DXAnimationSet**](id3dxanimationset.md) da aggiungere.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore al set di animazioni [**ID3DXAnimationSet**](id3dxanimationset.md) da 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

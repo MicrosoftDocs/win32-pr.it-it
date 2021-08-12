@@ -1,24 +1,24 @@
 ---
-title: Attributo LightFace di la
-description: Attributo LightFace di la
+title: Attributo VML LightFace
+description: Attributo VML LightFace
 ms.assetid: 552a4145-fb34-4a85-a32a-c9ef74f11f13
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ef71e5ea998233b16785e39dbe179490bc6cc32
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bcc1196e9c46cc915c74ea06a43c5bbfe3134e50408716e14b1cdc9753bcda86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118598969"
 ---
-# <a name="vml-lightface-attribute"></a>Attributo LightFace di la
+# <a name="vml-lightface-attribute"></a>Attributo VML LightFace
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina se la faccia anteriore dell'estrusione risponderà alle modifiche nell'illuminazione. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,22 +26,22 @@ Determina se la faccia anteriore dell'estrusione risponderà alle modifiche nell
 
 [Estrusione](msdn-online-vml-extrusion-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* LightFace = " *Expression* " >
+<o: *elemento* lightface=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . LightFace = "*Expression*"
+*element* .lightface="*expression*"
 
-*espressione* = *elemento*. LightFace
+*expression* = *elemento*.lightface
 
 **Osservazioni:**
 
-Se **false**, il front-end non risponderà quando si modifica un valore di illuminazione. Il valore predefinito è **True**.
+Se **False,** la faccia anteriore non risponderà quando viene modificato un valore di illuminazione. Il valore predefinito è **True**.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

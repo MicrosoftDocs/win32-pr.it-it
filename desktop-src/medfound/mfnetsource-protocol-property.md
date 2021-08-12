@@ -1,25 +1,25 @@
 ---
 description: Specifica il protocollo di controllo utilizzato dall'origine di rete.
 ms.assetid: 4de8b8ba-97d9-4269-a16c-1853dc02f674
-title: Proprietà MFNETSOURCE_PROTOCOL (Mfidl. h)
+title: MFNETSOURCE_PROTOCOL proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b188eeb1f6669544291f4dca95db8a4a45a50d7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ae15ce40e7c049552cbb0f4916f5f4ff70ef6e55746528ebe0083eee69b22a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243323"
 ---
-# <a name="mfnetsource_protocol-property"></a>\_Proprietà del protocollo MFNETSOURCE
+# <a name="mfnetsource_protocol-property"></a>MFNETSOURCE \_ PROTOCOL - proprietà
 
-Specifica il protocollo di controllo utilizzato dall'origine di rete. Il valore di questa proprietà è un membro dell'enumerazione [**del \_ \_ tipo di protocollo MFNETSOURCE**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_protocol_type) .
+Specifica il protocollo di controllo utilizzato dall'origine di rete. Il valore di questa proprietà è un membro [**dell'enumerazione MFNETSOURCE \_ PROTOCOL \_ TYPE.**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_protocol_type)
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-Il **\_ protocollo Constant MFNETSOURCE** definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero.
+La costante **MFNETSOURCE \_ PROTOCOL** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Questa proprietà è di sola lettura. Per recuperare questa proprietà, eseguire una query sull'origine di rete per l'interfaccia **IPropertyStore** e chiamare **IPropertyStore:: GetValue**.
+Questa proprietà è di sola lettura. Per recuperare questa proprietà, eseguire una query sull'origine di rete **per l'interfaccia IPropertyStore** e **chiamare IPropertyStore::GetValue**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Questa proprietà è di sola lettura. Per recuperare questa proprietà, eseguire
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Questa proprietà è di sola lettura. Per recuperare questa proprietà, eseguire
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)

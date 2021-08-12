@@ -1,9 +1,9 @@
 ---
 title: Elemento clockType (ChannelPublishingType)
-description: Risoluzione del clock da usare quando si registra il timestamp per ogni evento.
+description: Risoluzione dell'orologio da utilizzare per la registrazione del timestamp per ogni evento.
 ms.assetid: dc2ed9d0-782c-44c9-aa55-ca6ff340f413
 keywords:
-- EventLog elemento clockType
+- Elemento clockType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6b85537ec209f39da87e74db6881abdf60e488b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fde3b263c2a190e91fdd2ddde8f05a40e9026486195ca9ae95b5f98cdcf7733d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590032"
 ---
 # <a name="clocktype-channelpublishingtype-element"></a>Elemento clockType (ChannelPublishingType)
 
-Risoluzione del clock da usare quando si registra il timestamp per ogni evento.
+Risoluzione dell'orologio da utilizzare per la registrazione del timestamp per ogni evento.
 
 ``` syntax
 <xs:element name="clockType">
@@ -41,7 +41,7 @@ Risoluzione del clock da usare quando si registra il timestamp per ogni evento.
 </xs:element>
 ```
 
-L'elemento **clockType** è definito dal tipo complesso [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+**L'elemento clockType** è definito dal tipo complesso [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,8 +49,8 @@ L'elemento **clockType** è definito dal tipo complesso [**ChannelPublishingType
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

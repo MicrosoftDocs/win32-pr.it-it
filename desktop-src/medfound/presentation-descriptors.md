@@ -4,26 +4,26 @@ ms.assetid: 714c8bda-5ce1-47e2-ba73-9304e26b3129
 title: Descrittori di presentazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44f1581e35fe6d875c691efdd5ef5736c1aa5215
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 963faeebbb180b504cc11202645a9432bbb3a94e988495b9ddcf96e550b05519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118238832"
 ---
 # <a name="presentation-descriptors"></a>Descrittori di presentazione
 
-Una *presentazione* è un set di flussi multimediali correlati che condividono un tempo di presentazione comune. Una presentazione, ad esempio, può essere costituita da flussi audio e video di un film. Un *descrittore di presentazione* è un oggetto che contiene la descrizione di una particolare presentazione. I descrittori di presentazione vengono usati per configurare origini multimediali e alcuni sink di supporto.
+Una *presentazione* è un set di flussi multimediali correlati che condividono un'ora di presentazione comune. Ad esempio, una presentazione può essere costituita dai flussi audio e video di un film. Un *descrittore di presentazione* è un oggetto che contiene la descrizione di una presentazione specifica. I descrittori di presentazione vengono usati per configurare le origini multimediali e alcuni sink multimediali.
 
-Ogni descrittore di presentazione contiene un elenco di uno o più descrittori di *flusso*. Che descrivono i flussi nella presentazione. I flussi possono essere selezionati o deselezionati. Solo i flussi selezionati generano dati. I flussi deselezionati non sono attivi e non producono dati. Ogni descrittore di flusso ha un *gestore di tipo di supporto*, che viene usato per modificare il tipo di supporto del flusso o ottenere il tipo di supporto corrente del flusso. Per ulteriori informazioni sui tipi di supporto, vedere [tipi di supporti](media-types.md).
+Ogni descrittore di presentazione contiene un elenco di uno o più *descrittori di flusso.* Questi elementi descrivono i flussi nella presentazione. Flussi può essere selezionato o deselezionato. Solo i flussi selezionati producono dati. I flussi deselezionati non sono attivi e non producono dati. Ogni descrittore di flusso ha *un* gestore del tipo di supporto , che viene usato per modificare il tipo di supporto del flusso o ottenere il tipo di supporto corrente del flusso. Per altre informazioni sui tipi di supporti, vedere [Tipi di supporti.](media-types.md)
 
-Nella tabella seguente sono illustrate le interfacce primarie esposte da ciascuno di questi oggetti.
+Nella tabella seguente vengono illustrate le interfacce principali esponge ognuno di questi oggetti.
 
 
 
 | Oggetto                  | Interfaccia                                                      |
 |-------------------------|----------------------------------------------------------------|
-| Descrittore presentazione | [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor) |
+| Descrittore di presentazione | [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor) |
 | Descrittore di flusso       | [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor)             |
 | Gestore del tipo di supporto      | [**IMFMediaTypeHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfmediatypehandler)             |
 
@@ -33,11 +33,11 @@ Nella tabella seguente sono illustrate le interfacce primarie esposte da ciascun
 
 ## <a name="media-source-presentations"></a>Presentazioni di origini multimediali
 
-Ogni origine multimediale fornisce un descrittore di presentazione che descrive la configurazione predefinita per l'origine. Nella configurazione predefinita è selezionato almeno un flusso e ogni flusso selezionato ha un tipo di supporto. Per ottenere il descrittore della presentazione, chiamare [**IMFMediaSource:: CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor). Il metodo restituisce un puntatore [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor) .
+Ogni origine multimediale fornisce un descrittore di presentazione che descrive la configurazione predefinita per l'origine. Nella configurazione predefinita è selezionato almeno un flusso e ogni flusso selezionato ha un tipo di supporto. Per ottenere il descrittore di presentazione, chiamare [**IMFMediaSource::CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor). Il metodo restituisce un [**puntatore IMFPresentationDescriptor.**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 
-È possibile modificare il descrittore di presentazione dell'origine per selezionare un set di flussi diverso. Non modificare il descrittore della presentazione, a meno che l'origine del supporto non sia stata arrestata. Le modifiche vengono applicate quando si chiama [**IMFMediaSource:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) per avviare l'origine.
+È possibile modificare il descrittore di presentazione dell'origine per selezionare un set diverso di flussi. Non modificare il descrittore di presentazione a meno che l'origine multimediale non venga arrestata. Le modifiche vengono applicate quando si chiama [**IMFMediaSource::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) per avviare l'origine.
 
-Per ottenere il numero di flussi, chiamare [**IMFPresentationDescriptor:: GetStreamDescriptorCount**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorcount). Per ottenere il descrittore del flusso per un flusso, chiamare [**IMFPresentationDescriptor:: GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) e passare l'indice del flusso. I flussi sono indicizzati da zero. Il metodo **GetStreamDescriptorByIndex** restituisce un puntatore [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor) . Restituisce anche un flag booleano che indica se il flusso è selezionato. Se il flusso è selezionato, l'origine multimediale produce dati per quel flusso. In caso contrario, l'origine non produce alcun dato per quel flusso. Per selezionare un flusso, chiamare [**IMFPresentationDescriptor:: SelectStream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-selectstream) con l'indice del flusso. Per deselezionare un flusso, chiamare [**IMFPresentationDescriptor::D eselectstream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-deselectstream).
+Per ottenere il numero di flussi, chiamare [**IMFPresentationDescriptor::GetStreamDescriptorCount**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorcount). Per ottenere il descrittore di flusso per un flusso, chiamare [**IMFPresentationDescriptor::GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) e passare l'indice del flusso. Flussi indicizzati da zero. Il **metodo GetStreamDescriptorByIndex** restituisce un [**puntatore IMFStreamDescriptor.**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor) Restituisce anche un flag booleano che indica se il flusso è selezionato. Se il flusso è selezionato, l'origine multimediale produce dati per tale flusso. In caso contrario, l'origine non produce dati per il flusso. Per selezionare un flusso, chiamare [**IMFPresentationDescriptor::SelectStream con**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-selectstream) l'indice del flusso. Per deselezionare un flusso, chiamare [**IMFPresentationDescriptor::D eselectStream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-deselectstream).
 
 Il codice seguente illustra come ottenere il descrittore di presentazione da un'origine multimediale ed enumerare i flussi.
 
@@ -80,19 +80,19 @@ SAFE_RELEASE(pStreamDesc);
 
 
 
-## <a name="media-type-handlers"></a>Gestori di tipi multimediali
+## <a name="media-type-handlers"></a>Gestori dei tipi di supporti
 
-Per modificare il tipo di supporto del flusso o per ottenere il tipo di supporto corrente del flusso, usare il gestore del tipo di supporto del descrittore del flusso. Chiamare [**IMFStreamDescriptor:: GetMediaTypeHandler**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamdescriptor-getmediatypehandler) per ottenere il gestore del tipo di supporto. Questo metodo restituisce un puntatore [**IMFMediaTypeHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfmediatypehandler) .
+Per modificare il tipo di supporto del flusso o per ottenere il tipo di supporto corrente del flusso, usare il gestore del tipo di supporto del descrittore di flusso. Chiamare [**IMFStreamDescriptor::GetMediaTypeHandler**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamdescriptor-getmediatypehandler) per ottenere il gestore del tipo di supporto. Questo metodo restituisce un [**puntatore IMFMediaTypeHandler.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediatypehandler)
 
-Se si vuole semplicemente conoscere il tipo di dati nel flusso, ad esempio audio o video, chiamare [**IMFMediaTypeHandler:: GetMajorType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmajortype). Questo metodo restituisce il GUID per il tipo di supporto principale. Ad esempio, un'applicazione di riproduzione connette in genere un flusso audio al renderer audio e un flusso video al renderer video. Se si usa la sessione multimediale o il caricatore della topologia per compilare una topologia, il GUID di tipo principale potrebbe essere l'unica informazione di formato necessaria.
+Se si vuole semplicemente conoscere il tipo di dati presenti nel flusso, ad esempio audio o video, chiamare [**IMFMediaTypeHandler::GetMajorType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmajortype). Questo metodo restituisce il GUID per il tipo di supporto principale. Ad esempio, un'applicazione di riproduzione connette in genere un flusso audio al renderer audio e un flusso video al renderer video. Se si usa la sessione multimediale o il caricatore della topologia per compilare una topologia, il GUID di tipo principale potrebbe essere l'unica informazione di formato necessaria.
 
-Se per l'applicazione sono necessarie informazioni più dettagliate sul formato corrente, chiamare [**IMFMediaTypeHandler:: GetCurrentMediaType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getcurrentmediatype). Questo metodo restituisce un puntatore all'interfaccia [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) del tipo di supporto. Usare questa interfaccia per ottenere i dettagli del formato.
+Se l'applicazione richiede informazioni più dettagliate sul formato corrente, chiamare [**IMFMediaTypeHandler::GetCurrentMediaType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getcurrentmediatype). Questo metodo restituisce un puntatore [**all'interfaccia IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) del tipo di supporto. Usare questa interfaccia per ottenere i dettagli del formato.
 
-Il gestore del tipo di supporto contiene anche un elenco dei tipi di supporto supportati per il flusso. Per ottenere le dimensioni dell'elenco, chiamare [**IMFMediaTypeHandler:: GetMediaTypeCount**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmediatypecount). Per ottenere un tipo di supporto dall'elenco, chiamare [**IMFMediaTypeHandler:: GetMediaTypeByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmediatypebyindex) con l'indice del tipo di supporto. I tipi di supporto vengono restituiti nell'ordine di preferenza approssimativo. Per i formati audio, ad esempio, sono preferite frequenze di campionamento maggiori rispetto alle frequenze di campionamento inferiori. Tuttavia, non esiste una regola definitiva che regola l'ordinamento, pertanto è consigliabile gestirla semplicemente come linee guida.
+Il gestore del tipo di supporto contiene anche un elenco di tipi di supporti supportati per il flusso. Per ottenere le dimensioni dell'elenco, chiamare [**IMFMediaTypeHandler::GetMediaTypeCount**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmediatypecount). Per ottenere un tipo di supporto dall'elenco, chiamare [**IMFMediaTypeHandler::GetMediaTypeByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmediatypebyindex) con l'indice del tipo di supporto. I tipi di supporti vengono restituiti nell'ordine di preferenza approssimativo. Per i formati audio, ad esempio, sono preferibili frequenze di campionamento più elevate rispetto a frequenze di campionamento inferiori. Tuttavia, non esiste una regola definitiva che regola l'ordinamento, pertanto è consigliabile considerarlo semplicemente come una linea guida.
 
-L'elenco dei tipi supportati potrebbe non contenere tutti i possibili tipi di supporto supportati dal flusso. Per verificare se è supportato un particolare tipo di supporto, chiamare [**IMFMediaTypeHandler:: IsMediaTypeSupported**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-ismediatypesupported). Per impostare il tipo di supporto, chiamare [**IMFMediaTypeHandler:: SetCurrentMediaType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-setcurrentmediatype). Se il metodo ha esito positivo, il flusso conterrà dati conformi al formato specificato. Il metodo **SetCurrentMediaType** non modifica l'elenco dei tipi preferiti.
+L'elenco dei tipi supportati potrebbe non contenere tutti i tipi di supporti supportati dal flusso. Per verificare se un particolare tipo di supporto è supportato, chiamare [**IMFMediaTypeHandler::IsMediaTypeSupported**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-ismediatypesupported). Per impostare il tipo di supporto, chiamare [**IMFMediaTypeHandler::SetCurrentMediaType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-setcurrentmediatype). Se il metodo ha esito positivo, il flusso conterrà dati conformi al formato specificato. Il **metodo SetCurrentMediaType** non modifica l'elenco dei tipi preferiti.
 
-Nel codice seguente viene illustrato come ottenere il gestore del tipo di supporto, enumerare i tipi di supporto preferiti e impostare il tipo di supporto. In questo esempio si presuppone che l'applicazione disponga di un algoritmo, non illustrato di seguito, per la selezione del tipo di supporto. Le specifiche variano in base all'applicazione.
+Il codice seguente illustra come ottenere il gestore del tipo di supporto, enumerare i tipi di supporti preferiti e impostare il tipo di supporto. Questo esempio presuppone che l'applicazione abbia un algoritmo, non illustrato qui, per la selezione del tipo di supporto. Le specifiche dipendono notevolmente dall'applicazione.
 
 
 ```C++
@@ -145,10 +145,10 @@ SAFE_RELEASE(pHandler);
 
 <dl> <dt>
 
-[Origini supporti](media-sources.md)
+[Origini multimediali](media-sources.md)
 </dt> <dt>
 
-[API della piattaforma Media Foundation](media-foundation-platform-apis.md)
+[Media Foundation API della piattaforma](media-foundation-platform-apis.md)
 </dt> </dl>
 
  

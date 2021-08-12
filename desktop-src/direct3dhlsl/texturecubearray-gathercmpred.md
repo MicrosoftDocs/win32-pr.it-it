@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCubeArray:: TextureCubeArray GatherCmpRed'
-description: 'Campiona e confronta una trama e restituisce il componente rosso. | Metodi di TextureCubeArray:: TextureCubeArray GatherCmpRed'
+title: Metodi TextureCubeArray::TextureCubeArray GatherCmpRed
+description: Campione e confronta una trama e restituisce il componente rosso. | Metodi TextureCubeArray::TextureCubeArray GatherCmpRed
 ms.assetid: FD87AA60-C99D-404E-AA28-096240A2E757
 keywords:
 - Metodi GatherCmpRed HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: b1e6e05d7ca6a49d3386eae40092083b2a8e76f9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 16733f393be44842777b8e11efa7f122fa6f8b324ba1abe9e4383910a018a777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283095"
 ---
-# <a name="texturecubearraygathercmpred-methods"></a>Metodi TextureCubeArray:: GatherCmpRed
+# <a name="texturecubearraygathercmpred-methods"></a>Metodi TextureCubeArray::GatherCmpRed
 
-Campiona e confronta una trama e restituisce il componente rosso.
+Campione e confronta una trama e restituisce il componente rosso.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Campiona e confronta una trama e restituisce il componente rosso.
 
 | Metodo                                                                                  | Descrizione                                                                                                    |
 |:----------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpRed (S, float, float, uint)**](tcubearray-gathercmpred-s-float-float-uint-.md) | Campiona e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpRed(S,float,float,uint)**](tcubearray-gathercmpred-s-float-float-uint-.md) | Campione e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
 
 
 

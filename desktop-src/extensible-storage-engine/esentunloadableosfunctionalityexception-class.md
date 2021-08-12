@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentUnloadableOSFunctionalityException'
+description: Altre informazioni sulla classe EsentUnloadableOSFunctionalityException
 title: Classe EsentUnloadableOSFunctionalityException
 TOCTitle: EsentUnloadableOSFunctionalityException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentUnloadableOSFunctionalityException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 81b1151be5020a07f92582e762c6e6597138d9d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5ae24e5fd5867c847ef7f67d644e67e1be93f0d29d8bcc8a13b0fd05799f0a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118256853"
 ---
 # <a name="esentunloadableosfunctionalityexception-class"></a>Classe EsentUnloadableOSFunctionalityException
 
@@ -38,15 +38,15 @@ Classe di base per JET_err. Eccezioni UnloadableOSFunctionality.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentFatalException](./esentfatalexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentUnloadableOSFunctionalityException  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentFatalException](./esentfatalexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentUnloadableOSFunctionalityException  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,4 +74,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionalityexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

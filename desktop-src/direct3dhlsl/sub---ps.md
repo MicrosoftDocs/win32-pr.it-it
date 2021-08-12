@@ -1,6 +1,6 @@
 ---
-title: Sub-PS
-description: Sottrae le origini. | Sub-PS
+title: sub - ps
+description: Sottrae le origini. | sub - ps
 ms.assetid: e130724f-63bf-4d7f-bc9f-6a4441a788b8
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4998892aa06eff55632600a9c2f7fe359c11f830
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5fc4faa24f95824a77e9a1e92b9a15479d2e509212c52c9309c38fcc42cf6b3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285719"
 ---
-# <a name="sub---ps"></a>Sub-PS
+# <a name="sub---ps"></a>sub - ps
 
 Sottrae le origini.
 
@@ -24,7 +24,7 @@ Sottrae le origini.
 
 
 
-| Sub DST, src0, src1 |
+| sub dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Sottrae le origini.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | sub                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ dove
 
  
 
-Questa istruzione esegue la sottrazione mostrata in questa formula.
+Questa istruzione esegue la sottrazione illustrata in questa formula.
 
 
 ```
@@ -62,7 +62,7 @@ dest = src0 - src1
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

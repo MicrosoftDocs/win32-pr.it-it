@@ -1,7 +1,7 @@
 ---
 description: Recupera il GUID di questo oggetto dati file.
 ms.assetid: 79bf56b5-5900-4427-8092-3a1df86f8a57
-title: 'Metodo ID3DXFileData:: GetId (D3DX9Xof. h)'
+title: Metodo ID3DXFileData::GetId (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e1dafb296541b1702e9163dcc6d460cf149b4007
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a9a1cbf98792b0ac36c35aabf40b8c125a497201b27c6a161c0706f077ffc491
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295327"
 ---
-# <a name="id3dxfiledatagetid-method"></a>Metodo ID3DXFileData:: GetId
+# <a name="id3dxfiledatagetid-method"></a>Metodo ID3DXFileData::GetId
 
 Recupera il GUID di questo oggetto dati file.
 
@@ -41,12 +41,12 @@ HRESULT GetId(
 
 <dl> <dt>
 
-*PID* \[ out\]
+*pId* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **LPGUID**
 
-Puntatore a un GUID per ricevere l'ID di questo oggetto dati file. Se l'oggetto dati del file non dispone di un ID, il valore del parametro restituito sarà GUID \_ null.
+Puntatore a un GUID per ricevere l'ID di questo oggetto dati file. Se l'oggetto dati del file non ha ID, il valore del parametro restituito sarà GUID \_ NULL.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Puntatore a un GUID per ricevere l'ID di questo oggetto dati file. Se l'oggetto 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

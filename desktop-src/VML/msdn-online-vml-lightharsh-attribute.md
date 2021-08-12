@@ -1,24 +1,24 @@
 ---
-title: Attributo LightHarsh di la
-description: Attributo LightHarsh di la
+title: Attributo VmL LightHarsh
+description: Attributo VmL LightHarsh
 ms.assetid: 7a992e1c-dc2d-42d9-95fd-e0dfcf847567
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 997f3cacedadfccba89664f2ca0ea281393ca87f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 33612bfc36d8ce7950130c46558220a28f8a682f56d56c322616424d6982eeb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118598796"
 ---
-# <a name="vml-lightharsh-attribute"></a>Attributo LightHarsh di la
+# <a name="vml-lightharsh-attribute"></a>Attributo VmL LightHarsh
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Determina se la sorgente di luce primaria sarà dura. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,22 +26,22 @@ Determina se la sorgente di luce primaria sarà dura. Proprietà di lettura/scri
 
 [Estrusione](msdn-online-vml-extrusion-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* lightharsh = " *Expression* " >
+<o: *elemento* lightharsh=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . lightharsh = "*Expression*"
+*element* .lightharsh="*expression*"
 
-*espressione* = *elemento*. lightharsh
+*expression* = *elemento*.lightharsh
 
 **Osservazioni:**
 
-Se **false**, i limiti di ombreggiatura vengono diffusi. Il valore predefinito è **True**.
+Se **False**, i limiti dell'ombreggiatura vengono diffusi. Il valore predefinito è **True**.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

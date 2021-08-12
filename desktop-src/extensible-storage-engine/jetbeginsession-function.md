@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetBeginSession'
+description: Altre informazioni sulla funzione JetBeginSession
 title: Funzione JetBeginSession
 TOCTitle: JetBeginSession Function
 ms:assetid: f1c33b78-f2d1-44ea-8ec9-94b729b94e24
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cfe0cf06e86b19d16284b704697c65b1f38a167c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0852de04f3969e3e30debc7ba7ff4f3aedf7ac4084b17f91feed8984fe4e1467
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118251615"
 ---
 # <a name="jetbeginsession-function"></a>Funzione JetBeginSession
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetbeginsession-function"></a>Funzione JetBeginSession
 
-La funzione **JetBeginSession** avvia una sessione e Inizializza e restituisce un handle di sessione ESE ([JET_SESID](./jet-sesid.md)). Le sessioni controllano l'accesso al database e vengono utilizzate per controllare l'ambito delle transazioni. La sessione può essere utilizzata per avviare, eseguire il commit o interrompere le transazioni. La sessione viene inoltre utilizzata per il fissaggio, la creazione o l'apertura di un database. La sessione viene utilizzata come contesto per tutte le operazioni DDL e DML. Per aumentare la concorrenza e l'accesso parallelo al database, è possibile iniziare più sessioni.
+La **funzione JetBeginSession** avvia una sessione e inizializza e restituisce un handle di sessione ESE ([JET_SESID](./jet-sesid.md)). Le sessioni controllano tutti gli accessi al database e vengono utilizzate per controllare l'ambito delle transazioni. La sessione può essere utilizzata per avviare, eseguire il commit o interrompere le transazioni. La sessione viene usata anche per collegare, creare o aprire un database. La sessione viene usata come contesto per tutte le operazioni DDL e DML. Per aumentare la concorrenza e l'accesso parallelo al database, è possibile iniziare più sessioni.
 
 ```cpp
     JET_ERR JET_API JetBeginSession(
@@ -47,13 +47,13 @@ La funzione **JetBeginSession** avvia una sessione e Inizializza e restituisce u
 
 ### <a name="parameters"></a>Parametri
 
-*istanza*
+*Istanza*
 
-Istanza di database da utilizzare per questa chiamata.
+Istanza del database da utilizzare per questa chiamata.
 
 *psesid*
 
-Puntatore alla variabile che l'handle di sessione Inizializza in una corretta restituzione.
+Puntatore alla variabile inizializzata dall'handle di sessione al completamento della restituzione.
 
 *szUserName*
 
@@ -65,7 +65,7 @@ Questo parametro è riservato.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione consente la restituzione di tutti i [JET_ERR](./jet-err.md)definiti in questa API. Per altre informazioni sugli errori di Jet, vedere [errori del motore di archiviazione estendibile](./extensible-storage-engine-errors.md) e [parametri di gestione degli](./error-handling-parameters.md)errori.
+Questa funzione consente la restituzione di [qualsiasi JET_ERR](./jet-err.md)definiti in questa API. Per altre informazioni sugli errori Jet, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -85,11 +85,11 @@ Questa funzione consente la restituzione di tutti i [JET_ERR](./jet-err.md)defin
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p>
 <p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="even">
@@ -102,33 +102,33 @@ Questa funzione consente la restituzione di tutti i [JET_ERR](./jet-err.md)defin
 </tr>
 <tr class="even">
 <td><p>JET_errOutOfMemory</p></td>
-<td><p>L'operazione non è riuscita perché non è stato possibile allocare la memoria.</p></td>
+<td><p>L'operazione non è riuscita perché non è stato possibile allocare memoria.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errOutOfSessions</p></td>
-<td><p>Il numero di sessioni consentite dal motore per l'avvio del client è limitato. Questo valore può essere modificato utilizzando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con la costante JET_paramMaxSessions. Il numero predefinito di sessioni è 16. Per informazioni dettagliate sui JET_paramMaxSessions, vedere <a href="gg294139(v=exchg.10).md">parametri di sistema</a> .</p></td>
+<td><p>Il numero di sessioni che il motore consentirà l'avvio del client è limitato. Questo valore può essere modificato usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter con</a> la JET_paramMaxSessions costante. Il numero predefinito di sessioni è 16. Vedere <a href="gg294139(v=exchg.10).md">Parametri di sistema</a> per informazioni dettagliate JET_paramMaxSessions.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In seguito all'esito positivo, l'handle di sessione viene inizializzato e può essere utilizzato per le operazioni di database.
+In caso di esito positivo, l'handle di sessione viene inizializzato e può essere usato per le operazioni di database.
 
 In caso di errore, non sono disponibili sessioni o non è stato possibile inizializzare una nuova sessione.
 
 #### <a name="remarks"></a>Commenti
 
-Quando si utilizzano sessioni tra thread diversi, è necessario prestare particolare attenzione. Una sessione rileva il thread in cui è stato usato durante [JetBeginTransaction](./jetbegintransaction-function.md), [JetCommitTransaction](./jetcommittransaction-function.md)o [JetRollback](./jetrollback-function.md)e genera un errore se usato su più thread con una transazione aperta. Il [JetResetSessionContext](./jetresetsessioncontext-function.md), [JetSetSessionContext](./jetsetsessioncontext-function.md) può modificare questo comportamento. Poiché la sessione è ancora un contesto serializzato e non è possibile eseguire più operazioni di database in una singola sessione simultaneamente, solo in serie. Tuttavia, è possibile utilizzare più sessioni per ottenere l'accesso al database simultaneo. Le sessioni possono essere utilizzate all'interno di una transazione tra thread impostando e reimpostando i contesti di sessione.
+Quando si usano sessioni tra thread diversi, è necessario prestare attenzione. Una sessione tiene traccia del thread in cui è stato usato durante [JetBeginTransaction,](./jetbegintransaction-function.md) [JetCommitTransaction](./jetcommittransaction-function.md)o [JetRollback](./jetrollback-function.md)e genera un errore se usato in più thread con una transazione aperta. [JetResetSessionContext,](./jetresetsessioncontext-function.md) [JetSetSessionContext](./jetsetsessioncontext-function.md) può modificare questo comportamento. Poiché la sessione è ancora un contesto serializzato e non è possibile eseguire contemporaneamente più operazioni di database su una singola sessione, solo in serie. Tuttavia, è possibile usare più sessioni per ottenere l'accesso simultaneo al database. Le sessioni possono essere usate all'interno di una transazione tra thread impostando e reimpostando i contesti di sessione.
 
-È necessario chiudere l'handle della sessione con [JetEndSession](./jetendsession-function.md).
+L'handle di sessione deve essere chiuso [con JetEndSession.](./jetendsession-function.md)
 
 #### <a name="requirements"></a>Requisiti
 
@@ -148,11 +148,11 @@ Quando si utilizzano sessioni tra thread diversi, è necessario prestare partico
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>
@@ -173,7 +173,7 @@ Quando si utilizzano sessioni tra thread diversi, è necessario prestare partico
 [JET_SESID](./jet-sesid.md)  
 [JetBeginTransaction](./jetbegintransaction-function.md)  
 [JetCommitTransaction](./jetcommittransaction-function.md)  
-[JetDupSession](./jetdupsession-function.md)  
+[Sessione JetDupSession](./jetdupsession-function.md)  
 [JetEndSession](./jetendsession-function.md)  
 [JetResetSessionContext](./jetresetsessioncontext-function.md)  
 [JetRollback](./jetrollback-function.md)  

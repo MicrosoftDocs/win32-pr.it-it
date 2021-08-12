@@ -1,10 +1,10 @@
 ---
 title: Classe CreateMediaRendererOperation
-description: Registra un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da CreateMediaRendererAsync o CreateMediaRendererFromBasicDeviceAsync e fornisce un metodo che restituisce i risultati dell'operazione.
+description: Registra un gestore eventi che viene richiamato quando l'operazione asincrona avviata da CreateMediaRendererAsync o CreateMediaRendererFromBasicDeviceAsync viene completata e fornisce un metodo che restituisce i risultati dell'operazione.
 ms.assetid: 0BC87D9E-5285-4F98-96B4-C841DDECBBE0
 keywords:
-- API di streaming multimediale della classe CreateMediaRendererOperation
-- API di streaming multimediale della classe CreateMediaRendererOperation, descritta
+- CreateMediaRendererOperation class Media Streaming API
+- Descrizione della classe CreateMediaRendererOperation dell'API Streaming multimediale
 topic_type:
 - apiref
 api_name:
@@ -14,25 +14,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b8be789f4343779d315808a4fc5f203f62dd58c8
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 255cbf9680e40d019a7b4fa3fda669e33e051111a975d4d63905353e81ccb53a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236415"
 ---
 # <a name="createmediarendereroperation-class"></a>Classe CreateMediaRendererOperation
 
-Registra un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) o [**CreateMediaRendererFromBasicDeviceAsync**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) e fornisce un metodo che restituisce i risultati dell'operazione.
+Registra un gestore eventi che viene richiamato quando l'operazione asincrona avviata da [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) o [**CreateMediaRendererFromBasicDeviceAsync**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) viene completata e fornisce un metodo che restituisce i risultati dell'operazione.
 
-**CreateMediaRendererOperation** dispone di questi tipi di membri:
+**CreateMediaRendererOperation** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **CreateMediaRendererOperation** dispone di questi metodi.
+La **classe CreateMediaRendererOperation** include questi metodi.
 
 
 
@@ -46,13 +46,13 @@ La classe **CreateMediaRendererOperation** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CreateMediaRendererOperation** dispone di queste proprietà.
+La **classe CreateMediaRendererOperation** ha queste proprietà.
 
 
 
 | Proprietà                                                               | Tipo di accesso           | Descrizione                                                                                                                                                                                                                                                                                                               |
 |:-----------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Completi**](createmediarendereroperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) o [**CreateMediaRendererFromBasicDeviceAsync**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) . <br/> |
+| [**Completi**](createmediarendereroperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi richiamato quando viene completata l'operazione asincrona avviata da [**CreateMediaRendererAsync**](imediarendererfactory-createmediarendererasync.md) o [**CreateMediaRendererFromBasicDeviceAsync.**](imediarendererfactory-createmediarendererfrombasicdeviceasync.md) <br/> |
 
 
 

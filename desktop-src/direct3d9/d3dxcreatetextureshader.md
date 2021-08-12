@@ -1,7 +1,7 @@
 ---
-description: Crea un oggetto shader di trama dallo shader compilato.
+description: Crea un oggetto texture shader dallo shader compilato.
 ms.assetid: 3e8017f7-fe6b-4f4e-a80e-b16b16c0b348
-title: Funzione D3DXCreateTextureShader (D3DX9Shader. h)
+title: Funzione D3DXCreateTextureShader (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c32715f1b939d30acb53b1cbe07e081d43d21823
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e989570c98b6b306782d8fb01e53b04d7157b1bb46db726a27fe2ade88a806c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298972"
 ---
-# <a name="d3dxcreatetextureshader-function"></a>D3DXCreateTextureShader (funzione)
+# <a name="d3dxcreatetextureshader-function"></a>Funzione D3DXCreateTextureShader
 
-Crea un oggetto shader di trama dallo shader compilato.
+Crea un oggetto texture shader dallo shader compilato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT D3DXCreateTextureShader(
 
 <dl> <dt>
 
-*pFunction* \[ in\]
+*pFunction* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
@@ -50,12 +50,12 @@ Puntatore al flusso DWORD della funzione.
 
 </dd> <dt>
 
-*ppTextureShader* \[ out\]
+*ppTextureShader* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXTEXTURESHADER**](id3dxtextureshader.md)\***
 
-Restituisce un oggetto [**ID3DXTextureShader**](id3dxtextureshader.md) che può essere usato per compilare in modo procedurale il contenuto di una trama usando le funzioni [**D3DXFillTextureTX**](d3dxfilltexturetx.md) .
+Restituisce un [**oggetto ID3DXTextureShader**](id3dxtextureshader.md) che può essere usato per riempire in modo procedurale il contenuto di una trama usando le funzioni [**D3DXFillTextureTX.**](d3dxfilltexturetx.md)
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Restituisce un oggetto [**ID3DXTextureShader**](id3dxtextureshader.md) che può 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

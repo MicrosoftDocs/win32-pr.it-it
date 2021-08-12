@@ -1,7 +1,7 @@
 ---
-description: Suddivide una mesh in mesh di dimensioni inferiori a quelle specificate.
+description: Suddivide una mesh in mesh inferiori alle dimensioni specificate.
 ms.assetid: 55cdd82f-91fa-4805-969f-8fbe53cbde58
-title: Funzione D3DXSplitMesh (D3DX9Mesh. h)
+title: Funzione D3DXSplitMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d1f01cdb4ddd009f5cdf0b7f0310a492840955f1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aee07e79286867ce11ce394e852fdfc01c6a1e41dc75b8c979838844b4f09d2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298253"
 ---
-# <a name="d3dxsplitmesh-function"></a>D3DXSplitMesh (funzione)
+# <a name="d3dxsplitmesh-function"></a>Funzione D3DXSplitMesh
 
-Suddivide una mesh in mesh di dimensioni inferiori a quelle specificate.
+Suddivide una mesh in mesh inferiori alle dimensioni specificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,34 +48,34 @@ void D3DXSplitMesh(
 
 <dl> <dt>
 
-*pMeshIn* \[ in\]
+*pMeshIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta la mesh di origine.
+Puntatore a [**un'interfaccia ID3DXMesh,**](id3dxmesh.md) che rappresenta la mesh di origine.
 
 </dd> <dt>
 
-*pAdjacencyIn* \[ in\]
+*pAdjacencyIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di tre DWORD per volto che specificano i tre elementi adiacenti per ogni viso nella mesh da semplificare.
+Puntatore a una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh da semplificare.
 
 </dd> <dt>
 
-*MaxSize* \[ in\]
+*MaxSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md)**
 
-Numero massimo di vertici nel mesh risultante.
+Numero massimo di vertici nella mesh risultante.
 
 </dd> <dt>
 
-*Opzioni* \[ di in\]
+*Opzioni* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md)**
@@ -84,7 +84,7 @@ Flag di opzione per le nuove mesh.
 
 </dd> <dt>
 
-*pMeshesOut* \[ out\]
+*pMeshesOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
@@ -93,51 +93,51 @@ Numero di mesh restituite.
 
 </dd> <dt>
 
-*ppMeshArrayOut* \[ out\]
+*ppMeshArrayOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente una matrice di interfacce [**ID3DXMesh**](id3dxmesh.md) per le nuove mesh. Per una mesh di origine divisa in n mesh, *ppMeshArrayOut* è una matrice di n puntatori **ID3DXMesh** .
+Buffer contenente una matrice di [**interfacce ID3DXMesh**](id3dxmesh.md) per le nuove mesh. Per una mesh di origine suddivisa in n mesh, *ppMeshArrayOut* è una matrice di n **puntatori ID3DXMesh.**
 
 </dd> <dt>
 
-*ppAdjacencyArrayOut* \[ out\]
+*ppAdjacencyArrayOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente una matrice di matrici adiacenza (DWORD) per le nuove mesh. Vedere [**ID3DXBuffer**](id3dxbuffer.md). Questo parametro è facoltativo.
+Buffer contenente una matrice di matrici di adipenze (DWORD) per le nuove mesh. Vedere [**ID3DXBuffer**](id3dxbuffer.md). Questo parametro è facoltativo.
 
 </dd> <dt>
 
-*ppFaceRemapArrayOut* \[ out\]
+*ppFaceRemapArrayOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente una matrice di matrici di mapping delle facce (DWORD) per le nuove mesh. Vedere [**ID3DXBuffer**](id3dxbuffer.md). Questo parametro è facoltativo.
+Buffer contenente una matrice di matrici di rimap dei viso (DWORD) per le nuove mesh. Vedere [**ID3DXBuffer**](id3dxbuffer.md). Questo parametro è facoltativo.
 
 </dd> <dt>
 
-*ppVertRemapArrayOut* \[ out\]
+*ppVertRemapArrayOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente una matrice di matrici di riassociazione dei vertici per le nuove mesh. Vedere [**ID3DXBuffer**](id3dxbuffer.md). Questo parametro è facoltativo.
+Buffer contenente una matrice di matrici di remap dei vertici per le nuove mesh. Vedere [**ID3DXBuffer**](id3dxbuffer.md). Questo parametro è facoltativo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Un uso comune di questa funzione consiste nel dividere una mesh con indici a 32 bit (più di 65535 vertici) in più di una mesh, ognuno dei quali ha indici a 16 bit.
+Un uso comune di questa funzione è suddividere una mesh con indici a 32 bit (più di 65535 vertici) in più di una mesh, ognuno dei quali ha indici a 16 bit.
 
-Le matrici adiacenza, mapping dei vertici e mapping delle facce sono matrici sono DWORD in cui ogni matrice contiene n puntatori DWORD, seguiti dai dati DWORD a cui fanno riferimento i puntatori. Per ottenere, ad esempio, le informazioni di modifica del mapping delle facce per la faccia 3 nella mesh 2, è possibile usare il codice seguente, presupponendo che i dati di riassociazione volti siano stati restituiti in una variabile denominata *ppFaceRemapArrayOut*.
+Le matrici adipenze, di ridefinizione dei vertici e di ridefinizione dei visi sono matrici DWORD in cui ogni matrice contiene n puntatori DWORD, seguiti dai dati DWORD a cui fanno riferimento i puntatori. Ad esempio, per ottenere le informazioni di ridefinizione del viso per il viso 3 nella mesh 2, è possibile usare il codice seguente, presupponendo che i dati di ridefinizione del viso siano stati restituiti in una variabile denominata *ppFaceRemapArrayOut*.
 
 
 ```
@@ -155,8 +155,8 @@ const DWORD remap = face_remaps[2][3];
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

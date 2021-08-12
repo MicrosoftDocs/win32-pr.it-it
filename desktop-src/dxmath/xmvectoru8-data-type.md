@@ -1,19 +1,19 @@
 ---
-description: Tipo opaco e portabile per supportare l'uso della sintassi dell'inizializzatore C/C++ per caricare \_ i valori Uint8 in un'istanza di tipo XMVECTOR.
+description: Tipo opaco e portabile per supportare l'uso della sintassi dell'inizializzatore C/C++ per caricare i valori uint8 t in un'istanza del \_ tipo XMVECTOR.
 ms.assetid: ab73ac2c-f178-1bb9-910d-9eef5fc6f5df
-title: Tipo di dati XMVECTORU8 (DirectXMath. h)
+title: Tipo di dati XMVECTORU8 (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4428cdd78206bfa17c295a9578653bb0a66f0c6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff3c335df3e74bc58776883b15d724c65d558bad30fc37e0e28547102260301a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276197"
 ---
 # <a name="xmvectoru8-data-type"></a>Tipo di dati XMVECTORU8
 
-Tipo opaco e portabile per supportare l'uso della sintassi dell'inizializzatore C/C++ per caricare \_ i valori Uint8 in un'istanza di tipo [**XMVECTOR**](xmvector-data-type.md) .
+Tipo opaco e portabile per supportare l'uso della sintassi dell'inizializzatore C/C++ per caricare i valori uint8 t in un'istanza del \_ [**tipo XMVECTOR.**](xmvector-data-type.md)
 
 
 ```C++
@@ -24,11 +24,11 @@ typedef XMVECTORU8 vectoru8;
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco di funzionalità aggiuntive, ad esempio costruttori e operatori, disponibili con XMVECTORU8 durante la programmazione in C++, vedere [estensioni di XMVECTORU8](ovw-xmvectoru8-extensions.md).
+Per un elenco di funzionalità aggiuntive, ad esempio costruttori e operatori, disponibili con XMVECTORU8 durante la programmazione in C++, vedere [Estensioni XMVECTORU8.](ovw-xmvectoru8-extensions.md)
 
-Le strutture [**XMVECTORF32**](xmvectorf32-data-type.md), [**XMVECTORU32**](xmvectoru32-data-type.md), [**XMVECTORI32**](xmvectori32-data-type.md)e **XMVECTORU8** sono fornite come meccanismo per la creazione di [**XMVECTOR**](xmvector-data-type.md) da diversi tipi di dati costanti (a virgola mobile, Unsigned Integer, Integer e byte) tramite inizializzatori.
+Le strutture [**XMVECTORF32**](xmvectorf32-data-type.md), [**XMVECTORU32**](xmvectoru32-data-type.md), [**XMVECTORI32**](xmvectori32-data-type.md)e **XMVECTORU8** vengono fornite come meccanismo per la creazione [**di XMVECTOR**](xmvector-data-type.md) da tipi di dati costanti diversi (virgola mobile, intero senza segno, integer e byte) usando inizializzatori.
 
-Questa operazione è necessaria per supportare [**XMVECTOR**](xmvector-data-type.md), in quanto non supporta gli inizializzatori, per motivi di portabilità e di ottimizzazione.
+Questa operazione è necessaria per supportare [**XMVECTOR,**](xmvector-data-type.md)perché non supporta inizializzatori, per motivi di portabilità e ottimizzazione.
 
 Ad esempio:
 
@@ -42,11 +42,11 @@ XMVECTORU8  byteVector = { (uint8_t)  1,(uint8_t) 16,(uint8_t)101,(uint8_t) 62,
 data = floatingVector;
 ```
 
-**Spazio dei nomi**: usare DirectX
+**Spazio dei** nomi: usare DirectX
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e app Windows Phone 8.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DirectXMath.h</dt> </dl> |
 
 
 

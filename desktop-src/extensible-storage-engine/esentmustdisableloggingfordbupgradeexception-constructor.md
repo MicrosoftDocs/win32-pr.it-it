@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d14f2ab29e61b510feebbf4c320ef8a6424ca08c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: edbd3772b7bda87bcb81a9470d6e6a97f91f271917af5900a921386c1ed68256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118263757"
 ---
 # <a name="esentmustdisableloggingfordbupgradeexception-constructor"></a>Costruttore EsentMustDisableLoggingForDbUpgradeException
 
 Inizializza una nuova istanza della classe EsentMustDisableLoggingForDbUpgradeException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMustDisableLoggingForDbUpgradeException()
 
 [Membri di EsentMustDisableLoggingForDbUpgradeException](./esentmustdisableloggingfordbupgradeexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

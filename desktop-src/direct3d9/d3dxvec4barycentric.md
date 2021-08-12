@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 643773fe2be45bbae5709dcd7efaeae5fd4b86d5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 28c8ffc80b908f1ea894a22581c72e4371f87e5f55def2bdb9a1a66cc255ba90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297640"
 ---
 # <a name="d3dxvec4barycentric-function-d3dx9mathh"></a>Funzione D3DXVec4BaryCentric (D3dx9math.h)
 
-Restituisce un punto in coordinate barycentriche, usando i vettori 4D specificati.
+Restituisce un punto nelle coordinate barycentriche, usando i vettori 4D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -116,7 +116,7 @@ Si notino le relazioni seguenti.
 -   Se (f>=0 &, & g>=0 &, & 1-f-g>=0), il punto si trova all'interno del triangolo V1V2V3.
 -   Se (f==0 &, & g>=0 &, & 1-f-g>=0), il punto si trova sulla riga V1V3.
 -   Se (f>=0 &, & g==0 &, & 1-f-g>=0), il punto si trova sulla riga V1V2.
--   Se (f>=0 &, & g>=0 &, & 1-f-g==0), il punto si trova sulla riga V2V3.
+-   Se (f>=0 &, & g>=0 &, & 1-f-g==0), il punto si trova sulla linea V2V3.
 
 Le coordinate barycentriche sono una forma di coordinate generali. In questo contesto, l'uso di coordinate barycentric rappresenta una modifica nei sistemi di coordinate. Ciò che vale per le coordinate cartesiane è vero per le coordinate barycentriche.
 

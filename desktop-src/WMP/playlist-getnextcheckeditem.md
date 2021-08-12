@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. getNextCheckedItem
-description: Il metodo getNextCheckedItem recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato.
+title: PLAYLIST.getNextCheckedItem
+description: Il metodo getNextCheckedItem recupera l'indice dell'elemento selezionato successivo nella playlist che segue l'indice specificato.
 ms.assetid: 474a497d-5efe-4c95-8eb5-2ba71bd29057
 keywords:
-- PLAYLIST. getNextCheckedItem Windows Media Player
+- PLAYLIST.getNextCheckedItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1b4a85fdccc5de227ab8aea3d0ee4f93d46eed50
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54b6e598737d1aac09754b15c037c27a435deb5fff34c729aa48c51019e12982
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571451"
 ---
-# <a name="playlistgetnextcheckeditem"></a>PLAYLIST. getNextCheckedItem
+# <a name="playlistgetnextcheckeditem"></a>PLAYLIST.getNextCheckedItem
 
-Il metodo **getNextCheckedItem** recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato.
+Il **metodo getNextCheckedItem** recupera l'indice dell'elemento selezionato successivo nella playlist che segue l'indice specificato.
 
 ``` syntax
         elementID.getNextCheckedItem(item)
@@ -32,22 +32,22 @@ Il metodo **getNextCheckedItem** recupera l'indice del successivo elemento selez
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*elemento*
+<span id="item"></span><span id="ITEM"></span>*Elemento*
 </dt> <dd>
 
-**Numero** (**Long**) che indica l'indice dell'elemento in cui eseguire la ricerca.
+**Numero** (**long**) che indica l'indice dell'elemento in cui eseguire la ricerca.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**).
+Questo metodo restituisce un **valore Number** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
 Quando non sono presenti altri elementi controllati, questo metodo restituisce 1.
 
-Questo metodo è stato sostituito da **getNextCheckedItem2**, che supporta le playlist nidificate.
+Questo metodo è stato sostituito da **getNextCheckedItem2**, che supporta playlist annidate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,7 +55,7 @@ Questo metodo è stato sostituito da **getNextCheckedItem2**, che supporta le pl
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -63,10 +63,10 @@ Questo metodo è stato sostituito da **getNextCheckedItem2**, che supporta le pl
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. getNextCheckedItem2**](playlist-getnextcheckeditem2.md)
+[**PLAYLIST.getNextCheckedItem2**](playlist-getnextcheckeditem2.md)
 </dt> </dl>
 
  
