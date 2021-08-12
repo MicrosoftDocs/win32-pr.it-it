@@ -1,11 +1,11 @@
 ---
-title: Proprietà AxWindowsMediaPlayer. Settings
-description: La proprietà Settings ottiene un'interfaccia IWMPSettings che consente di modificare diverse impostazioni di Windows Media Player.
+title: AxWindowsMediaPlayer.settings - proprietà
+description: La proprietà settings ottiene un'interfaccia IWMPSettings che consente di modificare varie impostazioni Windows Media Player predefinite.
 ms.assetid: f9009239-3308-4ef6-8818-0267dfa97b65
 keywords:
-- Finestra Proprietà impostazioni Media Player
-- Proprietà Settings Media Player Windows, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Media Player Windows, proprietà Settings
+- proprietà settings Windows Media Player
+- proprietà settings Windows Media Player , classe AxWindowsMediaPlayer
+- AxWindowsMediaPlayer class Windows Media Player , settings property
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bf60f8ed3cc429faab1d43106e8676e77947bcd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b216d979160a2e77cb013d96e02cf76c09eefca400c9b4524d50258ee2dfb886
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581728"
 ---
-# <a name="axwindowsmediaplayersettings-property"></a>Proprietà AxWindowsMediaPlayer. Settings
+# <a name="axwindowsmediaplayersettings-property"></a>AxWindowsMediaPlayer.settings - proprietà
 
-La proprietà Settings ottiene un'interfaccia IWMPSettings che consente di modificare diverse impostazioni di Windows Media Player.
+La proprietà settings ottiene un'interfaccia IWMPSettings che consente di modificare varie impostazioni Windows Media Player predefinite.
 
 Questa proprietà è di sola lettura.
 
@@ -48,7 +48,7 @@ Public ReadOnly Property settings As IWMPSettings
 
 ## <a name="property-value"></a>Valore proprietà
 
-Interfaccia WMPLib. IWMPSettings.
+Interfaccia WMPLib.IWMPSettings.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Interfaccia WMPLib. IWMPSettings.
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

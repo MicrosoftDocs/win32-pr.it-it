@@ -1,9 +1,9 @@
 ---
-title: Metodi IDCompositionSkewTransform (Dcomp. h)
+title: Metodi IDCompositionSkewTransform SetAngleY (Dcomp.h)
 description: Modifica o aggiunge un'animazione al valore della proprietà AngleY di una trasformazione di inclinazione 2D. La proprietà AngleY specifica l'angolo di rotazione, in gradi. Il valore predefinito è zero.
 ms.assetid: BD3D282C-5BBD-4BCE-AE15-4491A37D9149
 keywords:
-- Metodi seangley DirectComposition
+- Metodi SetAngleY DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 06092db94b43f94eabd764293ca013ac179bc949
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0e600d2e65676c1762eab282535897932f3389a8c9ed0faa38b3d4af4f5b95d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281392"
 ---
-# <a name="idcompositionskewtransformsetangley-methods"></a>Metodi IDCompositionSkewTransform:: seangley
+# <a name="idcompositionskewtransformsetangley-methods"></a>Metodi IDCompositionSkewTransform::SetAngleY
 
 Modifica o aggiunge un'animazione al valore della proprietà AngleY di una trasformazione di inclinazione 2D. La proprietà AngleY specifica l'angolo di rotazione, in gradi. Il valore predefinito è zero.
 
@@ -29,8 +29,8 @@ Modifica o aggiunge un'animazione al valore della proprietà AngleY di una trasf
 
 | Metodo                                                                                                     | Descrizione                                           |
 |:-----------------------------------------------------------------------------------------------------------|:------------------------------------------------------|
-| [**Seangley (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(float))                                     | Modifica il valore della proprietà AngleY.<br/>  |
-| [**Seangley (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(idcompositionanimation)) | Aggiunge un'animazione al valore della proprietà AngleY.<br/> |
+| [**SetAngleY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(float))                                     | Modifica il valore della proprietà AngleY.<br/>  |
+| [**SetAngleY(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(idcompositionanimation)) | Aggiunge un'animazione al valore della proprietà AngleY.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Modifica o aggiunge un'animazione al valore della proprietà AngleY di una trasf
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2012 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

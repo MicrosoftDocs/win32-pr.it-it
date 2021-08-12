@@ -1,71 +1,71 @@
 ---
-title: Implementazione del supporto NAP per i metodi EAP
-description: Informazioni su come implementare il supporto di protezione accesso alla rete per un supplicant EAPHost. Vedere gli argomenti relativi a protezione accesso alla rete correlati a EAPHost e visualizzare altre risorse disponibili.
+title: Implementazione del supporto di Protezione accesso alla rete per i metodi EAP
+description: Informazioni su come implementare il supporto di Protezione accesso alla rete per un supplicante EAPHost. Vedere gli argomenti relativi a Protezione accesso alla rete correlati a EAPHost e visualizzare altre risorse disponibili.
 ms.assetid: c25e4f03-759a-47a7-8b35-bbe669501c5c
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e5f0bc8900ee3d9cb01edb79b64b8ef5a68df4c
-ms.sourcegitcommit: db89157e3be911fdce2e543e99faa31fb2403bc8
+ms.openlocfilehash: cff84c24aeb475b83146f2c56e9e139fd930eac27656349c594f05d91c1036fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "104047633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273315"
 ---
-# <a name="implementing-nap-support-for-eap-methods"></a>Implementazione del supporto NAP per i metodi EAP
+# <a name="implementing-nap-support-for-eap-methods"></a>Implementazione del supporto di Protezione accesso alla rete per i metodi EAP
 
-In questo argomento viene illustrato come implementare NAP per un supplicant EAPHost. In Windows Vista e Windows Server 2008 è disponibile un client di imposizione di protezione accesso alla rete (NAP EC) per le connessioni autenticate [802.1 x](/previous-versions/windows/embedded/ms890287(v=msdn.10)) .
+In questo argomento viene illustrato come implementare Protezione accesso alla rete per una supplica EAPHost. In Windows Vista e Windows Server 2008 è disponibile un client di imposizione Protezione accesso alla rete (NAP EC) per le connessioni [autenticate 802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10))
 
-## <a name="implementing-network-access-protection-nap"></a>Implementazione di protezione accesso alla rete (NAP)
+## <a name="implementing-network-access-protection-nap"></a>Implementazione di Protezione accesso alla rete
 
-Per supportare NAP, un supplicant EAPHost implementa una funzione di callback che corrisponde al prototipo di callback [**NotificationHandler**](/previous-versions/windows/desktop/api) e deve fornire un puntatore a questa funzione di callback durante la chiamata di [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession).
+Per supportare Protezione accesso alla rete, un supplicante EAPHost implementa una funzione di callback corrispondente al prototipo di callback [**NotificationHandler**](/previous-versions/windows/desktop/api) e deve fornire un puntatore a questa funzione di callback quando si [**chiama EapHostPeerBeginSession.**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession)
 
 La funzione di callback accetta due parametri.
 
 -   GUID che identifica in modo univoco l'interfaccia associata all'autenticazione.
--   Puntatore VOID a una struttura di dati opaca fornita dal supplicar.
+-   Puntatore VOID a una struttura di dati opaca fornita dal supplicant.
 
-EAPHost chiamerà la funzione di callback fornita dal richiedente con il GUID dell'interfaccia univoco e il puntatore VOID quando lo stato di quarantena del computer viene modificato. Quando EAPHost chiama la funzione di callback fornita dal richiedente, il supplicant risponde chiudendo la connessione di rete logica identificata dal puntatore GUID/VOID dell'interfaccia e inizia di nuovo l'autenticazione con **EapHostPeerBeginSession**.
+EAPHost chiamerà la funzione di callback fornita da supplicant con il GUID univoco dell'interfaccia e il puntatore VOID quando lo stato di quarantena del computer cambia. Quando EAPHost chiama la funzione di callback fornita da supplicant, il supplicante risponde tramite la rimozione della connessione di rete logica identificata dal puntatore VOID/GUID dell'interfaccia e avvia nuovamente l'autenticazione **usando EapHostPeerBeginSession.**
 
-EAPHost può chiamare la funzione di callback fornita da supplicant in qualsiasi momento: prima, durante un'autenticazione attiva o dopo il completamento dell'autenticazione (dopo la chiamata di [**EapHostPeerEndSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerendsession) ma non prima della chiamata a [**EapHostPeerClearConnection**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerclearconnection) ). Il richiedente risponde sempre chiudendo la connessione di rete logica ed eseguendo di nuovo l'autenticazione.
+EAPHost può chiamare la funzione di callback fornita da supplicant in qualsiasi momento: prima, durante un'autenticazione attiva o dopo il completamento dell'autenticazione (dopo la chiamata di [**EapHostPeerEndSession,**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerendsession) ma non prima della chiamata di [**EapHostPeerClearConnection).**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerclearconnection) Il supplicante deve sempre rispondere tramite la rimozione della connessione di rete logica e la nuova autenticazione.
 
-Se il richiedente si sta arrestando o scegliendo di non ricevere più notifiche relative alle modifiche dello stato di isolamento, il supplicant deve chiamare [**EapHostPeerClearConnection**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerclearconnection) e specificare il GUID dell'interfaccia appropriato. Se il richiedente desidera determinare l'isolamento della connessione di rete logica, il supplicant può ottenere tali informazioni da **EapHostPeerMethodResult. isolationState** quando [**EapHostPeerMethodResult**](/windows/win32/api/eaphostpeertypes/ns-eaphostpeertypes-eaphostpeermethodresult) viene ottenuto da [**EapHostPeerGetResult**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetresult).
+Se il supplicant si arresta o sceglie di non ricevere più la notifica delle modifiche dello stato di isolamento, il supplicante deve chiamare [**EapHostPeerClearConnection**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerclearconnection) e specificare il GUID dell'interfaccia appropriato. Se il supplicante vuole determinare l'isolamento della connessione di rete logica, il supplicante può ottenere queste informazioni da **EapHostPeerMethodResult.isolationState** quando [**EapHostPeerMethodResult**](/windows/win32/api/eaphostpeertypes/ns-eaphostpeertypes-eaphostpeermethodresult) viene ottenuto da [**EapHostPeerGetResult.**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetresult)
 
-## <a name="eaphost-related-nap-information"></a>Informazioni su protezione accesso alla rete correlate a EAPHost
+## <a name="eaphost-related-nap-information"></a>Informazioni su Protezione accesso alla rete correlate a EAPHost
 
-Per informazioni su NAP correlate all'API EAPHost, vedere gli argomenti seguenti.
+Per informazioni su Protezione accesso alla rete relative all'API EAPHost, vedere gli argomenti seguenti.
 
--   [**\_tipo di attributo EAP \_**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_attribute_type)
--   [**\_errore EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_error)
--   [Domande frequenti sul richiedente EAPHost](eaphost-supplicant-frequently-asked-questions.md)
+-   [**TIPO DI \_ ATTRIBUTO \_ EAP**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_attribute_type)
+-   [**ERRORE \_ EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_error)
+-   [Domande frequenti su EAPHost Supplicant](eaphost-supplicant-frequently-asked-questions.md)
 -   [**Proprietà del metodo EAP**](eap-method-properties.md)
 -   [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession)
--   [**Costanti di errore e informazioni correlate a EAP**](eap-related-error-and-information-constants.md)
--   [**stato di isolamento \_**](/windows/desktop/api/eaphostpeertypes/ne-eaphostpeertypes-isolation_state)
+-   [**Costanti relative a errori e informazioni EAP**](eap-related-error-and-information-constants.md)
+-   [**ISOLATION \_ STATE**](/windows/desktop/api/eaphostpeertypes/ne-eaphostpeertypes-isolation_state)
 -   [**NotificationHandler**](/previous-versions/windows/desktop/api)
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
 
--   Per un elenco delle risorse NAP, vedere [Protezione accesso alla rete](https://go.microsoft.com/fwlink/p/?linkid=84107).
--   Per informazioni sullo stato di integrità, vedere la pagina relativa [al rapporto di integrità (NAP, Network Access Protection) dei messaggi di](https://go.microsoft.com/fwlink/p/?linkid=83918)integrità.
--   Per la pagina Web del gruppo di rete aziendale e il Blog, vedere [Protezione accesso alla rete (NAP)](https://go.microsoft.com/fwlink/p/?linkid=83845).
--   Per informazioni sull'API NAP, vedere [Protezione accesso alla rete](/windows/desktop/NAP/network-access-protection-start-page).
+-   Per un elenco delle risorse di Protezione accesso alla rete, vedere [Protezione accesso alla rete.](https://go.microsoft.com/fwlink/p/?linkid=84107)
+-   Per informazioni sull'informativa sull'integrità, vedere [Network Access Protection (NAP) Statement of Health (SoH) Messages](https://go.microsoft.com/fwlink/p/?linkid=83918).
+-   Per la pagina Enterprise web e il blog del gruppo di rete, vedere Protezione accesso [alla rete](https://go.microsoft.com/fwlink/p/?linkid=83845).
+-   Per informazioni sull'API protezione accesso alla rete, vedere [Protezione accesso alla rete.](/windows/desktop/NAP/network-access-protection-start-page)
 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Configurazione dell'interfaccia utente del metodo EAP](configuring-the-eap-method-user-interface.md)
+[Configurazione del metodo EAP Interfaccia utente](configuring-the-eap-method-user-interface.md)
 </dt> <dt>
 
-[Abilitazione di Criteri di gruppo](enabling-group-policy.md)
+[Abilitazione Criteri di gruppo](enabling-group-policy.md)
 </dt> <dt>
 
-[Implementazione del supporto di In-Band NAP per i metodi EAP](enabling-in-band-nap-support.md)
+[Implementazione del In-Band protezione accesso alla rete per i metodi EAP](enabling-in-band-nap-support.md)
 </dt> <dt>
 
-[Trasferimento di dati tra i metodi supplicant e EAP](transferring-data-between-the-supplicant-and-eap-methods.md)
+[Trasferimento di dati tra i metodi supplicant ed EAP](transferring-data-between-the-supplicant-and-eap-methods.md)
 </dt> <dt>
 
 [Supplicant EAPHost](eaphost-supplicants.md)

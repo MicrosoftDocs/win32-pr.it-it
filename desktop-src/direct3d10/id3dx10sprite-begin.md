@@ -1,7 +1,7 @@
 ---
-description: Preparare un dispositivo per il disegno degli sprite.
+description: Preparare un dispositivo per disegnare sprite.
 ms.assetid: cffe5ac3-eeee-4ece-afcc-04a476b75863
-title: 'Metodo ID3DX10Sprite:: begin (D3DX10. h)'
+title: Metodo ID3DX10Sprite::Begin (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ede2995f72eb1200e68f035119643a362e15701e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e23ff3e4b8be62ac97f2874aa398770936bd84ab1c330c94efb87146046db847
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302406"
 ---
-# <a name="id3dx10spritebegin-method"></a>Metodo ID3DX10Sprite:: Begin
+# <a name="id3dx10spritebegin-method"></a>Metodo ID3DX10Sprite::Begin
 
-Preparare un dispositivo per il disegno degli sprite.
+Preparare un dispositivo per disegnare sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT Begin(
 
 <dl> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Flag che controllano il modo in cui verranno disegnati gli sprite. Vedere [**d3dx10 \_ sprite \_ flag**](d3dx10-sprite-flag.md).
+Flag che controllano come verranno disegnati gli sprite. Vedere [**D3DX10 \_ SPRITE \_ FLAG**](d3dx10-sprite-flag.md).
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Flag che controllano il modo in cui verranno disegnati gli sprite. Vedere [**d3d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DERR \_ OUTOFVIDEOMEMORY, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DERR \_ OUTOFVIDEOMEMORY, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni chiamata a Begin deve corrispondere a una chiamata a [**ID3DX10Sprite:: end**](id3dx10sprite-end.md).
+Ogni chiamata a Begin deve corrispondere a una chiamata a [**ID3DX10Sprite::End**](id3dx10sprite-end.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Ogni chiamata a Begin deve corrispondere a una chiamata a [**ID3DX10Sprite:: end
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

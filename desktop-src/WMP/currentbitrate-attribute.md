@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 567c2e6b43679204f0e2d0f249c1b16dff4071a9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c3e614e241093a5b81a8b636410f0581aac277fc45925b55d741e4d3c9277d29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579900"
 ---
 # <a name="currentbitrate-attribute"></a>Attributo CurrentBitrate
 
-L'attributo **CurrentBitrate** è la velocità in bit corrente dell'elemento, in bit al secondo.
+**L'attributo CurrentBitrate** è la velocità in bit corrente dell'elemento, in bit al secondo.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -30,9 +30,9 @@ L'attributo **CurrentBitrate** è la velocità in bit corrente dell'elemento, in
 
 ## <a name="remarks"></a>Commenti
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMCurrentBitrate.
+La Windows media format SDK costante per questo attributo è g \_ wszWMCurrentBitrate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,7 +40,7 @@ La costante Windows Media Format SDK per questo attributo è g \_ wszWMCurrentBi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------|
-| Versione<br/> | Solo Windows Media Player 9 serie<br/> |
+| Versione<br/> | Windows Media Player serie 9<br/> |
 
 
 
@@ -48,7 +48,7 @@ La costante Windows Media Format SDK per questo attributo è g \_ wszWMCurrentBi
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

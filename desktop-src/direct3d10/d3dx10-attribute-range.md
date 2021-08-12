@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 3e2954483da53c77ebef57f9cf2de104734caba2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9dafba8928d0c488c0ab4a5c50bbe632012c70d1cebcced3e1c970e029f1181a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303486"
 ---
 # <a name="d3dx10_attribute_range-structure"></a>Struttura ATTRIBUTE RANGE D3DX10 \_ \_
 
@@ -100,7 +100,7 @@ Numero di vertici.
 
 ## <a name="remarks"></a>Commenti
 
-Una tabella di attributi viene usata per identificare le aree della mesh che devono essere disegnate con trame, stati di rendering, materiali e così via diversi. Inoltre, l'applicazione può usare la tabella degli attributi per nascondere parti di una mesh non disegnando un determinato identificatore di attributo (AttribId) durante il disegno del frame.
+Una tabella di attributi viene usata per identificare le aree della mesh che devono essere disegnate con trame, stati di rendering, materiali e così via diversi. Inoltre, l'applicazione può usare la tabella degli attributi per nascondere parti di una mesh non disegnando un determinato identificatore di attributo (AttribId) quando si disegna il frame.
 
 Il tipo LPD3DX ATTRIBUTE RANGE è definito come puntatore alla \_ \_ struttura ATTRIBUTE RANGE D3DX. \_ \_
 

@@ -1,21 +1,21 @@
 ---
-title: Modulo per le informazioni di contatto per un Music Store online
-description: Modulo per le informazioni di contatto per un Music Store online
+title: Modulo delle informazioni di contatto per un Musica online
+description: Modulo delle informazioni di contatto per un Musica online
 ms.assetid: 06142bd0-ac8a-4ca3-a620-af6bc406c14d
 keywords:
-- Windows Media Player Online Stores
+- Windows Media Player Negozi online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 726be91ab4d5d218fa17af7e206263ef579f47be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9838cbd17679ffd2c595529145b640be9f8e6dd198fc135af0aa7984bcb025bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580351"
 ---
-# <a name="contact-information-form-for-an-online-music-store"></a>Modulo per le informazioni di contatto per un Music Store online
+# <a name="contact-information-form-for-an-online-music-store"></a>Modulo delle informazioni di contatto per un Musica online
 
-Nella tabella seguente vengono illustrate le informazioni di contatto richieste da Microsoft per il negozio online. Compila questo modulo e invialo al team virtuale di Windows Media Player Services all'indirizzo mpsvctm@microsoft.com .
+La tabella seguente mostra le informazioni di contatto richieste da Microsoft per il negozio online. Compilare questo modulo e inviarlo al team virtuale Windows Media Player Services all'indirizzo mpsvctm@microsoft.com .
 
 
 
@@ -23,13 +23,13 @@ Nella tabella seguente vengono illustrate le informazioni di contatto richieste 
 |--------------------------|-------------|
 | Nome del negozio               |             |
 | Provider Name            |             |
-| Archivia impostazioni locali             |             |
-| Categoria Archivio           |             |
+| Impostazioni locali dello Store             |             |
+| Categoria store           |             |
 | Modello di acquisto           |             |
-| Lingua archivio           |             |
-| Nome/i contatto archivio    |             |
-| Invia messaggi di posta elettronica di contatto  |             |
-| Account Passport di MSFT |             |
+| Store Language           |             |
+| Store Contact Name(s)    |             |
+| Messaggi di posta elettronica di contatto del punto vendita  |             |
+| Account Passport MSFT |             |
 | Indirizzo di spedizione         |             |
 | City                     |             |
 | State                    |             |
@@ -37,22 +37,22 @@ Nella tabella seguente vengono illustrate le informazioni di contatto richieste 
 | Paese/Area geografica           |             |
 | Telephone                |             |
 | Fax                      |             |
-| Contatto del sondaggio           |             |
+| Contatto sondaggio           |             |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Kit di benvenuto per gli archivi online](online-stores-welcome-kit.md)
+[Kit di benvenuto per negozi online](online-stores-welcome-kit.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

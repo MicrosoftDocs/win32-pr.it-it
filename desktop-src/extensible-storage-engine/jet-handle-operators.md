@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: operatori JET_HANDLE'
-title: Operatori di JET_HANDLE
+description: 'Altre informazioni su: Operatori JET_HANDLE'
+title: JET_HANDLE seguenti
 TOCTitle: JET_HANDLE operators
 ms:assetid: 5d3fcd9b-50a0-dfff-a38e-a6bfe82cf496
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh557794(v=EXCHG.10)
 ms:contentKeyID: 39512315
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 4d7abae5aca585debf7f17595bbba294340fe6ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62a1bfce3f2c2f0606d34c9f3d4263967ecc3738134bc08c02e73efa25657b8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104561956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254278"
 ---
-# <a name="jet_handle-operators"></a>Operatori di JET_HANDLE
+# <a name="jet_handle-operators"></a>JET_HANDLE seguenti
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_HANDLE](./jet-handle-structure.md) espone i membri seguenti.
+Il [JET_HANDLE](./jet-handle-structure.md) espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -52,6 +52,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_HANDLE](./jet-handle-structure.md)
+[JET_HANDLE struttura](./jet-handle-structure.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
 title: Struttura WMDMID
-description: La struttura WMDMID descrive i numeri di serie e gli ID di gruppo.
+description: La struttura WMDMID descrive i numeri di serie e gli ID gruppo.
 ms.assetid: eaa5786e-a2a1-42d7-b527-be83d944cb20
 keywords:
-- Struttura WMDMID Windows Media Gestione dispositivi
-- Puntatore alla struttura PWMDMID Windows Media Gestione dispositivi
+- Struttura WMDMID di Gestione dispositivi multimediali di Windows
+- Puntatore alla struttura PWMDMID windows Media Device Manager
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8edc2a364bf29ead6aaf4fad8ad3a56fe80d7176
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93079b2b32dae918e1c7f5c7756a1c24dd29c539c6b760dc698273006ae30f47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583994"
 ---
 # <a name="wmdmid-structure"></a>Struttura WMDMID
 
-La struttura **WMDMID** descrive i numeri di serie e gli ID di gruppo.
+La **struttura WMDMID** descrive i numeri di serie e gli ID gruppo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,21 +47,21 @@ typedef struct __WMDMID {
 **cbSize**
 </dt> <dd>
 
-Dimensione della struttura **WMDMID** in byte.
+Dimensioni della **struttura WMDMID,** in byte.
 
 </dd> <dt>
 
 **dwVendorID**
 </dt> <dd>
 
-**DWORD** contenente il numero ID registrato del fornitore. Contiene zero se non è in uso.
+**Valore DWORD** contenente il numero ID registrato del fornitore. Contiene zero se non è in uso.
 
 </dd> <dt>
 
-**\[lunghezza WMDMID \_ PID\]**
+**pID \[ WMDMID \_ LENGTH\]**
 </dt> <dd>
 
-Puntatore a una matrice di byte che contiene il numero di serie. Il numero di serie è una stringa di valori di byte privi di formato standard. Si noti che non si tratta di un valore a caratteri wide. **WMDMID \_ LENGTH** è un valore costante definito in mswmdm. h.
+Puntatore a una matrice di byte contenente il numero di serie. Il numero di serie è una stringa di valori di byte che non hanno un formato standard. Si noti che non si tratta di un valore a caratteri wide. **WMDMID \_ LENGTH** è un valore costante definito in mswmdm.h.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Lunghezza effettiva del numero di serie restituito, in byte.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
@@ -86,16 +86,16 @@ Lunghezza effettiva del numero di serie restituito, in byte.
 
 <dl> <dt>
 
-[**IMDSPDevice:: GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getserialnumber)
+[**IMDSPDevice::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspdevice-getserialnumber)
 </dt> <dt>
 
-[**IMDSPStorageGlobals:: GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getserialnumber)
+[**IMDSPStorageGlobals::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getserialnumber)
 </dt> <dt>
 
-[**IWMDMDevice:: GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getserialnumber)
+[**IWMDMDevice::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getserialnumber)
 </dt> <dt>
 
-[**IWMDMStorageGlobals:: GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-getserialnumber)
+[**IWMDMStorageGlobals::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-getserialnumber)
 </dt> <dt>
 
 [**Strutture**](structures.md)

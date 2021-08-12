@@ -1,21 +1,21 @@
 ---
-description: Lo stato graphics &\# 8212; area di ridimensionamento, trasformazioni e impostazioni di qualità &\# 8212; è archiviato in un oggetto Graphics.
+description: Lo stato della &8212; l'area di ritaglio, le trasformazioni e le impostazioni \# di qualità &8212; viene archiviato in un \# oggetto Graphics.
 ms.assetid: 98b9fa12-02e7-42bf-9cbd-03ee696188f6
 title: Contenitori di oggetti Graphics
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab8bf6469d0835137be1bb76b7727fd961bba16b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26af00a17f793a1f3ce587963343556b8c4ad685f930b707bd81de1008d610ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104565515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248670"
 ---
 # <a name="graphics-containers"></a>Contenitori di oggetti Graphics
 
-Lo stato della grafica, ovvero area di ridimensionamento, trasformazioni e impostazioni di qualità, viene archiviato in un oggetto [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . Windows GDI+ consente di sostituire temporaneamente o aumentare parte dello stato in un oggetto **Graphics** utilizzando un contenitore. Per avviare un contenitore, chiamare il metodo [**Graphics:: BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) di un oggetto **Graphics** e terminare un contenitore chiamando il metodo [**Graphics:: EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer) . In between **Graphics:: BeginContainer** e **Graphics:: EndContainer** tutte le modifiche di stato apportate all'oggetto **Graphics** appartengono al contenitore e non sovrascrivono lo stato esistente dell'oggetto **Graphics** .
+Lo stato della grafica, ovvero l'area di ritaglio, le trasformazioni e le impostazioni di qualità, viene archiviato in un [**oggetto**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Graphics. Windows GDI+ consente di sostituire o aumentare temporaneamente parte dello stato in un **oggetto Graphics** usando un contenitore. Si avvia un contenitore chiamando il [**metodo Graphics::BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) di un oggetto **Graphics** e si termina un contenitore chiamando il [**metodo Graphics::EndContainer.**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer) Tra **Graphics::BeginContainer** e **Graphics::EndContainer,** tutte le modifiche di stato apportate all'oggetto **Graphics** appartengono al contenitore e non sovrascrivono lo stato esistente dell'oggetto **Graphics.**
 
-Nell'esempio seguente viene creato un contenitore all'interno di un oggetto [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . La trasformazione globale dell'oggetto **Graphics** è una traduzione 200 unità a destra e la trasformazione globale del contenitore è una conversione 100 unità inattive.
+L'esempio seguente crea un contenitore all'interno di [**un oggetto**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Graphics. La trasformazione globale **dell'oggetto Graphics** è una traslazione di 200 unità a destra e la trasformazione globale del contenitore è una traslazione di 100 unità verso il basso.
 
 
 ```
@@ -31,11 +31,11 @@ myGraphics.DrawRectangle(&myPen, 0, 0, 50, 50);
 
 
 
-Si noti che nell'esempio precedente, l'istruzione `myGraphics.DrawRectangle(&myPen, 0, 0, 50, 50)` eseguita tra le chiamate a [**Graphics:: BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) e [**Graphics:: EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer) produce un rettangolo diverso dalla stessa istruzione effettuata dopo la chiamata a **Graphics:: EndContainer**. Solo la traduzione orizzontale si applica alla chiamata **DrawRectangle** effettuata all'esterno del contenitore. Entrambe le trasformazioni, ovvero la traduzione orizzontale di 200 unità e la conversione verticale di 100 unità, si applicano alla [**grafica::D chiamata rawrectangle**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawrectangle(inconstpen_inint_inint_inint_inint)) effettuata all'interno del contenitore. Nella figura seguente sono illustrati i due rettangoli.
+Si noti che nell'esempio precedente l'istruzione effettuata tra le chiamate `myGraphics.DrawRectangle(&myPen, 0, 0, 50, 50)` a [**Graphics::BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) e [**Graphics::EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer) produce un rettangolo diverso rispetto alla stessa istruzione effettuata dopo la chiamata a **Graphics::EndContainer**. Solo la traslazione orizzontale si applica **alla chiamata DrawRectangle** effettuata all'esterno del contenitore. Entrambe le trasformazioni, ovvero la traslazione orizzontale di 200 unità e la traslazione verticale di 100 unità, si applicano alla chiamata [**Graphics::D rawRectangle**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawrectangle(inconstpen_inint_inint_inint_inint)) effettuata all'interno del contenitore. La figura seguente mostra i due rettangoli.
 
-![Screenshot di una finestra con due rettangoli disegnati con una penna blu, uno posizionato sopra l'altro](images/aboutgdip05-art17.png)
+![screenshot di una finestra con due rettangoli disegnati con una penna blu, uno posizionato sopra l'altro](images/aboutgdip05-art17.png)
 
-I contenitori possono essere annidati all'interno dei contenitori. Nell'esempio seguente viene creato un contenitore in un oggetto [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e un altro contenitore all'interno del primo contenitore. La trasformazione globale dell'oggetto **Graphics** è una conversione di unità 100 nella direzione x e 80 unità nella direzione y. La trasformazione globale del primo contenitore è una rotazione di 30 gradi. La trasformazione globale del secondo contenitore è una scala per un fattore 2 nella direzione x. Viene eseguita una chiamata al metodo [**Graphics::D rawellipse**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawellipse(inconstpen_inint_inint_inint_inint)) all'interno del secondo contenitore.
+I contenitori possono essere annidati all'interno di contenitori. L'esempio seguente crea un contenitore all'interno [**di un oggetto Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e un altro contenitore all'interno del primo contenitore. La trasformazione globale **dell'oggetto Graphics** è una traslazione di 100 unità nella direzione x e di 80 unità nella direzione y. La trasformazione globale del primo contenitore è una rotazione di 30 gradi. La trasformazione globale del secondo contenitore è un ridimensionamento di un fattore di 2 nella direzione x. Una chiamata al metodo [**Graphics::D rawEllipse**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawellipse(inconstpen_inint_inint_inint_inint)) viene effettuata all'interno del secondo contenitore.
 
 
 ```
@@ -54,17 +54,17 @@ myGraphics.EndContainer(container1);
 
 
 
-La figura seguente mostra l'ellisse.
+La figura seguente mostra i puntini di sospensione.
 
-![Screenshot di una finestra che contiene un'ellisse blu ruotata con il relativo centro contrassegnato come (100, 80)](images/aboutgdip05-art18.png)
+![Screenshot di una finestra che contiene un'ellisse blu ruotata con il centro etichettato come (100,80)](images/aboutgdip05-art18.png)
 
-Si noti che tutte e tre le trasformazioni si applicano alla [**grafica::D chiamata rawellipse**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawellipse(inconstpen_inint_inint_inint_inint)) effettuata nel secondo contenitore (più interno). Si noti anche l'ordine delle trasformazioni: prima scala, quindi ruota, quindi trasla. La trasformazione più interna viene applicata per prima e la trasformazione più esterna viene applicata per ultima.
+Si noti che tutte e tre le trasformazioni si applicano alla chiamata [**Graphics::D rawEllipse**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawellipse(inconstpen_inint_inint_inint_inint)) eseguita nel secondo contenitore (più interno). Si noti anche l'ordine delle trasformazioni: prima ridimensionare, quindi ruotare e infine traslare. La trasformazione più interna viene applicata per prima e la trasformazione più esterna viene applicata per ultima.
 
-È possibile impostare qualsiasi proprietà di un oggetto [**grafico**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) all'interno di un contenitore (tra le chiamate a [**Graphics:: BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) e [**Graphics:: EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer)). È ad esempio possibile impostare un'area di ridimensionamento all'interno di un contenitore. Qualsiasi disegno eseguito all'interno del contenitore sarà limitato all'area di visualizzazione del contenitore e sarà limitato anche alle aree di visualizzazione di qualsiasi contenitore esterno e all'area di visualizzazione dell'oggetto **Graphics** stesso.
+Qualsiasi proprietà di un [**oggetto Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) può essere impostata all'interno di un contenitore (tra le chiamate a [**Graphics::BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) [**e Graphics::EndContainer).**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer) Ad esempio, un'area di ritaglio può essere impostata all'interno di un contenitore. Qualsiasi disegno eseguito all'interno del contenitore sarà limitato all'area di ritaglio del contenitore e sarà limitato anche alle aree di ritaglio di tutti i contenitori esterni e all'area di ritaglio dell'oggetto **Graphics** stesso.
 
-Le proprietà discusse finora, ovvero la trasformazione mondiale e l'area di visualizzazione, vengono combinate dai contenitori annidati. Le altre proprietà vengono temporaneamente sostituite da un contenitore annidato. Se, ad esempio, si imposta la modalità di smussatura su SmoothingModeAntiAlias all'interno di un contenitore, qualsiasi metodo di disegno chiamato all'interno del contenitore utilizzerà la modalità di smussamento AntiAlias, ma i metodi di disegno chiamati dopo [**Graphics:: EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer) utilizzeranno la modalità di smussamento che era presente prima della chiamata a [**Graphics:: BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)).
+Le proprietà descritte finora, ovvero la trasformazione globale e l'area di ritaglio, sono combinate da contenitori annidati. Altre proprietà vengono temporaneamente sostituite da un contenitore annidato. Ad esempio, se si imposta la modalità di smussamento su SmoothingModeAntiAlias all'interno di un contenitore, tutti i metodi di disegno chiamati all'interno di tale contenitore useranno la modalità di smussamento antialias, mentre i metodi di disegno chiamati dopo [**Graphics::EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer) useranno la modalità di smussamento attivata prima della chiamata a [**Graphics::BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)).
 
-Per un altro esempio di combinazione delle trasformazioni internazionali di un oggetto [**grafico**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e di un contenitore, si supponga di voler creare un occhio e posizionarlo in varie posizioni in una sequenza di visi. Nell'esempio seguente viene disegnato un occhio centrato sull'origine del sistema di coordinate.
+Per un altro esempio di combinazione delle trasformazioni del mondo di un oggetto [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e di un contenitore, si supponga di voler disegnare un occhio e posizionarlo in diverse posizioni su una sequenza di visi. L'esempio seguente disegna un occhio centrato in corrispondenza dell'origine del sistema di coordinate.
 
 
 ```
@@ -109,13 +109,13 @@ void DrawEye(Graphics* pGraphics)
 
 
 
-Nella figura seguente vengono illustrati l'occhio e gli assi delle coordinate.
+La figura seguente mostra gli assi dell'occhio e delle coordinate.
 
-![illustrazione che mostra un occhio composto da tre ellissi: uno per la struttura, Iris e la pupilla](images/aboutgdip05-art19.png)
+![illustrazione che mostra un occhio composto da tre puntini di sospensione: uno per il contorno, l'iris e la sfumatura](images/aboutgdip05-art19.png)
 
-La funzione DrawEye, definita nell'esempio precedente, riceve l'indirizzo di un oggetto [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e crea immediatamente un contenitore all'interno dell'oggetto **Graphics** . Questo contenitore isola il codice che chiama la funzione DrawEye dalle impostazioni delle proprietà effettuate durante l'esecuzione della funzione DrawEye. Ad esempio, il codice nella funzione DrawEye imposta l'area di visualizzazione dell'oggetto **Graphics** , ma quando DrawEye restituisce il controllo alla routine chiamante, l'area di ridimensionamento sarà così com'era prima della chiamata a DrawEye.
+La funzione DrawEye, definita nell'esempio precedente, riceve l'indirizzo di un oggetto [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e crea immediatamente un contenitore all'interno di **tale oggetto Graphics.** Questo contenitore isola qualsiasi codice che chiama la funzione DrawEye dalle impostazioni delle proprietà effettuate durante l'esecuzione della funzione DrawEye. Ad esempio, il codice nella funzione DrawEye imposta l'area di ritaglio dell'oggetto **Graphics,** ma quando DrawEye restituisce il controllo alla routine chiamante, l'area di ritaglio sarà come prima della chiamata a DrawEye.
 
-Nell'esempio seguente vengono disegnati tre ellissi (visi), ognuno con un occhio all'interno.
+L'esempio seguente disegna tre puntini di sospensione (visi), ognuno con un occhio all'interno.
 
 
 ```
@@ -153,13 +153,13 @@ myGraphics.EndContainer(myGraphicsContainer);
 
 
 
-Nella figura seguente sono illustrati i tre ellissi.
+La figura seguente mostra i tre puntini di sospensione.
 
-![Screenshot di una finestra con tre ellissi, ognuno dei quali contiene un occhio a una dimensione e una rotazione diverse](images/aboutgdip05-art20.png)
+![Screenshot di una finestra con tre puntini di sospensione, ognuno dei quali contiene un occhio con dimensioni e rotazione diverse](images/aboutgdip05-art20.png)
 
-Nell'esempio precedente, tutti i puntini di sospensione vengono disegnati con la chiamata `DrawEllipse(&myBlackPen, -40, -60, 80, 120)` , che disegna un'ellisse centrata sull'origine del sistema di coordinate. I puntini di sospensione vengono spostati dall'angolo superiore sinistro dell'area client impostando la trasformazione globale dell'oggetto [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . L'istruzione fa in modo che la prima ellisse si trovi al centro (100, 100). L'istruzione fa in modo che il centro della seconda ellisse sia 100 unità a destra del centro della prima ellisse. Analogamente, il centro della terza ellisse è 100 unità a destra del centro della seconda ellisse.
+Nell'esempio precedente, tutte le ellissi vengono disegnate con la chiamata , che disegna un'ellisse centrata in `DrawEllipse(&myBlackPen, -40, -60, 80, 120)` corrispondenza dell'origine del sistema di coordinate. I puntini di sospensione vengono spostati dall'angolo superiore sinistro dell'area client impostando la trasformazione globale [**dell'oggetto**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Graphics. L'istruzione fa sì che la prima ellisse sia centrata su (100, 100). L'istruzione fa sì che il centro della seconda ellisse sia 100 unità a destra del centro della prima ellisse. Analogamente, il centro della terza ellisse è 100 unità a destra del centro della seconda ellisse.
 
-I contenitori nell'esempio precedente vengono usati per trasformare l'occhio rispetto al centro di una determinata ellisse. Il primo occhio viene disegnato al centro dell'ellisse senza trasformazione, quindi la chiamata DrawEye non si trova all'interno di un contenitore. Il secondo occhio è ruotato di 40 gradi e ha disegnato 30 unità al di sopra del centro dell'ellisse, quindi la funzione DrawEye e i metodi che impostano la trasformazione vengono chiamati all'interno di un contenitore. Il terzo occhio viene allungato e ruotato e disegnato al centro dell'ellisse. Come nel secondo occhio, la funzione DrawEye e i metodi che impostano la trasformazione vengono chiamati all'interno di un contenitore.
+I contenitori nell'esempio precedente vengono usati per trasformare l'occhio rispetto al centro di una determinata ellisse. Il primo occhio viene disegnato al centro dell'ellisse senza alcuna trasformazione, quindi la chiamata DrawEye non si trova all'interno di un contenitore. Il secondo occhio viene ruotato di 40 gradi e disegnato 30 unità sopra il centro dell'ellisse, quindi la funzione DrawEye e i metodi che impostano la trasformazione vengono chiamati all'interno di un contenitore. Il terzo occhio viene allungato, ruotato e disegnato al centro dell'ellisse. Come per il secondo occhio, la funzione DrawEye e i metodi che impostano la trasformazione vengono chiamati all'interno di un contenitore.
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Calcola gli IMT per triangolo da un segnale personalizzato specificato dall'applicazione che varia in base alla superficie della mesh, in genere con una frequenza maggiore rispetto ai dati dei vertici. Il segnale viene valutato tramite una funzione di callback specificata dall'utente.
+description: Calcola gli IMT per triangolo da un segnale personalizzato specificato dall'applicazione che varia sulla superficie della mesh (in genere con una frequenza superiore rispetto ai dati dei vertici). Il segnale viene valutato tramite una funzione di callback specificata dall'utente.
 ms.assetid: f1d96021-0b7d-43e6-b51b-71a90d2f5ad8
-title: Funzione D3DXComputeIMTFromSignal (D3DX9Mesh. h)
+title: Funzione D3DXComputeIMTFromSignal (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 979304a350c226a9406e62896bb84492d8046e74
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9d645e12f7159963f9b9bc5abeb960aee0bac2282537c482465be3ea08690181
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299413"
 ---
-# <a name="d3dxcomputeimtfromsignal-function"></a>D3DXComputeIMTFromSignal (funzione)
+# <a name="d3dxcomputeimtfromsignal-function"></a>Funzione D3DXComputeIMTFromSignal
 
-Calcola gli IMT per triangolo da un segnale personalizzato specificato dall'applicazione che varia in base alla superficie della mesh, in genere con una frequenza maggiore rispetto ai dati dei vertici. Il segnale viene valutato tramite una funzione di callback specificata dall'utente.
+Calcola gli IMT per triangolo da un segnale personalizzato specificato dall'applicazione che varia sulla superficie della mesh (in genere con una frequenza superiore rispetto ai dati dei vertici). Il segnale viene valutato tramite una funzione di callback specificata dall'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,66 +49,66 @@ HRESULT D3DXComputeIMTFromSignal(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a una mesh di input (vedere [**ID3DXMesh**](id3dxmesh.md)) che contiene la geometria dell'oggetto per il calcolo di IMT.
+Puntatore a una mesh di input (vedere [**ID3DXMesh)**](id3dxmesh.md)che contiene la geometria dell'oggetto per il calcolo dell'IMT.
 
 </dd> <dt>
 
-*dwTextureIndex* \[ in\]
+*dwTextureIndex* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Indice di coordinate di trama in base zero che identifica il set di coordinate di trama da usare.
+Indice delle coordinate della trama in base zero che identifica il set di coordinate di trama da usare.
 
 </dd> <dt>
 
-*uSignalDimension* \[ in\]
+*uSignalDimension* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di componenti in ogni punto dati del segnale.
+Numero di componenti in ogni punto dati nel segnale.
 
 </dd> <dt>
 
-*fMaxUVDistance* \[ in\]
+*fMaxUVDistance* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Distanza massima tra i vertici; l'algoritmo continua la suddivisione fino a quando la distanza tra tutti i vertici è minore o uguale a fMaxUVDistance.
+Distanza massima tra i vertici. L'algoritmo continua a essere suddiviso fino a quando la distanza tra tutti i vertici è minore o uguale a fMaxUVDistance.
 
 </dd> <dt>
 
-*dwOptions* \[ in\]
+*dwOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opzioni di incapsulamento della trama. Si tratta di una combinazione di uno o più [**flag D3DXIMT**](./d3dximt-flags.md).
+Opzioni di ritorno a capo automatico della trama. Si tratta di una combinazione di uno o più [**FLAG D3DXIMT**](./d3dximt-flags.md).
 
 </dd> <dt>
 
-*pSignalCallback* \[ in\]
+*pSignalCallback* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[LPD3DXIMTSIGNALCALLBACK](lpd3dximtsignalcallback.md)**
 
-Puntatore a una funzione dell'analizzatore fornita dall'utente, che verrà usata per calcolare il valore del segnale a coordinate U, V arbitrarie. La funzione segue il prototipo di [LPD3DXIMTSIGNALCALLBACK](lpd3dximtsignalcallback.md).
+Puntatore a una funzione dell'analizzatore fornita dall'utente, che verrà usata per calcolare il valore del segnale in corrispondenza di coordinate U,V arbitrarie. La funzione segue il prototipo [di LPD3DXIMTSIGNALCALLBACK.](lpd3dximtsignalcallback.md)
 
 </dd> <dt>
 
-*pUserData* \[ in\]
+*pUserData* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* VOID**
 
-Puntatore a un valore definito dall'utente che viene passato alla funzione di callback del segnale. Usato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni sul contesto per la funzione di callback.
+Puntatore a un valore definito dall'utente passato alla funzione di callback del segnale. Utilizzato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni di contesto per la funzione di callback.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Puntatore a un valore definito dall'utente che viene passato alla funzione di ca
 
 Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
 
-Puntatore a una funzione di callback per monitorare lo stato di avanzamento del calcolo di IMT.
+Puntatore a una funzione di callback per monitorare lo stato del calcolo IMT.
 
 </dd> <dt>
 
@@ -126,16 +126,16 @@ Puntatore a una funzione di callback per monitorare lo stato di avanzamento del 
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a una variabile definita dall'utente che viene passata alla funzione di callback dello stato. Usato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni sul contesto per la funzione di callback.
+Puntatore a una variabile definita dall'utente che viene passata alla funzione di callback dello stato. Utilizzato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni di contesto per la funzione di callback.
 
 </dd> <dt>
 
-*ppIMTData* \[ out\]
+*ppIMTData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la matrice IMT restituita. Questa matrice può essere fornita come input per le [funzioni UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) di D3DX per definire la priorità dell'allocazione dello spazio di trama nella parametrizzazione della trama.
+Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la matrice IMT restituita. Questa matrice può essere fornita come input per le funzioni [UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) D3DX per classificare in ordine di priorità l'allocazione dello spazio della trama nella parametrizzazione della trama.
 
 </dd> </dl>
 
@@ -143,11 +143,11 @@ Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la mat
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso contrario, il valore è D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D OK; in caso contrario, il valore \_ è D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione richiede che la mesh di input contenga un mapping di trama da segnale a mesh, ad esempio coordinate di trama. Consente all'utente di definire un segnale arbitrariamente sulla superficie della mesh.
+Questa funzione richiede che la mesh di input contenga un mapping di trama da segnale a mesh (ad esempio coordinate di trama). Consente all'utente di definire un segnale in modo arbitrario sulla superficie della mesh.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -155,8 +155,8 @@ Questa funzione richiede che la mesh di input contenga un mapping di trama da se
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

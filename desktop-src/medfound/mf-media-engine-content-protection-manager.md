@@ -1,19 +1,19 @@
 ---
-description: Consente al motore multimediale di riprodurre contenuto protetto.
+description: Consente al motore di contenuti multimediali di riprodurre contenuto protetto.
 ms.assetid: F6F17EC7-6553-4127-B691-C20C945DD4D8
-title: Attributo MF_MEDIA_ENGINE_CONTENT_PROTECTION_MANAGER (Mfmediaengine. h)
+title: MF_MEDIA_ENGINE_CONTENT_PROTECTION_MANAGER attributo (Mfmediaengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afb99d1df36c9b9adbf1c099d619df60e1144b87
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fe80e619f3b256f6aa587f32d9ee5b6f43cd2978a5dfb043c62536ff5315bacb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244690"
 ---
-# <a name="mf_media_engine_content_protection_manager-attribute"></a>\_Attributo MF media \_ Engine \_ Content \_ Protection \_ Manager
+# <a name="mf_media_engine_content_protection_manager-attribute"></a>Attributo MF \_ MEDIA ENGINE CONTENT PROTECTION \_ \_ \_ \_ MANAGER
 
-Consente al motore multimediale di riprodurre contenuto protetto.
+Consente al motore di contenuti multimediali di riprodurre contenuto protetto.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Consente al motore multimediale di riprodurre contenuto protetto.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un puntatore all'interfaccia [**IMFContentProtectionManager**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager) . Il chiamante deve implementare l'interfaccia.
+Il valore di questo attributo è un puntatore [**all'interfaccia IMFContentProtectionManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager) Il chiamante deve implementare l'interfaccia .
 
-Questo attributo può essere uno degli attributi passati a [**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance). È necessario se il contenuto protetto deve essere riprodotto.
+Questo attributo può essere uno degli attributi passati a [**IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance). È necessario se il contenuto protetto deve essere riprodotto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Questo attributo può essere uno degli attributi passati a [**IMFMediaEngineClas
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                          |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                          |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
 
 
 
@@ -41,10 +41,10 @@ Questo attributo può essere uno degli attributi passati a [**IMFMediaEngineClas
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
+[**IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Non usato. In precedenza un callback per restituire tutti i risultati della Cronologia pixel in una sola volta.
+description: Non usato. In precedenza un callback per restituire tutti i risultati della cronologia dei pixel contemporaneamente.
 MS-HAID: vspixengine.IPixelHistoryCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2c951f3121aae4267fbbb0a40dc83a250c38165c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d207badad9b483435fb177eaec035122413e27e0cc5d5714ed4d0507703bb3f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283206"
 ---
 # <a name="span-idvspixengineipixelhistorycallbackspanipixelhistorycallback-interface"></a><span id="vspixengine.ipixelhistorycallback"></span>Interfaccia IPixelHistoryCallback
 
-Non usato. In precedenza un callback per restituire tutti i risultati della Cronologia pixel in una sola volta.
+Non usato. In precedenza un callback per restituire tutti i risultati della cronologia dei pixel contemporaneamente.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IPixelHistoryCallback** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IPixelHistoryCallback** dispone anche di questi tipi di membri:
+**L'interfaccia IPixelHistoryCallback** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPixelHistoryCallback** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **IPixelHistoryCallback** dispone di questi metodi.
+**L'interfaccia IPixelHistoryCallback** dispone di questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistorycallback-resultcallback-dword-pixelhistoryoperation-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host i risultati della richiesta di Cronologia pixel.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistorycallback-resultcallback-dword-pixelhistoryoperation-arr"><strong>Oggetto ResultCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host i risultati della richiesta di cronologia pixel.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

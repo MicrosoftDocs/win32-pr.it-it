@@ -1,29 +1,29 @@
 ---
-title: Controllo agente
-description: Controllo agente
+title: Controllo dell'agente
+description: Controllo dell'agente
 ms.assetid: f633bbe1-3854-4e93-a953-dbfd997cf718
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8a43c7bc6bd338fd2098ede77438226c9a15143
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93ab154b61b1592e811cf141525a0e6cb472b24bc8e336f20fe228b76c0f970e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118245627"
 ---
-# <a name="the-agent-control"></a>Controllo agente
+# <a name="the-agent-control"></a>Controllo dell'agente
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Il riferimento al controllo Agent consente di accedere agli eventi e alla maggior parte degli altri oggetti supportati da Microsoft Agent. Il controllo Agent espone direttamente anche il proprio set di proprietà.
+Facendo riferimento al controllo Agent è possibile accedere agli eventi e alla maggior parte degli altri oggetti supportati da Microsoft Agent. Il controllo Agent espone anche direttamente il proprio set di proprietà.
 
--   [Metodi di controllo agente](agent-control-methods.md)
+-   [Metodi di controllo dell'agente](agent-control-methods.md)
 -   [Proprietà del controllo agente](agent-control-properties.md)
--   [Eventi del controllo agente](agent-control-events.md)
+-   [Eventi di controllo dell'agente](agent-control-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

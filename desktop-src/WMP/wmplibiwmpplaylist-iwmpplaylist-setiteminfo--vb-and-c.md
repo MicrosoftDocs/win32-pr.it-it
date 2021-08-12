@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cce882d050f1ce7839fe3589fced3a87d9052fec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bcd4bf2d90b90a825942c5634b2b2cde3bb82e7806fe62ecd5e7d298cd191997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568706"
 ---
-# <a name="iwmpplaylistsetiteminfo-method"></a>Metodo IWMPPlaylist:: setItemInfo
+# <a name="iwmpplaylistsetiteminfo-method"></a>Metodo IWMPPlaylist::setItemInfo
 
-Il metodo **setItemInfo** imposta il valore di un attributo della playlist corrente.
+Il **metodo setItemInfo** imposta il valore di un attributo della playlist corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,17 +55,17 @@ Implements IWMPPlaylist.setItemInfo
 
 <dl> <dt>
 
-*bstrName* \[ in\]
+*bstrName* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome dell'attributo.
+**System.String che** rappresenta il nome dell'attributo.
 
 </dd> <dt>
 
-*bstrValue* \[ in\]
+*bstrValue* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che corrisponde al valore dell'attributo.
+**System.String che** rappresenta il valore dell'attributo.
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
-Per il codice di esempio che usa questa proprietà, vedere la proprietà [attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md) .
+Vedere la [proprietà attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md) per il codice di esempio che usa questa proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Per il codice di esempio che usa questa proprietà, vedere la proprietà [attrib
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -98,13 +98,13 @@ Per il codice di esempio che usa questa proprietà, vedere la proprietà [attrib
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. getItemInfo (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-getiteminfo--vb-and-c.md)
+[**IWMPPlaylist.getItemInfo (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-getiteminfo--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

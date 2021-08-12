@@ -1,9 +1,9 @@
 ---
-title: ErrorItem. errorCode
-description: La proprietà errorCode Recupera il codice di errore corrente.
+title: ErrorItem.errorCode
+description: La proprietà errorCode recupera il codice di errore corrente.
 ms.assetid: 1495ec34-0995-40c6-bfd0-f3695784e057
 keywords:
-- Media Player Windows ErrorItem. errorCode
+- ErrorItem.errorCode Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c934b83b28e510f29b84a45b48bde700968c97b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f426bbaf1092b64cdb3578cb681282c9b27d9d2e2e23a69d50f9c065353ad104
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577705"
 ---
-# <a name="erroritemerrorcode"></a>ErrorItem. errorCode
+# <a name="erroritemerrorcode"></a>ErrorItem.errorCode
 
-La proprietà **ErrorCode** Recupera il codice di errore corrente.
+La **proprietà errorCode** recupera il codice di errore corrente.
 
 ``` syntax
 player.error.item(
@@ -33,15 +33,15 @@ player.error.item(
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
-È necessario impostare *le impostazioni*. **enableErrorDialogs** su false se si sceglie di visualizzare i messaggi di errore personalizzati.
+È necessario *impostare* Impostazioni . **enableErrorDialogs** su false se si sceglie di visualizzare messaggi di errore personalizzati.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato *ErrorItem*. **ErrorCode** in un gestore eventi per visualizzare il codice di errore all'utente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene *utilizzato ErrorItem*. **errorCode** in un gestore eventi per visualizzare il codice di errore per l'utente. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -69,7 +69,7 @@ document.write(message);
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ document.write(message);
 [**Oggetto ErrorItem**](erroritem-object.md)
 </dt> <dt>
 
-[**ErrorItem. errorDescription**](erroritem-errordescription.md)
+[**ErrorItem.errorDescription**](erroritem-errordescription.md)
 </dt> </dl>
 
  

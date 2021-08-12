@@ -1,36 +1,36 @@
 ---
-description: Le visualizzazioni della frequenza di aggiornamento variabili richiedono l'abilitazione dello strappo, anche noto come &\# 0034; vsync-off&\# 0034; supporto.
+description: Le frequenze di aggiornamento variabili richiedono che sia abilitato lo tearing, noto anche come &\# 0034;vsync-off&\# 0034; supporto.
 ms.assetid: C5F140DD-5BAF-404A-9253-611831C4D424
-title: Visualizzazione frequenza di aggiornamento variabili
+title: Visualizzazione della frequenza di aggiornamento variabile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da6e658d84c51a6b51bc32855226194b9c22507e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 349592ce49d1008f6337b53c7f524ac7303907f75cd99205fe79bf55988b934b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104225372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118288924"
 ---
-# <a name="variable-refresh-rate-displays"></a>Visualizzazione frequenza di aggiornamento variabili
+# <a name="variable-refresh-rate-displays"></a>Visualizzazione della frequenza di aggiornamento variabile
 
-Le visualizzazioni della frequenza di aggiornamento variabili richiedono l'abilitazione dello *strappo* , noto anche come supporto "VSync".
+Le frequenze di aggiornamento variabili richiedono che sia abilitato lo *tearing.* Questo supporto è noto anche come "vsync-off".
 
--   [Frequenza di aggiornamento variabile Visualizza/vsync off](#variable-refresh-rate-displaysvsync-off)
+-   [Visualizzazione frequenza di aggiornamento variabile/Vsync disattivata](#variable-refresh-rate-displaysvsync-off)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="variable-refresh-rate-displaysvsync-off"></a>Frequenza di aggiornamento variabile Visualizza/vsync off
+## <a name="variable-refresh-rate-displaysvsync-off"></a>Visualizzazione frequenza di aggiornamento variabile/Vsync disattivata
 
-Il supporto per la frequenza di aggiornamento delle variabili viene visualizzato impostando determinati flag durante la creazione e la presentazione della catena di scambio.
+Il supporto per la frequenza di aggiornamento variabile viene ottenuto impostando determinati flag durante la creazione e la presentazione della catena di scambio.
 
-Per usare questa funzionalità, gli utenti dell'app devono trovarsi nei sistemi Windows 10 con [KB3156421](https://support.microsoft.com/kb/3156421) o con l'aggiornamento dell'anniversario installato. La funzionalità funziona in tutte le versioni di Direct3D 11 e 12 usando gli effetti di swap **DXGI \_ swap \_ Effect \_ Flip \_ \** _.
+Per usare questa funzionalità, gli utenti dell'app devono Windows 10 sistemi con [KB3156421](https://support.microsoft.com/kb/3156421) o l'aggiornamento dell'anniversario installato. La funzionalità funziona in tutte le versioni di Direct3D 11 e 12 usando gli effetti di swap **swap DXGI \_ SWAP EFFECT \_ \_ FLIP. \_ \***
 
-Per aggiungere il supporto VSYNC alle app, è possibile fare riferimento a un esempio di esecuzione completa per Direct3D 12, _ *D3D12Fullscreen** (vedere gli [esempi funzionanti](../direct3d12/working-samples.md)). Ci sono anche alcuni punti non esplicitamente denominati nel codice di esempio, ma è necessario prestare attenzione a.
+Per aggiungere il supporto vsync-off alle app, è possibile fare riferimento a un esempio completo per Direct3D 12, **D3D12Fullscreen** (vedere Esempi [di lavoro).](../direct3d12/working-samples.md) Esistono anche alcuni punti non esplicitamente definiti nel codice di esempio, ma è necessario prestare attenzione.
 
--   [**ResizeBuffers**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) (o [**ResizeBuffers1**](/windows/desktop/api/DXGI1_4/nf-dxgi1_4-idxgiswapchain3-resizebuffers1)) deve avere lo stesso flag di creazione della catena di scambio (il \_ flag della \_ catena di scambio DXGI consente lo \_ \_ \_ strappo) passato come [**presente**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) (o [**Present1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)).
--   DXGI \_ present \_ Consenti \_ strappo può essere usato solo con l'intervallo di sincronizzazione 0. È consigliabile passare sempre questo flag di strappo quando si usa l'intervallo di sincronizzazione 0 se [**CheckFeatureSupport**](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) segnala che lo strappo è supportato *e* l'app è in modalità a finestra, inclusa la modalità a schermo intero senza bordo. Per altri dettagli, vedere le costanti [**\_ presenti in DXGI**](dxgi-present.md) .
--   La disabilitazione di vsync non stappare necessariamente la frequenza dei fotogrammi: gli sviluppatori devono anche assicurarsi che le chiamate [**presenti**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) non siano limitate da altri eventi temporali, ad esempio l' `CompositionTarget::Rendering` evento in un'app basata su XAML.
+-   [**ResizeBuffers**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) (o [**ResizeBuffers1)**](/windows/desktop/api/DXGI1_4/nf-dxgi1_4-idxgiswapchain3-resizebuffers1)deve avere lo stesso flag di creazione della catena di scambio (DXGI SWAP CHAIN FLAG ALLOW TEARING) passato come \_ \_ \_ \_ \_ [**Present**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) (o [**Present1).**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)
+-   DXGI PRESENT ALLOW TEARING può essere \_ usato solo con \_ \_ l'intervallo di sincronizzazione 0. È consigliabile passare sempre questo flag di tearing quando si usa l'intervallo di  sincronizzazione 0 se [**CheckFeatureSupport**](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) segnala che lo tearing è supportato e l'app è in modalità a finestre, inclusa la modalità a schermo intero senza bordo. Per altri dettagli, vedere le [**costanti DXGI \_ PRESENT.**](dxgi-present.md)
+-   La disabilitazione di vsync non annulla necessariamente la frequenza dei fotogrammi: gli sviluppatori devono anche assicurarsi che le chiamate Present non siano limitate da altri eventi di temporizzazione (ad esempio l'evento in un'app basata su [](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) `CompositionTarget::Rendering` XAML).
 
-Il codice seguente riassume alcuni elementi chiave che è necessario aggiungere alle app.
+Il codice seguente ricava alcune parti chiave che è necessario aggiungere alle app.
 
 ``` syntax
 //--------------------------------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ ThrowIfFailed(m_swapChain->Present(0, presentFlags));
 
 <dl> <dt>
 
-[Miglioramenti di DXGI 1,5](dxgi-1-5-improvements.md)
+[Miglioramenti di DXGI 1.5](dxgi-1-5-improvements.md)
 </dt> <dt>
 
 [Guida per programmatori per DXGI](dx-graphics-dxgi-overviews.md)

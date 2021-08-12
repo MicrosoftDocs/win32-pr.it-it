@@ -1,7 +1,7 @@
 ---
-description: Imposta le proprietà del materiale mesh nella scena 3D. Utilizzare questo metodo per specificare i parametri di dispersione della sottosuperficie.
+description: Imposta le proprietà del materiale mesh nella scena 3D. Usare questo metodo per specificare i parametri di dispersione sottosurface.
 ms.assetid: 830d73be-bba6-454d-8476-341d291a5b2e
-title: 'Metodo ID3DXPRTEngine:: SetMeshMaterials (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::SetMeshMaterials (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c90ae72cab5d7a20c2c65b940d28a9b57902d2d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7c24ff96b4582e86580774a1f7ac7cd889547018a5b0f138d5e43685c50e1701
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118293385"
 ---
-# <a name="id3dxprtenginesetmeshmaterials-method"></a>Metodo ID3DXPRTEngine:: SetMeshMaterials
+# <a name="id3dxprtenginesetmeshmaterials-method"></a>Metodo ID3DXPRTEngine::SetMeshMaterials
 
-Imposta le proprietà del materiale mesh nella scena 3D. Utilizzare questo metodo per specificare i parametri di dispersione della sottosuperficie.
+Imposta le proprietà del materiale mesh nella scena 3D. Usare questo metodo per specificare i parametri di dispersione sottosurface.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ HRESULT SetMeshMaterials(
 
 <dl> <dt>
 
-*ppMaterials* \[ in\]
+*ppMaterials* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXSHMATERIAL**](d3dxshmaterial.md) \* \***
 
-Indirizzo di un puntatore alle proprietà del materiale mesh desiderato. Vedere [**D3DXSHMATERIAL**](d3dxshmaterial.md).
+Indirizzo di un puntatore alle proprietà del materiale della mesh desiderate. Vedere [**D3DXSHMATERIAL**](d3dxshmaterial.md).
 
 </dd> <dt>
 
-*NumMeshes* \[ in\]
+*NumMeshes* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice della mesh in cui impostare le proprietà del materiale.
+Indice della mesh su cui impostare le proprietà del materiale.
 
 </dd> <dt>
 
-*NumChannels* \[ in\]
+*NumChannels* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di canali dei colori da impostare nella rete. Impostare su 1 per specificare i materiali grigi (R = G = B) o 3 per abilitare gli effetti di emorragia del colore. Se si intende modificare questo parametro, impostare prima di tutto l'albedo usando un altro metodo, ad esempio [**ID3DXPRTEngine:: SetPerTexelAlbedo**](id3dxprtengine--setpertexelalbedo.md) o [**ID3DXPRTEngine:: SetPerVertexAlbedo**](id3dxprtengine--setpervertexalbedo.md).
+Numero di canali di colore da impostare nella mesh. Impostare su 1 per specificare materiali grigi (R = G = B) o 3 per abilitare gli effetti di colorazione. Se si intende modificare questo parametro, impostare prima l'oggetto albedo usando un altro metodo, ad esempio [**ID3DXPRTEngine::SetPerTexelAlbedo**](id3dxprtengine--setpertexelalbedo.md) o [**ID3DXPRTEngine::SetPerVertexAlbedo**](id3dxprtengine--setpervertexalbedo.md).
 
 </dd> <dt>
 
-*bSetAlbedo* \[ in\]
+*bSetAlbedo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se **true**, imposta l'albedo della mesh su ppMaterials, sovrascrivendo tutti i valori dell'albedo di Texel e vertex esistenti. Se **false**, conserva tutti i valori dell'albedo di Texel e vertex esistenti impostati da altri metodi; NumChannels deve corrispondere al parametro NumChannels usato per creare il buffer in [**D3DXCreatePRTBuffer**](d3dxcreateprtbuffer.md) o [**D3DXCreatePRTBufferTex**](d3dxcreateprtbuffertex.md).
+Se **TRUE,** imposta l'albedo della mesh su ppMaterials, sovrascrivendo tutti i valori texel e vertex albedo esistenti. Se **FALSE,** mantiene tutti i valori texel e vertex albedo esistenti impostati da altri metodi; NumChannels deve corrispondere al parametro NumChannels usato per creare il buffer in [**D3DXCreatePRTBuffer**](d3dxcreateprtbuffer.md) o [**D3DXCreatePRTBufferTex.**](d3dxcreateprtbuffertex.md)
 
 </dd> <dt>
 
-*fLengthScale* \[ in\]
+*fLengthScale* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Scala della scena 3D rispetto a un cubo da 1 mm. Utilizzato per i calcoli di dispersione della sottosuperficie.
+Scala della scena 3D rispetto a un cubo di 1 mm. Usato per i calcoli di dispersione sottosurface.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Scala della scena 3D rispetto a un cubo da 1 mm. Utilizzato per i calcoli di dis
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

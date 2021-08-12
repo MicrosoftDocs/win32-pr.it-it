@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà FloatColumnValue. size'
-title: Proprietà FloatColumnValue. size
+description: Altre informazioni sulla proprietà FloatColumnValue.Size
+title: FloatColumnValue.Size - proprietà
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.FloatColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.floatcolumnvalue.size(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 259701daaad1027d06bf4c28c52084dae0b062b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99b937f00666cedbb1157e5d302d65958b396e4bcd40a91c085fc24435e2cf0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118256150"
 ---
-# <a name="floatcolumnvaluesize-property"></a>Proprietà FloatColumnValue. size
+# <a name="floatcolumnvaluesize-property"></a>FloatColumnValue.Size - proprietà
 
-Ottiene la dimensione del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binario e stringa.
+Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binarie e stringa.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -67,4 +67,4 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Membri di FloatColumnValue](./floatcolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

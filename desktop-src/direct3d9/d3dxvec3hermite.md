@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fd45851108d3700446a2b7f27aa00a4cc61ca39b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b35c99ac6127f1d0b74598fd53465709b45f533c6fbcbd7b898bb572fcc6a941
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297773"
 ---
 # <a name="d3dxvec3hermite-function-d3dx9mathh"></a>Funzione D3DXVec3Hermite (D3dx9math.h)
 
-Esegue un'interpolazione spline hermite, usando i vettori 3D specificati.
+Esegue un'interpolazione spline hermite usando i vettori 3D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta il ri
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore di posizione.
+Puntatore a una struttura [**D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore di posizione.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, un vetto
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore tangente.
+Puntatore a una struttura [**D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore tangente.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, un vetto
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore di posizione.
+Puntatore a una struttura [**D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore di posizione.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, un vetto
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore tangente.
+Puntatore a una struttura [**D3DXVECTOR3 di**](d3dxvector3.md) origine, un vettore tangente.
 
 </dd> <dt>
 
@@ -103,15 +103,15 @@ Fattore di ponderazione. Vedere la sezione Osservazioni.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta il risultato dell'interpolazione spline hermite.
+Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che è il risultato dell'interpolazione spline hermite.
 
 ## <a name="remarks"></a>Commenti
 
 La **funzione D3DXVec3Hermite** interpola da (positionA, tangentA) a (positionB, tangentB) usando l'interpolazione spline hermite.
 
-L'interpolazione spline è una generalizzazione della spline semplice e semplice. La rampa è una funzione di Q(s) con le proprietà seguenti.
+L'interpolazione spline è una generalizzazione della spline ease-in e ease-out. La rampa è una funzione di Q(s) con le proprietà seguenti.
 
-Q(s) = As i + Bs più Cs + D (e pertanto Q'(s) = 3As più 2Bs + C)
+Q(s) = As² + Bs² + Cs + D (e quindi, Q(s) = 3As² + 2Bs + C)
 
 a) Q(0) = v1, quindi Q'(0) = t1
 
@@ -139,13 +139,13 @@ D = v1
 
 Il risultato è il seguente:
 
-Q(s) = (2v1 - 2v2 + t2 + t1)s ° + (3v2 - 3v1 - 2t1 - t2)s più + t1s + v1
+Q(s) = (2v1 - 2v2 + t2 + t1)s³ + (3v2 - 3v1 - 2t1 - t2)s² + t1s + v1
 
-Che può essere ridisposto come:
+Che può essere ridisporto come:
 
-Q(s) = (2s i - 3s più 1)v1 + (-2s più 3s 2)v2 + (sZIONI - 2s più s)t1 + (s ° - s più)t2
+Q(s) = (2s² - 3s² + 1)v1 + (-2s² + 3s²)v2 + (s³ - 2s² + s)t1 + (s² - s²)t2
 
-Le spline ermite sono utili per controllare l'animazione perché la curva attraversa tutti i punti di controllo. Inoltre, poiché la posizione e la tangente vengono specificate in modo esplicito alle estremità di ogni segmento, è facile creare una curva continua C2, purché la posizione iniziale e la tangente corrispondano ai valori finali dell'ultimo segmento.
+Le spline ermeti sono utili per controllare l'animazione perché la curva attraversa tutti i punti di controllo. Inoltre, poiché la posizione e la tangente vengono specificate in modo esplicito alle estremità di ogni segmento, è facile creare una curva continua C2, purché la posizione iniziale e la tangente corrispondano ai valori finali dell'ultimo segmento.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXVec3Hermite** può essere usata come parametro per un'altra funzione.
 

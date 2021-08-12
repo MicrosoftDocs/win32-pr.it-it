@@ -1,6 +1,6 @@
 ---
 title: Attributo RatingOrg
-description: L'attributo RatingOrg è il nome del provider del valore rating.
+description: L'attributo RatingOrg è il nome del provider del valore di classificazione.
 ms.assetid: 166ffd00-e814-49fd-83d9-b6e931259b41
 keywords:
 - Attributo RatingOrg Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f51c06fec5e360793d5314f5fa9904c8d03850
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cbeb5e83b0c572fe09cad987e63712a57fd9bde1e059e5d3aeacf1e41f4316a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570494"
 ---
 # <a name="ratingorg-attribute"></a>Attributo RatingOrg
 
-L'attributo **RatingOrg** è il nome del provider del valore rating.
+**L'attributo RatingOrg** è il nome del provider del valore di classificazione.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,7 +31,7 @@ L'attributo **RatingOrg** è il nome del provider del valore rating.
 
 Questo attributo viene archiviato solo nella cache della libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

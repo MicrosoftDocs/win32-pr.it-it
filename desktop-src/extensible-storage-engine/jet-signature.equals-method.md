@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_SIGNATURE. Equals (metodo)'
-title: JET_SIGNATURE. Equals (metodo)
+description: 'Altre informazioni su: JET_SIGNATURE. Metodo Equals'
+title: JET_SIGNATURE. Metodo Equals
 TOCTitle: 'Equals method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_SIGNATURE.Equals
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_signature.equals(v=EXCHG.10)
@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0389ddf4ff5e7efd86fef09d428e1756eb72f161
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80203a222c2cdf1c36df47f8d95a4792a6723e9478d52c634b1a13d01d5dd436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253227"
 ---
-# <a name="jet_signatureequals-method"></a>JET_SIGNATURE. Equals (metodo)
+# <a name="jet_signatureequals-method"></a>JET_SIGNATURE. Metodo Equals
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -39,12 +39,12 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh557517(v=exchg.10).md">Equals (oggetto)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override di <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.</td>
+<td><a href="hh557517(v=exchg.10).md">Equals(Object)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">di ValueType.Equals(Object)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh564920(v=exchg.10).md">Uguale a (JET_SIGNATURE)</a></td>
+<td><a href="hh564920(v=exchg.10).md">Equals(JET_SIGNATURE)</a></td>
 <td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_SIGNATURE](./jet-signature-structure2.md)
+[JET_SIGNATURE struttura](./jet-signature-structure2.md)
 
-[Membri JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE membri](./jet-signature-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

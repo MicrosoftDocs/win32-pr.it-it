@@ -1,22 +1,22 @@
 ---
-description: Quando si legge e si scrive direttamente l'intestazione binaria, è necessario utilizzare le seguenti definizioni.
+description: Le definizioni seguenti devono essere usate durante la lettura e la scrittura diretta dell'intestazione binaria.
 ms.assetid: 19c36f94-8088-417d-867d-3a02912087dc
 title: Intestazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cfaa589382812cfd752d47cc8b95cda0139385b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: baaed7884cef465110167d3e235197c534e48d19eb47ee308c0650bd86773ea3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297071"
 ---
 # <a name="header"></a>Intestazione
 
-Quando si legge e si scrive direttamente l'intestazione binaria, è necessario utilizzare le seguenti definizioni.
+Le definizioni seguenti devono essere usate durante la lettura e la scrittura diretta dell'intestazione binaria.
 
 > [!Note]  
-> I flussi di dati compressi non sono attualmente supportati e pertanto non sono descritti in dettaglio.
+> I flussi di dati compressi non sono attualmente supportati e pertanto non sono dettagliati qui.
 
  
 

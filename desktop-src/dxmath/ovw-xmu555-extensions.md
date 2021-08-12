@@ -1,19 +1,19 @@
 ---
-description: XMU555 descrive un vettore 4D con i componenti x, y e z rappresentati come valori Unsigned Integer a 5 bit e il componente w come valore intero a 1 bit.
+description: XMU555 descrive un vettore 4D con componenti x-, y-e z- rappresentati come valori interi senza segno a 5 bit e il componente w come valore intero a 1 bit.
 ms.assetid: 89ca4ee3-ab6a-403a-9cd9-18de02d285ac
 title: Estensioni XMU555
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd00064b11e678cee59244da3953618a24b29253
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6967a93f6350abaddb2b366a9927a81ce8fe6b4e4e4ff891a983ba9f6379f55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277708"
 ---
 # <a name="xmu555-extensions"></a>Estensioni XMU555
 
-[**XMU555**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu555) descrive un vettore 4D con i componenti x, y e z rappresentati come valori Unsigned Integer a 5 bit e il componente w come valore intero a 1 bit.
+[**XMU555**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu555) descrive un vettore 4D con componenti x-, y-e z- rappresentati come valori interi senza segno a 5 bit e il componente w come valore intero a 1 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

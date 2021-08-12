@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCube:: TextureCube GatherGreen'
-description: "Restituisce i componenti verdi dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare. | Metodi di TextureCube:: TextureCube GatherGreen"
+title: Metodi Di TextureCube::TextureCube GatherGreen
+description: Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Metodi Di TextureCube::TextureCube GatherGreen
 ms.assetid: F70AA57B-D54C-4F78-ABD1-7F8D3AD44997
 keywords:
 - Metodi GatherGreen HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: b0eaac705ce15b0174903cc87e630b14df28becb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: acc46aec3c248fc89c69eba9f4a820e1b3c3c513a7ac36afa36b3f48aac521d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283700"
 ---
-# <a name="texturecubegathergreen-methods"></a>Metodi TextureCube:: GatherGreen
+# <a name="texturecubegathergreen-methods"></a>Metodi textureCube::GatherGreen
 
-Restituisce i componenti verdi dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.
+Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Restituisce i componenti verdi dei quattro valori Texel che verrebbero usati in 
 
 | Metodo                                                               | Descrizione                                                                                                                                       |
 |:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherGreen (S, float, uint)**](tcube-gathergreen-s-float-uint-.md)  | Restituisce i componenti verdi dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare, insieme allo stato di mapping dei riquadri.<br/> |
+| [**GatherGreen(S,float,uint)**](tcube-gathergreen-s-float-uint-.md)  | Restituisce i componenti verdi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
 
 
 

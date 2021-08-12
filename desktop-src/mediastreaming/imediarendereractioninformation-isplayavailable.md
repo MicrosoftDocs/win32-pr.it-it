@@ -1,11 +1,11 @@
 ---
 title: Metodo IMediaRendererActionInformation IsPlayAvailable
-description: Recupera un valore che indica se ricevitore sta attualmente accettando i metodi PlayAsync e PlayAtSpeedAsync.
+description: Recupera un valore che indica se la dmr sta attualmente accettando i metodi PlayAsync e PlayAtSpeedAsync.
 ms.assetid: 969C55FA-872D-4063-B85C-573C8DA5593C
 keywords:
-- API di streaming multimediale del metodo IsPlayAvailable
-- API di streaming multimediale del metodo IsPlayAvailable, interfaccia IMediaRendererActionInformation
-- API di streaming multimediale dell'interfaccia IMediaRendererActionInformation, metodo IsPlayAvailable
+- Metodo IsPlayAvailable API Streaming multimediale
+- Metodo IsPlayAvailable API Streaming multimediale, interfaccia IMediaRendererActionInformation
+- Interfaccia IMediaRendererActionInformation API Streaming multimediale , metodo IsPlayAvailable
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 87fa3a2005772a4d948bafe32d2a0e10cc5a6914
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 912e5478ef1d9bd7114d198a9671d38ba7b721c9dbd82d2a8080b5a7876e76cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235846"
 ---
-# <a name="imediarendereractioninformationisplayavailable-method"></a>Metodo IMediaRendererActionInformation:: IsPlayAvailable
+# <a name="imediarendereractioninformationisplayavailable-method"></a>Metodo IMediaRendererActionInformation::IsPlayAvailable
 
-Recupera un valore che indica se ricevitore sta attualmente accettando i metodi [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) .
+Recupera un valore che indica se la dmr sta attualmente accettando i metodi [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ HRESULT IsPlayAvailable(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Valore booleano che è **true** se ricevitore sta attualmente accettando i metodi accepting the [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) e **false** in caso contrario.
+Valore booleano **True se** la dmr accetta attualmente i metodi [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) e **False** in caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

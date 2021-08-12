@@ -1,11 +1,11 @@
 ---
-title: Proprietà ActiveBasicDevice IsImageSupported (PlayToDevice. h)
+title: Proprietà ActiveBasicDevice IsImageSupported (PlayToDevice.h)
 description: Ottiene un valore che indica se il dispositivo supporta le immagini.
 ms.assetid: FC53B87C-D739-4AD4-9DD3-415AC8692224
 keywords:
-- API di streaming multimediale della proprietà IsImageSupported
-- API di streaming multimediale della proprietà IsImageSupported, interfaccia ActiveBasicDevice
-- API di streaming multimediale dell'interfaccia ActiveBasicDevice, proprietà IsImageSupported
+- Proprietà IsImageSupported API Streaming multimediale
+- Proprietà IsImageSupported API Streaming multimediale, interfaccia ActiveBasicDevice
+- Interfaccia ActiveBasicDevice API Di streaming multimediale, proprietà IsImageSupported
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2e90f51d2dd59ffec8221787b9ee7c247536abb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a147c5156f07c6cc6461cafcf8dc778013a7eb3048d1428f854b844d24f5642a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236712"
 ---
-# <a name="activebasicdeviceisimagesupported-property"></a>Proprietà ActiveBasicDevice:: IsImageSupported
+# <a name="activebasicdeviceisimagesupported-property"></a>ActiveBasicDevice::IsImageSupported - proprietà
 
 Ottiene un valore che indica se il dispositivo supporta le immagini.
 
@@ -45,7 +45,7 @@ HRESULT get_IsImageSupported(
 
 Puntatore a un **valore booleano** che indica se il dispositivo supporta le immagini.
 
-**true** se il dispositivo supporta le immagini; in caso contrario, **false**.
+**true** se il dispositivo supporta le immagini; in caso contrario, **false.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,10 +53,10 @@ Puntatore a un **valore booleano** che indica se il dispositivo supporta le imma
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

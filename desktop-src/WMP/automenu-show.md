@@ -1,9 +1,9 @@
 ---
-title: MENU di scelta rapida.
-description: Il metodo Show Visualizza il pannello di accesso rapido.
+title: AUTOMENU.show
+description: Il metodo show visualizza l'Pannello di accesso.
 ms.assetid: c4f2b106-180a-4526-af9b-6ce54c083578
 keywords:
-- MENU di scelta rapida. Mostra Media Player Windows
+- AUTOMENU.show Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cf3085065f10225c98071d5259480eb58216e75
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 48f160ca3433e42ee78c973312439b3e269fc49bf10e6dfafb93ae4e6f17e99f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582783"
 ---
-# <a name="automenushow"></a>MENU di scelta rapida.
+# <a name="automenushow"></a>AUTOMENU.show
 
-Il metodo **show** Visualizza il **Pannello di accesso rapido**.
+Il **metodo show** visualizza **l'Pannello di accesso**.
 
 ``` syntax
         elementID.show("Play")
@@ -32,7 +32,7 @@ Il metodo **show** Visualizza il **Pannello di accesso rapido**.
 
 <dl> <dt>
 
-<span id="_Play_"></span><span id="_play_"></span><span id="_PLAY_"></span>*Play*
+<span id="_Play_"></span><span id="_play_"></span><span id="_PLAY_"></span>*"Play"*
 </dt> <dd>
 
 Specificare sempre questo valore.
@@ -45,7 +45,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il **Pannello di accesso rapido** viene visualizzato nel percorso specificato dagli attributi **Left** e **Top** dell'elemento **automenu** .
+Il **riquadro Pannello di accesso** visualizzato nella posizione specificata dagli **attributi** sinistro e **superiore** dell'elemento **AUTOMENU.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ Il **Pannello di accesso rapido** viene visualizzato nel percorso specificato da
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -61,7 +61,7 @@ Il **Pannello di accesso rapido** viene visualizzato nel percorso specificato da
 
 <dl> <dt>
 
-[**Elemento del MENU di scelta rapida**](automenu-element.md)
+[**Elemento AUTOMENU**](automenu-element.md)
 </dt> </dl>
 
  

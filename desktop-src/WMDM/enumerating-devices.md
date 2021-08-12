@@ -1,36 +1,36 @@
 ---
-title: Enumerazione di dispositivi Windows Media Device Manager
-description: Informazioni sull'enumerazione dei dispositivi rilevati da Gestione dispositivi di Windows Media tramite un'interfaccia di enumerazione.
+title: Enumerazione di Windows dispositivi di Gestione dispositivi multimediali
+description: Informazioni sull'enumerazione dei dispositivi rilevati Windows Gestione dispositivi multimediali tramite un'interfaccia di enumerazione.
 ms.assetid: c5935681-b530-4446-a026-7ddc74084d23
 keywords:
-- Gestione dispositivi di Windows Media, enumerazione dei dispositivi
+- Windows Gestione dispositivi multimediali, enumerazione dei dispositivi
 - Gestione dispositivi, enumerazione dei dispositivi
-- guida alla programmazione, enumerazione di dispositivi
+- guida per programmatori, enumerazione di dispositivi
 - applicazioni desktop, enumerazione di dispositivi
-- creazione di applicazioni di Gestione dispositivi di Windows Media, enumerazione di dispositivi
+- creazione Windows applicazioni di Gestione dispositivi multimediali, enumerazione dei dispositivi
 - enumerazione di dispositivi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94653d59b0880e9d52f43b34e21522a220d39beb
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 0009e2206bf7c97839d890d00c08a8e1806196efee9af95db72336b95d8b2cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584659"
 ---
-# <a name="enumerating-windows-media-device-manager-devices"></a>Enumerazione di dispositivi Windows Media Device Manager
+# <a name="enumerating-windows-media-device-manager-devices"></a>Enumerazione di Windows dispositivi di Gestione dispositivi multimediali
 
-Dopo aver autenticato un'applicazione, è possibile iniziare a enumerare i dispositivi rilevati da Gestione dispositivi di Windows Media. L'enumerazione viene eseguita usando un'interfaccia di enumerazione, [**IWMDMEnumDevice,**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmenumdevice)ottenuta usando [**IWMDeviceManager2::EnumDevices2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager2-enumdevices2) o [**IWMDeviceManager::EnumDevices.**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager-enumdevices) Se supportato, usare il metodo **EnumDevices2,** perché la versione precedente ha restituito solo interfacce legacy nei dispositivi, mentre la nuova versione restituisce sia le interfacce legacy che quelle nuove.
+Dopo aver autenticato un'applicazione, è possibile iniziare a enumerare i dispositivi rilevati Windows Gestione dispositivi multimediali. L'enumerazione viene eseguita usando un'interfaccia di [**enumerazione, IWMDMEnumDevice**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmenumdevice), ottenuta usando [**IWMDeviceManager2::EnumDevices2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager2-enumdevices2) o [**IWMDeviceManager::EnumDevices**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager-enumdevices). Se supportato, usare il metodo **EnumDevices2,** perché la versione precedente ha restituito solo interfacce legacy nei dispositivi, mentre la nuova versione restituisce sia le interfacce legacy che quelle nuove.
 
-Prima di ottenere un enumeratore, è necessario decidere quale visualizzazione di enumerazione usare. Alcuni dispositivi espongono ogni archiviazione come dispositivo diverso. Ad esempio, due schede di memoria flash in un dispositivo verranno enumerate come se fossero dispositivi separati. È possibile specificare che tutte le risorse di archiviazione in un dispositivo vengono enumerate insieme come un singolo dispositivo. È possibile impostare questa preferenza una sola volta nell'applicazione. Se si vuole modificarlo, è necessario arrestare l'applicazione e riavviarla. Si noti tuttavia che i dispositivi legacy talvolta ignorano una richiesta per enumerare le risorse di archiviazione separate come singolo dispositivo e continuare a enumerarle separatamente.
+Prima di ottenere un enumeratore, è necessario decidere quale visualizzazione di enumerazione usare. Alcuni dispositivi espongono ogni archiviazione come dispositivo diverso. Ad esempio, due schede di memoria flash in un dispositivo verranno enumerate come se fossero dispositivi separati. È possibile specificare che tutte le risorse di archiviazione in un dispositivo vengono enumerate insieme come singolo dispositivo. È possibile impostare questa preferenza una sola volta nell'applicazione. Se si vuole modificarlo, è necessario arrestare l'applicazione e riavviarla. Si noti tuttavia che i dispositivi legacy talvolta ignorano una richiesta per enumerare le risorse di archiviazione separate dei dispositivi come singolo dispositivo e continuano a enumerarle separatamente.
 
 La procedura seguente illustra come enumerare i dispositivi connessi:
 
-1.  Impostare la preferenza di enumerazione del dispositivo [**usando IWMDeviceManager3::SetDeviceEnumPreference**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager3-setdeviceenumpreference). Se questo metodo non viene chiamato, il metodo predefinito è visualizzare le risorse di archiviazione come dispositivi separati. Per determinare se i singoli "dispositivi" sono effettivamente archivi nello stesso dispositivo, chiamare [**IWMDMDevice2::GetCanonicalName**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice2-getcanonicalname); Le risorse di archiviazione dello stesso dispositivo restituiranno valori identici, ad eccezione della cifra finale dopo l'ultimo segno "$".
-2.  Eseguire una query [**per IWMDeviceManager**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager) o [**IWMDeviceManager2**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager2)e quindi chiamare [**IWMDeviceManager2::EnumDevices2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager2-enumdevices2) per ottenere l'interfaccia dell'enumeratore del [**dispositivo, IWMDMEnumDevice.**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmenumdevice) Se supportato, usare **EnumDevices2,** che è più efficiente, perché la versione precedente potrebbe non restituire dispositivi MTP.
-3.  Chiamare il [**metodo IWMDMEnumDevices::Next**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumdevice-next) per recuperare uno o più dispositivi alla volta. Continuare a chiamare questo metodo fino a quando il metodo non restituisce S \_ FALSE o un messaggio di errore. Se si recupera un solo dispositivo alla volta, non è necessario allocare un array per contenere i dispositivi.
+1.  Impostare la preferenza di enumerazione del dispositivo [**usando IWMDeviceManager3::SetDeviceEnumPreference**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager3-setdeviceenumpreference). Se questo metodo non viene chiamato, il metodo predefinito è visualizzare le risorse di archiviazione come dispositivi separati. Per determinare se i singoli "dispositivi" sono effettivamente risorse di archiviazione nello stesso dispositivo, chiamare [**IWMDMDevice2::GetCanonicalName**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice2-getcanonicalname); Le risorse di archiviazione dello stesso dispositivo restituiranno valori identici, ad eccezione della cifra finale dopo l'ultimo segno "$".
+2.  Eseguire una query [**per IWMDeviceManager**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager) o [**IWMDeviceManager2**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager2)e quindi chiamare [**IWMDeviceManager2::EnumDevices2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdevicemanager2-enumdevices2) per ottenere l'interfaccia dell'enumeratore del [**dispositivo, IWMDMEnumDevice**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmenumdevice). Se supportato, usare **EnumDevices2**, che è più efficiente, perché la versione precedente potrebbe non restituire dispositivi MTP.
+3.  Chiamare il [**metodo IWMDMEnumDevices::Next**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmenumdevice-next) per recuperare uno o più dispositivi alla volta. Continuare a chiamare questo metodo finché il metodo non restituisce S \_ FALSE o un messaggio di errore. Se si recupera un solo dispositivo alla volta, non è necessario allocare una matrice per contenere i dispositivi.
 
-Poiché gli utenti possono collegare o rimuovere dispositivi dal computer mentre l'applicazione è in esecuzione, è buona idea implementare la notifica della connessione o della rimozione del dispositivo. Questa operazione viene eseguita implementando [**l'interfaccia IWMDMNotification**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmnotification) e registrarla. Per altre informazioni, vedere [Abilitazione delle notifiche.](enabling-notifications.md)
+Poiché gli utenti possono collegare o rimuovere dispositivi dal computer mentre l'applicazione è in esecuzione, è buona idea implementare la notifica della connessione o della rimozione del dispositivo. A tale scopo, implementare [**l'interfaccia IWMDMNotification**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmnotification) e registrarla. Per altre informazioni, vedere Abilitazione [delle notifiche](enabling-notifications.md).
 
 Il codice C++ seguente enumera i dispositivi e richiede informazioni su ogni dispositivo.
 
@@ -184,7 +184,7 @@ HRESULT CWMDMController::EnumDevices()
 
 <dl> <dt>
 
-[**Creazione di un'applicazione di Gestione dispositivi di Windows Media**](creating-a-windows-media-device-manager-application.md)
+[**Creazione di un'Windows di Gestione dispositivi multimediali**](creating-a-windows-media-device-manager-application.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Elemento querySet
-description: L'elemento querySet contiene elementi che definiscono quali elementi multimediali verranno selezionati dalla libreria.
+description: L'elemento querySet contiene elementi che definiscono gli elementi multimediali che verranno selezionati dalla libreria.
 ms.assetid: 18b5a509-a56b-4fd1-812f-60b8efd5136b
 keywords:
-- Finestra elementi querySet Media Player
+- Elemento querySet Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4971c2a7f601132640d7654a95dd288f1740a467
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb157bb30c2e728b7840fe7021a2a4fcacc317b10eb6778b5702d7d2277c4a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570614"
 ---
 # <a name="queryset-element"></a>Elemento querySet
 
-L'elemento **querySet** contiene elementi che definiscono quali elementi multimediali verranno selezionati dalla libreria.
+**L'elemento querySet** contiene elementi che definiscono gli elementi multimediali che verranno selezionati dalla libreria.
 
 ``` syntax
 <querySet>
@@ -48,7 +48,7 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **querySet** specifica quali elementi multimediali devono essere selezionati dalla libreria, senza considerare le dimensioni del set di risultati. L'elemento **Filter** , invece, limita le dimensioni del set di risultati.
+**L'elemento querySet** specifica quali elementi multimediali devono essere selezionati dalla libreria, indipendentemente dalle dimensioni del set di risultati. **L'elemento** filtro, d'altra parte, limita le dimensioni del set di risultati.
 
 ## <a name="examples"></a>Esempio
 
@@ -79,7 +79,7 @@ L'elemento **querySet** specifica quali elementi multimediali devono essere sele
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/> |
 
 
 
@@ -90,10 +90,10 @@ L'elemento **querySet** specifica quali elementi multimediali devono essere sele
 [**Elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Filter-elemento**](filter-element.md)
+[**Elemento filter**](filter-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
 [**Elemento smartPlaylist**](smartplaylist-element.md)
@@ -102,7 +102,7 @@ L'elemento **querySet** specifica quali elementi multimediali devono essere sele
 [**Elemento sourceFilter**](sourcefilter-element.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

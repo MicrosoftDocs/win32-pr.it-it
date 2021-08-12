@@ -1,7 +1,7 @@
 ---
-description: "Forzare l'invio di tutti gli sprite in batch al dispositivo. Gli Stati del dispositivo rimangono invariati dopo l'ultima chiamata a ID3DX10Sprite:: Begin. L'elenco degli sprite in batch viene quindi cancellato."
+description: Forzare l'invio di tutti gli sprite in batch al dispositivo. Gli stati del dispositivo rimangono invariati dopo l'ultima chiamata a ID3DX10Sprite::Begin. L'elenco degli sprite in batch viene quindi cancellato.
 ms.assetid: ae03e17c-1a14-4a41-a9a9-8757d2f7a81d
-title: 'Metodo ID3DX10Sprite:: Flush (D3DX10. h)'
+title: Metodo ID3DX10Sprite::Flush (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 748be56a7b89223db1957b9c0144143edd90ee4c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d74c96ebab8b1e174a44124aaa53b714a9ea860fc9fa2ea5ae3e25c9779aae01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302244"
 ---
-# <a name="id3dx10spriteflush-method"></a>Metodo ID3DX10Sprite:: Flush
+# <a name="id3dx10spriteflush-method"></a>Metodo ID3DX10Sprite::Flush
 
-Forzare l'invio di tutti gli sprite in batch al dispositivo. Gli Stati del dispositivo rimangono invariati dopo l'ultima chiamata a ID3DX10Sprite:: Begin. L'elenco degli sprite in batch viene quindi cancellato.
+Forzare l'invio di tutti gli sprite in batch al dispositivo. Gli stati del dispositivo rimangono invariati dopo l'ultima chiamata a ID3DX10Sprite::Begin. L'elenco degli sprite in batch viene quindi cancellato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

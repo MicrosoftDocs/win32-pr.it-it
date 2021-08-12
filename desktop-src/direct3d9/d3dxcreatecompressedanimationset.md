@@ -1,7 +1,7 @@
 ---
-description: Crea un'interfaccia del set di animazioni con fotogrammi chiave ID3DXCompressedAnimationSet che archivia i dati del fotogramma chiave in un formato compresso.
+description: Crea un'interfaccia del set di animazioni con fotogrammi chiave ID3DXCompressedAnimationSet che archivia i dati dei fotogrammi chiave in un formato compresso.
 ms.assetid: c3f97d35-5654-4d85-a337-d77819ce3874
-title: Funzione D3DXCreateCompressedAnimationSet (D3dx9anim. h)
+title: Funzione D3DXCreateCompressedAnimationSet (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8aab23466cecf43a50a4136eb0b3d93a271dcb0e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2acca9d1b697bb9b06b47aa75948ca74ec00cc7ecb919334c01cf874293cb495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299286"
 ---
-# <a name="d3dxcreatecompressedanimationset-function"></a>D3DXCreateCompressedAnimationSet (funzione)
+# <a name="d3dxcreatecompressedanimationset-function"></a>Funzione D3DXCreateCompressedAnimationSet
 
-Crea un'interfaccia del set di animazioni con fotogrammi chiave [**ID3DXCompressedAnimationSet**](id3dxcompressedanimationset.md) che archivia i dati del fotogramma chiave in un formato compresso.
+Crea un'interfaccia del set di animazioni con fotogrammi chiave [**ID3DXCompressedAnimationSet**](id3dxcompressedanimationset.md) che archivia i dati dei fotogrammi chiave in un formato compresso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT D3DXCreateCompressedAnimationSet(
 
 <dl> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -55,25 +55,25 @@ Puntatore al nome del set di animazioni.
 
 </dd> <dt>
 
-*TicksPerSecond* \[ in\]
+*TicksPerSecond* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Numero di cicli del fotogramma chiave che intercorrono al secondo.
+Numero di tick dei fotogrammi chiave trascorsi al secondo.
 
 </dd> <dt>
 
-*Riproduzione* \[ in esecuzione in\]
+*Riproduzione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXPLAYBACK \_**](./d3dxplayback-type.md)**
+Tipo: **[ **D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md)**
 
-Tipo del ciclo di riproduzione del set di animazioni. Vedere [**D3DXPLAYBACK \_ Type**](./d3dxplayback-type.md).
+Tipo di ciclo di riproduzione del set di animazioni. Vedere [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md).
 
 </dd> <dt>
 
-*pCompressedData* \[ in\]
+*pCompressedData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)**
@@ -82,30 +82,30 @@ Puntatore al buffer [**ID3DXBuffer**](id3dxbuffer.md) che archivia il set di ani
 
 </dd> <dt>
 
-*NumCallbackKeys* \[ in\]
+*NumCallbackKeys* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di chiavi di callback.
 
 </dd> <dt>
 
-*pCallKeys* \[ in\]
+*pCallKeys* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**LPD3DXKEY \_ callback**](d3dxkey-callback.md) \***
+Tipo: **const [**LPD3DXKEY \_ CALLBACK**](d3dxkey-callback.md) \***
 
-Puntatore a una struttura di [**\_ callback D3DXKEY**](d3dxkey-callback.md) che archivia i dati di callback utente.
+Puntatore a una [**struttura CALLBACK D3DXKEY \_**](d3dxkey-callback.md) che archivia i dati di callback dell'utente.
 
 </dd> <dt>
 
-*ppAnimationSet* \[ out\]
+*ppAnimationSet* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXCOMPRESSEDANIMATIONSET**](id3dxcompressedanimationset.md)\***
 
-Indirizzo di un puntatore all'interfaccia [**ID3DXCompressedAnimationSet**](id3dxcompressedanimationset.md) che archivia i dati del set di animazioni con fotogrammi chiave in un formato compresso.
+Indirizzo di un puntatore [**all'interfaccia ID3DXCompressedAnimationSet**](id3dxcompressedanimationset.md) che archivia i dati del set di animazioni con fotogrammi chiave in un formato compresso.
 
 </dd> </dl>
 
@@ -113,7 +113,7 @@ Indirizzo di un puntatore all'interfaccia [**ID3DXCompressedAnimationSet**](id3d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è S \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,8 +121,8 @@ Se la funzione ha esito positivo, il valore restituito è \_ OK. Se la funzione 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

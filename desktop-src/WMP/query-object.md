@@ -1,9 +1,9 @@
 ---
-title: Oggetto query
-description: L'oggetto query rappresenta una query composta.
+title: Oggetto Query
+description: L'oggetto Query rappresenta una query composta.
 ms.assetid: a0094897-a7f5-40ba-af49-e5a5a8fcb762
 keywords:
-- Media Player di Windows oggetto query
+- Query Object Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,41 +13,41 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b9ab64f76243065e28ebf83eedb0845f30642751
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 4c0b6684722478ef913a5d03d5e50c2f7d76fc692696661357b970388397b494
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104398066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570642"
 ---
-# <a name="query-object"></a>Oggetto query
+# <a name="query-object"></a>Oggetto Query
 
-L'oggetto **query** rappresenta una query composta.
+**L'oggetto Query** rappresenta una query composta.
 
-L'oggetto **query** supporta i metodi seguenti:
+**L'oggetto Query** supporta i metodi seguenti.
 
 
 
 | Metodo                                     | Descrizione                                               |
 |--------------------------------------------|-----------------------------------------------------------|
-| [addCondition](query-addcondition.md)     | Aggiunge una condizione all'oggetto **query** utilizzando la logica e. |
-| [beginNextGroup](query-beginnextgroup.md) | Inizia un nuovo gruppo di condizioni.                             |
+| [addCondition](query-addcondition.md)     | Aggiunge una condizione **all'oggetto Query** usando la logica AND. |
+| [beginNextGroup](query-beginnextgroup.md) | Avvia un nuovo gruppo di condizioni.                             |
 
 
 
- 
+ 
 
-Ai fini dell'illustrazione, Player. mediacollection. createQuery () viene usato per rappresentare l'oggetto **query** nelle sezioni della sintassi di riferimento.
+A scopo illustrativo, player.mediaCollection.createQuery() viene usato per rappresentare l'oggetto **Query** nelle sezioni della sintassi di riferimento.
 
--   [Informazioni sull'oggetto query](about-the-query-object.md)
--   [Mediacollection. createQuery](mediacollection-createquery.md)
--   [Mediacollection. getPlaylistByQuery](mediacollection-getplaylistbyquery.md)
--   [Mediacollection. getStringCollectionByQuery](mediacollection-getstringcollectionbyquery.md)
--   [Riferimento del modello a oggetti per lo scripting](object-model-reference-for-scripting.md)
+-   [Informazioni sull'oggetto Query](about-the-query-object.md)
+-   [MediaCollection.createQuery](mediacollection-createquery.md)
+-   [MediaCollection.getPlaylistByQuery](mediacollection-getplaylistbyquery.md)
+-   [MediaCollection.getStringCollectionByQuery](mediacollection-getstringcollectionbyquery.md)
+-   [Informazioni di riferimento sul modello a oggetti per lo scripting](object-model-reference-for-scripting.md)
 
- 
+ 
 
- 
+ 
 
 
 

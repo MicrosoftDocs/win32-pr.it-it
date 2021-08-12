@@ -4,18 +4,18 @@ description: Fornire un buon ripristino degli errori
 ms.assetid: 48e00638-9274-49db-93ec-ed444f526441
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a20a3d203ab0fcd93a6f4645be4af44b049f3cd
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 486e6db4365e9a279c844e7637ca3281a66b51a2e47d6d2d74d374ab4c55f146
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118246921"
 ---
 # <a name="provide-good-error-recovery"></a>Fornire un buon ripristino degli errori
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Come per qualsiasi interfaccia ben progettata, il processo interattivo deve ridurre al minimo le circostanze che possono causare errori. Tuttavia, è raramente possibile eliminare tutti gli errori, quindi il supporto di un buon ripristino degli errori è essenziale per mantenere l'attendibilità e l'interesse dell'utente. In generale, il ripristino degli errori comporta il rilevamento di un errore, la determinazione della causa e la definizione di un modo per risolvere l'errore. Gli utenti rispondono meglio alle interfacce cooperativi che collaborano con l'utente per eseguire un'attività.
+Come per qualsiasi interfaccia ben progettata, il processo interattivo deve ridurre al minimo le circostanze che possono causare errori. Tuttavia, è raramente possibile eliminare tutti gli errori, quindi il supporto di un buon ripristino degli errori è essenziale per mantenere l'attendibilità e l'interesse dell'utente. In generale, il ripristino degli errori comporta il rilevamento di un errore, la determinazione della causa e la definizione di un modo per risolvere l'errore. Gli utenti rispondono meglio alle interfacce cooperativi, che collaborano con l'utente per eseguire un'attività.
 
 Il primo passaggio nel ripristino degli errori vocali consiste nel rilevare la condizione di errore. Il riconoscimento vocale può non riuscire a causa di un'ampia gamma di errori. Le condizioni di errore possono in genere essere rilevate come risultato di input non valido, correzione esplicita dell'utente o annullamento o ripetizione dell'utente.
 
@@ -41,9 +41,9 @@ Una buona strategia per il ripristino degli errori di rifiuto consiste nel combi
 
 Per rendere la gestione degli errori più naturale, assicurarsi di fornire un grado di variazione casuale quando si risponde agli errori. Inoltre, una reazione dell'utente naturale a qualsiasi richiesta di ripetizione di una risposta è esagerare o aumentare il volume quando si ripete l'istruzione. Può essere utile ricordare occasionalmente all'utente di parlare normalmente e chiaramente, poiché l'esagerazione o l'aumento del volume può rendere più difficile al motore vocale riconoscere le parole.
 
-L'assistenza progressiva deve fare di più che portare l'errore all'attenzione dell'utente; dovrebbe guidare l'utente verso la pronuncia nella grammatica corrente fornendo successivamente messaggi più informativi. Le interfacce che sembrano tentare di comprendere incoraggiano un elevato grado di soddisfazione e tolleranza da parte dell'utente.
+L'assistenza progressiva deve fare di più che portare l'errore all'attenzione dell'utente; dovrebbe guidare l'utente a parlare nella grammatica corrente fornendo successivamente messaggi più informativi. Le interfacce che sembrano tentare di comprendere incoraggiano un alto grado di soddisfazione e tolleranza da parte dell'utente.
 
-*Gli errori di sostituzione,* in cui il motore di riconoscimento vocale riconosce l'input ma corrisponde al comando errato, sono più difficili da risolvere perché il motore di riconoscimento vocale rileva un'espressione corrispondente. Una mancata corrispondenza può verificarsi anche quando il motore di riconoscimento vocale interpreta i suoni estranei come input valido (noto anche come errore *di inserimento*). In queste situazioni è necessaria l'assistenza dell'utente per identificare la condizione di errore. A tale scopo, è possibile ripetere ciò che il motore di riconoscimento vocale ha restituito e chiedere all'utente di confermarlo prima di procedere:
+*Gli errori di sostituzione,* in cui il motore di riconoscimento vocale riconosce l'input ma corrisponde al comando errato, sono più difficili da risolvere perché il motore di riconoscimento vocale rileva un'espressione corrispondente. Una mancata corrispondenza può verificarsi anche quando il motore di riconoscimento vocale interpreta i suoni estranei come input valido (noto anche come errore *di inserimento*). In questi casi, è necessaria l'assistenza dell'utente per identificare la condizione di errore. A tale scopo, è possibile ripetere ciò che il motore di riconoscimento vocale ha restituito e chiedere all'utente di confermarlo prima di procedere:
 
 **Utente:** mi piace una pizza in stile Chicago.
 
@@ -89,11 +89,11 @@ La modifica della grammatica per includere prefissi per gestire le variazioni di
 
 Analogamente, è possibile mantenere una cronologia degli errori di sostituzione comuni e, se un errore specifico è frequente, offrire l'alternativa la prima volta.
 
-In qualsiasi situazione di errore di riconoscimento, evitare di incolparlo. Se il carattere suggerisce o addirittura implica che l'utente è da biasimare o il carattere sembra indifferente all'errore, l'utente potrebbe essere offeso. Anche in questo caso, scegliere con attenzione la formulazione che accetta esplicitamente la responsabilità, è appropriata alla situazione e usa la varietà per creare una risposta più naturale. Quando si esprime una topologia, evitare parole ambigue come "oops" o "uh-oh" che potrebbero essere interpretate come incolpazione dell'utente. Usare invece frasi come "I'm sorry" o "My mistake". Gli errori ripetuti o più gravi potrebbero usare una topologia più elaborata, ad esempio "Sono davvero dispiaciuto". Si consideri anche la personalità del carattere quando si determina il tipo di risposta. Un'altra opzione è incolpare una situazione esterna. Commenti come "Boy, it's noisy out there", to take the blame away from the user and the character. Anche ricordare all'utente la natura cooperativa dell'interazione può essere utile: prendere in considerazione frasi come "Vediamo cosa possiamo fare per far funzionare questa operazione".
+In qualsiasi situazione di errore di riconoscimento, evitare di incolparlo. Se il carattere suggerisce o addirittura implica che l'utente è da biasimare o il carattere sembra indifferente all'errore, l'utente potrebbe essere offeso. Anche in questo caso, scegliere con attenzione la formulazione che accetta esplicitamente la responsabilità, è appropriata alla situazione e usa la varietà per creare una risposta più naturale. Quando si esprime una topologia, evitare parole ambigue come "oops" o "uh-oh" che potrebbero essere interpretate come incolpazione dell'utente. Usare invece frasi come "I'm sorry" o "My mistake". Errori ripetuti o più gravi potrebbero usare una topologia più elaborata, ad esempio "Mi spiace molto". Si consideri anche la personalità del carattere quando si determina il tipo di risposta. Un'altra opzione è incolpare una situazione esterna. Commenti come "Boy, it's noisy out there", to take the blame away from the user and the character. Anche ricordare all'utente la natura cooperativa dell'interazione può essere utile: prendere in considerazione frasi come "Vediamo cosa possiamo fare per far funzionare questa operazione".
 
 Microsoft Agent supporta anche alcuni commenti e suggerimenti automatici per il riconoscimento. Quando viene rilevata un'espressione, il suggerimento di ascolto visualizza il testo vocale della corrispondenza migliore ascoltata. È possibile impostare il testo personalizzato da visualizzare in base all'impostazione di attendibilità per un comando definito.
 
-A causa del potenziale di errore, è sempre necessario confermare le scelte che hanno gravi conseguenze negative e sono irreversibili. Naturalmente, è necessario richiedere una conferma quando i risultati di un'azione potrebbero essere distruttivi. È tuttavia consigliabile richiedere anche una conferma per situazioni che interrompino un processo o un'operazione di lunga durata.
+A causa del potenziale di errore, è sempre necessario confermare tutte le scelte che hanno gravi conseguenze negative e sono irreversibili. Naturalmente, è necessario richiedere una conferma quando i risultati di un'azione potrebbero essere distruttivi. È tuttavia consigliabile richiedere anche una conferma per situazioni che interrompino un processo o un'operazione di lunga durata.
 
  
 

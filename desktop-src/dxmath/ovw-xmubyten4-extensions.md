@@ -1,19 +1,19 @@
 ---
-description: XMUBYTEN4 descrive un vettore 3D per l'archiviazione di valori non firmati e normalizzati come interi senza segno a 8 bit (1 byte).
+description: XMUBYTEN4 descrive un vettore 3D per l'archiviazione di valori normalizzati senza segno come interi senza segno a 8 bit (1 byte).
 ms.assetid: 95322cb2-37b9-4b2a-9427-c0c05cab3b8c
 title: Estensioni XMUBYTEN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f512ccfa113f2e619b0c288b9d96060a302897a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 883e862cdb1dcd84229c73fcbbfe152a3489d76fad33c23ec4565bf5b26097a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277539"
 ---
 # <a name="xmubyten4-extensions"></a>Estensioni XMUBYTEN4
 
-[**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) descrive un vettore 3D per l'archiviazione di valori non firmati e normalizzati come interi senza segno a 8 bit (1 byte).
+[**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) descrive un vettore 3D per l'archiviazione di valori normalizzati senza segno come interi senza segno a 8 bit (1 byte).
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

@@ -1,9 +1,9 @@
 ---
-title: CASELLA. fontStyle
+title: EDITBOX.fontStyle
 description: L'attributo fontStyle specifica o recupera lo stile del carattere per il controllo casella di modifica.
 ms.assetid: bc71359d-2b75-4134-99e8-52b2ca48dcde
 keywords:
-- Media Player Windows casella. fontStyle
+- EditBOX.fontStyle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4249f6224099c3d2a36a3b26244c9b804be519c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65d9dc5ac5fe3750fb3a6af8658a5ddb30274764cc891438162434a44651322a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578847"
 ---
-# <a name="editboxfontstyle"></a>CASELLA. fontStyle
+# <a name="editboxfontstyle"></a>EDITBOX.fontStyle
 
-L'attributo **FontStyle** specifica o recupera lo stile del carattere per il controllo casella di modifica.
+**L'attributo fontStyle** specifica o recupera lo stile del carattere per il controllo casella di modifica.
 
 ``` syntax
         elementID.fontStyle
@@ -29,16 +29,16 @@ L'attributo **FontStyle** specifica o recupera lo stile del carattere per il con
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente uno o più dei valori seguenti.
+Questo attributo è una stringa di **lettura/scrittura** contenente uno o più dei valori seguenti.
 
 
 
 | Valore     | Descrizione           |
 |-----------|-----------------------|
-| Grassetto      | Stile del carattere in grassetto.      |
+| Bold      | Stile carattere grassetto.      |
 | Corsivo    | Stile del carattere corsivo.    |
-| Sottolineato | Stile del carattere sottolineato. |
-| Barrato | Stile del carattere di attacco. |
+| Sottolineato | Stile del carattere Di sottolineatura. |
+| Barrato | Stile carattere barrato. |
 | Normale    | Stile del carattere normale.    |
 
 
@@ -47,9 +47,9 @@ Questo attributo è una **stringa** di lettura/scrittura contenente uno o più d
 
 ## <a name="remarks"></a>Commenti
 
-È possibile utilizzare qualsiasi combinazione di valori, separati da spazi. Lo stile normale ha la priorità su tutti gli altri valori, mentre quelli specificati insieme al normale verranno ignorati.
+È possibile usare qualsiasi combinazione di valori, separati da spazi. Lo stile Normale ha la priorità su tutti gli altri valori e tutti gli altri specificati insieme a Normale verranno ignorati.
 
-A scopo di rendering, Normal è lo stile del tipo di carattere predefinito. Il valore predefinito recuperato da questo attributo è "" (stringa vuota).
+Ai fini del rendering, Normal è lo stile del carattere predefinito. Il valore predefinito recuperato da questo attributo è "" (stringa vuota).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ A scopo di rendering, Normal è lo stile del tipo di carattere predefinito. Il v
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -65,13 +65,13 @@ A scopo di rendering, Normal è lo stile del tipo di carattere predefinito. Il v
 
 <dl> <dt>
 
-[**Elemento casella**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**CASELLA. fontFace**](editbox-fontface.md)
+[**EDITBOX.fontFace**](editbox-fontface.md)
 </dt> <dt>
 
-[**CASELLA. fontSize**](editbox-fontsize.md)
+[**EDITBOX.fontSize**](editbox-fontsize.md)
 </dt> </dl>
 
  

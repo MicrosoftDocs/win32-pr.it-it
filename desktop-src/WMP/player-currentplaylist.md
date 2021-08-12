@@ -1,9 +1,9 @@
 ---
-title: Player. currentPlaylist
-description: La proprietà currentPlaylist specifica o recupera l'oggetto playlist corrente.
+title: Player.currentPlaylist
+description: La proprietà currentPlaylist specifica o recupera l'oggetto Playlist corrente.
 ms.assetid: fabfb927-5f64-4fc4-8ee5-e2449082dfbc
 keywords:
-- Player. currentPlaylist Windows Media Player
+- Player.currentPlaylist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,34 +14,34 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceae33a201086d268942e47496874678ec13f459
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7139c567eab5fbb3c324916dec260d34f57429cb50bb99d199f35be8aee7a1c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573216"
 ---
-# <a name="playercurrentplaylist"></a>Player. currentPlaylist
+# <a name="playercurrentplaylist"></a>Player.currentPlaylist
 
-La proprietà currentPlaylist specifica o recupera l'oggetto **playlist** corrente.
+La proprietà currentPlaylist specifica o recupera l'oggetto **Playlist** corrente.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player* . **currentPlaylist**
+*lettore* . **currentPlaylist**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un oggetto **playlist** di lettura/scrittura.
+Questa proprietà è un oggetto Playlist **di** lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Se le *Impostazioni*. la proprietà **autostart** è true, la riproduzione viene avviata automaticamente quando si imposta **currentPlaylist**.
+Se *l'Impostazioni*. **la proprietà autoStart** è true, la riproduzione inizia automaticamente ogni volta che si imposta **currentPlaylist**.
 
-Questa proprietà accetta un oggetto playlist, che può essere acquisito in diversi modi, ad esempio chiamando *PlaylistArray*. **Item** o *PlaylistCollection*. **nuova playlist**. Per caricare un elemento della **playlist** usando un nome file, impostare la proprietà URL o usare *Player*. **nuova playlist**.
+Questa proprietà accetta un oggetto Playlist, che può essere acquisito in diversi modi, ad esempio chiamando *PlaylistArray*. **elemento** o *PlaylistCollection*. **newPlaylist**. Per caricare un elemento **playlist** usando un nome file, impostare la proprietà URL o usare *Player*. **newPlaylist**.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene recuperata la prima playlist nella libreria. USA quindi **currentPlaylist** per fare in modo che la playlist recuperata sia la playlist corrente e quindi per visualizzare il nome della playlist corrente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene recuperata la prima playlist nella libreria. Usa quindi **currentPlaylist** per impostare la playlist recuperata come playlist corrente e quindi per visualizzare il nome della playlist corrente. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -63,7 +63,7 @@ document.write("Found first playlist. Name: " + Player.currentPlaylist.name);
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -75,19 +75,19 @@ document.write("Found first playlist. Name: " + Player.currentPlaylist.name);
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. nuova playlist**](player-newplaylist.md)
+[**Player.newPlaylist**](player-newplaylist.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**PlaylistArray. Item**](playlistarray-item.md)
+[**PlaylistArray.item**](playlistarray-item.md)
 </dt> <dt>
 
-[**PlaylistCollection. nuova playlist**](playlistcollection-newplaylist.md)
+[**PlaylistCollection.newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**Impostazioni. avvio automatico**](settings-autostart.md)
+[**Impostazioni.autoStart**](settings-autostart.md)
 </dt> </dl>
 
  

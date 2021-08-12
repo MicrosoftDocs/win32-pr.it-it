@@ -1,7 +1,7 @@
 ---
 description: Sottrae due valori di colore per creare un nuovo valore di colore.
 ms.assetid: c21f8402-c1c2-4909-896f-2872ef518537
-title: Funzione D3DXColorSubtract (D3dx9math. h)
+title: Funzione D3DXColorSubtract (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 47f28ea3a3fb6d1556e699fed3820e228faf6604
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a1d0d9c884dbbfb8e4ae718985be90d22002bd0f2a4cf25f45d02ded12718d2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300141"
 ---
-# <a name="d3dxcolorsubtract-function"></a>D3DXColorSubtract (funzione)
+# <a name="d3dxcolorsubtract-function"></a>Funzione D3DXColorSubtract
 
 Sottrae due valori di colore per creare un nuovo valore di colore.
 
@@ -42,30 +42,30 @@ D3DXCOLOR* D3DXColorSubtract(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
+Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
-*pC1* \[ in\]
+*pC1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> <dt>
 
-*pC2* \[ in\]
+*pC2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Questa funzione restituisce un puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che rappresenta la differenza tra due valori di colore.
+Questa funzione restituisce un puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta la differenza tra due valori di colore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXColorSubtract** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXColorSubtract** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

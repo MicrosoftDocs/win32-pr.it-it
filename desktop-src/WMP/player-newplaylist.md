@@ -1,11 +1,11 @@
 ---
-title: Player. nuova playlist, metodo
-description: Il metodo nuova playlist crea un nuovo oggetto playlist.
+title: Metodo Player.newPlaylist
+description: Il metodo newPlaylist crea un nuovo oggetto Playlist.
 ms.assetid: a566006e-8647-4c51-ab77-762728f25a30
 keywords:
-- Metodo nuova playlist Windows Media Player
-- Metodo nuova playlist Windows Media Player, classe Player
-- Classe Player Windows Media Player, metodo nuova playlist
+- Metodo newPlaylist Windows Media Player
+- Metodo newPlaylist Windows Media Player , classe Player
+- Classe Player Windows Media Player , metodo newPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa65ae4b453fe919116a33c5ee86b14ba353f681
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 380d1f2751487f5c648b154852be625a5c93103851541dea7e2488ba75080ca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572831"
 ---
-# <a name="playernewplaylist-method"></a>Player. nuova playlist, metodo
+# <a name="playernewplaylist-method"></a>Metodo Player.newPlaylist
 
-Il metodo **nuova playlist** crea un nuovo oggetto **playlist** .
+Il **metodo newPlaylist** crea un nuovo **oggetto Playlist.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,31 +43,31 @@ retVal = Player.newPlaylist(
 
 <dl> <dt>
 
-*nome* \[ in\]
+*name* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** contenente il nome della nuova playlist.
 
 </dd> <dt>
 
-*URL* \[ di in\]
+*URL* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente l'URL della playlist Windows Media Metafile con la quale creare l'oggetto **playlist** .
+**Stringa** contenente l'URL della playlist Windows metafile multimediale con cui creare l'oggetto **Playlist.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **playlist** .
+Questo metodo restituisce un **oggetto Playlist.**
 
 ## <a name="remarks"></a>Commenti
 
-Se il parametro *URL* è impostato su null o su "" (stringa vuota), verrà creato un oggetto **playlist** vuoto. Se il parametro *Name* è impostato su "", viene usato il nome del metafile.
+Se il *parametro URL* è impostato su Null o "" (stringa vuota), verrà creato un oggetto **Playlist** vuoto. Se il *parametro name* è impostato su "", viene usato il nome nel metafile.
 
-La nuova playlist creata con questo metodo non viene aggiunta alla libreria. Per aggiungere una nuova playlist alla libreria, usare *PlaylistCollection*. **importPlaylist** o *PlaylistCollection*. **nuova playlist**. Eventuali spazi iniziali o finali nel nome della playlist vengono rimossi automaticamente quando vengono aggiunti alla libreria.
+La nuova playlist creata con questo metodo non viene aggiunta alla libreria. Per aggiungere una nuova playlist alla libreria, usare *PlaylistCollection*. **importPlaylist** o *PlaylistCollection*. **newPlaylist**. Gli spazi iniziali o finali nel nome della playlist vengono rimossi automaticamente quando vengono aggiunti alla libreria.
 
-Poiché la libreria consente più playlist con lo stesso nome, è consigliabile verificare la presenza di una playlist con un nome specificato prima di aggiungerne una nuova.
+Poiché la libreria consente più playlist con lo stesso nome, è possibile verificare la presenza di una playlist con un nome specificato prima di aggiungerne una nuova.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Poiché la libreria consente più playlist con lo stesso nome, è consigliabile 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -87,13 +87,13 @@ Poiché la libreria consente più playlist con lo stesso nome, è consigliabile 
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**PlaylistCollection. importPlaylist**](playlistcollection-importplaylist.md)
+[**PlaylistCollection.importPlaylist**](playlistcollection-importplaylist.md)
 </dt> <dt>
 
-[**PlaylistCollection. nuova playlist**](playlistcollection-newplaylist.md)
+[**PlaylistCollection.newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**Metafile di Windows Media**](windows-media-metafiles.md)
+[**Windows Metafile multimediali**](windows-media-metafiles.md)
 </dt> </dl>
 
  

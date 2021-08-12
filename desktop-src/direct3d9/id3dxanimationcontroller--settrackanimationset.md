@@ -1,7 +1,7 @@
 ---
 description: Applica il set di animazioni alla traccia specificata.
 ms.assetid: f48bb0f1-3ccd-4db9-8a30-58c79ae0939e
-title: 'Metodo ID3DXAnimationController:: SetTrackAnimationSet (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::SetTrackAnimationSet (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9dce979e48ed118dc257c147b27615f7bbc89231
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a94fee2a0bd80f391b514895aa5b5348cbef6d8a53e31200b49a403a6712e2d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296884"
 ---
-# <a name="id3dxanimationcontrollersettrackanimationset-method"></a>Metodo ID3DXAnimationController:: SetTrackAnimationSet
+# <a name="id3dxanimationcontrollersettrackanimationset-method"></a>Metodo ID3DXAnimationController::SetTrackAnimationSet
 
 Applica il set di animazioni alla traccia specificata.
 
@@ -41,21 +41,21 @@ HRESULT SetTrackAnimationSet(
 
 <dl> <dt>
 
-*Traccia* \[ in\]
+*Tenere traccia* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificatore della traccia a cui viene applicato il set di animazioni.
 
 </dd> <dt>
 
-*pAnimSet* \[ in\]
+*pAnimSet* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)**
 
-Puntatore al set di animazioni [**ID3DXAnimationSet**](id3dxanimationset.md) da aggiungere alla traccia.
+Puntatore al [**set di animazione ID3DXAnimationSet**](id3dxanimationset.md) da aggiungere alla traccia.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore al set di animazioni [**ID3DXAnimationSet**](id3dxanimationset.md) da 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta il set di animazioni sulla traccia specificata per la combinazione. Il set di animazioni per ogni traccia viene mescolato in base al peso e alla velocità della traccia quando viene chiamato [**AdvanceTime**](id3dxanimationcontroller--advancetime.md) .
+Questo metodo imposta l'animazione impostata sulla traccia specificata per la combinazione. L'animazione impostata per ogni traccia viene sfumata in base al peso e alla velocità della traccia quando [**viene chiamato AdvanceTime.**](id3dxanimationcontroller--advancetime.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questo metodo imposta il set di animazioni sulla traccia specificata per la comb
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

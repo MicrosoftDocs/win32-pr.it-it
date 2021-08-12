@@ -1,23 +1,23 @@
 ---
-title: store_structured (SM5-ASM)
-description: Scrittura ad accesso casuale di componenti a 1-4 32 bit in una visualizzazione di accesso non ordinato (UAV) del buffer strutturato.
+title: store_structured (sm5 - asm)
+description: Scrittura ad accesso casuale di componenti a 1-4 a 32 bit in una visualizzazione di accesso non ordinato del buffer strutturato.
 ms.assetid: 8080B2CA-5BDA-4F01-8B2B-B85BDD58C5AF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5890d30fac57923365f0bdea89fcce55f7922c7
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 6a220fca330ba4198669245f0336b363c448067613e3f21fce44c9af9325bd9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285756"
 ---
-# <a name="store_structured-sm5---asm"></a>archivio \_ strutturato (SM5-ASM)
+# <a name="store_structured-sm5---asm"></a>store \_ structured (sm5 - asm)
 
-Scrittura ad accesso casuale di componenti a 1-4 32 bit in una visualizzazione di accesso non ordinato (UAV) del buffer strutturato.
+Scrittura ad accesso casuale di componenti a 1-4 a 32 bit in una visualizzazione di accesso non ordinato del buffer strutturato.
 
 
 
-| archivio \_ strutturato dst0 \[ . Write \_ mask \] , dstAddress \[ . Select \_ Component \] , dstByteOffset \[ . Select \_ Component \] , src0 \[ . Swizzle\] |
+| store \_ structured dst0 \[ .write mask , \_ \] dstAddress \[ .select component , \_ \] dstByteOffset \[ .select component , \_ \] src0 \[ .swizzle\] |
 |---------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Scrittura ad accesso casuale di componenti a 1-4 32 bit in una visualizzazione d
 
 | Elemento                                                                                                                       | Descrizione                                                    |
 |----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                            | \[nell' \] indirizzo dei risultati dell'operazione.<br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/>             | \[nell' \] indirizzo in cui scrivere.<br/>               |
-| <span id="dstByteOffset"></span><span id="dstbyteoffset"></span><span id="DSTBYTEOFFSET"></span>*dstByteOffset*<br/> | \[nell' \] indice della struttura da scrivere.<br/>         |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                            | \[nei \] componenti da scrivere.<br/>                     |
+| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                            | \[in \] Indirizzo dei risultati dell'operazione.<br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/>             | \[in \] Indirizzo in cui scrivere.<br/>               |
+| <span id="dstByteOffset"></span><span id="dstbyteoffset"></span><span id="DSTBYTEOFFSET"></span>*dstByteOffset*<br/> | \[in \] Indice della struttura da scrivere.<br/>         |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                            | \[in \] Componenti da scrivere.<br/>                     |
 
 
 
@@ -39,13 +39,13 @@ Scrittura ad accesso casuale di componenti a 1-4 32 bit in una visualizzazione d
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue 1-4 \* componenti a 32 bit del componente scritti da *src0* a *Dst0* all'indirizzo in *dstAddress* e *dstByteOffset*. Nessuna conversione di formato.
+Questa istruzione esegue componenti a 32 bit a 1-4 componenti scritti da \* *src0* *a dst0* in corrispondenza dell'indirizzo in *dstAddress* e *dstByteOffset*. Nessuna conversione del formato.
 
-*dst0* deve essere un UAV (u \# ). Nel compute shader può anche essere la memoria condivisa del gruppo di thread (g \# ).
+*dst0* deve essere un UAV (u \# ). Nello shader di calcolo può anche essere memoria condivisa del gruppo di thread (g \# ).
 
 *dstAddress* specifica l'indice della struttura da scrivere.
 
-Il percorso dei dati scritti equivale allo pseudocodice seguente che mostra l'offset, l'indirizzo, il puntatore al contenuto del buffer, lo stride dell'origine e i dati archiviati in modo lineare.
+La posizione dei dati scritti equivale allo pseudocodice seguente che mostra l'offset, l'indirizzo, il puntatore al contenuto del buffer, lo stride dell'origine e i dati archiviati in modo lineare.
 
 ``` syntax
                     BYTE *BufferContents;             // from dst0
@@ -74,25 +74,25 @@ Il percorso dei dati scritti equivale allo pseudocodice seguente che mostra l'of
                              WriteComponents * sizeof(INT32));
 ```
 
-Questo pseudocodice Mostra come funziona l'operazione, ma i dati effettivi non devono essere archiviati in modo lineare. Se i dati non vengono archiviati in modo lineare, l'operazione effettiva dell'istruzione deve corrispondere al comportamento dell'operazione precedente.
+Questo pseudocodice mostra il funzionamento dell'operazione, ma i dati effettivi non devono essere archiviati in modo lineare. Se i dati non vengono archiviati in modo lineare, l'operazione effettiva dell'istruzione deve corrispondere al comportamento dell'operazione precedente.
 
-*dst0* può avere solo una maschera di scrittura che è una delle seguenti:. x,. XY,. xyz,. xyzw. La maschera di scrittura determina il numero di componenti a 32 bit da scrivere senza gap.
+*dst0* può avere solo una maschera di scrittura che è una delle seguenti: .x, .xy, .xyz, .xyzw. La maschera di scrittura determina il numero di componenti a 32 bit da scrivere senza lacune.
 
-Il superamento dei limiti in u \# cacitato da *dstAddress* significa che non viene scritto alcun elemento nella memoria fuori limite.
+Fuori dai limiti che si indirizzano a u \# casued da *dstAddress* significa che non viene scritto nulla nella memoria fuori dai limiti.
 
-Se il *dstByteOffset*, incluso *dstWriteMask*, è ciò che causa l'accesso all'utente \# , l'intero contenuto del UAV diventa indefinito.
+Se *dstByteOffset*, incluso *dstWriteMask*, è ciò che causa l'accesso all'utente fuori dai limiti, l'intero contenuto \# dell'UAV diventa indefinito.
 
-All'esterno dei limiti \# che puntano a g (i limiti di tale particolare g \# , anziché di tutta la memoria condivisa) per qualsiasi componente a 32 bit, l'intero contenuto di tutta la memoria condivisa diventerà indefinito.
+I limiti che si indirizzano a g (i limiti di quel particolare g , anziché tutta la memoria condivisa) per qualsiasi componente a 32 bit specificato causano l'indefinizione dell'intero contenuto di tutta la memoria \# \# condivisa.
 
-*dstByteOffset* è un argomento separato da *dstAddress* perché si tratta in genere di un valore letterale. Questa separazione di parametri non è stata eseguita per gli atomici sulla memoria strutturata.
+*dstByteOffset è* un argomento separato da *dstAddress* perché è in genere un valore letterale. Questa separazione dei parametri non è stata eseguita per gli atomici nella memoria strutturata.
 
-cs \_ 4 \_ 0 e cs \_ 4 \_ 1 supportano questa istruzione per UAV e TGSM.
+Cs \_ 4 \_ 0 e cs \_ 4 \_ 1 supportano questa istruzione per UAV e TGSM.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -100,11 +100,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -112,7 +112,7 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -120,12 +120,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -135,7 +135,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

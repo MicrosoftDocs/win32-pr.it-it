@@ -3,9 +3,9 @@ title: Proprietà renderer DevicePair
 description: Ottiene il renderer per la coppia di dispositivi di base attiva.
 ms.assetid: DB2ED5D3-CCDF-4704-A29A-F1A13F7B953A
 keywords:
-- API di streaming multimediale delle proprietà Renderer
-- API di streaming multimediale delle proprietà Renderer, interfaccia DevicePair
-- API di streaming multimediale dell'interfaccia DevicePair, proprietà Renderer
+- Proprietà renderer API Streaming multimediale
+- Proprietà renderer API Streaming multimediale, interfaccia DevicePair
+- Interfaccia DevicePair API Streaming multimediale, proprietà Renderer
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f74b212ed4e8ec29b0234a3769c3beff91c0c777
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 05707fd65e2ac8998fa2412ec15c12d3b003b88990641aad6510d87bd7692e1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236084"
 ---
-# <a name="devicepairrenderer-property"></a>Proprietà DevicePair:: renderer
+# <a name="devicepairrenderer-property"></a>Proprietà DevicePair::Renderer
 
 Ottiene il renderer per la coppia di dispositivi di base attiva.
 
@@ -34,7 +34,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_Renderer(
-  [out] ActiveBasicDevice **value
+  [out] ActiveBasicDevice **value
 );
 ```
 
@@ -51,6 +51,6 @@ Riceve un oggetto [**ActiveBasicDevice**](/previous-versions/windows/desktop/leg
 [**DevicePair**](/previous-versions/windows/desktop/legacy/dn385771(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

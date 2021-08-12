@@ -8,7 +8,7 @@
           href: about-keyboard-input.md
         - name: Uso dell'input da tastiera
           href: using-keyboard-input.md
-        - name: Riferimento per input da tastiera
+        - name: Informazioni di riferimento per l'input da tastiera
           href: keyboard-input-reference.md
           items:
             - name: Funzioni di input da tastiera
@@ -70,7 +70,7 @@
                   href: /windows/win32/api/winuser/nf-winuser-toascii
                 - name: ToAsciiEx
                   href: /windows/win32/api/winuser/nf-winuser-toasciiex
-                - name: Tounicode
+                - name: ToUnicode
                   href: /windows/win32/api/winuser/nf-winuser-tounicode
                 - name: ToUnicodeEx
                   href: /windows/win32/api/winuser/nf-winuser-tounicodeex
@@ -96,13 +96,13 @@
                   href: wm-activate.md
                 - name: WM_APPCOMMAND
                   href: wm-appcommand.md
-                - name: WM_CHAR
+                - name: Wm_char
                   href: wm-char.md
                 - name: WM_DEADCHAR
                   href: wm-deadchar.md
                 - name: WM_HOTKEY
                   href: wm-hotkey.md
-                - name: WM_KEYDOWN
+                - name: Wm_keydown
                   href: wm-keydown.md
                 - name: WM_KEYUP
                   href: wm-keyup.md
@@ -134,16 +134,16 @@
             - name: Costanti di input da tastiera
               href: keyboard-input-constants.md
               items:
-                - name: Codici di Virtual-Key
+                - name: Virtual-Key codici
                   href: virtual-key-codes.md
-    - name: Input del mouse
+    - name: Mouse Input
       href: mouse-input.md
       items:
         - name: Informazioni sull'input del mouse
           href: about-mouse-input.md
         - name: Uso dell'input del mouse
           href: using-mouse-input.md
-        - name: Riferimento all'input del mouse
+        - name: Informazioni di riferimento sull'input del mouse
           href: mouse-input-reference.md
           items:
             - name: 'Funzione di input tramite mouse '
@@ -217,7 +217,7 @@
                   href: wm-mousehwheel.md
                 - name: WM_MOUSELEAVE
                   href: wm-mouseleave.md
-                - name: WM_MOUSEMOVE
+                - name: Wm_mousemove
                   href: wm-mousemove.md
                 - name: WM_MOUSEWHEEL
                   href: wm-mousewheel.md
@@ -279,10 +279,10 @@
           href: about-raw-input.md
         - name: Uso dell'input non elaborato
           href: using-raw-input.md
-        - name: Riferimento input non elaborato
+        - name: Informazioni di riferimento su input non elaborato
           href: raw-input-reference.md
           items:
-            - name: Funzioni di input non elaborate
+            - name: Funzioni di input non elaborato
               href: raw-input-functions.md
               items:
                 - name: DefRawInputProc
@@ -306,14 +306,14 @@
                   href: /windows/win32/api/winuser/nf-winuser-get_rawinput_code_wparam
                 - name: NEXTRAWINPUTBLOCK
                   href: /windows/win32/api/winuser/nf-winuser-nextrawinputblock
-            - name: Notifiche input non elaborate
+            - name: Notifiche di input non elaborato
               href: raw-input-notifications.md
               items:
                 - name: WM_INPUT
                   href: wm-input.md
                 - name: WM_INPUT_DEVICE_CHANGE
                   href: wm-input-device-change.md
-            - name: Strutture di input non elaborate
+            - name: Strutture di input non elaborato
               href: raw-input-structures.md
               items:
                 - name: RAWHID

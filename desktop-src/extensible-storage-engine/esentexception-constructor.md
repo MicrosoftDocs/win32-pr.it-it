@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: EsentException Overload Constructor List'
-title: Elenco di overload del costruttore EsentException (Microsoft. ISAM. ESENT)
+description: 'Altre informazioni su: Elenco di overload del costruttore EsentException'
+title: Elenco di overload del costruttore EsentException (Microsoft.Isam.Esent)
 TOCTitle: 'EsentException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.EsentException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexception.esentexception(v=EXCHG.10)
@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: e53a1611e052f2582be3b268a9f72b3bc9488a1c
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 4645dab93b0b9b6fd2a7be6f553326e550a9744e7b21014c0bdf471fa7cee906
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118270008"
 ---
 # <a name="esentexception-constructor-overload-list"></a>Elenco di overload del costruttore EsentException
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -44,12 +44,12 @@ Includi membri ereditati
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="dn292119(v=exchg.10).md">EsentException (stringa)</a></td>
+<td><a href="dn292119(v=exchg.10).md">EsentException(String)</a></td>
 <td>Inizializza una nuova istanza della classe EsentException con un messaggio di errore specificato.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="dn292125(v=exchg.10).md">EsentException (SerializationInfo, StreamingContext)</a></td>
+<td><a href="dn292125(v=exchg.10).md">EsentException(SerializationInfo, StreamingContext)</a></td>
 <td>Inizializza una nuova istanza della classe EsentException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.</td>
 </tr>
 </tbody>
@@ -66,4 +66,4 @@ Inizio
 
 [Membri di EsentException](./esentexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. ESENT](./microsoft.isam.esent-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)

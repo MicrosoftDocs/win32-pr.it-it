@@ -1,7 +1,7 @@
 ---
-description: Calcolare le IMT per triangolo da dati per Texel. Questa funzione è simile a D3DXComputeIMTFromTexture, ma usa una matrice float per passare i dati e può calcolare valori dimensionali più alti di 4.
+description: Calcolare i valori IMT per triangolo dai dati per texel. Questa funzione è simile a D3DXComputeIMTFromTexture, ma usa una matrice float per passare i dati e può calcolare valori dimensionali superiori a 4.
 ms.assetid: 4a151184-e67e-41e9-83c6-63da72f262fa
-title: Funzione D3DXComputeIMTFromPerTexelSignal (D3DX9Mesh. h)
+title: Funzione D3DXComputeIMTFromPerTexelSignal (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a3db71fbc931f7bdb3e73c8d949a163607e66c31
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 48053a238806c223067742b62675f1c0b8bc5a53e8bdf05f78f3fc56520b8388
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299890"
 ---
-# <a name="d3dxcomputeimtfrompertexelsignal-function"></a>D3DXComputeIMTFromPerTexelSignal (funzione)
+# <a name="d3dxcomputeimtfrompertexelsignal-function"></a>Funzione D3DXComputeIMTFromPerTexelSignal
 
-Calcolare le IMT per triangolo da dati per Texel. Questa funzione è simile a [**D3DXComputeIMTFromTexture**](d3dxcomputeimtfromtexture.md), ma usa una matrice float per passare i dati e può calcolare valori dimensionali più alti di 4.
+Calcolare i valori IMT per triangolo dai dati per texel. Questa funzione è simile a [**D3DXComputeIMTFromTexture,**](d3dxcomputeimtfromtexture.md)ma usa una matrice float per passare i dati e può calcolare valori dimensionali superiori a 4.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,75 +50,75 @@ HRESULT D3DXComputeIMTFromPerTexelSignal(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a una mesh di input (vedere [**ID3DXMesh**](id3dxmesh.md)) che contiene la geometria dell'oggetto per il calcolo di IMT.
+Puntatore a una mesh di input (vedere [**ID3DXMesh)**](id3dxmesh.md)che contiene la geometria dell'oggetto per il calcolo dell'IMT.
 
 </dd> <dt>
 
-*dwTextureIndex* \[ in\]
+*dwTextureIndex* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Indice di coordinate di trama in base zero che identifica il set di coordinate di trama da usare.
+Indice delle coordinate della trama in base zero che identifica il set di coordinate di trama da usare.
 
 </dd> <dt>
 
-*pfTexelSignal* \[ in\]
+*pfTexelSignal* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore a una matrice di Texel di input da cui verrà calcolato IMT. La dimensione della matrice è uWidth \* uHeight \* uComponents.
+Puntatore a una matrice di texel di input da cui verrà calcolato LMT. La dimensione della matrice è uWidth \* uHeight \* uComponents.
 
 </dd> <dt>
 
-*uWidth* \[ in\]
+*uWidth* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Larghezza della trama in pixel.
 
 </dd> <dt>
 
-*uHeight* \[ in\]
+*uHeight* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Altezza della trama in pixel.
 
 </dd> <dt>
 
-*uSignalDimension* \[ in\]
+*uSignalDimension* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di float per componente in ogni elemento della matrice di segnali.
 
 </dd> <dt>
 
-*uComponents* \[ in\]
+*uComponents* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Il numero di componenti in ogni Texel.
+Numero di componenti in ogni texel.
 
 </dd> <dt>
 
-*dwOptions* \[ in\]
+*dwOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opzioni di incapsulamento della trama. Si tratta di una combinazione di uno o più [**flag D3DXIMT**](./d3dximt-flags.md).
+Opzioni di ritorno a capo automatico della trama. Si tratta di una combinazione di uno o più [**FLAG D3DXIMT**](./d3dximt-flags.md).
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Opzioni di incapsulamento della trama. Si tratta di una combinazione di uno o pi
 
 Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
 
-Puntatore a una funzione di callback per monitorare lo stato di avanzamento del calcolo di IMT.
+Puntatore a una funzione di callback per monitorare lo stato del calcolo IMT.
 
 </dd> <dt>
 
@@ -136,16 +136,16 @@ Puntatore a una funzione di callback per monitorare lo stato di avanzamento del 
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a una variabile definita dall'utente che viene passata alla funzione di callback dello stato. Usato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni sul contesto per la funzione di callback.
+Puntatore a una variabile definita dall'utente che viene passata alla funzione di callback dello stato. Utilizzato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni di contesto per la funzione di callback.
 
 </dd> <dt>
 
-*ppIMTData* \[ out\]
+*ppIMTData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la matrice IMT restituita. Questa matrice può essere fornita come input per le [funzioni UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) di D3DX per definire la priorità dell'allocazione dello spazio di trama nella parametrizzazione della trama.
+Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la matrice IMT restituita. Questa matrice può essere fornita come input per le funzioni [UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) D3DX per classificare in ordine di priorità l'allocazione dello spazio della trama nella parametrizzazione della trama.
 
 </dd> </dl>
 
@@ -153,7 +153,7 @@ Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la mat
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso contrario, il valore è D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D OK; in caso contrario, il valore \_ è D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -161,8 +161,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso con
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

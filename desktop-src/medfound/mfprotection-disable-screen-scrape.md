@@ -1,17 +1,17 @@
 ---
 description: Specifica la disabilitazione della protezione dello scarto dello schermo.
 ms.assetid: 2CA548FC-0923-4E02-BFEE-A5179C0C5110
-title: Attributo MFPROTECTION_DISABLE_SCREEN_SCRAPE (Mfidl. h)
+title: MFPROTECTION_DISABLE_SCREEN_SCRAPE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7577e3efc9e52419ed965a4599841543d565d722
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c97de33bd4ebbf7b66693881a9eedddcae7c14d9ac0d773d82ce3a23e952b832
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241622"
 ---
-# <a name="mfprotection_disable_screen_scrape-attribute"></a>MFPROTECTION \_ Disabilita \_ l' \_ attributo dello scarto dello schermo
+# <a name="mfprotection_disable_screen_scrape-attribute"></a>Attributo MFPROTECTION \_ DISABLE \_ SCREEN \_ SCRAPE
 
 Specifica la disabilitazione della protezione dello scarto dello schermo.
 
@@ -25,9 +25,9 @@ Specifica la disabilitazione della protezione dello scarto dello schermo.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica la disabilitazione della protezione dello scarto dello schermo.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

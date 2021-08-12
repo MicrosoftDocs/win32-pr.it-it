@@ -1,9 +1,9 @@
 ---
-title: STARTTIME (elemento)
-description: L'elemento STARTTIME definisce un indice temporale da cui Windows Media Player avvierà il rendering del flusso.
+title: Elemento STARTTIME
+description: L'elemento STARTTIME definisce un indice temporale dal quale Windows Media Player il rendering del flusso.
 ms.assetid: 9b0199c8-5c95-4b4e-a943-e3bd037bf0bc
 keywords:
-- Elemento STARTTIME Media Player Windows
+- Elemento STARTTIME Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a882da6c07ec76a94c8e214fe1da11c71680b0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9138b05b949098c59996c69143059de5cb5b25cafcd8da7d922de120d586b356
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568793"
 ---
-# <a name="starttime-element"></a>STARTTIME (elemento)
+# <a name="starttime-element"></a>Elemento STARTTIME
 
-L'elemento **StartTime** definisce un indice temporale da cui Windows Media Player avvierà il rendering del flusso.
+**L'elemento STARTTIME** definisce un indice temporale dal quale Windows Media Player il rendering del flusso.
 
 ``` syntax
 <STARTTIME
@@ -32,9 +32,9 @@ L'elemento **StartTime** definisce un indice temporale da cui Windows Media Play
 
 ## <a name="attributes"></a>Attributi
 
-**Valore** (obbligatorio)
+**VALUE** (obbligatorio)
 
-Indice temporale (in ore, minuti, secondi e centesimi di secondo) dal quale Windows Media Player avvia la riproduzione di un flusso definito nell'elemento associato.
+Indice di tempo (in ore, minuti, secondi e centesimi di secondo) da cui Windows Media Player la riproduzione di un flusso definito nell'elemento associato.
 
 ## <a name="parentchild-elements"></a>Elementi padre/figlio
 
@@ -42,7 +42,7 @@ Indice temporale (in ore, minuti, secondi e centesimi di secondo) dal quale Wind
 
 | Gerarchia       | Elementi           |
 |-----------------|--------------------|
-| Elementi padre | **voce**, **ref** |
+| Elementi padre | **ENTRY**, **REF** |
 | Elementi figlio  | nessuno               |
 
 
@@ -51,7 +51,7 @@ Indice temporale (in ore, minuti, secondi e centesimi di secondo) dal quale Wind
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo elemento definisce un indice temporale nel contenuto in cui Windows Media Player deve avviare il rendering del flusso. Questo elemento può essere usato solo con contenuto archiviato su richiesta che è stato indicizzato.
+Questo elemento definisce un indice temporale nel contenuto in cui Windows Media Player avviare il rendering del flusso. Questo elemento può essere usato solo con il contenuto archiviato su richiesta indicizzato.
 
 ## <a name="examples"></a>Esempio
 
@@ -76,10 +76,10 @@ Questo elemento definisce un indice temporale nel contenuto in cui Windows Media
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sul metafile multimediale**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

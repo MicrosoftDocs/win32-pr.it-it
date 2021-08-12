@@ -1,5 +1,5 @@
 ---
-title: 'Metodi ByteAddressBuffer:: Load3'
+title: Metodi ByteAddressBuffer::Load3
 description: Ottiene tre valori da un buffer di sola lettura indicizzato in byte.
 ms.assetid: FDC92927-661D-416C-98EA-FD8101110882
 keywords:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 1a6c38f497a09005aa1279d97250c442f6f0a4f5
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: af92095dab7b90870f7c52e072b68497145849fe4ed3b349bdae00876cbc17df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "103857678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118287466"
 ---
 # <a name="load3-methods"></a>Metodi Load3
 
@@ -29,8 +29,8 @@ Ottiene tre valori da un buffer di sola lettura indicizzato in byte.
 
 | Metodo                                                            | Descrizione                                                    |
 |:------------------------------------------------------------------|:---------------------------------------------------------------|
-| [**Load3 (uint)**](sm5-object-byteaddressbuffer-load3.md)         | Ottiene tre valori. <br/>                                 |
-| [**Load3 (uint, uint)**](sm5-object-byteaddressbuffer-load3-2.md) | Ottiene tre valori e lo stato dell'operazione. <br/> |
+| [**Load3(uint)**](sm5-object-byteaddressbuffer-load3.md)         | Ottiene tre valori. <br/>                                 |
+| [**Load3(uint, uint)**](sm5-object-byteaddressbuffer-load3-2.md) | Ottiene tre valori e lo stato dell'operazione. <br/> |
 
 
 

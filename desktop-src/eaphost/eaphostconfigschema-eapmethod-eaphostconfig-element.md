@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85c7df5649ea430518ee7e848645680336a37b86
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 9691ff65709c451efc5de92099a6ec37d333a476d2997b365ba6b1df73546fbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104047369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274775"
 ---
 # <a name="eapmethod-eaphostconfig-element"></a>Elemento EapMethod (EapHostConfig)
 
-L'elemento **EapMethod (EapHostConfig)** identifica il metodo a cui si fa riferimento.
+**L'elemento EapMethod (EapHostConfig)** identifica il metodo a cui si fa riferimento.
 
 ``` syntax
 <xs:element name="EapMethod"
@@ -31,7 +31,7 @@ L'elemento **EapMethod (EapHostConfig)** identifica il metodo a cui si fa riferi
  />
 ```
 
-L'elemento **EapMethod** è definito dall'elemento [**EapHostConfig**](eaphostconfigschema-eaphostconfig-element.md) .
+**L'elemento EapMethod** è definito dall'elemento [**EapHostConfig.**](eaphostconfigschema-eaphostconfig-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,8 +39,8 @@ L'elemento **EapMethod** è definito dall'elemento [**EapHostConfig**](eaphostco
 
 | Ruolo | Versione minima del sistema operativo |
 |------|--------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>              |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>              |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

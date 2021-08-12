@@ -1,7 +1,7 @@
 ---
-description: Imposta i dati della Rep del punto per la mesh.
+description: Impostare i dati della ripetizione punti per la mesh.
 ms.assetid: 451a1ff0-68fa-48c4-b3f1-d41d7583cb3f
-title: 'Metodo ID3DX10Mesh:: SetPointRepData (D3DX10. h)'
+title: Metodo ID3DX10Mesh::SetPointRepData (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 65114c5411de7932e9cb71166fcf8554fa0bf7b6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: af7db99222e124e7a137a308863daa6db0413660b06bdc529e12da53b2b90fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302586"
 ---
-# <a name="id3dx10meshsetpointrepdata-method"></a>Metodo ID3DX10Mesh:: SetPointRepData
+# <a name="id3dx10meshsetpointrepdata-method"></a>Metodo ID3DX10Mesh::SetPointRepData
 
-Imposta i dati della Rep del punto per la mesh.
+Impostare i dati della ripetizione punti per la mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT SetPointRepData(
 
 <dl> <dt>
 
-*pPointReps* \[ in\]
+*pPointReps* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**uint**](../winprog/windows-data-types.md) \***
+Tipo: **const [**UINT**](../winprog/windows-data-types.md) \***
 
-Dati della Rep del punto da impostare.
+Dati della virgola da impostare.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Dati della Rep del punto da impostare.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

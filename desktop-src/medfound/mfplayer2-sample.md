@@ -1,37 +1,37 @@
 ---
-description: Importante deprecato.
+description: Importante Deprecato.
 ms.assetid: bb71e792-d09c-4338-9cf4-4854e14042f9
-title: Esempio MFPlayer2
+title: Esempio di MFPlayer2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1904dcc6e64024dacb76e9109f2e785ec8d5a96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ead2df415af1584f34661a0c1d18751350d59bd1a94ac48f41d3bf9dca2070f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241733"
 ---
-# <a name="mfplayer2-sample"></a>Esempio MFPlayer2
+# <a name="mfplayer2-sample"></a>Esempio di MFPlayer2
 
 > [!IMPORTANT]
-> Deprecato. Questa API può essere rimossa dalle versioni successive di Windows. Le applicazioni devono usare la [sessione multimediale](media-session.md) per la riproduzione.
+> Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows. Le applicazioni devono usare la [sessione multimediale per](media-session.md) la riproduzione.
 
  
 
-Vengono illustrate alcune delle funzionalità di riproduzione omesse dall'esempio [SimplePlay](simpleplay-sample.md) , ad esempio:
+Illustra alcune delle funzionalità di riproduzione omesse [dall'esempio SimplePlay,](simpleplay-sample.md) ad esempio:
 
--   La ricerca
+-   riercare
 -   Controllo della frequenza (avanzamento rapido e riavvolgimento)
--   Volume audio e controlli di silenziamento
+-   Controlli volume audio e disattivazione audio
 -   Zoom video
 
-Nell'immagine seguente vengono illustrati i controlli utilizzati per queste funzionalità.
+L'immagine seguente mostra i controlli usati per queste funzionalità.
 
-![screenshot dell'esempio mfplayer ](images/mfplayer2.png)
+![Screenshot dell'esempio mfplayer ](images/mfplayer2.png)
 
-## <a name="apis-demonstrated"></a>API illustrate
+## <a name="apis-demonstrated"></a>DIMOSTRAZIONE DELLE API
 
-In questo esempio vengono illustrate le API seguenti.
+Questo esempio illustra le API seguenti.
 
 -   [**IAudioSessionControl**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol)
 -   [**IAudioSessionManager**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager)
@@ -56,7 +56,7 @@ In questo esempio vengono illustrate le API seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository GitHub degli esempi classici di Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFPlayer2).
+Questo esempio è disponibile nel [repository github Windows esempi classici.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFPlayer2)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
