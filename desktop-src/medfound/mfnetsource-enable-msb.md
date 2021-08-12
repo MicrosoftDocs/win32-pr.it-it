@@ -1,17 +1,17 @@
 ---
 description: Specifica se il protocollo multicast MSB (Media Stream Broadcast) è abilitato nell'origine di rete.
 ms.assetid: a46e3b4c-60be-4470-b9dc-041902c2563c
-title: Proprietà MFNETSOURCE_ENABLE_MSB (Mfidl. h)
+title: MFNETSOURCE_ENABLE_MSB proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e6b2a49876cf504bfc4e086ab1e064e6835283a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1054b4a94bf966457ddeccc606fbd2fd2c8a1d5b3978b830b5e3c48f0f93b5ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243818"
 ---
-# <a name="mfnetsource_enable_msb-property"></a>MFNETSOURCE \_ Abilita \_ Proprietà MSB
+# <a name="mfnetsource_enable_msb-property"></a>MFNETSOURCE \_ ENABLE - proprietà \_ MSB
 
 Specifica se il protocollo multicast MSB (Media Stream Broadcast) è abilitato nell'origine di rete.
 
@@ -19,7 +19,7 @@ Specifica se il protocollo multicast MSB (Media Stream Broadcast) è abilitato n
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-La costante **MFNETSOURCE \_ enable \_ MSB** definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero.
+La costante **MFNETSOURCE \_ ENABLE \_ MSB** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un puntatore **IPropertyStore** al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **puntatore IPropertyStore** al resolver di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale.](configuring-a-media-source.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)

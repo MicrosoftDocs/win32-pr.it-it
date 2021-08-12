@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_INPUT_DEVICE_CHANGE (winuser. h)
-description: Inviato alla finestra registrata per ricevere input non elaborato. Una finestra riceve questo messaggio tramite la funzione WindowProc.
+title: WM_INPUT_DEVICE_CHANGE messaggio (Winuser.h)
+description: Inviato alla finestra registrata per ricevere input non elaborato. Una finestra riceve questo messaggio tramite la relativa funzione WindowProc.
 ms.assetid: 2f98d8ea-b47b-4dea-9c38-f9697b18053a
 keywords:
-- Input della tastiera e del mouse WM_INPUT_DEVICE_CHANGE messaggio
+- WM_INPUT_DEVICE_CHANGE messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -19,22 +19,22 @@ req.target-min-winverclnt: Windows Vista [desktop apps only]
 req.target-min-winversvr: Windows Server 2008 [desktop apps only]
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0edb6dbfbcfa9e024ba85613e3b7671e5f416397
-ms.sourcegitcommit: 47d1f3859035a69340571bf50c3d36e0abeb2126
+ms.openlocfilehash: 823aeaf5655703802f07fb238d5c6c5dc479defa12ae4a416423b4519fd2b64f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "104047537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247887"
 ---
-# <a name="wm_input_device_change-message"></a>Messaggio WM_INPUT_DEVICE_CHANGE
+# <a name="wm_input_device_change-message"></a>WM_INPUT_DEVICE_CHANGE messaggio
 
 ## <a name="description"></a>Descrizione
 
 Inviato alla finestra registrata per ricevere input non elaborato. 
 
-Le notifiche di input non elaborate sono disponibili solo dopo che l'applicazione chiama [RegisterRawInputDevices](/windows/win32/api/winuser/nf-winuser-registerrawinputdevices) con [RIDEV_DEVNOTIFY](/windows/win32/api/winuser/ns-winuser-rawinputdevice) flag.
+Le notifiche di input non elaborato sono disponibili solo dopo che l'applicazione ha [chiamato RegisterRawInputDevices](/windows/win32/api/winuser/nf-winuser-registerrawinputdevices) [con RIDEV_DEVNOTIFY](/windows/win32/api/winuser/ns-winuser-rawinputdevice) flag .
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 ```C++
 #define WM_INPUT_DEVICE_CHANGE          0x00FE
@@ -48,14 +48,14 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 
 </dt> <dd>
 
-Tipo: **wParam**
+Tipo: **WPARAM**
 
 Questo parametro può avere uno dei valori seguenti.
 
 | Valore                    | Significato                                    |
 |--------------------------|--------------------------------------------|
-| **GIDC \_ arrivo** </br>1 | Al sistema è stato aggiunto un nuovo dispositivo. </br> È possibile chiamare [GetRawInputDeviceInfo](/windows/win32/api/winuser/nf-winuser-getrawinputdeviceinfoa) per ottenere altre informazioni sul dispositivo. |
-| **rimozione di GIDC \_** </br>2 | Un dispositivo è stato rimosso dal sistema. |
+| **ARRIVO \_ GIDC** </br>1 | È stato aggiunto un nuovo dispositivo al sistema. </br> È possibile chiamare [GetRawInputDeviceInfo](/windows/win32/api/winuser/nf-winuser-getrawinputdeviceinfoa) per ottenere altre informazioni sul dispositivo. |
+| **RIMOZIONE DI \_ GIDC** </br>2 | Un dispositivo è stato rimosso dal sistema. |
 
 </dd> <dt>
 
@@ -63,15 +63,15 @@ Questo parametro può avere uno dei valori seguenti.
 
 </dt> <dd>
 
-Tipo: **lParam**
+Tipo: **LPARAM**
 
-**Handle** per il dispositivo di input non elaborato.
+HANDLE **per** il dispositivo di input non elaborato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="see-also"></a>Vedi anche
 

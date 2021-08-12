@@ -1,7 +1,7 @@
 - name: Stack di input del dispositivo puntatore
   href: pointer-device-stack-portal.md
   items:
-    - name: Riferimento allo stack di input del dispositivo puntatore
+    - name: Informazioni di riferimento sullo stack di input del dispositivo puntatore
       href: unified-input-stack-reference.md
       items:
         - name: Enumerazioni

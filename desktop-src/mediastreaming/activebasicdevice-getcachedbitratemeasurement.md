@@ -1,11 +1,11 @@
 ---
-title: Metodo ActiveBasicDevice GetCachedBitrateMeasurement (PlayToDevice. h)
+title: Metodo ActiveBasicDevice GetCachedBitrateMeasurement (PlayToDevice.h)
 description: Ottiene la velocità in bit memorizzata nella cache.
 ms.assetid: 78C3C5D7-C46B-413D-BC18-C3861E5FDAA5
 keywords:
-- API di streaming multimediale del metodo GetCachedBitrateMeasurement
-- API di streaming multimediale del metodo GetCachedBitrateMeasurement, interfaccia ActiveBasicDevice
-- API di streaming multimediale dell'interfaccia ActiveBasicDevice, metodo GetCachedBitrateMeasurement
+- Metodo GetCachedBitrateMeasurement API Streaming multimediale
+- Metodo GetCachedBitrateMeasurement API Streaming multimediale, interfaccia ActiveBasicDevice
+- Interfaccia ActiveBasicDevice API Di streaming multimediale, metodo GetCachedBitrateMeasurement
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d15b38ba2730d2023b09c2fa0352ade1f1532724
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 031d77595298651be11c793f8fd96471808ab1aef3f5a2b6398be9c1ff10de02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236866"
 ---
-# <a name="activebasicdevicegetcachedbitratemeasurement-method"></a>Metodo ActiveBasicDevice:: GetCachedBitrateMeasurement
+# <a name="activebasicdevicegetcachedbitratemeasurement-method"></a>Metodo ActiveBasicDevice::GetCachedBitrateMeasurement
 
 Ottiene la velocità in bit memorizzata nella cache.
 
@@ -43,7 +43,7 @@ HRESULT GetCachedBitrateMeasurement(
 
 <dl> <dt>
 
-*physicalNetworkInterface* \[ in\]
+*physicalNetworkInterface* \[ Pollici\]
 </dt> <dd>
 
 Specifica l'interfaccia di rete fisica.
@@ -53,13 +53,13 @@ Specifica l'interfaccia di rete fisica.
 *velocità in bit* \[ out, retval\]
 </dt> <dd>
 
-Riceve il valore di velocità in bit.
+Riceve il valore della velocità in bit.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,10 +67,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

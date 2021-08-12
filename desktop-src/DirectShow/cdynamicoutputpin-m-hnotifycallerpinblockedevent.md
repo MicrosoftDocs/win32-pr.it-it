@@ -1,7 +1,7 @@
 ---
-description: Evento segnalato quando il pin si blocca correttamente oppure l'utente annulla un blocco in sospeso.
+description: Evento segnalato quando il pin si blocca correttamente o l'utente annulla un blocco in sospeso.
 ms.assetid: 699bb7f7-e4f7-47c3-bbb1-0bc6556651ae
-title: 'Membro CDynamicOutputPin:: m_hNotifyCallerPinBlockedEvent (Amfilter. h)'
+title: Membro CDynamicOutputPin::m_hNotifyCallerPinBlockedEvent (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3e28aa890e15602376b9500243a89e8f0e3d3bb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cfea481a3f24aee808fffba9be91b1fecf63fce8a875dc056420a8f075b677d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656406"
 ---
-# <a name="cdynamicoutputpinm_hnotifycallerpinblockedevent-member"></a>Membro hNotifyCallerPinBlockedEvent di CDynamicOutputPin:: m \_
+# <a name="cdynamicoutputpinm_hnotifycallerpinblockedevent-member"></a>Membro CDynamicOutputPin::m \_ hNotifyCallerPinBlockedEvent
 
-Evento segnalato quando il pin si blocca correttamente oppure l'utente annulla un blocco in sospeso.
+Evento segnalato quando il pin si blocca correttamente o l'utente annulla un blocco in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ HANDLE m_hNotifyCallerPinBlockedEvent;
 
 ## <a name="remarks"></a>Osservazioni
 
-Prima di accedere a questa variabile, conservare la sezione [**CDynamicOutputPin:: m \_ BlockStateLock**](cdynamicoutputpin-m-blockstatelock.md) critical.
+Prima di accedere a questa variabile, mantenere la [**sezione critica CDynamicOutputPin::m \_ BlockStateLock.**](cdynamicoutputpin-m-blockstatelock.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Prima di accedere a questa variabile, conservare la sezione [**CDynamicOutputPin
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

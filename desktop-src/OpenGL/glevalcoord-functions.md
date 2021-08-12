@@ -3,30 +3,30 @@ title: Funzioni glEvalCoord
 description: Queste funzioni valutano le mappe unidimensionali o bidimensionali abilitate.
 ms.assetid: a170a84f-780a-42a5-a085-9ce355cf8825
 keywords:
-- OpenGL, funzioni glEvalCoord
-- Riferimento OpenGL, funzioni glEvalCoord
-- informazioni di riferimento per le funzioni OpenGL, glEvalCoord
+- Funzioni OpenGL,glEvalCoord
+- Informazioni di riferimento su OpenGL, funzioni glEvalCoord
+- informazioni di riferimento per le funzioni OpenGL,glEvalCoord
 - OpenGL, valutazione mappa
-- Guida di riferimento a OpenGL, valutazione mappa
-- informazioni di riferimento per OpenGL, valutazione mappa
-- funzioni glEvalCoord
-- valutazione mappa
-- OpenGL, mappe unidimensionali
-- Guida di riferimento a OpenGL, mappe unidimensionali
-- informazioni di riferimento per le mappe OpenGL, unidimensionali
+- Riferimento OpenGL, valutazione della mappa
+- informazioni di riferimento per OpenGL, valutazione della mappa
+- Funzioni glEvalCoord
+- valutazione della mappa
+- Mappe unidimensionali OpenGL
+- Riferimento OpenGL, mappe unidimensionali
+- informazioni di riferimento per OpenGL, mappe unidimensionali
 - OpenGL, mappe bidimensionali
-- Guida di riferimento a OpenGL, mappe bidimensionali
+- Riferimento OpenGL, mappe bidimensionali
 - informazioni di riferimento per OpenGL, mappe bidimensionali
-- Mappe unidimensionali
+- mappe unidimensionali
 - mappe bidimensionali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 127ab4fcc30884750b487b6bf997b951fdc4d9e1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aca5385dbe2009089398c301981bcadad05e1d4964ac6902d2b9ea86ad7c68f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616335"
 ---
 # <a name="glevalcoord-functions"></a>Funzioni glEvalCoord
 
@@ -41,9 +41,9 @@ Queste funzioni valutano le mappe unidimensionali o bidimensionali abilitate:
 -   [**glEvalCoord1fv**](glevalcoord1fv.md)
 -   [**glEvalCoord2fv**](glevalcoord2fv.md)
 
- 
+ 
 
- 
+ 
 
 
 

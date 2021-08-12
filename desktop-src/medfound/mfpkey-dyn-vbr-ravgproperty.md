@@ -1,19 +1,19 @@
 ---
-description: Specifica la velocità in bit media, in bit al secondo, per un codificatore configurato per l'utilizzo della codifica VBR media controllabile.
+description: Specifica la velocità in bit media, in bit al secondo, per un codificatore configurato per l'uso della codifica VBR mediamente controllabile.
 ms.assetid: d689a34c-97f7-4b1c-82b6-863ce3b8403f
-title: Proprietà MFPKEY_DYN_VBR_RAVG (Wmcodecdsp. h)
+title: MFPKEY_DYN_VBR_RAVG proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8103d36db5a9e946449231943e076c26258eec19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48ee3d3a9b9a60b664041b9c6f84c38b8da9ceef87f73177f2ace792cf043992
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242613"
 ---
-# <a name="mfpkey_dyn_vbr_ravg-property"></a>MFPKEY \_ dyn \_ - \_ Proprietà RAVG VBR
+# <a name="mfpkey_dyn_vbr_ravg-property"></a>Proprietà MFPKEY \_ DYN \_ VBR \_ RAVG
 
-Specifica la velocità in bit media, in bit al secondo, per un codificatore configurato per l'utilizzo della codifica VBR media controllabile.
+Specifica la velocità in bit media, in bit al secondo, per un codificatore configurato per l'uso della codifica VBR mediamente controllabile.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -25,7 +25,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="remarks"></a>Commenti
 
-Se le proprietà [**MFPKEY \_ AVGCONSTRAINED**](mfpkey-avgconstrainedproperty.md) e [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) sono entrambe impostate su **Variant \_ true**, il codificatore usa la codifica VBR media controllabile. In tal caso, il codificatore viene configurato in base al valore di questa proprietà e alla proprietà [**MFPKEY \_ dyn \_ VBR \_ BAVG**](mfpkey-dyn-vbr-bavgproperty.md) .
+Se le [**proprietà MFPKEY \_ AVGCONSTRAINED**](mfpkey-avgconstrainedproperty.md) e [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) sono entrambe impostate su **VARIANT \_ TRUE,** il codificatore usa la codifica VBR con controllo medio. In tal caso, il codificatore si configura in base al valore di questa proprietà e alla proprietà [**MFPKEY \_ DYN \_ VBR \_ BAVG.**](mfpkey-dyn-vbr-bavgproperty.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ Se le proprietà [**MFPKEY \_ AVGCONSTRAINED**](mfpkey-avgconstrainedproperty.md
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Se le proprietà [**MFPKEY \_ AVGCONSTRAINED**](mfpkey-avgconstrainedproperty.md
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

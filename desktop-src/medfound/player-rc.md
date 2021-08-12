@@ -1,19 +1,19 @@
 ---
-description: Questo argomento contiene il file di risorse per l'esercitazione su come riprodurre file multimediali con Media Foundation.
+description: Questo argomento contiene il file di risorse per l'esercitazione Come riprodurre file multimediali con Media Foundation.
 ms.assetid: 5454c92b-5f71-4be3-ac98-b2195c482ea4
-title: Player. RC
+title: player.rc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73ed6537a42b572d88571a5d81abb97f6fb7fe35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6489fce2f63c9abc394fbcac1ecb122bffee9896084674d3fc7f846b2e983890
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118239233"
 ---
-# <a name="playerrc"></a>Player. RC
+# <a name="playerrc"></a>player.rc
 
-Questo argomento contiene il file di risorse per l'esercitazione [su come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md).
+Questo argomento contiene il file di risorse per l'esercitazione [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++
@@ -79,7 +79,7 @@ END
 
 <dl> <dt>
 
-[Esempio di riproduzione della sessione multimediale](media-session-playback-example.md)
+[Esempio di riproduzione di sessioni multimediali](media-session-playback-example.md)
 </dt> <dt>
 
 [Riproduzione di audio/video](audio-video-playback.md)

@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se il filtro ha inviato una notifica di fine del flusso.
+description: Flag che indica se il filtro ha inviato una notifica di fine flusso.
 ms.assetid: 93f897de-04bb-4de4-a612-39b27c7d6f6c
-title: 'Membro CTransformFilter:: m_bEOSDelivered (Transfrm. h)'
+title: Membro CTransformFilter::m_bEOSDelivered (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f24b87f9808c53b5f64f66031a8ee2a4e9449089
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 38d27fabb9dd3ed2a37ed5d836bfdfb1036f4255e6af48580ab6e0678abad74b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655105"
 ---
-# <a name="ctransformfilterm_beosdelivered-member"></a>Membro bEOSDelivered di CTransformFilter:: m \_
+# <a name="ctransformfilterm_beosdelivered-member"></a>Membro CTransformFilter::m \_ bEOSDelivered
 
-Flag che indica se il filtro ha inviato una notifica di fine del flusso.
+Flag che indica se il filtro ha inviato una notifica di fine flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ BOOL m_bEOSDelivered;
 
 ## <a name="remarks"></a>Osservazioni
 
-Se il filtro si interrompe quando non dispone di una connessione di input, invia una notifica di fine flusso a valle e imposta il flag su **true**. La notifica di fine flusso garantisce che il filtro downstream non attenda gli esempi. Si noti che il metodo [**EndOfStream**](ctransformfilter-endofstream.md) del filtro non imposta questo flag.
+Se il filtro viene sospeso quando non ha una connessione di input, invia una notifica di fine flusso a valle e imposta questo flag su **TRUE.** La notifica di fine flusso garantisce che il filtro downstream non attenda i campioni. Si noti che il metodo [**EndOfStream**](ctransformfilter-endofstream.md) del filtro non imposta questo flag.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Se il filtro si interrompe quando non dispone di una connessione di input, invia
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

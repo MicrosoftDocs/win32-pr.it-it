@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MP_FASTPATH_TYPE (MpClient. h)
+title: MP_FASTPATH_TYPE enumerazione (MpClient.h)
 description: Tipo FastPath.
 ms.assetid: BD72228F-DCC0-435E-A408-BD7FB02E55E1
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MP_FASTPATH_TYPE
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMP_FASTPATH_TYPE
+- MP_FASTPATH_TYPE funzionalità dell'ambiente Windows legacy
+- PMP_FASTPATH_TYPE puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e89db79c54b166a833369ff52e47473463e0a2b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7bd9a8ce26f930a35c9c4fa547234b0d55b0b588b60881cf8aae31621e9a83a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247446"
 ---
-# <a name="mp_fastpath_type-enumeration"></a>\_Enumerazione del \_ tipo MP FastPath
+# <a name="mp_fastpath_type-enumeration"></a>Enumerazione \_ MP FASTPATH \_ TYPE
 
 Tipo FastPath.
 
@@ -43,21 +43,21 @@ typedef enum tagMP_FASTPATH_TYPE {
 
 <dl> <dt>
 
-<span id="MP_FASTPATH_UNKNOWN"></span><span id="mp_fastpath_unknown"></span>**MP \_ FastPath \_ sconosciuto**
+<span id="MP_FASTPATH_UNKNOWN"></span><span id="mp_fastpath_unknown"></span>**MP \_ FASTPATH \_ UNKNOWN**
 </dt> <dd>
 
 Sconosciuto.
 
 </dd> <dt>
 
-<span id="MP_FASTPATH_VDM"></span><span id="mp_fastpath_vdm"></span>**\_VDM FastPath \_ MP**
+<span id="MP_FASTPATH_VDM"></span><span id="mp_fastpath_vdm"></span>**MP \_ FASTPATH \_ VDM**
 </dt> <dd>
 
 Aggiornamento di VDM.
 
 </dd> <dt>
 
-<span id="MP_FASTPATH_DISABLED"></span><span id="mp_fastpath_disabled"></span>**\_FastPath MP \_ disabilitato**
+<span id="MP_FASTPATH_DISABLED"></span><span id="mp_fastpath_disabled"></span>**MP \_ FASTPATH \_ DISABILITATO**
 </dt> <dd>
 
 Notifica di disabilitazione della firma.
@@ -70,9 +70,9 @@ Notifica di disabilitazione della firma.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
