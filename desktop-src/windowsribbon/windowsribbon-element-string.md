@@ -3,7 +3,7 @@ title: Elemento String
 description: Rappresenta una risorsa stringa.
 ms.assetid: 83e5bdbb-ef86-4942-af40-2e327360ee67
 keywords:
-- Elemento String Della barra multifunzione di Windows
+- Elemento String Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0b0dab5d7ce1485aad5fe1e15442069c488933aa
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 80558bed1e2152454df46d8a8dc6ab4fc40056f0257a08c91026504ec64f1722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439409"
 ---
 # <a name="string-element"></a>Elemento String
 
 Rappresenta una risorsa stringa.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <String
@@ -66,14 +66,14 @@ Rappresenta una risorsa stringa.
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>ID risorsa univoco. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Valore intero compreso tra 2 e 59999, inclusi o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> La lunghezza massima è di 10 caratteri, inclusi gli zeri iniziali facoltativi. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Valore intero compreso tra 2 e 59999, inclusivo o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> La lunghezza massima è di 10 caratteri, inclusi gli zeri iniziali facoltativi. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Simbolo</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Simbolo della risorsa per la stringa.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Lettera o carattere di sottolineatura seguito da qualsiasi sequenza di lettere, cifre o caratteri di sottolineatura.<br/> La lunghezza massima consentita è 100 caratteri.<br/> </dd> </dl></td>
+<td>Simbolo di risorsa per la stringa.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Lettera o carattere di sottolineatura seguito da qualsiasi sequenza di lettere, cifre o caratteri di sottolineatura.<br/> La lunghezza massima è di 100 caratteri.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -110,7 +110,7 @@ Rappresenta una risorsa stringa.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md), [**Command.LabelDescription**](windowsribbon-element-command-labeldescription.md), [**Command.Keytip**](windowsribbon-element-command-keytip.md), [**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)o [**Command.TooltipDescription.**](windowsribbon-element-command-tooltipdescription.md)
+Può verificarsi al massimo una volta per ogni elemento [**Command.LabelTitle,**](windowsribbon-element-command-labeltitle.md) [**Command.LabelDescription,**](windowsribbon-element-command-labeldescription.md) [**Command.Keytip,**](windowsribbon-element-command-keytip.md) [**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)o [**Command.TooltipDescription.**](windowsribbon-element-command-tooltipdescription.md)
 
 La definizione di stringa viene aggiunta al file di intestazione della barra multifunzione, ad esempio `#define strSave 59999` .
 

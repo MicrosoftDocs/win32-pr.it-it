@@ -1,7 +1,7 @@
 ---
-description: Utilizzato dalle applicazioni per visualizzare una finestra di dialogo del dispositivo all'utente.
+description: Usato dalle applicazioni per visualizzare una finestra di dialogo del dispositivo all'utente.
 ms.assetid: 3b486220-32ab-4d6c-872c-684f9d1ee660
-title: Funzione DeviceDialog (Wiadevd. h)
+title: Funzione DeviceDialog (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 7389b0466dadf530da6fb7cd386d8a57d92cf1c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de8a3d36472d51c24a2c007ad7be0be371a0b5d8bb39e75f457e204250e8f53b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441679"
 ---
-# <a name="devicedialog-function"></a>DeviceDialog (funzione)
+# <a name="devicedialog-function"></a>Funzione DeviceDialog
 
-Utilizzato dalle applicazioni per visualizzare una finestra di dialogo del dispositivo all'utente.
+Usato dalle applicazioni per visualizzare una finestra di dialogo del dispositivo all'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT WINAPI DeviceDialog(
 
 <dl> <dt>
 
-*pDeviceDialogData* \[ in\]
+*pDeviceDialogData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **PDEVICEDIALOGDATA**
 
-[**DEVICEDIALOGDATA**](-wia-devicedialogdata.md) da usare per creare la finestra di dialogo del dispositivo.
+[**DEVICEDIALOGDATA da**](-wia-devicedialogdata.md) usare per creare la finestra di dialogo del dispositivo.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Tipo: **PDEVICEDIALOGDATA**
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,10 +61,10 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

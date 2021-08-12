@@ -4,14 +4,14 @@ ms.assetid: 7d120198-c016-4452-b8a8-22c4ad87d526
 title: Evento InkPicture.NewPackets (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 194fb9bffae07cca561fbfc11ff8a185d63bb9e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c11568d898bb6f152b5d430cf1f347390174c16a51b0572e45ddd3528c8e0dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451090"
 ---
-# <a name="inkpicturenewpackets-event"></a>InkPicture.NewPackets - evento
+# <a name="inkpicturenewpackets-event"></a>Evento InkPicture.NewPackets
 
 Si verifica quando l'agente di raccolta input penna riceve un pacchetto.
 
@@ -57,9 +57,9 @@ Numero di pacchetti ricevuti per un [**oggetto IInkStrokeDisp.**](/windows/deskt
 *PacketData* \[ in, out\]
 </dt> <dd>
 
-Matrice che contiene i dati selezionati per il pacchetto.
+Matrice contenente i dati selezionati per il pacchetto.
 
-Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM.](using-the-com-library.md)
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -69,13 +69,13 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-I pacchetti vengono ricevuti durante la raccolta di un tratto. Gli eventi di pacchetto si verificano rapidamente e un gestore eventi **NewPackets** deve essere veloce o le prestazioni ne risentiranno.
+I pacchetti vengono ricevuti durante la raccolta di un tratto. Gli eventi dei pacchetti si verificano rapidamente e un gestore eventi **NewPackets** deve essere veloce o le prestazioni ne risentiranno.
 
-Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ DISPID ICENewPackets.
+Questo metodo di evento è definito nelle interfacce **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ DISPID ICENewPackets.
 
-Questo evento deve essere usato con attenzione perché potrebbe avere un effetto negativo sulle prestazioni dell'input penna se viene eseguita una quantità troppo grande di codice nei gestori eventi.
+Questo evento deve essere usato con attenzione perché potrebbe avere un effetto negativo sulle prestazioni dell'input penna se viene eseguita una quantità di codice troppo grande nei gestori eventi.
 
-Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice restituita *dal parametro PacketData* contiene i dati per tali proprietà.
+Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice *restituita dal parametro PacketData* contiene i dati per tali proprietà.
 
 > [!Note]  
 > Anche se è possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o usate.
@@ -88,7 +88,7 @@ Per impostare le proprietà contenute in questa matrice, usare la [**proprietà 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

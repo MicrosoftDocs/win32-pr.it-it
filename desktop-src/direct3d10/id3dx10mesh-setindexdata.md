@@ -1,7 +1,7 @@
 ---
-description: Imposta i dati dell'indice della mesh.
+description: Impostare i dati dell'indice della mesh.
 ms.assetid: f3e7e166-94b5-45f6-9d43-8d7e32b7b523
-title: 'Metodo ID3DX10Mesh:: SetIndexData (D3DX10. h)'
+title: Metodo ID3DX10Mesh::SetIndexData (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f561a4109fbab2163b2ec51e95b45a618da5b6d5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 030e4a796be5c35b5f57e1e17832b7da7c3514edd494d5421e3c13d7b2dc3e12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540182"
 ---
-# <a name="id3dx10meshsetindexdata-method"></a>Metodo ID3DX10Mesh:: SetIndexData
+# <a name="id3dx10meshsetindexdata-method"></a>Metodo ID3DX10Mesh::SetIndexData
 
-Imposta i dati dell'indice della mesh.
+Impostare i dati dell'indice della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT SetIndexData(
 
 <dl> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const \* void**
@@ -50,10 +50,10 @@ Dati dell'indice.
 
 </dd> <dt>
 
-*cIndices* \[ in\]
+*cIndices* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di indici in pData.
 
@@ -63,7 +63,7 @@ Numero di indici in pData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

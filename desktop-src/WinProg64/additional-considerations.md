@@ -1,21 +1,21 @@
 ---
 title: Ulteriori considerazioni
-description: Quando si porta il codice, considerare i punti seguenti.
+description: Quando si esegue la portabilità del codice, tenere presente quanto segue.
 ms.assetid: 2d649a09-b593-477a-9b4f-d2404784f4b0
 keywords:
-- Suggerimenti per il porting per la programmazione Windows a 64 bit
+- porting tips 64-bit Windows Programming (Suggerimenti per la portabilità a 64 bit Windows programmazione)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7607685f4b4ba04b86da276c38090a48ce0fead
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 199f522bebf0d6d5552aa81d99aab12f77685dea35eb329b9e7d11d46b4f1500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118561536"
 ---
 # <a name="additional-considerations"></a>Ulteriori considerazioni
 
-Quando si porta il codice, considerare i punti seguenti:
+Quando si esegue la portabilità del codice, tenere presente quanto segue:
 
 - Il presupposto seguente non è più valido:
 
@@ -27,7 +27,7 @@ Quando si porta il codice, considerare i punti seguenti:
    #endif
    ```
 
-   Tuttavia, il compilatore a 64 bit definisce \_ Win32 per la compatibilità con le versioni precedenti.
+   Tuttavia, il compilatore a 64 bit definisce WIN32 per la \_ compatibilità con le versioni precedenti.
 
 - Il presupposto seguente non è più valido:
 
@@ -39,17 +39,17 @@ Quando si porta il codice, considerare i punti seguenti:
    #endif
    ```
 
-   In questo caso, la clausola else può rappresentare \_ Win32 o \_ Win64.
+   In questo caso, la clausola else può rappresentare \_ WIN32 o \_ WIN64.
 
-- Prestare attenzione all'allineamento del tipo di dati. La macro di **\_ allineamento dei tipi** restituisce i requisiti di allineamento di un tipo di dati. Ad esempio: `TYPE_ALIGNMENT( KFLOATING_SAVE )` = = 4 su x86, 8 su processore Intel Itanium `TYPE_ALIGNMENT( UCHAR )` = = 1 ovunque
+- Prestare attenzione con l'allineamento del tipo di dati. La macro **TYPE \_ ALIGNMENT** restituisce i requisiti di allineamento di un tipo di dati. Ad esempio: `TYPE_ALIGNMENT( KFLOATING_SAVE )` == 4 su x86, 8 nel processore Intel Itanium `TYPE_ALIGNMENT( UCHAR )` == 1 ovunque
 
-    Ad esempio, il codice del kernel che attualmente ha un aspetto simile al seguente:
+    Ad esempio, il codice del kernel è simile al seguente:
 
     ```syntax
     ProbeForRead( UserBuffer, UserBufferLength, sizeof(ULONG) );
     ```
 
-    è probabilmente necessario modificare in:
+    probabilmente deve essere modificato in:
 
     ```syntax
     ProbeForRead( UserBuffer, UserBufferLength, TYPE_ALIGNMENT(IOCTL_STRUC) );
@@ -65,13 +65,13 @@ Quando si porta il codice, considerare i punti seguenti:
     a = a & ~(b - 1);
     ```
 
-    Il problema è che ~ (b-1) produce "0x0000 0000 xxxx xxxx" e non "0xFFFF FFFF xxxx xxxx". Il compilatore non riuscirà a rilevare questo problema. Per risolvere il problema, modificare il codice nel modo seguente:
+    Il problema è che ~(b–1) produce "0x0000 0000 xxxx xxxx" e non "0xFFFF FFFF xxxx xxxx". Il compilatore non lo rileverà. Per risolvere il problema, modificare il codice come segue:
 
     ```syntax
     a = a & ~((UINT_PTR)b - 1);
     ```
 
-- Prestare attenzione a eseguire operazioni senza segno e firmate. Considerare quanto segue:
+- Prestare attenzione durante l'esecuzione di operazioni non firmate e firmate. Considerare quanto segue:
 
     ```syntax
     LONG a;
@@ -83,9 +83,9 @@ Quando si porta il codice, considerare i punti seguenti:
     c = a / b;
     ```
 
-    Il risultato è inaspettatamente grande. La regola è che se uno degli operandi è senza segno, il risultato è senza segno. Nell'esempio precedente, un oggetto viene convertito in un valore senza segno, diviso per b, e il risultato archiviato in c. La conversione non prevede alcuna manipolazione numerica.
+    Il risultato è imprevistamente grande. La regola è che se uno degli operandi è senza segno, il risultato è senza segno. Nell'esempio precedente, a viene convertito in un valore senza segno, diviso per b, e il risultato viene archiviato in c. La conversione non comporta alcuna manipolazione numerica.
 
-    Come altro esempio, tenere presente quanto segue:
+    Come altro esempio, si consideri quanto segue:
 
     ```syntax
     ULONG x;
@@ -96,9 +96,9 @@ Quando si porta il codice, considerare i punti seguenti:
     pVar2 = pVar1 + y * (x - 1);
     ```
 
-    Il problema si verifica perché x è senza segno, il che rende l'intera espressione senza segno. Questa operazione funziona correttamente, a meno che y non sia negativo. In questo caso, y viene convertito in un valore senza segno, l'espressione viene valutata con precisione a 32 bit, ridimensionata e aggiunta a pVar1. Un numero negativo senza segno a 32 bit diventa un numero positivo a 64 bit di grandi dimensioni, che fornisce il risultato errato. Per risolvere il problema, dichiarare x come valore con segno o typecast in modo esplicito a **Long** nell'espressione.
+    Il problema si verifica perché x è senza segno, il che rende l'intera espressione senza segno. Questa operazione funziona correttamente a meno che y non sia negativo. In questo caso, y viene convertito in un valore senza segno, l'espressione viene valutata usando la precisione a 32 bit, ridimensionata e aggiunta a pVar1. Un numero negativo senza segno a 32 bit diventa un numero positivo a 64 bit elevato, che restituisce il risultato errato. Per risolvere questo problema, dichiarare x come valore con segno o eseguire in modo esplicito il cast del tipo a **LONG** nell'espressione.
 
-- Prestare attenzione quando si effettuano allocazioni di dimensioni a fasi. Ad esempio:
+- Prestare attenzione quando si effettuano allocazioni di dimensioni a frammenti. Esempio:
 
     ```syntax
     struct xx {
@@ -107,7 +107,7 @@ Quando si porta il codice, considerare i punti seguenti:
     };
     ```
 
-    Il codice seguente non è corretto perché il compilatore riempie la struttura con altri 4 byte per rendere l'allineamento a 8 byte:
+    Il codice seguente non è corretto perché il compilatore riempire la struttura con altri 4 byte per rendere l'allineamento a 8 byte:
 
     ```syntax
     malloc(sizeof(DWORD) + 100*sizeof(PVOID));
@@ -119,8 +119,8 @@ Quando si porta il codice, considerare i punti seguenti:
     malloc(offsetof(struct xx, Pointers) + 100*sizeof(PVOID));
     ```
 
-- Non passare `(HANDLE)0xFFFFFFFF` a funzioni come [**CreateFileMapping**](/windows/desktop/api/winbase/nf-winbase-createfilemappinga). Usare invece un **\_ \_ valore di handle non valido**.
-- Usare gli identificatori di formato corretti durante la stampa di una stringa. Utilizzare% p per stampare i puntatori in formato esadecimale. Questa è la scelta migliore per i puntatori alla stampa. Microsoft Visual C++ supporta% I per stampare i dati polimorfici. Visual C++ supporta anche% I64 per stampare valori con 64 bit.
+- Non passare a `(HANDLE)0xFFFFFFFF` funzioni come [**CreateFileMapping**](/windows/desktop/api/winbase/nf-winbase-createfilemappinga). Usare invece **INVALID \_ HANDLE \_ VALUE**.
+- Usare gli identificatori di formato corretto durante la stampa di una stringa. Usare %p per stampare i puntatori in formato esadecimale. Questa è la scelta migliore per la stampa dei puntatori. Microsoft Visual C++ supporta %I per stampare dati polimorfici. Visual C++ supporta anche %I64 per stampare valori a 64 bit.
 
  
 

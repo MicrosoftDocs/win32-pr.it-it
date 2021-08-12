@@ -4,12 +4,12 @@ ms.assetid: 65e7f68b-f911-4634-b850-178eb6eaf86e
 title: Evento InkCollector.CursorButtonDown (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd1a820445a1ba3ed07dad8a22a11ad86e8da96f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e2c8a2c1a2e832d4fd18c7c84f9905d0aa1694b425f5f5e7ece91e96afc1684f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451294"
 ---
 # <a name="inkcollectorcursorbuttondown-event"></a>Evento InkCollector.CursorButtonDown
 
@@ -63,7 +63,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

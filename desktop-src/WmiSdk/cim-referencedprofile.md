@@ -1,8 +1,8 @@
 ---
-description: Utilizzato per associare un'istanza CIM \_ RegisteredProfile a un'istanza di CIM \_ RegisteredProfile di un altro profilo che fa riferimento al profilo dipendente come profilo correlato.
+description: Usato per associare un'istanza di CIM RegisteredProfile a un'istanza di CIM RegisteredProfile di un altro profilo che fa riferimento al profilo \_ \_ dipendente come profilo correlato.
 ms.assetid: 631003de-477b-4447-9633-1601a7f8eadb
 ms.tgt_platform: multiple
-title: Classe CIM_ReferencedProfile
+title: CIM_ReferencedProfile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - Schema
 api_location:
 - Root\interop
-ms.openlocfilehash: 8fdc0d8dccd325ae7e13de971e09cce6faf93455
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39cfa6dac2fd827b2ce690afa5cdd7126322c2f81182db674517c75911791a0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556813"
 ---
-# <a name="cim_referencedprofile-class"></a>CIM \_ ReferencedProfile (classe)
+# <a name="cim_referencedprofile-class"></a>Classe CIM \_ ReferencedProfile
 
-Utilizzato per associare un'istanza [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a un'istanza di **CIM \_ RegisteredProfile** di un altro profilo che fa riferimento al profilo dipendente come profilo correlato.
+Usato per associare [**un'istanza di CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a un'istanza di **CIM \_ RegisteredProfile** di un altro profilo che fa riferimento al profilo dipendente come profilo correlato.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_ReferencedProfile : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ReferencedProfile** presenta questi tipi di membri:
+La **classe CIM \_ ReferencedProfile** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ReferencedProfile** dispone di queste proprietà.
+La **classe CIM \_ ReferencedProfile** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ Tipo di dati: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=v
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica l'istanza [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a cui fa riferimento il profilo **dipendente** .
+Specifica [**l'istanza CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a cui fa riferimento il **profilo** dipendente.
 
 </dd> <dt>
 
@@ -79,15 +79,15 @@ Tipo di dati: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=v
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica un'istanza [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) che fa riferimento ad altri profili.
+Specifica [**un'istanza CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) che fa riferimento ad altri profili.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'uso delle proprietà **dipendenti** e **precedenti** nell'associazione **CIM \_ ReferencedProfile** è definito in modo che il profilo a cui viene fatto riferimento sia l'attività precedente e che il profilo che esegue il riferimento sia il dipendente.
+L'uso delle proprietà **Dependent** e **Antecedent** nell'associazione **CIM \_ ReferencedProfile** viene definito in modo che il profilo a cui si fa riferimento sia l'attività precedente e che il profilo che fa riferimento sia il dipendente.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 7<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                      |
-| Spazio dei nomi<br/>                | \\Interoperabilità radice<br/>                                                               |
-| MOF<br/>                      | <dl> <dt>Interop. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Interoperabilità \\ radice<br/>                                                               |
+| MOF<br/>                      | <dl> <dt>Interop.mof</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](/windows/desktop/CIMWin32Prov/cim-dependency)
+[**Dipendenza \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency)
 </dt> </dl>
 
  

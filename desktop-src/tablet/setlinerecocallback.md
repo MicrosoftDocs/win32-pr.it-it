@@ -1,7 +1,7 @@
 ---
 description: Imposta una funzione di callback da utilizzare durante il riconoscimento della riga.
 ms.assetid: 0b07ec80-328a-471b-b554-fa66f56a2871
-title: SetLineRecoCallback (funzione)
+title: Funzione SetLineRecoCallback
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: b256a38d6d6ee6ecf43994c6619c369ea6ca2212
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b0e146152f88a8847b76ac9d00cf7b10c0d5ebfdafa1dc483eca4d946517fd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449301"
 ---
-# <a name="setlinerecocallback-function"></a>SetLineRecoCallback (funzione)
+# <a name="setlinerecocallback-function"></a>Funzione SetLineRecoCallback
 
 Imposta una funzione di callback da utilizzare durante il riconoscimento della riga.
 
-Questa funzione helper non è progettata per essere utilizzata dal codice dell'applicazione.
+Questa funzione helper non deve essere usata dal codice dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ HRESULT WINAPI SetLineRecoCallback(
 
 <dl> <dt>
 
-*hDivider* \[ in\]
+*hDivider* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto [**InkDivider**](inkdivider-class.md) .
+Handle per [**l'oggetto InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
-*PFN* 
+*Pfn* 
 </dt> <dd>
 
-Puntatore a una funzione che viene chiamata quando si verifica il riconoscimento in [**InkDivider**](inkdivider-class.md) passato.
+Puntatore a una funzione chiamata quando si verifica il riconoscimento [**nell'oggetto InkDivider**](inkdivider-class.md) passato.
 
 </dd> </dl>
 
@@ -65,8 +65,8 @@ Questa funzione può restituire uno di questi valori.
 
 | Codice restituito                                                                                  | Descrizione                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Funzione completata.<br/>              |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *pDivider* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Funzione completata.<br/>              |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro pDivider* non è valido.<br/> |
 
 
 
@@ -96,7 +96,7 @@ public delegate void GetLineRecoDef(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                         |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                         |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
 | Libreria<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

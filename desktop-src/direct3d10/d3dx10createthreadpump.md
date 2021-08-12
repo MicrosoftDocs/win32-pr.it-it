@@ -1,7 +1,7 @@
 ---
 description: Creare una pompa di thread.
 ms.assetid: a7a016e2-784d-4d7a-8058-88895bf3c4e2
-title: Funzione D3DX10CreateThreadPump (D3DX10. h)
+title: Funzione D3DX10CreateThreadPump (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8a27f8df1f4eaa8e7f41e863d703063308f9c595
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 99b5766625f2a269d1fb36e9e808c206d0e3040419f505622ccfe1e27ca4bcdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541060"
 ---
-# <a name="d3dx10createthreadpump-function"></a>D3DX10CreateThreadPump (funzione)
+# <a name="d3dx10createthreadpump-function"></a>Funzione D3DX10CreateThreadPump
 
 Creare una pompa di thread.
 
@@ -42,30 +42,30 @@ HRESULT D3DX10CreateThreadPump(
 
 <dl> <dt>
 
-*cIoThreads* \[ in\]
+*cIoThreads* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di thread I/O da creare. Se si specifica 0, Direct3D tenterà di calcolare il numero ottimale di thread in base alla configurazione hardware.
+Numero di thread di I/O da creare. Se si specifica 0, Direct3D tenterà di calcolare il numero ottimale di thread in base alla configurazione hardware.
 
 </dd> <dt>
 
-*cProcThreads* \[ in\]
+*cProcThreads* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di thread di processo da creare. Se si specifica 0, Direct3D tenterà di calcolare il numero ottimale di thread in base alla configurazione hardware.
 
 </dd> <dt>
 
-*ppThreadPump* \[ out\]
+*ppThreadPump* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\*\***
 
-Pompa di thread creata. Vedere [**interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md).
+Thread pump creato. Vedere [**Interfaccia ID3DX10ThreadPump.**](id3dx10threadpump.md)
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Pompa di thread creata. Vedere [**interfaccia ID3DX10ThreadPump**](id3dx10thread
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Una pompa di thread è un oggetto con utilizzo intensivo delle risorse. Per ogni applicazione è necessario creare solo un thread pump.
+Un thread pump è un oggetto a elevato utilizzo di risorse. È necessario creare un solo thread pump per ogni applicazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Una pompa di thread è un oggetto con utilizzo intensivo delle risorse. Per ogni
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Una pompa di thread è un oggetto con utilizzo intensivo delle risorse. Per ogni
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

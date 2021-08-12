@@ -1,7 +1,7 @@
 ---
 description: Creare un oggetto dispositivo.
 ms.assetid: 5b9b00de-c744-43c7-b383-1d3358c80741
-title: 'Metodo ID3DX10DataProcessor:: CreateDeviceObject (D3DX10. h)'
+title: Metodo ID3DX10DataProcessor::CreateDeviceObject (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1ed362f992ca2b9d3ce6e561e08e5fe7fd0bdbe3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ca20de85e867cc8c444f05ea187fb314a6b983ad8c72a5f8ae921c0747bd9ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540419"
 ---
-# <a name="id3dx10dataprocessorcreatedeviceobject-method"></a>Metodo ID3DX10DataProcessor:: CreateDeviceObject
+# <a name="id3dx10dataprocessorcreatedeviceobject-method"></a>Metodo ID3DX10DataProcessor::CreateDeviceObject
 
 Creare un oggetto dispositivo.
 
@@ -40,10 +40,10 @@ HRESULT CreateDeviceObject(
 
 <dl> <dt>
 
-*ppDataObject* \[ out\]
+*ppDataObject* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
 Indirizzo di un puntatore all'oggetto dispositivo creato.
 
@@ -53,7 +53,7 @@ Indirizzo di un puntatore all'oggetto dispositivo creato.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

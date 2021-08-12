@@ -1,7 +1,7 @@
 ---
-description: 'Funzione proxy di Windows Imaging Component (WIC) per IEnumString:: Next.'
+description: Windows Funzione proxy WIC (Imaging Component) per IEnumString::Next.
 ms.assetid: a3f6a32b-3043-4bea-a70b-0b4507b4e3a1
-title: Funzione IEnumString_Next_WIC_Proxy
+title: IEnumString_Next_WIC_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: ae3e25b355268fe63025692bf116b60b45122e76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ef7fcced4e38b83372c214a11486f5942c9594e7158f3463699ea82c56b81c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439582"
 ---
-# <a name="ienumstring_next_wic_proxy-function"></a>\_ \_ Funzione proxy WIC successiva IEnumString \_
+# <a name="ienumstring_next_wic_proxy-function"></a>Funzione proxy WIC IEnumString \_ \_ \_ next
 
-Funzione proxy di Windows Imaging Component (WIC) per IEnumString:: Next.
+Windows Funzione proxy WIC (Imaging Component) per IEnumString::Next.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT IEnumString_Next_WIC_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **IEnumString \** _
+Tipo: **IEnumString \***
 
 PARAMDESC
 
@@ -51,9 +51,9 @@ PARAMDESC
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -63,9 +63,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo app desktop di Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

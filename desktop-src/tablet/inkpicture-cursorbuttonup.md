@@ -4,12 +4,12 @@ ms.assetid: bb10b032-a88d-4b52-9062-c0b63dfe98e9
 title: Evento InkPicture.CursorButtonUp (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 639d0cbd89e2ca44d8855b6508c5284f59a7c654
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 56a84a5d8529ecf6387d3832608ae3821be9d317fef46211a6824bddc2ee9574
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451080"
 ---
 # <a name="inkpicturecursorbuttonup-event"></a>Evento InkPicture.CursorButtonUp
 
@@ -34,7 +34,7 @@ void CursorButtonUp(
 *Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorButtonUp.**
+Oggetto [**IInkCursor Interface**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento **CursorButtonUp.**
 
 </dd> <dt>
 
@@ -51,11 +51,11 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Un pulsante sulla punta di una penna è in alto quando l'utente completa un tratto e solleva la penna dal digitalizzatore. Quando il pulsante non è premuto, è disponibile un pulsante su una freccia verso l'alto.
+Un pulsante su una punta della penna è in alto quando l'utente completa un tratto e solleva la penna dal digitalizzatore. Un pulsante su un barile è in alto quando il pulsante non viene premuto.
 
-Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due eventi **CursorButtonUp:** uno per il pulsante destro verso l'alto e uno per il pulsante sinistro in alto.
+Quando si rilascia il pulsante destro del mouse, si ricevono effettivamente due **eventi CursorButtonUp,** uno per il pulsante destro verso l'alto e uno per il pulsante sinistro verso l'alto.
 
-Questo metodo di evento è definito nelle interfacce dispatch **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con ID \_ DISPID ICECursorButtonUp.
+Questo metodo di evento è definito nelle interfacce **\_ dispatch IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con ID \_ DISPID ICECursorButtonUp.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Questo metodo di evento è definito nelle interfacce dispatch **\_ IInkCollector
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

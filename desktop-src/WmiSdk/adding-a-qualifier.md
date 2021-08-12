@@ -1,22 +1,22 @@
 ---
-description: Un qualificatore è una stringa di dati che fornisce ulteriori informazioni su una classe, un'istanza, una proprietà, un metodo o un parametro.
+description: Un qualificatore è una stringa di dati che fornisce altre informazioni su una classe, un'istanza, una proprietà, un metodo o un parametro.
 ms.assetid: 6984b575-b365-49dd-aeab-a763430f434c
 ms.tgt_platform: multiple
 title: Aggiunta di un qualificatore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5a6f18f2b79bcd25b2b4ca75811157c9091e6eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 333c24e89d711a8998c58c6201776d5d4c50cc1107f4c9ca4308d9cc992b44dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557824"
 ---
 # <a name="adding-a-qualifier"></a>Aggiunta di un qualificatore
 
-Un qualificatore è una stringa di dati che fornisce ulteriori informazioni su una classe, un'istanza, una proprietà, un metodo o un parametro.
+Un qualificatore è una stringa di dati che fornisce altre informazioni su una classe, un'istanza, una proprietà, un metodo o un parametro.
 
-La definizione di classe seguente è un esempio di classe derivata con qualificatori di classe.
+La definizione di classe seguente è un esempio di una classe derivata con qualificatori di classe.
 
 ``` syntax
 [Dynamic, Provider ("ProviderX")] 
@@ -28,27 +28,27 @@ class MyDerivedClass : MyClass
 };
 ```
 
-I qualificatori possono essere divisi in qualificatori standard, qualificatori CIM e qualificatori esclusivi includono quanto segue:
+I qualificatori possono essere suddivisi in qualificatori standard, qualificatori CIM e qualificatori univoci:
 
 -   Qualificatore standard
 
-    Un qualificatore standard è un qualificatore definito da WMI e comunemente utilizzato nel codice MOF. Ad esempio, i qualificatori [**dinamici**](dynamic-qualifier.md) e di [**lettura**](standard-qualifiers.md) sono entrambi qualificatori standard. Per ulteriori informazioni, vedere [qualificatori WMI](wmi-qualifiers.md).
+    Un qualificatore standard è un qualificatore definito da WMI e comunemente usato nel codice MOF. Ad esempio, i [**qualificatori Dynamic**](dynamic-qualifier.md) [**e Read**](standard-qualifiers.md) sono entrambi qualificatori standard. Per altre informazioni, vedere [Qualificatori WMI](wmi-qualifiers.md).
 
 -   Qualificatore CIM
 
-    Un qualificatore CIM è un qualificatore incluso nella specifica CIM. Sebbene usino i qualificatori CIM nel codice MOF, i qualificatori standard sono progettati specificamente con WMI. Per ulteriori informazioni, vedere la [specifica DMTF CIM](https://www.dmtf.org/spec/cims.html/).
+    Un qualificatore CIM è un qualificatore incluso nella specifica CIM. Anche se si usano qualificatori CIM nel codice MOF, i qualificatori standard sono progettati in modo specifico tenendo presente WMI. Per altre informazioni, vedere la specifica [CIM DMTF.](https://www.dmtf.org/spec/cims.html/)
 
 -   Qualificatore univoco
 
-    Un qualificatore univoco è un qualificatore definito in modo specifico per una nuova classe da un provider di classi. Ad esempio, il qualificatore [**unità**](standard-qualifiers.md) è un qualificatore specifico del provider non standard. È possibile creare qualificatori personalizzati da usare con il provider. Per ulteriori informazioni sulla creazione di un provider, vedere [sviluppo di un provider WMI](developing-a-wmi-provider.md).
+    Un qualificatore univoco è un qualificatore definito in modo specifico per una nuova classe da un provider di classi. Ad esempio, il [**qualificatore Units**](standard-qualifiers.md) è un qualificatore non standard specifico del provider. È possibile creare qualificatori personalizzati da usare con il provider. Per altre informazioni sulla creazione di un provider, vedere [Sviluppo di un provider WMI](developing-a-wmi-provider.md).
 
-Indipendentemente dal qualificatore, il processo principale da eseguire è usare il qualificatore nel codice MOF. Per ulteriori informazioni, vedere [applying a Qualifier](applying-a-qualifier.md). È possibile descrivere ulteriormente un qualificatore con una versione del qualificatore. Una versione qualificatore contiene ulteriori informazioni sulla modalità di utilizzo di un qualificatore da un provider. Per ulteriori informazioni, vedere [Descrizione di un qualificatore con una versione del qualificatore](describing-a-qualifier-with-a-qualifier-flavor.md).
+Indipendentemente dal qualificatore, il processo principale da eseguire è l'uso del qualificatore nel codice MOF. Per altre informazioni, vedere [Applicazione di un qualificatore](applying-a-qualifier.md). È possibile descrivere ulteriormente un qualificatore con una descrizione del qualificatore. Un qualificatore contiene altre informazioni sul modo in cui un provider deve usare un qualificatore. Per altre informazioni, vedere [Descrizione di un qualificatore con un qualificatore Flavor.](describing-a-qualifier-with-a-qualifier-flavor.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Progettazione di classi Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md)
+[Progettazione di Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md)
 </dt> </dl>
 
  

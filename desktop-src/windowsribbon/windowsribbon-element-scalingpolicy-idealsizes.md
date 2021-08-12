@@ -1,9 +1,9 @@
 ---
-title: Proprietà ScalingPolicy. IdealSizes
+title: ScalingPolicy.IdealSizes - proprietà
 description: Rappresenta un contenitore di specifiche di ridimensionamento per il modello SizeDefinition preferito, in base alle dimensioni della barra multifunzione.
 ms.assetid: a4aa2642-160d-4d81-9df9-29277911aa5a
 keywords:
-- Barra multifunzione di Windows ScalingPolicy. IdealSizes
+- Proprietà ScalingPolicy.IdealSizes Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7bf62cd0388b523f444c4a9cca226b58187212b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 500f6193411ed72b8858506816d9af4f82b1219680fa0537bf54b3daa7735211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439526"
 ---
-# <a name="scalingpolicyidealsizes-property"></a>Proprietà ScalingPolicy. IdealSizes
+# <a name="scalingpolicyidealsizes-property"></a>ScalingPolicy.IdealSizes - proprietà
 
 Rappresenta un contenitore di specifiche di ridimensionamento per il modello [**SizeDefinition**](windowsribbon-element-sizedefinition.md) preferito, in base alle dimensioni della barra multifunzione.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <ScalingPolicy.IdealSizes>
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                 | Descrizione                                        |
 |---------------------------------------------------------|----------------------------------------------------|
-| [**Scalabilità**](windowsribbon-element-scale.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**Scalabilità**](windowsribbon-element-scale.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -59,17 +59,17 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md).
+Può verificarsi al massimo una volta per [**ogni oggetto ScalingPolicy.**](windowsribbon-element-scalingpolicy.md)
 
-Se è definito **ScalingPolicy. IdealSizes** , deve essere presente una voce di [**scala**](windowsribbon-element-scale.md) per ogni elemento di [**gruppo**](windowsribbon-element-group.md) in un elemento [**Tab**](windowsribbon-element-tab.md) .
+Se **viene definito ScalingPolicy.IdealSizes,** deve essere presente una voce [**Scale**](windowsribbon-element-scale.md) per ogni [**elemento Group**](windowsribbon-element-group.md) in un elemento [**Tab.**](windowsribbon-element-tab.md)
 
-**ScalingPolicy. IdealSizes** sono i layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) preferiti per un [**gruppo**](windowsribbon-element-group.md) di controlli.
+**ScalingPolicy.IdealSizes è** il layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) preferito per un [**gruppo**](windowsribbon-element-group.md) di controlli.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come è possibile personalizzare l'aspetto dei controlli in un [**gruppo**](windowsribbon-element-group.md) tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition**](windowsribbon-element-sizedefinition.md) della barra multifunzione.
+L'esempio seguente illustra come personalizzare l'aspetto dei controlli in un oggetto [**Group**](windowsribbon-element-group.md) tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition della**](windowsribbon-element-sizedefinition.md) barra multifunzione.
 
-Il manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) in questo esempio specifica una preferenza **ScalingPolicy. IdealSizes** [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una scheda **Home** . Inoltre, gli elementi di [**scala**](windowsribbon-element-scale.md) vengono specificati per influenzare il comportamento di compressione, in ordine di ridimensionamento decrescente, di ogni gruppo.
+Il [**manifesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) in questo esempio specifica una preferenza **ScalingPolicy.IdealSizes** [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una **scheda Home.** Inoltre, gli [**elementi Scale**](windowsribbon-element-scale.md) vengono specificati per influenzare il comportamento di compressione, in ordine di dimensione decrescente, di ogni gruppo.
 
 
 ```C++
@@ -141,8 +141,8 @@ Il manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) in ques
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -150,7 +150,7 @@ Il manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) in ques
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

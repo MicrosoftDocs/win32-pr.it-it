@@ -1,19 +1,19 @@
 ---
-description: Informazioni su come usare l'argomento CRUMB Windows Search come mezzo per controllare l'ambito di una ricerca.
+description: Informazioni su come usare l'argomento CRUMB in Windows ricerca come mezzo per controllare l'ambito di una ricerca.
 ms.assetid: b0b974ae-0573-45e4-888e-07138604b62e
-title: Argomento CRUMB (Windows Search)
+title: Argomento CRUMB (Windows ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f56287c7182c0cf370250d53075a1c951ddf28b
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5ec64fdcf9b15e0b7c87ea2ff0b122e22a8f8917bbacb9d9c3c3da274123f607
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118463243"
 ---
-# <a name="crumb-argument-windows-search"></a>Argomento CRUMB (Windows Search)
+# <a name="crumb-argument-windows-search"></a>Argomento CRUMB (Windows ricerca)
 
-L'argomento supporta istruzioni AQS (Advanced Query Syntax) complete ed è particolarmente utile per controllare `crumb` l'ambito di una ricerca. Oltre agli argomenti AQS, l'argomento può assumere un parametro speciale in Windows Vista e i parametri e in XP, come descritto `crumb` più avanti in questo `location` `kind` `store` argomento.
+L'argomento supporta istruzioni AQS (Advanced Query Syntax) complete ed è particolarmente utile per controllare `crumb` l'ambito di una ricerca. Oltre agli argomenti AQS, l'argomento può assumere un parametro speciale in Windows Vista e i parametri e in XP, come descritto più `crumb` `location` avanti in questo `kind` `store` argomento.
 
 Questo argomento è organizzato come segue:
 
@@ -56,7 +56,7 @@ crumb=location:c%3a%5cMyVacationPix,Vacation&
 
 ## <a name="using-crumb-with-vista-location"></a>Uso di crumb con Vista (posizione)
 
-Nel parametro crumb Windows Vista supporta AQS completo e anche la proprietà , che ha un'implementazione speciale `location` disponibile solo in Windows Vista. È possibile usare una stringa AQS o la proprietà `location` all'interno di un singolo parametro crumb, ma non entrambi. Se il parametro crumb include AQS, tutti gli altri elementi nel parametro crumb vengono ignorati.
+Nel parametro crumb Windows Vista supporta AQS completo e anche la proprietà , che ha un'implementazione speciale disponibile solo `location` in Windows Vista. È possibile usare una stringa AQS o la proprietà `location` all'interno di un singolo parametro crumb, ma non entrambi. Se il parametro crumb include AQS, tutti gli altri elementi nel parametro crumb vengono ignorati.
 
 La `location` proprietà consente di specificare un percorso in cui eseguire la ricerca. Windows Vista può ignorare l'indicizzatore e attraversare direttamente la directory se il percorso non rientra nell'ambito della ricerca per indicizzazione dell'indicizzatore. Di conseguenza, queste ricerche possono essere più lente delle ricerche che usano l'indicizzatore.
 
@@ -110,9 +110,9 @@ Il terzo esempio esegue una ricerca all'interno di C: Documenti, limitata ai fil
 
 ### <a name="constants-for-common-folders"></a>Costanti per cartelle comuni
 
-Windows Vista consente l'uso di valori [KNOWNFOLDERID](/previous-versions//bb762584(v=vs.85)) che forniscono un modo univoco indipendente dal sistema per identificare le cartelle speciali usate di frequente dalle applicazioni, ma che potrebbero non avere lo stesso nome o percorso in un sistema specificato. Ad esempio, la cartella di sistema può essere "C: Windows" in un \\ sistema e "C: \\ Winnt" in un altro sistema. Nelle versioni precedenti a Windows Vista [venivano usati i CSID.](/windows/desktop/shell/csidl)
+Windows Vista consente l'uso di valori [KNOWNFOLDERID](/previous-versions//bb762584(v=vs.85)) che forniscono un modo univoco indipendente dal sistema per identificare le cartelle speciali usate di frequente dalle applicazioni, ma che potrebbero non avere lo stesso nome o percorso in un sistema specificato. Ad esempio, la cartella di sistema può essere "C: Windows" in un sistema e \\ "C: \\ Winnt" in un altro. Prima di Windows Vista, [venivano usati i CSID.](/windows/desktop/shell/csidl)
 
-Usare queste posizioni con la sintassi seguente:
+Usare questi percorsi con la sintassi seguente:
 
 
 ```
@@ -125,7 +125,7 @@ crumb=location:shell%3a<LocationName>&
 
 ## <a name="using-crumb-with-windows-xp-kind-and-store"></a>Uso di crumb con Windows XP (tipo e archivio)
 
-Per Windows Search in Windows XP (WDS 3.x), i termini "kind" e "store" di AQS hanno un'implementazione speciale. I valori "kind" sono gli stessi [usati in WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) I valori "store" includono quanto segue:
+Per Windows ricerca in Windows XP (WDS 3.x), i termini "kind" e "store" di AQS hanno un'implementazione speciale. I valori "kind" sono gli stessi [usati in WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) I valori "store" includono quanto segue:
 
 -   Mapi
 -   file
@@ -142,7 +142,7 @@ search-ms:query=from:john&crumb=kind:communications&
 
 
 
-Nel primo esempio vengono restituiti messaggi di posta elettronica di Microsoft Outlook Express da John con l'etichetta personalizzata "OE Mail". Nel secondo esempio viene eseguita una ricerca di qualsiasi comunicazione da John.
+Il primo esempio restituisce i messaggi di Outlook Express di Microsoft da John con l'etichetta personalizzata "OE Mail". Nel secondo esempio viene eseguita una ricerca di qualsiasi comunicazione da John.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

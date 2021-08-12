@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e7fc503af1a290b27fea81d0c2aba6b84393323b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ce1f2464882bfdece8997aeea23f2bb42c276b3f6ce49b13cb242d517a522250
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540291"
 ---
 # <a name="id3dx10meshgetattributetable-method"></a>Metodo ID3DX10Mesh::GetAttributeTable
 

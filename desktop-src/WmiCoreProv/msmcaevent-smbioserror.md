@@ -1,7 +1,7 @@
 ---
-description: Indica un errore BIOS del sistema MCA (computer Check Architecture). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+description: Indica un errore del BIOS di sistema di Machine Check Architecture (MCA). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 ms.assetid: b451ca45-6208-4445-b9f1-b4e3174837a4
-title: Classe MSMCAEvent_SMBIOSError
+title: MSMCAEvent_SMBIOSError classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 709d480e8865c5d5bde2a9f5e8de45f138e66548
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fccb38a73585db71c6418929a35458f26b9749159e537de47a298d920b318e08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558396"
 ---
-# <a name="msmcaevent_smbioserror-class"></a>\_Classe MSMCAEvent SMBIOSError
+# <a name="msmcaevent_smbioserror-class"></a>Classe MSMCAEvent \_ SMBIOSError
 
-La classe **MSMCAEvent \_ SMBIOSError** indica un errore BIOS del sistema MCA (Machine Check Architecture). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+La **classe MSMCAEvent \_ SMBIOSError** indica un errore del BIOS di sistema dell'architettura di controllo del computer. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,33 +60,33 @@ class MSMCAEvent_SMBIOSError : WMIEvent
 
 ## <a name="members"></a>Members
 
-La **classe \_ SMBIOSError di MSMCAEvent** dispone di questi tipi di membri:
+La **classe MSMCAEvent \_ SMBIOSError** include i tipi di membri seguenti:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SMBIOSError di MSMCAEvent** dispone di queste proprietà.
+La **classe MSMCAEvent \_ SMBIOSError** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se questa istanza della classe è attiva; in caso contrario, **false**.
+**TRUE** se questa istanza della classe è attiva; in caso contrario, **FALSE.**
 
 </dd> <dt>
 
 **AdditionalErrors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -96,23 +96,23 @@ Numero di errori aggiuntivi nel record.
 
 </dd> <dt>
 
-**CPU**
+**Cpu**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-CPU che ha segnalato l'errore. Questa proprietà si applica solo a un sistema multiprocessore in cui al primo processore viene assegnato il numero 0, al secondo processore viene assegnato il numero 1 e così via.
+CPU che ha segnalato l'errore. Questa proprietà si applica solo a un sistema multiprocessore in cui al primo processore viene assegnato il numero 0, al secondo viene assegnato il numero 1 e così via.
 
 </dd> <dt>
 
 **ErrorSeverity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -137,64 +137,64 @@ Livello di gravità dell'errore segnalato.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [ **Chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificatore univoco di questa istanza della classe.
+Identificatore univoco di questa istanza della classe .
 
 </dd> <dt>
 
 **LogToEventlog**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se è 0 (zero), questo evento non viene registrato nel registro eventi di sistema.
+Se 0 (zero), questo evento non viene registrato nel registro eventi di sistema.
 
 </dd> <dt>
 
 **RawRecord**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di byte che contiene il record di errore non elaborato. Numero di elementi nella matrice specificata dalla proprietà **size** .
+Matrice di byte contenente il record di errore non elaborato. Numero di elementi nella matrice specificati **dalla proprietà** Size.
 
 </dd> <dt>
 
-**RecordId**
+**Recordid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore del record di errore per l'errore.
+Identificatore del record di errore per questo errore.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
 **Dimensioni**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -204,10 +204,10 @@ Dimensioni del record di errore non elaborato.
 
 </dd> <dt>
 
-**\_tipo di evento SMBIOS \_**
+**TIPO DI \_ EVENTO \_ SMBIOS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -221,28 +221,28 @@ Tipo di evento.
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl>   | Riservato.<br/>                                                                                                        |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>   | Errore di memoria ECC a bit singolo.<br/>                                                                                     |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl>   | Errore di memoria a più bit ECC.<br/>                                                                                   |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl>   | Errore di memoria ECC a bit multipli.<br/>                                                                                   |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl>   | Errore di memoria di parità.<br/>                                                                                             |
 | <span id="4"></span><dl> <dt>**4**</dt> </dl>   | Timeout del bus.<br/>                                                                                                    |
-| <span id="5"></span><dl> <dt>**5**</dt> </dl>   | Controllo del canale di I/O.<br/>                                                                                               |
+| <span id="5"></span><dl> <dt>**5**</dt> </dl>   | Verifica canale di I/O.<br/>                                                                                               |
 | <span id="6"></span><dl> <dt>**6**</dt> </dl>   | NMI software.<br/>                                                                                                    |
 | <span id="7"></span><dl> <dt>**7**</dt> </dl>   | Ridimensionamento post-memoria.<br/>                                                                                              |
-| <span id="8"></span><dl> <dt>**8**</dt> </dl>   | MESSAGGIO di errore.<br/>                                                                                                      |
+| <span id="8"></span><dl> <dt>**8**</dt> </dl>   | Errore POST.<br/>                                                                                                      |
 | <span id="9"></span><dl> <dt>**9**</dt> </dl>   | Errore di parità PCI.<br/>                                                                                                |
 | <span id="10"></span><dl> <dt>**10**</dt> </dl> | Errore di sistema PCI.<br/>                                                                                                |
-| <span id="11"></span><dl> <dt>**11**</dt> </dl> | Errore CPU.<br/>                                                                                                     |
-| <span id="12"></span><dl> <dt>**12**</dt> </dl> | Timeout del timer di failsafe per EISA.<br/>                                                                                    |
-| <span id="13"></span><dl> <dt>**13**</dt> </dl> | Registro memoria correggibile disabilitato.<br/>                                                                                 |
+| <span id="11"></span><dl> <dt>**11**</dt> </dl> | Errore della CPU.<br/>                                                                                                     |
+| <span id="12"></span><dl> <dt>**12**</dt> </dl> | Timeout del timer di failsafe EISA.<br/>                                                                                    |
+| <span id="13"></span><dl> <dt>**13**</dt> </dl> | Log di memoria correggibile disabilitato.<br/>                                                                                 |
 | <span id="14"></span><dl> <dt>**14**</dt> </dl> | Registrazione disabilitata per un tipo di evento specifico. Troppi errori dello stesso tipo ricevuti in un breve periodo di tempo.<br/> |
 | <span id="15"></span><dl> <dt>**15**</dt> </dl> | Riservato.<br/>                                                                                                        |
-| <span id="16"></span><dl> <dt>**16**</dt> </dl> | È stato superato il limite di sistema (ad esempio, soglia di tensione o temperatura superata).<br/>                                  |
-| <span id="17"></span><dl> <dt>**17**</dt> </dl> | Timer hardware asincrono scaduto ed è stato emesso un ripristino del sistema.<br/>                                                   |
-| <span id="18"></span><dl> <dt>**18**</dt> </dl> | Informazioni sulla configurazione di sistema.<br/>                                                                                |
+| <span id="16"></span><dl> <dt>**16**</dt> </dl> | Limite di sistema superato (ad esempio, è stata superata la soglia di tensione o temperatura).<br/>                                  |
+| <span id="17"></span><dl> <dt>**17**</dt> </dl> | Il timer hardware asincrono è scaduto ed è stata emessa una reimpostazione del sistema.<br/>                                                   |
+| <span id="18"></span><dl> <dt>**18**</dt> </dl> | Informazioni di configurazione del sistema.<br/>                                                                                |
 | <span id="19"></span><dl> <dt>**19**</dt> </dl> | Informazioni sul disco rigido.<br/>                                                                                           |
 | <span id="20"></span><dl> <dt>**20**</dt> </dl> | Sistema riconfigurato.<br/>                                                                                             |
-| <span id="21"></span><dl> <dt>**21**</dt> </dl> | Errore complesso della CPU non correggibile.<br/>                                                                                 |
-| <span id="22"></span><dl> <dt>**22**</dt> </dl> | Reimpostazione o cancellazione dell'area log.<br/>                                                                                       |
-| <span id="23"></span><dl> <dt>**23**</dt> </dl> | Avvio del sistema. Se implementata, questa voce di log è sicuramente la prima scritta in un qualsiasi avvio del sistema.<br/>        |
+| <span id="21"></span><dl> <dt>**21**</dt> </dl> | Errore complesso della CPU noncorrebile.<br/>                                                                                 |
+| <span id="22"></span><dl> <dt>**22**</dt> </dl> | Reimpostazione o cancellata dell'area del log.<br/>                                                                                       |
+| <span id="23"></span><dl> <dt>**23**</dt> </dl> | Avvio del sistema. Se implementata, questa voce di log è garantita come la prima scritta in qualsiasi avvio del sistema.<br/>        |
 
 
 
@@ -253,34 +253,34 @@ Tipo di evento.
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di messaggio del log eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi utilizzati per inserire i messaggi del registro eventi dal provider di consumer del registro eventi di Windows quando riceve uno degli eventi.
+Tipo di messaggio del registro eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi utilizzati per inserire i messaggi del registro eventi dal provider del consumer del registro eventi di Windows quando riceve uno degli eventi.
 
 </dd> <dt>
 
-**bit di convalida \_**
+**BIT \_ DI CONVALIDA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Bit di convalida usati per indicare la validità dei campi successivi. Il valore 1 (0x1) indica che l' **\_ evento SMBIOS** è valido.
+Bit di convalida utilizzati per indicare la validità dei campi successivi. Il valore 1 (0x1) indica che **l'evento \_ SMBIOS** è valido.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **MSMCAEvent \_ SMBIOSError** è derivata da [**WmiEvent**](wmievent.md).
+La **classe MSMCAEvent \_ SMBIOSError** è derivata da [**WMIEvent.**](wmievent.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -290,8 +290,8 @@ La classe **MSMCAEvent \_ SMBIOSError** è derivata da [**WmiEvent**](wmievent.m
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2003<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

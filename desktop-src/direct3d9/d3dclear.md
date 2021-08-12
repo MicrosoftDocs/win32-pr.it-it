@@ -4,12 +4,12 @@ ms.assetid: 5d76e9a3-7afc-4db7-bffe-64bc7b9f83ac
 title: D3DCLEAR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c4c588fca44f9567dba0c1d2f7b88ba286cb86f
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 0cdae00b27b1969326814efcd6182c3cd1fe210fe68cdfdc7cc469603d6feba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527611"
 ---
 # <a name="d3dclear"></a>D3DCLEAR
 

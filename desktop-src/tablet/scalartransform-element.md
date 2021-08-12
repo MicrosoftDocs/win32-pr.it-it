@@ -4,12 +4,12 @@ ms.assetid: 88fc3b90-9ec6-41c0-9267-ed5b585ea07b
 title: Elemento ScalarTransform
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91ed5f7d3b44456522b45c7243b15390b7c52433
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: a1f2f9e5acf05d46d7057fd41bce5e7a54dc8b09e40fc5f38f528abaf963f9d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449341"
 ---
 # <a name="scalartransform-element"></a>Elemento ScalarTransform
 
@@ -37,15 +37,15 @@ Nessuno.
 
 | Attributo | Type           | Obbligatoria | Descrizione | Valori possibili     |
 |-----------|----------------|----------|-------------|---------------------|
-| **Mat1**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat2**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat3**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat4**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat5**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat6**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat7**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat8**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
-| **Mat9**  | **xs: decimal** | Obbligatoria |             | Qualsiasi numero decimale. |
+| **Mat1**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat2**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat3**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat4**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat5**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat6**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat7**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat8**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
+| **Mat9**  | **xs: decimal** | Necessario |             | Qualsiasi numero decimale. |
 
 
 
@@ -59,7 +59,7 @@ Nessuno.
 |--------------|-----------------------------------------------------------------------------|
 | Tipo di elemento | [**ComplexType ScalarTransformType**](scalartransformtype-complex-type.md) |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                                  |
-| Nome schema  | Lettore journal                                                              |
+| Nome schema  | Lettore di journal                                                              |
 
 
 

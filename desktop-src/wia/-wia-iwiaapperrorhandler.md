@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IWiaAppErrorHandler consente alle applicazioni di visualizzare le finestre di errore, durante i trasferimenti di dati, da cui l'utente può scegliere se continuare, annullare o interrompere il trasferimento.
+description: L'interfaccia IWiaAppErrorHandler consente alle applicazioni di visualizzare le finestre di errore (durante i trasferimenti di dati) da cui l'utente può scegliere se continuare, annullare o interrompere il trasferimento.
 ms.assetid: ac2597e6-2857-4694-bea7-1ea65d63b365
-title: Interfaccia IWiaAppErrorHandler (WIA. h)
+title: Interfaccia IWiaAppErrorHandler (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 6ccac7b689055bfaab926a8db46b4632606811d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 385a97a71d7017cba5bbfffd0833068a74acbe9d7281f8308b003a525b3f60f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441347"
 ---
 # <a name="iwiaapperrorhandler-interface"></a>Interfaccia IWiaAppErrorHandler
 
-L'interfaccia **IWiaAppErrorHandler** consente alle applicazioni di visualizzare le finestre di errore, durante i trasferimenti di dati, da cui l'utente può scegliere se continuare, annullare o interrompere il trasferimento.
+**L'interfaccia IWiaAppErrorHandler** consente alle applicazioni di visualizzare le finestre di errore (durante i trasferimenti di dati) da cui l'utente può scegliere se continuare, annullare o interrompere il trasferimento.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWiaAppErrorHandler** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IWiaAppErrorHandler** dispone anche di questi tipi di membri:
+**L'interfaccia IWiaAppErrorHandler** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IWiaAppErrorHandler** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWiaAppErrorHandler** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IWiaAppErrorHandler.**
 
 
 
 | Metodo                                                        | Descrizione                                                                                                                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetWindow**](-wia-iwiaapperrorhandler-getwindow.md)       | Ottiene un handle per la finestra di dialogo in cui vengono visualizzati i messaggi di errore e fornisce uno o più pulsanti per continuare, annullare o interrompere l'applicazione.<br/> |
-| [**ReportStatus**](-wia-iwiaapperrorhandler-reportstatus.md) | Gestisce i messaggi di errore e di stato del dispositivo durante i trasferimenti di dati di immagini e Visualizza i messaggi all'utente.<br/>                                  |
+| [**GetWindow**](-wia-iwiaapperrorhandler-getwindow.md)       | Ottiene un handle per la finestra di dialogo che visualizza i messaggi di errore e fornisce uno o più pulsanti per continuare, annullare o interrompere l'applicazione.<br/> |
+| [**ReportStatus**](-wia-iwiaapperrorhandler-reportstatus.md) | Gestisce lo stato del dispositivo e i messaggi di errore durante i trasferimenti di dati di immagine e visualizza i messaggi all'utente.<br/>                                  |
 
 
 
@@ -47,15 +47,15 @@ L'interfaccia **IWiaAppErrorHandler** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-L'oggetto di gestione degli errori, o callback, che implementa questa interfaccia viene passato in [**IWiaTransfer::D ownload**](-wia-iwiatransfer-download.md) e [**IWiaTransfer:: upload**](-wia-iwiatransfer-upload.md).
+L'oggetto di gestione degli errori, o callback, che implementa questa interfaccia viene passato in [**IWiaTransfer::D ownload**](-wia-iwiatransfer-download.md) e [**IWiaTransfer::Upload**](-wia-iwiatransfer-upload.md).
 
-Questa interfaccia non è progettata per gestire gli errori riscontrati al di fuori dei trasferimenti di dati di immagini, ad esempio errori durante il recupero o l'impostazione delle proprietà del dispositivo o callback non restituiti in un driver.
+Questa interfaccia non è progettata per gestire gli errori rilevati all'esterno dei trasferimenti di dati di immagine, ad esempio errori nel recupero o nell'impostazione delle proprietà del dispositivo o dei callback non annullati in un driver.
 
-Un gestore degli errori del driver deve implementare [**IWiaErrorHandler**](-wia-iwiaerrorhandler.md), invece di **IWiaAppErrorHandler**.
+Un gestore degli errori del driver deve implementare [**IWiaErrorHandler**](-wia-iwiaerrorhandler.md)anziché **IWiaAppErrorHandler**.
 
-L'oggetto che implementa questa interfaccia deve implementare anche [**IWiaTransferCallback**](-wia-iwiatransfercallback.md).
+L'oggetto che implementa questa interfaccia deve implementare [**anche IWiaTransferCallback.**](-wia-iwiatransfercallback.md)
 
-Se si desidera che un gestore degli errori del driver e un gestore degli errori predefinito visualizzino le finestre dei messaggi di errore, ma non si desidera creare un gestore degli errori completo per l'applicazione, implementare questa interfaccia e implementare anche il metodo [**IWiaAppErrorHandler:: ReportStatus**](-wia-iwiaapperrorhandler-reportstatus.md) per restituire \_ lo stato WIA \_ non \_ gestito.
+Se si desidera che un gestore degli errori del driver e un gestore degli errori predefinito visualizzano le finestre dei messaggi di errore, ma non si vuole creare un gestore errori completo per l'applicazione, implementare questa interfaccia e implementare anche il metodo [**IWiaAppErrorHandler::ReportStatus**](-wia-iwiaapperrorhandler-reportstatus.md) per restituire WIA \_ STATUS NOT \_ \_ HANDLED.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,10 +63,10 @@ Se si desidera che un gestore degli errori del driver e un gestore degli errori 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

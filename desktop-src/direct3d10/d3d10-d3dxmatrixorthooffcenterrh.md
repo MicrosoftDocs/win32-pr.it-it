@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0b41038021cc34cb02961cb9894415995955404c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 79594b606124f6b3634e7b379bda0cb664cbec31b417112641d06f335a16ce04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541242"
 ---
 # <a name="d3dxmatrixorthooffcenterrh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoOffCenterRH (D3DX10Math.h)
 
-Compila una matrice di proiezione ortogonale personalizzata con la mano destra.
+Compila una matrice di proiezione ortografica personalizzata con la mano destra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -127,7 +127,7 @@ b = -h/2 e
 
 t = h/2.
 
-Tutti i parametri della funzione D3DXMatrixOrthoOffCenterRH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
+Tutti i parametri della funzione D3DXMatrixOrthoOffCenterRH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixOrthoOffCenterRH può essere usata come parametro per un'altra funzione.
 

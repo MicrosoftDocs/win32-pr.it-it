@@ -1,7 +1,7 @@
 ---
-description: Recupera il nome completo dell'elemento visualizzato nell'interfaccia utente. Di sola lettura.
+description: Recupera il nome completo dell'elemento così come viene visualizzato nell'interfaccia utente. Di sola lettura.
 ms.assetid: efe8de99-fe66-4472-8ca3-f45373d03f81
-title: Proprietà Item. FullName
+title: Proprietà Item.FullName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 5d0c232788e7e57aa7f82a66921527466b4cc5bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65eb5493370cb3a226fc3507a9af19a620f65e471e9ca7717bee4f7fa7e43428
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440616"
 ---
-# <a name="itemfullname-property"></a>Proprietà Item. FullName
+# <a name="itemfullname-property"></a>Proprietà Item.FullName
 
-Recupera il nome completo dell'elemento visualizzato nell'interfaccia utente. Di sola lettura.
+Recupera il nome completo dell'elemento così come viene visualizzato nell'interfaccia utente. Di sola lettura.
 
 Questa proprietà è di sola lettura.
 
@@ -45,9 +45,9 @@ Stringa che riceve il nome.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

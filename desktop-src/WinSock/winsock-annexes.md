@@ -1,26 +1,26 @@
 ---
-description: Gli allegati Winsock forniscono informazioni di implementazione per i gruppi di protocolli Winsock comuni e illustrano come usare ogni protocollo con Winsock.
+description: Winsock Annexes fornisce informazioni di implementazione per suite di protocolli Winsock comuni e illustra come usare ogni protocollo con Winsock.
 ms.assetid: 3d9cba77-ef84-4835-b914-c43b3629166b
-title: Allegati Winsock
+title: Winsock Annexes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3e4bdcfc2462904f6dbb2b9c7b0e680e2fb115
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fae000361114935974d4bbf988b39dd324e3a01453466a65a28c31d90444dce0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558883"
 ---
-# <a name="winsock-annexes"></a>Allegati Winsock
+# <a name="winsock-annexes"></a>Winsock Annexes
 
-Gli allegati Winsock forniscono informazioni di implementazione per i gruppi di protocolli Winsock comuni e illustrano come usare ogni protocollo con Winsock.
+Winsock Annexes fornisce informazioni di implementazione per suite di protocolli Winsock comuni e illustra come usare ogni protocollo con Winsock.
 
-Ogni protocollo in questo allegato presenta convenzioni, comportamenti o funzionalità speciali che non si prestano all'implementazione generica. In questa sezione vengono illustrati i dettagli che gli sviluppatori devono considerare durante l'implementazione o l'utilizzo dei protocolli descritti.
+Ogni protocollo in questo allegato ha convenzioni, comportamenti o funzionalità speciali che non si prestano all'implementazione generica. Questa sezione illustra i dettagli che gli sviluppatori devono prendere in considerazione durante l'implementazione o l'uso dei protocolli descritti.
 
-Negli allegati Winsock sono incluse le seguenti sezioni:
+Gli annex di Winsock includono le sezioni seguenti:
 
--   [Allegato ATM Winsock](winsock-atm-annex.md)
--   [Winsock IPX/SPX Annex](winsock-ipx-spx-annex.md)
+-   [Winsock ATM Annex](winsock-atm-annex.md)
+-   [Allegato WINSOCK IPX/SPX](winsock-ipx-spx-annex.md)
 -   [Allegato TCP/IP Winsock](winsock-tcp-ip-annex.md)
 
  

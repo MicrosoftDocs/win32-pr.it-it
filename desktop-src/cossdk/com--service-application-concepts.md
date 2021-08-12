@@ -1,50 +1,50 @@
 ---
-description: Concetti relativi all'applicazione del servizio COM+
+description: Concetti relativi alle applicazioni di servizio COM+
 ms.assetid: d6b1cf4a-ca39-4d50-a33d-aa639937ef9e
-title: Concetti relativi all'applicazione del servizio COM+
+title: Concetti relativi alle applicazioni di servizio COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54b24db7a031ed0520f30891d98688af67e853ec
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f0d0cedae4af19825e6e48a0e2aded102f96bed0c08b45c48cfb2f7e3bbd52ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118548767"
 ---
-# <a name="com-service-application-concepts"></a>Concetti relativi all'applicazione del servizio COM+
+# <a name="com-service-application-concepts"></a>Concetti relativi alle applicazioni di servizio COM+
 
-È possibile utilizzare lo strumento di amministrazione Servizi componenti per configurare un'applicazione server COM+ come applicazione di servizio. L'esecuzione di un'applicazione server COM+ come servizio offre i vantaggi seguenti:
+È possibile usare lo strumento amministrativo Servizi componenti per configurare un'applicazione server COM+ come applicazione di servizio. L'esecuzione di un'applicazione server COM+ come servizio offre i vantaggi seguenti:
 
--   Se è sempre necessario che l'applicazione sia in esecuzione, Servizi componenti può facoltativamente avviare automaticamente il server e riavviare il server in caso di timeout. Se, ad esempio, un computer che esegue componenti del listener dei componenti in coda viene riavviato, i listener di componenti in coda possono essere avviati automaticamente se sono configurati come servizio.
--   Se l'applicazione deve eseguire operazioni con privilegi, l'applicazione può essere eseguita come account di sistema locale. Con questo livello di sicurezza è consentita l'esecuzione solo dei servizi NT. L'applicazione sarà compatibile con la Servizio cluster di Windows che gestisce i servizi durante il failover del sistema.
--   Se gli altri servizi devono essere contrassegnati come dipendenti, Servizi componenti fornisce tale opzione. Se, ad esempio, l'applicazione usa la funzionalità fornita da un altro servizio, il servizio contrassegnato come dipendente verrà avviato prima dell'avvio dell'applicazione.
+-   Se l'applicazione deve sempre essere in esecuzione, Servizi componenti può facoltativamente fare in modo che il server venga avviato automaticamente e può anche riavviare il server in caso di timeout. Ad esempio, se un computer che esegue componenti listener componenti in coda viene riavviato, i listener componenti in coda possono essere avviati automaticamente se sono configurati come servizio.
+-   Se l'applicazione deve eseguire operazioni con privilegi, l'applicazione può essere eseguita come account di sistema locale. Solo i servizi NT possono essere eseguiti con questo livello di sicurezza. L'applicazione sarà compatibile con il Windows Servizio cluster, che gestisce i servizi durante il failover del sistema.
+-   Se altri servizi devono essere contrassegnati come dipendenti, Servizi componenti fornisce questa opzione. Ad esempio, se l'applicazione usa funzionalità fornite da un altro servizio, il servizio contrassegnato come dipendente verrà avviato prima dell'avvio dell'applicazione.
 
 ## <a name="starting-an-application-automatically"></a>Avvio automatico di un'applicazione
 
-Quando l'applicazione server COM+ viene avviata automaticamente, funge da servizio, richiedendo allo sviluppatore la gestione del server tramite lo strumento di amministrazione servizi.
+Quando l'applicazione server COM+ viene avviata automaticamente, agisce come un servizio, richiedendo allo sviluppatore di gestire il server usando lo strumento amministrativo Servizi.
 
 > [!Note]  
-> Per accedere allo strumento di amministrazione servizi, è possibile avviare lo strumento di amministrazione Servizi componenti, quindi fare clic su **Servizi (locale)**.
+> Per accedere a Servizi, avviare lo strumento amministrativo Servizi componenti e quindi fare clic **su Servizi (locale)**.
 
  
 
 ## <a name="starting-an-application-manually"></a>Avvio manuale di un'applicazione
 
-Quando l'applicazione server COM+ viene avviata manualmente, funge da host DLL con le impostazioni di sicurezza di un servizio. Il servizio verrà avviato manualmente quando viene attivato e arrestato automaticamente quando si verifica il timeout.
+Quando l'applicazione server COM+ viene avviata manualmente, agisce come un host DLL con le impostazioni di sicurezza di un servizio. Il servizio verrà avviato manualmente quando viene attivato e arrestato automaticamente quando si verifica il timeout.
 
 ## <a name="service-configurations"></a>Configurazioni del servizio
 
-Indipendentemente dal tipo di avvio, l'applicazione può essere configurata in modo da essere eseguita come account di sistema locale o assegnata a un account utente. Il sistema locale e l'account utente possono essere configurati al momento della creazione del servizio. Per configurare le impostazioni di sicurezza, sarà necessario utilizzare lo strumento di amministrazione servizi. Le dipendenze possono essere impostate anche per il servizio.
+Indipendentemente dal tipo di avvio, l'applicazione può essere configurata per l'esecuzione come account di sistema locale o assegnata a un account utente. Il sistema locale e l'account utente possono essere configurati al momento della creazione del servizio. Per configurare le impostazioni di sicurezza, sarà necessario usare lo strumento amministrativo Servizi. È anche possibile impostare le dipendenze per il servizio.
 
-L'applicazione può anche essere avviata in un ordine particolare selezionando le dipendenze da un elenco di altri servizi di sistema. I servizi di sistema, ad esempio, possono essere contrassegnati come dipendenti e non avvieranno l'applicazione fino a quando i servizi di sistema non saranno stati avviati nell'ordine specificato. L'applicazione di servizio verrà inizializzata correttamente prima di essere utilizzata.
+L'applicazione può anche essere avviata in un ordine specifico selezionando le dipendenze da un elenco di altri servizi di sistema. Ad esempio, i servizi di sistema possono essere contrassegnati come dipendenti e non avviano l'applicazione fino a quando i servizi di sistema non sono stati avviati nell'ordine specificato. In questo modo l'applicazione di servizio verrà inizializzata correttamente prima di essere usata.
 
-Per istruzioni dettagliate su come configurare un'applicazione COM+ per l'esecuzione come servizio, vedere [configurazione di un'applicazione server com+ come applicazione di servizio](configuring-a-com--server-application-as-a-service-application.md).
+Per istruzioni dettagliate su come configurare un'applicazione COM+ per l'esecuzione come servizio, vedere Configurazione di un'applicazione [server COM+](configuring-a-com--server-application-as-a-service-application.md)come applicazione di servizio .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Attività delle applicazioni del servizio COM+](com--service-application-tasks.md)
+[Attività dell'applicazione di servizio COM+](com--service-application-tasks.md)
 </dt> </dl>
 
  

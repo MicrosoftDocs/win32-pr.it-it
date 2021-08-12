@@ -1,28 +1,28 @@
 ---
-description: In questo esempio viene illustrato come distribuire un'applicazione Tablet PC gestita sul Web utilizzando la distribuzione senza tocco.
+description: Questo esempio illustra come distribuire un'applicazione Tablet PC gestita sul Web usando una distribuzione senza tocco.
 ms.assetid: d226bd67-e20d-431b-b0c3-9361b00a9340
-title: Esempio di Web Deployment No-Touch
+title: No-Touch Web di distribuzione di applicazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a0742deef8ea9b418fba6de4724975ee27693f8
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 7d8fb9989785dc081022c2e76d8fade6d48bf521b3f27449ff5aac963706f356
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104530444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449652"
 ---
-# <a name="no-touch-deployment-web-sample"></a>Esempio di Web Deployment No-Touch
+# <a name="no-touch-deployment-web-sample"></a>No-Touch Web di distribuzione di applicazioni
 
-In questo esempio viene illustrato come distribuire un'applicazione Tablet PC gestita sul Web utilizzando la distribuzione senza tocco. È necessario avere familiarità con i concetti illustrati nella [distribuzione senza tocco nella .NET Framework](/documentation/?url=%2flibrary%2fdv_vstechart%2fhtml%2fvbtchno-touchdeploymentinnetframework.asp). Per eseguire l'esempio, è necessario che nel computer sia installato Microsoft Internet Information Services (IIS).
+Questo esempio illustra come distribuire un'applicazione Tablet PC gestita sul Web usando una distribuzione senza tocco. È necessario avere familiarità con i concetti illustrati in [No-Touch Deployment (Distribuzione senza tocco) .NET Framework](/documentation/?url=%2flibrary%2fdv_vstechart%2fhtml%2fvbtchno-touchdeploymentinnetframework.asp). Per eseguire questo esempio, nel computer deve essere installato Microsoft Internet Information Services (IIS).
 
 ## <a name="overview"></a>Panoramica
 
-Con la distribuzione senza tocco, le applicazioni tablet PCWindows Forms-applicazioni desktop compilate usando le classi nello spazio dei nomi System. Windows. Forms di Microsoft .NET Framework e Microsoft Windows XP Tablet PC Edition Development Kit 1,7-possono essere scaricate, installate ed eseguite direttamente sui computer degli utenti senza alcuna modifica del registro di sistema o dei componenti di sistema condivisi.
+Con la distribuzione senza tocco, Tablet PCWindows Forms applications-desktop applications built by using the classes in the System. Windows. Lo spazio dei nomi Forms di Microsoft .NET Framework e Microsoft Windows XP Tablet PC Edition Development Kit 1.7 possono essere scaricati, installati ed eseguiti direttamente nei computer degli utenti senza alcuna modifica del Registro di sistema o dei componenti di sistema condivisi.
 
-Questo esempio accetta il progetto originale per l' [esempio di modulo delle attestazioni automatiche](auto-claims-form-sample.md), autoclaims e fornisce un progetto di programma di installazione, autoclaims \_ NoTouchWeb. Una volta compilata ed eseguita, il progetto di installazione crea una nuova radice virtuale, denominata anche autoclaims \_ NoTouchWeb. Il programma di installazione copia un file, default.htm, che include un collegamento all'assembly AutoClaims.exe. Per avviare l'applicazione rich client, passare alla radice virtuale con Microsoft Internet Explorer, quindi fare clic sul collegamento nella pagina default.htm.
+Questo esempio prende il progetto originale per [Auto Claims Form Sample](auto-claims-form-sample.md), AutoClaims e fornisce un progetto di installazione, AutoClaims \_ NoTouchWeb. Dopo la compilazione e l'esecuzione, il progetto di installazione crea una nuova radice virtuale, denominata anche AutoClaims \_ NoTouchWeb. Il programma di installazione copia un file, default.htm, che include un collegamento all'assembly AutoClaims.exe. Per avviare l'applicazione rich client, passare alla radice virtuale con Microsoft Internet Explorer e quindi fare clic sul collegamento nella default.htm pagina.
 
 > [!Note]  
-> È necessario passare alla radice virtuale tramite IIS (ad esempio, https://localhost/AutoClaims\_NoTouchWeb/default.htm) e non direttamente tramite il file System per consentire l'uso dell'applicazione nel dominio applicazione di Internet Explorer.
+> È necessario passare alla radice virtuale tramite IIS, ad esempio e non direttamente tramite il file system, perché l'applicazione funzioni nel dominio applicazione https://localhost/AutoClaims\_NoTouchWeb/default.htm) Internet Explorer.
 
  
 
@@ -40,16 +40,16 @@ Questo esempio accetta il progetto originale per l' [esempio di modulo delle att
 
 
 
-## <a name="no-touch-deployment-requirements"></a>Requisiti per la distribuzione di No-Touch
+## <a name="no-touch-deployment-requirements"></a>No-Touch di distribuzione
 
-Tutti gli assembly dipendenti devono trovarsi nel percorso di ricerca dell'assembly o nella radice della directory virtuale del sito Web. Il progetto di distribuzione autoclaims \_ NoTouchWeb installa l'assembly e la pagina di riferimento, default.htm, nella stessa radice virtuale (Autoclaims \_ NoTouchWeb).
+Tutti gli assembly dipendenti devono trovarsi nel percorso di ricerca degli assembly o nella radice della directory virtuale del sito Web. Il progetto di distribuzione AutoClaims NoTouchWeb installa l'assembly e la pagina di riferimento, default.htm, nella stessa radice virtuale \_ (AutoClaims \_ NoTouchWeb).
 
 > [!Note]  
-> Gli esempi Web compilati non vengono installati tramite l'opzione di installazione predefinita per l'SDK. È necessario completare un'installazione personalizzata e selezionare l'opzione secondaria "esempi Web precompilati" per installarli.
+> Gli esempi Web compilati non vengono installati dall'opzione di installazione predefinita per l'SDK. È necessario completare un'installazione personalizzata e selezionare l'opzione secondaria "Pre-compiled Web Samples" (Esempi Web precompilato) per installarli.
 
  
 
-Per ulteriori informazioni sull'utilizzo di input penna sul Web, vedere [input penna sul Web](ink-on-the-web.md).
+Per altre informazioni sull'uso dell'input penna sul Web, [vedere Ink on the Web (Input penna sul Web).](ink-on-the-web.md)
 
  
 

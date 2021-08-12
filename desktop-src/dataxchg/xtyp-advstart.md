@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_ADVSTART (DDEML. h)
-description: Un client utilizza la \_ transazione XTYP ADVSTART per stabilire un ciclo di notifica con un server.
+title: XTYP_ADVSTART transazione (Ddeml.h)
+description: Un client usa la transazione ADVSTART XTYP \_ per stabilire un ciclo di consulenza con un server.
 ms.assetid: 8911e722-5656-4ca6-8b0a-6bdf8281611a
 keywords:
-- Scambio di dati delle transazioni XTYP_ADVSTART
+- XTYP_ADVSTART dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 852351ad902a0552ee012d6c1e5c4d61501e6e58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb18bda3dce4db465045991e26cdc2d97ddd87ddc69c494ffaf103c566955da1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544760"
 ---
-# <a name="xtyp_advstart-transaction"></a>\_Transazione ADVSTART XTYP
+# <a name="xtyp_advstart-transaction"></a>Transazione \_ ADVSTART XTYP
 
-Un client utilizza la transazione **XTYP \_ ADVSTART** per stabilire un ciclo di notifica con un server. Una funzione di callback del server Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica **XTYP \_ ADVSTART** come parametro *wType* della funzione [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) .
+Un client usa la **transazione \_ ADVSTART XTYP** per stabilire un ciclo di consulenza con un server. Una funzione di callback del server Dynamic Data Exchange [*(DDE), DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica **XTYP \_ ADVSTART** come parametro *wType* della funzione [**DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -47,7 +47,7 @@ Tipo di transazione.
 *uFmt* 
 </dt> <dd>
 
-Formato dati richiesto dal client.
+Formato dei dati richiesto dal client.
 
 </dd> <dt>
 
@@ -95,13 +95,13 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Una funzione di callback del server deve restituire **true** per consentire un ciclo di notifica sul nome dell'argomento e sulla coppia di nomi di elemento specificati oppure su **false** per negare il ciclo di notifica. Se la funzione di callback restituisce **true**, tutte le chiamate successive alla funzione [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) da parte del server nella stessa coppia nome argomento e nome elemento fanno sì che il sistema invii le transazioni [**\_ ADVREQ XTYP**](xtyp-advreq.md) al server.
+Una funzione di callback del server deve restituire **TRUE** per consentire un ciclo advise nella coppia nome argomento e nome elemento specificata oppure **FALSE** per negare il ciclo advise. Se la funzione di callback restituisce **TRUE,** qualsiasi chiamata successiva alla funzione [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) da parte del server nello stesso nome di argomento e nella stessa coppia di nomi di elemento determina l'invio di transazioni [**\_ ADVREQ XTYP**](xtyp-advreq.md) al server.
 
 ## <a name="remarks"></a>Commenti
 
-Se un client richiede un ciclo di notifica per un nome di argomento, un nome di elemento e un formato dati per un ciclo di notifica già stabilito, la libreria di gestione Dynamic Data Exchange (DDEML) non crea un ciclo di notifica duplicato, ma modifica i flag del ciclo di notifica (**XTYPF \_ ACKREQ** e **XTYPF \_ NoData**) in modo che corrispondano alla richiesta più recente.
+Se un client richiede un ciclo advise per un nome di argomento, un nome di elemento e un formato dati per un ciclo di consulenza già stabilito, la libreria di gestione Dynamic Data Exchange (DDEML) non crea un ciclo di consulenza duplicato, ma modifica i flag del ciclo di consulenza (**XTYPF \_ ACKREQ** e **XTYPF \_ NODATA)** in modo che corrispondano alla richiesta più recente.
 
-Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ Fail \_ advises** nella funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ FAIL \_ ADVISES** nella [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -111,7 +111,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -122,7 +122,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 **Riferimento**
 </dt> <dt>
 
-[**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
+[**Ddeclienttransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 </dt> <dt>
 
 [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
@@ -134,7 +134,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

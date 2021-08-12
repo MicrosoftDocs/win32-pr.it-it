@@ -1,17 +1,17 @@
 ---
-title: Funzioni degli Appunti
-description: . | Funzioni degli Appunti
+title: Funzioni clipboard
+description: . | Funzioni clipboard
 ms.assetid: 54addf54-921d-4246-b21e-ae993f8bcb02
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96a6a0304c55e4c97f2243599909decd997758e9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 34a43bef4016f66c95565b4d5e1bd6fc934e14930a6733ffbf16447807582460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545542"
 ---
-# <a name="clipboard-functions"></a>Funzioni degli Appunti
+# <a name="clipboard-functions"></a>Funzioni clipboard
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

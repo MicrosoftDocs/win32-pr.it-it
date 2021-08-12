@@ -1,32 +1,32 @@
 ---
-description: In questa sezione viene descritta l'implementazione del protocollo multicast PGM (Pragmatic General Multicast) in Windows, spesso definita multicast affidabile. Il multicast affidabile viene implementato tramite Windows Sockets in Windows Server 2003 e versioni successive.
+description: Questa sezione descrive l'implementazione del protocollo multicast Pragma General Multicast (PGM) in Windows, spesso definita multicast affidabile. Reliable Multicast viene implementato tramite Windows Socket in Windows Server 2003 e versioni successive.
 ms.assetid: 81c203ed-739f-4a06-99a1-9a99c6164edc
 title: Programmazione multicast affidabile (PGM)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce57fcce7bf2faf471604bed97d345971801ca1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48c34365bdc8db553d24182fcb193dc03177627ccf9b00a03f309ab4cf7bbe01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118559953"
 ---
 # <a name="reliable-multicast-programming-pgm"></a>Programmazione multicast affidabile (PGM)
 
-In questa sezione viene descritta l'implementazione del protocollo multicast PGM (Pragmatic General Multicast) in Windows, spesso definita multicast affidabile. Il multicast affidabile viene implementato tramite Windows Sockets in Windows Server 2003 e versioni successive.
+Questa sezione descrive l'implementazione del protocollo multicast Pragma General Multicast (PGM) in Windows, spesso definita multicast affidabile. Reliable Multicast viene implementato tramite Windows Socket in Windows Server 2003 e versioni successive.
 
-**Windows XP:** Il protocollo PGM è supportato solo quando è installato Microsoft Message Queuing (MSMQ) 3,0.
+**Windows XP:** PGM è supportato solo quando Microsoft Message Queuing (MSMQ) 3.0.
 
-PGM è un protocollo multicast affidabile e scalabile che consente ai destinatari di rilevare la perdita, richiedere la ritrasmissione di dati persi o notificare a un'applicazione una perdita irreversibile. PGM è un protocollo ricevitore-affidabile, che indica che il ricevitore è responsabile di garantire la ricezione di tutti i dati, assolvere il mittente della responsabilità della ricezione.
+PGM è un protocollo multicast affidabile e scalabile che consente ai ricevitori di rilevare la perdita, richiedere la ritrasmissione di dati persi o notificare a un'applicazione una perdita irreversibile. PGM è un protocollo affidabile per il ricevitore, il che significa che il ricevitore è responsabile della ricezione di tutti i dati, assolvendo il mittente della responsabilità di ricezione.
 
-PGM è adatto per le applicazioni che richiedono il recapito di dati multicast senza duplicazione da più origini a più ricevitori. Il protocollo PGM non supporta il recapito riconosciuto né garantisce l'ordine dei pacchetti da più mittenti.
+PGM è appropriato per le applicazioni che richiedono il recapito di dati multicast senza duplicati da più origini a più ricevitori. PGM non supporta il recapito riconosciuto, né garantisce l'ordinamento dei pacchetti da più mittenti.
 
-Per ulteriori informazioni su PGM, vedere la specifica RFC 3208 disponibile all'indirizzo [www.ietf.org](https://www.ietf.org/).
+Per altre informazioni su PGM, vedere RFC 3208 disponibile [all'indirizzo www.ietf.org](https://www.ietf.org/).
 
-Questa sezione descrive come usare Reliable Multicast in Windows. Negli argomenti seguenti vengono illustrati i vari aspetti della creazione di un'applicazione multicast affidabile mediante Windows Sockets:
+Questa sezione descrive come usare il multicast affidabile Windows. Negli argomenti seguenti vengono illustrati i vari aspetti della creazione di un'applicazione multicast affidabile Windows Sockets:
 
 -   [Mittenti e ricevitori PGM](pgm-senders-and-receivers.md)
--   [Opzioni mittente PGM](pgm-sender-options.md)
+-   [Opzioni del mittente PGM](pgm-sender-options.md)
 -   [Invio e ricezione di dati PGM](sending-and-receiving-pgm-data.md)
 -   [Multihoming e PGM](multihoming-and-pgm.md)
 -   [Opzioni socket PGM](pgm-socket-options.md)

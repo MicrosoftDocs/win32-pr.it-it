@@ -1,19 +1,19 @@
 ---
-description: Indica la velocità dati in &\# 0034, bit al secondo&\# 0034; per il flusso video. &\#0034; datarate&\# 0034;.
+description: Indica la velocità dei dati in \# &0034;bit al secondo&\# 0034; per il flusso video. &\#0034;DataRate&\# 0034;.
 ms.assetid: 2465dd92-6ab4-4a1f-abd4-1d2abca6f9ce
-title: System. video. EncodingBitrate
+title: System.Video.EncodingBitrate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc1c6a67252c178b305093e1ed752b302307e848
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5552438d0288024b6c4f755e15cbf11cd957290edf098663c73d41055b4c58de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464304"
 ---
-# <a name="systemvideoencodingbitrate"></a>System. video. EncodingBitrate
+# <a name="systemvideoencodingbitrate"></a>System.Video.EncodingBitrate
 
-Indica la velocità dati in "bit al secondo" per il flusso video. "Datarate".
+Indica la velocità dei dati in "bit al secondo" per il flusso video. "DataRate".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -48,13 +48,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,10 +1,10 @@
 ---
-title: Enumerazione D3DX11_IMAGE_FILE_FORMAT (D3DX11tex. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Formati di file di immagine supportati dalle funzioni D3DX11Createxxx e D3DX11Savexxx.
+title: D3DX11_IMAGE_FILE_FORMAT enumerazione (D3DX11tex.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Formati di file di immagine supportati dalle funzioni D3DX11Createxxx e D3DX11Savexxx.
 ms.assetid: 89fa9ab8-3be0-4dc5-a533-94edb01df36a
 keywords:
-- Enumerazione D3DX11_IMAGE_FILE_FORMAT Direct3D 11
-- Puntatore di enumerazione LPD3DX11_IMAGE_FILE_FORMAT Direct3D 11
+- D3DX11_IMAGE_FILE_FORMAT enumerazione Direct3D 11
+- LPD3DX11_IMAGE_FILE_FORMAT puntatore di enumerazione Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 730ce59bb8a07f3fd8ef78bbeb27b4d01d198f7f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1e34d3ab49987d499114c4b9eee695bfad02055fbbef785a955407e97843208f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118536965"
 ---
-# <a name="d3dx11_image_file_format-enumeration"></a>\_Enumerazione del \_ formato del file di immagine D3DX11 \_
+# <a name="d3dx11_image_file_format-enumeration"></a>Enumerazione D3DX11 \_ IMAGE \_ FILE \_ FORMAT
 
 > [!Note]  
 > La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
@@ -53,67 +53,67 @@ typedef enum D3DX11_IMAGE_FILE_FORMAT {
 
 <dl> <dt>
 
-<span id="D3DX11_IFF_BMP"></span><span id="d3dx11_iff_bmp"></span>**D3DX11 \_ IFF ( \_ BMP)**
+<span id="D3DX11_IFF_BMP"></span><span id="d3dx11_iff_bmp"></span>**D3DX11 \_ IFF \_ BMP**
 </dt> <dd>
 
-Formato di file bitmap di Windows (BMP). Contiene un'intestazione che descrive la risoluzione del dispositivo in cui è stato creato il rettangolo di pixel, le dimensioni del rettangolo, le dimensioni della matrice di bit, una tavolozza logica e una matrice di bit che definisce la relazione tra i pixel nell'immagine bitmap e le voci della tavolozza logica. L'estensione del file per questo formato è BMP.
+Windows di file bitmap (BMP). Contiene un'intestazione che descrive la risoluzione del dispositivo in cui è stato creato il rettangolo di pixel, le dimensioni del rettangolo, le dimensioni della matrice di bit, una tavolozza logica e una matrice di bit che definisce la relazione tra i pixel nell'immagine bitmap e le voci nella tavolozza logica. L'estensione di file per questo formato è .bmp.
 
 </dd> <dt>
 
-<span id="D3DX11_IFF_JPG"></span><span id="d3dx11_iff_jpg"></span>**\_Jpg D3DX11 IFF \_**
+<span id="D3DX11_IFF_JPG"></span><span id="d3dx11_iff_jpg"></span>**D3DX11 \_ IFF \_ JPG**
 </dt> <dd>
 
-Formato file compresso Joint Photographic Experts Group (JPEG). Specifica la compressione di variabili di colori RGB a 24 bit e file di documento di immagine TIFF (grigio a 8 bit Tagged Image File Format). L'estensione di file per questo formato è. jpg.
+Joint Photographic Experts Group di file compresso JPEG (Jpeg). Specifica la compressione variabile dei file di documento di immagine TIFF (Gray-scale Tagged Image File Format) a 24 bit e di colore RGB a 24 bit. L'estensione di file per questo formato è .jpg.
 
 </dd> <dt>
 
-<span id="D3DX11_IFF_PNG"></span><span id="d3dx11_iff_png"></span>**D3DX11 \_ IFF ( \_ png)**
+<span id="D3DX11_IFF_PNG"></span><span id="d3dx11_iff_png"></span>**D3DX11 \_ IFF \_ PNG**
 </dt> <dd>
 
-Formato di file Portable Network Graphics (PNG). Formato bitmap non proprietario con compressione senza perdita di pagina. L'estensione di file per questo formato è. png.
+Portable Network Graphics (PNG). Formato bitmap non proprietario che usa la compressione senza perdita di dati. L'estensione di file per questo formato è .png.
 
 </dd> <dt>
 
-<span id="D3DX11_IFF_DDS"></span><span id="d3dx11_iff_dds"></span>**D3DX11 \_ IFF ( \_ DDS)**
+<span id="D3DX11_IFF_DDS"></span><span id="d3dx11_iff_dds"></span>**D3DX11 \_ IFF \_ DDS**
 </dt> <dd>
 
-Formato di file DirectDraw Surface (DDS). Archivia trame, trame di volumi e mappe di ambienti cubici, con o senza livelli di mipmap e con o senza compressione pixel. L'estensione di file per questo formato è. DDS.
+Formato di file DDS (Surface Surface) DirectDraw. Archivia trame, trame di volume e mappe di ambiente cubiche, con o senza livelli mipmap e con o senza compressione pixel. L'estensione di file per questo formato è dds.
 
 </dd> <dt>
 
-<span id="D3DX11_IFF_TIFF"></span><span id="d3dx11_iff_tiff"></span>**\_TIFF D3DX11 IFF \_**
+<span id="D3DX11_IFF_TIFF"></span><span id="d3dx11_iff_tiff"></span>**D3DX11 \_ IFF \_ TIFF**
 </dt> <dd>
 
-Tagged Image File Format (TIFF). Le estensioni di file per questo formato sono TIF e TIFF.
+Tagged Image File Format (TIFF). Le estensioni di file per questo formato sono tif e tiff.
 
 </dd> <dt>
 
-<span id="D3DX11_IFF_GIF"></span><span id="d3dx11_iff_gif"></span>**\_Gif D3DX11 IFF \_**
+<span id="D3DX11_IFF_GIF"></span><span id="d3dx11_iff_gif"></span>**D3DX11 \_ IFF \_ GIF**
 </dt> <dd>
 
-Graphics Interchange Format (GIF). L'estensione di file per questo formato è. gif.
+Graphics Interchange Format (GIF). L'estensione di file per questo formato è .gif.
 
 </dd> <dt>
 
 <span id="D3DX11_IFF_WMP"></span><span id="d3dx11_iff_wmp"></span>**D3DX11 \_ IFF \_ WMP**
 </dt> <dd>
 
-Windows Media Photo Format (WMP). Questo formato è noto anche come HD Photo e JPEG XR. Le estensioni di file per questo formato sono. HDP,. JXR e. wdp.
+Windows Formato Foto multimediale (WMP). Questo formato è noto anche come HD Photo e JPEG XR. Le estensioni di file per questo formato sono hdp, jxr e wdp.
 
-Per funzionare correttamente, **D3DX11 \_ IFF \_ WMP** richiede l'inizializzazione di com. Chiamare quindi [**CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) o [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) nell'applicazione prima di chiamare D3DX.
+Per il corretto funzionamento, **D3DX11 \_ IFF \_ WMP** richiede l'inizializzazione di COM. Pertanto, chiamare [**CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) o [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) nell'applicazione prima di chiamare D3DX.
 
 </dd> <dt>
 
-<span id="D3DX11_IFF_FORCE_DWORD"></span><span id="d3dx11_iff_force_dword"></span>**D3DX11 \_ IFF \_ Force \_ DWORD**
+<span id="D3DX11_IFF_FORCE_DWORD"></span><span id="d3dx11_iff_force_dword"></span>**D3DX11 \_ IFF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su alcuni di questi formati, vedere [tipi di bitmap (GDI+)](../gdiplus/-gdiplus-types-of-bitmaps-about.md) .
+Vedere [Tipi di bitmap (GDI+)](../gdiplus/-gdiplus-types-of-bitmaps-about.md) per altre informazioni su alcuni di questi formati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,7 +121,7 @@ Per ulteriori informazioni su alcuni di questi formati, vedere [tipi di bitmap (
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX11tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX11tex.h</dt> </dl> |
 
 
 

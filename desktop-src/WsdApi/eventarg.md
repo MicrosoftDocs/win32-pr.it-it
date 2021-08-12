@@ -1,21 +1,21 @@
 ---
-description: Specifica se gli argomenti dell'evento correlati vengono inclusi nelle funzioni generate.
+description: Specifica se gli argomenti di evento correlati vengono inclusi nelle funzioni generate.
 ms.assetid: 60be4680-c434-4fdb-8449-c040969d2f59
-title: elemento eventArg
+title: eventArg - elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 820c4223e8e4a880343faf2e9df686d9746b1b29
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5a25909010f812779a5e6d91530a56faff067e1abcd8c041680f2918ba6ad4a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118552422"
 ---
-# <a name="eventarg-element"></a>elemento eventArg
+# <a name="eventarg-element"></a>eventArg - elemento
 
-Specifica se gli argomenti dell'evento correlati vengono inclusi nelle funzioni generate.
+Specifica se gli argomenti di evento correlati vengono inclusi nelle funzioni generate.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <eventArg/>
@@ -42,13 +42,13 @@ Non ci sono elementi figlio.
 
 ## <a name="remarks"></a>Commenti
 
-I valori possibili sono 1 (argomenti evento inclusi) e 0 (impostazione predefinita, argomenti dell'evento esclusi).
+I valori possibili sono 1 (argomenti evento inclusi) e 0 (impostazione predefinita, argomenti evento esclusi).
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

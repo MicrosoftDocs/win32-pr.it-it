@@ -4,12 +4,12 @@ ms.assetid: a20f2d78-6cfe-4755-968e-91369021db1b
 title: Evento InkPicture.Gesture (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 915557f304d722ed2819af75dd40284db119abfb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 18c0307397fc5a197666894d40adce6f4a579e22d896df8df645b053580ee94d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451068"
 ---
 # <a name="inkpicturegesture-event"></a>Evento InkPicture.Gesture
 
@@ -71,7 +71,7 @@ Questo evento non restituisce un valore.
 
 Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ ICEGesture DISPID.
 
-Quando la [**proprietà CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectionmode) è impostata su [**GestureOnly,**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)il timeout tra quando un utente aggiunge un movimento e quando si verifica l'evento **Gesture** è un valore fisso che non è possibile modificare a livello di codice. Il riconoscimento del movimento è più **veloce in modalità InkAndGesture.**
+Quando la [**proprietà CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectionmode) è impostata su [**GestureOnly**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode), il timeout tra quando un utente aggiunge un movimento e quando si verifica l'evento **Gesture** è un valore fisso che non è possibile modificare a livello di codice. Il riconoscimento del movimento è più **veloce in modalità InkAndGesture.**
 
 Per impedire la raccolta di input penna in [**modalità InkAndGesture:**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
 
@@ -100,7 +100,7 @@ Per un elenco di movimenti specifici dell'applicazione, vedere il [**tipo di enu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

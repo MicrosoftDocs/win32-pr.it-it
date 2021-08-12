@@ -1,20 +1,20 @@
 ---
 title: Strutture 11on12
-description: Le strutture seguenti sono dichiarate in d3d11on12. h.
+description: Le strutture seguenti vengono dichiarate in d3d11on12.h.
 ms.assetid: 9EB0E780-0000-413C-BA3E-A735B8422BF6
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58df9ce2415f697cd4ca07907ffae761b671a256
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5993ea0ddb5ef452bc32c2c22051597aff4254a6d5ff16acbcf65b8d1971150d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118529925"
 ---
 # <a name="11on12-structures"></a>Strutture 11on12
 
-Le strutture seguenti sono dichiarate in d3d11on12. h.
+Le strutture seguenti vengono dichiarate in d3d11on12.h.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,7 +22,7 @@ Le strutture seguenti sono dichiarate in d3d11on12. h.
 
 | Argomento                                                             | Descrizione                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_Flag delle risorse d3d11 \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Usato con [**ID3D11On12Device:: CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) per eseguire l'override dei flag che verrebbero dedotti dalle proprietà della risorsa o dalle proprietà dell'heap, inclusi i flag di binding, i flag misc e i flag di accesso alla CPU. <br/> |
+| [**FLAG DI RISORSE D3D11 \_ \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Usato con [**ID3D11On12Device::CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) per eseguire l'override dei flag che verrebbero dedotto dalle proprietà delle risorse o dell'heap, inclusi i flag di associazione, i flag di errore e i flag di accesso della CPU. <br/> |
 
 
 
@@ -32,7 +32,7 @@ Le strutture seguenti sono dichiarate in d3d11on12. h.
 
 <dl> <dt>
 
-[Guida di riferimento a 11on12 (d3d11on12. h)](direct3d-11on12-reference.md)
+[Informazioni di riferimento su 11on12 (d3d11on12.h)](direct3d-11on12-reference.md)
 </dt> </dl>
 
  

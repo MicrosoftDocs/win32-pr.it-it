@@ -1,6 +1,6 @@
 ---
-title: Metodo SetProperty IBackgroundCopyJob5 (Deliveryoptimization. h)
-description: Metodo generico per l'impostazione delle proprietà del processo di ottimizzazione recapito.
+title: Metodo SetProperty IBackgroundCopyJob5 (Deliveryoptimization.h)
+description: Metodo generico per l'impostazione Ottimizzazione recapito di processo .
 ms.assetid: 9A8CCE04-B3EB-43CC-A135-7054EC40ABEC
 keywords:
 - Metodo SetProperty
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a3dbd1e7c66592ea959c9b1ff4f4864340c504d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f9b7dab17780572a59e12dde9905c3d8db23895e6564aac47cb6eb2d984bfaf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118542684"
 ---
-# <a name="ibackgroundcopyjob5setproperty-method"></a>Metodo IBackgroundCopyJob5:: SetProperty
+# <a name="ibackgroundcopyjob5setproperty-method"></a>Metodo IBackgroundCopyJob5::SetProperty
 
-Metodo generico per l'impostazione delle proprietà del processo di ottimizzazione recapito.
+Metodo generico per l'impostazione Ottimizzazione recapito di processo .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,17 +44,17 @@ HRESULT SetProperty(
 
 <dl> <dt>
 
-*PropertyId* \[ in\]
+*PropertyId* \[ Pollici\]
 </dt> <dd>
 
-ID della proprietà che viene impostata come valore di enumerazione [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) .
+ID della proprietà che viene impostata specificato come valore [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) enum.
 
 </dd> <dt>
 
-*PropertyValue* \[ in\]
+*PropertyValue* \[ Pollici\]
 </dt> <dd>
 
-Valore della proprietà da impostare. Per mantenere un valore il cui tipo è appropriato per la proprietà, questo valore viene specificato tramite il [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) Unione costituito da tutti i tipi di proprietà noti.
+Valore della proprietà che viene impostata. Per contenere un valore il cui tipo è appropriato per la proprietà , [**questo**](bits-job-property-value-.md) valore viene specificato tramite l'unione BITS_JOB_PROPERTY_VALUE costituita da tutti i tipi di proprietà noti.
 
 </dd> </dl>
 
@@ -78,13 +78,13 @@ Il metodo restituisce i valori restituiti seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyJob5 viene definito come E847030C-BBBA-4657-AF6D-484AA42BF1FE<br/>              |
+| IID<br/>                      | IID_IBackgroundCopyJob5 è definito come E847030C-BBBA-4657-AF6D-484AA42BF1FE<br/>              |
 
 
 
@@ -95,7 +95,7 @@ Il metodo restituisce i valori restituiti seguenti.
 [**IBackgroundCopyJob5**](ibackgroundcopyjob5.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob5:: GetProperty**](ibackgroundcopyjob5-getproperty.md)
+[**IBackgroundCopyJob5::GetProperty**](ibackgroundcopyjob5-getproperty.md)
 </dt> </dl>
 
  

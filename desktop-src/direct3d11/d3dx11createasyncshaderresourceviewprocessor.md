@@ -1,6 +1,6 @@
 ---
-title: Funzione D3DX11CreateAsyncShaderResourceViewProcessor (D3DX11async. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
+title: Funzione D3DX11CreateAsyncShaderResourceViewProcessor (D3DX11async.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 ms.assetid: bd9349af-f433-47f9-b443-3049c32fc286
 keywords:
 - Funzione D3DX11CreateAsyncShaderResourceViewProcessor Direct3D 11
@@ -15,21 +15,21 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3164aac5ddaec3d61108a2cf129b76991b8f76a0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 305705a4fd82b7f2267e3d56630b78c8c8d98473d946b1629e713162f4a6ae92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118536570"
 ---
-# <a name="d3dx11createasyncshaderresourceviewprocessor-function"></a>D3DX11CreateAsyncShaderResourceViewProcessor (funzione)
+# <a name="d3dx11createasyncshaderresourceviewprocessor-function"></a>Funzione D3DX11CreateAsyncShaderResourceViewProcessor
 
 > [!Note]  
 > La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Vedere la sezione Osservazioni.
 
  
 
-Creare un elaboratore di dati che caricherà una risorsa e quindi crei una visualizzazione delle risorse shader. I processori di dati sono un componente della funzionalità asincrona di caricamento dei dati in D3DX11 che usa le [**pompe di thread**](id3dx11threadpump.md).
+Creare un processore di dati che carica una risorsa e quindi creare una vista shader-risorsa per essa. I data processor sono un componente della funzionalità di caricamento dati asincrono in D3DX11 che usa [**le pompe di thread**](id3dx11threadpump.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,30 +48,30 @@ HRESULT D3DX11CreateAsyncShaderResourceViewProcessor(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)\***
 
-Puntatore al dispositivo Direct3D (vedere [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)) che verrà usato per creare una risorsa e una visualizzazione delle risorse dello shader per la risorsa.
+Puntatore al dispositivo Direct3D (vedere [**ID3D11Device)**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)che verrà usato per creare una risorsa e una visualizzazione shader-risorsa per tale risorsa.
 
 </dd> <dt>
 
-*pLoadInfo* \[ in\]
+*pLoadInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ Image \_ Load \_ info**](d3dx11-image-load-info.md)\***
+Tipo: **[ **D3DX11 \_ IMAGE \_ LOAD \_ INFO**](d3dx11-image-load-info.md)\***
 
-facoltativo. Identifica le caratteristiche di una trama (vedere [**D3DX11 \_ Image \_ Load \_ info**](d3dx11-image-load-info.md)) quando viene creato il processore di dati; impostare questa proprietà su **null** per leggere le caratteristiche di una trama quando viene caricata la trama.
+facoltativo. Identifica le caratteristiche di una trama (vedere [**D3DX11 \_ IMAGE \_ LOAD \_ INFO**](d3dx11-image-load-info.md)) quando viene creato il processore di dati. Impostare questo valore su **NULL** per leggere le caratteristiche di una trama quando la trama viene caricata.
 
 </dd> <dt>
 
-*ppDataProcessor* \[ out\]
+*ppDataProcessor* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11DataProcessor**](id3dx11dataprocessor.md)\*\***
 
-Indirizzo di un puntatore a un buffer che contiene il processore di dati creato (vedere [**interfaccia ID3DX11DataProcessor**](id3dx11dataprocessor.md)).
+Indirizzo di un puntatore a un buffer che contiene il processore di dati creato (vedere [**ID3DX11DataProcessor Interface**](id3dx11dataprocessor.md)).
 
 </dd> </dl>
 
@@ -79,15 +79,15 @@ Indirizzo di un puntatore a un buffer che contiene il processore di dati creato 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati nei [codici restituiti di Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Non è presente alcuna implementazione del caricatore asincrono al di fuori di D3DX 10 e D3DX 11.
+Non esiste alcuna implementazione del caricatore asincrono al di fuori di D3DX 10 e D3DX 11.
 
-Per le app di Windows Store, gli esempi di DirectX (ad esempio, l' [esempio di esercitazione Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)) includono il modulo **BasicLoader** che usa il modello di programmazione asincrona Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
+Per Windows app di Store, gli esempi DirectX (ad esempio, l'esempio di esercitazione [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)includono il modulo **BasicLoader** che usa il modello di programmazione asincrona Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
 
-Per le applicazioni desktop Win32, è possibile utilizzare il [runtime di concorrenza](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) per implementare un modello simile a quello del Windows Runtime modello di programmazione asincrona.
+Per le app desktop Win32, è possibile usare il runtime di concorrenza [per](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementare qualcosa di simile al modello di programmazione asincrona Windows Runtime.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Per le applicazioni desktop Win32, è possibile utilizzare il [runtime di concor
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX11async. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX11. lib</dt> </dl>    |
+| Intestazione<br/>  | <dl> <dt>D3DX11async.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX11.lib</dt> </dl>    |
 
 
 

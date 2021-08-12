@@ -1,5 +1,5 @@
 ---
-description: Contiene un elenco dei protocolli che devono essere utilizzati da DCOM. Contiene un oggetto per ogni protocollo.
+description: Contiene un elenco dei protocolli che devono essere usati da DCOM. Contiene un oggetto per ogni protocollo.
 ms.assetid: f553ce01-39b6-4dc3-9696-978b390a5c7d
 title: Raccolta DCOMProtocols
 ms.topic: reference
@@ -12,29 +12,29 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 705940dae0f7ebe885db4c295714df538c56c705
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f387c9ba1d46b99c44a3d6616df95f7b6f9cece959a943b63ed12ce6fe8af900
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118548020"
 ---
 # <a name="dcomprotocols-collection"></a>Raccolta DCOMProtocols
 
-Contiene un elenco dei protocolli che devono essere utilizzati da DCOM. Contiene un oggetto per ogni protocollo.
+Contiene un elenco dei protocolli che devono essere usati da DCOM. Contiene un oggetto per ogni protocollo.
 
-Questa raccolta supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **DCOMProtocols** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta DCOMProtocols** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Errorinfo**](errorinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -43,7 +43,7 @@ La raccolta **DCOMProtocols** eredita dall'interfaccia [**IUnknown**](/windows/d
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
 -   [Nome](#name)
 -   [Ordine](#order)
@@ -87,7 +87,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Codice che specifica la sequenza del protocollo RPC. I codici di protocollo supportati sono i seguenti: ncacn \_ IP \_ TCP, ncacn \_ http, ncacn \_ SPX. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Codice che specifica la sequenza del protocollo RPC. I codici di protocollo supportati includono: ncacn \_ ip \_ tcp, ncacn \_ http, ncacn \_ spx. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                                   |
 | Type           | string                                                                                                                                                                                                                                                                      |
 | Predefinito        | ""                                                                                                                                                                                                                                                                          |

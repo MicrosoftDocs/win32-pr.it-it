@@ -4,22 +4,22 @@ description: Conversione in VBScript
 ms.assetid: 12eac4bd-06d9-45db-81c2-0591200cbacc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14b9f64e25a22ffe83c148c1fd1b7a7603b8f3f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9241dbcbfd15ff50da5e6a9cb32db2318d21c7f70aab6d2420a8e80c59229852
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118550585"
 ---
 # <a name="translating-to-vbscript"></a>Conversione in VBScript
 
-VBScript è un subset del linguaggio Microsoft Visual Basic, Applications Edition. Poiché VBScript è progettato per essere utilizzato in modo sicuro nelle applicazioni lato client, ad esempio le pagine Web, non fornisce l'input e l'output dei file o l'accesso diretto al sistema operativo sottostante. Ciò impedisce a uno script basato sul Web di eliminare o modificare i file nel computer. Per un elenco completo delle funzionalità di Visual Basic non supportate in VBScript, vedere la documentazione di Visual Basic, Applications Edition.
+VBScript è un subset del linguaggio Visual Basic, Applications Edition Microsoft. Poiché VBScript è progettato per essere sicuro per l'uso in applicazioni lato client, ad esempio pagine Web, non fornisce input e output di file o l'accesso diretto al sistema operativo sottostante. In questo modo si impedisce a uno script basato sul Web di eliminare o modificare i file nel computer. Per un elenco completo delle Visual Basic non supportate in VBScript, vedere la documentazione Visual Basic, Applications Edition.
 
-Oltre alle funzionalità del linguaggio fornite da VBScript, l'host di scripting può esporre anche un modello a oggetti VBScript a cui lo script può accedere. Internet Explorer, ad esempio, espone un modello a oggetti che consente agli script di interagire con il browser e di controllarlo a livello di codice. Per ulteriori informazioni sull'utilizzo di tali modelli a oggetti, vedere la documentazione di nell'host di scripting.
+Oltre alle funzionalità del linguaggio fornite da VBScript, l'host di scripting può anche esporre un modello a oggetti VBScript a cui lo script può accedere. Ad esempio, Internet Explorer un modello a oggetti che consente agli script di interagire con e controllare il browser a livello di codice. Per altre informazioni sull'uso di tali modelli a oggetti, vedere la documentazione sull'host di scripting.
 
-Negli argomenti seguenti vengono descritti i problemi da tenere in considerazione durante la conversione di uno script in VBScript da JavaScript o JScript:
+Negli argomenti seguenti vengono descritti i problemi da considerare quando si traduce uno script in VBScript da JavaScript o JScript:
 
--   [Conversione in VBScript da JScript](translating-to-vbscript-from-jscript.md)
+-   [Traduzione in VBScript da JScript](translating-to-vbscript-from-jscript.md)
 -   [Conversione in VBScript da JavaScript](translating-to-vbscript-from-javascript.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -29,12 +29,12 @@ Negli argomenti seguenti vengono descritti i problemi da tenere in considerazion
 [Conversione in JavaScript](translating-to-javascript.md)
 </dt> <dt>
 
-[Conversione in JScript](translating-to-jscript.md)
+[Traduzione in JScript](translating-to-jscript.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: "Metodo IWiaDevMgr2::SelectDeviceDlgID: visualizza una finestra di dialogo che consente all'utente di selezionare un dispositivo hardware per l'acquisizione dell'immagine."
+description: "Metodo IWiaDevMgr2::SelectDeviceDlgID : visualizza una finestra di dialogo che consente all'utente di selezionare un dispositivo hardware per l'acquisizione dell'immagine."
 ms.assetid: 6baca959-0f97-4a39-88d0-ed34b813c80a
 title: Metodo IWiaDevMgr2::SelectDeviceDlgID (Wia.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: a4279bef86d761ed0eb7d90ad3b8dee46e0f17f4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 95b5134a2c7f7411ffcf2860f8829225a7271089c824b4e4c8731de78ffa4a61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440803"
 ---
 # <a name="iwiadevmgr2selectdevicedlgid-method"></a>Metodo IWiaDevMgr2::SelectDeviceDlgID
 
@@ -56,7 +56,7 @@ Specifica la finestra padre della finestra **di dialogo Seleziona** dispositivo.
 
 Tipo: **LONG**
 
-Specifica il tipo di dispositivo WIA 2.0 da usare. Per un elenco dei valori possibili, vedere Identificatori di tipo di dispositivo [WIA.](-wia-wia-device-type-specifiers.md)
+Specifica il tipo di dispositivo WIA 2.0 da usare. Per un elenco dei valori possibili, vedere Identificatori del tipo di dispositivo [WIA.](-wia-wia-device-type-specifiers.md)
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Usare il comportamento predefinito
 
 </dt> <dd>
 
-Visualizzare la finestra di dialogo anche se è presente un solo dispositivo corrispondente.
+Consente di visualizzare la finestra di dialogo anche se è presente un solo dispositivo corrispondente.
 
 </dd> </dl> </dd> <dt>
 
@@ -135,8 +135,8 @@ L'applicazione può limitare i dispositivi visualizzati all'utente a tipi specif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                     |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 

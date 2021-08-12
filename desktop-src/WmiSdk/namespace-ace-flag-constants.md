@@ -2,7 +2,7 @@
 description: Nell'elenco seguente sono elencati i valori possibili del campo Flags in una voce di controllo di accesso (ACE) WMI.
 ms.assetid: bd09691d-e285-40e0-8686-edd5a132a06e
 ms.tgt_platform: multiple
-title: Costanti del flag ACE dello spazio dei nomi (Winnt. h)
+title: Costanti dei flag ACE dello spazio dei nomi (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,20 +18,20 @@ api_type:
 - HeaderDef
 api_location:
 - Winnt.h
-ms.openlocfilehash: 053d4166882b6254dec313cb10fbf10588ba0071
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b4051a6c17e9861d656207335b2543cf7d886e74569c269df2a4f680f47fbe3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555181"
 ---
-# <a name="namespace-ace-flag-constants"></a>Costanti del flag ACE dello spazio dei nomi
+# <a name="namespace-ace-flag-constants"></a>Costanti dei flag ACE dello spazio dei nomi
 
-Nell'elenco seguente sono elencati i valori possibili del campo **Flags** in una voce di controllo di accesso (ACE) WMI.
+Nell'elenco seguente sono elencati i valori possibili **del campo Flags** in una voce di controllo di accesso (ACE) WMI.
 
 <dl> <dt>
 
-<span id="OBJECT_INHERIT_ACE"></span><span id="object_inherit_ace"></span>**OGGETTO che \_ eredita \_ ACE**
+<span id="OBJECT_INHERIT_ACE"></span><span id="object_inherit_ace"></span>**OBJECT \_ INHERIT \_ ACE**
 </dt> <dd> <dl> <dt>
 
 1 (0x1)
@@ -39,12 +39,12 @@ Nell'elenco seguente sono elencati i valori possibili del campo **Flags** in una
 
 
 
-Gli oggetti figlio non contenitore ereditano la voce ACE come una voce ACE efficace.
+Gli oggetti figlio non contenitore ereditano la ACE come ACE effettiva.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CONTAINER_INHERIT_ACE"></span><span id="container_inherit_ace"></span>**il contenitore \_ eredita \_ ACE**
+<span id="CONTAINER_INHERIT_ACE"></span><span id="container_inherit_ace"></span>**CONTAINER \_ INHERIT \_ ACE**
 </dt> <dd> <dl> <dt>
 
 2 (0x2)
@@ -52,12 +52,12 @@ Gli oggetti figlio non contenitore ereditano la voce ACE come una voce ACE effic
 
 
 
-La voce ACE ha un effetto sugli spazi dei nomi figlio e sullo spazio dei nomi corrente.
+La ACE ha effetto sugli spazi dei nomi figlio e sullo spazio dei nomi corrente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NO_PROPAGATE_INHERIT_ACE"></span><span id="no_propagate_inherit_ace"></span>**Nessuna \_ propagazione \_ eredita \_ ACE**
+<span id="NO_PROPAGATE_INHERIT_ACE"></span><span id="no_propagate_inherit_ace"></span>**NO \_ PROPAGATE \_ INHERIT \_ ACE**
 </dt> <dd> <dl> <dt>
 
 4 (0x4)
@@ -65,12 +65,12 @@ La voce ACE ha un effetto sugli spazi dei nomi figlio e sullo spazio dei nomi co
 
 
 
-La voce ACE si applica solo allo spazio dei nomi corrente e agli elementi figlio immediati.
+La ACE si applica solo allo spazio dei nomi corrente e agli elementi figlio immediati.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="INHERIT_ONLY_ACE"></span><span id="inherit_only_ace"></span>**EREDITA \_ solo \_ ACE**
+<span id="INHERIT_ONLY_ACE"></span><span id="inherit_only_ace"></span>**INHERIT \_ ONLY \_ ACE**
 </dt> <dd> <dl> <dt>
 
 8 (0x8)
@@ -78,12 +78,12 @@ La voce ACE si applica solo allo spazio dei nomi corrente e agli elementi figlio
 
 
 
-La voce ACE si applica solo agli spazi dei nomi figlio.
+La ACE si applica solo agli spazi dei nomi figlio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="INHERITED_ACE"></span><span id="inherited_ace"></span>**Ace EREDITAta \_**
+<span id="INHERITED_ACE"></span><span id="inherited_ace"></span>**ACE \_ EREDITATO**
 </dt> <dd> <dl> <dt>
 
 16 (0x10)
@@ -91,7 +91,7 @@ La voce ACE si applica solo agli spazi dei nomi figlio.
 
 
 
-Questa impostazione non viene impostata dai client, ma viene segnalata ai client quando l'origine di una voce ACE è uno spazio dei nomi padre.
+Questa impostazione non viene impostata dai client, ma viene segnalata ai client quando l'origine di una ACE è uno spazio dei nomi padre.
 
 
 </dt> </dl> </dd> </dl>
@@ -102,7 +102,7 @@ Questa impostazione non viene impostata dai client, ma viene segnalata ai client
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Winnt. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Winnt.h</dt> </dl> |
 
 
 
@@ -113,7 +113,7 @@ Questa impostazione non viene impostata dai client, ma viene segnalata ai client
 [Costanti di sicurezza WMI](wmi-security-constants.md)
 </dt> <dt>
 
-[Impostazione di descrittori di sicurezza spazio dei nomi](setting-namespace-security-descriptors.md)
+[Impostazione dei descrittori di sicurezza namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
 [Definizione dell'ereditarietà della sicurezza dello spazio dei nomi](establishing-inheritance-of-namespace-security.md)

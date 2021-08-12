@@ -3,7 +3,7 @@ title: Elemento SizeDefinition
 description: Rappresenta un modello di layout personalizzato dei controlli barra multifunzione.
 ms.assetid: f90bb469-aee2-4bba-9efe-142a39a8c1ae
 keywords:
-- Barra multifunzione di Windows per l'elemento SizeDefinition
+- Elemento SizeDefinition Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cc68ac032459bed77d402ebd860886398748c874
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 982825649afb7640f87cb7032b000d837915c4bc9d970444da3c5cd3a5a98375
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439536"
 ---
 # <a name="sizedefinition-element"></a>Elemento SizeDefinition
 
 Rappresenta un modello di layout personalizzato dei controlli barra multifunzione.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <SizeDefinition
@@ -82,7 +82,7 @@ Rappresenta un modello di layout personalizzato dei controlli barra multifunzion
 
 | Elemento                                                                                   |
 |-------------------------------------------------------------------------------------------|
-| [**Gruppo**](windowsribbon-element-group.md)<br/>                                   |
+| [**Group**](windowsribbon-element-group.md)<br/>                                   |
 | [**Ribbon.SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/> |
 
 
@@ -95,7 +95,7 @@ Può verificarsi al massimo una volta per ogni [**elemento**](windowsribbon-elem
 
 Può verificarsi una o più volte per [**ogni elemento Ribbon.SizeDefinitions.**](windowsribbon-element-ribbon-sizedefinitions.md)
 
-I modelli di layout predefiniti del framework [della](windowsribbon-templates.md) barra multifunzione vengono specificati con *l'attributo SizeDefinition* dell'elemento [**Group.**](windowsribbon-element-group.md)
+I modelli di layout predefiniti del framework [della barra](windowsribbon-templates.md) multifunzione vengono specificati con *l'attributo SizeDefinition* dell'elemento Group. [](windowsribbon-element-group.md)
 
 Se un elemento [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) corrispondente non viene dichiarato per ogni [**elemento Group**](windowsribbon-element-group.md) in un elemento [**Tab,**](windowsribbon-element-tab.md) si verificherà un errore di convalida.
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo TakePicture dell'oggetto Item fa in modo che un dispositivo della fotocamera digitale prenda un'immagine e restituisce un oggetto Item che rappresenta l'immagine risultante. Questo metodo si applica solo ai dispositivi della fotocamera digitale.
+description: Il metodo TakePicture dell'oggetto Item consente a un dispositivo fotocamera digitale di scattare una foto e restituisce un oggetto Item che rappresenta l'immagine risultante. Questo metodo si applica solo ai dispositivi con fotocamera digitale.
 ms.assetid: d181048e-21ef-4fcc-a50a-5ba44bbde72e
-title: Metodo Item. TakePicture (wiavideo. h)
+title: Metodo Item.TakePicture (Wiavideo.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: fd07f7ccd4f2c65c2d911dabdd0ca829dc241765
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7d2e67876cd32b1db2181aba491090d44679756f5503c078d1edff495afc1cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440589"
 ---
-# <a name="itemtakepicture-method"></a>Item. TakePicture, metodo
+# <a name="itemtakepicture-method"></a>Metodo Item.TakePicture
 
-Il metodo **TakePicture** dell'oggetto [**Item**](-wia-item.md) fa in modo che un dispositivo della fotocamera digitale prenda un'immagine e restituisce un oggetto **Item** che rappresenta l'immagine risultante. Questo metodo si applica solo ai dispositivi della fotocamera digitale.
+Il **metodo TakePicture** dell'oggetto [**Item**](-wia-item.md) consente a un dispositivo fotocamera digitale di scattare una foto e restituisce un **oggetto Item** che rappresenta l'immagine risultante. Questo metodo si applica solo ai dispositivi con fotocamera digitale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,10 +49,10 @@ Oggetto [**Item**](-wia-item.md) che rappresenta l'immagine creata da questo met
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wiavideo. h</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Wiavideo.h</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

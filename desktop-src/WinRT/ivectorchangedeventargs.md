@@ -1,7 +1,7 @@
 ---
-description: Fornisce i dati per un evento VectorChanged.
+description: Fornisce dati per un evento VectorChanged.
 ms.assetid: 635c0f96-5d64-436e-9186-78f9d85b6d29
-title: Interfaccia IVectorChangedEventArgs (IVectorChangedEventArgs. h)
+title: Interfaccia IVectorChangedEventArgs (IVectorChangedEventArgs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - IVectorChangedEventArgs.h
-ms.openlocfilehash: d5e1405c87d0c2a0c41a0244f79cea7b2e86ea40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0b50b253527162ae5d459f4e2fb919d3167059303d0c6ae7e35a129f7a32e39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118560616"
 ---
 # <a name="ivectorchangedeventargs-interface"></a>Interfaccia IVectorChangedEventArgs
 
-Fornisce i dati per un evento [**VectorChanged**](/uwp/api/windows.foundation.collections.iobservablevector-1?view=winrt-19041) .
+Fornisce dati per un [**evento VectorChanged.**](/uwp/api/windows.foundation.collections.iobservablevector-1?view=winrt-19041)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IVectorChangedEventArgs** eredita da **IInspectable**. **IVectorChangedEventArgs** dispone anche di questi tipi di membri:
+**L'interfaccia IVectorChangedEventArgs** eredita da **IInspectable.** **IVectorChangedEventArgs** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IVectorChangedEventArgs** dispone di questi metodi.
+**L'interfaccia IVectorChangedEventArgs** include questi metodi.
 
 
 
 | Metodo                                                                        | Descrizione                                                           |
 |:------------------------------------------------------------------------------|:----------------------------------------------------------------------|
-| [**ottenere \_ CollectionChange**](ivectorchangedeventargs-get-collectionchange.md) | Ottiene il tipo di modifica che si è verificata nel vettore.<br/>       |
-| [**ottenere l' \_ Indice**](ivectorchangedeventargs-get-index.md)                       | Ottiene la posizione nel vettore in cui si è verificata la modifica.<br/> |
+| [**get \_ CollectionChange**](ivectorchangedeventargs-get-collectionchange.md) | Ottiene il tipo di modifica che si è verificata nel vettore.<br/>       |
+| [**get \_ Index**](ivectorchangedeventargs-get-index.md)                       | Ottiene la posizione nel vettore in cui si è verificata la modifica.<br/> |
 
 
 
@@ -53,7 +53,7 @@ L'interfaccia **IVectorChangedEventArgs** dispone di questi metodi.
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                 |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                       |
-| Intestazione<br/>                   | <dl> <dt>IVectorChangedEventArgs. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IVectorChangedEventArgs.h</dt> </dl> |
 
 
 

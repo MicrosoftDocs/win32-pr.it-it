@@ -12,12 +12,12 @@ api_name:
 - InstanceId
 api_type:
 - NA
-ms.openlocfilehash: 4709ee0ed6a29649d23887ee0472b4f770b062d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0eedea740ac3d8be1e997b26a5baf5ad0cd6a154b49de96f04d6431f99569ae8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118528313"
 ---
 # <a name="instanceid"></a>InstanceId
 
@@ -34,11 +34,11 @@ uint InstanceID();
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
+Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
 * [**Qualsiasi hit shader**](any-hit-shader.md)
 * [**Hit shader più vicino**](closest-hit-shader.md)
-* [**Intersezione shader**](intersection-shader.md)
+* [**Intersection Shader**](intersection-shader.md)
 
 
 
@@ -50,7 +50,7 @@ Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
 
 <dl> <dt>
 
-[Guida di riferimento a Direct3D 12 raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
+[Informazioni di riferimento su HLSL per Direct3D 12 Raytracing](direct3d-12-raytracing-hlsl-reference.md)
 </dt> </dl>
 
  

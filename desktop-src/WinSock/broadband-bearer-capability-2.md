@@ -4,12 +4,12 @@ ms.assetid: 9e45ca17-2aec-42e5-88a5-5ef1dc4238d9
 title: Funzionalità di connessione a banda larga
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11e94e926b8013a252ee842e6ffeec3d5c9eb35f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f1294724726d766c209c9f83adc5dd2bfc0db2680cf144759b95654748b0d81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118560329"
 ---
 # <a name="broadband-bearer-capability"></a>Funzionalità di connessione a banda larga
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: f37d70888ccedf0fe941f0387c064aba37dc287e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b774ab5626d1eab5d8f4179b27924686fed56661fb776039a65ff40b3b64ebba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449844"
 ---
 # <a name="itablet3-interface"></a>Interfaccia ITablet3
 
@@ -27,20 +27,20 @@ L'interfaccia ITablet3 consente l'esecuzione di query multitouch per l'input.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITablet3** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet3** dispone anche di questi tipi di membri:
+**L'interfaccia ITablet3** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet3** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ITablet3** dispone di questi metodi.
+**L'interfaccia ITablet3** include questi metodi.
 
 
 
 | Metodo                                                  | Descrizione                                                         |
 |:--------------------------------------------------------|:--------------------------------------------------------------------|
 | [**GetMaximumCursors**](itablet3-getmaximumcursors.md) | Recupera il numero massimo di input supportati.<br/>        |
-| [**MultiTouch**](itablet3-ismultitouch.md)           | Indica se il multitouch è abilitato per questo oggetto.<br/> |
+| [**isMultiTouch**](itablet3-ismultitouch.md)           | Indica se multitouch è abilitato per questo oggetto.<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'interfaccia **ITablet3** dispone di questi metodi.
 
 Gli sviluppatori non devono usare questa interfaccia
 
-Il codice seguente descrive il modo in cui viene definita l'interfaccia **ITablet3** .
+Nel codice seguente viene descritto come viene **definita l'interfaccia ITablet3.**
 
 ``` syntax
 [
@@ -73,8 +73,8 @@ interface ITablet3 : IUnknown
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 

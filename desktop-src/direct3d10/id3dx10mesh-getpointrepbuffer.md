@@ -1,7 +1,7 @@
 ---
-description: Ottiene il buffer Rep del punto della rete.
+description: Ottenere il buffer del punto della mesh.
 ms.assetid: 4be7bee5-15ea-496f-83c2-a3a9bafd97c6
-title: 'Metodo ID3DX10Mesh:: GetPointRepBuffer (D3DX10. h)'
+title: Metodo ID3DX10Mesh::GetPointRepBuffer (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 131094792f35b21fd230b66bda6a43fb104b65ee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4e3c23f4ac4e77d97d290075ba6970062af9ea3a44c608d02e98c05e8f248b07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540237"
 ---
-# <a name="id3dx10meshgetpointrepbuffer-method"></a>Metodo ID3DX10Mesh:: GetPointRepBuffer
+# <a name="id3dx10meshgetpointrepbuffer-method"></a>Metodo ID3DX10Mesh::GetPointRepBuffer
 
-Ottiene il buffer Rep del punto della rete.
+Ottenere il buffer del punto della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetPointRepBuffer(
 
 <dl> <dt>
 
-*ppPointReps* \[ out\]
+*ppPointReps* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10MeshBuffer**](id3dx10meshbuffer.md)\*\***
 
-Puntatore a un buffer Mesh contenente i dati della Rep punti della rete. Vedere [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
+Puntatore a un buffer mesh contenente i dati del punto della mesh. Vedere [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a un buffer Mesh contenente i dati della Rep punti della rete. Vedere 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

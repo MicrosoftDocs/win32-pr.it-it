@@ -1,19 +1,19 @@
 ---
-description: Si tratta dell'orientamento del video in gradi.
+description: Questo è l'orientamento del video in gradi.
 ms.assetid: 9534be9e-ab57-4c36-b1ae-ff12d632574c
-title: System. video. Orientation
+title: System.Video.Orientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11f635cd020f9ae6bee8340f51bd17a337db04b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb2edb7f9323009af5fbc4cda553a9450bbb788484876ceb7d2abddc0f38847e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464016"
 ---
-# <a name="systemvideoorientation"></a>System. video. Orientation
+# <a name="systemvideoorientation"></a>System.Video.Orientation
 
-Si tratta dell'orientamento del video in gradi.
+Questo è l'orientamento del video in gradi.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

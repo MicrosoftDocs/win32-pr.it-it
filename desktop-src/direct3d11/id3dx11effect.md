@@ -1,10 +1,10 @@
 ---
-title: Interfaccia ID3DX11Effect (D3dx11effect. h)
+title: Interfaccia ID3DX11Effect (D3dx11effect.h)
 description: Un'interfaccia ID3DX11Effect gestisce un set di oggetti di stato, risorse e shader per l'implementazione di un effetto di rendering.
 ms.assetid: 34429d51-6b45-4a62-bce1-50c4da02edac
 keywords:
-- Interfaccia ID3DX11Effect Direct3D 11
-- Interfaccia ID3DX11Effect Direct3D 11, descritta
+- INTERFACCIA ID3DX11Effect Direct3D 11
+- INTERFACCIA ID3DX11Effect Direct3D 11 , descritta
 topic_type:
 - apiref
 api_name:
@@ -16,47 +16,47 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51c9b945f09ad0424ecd6b546aefe68bea276ffc
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 670e60cf68c812b6d8b296aac41c3000fa8c1405c909e8827532625a6cd93b0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535929"
 ---
 # <a name="id3dx11effect-interface"></a>Interfaccia ID3DX11Effect
 
-Un'interfaccia **ID3DX11Effect** gestisce un set di oggetti di stato, risorse e shader per l'implementazione di un effetto di rendering.
+**Un'interfaccia ID3DX11Effect** gestisce un set di oggetti di stato, risorse e shader per l'implementazione di un effetto di rendering.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ID3DX11Effect** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ID3DX11Effect** dispone anche di questi tipi di membri:
+**L'interfaccia ID3DX11Effect** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ID3DX11Effect** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ID3DX11Effect** dispone di questi metodi.
+**L'interfaccia ID3DX11Effect** include questi metodi.
 
 
 
 | Metodo                                                                     | Descrizione                                                                               |
 |:---------------------------------------------------------------------------|:------------------------------------------------------------------------------------------|
 | [**CloneEffect**](id3dx11effect-cloneeffect.md)                           | Crea una copia di un'interfaccia effetto.<br/>                                         |
-| [**GetClassLinkage**](id3dx11effect-getclasslinkage.md)                   | Ottiene un'interfaccia di collegamento di classe.<br/>                                                |
-| [**GetConstantBufferByIndex**](id3dx11effect-getconstantbufferbyindex.md) | Ottenere un buffer costante in base all'indice.<br/>                                                |
+| [**GetClassLinkage**](id3dx11effect-getclasslinkage.md)                   | Ottiene un'interfaccia di collegamento della classe.<br/>                                                |
+| [**GetConstantBufferByIndex**](id3dx11effect-getconstantbufferbyindex.md) | Ottiene un buffer costante in base all'indice.<br/>                                                |
 | [**GetConstantBufferByName**](id3dx11effect-getconstantbufferbyname.md)   | Ottenere un buffer costante in base al nome.<br/>                                                 |
-| [**Getdesc**](id3dx11effect-getdesc.md)                                   | Ottenere una descrizione dell'effetto.<br/>                                                     |
+| [**GetDesc**](id3dx11effect-getdesc.md)                                   | Ottenere una descrizione dell'effetto.<br/>                                                     |
 | [**GetDevice**](id3dx11effect-getdevice.md)                               | Ottenere il dispositivo che ha creato l'effetto.<br/>                                        |
-| [**GetGroupByIndex**](id3dx11effect-getgroupbyindex.md)                   | Ottiene un effetto Group by index.<br/>                                                 |
-| [**GetGroupByName**](id3dx11effect-getgroupbyname.md)                     | Ottiene un gruppo di effetti per nome.<br/>                                                  |
+| [**GetGroupByIndex**](id3dx11effect-getgroupbyindex.md)                   | Ottiene un gruppo di effetti in base all'indice.<br/>                                                 |
+| [**GetGroupByName**](id3dx11effect-getgroupbyname.md)                     | Ottiene un gruppo di effetti in base al nome.<br/>                                                  |
 | [**GetTechniqueByIndex**](id3dx11effect-gettechniquebyindex.md)           | Ottenere una tecnica in base all'indice.<br/>                                                      |
 | [**GetTechniqueByName**](id3dx11effect-gettechniquebyname.md)             | Ottenere una tecnica in base al nome.<br/>                                                       |
-| [**GetVariableByIndex**](id3dx11effect-getvariablebyindex.md)             | Ottiene una variabile in base all'indice.<br/>                                                       |
+| [**GetVariableByIndex**](id3dx11effect-getvariablebyindex.md)             | Ottenere una variabile in base all'indice.<br/>                                                       |
 | [**GetVariableByName**](id3dx11effect-getvariablebyname.md)               | Ottenere una variabile in base al nome.<br/>                                                        |
 | [**GetVariableBySemantic**](id3dx11effect-getvariablebysemantic.md)       | Ottenere una variabile in base alla semantica.<br/>                                                    |
-| [**Ottimizzato**](id3dx11effect-isoptimized.md)                           | Testare un effetto per verificare se i metadati della reflection sono stati rimossi dalla memoria.<br/> |
+| [**IsOptimized**](id3dx11effect-isoptimized.md)                           | Testare un effetto per verificare se i metadati di reflection sono stati rimossi dalla memoria.<br/> |
 | [**isValid**](id3dx11effect-isvalid.md)                                   | Testare un effetto per verificare se contiene una sintassi valida.<br/>                             |
-| [**Ottimizzare**](id3dx11effect-optimize.md)                                 | Ridurre al minimo la quantità di memoria necessaria per un effetto.<br/>                          |
+| [**Ottimizzazione**](id3dx11effect-optimize.md)                                 | Ridurre al minimo la quantità di memoria necessaria per un effetto.<br/>                          |
 
 
 
@@ -66,16 +66,16 @@ L'interfaccia **ID3DX11Effect** dispone di questi metodi.
 
 Un effetto viene creato chiamando [**D3DX11CreateEffectFromMemory**](d3dx11createeffectfrommemory.md).
 
-Il sistema di effetti raggruppa le informazioni necessarie per il rendering in un effetto che contiene gli oggetti di stato per l'assegnazione delle modifiche di stato nei gruppi, le risorse per fornire i dati di input e l'archiviazione dei dati di output e i programmi che controllano il modo in cui viene eseguito il rendering denominato shader.
+Il sistema di effetti raggruppa le informazioni necessarie per il rendering in un effetto che contiene: oggetti di stato per l'assegnazione di modifiche dello stato nei gruppi, risorse per fornire dati di input e archiviare dati di output e programmi che controllano come viene eseguito il rendering chiamati shader.
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
 > [!Note]
 >
-> Se si chiama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) su un oggetto **ID3DX11Effect** per recuperare l'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , **QueryInterface** restituisce E \_ nointerface. Per risolvere questo problema, usare il codice seguente:
+> Se si chiama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) su **un oggetto ID3DX11Effect** per recuperare l'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **QueryInterface** restituisce E \_ NOINTERFACE. Per risolvere questo problema, usare il codice seguente:
 >
 > <span codelanguage=""></span>
 >
@@ -96,11 +96,11 @@ Il sistema di effetti raggruppa le informazioni necessarie per il rendering in u
 
 | Requisito | Valore |
 |-------------|-------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Interfacce Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfacce di Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
 
 [Interfacce D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
