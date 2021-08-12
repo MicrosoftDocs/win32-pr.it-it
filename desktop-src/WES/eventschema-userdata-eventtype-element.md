@@ -3,7 +3,7 @@ title: Elemento UserData (EventType)
 description: Contiene i dati dell'evento. | Elemento UserData (EventType)
 ms.assetid: b267187b-cfce-4e33-aba2-cf46efdd174d
 keywords:
-- Log eventi elemento UserData
+- Elemento UserData EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c9f7e5a2babe42073d4f27cfaae1d2e28dedfe35
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1042e5665bbedc4670d3615846c991bb9d6c944fca3fe90e223e4c7b6fb19420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588159"
 ---
 # <a name="userdata-eventtype-element"></a>Elemento UserData (EventType)
 
@@ -30,7 +30,7 @@ Contiene i dati dell'evento.
  />
 ```
 
-L'elemento **UserData** è definito dal tipo complesso [**eventType**](eventschema-eventtype-complextype.md) .
+**L'elemento UserData** è definito dal [**tipo complesso EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **UserData** è definito dal tipo complesso [**eventType**](eventsche
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

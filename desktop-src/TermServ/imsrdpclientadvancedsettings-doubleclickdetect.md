@@ -1,26 +1,26 @@
 ---
-title: Proprietà DoubleClickDetect di IMsRdpClientAdvancedSettings
+title: Proprietà DoubleClickDetect IMsRdpClientAdvancedSettings
 description: Specifica se il client identifica i doppio clic per il server.
 ms.assetid: 39e76bef-3d12-406d-a074-8c084fbe9ccc
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà DoubleClickDetect
-- Servizi Desktop remoto proprietà DoubleClickDetect, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà DoubleClickDetect
+- Proprietà DoubleClickDetect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà DoubleClickDetect
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd771614a80d909e0e7a748ab7256a5310084deb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc2d7a292bf307ffeac538cafd31dc7fb3ceeb1a54b1e768239ee169b04e0fd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608736"
 ---
-# <a name="imsrdpclientadvancedsettingsdoubleclickdetect-property"></a>IMsRdpClientAdvancedSettings::D Proprietà oubleClickDetect
+# <a name="imsrdpclientadvancedsettingsdoubleclickdetect-property"></a>Proprietà IMsRdpClientAdvancedSettings::D oubleClickDetect
 
 Specifica se il client identifica i doppio clic per il server.
 
@@ -84,15 +84,15 @@ HRESULT get_DoubleClickDetect(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la funzionalità o un valore diverso da zero per abilitare la funzionalità.
+Impostare questo parametro su 0 per disabilitare la funzionalità o su un valore diverso da zero per abilitarla.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: IContentEquatable <T> . Metodo ContentEquals'
-title: IContentEquatable (T). Metodo ContentEquals
+title: IContentEquatable(T). Metodo ContentEquals
 TOCTitle: 'ContentEquals method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.IContentEquatable`1.ContentEquals(`0)
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh538970(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c3b06307f7c4ebc44242e02ee5ae99a182f9ab3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9cee5c5cce2d915b8afb99c794b005b815e696e8488055e385cb49cdfe1ce024
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118256061"
 ---
 # <a name="icontentequatabletcontentequals-method"></a>IContentEquatable \<T\> . Metodo ContentEquals
 
 Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,15 +68,15 @@ bool ContentEquals(
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[\<T\>Interfaccia IContentEquatable](./icontentequatable-t-interface.md)
+[Interfaccia IContentEquatable \<T\>](./icontentequatable-t-interface.md)
 
-[Membri di IContentEquatable \<T\>](./icontentequatable-t-members.md)
+[Membri IContentEquatable \<T\>](./icontentequatable-t-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

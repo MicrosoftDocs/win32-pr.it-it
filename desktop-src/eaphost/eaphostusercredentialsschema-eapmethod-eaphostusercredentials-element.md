@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8d2f1bf5aa2901316db380e2cfd011b11c420035
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 00269c22497d04763c349ad5d5c0106c45d8dc47a369481c48b8ab440c70f3f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104118455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274431"
 ---
 # <a name="eapmethod-eaphostusercredentials-element"></a>Elemento EapMethod (EapHostUserCredentials)
 
-L'elemento **EapMethod (EapHostUserCredentials)** identifica il metodo a cui si fa riferimento.
+**L'elemento EapMethod (EapHostUserCredentials)** identifica il metodo a cui si fa riferimento.
 
 ``` syntax
 <xs:element name="EapMethod"
@@ -31,16 +31,16 @@ L'elemento **EapMethod (EapHostUserCredentials)** identifica il metodo a cui si 
  />
 ```
 
-L'elemento **EapMethod** è definito dall'elemento [**EapHostUserCredentials**](eaphostusercredentialsschema-eaphostusercredentials-element.md) .
+**L'elemento EapMethod** è definito dall'elemento [**EapHostUserCredentials.**](eaphostusercredentialsschema-eaphostusercredentials-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

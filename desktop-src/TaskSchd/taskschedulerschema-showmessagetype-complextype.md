@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso showMessageType
-description: Definisce gli elementi che rappresentano un'azione che visualizza una finestra di messaggio.
+description: Definisce gli elementi che rappresentano un'azione che mostra una finestra di messaggio.
 ms.assetid: eb841d9f-0be2-433b-9002-5e41c6ee78f9
 keywords:
-- Utilità di pianificazione di tipo complesso showMessageType
+- Tipo complesso showMessageType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d65ed893bce63c95fffcf237d3a3a95ebb1550d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aeb2c0e1b3ac3e29502e7d998305674aaa283371be6a22324dde6d84c4330326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611243"
 ---
 # <a name="showmessagetype-complex-type"></a>Tipo complesso showMessageType
 
-Definisce gli elementi che rappresentano un'azione che visualizza una finestra di messaggio.
+Definisce gli elementi che rappresentano un'azione che mostra una finestra di messaggio.
 
 ``` syntax
 <xs:complexType name="showMessageType">
@@ -60,8 +60,8 @@ Definisce gli elementi che rappresentano un'azione che visualizza una finestra d
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: funzione glClipPlane (GL. h)
-description: La funzione glClipPlane specifica un piano in base al quale viene ritagliata tutta la geometria.
+title: Funzione glClipPlane (Gl.h)
+description: La funzione glClipPlane specifica un piano rispetto al quale viene ritagliata tutta la geometria.
 ms.assetid: b70d2c30-7502-4399-8c08-5ec9a2a1919c
 keywords:
-- funzione glClipPlane OpenGL
+- Funzione glClipPlane OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33380203b30b7a3a2e37ee5d58a47fec845cbc1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb55edd88b8c8dcd6b4481e60dfc05a012bb79f4f484fde8987e9ed23239d837
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618041"
 ---
-# <a name="glclipplane-function"></a>glClipPlane (funzione)
+# <a name="glclipplane-function"></a>Funzione glClipPlane
 
-La funzione **glClipPlane** specifica un piano in base al quale viene ritagliata tutta la geometria.
+La **funzione glClipPlane** specifica un piano rispetto al quale viene ritagliata tutta la geometria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,17 +41,17 @@ void WINAPI glClipPlane(
 
 <dl> <dt>
 
-*aereo* 
+*Aereo* 
 </dt> <dd>
 
-Il piano di ritaglio in corso di posizionamento. I nomi simbolici del formato GL \_ clip \_ plane *i*, dove *i* è un numero intero compreso tra 0 e GL \_ Max clip plane \_ \_ -1, vengono accettati.
+Piano di ritaglio che viene posizionato. I nomi simbolici nel formato GL CLIP PLANE i , dove i è un numero intero compreso tra 0 e \_ \_ GL MAX CLIP  \_ \_ \_ PLANES - 1, sono accettati.
 
 </dd> <dt>
 
-*equazione* 
+*Equazione* 
 </dt> <dd>
 
-Indirizzo di una matrice di quattro valori a virgola mobile e precisione doppia. Questi valori vengono interpretati come un'equazione del piano.
+Indirizzo di una matrice di quattro valori a virgola mobile e precisione doppia. Questi valori vengono interpretati come equazioni del piano.
 
 </dd> </dl>
 
@@ -61,34 +61,34 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | il *piano* non è un valore accettato.<br/>                                                                                         |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ \_ NON VALIDA**</dt> </dl>      | *plane* non è un valore accettato.<br/>                                                                                         |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La geometria viene sempre tagliata in base ai limiti di un tronco a sei piani in *x*, *y* e *z*. La funzione **glClipPlane** consente di specificare piani aggiuntivi, non necessariamente perpendicolari all'asse *x*, asse *y* o asse *z*, in base al quale viene ritagliata tutta la geometria. È possibile specificare fino a GL max piani di \_ \_ ritaglio dei piani \_ , dove GL \_ Max \_ clip \_ Planes è almeno sei in tutte le implementazioni. Poiché l'area di visualizzazione risultante è l'intersezione tra gli spazi vuoti definiti, è sempre convessa.
+La geometria viene sempre ritagliata rispetto ai limiti di un frustum a sei piani in *x*, *y* e *z*. La **funzione glClipPlane** consente di specificare piani aggiuntivi, non necessariamente perpendicolari all'asse *x,* *y o* *z,* rispetto al quale viene ritagliata tutta la geometria. È possibile specificare fino a un massimo di piani CLIP PLANES MAX, dove GL MAX CLIP PLANES è almeno \_ sei in tutte le \_ \_ \_ \_ \_ implementazioni. Poiché l'area di ritaglio risultante è l'intersezione dei semi spazi definiti, è sempre convessa.
 
-La funzione **glClipPlane** specifica una metà dello spazio usando un'equazione del piano a quattro componenti. Quando si chiama **glClipPlane**, l'*equazione* viene trasformata dall'inverso della matrice Modelview e archiviata nelle coordinate oculari risultanti. Le modifiche successive alla matrice Modelview non hanno effetto sui componenti dell'equazione del piano archiviati. Se il prodotto a punti delle coordinate oculari di un vertice con i componenti dell'equazione del piano archiviato è positivo o zero, il vertice si trova in rispetto al piano di ritaglio. In caso contrario, è out.
+La **funzione glClipPlane** specifica un mezzo spazio usando un'equazione del piano a quattro componenti. Quando si chiama **glClipPlane,** l'equazione viene trasformata dall'inverso della matrice della visualizzazione modello e archiviata nelle coordinate oculare risultanti. Le successive modifiche alla matrice di modelview non hanno alcun effetto sui componenti dell'equazione del piano archiviati. Se il prodotto del punto delle coordinate oculare di un vertice con i componenti dell'equazione del piano archiviati è positivo o zero, il vertice si trova rispetto al piano di ritaglio. In caso contrario, è out.
 
-Usare le funzioni [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) per abilitare e disabilitare i piani di ritaglio. Chiamare i piani di ritaglio con l'argomento GL \_ clip \_ plane *i*, dove *i* è il numero del piano.
+Usare le [**funzioni glEnable**](glenable.md) e [**glDisable**](gldisable.md) per abilitare e disabilitare i piani di ritaglio. Chiamare i piani di ritaglio con l'argomento GL \_ CLIP \_ PLANE *i*, dove *i* è il numero del piano.
 
-Per impostazione predefinita, tutti i piani di ritaglio sono definiti come (0, 0, 0, 0) nelle coordinate degli occhi e sono disabilitati.
+Per impostazione predefinita, tutti i piani di ritaglio sono definiti come (0,0,0,0) nelle coordinate oculare e sono disabilitati.
 
-È sempre il caso GL \_ clip \_ plane *i* = GL \_ clip \_ PLANE0 + *i*.
+È sempre il caso in cui GL \_ CLIP \_ PLANE *i* = GL \_ CLIP \_ PLANE0 + *i*.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glClipPlane**:
+Le funzioni seguenti recuperano informazioni correlate **a glClipPlane:**
 
 [**glGetClipPlane**](glgetclipplane.md)
 
-[**glIsEnabled**](glisenabled.md) con argomento GL \_ clip \_ plane *i*
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ CLIP PLANE \_ *i*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,8 +98,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glClipP
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glClipP
 [**glEnable**](glenable.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGetClipPlane**](glgetclipplane.md)

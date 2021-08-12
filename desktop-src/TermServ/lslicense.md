@@ -1,11 +1,11 @@
 ---
 title: Struttura LSLicense
-description: Contiene informazioni su una licenza di Servizi Desktop remoto specifica.
+description: Contiene informazioni su una licenza Servizi Desktop remoto specifica.
 ms.assetid: 2c7f7b7a-e3b5-4f84-b49f-5f1d6960652d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto della struttura LSLicense
-- Servizi Desktop remoto puntatore alla struttura LPLSLicense
+- Struttura LSLicense Servizi Desktop remoto
+- Puntatore alla struttura LPLSLicense Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dcb8551c1d1edfd9486d42df63de9a76fab38433
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ea276b1b1217505a7bb44e1d70dd58d53eb57933d755ed9f79100abc177c3a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118605414"
 ---
 # <a name="lslicense-structure"></a>Struttura LSLicense
 
-Contiene informazioni su una licenza di Servizi Desktop remoto specifica.
+Contiene informazioni su una licenza Servizi Desktop remoto specifica.
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -73,28 +73,28 @@ ID della licenza.
 **dwKeyPackId**
 </dt> <dd>
 
-ID del [**LSKeyPack**](lskeypack.md) che contiene la licenza.
+ID [**dell'oggetto LSKeyPack**](lskeypack.md) che contiene la licenza.
 
 </dd> <dt>
 
 **szHWID**
 </dt> <dd>
 
-ID hardware del client di Connessione Desktop remoto (RDC) che ha emesso la licenza.
+ID hardware del client Connessione Desktop remoto (RDC) a cui è stata rilasciata la licenza.
 
 </dd> <dt>
 
 **szMachineName**
 </dt> <dd>
 
-Nome del client di Connessione Desktop remoto (RDC) che ha emesso la licenza.
+Nome del client Connessione Desktop remoto (RDC) a cui è stata rilasciata la licenza.
 
 </dd> <dt>
 
 **szUserName**
 </dt> <dd>
 
-Nome dell'utente che ha emesso la licenza.
+Nome dell'utente a cui è stata rilasciata la licenza.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Numero di serie della licenza.
 **ftIssueDate**
 </dt> <dd>
 
-Data di rilascio della licenza.
+Data di emissione della licenza.
 
 </dd> <dt>
 

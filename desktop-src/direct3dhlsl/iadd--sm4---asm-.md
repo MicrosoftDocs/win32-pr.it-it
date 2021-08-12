@@ -1,23 +1,23 @@
 ---
-title: IAdd (SM4-ASM)
-description: Aggiunta Integer.
+title: iadd (sm4 - asm)
+description: Addizione di numeri interi.
 ms.assetid: EF78EA65-DC16-469A-9E45-52844FF4BD93
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b593484aa7c1ef376bb5febf141b144ddef338e0
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 9226223b5a065714ca17bd63775b8d4e8a3bc9b96de111cec87b879114728bf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285790"
 ---
-# <a name="iadd-sm4---asm"></a>IAdd (SM4-ASM)
+# <a name="iadd-sm4---asm"></a>iadd (sm4 - asm)
 
-Aggiunta Integer.
+Addizione di numeri interi.
 
 
 
-| IAdd dest \[ . mask \] , \[ - \] src0 \[ . Swizzle \] , \[ - \] src1 \[ . Swizzle\] |
+| iadd dest \[ \] .mask, \[ - \] src0 \[ .swizzle, \] \[ - \] src1 \[ .swizzle\] |
 |------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Aggiunta Integer.
 
 | Elemento                                                            | Descrizione                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] numero da aggiungere a *src1*.<br/>           |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nel \] numero da aggiungere a *src0*.<br/>           |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Numero da aggiungere a *src1.*<br/>           |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] Numero da aggiungere a *src0*.<br/>           |
 
 
 
@@ -38,11 +38,11 @@ Aggiunta Integer.
 
 ## <a name="remarks"></a>Commenti
 
-Aggiunta a livello di componente di operandi a 32 bit *src0* e *src1*, inserendo il risultato corretto a 32 bit in *dest*. Non viene eseguita alcuna operazione Carry o borrow oltre i valori a 32 bit di ogni componente, quindi questa istruzione non è sensibile alla firma degli operandi.
+Aggiunta a livello di componente degli operandi a 32 bit *src0* e *src1,* inserendo il risultato corretto a 32 bit in *dest*. Non viene eseguito alcun carry o borrow oltre i valori a 32 bit di ogni componente, pertanto questa istruzione non è sensibile al valore signed-ness dei relativi operandi.
 
-Il modificatore negazioni facoltativo negli operandi di origine richiede il complemento di 2 prima di eseguire l'operazione.
+Il modificatore di negazione facoltativo sugli operandi di origine accetta il complemento 2 prima di eseguire l'operazione.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -54,20 +54,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -77,7 +77,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Contiene un SSID per una LAN wireless.
+description: Contiene un SSID per una rete LAN wireless.
 ms.assetid: fb3466c4-a586-424b-96e2-ba287c99a1d9
 title: Elemento SSID (SSIDConfig)
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 644a4afbd10fbfff870007befda964fc9babd593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d58ed866e79269e604fe49ad8afe65d557f27a90d0be03904b8d27da5ac5c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619058"
 ---
 # <a name="ssid-ssidconfig-element"></a>Elemento SSID (SSIDConfig)
 
-L'elemento SSID (SSIDConfig) contiene un SSID per una LAN wireless.
+L'elemento SSIDConfig (SSIDConfig) contiene un SSID per una rete LAN wireless.
 
-**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** In un profilo può essere presente al massimo un elemento **SSID** .
+**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Al massimo un **elemento SSID** può essere visualizzato in un profilo.
 
 ``` syntax
 <xs:element name="SSID"
@@ -74,7 +74,7 @@ L'elemento SSID (SSIDConfig) contiene un SSID per una LAN wireless.
 </xs:element>
 ```
 
-L'elemento **SSID** viene definito dall'elemento [**SSIDConfig**](wlan-profileschema-ssidconfig-wlanprofile-element.md) .
+**L'elemento SSID** è definito dall'elemento [**SSIDConfig.**](wlan-profileschema-ssidconfig-wlanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -82,22 +82,22 @@ L'elemento **SSID** viene definito dall'elemento [**SSIDConfig**](wlan-profilesc
 
 | Elemento                                              | Tipo | Descrizione                                                           |
 |------------------------------------------------------|------|-----------------------------------------------------------------------|
-| [**hex**](wlan-profileschema-hex-ssid-element.md)   |      | Contiene l'SSID di una LAN wireless in formato esadecimale.<br/> |
-| [**nome**](wlan-profileschema-name-ssid-element.md) |      | Contiene l'SSID per una LAN wireless.<br/>                      |
+| [**hex**](wlan-profileschema-hex-ssid-element.md)   |      | Contiene l'SSID di una rete LAN wireless in formato esadecimale.<br/> |
+| [**Nome**](wlan-profileschema-name-ssid-element.md) |      | Contiene l'SSID per una rete LAN wireless.<br/>                      |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Anche se gli elementi [**Hex**](wlan-profileschema-hex-ssid-element.md) e [**Name**](wlan-profileschema-name-ssid-element.md) sono facoltativi, è necessario che almeno un elemento **Hex** o [**Name**](wlan-profileschema-name-ssid-element.md) venga visualizzato come figlio dell'elemento **SSID** .
+Anche se [**gli elementi hex**](wlan-profileschema-hex-ssid-element.md) [**e name**](wlan-profileschema-name-ssid-element.md) sono facoltativi, almeno un elemento **esadecimale** o [**name**](wlan-profileschema-name-ssid-element.md) deve essere visualizzato come figlio dell'elemento **SSID.**
 
-Quando le informazioni sul profilo vengono convertite in un SSID, l'elemento [**Hex**](wlan-profileschema-hex-ssid-element.md) viene convertito nell'SSID (se presente) e l'elemento [**Name**](wlan-profileschema-name-ssid-element.md) viene ignorato. Se l'elemento **esadecimale** non è presente, l'elemento [**Name**](wlan-profileschema-name-ssid-element.md) viene convertito in un SSID mediante la conversione da Unicode a ASCII.
+Quando le informazioni sul profilo vengono convertite in un SSID, l'elemento [**esadecimale**](wlan-profileschema-hex-ssid-element.md) viene convertito in SSID (se presente) e l'elemento [**name**](wlan-profileschema-name-ssid-element.md) viene ignorato. Se **l'elemento esadecimale** non è presente, [**l'elemento name**](wlan-profileschema-name-ssid-element.md) viene convertito in un SSID usando la conversione da Unicode a ASCII.
 
-Quando un SSID viene archiviato in un profilo, l'elemento [**esadecimale**](wlan-profileschema-hex-ssid-element.md) viene sempre generato. L'elemento [**Name**](wlan-profileschema-name-ssid-element.md) viene generato solo se la conversione da ASCII a Unicode del SSID e della generazione del profilo XML ha esito positivo. Alcune informazioni provenienti dall'SSID originale potrebbero andare perse quando vengono convertite in un [**nome**](wlan-profileschema-name-ssid-element.md).
+Quando un SSID viene archiviato in un profilo, [**l'elemento esadecimale**](wlan-profileschema-hex-ssid-element.md) viene sempre generato. [**L'elemento**](wlan-profileschema-name-ssid-element.md) name viene generato solo se la conversione da ASCII a Unicode dell'SSID e la generazione del profilo XML hanno esito positivo. Alcune informazioni dell'SSID originale potrebbero andare perse quando vengono convertite in un [**nome**](wlan-profileschema-name-ssid-element.md).
 
 ## <a name="examples"></a>Esempio
 
-Per visualizzare i profili di esempio che usano l'elemento **SSID** , vedere esempi di profili [wireless](wireless-profile-samples.md).
+Per visualizzare i profili di esempio che usano **l'elemento SSID,** vedere [Esempi di profili wireless.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ Per visualizzare i profili di esempio che usano l'elemento **SSID** , vedere ese
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, Windows XP con \[ solo app desktop SP3\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP3 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                |
 | Componente ridistribuibile<br/>          | API LAN wireless per Windows XP con SP2<br/>                 |
 
 
@@ -121,7 +121,7 @@ Per visualizzare i profili di esempio che usano l'elemento **SSID** , vedere ese
 [**SSIDConfig**](wlan-profileschema-ssidconfig-wlanprofile-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**SSIDConfig (WLANProfile)**](wlan-profileschema-ssidconfig-wlanprofile-element.md)

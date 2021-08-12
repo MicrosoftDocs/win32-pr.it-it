@@ -1,38 +1,38 @@
 ---
-title: Programmabilità SQL
-description: NPS supporta la registrazione SQL Server.
+title: SQL Programmabilità
+description: Server dei criteri di rete supporta SQL Server registrazione.
 ms.assetid: 55152f56-9ca4-4d0b-a0e9-223168dba83f
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dcc3d68519e6e260613d2729cabdb1e9991540a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 33aab125b8e4d00e0be06206dbdd855b7768638a8dd2545e71448a0e1a0f4f8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104516870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618536"
 ---
-# <a name="sql-programmability"></a>Programmabilità SQL
+# <a name="sql-programmability"></a>SQL Programmabilità
 
 > [!Note]  
-> Il servizio di autenticazione Internet (IAS) è stato rinominato server dei criteri di rete (NPS) a partire da Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a NPS. In tutto il testo, NPS viene utilizzato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente indicate come IAS.
+> Il servizio Autenticazione Internet (IAS) è stato rinominato Server dei criteri di rete (NPS) a partire da Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a Server dei criteri di rete. In tutto il testo, Server dei criteri di rete viene usato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente denominate IAS.
 
- 
+ 
 
-NPS supporta la registrazione SQL Server.
+Server dei criteri di rete supporta SQL Server registrazione.
 
-Per impostazione predefinita, la registrazione è disabilitata per NPS. Per abilitarla, eseguire lo snap-in server dei criteri di rete (NPS. msc) o lo snap-in servizio di autenticazione Internet (IAS. msc) e seguire le istruzioni nella pagina contabilità.
+Per impostazione predefinita, la registrazione è disabilitata per Server dei criteri di rete. Per abilitarlo, eseguire lo snap-in Server dei criteri di rete (nps.msc) o lo snap-in Servizio di autenticazione Internet (ias.msc) e seguire le istruzioni nella pagina Contabilità.
 
 ## <a name="sample-stored-procedure"></a>Stored procedure di esempio
 
 > [!Note]  
-> Un stored procedure nel database di SQL Server chiamato da server dei criteri di accesso deve essere denominato **\_ evento del report** o la registrazione di NPS SQL Server avrà esito negativo.
+> Un stored procedure nel database SQL Server chiamato da Server dei criteri di rete deve essere denominato evento del **report \_** oppure il server dei criteri di rete SQL Server registrazione avrà esito negativo.
 
- 
+ 
 
-Nell'esempio seguente viene creato un database NPS all'interno dell'ambiente di database SQL Server 2000 ed elabora i documenti XML inviati dai server NPS configurati per la registrazione a questo SQL Server.
+L'esempio seguente crea un database NPS all'interno dell'ambiente di database SQL Server 2000 ed elabora i documenti XML inviati dai server dei criteri di rete configurati per accedere a questo SQL Server.
 
-In questo esempio, le informazioni specifiche di protezione accesso alla rete, disponibili solo da server dei criteri di rete in esecuzione in Windows Server 2008 o versioni successive, vengono archiviate nella \_ colonna stato quarantena MS \_ . L'evento stored procedure report \_ Recupera i valori per questa colonna dall'elemento XML **'./MS-Quarantine-state '**. I valori consentiti per la \_ colonna stato quarantena MS \_ sono 0 (accesso completo), 1 (in quarantena) e 2 (prova).
+In questo esempio le informazioni specifiche di Protezione accesso alla rete, disponibili solo dai server dei criteri di rete in esecuzione in Windows Server 2008 o versioni successive, vengono archiviate nella colonna Stato quarantena \_ \_ MS. L stored procedure di report recupera i valori per questa colonna \_ dall'elemento XML **'./MS-Quarantine-State'.** I valori consentiti per la colonna Stato quarantena MS sono \_ \_ 0 (Accesso completo), 1 (In quarantena) e 2 (prova).
 
 ``` syntax
 IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'NPSODBC')
@@ -400,9 +400,9 @@ GO
 
 <dl> <dt>
 
-[TechNet: concetti chiave per la registrazione SQL Server IAS](/previous-versions/windows/it-pro/windows-server-2003/cc778830(v=ws.10))
+[TechNet: Concetti chiave per la registrazione SQL Server IAS](/previous-versions/windows/it-pro/windows-server-2003/cc778830(v=ws.10))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

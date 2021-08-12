@@ -1,9 +1,9 @@
 ---
 title: Elemento UseUnifiedSchedulingEngine (settingsType)
-description: Specifica che verrà utilizzato il motore di pianificazione unificato per eseguire questa attività.
+description: Specifica che il motore di pianificazione unificato verrà utilizzato per eseguire questa attività.
 ms.assetid: 93436f14-1caf-4ec8-bf74-a198b7dcb27c
 keywords:
-- Utilità di pianificazione elemento UseUnifiedSchedulingEngine
+- Elemento UseUnifiedSchedulingEngine Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a00798a46df3dfbb351dd8705b264192c38daff6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faf27ea132fb47e35cd248e183fbec0584cb5d44414d6cacda6baac0d595c32d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118610454"
 ---
 # <a name="useunifiedschedulingengine-settingstype-element"></a>Elemento UseUnifiedSchedulingEngine (settingsType)
 
-Specifica che verrà utilizzato il motore di pianificazione unificato per eseguire questa attività.
+Specifica che il motore di pianificazione unificato verrà utilizzato per eseguire questa attività.
 
 ``` syntax
 <xs:element name="UseUnifiedSchedulingEngine"
@@ -32,7 +32,7 @@ Specifica che verrà utilizzato il motore di pianificazione unificato per esegui
  />
 ```
 
-L'elemento **UseUnifiedSchedulingEngine** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento UseUnifiedSchedulingEngine** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -46,13 +46,13 @@ L'elemento **UseUnifiedSchedulingEngine** è definito dal tipo complesso [**sett
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione predefinita per questo elemento è false.
+L'impostazione predefinita per questo elemento è False.
 
-Per lo sviluppo in C++, queste informazioni sono accessibili tramite la proprietà [**ITaskSettings2:: UseUnifiedSchedulingEngine**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_useunifiedschedulingengine) .
+Per lo sviluppo in C++, è possibile accedere a queste informazioni tramite la [**proprietà ITaskSettings2::UseUnifiedSchedulingEngine.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_useunifiedschedulingengine)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che specifica che verrà utilizzato il motore di pianificazione unificato per eseguire questa attività.
+Nel codice XML seguente viene definito un elemento settings che specifica che il motore di pianificazione unificato verrà usato per eseguire questa attività.
 
 
 ```XML
@@ -70,8 +70,8 @@ Nel codice XML seguente viene definito un elemento Settings che specifica che ve
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ Nel codice XML seguente viene definito un elemento Settings che specifica che ve
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

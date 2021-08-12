@@ -1,7 +1,7 @@
 ---
-description: 'Chiamare questo dopo ID3DX10Sprite:: Flush. Se è \_ stato \_ \_ specificato lo stato d3dx10 sprite Save quando ID3DX10Sprite:: Begin è stato chiamato, questa API ripristinerà lo stato del dispositivo come prima della chiamata a ID3DX10Sprite:: Begin.'
+description: Chiamare questo metodo dopo ID3DX10Sprite::Flush. Se al momento della chiamata a ID3DX10Sprite::Begin è stato specificato D3DX10 SPRITE SAVE STATE, questa API ripristina lo stato del dispositivo allo stato precedente alla chiamata di \_ \_ \_ ID3DX10Sprite::Begin.
 ms.assetid: 71645edb-be4a-4d87-9fb0-557cf5cf10e5
-title: 'Metodo ID3DX10Sprite:: end (D3DX10. h)'
+title: Metodo ID3DX10Sprite::End (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 02d25e41916bd5d7605f3c0e1bc6e7998ea06e86
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 02cfa1e92275230bd3a853aa9079187181089c46b4e4f193404b9dc0c709c9e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302290"
 ---
-# <a name="id3dx10spriteend-method"></a>Metodo ID3DX10Sprite:: end
+# <a name="id3dx10spriteend-method"></a>Metodo ID3DX10Sprite::End
 
-Chiamare questo dopo ID3DX10Sprite:: Flush. Se è \_ stato \_ \_ specificato lo stato d3dx10 sprite Save quando ID3DX10Sprite:: Begin è stato chiamato, questa API ripristinerà lo stato del dispositivo come prima della chiamata a ID3DX10Sprite:: Begin.
+Chiamare questo metodo dopo ID3DX10Sprite::Flush. Se al momento della chiamata a ID3DX10Sprite::Begin è stato specificato D3DX10 SPRITE SAVE STATE, questa API ripristina lo stato del dispositivo allo stato precedente alla chiamata di \_ \_ \_ ID3DX10Sprite::Begin.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

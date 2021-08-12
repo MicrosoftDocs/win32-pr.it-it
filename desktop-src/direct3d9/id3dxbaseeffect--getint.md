@@ -1,7 +1,7 @@
 ---
-description: Ottiene un intero.
+description: Ottiene un numero intero.
 ms.assetid: 8074758a-f650-4698-8a75-aa0ffb14cb21
-title: 'Metodo ID3DXBaseEffect:: GetInt (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetInt (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: c0fe1fa01260be936b9d7f8be394d0c43a781680
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6ccd892a7563d4fce300f177a63f5e0cb82601e711f7046e9b9475977409926b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296767"
 ---
-# <a name="id3dxbaseeffectgetint-method"></a>Metodo ID3DXBaseEffect:: GetInt
+# <a name="id3dxbaseeffectgetint-method"></a>Metodo ID3DXBaseEffect::GetInt
 
-Ottiene un intero.
+Ottiene un numero intero.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT GetInt(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*PN* \[ out\]
+*pn* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)\***
+Tipo: **[ **INT**](../winprog/windows-data-types.md)\***
 
-Restituisce un Integer.
+Restituisce un numero intero.
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

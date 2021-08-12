@@ -1,56 +1,56 @@
 ---
-title: Attributo della classe la
-description: Attributo della classe la
+title: Attributo della classe VML
+description: Attributo della classe VML
 ms.assetid: 4030b8b7-fcc9-4153-8004-81935a347a09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94bdc723ba9be335afc43023ab89b88834c55474
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 87ada95b56430dacd09801a9aaa200c92abab064bbbb5732b369372de63c34de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118602184"
 ---
-# <a name="vml-class-attribute"></a>Attributo della classe la
+# <a name="vml-class-attribute"></a>Attributo della classe VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Fa riferimento a una definizione di uno stile CSS. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* class = " *Expression* " >
+<v: *element* class=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . NomeClasse = "*Expression*"
+*element* .classname="*expression*"
 
-*espressione* = *element*. NomeClasse
+*expression* = *elemento*.classname
 
 **Osservazioni:**
 
-L'attributo della **classe** è simile all'attributo della **classe** HTML standard usato con i fogli di stile CSS.
+**L'attributo** della classe è simile all'attributo **della classe** HTML standard usato con i fogli di stile CSS.
 
-Si noti che **NomeClasse** viene usato al posto della **classe** per lo scripting. Si noti inoltre che, per gli script, è possibile leggere solo **NomeClasse** ; Se si modifica il valore di **NomeClasse** , il rendering della forma non viene modificato.
+Si noti che **classname** viene usato al posto della **classe per** lo scripting. Si noti anche che per lo scripting, **il nome della classe** può essere solo letto. la modifica del valore **di classname** non modificherà il rendering della forma.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Vedere anche**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
 **Esempio**
 
-Viene creata una classe per **Width** con lo stile
+Viene creata una **classe per width** con lo stile
 
 
 ```HTML
@@ -59,7 +59,7 @@ Viene creata una classe per **Width** con lo stile
 
 
 
-Viene quindi fatto riferimento alla larghezza includendo lo stile. Si noti che la larghezza andheight non è definita nell'attributo **Style** , ma verrà definita dallo stile.
+Viene quindi fatto riferimento alla larghezza includendo lo stile . Si noti che la larghezza eheight non sono definite nell'attributo **di** stile, ma verranno definite dallo stile.
 
 
 ```HTML
@@ -73,8 +73,8 @@ Viene quindi fatto riferimento alla larghezza includendo lo stile. Si noti che l
 
 
 
-Si noti che la **classe** si applica solo agli attributi di tipo CSS.
+Si noti **che La classe** si applica solo agli attributi di tipo CSS.
 
- 
+ 
 
- 
+ 

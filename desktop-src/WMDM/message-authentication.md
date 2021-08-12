@@ -1,50 +1,50 @@
 ---
-title: Autenticazione del messaggio
-description: Autenticazione del messaggio
+title: Autenticazione dei messaggi
+description: Autenticazione dei messaggi
 ms.assetid: 6cb49f6b-e303-4840-9343-9891e75e07a4
 keywords:
-- Windows Media Gestione dispositivi, autenticazione del messaggio
-- Gestione dispositivi, autenticazione del messaggio
-- applicazioni desktop, autenticazione del messaggio
-- provider di servizi, autenticazione del messaggio
-- Guida per programmatori, autenticazione del messaggio
-- autenticazione del messaggio
-- codice di autenticazione messaggi (MAC)
-- MAC (codice di autenticazione messaggi)
+- Windows Gestione dispositivi multimediali, autenticazione dei messaggi
+- Gestione dispositivi, autenticazione dei messaggi
+- applicazioni desktop, autenticazione dei messaggi
+- provider di servizi, autenticazione dei messaggi
+- guida alla programmazione, autenticazione dei messaggi
+- autenticazione dei messaggi
+- codice di autenticazione del messaggio (MAC)
+- MAC (codice di autenticazione del messaggio)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14805e2074509e918902aae9eb9e9680ca52a6d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2921b80d42207bab608c6a8260e6756d3e9f323eab70742acc787ff731ad4b80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584485"
 ---
-# <a name="message-authentication"></a>Autenticazione del messaggio
+# <a name="message-authentication"></a>Autenticazione dei messaggi
 
-L'autenticazione del messaggio è un processo che consente alle applicazioni e ai provider di servizi di verificare che i dati passati tra di essi non siano stati manomessi. Windows Media Gestione dispositivi consente alle applicazioni e ai provider di servizi di eseguire l'autenticazione dei messaggi usando i codici Mac (Message Authentication Code). Ecco come funziona l'autenticazione MAC:
+L'autenticazione dei messaggi è un processo che consente alle applicazioni e ai provider di servizi di verificare che i dati passati tra di essi non siano stati manomissionati. Windows Gestione dispositivi multimediali consente alle applicazioni e ai provider di servizi di eseguire l'autenticazione dei messaggi usando codici di autenticazione dei messaggi (MAC). Ecco come funziona l'autenticazione MAC:
 
-Il mittente dei dati, in genere il provider di servizi, passa una o più parti di dati tramite una funzione di crittografia unidirezionale che produce una singola firma, il MAC, per tutti i dati. Il mittente invia quindi tutte le parti di dati firmate insieme al MAC al ricevitore, in genere l'applicazione. Il ricevitore passa i dati attraverso la stessa funzione di crittografia per generare un MAC e lo confronta con il MAC che è stato inviato. Se il MAC corrisponde, i dati non sono stati modificati.
+Il mittente dei dati, in genere il provider di servizi, passa uno o più dati tramite una funzione crittografica unidiretiva che produce una singola firma, il MAC, per tutti i dati. Il mittente invia quindi tutti i dati firmati insieme al MAC al ricevitore (in genere l'applicazione). Il ricevitore passa i dati tramite la stessa funzione di crittografia per generare un MAC e li confronta con il MAC inviato. Se il MAC corrisponde, i dati non sono stati modificati.
 
-Per eseguire l'autenticazione MAC, l'applicazione o il provider di servizi richiede una chiave di crittografia e un certificato corrispondente. Per informazioni su dove ottenere questi dati, vedere [strumenti per lo sviluppo](tools-for-development.md).
+Per eseguire l'autenticazione MAC, l'applicazione o il provider di servizi richiede una chiave di crittografia e un certificato corrispondente. Per informazioni su dove ottenere questi elementi, vedere [Strumenti per lo sviluppo.](tools-for-development.md)
 
-Nei passaggi seguenti viene descritto il modo in cui i dati vengono firmati dal mittente e successivamente controllati dal ricevitore. In Windows Media Gestione dispositivi, il provider di servizi usa la classe [CSecureChannelServer](csecurechannelserver-class.md) per generare i computer Mac e l'applicazione usa la classe [CSecureChannelClient](csecurechannelclient-class.md) . Entrambe le classi forniscono funzioni identiche con parametri identici, quindi i passaggi seguenti si applicano a entrambe le classi.
+I passaggi seguenti descrivono come i dati vengono firmati dal mittente e successivamente controllati dal ricevitore. In Windows Gestione dispositivi multimediali, il provider di servizi usa la classe [CSecureChannelServer](csecurechannelserver-class.md) per generare macs e l'applicazione usa la [classe CSecureChannelClient.](csecurechannelclient-class.md) Entrambe le classi forniscono funzioni identiche con parametri identici, quindi i passaggi seguenti si applicano a entrambe le classi.
 
-Mittente, in genere il provider di servizi:
+Mittente (in genere il provider di servizi):
 
-1.  Ottiene i dati da firmare.
-2.  Creare un nuovo handle MAC chiamando **MACInit**.
-3.  Aggiungere una porzione di dati da firmare all'handle chiamando **MACUpdate**. Questa funzione accetta l'handle creato in precedenza, oltre a una parte di dati che devono essere firmati.
-4.  Ripetere il passaggio 3 con tutti i dati aggiuntivi che devono essere firmati. Non sono importanti i dati degli ordini aggiunti al MAC.
-5.  Copiare il MAC dall'handle in un nuovo buffer di byte chiamando **MACFinal**. Questa funzione accetta l'handle MAC e un buffer allocato e copia il MAC dall'handle nel buffer fornito.
+1.  Ottenere i dati da firmare.
+2.  Creare un nuovo handle MAC chiamando **MACInit.**
+3.  Aggiungere una parte di dati da firmare all'handle chiamando **MACUpdate.** Questa funzione accetta l'handle creato in precedenza e una parte di dati che devono essere firmati.
+4.  Ripetere il passaggio 3 con ogni dato aggiuntivo che deve essere firmato. Non è importante l'ordine in cui i dati vengono aggiunti al MAC.
+5.  Copiare il mac dall'handle in un nuovo buffer di byte chiamando **MACFinal.** Questa funzione accetta l'handle MAC e un buffer allocato e copia il mac dall'handle nel buffer specificato.
 
-Quando si esegue l'autenticazione MAC, è importante che sia il mittente che il ricevitore stiano inserendo gli stessi dati nel MAC. Per i metodi dell'applicazione che forniscono un MAC, in genere tutti i parametri sono inclusi nel valore MAC (ad eccezione del MAC stesso, ovviamente). Si consideri, ad esempio, il metodo **IWMDMOperation:: TransferObjectData** :
+Quando si esegue l'autenticazione MAC, è importante che sia il mittente che il destinatario inserino gli stessi dati nel MAC. Per i metodi dell'applicazione che forniscono un MAC, in genere tutti i parametri sono inclusi nel valore MAC (ad eccezione del MAC stesso, naturalmente). Si consideri ad esempio **il metodo IWMDMOperation::TransferObjectData:**
 
 `HRESULT TransferObjectData(BYTE* pData, DWORD* pdwSize, BYTE[WMDM_MAC_LENGTH] abMac);`
 
-In questo metodo, il MAC include *pData* e *pdwSize*. Se non vengono inclusi entrambi i parametri, il MAC creato non corrisponderà al MAC passato a *abMac*. Un provider di servizi deve assicurarsi di inserire tutti i parametri richiesti nel metodo dell'applicazione nel valore MAC.
+In questo metodo il mac *includerà pData* e *pdwSize.* Se non si includono entrambi i parametri, il codice MAC creato non corrisponderà al MAC passato *ad abMac*. Un provider di servizi deve assicurarsi di inserire tutti i parametri obbligatori nel metodo dell'applicazione nel valore MAC.
 
-Nel codice C++ riportato di seguito viene illustrata la creazione di un MAC nell'implementazione di un provider di servizi di [**IMDSPStorageGlobals:: GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getserialnumber).
+Il codice C++ seguente illustra la creazione di un MAC nell'implementazione di [**IMDSPStorageGlobals::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getserialnumber)di un provider di servizi.
 
 
 ```C++
@@ -95,9 +95,9 @@ HRESULT CMyDevice::GetSerialNumber(
 
 
 
-Il ricevitore (in genere l'applicazione):
+Destinatario (in genere l'applicazione):
 
-Se il ricevitore non ha implementato l'interfaccia [**IWMDMOperation3**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation3) , deve eseguire gli stessi passaggi del mittente, quindi confrontare i due valori Mac. Nell'esempio di codice C++ riportato di seguito viene illustrato il modo in cui un'applicazione controlla il MAC ricevuto in una chiamata a [**IWMDMStorageGlobals:: GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-getserialnumber) per assicurarsi che il numero di serie non sia stato alterato in transito.
+Se il ricevitore non ha implementato [**l'interfaccia IWMDMOperation3,**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation3) deve eseguire gli stessi passaggi del mittente e quindi confrontare i due valori MAC. L'esempio di codice C++ seguente mostra come un'applicazione controlla il mac ricevuto in una chiamata a [**IWMDMStorageGlobals::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorageglobals-getserialnumber) per assicurarsi che il numero di serie non sia stato manomesso in transito.
 
 
 ```C++
@@ -156,12 +156,12 @@ if (hr == S_OK)
 
 <dl> <dt>
 
-[**Uso di canali con autenticazione sicura**](using-secure-authenticated-channels.md)
+[**Uso di canali autenticati sicuri**](using-secure-authenticated-channels.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

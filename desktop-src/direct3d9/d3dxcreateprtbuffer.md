@@ -1,7 +1,7 @@
 ---
-description: Crea un buffer PRT (pre-Computed Radiance Transfer) che può essere compresso o riempito da un simulatore. Questa funzione deve essere usata per creare buffer per vertice o volume.
+description: Crea un buffer PRT (Precomputed Radiance Transfer) che può essere compresso o riempito da un simulatore. Questa funzione deve essere usata per creare buffer per vertice o volume.
 ms.assetid: f79a3691-ab5f-4404-aafd-f9635ff88e71
-title: Funzione D3DXCreatePRTBuffer (D3DX9Mesh. h)
+title: Funzione D3DXCreatePRTBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8107edfec436d9eda35324f6934b3f70df6a05d2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ff7293fd866bed8ef5bea46fd783b27672c4c53ee61786f75146ea45efd8a509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299276"
 ---
-# <a name="d3dxcreateprtbuffer-function"></a>D3DXCreatePRTBuffer (funzione)
+# <a name="d3dxcreateprtbuffer-function"></a>Funzione D3DXCreatePRTBuffer
 
-Crea un buffer PRT (pre-Computed Radiance Transfer) che può essere compresso o riempito da un simulatore. Questa funzione deve essere usata per creare buffer per vertice o volume.
+Crea un buffer PRT (Precomputed Radiance Transfer) che può essere compresso o riempito da un simulatore. Questa funzione deve essere usata per creare buffer per vertice o volume.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT D3DXCreatePRTBuffer(
 
 <dl> <dt>
 
-*NumSamples valore* \[ in\]
+*NumSamples* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di vertici (o Texel) campionati.
+Numero di vertici (o texel) campionati.
 
 </dd> <dt>
 
-*NumCoeffs* \[ in\]
+*NumCoeff* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di coefficienti per percorso di esempio. Quando si usa il PRT sferica (SH), il numero di coefficienti deve essere Order ², dove Order è l'ordine della valutazione SH. L'ordine deve essere compreso tra [D3DXSH \_ MINORDER](other-d3dx-constants.md) \_ e D3DXSH MAXORDER, inclusi. Il livello della valutazione è Order-1.
+Numero di coefficienti per ogni posizione del campione. Quando si usa sferica armonica (SH) PRT, il numero di coefficienti deve essere Order², dove Order è l'ordine della valutazione SH. L'ordine deve essere compreso tra [D3DXSH \_ MINORDER](other-d3dx-constants.md) e D3DXSH \_ MAXORDER, inclusi. Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
-*NumChannels* \[ in\]
+*NumChannels* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di canali dei colori da impostare nella rete. Impostare su 1 per specificare i materiali grigi (R = G = B) o 3 per abilitare gli effetti di emorragia del colore.
+Numero di canali di colore da impostare nella mesh. Impostare su 1 per specificare materiali grigi (R = G = B) o 3 per abilitare gli effetti di colorazione.
 
 </dd> <dt>
 
-*ppBuffer* \[ in uscita\]
+*ppBuffer* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)\***
 
-Indirizzo di un puntatore all'oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) creato.
+Indirizzo di un puntatore [**all'oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) creato.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Indirizzo di un puntatore all'oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) cr
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è S \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
@@ -95,8 +95,8 @@ Quando viene creato il buffer, tutti i valori vengono inizializzati su zero.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -104,7 +104,7 @@ Quando viene creato il buffer, tutti i valori vengono inizializzati su zero.
 
 <dl> <dt>
 
-[Funzioni di trasferimento Radiance pre-calcolate](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funzioni di trasferimento della radiance pre-ricalcolate](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> <dt>
 
 [**D3DXCreatePRTBufferTex**](d3dxcreateprtbuffertex.md)

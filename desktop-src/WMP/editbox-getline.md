@@ -1,9 +1,9 @@
 ---
-title: CASELLA. getline
-description: Il metodo getline Recupera il testo per la riga con l'indice specificato.
+title: EDITBOX.getLine
+description: Il metodo getLine recupera il testo per la riga con l'indice specificato.
 ms.assetid: a692c32b-86b9-419e-a3a5-464687be04da
 keywords:
-- CASELLA. getline Media Player Windows
+- EDITBOX.getLine Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3b0b9a15f9eff8c2612e7a242a205c1d9411a60c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 28d555cb684fa849b5fc7cdb42ebaf0ab4fb278b4ef126845add2f12ddf59948
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578837"
 ---
-# <a name="editboxgetline"></a>CASELLA. getline
+# <a name="editboxgetline"></a>EDITBOX.getLine
 
-Il metodo **getline** Recupera il testo per la riga con l'indice specificato.
+Il **metodo getLine** recupera il testo per la riga con l'indice specificato.
 
 ``` syntax
         elementID.getLine(index)
@@ -35,13 +35,13 @@ Il metodo **getline** Recupera il testo per la riga con l'indice specificato.
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice della riga da recuperare.
+**Numero** (**long**) contenente l'indice della riga da recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce una **stringa**.
+Questo metodo restituisce un **oggetto String**.
 
 ## <a name="remarks"></a>Commenti
 
@@ -53,7 +53,7 @@ Se l'indice non √® valido, viene restituita una stringa vuota. Questo metodo pu√
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -61,13 +61,13 @@ Se l'indice non √® valido, viene restituita una stringa vuota. Questo metodo pu√
 
 <dl> <dt>
 
-[**Elemento casella**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**CASELLA. getLineFromChar**](editbox-getlinefromchar.md)
+[**EDITBOX.getLineFromChar**](editbox-getlinefromchar.md)
 </dt> <dt>
 
-[**CASELLA. getLineIndex**](editbox-getlineindex.md)
+[**EDITBOX.getLineIndex**](editbox-getlineindex.md)
 </dt> </dl>
 
  

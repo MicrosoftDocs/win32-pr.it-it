@@ -1,9 +1,9 @@
 ---
-title: BUTTONGROUP. GetButton
-description: Il Metodo GetButton recupera l'oggetto BUTTONelement con l'indice specificato.
+title: BUTTONGROUP.getButton
+description: Il metodo getButton recupera BUTTONELEMENT con l'indice specificato.
 ms.assetid: 49e1cf61-f5de-430d-8492-bd49b186f5ea
 keywords:
-- Media Player di Windows BUTTONGROUP. GetButton
+- ButtonGROUP.getButton Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d4f302480730ffba472366ac851412483040b7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c29e1516fcbfc3a777553c412b34608ae46a74bdc75b96c265969e066c533be0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581365"
 ---
-# <a name="buttongroupgetbutton"></a>BUTTONGROUP. GetButton
+# <a name="buttongroupgetbutton"></a>BUTTONGROUP.getButton
 
-Il metodo **GetButton** recupera l'oggetto **ButtonElement** con l'indice specificato.
+Il **metodo getButton** recupera **BUTTONELEMENT con** l'indice specificato.
 
 ``` syntax
         elementID.getButton(button)
@@ -31,16 +31,16 @@ Il metodo **GetButton** recupera l'oggetto **ButtonElement** con l'indice specif
 
 <dl> <dt>
 
-<span id="button"></span><span id="BUTTON"></span>*pulsante*
+<span id="button"></span><span id="BUTTON"></span>*Pulsante*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice del **pulsanteelement** da recuperare.
+**Numero** (**long**) contenente l'indice dell'elemento **BUTTONELEMENT** da recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto che corrisponde a un elemento **ButtonElement** .
+Questo metodo restituisce un oggetto corrispondente a un **elemento BUTTONELEMENT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,7 +48,7 @@ Questo metodo restituisce un oggetto che corrisponde a un elemento **ButtonEleme
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -59,7 +59,7 @@ Questo metodo restituisce un oggetto che corrisponde a un elemento **ButtonEleme
 [**Elemento BUTTONGROUP**](buttongroup-element.md)
 </dt> <dt>
 
-[**BUTTONelement. index**](buttonelement-index.md)
+[**BUTTONELEMENT.index**](buttonelement-index.md)
 </dt> </dl>
 
  

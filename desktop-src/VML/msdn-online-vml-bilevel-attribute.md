@@ -1,24 +1,24 @@
 ---
-title: Attributo bilevel la
-description: Attributo bilevel la
+title: Attributo VML Bilevel
+description: Attributo VML Bilevel
 ms.assetid: 5b87e928-6f0a-4b00-833a-3c2add2d5677
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 263a9d538a76ba0c9b203cbcf04f8413d4286c34
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6831b84f77777cfa21a5bd5c80cb59e447c5a5ce1da78875cc9bd5ff07548690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118602871"
 ---
-# <a name="vml-bilevel-attribute"></a>Attributo bilevel la
+# <a name="vml-bilevel-attribute"></a>Attributo VML Bilevel
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina se un'immagine verrà visualizzata in bianco e nero. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,21 +26,21 @@ Determina se un'immagine verrà visualizzata in bianco e nero. Proprietà di let
 
 [ImageData](msdn-online-vml-imagedata-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* bilevel = " *Expression* " >
+<v: *element* bilevel=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . bilevel = "*Expression*"
+*element* .bilevel="*expression*"
 
-*espressione* = *element*. bilevel
+*expression* = *elemento*.bilevel
 
 **Osservazioni:**
 
-Se **true**, l'immagine verrà visualizzata utilizzando due colori (nero e bianco). Il valore predefinito è **False**. In questo modo viene creato un effetto simile alla posterzzazione.
+Se **True,** l'immagine verrà visualizzata con due colori (bianco e nero). Il valore predefinito è **False**. In questo modo viene creato un effetto simile alla posterizzazione.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
@@ -59,6 +59,6 @@ L'immagine verrà visualizzata solo in bianco e nero.
 
 
 
- 
+ 
 
- 
+ 

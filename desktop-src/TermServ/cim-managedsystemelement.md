@@ -1,11 +1,11 @@
 ---
-title: Classe CIM_ManagedSystemElement (Servizi Desktop remoto)
-description: Classe base per la gerarchia degli elementi di sistema.
+title: CIM_ManagedSystemElement classe (Servizi Desktop remoto)
+description: Classe di base per la gerarchia degli elementi di sistema.
 ms.assetid: c71c0441-381f-4a46-864c-9206c43a27d0
 ms.tgt_platform: multiple
 keywords:
-- Classe CIM_ManagedSystemElement Servizi Desktop remoto
-- Classe CIM_ManagedSystemElement Servizi Desktop remoto, descritta
+- CIM_ManagedSystemElement classe Servizi Desktop remoto
+- CIM_ManagedSystemElement classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23b242369df24724fdcc31ce925a229dba5bb515
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1e16dcf974658bb780ece5671291107ef72827c88e458fdbce35c9da9f957c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118609924"
 ---
-# <a name="cim_managedsystemelement-class-remote-desktop-services"></a>Classe CIM_ManagedSystemElement (Servizi Desktop remoto)
+# <a name="cim_managedsystemelement-class-remote-desktop-services"></a>CIM_ManagedSystemElement classe (Servizi Desktop remoto)
 
-Classe base per la gerarchia degli elementi di sistema.
+Classe di base per la gerarchia degli elementi di sistema.
 
-Qualsiasi componente di sistema distinguibile è un candidato per l'inclusione in questa classe. Gli esempi includono componenti software, ad esempio file; dispositivi, ad esempio unità disco e controller; e componenti fisici, ad esempio chip e schede
+Qualsiasi componente di sistema distinguibile è un candidato per l'inclusione in questa classe. Ad esempio, i componenti software, ad esempio i file. dispositivi, ad esempio unità disco e controller; e componenti fisici, ad esempio chip e schede
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -52,36 +52,36 @@ class CIM_ManagedSystemElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ManagedSystemElement** presenta questi tipi di membri:
+La **classe CIM \_ ManagedSystemElement** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ManagedSystemElement** dispone di queste proprietà.
+La **classe CIM \_ ManagedSystemElement** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto .
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -94,13 +94,13 @@ Descrizione dell'oggetto.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
@@ -110,7 +110,7 @@ Data di installazione dell'oggetto. La mancanza di un valore non indica che l'og
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -123,16 +123,16 @@ Nome dell'oggetto.
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
 <dt>
 
@@ -145,7 +145,7 @@ Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
@@ -166,7 +166,7 @@ Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -202,8 +202,8 @@ Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ cimv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

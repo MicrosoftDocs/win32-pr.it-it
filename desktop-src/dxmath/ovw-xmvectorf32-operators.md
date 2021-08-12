@@ -4,19 +4,19 @@ ms.assetid: 8fd01137-ed99-4f00-a7c0-e43078c9ce6b
 title: Operatori XMVECTORF32
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef54ba4f3dc4ae3d18de77c4e0d3c17d322ba221
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff63847afda6837c044ecdf02aebbb71186b11d8187373d13d7ae3210a16f0b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277006"
 ---
 # <a name="xmvectorf32-operators"></a>Operatori XMVECTORF32
 
-Gli operatori seguenti sono esposti dalla struttura [**XMVECTORF32**](xmvectorf32-data-type.md) .
+Gli operatori seguenti sono esposti dalla [**struttura XMVECTORF32.**](xmvectorf32-data-type.md)
 
 > [!Note]  
-> Gli operatori elencati di seguito sono disponibili solo in C++.
+> Gli operatori elencati qui sono disponibili solo in C++.
 
  
 
@@ -26,9 +26,9 @@ Gli operatori seguenti sono esposti dalla struttura [**XMVECTORF32**](xmvectorf3
 
 | Metodi                                                               | Descrizione                                                                                                                                                                                                                                                                                               |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**operatore \_ \_ m128d**](/previous-versions/windows/desktop/legacy/ee421020(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente di [**XMVECTORF32**](xmvectorf32-data-type.md) cast a un'istanza di [ \_ \_ m128d](/cpp/cpp/m128d) \[ sistemi Windows che supportano solo [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/>    |
-| [**operatore \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421021(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente di [**XMVECTORF32**](xmvectorf32-data-type.md) cast a un'istanza [ \_ \_ m128i](/cpp/cpp/m128i) di \[ sistemi Windows che supportano solo [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
-| [**operatore XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421022(v=vs.85))<br/> | Restituisce l'istanza di che `XMVECTOR` implementa l'istanza corrente di `XMVECTORF32` .<br/>                                                                                                                                                                                                         |
+| [**operator \_ \_ m128d**](/previous-versions/windows/desktop/legacy/ee421020(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente del cast [**XMVECTORF32**](xmvectorf32-data-type.md) a un'istanza [ \_ \_ m128d](/cpp/cpp/m128d) Windows sistemi \[ che supportano [solo SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/>    |
+| [**operator \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421021(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente del cast [**XMVECTORF32**](xmvectorf32-data-type.md) a un'istanza [ \_ \_ m128i](/cpp/cpp/m128i) di Windows che \[ supportano [solo SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
+| [**operatore XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421022(v=vs.85))<br/> | Restituisce l'istanza `XMVECTOR` di che implementa l'istanza corrente di `XMVECTORF32` .<br/>                                                                                                                                                                                                         |
 
 
 

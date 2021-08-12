@@ -3,32 +3,32 @@ title: Autenticazione del provider di servizi
 description: Autenticazione del provider di servizi
 ms.assetid: e48a8a7c-0277-4f0c-bad2-5bc9d0286da8
 keywords:
-- Windows Media Gestione dispositivi, autenticazione
+- Windows Gestione dispositivi multimediali, autenticazione
 - Gestione dispositivi, autenticazione
-- Guida per programmatori, autenticazione
+- guida per programmatori,autenticazione
 - provider di servizi, autenticazione
 - creazione di provider di servizi, autenticazione
 - autenticazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 271bf5594e4adaede01bb8e3795780f8f5c5177a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52d6931acb4644d4222659d428be10877deb164a184c95609663a915c12b95d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586487"
 ---
 # <a name="authenticating-the-service-provider"></a>Autenticazione del provider di servizi
 
-Per essere accessibile da Windows Media Gestione dispositivi, un provider di servizi deve ereditare e implementare l'interfaccia [**IComponentAuthenticate**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate) .
+Per essere accessibile da Windows Gestione dispositivi multimediali, un provider di servizi deve ereditare e implementare [**l'interfaccia IComponentAuthenticate.**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate)
 
-Per autenticarsi, un provider di servizi esegue i passaggi seguenti:
+Per autenticarsi, un provider di servizi esegue la procedura seguente:
 
-1.  Quando si crea un'istanza, viene creato un nuovo oggetto [CSecureChannelServer](csecurechannelserver-class.md) globale e vengono impostati i valori del certificato e della chiave dal relativo file di chiave.
-2.  Implementa i metodi [**IComponentAuthenticate:: SACAuth**](/windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacauth) e [**IComponentAuthenticate:: SACGetProtocols**](/windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacgetprotocols) passando semplicemente i parametri al relativo membro CSecureChannelServer globale.
-3.  Prima di gestire qualsiasi metodo di Windows Media Gestione dispositivi implementato, il provider di servizi deve verificare l'autenticazione del chiamante chiamando CSecureChannelServer:: fIsAuthenticated e non riesce se il chiamante non è autenticato.
+1.  Durante la creazione di un'istanza, crea un nuovo oggetto [CSecureChannelServer globale](csecurechannelserver-class.md) e imposta i valori del certificato e della chiave dal relativo file di chiave.
+2.  Implementa i metodi [**IComponentAuthenticate::SACAuth**](/windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacauth) e [**IComponentAuthenticate::SACGetProtocols**](/windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacgetprotocols) passando semplicemente i parametri al relativo membro CSecureChannelServer globale.
+3.  Prima di gestire i metodi di Windows Gestione dispositivi multimediali implementati, il provider di servizi deve verificare l'autenticazione del chiamante chiamando CSecureChannelServer::fIsAuthenticated e ha esito negativo se il chiamante non è autenticato.
 
-Questi passaggi sono illustrati negli esempi seguenti di C++.
+Questi passaggi sono illustrati negli esempi C++ seguenti.
 
 **Creazione dell'oggetto CSecureChannelServer**
 
@@ -109,7 +109,7 @@ STDMETHODIMP CMDServiceProvider::SACGetProtocols(
 
 **Verifica dell'autenticazione del chiamante**
 
-Nell'esempio di codice seguente viene illustrato un provider di servizi che controlla l'autenticazione del chiamante come parte dell'implementazione dell'interfaccia **IMDServiceProvider** .
+Nell'esempio di codice seguente viene illustrato un provider di servizi che controlla l'autenticazione del chiamante come parte dell'implementazione **dell'interfaccia IMDServiceProvider.**
 
 
 ```C++
@@ -137,9 +137,9 @@ STDMETHODIMP CMyServiceProvider::GetDeviceCount(DWORD * pdwCount)
 [**Creazione di un provider di servizi**](creating-a-service-provider.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

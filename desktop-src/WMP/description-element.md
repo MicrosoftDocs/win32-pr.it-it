@@ -1,9 +1,9 @@
 ---
 title: Elemento Description
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. | Description (elemento)
+description: Nota In questa sezione vengono descritte le funzionalità progettate per l'uso da parte dei negozi online. | Elemento Description
 ms.assetid: 4d9ff447-e5a4-46b1-b599-87202077abfb
 keywords:
-- Elemento Description Media Player Windows
+- Elemento Description Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4318a7936f4713d3ff89a2fa73731eea0cdd97db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78c3601abaf2a039b49318772eba1ed6e95d2aed06e2a91c72aabdadc3ffebd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579601"
 ---
 # <a name="description-element"></a>Elemento Description
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-L'elemento **Description** specifica una descrizione di marketing dello Store online visualizzata durante la prima esperienza dell'utente con un'installazione di Windows Media Player.
+**L'elemento Description** specifica una descrizione marketing del negozio online che viene visualizzata durante la prima esperienza dell'utente con un'installazione di Windows Media Player.
 
 ``` syntax
 <Description>
@@ -70,10 +70,10 @@ La lunghezza della descrizione deve essere minore o uguale a 255 caratteri.
 
 <dl> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

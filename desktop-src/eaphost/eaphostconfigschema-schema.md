@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 28aca669b2099e489738f9d5dac59d3e60c58b13
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 771bd2149b50dac140de6b789d0a9198baea6eb5baf769dd7df15ef052c0d72d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274545"
 ---
 # <a name="eaphostconfig-schema"></a>Schema eaphostconfig
 
@@ -26,12 +26,12 @@ Lo schema eaphostconfig definisce lo schema di configurazione EAPHost.
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

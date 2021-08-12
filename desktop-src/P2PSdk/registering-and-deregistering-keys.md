@@ -4,43 +4,43 @@ ms.assetid: 90fd8df0-e2a8-4183-a50c-e6f8ea5041cc
 title: Registrazione e annullamento della registrazione delle chiavi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 009ee41e85027ff8eba3f6869359a9ba304f4242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d586fc2bf399a30b8a962611a21a4e0994d88f4513453c071b110de1d4142b92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118612164"
 ---
 # <a name="registering-and-deregistering-keys"></a>Registrazione e annullamento della registrazione delle chiavi
 
-## <a name="registering-keys"></a>Registrazione di chiavi
+## <a name="registering-keys"></a>Registrazione delle chiavi
 
-Un nodo può registrare le chiavi con [**DrtRegisterKey**](/windows/desktop/api/drt/nf-drt-drtregisterkey) in qualsiasi momento mentre si trovino in **DRT \_ Active**, **DRT \_ alone** e **DRT senza stati di \_ \_ rete** . Le chiavi registrate **solo \_ in DRT** e **DRT nessun stato di \_ \_ rete** possono essere riconosciute solo da altri DRTS dopo che il nodo locale è passato a **DRT \_ attivo**.
+Un nodo può registrare le chiavi con [**DrtRegisterKey**](/windows/desktop/api/drt/nf-drt-drtregisterkey) in qualsiasi momento negli stati **DRT \_ ACTIVE**, **DRT \_ ALONE** e **DRT \_ NO \_ NETWORK.** Le chiavi registrate negli **stati DRT \_ ALONE** e **DRT \_ NO \_ NETWORK** possono essere riconosciute da altri DRT solo dopo la transizione del nodo locale a **DRT \_ ACTIVE**.
 
-Non è possibile registrare chiavi identiche all'interno della stessa istanza di DRT quando si usa [**DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider). Se viene tentata la registrazione di chiavi identiche, la registrazione della seconda chiave avrà esito negativo. Anche l'uso di chiavi identiche deve essere evitato tra istanze DRT diverse. Esegue una ricerca in base alla designazione di chiave univoca. questa condivisione di chiavi identica può restituire una qualsiasi delle chiavi, indipendentemente dai dati associati alla chiave.
+Non è possibile registrare chiavi identiche nella stessa istanza DRT quando si [**usa DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider). Se viene tentata la registrazione di chiavi identiche, la registrazione della seconda chiave avrà esito negativo. È anche consigliabile evitare l'uso di chiavi identiche tra istanze DRT diverse. Le ricerche nella designazione di chiave univoca di queste condivisioni di chiavi identiche possono restituire una qualsiasi delle chiavi, indipendentemente dai dati associati alla chiave.
 
 > [!Note]  
-> Se è necessario un comportamento diverso per l'implementazione, è possibile creare un provider di sicurezza al posto di [**DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider) .
+> Se è necessario un comportamento diverso per l'implementazione, è possibile creare un provider di sicurezza al posto di [**DrtCreateDerivedKeySecurityProvider.**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider)
 
  
 
 ## <a name="deregistering-keys"></a>Annullamento della registrazione delle chiavi
 
-Un nodo può annullare la registrazione di una chiave in qualsiasi momento dopo che è stata registrata. Tuttavia, solo l'applicazione che ha registrato la chiave può annullarne la registrazione. Un'applicazione può annullare la registrazione di una chiave dal nodo locale usando la funzione [**DrtUnregisterKey**](/windows/desktop/api/drt/nf-drt-drtunregisterkey) . Al termine, la funzione attiva un evento di **\_ \_ \_ \_ modifica della chiave LEAFSET di un evento DRT** ; informa l'applicazione e gli altri nodi che partecipano alla rete DRT.
+Un nodo può annullare la registrazione di una chiave in qualsiasi momento dopo la registrazione. Tuttavia, solo l'applicazione che ha registrato la chiave può annullarla. Un'applicazione può annullare la registrazione di una chiave dal nodo locale usando la [**funzione DrtUnregisterKey.**](/windows/desktop/api/drt/nf-drt-drtunregisterkey) Al termine, la funzione attiva un evento **DRT \_ EVENT \_ LEAFSET \_ KEY \_ CHANGE,** informando l'applicazione e altri nodi che partecipano alla mesh DRT.
 
-Durante lo stato **di \_ errore DRT** , la chiamata obbligatoria di [**DrtClose**](/windows/desktop/api/drt/nf-drt-drtclose) comporterà l'annullamento della registrazione di tutte le chiavi da parte dell'infrastruttura DRT.
+Nello stato **DRT \_ FAULTED,** la chiamata richiesta di [**DrtClose**](/windows/desktop/api/drt/nf-drt-drtclose) comporterà l'annullamento della registrazione di tutte le chiavi da parte dell'infrastruttura DRT.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Ricerca in una tabella di routing distribuita](searching-a-distributed-routing-table.md)
+[Ricerca di una tabella di routing distribuito](searching-a-distributed-routing-table.md)
 </dt> <dt>
 
-[Informazioni sulle tabelle di routing distribuite](about-distributed-routing-tables.md)
+[Informazioni sulle tabelle di routing distribuito](about-distributed-routing-tables.md)
 </dt> <dt>
 
-[Riferimento API Tabella routing distribuito](distributed-routing-table-api-reference.md)
+[Informazioni di riferimento API Tabella routing distribuito](distributed-routing-table-api-reference.md)
 </dt> </dl>
 
  

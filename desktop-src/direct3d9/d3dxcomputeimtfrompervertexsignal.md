@@ -1,7 +1,7 @@
 ---
-description: Calcolare gli IMT per triangolo da dati per vertice. Questa funzione consente di calcolare l'IMT in base a qualsiasi valore in una mesh (colore, normale e così via).
+description: Calcolare i valori IMT per triangolo dai dati per vertice. Questa funzione consente di calcolare l'IMT in base a qualsiasi valore in una mesh (colore, normale e così via).
 ms.assetid: a417a8ad-77b1-49ae-aea0-6a32a154499f
-title: Funzione D3DXComputeIMTFromPerVertexSignal (D3DX9Mesh. h)
+title: Funzione D3DXComputeIMTFromPerVertexSignal (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7b12ea3f15f1a185125da46f575d37ad97dd5622
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 41d635bf436e139e4c44db75b1057cebc3a50cfee114a35bfc75a9de84abc404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299458"
 ---
-# <a name="d3dxcomputeimtfrompervertexsignal-function"></a>D3DXComputeIMTFromPerVertexSignal (funzione)
+# <a name="d3dxcomputeimtfrompervertexsignal-function"></a>Funzione D3DXComputeIMTFromPerVertexSignal
 
-Calcolare gli IMT per triangolo da dati per vertice. Questa funzione consente di calcolare l'IMT in base a qualsiasi valore in una mesh (colore, normale e così via).
+Calcolare i valori IMT per triangolo dai dati per vertice. Questa funzione consente di calcolare l'IMT in base a qualsiasi valore in una mesh (colore, normale e così via).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,48 +47,48 @@ HRESULT D3DXComputeIMTFromPerVertexSignal(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a una mesh di input (vedere [**ID3DXMesh**](id3dxmesh.md)) che contiene la geometria dell'oggetto per il calcolo di IMT.
+Puntatore a una mesh di input (vedere [**ID3DXMesh)**](id3dxmesh.md)che contiene la geometria dell'oggetto per il calcolo dell'IMT.
 
 </dd> <dt>
 
-*pfVertexSignal* \[ in\]
+*pfVertexSignal* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di dati per vertice da cui verrà calcolato IMT. La dimensione della matrice è uSignalStride \* v, dove v è il numero di vertici nella rete.
+Puntatore a una matrice di dati per vertice da cui verrà calcolato IMT. La dimensione della matrice è uSignalStride \* v, dove v è il numero di vertici nella mesh.
 
 </dd> <dt>
 
-*uSignalDimension* \[ in\]
+*uSignalDimension* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di float per vertice.
 
 </dd> <dt>
 
-*uSignalStride* \[ in\]
+*uSignalStride* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di byte per vertice nella matrice. Deve essere un multiplo di sizeof (float)
+Numero di byte per vertice nella matrice. Deve essere un multiplo di sizeof(float)
 
 </dd> <dt>
 
-*dwOptions* \[ in\]
+*dwOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opzioni di incapsulamento della trama. Si tratta di una combinazione di uno o più [**flag D3DXIMT**](./d3dximt-flags.md).
+Opzioni di ritorno a capo automatico della trama. Si tratta di una combinazione di uno o più [**FLAG D3DXIMT**](./d3dximt-flags.md).
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Opzioni di incapsulamento della trama. Si tratta di una combinazione di uno o pi
 
 Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
 
-Puntatore a una funzione di callback per monitorare lo stato di avanzamento del calcolo di IMT.
+Puntatore a una funzione di callback per monitorare lo stato del calcolo IMT.
 
 </dd> <dt>
 
@@ -106,16 +106,16 @@ Puntatore a una funzione di callback per monitorare lo stato di avanzamento del 
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a una variabile definita dall'utente che viene passata alla funzione di callback dello stato. Usato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni sul contesto per la funzione di callback.
+Puntatore a una variabile definita dall'utente che viene passata alla funzione di callback dello stato. Utilizzato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni di contesto per la funzione di callback.
 
 </dd> <dt>
 
-*ppIMTData* \[ out\]
+*ppIMTData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la matrice IMT restituita. Questa matrice può essere fornita come input per le [funzioni UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) di D3DX per definire la priorità dell'allocazione dello spazio di trama nella parametrizzazione della trama.
+Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la matrice IMT restituita. Questa matrice può essere fornita come input per le funzioni [UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) D3DX per classificare in ordine di priorità l'allocazione dello spazio della trama nella parametrizzazione della trama.
 
 </dd> </dl>
 
@@ -123,7 +123,7 @@ Puntatore al buffer (vedere [**ID3DXBuffer**](id3dxbuffer.md)) contenente la mat
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso contrario, il valore è D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D OK; in caso contrario, il valore \_ è D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -131,8 +131,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. in caso con
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

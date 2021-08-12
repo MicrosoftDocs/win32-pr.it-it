@@ -1,12 +1,12 @@
 ---
-title: Metodo Initialize IRDVTaskPlugin
+title: Metodo IRDVTaskPlugin Initialize
 description: Chiamato per inizializzare l'agente attività.
 ms.assetid: eef813e6-ecca-400a-a9f3-efca6bd81161
 ms.tgt_platform: multiple
 keywords:
-- Inizializzare il metodo Servizi Desktop remoto
-- Metodo Initialize Servizi Desktop remoto, interfaccia IRDVTaskPlugin
-- Interfaccia IRDVTaskPlugin Servizi Desktop remoto, metodo Initialize
+- Inizializzare il Servizi Desktop remoto
+- Inizializzare il Servizi Desktop remoto, interfaccia IRDVTaskPlugin
+- Interfaccia IRDVTaskPlugin Servizi Desktop remoto , metodo Initialize
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9530be7334e1f3fefa7f73007334e448362a95ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c14f4a002a0b33e403c02dba74385edd21e211fb27bcfb144c7a9ddc080a40fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606104"
 ---
-# <a name="irdvtaskplugininitialize-method"></a>Metodo IRDVTaskPlugin:: Initialize
+# <a name="irdvtaskplugininitialize-method"></a>Metodo IRDVTaskPlugin::Initialize
 
 Chiamato per inizializzare l'agente attività.
 
@@ -42,12 +42,12 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*pNotifySink* \[ in\]
+*pNotifySink* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) \** _
+Tipo: **[ **IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md)\***
 
-Puntatore a un'interfaccia [_ *IRDVTaskPluginNotifySink* *](irdvtaskpluginnotifysink.md) che l'agente attività utilizza per comunicare con l'agente di trigger. È necessario rilasciare questa interfaccia quando non è più necessaria.
+Puntatore a [**un'interfaccia IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) utilizzata dall'agente attività per comunicare con l'agente trigger. È necessario rilasciare questa interfaccia quando non è più necessaria.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Puntatore a un'interfaccia [_ *IRDVTaskPluginNotifySink* *](irdvtaskpluginnotify
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

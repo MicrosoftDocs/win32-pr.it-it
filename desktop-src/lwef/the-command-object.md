@@ -4,22 +4,22 @@ description: Oggetto Command
 ms.assetid: a757846a-c2d0-4239-9533-babf5dc8399f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e9e9ce22b3a1c0c2286232b5e2204e158501332
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 242a90022431b826cf877edd862cd89a39d193865ed31afc1e4ff911f4189756
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118245617"
 ---
 # <a name="the-command-object"></a>Oggetto Command
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Un oggetto [**Command**](/windows/desktop/lwef/the-command-object) è un elemento in una raccolta di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) . Il server consente all'utente di accedere agli oggetti **Command** quando l'applicazione client diventa attiva.
+Un [**oggetto Command**](/windows/desktop/lwef/the-command-object) è un elemento di una raccolta [**Commands.**](/windows/desktop/lwef/the-commands-collection-object) Il server fornisce all'utente l'accesso agli **oggetti Command** quando l'applicazione client diventa attiva per l'input.
 
--   [Proprietà oggetto comando](command-object-properties.md)
+-   [Proprietà dell'oggetto Command](command-object-properties.md)
 
-Per accedere alla proprietà di un oggetto [**Command**](/windows/desktop/lwef/the-command-object) , è possibile farvi riferimento nella relativa raccolta usando la relativa proprietà [**Name**](name-property.md) . In VBScript e Visual Basic è possibile usare direttamente la proprietà **Name** :
+Per accedere alla proprietà di un [**oggetto Command,**](/windows/desktop/lwef/the-command-object) è necessario fare riferimento a esso nella relativa raccolta usando la [**relativa proprietà**](name-property.md) Name. In VBScript e Visual Basic è possibile usare direttamente la **proprietà** Name:
 
 
 ```
@@ -28,7 +28,7 @@ Per accedere alla proprietà di un oggetto [**Command**](/windows/desktop/lwef/t
 
 
 
-Per i linguaggi di programmazione che non supportano le raccolte, usare il metodo di [**comando**](command-method.md) :
+Per i linguaggi di programmazione che non supportano le raccolte, usare il [**metodo Command:**](command-method.md)
 
 
 ```
@@ -37,7 +37,7 @@ Per i linguaggi di programmazione che non supportano le raccolte, usare il metod
 
 
 
-È anche possibile fare riferimento a un oggetto comando creando un riferimento a esso. In Visual Basic dichiarare una variabile oggetto e utilizzare l'istruzione set per creare il riferimento:
+È anche possibile fare riferimento a un oggetto Command creando un riferimento a esso. In Visual Basic dichiarare una variabile oggetto e usare l'istruzione Set per creare il riferimento:
 
 
 ```
@@ -50,7 +50,7 @@ Per i linguaggi di programmazione che non supportano le raccolte, usare il metod
 
 
 
-In Visual Basic 5,0, è anche possibile dichiarare l'oggetto come tipo [**IAgentCtlCommandEx**](https://www.bing.com/search?q=**IAgentCtlCommandEx**) e creare il riferimento. Questa convenzione Abilita il binding anticipato, con conseguente miglioramento delle prestazioni:
+In Visual Basic 5.0 è anche possibile dichiarare l'oggetto come tipo [**IAgentCtlCommandEx**](https://www.bing.com/search?q=**IAgentCtlCommandEx**) e creare il riferimento. Questa convenzione abilita l'associazione anticipata, che comporta prestazioni migliori:
 
 
 ```
@@ -63,7 +63,7 @@ In Visual Basic 5,0, è anche possibile dichiarare l'oggetto come tipo [**IAgent
 
 
 
-In VBScript è possibile dichiarare un riferimento come un particolare tipo, ma è comunque possibile dichiarare la variabile e impostarla sul [**comando**](/windows/desktop/lwef/the-command-object) nella raccolta:
+In VBScript è possibile dichiarare un riferimento come tipo specifico, ma è comunque possibile dichiarare la variabile e impostarla sul [**comando**](/windows/desktop/lwef/the-command-object) nella raccolta:
 
 
 ```
@@ -76,25 +76,25 @@ In VBScript è possibile dichiarare un riferimento come un particolare tipo, ma 
 
 
 
-Un comando può essere visualizzato nel menu di scelta rapida del carattere e nella finestra comandi oppure in entrambi. Per visualizzare nel menu a comparsa, deve avere una didascalia e impostare la proprietà [**Visible**](visible-property.md) su **true**. Inoltre, la proprietà **Visible** dell'oggetto raccolta Commands deve essere impostata su **true**. Per visualizzare nella finestra dei comandi, è necessario impostare le proprietà [**Caption**](caption-property.md) e [**Voice**](voice-property.md) per un [**comando**](/windows/desktop/lwef/the-command-object) . Si noti che le voci di menu popup di un carattere non cambiano mentre il menu viene visualizzato. Se si aggiungono o si rimuovono i comandi o se ne modificano le proprietà quando viene visualizzato il menu popup del carattere, il menu Visualizza tali modifiche ogni volta che l'utente lo Visualizza. Tuttavia, la finestra comandi riflette in modo dinamico tutte le modifiche apportate.
+Un comando può essere visualizzato nel menu a comparsa del carattere e nella finestra comandi o in entrambi. Per essere visualizzato nel menu a comparsa, deve avere una didascalia e la [**proprietà Visible**](visible-property.md) deve essere impostata su **True.** Inoltre, anche la relativa proprietà **Visible dell'oggetto raccolta Commands** deve essere impostata su **True.** Per essere visualizzato nella finestra Comandi, è necessario [**che le proprietà Didascalia**](/windows/desktop/lwef/the-command-object) e [**Voce**](voice-property.md) di un comando vengano impostate. [](caption-property.md) Si noti che le voci del menu a comparsa di un carattere non cambiano mentre viene visualizzato il menu. Se si aggiungono o rimuovono comandi o si modificano le proprietà mentre viene visualizzato il menu a comparsa del carattere, il menu visualizza le modifiche ogni volta che l'utente lo visualizza. Tuttavia, la finestra Comandi riflette dinamicamente tutte le modifiche apportate.
 
-Nella tabella seguente viene riepilogato il modo in cui le proprietà di un [**comando**](/windows/desktop/lwef/the-command-object) influiscono sulla presentazione:
+La tabella seguente riepiloga il modo in cui le proprietà di un [**comando influiscono**](/windows/desktop/lwef/the-command-object) sulla relativa presentazione:
 
 
 
 Proprietà Caption
 
-Proprietà Voice-Caption
+Voice-Caption proprietà
 
 Proprietà Voice
 
-Visible (proprietà)
+Proprietà Visible
 
 Proprietà Enabled
 
 Viene visualizzato nel menu a comparsa del carattere
 
-Viene visualizzato nella finestra comandi
+Viene visualizzato nella finestra Comandi
 
 Sì
 
@@ -106,9 +106,9 @@ True
 
 True
 
-Normale, uso della [ **didascalia**](caption-property.md)
+Normal, uso di [ **Caption**](caption-property.md)
 
-Sì, uso di [ **VoiceCaption**](voicecaption-property.md)
+Sì, con [ **VoiceCaption**](voicecaption-property.md)
 
 Sì
 
@@ -120,7 +120,7 @@ Vero
 
 Falso
 
-Disabilitato, utilizzo della [ **didascalia**](caption-property.md)
+Disabilitato, con [ **Didascalia**](caption-property.md)
 
 No
 
@@ -136,7 +136,7 @@ True
 
 Non viene visualizzato
 
-Sì, uso di [ **VoiceCaption**](voicecaption-property.md)
+Sì, con [ **VoiceCaption**](voicecaption-property.md)
 
 Sì
 
@@ -162,7 +162,7 @@ True
 
 True
 
-Normale, uso della [ **didascalia**](caption-property.md)
+Normal, uso di [ **Caption**](caption-property.md)
 
 No
 
@@ -176,7 +176,7 @@ Vero
 
 Falso
 
-Disabilitato, utilizzo della [ **didascalia**](caption-property.md)
+Disabilitato, con [ **Didascalia**](caption-property.md)
 
 No
 
@@ -220,69 +220,13 @@ True
 
 Non viene visualizzato
 
-Sì, uso di [ **VoiceCaption**](voicecaption-property.md)
+Sì, con [ **VoiceCaption**](voicecaption-property.md)
 
 No 
 
 Sì
 
 Sì
-
-Vero
-
-Falso
-
-Non viene visualizzato
-
-No
-
-No 
-
-Sì
-
-Sì
-
-False
-
-True
-
-Non viene visualizzato
-
-Sì, uso di [ **VoiceCaption**](voicecaption-property.md)
-
-No 
-
-Sì
-
-Sì
-
-False
-
-False
-
-Non viene visualizzato
-
-No
-
-No 
-
-Sì
-
-No 
-
-True
-
-True
-
-Non viene visualizzato
-
-No
-
-No 
-
-Sì
-
-No 
 
 Vero
 
@@ -296,62 +240,6 @@ No
 
 Sì
 
-No 
-
-False
-
-True
-
-Non viene visualizzato
-
-No
-
-No 
-
-Sì
-
-No 
-
-False
-
-False
-
-Non viene visualizzato
-
-No
-
-Sì
-
-No 
-
-Sì
-
-True
-
-True
-
-Normale, uso della [ **didascalia**](caption-property.md)
-
-Sì, uso della [ **didascalia**](caption-property.md)
-
-Sì
-
-No 
-
-Sì
-
-Vero
-
-Falso
-
-Disabilitato, utilizzo della [ **didascalia**](caption-property.md)
-
-No
-
-Sì
-
-No 
-
 Sì
 
 False
@@ -360,123 +248,11 @@ True
 
 Non viene visualizzato
 
-Sì, uso della [ **didascalia**](caption-property.md)
-
-Sì
+Sì, con [ **VoiceCaption**](voicecaption-property.md)
 
 No 
 
 Sì
-
-False
-
-False
-
-Non viene visualizzato
-
-No
-
-Sì
-
-No 
-
-No 
-
-True
-
-True
-
-Normale, uso della [ **didascalia**](caption-property.md)
-
-No
-
-Sì
-
-No 
-
-No 
-
-Vero
-
-Falso
-
-Disabilitato, utilizzo della [ **didascalia**](caption-property.md)
-
-No
-
-Sì
-
-No 
-
-No 
-
-False
-
-True
-
-Non viene visualizzato
-
-No
-
-Sì
-
-No 
-
-No 
-
-False
-
-False
-
-Non viene visualizzato
-
-No
-
-No 
-
-No 
-
-Sì
-
-True
-
-True
-
-Non viene visualizzato
-
-No 
-
-No 
-
-No 
-
-Sì
-
-Vero
-
-Falso
-
-Non viene visualizzato
-
-No
-
-No 
-
-No 
-
-Sì
-
-False
-
-True
-
-Non viene visualizzato
-
-No 
-
-No 
-
-No 
 
 Sì
 
@@ -490,7 +266,7 @@ No
 
 No 
 
-No 
+Sì
 
 No 
 
@@ -504,7 +280,7 @@ No
 
 No 
 
-No 
+Sì
 
 No 
 
@@ -518,6 +294,230 @@ No
 
 No 
 
+Sì
+
+No 
+
+False
+
+True
+
+Non viene visualizzato
+
+No
+
+No 
+
+Sì
+
+No 
+
+False
+
+False
+
+Non viene visualizzato
+
+No
+
+Sì
+
+No 
+
+Sì
+
+True
+
+True
+
+Normale, con [ **Didascalia**](caption-property.md)
+
+Sì, usando [ **Didascalia**](caption-property.md)
+
+Sì
+
+No 
+
+Sì
+
+Vero
+
+Falso
+
+Disabilitato, con [ **Didascalia**](caption-property.md)
+
+No
+
+Sì
+
+No 
+
+Sì
+
+False
+
+True
+
+Non viene visualizzato
+
+Sì, usando [ **Didascalia**](caption-property.md)
+
+Sì
+
+No 
+
+Sì
+
+False
+
+False
+
+Non viene visualizzato
+
+No
+
+Sì
+
+No 
+
+No 
+
+True
+
+True
+
+Normale, con [ **Didascalia**](caption-property.md)
+
+No
+
+Sì
+
+No 
+
+No 
+
+Vero
+
+Falso
+
+Disabilitato, con [ **Didascalia**](caption-property.md)
+
+No
+
+Sì
+
+No 
+
+No 
+
+False
+
+True
+
+Non viene visualizzato
+
+No
+
+Sì
+
+No 
+
+No 
+
+False
+
+False
+
+Non viene visualizzato
+
+No
+
+No 
+
+No 
+
+Sì
+
+True
+
+True
+
+Non viene visualizzato
+
+No 
+
+No 
+
+No 
+
+Sì
+
+Vero
+
+Falso
+
+Non viene visualizzato
+
+No
+
+No 
+
+No 
+
+Sì
+
+False
+
+True
+
+Non viene visualizzato
+
+No 
+
+No 
+
+No 
+
+Sì
+
+False
+
+False
+
+Non viene visualizzato
+
+No
+
+No 
+
+No 
+
+No 
+
+True
+
+True
+
+Non viene visualizzato
+
+No
+
+No 
+
+No 
+
+No 
+
+Vero
+
+Falso
+
+Non viene visualizzato
+
+No
+
+No 
+
 No 
 
 No 
@@ -544,13 +544,13 @@ Non viene visualizzato
 
 No
 
- Se l'impostazione della proprietà è null. In alcuni linguaggi di programmazione è possibile che una stringa vuota non venga interpretata come una stringa null.  Il comando è ancora accessibile tramite voce.<br/>
+ Se l'impostazione della proprietà è Null. In alcuni linguaggi di programmazione una stringa vuota potrebbe non essere interpretata come una stringa Null.  Il comando è ancora accessibile tramite voce.<br/>
 
 
 
  
 
-Quando il server riceve l'input per uno dei comandi, invia un evento di [**comando**](/windows/desktop/lwef/the-command-object) e passa di nuovo il nome del **comando** come attributo dell'oggetto [**userinput**](/windows/desktop/lwef/iagentuserinput) . È quindi possibile usare le istruzioni condizionali per trovare una corrispondenza ed elaborare il **comando**.
+Quando il server riceve l'input per uno dei comandi, invia un evento [**Command**](/windows/desktop/lwef/the-command-object) e restituisce il nome dell'oggetto **Command** come attributo [**dell'oggetto UserInput.**](/windows/desktop/lwef/iagentuserinput) È quindi possibile usare istruzioni condizionali per trovare la corrispondenza con il comando ed **elaborarvi.**
 
  
 

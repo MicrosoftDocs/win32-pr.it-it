@@ -1,44 +1,44 @@
 ---
-title: Attributo ReGroupID di la
-description: Attributo ReGroupID di la
+title: Attributo VML ReGroupID
+description: Attributo VML ReGroupID
 ms.assetid: 2fbcc8c5-6e31-4301-9fb8-c2618bb17a1b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 384703d3fc5675013de09c4e3b5dec7505cf4164
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7c304bb0ecbe19c62e6fa5a204749b61fad4a700fe4222b6e1ef993384d53abd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597644"
 ---
-# <a name="vml-regroupid-attribute"></a>Attributo ReGroupID di la
+# <a name="vml-regroupid-attribute"></a>Attributo VML ReGroupID
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce un gruppo precedente per una forma. Proprietà di lettura/scrittura. **VgInteger**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:regroupid = " *Expression* " >
+<v: *element* o:regroupid=" *expression* ">
 
 **Osservazioni:**
 
-Un numero ID viene utilizzato per identificare i gruppi di forme che non sono più raggruppati. Consente di raggruppare le forme a livello di codice.
+Un numero ID viene usato per identificare gruppi di forme che non sono più raggruppate. Consente il raggruppamento delle forme a livello di codice.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
 **Esempio**
 
-La forma faceva parte di un gruppo indicato dall'ID gruppo 040754.
+La forma fa parte di un gruppo denotato dall'ID gruppo 040754.
 
 
 ```HTML
@@ -52,6 +52,6 @@ La forma faceva parte di un gruppo indicato dall'ID gruppo 040754.
 
 
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentMustBeSeparateLongValueException'
+description: Altre informazioni sul costruttore EsentMustBeSeparateLongValueException
 title: Costruttore EsentMustBeSeparateLongValueException
 TOCTitle: 'EsentMustBeSeparateLongValueException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMustBeSeparateLongValueException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c1b107f759e051f5fb9bdf5c52092cec832c66a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 008702e2012eab6e33c83c8189322e9148b8ffe01607dae9e51669504d1f5d28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103754618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118263974"
 ---
 # <a name="esentmustbeseparatelongvalueexception-constructor"></a>Costruttore EsentMustBeSeparateLongValueException
 
 Inizializza una nuova istanza della classe EsentMustBeSeparateLongValueException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMustBeSeparateLongValueException()
 
 [Membri di EsentMustBeSeparateLongValueException](./esentmustbeseparatelongvalueexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

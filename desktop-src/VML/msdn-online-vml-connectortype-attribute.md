@@ -1,34 +1,34 @@
 ---
-title: Attributo ConnectorType di la
-description: Attributo ConnectorType di la
+title: Attributo ConnectorType di VML
+description: Attributo ConnectorType di VML
 ms.assetid: acb9050d-c9e4-4d87-96c2-0bd2a1cf6e6b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0be0309e478970b93324b98a5efaaae54964435
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a552324582729c74ae87c9fcf1cd512334423bb84c43992f265c0b47fffcd98d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118601974"
 ---
-# <a name="vml-connectortype-attribute"></a>Attributo ConnectorType di la
+# <a name="vml-connectortype-attribute"></a>Attributo ConnectorType di VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Indica il tipo di connettore usato per l'Unione di forme. Proprietà di lettura/scrittura. **Stringa**.
+Indica il tipo di connettore usato per unire le forme. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:ConnectorType = " *Expression* " >
+<v: *elemento* o:connectortype=" *espressione* ">
 
 **Osservazioni:**
 
@@ -39,17 +39,17 @@ I possibili valori sono:
 | Valore    | Descrizione                    |
 |----------|--------------------------------|
 | Nessuno     | Nessun connettore.                  |
-| direttamente | Valore predefinito. Un connettore lineare. |
-| gomito    | Un connettore a forma di gomito.     |
-| curvo   | Un connettore curvo.            |
+| Dritto | Valore predefinito. Un connettore diritto. |
+| Gomito    | Connettore a forma di gomito.     |
+| Curva   | Connettore curvo.            |
 
 
 
- 
+ 
 
-Questo attributo può essere usato anche da un motore di regole di un editor grafico.
+Questo attributo può essere usato anche da un motore regole di un editor grafico.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
 **Esempio**
 
@@ -64,6 +64,6 @@ La forma usa una linea retta come connettore.
 
 
 
- 
+ 
 
- 
+ 

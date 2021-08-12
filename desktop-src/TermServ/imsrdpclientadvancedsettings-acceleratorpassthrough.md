@@ -1,26 +1,26 @@
 ---
-title: Proprietà AcceleratorPassthrough di IMsRdpClientAdvancedSettings
+title: Proprietà IMsRdpClientAdvancedSettings AcceleratorPassthrough
 description: Specifica se i tasti di scelta rapida devono essere passati al server.
 ms.assetid: ad0053bc-e3a9-4cd5-a409-fab3e24ffffa
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà AcceleratorPassthrough
-- Servizi Desktop remoto proprietà AcceleratorPassthrough, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà AcceleratorPassthrough
+- Proprietà AcceleratorPassthrough Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà AcceleratorPassthrough
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c252c5c0477f331b66cf65b93ed2cab844fb88e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c422147848c2b2625acc518074468febb7593d4a97bb8080c1db7d4b1ba7c081
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118609255"
 ---
-# <a name="imsrdpclientadvancedsettingsacceleratorpassthrough-property"></a>Proprietà IMsRdpClientAdvancedSettings:: AcceleratorPassthrough
+# <a name="imsrdpclientadvancedsettingsacceleratorpassthrough-property"></a>Proprietà IMsRdpClientAdvancedSettings::AcceleratorPassthrough
 
 Specifica se i tasti di scelta rapida devono essere passati al server.
 
@@ -84,15 +84,15 @@ HRESULT get_AcceleratorPassthrough(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la funzionalità o un valore diverso da zero per abilitare la funzionalità. Il valore predefinito è un valore diverso da zero.
+Impostare questo parametro su 0 per disabilitare la funzionalità o su un valore diverso da zero per abilitarla. Il valore predefinito è un valore diverso da zero.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

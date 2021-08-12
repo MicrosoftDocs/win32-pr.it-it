@@ -94,7 +94,7 @@
               href: wm-initdialog.md
             - name: WM_NEXTDLGCTL
               href: wm-nextdlgctl.md
-        - name: Strutture delle finestre di dialogo
+        - name: Strutture della finestra di dialogo
           href: dialog-box-structures.md
           items:
             - name: DLGITEMTEMPLATE
@@ -228,7 +228,7 @@
                   href: wm-choosefont-setflags.md
                 - name: WM_CHOOSEFONT_SETLOGFONT
                   href: wm-choosefont-setlogfont.md
-            - name: Notifiche delle finestre di dialogo comuni
+            - name: Notifiche comuni delle finestre di dialogo
               href: common-dialog-box-notifications.md
               items:
                 - name: CDN_FILEOK

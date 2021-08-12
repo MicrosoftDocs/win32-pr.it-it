@@ -1,17 +1,17 @@
 ---
-title: Riferimento a DirectComposition
-description: In questa sezione vengono fornite informazioni di riferimento dettagliate per gli elementi che costituiscono Microsoft DirectComposition \ 32; API.
+title: Informazioni di riferimento su DirectComposition
+description: Questa sezione fornisce informazioni di riferimento dettagliate per gli elementi che costituiscono Microsoft DirectComposition \ 32; Api.
 ms.assetid: A220189D-8546-4352-8F6F-AC5D2192940D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b89838ea69a5e100ab0741ac1617abba3b0f3f33
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ba067e105530d9d998c684de24550539a735bd87289ad2380766c3b865b16db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118280587"
 ---
-# <a name="directcomposition-reference"></a>Riferimento a DirectComposition
+# <a name="directcomposition-reference"></a>Informazioni di riferimento su DirectComposition
 
 Questa sezione fornisce informazioni di riferimento dettagliate per gli elementi che costituiscono l'API Microsoft DirectComposition.
 
@@ -38,7 +38,7 @@ Questa sezione fornisce informazioni di riferimento dettagliate per gli elementi
 [Come usare DirectComposition](how-to-use-directcomposition.md)
 </dt> <dt>
 
-[Concetti di DirectComposition](directcomposition-concepts.md)
+[Concetti relativi a DirectComposition](directcomposition-concepts.md)
 </dt> <dt>
 
 [Esempi di codice DirectComposition](directcomposition-code-samples.md)

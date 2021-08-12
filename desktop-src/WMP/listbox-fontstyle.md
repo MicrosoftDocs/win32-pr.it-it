@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. fontStyle
+title: LISTBOX.fontStyle
 description: L'attributo fontStyle specifica o recupera lo stile del carattere per il controllo casella di riepilogo.
 ms.assetid: c42b80b6-0dea-4080-a06e-931fdc02fa55
 keywords:
-- Media Player di Windows LISTBOX. fontStyle
+- LISTBOX.fontStyle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0903ac77f1fa4307dfcabad6311eb556617d8153
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 258064ca4ee97fc33bb98bf64d8e3dcf305c5d7e045282a5218a060e904aff50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575038"
 ---
-# <a name="listboxfontstyle"></a>LISTBOX. fontStyle
+# <a name="listboxfontstyle"></a>LISTBOX.fontStyle
 
-L'attributo **FontStyle** specifica o recupera lo stile del carattere per il controllo casella di riepilogo.
+**L'attributo fontStyle** specifica o recupera lo stile del carattere per il controllo casella di riepilogo.
 
 ``` syntax
         elementID.fontStyle
@@ -29,16 +29,16 @@ L'attributo **FontStyle** specifica o recupera lo stile del carattere per il con
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente uno o più dei valori seguenti.
+Questo attributo è una stringa di **lettura/scrittura** contenente uno o più dei valori seguenti.
 
 
 
 | Valore     | Descrizione           |
 |-----------|-----------------------|
-| Grassetto      | Stile del carattere in grassetto.      |
+| Bold      | Stile carattere grassetto.      |
 | Corsivo    | Stile del carattere corsivo.    |
-| Sottolineato | Stile del carattere sottolineato. |
-| Barrato | Stile del carattere di attacco. |
+| Sottolineato | Stile del carattere di sottolineatura. |
+| Barrato | Stile carattere barrato. |
 | Normale    | Stile del carattere normale.    |
 
 
@@ -47,9 +47,9 @@ Questo attributo è una **stringa** di lettura/scrittura contenente uno o più d
 
 ## <a name="remarks"></a>Commenti
 
-È possibile utilizzare qualsiasi combinazione di valori, separati da spazi. Lo stile normale ha la priorità su tutti gli altri valori, mentre quelli specificati insieme al normale verranno ignorati.
+È possibile usare qualsiasi combinazione di valori, separati da spazi. Lo stile Normale ha la priorità su tutti gli altri valori e tutti gli altri specificati insieme a Normal verranno ignorati.
 
-A scopo di rendering, Normal è lo stile del tipo di carattere predefinito. Il valore predefinito recuperato da questo attributo è "" (stringa vuota).
+Ai fini del rendering, Normal è lo stile del carattere predefinito. Il valore predefinito recuperato da questo attributo è "" (stringa vuota).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ A scopo di rendering, Normal è lo stile del tipo di carattere predefinito. Il v
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -65,10 +65,10 @@ A scopo di rendering, Normal è lo stile del tipo di carattere predefinito. Il v
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX. fontSize**](listbox-fontsize.md)
+[**LISTBOX.fontSize**](listbox-fontsize.md)
 </dt> </dl>
 
  

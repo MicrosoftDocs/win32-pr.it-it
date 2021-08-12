@@ -1,18 +1,18 @@
 ---
-title: Proprietà BitmapVirtualCache32BppSize di IMsRdpClientAdvancedSettings5
-description: Imposta o recupera le dimensioni del file della cache virtuale per le bitmap di 32 bit per pixel (BPP).
+title: Proprietà IMsRdpClientAdvancedSettings5 BitmapVirtualCache32BppSize
+description: Imposta o recupera le dimensioni del file della cache virtuale per bitmap bpp (32 bit per pixel).
 ms.assetid: 7084293a-ae75-4711-a8d8-f813117333e7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà BitmapVirtualCache32BppSize
-- Servizi Desktop remoto proprietà BitmapVirtualCache32BppSize, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà BitmapVirtualCache32BppSize
-- Servizi Desktop remoto proprietà BitmapVirtualCache32BppSize, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà BitmapVirtualCache32BppSize
-- Servizi Desktop remoto proprietà BitmapVirtualCache32BppSize, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà BitmapVirtualCache32BppSize
-- Servizi Desktop remoto proprietà BitmapVirtualCache32BppSize, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà BitmapVirtualCache32BppSize
+- Proprietà BitmapVirtualCache32BppSize Servizi Desktop remoto
+- Proprietà BitmapVirtualCache32BppSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà BitmapVirtualCache32BppSize
+- Proprietà BitmapVirtualCache32BppSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà BitmapVirtualCache32BppSize
+- Proprietà BitmapVirtualCache32BppSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà BitmapVirtualCache32BppSize
+- Proprietà BitmapVirtualCache32BppSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà BitmapVirtualCache32BppSize
 topic_type:
 - apiref
 api_name:
@@ -34,16 +34,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d43de82b97e16fa36f83a5edde43712b2a9cbbb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb33ee817a9410beb95e91be674de1a96cdbf78f92f5aaa7e3298447804cc1d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608410"
 ---
-# <a name="imsrdpclientadvancedsettings5bitmapvirtualcache32bppsize-property"></a>Proprietà IMsRdpClientAdvancedSettings5:: BitmapVirtualCache32BppSize
+# <a name="imsrdpclientadvancedsettings5bitmapvirtualcache32bppsize-property"></a>Proprietà IMsRdpClientAdvancedSettings5::BitmapVirtualCache32BppSize
 
-Imposta o recupera le dimensioni del file della cache virtuale per le bitmap di 32 bit per pixel (BPP).
+Imposta o recupera le dimensioni del file della cache virtuale per bitmap bpp (32 bit per pixel).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -64,7 +64,7 @@ HRESULT get_BitmapVirtualCache32BppSize(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Imposta la dimensione del file di cache virtuale per le bitmap di 32 BPP, in megabyte (MB). Il valore massimo è 48 MB.
+Imposta le dimensioni del file di cache virtuale per 32 bitmap bpp, in megabyte (MB). Il valore massimo è 48 MB.
 
 ## <a name="requirements"></a>Requisiti
 

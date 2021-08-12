@@ -1,12 +1,12 @@
 ---
-title: Metodo join della classe Win32_RDMSJoinedNode
-description: Aggiunge un nodo a Desktop remoto Management Services (RDBMS).
+title: Metodo Join della classe Win32_RDMSJoinedNode join
+description: Aggiunge un nodo a Desktop remoto Management Services (RDMS).
 ms.assetid: 7451d12a-ace2-4564-bf6d-fb0169be967f
 ms.tgt_platform: multiple
 keywords:
 - Metodo join Servizi Desktop remoto
-- Metodo join Servizi Desktop remoto, classe Win32_RDMSJoinedNode
-- Classe Win32_RDMSJoinedNode Servizi Desktop remoto, metodo Join
+- Metodo Join Servizi Desktop remoto , Win32_RDMSJoinedNode classe
+- Win32_RDMSJoinedNode classe Servizi Desktop remoto , metodo Join
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 587e68758971453e8c4e307ccb37ce6cede262f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 204d83988f9a57d9fe0edf8daa6dc580676fc7395f98edcbece49674c0041aef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118605424"
 ---
-# <a name="join-method-of-the-win32_rdmsjoinednode-class"></a>Metodo join della classe Win32 \_ RDMSJoinedNode
+# <a name="join-method-of-the-win32_rdmsjoinednode-class"></a>Metodo Join della classe \_ RDMSJoinedNode Win32
 
-Aggiunge un nodo a Desktop remoto Management Services (RDBMS).
+Aggiunge un nodo a Desktop remoto Management Services (RDMS).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,17 +44,17 @@ uint32 Join(
 
 <dl> <dt>
 
-*NodeFQDN* \[ in\]
+*NodeFQDN* \[ Pollici\]
 </dt> <dd>
 
 Nome di dominio completo del nodo.
 
 </dd> <dt>
 
-*Nodesid* \[ in\]
+*NodeSID* \[ Pollici\]
 </dt> <dd>
 
-ID di sicurezza (SID) del nodo.
+Identificatore di sicurezza (SID) del nodo.
 
 </dd> </dl>
 
@@ -70,8 +70,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSJoinedNode Win32**](win32-rdmsjoinednode.md)
+[**Win32 \_ RDMSJoinedNode**](win32-rdmsjoinednode.md)
 </dt> </dl>
 
  

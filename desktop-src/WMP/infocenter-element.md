@@ -1,9 +1,9 @@
 ---
-title: Elemento centro informazioni
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. | Elemento centro informazioni
+title: Elemento InfoCenter
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. | Elemento InfoCenter
 ms.assetid: 1a9cc513-5dd1-46d8-9409-16413695b4c8
 keywords:
-- Finestra degli elementi del centro informazioni Media Player
+- Elemento InfoCenter Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ef62e0f6b41090642400a7f0a8b88af72818da4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1d89e7a35d0d9daacd87d3ac840f0ee87fa7c82b317afd54c9283344e204f8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576260"
 ---
-# <a name="infocenter-element"></a>Elemento centro informazioni
+# <a name="infocenter-element"></a>Elemento InfoCenter
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-L' **elemento centro** informazioni consente di specificare l'URL della pagina Web visualizzata da Windows Media Player nella funzionalità di visualizzazione del centro informazioni per la **riproduzione** quando lo Store online è attivo.
+**L'elemento InfoCenter** specifica l'URL della pagina Web Windows Media Player visualizzata nella  funzionalità Visualizzazione Info Center di Riproduzione in esecuzione quando lo store online è attivo.
 
 ``` syntax
 <InfoCenter
@@ -42,7 +42,7 @@ L' **elemento centro** informazioni consente di specificare l'URL della pagina W
 <span id="URL__required_"></span><span id="url__required_"></span><span id="URL__REQUIRED_"></span>**URL** (obbligatorio)
 </dt> <dd>
 
-URL per la pagina Web visualizzata da Windows Media Player.
+URL per la pagina Web Windows Media Player visualizzata.
 
 </dd> </dl>
 
@@ -63,18 +63,18 @@ URL per la pagina Web visualizzata da Windows Media Player.
 
 L'utente controlla quando la visualizzazione Info Center è attiva.
 
-Per recuperare informazioni sull'elemento multimediale attualmente in riproduzione, è necessario incorporare un'istanza di Windows Media Player Control nella pagina Web e utilizzare il modello a oggetti del lettore.
+Per recuperare informazioni sull'elemento multimediale attualmente in riproduzione, è necessario incorporare un'istanza del controllo Windows Media Player nella pagina Web e usare il modello a oggetti Player.
 
-La tabella seguente illustra in dettaglio i parametri inviati con la richiesta URL. Altri possono essere presenti per motivi di compatibilità con le versioni precedenti.
+La tabella seguente contiene informazioni dettagliate sui parametri inviati con la richiesta URL. Altri possono essere presenti per motivi di compatibilità legacy.
 
 
 
 | Nome         | Valore                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Geoid*      | ID della posizione geografica di Windows. L'ID percorso viene specificato dall'utente nell'area **località** delle impostazioni Opzioni internazionali e della lingua nel pannello di controllo. |
-| *locale*     | Windows Media Player ID impostazioni locali.                                                                                                                                     |
-| *UserLocale* | ID delle impostazioni locali di Windows. Le impostazioni locali vengono specificate dall'utente nell'area **standard e formati** delle impostazioni Opzioni internazionali e della lingua nel pannello di controllo.        |
-| *version*    | Il numero di versione di Windows Media Player usando il formato seguente: 10.0. x. xxxx o 11.0. x. xxxx.                                                                         |
+| *Geoid*      | Windows'ID della posizione geografica. L'ID località viene specificato dall'utente nell'area **Località** delle impostazioni Opzioni internazionali e della lingua Pannello di controllo. |
+| *locale*     | Windows Media Player ID delle impostazioni locali.                                                                                                                                     |
+| *userlocale* | Windows ID delle impostazioni locali. Le impostazioni locali vengono specificate dall'utente nell'area **Standard** e formati delle impostazioni Opzioni internazionali e della lingua Pannello di controllo.        |
+| *version*    | Windows Media Player numero di versione usando il formato seguente: 10.0.x.xxxx o 11.0.x.xxxx.                                                                         |
 
 
 
@@ -97,7 +97,7 @@ La tabella seguente illustra in dettaglio i parametri inviati con la richiesta U
 [**Documento ServiceInfo di esempio per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo di esempio per uno store online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

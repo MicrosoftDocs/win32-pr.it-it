@@ -1,7 +1,7 @@
 ---
-description: Indica se la chiave condivisa sarà una chiave di rete o una passphrase.
+description: Indica se la chiave condivisa sarà una chiave di rete o una pass phrase.
 ms.assetid: 2cc909bb-7de6-492b-81ca-ddde93c17f63
-title: Elemento Type (sharedKey)
+title: Elemento keyType (sharedKey)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 134f9da4100c9479255507d4686dd19d3d484dea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88c9a48d1c70cd156fa3d8f63bd3b70d69a99a1151a18c95ffd556b2503c9575
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619284"
 ---
-# <a name="keytype-sharedkey-element"></a>Elemento Type (sharedKey)
+# <a name="keytype-sharedkey-element"></a>Elemento keyType (sharedKey)
 
-L'elemento Key Type (sharedKey) indica se la chiave condivisa sarà una chiave di rete o una passphrase.
+L'elemento keyType (sharedKey) indica se la chiave condivisa sarà una chiave di rete o una pass phrase.
 
 ``` syntax
 <xs:element name="keyType">
@@ -40,15 +40,15 @@ L'elemento Key Type (sharedKey) indica se la chiave condivisa sarà una chiave d
 </xs:element>
 ```
 
-L'elemento è definito dall'elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) .
+L'elemento è definito [**dall'elemento sharedKey.**](wlan-profileschema-sharedkey-security-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Quando l'elemento di [**crittografia**](wlan-profileschema-encryption-authencryption-element.md) ha un valore WEP, il **tipo** di elemento deve essere impostato su **networkKey**.
+Quando [**l'elemento**](wlan-profileschema-encryption-authencryption-element.md) di crittografia ha un valore WEP, **keyType** deve essere impostato su **networkKey**.
 
 ## <a name="examples"></a>Esempio
 
-Per visualizzare i profili di esempio che usano l'elemento di **tipo** , vedere esempio di [profilo non broadcast](non-broadcast-profile-sample.md), esempio di profilo [WPA-Personal](wpa-personal-profile-sample.md)e [esempio di profilo WPA2-Personal](wpa2-personal-profile-sample.md).
+Per visualizzare i profili di esempio che usano l'elemento **keyType,** vedere [Esempio](non-broadcast-profile-sample.md)di profilo non broadcast , Esempio di profilo [personale WPA](wpa-personal-profile-sample.md)e Esempio di profilo [WPA2-Personale](wpa2-personal-profile-sample.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Per visualizzare i profili di esempio che usano l'elemento di **tipo** , vedere 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, Windows XP con \[ solo app desktop SP3\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP3 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                |
 | Componente ridistribuibile<br/>          | API LAN wireless per Windows XP con SP2<br/>                 |
 
 

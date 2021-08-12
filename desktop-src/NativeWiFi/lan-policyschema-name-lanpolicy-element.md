@@ -1,7 +1,7 @@
 ---
-description: Contiene il nome di un criterio LAN cablata.
+description: Contiene il nome di un criterio LAN cablato.
 ms.assetid: 042be748-3337-4eb2-a75f-c85f7042bf13
-title: Elemento Name (LANPolicy)
+title: Elemento name (LANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 195eadfb4700a5ac9d28bb7ea1152228fae9480a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f3faf980b6e03eb75f8c64d7aaab0facf58047f188f764428d7903f75118a79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620229"
 ---
-# <a name="name-lanpolicy-element"></a>Elemento Name (LANPolicy)
+# <a name="name-lanpolicy-element"></a>Elemento name (LANPolicy)
 
-L'elemento Name (LANPolicy) contiene il nome di un criterio LAN cablata.
+L'elemento name (LANPolicy) contiene il nome di un criterio LAN cablato.
 
 ``` syntax
 <xs:element name="name"
@@ -29,11 +29,11 @@ L'elemento Name (LANPolicy) contiene il nome di un criterio LAN cablata.
  />
 ```
 
-L'elemento **Name** viene definito dall'elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) .
+**L'elemento** name è definito dall'elemento [**LANPolicy.**](lan-policyschema-lanpolicy-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-I nomi non fanno distinzione tra maiuscole e minuscole.
+I nomi non supportano la distinzione tra maiuscole e minuscole.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,8 +41,8 @@ I nomi non fanno distinzione tra maiuscole e minuscole.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -56,7 +56,7 @@ I nomi non fanno distinzione tra maiuscole e minuscole.
 [**LANPolicy**](lan-policyschema-lanpolicy-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**LANPolicy**](lan-policyschema-lanpolicy-element.md)

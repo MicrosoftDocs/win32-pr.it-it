@@ -1,26 +1,26 @@
 ---
-title: Proprietà BitmapCacheSize di IMsRdpClientAdvancedSettings
-description: Dimensioni, in kilobyte, del file di cache bitmap utilizzato per le bitmap a 8 bit per pixel.
+title: Proprietà BitmapCacheSize IMsRdpClientAdvancedSettings
+description: Dimensioni, in kilobyte, del file della cache bitmap usato per bitmap a 8 bit per pixel.
 ms.assetid: a2a4b739-0fa3-4a76-87ae-3cba913b7703
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà BitmapCacheSize
-- Servizi Desktop remoto proprietà BitmapCacheSize, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà BitmapCacheSize
+- Proprietà BitmapCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà BitmapCacheSize
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a38376bb0b06bd4efea36d3c4cad4e4aec0f35b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af56056cbdd62bb041ba9ab08e83a4f09e69037a3f9bd6799fa0c0facc9da75e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118609052"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmapcachesize-property"></a>Proprietà IMsRdpClientAdvancedSettings:: BitmapCacheSize
+# <a name="imsrdpclientadvancedsettingsbitmapcachesize-property"></a>Proprietà IMsRdpClientAdvancedSettings::BitmapCacheSize
 
-Dimensioni, in kilobyte, del file di cache bitmap utilizzato per le bitmap a 8 bit per pixel.
+Dimensioni, in kilobyte, del file della cache bitmap usato per bitmap a 8 bit per pixel.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -84,15 +84,15 @@ HRESULT get_BitmapCacheSize(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuove dimensioni della cache, in kilobyte. I valori numerici validi sono compresi tra 1 e 32.
+Nuove dimensioni della cache, in kilobyte. I valori numerici validi sono compresi tra 1 e 32 inclusi.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

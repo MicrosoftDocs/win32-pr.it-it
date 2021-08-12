@@ -1,12 +1,12 @@
 ---
-title: Proprietà WarnAboutDirectXRedirection di IMsRdpClientNonScriptable5
-description: Questa proprietà non viene utilizzata. | Proprietà WarnAboutDirectXRedirection di IMsRdpClientNonScriptable5
+title: Proprietà WarnAboutDirectXRedirection IMsRdpClientNonScriptable5
+description: Questa proprietà non viene utilizzata. | Proprietà WarnAboutDirectXRedirection IMsRdpClientNonScriptable5
 ms.assetid: 005CA515-05B1-4B31-A83F-80E113F1BA7B
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà WarnAboutDirectXRedirection
-- Servizi Desktop remoto proprietà WarnAboutDirectXRedirection, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà WarnAboutDirectXRedirection
+- Proprietà WarnAboutDirectXRedirection Servizi Desktop remoto
+- Proprietà WarnAboutDirectXRedirection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà WarnAboutDirectXRedirection
 topic_type:
 - apiref
 api_name:
@@ -19,14 +19,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b39bb49a79e319d848b12e4bbf50e191b21605f3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 02d8d35e4b6088745f9bfd4cfc3af9920db6fca3f88d671f6613af959e259d87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607449"
 ---
-# <a name="imsrdpclientnonscriptable5warnaboutdirectxredirection-property"></a>Proprietà IMsRdpClientNonScriptable5:: WarnAboutDirectXRedirection
+# <a name="imsrdpclientnonscriptable5warnaboutdirectxredirection-property"></a>Proprietà IMsRdpClientNonScriptable5::WarnAboutDirectXRedirection
 
 Questa proprietà non viene utilizzata.
 
@@ -61,7 +61,7 @@ Specifica il nuovo valore della proprietà.
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                             |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 è definito come 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 è definito come 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

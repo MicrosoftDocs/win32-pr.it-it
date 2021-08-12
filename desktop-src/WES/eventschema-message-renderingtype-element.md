@@ -1,9 +1,9 @@
 ---
-title: Message (RenderingInfoType)-elemento
+title: Elemento Message (RenderingInfoType)
 description: Contiene il messaggio di evento di cui viene eseguito il rendering per l'evento.
 ms.assetid: 2a29f09f-cd1a-415a-aa52-1c8643a95c25
 keywords:
-- EventLog elemento messaggio
+- EventLog dell'elemento Message
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bcd00b14e9a6182b881933952569f40cc8bc4ffe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6b33776a0f1b10c811d84210f66d1f0b30b4c273c0160cbc365440351160f42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588601"
 ---
-# <a name="message-renderinginfotype-element"></a>Message (RenderingInfoType)-elemento
+# <a name="message-renderinginfotype-element"></a>Elemento Message (RenderingInfoType)
 
 Contiene il messaggio di evento di cui viene eseguito il rendering per l'evento.
 
@@ -30,7 +30,7 @@ Contiene il messaggio di evento di cui viene eseguito il rendering per l'evento.
  />
 ```
 
-L'elemento **Message** è definito dal tipo complesso [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+**L'elemento Message** è definito dal [**tipo complesso RenderingInfoType.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Message** è definito dal tipo complesso [**RenderingInfoType**](ev
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

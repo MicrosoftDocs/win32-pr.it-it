@@ -1,24 +1,24 @@
 ---
-title: Proprietà LaunchedViaClientShellInterface di IMsRdpClientNonScriptable4
-description: Specifica se l'utente ha avviato il controllo client utilizzando l'interfaccia Desktop remoto Accesso Web (RD Accesso Web).
+title: Proprietà IMsRdpClientNonScriptable4 LaunchedViaClientShellInterface
+description: Specifica se l'utente ha avviato il controllo client usando l'interfaccia Desktop remoto Accesso Web (Accesso Web Desktop remoto).
 ms.assetid: bf72c375-0eec-49c7-9f9a-c7545a95bdce
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà LaunchedViaClientShellInterface
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà LaunchedViaClientShellInterface
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface, oggetto MsRdpClient5
-- Oggetto MsRdpClient5 Servizi Desktop remoto, proprietà LaunchedViaClientShellInterface
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà LaunchedViaClientShellInterface
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface, oggetto MsRdpClient7
-- Oggetto MsRdpClient7 Servizi Desktop remoto, proprietà LaunchedViaClientShellInterface
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface, oggetto MsRdpClient8
-- Oggetto MsRdpClient8 Servizi Desktop remoto, proprietà LaunchedViaClientShellInterface
-- Servizi Desktop remoto proprietà LaunchedViaClientShellInterface, oggetto MsRdpClient9
-- Oggetto MsRdpClient9 Servizi Desktop remoto, proprietà LaunchedViaClientShellInterface
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto proprietà , LaunchedViaClientShellInterface
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto proprietà , LaunchedViaClientShellInterface
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto , oggetto MsRdpClient5
+- Oggetto MsRdpClient5 Servizi Desktop remoto proprietà , LaunchedViaClientShellInterface
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà , LaunchedViaClientShellInterface
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà , LaunchedViaClientShellInterface
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà , LaunchedViaClientShellInterface
+- Proprietà LaunchedViaClientShellInterface Servizi Desktop remoto , oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà , LaunchedViaClientShellInterface
 topic_type:
 - apiref
 api_name:
@@ -39,16 +39,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d5854a4e75be455035fd9a123418bd486932379
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bf4b3af34d274ae2ebfc34aed2a4256272daca2365966795de14d6b156562d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607589"
 ---
-# <a name="imsrdpclientnonscriptable4launchedviaclientshellinterface-property"></a>Proprietà IMsRdpClientNonScriptable4:: LaunchedViaClientShellInterface
+# <a name="imsrdpclientnonscriptable4launchedviaclientshellinterface-property"></a>Proprietà IMsRdpClientNonScriptable4::LaunchedViaClientShellInterface
 
-Specifica se l'utente ha avviato il controllo client utilizzando l'interfaccia Desktop remoto Accesso Web (RD Accesso Web).
+Specifica se l'utente ha avviato il controllo client usando l'interfaccia Desktop remoto Accesso Web (Accesso Web Desktop remoto).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -69,11 +69,11 @@ HRESULT get_LaunchedViaClientShellInterface(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Imposta la proprietà **LaunchedViaClientShellInterface** .
+Imposta la **proprietà LaunchedViaClientShellInterface.**
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 

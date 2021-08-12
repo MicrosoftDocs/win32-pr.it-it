@@ -1,14 +1,14 @@
 ---
-title: Proprietà VideoPlaybackMode di IMsRdpClientAdvancedSettings7
+title: Proprietà VideoPlaybackMode IMsRdpClientAdvancedSettings7
 description: Specifica o recupera un valore che indica la modalità di riproduzione video.
 ms.assetid: 83f0baa3-3ac2-47ee-b106-5beaf60d73d2
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà VideoPlaybackMode
-- Servizi Desktop remoto proprietà VideoPlaybackMode, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà VideoPlaybackMode
-- Servizi Desktop remoto proprietà VideoPlaybackMode, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà VideoPlaybackMode
+- Proprietà VideoPlaybackMode Servizi Desktop remoto
+- Proprietà VideoPlaybackMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà VideoPlaybackMode
+- Proprietà VideoPlaybackMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà VideoPlaybackMode
 topic_type:
 - apiref
 api_name:
@@ -24,14 +24,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f864224f402814ada268b9b7cbc85ec115a1fa2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 353cf72822ac91686cb5a08edf5ca6a5e25b24ff8e544ff79bdd8a2085f761fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607818"
 ---
-# <a name="imsrdpclientadvancedsettings7videoplaybackmode-property"></a>Proprietà IMsRdpClientAdvancedSettings7:: VideoPlaybackMode
+# <a name="imsrdpclientadvancedsettings7videoplaybackmode-property"></a>Proprietà IMsRdpClientAdvancedSettings7::VideoPlaybackMode
 
 Specifica o recupera un valore che indica la modalità di riproduzione video.
 
@@ -63,14 +63,14 @@ I valori possibili sono:
 1
 </dt> <dd>
 
-Modalità di riproduzione video predefinita. Quando la modalità di riproduzione video è impostata su questo valore, il reindirizzamento video è controllato dalla proprietà [**AudioRedirectionMode**](imsrdpclientsecuredsettings-autoredirectionmode.md) . Quando la proprietà **AudioRedirectionMode** è impostata su **\_ \_ Reindirizzamento modalità audio**, il video viene decodificato e sottoposto a rendering nel client.
+Modalità di riproduzione video predefinita. Quando la modalità di riproduzione video è impostata su questo valore, il reindirizzamento video è controllato dalla [**proprietà AudioRedirectionMode.**](imsrdpclientsecuredsettings-autoredirectionmode.md) Quando la **proprietà AudioRedirectionMode** è impostata su **AUDIO MODE \_ \_ REDIRECT,** il video viene decodificato e sottoposto a rendering nel client.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-Il reindirizzamento della riproduzione video è disabilitato, anche quando [**AudioRedirectionMode**](imsrdpclientsecuredsettings-autoredirectionmode.md) è impostato **su \_ \_ Reindirizzamento modalità audio**. In questa modalità, il video viene decodificato e sottoposto a rendering nel server Host sessione Desktop remoto.
+Il reindirizzamento della riproduzione video è disabilitato, anche quando [**AudioRedirectionMode**](imsrdpclientsecuredsettings-autoredirectionmode.md) è impostato su **AUDIO MODE \_ \_ REDIRECT**. In questa modalità, il video viene decodificato e sottoposto a rendering nel server Host sessione Desktop remoto.
 
 </dd> </dl>
 
