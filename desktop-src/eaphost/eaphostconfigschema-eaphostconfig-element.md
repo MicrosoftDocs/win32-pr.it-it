@@ -1,6 +1,6 @@
 ---
 title: Elemento EapHostConfig
-description: Contiene l'elemento EapMethod e la configurazione o l'elemento ConfigBlob. Gli elementi config e ConfigBlob non possono essere usati contemporaneamente.
+description: Contiene l'elemento EapMethod e l'elemento Config o ConfigBlob. Gli elementi Config e ConfigBlob non possono essere usati contemporaneamente.
 ms.assetid: 6c42d71e-0c61-48e4-a447-cfd1eae90297
 keywords:
 - Elemento EapHostConfig EAPHost
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 125b5fa2cab8bf3f9da12bd842a1a102beee3fb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c34ddd1607a59c0425f7ec789bedb4981a05983ead276a14308fbf6aaadf26de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274865"
 ---
 # <a name="eaphostconfig-element"></a>Elemento EapHostConfig
 
-L'elemento **EapHostConfig** contiene l'elemento [**EapMethod**](eaphostconfigschema-eapmethod-eaphostconfig-element.md) e l'elemento [**config**](eaphostconfigschema-config-eaphostconfig-element.md) o [**ConfigBlob**](eaphostconfigschema-configblob-eaphostconfig-element.md) .
+**L'elemento EapHostConfig** contiene [**l'elemento EapMethod**](eaphostconfigschema-eapmethod-eaphostconfig-element.md) e [**l'elemento Config**](eaphostconfigschema-config-eaphostconfig-element.md) [**o ConfigBlob.**](eaphostconfigschema-configblob-eaphostconfig-element.md)
 
-Gli elementi [**config**](eaphostconfigschema-config-eaphostconfig-element.md) e [**ConfigBlob**](eaphostconfigschema-configblob-eaphostconfig-element.md) non possono essere usati contemporaneamente.
+Gli [**elementi Config**](eaphostconfigschema-config-eaphostconfig-element.md) e [**ConfigBlob**](eaphostconfigschema-configblob-eaphostconfig-element.md) non possono essere usati contemporaneamente.
 
 ``` syntax
 <xs:element name="EapHostConfig">
@@ -59,15 +59,15 @@ Gli elementi [**config**](eaphostconfigschema-config-eaphostconfig-element.md) e
 
 | Elemento                                                                    | Tipo                                                                                     | Descrizione                                                                                          |
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**File di configurazione**](eaphostconfigschema-config-eaphostconfig-element.md)         | [**BaseEapMethodConfig**](baseeapmethodconfigschema-baseeapmethodconfig-complextype.md) | Viene usato quando la configurazione del metodo è in formato testo XML anziché come BLOB binario.<br/>       |
-| [**ConfigBlob**](eaphostconfigschema-configblob-eaphostconfig-element.md) | hexBinary                                                                                | Viene usato quando la configurazione del metodo è in formato BLOB binario anziché in formato testo stringa.<br/> |
+| [**Config**](eaphostconfigschema-config-eaphostconfig-element.md)         | [**BaseEapMethodConfig**](baseeapmethodconfigschema-baseeapmethodconfig-complextype.md) | Viene usato quando la configurazione del metodo è in formato testo XML anziché in un BLOB binario.<br/>       |
+| [**ConfigBlob**](eaphostconfigschema-configblob-eaphostconfig-element.md) | Hexbinary                                                                                | Viene usato quando la configurazione del metodo è in formato BLOB binario anziché in formato di testo stringa.<br/> |
 | [**EapMethod**](eaphostconfigschema-eapmethod-eaphostconfig-element.md)   | [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md)                       | Identifica il metodo a cui si fa riferimento. <br/>                                                 |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **processContents** consente miglioramenti futuri allo schema. L'elemento **processContents** è facoltativo.
+**L'elemento processContents** consente miglioramenti futuri allo schema. **L'elemento processContents** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ L'elemento **processContents** consente miglioramenti futuri allo schema. L'elem
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -84,7 +84,7 @@ L'elemento **processContents** consente miglioramenti futuri allo schema. L'elem
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eaphostconfig](eaphostconfigschema-schema.md)

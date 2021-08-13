@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionBrokerTarget
-description: Definisce la query per una destinazione di Service Broker di sessione.
+title: Win32_SessionBrokerTarget classe
+description: Definisce la query per una destinazione del broker di sessione.
 ms.assetid: 35de25da-cb89-4836-be14-9544b1264248
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_SessionBrokerTarget Servizi Desktop remoto
-- Classe Win32_SessionBrokerTarget Servizi Desktop remoto, descritta
+- Win32_SessionBrokerTarget classe Servizi Desktop remoto
+- Win32_SessionBrokerTarget classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ceca0df64eeb9cd285737fee7c6ca6fa3a2e63
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5557a67e9b52841b199a3b1f1f85a31090324db7af0c0a2d21a2679d75ce3a17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604540"
 ---
-# <a name="win32_sessionbrokertarget-class"></a>Win32 \_ SessionBrokerTarget (classe)
+# <a name="win32_sessionbrokertarget-class"></a>Classe \_ SessionBrokerTarget Win32
 
-Definisce la query per una destinazione di Service Broker di sessione.
+Definisce la query per una destinazione del broker di sessione.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -50,33 +50,33 @@ class Win32_SessionBrokerTarget
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ SessionBrokerTarget** presenta questi tipi di membri:
+La **classe \_ SessionBrokerTarget Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ SessionBrokerTarget** dispone di queste proprietà.
+La **classe \_ SessionBrokerTarget Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Environment**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome dell'ambiente. Nel caso di una macchina virtuale (VM) destinazione, potrebbe essere il nome host della VM.
+Nome dell'ambiente. Nel caso di una macchina virtuale (VM) di destinazione, potrebbe trattarsi del nome host della macchina virtuale.
 
 </dd> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -86,10 +86,10 @@ Nome della farm a cui appartiene la destinazione.
 
 </dd> <dt>
 
-**GUID**
+**Guid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -98,14 +98,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Il GUID (se presente) della destinazione.
+GUID (se presente) della destinazione.
 
 </dd> <dt>
 
 **PluginName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -118,10 +118,10 @@ Nome del plug-in.
 
 </dd> <dt>
 
-**TargetName**
+**Targetname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -133,7 +133,7 @@ Nome della destinazione.
 
 ## <a name="examples"></a>Esempio
 
-Nella stringa di query seguente viene illustrato il modo in cui la \_ classe Win32 SessionBrokerTarget viene utilizzata in una query.
+La stringa di query seguente illustra l'uso della classe SessionBrokerTarget Win32 \_ in una query.
 
 
 ```CSharp
@@ -150,8 +150,8 @@ queryString = string.Format("SELECT * FROM Win32_SessionBrokerTarget WHERE Plugi
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

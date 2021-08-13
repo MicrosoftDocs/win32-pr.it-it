@@ -1,40 +1,40 @@
 ---
-title: Attributo EndArrowLength di la
-description: Attributo EndArrowLength di la
+title: Attributo VML EndArrowLength
+description: Attributo VML EndArrowLength
 ms.assetid: aab898b6-4c59-4471-81fd-621f79610d63
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43d9d8bfbd24a6a1b79208d50d4d2aef956a5bc5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3fb11c07300127acd2446c7c2c643e0a891957d63f7650044514427f3e8535d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118601351"
 ---
-# <a name="vml-endarrowlength-attribute"></a>Attributo EndArrowLength di la
+# <a name="vml-endarrowlength-attribute"></a>Attributo VML EndArrowLength
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce una lunghezza della freccia per la fine di una riga. Proprietà di lettura/scrittura. **VgArrowheadLength**.
+Definisce la lunghezza di una freccia per la fine di una linea. Proprietà di lettura/scrittura. **VgArrowheadLength**.
 
 **Si applica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[infarto](msdn-online-vml-stroke-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* endarrowlength = " *Expression* " >
+<v: *element* endarrowlength=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . endarrowlength = "*Expression*"
+*element* .endarrowlength="*expression*"
 
-*espressione* = *elemento*. endarrowlength
+*expression* = *elemento*.endarrowlength
 
 **Osservazioni:**
 
@@ -44,11 +44,11 @@ I possibili valori sono:
 -   Media (impostazione predefinita)
 -   long
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Una linea viene disegnata con una freccia classica breve alla fine del tratto.
+Viene disegnata una linea con una breve freccia classica alla fine del tratto.
 
 
 ```HTML
@@ -60,6 +60,6 @@ Una linea viene disegnata con una freccia classica breve alla fine del tratto.
 
 
 
- 
+ 
 
- 
+ 

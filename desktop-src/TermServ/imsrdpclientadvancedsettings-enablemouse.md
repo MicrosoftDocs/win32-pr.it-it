@@ -4,23 +4,23 @@ description: Questa proprietà non è supportata. | Proprietà EnableMouse di IM
 ms.assetid: 4f60fdfc-e1b9-4ac2-98e4-49331b072883
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà EnableMouse
-- Servizi Desktop remoto proprietà EnableMouse, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà EnableMouse
+- Proprietà EnableMouse Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà EnableMouse
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0495ba7b48e431efe5746f40b353b5c1ad701d6a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bb61f7763f92c46a80a7e0e45c5c476f4d3b64e7cbb735ba1e254641d90dae4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608699"
 ---
-# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>Proprietà IMsRdpClientAdvancedSettings:: EnableMouse
+# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>Proprietà IMsRdpClientAdvancedSettings::EnableMouse
 
 Questa proprietà non è supportata.
 
@@ -84,15 +84,15 @@ HRESULT get_EnableMouse(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la funzionalità o un valore diverso da zero per abilitare la funzionalità.
+Impostare questo parametro su 0 per disabilitare la funzionalità o su un valore diverso da zero per abilitarla.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce un valore **\_ false**.
+Restituisce **S \_ FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

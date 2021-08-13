@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_INSERTIMAGE (RichEdit. h)
+title: EM_INSERTIMAGE messaggio (Richedit.h)
 description: Sostituisce la selezione con un BLOB che visualizza un'immagine.
 ms.assetid: 147B298B-C4A9-455B-9736-A0B09D72902B
 keywords:
-- Controlli di Windows Message EM_INSERTIMAGE
+- EM_INSERTIMAGE del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9ff1e0fd355cf5dd8d43d211c44fda6417c638
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7418a8fe4b7c627d211bce7bf2591ed684d82e42089fbe9bedeb2f76a6b9d3e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437891"
 ---
-# <a name="em_insertimage-message"></a>\_Messaggio INSERTIMAGE em
+# <a name="em_insertimage-message"></a>Messaggio \_ EM INSERTIMAGE
 
 Sostituisce la selezione con un BLOB che visualizza un'immagine.
 
@@ -39,28 +39,28 @@ Sostituisce la selezione con un BLOB che visualizza un'immagine.
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ \_ parametri dell'immagine RichEdit**](/windows/win32/api/richedit/ns-richedit-richedit_image_parameters) che contiene il BLOB dell'immagine.
+Puntatore a una [**struttura RICHEDIT \_ IMAGE \_ PARAMETERS**](/windows/win32/api/richedit/ns-richedit-richedit_image_parameters) che contiene il BLOB dell'immagine.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o uno dei codici di errore seguenti.
+Restituisce S \_ OK in caso di esito positivo o uno dei codici di errore seguenti.
 
 
 
 | Codice restituito                                                                                    | Descrizione                                                   |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <dl> <dt>**E \_ Non riuscita**</dt> </dl>        | Impossibile inserire l'immagine. <br/>                          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>   | Il parametro *lParam* è null o punta a un'immagine non valida. |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | La memoria disponibile è insufficiente.<br/>                  |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Impossibile inserire l'immagine. <br/>                          |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>   | Il *parametro lParam* è NULL o punta a un'immagine non valida. |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                  |
 
 
 
@@ -68,7 +68,7 @@ Restituisce \_ OK se ha esito positivo o uno dei codici di errore seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Se la selezione è un punto di inserimento, il BLOB dell'immagine viene inserito nel punto di inserimento.
+Se la selezione è un punto di inserimento, il BLOB dell'immagine viene inserito in corrispondenza del punto di inserimento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,9 +76,9 @@ Se la selezione è un punto di inserimento, il BLOB dell'immagine viene inserito
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Se la selezione è un punto di inserimento, il BLOB dell'immagine viene inserito
 
 <dl> <dt>
 
-[**\_INSERTTABLE em**](em-inserttable.md)
+[**EM \_ INSERTTABLE**](em-inserttable.md)
 </dt> </dl>
 
  

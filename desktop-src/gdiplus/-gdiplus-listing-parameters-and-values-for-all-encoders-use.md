@@ -1,21 +1,21 @@
 ---
-description: Nell'applicazione console seguente sono elencati tutti i parametri supportati dai vari codificatori installati nel computer.
+description: L'applicazione console seguente elenca tutti i parametri supportati dai vari codificatori installati nel computer.
 ms.assetid: c80ad013-0b92-461f-8714-4b6d0cb6de0d
 title: Elenco di parametri e valori per tutti i codificatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fdaf522193f1074a28fe9f5ebb8a7afc2bade0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4545c23522b2f129d858dab03e8e2b80941426a36758df5ab60850ca9e81974
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248500"
 ---
 # <a name="listing-parameters-and-values-for-all-encoders"></a>Elenco di parametri e valori per tutti i codificatori
 
-Nell'applicazione console seguente sono elencati tutti i parametri supportati dai vari codificatori installati nel computer. La funzione Main chiama [**GetImageEncoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) per individuare i codificatori disponibili. Per ogni codificatore disponibile, la funzione Main chiama la funzione di supporto ShowAllEncoderParameters.
+L'applicazione console seguente elenca tutti i parametri supportati dai vari codificatori installati nel computer. La funzione principale chiama [**GetImageEncoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) per individuare i codificatori disponibili. Per ogni codificatore disponibile, la funzione principale chiama la funzione helper ShowAllEncoderParameters.
 
-La funzione ShowAllEncoderParameters chiama il metodo [**Image:: getencoderparameter**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlist) per individuare i parametri supportati da un codificatore specificato. Per ogni parametro supportato, la funzione elenca la categoria, il tipo di dati e il numero di valori. La funzione ShowAllEncoderParameters si basa su due funzioni helper: EncoderParameterCategoryFromGUID e ValueTypeFromULONG.
+La funzione ShowAllEncoderParameters chiama il [**metodo Image::GetEncoderParameterList**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlist) per individuare i parametri supportati da un codificatore specificato. Per ogni parametro supportato, la funzione elenca la categoria, il tipo di dati e il numero di valori. La funzione ShowAllEncoderParameters si basa su due funzioni helper: EncoderParameterCategoryFromGUID e ValueTypeFromULONG.
 
 
 ```
@@ -182,7 +182,7 @@ HRESULT ValueTypeFromULONG(ULONG index, WCHAR* strValueType, UINT maxChars)
 
 
 
-Quando si esegue l'applicazione console precedente, si otterrà un output simile al seguente:
+Quando si esegue l'applicazione console precedente, si ottiene un output simile al seguente:
 
 
 ```
@@ -239,7 +239,7 @@ image/png
 -   Il codificatore JPEG supporta le categorie di parametri Transformation, Quality, LuminanceTable e ChrominanceTable.
 -   Il codificatore TIFF supporta le categorie di parametri Compression, ColorDepth e SaveFlag.
 
-È anche possibile visualizzare il numero di valori accettabili per ogni categoria di parametri. Si può notare, ad esempio, che la categoria di parametri ColorDepth (codec TIFF) ha cinque valori di tipo **ULONG**. Il codice seguente elenca questi cinque valori. Si supponga che **pEncoderParameters** sia un puntatore a un oggetto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) che rappresenta il codificatore TIFF.
+È anche possibile visualizzare il numero di valori accettabili per ogni categoria di parametri. Ad esempio, è possibile vedere che la categoria di parametri ColorDepth (codec TIFF) ha cinque valori di tipo **ULONG**. Il codice seguente elenca questi cinque valori. Si supponga **che pEncoderParameters sia** un puntatore a un [**oggetto EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) che rappresenta il codificatore TIFF.
 
 
 ```
@@ -272,18 +272,18 @@ The allowable values for ColorDepth are
 
 
 > [!Note]  
-> In alcuni casi, i valori in un oggetto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) sono i valori numerici degli elementi dell'enumerazione [**EncoderValue**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) . Tuttavia, i numeri nell'elenco precedente non sono correlati all'enumerazione **EncoderValue** . I numeri indicano 1 bit per pixel, 2 bit per pixel e così via.
+> In alcuni casi, i valori in un [**oggetto EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) sono i valori numerici degli elementi dell'enumerazione [**EncoderValue.**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) Tuttavia, i numeri nell'elenco precedente non sono correlati **all'enumerazione EncoderValue.** I numeri sono 1 bit per pixel, 2 bit per pixel e così via.
 
  
 
-Se si scrive codice simile all'esempio precedente per esaminare i valori consentiti per le altre categorie di parametri, si otterrà un risultato simile al seguente.
+Se si scrive codice simile all'esempio precedente per esaminare i valori consentiti per le altre categorie di parametri, si o ottiene un risultato simile al seguente.
 
 
 
 | Parametro del codificatore JPEG | Valori consentiti                                                                                                                                                                                                 |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Trasformazione         | EncoderValueTransformRotate90 EncoderValueTransformRotate180<br/>  EncoderValueTransformRotate270<br/>  EncoderValueTransformFlipHorizontal<br/>  EncoderValueTransformFlipVertical<br/> |
-| Qualità                | da 0 a 100                                                                                                                                                                                                    |
+| Qualità                | Da 0 a 100                                                                                                                                                                                                    |
 
 
 
@@ -302,7 +302,7 @@ Se si scrive codice simile all'esempio precedente per esaminare i valori consent
  
 
 > [!Note]  
-> Se la larghezza e l'altezza di un'immagine JPEG sono multipli di 16, è possibile applicare le trasformazioni consentite dalla categoria di parametri EncoderTransformation, ad esempio la rotazione di 90 gradi, senza perdita di informazioni.
+> Se la larghezza e l'altezza di un'immagine JPEG sono multipli di 16, è possibile applicare qualsiasi trasformazione consentita dalla categoria di parametri EncoderTransformation (ad esempio, una rotazione di 90 gradi) senza perdita di informazioni.
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_GPU_DESCRIPTOR_HANDLE (D3dx12. h)
-description: Struttura helper per consentire l'inizializzazione semplificata di una \_ \_ struttura di handle descrittore GPU D3D12 \_ .
+title: CD3DX12_GPU_DESCRIPTOR_HANDLE struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura DESCRIPTOR HANDLE della GPU D3D12. \_ \_ \_
 ms.assetid: 6E405AD6-D370-4B87-849A-C52D64C79BF7
 keywords:
-- Struttura CD3DX12_GPU_DESCRIPTOR_HANDLE
+- CD3DX12_GPU_DESCRIPTOR_HANDLE struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 429d41d401b7d3e928bc4ab76850b36ae41b1e8a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d8039b20be8898c7bc81e57926ab82cd662d9e8a702d2d7a720915a1e35bcc93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461001"
 ---
-# <a name="cd3dx12_gpu_descriptor_handle-structure"></a>\_Struttura dell' \_ handle descrittore GPU CD3DX12 \_
+# <a name="cd3dx12_gpu_descriptor_handle-structure"></a>Struttura \_ \_ DESCRIPTOR HANDLE CD3DX12 GPU \_
 
-Struttura helper per consentire l'inizializzazione semplificata di una struttura di [**\_ \_ \_ handle descrittore GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) .
+Struttura helper per consentire una facile inizializzazione di una [**struttura \_ \_ DESCRIPTOR \_ HANDLE della GPU D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,141 +54,141 @@ struct CD3DX12_GPU_DESCRIPTOR_HANDLE  : public D3D12_GPU_DESCRIPTOR_HANDLE{
 
 <dl> <dt>
 
-**\_ \_ Handle descrittore GPU CD3DX12 \_ ()**
+**CD3DX12 \_ GPU \_ DESCRIPTOR \_ HANDLE()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ \_ handle descrittore della GPU CD3DX12 \_ .
+Crea una nuova istanza non inizializzata di un HANDLE DESCRITTORE GPU CD3DX12. \_ \_ \_
 
 </dd> <dt>
 
-**\_ \_ handle descrittore GPU CD3DX12 esplicito \_ (const D3D12 \_ GPU \_ handle descrittore \_ &o)**
+**HANDLE descrittore GPU CD3DX12 \_ \_ \_ esplicito(const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &o)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ \_ handle descrittore della GPU CD3DX12 \_ , inizializzato con il contenuto di un'altra struttura dell' [**\_ \_ \_ handle del descrittore**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) della GPU D3D12.
+Crea una nuova istanza di un HANDLE DESCRIPTOR CD3DX12 GPU, inizializzato con il contenuto di un'altra struttura \_ \_ \_ [**\_ \_ DESCRIPTOR \_ HANDLE della GPU D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle)
 
 </dd> <dt>
 
-**\_ \_ Handle descrittore GPU CD3DX12 \_ ( \_ impostazione predefinita CD3DX12)**
+**HANDLE DESCRITTORE GPU CD3DX12 (IMPOSTAZIONE PREDEFINITA \_ \_ \_ CD3DX12) \_**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ \_ handle descrittore della GPU CD3DX12 \_ , inizializzato con parametri predefiniti (imposta il puntatore su zero).
+Crea una nuova istanza di un HANDLE DESCRIPTOR CD3DX12 GPU, inizializzato con parametri predefiniti \_ \_ \_ (imposta il puntatore su zero).
 
 </dd> <dt>
 
-**\_ \_ Handle descrittore GPU CD3DX12 \_ (const D3D12 \_ GPU \_ handle descrittore \_ &other, int offsetScaledByIncrementSize)**
+**CD3DX12 \_ \_ GPU DESCRIPTOR \_ HANDLE(const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &other, INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ \_ handle descrittore della GPU CD3DX12 \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di UN HANDLE DESCRITTORE \_ GPU CD3DX12, \_ \_ inizializzando i parametri seguenti:
 
-\_ \_ Handle descrittore GPU D3D12 \_ &altro
+D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &altro
 
-INT offsetScaledByIncrementSize: numero di incrementi in base a cui eseguire l'offset.
+INT offsetScaledByIncrementSize: numero di incrementi di cui eseguire l'offset.
 
 </dd> <dt>
 
-**\_ \_ Handle descrittore GPU CD3DX12 \_ (const D3D12 \_ descrizione della GPU \_ \_ handle &other, int offsetInDescriptors, uint descriptorIncrementSize)**
+**CD3DX12 \_ \_ GPU DESCRIPTOR \_ HANDLE(const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &other, INT offsetInDescriptors, UINT descriptorIncrementSize)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ \_ handle descrittore della GPU CD3DX12 \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di UN HANDLE DESCRITTORE \_ GPU CD3DX12, \_ \_ inizializzando i parametri seguenti:
 
-\_ \_ Handle descrittore GPU D3D12 \_ &altro
+D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &altro
 
-INT offsetInDescriptors: numero di descrittori in base a cui incrementare.
+INT offsetInDescriptors: numero di descrittori di cui eseguire l'incremento.
 
-UINT descriptorIncrementSize: valore in base al quale incrementare per ogni descrittore, inclusa la spaziatura interna.
+UINT descriptorIncrementSize: quantità di incremento per ogni descrittore, inclusa la spaziatura interna.
 
 </dd> <dt>
 
-**Offset (INT offsetInDescriptors, UINT descriptorIncrementSize)**
+**Offset(INT offsetInDescriptors, UINT descriptorIncrementSize)**
 </dt> <dd>
 
-Imposta l'offset in base al numero specificato di descrittori e alla quantità di incremento per ogni descrittore. USA i parametri seguenti:
+Imposta l'offset in base al numero specificato di descrittori e alla quantità da incrementare per ogni descrittore. Usa i parametri seguenti:
 
-INT offsetInDescriptors: numero di descrittori in base a cui incrementare.
+INT offsetInDescriptors: numero di descrittori di cui eseguire l'incremento.
 
-UINT descriptorIncrementSize: valore in base al quale incrementare per ogni descrittore, inclusa la spaziatura interna.
+UINT descriptorIncrementSize: quantità di incremento per ogni descrittore, inclusa la spaziatura interna.
 
 </dd> <dt>
 
-**Offset (INT offsetScaledByIncrementSize)**
+**Offset(INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Imposta l'offset in base al numero di incrementi specificato. USA i parametri seguenti:
+Imposta l'offset in base al numero specificato di incrementi. Usa i parametri seguenti:
 
-INT offsetScaledByIncrementSize: numero di incrementi in base a cui eseguire l'offset.
+INT offsetScaledByIncrementSize: numero di incrementi di cui eseguire l'offset.
 
 </dd> <dt>
 
-**operatore inline = = ( \_ in \_ const D3D12 \_ GPU \_ descrittore \_ handle& altro) const**
+**inline operator==( \_ In \_ const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE& other) const**
 </dt> <dd>
 
-Verifica l'uguaglianza tra l'handle descrittore della GPU CD3DX12 corrente e l'handle descrittore GPU \_ \_ \_ D3D12 specificato \_ o l'handle del \_ \_ \_ \_ descrittore della GPU CD3DX12 \_ .
+Verifica l'uguaglianza tra l'handle del descrittore GPU CD3DX12 corrente e l'HANDLE descrittore \_ \_ \_ GPU D3D12 specificato o \_ \_ \_ CD3DX12 \_ GPU \_ DESCRIPTOR \_ HANDLE.
 
 </dd> <dt>
 
-**operatore inline! = ( \_ in \_ const D3D12 \_ GPU \_ descrittor \_ handle& other) const**
+**operatore inline!=( \_ In \_ const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE& other) const**
 </dt> <dd>
 
-Verifica la disuguaglianza tra l' \_ handle descrittore della GPU CD3DX12 corrente e l'handle descrittore \_ della GPU \_ D3D12 specificato \_ o l'handle del \_ \_ \_ \_ descrittore della GPU CD3DX12 \_ .
+Verifica la disuguaglianza tra l'handle del descrittore GPU CD3DX12 corrente e l'HANDLE descrittore \_ \_ \_ GPU D3D12 specificato o \_ \_ \_ CD3DX12 \_ GPU \_ DESCRIPTOR \_ HANDLE.
 
 </dd> <dt>
 
-**operator = (const D3D12 \_ GPU \_ descrittore \_ handle &altro)**
+**operator=(const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &other)**
 </dt> <dd>
 
-Imposta l'handle descrittore della GPU CD3DX12 corrente sugli stessi valori dell'handle del descrittore della GPU \_ \_ \_ D3D12 specificato \_ o dell'handle del \_ \_ \_ \_ descrittore della GPU CD3DX12 \_ .
+Imposta l'handle del DESCRITTOre GPU CD3DX12 corrente sullo stesso valore dell'HANDLE descrittore \_ \_ \_ GPU D3D12 o \_ \_ \_ CD3DX12 \_ GPU \_ DESCRIPTOR \_ HANDLE specificato.
 
 </dd> <dt>
 
-**inline InitOffsetted ( \_ in \_ const D3D12 \_ GPU \_ descrittor \_ handle &base, int offsetScaledByIncrementSize)**
+**inline InitOffsetted( \_ In \_ const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &base, INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Inizializza una struttura di [**\_ \_ \_ handle del descrittore della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con il numero specificato di elementi. USA i parametri seguenti:
+Inizializza una struttura [**\_ \_ DESCRIPTOR \_ HANDLE della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con il numero specificato di elementi. Usa i parametri seguenti:
 
-\_In \_ const D3D12 \_ GPU \_ descrittor \_ handle &base: l'indirizzo di base da cui eseguire l'offset.
+\_In \_ const D3D12 \_ GPU DESCRIPTOR HANDLE &base: indirizzo di base da cui eseguire \_ \_ l'offset.
 
-INT offsetScaledByIncrementSize: numero di incrementi in base a cui eseguire l'offset.
+INT offsetScaledByIncrementSize: numero di incrementi di cui eseguire l'offset.
 
 </dd> <dt>
 
-**inline InitOffsetted ( \_ in \_ const D3D12 \_ GPU \_ descrittor \_ handle &base, int offsetInDescriptors, uint descriptorIncrementSize)**
+**inline InitOffsetted( \_ In \_ const D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &base, INT offsetInDescriptors, UINT descriptorIncrementSize)**
 </dt> <dd>
 
-Inizializza una struttura di [**\_ \_ \_ handle del descrittore della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con un offset, usando il numero specificato di descrittori della dimensione specificata. USA i parametri seguenti:
+Inizializza una [**struttura \_ \_ DESCRIPTOR \_ HANDLE della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con un offset, usando il numero specificato di descrittori delle dimensioni specificate. Usa i parametri seguenti:
 
-\_In \_ const D3D12 \_ GPU \_ descrittor \_ handle &base: l'indirizzo di base da cui eseguire l'offset.
+\_In \_ const D3D12 \_ GPU DESCRIPTOR HANDLE &base: indirizzo di base da cui eseguire \_ \_ l'offset.
 
-INT offsetInDescriptors: numero di descrittori in base a cui eseguire l'offset.
+INT offsetInDescriptors: numero di descrittori in base al quale eseguire l'offset.
 
-UINT descriptorIncrementSize: valore in base al quale incrementare per ogni descrittore, inclusa la spaziatura interna.
+UINT descriptorIncrementSize: quantità di incremento per ogni descrittore, inclusa la spaziatura interna.
 
 </dd> <dt>
 
-**static inline InitOffsetted ( \_ out \_ D3D12 \_ GPU \_ descrittore handle \_ &handle, \_ in \_ const D3D12 \_ GPU \_ descrittore \_ &base, int offsetScaledByIncrementSize)**
+**static inline InitOffsetted( \_ Out \_ D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &handle, In \_ \_ const D3D12 \_ GPU \_ DESCRIPTOR HANDLE &\_ base, INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Inizializza una struttura di [**\_ \_ \_ handle del descrittore della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con un offset, usando il numero specificato di descrittori della dimensione specificata. USA i parametri seguenti:
+Inizializza una [**struttura \_ \_ DESCRIPTOR \_ HANDLE della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con un offset, usando il numero specificato di descrittori delle dimensioni specificate. Usa i parametri seguenti:
 
-\_Handle \_ \_ \_ del descrittore D3D12 della gpu in uscita \_ &handle: restituisce l' \_ \_ handle descrittore della GPU D3D12 risultante \_ .
+\_Out \_ D3D12 \_ GPU \_ DESCRIPTOR HANDLE &handle: restituisce l'handle del descrittore \_ GPU D3D12 \_ \_ \_ risultante.
 
-\_In \_ const D3D12 \_ GPU \_ descrittor \_ handle &base: l'indirizzo di base da cui eseguire l'offset.
+\_In \_ const D3D12 \_ GPU DESCRIPTOR HANDLE &base: indirizzo di base da cui eseguire \_ \_ l'offset.
 
-INT offsetScaledByIncrementSize: numero di incrementi in base a cui eseguire l'offset.
+INT offsetScaledByIncrementSize: numero di incrementi di cui eseguire l'offset.
 
 </dd> <dt>
 
-**static inline InitOffsetted ( \_ out \_ D3D12 \_ GPU \_ descrittore handle \_ &handle, \_ in \_ const D3D12 \_ GPU \_ descrittor handle \_ &base, int offsetInDescriptors, uint descriptorIncrementSize)**
+**static inline InitOffsetted( \_ Out \_ D3D12 \_ GPU \_ DESCRIPTOR \_ HANDLE &handle, In \_ \_ const D3D12 \_ GPU \_ DESCRIPTOR HANDLE &\_ base, INT offsetInDescriptors, UINT descriptorIncrementSize)**
 </dt> <dd>
 
-Inizializza una struttura di [**\_ \_ \_ handle del descrittore della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con un offset, usando il numero specificato di descrittori della dimensione specificata. USA i parametri seguenti:
+Inizializza una [**struttura \_ \_ DESCRIPTOR \_ HANDLE della GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) con un offset, usando il numero specificato di descrittori delle dimensioni specificate. Usa i parametri seguenti:
 
-\_Handle \_ \_ \_ del descrittore D3D12 della gpu in uscita \_ &handle: restituisce l' \_ \_ handle descrittore della GPU D3D12 risultante \_ .
+\_Out \_ D3D12 \_ GPU \_ DESCRIPTOR HANDLE &handle: restituisce l'handle del descrittore \_ GPU D3D12 \_ \_ \_ risultante.
 
-\_In \_ const D3D12 \_ GPU \_ descrittor \_ handle &base: l'indirizzo di base da cui eseguire l'offset.
+\_In \_ const D3D12 \_ GPU DESCRIPTOR HANDLE &base: indirizzo di base da cui eseguire \_ \_ l'offset.
 
-INT offsetInDescriptors: numero di descrittori in base a cui eseguire l'offset.
+INT offsetInDescriptors: numero di descrittori in base al quale eseguire l'offset.
 
-UINT descriptorIncrementSize: valore in base al quale incrementare per ogni descrittore, inclusa la spaziatura interna.
+UINT descriptorIncrementSize: quantità di incremento per ogni descrittore, inclusa la spaziatura interna.
 
 </dd> </dl>
 
@@ -198,7 +198,7 @@ UINT descriptorIncrementSize: valore in base al quale incrementare per ogni desc
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -206,7 +206,7 @@ UINT descriptorIncrementSize: valore in base al quale incrementare per ogni desc
 
 <dl> <dt>
 
-[**\_ \_ Handle descrittore GPU D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle)
+[**HANDLE DESCRITTORE GPU D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

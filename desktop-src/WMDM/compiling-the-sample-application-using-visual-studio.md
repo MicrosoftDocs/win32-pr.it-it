@@ -1,31 +1,31 @@
 ---
-title: Compilazione dell'applicazione di esempio con Visual Studio
-description: Compilazione dell'applicazione di esempio con Visual Studio
+title: Compilazione dell'applicazione di esempio tramite Visual Studio
+description: Compilazione dell'applicazione di esempio tramite Visual Studio
 ms.assetid: 78345cdb-5f0d-4ea8-9492-30386f5fa6ee
 keywords:
-- Windows Media Gestione dispositivi, esempi
+- Windows Gestione dispositivi multimediali, esempi
 - Gestione dispositivi, esempi
 - applicazioni desktop, esempi
-- Windows Media Gestione dispositivi, esempio di applicazione desktop
-- Esempio di Gestione dispositivi, applicazione desktop
+- Windows Media Device Manager, esempio di applicazione desktop
+- Gestione dispositivi, esempio di applicazione desktop
 - esempi, applicazioni desktop
 - esempi, compilazione con Visual Studio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf47f7a45ad17711145df810926fafb0f2aedcec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a8b32cd5931a88bc41b8eee7171b6ab4ab18b629a8108007d68094180efaa77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586252"
 ---
-# <a name="compiling-the-sample-application-using-visual-studio"></a>Compilazione dell'applicazione di esempio con Visual Studio
+# <a name="compiling-the-sample-application-using-visual-studio"></a>Compilazione dell'applicazione di esempio tramite Visual Studio
 
-Windows Media Gestione dispositivi SDK include una soluzione di Visual Studio compatibile con Microsoft Visual Studio 2005.
+L Windows SDK di Gestione dispositivi multimediali Visual Studio una soluzione compatibile con Microsoft Visual Studio 2005.
 
-Prima di compilare l'applicazione di esempio, è necessario rinominare il file di intestazione shtypes. h per evitare conflitti con un file con lo stesso nome trovato in Microsoft Platform SDK. Ad esempio, è possibile rinominare il *percorso di installazione di <SDK* > \\ WMFSDK11 \\ includere \\ shtypes. h nel percorso di installazione di <*SDK* > \\ WMFSDK11 \\ includere \\ shtypes. h. backup.
+Prima di compilare l'applicazione di esempio, è necessario rinominare il file di intestazione shtypes.h per evitare conflitti con un file con lo stesso nome disponibile in Microsoft Platform SDK. Ad esempio, è possibile rinominare <*SDK Installation Path* > \\ WMFSDK11 include \\ \\ shtypes.h in <SDK Installation *Path* > \\ WMFSDK11 \\ include \\ shtypes.h.backup.
 
-Per compilare l'applicazione, avviare un'istanza di Visual Studio 2005, aprire il file di soluzione WMDMApp. sln, disponibile nella cartella <*percorso di installazione SDK* > \\ WMFSDK11 \\ Apps \\ WMDMApp e scegliere l'opzione **Compila/Compila soluzione** . In questo modo vengono creati due file di progetto: il progetto helper, proghelp. vcproj, e l'applicazione principale WMDMApp. vcproj. Inoltre, creerà la DLL dell'helper di avanzamento e l'applicazione principale (WMDMApp.exe).
+Per compilare l'applicazione, avviare un'istanza di Visual Studio 2005, aprire il file di soluzione wmdmapp.sln, disponibile nella cartella percorso di installazione *dell'SDK*<> \\ WMFSDK11 apps wmdmapp e scegliere l'opzione \\ \\ **Compila/Compila** soluzione. Verranno creati due file di progetto: il progetto helper, proghelp.vcproj, nonché l'applicazione principale wmdmapp.vcproj. Inoltre, creerà la DLL helper di stato e l'applicazione principale (WMDMApp.exe).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -34,9 +34,9 @@ Per compilare l'applicazione, avviare un'istanza di Visual Studio 2005, aprire i
 [**Applicazione desktop di esempio**](sample-desktop-application.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Aggiunge risorse a una configurazione di sistema virtuale.
+description: Aggiunge risorse a una configurazione del sistema virtuale.
 ms.assetid: c2541571-74f0-48f8-997c-56c152980eea
 title: Metodo AddResourceSettings della classe CIM_VirtualSystemManagementService
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9563b1e8421dfa6724971450b117780435f6f39e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0387d3d46723aede1d0858d647a555db57b3de28e6c1fb5fbb68b6d56342fcb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646469"
 ---
-# <a name="addresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Metodo AddResourceSettings della classe CIM \_ VirtualSystemManagementService
+# <a name="addresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Metodo AddResourceSettings della classe \_ CIM VirtualSystemManagementService
 
-Aggiunge risorse a una configurazione di sistema virtuale.
+Aggiunge risorse a una configurazione del sistema virtuale.
 
-Quando viene applicato a una configurazione di sistema virtuale "stato", le risorse degli effetti collaterali vengono aggiunte al sistema virtuale attivo.
+Se applicato a una configurazione del sistema virtuale "state", come effetto collaterale le risorse vengono aggiunte al sistema virtuale attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,37 +44,37 @@ uint32 AddResourceSettings(
 
 <dl> <dt>
 
-*AffectedConfiguration* \[ in\]
+*AffectedConfiguration* \[ Pollici\]
 </dt> <dd>
 
 Riferimento [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) alla configurazione del sistema virtuale interessata.
 
 </dd> <dt>
 
-*ResourceSettings* \[ in\]
+*ResourceSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di stringhe, ognuna delle quali contiene un'istanza incorporata della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che descrive gli aspetti virtuali di una risorsa virtuale da aggiungere al sistema virtuale.
+Matrice di stringhe ognuna delle quali contiene un'istanza incorporata della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che descrive gli aspetti virtuali di una risorsa virtuale da aggiungere al sistema virtuale.
 
 </dd> <dt>
 
-*ResultingResourceSettings* \[ out\]
+*ResultingResourceSettings* \[ Cambio\]
 </dt> <dd>
 
 Matrice di riferimenti a istanze della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che rappresentano gli aspetti virtuali delle risorse virtuali aggiunte.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un processo. In questo caso, le istanze della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che rappresentano le impostazioni delle risorse aggiunte sono disponibili tramite Association **CIM \_ ConreteComponent** dall'istanza della classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) che rappresenta la configurazione del sistema virtuale interessata.
+Se l'operazione è a esecuzione lunga, è possibile che venga restituito un processo. In questo caso, le istanze della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che rappresentano le impostazioni delle risorse aggiunte sono disponibili tramite l'associazione **CIM \_ ConreteComponent** dall'istanza della classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) che rappresenta la configurazione del sistema virtuale interessata.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -84,25 +84,25 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -112,9 +112,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -123,7 +123,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**](cim-virtualsystemmanagementservice.md)
+[**CIM \_ VirtualSystemManagementService**](cim-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

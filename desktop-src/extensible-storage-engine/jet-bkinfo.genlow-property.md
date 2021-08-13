@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_BKINFO. genLow'
-title: Proprietà JET_BKINFO. genLow
+description: 'Altre informazioni su: JET_BKINFO.genLow'
+title: JET_BKINFO.genLow
 TOCTitle: 'genLow property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_BKINFO.genLow
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_bkinfo.genlow(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1b72fed43acf1a294a1a997734becd65d9e3e33
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ea9dda58f859e7c0a3ee9504c6602513157652588f8a746bb6753782ce7d69a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118255605"
 ---
-# <a name="jet_bkinfogenlow-property"></a>Proprietà JET_BKINFO. genLow
+# <a name="jet_bkinfogenlow-property"></a>JET_BKINFO.genLow
 
-Ottiene la generazione minima del backup.
+Ottiene la bassa generazione del backup.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public int genLow { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_BKINFO](./jet-bkinfo-structure2.md)
+[JET_BKINFO struttura](./jet-bkinfo-structure2.md)
 
-[Membri JET_BKINFO](./jet-bkinfo-members.md)
+[JET_BKINFO membri](./jet-bkinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

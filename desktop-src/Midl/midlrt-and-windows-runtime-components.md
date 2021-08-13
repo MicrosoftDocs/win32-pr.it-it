@@ -1,51 +1,51 @@
 ---
-title: Componenti di MIDLRT e Windows Runtime
-description: Viene illustrato come creare i file di metadati (con estensione winmd) che rappresentano l'API per i componenti Windows Runtime personalizzati.
+title: Componenti MIDLRT e Windows Runtime
+description: Illustra come creare file di metadati (con estensione winmd) che rappresentano l'API per i componenti Windows Runtime.
 ms.assetid: 7830A5DB-9696-4A93-948B-51DA46A5143C
 keywords:
-- MIDL compilatore MIDL
-- MIDL Compiler MIDL, MIDL e Windows Runtime WinRT
+- MIDL del compilatore MIDL
+- MidL del compilatore MIDL, MIDL e Windows Runtime winrt
 - Windows Runtime MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4edf4d40b3fc5b0a5ed8eeb9b5fd47a3b87c4543
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 6f827178216bbb7e78c16f2c11fa68b29b2eb50cfc0714a0ed53b02ce5bdc4ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104517217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642905"
 ---
-# <a name="midlrt-and-windows-runtime-components"></a>Componenti di MIDLRT e Windows Runtime
+# <a name="midlrt-and-windows-runtime-components"></a>Componenti MIDLRT e Windows Runtime
 
-Viene illustrato come creare i file di metadati (con estensione winmd) che rappresentano l'API per i componenti Windows Runtime personalizzati.
+Illustra come creare file di metadati (con estensione winmd) che rappresentano l'API per i componenti Windows Runtime.
 
 
-Usare il compilatore MIDLRT per compilare file di metadati (con estensione winmd) per i componenti Windows Runtime personalizzati.
+Usare il compilatore MIDLRT per compilare file di metadati (con estensione winmd) per i componenti Windows Runtime.
 
-Quando vengono generati i file di metadati, è possibile comprimerli in un pacchetto più efficiente tramite l'utilità MDMERGE. Per altre informazioni, vedere [MDMERGE e file di metadati](mdmerge-and-metadata-files.md).
+Quando vengono generati i file di metadati, è possibile componirli in un pacchetto più efficiente usando l'utilità MDMERGE. Per altre informazioni, vedere [MDMERGE e i file di metadati.](mdmerge-and-metadata-files.md)
 
 
 L'uso di MIDLRT è simile all'uso del compilatore MIDL. Eseguire MIDLRT dalla riga di comando usando il comando seguente:
 
-**midlrt**  *<* **Opzioni** _>_ di **filename. idl**
+**midlrt**  *<* **opzioni** _>_ **filename.idl**
 
-dove * < ***Opzioni** _>_ rappresenta le opzioni della riga di comando che si desidera utilizzare e filename. idl è il nome del file IDL da compilare.
+dove *<***opzioni** rappresenta le opzioni della riga di comando da usare e Filename.idl è il nome del _>_ file IDL da compilare.
 
 
-Nell'elenco seguente vengono illustrate le opzioni della riga di comando utilizzate da MIDLRT.EXE.
+L'elenco seguente mostra le opzioni della riga di comando MIDLRT.EXE.
 
 <dl>
 
-[**\_classe/enum**](-enum-class.md)  
-[**\_dir/Metadata**](-metadata-dir.md)  
+[**Classe \_ /enum**](-enum-class.md)  
+[**/metadata \_ dir**](-metadata-dir.md)  
 [**/nomidl**](-nomidl.md)  
 [**/nomd**](-nomd.md)  
-[**\_prefisso/NS**](-ns-prefix.md)  
-[**/WinMD**](-winmd.md)  
-[**/WinRT**](-winrt.md)  
+[**Prefisso \_ /ns**](-ns-prefix.md)  
+[**/winmd**](-winmd.md)  
+[**/winrt**](-winrt.md)  
 </dl>
 
-Un elenco completo delle opzioni e delle opzioni del compilatore MIDLRT è disponibile quando si usa il compilatore MIDLRT [**/Help**](-help-.md) e/? interruttori. Le opzioni sono organizzate in base alle categorie. Per altre informazioni, vedere la Guida di [riferimento a MIDL Command-Line](midl-command-line-reference.md).
+Un elenco completo delle opzioni e delle opzioni del compilatore MIDLRT è disponibile quando si usa il compilatore MIDLRT [**/help**](-help-.md) e /? Interruttori. I commutatori sono organizzati in base alle categorie. Per altre informazioni, vedere [Midl Command-Line Reference](midl-command-line-reference.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

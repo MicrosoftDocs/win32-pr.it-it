@@ -1,10 +1,10 @@
 ---
-title: Enumerazione D3DX11_FILTER_FLAG (D3DX11tex. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Flag di filtro della trama.
+title: D3DX11_FILTER_FLAG enumerazione (D3DX11tex.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Flag di filtro delle trame.
 ms.assetid: 083a6a19-1933-4831-9501-36d4867f3dce
 keywords:
-- Enumerazione D3DX11_FILTER_FLAG Direct3D 11
-- Puntatore di enumerazione LPD3DX11_FILTER_FLAG Direct3D 11
+- D3DX11_FILTER_FLAG enumerazione Direct3D 11
+- LPD3DX11_FILTER_FLAG puntatore di enumerazione Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -15,21 +15,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f2105970efb7f2ec07464d8a902df49d8f75bc2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b02ddbf1785d1032ab28a990d022950b2f28acc4b032ecdc9a72d5704665c03b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118537002"
 ---
-# <a name="d3dx11_filter_flag-enumeration"></a>\_Enumerazione flag di filtro D3DX11 \_
+# <a name="d3dx11_filter_flag-enumeration"></a>Enumerazione FILTER FLAG D3DX11 \_ \_
 
 > [!Note]  
 > La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 
  
 
-Flag di filtro della trama.
+Flag di filtro delle trame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,107 +59,107 @@ typedef enum D3DX11_FILTER_FLAG {
 
 <dl> <dt>
 
-<span id="D3DX11_FILTER_NONE"></span><span id="d3dx11_filter_none"></span>**\_Filtro D3DX11 \_ None**
+<span id="D3DX11_FILTER_NONE"></span><span id="d3dx11_filter_none"></span>**FILTRO D3DX11 \_ \_ NESSUNO**
 </dt> <dd>
 
-Non verrà eseguita alcuna operazione di ridimensionamento o filtro. Si presuppone che i pixel all'esterno dei limiti dell'immagine di origine siano neri trasparenti.
+Non verrà fatto alcun ridimensionamento o filtro. Si presuppone che i pixel all'esterno dei limiti dell'immagine di origine siano di colore nero trasparente.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_POINT"></span><span id="d3dx11_filter_point"></span>**\_Punto di filtro D3DX11 \_**
+<span id="D3DX11_FILTER_POINT"></span><span id="d3dx11_filter_point"></span>**PUNTO DI FILTRO D3DX11 \_ \_**
 </dt> <dd>
 
-Ogni pixel di destinazione viene calcolato eseguendo il campionamento del pixel più vicino dall'immagine di origine.
+Ogni pixel di destinazione viene calcolato tramite il campionamento del pixel più vicino dall'immagine di origine.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_LINEAR"></span><span id="d3dx11_filter_linear"></span>**\_Filtro D3DX11 \_ lineare**
+<span id="D3DX11_FILTER_LINEAR"></span><span id="d3dx11_filter_linear"></span>**D3DX11 \_ FILTER \_ LINEAR**
 </dt> <dd>
 
-Ogni pixel di destinazione viene calcolato eseguendo il campionamento dei quattro pixel più vicini dall'immagine di origine. Questo filtro funziona meglio quando la scala su entrambi gli assi è minore di due.
+Ogni pixel di destinazione viene calcolato tramite il campionamento dei quattro pixel più vicini dall'immagine di origine. Questo filtro funziona meglio quando la scala su entrambi gli assi è minore di due.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_TRIANGLE"></span><span id="d3dx11_filter_triangle"></span>**\_Triangolo filtro \_ D3DX11**
+<span id="D3DX11_FILTER_TRIANGLE"></span><span id="d3dx11_filter_triangle"></span>**TRIANGOLO FILTRO D3DX11 \_ \_**
 </dt> <dd>
 
-Ogni pixel nell'immagine di origine contribuisce ugualmente all'immagine di destinazione. Questo è il più lento dei filtri.
+Ogni pixel nell'immagine di origine contribuisce equamente all'immagine di destinazione. Questo è il più lento dei filtri.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_BOX"></span><span id="d3dx11_filter_box"></span>**\_Casella filtro \_ D3DX11**
+<span id="D3DX11_FILTER_BOX"></span><span id="d3dx11_filter_box"></span>**CASELLA FILTRO D3DX11 \_ \_**
 </dt> <dd>
 
-Ogni pixel viene calcolato calcolando la media di una casella 2x2 (X2) di pixel dall'immagine di origine. Questo filtro funziona solo quando le dimensioni della destinazione sono la metà di quelle dell'origine, come nel caso di mipmap.
+Ogni pixel viene calcolato mediamente da una casella di 2x2(x2) di pixel dall'immagine di origine. Questo filtro funziona solo quando le dimensioni della destinazione sono metà di quelle dell'origine, come nel caso delle mipmap.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_MIRROR_U"></span><span id="d3dx11_filter_mirror_u"></span>**D3DX11 \_ filtro \_ mirror \_ U**
+<span id="D3DX11_FILTER_MIRROR_U"></span><span id="d3dx11_filter_mirror_u"></span>**D3DX11 \_ FILTER \_ MIRROR \_ U**
 </dt> <dd>
 
-I pixel al di fuori del bordo della trama sull'asse u devono essere speculari, non incapsulati.
+I pixel al di fuori del bordo della trama sull'asse u devono essere speculari, non di cui è stato eseguito il wrapping.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_MIRROR_V"></span><span id="d3dx11_filter_mirror_v"></span>**\_Mirror del filtro D3DX11 \_ \_ V**
+<span id="D3DX11_FILTER_MIRROR_V"></span><span id="d3dx11_filter_mirror_v"></span>**D3DX11 \_ FILTER \_ MIRROR \_ V**
 </dt> <dd>
 
-I pixel al di fuori del bordo della trama sull'asse v devono essere rispecchiati, non incapsulati.
+I pixel al di fuori del bordo della trama sull'asse v devono essere speculari, non di cui è stato eseguito il wrapping.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_MIRROR_W"></span><span id="d3dx11_filter_mirror_w"></span>**\_Mirror filtro \_ D3DX11 \_ W**
+<span id="D3DX11_FILTER_MIRROR_W"></span><span id="d3dx11_filter_mirror_w"></span>**D3DX11 \_ FILTER \_ MIRROR \_ W**
 </dt> <dd>
 
-I pixel al di fuori del bordo della trama sull'asse w devono essere speculari, non incapsulati.
+I pixel al di fuori del bordo della trama sull'asse w devono essere speculari, non di cui è stato eseguito il wrapping.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_MIRROR"></span><span id="d3dx11_filter_mirror"></span>**\_Mirror del filtro D3DX11 \_**
+<span id="D3DX11_FILTER_MIRROR"></span><span id="d3dx11_filter_mirror"></span>**D3DX11 \_ FILTER \_ MIRROR**
 </dt> <dd>
 
-Specificare questo flag equivale a specificare i flag D3DX Filter \_ mirror \_ \_ U, D3DX \_ Filter \_ mirror \_ V e D3DX \_ Filter \_ mirror \_ W.
+L'impostazione di questo flag è uguale a quando si specificano i flag D3DX \_ FILTER \_ MIRROR \_ U, D3DX FILTER MIRROR V e \_ \_ \_ D3DX \_ FILTER MIRROR \_ \_ W.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_DITHER"></span><span id="d3dx11_filter_dither"></span>**\_Dithering filtro D3DX11 \_**
+<span id="D3DX11_FILTER_DITHER"></span><span id="d3dx11_filter_dither"></span>**DITHERING FILTRO D3DX11 \_ \_**
 </dt> <dd>
 
-L'immagine risultante deve essere retinata usando un algoritmo di dithering ordinato 4x4. Questo errore si verifica quando si esegue la conversione da un formato a un altro.
+L'immagine risultante deve essere dithering usando un algoritmo dithering ordinato 4x4. Ciò si verifica quando si esegue la conversione da un formato a un altro.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_DITHER_DIFFUSION"></span><span id="d3dx11_filter_dither_diffusion"></span>**\_Diffusione del \_ dithering del filtro D3DX11 \_**
+<span id="D3DX11_FILTER_DITHER_DIFFUSION"></span><span id="d3dx11_filter_dither_diffusion"></span>**DIFFUSIONE DEL FILTRO D3DX11 \_ \_ \_**
 </dt> <dd>
 
-Quando si passa da un formato a un altro, è necessario diffonderne l'immagine.
+Eseguire il dithering diffuso sull'immagine quando si cambia da un formato a un altro.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_SRGB_IN"></span><span id="d3dx11_filter_srgb_in"></span>**\_Filtro D3DX11 \_ sRGB \_ in**
+<span id="D3DX11_FILTER_SRGB_IN"></span><span id="d3dx11_filter_srgb_in"></span>**D3DX11 \_ FILTER \_ SRGB \_ IN**
 </dt> <dd>
 
-I dati di input sono nello spazio colore RGB (sRGB) standard. Vedere la sezione Osservazioni.
+I dati di input si trova nello spazio colore RGB (sRGB) standard. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_SRGB_OUT"></span><span id="d3dx11_filter_srgb_out"></span>**D3DX11 \_ filtro \_ sRGB in \_ uscita**
+<span id="D3DX11_FILTER_SRGB_OUT"></span><span id="d3dx11_filter_srgb_out"></span>**D3DX11 \_ FILTER \_ SRGB \_ OUT**
 </dt> <dd>
 
-I dati di output sono nello spazio colore RGB (sRGB) standard. Vedere la sezione Osservazioni.
+I dati di output si trova nello spazio colore RGB (sRGB) standard. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-<span id="D3DX11_FILTER_SRGB"></span><span id="d3dx11_filter_srgb"></span>**D3DX11 \_ Filter \_ sRGB**
+<span id="D3DX11_FILTER_SRGB"></span><span id="d3dx11_filter_srgb"></span>**D3DX11 \_ FILTER \_ SRGB**
 </dt> <dd>
 
-Equivale a specificare il \_ filtro \_ D3DX \_ sRGB \| nel \_ filtro \_ D3DX \_ . Vedere la sezione Osservazioni.
+Come specificare D3DX \_ FILTER \_ SRGB \_ IN \| D3DX \_ FILTER \_ SRGB \_ OUT. Vedere la sezione Osservazioni.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-D3DX11 esegue automaticamente la correzione gamma (per convertire i dati di colore dallo spazio RGB allo spazio RGB standard) quando si caricano i dati della trama. Questa operazione viene eseguita automaticamente ad esempio quando i dati RGB vengono caricati da un file con estensione png in una trama sRGB. Usare i flag di filtro SRGB per indicare se non è necessario convertire i dati nello spazio sRGB.
+D3DX11 esegue automaticamente la correzione gamma (per convertire i dati di colore dallo spazio RGB allo spazio RGB standard) durante il caricamento dei dati di trama. Questa operazione viene eseguita automaticamente, ad esempio, quando i dati RGB vengono caricati da un file .png in una trama sRGB. Usare i flag di filtro SRGB per indicare se i dati non devono essere convertiti in spazio sRGB.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -167,7 +167,7 @@ D3DX11 esegue automaticamente la correzione gamma (per convertire i dati di colo
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX11tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX11tex.h</dt> </dl> |
 
 
 

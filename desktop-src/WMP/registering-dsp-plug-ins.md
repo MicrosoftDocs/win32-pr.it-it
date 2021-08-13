@@ -1,25 +1,25 @@
 ---
-title: Registrazione di plug-in DSP
-description: Registrazione di plug-in DSP
+title: Registrazione dei plug-in DSP
+description: Registrazione dei plug-in DSP
 ms.assetid: af264ff7-702b-4a49-a14d-ab8563a40c4e
 keywords:
-- Plug-in di Windows Media Player, voci del registro di sistema
-- plug-in, voci del registro di sistema
-- plug-in di elaborazione dei segnali digitali, voci del registro di sistema
-- Plug-in DSP, voci del registro di sistema
-- Registro di sistema, plug-in DSP
+- Windows Media Player plug-in, voci del Registro di sistema
+- plug-in, voci del Registro di sistema
+- plug-in di elaborazione del segnale digitale, voci del Registro di sistema
+- plug-in DSP, voci del Registro di sistema
+- registro, plug-in DSP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a64e7afd43cf242d57c0a9375c4cbda56e457ef1
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 7671c59dfe64094afbc5f0537bcae237b3812699f4db1a06519054b14ef295f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103956195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570381"
 ---
-# <a name="registering-dsp-plug-ins"></a>Registrazione di plug-in DSP
+# <a name="registering-dsp-plug-ins"></a>Registrazione dei plug-in DSP
 
-Per rendere disponibile il plug-in DSP in Windows Media Player è necessario creare le sottochiavi e le voci del registro di sistema seguenti nel computer dell'utente.
+Per rendere disponibile il plug-in DSP in Windows Media Player è necessario creare le seguenti sottochiavi e voci del Registro di sistema nel computer dell'utente.
 
 
 ```C++
@@ -33,22 +33,22 @@ Per rendere disponibile il plug-in DSP in Windows Media Player è necessario cre
 
 
 
-Nella sintassi del registro di sistema precedente, i simboli in corsivo sono segnaposto per i nomi e identificatori univoci globali (GUID) specifici per il plug-in DSP. Nella tabella seguente vengono descritti i segnaposto.
+Nella sintassi del Registro di sistema precedente i simboli in corsivo sono segnaposto per i nomi e gli identificatori univoci globali (GUID) specifici del plug-in DSP. Nella tabella seguente vengono descritti questi segnaposto.
 
 
 
 | Segnaposto               | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *PluginClsid*             | GUID che rappresenta l'identificatore di classe per la classe primaria del plug-in DSP. Si tratta della classe che implementa **IMediaObject**, **IPluginEnable** e possibilmente **ISpecifyPropertyPages**. In un plug-in in modalità duale, questa classe implementa anche **IMFTransform** e **IMFGetService**. Il GUID deve essere nel formato del registro di sistema, completo di parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/> |
-| *PluginClassFriendlyName* | Nome descrittivo per la classe primaria del plug-in DSP. Esempio: "classe ProsewareDSP"<br/>                                                                                                                                                                                                                                                                                                                                 |
-| *PluginModuleName*        | Percorso completo della DLL che implementa il plug-in DSP. Esempio: "C: \\ Program Files \\ Proseware \\ProsewareDsp.dll"<br/>                                                                                                                                                                                                                                                                                     |
-| *Threading*               | Stringa che specifica il modello di threading per il plug-in. Se il plug-in verrà eseguito con Windows Media Player 11 in Windows Vista, questa voce del registro di sistema deve essere uguale a "both". Se il plug-in viene eseguito in Windows XP o in sistemi operativi precedenti, la voce del registro di sistema può essere uguale a "Apartment" o "both".                                                                                           |
+| *PluginClsid*             | GUID che rappresenta l'identificatore di classe per la classe primaria del plug-in DSP. Si tratta della classe che implementa **IMediaObject**, **IPluginEnable** ed eventualmente **ISpecifyPropertyPages**. In un plug-in in modalità doppia questa classe implementa anche **IMFTransform** e **IMFGetService.** Questo GUID deve essere nel formato del Registro di sistema, con le parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/> |
+| *PluginClassFriendlyName* | Nome descrittivo per la classe primaria del plug-in DSP. Esempio: "ProsewareDSP Class"<br/>                                                                                                                                                                                                                                                                                                                                 |
+| *PluginModuleName*        | Percorso completo della DLL che implementa il plug-in DSP. Esempio: "C: \\ Programmi \\ Proseware \\ProsewareDsp.dll"<br/>                                                                                                                                                                                                                                                                                     |
+| *Threading*               | Stringa che specifica il modello di threading per il plug-in. Se il plug-in verrà eseguito con Windows Media Player 11 in Windows Vista, questa voce del Registro di sistema deve essere uguale a "Entrambi". Se il plug-in verrà eseguito in Windows XP o nei sistemi operativi precedenti, questa voce del Registro di sistema può essere uguale a "Apartment" o "Both".                                                                                           |
 
 
 
  
 
-Se il plug-in DSP implementa un'interfaccia personalizzata e se il plug-in viene eseguito in Windows Media Player 11 in Windows Vista, è necessario creare le sottochiavi e le voci del registro di sistema seguenti nel computer dell'utente.
+Se il plug-in DSP implementa un'interfaccia personalizzata e se il plug-in verrà eseguito in Windows Media Player 11 in Windows Vista, è necessario creare le sottochiavi e le voci del Registro di sistema seguenti nel computer dell'utente.
 
 
 ```C++
@@ -71,15 +71,15 @@ Se il plug-in DSP implementa un'interfaccia personalizzata e se il plug-in viene
 
 
 
-Nella sintassi del registro di sistema precedente, i simboli in corsivo sono segnaposto per nomi, valori numerici e identificatori univoci globali (GUID) specifici per il plug-in DSP. Nella tabella seguente vengono descritti i segnaposto.
+Nella sintassi del Registro di sistema precedente i simboli in corsivo sono segnaposto per nomi, valori numerici e IDENTIFICATORI UNIVOCI globali (GUID) specifici del plug-in DSP. Nella tabella seguente vengono descritti questi segnaposto.
 
 
 
 | Segnaposto           | Descrizione                                                                                                                                                                                                                                                                |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *ProxyStubClsid*      | GUID che rappresenta l'identificatore di classe per la classe che implementa i proxy e gli stub per le interfacce personalizzate del plug-in DSP. Il GUID deve essere nel formato del registro di sistema, completo di parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/> |
-| *ProxyStubModuleName* | Percorso completo della DLL che implementa le interfacce del proxy e dello stub per il plug-in DSP. Esempio: "C: \\ Program Files \\ Proseware \\ProsewareDspPS.dll"<br/>                                                                                               |
-| *CustomInterfaceId*   | GUID che rappresenta l'identificatore di interfaccia per un'interfaccia personalizzata implementata dal plug-in DSP. Il GUID deve essere nel formato del registro di sistema, completo di parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                           |
+| *ProxyStubClsid*      | GUID che rappresenta l'identificatore di classe per la classe che implementa i proxy e gli stub per le interfacce personalizzate del plug-in DSP. Questo GUID deve essere nel formato del Registro di sistema, con le parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/> |
+| *ProxyStubModuleName* | Percorso completo della DLL che implementa le interfacce proxy e stub per il plug-in DSP. Esempio: "C: \\ Programmi \\ Proseware \\ProsewareDspPS.dll"<br/>                                                                                               |
+| *CustomInterfaceId*   | GUID che rappresenta l'identificatore di interfaccia per un'interfaccia personalizzata implementata dal plug-in DSP. Questo GUID deve essere nel formato del Registro di sistema, con le parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                           |
 | *CustomInterfaceName* | Nome di un'interfaccia personalizzata implementata dal plug-in DSP. Esempio: "IProsewareDsp"<br/>                                                                                                                                                                  |
 | *NumberOfMethods*     | Numero di metodi, inclusi i metodi ereditati, definiti da un'interfaccia personalizzata. Esempio: "5"<br/>                                                                                                                                                                  |
 
@@ -87,7 +87,7 @@ Nella sintassi del registro di sistema precedente, i simboli in corsivo sono seg
 
  
 
-Se il plug-in DSP fornisce una pagina delle proprietà, è necessario creare le sottochiavi e le voci del registro di sistema seguenti nel computer dell'utente.
+Se il plug-in DSP fornisce una pagina delle proprietà, è necessario creare le seguenti sottochiavi e voci del Registro di sistema nel computer dell'utente.
 
 
 ```C++
@@ -101,15 +101,15 @@ Se il plug-in DSP fornisce una pagina delle proprietà, è necessario creare le 
 
 
 
-Nella sintassi del registro di sistema precedente, i simboli in corsivo sono segnaposto per i nomi e identificatori univoci globali (GUID) specifici per il plug-in DSP. Nella tabella seguente vengono descritti i segnaposto.
+Nella sintassi del Registro di sistema precedente i simboli in corsivo sono segnaposto per i nomi e gli identificatori univoci globali (GUID) specifici del plug-in DSP. Nella tabella seguente vengono descritti questi segnaposto.
 
 
 
 | Segnaposto                 | Descrizione                                                                                                                                                                                                                            |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *PropPageClsid*             | GUID che rappresenta l'identificatore di classe per la classe di pagine delle proprietà fornita dal plug-in DSP. Il GUID deve essere nel formato del registro di sistema, completo di parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/> |
-| *PropPageClassFriendlyName* | Nome descrittivo per la classe della pagina delle proprietà. Esempio: "classe della pagina delle proprietà di ProsewareDSP"<br/>                                                                                                                                     |
-| *PluginModuleName*          | Percorso completo della DLL che implementa il plug-in DSP. Esempio: "C: \\ Program Files \\ Proseware \\ProsewareDsp.dll"<br/>                                                                                               |
+| *PropPageClsid*             | GUID che rappresenta l'identificatore di classe per la classe della pagina delle proprietà fornita dal plug-in DSP. Questo GUID deve essere nel formato del Registro di sistema, con le parentesi graffe.<br/> Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/> |
+| *PropPageClassFriendlyName* | Nome descrittivo per la classe della pagina delle proprietà. Esempio: "ProsewareDSP Property Page Class"<br/>                                                                                                                                     |
+| *PluginModuleName*          | Percorso completo della DLL che implementa il plug-in DSP. Esempio: "C: \\ Programmi \\ Proseware \\ProsewareDsp.dll"<br/>                                                                                               |
 
 
 
@@ -117,15 +117,15 @@ Nella sintassi del registro di sistema precedente, i simboli in corsivo sono seg
 
 **Chiamata di IWMPPluginRegistrar**
 
-Oltre alle sottochiavi del registro di sistema e alle voci descritte nelle tabelle e negli elenchi precedenti, è necessario creare alcune voci e chiavi del registro di sistema chiamando [IWMPMediaPluginRegistrar:: WMPRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpregisterplayerplugin). Questo metodo esegue la registrazione necessaria per consentire a Windows Media Player di riconoscere il plug-in e presentarlo come opzione all'utente.
+Oltre alle sottochiavi e alle voci del Registro di sistema descritte negli elenchi e nelle tabelle precedenti, è necessario creare alcune chiavi e voci del Registro di sistema chiamando [IWMPMediaPluginRegistrar::WMPRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpregisterplayerplugin). Questo metodo esegue la registrazione necessaria per consentire Windows Media Player riconoscere il plug-in e presentarlo come opzione all'utente.
 
-Chiamare **IWMPMediaPluginRegistrar:: WMPRegisterPlayerPlugin** nella funzione **DllRegisterServer** del plug-in e chiamare [IWMPMediaPluginRegistrar:: WMPUnRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpunregisterplayerplugin) nella funzione **DllUnregisterServer** del plug-in. Per ottenere un puntatore a un'interfaccia **IWMPMediaPluginRegistrar** , chiamare **COCREATEINSTANCE**, passando CLSID \_ WMPMediaPluginRegistrar come ID classe. La costante CLSID \_ WMPMediaPluginRegistrar è definita in wmpservices. h.
+Chiamare **IWMPMediaPluginRegistrar::WMPRegisterPlayerPlugin** nella funzione **DllRegisterServer** del plug-in e [chiamare IWMPMediaPluginRegistrar::WMPUnRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpunregisterplayerplugin) nella funzione **DllUnregisterServer del** plug-in. Per ottenere un puntatore a **un'interfaccia IWMPMediaPluginRegistrar,** chiamare **CoCreateInstance** passando il CLSID \_ WMPMediaPluginRegistrar come ID classe. La costante CLSID \_ WMPMediaPluginRegistrar è definita in wmpservices.h.
 
-**Registrazione nella procedura guidata del plug-in DSP**
+**Registrazione nella Procedura guidata plug-in DSP**
 
-La procedura guidata plug-in DSP, inclusa nella Windows SDK, genera codice di esempio basato su Active Template Library (ATL). La funzione **DllRegisterServer** del plug-in di esempio chiama la funzione **RegisterServer** di ATL, che crea le sottochiavi e le voci del registro di sistema in base a due file di script del registro di sistema nel progetto di Visual Studio. Il file *ProjectName*. RGS contiene lo script per la registrazione della classe principale del plug-in e il file *NomeProgetto* . RGS contiene lo script per la registrazione della classe della pagina delle proprietà del plug-in. La funzione **DllRegisterServer** del plug-in di esempio chiama anche **IWMPPluginRegistrar:: WMPRegisterPlayerPlugin**.
+La procedura guidata del plug-in DSP, inclusa in Windows SDK, genera codice di esempio basato su Active Template Library (ATL). La funzione **DllRegisterServer** del plug-in di esempio chiama la funzione **RegisterServer** di ATL, che crea le sottochiavi e le voci del Registro di sistema in base a due file script del Registro di sistema nel Visual Studio progetto. Il file *ProjectName*.rgs contiene lo script per la registrazione della classe principale del plug-in e il file *ProjectName* PropPage.rgs contiene lo script per la registrazione della classe della pagina delle proprietà del plug-in. La funzione **DllRegisterServer** del plug-in di esempio chiama anche **IWMPPluginRegistrar::WMPRegisterPlayerPlugin**.
 
-La procedura guidata plug-in DSP genera anche il codice per un componente stub proxy che è un file con estensione dll autoregistrato. Il codice di registrazione per il file si trova in dlldata. cpp. Le **\_ routine dlldata** della macro si espandono in modo da includere un'implementazione di **DllRegisterServer**.
+La procedura guidata del plug-in DSP genera anche il codice per un componente proxy-stub che è un file di .dll autoregistrazione. Il codice di registrazione per il file si trova in dlldata.cpp. La macro **DLLDATA \_ ROUTINES si espande** per includere un'implementazione di **DllRegisterServer.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 

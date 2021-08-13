@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: JET_THREADSTATS. Metodo Create'
-title: JET_THREADSTATS. Metodo Create (Microsoft. ISAM. esent. Interop. vista)
+title: JET_THREADSTATS. Metodo Create (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'Create method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.Create(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.create(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: beaaee85fc0f6c331db1d813280d4b900e39fb54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a3450835a90c3e21902a6097d9cfb672c51769cc00810d86e338bef40ce2565
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103758492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118251903"
 ---
 # <a name="jet_threadstatscreate-method"></a>JET_THREADSTATS. Metodo Create
 
-Crea una nuova struttura di [JET_THREADSTATS](./jet-threadstats-structure2.md) con il valore specificato.
+Creare un nuovo [JET_THREADSTATS](./jet-threadstats-structure2.md) struct con il valore specificato.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,63 +81,63 @@ public static JET_THREADSTATS Create(
 #### <a name="parameters"></a>Parametri
 
   - cPageReferenced  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Numero di pagine visitate.
 
 <!-- end list -->
 
   - cPageRead  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Numero di pagine lette.
 
 <!-- end list -->
 
   - cPagePreread  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Numero di pagine prelette.
+    Numero di pagine già lette.
 
 <!-- end list -->
 
   - cPageDirtied  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    TNumber delle pagine sporche.
+    TNumero di pagine non visualizzate.
 
 <!-- end list -->
 
   - cPageRedirtied  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Numero di pagine risporche.
+    Numero di pagine non visualizzate.
 
 <!-- end list -->
 
   - cLogRecord  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Numero di record di log generati.
 
 <!-- end list -->
 
   - cbLogRecord  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Byte dei record di log scritti.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
-Nuovo [JET_THREADSTATS](./jet-threadstats-structure2.md) struct con i valori specificati.  
+Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
+Nuovo struct [JET_THREADSTATS](./jet-threadstats-structure2.md) con i valori specificati.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS struttura](./jet-threadstats-structure2.md)
 
-[Membri JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS membri](./jet-threadstats-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: Elimina tutti i profili di analisi associati al dispositivo specificato.
 ms.assetid: 5abf101b-0442-47fc-8159-95db63f0af78
-title: Metodo IScanProfileMgr::D eleteAllProfiles (Scanprofilemgr. h)
+title: Metodo IScanProfileMgr::D eleteAllProfiles (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: f21e9f562d008846b4ecf6ad46e86c2c371eb9f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7476f014b0dbcdb16af2a0db46c92a8c2db112528ec4bb8f2903e0c7f9c7a72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104050037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450821"
 ---
-# <a name="iscanprofilemgrdeleteallprofiles-method"></a>IScanProfileMgr::D Metodo eleteAllProfiles
+# <a name="iscanprofilemgrdeleteallprofiles-method"></a>Metodo IScanProfileMgr::D eleteAllProfiles
 
 Elimina tutti i profili di analisi associati al dispositivo specificato.
 
@@ -39,7 +39,7 @@ HRESULT DeleteAllProfiles(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ in\]
+*bstrDeviceID* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -52,7 +52,7 @@ ID del dispositivo.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,10 +60,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

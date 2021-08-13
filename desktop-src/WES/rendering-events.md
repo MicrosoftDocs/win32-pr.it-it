@@ -1,21 +1,21 @@
 ---
 title: Eventi di rendering
-description: Per visualizzare un evento, è necessario chiamare la funzione EvtRender per eseguirne il rendering in un formato visualizzabile.
+description: Per visualizzare un evento, è necessario chiamare la funzione EvtRender per eseguirne il rendering in un form visualizzabile.
 ms.assetid: fc763669-1fbc-4183-a4ff-577a7954d1ca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d7b1b4e2cbcab564abefb628f9c58f79ade86d8
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 220c53d4df0d51bf9963e080c192d19a8a915ffbfe33cf113608c0cf6a8fcd39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104398781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587306"
 ---
 # <a name="rendering-events"></a>Eventi di rendering
 
-Per visualizzare un evento, è necessario chiamare la funzione [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) per eseguirne il rendering in un formato visualizzabile. È possibile eseguire il rendering dell'evento come stringa XML oppure è possibile eseguire il rendering di uno o più valori dall'evento. Un evento può inoltre contenere stringhe di messaggi, ad esempio la stringa di messaggio dell'evento, la stringa del messaggio del canale o la stringa del messaggio del provider. Per ottenere una delle stringhe di messaggio dall'evento, chiamare la funzione [**EvtFormatMessage**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) . Per ulteriori informazioni su come ottenere una stringa di messaggio dall'evento, vedere [formattazione dei messaggi di evento](formatting-event-messages.md).
+Per visualizzare un evento, è necessario chiamare la [**funzione EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) per eseguirne il rendering in un form visualizzabile. È possibile eseguire il rendering dell'evento come stringa XML oppure eseguire il rendering di uno o più valori dall'evento. Un evento può anche contenere stringhe di messaggi( ad esempio, la stringa di messaggio dell'evento, la stringa di messaggio del canale o la stringa di messaggio del provider). Per ottenere una delle stringhe di messaggio dall'evento, chiamare la [**funzione EvtFormatMessage.**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) Per altri dettagli su come ottenere una stringa di messaggio dall'evento, vedere [Formattazione dei messaggi di evento.](formatting-event-messages.md)
 
-Per eseguire il rendering dell'evento come stringa XML, chiamare la funzione [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) . Tuttavia, se si desidera eseguire il rendering di parti specifiche dell'evento, è innanzitutto necessario chiamare [**EvtCreateRenderContext**](/windows/desktop/api/WinEvt/nf-winevt-evtcreaterendercontext) per specificare le parti dell'evento di cui si desidera eseguire il rendering. È possibile eseguire il rendering di valori specifici dall'evento, i valori della sezione dati utente o dati evento dell'evento o i valori delle proprietà correlate al sistema dell'evento. Per informazioni dettagliate sui componenti di un evento, vedere [schema di eventi](eventschema-schema.md).
+Per eseguire il rendering dell'evento come stringa XML, chiamare la [**funzione EvtRender.**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) Tuttavia, se si vuole eseguire il rendering di parti specifiche dell'evento, è prima necessario chiamare [**EvtCreateRenderContext**](/windows/desktop/api/WinEvt/nf-winevt-evtcreaterendercontext) per specificare le parti dell'evento di cui si vuole eseguire il rendering. È possibile eseguire il rendering di valori specifici dell'evento, dei valori della sezione dei dati utente o dei dati dell'evento o dei valori delle proprietà correlate al sistema dell'evento. Per informazioni dettagliate sui componenti di un evento, vedere [Schema di eventi.](eventschema-schema.md)
 
 Nell'esempio seguente viene illustrato come eseguire il rendering di un evento come stringa XML.
 
@@ -68,7 +68,7 @@ cleanup:
 
 
 
-Nell'esempio seguente viene illustrato come eseguire il rendering dei valori delle proprietà dalla sezione di sistema dell'evento. Per eseguire il rendering delle proprietà dei dati utente o degli eventi dell'evento, sostituire il flag EvtRenderContextSystem con il flag EvtRenderContextUser quando si crea il contesto di rendering.
+Nell'esempio seguente viene illustrato come eseguire il rendering dei valori delle proprietà dalla sezione di sistema dell'evento . Per eseguire il rendering dei dati utente o delle proprietà dei dati dell'evento, sostituire il flag EvtRenderContextSystem con il flag EvtRenderContextUser quando si crea il contesto di rendering.
 
 
 ```C++
@@ -203,7 +203,7 @@ cleanup:
 ```
 
 
-Nell'esempio seguente viene illustrato come eseguire il rendering dei valori specifici dall'evento. Utilizzare un'espressione XPath per specificare il nodo o l'attributo specifico da recuperare. È possibile specificare una o più espressioni per recuperare uno o più valori.
+Nell'esempio seguente viene illustrato come eseguire il rendering dei valori specifici dell'evento . Utilizzare un'espressione XPath per specificare il nodo o l'attributo specifico da recuperare. È possibile specificare una o più espressioni per recuperare uno o più valori.
 
 
 ```C++

@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSGatewayServer
-description: Usato per le operazioni specifiche del server Desktop remoto Gateway (Gateway Desktop remoto).
+title: Win32_TSGatewayServer classe
+description: Usato per Desktop remoto specifiche del server Gateway Desktop remoto.
 ms.assetid: ae24b7ff-2c26-43a5-ac11-52f83225f4ee
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSGatewayServer Servizi Desktop remoto
-- Classe Win32_TSGatewayServer Servizi Desktop remoto, descritta
+- Win32_TSGatewayServer classe Servizi Desktop remoto
+- Win32_TSGatewayServer classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7dee009521c59b606010be085fcb0447558898d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 43cd6c24447e7ba3bc22788484b2ac9e437ee947243c17a676728d2a336bd326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118603888"
 ---
-# <a name="win32_tsgatewayserver-class"></a>Win32 \_ TSGatewayServer (classe)
+# <a name="win32_tsgatewayserver-class"></a>Classe \_ TSGatewayServer Win32
 
-Usato per le operazioni specifiche del server Desktop remoto Gateway (Gateway Desktop remoto).
+Usato per Desktop remoto specifiche del server Gateway Desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,19 +38,19 @@ class Win32_TSGatewayServer
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSGatewayServer** presenta questi tipi di membri:
+La **classe \_ Win32 TSGatewayServer** include questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSGatewayServer** presenta questi metodi.
+La **classe \_ Win32 TSGatewayServer** include questi metodi.
 
 
 
 | Metodo                                                                                   | Descrizione                                                                                                                    |
 |:-----------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateSelfSignedCertificate**](createselfsignedcertificate-win32-tsgatewayserver.md) | Crea un certificato autofirmato con un nome oggetto specificato e restituisce l'hash del certificato come parametro "out".<br/> |
+| [**CreateSelfSignedCertificate**](createselfsignedcertificate-win32-tsgatewayserver.md) | Crea un certificato autofirmato con un nome soggetto specificato e restituisce l'hash del certificato come parametro "out".<br/> |
 | [**Esportazione**](export-win32-tsgatewayserver.md)                                           | Restituisce la configurazione del server Gateway Desktop remoto come stringa XML.<br/>                                                       |
 | [**Importa**](import-win32-tsgatewayserver.md)                                           | Importa una determinata configurazione nel server Gateway Desktop remoto.<br/>                                                             |
 
@@ -60,7 +60,7 @@ La classe **Win32 \_ TSGatewayServer** presenta questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

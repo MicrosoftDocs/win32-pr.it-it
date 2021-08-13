@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, tuttavia questa classe non rappresenta servizi ospitati in più sistemi.
+description: Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, ma questa classe non rappresenta i servizi ospitati in più sistemi.
 ms.assetid: ede67a81-cf1b-41aa-b907-5b635cf80423
-title: Classe CIM_HostedService (gestione Hyper-V)
+title: CIM_HostedService classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 841c0e26898ed3baa4b4947779a395ee9ce870d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65667d46ea3af91f33a118d49902c77e411fc56959eb1f1345d4b42fab372270
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118648556"
 ---
-# <a name="cim_hostedservice-class-hyper-v-management"></a>Classe CIM_HostedService (gestione Hyper-V)
+# <a name="cim_hostedservice-class-hyper-v-management"></a>CIM_HostedService classe (gestione Hyper-V)
 
-Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, tuttavia questa classe non rappresenta servizi ospitati in più sistemi.
+Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, ma questa classe non rappresenta i servizi ospitati in più sistemi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,26 +39,26 @@ class CIM_HostedService : CIM_HostedDependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ servizio ospitato** presenta questi tipi di membri:
+La **classe CIM \_ HostedService** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ servizio ospitato** dispone di queste proprietà.
+La **classe CIM \_ HostedService** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ sistema CIM**
+Tipo di dati: **SISTEMA CIM \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Sistema di hosting.
@@ -68,13 +68,13 @@ Sistema di hosting.
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ servizio CIM**
+Tipo di dati: **servizio \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 Servizio ospitato nel sistema.
@@ -89,8 +89,8 @@ Servizio ospitato nel sistema.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Servizio ospitato nel sistema.
 
 <dl> <dt>
 
-[**\_HOSTEDDEPENDENCY CIM**](cim-hosteddependency.md)
+[**CIM \_ HostedDependency**](cim-hosteddependency.md)
 </dt> </dl>
 
  

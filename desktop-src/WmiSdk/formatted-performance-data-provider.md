@@ -1,8 +1,8 @@
 ---
-description: Fornisce calcolato (&\# 0034; cotto&\# 0034;) dati del contatore delle prestazioni. Fornisce dati dinamici alle classi WMI derivate da Win32 \_ PerfFormattedData. Noto anche come provider di contatori cotti.
+description: Supplies calculated (&\# 0034;&\# 0034;) dati dei contatori delle prestazioni. Fornisce dati dinamici alle classi WMI derivate da \_ Win32 PerfFormattedData. Noto anche come provider di contatori delle prestazioni.
 ms.assetid: 59823f7c-3046-4608-99df-1f43e2934e7e
 ms.tgt_platform: multiple
-title: provider di dati delle prestazioni formattate
+title: Prestazioni formattate provider di dati
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,26 +10,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0db075ebdafcd31c7aa0980d191ed565873f686f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab8e931c3d03c619af5b1e37cadd8dacdccd21534513ed3a1aa1d7b9076acfb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556614"
 ---
-# <a name="formatted-performance-data-provider"></a>provider di dati delle prestazioni formattate
+# <a name="formatted-performance-data-provider"></a>Prestazioni formattate provider di dati
 
-\[Il provider di dati delle prestazioni formattato, noto anche come "provider del contatore cotto", non è più disponibile per l'uso. Usare invece il provider [wmiperfinst](wmiperfinst-provider.md) .\]
+\[Il provider di provider di dati formattato, noto anche come "provider di contatori delle prestazioni", non è più disponibile per l'uso. Usare invece il provider [WMIPerfInst.](wmiperfinst-provider.md)\]
 
-Il provider di dati prestazioni formattato a prestazioni elevate fornisce dati del contatore delle prestazioni calcolati (cotti), ad esempio la percentuale di tempo impiegato da un disco per la scrittura dei dati. Questo provider fornisce dati dinamici alle classi WMI derivate da [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata). La differenza tra questo provider e il [provider del contatore delle](performance-counter-provider.md) prestazioni è che il provider del contatore delle prestazioni fornisce dati non elaborati e il provider del contatore cotto fornisce dati sulle prestazioni che vengono visualizzati esattamente come in [*Monitor di sistema*](gloss-s.md). Il nome dell'istanza di [**\_ \_ Win32Provider**](--win32provider.md) è "HiPerfCooker \_ V1".
+Il provider di dati sulle prestazioni formattato a prestazioni elevate fornisce dati calcolati del contatore delle prestazioni ("a prestazioni elevate"), ad esempio la percentuale di tempo che un disco impiega per la scrittura dei dati. Questo provider fornisce dati dinamici alle classi WMI derivate da [**Win32 \_ PerfFormattedData.**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) La differenza tra questo provider e il [provider](performance-counter-provider.md) del contatore delle prestazioni è che il provider del contatore delle prestazioni fornisce dati non elaborati e il provider contatore delle prestazioni fornisce dati sulle prestazioni che vengono visualizzati esattamente come in [*Monitoraggio di sistema.*](gloss-s.md) Il [**\_ \_ nome dell'istanza Win32Provider**](--win32provider.md) è "HiPerfCooker \_ v1".
 
-Il nome della classe formattata WMI per un oggetto contatore è nel formato " \_ nome \_ *oggetto \_ nome servizio* PerfFormattedData Win32 \_ *\_*". Ad esempio, il nome della classe WMI che contiene i contatori del disco logico è **Win32 \_ PerfFormattedData \_ perfdisk \_ disco logico**. Queste classi si trovano nello \\ spazio dei nomi "root CIMv2".
+Il nome della classe formattata WMI per un oggetto contatore è nel formato "Win32 \_ PerfFormattedData \_ *service \_ name* \_ *object \_ name*". Ad esempio, il nome della classe WMI che contiene i contatori dei dischi logici è **\_ Win32 PerfFormattedData \_ PerfDisk \_ LogicalDisk**. Queste classi si trovano nello spazio dei nomi "Root \\ CIMv2".
 
-Poiché le classi di dati sulle prestazioni vengono aggiunte e modificate in modo dinamico in un determinato sistema, non è possibile documentare formalmente le proprietà di tutti gli oggetti prestazioni noti. Per determinare quali classi sono disponibili e per identificare i membri di tali classi, vedere [recupero della documentazione per oggetti dati sulle prestazioni non elaborati e formattati](retrieving-raw-and-formatted-performance-data.md).
+Poiché le classi di dati delle prestazioni vengono aggiunte e modificate dinamicamente in un determinato sistema, non è possibile documentare formalmente le proprietà di tutti gli oggetti prestazioni noti. Per determinare le classi disponibili e per identificare i membri di tali classi, vedere Recupero della documentazione per oggetti dati non elaborati e formattati [delle prestazioni.](retrieving-raw-and-formatted-performance-data.md)
 
-Le classi [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) utilizzano il qualificatore **CookingType** nei [tipi di contatori delle prestazioni WMI](wmi-performance-counter-types.md) per specificare la formula per il calcolo dei dati sulle prestazioni. Questo qualificatore è uguale al qualificatore **CounterType** nelle classi [**\_ PerfRawData Win32**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) .
+Le [**classi \_ PerfFormattedData Win32**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) usano il qualificatore PerfFormattedData in Tipi di contatori delle prestazioni [WMI](wmi-performance-counter-types.md) per specificare la formula per il calcolo dei dati sulle prestazioni.  Questo qualificatore corrisponde al qualificatore **CounterType** nelle [**classi \_ PerfRawData Win32.**](/windows/desktop/CIMWin32Prov/win32-perfrawdata)
 
-Come provider a prestazioni elevate, il provider del contatore cotto implementa l'interfaccia [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) standard, nonché il metodo [**IWbemRefresher:: Refresh**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh) e i metodi [**IWbemHiPerfProvider**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemhiperfprovider) seguenti:
+In qualità di provider ad alte prestazioni, il provider del contatore delle operazioni di controllo delle prestazioni implementa l'interfaccia [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) standard, nonché il metodo [**IWbemRefresher::Refresh**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh) e i metodi [**IWbemHiPerfProvider seguenti:**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemhiperfprovider)
 
 -   [**CreateRefreshableEnum**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-createrefreshableenum)
 -   [**CreateRefreshableObject**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemhiperfprovider-createrefreshableobject)

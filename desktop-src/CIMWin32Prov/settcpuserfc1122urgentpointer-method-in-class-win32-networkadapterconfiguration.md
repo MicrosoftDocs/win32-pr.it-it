@@ -1,8 +1,8 @@
 ---
-description: Il metodo statico della classe WMI SetTcpUseRFC1122UrgentPointer viene utilizzato per specificare se TCP utilizza la specifica RFC 1122 per i dati urgenti o la modalità utilizzata dai sistemi derivati di Berkeley Software Design (BSD).
+description: Il metodo statico della classe WMI SetTcpUseRFC1122SortentPointer viene usato per specificare se TCP usa la specifica RFC 1122 per i dati urgenti o la modalità usata dai sistemi derivati da Berkeley Software Design (BSD).
 ms.assetid: f8d07690-2723-4bc3-b15f-a24d575456a7
 ms.tgt_platform: multiple
-title: Metodo SetTcpUseRFC1122UrgentPointer della classe Win32_NetworkAdapterConfiguration
+title: Metodo SetTcpUseRFC1122SortentPointer della Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 928a809211288eb7f024c735ce033b819e5d49f7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a67fbeed1cd7f5627ad1ab7471ace0e5af71ccb84d1119168e9c2298f450e2f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439241"
 ---
-# <a name="settcpuserfc1122urgentpointer-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetTcpUseRFC1122UrgentPointer della \_ classe NetworkAdapterConfiguration Win32
+# <a name="settcpuserfc1122urgentpointer-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetTcpUseRFC1122SortentPointer della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo statico della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpUseRFC1122UrgentPointer** viene utilizzato per specificare se TCP utilizza la specifica RFC 1122 per i dati urgenti o la modalità utilizzata dai sistemi derivati di Berkeley Software Design (BSD).
+Il metodo statico della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpUseRFC1122SortentPointer** viene usato per specificare se TCP usa la specifica RFC 1122 per i dati urgenti o la modalità usata dai sistemi derivati da Berkeley Software Design (BSD).
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,34 +42,34 @@ uint32 SetTcpUseRFC1122UrgentPointer(
 
 <dl> <dt>
 
-*TcpUseRFC1122UrgentPointer* \[ in\]
+*TcpUseRFC1122DecontePointer* \[ Pollici\]
 </dt> <dd>
 
-Se **true**, TCP utilizza la specifica RFC 1122. Se **false**, i dati urgenti vengono inviati in modalità utilizzata dai sistemi derivati da BSD.
+Se **true,** TCP usa la specifica RFC 1122. Se **false,** i dati urgenti vengono inviati nella modalità usata dai sistemi derivati da BSD.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto il riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, riavvio non necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, riavvio non necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito. È necessario riavviare il computer.
 
 </dd> <dt>
 
@@ -91,12 +91,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non subnet mask.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -136,7 +136,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -235,12 +235,12 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
@@ -258,11 +258,11 @@ Impossibile rilasciare il lease DHCP.
 
 84
 
-IP non abilitato sulla scheda.
+IP non abilitato nella scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -271,12 +271,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti dei numeri di rete/frame**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di rete o del frame.
 
 </dd> <dt>
 
@@ -307,12 +307,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro al di fuori dei limiti.
 
 </dd> <dt>
 
@@ -348,20 +348,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -388,7 +388,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -406,11 +406,11 @@ DHCP non abilitato sulla scheda.
 
 ## <a name="remarks"></a>Commenti
 
-RFC 1122 e BSD interpretano il puntatore urgente nell'intestazione TCP e la lunghezza dei dati urgenti in modo diverso. Non sono interoperativi. Il valore predefinito è la modalità BSD.
+RFC 1122 e BSD interpretano in modo diverso il puntatore urgente nell'intestazione TCP e la lunghezza dei dati urgenti. Non sono interoperativi. Il valore predefinito è la modalità BSD.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [modifica utilizzo puntatore urgente per tutte le schede di rete](https://Gallery.TechNet.Microsoft.Com/0ff22a90-0be6-4914-8db7-aaf72cbea9cb) di VBScript configura un computer per l'utilizzo della specifica RFC 1122 per i dati urgenti.
+[L'esempio VBScript Modify Urgent Pointer Use for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/0ff22a90-0be6-4914-8db7-aaf72cbea9cb) configura un computer per l'uso della specifica RFC 1122 per i dati urgenti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -421,7 +421,7 @@ L'esempio [modifica utilizzo puntatore urgente per tutte le schede di rete](http
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -430,16 +430,16 @@ L'esempio [modifica utilizzo puntatore urgente per tutte le schede di rete](http
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Attività WMI: Account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

@@ -1,5 +1,5 @@
 ---
-description: "Quando si crea un'istanza di con oggetti incorporati, eseguire le attività seguenti:"
+description: "Quando si crea un'istanza con oggetti incorporati, eseguire le attività seguenti:"
 ms.assetid: 2abf6197-8b95-4c04-b154-508aa85fe12f
 ms.tgt_platform: multiple
 title: Creazione di oggetti incorporati
@@ -10,25 +10,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a76a70fa0e01068622a4f4cdbbbfb6c992b67f56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e54e16005669ebd77b0bc08e5d3174f7aa5fadee2a47477920e91aaa2ae155b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464171"
 ---
 # <a name="creating-embedded-objects"></a>Creazione di oggetti incorporati
 
-Quando si crea un'istanza di con oggetti incorporati, eseguire le attività seguenti:
+Quando si crea un'istanza con oggetti incorporati, eseguire le attività seguenti:
 
--   È necessario dichiarare un oggetto incorporato come fortemente tipizzato o debolmente tipizzato.
+-   È necessario dichiarare un oggetto incorporato come fortemente tipizzato o tipizzato in modo debole.
 
-    Un oggetto fortemente tipizzato punta a un oggetto di una classe specifica e usa il nome della classe. Un oggetto con tipizzazione debole punta a un oggetto di una classe non specificata e utilizza la parola chiave **Object** . Entrambi gli oggetti sono mappati al tipo **\_ sconosciuto VT** .
+    Un oggetto fortemente tipizzato punta a un oggetto di una classe specifica e usa il nome della classe. Un oggetto tipiizzato in modo debole punta a un oggetto di una classe non specificata e usa la parola **chiave object.** Entrambi gli oggetti vengono mappati al **tipo VT \_ UNKNOWN.**
 
--   È possibile utilizzare **null** come valore predefinito di oggetti e percorsi incorporati nelle inizializzazioni e nelle dichiarazioni.
--   Quando si incorpora un percorso di oggetto, non inserire spazi vuoti tra gli elementi del percorso incorporato. Il percorso dell'oggetto "Class1Index = 3;", ad esempio, non contiene alcuno spazio tra il nome della proprietà "Class1index" e il valore assegnato, ovvero "3".
+-   È possibile usare **NULL** per il valore predefinito di percorsi e oggetti incorporati nelle inizializzazioni e nelle dichiarazioni.
+-   Quando si incorpora un percorso di oggetto, non inserire spazi vuoti tra gli elementi del percorso incorporato. Ad esempio, il percorso dell'oggetto "Class1Index=3;" non contiene spazio tra il nome della proprietà "Class1index" e il valore assegnato, ovvero "3".
 
-Nella dichiarazione di classe seguente viene illustrato come dichiarare oggetti incorporati fortemente tipizzati e con tipizzazione debole.
+La dichiarazione di classe seguente illustra come dichiarare oggetti incorporati fortemente tipizzato e tipizzato in modo debole.
 
 ``` syntax
 Class MyClass
@@ -59,7 +59,7 @@ Class Class3
 };
 ```
 
-Nell'esempio seguente viene descritta l'inizializzazione di una proprietà che è un oggetto fortemente tipizzato e un'altra proprietà che è una matrice di oggetti con tipizzazione debole.
+Nell'esempio seguente viene descritta l'inizializzazione di una proprietà che è un oggetto fortemente tipizzato e di un'altra proprietà che è una matrice di oggetti tipizzato in modo debole.
 
 ``` syntax
 Class EmbedClass1

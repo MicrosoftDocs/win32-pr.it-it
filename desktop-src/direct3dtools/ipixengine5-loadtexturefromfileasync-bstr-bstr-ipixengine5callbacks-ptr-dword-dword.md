@@ -1,10 +1,10 @@
 ---
-description: Carica una trama da un file e notifica l'host in modo asincrono quando viene completato.
+description: Carica una trama da un file e invia una notifica all'host in modo asincrono al completamento.
 MS-HAID: vspixengine.IPixEngine5\_LoadTextureFromFileAsync\_BSTR\_BSTR\_IPixEngine5Callbacks\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixEngine5:: LoadTextureFromFileAsync'
+title: Metodo IPixEngine5::LoadTextureFromFileAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: DF10C209-B6B5-4692-81D7-7FD59CE49F56
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bef4e4e5117680f7c18f13cc99f801c8e8b8bdfd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3f48771603aa5704433bf5d6999bf2c5502e344baf952b78d7e20d9471fecf9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104125379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118282749"
 ---
-# <a name="span-idvspixengineipixengine5_loadtexturefromfileasync_bstr_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5loadtexturefromfileasync-method"></a><span id="vspixengine.ipixengine5_loadtexturefromfileasync_bstr_bstr_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5:: LoadTextureFromFileAsync
+# <a name="span-idvspixengineipixengine5_loadtexturefromfileasync_bstr_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5loadtexturefromfileasync-method"></a><span id="vspixengine.ipixengine5_loadtexturefromfileasync_bstr_bstr_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5::LoadTextureFromFileAsync
 
-Carica una trama da un file e notifica l'host in modo asincrono quando viene completato.
+Carica una trama da un file e invia una notifica all'host in modo asincrono al completamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,28 +43,28 @@ HRESULT LoadTextureFromFileAsync(
 
 ## <a name="parameters"></a>Parametri
 
-*fileName*   
+*Filename*   
 Stringa COM contenente il nome del file di trama.
 
 *histogramDataFileName*   
 Stringa COM contenente il nome del file di dati dell'istogramma associato alla trama.
 
-*callback*   
+*Callback*   
 Indirizzo di un oggetto che fornisce l'interfaccia di callback IPixEngine5.
 
 *requestCookie*   
-Un cookie che idenfies in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
+Cookie che soddisfa in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
 
 *progressIntervalMsecs*   
 Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

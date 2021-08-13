@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM AssociateMemory associa la memoria installata o associata, ad esempio la memoria della cache con un dispositivo logico.
+description: La classe CIM AssociateMemory associa la memoria installata o associata, ad esempio la \_ memoria cache a un dispositivo logico.
 ms.assetid: b108d0cc-9353-4940-a5f6-34bb93330a62
 ms.tgt_platform: multiple
-title: Classe CIM_AssociatedMemory
+title: CIM_AssociatedMemory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3cb1443f54ab273ef6c114b8645e5322c24785f8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8fd56da36546365fecc053d679e31982c44efdfb85289c7fb64ce16651241f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439291"
 ---
-# <a name="cim_associatedmemory-class"></a>CIM \_ AssociatedMemory (classe)
+# <a name="cim_associatedmemory-class"></a>Classe CIM \_ AssociatedMemory
 
-La classe **CIM \_ AssociateMemory** associa la memoria installata o associata, ad esempio la memoria della cache con un dispositivo logico.
+La **classe CIM \_ AssociateMemory** associa la memoria installata o associata, ad esempio la memoria cache a un dispositivo logico.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,29 +47,29 @@ class CIM_AssociatedMemory : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ AssociatedMemory** presenta questi tipi di membri:
+La **classe CIM \_ AssociatedMemory** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ AssociatedMemory** dispone di queste proprietà.
+La **classe CIM \_ AssociatedMemory** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ memoria CIM**
+Tipo di dati: **Memoria CIM \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-[**\_ Memoria CIM**](cim-memory.md) che descrive la memoria installata in o associata a un dispositivo.
+Memoria [**CIM \_ che**](cim-memory.md) descrive la memoria installata o associata a un dispositivo.
 
 </dd> <dt>
 
@@ -82,20 +82,20 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Un [**\_ LogicalDevice CIM**](cim-logicaldevice.md) che descrive il dispositivo logico.
+[**LogicalDevice \_ CIM**](cim-logicaldevice.md) che descrive il dispositivo logico.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ AssociatedMemory** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe CIM \_ AssociatedMemory** è derivata da [**CIM \_ Dependency**](cim-dependency.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

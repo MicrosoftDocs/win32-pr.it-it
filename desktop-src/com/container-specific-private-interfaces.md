@@ -1,23 +1,23 @@
 ---
-title: Interfacce private Container-Specific
-description: Interfacce private Container-Specific
+title: Container-Specific interfacce private
+description: Container-Specific interfacce private
 ms.assetid: 429cf71c-9b9d-4d0b-b5de-91fbe1dde3cf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25c6569a79e9f1801c6fd82543bc40408903c780
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a426ae67d3722406ca6c1428d46d0bc3b4a937a1bcdd105de6f376bbe53a5ccd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118550635"
 ---
-# <a name="container-specific-private-interfaces"></a>Interfacce private Container-Specific
+# <a name="container-specific-private-interfaces"></a>Container-Specific interfacce private
 
-Alcuni contenitori forniscono interfacce private specifiche del contenitore per funzionalità aggiuntive o prestazioni migliori. I controlli basati su tali interfacce specifiche del contenitore dovrebbero, se possibile, funzionare senza le interfacce specifiche del contenitore presenti, in modo che il controllo funzioni in contenitori diversi. Ad esempio, Visual Basic implementa interfacce private che forniscono la funzionalità di formattazione delle stringhe ai controlli. Se un controllo Usa queste interfacce di formattazione privata, dovrebbe essere in grado di eseguire con il supporto predefinito per la formattazione se queste interfacce non sono disponibili. Se il controllo può funzionare senza le interfacce private, deve adottare un'azione appropriata, ad esempio avvisare l'utente di una funzionalità ridotta, ma continuare a lavorare. Se non si tratta di un'opzione, la categoria di un componente deve essere registrata come richiesto, in modo che solo i contenitori che supportano questa funzionalità possano ospitare tali controlli.
+Alcuni contenitori forniscono interfacce private specifiche del contenitore per funzionalità aggiuntive o prestazioni migliorate. I controlli che si basano su tali interfacce specifiche del contenitore devono, se possibile, funzionare senza le interfacce specifiche del contenitore presenti in modo che funzioni in contenitori diversi. Ad esempio, Visual Basic interfacce private che forniscono funzionalità di formattazione delle stringhe ai controlli. Se un controllo usa queste interfacce di formattazione private, dovrebbe essere in grado di eseguire con il supporto della formattazione predefinito se queste interfacce non sono disponibili. Se il controllo può funzionare senza le interfacce private, deve eseguire le azioni appropriate (ad esempio avvisare l'utente di funzionalità ridotte) ma continuare a funzionare. Se non si tratta di un'opzione, è necessario registrare una categoria di componenti in modo che solo i contenitori che supportano questa funzionalità possano ospitare questi controlli.
 
- 
+ 
 
- 
+ 
 
 
 

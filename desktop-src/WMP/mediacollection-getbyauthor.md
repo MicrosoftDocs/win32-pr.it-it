@@ -1,11 +1,11 @@
 ---
-title: Mediacollection. getByAuthor, metodo
+title: Metodo MediaCollection.getByAuthor
 description: Il metodo getByAuthor recupera una playlist degli elementi multimediali dall'autore specificato.
 ms.assetid: 8f9b3ee3-a809-4d24-81ce-adad63e5347c
 keywords:
 - Metodo getByAuthor Windows Media Player
-- Metodo getByAuthor Windows Media Player, classe Mediacollection
-- Mediacollection (classe) Windows Media Player, metodo getByAuthor
+- Metodo getByAuthor Windows Media Player , classe MediaCollection
+- Classe MediaCollection Windows Media Player metodo , getByAuthor
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7eae0928250e37e76bf3a39f38b43bef8a5691c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87989d38d49ff87ce26b7394f4ee79ef4bd7197cd0e35dcd5316797df401ba49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574628"
 ---
-# <a name="mediacollectiongetbyauthor-method"></a>Mediacollection. getByAuthor, metodo
+# <a name="mediacollectiongetbyauthor-method"></a>Metodo MediaCollection.getByAuthor
 
-Il metodo **getByAuthor** recupera una playlist degli elementi multimediali dall'autore specificato.
+Il **metodo getByAuthor** recupera una playlist degli elementi multimediali dall'autore specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ retVal = MediaCollection.getByAuthor(
 
 <dl> <dt>
 
-*autore* \[ in\]
+*author* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** contenente il nome dell'autore.
@@ -51,15 +51,15 @@ retVal = MediaCollection.getByAuthor(
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **playlist** .
+Questo metodo restituisce un **oggetto Playlist.**
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzato *mediacollection*. **getByAuthor** per recuperare una playlist di elementi multimediali. La playlist contiene elementi che corrispondono all'autore specificato dall'utente in un elemento input di testo HTML denominato GetAuthor. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene utilizzato *MediaCollection*. **getByAuthor per** recuperare una playlist di elementi multimediali. La playlist contiene elementi corrispondenti all'autore specificato dall'utente in un elemento di input HTML TEXT denominato GetAuthor. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -92,7 +92,7 @@ onClick = "
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -101,16 +101,16 @@ onClick = "
 
 <dl> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

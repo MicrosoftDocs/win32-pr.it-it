@@ -1,9 +1,9 @@
 ---
-title: Media. sourceURL
+title: Media.sourceURL
 description: La proprietà sourceURL recupera l'URL dell'elemento multimediale.
 ms.assetid: 98ff6ed4-ad3d-44f8-893d-f016e5217ce5
 keywords:
-- Media Player Windows Media. sourceURL
+- Media.sourceURL Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c32d594cd1c3b590001eedfd09e9a8c8eb21240
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1e2f99aeb64a73bcf36e2cbd472aedfa8f509a5073e70792e7b47343a1b37d60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415951"
 ---
-# <a name="mediasourceurl"></a>Media. sourceURL
+# <a name="mediasourceurl"></a>Media.sourceURL
 
-La proprietà **sourceURL** recupera l'URL dell'elemento multimediale.
+La **proprietà sourceURL** recupera l'URL dell'elemento multimediale.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *currentMedia*. sourceURL
+*lettore*. *currentMedia*.sourceURL
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato il *supporto*. **sourceURL** recuperare l'URL del primo elemento multimediale nella playlist di esempio; l'URL dell'elemento multimediale viene quindi assegnato alla proprietà **URL** oggetto Player. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *Media*. **sourceURL per** recuperare l'URL del primo elemento multimediale nella playlist di esempio. L'URL dell'elemento multimediale viene quindi assegnato alla proprietà **URL dell'oggetto lettore.** **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -61,7 +61,7 @@ Player.controls.play();
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

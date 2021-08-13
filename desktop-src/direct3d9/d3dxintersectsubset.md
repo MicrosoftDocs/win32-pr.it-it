@@ -1,7 +1,7 @@
 ---
-description: Interseca il raggio specificato con il subset di mesh specificato. Questo fornisce funzionalità simili a D3DXIntersect.
+description: Interseca il raggio specificato con il subset di mesh specificato. In questo modo vengono fornite funzionalità simili a D3DXIntersect.
 ms.assetid: 4a757b9e-18eb-424e-9f3e-cdf917c23787
-title: Funzione D3DXIntersectSubset (D3DX9Mesh. h)
+title: Funzione D3DXIntersectSubset (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 621f45d7c2a6d8ff162f539ef62153d3ae70f6e9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95a987730706f32654aab8f63feed61ae87c4d58d27ccccdaed9767d3303bbf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460381"
 ---
-# <a name="d3dxintersectsubset-function"></a>D3DXIntersectSubset (funzione)
+# <a name="d3dxintersectsubset-function"></a>Funzione D3DXIntersectSubset
 
-Interseca il raggio specificato con il subset di mesh specificato. Questo fornisce funzionalità simili a [**D3DXIntersect**](d3dxintersect.md).
+Interseca il raggio specificato con il subset di mesh specificato. In questo modo viene fornita una funzionalità [**simile a D3DXIntersect.**](d3dxintersect.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,97 +50,97 @@ HRESULT D3DXIntersectSubset(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBASEMESH**](id3dxbasemesh.md)**
 
-Puntatore a un'interfaccia [**ID3DXBaseMesh**](id3dxbasemesh.md) , che rappresenta la mesh da testare. La mesh deve essere ordinata come attributo.
+Puntatore a [**un'interfaccia ID3DXBaseMesh**](id3dxbasemesh.md) che rappresenta la mesh da testare. La mesh deve essere ordinata con attributi.
 
 </dd> <dt>
 
-*AttribId* \[ in\]
+*AttribId* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Identificatore dell'attributo del subset da intersecare con.
+Identificatore di attributo del subset con cui intersecare.
 
 </dd> <dt>
 
-*pRayPos* \[ in\]
+*pRayPos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) , che specifica il punto in cui inizia il raggio.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che specifica il punto in cui inizia il raggio.
 
 </dd> <dt>
 
-*pRayDir* \[ in\]
+*pRayDir* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) , che specifica la direzione del raggio.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che specifica la direzione del raggio.
 
 </dd> <dt>
 
-*pHit* \[ out\]
+*pHit* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)\***
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)\***
 
-Puntatore a un BOOL. Se il raggio interseca un quadrante triangolare sulla mesh, questo valore verrà impostato su **true**. In caso contrario, questo valore è impostato su **false**.
+Puntatore a un oggetto BOOL. Se il raggio interseca una faccia triangolare sulla mesh, questo valore verrà impostato su **TRUE.** In caso contrario, questo valore è impostato su **FALSE.**
 
 </dd> <dt>
 
-*pFaceIndex* \[ out\]
+*pFaceIndex* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore a un valore di indice della faccia più vicina all'origine del raggio, se pHit è **true**.
+Puntatore a un valore di indice del viso più vicino all'origine del raggio, se pHit è **TRUE.**
 
 </dd> <dt>
 
-unità di *elaborazione* \[ out\]
+*pU* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore a una coordinata baricentrica hit, U.
+Puntatore a una coordinata di hit barycentric, U.
 
 </dd> <dt>
 
-*PV* \[ out\]
+*pV* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore a una coordinata baricentrica hit, V.
+Puntatore a una coordinata di hit barycentric, V.
 
 </dd> <dt>
 
-*pDist* \[ out\]
+*pDist* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore alla distanza del parametro di intersezione del raggio.
+Puntatore a una distanza del parametro di intersezione dei raggi.
 
 </dd> <dt>
 
-*ppAllHits* \[ out\]
+*ppAllHits* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Matrice di strutture [**D3DXINTERSECTINFO**](d3dxintersectinfo.md) , che rappresenta tutti i riscontri, non solo i riscontri più vicini.
+Matrice di [**strutture D3DXINTERSECTINFO**](d3dxintersectinfo.md) che rappresentano tutti i riscontri, non solo i riscontri più vicini.
 
 </dd> <dt>
 
-*pCountOfHits* \[ out\]
+*pCountOfHits* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
@@ -153,17 +153,17 @@ Numero di elementi nella matrice restituiti da ppAllHits.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il valore seguente: E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere il seguente: E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **D3DXIntersectSubset** fornisce un modo per comprendere i punti in e intorno a un triangolo, indipendentemente dalla posizione in cui si trova effettivamente il triangolo. Questa funzione restituisce il punto risultante utilizzando l'equazione seguente: V1 + U (v2-v1) + V (V3-V1).
+La **funzione D3DXIntersectSubset** consente di comprendere i punti all'interno e intorno a un triangolo, indipendentemente dalla posizione in cui si trova effettivamente il triangolo. Questa funzione restituisce il punto risultante usando l'equazione seguente: V1 + U(V2 - V1) + V(V3 - V1).
 
-Qualsiasi punto nel V1V2V3 del piano può essere rappresentato dalla coordinata baricentrica (U, V). Il parametro U controlla la quantità di V2 che viene ponderata nel risultato e il parametro V controlla la quantità di V3 che viene ponderata nel risultato. Infine, il valore \[ 1-(U + V) controlla la \] quantità di V1 che viene ponderata nel risultato.
+Qualsiasi punto nel piano V1V2V3 può essere rappresentato dalla coordinata barycentric (U,V). Il parametro U controlla quanto V2 viene ponderato nel risultato e il parametro V controlla quanto V3 viene ponderato nel risultato. Infine, il valore 1 - (U + V) controlla quanto \[ \] V1 viene ponderato nel risultato.
 
-Le coordinate baricentrica sono costituite da coordinate generali. In questo contesto, l'utilizzo delle coordinate baricentrica rappresenta una modifica nei sistemi di coordinate. Ciò che è valido per le coordinate cartesiane è valido per le coordinate baricentrica.
+Le coordinate barycentriche sono una forma di coordinate generali. In questo contesto, l'uso di coordinate barycentriche rappresenta una modifica nei sistemi di coordinate. Ciò che vale per le coordinate cartesiane è vero per le coordinate barycentriche.
 
-Le coordinate baricentrica definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più approfondita delle coordinate baricentrica, vedere [la descrizione delle coordinate baricentrica di articolo MathWorld](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più dettagliata delle coordinate barycentric, vedere Descrizione delle [coordinate barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -171,8 +171,8 @@ Le coordinate baricentrica definiscono un punto all'interno di un triangolo in t
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

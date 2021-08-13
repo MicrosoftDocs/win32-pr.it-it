@@ -1,17 +1,17 @@
 ---
 description: Specifica se il codificatore è vincolato da una velocità in bit di picco.
 ms.assetid: e5ca19e1-5ebd-4b76-bcd2-2198c356dafc
-title: Proprietà MFPKEY_PEAKCONSTRAINED (Wmcodecdsp. h)
+title: MFPKEY_PEAKCONSTRAINED proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3825fba8694789a565a62e5bc2e1c3e4f59e0bb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 05b20ce51a70e489943aabb5e7ea4f26ec1500d78fcfec5242ad9aa2c57b6630
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242395"
 ---
-# <a name="mfpkey_peakconstrained-property"></a>\_Proprietà PEAKCONSTRAINED di MFPKEY
+# <a name="mfpkey_peakconstrained-property"></a>Proprietà MFPKEY \_ PEAKCONSTRAINED
 
 Specifica se il codificatore è vincolato da una velocità in bit di picco. Lettura/scrittura.
 
@@ -21,11 +21,11 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_bool VT**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valore predefinito
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,7 +34,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Client<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

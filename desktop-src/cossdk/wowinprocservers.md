@@ -1,5 +1,5 @@
 ---
-description: Contiene un elenco dei server in-process registrati con il sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
+description: Contiene un elenco dei server in-process registrati nel sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
 ms.assetid: 4dbcf059-b09b-4a65-95c9-3a4735c252c3
 title: Raccolta WOWInprocServers
 ms.topic: reference
@@ -12,28 +12,28 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 43fceababaf6ced44a1ba3aef020900ed1afe4df
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d85abf322d34d03c0f5e8863b5434343946b676e477e18077c82d83de78cafb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545572"
 ---
 # <a name="wowinprocservers-collection"></a>Raccolta WOWInprocServers
 
-Contiene un elenco dei server in-process registrati con il sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
+Contiene un elenco dei server in-process registrati nel sistema per i componenti a 32 bit nei computer a 64 bit. Contiene un oggetto per ogni componente.
 
-Questa raccolta supporta il metodo [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) , ma non il metodo [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) . Per installare o importare componenti in un'applicazione, usare i metodi sull'oggetto [**COMAdminCatalog**](comadmincatalog.md) .
+Questa raccolta supporta il [**metodo Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection,**](comadmincatalogcollection.md) ma non il [**metodo Add.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) Per installare o importare componenti in un'applicazione, usare i metodi [**nell'oggetto COMAdminCatalog.**](comadmincatalog.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **WOWInprocServers** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta WOWInprocServers** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -42,9 +42,9 @@ La raccolta **WOWInprocServers** eredita dall'interfaccia [**IUnknown**](/window
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
--   [CLSID](#clsid)
+-   [Clsid](#clsid)
 -   [InprocServer32](#inprocserver32)
 -   [ProgID](#progid)
 
@@ -54,10 +54,10 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | GUID per il componente. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | GUID per il componente. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                  |
 | Type           | string                                                                                                                                                    |
-| Predefinito        | N/D                                                                                                                                                       |
+| Predefinito        | N/A                                                                                                                                                       |
 | Sistema minimo | Windows XP                                                                                                                                                |
 
 
@@ -73,7 +73,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Percorso del file per il componente. |
 | Access         | ReadOnly                         |
 | Type           | string                           |
-| Predefinito        | N/D                              |
+| Predefinito        | N/A                              |
 | Sistema minimo | Windows XP                       |
 
 
@@ -89,7 +89,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Nome che identifica il componente. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                            |
 | Type           | string                                                                                                                                                              |
-| Predefinito        | N/D                                                                                                                                                                 |
+| Predefinito        | N/A                                                                                                                                                                 |
 | Sistema minimo | Windows XP                                                                                                                                                          |
 
 

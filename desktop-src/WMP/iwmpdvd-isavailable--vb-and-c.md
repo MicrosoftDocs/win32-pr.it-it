@@ -1,9 +1,9 @@
 ---
-title: IWMPDVD. disavailable (VB e C)
-description: La proprietà disavailable (il \_ metodo Get disavailable in C \) ottiene un valore che indica se un tipo specificato di informazioni è disponibile o se è possibile eseguire un'azione specificata.
+title: IWMPDVD.isAvailable (VB e C )
+description: La proprietà isAvailable (il metodo get isAvailable in C\ ) ottiene un valore che indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire \_ un'azione specificata.
 ms.assetid: 55690783-df2f-473d-a6f2-a4907b7e8a78
 keywords:
-- IWMPDVD. disavailable (VB e C) Windows Media Player
+- IWMPDVD.isAvailable (VB e C ) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e3409da619f337b61606baaf546cebbb438087c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c78c9dda7bff764752dc55524000ccd3695863afe69dcf45c2ed971c9c0373fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415921"
 ---
-# <a name="iwmpdvdisavailable-vb-and-c"></a>IWMPDVD. disavailable (VB e C#)
+# <a name="iwmpdvdisavailable-vb-and-c"></a>IWMPDVD.isAvailable (VB e C#)
 
-La **proprietà IsValid (il** metodo **get \_ disavailable** in C#) ottiene un valore che indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire un'azione specificata.
+La **proprietà isAvailable** (metodo **get \_ isAvailable** in C#) ottiene un valore che indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire un'azione specificata.
 
 
 ```
@@ -49,18 +49,18 @@ System.Boolean get_isAvailable (
 
 *bstrItem*
 
-System. String che corrisponde a uno dei valori seguenti.
+Oggetto System.String che è uno dei valori seguenti.
 
 
 
 | Valore      | Descrizione                                                                                   |
 |------------|-----------------------------------------------------------------------------------------------|
-| Indietro       | Individua se è disponibile il metodo **IWMPDVD. back** .                                   |
-| DVD        | Rileva se il DVD è caricato.                                                          |
-| dvdDecoder | Rileva se il decoder DVD è installato nel sistema.                                     |
-| resume     | Rileva se il metodo **IWMPDVD. Resume** è disponibile.                                 |
-| titleMenu  | Rileva se il metodo **IWMPDVD. titleMenu** è disponibile.                              |
-| Menu di scelta rapida    | Rileva se il metodo **IWMPDVD. tomenu** è disponibile. Comunemente chiamato menu radice. |
+| Indietro       | Individua se il **metodo IWMPDVD.back** è disponibile.                                   |
+| Dvd        | Individua se il DVD è caricato.                                                          |
+| dvdDecoder | Individua se il decodificatore DVD è installato nel sistema.                                     |
+| resume     | Individua se il **metodo IWMPDVD.resume** è disponibile.                                 |
+| titleMenu  | Individua se il **metodo IWMPDVD.titleMenu** è disponibile.                              |
+| topMenu    | Individua se il **metodo IWMPDVD.topMenu** è disponibile. Comunemente chiamato menu radice. |
 
 
 
@@ -70,13 +70,13 @@ System. String che corrisponde a uno dei valori seguenti.
 
 **System.Boolean**
 
-**System. Boolean** che indica se un tipo specificato di informazioni è disponibile o se è possibile eseguire un'azione specificata.
+Valore **System.Boolean che** indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire un'azione specificata.
 
 ## <a name="remarks"></a>Commenti
 
-Le funzionalità DVD di Windows Media Player non funzioneranno nei computer in cui non è installato un decoder DVD. È possibile determinare se un decodificatore è disponibile chiamando la proprietà **disavailable** (il metodo **get \_ disavailable** in C#) e passando il valore **System. String** "dvdDecoder".
+Le funzionalità DVD Windows Media Player non funzionano nei computer in cui non è installato un decodificatore DVD. È possibile determinare se un decodificatore è disponibile chiamando la proprietà **isAvailable** (metodo **get \_ isAvailable** in C#) e passando il valore **System.String** "dvdDecoder".
 
-Ogni DVD viene creato in modo diverso. I metodi disponibili durante la riproduzione e la navigazione in DVD dipendono dal modo in cui viene creato il DVD.
+Ogni DVD viene creato in modo diverso. I metodi disponibili durante la riproduzione e la navigazione dei DVD dipendono dalla modalità di creazione del DVD.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Ogni DVD viene creato in modo diverso. I metodi disponibili durante la riproduzi
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -97,16 +97,16 @@ Ogni DVD viene creato in modo diverso. I metodi disponibili durante la riproduzi
 [**Interfaccia IWMPDVD (VB e C#)**](iwmpdvd--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPDVD. Back (VB e C#)**](wmplibiwmpdvd-iwmpdvd-back--vb-and-c.md)
+[**IWMPDVD.back (VB e C#)**](wmplibiwmpdvd-iwmpdvd-back--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPDVD. Resume (VB e C#)**](wmplibiwmpdvd-iwmpdvd-resume--vb-and-c.md)
+[**IWMPDVD.resume (VB e C#)**](wmplibiwmpdvd-iwmpdvd-resume--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPDVD. titleMenu (VB e C#)**](wmplibiwmpdvd-iwmpdvd-titlemenu--vb-and-c.md)
+[**IWMPDVD.titleMenu (VB e C#)**](wmplibiwmpdvd-iwmpdvd-titlemenu--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPDVD. tomenu (VB e C#)**](wmplibiwmpdvd-iwmpdvd-topmenu--vb-and-c.md)
+[**IWMPDVD.topMenu (VB e C#)**](wmplibiwmpdvd-iwmpdvd-topmenu--vb-and-c.md)
 </dt> </dl>
 
  

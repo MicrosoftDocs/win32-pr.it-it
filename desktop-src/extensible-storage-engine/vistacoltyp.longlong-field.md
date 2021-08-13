@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo VistaColtyp. LongLong'
-title: Campo VistaColtyp. LongLong (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Campo VistaColtyp.LongLong'
+title: Campo VistaColtyp.LongLong (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LongLong field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp.LongLong
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp.longlong(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df5e4a7e31dd40b786fdc69bbedc047879c225ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75b0575a1416b02df279c17b1a2ad1800b912524f6dbebd60cf607ad3ef6d3aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471171"
 ---
-# <a name="vistacoltyplonglong-field"></a>Campo VistaColtyp. LongLong
+# <a name="vistacoltyplonglong-field"></a>Campo VistaColtyp.LongLong
 
-Signed numero a 64 bit.
+Numero a 64 bit con segno.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_coltyp LongLong
 
 [Membri di VistaColtyp](./vistacoltyp-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

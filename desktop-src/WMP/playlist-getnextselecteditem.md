@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. getNextSelectedItem
-description: Il metodo getNextSelectedItem recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato.
+title: PLAYLIST.getNextSelectedItem
+description: Il metodo getNextSelectedItem recupera l'indice dell'elemento selezionato successivo nella playlist dopo l'indice specificato.
 ms.assetid: d46d3a65-8863-4a2f-9add-0701c8283a6b
 keywords:
-- PLAYLIST. getNextSelectedItem Windows Media Player
+- PLAYLIST.getNextSelectedItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c5e37ad5109066a11cf28a593ed69f8c86b8b639
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 872dd31694384dfa35d7ce98c2f26756ede14539f4e788cbb6f699d17ca78a8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467751"
 ---
-# <a name="playlistgetnextselecteditem"></a>PLAYLIST. getNextSelectedItem
+# <a name="playlistgetnextselecteditem"></a>PLAYLIST.getNextSelectedItem
 
-Il metodo **getNextSelectedItem** recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato.
+Il **metodo getNextSelectedItem** recupera l'indice dell'elemento selezionato successivo nella playlist dopo l'indice specificato.
 
 ``` syntax
         elementID.getNextSelectedItem(item)
@@ -32,22 +32,22 @@ Il metodo **getNextSelectedItem** recupera l'indice del successivo elemento sele
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*elemento*
+<span id="item"></span><span id="ITEM"></span>*Elemento*
 </dt> <dd>
 
-**Numero** (**Long**) che indica l'indice dell'elemento in cui eseguire la ricerca.
+**Numero** (**long**) che indica l'indice dell'elemento in cui eseguire la ricerca.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**).
+Questo metodo restituisce un **valore Number** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
 Quando non sono presenti altri elementi selezionati, questo metodo restituisce 1.
 
-Questo metodo è stato sostituito da **getNextSelectedItem2**, che supporta le playlist nidificate.
+Questo metodo è stato sostituito da **getNextSelectedItem2**, che supporta playlist annidate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,7 +55,7 @@ Questo metodo è stato sostituito da **getNextSelectedItem2**, che supporta le p
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -63,10 +63,10 @@ Questo metodo è stato sostituito da **getNextSelectedItem2**, che supporta le p
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. getNextSelectedItem2**](playlist-getnextselecteditem2.md)
+[**PLAYLIST.getNextSelectedItem2**](playlist-getnextselecteditem2.md)
 </dt> </dl>
 
  

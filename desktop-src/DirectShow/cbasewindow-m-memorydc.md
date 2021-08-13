@@ -1,7 +1,7 @@
 ---
 description: Handle per il contesto di dispositivo di memoria.
 ms.assetid: e6edf3fb-67d6-425e-94fe-18e91c56fabb
-title: 'Membro CBaseWindow:: m_MemoryDC (Winutil. h)'
+title: Membro CBaseWindow::m_MemoryDC (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e313dd43d2a37597a4cef0b23218f052aea07130
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3582c412a5036ca02531c97d35919704a6afda2b07a670b3d978ca8b3d2d55f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658030"
 ---
-# <a name="cbasewindowm_memorydc-member"></a>Membro MemoryDC di CBaseWindow:: m \_
+# <a name="cbasewindowm_memorydc-member"></a>Membro CBaseWindow::m \_ MemoryDC
 
 Handle per il contesto di dispositivo di memoria.
 
@@ -42,8 +42,8 @@ HDC m_MemoryDC;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: Attraversamento dell'elenco dei moduli
+title: Attraversamento dell'elenco di moduli
 description: Nell'esempio seguente viene ottenuto un elenco di moduli per il processo specificato.
 ms.assetid: 8efe1e13-6222-496a-bff3-90f53b03c750
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9be7df4d992b8958a09ec92f722cd7bb9c151f7b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3f84907cfeba5a9106616d68a3039dd1555e0f4c238ae111df4c886f7664f27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119419191"
 ---
-# <a name="traversing-the-module-list"></a>Attraversamento dell'elenco dei moduli
+# <a name="traversing-the-module-list"></a>Attraversamento dell'elenco di moduli
 
-Nell'esempio seguente viene ottenuto un elenco di moduli per il processo specificato. La `ListProcessModules` funzione acquisisce uno snapshot dei moduli associati a un determinato processo usando la funzione [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot) e quindi esamina l'elenco usando le funzioni [**Module32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32first) e [**Module32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32next) . Il `dwPID` parametro di `ListProcessModules` identifica il processo per il quale devono essere enumerati i moduli e viene in genere ottenuto chiamando **CreateToolhelp32Snapshot** per enumerare i processi in esecuzione nel sistema. Vedere [acquisizione di uno snapshot e visualizzazione dei processi](taking-a-snapshot-and-viewing-processes.md) per una semplice applicazione console che usa questa funzione.
+Nell'esempio seguente viene ottenuto un elenco di moduli per il processo specificato. La funzione crea uno snapshot dei moduli associati a un determinato processo usando la funzione `ListProcessModules` [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot) e quindi illustra l'elenco usando le funzioni [**Module32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32first) e [**Module32Next.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32next) Il parametro di identifica il processo per cui devono essere enumerati i moduli e viene in genere ottenuto chiamando `dwPID` `ListProcessModules` **CreateToolhelp32Snapshot** per enumerare i processi in esecuzione nel sistema. Vedere [Creazione di uno snapshot e visualizzazione dei processi per](taking-a-snapshot-and-viewing-processes.md) una semplice applicazione console che usa questa funzione.
 
-Una semplice funzione di segnalazione degli errori, `printError` , Visualizza la causa di eventuali errori, che in genere risultano da restrizioni di sicurezza.
+Una semplice funzione di segnalazione degli errori, , visualizza il motivo di eventuali errori, che in genere `printError` derivano da restrizioni di sicurezza.
 
 
 ```C++
@@ -110,12 +110,12 @@ void printError( TCHAR* msg )
 
 <dl> <dt>
 
-[Esplorazione del modulo](module-walking.md)
+[Module Walking](module-walking.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetFreeBuffer'
-title: API. JetFreeBuffer, metodo
+description: 'Altre informazioni su: Metodo Api.JetFreeBuffer'
+title: Metodo Api.JetFreeBuffer
 TOCTitle: 'JetFreeBuffer method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetFreeBuffer(System.IntPtr)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetfreebuffer(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a584caf0f7c59c77e7d3c4a058a03780043e0f87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 902fb39a566c7c61f652d1a3796b20d550ce4bd2b61d706b955469af5762011d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272485"
 ---
-# <a name="apijetfreebuffer-method"></a>API. JetFreeBuffer, metodo
+# <a name="apijetfreebuffer-method"></a>Metodo Api.JetFreeBuffer
 
 Libera la memoria allocata da una chiamata al motore di database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,13 +58,13 @@ public static void JetFreeBuffer(
 #### <a name="parameters"></a>Parametri
 
   - buffer  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Buffer allocato da una chiamata al motore di database. [Zero](/dotnet/api/system.intptr.zero) è accettabile e verrà ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è interno perché non viene mai esposta la memoria allocata da ESENT ai chiamanti.
+Questo metodo è interno perché la memoria allocata da ESENT non viene mai esponga ai chiamanti.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -72,6 +72,6 @@ Questo metodo è interno perché non viene mai esposta la memoria allocata da ES
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

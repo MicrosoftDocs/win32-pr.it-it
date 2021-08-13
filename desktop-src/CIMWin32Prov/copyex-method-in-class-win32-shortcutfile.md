@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6cbf1cbb622610a01a533195752b3532b25f8959
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6c50330f44fe481398ca9c831c349d3b99a33f735b13be7cc5843c566b8897a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676742"
 ---
-# <a name="copyex-method-of-the-win32_shortcutfile-class"></a>Metodo CopyEx della \_ classe ShortcutFile Win32
+# <a name="copyex-method-of-the-win32_shortcutfile-class"></a>Metodo CopyEx della classe ShortcutFile Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CopyEx** copia il file di collegamento logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro *filename* . Questo metodo è una versione estesa del metodo [**Copy**](copy-method-in-class-win32-directory.md) . Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
+Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CopyEx** copia il file di collegamento logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal *parametro FileName.* Questo metodo è una versione estesa del [**metodo Copy.**](copy-method-in-class-win32-directory.md) Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,36 +45,36 @@ uint32 CopyEx(
 
 <dl> <dt>
 
-*Nome file* \[ in\]
+*FileName* \[ Pollici\]
 </dt> <dd>
 
 Nome completo della copia del file (o directory).
 
-Esempio: c: \\ temp \\ NewDirectory.
+Esempio: c: \\ temp \\ newdirectory.
 
 </dd> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo **CopyEx** non è riuscito. Questo parametro è **null** se il metodo ha esito positivo.
+Nome del file o della directory in cui il **metodo CopyEx non** è riuscito. Questo parametro è **NULL** se il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Denomina il file o la directory figlio da utilizzare come punto di partenza per **CopyEx**. Il parametro *StartFileName* è in genere il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **null**, l'operazione viene eseguita sul file o sulla directory specificata nella chiamata ExecMethod.
+Nome del file o della directory figlio da usare come punto di partenza per **CopyEx.** Il *parametro StartFileName* è in genere il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **NULL,** l'operazione viene eseguita sul file o sulla directory specificata nella chiamata a ExecMethod.
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, la modifica della proprietà verrà applicata in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) .
+Se **true,** la modifica della proprietà verrà applicata in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di \_ CiM LogicalFile.**](cim-logicalfile.md)
 
 > [!Note]  
-> Per le istanze di file, il parametro di input *ricorsivo* viene ignorato.
+> Per le istanze di file, *il parametro di* input Ricorsivo viene ignorato.
 
  
 
@@ -82,7 +82,7 @@ Se **true**, la modifica della proprietà verrà applicata in modo ricorsivo a f
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -159,7 +159,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -186,7 +186,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -198,7 +198,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ShortcutFile Win32**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

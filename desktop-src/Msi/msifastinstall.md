@@ -1,36 +1,36 @@
 ---
-description: È possibile utilizzare la proprietà MSIFASTINSTALL per ridurre il tempo necessario per l'installazione di un pacchetto di Windows Installer di grandi dimensioni.
+description: La proprietà MSIFASTINSTALL può essere usata per ridurre il tempo necessario per installare un pacchetto di installazione di Windows di grandi dimensioni.
 ms.assetid: 011668da-da04-4b80-989e-192b0daa3060
-title: Proprietà MSIFASTINSTALL
+title: MSIFASTINSTALL - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9474e295269fa4a8347210653bed5db772878662
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd28c731d34e769f0612acc12586349247231bce663036d3577f41df6a7256f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118628504"
 ---
-# <a name="msifastinstall-property"></a>Proprietà MSIFASTINSTALL
+# <a name="msifastinstall-property"></a>MSIFASTINSTALL - proprietà
 
-È possibile utilizzare la proprietà **MSIFASTINSTALL** per ridurre il tempo necessario per l'installazione di un pacchetto di Windows Installer di grandi dimensioni. La proprietà può essere impostata nella riga di comando o nella tabella delle [Proprietà](property-table.md) per configurare le operazioni che l'utente o lo sviluppatore determina non sono essenziali per l'installazione.
+La **proprietà MSIFASTINSTALL** può essere usata per ridurre il tempo necessario per installare un pacchetto di installazione di Windows di grandi dimensioni. La proprietà può essere impostata nella riga di comando o nella tabella [Property](property-table.md) per configurare le operazioni che l'utente o lo sviluppatore determina come non essenziali per l'installazione.
 
-Il valore della proprietà **MSIFASTINSTALL** può essere una combinazione dei valori seguenti.
+Il valore della **proprietà MSIFASTINSTALL** può essere una combinazione dei valori seguenti.
 
 
 
 | Valore | Significato                                                                      |
 |-------|------------------------------------------------------------------------------|
 | 0     | Valore predefinito                                                                |
-| 1     | Nessun punto di ripristino di sistema salvato per questa installazione.                      |
-| 2     | Eseguire solo il [costo del file](file-costing.md) e ignorare il controllo di altri costi. |
+| 1     | Per questa installazione non viene salvato alcun punto di ripristino del sistema.                      |
+| 2     | Eseguire solo [la determinazione dei costi dei file](file-costing.md) e ignorare il controllo degli altri costi. |
 | 4     | Ridurre la frequenza dei messaggi di stato.                                   |
 
 
 
  
 
-**[Windows Installer 4,5 o versioni precedenti](not-supported-in-windows-installer-4-5.md):** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5,0.
+**[Windows Installer 4.5 o versioni precedenti:](not-supported-in-windows-installer-4-5.md)** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5.0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,7 +38,7 @@ Il valore della proprietà **MSIFASTINSTALL** può essere una combinazione dei v
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack minimo Windows richiesto da una versione Windows Installer.<br/> |
 
 
 

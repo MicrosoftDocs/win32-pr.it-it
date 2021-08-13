@@ -1,7 +1,7 @@
 ---
 description: Associa i dati delle impostazioni a un elemento gestito.
 ms.assetid: 3fdf111b-3ec1-4559-94ce-27d6a8cd0080
-title: Classe CIM_SettingsDefineState
+title: CIM_SettingsDefineState classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1931b365108bb7b3df4269ae6acbb78292a0401d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4278043511348f3df5f72886f0c96bf18a34158a61b31a4590f880c7a1c0f150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647269"
 ---
-# <a name="cim_settingsdefinestate-class"></a>CIM \_ SettingsDefineState (classe)
+# <a name="cim_settingsdefinestate-class"></a>Classe CIM \_ SettingsDefineState
 
 Associa i dati delle impostazioni a un elemento gestito.
 
@@ -39,33 +39,33 @@ class CIM_SettingsDefineState
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SettingsDefineState** presenta questi tipi di membri:
+La **classe CIM \_ SettingsDefineState** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SettingsDefineState** dispone di queste proprietà.
+La **classe CIM \_ SettingsDefineState** ha queste proprietà.
 
 <dl> <dt>
 
 **ManagedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **Chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Elemento gestito nell'associazione.
 
 </dd> <dt>
 
-**SettingData**
+**Impostazione dei dati**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **CIM \_ SettingData**
@@ -74,7 +74,7 @@ Tipo di dati: **CIM \_ SettingData**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **Chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Dati delle impostazioni nell'associazione.
@@ -88,9 +88,9 @@ Dati delle impostazioni nell'associazione.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

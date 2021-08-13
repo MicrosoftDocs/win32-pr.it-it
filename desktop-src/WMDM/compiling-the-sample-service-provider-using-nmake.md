@@ -1,27 +1,27 @@
 ---
-title: Compilazione del provider di servizi di esempio mediante NMAKE
-description: Compilazione del provider di servizi di esempio mediante NMAKE
+title: Compilazione del provider di servizi di esempio tramite NMAKE
+description: Compilazione del provider di servizi di esempio tramite NMAKE
 ms.assetid: d2916cd7-0257-442f-83ec-718f2b7085d0
 keywords:
-- Windows Media Gestione dispositivi, esempi
+- Windows Gestione dispositivi multimediali, esempi
 - Gestione dispositivi, esempi
-- Windows Media Gestione dispositivi, esempio di provider di servizi
-- Gestione dispositivi, esempio di provider di servizi
+- Windows Media Device Manager, esempio di provider di servizi
+- Device Manager, esempio di provider di servizi
 - provider di servizi, esempi
 - esempi, provider di servizi
 - esempi, compilazione con NMAKE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdb03efd2d51ee75da3ad09fdbca30aafb3fd3c9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e734c64b13eeb90c95126509201e2fad054b1c353180cdfa73ce6d74319d45b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586152"
 ---
-# <a name="compiling-the-sample-service-provider-using-nmake"></a>Compilazione del provider di servizi di esempio mediante NMAKE
+# <a name="compiling-the-sample-service-provider-using-nmake"></a>Compilazione del provider di servizi di esempio tramite NMAKE
 
-Per compilare il provider di servizi di esempio con NMAKE, aprire una finestra di comando di Visual Studio, passare a <*percorso di installazione di SDK* > \\ WMFSDK95 \\ WMDM \\ MDSP e immettere `nmake` al prompt.
+Per compilare il provider di servizi di esempio usando NMAKE, aprire una finestra di comando di Visual Studio, passare al percorso di installazione di <*SDK* > \\ WMFSDK95 \\ WMDM mdsp e immettere al \\ `nmake` prompt.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -30,9 +30,9 @@ Per compilare il provider di servizi di esempio con NMAKE, aprire una finestra d
 [**Provider di servizi di esempio**](sample-service-provider.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Dichiara un nuovo indice nel database specificato.
 ms.assetid: 21a09201-8f84-4263-b258-77716826a3cd
-title: SdbDeclareIndex (funzione)
+title: Funzione SdbDeclareIndex
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 68004a29d01288a2e1d177b8a33df32b919e73ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b428699641d5a18bad8a1869f59ab1bb5402e7b667526070c3dc0575e435fc38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118666590"
 ---
-# <a name="sdbdeclareindex-function"></a>SdbDeclareIndex (funzione)
+# <a name="sdbdeclareindex-function"></a>Funzione SdbDeclareIndex
 
 Dichiara un nuovo indice nel database specificato.
 
@@ -44,51 +44,51 @@ BOOL WINAPI SdbDeclareIndex(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tWhich* \[ in\]
+*tWhich* \[ Pollici\]
 </dt> <dd>
 
-Questo parametro deve essere **un \_ \_ elenco di tipi di tag**.
+Questo parametro deve essere **TAG \_ TYPE \_ LIST.**
 
 </dd> <dt>
 
-*tKey* \[ in\]
+*tKey* \[ Pollici\]
 </dt> <dd>
 
-TAG che specifica il tipo da utilizzare come chiave. Questo parametro non può essere un **\_ \_ elenco di tipi di tag**.
+TAG che specifica il tipo da usare come chiave. Questo parametro non può essere **TAG \_ TYPE \_ LIST**.
 
 </dd> <dt>
 
-*dwEntries* \[ in\]
+*dwEntries* \[ Pollici\]
 </dt> <dd>
 
 Numero di voci da allocare nell'indice.
 
 </dd> <dt>
 
-*bUniqueKey* \[ in\]
+*bUniqueKey* \[ Pollici\]
 </dt> <dd>
 
-Se questo parametro è **true**, l'indice è un indice di chiave univoca.
+Se questo parametro è **TRUE,** l'indice è un indice di chiave univoca.
 
 </dd> <dt>
 
-*piiIndex* \[ out\]
+*piiIndex* \[ Cambio\]
 </dt> <dd>
 
-**INDEXID** risultante dell'indice appena dichiarato.
+INDEXID **risultante** dell'indice appena dichiarato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="remarks"></a>Commenti
 
@@ -100,8 +100,8 @@ Chiamare questa funzione prima di scrivere tag nel nuovo indice.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

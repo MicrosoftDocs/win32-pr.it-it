@@ -3,7 +3,7 @@ title: Tipo complesso ImportChannelType
 description: Identifica un canale definito da un altro provider o in un manifesto che contiene una sezione di metadati.
 ms.assetid: da14d837-0ed8-4d85-9820-46c77753768d
 keywords:
-- Log eventi di tipo complesso ImportChannelType
+- EventLog di tipo complesso ImportChannelType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7500d52179c3282c7f15dcdd5dd5a32620bbc076
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66136ee767c16aa85bfcef33fd23d5d42817f844fc309f7633d2a3d2bd35f2e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471052"
 ---
 # <a name="importchanneltype-complex-type"></a>Tipo complesso ImportChannelType
 
@@ -55,15 +55,15 @@ Identifica un canale definito da un altro provider o in un manifesto che contien
 
 | Nome   | Tipo                                                              | Descrizione                                                                                                                                                                                                                                                                                                            |
 |--------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| figlio   | token                                                             | Identificatore che identifica in modo univoco il canale nell'elenco di canali che il provider definisce o importa. Utilizzare questo valore quando si fa riferimento a questo canale in una definizione di evento. Se non si specifica un identificatore di canale, utilizzare il nome del canale per fare riferimento a questo canale in una definizione di evento.<br/>  |
+| chid   | token                                                             | Identificatore che identifica in modo univoco il canale nell'elenco di canali definiti o importati dal provider. Usare questo valore quando si fa riferimento a questo canale in una definizione di evento. Se non si specifica un identificatore di canale, usare il nome del canale per fare riferimento a questo canale in una definizione di evento.<br/>  |
 | name   | anyURI                                                            | Nome del canale da importare.<br/>                                                                                                                                                                                                                                                                          |
-| simbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Simbolo da utilizzare per fare riferimento al canale nell'applicazione. Il [**compilatore di messaggi (MC.exe)**](message-compiler--mc-exe-.md) usa il simbolo per creare una costante per il canale nel file di intestazione generato dal compilatore. Se non si specifica un simbolo, il compilatore ne genera uno automaticamente.<br/> |
+| simbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Simbolo da usare per fare riferimento al canale nell'applicazione. Il [**compilatore di messaggi (MC.exe)**](message-compiler--mc-exe-.md) usa il simbolo per creare una costante per il canale nel file di intestazione generato dal compilatore. Se non si specifica un simbolo, il compilatore ne genera uno automaticamente.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il manifesto che ha definito il canale importato deve essere installato prima che il provider scriva gli eventi; in caso contrario, gli eventi non possono essere scritti nel canale (l'operazione di scrittura ha esito positivo, gli eventi non vengono semplicemente scritti nel canale).
+Il manifesto che ha definito il canale importato deve essere installato prima che il provider scrive gli eventi. In caso contrario, gli eventi non possono essere scritti nel canale (l'operazione di scrittura ha esito positivo, gli eventi non vengono semplicemente scritti nel canale).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Il manifesto che ha definito il canale importato deve essere installato prima ch
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

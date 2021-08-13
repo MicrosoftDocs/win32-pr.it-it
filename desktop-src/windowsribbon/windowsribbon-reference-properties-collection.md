@@ -1,31 +1,31 @@
 ---
 title: Proprietà di raccolta
-description: Documentazione di riferimento sulle chiavi di proprietà per i controlli basati sulla raccolta del Framework della barra multifunzione.
+description: Documentazione di riferimento sulle chiavi di proprietà per i controlli basati su raccolte del framework della barra multifunzione.
 ms.assetid: fa317765-25e2-42ef-8558-fb5ef951fc17
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d9aa78db8acdf7b0a1a4f994f65c08e774129f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eef0698f41e870f834ea55e97d34957edbffdf28675caac9ac0191b6299bca68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118438796"
 ---
 # <a name="collection-properties"></a>Proprietà di raccolta
 
-Documentazione di riferimento sulle chiavi di proprietà per i controlli basati sulla raccolta del Framework della barra multifunzione.
+Documentazione di riferimento sulle chiavi di proprietà per i controlli basati su raccolte del framework della barra multifunzione.
 
 
 
 | Argomento                                                                                | Contenuto                                                   |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [\_Categorie pkey dell'interfaccia utente \_](windowsribbon-reference-properties-uipkey-categories.md)     | Identifica la \_ proprietà delle categorie pkey dell'interfaccia utente \_ .<br/>   |
-| [PKEY dell'interfaccia utente \_ \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md)     | Identifica la \_ proprietà CategoryID pkey dell'interfaccia utente \_ .<br/>   |
-| [Interfaccia utente \_ pkey \_ CommandID](windowsribbon-reference-properties-uipkey-commandid.md)       | Identifica la \_ \_ Proprietà CommandID dell'interfaccia utente pkey.<br/>    |
-| [Interfaccia utente \_ pkey \_ CommandType](windowsribbon-reference-properties-uipkey-commandtype.md)   | Identifica la \_ proprietà CommandType pkey dell'interfaccia utente \_ .<br/>  |
-| [Interfaccia utente \_ pkey \_ ItemImage](windowsribbon-reference-properties-uipkey-itemimage.md)       | Identifica la proprietà ItemImage dell'interfaccia utente \_ pkey \_ .<br/>    |
-| [Interfaccia utente \_ pkey \_ ItemsSource](windowsribbon-reference-properties-uipkey-itemssource.md)   | Identifica la proprietà ItemsSource dell'interfaccia utente \_ pkey \_ .<br/>  |
-| [Interfaccia utente \_ pkey \_ SelectedItem](windowsribbon-reference-properties-uipkey-selecteditem.md) | Identifica la \_ proprietà SelectedItem pkey dell'interfaccia utente \_ .<br/> |
+| [Categorie \_ DI CHIAVI \_ dell'interfaccia utente](windowsribbon-reference-properties-uipkey-categories.md)     | Identifica la proprietà \_ UI PKEY \_ Categories.<br/>   |
+| [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md)     | Identifica la proprietà \_ CategoryId PKEY \_ dell'interfaccia utente.<br/>   |
+| [UI \_ PKEY \_ CommandId](windowsribbon-reference-properties-uipkey-commandid.md)       | Identifica la proprietà \_ CommandId PKEY \_ dell'interfaccia utente.<br/>    |
+| [UI \_ PKEY \_ CommandType](windowsribbon-reference-properties-uipkey-commandtype.md)   | Identifica la proprietà \_ CommandType PKEY \_ dell'interfaccia utente.<br/>  |
+| [UI \_ PKEY \_ ItemImage](windowsribbon-reference-properties-uipkey-itemimage.md)       | Identifica la proprietà \_ ItemImage PKEY \_ dell'interfaccia utente.<br/>    |
+| [UI \_ PKEY \_ ItemsSource](windowsribbon-reference-properties-uipkey-itemssource.md)   | Identifica la proprietà \_ ItemsSource PKEY \_ dell'interfaccia utente.<br/>  |
+| [UI \_ PKEY \_ SelectedItem](windowsribbon-reference-properties-uipkey-selecteditem.md) | Identifica la proprietà \_ SelectedItem PKEY \_ dell'interfaccia utente.<br/> |
 
 
 
@@ -47,10 +47,10 @@ Documentazione di riferimento sulle chiavi di proprietà per i controlli basati 
 [Raccolta a discesa](windowsribbon-controls-dropdowngallery.md)
 </dt> <dt>
 
-[Raccolta della barra multifunzione](windowsribbon-controls-inribbongallery.md)
+[Raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
-[Raccolta di pulsanti di suddivisione](windowsribbon-controls-splitbuttongallery.md)
+[Raccolta di pulsanti di menu suddivisi](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Esempio di raccolta](windowsribbon-gallerysample.md)

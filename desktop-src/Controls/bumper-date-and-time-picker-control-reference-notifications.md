@@ -1,29 +1,29 @@
 ---
-title: Notifiche selezione data e ora
-description: Notifiche selezione data e ora
+title: Notifiche di selezione data e ora
+description: Notifiche di selezione data e ora
 ms.assetid: 2b3eaf5b-11f7-4e95-8d8d-1808d447da81
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a27d0c01306fd2d6aa8e0a58e9e94559a273b184
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e005adc672fbc129f822bc98e702280164221f66169a40983c2aed27015220cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673554"
 ---
-# <a name="date-and-time-picker-notifications"></a>Notifiche selezione data e ora
+# <a name="date-and-time-picker-notifications"></a>Notifiche di selezione data e ora
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [primo piano DTN \_](dtn-closeup.md)
--   [\_DATETIMECHANGE DTN](dtn-datetimechange.md)
--   [\_elenco a discesa DTN](dtn-dropdown.md)
--   [\_formato DTN](dtn-format.md)
--   [\_FORMATQUERY DTN](dtn-formatquery.md)
--   [\_USERSTRING DTN](dtn-userstring.md)
--   [\_WMKEYDOWN DTN](dtn-wmkeydown.md)
--   [NM \_ KILLFOCUS (data/ora)](nm-killfocus-date-time.md)
--   [\_Stato SetFocus di Nm (data/ora)](nm-setfocus-date-time-.md)
+-   [PRIMO PIANO \_ DTN](dtn-closeup.md)
+-   [DTN \_ DATETIMECHANGE](dtn-datetimechange.md)
+-   [ELENCO A DISCESA \_ DTN](dtn-dropdown.md)
+-   [FORMATO \_ DTN](dtn-format.md)
+-   [DTN \_ FORMATQUERY](dtn-formatquery.md)
+-   [DTN \_ USERSTRING](dtn-userstring.md)
+-   [DTN \_ WMKEYDOWN](dtn-wmkeydown.md)
+-   [NM \_ KILLFOCUS (data e ora)](nm-killfocus-date-time.md)
+-   [NM \_ SETFOCUS (data e ora)](nm-setfocus-date-time-.md)
 
  
 

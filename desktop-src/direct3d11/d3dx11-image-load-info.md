@@ -1,10 +1,10 @@
 ---
-title: Struttura D3DX11_IMAGE_LOAD_INFO (D3DX11tex. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Fornire facoltativamente informazioni alle API del caricatore di trama per controllare la modalità di caricamento delle trame. | Struttura D3DX11_IMAGE_LOAD_INFO (D3DX11tex. h)
+title: D3DX11_IMAGE_LOAD_INFO struttura (D3DX11tex.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. | D3DX11_IMAGE_LOAD_INFO (D3DX11tex.h)
 ms.assetid: 6cd2f590-4e15-41e6-9f04-cd91eeb082db
 keywords:
-- Struttura D3DX11_IMAGE_LOAD_INFO Direct3D 11
-- Puntatore alla struttura LPD3DX11_IMAGE_LOAD_INFO Direct3D 11
+- D3DX11_IMAGE_LOAD_INFO struttura Direct3D 11
+- LPD3DX11_IMAGE_LOAD_INFO puntatore alla struttura Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -15,21 +15,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2905d135a515f4ef90557ac74c35665623462439
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
-ms.translationtype: HT
+ms.openlocfilehash: c45bc3b9ec948c869b121190f52435a257141f1e5a6e9f36c347ab29bafb5522
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118536858"
 ---
-# <a name="d3dx11_image_load_info-structure"></a>\_Struttura delle \_ informazioni sul caricamento dell'immagine D3DX11 \_
+# <a name="d3dx11_image_load_info-structure"></a>Struttura D3DX11 \_ IMAGE \_ LOAD \_ INFO
 
 > [!Note]  
-> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
+> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store.
 
  
 
-Fornire facoltativamente informazioni alle API del caricatore di trama per controllare la modalità di caricamento delle trame. Il valore predefinito D3DX11 \_ per uno di questi parametri provocherà l'uso automatico del valore del file di origine da parte di D3DX.
+Facoltativamente, fornire informazioni alle API del caricatore di trame per controllare la modalità di caricamento delle trame. Il valore D3DX11 DEFAULT per uno di questi parametri fa in modo che D3DX usi automaticamente il valore \_ del file di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ typedef struct D3DX11_IMAGE_LOAD_INFO {
 **Larghezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -72,143 +72,143 @@ Larghezza di destinazione della trama. Se la larghezza effettiva della trama è 
 **Altezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Altezza di destinazione della trama. Se l'altezza effettiva della trama è maggiore o minore di questo valore, la trama verrà ridimensionata verso l'alto o verso il basso per adattarla a questa altezza di destinazione.
+Altezza di destinazione della trama. Se l'altezza effettiva della trama è maggiore o minore di questo valore, la trama verrà ridimensionata verso l'alto o verso il basso per adattarla all'altezza di destinazione.
 
 </dd> <dt>
 
 **Livello nidificazione**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Profondità della trama. Questo vale solo per le trame del volume.
+Profondità della trama. Questo vale solo per le trame di volume.
 
 </dd> <dt>
 
 **FirstMipLevel**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Livello di mipmap di risoluzione più alto della trama. Se è maggiore di 0, dopo il caricamento della trama FirstMipLevel verrà eseguito il mapping a mipmap livello 0.
+Livello di mipmap con risoluzione più elevata della trama. Se è maggiore di 0, dopo il caricamento della trama FirstMipLevel verrà eseguito il mapping al livello mipmap 0.
 
 </dd> <dt>
 
 **MipLevels**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Numero massimo di livelli di mipmap nella trama. Vedere la sezione Osservazioni in [**d3d11 \_ TEX1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). Se \_ si usa il valore predefinito 0 o D3DX11, verrà creata una catena mipmap completa.
+Numero massimo di livelli mipmap nella trama. Vedere le osservazioni in [**D3D11 \_ TEX1D \_ SRV.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv) L'uso di 0 o D3DX11 DEFAULT causerà la creazione di una catena \_ mipmap completa.
 
 </dd> <dt>
 
 **Utilizzo**
 </dt> <dd>
 
-Tipo: **[ **\_ utilizzo di d3d11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)**
+Tipo: **[ **D3D11 \_ USAGE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)**
 
 </dd> <dd>
 
-Il modo in cui la risorsa di trama deve essere utilizzata. Vedere [**\_ utilizzo di d3d11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage).
+Modalità di utilizzo della risorsa trama. Vedere [**D3D11 \_ USAGE ( UTILIZZO D3D11).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)
 
 </dd> <dt>
 
-**BindFlags**
+**Flag di associazione**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Fasi della pipeline a cui sarà consentita l'associazione della trama. Vedere [**\_ \_ flag di binding d3d11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag).
+Fasi della pipeline a cui sarà consentita l'associazione della trama. Vedere [**D3D11 \_ BIND \_ FLAG**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag).
 
 </dd> <dt>
 
 **CpuAccessFlags**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Autorizzazioni di accesso che la CPU avrà per la risorsa di trama. Vedere [**\_ flag di \_ accesso \_ alla CPU d3d11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cpu_access_flag).
+Autorizzazioni di accesso che la CPU avrà per la risorsa trama. Vedere [**D3D11 \_ CPU ACCESS FLAG \_ \_ (FLAG DI ACCESSO CPU D3D11).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cpu_access_flag)
 
 </dd> <dt>
 
 **MiscFlags**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Proprietà delle risorse varie ( [**vedere \_ \_ \_ flag varie della risorsa d3d11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)).
+Proprietà varie delle risorse (vedere [**D3D11 \_ RESOURCE \_ MISC \_ FLAG).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
 </dd> <dt>
 
 **Formato**
 </dt> <dd>
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
 </dd> <dd>
 
-Enumerazione [**del \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) che indica il formato in cui si troverà la trama dopo il caricamento.
+Enumerazione [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) che indica il formato della trama dopo il caricamento.
 
 </dd> <dt>
 
 **Filter**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Filtrare la trama usando il filtro specificato (solo quando si esegue il ricampionamento). Vedere [**\_ \_ flag di filtro D3DX11**](d3dx11-filter-flag.md).
+Filtrare la trama usando il filtro specificato (solo durante il ricampionamento). Vedere [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
 
 </dd> <dt>
 
-**MipFilter**
+**Filtro mip**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Filtrare i livelli MIP della trama usando il filtro specificato (solo se si sta generando mipmap). I valori validi sono D3DX11 \_ Filter \_ None, D3DX11 Filter \_ \_ Point, D3DX11 \_ Filter \_ Linear o D3DX11 \_ Filter \_ Triangle. Vedere [**\_ \_ flag di filtro D3DX11**](d3dx11-filter-flag.md).
+Filtrare i livelli mip della trama usando il filtro specificato (solo se si generano mipmap). I valori validi sono D3DX11 \_ FILTER \_ NONE, D3DX11 \_ FILTER \_ POINT, D3DX11 FILTER LINEAR o \_ \_ D3DX11 \_ FILTER \_ TRIANGLE. Vedere [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
 
 </dd> <dt>
 
 **pSrcInfo**
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ Image \_ info**](d3dx11-image-info.md)\***
+Tipo: **[ **D3DX11 \_ IMAGE \_ INFO**](d3dx11-image-info.md)\***
 
 </dd> <dd>
 
-Informazioni sull'immagine originale. Vedere [**D3DX11 \_ Image \_ info**](d3dx11-image-info.md). Può essere ottenuto con [**D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
+Informazioni sull'immagine originale. Vedere [**D3DX11 \_ IMAGE INFO (INFORMAZIONI SULL'IMMAGINE \_ D3DX11).**](d3dx11-image-info.md) Può essere ottenuto con [**D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si inizializza la struttura, è possibile impostare qualsiasi membro su D3DX11 \_ default e D3DX lo inizializza con un valore predefinito dalla trama di origine quando viene caricata la trama.
+Quando si inizializza la struttura, è possibile impostare qualsiasi membro su D3DX11 DEFAULT e D3DX la inizializza con un valore predefinito della trama di origine quando la \_ trama viene caricata.
 
 Questa struttura può essere usata dalle API che:
 
 -   Creare risorse, ad esempio [**D3DX11CreateTextureFromFile**](d3dx11createtexturefromfile.md) e [**D3DX11CreateShaderResourceViewFromFile**](d3dx11createshaderresourceviewfromfile.md).
--   Creare processori di dati, ad esempio [**D3DX11CreateAsyncTextureInfoProcessor**](d3dx11createasynctextureinfoprocessor.md) o [**D3DX11CreateAsyncShaderResourceViewProcessor**](d3dx11createasyncshaderresourceviewprocessor.md).
+-   Creare processori di dati, ad esempio [**D3DX11CreateAsyncTextureInfoProcessor**](d3dx11createasynctextureinfoprocessor.md) o [**D3DX11CreateAsyncShaderResourceViewProcessor.**](d3dx11createasyncshaderresourceviewprocessor.md)
 
 I valori predefiniti sono:
 
@@ -231,7 +231,7 @@ I valori predefiniti sono:
 
 
 
-Ecco un breve esempio che usa questa struttura per fornire il formato pixel durante il caricamento di una trama. Per il codice completo, vedere l'esempio HDRFormats10. cpp in [HDRToneMappingCS11](https://msdn.microsoft.com/library/Ee416569(v=VS.85).aspx).
+Di seguito è riportato un breve esempio che usa questa struttura per fornire il formato pixel durante il caricamento di una trama. Per il codice completo, vedere HDRFormats10.cpp [nell'esempio HDRToneMappingCS11.](https://msdn.microsoft.com/library/Ee416569(v=VS.85).aspx)
 
 
 ```
@@ -256,7 +256,7 @@ D3DX11_IMAGE_LOAD_INFO LoadInfo;
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX11tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX11tex.h</dt> </dl> |
 
 
 

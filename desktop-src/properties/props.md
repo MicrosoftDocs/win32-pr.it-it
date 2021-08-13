@@ -1,23 +1,23 @@
 ---
-description: In questa sezione vengono descritte le singole proprietà all'interno del sistema di proprietà di Windows che possono essere impostate nei file di Windows.
+description: Questa sezione descrive le singole proprietà all'interno del Windows proprietà che possono essere impostate Windows file.
 ms.assetid: 7532E58F-BBF2-4e36-9D81-C8E04B92CB7C
 title: Proprietà Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18a23f1bf253f370e2307072df3c878fa6a275da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 972af6283f7f0b4200f9e9932d5e447b8481cb4c24dbbe94e55ec0f08bca9a66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118463926"
 ---
 # <a name="windows-properties"></a>Proprietà Windows
 
-In questa sezione vengono descritte le singole proprietà all'interno del sistema di proprietà di Windows che possono essere impostate nei file di Windows.
+Questa sezione descrive le singole proprietà all'interno del Windows proprietà che possono essere impostate Windows file.
 
 -   [Audio](audio-bumper.md)
 -   [Calendario](calendar-bumper.md)
--   [Comunicazioni](communication-bumper.md)
+-   [Comunicazione](communication-bumper.md)
 -   [Computer](computer-bumper.md)
 -   [Contact](contact-bumper.md)
 -   [Core](core-bumper.md)
@@ -38,7 +38,7 @@ In questa sezione vengono descritte le singole proprietà all'interno del sistem
 -   [Nota](note-bumper.md)
 -   [Foto](photo-bumper.md)
 -   [PropGroup](propgroup-bumper.md)
--   [Proprietà](proplist-bumper.md)
+-   [PropList](proplist-bumper.md)
 -   [RecordedTV](recordedtv-bumper.md)
 -   [Sicurezza](security-buffer.md)
 -   [Ricerca](search-bumper.md)
@@ -52,13 +52,13 @@ In questa sezione vengono descritte le singole proprietà all'interno del sistem
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-Per altre informazioni sull'uso delle proprietà canoniche nelle query, vedere [uso della sintassi avanzata delle query a livello di codice](../search/-search-3x-advancedquerysyntax.md).
+Per altre informazioni sull'uso delle proprietà canoniche nelle query, vedere Uso della sintassi [di query avanzata a livello di codice.](../search/-search-3x-advancedquerysyntax.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Schema Descrizione proprietà](property-description-schema.md)
+[Schema di descrizione della proprietà](property-description-schema.md)
 </dt> <dt>
 
 [Set di proprietà](property-sets.md)

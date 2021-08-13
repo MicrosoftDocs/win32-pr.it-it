@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c19b77c962121949cc2495170061fee3adcecfc7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: afa9de8ecb598c76daee56367cc9f3ee80a0d0a43f706d11d2eaaa33cd814f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118282310"
 ---
 # <a name="span-idvspixenginepixenginehistogramspanpixenginehistogram-structure"></a><span id="vspixengine.pixenginehistogram"></span>Struttura PixEngineHistogram
 
@@ -38,23 +38,23 @@ Rappresenta un istogramma di una trama.
 ## <a name="members"></a>Members
 
 **horizontalMin**  
-Valori minimi per ognuno dei componenti X, Y, Z e W nell'asse orizzontale (dominio) dell'istogramma.
+Valori minimi per ogni componente X, Y, Z e W nell'asse orizzontale (dominio) dell'istogramma.
 
 **horizontalMax**  
-Valori massimi per ognuno dei componenti X, Y, Z e W nell'asse orizzontale (dominio) dell'istogramma.
+Valori massimi per ogni componente X, Y, Z e W nell'asse orizzontale (dominio) dell'istogramma.
 
 **verticalMin**  
-Valori minimi per ognuno dei componenti X, Y, Z e W nell'asse verticale (intervallo) dell'istogramma.
+Valori minimi per ogni componente X, Y, Z e W nell'asse verticale (intervallo) dell'istogramma.
 
 **verticalMax**  
-Valori massimi per ognuno dei componenti X, Y, Z e W nell'asse verticale (intervallo) dell'istogramma.
+Valori massimi per ogni componente X, Y, Z e W nell'asse verticale (intervallo) dell'istogramma.
 
-**dataLength**  
+**Datalength**  
 Numero di campioni considerati nell'istogramma.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

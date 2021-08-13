@@ -3,45 +3,45 @@ title: Individuazione del formato di un file
 description: Individuazione del formato di un file
 ms.assetid: f1b3f811-8161-41ca-a92c-2735c0bec2e8
 keywords:
-- Windows Media Gestione dispositivi, formati di file
+- Windows Gestione dispositivi multimediali, formati di file
 - Gestione dispositivi, formati di file
-- Guida per programmatori, formati di file
+- guida per programmatori, formati di file
 - applicazioni desktop, formati di file
-- creazione di applicazioni Windows Media Gestione dispositivi, formati di file
+- creazione Windows applicazioni di Gestione dispositivi multimediali,formati di file
 - scrittura di file in dispositivi, formati di file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b06c963b01e3b681fd078d8685e1c788c73352e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83706a3026968a694d3629551d310db9021b7f8c8118f3d98621751a95af26b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103709703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585330"
 ---
 # <a name="discovering-a-files-format"></a>Individuazione del formato di un file
 
 Prima di inviare un file al dispositivo, un'applicazione deve determinare se il dispositivo supporta tale formato di file.
 
-L'individuazione del formato di un file può essere complessa. Il modo più semplice consiste nel creare un elenco di estensioni di file di cui è stato eseguito il mapping a \_ valori di enumerazione WMDM FORMATCODE specifici. Tuttavia, esistono alcuni problemi con questo sistema: uno è che un singolo formato può avere più estensioni, ad esempio jpg, JPE e JPEG per le immagini JPEG. Inoltre, la stessa estensione di file può essere utilizzata da programmi diversi per formati diversi.
+L'individuazione del formato di un file può essere complessa. Il modo più semplice è creare un elenco di estensioni di file mappate a valori di enumerazione WMDM \_ FORMATCODE specifici. Esistono tuttavia alcuni problemi con questo sistema: uno è che un singolo formato può avere più estensioni,ad esempio .jpg, jpe e jpeg per le immagini JPEG. Inoltre, la stessa estensione di file può essere usata da programmi diversi per formati diversi.
 
-Per superare le limitazioni di un mapping rigoroso, è preferibile che in un'applicazione venga verificata la corrispondenza tra il formato e l'estensione. DirectShow SDK fornisce strumenti che consentono a un'applicazione di individuare un set limitato di dettagli sulla maggior parte dei tipi di file multimediali. Windows Media Format SDK espone un numero elevato di dettagli, ma solo i file ASF. Poiché tutti i tipi di file devono avere il codice di formato verificato se possibile, è quindi consigliabile usare DirectShow per individuare o verificare il codice del formato di base e usare Windows Media Format SDK per individuare eventuali metadati aggiuntivi che si desiderano sui file ASF. È inoltre possibile utilizzare DirectShow per individuare i metadati di base per i file non ASF.
+Per superare le limitazioni di un mapping rigoroso, è meglio che un'applicazione verifichi che il formato corrisponda all'estensione. L DirectShow SDK fornisce strumenti che consentono a un'applicazione di individuare un set limitato di dettagli sulla maggior parte dei tipi di file multimediali. L Windows Media Format SDK espone un numero elevato di dettagli, ma solo sui file ASF. Poiché tutti i tipi di file devono avere il codice di formato verificato, se possibile, è consigliabile usare DirectShow per individuare o verificare il codice di formato di base e usare Windows Media Format SDK per individuare eventuali metadati aggiuntivi desiderati sui file ASF. DirectShow può essere usato anche per individuare i metadati di base per i file non ASF.
 
 Di seguito è riportato un modo per individuare un formato di file usando il mapping delle estensioni e DirectShow.
 
-Per prima cosa, confrontare l'estensione del nome file con un elenco di estensioni note. Assicurarsi di eseguire il confronto senza distinzione tra maiuscole e minuscole. Se l'estensione non è mappata, impostare il formato su WMDM \_ FORMATCODE \_ undefined.
+Prima di tutto, confrontare l'estensione di file con un elenco di estensioni note. Assicurarsi di fare in modo che il confronto non eserciti la distinzione tra maiuscole e minuscole. Se non è stato eseguito il mapping dell'estensione, impostare il formato su WMDM \_ FORMATCODE \_ UNDEFINED.
 
--   Se il codice di formato non è stato trovato (oppure si vuole verificare che un file sia un file multimediale), è possibile eseguire i passaggi seguenti:
-    1.  Creare un oggetto di rilevamento multimediale DirectShow usando **CoCreateInstance**(CLSID \_ mediadet) e recuperare l'interfaccia **IMediaDet** .
-    2.  Aprire il file chiamando **IMediaDet::p UT \_ filename**. La chiamata avrà esito negativo se il file è protetto.
-    3.  Ottenere il tipo di supporto del flusso predefinito chiamando **IMediaDet:: Get \_ StreamMediaType**, che restituisce un **tipo di \_ supporto \_ am**.
-    4.  Ottenere il numero di flussi chiamando **IMediaDet:: Get \_ OutputStreams**.
-        -   Se è presente un solo flusso ed è audio, il tipo di file è WMDM \_ FORMATCODE \_ UNDEFINEDAUDIO
+-   Se il codice di formato non è stato trovato o si vuole verificare che un file sia un file multimediale, è possibile seguire questa procedura:
+    1.  Creare un DirectShow media detector usando **CoCreateInstance**(CLSID \_ MediaDet) e recuperando l'interfaccia **IMediaDet.**
+    2.  Aprire il file chiamando **IMediaDet::p ut \_ Filename**. Questa chiamata avrà esito negativo se il file è protetto.
+    3.  Ottenere il tipo di supporto del flusso predefinito chiamando **IMediaDet::get \_ StreamMediaType**, che restituisce **am MEDIA \_ \_ TYPE**.
+    4.  Ottenere il numero di flussi chiamando **IMediaDet::get \_ OutputStreams**.
+        -   Se è presente un solo flusso e si tratta di audio, il tipo di file è WMDM \_ FORMATCODE \_ UNDEFINEDAUDIO
         -   Se è presente un solo flusso ed è video, il tipo di file è WMDM \_ FORMATCODE \_ UNDEFINEDVIDEO
         -   Se è presente un solo flusso ed è video e la velocità in bit è zero, il tipo di file è WMDM \_ FORMATCODE \_ WINDOWSIMAGEFORMAT.
 
-È anche possibile provare a abbinare codec audio o video dai membri **VIDEOINFOHEADER** o **WAVEFORMATEX** recuperati da **get \_ StreamMediaType**.
+È anche possibile provare a trovare i codec audio o video corrispondenti dai **membri VIDEOINFOHEADER** o **WAVEFORMATEX** recuperati da **get \_ StreamMediaType**.
 
-La seguente funzione C++ illustra la corrispondenza dell'estensione di file e USA DirectShow per provare ad analizzare i file sconosciuti.
+La funzione C++ seguente illustra la corrispondenza delle estensioni di file e DirectShow per provare ad analizzare i file sconosciuti.
 
 
 ```C++
@@ -184,9 +184,9 @@ WMDM_FORMATCODE CWMDMController::myGetWMDM_FORMATCODE(LPCWSTR pFileName)
 [**Scrittura di file nel dispositivo**](writing-files-to-the-device.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

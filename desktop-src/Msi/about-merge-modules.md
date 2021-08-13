@@ -1,29 +1,29 @@
 ---
-description: I moduli merge sono essenzialmente file con estensione msi semplificati, ovvero l'estensione del nome file per un pacchetto di installazione Windows Installer. Un modulo merge standard ha un'estensione del nome di file MSM.
+description: I moduli unione sono essenzialmente .msi file, ovvero l'estensione del nome file per un pacchetto di installazione Windows installer. Un modulo unione standard ha un'estensione msm.
 ms.assetid: 580fe58a-4636-4f9a-a68d-4fd0e281e949
-title: Informazioni sui moduli merge
+title: Informazioni sui moduli unione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c70d416b89f0979d5651480a05052e95b4d32e2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca3e6c0ec1d4d7073d85984539ce54b47de92885a64570bc1de709be64748b22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640163"
 ---
-# <a name="about-merge-modules"></a>Informazioni sui moduli merge
+# <a name="about-merge-modules"></a>Informazioni sui moduli unione
 
-I moduli merge sono essenzialmente file con estensione msi semplificati, ovvero l'estensione del nome file per un pacchetto di installazione Windows Installer. Un modulo merge standard ha un'estensione del nome di file MSM.
+I moduli unione sono essenzialmente .msi file, ovvero l'estensione del nome file per un pacchetto di installazione Windows installer. Un modulo unione standard ha un'estensione msm.
 
-Un modulo merge non può essere installato da solo perché mancano alcune tabelle di database fondamentali presenti in un database di installazione. I moduli merge contengono anche tabelle aggiuntive univoche per se stesse. Per installare le informazioni fornite da un modulo merge con un'applicazione, è necessario innanzitutto eseguire il merge del modulo nel file con estensione msi dell'applicazione.
+Un modulo unione non può essere installato da solo perché manca di alcune tabelle di database essenziali presenti in un database di installazione. I moduli unione contengono anche tabelle aggiuntive univoche per se stessi. Per installare le informazioni fornite da un modulo unione con un'applicazione, il modulo deve prima essere unito nel file di .msi'applicazione.
 
-Un modulo merge è costituito dalle parti seguenti:
+Un modulo unione è costituito dalle parti seguenti:
 
--   Un [database del modulo merge](merge-module-database.md) contenente le proprietà di installazione e la logica di installazione fornita dal modulo merge.
--   [Riferimento al flusso di informazioni di riepilogo del modulo merge](merge-module-summary-information-stream-reference.md) che descrive il modulo.
--   Un file CAB [MergeModule.CABinet](mergemodule-cabinet.md) archiviato come flusso all'interno del modulo merge. Questo cabinet contiene tutti i file necessari per i componenti forniti dal modulo merge.
+-   Database [del modulo unione](merge-module-database.md) contenente le proprietà di installazione e la logica di installazione recapitate dal modulo unione.
+-   Riferimento [al flusso di informazioni di riepilogo del modulo unione](merge-module-summary-information-stream-reference.md) che descrive il modulo.
+-   Un [MergeModule.CABfile cab inet](mergemodule-cabinet.md) archiviato come flusso all'interno del modulo unione. Questo file cab contiene tutti i file richiesti dai componenti recapitati dal modulo unione.
 
-I [moduli di Unione con più](multiple-language-merge-modules.md) lingue possono fornire componenti a un pacchetto di installazione in più linguaggi. In un modulo di Unione a più lingue il database contiene le proprietà di installazione e la logica per più di un linguaggio e il cabinet MergeModule.CABinet include tutti i file necessari per installare i componenti con tutte le lingue supportate dal modulo.
+[Più moduli unione linguistici](multiple-language-merge-modules.md) possono distribuire componenti a un pacchetto di installazione in più lingue. In un modulo unione in più lingue il database contiene le proprietà di installazione e la logica per più lingue e l'archivio inet MergeModule.CABinclude tutti i file necessari per installare i componenti con tutte le lingue supportate dal modulo.
 
  
 

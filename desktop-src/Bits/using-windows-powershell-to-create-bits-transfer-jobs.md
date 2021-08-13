@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di Windows PowerShell per creare processi di trasferimento di BITS
-description: È possibile usare i cmdlet di PowerShell per creare processi di trasferimento di Servizio trasferimento intelligente in background (BITS) sincroni e asincroni.
+description: È possibile usare i cmdlet di PowerShell per creare processi di Servizio trasferimento intelligente in background asincroni e asincroni (BITS).
 ms.assetid: 22bcf0d5-36f0-4677-84a7-502b98cfaac2
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: af4879d1fc8f1b25fa0b1b51816432aad3bed8bd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e939342414d62e4e1af0551318dfec0fb9a5ca59a7e310f13de7b6b67b0440cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679893"
 ---
 # <a name="using-windows-powershell-to-create-bits-transfer-jobs"></a>Utilizzo di Windows PowerShell per creare processi di trasferimento di BITS
 
-È possibile usare i cmdlet di PowerShell per creare processi di trasferimento di Servizio trasferimento intelligente in background (BITS) sincroni e asincroni.
+È possibile usare i cmdlet di PowerShell per creare processi di Servizio trasferimento intelligente in background asincroni e asincroni (BITS).
 
-Tutti gli esempi in questo argomento usano il cmdlet [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) . Per usare il cmdlet, assicurarsi di importare prima il modulo. Per installare il modulo, eseguire il comando seguente: Import-Module BitsTransfer. Per ulteriori informazioni, digitare **Get-Help Start-BitsTransfer** al prompt di PowerShell.
+Tutti gli esempi in questo argomento usano il cmdlet [Start-BitsTransfer.](/previous-versions//dd347701(v=technet.10)) Per usare il cmdlet , assicurarsi di importare prima il modulo. Per installare il modulo, eseguire il comando seguente: Import-Module BitsTransfer. Per altre informazioni, digitare **Get-Help Start-BitsTransfer** al prompt di PowerShell.
 
 > [!IMPORTANT]
 >
-> Quando si usano i cmdlet [ \* -BitsTransfer](/previous-versions//dd819413(v=technet.10)) dall'interno di un processo che viene eseguito in un contesto non interattivo, ad esempio un servizio Windows, potrebbe non essere possibile aggiungere file ai processi BITS, che possono causare lo stato Suspended. Affinché il processo continui, è necessario eseguire l'accesso all'identità utilizzata per creare un processo di trasferimento. Ad esempio, quando si crea un processo BITS in uno script di PowerShell che è stato eseguito come processo di Utilità di pianificazione, il trasferimento BITS non verrà completato a meno che non sia abilitata l'impostazione dell'attività di Utilità di pianificazione "Esegui solo quando l'utente è connesso".
+> Quando si usano i cmdlet [ \* -BitsTransfer](/previous-versions//dd819413(v=technet.10)) dall'interno di un processo eseguito in un contesto non interattivo, ad esempio un servizio Windows, potrebbe non essere possibile aggiungere file ai processi BITS, il che può comportare uno stato sospeso. Per continuare il processo, è necessario accedere all'identità utilizzata per creare un processo di trasferimento. Ad esempio, quando si crea un processo BITS in uno script di PowerShell eseguito come processo Utilità di pianificazione, il trasferimento BITS non verrà mai completato a meno che non sia abilitata l'impostazione dell'attività "Esegui solo quando l'utente è connesso" del Utilità di pianificazione.
 
  
 
@@ -47,15 +47,15 @@ Start-BitsTransfer -Source https://Server01/serverdir/testfile1.txt `
 
 
 > [!Note]  
-> Il carattere di accento grave ( \` ) viene usato per indicare un'interruzioni di riga.
+> Il carattere grave-accent ( \` ) viene usato per indicare un'interruzione di riga.
 
  
 
-Nell'esempio precedente, i nomi locali e remoti del file vengono specificati rispettivamente nei parametri di *origine* e di *destinazione* . Il prompt dei comandi viene nuovamente visualizzato quando il trasferimento del file viene completato o entra in stato di errore.
+Nell'esempio precedente i nomi locali e remoti del file vengono specificati rispettivamente nei parametri *Source* *e Destination.* Il prompt dei comandi viene nuovamente visualizzato quando il trasferimento del file viene completato o entra in stato di errore.
 
-Il tipo di trasferimento predefinito è download. Quando si caricano file in un percorso HTTP, è necessario impostare il parametro *TransferType* su upload.
+Il tipo di trasferimento predefinito è Download. Quando si caricano file in un percorso HTTP, il *parametro TransferType* deve essere impostato su Upload.
 
-Poiché la posizione del parametro viene applicata per il cmdlet [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) , non è necessario specificare i nomi di parametro per i parametri di origine e di destinazione. Questo comando può quindi essere semplificato come indicato di seguito.
+Poiché la posizione del parametro viene applicata per il cmdlet [Start-BitsTransfer,](/previous-versions//dd347701(v=technet.10)) i nomi dei parametri non devono essere specificati per i parametri Source e Destination. Di conseguenza, questo comando può essere semplificato come indicato di seguito.
 
 
 ```PowerShell
@@ -74,10 +74,10 @@ Start-BitsTransfer -Source C:\clientsourcedir\*.txt `
 
 
 
-Nell'esempio precedente, il comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) crea un nuovo processo di trasferimento BITS. Tutti i file vengono aggiunti a questo processo e trasferiti in sequenza al client.
+Nell'esempio precedente il comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) crea un nuovo processo di trasferimento BITS. Tutti i file vengono aggiunti a questo processo e trasferiti in sequenza al client.
 
 > [!Note]  
-> Nel percorso di destinazione non è possibile utilizzare caratteri jolly. Il percorso di destinazione supporta directory relative, percorsi radice o directory implicite, ovvero la directory corrente. Non è possibile rinominare i file di destinazione usando un carattere jolly. Inoltre, gli URL HTTP e HTTPS non funzionano con i caratteri jolly. I caratteri jolly sono validi solo per i percorsi UNC e le directory locali.
+> Nel percorso di destinazione non è possibile utilizzare caratteri jolly. Il percorso di destinazione supporta le directory relative, i percorsi radice o le directory implicite ,ovvero la directory corrente. I file di destinazione non possono essere rinominati usando un carattere jolly. Inoltre, gli URL HTTP e HTTPS non funzionano con i caratteri jolly. I caratteri jolly sono validi solo per i percorsi UNC e le directory locali.
 
  
 
@@ -92,7 +92,7 @@ Start-BitsTransfer -DisplayName MyJob -Credential Username\Domain `
 
 
 
-Nell'esempio precedente, un utente crea un processo di trasferimento BITS per scaricare un file da un server che richiede l'autenticazione. All'utente vengono richieste le credenziali e il parametro *Credential* passa un oggetto credenziale al cmdlet [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) . L'utente imposta un proxy esplicito e il processo di trasferimento BITS utilizza solo i proxy definiti dal parametro *proxy* . Il parametro *DisplayName* assegna al processo di trasferimento BITS un nome visualizzato univoco.
+Nell'esempio precedente un utente crea un processo di trasferimento BITS per scaricare un file da un server che richiede l'autenticazione. All'utente vengono richieste le credenziali e il parametro *Credential* passa un oggetto credenziali al cmdlet [Start-BitsTransfer.](/previous-versions//dd347701(v=technet.10)) L'utente imposta un proxy esplicito e il processo di trasferimento BITS usa solo i proxy definiti dal *parametro ProxyList.* Il *parametro DisplayName* fornisce al processo di trasferimento BITS un nome visualizzato univoco.
 
 ## <a name="to-create-a-synchronous-bits-transfer-job-from-a-csv-file"></a>Per creare un processo di trasferimento BITS sincrono da un file CSV
 
@@ -104,13 +104,13 @@ Import-CSV filelist.txt | Start-BitsTransfer -TransferType Upload
 
 
 > [!Note]  
-> " \| " È il carattere barra verticale.
+> " \| " è il carattere barra verticale.
 
  
 
-Nell'esempio precedente, un utente crea un processo di trasferimento BITS che carica più file da un client. Il cmdlet [Import-CSV](/previous-versions//dd347665(v=technet.10)) importa i percorsi dei file di origine e di destinazione e li invia tramite pipe al comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) . Il comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) crea un nuovo processo di trasferimento BITS per ogni file, aggiunge i file al processo e li trasferisce in sequenza al server.
+Nell'esempio precedente un utente crea un processo di trasferimento BITS che carica più file da un client. Il cmdlet [Import-CSV](/previous-versions//dd347665(v=technet.10)) importa i percorsi dei file di origine e di destinazione e li pipe al [comando Start-BitsTransfer.](/previous-versions//dd347701(v=technet.10)) Il [comando Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) crea un nuovo processo di trasferimento BITS per ogni file, aggiunge i file al processo e li trasferisce in sequenza al server.
 
-Il contenuto del file di Filelist.txt deve essere nel formato seguente:
+Il contenuto del file Filelist.txt deve essere nel formato seguente:
 
 ``` syntax
 Source, Destination
@@ -141,22 +141,22 @@ Switch($Job.JobState)
 
 
 
-Nell'esempio precedente, il processo di trasferimento BITS è stato assegnato alla variabile $Job. I file vengono scaricati in sequenza. Al termine del processo di trasferimento, i file sono immediatamente disponibili. Se $Job. JobState restituisce "trasferito", l'oggetto $Job viene inviato al cmdlet [complete-BitsTransfer]( /previous-versions//dd347701(v=technet.10)) .
+Nell'esempio precedente il processo di trasferimento BITS è stato assegnato alla $Job variabile . I file vengono scaricati in sequenza. Al termine del processo di trasferimento, i file sono immediatamente disponibili. Se $Job.JobState restituisce "Transferred", l'oggetto $Job viene inviato al cmdlet [Complete-BitsTransfer.]( /previous-versions//dd347701(v=technet.10))
 
-Se $Job. JobState restituisce "Error", l'oggetto $Job viene inviato al cmdlet [Format-List]( /previous-versions//dd347700(v=technet.10)) per elencare gli errori.
+Se $Job.JobState restituisce "Error", l'oggetto $Job viene inviato al cmdlet [Format-List]( /previous-versions//dd347700(v=technet.10)) per elencare gli errori.
 
 ## <a name="to-manage-powershell-remote-sessions"></a>Per gestire le sessioni remote di PowerShell
 
-A partire da Windows 10, versione 1607, è possibile eseguire i cmdlet di PowerShell, BITSAdmin o altre applicazioni che usano le [interfacce](bits-interfaces.md) BITS da una riga di comando remota di PowerShell connessa a un altro computer (fisico o virtuale). Questa funzionalità non è disponibile quando si usa una riga di comando di [PowerShell diretta](/virtualization/hyper-v-on-windows/user_guide/vmsession) in una macchina virtuale nello stesso computer fisico e non è disponibile quando si usano i cmdlet WinRM.
+A partire da Windows 10 versione 1607, è possibile eseguire i cmdlet di PowerShell, BITSAdmin o altre applicazioni che usano le interfacce [BITS](bits-interfaces.md) da una riga di comando remota di PowerShell connessa a un altro computer (fisico o virtuale). Questa funzionalità non è disponibile quando si usa una riga di comando di [PowerShell Direct](/virtualization/hyper-v-on-windows/user_guide/vmsession) per una macchina virtuale nello stesso computer fisico e non è disponibile quando si usano i cmdlet winrm.
 
-Un processo BITS creato da una sessione remota di PowerShell viene eseguito nel contesto dell'account utente della sessione e viene eseguito solo quando è presente almeno una sessione di accesso locale attiva o una sessione remota di PowerShell associata a tale account utente. È possibile usare le sessioni PSSession permanenti di PowerShell per eseguire comandi remoti senza la necessità di mantenere aperta una finestra di PowerShell per ogni processo per continuare a procedere, come descritto in [nozioni di base su PowerShell: gestione remota](https://techgenix.com/remote-management-powershell-part1/).
+Un processo BITS creato da una sessione remota di PowerShell viene eseguito nel contesto dell'account utente di tale sessione e procede solo quando è presente almeno una sessione di accesso locale attiva o una sessione remota di PowerShell associata a tale account utente. È possibile usare le sessioni PSSession persistenti di PowerShell per eseguire comandi remoti senza la necessità di mantenere aperta una finestra di PowerShell per ogni processo per continuare a procedere, come descritto in [PowerShell Basics: Remote Management](https://techgenix.com/remote-management-powershell-part1/)(Nozioni di base di PowerShell: Gestione remota).
 
--   [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7&preserve-view=true) crea una sessione di PowerShell remota permanente. Una volta creati, gli oggetti PSSession vengono salvati nel computer remoto fino a quando non vengono eliminati in modo esplicito. Qualsiasi processo BITS avviato in una sessione attiva effettuerà il trasferimento dei dati, anche dopo la disconnessione del client dalla sessione.
--   Disconnect [-PSSession](/powershell/module/microsoft.powershell.core/disconnect-pssession?view=powershell-7&preserve-view=true) disconnette il computer client da una sessione remota di PowerShell e lo stato della sessione continua a essere gestito dal computer remoto. In particolare, i processi della sessione remota continueranno a essere eseguiti e i processi BITS continueranno a progredire. Il computer client può anche essere riavviato e/o spento dopo la chiamata a Disconnect-PSSession.
--   [Connect-PSSession](/powershell/module/microsoft.powershell.core/connect-pssession?view=powershell-7&preserve-view=true) connette nuovamente il computer client a una sessione remota di PowerShell attiva.
--   [Remove-PSSession rimuove](/powershell/module/microsoft.powershell.core/remove-pssession?view=powershell-7&preserve-view=true) una sessione remota di PowerShell.
+-   [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7&preserve-view=true) crea una sessione di PowerShell remota persistente. Dopo la creazione, gli oggetti PSSession vengono mantenuti nel computer remoto fino a quando non vengono eliminati in modo esplicito. Tutti i processi BITS avviati in una sessione attiva procederanno al trasferimento dei dati, anche dopo che il client si è disconnesso dalla sessione.
+-   [Disconnect-PSSession](/powershell/module/microsoft.powershell.core/disconnect-pssession?view=powershell-7&preserve-view=true) disconnette il computer client da una sessione remota di PowerShell e lo stato della sessione continua a essere mantenuto dal computer remoto. Ancora più importante, l'esecuzione dei processi della sessione remota continuerà e i processi BITS continueranno a procedere. Il computer client può anche riavviare e/o spegnere dopo aver chiamato Disconnect-PSSession.
+-   [Connessione-PSSession](/powershell/module/microsoft.powershell.core/connect-pssession?view=powershell-7&preserve-view=true) riconnetta il computer client a una sessione di PowerShell remota attiva.
+-   [Remove-PSSession](/powershell/module/microsoft.powershell.core/remove-pssession?view=powershell-7&preserve-view=true) rimuove una sessione remota di PowerShell.
 
-Nell'esempio seguente viene illustrato come usare PowerShell remote per lavorare con processi di trasferimento BITS asincroni in modo da consentire al processo di continuare a avanzare anche quando non si è connessi attivamente alla sessione remota.
+L'esempio seguente illustra come usare PowerShell Remote per lavorare con processi di trasferimento BITS asincroni in modo che il processo continui a procedere anche quando non si è attivamente connessi alla sessione remota.
 
 
 ```PowerShell
@@ -208,7 +208,7 @@ Remove-PSSession -Name MyRemoteSession
 [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10))
 </dt> <dt>
 
-[Operazione completata-BitsTransfer]( /previous-versions//dd347701(v=technet.10))
+[Complete-BitsTransfer]( /previous-versions//dd347701(v=technet.10))
 </dt> </dl>
 
  

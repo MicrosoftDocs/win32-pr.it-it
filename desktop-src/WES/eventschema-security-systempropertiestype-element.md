@@ -1,9 +1,9 @@
 ---
-title: Security (SystemPropertiesType)-elemento
+title: Elemento Security (SystemPropertiesType)
 description: Identifica l'utente che ha registrato l'evento.
 ms.assetid: f421b0c3-96ea-440c-a3b2-0ddd8f327eec
 keywords:
-- EventLog elemento di sicurezza
+- EventLog dell'elemento di sicurezza
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b793193d7afdfde5fd515252a024432ed45ff8b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20aef5465b8790bdba92c50181c0550ca5989c29d66fd53b9ec7ed0f760a2129
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588287"
 ---
-# <a name="security-systempropertiestype-element"></a>Security (SystemPropertiesType)-elemento
+# <a name="security-systempropertiestype-element"></a>Elemento Security (SystemPropertiesType)
 
 Identifica l'utente che ha registrato l'evento.
 
@@ -35,7 +35,7 @@ Identifica l'utente che ha registrato l'evento.
 </xs:element>
 ```
 
-L'elemento **Security** è definito dal tipo complesso [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+**L'elemento** Security è definito dal [**tipo complesso SystemPropertiesType.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="attributes"></a>Attributi
 
@@ -53,8 +53,8 @@ L'elemento **Security** è definito dal tipo complesso [**SystemPropertiesType**
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -65,7 +65,7 @@ L'elemento **Security** è definito dal tipo complesso [**SystemPropertiesType**
 **Elemento padre**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  
