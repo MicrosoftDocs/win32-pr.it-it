@@ -1,26 +1,26 @@
 ---
-description: Transizione della chiave
+description: Transizione chiave
 ms.assetid: 5d1ed2e4-82c2-4364-b8f0-22bba974bc22
-title: Transizione della chiave
+title: Transizione chiave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3e4f83bbe26f49989d612efe718c2d838ce7f1d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a9fc5b905b1650b6db6bb98b542193160825b8bd6dd74626ef9bddc91b118118
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118397278"
 ---
-# <a name="key-transition"></a>Transizione della chiave
+# <a name="key-transition"></a>Transizione chiave
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-La transizione della chiave esegue la digitazione in base al valore RGB, al valore alfa, alla tonalità o alla luminosità.
+La transizione Key esegue la keying in base al valore RGB, al valore alfa, alla tonalità o alla luminanza.
 
-Nell'immagine seguente viene illustrata la transizione della chiave:
+L'immagine seguente illustra la transizione chiave:
 
 ![transizione della chiave](images/trans-key.png)
 
@@ -36,12 +36,12 @@ Proprietà
 
 | Proprietà   | Type  | Intervallo valido           | Descrizione                                                                                                                                                                                                                                                | Si applica a                     |
 |------------|-------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Tonalità        | INT   | 0 – 360                 | Valore di tonalità su cui eseguire la chiave.                                                                                                                                                                                                                             | Tonalità                            |
-| Inverti     | BOOL  | **False** o **true** | Valore booleano che indica se invertire l'operazione predefinita della chiave. Se **false**, i pixel nell'immagine di sovrastanti vengono resi trasparenti nel modo predefinito. Se **true**, l'operazione viene invertita.                                                   | Chroma, Hue, Luminance, Nonred |
-| KeyType    | INT   | Vedere la sezione Osservazioni           | Specifica il tipo di chiave. Per altre informazioni, vedere la sezione Osservazioni.                                                                                                                                                                                              | Tutti                            |
-| Luminance  | INT   | 0 – 100                 | Valore di luminanza su cui eseguire la chiave.                                                                                                                                                                                                                       | Luminance                      |
-| RGB        | DWORD | 0x0-0xFFFFFF        | Colore su cui eseguire la chiave. Il valore è un numero esadecimale con formato 0x *RRGGBB*, dove *RR* è il valore rosso, *GG* è il valore verde e *BB* è il valore blu. I puri rossi, verdi e blu sono rispettivamente 0xFF0000, 0x00FF00 e 0x0000FF. | Croma                         |
-| Similarity | INT   | 0 – 100                 | Intervallo di dati del colore che diventa trasparente. Con valori superiori, una gamma più ampia di colori simili è trasparente.                                                                                                                                        | Chroma, Nonred                 |
+| Tonalità        | int   | 0–360                 | Valore della tonalità su cui eseguire la chiave.                                                                                                                                                                                                                             | Tonalità                            |
+| Inverti     | BOOL  | **FALSE** o **TRUE** | Valore booleano che indica se invertire l'operazione predefinita della chiave. Se **FALSE,** i pixel nell'immagine sovrasso vengono resi trasparenti nel modo predefinito. Se **TRUE,** l'operazione viene invertita.                                                   | Chroma, Hue, Luminance, Nonred |
+| KeyType    | int   | Vedere la sezione Osservazioni           | Specifica il tipo di chiave. Per altre informazioni, vedere la sezione Osservazioni.                                                                                                                                                                                              | Tutti                            |
+| Luminance  | int   | 0–100                 | Valore di luminance su cui eseguire la chiave.                                                                                                                                                                                                                       | Luminance                      |
+| RGB        | DWORD | 0x0 : 0xFFFFFF        | Colore su cui eseguire la chiave. Il valore è un numero esadecimale con formato 0x *RRGGBB*, dove *RR* è il valore rosso, *GG* è il valore verde e *BB* è il valore blu. (Rosso puro, verde e blu sono 0xFF0000, 0x00FF00 e 0x0000FF, rispettivamente. | Chroma                         |
+| Similarity | int   | 0–100                 | Intervallo di dati di colore che diventa trasparente. Con valori più elevati, una gamma più ampia di colori simili è trasparente.                                                                                                                                        | Chroma, Nonred                 |
 
 
 
@@ -49,23 +49,23 @@ Proprietà
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo di chiave eseguita dipende dal valore della proprietà del **tipo** di chiave, che deve essere uno dei seguenti:
+Il tipo di chiave eseguita dipende dal valore della proprietà **KeyType,** che deve essere uno dei seguenti:
 
 
 
 | Valore | Enumerazione       | Descrizione                                           |
 |-------|-------------------|-------------------------------------------------------|
-| 0     | DXTKEY \_ RGB       | Chroma Key (chiave per valore RGB).                        |
-| 1     | \_NONRED DXTKEY    | Chiave di Nonred. (Rende trasparenti le aree blu e verde). |
-| 2     | \_luminanza DXTKEY | Chiave di luminanza.                                        |
-| 3     | DXTKEY \_ alfa     | Chiave per valore alfa.                                   |
-| 4     | \_tonalità DXTKEY       | Chiave per tonalità.                                           |
+| 0     | DXTKEY \_ RGB       | Chiave chroma (chiave per valore RGB).                        |
+| 1     | DXTKEY \_ NONRED    | Chiave non ritirata. Rende trasparenti le aree blu e verdi. |
+| 2     | DXTKEY \_ LUMINANCE | Chiave di luminanza.                                        |
+| 3     | DXTKEY \_ ALPHA     | Chiave per valore alfa.                                   |
+| 4     | TONALITÀ DXTKEY \_       | Chiave per tonalità.                                           |
 
 
 
  
 
-Il valore predefinito del tipo di chiave è DXTKEY \_ alfa.
+Per impostazione predefinita, il tipo di chiave è DXTKEY \_ ALPHA.
 
  
 

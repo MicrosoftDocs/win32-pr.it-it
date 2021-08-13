@@ -1,17 +1,17 @@
 ---
 description: Questa sezione contiene gli esempi di decodifica delle immagini.
 ms.assetid: 16AE71A7-E105-4c9a-8522-84B1C7C4A50D
-title: Esempi di decodifica di immagini
+title: Esempi di decodifica delle immagini
 ms.topic: article
 ms.date: 03/19/2021
-ms.openlocfilehash: 681ed3d3bfdf0c0c5f83a0e447c6c4e12abf9bd2
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: 4b315c71aeadf8163535a989d67eaba8a72532d279ac77d5bcff155dd664518c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "106323887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709363"
 ---
-# <a name="image-decoding-samples"></a>Esempi di decodifica di immagini
+# <a name="image-decoding-samples"></a>Esempi di decodifica delle immagini
 
 Questa sezione contiene gli esempi di decodifica delle immagini.
 
@@ -19,6 +19,6 @@ Questa sezione contiene gli esempi di decodifica delle immagini.
 
 | Argomento | Descrizione |
 |-|-|
-| [Esempio di decodifica progressiva WIC](-wic-sample-progressive-decoding.md) | In questo esempio viene illustrato l'utilizzo di Windows Imaging Component (WIC) per decodificare un'immagine codificata con livelli progressivi. |
-| [Visualizzatore immagini WIC con esempio Direct2D](-wic-sample-d2d-viewer.md) | In questo esempio viene illustrato l'utilizzo di WIC per decodificare un file di immagine e Direct2D per eseguire il rendering dell'immagine sullo schermo. |
-| [Esempio GIF animato WIC](-wic-sample-animated-gif.md) | Questo esempio illustra la decodifica di diversi frame in un file GIF, la lettura dei metadati appropriati per ogni frame, la composizione di frame e il rendering dell'animazione con Direct2D. |
+| [Esempio di decodifica progressiva WIC](-wic-sample-progressive-decoding.md) | Questo esempio illustra l'uso di Windows Imaging Component (WIC) per decodificare un'immagine codificata con livelli progressivi. |
+| [Esempio di visualizzatore di immagini WIC con Direct2D](-wic-sample-d2d-viewer.md) | Questo esempio illustra l'uso di WIC per decodificare un file di immagine e Direct2D per eseguire il rendering dell'immagine sullo schermo. |
+| [Esempio di GIF animata WIC](-wic-sample-animated-gif.md) | Questo esempio illustra la decodifica di vari fotogrammi in un file GIF, la lettura dei metadati appropriati per ogni fotogramma, la composizione di fotogrammi e il rendering dell'animazione con Direct2D. |

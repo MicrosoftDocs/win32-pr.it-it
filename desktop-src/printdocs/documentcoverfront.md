@@ -4,18 +4,18 @@ ms.assetid: 25dbd083-5815-4b25-bfdc-4d14f96d2b45
 title: DocumentCoverFront
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 301b67c9a741caa48024646854b208ac5dffbb20
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: f2552ec33acce2d86af824450bdd9c38de8763ab21d7c6202d9b3da646efda78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732931"
 ---
 # <a name="documentcoverfront"></a>DocumentCoverFront
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il foglio di presentazione anteriore (iniziale). Ogni documento avrà un foglio separato. Il foglio di presentazione deve essere stampato nelle proprietà PageMediaSize e PageMediaType usate per la prima pagina del documento. Il foglio di presentazione deve essere integrato nelle opzioni di elaborazione(ad esempio DocumentDuplex, DocumentNUp) come indicato dall'opzione specificata.
+Descrive il foglio di presentazione anteriore (iniziale). Ogni documento avrà un foglio separato. Il foglio di presentazione deve essere stampato nelle proprietà PageMediaSize e PageMediaType usate per la prima pagina del documento. Il foglio di presentazione deve essere integrato nelle opzioni di elaborazione, ad esempio DocumentDuplex, DocumentNUp, come indicato dall'opzione specificata.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -29,7 +29,7 @@ Descrive il foglio di presentazione anteriore (iniziale). Ogni documento avrà u
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefisso di ambito <br/> | Documento<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Note <br/>          | I consumer conformi a XPS DEVONO imporre che un riferimento URI a una risorsa, ad esempio un profilo immagine o colore in un documento di funzionalità di stampa o PrintTicket MUST, faccia riferimento a un nome di parte (un URI relativo alla radice del pacchetto) all'interno dello stesso pacchetto di documenti XPS che contiene il printTicket risultante. Un consumer XPS conforme NON DEVE utilizzare un URI non conforme alla sintassi del nome della parte. Queste impostazioni sono specifiche di XPS. <br/> Gli URI a cui viene fatto riferimento in un documento di funzionalità di stampa o printTicket NON DEVONO essere risolti come URL. Ciò non è sicuro perché potrebbero non risolversi come previsto e possono creare rischi di sicurezza dannosi per il driver e il sistema operativo.<br/> |
+| Note <br/>          | I consumer conformi a XPS DEVONO imporre che un riferimento URI a una risorsa, ad esempio un profilo immagine o colore in un documento di funzionalità di stampa o PrintTicket DEVE fare riferimento a un nome di parte (un URI relativo alla radice del pacchetto) all'interno dello stesso pacchetto di documenti XPS che contiene il PrintTicket risultante. Un consumer XPS conforme NON DEVE utilizzare un URI non conforme alla sintassi del nome della parte. Queste impostazioni sono specifiche di XPS. <br/> Gli URI a cui si fa riferimento in un documento di funzionalità di stampa o printTicket NON DEVONO essere risolti come URL. Ciò non è sicuro perché potrebbero non risolversi come previsto e possono creare rischi di sicurezza dannosi per il driver e il sistema operativo.<br/> |
 
 
 

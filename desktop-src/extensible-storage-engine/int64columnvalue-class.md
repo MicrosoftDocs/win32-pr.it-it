@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe Int64ColumnValue'
+description: Altre informazioni sulla classe Int64ColumnValue
 title: Classe Int64ColumnValue
 TOCTitle: Int64ColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Int64ColumnValue
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe1c08845097ae612881a8002ddc896f4a792f96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43cdf7498317a4431faeb548b577fdd7934affd14fa5873ba980744352644c9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118767600"
 ---
 # <a name="int64columnvalue-class"></a>Classe Int64ColumnValue
 
-Valore di colonna [Int64](/dotnet/api/system.int64) .
+Valore [della colonna Int64.](/dotnet/api/system.int64)
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
-      Microsoft. ISAM. esent. Interop. Int64ColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
+      Microsoft.Isam.Esent.Interop.Int64ColumnValue  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,6 +67,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri di Int64ColumnValue](./int64columnvalue-members.md)
+[Membri Int64ColumnValue](./int64columnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

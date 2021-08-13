@@ -1,25 +1,25 @@
 ---
-title: Codice di esempio per l'uso della funzione Rang per recuperare i membri di un gruppo
-description: Nell'esempio di codice riportato di seguito viene utilizzata la funzione con gli oggetti ADO (ActiveX Directory Objects) per recuperare i membri di un gruppo.
+title: Codice di esempio per l'uso di Ranging per recuperare i membri di un gruppo
+description: Nell'esempio di codice seguente viene utilizzato con ActiveX Directory Objects (ADO) per recuperare i membri di un gruppo.
 ms.assetid: baebefd5-7ac6-4d36-a5a4-0796d790abee
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per l'uso della funzione Rang per recuperare i membri di un gruppo ADSI
-- codice di esempio C/C++ ADSI, uso di ranging per recuperare i membri di un gruppo
+- Codice di esempio per l'utilizzo di Ranging per recuperare i membri di un gruppo ADSI
+- codice di esempio C/C++ ADSI, usando ranging per recuperare i membri di un gruppo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c596134b8c20bc777c77b65e6fe349884dda25a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 31d68920d19135387ec76003ca621472ea9266102d84930e4af84e13b886335b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691844"
 ---
-# <a name="example-code-for-using-ranging-to-retrieve-members-of-a-group"></a>Codice di esempio per l'uso della funzione Rang per recuperare i membri di un gruppo
+# <a name="example-code-for-using-ranging-to-retrieve-members-of-a-group"></a>Codice di esempio per l'uso di Ranging per recuperare i membri di un gruppo
 
-Nell'esempio di codice riportato di seguito viene utilizzata la funzione con gli oggetti ADO (ActiveX Directory Objects) per recuperare i membri di un gruppo.
+Nell'esempio di codice seguente viene utilizzato con ActiveX Directory Objects (ADO) per recuperare i membri di un gruppo.
 
-Il frammento di codice seguente richiede un riferimento alla libreria Microsoft ActiveX Data Objects 6,0.
+Il frammento di codice seguente richiede un riferimento a Microsoft ActiveX Data Objects 6.0 Library.
 
 
 ```VB
@@ -110,9 +110,9 @@ End Module
 
 
 
- 
+ 
 
- 
+ 
 
 
 

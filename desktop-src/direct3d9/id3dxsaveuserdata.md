@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5dbdc71239455772809e44f535634a0d06cc0653
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e5b0f02a4fb114f46930076f46ea7c416850a0e81f7369d4aab63a2de5ed6d95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801137"
 ---
 # <a name="id3dxsaveuserdata-interface"></a>Interfaccia ID3DXSaveUserData
 
@@ -44,7 +44,7 @@ Questa interfaccia viene implementata dall'applicazione per salvare eventuali da
 | [**AddTopLevelDataObjectsPost**](id3dxsaveuserdata--addtopleveldataobjectspost.md) | Aggiungere un oggetto di primo livello dopo la gerarchia dei frame.<br/>       |
 | [**AddTopLevelDataObjectsPre**](id3dxsaveuserdata--addtopleveldataobjectspre.md)   | Aggiungere un oggetto di primo livello prima della gerarchia dei frame.<br/>      |
 | [**RegisterTemplates**](id3dxsaveuserdata--registertemplates.md)                   | Callback che consente all'utente di registrare un modello di file con estensione x.<br/> |
-| [**Salva modelli**](id3dxsaveuserdata--savetemplates.md)                           | Callback che consente all'utente di salvare un modello di file con estensione x.<br/>     |
+| [**SaveTemplates**](id3dxsaveuserdata--savetemplates.md)                           | Callback che consente all'utente di salvare un modello di file con estensione x.<br/>     |
 
 
 

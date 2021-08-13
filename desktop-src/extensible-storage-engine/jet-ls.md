@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3300fd88c0dd1e1fca55722bf58350e28f3c3b08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38ddb306ee6fdcbd1eb792b2c29ca367adc0f4b88cc25dfcbdde22c2638258d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765040"
 ---
 # <a name="jet_ls"></a>JET_LS
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_ls"></a>JET_LS
 
-Il tipo di dati **JET_LS** contiene un handle di contesto per l'archiviazione locale (ls). Questo handle può essere associato a un cursore o a una tabella e può fare riferimento a risorse allocate in modo dinamico.
+Il **JET_LS** dati contiene un handle di contesto per l'archiviazione locale (LS). Questo handle può essere associato a un cursore o a una tabella e può fare riferimento a risorse allocate dinamicamente.
 
 **Windows XP: JET_LS** è stato introdotto in Windows XP.
 
@@ -41,15 +41,15 @@ Il tipo di dati **JET_LS** contiene un handle di contesto per l'archiviazione lo
 
 JET_LS
 
-Il valore JET_LSNil indica un handle di contesto non valido.
+Il valore JET_LSNil un handle di contesto non valido.
 
 ### <a name="remarks"></a>Commenti
 
-Un handle di contesto viene inizialmente associato al tipo di dati **JET_LS** , usando [JetSetLS](./jetsetls-function.md). L'handle di contesto può essere recuperato dal tipo di dati **JET_LS** , usando [JetGetLS](./jetgetls-function.md).
+Un handle di contesto viene inizialmente associato al **tipo JET_LS** dati, usando [JetSetLS](./jetsetls-function.md). L'handle di contesto può essere recuperato dal **tipo JET_LS** dati, usando [JetGetLS](./jetgetls-function.md).
 
-È possibile dissociare in modo esplicito l'handle del contesto dal tipo di dati **JET_LS** usando [JetGetLS](./jetgetls-function.md) con JET_bitLSReset. In alternativa, l'handle di contesto può essere dissociato in modo implicito dal tipo di dati **JET_LS** quando l'oggetto sottostante viene rilasciato dal motore di database in seguito a un'azione diretta o indiretta da parte dell'applicazione. Nel caso implicito, un callback di runtime viene emesso all'applicazione in modo che possa pulire l'handle del contesto. Per ulteriori informazioni sulla disassociazione implicita dal tipo di dati **JET_LS** , vedere [JetSetLS](./jetsetls-function.md).
+L'handle di contesto può essere disassociato in modo esplicito dal tipo di dati JET_LS [tramite JetGetLS](./jetgetls-function.md) con JET_bitLSReset.  In alternativa, l'handle di contesto può essere dissociato in modo implicito dal tipo di dati JET_LS quando l'oggetto sottostante viene rilasciato dal motore di database **come** risultato di un'azione diretta o indiretta da parte dell'applicazione. Nel caso implicito, viene eseguito un callback di runtime per l'applicazione in modo che possa pulire l'handle di contesto. Per altre informazioni sulla dissociazione implicita dal tipo JET_LS dati, vedere [JetSetLS](./jetsetls-function.md). 
 
-I flag seguenti sono associati al tipo di dati JET_LS.
+I flag seguenti sono associati al tipo JET_LS dati.
 
 <table>
 <colgroup>
@@ -65,19 +65,19 @@ I flag seguenti sono associati al tipo di dati JET_LS.
 <tbody>
 <tr class="odd">
 <td><p>JET_bitLSReset</p></td>
-<td><p>L'handle del contesto è dissociato dall'oggetto.</p></td>
+<td><p>L'handle di contesto viene dissociato dall'oggetto .</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitLSCursor</p></td>
-<td><p>Impostare o recuperare lo spazio di archiviazione locale associato a un cursore della tabella.</p></td>
+<td><p>Impostare o recuperare l'archiviazione locale associata a un cursore di tabella.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitLSTable</p></td>
-<td><p>Impostare o recuperare lo spazio di archiviazione locale associato a una tabella.</p></td>
+<td><p>Impostare o recuperare l'archiviazione locale associata a una tabella.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_LSNil</p></td>
-<td><p>Handle di contesto non valido.</p></td>
+<td><p>L'handle di contesto non è valido.</p></td>
 </tr>
 </tbody>
 </table>
@@ -101,7 +101,7 @@ I flag seguenti sono associati al tipo di dati JET_LS.
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

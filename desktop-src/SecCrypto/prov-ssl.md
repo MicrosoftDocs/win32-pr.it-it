@@ -4,16 +4,16 @@ ms.assetid: c94d8584-f01b-469b-a0d6-5fb14796b93e
 title: PROV_SSL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60c03050af4a6ee43e25abd912e30f27fef5874b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3667bbac41f265ac7508560621d471d2c66a0c67d7bd4054eca060afbf5f7e3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901500"
 ---
-# <a name="prov_ssl"></a>PROVA \_ SSL
+# <a name="prov_ssl"></a>PROV \_ SSL
 
-Il tipo di provider di prova \_ SSL supporta il protocollo Secure Sockets Layer (SSL).
+Il tipo di provider SSL PROV \_ supporta il protocollo Secure Sockets Layer (SSL).
 
 ## <a name="algorithms-supported"></a>Algoritmi supportati
 
@@ -23,7 +23,7 @@ Per le descrizioni di ognuno di questi algoritmi, vedere il glossario.
 
 | Scopo      | Algoritmi supportati                                        |
 |--------------|-------------------------------------------------------------|
-| Scambio di chiave | [*RSA*](../secgloss/r-gly.md) |
+| Chiave Exchange | [*RSA*](../secgloss/r-gly.md) |
 | Firma    | RSA                                                         |
 | Crittografia   | Varia                                                      |
 | Hashing      | Varia                                                      |

@@ -1,19 +1,19 @@
 ---
 title: Proprietà Enabled (oggetto Balloon)
-description: Informazioni sulla proprietà dell'oggetto Enabled Balloon. Microsoft Agent è deprecato a livello di Windows 7.
+description: Informazioni sulla proprietà dell'oggetto Enabled Balloon. Microsoft Agent è deprecato a Windows 7.
 ms.assetid: 4d73acda-6fcc-4912-a466-570849aeb807
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 602d39a9bef7713a92707d8a43050f04a3577b6d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: b0d4eaa09e173d847e9dead1bbd559b59e2d12a2d40b5f1d1f989d3cf70263ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118752003"
 ---
 # <a name="enabled-property-balloon-object"></a>Proprietà Enabled (oggetto Balloon)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 

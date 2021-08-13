@@ -3,33 +3,33 @@ title: Rilevamento e rilevamento di più punti di tocco
 description: Rilevamento e rilevamento di più punti di tocco
 ms.assetid: 7a5c7595-f341-4e11-805f-ed0b9c63cbff
 keywords:
-- Windows Touch, più punti di tocco
+- Windows Tocco, più punti di tocco
 - rilevamento di più punti di tocco
 - rilevamento di più punti di tocco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13b9eaf665b850eea8925bd531ffd1e9ec3fcf40
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a4a5b8086988dc1a87b5596d5a0ac74ec1f1df5ce4b85d928cbe306b791d17b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118436068"
 ---
 # <a name="detecting-and-tracking-multiple-touch-points"></a>Rilevamento e rilevamento di più punti di tocco
 
-Nei passaggi seguenti viene illustrato come tenere traccia di più punti di tocco utilizzando Windows Touch.
+La procedura seguente illustra come tenere traccia di più punti di tocco usando Windows Touch.
 
 1.  Creare un'applicazione e abilitare Windows Touch.
-2.  Aggiungere un gestore per i punti di controllo [**WM \_**](wm-touchdown.md) e track point.
-3.  Creare i punti.
+2.  Aggiungere un gestore per [**WM \_ TOUCH e**](wm-touchdown.md) track point.
+3.  Disegnare i punti.
 
-Dopo che l'applicazione è in esecuzione, eseguirà il rendering dei cerchi sotto ogni tocco. Lo screenshot seguente mostra il modo in cui l'applicazione potrebbe apparire durante l'esecuzione.
+Dopo l'esecuzione, l'applicazione eseguirà il rendering dei cerchi sotto ogni tocco. Lo screenshot seguente mostra l'aspetto dell'applicazione durante l'esecuzione.
 
-![screenshot che mostra un'applicazione che esegue il rendering di punti di tocco come cerchi verde e giallo](images/multitouchpoints.png)
+![Screenshot che mostra un'applicazione che esegue il rendering dei punti di tocco come cerchi verdi e gialli](images/multitouchpoints.png)
 
 ## <a name="create-an-application-and-enable-windows-touch"></a>Creare un'applicazione e abilitare Windows Touch
 
-Iniziare con un'applicazione Microsoft Win32 usando la procedura guidata di Microsoft Visual Studio. Dopo aver completato la procedura guidata, aggiungere il supporto per i messaggi di Windows Touch impostando la versione di Windows in targetver. h e includendo Windows. h e WINDOWSX. h nell'applicazione. Nel codice seguente viene illustrato come impostare la versione di Windows in targetver. h.
+Iniziare con un'applicazione Microsoft Win32 usando la Microsoft Visual Studio guidata. Dopo aver completato la procedura guidata, aggiungere il supporto per i messaggi Windows Touch impostando la versione di Windows in targetver.h e includendo windows.h e windowsx.h nell'applicazione. Il codice seguente illustra come impostare la versione Windows in targetver.h.
 
 
 ```C++
@@ -52,7 +52,7 @@ Iniziare con un'applicazione Microsoft Win32 usando la procedura guidata di Micr
 
 
 
-Il codice seguente illustra come aggiungere le direttive include. Inoltre, è possibile creare alcune variabili globali che verranno usate in un secondo momento.
+Il codice seguente illustra come aggiungere le direttive include. È anche possibile creare alcune variabili globali che verranno usate in un secondo momento.
 
 
 ```C++
@@ -91,9 +91,9 @@ COLORREF colors[] = { RGB(153,255,51),
 
 
 
-## <a name="add-handler-for-wm_touch-and-track-points"></a>Aggiungere un gestore per i punti di controllo e di traccia di WM \_
+## <a name="add-handler-for-wm_touch-and-track-points"></a>Aggiungere un gestore per WM \_ TOUCH e track point
 
-Dichiarare innanzitutto alcune variabili usate dal gestore [**WM \_ touch**](wm-touchdown.md) in [**WndProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)).
+Dichiarare prima di tutto alcune variabili usate dal gestore [**WM \_ TOUCH**](wm-touchdown.md) in [**WndProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -106,7 +106,7 @@ POINT ptInput;
 
 
 
-A questo punto, inizializzare le variabili usate per archiviare i punti di tocco e registrare la finestra per l'input tocco dal metodo **InitInstance** .
+Inizializzare ora le variabili usate per archiviare i punti di tocco e registrare la finestra per l'input tocco dal **metodo InitInstance.**
 
 
 ```C++
@@ -142,7 +142,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
 
 
-Gestire quindi il messaggio [**WM \_ touch**](wm-touchdown.md) dal metodo [**WndProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Il codice seguente illustra un'implementazione del gestore per **WM \_ touch**.
+Gestire quindi il [**messaggio WM \_ TOUCH**](wm-touchdown.md) dal [**metodo WndProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Il codice seguente illustra un'implementazione del gestore per **WM \_ TOUCH.**
 
 
 ```C++
@@ -181,13 +181,13 @@ case WM_TOUCH:
 
 
 > [!Note]  
-> Per usare la funzione [**ScreenToClient**](/windows/desktop/api/winuser/nf-winuser-screentoclient) , è necessario disporre di un supporto DPI elevato nell'applicazione. Per ulteriori informazioni sul supporto di valori DPI alti, vedere la sezione relativa a [DPI elevata]( ../hidpi/high-dpi-desktop-application-development-on-windows.md) di MSDN.
+> Per usare la funzione [**ScreenToClient,**](/windows/desktop/api/winuser/nf-winuser-screentoclient) è necessario avere un supporto DPI elevato nell'applicazione. Per altre informazioni sul supporto di valori DPI elevati, vedere la [sezione Relativa ai valori DPI]( ../hidpi/high-dpi-desktop-application-development-on-windows.md) alti in MSDN.
 
- 
+ 
 
-A questo punto, quando un utente tocca lo schermo, le posizioni che sta toccando verranno archiviate nella matrice points. Il membro **dwID** della struttura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) archivia un identificatore che dipende dall'hardware.
+A questo punto, quando un utente tocca lo schermo, le posizioni toccate verranno archiviate nella matrice points. Il **membro dwID** della struttura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) archivia un identificatore che sarà dipendente dall'hardware.
 
-Per risolvere il problema del membro dwID dipendente dall'hardware, il gestore [**WM \_ touch**](wm-touchdown.md) case usa una funzione, **GetContactIndex**, che esegue il mapping del membro **dwID** della struttura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) a un punto disegnato sullo schermo. Nel codice seguente viene illustrata un'implementazione di questa funzione.
+Per risolvere il problema del membro dwID dipendente dall'hardware, il gestore del case [**WM \_ TOUCH**](wm-touchdown.md) usa una funzione, **GetContactIndex,** che esegue il mapping del membro **dwID** della struttura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) a un punto disegnato sullo schermo. Nel codice seguente viene illustrata un'implementazione di questa funzione.
 
 
 ```C++
@@ -210,7 +210,7 @@ int GetContactIndex(int dwID){
 
 
 
-## <a name="draw-the-points"></a>Creare punti
+## <a name="draw-the-points"></a>Disegnare i punti
 
 Dichiarare le variabili seguenti per la routine di disegno.
 
@@ -231,7 +231,7 @@ Dichiarare le variabili seguenti per la routine di disegno.
 
 
 
-Il contesto di visualizzazione della memoria *memDC* viene usato per archiviare un contesto grafico temporaneo che viene scambiato con il contesto di visualizzazione di cui è stato eseguito il rendering, *HDC*, per eliminare lo sfarfallio. Implementare la routine di disegno, che accetta i punti archiviati e disegna un cerchio nei punti. Il codice seguente illustra come implementare il gestore di [**\_ disegno WM**](/windows/desktop/gdi/wm-paint) .
+Il contesto di visualizzazione della memoria *memDC* viene usato per archiviare un contesto grafico temporaneo scambiato con il contesto di visualizzazione sottoposto a rendering, *hdc,* per eliminare lo sfarfallio. Implementare la routine di disegno, che accetta i punti archiviati e disegna un cerchio in corrispondenza dei punti. Il codice seguente illustra come implementare il [**gestore WM \_ PAINT.**](/windows/desktop/gdi/wm-paint)
 
 
 ```C++
@@ -267,19 +267,19 @@ Il contesto di visualizzazione della memoria *memDC* viene usato per archiviare 
 
 
 
-Quando si esegue l'applicazione, ora dovrebbe essere simile a quella illustrata all'inizio di questa sezione.
+Quando si esegue l'applicazione, l'aspetto dovrebbe essere simile all'illustrazione all'inizio di questa sezione.
 
-Per divertimento, è possibile creare alcune linee aggiuntive intorno ai punti di tocco. Lo screenshot seguente mostra il modo in cui l'applicazione può apparire con alcune linee aggiuntive disegnate intorno ai cerchi.
+Per essere divertente, puoi disegnare alcune linee aggiuntive intorno ai punti di tocco. Lo screenshot seguente mostra l'aspetto dell'applicazione con alcune linee aggiuntive disegnate intorno ai cerchi.
 
-![screenshot che mostra un'applicazione che esegue il rendering di punti di tocco come cerchi con linee attraverso i centri e interseca i bordi dei punti di tocco](images/multitouchpointsfun.png)
+![Screenshot che mostra un'applicazione che esegue il rendering dei punti di tocco come cerchi con linee che attraversano i centri e intersecano i bordi dei punti di tocco](images/multitouchpointsfun.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Input Windows Touch](guide-multi-touch-input.md)
+[Windows Input tocco](guide-multi-touch-input.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

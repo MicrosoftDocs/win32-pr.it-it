@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentCheckpointFileNotFoundException'
+description: Altre informazioni sul costruttore EsentCheckpointFileNotFoundException
 title: Costruttore EsentCheckpointFileNotFoundException
 TOCTitle: 'EsentCheckpointFileNotFoundException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCheckpointFileNotFoundException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 40bc813135f056485b2056cb29fb62f6988fbe63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7983b1b862377b382f8d44628e29073b38135be924cb340a8eeb403d9957cb2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118782694"
 ---
 # <a name="esentcheckpointfilenotfoundexception-constructor"></a>Costruttore EsentCheckpointFileNotFoundException
 
 Inizializza una nuova istanza della classe EsentCheckpointFileNotFoundException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentCheckpointFileNotFoundException()
 
 [Membri di EsentCheckpointFileNotFoundException](./esentcheckpointfilenotfoundexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

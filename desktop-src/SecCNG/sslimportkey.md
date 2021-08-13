@@ -1,7 +1,7 @@
 ---
-description: Importa una chiave nel provider del protocollo SSL (Secure Sockets Layer Protocol).
+description: Importa una chiave nel provider Secure Sockets Layer protocol (SSL).
 ms.assetid: 42310799-384e-4396-a9d5-5f226ca25a86
-title: Funzione SslImportKey (Sslprovider. h)
+title: Funzione SslImportKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 8bf1b03fd5d51974db3676dcdbccc2a2b0fa4323
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00dbe668c28e234c0ed4fdc7950b6b9627ae5aaba46bbef4e17d1eb8cb213f85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906089"
 ---
-# <a name="sslimportkey-function"></a>SslImportKey (funzione)
+# <a name="sslimportkey-function"></a>Funzione SslImportKey
 
-La funzione **SslImportKey** importa una chiave nel provider del protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslImportKey** importa una chiave nel provider [*Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,33 +44,33 @@ SECURITY_STATUS WINAPI SslImportKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'istanza del provider del protocollo SSL.
 
 </dd> <dt>
 
-*phKey* \[ out\]
+*phKey* \[ Cambio\]
 </dt> <dd>
 
-Puntatore all'handle della [*chiave crittografica*](/windows/desktop/SecGloss/c-gly) per la ricezione della chiave importata.
+Puntatore all'handle della chiave [*crittografica*](/windows/desktop/SecGloss/c-gly) per ricevere la chiave importata.
 
 </dd> <dt>
 
-*pszBlobType* \[ in\]
+*pszBlobType* \[ Pollici\]
 </dt> <dd>
 
-Stringa Unicode con terminazione null che contiene un identificatore che specifica il tipo di [*BLOB*](/windows/desktop/SecGloss/b-gly) contenuto nel buffer *pbInput* . Può corrispondere a uno dei valori seguenti.
+Stringa Unicode con terminazione Null contenente un identificatore che specifica il tipo di [*BLOB*](/windows/desktop/SecGloss/b-gly) contenuto nel buffer *pbInput.* Può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                      | Significato                                                                                                                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**\_ \_ BLOB pubblico di BCRYPT DH \_**</dt> </dl>    | Esportare una [*chiave pubblica*](/windows/desktop/SecGloss/p-gly)Diffie-Hellman. Il buffer *pbOutput* riceve una [**struttura \_ \_ \_ BLOB di chiavi BCRYPT DH**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                                                                        |
-| <span id="BCRYPT_ECCPUBLIC_BLOB"></span><span id="bcrypt_eccpublic_blob"></span><dl> <dt>**\_BLOB ECCPUBLIC \_ BCRYPT**</dt> </dl>     | Esportare una [*chiave pubblica*](/windows/desktop/SecGloss/p-gly)di [*crittografia a curva ellittica*](/windows/desktop/SecGloss/e-gly) (ecc). Il buffer *pbOutput* riceve una [**struttura \_ \_ BLOB ECCKEY BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_ecckey_blob) immediatamente seguita dai dati della chiave.<br/>                             |
-| <span id="BCRYPT_OPAQUE_KEY_BLOB"></span><span id="bcrypt_opaque_key_blob"></span><dl> <dt>**\_BLOB della \_ chiave OPACa BCRYPT \_**</dt> </dl> | Esportare una [*chiave simmetrica*](/windows/desktop/SecGloss/s-gly) in un formato specifico per un singolo provider del [*servizio di crittografia*](/windows/desktop/SecGloss/c-gly) (CSP). I BLOB opachi non sono trasferibili e devono essere importati utilizzando lo stesso CSP che ha generato il BLOB.<br/> |
-| <span id="BCRYPT_RSAPUBLIC_BLOB"></span><span id="bcrypt_rsapublic_blob"></span><dl> <dt>**\_BLOB RSAPUBLIC \_ BCRYPT**</dt> </dl>     | Esportare una chiave pubblica [*RSA*](/windows/desktop/SecGloss/r-gly) . Il buffer *pbOutput* riceve una [**struttura \_ \_ BLOB rsaKey BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_rsakey_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                                                                                                 |
+| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**BLOB \_ PUBBLICO BCRYPT DH \_ \_**</dt> </dl>    | Esportare una Diffie-Hellman [*pubblica*](/windows/desktop/SecGloss/p-gly). Il *buffer pbOutput* riceve una struttura [**BLOB \_ BCRYPT DH \_ KEY \_**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                                                                        |
+| <span id="BCRYPT_ECCPUBLIC_BLOB"></span><span id="bcrypt_eccpublic_blob"></span><dl> <dt>**BCRYPT \_ ECCPUBLIC \_ BLOB**</dt> </dl>     | Esportare una chiave pubblica ECC [](/windows/desktop/SecGloss/p-gly) [*(elliptic Curve Cryptography).*](/windows/desktop/SecGloss/e-gly) Il *buffer pbOutput* riceve una struttura [**BLOB \_ ECCKEY \_ BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_ecckey_blob) immediatamente seguita dai dati della chiave.<br/>                             |
+| <span id="BCRYPT_OPAQUE_KEY_BLOB"></span><span id="bcrypt_opaque_key_blob"></span><dl> <dt>**BLOB DI \_ CHIAVI OPAQUE BCRYPT \_ \_**</dt> </dl> | Esportare [*una chiave simmetrica*](/windows/desktop/SecGloss/s-gly) in un formato specifico per un singolo provider del [*servizio di*](/windows/desktop/SecGloss/c-gly) crittografia (CSP). I BLOB opachi non sono trasferibili e devono essere importati usando lo stesso provider di servizi di archiviazione che ha generato il BLOB.<br/> |
+| <span id="BCRYPT_RSAPUBLIC_BLOB"></span><span id="bcrypt_rsapublic_blob"></span><dl> <dt>**BCRYPT \_ RSAPUBLIC \_ BLOB**</dt> </dl>     | Esportare una [*chiave pubblica RSA.*](/windows/desktop/SecGloss/r-gly) Il *buffer pbOutput* riceve una struttura [**BLOB \_ RSAKEY \_ BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_rsakey_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                                                                                                 |
 
 
 
@@ -78,21 +78,21 @@ Stringa Unicode con terminazione null che contiene un identificatore che specifi
 
 </dd> <dt>
 
-*pbKeyBlob* \[ in\]
+*pbKeyBlob* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al buffer che contiene il BLOB della [*chiave*](/windows/desktop/SecGloss/k-gly).
+Puntatore al buffer che contiene il [*BLOB della chiave.*](/windows/desktop/SecGloss/k-gly)
 
 </dd> <dt>
 
-*cbKeyBlob* \[ in\]
+*cbKeyBlob* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer *pbKeyBlob* .
+Dimensione, in byte, del buffer *pbKeyBlob.*
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -105,15 +105,15 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>         | La memoria disponibile non è sufficiente per allocare i buffer necessari.<br/> |
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Handle *hSslProvider* non valido.<br/>                       |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *phKey* è **null**.<br/>                            |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Memoria insufficiente per allocare i buffer necessari.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | *L'handle hSslProvider* non è valido.<br/>                       |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Il *parametro phKey* è **NULL.**<br/>                            |
 
 
 
@@ -121,7 +121,7 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile utilizzare la funzione **SslImportKey** per importare le chiavi della sessione come parte del processo di trasferimento delle chiavi di sessione da un processo a un altro.
+È possibile usare la **funzione SslImportKey** per importare le chiavi di sessione come parte del processo di trasferimento delle chiavi di sessione da un processo a un altro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -129,9 +129,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

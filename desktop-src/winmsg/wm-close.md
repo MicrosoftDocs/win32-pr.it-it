@@ -1,22 +1,22 @@
 ---
-Description: Inviato come segnale del termine di una finestra o di un'applicazione.
+Description: Inviato come segnale che una finestra o un'applicazione deve terminare.
 ms.assetid: 19500baf-e0ad-4dfa-804f-6a6e0652cffb
-title: Messaggio WM_CLOSE (winuser. h)
+title: WM_CLOSE messaggio (Winuser.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f1403050cfd3c98ddf90df4399547158a583c50
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebe027935391bc1e8946b8691a17f026b39b398ebefee2ea6f6e3765fcaa0c4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118436354"
 ---
-# <a name="wm_close-message"></a>\_Messaggio di chiusura WM
+# <a name="wm_close-message"></a>Messaggio WM \_ CLOSE
 
-Inviato come segnale del termine di una finestra o di un'applicazione.
+Inviato come segnale che una finestra o un'applicazione deve terminare.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -47,7 +47,7 @@ Questo parametro non viene usato.
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="example"></a>Esempio
 
@@ -73,14 +73,14 @@ LRESULT CALLBACK WindowProc(
     return 0;
 }
 ```
-Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/RadialController/cpp/RadialController.cpp) in GitHub.
+Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/RadialController/cpp/RadialController.cpp) in GitHub.
 
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione può richiedere conferma all'utente, prima di eliminare definitivamente una finestra, elaborando il messaggio **WM \_ Close** e chiamando la funzione [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) solo se l'utente conferma la scelta.
+Un'applicazione può richiedere conferma all'utente, prima di eliminare una finestra, elaborando il messaggio **WM \_ CLOSE** e chiamando la funzione [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) solo se l'utente conferma la scelta.
 
-Per impostazione predefinita, la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) chiama la funzione [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) per eliminare definitivamente la finestra.
+Per impostazione predefinita, la [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) chiama la [**funzione DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) per eliminare la finestra.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,7 +90,7 @@ Per impostazione predefinita, la funzione [**DefWindowProc**](/windows/desktop/a
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ Per impostazione predefinita, la funzione [**DefWindowProc**](/windows/desktop/a
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
+[**Destroywindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
 </dt> <dt>
 
 **Informazioni concettuali**

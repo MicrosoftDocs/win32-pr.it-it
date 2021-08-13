@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: eecbebc7090fb57d3794f3d056c24fba61fa5c61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83a24329b318ec2bb542a3bbb63a28d4db9fce877b99f75aa7091670825fa439
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716939"
 ---
 # <a name="itabletcursor-interface"></a>Interfaccia ITabletCursor
 
@@ -27,13 +27,13 @@ Rappresenta un oggetto stilo.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITabletCursor** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletCursor** dispone anche di questi tipi di membri:
+**L'interfaccia ITabletCursor** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletCursor** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ITabletCursor** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **ITabletCursor.**
 
 
 
@@ -43,7 +43,7 @@ L'interfaccia **ITabletCursor** dispone di questi metodi.
 | [**GetButtonCount**](itabletcursor-getbuttoncount.md) | Recupera il numero di pulsanti sullo stilo del tablet.<br/>       |
 | [**GetId**](itabletcursor-getid.md)                   | Recupera l'identificatore dello stilo.<br/>                            |
 | [**GetName**](itabletcursor-getname.md)               | Recupera il nome dello stilo del tablet.<br/>                    |
-| [**Invertito**](itabletcursor-isinverted.md)         | Indica se lo stilo è capovolto.<br/>                     |
+| [**IsInverted**](itabletcursor-isinverted.md)         | Indica se lo stilo è capovolto.<br/>                     |
 
 
 
@@ -53,7 +53,7 @@ L'interfaccia **ITabletCursor** dispone di questi metodi.
 
 Non usare questa interfaccia.
 
-Il codice seguente descrive il modo in cui viene definita l'interfaccia **ITabletCursor** .
+Il codice seguente descrive come viene definita **l'interfaccia ITabletCursor.**
 
 ``` syntax
 [
@@ -91,7 +91,7 @@ interface ITabletCursor : IUnknown
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

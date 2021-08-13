@@ -4,28 +4,28 @@ ms.assetid: 6ee6eecb-3812-45c6-8b27-7dfd6fa82758
 title: Enumerazione dei servizi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2eca8221a9a34bf9e921bcaca00eac99f2a75d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 149384f9c4ab5cf352561d08b28a961c8074cc39c018cef6b5deb64307d107ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697607"
 ---
 # <a name="enumerating-services"></a>Enumerazione dei servizi
 
-L'applicazione WpdServicesApiSample include codice che illustra in che modo un'applicazione può enumerare tutti i servizi di contatto presenti nei dispositivi attualmente connessi a un computer.
+L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può enumerare tutti i servizi Contatti presenti in uno dei dispositivi attualmente connessi a un computer.
 
-Quando l'utente sceglie l'opzione "0" nella riga di comando, l'applicazione richiama il metodo **EnumerateContactsServices** trovato nel modulo ServiceEnumeration. cpp. Questo metodo Visualizza un elenco di tutti i dispositivi connessi che supportano il servizio contatti.
+Quando l'utente sceglie l'opzione "0" dalla riga di comando, l'applicazione richiama il metodo **EnumerateContactsServices** disponibile nel modulo ServiceEnumeration.cpp. Questo metodo visualizza un elenco di tutti i dispositivi connessi che supportano il servizio Contatti.
 
-Se, ad esempio, WpdServiceSampleDriver è l'unico dispositivo installato, l'applicazione restituisce tre campi di dati: un nome descrittivo ("dispositivo di esempio"), un produttore ("gruppo dispositivi portatili Windows") e una descrizione ("contatti servizio dispositivo 2000").
+Ad esempio, se WpdServiceSampleDriver è l'unico dispositivo installato, l'applicazione restituisce tre campi di dati: un nome descrittivo ("Dispositivo di esempio"), un produttore ("gruppo di dispositivi portatili Windows") e una descrizione ("Dispositivo del servizio Contatti 2000").
 
-Il metodo **EnumerateContactsServices** consente di eseguire le attività seguenti:
+Il **metodo EnumerateContactsServices** esegue le attività seguenti:
 
--   Crea un'interfaccia [**IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) per gestire l'enumerazione dei dispositivi installati.
--   Crea un'interfaccia [**IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) per gestire l'enumerazione dei servizi in ogni dispositivo.
--   Scorre i dispositivi installati, Cerca il servizio Contacts e visualizza le informazioni sul dispositivo per qualsiasi dispositivo che supporta questo servizio.
+-   Crea [**un'interfaccia IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) per gestire l'enumerazione dei dispositivi installati.
+-   Crea [**un'interfaccia IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) per gestire l'enumerazione dei servizi in ogni dispositivo.
+-   Scorre i dispositivi installati, cercando il servizio Contatti e visualizza le informazioni sul dispositivo per qualsiasi dispositivo che supporta questo servizio.
 
-Il codice seguente illustra il metodo **EnumerateContactsServices** .
+Il codice seguente illustra il **metodo EnumerateContactsServices.**
 
 
 ```C++

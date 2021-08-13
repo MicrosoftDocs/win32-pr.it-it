@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_EXTENDED_SENSOR_INFO ( \_ tipi WINBIO. h)
-description: Contiene informazioni sulle funzionalità e i requisiti di registrazione della scheda sensore per un'unità biometrica.
+title: WINBIO_EXTENDED_SENSOR_INFO struttura (Winbio \_ types.h)
+description: Contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore sensore per un'unità biometrica.
 ms.assetid: 37D8BC57-F68D-487A-98B0-94D62CC091C2
 keywords:
-- Struttura di WINBIO_EXTENDED_SENSOR_INFO Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_EXTENDED_SENSOR_INFO
+- WINBIO_EXTENDED_SENSOR_INFO struttura Windows'API Biometric Framework
+- PWINBIO_EXTENDED_SENSOR_INFO puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c535ef56eeade897aac3c1d0503477da406935b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd8c323b4f4e3847c399e314da22048f658fb68c3b07ecf82f71ce0ed327c368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910419"
 ---
-# <a name="winbio_extended_sensor_info-structure"></a>\_ \_ Struttura info sensore esteso WINBIO \_
+# <a name="winbio_extended_sensor_info-structure"></a>Struttura WINBIO \_ EXTENDED \_ SENSOR \_ INFO
 
-Contiene informazioni sulle funzionalità e i requisiti di registrazione della scheda sensore per un'unità biometrica.
+Contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore sensore per un'unità biometrica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,14 +71,14 @@ Funzionalità generiche del componente sensore connesso a un'unità biometrica s
 **Fattore**
 </dt> <dd>
 
-Tipo di unità biometrica per la quale questa struttura contiene informazioni sulle funzionalità e i requisiti di registrazione della scheda del sensore. Se, ad esempio, il valore del membro **Factor** è **WINBIO \_ , \_** la struttura di **\_ informazioni sul \_ sensore \_ esteso WINBIO** si applica a un lettore di impronte digitali e contiene le informazioni rilevanti nella struttura **specifico. Fingerprint** .
+Tipo di unità biometrica per cui questa struttura contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore del sensore. Ad esempio, se il valore del membro **Factor** è **WINBIO \_ TYPE \_ FINGERPRINT,** la struttura **WINBIO \_ EXTENDED SENSOR \_ \_ INFO** si applica a un lettore di impronta digitale e contiene le informazioni rilevanti nella **struttura Specifc.Fingerprint.**
 
 </dd> <dt>
 
 **Specifica**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione della scheda sensore per un'unità biometrica correlata a un fattore biometrico specifico.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore sensore per un'unità biometrica correlata a un fattore biometrico specifico.
 
 <dl> <dt>
 
@@ -92,21 +92,21 @@ Riservato. Deve essere zero.
 **FacialFeatures**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione della scheda sensore per un'unità biometrica correlata alle funzionalità facciali.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore sensore per un'unità biometrica correlata alle caratteristiche facciali.
 
 <dl> <dt>
 
 **FrameSize**
 </dt> <dd>
 
-Dimensioni del fotogramma della fotocamera, indicate come lunghezza e larghezza in pixel per i membri **destro** e **inferiore** della struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Il punto (0, 0) rappresenta l'angolo superiore sinistro del frame.
+Dimensioni del frame della fotocamera, indicate come lunghezza e  larghezza in pixel dai membri destro **e** inferiore della struttura [**RECT.**](/previous-versions//dd162897(v=vs.85)) Il punto (0, 0) rappresenta l'angolo superiore sinistro del frame.
 
 </dd> <dt>
 
 **FrameOffset**
 </dt> <dd>
 
-Offset del fotogramma della fotocamera per la faccia dalla videocamera, in pixel. Il valore (0, 0) indica che il fotogramma della fotocamera per la superficie e la videocamera video si sovrappongono completamente.
+Offset del fotogramma della fotocamera per il viso dalla videocamera, in pixel. Il valore (0, 0) indica che il fotogramma della fotocamera per il viso e la videocamera si sovrappongono completamente.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Orientamento preferito per la fotocamera.
 **Impronta digitale**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione della scheda sensore per un'unità biometrica correlata ai modelli di impronta digitale.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore sensore per un'unità biometrica correlata ai modelli di impronta digitale.
 
 <dl> <dt>
 
@@ -134,21 +134,21 @@ Riservato.
 **Iris**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione della scheda sensore per un'unità biometrica relativa ai modelli Iris.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore sensore per un'unità biometrica correlata ai modelli iris.
 
 <dl> <dt>
 
 **FrameSize**
 </dt> <dd>
 
-Dimensioni del fotogramma della fotocamera, indicate come lunghezza e larghezza in pixel per i membri **destro** e **inferiore** della struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Il punto (0, 0) rappresenta l'angolo superiore sinistro del frame.
+Dimensioni del frame della fotocamera, indicate come lunghezza e  larghezza in pixel dai membri destro **e** inferiore della struttura [**RECT.**](/previous-versions//dd162897(v=vs.85)) Il punto (0, 0) rappresenta l'angolo superiore sinistro del frame.
 
 </dd> <dt>
 
 **FrameOffset**
 </dt> <dd>
 
-Offset del fotogramma della fotocamera per l'iride dalla videocamera video, espresso in pixel. Il valore (0, 0) indica che il fotogramma della fotocamera per l'iride e la videocamera video si sovrappongono completamente.
+Offset del fotogramma della fotocamera per l'iris dalla videocamera, in pixel. Il valore (0, 0) indica che il fotogramma della fotocamera per l'iris e la videocamera si sovrappone completamente.
 
 </dd> <dt>
 
@@ -162,7 +162,7 @@ Orientamento preferito per la fotocamera.
 **Chiamata vocale**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione della scheda sensore per un'unità biometrica relativa ai modelli vocali.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore sensore per un'unità biometrica correlata ai modelli vocali.
 
 <dl> <dt>
 
@@ -179,9 +179,9 @@ Riservato.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinBio \_ types. h (includere WinBio. h per le applicazioni client o WinBio \_ Adapters. h per gli adapter)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (includere Winbio.h per le applicazioni client o Adapters.h Winbio \_ per gli adapter)</dt> </dl> |
 
 
 
@@ -189,13 +189,13 @@ Riservato.
 
 <dl> <dt>
 
-[**\_Costanti della funzionalità WINBIO**](winbio-capability-constants.md)
+[**Costanti DI \_ WINBIO CAPABILITY**](winbio-capability-constants.md)
 </dt> <dt>
 
-[**\_ \_ Costanti di tipo biometrico WINBIO**](winbio-biometric-type-constants.md)
+[**Costanti DI TIPO \_ BIOMETRICO WINBIO \_**](winbio-biometric-type-constants.md)
 </dt> <dt>
 
-[**\_Costanti di orientamento WINBIO**](winbio-orientation-constants.md)
+[**Costanti \_ DI ORIENTAMENTO WINBIO**](winbio-orientation-constants.md)
 </dt> </dl>
 
  

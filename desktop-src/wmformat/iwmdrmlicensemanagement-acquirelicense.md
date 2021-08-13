@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMLicenseManagement AcquireLicense (wmdrmsdk. h)
+title: Metodo IWMDRMLicenseManagement AcquireLicense (Wmdrmsdk.h)
 description: Il metodo AcquireLicense acquisisce in modo asincrono una licenza da un URL specificato.
 ms.assetid: 2e134f39-1f45-4d3a-b7c7-460aa0a250d0
 keywords:
-- Metodo AcquireLicense Windows Media Format
-- Metodo AcquireLicense Windows Media Format, interfaccia IWMDRMLicenseManagement
-- Interfaccia IWMDRMLicenseManagement-formato Windows Media, metodo AcquireLicense
+- Metodo AcquireLicense windows Media Format
+- Metodo AcquireLicense windows Media Format , interfaccia IWMDRMLicenseManagement
+- IWMDRMLicenseManagement interface windows Media Format , AcquireLicense method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 279a3d4d84617c4a4fa5454d1f39f6f78f0cf3fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ad8251650c8a7e16c6eb2fc957df5e70459239c0cd6cf1184b5209ae51b6aaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118701127"
 ---
-# <a name="iwmdrmlicensemanagementacquirelicense-method"></a>Metodo IWMDRMLicenseManagement:: AcquireLicense
+# <a name="iwmdrmlicensemanagementacquirelicense-method"></a>Metodo IWMDRMLicenseManagement::AcquireLicense
 
-Il metodo **AcquireLicense** acquisisce in modo asincrono una licenza da un URL specificato.
+Il **metodo AcquireLicense acquisisce** in modo asincrono una licenza da un URL specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,29 +47,29 @@ HRESULT AcquireLicense(
 
 <dl> <dt>
 
-*bstrURL* \[ in\]
+*bstrURL* \[ Pollici\]
 </dt> <dd>
 
-URL del server licenze da cui acquisire la licenza. Passare **null** per fare in modo che il metodo analizzi l'URL dall'intestazione del contenuto.
+URL del server licenze da cui acquisire la licenza. Passare **NULL per** fare in modo che il metodo an parsi l'URL dall'intestazione del contenuto.
 
 </dd> <dt>
 
-*bstrHeaderData* \[ in\]
+*bstrHeaderData* \[ Pollici\]
 </dt> <dd>
 
-Intestazione del contenuto da passare al server licenze. Se *bstrURL* è **null**, il metodo analizzerà l'URL da questa intestazione. Se *dwFlags* è impostato su WMDRM \_ acquisisce \_ License \_ legacy \_ Unsilent, impostare questo valore sull'ID chiave anziché sull'intera intestazione Content.
+Intestazione del contenuto da passare al server licenze. Se *bstrURL è* **NULL,** il metodo an parserà l'URL di questa intestazione. Se *dwFlags* è impostato su WMDRM ACQUIRE LICENSE LEGACY NONSILENT, impostare questo valore sull'ID chiave \_ anziché \_ \_ \_ sull'intera intestazione del contenuto.
 
 </dd> <dt>
 
-*bstrActions* \[ in\]
+*bstrActions* \[ Pollici\]
 </dt> <dd>
 
-Stringa contenente zero o più azioni per le quali richiedere l'autorizzazione per la licenza. La stringa deve essere formattata come indicato di seguito:
+Stringa contenente zero o più azioni per cui richiedere l'autorizzazione nella licenza. La stringa deve essere formattata nel modo seguente:
 
--   Ogni azione deve essere definita all'interno di un elemento ACTION. I dati dell'elemento sono la stringa dell'azione.
--   Tutti gli elementi ACTION devono essere contenuti all'interno di un elemento ACTION.
+-   Ogni azione deve essere definita all'interno di un elemento ACTION. I dati dell'elemento sono la stringa di azione.
+-   Tutti gli elementi ACTION devono essere contenuti in un elemento ACTIONLIST.
 
-    Ad esempio, la stringa per richiedere una licenza per riprodurre il contenuto è formattata come la seguente:
+    Ad esempio, la stringa per richiedere una licenza per riprodurre il contenuto è formattata come segue:
 
     ```C++
     <ACTIONLIST><ACTION></ACTION></ACTIONLIST>
@@ -79,18 +79,18 @@ Stringa contenente zero o più azioni per le quali richiedere l'autorizzazione p
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Flag dell'opzione di acquisizione delle licenze. Impostare su una delle costanti nella tabella seguente.
+Flag dell'opzione di acquisizione della licenza. Impostare su una delle costanti nella tabella seguente.
 
 
 
 | Costante                                   | Descrizione                                                                                                              |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| WMDRM \_ acquisire la \_ licenza \_ invisibile all'utente            | La licenza verrà emessa direttamente tramite Internet senza alcuna conferma da parte dell'applicazione client.              |
-| WMDRM \_ Acquisisci \_ licenza non \_ invisibile         | Il sottosistema DRM creerà una richiesta di licenza che verrà restituita in modo asincrono per la pubblicazione nel server licenze. |
-| WMDRM \_ acquisire la \_ licenza \_ legacy non invisibile all' \_ utente | Analogamente a WMDRM \_ , Acquisisci \_ licenza \_ non invisibile ad eccezione del fatto che verrà creata una richiesta di licenza di DRM versione 1.           |
+| WMDRM \_ ACQUIRE \_ LICENSE \_ SILENT            | La licenza verrà rilasciata direttamente tramite Internet senza alcuna conferma dall'applicazione client.              |
+| WMDRM \_ ACQUIRE \_ LICENSE \_ NONSILENT         | Il sottosistema DRM creerà una richiesta di licenza che verrà restituita in modo asincrono per la pubblicazione nel server licenze. |
+| WMDRM \_ ACQUIRE \_ LICENSE \_ LEGACY \_ NONSILENT | Uguale a WMDRM ACQUIRE LICENSE NONSILENT, ad eccezione del fatto che verrà creata una richiesta di \_ \_ licenza \_ DRM versione 1.           |
 
 
 
@@ -98,22 +98,22 @@ Flag dell'opzione di acquisizione delle licenze. Impostare su una delle costanti
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ out\]
+*ppunkCancelationCookie* \[ Cambio\]
 </dt> <dd>
 
-Puntatore che riceve un puntatore all'interfaccia **IUnknown** di un oggetto che identifica la chiamata asincrona. Questo puntatore di interfaccia può essere utilizzato per annullare la chiamata asincrona chiamando il metodo [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Puntatore che riceve un puntatore **all'interfaccia IUnknown** di un oggetto che identifica questa chiamata asincrona. Questo puntatore a interfaccia può essere usato per annullare la chiamata asincrona chiamando il [**metodo IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -121,9 +121,9 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene eseguito in modo asincrono. Viene restituito immediatamente dopo la chiamata di e quindi genera un evento **MEWMDRMLicenseAcquisitionCompleted** al termine dell'elaborazione. Per le operazioni di acquisizione di licenze non Silent, il valore dell'evento ottenuto chiamando **IMFMediaEvent:: GetValue** è un puntatore **IUnknown** . È possibile chiamare il metodo **QueryInterface** dell'interfaccia **IUnknown** recuperata per ottenere un'istanza dell'interfaccia [**IWMDRMNonSilentLicenseAquisition**](iwmdrmnonsilentlicenseaquisition.md) .
+Questo metodo viene eseguito in modo asincrono. Restituisce immediatamente dopo la chiamata e quindi genera un evento **MEWMDRMLicenseAcquisitionCompleted** al termine dell'elaborazione. Per le operazioni di acquisizione di licenze non invisibile all'utente, il valore dell'evento ottenuto chiamando **IMFMediaEvent::GetValue** è un **puntatore IUnknown.** È possibile chiamare il **metodo QueryInterface** dell'interfaccia **IUnknown** recuperata per ottenere un'istanza dell'interfaccia [**IWMDRMNonSilentLicenseAquisition.**](iwmdrmnonsilentlicenseaquisition.md)
 
-Per ulteriori informazioni sull'utilizzo dei metodi asincroni delle API estese del client Windows Media DRM, vedere [utilizzo del modello di eventi Media Foundation](using-the-media-foundation-model.md).
+Per altre informazioni sull'uso dei metodi asincroni delle API estese Windows Media DRM Client, vedere [Using the Media Foundation Event Model](using-the-media-foundation-model.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -131,8 +131,8 @@ Per ulteriori informazioni sull'utilizzo dei metodi asincroni delle API estese d
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -143,7 +143,7 @@ Per ulteriori informazioni sull'utilizzo dei metodi asincroni delle API estese d
 [**Interfaccia IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
 </dt> <dt>
 
-[**Acquisizione di una licenza invisibile all'utente**](silent-license-acquisition.md)
+[**Acquisizione di licenze invisibile all'utente**](silent-license-acquisition.md)
 </dt> </dl>
 
  

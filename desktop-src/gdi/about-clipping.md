@@ -4,23 +4,23 @@ ms.assetid: f0ecafcb-2fe4-482f-9333-324419740128
 title: Informazioni sul ritaglio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aeb74973a64e7c46a0a39bda87e0647b685eefe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4ee2747ce1af20ad458a0eefb6b5114178f5099e626d4d1ddc6bd78106727c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119452381"
 ---
 # <a name="about-clipping"></a>Informazioni sul ritaglio
 
-Il ritaglio viene usato dalle applicazioni in diversi modi. Le applicazioni di elaborazione di Word e foglio di calcolo ritagliano l'input della tastiera per evitare che venga visualizzato nei margini di una pagina o di un foglio di calcolo. Progettazione assistita da computer (CAD) e applicazioni di disegno ritagliano l'output di grafica per evitare di sovrascrivere i bordi di un disegno o di un'immagine.
+Il ritaglio viene usato dalle applicazioni in diversi modi. Le applicazioni di elaborazione di testo e fogli di calcolo ritagliano l'input da tastiera per evitare che venga visualizzato nei margini di una pagina o di un foglio di calcolo. Le applicazioni CAD (Computer-Aided Design) e di disegno ritagliano l'output grafico per evitare che sovrascriva i bordi di un disegno o di un'immagine.
 
-Un' *area di ridimensionamento* è un'area con spigoli che sono linee rette o curve. Un *percorso di ritaglio* è un'area con bordi lineari, curve di Bézier o combinazioni di entrambi. Per altre informazioni sulle aree, vedere [aree](regions.md). Per ulteriori informazioni sui percorsi, vedere [percorsi](paths.md).
+*Un'area di ritaglio* è un'area con bordi che sono linee rette o curve. Un *tracciato di* ritaglio è un'area con bordi che sono linee rette, curve di Bézier o combinazioni di entrambi. Per altre informazioni sulle aree, vedere [Aree.](regions.md) Per altre informazioni sui percorsi, vedere [Percorsi.](paths.md)
 
 Questa panoramica illustra gli argomenti seguenti:
 
--   [Aree di ridimensionamento](clipping-regions.md)
--   [Percorsi di ritaglio](clip-paths.md)
+-   [Aree di ritaglio](clipping-regions.md)
+-   [Tracciati di ritaglio](clip-paths.md)
 
  
 

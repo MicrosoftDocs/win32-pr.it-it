@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_SETMAXTIPWIDTH (COMmctrl. h)
+title: TTM_SETMAXTIPWIDTH messaggio (Commctrl.h)
 description: Imposta la larghezza massima per una finestra della descrizione comando.
 ms.assetid: 3cfb6011-d0c3-4a57-aead-d4ec09a057cc
 keywords:
-- Controlli di Windows Message TTM_SETMAXTIPWIDTH
+- TTM_SETMAXTIPWIDTH dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55ce930b289205b5fb0d2768068b8cb28cd11aec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d344a3abcbe2b3bf57a71c8020d383f76ab1922b9009cd69411912d4468fa19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104225209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433761"
 ---
-# <a name="ttm_setmaxtipwidth-message"></a>\_Messaggio TTM SETMAXTIPWIDTH
+# <a name="ttm_setmaxtipwidth-message"></a>TTM \_ SETMAXTIPWIDTH message
 
 Imposta la larghezza massima per una finestra della descrizione comando.
 
@@ -35,17 +35,17 @@ Imposta la larghezza massima per una finestra della descrizione comando.
 *lParam* 
 </dt> <dd>
 
-Lunghezza massima della finestra ToolTip oppure-1 per consentire qualsiasi larghezza.
+Larghezza massima della finestra della descrizione comando oppure -1 per consentire qualsiasi larghezza.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la larghezza massima precedente della descrizione comando.
+Restituisce la larghezza massima della descrizione comando precedente.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di larghezza massima non indica la larghezza effettiva della finestra descrizione comando. Se invece una stringa della descrizione comando supera la larghezza massima, il controllo suddivide il testo in più righe, usando spazi per determinare le interruzioni di riga. Se il testo non può essere segmentato in più righe, viene visualizzato su una sola riga, che può superare la larghezza massima della descrizione comando.
+Il valore di larghezza massima non indica la larghezza effettiva di una finestra della descrizione comando. Se invece una stringa di descrizione comando supera la larghezza massima, il controllo suddivide il testo in più righe, usando spazi per determinare le interruzioni di riga. Se il testo non può essere segmentato in più righe, viene visualizzato su una singola riga, che può superare la larghezza massima della descrizione comando.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore di larghezza massima non indica la larghezza effettiva della finestra 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il valore di larghezza massima non indica la larghezza effettiva della finestra 
 
 <dl> <dt>
 
-[**\_GETMAXTIPWIDTH TTM**](ttm-getmaxtipwidth.md)
+[**TTM \_ GETMAXTIPWIDTH**](ttm-getmaxtipwidth.md)
 </dt> </dl>
 
  

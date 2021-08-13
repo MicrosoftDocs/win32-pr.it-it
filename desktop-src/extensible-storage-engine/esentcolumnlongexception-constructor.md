@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentColumnLongException'
+description: Altre informazioni sul costruttore EsentColumnLongException
 title: Costruttore EsentColumnLongException
 TOCTitle: 'EsentColumnLongException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnLongException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be5d05b3fe4b6b025bc2a995745b3c2f1b07c2e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ece3a4231fa9d5d1e0834e74e8e6d34da20656997551a6a848ae93d19b0aa16a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118782386"
 ---
 # <a name="esentcolumnlongexception-constructor"></a>Costruttore EsentColumnLongException
 
 Inizializza una nuova istanza della classe EsentColumnLongException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentColumnLongException()
 
 [Membri di EsentColumnLongException](./esentcolumnlongexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

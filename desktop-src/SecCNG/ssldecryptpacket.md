@@ -1,7 +1,7 @@
 ---
-description: Decrittografa un singolo pacchetto di protocollo SSL (Secure Sockets Layer).
+description: Decrittografa un singolo pacchetto SSL (Secure Sockets Layer Protocol).
 ms.assetid: 22a7dd2b-d023-47b9-8f76-1c17c2dd6466
-title: Funzione SslDecryptPacket (Sslprovider. h)
+title: Funzione SslDecryptPacket (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: cd568596b7e780242c0ff8d9c522a9e1758c60b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b058fbb01183ccf0582c0fa196bec71bfaffa2e8a44739c1ea5fb01a8148174
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906703"
 ---
-# <a name="ssldecryptpacket-function"></a>SslDecryptPacket (funzione)
+# <a name="ssldecryptpacket-function"></a>Funzione SslDecryptPacket
 
-la funzione **SslDecryptPacket** decrittografa un singolo pacchetto di protocollo SSL ( [*Secure Sockets Layer*](/windows/desktop/SecGloss/s-gly) ).
+la **funzione SslDecryptPacket** decrittografa un singolo [*pacchetto SECURE SOCKETS LAYER Protocol*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,63 +47,63 @@ SECURITY_STATUS WINAPI SslDecryptPacket(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle dell'istanza del provider del protocollo SSL.
 
 </dd> <dt>
 
-*HKEY* \[ in uscita\]
+*hKey* \[ in, out\]
 </dt> <dd>
 
 Handle per la chiave utilizzata per decrittografare il pacchetto.
 
 </dd> <dt>
 
-*pbInput* \[ in\]
+*pbInput* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al buffer che contiene il pacchetto da decrittografare.
 
 </dd> <dt>
 
-*cbInput* \[ in\]
+*cbInput* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, in byte, del buffer *pbInput* .
+Lunghezza, in byte, del buffer *pbInput.*
 
 </dd> <dt>
 
-*pbOutput* \[ out\]
+*pbOutput* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer contenente il pacchetto decrittografato.
+Puntatore a un buffer per contenere il pacchetto decrittografato.
 
 </dd> <dt>
 
-*cbOutput* \[ in\]
+*cbOutput* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, byte, del buffer *pbOutput* .
+Lunghezza, byte, del buffer *pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ out\]
+*pcbResult* \[ Cambio\]
 </dt> <dd>
 
-Numero di byte scritti nel buffer *pbOutput* .
+Numero di byte scritti nel buffer *pbOutput.*
 
 </dd> <dt>
 
-*SequenceNumber* \[ in\]
+*SequenceNumber* \[ Pollici\]
 </dt> <dd>
 
-Numero di sequenza che corrisponde a questo pacchetto.
+Numero di sequenza corrispondente a questo pacchetto.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -116,13 +116,13 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                    | Descrizione                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl> | Uno degli handle forniti non è valido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno degli handle forniti non è valido.<br/> |
 
 
 
@@ -138,9 +138,9 @@ La lunghezza del pacchetto può essere zero, ad esempio quando viene decrittogra
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

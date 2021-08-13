@@ -1,7 +1,7 @@
 ---
-description: Il metodo ManageChannel costruisce un comando APDU (Application Protocol Data Unit) che consente di aprire e chiudere i canali logici.
+description: Il metodo ManageChannel costruisce un comando APDU (Application Protocol Data Unit) che apre e chiude i canali logici.
 ms.assetid: a55b5b3f-0404-45bd-afeb-e96173319a50
-title: 'Metodo ISCardISO7816:: ManageChannel (scardssp. h)'
+title: Metodo ISCardISO7816::ManageChannel (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,22 +13,22 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: f0b9af92e280781405c2cb570c93e8873a279765
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92fb91c0630996938e247dbc244ac0c311c52531401367d5326bd197ffaabf9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119481121"
 ---
-# <a name="iscardiso7816managechannel-method"></a>Metodo ISCardISO7816:: ManageChannel
+# <a name="iscardiso7816managechannel-method"></a>Metodo ISCardISO7816::ManageChannel
 
-\[Il metodo **ManageChannel** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo ManageChannel** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **ManageChannel** costruisce un comando APDU ( [*Application Protocol Data Unit*](../secgloss/a-gly.md) ) che consente di aprire e chiudere i canali logici.
+Il **metodo ManageChannel** costruisce un [*comando APDU (Application Protocol Data Unit)*](../secgloss/a-gly.md) che apre e chiude i canali logici.
 
-La funzione Open apre un nuovo canale logico diverso da quello di base. Sono disponibili opzioni per la scheda per assegnare un numero di canale logico o per il numero di canale logico da fornire alla scheda.
+La funzione open apre un nuovo canale logico diverso da quello di base. Vengono fornite opzioni per la scheda per assegnare un numero di canale logico o per il numero di canale logico da assegnare alla scheda.
 
-La funzione close chiude in modo esplicito un canale logico diverso da quello di base. Una volta completata la chiusura, il canale logico sarà disponibile per il riutilizzo.
+La funzione close chiude in modo esplicito un canale logico diverso da quello di base. Dopo la chiusura corretta, il canale logico sarà disponibile per il nuovo utilizzo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,36 +47,36 @@ HRESULT ManageChannel(
 
 <dl> <dt>
 
-*byChannelState* \[ in\]
+*byChannelState* \[ Pollici\]
 </dt> <dd>
 
-Bit B8 di P1 viene usato per indicare la funzione Open o la funzione close; Se B8 è 0, il canale di gestione deve aprire un canale logico e se B8 è 1, il canale di gestione deve chiudere un canale logico:
+Il bit b8 di P1 viene usato per indicare la funzione open o la funzione close. se b8 è 0, MANAGE CHANNEL deve aprire un canale logico e se b8 è 1, MANAGE CHANNEL chiuderà un canale logico:
 
-P1 = "00" da aprire
+P1 = '00' da aprire
 
-P1 = "80" da chiudere
+P1 = '80' da chiudere
 
 Altri valori sono RFU
 
 </dd> <dt>
 
-*byChannel* \[ in\]
+*byChannel* \[ Pollici\]
 </dt> <dd>
 
-Per la funzione Open (P1 = "00"), i bit B1 e B2 di P2 vengono usati per codificare il numero di canale logico nello stesso modo in cui si trova nella classe byte, mentre gli altri bit di P2 sono RFU.
+Per la funzione open (P1 = '00'), i bit b1 e b2 di P2 vengono usati per codificare il numero di canale logico nello stesso modo in cui nel byte della classe, gli altri bit di P2 sono RFU.
 
-Quando B1 e B2 di P2 sono **null**, la scheda assegnerà un numero di canale logico che verrà restituito in bits B1 e B2 del campo dati.
+Quando b1 e b2 di P2 sono **NULL,** la scheda assegna un numero di canale logico che verrà restituito nei bit b1 e b2 del campo dati.
 
-Quando B1 e/o B2 di P2 non sono **null**, codificano un numero di canale logico diverso da quello di base; la scheda apre quindi il numero di canale logico assegnato dall'esterno.
+Quando b1 e/o b2 di P2 non sono **NULL,** codificano un numero di canale logico diverso da quello di base. quindi la scheda aprirà il numero di canale logico assegnato esternamente.
 
 </dd> <dt>
 
-*ppCmd* \[ in uscita\]
+*ppCmd* \[ in, out\]
 </dt> <dd>
 
-In input, un puntatore a un oggetto di interfaccia [**ISCardCmd**](iscardcmd.md) o **null**.
+In input, puntatore a un [**oggetto interfaccia ISCardCmd**](iscardcmd.md) o **NULL.**
 
-Al ritorno, viene compilato con il comando APDU creato da questa operazione. Se *ppCmd* è stato impostato su **null**, un oggetto [**ISCardCmd**](iscardcmd.md) della [*Smart Card*](../secgloss/s-gly.md) viene creato e restituito internamente utilizzando il puntatore *ppCmd* .
+In caso di restituzione, viene riempito con il comando APDU costruito da questa operazione. Se *ppCmd è* stato impostato su **NULL,** un [*smart card*](../secgloss/s-gly.md) [**isCardCmd viene**](iscardcmd.md) creato internamente e restituito usando il *puntatore ppCmd.*
 
 </dd> </dl>
 
@@ -88,10 +88,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -99,15 +99,15 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Quando la funzione Open viene eseguita correttamente dal canale logico di base, MF deve essere selezionato in modo implicito come DF corrente e lo stato di sicurezza del nuovo canale logico deve essere lo stesso del canale logico di base dopo ATR. Lo stato di sicurezza del nuovo canale logico deve essere diverso da quello di qualsiasi altro canale logico.
+Quando la funzione open viene eseguita correttamente dal canale logico di base, l'MF deve essere selezionato in modo implicito come DF corrente e lo stato di sicurezza del nuovo canale logico deve essere lo stesso del canale logico di base dopo ATR. Lo stato di sicurezza del nuovo canale logico deve essere separato da quello di qualsiasi altro canale logico.
 
-Quando la funzione Open viene eseguita correttamente da un canale logico, che non è quello di base, il valore DF corrente del canale logico che ha emesso il comando verrà selezionato come DF corrente. Inoltre, lo stato di sicurezza per il nuovo canale logico deve corrispondere allo stato di sicurezza del canale logico da cui è stata eseguita la funzione di apertura.
+Quando la funzione open viene eseguita correttamente da un canale logico, che non è quello di base, il valore DF corrente del canale logico che ha eseguito il comando verrà selezionato come DF corrente. Inoltre, lo stato di sicurezza per il nuovo canale logico deve essere uguale allo stato di sicurezza del canale logico da cui è stata eseguita la funzione aperta.
 
-Dopo una funzione di chiusura corretta, lo stato di sicurezza correlato a questo canale logico viene perso.
+Dopo una corretta chiusura della funzione, lo stato di sicurezza correlato a questo canale logico viene perso.
 
 Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816**](iscardiso7816.md).
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,12 +115,12 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 è definito come 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 

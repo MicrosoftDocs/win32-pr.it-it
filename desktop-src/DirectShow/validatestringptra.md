@@ -1,7 +1,7 @@
 ---
-description: Verifica che il processo chiamante disponga dell'accesso in lettura a una stringa ANSI. In caso contrario, la macro chiama la macro DbgBreak.
+description: Verifica che il processo chiamante abbia accesso in lettura a una stringa ANSI. In caso contrario, la macro chiama la macro DbgBreak.
 ms.assetid: 44be67f8-9896-4360-82de-083a5f28a3d0
-title: Macro ValidateStringPtrA (Wxdebug. h)
+title: Macro ValidateStringPtrA (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 94ce34393ec494f34cce621afc168a4d6bbe4325
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26a0e000f5b2b8de645924300eb650a05a66a4b57c16c5eda3f124e7bc0903a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432101"
 ---
-# <a name="validatestringptra-macro"></a>ValidateStringPtrA (macro)
+# <a name="validatestringptra-macro"></a>Macro ValidateStringPtrA
 
-Verifica che il processo chiamante disponga dell'accesso in lettura a una stringa ANSI. In caso contrario, la macro chiama la macro [**DbgBreak**](dbgbreak.md) .
+Verifica che il processo chiamante abbia accesso in lettura a una stringa ANSI. In caso contrario, la macro chiama la macro [**DbgBreak.**](dbgbreak.md)
 
 > [!Note]  
-> Questa macro è deprecata. Nella Windows SDK per Windows Vista (e versioni successive) questa macro non esegue alcuna operazione.
+> Questa macro è deprecata. Nell'SDK Windows per Windows Vista (e versioni successive) questa macro non esegue alcun'operazione.
 
  
 
@@ -44,7 +44,7 @@ void ValidateStringPtrA(
 
 <dl> <dt>
 
-*p* 
+*P* 
 </dt> <dd>
 
 Puntatore a una stringa ANSI con terminazione NULL.
@@ -57,7 +57,7 @@ Questa macro non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa macro viene ignorata a meno che non venga definito DEBUG, \_ debug o VFWROBUST quando viene incluso il file di intestazione della classe base DirectShow.
+Questa macro viene ignorata a meno che non venga definito DEBUG, DEBUG o VFWROBUST quando DirectShow file di intestazione della classe \_ base è incluso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Questa macro viene ignorata a meno che non venga definito DEBUG, \_ debug o VFWR
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Questa macro viene ignorata a meno che non venga definito DEBUG, \_ debug o VFWR
 
 <dl> <dt>
 
-[Macro di convalida del puntatore](pointer-validation-macros.md)
+[Macro di convalida dei puntatori](pointer-validation-macros.md)
 </dt> </dl>
 
  

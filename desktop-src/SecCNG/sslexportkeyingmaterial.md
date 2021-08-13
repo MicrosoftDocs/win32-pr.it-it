@@ -1,7 +1,7 @@
 ---
-description: Esporta il materiale delle chiavi in base allo standard RFC 5705.
+description: Esporta il materiale di keying in base allo standard RFC 5705.
 ms.assetid: 19624852-B1A6-4BB4-96AF-0457834DA294
-title: Funzione SslExportKeyingMaterial (Sslprovider. h)
+title: Funzione SslExportKeyingMaterial (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 906a7535b297f309c0c8471843ce07f43a110a3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39aaebba64f92794e179af95a5a175e2603fccc40410989cfcd427c6a7a1a88e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906619"
 ---
-# <a name="sslexportkeyingmaterial-function"></a>SslExportKeyingMaterial (funzione)
+# <a name="sslexportkeyingmaterial-function"></a>Funzione SslExportKeyingMaterial
 
-Esporta il materiale delle chiavi in base allo [standard RFC 5705](https://tools.ietf.org/html/rfc5705). Questa funzione usa la funzione TLS pseudocasuale per produrre un buffer di byte del materiale per le chiavi. Accetta un riferimento all'master secret, l'etichetta ASCII distinguere, i valori casuali del client e del server e, facoltativamente, i dati del contesto dell'applicazione.
+Esporta il materiale di keying in base [allo standard RFC 5705.](https://tools.ietf.org/html/rfc5705) Questa funzione usa la funzione pseudocasuale TLS per produrre un buffer di byte di materiale per la chiave. Accetta un riferimento all'master secret, all'etichetta ASCII disambiguazione, ai valori casuali del client e del server e, facoltativamente, ai dati del contesto dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,70 +48,70 @@ SECURITY_STATUS WINAPI SslExportKeyingMaterial(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'istanza del provider di protocollo TLS.
+Handle dell'istanza del provider del protocollo TLS.
 
 </dd> <dt>
 
-*hMasterKey* \[ in\]
+*hMasterKey* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'oggetto chiave master che verrà usato per creare il materiale per le chiavi in br esportato.
+Handle dell'oggetto chiave master che verrà usato per creare il materiale della chiave in br esportato.
 
 </dd> <dt>
 
-*sLabel* \[ in\]
+*Etichetta s* \[ Pollici\]
 </dt> <dd>
 
-stringa di etichetta ASCII con terminazione null. Schannel rimuoverà il carattere NUL di terminazione prima di passarlo alla funzione pseudocasuale.
+Stringa di etichetta ASCII con terminazione NUL. Schannel rimuoverà il carattere NUL di terminazione prima di passarlo alla funzione pseudocasuale.
 
 </dd> <dt>
 
-*pbRandoms* \[ in\]
+*pbRandoms* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un buffer che contiene una concatenazione dei valori casuali del *client \_* e del *server \_ casuale* della connessione TLS.
+Puntatore a un buffer che contiene una concatenazione dei valori *\_ casuali client* e *server \_ casuali* della connessione TLS.
 
 </dd> <dt>
 
-*cbRandoms* \[ in\]
+*cbRandoms* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, in byte, del buffer *pbRandoms* .
+Lunghezza, in byte, del buffer *pbRandoms.*
 
 </dd> <dt>
 
 *pbContextValue* \[ in, facoltativo\]
 </dt> <dd>
 
-Puntatore a un buffer che contiene il contesto dell'applicazione. Se *pbContextValue* è **null**, *cbContextValue* deve essere zero.
+Puntatore a un buffer che contiene il contesto dell'applicazione. Se *pbContextValue* è **NULL,** *cbContextValue* deve essere zero.
 
 </dd> <dt>
 
-*cbContextValue* \[ in\]
+*cbContextValue* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, in byte, del buffer *pbContextValue* .
+Lunghezza, in byte, del buffer *pbContextValue.*
 
 </dd> <dt>
 
-*pbOutput* \[ out\]
+*pbOutput* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di un buffer che riceve il materiale delle chiavi esportate. Il parametro *cbOutput* contiene la dimensione del buffer. Questo valore non può essere **null**.
+Indirizzo di un buffer che riceve il materiale di keying esportato. Il *parametro cbOutput* contiene le dimensioni di questo buffer. Questo valore non può essere **NULL.**
 
 </dd> <dt>
 
-*cbOutput* \[ in\]
+*cbOutput* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, in byte, del buffer *pbOutput* . Deve essere maggiore di zero.
+Lunghezza, in byte, del buffer *pbOutput.* Deve essere maggiore di zero.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Non usato. Deve essere impostato su zero.
@@ -124,13 +124,13 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice/valore restituito                                                                                                                                                    | Descrizione                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl> | Uno degli handle forniti non è valido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno degli handle forniti non è valido.<br/> |
 
 
 
@@ -142,9 +142,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -1,7 +1,7 @@
 ---
-description: L' \_ enumerazione WPD section \_ data \_ unit \_ values indica le unità per una sezione di dati a cui si fa riferimento.
+description: L'enumerazione WPD \_ SECTION DATA UNITS VALUES indica le unità per una sezione di dati a cui si fa \_ \_ \_ riferimento.
 ms.assetid: d787d8b4-b622-4370-baf9-a2783133260f
-title: Enumerazione WPD_SECTION_DATA_UNITS_VALUES (PortableDevice. h)
+title: WPD_SECTION_DATA_UNITS_VALUES enumerazione (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 60d6f3b26e525375f834bde151548e4d41ce53f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02311531d3adb2be2832708d5a5295f9514f6a6e3d20a48205d1f720592d9e61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696250"
 ---
-# <a name="wpd_section_data_units_values-enumeration"></a>\_Enumerazione dei \_ \_ valori delle unità dati della sezione WPD \_
+# <a name="wpd_section_data_units_values-enumeration"></a>Enumerazione WPD \_ SECTION \_ DATA UNITS \_ \_ VALUES
 
-L'enumerazione **WPD \_ Section \_ data \_ unit \_ values** indica le unità per una sezione di dati a cui si fa riferimento.
+**L'enumerazione WPD \_ SECTION DATA UNITS \_ \_ \_ VALUES** indica le unità per una sezione di dati a cui si fa riferimento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ typedef enum WPD_SECTION_DATA_UNITS_VALUES {
 
 <dl> <dt>
 
-<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**\_ \_ \_ byte unità dati della sezione WPD \_**
+<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**BYTE UNITÀ DATI SEZIONE WPD \_ \_ \_ \_**
 </dt> <dd>
 
 Le unità specificate sono specificate in byte.
 
 </dd> <dt>
 
-<span id="WPD_SECTION_DATA_UNITS_MILLISECONDS"></span><span id="wpd_section_data_units_milliseconds"></span>**\_unità dati della sezione WPD in \_ \_ \_ millisecondi**
+<span id="WPD_SECTION_DATA_UNITS_MILLISECONDS"></span><span id="wpd_section_data_units_milliseconds"></span>**UNITÀ DATI DELLA SEZIONE WPD \_ \_ IN \_ \_ MILLISECONDI**
 </dt> <dd>
 
 Le unità specificate sono specificate in millisecondi.
@@ -60,7 +60,7 @@ Le unità specificate sono specificate in millisecondi.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà ActiveBasicDevice PhysicalNetworkInterface (PlayToDevice. h)
+title: Proprietà ActiveBasicDevice PhysicalNetworkInterface (PlayToDevice.h)
 description: Ottiene l'ID dell'interfaccia di rete fisica.
 ms.assetid: F426462F-CE26-4EE1-B679-A4C80B2919A5
 keywords:
-- API di streaming multimediale della proprietà PhysicalNetworkInterface
-- API di streaming multimediale della proprietà PhysicalNetworkInterface, interfaccia ActiveBasicDevice
-- API di streaming multimediale dell'interfaccia ActiveBasicDevice, proprietà PhysicalNetworkInterface
+- Proprietà PhysicalNetworkInterface API Streaming multimediale
+- Proprietà PhysicalNetworkInterface API Streaming multimediale, interfaccia ActiveBasicDevice
+- Interfaccia ActiveBasicDevice API Di streaming multimediale, proprietà PhysicalNetworkInterface
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 479618ed4d22a3d78a351fb88fcb1108a27c618f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bd9eb004607d93b92d502d22b253258bf39e501969e6b3952a58b0a03a1eec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736207"
 ---
-# <a name="activebasicdevicephysicalnetworkinterface-property"></a>ActiveBasicDevice::P proprietà hysicalNetworkInterface
+# <a name="activebasicdevicephysicalnetworkinterface-property"></a>Proprietà ActiveBasicDevice::P hysicalNetworkInterface
 
 Ottiene l'ID dell'interfaccia di rete fisica.
 
@@ -51,10 +51,10 @@ Puntatore a un **GUID** che specifica l'ID dell'interfaccia di rete fisica.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

@@ -1,20 +1,20 @@
 ---
-description: Questo esempio illustra la decodifica di diversi frame in un file GIF, la lettura dei metadati appropriati per ogni frame, la composizione di frame e il rendering dell'animazione con Direct2D.
+description: Questo esempio illustra la decodifica di vari fotogrammi in un file GIF, la lettura dei metadati appropriati per ogni fotogramma, la composizione di fotogrammi e il rendering dell'animazione con Direct2D.
 ms.assetid: d71c66b5-d37c-4c8a-bfd7-b97c69c3b8e9
-title: Esempio GIF animato WIC
+title: Esempio di GIF animata WIC
 ms.topic: article
 ms.date: 03/19/2021
 ms.custom: project-verbatim
-ms.openlocfilehash: afb0c1368e2c66d40d1be4095ec56d5daeb5ab53
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: 925beb45b58bdecb7d12505a9d2067cbcb9e6fbf1867786286f18333fea986e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "106323894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709601"
 ---
-# <a name="wic-animated-gif-sample"></a>Esempio GIF animato WIC
+# <a name="wic-animated-gif-sample"></a>Esempio di GIF animata WIC
 
-Questo esempio illustra la decodifica di diversi frame in un file GIF, la lettura dei metadati appropriati per ogni frame, la composizione di frame e il rendering dell'animazione con Direct2D.
+Questo esempio illustra la decodifica di vari fotogrammi in un file GIF, la lettura dei metadati appropriati per ogni fotogramma, la composizione di fotogrammi e il rendering dell'animazione con Direct2D.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -23,34 +23,34 @@ Questo esempio presenta i requisiti seguenti.
 | Requisito | Valore |
 |-|-|
 | Client minimo supportato | Windows 7 |
-| Windows SDK minimo | [Windows Software Development Kit (SDK)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) per Windows 7 |
+| Sdk Windows minimo | [Windows Software Development Kit (SDK)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) per Windows 7 |
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel formato [gif animato di WIC](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicanimatedgif).
+Questo esempio è disponibile in [WIC animated GIF](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicanimatedgif).
 
 ## <a name="building-the-sample"></a>Compilare l'esempio
 
-### <a name="using-visual-studio-preferred-method"></a>Uso di Visual Studio (metodo preferito)
+### <a name="using-visual-studio-preferred-method"></a>Uso Visual Studio (metodo preferito)
 
 1. Aprire Esplora risorse, quindi spostarsi nella directory.
-2. Fare doppio clic sull'icona del file con estensione sln (soluzione) per aprire il file in Visual Studio.
-3. Scegliere **Compila soluzione** dal menu **Compila**. L'applicazione verrà compilata nella \\ directory di debug o di \\ versione predefinita.
+2. Fare doppio clic sull'icona per il file con estensione sln (soluzione) per aprire il file in Visual Studio.
+3. Scegliere **Compila soluzione** dal menu **Compila**. L'applicazione verrà compilata nella \\ directory predefinita Debug o \\ Versione.
 
 ### <a name="using-the-command-prompt"></a>Tramite il prompt dei comandi
 
-Per compilare l'esempio utilizzando un prompt dei comandi.
+Per compilare l'esempio usando un prompt dei comandi.
 
 1. Aprire il prompt dei comandi e passare alla directory di esempio.
 2. Digitare `msbuild WICAnimatedGif.sln`
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-Dopo l'avvio dell'applicazione, caricare un file di immagine usando il comando **Apri** del menu **file** . Il ridimensionamento delle finestre è supportato.
+Dopo aver avviato l'applicazione, caricare un file di immagine usando il **comando** Apri del menu **File.** Il ridimensionamento della finestra è supportato.
 
 ## <a name="see-also"></a>Vedi anche
 
-[Codec Microsoft Windows Imaging](-wic-lh.md)
+[Codec di Windows Microsoft](-wic-lh.md)
 
 [Guida per programmatori](-wic-programming-guide.md)
 

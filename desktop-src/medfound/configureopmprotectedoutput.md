@@ -1,7 +1,7 @@
 ---
 description: Configura un oggetto di output protetto.
 ms.assetid: d22a378e-2d4e-4ff4-a18e-136932c24d2b
-title: ConfigureOPMProtectedOutput (funzione)
+title: Funzione ConfigureOPMProtectedOutput
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: d72f3d8bbb7d3063fe6982c6d1de99b2f721f005
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f62d310526d95cf4ab6d1727a3ba43eec147f320b04c0692a89d52305b7f3589
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118743548"
 ---
-# <a name="configureopmprotectedoutput-function"></a>ConfigureOPMProtectedOutput (funzione)
+# <a name="configureopmprotectedoutput-function"></a>Funzione ConfigureOPMProtectedOutput
 
 > [!IMPORTANT]
-> Questa funzione viene utilizzata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alla funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alle funzionalità nel driver video. Le applicazioni non devono chiamare questa funzione.
 
  
 
@@ -47,28 +47,28 @@ NTSTATUS WINAPI ConfigureOPMProtectedOutput(
 
 <dl> <dt>
 
-*opoOPMProtectedOutput* \[ in\]
+*opoOPMProtectedOutput* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'oggetto di output protetto. Questo handle viene ottenuto chiamando [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
 
 </dd> <dt>
 
-*pParameters* \[ in\]
+*pParameters* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura **di \_ \_ \_ parametri** di configurazione di DXGKMDT OPM che contiene il comando di configurazione.
+Puntatore a una **struttura DXGKMDT \_ OPM \_ CONFIGURE \_ PARAMETERS** che contiene il comando di configurazione.
 
 </dd> <dt>
 
-*ulAdditionalParametersSize* \[ in\]
+*ulAdditionalParametersSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte del buffer *pbAdditionalParameters* .
+Dimensioni del buffer *pbAdditionalParameters,* in byte.
 
 </dd> <dt>
 
-*pbAdditionalParameters* \[ in\]
+*pbAdditionalParameters* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a un buffer che contiene informazioni aggiuntive per il comando.
@@ -77,13 +77,13 @@ Puntatore a un buffer che contiene informazioni aggiuntive per il comando.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, viene restituito **lo stato \_ Success**. In caso contrario, restituisce un codice di errore **NTSTATUS** .
+Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contrario, restituisce un **codice di errore NTSTATUS.**
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni devono chiamare [**IOPMVideoOutput:: Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure) anziché chiamare questa funzione.
+Le applicazioni devono [**chiamare IOPMVideoOutput::Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure) invece di chiamare questa funzione.
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 
@@ -101,10 +101,10 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 <dl> <dt>
 
-[Funzioni di OPM](opm-functions.md)
+[Funzioni OPM](opm-functions.md)
 </dt> <dt>
 
-[Gestione protezione output](output-protection-manager.md)
+[Output Protection Manager](output-protection-manager.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. image. VerticalResolution.
+description: Criteri dei metadati delle foto per la proprietà System.Image.VerticalResolution.
 ms.assetid: a58b7463-3572-4ca8-8299-93d92d2f06fb
-title: Criteri per i metadati delle foto di System. image. VerticalResolution
+title: Criteri metadati foto System.Image.VerticalResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e895ef9e1181a3ec40b474940c6dfaaa3e1329
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9962a00be34d227756d295e992174d6e80b6d058fc32af29ad9cde58a04ed07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710284"
 ---
-# <a name="systemimageverticalresolution-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. image. VerticalResolution
+# <a name="systemimageverticalresolution-photo-metadata-policy"></a>Criteri metadati foto System.Image.VerticalResolution
 
-Criteri per i metadati delle foto per la proprietà [System. image. VerticalResolution](../properties/props-system-image-verticalresolution.md) .
+Criteri dei metadati delle foto per [la proprietà System.Image.VerticalResolution.](../properties/props-system-image-verticalresolution.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-Immagine di PKEY \_ \_ VerticalResolution
+Immagine PKEY \_ \_ VerticalResolution
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,24 +27,24 @@ JPEG, TIFF
 
 Sì.
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
 VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-Questo valore viene generato dal sistema e non può essere scritto direttamente. I valori di schemi diversi vengono risolti.
+Questo valore viene generato dal sistema e non può essere scritto direttamente. I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                   | Formato disco |
 |-------|------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 283} |             |
-| 2     | /XMP/TIFF: YResolution  |             |
+| 1     | /app1/ifd/{ushort=283} |             |
+| 2     | /xmp/tiff:YResolution  |             |
 
 
 
@@ -56,8 +56,8 @@ Questo valore viene generato dal sistema e non può essere scritto direttamente.
 
 | JSON | Percorso                        |
 |-------|-----------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 283} |
-| 2     | /XMP/TIFF: YResolution       |
+| 1     | /app1/ifd/exif/{ushort=283} |
+| 2     | /xmp/tiff:yresolution       |
 
 
 
@@ -65,14 +65,14 @@ Questo valore viene generato dal sistema e non può essere scritto direttamente.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 283}    |             |
-| 2     | /IFD/XMP/TIFF: YResolution |             |
+| 1     | /ifd/exif/{ushort=283}    |             |
+| 2     | /ifd/xmp/tiff:YResolution |             |
 
 
 
@@ -84,8 +84,8 @@ Questo valore viene generato dal sistema e non può essere scritto direttamente.
 
 | JSON | Percorso                      |
 |-------|---------------------------|
-| 1     | /IFD/EXIF/{ushort = 283}    |
-| 2     | /IFD/XMP/TIFF: YResolution |
+| 1     | /ifd/exif/{ushort=283}    |
+| 2     | /ifd/xmp/tiff:yresolution |
 
 
 
@@ -97,7 +97,7 @@ Questo valore viene generato dal sistema e non può essere scritto direttamente.
 
 <dl> <dt>
 
-[System. image. VerticalResolution](../properties/props-system-image-verticalresolution.md)
+[System.Image.VerticalResolution](../properties/props-system-image-verticalresolution.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Il campo lunghezza in una tripletta TLV identifica il numero di byte codificati nel campo valore.
+description: Il campo Length in una tripletta TLV identifica il numero di byte codificati nel campo Value.
 ms.assetid: d72371f9-fe55-468d-b15b-0f8948674619
-title: Byte di lunghezza e valore codificati
+title: Lunghezza codificata e byte valore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b45eaec36875446d7493f37fc150f7b5f9d1a59c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea44ec9892e9407cbe587dbb60219b758ac95392e64dfabcf4866e02a1ad9343
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118904476"
 ---
-# <a name="encoded-length-and-value-bytes"></a>Byte di lunghezza e valore codificati
+# <a name="encoded-length-and-value-bytes"></a>Lunghezza codificata e byte valore
 
-Il campo *lunghezza* in una tripletta TLV identifica il numero di byte codificati nel campo *valore* . Il campo *valore* contiene il contenuto inviato tra computer. Se il campo del *valore* contiene meno di 128 byte, il campo *lunghezza* richiede un solo byte. Il bit 7 del campo *length* è zero (0) e i bit rimanenti identificano il numero di byte del contenuto inviato. Se il campo del *valore* contiene più di 127 byte, il bit 7 del campo *length* è uno (1) e i bit rimanenti identificano il numero di byte necessari per contenere la lunghezza. Nella figura seguente sono illustrati alcuni esempi.
+Il *campo Length* in una tripletta TLV identifica il numero di byte codificati nel *campo* Value. Il *campo Valore* contiene il contenuto inviato tra computer. Se il *campo* Valore contiene meno di 128 byte, il *campo Lunghezza* richiede un solo byte. Il bit 7 del *campo Length* è zero (0) e i bit rimanenti identificano il numero di byte di contenuto inviato. Se il *campo Valore* contiene più di 127 byte, il bit 7 del campo *Lunghezza* è uno (1) e i bit rimanenti identificano il numero di byte necessari per contenere la lunghezza. Nella figura seguente sono illustrati alcuni esempi.
 
-![byte Lunghezza der TLV](images/der-tlv-lengthbyte.png)
+![der tlv length byte](images/der-tlv-lengthbyte.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

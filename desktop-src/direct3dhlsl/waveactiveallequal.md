@@ -1,6 +1,6 @@
 ---
-title: WaveActiveAllEqual (funzione)
-description: Restituisce true se l'espressione è la stessa per ogni corsia attiva nell'onda corrente (e di conseguenza uniforme).
+title: Funzione WaveActiveAllEqual
+description: Restituisce true se l'espressione è la stessa per ogni corsia attiva nell'onda corrente (e quindi uniforme su di essa).
 ms.assetid: E0A051A8-0ADD-4EC7-8D9A-8820CED9DA9D
 keywords:
 - Funzione WaveActiveAllEqual HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34745e428fcd4453ce7274fc2a5accc6185f5b10
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: f62493a1bf08b85e95acad319bac2d022c30a53d43c28a87d0f5f603e78d300f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103734799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786111"
 ---
-# <a name="waveactiveallequal-function"></a>WaveActiveAllEqual (funzione)
+# <a name="waveactiveallequal-function"></a>Funzione WaveActiveAllEqual
 
-Restituisce true se l'espressione è la stessa per ogni corsia attiva nell'onda corrente (e di conseguenza uniforme).
+Restituisce true se l'espressione è la stessa per ogni corsia attiva nell'onda corrente (e quindi uniforme su di essa).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ bool WaveActiveAllEqual(
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione da valutare.
@@ -52,7 +52,7 @@ True se l'espressione è la stessa per ogni corsia attiva nell'onda corrente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -62,7 +62,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

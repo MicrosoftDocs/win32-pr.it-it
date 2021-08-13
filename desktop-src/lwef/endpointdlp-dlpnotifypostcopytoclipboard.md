@@ -12,12 +12,12 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: b4b1a375d68819fc36f82a530a7fe7a8abe881c0
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: afd054aa0728f3eeb70a5ecbbdeab88460deee2146aa10000665eb56f8d76b65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118751850"
 ---
 # <a name="dlpnotifypostcopytoclipboard-function"></a>Funzione DlpNotifyPostCopyToClipboard
 
@@ -48,7 +48,7 @@ Puntatore a una [struttura PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md)
 *OpStatus* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [DLP_POSTOP_STATUS](enpointdlp-dlp_postop_status.md) contenente informazioni sullo stato dell'operazione di copia negli Appunti.
+Puntatore a una [struttura DLP_POSTOP_STATUS](enpointdlp-dlp_postop_status.md) contenente informazioni sullo stato dell'operazione di copia negli Appunti.
 
 </dd> </dl>
 

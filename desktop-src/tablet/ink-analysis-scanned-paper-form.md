@@ -1,62 +1,62 @@
 ---
-description: In questo esempio viene illustrato come utilizzare l'analisi dell'input penna per creare un'applicazione di riempimento del modulo, in cui il modulo è basato su un modulo cartaceo digitalizzato.
+description: Questo esempio illustra come usare Analisi input penna per creare un'applicazione per la compilazione di moduli, in cui il modulo è basato su un modulo cartaceo digitalizzato.
 ms.assetid: 1eae5962-b4e0-4947-a6d2-63713a68198c
-title: Modulo cartaceo analizzato analisi input penna
+title: Modulo della carta digitalizzata di Analisi input penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e94d366c77e19bd5c32d3d1e4efa286cb3b089ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4069efd5ba8763e00e9b3170ffb0a39a4a70c4d66d07d3c8bf08bc3688f57ed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118718647"
 ---
-# <a name="ink-analysis-scanned-paper-form"></a>Modulo cartaceo analizzato analisi input penna
+# <a name="ink-analysis-scanned-paper-form"></a>Modulo della carta digitalizzata di Analisi input penna
 
-In questo esempio viene illustrato come utilizzare l'analisi dell'input penna per creare un'applicazione di riempimento del modulo, in cui il modulo è basato su un modulo cartaceo digitalizzato.
+Questo esempio illustra come usare Analisi input penna per creare un'applicazione per la compilazione di moduli, in cui il modulo è basato su un modulo cartaceo digitalizzato.
 
 ## <a name="features-demonstrated"></a>Funzionalità illustrate
 
-Questa applicazione di esempio illustra le seguenti funzionalità dell'API di analisi dell'input penna e dei controlli Windows Form input penna:
+Questa applicazione di esempio illustra le funzionalità seguenti dell'API Analisi input penna e dei controlli input Windows Form:
 
--   Caricamento di un modulo cartaceo scansionato. L'esempio importa il form da un'immagine in formato png.
--   Raccolta e rendering dell'input penna sopra il modulo sottoposti a scansione.
--   Uso di un oggetto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) per analizzare la grafia.
--   Generazione di oggetti [AnalysisHintNode](/previous-versions/ms573018(v=vs.100)) per migliorare i risultati della grafia.
--   Popolamento di caselle di testo da hint di analisi.
+-   Caricamento di un modulo cartaceo digitalizzato. L'esempio importa il form da un'immagine in .png formato.
+-   Raccolta e rendering dell'input penna sopra il modulo digitalizzato.
+-   Uso di [un oggetto InkAnalyzer](/previous-versions/ms583671(v=vs.100)) per analizzare la grafia.
+-   Generazione di [oggetti AnalysisHintNode](/previous-versions/ms573018(v=vs.100)) per migliorare i risultati della grafia.
+-   Popolamento delle caselle di testo dai suggerimenti di analisi.
 -   Creazione di un'esperienza di correzione del testo di base.
 
 ## <a name="project-references"></a>Riferimenti al progetto
 
-L'esempio è disponibile come applicazione Windows Form o Windows Presentation Foundation. Riferimenti alla versione Windows Form:
+L'esempio è disponibile come Windows Form o Windows Presentation Foundation applicazione. I riferimenti Windows versioni di Forms seguenti:
 
 -   Microsoft.Ink.dll
 -   Microsoft.Ink.Analysis.dll
 
-La versione Windows Presentation Foundation fa riferimento IAWinFX.dll oltre alle DLL core Windows Presentation Foundation.
+Oltre alle Windows Presentation Foundation di IAWinFX.dll, la versione di base Windows Presentation Foundation dll.
 
 > [!Note]  
-> Per la versione Windows Presentation Foundation di questo esempio, disponibile nella directory XAML, è necessario che nel sistema siano installate le estensioni Windows Presentation Foundation per Microsoft Visual Studio 2005.
+> La Windows Presentation Foundation di questo esempio (disponibile nella directory XAML) richiede che le estensioni Windows Presentation Foundation per Microsoft Visual Studio 2005 siano installate nel sistema.
 
  
 
 ## <a name="user-interface"></a>Interfaccia utente
 
-L'interfaccia utente per questa applicazione è costituita da un oggetto [TabControl](/dotnet/api/system.windows.forms.tabcontrol?view=netcore-3.1) con due oggetti [TabPage](/dotnet/api/system.windows.forms.tabpage?view=netcore-3.1) associati: form input penna e formato testo convertito. La scheda modulo input penna contiene
+L'interfaccia utente per questa applicazione è costituita da un [controllo TabControl](/dotnet/api/system.windows.forms.tabcontrol?view=netcore-3.1) a cui sono associati due oggetti [TabPage:](/dotnet/api/system.windows.forms.tabpage?view=netcore-3.1) Ink Form e Converted Text Form. La scheda Modulo input penna contiene
 
--   Pannello che contiene un'immagine di un modulo cartaceo digitalizzato utilizzato per l'esecuzione di messaggi telefonici.
--   Una casella di controllo con l'applicazione Mostra i limiti dell'hint di analisi quando è selezionata.
--   Una coppia di pulsanti, Clear e Analyze, che cancellano l'input penna dal form e inizializzano l'analisi dell'input penna.
+-   Pannello che contiene un'immagine di un modulo cartaceo digitalizzato usato per l'invio di messaggi telefonici.
+-   Casella di controllo in cui l'applicazione visualizza i limiti dei suggerimenti di analisi quando questa opzione è selezionata.
+-   Coppia di pulsanti, Clear e Analyze, che cancellano l'input penna dal modulo e inizializzano l'analisi dell'input penna.
 
-Il formato di testo convertito contiene la stessa immagine e è la pagina in cui l'applicazione Visualizza il testo riconosciuto. Quando si fa clic su analizza, l'applicazione esegue l'analisi dell'input penna in modo sincrono e i risultati del riconoscimento vengono visualizzati nella scheda formato testo convertito.
+Il modulo di testo convertito contiene la stessa immagine ed è la pagina in cui l'applicazione visualizza il testo riconosciuto. Quando si fa clic su Analizza, l'applicazione esegue l'analisi dell'input penna in modo sincrono e i risultati del riconoscimento vengono visualizzati nella scheda Modulo di testo convertito.
 
 ## <a name="functionality"></a>Funzionalità
 
-Questa applicazione usa un oggetto [InkOverlay](/previous-versions/ms552322(v=vs.100)) per abilitare la scrittura. L'oggetto InkOverlay è particolarmente adatto per l'acquisizione di note e per la creazione di un scarabocchio di base. L'utilizzo previsto principale di questo oggetto consiste nel visualizzare input penna come input penna. La classe principale per l'analisi dell'input penna è la classe [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) . Quando si chiama il metodo [Analyze](/previous-versions/ms568971(v=vs.100)) dell'oggetto InkAnalyzer, l'analisi dell'input penna viene eseguita in modo sincrono.
+Questa applicazione usa [inkOverlay per](/previous-versions/ms552322(v=vs.100)) abilitare la scrittura. L'oggetto InkOverlay è particolarmente adatto per l'acquisizione di note e lo scribbling di base. L'uso principale previsto di questo oggetto è la visualizzazione dell'input penna come input penna. La classe principale per l'analisi dell'input penna [è la classe InkAnalyzer.](/previous-versions/ms583671(v=vs.100)) Quando si chiama il metodo Analyze [](/previous-versions/ms568971(v=vs.100)) dell'oggetto InkAnalyzer, l'analisi dell'input penna viene eseguita in modo sincrono.
 
-L'applicazione Inizializza due matrici, una delle stringhe e uno dei rettangoli. La matrice di stringhe, `factoidStrings` , è costituita da oggetti del controllo del controllo che vengono passati in [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) come oggetti [AnalysisHintNode](/previous-versions/ms573018(v=vs.100)) . [](/previous-versions/ms583657(v=vs.100)) Gli oggetti AnalysisHintNode polarizzano l'oggetto InkAnalyzer verso un input specifico. In questo esempio vengono utilizzati gli hint per la data, l'ora e il telefono, nonché altri.
+L'applicazione inizializza due matrici, una di stringhe e una di rettangoli. La matrice di stringhe, , è costituito da `factoidStrings` [oggetti Factoid](/previous-versions/ms583657(v=vs.100)) passati in [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) come [oggetti AnalysisHintNode.](/previous-versions/ms573018(v=vs.100)) Gli oggetti AnalysisHintNode orientano InkAnalyzer verso un input specifico. In questo esempio vengono utilizzati i suggerimenti per data, ora e telefono, oltre ad altri.
 
-Ogni elemento [AnalysisHintNode](/previous-versions/ms573018(v=vs.100)) è associato a un'area specifica del modulo. Le aree sono rappresentate dalla matrice di rettangoli, `rects` . Creando una [casella](/dotnet/api/system.windows.forms.textbox?view=netcore-3.1) di testo per ogni rettangolo, l'esempio restituisce il testo riconosciuto nella posizione corretta.
+Ogni [analysisHintNode](/previous-versions/ms573018(v=vs.100)) è associato a un'area specifica del form. Le aree sono rappresentate dalla matrice di rettangoli, `rects` . Creando un [controllo TextBox](/dotnet/api/system.windows.forms.textbox?view=netcore-3.1) per ogni rettangolo, l'esempio restituisce il testo riconosciuto nella posizione corretta.
 
 
 ```C++
@@ -91,7 +91,7 @@ Ogni elemento [AnalysisHintNode](/previous-versions/ms573018(v=vs.100)) è assoc
 
 
 
-Successivamente, è sufficiente creare un gestore eventi che attiva l'analisi dell'input penna quando l'utente fa clic su analizza.
+Successivamente, si tratta semplicemente di creare un gestore eventi che attiva l'analisi dell'input penna quando l'utente fa clic su Analizza.
 
 
 ```C++

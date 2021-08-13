@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica HDN_FILTERBTNCLICK (COMmctrl. h)
-description: Notifica alla finestra padre del controllo intestazione quando viene fatto clic sul pulsante del filtro o in risposta a un \_ messaggio HDM. Questo codice di notifica è stato inviato sotto forma di \_ messaggio di notifica WM.
+title: HDN_FILTERBTNCLICK di notifica (Commctrl.h)
+description: Notifica la finestra padre del controllo intestazione quando si fa clic sul pulsante di filtro o in risposta a un messaggio \_ HDM SETITEM. Codice di notifica inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 36b85cdc-1022-4568-8891-0c919c850fd4
 keywords:
-- Controlli di Windows per il codice di notifica HDN_FILTERBTNCLICK
+- HDN_FILTERBTNCLICK del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3dbbdab8adf0bee400d591f3d8b4cec6fa1ea81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01ba216c9946854ccfc6a651db90ab1dd5ed106dfca6ddf568d485c33dae70ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435511"
 ---
-# <a name="hdn_filterbtnclick-notification-code"></a>\_Codice di notifica FILTERBTNCLICK di HDN
+# <a name="hdn_filterbtnclick-notification-code"></a>Codice di notifica \_ HDN FILTERBTNCLICK
 
-Notifica alla finestra padre del controllo intestazione quando viene fatto clic sul pulsante del filtro o in risposta a un [**messaggio \_ HDM**](hdm-setitem.md) . Questo codice di notifica è stato inviato sotto forma di messaggio di [**\_ notifica WM**](wm-notify.md) .
+Notifica la finestra padre del controllo intestazione quando si fa clic sul pulsante di filtro o in risposta a un [**messaggio \_ HDM SETITEM.**](hdm-setitem.md) Codice di notifica inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ HDN_FILTERBTNCLICK
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDFILTERBTNCLICK**](/windows/win32/api/commctrl/ns-commctrl-nmhdfilterbtnclick) contenente informazioni sul controllo intestazione e sul pulsante filtro intestazione.
+Puntatore a una [**struttura NMHDFILTERBTNCLICK**](/windows/win32/api/commctrl/ns-commctrl-nmhdfilterbtnclick) che contiene informazioni sul controllo intestazione e sul pulsante del filtro di intestazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se si restituisce **true**, verrà inviato un codice di notifica [ \_ FILTERCHANGE HDN](hdn-filterchange.md) alla finestra padre del controllo intestazione. Questo codice di notifica fornisce alla finestra padre la possibilità di sincronizzare gli elementi dell'interfaccia utente. Restituisce **false** se non si desidera che venga inviata la notifica.
+Se si restituisce **TRUE,** verrà inviato un codice di notifica [ \_ FILTERCHANGE HDN](hdn-filterchange.md) alla finestra padre del controllo intestazione. Questo codice di notifica offre alla finestra padre la possibilità di sincronizzare gli elementi dell'interfaccia utente. Restituisce **FALSE** se non si vuole inviare la notifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Se si restituisce **true**, verrà inviato un codice di notifica [ \_ FILTERCHAN
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

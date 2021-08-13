@@ -1,7 +1,7 @@
 ---
-description: Imposta la trasformazione di visualizzazione globale a destra per uno sprite. È necessaria una chiamata a questo metodo prima di eseguire il Billboard o l'ordinamento degli sprite.
+description: Imposta la trasformazione di visualizzazione a destra per uno sprite. Una chiamata a questo metodo è necessaria prima di ordinare gli sprite.
 ms.assetid: 83654e9a-8991-49ec-ab28-cf9063126dbe
-title: 'Metodo ID3DXSprite:: SetWorldViewRH (D3dx9core. h)'
+title: Metodo ID3DXSprite::SetWorldViewRH (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f7521f60f819829fc72ba907b57d4e4eb13682a0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 54da854fff0aeb2001e674218a7e7868971a6cf43af7bc00606b124c3f082b9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800419"
 ---
-# <a name="id3dxspritesetworldviewrh-method"></a>Metodo ID3DXSprite:: SetWorldViewRH
+# <a name="id3dxspritesetworldviewrh-method"></a>Metodo ID3DXSprite::SetWorldViewRH
 
-Imposta la trasformazione di visualizzazione globale a destra per uno sprite. È necessaria una chiamata a questo metodo prima di eseguire il Billboard o l'ordinamento degli sprite.
+Imposta la trasformazione di visualizzazione a destra per uno sprite. Una chiamata a questo metodo è necessaria prima di ordinare gli sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT SetWorldViewRH(
 
 <dl> <dt>
 
-*pWorld* \[ in\]
+*pWorld* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a un [**D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione globale. Se è **null**, la matrice di identità viene utilizzata per la trasformazione globale.
+Puntatore a [**un oggetto D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione del mondo. Se **NULL,** la matrice di identità viene usata per la trasformazione globale.
 
 </dd> <dt>
 
-*pview* \[ in\]
+*pView* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a un [**D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione visualizzazione. Se è **null**, la matrice di identità viene utilizzata per la trasformazione della vista.
+Puntatore a [**un oggetto D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione di visualizzazione. Se **NULL,** la matrice di identità viene utilizzata per la trasformazione della visualizzazione.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore a un [**D3DXMATRIX**](d3dxmatrix.md) che contiene una trasformazione v
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente. \_INVALIDCALL D3DERR
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente. D3DERR \_ INVALIDCALL
 
 ## <a name="remarks"></a>Commenti
 
-Una chiamata a questo metodo (o a [**ID3DXSprite:: SetWorldViewLH**](id3dxsprite--setworldviewlh.md)) è obbligatoria se verrà eseguito il rendering dello sprite con [D3DXSprite \_ \_ Billboard](d3dxsprite.md), D3DXSprite \_ \_ Sort \_ Depth \_ FRONTTOBACK o D3DXSprite \_ \_ Sort \_ Depth \_ BACKTOFRONT flag value in [**ID3DXSprite:: Begin**](id3dxsprite--begin.md).
+È necessaria una chiamata a questo metodo (o a [**ID3DXSprite::SetWorldViewLH)**](id3dxsprite--setworldviewlh.md)se il rendering dello sprite verrà eseguito con il valore del flag [D3DXSpriteUNIT, \_ \_](d3dxsprite.md)D3DXSprite \_ \_ SORT DEPTH \_ FRONTTOBACK o \_ D3DXSprite \_ \_ SORT DEPTH \_ \_ BACKTOFRONT in [**ID3DXSprite::Begin**](id3dxsprite--begin.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Una chiamata a questo metodo (o a [**ID3DXSprite:: SetWorldViewLH**](id3dxsprite
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

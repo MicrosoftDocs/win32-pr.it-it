@@ -1,9 +1,9 @@
 ---
-title: Proprietà String.Id
-description: Rappresenta l'ID univoco di una risorsa di stringa.
+title: String.Id proprietà
+description: Rappresenta l'ID univoco di una risorsa stringa.
 ms.assetid: 393da279-bdf6-4796-a546-1931cbe49113
 keywords:
-- Barra multifunzione di Windows proprietà String.Id
+- String.Id proprietà Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c3ab87327ed4f11a901fb8a201e72137ab62c7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15f9c1af4ba32982ce52ba470f6b3d1996abe11c81bdd520a4e50203adb56093
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441651"
 ---
-# <a name="stringid-property"></a>Proprietà String.Id
+# <a name="stringid-property"></a>String.Id proprietà
 
-Rappresenta l'ID univoco di una risorsa di stringa.
+Rappresenta l'ID univoco di una risorsa stringa.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <String.Id/>
@@ -51,19 +51,19 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**stringa**](windowsribbon-element-string.md) .
+Può verificarsi al massimo una volta per [**ogni elemento**](windowsribbon-element-string.md) String.
 
-Il valore di **String.ID** deve essere univoco.
+Il valore per **String.Id** deve essere univoco.
 
 L'ID è associato a una definizione di stringa nel file di intestazione della barra multifunzione, ad esempio `#define strSave 59999` .
 
-Questo elemento contiene un valore dall'Unione dei tipi *xs: positiveInteger* e *xs: String*. Il valore è vincolato a un valore intero compreso tra 2 e 59999, inclusivi o 0x2 e 0xea5f in formato esadecimale, inclusivo.
+Questo elemento contiene un valore dall'unione dei tipi *xs:positiveInteger* *e xs:string*. Il valore è vincolato a un valore intero compreso tra 2 e 59999, inclusivo o 0x2 e 0xea5f in formato esadecimale, inclusivo.
 
 La lunghezza massima è di 10 caratteri con zeri iniziali facoltativi.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per un elemento [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) con una Dichiarazione **String.ID** .
+Nell'esempio seguente viene illustrato il markup per [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) **con** String.Id dichiarazione.
 
 
 ```XML
@@ -84,8 +84,8 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command. Lab
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

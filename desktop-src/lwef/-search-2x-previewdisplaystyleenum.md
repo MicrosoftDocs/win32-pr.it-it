@@ -3,7 +3,7 @@ title: Enumerazione PreviewDisplayStyle
 description: Usato da IResultsViewer PreviewStyle per impostare o determinare lo stile di visualizzazione attualmente in uso.
 ms.assetid: ccbbfe38-0719-41e0-9331-cc0c1be651eb
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione PreviewDisplayStyle
+- Enumerazione PreviewDisplayStyle Funzionalità dell'Windows legacy
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11902821ec9fdbbaa9ab8d3fda8971f42fc28c1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd98a439daeadfd2af6135c1519aea8f981f94394ac68efe142a64037e70a25f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753395"
 ---
 # <a name="previewdisplaystyle-enumeration"></a>Enumerazione PreviewDisplayStyle
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Usato da [**IResultsViewer::P reviewstyle**](-search-2x-iresultsviewer-previewstyle.md) per impostare o determinare lo stile di visualizzazione attualmente in uso.
+Usato da [**IResultsViewer::P reviewStyle**](-search-2x-iresultsviewer-previewstyle.md) per impostare o determinare lo stile di visualizzazione attualmente in uso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ typedef enum PreviewDisplayStyleEnum {
 
 <dl> <dt>
 
-<span id="AutoPreview"></span><span id="autopreview"></span><span id="AUTOPREVIEW"></span>**AutoPreview**
+<span id="AutoPreview"></span><span id="autopreview"></span><span id="AUTOPREVIEW"></span>**Anteprima automatica**
 </dt> <dd>
 
-Indica l'anteprima automatica.
+Indica La visualizzazione automatica.
 
 </dd> <dt>
 
-<span id="RightPreview"></span><span id="rightpreview"></span><span id="RIGHTPREVIEW"></span>**RightPreview**
+<span id="RightPreview"></span><span id="rightpreview"></span><span id="RIGHTPREVIEW"></span>**Anteprima a destra**
 </dt> <dd>
 
 Indica RightPreview.
@@ -67,10 +67,10 @@ Indica BottomPreview.
 
 </dd> <dt>
 
-<span id="NoPreview"></span><span id="nopreview"></span><span id="NOPREVIEW"></span>**Nopreview**
+<span id="NoPreview"></span><span id="nopreview"></span><span id="NOPREVIEW"></span>**NoPreview**
 </dt> <dd>
 
-Indica nopreview.
+Indica NoPreview.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Indica nopreview.
 
 | Requisito | Valore |
 |----------------|----------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>WdsView. idl</dt> </dl> |
+| Idl<br/> | <dl> <dt>WdsView.idl</dt> </dl> |
 
 
 

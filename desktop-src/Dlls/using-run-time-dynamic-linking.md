@@ -1,23 +1,23 @@
 ---
-description: È possibile utilizzare la stessa DLL in entrambi i tempi di caricamento e il collegamento dinamico in fase di esecuzione.
+description: È possibile usare la stessa DLL sia nel collegamento dinamico in fase di caricamento che in quello di esecuzione.
 ms.assetid: 0ffce2b1-ce50-4550-aa68-6628fdcac01a
-title: Uso di Run-Time collegamento dinamico
+title: Uso Run-Time collegamento dinamico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4d6ca65c510433350b81a282d8bf7a3a3825ef1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8c13cc66a34f0fd5938fcdada027b30223ebff0abe6e9ce459d60f93a6546f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119255981"
 ---
-# <a name="using-run-time-dynamic-linking"></a>Uso di Run-Time collegamento dinamico
+# <a name="using-run-time-dynamic-linking"></a>Uso Run-Time collegamento dinamico
 
-È possibile utilizzare la stessa DLL in entrambi i tempi di caricamento e il collegamento dinamico in fase di esecuzione. Nell'esempio seguente viene usata la funzione [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) per ottenere un handle per la dll put (vedere [creazione di una semplice libreria di Dynamic-Link](creating-a-simple-dynamic-link-library.md)). Se **LoadLibrary** ha esito positivo, il programma usa l'handle restituito nella funzione [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per ottenere l'indirizzo della funzione My put della dll. Dopo aver chiamato la funzione DLL, il programma chiama la funzione [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) per scaricare la dll.
+È possibile usare la stessa DLL sia nel collegamento dinamico in fase di caricamento che in quello di esecuzione. L'esempio seguente usa [**la funzione LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) per ottenere un handle per la DLL Myputs (vedere [Creating a Simple Dynamic-Link Library](creating-a-simple-dynamic-link-library.md)). Se **LoadLibrary** ha esito positivo, il programma usa l'handle restituito nella [**funzione GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per ottenere l'indirizzo della funzione myPuts della DLL. Dopo aver chiamato la funzione DLL, il programma chiama la [**funzione FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) per scaricare la DLL.
 
-Poiché il programma utilizza il collegamento dinamico in fase di esecuzione, non è necessario collegare il modulo a una libreria di importazione per la DLL.
+Poiché il programma usa il collegamento dinamico in fase di esecuzione, non è necessario collegare il modulo a una libreria di importazione per la DLL.
 
-In questo esempio viene illustrata una differenza importante tra il collegamento dinamico in fase di esecuzione e in fase di caricamento. Se la DLL non è disponibile, l'applicazione che utilizza il collegamento dinamico in fase di caricamento deve semplicemente terminare. Tuttavia, l'esempio di collegamento dinamico in fase di esecuzione può rispondere all'errore.
+Questo esempio illustra una differenza importante tra il collegamento dinamico in fase di esecuzione e quello in fase di caricamento. Se la DLL non è disponibile, l'applicazione che usa il collegamento dinamico in fase di caricamento deve semplicemente terminare. L'esempio di collegamento dinamico in fase di esecuzione, tuttavia, può rispondere all'errore.
 
 
 ```C++

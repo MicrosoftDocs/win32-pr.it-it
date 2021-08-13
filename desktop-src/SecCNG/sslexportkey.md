@@ -1,7 +1,7 @@
 ---
-description: Restituisce una chiave di sessione SSL (Secure Sockets Layer Protocol) o una chiave temporanea pubblica in un BLOB serializzato.
+description: Restituisce una Secure Sockets Layer di sessione SSL (Secure Sockets Layer Protocol) o una chiave effimera pubblica in un BLOB serializzato.
 ms.assetid: c978e6ac-a535-4625-8598-4aa16484dcad
-title: Funzione SslExportKey (Sslprovider. h)
+title: Funzione SslExportKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: c5fcbcfa1a8b6c1aa9922b98a7699bdf2bf4b0fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 073e922ce8c1a79e81d991c869743148b5a581503192a10dfb9cd6e64707d83e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906673"
 ---
-# <a name="sslexportkey-function"></a>SslExportKey (funzione)
+# <a name="sslexportkey-function"></a>Funzione SslExportKey
 
-La funzione **SslExportKey** restituisce una [*chiave di sessione*](/windows/desktop/SecGloss/s-gly) SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ) o una chiave temporanea pubblica in un [*BLOB*](/windows/desktop/SecGloss/b-gly)serializzato.
+La **funzione SslExportKey** restituisce una chiave Secure Sockets Layer [](/windows/desktop/SecGloss/s-gly) di sessione SSL (Secure Sockets Layer [*Protocol)*](/windows/desktop/SecGloss/s-gly) o una chiave effimera pubblica in un BLOB [*serializzato.*](/windows/desktop/SecGloss/b-gly)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,40 +45,40 @@ SECURITY_STATUS WINAPI SslExportKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle dell'istanza del provider del protocollo SSL.
 
 </dd> <dt>
 
-*HKEY* \[ in\]
+*hKey* \[ Pollici\]
 </dt> <dd>
 
 Handle della chiave da esportare.
 
-Quando non si specifica una chiave, impostare questo parametro su **null**.
+Quando non si specifica una chiave, impostare questo parametro su **NULL.**
 
 > [!Note]  
-> Un handle *HKEY* viene ottenuto chiamando la funzione [**SslOpenPrivateKey**](sslopenprivatekey.md) . Gli handle ottenuti dalla funzione [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) non sono supportati.
+> Un handle *hKey* viene ottenuto chiamando la [**funzione SslOpenPrivateKey.**](sslopenprivatekey.md) Gli handle ottenuti dalla [**funzione NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) non sono supportati.
 
  
 
 </dd> <dt>
 
-*pszBlobType* \[ in\]
+*pszBlobType* \[ Pollici\]
 </dt> <dd>
 
-Stringa Unicode con terminazione null che contiene un identificatore che specifica il tipo di BLOB da esportare. Può corrispondere a uno dei valori seguenti.
+Stringa Unicode con terminazione Null contenente un identificatore che specifica il tipo di BLOB da esportare. Può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                      | Significato                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**\_ \_ BLOB pubblico di BCRYPT DH \_**</dt> </dl>    | Esportare una [*chiave pubblica*](/windows/desktop/SecGloss/p-gly)Diffie-Hellman. Il buffer *pbOutput* riceve una [**struttura \_ \_ \_ BLOB di chiavi BCRYPT DH**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                               |
-| <span id="BCRYPT_ECCPUBLIC_BLOB"></span><span id="bcrypt_eccpublic_blob"></span><dl> <dt>**\_BLOB ECCPUBLIC \_ BCRYPT**</dt> </dl>     | Esportare una chiave pubblica di [*crittografia a curva ellittica*](/windows/desktop/SecGloss/e-gly) (ecc). Il buffer *pbOutput* riceve una [**struttura \_ \_ BLOB ECCKEY BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_ecckey_blob) immediatamente seguita dai dati della chiave.<br/>                                                          |
-| <span id="BCRYPT_OPAQUE_KEY_BLOB"></span><span id="bcrypt_opaque_key_blob"></span><dl> <dt>**\_BLOB della \_ chiave OPACa BCRYPT \_**</dt> </dl> | Esportare una chiave simmetrica in un formato specifico per un singolo provider del [*servizio di crittografia*](/windows/desktop/SecGloss/c-gly) (CSP). I BLOB opachi non sono trasferibili e devono essere importati utilizzando lo stesso *provider del servizio di crittografia* (CSP) che ha generato il BLOB.<br/> |
-| <span id="BCRYPT_RSAPUBLIC_BLOB"></span><span id="bcrypt_rsapublic_blob"></span><dl> <dt>**\_BLOB RSAPUBLIC \_ BCRYPT**</dt> </dl>     | Esportare una chiave pubblica RSA. Il buffer *pbOutput* riceve una [**struttura \_ \_ BLOB rsaKey BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_rsakey_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                                                                                                                |
+| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**BLOB \_ PUBBLICO BCRYPT DH \_ \_**</dt> </dl>    | Esportare una Diffie-Hellman [*pubblica.*](/windows/desktop/SecGloss/p-gly) Il *buffer pbOutput* riceve una struttura BLOB della chiave [**\_ DH \_ \_ BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                               |
+| <span id="BCRYPT_ECCPUBLIC_BLOB"></span><span id="bcrypt_eccpublic_blob"></span><dl> <dt>**BCRYPT \_ ECCPUBLIC \_ BLOB**</dt> </dl>     | Esportare [*una chiave pubblica ECC (elliptic curve cryptography).*](/windows/desktop/SecGloss/e-gly) Il *buffer pbOutput* riceve una [**struttura BLOB \_ ECCKEY \_ BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_ecckey_blob) immediatamente seguita dai dati della chiave.<br/>                                                          |
+| <span id="BCRYPT_OPAQUE_KEY_BLOB"></span><span id="bcrypt_opaque_key_blob"></span><dl> <dt>**BLOB DI \_ CHIAVI OPACHE BCRYPT \_ \_**</dt> </dl> | Esportare una chiave simmetrica in un formato specifico di un singolo provider del [*servizio di*](/windows/desktop/SecGloss/c-gly) crittografia (CSP). I BLOB opachi non sono trasferibili e devono essere importati usando lo stesso *provider* del servizio di crittografia (CSP) che ha generato il BLOB.<br/> |
+| <span id="BCRYPT_RSAPUBLIC_BLOB"></span><span id="bcrypt_rsapublic_blob"></span><dl> <dt>**BCRYPT \_ RSAPUBLIC \_ BLOB**</dt> </dl>     | Esportare una chiave pubblica RSA. Il *buffer pbOutput* riceve una [**struttura BLOB BCRYPT \_ RSAKEY \_**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_rsakey_blob) immediatamente seguita dai dati della chiave.<br/>                                                                                                                                                                                                |
 
 
 
@@ -89,25 +89,25 @@ Stringa Unicode con terminazione null che contiene un identificatore che specifi
 *pbOutput* \[ out, facoltativo\]
 </dt> <dd>
 
-Indirizzo di un buffer che riceve il [*BLOB della chiave*](/windows/desktop/SecGloss/k-gly). Il parametro *cbOutput* contiene la dimensione del buffer. Se questo parametro è **null**, questa funzione inserisce la dimensione richiesta, in byte, nel **valore DWORD** a cui fa riferimento il parametro *pcbResult* .
+Indirizzo di un buffer che riceve la [*chiave BLOB*](/windows/desktop/SecGloss/k-gly). Il *parametro cbOutput* contiene le dimensioni di questo buffer. Se questo parametro è **NULL,** questa funzione inserirà le dimensioni richieste, in byte, nel **valore DWORD** a cui punta *il parametro pcbResult.*
 
 </dd> <dt>
 
-*cbOutput* \[ in\]
+*cbOutput* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer *pbOutput* .
+Dimensione, in byte, del buffer *pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ out\]
+*pcbResult* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile **DWORD** che riceve il numero di byte copiati nel buffer di *pbOutput* . Se il parametro *pbOutput* è impostato su **null** quando viene chiamata la funzione, la dimensione richiesta per il buffer *pbOutput* , in byte, viene restituita nel **valore DWORD** a cui punta il parametro.
+Indirizzo di una **variabile DWORD** che riceve il numero di byte copiati nel buffer *pbOutput.* Se il *parametro pbOutput* è impostato su **NULL** quando viene chiamata la funzione, le dimensioni richieste per il buffer *pbOutput,* in byte, vengono restituite nel **valore DWORD** a cui punta questo parametro.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Riservato per utilizzi futuri.
@@ -120,13 +120,13 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice/valore restituito                                                                                                                                                    | Descrizione                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl> | Uno degli handle forniti non è valido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno degli handle forniti non è valido.<br/> |
 
 
 
@@ -134,11 +134,11 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **SslExportKey** facilita il trasporto di chiavi di sessione da un processo a un altro e l'esportazione della parte pubblica di una chiave temporanea.
+La **funzione SslExportKey** facilita il trasporto delle chiavi di sessione da un processo a un altro, nonché l'esportazione della parte pubblica come chiave effimera.
 
-Quando si esportano le chiavi di sessione, il tipo di BLOB è opaco, vale a dire che il formato del BLOB è irrilevante, purché entrambe le funzioni **SslExportKey** e [**SslImportKey**](sslimportkey.md) possano interpretarlo.
+Quando si esportano chiavi di sessione, il tipo DI BLOB è opaco, vale a dire che il formato del BLOB è irrilevante, purché entrambe le funzioni **SslExportKey** e [**SslImportKey**](sslimportkey.md) possano interpretarlo.
 
-Quando si esporta la parte pubblica di una chiave temporanea, il tipo di BLOB deve essere il tipo appropriato, ad esempio il BLOB **\_ pubblico NCRYPT DH \_ \_** o il **\_ \_ BLOB ECCPUBLIC NCRYPT**.
+Quando si esporta la parte pubblica di una chiave effimera, il tipo BLOB deve essere il tipo appropriato, ad esempio **NCRYPT \_ DH \_ PUBLIC \_ BLOB** o **NCRYPT \_ ECCPUBLIC \_ BLOB.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -146,9 +146,9 @@ Quando si esporta la parte pubblica di una chiave temporanea, il tipo di BLOB de
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

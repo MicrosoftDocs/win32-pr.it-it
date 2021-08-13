@@ -1,19 +1,19 @@
 ---
-description: Un'applicazione invia il \_ messaggio WM MDITILE a una finestra del client di interfaccia a documenti multipli (MDI) per disporre tutte le finestre figlio MDI in un formato di riquadro.
+description: Un'applicazione invia il messaggio WM MDITILE a una finestra \_ client MDI (Multiple-Document Interface) per disporre tutte le finestre figlio MDI in un formato riquadro.
 ms.assetid: a480ba61-807e-4d0e-bda2-f1876e0bb13c
-title: Messaggio WM_MDITILE (winuser. h)
+title: WM_MDITILE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cf7ee38fbb3622e2d17bf4cea5a28b6b492a244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 379394d413c0c9d15b9f63297934b97da6aff65b4ae5d803627cb0107493c4e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118436218"
 ---
-# <a name="wm_mditile-message"></a>\_Messaggio MDITILE WM
+# <a name="wm_mditile-message"></a>Messaggio \_ WM MDITILE
 
-Un'applicazione invia il messaggio **WM \_ MDITILE** a una finestra del client di interfaccia a documenti multipli (MDI) per disporre tutte le finestre figlio MDI in un formato di riquadro.
+Un'applicazione invia il **messaggio \_ WM MDITILE** a una finestra client MDI (Multiple-Document Interface) per disporre tutte le finestre figlio MDI in un formato riquadro.
 
 
 ```C++
@@ -29,14 +29,14 @@ Un'applicazione invia il messaggio **WM \_ MDITILE** a una finestra del client d
 *wParam* 
 </dt> <dd>
 
-Opzione di affiancamento. Questo parametro può essere uno dei valori seguenti, combinati facoltativamente con **MDITILE \_ SKIPDISABLED** per impedire che vengano affiancate le finestre figlio MDI disabilitate.
+Opzione di affiancamento. Questo parametro può essere uno dei valori seguenti, facoltativamente combinati con **MDITILE \_ SKIPDISABLED** per impedire che le finestre figlio MDI disabilitate vengano affiancate.
 
 
 
 | Valore                                                                                                                                                                                                                                    | Significato                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| <span id="MDITILE_HORIZONTAL"></span><span id="mditile_horizontal"></span><dl> <dt>**MDITILE \_**</dt> <dt>0x0001</dt> orizzontale </dl> | Affianca le finestre orizzontalmente.<br/> |
-| <span id="MDITILE_VERTICAL"></span><span id="mditile_vertical"></span><dl> <dt>**MDITILE \_**</dt> <dt>0x0000</dt> verticali </dl>       | Affianca le finestre verticalmente.<br/>   |
+| <span id="MDITILE_HORIZONTAL"></span><span id="mditile_horizontal"></span><dl> <dt>**MDITILE \_ ORIZZONTALE**</dt> <dt>0x0001</dt> </dl> | Affianca le finestre orizzontalmente.<br/> |
+| <span id="MDITILE_VERTICAL"></span><span id="mditile_vertical"></span><dl> <dt>**MDITILE \_ VERTICALE**</dt> <dt>0x0000</dt> </dl>       | Affianca le finestre verticalmente.<br/>   |
 
 
 
@@ -53,11 +53,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Se il messaggio ha esito positivo, il valore restituito è **true**.
+Se il messaggio ha esito positivo, il valore restituito è **TRUE.**
 
-Se il messaggio ha esito negativo, il valore restituito è **false**.
+Se il messaggio ha esito negativo, il valore restituito è **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Se il messaggio ha esito negativo, il valore restituito è **false**.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -78,10 +78,10 @@ Se il messaggio ha esito negativo, il valore restituito è **false**.
 **Riferimento**
 </dt> <dt>
 
-[**\_MDICASCADE WM**](wm-mdicascade.md)
+[**WM \_ MDICASCADE**](wm-mdicascade.md)
 </dt> <dt>
 
-[**\_MDIICONARRANGE WM**](wm-mdiiconarrange.md)
+[**WM \_ MDIICONARRANGE**](wm-mdiiconarrange.md)
 </dt> <dt>
 
 **Informazioni concettuali**

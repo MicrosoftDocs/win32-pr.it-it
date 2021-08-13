@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 91aaf2924638b1db5b0e8ec0782b90fa964a9543
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7bec167a7afc438b73516feacd95fb3fea180efa6806788010d399638a474a55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119241491"
 ---
 # <a name="d3dxassembleshaderfromfile-function"></a>Funzione D3DXAssembleShaderFromFile
 
@@ -50,7 +50,7 @@ HRESULT D3DXAssembleShaderFromFile(
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a una stringa che specifica il nome file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati string viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Puntatore a una stringa che specifica il nome file. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati stringa viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Puntatore a una stringa che specifica il nome file. Se le impostazioni del compi
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matrice facoltativa con terminazione **NULL** di [**strutture D3DXMACRO.**](d3dxmacro.md) Questo valore può essere **NULL.**
+Matrice facoltativa **con terminazione NULL** di [**strutture D3DXMACRO.**](d3dxmacro.md) Questo valore può essere **NULL.**
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Matrice facoltativa con terminazione **NULL** di [**strutture D3DXMACRO.**](d3dx
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione delle \# direttive include. Se questo valore è **NULL,** le include verranno rispettate durante la compilazione da un file o causeranno un errore durante la compilazione \# da una risorsa o da una memoria.
+Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione \# delle direttive include. Se questo valore è **NULL,** include verrà rispettato durante la compilazione da un file o causerà un errore durante la compilazione \# da una risorsa o da una memoria.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usar
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per informazioni [dettagliate, vedere Flag D3DXSHADER.](d3dxshader-flags.md)
+Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Flag D3DXSHADER.](d3dxshader-flags.md)
 
 </dd> <dt>
 

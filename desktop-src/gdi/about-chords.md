@@ -1,25 +1,25 @@
 ---
-description: Una corda è un'area delimitata dall'intersezione tra un'ellisse e un segmento di linea chiamato secante. La figura seguente mostra un accordo disegnato usando la funzione Chord.
+description: Un accordo è un'area delimitata dall'intersezione di un'ellisse e di un segmento di linea denominato seante. La figura seguente mostra un accordo disegnato usando la funzione Chord.
 ms.assetid: 9aa35b39-06f2-48bf-b32c-3e3e32fab68b
 title: Informazioni sugli accordi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18d6310c47a503766e61b9c7936816a5891da89a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc3bad0d17d34386ada7c7c3b46bb1bcc4db5f9a2ce572ce78c33f8f4b6af909
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119400531"
 ---
 # <a name="about-chords"></a>Informazioni sugli accordi
 
-Una *corda* è un'area delimitata dall'intersezione tra un'ellisse e un segmento di linea chiamato *secante*. La figura seguente mostra un accordo disegnato usando la funzione [**Chord**](/windows/desktop/api/Wingdi/nf-wingdi-chord) .
+Un *accordo è un'area* delimitata dall'intersezione di un'ellisse e di un segmento di linea denominato *se secante.* La figura seguente mostra un accordo disegnato usando la [**funzione Chord.**](/windows/desktop/api/Wingdi/nf-wingdi-chord)
 
-![illustrazione di un Elipse, che mostra due radiali, una secante e una corda](images/csfsh-02.png)
+![illustrazione di un elipse, che mostra due radiali, un secante e un accordo](images/csfsh-02.png)
 
-Quando si chiama [**Chord**](/windows/win32/api/wingdi/nf-wingdi-chord), un'applicazione fornisce le coordinate degli angoli superiore sinistro e inferiore destro del rettangolo di delimitazione dell'ellisse, nonché le coordinate di due punti che definiscono due radiali. Una radiale è una linea disegnata dal centro del rettangolo di delimitazione di un'ellisse a un punto nell'ellisse.
+Quando si chiama [**Chord**](/windows/win32/api/wingdi/nf-wingdi-chord), un'applicazione fornisce le coordinate degli angoli superiore sinistro e inferiore destro del rettangolo di delimitazione dell'ellisse, nonché le coordinate di due punti che definiscono due radiali. Una radiale è una linea disegnata dal centro del rettangolo di delimitazione di un'ellisse a un punto sull'ellisse.
 
-Quando il sistema disegna la parte curva della corda, esegue questa operazione utilizzando la direzione di arco corrente per il contesto di dispositivo specificato. La direzione di arco predefinita è in senso antiorario. È possibile reimpostare la direzione dell'arco chiamando la funzione [**SetArcDirection**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection) .
+Quando il sistema disegna la parte curva dell'accordo, lo fa usando la direzione dell'arco corrente per il contesto di dispositivo specificato. La direzione predefinita dell'arco è in senso antiorario. È possibile fare in modo che l'applicazione azzeri la direzione dell'arco chiamando la [**funzione SetArcDirection.**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection)
 
  
 

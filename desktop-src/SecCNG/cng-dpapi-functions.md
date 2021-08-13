@@ -1,19 +1,19 @@
 ---
-description: "Cryptography API: Next Generation (CNG) definisce le funzioni seguenti per l'Data Protection API CNG."
+description: "L'API cryptography: Next Generation (CNG) definisce le funzioni seguenti per il Data Protection API CNG."
 ms.assetid: 591C7361-334E-4A65-8616-C0ED3BBC2297
 title: Funzioni DPAPI CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84719009fc7807a9edc0b7a88846530b68caa6c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3dbc57a0ec63c67733703aada30d60e6230b9209e94cbb44ec3905109ba256f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908690"
 ---
 # <a name="cng-dpapi-functions"></a>Funzioni DPAPI CNG
 
-Cryptography API: Next Generation (CNG) definisce le funzioni seguenti per l'Data Protection API CNG.
+L'API cryptography: Next Generation (CNG) definisce le funzioni seguenti per il Data Protection API CNG.
 
 -   [**NCryptCreateProtectionDescriptor**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor)
 -   [**NCryptCloseProtectionDescriptor**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcloseprotectiondescriptor)

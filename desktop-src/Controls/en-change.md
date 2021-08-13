@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_CHANGE (winuser. h)
-description: Inviato quando l'utente ha effettuato un'azione che potrebbe aver modificato il testo in un controllo di modifica.
+title: EN_CHANGE di notifica (Winuser.h)
+description: Inviato quando l'utente ha intrapreso un'azione che potrebbe aver modificato il testo in un controllo di modifica.
 ms.assetid: 8a04e6fb-ae9d-4d94-8047-6de96df899f5
 keywords:
-- Controlli di Windows per il codice di notifica EN_CHANGE
+- EN_CHANGE del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8ef26d1ec4f8ec1dc93e54d46b88c4fe7cc872b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b86dbfb90376a85df09cad854882fa2616e6b7cb247cab4106850608a4b96ad4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437051"
 ---
-# <a name="en_change-notification-code"></a>\_Modifica del codice di notifica
+# <a name="en_change-notification-code"></a>Codice \_ di notifica EN CHANGE
 
-Inviato quando l'utente ha effettuato un'azione che potrebbe aver modificato il testo in un controllo di modifica. A differenza del codice di notifica di [ \_ aggiornamento en](en-update.md) , questo codice di notifica viene inviato dopo l'aggiornamento dello schermo da parte del sistema. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato quando l'utente ha intrapreso un'azione che potrebbe aver modificato il testo in un controllo di modifica. A differenza [del codice di notifica EN \_ UPDATE,](en-update.md) questo codice di notifica viene inviato dopo l'aggiornamento dello schermo da parte del sistema. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ EN_CHANGE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo di modifica. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo di modifica. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,9 +55,9 @@ Handle per il controllo di modifica.
 
 ## <a name="remarks"></a>Commenti
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per ricevere \_ i codici di notifica delle modifiche, specificare la [**\_ modifica ENM**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) . Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per ricevere i \_ codici di notifica EN CHANGE, specificare [**ENM \_ CHANGE**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il [**messaggio EM \_ SETEVENTMASK.**](em-seteventmask.md) Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
-Il \_ codice di notifica delle modifiche it non viene inviato quando si usa lo stile [**\_ multiriga es**](edit-control-styles.md) e il testo viene inviato tramite il testo [**WM \_**](/windows/desktop/winmsg/wm-settext).
+Il codice di notifica EN CHANGE non viene inviato quando si usa lo stile \_ [**\_ MULTILINE ES**](edit-control-styles.md) e il testo viene inviato tramite [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Il \_ codice di notifica delle modifiche it non viene inviato quando si usa lo s
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -78,13 +78,13 @@ Il \_ codice di notifica delle modifiche it non viene inviato quando si usa lo s
 **Riferimento**
 </dt> <dt>
 
-[\_aggiornamento en](en-update.md)
+[EN \_ UPDATE](en-update.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

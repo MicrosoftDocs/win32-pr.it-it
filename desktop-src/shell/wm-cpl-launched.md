@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2ee7ed5e20931db2752b12083fbc549d3be8b646
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6519807a2c16005667e3949c5c72f496c6427de6ce1e30996a261fe9b690a5da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451840"
 ---
 # <a name="wm_cpl_launched-message"></a>Messaggio WM \_ CPL \_ LAUNCHED
 

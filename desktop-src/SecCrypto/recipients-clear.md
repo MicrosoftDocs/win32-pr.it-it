@@ -1,7 +1,7 @@
 ---
-description: Rimuove tutti gli oggetti certificato da una raccolta di destinatari.
+description: Rimuove tutti gli oggetti Certificate da una raccolta Recipients.
 ms.assetid: 456fcfbc-4388-40f4-ab58-04508ee2141b
-title: Metodo Recipients. Clear
+title: Metodo Recipients.Clear
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 7d9bd711bbc97997045989f2eb4ffdbc51ae3559
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c956aacd7b61243fbaeb26ed1a29ed0fee4522d83d8b4ef3ac25b3b1921b42a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900808"
 ---
-# <a name="recipientsclear-method"></a>Metodo Recipients. Clear
+# <a name="recipientsclear-method"></a>Metodo Recipients.Clear
 
-\[Il metodo **Clear** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Usare invece la [**classe CmsRecipientCollection**](/dotnet/api/system.security.cryptography.pkcs.cmsrecipientcollection?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio dei nomi [**System. Security. Cryptography. Pkcs**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[Il **metodo Clear** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la [**classe CmsRecipientCollection**](/dotnet/api/system.security.cryptography.pkcs.cmsrecipientcollection?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio dei [**nomi System.Security.Cryptography.Pkcs.**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-Il metodo **Clear** rimuove tutti gli oggetti [**certificato**](certificate.md) da una raccolta [**Recipients**](recipients.md) .
+Il **metodo Clear** rimuove tutti gli oggetti [**Certificate**](certificate.md) da una [**raccolta Recipients.**](recipients.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ Questo metodo non restituisce valori. Un'applicazione che usa questo metodo deve
 
 | Requisito | Valore |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -58,7 +58,7 @@ Questo metodo non restituisce valori. Un'applicazione che usa questo metodo deve
 
 <dl> <dt>
 
-[**Oggetti Cryptography**](cryptography-objects.md)
+[**Oggetti di crittografia**](cryptography-objects.md)
 </dt> <dt>
 
 [**Destinatari**](recipients.md)

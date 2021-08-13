@@ -1,19 +1,19 @@
 ---
-description: Definisce una mesh semplice. La prima matrice è un elenco di vertici e la seconda matrice definisce i visi della mesh mediante l'indicizzazione nella matrice di vertici.
+description: Definisce una mesh semplice. La prima matrice è un elenco di vertici e la seconda matrice definisce le visi della mesh tramite l'indicizzazione nella matrice dei vertici.
 ms.assetid: vs|directx_sdk|~\mesh.htm
 title: Mesh
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ced60785a5f013db7fc26e4d203119a160953b65
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f4ce4cf6fb6a3eee3417a7d0fe1594164c1e22df9d118f4f995955f8070fc015
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119240741"
 ---
 # <a name="mesh"></a>Mesh
 
-Definisce una mesh semplice. La prima matrice è un elenco di vertici e la seconda matrice definisce i visi della mesh mediante l'indicizzazione nella matrice di vertici.
+Definisce una mesh semplice. La prima matrice è un elenco di vertici e la seconda matrice definisce le visi della mesh tramite l'indicizzazione nella matrice dei vertici.
 
 ``` syntax
 template Mesh
@@ -30,10 +30,10 @@ template Mesh
 Dove:
 
 -   nVertices: numero di vertici.
--   vertici del vettore di matrice \[ nVertices \] : matrice di vertici, ognuno di tipo Vector. Vedere [**vector**](vector.md).
+-   array Vector vertices \[ nVertices \] : matrice di vertici, ognuno di tipo Vector. Vedere [**Vector.**](vector.md)
 -   nFaces: numero di visi.
--   Array MeshFace Faces \[ nFaces \] -Array of visi, ognuno di tipo MeshFace. Vedere [**MeshFace**](meshface.md).
--   \[ ... \] -È possibile usare qualsiasi modello di file con estensione x. Questa operazione rende l'architettura estendibile. I modelli [**Material**](material.md) e [**TextureFilename**](texturefilename.md) vengono in genere utilizzati.
+-   array MeshFace faces \[ nFaces \] : matrice di visi, ognuno di tipo MeshFace. Vedere [**MeshFace.**](meshface.md)
+-   \[ ... \] - Qui è possibile usare qualsiasi modello di file con estensione x. In questo modo l'architettura è estensibile. [**Vengono in**](material.md) genere usati i modelli Material [**e TextureFilename.**](texturefilename.md)
 
 ## <a name="see-also"></a>Vedi anche
 

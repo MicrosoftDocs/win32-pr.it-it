@@ -1,20 +1,20 @@
 ---
-title: Alias di memoria ed ereditarietà dei dati
-description: La risorsa posizionata e riservata potrebbe avere l'alias della memoria fisica in un heap. Le risorse posizionate abilitano più scenari di ereditarietà dei dati rispetto alle risorse riservate quando l'heap dispone del flag condiviso impostato o quando le risorse con alias hanno layout di memoria completamente definiti.
+title: Aliasing della memoria ed ereditarietà dei dati
+description: Le risorse posizionate e riservate possono creare alias per la memoria fisica all'interno di un heap. Le risorse posizionate consentono più scenari di ereditarietà dei dati rispetto alle risorse riservate quando per l'heap è impostato il flag condiviso o quando le risorse con alias hanno layout di memoria completamente definiti.
 ms.assetid: 53C5804B-0F81-41AF-83D2-A96DCDFDC94A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cace5b5997e2a460406ae72abb247224886f3926
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2b584ef95f4ee89bc98940c8407427203a19f55046134e1d3c15cb672fef8fef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74105090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460921"
 ---
-# <a name="memory-aliasing-and-data-inheritance"></a>Alias di memoria ed ereditarietà dei dati
+# <a name="memory-aliasing-and-data-inheritance"></a>Aliasing della memoria ed ereditarietà dei dati
 
-La risorsa posizionata e riservata potrebbe avere l'alias della memoria fisica in un heap. Le risorse posizionate abilitano più scenari di ereditarietà dei dati rispetto alle risorse riservate quando l'heap dispone del flag condiviso impostato o quando le risorse con alias hanno layout di memoria completamente definiti.
+Le risorse posizionate e riservate possono creare alias per la memoria fisica all'interno di un heap. Le risorse posizionate consentono più scenari di ereditarietà dei dati rispetto alle risorse riservate quando per l'heap è impostato il flag condiviso o quando le risorse con alias hanno layout di memoria completamente definiti.
 
 -   [Aliasing](#memory-aliasing-and-data-inheritance)
 -   [Ereditarietà dei dati](#data-inheritance)
@@ -22,47 +22,47 @@ La risorsa posizionata e riservata potrebbe avere l'alias della memoria fisica i
 
 ## <a name="aliasing"></a>Aliasing
 
-È necessario emettere una barriera di alias tra l'utilizzo di due risorse che condividono la stessa memoria fisica, anche se non si desidera l'ereditarietà dei dati. I modelli di utilizzo semplice devono indicare, almeno, la risorsa di destinazione in cui è presente un'operazione di questo tipo. Per altri dettagli e modelli di utilizzo avanzati, vedere [**CreatePlacedResource**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createplacedresource) .
+È necessario creare una barriera di aliasing tra l'utilizzo di due risorse che condividono la stessa memoria fisica, anche se non si desidera ereditarietà dei dati. I modelli di utilizzo semplici devono indicare almeno la risorsa di destinazione coinvolta in un'operazione di questo tipo. Vedere [**CreatePlacedResource per**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createplacedresource) altri dettagli e modelli di utilizzo avanzati.
 
-Dopo l'accesso a una risorsa, tutte le risorse che condividono la memoria fisica con tale risorsa diventano Invalidate, a meno che non sia consentita l'ereditarietà dei dati. Le letture delle risorse Invalidate generano contenuto di risorse non definito. Anche le Scritture nelle risorse Invalidate generano contenuto di risorse non definito, a meno che non si verifichino due condizioni:
+Dopo l'accesso a una risorsa, tutte le risorse che condividono memoria fisica con tale risorsa vengono invalidate, a meno che non sia consentita l'ereditarietà dei dati. Le operazioni di lettura delle risorse invalidate comportano contenuti di risorse non definiti. Le scritture nelle risorse invalidate comportano anche contenuti di risorse non definiti, a meno che non si verifichino due condizioni:
 
--   La risorsa non contiene il \_ flag di risorsa D3D12 \_ Consenti la destinazione di \_ \_ rendering o il flag di \_ \_ risorsa D3D12 \_ \_ Consenti stencil di \_ profondità \_ .
--   La scrittura è un'operazione di copia o cancellazione in un'intera sottorisorsa o un riquadro. L'inizializzazione dei riquadri è disponibile solo per le risorse con il riquadro 64KB \_ \_ undefined \_ SWIZZLE e 64KB \_ tile \_ standard \_ SWIZZLE.
+-   La risorsa non ha lo STENCIL D3D12 RESOURCE FLAG ALLOW RENDER TARGET o \_ \_ \_ \_ \_ D3D12 \_ RESOURCE FLAG ALLOW DEPTH \_ \_ \_ \_ STENCIL.
+-   La scrittura è un'operazione di copia o cancellazione in un'intera sottorisorsa o riquadro. L'inizializzazione del riquadro è disponibile solo per le risorse con SWIZZLE RIQUADRO NON DEFINITO da 64 KB e SWIZZLE STANDARD per riquadri \_ \_ a \_ 64 \_ \_ \_ KB.
 
-Le invalide sovrapposte hanno un ambito limitato a granularità più piccole, quando i layout forniscono informazioni sulla posizione in cui si trovano i dati Texel e quando le risorse sono in determinati stati di barriera di transizione. Tuttavia, le invalide non possono superare le granularità di allineamento delle risorse.
+Le convalide sovrapposte hanno come ambito granularità più piccole, quando i layout forniscono informazioni sulla posizione dei dati texel e su quando le risorse si verificano in determinati stati di barriera di transizione. Tuttavia, le convalide non possono essere inferiori alle granularità di allineamento delle risorse.
 
-Una granularità dell'allineamento del buffer è 64KB e la granularità dell'allineamento maggiore ha la precedenza. Questo è importante quando si considerano le trame 4KB, in quanto più trame 4KB possono trovarsi in un'area 64KB senza sovrapporsi. Tuttavia, non è possibile usare in combinazione con una qualsiasi di queste trame 4KB un alias del buffer con la stessa area 64KB. L'applicazione non è in grado di impedire in modo affidabile l'accesso al buffer dall'intersezione delle trame 4KB, in quanto le GPU sono autorizzate a swizzle i dati della trama 4KB all'interno dell'area 64KB in un modello non definito.
+Una granularità di allineamento del buffer è di 64 KB e la granularità di allineamento maggiore ha la precedenza. Questo è importante quando si considerano le trame da 4 KB, perché più trame da 4 KB possono risiedere in un'area di 64 KB senza sovrapporsi tra loro. Tuttavia, non è possibile usare un alias del buffer con la stessa area di 64 KB in combinazione con nessuna di queste trame da 4 KB. L'applicazione non può mantenere in modo affidabile l'accesso al buffer dall'intersezione delle trame da 4 KB, perché le GPU possono eseguire lo scorrimento rapido dei dati delle trame da 4 KB all'interno dell'area di 64 KB in un modello non definito.
 
-\_il riquadro 64KB \_ undefined \_ SWIZZLE, 64KB \_ tile \_ standard \_ SWIZZLE e \_ i layout di trama principali della riga indicano all'applicazione che le granularità di allineamento sovrapposte sono diventate non valide. Ad esempio: un'applicazione può creare una matrice di trama di destinazione di rendering 2D con due sezioni di matrice, un singolo livello MIP e \_ il \_ layout di SWIZZLE indefinito del riquadro 64KB \_ . Si supponga che l'applicazione riconosca che ogni sezione della matrice occupa 100 riquadri 64KB. L'applicazione può non riuscire a usare la sezione della matrice 0 e riusare tale memoria per un buffer di ~ 6 MB, una trama di ~ 6 MB con layout non definito e così via. In futuro, si supponga che l'applicazione non abbia più richiesto il primo riquadro della sezione della matrice 1. Quindi, l'applicazione potrebbe anche individuare un buffer 64KB fino a quando il rendering richiederebbe nuovamente il primo riquadro della sezione della matrice 1. Per riutilizzare il primo riquadro con la matrice di trama, l'applicazione deve eseguire una copia o una copia completa del riquadro.
+I layout di trama 64 KB TILE \_ \_ \_ UNDEFINED SWIZZLE, 64KB \_ TILE STANDARD \_ \_ SWIZZLE e ROW \_ MAJOR informano l'applicazione che le granularità di allineamento sovrapposte non sono più valide. Ad esempio: un'applicazione può creare una matrice di trame di destinazione di rendering 2D con 2 sezioni di matrice, un singolo livello mip e il \_ \_ layout SWIZZLE NON DEFINITO tile di 64 \_ KB. Si supponga che l'applicazione comprendi che ogni sezione della matrice occupa 100 riquadri da 64 KB. L'applicazione può non usare la sezione di matrice 0 e usare nuovamente tale memoria per un buffer di ~6 MB, una trama di ~6 MB con layout non definito e così via. In seguito, si supponga che l'applicazione non richiede più il primo riquadro della sezione di matrice 1. L'applicazione potrebbe quindi anche individuare un buffer di 64 KB fino a quando il rendering non richiederà di nuovo il primo riquadro della sezione di matrice 1. L'applicazione deve cancellare o copiare un riquadro completo per usare nuovamente il primo riquadro con la matrice di trame.
 
-Tuttavia, anche le trame con layout definiti presentano ancora casi problematici. Le dimensioni delle risorse di trama possono essere notevolmente diverse da quelle che possono essere calcolate dall'applicazione, perché alcune architetture degli adattatori allocano memoria aggiuntiva per le trame per ridurre la larghezza di banda effettiva durante scenari di rendering comuni. Eventuali invalide nell'area di memoria aggiuntiva determinano l'invalidazione dell'intera risorsa. Per ulteriori informazioni, vedere [**GetResourceAllocationInfo**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getresourceallocationinfo) .
+Tuttavia, anche le trame con layout definiti hanno ancora casi problematici. Le dimensioni delle risorse di trama possono differire significativamente da ciò che l'applicazione può calcolare, perché alcune architetture di adattatori allocano memoria aggiuntiva per le trame per ridurre la larghezza di banda effettiva durante scenari di rendering comuni. Eventuali convalide in tale area di memoria aggiuntiva causano l'invalidazione dell'intera risorsa. Per [**altri dettagli, vedere GetResourceAllocationInfo.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getresourceallocationinfo)
 
 ## <a name="data-inheritance"></a>Ereditarietà dei dati
 
-Le risorse posizionate abilitano la maggior parte dell'ereditarietà dei dati per le trame, anche con layout di memoria non definiti. Le applicazioni possono simulare le funzionalità di ereditarietà dei dati che consentono di abilitare le risorse condivise individuando due trame con proprietà di risorse identiche allo stesso offset in un heap condiviso. L'intera descrizione della risorsa deve essere identica, inclusi il valore Clear ottimizzato e il tipo di metodo di creazione delle risorse (inserito o riservato). Tuttavia, entrambe le risorse potrebbero avere stati diversi della barriera di transizione iniziale.
+Le risorse posizionate consentono la maggior parte dell'ereditarietà dei dati per le trame, anche con layout di memoria non definiti. Le applicazioni possono simulare le funzionalità di ereditarietà dei dati abilitate dalle risorse condivise di cui è stato eseguito il commit individuando due trame con proprietà di risorse identiche allo stesso offset in un heap condiviso. L'intera descrizione della risorsa deve essere identica, inclusi il valore non crittografato ottimizzato e il tipo di metodo di creazione delle risorse (posizionato o riservato). Tuttavia, entrambe le risorse potrebbero avere stati di barriera di transizione iniziale diversi.
 
-Le risorse riservate consentono l'ereditarietà dei dati per riquadro. Tuttavia, esistono restrizioni per gli Stati della barriera di transizione delle risorse.
+Le risorse riservate abilitano l'ereditarietà dei dati per riquadro; ma esistono in genere restrizioni per gli stati della barriera di transizione delle risorse.
 
-Per ereditare i dati, entrambe le risorse devono trovarsi in uno stato di barriera di transizione delle risorse compatibile:
+Per ereditare i dati, entrambe le risorse devono essere in uno stato di barriera di transizione delle risorse compatibile:
 
--   Per i buffer, le trame con accesso simultaneo e le trame tra adattatori, lo stato di transizione delle risorse non è importante e tutti gli Stati sono "compatibili".
--   Per le trame riservate senza le proprietà precedenti o altre ereditarietà dei dati per riquadro tramite il \_ riquadro 64KB \_ undefined \_ SWIZZLE o 64KB \_ tile \_ standard \_ SWIZZLE, lo stato della barriera di transizione delle risorse, incluso il riquadro, deve essere nello stato comune.
--   Per tutte le altre trame, in cui le descrizioni delle risorse corrispondono esattamente, lo stato della barriera di transizione delle risorse per ogni coppia corrispondente di sottorisorse deve:
-    -   Si trova nello stato comune.
-    -   Essere uguali quando lo stato ha lo stesso flag di scrittura GPU.
+-   Per i buffer, le trame ad accesso simultaneo e le trame tra adattatori incrociati, lo stato di transizione delle risorse non è importante e tutti gli stati sono "compatibili".
+-   Per le trame riservate senza le proprietà precedenti o altre ereditarietà dei dati per riquadro tramite SWIZZLE TILE UNDEFINED di 64 KB o \_ \_ \_ \_ SWIZZLE TILE STANDARD da 64 \_ KB, lo stato della barriera di transizione della risorsa, incluso il \_ riquadro, deve essere nello stato comune.
+-   Per tutte le altre trame, in cui le descrizioni delle risorse corrispondono esattamente, lo stato della barriera di transizione della risorsa per ogni coppia corrispondente di sottorisorse deve:
+    -   Essere nello stato comune.
+    -   Essere uguale quando lo stato contiene lo stesso flag di scrittura GPU.
 
-Quando la GPU supporta swizzle standard, i buffer e le trame swizzle standard possono essere con alias sulla stessa memoria e ereditano i dati tra di essi. L'applicazione può modificare i Texel dalla rappresentazione del buffer, perché il modello swizzle standard descrive in che modo i Texel sono disposti in memoria. Il modello swizzle visibile alla CPU è equivalente al modello swizzle visibile in GPU visualizzato nei buffer.
+Quando la GPU supporta lo swizzle standard, i buffer e le trame dello swizzle standard possono essere alias alla stessa memoria ed ereditare i dati tra di essi. L'applicazione può modificare i texel dalla rappresentazione del buffer, perché il modello di swizzle standard descrive il modo in cui i texel vengono disposti in memoria. Il modello di swizzle visibile alla CPU è equivalente al modello di swizzle visibile alla GPU visualizzato nei buffer.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Sottoallocazione negli heap](suballocation-within-heaps.md)
+[Sottoallocazione all'interno degli heap](suballocation-within-heaps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

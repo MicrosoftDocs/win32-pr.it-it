@@ -1,38 +1,38 @@
 ---
-description: Una nuova funzionalità interessante di Tablet PC è il sistema di input penna.
+description: Una nuova funzionalità interessante del Tablet PC è il sistema di input penna.
 ms.assetid: 8432617a-5ae7-44cb-a5f7-f3b2d8885846
 title: Input penna, input penna e riconoscimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a46d865e40d1779edaa2607b1754c45659609b5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c8645a1a68499975ad3ef5cdafb8c07685e9ed9e600cdc9ca2129babaa8b953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104568192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716265"
 ---
 # <a name="pen-input-ink-and-recognition"></a>Input penna, input penna e riconoscimento
 
-Una nuova funzionalità interessante di Tablet PC è il sistema di input penna. Tutti i computer Tablet PC hanno un digitalizzatore sotto la schermata che accetta input penna. Questo nuovo meccanismo di input richiede di considerare come compilare applicazioni specifiche per Tablet PC. La piattaforma Tablet PC Application Programming Interface (API) consente di eseguire questa operazione.
+Una nuova funzionalità interessante del Tablet PC è il sistema di input penna. Tutti i computer Tablet PC hanno un digitalizzatore sotto lo schermo che accetta l'input penna. Questo nuovo meccanismo di input richiede di pensare a come compilare applicazioni in modo specifico per Tablet PC. L'API (Application Programming Interface) della piattaforma Tablet PC consente di eseguire questa operazione.
 
 ## <a name="collection-data-management-and-recognition"></a>Raccolta, Gestione dati e riconoscimento
 
-La piattaforma Tablet PC può essere divisa in tre aree distinte:
+La piattaforma Tablet PC può essere suddivisa in tre aree distinte:
 
--   Raccolta di input penna (oggetti utilizzati per raccogliere input penna dal digitalizzatore).
--   Gestione dati Ink (oggetti utilizzati per gestire l'input penna).
--   Riconoscimento dell'input penna (oggetti utilizzati per convertire l'input penna raccolto in altri tipi di dati, ad esempio testo).
+-   Raccolta input penna (oggetti utilizzati per raccogliere input penna dal digitalizzatore).
+-   Gestione dei dati dell'input penna (oggetti usati per gestire l'input penna raccolto).
+-   Riconoscimento input penna (oggetti usati per convertire l'input penna raccolto in altri tipi di dati, ad esempio testo).
 
-La figura seguente illustra, a livello generale, il modo in cui l'API della raccolta di input penna (API penna), l'API Gestione dati input penna e l'API di riconoscimento input penna (API di riconoscimento) funzionano insieme nella piattaforma Tablet PC.
+L'immagine seguente illustra, a livello di alto livello, il funzionamento dell'API Raccolta input penna (API Penna), dell'API Ink Gestione dati (API Input penna) e dell'API Riconoscimento input penna (API Riconoscimento input penna) nella piattaforma Tablet PC.
 
-![Illustraton che illustra in che modo l'API Pen, l'API Ink e l'API di riconoscimento collaborano](images/aabc298b-fd64-435b-87bc-eb7cd11524e8.jpg)
+![Illustraton che illustra il funzionamento dell'API penna, dell'API input penna e dell'API di riconoscimento](images/aabc298b-fd64-435b-87bc-eb7cd11524e8.jpg)
 
-L'API della piattaforma Tablet PC è disponibile nelle API gestite e in una libreria COM. Negli argomenti seguenti vengono descritti gli oggetti nell'API e viene illustrato il modo in cui le applicazioni utilizzano questi oggetti:
+L'API della piattaforma Tablet PC è disponibile nelle API gestite e in una libreria COM. Gli argomenti seguenti descrivono gli oggetti nell'API e illustrano come le applicazioni usano questi oggetti:
 
--   [Raccolta di input penna](ink-collection.md)
--   [Dati Ink](ink-data.md)
+-   [Raccolta input penna](ink-collection.md)
+-   [Dati input penna](ink-data.md)
 -   [Riconoscimento input penna](ink-recognition.md)
--   [Analisi dell'input penna](ink-analysis.md)
+-   [Analisi input penna](ink-analysis.md)
 -   [Riconoscimento della grafia in Windows Server 2008 R2](handwriting-recognition-in-windows-server-2008-r2.md)
 
  

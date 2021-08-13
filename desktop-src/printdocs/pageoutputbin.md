@@ -4,12 +4,12 @@ ms.assetid: c5050804-0e77-4d26-bf00-5d9690102b18
 title: PageOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a9963bf2ca7a2dd60be37c797a27c6ff09b1206
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 4f72f15997329c8013d23e02665f9c5566cf13cd7c659cdeb29b871324683160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732284"
 ---
 # <a name="pageoutputbin"></a>PageOutputBin
 

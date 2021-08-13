@@ -1,7 +1,7 @@
 ---
-description: Recupera il valore di una proprietà denominata per un oggetto chiave del provider SSL (Secure Sockets Layer Protocol).
+description: Recupera il valore di una proprietà denominata per un oggetto chiave del provider SECURE SOCKETS LAYER Protocol (SSL).
 ms.assetid: 01a7e82a-3888-4f96-85a2-e07811f1895e
-title: Funzione SslGetKeyProperty (Sslprovider. h)
+title: Funzione SslGetKeyProperty (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 42952b76bfb46eeeb31b9f76b1f677e7b3b8e3e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b86f8a2e76573122bcfcf809d5301bc6bf70690467527f4dc69a5ec12419f56b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906119"
 ---
-# <a name="sslgetkeyproperty-function"></a>SslGetKeyProperty (funzione)
+# <a name="sslgetkeyproperty-function"></a>Funzione SslGetKeyProperty
 
-La funzione **SslGetKeyProperty** Recupera il valore di una proprietà denominata per un oggetto chiave del provider SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslGetKeyProperty** recupera il valore di una proprietà denominata per un oggetto chiave del provider [*Secure Sockets Layer*](/windows/desktop/SecGloss/s-gly) protocol (SSL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,35 +43,35 @@ SECURITY_STATUS WINAPI SslGetKeyProperty(
 
 <dl> <dt>
 
-*HKEY* \[ in\]
+*hKey* \[ Pollici\]
 </dt> <dd>
 
 Handle del provider SSL.
 
 </dd> <dt>
 
-*pszProperty* \[ in\]
+*pszProperty* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che contiene il nome della proprietà da recuperare. Può essere uno degli [**identificatori di proprietà di archiviazione chiavi**](key-storage-property-identifiers.md) predefiniti o un identificatore di proprietà personalizzato.
+Puntatore a una stringa Unicode con terminazione Null contenente il nome della proprietà da recuperare. Può trattarsi di uno degli identificatori di proprietà Archiviazione chiave [**predefiniti**](key-storage-property-identifiers.md) o di un identificatore di proprietà personalizzato.
 
 </dd> <dt>
 
-*ppbOutput* \[ out\]
+*ppbOutput* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che riceve il valore della proprietà. Il chiamante della funzione deve liberare questo buffer chiamando la funzione [**SslFreeBuffer**](sslfreebuffer.md) .
+Puntatore a un buffer che riceve il valore della proprietà. Il chiamante della funzione deve liberare questo buffer chiamando la [**funzione SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
-*pcbOutput* \[ out\]
+*pcbOutput* \[ Cambio\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer *pbOutput* .
+Dimensione, in byte, del buffer *pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -84,14 +84,14 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Uno degli handle forniti non è valido.<br/>    |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Uno dei parametri specificati non è valido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | Uno degli handle forniti non è valido.<br/>    |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Uno dei parametri forniti non è valido.<br/> |
 
 
 
@@ -103,9 +103,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

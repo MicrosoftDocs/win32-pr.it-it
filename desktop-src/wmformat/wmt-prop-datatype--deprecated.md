@@ -1,9 +1,9 @@
 ---
-title: WMT_PROP_DATATYPE (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | WMT_PROP_DATATYPE (Wmcodecdsp. h)
+title: WMT_PROP_DATATYPE (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | WMT_PROP_DATATYPE (Wmcodecdsp.h)
 ms.assetid: d86cbadd-16da-448d-bda9-db1219db3cf9
 keywords:
-- WMT_PROP_DATATYPE formato Windows Media
+- WMT_PROP_DATATYPE windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d33ef165584b75d1a1129fb64bcb7e266545de7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6d907b6f0df9ff8eb5a5e59e470b28d5b9682ec97fc37a32ab21b13f0eca6d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697823"
 ---
-# <a name="wmt_prop_datatype"></a>tipo di dati \_ prop WMT \_
+# <a name="wmt_prop_datatype"></a>WMT \_ PROP \_ DATATYPE
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

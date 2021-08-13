@@ -1,19 +1,19 @@
 ---
-description: Sebbene sia possibile specificare qualsiasi colore per una penna durante la creazione, il sistema usa solo i colori disponibili nel dispositivo.
+description: Anche se è possibile specificare qualsiasi colore per una penna durante la creazione, il sistema usa solo i colori disponibili nel dispositivo.
 ms.assetid: 2ea32786-f769-4096-8f60-f924c83ca9c8
-title: Creazione di penne colorate e pennelli
+title: Creazione di penne e pennelli colorati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15c1678ffb2faf91ef49834471a8124998910e23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e487338e967f5981eaa28c2f90981f60d7e094df58317fb1af98a447622a4631
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119452261"
 ---
-# <a name="creating-colored-pens-and-brushes"></a>Creazione di penne colorate e pennelli
+# <a name="creating-colored-pens-and-brushes"></a>Creazione di penne e pennelli colorati
 
-Sebbene sia possibile specificare qualsiasi colore per una penna durante la creazione, il sistema usa solo i colori disponibili nel dispositivo. Ciò significa che il sistema usa il colore corrispondente più vicino quando realizza la penna per il disegno. Quando si creano i pennelli, il sistema genera un colore dithered se si specifica un colore non supportato dal dispositivo. In entrambi i casi, è possibile usare la macro [**RGB**](/windows/desktop/api/Wingdi/nf-wingdi-rgb) per specificare un colore durante la creazione di una penna o di un pennello.
+Anche se è possibile specificare qualsiasi colore per una penna durante la creazione, il sistema usa solo i colori disponibili nel dispositivo. Ciò significa che il sistema usa il colore corrispondente più vicino quando si rende conto della penna per il disegno. Quando si creano pennelli, il sistema genera un colore con dithering se si specifica un colore che il dispositivo non supporta. In entrambi i casi, è possibile usare la macro [**RGB**](/windows/desktop/api/Wingdi/nf-wingdi-rgb) per specificare un colore quando si crea una penna o un pennello.
 
 
 ```C++
