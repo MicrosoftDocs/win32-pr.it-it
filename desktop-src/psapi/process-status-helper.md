@@ -1,32 +1,32 @@
 ---
-title: API stato processo
-description: Ottenere informazioni su processi, moduli (file eseguibili o dll) e driver di dispositivo. Raccogliere i dati di utilizzo della memoria. Eseguire snapshot della quantità di memoria mappata fisicamente al contesto del processo.
+title: API Stato processo
+description: Ottenere informazioni su processi, moduli (file eseguibili o DLL) e driver di dispositivo. Raccogliere i dati sull'utilizzo della memoria. Creare snapshot della quantità di memoria fisicamente mappata al contesto del processo.
 ms.assetid: 512c3f0f-b1b5-43a0-9460-eb668315d6f4
 keywords:
-- API stato processo
-- Helper stato processo
+- API di stato del processo
+- helper dello stato del processo
 - PSAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6a2234ee53acda22df6b6be6267815ba68090be
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f7ed79024c4e6a62a665969cbce6d113a23a24d9f9ea49d1efe9b07aea59c089
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462925"
 ---
-# <a name="process-status-api"></a>API stato processo
+# <a name="process-status-api"></a>API Stato processo
 
-Lo stato del processo Application Programming Interface (PSAPI) è una libreria helper che consente di ottenere più facilmente informazioni sui processi e sui driver di dispositivo. Per altre informazioni, vedere i seguenti argomenti:
+L'interfaccia PSAPI (Process Status Application Programming Interface) è una libreria helper che semplifica l'ottenimento di informazioni sui processi e sui driver di dispositivo. Per altre informazioni, vedere i seguenti argomenti:
 
 -   [Informazioni su PSAPI](about-psapi.md)
 -   [Uso di PSAPI](using-psapi.md)
--   [Riferimento a PSAPI](psapi-reference.md)
+-   [Informazioni di riferimento su PSAPI](psapi-reference.md)
 
 Queste funzioni sono disponibili in Psapi.dll.
 
-Le stesse informazioni sono disponibili a livello generale tramite i dati sulle prestazioni nel registro di sistema. Per altre informazioni, vedere [i contatori delle prestazioni](/windows/desktop/PerfCtrs/performance-counters-portal).
+Le stesse informazioni sono disponibili a livello generale tramite i dati sulle prestazioni nel Registro di sistema. Per altre informazioni, vedere [i contatori delle prestazioni](/windows/desktop/PerfCtrs/performance-counters-portal).
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_RECONVERSION (RichEdit. h)
-description: Richiama la finestra di dialogo di riconversione input Method Editor (IME).
+title: EM_RECONVERSION messaggio (Richedit.h)
+description: Richiama la finestra di dialogo di riconversione IME (Input Method Editor).
 ms.assetid: 1234905f-cbf2-42a3-b14a-5ade25ad9d75
 keywords:
-- Controlli di Windows Message EM_RECONVERSION
+- EM_RECONVERSION dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25302515ec3cde7905d8164d8d7872431e33d581
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0f0d567298a350a840af801ea712fce76ee81e43581d86c8df5c71d64805341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412757"
 ---
-# <a name="em_reconversion-message"></a>\_Messaggio di riconversione em
+# <a name="em_reconversion-message"></a>MESSAGGIO \_ RECONVERSION EM
 
-Richiama la finestra di dialogo di riconversione input Method Editor (IME).
+Richiama la finestra di dialogo di riconversione IME (Input Method Editor).
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Richiama la finestra di dialogo di riconversione input Method Editor (IME).
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Questo messaggio restituisce sempre zero.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Componente ridistribuibile<br/>          | Modifica avanzata 3,0<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Questo messaggio restituisce sempre zero.
 
 <dl> <dt>
 
-[**\_GETLANGOPTIONS em**](em-getlangoptions.md)
+[**EM \_ GETLANGOPTIONS**](em-getlangoptions.md)
 </dt> </dl>
 
  

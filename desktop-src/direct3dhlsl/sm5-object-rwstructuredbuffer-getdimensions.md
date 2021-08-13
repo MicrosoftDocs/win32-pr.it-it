@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWStructuredBuffer:: GetDimensions'
-description: 'Ottiene le dimensioni della risorsa. | Funzione RWStructuredBuffer:: GetDimensions'
+title: Funzione RWStructuredBuffer::GetDimensions
+description: Ottiene le dimensioni della risorsa. | Funzione RWStructuredBuffer::GetDimensions
 ms.assetid: 842b3d21-2e2b-4906-93ee-0252b2e8cf85
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0e3868f33e372472999c29bffdd8e12bc8ef09b7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 760a546d7d60afbb41438416a9602ab55981834acd9969bc535c9a82df6e5e50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118789927"
 ---
-# <a name="rwstructuredbuffergetdimensions-function"></a>Funzione RWStructuredBuffer:: GetDimensions
+# <a name="rwstructuredbuffergetdimensions-function"></a>Funzione RWStructuredBuffer::GetDimensions
 
 Ottiene le dimensioni della risorsa.
 
@@ -37,7 +37,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*numStructs* \[ out\]
+*NumStructs* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ Numero di strutture nella risorsa.
 
 </dd> <dt>
 
-*stride* \[ out\]
+*stride* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -65,7 +65,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -80,7 +80,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWStructuredBuffer](sm5-object-rwstructuredbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

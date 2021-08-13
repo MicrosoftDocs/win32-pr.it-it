@@ -1,7 +1,7 @@
 ---
-description: Definisce la funzione di callback&\# 8212, implementata nell'app&\# 8212; specificata per la funzione WFDStartDisplaySink.
+description: Definisce la funzione di callback&\# 8212; implementata nell'app&8212; specificata per la funzione \# WFDStartDisplaySink.
 ms.assetid: 0D4C00FD-4ED6-4F0F-BB72-0A1FCC05DB37
-title: Funzione di callback WFD_DISPLAY_SINK_NOTIFICATION_CALLBACK (Wfdsink. h)
+title: WFD_DISPLAY_SINK_NOTIFICATION_CALLBACK di callback (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - wfdsink.h
-ms.openlocfilehash: c576f88a5b7f97484647c4c06f44522a5c3c379f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7066f45b714c28b53747d0d0f1851bd94ac2ac902e5b4adba1d0746e8328b3b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619976"
 ---
-# <a name="wfd_display_sink_notification_callback-callback-function"></a>Visualizzazione della funzione di callback di callback di \_ \_ \_ notifica sink \_
+# <a name="wfd_display_sink_notification_callback-callback-function"></a>Funzione di \_ callback WFD DISPLAY SINK NOTIFICATION \_ \_ \_ CALLBACK
 
-La funzione di **\_ \_ \_ \_ richiamata della notifica di sink di visualizzazione della direttiva GMA** definisce la funzione di callback, che viene implementata nell'app, specificata per la funzione [**WFDStartDisplaySink**](wfdstartdisplaysink.md) .
+La **funzione \_ WFD DISPLAY SINK NOTIFICATION \_ \_ \_ CALLBACK** definisce la funzione di callback, implementata nell'app, specificata per la [**funzione WFDStartDisplaySink.**](wfdstartdisplaysink.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,17 +48,17 @@ Puntatore di contesto facoltativo passato alla funzione di callback.
 
 </dd> <dt>
 
-*pNotification* \[ in\]
+*pNotification* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a uno struct che contiene i dati sulla notifica del sink di visualizzazione.
+Puntatore a uno struct contenente i dati relativi alla notifica del sink di visualizzazione.
 
 </dd> <dt>
 
 *pNotificationResult* \[ in, out, facoltativo\]
 </dt> <dd>
 
-Puntatore a uno struct che contiene i dati che l'app può impostare facoltativamente per indicare il risultato dell'elaborazione della notifica del sink di visualizzazione.
+Puntatore a uno struct contenente dati che l'app può facoltativamente impostare per indicare il risultato dell'elaborazione della notifica del sink di visualizzazione.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ Puntatore a uno struct che contiene i dati che l'app può impostare facoltativam
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl> |
 
 
 

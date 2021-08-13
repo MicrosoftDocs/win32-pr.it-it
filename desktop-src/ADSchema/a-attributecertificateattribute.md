@@ -1,10 +1,10 @@
 ---
-title: attributo attributeCertificateAttribute
-description: Identità e set di attributi firmati digitalmente o certificati. Utilizzato per associare le informazioni di autorizzazione a un'identità.
+title: Attributo attributeCertificateAttribute
+description: Un'identità con firma digitale o certificata e un set di attributi. Usato per associare le informazioni di autorizzazione a un'identità.
 ms.assetid: 46519f26-01db-4f8e-936d-9255c72cd30c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo attributeCertificateAttribute
+- Attributo AttributeCertificateAttribute Schema DI ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51005f0c919825a4496437661783857c927b7c6d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1515b8b318df32fb16018f5d2108db7c74288d80761d9ece76017becdd1369f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688108"
 ---
-# <a name="attributecertificateattribute-attribute"></a>attributo attributeCertificateAttribute
+# <a name="attributecertificateattribute-attribute"></a>Attributo attributeCertificateAttribute
 
-Identità e set di attributi firmati digitalmente o certificati. Utilizzato per associare le informazioni di autorizzazione a un'identità.
+Un'identità con firma digitale o certificata e un set di attributi. Usato per associare le informazioni di autorizzazione a un'identità.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | attributeCertificateAttribute                         |
-| LDAP-Display-Name | attributeCertificateAttribute                         |
+| Ldap-Display-Name | attributeCertificateAttribute                         |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 2.5.4.58                                              |
-| System-ID-GUID    | fa4693bb-7bc2-4cb9-81a8-c99c43b7905e                  |
+| System-Id-Guid    | fa4693bb-7bc2-4cb9-81a8-c99c43b7905e                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -56,15 +56,15 @@ Identità e set di attributi firmati digitalmente o certificati. Utilizzato per 
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Identità e set di attributi firmati digitalmente o certificati. Utilizzato per 
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Identità e set di attributi firmati digitalmente o certificati. Utilizzato per 
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Identità e set di attributi firmati digitalmente o certificati. Utilizzato per 
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Identità e set di attributi firmati digitalmente o certificati. Utilizzato per 
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> |
 
 
 

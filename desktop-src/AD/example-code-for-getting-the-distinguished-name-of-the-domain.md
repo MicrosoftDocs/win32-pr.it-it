@@ -1,24 +1,24 @@
 ---
 title: Codice di esempio per ottenere il nome distinto del dominio
-description: In questo argomento è incluso un esempio di codice che ottiene il nome distinto del dominio di cui è membro il computer locale utilizzando un'associazione senza server.
+description: In questo argomento è incluso un esempio di codice che ottiene il nome distinto del dominio di cui il computer locale è membro utilizzando l'associazione serverless.
 ms.assetid: 2b478c55-4683-48cd-bee9-385eea38d01d
 ms.tgt_platform: multiple
 keywords:
-- Active Directory esempi Active Directory, ottenere il nome distinto del dominio
+- Active Directory è un esempio di Active Directory, ottenendo il nome distinto del dominio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4badd8cd356ce5adfb20470a969e6f7444c010a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 62ebf027e6c95915e34b70f942fdbf342b3f49b9695d7885c442f015d2a74077
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693645"
 ---
 # <a name="example-code-for-getting-the-distinguished-name-of-the-domain"></a>Codice di esempio per ottenere il nome distinto del dominio
 
-In questo argomento è incluso un esempio di codice che ottiene il nome distinto del dominio di cui è membro il computer locale utilizzando un'associazione senza server.
+In questo argomento è incluso un esempio di codice che ottiene il nome distinto del dominio di cui il computer locale è membro utilizzando l'associazione serverless.
 
-Nell'esempio di codice Visual Basic seguente viene ottenuto il nome distinto del dominio di cui è membro il computer locale utilizzando un'associazione senza server.
+Nell'Visual Basic di codice seguente viene ottiene il nome distinto del dominio di cui il computer locale è membro utilizzando l'associazione serverless.
 
 
 ```VB
@@ -31,7 +31,7 @@ DistinguishedName = "LDAP://" & rootDSE.Get("defaultNamingContext")
 
 
 
-Nell'esempio di codice C# riportato di seguito viene ottenuto il nome distinto del dominio di cui è membro il computer locale utilizzando un'associazione senza server.
+L'esempio di codice C# seguente ottiene il nome distinto del dominio di cui il computer locale è membro usando l'associazione serverless.
 
 
 ```CSharp
@@ -41,7 +41,7 @@ Object distinguishedName = RootDirEntry.Properties["defaultNamingContext"].Value
 
 
 
-Nell'esempio di codice C/C++ riportato di seguito viene ottenuto il nome distinto del dominio di cui è membro il computer locale utilizzando un'associazione senza server.
+L'esempio di codice C/C++ seguente ottiene il nome distinto del dominio di cui il computer locale è membro usando l'associazione serverless.
 
 
 ```C++
@@ -73,9 +73,9 @@ if(SUCCEEDED(hr))
 
 
 
- 
+ 
 
- 
+ 
 
 
 

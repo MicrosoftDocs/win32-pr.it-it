@@ -1,7 +1,7 @@
 ---
-description: Restituisce il tipo di dispositivo hardware rappresentato dall'oggetto Tablet, ad esempio il mouse, la penna o il tocco.
+description: Restituisce il tipo di dispositivo hardware rappresentato dall'oggetto tablet, ad esempio mouse, penna o tocco.
 ms.assetid: 693cb45f-958d-42e2-a3ee-a7cfcc72e5c3
-title: 'Metodo ITablet2:: GetDeviceKind'
+title: Metodo ITablet2::GetDeviceKind
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: f20b1fe6a5a48196f6b3adc5982f2596d93f0863
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1db540b1097428e20104d95a8a7a6726566c7cd8939a11ec4041c1aa9475afd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118450528"
 ---
-# <a name="itablet2getdevicekind-method"></a>Metodo ITablet2:: GetDeviceKind
+# <a name="itablet2getdevicekind-method"></a>Metodo ITablet2::GetDeviceKind
 
-Restituisce il tipo di dispositivo hardware rappresentato dall'oggetto Tablet, ad esempio il mouse, la penna o il tocco.
+Restituisce il tipo di dispositivo hardware rappresentato dall'oggetto tablet, ad esempio mouse, penna o tocco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT GetDeviceKind(
 
 <dl> <dt>
 
-*pKind* \[ out\]
+*pKind* \[ Cambio\]
 </dt> <dd>
 
-Valore di enumerazione che indica il tipo di Tablet, ad esempio il mouse, la penna o il tocco.
+Valore di enumerazione che indica il tipo di tablet, ad esempio mouse, penna o tocco.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -72,7 +72,7 @@ Questa interfaccia e questo metodo sono stati introdotti in Windows Vista.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -85,7 +85,7 @@ Questa interfaccia e questo metodo sono stati introdotti in Windows Vista.
 [**Interfaccia ITablet2**](itablet2.md)
 </dt> <dt>
 
-[**Enumerazione del tipo di \_ dispositivo Tablet \_**](tablet-device-kind.md)
+[**Enumerazione TABLET \_ DEVICE \_ KIND**](tablet-device-kind.md)
 </dt> <dt>
 
 [**Interfaccia ITablet**](itablet.md)

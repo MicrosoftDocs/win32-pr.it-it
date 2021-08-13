@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-AZ-biz-Rule
+title: Attributo ms-DS-Az-Biz-Rule
 description: Testo dello script che implementa la regola business.
 ms.assetid: 884513ae-9600-49b0-a371-6f77b84b54f9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-AZ-biz-Rule
-- attributo msDS-AzBizRule-schema AD
+- Attributo MS-DS-Az-Biz-Rule Schema di ACTIVE Directory
+- Schema AD dell'attributo msDS-AzBizRule
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 571ab48c9742ffb93015c433685c01cb3a9666d3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 215afa79e47a1ddf508b3d9d7a3d646c3157bafec4716eac31fae6b4b733058e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685371"
 ---
-# <a name="ms-ds-az-biz-rule-attribute"></a>attributo ms-DS-AZ-biz-Rule
+# <a name="ms-ds-az-biz-rule-attribute"></a>Attributo ms-DS-Az-Biz-Rule
 
 Testo dello script che implementa la regola business.
 
@@ -29,13 +29,13 @@ Testo dello script che implementa la regola business.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-AZ-biz-Rule                           |
-| LDAP-Display-Name | msDS-AzBizRule                              |
+| CN                | ms-DS-Az-Biz-Rule                           |
+| Ldap-Display-Name | msDS-AzBizRule                              |
 | Dimensione              | 128 caratteri                              |
-| Privilegio aggiornamento  | Amministratore di AzRoles                               |
+| Aggiorna privilegio  | AzRoles admin                               |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1801                     |
-| System-ID-GUID    | 33d41ea8-c0c9-4c92-9494-f104878413fd        |
+| System-Id-Guid    | 33d41ea8-c0c9-4c92-9494-f104878413fd        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| A valore singolo       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 65536                                             |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| A valore singolo       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 65536                                             |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

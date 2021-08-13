@@ -1,7 +1,7 @@
 ---
-description: "Attributi (API di registrazione certificati): è possibile aggiungere attributi a una richiesta di certificato per fornire a un'autorità di certificazione (CA) informazioni aggiuntive che può usare durante la creazione e il rilascio di un certificato."
+description: "Attributi (API registrazione certificati): è possibile aggiungere attributi a una richiesta di certificato per fornire a un'autorità di certificazione (CA) informazioni aggiuntive che può usare durante la creazione e il rilascio di un certificato."
 ms.assetid: 6116e61e-3ec5-4992-90ab-e3c7ced291b6
-title: Attributi (API di registrazione certificati)
+title: Attributi (API registrazione certificati)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 93414156c7fa6e46fe80995d8d01eadc28796ec2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: aec93ec47a700902cb1275e25af6649e6988b76f7204b01487249e0130dd35b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903103"
 ---
-# <a name="attributes-certificate-enrollment-api"></a>Attributi (API di registrazione certificati)
+# <a name="attributes-certificate-enrollment-api"></a>Attributi (API registrazione certificati)
 
-È possibile aggiungere attributi a una richiesta di certificato per fornire a un'autorità di certificazione (CA) informazioni aggiuntive che può usare durante la creazione e il rilascio di un certificato. Ogni attributo è una [*struttura*](/windows/desktop/SecGloss/d-gly) ASN.1 [*(Abstract Syntax Notation One)*](/windows/desktop/SecGloss/a-gly) codificata Distinguished Encoding Rules (DER) che contiene un identificatore di oggetto (OID) e zero o più valori. Gli attributi vengono definiti usando le interfacce incluse nell'API di registrazione certificati. Gli argomenti seguenti illustrano gli attributi in modo più dettagliato:
+Gli attributi possono essere aggiunti a una richiesta di certificato per fornire a un'autorità di certificazione (CA) informazioni aggiuntive che può usare durante la creazione e il rilascio di un certificato. Ogni attributo è una struttura ASN.1 [](/windows/desktop/SecGloss/d-gly) [*(Abstract Syntax Notation One)*](/windows/desktop/SecGloss/a-gly) codificata Distinguished Encoding Rules (DER) che contiene un identificatore di oggetto (OID) e zero o più valori. Gli attributi vengono definiti usando le interfacce incluse nell'API Di registrazione certificati. Gli argomenti seguenti illustrano gli attributi in modo più dettagliato:
 
 -   [Attributi supportati](supported-attributes.md)
 -   [Architettura degli attributi](attribute-architecture.md)

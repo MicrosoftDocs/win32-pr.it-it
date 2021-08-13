@@ -1,11 +1,11 @@
 ---
 title: Metodo Disable della classe SystemRestore
-description: Disabilita il monitoraggio in un'unità specifica.
+description: Disabilita il monitoraggio in una determinata unità.
 ms.assetid: 2ad37dd4-7d80-4697-9dbb-abb329a34ff7
 keywords:
-- Disabilitare il ripristino del sistema del metodo
-- Disable System Restore Method, classe SystemRestore
-- SystemRestore classe di ripristino di sistema, Disable (metodo)
+- Disabilitare l'Ripristino configurazione di sistema
+- Disabilitare il Ripristino configurazione di sistema , classe SystemRestore
+- Classe SystemRestore Ripristino configurazione di sistema, metodo Disable
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19556833684aeab0cc126eff7aff0a258335c8e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41a05d53ee13e2f06c2f4765d2947f49a417ed798965406185619dfce207cf76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452922"
 ---
 # <a name="disable-method-of-the-systemrestore-class"></a>Metodo Disable della classe SystemRestore
 
-Disabilita il monitoraggio in un'unità specifica.
+Disabilita il monitoraggio in una determinata unità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ uint32 Disable(
 
 <dl> <dt>
 
-*Unità* \[ di in\]
+*Unità* \[ Pollici\]
 </dt> <dd>
 
-Unità da disabilitare. Il formato della stringa dell'unità deve essere "C: \\ ". Se questo parametro è l'unità di sistema o una stringa vuota (""), non vengono monitorate unità.
+Unità da disabilitato. La stringa di unità deve essere nel formato "C: \\ ". Se questo parametro è l'unità di sistema o una stringa vuota (""), non viene monitorata alcuna unità.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. In caso contrario, il metodo restituisce uno dei codici di errore COM definiti in WinError. h.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. In caso contrario, il metodo restituisce uno dei codici di errore COM definiti in WinError.h.
 
 ## <a name="examples"></a>Esempio
 
@@ -83,10 +83,10 @@ End If
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                       |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                         |
-| Spazio dei nomi<br/>                | \\Impostazioni predefinite radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Sr. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ Default<br/>                                                          |
+| MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 
 

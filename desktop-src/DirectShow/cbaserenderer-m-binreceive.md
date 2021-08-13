@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se il filtro sta elaborando una chiamata di ricezione.
+description: Flag che indica se il filtro sta elaborando una chiamata Receive.
 ms.assetid: 4b0d34c4-551a-4674-bda9-be67ed22d09b
-title: 'Membro CBaseRenderer:: m_bInReceive (Renbase. h)'
+title: Membro CBaseRenderer::m_bInReceive (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c5bcc3666200630575cacfdebac769f25545a077
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1059684d2c1905a7894294248f44f9ee97521d1e27ebc3be4a58d832603c642e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403063"
 ---
-# <a name="cbaserendererm_binreceive-member"></a>Membro bInReceive di CBaseRenderer:: m \_
+# <a name="cbaserendererm_binreceive-member"></a>Membro BInReceive CBaseRenderer::m \_
 
-Flag che indica se il filtro sta elaborando una chiamata di **ricezione** .
+Flag che indica se il filtro sta elaborando una **chiamata Receive.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bInReceive;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

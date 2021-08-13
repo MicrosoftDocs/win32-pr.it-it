@@ -1,10 +1,10 @@
 ---
-title: Attributo address-entry-display-Table
+title: Attributo Address-Entry-Display-Table
 description: Tabella di visualizzazione per una voce di indirizzo.
 ms.assetid: e563bf38-825b-43f9-b10e-29079bba3f93
 ms.tgt_platform: multiple
 keywords:
-- Address-entry-display-schema AD dell'attributo Table
+- Address-Entry-Display-Table attribute AD Schema
 - Schema AD dell'attributo addressEntryDisplayTable
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7de30cfdbd1cc5f8c179eda8282ff1c1ca48c15
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 22fe3835ba49ef72112f31f658441db22451037184f7ce13bdd5f9e07086d362
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688855"
 ---
-# <a name="address-entry-display-table-attribute"></a>Attributo address-entry-display-Table
+# <a name="address-entry-display-table-attribute"></a>Attributo Address-Entry-Display-Table
 
 Tabella di visualizzazione per una voce di indirizzo.
 
@@ -29,13 +29,13 @@ Tabella di visualizzazione per una voce di indirizzo.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Address-entry-display-Table                           |
-| LDAP-Display-Name | addressEntryDisplayTable                              |
+| CN                | Address-Entry-Display-Table                           |
+| Ldap-Display-Name | addressEntryDisplayTable                              |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.324                                |
-| System-ID-GUID    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
+| System-Id-Guid    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 

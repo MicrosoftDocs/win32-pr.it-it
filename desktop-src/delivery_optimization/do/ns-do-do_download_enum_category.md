@@ -1,8 +1,8 @@
 ---
-title: Struttura DO_DOWNLOAD_ENUM_CATEGORY
-description: "Usato da **IDOManager:: EnumDownloads** per filtrare l'enumerazione downloads in base al valore della proprietà specifica."
+title: DO_DOWNLOAD_ENUM_CATEGORY struttura
+description: Usato da **IDOManager::EnumDownloads** per filtrare l'enumerazione dei download in base al valore della proprietà specifica.
 keywords:
-- Struttura DO_DOWNLOAD_ENUM_CATEGORY
+- DO_DOWNLOAD_ENUM_CATEGORY struttura
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: a78c94cd9d8854453517976300e12a031f65b8cb
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 32bdc7ca9a84bfe87ff453d34c4ecff57a8dabf5f67b21cc0d54ba079efd1578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "106299301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543760"
 ---
-# <a name="do_download_enum_category-structure"></a>Struttura DO_DOWNLOAD_ENUM_CATEGORY
+# <a name="do_download_enum_category-structure"></a>DO_DOWNLOAD_ENUM_CATEGORY struttura
 
-La struttura **DO_DOWNLOAD_ENUM_CATEGORY** viene utilizzata da **IDOManager:: EnumDownloads** per filtrare l'enumerazione downloads in base al valore della proprietà specifica.
+La **DO_DOWNLOAD_ENUM_CATEGORY** viene usata da **IDOManager::EnumDownloads** per filtrare l'enumerazione dei download in base al valore della proprietà specifica.
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -53,6 +53,6 @@ Valore della proprietà.
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | Do. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, solo applicazioni Win32 versione 1809 \[\] |
+| **Intestazione** | Do.h |

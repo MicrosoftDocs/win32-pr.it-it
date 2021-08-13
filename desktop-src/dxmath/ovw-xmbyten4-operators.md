@@ -4,16 +4,16 @@ ms.assetid: 3083dd93-301d-4b57-8ad2-bfafc8576063
 title: Operatori XMBYTEN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc7876d1df41d22257dc09ccf66ece55be79050
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29bbe317aec4a1a9466666d89e3f177373fee82c9fc73bd61c6b8145544097ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501299"
 ---
 # <a name="xmbyten4-operators"></a>Operatori XMBYTEN4
 
-La struttura [**XMBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyten4) espone gli operatori seguenti.
+La [**struttura XMBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyten4) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,7 +26,7 @@ La struttura [**XMBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpac
 
 | Metodi                                               | Descrizione                                                                                                          |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmbyten4-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza di `XMBYTEN4` all'istanza corrente di `XMBYTEN4` . <br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmbyten4-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMBYTEN4` di all'istanza corrente di `XMBYTEN4` . <br/> |
 
 
 

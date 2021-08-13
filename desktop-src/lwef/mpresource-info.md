@@ -1,10 +1,10 @@
 ---
-title: Struttura MPRESOURCE_INFO (MpClient. h)
+title: MPRESOURCE_INFO struttura (MpClient.h)
 description: Struttura delle informazioni sulle risorse.
 ms.assetid: 2D645722-3DE3-4748-B532-3E522464EA1E
 keywords:
-- Struttura MPRESOURCE_INFO le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPRESOURCE_INFO
+- MPRESOURCE_INFO struttura Legacy Windows Environment Features
+- PMPRESOURCE_INFO puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dcac6552e0a0060df1bd6a0464fbb8f610395131
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c399beceba4551ba3269e86f5f3c30c6967f31b4dbc5f303225e8cbfc1667df4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747424"
 ---
-# <a name="mpresource_info-structure"></a>Struttura delle informazioni di MPRESOURCE \_
+# <a name="mpresource_info-structure"></a>Struttura MPRESOURCE \_ INFO
 
 Struttura delle informazioni sulle risorse.
 
@@ -46,43 +46,43 @@ typedef struct tagMPRESOURCE_INFO {
 **Schema**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Identificatore dello schema di risorsa, ad esempio "file" o "dir".
+Identificatore dello schema di risorse, ad esempio "file" o "dir".
 
 </dd> <dt>
 
 **Percorso**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Percorso assoluto della risorsa, in base allo **schema**.
+Percorso assoluto della risorsa, in base a **Schema**.
 
 </dd> <dt>
 
 **Classe**
 </dt> <dd>
 
-Tipo: **\_ classe MPRESOURCE**
+Tipo: **CLASSE \_ MPRESOURCE**
 
 </dd> <dd>
 
-Questo campo viene impostato quando la risorsa viene identificata come parte della minaccia. Specifica la classe di risorse, principalmente concreta rispetto alla latenza. Può essere una combinazione di questi valori possibili:
+Questo campo viene impostato quando la risorsa viene identificata come parte della minaccia. Specifica la classe di risorse, principalmente concreta e latente. Può essere una combinazione di questi valori possibili:
 
 
 
 | Valore                                                                                                                                                                                                                                                                        | Significato                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <span id="MP_RESOURCE_CLASS_UNKNOWN"></span><span id="mp_resource_class_unknown"></span><dl> <dt>**MP \_ Classe di risorse \_ \_ sconosciuta**</dt> <dt>0x0000</dt> </dl>              |                                                                       |
-| <span id="MP_RESOURCE_CLASS_CONCRETE"></span><span id="mp_resource_class_concrete"></span><dl> <dt>**MP \_ 0x0001 \_ \_ concrete della classe di risorse**</dt> <dt></dt> </dl>           | Si escludono a vicenda con la **\_ classe di risorse MP \_ \_ latente**.<br/>   |
-| <span id="MP_RESOURCE_CLASS_LATENT"></span><span id="mp_resource_class_latent"></span><dl> <dt>**MP \_ Classe di risorse \_ \_ latenza**</dt> <dt>0x0002</dt> </dl>                 | Si escludono a vicenda con la **\_ classe di risorse MP \_ \_ concreta**.<br/> |
-| <span id="MP_RESOURCE_CLASS_SAMPLE_FILE"></span><span id="mp_resource_class_sample_file"></span><dl> <dt>**MP \_ Classe di risorse \_ \_ \_ file di esempio**</dt> <dt>0x0004</dt> </dl> |                                                                       |
-| <span id="MP_RESOURCE_CLASS_SHARED"></span><span id="mp_resource_class_shared"></span><dl> <dt>**MP \_ Classe di risorse \_ \_ Shared**</dt> <dt>0x0100</dt> </dl>                 |                                                                       |
+| <span id="MP_RESOURCE_CLASS_UNKNOWN"></span><span id="mp_resource_class_unknown"></span><dl> <dt>**MP \_ CLASSE \_ DI RISORSE \_ UNKNOWN**</dt> <dt>0X0000</dt> </dl>              |                                                                       |
+| <span id="MP_RESOURCE_CLASS_CONCRETE"></span><span id="mp_resource_class_concrete"></span><dl> <dt>**MP \_ CLASSE \_ RESOURCE \_ CONCRETE**</dt> <dt>0x0001</dt> </dl>           | Si escludono a vicenda **con MP RESOURCE CLASS \_ \_ \_ LATENT**.<br/>   |
+| <span id="MP_RESOURCE_CLASS_LATENT"></span><span id="mp_resource_class_latent"></span><dl> <dt>**MP \_ CLASSE \_ \_ DI RISORSE LATENT**</dt> <dt>0x0002</dt> </dl>                 | Si escludono a vicenda **con MP RESOURCE CLASS \_ \_ \_ CONCRETE**.<br/> |
+| <span id="MP_RESOURCE_CLASS_SAMPLE_FILE"></span><span id="mp_resource_class_sample_file"></span><dl> <dt>**MP \_ FILE DI ESEMPIO DELLA CLASSE \_ \_ \_ DI**</dt> <dt>RISORSE 0X0004</dt> </dl> |                                                                       |
+| <span id="MP_RESOURCE_CLASS_SHARED"></span><span id="mp_resource_class_shared"></span><dl> <dt>**MP \_ CLASSE \_ RESOURCE \_ SHARED**</dt> <dt>0x0100</dt> </dl>                 |                                                                       |
 
 
 
@@ -96,9 +96,9 @@ Questo campo viene impostato quando la risorsa viene identificata come parte del
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

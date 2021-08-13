@@ -4,12 +4,12 @@ ms.assetid: f60b7465-bca4-4c7b-9caf-9cda1bf6eeeb
 title: System.ItemFolderPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbee8a45eb6ea557e99c854464c7dc09ec5613d2
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: bb87cadc4f4f132870ea51af1bba55c992c09d3eb5a90f446a3d92810b5941d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726485"
 ---
 # <a name="systemitemfolderpathdisplaynarrow"></a>System.ItemFolderPathDisplayNarrow
 
@@ -35,7 +35,7 @@ propertyDescription
 
 I valori PKEY sono definiti in Propkey.h.
 
-Il formato della stringa deve essere personalizzato in modo che il nome della cartella venga specificato per primo, per ottimizzare una colonna di visualizzazione ridotta. Se la cartella è una cartella di file, il valore include tutti i nomi localizzati. Se [System.ItemFolderPathDisplay è](./props-system-itemfolderpathdisplay.md) VT \_ EMPTY, anche questa proprietà deve essere vuota. In caso contrario, deve essere derivato in modo appropriato dall'origine dati da System.ItemFolderPathDisplay.
+Il formato della stringa deve essere personalizzato in modo che il nome della cartella venga specificato per primo, per ottimizzare per una colonna di visualizzazione ridotta. Se la cartella è una cartella di file, il valore include tutti i nomi localizzati. Se [System.ItemFolderPathDisplay è](./props-system-itemfolderpathdisplay.md) VT \_ EMPTY, anche questa proprietà deve essere vuota. In caso contrario, deve essere derivato in modo appropriato dall'origine dati da System.ItemFolderPathDisplay.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

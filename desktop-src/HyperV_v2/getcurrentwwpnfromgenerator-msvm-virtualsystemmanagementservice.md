@@ -1,7 +1,7 @@
 ---
-description: Offre la possibilità di visualizzare in anteprima il nome della porta universale (WWPN) corrente senza il WWPN riservato.
+description: Consente di visualizzare in anteprima il nome wwpn (World Wide Port Name) corrente senza che il WWPN sia riservato.
 ms.assetid: 7fc02099-744e-4a56-ae4b-1f5fd6a1eb45
-title: Metodo GetCurrentWwpnFromGenerator della classe Msvm_VirtualSystemManagementService
+title: Metodo GetCurrentWwpnFromGenerator della Msvm_VirtualSystemManagementService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 88e1fd8f19b4a0542744cbfff7058ed7e69a421d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 196ad781075128eab42c6daabf7d6ccd6906df1e67e348ebea0d9418cbb08c24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393283"
 ---
-# <a name="getcurrentwwpnfromgenerator-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo GetCurrentWwpnFromGenerator della classe MSVM \_ VirtualSystemManagementService
+# <a name="getcurrentwwpnfromgenerator-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo GetCurrentWwpnFromGenerator della classe Msvm \_ VirtualSystemManagementService
 
-Offre la possibilità di visualizzare in anteprima il nome della porta universale (WWPN) corrente senza il WWPN riservato. WWPN viene generato dall'interno dell'intervallo preconfigurato definito dalle proprietà **MinimumWWPNAddress** e **MaximumWWPNAddress** della classe [**MSVM \_ VirtualSystemManagementServiceSettingData**](msvm-virtualsystemmanagementservicesettingdata.md) . Se l'intervallo definito da queste proprietà viene esaurito, il WWPN generato avrà la voce non valida "0000000000000000" e il valore restituito indicherà l'esito positivo (0).
+Consente di visualizzare in anteprima il nome wwpn (World Wide Port Name) corrente senza che il WWPN sia riservato. Il WWPN viene generato dall'interno dell'intervallo preconfigurato definito dalle proprietà **MinimumWWPNAddress** e **MaximumWWPNAddress** della [**classe Msvm \_ VirtualSystemManagementServiceSettingData.**](msvm-virtualsystemmanagementservicesettingdata.md) Se l'intervallo definito da queste proprietà è esaurito, il WWPN generato avrà la voce non valida "000000000000000" e il valore restituito indicherà l'esito positivo (0).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ uint32 GetCurrentWwpnFromGenerator(
 
 <dl> <dt>
 
-*CurrentWwpn* \[ out\]
+*CurrentWwpn* \[ Cambio\]
 </dt> <dd>
 
-Stringa che avrà il valore dell'oggetto WWPN corrente usato dal generatore di WWPN. Si tratta dello stesso valore che sarà il primo WWPN generato dalla chiamata successiva a [**GenerateWwpn**](generatewwpn-msvm-virtualsystemmanagementservice.md). Verrà formattato in formato stringa come "01:23:45:67:89: AB: CD: EF".
+Stringa che avrà il valore del WWPN corrente usato dal generatore WWPN. Questo sarà lo stesso valore che sarà il primo WWPN generato dalla chiamata successiva a [**GenerateWwpn**](generatewwpn-msvm-virtualsystemmanagementservice.md). Verrà formattato in formato stringa come "01:23:45:67:89:ab:cd:ef".
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -64,25 +64,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -94,10 +94,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -106,7 +106,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

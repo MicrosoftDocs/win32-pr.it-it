@@ -1,6 +1,6 @@
 ---
 title: texld - ps_1_4
-description: Carica il registro di destinazione con dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate di trama. La trama campionata è la trama associata al numero di registro di destinazione.
+description: Carica il registro di destinazione con i dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate della trama. La trama campionata è la trama associata al numero di registro di destinazione.
 ms.assetid: 1970aed4-4da7-40a1-960d-fba4dfd8c433
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d956d9176a6356dc3837ee4f4d13b5bb700dda98
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: dc940379c8910b45d3dcb476054cf4362a6a96bc2c5df784c8ed5ca815a093fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505810"
 ---
 # <a name="texld---ps_1_4"></a>texld - ps \_ 1 \_ 4
 
-Carica il registro di destinazione con dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate di trama. La trama campionata è la trama associata al numero di registro di destinazione.
+Carica il registro di destinazione con i dati di colore (RGBA) campionati usando il contenuto del registro di origine come coordinate della trama. La trama campionata è la trama associata al numero di registro di destinazione.
 
 
 
@@ -49,19 +49,19 @@ Per altre informazioni sui registri, vedere [ps \_ 1 \_ 1 \_ \_ ps \_ 1 \_ 2 ps 
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione consente di eseguire il campionamento della trama nella fase di trama associata al numero di registro di destinazione. La trama viene campionata usando i dati delle coordinate della trama del registro di origine.
+Questa istruzione campio la trama nella fase della trama associata al numero di registro di destinazione. La trama viene campionata usando i dati delle coordinate della trama del registro di origine.
 
-La sintassi per le istruzioni texld e texcrd espone il supporto per una divisione proiettativa con un modificatore del registro trame. Per pixel shader versione 1.4, il flag di trasformazione della trama PROIETTATA D3DTTFF \_ viene sempre ignorato.
+La sintassi per le istruzioni texld e texcrd espone il supporto per una divisione proiettata con un modificatore di registro texture. Per pixel shader versione 1.4, il flag di trasformazione della trama D3DTTFF \_ PROJECTED viene sempre ignorato.
 
 Regole per l'uso di texld:
 
-1.  Lo stesso modificatore .xyz o .xyw deve essere applicato a ogni lettura di un singolo registro t(n) all'interno di istruzioni texcrd o texld. Se .xyw viene usato nelle operazioni di lettura del registro t(n), questa operazione può essere mista ad altre operazioni di lettura dello stesso registro t(n) usando .xyw \_ dw.
-2.  Il modificatore dz source è valido solo in texld con registro di origine \_ r(n) (solo fase 2).
+1.  Lo stesso modificatore .xyz o .xyw deve essere applicato a ogni lettura di un singolo registro t(n) all'interno di entrambe le istruzioni texcrd o texld. Se .xyw viene usato nelle operazioni di lettura del registro t(n), questo può essere misto con altre operazioni di lettura dello stesso registro t(n) usando .xyw \_ dw.
+2.  Il modificatore dz source è valido solo in texld con il registro di origine \_ r(n) (solo fase 2).
 3.  Il \_ modificatore dz source può essere usato non più di due volte per ogni shader.
 
 
 
-| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texld                 |      |      |      | x    |      |      |       |      |       |
 
@@ -71,7 +71,7 @@ Regole per l'uso di texld:
 
 ## <a name="examples"></a>Esempio
 
-L'istruzione texld offre un certo controllo sui componenti dei dati delle coordinate della trama di origine. Il set completo di sintassi consentita per texld segue e include tutti i modificatori del registro di origine validi, i selettori e le combinazioni di maschere di scrittura.
+L'istruzione texld offre un certo controllo sui componenti dei dati delle coordinate della trama di origine da usare. Il set completo di sintassi consentita per texld segue e include tutti i modificatori del registro di origine validi, i selettori e le combinazioni di maschera di scrittura.
 
 
 ```

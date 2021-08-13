@@ -4,12 +4,12 @@ ms.assetid: c3f05482-138c-4d95-9b76-a9715227961f
 title: player.h
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38c9d1c564edefb1683705d9ef8c4f009b061a7c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 817e5f1fb4f2aef18076557e5b94360e886eb78eda2862ab9b6540374a0c15ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118239306"
 ---
 # <a name="playerh"></a>player.h
 

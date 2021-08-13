@@ -1,19 +1,19 @@
 ---
-title: Metodo Stop (funzionalità legacy dell'ambiente Windows)
+title: Metodo Stop (funzionalità dell Windows legacy)
 description: Metodo Stop
 ms.assetid: 68372f72-db9c-447c-a3e4-488940c730d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20192634c197559ca54bb8af3d8a29f37beb53e2
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 572a93db5697aaae0dcfed6b45a834323c106bba447d2d9a8e94109f788af25c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "106300856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745963"
 ---
-# <a name="stop-method-legacy-windows-environment-features"></a>Metodo Stop (funzionalità legacy dell'ambiente Windows)
+# <a name="stop-method-legacy-windows-environment-features"></a>Metodo Stop (funzionalità dell Windows legacy)
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,13 +27,13 @@ Arresta l'animazione per il carattere specificato.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agente ***. Caratteri ("**_CharacterID_*_"). Arresta_ *  \[ *richiesta*\]
+*agent***. Caratteri ("**_CharacterID_*_"). Arresta_ *  \[ *richiesta*\]
 
 
 
 | Parte      | Descrizione                                                                                   |
 |-----------|-----------------------------------------------------------------------------------------------|
-| *Richiesta* | facoltativo. Oggetto [**Request**](/windows/desktop/lwef/the-request-object) che specifica una particolare chiamata di animazione. |
+| *Richiesta* | facoltativo. Oggetto [**Request**](/windows/desktop/lwef/the-request-object) che specifica una chiamata di animazione specifica. |
 
 
 
@@ -43,9 +43,9 @@ Arresta l'animazione per il carattere specificato.
 
 ## <a name="remarks"></a>Commenti
 
-Per specificare il parametro request, è necessario creare una variabile e assegnare la richiesta di animazione che si desidera arrestare. Se non si imposta il parametro **Request** , il server interrompe tutte le animazioni per il carattere, incluse le chiamate [**Get**](get-method.md) in coda, e cancella la coda delle animazioni, a meno che il carattere non stia attualmente **eseguendo l'animazione o la** **visualizzazione** . Questo metodo non interrompe le chiamate **Get** non in coda.
+Per specificare il parametro della richiesta, è necessario creare una variabile e assegnare la richiesta di animazione che si vuole arrestare. Se non si imposta il parametro **Request,** il server arresta tutte le animazioni per il carattere, incluse le  chiamate  [**Get**](get-method.md) in coda, e cancella la coda di animazione, a meno che il carattere non riproduce attualmente l'animazione Nascondere o Mostrare. Questo metodo non arresta le chiamate **Get** non in coda.
 
-Per arrestare un'animazione o una chiamata [**Get**](get-method.md) specifica, dichiarare una variabile oggetto e assegnare la richiesta di animazione alla variabile:
+Per arrestare un'animazione specifica o [**una chiamata Get,**](get-method.md) dichiarare una variabile oggetto e assegnare la richiesta di animazione a tale variabile:
 
 
 ```
@@ -69,7 +69,7 @@ Per arrestare un'animazione o una chiamata [**Get**](get-method.md) specifica, d
 
 
 
-Questo metodo non genererà un oggetto [**Request**](/windows/desktop/lwef/the-request-object) .
+Questo metodo non genererà un [**oggetto**](/windows/desktop/lwef/the-request-object) Request.
 
 ## <a name="see-also"></a>Vedere anche
 

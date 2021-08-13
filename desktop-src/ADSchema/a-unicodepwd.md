@@ -1,10 +1,10 @@
 ---
-title: Attributo Unicode-Pwd
-description: Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 usa Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile derivare la password non crittografata dal modulo OWF della password.
+title: Unicode-Pwd attributo
+description: Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile derivare la password non crittografata dal formato OWF della password.
 ms.assetid: 07b29a0c-aff2-4abd-8ca8-95f1ce5b566b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Unicode-Pwd attribute
+- Unicode-Pwd schema AD dell'attributo
 - Schema AD dell'attributo unicodePwd
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d00a1df180b7a30b56bdf198a78edc77cc99755
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0e21929cf41b58688f768ada0b608ca3ef0892a4a54043c30f5cac2d5a72258b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681088"
 ---
-# <a name="unicode-pwd-attribute"></a>Attributo Unicode-Pwd
+# <a name="unicode-pwd-attribute"></a>Unicode-Pwd attributo
 
-Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 usa Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile derivare la password non crittografata dal modulo OWF della password.
+Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile derivare la password non crittografata dal formato OWF della password.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------------------------|
 | CN                | Unicode-Pwd                                                                  |
-| LDAP-Display-Name | unicodePwd                                                                   |
+| Ldap-Display-Name | unicodePwd                                                                   |
 | Dimensione              | \-                                                                           |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                       |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                       |
 | Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che è necessario modificare la password. |
 | Attribute-Id      | 1.2.840.113556.1.4.90                                                        |
-| System-ID-GUID    | bf9679e1-0de6-11d0-a285-00aa003049e2                                         |
+| System-Id-Guid    | bf9679e1-0de6-11d0-a285-00aa003049e2                                         |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)                        |
 
 
@@ -44,7 +44,7 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| A valore singolo       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-associabile-oggetto**](c-msds-bindableobject.md)<br/> |
+| Classi usate in        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Password dell'utente in formato unidirezionale Windows NT (OWF). Windows 2000 us
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

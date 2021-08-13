@@ -1,7 +1,7 @@
 ---
-description: Ottiene il valore di una proprietà dal set di proprietà di un elemento. La proprietà può essere specificata in base al nome o in base all'identificatore di formato (FMTID) e all'identificatore di proprietà (PID) del set di proprietà.
+description: Ottiene il valore di una proprietà dal set di proprietà di un elemento. La proprietà può essere specificata in base al nome o all'identificatore di formato (FMTID) e all'identificatore di proprietà (PID) del set di proprietà.
 ms.assetid: ca787d7b-d95a-45b9-9627-fd505f99f868
-title: Metodo ShellFolderItem. ExtendedProperty (shldisp. h)
+title: Metodo ShellFolderItem.ExtendedProperty (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 614e42512b17a0d8a6950ac96914128b8746c685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: f5aa8ab3ba61d752cfe4d9f8ecd29bf4fcd06c3dbadde94e51ac9a05a8504b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452817"
 ---
-# <a name="shellfolderitemextendedproperty-method"></a>Metodo ShellFolderItem. ExtendedProperty
+# <a name="shellfolderitemextendedproperty-method"></a>Metodo ShellFolderItem.ExtendedProperty
 
-Ottiene il valore di una proprietà dal set di proprietà di un elemento. La proprietà può essere specificata in base al nome o in base all'identificatore di formato (FMTID) e all'identificatore di proprietà (PID) del set di proprietà.
+Ottiene il valore di una proprietà dal set di proprietà di un elemento. La proprietà può essere specificata in base al nome o all'identificatore di formato (FMTID) e all'identificatore di proprietà (PID) del set di proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,34 +39,34 @@ retVal = ShellFolderItem.ExtendedProperty(
 
 <dl> <dt>
 
-*sPropName* \[ in\]
+*sPropName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **stringa** che specifica la proprietà. Vedere la sezione Osservazioni per informazioni dettagliate.
+Valore **String** che specifica la proprietà. Vedere la sezione Osservazioni per informazioni dettagliate.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **Variant \** _
+Tipo: **\* Variante**
 
-Quando termina, questo metodo contiene il valore della proprietà, se esiste per l'elemento specificato. Il valore avrà una tipizzazione completa, ad esempio le date vengono restituite come date e non come stringhe.
+Quando questo metodo viene restituito, contiene il valore della proprietà , se esistente per l'elemento specificato. Il valore avrà la digitazione completa, ad esempio le date vengono restituite come date, non come stringhe.
 
-Questo metodo restituisce una stringa di lunghezza zero se la proprietà è valida ma non esiste per l'elemento specificato o in caso contrario un codice di errore.
+Questo metodo restituisce una stringa di lunghezza zero se la proprietà è valida ma non esiste per l'elemento specificato. In caso contrario, viene restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
 
-Esistono due modi per specificare una proprietà. Il primo consiste nell'assegnare il nome noto della proprietà, ad esempio "Author" o "date", a _sPropName *. Tuttavia, ogni proprietà è un membro di un set di proprietà Component Object Model (COM) e può anche essere identificata specificando l'ID di formato (FMTID) e l'ID della proprietà (PID). Un [**fmtid**](../stg/structured-storage-serialized-property-set-format.md) è un GUID che identifica il set di proprietà e un [**PID**](../stg/structured-storage-serialized-property-set-format.md) è un intero che identifica una particolare proprietà all'interno del set di proprietà.
+Esistono due modi per specificare una proprietà. Il primo è assegnare il nome noto della proprietà, ad esempio "Author" o "Date", a *sPropName.* Tuttavia, ogni proprietà è membro di un set di proprietà Component Object Model (COM) e può anche essere identificata specificandone l'ID di formato (FMTID) e l'ID proprietà (PID). [**FmTID è**](../stg/structured-storage-serialized-property-set-format.md) un GUID che identifica il set di proprietà e [**un PID**](../stg/structured-storage-serialized-property-set-format.md) è un numero intero che identifica una determinata proprietà all'interno del set di proprietà.
 
-La specifica di una proprietà in base ai relativi valori FMTID/PID è in genere più efficiente rispetto all'uso del nome. Per usare i valori FMTID/PID di una proprietà con **ExtendedProperty**, è necessario combinarli in un SCID. Una SCID è una stringa che contiene i valori FMTID/PID nel formato "*fmtid * * PID*", dove fmtid è il formato stringa del GUID del set di proprietà. Ad esempio, la SCID della proprietà autore del set di proprietà informazioni di riepilogo è "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
+Specificare una proprietà in base ai relativi valori FMTID/PID è in genere più efficiente rispetto all'uso del nome. Per usare i valori FMTID/PID di una proprietà con **ExtendedProperty**, è necessario combinarlo in un SCID. Un SCID è una stringa che contiene i valori FMTID/PID nel formato "*FMTID**PID*", dove FMTID è il formato stringa del GUID del set di proprietà. Ad esempio, il valore SCID della proprietà author del set di informazioni di riepilogo è "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
 
-Per un elenco di FMTIDs e PID attualmente supportati dalla shell, vedere [**SHCOLUMNID**](./objects.md).
+Per un elenco di FMTID e PIN attualmente supportati dalla shell, vedere [**SHCOLUMNID**](./objects.md).
 
 ## <a name="examples"></a>Esempio
 
-In questo esempio di codice viene illustrato come utilizzare **ExtendedProperty** per recuperare le proprietà "title" e "Author" da un documento di Word. Una volta che l'oggetto [**ShellFolderItem**](shellfolderitem-object.md) è associato al file, *fiWordDoc* in questo esempio recuperare il valore della proprietà passandone il nome a **ExtendedProperty**.
+Questo codice di esempio illustra come usare **ExtendedProperty** per recuperare le proprietà "Title" e "Author" da un documento di Word. Dopo aver creato [**l'oggetto ShellFolderItem**](shellfolderitem-object.md) associato al file, *fiWordDoc* in questo esempio, recuperare il valore della proprietà passandone il nome a **ExtendedProperty.**
 
 
 ```none
@@ -78,7 +78,7 @@ Doc_Author=fiWordDoc.ExtendedProperty("Author")
 
 
 
-Un approccio più rapido ed efficiente consiste nel passare una SCID a **ExtendedProperty**.
+Un approccio più rapido ed efficiente consiste nel passare un SCID a **ExtendedProperty.**
 
 
 ```none
@@ -97,7 +97,7 @@ Doc_Author=fiWordDoc.ExtendedProperty(SCID_AUTHOR)
 
 Negli esempi seguenti viene illustrato l'utilizzo corretto di questo metodo per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -128,7 +128,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -207,9 +207,9 @@ End Sub
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

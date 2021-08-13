@@ -4,12 +4,12 @@ ms.assetid: c99a73fb-9c03-47d2-a3b8-2391f19650a0
 title: System.Contact.BusinessAddress3Street
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 151c187ec8a9b8d8d609f905681b8b0433e7d0e0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f49d3bdc2d8b4455777a8d1b4e3599e03d276ec4e829ec777c7c7f9acc6c765d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118468561"
 ---
 # <a name="systemcontactbusinessaddress3street"></a>System.Contact.BusinessAddress3Street
 

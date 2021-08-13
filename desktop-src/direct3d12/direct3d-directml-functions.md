@@ -1,20 +1,20 @@
 ---
 title: Funzioni DirectML
-description: Le funzioni seguenti sono dichiarate in DirectML.h.
+description: Le funzioni seguenti vengono dichiarate in DirectML.h.
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: c647298ae8d92f90c52c7aabfc043c3b5ff6e6ec
-ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
+ms.openlocfilehash: 8ed406cbafecc9cbdb7dc129bc3c2e31e241b30833e3da74baeeca55697ed055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111521149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118529610"
 ---
 # <a name="directml-functions"></a>Funzioni DirectML
 
-Le funzioni seguenti sono dichiarate in DirectML.h.
+Le funzioni seguenti vengono dichiarate in DirectML.h.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

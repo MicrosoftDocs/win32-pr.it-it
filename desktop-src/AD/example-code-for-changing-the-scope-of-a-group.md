@@ -7,16 +7,16 @@ keywords:
 - Esempi di Active Directory Active Directory, modifica dell'ambito di un gruppo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 641ad43604785a6aae5bb250061ff0a3b62c294e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: edbcbfb7e665b4f569fdef6d623bd7bfb947f94ece1de26ee062a70b07757300
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694544"
 ---
 # <a name="example-code-for-changing-the-scope-of-a-group"></a>Codice di esempio per la modifica dell'ambito di un gruppo
 
-Nell'esempio di codice C++ riportato di seguito viene modificato l'ambito di un gruppo.
+Nell'esempio di codice C++ seguente viene modificato l'ambito di un gruppo.
 
 
 ```C++
@@ -54,7 +54,7 @@ Nell'esempio di codice C++ riportato di seguito viene modificato l'ambito di un 
 
 
 
-Nell'esempio di codice Visual Basic seguente viene modificato l'ambito di un gruppo.
+Nell'esempio Visual Basic codice seguente viene modificato l'ambito di un gruppo.
 
 
 ```VB
@@ -72,9 +72,9 @@ CleanUp:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

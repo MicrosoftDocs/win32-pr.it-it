@@ -1,19 +1,19 @@
 ---
-description: Indica il numero di campioni necessari per l'allocazione di un Microsoft Media Foundation Transform (MFT) per il contenuto progressivo.
+description: Indica il numero di campioni necessari per l'allocazione di una Microsoft Media Foundation (MFT) per il contenuto progressivo.
 ms.assetid: 69F9EA59-41B4-4DE5-A77D-1D0E59BFBF3A
-title: Attributo MF_SA_REQUIRED_SAMPLE_COUNT_PROGRESSIVE (Mftransform. h)
+title: MF_SA_REQUIRED_SAMPLE_COUNT_PROGRESSIVE attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e48d56bf1e21a64c0a4d225a72a6386b4789ae7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d981535d66c0e6b50b82bc5b59d7096658a775651574cd4dbb26166b3e418a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740052"
 ---
-# <a name="mf_sa_required_sample_count_progressive-attribute"></a>\_ \_ \_ \_ \_ Attributo progressivo di conteggio esempi di MF SA obbligatorio
+# <a name="mf_sa_required_sample_count_progressive-attribute"></a>Attributo MF \_ SA REQUIRED SAMPLE COUNT \_ \_ \_ \_ PROGRESSIVE
 
-Indica il numero di campioni necessari per l'allocazione di un Microsoft Media Foundation Transform (MFT) per il contenuto progressivo.
+Indica il numero di campioni necessari per l'allocazione di una Microsoft Media Foundation (MFT) per il contenuto progressivo.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Indica il numero di campioni necessari per l'allocazione di un Microsoft Media F
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore viene usato se il nodo successivo downstream ha un [**IMFVideoSampleAllocator**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocator).
+Questo valore viene usato se il nodo successivo a valle ha [**un oggetto IMFVideoSampleAllocator.**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocator)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Questo valore viene usato se il nodo successivo downstream ha un [**IMFVideoSamp
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Questo valore viene usato se il nodo successivo downstream ha un [**IMFVideoSamp
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

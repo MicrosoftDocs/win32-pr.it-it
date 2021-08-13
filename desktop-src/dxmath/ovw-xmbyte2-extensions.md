@@ -1,19 +1,19 @@
 ---
-description: Descrive un vettore 2D costituito da interi con segno, a 8 bit (1 byte) di lunghezza.
+description: Descrive un vettore 2D costituito da interi con segno, con lunghezza di 8 bit (1 byte).
 ms.assetid: 4b01065e-28de-4c67-92ed-2a3564817656
 title: Estensioni XMBYTE2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7399a8fe5bb26e38bdb6a006f5a899c540e038
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f72c4b1fc0c9db63e378e89f300aa7a492d2feb2a325d1f5155d9bdf6de467b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501674"
 ---
 # <a name="xmbyte2-extensions"></a>Estensioni XMBYTE2
 
-Descrive un vettore 2D costituito da interi con segno, a 8 bit (1 byte) di lunghezza.
+Descrive un vettore 2D costituito da interi con segno, con lunghezza di 8 bit (1 byte).
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

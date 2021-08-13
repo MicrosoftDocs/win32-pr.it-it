@@ -1,23 +1,23 @@
 ---
-description: La \_ classe CIM SoftwareElementVersionCheck espone i metodi seguenti.
+description: La classe CIM \_ SoftwareElementVersionCheck espone i metodi seguenti.
 ms.assetid: BEAB9093-6188-4BA7-8654-DBEA709E0E5F
 ms.tgt_platform: multiple
-title: Metodi di CIM_SoftwareElementVersionCheck
+title: CIM_SoftwareElementVersionCheck metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f25a426031eec713ccffdedec12c404751443928
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2680caf60a0312b0caeebfaaf7bb693a365cd256a97b9486641b89e193c9d810
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118421282"
 ---
-# <a name="cim_softwareelementversioncheck-methods"></a>\_Metodi CIM SoftwareElementVersionCheck
+# <a name="cim_softwareelementversioncheck-methods"></a>Metodi di \_ CIM SoftwareElementVersionCheck
 
-La classe [**CIM \_ SoftwareElementVersionCheck**](cim-softwareelementversioncheck.md) espone i metodi seguenti.
+La [**classe CIM \_ SoftwareElementVersionCheck**](cim-softwareelementversioncheck.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

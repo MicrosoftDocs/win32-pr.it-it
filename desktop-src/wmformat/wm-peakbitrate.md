@@ -1,9 +1,9 @@
 ---
 title: WM/PeakBitrate
-description: L'attributo WM/PeakBitrate contiene la velocità in bit del picco di un flusso di velocità in bit variabile (VBR) in bit al secondo.
+description: L'attributo WM/PeakBitrate contiene la velocità in bit massima di un flusso vbr (Variable Bit Rate) in bit al secondo.
 ms.assetid: be10879b-3078-46e9-94de-88f2d4974710
 keywords:
-- Formato di Windows Media WM/PeakBitrate
+- WM/PeakBitrate windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 959bb1e7f98a68291aaa74d6a8b4105977cbc712
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 87edbde5e524a87262d9d82d0269f8baa99a21797bc6972f0319a51e4aea9d17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698517"
 ---
 # <a name="wmpeakbitrate"></a>WM/PeakBitrate
 
-L'attributo **WM/PeakBitrate** contiene la velocità in bit del picco di un flusso di velocità in bit variabile (VBR) in bit al secondo.
+**L'attributo WM/PeakBitrate** contiene la velocità in bit massima di un flusso vbr (Variable Bit Rate) in bit al secondo.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMPeakBitrate
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WMT \_ tipo \_ DWORD**
+**DWORD \_ DI TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -38,9 +38,9 @@ g \_ wszWMPeakBitrate
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

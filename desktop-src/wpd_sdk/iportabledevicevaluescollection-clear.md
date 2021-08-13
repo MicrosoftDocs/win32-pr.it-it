@@ -1,7 +1,7 @@
 ---
-description: Il metodo Clear rilascia tutti gli elementi della raccolta.
+description: Il metodo Clear rilascia tutti gli elementi dalla raccolta.
 ms.assetid: 151d1f61-11f0-40f0-8da1-79e9eb2001ce
-title: 'Metodo IPortableDeviceValuesCollection:: Clear (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValuesCollection::Clear (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: bf826b8e8a2035a0d84aec76979616fcccee9948
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4cc810ae7871ffcd5bffc50eabda8682f1d2cd334d6e0b09fac715d3749f300d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697025"
 ---
-# <a name="iportabledevicevaluescollectionclear-method"></a>Metodo IPortableDeviceValuesCollection:: Clear
+# <a name="iportabledevicevaluescollectionclear-method"></a>Metodo IPortableDeviceValuesCollection::Clear
 
-Il metodo **Clear** rilascia tutti gli elementi della raccolta.
+Il **metodo Clear** rilascia tutti gli elementi dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -62,8 +62,8 @@ Il metodo rilascia tutta la memoria allocata per gli elementi nella raccolta.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: Contiene l'identificatore di classe (CLSID) di una trasformazione Media Foundation (MFT).
 ms.assetid: 99ee6f50-1de7-41ea-be5b-135730138d5d
-title: Attributo MFT_TRANSFORM_CLSID_Attribute (Mftransform. h)
+title: MFT_TRANSFORM_CLSID_Attribute attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b5ca1aa6a9d7691200761509e1a5e407a6c7db6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0122b783d8b321aa2a5c7788a589e19625b6a2bde8e37b0b659b0a1192f8c7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240199"
 ---
-# <a name="mft_transform_clsid_attribute-attribute"></a>\_ \_ Attributo attributo CLSID Transform MFT \_
+# <a name="mft_transform_clsid_attribute-attribute"></a>Attributo \_ \_ CLSID MFT TRANSFORM \_
 
 Contiene l'identificatore di classe (CLSID) di una trasformazione Media Foundation (MFT).
 
@@ -21,19 +21,19 @@ Contiene l'identificatore di classe (CLSID) di una trasformazione Media Foundati
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: Seguid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene impostato sui puntatori [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) restituiti dalla funzione [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) .
+Questo attributo viene impostato sui [**puntatori IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) restituiti dalla [**funzione MFTEnumEx.**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex)
 
-Questo attributo viene utilizzato internamente dall'oggetto Activation quando crea il MFT. Le applicazioni non devono utilizzare direttamente questo CLSID per creare il MFT, perché l'oggetto di attivazione potrebbe dover inizializzare il MFT. Pertanto, per creare un'istanza di MFT, chiamare [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) sull'oggetto Activation.
+Questo attributo viene utilizzato internamente dall'oggetto di attivazione quando crea l'MFT. Le applicazioni non devono usare questo CLSID direttamente per creare il MFT, perché l'oggetto attivazione potrebbe dover inizializzare MFT. Pertanto, per creare un'istanza del MFT, chiamare [**IMFActivate::ActivateObject sull'oggetto**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) attivazione.
 
-Si noti che la funzione [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) si comporta in modo diverso rispetto alla funzione [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) in questo senso. La funzione **MFTEnum** Restituisce CLSID, che l'applicazione passa alla funzione **CoCreateInstance** . La funzione **MFTEnumEx** restituisce oggetti attivazione anziché CLSID.
+Si noti che [**la funzione MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) si comporta in modo diverso rispetto alla [**funzione MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) in questo senso. La **funzione MFTEnum** restituisce i CLSID, che l'applicazione passa alla **funzione CoCreateInstance.** La **funzione MFTEnumEx** restituisce gli oggetti attivazione anziché i CLSID.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

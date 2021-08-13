@@ -1,23 +1,23 @@
 ---
-title: atomic_umax (SM5-ASM)
-description: Atomic Unsigned Integer massimo alla memoria.
+title: atomic_umax (sm5 - asm)
+description: Intero senza segno atomico massimo in memoria.
 ms.assetid: 7255B67A-37BE-443A-BDF2-A1D4A56C5E11
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 578a96379ad8904459cbfd47ef87ba4256e5fd8d
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3e6984a2ef2ea8ba186976670ec3b0f03446bf188de9c619301917610f4c3ecc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103857809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794859"
 ---
-# <a name="atomic_umax-sm5---asm"></a>Atomic \_ UMAX (SM5-ASM)
+# <a name="atomic_umax-sm5---asm"></a>atomic \_ umax (sm5 - asm)
 
-Atomic Unsigned Integer massimo alla memoria.
+Intero senza segno atomico massimo in memoria.
 
 
 
-| \_componente Atomic UMAX DST, dstAddress \[ . Swizzle \] , src0 \[ . Select \_\] |
+| atomic \_ umax dst, dstAddress \[ .swizzle \] , src0 \[ .select \_ component\] |
 |----------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Atomic Unsigned Integer massimo alla memoria.
 
 | Elemento                                                                                                           | Descrizione                                                                                                                                                                             |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dst"></span><span id="DST"></span>*DST*<br/>                                                   | \[nei \] componenti da confrontare con *src0*. Questo valore deve essere una visualizzazione di accesso non ordinato (UAV) (u \# ). Nel compute shader può anche essere la memoria condivisa del gruppo di thread (g \# ). <br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[nell' \] indirizzo di memoria.<br/>                                                                                                                                                   |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[nei \] componenti da confrontare con l' *ora legale*.<br/>                                                                                                                                   |
+| <span id="dst"></span><span id="DST"></span>*Dst*<br/>                                                   | \[in \] Componenti da confrontare con *src0*. Questo valore deve essere una visualizzazione di accesso non ordinato (UAV) (u \# ). Nello shader di calcolo può anche essere la memoria condivisa del gruppo di thread (g \# ). <br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[in \] Indirizzo di memoria.<br/>                                                                                                                                                   |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[in \] Componenti da confrontare con *dst*.<br/>                                                                                                                                   |
 
 
 
@@ -38,27 +38,27 @@ Atomic Unsigned Integer massimo alla memoria.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un singolo componente a 32 bit senza segno di *src0* dell'operando nell' *ora legale* a 32 bit per indirizzo componente *dstAddress*, eseguito atomicamente.
+Questa istruzione esegue un singolo componente senza segno massimo a 32 bit di operando *src0* *in dst* a 32 bit per indirizzo componente *dstAddress*, eseguito in modo atomico.
 
-Il numero di componenti presi dall'indirizzo è determinato dalla dimensionalità dell'ora legale u \# o g \# .
+Il numero di componenti prelevati dall'indirizzo è determinato dalla dimensionalità di dst u \# o g \# .
 
-Se *DST* è un u \# , può essere dichiarato come RAW, tipizzato o strutturato. Se tipizzata, deve essere dichiarata come UINT/SINT con il formato di risorsa associato R32 \_ uint/ \_ Sint.
+Se *dst* è un u \# , può essere dichiarato come raw, typed o structured. Se digitato, deve essere dichiarato come UINT/SINT con il formato di risorsa associato R32 \_ \_ UINT/SINT.
 
-Se *DST* è g \# , deve essere dichiarato come RAW o Structured.
+Se *dst* è g \# , deve essere dichiarato come non elaborato o strutturato.
 
 Non viene restituito nulla allo shader.
 
-Se la chiamata dello shader è inattiva, ad esempio se il pixel è stato scartato in precedenza nell'esecuzione o se una chiamata di pixel/campione esiste solo per fungere da helper per un pixel/campione reale per i derivati, questa istruzione non modifica la memoria *DST* (in modo invisibile all'utente).
+Se la chiamata dello shader è inattiva, ad esempio se il pixel è stato eliminato in precedenza durante l'esecuzione o se esiste una chiamata pixel/campione solo per fungere da helper per un pixel/campione reale per i derivati, questa istruzione non modifica affatto la memoria *dst* (in modo invisibile all'utente).
 
-L'indirizzamento fuori dall'indirizzamento su u \# non comporta la scrittura in memoria, tranne nel caso in cui l'u \# sia strutturato e l'offset dei byte nello struct (secondo componente dell'indirizzo) provochi l'accesso fuori limite, quindi l'intero contenuto del UAV diventa non definito.
+All'interno dei limiti che si indirizzano su u non viene scritto nulla in memoria, tranne se u è strutturato e l'offset dei byte nello struct (secondo componente dell'indirizzo) causa l'accesso fuori dai limiti, quindi l'intero contenuto dell'UAV diventa \# \# indefinito.
 
-All'esterno dei limiti che puntano a g \# (i limiti di tale particolare g \# , anziché di tutta la memoria condivisa), l'intero contenuto di tutta la memoria condivisa diventa indefinito.
+Se non sono definiti limiti per g (i limiti di quel particolare g , anziché tutta la memoria condivisa), l'intero contenuto di tutta la memoria condivisa diventa \# \# indefinito.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -66,11 +66,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -78,20 +78,20 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -101,7 +101,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

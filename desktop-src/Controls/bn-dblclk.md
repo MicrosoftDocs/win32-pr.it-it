@@ -1,9 +1,9 @@
 ---
 title: BN_DBLCLK di notifica (Winuser.h)
-description: "BN_DBLCLK codice di notifica: inviato quando l'utente fa doppio clic su un pulsante."
+description: "BN_DBLCLK di notifica: inviato quando l'utente fa doppio clic su un pulsante."
 ms.assetid: 60cc033f-8b84-4aa5-b625-fdee9deb4757
 keywords:
-- BN_DBLCLK codice di notifica controlli Windows
+- BN_DBLCLK del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb403f37b8fee9ea36023a7cd2511bbaaa2af81
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7a80886811a5fcc91f4f0a1217754fdd1daf0cca5b39c1158235d77351008788
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674355"
 ---
-# <a name="bn_dblclk-notification-code"></a>Codice di notifica \_ DBLCLK BN
+# <a name="bn_dblclk-notification-code"></a>Codice di notifica \_ BN DBLCLK
 
-Inviato quando l'utente fa doppio clic su un pulsante. Questo codice di notifica viene inviato automaticamente per i pulsanti [**BS \_ USERBUTTON,**](button-styles.md) [**BS \_ RADIOBUTTON**](button-styles.md)e [**BS \_ OWNERDRAW.**](button-styles.md) Gli altri tipi di pulsante inviano \_ BN DBLCLK solo se hanno lo [**stile BS \_ NOTIFY.**](button-styles.md)
+Inviato quando l'utente fa doppio clic su un pulsante. Questo codice di notifica viene inviato automaticamente per i pulsanti [**\_ BS USERBUTTON**](button-styles.md), [**BS \_ RADIOBUTTON**](button-styles.md)e [**BS \_ OWNERDRAW.**](button-styles.md) Gli altri tipi di pulsante inviano DBLCLK BN \_ solo se hanno lo stile [**BS \_ NOTIFY.**](button-styles.md)
 
 La finestra padre del pulsante riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
@@ -44,7 +44,7 @@ BN_DBLCLK
 *wParam* 
 </dt> <dd>
 
-La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo del pulsante. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
+LoWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) l'identificatore del controllo del pulsante. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -65,8 +65,8 @@ BN \_ DBLCLK corrisponde al codice di notifica [BN \_ DOUBLECLICKED.](bn-doublec
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ BN \_ DBLCLK corrisponde al codice di notifica [BN \_ DOUBLECLICKED.](bn-doublec
 **Riferimento**
 </dt> <dt>
 
-[BN \_ SU CUI È STATO FATTO CLIC](bn-clicked.md)
+[CLIC \_ SU BN](bn-clicked.md)
 </dt> <dt>
 
 [BN \_ DOUBLECLICKED](bn-doubleclicked.md)

@@ -1,69 +1,69 @@
 ---
-description: Per configurare la sicurezza basata sui ruoli e l'autenticazione per le applicazioni di libreria, è necessario tenere presenti alcune considerazioni speciali.
+description: Per la configurazione della sicurezza basata sui ruoli e dell'autenticazione per le applicazioni di libreria, è necessario tenere presenti alcune considerazioni speciali.
 ms.assetid: 1117ac64-653d-4640-97cd-f37b0949dc57
 title: Configurazione della sicurezza per le applicazioni di libreria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 102d6a0f102bfd19da0073bca14df8a8211203b1
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: 8f0d8b3993a00512c20409f1f029b7402d5f9ace97984cbe9757453b5672125f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "103968808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118548908"
 ---
 # <a name="configuring-security-for-library-applications"></a>Configurazione della sicurezza per le applicazioni di libreria
 
-Per configurare la sicurezza basata sui ruoli e l'autenticazione per le applicazioni di libreria, è necessario tenere presenti alcune considerazioni speciali.
+Per la configurazione della sicurezza basata sui ruoli e dell'autenticazione per le applicazioni di libreria, è necessario tenere presenti alcune considerazioni speciali.
 
 ## <a name="enabling-or-disabling-authentication"></a>Abilitazione o disabilitazione dell'autenticazione
 
-Uno dei fattori da considerare è che i chiamanti dell'applicazione libreria devono essere soggetti ai controlli di sicurezza a livello di processo del processo di hosting, ovvero se abilitare o disabilitare l'autenticazione.
+Uno dei fattori da considerare è se i chiamanti dell'applicazione di libreria devono essere soggetti ai controlli di sicurezza a livello di processo del processo di hosting, ovvero se abilitare o disabilitare l'autenticazione.
 
-Se, ad esempio, l'applicazione libreria sarà ospitata da un browser, potrebbe essere necessario ricevere callback non autenticati. Per rispondere a questa esigenza, è possibile disabilitare l'autenticazione in modo che il processo di hosting non esegua controlli di sicurezza per i chiamanti dell'applicazione della libreria. Quando si disabilita l'autenticazione, l'applicazione della libreria non viene autenticata, tutte le chiamate a tale applicazione riusciranno. I chiamanti dell'applicazione libreria non sono soggetti ai controlli di sicurezza del processo di hosting. In pratica, l'applicazione della libreria viene contrassegnata come "non autenticata" e i controlli di sicurezza vengono omessi per le chiamate all'applicazione della libreria.
+Ad esempio, se l'applicazione di libreria sarà ospitata da un browser, potrebbe essere necessario ricevere callback non autenticati. Per risolvere questo problema, è possibile disabilitare l'autenticazione in modo che il processo di hosting non eserviti i controlli di sicurezza per i chiamanti dell'applicazione di libreria. Quando si disabilita l'autenticazione, l'applicazione di libreria non viene autenticata. Tutte le chiamate a essa avranno esito positivo. I chiamanti dell'applicazione di libreria non sono soggetti ai controlli di sicurezza del processo di hosting. Fondamentalmente, l'applicazione di libreria viene contrassegnata come "non autenticata" e i controlli di sicurezza vengono omessi per le chiamate all'applicazione di libreria.
 
-Per informazioni su come abilitare o disabilitare l'autenticazione, vedere Abilitazione dell' [autenticazione per un'applicazione di libreria](enabling-authentication-for-a-library-application.md).
+Per informazioni su come abilitare o disabilitare l'autenticazione, vedere [Abilitazione dell'autenticazione per un'applicazione di libreria.](enabling-authentication-for-a-library-application.md)
 
-## <a name="enforcing-role-checks"></a>Applicazione di controlli di ruolo
+## <a name="enforcing-role-checks"></a>Applicazione dei controlli dei ruoli
 
-Un'altra decisione da prendere consiste nel fatto che l'applicazione di libreria debba utilizzare la [protezione basata sui ruoli](role-based-security-administration.md). Se si usa la sicurezza basata sui ruoli, è necessario usare la sicurezza a livello di componente per eseguire tutti i controlli di accesso. I ruoli assegnati all'applicazione libreria non vengono riflessi nel descrittore di sicurezza del processo. L'unica autorizzazione che l'applicazione della libreria è in grado di controllare è a livello di componente. Per ulteriori informazioni sulla sicurezza a livello di componente, vedere [limiti di sicurezza](security-boundaries.md).
+Un'altra decisione da prendere è se l'applicazione di libreria deve usare [la sicurezza basata sui ruoli.](role-based-security-administration.md) Se si utilizza la sicurezza basata sui ruoli, è necessario utilizzare la sicurezza a livello di componente per eseguire i controlli di accesso. I ruoli assegnati all'applicazione di libreria non si riflettono nel descrittore di sicurezza del processo. L'unica autorizzazione che l'applicazione di libreria può controllare è a livello di componente. Per altre informazioni sulla sicurezza a livello di componente, vedere [Limiti di sicurezza.](security-boundaries.md)
 
-Per informazioni su come impostare la sicurezza a livello di componente, vedere [impostazione di un livello di sicurezza per i controlli di accesso](setting-a-security-level-for-access-checks.md).
+Per informazioni su come impostare la sicurezza a livello di componente, vedere [Impostazione di un livello di sicurezza per i controlli di accesso.](setting-a-security-level-for-access-checks.md)
 
 ## <a name="configuration-scenarios"></a>Scenari di configurazione
 
-Per comprendere meglio le implicazioni di decidere se l'applicazione di libreria deve utilizzare la protezione basata sui ruoli e se l'applicazione di libreria deve essere non autenticata, considerare gli scenari seguenti:
+Per comprendere meglio le implicazioni di decidere se l'applicazione di libreria deve usare la sicurezza basata sui ruoli e se l'applicazione di libreria deve essere non autenticata, considerare gli scenari seguenti:
 
--   **L'autenticazione è abilitata e viene utilizzata la sicurezza basata sui ruoli.** In questo scenario, i controlli di sicurezza vengono eseguiti dal processo di hosting e ad alcuni chiamanti viene negato l'accesso a livello di processo. Il controllo dei ruoli viene inoltre eseguito a livello di applicazione della libreria, in modo che per alcuni chiamanti che lo eseguono tramite il controllo di sicurezza a livello di processo venga negato l'accesso all'applicazione libreria quando viene controllata l'appartenenza al ruolo. Si tratta dello scenario usuale per un'applicazione libreria COM+ che usa la sicurezza basata sui ruoli.
+-   **L'autenticazione è abilitata e viene usata la sicurezza basata sui ruoli.** In questo scenario, i controlli di sicurezza vengono eseguiti dal processo di hosting e ad alcuni chiamanti viene negato l'accesso a livello di processo. Inoltre, il controllo dei ruoli viene eseguito a livello di applicazione della libreria, in modo che ad alcuni chiamanti che eservitino il controllo di sicurezza a livello di processo sia negato l'accesso all'applicazione di libreria quando viene verificata l'appartenenza al ruolo. Questo è lo scenario consueto per un'applicazione di libreria COM+ che usa la sicurezza basata sui ruoli.
 
-    Nella figura seguente viene illustrato lo scenario in cui è abilitata l'autenticazione e viene utilizzato il controllo del ruolo.
+    La figura seguente illustra lo scenario in cui è abilitata l'autenticazione e viene usato il controllo dei ruoli.
 
-    ![Diagramma che illustra l'autenticazione che avviene in un processo host.](images/18004ed7-e95e-4c66-9e17-f163cdeefd71.png)
+    ![Diagramma che illustra l'autenticazione in corso all'interno di un processo host.](images/18004ed7-e95e-4c66-9e17-f163cdeefd71.png)
 
--   **L'autenticazione è abilitata e non viene usata la protezione basata sui ruoli.** In questo scenario, i controlli di sicurezza vengono eseguiti a livello di processo, ma l'appartenenza al ruolo non viene controllata a livello di applicazione della libreria. Pertanto, qualsiasi chiamante dell'applicazione della libreria che lo esegue tramite il controllo di sicurezza a livello di processo potrà accedere all'applicazione libreria perché l'appartenenza al ruolo non viene controllata. Questa situazione si verifica quando viene eseguita la migrazione di un'applicazione COM che non usa la sicurezza basata sui ruoli in un'applicazione libreria COM+.
+-   **L'autenticazione è abilitata e la sicurezza basata sui ruoli non viene usata.** In questo scenario i controlli di sicurezza vengono eseguiti a livello di processo, ma l'appartenenza al ruolo non viene controllata a livello di applicazione della libreria. Pertanto, qualsiasi chiamante dell'applicazione di libreria che esegue il controllo di sicurezza a livello di processo avrà accesso all'applicazione di libreria perché l'appartenenza al ruolo non viene controllata. Questa situazione si verifica quando viene eseguita la migrazione di un'applicazione COM che non usa la sicurezza basata sui ruoli a un'applicazione di libreria COM+.
 
-    Nella figura seguente viene illustrato lo scenario in cui l'autenticazione è abilitata e non viene utilizzato il controllo del ruolo.
+    La figura seguente illustra lo scenario in cui l'autenticazione è abilitata e il controllo dei ruoli non viene usato.
 
-    ![Diagramma che illustra l'autenticazione a livello di processo per un'applicazione libreria all'interno del processo host.](images/3e5a64c6-39a9-4ff7-b084-8396fe779210.png)
+    ![Diagramma che illustra l'autenticazione a livello di processo per un'applicazione di libreria all'interno del processo host.](images/3e5a64c6-39a9-4ff7-b084-8396fe779210.png)
 
--   **L'autenticazione è disabilitata e viene utilizzata la sicurezza basata sui ruoli.** In questo scenario, i controlli di sicurezza vengono eseguiti a livello di processo, ma i chiamanti per l'applicazione della libreria non sono autenticati. In effetti, i chiamanti dell'applicazione libreria sono esenti dal controllo di sicurezza a livello di processo. Poiché il controllo dei ruoli è abilitato, l'appartenenza ai ruoli da solo determina gli utenti a cui viene concesso l'accesso all'applicazione della libreria. Questo scenario potrebbe essere appropriato quando il controllo di sicurezza che verrebbe eseguito dal processo di hosting è troppo restrittivo, ma è necessario disporre di una restrizione di accesso per l'applicazione libreria o per interfacce o metodi specifici. Questo scenario consente di disattivare efficacemente la sicurezza del processo e di disporre comunque di controlli di accesso a livello appropriati mediante la sicurezza basata sui ruoli.
+-   **L'autenticazione è disabilitata e viene usata la sicurezza basata sui ruoli.** In questo scenario i controlli di sicurezza vengono eseguiti a livello di processo, ma i chiamanti dell'applicazione di libreria non sono autenticati. In effetti, i chiamanti dell'applicazione di libreria sono esentati dal controllo di sicurezza a livello di processo. Poiché il controllo dei ruoli è abilitato, solo l'appartenenza al ruolo determina chi ha accesso all'applicazione di libreria. Questo scenario potrebbe essere appropriato quando il controllo di sicurezza che verrebbe eseguito dal processo di hosting è troppo restrittivo, ma è necessario avere alcune restrizioni di accesso all'applicazione di libreria o a interfacce o metodi specifici. Questo scenario consente di disattivare in modo efficace la sicurezza dei processi e di disporre comunque di controlli di accesso di livello appropriati tramite la sicurezza basata sui ruoli.
 
-    Nella figura seguente viene illustrato lo scenario in cui è disabilitata l'autenticazione e viene utilizzato il controllo del ruolo.
+    Lo scenario in cui l'autenticazione è disabilitata e viene usato il controllo dei ruoli è illustrato nella figura seguente.
 
-    ![Diagramma che mostra ' controlla appartenenza a ruoli ' in un'applicazione di libreria all'interno di un processo host.](images/e0cc604c-ba86-4087-9a74-1b6fdce8d69a.png)
+    ![Diagramma che mostra il controllo dell'appartenenza ai ruoli in un'applicazione di libreria all'interno di un processo host.](images/e0cc604c-ba86-4087-9a74-1b6fdce8d69a.png)
 
--   **L'autenticazione è disabilitata e la protezione basata sui ruoli non viene utilizzata.** In questo scenario, i controlli di sicurezza vengono ancora eseguiti a livello di processo, ma, come nello scenario precedente, i chiamanti dell'applicazione libreria passano sempre questo controllo di sicurezza. Poiché anche il controllo dei ruoli è disabilitato, l'appartenenza al ruolo non viene controllata a livello di applicazione della libreria. In pratica, chiunque può chiamare l'applicazione della libreria. Questo scenario deve essere scelto quando l'oggetto COM deve ricevere callback non autenticati, come potrebbe essere il caso di un controllo ActiveX ospitato da Internet Explorer e con uno snap-in di Microsoft Management Console. Naturalmente, questo oggetto COM deve essere considerato attendibile per un comportamento appropriato durante la ricezione di chiamate non autenticate. Ad esempio, non deve accedere ai file arbitrari per conto dei chiamanti.
+-   **L'autenticazione è disabilitata e non viene usata la sicurezza basata sui ruoli.** In questo scenario i controlli di sicurezza vengono comunque eseguiti a livello di processo, ma, come nello scenario precedente, i chiamanti dell'applicazione di libreria superano sempre questo controllo di sicurezza. Poiché anche il controllo dei ruoli è disabilitato, l'appartenenza al ruolo non viene controllata a livello di applicazione della libreria. In sostanza, chiunque può chiamare l'applicazione di libreria. Questo scenario deve essere scelto quando l'oggetto COM deve ricevere callback non autenticati, come nel caso di un controllo ActiveX ospitato da Internet Explorer e con uno snap-in Microsoft Management Console. Naturalmente, questo oggetto COM deve essere considerato attendibile per comportarsi in modo appropriato quando si ricevono chiamate non autenticate. Ad esempio, non deve accedere a file arbitrari per conto dei chiamanti.
 
-    Nella figura seguente è illustrato lo scenario in cui l'autenticazione è disabilitata e il controllo del ruolo non è in uso.
+    Lo scenario in cui l'autenticazione è disabilitata e il controllo dei ruoli non viene usato è illustrato nella figura seguente.
 
-    ![Diagramma che mostra le chiamate a un'applicazione di libreria che non sono autenticate all'interno del processo host.](images/df3c9a02-52dd-4e07-a5f1-76cef0dab5cb.png)
+    ![Diagramma che mostra le chiamate a un'applicazione di libreria non autenticate all'interno del processo host.](images/df3c9a02-52dd-4e07-a5f1-76cef0dab5cb.png)
 
-Dopo aver deciso se abilitare o disabilitare l'autenticazione per l'applicazione della libreria COM+, vedere [Abilitazione dell'autenticazione per un'applicazione di libreria](enabling-authentication-for-a-library-application.md) per una procedura dettagliata in cui viene illustrato come disabilitare o abilitare l'autenticazione mediante lo strumento di amministrazione Servizi componenti. Se l'applicazione di libreria utilizzerà la protezione basata sui ruoli, vedere [configurazione Role-Based sicurezza](configuring-role-based-security.md).
+Dopo aver deciso se abilitare o disabilitare l'autenticazione [](enabling-authentication-for-a-library-application.md) per l'applicazione di libreria COM+, vedere Abilitazione dell'autenticazione per un'applicazione di libreria per una procedura dettagliata che illustra come disabilitare o abilitare l'autenticazione usando lo strumento di amministrazione Servizi componenti. Se l'applicazione di libreria userà la sicurezza basata sui ruoli, vedere [Configuring Role-Based Security](configuring-role-based-security.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Sicurezza delle applicazioni di libreria](library-application-security.md)
+[Sicurezza delle applicazioni della libreria](library-application-security.md)
 </dt> </dl>
 
  

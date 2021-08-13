@@ -1,7 +1,7 @@
 ---
 description: Definisce il tipo che contiene una riga di paragrafo.
 ms.assetid: 0c864ca9-7f09-4fea-9490-4e07d82bcf6e
-title: Tipo complesso del tipo di linea
+title: Tipo complesso LineType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: ec39d81bb3033962896809a629402259b973f5a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ecb845d478374f41af6157749bb7d1306797e23a89ea8a5291cd7eca31df47b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449814"
 ---
-# <a name="linetype-complex-type"></a>Tipo complesso del tipo di linea
+# <a name="linetype-complex-type"></a>Tipo complesso LineType
 
 Definisce il tipo che contiene una riga di paragrafo.
 
@@ -33,7 +33,7 @@ Definisce il tipo che contiene una riga di paragrafo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

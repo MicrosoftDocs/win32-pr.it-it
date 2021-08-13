@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETORIGIN (COMmctrl. h)
-description: Recupera l'origine della visualizzazione corrente per un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro ListView getOrigin.
+title: LVM_GETORIGIN messaggio (Commctrl.h)
+description: Recupera l'origine della visualizzazione corrente per un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetOrigin.
 ms.assetid: 913c8339-fbe4-43c8-a997-5a972920dc3b
 keywords:
-- Controlli di Windows Message LVM_GETORIGIN
+- LVM_GETORIGIN dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8af42f3d616aa609d6b9e41d3991adb9d68eb24e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a274e81c276d70eb1ab6c7f214b62ae5c346a59dda026bb13c5ab6b3ce80f68d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411358"
 ---
-# <a name="lvm_getorigin-message"></a>\_Messaggio GETORIGIN LVM
+# <a name="lvm_getorigin-message"></a>Messaggio \_ LVM GETORIGIN
 
-Recupera l'origine della visualizzazione corrente per un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ListView \_ getOrigin**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getorigin) .
+Recupera l'origine della visualizzazione corrente per un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView GetOrigin.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getorigin)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Recupera l'origine della visualizzazione corrente per un controllo visualizzazio
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura di [**punti**](/previous-versions//dd162805(v=vs.85)) che riceve l'origine della visualizzazione.
+Puntatore a una [**struttura POINT**](/previous-versions//dd162805(v=vs.85)) che riceve l'origine della vista.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se ha esito positivo o **false** se la visualizzazione corrente è elenco o visualizzazione report.
+Restituisce **TRUE se** l'operazione ha esito positivo oppure **FALSE** se la visualizzazione corrente è di tipo elenco o report.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce **true** se ha esito positivo o **false** se la visualizzazione corr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

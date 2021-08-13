@@ -1,19 +1,19 @@
 ---
-description: Indica la direzione di elaborazione della saturazione applicata dalla fotocamera quando è stata eseguita la foto.
+description: Indica la direzione dell'elaborazione della saturazione applicata dalla fotocamera al momento della foto.
 ms.assetid: 209edf55-fd6c-416b-b175-346f5158fc2a
-title: System. Photo. saturazione
+title: System.Photo.Saturation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50655b1d9344bb3c25576de9ece3ac6ef2bba95c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d00976c6145f170bffa3921beb1306cb63c14487e08b5a69ad96f76ba4fe1651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723617"
 ---
-# <a name="systemphotosaturation"></a>System. Photo. saturazione
+# <a name="systemphotosaturation"></a>System.Photo.Saturation
 
-Indica la direzione di elaborazione della saturazione applicata dalla fotocamera quando è stata eseguita la foto.
+Indica la direzione dell'elaborazione della saturazione applicata dalla fotocamera al momento della foto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -78,13 +78,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -93,13 +93,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -108,13 +108,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

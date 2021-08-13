@@ -4,12 +4,12 @@ description: Identifica la proprietà \_ FontProperties ForegroundColorType dell
 ms.assetid: ab04c0b0-911f-4649-9ce8-5ecd847abf9f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f261256a36ee7a387c6c3a695d8c1182898690c2
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d26b324a4e504c5ef98850f2bbcabd55b34525650b0ecfd3c201d45896e0c800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118438650"
 ---
 # <a name="ui_pkey_fontproperties_foregroundcolortype"></a>UI \_ PKEY \_ FontProperties \_ ForegroundColorType
 
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-UI PKEY FontProperties ForegroundColorType viene usato da un'applicazione, insieme a \_ \_ UI \_ [ \_ PKEY \_ FontProperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md), per eseguire query **nelle impostazioni della** raccolta colori del testo.
+UI PKEY FontProperties ForegroundColorType viene usato da un'applicazione, insieme a \_ \_ UI \_ [ \_ PKEY \_ FontProperties \_ ForegroundColor,](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md)per eseguire query **nelle impostazioni della** raccolta colori del testo.
 
 Il valore della proprietà deriva [**dall'enumerazione \_ SWATCHCOLORTYPE dell'interfaccia**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_swatchcolortype) utente.
 
@@ -40,8 +40,8 @@ Nella tabella seguente vengono descritti i valori delle proprietà.
 |     Valore                           |     Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `UI_SWATCHCOLORTYPE_NOCOLOR`   | Non supportato da [**FontControl**](windowsribbon-element-fontcontrol.md).                                                                                                                                                                                                                                                                                                                                        |
-| `UI_SWATCHCOLORTYPE_AUTOMATIC` | L'applicazione deve eseguire una query sulla metrica  di sistema appropriata per il valore del colore in genere il colore corrente del testo del tema di Windows recuperato con GetSysColor(COLOR \_ WINDOWTEXT).                                                                                                                                                                                                                                  |
-| `UI_SWATCHCOLORTYPE_RGB`       | L'applicazione deve eseguire una query [ \_ PKEY \_ FontProperties \_ ForegroundColor dell'interfaccia](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md) utente per il valore del colore. Il valore del colore [dell'interfaccia utente \_ PKEY \_ FontProperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md) viene visualizzato nel pulsante **Colore** testo e selezionato nella **raccolta colori** testo.<br/> |
+| `UI_SWATCHCOLORTYPE_AUTOMATIC` | L'applicazione deve eseguire una query sulla metrica di sistema  appropriata per il valore del colore Windows colore del testo del tema corrente recuperato con GetSysColor(COLOR \_ WINDOWTEXT).                                                                                                                                                                                                                                  |
+| `UI_SWATCHCOLORTYPE_RGB`       | L'applicazione deve eseguire una query [ \_ PKEY \_ FontProperties \_ ForegroundColor dell'interfaccia](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md) utente per il valore del colore. Il valore del colore [dell'interfaccia utente \_ PKEY \_ FontProperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md) viene visualizzato nel pulsante **Colore** testo e selezionato nella **raccolta colori testo.**<br/> |
 
 
 

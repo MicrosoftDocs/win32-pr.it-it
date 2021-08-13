@@ -1,9 +1,9 @@
 ---
-title: Round (Corecrt \_ Math. h)
+title: round (Corecrt \_ math.h)
 description: Arrotonda il valore specificato all'intero più vicino.
 ms.assetid: 258ce717-dca1-4ed2-ad98-1ecfdb58f939
 keywords:
-- Round HLSL
+- round HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f00bf845dfe16a92729b523fba62f6fd6dcde2b5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3997e93dbbe7cfda210fea97a2759620f0afb47638d2ec519b9ad56abe3664c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513833"
 ---
 # <a name="round"></a>round
 
-Arrotonda il valore specificato all'intero più vicino. La metà dei casi viene arrotondata al pari più vicino.
+Arrotonda il valore specificato all'intero più vicino. I case a metà vengono arrotondati al valore pari più vicino.
 
 
 
-| Round *ret* (*x*) |
+| *ret* round(*x*) |
 |------------------|
 
 
@@ -40,7 +40,7 @@ Arrotonda il valore specificato all'intero più vicino. La metà dei casi viene 
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore specificato.<br/> |
 
 
 
@@ -48,7 +48,7 @@ Arrotonda il valore specificato all'intero più vicino. La metà dei casi viene 
 
 ## <a name="return-value"></a>Valore restituito
 
-Il parametro *x* , arrotondato all'intero più vicino all'interno di un tipo a virgola mobile.
+Parametro *x,* arrotondato all'intero più vicino all'interno di un tipo a virgola mobile.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -56,23 +56,23 @@ Il parametro *x* , arrotondato all'intero più vicino all'interno di un tipo a v
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | uguale all'input *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
+| *x*   | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | uguale all'input *x*                                                                                              | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sì ( \_ solo vs 1 \_ 1) |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | sì (solo \_ vs 1 \_ 1) |
 
 
 
@@ -84,7 +84,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 

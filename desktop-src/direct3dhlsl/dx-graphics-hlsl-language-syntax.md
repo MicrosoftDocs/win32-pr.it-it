@@ -1,6 +1,6 @@
 ---
 title: Sintassi del linguaggio
-description: Gli shader HLSL sono costituiti da variabili e funzioni, che a loro volta sono costituite da istruzioni.
+description: Gli shader HLSL sono costituito da variabili e funzioni, che a loro volta sono costituito da istruzioni.
 ms.assetid: a0058fe5-7692-4c4d-b09a-9698104478f5
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,19 +9,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: be411ab93fa9d265963867a4a34a4f2cf567f464
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 997873d9dc7df53fdbbac042300b60458f0ad90405f974da2172fbe7cc24ca02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104975962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118514139"
 ---
 # <a name="language-syntax"></a>Sintassi del linguaggio
 
-Gli shader HLSL sono costituiti da variabili e funzioni, che a loro volta sono costituite da istruzioni. La sintassi del linguaggio documenta come definire e dichiarare le variabili, aggiungere il controllo di flusso in modo che gli shader possano prendere decisioni in fase di esecuzione in base alle variabili e scrivere funzioni personalizzate.
+Gli shader HLSL sono costituito da variabili e funzioni, che a loro volta sono costituito da istruzioni. La sintassi del linguaggio illustra come definire e dichiarare variabili, aggiungere il controllo di flusso in modo che gli shader possano prendere decisioni di runtime in base alle variabili e scrivere funzioni personalizzate.
 
 -   [Variabili](dx-graphics-hlsl-variables.md)
--   [Controllo di flusso](dx-graphics-hlsl-flow-control.md)
+-   [Flow Controllo](dx-graphics-hlsl-flow-control.md)
 -   [Funzioni](dx-graphics-hlsl-functions.md)
 -   [Istruzioni](dx-graphics-hlsl-statements.md)
 -   [Semantica](dx-graphics-hlsl-semantics.md)
@@ -30,12 +30,12 @@ Gli shader HLSL sono costituiti da variabili e funzioni, che a loro volta sono c
 
 <dl> <dt>
 
-[Riferimento per HLSL](dx-graphics-hlsl-reference.md)
+[Informazioni di riferimento per HLSL](dx-graphics-hlsl-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

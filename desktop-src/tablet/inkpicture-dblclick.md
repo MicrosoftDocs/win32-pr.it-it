@@ -1,19 +1,19 @@
 ---
 description: Si verifica quando si fa doppio clic sul controllo InkPicture.
 ms.assetid: 5b2a6413-d415-4bf1-a291-35f4c3c5a0dc
-title: Evento InkPicture. DblClick (Msinkaut. h)
+title: Evento InkPicture.DblClick (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c3d9bb9125c8142186da969acf6ce03f5f76b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 515d16d16fb585771a8e2e06e642476b6be7a29851b750add4d6de2ca1a89bda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717330"
 ---
-# <a name="inkpicturedblclick-event"></a>Evento InkPicture. DblClick
+# <a name="inkpicturedblclick-event"></a>Evento InkPicture.DblClick
 
-Si verifica quando si fa doppio clic sul controllo [InkPicture](inkpicture-control-reference.md) .
+Si verifica quando si fa doppio clic sul controllo [InkPicture.](inkpicture-control-reference.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ void DblClick(
 
 <dl> <dt>
 
-*Annulla* \[ in uscita\]
+*Annulla* \[ in, out\]
 </dt> <dd>
 
 Indica se l'evento deve essere annullato per il controllo padre.
@@ -44,11 +44,11 @@ Questo evento non restituisce un valore.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per distinguere tra i pulsanti sinistro, destro e centrale del mouse, utilizzare gli eventi [**MouseDown**](inkpicture-mousedown.md) e [**MouseUp**](inkpicture-mouseup.md) . Se nell'evento [**Click**](inkpicture-click.md) è presente codice, l'evento **DblClick** non verrà mai attivato.
+> Per distinguere tra i pulsanti sinistro, destro e centrale del mouse, usare gli [**eventi MouseDown**](inkpicture-mousedown.md) [**e MouseUp.**](inkpicture-mouseup.md) Se è presente codice [**nell'evento Click,**](inkpicture-click.md) **l'evento DblClick** non verrà mai attivato.
 
  
 
-Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . L'interfaccia **\_ IInkPictureEvents** implementa l'interfaccia IDispatch con un identificatore di **DISPID \_ IPEDblClick**.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkPictureEvents.** **\_ L'interfaccia IInkPictureEvents** implementa l'interfaccia IDispatch con un identificatore **\_ DISPID IPEDblClick.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -67,7 +67,7 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> </dl>
 
  

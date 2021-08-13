@@ -1,7 +1,7 @@
 ---
-description: Aggiunge un elemento di dati specifici dell'applicazione.
+description: Aggiunge una parte di dati specifici dell'applicazione.
 ms.assetid: 86ba37ac-8e65-4397-8ed1-37463152bebd
-title: 'Metodo IContextNode:: AddPropertyData (IACom. h)'
+title: Metodo IContextNode::AddPropertyData (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: ed318520b8ac83acbc8ed615002fababe2a4b12d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c9988217aed21ff1142f0e2083bee568ed12c31d90530ac1f3e9f5719c46446
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719695"
 ---
-# <a name="icontextnodeaddpropertydata-method"></a>Metodo IContextNode:: AddPropertyData
+# <a name="icontextnodeaddpropertydata-method"></a>Metodo IContextNode::AddPropertyData
 
-Aggiunge un elemento di dati specifici dell'applicazione.
+Aggiunge una parte di dati specifici dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,38 +41,38 @@ HRESULT AddPropertyData(
 
 <dl> <dt>
 
-*pPropertyDataId* \[ in\]
+*pPropertyDataId* \[ Pollici\]
 </dt> <dd>
 
-Identificatore univoco globale (GUID) utilizzato per identificare il tipo di dati.
+Identificatore univoco globale (GUID) usato per identificare il tipo di dati.
 
 </dd> <dt>
 
-*ulPropertyDataSize* \[ in\]
+*ulPropertyDataSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni dei dati in byte.
+Dimensioni in byte dei dati.
 
 </dd> <dt>
 
-*pbPropertiesData* \[ in\]
+*pbPropertiesData* \[ Pollici\]
 </dt> <dd>
 
-\[in, Size \_ è (ulPropertyDataSize)\]
+\[in, size \_ is(ulPropertyDataSize)\]
 
-Matrice di Unsigned Integer a 8 bit contenente le informazioni sulle proprietà da aggiungere.
+Matrice di interi senza segno a 8 bit contenente le informazioni sulla proprietà da aggiungere.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
-Usare **IContextNode:: AddPropertyData** per associare i dati a un nodo di contesto. Per recuperare i dati in un secondo momento, utilizzare [**IContextNode:: GetPropertyData**](icontextnode-getpropertydata.md).
+Usare **IContextNode::AddPropertyData** per associare dati a un nodo di contesto. Per recuperare i dati in un secondo momento, usare [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md).
 
-Ink Analyzer può eliminare il nodo come parte dell'analisi dell'input penna, a meno che il nodo di contesto non sia confermato (vedere [**IContextNode:: Confirm**](icontextnode-confirm.md)). Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer**](iinkanalyzer.md), vedere [Data Proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+L'analizzatore input penna può eliminare il nodo come parte dell'analisi dell'input penna, a meno che il nodo di contesto non venga confermato (vedere [**IContextNode::Confirm**](icontextnode-confirm.md)). Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer,**](iinkanalyzer.md)vedere [Proxy dati con](data-proxy-with-ink-analysis.md)Analisi input penna .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,9 +80,9 @@ Ink Analyzer può eliminare il nodo come parte dell'analisi dell'input penna, a 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -94,22 +94,22 @@ Ink Analyzer può eliminare il nodo come parte dell'analisi dell'input penna, a 
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IContextNode:: GetPropertyData**](icontextnode-getpropertydata.md)
+[**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md)
 </dt> <dt>
 
-[**IContextNode:: GetPropertyDataIds**](icontextnode-getpropertydataids.md)
+[**IContextNode::GetPropertyDataIds**](icontextnode-getpropertydataids.md)
 </dt> <dt>
 
-[**IContextNode:: ContainsPropertyData**](icontextnode-containspropertydata.md)
+[**IContextNode::ContainsPropertyData**](icontextnode-containspropertydata.md)
 </dt> <dt>
 
-[**IContextNode:: LoadPropertiesData**](icontextnode-loadpropertiesdata.md)
+[**IContextNode::LoadPropertiesData**](icontextnode-loadpropertiesdata.md)
 </dt> <dt>
 
-[**IContextNode:: RemovePropertyData**](icontextnode-removepropertydata.md)
+[**IContextNode::RemovePropertyData**](icontextnode-removepropertydata.md)
 </dt> <dt>
 
-[**IContextNode:: SavePropertiesData**](icontextnode-savepropertiesdata.md)
+[**IContextNode::SavePropertiesData**](icontextnode-savepropertiesdata.md)
 </dt> </dl>
 
  
